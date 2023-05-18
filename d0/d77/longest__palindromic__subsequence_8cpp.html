@@ -105,21 +105,20 @@ $(document).ready(function(){initNavTree('d0/d77/longest__palindromic__subsequen
 
 <p>Program to find the Longest Palindormic Subsequence of a string.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;cassert&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for longest_palindromic_subsequence.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/dc1/longest__palindromic__subsequence_8cpp__incl.svg" width="350" height="140"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/dc1/longest__palindromic__subsequence_8cpp__incl.svg" width="235" height="140"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6f73ddd8cd83d784036f131dfc6540c4"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d77/longest__palindromic__subsequence_8cpp.html#a6f73ddd8cd83d784036f131dfc6540c4">lps</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> a)</td></tr>
-<tr class="separator:a6f73ddd8cd83d784036f131dfc6540c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f863610aebbc218f90a7adfde240cb4"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d77/longest__palindromic__subsequence_8cpp.html#a4f863610aebbc218f90a7adfde240cb4">lps</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;a)</td></tr>
+<tr class="separator:a4f863610aebbc218f90a7adfde240cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1a3968e7947464bee7714f6d43b7002"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d77/longest__palindromic__subsequence_8cpp.html#ae1a3968e7947464bee7714f6d43b7002">test</a> ()</td></tr>
 <tr class="separator:ae1a3968e7947464bee7714f6d43b7002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d77/longest__palindromic__subsequence_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
@@ -130,8 +129,8 @@ Functions</h2></td></tr>
 <p><a href="https://en.wikipedia.org/wiki/Palindrome" target="_blank">Palindrome</a> string sequence of characters which reads the same backward as forward <a href="https://en.wikipedia.org/wiki/Subsequence" target="_blank">Subsequence</a> is a sequence that can be derived from another sequence by deleting some or no elements without changing the order of the remaining elements.</p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/anjali1903" target="_blank">Anjali Jha</a> </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a6f73ddd8cd83d784036f131dfc6540c4" name="a6f73ddd8cd83d784036f131dfc6540c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f73ddd8cd83d784036f131dfc6540c4">&#9670;&#160;</a></span>lps()</h2>
+<a id="a4f863610aebbc218f90a7adfde240cb4" name="a4f863610aebbc218f90a7adfde240cb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f863610aebbc218f90a7adfde240cb4">&#9670;&#160;</a></span>lps()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -139,24 +138,25 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> lps </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td>
+          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Function that returns the longest palindromic subsequence of a string </p>
-<div class="fragment"><div class="line"><span class="lineno">   25</span>                           {</div>
-<div class="line"><span class="lineno">   26</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> b = a;</div>
-<div class="line"><span class="lineno">   27</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/reverse.html">reverse</a>(b.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/begin.html">begin</a>(), b.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/end.html">end</a>());</div>
-<div class="line"><span class="lineno">   28</span>    <span class="keywordtype">int</span> m = a.length();</div>
-<div class="line"><span class="lineno">   29</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;int&gt;</a> &gt; res(m + 1);</div>
+<p>for assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> Function that returns the longest palindromic subsequence of a string </p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>                                  {</div>
+<div class="line"><span class="lineno">   25</span>    <span class="keyword">const</span> <span class="keyword">auto</span> b = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>(a.rbegin(), a.rend());</div>
+<div class="line"><span class="lineno">   26</span>    <span class="keyword">const</span> <span class="keyword">auto</span> m = a.length();</div>
+<div class="line"><span class="lineno">   27</span>    <span class="keyword">using </span>ind_type = std::string::size_type;</div>
+<div class="line"><span class="lineno">   28</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;ind_type&gt;</a> &gt; res(m + 1,</div>
+<div class="line"><span class="lineno">   29</span>                                            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;ind_type&gt;</a>(m + 1));</div>
 <div class="line"><span class="lineno">   30</span> </div>
 <div class="line"><span class="lineno">   31</span>    <span class="comment">// Finding the length of the longest</span></div>
 <div class="line"><span class="lineno">   32</span>    <span class="comment">// palindromic subsequence and storing</span></div>
 <div class="line"><span class="lineno">   33</span>    <span class="comment">// in a 2D array in bottoms-up manner</span></div>
-<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= m; i++) {</div>
-<div class="line"><span class="lineno">   35</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt;= m; j++) {</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">for</span> (ind_type i = 0; i &lt;= m; i++) {</div>
+<div class="line"><span class="lineno">   35</span>        <span class="keywordflow">for</span> (ind_type j = 0; j &lt;= m; j++) {</div>
 <div class="line"><span class="lineno">   36</span>            <span class="keywordflow">if</span> (i == 0 || j == 0) {</div>
 <div class="line"><span class="lineno">   37</span>                res[i][j] = 0;</div>
 <div class="line"><span class="lineno">   38</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (a[i - 1] == b[j - 1]) {</div>
@@ -167,10 +167,10 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   43</span>        }</div>
 <div class="line"><span class="lineno">   44</span>    }</div>
 <div class="line"><span class="lineno">   45</span>    <span class="comment">// Length of longest palindromic subsequence</span></div>
-<div class="line"><span class="lineno">   46</span>    <span class="keywordtype">int</span> idx = res[m][m];</div>
+<div class="line"><span class="lineno">   46</span>    <span class="keyword">auto</span> idx = res[m][m];</div>
 <div class="line"><span class="lineno">   47</span>    <span class="comment">// Creating string of index+1 length</span></div>
-<div class="line"><span class="lineno">   48</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> ans(idx + 1, <span class="charliteral">&#39;\0&#39;</span>);</div>
-<div class="line"><span class="lineno">   49</span>    <span class="keywordtype">int</span> i = m, j = m;</div>
+<div class="line"><span class="lineno">   48</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> ans(idx, <span class="charliteral">&#39;\0&#39;</span>);</div>
+<div class="line"><span class="lineno">   49</span>    ind_type i = m, j = m;</div>
 <div class="line"><span class="lineno">   50</span> </div>
 <div class="line"><span class="lineno">   51</span>    <span class="comment">// starting from right-most bottom-most corner</span></div>
 <div class="line"><span class="lineno">   52</span>    <span class="comment">// and storing them one by one in ans</span></div>
@@ -195,15 +195,12 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   71</span>    <span class="keywordflow">return</span> ans;</div>
 <div class="line"><span class="lineno">   72</span>}</div>
 <div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
-<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/begin.html">std::string::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/end.html">std::string::end</a></div><div class="ttdeci">T end(T... args)</div></div>
 <div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
-<div class="ttc" id="areverse_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/reverse.html">std::reverse</a></div><div class="ttdeci">T reverse(T... args)</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d77/longest__palindromic__subsequence_8cpp_a6f73ddd8cd83d784036f131dfc6540c4_cgraph.svg" width="216" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d77/longest__palindromic__subsequence_8cpp_a4f863610aebbc218f90a7adfde240cb4_cgraph.svg" width="170" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -225,15 +222,15 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Main Function </p>
-<div class="fragment"><div class="line"><span class="lineno">   87</span>           {</div>
-<div class="line"><span class="lineno">   88</span>    <a class="code hl_function" href="../../d0/d77/longest__palindromic__subsequence_8cpp.html#ae1a3968e7947464bee7714f6d43b7002">test</a>();  <span class="comment">// execute the tests</span></div>
-<div class="line"><span class="lineno">   89</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   90</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   85</span>           {</div>
+<div class="line"><span class="lineno">   86</span>    <a class="code hl_function" href="../../d0/d77/longest__palindromic__subsequence_8cpp.html#ae1a3968e7947464bee7714f6d43b7002">test</a>();  <span class="comment">// execute the tests</span></div>
+<div class="line"><span class="lineno">   87</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   88</span>}</div>
 <div class="ttc" id="alongest__palindromic__subsequence_8cpp_html_ae1a3968e7947464bee7714f6d43b7002"><div class="ttname"><a href="../../d0/d77/longest__palindromic__subsequence_8cpp.html#ae1a3968e7947464bee7714f6d43b7002">test</a></div><div class="ttdeci">void test()</div><div class="ttdef"><b>Definition:</b> longest_palindromic_subsequence.cpp:75</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d77/longest__palindromic__subsequence_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="404" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d77/longest__palindromic__subsequence_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="359" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -255,18 +252,16 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Test function </p>
 <div class="fragment"><div class="line"><span class="lineno">   75</span>            {</div>
-<div class="line"><span class="lineno">   76</span>    <span class="comment">// lps(&quot;radar&quot;) return &quot;radar&quot;</span></div>
-<div class="line"><span class="lineno">   77</span>    assert(<a class="code hl_function" href="../../d0/d77/longest__palindromic__subsequence_8cpp.html#a6f73ddd8cd83d784036f131dfc6540c4">lps</a>(<span class="stringliteral">&quot;radar&quot;</span>) == <span class="stringliteral">&quot;radar&quot;</span>);</div>
-<div class="line"><span class="lineno">   78</span>    <span class="comment">// lps(&quot;abbcbaa&quot;) return &quot;abcba&quot;</span></div>
-<div class="line"><span class="lineno">   79</span>    assert(<a class="code hl_function" href="../../d0/d77/longest__palindromic__subsequence_8cpp.html#a6f73ddd8cd83d784036f131dfc6540c4">lps</a>(<span class="stringliteral">&quot;abbcbaa&quot;</span>) == <span class="stringliteral">&quot;abcba&quot;</span>);</div>
-<div class="line"><span class="lineno">   80</span>    <span class="comment">// lps(&quot;bbbab&quot;) return &quot;bbbb&quot;</span></div>
-<div class="line"><span class="lineno">   81</span>    assert(<a class="code hl_function" href="../../d0/d77/longest__palindromic__subsequence_8cpp.html#a6f73ddd8cd83d784036f131dfc6540c4">lps</a>(<span class="stringliteral">&quot;bbbab&quot;</span>) == <span class="stringliteral">&quot;bbbb&quot;</span>);</div>
-<div class="line"><span class="lineno">   82</span>}</div>
-<div class="ttc" id="alongest__palindromic__subsequence_8cpp_html_a6f73ddd8cd83d784036f131dfc6540c4"><div class="ttname"><a href="../../d0/d77/longest__palindromic__subsequence_8cpp.html#a6f73ddd8cd83d784036f131dfc6540c4">lps</a></div><div class="ttdeci">std::string lps(std::string a)</div><div class="ttdef"><b>Definition:</b> longest_palindromic_subsequence.cpp:25</div></div>
+<div class="line"><span class="lineno">   76</span>    assert(<a class="code hl_function" href="../../d0/d77/longest__palindromic__subsequence_8cpp.html#a4f863610aebbc218f90a7adfde240cb4">lps</a>(<span class="stringliteral">&quot;radar&quot;</span>) == <span class="stringliteral">&quot;radar&quot;</span>);</div>
+<div class="line"><span class="lineno">   77</span>    assert(<a class="code hl_function" href="../../d0/d77/longest__palindromic__subsequence_8cpp.html#a4f863610aebbc218f90a7adfde240cb4">lps</a>(<span class="stringliteral">&quot;abbcbaa&quot;</span>) == <span class="stringliteral">&quot;abcba&quot;</span>);</div>
+<div class="line"><span class="lineno">   78</span>    assert(<a class="code hl_function" href="../../d0/d77/longest__palindromic__subsequence_8cpp.html#a4f863610aebbc218f90a7adfde240cb4">lps</a>(<span class="stringliteral">&quot;bbbab&quot;</span>) == <span class="stringliteral">&quot;bbbb&quot;</span>);</div>
+<div class="line"><span class="lineno">   79</span>    assert(<a class="code hl_function" href="../../d0/d77/longest__palindromic__subsequence_8cpp.html#a4f863610aebbc218f90a7adfde240cb4">lps</a>(<span class="stringliteral">&quot;&quot;</span>) == <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">   80</span>}</div>
+<div class="ttc" id="alongest__palindromic__subsequence_8cpp_html_a4f863610aebbc218f90a7adfde240cb4"><div class="ttname"><a href="../../d0/d77/longest__palindromic__subsequence_8cpp.html#a4f863610aebbc218f90a7adfde240cb4">lps</a></div><div class="ttdeci">std::string lps(const std::string &amp;a)</div><div class="ttdef"><b>Definition:</b> longest_palindromic_subsequence.cpp:24</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d77/longest__palindromic__subsequence_8cpp_ae1a3968e7947464bee7714f6d43b7002_cgraph.svg" width="307" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d77/longest__palindromic__subsequence_8cpp_ae1a3968e7947464bee7714f6d43b7002_cgraph.svg" width="262" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

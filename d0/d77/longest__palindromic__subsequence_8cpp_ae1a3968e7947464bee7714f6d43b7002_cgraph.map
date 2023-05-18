@@ -1,7 +1,5 @@
 <map id="test" name="test">
-<area shape="rect" id="node1" title=" " alt="" coords="5,55,49,80"/>
-<area shape="rect" id="node2" href="$d0/d77/longest__palindromic__subsequence_8cpp.html#a6f73ddd8cd83d784036f131dfc6540c4" title=" " alt="" coords="97,55,135,80"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/begin.html#" title=" " alt="" coords="183,5,301,31"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/end.html#" title=" " alt="" coords="188,55,296,80"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="206,104,278,130"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,49,31"/>
+<area shape="rect" id="node2" href="$d0/d77/longest__palindromic__subsequence_8cpp.html#a4f863610aebbc218f90a7adfde240cb4" title=" " alt="" coords="97,5,135,31"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="183,5,255,31"/>
 </map>
