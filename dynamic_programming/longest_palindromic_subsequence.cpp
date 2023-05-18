@@ -1,7 +1,7 @@
 /**
  * @file
- * @brief Program to find the Longest Palindormic
- * Subsequence of a string
+ * @brief Program to find the [Longest Palindormic
+ * Subsequence](https://www.geeksforgeeks.org/longest-palindromic-subsequence-dp-12/) of a string
  *
  * @details
  * [Palindrome](https://en.wikipedia.org/wiki/Palindrome) string sequence of
@@ -18,8 +18,15 @@
 #include <vector>   /// for std::vector
 
 /**
- * Function that returns the longest palindromic
+ * @namespace
+ * @brief Dynamic Programming algorithms
+ */
+namespace dynamic_programming {
+/**
+ * @brief Function that returns the longest palindromic
  * subsequence of a string
+ * @param a string whose longest palindromic subsequence is to be found
+ * @returns longest palindromic subsequence of the string
  */
 std::string lps(const std::string& a) {
     const auto b = std::string(a.rbegin(), a.rend());
@@ -70,17 +77,22 @@ std::string lps(const std::string& a) {
 
     return ans;
 }
+}  // namespace dynamic_programming
 
-/** Test function */
-void test() {
-    assert(lps("radar") == "radar");
-    assert(lps("abbcbaa") == "abcba");
-    assert(lps("bbbab") == "bbbb");
-    assert(lps("") == "");
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void test() {
+    assert(dynamic_programming::lps("radar") == "radar");
+    assert(dynamic_programming::lps("abbcbaa") == "abcba");
+    assert(dynamic_programming::lps("bbbab") == "bbbb");
+    assert(dynamic_programming::lps("") == "");
 }
 
 /**
- * Main Function
+ * @brief Main Function
+ * @returns 0 on exit
  */
 int main() {
     test();  // execute the tests
