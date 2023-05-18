@@ -13,26 +13,26 @@
  * @author [Anjali Jha](https://github.com/anjali1903)
  */
 
-#include <algorithm>
-#include <cassert>
-#include <iostream>
-#include <vector>
+#include <cassert>  /// for assert
+#include <string>   /// for std::string
+#include <vector>   /// for std::vector
 
 /**
  * Function that returns the longest palindromic
  * subsequence of a string
  */
-std::string lps(std::string a) {
-    std::string b = a;
-    reverse(b.begin(), b.end());
-    int m = a.length();
-    std::vector<std::vector<int> > res(m + 1);
+std::string lps(const std::string& a) {
+    const auto b = std::string(a.rbegin(), a.rend());
+    const auto m = a.length();
+    using ind_type = std::string::size_type;
+    std::vector<std::vector<ind_type> > res(m + 1,
+                                            std::vector<ind_type>(m + 1));
 
     // Finding the length of the longest
     // palindromic subsequence and storing
     // in a 2D array in bottoms-up manner
-    for (int i = 0; i <= m; i++) {
-        for (int j = 0; j <= m; j++) {
+    for (ind_type i = 0; i <= m; i++) {
+        for (ind_type j = 0; j <= m; j++) {
             if (i == 0 || j == 0) {
                 res[i][j] = 0;
             } else if (a[i - 1] == b[j - 1]) {
@@ -43,10 +43,10 @@ std::string lps(std::string a) {
         }
     }
     // Length of longest palindromic subsequence
-    int idx = res[m][m];
+    auto idx = res[m][m];
     // Creating string of index+1 length
-    std::string ans(idx + 1, '\0');
-    int i = m, j = m;
+    std::string ans(idx, '\0');
+    ind_type i = m, j = m;
 
     // starting from right-most bottom-most corner
     // and storing them one by one in ans
@@ -73,12 +73,10 @@ std::string lps(std::string a) {
 
 /** Test function */
 void test() {
-    // lps("radar") return "radar"
     assert(lps("radar") == "radar");
-    // lps("abbcbaa") return "abcba"
     assert(lps("abbcbaa") == "abcba");
-    // lps("bbbab") return "bbbb"
     assert(lps("bbbab") == "bbbb");
+    assert(lps("") == "");
 }
 
 /**
