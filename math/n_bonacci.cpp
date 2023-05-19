@@ -39,10 +39,17 @@ namespace n_bonacci {
  * @returns the n-bonacci sequence as vector array
  */
 std::vector<uint64_t> N_bonacci(const uint64_t &n, const uint64_t &m) {
-    std::vector<uint64_t> a(m, 0);  // we create an empty array of size m
+    std::vector<uint64_t> a(
+        m, 0);  // we create an array of size m filled with zeros
+    if (m < n) {
+        return a;
+    }
 
     a[n - 1] = 1;  /// we initialise the (n-1)th term as 1 which is the sum of
                    /// preceding N zeros
+    if (n == m) {
+        return a;
+    }
     a[n] = 1;  /// similarily the sum of preceding N zeros and the (N+1)th 1 is
                /// also 1
     for (uint64_t i = n + 1; i < m; i++) {
@@ -61,10 +68,11 @@ std::vector<uint64_t> N_bonacci(const uint64_t &n, const uint64_t &m) {
  * @returns void
  */
 static void test() {
-    // n = 1 m = 1 return [1, 1]
+    assert(math::n_bonacci::N_bonacci(1, 1) == std::vector<uint64_t>{1});
+    // n = 1 m = 2 return [1, 1]
     std::cout << "1st test";
     std::vector<uint64_t> arr1 = math::n_bonacci::N_bonacci(
-        1, 1);  // first input is the param n and second one is the param m for
+        1, 2);  // first input is the param n and second one is the param m for
                 // N-bonacci func
     std::vector<uint64_t> output_array1 = {
         1, 1};  // It is the expected output series of length m
