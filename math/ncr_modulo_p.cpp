@@ -150,8 +150,13 @@ static void tests() {
     };
     const std::vector<TestCase> test_cases = {
         TestCase(60000, 1000000007, 52323, 26161, 224944353),
-        TestCase(20, 5, 6, 2, 30 % 5), TestCase(100, 29, 7, 3, 35 % 29),
-        TestCase(1000, 13, 10, 3, 120 % 13)};
+        TestCase(20, 5, 6, 2, 30 % 5),
+        TestCase(100, 29, 7, 3, 35 % 29),
+        TestCase(1000, 13, 10, 3, 120 % 13),
+        TestCase(20, 17, 1, 10, 0),
+        TestCase(45, 19, 23, 1, 23 % 19),
+        TestCase(45, 19, 23, 0, 1),
+        TestCase(45, 19, 23, 23, 1)};
     for (const auto& tc : test_cases) {
         assert(math::ncr_modulo_p::NCRModuloP(tc.size, tc.p).ncr(tc.n, tc.r) ==
                tc.expected);
