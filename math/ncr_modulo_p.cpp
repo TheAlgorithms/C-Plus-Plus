@@ -104,7 +104,7 @@ class NCRModuloP {
      * @params[in] the numbers 'n', 'r' and 'p'
      * @returns the value nCr % p
      */
-    int64_t ncr(const uint64_t& n, const uint64_t& r) {
+    int64_t ncr(const uint64_t& n, const uint64_t& r) const {
         // Base cases
         if (r > n) {
             return 0;
