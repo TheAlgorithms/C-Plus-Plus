@@ -89,7 +89,7 @@ class NCRModuloP {
      * @params[in] the numbers 'n', 'r' and 'p'
      * @returns the value nCr % p
      */
-    int64_t ncr(const uint64_t& n, const uint64_t& r, const uint64_t& p) {
+    int64_t ncr(const uint64_t& n, const uint64_t& r) {
         // Base cases
         if (r > n) {
             return 0;
@@ -121,13 +121,19 @@ class NCRModuloP {
  * ncr function
  * @returns void
  */
-static void tests(math::ncr_modulo_p::NCRModuloP ncrObj) {
+static void tests() {
     // (52323 C 26161) % (1e9 + 7) = 224944353
-    assert(ncrObj.ncr(52323, 26161, 1000000007) == 224944353);
+    assert(
+        math::ncr_modulo_p::NCRModuloP(60000, 1000000007).ncr(52323, 26161) ==
+        224944353);
     // 6 C 2 = 30, 30%5 = 0
-    assert(ncrObj.ncr(6, 2, 5) == 0);
+    assert(math::ncr_modulo_p::NCRModuloP(20, 5).ncr(6, 2) == 0);
     // 7C3 = 35, 35 % 29 = 8
-    assert(ncrObj.ncr(7, 3, 29) == 6);
+    assert(math::ncr_modulo_p::NCRModuloP(100, 29).ncr(7, 3) == 6);
+}
+
+void other_tests() {
+    assert(math::ncr_modulo_p::NCRModuloP(1000, 13).ncr(10, 3) == 120 % 13);
 }
 
 /**
@@ -142,9 +148,10 @@ int main() {
         math::ncr_modulo_p::NCRModuloP(size, p);
     // test 6Ci for i=0 to 7
     for (int i = 0; i <= 7; i++) {
-        std::cout << 6 << "C" << i << " = " << ncrObj.ncr(6, i, p) << "\n";
+        std::cout << 6 << "C" << i << " = " << ncrObj.ncr(6, i) << "\n";
     }
-    tests(ncrObj);  // execute the tests
+    tests();  // execute the tests
+    other_tests();
     std::cout << "Assertions passed\n";
     return 0;
 }
