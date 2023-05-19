@@ -169,8 +169,7 @@ int main() {
     // populate the fac array
     const uint64_t size = 1e6 + 1;
     const uint64_t p = 1e9 + 7;
-    const math::ncr_modulo_p::NCRModuloP ncrObj =
-        math::ncr_modulo_p::NCRModuloP(size, p);
+    const auto ncrObj = math::ncr_modulo_p::NCRModuloP(size, p);
     // test 6Ci for i=0 to 7
     for (int i = 0; i <= 7; i++) {
         std::cout << 6 << "C" << i << " = " << ncrObj.ncr(6, i) << "\n";
