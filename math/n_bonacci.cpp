@@ -40,7 +40,7 @@ namespace n_bonacci {
 std::vector<uint64_t> N_bonacci(const uint64_t &n, const uint64_t &m) {
     std::vector<uint64_t> a(
         m, 0);  // we create an array of size m filled with zeros
-    if (m < n) {
+    if (m < n || n == 0) {
         return a;
     }
 
@@ -78,6 +78,10 @@ static void test() {
         }
     };
     const std::vector<TestCase> test_cases = {
+        TestCase(0, 0, {}),
+        TestCase(0, 1, {0}),
+        TestCase(0, 2, {0, 0}),
+        TestCase(1, 0, {}),
         TestCase(1, 1, {1}),
         TestCase(1, 2, {1, 1}),
         TestCase(1, 3, {1, 1, 1}),
