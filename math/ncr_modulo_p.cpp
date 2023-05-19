@@ -116,15 +116,12 @@ class NCRModuloP {
             return 1;
         }
         // fac is a global array with fac[r] = (r! % p)
-        int64_t denominator = utils::modInverse(fac[r], p);
-        if (denominator < 0) {  // modular inverse doesn't exist
+        const auto denominator = (fac[r] * fac[n - r]) % p;
+        const auto denominator_inv = utils::modInverse(denominator, p);
+        if (denominator_inv < 0) {  // modular inverse doesn't exist
             return -1;
         }
-        denominator = (denominator * utils::modInverse(fac[n - r], p)) % p;
-        if (denominator < 0) {  // modular inverse doesn't exist
-            return -1;
-        }
-        return (fac[n] * denominator) % p;
+        return (fac[n] * denominator_inv) % p;
     }
 };
 }  // namespace ncr_modulo_p
@@ -156,7 +153,8 @@ static void tests() {
         TestCase(20, 17, 1, 10, 0),
         TestCase(45, 19, 23, 1, 23 % 19),
         TestCase(45, 19, 23, 0, 1),
-        TestCase(45, 19, 23, 23, 1)};
+        TestCase(45, 19, 23, 23, 1),
+        TestCase(20, 9, 10, 2, -1)};
     for (const auto& tc : test_cases) {
         assert(math::ncr_modulo_p::NCRModuloP(tc.size, tc.p).ncr(tc.n, tc.r) ==
                tc.expected);
