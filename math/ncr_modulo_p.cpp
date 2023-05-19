@@ -40,7 +40,7 @@ class NCRModuloP {
      */
     NCRModuloP(const uint64_t& size, const uint64_t& mod) {
         p = mod;
-        fac = std::vector<uint64_t>(size);
+        fac = std::vector<uint64_t>(size + 1);
         fac[0] = 1;
         for (int i = 1; i <= size; i++) {
             fac[i] = (fac[i - 1] * i) % p;
