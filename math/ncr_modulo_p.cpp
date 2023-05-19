@@ -137,18 +137,25 @@ class NCRModuloP {
  * @returns void
  */
 static void tests() {
-    // (52323 C 26161) % (1e9 + 7) = 224944353
-    assert(
-        math::ncr_modulo_p::NCRModuloP(60000, 1000000007).ncr(52323, 26161) ==
-        224944353);
-    // 6 C 2 = 30, 30%5 = 0
-    assert(math::ncr_modulo_p::NCRModuloP(20, 5).ncr(6, 2) == 0);
-    // 7C3 = 35, 35 % 29 = 8
-    assert(math::ncr_modulo_p::NCRModuloP(100, 29).ncr(7, 3) == 6);
-}
+    struct TestCase {
+        const uint64_t size;
+        const uint64_t p;
+        const uint64_t n;
+        const uint64_t r;
+        const int64_t expected;
 
-void other_tests() {
-    assert(math::ncr_modulo_p::NCRModuloP(1000, 13).ncr(10, 3) == 120 % 13);
+        TestCase(const uint64_t size, const uint64_t p, const uint64_t n,
+                 const uint64_t r, const int64_t expected)
+            : size(size), p(p), n(n), r(r), expected(expected) {}
+    };
+    const std::vector<TestCase> test_cases = {
+        TestCase(60000, 1000000007, 52323, 26161, 224944353),
+        TestCase(20, 5, 6, 2, 30 % 5), TestCase(100, 29, 7, 3, 35 % 29),
+        TestCase(1000, 13, 10, 3, 120 % 13)};
+    for (const auto& tc : test_cases) {
+        assert(math::ncr_modulo_p::NCRModuloP(tc.size, tc.p).ncr(tc.n, tc.r) ==
+               tc.expected);
+    }
 }
 
 /**
@@ -166,7 +173,6 @@ int main() {
         std::cout << 6 << "C" << i << " = " << ncrObj.ncr(6, i) << "\n";
     }
     tests();  // execute the tests
-    other_tests();
     std::cout << "Assertions passed\n";
     return 0;
 }
