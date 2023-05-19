@@ -70,22 +70,34 @@ int64_t modInverse(const uint64_t& a, const uint64_t& m) {
  */
 class NCRModuloP {
  private:
-    std::vector<uint64_t> fac{};  /// stores precomputed factorial(i) % p value
-    uint64_t p = 0;               /// the p from (nCr % p)
+    const uint64_t p;  /// the p from (nCr % p)
+    const std::vector<uint64_t>
+        fac;  /// stores precomputed factorial(i) % p value
+
+    /**
+     * @brief computes the array of values of factorials reduced modulo mod
+     * @param max_arg_val argument of the last factorial stored in the result
+     * @param mod value of the divisor used to reduce factorials
+     * @return vector storing factorials of the numbers 0, ..., max_arg_val
+     * reduced modulo mod
+     */
+    static std::vector<uint64_t> computeFactorialsMod(
+        const uint64_t& max_arg_val, const uint64_t& mod) {
+        auto res = std::vector<uint64_t>(max_arg_val + 1);
+        res[0] = 1;
+        for (uint64_t i = 1; i <= max_arg_val; i++) {
+            res[i] = (res[i - 1] * i) % mod;
+        }
+        return res;
+    }
 
  public:
     /** Constructor which precomputes the values of n! % mod from n=0 to size
      *  and stores them in vector 'fac'
      *  @params[in] the numbers 'size', 'mod'
      */
-    NCRModuloP(const uint64_t& size, const uint64_t& mod) {
-        p = mod;
-        fac = std::vector<uint64_t>(size + 1);
-        fac[0] = 1;
-        for (uint64_t i = 1; i <= size; i++) {
-            fac[i] = (fac[i - 1] * i) % p;
-        }
-    }
+    NCRModuloP(const uint64_t& size, const uint64_t& mod)
+        : p(mod), fac(computeFactorialsMod(size, mod)) {}
 
     /** Find nCr % p
      *
