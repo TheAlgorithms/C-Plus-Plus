@@ -33,18 +33,19 @@ namespace utils {
  * equation
  * @returns the gcd of a and b
  */
-uint64_t gcdExtended(const uint64_t& a, const uint64_t& b, int64_t* x,
-                     int64_t* y) {
+uint64_t gcdExtended(const uint64_t& a, const uint64_t& b, int64_t& x,
+                     int64_t& y) {
     if (a == 0) {
-        *x = 0, *y = 1;
+        x = 0;
+        y = 1;
         return b;
     }
 
     int64_t x1 = 0, y1 = 0;
-    uint64_t gcd = gcdExtended(b % a, a, &x1, &y1);
+    uint64_t gcd = gcdExtended(b % a, a, x1, y1);
 
-    *x = y1 - (b / a) * x1;
-    *y = x1;
+    x = y1 - (b / a) * x1;
+    y = x1;
     return gcd;
 }
 
@@ -55,7 +56,7 @@ uint64_t gcdExtended(const uint64_t& a, const uint64_t& b, int64_t* x,
  */
 int64_t modInverse(const uint64_t& a, const uint64_t& m) {
     int64_t x = 0, y = 0;
-    uint64_t g = gcdExtended(a, m, &x, &y);
+    uint64_t g = gcdExtended(a, m, x, y);
     if (g != 1) {  // modular inverse doesn't exist
         return -1;
     } else {
