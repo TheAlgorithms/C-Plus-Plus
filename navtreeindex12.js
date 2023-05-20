@@ -1,7 +1,8 @@
 var NAVTREEINDEX12 =
 {
-"dd/d95/classdata__structures_1_1_segment_tree.html":[10,0,2,10],
+"dd/d91/class_fenwick_tree.html#ade1d6a3d49af9d9df33e2fb26cab1699":[10,0,30,3],
 "dd/d95/classdata__structures_1_1_segment_tree.html":[9,0,20,3],
+"dd/d95/classdata__structures_1_1_segment_tree.html":[10,0,2,10],
 "dd/d95/classdata__structures_1_1_segment_tree.html#a10ffa5fc03c66170f0bc2592b843baa3":[9,0,20,3,6],
 "dd/d95/classdata__structures_1_1_segment_tree.html#a10ffa5fc03c66170f0bc2592b843baa3":[10,0,2,10,6],
 "dd/d95/classdata__structures_1_1_segment_tree.html#a167fd91b68048e49e97859a8947690f3":[10,0,2,10,7],
@@ -10,14 +11,14 @@ var NAVTREEINDEX12 =
 "dd/d95/classdata__structures_1_1_segment_tree.html#a1c5331b509d9b55bedfadf979b30dd5b":[9,0,20,3,3],
 "dd/d95/classdata__structures_1_1_segment_tree.html#a2a04f1832c5ce86def50c3021b2ab6b1":[9,0,20,3,4],
 "dd/d95/classdata__structures_1_1_segment_tree.html#a2a04f1832c5ce86def50c3021b2ab6b1":[10,0,2,10,4],
-"dd/d95/classdata__structures_1_1_segment_tree.html#a6d3beccc936af2377c8eeb17067fd141":[9,0,20,3,1],
 "dd/d95/classdata__structures_1_1_segment_tree.html#a6d3beccc936af2377c8eeb17067fd141":[10,0,2,10,1],
+"dd/d95/classdata__structures_1_1_segment_tree.html#a6d3beccc936af2377c8eeb17067fd141":[9,0,20,3,1],
 "dd/d95/classdata__structures_1_1_segment_tree.html#a735d072a603f3abb7c03818440575258":[9,0,20,3,8],
 "dd/d95/classdata__structures_1_1_segment_tree.html#a735d072a603f3abb7c03818440575258":[10,0,2,10,8],
-"dd/d95/classdata__structures_1_1_segment_tree.html#a8d22286b7be3dcbb701ac5c7d9c79841":[10,0,2,10,0],
 "dd/d95/classdata__structures_1_1_segment_tree.html#a8d22286b7be3dcbb701ac5c7d9c79841":[9,0,20,3,0],
-"dd/d95/classdata__structures_1_1_segment_tree.html#a8fecc48e8e3f6f5f6e728495a4282e52":[9,0,20,3,2],
+"dd/d95/classdata__structures_1_1_segment_tree.html#a8d22286b7be3dcbb701ac5c7d9c79841":[10,0,2,10,0],
 "dd/d95/classdata__structures_1_1_segment_tree.html#a8fecc48e8e3f6f5f6e728495a4282e52":[10,0,2,10,2],
+"dd/d95/classdata__structures_1_1_segment_tree.html#a8fecc48e8e3f6f5f6e728495a4282e52":[9,0,20,3,2],
 "dd/d95/classdata__structures_1_1_segment_tree.html#ad0e78179ab979ae2bc4304bdc181db17":[9,0,20,3,5],
 "dd/d95/classdata__structures_1_1_segment_tree.html#ad0e78179ab979ae2bc4304bdc181db17":[10,0,2,10,5],
 "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html":[10,0,8,0,1],
@@ -103,8 +104,8 @@ var NAVTREEINDEX12 =
 "de/d48/struct_trie_1_1_trie_node.html":[10,0,54,0],
 "de/d4a/class_compare.html":[10,0,21],
 "de/d4a/class_compare.html#afbdf9a44adb49728dc704155d7d1570c":[10,0,21,0],
-"de/d4f/structmath_1_1_point.html":[9,0,63,0],
 "de/d4f/structmath_1_1_point.html":[10,0,9,1],
+"de/d4f/structmath_1_1_point.html":[9,0,63,0],
 "de/d6a/knuth__morris__pratt_8cpp.html":[11,0,22,2],
 "de/d6a/knuth__morris__pratt_8cpp.html#a26a58225ce7d3fa9d4c2f5349a65ed93":[11,0,22,2,1],
 "de/d6a/knuth__morris__pratt_8cpp.html#a996573527312d5255e1495b879e8a34f":[11,0,22,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a55ae3543a76045dffcb5ec7904a32a20":[10,0,12,1,0,6],
 "df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a61804988fcb1a6caf640f8291979aaa6":[10,0,12,1,0,3],
 "df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a6b52b7851750f28d53508e63c52a69f7":[10,0,12,1,0,4],
-"df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a825a7aaef844c9f743a27b268e8569b2":[10,0,12,1,0,8],
-"df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a938cafbdf70dc01e86e9bb12d29ec65d":[10,0,12,1,0,2]
+"df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a825a7aaef844c9f743a27b268e8569b2":[10,0,12,1,0,8]
 };

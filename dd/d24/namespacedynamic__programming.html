@@ -111,6 +111,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a0a2215194e58786c34db1ccaf8031079"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d24/namespacedynamic__programming.html#a0a2215194e58786c34db1ccaf8031079">LIS</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint64_t &gt; &amp;a, const uint32_t &amp;n)</td></tr>
 <tr class="memdesc:a0a2215194e58786c34db1ccaf8031079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the longest increasing subsequence for the specified numbers.  <br /></td></tr>
 <tr class="separator:a0a2215194e58786c34db1ccaf8031079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe9f45b6e30ee187509da2d1d0093412"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d24/namespacedynamic__programming.html#afe9f45b6e30ee187509da2d1d0093412">lps</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;a)</td></tr>
+<tr class="memdesc:afe9f45b6e30ee187509da2d1d0093412"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that returns the longest palindromic subsequence of a string.  <br /></td></tr>
+<tr class="separator:afe9f45b6e30ee187509da2d1d0093412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5239174fa0d987f2c67edc1f2af82beb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d24/namespacedynamic__programming.html#a5239174fa0d987f2c67edc1f2af82beb">maxCircularSum</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &amp;arr)</td></tr>
 <tr class="memdesc:a5239174fa0d987f2c67edc1f2af82beb"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the maximum contiguous circular sum of an array  <br /></td></tr>
 <tr class="separator:a5239174fa0d987f2c67edc1f2af82beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,6 +193,89 @@ Functions</h2></td></tr>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d24/namespacedynamic__programming_a0a2215194e58786c34db1ccaf8031079_cgraph.svg" width="312" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="afe9f45b6e30ee187509da2d1d0093412" name="afe9f45b6e30ee187509da2d1d0093412"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe9f45b6e30ee187509da2d1d0093412">&#9670;&#160;</a></span>lps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> dynamic_programming::lps </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function that returns the longest palindromic subsequence of a string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>string whose longest palindromic subsequence is to be found </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>longest palindromic subsequence of the string </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>                                  {</div>
+<div class="line"><span class="lineno">   32</span>    <span class="keyword">const</span> <span class="keyword">auto</span> b = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>(a.rbegin(), a.rend());</div>
+<div class="line"><span class="lineno">   33</span>    <span class="keyword">const</span> <span class="keyword">auto</span> m = a.length();</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keyword">using </span>ind_type = std::string::size_type;</div>
+<div class="line"><span class="lineno">   35</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;ind_type&gt;</a> &gt; res(m + 1,</div>
+<div class="line"><span class="lineno">   36</span>                                            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;ind_type&gt;</a>(m + 1));</div>
+<div class="line"><span class="lineno">   37</span> </div>
+<div class="line"><span class="lineno">   38</span>    <span class="comment">// Finding the length of the longest</span></div>
+<div class="line"><span class="lineno">   39</span>    <span class="comment">// palindromic subsequence and storing</span></div>
+<div class="line"><span class="lineno">   40</span>    <span class="comment">// in a 2D array in bottoms-up manner</span></div>
+<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">for</span> (ind_type i = 0; i &lt;= m; i++) {</div>
+<div class="line"><span class="lineno">   42</span>        <span class="keywordflow">for</span> (ind_type j = 0; j &lt;= m; j++) {</div>
+<div class="line"><span class="lineno">   43</span>            <span class="keywordflow">if</span> (i == 0 || j == 0) {</div>
+<div class="line"><span class="lineno">   44</span>                res[i][j] = 0;</div>
+<div class="line"><span class="lineno">   45</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (a[i - 1] == b[j - 1]) {</div>
+<div class="line"><span class="lineno">   46</span>                res[i][j] = res[i - 1][j - 1] + 1;</div>
+<div class="line"><span class="lineno">   47</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   48</span>                res[i][j] = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(res[i - 1][j], res[i][j - 1]);</div>
+<div class="line"><span class="lineno">   49</span>            }</div>
+<div class="line"><span class="lineno">   50</span>        }</div>
+<div class="line"><span class="lineno">   51</span>    }</div>
+<div class="line"><span class="lineno">   52</span>    <span class="comment">// Length of longest palindromic subsequence</span></div>
+<div class="line"><span class="lineno">   53</span>    <span class="keyword">auto</span> idx = res[m][m];</div>
+<div class="line"><span class="lineno">   54</span>    <span class="comment">// Creating string of index+1 length</span></div>
+<div class="line"><span class="lineno">   55</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> ans(idx, <span class="charliteral">&#39;\0&#39;</span>);</div>
+<div class="line"><span class="lineno">   56</span>    ind_type i = m, j = m;</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>    <span class="comment">// starting from right-most bottom-most corner</span></div>
+<div class="line"><span class="lineno">   59</span>    <span class="comment">// and storing them one by one in ans</span></div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">while</span> (i &gt; 0 &amp;&amp; j &gt; 0) {</div>
+<div class="line"><span class="lineno">   61</span>        <span class="comment">// if current characters in a and b are same</span></div>
+<div class="line"><span class="lineno">   62</span>        <span class="comment">// then it is a part of the ans</span></div>
+<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">if</span> (a[i - 1] == b[j - 1]) {</div>
+<div class="line"><span class="lineno">   64</span>            ans[idx - 1] = a[i - 1];</div>
+<div class="line"><span class="lineno">   65</span>            i--;</div>
+<div class="line"><span class="lineno">   66</span>            j--;</div>
+<div class="line"><span class="lineno">   67</span>            idx--;</div>
+<div class="line"><span class="lineno">   68</span>        }</div>
+<div class="line"><span class="lineno">   69</span>        <span class="comment">// If they are not same, find the larger of the</span></div>
+<div class="line"><span class="lineno">   70</span>        <span class="comment">// two and move in that direction</span></div>
+<div class="line"><span class="lineno">   71</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (res[i - 1][j] &gt; res[i][j - 1]) {</div>
+<div class="line"><span class="lineno">   72</span>            i--;</div>
+<div class="line"><span class="lineno">   73</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   74</span>            j--;</div>
+<div class="line"><span class="lineno">   75</span>        }</div>
+<div class="line"><span class="lineno">   76</span>    }</div>
+<div class="line"><span class="lineno">   77</span> </div>
+<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">return</span> ans;</div>
+<div class="line"><span class="lineno">   79</span>}</div>
+<div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d24/namespacedynamic__programming_afe9f45b6e30ee187509da2d1d0093412_cgraph.svg" width="308" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

@@ -31,6 +31,7 @@ var namespaces_dup =
     [ "dp", "df/d88/namespacedp.html", null ],
     [ "dynamic_programming", "dd/d24/namespacedynamic__programming.html", [
       [ "LIS", "dd/d24/namespacedynamic__programming.html#a0a2215194e58786c34db1ccaf8031079", null ],
+      [ "lps", "dd/d24/namespacedynamic__programming.html#afe9f45b6e30ee187509da2d1d0093412", null ],
       [ "maxCircularSum", "dd/d24/namespacedynamic__programming.html#a5239174fa0d987f2c67edc1f2af82beb", null ]
     ] ],
     [ "false_position", "df/dea/namespacefalse__position.html", null ],

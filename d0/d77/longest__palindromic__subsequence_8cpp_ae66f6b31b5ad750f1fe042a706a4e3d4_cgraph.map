@@ -1,6 +1,6 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,55,31"/>
-<area shape="rect" id="node2" href="$d0/d77/longest__palindromic__subsequence_8cpp.html#ae1a3968e7947464bee7714f6d43b7002" title=" " alt="" coords="103,5,146,31"/>
-<area shape="rect" id="node3" href="$d0/d77/longest__palindromic__subsequence_8cpp.html#a4f863610aebbc218f90a7adfde240cb4" title=" " alt="" coords="194,5,232,31"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="280,5,353,31"/>
+<area shape="rect" id="node1" title="Main Function." alt="" coords="5,5,55,31"/>
+<area shape="rect" id="node2" href="$d0/d77/longest__palindromic__subsequence_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,5,146,31"/>
+<area shape="rect" id="node3" href="$dd/d24/namespacedynamic__programming.html#afe9f45b6e30ee187509da2d1d0093412" title="Function that returns the longest palindromic subsequence of a string." alt="" coords="194,5,371,31"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="419,5,492,31"/>
 </map>

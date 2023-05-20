@@ -147,8 +147,8 @@ var NAVTREEINDEX =
 "d9/dae/classdata__structures_1_1_bitset.html#ae86688cf99b77342deedb75149573e73",
 "db/d07/spiral__print_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
 "dc/d5a/rat__maze_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"dd/d95/classdata__structures_1_1_segment_tree.html",
-"df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#aac676369661d15a3eb782c0fee77d45d"
+"dd/d91/class_fenwick_tree.html#ade1d6a3d49af9d9df33e2fb26cab1699",
+"df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a938cafbdf70dc01e86e9bb12d29ec65d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

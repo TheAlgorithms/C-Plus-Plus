@@ -1,6 +1,6 @@
 var NAVTREEINDEX9 =
 {
-"d9/dae/classdata__structures_1_1_bitset.html#ae86688cf99b77342deedb75149573e73":[10,0,2,7,5],
+"d9/dae/classdata__structures_1_1_bitset.html#ae86688cf99b77342deedb75149573e73":[9,0,20,0,5],
 "d9/dc9/namespacebase64__encoding.html":[9,0,6],
 "d9/dca/namespacesearch.html":[9,0,99],
 "d9/dd1/namespacelinear__recurrence__matrix.html":[9,0,56],
@@ -25,8 +25,8 @@ var NAVTREEINDEX9 =
 "d9/dde/classbinary__search__tree.html#ad9912e8574538e86f9bd2c38e7e63d03":[10,0,18,7],
 "d9/dde/classbinary__search__tree.html#af4a865ce5244608819b169fc78a41153":[10,0,18,13],
 "d9/dde/classbinary__search__tree.html#af9a2c7c187a7ca3142c77ce342ef3153":[10,0,18,6],
-"d9/dde/structdouble__hashing_1_1_entry.html":[10,0,4,0],
 "d9/dde/structdouble__hashing_1_1_entry.html":[9,0,25,0],
+"d9/dde/structdouble__hashing_1_1_entry.html":[10,0,4,0],
 "d9/dde/structdouble__hashing_1_1_entry.html#a287b92112b6b43b34808a93778873475":[10,0,4,0,0],
 "d9/dde/structdouble__hashing_1_1_entry.html#a287b92112b6b43b34808a93778873475":[9,0,25,0,0],
 "d9/dde/structdouble__hashing_1_1_entry.html#ae114967c89dbba3b754dc4976bba3248":[9,0,25,0,1],
@@ -212,8 +212,8 @@ var NAVTREEINDEX9 =
 "da/dc9/fibonacci__matrix__exponentiation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,13,19,1],
 "da/dd1/structquadratic__probing_1_1_entry.html":[9,0,89,0],
 "da/dd1/structquadratic__probing_1_1_entry.html":[10,0,13,0],
-"da/dd1/structquadratic__probing_1_1_entry.html#a75f72858f08a2fc8b94402de98db12d8":[10,0,13,0,1],
 "da/dd1/structquadratic__probing_1_1_entry.html#a75f72858f08a2fc8b94402de98db12d8":[9,0,89,0,1],
+"da/dd1/structquadratic__probing_1_1_entry.html#a75f72858f08a2fc8b94402de98db12d8":[10,0,13,0,1],
 "da/dd1/structquadratic__probing_1_1_entry.html#a9df1118010a233d13ab3dd699bcb513e":[9,0,89,0,0],
 "da/dd1/structquadratic__probing_1_1_entry.html#a9df1118010a233d13ab3dd699bcb513e":[10,0,13,0,0],
 "da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp.html":[11,0,5,0],
