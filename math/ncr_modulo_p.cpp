@@ -10,7 +10,7 @@
  */
 
 #include <cassert>   /// for assert
-#include <iostream>  /// for io operations
+#include <iostream>  /// for std::cout
 #include <vector>    /// for std::vector
 
 /**
