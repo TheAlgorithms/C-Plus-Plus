@@ -33,8 +33,8 @@ namespace utils {
  * equation
  * @returns the gcd of a and b
  */
-uint64_t gcdExtended(const uint64_t& a, const uint64_t& b, int64_t& x,
-                     int64_t& y) {
+int64_t gcdExtended(const int64_t& a, const int64_t& b, int64_t& x,
+                    int64_t& y) {
     if (a == 0) {
         x = 0;
         y = 1;
@@ -42,7 +42,7 @@ uint64_t gcdExtended(const uint64_t& a, const uint64_t& b, int64_t& x,
     }
 
     int64_t x1 = 0, y1 = 0;
-    uint64_t gcd = gcdExtended(b % a, a, x1, y1);
+    const int64_t gcd = gcdExtended(b % a, a, x1, y1);
 
     x = y1 - (b / a) * x1;
     y = x1;
@@ -54,14 +54,13 @@ uint64_t gcdExtended(const uint64_t& a, const uint64_t& b, int64_t& x,
  * @params[in] the numbers 'a' and 'm' from above equation
  * @returns the modular inverse of a
  */
-int64_t modInverse(const uint64_t& a, const uint64_t& m) {
+int64_t modInverse(const int64_t& a, const int64_t& m) {
     int64_t x = 0, y = 0;
-    uint64_t g = gcdExtended(a, m, x, y);
+    const int64_t g = gcdExtended(a, m, x, y);
     if (g != 1) {  // modular inverse doesn't exist
         return -1;
     } else {
-        int64_t res = ((x + m) % m);
-        return res;
+        return ((x + m) % m);
     }
 }
 };  // namespace utils
@@ -70,8 +69,8 @@ int64_t modInverse(const uint64_t& a, const uint64_t& m) {
  */
 class NCRModuloP {
  private:
-    const uint64_t p;  /// the p from (nCr % p)
-    const std::vector<uint64_t>
+    const int64_t p;  /// the p from (nCr % p)
+    const std::vector<int64_t>
         fac;  /// stores precomputed factorial(i) % p value
 
     /**
@@ -81,11 +80,11 @@ class NCRModuloP {
      * @return vector storing factorials of the numbers 0, ..., max_arg_val
      * reduced modulo mod
      */
-    static std::vector<uint64_t> computeFactorialsMod(
-        const uint64_t& max_arg_val, const uint64_t& mod) {
-        auto res = std::vector<uint64_t>(max_arg_val + 1);
+    static std::vector<int64_t> computeFactorialsMod(const int64_t& max_arg_val,
+                                                     const int64_t& mod) {
+        auto res = std::vector<int64_t>(max_arg_val + 1);
         res[0] = 1;
-        for (uint64_t i = 1; i <= max_arg_val; i++) {
+        for (int64_t i = 1; i <= max_arg_val; i++) {
             res[i] = (res[i - 1] * i) % mod;
         }
         return res;
@@ -96,7 +95,7 @@ class NCRModuloP {
      *  and stores them in vector 'fac'
      *  @params[in] the numbers 'size', 'mod'
      */
-    NCRModuloP(const uint64_t& size, const uint64_t& mod)
+    NCRModuloP(const int64_t& size, const int64_t& mod)
         : p(mod), fac(computeFactorialsMod(size, mod)) {}
 
     /** Find nCr % p
@@ -104,7 +103,7 @@ class NCRModuloP {
      * @params[in] the numbers 'n', 'r' and 'p'
      * @returns the value nCr % p
      */
-    int64_t ncr(const uint64_t& n, const uint64_t& r) const {
+    int64_t ncr(const int64_t& n, const int64_t& r) const {
         // Base cases
         if (r > n) {
             return 0;
@@ -135,14 +134,14 @@ class NCRModuloP {
  */
 static void tests() {
     struct TestCase {
-        const uint64_t size;
-        const uint64_t p;
-        const uint64_t n;
-        const uint64_t r;
+        const int64_t size;
+        const int64_t p;
+        const int64_t n;
+        const int64_t r;
         const int64_t expected;
 
-        TestCase(const uint64_t size, const uint64_t p, const uint64_t n,
-                 const uint64_t r, const int64_t expected)
+        TestCase(const int64_t size, const int64_t p, const int64_t n,
+                 const int64_t r, const int64_t expected)
             : size(size), p(p), n(n), r(r), expected(expected) {}
     };
     const std::vector<TestCase> test_cases = {
@@ -167,8 +166,8 @@ static void tests() {
  */
 int main() {
     // populate the fac array
-    const uint64_t size = 1e6 + 1;
-    const uint64_t p = 1e9 + 7;
+    const int64_t size = 1e6 + 1;
+    const int64_t p = 1e9 + 7;
     const auto ncrObj = math::ncr_modulo_p::NCRModuloP(size, p);
     // test 6Ci for i=0 to 7
     for (int i = 0; i <= 7; i++) {
