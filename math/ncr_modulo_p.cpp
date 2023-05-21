@@ -100,7 +100,7 @@ class NCRModuloP {
 
     /** Find nCr % p
      *
-     * @params[in] the numbers 'n', 'r' and 'p'
+     * @params[in] the numbers 'n' and 'r'
      * @returns the value nCr % p
      */
     int64_t ncr(const int64_t& n, const int64_t& r) const {
