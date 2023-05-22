@@ -168,6 +168,7 @@
   * [Md5](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/hashing/md5.cpp)
   * [Quadratic Probing Hash Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/hashing/quadratic_probing_hash_table.cpp)
   * [Sha1](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/hashing/sha1.cpp)
+  * [Sha256](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/hashing/sha256.cpp)
 
 ## Machine Learning
   * [A Star Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/machine_learning/a_star_search.cpp)
