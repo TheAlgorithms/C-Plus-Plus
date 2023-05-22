@@ -12,9 +12,12 @@
  * used for authenticating software packages and secure password hashing.
  */
 
+#include <array>     /// For std::array
 #include <cassert>   /// For assert
 #include <cstdint>   /// For uint8_t, uint32_t and uint64_t data types
+#include <iomanip>   /// For std::setfill and std::setw
 #include <iostream>  /// For IO operations
+#include <sstream>   /// For std::stringstream
 
 /**
  * @namespace hashing
@@ -28,41 +31,11 @@ namespace hashing {
  */
 namespace sha256 {
 /**
- * @brief Rotates the bits of a 32-bit unsigned integer
- * @param n Integer to rotate
- * @param rotate Number of bits to rotate
- * @return uint32_t The rotated integer
+ * @brief Pads the input string to be a multiple of 512-bits
+ * @param input Input string
+ * @return std::string The padded input string
  */
-uint32_t rightRotate(uint32_t n, size_t rotate) {
-    return (n >> rotate) | (n << (32 - rotate));
-}
-
-/**
- * @brief The SHA-256 algorithm
- * @param input The input string to hash
- * @return std::string The final hash value
- */
-std::string sha256(const std::string &input) {
-    // Initialize array of hash values with first 32 bits of the fractional
-    // parts of the square roots of the first 8 primes 2..19
-    uint32_t hash[8] = {0x6A09E667, 0xBB67AE85, 0x3C6EF372, 0xA54FF53A,
-                        0x510E527F, 0x9B05688C, 0x1F83D9AB, 0x5BE0CD19};
-
-    // Initialize array of round constants with first 32 bits of the fractional
-    // parts of the cube roots of the first 64 primes 2..311
-    const uint32_t k[64] = {
-        0x428A2F98, 0x71374491, 0xB5C0FBCF, 0xE9B5DBA5, 0x3956C25B, 0x59F111F1,
-        0x923F82A4, 0xAB1C5ED5, 0xD807AA98, 0x12835B01, 0x243185BE, 0x550C7DC3,
-        0x72BE5D74, 0x80DEB1FE, 0x9BDC06A7, 0xC19BF174, 0xE49B69C1, 0xEFBE4786,
-        0x0FC19DC6, 0x240CA1CC, 0x2DE92C6F, 0x4A7484AA, 0x5CB0A9DC, 0x76F988DA,
-        0x983E5152, 0xA831C66D, 0xB00327C8, 0xBF597FC7, 0xC6E00BF3, 0xD5A79147,
-        0x06CA6351, 0x14292967, 0x27B70A85, 0x2E1B2138, 0x4D2C6DFC, 0x53380D13,
-        0x650A7354, 0x766A0ABB, 0x81C2C92E, 0x92722C85, 0xA2BFE8A1, 0xA81A664B,
-        0xC24B8B70, 0xC76C51A3, 0xD192E819, 0xD6990624, 0xF40E3585, 0x106AA070,
-        0x19A4C116, 0x1E376C08, 0x2748774C, 0x34B0BCB5, 0x391C0CB3, 0x4ED8AA4A,
-        0x5B9CCA4F, 0x682E6FF3, 0x748F82EE, 0x78A5636F, 0x84C87814, 0x8CC70208,
-        0x90BEFFFA, 0xA4506CEB, 0xBEF9A3F7, 0xC67178F2};
-
+std::string prepare_input(std::string input) {
     // Pre-processing
     std::string padded_input = input;
     uint64_t input_size = input.length() * 8;  // Message length in bits
@@ -78,9 +51,51 @@ std::string sha256(const std::string &input) {
         padded_input += static_cast<char>((input_size >> (i - 8)) & 0xFF);
     }
 
+    return padded_input;
+}
+
+/**
+ * @brief Rotates the bits of a 32-bit unsigned integer
+ * @param n Integer to rotate
+ * @param rotate Number of bits to rotate
+ * @return uint32_t The rotated integer
+ */
+uint32_t right_rotate(uint32_t n, size_t rotate) {
+    return (n >> rotate) | (n << (32 - rotate));
+}
+
+/**
+ * @brief The SHA-256 algorithm
+ * @param input The input string to hash
+ * @return std::string The final hash value
+ */
+std::string sha256(const std::string &input) {
+    // Initialize array of hash values with first 32 bits of the fractional
+    // parts of the square roots of the first 8 primes 2..19
+    std::array<uint32_t, 8> hash = {0x6A09E667, 0xBB67AE85, 0x3C6EF372,
+                                    0xA54FF53A, 0x510E527F, 0x9B05688C,
+                                    0x1F83D9AB, 0x5BE0CD19};
+
+    // Initialize array of round constants with first 32 bits of the fractional
+    // parts of the cube roots of the first 64 primes 2..311
+    const std::array<uint32_t, 64> k = {
+        0x428A2F98, 0x71374491, 0xB5C0FBCF, 0xE9B5DBA5, 0x3956C25B, 0x59F111F1,
+        0x923F82A4, 0xAB1C5ED5, 0xD807AA98, 0x12835B01, 0x243185BE, 0x550C7DC3,
+        0x72BE5D74, 0x80DEB1FE, 0x9BDC06A7, 0xC19BF174, 0xE49B69C1, 0xEFBE4786,
+        0x0FC19DC6, 0x240CA1CC, 0x2DE92C6F, 0x4A7484AA, 0x5CB0A9DC, 0x76F988DA,
+        0x983E5152, 0xA831C66D, 0xB00327C8, 0xBF597FC7, 0xC6E00BF3, 0xD5A79147,
+        0x06CA6351, 0x14292967, 0x27B70A85, 0x2E1B2138, 0x4D2C6DFC, 0x53380D13,
+        0x650A7354, 0x766A0ABB, 0x81C2C92E, 0x92722C85, 0xA2BFE8A1, 0xA81A664B,
+        0xC24B8B70, 0xC76C51A3, 0xD192E819, 0xD6990624, 0xF40E3585, 0x106AA070,
+        0x19A4C116, 0x1E376C08, 0x2748774C, 0x34B0BCB5, 0x391C0CB3, 0x4ED8AA4A,
+        0x5B9CCA4F, 0x682E6FF3, 0x748F82EE, 0x78A5636F, 0x84C87814, 0x8CC70208,
+        0x90BEFFFA, 0xA4506CEB, 0xBEF9A3F7, 0xC67178F2};
+
+    const std::string padded_input = prepare_input(input);
+
     // Process message in successive 512-bit (64-byte) chunks
     for (size_t i = 0; i < padded_input.length(); i += 64) {
-        uint32_t blocks[64];
+        std::array<uint32_t, 64> blocks;
 
         // Copy chunk into first 16 words of the message schedule array
         for (size_t j = 0; j < 16; ++j) {
@@ -92,11 +107,11 @@ std::string sha256(const std::string &input) {
         }
 
         for (size_t j = 16; j < 64; ++j) {
-            uint32_t s0 = rightRotate(blocks[j - 15], 7) ^
-                          rightRotate(blocks[j - 15], 18) ^
+            uint32_t s0 = right_rotate(blocks[j - 15], 7) ^
+                          right_rotate(blocks[j - 15], 18) ^
                           (blocks[j - 15] >> 3);
-            uint32_t s1 = rightRotate(blocks[j - 2], 17) ^
-                          rightRotate(blocks[j - 2], 19) ^
+            uint32_t s1 = right_rotate(blocks[j - 2], 17) ^
+                          right_rotate(blocks[j - 2], 19) ^
                           (blocks[j - 2] >> 10);
             blocks[j] = blocks[j - 16] + s0 + blocks[j - 7] + s1;
         }
@@ -114,11 +129,11 @@ std::string sha256(const std::string &input) {
         // Compression function main loop
         for (size_t j = 0; j < 64; ++j) {
             uint32_t s1 =
-                rightRotate(e, 6) ^ rightRotate(e, 11) ^ rightRotate(e, 25);
+                right_rotate(e, 6) ^ right_rotate(e, 11) ^ right_rotate(e, 25);
             uint32_t ch = (e & f) ^ (~e & g);
             uint32_t temp1 = h + s1 + ch + k[j] + blocks[j];
             uint32_t s0 =
-                rightRotate(a, 2) ^ rightRotate(a, 13) ^ rightRotate(a, 22);
+                right_rotate(a, 2) ^ right_rotate(a, 13) ^ right_rotate(a, 22);
             uint32_t maj = (a & b) ^ (a & c) ^ (b & c);
             uint32_t temp2 = s0 + maj;
 
@@ -146,11 +161,11 @@ std::string sha256(const std::string &input) {
     // Convert the hash to a hexadecimal string
     std::string result;
     for (size_t i = 0; i < 8; ++i) {
-        for (int j = 0; j < 4; ++j) {
-            uint8_t byte = (hash[i] >> (24 - j * 8)) & 0xFF;
-            char buf[3];
-            sprintf(buf, "%02x", byte);
-            result += buf;
+        for (size_t j = 0; j < 4; ++j) {
+            uint32_t byte = (hash[i] >> (24 - j * 8)) & 0xFF;
+            std::stringstream ss;
+            ss << std::hex << std::setfill('0') << std::setw(2) << byte;
+            result += ss.str();
         }
     }
 
