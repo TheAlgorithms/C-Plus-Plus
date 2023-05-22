@@ -42,7 +42,7 @@ uint32_t rightRotate(uint32_t n, size_t rotate) {
  * @param input The input string to hash
  * @return std::string The final hash value
  */
-std::string sha256(std::string &input) {
+std::string sha256(const std::string &input) {
     // Initialize array of hash values with first 32 bits of the fractional
     // parts of the square roots of the first 8 primes 2..19
     uint32_t hash[8] = {0x6A09E667, 0xBB67AE85, 0x3C6EF372, 0xA54FF53A,
@@ -148,7 +148,7 @@ std::string sha256(std::string &input) {
     for (size_t i = 0; i < 8; ++i) {
         for (int j = 0; j < 4; ++j) {
             uint8_t byte = (hash[i] >> (24 - j * 8)) & 0xFF;
-            char buf[2];
+            char buf[3];
             sprintf(buf, "%02x", byte);
             result += buf;
         }
