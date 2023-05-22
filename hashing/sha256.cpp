@@ -35,7 +35,7 @@ namespace sha256 {
  * @param input Input string
  * @return std::string The padded input string
  */
-std::string prepare_input(std::string input) {
+std::string prepare_input(const std::string& input) {
     // Pre-processing
     std::string padded_input = input;
     uint64_t input_size = input.length() * 8;  // Message length in bits
@@ -69,7 +69,7 @@ uint32_t right_rotate(uint32_t n, size_t rotate) {
  * @param input The input string to hash
  * @return std::string The final hash value
  */
-std::string sha256(const std::string &input) {
+std::string sha256(const std::string& input) {
     // Initialize array of hash values with first 32 bits of the fractional
     // parts of the square roots of the first 8 primes 2..19
     std::array<uint32_t, 8> hash = {0x6A09E667, 0xBB67AE85, 0x3C6EF372,
@@ -95,7 +95,7 @@ std::string sha256(const std::string &input) {
 
     // Process message in successive 512-bit (64-byte) chunks
     for (size_t i = 0; i < padded_input.length(); i += 64) {
-        std::array<uint32_t, 64> blocks;
+        std::array<uint32_t, 64> blocks{};
 
         // Copy chunk into first 16 words of the message schedule array
         for (size_t j = 0; j < 16; ++j) {
