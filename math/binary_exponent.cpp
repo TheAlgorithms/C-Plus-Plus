@@ -26,7 +26,10 @@
 
 #include <cassert> // for assert
 #include <iostream> // for cout
-
+/**
+ * @brief Mathematical algorithms
+ * @namespace
+ */
 namespace math {
 /**
  * @brief Recursive function to calculate exponent in \f$O(\log(n))\f$ using
