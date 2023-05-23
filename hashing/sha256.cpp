@@ -198,11 +198,7 @@ std::string hash_to_string(const std::array<uint32_t, 8> &hash) {
  * @return std::string The final hash value
  */
 std::string sha256(const std::string &input) {
-    std::array<uint32_t, 8> hash = compute_hash(input);
-
-    std::string result = hash_to_string(hash);
-
-    return result;
+    return hash_to_string(compute_hash(input));
 }
 }  // namespace sha256
 }  // namespace hashing
