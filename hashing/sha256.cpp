@@ -32,27 +32,26 @@ namespace hashing {
  */
 namespace sha256 {
 /**
- * @brief Pads the input string to be a multiple of 512-bits
+ * @brief Returns the character at pos after the input is padded
  * @param input Input string
- * @return std::string The padded input string
+ * @param pos Position of character to be returned
+ * @param padded_input_size Size of the padded input
+ * @return char Character at the index pos in the padded string
  */
-std::string prepare_input(const std::string &input) {
-    // Pre-processing
-    std::string padded_input = input;
-    uint64_t input_size = input.length() * 8;  // Message length in bits
-
-    // Append a single '1' bit
-    padded_input += '\x80';
-
-    // Pad with zeros
-    while ((padded_input.length() * 8) % 512 != 448) padded_input += '\x00';
-
-    // Append length of the original input string as a 64-bit big-endian integer
-    for (uint32_t i = 64; i != 0; i -= 8) {
-        padded_input += static_cast<char>((input_size >> (i - 8)) & 0xFF);
-    }
-
-    return padded_input;
+char get_char(const std::string input, std::size_t pos,
+              size_t padded_input_size) {
+    size_t input_size = input.length();
+    char ch;
+    if (pos < input_size)
+        ch = input[pos];
+    else if (pos == input_size)
+        ch = '\x80';
+    else if (pos < padded_input_size - 8)
+        ch = '\x00';
+    else
+        ch =
+            static_cast<char>((input_size * 8 >> (56 - (pos % 56) * 8)) & 0xFF);
+    return ch;
 }
 
 /**
@@ -70,7 +69,7 @@ uint32_t right_rotate(uint32_t n, size_t rotate) {
  * @param padded_input Padded input string
  * @return std::array<uint32_t, 8> The final hash array
  */
-std::array<uint32_t, 8> compute_hash(const std::string &padded_input) {
+std::array<uint32_t, 8> compute_hash(const std::string &input) {
     // Initialize array of hash values with first 32 bits of the fractional
     // parts of the square roots of the first 8 primes 2..19
     std::array<uint32_t, 8> hash = {0x6A09E667, 0xBB67AE85, 0x3C6EF372,
@@ -92,17 +91,33 @@ std::array<uint32_t, 8> compute_hash(const std::string &padded_input) {
         0x5B9CCA4F, 0x682E6FF3, 0x748F82EE, 0x78A5636F, 0x84C87814, 0x8CC70208,
         0x90BEFFFA, 0xA4506CEB, 0xBEF9A3F7, 0xC67178F2};
 
+    size_t input_size = input.length();  // Input size in bytes
+
+    // Calculate size of the padded input in bytes
+    size_t padded_input_size = 0;
+    if (input_size % 64 < 56) {
+        padded_input_size = input_size + 64 - (input_size % 64);
+    } else {
+        padded_input_size = input_size + 128 - (input_size % 64);
+    }
+
     // Process message in successive 512-bit (64-byte) chunks
-    for (size_t i = 0; i < padded_input.length(); i += 64) {
+    for (size_t i = 0; i < padded_input_size; i += 64) {
         std::array<uint32_t, 64> blocks{};
 
         // Copy chunk into first 16 words of the message schedule array
         for (size_t j = 0; j < 16; ++j) {
-            blocks[j] =
-                (static_cast<uint8_t>(padded_input[i + j * 4]) << 24) |
-                (static_cast<uint8_t>(padded_input[i + j * 4 + 1]) << 16) |
-                (static_cast<uint8_t>(padded_input[i + j * 4 + 2]) << 8) |
-                static_cast<uint8_t>(padded_input[i + j * 4 + 3]);
+            blocks[j] = (static_cast<uint8_t>(
+                             get_char(input, i + j * 4, padded_input_size))
+                         << 24) |
+                        (static_cast<uint8_t>(
+                             get_char(input, i + j * 4 + 1, padded_input_size))
+                         << 16) |
+                        (static_cast<uint8_t>(
+                             get_char(input, i + j * 4 + 2, padded_input_size))
+                         << 8) |
+                        static_cast<uint8_t>(
+                            get_char(input, i + j * 4 + 3, padded_input_size));
         }
 
         for (size_t j = 16; j < 64; ++j) {
@@ -185,9 +200,7 @@ std::string hash_to_string(const std::array<uint32_t, 8> &hash) {
  * @return std::string The final hash value
  */
 std::string sha256(const std::string &input) {
-    const std::string padded_input = prepare_input(input);
-
-    std::array<uint32_t, 8> hash = compute_hash(padded_input);
+    std::array<uint32_t, 8> hash = compute_hash(input);
 
     std::string result = hash_to_string(hash);
 
