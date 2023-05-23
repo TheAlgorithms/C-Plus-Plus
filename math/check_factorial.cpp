@@ -8,8 +8,8 @@
  *
  * @author [Divyajyoti Ukirde](https://github.com/divyajyotiuk)
  */
-#include <cassert>   // for assert
-#include <iostream>  // for cout
+#include <cassert>   /// for assert
+#include <iostream>  /// for cout
 
 namespace math {
 /**
