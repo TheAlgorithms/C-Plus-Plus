@@ -1,7 +1,7 @@
 /**
  * @file
  * @brief A simple program to check if the given number is a factorial of some
- * number or not. https://en.wikipedia.org/wiki/Factorial
+ * number or not.
  *
  * @details A factorial number is the sum of k! where any value of k is a
  * positive integer. https://www.mathsisfun.com/numbers/factorial.html
