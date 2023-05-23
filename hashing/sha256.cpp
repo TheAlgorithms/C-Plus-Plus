@@ -38,19 +38,20 @@ namespace sha256 {
  * @param padded_input_size Size of the padded input
  * @return char Character at the index pos in the padded string
  */
-char get_char(const std::string input, std::size_t pos,
+char get_char(const std::string &input, std::size_t pos,
               size_t padded_input_size) {
     size_t input_size = input.length();
-    char ch;
-    if (pos < input_size)
+    char ch = 0;
+    if (pos < input_size) {
         ch = input[pos];
-    else if (pos == input_size)
+    } else if (pos == input_size) {
         ch = '\x80';
-    else if (pos < padded_input_size - 8)
+    } else if (pos < padded_input_size - 8) {
         ch = '\x00';
-    else
+    } else {
         ch =
             static_cast<char>((input_size * 8 >> (56 - (pos % 56) * 8)) & 0xFF);
+    }
     return ch;
 }
 
