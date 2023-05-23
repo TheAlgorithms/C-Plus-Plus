@@ -18,12 +18,13 @@
 */
 #include <cassert> /// for assert
 #include <cmath> /// for std::pow
+#include <iostream> /// for IO operations
 
 /**
-* @brief Function to calculate the total number of digits in the number.
-* @param num Number
-* @return Total number of digits.
-*/
+ * @brief Function to calculate the total number of digits in the number.
+ * @param num Number
+ * @return Total number of digits.
+ */
 int number_of_digits(int num) {
     int total_digits = 0;
     while (num > 0) {
@@ -76,6 +77,8 @@ static void test() {
     assert(is_armstrong(0) == true);
     // is_armstrong(12) returns false.
     assert(is_armstrong(12) == false);
+
+    std::cout << "all tests have passed\n";
 }
 
 /**
