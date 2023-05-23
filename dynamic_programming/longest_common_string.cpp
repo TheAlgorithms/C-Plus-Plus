@@ -71,6 +71,11 @@ std::vector<TestCase> get_test_cases() {
             TestCase("x12x3x", "123", 3)};
 }
 
+/**
+ * @brief checks the function longest_common_string_length agains example data
+ * @param test_cases list of test cases
+ * @tparam type representing a list of test cases
+ */
 template <typename TestCases>
 void test_longest_common_string_length(const TestCases& test_cases) {
     for (const auto& cur_tc : test_cases) {
@@ -79,6 +84,12 @@ void test_longest_common_string_length(const TestCases& test_cases) {
     }
 }
 
+/**
+ * @brief checks the function longest_common_string_length returns the same
+ * result when its argument are flipped
+ * @param test_cases list of test cases
+ * @tparam type representing a list of test cases
+ */
 template <typename TestCases>
 void test_longest_common_string_length_is_symmetric(
     const TestCases& test_cases) {
@@ -98,6 +109,12 @@ std::string reverse_str(const std::string& in_str) {
     return {in_str.rbegin(), in_str.rend()};
 }
 
+/**
+ * @brief checks the function longest_common_string_length returns the same
+ * result when its inputs are reversed
+ * @param test_cases list of test cases
+ * @tparam type representing a list of test cases
+ */
 template <typename TestCases>
 void test_longest_common_string_length_for_reversed_inputs(
     const TestCases& test_cases) {
@@ -108,6 +125,9 @@ void test_longest_common_string_length_for_reversed_inputs(
     }
 }
 
+/**
+ * @brief runns all tests for longest_common_string_length funcion
+ */
 void test_all() {
     const auto test_cases = get_test_cases();
     assert(test_cases.size() > 0);
