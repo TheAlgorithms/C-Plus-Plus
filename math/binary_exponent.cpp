@@ -24,8 +24,8 @@
  * @author[Mann Mehta]https://github.com/mann2108
  */
 
-#include <cassert> // for assert
-#include <iostream> // for cout
+#include <cassert> /// for assert
+#include <iostream> /// for cout
 /**
  * @brief Mathematical algorithms
  * @namespace
