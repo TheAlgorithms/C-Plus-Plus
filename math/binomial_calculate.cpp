@@ -8,7 +8,7 @@
  * Wolfram Web
  * Resource.](https://mathworld.wolfram.com/BinomialCoefficient.html) "The
  * binomial coefficient \f$ \binom{n}{k} \f$ is the number of ways of picking \f$k\f$ unordered
- * outcomes from n possibilities, also known as a combination or combinatorial
+ * outcomes from \f$n\f$ possibilities, also known as a combination or combinatorial
  * number. The symbols [ _ representing subscript ] _nC_k and (n; k) are used to
  * denote a binomial coefficient, and are sometimes read as "n choose k." (n; k)
  * therefore gives the number of k-subsets possible out of a set of n distinct
