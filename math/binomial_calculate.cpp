@@ -7,8 +7,7 @@
  * quoted from: [Weisstein, Eric W. "Binomial Coefficient." From MathWorld--A
  * Wolfram Web
  * Resource.](https://mathworld.wolfram.com/BinomialCoefficient.html) "The
- * binomial coefficient [; meaning n above k in brackets, how binomial
- * coefficients are notated] (n; k) is the number of ways of picking k unordered
+ * binomial coefficient \f$ \binom{n}{k} \f$ is the number of ways of picking \f$k\f$ unordered
  * outcomes from n possibilities, also known as a combination or combinatorial
  * number. The symbols [ _ representing subscript ] _nC_k and (n; k) are used to
  * denote a binomial coefficient, and are sometimes read as "n choose k." (n; k)
