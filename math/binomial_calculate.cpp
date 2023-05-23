@@ -16,7 +16,7 @@
  * {1,3}, {1,4}, {2,3}, {2,4}, and {3,4}, so (4; 2)=6." [Another good
  * example/explanation](https://math.stackexchange.com/questions/2172355/probability-notation-two-numbers-stacked-inside-brackets)
  *
- * @note An identity of the binomial coefficient is (n; n-k) This is explained
+ * @note An identity of the binomial coefficient is \f$ \binom{n}{n-k} \f$ This is explained
  * partially in the comments of this implementation but in more detail at [Prof.
  * Tesler: Chapter 3.3, 4.1, 4.3. Binomial Coefficient
  * Identities](https://mathweb.ucsd.edu/~gptesler/184a/slides/184a_ch4slides_17-handout.pdf
