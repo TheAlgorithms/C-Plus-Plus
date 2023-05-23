@@ -10,7 +10,7 @@
  * binomial coefficient \f$ \binom{n}{k} \f$ is the number of ways of picking \f$k\f$ unordered
  * outcomes from \f$n\f$ possibilities, also known as a combination or combinatorial
  * number. The symbols \f$ _nC_k \f$ and \f$ \binom{n}{k} \f$ are used to
- * denote a binomial coefficient, and are sometimes read as "n choose k." (n; k)
+ * denote a binomial coefficient, and are sometimes read as "n choose k." \f$ \binom{n}{k} \f$
  * therefore gives the number of k-subsets possible out of a set of n distinct
  * items. For example, The 2-subsets of {1,2,3,4} are the six pairs {1,2},
  * {1,3}, {1,4}, {2,3}, {2,4}, and {3,4}, so (4; 2)=6." [Another good
