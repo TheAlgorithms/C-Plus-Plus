@@ -71,15 +71,18 @@ std::vector<TestCase> get_test_cases() {
             TestCase("x12x3x", "123", 3)};
 }
 
-void test_longest_common_string_length() {
-    for (const auto& cur_tc : get_test_cases()) {
+template <typename TestCases>
+void test_longest_common_string_length(const TestCases& test_cases) {
+    for (const auto& cur_tc : test_cases) {
         assert(longest_common_string_length(cur_tc.str_a, cur_tc.str_b) ==
                cur_tc.common_string_len);
     }
 }
 
-void test_longest_common_string_length_is_symmetric() {
-    for (const auto& cur_tc : get_test_cases()) {
+template <typename TestCases>
+void test_longest_common_string_length_is_symmetric(
+    const TestCases& test_cases) {
+    for (const auto& cur_tc : test_cases) {
         assert(longest_common_string_length(cur_tc.str_b, cur_tc.str_a) ==
                cur_tc.common_string_len);
     }
@@ -95,17 +98,25 @@ std::string reverse_str(const std::string& in_str) {
     return {in_str.rbegin(), in_str.rend()};
 }
 
-void test_longest_common_string_length_for_reversed_inputs() {
-    for (const auto& cur_tc : get_test_cases()) {
+template <typename TestCases>
+void test_longest_common_string_length_for_reversed_inputs(
+    const TestCases& test_cases) {
+    for (const auto& cur_tc : test_cases) {
         assert(longest_common_string_length(reverse_str(cur_tc.str_a),
                                             reverse_str(cur_tc.str_b)) ==
                cur_tc.common_string_len);
     }
 }
 
+void test_all() {
+    const auto test_cases = get_test_cases();
+    assert(test_cases.size() > 0);
+    test_longest_common_string_length(test_cases);
+    test_longest_common_string_length_is_symmetric(test_cases);
+    test_longest_common_string_length_for_reversed_inputs(test_cases);
+}
+
 int main() {
-    test_longest_common_string_length();
-    test_longest_common_string_length_is_symmetric();
-    test_longest_common_string_length_for_reversed_inputs();
+    test_all();
     return 0;
 }
