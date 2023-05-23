@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief A simple program to check if the given number is a factorial of some
+ * @brief A simple program to check if the given number is a [factorial](https://en.wikipedia.org/wiki/Factorial) of some
  * number or not.
  *
  * @details A factorial number is the sum of k! where any value of k is a
