@@ -182,17 +182,14 @@ std::array<uint32_t, 8> compute_hash(const std::string &input) {
  * @return std::string Final hash value
  */
 std::string hash_to_string(const std::array<uint32_t, 8> &hash) {
-    std::string result;
+    std::stringstream ss;
     for (size_t i = 0; i < 8; ++i) {
         for (size_t j = 0; j < 4; ++j) {
             uint32_t byte = (hash[i] >> (24 - j * 8)) & 0xFF;
-            std::stringstream ss;
             ss << std::hex << std::setfill('0') << std::setw(2) << byte;
-            result += ss.str();
         }
     }
-
-    return result;
+    return ss.str();
 }
 
 /**
