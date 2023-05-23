@@ -18,6 +18,7 @@
 #include <iomanip>   /// For std::setfill and std::setw
 #include <iostream>  /// For IO operations
 #include <sstream>   /// For std::stringstream
+#include <vector>    /// For std::vector
 
 /**
  * @namespace hashing
@@ -35,7 +36,7 @@ namespace sha256 {
  * @param input Input string
  * @return std::string The padded input string
  */
-std::string prepare_input(const std::string& input) {
+std::string prepare_input(const std::string &input) {
     // Pre-processing
     std::string padded_input = input;
     uint64_t input_size = input.length() * 8;  // Message length in bits
@@ -65,11 +66,11 @@ uint32_t right_rotate(uint32_t n, size_t rotate) {
 }
 
 /**
- * @brief The SHA-256 algorithm
- * @param input The input string to hash
- * @return std::string The final hash value
+ * @brief Computes the final hash array
+ * @param padded_input Padded input string
+ * @return std::array<uint32_t, 8> The final hash array
  */
-std::string sha256(const std::string& input) {
+std::array<uint32_t, 8> compute_hash(const std::string &padded_input) {
     // Initialize array of hash values with first 32 bits of the fractional
     // parts of the square roots of the first 8 primes 2..19
     std::array<uint32_t, 8> hash = {0x6A09E667, 0xBB67AE85, 0x3C6EF372,
@@ -90,8 +91,6 @@ std::string sha256(const std::string& input) {
         0x19A4C116, 0x1E376C08, 0x2748774C, 0x34B0BCB5, 0x391C0CB3, 0x4ED8AA4A,
         0x5B9CCA4F, 0x682E6FF3, 0x748F82EE, 0x78A5636F, 0x84C87814, 0x8CC70208,
         0x90BEFFFA, 0xA4506CEB, 0xBEF9A3F7, 0xC67178F2};
-
-    const std::string padded_input = prepare_input(input);
 
     // Process message in successive 512-bit (64-byte) chunks
     for (size_t i = 0; i < padded_input.length(); i += 64) {
@@ -158,7 +157,15 @@ std::string sha256(const std::string& input) {
         hash[7] += h;
     }
 
-    // Convert the hash to a hexadecimal string
+    return hash;
+}
+
+/**
+ * @brief Convert the hash to a hexadecimal string
+ * @param hash Hash array
+ * @return std::string Final hash value
+ */
+std::string hash_to_string(const std::array<uint32_t, 8> &hash) {
     std::string result;
     for (size_t i = 0; i < 8; ++i) {
         for (size_t j = 0; j < 4; ++j) {
@@ -171,6 +178,21 @@ std::string sha256(const std::string& input) {
 
     return result;
 }
+
+/**
+ * @brief The SHA-256 algorithm
+ * @param input The input string to hash
+ * @return std::string The final hash value
+ */
+std::string sha256(const std::string &input) {
+    const std::string padded_input = prepare_input(input);
+
+    std::array<uint32_t, 8> hash = compute_hash(padded_input);
+
+    std::string result = hash_to_string(hash);
+
+    return result;
+}
 }  // namespace sha256
 }  // namespace hashing
 
@@ -179,49 +201,29 @@ std::string sha256(const std::string& input) {
  * @returns void
  */
 static void test() {
-    // 1st Test
-    std::string input = "";
-    std::string expected =
-        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855";
-    std::string output = hashing::sha256::sha256(input);
-    std::cout << "Input: " << input << std::endl;
-    std::cout << "Expected: " << expected << std::endl;
-    std::cout << "Output: " << output << std::endl;
-    assert(output == expected);
-    std::cout << "1st TEST PASSED\n\n";
-
-    // 2nd Test
-    input = "test";
-    expected =
-        "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08";
-    output = hashing::sha256::sha256(input);
-    std::cout << "Input: " << input << std::endl;
-    std::cout << "Expected: " << expected << std::endl;
-    std::cout << "Output: " << output << std::endl;
-    assert(output == expected);
-    std::cout << "2nd TEST PASSED\n\n";
-
-    // 3rd Test
-    input = "Hello World";
-    expected =
-        "a591a6d40bf420404a011733cfb7b190d62c65bf0bcda32b57b277d9ad9f146e";
-    output = hashing::sha256::sha256(input);
-    std::cout << "Input: " << input << std::endl;
-    std::cout << "Expected: " << expected << std::endl;
-    std::cout << "Output: " << output << std::endl;
-    assert(output == expected);
-    std::cout << "3rd TEST PASSED\n\n";
-
-    // 4th Test
-    input = "Hello World!";
-    expected =
-        "7f83b1657ff1fc53b92dc18148a1d65dfc2d4b1fa3d677284addd200126d9069";
-    output = hashing::sha256::sha256(input);
-    std::cout << "Input: " << input << std::endl;
-    std::cout << "Expected: " << expected << std::endl;
-    std::cout << "Output: " << output << std::endl;
-    assert(output == expected);
-    std::cout << "4th TEST PASSED\n\n";
+    struct TestCase {
+        const std::string input;
+        const std::string expected_hash;
+        TestCase(std::string input, std::string expected_hash)
+            : input(std::move(input)),
+              expected_hash(std::move(expected_hash)) {}
+    };
+    const std::vector<TestCase> test_cases{
+        TestCase(
+            "",
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"),
+        TestCase(
+            "test",
+            "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"),
+        TestCase(
+            "Hello World",
+            "a591a6d40bf420404a011733cfb7b190d62c65bf0bcda32b57b277d9ad9f146e"),
+        TestCase("Hello World!",
+                 "7f83b1657ff1fc53b92dc18148a1d65dfc2d4b1fa3d677284addd200126d9"
+                 "069")};
+    for (const auto &tc : test_cases) {
+        assert(hashing::sha256::sha256(tc.input) == tc.expected_hash);
+    }
 }
 
 /**
