@@ -24,6 +24,18 @@
  * @brief Hashing algorithms
  */
 namespace hashing {
+class Hash {
+    // Initialize array of hash values with first 32 bits of the fractional
+    // parts of the square roots of the first 8 primes 2..19
+    std::array<uint32_t, 8> hash = {0x6A09E667, 0xBB67AE85, 0x3C6EF372,
+                                    0xA54FF53A, 0x510E527F, 0x9B05688C,
+                                    0x1F83D9AB, 0x5BE0CD19};
+
+ public:
+    void update(const std::array<uint32_t, 64> &blocks);
+    std::string to_string();
+};
+
 /**
  * @namespace SHA-256
  * @brief Functions for the [SHA-256](https://en.wikipedia.org/wiki/SHA-2)
@@ -53,7 +65,7 @@ uint8_t extract_byte(const T in_value, const std::size_t byte_num) {
     if (sizeof(in_value) <= byte_num) {
         throw std::out_of_range("Byte at index byte_num does not exist");
     }
-    return ((in_value >> (byte_num * 8)) & 0xFF);
+    return (in_value >> (byte_num * 8)) & 0xFF;
 }
 
 /**
@@ -94,44 +106,63 @@ uint32_t right_rotate(uint32_t n, size_t rotate) {
 /**
  * @brief Creates the message schedule array
  * @param input Input string
- * @param i Position of the first bit of the chunk
+ * @param byte_num Position of the first byte of the chunk
  * @return std::array<uint32_t, 64> Message schedule array
  */
 std::array<uint32_t, 64> create_message_schedule_array(const std::string &input,
-                                                       const size_t i) {
+                                                       const size_t byte_num) {
     std::array<uint32_t, 64> blocks{};
 
     // Copy chunk into first 16 words of the message schedule array
-    for (size_t j = 0; j < 16; ++j) {
-        blocks[j] =
-            (static_cast<uint8_t>(get_char(input, i + j * 4)) << 24) |
-            (static_cast<uint8_t>(get_char(input, i + j * 4 + 1)) << 16) |
-            (static_cast<uint8_t>(get_char(input, i + j * 4 + 2)) << 8) |
-            static_cast<uint8_t>(get_char(input, i + j * 4 + 3));
+    for (size_t block_num = 0; block_num < 16; ++block_num) {
+        blocks[block_num] =
+            (static_cast<uint8_t>(get_char(input, byte_num + block_num * 4))
+             << 24) |
+            (static_cast<uint8_t>(get_char(input, byte_num + block_num * 4 + 1))
+             << 16) |
+            (static_cast<uint8_t>(get_char(input, byte_num + block_num * 4 + 2))
+             << 8) |
+            static_cast<uint8_t>(get_char(input, byte_num + block_num * 4 + 3));
     }
 
     // Extend the first 16 words into remaining 48 words of the message schedule
     // array
-    for (size_t j = 16; j < 64; ++j) {
-        const auto s0 = right_rotate(blocks[j - 15], 7) ^
-                        right_rotate(blocks[j - 15], 18) ^
-                        (blocks[j - 15] >> 3);
-        const auto s1 = right_rotate(blocks[j - 2], 17) ^
-                        right_rotate(blocks[j - 2], 19) ^ (blocks[j - 2] >> 10);
-        blocks[j] = blocks[j - 16] + s0 + blocks[j - 7] + s1;
+    for (size_t block_num = 16; block_num < 64; ++block_num) {
+        const auto s0 = right_rotate(blocks[block_num - 15], 7) ^
+                        right_rotate(blocks[block_num - 15], 18) ^
+                        (blocks[block_num - 15] >> 3);
+        const auto s1 = right_rotate(blocks[block_num - 2], 17) ^
+                        right_rotate(blocks[block_num - 2], 19) ^
+                        (blocks[block_num - 2] >> 10);
+        blocks[block_num] =
+            blocks[block_num - 16] + s0 + blocks[block_num - 7] + s1;
     }
 
     return blocks;
 }
 
 /**
- * @brief Modifies the hash array
- * @param hash Hash array to be modified
+ * @brief Computes the final hash value
+ * @param input Input string
+ * @return std::string The final hash value
+ */
+std::string sha256(const std::string &input) {
+    Hash h;
+    // Process message in successive 512-bit (64-byte) chunks
+    for (size_t byte_num = 0; byte_num < compute_padded_size(input.length());
+         byte_num += 64) {
+        h.update(create_message_schedule_array(input, byte_num));
+    }
+    return h.to_string();
+}
+}  // namespace sha256
+
+/**
+ * @brief Updates the hash array
  * @param blocks Message schedule array
  * @return void
  */
-void modify_hash(std::array<uint32_t, 8> &hash,
-                 const std::array<uint32_t, 64> &blocks) {
+void Hash::update(const std::array<uint32_t, 64> &blocks) {
     // Initialize array of round constants with first 32 bits of the fractional
     // parts of the cube roots of the first 64 primes 2..311
     const std::array<uint32_t, 64> k = {
@@ -158,13 +189,15 @@ void modify_hash(std::array<uint32_t, 8> &hash,
     auto h = hash[7];
 
     // Compression function main loop
-    for (size_t j = 0; j < 64; ++j) {
-        const auto s1 =
-            right_rotate(e, 6) ^ right_rotate(e, 11) ^ right_rotate(e, 25);
+    for (size_t block_num = 0; block_num < 64; ++block_num) {
+        const auto s1 = sha256::right_rotate(e, 6) ^
+                        sha256::right_rotate(e, 11) ^
+                        sha256::right_rotate(e, 25);
         const auto ch = (e & f) ^ (~e & g);
-        const auto temp1 = h + s1 + ch + k[j] + blocks[j];
-        const auto s0 =
-            right_rotate(a, 2) ^ right_rotate(a, 13) ^ right_rotate(a, 22);
+        const auto temp1 = h + s1 + ch + k[block_num] + blocks[block_num];
+        const auto s0 = sha256::right_rotate(a, 2) ^
+                        sha256::right_rotate(a, 13) ^
+                        sha256::right_rotate(a, 22);
         const auto maj = (a & b) ^ (a & c) ^ (b & c);
         const auto temp2 = s0 + maj;
 
@@ -190,50 +223,16 @@ void modify_hash(std::array<uint32_t, 8> &hash,
 }
 
 /**
- * @brief Computes the final hash array
- * @param input Input string
- * @return std::array<uint32_t, 8> The final hash array
- */
-std::array<uint32_t, 8> compute_hash(const std::string &input) {
-    // Initialize array of hash values with first 32 bits of the fractional
-    // parts of the square roots of the first 8 primes 2..19
-    std::array<uint32_t, 8> hash = {0x6A09E667, 0xBB67AE85, 0x3C6EF372,
-                                    0xA54FF53A, 0x510E527F, 0x9B05688C,
-                                    0x1F83D9AB, 0x5BE0CD19};
-
-    // Process message in successive 512-bit (64-byte) chunks
-    for (size_t i = 0; i < compute_padded_size(input.length()); i += 64) {
-        modify_hash(hash, create_message_schedule_array(input, i));
-    }
-
-    return hash;
-}
-
-/**
  * @brief Convert the hash to a hexadecimal string
- * @param hash Hash array
  * @return std::string Final hash value
  */
-std::string hash_to_string(const std::array<uint32_t, 8> &hash) {
+std::string Hash::to_string() {
     std::stringstream ss;
     for (size_t i = 0; i < 8; ++i) {
-        for (size_t j = 0; j < 4; ++j) {
-            const uint32_t byte = extract_byte<uint32_t>(hash[i], 3 - j);
-            ss << std::hex << std::setfill('0') << std::setw(2) << byte;
-        }
+        ss << std::hex << std::setfill('0') << std::setw(8) << hash[i];
     }
     return ss.str();
 }
-
-/**
- * @brief The SHA-256 algorithm
- * @param input The input string to hash
- * @return std::string The final hash value
- */
-std::string sha256(const std::string &input) {
-    return hash_to_string(compute_hash(input));
-}
-}  // namespace sha256
 }  // namespace hashing
 
 /**
