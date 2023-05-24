@@ -49,7 +49,8 @@ std::size_t compute_padded_size(const std::size_t input_size) {
  * @param byte_num Position of byte to be returned
  * @return uint8_t Byte at position byte_num
  */
-uint8_t extract_byte(const auto in_value, const std::size_t byte_num) {
+template <typename T>
+uint8_t extract_byte(const T in_value, const std::size_t byte_num) {
     if (sizeof(in_value) <= byte_num) {
         throw std::out_of_range("Byte at index byte_num does not exist");
     }
@@ -78,7 +79,7 @@ char get_char(const std::string &input, std::size_t pos) {
         throw std::out_of_range("pos is out of range");
     }
     return static_cast<char>(
-        extract_byte(input_size * 8, padded_input_size - pos - 1));
+        extract_byte<size_t>(input_size * 8, padded_input_size - pos - 1));
 }
 
 /**
@@ -195,7 +196,7 @@ std::string hash_to_string(const std::array<uint32_t, 8> &hash) {
     std::stringstream ss;
     for (size_t i = 0; i < 8; ++i) {
         for (size_t j = 0; j < 4; ++j) {
-            uint32_t byte = extract_byte(hash[i], 3 - j);
+            uint32_t byte = extract_byte<uint32_t>(hash[i], 3 - j);
             ss << std::hex << std::setfill('0') << std::setw(2) << byte;
         }
     }
