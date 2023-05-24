@@ -16,7 +16,6 @@
 #include <cassert>   /// For assert
 #include <cstdint>   /// For uint8_t, uint32_t and uint64_t data types
 #include <iomanip>   /// For std::setfill and std::setw
-#include <iostream>  /// For IO operations
 #include <sstream>   /// For std::stringstream
 #include <vector>    /// For std::vector
 
@@ -114,10 +113,11 @@ std::array<uint32_t, 64> create_message_schedule_array(const std::string &input,
     // Extend the first 16 words into remaining 48 words of the message schedule
     // array
     for (size_t j = 16; j < 64; ++j) {
-        uint32_t s0 = right_rotate(blocks[j - 15], 7) ^
-                      right_rotate(blocks[j - 15], 18) ^ (blocks[j - 15] >> 3);
-        uint32_t s1 = right_rotate(blocks[j - 2], 17) ^
-                      right_rotate(blocks[j - 2], 19) ^ (blocks[j - 2] >> 10);
+        const auto s0 = right_rotate(blocks[j - 15], 7) ^
+                        right_rotate(blocks[j - 15], 18) ^
+                        (blocks[j - 15] >> 3);
+        const auto s1 = right_rotate(blocks[j - 2], 17) ^
+                        right_rotate(blocks[j - 2], 19) ^ (blocks[j - 2] >> 10);
         blocks[j] = blocks[j - 16] + s0 + blocks[j - 7] + s1;
     }
 
@@ -148,25 +148,25 @@ void modify_hash(std::array<uint32_t, 8> &hash,
         0x90BEFFFA, 0xA4506CEB, 0xBEF9A3F7, 0xC67178F2};
 
     // Initialize working variables
-    uint32_t a = hash[0];
-    uint32_t b = hash[1];
-    uint32_t c = hash[2];
-    uint32_t d = hash[3];
-    uint32_t e = hash[4];
-    uint32_t f = hash[5];
-    uint32_t g = hash[6];
-    uint32_t h = hash[7];
+    auto a = hash[0];
+    auto b = hash[1];
+    auto c = hash[2];
+    auto d = hash[3];
+    auto e = hash[4];
+    auto f = hash[5];
+    auto g = hash[6];
+    auto h = hash[7];
 
     // Compression function main loop
     for (size_t j = 0; j < 64; ++j) {
-        uint32_t s1 =
+        const auto s1 =
             right_rotate(e, 6) ^ right_rotate(e, 11) ^ right_rotate(e, 25);
-        uint32_t ch = (e & f) ^ (~e & g);
-        uint32_t temp1 = h + s1 + ch + k[j] + blocks[j];
-        uint32_t s0 =
+        const auto ch = (e & f) ^ (~e & g);
+        const auto temp1 = h + s1 + ch + k[j] + blocks[j];
+        const auto s0 =
             right_rotate(a, 2) ^ right_rotate(a, 13) ^ right_rotate(a, 22);
-        uint32_t maj = (a & b) ^ (a & c) ^ (b & c);
-        uint32_t temp2 = s0 + maj;
+        const auto maj = (a & b) ^ (a & c) ^ (b & c);
+        const auto temp2 = s0 + maj;
 
         h = g;
         g = f;
@@ -218,7 +218,7 @@ std::string hash_to_string(const std::array<uint32_t, 8> &hash) {
     std::stringstream ss;
     for (size_t i = 0; i < 8; ++i) {
         for (size_t j = 0; j < 4; ++j) {
-            uint32_t byte = extract_byte<uint32_t>(hash[i], 3 - j);
+            const uint32_t byte = extract_byte<uint32_t>(hash[i], 3 - j);
             ss << std::hex << std::setfill('0') << std::setw(2) << byte;
         }
     }
