@@ -128,7 +128,7 @@ void test_longest_common_string_length_for_reversed_inputs(
 /**
  * @brief runns all tests for longest_common_string_length funcion
  */
-void test_all() {
+void tests() {
     const auto test_cases = get_test_cases();
     assert(test_cases.size() > 0);
     test_longest_common_string_length(test_cases);
@@ -137,6 +137,6 @@ void test_all() {
 }
 
 int main() {
-    test_all();
+    tests();
     return 0;
 }
