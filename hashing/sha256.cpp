@@ -33,7 +33,7 @@ class Hash {
 
  public:
     void update(const std::array<uint32_t, 64> &blocks);
-    std::string to_string();
+    std::string to_string() const;
 };
 
 /**
@@ -226,7 +226,7 @@ void Hash::update(const std::array<uint32_t, 64> &blocks) {
  * @brief Convert the hash to a hexadecimal string
  * @return std::string Final hash value
  */
-std::string Hash::to_string() {
+std::string Hash::to_string() const {
     std::stringstream ss;
     for (size_t i = 0; i < 8; ++i) {
         ss << std::hex << std::setfill('0') << std::setw(8) << hash[i];
@@ -251,7 +251,7 @@ static void test_extract_byte() {
     bool exception = false;
     try {
         hashing::sha256::extract_byte<uint32_t>(512, 5);
-    } catch (const std::out_of_range) {
+    } catch (const std::out_of_range &) {
         exception = true;
     }
     assert(exception);
@@ -265,7 +265,7 @@ static void test_get_char() {
     bool exception = false;
     try {
         hashing::sha256::get_char("test", 64);
-    } catch (const std::out_of_range) {
+    } catch (const std::out_of_range &) {
         exception = true;
     }
     assert(exception);
