@@ -37,13 +37,10 @@ namespace sha256 {
  * @return size_t Size of the padded input
  */
 std::size_t compute_padded_size(const std::size_t input_size) {
-    size_t padded_input_size = 0;
     if (input_size % 64 < 56) {
-        padded_input_size = input_size + 64 - (input_size % 64);
-    } else {
-        padded_input_size = input_size + 128 - (input_size % 64);
+        return input_size + 64 - (input_size % 64);
     }
-    return padded_input_size;
+    return input_size + 128 - (input_size % 64);
 }
 
 /**
@@ -63,19 +60,19 @@ uint8_t extract_byte(const std::size_t in_value, const std::size_t byte_num) {
  * @return char Character at the index pos in the padded string
  */
 char get_char(const std::string &input, std::size_t pos) {
-    size_t input_size = input.length();
-    size_t padded_input_size = compute_padded_size(input_size);
+    const auto input_size = input.length();
     if (pos < input_size) {
         return input[pos];
     }
     if (pos == input_size) {
         return '\x80';
     }
+    const auto padded_input_size = compute_padded_size(input_size);
     if (pos < padded_input_size - 8) {
         return '\x00';
     }
     return static_cast<char>(
-        extract_byte(input_size * 8, padded_input_size - pos - 1));
+        extract_byte(input_size*8, padded_input_size - pos-1));
 }
 
 /**
@@ -115,13 +112,8 @@ std::array<uint32_t, 8> compute_hash(const std::string &input) {
         0x5B9CCA4F, 0x682E6FF3, 0x748F82EE, 0x78A5636F, 0x84C87814, 0x8CC70208,
         0x90BEFFFA, 0xA4506CEB, 0xBEF9A3F7, 0xC67178F2};
 
-    size_t input_size = input.length();  ///< Input size in bytes
-
-    size_t padded_input_size =
-        compute_padded_size(input_size);  ///< Padded input size in bytes
-
     // Process message in successive 512-bit (64-byte) chunks
-    for (size_t i = 0; i < padded_input_size; i += 64) {
+    for (size_t i = 0; i < compute_padded_size(input.length()); i += 64) {
         std::array<uint32_t, 64> blocks{};
 
         // Copy chunk into first 16 words of the message schedule array
