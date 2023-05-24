@@ -72,7 +72,7 @@ char get_char(const std::string &input, std::size_t pos) {
         return '\x00';
     }
     return static_cast<char>(
-        extract_byte(input_size*8, padded_input_size - pos-1));
+        extract_byte(input_size * 8, padded_input_size - pos - 1));
 }
 
 /**
