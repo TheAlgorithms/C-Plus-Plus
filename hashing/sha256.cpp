@@ -49,7 +49,10 @@ std::size_t compute_padded_size(const std::size_t input_size) {
  * @param byte_num Position of byte to be returned
  * @return uint8_t Byte at position byte_num
  */
-uint8_t extract_byte(const std::size_t in_value, const std::size_t byte_num) {
+uint8_t extract_byte(const auto in_value, const std::size_t byte_num) {
+    if (sizeof(in_value) <= byte_num) {
+        throw std::out_of_range("Byte at index byte_num does not exist");
+    }
     return ((in_value >> (byte_num * 8)) & 0xFF);
 }
 
@@ -70,6 +73,9 @@ char get_char(const std::string &input, std::size_t pos) {
     const auto padded_input_size = compute_padded_size(input_size);
     if (pos < padded_input_size - 8) {
         return '\x00';
+    }
+    if (padded_input_size <= pos) {
+        throw std::out_of_range("pos is out of range");
     }
     return static_cast<char>(
         extract_byte(input_size * 8, padded_input_size - pos - 1));
