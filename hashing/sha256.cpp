@@ -93,17 +93,45 @@ uint32_t right_rotate(uint32_t n, size_t rotate) {
 }
 
 /**
- * @brief Computes the final hash array
- * @param padded_input Padded input string
- * @return std::array<uint32_t, 8> The final hash array
+ * @brief Creates the message schedule array
+ * @param input Input string
+ * @param i Position of the first bit of the chunk
+ * @return std::array<uint32_t, 64> Message schedule array
  */
-std::array<uint32_t, 8> compute_hash(const std::string &input) {
-    // Initialize array of hash values with first 32 bits of the fractional
-    // parts of the square roots of the first 8 primes 2..19
-    std::array<uint32_t, 8> hash = {0x6A09E667, 0xBB67AE85, 0x3C6EF372,
-                                    0xA54FF53A, 0x510E527F, 0x9B05688C,
-                                    0x1F83D9AB, 0x5BE0CD19};
+std::array<uint32_t, 64> create_message_schedule_array(const std::string &input,
+                                                       const size_t i) {
+    std::array<uint32_t, 64> blocks{};
 
+    // Copy chunk into first 16 words of the message schedule array
+    for (size_t j = 0; j < 16; ++j) {
+        blocks[j] =
+            (static_cast<uint8_t>(get_char(input, i + j * 4)) << 24) |
+            (static_cast<uint8_t>(get_char(input, i + j * 4 + 1)) << 16) |
+            (static_cast<uint8_t>(get_char(input, i + j * 4 + 2)) << 8) |
+            static_cast<uint8_t>(get_char(input, i + j * 4 + 3));
+    }
+
+    // Extend the first 16 words into remaining 48 words of the message schedule
+    // array
+    for (size_t j = 16; j < 64; ++j) {
+        uint32_t s0 = right_rotate(blocks[j - 15], 7) ^
+                      right_rotate(blocks[j - 15], 18) ^ (blocks[j - 15] >> 3);
+        uint32_t s1 = right_rotate(blocks[j - 2], 17) ^
+                      right_rotate(blocks[j - 2], 19) ^ (blocks[j - 2] >> 10);
+        blocks[j] = blocks[j - 16] + s0 + blocks[j - 7] + s1;
+    }
+
+    return blocks;
+}
+
+/**
+ * @brief Modifies the hash array
+ * @param hash Hash array to be modified
+ * @param blocks Message schedule array
+ * @return void
+ */
+void modify_hash(std::array<uint32_t, 8> &hash,
+                 const std::array<uint32_t, 64> &blocks) {
     // Initialize array of round constants with first 32 bits of the fractional
     // parts of the cube roots of the first 64 primes 2..311
     const std::array<uint32_t, 64> k = {
@@ -119,69 +147,63 @@ std::array<uint32_t, 8> compute_hash(const std::string &input) {
         0x5B9CCA4F, 0x682E6FF3, 0x748F82EE, 0x78A5636F, 0x84C87814, 0x8CC70208,
         0x90BEFFFA, 0xA4506CEB, 0xBEF9A3F7, 0xC67178F2};
 
+    // Initialize working variables
+    uint32_t a = hash[0];
+    uint32_t b = hash[1];
+    uint32_t c = hash[2];
+    uint32_t d = hash[3];
+    uint32_t e = hash[4];
+    uint32_t f = hash[5];
+    uint32_t g = hash[6];
+    uint32_t h = hash[7];
+
+    // Compression function main loop
+    for (size_t j = 0; j < 64; ++j) {
+        uint32_t s1 =
+            right_rotate(e, 6) ^ right_rotate(e, 11) ^ right_rotate(e, 25);
+        uint32_t ch = (e & f) ^ (~e & g);
+        uint32_t temp1 = h + s1 + ch + k[j] + blocks[j];
+        uint32_t s0 =
+            right_rotate(a, 2) ^ right_rotate(a, 13) ^ right_rotate(a, 22);
+        uint32_t maj = (a & b) ^ (a & c) ^ (b & c);
+        uint32_t temp2 = s0 + maj;
+
+        h = g;
+        g = f;
+        f = e;
+        e = d + temp1;
+        d = c;
+        c = b;
+        b = a;
+        a = temp1 + temp2;
+    }
+
+    // Update hash values
+    hash[0] += a;
+    hash[1] += b;
+    hash[2] += c;
+    hash[3] += d;
+    hash[4] += e;
+    hash[5] += f;
+    hash[6] += g;
+    hash[7] += h;
+}
+
+/**
+ * @brief Computes the final hash array
+ * @param input Input string
+ * @return std::array<uint32_t, 8> The final hash array
+ */
+std::array<uint32_t, 8> compute_hash(const std::string &input) {
+    // Initialize array of hash values with first 32 bits of the fractional
+    // parts of the square roots of the first 8 primes 2..19
+    std::array<uint32_t, 8> hash = {0x6A09E667, 0xBB67AE85, 0x3C6EF372,
+                                    0xA54FF53A, 0x510E527F, 0x9B05688C,
+                                    0x1F83D9AB, 0x5BE0CD19};
+
     // Process message in successive 512-bit (64-byte) chunks
     for (size_t i = 0; i < compute_padded_size(input.length()); i += 64) {
-        std::array<uint32_t, 64> blocks{};
-
-        // Copy chunk into first 16 words of the message schedule array
-        for (size_t j = 0; j < 16; ++j) {
-            blocks[j] =
-                (static_cast<uint8_t>(get_char(input, i + j * 4)) << 24) |
-                (static_cast<uint8_t>(get_char(input, i + j * 4 + 1)) << 16) |
-                (static_cast<uint8_t>(get_char(input, i + j * 4 + 2)) << 8) |
-                static_cast<uint8_t>(get_char(input, i + j * 4 + 3));
-        }
-
-        for (size_t j = 16; j < 64; ++j) {
-            uint32_t s0 = right_rotate(blocks[j - 15], 7) ^
-                          right_rotate(blocks[j - 15], 18) ^
-                          (blocks[j - 15] >> 3);
-            uint32_t s1 = right_rotate(blocks[j - 2], 17) ^
-                          right_rotate(blocks[j - 2], 19) ^
-                          (blocks[j - 2] >> 10);
-            blocks[j] = blocks[j - 16] + s0 + blocks[j - 7] + s1;
-        }
-
-        // Initialize working variables
-        uint32_t a = hash[0];
-        uint32_t b = hash[1];
-        uint32_t c = hash[2];
-        uint32_t d = hash[3];
-        uint32_t e = hash[4];
-        uint32_t f = hash[5];
-        uint32_t g = hash[6];
-        uint32_t h = hash[7];
-
-        // Compression function main loop
-        for (size_t j = 0; j < 64; ++j) {
-            uint32_t s1 =
-                right_rotate(e, 6) ^ right_rotate(e, 11) ^ right_rotate(e, 25);
-            uint32_t ch = (e & f) ^ (~e & g);
-            uint32_t temp1 = h + s1 + ch + k[j] + blocks[j];
-            uint32_t s0 =
-                right_rotate(a, 2) ^ right_rotate(a, 13) ^ right_rotate(a, 22);
-            uint32_t maj = (a & b) ^ (a & c) ^ (b & c);
-            uint32_t temp2 = s0 + maj;
-
-            h = g;
-            g = f;
-            f = e;
-            e = d + temp1;
-            d = c;
-            c = b;
-            b = a;
-            a = temp1 + temp2;
-        }
-
-        // Update hash values
-        hash[0] += a;
-        hash[1] += b;
-        hash[2] += c;
-        hash[3] += d;
-        hash[4] += e;
-        hash[5] += f;
-        hash[6] += g;
-        hash[7] += h;
+        modify_hash(hash, create_message_schedule_array(input, i));
     }
 
     return hash;
