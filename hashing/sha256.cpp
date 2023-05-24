@@ -239,7 +239,45 @@ std::string Hash::to_string() {
  * @brief Self-test implementations
  * @returns void
  */
-static void test() {
+static void test_compute_padded_size() {
+    assert(hashing::sha256::compute_padded_size(55) == 64);
+    assert(hashing::sha256::compute_padded_size(56) == 128);
+    assert(hashing::sha256::compute_padded_size(130) == 192);
+}
+
+static void test_extract_byte() {
+    assert(hashing::sha256::extract_byte<uint32_t>(512, 0) == 0);
+    assert(hashing::sha256::extract_byte<uint32_t>(512, 1) == 2);
+    bool exception = false;
+    try {
+        hashing::sha256::extract_byte<uint32_t>(512, 5);
+    } catch (const std::out_of_range) {
+        exception = true;
+    }
+    assert(exception);
+}
+
+static void test_get_char() {
+    assert(hashing::sha256::get_char("test", 3) == 't');
+    assert(hashing::sha256::get_char("test", 4) == '\x80');
+    assert(hashing::sha256::get_char("test", 5) == '\x00');
+    assert(hashing::sha256::get_char("test", 63) == 32);
+    bool exception = false;
+    try {
+        hashing::sha256::get_char("test", 64);
+    } catch (const std::out_of_range) {
+        exception = true;
+    }
+    assert(exception);
+}
+
+static void test_right_rotate() {
+    assert(hashing::sha256::right_rotate(128, 3) == 16);
+    assert(hashing::sha256::right_rotate(1, 30) == 4);
+    assert(hashing::sha256::right_rotate(6, 30) == 24);
+}
+
+static void test_sha256() {
     struct TestCase {
         const std::string input;
         const std::string expected_hash;
@@ -270,6 +308,11 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-    test();  // Run self-test implementations
+    // Run self-test implementations
+    test_sha256();
+    test_compute_padded_size();
+    test_extract_byte();
+    test_get_char();
+    test_right_rotate();
     return 0;
 }
