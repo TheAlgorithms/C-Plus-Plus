@@ -26,12 +26,20 @@ namespace math {
  */
 namespace ncr_modulo_p {
 
+/**
+ * @namespace utils
+ * @brief this namespace contains the definitions of the functions called from
+ * the class NCRModuloP
+ */
 namespace utils {
-/** Finds the value of x, y such that a*x + b*y = gcd(a,b)
+/**
+ * @brief finds the values x and y such that a*x + b*y = gcd(a,b)
  *
- * @params[in] the numbers 'a', 'b' and address of 'x' and 'y' from above
- * equation
- * @returns the gcd of a and b
+ * @param[in] a the first input of the gcd
+ * @param[in] a the second input of the gcd
+ * @param[out] x the Bézout coefficient of a
+ * @param[out] y the Bézout coefficient of b
+ * @return the gcd of a and b
  */
 int64_t gcdExtended(const int64_t& a, const int64_t& b, int64_t& x,
                     int64_t& y) {
@@ -49,10 +57,11 @@ int64_t gcdExtended(const int64_t& a, const int64_t& b, int64_t& x,
     return gcd;
 }
 
-/** Find modular inverse of a with m i.e. a number x such that (a*x)%m = 1
+/** Find modular inverse of a modulo m i.e. a number x such that (a*x)%m = 1
  *
- * @params[in] the numbers 'a' and 'm' from above equation
- * @returns the modular inverse of a
+ * @param[in] a the number for which the modular inverse is queried
+ * @param[in] m the modulus
+ * @return the inverce of a modulo m, if it exists, -1 otherwise
  */
 int64_t modInverse(const int64_t& a, const int64_t& m) {
     int64_t x = 0, y = 0;
@@ -91,17 +100,18 @@ class NCRModuloP {
     }
 
  public:
-    /** Constructor which precomputes the values of n! % mod from n=0 to size
-     *  and stores them in vector 'fac'
-     *  @params[in] the numbers 'size', 'mod'
+    /**
+     * @brief constructs an NCRModuloP object allowing to compute (nCr)%p for
+     * inputs from 0 to size
      */
-    NCRModuloP(const int64_t& size, const int64_t& mod)
-        : p(mod), fac(computeFactorialsMod(size, mod)) {}
+    NCRModuloP(const int64_t& size, const int64_t& p)
+        : p(p), fac(computeFactorialsMod(size, p)) {}
 
-    /** Find nCr % p
-     *
-     * @params[in] the numbers 'n' and 'r'
-     * @returns the value nCr % p
+    /**
+     * @brief computes nCr % p
+     * @param[in] n the number of objects to be chosen
+     * @param[in] r the number of objects to choose from
+     * @return the value nCr % p
      */
     int64_t ncr(const int64_t& n, const int64_t& r) const {
         // Base cases
@@ -126,13 +136,7 @@ class NCRModuloP {
 }  // namespace ncr_modulo_p
 }  // namespace math
 
-/**
- * @brief Test implementations
- * @param ncrObj object which contains the precomputed factorial values and
- * ncr function
- * @returns void
- */
-static void tests() {
+void tests() {
     struct TestCase {
         const int64_t size;
         const int64_t p;
@@ -161,19 +165,26 @@ static void tests() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * @brief example showing the usage of the NCRModuloP class
  */
-int main() {
-    // populate the fac array
+void example() {
     const int64_t size = 1e6 + 1;
     const int64_t p = 1e9 + 7;
+
+    // the ncrObj contains the precomputed values of factorials modulo p for
+    // values from 0 to size
     const auto ncrObj = math::ncr_modulo_p::NCRModuloP(size, p);
-    // test 6Ci for i=0 to 7
+
+    // having the ncrObj we can efficiently query the values of (n C r)%p
+    // note that time of the computation does not depend on size
     for (int i = 0; i <= 7; i++) {
-        std::cout << 6 << "C" << i << " = " << ncrObj.ncr(6, i) << "\n";
+        std::cout << 6 << "C" << i << " mod " << p << " = " << ncrObj.ncr(6, i)
+                  << "\n";
     }
-    tests();  // execute the tests
-    std::cout << "Assertions passed\n";
+}
+
+int main() {
+    tests();
+    example();
     return 0;
 }
