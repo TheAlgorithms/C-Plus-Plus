@@ -39,11 +39,13 @@
  * generated during the preprocessing of P.
  * @author [Stoycho Kyosev](https://github.com/stoychoX)
  */
-#include <cassert>  /// for assert
-#include <climits>  /// for CHAR_MAX macro
-#include <cstring>  /// for strlen
-#include <string>   /// for std::string
-#include <vector>   /// for std::vector
+
+#include <cassert>   /// for assert
+#include <climits>   /// for CHAR_MAX macro
+#include <cstring>   /// for strlen
+#include <iostream>  /// for IO operations
+#include <string>    /// for std::string
+#include <vector>    /// for std::vector
 
 #define APLHABET_SIZE CHAR_MAX  ///< number of symbols in the alphabet we use
 
@@ -66,13 +68,13 @@ namespace boyer_moore {
 struct pattern {
     std::string pat;
 
-    /// @brief bad char table used in Bad Character Heuristic
-    /// [https://www.geeksforgeeks.org/boyer-moore-algorithm-for-pattern-searching/]
-    std::vector<size_t> bad_char;
+    std::vector<size_t>
+        bad_char;  ///< bad char table used in [Bad Character
+                   ///< Heuristic](https://www.geeksforgeeks.org/boyer-moore-algorithm-for-pattern-searching/)
 
-    /// @brief good suffix table used for Good Suffix heuristic
-    /// [https://www.geeksforgeeks.org/boyer-moore-algorithm-good-suffix-heuristic/?ref=rp]
-    std::vector<size_t> good_suffix;
+    std::vector<size_t>
+        good_suffix;  ///< good suffix table used for [Good Suffix
+                      ///< heuristic](https://www.geeksforgeeks.org/boyer-moore-algorithm-good-suffix-heuristic/?ref=rp)
 };
 
 /**
@@ -251,6 +253,8 @@ static void tests() {
 
     and_test(text);
     pat_test(text);
+
+    std::cout << "All tests have successfully passed!\n";
 }
 
 /**
