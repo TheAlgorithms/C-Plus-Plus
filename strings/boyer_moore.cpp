@@ -7,7 +7,7 @@
  * Boyer–Moore uses information gained by preprocessing P to skip as many
  * alignments as possible.
  *
- * @description
+ * @details
  * The key insight in this algorithm is that if the end of the pattern is
  * compared to the text, then jumps along the text can be made rather than
  * checking every character of the text. The reason that this works is that in
