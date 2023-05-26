@@ -28,10 +28,14 @@
 // `std::random_shuffle` was deprecated in C++14. To keep support with most compilers, we need to check the C++ version.
 #if __cplusplus >= 201402L
     template <typename T>
-    constexpr auto SHUFFLE(T a, T b) { std::shuffle(a, b, std::mt19937(std::random_device()())); }
+    constexpr auto SHUFFLE(T a, T b) -> void {
+        return std::shuffle(a, b, std::mt19937(std::random_device()()));
+    }
 #else
     template <typename T>
-    constexpr auto SHUFFLE(T a, T b) { std::random_shuffle(a, b); }
+    constexpr auto SHUFFLE(T a, T b) -> void {
+        return std::random_shuffle(a, b);
+    }
 #endif
 
 /**
