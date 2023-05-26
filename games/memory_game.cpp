@@ -29,7 +29,7 @@ void Sleep(time_t dwMilliseconds);
 #include <Windows.h>  /// for Sleep()
 template <typename T>
 constexpr typename std::enable_if<std::is_integral<T>::value, void>::type SLEEP(
-    T miliseconds) {
+    T milliseconds) {
     Sleep(milliseconds * 1000);
 }
 #else
