@@ -21,16 +21,23 @@
 #include <random>     /// for std::mt19937
 #include <vector>     /// for std::vector
 
+void Sleep(time_t dwMilliseconds);
+
 // `Sleep` is only available in Windows in milliseconds.
 // However, on Unix/Linux systems it is `sleep`, in seconds.
 #ifdef _WIN32
 #include <Windows.h>  /// for Sleep()
 template <typename T>
-constexpr void SLEEP(T milliseconds) { Sleep(milliseconds * 1000); }
+constexpr typename std::enable_if<std::is_integral<T>::value, void>::type SLEEP(
+    T miliseconds) {
+    Sleep(milliseconds * 1000);
+}
 #else
 #include <unistd.h>  /// for sleep()
 template <typename T>
-constexpr void SLEEP(T seconds) { sleep(seconds); }
+constexpr T SLEEP(T seconds) {
+    return sleep(seconds);
+}
 #endif
 
 /**
@@ -368,6 +375,8 @@ int main() {
                              ///< (previous answered values do not count).
 
     std::cout << "\tMEMORY GAME\n";
+    std::cout << std::boolalpha;
+    std::cout << std::is_literal_type<void>::value;
 
     do {
         std::cout << "\n1. 4x2 (1)";
