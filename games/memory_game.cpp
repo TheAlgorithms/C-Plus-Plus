@@ -26,11 +26,11 @@
 #ifdef _WIN32
 #include <Windows.h>  /// for Sleep()
 template <typename T>
-constexpr auto SLEEP(T milliseconds) -> void { Sleep(milliseconds * 1000); }
+constexpr auto SLEEP(T milliseconds) { Sleep(milliseconds * 1000); }
 #else
 #include <unistd.h>  /// for sleep()
 template <typename T>
-constexpr auto SLEEP(T seconds) -> void { sleep(seconds); }
+constexpr auto SLEEP(T seconds) { sleep(seconds); }
 #endif
 
 /**
