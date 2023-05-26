@@ -18,8 +18,8 @@
 #include <cstdlib>    /// for std::srand()
 #include <ctime>      /// for std::time()
 #include <iostream>   /// for IO operations
-#include <random>    /// for std::mt19937
-#include <vector>    /// for std::vector
+#include <random>     /// for std::mt19937
+#include <vector>     /// for std::vector
 
 #ifdef _WIN32
 #include <windows.h>  /// for sleep
