@@ -10,7 +10,7 @@
  * biggest table size and hardest mode. The bigger the size, **the more letters are available**.
  *
  * @author [David Leal](https://github.com/Panquesito7)
-*/
+ */
 
 #include <iostream>    /// for IO operations
 #include <ctime>       /// for std::time()
@@ -23,19 +23,6 @@
 #include <windows.h>  /// for sleep
 #else
 #include <unistd.h>  /// for sleep
-#endif
-
-// `std::random_shuffle` was deprecated in C++14. To keep support with most compilers, we need to check the C++ version.
-#if __cplusplus >= 201402L
-    template <typename T>
-    constexpr auto SHUFFLE(T a, T b) -> void {
-        return std::shuffle(a, b, std::mt19937(std::random_device()()));
-    }
-#else
-    template <typename T>
-    constexpr auto SHUFFLE(T a, T b) -> void {
-        return std::random_shuffle(a, b);
-    }
 #endif
 
 /**
@@ -95,7 +82,7 @@ void init(std::vector<T> *table) {
         pairs.push_back(letter);
     }
 
-    SHUFFLE(pairs.begin(), pairs.end());
+    std::random_shuffle(pairs.begin(), pairs.end());
 
     for (int i = 0; i < (*table).size(); i++) {
         (*table)[i] = pairs[i];
