@@ -21,10 +21,16 @@
 #include <random>     /// for std::mt19937
 #include <vector>     /// for std::vector
 
+// `Sleep` is only available in Windows in milliseconds.
+// However, on Unix/Linux systems it is `sleep`, in seconds.
 #ifdef _WIN32
-#include <windows.h>  /// for sleep
+#include <Windows.h>  /// for Sleep()
+template <typename T>
+constexpr auto SLEEP(T milliseconds) -> void { Sleep(milliseconds * 1000); }
 #else
-#include <unistd.h>  /// for sleep
+#include <unistd.h>  /// for sleep()
+template <typename T>
+constexpr auto SLEEP(T seconds) -> void { sleep(seconds); }
 #endif
 
 /**
@@ -322,12 +328,12 @@ void assign_results(std::vector<T> *table_empty, std::vector<T> *table,
                 init(table);
             } else if (try_again == 'n') {
                 std::cout << "\nThanks for playing the game!\n";
-                sleep(3);
+                SLEEP(3);
 
                 exit(0);
             } else {
                 std::cout << "\nInvalid input (exitting...).\n";
-                sleep(3);
+                SLEEP(3);
 
                 exit(0);
             }
