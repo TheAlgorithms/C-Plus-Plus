@@ -21,8 +21,6 @@
 #include <random>     /// for std::mt19937
 #include <vector>     /// for std::vector
 
-void Sleep(time_t dwMilliseconds);
-
 // `Sleep` is only available in Windows in milliseconds.
 // However, on Unix/Linux systems it is `sleep`, in seconds.
 #ifdef _WIN32
