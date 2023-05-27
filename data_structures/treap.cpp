@@ -25,7 +25,7 @@ const int maxNode = 1e6 + 5;  //< maximum number of nodes
  * @brief Struct representation of the treap
  */
 struct Treap {
-    int root;                //< root of the treap
+    int root = 0;                ///< root of the treap
     int treapCnt;            //< Total number of current nodes in the treap
     int key[maxNode];        //< Node identifier
     int priority[maxNode];   //< Random priority
