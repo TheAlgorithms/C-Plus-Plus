@@ -228,7 +228,7 @@ static void test() {
     data_structures::treap::mTreap.insert(5);
     data_structures::treap::mTreap.insert(6);
     assert(mTreap.get_next(4) == 5);
-    mTreap.insert(7);
+    data_structures::treap::mTreap.insert(7);
     assert(mTreap.get_predecessor(7) == 6);
     mTreap.erase(4);
     assert(mTreap.get_k_th(4) == 5);
