@@ -27,8 +27,8 @@
 namespace data_structures {
 /**
  * @namespace
- * @brief Functions for the [Treap](https://en.wikipedia.org/wiki/Treap) algorithm
- * implementation
+ * @brief Functions for the [Treap](https://en.wikipedia.org/wiki/Treap)
+ * algorithm implementation
  */
 namespace treap {
 const int maxNode = 1e6 + 5;  ///< maximum number of nodes
@@ -36,14 +36,15 @@ const int maxNode = 1e6 + 5;  ///< maximum number of nodes
  * @brief Struct representation of the treap
  */
 struct Treap {
-    int root = 0;                ///< root of the treap
-    int treapCnt;            //< Total number of current nodes in the treap
-    int key[maxNode];        //< Node identifier
-    int priority[maxNode];   //< Random priority
-    int childs[maxNode][2];  //< [i][0] represents the left child of node i, and
-                             //[i][1] represents the right
-    int cnt[maxNode];        //< Maintains the subtree size for ranking query
-    int size[maxNode];       //< The number of copies per node
+    int root = 0;           ///< root of the treap
+    int treapCnt;           ///< Total number of current nodes in the treap
+    int key[maxNode];       ///< Node identifier
+    int priority[maxNode];  ///< Random priority
+    int childs[maxNode]
+              [2];      ///< [i][0] represents the left child of node i, and
+                        ///[i][1] represents the right
+    int cnt[maxNode];   ///< Maintains the subtree size for ranking query
+    int size[maxNode];  ///< The number of copies per node
     /**
      * @brief Initialization
      */
@@ -223,19 +224,19 @@ static void test() {
     data_structures::treap::mTreap.insert(1);
     data_structures::treap::mTreap.insert(2);
     data_structures::treap::mTreap.insert(3);
-    assert(mTreap.get_k_th(2) == 2);
+    assert(data_structures::treap::mTreap.get_k_th(2) == 2);
     data_structures::treap::mTreap.insert(4);
     data_structures::treap::mTreap.insert(5);
     data_structures::treap::mTreap.insert(6);
-    assert(mTreap.get_next(4) == 5);
+    assert(data_structures::treap::mTreap.get_next(4) == 5);
     data_structures::treap::mTreap.insert(7);
-    assert(mTreap.get_predecessor(7) == 6);
+    assert(data_structures::treap::mTreap.get_predecessor(7) == 6);
     data_structures::treap::mTreap.erase(4);
-    assert(mTreap.get_k_th(4) == 5);
-    assert(mTreap.get_rank(5) == 4);
+    assert(data_structures::treap::mTreap.get_k_th(4) == 5);
+    assert(data_structures::treap::mTreap.get_rank(5) == 4);
     data_structures::treap::mTreap.insert(10);
-    assert(mTreap.get_rank(10) == 7);
-    assert(mTreap.get_predecessor(10) == 7);
+    assert(data_structures::treap::mTreap.get_rank(10) == 7);
+    assert(data_structures::treap::mTreap.get_predecessor(10) == 7);
 }
 /**
  * @brief Main function
