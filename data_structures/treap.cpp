@@ -20,7 +20,18 @@
 #include <cassert>   /// For assert
 #include <iostream>  /// For IO operations
 
-const int maxNode = 1e6 + 5;  //< maximum number of nodes
+/**
+ * @namespace
+ * @brief Data Structures
+ */
+namespace data_structures {
+/**
+ * @namespace
+ * @brief Functions for the [Treap](https://en.wikipedia.org/wiki/Treap) algorithm
+ * implementation
+ */
+namespace treap {
+const int maxNode = 1e6 + 5;  ///< maximum number of nodes
 /**
  * @brief Struct representation of the treap
  */
