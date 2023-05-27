@@ -212,6 +212,9 @@ struct Treap {
      */
     int get_rank(int k) { return _get_rank(root, k); }
 } mTreap;
+}  // namespace treap
+}  // namespace data_structures
+
 /**
  * @brief Self-test implementations
  * @returns void
