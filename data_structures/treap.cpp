@@ -1,4 +1,3 @@
-
 /**
  * @file
  * @brief A balanced binary search tree (BST) on the basis of binary search tree
