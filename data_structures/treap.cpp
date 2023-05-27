@@ -220,9 +220,9 @@ struct Treap {
  * @returns void
  */
 static void test() {
-    mTreap.insert(1);
-    mTreap.insert(2);
-    mTreap.insert(3);
+    data_structures::treap::mTreap.insert(1);
+    data_structures::treap::mTreap.insert(2);
+    data_structures::treap::mTreap.insert(3);
     assert(mTreap.get_k_th(2) == 2);
     data_structures::treap::mTreap.insert(4);
     data_structures::treap::mTreap.insert(5);
