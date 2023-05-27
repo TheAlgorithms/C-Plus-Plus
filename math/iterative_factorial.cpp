@@ -92,7 +92,7 @@ static void test() {
     // Maximum case
     std::cout << "Maximum case test \n"
                  "Input: 20 \n"
-                 "Expected output: 2432902008176640000";
+                 "Expected output: 2432902008176640000\n";
     assert(math::iterativeFactorial(20) == 2432902008176640000);
 
     // Exception test
