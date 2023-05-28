@@ -54,14 +54,16 @@
  * = 28.5 units^2
  *
  * If we remove the modulus operators, we find out that the output = -28.5
- * units. So, as long as we apply the modulus operator after, it doesn't matter
- * whether the points are inputted in clockwise or counterclockwise order.
+ * units. So, as int64_t as we apply the modulus operator after, it doesn't
+ * matter whether the points are inputted in clockwise or counterclockwise
+ * order.
  */
 
-#include <array>
-#include <cassert>
-#include <cmath>
-#include <iostream>
+#include <array>     /// For std::array
+#include <cassert>   /// For assert
+#include <cmath>     /// For std::abs
+#include <cstdint>   /// For int64_t
+#include <iostream>  /// For std::cout
 
 namespace math {
 
@@ -98,31 +100,34 @@ static void test() {
     std::cout << "Case 1:\n"
                  "Input: | (4, 4) (3, -3) (-2, 1) (-2, 4) |\n"
                  "Expected output: 28.5\n\n";
-    array<array<long, 2>, 4> case1{array<long, 2>{4, 4}, array<long, 2>{3, -3},
-                                   array<long, 2>{-2, 1},
-                                   array<long, 2>{-2, 4}};
+    array<array<int64_t, 2>, 4> case1{
+        array<int64_t, 2>{4, 4}, array<int64_t, 2>{3, -3},
+        array<int64_t, 2>{-2, 1}, array<int64_t, 2>{-2, 4}};
     assert(math::shoelace(case1) == 28.5);
 
     std::cout << "Case 2:\n"
                  "Input: | (1, 6) (3, 1) (7, 2) (4, 4) (8, 5) |\n"
                  "Expected output: 16.5\n\n";
-    array<array<long, 2>, 5> case2{array<long, 2>{1, 6}, array<long, 2>{3, 1},
-                                   array<long, 2>{7, 2}, array<long, 2>{4, 4},
-                                   array<long, 2>{8, 5}};
+    array<array<int64_t, 2>, 5> case2{
+        array<int64_t, 2>{1, 6}, array<int64_t, 2>{3, 1},
+        array<int64_t, 2>{7, 2}, array<int64_t, 2>{4, 4},
+        array<int64_t, 2>{8, 5}};
     assert(math::shoelace(case2) == 16.5);
 
     std::cout << "Case 3:\n"
                  "Input: | (7, 2) (4, 4) (8, 6) |\n"
                  "Expected output: 7\n\n";
-    array<array<long, 2>, 3> case3{array<long, 2>{7, 2}, array<long, 2>{4, 4},
-                                   array<long, 2>{8, 6}};
+    array<array<int64_t, 2>, 3> case3{array<int64_t, 2>{7, 2},
+                                      array<int64_t, 2>{4, 4},
+                                      array<int64_t, 2>{8, 6}};
     assert(math::shoelace(case3) == 7);
 
     std::cout << "Case 4 (Clockwise):\n"
                  "Input: | (-2, 4) (-2, 1) (3, -3) (4, 4) |\n"
                  "Expected output: 28.5\n";
-    array<array<long, 2>, 4> case4{array<long, 2>{-2, 4}, array<long, 2>{-2, 1},
-                                   array<long, 2>{3, -3}, array<long, 2>{4, 4}};
+    array<array<int64_t, 2>, 4> case4{
+        array<int64_t, 2>{-2, 4}, array<int64_t, 2>{-2, 1},
+        array<int64_t, 2>{3, -3}, array<int64_t, 2>{4, 4}};
     assert(math::shoelace(case4) == 28.5);
 }
 
