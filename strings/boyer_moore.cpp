@@ -242,7 +242,7 @@ void pat_test(const char* text) {
 }
 /**
  * @brief Self-test implementations
- * @return void
+ * @returns void
  */
 static void tests() {
     const char* text =
