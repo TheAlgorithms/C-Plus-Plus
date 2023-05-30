@@ -146,7 +146,7 @@ void init_bad_char(const std::string& str, std::vector<size_t>& arg) {
  *
  * @param str Text used for initialization
  * @param arg Initialized structure
- * @return void
+ * @returns void
  */
 void init_pattern(const std::string& str, pattern& arg) {
     arg.pat = str;
