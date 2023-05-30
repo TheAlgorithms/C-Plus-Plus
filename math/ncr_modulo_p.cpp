@@ -72,7 +72,7 @@ int64_t modInverse(const int64_t& a, const int64_t& m) {
         return ((x + m) % m);
     }
 }
-};  // namespace utils
+}  // namespace utils
 /**
  * @brief Class which contains all methods required for calculating nCr mod p
  */
@@ -136,7 +136,7 @@ class NCRModuloP {
 }  // namespace ncr_modulo_p
 }  // namespace math
 
-void tests() {
+static void tests() {
     struct TestCase {
         const int64_t size;
         const int64_t p;
