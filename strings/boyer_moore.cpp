@@ -131,7 +131,7 @@ void init_good_suffix(const std::string& str, std::vector<size_t>& arg) {
  *
  * @param str The string being preprocessed
  * @param arg The bad char table
- * @return void
+ * @returns void
  */
 void init_bad_char(const std::string& str, std::vector<size_t>& arg) {
     arg.resize(APLHABET_SIZE, str.length());
