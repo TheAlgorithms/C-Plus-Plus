@@ -71,7 +71,7 @@ static void tests() {
     assert(math::are_amicable(17296, 18416) == true);
     assert(math::are_amicable(18416, 17296) == true);
 
-    std::cout << "all tests have passed" << std::endl;
+    std::cout << "All tests have successfully passed!" << std::endl;
 }
 
 /**
