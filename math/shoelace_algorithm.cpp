@@ -3,60 +3,60 @@
  * @brief Implementation of the [shoelace
  * algorithm](https://en.wikipedia.org/wiki/Shoelace_formula)
  *
- * @author [Renjian-buchai](https://github.com/Renjian-buchai)
- *
  * @details Calculates area of a polygon using the coordinates of its vertices.
- * Area of polygon
+ * \f$Area of polygon
  * = 0.5 | (\x1, \y1) (\x2, \y2) ... (\xn, \yn) (\x1, \y1) |
  * = 0.5 | (\x1 * \y2 + \x2 * \y3 + ... + \xn * \y1) -
  *         (\x1 * \yn + \xn * \y(n-1)) + ... + \x2 * \y1) |
  * = 0.5 ( | \x1 * \y2 - \x2 * \y1 | + | \x2 * \y3 - \x3 * \y1 | + ...
- *       + | \xn * \y1 - \x1 * \yn | )
- * Where each point \xn is adjacent to \x(n-1) and \x(n+1).
+ *       + | \xn * \y1 - \x1 * \yn | )$
+ * Where each point \xn is adjacent to \f$\x(n-1)$ and \f$\x(n+1)$.
  *
  * Usually, the formula also states that \x(n+1) must be counterclockwise to
- * \xn, but if you take the absolute value of the output, it doesn't matter even
- * if you input the points in clockwise order.
+ * \f$\xn$, but if you take the absolute value of the output, it doesn't matter
+ * even if you input the points in clockwise order.
  *
  * The formula with multiple modulus operators is easier and more efficient to
  * implement.
  *
  * Example:
  * Points are inputted in counterclockwise order:
- * \p1 = (-2, 4)
- * \p2 = (-2, 1)
- * \p3 = (3, -3)
- * \p4 = (4, 4)
+ * \f$\p1 = (-2, 4)$
+ * \f$\p2 = (-2, 1)$
+ * \f$\p3 = (3, -3)$
+ * \f$\p4 = (4, 4)$
  *
- * Area
+ * \f$Area
  * = 0.5 ( | ((-2), 4) ((-2), 1) | + | ((-2), 1) (3, (-3)) | +
  *         | (3, (-3)) (4, 4) | + | (4, 4) ((-2), 4) | )
  * = 0.5 ( | (-2) * 1 - (-2) * 4 | + | (-2) * (-3) - 3 * 1 | +
  *         | 3 * 4 - 4 * (-3) | + | 4 * 4 - (-2) * 4 | )
  * = 0.5 ( 6 + 3 + 24 + 24 )
  * = 0.5 (57)
- * = 28.5 units^2
+ * = 28.5 units^2$
  *
  * Note:
  * Case where points are inputted in clockwise order:
- * \p1 = (4, 4)
- * \p2 = (3, -3)
- * \p3 = (-2, 1)
- * \p4 = (-2, 4)
+ * \f$\p1 = (4, 4)$
+ * \f$\p2 = (3, -3)$
+ * \f$\p3 = (-2, 1)$
+ * \f$\p4 = (-2, 4)$
  *
- * Area
+ * \f$Area
  * = 0.5 | (4, 4) (3, (-3)) | + | (3, (-3)) ((-2), 1) | +
  *       | ((-2), 1) ((-2), 4) | + | ((-2), 4) (4, 4) |
  * = 0.5 ( | 4 * (-3) - 4 * 3 | + | 3 * 1 - (-2) * (-3) | +
  *         | (-2) * 4 - (-2) * 1 | + | (-2) * 4 - 4 * 4 | )
  * = 0.5 ( | -24 | + | -3 | + | -6 | + | -24 | )
  * = 0.5 (57)
- * = 28.5 units^2
+ * = 28.5 units^2$
  *
  * If we remove the modulus operators, we find out that the output = -28.5
  * units. So, as int64_t as we apply the modulus operator after, it doesn't
  * matter whether the points are inputted in clockwise or counterclockwise
  * order.
+ *
+ * @author [Renjian-buchai](https://github.com/Renjian-buchai)
  */
 
 #include <array>     /// For std::array
@@ -64,7 +64,10 @@
 #include <cmath>     /// For std::abs
 #include <cstdint>   /// For int64_t
 #include <iostream>  /// For std::cout
-
+/**
+ * @namespace
+ * @brief Mathematical algorithms
+ */
 namespace math {
 
 /**
@@ -78,12 +81,12 @@ namespace math {
 template <typename T, size_t N>
 double shoelace(std::array<std::array<T, 2>, N> coordinates) {
     double sum = 0;
-    // Cross-multiplies and sums up everything from \x1 to \x(n-1)
+    // Cross-multiplies and sums up everything from \f$\x1$ to \f$\x(n-1)$
     for (size_t i = 0; i < N - 1; ++i) {
         sum += coordinates[i][0] * coordinates[i + 1][1] -
                coordinates[i + 1][0] * coordinates[i][1];
     }
-    // Cross multiplies \xn and \x1
+    /// Cross multiplies \f$\xn$ and \f$\x1$
     sum += coordinates[N - 1][0] * coordinates[0][1] -
            coordinates[N - 1][1] * coordinates[0][0];
     return std::abs(0.5 * sum);
@@ -129,6 +132,8 @@ static void test() {
         array<int64_t, 2>{-2, 4}, array<int64_t, 2>{-2, 1},
         array<int64_t, 2>{3, -3}, array<int64_t, 2>{4, 4}};
     assert(math::shoelace(case4) == 28.5);
+
+    std::cout << "All tests passed\n";
 }
 
 /**
