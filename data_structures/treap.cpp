@@ -17,6 +17,7 @@
  * @author [Kairao ZHENG](https://github.com/fgmn)
  */
 
+#include <array>     /// For array
 #include <cassert>   /// For assert
 #include <iostream>  /// For IO operations
 
@@ -36,22 +37,21 @@ const int maxNode = 1e6 + 5;  ///< maximum number of nodes
  * @brief Struct representation of the treap
  */
 struct Treap {
-    int root = 0;           ///< root of the treap
-    int treapCnt = 0;           ///< Total number of current nodes in the treap
-    int key[maxNode];       ///< Node identifier
-    int priority[maxNode];  ///< Random priority
-    int childs[maxNode]
-              [2];      ///< [i][0] represents the left child of node i, and
-                        ///[i][1] represents the right
-    int cnt[maxNode];   ///< Maintains the subtree size for ranking query
-    int size[maxNode];  ///< The number of copies per node
+    int root = 0;      ///< root of the treap
+    int treapCnt = 0;  ///< Total number of current nodes in the treap
+    std::array<int, maxNode> key;        ///< Node identifier
+    std::array<int, maxNode> priority;   ///< Random priority
+    std::array<int, 2> childs[maxNode];  ///< [i][0] represents the
+                                         ///< left child of node i, and
+                                         ///[i][1] represents the right
+    std::array<int, maxNode>
+        cnt;  ///< Maintains the subtree size for ranking query
+    std::array<int, maxNode> size;  ///< The number of copies per node
     /**
      * @brief Initialization
      */
     Treap() {
-        root = 0;
-        treapCnt = 1;
-        priority[0] = INT_MAX;
+        priority[0] = INT32_MAX;
         size[0] = 0;
     }
     /**
