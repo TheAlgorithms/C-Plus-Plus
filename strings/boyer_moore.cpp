@@ -192,7 +192,8 @@ std::vector<size_t> search(const std::string& str, const pattern& arg) {
  * @param str pointer to some part of the input text.
  * @param pat the searched pattern.
  * @param len length of the searched pattern
- * @return true if pat is prefix of str. false otherwise.
+ * @returns `true` if pat IS prefix of str.
+ * @returns `false` if pat is NOT a prefix of str.
  */
 bool is_prefix(const char* str, const char* pat, size_t len) {
     if (strlen(str) < len) {
