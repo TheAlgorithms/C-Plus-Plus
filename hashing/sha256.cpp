@@ -308,7 +308,7 @@ void test_sha256() {
     }
 }
 
-void test() {
+static void test() {
     test_compute_padded_size();
     test_extract_byte();
     test_get_char();
