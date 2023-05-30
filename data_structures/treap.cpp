@@ -50,7 +50,7 @@ struct Treap {
     /**
      * @brief Initialization
      */
-    Treap() {
+    Treap() : root(0), treapCnt(1) {
         priority[0] = INT32_MAX;
         size[0] = 0;
     }
