@@ -64,7 +64,7 @@ bool are_amicable(int x, int y) {
  * @brief Self-test implementations
  * @returns void
  */
-void tests() {
+static void tests() {
     assert(math::are_amicable(220, 284) == true);
     assert(math::are_amicable(6368, 6232) == true);
     assert(math::are_amicable(458, 232) == false);
