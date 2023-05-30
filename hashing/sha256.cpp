@@ -16,6 +16,7 @@
 #include <cassert>  /// For assert
 #include <cstdint>  /// For uint8_t, uint32_t and uint64_t data types
 #include <iomanip>  /// For std::setfill and std::setw
+#include <iostream> /// For IO operations
 #include <sstream>  /// For std::stringstream
 #include <utility>  /// For std::move
 #include <vector>   /// For std::vector
@@ -314,6 +315,8 @@ static void test() {
     test_get_char();
     test_right_rotate();
     test_sha256();
+
+    std::cout << "All tests have successfully passed!\n";
 }
 
 /**
