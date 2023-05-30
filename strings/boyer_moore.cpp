@@ -226,6 +226,7 @@ void and_test(const char* text) {
 /**
  * @brief  A test case in which we search for every appearance of the word 'pat'
  * @param text The text in which we search for appearance of the word 'pat'
+ * @returns void
  */
 void pat_test(const char* text) {
     strings::boyer_moore::pattern pat;
