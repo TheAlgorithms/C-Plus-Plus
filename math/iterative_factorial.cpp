@@ -1,18 +1,16 @@
 /**
  * @file
- * @brief Iterative implementation of [Factorial](https://en.wikipedia.org/wiki/Factorial)
+ * @brief Iterative implementation of
+ * [Factorial](https://en.wikipedia.org/wiki/Factorial)
  *
  * @author [Renjian-buchai](https://github.com/Renjian-buchai)
  *
  * @details Calculates factorial iteratively.
  * \f[n! = n\times(n-1)\times(n-2)\times(n-3)\times\ldots\times3\times2\times1
  *       = n\times(n-1)!\f]
- * for example:
- * \f$4! = 4\times3! = 4\times3\times2\times1 = 24\f$
  *
  * @example
- *
- * 5! = 5 * 4 * 3 * 2 * 1
+ * \f$4! = 4\times3! = 4\times3\times2\times1 = 24\f$
  *
  * Recursive implementation of factorial pseudocode:
  *
