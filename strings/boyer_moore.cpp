@@ -213,6 +213,7 @@ bool is_prefix(const char* str, const char* pat, size_t len) {
 /**
  * @brief A test case in which we search for every appearance of the word 'and'
  * @param text The text in which we search for appearance of the word 'and'
+ * @returns void
  */
 void and_test(const char* text) {
     strings::boyer_moore::pattern ands;
