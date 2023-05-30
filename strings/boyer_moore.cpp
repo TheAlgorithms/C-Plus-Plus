@@ -82,7 +82,7 @@ struct pattern {
  *
  * @param str The string being preprocessed
  * @param arg The good suffix table
- * @return void
+ * @returns void
  */
 void init_good_suffix(const std::string& str, std::vector<size_t>& arg) {
     arg.resize(str.size() + 1, 0);
