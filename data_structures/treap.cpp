@@ -51,7 +51,7 @@ struct Treap {
     /**
      * @brief Initialization
      */
-    Treap() : root(0), treapCnt(1) {
+    Treap() : treapCnt(1) {
         priority[0] = INT32_MAX;
         size[0] = 0;
     }
@@ -152,14 +152,18 @@ struct Treap {
      * @return The rank of element k
      */
     int _get_rank(int x, int k) {
-        if (!x)
+        if (!x) {
             return 0;
-        if (k == key[x])
+        }
+        if (k == key[x]) {
             return size[childs[x][0]] + 1;
-        else if (k < key[x])
+        }
+        else if (k < key[x]) {
             return _get_rank(childs[x][0], k);
-        else
+        }
+        else {
             return size[childs[x][0]] + cnt[x] + _get_rank(childs[x][1], k);
+        }
     }
     /**
      * @brief Get the predecessor node of element k
@@ -171,8 +175,9 @@ struct Treap {
         while (x) {
             if (key[x] < k) {
                 pre = key[x], x = childs[x][1];
-            } else
+            } else {
                 x = childs[x][0];
+            }
         }
         return pre;
     }
@@ -186,8 +191,9 @@ struct Treap {
         while (x) {
             if (key[x] > k) {
                 next = key[x], x = childs[x][0];
-            } else
+            } else {
                 x = childs[x][1];
+            }
         }
         return next;
     }
@@ -217,13 +223,13 @@ struct Treap {
 }  // namespace treap
 }  // namespace data_structures
 
-data_structures::treap::Treap mTreap;  ///< Treap object instance
-
 /**
  * @brief Self-test implementations
  * @returns void
  */
 static void test() {
+    data_structures::treap::Treap mTreap;  ///< Treap object instance
+
     mTreap.insert(1);
     mTreap.insert(2);
     mTreap.insert(3);
