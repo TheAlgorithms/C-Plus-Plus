@@ -39,14 +39,15 @@ const int maxNode = 1e6 + 5;  ///< maximum number of nodes
 struct Treap {
     int root = 0;      ///< root of the treap
     int treapCnt = 0;  ///< Total number of current nodes in the treap
-    std::array<int, maxNode> key;        ///< Node identifier
-    std::array<int, maxNode> priority;   ///< Random priority
-    std::array<int, 2> childs[maxNode];  ///< [i][0] represents the
-                                         ///< left child of node i, and
-                                         ///[i][1] represents the right
-    std::array<int, maxNode>
-        cnt;  ///< Maintains the subtree size for ranking query
-    std::array<int, maxNode> size;  ///< The number of copies per node
+    std::array<int, maxNode> key = {};       ///< Node identifier
+    std::array<int, maxNode> priority = {};  ///< Random priority
+    std::array<std::array<int, 2>, maxNode> childs = {
+        {}};  ///< [i][0] represents the
+              ///< left child of node i, and
+              ///[i][1] represents the right
+    std::array<int, maxNode> cnt =
+        {};  ///< Maintains the subtree size for ranking query
+    std::array<int, maxNode> size = {};  ///< The number of copies per node
     /**
      * @brief Initialization
      */
@@ -166,7 +167,7 @@ struct Treap {
      * @return The predecessor
      */
     int get_predecessor(int k) {
-        int x = root, pre;
+        int x = root, pre = -1;
         while (x) {
             if (key[x] < k) {
                 pre = key[x], x = childs[x][1];
@@ -181,7 +182,7 @@ struct Treap {
      * @return The successor
      */
     int get_next(int k) {
-        int x = root, next;
+        int x = root, next = -1;
         while (x) {
             if (key[x] > k) {
                 next = key[x], x = childs[x][0];
@@ -212,31 +213,33 @@ struct Treap {
      * @return The rank of element k
      */
     int get_rank(int k) { return _get_rank(root, k); }
-} mTreap;
+};
 }  // namespace treap
 }  // namespace data_structures
+
+data_structures::treap::Treap mTreap;  ///< Treap object instance
 
 /**
  * @brief Self-test implementations
  * @returns void
  */
 static void test() {
-    data_structures::treap::mTreap.insert(1);
-    data_structures::treap::mTreap.insert(2);
-    data_structures::treap::mTreap.insert(3);
-    assert(data_structures::treap::mTreap.get_k_th(2) == 2);
-    data_structures::treap::mTreap.insert(4);
-    data_structures::treap::mTreap.insert(5);
-    data_structures::treap::mTreap.insert(6);
-    assert(data_structures::treap::mTreap.get_next(4) == 5);
-    data_structures::treap::mTreap.insert(7);
-    assert(data_structures::treap::mTreap.get_predecessor(7) == 6);
-    data_structures::treap::mTreap.erase(4);
-    assert(data_structures::treap::mTreap.get_k_th(4) == 5);
-    assert(data_structures::treap::mTreap.get_rank(5) == 4);
-    data_structures::treap::mTreap.insert(10);
-    assert(data_structures::treap::mTreap.get_rank(10) == 7);
-    assert(data_structures::treap::mTreap.get_predecessor(10) == 7);
+    mTreap.insert(1);
+    mTreap.insert(2);
+    mTreap.insert(3);
+    assert(mTreap.get_k_th(2) == 2);
+    mTreap.insert(4);
+    mTreap.insert(5);
+    mTreap.insert(6);
+    assert(mTreap.get_next(4) == 5);
+    mTreap.insert(7);
+    assert(mTreap.get_predecessor(7) == 6);
+    mTreap.erase(4);
+    assert(mTreap.get_k_th(4) == 5);
+    assert(mTreap.get_rank(5) == 4);
+    mTreap.insert(10);
+    assert(mTreap.get_rank(10) == 7);
+    assert(mTreap.get_predecessor(10) == 7);
 }
 /**
  * @brief Main function
