@@ -44,7 +44,13 @@ bool are_equal(double a, double b) { return std::abs(a - b) < 0.0001; }
  * @param number the Celsius number that will be used to convert
  * @returns the Kelvin number converted to Celsius
  */
-double kelvin_to_celsius(double number) { return number - 273.15; }
+double kelvin_to_celsius(double temperature_in_k) {
+    const double absolute_zero_in_c = -273.15;
+    if (temperature_in_k < absolute_zero_in_c) {
+        throw std::invalid_argument("input temperature below absolute zero");
+    }
+    return temperature_in_k + absolute_zero_in_c;
+}
 }  // namespace others
 
 /**
