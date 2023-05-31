@@ -158,7 +158,7 @@ void init_pattern(const std::string& str, pattern& arg) {
  *
  * @param str Text we are seatching in.
  * @param arg pattern structure containing the preprocessed pattern
- * @return (vector of) indexes of the occurrences of pattern in text
+ * @return Vector of indexes of the occurrences of pattern in text
  */
 std::vector<size_t> search(const std::string& str, const pattern& arg) {
     size_t index_position = arg.pat.size() - 1;
