@@ -245,13 +245,13 @@ std::string sha256(const std::string &input) {
  * @brief Self-test implementations
  * @returns void
  */
-void test_compute_padded_size() {
+static void test_compute_padded_size() {
     assert(hashing::sha256::compute_padded_size(55) == 64);
     assert(hashing::sha256::compute_padded_size(56) == 128);
     assert(hashing::sha256::compute_padded_size(130) == 192);
 }
 
-void test_extract_byte() {
+static void test_extract_byte() {
     assert(hashing::sha256::extract_byte<uint32_t>(512, 0) == 0);
     assert(hashing::sha256::extract_byte<uint32_t>(512, 1) == 2);
     bool exception = false;
@@ -263,7 +263,7 @@ void test_extract_byte() {
     assert(exception);
 }
 
-void test_get_char() {
+static void test_get_char() {
     assert(hashing::sha256::get_char("test", 3) == 't');
     assert(hashing::sha256::get_char("test", 4) == '\x80');
     assert(hashing::sha256::get_char("test", 5) == '\x00');
@@ -277,13 +277,13 @@ void test_get_char() {
     assert(exception);
 }
 
-void test_right_rotate() {
+static void test_right_rotate() {
     assert(hashing::sha256::right_rotate(128, 3) == 16);
     assert(hashing::sha256::right_rotate(1, 30) == 4);
     assert(hashing::sha256::right_rotate(6, 30) == 24);
 }
 
-void test_sha256() {
+static void test_sha256() {
     struct TestCase {
         const std::string input;
         const std::string expected_hash;
