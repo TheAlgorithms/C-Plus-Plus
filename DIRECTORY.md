@@ -1,5 +1,6 @@
 
 ## Backtracking
+  * [Generate Parentheses](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/backtracking/generate_parentheses.cpp)
   * [Graph Coloring](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/backtracking/graph_coloring.cpp)
   * [Knight Tour](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/backtracking/knight_tour.cpp)
   * [Magic Sequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/backtracking/magic_sequence.cpp)
