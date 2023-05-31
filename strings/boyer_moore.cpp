@@ -237,8 +237,8 @@ void pat_test(const char* text) {
 
     assert(indexes.size() == 6);
 
-    for (const auto& idx : indexes) {
-        assert(strings::boyer_moore::is_prefix(text + idx, "pat", 3));
+    for (const auto& currentIndex : indexes) {
+        assert(strings::boyer_moore::is_prefix(text + currentIndex, "pat", 3));
     }
 }
 /**
