@@ -32,7 +32,7 @@ namespace data_structures {
  * algorithm implementation
  */
 namespace treap {
-const int maxNode = 1e6 + 5;  ///< maximum number of nodes
+const int maxNode = 1e5 + 5;  ///< maximum number of nodes
 /**
  * @brief Struct representation of the treap
  */
@@ -246,6 +246,8 @@ static void test() {
     mTreap.insert(10);
     assert(mTreap.get_rank(10) == 7);
     assert(mTreap.get_predecessor(10) == 7);
+
+    std::cout << "All tests have successfully passed!\n";
 }
 /**
  * @brief Main function
