@@ -37,7 +37,9 @@ namespace others {
  * @returns false if the numbers are NOT equal within the given tolerance
  * otherwise
  */
-bool are_equal(double a, double b) { return std::abs(a - b) < 0.0001; }
+bool are_almost_equal(double a, double b, double absolute_tolerance = 0.0001) {
+    return std::abs(a - b) < absolute_tolerance;
+}
 
 /**
  * @brief Conversion from Kelvin to Celsius algorithm.
@@ -58,13 +60,13 @@ double kelvin_to_celsius(double temperature_in_k) {
  * @returns void
  */
 static void tests() {
-    assert(others::are_equal(others::kelvin_to_celsius(230), -43.15));
-    assert(others::are_equal(others::kelvin_to_celsius(512), 238.85));
-    assert(others::are_equal(others::kelvin_to_celsius(-452), -725.15));
-    assert(others::are_equal(others::kelvin_to_celsius(77), -196.15));
-    assert(others::are_equal(others::kelvin_to_celsius(9.78), -263.37));
-    assert(others::are_equal(others::kelvin_to_celsius(15), -258.15));
-    assert(others::are_equal(others::kelvin_to_celsius(273.15), 0));
+    assert(others::are_almost_equal(others::kelvin_to_celsius(230), -43.15));
+    assert(others::are_almost_equal(others::kelvin_to_celsius(512), 238.85));
+    assert(others::are_almost_equal(others::kelvin_to_celsius(55), -218.15));
+    assert(others::are_almost_equal(others::kelvin_to_celsius(77), -196.15));
+    assert(others::are_almost_equal(others::kelvin_to_celsius(9.78), -263.37));
+    assert(others::are_almost_equal(others::kelvin_to_celsius(15), -258.15));
+    assert(others::are_almost_equal(others::kelvin_to_celsius(273.15), 0));
 
     std::cout << "All tests have successfully passed!\n";
 }
