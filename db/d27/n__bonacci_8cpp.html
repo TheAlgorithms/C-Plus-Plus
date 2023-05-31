@@ -106,14 +106,13 @@ $(document).ready(function(){initNavTree('db/d27/n__bonacci_8cpp.html','../../')
 
 <p>Implementation of the <a href="http://oeis.org/wiki/N-bonacci_numbers" target="_blank">N-bonacci</a> series.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;cassert&gt;</code><br />
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for n_bonacci.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d95/n__bonacci_8cpp__incl.svg" width="350" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d95/n__bonacci_8cpp__incl.svg" width="252" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
@@ -162,15 +161,15 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  120</span>           {</div>
-<div class="line"><span class="lineno">  121</span>    <a class="code hl_function" href="../../db/d27/n__bonacci_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">  122</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  123</span>}</div>
-<div class="ttc" id="an__bonacci_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../db/d27/n__bonacci_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition:</b> n_bonacci.cpp:63</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  104</span>           {</div>
+<div class="line"><span class="lineno">  105</span>    <a class="code hl_function" href="../../db/d27/n__bonacci_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">  106</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  107</span>}</div>
+<div class="ttc" id="an__bonacci_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../db/d27/n__bonacci_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition:</b> n_bonacci.cpp:69</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d27/n__bonacci_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="278" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d27/n__bonacci_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="271" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -213,21 +212,28 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>the n-bonacci sequence as vector array </dd></dl>
 <p>we initialise the (n-1)th term as 1 which is the sum of preceding N zeros</p>
 <p>similarily the sum of preceding N zeros and the (N+1)th 1 is also 1</p>
-<div class="fragment"><div class="line"><span class="lineno">   41</span>                                                                    {</div>
-<div class="line"><span class="lineno">   42</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> a(m, 0);  <span class="comment">// we create an empty array of size m</span></div>
-<div class="line"><span class="lineno">   43</span> </div>
-<div class="line"><span class="lineno">   44</span>    a[n - 1] = 1;  <span class="comment">/// we initialise the (n-1)th term as 1 which is the sum of</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">   45</span><span class="comment">                   /// preceding N zeros</span></div>
-<div class="line"><span class="lineno">   46</span><span class="comment"></span>    a[n] = 1;  <span class="comment">/// similarily the sum of preceding N zeros and the (N+1)th 1 is</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">   47</span><span class="comment">               /// also 1</span></div>
-<div class="line"><span class="lineno">   48</span><span class="comment"></span>    <span class="keywordflow">for</span> (uint64_t i = n + 1; i &lt; m; i++) {</div>
-<div class="line"><span class="lineno">   49</span>        <span class="comment">// this is an optimized solution that works in O(M) time and takes O(M)</span></div>
-<div class="line"><span class="lineno">   50</span>        <span class="comment">// extra space here we use the concept of the sliding window the current</span></div>
-<div class="line"><span class="lineno">   51</span>        <span class="comment">// term can be computed using the given formula</span></div>
-<div class="line"><span class="lineno">   52</span>        a[i] = 2 * a[i - 1] - a[i - 1 - n];</div>
-<div class="line"><span class="lineno">   53</span>    }</div>
-<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">return</span> a;</div>
-<div class="line"><span class="lineno">   55</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>                                                                    {</div>
+<div class="line"><span class="lineno">   41</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> a(</div>
+<div class="line"><span class="lineno">   42</span>        m, 0);  <span class="comment">// we create an array of size m filled with zeros</span></div>
+<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">if</span> (m &lt; n || n == 0) {</div>
+<div class="line"><span class="lineno">   44</span>        <span class="keywordflow">return</span> a;</div>
+<div class="line"><span class="lineno">   45</span>    }</div>
+<div class="line"><span class="lineno">   46</span> </div>
+<div class="line"><span class="lineno">   47</span>    a[n - 1] = 1;  <span class="comment">/// we initialise the (n-1)th term as 1 which is the sum of</span><span class="comment"></span></div>
+<div class="line"><span class="lineno">   48</span><span class="comment">                   /// preceding N zeros</span></div>
+<div class="line"><span class="lineno">   49</span><span class="comment"></span>    <span class="keywordflow">if</span> (n == m) {</div>
+<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">return</span> a;</div>
+<div class="line"><span class="lineno">   51</span>    }</div>
+<div class="line"><span class="lineno">   52</span>    a[n] = 1;  <span class="comment">/// similarily the sum of preceding N zeros and the (N+1)th 1 is</span><span class="comment"></span></div>
+<div class="line"><span class="lineno">   53</span><span class="comment">               /// also 1</span></div>
+<div class="line"><span class="lineno">   54</span><span class="comment"></span>    <span class="keywordflow">for</span> (uint64_t i = n + 1; i &lt; m; i++) {</div>
+<div class="line"><span class="lineno">   55</span>        <span class="comment">// this is an optimized solution that works in O(M) time and takes O(M)</span></div>
+<div class="line"><span class="lineno">   56</span>        <span class="comment">// extra space here we use the concept of the sliding window the current</span></div>
+<div class="line"><span class="lineno">   57</span>        <span class="comment">// term can be computed using the given formula</span></div>
+<div class="line"><span class="lineno">   58</span>        a[i] = 2 * a[i - 1] - a[i - 1 - n];</div>
+<div class="line"><span class="lineno">   59</span>    }</div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">return</span> a;</div>
+<div class="line"><span class="lineno">   61</span>}</div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -263,68 +269,44 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   63</span>                   {</div>
-<div class="line"><span class="lineno">   64</span>    <span class="comment">// n = 1 m = 1 return [1, 1]</span></div>
-<div class="line"><span class="lineno">   65</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;1st test&quot;</span>;</div>
-<div class="line"><span class="lineno">   66</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> arr1 = <a class="code hl_function" href="../../db/d27/n__bonacci_8cpp.html#a6849b68f760be628d5975ab3eddec63d">math::n_bonacci::N_bonacci</a>(</div>
-<div class="line"><span class="lineno">   67</span>        1, 1);  <span class="comment">// first input is the param n and second one is the param m for</span></div>
-<div class="line"><span class="lineno">   68</span>                <span class="comment">// N-bonacci func</span></div>
-<div class="line"><span class="lineno">   69</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> output_array1 = {</div>
-<div class="line"><span class="lineno">   70</span>        1, 1};  <span class="comment">// It is the expected output series of length m</span></div>
-<div class="line"><span class="lineno">   71</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/equal.html">std::equal</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr1), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr1),</div>
-<div class="line"><span class="lineno">   72</span>                      <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(output_array1)));</div>
-<div class="line"><span class="lineno">   73</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   74</span> </div>
-<div class="line"><span class="lineno">   75</span>    <span class="comment">// n = 5 m = 15 return [0, 0, 0, 0, 1, 1, 2, 4, 8, 16, 31, 61, 120, 236,</span></div>
-<div class="line"><span class="lineno">   76</span>    <span class="comment">// 464]</span></div>
-<div class="line"><span class="lineno">   77</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;2nd test&quot;</span>;</div>
-<div class="line"><span class="lineno">   78</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> arr2 = <a class="code hl_function" href="../../db/d27/n__bonacci_8cpp.html#a6849b68f760be628d5975ab3eddec63d">math::n_bonacci::N_bonacci</a>(</div>
-<div class="line"><span class="lineno">   79</span>        5, 15);  <span class="comment">// first input is the param n and second one is the param m for</span></div>
-<div class="line"><span class="lineno">   80</span>                 <span class="comment">// N-bonacci func</span></div>
-<div class="line"><span class="lineno">   81</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> output_array2 = {</div>
-<div class="line"><span class="lineno">   82</span>        0, 0,  0,  0,  1,   1,   2,  4,</div>
-<div class="line"><span class="lineno">   83</span>        8, 16, 31, 61, 120, 236, 464};  <span class="comment">// It is the expected output series of</span></div>
-<div class="line"><span class="lineno">   84</span>                                        <span class="comment">// length m</span></div>
-<div class="line"><span class="lineno">   85</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/equal.html">std::equal</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr2), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr2),</div>
-<div class="line"><span class="lineno">   86</span>                      <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(output_array2)));</div>
-<div class="line"><span class="lineno">   87</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   88</span> </div>
-<div class="line"><span class="lineno">   89</span>    <span class="comment">// n = 6 m = 17 return [0, 0, 0, 0, 0, 1, 1, 2, 4, 8, 16, 32, 63, 125, 248,</span></div>
-<div class="line"><span class="lineno">   90</span>    <span class="comment">// 492, 976]</span></div>
-<div class="line"><span class="lineno">   91</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;3rd test&quot;</span>;</div>
-<div class="line"><span class="lineno">   92</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> arr3 = <a class="code hl_function" href="../../db/d27/n__bonacci_8cpp.html#a6849b68f760be628d5975ab3eddec63d">math::n_bonacci::N_bonacci</a>(</div>
-<div class="line"><span class="lineno">   93</span>        6, 17);  <span class="comment">// first input is the param n and second one is the param m for</span></div>
-<div class="line"><span class="lineno">   94</span>                 <span class="comment">// N-bonacci func</span></div>
-<div class="line"><span class="lineno">   95</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> output_array3 = {</div>
-<div class="line"><span class="lineno">   96</span>        0, 0,  0,  0,  0,   1,   1,   2,  4,</div>
-<div class="line"><span class="lineno">   97</span>        8, 16, 32, 63, 125, 248, 492, 976};  <span class="comment">// It is the expected output series</span></div>
-<div class="line"><span class="lineno">   98</span>                                             <span class="comment">// of length m</span></div>
-<div class="line"><span class="lineno">   99</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/equal.html">std::equal</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr3), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr3),</div>
-<div class="line"><span class="lineno">  100</span>                      <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(output_array3)));</div>
-<div class="line"><span class="lineno">  101</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  102</span> </div>
-<div class="line"><span class="lineno">  103</span>    <span class="comment">// n = 56 m = 15 return [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</span></div>
-<div class="line"><span class="lineno">  104</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;4th test&quot;</span>;</div>
-<div class="line"><span class="lineno">  105</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> arr4 = <a class="code hl_function" href="../../db/d27/n__bonacci_8cpp.html#a6849b68f760be628d5975ab3eddec63d">math::n_bonacci::N_bonacci</a>(</div>
-<div class="line"><span class="lineno">  106</span>        56, 15);  <span class="comment">// first input is the param n and second one is the param m</span></div>
-<div class="line"><span class="lineno">  107</span>                  <span class="comment">// for N-bonacci func</span></div>
-<div class="line"><span class="lineno">  108</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> output_array4 = {</div>
-<div class="line"><span class="lineno">  109</span>        0, 0, 0, 0, 0, 0, 0, 0,</div>
-<div class="line"><span class="lineno">  110</span>        0, 0, 0, 0, 0, 0, 0};  <span class="comment">// It is the expected output series of length m</span></div>
-<div class="line"><span class="lineno">  111</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/equal.html">std::equal</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr4), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr4),</div>
-<div class="line"><span class="lineno">  112</span>                      <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(output_array4)));</div>
-<div class="line"><span class="lineno">  113</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  114</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   69</span>                   {</div>
+<div class="line"><span class="lineno">   70</span>    <span class="keyword">struct </span>TestCase {</div>
+<div class="line"><span class="lineno">   71</span>        <span class="keyword">const</span> uint64_t n;</div>
+<div class="line"><span class="lineno">   72</span>        <span class="keyword">const</span> uint64_t m;</div>
+<div class="line"><span class="lineno">   73</span>        <span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> expected;</div>
+<div class="line"><span class="lineno">   74</span>        TestCase(<span class="keyword">const</span> uint64_t in_n, <span class="keyword">const</span> uint64_t in_m,</div>
+<div class="line"><span class="lineno">   75</span>                 <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/initializer_list.html">std::initializer_list&lt;uint64_t&gt;</a> <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>)</div>
+<div class="line"><span class="lineno">   76</span>            : n(in_n), m(in_m), expected(<a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>) {</div>
+<div class="line"><span class="lineno">   77</span>            assert(<a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>.size() == m);</div>
+<div class="line"><span class="lineno">   78</span>        }</div>
+<div class="line"><span class="lineno">   79</span>    };</div>
+<div class="line"><span class="lineno">   80</span>    <span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;TestCase&gt;</a> test_cases = {</div>
+<div class="line"><span class="lineno">   81</span>        TestCase(0, 0, {}),</div>
+<div class="line"><span class="lineno">   82</span>        TestCase(0, 1, {0}),</div>
+<div class="line"><span class="lineno">   83</span>        TestCase(0, 2, {0, 0}),</div>
+<div class="line"><span class="lineno">   84</span>        TestCase(1, 0, {}),</div>
+<div class="line"><span class="lineno">   85</span>        TestCase(1, 1, {1}),</div>
+<div class="line"><span class="lineno">   86</span>        TestCase(1, 2, {1, 1}),</div>
+<div class="line"><span class="lineno">   87</span>        TestCase(1, 3, {1, 1, 1}),</div>
+<div class="line"><span class="lineno">   88</span>        TestCase(5, 15, {0, 0, 0, 0, 1, 1, 2, 4, 8, 16, 31, 61, 120, 236, 464}),</div>
+<div class="line"><span class="lineno">   89</span>        TestCase(</div>
+<div class="line"><span class="lineno">   90</span>            6, 17,</div>
+<div class="line"><span class="lineno">   91</span>            {0, 0, 0, 0, 0, 1, 1, 2, 4, 8, 16, 32, 63, 125, 248, 492, 976}),</div>
+<div class="line"><span class="lineno">   92</span>        TestCase(56, 15, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0})};</div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;tc : test_cases) {</div>
+<div class="line"><span class="lineno">   95</span>        assert(math::n_bonacci::N_bonacci(tc.n, tc.m) == tc.expected);</div>
+<div class="line"><span class="lineno">   96</span>    }</div>
+<div class="line"><span class="lineno">   97</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   98</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="aequal_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/equal.html">std::equal</a></div><div class="ttdeci">T equal(T... args)</div></div>
-<div class="ttc" id="an__bonacci_8cpp_html_a6849b68f760be628d5975ab3eddec63d"><div class="ttname"><a href="../../db/d27/n__bonacci_8cpp.html#a6849b68f760be628d5975ab3eddec63d">math::n_bonacci::N_bonacci</a></div><div class="ttdeci">std::vector&lt; uint64_t &gt; N_bonacci(const uint64_t &amp;n, const uint64_t &amp;m)</div><div class="ttdoc">Finds the N-Bonacci series for the n parameter value and m parameter terms.</div><div class="ttdef"><b>Definition:</b> n_bonacci.cpp:41</div></div>
+<div class="ttc" id="ahash__search_8cpp_html_a6e1a77282bc65ad359d753d25df23243"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a></div><div class="ttdeci">int data[MAX]</div><div class="ttdoc">test data</div><div class="ttdef"><b>Definition:</b> hash_search.cpp:24</div></div>
+<div class="ttc" id="ainitializer_list_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/initializer_list.html">std::initializer_list</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d27/n__bonacci_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="180" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d27/n__bonacci_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="174" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
