@@ -71,6 +71,6 @@ static void tests() {
  * @returns 0 on exit
  */
 int main() {
-    tests();  // runs self-test implementation
+    tests();  // run self-test implementations
     return 0;
 }
