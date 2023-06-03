@@ -55,7 +55,7 @@ bool is_factorial(uint64_t n) {
  * @brief Test function
  * @returns void
  */
-void tests() {
+static void tests() {
     assert(math::is_factorial(50) == false);
     assert(math::is_factorial(720) == true);
     assert(math::is_factorial(0) == false);
