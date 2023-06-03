@@ -34,7 +34,7 @@
  * coefficients](https://en.wikipedia.org/wiki/Binomial_coefficient)
  * implementation
  */
-namespace binomial {
+namespace math { namespace binomial {
 /**
  * @brief Function to calculate binomial coefficients
  * @param n number of possibilities
@@ -76,22 +76,23 @@ size_t calculate(int32_t n, int32_t k) {
     return result;
 }
 }  // namespace binomial
+}  // namespace math
 
 /**
  * @brief Test implementations
  * @returns void
  */
 static void tests() {
-    assert(binomial::calculate(1, 1) == 1);
-    assert(binomial::calculate(57, 57) == 1);
-    assert(binomial::calculate(6, 3) == 20);
-    assert(binomial::calculate(10, 5) == 252);
-    assert(binomial::calculate(20, 10) == 184756);
-    assert(binomial::calculate(30, 15) == 155117520);
-    assert(binomial::calculate(40, 20) == 137846528820);
-    assert(binomial::calculate(50, 25) == 126410606437752);
-    assert(binomial::calculate(60, 30) == 118264581564861424);
-    assert(binomial::calculate(62, 31) == 465428353255261088);
+    assert(math::binomial::calculate(1, 1) == 1);
+    assert(math::binomial::calculate(57, 57) == 1);
+    assert(math::binomial::calculate(6, 3) == 20);
+    assert(math::binomial::calculate(10, 5) == 252);
+    assert(math::binomial::calculate(20, 10) == 184756);
+    assert(math::binomial::calculate(30, 15) == 155117520);
+    assert(math::binomial::calculate(40, 20) == 137846528820);
+    assert(math::binomial::calculate(50, 25) == 126410606437752);
+    assert(math::binomial::calculate(60, 30) == 118264581564861424);
+    assert(math::binomial::calculate(62, 31) == 465428353255261088);
 
     std::cout << "Binomial coefficients tests successfully passed"
               << std::endl;
