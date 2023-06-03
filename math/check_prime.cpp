@@ -1,8 +1,7 @@
 /**
  * @file
  * @brief
- * A simple program to check if the given number is a prime or not.
- * https://en.wikipedia.org/wiki/Primality_test
+ * A simple program to check if the given number is [Prime](https://en.wikipedia.org/wiki/Primality_test) or not.
  * @details
  * A prime number is any number that can be divided only by itself and 1. It must
  * be positive and a whole number, therefore any prime number is part of the
