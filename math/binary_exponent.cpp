@@ -21,7 +21,7 @@
  * Hence to calculate 2^10 we only need to multiply \f$2^8\f$ and \f$2^2\f$
  * skipping \f$2^1\f$ and \f$2^4\f$.
  *
- * @author[Mann Mehta]https://github.com/mann2108
+ * @author [Mann Mehta](https://github.com/mann2108)
  */
 
 #include <cassert> /// for assert
