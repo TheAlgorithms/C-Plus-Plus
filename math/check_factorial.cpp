@@ -11,6 +11,10 @@
 #include <cassert>   /// for assert
 #include <iostream>  /// for cout
 
+/**
+ * @namespace
+ * @brief Mathematical algorithms
+ */
 namespace math {
 /**
  * @brief Function to check if the given number is factorial of some number or
