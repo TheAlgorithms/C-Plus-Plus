@@ -69,7 +69,7 @@ long long binExpo_recursive(long long a, long long b) {
 
 /**
  * @brief Iterative function to calculate exponent in \f$O(\log(n))\f$ using
- binary
+ * binary
  + exponent.
  * @param a base number
  * @param b exponential number
