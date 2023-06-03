@@ -81,7 +81,7 @@ std::vector<TestCase> get_test_cases() {
  * @tparam type representing a list of test cases
  */
 template <typename TestCases>
-void test_longest_common_string_length(const TestCases& test_cases) {
+static void test_longest_common_string_length(const TestCases& test_cases) {
     for (const auto& cur_tc : test_cases) {
         assert(longest_common_string_length(cur_tc.string_a, cur_tc.string_b) ==
                cur_tc.common_string_len);
@@ -95,7 +95,7 @@ void test_longest_common_string_length(const TestCases& test_cases) {
  * @tparam type representing a list of test cases
  */
 template <typename TestCases>
-void test_longest_common_string_length_is_symmetric(
+static void test_longest_common_string_length_is_symmetric(
     const TestCases& test_cases) {
     for (const auto& cur_tc : test_cases) {
         assert(longest_common_string_length(cur_tc.string_b, cur_tc.string_a) ==
@@ -120,7 +120,7 @@ std::string reverse_str(const std::string& in_str) {
  * @tparam type representing a list of test cases
  */
 template <typename TestCases>
-void test_longest_common_string_length_for_reversed_inputs(
+static void test_longest_common_string_length_for_reversed_inputs(
     const TestCases& test_cases) {
     for (const auto& cur_tc : test_cases) {
         assert(longest_common_string_length(reverse_str(cur_tc.string_a),
