@@ -63,7 +63,7 @@ void tests() {
     assert(math::is_factorial(479001600) == true);
     assert(math::is_factorial(-24) == false);
 
-    std::cout << "all tests have passed successfully" << std::endl;
+    std::cout << "All tests have successfully passed!" << std::endl;
 }
 
 /**
