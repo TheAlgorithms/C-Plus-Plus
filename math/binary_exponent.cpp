@@ -24,8 +24,8 @@
  * @author [Mann Mehta](https://github.com/mann2108)
  */
 
-#include <cassert>  /// for assert
-#include <iostream> /// for IO operations
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
 
 /**
  * @brief Mathematical algorithms
@@ -43,7 +43,7 @@ namespace math {
  * @return (res * res * a) if modulo 2 of exponential is 0
  * @return (res * res) if modulo 2 of exponential is 1
  */
-long long binExpo_recursive(long long a, long long b) {
+uint64_t binExpo_recursive(int64_t a, int64_t b) {
     /*!
      * Provided that b != 0, this function recursively calls itself, until an
      * instance of it returns 1 (which eventually occurs due to b/2 for each
@@ -55,11 +55,11 @@ long long binExpo_recursive(long long a, long long b) {
      */
     if (b == 0) {
         return 1;
-    } else if (b < 0) { // if b is not a valid exponent
+    } else if (b < 0) {  // if b is not a valid exponent
         return 0;
     }
 
-    long long res = binExpo_recursive(a, b / 2);
+    uint64_t res = binExpo_recursive(a, b / 2);
     if (b % 2) {
         return res * res * a;
     } else {
@@ -77,7 +77,7 @@ long long binExpo_recursive(long long a, long long b) {
  * @return 0 if the exponential number is < 0 ( 0 representing NULL since
  * < 0 is an invalid exponential to use )
  */
-long long binExpo_iterative(long long a, long long b) {
+uint64_t binExpo_iterative(int64_t a, int64_t b) {
     /*!
      * Provided b > 0, this function iteratively multiples the value res. Each
      * iteration of the while loop, checks if the exponential number is binary,
@@ -87,8 +87,8 @@ long long binExpo_iterative(long long a, long long b) {
     if (b < 0) {
         return 0;
     }
-    long long res = 1;
-    while (b > 0) { // if b is not a valid exponent
+    uint64_t res = 1;
+    while (b > 0) {  // if b is not a valid exponent
         if (b % 2) {
             res = res * a;
         }
@@ -99,30 +99,29 @@ long long binExpo_iterative(long long a, long long b) {
 }
 }  // namespace math
 
-using namespace math;
 /**
- * @brief self-test implementation
+ * @brief Self-test implementation
  * @returns void
  */
 static void tests() {
-    assert(binExpo_recursive(1, 0) == 1);
-    assert(binExpo_recursive(746584, 0) == 1);
-    assert(binExpo_recursive(1, 1) == 1);
-    assert(binExpo_recursive(2938374, 1) == 2938374);
-    assert(binExpo_recursive(3, 7) == 2187);
-    assert(binExpo_recursive(31, 5) == 28629151);
-    assert(binExpo_recursive(0, 0) == 1);
-    assert(binExpo_recursive(1, -20) == 0);
+    assert(math::binExpo_recursive(1, 0) == 1);
+    assert(math::binExpo_recursive(746584, 0) == 1);
+    assert(math::binExpo_recursive(1, 1) == 1);
+    assert(math::binExpo_recursive(2938374, 1) == 2938374);
+    assert(math::binExpo_recursive(3, 7) == 2187);
+    assert(math::binExpo_recursive(31, 5) == 28629151);
+    assert(math::binExpo_recursive(0, 0) == 1);
+    assert(math::binExpo_recursive(1, -20) == 0);
 
-    assert(binExpo_iterative(1, 0) == 1);
-    assert(binExpo_iterative(746584, 0) == 1);
-    assert(binExpo_iterative(1, 1) == 1);
-    assert(binExpo_iterative(2938374, 1) == 2938374);
-    assert(binExpo_iterative(3, 7) == 2187);
-    assert(binExpo_iterative(31, 5) == 28629151);
-    assert(binExpo_iterative(0, 0) == 1);
-    assert(binExpo_iterative(1, -20) == 0);
-    std::cout << "all tests have passed" << std::endl;
+    assert(math::binExpo_iterative(1, 0) == 1);
+    assert(math::binExpo_iterative(746584, 0) == 1);
+    assert(math::binExpo_iterative(1, 1) == 1);
+    assert(math::binExpo_iterative(2938374, 1) == 2938374);
+    assert(math::binExpo_iterative(3, 7) == 2187);
+    assert(math::binExpo_iterative(31, 5) == 28629151);
+    assert(math::binExpo_iterative(0, 0) == 1);
+    assert(math::binExpo_iterative(1, -20) == 0);
+    std::cout << "All tests have successfully passed!" << std::endl;
 }
 
 /**
@@ -130,6 +129,6 @@ static void tests() {
  * @returns 0 on exit
  */
 int main() {
-    tests();  // perform self-test implementations
+    tests();  // run self-test implementations
     return 0;
 }
