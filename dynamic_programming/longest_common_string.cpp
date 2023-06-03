@@ -5,12 +5,16 @@
  * the function longest_common_string_length computes the length
  * of the longest common string which can be created of two input strings
  * by removing characters from them
+ *
+ * @author [Nikhil Arora](https://github.com/nikhilarora068)
+ * @author [Piotr Idzik](https://github.com/vil02)
  */
 
-#include <cassert>  /// for assert
-#include <string>   /// for std::string
-#include <utility>  /// for std::move
-#include <vector>   /// for std::vector
+#include <cassert>     /// for assert
+#include <string>      /// for std::string
+#include <utility>     /// for std::move
+#include <vector>      /// for std::vector
+#include <iostream>  /// for IO operations
 
 /**
  * @brief computes the length of the longest common string created from input
@@ -128,12 +132,14 @@ void test_longest_common_string_length_for_reversed_inputs(
 /**
  * @brief runs all tests for longest_common_string_length funcion
  */
-void tests() {
+static void tests() {
     const auto test_cases = get_test_cases();
     assert(test_cases.size() > 0);
     test_longest_common_string_length(test_cases);
     test_longest_common_string_length_is_symmetric(test_cases);
     test_longest_common_string_length_for_reversed_inputs(test_cases);
+
+    std::cout << "All tests have successfully passed!\n";
 }
 
 int main() {
