@@ -52,7 +52,7 @@ bool is_factorial(uint64_t n) {
 }  // namespace math
 
 /**
- * @brief Test function
+ * @brief Self-test implementations
  * @returns void
  */
 static void tests() {
