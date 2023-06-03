@@ -11,7 +11,7 @@
  */
 
 #include <cassert>   /// for assert
-#include <iostream>  /// for IO operations
+#include <iostream>  /// for std::cout
 #include <string>    /// for std::string
 #include <utility>   /// for std::move
 #include <vector>    /// for std::vector
