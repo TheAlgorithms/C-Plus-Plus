@@ -38,8 +38,6 @@ namespace math {
  * @param a base number
  * @param b exponent number
  * @return 1 if the exponent number is 0 the return value will always be 1
- * @return 0 if the exponential number is < 0 ( 0 representing NULL since
- * < 0 is an invalid exponential to use )
  * @return (res * res * a) if modulo 2 of exponential is 0
  * @return (res * res) if modulo 2 of exponential is 1
  */
@@ -55,8 +53,6 @@ uint64_t binExpo_recursive(uint64_t a, uint64_t b) {
      */
     if (b == 0) {
         return 1;
-    } else if (b < 0) {  // if b is not a valid exponent
-        return 0;
     }
 
     uint64_t res = binExpo_recursive(a, b / 2);
@@ -74,8 +70,6 @@ uint64_t binExpo_recursive(uint64_t a, uint64_t b) {
  * @param a base number
  * @param b exponential number
  * @return res if the exponential number is >= 0
- * @return 0 if the exponential number is < 0 ( 0 representing NULL since
- * < 0 is an invalid exponential to use )
  */
 uint64_t binExpo_iterative(uint64_t a, uint64_t b) {
     /*!
@@ -84,9 +78,6 @@ uint64_t binExpo_iterative(uint64_t a, uint64_t b) {
      * if so res is multiplied by the current value of a, for that iteration.
      * Additionally, a is multiplied by itself and b is halved by itself.
      */
-    if (b < 0) {
-        return 0;
-    }
     uint64_t res = 1;
     while (b > 0) {  // if b is not a valid exponent
         if (b % 2) {
@@ -111,7 +102,7 @@ static void tests() {
     assert(math::binExpo_recursive(3, 7) == 2187);
     assert(math::binExpo_recursive(31, 5) == 28629151);
     assert(math::binExpo_recursive(0, 0) == 1);
-    assert(math::binExpo_recursive(1, -20) == 0);
+    assert(math::binExpo_recursive(1, 20) == 0);
 
     assert(math::binExpo_iterative(1, 0) == 1);
     assert(math::binExpo_iterative(746584, 0) == 1);
@@ -120,7 +111,7 @@ static void tests() {
     assert(math::binExpo_iterative(3, 7) == 2187);
     assert(math::binExpo_iterative(31, 5) == 28629151);
     assert(math::binExpo_iterative(0, 0) == 1);
-    assert(math::binExpo_iterative(1, -20) == 0);
+    assert(math::binExpo_iterative(1, 20) == 0);
     std::cout << "All tests have successfully passed!" << std::endl;
 }
 
