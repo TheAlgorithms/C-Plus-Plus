@@ -43,7 +43,7 @@ namespace math {
  * @return (res * res * a) if modulo 2 of exponential is 0
  * @return (res * res) if modulo 2 of exponential is 1
  */
-uint64_t binExpo_recursive(int64_t a, int64_t b) {
+uint64_t binExpo_recursive(uint64_t a, uint64_t b) {
     /*!
      * Provided that b != 0, this function recursively calls itself, until an
      * instance of it returns 1 (which eventually occurs due to b/2 for each
@@ -77,7 +77,7 @@ uint64_t binExpo_recursive(int64_t a, int64_t b) {
  * @return 0 if the exponential number is < 0 ( 0 representing NULL since
  * < 0 is an invalid exponential to use )
  */
-uint64_t binExpo_iterative(int64_t a, int64_t b) {
+uint64_t binExpo_iterative(uint64_t a, uint64_t b) {
     /*!
      * Provided b > 0, this function iteratively multiples the value res. Each
      * iteration of the while loop, checks if the exponential number is binary,
