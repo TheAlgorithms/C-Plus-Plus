@@ -7,6 +7,7 @@
  * positive integer. https://www.mathsisfun.com/numbers/factorial.html
  *
  * @author [Divyajyoti Ukirde](https://github.com/divyajyotiuk)
+ * @author [ewd00010](https://github.com/ewd00010)
  */
 #include <cassert>   /// for assert
 #include <iostream>  /// for cout
