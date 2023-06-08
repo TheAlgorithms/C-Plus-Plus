@@ -29,6 +29,9 @@
 #include <iostream>  /// for IO operations
 
 /**
+ * @namespace math
+ * @brief Mathematical algorithms
+ *
  * @namespace binomial
  * @brief Functions for [Binomial
  * coefficients](https://en.wikipedia.org/wiki/Binomial_coefficient)
