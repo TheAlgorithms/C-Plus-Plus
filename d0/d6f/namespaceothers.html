@@ -97,12 +97,24 @@ $(document).ready(function(){initNavTree('d0/d6f/namespaceothers.html','../../')
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">others Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>for <code>vector</code>  
 <a href="../../d0/d6f/namespaceothers.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aa17dc6d061dff34f6b9a610bc5e26703"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6f/namespaceothers.html#aa17dc6d061dff34f6b9a610bc5e26703">are_almost_equal</a> (double a, double b, double absolute_tolerance=0.0001)</td></tr>
+<tr class="memdesc:aa17dc6d061dff34f6b9a610bc5e26703"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../de/d4a/class_compare.html" title="Comparator class for priority queue.">Compare</a> two floating point numbers with a certain tolerance. This is needed as with some values, the result (e.g.: -196.15) might be a bit lower (in this case, -196.499999...).  <br /></td></tr>
+<tr class="separator:aa17dc6d061dff34f6b9a610bc5e26703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48677fae5d683070432b1a905722d9ec"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6f/namespaceothers.html#a48677fae5d683070432b1a905722d9ec">kelvin_to_celsius</a> (double temperature_in_k)</td></tr>
+<tr class="memdesc:a48677fae5d683070432b1a905722d9ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversion from Kelvin to Celsius algorithm.  <br /></td></tr>
+<tr class="separator:a48677fae5d683070432b1a905722d9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>for <code>vector</code> </p>
 <p>for vector</p>
@@ -114,7 +126,93 @@ $(document).ready(function(){initNavTree('d0/d6f/namespaceothers.html','../../')
 <p>Other algorithms</p>
 <p>for assert for I/O operations</p>
 <p>Other algorithms </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="aa17dc6d061dff34f6b9a610bc5e26703" name="aa17dc6d061dff34f6b9a610bc5e26703"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa17dc6d061dff34f6b9a610bc5e26703">&#9670;&#160;</a></span>are_almost_equal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool others::are_almost_equal </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>absolute_tolerance</em> = <code>0.0001</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../de/d4a/class_compare.html" title="Comparator class for priority queue.">Compare</a> two floating point numbers with a certain tolerance. This is needed as with some values, the result (e.g.: -196.15) might be a bit lower (in this case, -196.499999...). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>the first number to compare </td></tr>
+    <tr><td class="paramname">b</td><td>the second number to compare </td></tr>
+    <tr><td class="paramname">tolerance</td><td>the tolerance to use when comparing the numbers </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the numbers ARE equal within the given tolerance </dd>
+<dd>
+false if the numbers are NOT equal within the given tolerance otherwise </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>                                                                              {</div>
+<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">return</span> std::abs(a - b) &lt; absolute_tolerance;</div>
+<div class="line"><span class="lineno">   42</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a48677fae5d683070432b1a905722d9ec" name="a48677fae5d683070432b1a905722d9ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48677fae5d683070432b1a905722d9ec">&#9670;&#160;</a></span>kelvin_to_celsius()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double others::kelvin_to_celsius </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>temperature_in_k</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Conversion from Kelvin to Celsius algorithm. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">number</td><td>the Celsius number that will be used to convert </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the Kelvin number converted to Celsius </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   49</span>                                                  {</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> absolute_zero_in_c = -273.15;</div>
+<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">if</span> (temperature_in_k &lt; absolute_zero_in_c) {</div>
+<div class="line"><span class="lineno">   52</span>        <span class="keywordflow">throw</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a>(<span class="stringliteral">&quot;input temperature below absolute zero&quot;</span>);</div>
+<div class="line"><span class="lineno">   53</span>    }</div>
+<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">return</span> temperature_in_k + absolute_zero_in_c;</div>
+<div class="line"><span class="lineno">   55</span>}</div>
+<div class="ttc" id="ainvalid_argument_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

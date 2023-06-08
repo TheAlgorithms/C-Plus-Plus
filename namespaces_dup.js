@@ -91,7 +91,7 @@ var namespaces_dup =
       [ "InverseFastFourierTransform", "d1/de0/namespacenumerical__methods.html#aee56dc85997b8cd42bad71a5d6bd2d93", null ]
     ] ],
     [ "operations_on_datastructures", "da/d6d/namespaceoperations__on__datastructures.html", "da/d6d/namespaceoperations__on__datastructures" ],
-    [ "others", "d0/d6f/namespaceothers.html", null ],
+    [ "others", "d0/d6f/namespaceothers.html", "d0/d6f/namespaceothers" ],
     [ "palindrome_partitioning", "d5/d89/namespacepalindrome__partitioning.html", null ],
     [ "pancake_sort", "df/d10/namespacepancake__sort.html", null ],
     [ "physics", "d5/dd0/namespacephysics.html", null ],

@@ -1,0 +1,6 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,42,55,68"/>
+<area shape="rect" id="node2" href="$db/d6b/kelvin__to__celsius_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e" title="Self&#45;test implementations." alt="" coords="103,42,153,68"/>
+<area shape="rect" id="node3" href="$d0/d6f/namespaceothers.html#aa17dc6d061dff34f6b9a610bc5e26703" title="Compare two floating point numbers with a certain tolerance. This is needed as with some values,..." alt="" coords="219,5,348,46"/>
+<area shape="rect" id="node4" href="$d0/d6f/namespaceothers.html#a48677fae5d683070432b1a905722d9ec" title="Conversion from Kelvin to Celsius algorithm." alt="" coords="201,70,366,96"/>
+</map>

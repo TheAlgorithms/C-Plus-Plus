@@ -8,6 +8,7 @@ var dir_9510827d0b234b3cc54b29892f217477 =
     [ "happy_number.cpp", "db/df3/happy__number_8cpp.html", "db/df3/happy__number_8cpp" ],
     [ "iterative_tree_traversals.cpp", "d8/d90/iterative__tree__traversals_8cpp.html", "d8/d90/iterative__tree__traversals_8cpp" ],
     [ "kadanes3.cpp", "de/dcd/kadanes3_8cpp.html", "de/dcd/kadanes3_8cpp" ],
+    [ "kelvin_to_celsius.cpp", "db/d6b/kelvin__to__celsius_8cpp.html", "db/d6b/kelvin__to__celsius_8cpp" ],
     [ "lru_cache.cpp", "d3/db3/lru__cache_8cpp.html", "d3/db3/lru__cache_8cpp" ],
     [ "matrix_exponentiation.cpp", "d7/d35/matrix__exponentiation_8cpp.html", "d7/d35/matrix__exponentiation_8cpp" ],
     [ "palindrome_of_number.cpp", "da/d9a/palindrome__of__number_8cpp.html", "da/d9a/palindrome__of__number_8cpp" ],
