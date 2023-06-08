@@ -41,7 +41,7 @@ namespace math {
  * @return (res * res * a) if modulo 2 of exponential is 0
  * @return (res * res) if modulo 2 of exponential is 1
  */
-uint64_t binExpo_recursive(uint64_t a, uint64_t b) {
+int64_t binExpo_recursive(int64_t a, uint64_t b) {
     /*!
      * Provided that b != 0, this function recursively calls itself, until an
      * instance of it returns 1 (which eventually occurs due to b/2 for each
@@ -51,11 +51,13 @@ uint64_t binExpo_recursive(uint64_t a, uint64_t b) {
      * say, until a call to binExpo returns 1 ) and then assemble the dolls (
      * with each return, res gets exponentially bigger )
      */
-    if (b == 0) {
+    if (b == 0 || a == 1) {
         return 1;
+    } else if(b == 1 || a == 0){
+        return a;
     }
 
-    uint64_t res = binExpo_recursive(a, b / 2);
+    int64_t res = binExpo_recursive(a, b / 2);
     if (b % 2) {
         return res * res * a;
     } else {
@@ -71,20 +73,26 @@ uint64_t binExpo_recursive(uint64_t a, uint64_t b) {
  * @param b exponential number
  * @return res if the exponential number is >= 0
  */
-uint64_t binExpo_iterative(uint64_t a, uint64_t b) {
+int64_t binExpo_iterative(int64_t a, uint64_t b) {
     /*!
      * Provided b > 0, this function iteratively multiples the value res. Each
      * iteration of the while loop, checks if the exponential number is binary,
      * if so res is multiplied by the current value of a, for that iteration.
      * Additionally, a is multiplied by itself and b is halved by itself.
      */
-    uint64_t res = 1;
+    if (b == 0 || a == 1) {
+        return 1;
+    } else if(b == 1 || a == 0){
+        return a;
+    }
+    
+    int64_t res = 1;
     while (b > 0) {  // if b is not a valid exponent
         if (b % 2) {
             res = res * a;
         }
         a = a * a;
-        b /= 2;
+        b >>= 1;
     }
     return res;
 }
@@ -95,21 +103,23 @@ uint64_t binExpo_iterative(uint64_t a, uint64_t b) {
  * @returns void
  */
 static void tests() {
+    assert(math::binExpo_recursive(0, 1) == 0);
     assert(math::binExpo_recursive(1, 0) == 1);
     assert(math::binExpo_recursive(746584, 0) == 1);
     assert(math::binExpo_recursive(1, 1) == 1);
     assert(math::binExpo_recursive(2938374, 1) == 2938374);
     assert(math::binExpo_recursive(3, 7) == 2187);
-    assert(math::binExpo_recursive(31, 5) == 28629151);
+    assert(math::binExpo_recursive(-31, 5) == -28629151);
     assert(math::binExpo_recursive(0, 0) == 1);
     assert(math::binExpo_recursive(1, 20) == 0);
 
+    assert(math::binExpo_iterative(0, 1) == 0);
     assert(math::binExpo_iterative(1, 0) == 1);
     assert(math::binExpo_iterative(746584, 0) == 1);
     assert(math::binExpo_iterative(1, 1) == 1);
     assert(math::binExpo_iterative(2938374, 1) == 2938374);
     assert(math::binExpo_iterative(3, 7) == 2187);
-    assert(math::binExpo_iterative(31, 5) == 28629151);
+    assert(math::binExpo_iterative(-31, 5) == -28629151);
     assert(math::binExpo_iterative(0, 0) == 1);
     assert(math::binExpo_iterative(1, 20) == 0);
     std::cout << "All tests have successfully passed!" << std::endl;
