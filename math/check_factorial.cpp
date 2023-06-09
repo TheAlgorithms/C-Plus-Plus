@@ -44,7 +44,7 @@ bool is_factorial(uint64_t n) {
      * if n was the sum of a factorial then it should be divided until it
      * becomes 1
      */
-    return (n == 1)
+    return (n == 1);
 }
 }  // namespace math
 
