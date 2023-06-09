@@ -1,7 +1,7 @@
 /**
  * @file
  * @brief
- * The Boyer–Moore algorithm searches for occurrences of pattern P in text T by
+ * The [Boyer–Moore](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm) algorithm searches for occurrences of pattern P in text T by
  * performing explicit character comparisons at different alignments. Instead of
  * a brute-force search of all alignments (of which there are n - m + 1),
  * Boyer–Moore uses information gained by preprocessing P to skip as many
