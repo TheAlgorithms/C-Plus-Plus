@@ -22,6 +22,7 @@
  * skipping \f$2^1\f$ and \f$2^4\f$.
  *
  * @author [Mann Mehta](https://github.com/mann2108)
+ * @author [ewd00010](https://github.com/ewd00010)
  */
 
 #include <cassert>   /// for assert
