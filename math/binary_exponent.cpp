@@ -112,7 +112,7 @@ static void tests() {
     assert(math::binExpo_recursive(3, 7) == 2187);
     assert(math::binExpo_recursive(-31, 5) == -28629151);
     assert(math::binExpo_recursive(0, 0) == 1);
-    assert(math::binExpo_recursive(1, 20) == 0);
+    assert(math::binExpo_recursive(1, 20) == 1);
 
     assert(math::binExpo_iterative(0, 1) == 0);
     assert(math::binExpo_iterative(1, 0) == 1);
@@ -122,7 +122,7 @@ static void tests() {
     assert(math::binExpo_iterative(3, 7) == 2187);
     assert(math::binExpo_iterative(-31, 5) == -28629151);
     assert(math::binExpo_iterative(0, 0) == 1);
-    assert(math::binExpo_iterative(1, 20) == 0);
+    assert(math::binExpo_iterative(1, 20) == 1);
     std::cout << "All tests have successfully passed!" << std::endl;
 }
 
