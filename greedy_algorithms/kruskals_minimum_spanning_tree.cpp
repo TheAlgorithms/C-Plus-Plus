@@ -16,7 +16,6 @@
  * doesn’t generate a cycle in MST structure.
  *
  * @author [coleman2246](https://github.com/coleman2246)
- * @author [David Leal](https://github.com/Panqusito7)
  */
 
 #include <array>     /// for array
