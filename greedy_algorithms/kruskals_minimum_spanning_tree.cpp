@@ -19,8 +19,8 @@
  * @author [David Leal](https://github.com/Panqusito7)
  */
 
-#include <array>      /// for array
-#include <iostream>   /// for IO operations
+#include <array>     /// for array
+#include <iostream>  /// for IO operations
 
 /**
  * @namespace
@@ -34,7 +34,8 @@ namespace greedy_algorithms {
  * @returns void
  */
 template <typename T>
-void findMinimumEdge(const int &infinity, const std::array<std::array<T, 6>, 6> &graph) {
+void findMinimumEdge(const int &infinity,
+                     const std::array<std::array<T, 6>, 6> &graph) {
     for (int i = 0; i < graph.size(); i++) {
         int min = infinity;
         int minIndex = 0;
