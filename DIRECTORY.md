@@ -292,6 +292,7 @@
   * [Happy Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/happy_number.cpp)
   * [Iterative Tree Traversals](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/iterative_tree_traversals.cpp)
   * [Kadanes3](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/kadanes3.cpp)
+  * [Kelvin To Celsius](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/kelvin_to_celsius.cpp)
   * [Lru Cache](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/lru_cache.cpp)
   * [Matrix Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/matrix_exponentiation.cpp)
   * [Palindrome Of Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/palindrome_of_number.cpp)

@@ -44,6 +44,7 @@ add_subdirectory(numerical_methods)
 add_subdirectory(graph)
 add_subdirectory(divide_and_conquer)
 add_subdirectory(games)
+add_subdirectory(cpu_scheduling_algorithms)
 
 cmake_policy(SET CMP0054 NEW)
 cmake_policy(SET CMP0057 NEW)
