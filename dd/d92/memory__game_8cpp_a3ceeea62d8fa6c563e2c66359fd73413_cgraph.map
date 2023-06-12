@@ -1,0 +1,15 @@
+<map id="games::memory_game::assign_results" name="games::memory_game::assign_results">
+<area shape="rect" id="node1" title="Function to assign the results to the table." alt="" coords="5,315,160,355"/>
+<area shape="rect" id="node2" href="$dd/d92/memory__game_8cpp.html#a5714d97649c0edd57b4fb449799676a3" title="Function that asks the user for their input in the table they previously chose." alt="" coords="208,208,362,249"/>
+<area shape="rect" id="node4" href="$dd/d92/memory__game_8cpp.html#ac589ef65abb0a6b9a7116ee0f9fd5280" title="Utility function to print the table." alt="" coords="410,29,564,70"/>
+<area shape="rect" id="node6" href="$dd/d92/memory__game_8cpp.html#ad573c8ae66ab66156d03e5e81bbba214" title="Initializes the table with the letters." alt="" coords="208,315,362,355"/>
+<area shape="rect" id="node12" href="$dd/d92/memory__game_8cpp.html#a370760f2b328ad341bcb77d82fa17b01" title="Checks if the two values given by the user match." alt="" coords="208,404,362,445"/>
+<area shape="rect" id="node13" href="$dd/d92/memory__game_8cpp.html#a5bdc30951221eae9c33413ff9eb574f6" title="for sleep()" alt="" coords="253,469,317,495"/>
+<area shape="rect" id="node3" href="$dd/d92/memory__game_8cpp.html#a33167bb9cce6d527b478b4f6ae8c3f59" title="Utility function to verify if the given input is a number or not. This is very useful to prevent the ..." alt="" coords="410,119,564,159"/>
+<area shape="rect" id="node5" href="$dd/d92/memory__game_8cpp.html#adc62ebb75853446656e24932bdc6dd6b" title="Utility function that resets the data if the user enters an invalid value." alt="" coords="410,208,564,249"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " alt="" coords="426,273,548,299"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " alt="" coords="431,322,543,348"/>
+<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="410,372,564,397"/>
+<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/random_shuffle.html#" title=" " alt="" coords="444,421,530,447"/>
+<area shape="rect" id="node11" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="430,470,545,496"/>
+</map>

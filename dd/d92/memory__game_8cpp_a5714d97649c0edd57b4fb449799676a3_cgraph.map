@@ -1,0 +1,6 @@
+<map id="games::memory_game::ask_data" name="games::memory_game::ask_data">
+<area shape="rect" id="node1" title="Function that asks the user for their input in the table they previously chose." alt="" coords="5,164,160,205"/>
+<area shape="rect" id="node2" href="$dd/d92/memory__game_8cpp.html#a33167bb9cce6d527b478b4f6ae8c3f59" title="Utility function to verify if the given input is a number or not. This is very useful to prevent the ..." alt="" coords="208,29,362,70"/>
+<area shape="rect" id="node3" href="$dd/d92/memory__game_8cpp.html#ac589ef65abb0a6b9a7116ee0f9fd5280" title="Utility function to print the table." alt="" coords="208,119,362,159"/>
+<area shape="rect" id="node4" href="$dd/d92/memory__game_8cpp.html#adc62ebb75853446656e24932bdc6dd6b" title="Utility function that resets the data if the user enters an invalid value." alt="" coords="208,208,362,249"/>
+</map>

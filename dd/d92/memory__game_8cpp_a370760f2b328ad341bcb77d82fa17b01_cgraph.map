@@ -1,0 +1,3 @@
+<map id="games::memory_game::match" name="games::memory_game::match">
+<area shape="rect" id="node1" title="Checks if the two values given by the user match." alt="" coords="5,29,160,70"/>
+</map>

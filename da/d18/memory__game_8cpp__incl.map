@@ -1,0 +1,10 @@
+<map id="games/memory_game.cpp" name="games/memory_game.cpp">
+<area shape="rect" id="node1" title="A simple Memory Game with 3 different sizes and multiple letters." alt="" coords="212,5,388,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,79,80,105"/>
+<area shape="rect" id="node3" title=" " alt="" coords="104,79,163,105"/>
+<area shape="rect" id="node4" title=" " alt="" coords="187,79,240,105"/>
+<area shape="rect" id="node5" title=" " alt="" coords="264,79,336,105"/>
+<area shape="rect" id="node6" title=" " alt="" coords="360,79,424,105"/>
+<area shape="rect" id="node7" title=" " alt="" coords="449,79,506,105"/>
+<area shape="rect" id="node8" title=" " alt="" coords="530,79,598,105"/>
+</map>

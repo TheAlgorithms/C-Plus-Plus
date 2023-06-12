@@ -1,0 +1,3 @@
+<map id="games::memory_game::is_number" name="games::memory_game::is_number">
+<area shape="rect" id="node1" title="Utility function to verify if the given input is a number or not. This is very useful to prevent the ..." alt="" coords="5,29,160,70"/>
+</map>
