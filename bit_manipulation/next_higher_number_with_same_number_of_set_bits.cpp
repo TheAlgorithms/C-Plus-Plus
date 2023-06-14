@@ -28,14 +28,14 @@ namespace bit_manipulation {
  * @returns a number
  */
 
-int next_higher_number(int x)
+uint64_t next_higher_number(uint64_t x)
 {
  
-  int rightOne;
-  int nextHigherOneBit;
-  int rightOnesPattern;
+  uint64_t rightOne;
+  uint64_t nextHigherOneBit;
+  uint64_t rightOnesPattern;
  
-  int next = 0;
+  uint64_t next = 0;
  
   if(x)
   {
