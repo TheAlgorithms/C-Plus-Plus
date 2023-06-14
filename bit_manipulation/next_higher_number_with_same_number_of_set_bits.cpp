@@ -23,8 +23,8 @@
  */
 namespace bit_manipulation {
 /**
- * @brief The main function implements check next numbet
- * @param x is the number who's next number will be calculated
+ * @brief The main function implements checking the next number
+ * @param x the number that will be calculated
  * @returns a number
  */
 
