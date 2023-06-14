@@ -90,7 +90,8 @@ static void test() {
     assert(bit_manipulation::next_higher_number(97) == 98);
     // x = 1024 return 2048
     assert(bit_manipulation::next_higher_number(1024) == 2048);
-    std::cout << "All test cases successfully passed!" << std::endl;
+
+    std::cout << "All test cases have successfully passed!" << std::endl;
 }
 /**
  * @brief Main function
