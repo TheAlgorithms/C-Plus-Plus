@@ -50,7 +50,7 @@ uint64_t iterativeFactorial(uint8_t n) {
     // 1 because it is the identity number of multiplication.
     uint64_t accumulator = 1;
 
-    while (n > 0) {
+    while (n > 1) {
         accumulator *= n;
         --n;
     }
