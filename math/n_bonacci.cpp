@@ -15,10 +15,9 @@
  * @author [Swastika Gupta](https://github.com/Swastyy)
  */
 
-#include <algorithm>  /// for std::is_equal, std::swap
-#include <cassert>    /// for assert
-#include <iostream>   /// for IO operations
-#include <vector>     /// for std::vector
+#include <cassert>   /// for assert
+#include <iostream>  /// for std::cout
+#include <vector>    /// for std::vector
 
 /**
  * @namespace math
@@ -39,10 +38,17 @@ namespace n_bonacci {
  * @returns the n-bonacci sequence as vector array
  */
 std::vector<uint64_t> N_bonacci(const uint64_t &n, const uint64_t &m) {
-    std::vector<uint64_t> a(m, 0);  // we create an empty array of size m
+    std::vector<uint64_t> a(
+        m, 0);  // we create an array of size m filled with zeros
+    if (m < n || n == 0) {
+        return a;
+    }
 
     a[n - 1] = 1;  /// we initialise the (n-1)th term as 1 which is the sum of
                    /// preceding N zeros
+    if (n == m) {
+        return a;
+    }
     a[n] = 1;  /// similarily the sum of preceding N zeros and the (N+1)th 1 is
                /// also 1
     for (uint64_t i = n + 1; i < m; i++) {
@@ -61,55 +67,33 @@ std::vector<uint64_t> N_bonacci(const uint64_t &n, const uint64_t &m) {
  * @returns void
  */
 static void test() {
-    // n = 1 m = 1 return [1, 1]
-    std::cout << "1st test";
-    std::vector<uint64_t> arr1 = math::n_bonacci::N_bonacci(
-        1, 1);  // first input is the param n and second one is the param m for
-                // N-bonacci func
-    std::vector<uint64_t> output_array1 = {
-        1, 1};  // It is the expected output series of length m
-    assert(std::equal(std::begin(arr1), std::end(arr1),
-                      std::begin(output_array1)));
-    std::cout << "passed" << std::endl;
+    struct TestCase {
+        const uint64_t n;
+        const uint64_t m;
+        const std::vector<uint64_t> expected;
+        TestCase(const uint64_t in_n, const uint64_t in_m,
+                 std::initializer_list<uint64_t> data)
+            : n(in_n), m(in_m), expected(data) {
+            assert(data.size() == m);
+        }
+    };
+    const std::vector<TestCase> test_cases = {
+        TestCase(0, 0, {}),
+        TestCase(0, 1, {0}),
+        TestCase(0, 2, {0, 0}),
+        TestCase(1, 0, {}),
+        TestCase(1, 1, {1}),
+        TestCase(1, 2, {1, 1}),
+        TestCase(1, 3, {1, 1, 1}),
+        TestCase(5, 15, {0, 0, 0, 0, 1, 1, 2, 4, 8, 16, 31, 61, 120, 236, 464}),
+        TestCase(
+            6, 17,
+            {0, 0, 0, 0, 0, 1, 1, 2, 4, 8, 16, 32, 63, 125, 248, 492, 976}),
+        TestCase(56, 15, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0})};
 
-    // n = 5 m = 15 return [0, 0, 0, 0, 1, 1, 2, 4, 8, 16, 31, 61, 120, 236,
-    // 464]
-    std::cout << "2nd test";
-    std::vector<uint64_t> arr2 = math::n_bonacci::N_bonacci(
-        5, 15);  // first input is the param n and second one is the param m for
-                 // N-bonacci func
-    std::vector<uint64_t> output_array2 = {
-        0, 0,  0,  0,  1,   1,   2,  4,
-        8, 16, 31, 61, 120, 236, 464};  // It is the expected output series of
-                                        // length m
-    assert(std::equal(std::begin(arr2), std::end(arr2),
-                      std::begin(output_array2)));
-    std::cout << "passed" << std::endl;
-
-    // n = 6 m = 17 return [0, 0, 0, 0, 0, 1, 1, 2, 4, 8, 16, 32, 63, 125, 248,
-    // 492, 976]
-    std::cout << "3rd test";
-    std::vector<uint64_t> arr3 = math::n_bonacci::N_bonacci(
-        6, 17);  // first input is the param n and second one is the param m for
-                 // N-bonacci func
-    std::vector<uint64_t> output_array3 = {
-        0, 0,  0,  0,  0,   1,   1,   2,  4,
-        8, 16, 32, 63, 125, 248, 492, 976};  // It is the expected output series
-                                             // of length m
-    assert(std::equal(std::begin(arr3), std::end(arr3),
-                      std::begin(output_array3)));
-    std::cout << "passed" << std::endl;
-
-    // n = 56 m = 15 return [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    std::cout << "4th test";
-    std::vector<uint64_t> arr4 = math::n_bonacci::N_bonacci(
-        56, 15);  // first input is the param n and second one is the param m
-                  // for N-bonacci func
-    std::vector<uint64_t> output_array4 = {
-        0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0};  // It is the expected output series of length m
-    assert(std::equal(std::begin(arr4), std::end(arr4),
-                      std::begin(output_array4)));
+    for (const auto &tc : test_cases) {
+        assert(math::n_bonacci::N_bonacci(tc.n, tc.m) == tc.expected);
+    }
     std::cout << "passed" << std::endl;
 }
 
