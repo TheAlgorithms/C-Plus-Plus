@@ -6,22 +6,12 @@
 <!-- Title: others::recursive_tree_traversals::BT Pages: 1 -->
 <svg width="135pt" height="194pt"
  viewBox="0.00 0.00 135.25 194.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 190)">
 <title>others::recursive_tree_traversals::BT</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="BT used to make the entire structure of the binary tree and the functions associated with the binary ...">
+<g id="a_node1"><a xlink:title="BT used to make the entire structure of the binary tree and the functions associated with the binary ...">
 <polygon fill="#999999" stroke="#666666" points="112.75,-30.5 2.25,-30.5 2.25,0 112.75,0 112.75,-30.5"/>
 <text text-anchor="start" x="10.25" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">others::recursive_tree</text>
 <text text-anchor="middle" x="57.5" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">_traversals::BT</text>
@@ -29,59 +19,38 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="115,-119.5 0,-119.5 0,-100.25 115,-100.25 115,-119.5"/>
 <text text-anchor="middle" x="57.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; uint64_t &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node2&#45;&gt;Node1</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M57.5,-89.05C57.5,-71.52 57.5,-46.36 57.5,-30.67"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="54,-88.99 57.5,-98.99 61,-88.99 54,-88.99"/>
-</a>
-</g>
-<text text-anchor="middle" x="92.38" y="-72.75" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> inorder_result</text>
-<text text-anchor="middle" x="92.38" y="-61.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">postorder_result</text>
-<text text-anchor="middle" x="92.38" y="-50.25" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">preorder_result</text>
+<text text-anchor="middle" x="92.38" y="-72.75" font-family="Helvetica,sans-Serif" font-size="10.00"> inorder_result</text>
+<text text-anchor="middle" x="92.38" y="-61.5" font-family="Helvetica,sans-Serif" font-size="10.00">postorder_result</text>
+<text text-anchor="middle" x="92.38" y="-50.25" font-family="Helvetica,sans-Serif" font-size="10.00">preorder_result</text>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/types/integer.html" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/types/integer.html" xlink:title=" ">
 <polygon fill="white" stroke="#bfbfbf" points="92.5,-186 22.5,-186 22.5,-166.75 92.5,-166.75 92.5,-186"/>
 <text text-anchor="middle" x="57.5" y="-172.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::uint64_t</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
-<g id="edge2_Node000002_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node3&#45;&gt;Node2</title>
-<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M57.5,-155.65C57.5,-143.68 57.5,-128.98 57.5,-119.77"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="54,-155.41 57.5,-165.41 61,-155.41 54,-155.41"/>
-</a>
-</g>
-<text text-anchor="middle" x="78.88" y="-139.25" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> elements</text>
+<text text-anchor="middle" x="78.88" y="-139.25" font-family="Helvetica,sans-Serif" font-size="10.00"> elements</text>
 </g>
 </g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

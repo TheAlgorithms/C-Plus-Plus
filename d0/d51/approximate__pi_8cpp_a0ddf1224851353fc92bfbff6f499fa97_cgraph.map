@@ -1,13 +1,7 @@
 <map id="main" name="main">
-<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,55,55,80"/>
-<area shape="rect" id="Node000002" href="$d0/d51/approximate__pi_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,55,146,80"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,65,88,65,88,70,55,70"/>
-<area shape="rect" id="Node000003" href="$dd/d47/namespacemath.html#abf7f2a6d91f1ca6c89698792aea3f188" title=" " alt="" coords="198,5,344,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,57,193,40,212,33,213,39,195,45,147,62"/>
-<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="236,55,307,80"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="146,65,221,65,221,70,146,70"/>
-<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="194,104,348,130"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="147,73,195,90,213,96,212,102,193,95,146,78"/>
-<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="396,5,512,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="345,16,381,16,381,21,345,21"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,55,55,80"/>
+<area shape="rect" id="node2" href="$d0/d51/approximate__pi_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,55,146,80"/>
+<area shape="rect" id="node3" href="$dd/d47/namespacemath.html#abf7f2a6d91f1ca6c89698792aea3f188" title=" " alt="" coords="198,5,344,31"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="236,55,307,80"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="194,104,348,130"/>
 </map>

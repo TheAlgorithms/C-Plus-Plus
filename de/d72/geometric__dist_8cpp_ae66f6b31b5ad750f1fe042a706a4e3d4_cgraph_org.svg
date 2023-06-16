@@ -9,36 +9,33 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 481.5)">
 <title>main</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Main function.">
+<g id="a_node1"><a xlink:title="Main function.">
 <polygon fill="#999999" stroke="#666666" points="37,-275.25 0,-275.25 0,-256 37,-256 37,-275.25"/>
 <text text-anchor="middle" x="18.5" y="-261.75" font-family="Helvetica,sans-Serif" font-size="10.00">main</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../de/d72/geometric__dist_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" target="_top" xlink:title="Self&#45;test implementations.">
+<g id="a_node2"><a xlink:href="../../de/d72/geometric__dist_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" target="_top" xlink:title="Self&#45;test implementations.">
 <polygon fill="white" stroke="#666666" points="105.5,-275.25 73,-275.25 73,-256 105.5,-256 105.5,-275.25"/>
 <text text-anchor="middle" x="89.25" y="-261.75" font-family="Helvetica,sans-Serif" font-size="10.00">test</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M37.2,-265.62C44.67,-265.62 53.52,-265.62 61.73,-265.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="61.71,-269.13 71.71,-265.62 61.71,-262.13 61.71,-269.13"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a08328dc7d62188427111f176b56a105a" target="_top" xlink:title="The cumulative distribution function.">
+<g id="a_node3"><a xlink:href="../../da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a08328dc7d62188427111f176b56a105a" target="_top" xlink:title="The cumulative distribution function.">
 <polygon fill="white" stroke="#666666" points="454,-477.5 315.75,-477.5 315.75,-435.75 454,-435.75 454,-477.5"/>
 <text text-anchor="start" x="323.75" y="-464" font-family="Helvetica,sans-Serif" font-size="10.00">probability::geometric</text>
 <text text-anchor="start" x="323.75" y="-452.75" font-family="Helvetica,sans-Serif" font-size="10.00">_dist::geometric_distribution</text>
@@ -47,36 +44,30 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2_Node000002_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M91.63,-275.66C96.57,-309.88 114.49,-421.08 141.5,-442.62 186.57,-478.57 252.66,-480.11 304.45,-473.74"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="304.83,-477.08 314.27,-472.27 303.89,-470.14 304.83,-477.08"/>
-</a>
-</g>
 </g>
 <!-- Node5 -->
-<g id="Node000005" class="node">
+<g id="node5" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="411.62,-275.25 358.12,-275.25 358.12,-256 411.62,-256 411.62,-275.25"/>
 <text text-anchor="middle" x="384.88" y="-261.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node5 -->
-<g id="edge4_Node000002_Node000005" class="edge">
+<g id="edge4" class="edge">
 <title>Node2&#45;&gt;Node5</title>
-<g id="a_edge4_Node000002_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M105.62,-265.62C150.48,-265.62 282.14,-265.62 346.96,-265.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="346.88,-269.13 356.88,-265.62 346.88,-262.13 346.88,-269.13"/>
-</a>
-</g>
 </g>
 <!-- Node6 -->
-<g id="Node000006" class="node">
+<g id="node6" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="../../da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a41051365f8ac7700f2ed5880a6760413" target="_top" xlink:title="The expected value of a geometrically distributed random variable X.">
+<g id="a_node6"><a xlink:href="../../da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a41051365f8ac7700f2ed5880a6760413" target="_top" xlink:title="The expected value of a geometrically distributed random variable X.">
 <polygon fill="white" stroke="#666666" points="454,-237.5 315.75,-237.5 315.75,-195.75 454,-195.75 454,-237.5"/>
 <text text-anchor="start" x="323.75" y="-224" font-family="Helvetica,sans-Serif" font-size="10.00">probability::geometric</text>
 <text text-anchor="start" x="323.75" y="-212.75" font-family="Helvetica,sans-Serif" font-size="10.00">_dist::geometric_distribution</text>
@@ -85,18 +76,15 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node6 -->
-<g id="edge5_Node000002_Node000006" class="edge">
+<g id="edge5" class="edge">
 <title>Node2&#45;&gt;Node6</title>
-<g id="a_edge5_Node000002_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M105.62,-263.06C142.08,-256.98 235.87,-241.32 304.51,-229.87"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="305.01,-233.17 314.3,-228.07 303.86,-226.26 305.01,-233.17"/>
-</a>
-</g>
 </g>
 <!-- Node7 -->
-<g id="Node000007" class="node">
+<g id="node7" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="../../da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aaf762e88c66918d7afda4234f28a7ddf" target="_top" xlink:title="The inverse cumulative distribution function.">
+<g id="a_node7"><a xlink:href="../../da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aaf762e88c66918d7afda4234f28a7ddf" target="_top" xlink:title="The inverse cumulative distribution function.">
 <polygon fill="white" stroke="#666666" points="648.5,-287.5 490,-287.5 490,-245.75 648.5,-245.75 648.5,-287.5"/>
 <text text-anchor="start" x="498" y="-274" font-family="Helvetica,sans-Serif" font-size="10.00">probability::geometric</text>
 <text text-anchor="start" x="498" y="-262.75" font-family="Helvetica,sans-Serif" font-size="10.00">_dist::geometric_distribution</text>
@@ -105,18 +93,15 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node7 -->
-<g id="edge6_Node000002_Node000007" class="edge">
+<g id="edge6" class="edge">
 <title>Node2&#45;&gt;Node7</title>
-<g id="a_edge6_Node000002_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M105.75,-270.89C115.81,-274.06 129.27,-277.81 141.5,-279.62 278.89,-300.06 315.52,-295.47 454,-284.62 462.16,-283.99 470.63,-283.09 479.08,-282.04"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="479.31,-285.41 488.77,-280.64 478.4,-278.47 479.31,-285.41"/>
-</a>
-</g>
 </g>
 <!-- Node9 -->
-<g id="Node000009" class="node">
+<g id="node9" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="../../da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aee973db9f0435e0cb4cc70f8eb3447a1" target="_top" xlink:title="The probability density function.">
+<g id="a_node9"><a xlink:href="../../da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aee973db9f0435e0cb4cc70f8eb3447a1" target="_top" xlink:title="The probability density function.">
 <polygon fill="white" stroke="#666666" points="279.75,-373.5 141.5,-373.5 141.5,-331.75 279.75,-331.75 279.75,-373.5"/>
 <text text-anchor="start" x="149.5" y="-360" font-family="Helvetica,sans-Serif" font-size="10.00">probability::geometric</text>
 <text text-anchor="start" x="149.5" y="-348.75" font-family="Helvetica,sans-Serif" font-size="10.00">_dist::geometric_distribution</text>
@@ -125,18 +110,15 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node9 -->
-<g id="edge8_Node000002_Node000009" class="edge">
+<g id="edge8" class="edge">
 <title>Node2&#45;&gt;Node9</title>
-<g id="a_edge8_Node000002_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M98.17,-275.36C107.63,-286.56 124.34,-305.02 141.5,-317.62 145.4,-320.49 149.57,-323.25 153.86,-325.88"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="151.95,-329.4 162.36,-331.4 155.47,-323.35 151.95,-329.4"/>
-</a>
-</g>
 </g>
 <!-- Node10 -->
-<g id="Node000010" class="node">
+<g id="node10" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="../../da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a4620163a196709484225774d87de6d69" target="_top" xlink:title="This function computes the probability to have success in a given range of tries.">
+<g id="a_node10"><a xlink:href="../../da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a4620163a196709484225774d87de6d69" target="_top" xlink:title="This function computes the probability to have success in a given range of tries.">
 <polygon fill="white" stroke="#666666" points="279.75,-433.5 141.5,-433.5 141.5,-391.75 279.75,-391.75 279.75,-433.5"/>
 <text text-anchor="start" x="149.5" y="-420" font-family="Helvetica,sans-Serif" font-size="10.00">probability::geometric</text>
 <text text-anchor="start" x="149.5" y="-408.75" font-family="Helvetica,sans-Serif" font-size="10.00">_dist::geometric_distribution</text>
@@ -145,36 +127,30 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node10 -->
-<g id="edge10_Node000002_Node000010" class="edge">
+<g id="edge10" class="edge">
 <title>Node2&#45;&gt;Node10</title>
-<g id="a_edge10_Node000002_Node000010"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M92.04,-275.47C96.51,-297.48 110.17,-351.23 141.5,-382.62 142.2,-383.33 142.92,-384.01 143.65,-384.68"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="141.09,-387.9 151.12,-391.31 145.4,-382.39 141.09,-387.9"/>
-</a>
-</g>
 </g>
 <!-- Node12 -->
-<g id="Node000012" class="node">
+<g id="node12" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="../../de/d72/geometric__dist_8cpp.html#a70fd1cc5c3a2813f28683dc75dcd65b6" target="_top" xlink:title="Tests the sampling method of the geometric distribution.">
+<g id="a_node12"><a xlink:href="../../de/d72/geometric__dist_8cpp.html#a70fd1cc5c3a2813f28683dc75dcd65b6" target="_top" xlink:title="Tests the sampling method of the geometric distribution.">
 <polygon fill="white" stroke="#666666" points="245.25,-185.25 176,-185.25 176,-166 245.25,-166 245.25,-185.25"/>
 <text text-anchor="middle" x="210.62" y="-171.75" font-family="Helvetica,sans-Serif" font-size="10.00">sample_test</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node12 -->
-<g id="edge13_Node000002_Node000012" class="edge">
+<g id="edge13" class="edge">
 <title>Node2&#45;&gt;Node12</title>
-<g id="a_edge13_Node000002_Node000012"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M96.9,-255.9C105.84,-243.4 122.79,-221.65 141.5,-207.62 150.6,-200.81 161.38,-194.93 171.65,-190.14"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="172.94,-192.95 180.67,-185.71 170.11,-186.55 172.94,-192.95"/>
-</a>
-</g>
 </g>
 <!-- Node16 -->
-<g id="Node000016" class="node">
+<g id="node16" class="node">
 <title>Node16</title>
-<g id="a_Node000016"><a xlink:href="../../da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aea8b0d649f0dc9a6f8baf3341a0b4960" target="_top" xlink:title="The variance of a geometrically distributed random variable X.">
+<g id="a_node16"><a xlink:href="../../da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aea8b0d649f0dc9a6f8baf3341a0b4960" target="_top" xlink:title="The variance of a geometrically distributed random variable X.">
 <polygon fill="white" stroke="#666666" points="454,-79.5 315.75,-79.5 315.75,-37.75 454,-37.75 454,-79.5"/>
 <text text-anchor="start" x="323.75" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">probability::geometric</text>
 <text text-anchor="start" x="323.75" y="-54.75" font-family="Helvetica,sans-Serif" font-size="10.00">_dist::geometric_distribution</text>
@@ -183,18 +159,15 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node16 -->
-<g id="edge25_Node000002_Node000016" class="edge">
+<g id="edge25" class="edge">
 <title>Node2&#45;&gt;Node16</title>
-<g id="a_edge25_Node000002_Node000016"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M92.32,-255.76C97.21,-234.72 111.43,-185.08 141.5,-156.62 166.08,-133.37 244.27,-103.95 305.27,-83.44"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="306.29,-86.46 314.67,-79.98 304.07,-79.82 306.29,-86.46"/>
-</a>
-</g>
 </g>
 <!-- Node17 -->
-<g id="Node000017" class="node">
+<g id="node17" class="node">
 <title>Node17</title>
-<g id="a_Node000017"><a xlink:href="../../da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a0a10c512e13dd3a052e1c6d7f4d6f0f2" target="_top" xlink:title="The standard deviation of a geometrically distributed random variable X.">
+<g id="a_node17"><a xlink:href="../../da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a0a10c512e13dd3a052e1c6d7f4d6f0f2" target="_top" xlink:title="The standard deviation of a geometrically distributed random variable X.">
 <polygon fill="white" stroke="#666666" points="279.75,-79.5 141.5,-79.5 141.5,-37.75 279.75,-37.75 279.75,-79.5"/>
 <text text-anchor="start" x="149.5" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">probability::geometric</text>
 <text text-anchor="start" x="149.5" y="-54.75" font-family="Helvetica,sans-Serif" font-size="10.00">_dist::geometric_distribution</text>
@@ -203,108 +176,84 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node17 -->
-<g id="edge22_Node000002_Node000017" class="edge">
+<g id="edge22" class="edge">
 <title>Node2&#45;&gt;Node17</title>
-<g id="a_edge22_Node000002_Node000017"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M91.3,-255.77C94.52,-229.39 106.31,-155.84 141.5,-107.62 147.3,-99.67 154.79,-92.51 162.66,-86.26"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="164.35,-88.63 170.3,-79.86 160.18,-83 164.35,-88.63"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/pow.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/pow.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="596,-422.25 542.5,-422.25 542.5,-403 596,-403 596,-422.25"/>
 <text text-anchor="middle" x="569.25" y="-408.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::pow</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
-<g id="edge3_Node000003_Node000004" class="edge">
+<g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M454.3,-440.12C480.59,-433.77 509.57,-426.78 531.73,-421.44"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="532.43,-424.63 541.33,-418.88 530.78,-417.82 532.43,-424.63"/>
-</a>
-</g>
 </g>
 <!-- Node8 -->
-<g id="Node000008" class="node">
+<g id="node8" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/log.html#" xlink:title=" ">
+<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/log.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="732.75,-276.25 684.5,-276.25 684.5,-257 732.75,-257 732.75,-276.25"/>
 <text text-anchor="middle" x="708.62" y="-262.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::log</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node8 -->
-<g id="edge7_Node000007_Node000008" class="edge">
+<g id="edge7" class="edge">
 <title>Node7&#45;&gt;Node8</title>
-<g id="a_edge7_Node000007_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M648.97,-266.62C657.49,-266.62 665.8,-266.62 673.35,-266.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="673.18,-270.13 683.18,-266.62 673.18,-263.13 673.18,-270.13"/>
-</a>
-</g>
 </g>
 <!-- Node9&#45;&gt;Node4 -->
-<g id="edge9_Node000009_Node000004" class="edge">
+<g id="edge9" class="edge">
 <title>Node9&#45;&gt;Node4</title>
-<g id="a_edge9_Node000009_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M280.23,-361.7C328.86,-368.41 395.59,-378.16 454,-388.62 479.94,-393.27 509.01,-399.39 531.33,-404.29"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="530.5,-407.91 541.02,-406.65 532.01,-401.07 530.5,-407.91"/>
-</a>
-</g>
 </g>
 <!-- Node10&#45;&gt;Node3 -->
-<g id="edge11_Node000010_Node000003" class="edge">
+<g id="edge11" class="edge">
 <title>Node10&#45;&gt;Node3</title>
-<g id="a_edge11_Node000010_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M280.2,-430.14C288.22,-432.19 296.46,-434.29 304.61,-436.38"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="303.7,-440.01 314.26,-439.1 305.43,-433.23 303.7,-440.01"/>
-</a>
-</g>
 </g>
 <!-- Node11 -->
-<g id="Node000011" class="node">
+<g id="node11" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/types/numeric_limits/max.html#" xlink:title=" ">
+<g id="a_node11"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/types/numeric_limits/max.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="446.5,-417.25 323.25,-417.25 323.25,-398 446.5,-398 446.5,-417.25"/>
 <text text-anchor="middle" x="384.88" y="-403.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::numeric_limits::max</text>
 </a>
 </g>
 </g>
 <!-- Node10&#45;&gt;Node11 -->
-<g id="edge12_Node000010_Node000011" class="edge">
+<g id="edge12" class="edge">
 <title>Node10&#45;&gt;Node11</title>
-<g id="a_edge12_Node000010_Node000011"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M280.2,-410.63C290.64,-410.33 301.45,-410.02 311.96,-409.71"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="311.89,-413.19 321.78,-409.4 311.69,-406.19 311.89,-413.19"/>
-</a>
-</g>
 </g>
 <!-- Node12&#45;&gt;Node5 -->
-<g id="edge18_Node000012_Node000005" class="edge">
+<g id="edge18" class="edge">
 <title>Node12&#45;&gt;Node5</title>
-<g id="a_edge18_Node000012_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M223.34,-185.53C241.84,-200.72 279.44,-229.74 315.75,-246.62 325.67,-251.24 336.93,-254.94 347.4,-257.81"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="346.38,-261.41 356.94,-260.5 348.11,-254.63 346.38,-261.41"/>
-</a>
-</g>
 </g>
 <!-- Node12&#45;&gt;Node6 -->
-<g id="edge19_Node000012_Node000006" class="edge">
+<g id="edge19" class="edge">
 <title>Node12&#45;&gt;Node6</title>
-<g id="a_edge19_Node000012_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M245.66,-183.73C262.68,-187.78 284.06,-192.87 304.88,-197.82"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="303.82,-201.41 314.36,-200.32 305.44,-194.6 303.82,-201.41"/>
-</a>
-</g>
 </g>
 <!-- Node13 -->
-<g id="Node000013" class="node">
+<g id="node13" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:href="../../da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a8aae1cebcf42ed2332f1c7217c401aa3" target="_top" xlink:title="Generates a (discrete) sample according to the geometrical distribution.">
+<g id="a_node13"><a xlink:href="../../da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a8aae1cebcf42ed2332f1c7217c401aa3" target="_top" xlink:title="Generates a (discrete) sample according to the geometrical distribution.">
 <polygon fill="white" stroke="#666666" points="454,-177.5 315.75,-177.5 315.75,-135.75 454,-135.75 454,-177.5"/>
 <text text-anchor="start" x="323.75" y="-164" font-family="Helvetica,sans-Serif" font-size="10.00">probability::geometric</text>
 <text text-anchor="start" x="323.75" y="-152.75" font-family="Helvetica,sans-Serif" font-size="10.00">_dist::geometric_distribution</text>
@@ -313,54 +262,42 @@
 </g>
 </g>
 <!-- Node12&#45;&gt;Node13 -->
-<g id="edge14_Node000012_Node000013" class="edge">
+<g id="edge14" class="edge">
 <title>Node12&#45;&gt;Node13</title>
-<g id="a_edge14_Node000012_Node000013"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M245.66,-171.87C262.6,-170 283.86,-167.66 304.59,-165.37"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="304.8,-168.76 314.36,-164.18 304.03,-161.8 304.8,-168.76"/>
-</a>
-</g>
 </g>
 <!-- Node15 -->
-<g id="Node000015" class="node">
+<g id="node15" class="node">
 <title>Node15</title>
-<g id="a_Node000015"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/resize.html#" xlink:title=" ">
+<g id="a_node15"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/resize.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="432.25,-117.25 337.5,-117.25 337.5,-98 432.25,-98 432.25,-117.25"/>
 <text text-anchor="middle" x="384.88" y="-103.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::resize</text>
 </a>
 </g>
 </g>
 <!-- Node12&#45;&gt;Node15 -->
-<g id="edge20_Node000012_Node000015" class="edge">
+<g id="edge20" class="edge">
 <title>Node12&#45;&gt;Node15</title>
-<g id="a_edge20_Node000012_Node000015"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M230.4,-165.61C250.94,-154.94 285.04,-138.04 315.75,-126.62 321.29,-124.57 327.15,-122.61 333.02,-120.79"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="333.94,-123.87 342.53,-117.67 331.95,-117.16 333.94,-123.87"/>
-</a>
-</g>
 </g>
 <!-- Node12&#45;&gt;Node16 -->
-<g id="edge21_Node000012_Node000016" class="edge">
+<g id="edge21" class="edge">
 <title>Node12&#45;&gt;Node16</title>
-<g id="a_edge21_Node000012_Node000016"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M233.29,-165.64C247.42,-158.5 265.78,-147.98 279.75,-135.62 299.46,-118.2 295.06,-104.88 315.75,-88.62 317.02,-87.63 318.33,-86.65 319.67,-85.71"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="321.34,-88.16 327.9,-79.84 317.58,-82.25 321.34,-88.16"/>
-</a>
-</g>
 </g>
 <!-- Node13&#45;&gt;Node7 -->
-<g id="edge17_Node000013_Node000007" class="edge">
+<g id="edge17" class="edge">
 <title>Node13&#45;&gt;Node7</title>
-<g id="a_edge17_Node000013_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M437.01,-177.83C442.82,-180.62 448.59,-183.58 454,-186.62 481.45,-202.08 510.5,-222.48 532.44,-238.82"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="529.98,-242.1 540.08,-245.31 534.19,-236.51 529.98,-242.1"/>
-</a>
-</g>
 </g>
 <!-- Node14 -->
-<g id="Node000014" class="node">
+<g id="node14" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="../../de/d72/geometric__dist_8cpp.html#a82964ca6180507deb5fafc71050012ba" target="_top" xlink:title="Returns a random number between [0,1].">
+<g id="a_node14"><a xlink:href="../../de/d72/geometric__dist_8cpp.html#a82964ca6180507deb5fafc71050012ba" target="_top" xlink:title="Returns a random number between [0,1].">
 <polygon fill="white" stroke="#666666" points="628.25,-171.88 510.25,-171.88 510.25,-141.38 628.25,-141.38 628.25,-171.88"/>
 <text text-anchor="start" x="518.25" y="-158.38" font-family="Helvetica,sans-Serif" font-size="10.00">probability::geometric</text>
 <text text-anchor="middle" x="569.25" y="-147.12" font-family="Helvetica,sans-Serif" font-size="10.00">_dist::generate_uniform</text>
@@ -368,49 +305,37 @@
 </g>
 </g>
 <!-- Node13&#45;&gt;Node14 -->
-<g id="edge15_Node000013_Node000014" class="edge">
+<g id="edge15" class="edge">
 <title>Node13&#45;&gt;Node14</title>
-<g id="a_edge15_Node000013_Node000014"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M454.3,-156.62C468.88,-156.62 484.29,-156.62 498.9,-156.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="498.89,-160.13 508.89,-156.62 498.89,-153.13 498.89,-160.13"/>
-</a>
-</g>
 </g>
 <!-- Node14&#45;&gt;Node14 -->
-<g id="edge16_Node000014_Node000014" class="edge">
+<g id="edge16" class="edge">
 <title>Node14&#45;&gt;Node14</title>
-<g id="a_edge16_Node000014_Node000014"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M544.55,-172.36C539.51,-181.43 547.74,-189.88 569.25,-189.88 581.35,-189.88 589.24,-187.2 592.94,-183.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="596.51,-183.64 593.95,-173.36 589.54,-183 596.51,-183.64"/>
-</a>
-</g>
 </g>
 <!-- Node17&#45;&gt;Node16 -->
-<g id="edge24_Node000017_Node000016" class="edge">
+<g id="edge24" class="edge">
 <title>Node17&#45;&gt;Node16</title>
-<g id="a_edge24_Node000017_Node000016"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M280.2,-58.62C288.13,-58.62 296.27,-58.62 304.34,-58.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="304.26,-62.13 314.26,-58.62 304.26,-55.13 304.26,-62.13"/>
-</a>
-</g>
 </g>
 <!-- Node18 -->
-<g id="Node000018" class="node">
+<g id="node18" class="node">
 <title>Node18</title>
-<g id="a_Node000018"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" xlink:title=" ">
+<g id="a_node18"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="410.88,-19.25 358.88,-19.25 358.88,0 410.88,0 410.88,-19.25"/>
 <text text-anchor="middle" x="384.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::sqrt</text>
 </a>
 </g>
 </g>
 <!-- Node17&#45;&gt;Node18 -->
-<g id="edge23_Node000017_Node000018" class="edge">
+<g id="edge23" class="edge">
 <title>Node17&#45;&gt;Node18</title>
-<g id="a_edge23_Node000017_Node000018"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M280.21,-38.77C292.06,-35.37 304.26,-31.88 315.75,-28.62 326.27,-25.64 337.72,-22.44 348.17,-19.52"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="348.93,-22.66 357.63,-16.61 347.05,-15.92 348.93,-22.66"/>
-</a>
-</g>
 </g>
 </g>
 </svg>

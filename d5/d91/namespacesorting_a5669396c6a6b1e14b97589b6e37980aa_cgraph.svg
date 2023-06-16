@@ -6,50 +6,22 @@
 <!-- Title: sorting::shell_sort Pages: 1 -->
 <svg width="101pt" height="45pt"
  viewBox="0.00 0.00 101.25 45.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 41.25)">
 <title>sorting::shell_sort</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="93.25,-19.25 0,-19.25 0,0 93.25,0 93.25,-19.25"/>
 <text text-anchor="middle" x="46.62" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">sorting::shell_sort</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node1 -->
-<g id="edge1_Node000001_Node000001" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node1</title>
-<g id="a_edge1_Node000001_Node000001"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M32.03,-19.54C25.37,-28.15 30.23,-37.25 46.62,-37.25 55.85,-37.25 61.42,-34.37 63.35,-30.32"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="66.59,-29.67 61.22,-20.54 59.72,-31.03 66.59,-29.67"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

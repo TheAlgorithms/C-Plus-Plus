@@ -6,22 +6,12 @@
 <!-- Title: bit_manipulation::count_of_trailing_ciphers_in_factorial_n::numberOfCiphersInFactorialN Pages: 1 -->
 <svg width="165pt" height="79pt"
  viewBox="0.00 0.00 165.00 79.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 75)">
 <title>bit_manipulation::count_of_trailing_ciphers_in_factorial_n::numberOfCiphersInFactorialN</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Function to count the number of the trailing ciphers.">
+<g id="a_node1"><a xlink:title="Function to count the number of the trailing ciphers.">
 <polygon fill="#999999" stroke="#666666" points="157,-53 0,-53 0,0 157,0 157,-53"/>
 <text text-anchor="start" x="8" y="-39.5" font-family="Helvetica,sans-Serif" font-size="10.00">bit_manipulation::count</text>
 <text text-anchor="start" x="8" y="-28.25" font-family="Helvetica,sans-Serif" font-size="10.00">_of_trailing_ciphers_in</text>
@@ -31,28 +21,10 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node1 -->
-<g id="edge1_Node000001_Node000001" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node1</title>
-<g id="a_edge1_Node000001_Node000001"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M49.09,-53.44C48.46,-63.11 58.26,-71 78.5,-71 90.83,-71 99.29,-68.07 103.87,-63.59"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="107.47,-65.02 107.91,-54.44 100.96,-62.44 107.47,-65.02"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

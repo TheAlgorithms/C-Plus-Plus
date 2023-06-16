@@ -6,77 +6,46 @@
 <!-- Title: qr_algorithm::vector_mag Pages: 1 -->
 <svg width="291pt" height="64pt"
  viewBox="0.00 0.00 291.25 64.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 60.25)">
 <title>qr_algorithm::vector_mag</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="126.25,-37.25 0,-37.25 0,-18 126.25,-18 126.25,-37.25"/>
 <text text-anchor="middle" x="63.12" y="-23.75" font-family="Helvetica,sans-Serif" font-size="10.00">qr_algorithm::vector_mag</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="248.75,-56.25 196.75,-56.25 196.75,-37 248.75,-37 248.75,-56.25"/>
 <text text-anchor="middle" x="222.75" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::sqrt</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M126.42,-35.13C146.47,-37.55 168.01,-40.15 185.53,-42.26"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="185.07,-45.85 195.41,-43.57 185.9,-38.9 185.07,-45.85"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../d2/d3b/namespaceqr__algorithm.html#a8ea313a1a1b5f9d0e3e332c29c6446ec" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="../../d2/d3b/namespaceqr__algorithm.html#a8ea313a1a1b5f9d0e3e332c29c6446ec" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="283.25,-19.25 162.25,-19.25 162.25,0 283.25,0 283.25,-19.25"/>
 <text text-anchor="middle" x="222.75" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">qr_algorithm::vector_dot</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2_Node000001_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M126.42,-20.51C134.56,-19.58 142.94,-18.62 151.2,-17.68"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="151.42,-21.06 160.96,-16.45 150.63,-14.11 151.42,-21.06"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

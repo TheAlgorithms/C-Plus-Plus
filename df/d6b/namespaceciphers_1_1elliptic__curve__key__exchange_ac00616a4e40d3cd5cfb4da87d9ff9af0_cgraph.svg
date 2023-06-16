@@ -6,22 +6,12 @@
 <!-- Title: ciphers::elliptic_curve_key_exchange::exp Pages: 1 -->
 <svg width="283pt" height="39pt"
  viewBox="0.00 0.00 282.50 38.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 34.5)">
 <title>ciphers::elliptic_curve_key_exchange::exp</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="This function calculates number raised to exponent power under modulo mod using Modular Exponentiatio...">
+<g id="a_node1"><a xlink:title="This function calculates number raised to exponent power under modulo mod using Modular Exponentiatio...">
 <polygon fill="#999999" stroke="#666666" points="110.5,-30.5 0,-30.5 0,0 110.5,0 110.5,-30.5"/>
 <text text-anchor="start" x="8" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">ciphers::elliptic_curve</text>
 <text text-anchor="middle" x="55.25" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">_key_exchange::exp</text>
@@ -29,55 +19,34 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../df/def/power__for__huge__numbers_8cpp.html#ae249a2af508aa94266023ce8aa81426f" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="../../df/def/power__for__huge__numbers_8cpp.html#ae249a2af508aa94266023ce8aa81426f" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="188.75,-24.88 146.5,-24.88 146.5,-5.63 188.75,-5.63 188.75,-24.88"/>
 <text text-anchor="middle" x="167.62" y="-11.38" font-family="Helvetica,sans-Serif" font-size="10.00">power</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M110.79,-15.25C119.16,-15.25 127.55,-15.25 135.18,-15.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="135.1,-18.75 145.1,-15.25 135.1,-11.75 135.1,-18.75"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../df/def/power__for__huge__numbers_8cpp.html#aa141a7904f0c4668bac112d652a3acf9" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="../../df/def/power__for__huge__numbers_8cpp.html#aa141a7904f0c4668bac112d652a3acf9" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="274.5,-24.88 224.75,-24.88 224.75,-5.63 274.5,-5.63 274.5,-24.88"/>
 <text text-anchor="middle" x="249.62" y="-11.38" font-family="Helvetica,sans-Serif" font-size="10.00">multiply</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2_Node000002_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M189.23,-15.25C196.61,-15.25 205.16,-15.25 213.43,-15.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="213.4,-18.75 223.4,-15.25 213.4,-11.75 213.4,-18.75"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

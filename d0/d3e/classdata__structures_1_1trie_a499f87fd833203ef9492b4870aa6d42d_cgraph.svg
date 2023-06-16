@@ -6,22 +6,12 @@
 <!-- Title: data_structures::trie::search Pages: 1 -->
 <svg width="337pt" height="76pt"
  viewBox="0.00 0.00 337.25 75.88" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 71.88)">
 <title>data_structures::trie::search</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="103,-45.88 0,-45.88 0,-15.37 103,-15.37 103,-45.88"/>
 <text text-anchor="start" x="8" y="-32.38" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::trie</text>
 <text text-anchor="middle" x="51.5" y="-21.12" font-family="Helvetica,sans-Serif" font-size="10.00">::search</text>
@@ -29,9 +19,9 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../d0/d3e/classdata__structures_1_1trie.html#aab373beb3f618b90922528c68797d988" target="_top" xlink:title="Convert a character to integer for indexing.">
+<g id="a_node2"><a xlink:href="../../d0/d3e/classdata__structures_1_1trie.html#aab373beb3f618b90922528c68797d988" target="_top" xlink:title="Convert a character to integer for indexing.">
 <polygon fill="white" stroke="#666666" points="242,-67.88 139,-67.88 139,-37.38 242,-37.38 242,-67.88"/>
 <text text-anchor="start" x="147" y="-54.38" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::trie</text>
 <text text-anchor="middle" x="190.5" y="-43.12" font-family="Helvetica,sans-Serif" font-size="10.00">::char_to_int</text>
@@ -39,64 +29,40 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M103.12,-38.75C111.18,-40.05 119.59,-41.4 127.87,-42.73"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="127.2,-46.33 137.63,-44.46 128.31,-39.41 127.2,-46.33"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="236.38,-19.25 144.62,-19.25 144.62,0 236.38,0 236.38,-19.25"/>
 <text text-anchor="middle" x="190.5" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::length</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge3_Node000001_Node000004" class="edge">
+<g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M103.12,-22.87C113.09,-21.34 123.59,-19.73 133.72,-18.18"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="134.15,-21.5 143.51,-16.52 133.09,-14.58 134.15,-21.5"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/program/exit.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/program/exit.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="329.25,-62.25 278,-62.25 278,-43 329.25,-43 329.25,-62.25"/>
 <text text-anchor="middle" x="303.62" y="-48.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::exit</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2_Node000002_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M242.18,-52.62C250.49,-52.62 258.95,-52.62 266.8,-52.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="266.78,-56.13 276.78,-52.62 266.78,-49.13 266.78,-56.13"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

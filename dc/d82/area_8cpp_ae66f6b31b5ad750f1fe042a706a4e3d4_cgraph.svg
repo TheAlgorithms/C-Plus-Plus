@@ -6,221 +6,166 @@
 <!-- Title: main Pages: 1 -->
 <svg width="289pt" height="323pt"
  viewBox="0.00 0.00 288.50 323.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 319.25)">
 <title>main</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Main function.">
+<g id="a_node1"><a xlink:title="Main function.">
 <polygon fill="#999999" stroke="#666666" points="37,-167.25 0,-167.25 0,-148 37,-148 37,-167.25"/>
 <text text-anchor="middle" x="18.5" y="-153.75" font-family="Helvetica,sans-Serif" font-size="10.00">main</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../dc/d82/area_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" target="_top" xlink:title="Self&#45;test implementations.">
+<g id="a_node2"><a xlink:href="../../dc/d82/area_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" target="_top" xlink:title="Self&#45;test implementations.">
 <polygon fill="white" stroke="#666666" points="105.5,-167.25 73,-167.25 73,-148 105.5,-148 105.5,-167.25"/>
 <text text-anchor="middle" x="89.25" y="-153.75" font-family="Helvetica,sans-Serif" font-size="10.00">test</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M37.2,-157.62C44.67,-157.62 53.52,-157.62 61.73,-157.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="61.71,-161.13 71.71,-157.62 61.71,-154.13 61.71,-161.13"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../dd/d47/namespacemath.html#a40e36c67da78d2131408c57ee091ad75" target="_top" xlink:title="area of a circle (pi">
+<g id="a_node3"><a xlink:href="../../dd/d47/namespacemath.html#a40e36c67da78d2131408c57ee091ad75" target="_top" xlink:title="area of a circle (pi">
 <polygon fill="white" stroke="#666666" points="256.5,-315.25 165.5,-315.25 165.5,-296 256.5,-296 256.5,-315.25"/>
 <text text-anchor="middle" x="211" y="-301.75" font-family="Helvetica,sans-Serif" font-size="10.00">math::circle_area</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2_Node000002_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M91.15,-167.47C93.92,-191.72 104.49,-254.76 141.5,-287.62 145.59,-291.26 150.33,-294.17 155.36,-296.5"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="153.73,-300.01 164.32,-300.32 156.24,-293.47 153.73,-300.01"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="../../dd/d47/namespacemath.html#abc46c784a297fc1d2eb8b33a327fba4c" target="_top" xlink:title="surface area of a cube ( 6 * (l">
+<g id="a_node4"><a xlink:href="../../dd/d47/namespacemath.html#abc46c784a297fc1d2eb8b33a327fba4c" target="_top" xlink:title="surface area of a cube ( 6 * (l">
 <polygon fill="white" stroke="#666666" points="274.12,-278.25 147.88,-278.25 147.88,-259 274.12,-259 274.12,-278.25"/>
 <text text-anchor="middle" x="211" y="-264.75" font-family="Helvetica,sans-Serif" font-size="10.00">math::cube_surface_area</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
-<g id="edge3_Node000002_Node000004" class="edge">
+<g id="edge3" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<g id="a_edge3_Node000002_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M92.85,-167.48C98.4,-186.57 113.29,-228.64 141.5,-250.62 142.77,-251.62 144.1,-252.55 145.46,-253.44"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="143.5,-256.9 153.97,-258.57 146.83,-250.74 143.5,-256.9"/>
-</a>
-</g>
 </g>
 <!-- Node5 -->
-<g id="Node000005" class="node">
+<g id="node5" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="../../dd/d47/namespacemath.html#ac5803413618fcfb922cb32c6db0fc864" target="_top" xlink:title="surface area of a cylinder (2 * pi * r * h + 2 * pi * r^2)">
+<g id="a_node5"><a xlink:href="../../dd/d47/namespacemath.html#ac5803413618fcfb922cb32c6db0fc864" target="_top" xlink:title="surface area of a cylinder (2 * pi * r * h + 2 * pi * r^2)">
 <polygon fill="white" stroke="#666666" points="280.5,-241.25 141.5,-241.25 141.5,-222 280.5,-222 280.5,-241.25"/>
 <text text-anchor="middle" x="211" y="-227.75" font-family="Helvetica,sans-Serif" font-size="10.00">math::cylinder_surface_area</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node5 -->
-<g id="edge4_Node000002_Node000005" class="edge">
+<g id="edge4" class="edge">
 <title>Node2&#45;&gt;Node5</title>
-<g id="a_edge4_Node000002_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M96.61,-167.53C105.25,-180.16 121.87,-201.77 141.5,-213.62 143.72,-214.97 146.04,-216.21 148.43,-217.36"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="146.97,-220.96 157.54,-221.59 149.67,-214.5 146.97,-220.96"/>
-</a>
-</g>
 </g>
 <!-- Node6 -->
-<g id="Node000006" class="node">
+<g id="node6" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="237.75,-204.25 184.25,-204.25 184.25,-185 237.75,-185 237.75,-204.25"/>
 <text text-anchor="middle" x="211" y="-190.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node6 -->
-<g id="edge5_Node000002_Node000006" class="edge">
+<g id="edge5" class="edge">
 <title>Node2&#45;&gt;Node6</title>
-<g id="a_edge5_Node000002_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M105.81,-163.85C115.9,-167.77 129.37,-172.79 141.5,-176.62 151.77,-179.87 163.03,-183 173.4,-185.72"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="172.25,-189.29 182.81,-188.38 173.99,-182.51 172.25,-189.29"/>
-</a>
-</g>
 </g>
 <!-- Node7 -->
-<g id="Node000007" class="node">
+<g id="node7" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="../../dd/d47/namespacemath.html#a5de184925e68658f15415dd53954df4f" target="_top" xlink:title="area of a parallelogram (b * h)">
+<g id="a_node7"><a xlink:href="../../dd/d47/namespacemath.html#a5de184925e68658f15415dd53954df4f" target="_top" xlink:title="area of a parallelogram (b * h)">
 <polygon fill="white" stroke="#666666" points="273.75,-167.25 148.25,-167.25 148.25,-148 273.75,-148 273.75,-167.25"/>
 <text text-anchor="middle" x="211" y="-153.75" font-family="Helvetica,sans-Serif" font-size="10.00">math::parallelogram_area</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node7 -->
-<g id="edge6_Node000002_Node000007" class="edge">
+<g id="edge6" class="edge">
 <title>Node2&#45;&gt;Node7</title>
-<g id="a_edge6_Node000002_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M105.91,-157.62C114.3,-157.62 125.32,-157.62 137.04,-157.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="136.95,-161.13 146.95,-157.62 136.95,-154.13 136.95,-161.13"/>
-</a>
-</g>
 </g>
 <!-- Node8 -->
-<g id="Node000008" class="node">
+<g id="node8" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="../../dd/d47/namespacemath.html#ab31d141f7c5b551746b1eee0eb4dedca" target="_top" xlink:title="area of a rectangle (l * w)">
+<g id="a_node8"><a xlink:href="../../dd/d47/namespacemath.html#ab31d141f7c5b551746b1eee0eb4dedca" target="_top" xlink:title="area of a rectangle (l * w)">
 <polygon fill="white" stroke="#666666" points="253.12,-130.25 168.88,-130.25 168.88,-111 253.12,-111 253.12,-130.25"/>
 <text text-anchor="middle" x="211" y="-116.75" font-family="Helvetica,sans-Serif" font-size="10.00">math::rect_area</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node8 -->
-<g id="edge7_Node000002_Node000008" class="edge">
+<g id="edge7" class="edge">
 <title>Node2&#45;&gt;Node8</title>
-<g id="a_edge7_Node000002_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M105.81,-151.4C115.9,-147.48 129.37,-142.46 141.5,-138.62 147,-136.89 152.78,-135.18 158.55,-133.56"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="159.16,-136.75 167.88,-130.73 157.31,-130 159.16,-136.75"/>
-</a>
-</g>
 </g>
 <!-- Node9 -->
-<g id="Node000009" class="node">
+<g id="node9" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="../../dd/d47/namespacemath.html#ab7f29862d30df351c317eedd60a0c656" target="_top" xlink:title="surface area of a sphere ( 4 * pi * r^2)">
+<g id="a_node9"><a xlink:href="../../dd/d47/namespacemath.html#ab7f29862d30df351c317eedd60a0c656" target="_top" xlink:title="surface area of a sphere ( 4 * pi * r^2)">
 <polygon fill="white" stroke="#666666" points="278.25,-93.25 143.75,-93.25 143.75,-74 278.25,-74 278.25,-93.25"/>
 <text text-anchor="middle" x="211" y="-79.75" font-family="Helvetica,sans-Serif" font-size="10.00">math::sphere_surface_area</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node9 -->
-<g id="edge8_Node000002_Node000009" class="edge">
+<g id="edge8" class="edge">
 <title>Node2&#45;&gt;Node9</title>
-<g id="a_edge8_Node000002_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M96.61,-147.72C105.25,-135.09 121.87,-113.48 141.5,-101.62 143.72,-100.28 146.04,-99.04 148.43,-97.89"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="149.67,-100.75 157.54,-93.66 146.97,-94.29 149.67,-100.75"/>
-</a>
-</g>
 </g>
 <!-- Node10 -->
-<g id="Node000010" class="node">
+<g id="node10" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="../../dd/d47/namespacemath.html#a971ce57e368f2f631cf1f4ff3f864049" target="_top" xlink:title="area of a square (l * l)">
+<g id="a_node10"><a xlink:href="../../dd/d47/namespacemath.html#a971ce57e368f2f631cf1f4ff3f864049" target="_top" xlink:title="area of a square (l * l)">
 <polygon fill="white" stroke="#666666" points="259.5,-56.25 162.5,-56.25 162.5,-37 259.5,-37 259.5,-56.25"/>
 <text text-anchor="middle" x="211" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">math::square_area</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node10 -->
-<g id="edge9_Node000002_Node000010" class="edge">
+<g id="edge9" class="edge">
 <title>Node2&#45;&gt;Node10</title>
-<g id="a_edge9_Node000002_Node000010"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M92.85,-147.77C98.4,-128.68 113.29,-86.61 141.5,-64.62 144.84,-62.02 148.52,-59.79 152.4,-57.88"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="153.42,-60.83 161.32,-53.77 150.74,-54.37 153.42,-60.83"/>
-</a>
-</g>
 </g>
 <!-- Node11 -->
-<g id="Node000011" class="node">
+<g id="node11" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="../../dd/d47/namespacemath.html#ab3b920cc56442abd92279ba23b50f4dc" target="_top" xlink:title="area of a triangle (b * h / 2)">
+<g id="a_node11"><a xlink:href="../../dd/d47/namespacemath.html#ab3b920cc56442abd92279ba23b50f4dc" target="_top" xlink:title="area of a triangle (b * h / 2)">
 <polygon fill="white" stroke="#666666" points="260.62,-19.25 161.38,-19.25 161.38,0 260.62,0 260.62,-19.25"/>
 <text text-anchor="middle" x="211" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">math::triangle_area</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node11 -->
-<g id="edge10_Node000002_Node000011" class="edge">
+<g id="edge10" class="edge">
 <title>Node2&#45;&gt;Node11</title>
-<g id="a_edge10_Node000002_Node000011"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M91.15,-147.78C93.92,-123.53 104.49,-60.49 141.5,-27.62 144.48,-24.98 147.8,-22.71 151.33,-20.78"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="152.4,-23.68 160.08,-16.38 149.52,-17.3 152.4,-23.68"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

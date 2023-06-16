@@ -6,77 +6,46 @@
 <!-- Title: uint256_t::operator* Pages: 1 -->
 <svg width="231pt" height="64pt"
  viewBox="0.00 0.00 230.50 64.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 60.25)">
 <title>uint256_t::operator*</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="operator * for uint256_t and other integer types.">
+<g id="a_node1"><a xlink:title="operator * for uint256_t and other integer types.">
 <polygon fill="#999999" stroke="#666666" points="100.75,-37.25 0,-37.25 0,-18 100.75,-18 100.75,-37.25"/>
 <text text-anchor="middle" x="50.38" y="-23.75" font-family="Helvetica,sans-Serif" font-size="10.00">uint256_t::operator*</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../db/d9a/classuint128__t.html#aa69e1064c0b0b1df1c61acd2ea04fabd" target="_top" xlink:title="returns lower 64&#45;bit integer part">
+<g id="a_node2"><a xlink:href="../../db/d9a/classuint128__t.html#aa69e1064c0b0b1df1c61acd2ea04fabd" target="_top" xlink:title="returns lower 64&#45;bit integer part">
 <polygon fill="white" stroke="#666666" points="222.12,-56.25 137.12,-56.25 137.12,-37 222.12,-37 222.12,-56.25"/>
 <text text-anchor="middle" x="179.62" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">uint128_t::lower</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M100.94,-35.03C109.19,-36.26 117.77,-37.54 126.09,-38.78"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="125.42,-42.37 135.82,-40.38 126.45,-35.45 125.42,-42.37"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../db/d9a/classuint128__t.html#a1ee2f1ffbd9984faad34883eb45e9705" target="_top" xlink:title="returns upper 64&#45;bit integer part">
+<g id="a_node3"><a xlink:href="../../db/d9a/classuint128__t.html#a1ee2f1ffbd9984faad34883eb45e9705" target="_top" xlink:title="returns upper 64&#45;bit integer part">
 <polygon fill="white" stroke="#666666" points="222.5,-19.25 136.75,-19.25 136.75,0 222.5,0 222.5,-19.25"/>
 <text text-anchor="middle" x="179.62" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">uint128_t::upper</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2_Node000001_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M100.94,-20.61C109.09,-19.46 117.57,-18.26 125.79,-17.1"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="126.01,-20.46 135.42,-15.6 125.03,-13.53 126.01,-20.46"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

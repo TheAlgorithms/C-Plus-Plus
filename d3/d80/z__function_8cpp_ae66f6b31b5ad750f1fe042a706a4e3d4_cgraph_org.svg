@@ -9,130 +9,109 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 99.25)">
 <title>main</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Main function.">
+<g id="a_node1"><a xlink:title="Main function.">
 <polygon fill="#999999" stroke="#666666" points="37,-57.25 0,-57.25 0,-38 37,-38 37,-57.25"/>
 <text text-anchor="middle" x="18.5" y="-43.75" font-family="Helvetica,sans-Serif" font-size="10.00">main</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../d3/d80/z__function_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" target="_top" xlink:title="Self&#45;test implementations.">
+<g id="a_node2"><a xlink:href="../../d3/d80/z__function_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" target="_top" xlink:title="Self&#45;test implementations.">
 <polygon fill="white" stroke="#666666" points="105.5,-57.25 73,-57.25 73,-38 105.5,-38 105.5,-57.25"/>
 <text text-anchor="middle" x="89.25" y="-43.75" font-family="Helvetica,sans-Serif" font-size="10.00">test</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M37.2,-47.62C44.67,-47.62 53.52,-47.62 61.73,-47.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="61.71,-51.13 71.71,-47.62 61.71,-44.13 61.71,-51.13"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../d3/d80/z__function_8cpp.html#ac186ca3ac3a69b5e52543bb13fe46db8" target="_top" xlink:title="Using Z_function to find a pattern in a text.">
+<g id="a_node3"><a xlink:href="../../d3/d80/z__function_8cpp.html#ac186ca3ac3a69b5e52543bb13fe46db8" target="_top" xlink:title="Using Z_function to find a pattern in a text.">
 <polygon fill="white" stroke="#666666" points="226.5,-57.25 141.5,-57.25 141.5,-38 226.5,-38 226.5,-57.25"/>
 <text text-anchor="middle" x="184" y="-43.75" font-family="Helvetica,sans-Serif" font-size="10.00">find_pat_in_text</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2_Node000002_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M105.98,-47.62C112.89,-47.62 121.44,-47.62 130.3,-47.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="130.18,-51.13 140.18,-47.62 130.18,-44.13 130.18,-51.13"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="378.25,-95.25 262.5,-95.25 262.5,-76 378.25,-76 378.25,-95.25"/>
 <text text-anchor="middle" x="320.38" y="-81.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::push_back</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
-<g id="edge3_Node000003_Node000004" class="edge">
+<g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M220.66,-57.71C236.88,-62.3 256.28,-67.78 273.57,-72.67"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="272.44,-76.27 283.02,-75.63 274.35,-69.54 272.44,-76.27"/>
-</a>
-</g>
 </g>
 <!-- Node5 -->
-<g id="Node000005" class="node">
+<g id="node5" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="497.75,-56.25 414.25,-56.25 414.25,-37 497.75,-37 497.75,-56.25"/>
 <text text-anchor="middle" x="456" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::size</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node5 -->
-<g id="edge4_Node000003_Node000005" class="edge">
+<g id="edge4" class="edge">
 <title>Node3&#45;&gt;Node5</title>
-<g id="a_edge4_Node000003_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M226.89,-47.47C274.36,-47.29 351.78,-47.01 403.05,-46.82"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="402.91,-50.31 412.9,-46.78 402.88,-43.31 402.91,-50.31"/>
-</a>
-</g>
 </g>
 <!-- Node6 -->
-<g id="Node000006" class="node">
+<g id="node6" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="../../d3/d80/z__function_8cpp.html#ac044c4794349a8cff6256b99950d5773" target="_top" xlink:title="for IO operations">
+<g id="a_node6"><a xlink:href="../../d3/d80/z__function_8cpp.html#ac044c4794349a8cff6256b99950d5773" target="_top" xlink:title="for IO operations">
 <polygon fill="white" stroke="#666666" points="351.25,-19.25 289.5,-19.25 289.5,0 351.25,0 351.25,-19.25"/>
 <text text-anchor="middle" x="320.38" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">Z_function</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node6 -->
-<g id="edge5_Node000003_Node000006" class="edge">
+<g id="edge5" class="edge">
 <title>Node3&#45;&gt;Node6</title>
-<g id="a_edge5_Node000003_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M220.66,-37.54C238.47,-32.51 260.1,-26.39 278.57,-21.17"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="279.35,-24.3 288.02,-18.21 277.45,-17.56 279.35,-24.3"/>
-</a>
-</g>
 </g>
 <!-- Node6&#45;&gt;Node5 -->
-<g id="edge7_Node000006_Node000005" class="edge">
+<g id="edge7" class="edge">
 <title>Node6&#45;&gt;Node5</title>
-<g id="a_edge7_Node000006_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M351.7,-18.02C368.38,-22.64 389.45,-28.47 408.19,-33.66"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="407.05,-37.26 417.62,-36.55 408.92,-30.51 407.05,-37.26"/>
-</a>
-</g>
 </g>
 <!-- Node7 -->
-<g id="Node000007" class="node">
+<g id="node7" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/min.html#" xlink:title=" ">
+<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/min.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="481.62,-19.25 430.38,-19.25 430.38,0 481.62,0 481.62,-19.25"/>
 <text text-anchor="middle" x="456" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::min</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node7 -->
-<g id="edge6_Node000006_Node000007" class="edge">
+<g id="edge6" class="edge">
 <title>Node6&#45;&gt;Node7</title>
-<g id="a_edge6_Node000006_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M351.7,-9.62C371.8,-9.62 398.26,-9.62 419.37,-9.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="419.16,-13.13 429.16,-9.62 419.16,-6.13 419.16,-13.13"/>
-</a>
-</g>
 </g>
 </g>
 </svg>

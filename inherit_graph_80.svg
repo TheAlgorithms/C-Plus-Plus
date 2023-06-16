@@ -9,9 +9,9 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 34.5)">
 <title>Graphical Class Hierarchy</title>
 <!-- Node0 -->
-<g id="Node000000" class="node">
+<g id="node1" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html" target="_top" xlink:title="A class to model the geometric distribution.">
+<g id="a_node1"><a xlink:href="da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html" target="_top" xlink:title="A class to model the geometric distribution.">
 <polygon fill="white" stroke="#666666" points="138.25,-30.5 0,-30.5 0,0 138.25,0 138.25,-30.5"/>
 <text text-anchor="start" x="8" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">probability::geometric</text>
 <text text-anchor="middle" x="69.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">_dist::geometric_distribution</text>

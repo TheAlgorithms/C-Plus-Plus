@@ -6,131 +6,88 @@
 <!-- Title: qr_algorithm::qr_decompose Pages: 1 -->
 <svg width="466pt" height="64pt"
  viewBox="0.00 0.00 466.25 64.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 60.25)">
 <title>qr_algorithm::qr_decompose</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="139,-37.25 0,-37.25 0,-18 139,-18 139,-37.25"/>
 <text text-anchor="middle" x="69.5" y="-23.75" font-family="Helvetica,sans-Serif" font-size="10.00">qr_algorithm::qr_decompose</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node1 -->
-<g id="edge1_Node000001_Node000001" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node1</title>
-<g id="a_edge1_Node000001_Node000001"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M43.1,-37.54C31.06,-46.15 39.86,-55.25 69.5,-55.25 87.1,-55.25 97.35,-52.04 100.26,-47.63"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="103.08,-46.33 95.9,-38.54 96.65,-49.11 103.08,-46.33"/>
-</a>
-</g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../d2/d3b/namespaceqr__algorithm.html#ad16da2183db22378435042f26af43d5f" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="../../d2/d3b/namespaceqr__algorithm.html#ad16da2183db22378435042f26af43d5f" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="301.25,-56.25 175,-56.25 175,-37 301.25,-37 301.25,-56.25"/>
 <text text-anchor="middle" x="238.12" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">qr_algorithm::vector_mag</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge2_Node000001_Node000002" class="edge">
+<g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge2_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M139.23,-35.46C147.4,-36.39 155.76,-37.35 163.98,-38.28"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="163.36,-41.85 173.69,-39.51 164.15,-34.9 163.36,-41.85"/>
-</a>
-</g>
 </g>
 <!-- Node5 -->
-<g id="Node000005" class="node">
+<g id="node5" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="../../d2/d3b/namespaceqr__algorithm.html#a6d3c7dce1f142141f509d09f6c0e25dc" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="../../d2/d3b/namespaceqr__algorithm.html#a6d3c7dce1f142141f509d09f6c0e25dc" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="299.75,-19.25 176.5,-19.25 176.5,0 299.75,0 299.75,-19.25"/>
 <text text-anchor="middle" x="238.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">qr_algorithm::vector_proj</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
-<g id="edge5_Node000001_Node000005" class="edge">
+<g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<g id="a_edge5_Node000001_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M139.23,-20.2C147.81,-19.27 156.59,-18.32 165.21,-17.39"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="165.45,-20.78 175.01,-16.23 164.69,-13.82 165.45,-20.78"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="423.75,-56.25 371.75,-56.25 371.75,-37 423.75,-37 423.75,-56.25"/>
 <text text-anchor="middle" x="397.75" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::sqrt</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge3_Node000002_Node000003" class="edge">
+<g id="edge3" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<g id="a_edge3_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M301.42,-46.62C321.47,-46.62 343.01,-46.62 360.53,-46.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="360.41,-50.13 370.41,-46.62 360.41,-43.13 360.41,-50.13"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="../../d2/d3b/namespaceqr__algorithm.html#a8ea313a1a1b5f9d0e3e332c29c6446ec" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="../../d2/d3b/namespaceqr__algorithm.html#a8ea313a1a1b5f9d0e3e332c29c6446ec" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="458.25,-19.25 337.25,-19.25 337.25,0 458.25,0 458.25,-19.25"/>
 <text text-anchor="middle" x="397.75" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">qr_algorithm::vector_dot</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
-<g id="edge4_Node000002_Node000004" class="edge">
+<g id="edge4" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<g id="a_edge4_Node000002_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M282.2,-36.51C301.05,-32.09 323.36,-26.85 343.27,-22.18"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="343.79,-25.42 352.73,-19.72 342.2,-18.6 343.79,-25.42"/>
-</a>
-</g>
 </g>
 <!-- Node5&#45;&gt;Node4 -->
-<g id="edge6_Node000005_Node000004" class="edge">
+<g id="edge6" class="edge">
 <title>Node5&#45;&gt;Node4</title>
-<g id="a_edge6_Node000005_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M300.07,-9.62C308.59,-9.62 317.42,-9.62 326.11,-9.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="326.01,-13.13 336.01,-9.62 326.01,-6.13 326.01,-13.13"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

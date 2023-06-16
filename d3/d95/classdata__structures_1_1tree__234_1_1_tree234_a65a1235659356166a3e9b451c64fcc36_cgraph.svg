@@ -6,22 +6,12 @@
 <!-- Title: data_structures::tree_234::Tree234::GetTreeMinItem Pages: 1 -->
 <svg width="348pt" height="88pt"
  viewBox="0.00 0.00 347.50 87.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 83.5)">
 <title>data_structures::tree_234::Tree234::GetTreeMinItem</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Get the min item of the tree.">
+<g id="a_node1"><a xlink:title="Get the min item of the tree.">
 <polygon fill="#999999" stroke="#666666" points="154.75,-54.5 0,-54.5 0,-24 154.75,-24 154.75,-54.5"/>
 <text text-anchor="start" x="8" y="-41" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="77.38" y="-29.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Tree234::GetTreeMinItem</text>
@@ -29,9 +19,9 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ac6f619a1605cb46196360889fff4529e" target="_top" xlink:title="Get leftmose child of the current node.">
+<g id="a_node2"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ac6f619a1605cb46196360889fff4529e" target="_top" xlink:title="Get leftmose child of the current node.">
 <polygon fill="white" stroke="#666666" points="339.5,-79.5 190.75,-79.5 190.75,-49 339.5,-49 339.5,-79.5"/>
 <text text-anchor="start" x="198.75" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="265.12" y="-54.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Node::GetLeftmostChild</text>
@@ -39,18 +29,15 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M155,-49.56C163.13,-50.66 171.43,-51.77 179.64,-52.88"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="178.99,-56.46 189.37,-54.32 179.92,-49.52 178.99,-56.46"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a5438d0a47850f520b2262b5a42f75b71" target="_top" xlink:title="get min item (leftmost) in the current node">
+<g id="a_node3"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a5438d0a47850f520b2262b5a42f75b71" target="_top" xlink:title="get min item (leftmost) in the current node">
 <polygon fill="white" stroke="#666666" points="326.75,-30.5 203.5,-30.5 203.5,0 326.75,0 326.75,-30.5"/>
 <text text-anchor="start" x="211.5" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="265.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Node::GetMinItem</text>
@@ -58,28 +45,10 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2_Node000001_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M155,-29.35C167.44,-27.74 180.29,-26.08 192.61,-24.49"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="192.8,-27.87 202.27,-23.11 191.9,-20.92 192.8,-27.87"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

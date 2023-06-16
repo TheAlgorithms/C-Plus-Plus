@@ -6,22 +6,12 @@
 <!-- Title: others/palindrome_of_number.cpp Pages: 1 -->
 <svg width="199pt" height="94pt"
  viewBox="0.00 0.00 198.50 93.75" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 89.75)">
 <title>others/palindrome_of_number.cpp</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Check if a number is palindrome or not.">
+<g id="a_node1"><a xlink:title="Check if a number is palindrome or not.">
 <polygon fill="#999999" stroke="#666666" points="154.25,-85.75 47.5,-85.75 47.5,-55.25 154.25,-55.25 154.25,-85.75"/>
 <text text-anchor="start" x="55.5" y="-72.25" font-family="Helvetica,sans-Serif" font-size="10.00">others/palindrome_of</text>
 <text text-anchor="middle" x="100.88" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">_number.cpp</text>
@@ -29,73 +19,49 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:title=" ">
+<g id="a_node2"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="55.75,-19.25 0,-19.25 0,0 55.75,0 55.75,-19.25"/>
 <text text-anchor="middle" x="27.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">algorithm</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M82.83,-54.95C72.14,-46.33 58.59,-35.4 47.62,-26.55"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="50.11,-23.25 40.13,-19.7 45.72,-28.7 50.11,-23.25"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:title=" ">
+<g id="a_node3"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="127.62,-19.25 74.12,-19.25 74.12,0 127.62,0 127.62,-19.25"/>
 <text text-anchor="middle" x="100.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">iostream</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2_Node000001_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M100.88,-54.95C100.88,-47.62 100.88,-38.62 100.88,-30.66"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="104.38,-30.7 100.88,-20.7 97.38,-30.7 104.38,-30.7"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:title=" ">
+<g id="a_node4"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="190.5,-19.25 145.25,-19.25 145.25,0 190.5,0 190.5,-19.25"/>
 <text text-anchor="middle" x="167.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">cstring</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge3_Node000001_Node000004" class="edge">
+<g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M117.44,-54.95C127.15,-46.41 139.44,-35.62 149.45,-26.81"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="151.34,-28.93 156.55,-19.7 146.72,-23.67 151.34,-28.93"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

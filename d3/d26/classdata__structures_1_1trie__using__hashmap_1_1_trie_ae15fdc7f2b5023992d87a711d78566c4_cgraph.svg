@@ -6,22 +6,12 @@
 <!-- Title: data_structures::trie_using_hashmap::Trie::predict_words Pages: 1 -->
 <svg width="420pt" height="75pt"
  viewBox="0.00 0.00 419.75 74.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 70.5)">
 <title>data_structures::trie_using_hashmap::Trie::predict_words</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="predict/recommend a word that starts with a given prefix">
+<g id="a_node1"><a xlink:title="predict/recommend a word that starts with a given prefix">
 <polygon fill="#999999" stroke="#666666" points="112,-48.5 0,-48.5 0,-6.75 112,-6.75 112,-48.5"/>
 <text text-anchor="start" x="8" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::trie</text>
 <text text-anchor="start" x="8" y="-23.75" font-family="Helvetica,sans-Serif" font-size="10.00">_using_hashmap::Trie</text>
@@ -30,9 +20,9 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#a7bbe538c8015e8ce158e7ed43f605ebd" target="_top" xlink:title="helper function to predict/recommend words that starts with a given prefix from the end of prefix&#39;s n...">
+<g id="a_node2"><a xlink:href="../../d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#a7bbe538c8015e8ce158e7ed43f605ebd" target="_top" xlink:title="helper function to predict/recommend words that starts with a given prefix from the end of prefix&#39;s n...">
 <polygon fill="white" stroke="#666666" points="260,-48.5 148,-48.5 148,-6.75 260,-6.75 260,-48.5"/>
 <text text-anchor="start" x="156" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::trie</text>
 <text text-anchor="start" x="156" y="-23.75" font-family="Helvetica,sans-Serif" font-size="10.00">_using_hashmap::Trie</text>
@@ -41,73 +31,46 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M112.2,-27.62C120.28,-27.62 128.68,-27.62 136.95,-27.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="136.73,-31.13 146.73,-27.62 136.73,-24.13 136.73,-31.13"/>
-</a>
-</g>
 </g>
 <!-- Node2&#45;&gt;Node2 -->
-<g id="edge2_Node000002_Node000002" class="edge">
+<g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node2</title>
-<g id="a_edge2_Node000002_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M176.68,-48.82C174.08,-58.3 183.19,-66.5 204,-66.5 216.36,-66.5 224.59,-63.61 228.69,-59.28"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="232.28,-60.37 231.32,-49.82 225.49,-58.66 232.28,-60.37"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/pop_back.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/pop_back.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="407.62,-56.25 300.12,-56.25 300.12,-37 407.62,-37 407.62,-56.25"/>
 <text text-anchor="middle" x="353.88" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::pop_back</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge3_Node000002_Node000003" class="edge">
+<g id="edge3" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<g id="a_edge3_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M260.48,-34.75C269.89,-35.96 279.73,-37.23 289.32,-38.46"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="288.65,-42.03 299.02,-39.83 289.55,-35.09 288.65,-42.03"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="411.75,-19.25 296,-19.25 296,0 411.75,0 411.75,-19.25"/>
 <text text-anchor="middle" x="353.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::push_back</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
-<g id="edge4_Node000002_Node000004" class="edge">
+<g id="edge4" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<g id="a_edge4_Node000002_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M260.48,-20.87C268.46,-19.9 276.75,-18.89 284.93,-17.9"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="285.1,-21.28 294.6,-16.6 284.25,-14.33 285.1,-21.28"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

@@ -9,9 +9,9 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 183.25)">
 <title>graph::RootedTree::RootedTree</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Constructs the tree by calculating parent for every vertex. Assumes a valid description of a tree is ...">
+<g id="a_node1"><a xlink:title="Constructs the tree by calculating parent for every vertex. Assumes a valid description of a tree is ...">
 <polygon fill="#999999" stroke="#666666" points="103,-104.88 0,-104.88 0,-74.38 103,-74.38 103,-104.88"/>
 <text text-anchor="start" x="8" y="-91.38" font-family="Helvetica,sans-Serif" font-size="10.00">graph::RootedTree::</text>
 <text text-anchor="middle" x="51.5" y="-80.12" font-family="Helvetica,sans-Serif" font-size="10.00">RootedTree</text>
@@ -19,9 +19,9 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../d0/d58/classgraph_1_1_rooted_tree.html#ae6928f3ebd491541e9570e746b877c1e" target="_top" xlink:title="Calculate the parents for all the vertices in the tree. Implements the breadth first search algorithm...">
+<g id="a_node2"><a xlink:href="../../d0/d58/classgraph_1_1_rooted_tree.html#ae6928f3ebd491541e9570e746b877c1e" target="_top" xlink:title="Calculate the parents for all the vertices in the tree. Implements the breadth first search algorithm...">
 <polygon fill="white" stroke="#666666" points="242,-104.88 139,-104.88 139,-74.38 242,-74.38 242,-104.88"/>
 <text text-anchor="start" x="147" y="-91.38" font-family="Helvetica,sans-Serif" font-size="10.00">graph::RootedTree::</text>
 <text text-anchor="middle" x="190.5" y="-80.12" font-family="Helvetica,sans-Serif" font-size="10.00">populate_parents</text>
@@ -29,54 +29,45 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M103.12,-89.62C111.18,-89.62 119.59,-89.62 127.87,-89.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="127.63,-93.13 137.63,-89.62 127.63,-86.13 127.63,-93.13"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/queue/empty.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/queue/empty.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="380.62,-179.25 285.88,-179.25 285.88,-160 380.62,-160 380.62,-179.25"/>
 <text text-anchor="middle" x="333.25" y="-165.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::queue::empty</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2_Node000002_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M209.68,-105.16C226.49,-118.9 252.65,-138.71 278,-151.62 280.74,-153.02 283.6,-154.34 286.53,-155.58"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="285.01,-159.14 295.6,-159.51 287.56,-152.62 285.01,-159.14"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/queue/front.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/queue/front.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="376.88,-142.25 289.62,-142.25 289.62,-123 376.88,-123 376.88,-142.25"/>
 <text text-anchor="middle" x="333.25" y="-128.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::queue::front</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
-<g id="edge3_Node000002_Node000004" class="edge">
+<g id="edge3" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<g id="a_edge3_Node000002_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M242.31,-105.15C257.65,-109.83 274.33,-114.93 289.11,-119.45"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="287.91,-123.04 298.49,-122.62 289.95,-116.35 287.91,-123.04"/>
-</a>
-</g>
 </g>
 <!-- Node5 -->
-<g id="Node000005" class="node">
+<g id="node5" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="../../dc/d61/classgraph_1_1_graph.html#a8930d1470d132b19e430d1c71f94c904" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="../../dc/d61/classgraph_1_1_graph.html#a8930d1470d132b19e430d1c71f94c904" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="388.5,-104.88 278,-104.88 278,-74.38 388.5,-74.38 388.5,-104.88"/>
 <text text-anchor="start" x="286" y="-91.38" font-family="Helvetica,sans-Serif" font-size="10.00">graph::Graph::number</text>
 <text text-anchor="middle" x="333.25" y="-80.12" font-family="Helvetica,sans-Serif" font-size="10.00">_of_vertices</text>
@@ -84,67 +75,55 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node5 -->
-<g id="edge4_Node000002_Node000005" class="edge">
+<g id="edge4" class="edge">
 <title>Node2&#45;&gt;Node5</title>
-<g id="a_edge4_Node000002_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M242.31,-89.62C250.31,-89.62 258.67,-89.62 266.93,-89.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="266.71,-93.13 276.71,-89.62 266.71,-86.13 266.71,-93.13"/>
-</a>
-</g>
 </g>
 <!-- Node7 -->
-<g id="Node000007" class="node">
+<g id="node7" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/queue/pop.html#" xlink:title=" ">
+<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/queue/pop.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="375,-56.25 291.5,-56.25 291.5,-37 375,-37 375,-56.25"/>
 <text text-anchor="middle" x="333.25" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::queue::pop</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node7 -->
-<g id="edge6_Node000002_Node000007" class="edge">
+<g id="edge6" class="edge">
 <title>Node2&#45;&gt;Node7</title>
-<g id="a_edge6_Node000002_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M242.31,-74.1C257.65,-69.42 274.33,-64.32 289.11,-59.8"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="289.95,-62.9 298.49,-56.63 287.91,-56.21 289.95,-62.9"/>
-</a>
-</g>
 </g>
 <!-- Node8 -->
-<g id="Node000008" class="node">
+<g id="node8" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/queue/push.html#" xlink:title=" ">
+<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/queue/push.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="377.62,-19.25 288.88,-19.25 288.88,0 377.62,0 377.62,-19.25"/>
 <text text-anchor="middle" x="333.25" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::queue::push</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node8 -->
-<g id="edge7_Node000002_Node000008" class="edge">
+<g id="edge7" class="edge">
 <title>Node2&#45;&gt;Node8</title>
-<g id="a_edge7_Node000002_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M209.68,-74.09C226.49,-60.35 252.65,-40.54 278,-27.62 280.74,-26.23 283.6,-24.91 286.53,-23.67"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="287.56,-26.63 295.6,-19.74 285.01,-20.11 287.56,-26.63"/>
-</a>
-</g>
 </g>
 <!-- Node6 -->
-<g id="Node000006" class="node">
+<g id="node6" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="511,-99.25 424.5,-99.25 424.5,-80 511,-80 511,-99.25"/>
 <text text-anchor="middle" x="467.75" y="-85.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
-<g id="edge5_Node000005_Node000006" class="edge">
+<g id="edge5" class="edge">
 <title>Node5&#45;&gt;Node6</title>
-<g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M388.91,-89.62C397.04,-89.62 405.42,-89.62 413.53,-89.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="413.36,-93.13 423.36,-89.62 413.36,-86.13 413.36,-93.13"/>
-</a>
-</g>
 </g>
 </g>
 </svg>

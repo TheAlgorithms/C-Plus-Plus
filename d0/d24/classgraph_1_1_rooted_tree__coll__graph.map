@@ -1,14 +1,8 @@
 <map id="graph::RootedTree" name="graph::RootedTree">
-<area shape="rect" id="Node000001" title=" " alt="" coords="242,288,371,313"/>
-<area shape="rect" id="Node000002" href="$dc/d61/classgraph_1_1_graph.html" title=" " alt="" coords="185,213,314,238"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="270,249,299,286,295,289,266,252"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/map.html" title=" " alt="" coords="5,94,147,135"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="105,143,130,166,158,186,209,210,207,214,156,191,127,170,102,147"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="57,5,95,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="79,46,79,93,73,93,73,46"/>
-<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="171,94,328,135"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="252,150,252,212,247,212,247,150"/>
-<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="265,5,386,31"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="345,43,349,54,349,70,343,155,328,239,314,288,308,286,323,238,338,154,344,70,344,56,340,44"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="304,43,292,57,264,95,259,92,288,53,300,40"/>
+<area shape="rect" id="node1" title=" " alt="" coords="242,288,371,313"/>
+<area shape="rect" id="node2" href="$dc/d61/classgraph_1_1_graph.html" title=" " alt="" coords="185,213,314,238"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/map.html" title=" " alt="" coords="5,94,147,135"/>
+<area shape="rect" id="node4" title=" " alt="" coords="57,5,95,31"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="171,94,328,135"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="265,5,386,31"/>
 </map>

@@ -6,22 +6,12 @@
 <!-- Title: machine_learning::neural_network::NeuralNetwork::load_model Pages: 1 -->
 <svg width="303pt" height="347pt"
  viewBox="0.00 0.00 302.50 347.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 343.25)">
 <title>machine_learning::neural_network::NeuralNetwork::load_model</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="127,-202.5 0,-202.5 0,-160.75 127,-160.75 127,-202.5"/>
 <text text-anchor="start" x="8" y="-189" font-family="Helvetica,sans-Serif" font-size="10.00">machine_learning::neural</text>
 <text text-anchor="start" x="8" y="-177.75" font-family="Helvetica,sans-Serif" font-size="10.00">_network::NeuralNetwork</text>
@@ -30,117 +20,99 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/c_str.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/c_str.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="272.38,-339.25 185.12,-339.25 185.12,-320 272.38,-320 272.38,-339.25"/>
 <text text-anchor="middle" x="228.75" y="-325.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::c_str</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M74.75,-202.59C89.97,-231.51 121.31,-283.3 163,-311.62 166.69,-314.13 170.73,-316.29 174.92,-318.15"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="173.31,-321.67 183.9,-321.97 175.81,-315.13 173.31,-321.67"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ifstream/close.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ifstream/close.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="278.75,-302.25 178.75,-302.25 178.75,-283 278.75,-283 278.75,-302.25"/>
 <text text-anchor="middle" x="228.75" y="-288.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::ifstream::close</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2_Node000001_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M81.5,-202.85C99.57,-224.03 130.03,-256.01 163,-274.62 165.53,-276.05 168.18,-277.38 170.91,-278.6"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="169.43,-282.17 180.02,-282.59 172.01,-275.66 169.43,-282.17"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/emplace_back.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/emplace_back.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="294.5,-265.25 163,-265.25 163,-246 294.5,-246 294.5,-265.25"/>
 <text text-anchor="middle" x="228.75" y="-251.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::emplace_back</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge3_Node000001_Node000004" class="edge">
+<g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M97.2,-202.92C115.89,-214.39 140.11,-228.11 163,-237.62 167.06,-239.31 171.33,-240.89 175.66,-242.36"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="174.2,-245.89 184.79,-245.59 176.32,-239.22 174.2,-245.89"/>
-</a>
-</g>
 </g>
 <!-- Node5 -->
-<g id="Node000005" class="node">
+<g id="node5" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="255.5,-228.25 202,-228.25 202,-209 255.5,-209 255.5,-228.25"/>
 <text text-anchor="middle" x="228.75" y="-214.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
-<g id="edge4_Node000001_Node000005" class="edge">
+<g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M127.15,-195.82C148.8,-200.73 172.33,-206.06 191.19,-210.34"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="190.18,-213.92 200.7,-212.72 191.72,-207.1 190.18,-213.92"/>
-</a>
-</g>
 </g>
 <!-- Node6 -->
-<g id="Node000006" class="node">
+<g id="node6" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/program/exit.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/program/exit.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="254.38,-191.25 203.12,-191.25 203.12,-172 254.38,-172 254.38,-191.25"/>
 <text text-anchor="middle" x="228.75" y="-177.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::exit</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
-<g id="edge5_Node000001_Node000006" class="edge">
+<g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M127.15,-181.62C149.15,-181.62 173.09,-181.62 192.09,-181.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="191.94,-185.13 201.94,-181.62 191.94,-178.13 191.94,-185.13"/>
-</a>
-</g>
 </g>
 <!-- Node7 -->
-<g id="Node000007" class="node">
+<g id="node7" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ifstream/is_open.html#" xlink:title=" ">
+<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ifstream/is_open.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="284,-154.25 173.5,-154.25 173.5,-135 284,-135 284,-154.25"/>
 <text text-anchor="middle" x="228.75" y="-140.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::ifstream::is_open</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
-<g id="edge6_Node000001_Node000007" class="edge">
+<g id="edge6" class="edge">
 <title>Node1&#45;&gt;Node7</title>
-<g id="a_edge6_Node000001_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M127.15,-167.43C142.2,-164.01 158.16,-160.4 172.83,-157.07"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="173.27,-160.33 182.25,-154.71 171.72,-153.51 173.27,-160.33"/>
-</a>
-</g>
 </g>
 <!-- Node8 -->
-<g id="Node000008" class="node">
+<g id="node8" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#ae7cf126a3a8f9d20c81b21584d061a08" target="_top" xlink:title=" ">
+<g id="a_node8"><a xlink:href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#ae7cf126a3a8f9d20c81b21584d061a08" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="292.25,-116.5 165.25,-116.5 165.25,-74.75 292.25,-74.75 292.25,-116.5"/>
 <text text-anchor="start" x="173.25" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">machine_learning::neural</text>
 <text text-anchor="start" x="173.25" y="-91.75" font-family="Helvetica,sans-Serif" font-size="10.00">_network::NeuralNetwork</text>
@@ -149,64 +121,40 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
-<g id="edge7_Node000001_Node000008" class="edge">
+<g id="edge7" class="edge">
 <title>Node1&#45;&gt;Node8</title>
-<g id="a_edge7_Node000001_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M100.13,-160.42C118.67,-149.63 141.84,-136.52 163,-125.62 165.55,-124.31 168.16,-123 170.81,-121.68"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="172.04,-124.49 179.49,-116.96 168.97,-118.2 172.04,-124.49"/>
-</a>
-</g>
 </g>
 <!-- Node9 -->
-<g id="Node000009" class="node">
+<g id="node9" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ifstream/open.html#" xlink:title=" ">
+<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ifstream/open.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="277.62,-56.25 179.88,-56.25 179.88,-37 277.62,-37 277.62,-56.25"/>
 <text text-anchor="middle" x="228.75" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::ifstream::open</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node9 -->
-<g id="edge8_Node000001_Node000009" class="edge">
+<g id="edge8" class="edge">
 <title>Node1&#45;&gt;Node9</title>
-<g id="a_edge8_Node000001_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M77.05,-160.35C93.53,-134.24 124.89,-90.38 163,-65.62 165.62,-63.92 168.41,-62.36 171.29,-60.94"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="172.54,-63.78 180.35,-56.62 169.78,-57.35 172.54,-63.78"/>
-</a>
-</g>
 </g>
 <!-- Node10 -->
-<g id="Node000010" class="node">
+<g id="node10" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
+<g id="a_node10"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="286.62,-19.25 170.88,-19.25 170.88,0 286.62,0 286.62,-19.25"/>
 <text text-anchor="middle" x="228.75" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::push_back</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node10 -->
-<g id="edge9_Node000001_Node000010" class="edge">
+<g id="edge9" class="edge">
 <title>Node1&#45;&gt;Node10</title>
-<g id="a_edge9_Node000001_Node000010"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M72.24,-160.44C85.53,-127.05 115.91,-62.43 163,-27.62 164.48,-26.53 166.03,-25.5 167.63,-24.53"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="168.9,-27.3 176.23,-19.65 165.73,-21.06 168.9,-27.3"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

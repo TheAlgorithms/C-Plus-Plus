@@ -6,22 +6,12 @@
 <!-- Title: graph::disjoint_union::find_set Pages: 1 -->
 <svg width="113pt" height="57pt"
  viewBox="0.00 0.00 113.25 56.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 52.5)">
 <title>graph::disjoint_union::find_set</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Find the component where following node belongs to.">
+<g id="a_node1"><a xlink:title="Find the component where following node belongs to.">
 <polygon fill="#999999" stroke="#666666" points="105.25,-30.5 0,-30.5 0,0 105.25,0 105.25,-30.5"/>
 <text text-anchor="start" x="8" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">graph::disjoint_union</text>
 <text text-anchor="middle" x="52.62" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">::find_set</text>
@@ -29,28 +19,10 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node1 -->
-<g id="edge1_Node000001_Node000001" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node1</title>
-<g id="a_edge1_Node000001_Node000001"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M33.97,-30.99C30.17,-40.06 36.39,-48.5 52.62,-48.5 61.76,-48.5 67.72,-45.83 70.52,-41.88"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="74.07,-42.21 71.28,-31.99 67.09,-41.72 74.07,-42.21"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

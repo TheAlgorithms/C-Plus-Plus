@@ -9,211 +9,166 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 203.62)">
 <title>main</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Main function.">
+<g id="a_node1"><a xlink:title="Main function.">
 <polygon fill="#999999" stroke="#666666" points="37,-171.25 0,-171.25 0,-152 37,-152 37,-171.25"/>
 <text text-anchor="middle" x="18.5" y="-157.75" font-family="Helvetica,sans-Serif" font-size="10.00">main</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="611.25,-114.25 557.75,-114.25 557.75,-95 611.25,-95 611.25,-114.25"/>
 <text text-anchor="middle" x="584.5" y="-100.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M37.05,-168.07C68.18,-178.91 135.32,-199.62 193.88,-199.62 193.88,-199.62 193.88,-199.62 345,-199.62 426.52,-199.62 448.54,-186.47 521.75,-150.62 537.44,-142.94 553.2,-131.12 564.88,-121.38"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="566.64,-123.62 571.94,-114.44 562.07,-118.31 566.64,-123.62"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../d4/d32/inorder__successor__of__bst_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" target="_top" xlink:title="Self&#45;test implementations.">
+<g id="a_node3"><a xlink:href="../../d4/d32/inorder__successor__of__bst_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" target="_top" xlink:title="Self&#45;test implementations.">
 <polygon fill="white" stroke="#666666" points="105.5,-152.25 73,-152.25 73,-133 105.5,-133 105.5,-152.25"/>
 <text text-anchor="middle" x="89.25" y="-138.75" font-family="Helvetica,sans-Serif" font-size="10.00">test</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2_Node000001_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M37.2,-156.73C44.84,-154.62 53.92,-152.11 62.3,-149.8"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="63,-152.96 71.71,-146.92 61.14,-146.21 63,-152.96"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="../../d5/d58/class_test_cases.html#aeabea90c02f9159e4a784bbf736e1e23" target="_top" xlink:title="Executes test cases.">
+<g id="a_node4"><a xlink:href="../../d5/d58/class_test_cases.html#aeabea90c02f9159e4a784bbf736e1e23" target="_top" xlink:title="Executes test cases.">
 <polygon fill="white" stroke="#666666" points="248.25,-114.25 141.5,-114.25 141.5,-95 248.25,-95 248.25,-114.25"/>
 <text text-anchor="middle" x="194.88" y="-100.75" font-family="Helvetica,sans-Serif" font-size="10.00">TestCases::runTests</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
-<g id="edge3_Node000003_Node000004" class="edge">
+<g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M105.99,-136.85C119.34,-131.96 139.02,-124.74 156.38,-118.37"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="157.09,-121.48 165.27,-114.75 154.68,-114.91 157.09,-121.48"/>
-</a>
-</g>
 </g>
 <!-- Node4&#45;&gt;Node2 -->
-<g id="edge4_Node000004_Node000002" class="edge">
+<g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node2</title>
-<g id="a_edge4_Node000004_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M213.82,-114.64C231.21,-123.73 258.65,-136.48 284.25,-141.62 387.94,-162.46 418.88,-151.18 521.75,-126.62 530.72,-124.48 540.2,-121.49 548.97,-118.41"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="550.04,-121.37 558.23,-114.64 547.63,-114.8 550.04,-121.37"/>
-</a>
-</g>
 </g>
 <!-- Node5 -->
-<g id="Node000005" class="node">
+<g id="node5" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="../../d5/d58/class_test_cases.html#aa3aa3d5bf666f327ee8e2d11d397b06e" target="_top" xlink:title="A function to print given message on console.">
+<g id="a_node5"><a xlink:href="../../d5/d58/class_test_cases.html#aa3aa3d5bf666f327ee8e2d11d397b06e" target="_top" xlink:title="A function to print given message on console.">
 <polygon fill="white" stroke="#666666" points="521.75,-57.25 439.75,-57.25 439.75,-38 521.75,-38 521.75,-57.25"/>
 <text text-anchor="middle" x="480.75" y="-43.75" font-family="Helvetica,sans-Serif" font-size="10.00">TestCases::log</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
-<g id="edge5_Node000004_Node000005" class="edge">
+<g id="edge5" class="edge">
 <title>Node4&#45;&gt;Node5</title>
-<g id="a_edge5_Node000004_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M214.58,-94.56C232.07,-85.64 259.18,-73.07 284.25,-66.62 332.25,-54.29 388.76,-49.84 428.65,-48.29"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="428.56,-51.76 438.44,-47.93 428.32,-44.77 428.56,-51.76"/>
-</a>
-</g>
 </g>
 <!-- Node6 -->
-<g id="Node000006" class="node">
+<g id="node6" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="../../d5/d58/class_test_cases.html#ac2636e8b5b9e053374c45bfcf0603008" target="_top" xlink:title="A test case contains edge case, printing inorder successor of last node.">
+<g id="a_node6"><a xlink:href="../../d5/d58/class_test_cases.html#ac2636e8b5b9e053374c45bfcf0603008" target="_top" xlink:title="A test case contains edge case, printing inorder successor of last node.">
 <polygon fill="white" stroke="#666666" points="403.75,-132.25 284.25,-132.25 284.25,-113 403.75,-113 403.75,-132.25"/>
 <text text-anchor="middle" x="344" y="-118.75" font-family="Helvetica,sans-Serif" font-size="10.00">TestCases::testCase_1</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node6 -->
-<g id="edge7_Node000004_Node000006" class="edge">
+<g id="edge7" class="edge">
 <title>Node4&#45;&gt;Node6</title>
-<g id="a_edge7_Node000004_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M248.57,-111.07C256.54,-112.05 264.87,-113.07 273.13,-114.08"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="272.57,-117.66 282.92,-115.4 273.42,-110.71 272.57,-117.66"/>
-</a>
-</g>
 </g>
 <!-- Node7 -->
-<g id="Node000007" class="node">
+<g id="node7" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="../../d5/d58/class_test_cases.html#abae0148985f159b582a385cf399254e3" target="_top" xlink:title="A test case which contains main list of 100 elements and sublist of 20.">
+<g id="a_node7"><a xlink:href="../../d5/d58/class_test_cases.html#abae0148985f159b582a385cf399254e3" target="_top" xlink:title="A test case which contains main list of 100 elements and sublist of 20.">
 <polygon fill="white" stroke="#666666" points="403.75,-95.25 284.25,-95.25 284.25,-76 403.75,-76 403.75,-95.25"/>
 <text text-anchor="middle" x="344" y="-81.75" font-family="Helvetica,sans-Serif" font-size="10.00">TestCases::testCase_2</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node7 -->
-<g id="edge10_Node000004_Node000007" class="edge">
+<g id="edge10" class="edge">
 <title>Node4&#45;&gt;Node7</title>
-<g id="a_edge10_Node000004_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M248.57,-97.82C256.54,-96.79 264.87,-95.71 273.13,-94.65"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="273.45,-98.01 282.92,-93.25 272.56,-91.06 273.45,-98.01"/>
-</a>
-</g>
 </g>
 <!-- Node8 -->
-<g id="Node000008" class="node">
+<g id="node8" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="../../d5/d58/class_test_cases.html#ad9f95c09931625b41e3be1f88d1e28c5" target="_top" xlink:title="A test case which contains main list of 50 elements and sublist of 20.">
+<g id="a_node8"><a xlink:href="../../d5/d58/class_test_cases.html#ad9f95c09931625b41e3be1f88d1e28c5" target="_top" xlink:title="A test case which contains main list of 50 elements and sublist of 20.">
 <polygon fill="white" stroke="#666666" points="403.75,-19.25 284.25,-19.25 284.25,0 403.75,0 403.75,-19.25"/>
 <text text-anchor="middle" x="344" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">TestCases::testCase_3</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node8 -->
-<g id="edge13_Node000004_Node000008" class="edge">
+<g id="edge13" class="edge">
 <title>Node4&#45;&gt;Node8</title>
-<g id="a_edge13_Node000004_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M206.28,-94.57C222.09,-79.71 253.56,-51.7 284.25,-33.62 290.23,-30.1 296.83,-26.86 303.37,-23.97"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="304.64,-26.82 312.52,-19.74 301.94,-20.36 304.64,-26.82"/>
-</a>
-</g>
 </g>
 <!-- Node5&#45;&gt;Node2 -->
-<g id="edge6_Node000005_Node000002" class="edge">
+<g id="edge6" class="edge">
 <title>Node5&#45;&gt;Node2</title>
-<g id="a_edge6_Node000005_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M499.47,-57.55C515.13,-66.33 538.22,-79.26 556.23,-89.35"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="554.2,-92.79 564.64,-94.62 557.62,-86.68 554.2,-92.79"/>
-</a>
-</g>
 </g>
 <!-- Node6&#45;&gt;Node2 -->
-<g id="edge8_Node000006_Node000002" class="edge">
+<g id="edge8" class="edge">
 <title>Node6&#45;&gt;Node2</title>
-<g id="a_edge8_Node000006_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M403.96,-118.18C448.65,-114.8 508.68,-110.27 546.74,-107.4"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="546.62,-110.84 556.33,-106.6 546.09,-103.86 546.62,-110.84"/>
-</a>
-</g>
 </g>
 <!-- Node6&#45;&gt;Node5 -->
-<g id="edge9_Node000006_Node000005" class="edge">
+<g id="edge9" class="edge">
 <title>Node6&#45;&gt;Node5</title>
-<g id="a_edge9_Node000006_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M384.61,-112.55C391.16,-110.31 397.76,-107.67 403.75,-104.62 424.93,-93.85 446.35,-77.15 461.02,-64.6"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="463.01,-66.64 468.23,-57.42 458.4,-61.37 463.01,-66.64"/>
-</a>
-</g>
 </g>
 <!-- Node7&#45;&gt;Node2 -->
-<g id="edge11_Node000007_Node000002" class="edge">
+<g id="edge11" class="edge">
 <title>Node7&#45;&gt;Node2</title>
-<g id="a_edge11_Node000007_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M403.96,-90.32C448.65,-93.88 508.68,-98.66 546.74,-101.7"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="546.08,-105.23 556.33,-102.54 546.64,-98.26 546.08,-105.23"/>
-</a>
-</g>
 </g>
 <!-- Node7&#45;&gt;Node5 -->
-<g id="edge12_Node000007_Node000005" class="edge">
+<g id="edge12" class="edge">
 <title>Node7&#45;&gt;Node5</title>
-<g id="a_edge12_Node000007_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M380.76,-75.54C397.03,-70.95 416.48,-65.47 433.82,-60.58"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="434.62,-63.71 443.29,-57.62 432.72,-56.97 434.62,-63.71"/>
-</a>
-</g>
 </g>
 <!-- Node8&#45;&gt;Node2 -->
-<g id="edge14_Node000008_Node000002" class="edge">
+<g id="edge14" class="edge">
 <title>Node8&#45;&gt;Node2</title>
-<g id="a_edge14_Node000008_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M404.04,-4.99C440.08,-4.73 485.96,-9.17 521.75,-28.62 545.23,-41.38 563.15,-67.12 573.49,-85.09"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="570.83,-86.51 578.69,-93.62 576.97,-83.16 570.83,-86.51"/>
-</a>
-</g>
 </g>
 <!-- Node8&#45;&gt;Node5 -->
-<g id="edge15_Node000008_Node000005" class="edge">
+<g id="edge15" class="edge">
 <title>Node8&#45;&gt;Node5</title>
-<g id="a_edge15_Node000008_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M380.76,-19.71C397.03,-24.3 416.48,-29.78 433.82,-34.67"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="432.72,-38.28 443.29,-37.63 434.62,-31.54 432.72,-38.28"/>
-</a>
-</g>
 </g>
 </g>
 </svg>

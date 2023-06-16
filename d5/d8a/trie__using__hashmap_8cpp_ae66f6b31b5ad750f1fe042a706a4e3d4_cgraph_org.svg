@@ -9,36 +9,33 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 421.5)">
 <title>main</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Main function.">
+<g id="a_node1"><a xlink:title="Main function.">
 <polygon fill="#999999" stroke="#666666" points="37,-188.5 0,-188.5 0,-169.25 37,-169.25 37,-188.5"/>
 <text text-anchor="middle" x="18.5" y="-175" font-family="Helvetica,sans-Serif" font-size="10.00">main</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../d5/d8a/trie__using__hashmap_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" target="_top" xlink:title="Self&#45;test implementations.">
+<g id="a_node2"><a xlink:href="../../d5/d8a/trie__using__hashmap_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" target="_top" xlink:title="Self&#45;test implementations.">
 <polygon fill="white" stroke="#666666" points="105.5,-188.5 73,-188.5 73,-169.25 105.5,-169.25 105.5,-188.5"/>
 <text text-anchor="middle" x="89.25" y="-175" font-family="Helvetica,sans-Serif" font-size="10.00">test</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M37.2,-178.88C44.67,-178.88 53.52,-178.88 61.73,-178.88"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="61.71,-182.38 71.71,-178.88 61.71,-175.38 61.71,-182.38"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#ac0bf3d6791cba144b3f539835d835e75" target="_top" xlink:title="delete a word/string from a trie">
+<g id="a_node3"><a xlink:href="../../d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#ac0bf3d6791cba144b3f539835d835e75" target="_top" xlink:title="delete a word/string from a trie">
 <polygon fill="white" stroke="#666666" points="253.5,-357.75 141.5,-357.75 141.5,-316 253.5,-316 253.5,-357.75"/>
 <text text-anchor="start" x="149.5" y="-344.25" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::trie</text>
 <text text-anchor="start" x="149.5" y="-333" font-family="Helvetica,sans-Serif" font-size="10.00">_using_hashmap::Trie</text>
@@ -47,36 +44,30 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2_Node000002_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M91.84,-188.73C96.05,-211.93 109.39,-270.72 141.5,-306.88 141.94,-307.37 142.39,-307.86 142.85,-308.34"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="140.21,-310.57 150.01,-314.59 144.86,-305.33 140.21,-310.57"/>
-</a>
-</g>
 </g>
 <!-- Node9 -->
-<g id="Node000009" class="node">
+<g id="node9" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="224.25,-297.5 170.75,-297.5 170.75,-278.25 224.25,-278.25 224.25,-297.5"/>
 <text text-anchor="middle" x="197.5" y="-284" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node9 -->
-<g id="edge8_Node000002_Node000009" class="edge">
+<g id="edge8" class="edge">
 <title>Node2&#45;&gt;Node9</title>
-<g id="a_edge8_Node000002_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M93.28,-188.8C99.39,-207.22 114.94,-246.82 141.5,-268.88 146.91,-273.36 153.44,-276.82 160.08,-279.46"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="158.87,-283.09 169.47,-283 161.12,-276.46 158.87,-283.09"/>
-</a>
-</g>
 </g>
 <!-- Node10 -->
-<g id="Node000010" class="node">
+<g id="node10" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="../../d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#abcae0a4456e7f583ce716e3ef466dfd2" target="_top" xlink:title="insert the string into the trie">
+<g id="a_node10"><a xlink:href="../../d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#abcae0a4456e7f583ce716e3ef466dfd2" target="_top" xlink:title="insert the string into the trie">
 <polygon fill="white" stroke="#666666" points="253.5,-259.75 141.5,-259.75 141.5,-218 253.5,-218 253.5,-259.75"/>
 <text text-anchor="start" x="149.5" y="-246.25" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::trie</text>
 <text text-anchor="start" x="149.5" y="-235" font-family="Helvetica,sans-Serif" font-size="10.00">_using_hashmap::Trie</text>
@@ -85,18 +76,15 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node10 -->
-<g id="edge9_Node000002_Node000010" class="edge">
+<g id="edge9" class="edge">
 <title>Node2&#45;&gt;Node10</title>
-<g id="a_edge9_Node000002_Node000010"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M105.88,-188.19C116,-194.18 129.47,-202.08 141.5,-208.88 143.54,-210.03 145.62,-211.2 147.73,-212.38"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="145.62,-215.76 156.06,-217.55 149.02,-209.64 145.62,-215.76"/>
-</a>
-</g>
 </g>
 <!-- Node11 -->
-<g id="Node000011" class="node">
+<g id="node11" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="../../d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#ae15fdc7f2b5023992d87a711d78566c4" target="_top" xlink:title="predict/recommend a word that starts with a given prefix">
+<g id="a_node11"><a xlink:href="../../d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#ae15fdc7f2b5023992d87a711d78566c4" target="_top" xlink:title="predict/recommend a word that starts with a given prefix">
 <polygon fill="white" stroke="#666666" points="253.5,-199.75 141.5,-199.75 141.5,-158 253.5,-158 253.5,-199.75"/>
 <text text-anchor="start" x="149.5" y="-186.25" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::trie</text>
 <text text-anchor="start" x="149.5" y="-175" font-family="Helvetica,sans-Serif" font-size="10.00">_using_hashmap::Trie</text>
@@ -105,18 +93,15 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node11 -->
-<g id="edge10_Node000002_Node000011" class="edge">
+<g id="edge10" class="edge">
 <title>Node2&#45;&gt;Node11</title>
-<g id="a_edge10_Node000002_Node000011"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M105.93,-178.88C112.81,-178.88 121.41,-178.88 130.54,-178.88"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="130.44,-182.38 140.44,-178.88 130.44,-175.38 130.44,-182.38"/>
-</a>
-</g>
 </g>
 <!-- Node14 -->
-<g id="Node000014" class="node">
+<g id="node14" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="../../d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#ad71eb24207c28b546631802dba97310f" target="_top" xlink:title="search a word/string inside the trie">
+<g id="a_node14"><a xlink:href="../../d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#ad71eb24207c28b546631802dba97310f" target="_top" xlink:title="search a word/string inside the trie">
 <polygon fill="white" stroke="#666666" points="253.5,-139.75 141.5,-139.75 141.5,-98 253.5,-98 253.5,-139.75"/>
 <text text-anchor="start" x="149.5" y="-126.25" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::trie</text>
 <text text-anchor="start" x="149.5" y="-115" font-family="Helvetica,sans-Serif" font-size="10.00">_using_hashmap::Trie</text>
@@ -125,36 +110,30 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node14 -->
-<g id="edge15_Node000002_Node000014" class="edge">
+<g id="edge15" class="edge">
 <title>Node2&#45;&gt;Node14</title>
-<g id="a_edge15_Node000002_Node000014"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M105.88,-169.56C116,-163.57 129.47,-155.67 141.5,-148.88 143.54,-147.72 145.62,-146.55 147.73,-145.37"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="149.02,-148.11 156.06,-140.2 145.62,-141.99 149.02,-148.11"/>
-</a>
-</g>
 </g>
 <!-- Node15 -->
-<g id="Node000015" class="node">
+<g id="node15" class="node">
 <title>Node15</title>
-<g id="a_Node000015"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
+<g id="a_node15"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="240.75,-79.5 154.25,-79.5 154.25,-60.25 240.75,-60.25 240.75,-79.5"/>
 <text text-anchor="middle" x="197.5" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node15 -->
-<g id="edge16_Node000002_Node000015" class="edge">
+<g id="edge16" class="edge">
 <title>Node2&#45;&gt;Node15</title>
-<g id="a_edge16_Node000002_Node000015"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M93.28,-168.95C99.39,-150.53 114.94,-110.93 141.5,-88.88 143.13,-87.52 144.87,-86.26 146.68,-85.09"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="148.08,-87.76 155.21,-79.93 144.75,-81.61 148.08,-87.76"/>
-</a>
-</g>
 </g>
 <!-- Node16 -->
-<g id="Node000016" class="node">
+<g id="node16" class="node">
 <title>Node16</title>
-<g id="a_Node000016"><a xlink:href="../../d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#af3aee573fbabd2c1510c0f74f842dd17" target="_top" xlink:title="search a word/string that starts with a given prefix">
+<g id="a_node16"><a xlink:href="../../d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#af3aee573fbabd2c1510c0f74f842dd17" target="_top" xlink:title="search a word/string that starts with a given prefix">
 <polygon fill="white" stroke="#666666" points="253.5,-41.75 141.5,-41.75 141.5,0 253.5,0 253.5,-41.75"/>
 <text text-anchor="start" x="149.5" y="-28.25" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::trie</text>
 <text text-anchor="start" x="149.5" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">_using_hashmap::Trie</text>
@@ -163,108 +142,90 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node16 -->
-<g id="edge17_Node000002_Node000016" class="edge">
+<g id="edge17" class="edge">
 <title>Node2&#45;&gt;Node16</title>
-<g id="a_edge17_Node000002_Node000016"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M91.84,-169.02C96.05,-145.82 109.39,-87.03 141.5,-50.88 141.94,-50.38 142.39,-49.89 142.85,-49.41"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="144.86,-52.42 150.01,-43.16 140.21,-47.18 144.86,-52.42"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/back.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/back.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="388.75,-417.5 302.25,-417.5 302.25,-398.25 388.75,-398.25 388.75,-417.5"/>
 <text text-anchor="middle" x="345.5" y="-404" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::back</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
-<g id="edge3_Node000003_Node000004" class="edge">
+<g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M230.89,-357.99C247.88,-368.48 269.32,-380.82 289.5,-389.88 292.86,-391.38 296.38,-392.82 299.95,-394.19"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="298.45,-397.73 309.04,-397.84 300.82,-391.15 298.45,-397.73"/>
-</a>
-</g>
 </g>
 <!-- Node5 -->
-<g id="Node000005" class="node">
+<g id="node5" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/stack/pop.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/stack/pop.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="386.12,-380.5 304.88,-380.5 304.88,-361.25 386.12,-361.25 386.12,-380.5"/>
 <text text-anchor="middle" x="345.5" y="-367" font-family="Helvetica,sans-Serif" font-size="10.00">std::stack::pop</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node5 -->
-<g id="edge4_Node000003_Node000005" class="edge">
+<g id="edge4" class="edge">
 <title>Node3&#45;&gt;Node5</title>
-<g id="a_edge4_Node000003_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M253.7,-349.73C266.94,-352.81 281.03,-356.09 294.05,-359.13"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="293.16,-362.75 303.69,-361.6 294.75,-355.93 293.16,-362.75"/>
-</a>
-</g>
 </g>
 <!-- Node6 -->
-<g id="Node000006" class="node">
+<g id="node6" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/pop_back.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/pop_back.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="549.12,-285.5 441.62,-285.5 441.62,-266.25 549.12,-266.25 549.12,-285.5"/>
 <text text-anchor="middle" x="495.38" y="-272" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::pop_back</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node6 -->
-<g id="edge5_Node000003_Node000006" class="edge">
+<g id="edge5" class="edge">
 <title>Node3&#45;&gt;Node6</title>
-<g id="a_edge5_Node000003_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M253.95,-334.71C295.18,-332.12 352.54,-326.41 401.5,-313.88 423.23,-308.31 446.59,-298.74 464.45,-290.59"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="465.69,-293.4 473.27,-286 462.73,-287.06 465.69,-293.4"/>
-</a>
-</g>
 </g>
 <!-- Node7 -->
-<g id="Node000007" class="node">
+<g id="node7" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/stack/push.html#" xlink:title=" ">
+<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/stack/push.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="388.75,-304.5 302.25,-304.5 302.25,-285.25 388.75,-285.25 388.75,-304.5"/>
 <text text-anchor="middle" x="345.5" y="-291" font-family="Helvetica,sans-Serif" font-size="10.00">std::stack::push</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node7 -->
-<g id="edge6_Node000003_Node000007" class="edge">
+<g id="edge6" class="edge">
 <title>Node3&#45;&gt;Node7</title>
-<g id="a_edge6_Node000003_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M253.7,-321C268.77,-316.66 284.93,-312.01 299.37,-307.86"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="299.9,-311.06 308.54,-304.93 297.96,-304.33 299.9,-311.06"/>
-</a>
-</g>
 </g>
 <!-- Node8 -->
-<g id="Node000008" class="node">
+<g id="node8" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/stack/top.html#" xlink:title=" ">
+<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/stack/top.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="385,-267.5 306,-267.5 306,-248.25 385,-248.25 385,-267.5"/>
 <text text-anchor="middle" x="345.5" y="-254" font-family="Helvetica,sans-Serif" font-size="10.00">std::stack::top</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node8 -->
-<g id="edge7_Node000003_Node000008" class="edge">
+<g id="edge7" class="edge">
 <title>Node3&#45;&gt;Node8</title>
-<g id="a_edge7_Node000003_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M239.92,-315.53C244.59,-312.76 249.21,-309.84 253.5,-306.88 270.87,-294.86 271.11,-286.25 289.5,-275.88 291.87,-274.54 294.36,-273.28 296.91,-272.1"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="298.06,-275 305.96,-267.95 295.38,-268.53 298.06,-275"/>
-</a>
-</g>
 </g>
 <!-- Node12 -->
-<g id="Node000012" class="node">
+<g id="node12" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="../../d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#a7bbe538c8015e8ce158e7ed43f605ebd" target="_top" xlink:title="helper function to predict/recommend words that starts with a given prefix from the end of prefix&#39;s n...">
+<g id="a_node12"><a xlink:href="../../d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#a7bbe538c8015e8ce158e7ed43f605ebd" target="_top" xlink:title="helper function to predict/recommend words that starts with a given prefix from the end of prefix&#39;s n...">
 <polygon fill="white" stroke="#666666" points="401.5,-207.75 289.5,-207.75 289.5,-166 401.5,-166 401.5,-207.75"/>
 <text text-anchor="start" x="297.5" y="-194.25" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::trie</text>
 <text text-anchor="start" x="297.5" y="-183" font-family="Helvetica,sans-Serif" font-size="10.00">_using_hashmap::Trie</text>
@@ -273,49 +234,37 @@
 </g>
 </g>
 <!-- Node11&#45;&gt;Node12 -->
-<g id="edge11_Node000011_Node000012" class="edge">
+<g id="edge11" class="edge">
 <title>Node11&#45;&gt;Node12</title>
-<g id="a_edge11_Node000011_Node000012"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M253.7,-181.9C261.78,-182.34 270.18,-182.8 278.45,-183.26"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="278.05,-186.79 288.23,-183.85 278.43,-179.8 278.05,-186.79"/>
-</a>
-</g>
 </g>
 <!-- Node12&#45;&gt;Node6 -->
-<g id="edge13_Node000012_Node000006" class="edge">
+<g id="edge13" class="edge">
 <title>Node12&#45;&gt;Node6</title>
-<g id="a_edge13_Node000012_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M381.92,-208.19C408.65,-224.28 444.71,-245.98 468.71,-260.43"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="466.52,-263.79 476.89,-265.95 470.13,-257.8 466.52,-263.79"/>
-</a>
-</g>
 </g>
 <!-- Node12&#45;&gt;Node12 -->
-<g id="edge12_Node000012_Node000012" class="edge">
+<g id="edge12" class="edge">
 <title>Node12&#45;&gt;Node12</title>
-<g id="a_edge12_Node000012_Node000012"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M318.18,-208.07C315.58,-217.55 324.69,-225.75 345.5,-225.75 357.86,-225.75 366.09,-222.86 370.19,-218.53"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="373.78,-219.62 372.82,-209.07 366.99,-217.91 373.78,-219.62"/>
-</a>
-</g>
 </g>
 <!-- Node13 -->
-<g id="Node000013" class="node">
+<g id="node13" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
+<g id="a_node13"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="553.25,-196.5 437.5,-196.5 437.5,-177.25 553.25,-177.25 553.25,-196.5"/>
 <text text-anchor="middle" x="495.38" y="-183" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::push_back</text>
 </a>
 </g>
 </g>
 <!-- Node12&#45;&gt;Node13 -->
-<g id="edge14_Node000012_Node000013" class="edge">
+<g id="edge14" class="edge">
 <title>Node12&#45;&gt;Node13</title>
-<g id="a_edge14_Node000012_Node000013"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M401.98,-186.88C409.87,-186.88 418.06,-186.88 426.15,-186.88"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="426.1,-190.38 436.1,-186.88 426.1,-183.38 426.1,-190.38"/>
-</a>
-</g>
 </g>
 </g>
 </svg>

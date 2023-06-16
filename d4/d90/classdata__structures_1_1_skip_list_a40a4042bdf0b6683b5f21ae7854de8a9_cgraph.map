@@ -1,12 +1,7 @@
 <map id="data_structures::SkipList::insertElement" name="data_structures::SkipList::insertElement">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,172,96"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="267,5,339,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,52,252,29,254,34,168,57"/>
-<area shape="rect" id="Node000003" href="$d4/d90/classdata__structures_1_1_skip_list.html#aa3f3813e9896792fc86b296547689ba4" title=" " alt="" coords="220,55,386,96"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,73,205,73,205,78,172,78"/>
-<area shape="rect" id="Node000005" href="$d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0" title="Updates a range of the segment tree." alt="" coords="273,144,333,170"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="145,94,260,138,258,143,143,99"/>
-<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="434,63,506,88"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="387,73,419,73,419,78,387,78"/>
-<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="274,145,269,135,272,126,284,120,303,117,324,120,335,128,332,132,322,125,303,123,285,125,276,129,274,135,279,142"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,55,172,96"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="267,5,339,31"/>
+<area shape="rect" id="node3" href="$d4/d90/classdata__structures_1_1_skip_list.html#aa3f3813e9896792fc86b296547689ba4" title=" " alt="" coords="220,55,386,96"/>
+<area shape="rect" id="node5" href="$d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0" title="Updates a range of the segment tree." alt="" coords="273,144,333,170"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="434,63,506,88"/>
 </map>

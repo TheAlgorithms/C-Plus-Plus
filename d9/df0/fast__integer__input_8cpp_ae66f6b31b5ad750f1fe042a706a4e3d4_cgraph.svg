@@ -6,95 +6,61 @@
 <!-- Title: main Pages: 1 -->
 <svg width="238pt" height="64pt"
  viewBox="0.00 0.00 238.25 64.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 60.25)">
 <title>main</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="37,-37.25 0,-37.25 0,-18 37,-18 37,-37.25"/>
 <text text-anchor="middle" x="18.5" y="-23.75" font-family="Helvetica,sans-Serif" font-size="10.00">main</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="126.5,-56.25 73,-56.25 73,-37 126.5,-37 126.5,-56.25"/>
 <text text-anchor="middle" x="99.75" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M37.48,-31.94C44.8,-33.69 53.55,-35.79 62.1,-37.84"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="61.18,-41.46 71.72,-40.38 62.81,-34.65 61.18,-41.46"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../d9/df0/fast__integer__input_8cpp.html#a4e097ac8509b717bdc8ab09ecd86ae82" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="../../d9/df0/fast__integer__input_8cpp.html#a4e097ac8509b717bdc8ab09ecd86ae82" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="126.5,-19.25 73,-19.25 73,0 126.5,0 126.5,-19.25"/>
 <text text-anchor="middle" x="99.75" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">fastinput</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2_Node000001_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M37.48,-23.54C44.8,-21.88 53.55,-19.89 62.1,-17.95"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="62.75,-21.16 71.72,-15.54 61.19,-14.34 62.75,-21.16"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/c/getchar.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/c/getchar.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="230.25,-19.25 162.5,-19.25 162.5,0 230.25,0 230.25,-19.25"/>
 <text text-anchor="middle" x="196.38" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::getchar</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
-<g id="edge3_Node000003_Node000004" class="edge">
+<g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M126.86,-9.62C134.46,-9.62 142.99,-9.62 151.38,-9.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="151.24,-13.13 161.24,-9.62 151.24,-6.13 151.24,-13.13"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

@@ -9,9 +9,9 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 23.25)">
 <title>Graphical Class Hierarchy</title>
 <!-- Node0 -->
-<g id="Node000000" class="node">
+<g id="node1" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="d9/d90/struct_btree.html" target="_top" xlink:title=" ">
+<g id="a_node1"><a xlink:href="d9/d90/struct_btree.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="39.25,-19.25 0,-19.25 0,0 39.25,0 39.25,-19.25"/>
 <text text-anchor="middle" x="19.62" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">Btree</text>
 </a>

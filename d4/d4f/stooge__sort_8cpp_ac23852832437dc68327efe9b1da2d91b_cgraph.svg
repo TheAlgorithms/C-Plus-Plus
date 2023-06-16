@@ -6,68 +6,37 @@
 <!-- Title: stoogeSort Pages: 1 -->
 <svg width="166pt" height="45pt"
  viewBox="0.00 0.00 166.00 45.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 41.25)">
 <title>stoogeSort</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="for IO operations">
+<g id="a_node1"><a xlink:title="for IO operations">
 <polygon fill="#999999" stroke="#666666" points="63.25,-19.25 0,-19.25 0,0 63.25,0 63.25,-19.25"/>
 <text text-anchor="middle" x="31.62" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">stoogeSort</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node1 -->
-<g id="edge1_Node000001_Node000001" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node1</title>
-<g id="a_edge1_Node000001_Node000001"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M16.44,-19.54C9.51,-28.15 14.57,-37.25 31.62,-37.25 41.48,-37.25 47.33,-34.21 49.18,-29.98"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="52.43,-29.52 46.81,-20.54 45.61,-31.06 52.43,-29.52"/>
-</a>
-</g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/swap.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/swap.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="158,-19.25 99.25,-19.25 99.25,0 158,0 158,-19.25"/>
 <text text-anchor="middle" x="128.62" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::swap</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge2_Node000001_Node000002" class="edge">
+<g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge2_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M63.73,-9.62C71.54,-9.62 80.03,-9.62 88.19,-9.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="88.02,-13.13 98.02,-9.62 88.02,-6.13 88.02,-13.13"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

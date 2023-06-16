@@ -1,8 +1,5 @@
 <map id="data_structures::SkipList::deleteElement" name="data_structures::SkipList::deleteElement">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,172,76"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="220,5,291,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,34,204,27,206,32,173,39"/>
-<area shape="rect" id="Node000003" href="$d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0" title="Updates a range of the segment tree." alt="" coords="225,79,286,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,71,211,79,210,85,171,76"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="227,80,221,70,225,60,236,54,255,52,277,55,287,62,284,67,275,60,255,57,238,59,229,64,227,69,232,77"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,35,172,76"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="220,5,291,31"/>
+<area shape="rect" id="node3" href="$d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0" title="Updates a range of the segment tree." alt="" coords="225,79,286,104"/>
 </map>

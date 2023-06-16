@@ -6,113 +6,76 @@
 <!-- Title: save_2d_data Pages: 1 -->
 <svg width="234pt" height="138pt"
  viewBox="0.00 0.00 234.25 138.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 134.25)">
 <title>save_2d_data</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="76.75,-74.25 0,-74.25 0,-55 76.75,-55 76.75,-74.25"/>
 <text text-anchor="middle" x="38.38" y="-60.75" font-family="Helvetica,sans-Serif" font-size="10.00">save_2d_data</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="221,-130.25 118,-130.25 118,-111 221,-111 221,-130.25"/>
 <text text-anchor="middle" x="169.5" y="-116.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::close</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M56.78,-74.68C71.4,-82.87 93.02,-94.4 112.75,-102.62 116.39,-104.14 120.21,-105.61 124.06,-107.02"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="122.67,-110.59 133.27,-110.56 124.97,-103.98 122.67,-110.59"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="226.25,-93.25 112.75,-93.25 112.75,-74 226.25,-74 226.25,-93.25"/>
 <text text-anchor="middle" x="169.5" y="-79.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::is_open</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2_Node000001_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M77.07,-70.17C84.82,-71.31 93.19,-72.54 101.62,-73.78"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="100.87,-77.36 111.28,-75.35 101.89,-70.43 100.87,-77.36"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="219.88,-56.25 119.12,-56.25 119.12,-37 219.88,-37 219.88,-56.25"/>
 <text text-anchor="middle" x="169.5" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::open</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge3_Node000001_Node000004" class="edge">
+<g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M77.07,-59.37C86.9,-58 97.73,-56.49 108.41,-55"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="108.56,-58.38 117.98,-53.53 107.59,-51.44 108.56,-58.38"/>
-</a>
-</g>
 </g>
 <!-- Node5 -->
-<g id="Node000005" class="node">
+<g id="node5" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/byte/strerror.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/byte/strerror.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="202.62,-19.25 136.38,-19.25 136.38,0 202.62,0 202.62,-19.25"/>
 <text text-anchor="middle" x="169.5" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::strerror</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
-<g id="edge4_Node000001_Node000005" class="edge">
+<g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M57.4,-54.55C72.04,-46.61 93.35,-35.59 112.75,-27.62 116.93,-25.91 121.34,-24.24 125.77,-22.67"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="126.72,-25.7 135.06,-19.16 124.47,-19.08 126.72,-25.7"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

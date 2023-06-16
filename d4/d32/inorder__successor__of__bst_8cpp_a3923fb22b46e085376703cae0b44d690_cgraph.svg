@@ -6,22 +6,12 @@
 <!-- Title: operations_on_datastructures::inorder_traversal_of_bst::getInorderSuccessor Pages: 1 -->
 <svg width="456pt" height="146pt"
  viewBox="0.00 0.00 455.75 145.75" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 141.75)">
 <title>operations_on_datastructures::inorder_traversal_of_bst::getInorderSuccessor</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Inorder successor of a node is the next node in inorder traversal of the Binary Tree....">
+<g id="a_node1"><a xlink:title="Inorder successor of a node is the next node in inorder traversal of the Binary Tree....">
 <polygon fill="#999999" stroke="#666666" points="144.25,-80.75 0,-80.75 0,-39 144.25,-39 144.25,-80.75"/>
 <text text-anchor="start" x="8" y="-67.25" font-family="Helvetica,sans-Serif" font-size="10.00">operations_on_datastructures</text>
 <text text-anchor="start" x="8" y="-56" font-family="Helvetica,sans-Serif" font-size="10.00">::inorder_traversal_of_bst</text>
@@ -30,18 +20,15 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node1 -->
-<g id="edge3_Node000001_Node000001" class="edge">
+<g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node1</title>
-<g id="a_edge3_Node000001_Node000001"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M38.86,-81.07C35.69,-90.55 46.78,-98.75 72.12,-98.75 87.18,-98.75 97.2,-95.86 102.2,-91.53"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="105.82,-92.65 105.39,-82.07 99.12,-90.61 105.82,-92.65"/>
-</a>
-</g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../d4/d32/inorder__successor__of__bst_8cpp.html#a72483e3f6933e004a8d86371e8a990db" target="_top" xlink:title="Finds and return the minimum node in BST.">
+<g id="a_node2"><a xlink:href="../../d4/d32/inorder__successor__of__bst_8cpp.html#a72483e3f6933e004a8d86371e8a990db" target="_top" xlink:title="Finds and return the minimum node in BST.">
 <polygon fill="white" stroke="#666666" points="324.5,-119.75 180.25,-119.75 180.25,-78 324.5,-78 324.5,-119.75"/>
 <text text-anchor="start" x="188.25" y="-106.25" font-family="Helvetica,sans-Serif" font-size="10.00">operations_on_datastructures</text>
 <text text-anchor="start" x="188.25" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">::inorder_traversal_of_bst</text>
@@ -50,18 +37,15 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M144.6,-75.51C152.68,-77.28 160.96,-79.09 169.17,-80.89"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="168.37,-84.52 178.88,-83.23 169.86,-77.68 168.37,-84.52"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../d4/d32/inorder__successor__of__bst_8cpp.html#a824cbf1814854824cf05f062eea07b95" target="_top" xlink:title="Searches the given data in BST and returns the pointer to the node containing that data.">
+<g id="a_node3"><a xlink:href="../../d4/d32/inorder__successor__of__bst_8cpp.html#a824cbf1814854824cf05f062eea07b95" target="_top" xlink:title="Searches the given data in BST and returns the pointer to the node containing that data.">
 <polygon fill="white" stroke="#666666" points="324.5,-41.75 180.25,-41.75 180.25,0 324.5,0 324.5,-41.75"/>
 <text text-anchor="start" x="188.25" y="-28.25" font-family="Helvetica,sans-Serif" font-size="10.00">operations_on_datastructures</text>
 <text text-anchor="start" x="188.25" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">::inorder_traversal_of_bst</text>
@@ -70,64 +54,37 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge4_Node000001_Node000003" class="edge">
+<g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<g id="a_edge4_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M144.6,-44.24C152.68,-42.47 160.96,-40.66 169.17,-38.86"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="169.86,-42.07 178.88,-36.52 168.37,-35.23 169.86,-42.07"/>
-</a>
-</g>
 </g>
 <!-- Node2&#45;&gt;Node2 -->
-<g id="edge2_Node000002_Node000002" class="edge">
+<g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node2</title>
-<g id="a_edge2_Node000002_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M224.37,-120.07C221.7,-129.55 231.04,-137.75 252.38,-137.75 265.05,-137.75 273.48,-134.86 277.69,-130.53"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="281.28,-131.63 280.38,-121.07 274.5,-129.88 281.28,-131.63"/>
-</a>
-</g>
 </g>
 <!-- Node3&#45;&gt;Node3 -->
-<g id="edge6_Node000003_Node000003" class="edge">
+<g id="edge6" class="edge">
 <title>Node3&#45;&gt;Node3</title>
-<g id="a_edge6_Node000003_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M224.37,-42.07C221.7,-51.55 231.04,-59.75 252.38,-59.75 265.05,-59.75 273.48,-56.86 277.69,-52.53"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="281.28,-53.63 280.38,-43.07 274.5,-51.88 281.28,-53.63"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/data.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/data.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="447.75,-30.5 360.5,-30.5 360.5,-11.25 447.75,-11.25 447.75,-30.5"/>
 <text text-anchor="middle" x="404.12" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::data</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
-<g id="edge5_Node000003_Node000004" class="edge">
+<g id="edge5" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<g id="a_edge5_Node000003_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M324.74,-20.88C332.93,-20.88 341.18,-20.88 349.09,-20.88"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="349.01,-24.38 359.01,-20.88 349.01,-17.38 349.01,-24.38"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

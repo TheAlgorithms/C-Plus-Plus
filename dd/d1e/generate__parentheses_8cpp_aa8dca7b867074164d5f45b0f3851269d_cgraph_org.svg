@@ -9,18 +9,18 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 102.25)">
 <title>test</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Self&#45;test implementations.">
+<g id="a_node1"><a xlink:title="Self&#45;test implementations.">
 <polygon fill="#999999" stroke="#666666" points="32.5,-67.25 0,-67.25 0,-48 32.5,-48 32.5,-67.25"/>
 <text text-anchor="middle" x="16.25" y="-53.75" font-family="Helvetica,sans-Serif" font-size="10.00">test</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../df/de5/classbacktracking_1_1generate__parentheses.html#af39c03d80ce0ba9fbf659b420980d160" target="_top" xlink:title="wrapper interface">
+<g id="a_node2"><a xlink:href="../../df/de5/classbacktracking_1_1generate__parentheses.html#af39c03d80ce0ba9fbf659b420980d160" target="_top" xlink:title="wrapper interface">
 <polygon fill="white" stroke="#666666" points="186.5,-72.88 68.5,-72.88 68.5,-42.38 186.5,-42.38 186.5,-72.88"/>
 <text text-anchor="start" x="76.5" y="-59.38" font-family="Helvetica,sans-Serif" font-size="10.00">backtracking::generate</text>
 <text text-anchor="middle" x="127.5" y="-48.12" font-family="Helvetica,sans-Serif" font-size="10.00">_parentheses::generate</text>
@@ -28,36 +28,30 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M32.9,-57.62C39.77,-57.62 48.36,-57.62 57.52,-57.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="57.48,-61.13 67.48,-57.62 57.48,-54.13 57.48,-61.13"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/clear.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/clear.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="334.88,-98.25 245.38,-98.25 245.38,-79 334.88,-79 334.88,-98.25"/>
 <text text-anchor="middle" x="290.12" y="-84.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::clear</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2_Node000002_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M186.94,-68.9C202.54,-71.91 219.33,-75.15 234.7,-78.12"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="233.6,-81.67 244.08,-80.12 234.93,-74.79 233.6,-81.67"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="../../df/de5/classbacktracking_1_1generate__parentheses.html#ac1489edd65374f22fe04851051f0a2ec" target="_top" xlink:title="function that adds parenthesis to the string.">
+<g id="a_node4"><a xlink:href="../../df/de5/classbacktracking_1_1generate__parentheses.html#ac1489edd65374f22fe04851051f0a2ec" target="_top" xlink:title="function that adds parenthesis to the string.">
 <polygon fill="white" stroke="#666666" points="357.75,-42.88 222.5,-42.88 222.5,-12.37 357.75,-12.37 357.75,-42.88"/>
 <text text-anchor="start" x="230.5" y="-29.38" font-family="Helvetica,sans-Serif" font-size="10.00">backtracking::generate</text>
 <text text-anchor="middle" x="290.12" y="-18.12" font-family="Helvetica,sans-Serif" font-size="10.00">_parentheses::makeStrings</text>
@@ -65,58 +59,46 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
-<g id="edge3_Node000002_Node000004" class="edge">
+<g id="edge3" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<g id="a_edge3_Node000002_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M186.94,-46.71C194.86,-45.23 203.09,-43.69 211.29,-42.16"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="211.82,-45.44 221.01,-40.16 210.54,-38.56 211.82,-45.44"/>
-</a>
-</g>
 </g>
 <!-- Node4&#45;&gt;Node4 -->
-<g id="edge5_Node000004_Node000004" class="edge">
+<g id="edge5" class="edge">
 <title>Node4&#45;&gt;Node4</title>
-<g id="a_edge5_Node000004_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M261.51,-43.36C255.67,-52.43 265.21,-60.88 290.12,-60.88 304.14,-60.88 313.29,-58.2 317.58,-54.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="321.16,-54.68 318.74,-44.36 314.2,-53.93 321.16,-54.68"/>
-</a>
-</g>
 </g>
 <!-- Node5 -->
-<g id="Node000005" class="node">
+<g id="node5" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="497.5,-56.25 405.75,-56.25 405.75,-37 497.5,-37 497.5,-56.25"/>
 <text text-anchor="middle" x="451.62" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::length</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
-<g id="edge4_Node000004_Node000005" class="edge">
+<g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node5</title>
-<g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M357.84,-35.57C370.13,-37.04 382.84,-38.55 394.77,-39.97"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="394.12,-43.54 404.47,-41.25 394.95,-36.59 394.12,-43.54"/>
-</a>
-</g>
 </g>
 <!-- Node6 -->
-<g id="Node000006" class="node">
+<g id="node6" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="509.5,-19.25 393.75,-19.25 393.75,0 509.5,0 509.5,-19.25"/>
 <text text-anchor="middle" x="451.62" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::push_back</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node6 -->
-<g id="edge6_Node000004_Node000006" class="edge">
+<g id="edge6" class="edge">
 <title>Node4&#45;&gt;Node6</title>
-<g id="a_edge6_Node000004_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M357.84,-20.1C366.03,-19.17 374.41,-18.23 382.62,-17.3"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="382.74,-20.7 392.29,-16.1 381.96,-13.74 382.74,-20.7"/>
-</a>
-</g>
 </g>
 </g>
 </svg>

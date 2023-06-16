@@ -6,121 +6,96 @@
 <!-- Title: machine_learning::argmax Pages: 1 -->
 <svg width="402pt" height="263pt"
  viewBox="0.00 0.00 401.75 263.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 259.25)">
 <title>machine_learning::argmax</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="130,-143.25 0,-143.25 0,-124 130,-124 130,-143.25"/>
 <text text-anchor="middle" x="65" y="-129.75" font-family="Helvetica,sans-Serif" font-size="10.00">machine_learning::argmax</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/iterator/begin.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/iterator/begin.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="251,-255.25 192.25,-255.25 192.25,-236 251,-236 251,-255.25"/>
 <text text-anchor="middle" x="221.62" y="-241.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::begin</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M74.01,-143.63C89.71,-162.63 126.47,-204.12 166,-227.62 170.81,-230.49 176.14,-232.96 181.52,-235.07"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="180.22,-238.68 190.82,-238.71 182.55,-232.08 180.22,-238.68"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/iterator/distance.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/iterator/distance.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="257.75,-218.25 185.5,-218.25 185.5,-199 257.75,-199 257.75,-218.25"/>
 <text text-anchor="middle" x="221.62" y="-204.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::distance</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2_Node000001_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M81.42,-143.71C100.65,-155.98 134.77,-176.75 166,-190.62 169.34,-192.11 172.84,-193.54 176.39,-194.89"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="174.83,-198.41 185.42,-198.52 177.21,-191.83 174.83,-198.41"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/iterator/end.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/iterator/end.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="247.25,-181.25 196,-181.25 196,-162 247.25,-162 247.25,-181.25"/>
 <text text-anchor="middle" x="221.62" y="-167.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::end</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge3_Node000001_Node000004" class="edge">
+<g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M107.03,-143.71C131.44,-149.71 162.08,-157.24 185.39,-162.97"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="184.31,-166.55 194.86,-165.54 185.98,-159.75 184.31,-166.55"/>
-</a>
-</g>
 </g>
 <!-- Node5 -->
-<g id="Node000005" class="node">
+<g id="node5" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="380.25,-140.25 326.75,-140.25 326.75,-121 380.25,-121 380.25,-140.25"/>
 <text text-anchor="middle" x="353.5" y="-126.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
-<g id="edge4_Node000001_Node000005" class="edge">
+<g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M130.3,-132.95C187.45,-132.35 268.99,-131.5 315.75,-131.01"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="315.61,-134.5 325.57,-130.9 315.54,-127.5 315.61,-134.5"/>
-</a>
-</g>
 </g>
 <!-- Node6 -->
-<g id="Node000006" class="node">
+<g id="node6" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/program/exit.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/program/exit.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="379.12,-60.25 327.88,-60.25 327.88,-41 379.12,-41 379.12,-60.25"/>
 <text text-anchor="middle" x="353.5" y="-46.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::exit</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
-<g id="edge5_Node000001_Node000006" class="edge">
+<g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M76.67,-123.73C93.93,-108.41 129.72,-79.37 166,-66.62 216.23,-48.97 278.55,-47.36 316.91,-48.49"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="316.41,-52.01 326.54,-48.89 316.68,-45.02 316.41,-52.01"/>
-</a>
-</g>
 </g>
 <!-- Node7 -->
-<g id="Node000007" class="node">
+<g id="node7" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="../../d8/d77/namespacemachine__learning.html#aa4bbf61e65f8cd297255fa94b983d078" target="_top" xlink:title=" ">
+<g id="a_node7"><a xlink:href="../../d8/d77/namespacemachine__learning.html#aa4bbf61e65f8cd297255fa94b983d078" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="277.25,-105.88 166,-105.88 166,-75.38 277.25,-75.38 277.25,-105.88"/>
 <text text-anchor="start" x="174" y="-92.38" font-family="Helvetica,sans-Serif" font-size="10.00">machine_learning::get</text>
 <text text-anchor="middle" x="221.62" y="-81.12" font-family="Helvetica,sans-Serif" font-size="10.00">_shape</text>
@@ -128,82 +103,52 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
-<g id="edge6_Node000001_Node000007" class="edge">
+<g id="edge6" class="edge">
 <title>Node1&#45;&gt;Node7</title>
-<g id="a_edge6_Node000001_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M102.25,-123.54C118,-119.17 136.94,-113.9 155.01,-108.87"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="155.83,-112 164.52,-105.95 153.95,-105.26 155.83,-112"/>
-</a>
-</g>
 </g>
 <!-- Node9 -->
-<g id="Node000009" class="node">
+<g id="node9" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max_element.html#" xlink:title=" ">
+<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max_element.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="268.62,-19.25 174.62,-19.25 174.62,0 268.62,0 268.62,-19.25"/>
 <text text-anchor="middle" x="221.62" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::max_element</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node9 -->
-<g id="edge10_Node000001_Node000009" class="edge">
+<g id="edge10" class="edge">
 <title>Node1&#45;&gt;Node9</title>
-<g id="a_edge10_Node000001_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M73.84,-123.6C89.53,-104.07 126.68,-60.51 166,-33.62 171.15,-30.1 176.9,-26.91 182.68,-24.09"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="183.69,-27.02 191.34,-19.69 180.79,-20.65 183.69,-27.02"/>
-</a>
-</g>
 </g>
 <!-- Node7&#45;&gt;Node5 -->
-<g id="edge7_Node000007_Node000005" class="edge">
+<g id="edge7" class="edge">
 <title>Node7&#45;&gt;Node5</title>
-<g id="a_edge7_Node000007_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M273.58,-106.32C287.68,-110.66 302.71,-115.29 315.82,-119.33"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="314.74,-122.97 325.33,-122.56 316.8,-116.28 314.74,-122.97"/>
-</a>
-</g>
 </g>
 <!-- Node7&#45;&gt;Node6 -->
-<g id="edge8_Node000007_Node000006" class="edge">
+<g id="edge8" class="edge">
 <title>Node7&#45;&gt;Node6</title>
-<g id="a_edge8_Node000007_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M273.58,-74.93C288.16,-70.44 303.73,-65.65 317.15,-61.51"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="317.87,-64.65 326.39,-58.36 315.81,-57.96 317.87,-64.65"/>
-</a>
-</g>
 </g>
 <!-- Node8 -->
-<g id="Node000008" class="node">
+<g id="node8" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html#" xlink:title=" ">
+<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="393.75,-100.25 313.25,-100.25 313.25,-81 393.75,-81 393.75,-100.25"/>
 <text text-anchor="middle" x="353.5" y="-86.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::make_pair</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node8 -->
-<g id="edge9_Node000007_Node000008" class="edge">
+<g id="edge9" class="edge">
 <title>Node7&#45;&gt;Node8</title>
-<g id="a_edge9_Node000007_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M277.7,-90.62C285.88,-90.62 294.27,-90.62 302.34,-90.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="302.09,-94.13 312.09,-90.62 302.09,-87.13 302.09,-94.13"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

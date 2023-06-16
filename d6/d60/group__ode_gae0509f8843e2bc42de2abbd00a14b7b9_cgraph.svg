@@ -6,167 +6,121 @@
 <!-- Title: forward_euler Pages: 1 -->
 <svg width="319pt" height="212pt"
  viewBox="0.00 0.00 318.50 212.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 208.25)">
 <title>forward_euler</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Compute approximation using the forward&#45;Euler method in the given limits.">
+<g id="a_node1"><a xlink:title="Compute approximation using the forward&#45;Euler method in the given limits.">
 <polygon fill="#999999" stroke="#666666" points="74.5,-111.25 0,-111.25 0,-92 74.5,-92 74.5,-111.25"/>
 <text text-anchor="middle" x="37.25" y="-97.75" font-family="Helvetica,sans-Serif" font-size="10.00">forward_euler</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/chrono/c/clock.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/chrono/c/clock.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="196.62,-204.25 137.88,-204.25 137.88,-185 196.62,-185 196.62,-204.25"/>
 <text text-anchor="middle" x="167.25" y="-190.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::clock</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M45.29,-111.64C57.03,-127.63 82.13,-158.91 110.5,-176.62 115.62,-179.82 121.37,-182.51 127.17,-184.74"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="125.96,-188.37 136.56,-188.29 128.23,-181.75 125.96,-188.37"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="218.75,-167.25 115.75,-167.25 115.75,-148 218.75,-148 218.75,-167.25"/>
 <text text-anchor="middle" x="167.25" y="-153.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::close</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2_Node000001_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M55.36,-111.7C69.75,-119.91 91.04,-131.44 110.5,-139.62 114.14,-141.15 117.95,-142.63 121.8,-144.04"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="120.41,-147.61 131.01,-147.6 122.71,-141 120.41,-147.61"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="../../d6/d60/group__ode.html#ga195d23bbdfcb80e83c9cda45c9ad5723" target="_top" xlink:title="Compute next step approximation using the forward&#45;Euler method.">
+<g id="a_node4"><a xlink:href="../../d6/d60/group__ode.html#ga195d23bbdfcb80e83c9cda45c9ad5723" target="_top" xlink:title="Compute next step approximation using the forward&#45;Euler method.">
 <polygon fill="white" stroke="#666666" points="216.5,-130.25 118,-130.25 118,-111 216.5,-111 216.5,-130.25"/>
 <text text-anchor="middle" x="167.25" y="-116.75" font-family="Helvetica,sans-Serif" font-size="10.00">forward_euler_step</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge3_Node000001_Node000004" class="edge">
+<g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M74.93,-107.07C84.9,-108.55 95.97,-110.19 106.85,-111.81"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="106.22,-115.4 116.63,-113.41 107.25,-108.48 106.22,-115.4"/>
-</a>
-</g>
 </g>
 <!-- Node6 -->
-<g id="Node000006" class="node">
+<g id="node6" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="224,-93.25 110.5,-93.25 110.5,-74 224,-74 224,-93.25"/>
 <text text-anchor="middle" x="167.25" y="-79.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::is_open</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
-<g id="edge5_Node000001_Node000006" class="edge">
+<g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M74.93,-96.47C82.72,-95.37 91.18,-94.18 99.69,-92.98"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="100.05,-96.33 109.47,-91.47 99.08,-89.4 100.05,-96.33"/>
-</a>
-</g>
 </g>
 <!-- Node7 -->
-<g id="Node000007" class="node">
+<g id="node7" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html#" xlink:title=" ">
+<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="217.62,-56.25 116.88,-56.25 116.88,-37 217.62,-37 217.62,-56.25"/>
 <text text-anchor="middle" x="167.25" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::open</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
-<g id="edge6_Node000001_Node000007" class="edge">
+<g id="edge6" class="edge">
 <title>Node1&#45;&gt;Node7</title>
-<g id="a_edge6_Node000001_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M55.98,-91.53C70.38,-83.58 91.36,-72.55 110.5,-64.62 114.14,-63.12 117.96,-61.65 121.82,-60.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="122.73,-63.29 131.03,-56.71 120.43,-56.68 122.73,-63.29"/>
-</a>
-</g>
 </g>
 <!-- Node8 -->
-<g id="Node000008" class="node">
+<g id="node8" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/c/perror.html#" xlink:title=" ">
+<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/c/perror.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="197.38,-19.25 137.12,-19.25 137.12,0 197.38,0 197.38,-19.25"/>
 <text text-anchor="middle" x="167.25" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::perror</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
-<g id="edge7_Node000001_Node000008" class="edge">
+<g id="edge7" class="edge">
 <title>Node1&#45;&gt;Node8</title>
-<g id="a_edge7_Node000001_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M45.32,-91.74C57.11,-75.98 82.27,-45.12 110.5,-27.62 115.47,-24.54 121.02,-21.94 126.64,-19.75"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="127.42,-22.84 135.72,-16.25 125.12,-16.23 127.42,-22.84"/>
-</a>
-</g>
 </g>
 <!-- Node5 -->
-<g id="Node000005" class="node">
+<g id="node5" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="../../db/dd3/ode__forward__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe" target="_top" xlink:title="Problem statement for a system with first&#45;order differential equations. Updates the system differenti...">
+<g id="a_node5"><a xlink:href="../../db/dd3/ode__forward__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe" target="_top" xlink:title="Problem statement for a system with first&#45;order differential equations. Updates the system differenti...">
 <polygon fill="white" stroke="#666666" points="310.5,-130.25 260,-130.25 260,-111 310.5,-111 310.5,-130.25"/>
 <text text-anchor="middle" x="285.25" y="-116.75" font-family="Helvetica,sans-Serif" font-size="10.00">problem</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
-<g id="edge4_Node000004_Node000005" class="edge">
+<g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node5</title>
-<g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M216.77,-120.62C227.51,-120.62 238.69,-120.62 248.79,-120.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="248.65,-124.13 258.65,-120.62 248.65,-117.13 248.65,-124.13"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

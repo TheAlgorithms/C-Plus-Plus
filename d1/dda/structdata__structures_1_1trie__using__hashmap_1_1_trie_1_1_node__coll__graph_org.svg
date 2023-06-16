@@ -9,9 +9,9 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 91)">
 <title>data_structures::trie_using_hashmap::Trie::Node</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="struct representing a trie node.">
+<g id="a_node1"><a xlink:title="struct representing a trie node.">
 <polygon fill="#999999" stroke="#666666" points="141.25,-47.38 0,-47.38 0,-16.88 141.25,-16.88 141.25,-47.38"/>
 <text text-anchor="start" x="8" y="-33.88" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::trie</text>
 <text text-anchor="middle" x="70.62" y="-22.62" font-family="Helvetica,sans-Serif" font-size="10.00">_using_hashmap::Trie::Node</text>
@@ -19,9 +19,9 @@
 </g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="313.25,-87 191.5,-87 191.5,-45.25 313.25,-45.25 313.25,-87"/>
 <text text-anchor="start" x="199.5" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr&lt; data</text>
 <text text-anchor="start" x="199.5" y="-62.25" font-family="Helvetica,sans-Serif" font-size="10.00">_structures::trie_using</text>
@@ -30,19 +30,16 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge3_Node000003_Node000001" class="edge">
+<g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<g id="a_edge3_Node000003_Node000001"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M152.09,-47.35C165.23,-49.83 178.64,-52.37 191.18,-54.74"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="153.11,-43.79 142.64,-45.37 151.81,-50.67 153.11,-43.79"/>
-</a>
-</g>
-<text text-anchor="middle" x="166.38" y="-52.88" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> ptr</text>
+<text text-anchor="middle" x="166.38" y="-52.88" font-family="Helvetica,sans-Serif" font-size="10.00"> ptr</text>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/unordered_map.html" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/unordered_map.html" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="517.5,-64.25 392,-64.25 392,0 517.5,0 517.5,-64.25"/>
 <text text-anchor="start" x="400" y="-50.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::unordered_map</text>
 <text text-anchor="start" x="400" y="-39.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; char16_t, std::shared</text>
@@ -53,24 +50,18 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node2&#45;&gt;Node1</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M380.73,-27.64C359.02,-26.5 335.18,-25.44 313.25,-24.88 259.16,-23.48 245.59,-23.24 191.5,-24.88 175.35,-25.36 157.99,-26.22 141.64,-27.18"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="380.35,-31.18 390.53,-28.22 380.73,-24.19 380.35,-31.18"/>
-</a>
-</g>
-<text text-anchor="middle" x="252.38" y="-25.88" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> children</text>
+<text text-anchor="middle" x="252.38" y="-25.88" font-family="Helvetica,sans-Serif" font-size="10.00"> children</text>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
-<g id="edge2_Node000002_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node3&#45;&gt;Node2</title>
-<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M324.11,-54.12C346.12,-50.39 370.21,-46.3 391.59,-42.67"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="323.77,-50.8 314.49,-55.92 324.94,-57.7 323.77,-50.8"/>
-</a>
-</g>
-<text text-anchor="middle" x="352.62" y="-53.88" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> elements</text>
+<text text-anchor="middle" x="352.62" y="-53.88" font-family="Helvetica,sans-Serif" font-size="10.00"> elements</text>
 </g>
 </g>
 </svg>

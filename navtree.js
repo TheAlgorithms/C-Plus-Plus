@@ -545,12 +545,5 @@ function initNavTree(toroot,relpath)
        navTo(o,toroot,hashUrl(),relpath);
      }
   })
-
-  $("div.toc a[href]").click(function(e) {
-    e.preventDefault();
-    var docContent = $('#doc-content');
-    var aname = $(this).attr("href");
-    gotoAnchor($(aname),aname,true);
-  })
 }
 /* @license-end */

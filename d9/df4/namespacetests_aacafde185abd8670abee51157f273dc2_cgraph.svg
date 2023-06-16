@@ -6,95 +6,61 @@
 <!-- Title: tests::test6 Pages: 1 -->
 <svg width="201pt" height="101pt"
  viewBox="0.00 0.00 201.25 101.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 97.25)">
 <title>tests::test6</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="A Test to check correct functionality with an array sorted using std::sort.">
+<g id="a_node1"><a xlink:title="A Test to check correct functionality with an array sorted using std::sort.">
 <polygon fill="#999999" stroke="#666666" points="65.5,-56.25 0,-56.25 0,-37 65.5,-37 65.5,-56.25"/>
 <text text-anchor="middle" x="32.75" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">tests::test6</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/begin.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/begin.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="193.25,-93.25 101.5,-93.25 101.5,-74 193.25,-74 193.25,-93.25"/>
 <text text-anchor="middle" x="147.38" y="-79.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::begin</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M64.53,-56.74C77.06,-60.85 91.75,-65.68 105.19,-70.09"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="104.04,-73.73 114.64,-73.53 106.23,-67.08 104.04,-73.73"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/end.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/end.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="189.5,-56.25 105.25,-56.25 105.25,-37 189.5,-37 189.5,-56.25"/>
 <text text-anchor="middle" x="147.38" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::end</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2_Node000001_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M65.72,-46.62C74.61,-46.62 84.49,-46.62 94.21,-46.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="94.05,-50.13 104.05,-46.62 94.05,-43.13 94.05,-50.13"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/sort.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/sort.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="173.38,-19.25 121.38,-19.25 121.38,0 173.38,0 173.38,-19.25"/>
 <text text-anchor="middle" x="147.38" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::sort</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge3_Node000001_Node000004" class="edge">
+<g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M64.53,-36.51C78.78,-31.83 95.81,-26.24 110.63,-21.37"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="111.55,-24.42 119.96,-17.97 109.37,-17.77 111.55,-24.42"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

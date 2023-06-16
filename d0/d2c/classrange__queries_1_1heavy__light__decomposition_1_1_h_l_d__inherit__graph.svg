@@ -6,22 +6,12 @@
 <!-- Title: range_queries::heavy_light_decomposition::HLD&lt; X &gt; Pages: 1 -->
 <svg width="262pt" height="110pt"
  viewBox="0.00 0.00 262.00 109.75" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 105.75)">
 <title>range_queries::heavy_light_decomposition::HLD&lt; X &gt;</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="The Heavy&#45;Light Decomposition class.">
+<g id="a_node1"><a xlink:title="The Heavy&#45;Light Decomposition class.">
 <polygon fill="#999999" stroke="#666666" points="254,-71.75 145,-71.75 145,-30 254,-30 254,-71.75"/>
 <text text-anchor="start" x="153" y="-58.25" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
 <text text-anchor="start" x="153" y="-47" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
@@ -30,9 +20,9 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html" target="_top" xlink:title="A Basic Tree, which supports binary lifting.">
+<g id="a_node2"><a xlink:href="../../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html" target="_top" xlink:title="A Basic Tree, which supports binary lifting.">
 <polygon fill="white" stroke="#666666" points="109,-101.75 0,-101.75 0,-60 109,-60 109,-101.75"/>
 <text text-anchor="start" x="8" y="-88.25" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
 <text text-anchor="start" x="8" y="-77" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
@@ -41,18 +31,15 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node2&#45;&gt;Node1</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M119.88,-67.37C128.12,-65.64 136.49,-63.88 144.54,-62.19"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="119.22,-64.14 110.15,-69.62 120.66,-70.99 119.22,-64.14"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html" target="_top" xlink:title="Segment Tree, to store heavy chains.">
+<g id="a_node3"><a xlink:href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html" target="_top" xlink:title="Segment Tree, to store heavy chains.">
 <polygon fill="white" stroke="#666666" points="109,-41.75 0,-41.75 0,0 109,0 109,-41.75"/>
 <text text-anchor="start" x="8" y="-28.25" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
 <text text-anchor="start" x="8" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
@@ -61,28 +48,10 @@
 </g>
 </g>
 <!-- Node3&#45;&gt;Node1 -->
-<g id="edge2_Node000001_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node3&#45;&gt;Node1</title>
-<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M119.88,-34.38C128.12,-36.11 136.49,-37.87 144.54,-39.56"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="120.66,-30.76 110.15,-32.13 119.22,-37.61 120.66,-30.76"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

@@ -9,9 +9,9 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 23.25)">
 <title>Graphical Class Hierarchy</title>
 <!-- Node0 -->
-<g id="Node000000" class="node">
+<g id="node1" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="d8/d69/classgraph_1_1_h_k_graph.html" target="_top" xlink:title="Represents Bipartite graph for Hopcroft Karp implementation.">
+<g id="a_node1"><a xlink:href="d8/d69/classgraph_1_1_h_k_graph.html" target="_top" xlink:title="Represents Bipartite graph for Hopcroft Karp implementation.">
 <polygon fill="white" stroke="#666666" points="86.5,-19.25 0,-19.25 0,0 86.5,0 86.5,-19.25"/>
 <text text-anchor="middle" x="43.25" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">graph::HKGraph</text>
 </a>

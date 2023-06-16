@@ -5,230 +5,197 @@
  -->
 <!-- Title: double_hashing::removalInfo Pages: 1 -->
 <!--zoomable 198 -->
-
 <svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
 <style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
 .edge:hover path { stroke: red; }
 .edge:hover polygon { stroke: red; fill: red; }
 ]]></style>
+<script type="text/javascript"><![CDATA[
+var edges = document.getElementsByTagName('g');
+if (edges && edges.length) {
+  for (var i=0;i<edges.length;i++) {
+    if (edges[i].id.substr(0,4)=='edge') {
+      edges[i].setAttribute('class','edge');
+    }
+  }
+}
+]]></script>
+        <defs>
+                <circle id="rim" cx="0" cy="0" r="7"/>
+                <circle id="rim2" cx="0" cy="0" r="3.5"/>
+                <g id="zoomPlus">
+                        <use xlink:href="#rim" fill="#404040">
+                                <set attributeName="fill" to="#808080" begin="zoomplus.mouseover" end="zoomplus.mouseout"/>
+                        </use>
+                        <path d="M-4,0h8M0,-4v8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
+                </g>
+                <g id="zoomMin">
+                        <use xlink:href="#rim" fill="#404040">
+                                <set attributeName="fill" to="#808080" begin="zoomminus.mouseover" end="zoomminus.mouseout"/>
+                        </use>
+                        <path d="M-4,0h8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
+                </g>
+                <g id="dirArrow">
+                        <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+                </g>
+               <g id="resetDef">
+                       <use xlink:href="#rim2" fill="#404040">
+                               <set attributeName="fill" to="#808080" begin="reset.mouseover" end="reset.mouseout"/>
+                       </use>
+               </g>
+        </defs>
 
-<defs>
-  <circle id="rim" cx="0" cy="0" r="7"/>
-  <circle id="rim2" cx="0" cy="0" r="3.5"/>
-  <g id="zoomPlus">
-    <use xlink:href="#rim" fill="#404040"><set attributeName="fill" to="#808080" begin="zoomplus.mouseover" end="zoomplus.mouseout"/></use>
-    <path d="M-4,0h8M0,-4v8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
-  </g>
-  <g id="zoomMin">
-    <use xlink:href="#rim" fill="#404040"><set attributeName="fill" to="#808080" begin="zoomminus.mouseover" end="zoomminus.mouseout"/></use>
-    <path d="M-4,0h8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
-  </g>
-  <g id="arrowUp" transform="translate(30 24)">
-    <use xlink:href="#rim"/>
-    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-  </g>
-  <g id="arrowRight" transform="rotate(90) translate(36 -43)">
-    <use xlink:href="#rim"/>
-    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-  </g>
-  <g id="arrowDown" transform="rotate(180) translate(-30 -48)">
-    <use xlink:href="#rim"/>
-    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-  </g>
-  <g id="arrowLeft" transform="rotate(270) translate(-36 17)">
-    <use xlink:href="#rim"/>
-    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-  </g>
-  <g id="resetDef">
-    <use xlink:href="#rim2" fill="#404040"><set attributeName="fill" to="#808080" begin="reset.mouseover" end="reset.mouseout"/></use>
-  </g>
-</defs>
-<script type="application/ecmascript">
+<script type="text/javascript">
 var viewWidth = 671;
 var viewHeight = 198;
 var sectionId = 'dynsection-5';
 </script>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<script xlink:href="../../svgpan.js"/>
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>double_hashing::removalInfo</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="140.5,-156.25 0,-156.25 0,-137 140.5,-137 140.5,-156.25"/>
 <text text-anchor="middle" x="70.25" y="-142.75" font-family="Helvetica,sans-Serif" font-size="10.00">double_hashing::removalInfo</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a1e901418c759627557eff359b8db38cd" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a1e901418c759627557eff359b8db38cd" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="465,-175.25 344.75,-175.25 344.75,-156 465,-156 465,-175.25"/>
 <text text-anchor="middle" x="404.88" y="-161.75" font-family="Helvetica,sans-Serif" font-size="10.00">double_hashing::display</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M140.98,-150.61C197.53,-153.84 276.89,-158.37 333.59,-161.61"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="333.08,-165.14 343.26,-162.22 333.47,-158.15 333.08,-165.14"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="613.75,-179.25 560.25,-179.25 560.25,-160 613.75,-160 613.75,-179.25"/>
 <text text-anchor="middle" x="587" y="-165.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge3_Node000001_Node000003" class="edge">
+<g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<g id="a_edge3_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M112.02,-156.73C131.44,-161.24 155.06,-166.28 176.5,-169.62 307.96,-190.16 342.75,-193.59 475.5,-184.62 500.17,-182.96 527.73,-179.22 549.16,-175.89"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="549.43,-179.23 558.76,-174.2 548.33,-172.32 549.43,-179.23"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a0d90726ed1de7b3d2ae261baed048003" target="_top" xlink:title="Hash a key. Uses the STL library&#39;s std::hash() function.">
+<g id="a_node4"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a0d90726ed1de7b3d2ae261baed048003" target="_top" xlink:title="Hash a key. Uses the STL library&#39;s std::hash() function.">
 <polygon fill="white" stroke="#666666" points="650.5,-19.25 523.5,-19.25 523.5,0 650.5,0 650.5,-19.25"/>
 <text text-anchor="middle" x="587" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">double_hashing::hashFxn</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge4_Node000001_Node000004" class="edge">
+<g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<g id="a_edge4_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M96.51,-136.62C117.67,-128.46 148.78,-116.95 176.5,-108.62 299.35,-71.72 446.06,-38.92 526.29,-21.92"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="526.62,-25.21 535.68,-19.72 525.18,-18.36 526.62,-25.21"/>
-</a>
-</g>
 </g>
 <!-- Node5 -->
-<g id="Node000005" class="node">
+<g id="node5" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a28083ecac6eb94b643281875c8665931" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a28083ecac6eb94b643281875c8665931" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="298.25,-137.25 176.5,-137.25 176.5,-118 298.25,-118 298.25,-137.25"/>
 <text text-anchor="middle" x="237.38" y="-123.75" font-family="Helvetica,sans-Serif" font-size="10.00">double_hashing::remove</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
-<g id="edge5_Node000001_Node000005" class="edge">
+<g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<g id="a_edge5_Node000001_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M140.8,-138.62C148.86,-137.7 157.09,-136.75 165.17,-135.82"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="165.53,-139.18 175.07,-134.56 164.73,-132.23 165.53,-139.18"/>
-</a>
-</g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2_Node000002_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M465.35,-166.95C492.95,-167.56 524.9,-168.27 548.99,-168.8"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="548.71,-172.32 558.79,-169.04 548.87,-165.32 548.71,-172.32"/>
-</a>
-</g>
 </g>
 <!-- Node5&#45;&gt;Node3 -->
-<g id="edge12_Node000005_Node000003" class="edge">
+<g id="edge12" class="edge">
 <title>Node5&#45;&gt;Node3</title>
-<g id="a_edge12_Node000005_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M298.54,-130.36C346.61,-133.05 415.61,-138.03 475.5,-146.62 500.28,-150.18 527.84,-155.92 549.24,-160.77"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="548.29,-164.37 558.82,-163.21 549.86,-157.55 548.29,-164.37"/>
-</a>
-</g>
 </g>
 <!-- Node6 -->
-<g id="Node000006" class="node">
+<g id="node6" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a8f8ff4fb018e1bb32d67d8a1885d3200" target="_top" xlink:title="Performs double hashing to resolve collisions.">
+<g id="a_node6"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a8f8ff4fb018e1bb32d67d8a1885d3200" target="_top" xlink:title="Performs double hashing to resolve collisions.">
 <polygon fill="white" stroke="#666666" points="475.5,-99.25 334.25,-99.25 334.25,-80 475.5,-80 475.5,-99.25"/>
 <text text-anchor="middle" x="404.88" y="-85.75" font-family="Helvetica,sans-Serif" font-size="10.00">double_hashing::doubleHash</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
-<g id="edge6_Node000005_Node000006" class="edge">
+<g id="edge6" class="edge">
 <title>Node5&#45;&gt;Node6</title>
-<g id="a_edge6_Node000005_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M282.29,-117.54C302.95,-112.8 327.78,-107.1 349.6,-102.09"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="350.08,-105.34 359.04,-99.69 348.51,-98.52 350.08,-105.34"/>
-</a>
-</g>
 </g>
 <!-- Node6&#45;&gt;Node3 -->
-<g id="edge7_Node000006_Node000003" class="edge">
+<g id="edge7" class="edge">
 <title>Node6&#45;&gt;Node3</title>
-<g id="a_edge7_Node000006_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M445.7,-99.69C455.87,-103.23 466.47,-107.81 475.5,-113.62 495.06,-126.22 491.37,-139.97 511.5,-151.62 522.9,-158.22 536.63,-162.41 549.17,-165.07"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="548.34,-168.65 558.81,-167.02 549.6,-161.77 548.34,-168.65"/>
-</a>
-</g>
 </g>
 <!-- Node6&#45;&gt;Node4 -->
-<g id="edge8_Node000006_Node000004" class="edge">
+<g id="edge8" class="edge">
 <title>Node6&#45;&gt;Node4</title>
-<g id="a_edge8_Node000006_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M419.87,-79.58C439.47,-65.96 476.6,-41.72 511.5,-27.62 515.92,-25.84 520.57,-24.2 525.28,-22.7"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="526.07,-25.83 534.67,-19.65 524.09,-19.11 526.07,-25.83"/>
-</a>
-</g>
 </g>
 <!-- Node7 -->
-<g id="Node000007" class="node">
+<g id="node7" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a33968a1178289ab61445dd4000df7082" target="_top" xlink:title="Used for second hash function.">
+<g id="a_node7"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a33968a1178289ab61445dd4000df7082" target="_top" xlink:title="Used for second hash function.">
 <polygon fill="white" stroke="#666666" points="662.5,-56.25 511.5,-56.25 511.5,-37 662.5,-37 662.5,-56.25"/>
 <text text-anchor="middle" x="587" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">double_hashing::otherHashFxn</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node7 -->
-<g id="edge9_Node000006_Node000007" class="edge">
+<g id="edge9" class="edge">
 <title>Node6&#45;&gt;Node7</title>
-<g id="a_edge9_Node000006_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M448.11,-79.54C473.53,-73.47 506.13,-65.69 533.24,-59.22"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="533.81,-62.44 542.72,-56.72 532.18,-55.64 533.81,-62.44"/>
-</a>
-</g>
 </g>
 <!-- Node8 -->
-<g id="Node000008" class="node">
+<g id="node8" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#ac2adfce49ac57f6dbd1778d2c1ce0d2b" target="_top" xlink:title=" ">
+<g id="a_node8"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#ac2adfce49ac57f6dbd1778d2c1ce0d2b" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="652.75,-142.25 521.25,-142.25 521.25,-123 652.75,-123 652.75,-142.25"/>
 <text text-anchor="middle" x="587" y="-128.75" font-family="Helvetica,sans-Serif" font-size="10.00">double_hashing::putProber</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node8 -->
-<g id="edge10_Node000006_Node000008" class="edge">
+<g id="edge10" class="edge">
 <title>Node6&#45;&gt;Node8</title>
-<g id="a_edge10_Node000006_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M448.11,-99.71C473.53,-105.78 506.13,-113.56 533.24,-120.03"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="532.18,-123.61 542.72,-122.53 533.81,-116.81 532.18,-123.61"/>
-</a>
-</g>
 </g>
 <!-- Node9 -->
-<g id="Node000009" class="node">
+<g id="node9" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a29f543e2626bad58907661e1e45028a6" target="_top" xlink:title=" ">
+<g id="a_node9"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a29f543e2626bad58907661e1e45028a6" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="652.75,-104.88 521.25,-104.88 521.25,-74.38 652.75,-74.38 652.75,-104.88"/>
 <text text-anchor="start" x="529.25" y="-91.38" font-family="Helvetica,sans-Serif" font-size="10.00">double_hashing::searching</text>
 <text text-anchor="middle" x="587" y="-80.12" font-family="Helvetica,sans-Serif" font-size="10.00">Prober</text>
@@ -236,49 +203,52 @@ var sectionId = 'dynsection-5';
 </g>
 </g>
 <!-- Node6&#45;&gt;Node9 -->
-<g id="edge11_Node000006_Node000009" class="edge">
+<g id="edge11" class="edge">
 <title>Node6&#45;&gt;Node9</title>
-<g id="a_edge11_Node000006_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M475.77,-89.62C487.01,-89.62 498.7,-89.62 510.07,-89.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="509.86,-93.13 519.86,-89.62 509.86,-86.13 509.86,-93.13"/>
-</a>
-</g>
 </g>
 </g>
 </svg>
-
-<g id="navigator" transform="translate(0 0)" fill="#404254">
-  <rect fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width=".5" x="0" y="0" width="60" height="60"/>
-  <use id="zoomplus" xlink:href="#zoomPlus" x="17" y="9" onmousedown="handleZoom(evt,'in')"/>
-  <use id="zoomminus" xlink:href="#zoomMin" x="42" y="9" onmousedown="handleZoom(evt,'out')"/>
-  <use id="reset" xlink:href="#resetDef" x="30" y="36" onmousedown="handleReset()"/>
-   <use id="arrowup" xlink:href="#arrowUp" x="0" y="0" onmousedown="handlePan(0,-1)"/>
-  <use id="arrowright" xlink:href="#arrowRight" x="0" y="0" onmousedown="handlePan(1,0)"/>
-  <use id="arrowdown" xlink:href="#arrowDown" x="0" y="0" onmousedown="handlePan(0,1)"/>
-  <use id="arrowleft" xlink:href="#arrowLeft" x="0" y="0" onmousedown="handlePan(-1,0)"/>
-</g>
-<svg viewBox="0 0 15 15" width="100%" height="30px" preserveAspectRatio="xMaxYMin meet">
- <g id="arrow_out" transform="scale(0.3 0.3)">
-  <a xlink:href="namespacedouble__hashing_a5d06e4598569526294f10104875f6824_cgraph_org.svg" target="_base">
-   <rect id="button" ry="5" rx="5" y="6" x="6" height="38" width="38"
-        fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width="1.0"/>
-   <path id="arrow"
-     d="M 11.500037,31.436501 C 11.940474,20.09759 22.043105,11.32322 32.158766,21.979434 L 37.068811,17.246167 C 37.068811,17.246167 37.088388,32 37.088388,32 L 22.160133,31.978069 C 22.160133,31.978069 26.997745,27.140456 26.997745,27.140456 C 18.528582,18.264221 13.291696,25.230495 11.500037,31.436501 z"
-     style="fill:#404040;"/>
-  </a>
- </g>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
+        <g id="navigator" transform="translate(0 0)" fill="#404254">
+                <rect fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width=".5" x="0" y="0" width="60" height="60"/>
+                <use id="zoomplus" xlink:href="#zoomPlus" x="17" y="9" onmousedown="handleZoom(evt,'in')"/>
+                <use id="zoomminus" xlink:href="#zoomMin" x="42" y="9" onmousedown="handleZoom(evt,'out')"/>
+                <use id="reset" xlink:href="#resetDef" x="30" y="36" onmousedown="handleReset()"/>
+                <g id="arrowUp" xlink:href="#dirArrow" transform="translate(30 24)" onmousedown="handlePan(0,-1)">
+                  <use xlink:href="#rim" fill="#404040">
+                        <set attributeName="fill" to="#808080" begin="arrowUp.mouseover" end="arrowUp.mouseout"/>
+                  </use>
+                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+                </g>
+                <g id="arrowRight" xlink:href="#dirArrow" transform="rotate(90) translate(36 -43)" onmousedown="handlePan(1,0)">
+                  <use xlink:href="#rim" fill="#404040">
+                        <set attributeName="fill" to="#808080" begin="arrowRight.mouseover" end="arrowRight.mouseout"/>
+                  </use>
+                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+                </g>
+                <g id="arrowDown" xlink:href="#dirArrow" transform="rotate(180) translate(-30 -48)" onmousedown="handlePan(0,1)">
+                  <use xlink:href="#rim" fill="#404040">
+                        <set attributeName="fill" to="#808080" begin="arrowDown.mouseover" end="arrowDown.mouseout"/>
+                  </use>
+                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+                </g>
+                <g id="arrowLeft" xlink:href="#dirArrow" transform="rotate(270) translate(-36 17)" onmousedown="handlePan(-1,0)">
+                  <use xlink:href="#rim" fill="#404040">
+                        <set attributeName="fill" to="#808080" begin="arrowLeft.mouseover" end="arrowLeft.mouseout"/>
+                  </use>
+                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+                </g>
+        </g>
+        <svg viewBox="0 0 15 15" width="100%" height="30px" preserveAspectRatio="xMaxYMin meet">
+         <g id="arrow_out" transform="scale(0.3 0.3)">
+          <a xlink:href="namespacedouble__hashing_a5d06e4598569526294f10104875f6824_cgraph_org.svg" target="_base">
+           <rect id="button" ry="5" rx="5" y="6" x="6" height="38" width="38"
+                fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width="1.0"/>
+           <path id="arrow"
+             d="M 11.500037,31.436501 C 11.940474,20.09759 22.043105,11.32322 32.158766,21.979434 L 37.068811,17.246167 C 37.068811,17.246167 37.088388,32 37.088388,32 L 22.160133,31.978069 C 22.160133,31.978069 26.997745,27.140456 26.997745,27.140456 C 18.528582,18.264221 13.291696,25.230495 11.500037,31.436501 z"
+             style="fill:#404040;"/>
+          </a>
+         </g>
+        </svg>
 </svg>

@@ -6,59 +6,31 @@
 <!-- Title: test Pages: 1 -->
 <svg width="181pt" height="27pt"
  viewBox="0.00 0.00 181.00 27.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 23.25)">
 <title>test</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Self&#45;test implementations.">
+<g id="a_node1"><a xlink:title="Self&#45;test implementations.">
 <polygon fill="#999999" stroke="#666666" points="32.5,-19.25 0,-19.25 0,0 32.5,0 32.5,-19.25"/>
 <text text-anchor="middle" x="16.25" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">test</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../dd/d47/namespacemath.html#a8a48be4d7f14e34c5c92925bc1cbf3bb" target="_top" xlink:title="This function finds whether a number is power of 2 or not.">
+<g id="a_node2"><a xlink:href="../../dd/d47/namespacemath.html#a8a48be4d7f14e34c5c92925bc1cbf3bb" target="_top" xlink:title="This function finds whether a number is power of 2 or not.">
 <polygon fill="white" stroke="#666666" points="173,-19.25 68.5,-19.25 68.5,0 173,0 173,-19.25"/>
 <text text-anchor="middle" x="120.75" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">math::power_of_two</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M32.82,-9.62C39.74,-9.62 48.39,-9.62 57.53,-9.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="57.4,-13.13 67.4,-9.62 57.4,-6.13 57.4,-13.13"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

@@ -1,14 +1,8 @@
 <map id="range_queries::heavy_light_decomposition::Tree&lt; X &gt;" name="range_queries::heavy_light_decomposition::Tree&lt; X &gt;">
-<area shape="rect" id="Node000001" title="A Basic Tree, which supports binary lifting." alt="" coords="470,91,615,147"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="241,5,380,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="378,50,472,88,470,93,376,55"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list.html" title=" " alt="" coords="15,13,117,39"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="132,23,241,23,241,28,132,28"/>
-<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="232,148,389,189"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="403,146,469,132,470,137,404,151"/>
-<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="5,113,127,139"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="141,119,151,119,470,116,470,121,151,124,142,125"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="142,136,232,152,231,157,141,141"/>
-<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="252,213,369,239"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="370,205,388,198,492,145,495,150,390,203,372,210"/>
+<area shape="rect" id="node1" title="A Basic Tree, which supports binary lifting." alt="" coords="470,91,615,147"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="241,5,380,46"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list.html" title=" " alt="" coords="15,13,117,39"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="232,148,389,189"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="5,113,127,139"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="252,213,369,239"/>
 </map>

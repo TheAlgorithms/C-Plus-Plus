@@ -6,22 +6,12 @@
 <!-- Title: backtracking::generate_parentheses::generate Pages: 1 -->
 <svg width="449pt" height="106pt"
  viewBox="0.00 0.00 449.00 106.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 102.25)">
 <title>backtracking::generate_parentheses::generate</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="wrapper interface">
+<g id="a_node1"><a xlink:title="wrapper interface">
 <polygon fill="#999999" stroke="#666666" points="118,-72.88 0,-72.88 0,-42.38 118,-42.38 118,-72.88"/>
 <text text-anchor="start" x="8" y="-59.38" font-family="Helvetica,sans-Serif" font-size="10.00">backtracking::generate</text>
 <text text-anchor="middle" x="59" y="-48.12" font-family="Helvetica,sans-Serif" font-size="10.00">_parentheses::generate</text>
@@ -29,27 +19,24 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/clear.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/clear.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="266.38,-98.25 176.88,-98.25 176.88,-79 266.38,-79 266.38,-98.25"/>
 <text text-anchor="middle" x="221.62" y="-84.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::clear</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M118.44,-68.9C134.04,-71.91 150.83,-75.15 166.2,-78.12"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="165.1,-81.67 175.58,-80.12 166.43,-74.79 165.1,-81.67"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../df/de5/classbacktracking_1_1generate__parentheses.html#ac1489edd65374f22fe04851051f0a2ec" target="_top" xlink:title="function that adds parenthesis to the string.">
+<g id="a_node3"><a xlink:href="../../df/de5/classbacktracking_1_1generate__parentheses.html#ac1489edd65374f22fe04851051f0a2ec" target="_top" xlink:title="function that adds parenthesis to the string.">
 <polygon fill="white" stroke="#666666" points="289.25,-42.88 154,-42.88 154,-12.37 289.25,-12.37 289.25,-42.88"/>
 <text text-anchor="start" x="162" y="-29.38" font-family="Helvetica,sans-Serif" font-size="10.00">backtracking::generate</text>
 <text text-anchor="middle" x="221.62" y="-18.12" font-family="Helvetica,sans-Serif" font-size="10.00">_parentheses::makeStrings</text>
@@ -57,73 +44,46 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2_Node000001_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M118.44,-46.71C126.36,-45.23 134.59,-43.69 142.79,-42.16"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="143.32,-45.44 152.51,-40.16 142.04,-38.56 143.32,-45.44"/>
-</a>
-</g>
 </g>
 <!-- Node3&#45;&gt;Node3 -->
-<g id="edge4_Node000003_Node000003" class="edge">
+<g id="edge4" class="edge">
 <title>Node3&#45;&gt;Node3</title>
-<g id="a_edge4_Node000003_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M193.01,-43.36C187.17,-52.43 196.71,-60.88 221.62,-60.88 235.64,-60.88 244.79,-58.2 249.08,-54.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="252.66,-54.68 250.24,-44.36 245.7,-53.93 252.66,-54.68"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="429,-56.25 337.25,-56.25 337.25,-37 429,-37 429,-56.25"/>
 <text text-anchor="middle" x="383.12" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::length</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
-<g id="edge3_Node000003_Node000004" class="edge">
+<g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M289.34,-35.57C301.63,-37.04 314.34,-38.55 326.27,-39.97"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="325.62,-43.54 335.97,-41.25 326.45,-36.59 325.62,-43.54"/>
-</a>
-</g>
 </g>
 <!-- Node5 -->
-<g id="Node000005" class="node">
+<g id="node5" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="441,-19.25 325.25,-19.25 325.25,0 441,0 441,-19.25"/>
 <text text-anchor="middle" x="383.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::push_back</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node5 -->
-<g id="edge5_Node000003_Node000005" class="edge">
+<g id="edge5" class="edge">
 <title>Node3&#45;&gt;Node5</title>
-<g id="a_edge5_Node000003_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M289.34,-20.1C297.53,-19.17 305.91,-18.23 314.12,-17.3"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="314.24,-20.7 323.79,-16.1 313.46,-13.74 314.24,-20.7"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

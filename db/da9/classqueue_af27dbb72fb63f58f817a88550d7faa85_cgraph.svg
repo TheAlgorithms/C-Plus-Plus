@@ -6,77 +6,46 @@
 <!-- Title: queue::deQueue Pages: 1 -->
 <svg width="402pt" height="27pt"
  viewBox="0.00 0.00 401.75 27.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 23.25)">
 <title>queue::deQueue</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="removes the first element from the queue">
+<g id="a_node1"><a xlink:title="removes the first element from the queue">
 <polygon fill="#999999" stroke="#666666" points="87.25,-19.25 0,-19.25 0,0 87.25,0 87.25,-19.25"/>
 <text text-anchor="middle" x="43.62" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">queue::deQueue</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../db/da9/classqueue.html#ac08ebdd38cb4ad74fc0a3f51888da604" target="_top" xlink:title="throws an exception if queue is empty">
+<g id="a_node2"><a xlink:href="../../db/da9/classqueue.html#ac08ebdd38cb4ad74fc0a3f51888da604" target="_top" xlink:title="throws an exception if queue is empty">
 <polygon fill="white" stroke="#666666" points="245,-19.25 123.25,-19.25 123.25,0 245,0 245,-19.25"/>
 <text text-anchor="middle" x="184.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">queue::ensureNotEmpty</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M87.69,-9.62C95.42,-9.62 103.66,-9.62 111.94,-9.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="111.8,-13.13 121.8,-9.62 111.8,-6.13 111.8,-13.13"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../db/da9/classqueue.html#a4bc52ad6ed6b0cc33ad05f87f05f8bec" target="_top" xlink:title="checks if the queue has no elements">
+<g id="a_node3"><a xlink:href="../../db/da9/classqueue.html#a4bc52ad6ed6b0cc33ad05f87f05f8bec" target="_top" xlink:title="checks if the queue has no elements">
 <polygon fill="white" stroke="#666666" points="393.75,-19.25 281,-19.25 281,0 393.75,0 393.75,-19.25"/>
 <text text-anchor="middle" x="337.38" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">queue::isEmptyQueue</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2_Node000002_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M245.34,-9.62C253.38,-9.62 261.67,-9.62 269.81,-9.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="269.79,-13.13 279.79,-9.62 269.79,-6.13 269.79,-13.13"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

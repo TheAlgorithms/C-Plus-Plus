@@ -6,31 +6,21 @@
 <!-- Title: uint256_t::operator= Pages: 1 -->
 <svg width="387pt" height="39pt"
  viewBox="0.00 0.00 386.75 38.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 34.5)">
 <title>uint256_t::operator=</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="operator = for type string">
+<g id="a_node1"><a xlink:title="operator = for type string">
 <polygon fill="#999999" stroke="#666666" points="103,-24.88 0,-24.88 0,-5.63 103,-5.63 103,-24.88"/>
 <text text-anchor="middle" x="51.5" y="-11.38" font-family="Helvetica,sans-Serif" font-size="10.00">uint256_t::operator=</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../d1/d83/classuint256__t.html#afee82fa5052e9d8c946b9205b943cec4" target="_top" xlink:title="First and second half of 256 bit number.">
+<g id="a_node2"><a xlink:href="../../d1/d83/classuint256__t.html#afee82fa5052e9d8c946b9205b943cec4" target="_top" xlink:title="First and second half of 256 bit number.">
 <polygon fill="white" stroke="#666666" points="259.25,-30.5 139,-30.5 139,0 259.25,0 259.25,-30.5"/>
 <text text-anchor="start" x="147" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">uint256_t::__get_integer</text>
 <text text-anchor="middle" x="199.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">_from_string</text>
@@ -38,46 +28,25 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M103.43,-15.25C111.36,-15.25 119.67,-15.25 127.93,-15.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="127.73,-18.75 137.73,-15.25 127.73,-11.75 127.73,-18.75"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="378.75,-24.88 295.25,-24.88 295.25,-5.63 378.75,-5.63 378.75,-24.88"/>
 <text text-anchor="middle" x="337" y="-11.38" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::size</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2_Node000002_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M259.72,-15.25C267.77,-15.25 275.97,-15.25 283.87,-15.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="283.79,-18.75 293.79,-15.25 283.79,-11.75 283.79,-18.75"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

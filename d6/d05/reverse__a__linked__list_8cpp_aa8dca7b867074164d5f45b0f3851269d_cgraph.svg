@@ -6,49 +6,36 @@
 <!-- Title: test Pages: 1 -->
 <svg width="343pt" height="223pt"
  viewBox="0.00 0.00 342.50 222.88" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 218.88)">
 <title>test</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Self&#45;test implementations.">
+<g id="a_node1"><a xlink:title="Self&#45;test implementations.">
 <polygon fill="#999999" stroke="#666666" points="32.5,-122.88 0,-122.88 0,-103.62 32.5,-103.62 32.5,-122.88"/>
 <text text-anchor="middle" x="16.25" y="-109.38" font-family="Helvetica,sans-Serif" font-size="10.00">test</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="152.75,-214.88 99.25,-214.88 99.25,-195.62 152.75,-195.62 152.75,-214.88"/>
 <text text-anchor="middle" x="126" y="-201.38" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M21.71,-123.28C29.18,-138.95 45.67,-169.2 68.5,-186.25 74.46,-190.7 81.53,-194.15 88.61,-196.81"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="87.28,-200.39 97.88,-200.17 89.46,-193.73 87.28,-200.39"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#a4649fc2c5d09dc58608cd9299db9946f" target="_top" xlink:title="Utility function that adds a new element at the end of the list.">
+<g id="a_node3"><a xlink:href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#a4649fc2c5d09dc58608cd9299db9946f" target="_top" xlink:title="Utility function that adds a new element at the end of the list.">
 <polygon fill="white" stroke="#666666" points="183.5,-177.5 68.5,-177.5 68.5,-147 183.5,-147 183.5,-177.5"/>
 <text text-anchor="start" x="76.5" y="-164" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::linked</text>
 <text text-anchor="middle" x="126" y="-152.75" font-family="Helvetica,sans-Serif" font-size="10.00">_list::list::insert</text>
@@ -56,18 +43,15 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2_Node000001_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M32.91,-120.69C43.04,-125.47 56.52,-131.79 68.5,-137.25 72.08,-138.88 75.79,-140.55 79.52,-142.23"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="77.83,-145.75 88.38,-146.63 80.68,-139.36 77.83,-145.75"/>
-</a>
-</g>
 </g>
 <!-- Node6 -->
-<g id="Node000006" class="node">
+<g id="node6" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#a8b20ca89a0346c8d4193936481528c70" target="_top" xlink:title="Utility function for reversing a list.">
+<g id="a_node6"><a xlink:href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#a8b20ca89a0346c8d4193936481528c70" target="_top" xlink:title="Utility function for reversing a list.">
 <polygon fill="white" stroke="#666666" points="183.5,-128.5 68.5,-128.5 68.5,-98 183.5,-98 183.5,-128.5"/>
 <text text-anchor="start" x="76.5" y="-115" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::linked</text>
 <text text-anchor="middle" x="126" y="-103.75" font-family="Helvetica,sans-Serif" font-size="10.00">_list::list::reverseList</text>
@@ -75,18 +59,15 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
-<g id="edge5_Node000001_Node000006" class="edge">
+<g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M32.69,-113.25C39.55,-113.25 48.14,-113.25 57.31,-113.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="57.26,-116.75 67.26,-113.25 57.26,-109.75 57.26,-116.75"/>
-</a>
-</g>
 </g>
 <!-- Node7 -->
-<g id="Node000007" class="node">
+<g id="node7" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#a89ad00dbd262e2527129813b53e16f81" target="_top" xlink:title="Utility function to find the top element of the list.">
+<g id="a_node7"><a xlink:href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#a89ad00dbd262e2527129813b53e16f81" target="_top" xlink:title="Utility function to find the top element of the list.">
 <polygon fill="white" stroke="#666666" points="183.5,-79.5 68.5,-79.5 68.5,-49 183.5,-49 183.5,-79.5"/>
 <text text-anchor="start" x="76.5" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::linked</text>
 <text text-anchor="middle" x="126" y="-54.75" font-family="Helvetica,sans-Serif" font-size="10.00">_list::list::top</text>
@@ -94,18 +75,15 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
-<g id="edge6_Node000001_Node000007" class="edge">
+<g id="edge6" class="edge">
 <title>Node1&#45;&gt;Node7</title>
-<g id="a_edge6_Node000001_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M32.91,-105.81C43.04,-101.03 56.52,-94.71 68.5,-89.25 72.08,-87.62 75.79,-85.95 79.52,-84.27"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="80.68,-87.14 88.38,-79.87 77.83,-80.75 80.68,-87.14"/>
-</a>
-</g>
 </g>
 <!-- Node8 -->
-<g id="Node000008" class="node">
+<g id="node8" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#aaca3be50a2a81bf3308d202a6dcee91a" target="_top" xlink:title="Utility function to find the i th element of the list.">
+<g id="a_node8"><a xlink:href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#aaca3be50a2a81bf3308d202a6dcee91a" target="_top" xlink:title="Utility function to find the i th element of the list.">
 <polygon fill="white" stroke="#666666" points="183.5,-30.5 68.5,-30.5 68.5,0 183.5,0 183.5,-30.5"/>
 <text text-anchor="start" x="76.5" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::linked</text>
 <text text-anchor="middle" x="126" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">_list::list::traverse</text>
@@ -113,18 +91,15 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
-<g id="edge8_Node000001_Node000008" class="edge">
+<g id="edge8" class="edge">
 <title>Node1&#45;&gt;Node8</title>
-<g id="a_edge8_Node000001_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M22.03,-103.22C29.82,-87.81 46.6,-58.24 68.5,-40.25 70.09,-38.95 71.75,-37.7 73.47,-36.51"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="74.77,-39.2 81.47,-30.99 71.11,-33.24 74.77,-39.2"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#ae8424a4fce3d483f7c85d6f6a5c79a1a" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#ae8424a4fce3d483f7c85d6f6a5c79a1a" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="334.5,-107.5 219.5,-107.5 219.5,-77 334.5,-77 334.5,-107.5"/>
 <text text-anchor="start" x="227.5" y="-94" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::linked</text>
 <text text-anchor="middle" x="277" y="-82.75" font-family="Helvetica,sans-Serif" font-size="10.00">_list::list::isEmpty</text>
@@ -132,55 +107,31 @@
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
-<g id="edge3_Node000003_Node000004" class="edge">
+<g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M162.95,-146.57C169.8,-143.53 176.88,-140.32 183.5,-137.25 200.4,-129.4 218.89,-120.48 234.87,-112.65"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="236.02,-115.5 243.46,-107.95 232.94,-109.21 236.02,-115.5"/>
-</a>
-</g>
 </g>
 <!-- Node5 -->
-<g id="Node000005" class="node">
+<g id="node5" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/error/exception/what.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/error/exception/what.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="328.88,-171.88 225.12,-171.88 225.12,-152.62 328.88,-152.62 328.88,-171.88"/>
 <text text-anchor="middle" x="277" y="-158.38" font-family="Helvetica,sans-Serif" font-size="10.00">std::bad_alloc::what</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node5 -->
-<g id="edge4_Node000003_Node000005" class="edge">
+<g id="edge4" class="edge">
 <title>Node3&#45;&gt;Node5</title>
-<g id="a_edge4_Node000003_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M183.76,-162.25C193.66,-162.25 204.01,-162.25 214.05,-162.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="213.78,-165.75 223.78,-162.25 213.78,-158.75 213.78,-165.75"/>
-</a>
-</g>
 </g>
 <!-- Node7&#45;&gt;Node4 -->
-<g id="edge7_Node000007_Node000004" class="edge">
+<g id="edge7" class="edge">
 <title>Node7&#45;&gt;Node4</title>
-<g id="a_edge7_Node000007_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M183.76,-74.92C191.88,-76.44 200.29,-78.02 208.59,-79.58"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="207.93,-83.21 218.4,-81.61 209.22,-76.33 207.93,-83.21"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

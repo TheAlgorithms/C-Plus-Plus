@@ -9,9 +9,9 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 260.25)">
 <title>ciphers::HillCipher::generate_decryption_key</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Generate decryption matrix from an encryption matrix key.">
+<g id="a_node1"><a xlink:title="Generate decryption matrix from an encryption matrix key.">
 <polygon fill="#999999" stroke="#666666" points="130.75,-125.88 0,-125.88 0,-95.38 130.75,-95.38 130.75,-125.88"/>
 <text text-anchor="start" x="8" y="-112.38" font-family="Helvetica,sans-Serif" font-size="10.00">ciphers::HillCipher</text>
 <text text-anchor="middle" x="65.38" y="-101.12" font-family="Helvetica,sans-Serif" font-size="10.00">::generate_decryption_key</text>
@@ -19,63 +19,54 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="254.75,-218.25 175,-218.25 175,-199 254.75,-199 254.75,-218.25"/>
 <text text-anchor="middle" x="214.88" y="-204.75" font-family="Helvetica,sans-Serif" font-size="10.00">determinant_lu</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M85.7,-126.36C105.44,-142.07 137.28,-166.43 166.75,-184.62 171.83,-187.76 177.37,-190.85 182.8,-193.72"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="180.86,-197.17 191.36,-198.6 184.04,-190.93 180.86,-197.17"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="513.25,-199.25 426.75,-199.25 426.75,-180 513.25,-180 513.25,-199.25"/>
 <text text-anchor="middle" x="470" y="-185.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge10_Node000001_Node000004" class="edge">
+<g id="edge10" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<g id="a_edge10_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M98.63,-126.34C117.96,-135.1 143.26,-145.47 166.75,-151.62 251.99,-173.98 354.32,-183.33 415.38,-187.14"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="415.09,-190.69 425.28,-187.79 415.51,-183.7 415.09,-190.69"/>
-</a>
-</g>
 </g>
 <!-- Node5 -->
-<g id="Node000005" class="node">
+<g id="node5" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/program/exit.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/program/exit.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="240.5,-142.25 189.25,-142.25 189.25,-123 240.5,-123 240.5,-142.25"/>
 <text text-anchor="middle" x="214.88" y="-128.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::exit</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
-<g id="edge5_Node000001_Node000005" class="edge">
+<g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<g id="a_edge5_Node000001_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M131.07,-120.27C147.2,-122.68 163.91,-125.17 178.06,-127.28"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="177.39,-130.87 187.8,-128.88 178.42,-123.95 177.39,-130.87"/>
-</a>
-</g>
 </g>
 <!-- Node6 -->
-<g id="Node000006" class="node">
+<g id="node6" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="../../d6/d26/classciphers_1_1_hill_cipher.html#a2eb58750b978a93ac5e6eb29e3e570b7" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="../../d6/d26/classciphers_1_1_hill_cipher.html#a2eb58750b978a93ac5e6eb29e3e570b7" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="263,-104.88 166.75,-104.88 166.75,-74.38 263,-74.38 263,-104.88"/>
 <text text-anchor="start" x="174.75" y="-91.38" font-family="Helvetica,sans-Serif" font-size="10.00">ciphers::HillCipher</text>
 <text text-anchor="middle" x="214.88" y="-80.12" font-family="Helvetica,sans-Serif" font-size="10.00">::get_inverse</text>
@@ -83,112 +74,88 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
-<g id="edge6_Node000001_Node000006" class="edge">
+<g id="edge6" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<g id="a_edge6_Node000001_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M131.07,-101.41C139.27,-100.25 147.61,-99.06 155.7,-97.91"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="156.12,-101.24 165.52,-96.37 155.13,-94.31 156.12,-101.24"/>
-</a>
-</g>
 </g>
 <!-- Node8 -->
-<g id="Node000008" class="node">
+<g id="node8" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/round.html#" xlink:title=" ">
+<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/round.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="244.62,-56.25 185.12,-56.25 185.12,-37 244.62,-37 244.62,-56.25"/>
 <text text-anchor="middle" x="214.88" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::round</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
-<g id="edge9_Node000001_Node000008" class="edge">
+<g id="edge9" class="edge">
 <title>Node1&#45;&gt;Node8</title>
-<g id="a_edge9_Node000001_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M100.61,-94.89C119.95,-86.1 144.61,-75.05 166.75,-65.62 170.46,-64.05 174.34,-62.43 178.23,-60.83"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="179.42,-63.71 187.37,-56.7 176.78,-57.23 179.42,-63.71"/>
-</a>
-</g>
 </g>
 <!-- Node9 -->
-<g id="Node000009" class="node">
+<g id="node9" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/byte/strlen.html#" xlink:title=" ">
+<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/byte/strlen.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="244.62,-19.25 185.12,-19.25 185.12,0 244.62,0 244.62,-19.25"/>
 <text text-anchor="middle" x="214.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::strlen</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node9 -->
-<g id="edge11_Node000001_Node000009" class="edge">
+<g id="edge11" class="edge">
 <title>Node1&#45;&gt;Node9</title>
-<g id="a_edge11_Node000001_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M81.84,-95.05C100.57,-76.88 133.74,-46.87 166.75,-27.62 169.29,-26.15 171.97,-24.75 174.71,-23.43"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="176.01,-26.24 183.78,-19.03 173.21,-19.83 176.01,-26.24"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../d1/dbe/lu__decomposition_8h.html#a75b8a228c6419ecda6077255d6d60509" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="../../d1/dbe/lu__decomposition_8h.html#a75b8a228c6419ecda6077255d6d60509" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="390.75,-256.25 299,-256.25 299,-237 390.75,-237 390.75,-256.25"/>
 <text text-anchor="middle" x="344.88" y="-242.75" font-family="Helvetica,sans-Serif" font-size="10.00">lu_decomposition</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2_Node000002_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M249.84,-218.71C265.15,-223.25 283.43,-228.68 299.78,-233.53"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="298.61,-237.14 309.19,-236.63 300.6,-230.42 298.61,-237.14"/>
-</a>
-</g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
-<g id="edge4_Node000002_Node000004" class="edge">
+<g id="edge4" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<g id="a_edge4_Node000002_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M255.15,-205.68C298.31,-202.44 367.87,-197.22 415.87,-193.61"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="415.97,-197.04 425.68,-192.8 415.44,-190.06 415.97,-197.04"/>
-</a>
-</g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
-<g id="edge3_Node000003_Node000004" class="edge">
+<g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M367.6,-236.57C387.03,-227.57 415.74,-214.28 437.65,-204.14"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="438.88,-206.96 446.49,-199.58 435.94,-200.61 438.88,-206.96"/>
-</a>
-</g>
 </g>
 <!-- Node6&#45;&gt;Node4 -->
-<g id="edge8_Node000006_Node000004" class="edge">
+<g id="edge8" class="edge">
 <title>Node6&#45;&gt;Node4</title>
-<g id="a_edge8_Node000006_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M258.08,-105.34C293.59,-118.68 345.66,-138.48 390.75,-156.62 405.57,-162.59 421.87,-169.42 435.74,-175.31"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="434.23,-178.9 444.8,-179.6 436.98,-172.46 434.23,-178.9"/>
-</a>
-</g>
 </g>
 <!-- Node7 -->
-<g id="Node000007" class="node">
+<g id="node7" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="371.62,-99.25 318.12,-99.25 318.12,-80 371.62,-80 371.62,-99.25"/>
 <text text-anchor="middle" x="344.88" y="-85.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node7 -->
-<g id="edge7_Node000006_Node000007" class="edge">
+<g id="edge7" class="edge">
 <title>Node6&#45;&gt;Node7</title>
-<g id="a_edge7_Node000006_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M263.17,-89.62C277.64,-89.62 293.33,-89.62 306.99,-89.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="306.93,-93.13 316.93,-89.62 306.93,-86.13 306.93,-93.13"/>
-</a>
-</g>
 </g>
 </g>
 </svg>

@@ -6,311 +6,235 @@
 <!-- Title: main Pages: 1 -->
 <svg width="433pt" height="267pt"
  viewBox="0.00 0.00 432.75 267.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 263.25)">
 <title>main</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="37,-167.25 0,-167.25 0,-148 37,-148 37,-167.25"/>
 <text text-anchor="middle" x="18.5" y="-153.75" font-family="Helvetica,sans-Serif" font-size="10.00">main</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/byte/atof.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/byte/atof.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="151.62,-204.25 99.62,-204.25 99.62,-185 151.62,-185 151.62,-204.25"/>
 <text text-anchor="middle" x="125.62" y="-190.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::atof</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M37.32,-163.98C47.72,-167.69 61.1,-172.44 73,-176.62 78.18,-178.45 83.66,-180.37 89.04,-182.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="87.55,-185.78 98.14,-185.77 89.86,-179.17 87.55,-185.78"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../d3/d06/ode__semi__implicit__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="../../d3/d06/ode__semi__implicit__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="178.25,-167.25 73,-167.25 73,-148 178.25,-148 178.25,-167.25"/>
 <text text-anchor="middle" x="125.62" y="-153.75" font-family="Helvetica,sans-Serif" font-size="10.00">save_exact_solution</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2_Node000001_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M37.33,-157.62C44.33,-157.62 52.81,-157.62 61.71,-157.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="61.69,-161.13 71.69,-157.62 61.69,-154.13 61.69,-161.13"/>
-</a>
-</g>
 </g>
 <!-- Node11 -->
-<g id="Node000011" class="node">
+<g id="node11" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="../../d6/d60/group__ode.html#ga3874d294ab00fe9ce8731c5b7991a089" target="_top" xlink:title="Compute approximation using the semi&#45;implicit&#45;Euler method in the given limits.">
+<g id="a_node11"><a xlink:href="../../d6/d60/group__ode.html#ga3874d294ab00fe9ce8731c5b7991a089" target="_top" xlink:title="Compute approximation using the semi&#45;implicit&#45;Euler method in the given limits.">
 <polygon fill="white" stroke="#666666" points="175.25,-130.25 76,-130.25 76,-111 175.25,-111 175.25,-130.25"/>
 <text text-anchor="middle" x="125.62" y="-116.75" font-family="Helvetica,sans-Serif" font-size="10.00">semi_implicit_euler</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node11 -->
-<g id="edge10_Node000001_Node000011" class="edge">
+<g id="edge10" class="edge">
 <title>Node1&#45;&gt;Node11</title>
-<g id="a_edge10_Node000001_Node000011"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M37.32,-151.27C47.72,-147.56 61.1,-142.81 73,-138.62 77.02,-137.21 81.21,-135.74 85.39,-134.28"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="86.39,-137.29 94.67,-130.69 84.08,-130.68 86.39,-137.29"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/chrono/c/clock.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/chrono/c/clock.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="305.25,-130.25 246.5,-130.25 246.5,-111 305.25,-111 305.25,-130.25"/>
 <text text-anchor="middle" x="275.88" y="-116.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::clock</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
-<g id="edge3_Node000003_Node000004" class="edge">
+<g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M167.13,-147.51C188.45,-142.19 214.48,-135.7 235.61,-130.43"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="236.3,-133.61 245.16,-127.79 234.61,-126.82 236.3,-133.61"/>
-</a>
-</g>
 </g>
 <!-- Node5 -->
-<g id="Node000005" class="node">
+<g id="node5" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="327.38,-93.25 224.38,-93.25 224.38,-74 327.38,-74 327.38,-93.25"/>
 <text text-anchor="middle" x="275.88" y="-79.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::close</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node5 -->
-<g id="edge4_Node000003_Node000005" class="edge">
+<g id="edge4" class="edge">
 <title>Node3&#45;&gt;Node5</title>
-<g id="a_edge4_Node000003_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M162.66,-147.57C168.09,-145.35 173.47,-142.72 178.25,-139.62 197.79,-126.99 194.42,-113.8 214.25,-101.62 216.42,-100.29 218.7,-99.05 221.04,-97.9"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="222.15,-100.81 229.96,-93.65 219.39,-94.37 222.15,-100.81"/>
-</a>
-</g>
 </g>
 <!-- Node6 -->
-<g id="Node000006" class="node">
+<g id="node6" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="../../d3/d06/ode__semi__implicit__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b" target="_top" xlink:title="Exact solution of the problem. Used for solution comparison.">
+<g id="a_node6"><a xlink:href="../../d3/d06/ode__semi__implicit__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b" target="_top" xlink:title="Exact solution of the problem. Used for solution comparison.">
 <polygon fill="white" stroke="#666666" points="315.38,-241.25 236.38,-241.25 236.38,-222 315.38,-222 315.38,-241.25"/>
 <text text-anchor="middle" x="275.88" y="-227.75" font-family="Helvetica,sans-Serif" font-size="10.00">exact_solution</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node6 -->
-<g id="edge5_Node000003_Node000006" class="edge">
+<g id="edge5" class="edge">
 <title>Node3&#45;&gt;Node6</title>
-<g id="a_edge5_Node000003_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M162.66,-167.68C168.09,-169.9 173.47,-172.53 178.25,-175.62 197.79,-188.26 194.42,-201.45 214.25,-213.62 217.88,-215.86 221.81,-217.82 225.85,-219.56"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="224.47,-223.15 235.06,-223.4 226.94,-216.6 224.47,-223.15"/>
-</a>
-</g>
 </g>
 <!-- Node9 -->
-<g id="Node000009" class="node">
+<g id="node9" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html#" xlink:title=" ">
+<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="332.62,-204.25 219.12,-204.25 219.12,-185 332.62,-185 332.62,-204.25"/>
 <text text-anchor="middle" x="275.88" y="-190.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::is_open</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node9 -->
-<g id="edge8_Node000003_Node000009" class="edge">
+<g id="edge8" class="edge">
 <title>Node3&#45;&gt;Node9</title>
-<g id="a_edge8_Node000003_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M167.13,-167.74C184.62,-172.1 205.27,-177.25 223.8,-181.88"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="222.86,-185.5 233.41,-184.53 224.56,-178.71 222.86,-185.5"/>
-</a>
-</g>
 </g>
 <!-- Node10 -->
-<g id="Node000010" class="node">
+<g id="node10" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/c/perror.html#" xlink:title=" ">
+<g id="a_node10"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/c/perror.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="306,-167.25 245.75,-167.25 245.75,-148 306,-148 306,-167.25"/>
 <text text-anchor="middle" x="275.88" y="-153.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::perror</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node10 -->
-<g id="edge9_Node000003_Node000010" class="edge">
+<g id="edge9" class="edge">
 <title>Node3&#45;&gt;Node10</title>
-<g id="a_edge9_Node000003_Node000010"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M178.48,-157.62C196.83,-157.62 217.2,-157.62 234.46,-157.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="234.31,-161.13 244.31,-157.62 234.31,-154.13 234.31,-161.13"/>
-</a>
-</g>
 </g>
 <!-- Node7 -->
-<g id="Node000007" class="node">
+<g id="node7" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/cos.html#" xlink:title=" ">
+<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/cos.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="424.75,-222.25 373.5,-222.25 373.5,-203 424.75,-203 424.75,-222.25"/>
 <text text-anchor="middle" x="399.12" y="-208.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::cos</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node7 -->
-<g id="edge6_Node000006_Node000007" class="edge">
+<g id="edge6" class="edge">
 <title>Node6&#45;&gt;Node7</title>
-<g id="a_edge6_Node000006_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M315.57,-225.56C330.59,-223.21 347.69,-220.53 362.42,-218.22"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="362.8,-221.55 372.14,-216.54 361.72,-214.63 362.8,-221.55"/>
-</a>
-</g>
 </g>
 <!-- Node8 -->
-<g id="Node000008" class="node">
+<g id="node8" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sin.html#" xlink:title=" ">
+<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sin.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="423.25,-259.25 375,-259.25 375,-240 423.25,-240 423.25,-259.25"/>
 <text text-anchor="middle" x="399.12" y="-245.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::sin</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node8 -->
-<g id="edge7_Node000006_Node000008" class="edge">
+<g id="edge7" class="edge">
 <title>Node6&#45;&gt;Node8</title>
-<g id="a_edge7_Node000006_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M315.57,-237.37C331.04,-239.67 348.7,-242.29 363.71,-244.52"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="363.18,-248.12 373.59,-246.13 364.21,-241.2 363.18,-248.12"/>
-</a>
-</g>
 </g>
 <!-- Node11&#45;&gt;Node4 -->
-<g id="edge11_Node000011_Node000004" class="edge">
+<g id="edge11" class="edge">
 <title>Node11&#45;&gt;Node4</title>
-<g id="a_edge11_Node000011_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M175.58,-120.62C195,-120.62 217.03,-120.62 235.4,-120.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="235.3,-124.13 245.3,-120.62 235.3,-117.13 235.3,-124.13"/>
-</a>
-</g>
 </g>
 <!-- Node11&#45;&gt;Node5 -->
-<g id="edge12_Node000011_Node000005" class="edge">
+<g id="edge12" class="edge">
 <title>Node11&#45;&gt;Node5</title>
-<g id="a_edge12_Node000011_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M167.13,-110.51C184.62,-106.15 205.27,-101 223.8,-96.37"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="224.56,-99.54 233.41,-93.72 222.86,-92.75 224.56,-99.54"/>
-</a>
-</g>
 </g>
 <!-- Node11&#45;&gt;Node9 -->
-<g id="edge13_Node000011_Node000009" class="edge">
+<g id="edge13" class="edge">
 <title>Node11&#45;&gt;Node9</title>
-<g id="a_edge13_Node000011_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M162.66,-130.68C168.09,-132.9 173.47,-135.53 178.25,-138.62 197.79,-151.26 194.42,-164.45 214.25,-176.62 216.42,-177.96 218.7,-179.2 221.04,-180.35"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="219.39,-183.88 229.96,-184.6 222.15,-177.44 219.39,-183.88"/>
-</a>
-</g>
 </g>
 <!-- Node11&#45;&gt;Node10 -->
-<g id="edge15_Node000011_Node000010" class="edge">
+<g id="edge15" class="edge">
 <title>Node11&#45;&gt;Node10</title>
-<g id="a_edge15_Node000011_Node000010"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M167.13,-130.74C188.31,-136.02 214.12,-142.46 235.17,-147.72"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="234.15,-151.32 244.7,-150.34 235.84,-144.53 234.15,-151.32"/>
-</a>
-</g>
 </g>
 <!-- Node12 -->
-<g id="Node000012" class="node">
+<g id="node12" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html#" xlink:title=" ">
+<g id="a_node12"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="326.25,-56.25 225.5,-56.25 225.5,-37 326.25,-37 326.25,-56.25"/>
 <text text-anchor="middle" x="275.88" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::open</text>
 </a>
 </g>
 </g>
 <!-- Node11&#45;&gt;Node12 -->
-<g id="edge14_Node000011_Node000012" class="edge">
+<g id="edge14" class="edge">
 <title>Node11&#45;&gt;Node12</title>
-<g id="a_edge14_Node000011_Node000012"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M139.61,-110.66C156.16,-98.37 186.01,-77.53 214.25,-64.62 217.65,-63.07 221.21,-61.61 224.84,-60.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="225.85,-63.26 234.15,-56.68 223.56,-56.65 225.85,-63.26"/>
-</a>
-</g>
 </g>
 <!-- Node13 -->
-<g id="Node000013" class="node">
+<g id="node13" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:href="../../d6/d60/group__ode.html#ga827bf009831ddc477c5fa8891d5cb35f" target="_top" xlink:title="Compute next step approximation using the semi&#45;implicit&#45;Euler method.">
+<g id="a_node13"><a xlink:href="../../d6/d60/group__ode.html#ga827bf009831ddc477c5fa8891d5cb35f" target="_top" xlink:title="Compute next step approximation using the semi&#45;implicit&#45;Euler method.">
 <polygon fill="white" stroke="#666666" points="337.5,-19.25 214.25,-19.25 214.25,0 337.5,0 337.5,-19.25"/>
 <text text-anchor="middle" x="275.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">semi_implicit_euler_step</text>
 </a>
 </g>
 </g>
 <!-- Node11&#45;&gt;Node13 -->
-<g id="edge16_Node000011_Node000013" class="edge">
+<g id="edge16" class="edge">
 <title>Node11&#45;&gt;Node13</title>
-<g id="a_edge16_Node000011_Node000013"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M133.31,-110.58C146.5,-91.53 177.79,-50.07 214.25,-27.62 216.42,-26.29 218.69,-25.05 221.04,-23.89"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="222.15,-26.8 229.95,-19.63 219.38,-20.37 222.15,-26.8"/>
-</a>
-</g>
 </g>
 <!-- Node14 -->
-<g id="Node000014" class="node">
+<g id="node14" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="../../d3/d06/ode__semi__implicit__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe" target="_top" xlink:title="Problem statement for a system with first&#45;order differential equations. Updates the system differenti...">
+<g id="a_node14"><a xlink:href="../../d3/d06/ode__semi__implicit__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe" target="_top" xlink:title="Problem statement for a system with first&#45;order differential equations. Updates the system differenti...">
 <polygon fill="white" stroke="#666666" points="424.38,-19.25 373.88,-19.25 373.88,0 424.38,0 424.38,-19.25"/>
 <text text-anchor="middle" x="399.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">problem</text>
 </a>
 </g>
 </g>
 <!-- Node13&#45;&gt;Node14 -->
-<g id="edge17_Node000013_Node000014" class="edge">
+<g id="edge17" class="edge">
 <title>Node13&#45;&gt;Node14</title>
-<g id="a_edge17_Node000013_Node000014"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M337.86,-9.62C346.33,-9.62 354.8,-9.62 362.6,-9.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="362.47,-13.13 372.47,-9.62 362.47,-6.13 362.47,-13.13"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

@@ -6,22 +6,12 @@
 <!-- Title: operations_on_datastructures::reverse_binary_tree::BinaryTree::reverse Pages: 1 -->
 <svg width="366pt" height="68pt"
  viewBox="0.00 0.00 365.50 67.75" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 63.75)">
 <title>operations_on_datastructures::reverse_binary_tree::BinaryTree::reverse</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="160.75,-41.75 0,-41.75 0,0 160.75,0 160.75,-41.75"/>
 <text text-anchor="start" x="8" y="-28.25" font-family="Helvetica,sans-Serif" font-size="10.00">operations_on_datastructures</text>
 <text text-anchor="start" x="8" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">::reverse_binary_tree::BinaryTree</text>
@@ -30,9 +20,9 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#af6f974381f523fdb981fc2d843bbf4a1" target="_top" xlink:title="Reverses a Binary Tree recursively by swapping the left and right subtrees and their children.">
+<g id="a_node2"><a xlink:href="../../de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#af6f974381f523fdb981fc2d843bbf4a1" target="_top" xlink:title="Reverses a Binary Tree recursively by swapping the left and right subtrees and their children.">
 <polygon fill="white" stroke="#666666" points="357.5,-41.75 196.75,-41.75 196.75,0 357.5,0 357.5,-41.75"/>
 <text text-anchor="start" x="204.75" y="-28.25" font-family="Helvetica,sans-Serif" font-size="10.00">operations_on_datastructures</text>
 <text text-anchor="start" x="204.75" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">::reverse_binary_tree::BinaryTree</text>
@@ -41,37 +31,16 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M161.15,-20.88C169.26,-20.88 177.53,-20.88 185.74,-20.88"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="185.47,-24.38 195.47,-20.88 185.47,-17.38 185.47,-24.38"/>
-</a>
-</g>
 </g>
 <!-- Node2&#45;&gt;Node2 -->
-<g id="edge2_Node000002_Node000002" class="edge">
+<g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node2</title>
-<g id="a_edge2_Node000002_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M240.81,-42.07C237.35,-51.55 249.46,-59.75 277.12,-59.75 293.99,-59.75 305.07,-56.7 310.37,-52.18"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="313.88,-53.65 313.44,-43.07 307.18,-51.62 313.88,-53.65"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

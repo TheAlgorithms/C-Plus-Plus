@@ -6,185 +6,130 @@
 <!-- Title: main Pages: 1 -->
 <svg width="440pt" height="129pt"
  viewBox="0.00 0.00 439.50 129.37" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 125.37)">
 <title>main</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="37,-83.25 0,-83.25 0,-64 37,-64 37,-83.25"/>
 <text text-anchor="middle" x="18.5" y="-69.75" font-family="Helvetica,sans-Serif" font-size="10.00">main</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../df/dce/namespacegraph.html#a9125ceb66bfbec3093bba64c2c1e99e2" target="_top" xlink:title="Function that add edge between two nodes or vertices of graph.">
+<g id="a_node2"><a xlink:href="../../df/dce/namespacegraph.html#a9125ceb66bfbec3093bba64c2c1e99e2" target="_top" xlink:title="Function that add edge between two nodes or vertices of graph.">
 <polygon fill="white" stroke="#666666" points="270,-121.25 185.75,-121.25 185.75,-102 270,-102 270,-121.25"/>
 <text text-anchor="middle" x="227.88" y="-107.75" font-family="Helvetica,sans-Serif" font-size="10.00">graph::addEdge</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M29.48,-83.66C39.49,-92.96 55.85,-106.15 73,-111.62 105.64,-122.04 144.2,-122.02 174.55,-119.4"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="174.73,-122.8 184.33,-118.34 174.04,-115.84 174.73,-122.8"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="254.62,-74.25 201.12,-74.25 201.12,-55 254.62,-55 254.62,-74.25"/>
 <text text-anchor="middle" x="227.88" y="-60.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2_Node000001_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M37.18,-72.86C70.95,-71.39 145.26,-68.17 190.2,-66.22"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="190.11,-69.68 199.95,-65.75 189.8,-62.69 190.11,-69.68"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="../../df/dce/namespacegraph.html#a83ab16e96cec644109a58dfc9329bc2b" target="_top" xlink:title="Function that perfoms depth first search algorithm on graph and calculated the number of connected co...">
+<g id="a_node4"><a xlink:href="../../df/dce/namespacegraph.html#a83ab16e96cec644109a58dfc9329bc2b" target="_top" xlink:title="Function that perfoms depth first search algorithm on graph and calculated the number of connected co...">
 <polygon fill="white" stroke="#666666" points="309,-37.25 146.75,-37.25 146.75,-18 309,-18 309,-37.25"/>
 <text text-anchor="middle" x="227.88" y="-23.75" font-family="Helvetica,sans-Serif" font-size="10.00">graph::getConnectedComponents</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge3_Node000001_Node000004" class="edge">
+<g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M37.18,-69.7C66.41,-63.22 126,-50 170.64,-40.1"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="171.34,-43.31 180.35,-37.72 169.82,-36.47 171.34,-43.31"/>
-</a>
-</g>
 </g>
 <!-- Node7 -->
-<g id="Node000007" class="node">
+<g id="node7" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="../../df/ddd/connected__components_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9" target="_top" xlink:title=" ">
+<g id="a_node7"><a xlink:href="../../df/ddd/connected__components_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="110.75,-102.25 73,-102.25 73,-83 110.75,-83 110.75,-102.25"/>
 <text text-anchor="middle" x="91.88" y="-88.75" font-family="Helvetica,sans-Serif" font-size="10.00">tests</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
-<g id="edge7_Node000001_Node000007" class="edge">
+<g id="edge7" class="edge">
 <title>Node1&#45;&gt;Node7</title>
-<g id="a_edge7_Node000001_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M37.14,-78.32C44.81,-80.36 53.98,-82.8 62.55,-85.09"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="61.38,-88.66 71.94,-87.85 63.18,-81.9 61.38,-88.66"/>
-</a>
-</g>
 </g>
 <!-- Node5 -->
-<g id="Node000005" class="node">
+<g id="node5" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="../../df/dce/namespacegraph.html#a3ae80bc4c6a79d041b4f3a6589eb7fb8" target="_top" xlink:title="Utility function for depth first seach algorithm this function explores the vertex which is passed in...">
+<g id="a_node5"><a xlink:href="../../df/dce/namespacegraph.html#a3ae80bc4c6a79d041b4f3a6589eb7fb8" target="_top" xlink:title="Utility function for depth first seach algorithm this function explores the vertex which is passed in...">
 <polygon fill="white" stroke="#666666" points="427,-56.25 349.5,-56.25 349.5,-37 427,-37 427,-56.25"/>
 <text text-anchor="middle" x="388.25" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">graph::explore</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
-<g id="edge4_Node000004_Node000005" class="edge">
+<g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node5</title>
-<g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M309.45,-37.29C319.34,-38.48 329.2,-39.66 338.41,-40.77"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="337.94,-44.35 348.29,-42.07 338.78,-37.4 337.94,-44.35"/>
-</a>
-</g>
 </g>
 <!-- Node6 -->
-<g id="Node000006" class="node">
+<g id="node6" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="431.5,-19.25 345,-19.25 345,0 431.5,0 431.5,-19.25"/>
 <text text-anchor="middle" x="388.25" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node6 -->
-<g id="edge6_Node000004_Node000006" class="edge">
+<g id="edge6" class="edge">
 <title>Node4&#45;&gt;Node6</title>
-<g id="a_edge6_Node000004_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M309.45,-18.47C317.76,-17.52 326.05,-16.58 333.96,-15.68"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="334.29,-19.05 343.83,-14.45 333.5,-12.1 334.29,-19.05"/>
-</a>
-</g>
 </g>
 <!-- Node5&#45;&gt;Node5 -->
-<g id="edge5_Node000005_Node000005" class="edge">
+<g id="edge5" class="edge">
 <title>Node5&#45;&gt;Node5</title>
-<g id="a_edge5_Node000005_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M363.14,-56.54C351.69,-65.15 360.06,-74.25 388.25,-74.25 404.99,-74.25 414.74,-71.04 417.5,-66.63"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="420.39,-65.46 413.36,-57.54 413.92,-68.12 420.39,-65.46"/>
-</a>
-</g>
 </g>
 <!-- Node7&#45;&gt;Node2 -->
-<g id="edge8_Node000007_Node000002" class="edge">
+<g id="edge8" class="edge">
 <title>Node7&#45;&gt;Node2</title>
-<g id="a_edge8_Node000007_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M111.23,-95.23C127.55,-97.54 152.23,-101.04 174.61,-104.21"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="173.97,-107.8 184.36,-105.74 174.95,-100.87 173.97,-107.8"/>
-</a>
-</g>
 </g>
 <!-- Node7&#45;&gt;Node3 -->
-<g id="edge9_Node000007_Node000003" class="edge">
+<g id="edge9" class="edge">
 <title>Node7&#45;&gt;Node3</title>
-<g id="a_edge9_Node000007_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M111.23,-88.79C131.55,-84.54 164.82,-77.59 190.47,-72.23"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="190.87,-75.52 199.94,-70.04 189.44,-68.66 190.87,-75.52"/>
-</a>
-</g>
 </g>
 <!-- Node7&#45;&gt;Node4 -->
-<g id="edge10_Node000007_Node000004" class="edge">
+<g id="edge10" class="edge">
 <title>Node7&#45;&gt;Node4</title>
-<g id="a_edge10_Node000007_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M101.35,-82.74C111.18,-71.94 128.37,-54.94 146.75,-45.62 149.87,-44.05 153.12,-42.6 156.45,-41.29"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="157.38,-44.32 165.66,-37.7 155.06,-37.72 157.38,-44.32"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

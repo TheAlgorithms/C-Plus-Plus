@@ -6,67 +6,51 @@
 <!-- Title: test2 Pages: 1 -->
 <svg width="283pt" height="113pt"
  viewBox="0.00 0.00 282.50 112.88" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 108.88)">
 <title>test2</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Test function to find maxima for the function &#160;in the interval &#160;&#160;&#160;Expected result: .">
+<g id="a_node1"><a xlink:title="Test function to find maxima for the function &#160;in the interval &#160;&#160;&#160;Expected result: .">
 <polygon fill="#999999" stroke="#666666" points="37.75,-37.25 0,-37.25 0,-18 37.75,-18 37.75,-37.25"/>
 <text text-anchor="middle" x="18.88" y="-23.75" font-family="Helvetica,sans-Serif" font-size="10.00">test2</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../d6/d7a/golden__search__extrema_8cpp.html#a1aa76a6d5fd4d333f9072beff1dc486b" target="_top" xlink:title="Get the minima of a function in the given interval. To get the maxima, simply negate the function....">
+<g id="a_node2"><a xlink:href="../../d6/d7a/golden__search__extrema_8cpp.html#a1aa76a6d5fd4d333f9072beff1dc486b" target="_top" xlink:title="Get the minima of a function in the given interval. To get the maxima, simply negate the function....">
 <polygon fill="white" stroke="#666666" points="140,-56.25 73.75,-56.25 73.75,-37 140,-37 140,-56.25"/>
 <text text-anchor="middle" x="106.88" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">get_minima</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M38.11,-31.65C45.4,-33.27 54.14,-35.19 62.87,-37.12"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="61.9,-40.72 72.42,-39.46 63.41,-33.88 61.9,-40.72"/>
-</a>
-</g>
 </g>
 <!-- Node6 -->
-<g id="Node000006" class="node">
+<g id="node6" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/pow.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/pow.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="133.62,-19.25 80.12,-19.25 80.12,0 133.62,0 133.62,-19.25"/>
 <text text-anchor="middle" x="106.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::pow</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
-<g id="edge5_Node000001_Node000006" class="edge">
+<g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M38.11,-23.81C47.21,-21.9 58.55,-19.53 69.34,-17.27"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="69.76,-20.55 78.83,-15.08 68.33,-13.7 69.76,-20.55"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/types/numeric_limits/infinity.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/types/numeric_limits/infinity.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="274.5,-104.88 176,-104.88 176,-74.38 274.5,-74.38 274.5,-104.88"/>
 <text text-anchor="start" x="184" y="-91.38" font-family="Helvetica,sans-Serif" font-size="10.00">std::numeric_limits</text>
 <text text-anchor="middle" x="225.25" y="-80.12" font-family="Helvetica,sans-Serif" font-size="10.00">::infinity</text>
@@ -74,64 +58,40 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2_Node000002_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M135.16,-56.71C146.08,-60.74 159.05,-65.53 171.66,-70.19"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="170.06,-73.7 180.65,-73.88 172.48,-67.14 170.06,-73.7"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="251.25,-56.25 199.25,-56.25 199.25,-37 251.25,-37 251.25,-56.25"/>
 <text text-anchor="middle" x="225.25" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::sqrt</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
-<g id="edge3_Node000002_Node000004" class="edge">
+<g id="edge3" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<g id="a_edge3_Node000002_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M140.29,-46.62C155.23,-46.62 173,-46.62 188.35,-46.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="188.01,-50.13 198.01,-46.62 188.01,-43.13 188.01,-50.13"/>
-</a>
-</g>
 </g>
 <!-- Node5 -->
-<g id="Node000005" class="node">
+<g id="node5" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/swap.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/swap.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="254.62,-19.25 195.88,-19.25 195.88,0 254.62,0 254.62,-19.25"/>
 <text text-anchor="middle" x="225.25" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::swap</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node5 -->
-<g id="edge4_Node000002_Node000005" class="edge">
+<g id="edge4" class="edge">
 <title>Node2&#45;&gt;Node5</title>
-<g id="a_edge4_Node000002_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M139.67,-36.51C153.75,-32.04 170.45,-26.73 185.27,-22.02"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="186.2,-25.08 194.67,-18.71 184.08,-18.41 186.2,-25.08"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

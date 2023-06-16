@@ -5,59 +5,59 @@
  -->
 <!-- Title: machine_learning::neural_network::NeuralNetwork::single_predict Pages: 1 -->
 <!--zoomable 172 -->
-
 <svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
 <style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
 .edge:hover path { stroke: red; }
 .edge:hover polygon { stroke: red; fill: red; }
 ]]></style>
+<script type="text/javascript"><![CDATA[
+var edges = document.getElementsByTagName('g');
+if (edges && edges.length) {
+  for (var i=0;i<edges.length;i++) {
+    if (edges[i].id.substr(0,4)=='edge') {
+      edges[i].setAttribute('class','edge');
+    }
+  }
+}
+]]></script>
+        <defs>
+                <circle id="rim" cx="0" cy="0" r="7"/>
+                <circle id="rim2" cx="0" cy="0" r="3.5"/>
+                <g id="zoomPlus">
+                        <use xlink:href="#rim" fill="#404040">
+                                <set attributeName="fill" to="#808080" begin="zoomplus.mouseover" end="zoomplus.mouseout"/>
+                        </use>
+                        <path d="M-4,0h8M0,-4v8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
+                </g>
+                <g id="zoomMin">
+                        <use xlink:href="#rim" fill="#404040">
+                                <set attributeName="fill" to="#808080" begin="zoomminus.mouseover" end="zoomminus.mouseout"/>
+                        </use>
+                        <path d="M-4,0h8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
+                </g>
+                <g id="dirArrow">
+                        <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+                </g>
+               <g id="resetDef">
+                       <use xlink:href="#rim2" fill="#404040">
+                               <set attributeName="fill" to="#808080" begin="reset.mouseover" end="reset.mouseout"/>
+                       </use>
+               </g>
+        </defs>
 
-<defs>
-  <circle id="rim" cx="0" cy="0" r="7"/>
-  <circle id="rim2" cx="0" cy="0" r="3.5"/>
-  <g id="zoomPlus">
-    <use xlink:href="#rim" fill="#404040"><set attributeName="fill" to="#808080" begin="zoomplus.mouseover" end="zoomplus.mouseout"/></use>
-    <path d="M-4,0h8M0,-4v8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
-  </g>
-  <g id="zoomMin">
-    <use xlink:href="#rim" fill="#404040"><set attributeName="fill" to="#808080" begin="zoomminus.mouseover" end="zoomminus.mouseout"/></use>
-    <path d="M-4,0h8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
-  </g>
-  <g id="arrowUp" transform="translate(30 24)">
-    <use xlink:href="#rim"/>
-    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-  </g>
-  <g id="arrowRight" transform="rotate(90) translate(36 -43)">
-    <use xlink:href="#rim"/>
-    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-  </g>
-  <g id="arrowDown" transform="rotate(180) translate(-30 -48)">
-    <use xlink:href="#rim"/>
-    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-  </g>
-  <g id="arrowLeft" transform="rotate(270) translate(-36 17)">
-    <use xlink:href="#rim"/>
-    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-  </g>
-  <g id="resetDef">
-    <use xlink:href="#rim2" fill="#404040"><set attributeName="fill" to="#808080" begin="reset.mouseover" end="reset.mouseout"/></use>
-  </g>
-</defs>
-<script type="application/ecmascript">
+<script type="text/javascript">
 var viewWidth = 751;
 var viewHeight = 172;
 var sectionId = 'dynsection-12';
 </script>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<script xlink:href="../../svgpan.js"/>
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>machine_learning::neural_network::NeuralNetwork::single_predict</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="127,-126.5 0,-126.5 0,-84.75 127,-84.75 127,-126.5"/>
 <text text-anchor="start" x="8" y="-113" font-family="Helvetica,sans-Serif" font-size="10.00">machine_learning::neural</text>
 <text text-anchor="start" x="8" y="-101.75" font-family="Helvetica,sans-Serif" font-size="10.00">_network::NeuralNetwork</text>
@@ -66,9 +66,9 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#a361a45f3c3d8347d79103bf182d0570b" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#a361a45f3c3d8347d79103bf182d0570b" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="307.25,-126.5 163,-126.5 163,-84.75 307.25,-84.75 307.25,-126.5"/>
 <text text-anchor="start" x="171" y="-113" font-family="Helvetica,sans-Serif" font-size="10.00">machine_learning::neural</text>
 <text text-anchor="start" x="171" y="-101.75" font-family="Helvetica,sans-Serif" font-size="10.00">_network::NeuralNetwork</text>
@@ -77,18 +77,15 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M127.18,-105.62C135.19,-105.62 143.47,-105.62 151.73,-105.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="151.54,-109.13 161.54,-105.62 151.54,-102.13 151.54,-109.13"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../d8/d77/namespacemachine__learning.html#ad0bdc88e5f1be47c46c0f0c8ebf754bb" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="../../d8/d77/namespacemachine__learning.html#ad0bdc88e5f1be47c46c0f0c8ebf754bb" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="469.5,-163.88 348.5,-163.88 348.5,-133.38 469.5,-133.38 469.5,-163.88"/>
 <text text-anchor="start" x="356.5" y="-150.38" font-family="Helvetica,sans-Serif" font-size="10.00">machine_learning::apply</text>
 <text text-anchor="middle" x="409" y="-139.12" font-family="Helvetica,sans-Serif" font-size="10.00">_function</text>
@@ -96,90 +93,75 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2_Node000002_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M307.52,-123.49C317.41,-125.96 327.56,-128.5 337.44,-130.97"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="336.47,-134.59 347.02,-133.62 338.17,-127.8 336.47,-134.59"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/emplace_back.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/emplace_back.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="474.75,-115.25 343.25,-115.25 343.25,-96 474.75,-96 474.75,-115.25"/>
 <text text-anchor="middle" x="409" y="-101.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::emplace_back</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
-<g id="edge3_Node000002_Node000004" class="edge">
+<g id="edge3" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<g id="a_edge3_Node000002_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M307.52,-105.62C315.58,-105.62 323.8,-105.62 331.91,-105.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="331.87,-109.13 341.87,-105.62 331.87,-102.13 331.87,-109.13"/>
-</a>
-</g>
 </g>
 <!-- Node5 -->
-<g id="Node000005" class="node">
+<g id="node5" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="../../d8/d77/namespacemachine__learning.html#a5342906d42b80fc6b6b3ad17bf00fcb9" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="../../d8/d77/namespacemachine__learning.html#a5342906d42b80fc6b6b3ad17bf00fcb9" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="474.75,-78.25 343.25,-78.25 343.25,-59 474.75,-59 474.75,-78.25"/>
 <text text-anchor="middle" x="409" y="-64.75" font-family="Helvetica,sans-Serif" font-size="10.00">machine_learning::multiply</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node5 -->
-<g id="edge4_Node000002_Node000005" class="edge">
+<g id="edge4" class="edge">
 <title>Node2&#45;&gt;Node5</title>
-<g id="a_edge4_Node000002_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M307.52,-90.26C321.79,-87.18 336.6,-84 350.33,-81.04"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="351.04,-84.25 360.08,-78.73 349.57,-77.41 351.04,-84.25"/>
-</a>
-</g>
 </g>
 <!-- Node6 -->
-<g id="Node000006" class="node">
+<g id="node6" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="729.5,-140.25 676,-140.25 676,-121 729.5,-121 729.5,-140.25"/>
 <text text-anchor="middle" x="702.75" y="-126.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
-<g id="edge5_Node000005_Node000006" class="edge">
+<g id="edge5" class="edge">
 <title>Node5&#45;&gt;Node6</title>
-<g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M455.09,-78.7C461.85,-80.91 468.6,-83.53 474.75,-86.62 492.86,-95.73 491.87,-107.25 510.75,-114.62 561.39,-134.4 625.18,-135.45 664.72,-133.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="664.89,-137.06 674.68,-133.01 664.5,-130.07 664.89,-137.06"/>
-</a>
-</g>
 </g>
 <!-- Node7 -->
-<g id="Node000007" class="node">
+<g id="node7" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/program/exit.html#" xlink:title=" ">
+<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/program/exit.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="728.38,-60.25 677.12,-60.25 677.12,-41 728.38,-41 728.38,-60.25"/>
 <text text-anchor="middle" x="702.75" y="-46.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::exit</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node7 -->
-<g id="edge6_Node000005_Node000007" class="edge">
+<g id="edge6" class="edge">
 <title>Node5&#45;&gt;Node7</title>
-<g id="a_edge6_Node000005_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M475.11,-64.61C533.91,-60.98 618.28,-55.77 665.75,-52.85"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="665.94,-56.28 675.7,-52.17 665.5,-49.29 665.94,-56.28"/>
-</a>
-</g>
 </g>
 <!-- Node8 -->
-<g id="Node000008" class="node">
+<g id="node8" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="../../d8/d77/namespacemachine__learning.html#aa4bbf61e65f8cd297255fa94b983d078" target="_top" xlink:title=" ">
+<g id="a_node8"><a xlink:href="../../d8/d77/namespacemachine__learning.html#aa4bbf61e65f8cd297255fa94b983d078" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="624.25,-105.88 513,-105.88 513,-75.38 624.25,-75.38 624.25,-105.88"/>
 <text text-anchor="start" x="521" y="-92.38" font-family="Helvetica,sans-Serif" font-size="10.00">machine_learning::get</text>
 <text text-anchor="middle" x="568.62" y="-81.12" font-family="Helvetica,sans-Serif" font-size="10.00">_shape</text>
@@ -187,103 +169,94 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node5&#45;&gt;Node8 -->
-<g id="edge7_Node000005_Node000008" class="edge">
+<g id="edge7" class="edge">
 <title>Node5&#45;&gt;Node8</title>
-<g id="a_edge7_Node000005_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M475.02,-77.7C483.95,-78.95 493.11,-80.23 502.04,-81.47"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="501.4,-85.06 511.79,-82.97 502.37,-78.12 501.4,-85.06"/>
-</a>
-</g>
 </g>
 <!-- Node10 -->
-<g id="Node000010" class="node">
+<g id="node10" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
+<g id="a_node10"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="626.5,-19.25 510.75,-19.25 510.75,0 626.5,0 626.5,-19.25"/>
 <text text-anchor="middle" x="568.62" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::push_back</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node10 -->
-<g id="edge11_Node000005_Node000010" class="edge">
+<g id="edge11" class="edge">
 <title>Node5&#45;&gt;Node10</title>
-<g id="a_edge11_Node000005_Node000010"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M436.74,-58.62C462.55,-48.95 501.86,-34.24 530.66,-23.46"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="531.62,-26.47 539.75,-19.68 529.16,-19.91 531.62,-26.47"/>
-</a>
-</g>
 </g>
 <!-- Node8&#45;&gt;Node6 -->
-<g id="edge8_Node000008_Node000006" class="edge">
+<g id="edge8" class="edge">
 <title>Node8&#45;&gt;Node6</title>
-<g id="a_edge8_Node000008_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M621.47,-106.32C636.18,-110.78 651.89,-115.53 665.47,-119.64"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="664.26,-123.24 674.85,-122.78 666.29,-116.54 664.26,-123.24"/>
-</a>
-</g>
 </g>
 <!-- Node8&#45;&gt;Node7 -->
-<g id="edge9_Node000008_Node000007" class="edge">
+<g id="edge9" class="edge">
 <title>Node8&#45;&gt;Node7</title>
-<g id="a_edge9_Node000008_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M621.47,-74.93C636.53,-70.37 652.62,-65.5 666.42,-61.32"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="667.37,-64.39 675.92,-58.14 665.34,-57.69 667.37,-64.39"/>
-</a>
-</g>
 </g>
 <!-- Node9 -->
-<g id="Node000009" class="node">
+<g id="node9" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html#" xlink:title=" ">
+<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="743,-100.25 662.5,-100.25 662.5,-81 743,-81 743,-100.25"/>
 <text text-anchor="middle" x="702.75" y="-86.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::make_pair</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node9 -->
-<g id="edge10_Node000008_Node000009" class="edge">
+<g id="edge10" class="edge">
 <title>Node8&#45;&gt;Node9</title>
-<g id="a_edge10_Node000008_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M624.51,-90.62C633.38,-90.62 642.53,-90.62 651.3,-90.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="651.14,-94.13 661.14,-90.62 651.14,-87.13 651.14,-94.13"/>
-</a>
-</g>
 </g>
 </g>
 </svg>
-
-<g id="navigator" transform="translate(0 0)" fill="#404254">
-  <rect fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width=".5" x="0" y="0" width="60" height="60"/>
-  <use id="zoomplus" xlink:href="#zoomPlus" x="17" y="9" onmousedown="handleZoom(evt,'in')"/>
-  <use id="zoomminus" xlink:href="#zoomMin" x="42" y="9" onmousedown="handleZoom(evt,'out')"/>
-  <use id="reset" xlink:href="#resetDef" x="30" y="36" onmousedown="handleReset()"/>
-   <use id="arrowup" xlink:href="#arrowUp" x="0" y="0" onmousedown="handlePan(0,-1)"/>
-  <use id="arrowright" xlink:href="#arrowRight" x="0" y="0" onmousedown="handlePan(1,0)"/>
-  <use id="arrowdown" xlink:href="#arrowDown" x="0" y="0" onmousedown="handlePan(0,1)"/>
-  <use id="arrowleft" xlink:href="#arrowLeft" x="0" y="0" onmousedown="handlePan(-1,0)"/>
-</g>
-<svg viewBox="0 0 15 15" width="100%" height="30px" preserveAspectRatio="xMaxYMin meet">
- <g id="arrow_out" transform="scale(0.3 0.3)">
-  <a xlink:href="classmachine__learning_1_1neural__network_1_1_neural_network_a3b9eac1824d365dce715fb17c33cb96f_cgraph_org.svg" target="_base">
-   <rect id="button" ry="5" rx="5" y="6" x="6" height="38" width="38"
-        fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width="1.0"/>
-   <path id="arrow"
-     d="M 11.500037,31.436501 C 11.940474,20.09759 22.043105,11.32322 32.158766,21.979434 L 37.068811,17.246167 C 37.068811,17.246167 37.088388,32 37.088388,32 L 22.160133,31.978069 C 22.160133,31.978069 26.997745,27.140456 26.997745,27.140456 C 18.528582,18.264221 13.291696,25.230495 11.500037,31.436501 z"
-     style="fill:#404040;"/>
-  </a>
- </g>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
+        <g id="navigator" transform="translate(0 0)" fill="#404254">
+                <rect fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width=".5" x="0" y="0" width="60" height="60"/>
+                <use id="zoomplus" xlink:href="#zoomPlus" x="17" y="9" onmousedown="handleZoom(evt,'in')"/>
+                <use id="zoomminus" xlink:href="#zoomMin" x="42" y="9" onmousedown="handleZoom(evt,'out')"/>
+                <use id="reset" xlink:href="#resetDef" x="30" y="36" onmousedown="handleReset()"/>
+                <g id="arrowUp" xlink:href="#dirArrow" transform="translate(30 24)" onmousedown="handlePan(0,-1)">
+                  <use xlink:href="#rim" fill="#404040">
+                        <set attributeName="fill" to="#808080" begin="arrowUp.mouseover" end="arrowUp.mouseout"/>
+                  </use>
+                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+                </g>
+                <g id="arrowRight" xlink:href="#dirArrow" transform="rotate(90) translate(36 -43)" onmousedown="handlePan(1,0)">
+                  <use xlink:href="#rim" fill="#404040">
+                        <set attributeName="fill" to="#808080" begin="arrowRight.mouseover" end="arrowRight.mouseout"/>
+                  </use>
+                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+                </g>
+                <g id="arrowDown" xlink:href="#dirArrow" transform="rotate(180) translate(-30 -48)" onmousedown="handlePan(0,1)">
+                  <use xlink:href="#rim" fill="#404040">
+                        <set attributeName="fill" to="#808080" begin="arrowDown.mouseover" end="arrowDown.mouseout"/>
+                  </use>
+                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+                </g>
+                <g id="arrowLeft" xlink:href="#dirArrow" transform="rotate(270) translate(-36 17)" onmousedown="handlePan(-1,0)">
+                  <use xlink:href="#rim" fill="#404040">
+                        <set attributeName="fill" to="#808080" begin="arrowLeft.mouseover" end="arrowLeft.mouseout"/>
+                  </use>
+                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+                </g>
+        </g>
+        <svg viewBox="0 0 15 15" width="100%" height="30px" preserveAspectRatio="xMaxYMin meet">
+         <g id="arrow_out" transform="scale(0.3 0.3)">
+          <a xlink:href="classmachine__learning_1_1neural__network_1_1_neural_network_a3b9eac1824d365dce715fb17c33cb96f_cgraph_org.svg" target="_base">
+           <rect id="button" ry="5" rx="5" y="6" x="6" height="38" width="38"
+                fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width="1.0"/>
+           <path id="arrow"
+             d="M 11.500037,31.436501 C 11.940474,20.09759 22.043105,11.32322 32.158766,21.979434 L 37.068811,17.246167 C 37.068811,17.246167 37.088388,32 37.088388,32 L 22.160133,31.978069 C 22.160133,31.978069 26.997745,27.140456 26.997745,27.140456 C 18.528582,18.264221 13.291696,25.230495 11.500037,31.436501 z"
+             style="fill:#404040;"/>
+          </a>
+         </g>
+        </svg>
 </svg>

@@ -6,104 +6,67 @@
 <!-- Title: CycleCheck::isCyclicDFS Pages: 1 -->
 <svg width="448pt" height="64pt"
  viewBox="0.00 0.00 447.50 64.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 60.25)">
 <title>CycleCheck::isCyclicDFS</title>
 <!-- Node1 -->
-<g id="Node000001" class="node">
+<g id="node1" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="131.5,-37.25 0,-37.25 0,-18 131.5,-18 131.5,-37.25"/>
 <text text-anchor="middle" x="65.75" y="-23.75" font-family="Helvetica,sans-Serif" font-size="10.00">CycleCheck::isCyclicDFS</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="Node000002" class="node">
+<g id="node2" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../d3/dbb/class_cycle_check.html#a2f4485c08b45e7a21a2e86f9c3f01d8b" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="../../d3/dbb/class_cycle_check.html#a2f4485c08b45e7a21a2e86f9c3f01d8b" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="327.5,-37.25 167.5,-37.25 167.5,-18 327.5,-18 327.5,-37.25"/>
 <text text-anchor="middle" x="247.5" y="-23.75" font-family="Helvetica,sans-Serif" font-size="10.00">CycleCheck::isCyclicDFSHelper</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1_Node000001_Node000002" class="edge">
+<g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M131.9,-27.62C139.86,-27.62 148.11,-27.62 156.35,-27.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="156.18,-31.13 166.18,-27.62 156.18,-24.13 156.18,-31.13"/>
-</a>
-</g>
 </g>
 <!-- Node2&#45;&gt;Node2 -->
-<g id="edge4_Node000002_Node000002" class="edge">
+<g id="edge4" class="edge">
 <title>Node2&#45;&gt;Node2</title>
-<g id="a_edge4_Node000002_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M223.39,-37.54C212.39,-46.15 220.43,-55.25 247.5,-55.25 263.57,-55.25 272.94,-52.04 275.59,-47.63"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="278.53,-46.56 271.61,-38.54 272.02,-49.12 278.53,-46.56"/>
-</a>
-</g>
 </g>
 <!-- Node3 -->
-<g id="Node000003" class="node">
+<g id="node3" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/map/end.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/map/end.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="439.5,-56.25 363.5,-56.25 363.5,-37 439.5,-37 439.5,-56.25"/>
 <text text-anchor="middle" x="401.5" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::map::end</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2_Node000002_Node000003" class="edge">
+<g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M327.62,-37.51C336.05,-38.57 344.43,-39.62 352.35,-40.61"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="351.82,-44.19 362.18,-41.96 352.69,-37.25 351.82,-44.19"/>
-</a>
-</g>
 </g>
 <!-- Node4 -->
-<g id="Node000004" class="node">
+<g id="node4" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/map/find.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/map/find.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="439.5,-19.25 363.5,-19.25 363.5,0 439.5,0 439.5,-19.25"/>
 <text text-anchor="middle" x="401.5" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::map::find</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
-<g id="edge3_Node000002_Node000004" class="edge">
+<g id="edge3" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<g id="a_edge3_Node000002_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M327.62,-18.26C336.05,-17.26 344.43,-16.26 352.35,-15.33"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="352.66,-18.7 362.18,-14.04 351.84,-11.74 352.66,-18.7"/>
-</a>
 </g>
 </g>
-</g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

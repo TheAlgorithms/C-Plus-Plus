@@ -1,11 +1,7 @@
 <map id="graph::Graph&lt; T &gt;" name="graph::Graph&lt; T &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="99,198,227,223"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/map.html" title=" " alt="" coords="5,94,147,135"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,145,120,172,148,195,144,199,116,176,94,148"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="57,5,95,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,46,79,93,73,93,73,46"/>
-<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="171,94,328,135"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="230,148,207,176,181,199,177,195,203,172,226,145"/>
-<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="189,5,310,31"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="252,46,252,93,247,93,247,46"/>
+<area shape="rect" id="node1" title=" " alt="" coords="99,198,227,223"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/map.html" title=" " alt="" coords="5,94,147,135"/>
+<area shape="rect" id="node3" title=" " alt="" coords="57,5,95,31"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="171,94,328,135"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="189,5,310,31"/>
 </map>
