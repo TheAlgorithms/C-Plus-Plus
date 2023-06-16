@@ -108,7 +108,7 @@ static void test() {
                   << "\n";
     }
 
-    std::cout << "All tests success.\n";
+    std::cout << "All tests have passed successfully.\n";
 }
 
 /**
