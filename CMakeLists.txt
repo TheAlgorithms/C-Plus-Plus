@@ -43,6 +43,7 @@ add_subdirectory(machine_learning)
 add_subdirectory(numerical_methods)
 add_subdirectory(graph)
 add_subdirectory(divide_and_conquer)
+add_subdirectory(games)
 add_subdirectory(cpu_scheduling_algorithms)
 add_subdirectory(physics)
 
