@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"de/de4/fibonacci__large_8cpp.html#adf3e906875ab257f7fab3bc1370aa2db":[11,0,14,18,0],
+"df/d06/decimal__to__binary_8cpp.html":[11,0,17,1],
 "df/d06/decimal__to__binary_8cpp.html#a10df57491019f0ac39b492740fb388f7":[11,0,17,1,1],
 "df/d06/decimal__to__binary_8cpp.html#a9240f2e79074a2a248395258aebbfa11":[11,0,17,1,0],
 "df/d10/namespacepancake__sort.html":[9,0,83],
@@ -86,8 +88,8 @@ var NAVTREEINDEX13 =
 "df/d94/subarray__sum_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,0,8,2],
 "df/d94/subarray__sum_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,0,8,0],
 "df/d94/subarray__sum_8cpp.html#af5687bbd9faf927fbd363c71e0baba5e":[11,0,0,8,1],
-"df/d99/structstd_1_1is__unsigned_3_01uint256__t_01_4.html":[10,0,18,5],
 "df/d99/structstd_1_1is__unsigned_3_01uint256__t_01_4.html":[9,0,110,10],
+"df/d99/structstd_1_1is__unsigned_3_01uint256__t_01_4.html":[10,0,18,5],
 "df/dc8/successive__approximation_8cpp.html":[11,0,15,22],
 "df/dc8/successive__approximation_8cpp.html#a79c1d08919ff7780a5d7723172602389":[11,0,15,22,0],
 "df/dc8/successive__approximation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,15,22,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX13 =
 "globals_func_u.html":[11,1,1,20],
 "globals_func_z.html":[11,1,1,21],
 "globals_g.html":[11,1,0,7],
-"globals_h.html":[11,1,0,8],
-"globals_i.html":[11,1,0,9],
-"globals_j.html":[11,1,0,10]
+"globals_h.html":[11,1,0,8]
 };

@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Reduced all possibilities of a number which cannot be prime. Eg: No even number, except 2 can be a pr...">
+<g id="a_Node000001"><a xlink:title="A simple program to check if the given number is Prime or not.">
 <polygon fill="#999999" stroke="#666666" points="115.62,-74.5 0.62,-74.5 0.62,-55.25 115.62,-55.25 115.62,-74.5"/>
 <text text-anchor="middle" x="58.12" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">math/check_prime.cpp</text>
 </a>

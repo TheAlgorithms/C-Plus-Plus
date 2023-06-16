@@ -103,7 +103,8 @@ var NAVTREEINDEX10 =
 "db/d82/classlarge__number.html#af4598f1f2794b5e17e10c25e0501e41a":[10,0,35,1],
 "db/d8b/struct_node.html":[10,0,43],
 "db/d93/check__prime_8cpp.html":[11,0,14,8],
-"db/d93/check__prime_8cpp.html#aa18b3517017d99bb4024853bddba5532":[11,0,14,8,0],
+"db/d93/check__prime_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[11,0,14,8,2],
+"db/d93/check__prime_8cpp.html#abd8f794b2229b42876169ff841b6e444":[11,0,14,8,0],
 "db/d93/check__prime_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,8,1],
 "db/d9a/classuint128__t.html":[10,0,56],
 "db/d9a/classuint128__t.html#a0500a90bcde5a8254750c361eed9bc40":[10,0,56,18],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "dc/d1a/pascal__triangle_8cpp.html":[11,0,17,13],
 "dc/d1a/pascal__triangle_8cpp.html#a4fc0e5a112f715c3a73989450b2cc5fd":[11,0,17,13,1],
 "dc/d1a/pascal__triangle_8cpp.html#ad7a31d9cb2818d21b1ba12aead7f4c5c":[11,0,17,13,2],
-"dc/d1a/pascal__triangle_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,17,13,0],
-"dc/d2f/namespacecount__of__trailing__ciphers__in__factorial__n.html":[9,0,16]
+"dc/d1a/pascal__triangle_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,17,13,0]
 };

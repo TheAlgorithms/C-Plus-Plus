@@ -148,7 +148,7 @@ var searchData=
   ['is_5fpod_145',['is_pod',['http://en.cppreference.com/w/cpp/types/is_pod.html',0,'std']]],
   ['is_5fpointer_146',['is_pointer',['http://en.cppreference.com/w/cpp/types/is_pointer.html',0,'std']]],
   ['is_5fpolymorphic_147',['is_polymorphic',['http://en.cppreference.com/w/cpp/types/is_polymorphic.html',0,'std']]],
-  ['is_5fprime_148',['is_prime',['../db/d93/check__prime_8cpp.html#aa18b3517017d99bb4024853bddba5532',1,'check_prime.cpp']]],
+  ['is_5fprime_148',['is_prime',['../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444',1,'math']]],
   ['is_5freference_149',['is_reference',['http://en.cppreference.com/w/cpp/types/is_reference.html',0,'std']]],
   ['is_5frvalue_5freference_150',['is_rvalue_reference',['http://en.cppreference.com/w/cpp/types/is_rvalue_reference.html',0,'std']]],
   ['is_5fsame_151',['is_same',['http://en.cppreference.com/w/cpp/types/is_same.html',0,'std']]],
