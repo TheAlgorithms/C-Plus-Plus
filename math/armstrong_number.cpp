@@ -35,11 +35,11 @@ int number_of_digits(int num) {
 }
 
 /**
-* @brief Function to check whether the number is armstrong number or not.
-* @param number to be checked
-* @return `true` if the number is armstrong.
-* @return `false` if the number is not armstrong.
-*/
+ * @brief Function to check whether the number is armstrong number or not.
+ * @param number to be checked
+ * @return `true` if the number is armstrong.
+ * @return `false` if the number is not armstrong.
+ */
 bool is_armstrong(int number) {
     // If the number is less than 0, then it is not an armstrong number.
     if (number < 0) {
