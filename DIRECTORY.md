@@ -1,5 +1,6 @@
 
 ## Backtracking
+  * [Generate Parentheses](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/backtracking/generate_parentheses.cpp)
   * [Graph Coloring](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/backtracking/graph_coloring.cpp)
   * [Knight Tour](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/backtracking/knight_tour.cpp)
   * [Magic Sequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/backtracking/magic_sequence.cpp)
@@ -67,6 +68,7 @@
   * [Queue Using Two Stacks](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/queue_using_two_stacks.cpp)
   * [Rb Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/rb_tree.cpp)
   * [Reverse A Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/reverse_a_linked_list.cpp)
+  * [Segment Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/segment_tree.cpp)
   * [Skip List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/skip_list.cpp)
   * [Sparse Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/sparse_table.cpp)
   * [Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/stack.hpp)
@@ -117,6 +119,9 @@
   * [Subset Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/subset_sum.cpp)
   * [Tree Height](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/tree_height.cpp)
   * [Word Break](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/word_break.cpp)
+
+## Games
+  * [Memory Game](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/games/memory_game.cpp)
 
 ## Geometry
   * [Graham Scan Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/geometry/graham_scan_algorithm.cpp)
@@ -228,6 +233,7 @@
   * [Prime Factorization](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/prime_factorization.cpp)
   * [Prime Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/prime_numbers.cpp)
   * [Primes Up To Billion](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/primes_up_to_billion.cpp)
+  * [Quadratic Equations Complex Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/quadratic_equations_complex_numbers.cpp)
   * [Realtime Stats](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/realtime_stats.cpp)
   * [Sieve Of Eratosthenes](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/sieve_of_eratosthenes.cpp)
   * [Sqrt Double](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/sqrt_double.cpp)
@@ -286,6 +292,7 @@
   * [Happy Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/happy_number.cpp)
   * [Iterative Tree Traversals](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/iterative_tree_traversals.cpp)
   * [Kadanes3](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/kadanes3.cpp)
+  * [Kelvin To Celsius](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/kelvin_to_celsius.cpp)
   * [Lru Cache](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/lru_cache.cpp)
   * [Matrix Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/matrix_exponentiation.cpp)
   * [Palindrome Of Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/palindrome_of_number.cpp)
