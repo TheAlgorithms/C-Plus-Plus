@@ -1,21 +1,44 @@
 <map id="data_structures::tree_234::Tree234::RemovePreMerge" name="data_structures::tree_234::Tree234::RemovePreMerge">
-<area shape="rect" id="node1" title="Main function implement the pre&#45;merge remove operation." alt="" coords="5,585,223,626"/>
-<area shape="rect" id="node2" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac85ba5abfd6d34dcd908b2afe6464657" title="Get the max item of the tree." alt="" coords="271,71,481,111"/>
-<area shape="rect" id="node5" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a65a1235659356166a3e9b451c64fcc36" title="Get the min item of the tree." alt="" coords="273,201,479,242"/>
-<area shape="rect" id="node8" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#afd9f83e2d5d7f22f79c1348e98914631" title="Check if node is a 2&#45;node." alt="" coords="560,593,705,634"/>
-<area shape="rect" id="node9" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a6c5f929afcbad5219646990edee22e18" title="Check if node is a 3&#45;node or 4&#45;node, this is useful when we delete item from 2&#45;3&#45;4 tree." alt="" coords="300,815,452,855"/>
-<area shape="rect" id="node10" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae58dca20f08eaf9313f6e7b0869c2d0e" title="Do the actual left rotate operation." alt="" coords="546,659,719,699"/>
-<area shape="rect" id="node11" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a36f4d5f603f7edb7db7c73fb53ba14e9" title="Merge the item at index of the parent node, and its left and right child." alt="" coords="302,463,450,503"/>
-<area shape="rect" id="node17" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae68f8e62be02657c1287def6b38d7cc9" title="Do the actual right rotate operation." alt="" coords="542,736,724,777"/>
-<area shape="rect" id="node18" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac5361479dd996eb331759f33808657d9" title="A handy function to try if we can do a left rotate to the target node." alt="" coords="280,585,472,626"/>
-<area shape="rect" id="node19" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#aec0642d1d151521ca7c70ea85cdb15d3" title="A handy function to try if we can do a right rotate to the target node." alt="" coords="275,700,477,741"/>
-<area shape="rect" id="node3" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a2753b6053b8c86c5bd987a44fdfa0a57" title="Get max item (rightmost) in the current node." alt="" coords="549,5,717,46"/>
-<area shape="rect" id="node4" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a731f9ae385840cf0a06d55e7f9924a94" title="Get rightmose child of the current node." alt="" coords="529,71,736,111"/>
-<area shape="rect" id="node6" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ac6f619a1605cb46196360889fff4529e" title="Get leftmose child of the current node." alt="" coords="534,136,732,177"/>
-<area shape="rect" id="node7" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a5438d0a47850f520b2262b5a42f75b71" title="get min item (leftmost) in the current node" alt="" coords="551,201,715,242"/>
-<area shape="rect" id="node12" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a164574a9209b5df66368530d090b32c4" title="Get the child pointer at position of index." alt="" coords="559,332,706,373"/>
-<area shape="rect" id="node13" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a4808acb43668ff8cfd6f7cb44ceedad3" title="Get item of the \index index." alt="" coords="561,397,704,438"/>
-<area shape="rect" id="node14" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ab4e5f7b7b260bb81d9441652cc124c74" title="Set child pointer to the position of index." alt="" coords="560,463,706,503"/>
-<area shape="rect" id="node15" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#af564fd4b0992fff69f90de201542d3d1" title="Set the item count of the node." alt="" coords="557,528,708,569"/>
-<area shape="rect" id="node16" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#aaa89a3016b5dd1be3552321c34343cbc" title="Set item value at position of index." alt="" coords="562,267,704,307"/>
+<area shape="rect" id="Node000001" title="Main function implement the pre&#45;merge remove operation." alt="" coords="5,585,223,626"/>
+<area shape="rect" id="Node000002" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac85ba5abfd6d34dcd908b2afe6464657" title="Get the max item of the tree." alt="" coords="271,71,481,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,584,134,515,164,414,209,299,237,242,268,188,300,150,334,119,337,122,304,154,273,191,241,244,213,301,169,416,139,516,122,586"/>
+<area shape="rect" id="Node000005" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a65a1235659356166a3e9b451c64fcc36" title="Get the min item of the tree." alt="" coords="273,201,479,242"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="127,584,350,253,355,256,131,587"/>
+<area shape="rect" id="Node000008" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#afd9f83e2d5d7f22f79c1348e98914631" title="Check if node is a 2&#45;node." alt="" coords="560,593,705,634"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="201,582,270,571,376,563,481,571,554,586,553,591,481,576,376,568,271,576,202,587"/>
+<area shape="rect" id="Node000009" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a6c5f929afcbad5219646990edee22e18" title="Check if node is a 3&#45;node or 4&#45;node, this is useful when we delete item from 2&#45;3&#45;4 tree." alt="" coords="300,815,452,855"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="129,625,185,706,225,753,272,794,291,806,288,810,269,798,221,757,180,710,125,628"/>
+<area shape="rect" id="Node000010" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae58dca20f08eaf9313f6e7b0869c2d0e" title="Do the actual left rotate operation." alt="" coords="546,659,719,699"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="211,624,271,635,407,654,531,667,531,673,406,659,270,640,210,629"/>
+<area shape="rect" id="Node000011" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a36f4d5f603f7edb7db7c73fb53ba14e9" title="Merge the item at index of the parent node, and its left and right child." alt="" coords="302,463,450,503"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="156,583,270,527,313,507,315,512,272,532,158,587"/>
+<area shape="rect" id="Node000017" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae68f8e62be02657c1287def6b38d7cc9" title="Do the actual right rotate operation." alt="" coords="542,736,724,777"/>
+<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="131,625,154,655,187,690,226,724,272,750,335,768,402,776,467,777,526,772,527,777,467,782,401,782,334,774,270,755,223,729,183,694,150,658,127,628"/>
+<area shape="rect" id="Node000018" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac5361479dd996eb331759f33808657d9" title="A handy function to try if we can do a left rotate to the target node." alt="" coords="280,585,472,626"/>
+<area shape="poly" id="edge18_Node000001_Node000018" title=" " alt="" coords="223,603,265,603,265,608,223,608"/>
+<area shape="rect" id="Node000019" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#aec0642d1d151521ca7c70ea85cdb15d3" title="A handy function to try if we can do a right rotate to the target node." alt="" coords="275,700,477,741"/>
+<area shape="poly" id="edge21_Node000001_Node000019" title=" " alt="" coords="156,624,272,679,303,692,301,697,270,684,154,629"/>
+<area shape="rect" id="Node000003" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a2753b6053b8c86c5bd987a44fdfa0a57" title="Get max item (rightmost) in the current node." alt="" coords="549,5,717,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="458,67,535,48,537,53,459,73"/>
+<area shape="rect" id="Node000004" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a731f9ae385840cf0a06d55e7f9924a94" title="Get rightmose child of the current node." alt="" coords="529,71,736,111"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="482,88,514,88,514,94,482,94"/>
+<area shape="rect" id="Node000006" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ac6f619a1605cb46196360889fff4529e" title="Get leftmose child of the current node." alt="" coords="534,136,732,177"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="458,198,535,178,537,183,459,203"/>
+<area shape="rect" id="Node000007" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a5438d0a47850f520b2262b5a42f75b71" title="get min item (leftmost) in the current node" alt="" coords="551,201,715,242"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="479,219,535,219,535,224,479,224"/>
+<area shape="poly" id="edge13_Node000011_Node000008" title=" " alt="" coords="436,502,483,527,497,541,507,554,516,566,530,578,547,587,545,592,528,583,512,570,503,557,493,545,479,532,433,506"/>
+<area shape="rect" id="Node000012" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a164574a9209b5df66368530d090b32c4" title="Get the child pointer at position of index." alt="" coords="559,332,706,373"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="404,460,459,422,528,383,545,376,547,381,530,388,462,426,407,464"/>
+<area shape="rect" id="Node000013" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a4808acb43668ff8cfd6f7cb44ceedad3" title="Get item of the \index index." alt="" coords="561,397,704,438"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="450,462,546,437,547,442,451,467"/>
+<area shape="rect" id="Node000014" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ab4e5f7b7b260bb81d9441652cc124c74" title="Set child pointer to the position of index." alt="" coords="560,463,706,503"/>
+<area shape="poly" id="edge14_Node000011_Node000014" title=" " alt="" coords="450,480,545,480,545,486,450,486"/>
+<area shape="rect" id="Node000015" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#af564fd4b0992fff69f90de201542d3d1" title="Set the item count of the node." alt="" coords="557,528,708,569"/>
+<area shape="poly" id="edge15_Node000011_Node000015" title=" " alt="" coords="451,499,543,523,542,528,450,504"/>
+<area shape="rect" id="Node000016" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#aaa89a3016b5dd1be3552321c34343cbc" title="Set item value at position of index." alt="" coords="562,267,704,307"/>
+<area shape="poly" id="edge16_Node000011_Node000016" title=" " alt="" coords="389,461,444,391,483,352,528,318,546,308,549,313,530,323,487,356,448,395,393,464"/>
+<area shape="poly" id="edge19_Node000018_Node000008" title=" " alt="" coords="473,606,545,608,545,614,472,611"/>
+<area shape="poly" id="edge20_Node000018_Node000010" title=" " alt="" coords="450,624,546,651,544,657,449,629"/>
+<area shape="poly" id="edge22_Node000019_Node000008" title=" " alt="" coords="415,697,528,645,548,637,550,642,530,649,418,702"/>
+<area shape="poly" id="edge23_Node000019_Node000017" title=" " alt="" coords="477,732,527,739,526,744,477,737"/>
 </map>

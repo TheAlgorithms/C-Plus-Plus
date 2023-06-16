@@ -6,46 +6,77 @@
 <!-- Title: math/large_number.h Pages: 1 -->
 <svg width="272pt" height="83pt"
  viewBox="0.00 0.00 271.50 82.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 78.5)">
 <title>math/large_number.h</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Library to perform arithmatic operations on arbitrarily large numbers.">
+<g id="a_Node000001"><a xlink:title="Library to perform arithmatic operations on arbitrarily large numbers.">
 <polygon fill="#999999" stroke="#666666" points="185.75,-74.5 79,-74.5 79,-55.25 185.75,-55.25 185.75,-74.5"/>
 <text text-anchor="middle" x="132.38" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">math/large_number.h</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../de/de4/fibonacci__large_8cpp.html" target="_top" xlink:title="Computes N^th Fibonacci number given as input argument. Uses custom build arbitrary integers library ...">
+<g id="a_Node000002"><a xlink:href="../../de/de4/fibonacci__large_8cpp.html" target="_top" xlink:title="Computes N^th Fibonacci number given as input argument. Uses custom build arbitrary integers library ...">
 <polygon fill="white" stroke="#666666" points="124.75,-19.25 0,-19.25 0,0 124.75,0 124.75,-19.25"/>
 <text text-anchor="middle" x="62.38" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">math/fibonacci_large.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M111.79,-48.22C99.5,-38.87 84.34,-27.33 74.07,-19.52"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="109.42,-51.57 119.5,-54.84 113.66,-46 109.42,-51.57"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d6/d9d/large__factorial_8cpp.html" target="_top" xlink:title="Compute factorial of any arbitratily large number/.">
+<g id="a_Node000003"><a xlink:href="../../d6/d9d/large__factorial_8cpp.html" target="_top" xlink:title="Compute factorial of any arbitratily large number/.">
 <polygon fill="white" stroke="#666666" points="263.5,-19.25 143.25,-19.25 143.25,0 263.5,0 263.5,-19.25"/>
 <text text-anchor="middle" x="203.38" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">math/large_factorial.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M152.89,-48.49C165.42,-39.09 181,-27.41 191.51,-19.52"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="151.32,-46.04 145.42,-54.84 155.52,-51.64 151.32,-46.04"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

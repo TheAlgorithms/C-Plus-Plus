@@ -1,12 +1,28 @@
 <map id="divide_and_conquer::strassens_multiplication::Matrix::strassens_multiplication" name="divide_and_conquer::strassens_multiplication::Matrix::strassens_multiplication">
-<area shape="rect" id="node1" title="Strassens method of multiplying two matrices References: https://en.wikipedia.org/wiki/Strassen_algor..." alt="" coords="5,187,219,242"/>
-<area shape="rect" id="node2" href="$dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#ab6534125643a02c114bd4cddba9bc17f" title="Horizontally stack the matrix (one after the other)" alt="" coords="276,16,445,72"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="725,187,841,213"/>
-<area shape="rect" id="node5" href="$dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#a5d8eb669b37a27224376b08515b4ee50" title="Naive multiplication performed on this." alt="" coords="267,147,454,202"/>
-<area shape="rect" id="node6" href="$dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#ae4e183ec8eab778cb243e4ae0b22a0f1" title="Get the matrix shape." alt="" coords="505,263,674,318"/>
-<area shape="rect" id="node7" href="$dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#a1fcb7db9bdeabd874712ec4f00483d17" title="Creates a new matrix and returns a part of it." alt="" coords="276,227,445,282"/>
-<area shape="rect" id="node8" href="$dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#af12ceffdc07cc87eca8a4a8ac87d60fe" title="Horizontally stack the matrix (current matrix above the other)" alt="" coords="276,357,445,413"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="513,46,667,71"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/back.html#" title=" " alt="" coords="530,394,649,419"/>
-<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/emplace_back.html#" title=" " alt="" coords="502,443,677,469"/>
+<area shape="rect" id="Node000001" title="Strassens method of multiplying two matrices References: https://en.wikipedia.org/wiki/Strassen_algor..." alt="" coords="5,187,219,242"/>
+<area shape="poly" id="edge11_Node000001_Node000001" title=" " alt="" coords="64,186,64,176,73,168,89,162,112,160,139,163,155,170,152,175,137,168,112,165,90,167,76,172,69,178,69,186"/>
+<area shape="rect" id="Node000002" href="$dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#ab6534125643a02c114bd4cddba9bc17f" title="Horizontally stack the matrix (one after the other)" alt="" coords="276,16,445,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,184,198,137,265,88,284,77,287,81,268,93,201,142,146,188"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="725,187,841,213"/>
+<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="153,184,205,155,266,132,331,121,397,118,464,121,528,128,645,153,733,179,732,184,643,158,527,134,463,126,397,123,331,126,267,137,207,160,155,189"/>
+<area shape="rect" id="Node000005" href="$dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#a5d8eb669b37a27224376b08515b4ee50" title="Naive multiplication performed on this." alt="" coords="267,147,454,202"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="219,195,252,189,252,195,220,200"/>
+<area shape="rect" id="Node000006" href="$dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#ae4e183ec8eab778cb243e4ae0b22a0f1" title="Get the matrix shape." alt="" coords="505,263,674,318"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="155,241,207,270,267,292,324,302,382,306,490,302,490,307,382,311,323,307,266,297,205,274,153,245"/>
+<area shape="rect" id="Node000007" href="$dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#a1fcb7db9bdeabd874712ec4f00483d17" title="Creates a new matrix and returns a part of it." alt="" coords="276,227,445,282"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="220,229,262,236,261,241,219,235"/>
+<area shape="rect" id="Node000008" href="$dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#af12ceffdc07cc87eca8a4a8ac87d60fe" title="Horizontally stack the matrix (current matrix above the other)" alt="" coords="276,357,445,413"/>
+<area shape="poly" id="edge12_Node000001_Node000008" title=" " alt="" coords="146,241,201,288,268,336,287,348,284,352,265,341,198,292,142,245"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="513,46,667,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="446,47,498,50,498,55,445,52"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="445,16,500,6,560,3,621,10,651,18,679,31,715,60,743,98,763,138,776,172,771,174,759,140,739,101,712,64,676,36,649,23,620,15,560,8,500,12,446,21"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="455,178,710,193,710,198,454,183"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="650,260,739,217,741,222,652,265"/>
+<area shape="poly" id="edge10_Node000007_Node000004" title=" " alt="" coords="445,241,710,207,711,212,446,246"/>
+<area shape="poly" id="edge16_Node000008_Node000004" title=" " alt="" coords="445,375,576,357,635,344,676,328,705,306,730,279,766,225,771,228,735,282,709,310,679,333,637,349,577,362,446,380"/>
+<area shape="poly" id="edge15_Node000008_Node000006" title=" " alt="" coords="429,354,506,322,508,327,431,359"/>
+<area shape="rect" id="Node000009" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/back.html#" title=" " alt="" coords="530,394,649,419"/>
+<area shape="poly" id="edge13_Node000008_Node000009" title=" " alt="" coords="446,391,516,397,515,402,445,396"/>
+<area shape="rect" id="Node000010" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/emplace_back.html#" title=" " alt="" coords="502,443,677,469"/>
+<area shape="poly" id="edge14_Node000008_Node000010" title=" " alt="" coords="446,411,503,429,526,436,524,441,501,435,444,416"/>
 </map>

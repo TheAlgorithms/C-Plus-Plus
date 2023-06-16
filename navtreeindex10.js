@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"db/d03/namespacewildcard__matching.html":[9,0,130],
 "db/d07/spiral__print_8cpp.html":[11,0,17,19],
 "db/d07/spiral__print_8cpp.html#a850d3f55e1a8d227176cdcc67352c197":[11,0,17,19,2],
 "db/d07/spiral__print_8cpp.html#acfff36db81326fb990a643ab198ee8a5":[11,0,17,19,0],
@@ -15,8 +16,8 @@ var NAVTREEINDEX10 =
 "db/d16/0__1__knapsack_8cpp.html#a15edf30f336885e5b851f6b7199c6cd1":[11,0,6,0,1],
 "db/d16/0__1__knapsack_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,6,0,2],
 "db/d16/0__1__knapsack_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,6,0,0],
-"db/d19/structlinear__probing_1_1_entry.html":[10,0,7,0],
 "db/d19/structlinear__probing_1_1_entry.html":[9,0,55,0],
+"db/d19/structlinear__probing_1_1_entry.html":[10,0,7,0],
 "db/d19/structlinear__probing_1_1_entry.html#a2139f643a3caf074da1db8a9fa16fa77":[9,0,55,0,0],
 "db/d19/structlinear__probing_1_1_entry.html#a2139f643a3caf074da1db8a9fa16fa77":[10,0,7,0,0],
 "db/d19/structlinear__probing_1_1_entry.html#a4d84e90b73022083761f85f8586c4c2a":[9,0,55,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#a7a2d742b9a3ae7b85292e1f86428bb4f":[11,0,13,5,12],
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#a865e8d26a01962cc93aca66e71346f37":[11,0,13,5,8],
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#a8fa731952b0ee3bc7ec51c51ed21911e":[11,0,13,5,3],
-"dc/d38/ordinary__least__squares__regressor_8cpp.html#aaddc683af581b51351e1023d2a01ef3b":[11,0,13,5,0],
-"dc/d38/ordinary__least__squares__regressor_8cpp.html#ab1ad727903d7817c2758d25bcb52cbc8":[11,0,13,5,14]
+"dc/d38/ordinary__least__squares__regressor_8cpp.html#aaddc683af581b51351e1023d2a01ef3b":[11,0,13,5,0]
 };

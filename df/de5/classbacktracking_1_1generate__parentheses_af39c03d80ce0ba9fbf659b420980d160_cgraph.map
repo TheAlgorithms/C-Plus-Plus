@@ -1,7 +1,12 @@
 <map id="backtracking::generate_parentheses::generate" name="backtracking::generate_parentheses::generate">
-<area shape="rect" id="node1" title="wrapper interface" alt="" coords="5,39,163,80"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/clear.html#" title=" " alt="" coords="241,5,361,31"/>
-<area shape="rect" id="node3" href="$df/de5/classbacktracking_1_1generate__parentheses.html#ac1489edd65374f22fe04851051f0a2ec" title="function that adds parenthesis to the string." alt="" coords="211,79,391,120"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="455,61,577,87"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="439,111,593,136"/>
+<area shape="rect" id="Node000001" title="wrapper interface" alt="" coords="5,39,163,80"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/clear.html#" title=" " alt="" coords="241,5,361,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,42,226,30,227,35,164,47"/>
+<area shape="rect" id="Node000003" href="$df/de5/classbacktracking_1_1generate__parentheses.html#ac1489edd65374f22fe04851051f0a2ec" title="function that adds parenthesis to the string." alt="" coords="211,79,391,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,71,196,77,195,83,163,77"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="260,79,258,69,265,60,279,55,301,53,325,55,339,62,336,66,323,60,301,58,280,60,268,64,263,70,265,78"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="455,61,577,87"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="391,86,440,80,441,86,391,92"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="439,111,593,136"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="391,107,424,111,424,116,391,112"/>
 </map>

@@ -1,4 +1,6 @@
 <map id="lcm" name="lcm">
-<area shape="rect" id="node1" title=" " alt="" coords="5,29,48,55"/>
-<area shape="rect" id="node2" href="$d4/d21/least__common__multiple_8cpp.html#a8ba1fc66e4134ab25b2602b323150563" title=" " alt="" coords="96,29,138,55"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,48,55"/>
+<area shape="rect" id="Node000002" href="$d4/d21/least__common__multiple_8cpp.html#a8ba1fc66e4134ab25b2602b323150563" title=" " alt="" coords="96,29,138,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="48,40,81,40,81,45,48,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="100,30,97,21,99,12,106,5,117,3,129,6,135,13,131,16,126,10,117,8,108,10,104,14,103,20,105,28"/>
 </map>

@@ -1,5 +1,7 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,5,55,31"/>
-<area shape="rect" id="node2" href="$d9/d44/magic__number_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e" title="Test function." alt="" coords="103,5,153,31"/>
-<area shape="rect" id="node3" href="$dd/d47/namespacemath.html#a8d8e81a7cd59644b311ef9adb268f5f0" title=" " alt="" coords="201,5,344,31"/>
+<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,5,55,31"/>
+<area shape="rect" id="Node000002" href="$d9/d44/magic__number_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e" title="Test function." alt="" coords="103,5,153,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,16,88,16,88,21,55,21"/>
+<area shape="rect" id="Node000003" href="$dd/d47/namespacemath.html#a8d8e81a7cd59644b311ef9adb268f5f0" title=" " alt="" coords="201,5,344,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="153,16,186,16,186,21,153,21"/>
 </map>

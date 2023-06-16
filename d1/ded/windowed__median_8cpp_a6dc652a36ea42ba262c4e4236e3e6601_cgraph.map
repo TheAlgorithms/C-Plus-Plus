@@ -1,18 +1,35 @@
 <map id="test" name="test">
-<area shape="rect" id="node1" title="Self&#45;test implementations." alt="" coords="5,136,49,162"/>
-<area shape="rect" id="node2" href="$df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a938cafbdf70dc01e86e9bb12d29ec65d" title="Gets the median of the values in the sliding window." alt="" coords="97,121,278,177"/>
-<area shape="rect" id="node4" href="$df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a61804988fcb1a6caf640f8291979aaa6" title="A naive and inefficient method to obtain the median of the sliding window. Used for testing!" alt="" coords="97,16,278,71"/>
-<area shape="rect" id="node6" href="$df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a6b52b7851750f28d53508e63c52a69f7" title="Insert a new value to the stream." alt="" coords="97,221,278,277"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/multiset/size.html#" title=" " alt="" coords="559,136,685,162"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/sort.html#" title=" " alt="" coords="370,5,464,31"/>
-<area shape="rect" id="node7" href="$df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#af544e271ea19a6fd69a6b3ed6816453e" title="Erases a value from a sorted multi&#45;value BST." alt="" coords="326,286,507,342"/>
-<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/front.html#" title=" " alt="" coords="368,236,466,262"/>
-<area shape="rect" id="node11" href="$df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a3a7f57679e9cd6c9f042dfd0612b2b24" title="Inserts a value to a sorted multi&#45;value BST." alt="" coords="326,56,507,111"/>
-<area shape="rect" id="node14" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/pop_front.html#" title=" " alt="" coords="354,367,480,392"/>
-<area shape="rect" id="node15" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/push_back.html#" title=" " alt="" coords="349,416,484,442"/>
-<area shape="rect" id="node16" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/size.html#" title=" " alt="" coords="369,187,465,212"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/multiset/erase.html#" title=" " alt="" coords="555,327,689,352"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/multiset/find.html#" title=" " alt="" coords="561,277,683,303"/>
-<area shape="rect" id="node12" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/multiset/begin.html#" title=" " alt="" coords="556,29,688,55"/>
-<area shape="rect" id="node13" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/multiset/insert.html#" title=" " alt="" coords="555,79,689,104"/>
+<area shape="rect" id="Node000001" title="Self&#45;test implementations." alt="" coords="5,136,49,162"/>
+<area shape="rect" id="Node000002" href="$df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a938cafbdf70dc01e86e9bb12d29ec65d" title="Gets the median of the values in the sliding window." alt="" coords="97,121,278,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="49,146,82,146,82,152,49,152"/>
+<area shape="rect" id="Node000004" href="$df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a61804988fcb1a6caf640f8291979aaa6" title="A naive and inefficient method to obtain the median of the sliding window. Used for testing!" alt="" coords="97,16,278,71"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="47,133,130,78,133,82,50,138"/>
+<area shape="rect" id="Node000006" href="$df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a6b52b7851750f28d53508e63c52a69f7" title="Insert a new value to the stream." alt="" coords="97,221,278,277"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="50,160,131,211,128,215,48,164"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/multiset/size.html#" title=" " alt="" coords="559,136,685,162"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="278,146,545,146,545,152,278,152"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/sort.html#" title=" " alt="" coords="370,5,464,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="278,31,355,22,355,28,279,36"/>
+<area shape="rect" id="Node000007" href="$df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#af544e271ea19a6fd69a6b3ed6816453e" title="Erases a value from a sorted multi&#45;value BST." alt="" coords="326,286,507,342"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="279,272,312,282,311,287,278,277"/>
+<area shape="rect" id="Node000010" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/front.html#" title=" " alt="" coords="368,236,466,262"/>
+<area shape="poly" id="edge10_Node000006_Node000010" title=" " alt="" coords="278,246,353,246,353,252,278,252"/>
+<area shape="rect" id="Node000011" href="$df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a3a7f57679e9cd6c9f042dfd0612b2b24" title="Inserts a value to a sorted multi&#45;value BST." alt="" coords="326,56,507,111"/>
+<area shape="poly" id="edge11_Node000006_Node000011" title=" " alt="" coords="231,218,276,187,367,119,370,123,280,191,234,223"/>
+<area shape="rect" id="Node000014" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/pop_front.html#" title=" " alt="" coords="354,367,480,392"/>
+<area shape="poly" id="edge15_Node000006_Node000014" title=" " alt="" coords="220,275,269,315,327,352,344,359,341,364,325,357,265,319,217,279"/>
+<area shape="rect" id="Node000015" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/push_back.html#" title=" " alt="" coords="349,416,484,442"/>
+<area shape="poly" id="edge16_Node000006_Node000015" title=" " alt="" coords="208,275,257,340,290,374,327,403,336,408,334,412,325,407,286,378,253,344,204,279"/>
+<area shape="rect" id="Node000016" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/size.html#" title=" " alt="" coords="369,187,465,212"/>
+<area shape="poly" id="edge17_Node000006_Node000016" title=" " alt="" coords="278,227,354,210,355,215,279,232"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="487,284,506,272,534,248,560,222,601,172,605,176,564,225,538,252,509,276,490,288"/>
+<area shape="rect" id="Node000008" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/multiset/erase.html#" title=" " alt="" coords="555,327,689,352"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="508,323,541,327,540,332,507,328"/>
+<area shape="rect" id="Node000009" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/multiset/find.html#" title=" " alt="" coords="561,277,683,303"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="507,301,546,296,546,302,508,306"/>
+<area shape="poly" id="edge14_Node000011_Node000003" title=" " alt="" coords="507,109,567,129,565,134,505,115"/>
+<area shape="rect" id="Node000012" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/multiset/begin.html#" title=" " alt="" coords="556,29,688,55"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="507,63,541,56,542,61,508,68"/>
+<area shape="rect" id="Node000013" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/multiset/insert.html#" title=" " alt="" coords="555,79,689,104"/>
+<area shape="poly" id="edge13_Node000011_Node000013" title=" " alt="" coords="508,84,540,86,540,91,507,90"/>
 </map>

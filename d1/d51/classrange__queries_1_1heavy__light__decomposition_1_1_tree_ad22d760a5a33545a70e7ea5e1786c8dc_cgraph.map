@@ -1,5 +1,9 @@
 <map id="range_queries::heavy_light_decomposition::Tree::init" name="range_queries::heavy_light_decomposition::Tree::init">
-<area shape="rect" id="node1" title="This function must be called after the tree adjacency list and node values are populated The function..." alt="" coords="5,81,151,137"/>
-<area shape="rect" id="node2" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ae8de7aefcb6635d3dacdd174cd4890c4" title="Utility function to populate the t_par vector." alt="" coords="199,29,344,85"/>
-<area shape="rect" id="node3" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#aa339c31ec74cd86a4842a8b09653d460" title="Utility function to compute sub&#45;tree sizes." alt="" coords="199,133,344,189"/>
+<area shape="rect" id="Node000001" title="This function must be called after the tree adjacency list and node values are populated The function..." alt="" coords="5,81,151,137"/>
+<area shape="rect" id="Node000002" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ae8de7aefcb6635d3dacdd174cd4890c4" title="Utility function to populate the t_par vector." alt="" coords="199,29,344,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,87,183,78,185,83,152,92"/>
+<area shape="rect" id="Node000003" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#aa339c31ec74cd86a4842a8b09653d460" title="Utility function to compute sub&#45;tree sizes." alt="" coords="199,133,344,189"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="152,126,185,135,183,140,150,131"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="233,29,233,19,240,10,253,5,271,3,292,5,305,13,302,17,291,11,271,8,254,10,244,15,238,21,238,29"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="233,133,233,123,240,114,253,109,271,107,292,109,305,117,302,121,291,115,271,112,254,114,244,119,238,125,238,133"/>
 </map>

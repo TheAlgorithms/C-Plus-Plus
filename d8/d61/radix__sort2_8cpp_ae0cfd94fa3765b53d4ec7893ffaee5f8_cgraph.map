@@ -1,7 +1,13 @@
 <map id="sorting::radix_sort::radix" name="sorting::radix_sort::radix">
-<area shape="rect" id="node1" title="Function to sort vector digit by digit." alt="" coords="5,47,131,88"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " alt="" coords="180,5,303,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " alt="" coords="185,55,298,80"/>
-<area shape="rect" id="node4" href="$d8/d61/radix__sort2_8cpp.html#a98ead7d43b11505398daf9a894f122f9" title="Function to sort vector according to current digit using stable sorting." alt="" coords="179,129,304,169"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="352,136,467,162"/>
+<area shape="rect" id="Node000001" title="Function to sort vector digit by digit." alt="" coords="5,47,131,88"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="35,47,33,37,38,28,50,23,68,21,88,23,99,30,96,34,86,28,68,26,52,28,42,32,38,38,40,46"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " alt="" coords="180,5,303,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,47,179,33,180,38,132,52"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " alt="" coords="185,55,298,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="131,65,170,65,170,70,131,70"/>
+<area shape="rect" id="Node000004" href="$d8/d61/radix__sort2_8cpp.html#a98ead7d43b11505398daf9a894f122f9" title="Function to sort vector according to current digit using stable sorting." alt="" coords="179,129,304,169"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="114,86,184,119,182,124,112,91"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="209,128,207,119,213,110,224,104,241,102,260,104,271,111,269,116,259,109,241,107,226,109,216,114,213,120,214,127"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="352,136,467,162"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="304,146,337,146,337,152,304,152"/>
 </map>

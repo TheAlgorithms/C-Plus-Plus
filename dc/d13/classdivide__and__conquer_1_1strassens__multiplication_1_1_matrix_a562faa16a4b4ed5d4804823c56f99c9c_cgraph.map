@@ -1,4 +1,5 @@
 <map id="divide_and_conquer::strassens_multiplication::Matrix::operator==" name="divide_and_conquer::strassens_multiplication::Matrix::operator==">
-<area shape="rect" id="node1" title="Compares two matrices if each of them are equal or not." alt="" coords="5,5,175,61"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="223,20,338,46"/>
+<area shape="rect" id="Node000001" title="Compares two matrices if each of them are equal or not." alt="" coords="5,5,175,61"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="223,20,338,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,31,207,31,207,36,175,36"/>
 </map>

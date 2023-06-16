@@ -1,4 +1,5 @@
 <map id="canJump" name="canJump">
-<area shape="rect" id="node1" title="This function implements the above algorithm." alt="" coords="5,5,80,31"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="128,5,243,31"/>
+<area shape="rect" id="Node000001" title="This function implements the above algorithm." alt="" coords="5,5,80,31"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="128,5,243,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,16,112,16,112,21,80,21"/>
 </map>

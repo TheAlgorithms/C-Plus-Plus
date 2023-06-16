@@ -1,5 +1,8 @@
 <map id="others::recursive_tree_traversals::BT::preorder" name="others::recursive_tree_traversals::BT::preorder">
-<area shape="rect" id="node1" title="preorder function that will perform the preorder traversal recursively, and return the resultant vect..." alt="" coords="5,29,169,70"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/data.html#" title=" " alt="" coords="236,12,352,37"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="217,61,371,87"/>
+<area shape="rect" id="Node000001" title="preorder function that will perform the preorder traversal recursively, and return the resultant vect..." alt="" coords="5,29,169,70"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="48,29,46,19,52,10,66,5,87,3,110,5,123,12,121,17,109,10,87,8,67,10,56,15,51,20,53,28"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/data.html#" title=" " alt="" coords="236,12,352,37"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,37,220,31,221,36,169,42"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="217,61,371,87"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="169,57,202,60,202,66,169,62"/>
 </map>

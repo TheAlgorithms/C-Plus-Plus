@@ -1,4 +1,5 @@
 <map id="tests::test4" name="tests::test4">
-<area shape="rect" id="node1" title="A Test to check a very large input." alt="" coords="5,5,93,31"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="141,5,295,31"/>
+<area shape="rect" id="Node000001" title="A Test to check a very large input." alt="" coords="5,5,93,31"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="141,5,295,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,16,126,16,126,21,93,21"/>
 </map>

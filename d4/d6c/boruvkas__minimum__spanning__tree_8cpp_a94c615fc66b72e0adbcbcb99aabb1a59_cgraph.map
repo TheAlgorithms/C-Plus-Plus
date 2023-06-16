@@ -1,6 +1,11 @@
 <map id="greedy_algorithms::boruvkas_minimum_spanning_tree::boruvkas" name="greedy_algorithms::boruvkas_minimum_spanning_tree::boruvkas">
-<area shape="rect" id="node1" title="the implementation of boruvka&#39;s algorithm" alt="" coords="5,95,199,150"/>
-<area shape="rect" id="node2" href="$d4/d6c/boruvkas__minimum__spanning__tree_8cpp.html#a95de0f5e70e83164dbd1b4c515565e84" title="Recursively returns the vertex&#39;s parent at the root of the tree." alt="" coords="247,29,440,85"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair/make_pair.html#" title=" " alt="" coords="290,110,397,135"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="286,159,401,185"/>
+<area shape="rect" id="Node000001" title="the implementation of boruvka&#39;s algorithm" alt="" coords="5,95,199,150"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="55,94,55,84,64,75,80,70,102,68,128,71,143,78,141,83,126,76,102,73,81,75,67,80,60,86,60,94"/>
+<area shape="rect" id="Node000002" href="$d4/d6c/boruvkas__minimum__spanning__tree_8cpp.html#a95de0f5e70e83164dbd1b4c515565e84" title="Recursively returns the vertex&#39;s parent at the root of the tree." alt="" coords="247,29,440,85"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="198,94,232,85,233,90,200,99"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair/make_pair.html#" title=" " alt="" coords="290,110,397,135"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="199,120,275,120,275,125,199,125"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="286,159,401,185"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="200,140,271,154,270,160,198,145"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="296,29,297,19,305,10,321,5,343,3,369,5,385,13,382,17,368,11,343,8,322,10,308,15,302,21,301,29"/>
 </map>

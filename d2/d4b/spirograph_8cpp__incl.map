@@ -1,11 +1,19 @@
 <map id="graphics/spirograph.cpp" name="graphics/spirograph.cpp">
-<area shape="rect" id="node1" title="Implementation of Spirograph" alt="" coords="232,5,392,31"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,79,56,105"/>
-<area shape="rect" id="node3" title=" " alt="" coords="79,79,137,105"/>
-<area shape="rect" id="node4" title=" " alt="" coords="161,79,220,105"/>
-<area shape="rect" id="node5" title=" " alt="" coords="244,79,297,105"/>
-<area shape="rect" id="node6" title=" " alt="" coords="322,79,387,105"/>
-<area shape="rect" id="node7" title=" " alt="" coords="411,79,477,105"/>
-<area shape="rect" id="node8" title=" " alt="" coords="502,79,573,105"/>
-<area shape="rect" id="node9" title=" " alt="" coords="596,79,665,105"/>
+<area shape="rect" id="Node000001" title="Implementation of Spirograph" alt="" coords="232,5,392,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,56,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="258,34,70,81,69,76,256,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="79,79,137,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="278,34,151,78,149,73,276,29"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="161,79,220,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="293,34,225,73,222,69,290,29"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="244,79,297,105"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="307,33,287,67,283,65,303,30"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="322,79,387,105"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="321,30,342,65,338,68,317,33"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="411,79,477,105"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="335,29,410,69,408,74,333,34"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="502,79,573,105"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="351,29,488,72,486,77,349,34"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="596,79,665,105"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="371,29,583,76,581,81,370,34"/>
 </map>

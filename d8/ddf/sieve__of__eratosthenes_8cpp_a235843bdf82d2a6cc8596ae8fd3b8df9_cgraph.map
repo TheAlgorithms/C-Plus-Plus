@@ -1,5 +1,7 @@
 <map id="print" name="print">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,52,56"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="100,5,171,31"/>
-<area shape="rect" id="node3" href="$db/d93/check__prime_8cpp.html#aa18b3517017d99bb4024853bddba5532" title="for IO operations" alt="" coords="100,55,171,80"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,52,56"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="100,5,171,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,36,85,27,86,33,53,41"/>
+<area shape="rect" id="Node000003" href="$db/d93/check__prime_8cpp.html#aa18b3517017d99bb4024853bddba5532" title="for IO operations" alt="" coords="100,55,171,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="53,46,86,54,85,59,51,51"/>
 </map>

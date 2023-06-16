@@ -1,5 +1,8 @@
 <map id="binary_search_tree&lt; T &gt;::bst_node" name="binary_search_tree&lt; T &gt;::bst_node">
-<area shape="rect" id="node1" title="A struct to represent a node in the Binary Search Tree." alt="" coords="5,124,137,165"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/unique_ptr.html" title=" " alt="" coords="86,5,256,46"/>
-<area shape="rect" id="node3" href="$dd/db6/structbinary__search__tree_1_1bst__node.html" title="A struct to represent a node in the Binary Search Tree." alt="" coords="161,124,293,165"/>
+<area shape="rect" id="Node000001" title="A struct to represent a node in the Binary Search Tree." alt="" coords="5,124,137,165"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/unique_ptr.html" title=" " alt="" coords="86,5,256,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,59,133,72,89,125,85,122,129,68,141,55"/>
+<area shape="rect" id="Node000003" href="$dd/db6/structbinary__search__tree_1_1bst__node.html" title="A struct to represent a node in the Binary Search Tree." alt="" coords="161,124,293,165"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="165,60,165,80,170,99,179,111,191,122,187,126,175,115,165,101,159,81,160,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="213,111,195,71,182,48,186,45,200,69,218,109"/>
 </map>

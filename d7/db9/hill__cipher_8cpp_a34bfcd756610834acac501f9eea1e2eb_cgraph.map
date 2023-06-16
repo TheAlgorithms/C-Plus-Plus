@@ -1,8 +1,14 @@
 <map id="operator&lt;&lt;" name="operator&lt;&lt;">
-<area shape="rect" id="node1" title=" " alt="" coords="5,104,90,130"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="160,5,231,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/left.html#" title=" " alt="" coords="163,55,228,80"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/setfill.html#" title=" " alt="" coords="156,104,235,130"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/setw.html#" title=" " alt="" coords="158,153,233,179"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="138,203,253,228"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,104,90,130"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="22,105,17,95,20,86,31,80,48,77,67,80,76,88,73,92,64,85,47,83,32,85,24,89,23,95,27,102"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="160,5,231,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,102,93,72,136,40,145,35,147,40,139,44,96,76,64,106"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/left.html#" title=" " alt="" coords="163,55,228,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="88,101,148,80,150,85,89,106"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/setfill.html#" title=" " alt="" coords="156,104,235,130"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="90,114,141,114,141,120,90,120"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/setw.html#" title=" " alt="" coords="158,153,233,179"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="89,128,145,147,143,152,88,133"/>
+<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="138,203,253,228"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="64,128,96,158,139,189,146,193,144,198,136,194,93,162,60,132"/>
 </map>

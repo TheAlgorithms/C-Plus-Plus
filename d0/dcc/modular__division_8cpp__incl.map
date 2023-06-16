@@ -1,5 +1,7 @@
 <map id="math/modular_division.cpp" name="math/modular_division.cpp">
-<area shape="rect" id="node1" title="An algorithm to divide two numbers under modulo p Modular Division" alt="" coords="5,5,182,31"/>
-<area shape="rect" id="node2" title=" " alt="" coords="16,79,80,105"/>
-<area shape="rect" id="node3" title=" " alt="" coords="105,79,176,105"/>
+<area shape="rect" id="Node000001" title="An algorithm to divide two numbers under modulo p Modular Division" alt="" coords="5,5,182,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="16,79,80,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,33,66,68,61,65,84,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="105,79,176,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="103,30,126,65,122,68,99,33"/>
 </map>

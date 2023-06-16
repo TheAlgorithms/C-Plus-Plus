@@ -1,6 +1,9 @@
 <map id="geometry/jarvis_algorithm.cpp" name="geometry/jarvis_algorithm.cpp">
-<area shape="rect" id="node1" title="Implementation of Jarvis’s algorithm." alt="" coords="22,5,217,31"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,79,63,105"/>
-<area shape="rect" id="node3" title=" " alt="" coords="87,79,152,105"/>
-<area shape="rect" id="node4" title=" " alt="" coords="176,79,247,105"/>
+<area shape="rect" id="Node000001" title="Implementation of Jarvis’s algorithm." alt="" coords="22,5,217,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,63,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,34,61,72,58,67,103,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="87,79,152,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="122,31,122,64,117,64,117,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="176,79,247,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="137,29,186,68,183,72,133,34"/>
 </map>

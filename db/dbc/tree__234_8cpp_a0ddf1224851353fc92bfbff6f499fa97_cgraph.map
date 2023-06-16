@@ -1,51 +1,111 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,566,55,592"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/stol.html#" title=" " alt="" coords="103,517,171,543"/>
-<area shape="rect" id="node3" href="$db/dbc/tree__234_8cpp.html#ae7880ce913f3058a35ff106d5be9e243" title="simple test to insert a given array and delete some item, and print the tree" alt="" coords="112,566,162,592"/>
-<area shape="rect" id="node38" href="$d3/dae/dsu__path__compression_8cpp.html#a45d94ead4cf4e1ff9f87c38bc99f59ae" title="Self&#45;implementations, 2nd test." alt="" coords="112,866,162,892"/>
-<area shape="rect" id="node4" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a6749ebb40710c9752a2771eda03c6b3e" title="Insert item to tree." alt="" coords="227,297,372,338"/>
-<area shape="rect" id="node14" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a2e9a9db7792cf5383f4c4cc418255165" title="Print tree into a dot file." alt="" coords="229,525,370,566"/>
-<area shape="rect" id="node19" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a5da1be3f5b5d967ebb36a201f3ebad11" title="Remove item from tree." alt="" coords="219,612,380,653"/>
-<area shape="rect" id="node5" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a07811b3c564a3a443b106c9aa717629d" title="A insert implementation of pre&#45;split." alt="" coords="441,133,633,174"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/unique_ptr/get.html#" title=" " alt="" coords="738,113,871,139"/>
-<area shape="rect" id="node7" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ad37e29e2a4a6cc0eb65cbd5595e1da95" title="Merge node to a not&#45;full target node." alt="" coords="694,163,915,203"/>
-<area shape="rect" id="node13" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a370b625ca9f16bbef2b65e024ef78ea9" title="Split a 4&#45;node to 1 parent and 2 children, and return the parent node." alt="" coords="720,48,889,89"/>
-<area shape="rect" id="node8" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a8e809ae85ae00e937f67ddb76951b6bb" title="Insert item to the proper position of the node and return the position index." alt="" coords="989,72,1144,113"/>
-<area shape="rect" id="node11" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a4a37381c0ef93d5ae2118b2e554974dd" title="Check if node is a full (4&#45;node)" alt="" coords="1249,136,1391,177"/>
-<area shape="rect" id="node12" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ab4e5f7b7b260bb81d9441652cc124c74" title="Set child pointer to the position of index." alt="" coords="994,191,1140,231"/>
-<area shape="rect" id="node9" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a22fd25c6c811c64b6b27b0850d8c532f" title="Check if item is in the node." alt="" coords="1246,71,1394,111"/>
-<area shape="rect" id="node10" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a306a30931f54c84098b38d6bc8f4a956" title="Insert a value to the index position." alt="" coords="1218,5,1422,46"/>
-<area shape="rect" id="node15" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " alt="" coords="468,533,606,559"/>
-<area shape="rect" id="node16" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="501,582,573,608"/>
-<area shape="rect" id="node17" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/open.html#" title=" " alt="" coords="470,418,604,444"/>
-<area shape="rect" id="node18" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#af260f0760344771bf8fce4fc9b1739be" title="Print the tree to a dot file. You can convert it to picture with graphviz." alt="" coords="452,468,622,509"/>
-<area shape="rect" id="node20" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a61dd051a74e5f36c8dc03dae8dca6ef4" title="Main function implement the pre&#45;merge remove operation." alt="" coords="428,632,646,673"/>
-<area shape="rect" id="node21" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac85ba5abfd6d34dcd908b2afe6464657" title="Get the max item of the tree." alt="" coords="699,747,910,787"/>
-<area shape="rect" id="node24" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a65a1235659356166a3e9b451c64fcc36" title="Get the min item of the tree." alt="" coords="701,877,908,918"/>
-<area shape="rect" id="node27" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#afd9f83e2d5d7f22f79c1348e98914631" title="Check if node is a 2&#45;node." alt="" coords="994,517,1139,558"/>
-<area shape="rect" id="node28" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a6c5f929afcbad5219646990edee22e18" title="Check if node is a 3&#45;node or 4&#45;node, this is useful when we delete item from 2&#45;3&#45;4 tree." alt="" coords="728,812,881,853"/>
-<area shape="rect" id="node29" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae58dca20f08eaf9313f6e7b0869c2d0e" title="Do the actual left rotate operation." alt="" coords="980,664,1153,705"/>
-<area shape="rect" id="node30" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a36f4d5f603f7edb7db7c73fb53ba14e9" title="Merge the item at index of the parent node, and its left and right child." alt="" coords="730,387,879,427"/>
-<area shape="rect" id="node35" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae68f8e62be02657c1287def6b38d7cc9" title="Do the actual right rotate operation." alt="" coords="976,583,1158,623"/>
-<area shape="rect" id="node36" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac5361479dd996eb331759f33808657d9" title="A handy function to try if we can do a left rotate to the target node." alt="" coords="708,632,901,673"/>
-<area shape="rect" id="node37" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#aec0642d1d151521ca7c70ea85cdb15d3" title="A handy function to try if we can do a right rotate to the target node." alt="" coords="704,517,905,558"/>
-<area shape="rect" id="node22" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a2753b6053b8c86c5bd987a44fdfa0a57" title="Get max item (rightmost) in the current node." alt="" coords="983,804,1151,845"/>
-<area shape="rect" id="node23" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a731f9ae385840cf0a06d55e7f9924a94" title="Get rightmose child of the current node." alt="" coords="963,739,1170,779"/>
-<area shape="rect" id="node25" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ac6f619a1605cb46196360889fff4529e" title="Get leftmose child of the current node." alt="" coords="968,935,1166,975"/>
-<area shape="rect" id="node26" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a5438d0a47850f520b2262b5a42f75b71" title="get min item (leftmost) in the current node" alt="" coords="985,869,1149,910"/>
-<area shape="rect" id="node31" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a164574a9209b5df66368530d090b32c4" title="Get the child pointer at position of index." alt="" coords="993,387,1140,427"/>
-<area shape="rect" id="node32" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a4808acb43668ff8cfd6f7cb44ceedad3" title="Get item of the \index index." alt="" coords="995,452,1138,493"/>
-<area shape="rect" id="node33" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#af564fd4b0992fff69f90de201542d3d1" title="Set the item count of the node." alt="" coords="991,256,1142,297"/>
-<area shape="rect" id="node34" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#aaa89a3016b5dd1be3552321c34343cbc" title="Set item value at position of index." alt="" coords="996,321,1138,362"/>
-<area shape="rect" id="node39" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/at.html#" title=" " alt="" coords="249,842,351,868"/>
-<area shape="rect" id="node40" href="$dd/d1f/classdsu.html#a0ce2672c570f4235eafddb0c9a58115a" title="prints the minimum, maximum and size of the set to which i belongs to" alt="" coords="266,892,334,917"/>
-<area shape="rect" id="node45" href="$dd/d1f/classdsu.html#a6ac30c07abca2aaa3b291504c25c3559" title="Method that combines two disjoint sets to which i and j belongs to and make a single set having a com..." alt="" coords="248,1066,352,1092"/>
-<area shape="rect" id="node41" href="$dd/d1f/classdsu.html#a696141b8b092466767f4bfe1c5e46cde" title="A utility function that returns the max element of the set to which i belongs to." alt="" coords="487,892,587,917"/>
-<area shape="rect" id="node43" href="$dd/d1f/classdsu.html#ac713a5b496d0405c82e2808a85e58415" title="A utility function that returns the min element of the set to which i belongs to." alt="" coords="489,941,585,967"/>
-<area shape="rect" id="node44" href="$dd/d1f/classdsu.html#a1c24228b0f2f49220133fb8c3566a55c" title="A utility function that returns the size of the set to which i belongs to." alt="" coords="500,842,574,868"/>
-<area shape="rect" id="node42" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="759,966,850,992"/>
-<area shape="rect" id="node46" href="$dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303" title="A utility function which check whether i and j belongs to same set or not." alt="" coords="490,990,584,1016"/>
-<area shape="rect" id="node47" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="501,1092,573,1117"/>
-<area shape="rect" id="node48" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="503,1141,571,1167"/>
-<area shape="rect" id="node49" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="498,1190,576,1216"/>
+<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,566,55,592"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/stol.html#" title=" " alt="" coords="103,517,171,543"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,565,93,547,95,552,56,570"/>
+<area shape="rect" id="Node000003" href="$db/dbc/tree__234_8cpp.html#ae7880ce913f3058a35ff106d5be9e243" title="simple test to insert a given array and delete some item, and print the tree" alt="" coords="112,566,162,592"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="55,576,97,576,97,582,55,582"/>
+<area shape="rect" id="Node000038" href="$d3/dae/dsu__path__compression_8cpp.html#a45d94ead4cf4e1ff9f87c38bc99f59ae" title="Self&#45;implementations, 2nd test." alt="" coords="112,866,162,892"/>
+<area shape="poly" id="edge44_Node000001_Node000038" title=" " alt="" coords="38,591,129,851,124,853,33,593"/>
+<area shape="rect" id="Node000004" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a6749ebb40710c9752a2771eda03c6b3e" title="Insert item to tree." alt="" coords="227,297,372,338"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="158,564,169,553,207,502,239,447,283,351,288,353,244,449,212,505,173,557,161,568"/>
+<area shape="rect" id="Node000014" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a2e9a9db7792cf5383f4c4cc418255165" title="Print tree into a dot file." alt="" coords="229,525,370,566"/>
+<area shape="poly" id="edge14_Node000003_Node000014" title=" " alt="" coords="162,571,214,560,215,566,163,577"/>
+<area shape="rect" id="Node000019" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a5da1be3f5b5d967ebb36a201f3ebad11" title="Remove item from tree." alt="" coords="219,612,380,653"/>
+<area shape="poly" id="edge19_Node000003_Node000019" title=" " alt="" coords="163,585,223,604,221,609,162,590"/>
+<area shape="rect" id="Node000005" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a07811b3c564a3a443b106c9aa717629d" title="A insert implementation of pre&#45;split." alt="" coords="441,133,633,174"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="329,295,492,181,495,185,332,299"/>
+<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/unique_ptr/get.html#" title=" " alt="" coords="738,113,871,139"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="633,141,722,132,723,137,633,146"/>
+<area shape="rect" id="Node000007" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ad37e29e2a4a6cc0eb65cbd5595e1da95" title="Merge node to a not&#45;full target node." alt="" coords="694,163,915,203"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="633,162,679,167,678,172,633,167"/>
+<area shape="rect" id="Node000013" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a370b625ca9f16bbef2b65e024ef78ea9" title="Split a 4&#45;node to 1 parent and 2 children, and return the parent node." alt="" coords="720,48,889,89"/>
+<area shape="poly" id="edge13_Node000005_Node000013" title=" " alt="" coords="596,130,693,98,715,91,717,96,694,103,598,135"/>
+<area shape="rect" id="Node000008" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a8e809ae85ae00e937f67ddb76951b6bb" title="Insert item to the proper position of the node and return the position index." alt="" coords="989,72,1144,113"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="880,159,914,148,1001,116,1002,121,916,154,881,165"/>
+<area shape="rect" id="Node000011" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a4a37381c0ef93d5ae2118b2e554974dd" title="Check if node is a full (4&#45;node)" alt="" coords="1249,136,1391,177"/>
+<area shape="poly" id="edge11_Node000007_Node000011" title=" " alt="" coords="915,175,1234,158,1234,163,915,180"/>
+<area shape="rect" id="Node000012" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ab4e5f7b7b260bb81d9441652cc124c74" title="Set child pointer to the position of index." alt="" coords="994,191,1140,231"/>
+<area shape="poly" id="edge12_Node000007_Node000012" title=" " alt="" coords="916,192,979,199,978,204,915,197"/>
+<area shape="rect" id="Node000009" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a22fd25c6c811c64b6b27b0850d8c532f" title="Check if item is in the node." alt="" coords="1246,71,1394,111"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1145,89,1231,89,1231,94,1145,95"/>
+<area shape="rect" id="Node000010" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a306a30931f54c84098b38d6bc8f4a956" title="Insert a value to the index position." alt="" coords="1218,5,1422,46"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="1144,69,1225,48,1226,53,1146,74"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="1146,109,1235,132,1234,137,1144,115"/>
+<area shape="rect" id="Node000015" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " alt="" coords="468,533,606,559"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="371,543,453,543,453,548,371,548"/>
+<area shape="rect" id="Node000016" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="501,582,573,608"/>
+<area shape="poly" id="edge16_Node000014_Node000016" title=" " alt="" coords="371,558,488,582,486,587,370,563"/>
+<area shape="rect" id="Node000017" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/open.html#" title=" " alt="" coords="470,418,604,444"/>
+<area shape="poly" id="edge17_Node000014_Node000017" title=" " alt="" coords="323,523,369,487,427,454,455,444,457,449,429,459,372,492,326,527"/>
+<area shape="rect" id="Node000018" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#af260f0760344771bf8fce4fc9b1739be" title="Print the tree to a dot file. You can convert it to picture with graphviz." alt="" coords="452,468,622,509"/>
+<area shape="poly" id="edge18_Node000014_Node000018" title=" " alt="" coords="370,526,437,510,438,515,371,531"/>
+<area shape="rect" id="Node000020" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a61dd051a74e5f36c8dc03dae8dca6ef4" title="Main function implement the pre&#45;merge remove operation." alt="" coords="428,632,646,673"/>
+<area shape="poly" id="edge20_Node000019_Node000020" title=" " alt="" coords="381,636,414,639,413,645,380,642"/>
+<area shape="rect" id="Node000021" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac85ba5abfd6d34dcd908b2afe6464657" title="Get the max item of the tree." alt="" coords="699,747,910,787"/>
+<area shape="poly" id="edge21_Node000020_Node000021" title=" " alt="" coords="579,671,695,726,728,739,726,744,693,731,577,676"/>
+<area shape="rect" id="Node000024" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a65a1235659356166a3e9b451c64fcc36" title="Get the min item of the tree." alt="" coords="701,877,908,918"/>
+<area shape="poly" id="edge24_Node000020_Node000024" title=" " alt="" coords="550,672,571,712,603,764,645,817,695,862,704,868,702,873,692,866,641,820,599,767,567,715,546,675"/>
+<area shape="rect" id="Node000027" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#afd9f83e2d5d7f22f79c1348e98914631" title="Check if node is a 2&#45;node." alt="" coords="994,517,1139,558"/>
+<area shape="poly" id="edge27_Node000020_Node000027" title=" " alt="" coords="628,629,644,618,655,605,661,590,665,560,670,530,678,516,692,503,722,487,749,479,774,476,799,479,851,491,915,503,980,513,979,519,915,508,850,496,798,484,774,482,750,484,724,492,695,508,682,520,675,532,670,561,667,592,660,607,647,622,631,634"/>
+<area shape="rect" id="Node000028" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a6c5f929afcbad5219646990edee22e18" title="Check if node is a 3&#45;node or 4&#45;node, this is useful when we delete item from 2&#45;3&#45;4 tree." alt="" coords="728,812,881,853"/>
+<area shape="poly" id="edge28_Node000020_Node000028" title=" " alt="" coords="557,671,614,733,653,767,695,797,715,807,713,811,692,801,649,771,610,737,553,675"/>
+<area shape="rect" id="Node000029" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae58dca20f08eaf9313f6e7b0869c2d0e" title="Do the actual left rotate operation." alt="" coords="980,664,1153,705"/>
+<area shape="poly" id="edge29_Node000020_Node000029" title=" " alt="" coords="625,671,694,682,836,689,965,687,965,692,835,694,693,687,624,676"/>
+<area shape="rect" id="Node000030" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a36f4d5f603f7edb7db7c73fb53ba14e9" title="Merge the item at index of the parent node, and its left and right child." alt="" coords="730,387,879,427"/>
+<area shape="poly" id="edge30_Node000020_Node000030" title=" " alt="" coords="630,629,644,618,658,600,666,581,669,542,671,502,678,481,692,460,708,445,726,432,729,437,711,449,696,463,683,484,676,503,674,543,671,582,663,602,648,622,633,634"/>
+<area shape="rect" id="Node000035" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae68f8e62be02657c1287def6b38d7cc9" title="Do the actual right rotate operation." alt="" coords="976,583,1158,623"/>
+<area shape="poly" id="edge37_Node000020_Node000035" title=" " alt="" coords="627,629,693,618,832,606,960,601,960,606,833,611,694,623,628,634"/>
+<area shape="rect" id="Node000036" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac5361479dd996eb331759f33808657d9" title="A handy function to try if we can do a left rotate to the target node." alt="" coords="708,632,901,673"/>
+<area shape="poly" id="edge38_Node000020_Node000036" title=" " alt="" coords="646,650,694,650,694,655,646,655"/>
+<area shape="rect" id="Node000037" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#aec0642d1d151521ca7c70ea85cdb15d3" title="A handy function to try if we can do a right rotate to the target node." alt="" coords="704,517,905,558"/>
+<area shape="poly" id="edge41_Node000020_Node000037" title=" " alt="" coords="621,629,644,618,658,608,668,597,677,586,692,574,716,562,719,566,695,579,681,589,672,600,662,611,647,623,623,634"/>
+<area shape="rect" id="Node000022" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a2753b6053b8c86c5bd987a44fdfa0a57" title="Get max item (rightmost) in the current node." alt="" coords="983,804,1151,845"/>
+<area shape="poly" id="edge22_Node000021_Node000022" title=" " alt="" coords="901,785,968,800,967,805,900,791"/>
+<area shape="rect" id="Node000023" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a731f9ae385840cf0a06d55e7f9924a94" title="Get rightmose child of the current node." alt="" coords="963,739,1170,779"/>
+<area shape="poly" id="edge23_Node000021_Node000023" title=" " alt="" coords="910,761,948,760,949,765,910,766"/>
+<area shape="rect" id="Node000025" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ac6f619a1605cb46196360889fff4529e" title="Get leftmose child of the current node." alt="" coords="968,935,1166,975"/>
+<area shape="poly" id="edge25_Node000024_Node000025" title=" " alt="" coords="901,916,957,928,956,934,900,921"/>
+<area shape="rect" id="Node000026" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a5438d0a47850f520b2262b5a42f75b71" title="get min item (leftmost) in the current node" alt="" coords="985,869,1149,910"/>
+<area shape="poly" id="edge26_Node000024_Node000026" title=" " alt="" coords="908,892,970,890,970,895,908,897"/>
+<area shape="poly" id="edge34_Node000030_Node000012" title=" " alt="" coords="818,385,876,315,916,276,962,242,979,233,981,238,964,247,920,280,880,319,822,388"/>
+<area shape="poly" id="edge33_Node000030_Node000027" title=" " alt="" coords="855,425,917,460,940,482,964,502,982,511,979,515,962,507,937,486,913,464,853,430"/>
+<area shape="rect" id="Node000031" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a164574a9209b5df66368530d090b32c4" title="Get the child pointer at position of index." alt="" coords="993,387,1140,427"/>
+<area shape="poly" id="edge31_Node000030_Node000031" title=" " alt="" coords="879,404,978,404,978,410,879,410"/>
+<area shape="rect" id="Node000032" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a4808acb43668ff8cfd6f7cb44ceedad3" title="Get item of the \index index." alt="" coords="995,452,1138,493"/>
+<area shape="poly" id="edge32_Node000030_Node000032" title=" " alt="" coords="880,423,981,448,980,453,878,428"/>
+<area shape="rect" id="Node000033" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#af564fd4b0992fff69f90de201542d3d1" title="Set the item count of the node." alt="" coords="991,256,1142,297"/>
+<area shape="poly" id="edge35_Node000030_Node000033" title=" " alt="" coords="833,384,891,346,962,307,979,300,981,305,964,312,894,350,836,388"/>
+<area shape="rect" id="Node000034" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#aaa89a3016b5dd1be3552321c34343cbc" title="Set item value at position of index." alt="" coords="996,321,1138,362"/>
+<area shape="poly" id="edge36_Node000030_Node000034" title=" " alt="" coords="878,386,981,360,982,365,880,391"/>
+<area shape="poly" id="edge39_Node000036_Node000027" title=" " alt="" coords="840,629,897,599,962,569,981,561,983,566,964,573,899,604,843,634"/>
+<area shape="poly" id="edge40_Node000036_Node000029" title=" " alt="" coords="901,661,965,669,965,675,901,667"/>
+<area shape="poly" id="edge42_Node000037_Node000027" title=" " alt="" coords="905,535,979,535,979,540,905,540"/>
+<area shape="poly" id="edge43_Node000037_Node000035" title=" " alt="" coords="890,556,969,576,968,581,888,561"/>
+<area shape="rect" id="Node000039" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/at.html#" title=" " alt="" coords="249,842,351,868"/>
+<area shape="poly" id="edge45_Node000038_Node000039" title=" " alt="" coords="162,873,233,862,234,867,163,878"/>
+<area shape="rect" id="Node000040" href="$dd/d1f/classdsu.html#a0ce2672c570f4235eafddb0c9a58115a" title="prints the minimum, maximum and size of the set to which i belongs to" alt="" coords="266,892,334,917"/>
+<area shape="poly" id="edge46_Node000038_Node000040" title=" " alt="" coords="163,880,251,894,250,899,162,885"/>
+<area shape="rect" id="Node000045" href="$dd/d1f/classdsu.html#a6ac30c07abca2aaa3b291504c25c3559" title="Method that combines two disjoint sets to which i and j belongs to and make a single set having a com..." alt="" coords="248,1066,352,1092"/>
+<area shape="poly" id="edge54_Node000038_Node000045" title=" " alt="" coords="151,890,281,1053,276,1056,147,894"/>
+<area shape="rect" id="Node000041" href="$dd/d1f/classdsu.html#a696141b8b092466767f4bfe1c5e46cde" title="A utility function that returns the max element of the set to which i belongs to." alt="" coords="487,892,587,917"/>
+<area shape="poly" id="edge47_Node000040_Node000041" title=" " alt="" coords="334,902,472,902,472,907,334,907"/>
+<area shape="rect" id="Node000043" href="$dd/d1f/classdsu.html#ac713a5b496d0405c82e2808a85e58415" title="A utility function that returns the min element of the set to which i belongs to." alt="" coords="489,941,585,967"/>
+<area shape="poly" id="edge50_Node000040_Node000043" title=" " alt="" coords="335,909,475,938,474,943,334,914"/>
+<area shape="rect" id="Node000044" href="$dd/d1f/classdsu.html#a1c24228b0f2f49220133fb8c3566a55c" title="A utility function that returns the size of the set to which i belongs to." alt="" coords="500,842,574,868"/>
+<area shape="poly" id="edge52_Node000040_Node000044" title=" " alt="" coords="334,895,485,863,486,868,335,900"/>
+<area shape="rect" id="Node000042" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="759,966,850,992"/>
+<area shape="poly" id="edge48_Node000041_Node000042" title=" " alt="" coords="588,912,646,926,752,958,750,963,645,931,587,917"/>
+<area shape="poly" id="edge49_Node000042_Node000042" title=" " alt="" coords="761,968,753,958,758,948,775,942,804,940,839,943,854,951,852,956,837,948,804,945,776,947,761,952,758,957,765,964"/>
+<area shape="poly" id="edge51_Node000043_Node000042" title=" " alt="" coords="586,956,744,971,744,976,585,961"/>
+<area shape="poly" id="edge53_Node000044_Node000042" title=" " alt="" coords="575,855,611,862,647,877,663,889,672,902,681,915,695,927,752,958,749,962,692,932,677,918,668,905,659,893,644,881,609,867,574,860"/>
+<area shape="poly" id="edge55_Node000045_Node000042" title=" " alt="" coords="352,1071,485,1055,645,1026,751,995,753,1000,646,1031,486,1060,353,1077"/>
+<area shape="rect" id="Node000046" href="$dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303" title="A utility function which check whether i and j belongs to same set or not." alt="" coords="490,990,584,1016"/>
+<area shape="poly" id="edge56_Node000045_Node000046" title=" " alt="" coords="337,1063,428,1032,475,1018,477,1023,429,1038,339,1068"/>
+<area shape="rect" id="Node000047" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="501,1092,573,1117"/>
+<area shape="poly" id="edge58_Node000045_Node000047" title=" " alt="" coords="353,1082,486,1096,486,1102,352,1087"/>
+<area shape="rect" id="Node000048" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="503,1141,571,1167"/>
+<area shape="poly" id="edge59_Node000045_Node000048" title=" " alt="" coords="332,1090,429,1127,489,1142,487,1147,428,1132,330,1095"/>
+<area shape="rect" id="Node000049" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="498,1190,576,1216"/>
+<area shape="poly" id="edge60_Node000045_Node000049" title=" " alt="" coords="316,1090,363,1133,395,1157,429,1177,456,1187,484,1194,483,1199,455,1192,427,1181,392,1161,360,1137,312,1094"/>
+<area shape="poly" id="edge57_Node000046_Node000042" title=" " alt="" coords="584,996,744,982,744,987,585,1001"/>
 </map>

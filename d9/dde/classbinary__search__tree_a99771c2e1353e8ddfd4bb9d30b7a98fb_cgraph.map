@@ -1,6 +1,11 @@
 <map id="binary_search_tree::remove" name="binary_search_tree::remove">
-<area shape="rect" id="node1" title="Remove a specified value from the BST." alt="" coords="5,59,137,99"/>
-<area shape="rect" id="node2" href="$d9/dde/classbinary__search__tree.html#af4a865ce5244608819b169fc78a41153" title="Recursive function to remove a value from the BST." alt="" coords="185,59,316,99"/>
-<area shape="rect" id="node3" href="$d9/dde/classbinary__search__tree.html#a75f897af6aa732a9901454401c869bcb" title="Recursive function to find the maximum value in the BST." alt="" coords="364,29,495,70"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/move.html#" title=" " alt="" coords="390,94,469,120"/>
+<area shape="rect" id="Node000001" title="Remove a specified value from the BST." alt="" coords="5,59,137,99"/>
+<area shape="rect" id="Node000002" href="$d9/dde/classbinary__search__tree.html#af4a865ce5244608819b169fc78a41153" title="Recursive function to remove a value from the BST." alt="" coords="185,59,316,99"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,76,170,76,170,82,137,82"/>
+<area shape="poly" id="edge5_Node000002_Node000002" title=" " alt="" coords="216,59,214,49,220,40,232,34,250,32,270,35,282,41,279,46,269,40,250,37,234,39,223,44,220,50,221,58"/>
+<area shape="rect" id="Node000003" href="$d9/dde/classbinary__search__tree.html#a75f897af6aa732a9901454401c869bcb" title="Recursive function to find the maximum value in the BST." alt="" coords="364,29,495,70"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="316,66,349,60,350,65,317,71"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/move.html#" title=" " alt="" coords="390,94,469,120"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="317,87,376,96,375,101,316,92"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="395,29,394,19,399,10,411,5,430,3,450,5,461,12,459,16,448,10,430,8,413,10,403,14,399,20,401,28"/>
 </map>

@@ -1,26 +1,71 @@
 <map id="test" name="test">
-<area shape="rect" id="node1" title=" " alt="" coords="5,277,49,303"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="97,203,168,228"/>
-<area shape="rect" id="node3" href="$d2/de9/heavy__light__decomposition_8cpp.html#a34b8683a2b429de5cce57e6d733ec817" title=" " alt="" coords="104,399,161,424"/>
-<area shape="rect" id="node23" href="$d2/de9/heavy__light__decomposition_8cpp.html#a458410412185a5f09199deaff7157a8d" title=" " alt="" coords="104,252,161,278"/>
-<area shape="rect" id="node24" href="$d2/de9/heavy__light__decomposition_8cpp.html#af31ec5409537703d9c8a47350386b32a" title=" " alt="" coords="104,301,161,327"/>
-<area shape="rect" id="node4" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#a79ab4601c4a95c0902ac04e779e5f54d" title="Adds an undirected edge from node u to node v in the tree." alt="" coords="216,352,361,407"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="409,307,564,332"/>
-<area shape="rect" id="node6" href="$d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#ae9e979edd69678b85665c01e2ee97828" title="This function must be called after the tree adjacency list and node values are populated The function..." alt="" coords="216,613,361,669"/>
-<area shape="rect" id="node14" href="$d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a4dfbf5d9df825eeb63b294c6849bdcab" title="This function returns the sum of node values in the simple path from from node_1 to node_2." alt="" coords="216,482,361,538"/>
-<area shape="rect" id="node19" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#a04cd96efaba147b19d3afc769b90ff70" title="Set the values for all the nodes." alt="" coords="216,221,361,277"/>
-<area shape="rect" id="node20" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="429,203,544,228"/>
-<area shape="rect" id="node21" href="$d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a9f1cb54ed09fde931bf3220d75ee4c57" title="This function updates the value at node with val." alt="" coords="216,90,361,146"/>
-<area shape="rect" id="node7" href="$d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#a41c733f5f5e262b308f7cb95c88c1e74" title="Function that specifies the type of operation involved when segments are combined." alt="" coords="612,561,757,617"/>
-<area shape="rect" id="node8" href="$d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#af64848d6630c39d0f09ce2359cc7c4f8" title="Utility function to assign heavy child to each node (&#45;1 for a leaf node)" alt="" coords="414,886,559,942"/>
-<area shape="rect" id="node9" href="$d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a0579062b384e54b611b80c6337c7f2c8" title="Utility function to lable the nodes so that heavy chains have a contigous lable." alt="" coords="414,548,559,603"/>
-<area shape="rect" id="node10" href="$d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a2dfbda148aad0bfaba2ebfda9ebc915a" title="Utility function to assign highest parent that can be reached though heavy chains." alt="" coords="414,702,559,758"/>
-<area shape="rect" id="node11" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ad22d760a5a33545a70e7ea5e1786c8dc" title="This function must be called after the tree adjacency list and node values are populated The function..." alt="" coords="414,782,559,838"/>
-<area shape="rect" id="node12" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ae8de7aefcb6635d3dacdd174cd4890c4" title="Utility function to populate the t_par vector." alt="" coords="612,834,757,890"/>
-<area shape="rect" id="node13" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#aa339c31ec74cd86a4842a8b09653d460" title="Utility function to compute sub&#45;tree sizes." alt="" coords="612,730,757,786"/>
-<area shape="rect" id="node15" href="$d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a7d5b40c076347a6aabfb37a0590f2f24" title="Utility function to break down a path query into two chain queries." alt="" coords="414,444,559,499"/>
-<area shape="rect" id="node17" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ae2b407e64aaf9878fbee7ee6efe9c7d4" title="The function returns the least common ancestor of two nodes." alt="" coords="414,364,559,419"/>
-<area shape="rect" id="node16" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="645,459,724,484"/>
-<area shape="rect" id="node18" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ac7761255f2ba06b398b9aae5e4dce5f3" title="The function lifts a node, k units up the tree. The lifting is done in place, and the result is store..." alt="" coords="612,364,757,419"/>
-<area shape="rect" id="node22" href="$d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#a3c75bf5770790f8eba8cc92227b5400c" title="Update the value at a node." alt="" coords="414,90,559,146"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,277,49,303"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="97,203,168,228"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="45,275,95,237,98,235,101,240,98,242,48,279"/>
+<area shape="rect" id="Node000003" href="$d2/de9/heavy__light__decomposition_8cpp.html#a34b8683a2b429de5cce57e6d733ec817" title=" " alt="" coords="104,399,161,424"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="42,302,112,386,108,389,38,305"/>
+<area shape="rect" id="Node000023" href="$d2/de9/heavy__light__decomposition_8cpp.html#a458410412185a5f09199deaff7157a8d" title=" " alt="" coords="104,252,161,278"/>
+<area shape="poly" id="edge30_Node000001_Node000023" title=" " alt="" coords="48,283,89,273,90,278,50,288"/>
+<area shape="rect" id="Node000024" href="$d2/de9/heavy__light__decomposition_8cpp.html#af31ec5409537703d9c8a47350386b32a" title=" " alt="" coords="104,301,161,327"/>
+<area shape="poly" id="edge38_Node000001_Node000024" title=" " alt="" coords="50,293,90,302,89,307,49,298"/>
+<area shape="rect" id="Node000004" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#a79ab4601c4a95c0902ac04e779e5f54d" title="Adds an undirected edge from node u to node v in the tree." alt="" coords="216,352,361,407"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="161,403,201,395,202,400,162,408"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="409,307,564,332"/>
+<area shape="poly" id="edge18_Node000003_Node000005" title=" " alt="" coords="139,424,148,452,164,487,186,521,217,548,256,567,291,575,324,569,360,548,379,527,388,505,390,481,387,456,384,430,384,404,391,377,407,350,420,338,424,342,411,353,396,379,390,404,390,430,393,456,395,481,393,506,384,530,363,552,326,574,291,580,254,572,215,553,182,525,159,490,143,454,134,426"/>
+<area shape="rect" id="Node000006" href="$d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#ae9e979edd69678b85665c01e2ee97828" title="This function must be called after the tree adjacency list and node values are populated The function..." alt="" coords="216,613,361,669"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="139,424,165,501,188,548,218,593,227,602,223,605,214,596,183,551,160,503,134,426"/>
+<area shape="rect" id="Node000014" href="$d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a4dfbf5d9df825eeb63b294c6849bdcab" title="This function returns the sum of node values in the simple path from from node_1 to node_2." alt="" coords="216,482,361,538"/>
+<area shape="poly" id="edge19_Node000003_Node000014" title=" " alt="" coords="156,423,233,472,230,476,153,427"/>
+<area shape="rect" id="Node000019" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#a04cd96efaba147b19d3afc769b90ff70" title="Set the values for all the nodes." alt="" coords="216,221,361,277"/>
+<area shape="poly" id="edge25_Node000003_Node000019" title=" " alt="" coords="144,397,249,286,253,289,148,400"/>
+<area shape="rect" id="Node000020" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="429,203,544,228"/>
+<area shape="poly" id="edge27_Node000003_Node000020" title=" " alt="" coords="162,420,204,432,256,440,311,437,336,430,360,417,374,405,383,392,389,363,393,330,398,312,407,293,431,262,457,236,460,240,435,266,412,296,403,314,398,331,394,364,388,394,378,408,363,422,338,435,311,443,256,445,203,437,161,425"/>
+<area shape="rect" id="Node000021" href="$d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a9f1cb54ed09fde931bf3220d75ee4c57" title="This function updates the value at node with val." alt="" coords="216,90,361,146"/>
+<area shape="poly" id="edge28_Node000003_Node000021" title=" " alt="" coords="138,397,166,339,187,272,197,243,214,208,250,156,254,159,218,210,202,245,192,274,170,341,143,400"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="361,355,427,335,428,340,362,360"/>
+<area shape="rect" id="Node000007" href="$d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#a41c733f5f5e262b308f7cb95c88c1e74" title="Function that specifies the type of operation involved when segments are combined." alt="" coords="612,561,757,617"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="362,634,458,626,563,613,597,607,598,612,564,618,458,632,362,640"/>
+<area shape="rect" id="Node000008" href="$d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#af64848d6630c39d0f09ce2359cc7c4f8" title="Utility function to assign heavy child to each node (&#45;1 for a leaf node)" alt="" coords="414,886,559,942"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="305,668,347,753,377,802,411,849,438,875,434,879,407,852,373,805,342,755,300,671"/>
+<area shape="rect" id="Node000009" href="$d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a0579062b384e54b611b80c6337c7f2c8" title="Utility function to lable the nodes so that heavy chains have a contigous lable." alt="" coords="414,548,559,603"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="361,615,399,602,401,607,362,620"/>
+<area shape="rect" id="Node000010" href="$d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a2dfbda148aad0bfaba2ebfda9ebc915a" title="Utility function to assign highest parent that can be reached though heavy chains." alt="" coords="414,702,559,758"/>
+<area shape="poly" id="edge11_Node000006_Node000010" title=" " alt="" coords="353,667,411,694,409,698,351,672"/>
+<area shape="rect" id="Node000011" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ad22d760a5a33545a70e7ea5e1786c8dc" title="This function must be called after the tree adjacency list and node values are populated The function..." alt="" coords="414,782,559,838"/>
+<area shape="poly" id="edge13_Node000006_Node000011" title=" " alt="" coords="313,668,356,717,411,768,416,772,413,776,408,772,352,721,309,671"/>
+<area shape="poly" id="edge8_Node000008_Node000008" title=" " alt="" coords="447,886,448,876,455,867,468,862,487,860,508,863,521,870,518,874,506,868,486,865,469,867,458,872,453,878,453,886"/>
+<area shape="poly" id="edge10_Node000009_Node000009" title=" " alt="" coords="447,547,448,537,455,529,468,523,487,521,508,524,521,531,518,536,506,529,486,526,469,528,458,533,453,539,453,547"/>
+<area shape="poly" id="edge12_Node000010_Node000010" title=" " alt="" coords="447,702,448,692,455,683,468,678,487,676,508,679,521,686,518,690,506,684,486,681,469,683,458,688,453,694,453,702"/>
+<area shape="rect" id="Node000012" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ae8de7aefcb6635d3dacdd174cd4890c4" title="Utility function to populate the t_par vector." alt="" coords="612,834,757,890"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="560,827,598,837,597,842,559,832"/>
+<area shape="rect" id="Node000013" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#aa339c31ec74cd86a4842a8b09653d460" title="Utility function to compute sub&#45;tree sizes." alt="" coords="612,730,757,786"/>
+<area shape="poly" id="edge16_Node000011_Node000013" title=" " alt="" coords="559,789,597,779,598,784,560,794"/>
+<area shape="poly" id="edge15_Node000012_Node000012" title=" " alt="" coords="645,834,646,824,653,815,666,810,684,808,706,811,719,818,716,822,704,816,684,813,667,815,656,820,651,826,650,834"/>
+<area shape="poly" id="edge17_Node000013_Node000013" title=" " alt="" coords="645,730,646,720,653,711,666,706,684,704,706,707,719,714,716,718,704,712,684,709,667,711,656,716,651,722,650,730"/>
+<area shape="rect" id="Node000015" href="$d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a7d5b40c076347a6aabfb37a0590f2f24" title="Utility function to break down a path query into two chain queries." alt="" coords="414,444,559,499"/>
+<area shape="poly" id="edge20_Node000014_Node000015" title=" " alt="" coords="361,494,399,486,400,491,362,499"/>
+<area shape="rect" id="Node000017" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ae2b407e64aaf9878fbee7ee6efe9c7d4" title="The function returns the least common ancestor of two nodes." alt="" coords="414,364,559,419"/>
+<area shape="poly" id="edge23_Node000014_Node000017" title=" " alt="" coords="332,480,360,461,408,429,416,425,419,429,411,434,363,466,335,484"/>
+<area shape="poly" id="edge21_Node000015_Node000007" title=" " alt="" coords="545,498,565,509,630,550,627,555,562,514,542,502"/>
+<area shape="rect" id="Node000016" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="645,459,724,484"/>
+<area shape="poly" id="edge22_Node000015_Node000016" title=" " alt="" coords="559,469,630,469,630,474,559,474"/>
+<area shape="rect" id="Node000018" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ac7761255f2ba06b398b9aae5e4dce5f3" title="The function lifts a node, k units up the tree. The lifting is done in place, and the result is store..." alt="" coords="612,364,757,419"/>
+<area shape="poly" id="edge24_Node000017_Node000018" title=" " alt="" coords="559,389,597,389,597,394,559,394"/>
+<area shape="poly" id="edge26_Node000019_Node000020" title=" " alt="" coords="361,234,414,225,415,230,362,239"/>
+<area shape="rect" id="Node000022" href="$d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#a3c75bf5770790f8eba8cc92227b5400c" title="Update the value at a node." alt="" coords="414,90,559,146"/>
+<area shape="poly" id="edge29_Node000021_Node000022" title=" " alt="" coords="362,116,399,116,399,121,362,121"/>
+<area shape="poly" id="edge31_Node000023_Node000004" title=" " alt="" coords="155,276,170,287,241,340,238,345,166,291,151,280"/>
+<area shape="poly" id="edge33_Node000023_Node000005" title=" " alt="" coords="155,250,166,239,178,217,183,196,183,154,183,133,187,113,196,94,214,76,252,54,289,47,325,54,363,76,381,94,391,113,396,132,396,152,397,194,401,216,412,240,434,270,459,295,455,299,430,273,407,242,396,218,392,195,391,152,390,133,386,115,377,97,360,80,323,59,289,52,254,59,218,80,201,97,192,115,189,134,189,154,188,196,183,219,170,243,159,254"/>
+<area shape="poly" id="edge32_Node000023_Node000006" title=" " alt="" coords="160,277,170,287,189,323,198,356,201,387,200,417,200,478,205,512,218,549,234,576,252,600,248,603,229,579,214,551,200,513,194,478,195,416,196,387,193,357,184,325,166,291,156,280"/>
+<area shape="poly" id="edge34_Node000023_Node000014" title=" " alt="" coords="159,277,170,287,190,321,197,352,204,383,218,418,254,470,250,473,214,421,199,384,192,353,185,323,166,291,155,280"/>
+<area shape="poly" id="edge35_Node000023_Node000019" title=" " alt="" coords="161,259,201,255,201,261,162,265"/>
+<area shape="poly" id="edge36_Node000023_Node000020" title=" " alt="" coords="156,250,166,239,180,211,185,184,181,131,180,105,182,80,193,55,214,32,252,10,288,3,324,11,363,32,378,46,387,60,393,91,396,123,401,140,411,157,430,176,451,192,447,196,426,180,407,160,397,142,391,124,388,92,382,62,374,49,360,36,322,16,288,8,254,15,218,36,197,58,187,81,185,105,187,130,190,184,185,213,170,243,160,253"/>
+<area shape="poly" id="edge37_Node000023_Node000021" title=" " alt="" coords="154,250,166,239,181,220,189,202,198,183,214,163,225,153,228,157,218,167,203,186,194,204,185,222,170,243,157,254"/>
+<area shape="poly" id="edge39_Node000024_Node000004" title=" " alt="" coords="163,324,209,343,206,348,160,329"/>
+<area shape="poly" id="edge41_Node000024_Node000005" title=" " alt="" coords="161,312,394,316,394,321,161,317"/>
+<area shape="poly" id="edge40_Node000024_Node000006" title=" " alt="" coords="143,326,170,385,185,432,192,469,200,505,218,549,253,600,249,603,214,552,195,507,187,470,179,433,166,387,138,328"/>
+<area shape="poly" id="edge42_Node000024_Node000014" title=" " alt="" coords="146,326,218,418,259,469,254,473,214,421,142,329"/>
+<area shape="poly" id="edge43_Node000024_Node000019" title=" " alt="" coords="160,300,206,280,209,285,163,305"/>
+<area shape="poly" id="edge44_Node000024_Node000020" title=" " alt="" coords="154,299,166,289,180,266,187,245,195,225,215,207,241,195,269,187,326,182,382,186,430,196,429,201,381,191,326,187,270,192,243,200,217,211,199,228,192,247,185,269,170,292,158,303"/>
+<area shape="poly" id="edge45_Node000024_Node000021" title=" " alt="" coords="155,299,166,289,183,257,189,227,195,197,214,163,222,154,226,158,218,167,200,198,194,228,188,258,170,292,159,303"/>
 </map>

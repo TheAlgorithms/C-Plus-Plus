@@ -1,5 +1,8 @@
 <map id="sorting::insertionSort_binsrch" name="sorting::insertionSort_binsrch">
-<area shape="rect" id="node1" title="Insertion sort function to sort the vector." alt="" coords="5,47,147,88"/>
-<area shape="rect" id="node2" href="$d5/d91/namespacesorting.html#a034d8b276518a902962e87d3158b64fd" title="Binary search function to find the most suitable pace for an element." alt="" coords="195,29,344,55"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="212,79,327,104"/>
+<area shape="rect" id="Node000001" title="Insertion sort function to sort the vector." alt="" coords="5,47,147,88"/>
+<area shape="rect" id="Node000002" href="$d5/d91/namespacesorting.html#a034d8b276518a902962e87d3158b64fd" title="Binary search function to find the most suitable pace for an element." alt="" coords="195,29,344,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,56,180,51,180,57,148,61"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="212,79,327,104"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="148,74,197,80,196,85,147,79"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="237,30,231,21,234,11,248,5,269,3,294,6,306,13,303,18,292,11,269,8,249,10,238,15,236,20,241,27"/>
 </map>

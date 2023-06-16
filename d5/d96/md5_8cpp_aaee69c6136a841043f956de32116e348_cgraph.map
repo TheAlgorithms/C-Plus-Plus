@@ -1,3 +1,4 @@
 <map id="hashing::md5::sig2hex" name="hashing::md5::sig2hex">
-<area shape="rect" id="node1" title="Transforms the 128&#45;bit MD5 signature into a 32 char hex string." alt="" coords="5,29,158,55"/>
+<area shape="rect" id="Node000001" title="Transforms the 128&#45;bit MD5 signature into a 32 char hex string." alt="" coords="5,29,158,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="55,30,50,21,53,11,64,5,82,3,101,6,111,13,107,17,99,11,81,8,66,10,58,15,56,20,60,28"/>
 </map>

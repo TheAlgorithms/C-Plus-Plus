@@ -1,5 +1,7 @@
 <map id="hashing/linear_probing_hash_table.cpp" name="hashing/linear_probing_hash_table.cpp">
-<area shape="rect" id="node1" title="Storage mechanism using linear probing hash keys." alt="" coords="10,5,160,46"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,94,77,120"/>
-<area shape="rect" id="node3" title=" " alt="" coords="100,94,158,120"/>
+<area shape="rect" id="Node000001" title="Storage mechanism using linear probing hash keys." alt="" coords="10,5,160,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,77,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,48,57,82,53,79,72,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="100,94,158,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="98,45,117,79,113,82,94,48"/>
 </map>

@@ -6,12 +6,22 @@
 <!-- Title: machine_learning::k_nearest_neighbors::Knn Pages: 1 -->
 <svg width="236pt" height="183pt"
  viewBox="0.00 0.00 235.50 182.75" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 178.75)">
 <title>machine_learning::k_nearest_neighbors::Knn</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="K&#45;Nearest Neighbors (Knn) class using Euclidean distance as distance metric.">
+<g id="a_Node000001"><a xlink:title="K&#45;Nearest Neighbors (Knn) class using Euclidean distance as distance metric.">
 <polygon fill="#999999" stroke="#666666" points="183,-30.5 59,-30.5 59,0 183,0 183,-30.5"/>
 <text text-anchor="start" x="67" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">machine_learning::k</text>
 <text text-anchor="middle" x="121" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">_nearest_neighbors::Knn</text>
@@ -19,9 +29,9 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="118,-108.25 0,-108.25 0,-77.75 118,-77.75 118,-108.25"/>
 <text text-anchor="start" x="8" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; std::vector</text>
 <text text-anchor="middle" x="59" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; double &gt; &gt;</text>
@@ -29,43 +39,67 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M77.9,-68.9C88.06,-56.5 100.26,-41.59 109.08,-30.81"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="74.58,-66.44 70.95,-76.39 80,-70.87 74.58,-66.44"/>
-<text text-anchor="middle" x="101.5" y="-50.25" font-family="Helvetica,sans-Serif" font-size="10.00"> X_</text>
+</a>
+</g>
+<text text-anchor="middle" x="101.5" y="-50.25" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> X_</text>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="113.5,-174.75 4.5,-174.75 4.5,-155.5 113.5,-155.5 113.5,-174.75"/>
 <text text-anchor="middle" x="59" y="-161.25" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; double &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000002_Node000003" class="edge">
 <title>Node3&#45;&gt;Node2</title>
+<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M59,-144.28C59,-132.95 59,-119 59,-108.67"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="55.5,-144.24 59,-154.24 62.5,-144.24 55.5,-144.24"/>
-<text text-anchor="middle" x="80.38" y="-128" font-family="Helvetica,sans-Serif" font-size="10.00"> elements</text>
+</a>
+</g>
+<text text-anchor="middle" x="80.38" y="-128" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> elements</text>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="227.5,-102.62 136.5,-102.62 136.5,-83.38 227.5,-83.38 227.5,-102.62"/>
 <text text-anchor="middle" x="182" y="-89.12" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; int &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node1 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000004" class="edge">
 <title>Node4&#45;&gt;Node1</title>
+<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M168.11,-74.76C157.47,-61.53 142.93,-43.48 132.83,-30.94"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="165.76,-76.42 174.76,-82.01 171.22,-72.03 165.76,-76.42"/>
-<text text-anchor="middle" x="162.5" y="-50.25" font-family="Helvetica,sans-Serif" font-size="10.00"> Y_</text>
+</a>
+</g>
+<text text-anchor="middle" x="162.5" y="-50.25" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> Y_</text>
 </g>
 </g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

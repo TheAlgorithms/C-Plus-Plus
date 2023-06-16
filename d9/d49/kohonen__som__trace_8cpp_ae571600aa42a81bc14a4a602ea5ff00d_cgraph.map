@@ -1,5 +1,7 @@
 <map id="test_circle" name="test_circle">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,87,31"/>
-<area shape="rect" id="node2" href="$d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485" title=" " alt="" coords="135,5,206,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="254,5,326,31"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,87,31"/>
+<area shape="rect" id="Node000002" href="$d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485" title=" " alt="" coords="135,5,206,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,16,120,16,120,21,87,21"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="254,5,326,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="206,16,239,16,239,21,206,21"/>
 </map>

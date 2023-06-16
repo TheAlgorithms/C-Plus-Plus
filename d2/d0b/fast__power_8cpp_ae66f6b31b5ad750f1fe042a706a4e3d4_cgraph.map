@@ -1,11 +1,21 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,227,55,252"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="140,5,211,31"/>
-<area shape="rect" id="node3" href="$d2/d0b/fast__power_8cpp.html#a0d4e3f0099a6975b74a314a35bd0f94d" title=" " alt="" coords="114,79,237,104"/>
-<area shape="rect" id="node4" href="$d2/d0b/fast__power_8cpp.html#a8399b847626e5bba983cab7c7918b445" title=" " alt="" coords="103,152,248,178"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="140,201,211,227"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="139,251,212,276"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/srand.html#" title=" " alt="" coords="136,300,215,326"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/ios_base/sync_with_stdio.html#" title=" " alt="" coords="108,350,243,391"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/time.html#" title=" " alt="" coords="139,415,212,440"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,227,55,252"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="140,5,211,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="30,226,34,190,46,140,67,87,82,62,101,40,124,26,127,30,104,44,86,65,72,89,51,142,40,191,35,227"/>
+<area shape="rect" id="Node000003" href="$d2/d0b/fast__power_8cpp.html#a0d4e3f0099a6975b74a314a35bd0f94d" title=" " alt="" coords="114,79,237,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="33,225,56,172,76,140,101,114,106,110,109,114,104,117,80,144,61,174,38,227"/>
+<area shape="rect" id="Node000004" href="$d2/d0b/fast__power_8cpp.html#a8399b847626e5bba983cab7c7918b445" title=" " alt="" coords="103,152,248,178"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="45,224,71,205,101,186,113,181,115,186,104,191,74,210,49,229"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="140,201,211,227"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="54,233,125,220,125,225,55,238"/>
+<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="139,251,212,276"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="55,241,125,253,124,258,54,246"/>
+<area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/srand.html#" title=" " alt="" coords="136,300,215,326"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="49,250,104,286,123,295,121,300,101,291,46,255"/>
+<area shape="rect" id="Node000008" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/ios_base/sync_with_stdio.html#" title=" " alt="" coords="108,350,243,391"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="40,251,65,292,83,316,104,336,109,339,105,344,101,340,79,319,61,295,36,254"/>
+<area shape="rect" id="Node000009" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/time.html#" title=" " alt="" coords="139,415,212,440"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="36,252,43,283,56,322,76,364,104,400,126,414,124,418,101,404,71,367,51,324,38,284,31,254"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="150,80,146,70,148,61,159,54,175,52,194,55,203,62,200,66,192,60,175,57,160,59,153,64,151,70,155,77"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="150,153,146,143,148,134,159,128,175,125,194,128,203,136,200,140,192,133,175,131,160,133,153,137,151,143,155,150"/>
 </map>

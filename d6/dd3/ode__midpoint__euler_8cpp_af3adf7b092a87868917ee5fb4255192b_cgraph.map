@@ -1,5 +1,7 @@
 <map id="exact_solution" name="exact_solution">
-<area shape="rect" id="node1" title="Exact solution of the problem. Used for solution comparison." alt="" coords="5,31,111,56"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/cos.html#" title=" " alt="" coords="159,5,227,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sin.html#" title=" " alt="" coords="161,55,225,80"/>
+<area shape="rect" id="Node000001" title="Exact solution of the problem. Used for solution comparison." alt="" coords="5,31,111,56"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/cos.html#" title=" " alt="" coords="159,5,227,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,31,143,25,144,30,112,36"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sin.html#" title=" " alt="" coords="161,55,225,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="112,50,146,57,145,62,111,56"/>
 </map>

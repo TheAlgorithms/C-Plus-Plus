@@ -1,5 +1,8 @@
 <map id="range_queries::sparse_table::buildTable" name="range_queries::sparse_table::buildTable">
-<area shape="rect" id="node1" title=" " alt="" coords="5,29,155,70"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="226,12,295,37"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="203,61,318,87"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,155,70"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="45,29,44,19,49,10,62,5,80,3,100,5,112,12,109,16,99,10,80,8,63,10,53,14,49,20,51,28"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="226,12,295,37"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="155,37,211,28,212,34,156,42"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="203,61,318,87"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="155,57,188,61,188,67,155,62"/>
 </map>

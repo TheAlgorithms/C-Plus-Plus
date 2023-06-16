@@ -1,4 +1,5 @@
 <map id="SieveOfEratosthenes" name="SieveOfEratosthenes">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,151,31"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="199,5,353,31"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,151,31"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="199,5,353,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,16,184,16,184,21,151,21"/>
 </map>

@@ -1,5 +1,9 @@
 <map id="physics::ground_to_ground_projectile_motion::horizontal_range" name="physics::ground_to_ground_projectile_motion::horizontal_range">
-<area shape="rect" id="node1" title="Calculate the horizontal distance that the projectile travels." alt="" coords="5,36,178,91"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/cos.html#" title=" " alt="" coords="278,5,346,31"/>
-<area shape="rect" id="node3" href="$d9/d29/ground__to__ground__projectile__motion_8cpp.html#aba1d26faf6a5379c28cae458956241de" title="Convert radians to degrees." alt="" coords="226,80,398,135"/>
+<area shape="rect" id="Node000001" title="Calculate the horizontal distance that the projectile travels." alt="" coords="5,36,178,91"/>
+<area shape="poly" id="edge4_Node000001_Node000001" title=" " alt="" coords="48,35,49,25,57,17,71,11,92,9,115,12,129,19,127,24,114,17,91,14,72,16,60,21,54,27,53,35"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/cos.html#" title=" " alt="" coords="278,5,346,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,43,263,25,264,31,179,48"/>
+<area shape="rect" id="Node000003" href="$d9/d29/ground__to__ground__projectile__motion_8cpp.html#aba1d26faf6a5379c28cae458956241de" title="Convert radians to degrees." alt="" coords="226,80,398,135"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,78,212,85,211,90,178,83"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="269,79,269,69,277,61,291,55,312,53,336,56,350,63,347,68,334,61,312,58,292,60,280,65,274,71,274,79"/>
 </map>

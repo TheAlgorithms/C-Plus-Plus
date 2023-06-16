@@ -1,4 +1,5 @@
 <map id="math::quadraticEquation" name="math::quadraticEquation">
-<area shape="rect" id="node1" title="Quadratic equation calculator." alt="" coords="5,5,168,31"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="216,5,285,31"/>
+<area shape="rect" id="Node000001" title="Quadratic equation calculator." alt="" coords="5,5,168,31"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="216,5,285,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,16,201,16,201,21,168,21"/>
 </map>

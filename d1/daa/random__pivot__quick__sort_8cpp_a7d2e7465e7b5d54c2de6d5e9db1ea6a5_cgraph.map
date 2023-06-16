@@ -1,7 +1,13 @@
 <map id="sorting::random_pivot_quick_sort::quickSortRP" name="sorting::random_pivot_quick_sort::quickSortRP">
-<area shape="rect" id="node1" title="Random pivot quick sort function. This function is the starting point of the algorithm." alt="" coords="5,112,176,153"/>
-<area shape="rect" id="node2" href="$d1/daa/random__pivot__quick__sort_8cpp.html#aac5657b4fe2251cd21073f44233f6ea5" title="Takes the start and end indices of an array and returns a random int64_teger between the range of tho..." alt="" coords="224,29,419,70"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/size.html#" title=" " alt="" coords="267,94,376,120"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="282,144,361,169"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/tuple/tie.html#" title=" " alt="" coords="291,193,352,219"/>
+<area shape="rect" id="Node000001" title="Random pivot quick sort function. This function is the starting point of the algorithm." alt="" coords="5,112,176,153"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="47,112,45,102,52,93,67,87,91,85,116,88,131,94,129,99,115,93,90,91,68,93,55,97,50,103,52,111"/>
+<area shape="rect" id="Node000002" href="$d1/daa/random__pivot__quick__sort_8cpp.html#aac5657b4fe2251cd21073f44233f6ea5" title="Takes the start and end indices of an array and returns a random int64_teger between the range of tho..." alt="" coords="224,29,419,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,109,223,79,241,73,243,78,225,84,145,114"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/size.html#" title=" " alt="" coords="267,94,376,120"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="176,120,252,112,253,117,176,126"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="282,144,361,169"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="176,139,268,148,267,153,176,144"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/tuple/tie.html#" title=" " alt="" coords="291,193,352,219"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="144,151,224,179,277,193,276,198,223,184,142,156"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="278,29,276,19,283,10,298,5,321,3,347,5,362,12,359,17,345,10,321,8,299,10,286,15,281,21,283,28"/>
 </map>

@@ -1,6 +1,10 @@
 <map id="math::monte_carlo::generate_samples" name="math::monte_carlo::generate_samples">
-<area shape="rect" id="node1" title="short&#45;hand for std::functions used in this implementation" alt="" coords="5,47,143,88"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="234,5,302,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="191,55,345,80"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/reserve.html#" title=" " alt="" coords="201,104,335,130"/>
+<area shape="rect" id="Node000001" title="short&#45;hand for std::functions used in this implementation" alt="" coords="5,47,143,88"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="37,47,35,37,41,28,54,23,74,21,96,23,108,30,106,34,94,28,74,26,56,28,45,32,40,38,42,46"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="234,5,302,31"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="143,47,219,28,220,33,144,53"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="191,55,345,80"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="143,65,176,65,176,70,143,70"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/reserve.html#" title=" " alt="" coords="201,104,335,130"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="144,82,201,97,200,102,143,88"/>
 </map>

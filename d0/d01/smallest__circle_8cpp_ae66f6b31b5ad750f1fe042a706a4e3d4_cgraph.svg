@@ -5,342 +5,405 @@
  -->
 <!-- Title: main Pages: 1 -->
 <!--zoomable 243 -->
+
 <svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
 <style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
 .edge:hover path { stroke: red; }
 .edge:hover polygon { stroke: red; fill: red; }
 ]]></style>
-<script type="text/javascript"><![CDATA[
-var edges = document.getElementsByTagName('g');
-if (edges && edges.length) {
-  for (var i=0;i<edges.length;i++) {
-    if (edges[i].id.substr(0,4)=='edge') {
-      edges[i].setAttribute('class','edge');
-    }
-  }
-}
-]]></script>
-        <defs>
-                <circle id="rim" cx="0" cy="0" r="7"/>
-                <circle id="rim2" cx="0" cy="0" r="3.5"/>
-                <g id="zoomPlus">
-                        <use xlink:href="#rim" fill="#404040">
-                                <set attributeName="fill" to="#808080" begin="zoomplus.mouseover" end="zoomplus.mouseout"/>
-                        </use>
-                        <path d="M-4,0h8M0,-4v8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
-                </g>
-                <g id="zoomMin">
-                        <use xlink:href="#rim" fill="#404040">
-                                <set attributeName="fill" to="#808080" begin="zoomminus.mouseover" end="zoomminus.mouseout"/>
-                        </use>
-                        <path d="M-4,0h8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
-                </g>
-                <g id="dirArrow">
-                        <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-               <g id="resetDef">
-                       <use xlink:href="#rim2" fill="#404040">
-                               <set attributeName="fill" to="#808080" begin="reset.mouseover" end="reset.mouseout"/>
-                       </use>
-               </g>
-        </defs>
 
-<script type="text/javascript">
+<defs>
+  <circle id="rim" cx="0" cy="0" r="7"/>
+  <circle id="rim2" cx="0" cy="0" r="3.5"/>
+  <g id="zoomPlus">
+    <use xlink:href="#rim" fill="#404040"><set attributeName="fill" to="#808080" begin="zoomplus.mouseover" end="zoomplus.mouseout"/></use>
+    <path d="M-4,0h8M0,-4v8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
+  </g>
+  <g id="zoomMin">
+    <use xlink:href="#rim" fill="#404040"><set attributeName="fill" to="#808080" begin="zoomminus.mouseover" end="zoomminus.mouseout"/></use>
+    <path d="M-4,0h8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
+  </g>
+  <g id="arrowUp" transform="translate(30 24)">
+    <use xlink:href="#rim"/>
+    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+  </g>
+  <g id="arrowRight" transform="rotate(90) translate(36 -43)">
+    <use xlink:href="#rim"/>
+    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+  </g>
+  <g id="arrowDown" transform="rotate(180) translate(-30 -48)">
+    <use xlink:href="#rim"/>
+    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+  </g>
+  <g id="arrowLeft" transform="rotate(270) translate(-36 17)">
+    <use xlink:href="#rim"/>
+    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+  </g>
+  <g id="resetDef">
+    <use xlink:href="#rim2" fill="#404040"><set attributeName="fill" to="#808080" begin="reset.mouseover" end="reset.mouseout"/></use>
+  </g>
+</defs>
+<script type="application/ecmascript">
 var viewWidth = 589;
 var viewHeight = 243;
 var sectionId = 'dynsection-3';
 </script>
-<script xlink:href="../../svgpan.js"/>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>main</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="37,-170.25 0,-170.25 0,-151 37,-151 37,-170.25"/>
 <text text-anchor="middle" x="18.5" y="-156.75" font-family="Helvetica,sans-Serif" font-size="10.00">main</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="361.38,-151.25 307.88,-151.25 307.88,-132 361.38,-132 361.38,-151.25"/>
 <text text-anchor="middle" x="334.62" y="-137.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M30.61,-170.44C40.92,-179.06 57.04,-191.34 73,-198.62 149.95,-233.78 184.77,-250.03 262.5,-216.62 288.79,-205.32 309.93,-179 322.13,-160.75"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="325.54,-162.91 327.96,-152.6 319.64,-159.15 325.54,-162.91"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d0/d01/smallest__circle_8cpp.html#ae1a3968e7947464bee7714f6d43b7002" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="../../d0/d01/smallest__circle_8cpp.html#ae1a3968e7947464bee7714f6d43b7002" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="108.12,-151.25 75.62,-151.25 75.62,-132 108.12,-132 108.12,-151.25"/>
 <text text-anchor="middle" x="91.88" y="-137.75" font-family="Helvetica,sans-Serif" font-size="10.00">test</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M37.14,-155.93C45.48,-153.71 55.6,-151.02 64.79,-148.57"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="65.61,-151.71 74.37,-145.75 63.81,-144.94 65.61,-151.71"/>
+</a>
+</g>
 </g>
 <!-- Node11 -->
-<g id="node11" class="node">
+<g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_node11"><a xlink:href="../../d0/d01/smallest__circle_8cpp.html#a0283886819c7c140a023582b7269e2d0" target="_top" xlink:title=" ">
+<g id="a_Node000011"><a xlink:href="../../d0/d01/smallest__circle_8cpp.html#a0283886819c7c140a023582b7269e2d0" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="110.75,-114.25 73,-114.25 73,-95 110.75,-95 110.75,-114.25"/>
 <text text-anchor="middle" x="91.88" y="-100.75" font-family="Helvetica,sans-Serif" font-size="10.00">test2</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node11 -->
-<g id="edge16" class="edge">
+<g id="edge16_Node000001_Node000011" class="edge">
 <title>Node1&#45;&gt;Node11</title>
+<g id="a_edge16_Node000001_Node000011"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M32.26,-150.61C42.61,-142.49 57.43,-130.87 69.58,-121.34"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="71.52,-123.48 77.23,-114.55 67.2,-117.97 71.52,-123.48"/>
+</a>
+</g>
 </g>
 <!-- Node12 -->
-<g id="node12" class="node">
+<g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_node12"><a xlink:href="../../d0/d01/smallest__circle_8cpp.html#a6d0455dd5c30adda100e95f0423c786e" target="_top" xlink:title=" ">
+<g id="a_Node000012"><a xlink:href="../../d0/d01/smallest__circle_8cpp.html#a6d0455dd5c30adda100e95f0423c786e" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="110.75,-189.25 73,-189.25 73,-170 110.75,-170 110.75,-189.25"/>
 <text text-anchor="middle" x="91.88" y="-175.75" font-family="Helvetica,sans-Serif" font-size="10.00">test3</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node12 -->
-<g id="edge20" class="edge">
+<g id="edge20_Node000001_Node000012" class="edge">
 <title>Node1&#45;&gt;Node12</title>
+<g id="a_edge20_Node000001_Node000012"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M37.14,-165.32C44.81,-167.36 53.98,-169.8 62.55,-172.09"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="61.38,-175.66 71.94,-174.85 63.18,-168.9 61.38,-175.66"/>
+</a>
+</g>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
-<g id="edge14" class="edge">
+<g id="edge14_Node000003_Node000002" class="edge">
 <title>Node3&#45;&gt;Node2</title>
+<g id="a_edge14_Node000003_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M108.3,-141.62C145.89,-141.62 243.08,-141.62 296.72,-141.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="296.46,-145.13 306.46,-141.62 296.46,-138.13 296.46,-145.13"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="../../d0/d01/smallest__circle_8cpp.html#a0b0676df8e4da7a08c7ccaecea344903" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="../../d0/d01/smallest__circle_8cpp.html#a0b0676df8e4da7a08c7ccaecea344903" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="224.25,-75.25 185,-75.25 185,-56 224.25,-56 224.25,-75.25"/>
 <text text-anchor="middle" x="204.62" y="-61.75" font-family="Helvetica,sans-Serif" font-size="10.00">circle</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000003_Node000004" class="edge">
 <title>Node3&#45;&gt;Node4</title>
+<g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M107.35,-131.69C125.84,-119 158.08,-96.88 180.11,-81.76"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="181.88,-84.11 188.14,-75.56 177.92,-78.34 181.88,-84.11"/>
+</a>
+</g>
 </g>
 <!-- Node10 -->
-<g id="node10" class="node">
+<g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_node10"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
+<g id="a_Node000010"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="262.5,-189.25 146.75,-189.25 146.75,-170 262.5,-170 262.5,-189.25"/>
 <text text-anchor="middle" x="204.62" y="-175.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::push_back</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node10 -->
-<g id="edge15" class="edge">
+<g id="edge15_Node000003_Node000010" class="edge">
 <title>Node3&#45;&gt;Node10</title>
+<g id="a_edge15_Node000003_Node000010"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M108.27,-146.91C122.62,-151.83 144.62,-159.38 163.88,-165.99"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="162.63,-169.6 173.23,-169.54 164.9,-162.98 162.63,-169.6"/>
+</a>
+</g>
 </g>
 <!-- Node4&#45;&gt;Node2 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000004_Node000002" class="edge">
 <title>Node4&#45;&gt;Node2</title>
+<g id="a_edge4_Node000004_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M224.65,-71.72C236.12,-75.85 250.74,-81.95 262.5,-89.62 280.93,-101.65 280.53,-110.92 298.5,-123.62 299.63,-124.43 300.81,-125.21 302.01,-125.98"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="300.11,-129.51 310.52,-131.51 303.63,-123.46 300.11,-129.51"/>
+</a>
+</g>
 </g>
 <!-- Node5 -->
-<g id="node5" class="node">
+<g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="../../d0/d01/smallest__circle_8cpp.html#a3cbebd6f4d2cdf227663c67fe41ba12a" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="../../d0/d01/smallest__circle_8cpp.html#a3cbebd6f4d2cdf227663c67fe41ba12a" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="481.62,-76.25 418.38,-76.25 418.38,-57 481.62,-57 481.62,-76.25"/>
 <text text-anchor="middle" x="450" y="-62.75" font-family="Helvetica,sans-Serif" font-size="10.00">LenghtLine</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
-<g id="edge5" class="edge">
+<g id="edge5_Node000004_Node000005" class="edge">
 <title>Node4&#45;&gt;Node5</title>
+<g id="a_edge5_Node000004_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M224.72,-65.7C263.85,-65.86 353.91,-66.23 407.25,-66.45"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="407.02,-69.96 417.04,-66.5 407.05,-62.96 407.02,-69.96"/>
+</a>
+</g>
 </g>
 <!-- Node7 -->
-<g id="node7" class="node">
+<g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="../../d0/d01/smallest__circle_8cpp.html#aee6d48762c1dfb9f14627927f0c16fad" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="../../d0/d01/smallest__circle_8cpp.html#aee6d48762c1dfb9f14627927f0c16fad" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="370.75,-38.25 298.5,-38.25 298.5,-19 370.75,-19 370.75,-38.25"/>
 <text text-anchor="middle" x="334.62" y="-24.75" font-family="Helvetica,sans-Serif" font-size="10.00">PointInCircle</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node7 -->
-<g id="edge7" class="edge">
+<g id="edge7_Node000004_Node000007" class="edge">
 <title>Node4&#45;&gt;Node7</title>
+<g id="a_edge7_Node000004_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M224.51,-60.17C241.25,-55.33 266.35,-48.07 288.26,-41.74"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="289.08,-44.86 297.71,-38.72 287.13,-38.13 289.08,-44.86"/>
+</a>
+</g>
 </g>
 <!-- Node8 -->
-<g id="node8" class="node">
+<g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
+<g id="a_Node000008"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="493.25,-19.25 406.75,-19.25 406.75,0 493.25,0 493.25,-19.25"/>
 <text text-anchor="middle" x="450" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node8 -->
-<g id="edge10" class="edge">
+<g id="edge10_Node000004_Node000008" class="edge">
 <title>Node4&#45;&gt;Node8</title>
+<g id="a_edge10_Node000004_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M217.24,-55.7C233.92,-42.17 266.21,-18.61 298.5,-9.62 329.86,-0.9 366.34,-0.67 395.53,-2.73"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="395.08,-6.29 405.34,-3.62 395.66,0.69 395.08,-6.29"/>
+</a>
+</g>
 </g>
 <!-- Node9 -->
-<g id="node9" class="node">
+<g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="../../d0/d01/smallest__circle_8cpp.html#a94682a4a70d5906857ca09de5b9fb2cc" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="../../d0/d01/smallest__circle_8cpp.html#a94682a4a70d5906857ca09de5b9fb2cc" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="370,-114.25 299.25,-114.25 299.25,-95 370,-95 370,-114.25"/>
 <text text-anchor="middle" x="334.62" y="-100.75" font-family="Helvetica,sans-Serif" font-size="10.00">TriangleArea</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node9 -->
-<g id="edge11" class="edge">
+<g id="edge11_Node000004_Node000009" class="edge">
 <title>Node4&#45;&gt;Node9</title>
+<g id="a_edge11_Node000004_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M224.51,-71.38C241.74,-76.63 267.85,-84.58 290.2,-91.39"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="288.91,-94.96 299.49,-94.53 290.95,-88.27 288.91,-94.96"/>
+</a>
+</g>
 </g>
 <!-- Node6 -->
-<g id="node6" class="node">
+<g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" xlink:title=" ">
+<g id="a_Node000006"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="581.25,-95.25 529.25,-95.25 529.25,-76 581.25,-76 581.25,-95.25"/>
 <text text-anchor="middle" x="555.25" y="-81.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::sqrt</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
-<g id="edge6" class="edge">
+<g id="edge6_Node000005_Node000006" class="edge">
 <title>Node5&#45;&gt;Node6</title>
+<g id="a_edge6_Node000005_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M481.98,-72.33C493.44,-74.43 506.52,-76.84 518.38,-79.02"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="517.38,-82.58 527.85,-80.95 518.65,-75.7 517.38,-82.58"/>
+</a>
+</g>
 </g>
 <!-- Node7&#45;&gt;Node5 -->
-<g id="edge8" class="edge">
+<g id="edge8_Node000007_Node000005" class="edge">
 <title>Node7&#45;&gt;Node5</title>
+<g id="a_edge8_Node000007_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M365.71,-38.71C379.01,-43.17 394.84,-48.47 409.11,-53.26"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="407.57,-56.77 418.17,-56.63 409.8,-50.13 407.57,-56.77"/>
+</a>
+</g>
 </g>
 <!-- Node7&#45;&gt;Node8 -->
-<g id="edge9" class="edge">
+<g id="edge9_Node000007_Node000008" class="edge">
 <title>Node7&#45;&gt;Node8</title>
+<g id="a_edge9_Node000007_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M371.19,-22.67C378.95,-21.36 387.34,-19.96 395.63,-18.57"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="396.12,-21.87 405.41,-16.76 394.97,-14.96 396.12,-21.87"/>
+</a>
+</g>
 </g>
 <!-- Node9&#45;&gt;Node5 -->
-<g id="edge12" class="edge">
+<g id="edge12_Node000009_Node000005" class="edge">
 <title>Node9&#45;&gt;Node5</title>
+<g id="a_edge12_Node000009_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M365.71,-94.54C379.01,-90.08 394.84,-84.78 409.11,-79.99"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="409.8,-83.12 418.17,-76.62 407.57,-76.48 409.8,-83.12"/>
+</a>
+</g>
 </g>
 <!-- Node9&#45;&gt;Node6 -->
-<g id="edge13" class="edge">
+<g id="edge13_Node000009_Node000006" class="edge">
 <title>Node9&#45;&gt;Node6</title>
+<g id="a_edge13_Node000009_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M370.27,-101.61C410.66,-98.1 477.1,-92.33 518.12,-88.76"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="518.31,-92.17 527.97,-87.82 517.71,-85.2 518.31,-92.17"/>
+</a>
+</g>
 </g>
 <!-- Node11&#45;&gt;Node2 -->
-<g id="edge18" class="edge">
+<g id="edge18_Node000011_Node000002" class="edge">
 <title>Node11&#45;&gt;Node2</title>
+<g id="a_edge18_Node000011_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M110.97,-107.41C150.3,-113.45 244.22,-127.88 296.65,-135.94"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="296.06,-139.55 306.48,-137.61 297.13,-132.63 296.06,-139.55"/>
+</a>
+</g>
 </g>
 <!-- Node11&#45;&gt;Node4 -->
-<g id="edge17" class="edge">
+<g id="edge17_Node000011_Node000004" class="edge">
 <title>Node11&#45;&gt;Node4</title>
+<g id="a_edge17_Node000011_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M111.16,-98.18C128.35,-92.13 154.35,-82.98 174.41,-75.91"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="175.3,-78.96 183.57,-72.34 172.97,-72.36 175.3,-78.96"/>
+</a>
+</g>
 </g>
 <!-- Node11&#45;&gt;Node10 -->
-<g id="edge19" class="edge">
+<g id="edge19_Node000011_Node000010" class="edge">
 <title>Node11&#45;&gt;Node10</title>
+<g id="a_edge19_Node000011_Node000010"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M107.81,-114.74C126.33,-127.28 158.1,-148.8 179.95,-163.59"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="177.68,-166.96 187.93,-169.67 181.61,-161.17 177.68,-166.96"/>
+</a>
+</g>
 </g>
 <!-- Node12&#45;&gt;Node2 -->
-<g id="edge22" class="edge">
+<g id="edge22_Node000012_Node000002" class="edge">
 <title>Node12&#45;&gt;Node2</title>
+<g id="a_edge22_Node000012_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M110.91,-187.72C121.19,-191.88 134.43,-196.52 146.75,-198.62 197.46,-207.3 213.96,-215.67 262.5,-198.62 284.51,-190.89 304.75,-173.17 317.97,-159.52"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="320.01,-162.39 324.24,-152.68 314.88,-157.63 320.01,-162.39"/>
+</a>
+</g>
 </g>
 <!-- Node12&#45;&gt;Node4 -->
-<g id="edge21" class="edge">
+<g id="edge21_Node000012_Node000004" class="edge">
 <title>Node12&#45;&gt;Node4</title>
+<g id="a_edge21_Node000012_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M102.7,-169.51C121.55,-150.11 162.98,-107.46 186.48,-83.27"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="188.52,-86.17 192.98,-76.56 183.5,-81.29 188.52,-86.17"/>
+</a>
+</g>
 </g>
 <!-- Node12&#45;&gt;Node10 -->
-<g id="edge23" class="edge">
+<g id="edge23_Node000012_Node000010" class="edge">
 <title>Node12&#45;&gt;Node10</title>
+<g id="a_edge23_Node000012_Node000010"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M111.16,-179.62C118.23,-179.62 126.78,-179.62 135.81,-179.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="135.55,-183.13 145.55,-179.62 135.55,-176.13 135.55,-183.13"/>
+</a>
+</g>
 </g>
 </g>
 </svg>
-        <g id="navigator" transform="translate(0 0)" fill="#404254">
-                <rect fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width=".5" x="0" y="0" width="60" height="60"/>
-                <use id="zoomplus" xlink:href="#zoomPlus" x="17" y="9" onmousedown="handleZoom(evt,'in')"/>
-                <use id="zoomminus" xlink:href="#zoomMin" x="42" y="9" onmousedown="handleZoom(evt,'out')"/>
-                <use id="reset" xlink:href="#resetDef" x="30" y="36" onmousedown="handleReset()"/>
-                <g id="arrowUp" xlink:href="#dirArrow" transform="translate(30 24)" onmousedown="handlePan(0,-1)">
-                  <use xlink:href="#rim" fill="#404040">
-                        <set attributeName="fill" to="#808080" begin="arrowUp.mouseover" end="arrowUp.mouseout"/>
-                  </use>
-                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-                <g id="arrowRight" xlink:href="#dirArrow" transform="rotate(90) translate(36 -43)" onmousedown="handlePan(1,0)">
-                  <use xlink:href="#rim" fill="#404040">
-                        <set attributeName="fill" to="#808080" begin="arrowRight.mouseover" end="arrowRight.mouseout"/>
-                  </use>
-                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-                <g id="arrowDown" xlink:href="#dirArrow" transform="rotate(180) translate(-30 -48)" onmousedown="handlePan(0,1)">
-                  <use xlink:href="#rim" fill="#404040">
-                        <set attributeName="fill" to="#808080" begin="arrowDown.mouseover" end="arrowDown.mouseout"/>
-                  </use>
-                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-                <g id="arrowLeft" xlink:href="#dirArrow" transform="rotate(270) translate(-36 17)" onmousedown="handlePan(-1,0)">
-                  <use xlink:href="#rim" fill="#404040">
-                        <set attributeName="fill" to="#808080" begin="arrowLeft.mouseover" end="arrowLeft.mouseout"/>
-                  </use>
-                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-        </g>
-        <svg viewBox="0 0 15 15" width="100%" height="30px" preserveAspectRatio="xMaxYMin meet">
-         <g id="arrow_out" transform="scale(0.3 0.3)">
-          <a xlink:href="smallest__circle_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph_org.svg" target="_base">
-           <rect id="button" ry="5" rx="5" y="6" x="6" height="38" width="38"
-                fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width="1.0"/>
-           <path id="arrow"
-             d="M 11.500037,31.436501 C 11.940474,20.09759 22.043105,11.32322 32.158766,21.979434 L 37.068811,17.246167 C 37.068811,17.246167 37.088388,32 37.088388,32 L 22.160133,31.978069 C 22.160133,31.978069 26.997745,27.140456 26.997745,27.140456 C 18.528582,18.264221 13.291696,25.230495 11.500037,31.436501 z"
-             style="fill:#404040;"/>
-          </a>
-         </g>
-        </svg>
+
+<g id="navigator" transform="translate(0 0)" fill="#404254">
+  <rect fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width=".5" x="0" y="0" width="60" height="60"/>
+  <use id="zoomplus" xlink:href="#zoomPlus" x="17" y="9" onmousedown="handleZoom(evt,'in')"/>
+  <use id="zoomminus" xlink:href="#zoomMin" x="42" y="9" onmousedown="handleZoom(evt,'out')"/>
+  <use id="reset" xlink:href="#resetDef" x="30" y="36" onmousedown="handleReset()"/>
+   <use id="arrowup" xlink:href="#arrowUp" x="0" y="0" onmousedown="handlePan(0,-1)"/>
+  <use id="arrowright" xlink:href="#arrowRight" x="0" y="0" onmousedown="handlePan(1,0)"/>
+  <use id="arrowdown" xlink:href="#arrowDown" x="0" y="0" onmousedown="handlePan(0,1)"/>
+  <use id="arrowleft" xlink:href="#arrowLeft" x="0" y="0" onmousedown="handlePan(-1,0)"/>
+</g>
+<svg viewBox="0 0 15 15" width="100%" height="30px" preserveAspectRatio="xMaxYMin meet">
+ <g id="arrow_out" transform="scale(0.3 0.3)">
+  <a xlink:href="smallest__circle_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph_org.svg" target="_base">
+   <rect id="button" ry="5" rx="5" y="6" x="6" height="38" width="38"
+        fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width="1.0"/>
+   <path id="arrow"
+     d="M 11.500037,31.436501 C 11.940474,20.09759 22.043105,11.32322 32.158766,21.979434 L 37.068811,17.246167 C 37.068811,17.246167 37.088388,32 37.088388,32 L 22.160133,31.978069 C 22.160133,31.978069 26.997745,27.140456 26.997745,27.140456 C 18.528582,18.264221 13.291696,25.230495 11.500037,31.436501 z"
+     style="fill:#404040;"/>
+  </a>
+ </g>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

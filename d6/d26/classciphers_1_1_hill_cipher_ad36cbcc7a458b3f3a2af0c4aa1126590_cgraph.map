@@ -1,5 +1,7 @@
 <map id="ciphers::HillCipher::mat_mul" name="ciphers::HillCipher::mat_mul">
-<area shape="rect" id="node1" title="helper function to perform vector multiplication with encryption or decryption matrix" alt="" coords="5,23,134,64"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="182,5,297,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/byte/strlen.html#" title=" " alt="" coords="200,55,279,80"/>
+<area shape="rect" id="Node000001" title="helper function to perform vector multiplication with encryption or decryption matrix" alt="" coords="5,23,134,64"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="182,5,297,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,31,167,26,168,32,134,37"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/byte/strlen.html#" title=" " alt="" coords="200,55,279,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,50,186,57,185,63,134,55"/>
 </map>

@@ -1,4 +1,5 @@
 <map id="graph::Graph&lt; T &gt;" name="graph::Graph&lt; T &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="6,5,134,31"/>
-<area shape="rect" id="node2" href="$d0/d58/classgraph_1_1_rooted_tree.html" title=" " alt="" coords="5,79,135,105"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="6,5,134,31"/>
+<area shape="rect" id="Node000002" href="$d0/d58/classgraph_1_1_rooted_tree.html" title=" " alt="" coords="5,79,135,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,46,73,79,67,79,67,46"/>
 </map>

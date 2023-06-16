@@ -1,6 +1,10 @@
 <map id="sorting::non_recursive_merge_sort" name="sorting::non_recursive_merge_sort">
-<area shape="rect" id="node1" title="bottom&#45;up merge sort which sorts elements in a non&#45;decreasing order" alt="" coords="5,29,155,70"/>
-<area shape="rect" id="node2" href="$d5/d91/namespacesorting.html#a140d913e42fb94176a0b2c8b29a80420" title="bottom&#45;up merge sort which sorts elements in a non&#45;decreasing order" alt="" coords="203,29,352,70"/>
-<area shape="rect" id="node3" href="$d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079" title="merges 2 sorted adjacent segments into a larger sorted segment" alt="" coords="400,37,504,63"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/move.html#" title=" " alt="" coords="552,37,632,63"/>
+<area shape="rect" id="Node000001" title="bottom&#45;up merge sort which sorts elements in a non&#45;decreasing order" alt="" coords="5,29,155,70"/>
+<area shape="rect" id="Node000002" href="$d5/d91/namespacesorting.html#a140d913e42fb94176a0b2c8b29a80420" title="bottom&#45;up merge sort which sorts elements in a non&#45;decreasing order" alt="" coords="203,29,352,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,47,188,47,188,52,155,52"/>
+<area shape="poly" id="edge4_Node000002_Node000002" title=" " alt="" coords="244,29,242,19,248,10,259,5,277,3,297,5,308,12,306,16,295,10,277,8,261,10,251,14,247,20,249,28"/>
+<area shape="rect" id="Node000003" href="$d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079" title="merges 2 sorted adjacent segments into a larger sorted segment" alt="" coords="400,37,504,63"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="352,47,385,47,385,52,352,52"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/move.html#" title=" " alt="" coords="552,37,632,63"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="505,47,537,47,537,52,505,52"/>
 </map>

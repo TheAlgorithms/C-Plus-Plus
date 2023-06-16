@@ -6,12 +6,22 @@
 <!-- Title: range_queries::heavy_light_decomposition::HLD::query Pages: 1 -->
 <svg width="407pt" height="153pt"
  viewBox="0.00 0.00 407.00 152.75" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 148.75)">
 <title>range_queries::heavy_light_decomposition::HLD::query</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="This function returns the sum of node values in the simple path from from node_1 to node_2.">
+<g id="a_Node000001"><a xlink:title="This function returns the sum of node values in the simple path from from node_1 to node_2.">
 <polygon fill="#999999" stroke="#666666" points="109,-71.75 0,-71.75 0,-30 109,-30 109,-71.75"/>
 <text text-anchor="start" x="8" y="-58.25" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
 <text text-anchor="start" x="8" y="-47" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
@@ -20,9 +30,9 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a7d5b40c076347a6aabfb37a0590f2f24" target="_top" xlink:title="Utility function to break down a path query into two chain queries.">
+<g id="a_Node000002"><a xlink:href="../../d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a7d5b40c076347a6aabfb37a0590f2f24" target="_top" xlink:title="Utility function to break down a path query into two chain queries.">
 <polygon fill="white" stroke="#666666" points="254,-101.75 145,-101.75 145,-60 254,-60 254,-101.75"/>
 <text text-anchor="start" x="153" y="-88.25" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
 <text text-anchor="start" x="153" y="-77" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
@@ -31,15 +41,18 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M109.15,-62.13C117.2,-63.82 125.57,-65.57 133.81,-67.3"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="133.04,-70.93 143.54,-69.56 134.48,-64.08 133.04,-70.93"/>
+</a>
+</g>
 </g>
 <!-- Node5 -->
-<g id="node5" class="node">
+<g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="../../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ae2b407e64aaf9878fbee7ee6efe9c7d4" target="_top" xlink:title="The function returns the least common ancestor of two nodes.">
+<g id="a_Node000005"><a xlink:href="../../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ae2b407e64aaf9878fbee7ee6efe9c7d4" target="_top" xlink:title="The function returns the least common ancestor of two nodes.">
 <polygon fill="white" stroke="#666666" points="254,-41.75 145,-41.75 145,0 254,0 254,-41.75"/>
 <text text-anchor="start" x="153" y="-28.25" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
 <text text-anchor="start" x="153" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
@@ -48,15 +61,18 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000001_Node000005" class="edge">
 <title>Node1&#45;&gt;Node5</title>
+<g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M109.15,-39.62C117.2,-37.93 125.57,-36.18 133.81,-34.45"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="134.48,-37.67 143.54,-32.19 133.04,-30.82 134.48,-37.67"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#a41c733f5f5e262b308f7cb95c88c1e74" target="_top" xlink:title="Function that specifies the type of operation involved when segments are combined.">
+<g id="a_Node000003"><a xlink:href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#a41c733f5f5e262b308f7cb95c88c1e74" target="_top" xlink:title="Function that specifies the type of operation involved when segments are combined.">
 <polygon fill="white" stroke="#666666" points="399,-144.75 290,-144.75 290,-103 399,-103 399,-144.75"/>
 <text text-anchor="start" x="298" y="-131.25" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
 <text text-anchor="start" x="298" y="-120" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
@@ -65,30 +81,36 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
+<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M254.15,-97.01C262.29,-99.46 270.76,-102 279.09,-104.51"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="277.96,-108.12 288.54,-107.65 279.98,-101.42 277.96,-108.12"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/swap.html#" xlink:title=" ">
+<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/swap.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="373.88,-84.5 315.12,-84.5 315.12,-65.25 373.88,-65.25 373.88,-84.5"/>
 <text text-anchor="middle" x="344.5" y="-71" font-family="Helvetica,sans-Serif" font-size="10.00">std::swap</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000002_Node000004" class="edge">
 <title>Node2&#45;&gt;Node4</title>
+<g id="a_edge3_Node000002_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M254.15,-78.62C270.74,-77.93 288.68,-77.17 304.11,-76.53"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="304,-79.99 313.85,-76.08 303.71,-73 304,-79.99"/>
+</a>
+</g>
 </g>
 <!-- Node6 -->
-<g id="node6" class="node">
+<g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="../../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ac7761255f2ba06b398b9aae5e4dce5f3" target="_top" xlink:title="The function lifts a node, k units up the tree. The lifting is done in place, and the result is store...">
+<g id="a_Node000006"><a xlink:href="../../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ac7761255f2ba06b398b9aae5e4dce5f3" target="_top" xlink:title="The function lifts a node, k units up the tree. The lifting is done in place, and the result is store...">
 <polygon fill="white" stroke="#666666" points="399,-41.75 290,-41.75 290,0 399,0 399,-41.75"/>
 <text text-anchor="start" x="298" y="-28.25" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
 <text text-anchor="start" x="298" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
@@ -97,10 +119,28 @@
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
-<g id="edge5" class="edge">
+<g id="edge5_Node000005_Node000006" class="edge">
 <title>Node5&#45;&gt;Node6</title>
+<g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M254.15,-20.88C262.2,-20.88 270.57,-20.88 278.81,-20.88"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="278.54,-24.38 288.54,-20.88 278.54,-17.38 278.54,-24.38"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

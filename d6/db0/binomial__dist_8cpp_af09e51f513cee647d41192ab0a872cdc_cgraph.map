@@ -1,5 +1,7 @@
 <map id="binomial_standard_deviation" name="binomial_standard_deviation">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,191,56"/>
-<area shape="rect" id="node2" href="$d6/db0/binomial__dist_8cpp.html#acd4dd4558031e4c5d045c801f73d8861" title=" " alt="" coords="239,5,364,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="267,55,336,80"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,191,56"/>
+<area shape="rect" id="Node000002" href="$d6/db0/binomial__dist_8cpp.html#acd4dd4558031e4c5d045c801f73d8861" title=" " alt="" coords="239,5,364,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,29,224,25,224,30,191,35"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="267,55,336,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,52,252,59,251,64,191,57"/>
 </map>

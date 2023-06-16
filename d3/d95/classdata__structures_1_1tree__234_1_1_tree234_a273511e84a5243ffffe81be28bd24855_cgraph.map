@@ -1,5 +1,8 @@
 <map id="data_structures::tree_234::Tree234::DeleteNode" name="data_structures::tree_234::Tree234::DeleteNode">
-<area shape="rect" id="node1" title="Recursive release the tree." alt="" coords="5,39,187,79"/>
-<area shape="rect" id="node2" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a164574a9209b5df66368530d090b32c4" title="Get the child pointer at position of index." alt="" coords="237,5,385,46"/>
-<area shape="rect" id="node3" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#aac82e17daa088ede9ee00dc69c1e6f06" title="Get the item count that current saved in the node." alt="" coords="235,71,387,111"/>
+<area shape="rect" id="Node000001" title="Recursive release the tree." alt="" coords="5,39,187,79"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="55,39,53,29,60,20,74,14,96,12,120,15,134,21,131,26,118,20,96,17,76,19,63,24,59,30,61,37"/>
+<area shape="rect" id="Node000002" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a164574a9209b5df66368530d090b32c4" title="Get the child pointer at position of index." alt="" coords="237,5,385,46"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="187,42,222,37,223,42,188,47"/>
+<area shape="rect" id="Node000003" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#aac82e17daa088ede9ee00dc69c1e6f06" title="Get the item count that current saved in the node." alt="" coords="235,71,387,111"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="188,70,220,75,219,80,187,75"/>
 </map>

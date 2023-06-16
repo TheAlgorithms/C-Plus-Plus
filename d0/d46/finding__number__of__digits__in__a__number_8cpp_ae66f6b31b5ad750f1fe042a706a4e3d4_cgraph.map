@@ -1,5 +1,7 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,13,55,39"/>
-<area shape="rect" id="node2" href="$d0/d46/finding__number__of__digits__in__a__number_8cpp.html#ab4c15b7f1aedd4419a65cd49562cc300" title="Self&#45;test implementations." alt="" coords="103,13,175,39"/>
-<area shape="rect" id="node3" href="$d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8a3b522a675ab4cdec2d275f6f7798a1" title="for IO operations" alt="" coords="223,5,388,46"/>
+<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,13,55,39"/>
+<area shape="rect" id="Node000002" href="$d0/d46/finding__number__of__digits__in__a__number_8cpp.html#ab4c15b7f1aedd4419a65cd49562cc300" title="Self&#45;test implementations." alt="" coords="103,13,175,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,23,88,23,88,28,55,28"/>
+<area shape="rect" id="Node000003" href="$d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8a3b522a675ab4cdec2d275f6f7798a1" title="for IO operations" alt="" coords="223,5,388,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="175,23,208,23,208,28,175,28"/>
 </map>

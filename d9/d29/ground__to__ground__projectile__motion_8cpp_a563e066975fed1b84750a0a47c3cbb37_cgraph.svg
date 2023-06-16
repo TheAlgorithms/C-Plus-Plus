@@ -6,12 +6,22 @@
 <!-- Title: physics::ground_to_ground_projectile_motion::time_of_flight Pages: 1 -->
 <svg width="303pt" height="106pt"
  viewBox="0.00 0.00 302.50 105.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 101.5)">
 <title>physics::ground_to_ground_projectile_motion::time_of_flight</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Calculate the time of flight.">
+<g id="a_Node000001"><a xlink:title="Calculate the time of flight.">
 <polygon fill="#999999" stroke="#666666" points="129.25,-54.5 0,-54.5 0,-12.75 129.25,-12.75 129.25,-54.5"/>
 <text text-anchor="start" x="8" y="-41" font-family="Helvetica,sans-Serif" font-size="10.00">physics::ground_to</text>
 <text text-anchor="start" x="8" y="-29.75" font-family="Helvetica,sans-Serif" font-size="10.00">_ground_projectile_motion</text>
@@ -20,15 +30,18 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node1 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000001_Node000001" class="edge">
 <title>Node1&#45;&gt;Node1</title>
+<g id="a_edge4_Node000001_Node000001"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M34.12,-54.82C31.22,-64.3 41.39,-72.5 64.62,-72.5 78.42,-72.5 87.61,-69.61 92.19,-65.28"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="95.8,-66.39 95.13,-55.82 89.06,-64.5 95.8,-66.39"/>
+</a>
+</g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d9/d29/ground__to__ground__projectile__motion_8cpp.html#aba1d26faf6a5379c28cae458956241de" target="_top" xlink:title="Convert radians to degrees.">
+<g id="a_Node000002"><a xlink:href="../../d9/d29/ground__to__ground__projectile__motion_8cpp.html#aba1d26faf6a5379c28cae458956241de" target="_top" xlink:title="Convert radians to degrees.">
 <polygon fill="white" stroke="#666666" points="294.5,-79.5 165.25,-79.5 165.25,-37.75 294.5,-37.75 294.5,-79.5"/>
 <text text-anchor="start" x="173.25" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">physics::ground_to</text>
 <text text-anchor="start" x="173.25" y="-54.75" font-family="Helvetica,sans-Serif" font-size="10.00">_ground_projectile_motion</text>
@@ -37,31 +50,55 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M129.68,-43.43C137.75,-44.67 146.07,-45.94 154.29,-47.2"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="153.59,-50.79 164.01,-48.84 154.65,-43.87 153.59,-50.79"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sin.html#" xlink:title=" ">
+<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sin.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="254,-19.25 205.75,-19.25 205.75,0 254,0 254,-19.25"/>
 <text text-anchor="middle" x="229.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::sin</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge3_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M129.68,-24.21C151.83,-20.95 175.79,-17.43 194.61,-14.66"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="194.94,-18 204.32,-13.09 193.92,-11.08 194.94,-18"/>
+</a>
+</g>
 </g>
 <!-- Node2&#45;&gt;Node2 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000002_Node000002" class="edge">
 <title>Node2&#45;&gt;Node2</title>
+<g id="a_edge2_Node000002_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M199.37,-79.82C196.47,-89.3 206.64,-97.5 229.88,-97.5 243.67,-97.5 252.86,-94.61 257.44,-90.28"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="261.05,-91.39 260.38,-80.82 254.31,-89.5 261.05,-91.39"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

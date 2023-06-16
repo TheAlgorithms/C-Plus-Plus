@@ -1,7 +1,11 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,55,106"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/begin.html#" title=" " alt="" coords="103,5,221,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/end.html#" title=" " alt="" coords="108,55,216,80"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/reverse.html#" title=" " alt="" coords="117,104,207,130"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/to_string.html#" title=" " alt="" coords="113,153,211,179"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,55,106"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/begin.html#" title=" " alt="" coords="103,5,221,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="46,77,101,40,110,35,113,40,104,44,49,82"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/end.html#" title=" " alt="" coords="108,55,216,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="55,86,93,78,94,83,56,91"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/reverse.html#" title=" " alt="" coords="117,104,207,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="56,95,102,103,101,109,55,100"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/to_string.html#" title=" " alt="" coords="113,153,211,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="50,104,104,140,113,145,111,149,101,144,47,108"/>
 </map>

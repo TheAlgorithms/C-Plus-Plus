@@ -1,5 +1,8 @@
 <map id="sorting::non_recursive_merge_sort" name="sorting::non_recursive_merge_sort">
-<area shape="rect" id="node1" title="bottom&#45;up merge sort which sorts elements in a non&#45;decreasing order" alt="" coords="5,29,155,70"/>
-<area shape="rect" id="node2" href="$d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079" title="merges 2 sorted adjacent segments into a larger sorted segment" alt="" coords="203,37,307,63"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/move.html#" title=" " alt="" coords="355,37,434,63"/>
+<area shape="rect" id="Node000001" title="bottom&#45;up merge sort which sorts elements in a non&#45;decreasing order" alt="" coords="5,29,155,70"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="46,29,45,19,50,10,62,5,80,3,100,5,111,12,108,16,98,10,80,8,64,10,54,14,50,20,52,28"/>
+<area shape="rect" id="Node000002" href="$d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079" title="merges 2 sorted adjacent segments into a larger sorted segment" alt="" coords="203,37,307,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,47,188,47,188,52,155,52"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/move.html#" title=" " alt="" coords="355,37,434,63"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="308,47,340,47,340,52,308,52"/>
 </map>

@@ -1,13 +1,28 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,116,55,142"/>
-<area shape="rect" id="node2" href="$d8/dee/avltree_8cpp.html#a82659e9e223e520cf91d7e55c4a3f88c" title="calls delete on every node" alt="" coords="103,29,212,55"/>
-<area shape="rect" id="node3" href="$d8/dee/avltree_8cpp.html#aa29a7fdc2db1784f5a6e25025ff7cbf5" title="removes a given element from AVL tree" alt="" coords="114,152,201,178"/>
-<area shape="rect" id="node6" href="$d8/dee/avltree_8cpp.html#a2473fe7416332495b2678ebe89652e4b" title="inserts a new element into AVL tree" alt="" coords="131,251,184,276"/>
-<area shape="rect" id="node11" href="$d8/dee/avltree_8cpp.html#ae197eb50188fb761346952b9b5f6be59" title="prints given tree in the LevelOrder" alt="" coords="117,79,198,104"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/data.html#" title=" " alt="" coords="260,79,376,104"/>
-<area shape="rect" id="node5" href="$d8/dee/avltree_8cpp.html#a5fa160a678a34dd51c0aea1c0c00ed5e" title=" " alt="" coords="281,152,355,178"/>
-<area shape="rect" id="node7" href="$d8/dee/avltree_8cpp.html#a48d897353aeb6a721dbc6b6c57e035e6" title="creates and returns a new node" alt="" coords="274,201,362,227"/>
-<area shape="rect" id="node8" href="$d8/dee/avltree_8cpp.html#aaa457ffec24c9643f2768e7a65e96546" title=" " alt="" coords="275,251,361,276"/>
-<area shape="rect" id="node9" href="$d8/dee/avltree_8cpp.html#a473eee1803e4e44a54d685e4b0eef5a6" title=" " alt="" coords="279,300,357,326"/>
-<area shape="rect" id="node10" href="$d8/dee/avltree_8cpp.html#adfc1d482a564c041756719667b955b8c" title=" " alt="" coords="276,349,361,375"/>
+<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,116,55,142"/>
+<area shape="rect" id="Node000002" href="$d8/dee/avltree_8cpp.html#a82659e9e223e520cf91d7e55c4a3f88c" title="calls delete on every node" alt="" coords="103,29,212,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="42,114,68,89,101,64,108,60,111,64,104,68,72,93,46,117"/>
+<area shape="rect" id="Node000003" href="$d8/dee/avltree_8cpp.html#aa29a7fdc2db1784f5a6e25025ff7cbf5" title="removes a given element from AVL tree" alt="" coords="114,152,201,178"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="56,133,101,146,99,151,54,138"/>
+<area shape="rect" id="Node000006" href="$d8/dee/avltree_8cpp.html#a2473fe7416332495b2678ebe89652e4b" title="inserts a new element into AVL tree" alt="" coords="131,251,184,276"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="46,140,136,238,132,241,42,144"/>
+<area shape="rect" id="Node000011" href="$d8/dee/avltree_8cpp.html#ae197eb50188fb761346952b9b5f6be59" title="prints given tree in the LevelOrder" alt="" coords="117,79,198,104"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="54,119,102,105,104,110,56,124"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="135,30,131,21,133,11,143,5,157,3,174,6,182,13,178,17,171,10,157,8,144,10,138,14,136,20,140,28"/>
+<area shape="poly" id="edge5_Node000003_Node000003" title=" " alt="" coords="135,153,131,143,133,134,143,128,157,125,174,128,182,135,178,139,171,133,157,131,144,133,138,137,136,143,140,151"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/data.html#" title=" " alt="" coords="260,79,376,104"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="184,149,259,113,270,108,272,113,261,118,186,154"/>
+<area shape="rect" id="Node000005" href="$d8/dee/avltree_8cpp.html#a5fa160a678a34dd51c0aea1c0c00ed5e" title=" " alt="" coords="281,152,355,178"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="201,162,266,162,266,168,201,168"/>
+<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="291,153,285,143,289,134,300,128,318,125,339,128,349,136,346,140,337,133,318,131,301,133,293,137,291,143,295,150"/>
+<area shape="poly" id="edge11_Node000006_Node000006" title=" " alt="" coords="135,251,131,242,133,233,143,226,157,224,174,227,182,234,178,238,171,232,157,229,144,231,138,236,136,242,140,249"/>
+<area shape="rect" id="Node000007" href="$d8/dee/avltree_8cpp.html#a48d897353aeb6a721dbc6b6c57e035e6" title="creates and returns a new node" alt="" coords="274,201,362,227"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="184,253,259,229,261,234,185,258"/>
+<area shape="rect" id="Node000008" href="$d8/dee/avltree_8cpp.html#aaa457ffec24c9643f2768e7a65e96546" title=" " alt="" coords="275,251,361,276"/>
+<area shape="poly" id="edge10_Node000006_Node000008" title=" " alt="" coords="184,261,260,261,260,266,184,266"/>
+<area shape="rect" id="Node000009" href="$d8/dee/avltree_8cpp.html#a473eee1803e4e44a54d685e4b0eef5a6" title=" " alt="" coords="279,300,357,326"/>
+<area shape="poly" id="edge12_Node000006_Node000009" title=" " alt="" coords="185,269,265,294,264,299,184,274"/>
+<area shape="rect" id="Node000010" href="$d8/dee/avltree_8cpp.html#adfc1d482a564c041756719667b955b8c" title=" " alt="" coords="276,349,361,375"/>
+<area shape="poly" id="edge13_Node000006_Node000010" title=" " alt="" coords="176,275,214,304,261,336,269,340,267,345,259,340,211,309,173,279"/>
+<area shape="poly" id="edge15_Node000011_Node000004" title=" " alt="" coords="198,89,245,89,245,94,198,94"/>
 </map>

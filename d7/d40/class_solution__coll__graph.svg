@@ -6,21 +6,31 @@
 <!-- Title: Solution Pages: 1 -->
 <svg width="328pt" height="183pt"
  viewBox="0.00 0.00 327.75 182.75" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 178.75)">
 <title>Solution</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="170.12,-19.25 118.88,-19.25 118.88,0 170.12,0 170.12,-19.25"/>
 <text text-anchor="middle" x="144.5" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">Solution</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="203.5,-108.25 85.5,-108.25 85.5,-77.75 203.5,-77.75 203.5,-108.25"/>
 <text text-anchor="start" x="93.5" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; std::vector</text>
 <text text-anchor="middle" x="144.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; int &gt; &gt;</text>
@@ -28,52 +38,79 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M144.5,-66.59C144.5,-50.52 144.5,-30.74 144.5,-19.52"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="141,-66.45 144.5,-76.45 148,-66.45 141,-66.45"/>
-<text text-anchor="middle" x="159.12" y="-50.25" font-family="Helvetica,sans-Serif" font-size="10.00"> bridge</text>
-<text text-anchor="middle" x="159.12" y="-39" font-family="Helvetica,sans-Serif" font-size="10.00">graph</text>
+</a>
+</g>
+<text text-anchor="middle" x="159.12" y="-50.25" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> bridge</text>
+<text text-anchor="middle" x="159.12" y="-39" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">graph</text>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="91,-174.75 0,-174.75 0,-155.5 91,-155.5 91,-174.75"/>
 <text text-anchor="middle" x="45.5" y="-161.25" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; int &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node1 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000003" class="edge">
 <title>Node3&#45;&gt;Node1</title>
+<g id="a_edge3_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M38.28,-144.8C32.68,-126.39 27.61,-98.5 39,-77.75 55.82,-47.11 93.21,-28.46 118.65,-18.84"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="35.26,-145.77 41.78,-154.12 41.89,-143.52 35.26,-145.77"/>
-<text text-anchor="middle" x="58.25" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00"> in_time</text>
-<text text-anchor="middle" x="58.25" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">out_time</text>
+</a>
+</g>
+<text text-anchor="middle" x="58.25" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> in_time</text>
+<text text-anchor="middle" x="58.25" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">out_time</text>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000002_Node000003" class="edge">
 <title>Node3&#45;&gt;Node2</title>
+<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M66.65,-149.15C83.52,-137.19 107.03,-120.54 123.79,-108.67"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="65.18,-146.61 59.04,-155.24 69.22,-152.32 65.18,-146.61"/>
-<text text-anchor="middle" x="119.88" y="-128" font-family="Helvetica,sans-Serif" font-size="10.00"> elements</text>
+</a>
+</g>
+<text text-anchor="middle" x="119.88" y="-128" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> elements</text>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="319.75,-102.62 221.25,-102.62 221.25,-83.38 319.75,-83.38 319.75,-102.62"/>
 <text text-anchor="middle" x="270.5" y="-89.12" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; bool &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node1 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000001_Node000004" class="edge">
 <title>Node4&#45;&gt;Node1</title>
+<g id="a_edge4_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M247.4,-77.08C221.42,-60.3 180.04,-33.58 158.53,-19.68"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="245.24,-80.5 255.53,-82.98 249.03,-74.62 245.24,-80.5"/>
-<text text-anchor="middle" x="234.25" y="-44.62" font-family="Helvetica,sans-Serif" font-size="10.00"> visited</text>
+</a>
+</g>
+<text text-anchor="middle" x="234.25" y="-44.62" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> visited</text>
 </g>
 </g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

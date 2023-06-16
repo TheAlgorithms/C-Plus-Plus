@@ -1,3 +1,4 @@
 <map id="sorting::random_pivot_quick_sort::generateUnsortedArray" name="sorting::random_pivot_quick_sort::generateUnsortedArray">
-<area shape="rect" id="node1" title="A function utility to generate unsorted array of given size and range." alt="" coords="5,29,205,85"/>
+<area shape="rect" id="Node000001" title="A function utility to generate unsorted array of given size and range." alt="" coords="5,29,205,85"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="66,29,66,19,73,10,86,5,105,3,127,5,140,13,137,17,125,11,105,8,88,10,76,15,71,21,71,29"/>
 </map>

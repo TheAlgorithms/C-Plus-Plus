@@ -1,3 +1,4 @@
 <map id="graph::bidirectional_dijkstra::Shortest_Path_Distance" name="graph::bidirectional_dijkstra::Shortest_Path_Distance">
-<area shape="rect" id="node1" title="This function returns the shortest distance from the source to the target if there is path between ve..." alt="" coords="5,29,167,85"/>
+<area shape="rect" id="Node000001" title="This function returns the shortest distance from the source to the target if there is path between ve..." alt="" coords="5,29,167,85"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="54,29,54,19,60,10,71,5,86,3,104,6,114,13,111,17,102,10,86,8,72,10,63,14,59,21,59,29"/>
 </map>

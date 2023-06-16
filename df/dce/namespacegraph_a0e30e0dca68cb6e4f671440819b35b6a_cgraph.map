@@ -1,4 +1,5 @@
 <map id="graph::addEdge" name="graph::addEdge">
-<area shape="rect" id="node1" title="Function that add edge between two nodes or vertices of graph." alt="" coords="5,5,118,31"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair/make_pair.html#" title=" " alt="" coords="166,5,273,31"/>
+<area shape="rect" id="Node000001" title="Function that add edge between two nodes or vertices of graph." alt="" coords="5,5,118,31"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair/make_pair.html#" title=" " alt="" coords="166,5,273,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,16,151,16,151,21,118,21"/>
 </map>

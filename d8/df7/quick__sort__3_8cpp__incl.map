@@ -1,8 +1,13 @@
 <map id="sorting/quick_sort_3.cpp" name="sorting/quick_sort_3.cpp">
-<area shape="rect" id="node1" title="Implementation Details." alt="" coords="156,5,281,46"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,94,80,120"/>
-<area shape="rect" id="node3" title=" " alt="" coords="104,94,168,120"/>
-<area shape="rect" id="node4" title=" " alt="" coords="192,94,245,120"/>
-<area shape="rect" id="node5" title=" " alt="" coords="270,94,341,120"/>
-<area shape="rect" id="node6" title=" " alt="" coords="365,94,422,120"/>
+<area shape="rect" id="Node000001" title="Implementation Details." alt="" coords="156,5,281,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,80,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,49,84,90,81,85,173,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="104,94,168,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,48,161,85,157,82,196,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="192,94,245,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="221,46,221,79,216,79,216,46"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="270,94,341,120"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="242,44,283,82,279,86,238,48"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="365,94,422,120"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="263,44,354,85,352,90,261,49"/>
 </map>

@@ -1,5 +1,7 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,5,55,31"/>
-<area shape="rect" id="node2" href="$d8/d76/morse__code_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Function to test above algorithm." alt="" coords="103,5,146,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="194,5,265,31"/>
+<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,5,55,31"/>
+<area shape="rect" id="Node000002" href="$d8/d76/morse__code_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Function to test above algorithm." alt="" coords="103,5,146,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,16,88,16,88,21,55,21"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="194,5,265,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,16,179,16,179,21,146,21"/>
 </map>

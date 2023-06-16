@@ -9,9 +9,9 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 23.25)">
 <title>Graphical Class Hierarchy</title>
 <!-- Node0 -->
-<g id="node1" class="node">
+<g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="dd/dca/class_f_c_f_s.html" target="_top" xlink:title="Class which implements the FCFS scheduling algorithm.">
+<g id="a_Node000000"><a xlink:href="dd/dca/class_f_c_f_s.html" target="_top" xlink:title="Class which implements the FCFS scheduling algorithm.">
 <polygon fill="white" stroke="#666666" points="90.25,-19.25 0,-19.25 0,0 90.25,0 90.25,-19.25"/>
 <text text-anchor="middle" x="45.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">FCFS&lt; S, T, E &gt;</text>
 </a>

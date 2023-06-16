@@ -1,6 +1,10 @@
 <map id="test" name="test">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,49,56"/>
-<area shape="rect" id="node2" href="$d4/d83/sum__of__digits_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0" title=" " alt="" coords="97,5,147,31"/>
-<area shape="rect" id="node4" href="$d4/d83/sum__of__digits_8cpp.html#a0283886819c7c140a023582b7269e2d0" title=" " alt="" coords="97,55,147,80"/>
-<area shape="rect" id="node3" href="$d4/d83/sum__of__digits_8cpp.html#a4619c78b6ad985713024f930f31c4395" title=" " alt="" coords="195,31,297,56"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,49,56"/>
+<area shape="rect" id="Node000002" href="$d4/d83/sum__of__digits_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0" title=" " alt="" coords="97,5,147,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="49,35,82,26,83,31,50,40"/>
+<area shape="rect" id="Node000004" href="$d4/d83/sum__of__digits_8cpp.html#a0283886819c7c140a023582b7269e2d0" title=" " alt="" coords="97,55,147,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="50,46,83,55,81,60,49,52"/>
+<area shape="rect" id="Node000003" href="$d4/d83/sum__of__digits_8cpp.html#a4619c78b6ad985713024f930f31c4395" title=" " alt="" coords="195,31,297,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="148,21,181,28,180,33,147,26"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="147,60,180,54,181,59,148,65"/>
 </map>

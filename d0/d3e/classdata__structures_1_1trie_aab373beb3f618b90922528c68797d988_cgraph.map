@@ -1,4 +1,5 @@
 <map id="data_structures::trie::char_to_int" name="data_structures::trie::char_to_int">
-<area shape="rect" id="node1" title="Convert a character to integer for indexing." alt="" coords="5,5,143,46"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/program/exit.html#" title=" " alt="" coords="191,13,259,39"/>
+<area shape="rect" id="Node000001" title="Convert a character to integer for indexing." alt="" coords="5,5,143,46"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/program/exit.html#" title=" " alt="" coords="191,13,259,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,23,176,23,176,28,143,28"/>
 </map>

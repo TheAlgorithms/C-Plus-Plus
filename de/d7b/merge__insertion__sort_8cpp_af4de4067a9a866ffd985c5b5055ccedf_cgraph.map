@@ -1,4 +1,5 @@
 <map id="sorting::merge_insertion::merge" name="sorting::merge_insertion::merge">
-<area shape="rect" id="node1" title="Perform merge of data in a window." alt="" coords="5,5,166,46"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/data.html#" title=" " alt="" coords="214,13,323,39"/>
+<area shape="rect" id="Node000001" title="Perform merge of data in a window." alt="" coords="5,5,166,46"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/data.html#" title=" " alt="" coords="214,13,323,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,23,199,23,199,28,166,28"/>
 </map>

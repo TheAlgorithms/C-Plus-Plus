@@ -1,5 +1,8 @@
 <map id="sorting::selection_sort_recursive::selectionSortRecursive" name="sorting::selection_sort_recursive::selectionSortRecursive">
-<area shape="rect" id="node1" title="The main function implements Selection sort." alt="" coords="5,29,176,85"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="224,19,339,45"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="242,68,321,94"/>
+<area shape="rect" id="Node000001" title="The main function implements Selection sort." alt="" coords="5,29,176,85"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="53,29,53,19,60,10,73,5,91,3,111,5,124,13,121,17,110,11,90,8,74,10,63,14,58,21,58,29"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="224,19,339,45"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="176,43,209,39,209,44,176,48"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="242,68,321,94"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="176,65,227,72,227,77,176,71"/>
 </map>

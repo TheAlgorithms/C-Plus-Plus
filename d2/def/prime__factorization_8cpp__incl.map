@@ -1,7 +1,11 @@
 <map id="math/prime_factorization.cpp" name="math/prime_factorization.cpp">
-<area shape="rect" id="node1" title="Prime factorization of positive integers." alt="" coords="84,5,273,31"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,79,80,105"/>
-<area shape="rect" id="node3" title=" " alt="" coords="104,79,165,105"/>
-<area shape="rect" id="node4" title=" " alt="" coords="188,79,260,105"/>
-<area shape="rect" id="node5" title=" " alt="" coords="283,79,341,105"/>
+<area shape="rect" id="Node000001" title="Prime factorization of positive integers." alt="" coords="84,5,273,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,80,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,34,80,74,77,69,154,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="104,79,165,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,33,152,68,147,65,169,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="188,79,260,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="188,30,211,65,206,68,184,33"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="283,79,341,105"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="202,29,278,69,275,74,200,34"/>
 </map>

@@ -1,7 +1,12 @@
 <map id="find_pat_in_text" name="find_pat_in_text">
-<area shape="rect" id="node1" title="Using Z_function to find a pattern in a text." alt="" coords="5,56,119,82"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="167,5,321,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="369,57,480,83"/>
-<area shape="rect" id="node4" href="$d3/d80/z__function_8cpp.html#ac044c4794349a8cff6256b99950d5773" title="for IO operations" alt="" coords="203,107,285,132"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="391,107,459,132"/>
+<area shape="rect" id="Node000001" title="Using Z_function to find a pattern in a text." alt="" coords="5,56,119,82"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="167,5,321,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,53,181,33,182,38,112,58"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="369,57,480,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="119,66,354,67,354,73,119,72"/>
+<area shape="rect" id="Node000004" href="$d3/d80/z__function_8cpp.html#ac044c4794349a8cff6256b99950d5773" title="for IO operations" alt="" coords="203,107,285,132"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="112,80,189,102,187,107,110,85"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="285,106,360,85,362,90,286,111"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="391,107,459,132"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="286,117,376,117,376,122,286,122"/>
 </map>

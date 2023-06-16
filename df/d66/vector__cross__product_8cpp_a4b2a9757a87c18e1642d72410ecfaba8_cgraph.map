@@ -1,3 +1,4 @@
 <map id="math::vector_cross::mag" name="math::vector_cross::mag">
-<area shape="rect" id="node1" title="Calculates the magnitude of the mathematical vector from it&#39;s direction ratios." alt="" coords="5,29,172,55"/>
+<area shape="rect" id="Node000001" title="Calculates the magnitude of the mathematical vector from it&#39;s direction ratios." alt="" coords="5,29,172,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="60,30,55,21,58,11,70,5,89,3,110,6,120,13,117,17,108,11,88,8,71,10,62,15,60,20,65,28"/>
 </map>

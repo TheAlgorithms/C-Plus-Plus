@@ -1,3 +1,4 @@
 <map id="list" name="list">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,44,31"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,44,31"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="60,11,70,18,61,25,44,25,44,20,60,20,65,18,58,16"/>
 </map>

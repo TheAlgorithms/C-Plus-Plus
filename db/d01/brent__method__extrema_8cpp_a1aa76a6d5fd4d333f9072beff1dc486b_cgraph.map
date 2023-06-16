@@ -1,5 +1,7 @@
 <map id="get_minima" name="get_minima">
-<area shape="rect" id="node1" title="Get the real root of a function in the given interval." alt="" coords="5,31,94,56"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="146,5,216,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="142,55,220,80"/>
+<area shape="rect" id="Node000001" title="Get the real root of a function in the given interval." alt="" coords="5,31,94,56"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="146,5,216,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,32,131,25,132,30,95,38"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="142,55,220,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="95,49,128,55,127,60,94,54"/>
 </map>

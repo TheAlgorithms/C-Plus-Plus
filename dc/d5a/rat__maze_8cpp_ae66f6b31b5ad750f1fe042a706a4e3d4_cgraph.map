@@ -1,4 +1,5 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,5,55,31"/>
-<area shape="rect" id="node2" href="$dc/d5a/rat__maze_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,5,146,31"/>
+<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,5,55,31"/>
+<area shape="rect" id="Node000002" href="$dc/d5a/rat__maze_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,5,146,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,16,88,16,88,21,55,21"/>
 </map>

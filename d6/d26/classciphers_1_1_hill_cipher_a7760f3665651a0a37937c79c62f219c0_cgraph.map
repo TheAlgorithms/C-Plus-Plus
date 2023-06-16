@@ -1,4 +1,5 @@
 <map id="ciphers::HillCipher::gcd" name="ciphers::HillCipher::gcd">
-<area shape="rect" id="node1" title="Compute GCD of two integers using Euler&#39;s algorithm." alt="" coords="5,5,163,31"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="211,5,289,31"/>
+<area shape="rect" id="Node000001" title="Compute GCD of two integers using Euler&#39;s algorithm." alt="" coords="5,5,163,31"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="211,5,289,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,16,196,16,196,21,163,21"/>
 </map>

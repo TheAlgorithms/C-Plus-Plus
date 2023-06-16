@@ -1,8 +1,15 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,81,55,107"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="103,5,174,31"/>
-<area shape="rect" id="node3" href="$d6/db8/inv__sqrt_8cpp.html#ad219034bf5fba657f5035ec5a1d50f52" title="for numeric_limits" alt="" coords="235,57,331,83"/>
-<area shape="rect" id="node4" href="$d6/db8/inv__sqrt_8cpp.html#aa2703e5cf3fecde8becd9066b9666b97" title="This is the function that calculates the fast inverse square root. The following code is the fast inv..." alt="" coords="222,156,344,182"/>
-<area shape="rect" id="node5" href="$d6/db8/inv__sqrt_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="117,107,160,132"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/fabs.html#" title=" " alt="" coords="247,107,319,132"/>
+<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,81,55,107"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="103,5,174,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="48,79,105,38,108,42,51,83"/>
+<area shape="rect" id="Node000003" href="$d6/db8/inv__sqrt_8cpp.html#ad219034bf5fba657f5035ec5a1d50f52" title="for numeric_limits" alt="" coords="235,57,331,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="55,89,220,73,221,79,55,95"/>
+<area shape="rect" id="Node000004" href="$d6/db8/inv__sqrt_8cpp.html#aa2703e5cf3fecde8becd9066b9666b97" title="This is the function that calculates the fast inverse square root. The following code is the fast inv..." alt="" coords="222,156,344,182"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="47,105,72,125,104,142,156,157,208,164,207,170,154,162,102,147,69,130,44,109"/>
+<area shape="rect" id="Node000005" href="$d6/db8/inv__sqrt_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="117,107,160,132"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="56,97,103,109,102,114,55,103"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="160,110,229,86,230,91,162,115"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="162,124,230,148,229,153,160,129"/>
+<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/fabs.html#" title=" " alt="" coords="247,107,319,132"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="161,117,232,117,232,122,161,122"/>
 </map>

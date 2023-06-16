@@ -6,121 +6,167 @@
 <!-- Title: save_exact_solution Pages: 1 -->
 <svg width="350pt" height="175pt"
  viewBox="0.00 0.00 350.00 175.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 171.25)">
 <title>save_exact_solution</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="105.25,-93.25 0,-93.25 0,-74 105.25,-74 105.25,-93.25"/>
 <text text-anchor="middle" x="52.62" y="-79.75" font-family="Helvetica,sans-Serif" font-size="10.00">save_exact_solution</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/chrono/c/clock.html#" xlink:title=" ">
+<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/chrono/c/clock.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="227.38,-167.25 168.62,-167.25 168.62,-148 227.38,-148 227.38,-167.25"/>
 <text text-anchor="middle" x="198" y="-153.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::clock</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M66.95,-93.69C83.61,-105.9 113.32,-126.46 141.25,-139.62 146.6,-142.15 152.39,-144.45 158.15,-146.51"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="156.79,-150.07 167.38,-149.93 159.01,-143.44 156.79,-150.07"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html#" xlink:title=" ">
+<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="249.5,-130.25 146.5,-130.25 146.5,-111 249.5,-111 249.5,-130.25"/>
 <text text-anchor="middle" x="198" y="-116.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::close</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M92.8,-93.74C109.64,-98.08 129.5,-103.21 147.35,-107.81"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="146.31,-111.42 156.87,-110.53 148.06,-104.64 146.31,-111.42"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="../../d3/d06/ode__semi__implicit__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b" target="_top" xlink:title="Exact solution of the problem. Used for solution comparison.">
+<g id="a_Node000004"><a xlink:href="../../d3/d06/ode__semi__implicit__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b" target="_top" xlink:title="Exact solution of the problem. Used for solution comparison.">
 <polygon fill="white" stroke="#666666" points="237.5,-93.25 158.5,-93.25 158.5,-74 237.5,-74 237.5,-93.25"/>
 <text text-anchor="middle" x="198" y="-79.75" font-family="Helvetica,sans-Serif" font-size="10.00">exact_solution</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
+<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M105.39,-83.62C119.18,-83.62 134.05,-83.62 147.71,-83.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="147.37,-87.13 157.37,-83.62 147.37,-80.13 147.37,-87.13"/>
+</a>
+</g>
 </g>
 <!-- Node7 -->
-<g id="node7" class="node">
+<g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html#" xlink:title=" ">
+<g id="a_Node000007"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="254.75,-56.25 141.25,-56.25 141.25,-37 254.75,-37 254.75,-56.25"/>
 <text text-anchor="middle" x="198" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::is_open</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
-<g id="edge6" class="edge">
+<g id="edge6_Node000001_Node000007" class="edge">
 <title>Node1&#45;&gt;Node7</title>
+<g id="a_edge6_Node000001_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M92.8,-73.51C109.64,-69.17 129.5,-64.04 147.35,-59.44"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="148.06,-62.61 156.87,-56.72 146.31,-55.83 148.06,-62.61"/>
+</a>
+</g>
 </g>
 <!-- Node8 -->
-<g id="node8" class="node">
+<g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/c/perror.html#" xlink:title=" ">
+<g id="a_Node000008"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/c/perror.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="228.12,-19.25 167.88,-19.25 167.88,0 228.12,0 228.12,-19.25"/>
 <text text-anchor="middle" x="198" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::perror</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
-<g id="edge7" class="edge">
+<g id="edge7_Node000001_Node000008" class="edge">
 <title>Node1&#45;&gt;Node8</title>
+<g id="a_edge7_Node000001_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M66.95,-73.56C83.61,-61.35 113.32,-40.79 141.25,-27.62 146.3,-25.25 151.74,-23.06 157.18,-21.1"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="158.17,-24.11 166.52,-17.59 155.93,-17.48 158.17,-24.11"/>
+</a>
+</g>
 </g>
 <!-- Node5 -->
-<g id="node5" class="node">
+<g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/cos.html#" xlink:title=" ">
+<g id="a_Node000005"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/cos.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="342,-111.25 290.75,-111.25 290.75,-92 342,-92 342,-111.25"/>
 <text text-anchor="middle" x="316.38" y="-97.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::cos</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000004_Node000005" class="edge">
 <title>Node4&#45;&gt;Node5</title>
+<g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M237.75,-89.62C251.29,-91.71 266.4,-94.05 279.68,-96.1"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="278.9,-99.68 289.32,-97.75 279.97,-92.76 278.9,-99.68"/>
+</a>
+</g>
 </g>
 <!-- Node6 -->
-<g id="node6" class="node">
+<g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sin.html#" xlink:title=" ">
+<g id="a_Node000006"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sin.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="340.5,-74.25 292.25,-74.25 292.25,-55 340.5,-55 340.5,-74.25"/>
 <text text-anchor="middle" x="316.38" y="-60.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::sin</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node6 -->
-<g id="edge5" class="edge">
+<g id="edge5_Node000004_Node000006" class="edge">
 <title>Node4&#45;&gt;Node6</title>
+<g id="a_edge5_Node000004_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M237.75,-77.3C251.94,-74.98 267.88,-72.38 281.6,-70.14"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="281.75,-73.5 291.05,-68.43 280.62,-66.59 281.75,-73.5"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

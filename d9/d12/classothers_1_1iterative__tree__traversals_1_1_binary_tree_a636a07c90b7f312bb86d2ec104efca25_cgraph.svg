@@ -6,12 +6,22 @@
 <!-- Title: others::iterative_tree_traversals::BinaryTree::postOrderIterative Pages: 1 -->
 <svg width="228pt" height="101pt"
  viewBox="0.00 0.00 228.25 101.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 97.25)">
 <title>others::iterative_tree_traversals::BinaryTree::postOrderIterative</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="postOrderIterative() function that will perform the postorder traversal iteratively,...">
+<g id="a_Node000001"><a xlink:title="postOrderIterative() function that will perform the postorder traversal iteratively,...">
 <polygon fill="#999999" stroke="#666666" points="117.25,-67.5 0,-67.5 0,-25.75 117.25,-25.75 117.25,-67.5"/>
 <text text-anchor="start" x="8" y="-54" font-family="Helvetica,sans-Serif" font-size="10.00">others::iterative_tree</text>
 <text text-anchor="start" x="8" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">_traversals::BinaryTree</text>
@@ -20,49 +30,73 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d1/dc2/classstack.html#a3647fb4418890f19e0dc414b8092b8b0" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="../../d1/dc2/classstack.html#a3647fb4418890f19e0dc414b8092b8b0" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="217.62,-93.25 155.88,-93.25 155.88,-74 217.62,-74 217.62,-93.25"/>
 <text text-anchor="middle" x="186.75" y="-79.75" font-family="Helvetica,sans-Serif" font-size="10.00">stack::pop</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M117.52,-63.61C126.82,-66.34 136.27,-69.11 145.06,-71.69"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="143.81,-75.26 154.39,-74.72 145.78,-68.54 143.81,-75.26"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d1/dc2/classstack.html#a90df277532c23519aa7ac3c08ed90a1d" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="../../d1/dc2/classstack.html#a90df277532c23519aa7ac3c08ed90a1d" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="220.25,-56.25 153.25,-56.25 153.25,-37 220.25,-37 220.25,-56.25"/>
 <text text-anchor="middle" x="186.75" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">stack::push</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M117.52,-46.62C125.79,-46.62 134.19,-46.62 142.13,-46.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="141.99,-50.13 151.99,-46.62 141.99,-43.13 141.99,-50.13"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="../../d1/dc2/classstack.html#ae09630c4384903d187801921b2ddc709" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="../../d1/dc2/classstack.html#ae09630c4384903d187801921b2ddc709" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="216.5,-19.25 157,-19.25 157,0 216.5,0 216.5,-19.25"/>
 <text text-anchor="middle" x="186.75" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">stack::top</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
+<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M117.52,-29.64C127.29,-26.77 137.24,-23.86 146.4,-21.17"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="147.12,-24.31 155.73,-18.14 145.15,-17.59 147.12,-24.31"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

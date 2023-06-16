@@ -1,12 +1,24 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,129,55,155"/>
-<area shape="rect" id="node2" href="$d6/db0/binomial__dist_8cpp.html#a4416a7bc7fa87201883c54cdc4c82813" title=" " alt="" coords="131,5,260,31"/>
-<area shape="rect" id="node3" href="$d6/db0/binomial__dist_8cpp.html#a76ed6ce71415fb400b65f0656cef3d25" title=" " alt="" coords="106,55,285,80"/>
-<area shape="rect" id="node6" href="$d6/db0/binomial__dist_8cpp.html#af09e51f513cee647d41192ab0a872cdc" title=" " alt="" coords="103,205,288,231"/>
-<area shape="rect" id="node7" href="$d6/db0/binomial__dist_8cpp.html#acd4dd4558031e4c5d045c801f73d8861" title=" " alt="" coords="336,155,461,180"/>
-<area shape="rect" id="node9" href="$d6/db0/binomial__dist_8cpp.html#a19ae0a6a2bd200fd1eb0e31b2bf4cc76" title=" " alt="" coords="119,104,272,130"/>
-<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="160,255,231,280"/>
-<area shape="rect" id="node4" href="$d6/db0/binomial__dist_8cpp.html#a78d36635232e54b5d71fcbf1eac9a49a" title=" " alt="" coords="378,55,420,80"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="363,104,434,130"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="364,205,433,231"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,129,55,155"/>
+<area shape="rect" id="Node000002" href="$d6/db0/binomial__dist_8cpp.html#a4416a7bc7fa87201883c54cdc4c82813" title=" " alt="" coords="131,5,260,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="35,128,59,84,78,60,101,40,115,32,118,37,104,44,82,64,64,87,39,130"/>
+<area shape="rect" id="Node000003" href="$d6/db0/binomial__dist_8cpp.html#a76ed6ce71415fb400b65f0656cef3d25" title=" " alt="" coords="106,55,285,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="45,127,71,107,101,89,116,83,118,88,104,94,74,112,48,131"/>
+<area shape="rect" id="Node000006" href="$d6/db0/binomial__dist_8cpp.html#af09e51f513cee647d41192ab0a872cdc" title=" " alt="" coords="103,205,288,231"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="51,153,104,184,137,198,135,202,101,189,49,158"/>
+<area shape="rect" id="Node000007" href="$d6/db0/binomial__dist_8cpp.html#acd4dd4558031e4c5d045c801f73d8861" title=" " alt="" coords="336,155,461,180"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="55,141,321,160,321,165,55,146"/>
+<area shape="rect" id="Node000009" href="$d6/db0/binomial__dist_8cpp.html#a19ae0a6a2bd200fd1eb0e31b2bf4cc76" title=" " alt="" coords="119,104,272,130"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="55,136,103,128,104,134,55,141"/>
+<area shape="rect" id="Node000010" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="160,255,231,280"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="39,154,64,198,82,221,104,241,124,252,146,259,144,264,122,257,101,246,78,225,59,201,35,157"/>
+<area shape="rect" id="Node000004" href="$d6/db0/binomial__dist_8cpp.html#a78d36635232e54b5d71fcbf1eac9a49a" title=" " alt="" coords="378,55,420,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="285,65,363,65,363,70,285,70"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="363,104,434,130"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="252,78,349,102,348,107,251,84"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="249,202,329,182,331,187,251,207"/>
+<area shape="rect" id="Node000008" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="364,205,433,231"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="288,216,349,216,349,221,288,221"/>
+<area shape="poly" id="edge10_Node000009_Node000004" title=" " alt="" coords="251,101,362,73,363,79,252,106"/>
+<area shape="poly" id="edge11_Node000009_Node000005" title=" " alt="" coords="273,114,349,114,349,120,273,120"/>
 </map>

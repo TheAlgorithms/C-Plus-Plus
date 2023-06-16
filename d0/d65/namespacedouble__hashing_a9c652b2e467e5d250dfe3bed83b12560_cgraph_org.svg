@@ -9,150 +9,180 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 210.25)">
 <title>double_hashing::addInfo</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="121.75,-149.25 0,-149.25 0,-130 121.75,-130 121.75,-149.25"/>
 <text text-anchor="middle" x="60.88" y="-135.75" font-family="Helvetica,sans-Serif" font-size="10.00">double_hashing::addInfo</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a79a9c914a6c68275b3640303d7faad8a" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a79a9c914a6c68275b3640303d7faad8a" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="270.5,-130.25 165.25,-130.25 165.25,-111 270.5,-111 270.5,-130.25"/>
 <text text-anchor="middle" x="217.88" y="-116.75" font-family="Helvetica,sans-Serif" font-size="10.00">double_hashing::add</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M122.25,-132.22C132.72,-130.94 143.63,-129.6 154.16,-128.31"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="154.47,-131.68 163.97,-126.99 153.62,-124.73 154.47,-131.68"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="593.5,-179.25 540,-179.25 540,-160 593.5,-160 593.5,-179.25"/>
 <text text-anchor="middle" x="566.75" y="-165.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge13" class="edge">
+<g id="edge13_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
+<g id="a_edge13_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M122.15,-143.21C227.65,-149.5 442.73,-162.3 528.87,-167.43"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="528.48,-170.97 538.67,-168.07 528.89,-163.98 528.48,-170.97"/>
+</a>
+</g>
 </g>
 <!-- Node5 -->
-<g id="node5" class="node">
+<g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a0d90726ed1de7b3d2ae261baed048003" target="_top" xlink:title="Hash a key. Uses the STL library&#39;s std::hash() function.">
+<g id="a_Node000005"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a0d90726ed1de7b3d2ae261baed048003" target="_top" xlink:title="Hash a key. Uses the STL library&#39;s std::hash() function.">
 <polygon fill="white" stroke="#666666" points="630.25,-19.25 503.25,-19.25 503.25,0 630.25,0 630.25,-19.25"/>
 <text text-anchor="middle" x="566.75" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">double_hashing::hashFxn</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
-<g id="edge14" class="edge">
+<g id="edge14_Node000001_Node000005" class="edge">
 <title>Node1&#45;&gt;Node5</title>
+<g id="a_edge14_Node000001_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M84.4,-129.62C103.62,-121.35 132.13,-109.69 157.75,-101.62 274.41,-64.9 414.18,-36.68 496.15,-21.66"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="496.62,-24.95 505.83,-19.72 495.37,-18.07 496.62,-24.95"/>
+</a>
+</g>
 </g>
 <!-- Node10 -->
-<g id="node10" class="node">
+<g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_node10"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a1e901418c759627557eff359b8db38cd" target="_top" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a1e901418c759627557eff359b8db38cd" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="278,-206.25 157.75,-206.25 157.75,-187 278,-187 278,-206.25"/>
 <text text-anchor="middle" x="217.88" y="-192.75" font-family="Helvetica,sans-Serif" font-size="10.00">double_hashing::display</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node10 -->
-<g id="edge11" class="edge">
+<g id="edge11_Node000001_Node000010" class="edge">
 <title>Node1&#45;&gt;Node10</title>
+<g id="a_edge11_Node000001_Node000010"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M89.23,-149.68C114.27,-158.89 151.57,-172.61 179.38,-182.84"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="177.94,-186.4 188.53,-186.57 180.36,-179.83 177.94,-186.4"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a8f8ff4fb018e1bb32d67d8a1885d3200" target="_top" xlink:title="Performs double hashing to resolve collisions.">
+<g id="a_Node000003"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a8f8ff4fb018e1bb32d67d8a1885d3200" target="_top" xlink:title="Performs double hashing to resolve collisions.">
 <polygon fill="white" stroke="#666666" points="455.25,-93.25 314,-93.25 314,-74 455.25,-74 455.25,-93.25"/>
 <text text-anchor="middle" x="384.62" y="-79.75" font-family="Helvetica,sans-Serif" font-size="10.00">double_hashing::doubleHash</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
+<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M263.89,-110.51C283.69,-106.07 307.14,-100.8 328.01,-96.11"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="328.67,-99.33 337.66,-93.72 327.14,-92.5 328.67,-99.33"/>
+</a>
+</g>
 </g>
 <!-- Node9 -->
-<g id="node9" class="node">
+<g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#af4981819aae8bc7e7beeaef02615e30d" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#af4981819aae8bc7e7beeaef02615e30d" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="444,-130.25 325.25,-130.25 325.25,-111 444,-111 444,-130.25"/>
 <text text-anchor="middle" x="384.62" y="-116.75" font-family="Helvetica,sans-Serif" font-size="10.00">double_hashing::rehash</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node9 -->
-<g id="edge8" class="edge">
+<g id="edge8_Node000002_Node000009" class="edge">
 <title>Node2&#45;&gt;Node9</title>
+<g id="a_edge8_Node000002_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M270.55,-114.31C284.31,-113.9 299.41,-113.78 313.96,-113.95"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="313.9,-117.46 323.95,-114.13 314.01,-110.46 313.9,-117.46"/>
+</a>
+</g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000003_Node000004" class="edge">
 <title>Node3&#45;&gt;Node4</title>
+<g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M440.07,-93.73C445.43,-95.88 450.6,-98.48 455.25,-101.62 477.63,-116.77 468.85,-135.51 491.25,-150.62 502.38,-158.13 516.26,-162.67 529.01,-165.42"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="528.36,-169.04 538.83,-167.4 529.62,-162.16 528.36,-169.04"/>
+</a>
+</g>
 </g>
 <!-- Node3&#45;&gt;Node5 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000003_Node000005" class="edge">
 <title>Node3&#45;&gt;Node5</title>
+<g id="a_edge4_Node000003_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M401.5,-73.58C421.66,-61.21 457.87,-40.28 491.25,-27.62 495.98,-25.83 500.94,-24.18 505.97,-22.65"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="506.66,-25.81 515.33,-19.72 504.75,-19.08 506.66,-25.81"/>
+</a>
+</g>
 </g>
 <!-- Node6 -->
-<g id="node6" class="node">
+<g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a33968a1178289ab61445dd4000df7082" target="_top" xlink:title="Used for second hash function.">
+<g id="a_Node000006"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a33968a1178289ab61445dd4000df7082" target="_top" xlink:title="Used for second hash function.">
 <polygon fill="white" stroke="#666666" points="642.25,-93.25 491.25,-93.25 491.25,-74 642.25,-74 642.25,-93.25"/>
 <text text-anchor="middle" x="566.75" y="-79.75" font-family="Helvetica,sans-Serif" font-size="10.00">double_hashing::otherHashFxn</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node6 -->
-<g id="edge5" class="edge">
+<g id="edge5_Node000003_Node000006" class="edge">
 <title>Node3&#45;&gt;Node6</title>
+<g id="a_edge5_Node000003_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M455.52,-83.62C463.57,-83.62 471.84,-83.62 480.06,-83.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="479.82,-87.13 489.82,-83.62 479.82,-80.13 479.82,-87.13"/>
+</a>
+</g>
 </g>
 <!-- Node7 -->
-<g id="node7" class="node">
+<g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#ac2adfce49ac57f6dbd1778d2c1ce0d2b" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#ac2adfce49ac57f6dbd1778d2c1ce0d2b" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="632.5,-56.25 501,-56.25 501,-37 632.5,-37 632.5,-56.25"/>
 <text text-anchor="middle" x="566.75" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">double_hashing::putProber</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node7 -->
-<g id="edge6" class="edge">
+<g id="edge6_Node000003_Node000007" class="edge">
 <title>Node3&#45;&gt;Node7</title>
+<g id="a_edge6_Node000003_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M434.84,-73.51C456.79,-69.01 482.83,-63.66 505.89,-58.92"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="506.5,-62.16 515.59,-56.72 505.09,-55.31 506.5,-62.16"/>
+</a>
+</g>
 </g>
 <!-- Node8 -->
-<g id="node8" class="node">
+<g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a29f543e2626bad58907661e1e45028a6" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="../../d0/d65/namespacedouble__hashing.html#a29f543e2626bad58907661e1e45028a6" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="632.5,-141.88 501,-141.88 501,-111.38 632.5,-111.38 632.5,-141.88"/>
 <text text-anchor="start" x="509" y="-128.38" font-family="Helvetica,sans-Serif" font-size="10.00">double_hashing::searching</text>
 <text text-anchor="middle" x="566.75" y="-117.12" font-family="Helvetica,sans-Serif" font-size="10.00">Prober</text>
@@ -160,28 +190,40 @@
 </g>
 </g>
 <!-- Node3&#45;&gt;Node8 -->
-<g id="edge7" class="edge">
+<g id="edge7_Node000003_Node000008" class="edge">
 <title>Node3&#45;&gt;Node8</title>
+<g id="a_edge7_Node000003_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M427.86,-93.71C446.36,-98.12 468.66,-103.45 489.87,-108.51"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="488.97,-112.13 499.51,-111.05 490.6,-105.33 488.97,-112.13"/>
+</a>
+</g>
 </g>
 <!-- Node9&#45;&gt;Node2 -->
-<g id="edge9" class="edge">
+<g id="edge9_Node000009_Node000002" class="edge">
 <title>Node9&#45;&gt;Node2</title>
+<g id="a_edge9_Node000009_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M324.95,-127.12C310.8,-127.43 295.62,-127.46 281.3,-127.2"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="281.63,-123.68 271.55,-126.94 281.46,-130.68 281.63,-123.68"/>
+</a>
+</g>
 </g>
 <!-- Node9&#45;&gt;Node4 -->
-<g id="edge10" class="edge">
+<g id="edge10_Node000009_Node000004" class="edge">
 <title>Node9&#45;&gt;Node4</title>
+<g id="a_edge10_Node000009_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M420.29,-130.73C440.87,-136.66 467.51,-144.23 491.25,-150.62 503.49,-153.92 516.89,-157.39 528.92,-160.44"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="527.95,-164.06 538.5,-163.11 529.66,-157.27 527.95,-164.06"/>
+</a>
+</g>
 </g>
 <!-- Node10&#45;&gt;Node4 -->
-<g id="edge12" class="edge">
+<g id="edge12_Node000010_Node000004" class="edge">
 <title>Node10&#45;&gt;Node4</title>
+<g id="a_edge12_Node000010_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M278.11,-192.01C349.92,-186.43 468.73,-177.18 528.7,-172.51"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="528.83,-175.93 538.53,-171.67 528.29,-168.95 528.83,-175.93"/>
+</a>
+</g>
 </g>
 </g>
 </svg>

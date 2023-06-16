@@ -1,4 +1,6 @@
 <map id="math::ncr_modulo_p::NCRModuloP::gcdExtended" name="math::ncr_modulo_p::NCRModuloP::gcdExtended">
-<area shape="rect" id="node1" title=" " alt="" coords="5,29,200,70"/>
-<area shape="rect" id="node2" href="$d4/da0/gcd__iterative__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e" title=" " alt="" coords="248,37,290,63"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,200,70"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="70,29,69,19,74,11,85,5,103,3,121,5,132,12,129,16,119,10,102,8,87,10,78,14,74,20,76,28"/>
+<area shape="rect" id="Node000002" href="$d4/da0/gcd__iterative__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e" title=" " alt="" coords="248,37,290,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,47,232,47,232,52,200,52"/>
 </map>

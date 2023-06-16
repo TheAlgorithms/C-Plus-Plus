@@ -6,148 +6,203 @@
 <!-- Title: ols_test Pages: 1 -->
 <svg width="456pt" height="195pt"
  viewBox="0.00 0.00 456.00 195.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 191.25)">
 <title>ols_test</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="50.5,-76.25 0,-76.25 0,-57 50.5,-57 50.5,-76.25"/>
 <text text-anchor="middle" x="25.25" y="-62.75" font-family="Helvetica,sans-Serif" font-size="10.00">ols_test</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="445.75,-187.25 392.25,-187.25 392.25,-168 445.75,-168 445.75,-187.25"/>
 <text text-anchor="middle" x="419" y="-173.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M40.12,-76.58C52.02,-84.83 69.84,-96.47 86.5,-104.62 150.93,-136.16 168.3,-143.71 238.25,-159.62 286.89,-170.69 344.47,-174.96 381.11,-176.6"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="380.64,-180.12 390.78,-177.03 380.93,-173.13 380.64,-180.12"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#aaddc683af581b51351e1023d2a01ef3b" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#aaddc683af581b51351e1023d2a01ef3b" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="191.75,-95.25 97,-95.25 97,-76 191.75,-76 191.75,-95.25"/>
 <text text-anchor="middle" x="144.38" y="-81.75" font-family="Helvetica,sans-Serif" font-size="10.00">fit_OLS_regressor</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M50.8,-70.61C61.08,-72.27 73.49,-74.29 85.83,-76.29"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="85.18,-79.89 95.61,-78.04 86.3,-72.98 85.18,-79.89"/>
+</a>
+</g>
 </g>
 <!-- Node8 -->
-<g id="node8" class="node">
+<g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
+<g id="a_Node000008"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="339.38,-39.25 252.88,-39.25 252.88,-20 339.38,-20 339.38,-39.25"/>
 <text text-anchor="middle" x="296.12" y="-25.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
-<g id="edge10" class="edge">
+<g id="edge10_Node000001_Node000008" class="edge">
 <title>Node1&#45;&gt;Node8</title>
+<g id="a_edge10_Node000001_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M50.59,-63.28C93.58,-57.36 183.89,-44.93 241.91,-36.95"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="242.28,-40.29 251.71,-35.46 241.32,-33.36 242.28,-40.29"/>
+</a>
+</g>
 </g>
 <!-- Node9 -->
-<g id="node9" class="node">
+<g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#ade6e463f37878fe2a219f927c65b5493" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#ade6e463f37878fe2a219f927c65b5493" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="202.25,-19.25 86.5,-19.25 86.5,0 202.25,0 202.25,-19.25"/>
 <text text-anchor="middle" x="144.38" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">predict_OLS_regressor</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node9 -->
-<g id="edge9" class="edge">
+<g id="edge9_Node000001_Node000009" class="edge">
 <title>Node1&#45;&gt;Node9</title>
+<g id="a_edge9_Node000001_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M43.41,-56.62C55.33,-49.82 71.68,-40.79 86.5,-33.62 93.31,-30.34 100.68,-27.04 107.79,-23.98"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="109.07,-26.82 116.93,-19.71 106.36,-20.37 109.07,-26.82"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#af7243bdc6ae3c7169f01b85bb226e66a" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#af7243bdc6ae3c7169f01b85bb226e66a" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="329.25,-150.25 263,-150.25 263,-131 329.25,-131 329.25,-150.25"/>
 <text text-anchor="middle" x="296.12" y="-136.75" font-family="Helvetica,sans-Serif" font-size="10.00">get_inverse</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000003_Node000004" class="edge">
 <title>Node3&#45;&gt;Node4</title>
+<g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M169.25,-95.69C187.9,-103.42 214.55,-114.17 238.25,-122.62 242.76,-124.24 247.5,-125.85 252.23,-127.42"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="250.91,-130.99 261.51,-130.75 253.07,-124.33 250.91,-130.99"/>
+</a>
+</g>
 </g>
 <!-- Node6 -->
-<g id="node6" class="node">
+<g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a21c80569aaffb7bf1657e54fa4b97deb" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a21c80569aaffb7bf1657e54fa4b97deb" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="334.88,-113.25 257.38,-113.25 257.38,-94 334.88,-94 334.88,-113.25"/>
 <text text-anchor="middle" x="296.12" y="-99.75" font-family="Helvetica,sans-Serif" font-size="10.00">get_transpose</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node6 -->
-<g id="edge6" class="edge">
+<g id="edge6_Node000003_Node000006" class="edge">
 <title>Node3&#45;&gt;Node6</title>
+<g id="a_edge6_Node000003_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M191.94,-91.22C209.28,-93.31 229.01,-95.68 246.54,-97.78"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="245.78,-101.34 256.13,-99.06 246.61,-94.39 245.78,-101.34"/>
+</a>
+</g>
 </g>
 <!-- Node7 -->
-<g id="node7" class="node">
+<g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
+<g id="a_Node000007"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="354,-76.25 238.25,-76.25 238.25,-57 354,-57 354,-76.25"/>
 <text text-anchor="middle" x="296.12" y="-62.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::push_back</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node7 -->
-<g id="edge7" class="edge">
+<g id="edge7_Node000003_Node000007" class="edge">
 <title>Node3&#45;&gt;Node7</title>
+<g id="a_edge7_Node000003_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M191.94,-79.72C203.05,-78.31 215.13,-76.77 226.99,-75.27"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="227.3,-78.63 236.78,-73.9 226.42,-71.69 227.3,-78.63"/>
+</a>
+</g>
 </g>
 <!-- Node3&#45;&gt;Node8 -->
-<g id="edge8" class="edge">
+<g id="edge8_Node000003_Node000008" class="edge">
 <title>Node3&#45;&gt;Node8</title>
+<g id="a_edge8_Node000003_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M169.23,-75.6C192.14,-66.03 225.15,-52.37 238.25,-47.62 242.47,-46.1 246.89,-44.57 251.32,-43.09"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="252.17,-46.17 260.59,-39.74 250,-39.51 252.17,-46.17"/>
+</a>
+</g>
 </g>
 <!-- Node4&#45;&gt;Node2 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000004_Node000002" class="edge">
 <title>Node4&#45;&gt;Node2</title>
+<g id="a_edge4_Node000004_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M329.52,-150.54C345.58,-155.46 365.04,-161.41 381.61,-166.49"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="380.44,-170.09 391.02,-169.67 382.49,-163.4 380.44,-170.09"/>
+</a>
+</g>
 </g>
 <!-- Node5 -->
-<g id="node5" class="node">
+<g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a8fa731952b0ee3bc7ec51c51ed21911e" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a8fa731952b0ee3bc7ec51c51ed21911e" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="448,-150.25 390,-150.25 390,-131 448,-131 448,-150.25"/>
 <text text-anchor="middle" x="419" y="-136.75" font-family="Helvetica,sans-Serif" font-size="10.00">is_square</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
-<g id="edge5" class="edge">
+<g id="edge5_Node000004_Node000005" class="edge">
 <title>Node4&#45;&gt;Node5</title>
+<g id="a_edge5_Node000004_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M329.52,-140.62C344.74,-140.62 363.02,-140.62 379.01,-140.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="378.64,-144.13 388.64,-140.62 378.64,-137.13 378.64,-144.13"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

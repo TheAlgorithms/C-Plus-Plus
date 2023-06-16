@@ -1,6 +1,9 @@
 <map id="data_structures/reverse_a_linked_list.cpp" name="data_structures/reverse_a_linked_list.cpp">
-<area shape="rect" id="node1" title="Implementation of Reversing a single linked list" alt="" coords="50,5,209,46"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,94,70,120"/>
-<area shape="rect" id="node3" title=" " alt="" coords="94,94,165,120"/>
-<area shape="rect" id="node4" title=" " alt="" coords="190,94,235,120"/>
+<area shape="rect" id="Node000001" title="Implementation of Reversing a single linked list" alt="" coords="50,5,209,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,70,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,48,65,86,61,82,105,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="94,94,165,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="132,46,132,79,127,79,127,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="190,94,235,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="152,44,191,82,187,85,148,48"/>
 </map>

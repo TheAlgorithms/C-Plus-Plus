@@ -6,31 +6,59 @@
 <!-- Title: tests Pages: 1 -->
 <svg width="145pt" height="27pt"
  viewBox="0.00 0.00 145.00 27.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 23.25)">
 <title>tests</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="37.75,-19.25 0,-19.25 0,0 37.75,0 37.75,-19.25"/>
 <text text-anchor="middle" x="18.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">tests</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d8/dd5/check__factorial_8cpp.html#a814eea122b9c241c2b7c1ab760a3eca2" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="../../d8/dd5/check__factorial_8cpp.html#a814eea122b9c241c2b7c1ab760a3eca2" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="137,-19.25 73.75,-19.25 73.75,0 137,0 137,-19.25"/>
 <text text-anchor="middle" x="105.38" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">is_factorial</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M38.21,-9.62C45.45,-9.62 54.08,-9.62 62.68,-9.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="62.45,-13.13 72.45,-9.62 62.45,-6.13 62.45,-13.13"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

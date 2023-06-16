@@ -1,4 +1,6 @@
 <map id="dynamic_programming::cut_rod::maxProfitByCuttingRod" name="dynamic_programming::cut_rod::maxProfitByCuttingRod">
-<area shape="rect" id="node1" title="Cuts the rod in different pieces and stores the maximum profit for each piece of the rod." alt="" coords="5,29,224,70"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="272,37,344,63"/>
+<area shape="rect" id="Node000001" title="Cuts the rod in different pieces and stores the maximum profit for each piece of the rod." alt="" coords="5,29,224,70"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="78,29,76,19,82,10,95,5,115,3,136,5,149,12,146,17,135,10,114,8,96,10,85,15,81,20,83,28"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="272,37,344,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,47,256,47,256,52,224,52"/>
 </map>

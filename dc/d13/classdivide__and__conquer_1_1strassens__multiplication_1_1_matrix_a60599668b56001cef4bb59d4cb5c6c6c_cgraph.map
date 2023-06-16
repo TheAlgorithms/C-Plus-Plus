@@ -1,6 +1,11 @@
 <map id="divide_and_conquer::strassens_multiplication::Matrix::operator*" name="divide_and_conquer::strassens_multiplication::Matrix::operator*">
-<area shape="rect" id="node1" title="Multiply two matrices and returns a new matrix." alt="" coords="5,71,175,126"/>
-<area shape="rect" id="node2" href="$dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#a5d8eb669b37a27224376b08515b4ee50" title="Naive multiplication performed on this." alt="" coords="223,5,410,61"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="458,86,573,111"/>
-<area shape="rect" id="node4" href="$dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#ae4e183ec8eab778cb243e4ae0b22a0f1" title="Get the matrix shape." alt="" coords="232,136,401,192"/>
+<area shape="rect" id="Node000001" title="Multiply two matrices and returns a new matrix." alt="" coords="5,71,175,126"/>
+<area shape="rect" id="Node000002" href="$dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#a5d8eb669b37a27224376b08515b4ee50" title="Naive multiplication performed on this." alt="" coords="223,5,410,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,71,208,62,209,67,176,77"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="458,86,573,111"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="175,96,444,96,444,101,175,101"/>
+<area shape="rect" id="Node000004" href="$dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#ae4e183ec8eab778cb243e4ae0b22a0f1" title="Get the matrix shape." alt="" coords="232,136,401,192"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="176,120,218,133,217,138,175,126"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="404,59,461,78,460,83,403,64"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="401,133,459,114,461,119,402,138"/>
 </map>

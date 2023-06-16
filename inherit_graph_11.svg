@@ -9,9 +9,9 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 23.25)">
 <title>Graphical Class Hierarchy</title>
 <!-- Node0 -->
-<g id="node1" class="node">
+<g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="d9/dae/classdata__structures_1_1_bitset.html" target="_top" xlink:title="Simple bitset implementation for bloom filter.">
+<g id="a_Node000000"><a xlink:href="d9/dae/classdata__structures_1_1_bitset.html" target="_top" xlink:title="Simple bitset implementation for bloom filter.">
 <polygon fill="white" stroke="#666666" points="115,-19.25 0,-19.25 0,0 115,0 115,-19.25"/>
 <text text-anchor="middle" x="57.5" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::Bitset</text>
 </a>

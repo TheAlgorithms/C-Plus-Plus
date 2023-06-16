@@ -1,5 +1,7 @@
 <map id="divide_and_conquer::strassens_multiplication::Matrix::h_stack" name="divide_and_conquer::strassens_multiplication::Matrix::h_stack">
-<area shape="rect" id="node1" title="Horizontally stack the matrix (one after the other)" alt="" coords="5,16,175,71"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="223,5,377,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="242,55,358,80"/>
+<area shape="rect" id="Node000001" title="Horizontally stack the matrix (one after the other)" alt="" coords="5,16,175,71"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="223,5,377,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,31,208,27,209,32,175,36"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="242,55,358,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="175,51,228,57,227,62,175,56"/>
 </map>

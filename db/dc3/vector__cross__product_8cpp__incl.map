@@ -1,7 +1,11 @@
 <map id="math/vector_cross_product.cpp" name="math/vector_cross_product.cpp">
-<area shape="rect" id="node1" title="Calculates the Cross Product and the magnitude of two mathematical 3D vectors." alt="" coords="63,5,267,31"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,79,77,105"/>
-<area shape="rect" id="node3" title=" " alt="" coords="101,79,152,105"/>
-<area shape="rect" id="node4" title=" " alt="" coords="175,79,232,105"/>
-<area shape="rect" id="node5" title=" " alt="" coords="257,79,321,105"/>
+<area shape="rect" id="Node000001" title="Calculates the Cross Product and the magnitude of two mathematical 3D vectors." alt="" coords="63,5,267,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,77,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,34,76,74,73,69,143,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="101,79,152,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,32,142,67,137,65,156,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="175,79,232,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="174,30,193,65,188,67,169,32"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="257,79,321,105"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="187,29,257,69,254,74,185,34"/>
 </map>

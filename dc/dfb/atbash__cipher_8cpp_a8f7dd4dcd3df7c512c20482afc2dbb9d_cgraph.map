@@ -1,3 +1,4 @@
 <map id="ciphers::atbash::atbash_cipher" name="ciphers::atbash::atbash_cipher">
-<area shape="rect" id="node1" title="atbash cipher encryption and decryption" alt="" coords="5,29,163,70"/>
+<area shape="rect" id="Node000001" title="atbash cipher encryption and decryption" alt="" coords="5,29,163,70"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="53,29,52,19,57,11,68,5,84,3,102,5,112,12,109,16,100,10,84,8,69,10,61,14,57,20,59,28"/>
 </map>

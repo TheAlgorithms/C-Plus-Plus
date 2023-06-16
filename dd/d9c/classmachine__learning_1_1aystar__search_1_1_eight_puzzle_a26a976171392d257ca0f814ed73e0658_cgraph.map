@@ -1,7 +1,11 @@
 <map id="machine_learning::aystar_search::EightPuzzle::generate_possible_moves" name="machine_learning::aystar_search::EightPuzzle::generate_possible_moves">
-<area shape="rect" id="node1" title="Find all possible states after processing all possible moves, given the current state of the puzzle." alt="" coords="5,81,209,137"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/emplace_back.html#" title=" " alt="" coords="272,5,448,31"/>
-<area shape="rect" id="node3" href="$dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a94f794bf44f424b1b0ca6ef9f4f6ebd3" title="A helper array to evaluate the next state from current state;." alt="" coords="257,55,463,96"/>
-<area shape="rect" id="node4" href="$dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a48d054230468b79037964f474d842b6e" title="check whether the index value is bounded within the puzzle area" alt="" coords="259,121,461,161"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="321,185,399,211"/>
+<area shape="rect" id="Node000001" title="Find all possible states after processing all possible moves, given the current state of the puzzle." alt="" coords="5,81,209,137"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/emplace_back.html#" title=" " alt="" coords="272,5,448,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,78,256,41,282,33,284,38,258,46,168,83"/>
+<area shape="rect" id="Node000003" href="$dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a94f794bf44f424b1b0ca6ef9f4f6ebd3" title="A helper array to evaluate the next state from current state;." alt="" coords="257,55,463,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="209,93,242,88,242,94,209,98"/>
+<area shape="rect" id="Node000004" href="$dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a48d054230468b79037964f474d842b6e" title="check whether the index value is bounded within the puzzle area" alt="" coords="259,121,461,161"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="209,119,244,123,243,129,209,124"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="321,185,399,211"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="169,135,258,170,307,184,305,189,256,175,167,140"/>
 </map>

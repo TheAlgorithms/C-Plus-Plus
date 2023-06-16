@@ -1,6 +1,9 @@
 <map id="strings/knuth_morris_pratt.cpp" name="strings/knuth_morris_pratt.cpp">
-<area shape="rect" id="node1" title="The Knuth&#45;Morris&#45;Pratt Algorithm for finding a pattern within a piece of text with complexity O(n + m..." alt="" coords="61,5,200,46"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,94,77,120"/>
-<area shape="rect" id="node3" title=" " alt="" coords="100,94,161,120"/>
-<area shape="rect" id="node4" title=" " alt="" coords="184,94,242,120"/>
+<area shape="rect" id="Node000001" title="The Knuth&#45;Morris&#45;Pratt Algorithm for finding a pattern within a piece of text with complexity O(n + m..." alt="" coords="61,5,200,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,77,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,48,67,86,64,82,106,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="100,94,161,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="133,46,133,79,128,79,128,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="184,94,242,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="153,44,192,82,188,85,149,48"/>
 </map>

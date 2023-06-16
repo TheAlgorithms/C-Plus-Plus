@@ -1,10 +1,17 @@
 <map id="machine_learning/k_nearest_neighbors.cpp" name="machine_learning/k_nearest_neighbors.cpp">
-<area shape="rect" id="node1" title="Implementation of [K&#45;Nearest Neighbors algorithm] (https://en.wikipedia.org/wiki/K&#45;nearest_neighbors_..." alt="" coords="230,5,389,46"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,94,80,120"/>
-<area shape="rect" id="node3" title=" " alt="" coords="104,94,168,120"/>
-<area shape="rect" id="node4" title=" " alt="" coords="193,94,250,120"/>
-<area shape="rect" id="node5" title=" " alt="" coords="274,94,345,120"/>
-<area shape="rect" id="node6" title=" " alt="" coords="369,94,436,120"/>
-<area shape="rect" id="node7" title=" " alt="" coords="461,94,571,120"/>
-<area shape="rect" id="node8" title=" " alt="" coords="595,94,653,120"/>
+<area shape="rect" id="Node000001" title="Implementation of [K&#45;Nearest Neighbors algorithm] (https://en.wikipedia.org/wiki/K&#45;nearest_neighbors_..." alt="" coords="230,5,389,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,80,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,49,95,93,93,88,242,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="104,94,168,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="267,49,177,90,175,85,265,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="193,94,250,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="289,48,247,86,244,82,286,44"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="274,94,345,120"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="312,46,312,79,307,79,307,46"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="369,94,436,120"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="334,44,379,82,376,86,331,48"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="461,94,571,120"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="362,44,472,86,470,91,360,49"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="595,94,653,120"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="390,43,581,91,580,96,389,49"/>
 </map>

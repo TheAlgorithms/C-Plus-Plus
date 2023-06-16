@@ -1,10 +1,21 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,82,55,108"/>
-<area shape="rect" id="node2" href="$de/dd1/segment__tree_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,82,146,108"/>
-<area shape="rect" id="node3" href="$dd/d95/classdata__structures_1_1_segment_tree.html#a8fecc48e8e3f6f5f6e728495a4282e52" title="Helper method for range_comb method below." alt="" coords="194,119,365,159"/>
-<area shape="rect" id="node8" href="$dd/d95/classdata__structures_1_1_segment_tree.html#a2a04f1832c5ce86def50c3021b2ab6b1" title="Helper method for update method below." alt="" coords="194,29,365,70"/>
-<area shape="rect" id="node4" href="$dd/d95/classdata__structures_1_1_segment_tree.html#a8d22286b7be3dcbb701ac5c7d9c79841" title="Any associative function that combines x and y." alt="" coords="413,12,585,53"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="463,142,535,168"/>
-<area shape="rect" id="node6" href="$dd/d95/classdata__structures_1_1_segment_tree.html#a6d3beccc936af2377c8eeb17067fd141" title="Gives the midpoint between two integers." alt="" coords="413,77,585,118"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="465,192,533,217"/>
+<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,82,55,108"/>
+<area shape="rect" id="Node000002" href="$de/dd1/segment__tree_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,82,146,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,92,88,92,88,98,55,98"/>
+<area shape="rect" id="Node000003" href="$dd/d95/classdata__structures_1_1_segment_tree.html#a8fecc48e8e3f6f5f6e728495a4282e52" title="Helper method for range_comb method below." alt="" coords="194,119,365,159"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="147,98,193,112,191,117,146,103"/>
+<area shape="rect" id="Node000008" href="$dd/d95/classdata__structures_1_1_segment_tree.html#a2a04f1832c5ce86def50c3021b2ab6b1" title="Helper method for update method below." alt="" coords="194,29,365,70"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="145,86,193,72,195,77,147,91"/>
+<area shape="poly" id="edge7_Node000003_Node000003" title=" " alt="" coords="250,118,248,109,253,100,264,94,280,92,297,95,308,101,305,106,295,100,280,97,265,99,257,104,253,110,255,118"/>
+<area shape="rect" id="Node000004" href="$dd/d95/classdata__structures_1_1_segment_tree.html#a8d22286b7be3dcbb701ac5c7d9c79841" title="Any associative function that combines x and y." alt="" coords="413,12,585,53"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="314,116,412,63,428,56,430,61,415,68,317,120"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="463,142,535,168"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="366,143,448,149,448,154,365,148"/>
+<area shape="rect" id="Node000006" href="$dd/d95/classdata__structures_1_1_segment_tree.html#a6d3beccc936af2377c8eeb17067fd141" title="Gives the midpoint between two integers." alt="" coords="413,77,585,118"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="365,120,398,114,399,119,366,126"/>
+<area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="465,192,533,217"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="348,157,414,178,451,189,450,194,413,183,346,162"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="365,40,398,38,399,43,366,46"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="366,66,399,73,398,78,365,71"/>
+<area shape="poly" id="edge11_Node000008_Node000008" title=" " alt="" coords="250,29,248,19,253,11,264,5,280,3,297,5,308,12,305,16,295,10,280,8,265,10,257,14,253,20,255,28"/>
 </map>

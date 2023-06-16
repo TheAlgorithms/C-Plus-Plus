@@ -1,10 +1,17 @@
 <map id="numerical_methods/qr_decompose.h" name="numerical_methods/qr_decompose.h">
-<area shape="rect" id="node1" title="Library functions to compute QR decomposition of a given matrix." alt="" coords="222,5,371,46"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,94,63,120"/>
-<area shape="rect" id="node3" title=" " alt="" coords="87,94,146,120"/>
-<area shape="rect" id="node4" title=" " alt="" coords="170,94,237,120"/>
-<area shape="rect" id="node5" title=" " alt="" coords="261,94,332,120"/>
-<area shape="rect" id="node6" title=" " alt="" coords="356,94,408,120"/>
-<area shape="rect" id="node7" title=" " alt="" coords="432,94,500,120"/>
-<area shape="rect" id="node8" title=" " alt="" coords="524,94,592,120"/>
+<area shape="rect" id="Node000001" title="Library functions to compute QR decomposition of a given matrix." alt="" coords="222,5,371,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,63,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,49,78,95,76,90,230,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="87,94,146,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="253,49,159,90,157,85,251,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="170,94,237,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="275,48,230,86,227,82,272,44"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="261,94,332,120"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="299,46,299,79,294,79,294,46"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="356,94,408,120"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="320,44,360,82,356,86,316,48"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="432,94,500,120"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="340,44,428,85,426,90,338,49"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="524,94,592,120"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="363,44,511,89,509,94,361,49"/>
 </map>

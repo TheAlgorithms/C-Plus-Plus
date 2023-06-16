@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"d9/dae/classdata__structures_1_1_bitset.html#a9ef54c7c3f6494b36ead3ae2e5cf43ac":[10,0,2,7,2],
 "d9/dae/classdata__structures_1_1_bitset.html#ad7f7d479079a95bcc9175465395fa23f":[9,0,20,0,4],
 "d9/dae/classdata__structures_1_1_bitset.html#ad7f7d479079a95bcc9175465395fa23f":[10,0,2,7,4],
 "d9/dae/classdata__structures_1_1_bitset.html#ae86688cf99b77342deedb75149573e73":[10,0,2,7,5],
@@ -28,8 +29,8 @@ var NAVTREEINDEX9 =
 "d9/dde/classbinary__search__tree.html#ad9912e8574538e86f9bd2c38e7e63d03":[10,0,18,7],
 "d9/dde/classbinary__search__tree.html#af4a865ce5244608819b169fc78a41153":[10,0,18,13],
 "d9/dde/classbinary__search__tree.html#af9a2c7c187a7ca3142c77ce342ef3153":[10,0,18,6],
-"d9/dde/structdouble__hashing_1_1_entry.html":[10,0,4,0],
 "d9/dde/structdouble__hashing_1_1_entry.html":[9,0,25,0],
+"d9/dde/structdouble__hashing_1_1_entry.html":[10,0,4,0],
 "d9/dde/structdouble__hashing_1_1_entry.html#a287b92112b6b43b34808a93778873475":[10,0,4,0,0],
 "d9/dde/structdouble__hashing_1_1_entry.html#a287b92112b6b43b34808a93778873475":[9,0,25,0,0],
 "d9/dde/structdouble__hashing_1_1_entry.html#ae114967c89dbba3b754dc4976bba3248":[10,0,4,0,1],
@@ -217,8 +218,8 @@ var NAVTREEINDEX9 =
 "da/dd1/structquadratic__probing_1_1_entry.html":[10,0,13,0],
 "da/dd1/structquadratic__probing_1_1_entry.html#a75f72858f08a2fc8b94402de98db12d8":[10,0,13,0,1],
 "da/dd1/structquadratic__probing_1_1_entry.html#a75f72858f08a2fc8b94402de98db12d8":[9,0,89,0,1],
-"da/dd1/structquadratic__probing_1_1_entry.html#a9df1118010a233d13ab3dd699bcb513e":[10,0,13,0,0],
 "da/dd1/structquadratic__probing_1_1_entry.html#a9df1118010a233d13ab3dd699bcb513e":[9,0,89,0,0],
+"da/dd1/structquadratic__probing_1_1_entry.html#a9df1118010a233d13ab3dd699bcb513e":[10,0,13,0,0],
 "da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp.html":[11,0,5,0],
 "da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp.html#a7a890d2f26855ada3b9f1d43aec70a86":[11,0,5,0,1],
 "da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,5,0,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "db/d01/brent__method__extrema_8cpp.html#a525335710b53cb064ca56b936120431e":[11,0,15,2,0],
 "db/d01/brent__method__extrema_8cpp.html#a6d0455dd5c30adda100e95f0423c786e":[11,0,15,2,6],
 "db/d01/brent__method__extrema_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,15,2,3],
-"db/d03/_s_t-example.html":[12,0],
-"db/d03/namespacewildcard__matching.html":[9,0,130]
+"db/d03/_s_t-example.html":[12,0]
 };

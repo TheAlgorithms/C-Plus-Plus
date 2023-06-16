@@ -1,4 +1,6 @@
 <map id="operations_on_datastructures::circular_linked_list::CircularLinkedList" name="operations_on_datastructures::circular_linked_list::CircularLinkedList">
-<area shape="rect" id="node1" title="A class that implements a Circular Linked List." alt="" coords="5,124,198,180"/>
-<area shape="rect" id="node2" href="$da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html" title="A Node struct that represents a single Node in a Binary Tree." alt="" coords="5,5,198,46"/>
+<area shape="rect" id="Node000001" title="A class that implements a Circular Linked List." alt="" coords="5,124,198,180"/>
+<area shape="rect" id="Node000002" href="$da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html" title="A Node struct that represents a single Node in a Binary Tree." alt="" coords="5,5,198,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,61,104,124,99,124,99,61"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="214,16,224,26,216,34,199,38,198,33,214,30,219,26,211,20"/>
 </map>

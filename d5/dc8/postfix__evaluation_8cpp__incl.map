@@ -1,8 +1,13 @@
 <map id="others/postfix_evaluation.cpp" name="others/postfix_evaluation.cpp">
-<area shape="rect" id="node1" title="Evaluation of Postfix Expression" alt="" coords="115,5,306,31"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,79,80,105"/>
-<area shape="rect" id="node3" title=" " alt="" coords="104,79,154,105"/>
-<area shape="rect" id="node4" title=" " alt="" coords="178,79,243,105"/>
-<area shape="rect" id="node5" title=" " alt="" coords="267,79,338,105"/>
-<area shape="rect" id="node6" title=" " alt="" coords="363,79,416,105"/>
+<area shape="rect" id="Node000001" title="Evaluation of Postfix Expression" alt="" coords="115,5,306,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,80,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,34,85,75,83,70,181,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="104,79,154,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="198,34,155,71,152,67,195,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="178,79,243,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="213,31,213,64,208,64,208,31"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="267,79,338,105"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="228,29,277,68,274,72,224,34"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="363,79,416,105"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="242,29,350,72,348,77,240,34"/>
 </map>

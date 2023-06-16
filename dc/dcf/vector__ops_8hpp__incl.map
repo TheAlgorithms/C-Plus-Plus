@@ -1,9 +1,15 @@
 <map id="machine_learning/vector_ops.hpp" name="machine_learning/vector_ops.hpp">
-<area shape="rect" id="node1" title="Various functions for vectors associated with [NeuralNetwork (aka Multilayer Perceptron)] (https://en..." alt="" coords="188,5,350,46"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,94,80,120"/>
-<area shape="rect" id="node3" title=" " alt="" coords="104,94,165,120"/>
-<area shape="rect" id="node4" title=" " alt="" coords="188,94,260,120"/>
-<area shape="rect" id="node5" title=" " alt="" coords="284,94,348,120"/>
-<area shape="rect" id="node6" title=" " alt="" coords="372,94,439,120"/>
-<area shape="rect" id="node7" title=" " alt="" coords="463,94,521,120"/>
+<area shape="rect" id="Node000001" title="Various functions for vectors associated with [NeuralNetwork (aka Multilayer Perceptron)] (https://en..." alt="" coords="188,5,350,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,80,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,49,92,91,90,86,212,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="104,94,165,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="237,49,169,88,166,84,234,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="188,94,260,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="260,48,240,82,236,80,256,45"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="284,94,348,120"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="283,45,304,80,299,82,278,48"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="372,94,439,120"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="304,44,374,84,371,89,302,49"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="463,94,521,120"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="326,44,450,88,448,93,324,49"/>
 </map>

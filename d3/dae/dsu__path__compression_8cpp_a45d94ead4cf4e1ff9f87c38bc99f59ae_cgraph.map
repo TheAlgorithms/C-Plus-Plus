@@ -1,14 +1,30 @@
 <map id="test2" name="test2">
-<area shape="rect" id="node1" title="Self&#45;implementations, 2nd test." alt="" coords="5,80,56,106"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/at.html#" title=" " alt="" coords="105,31,207,56"/>
-<area shape="rect" id="node3" href="$dd/d1f/classdsu.html#a0ce2672c570f4235eafddb0c9a58115a" title="prints the minimum, maximum and size of the set to which i belongs to" alt="" coords="122,80,190,106"/>
-<area shape="rect" id="node8" href="$dd/d1f/classdsu.html#a6ac30c07abca2aaa3b291504c25c3559" title="Method that combines two disjoint sets to which i and j belongs to and make a single set having a com..." alt="" coords="104,229,208,255"/>
-<area shape="rect" id="node4" href="$dd/d1f/classdsu.html#a696141b8b092466767f4bfe1c5e46cde" title="A utility function that returns the max element of the set to which i belongs to." alt="" coords="256,5,356,31"/>
-<area shape="rect" id="node6" href="$dd/d1f/classdsu.html#ac713a5b496d0405c82e2808a85e58415" title="A utility function that returns the min element of the set to which i belongs to." alt="" coords="258,55,354,80"/>
-<area shape="rect" id="node7" href="$dd/d1f/classdsu.html#a1c24228b0f2f49220133fb8c3566a55c" title="A utility function that returns the size of the set to which i belongs to." alt="" coords="269,104,343,130"/>
-<area shape="rect" id="node5" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="404,104,496,130"/>
-<area shape="rect" id="node9" href="$dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303" title="A utility function which check whether i and j belongs to same set or not." alt="" coords="259,205,353,231"/>
-<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="270,255,342,280"/>
-<area shape="rect" id="node11" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="272,304,340,330"/>
-<area shape="rect" id="node12" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="267,353,345,379"/>
+<area shape="rect" id="Node000001" title="Self&#45;implementations, 2nd test." alt="" coords="5,80,56,106"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/at.html#" title=" " alt="" coords="105,31,207,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,81,106,60,108,65,57,86"/>
+<area shape="rect" id="Node000003" href="$dd/d1f/classdsu.html#a0ce2672c570f4235eafddb0c9a58115a" title="prints the minimum, maximum and size of the set to which i belongs to" alt="" coords="122,80,190,106"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,90,106,90,106,96,56,96"/>
+<area shape="rect" id="Node000008" href="$dd/d1f/classdsu.html#a6ac30c07abca2aaa3b291504c25c3559" title="Method that combines two disjoint sets to which i and j belongs to and make a single set having a com..." alt="" coords="104,229,208,255"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="45,104,136,216,132,219,41,108"/>
+<area shape="rect" id="Node000004" href="$dd/d1f/classdsu.html#a696141b8b092466767f4bfe1c5e46cde" title="A utility function that returns the max element of the set to which i belongs to." alt="" coords="256,5,356,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="185,77,207,66,255,40,263,36,265,41,257,45,209,71,188,82"/>
+<area shape="rect" id="Node000006" href="$dd/d1f/classdsu.html#ac713a5b496d0405c82e2808a85e58415" title="A utility function that returns the min element of the set to which i belongs to." alt="" coords="258,55,354,80"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="190,85,243,75,244,81,191,90"/>
+<area shape="rect" id="Node000007" href="$dd/d1f/classdsu.html#a1c24228b0f2f49220133fb8c3566a55c" title="A utility function that returns the size of the set to which i belongs to." alt="" coords="269,104,343,130"/>
+<area shape="poly" id="edge8_Node000003_Node000007" title=" " alt="" coords="191,96,255,106,254,111,190,101"/>
+<area shape="rect" id="Node000005" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="404,104,496,130"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="339,29,358,40,425,92,422,96,355,44,336,34"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="425,105,420,95,423,86,433,80,450,77,469,80,478,88,474,92,466,85,450,83,435,85,428,89,426,95,430,102"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="347,78,397,96,396,101,345,83"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="344,114,389,114,389,120,344,120"/>
+<area shape="poly" id="edge11_Node000008_Node000005" title=" " alt="" coords="181,226,255,190,397,133,399,138,257,195,184,231"/>
+<area shape="rect" id="Node000009" href="$dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303" title="A utility function which check whether i and j belongs to same set or not." alt="" coords="259,205,353,231"/>
+<area shape="poly" id="edge12_Node000008_Node000009" title=" " alt="" coords="208,231,244,225,245,231,209,236"/>
+<area shape="rect" id="Node000010" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="270,255,342,280"/>
+<area shape="poly" id="edge14_Node000008_Node000010" title=" " alt="" coords="209,248,256,256,255,262,208,254"/>
+<area shape="rect" id="Node000011" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="272,304,340,330"/>
+<area shape="poly" id="edge15_Node000008_Node000011" title=" " alt="" coords="184,253,257,290,266,295,263,299,255,295,182,258"/>
+<area shape="rect" id="Node000012" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="267,353,345,379"/>
+<area shape="poly" id="edge16_Node000008_Node000012" title=" " alt="" coords="170,254,207,295,258,340,263,343,260,348,254,344,203,299,166,257"/>
+<area shape="poly" id="edge13_Node000009_Node000005" title=" " alt="" coords="327,203,355,184,419,137,422,141,358,188,330,207"/>
 </map>

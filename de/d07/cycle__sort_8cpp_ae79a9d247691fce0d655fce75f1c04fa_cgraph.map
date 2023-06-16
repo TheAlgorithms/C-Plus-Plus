@@ -1,5 +1,8 @@
 <map id="sorting::cycle_sort::cycleSort" name="sorting::cycle_sort::cycleSort">
-<area shape="rect" id="node1" title="The main function implements cycleSort." alt="" coords="5,29,134,70"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="182,12,297,37"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="200,61,279,87"/>
+<area shape="rect" id="Node000001" title="The main function implements cycleSort." alt="" coords="5,29,134,70"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="37,29,35,19,41,11,52,5,70,3,89,5,100,12,97,16,87,10,69,8,54,10,44,14,40,20,42,28"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="182,12,297,37"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="134,37,167,32,168,38,134,43"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="200,61,279,87"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="134,56,186,63,185,69,134,61"/>
 </map>

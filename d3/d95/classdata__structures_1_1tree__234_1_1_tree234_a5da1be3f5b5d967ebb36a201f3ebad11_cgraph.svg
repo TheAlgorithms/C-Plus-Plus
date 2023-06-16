@@ -5,59 +5,59 @@
  -->
 <!-- Title: data_structures::tree_234::Tree234::Remove Pages: 1 -->
 <!--zoomable 646 -->
+
 <svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
 <style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
 .edge:hover path { stroke: red; }
 .edge:hover polygon { stroke: red; fill: red; }
 ]]></style>
-<script type="text/javascript"><![CDATA[
-var edges = document.getElementsByTagName('g');
-if (edges && edges.length) {
-  for (var i=0;i<edges.length;i++) {
-    if (edges[i].id.substr(0,4)=='edge') {
-      edges[i].setAttribute('class','edge');
-    }
-  }
-}
-]]></script>
-        <defs>
-                <circle id="rim" cx="0" cy="0" r="7"/>
-                <circle id="rim2" cx="0" cy="0" r="3.5"/>
-                <g id="zoomPlus">
-                        <use xlink:href="#rim" fill="#404040">
-                                <set attributeName="fill" to="#808080" begin="zoomplus.mouseover" end="zoomplus.mouseout"/>
-                        </use>
-                        <path d="M-4,0h8M0,-4v8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
-                </g>
-                <g id="zoomMin">
-                        <use xlink:href="#rim" fill="#404040">
-                                <set attributeName="fill" to="#808080" begin="zoomminus.mouseover" end="zoomminus.mouseout"/>
-                        </use>
-                        <path d="M-4,0h8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
-                </g>
-                <g id="dirArrow">
-                        <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-               <g id="resetDef">
-                       <use xlink:href="#rim2" fill="#404040">
-                               <set attributeName="fill" to="#808080" begin="reset.mouseover" end="reset.mouseout"/>
-                       </use>
-               </g>
-        </defs>
 
-<script type="text/javascript">
+<defs>
+  <circle id="rim" cx="0" cy="0" r="7"/>
+  <circle id="rim2" cx="0" cy="0" r="3.5"/>
+  <g id="zoomPlus">
+    <use xlink:href="#rim" fill="#404040"><set attributeName="fill" to="#808080" begin="zoomplus.mouseover" end="zoomplus.mouseout"/></use>
+    <path d="M-4,0h8M0,-4v8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
+  </g>
+  <g id="zoomMin">
+    <use xlink:href="#rim" fill="#404040"><set attributeName="fill" to="#808080" begin="zoomminus.mouseover" end="zoomminus.mouseout"/></use>
+    <path d="M-4,0h8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
+  </g>
+  <g id="arrowUp" transform="translate(30 24)">
+    <use xlink:href="#rim"/>
+    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+  </g>
+  <g id="arrowRight" transform="rotate(90) translate(36 -43)">
+    <use xlink:href="#rim"/>
+    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+  </g>
+  <g id="arrowDown" transform="rotate(180) translate(-30 -48)">
+    <use xlink:href="#rim"/>
+    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+  </g>
+  <g id="arrowLeft" transform="rotate(270) translate(-36 17)">
+    <use xlink:href="#rim"/>
+    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+  </g>
+  <g id="resetDef">
+    <use xlink:href="#rim2" fill="#404040"><set attributeName="fill" to="#808080" begin="reset.mouseover" end="reset.mouseout"/></use>
+  </g>
+</defs>
+<script type="application/ecmascript">
 var viewWidth = 713;
 var viewHeight = 646;
 var sectionId = 'dynsection-12';
 </script>
-<script xlink:href="../../svgpan.js"/>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>data_structures::tree_234::Tree234::Remove</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Remove item from tree.">
+<g id="a_Node000001"><a xlink:title="Remove item from tree.">
 <polygon fill="#999999" stroke="#666666" points="121,-202.5 0,-202.5 0,-172 121,-172 121,-202.5"/>
 <text text-anchor="start" x="8" y="-189" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="60.5" y="-177.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Tree234::Remove</text>
@@ -65,9 +65,9 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a61dd051a74e5f36c8dc03dae8dca6ef4" target="_top" xlink:title="Main function implement the pre&#45;merge remove operation.">
+<g id="a_Node000002"><a xlink:href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a61dd051a74e5f36c8dc03dae8dca6ef4" target="_top" xlink:title="Main function implement the pre&#45;merge remove operation.">
 <polygon fill="white" stroke="#666666" points="320,-202.5 157,-202.5 157,-172 320,-172 320,-202.5"/>
 <text text-anchor="start" x="165" y="-189" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="238.5" y="-177.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Tree234::RemovePreMerge</text>
@@ -75,15 +75,18 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M121.09,-187.25C129.15,-187.25 137.57,-187.25 146.03,-187.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="145.75,-190.75 155.75,-187.25 145.75,-183.75 145.75,-190.75"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac85ba5abfd6d34dcd908b2afe6464657" target="_top" xlink:title="Get the max item of the tree.">
+<g id="a_Node000003"><a xlink:href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac85ba5abfd6d34dcd908b2afe6464657" target="_top" xlink:title="Get the max item of the tree.">
 <polygon fill="white" stroke="#666666" points="513.75,-588.5 356,-588.5 356,-558 513.75,-558 513.75,-588.5"/>
 <text text-anchor="start" x="364" y="-575" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="434.88" y="-563.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Tree234::GetTreeMaxItem</text>
@@ -91,15 +94,18 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
+<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M242.65,-202.67C252.87,-250.13 288.4,-397 356,-499.25 369.14,-519.12 388.55,-537.59 404.71,-551.1"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="401.85,-554.1 411.81,-557.7 406.27,-548.67 401.85,-554.1"/>
+</a>
+</g>
 </g>
 <!-- Node6 -->
-<g id="node6" class="node">
+<g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a65a1235659356166a3e9b451c64fcc36" target="_top" xlink:title="Get the min item of the tree.">
+<g id="a_Node000006"><a xlink:href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a65a1235659356166a3e9b451c64fcc36" target="_top" xlink:title="Get the min item of the tree.">
 <polygon fill="white" stroke="#666666" points="512.25,-490.5 357.5,-490.5 357.5,-460 512.25,-460 512.25,-490.5"/>
 <text text-anchor="start" x="365.5" y="-477" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="434.88" y="-465.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Tree234::GetTreeMinItem</text>
@@ -107,15 +113,18 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node2&#45;&gt;Node6 -->
-<g id="edge5" class="edge">
+<g id="edge5_Node000002_Node000006" class="edge">
 <title>Node2&#45;&gt;Node6</title>
+<g id="a_edge5_Node000002_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M249.95,-202.73C281.92,-250.1 378.59,-393.33 417.44,-450.9"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="414.88,-452.36 423.37,-458.69 420.68,-448.44 414.88,-452.36"/>
+</a>
+</g>
 </g>
 <!-- Node9 -->
-<g id="node9" class="node">
+<g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#afd9f83e2d5d7f22f79c1348e98914631" target="_top" xlink:title="Check if node is a 2&#45;node.">
+<g id="a_Node000009"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#afd9f83e2d5d7f22f79c1348e98914631" target="_top" xlink:title="Check if node is a 2&#45;node.">
 <polygon fill="white" stroke="#666666" points="682,-196.5 573,-196.5 573,-166 682,-166 682,-196.5"/>
 <text text-anchor="start" x="581" y="-183" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="627.5" y="-171.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Node::Is2Node</text>
@@ -123,15 +132,18 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node2&#45;&gt;Node9 -->
-<g id="edge8" class="edge">
+<g id="edge8_Node000002_Node000009" class="edge">
 <title>Node2&#45;&gt;Node9</title>
+<g id="a_edge8_Node000002_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M304.15,-203C320.93,-206.42 339.05,-209.52 356,-211.25 425.75,-218.36 444.23,-220.34 513.75,-211.25 531.63,-208.91 550.71,-204.57 567.99,-199.91"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="568.8,-203.03 577.49,-196.97 566.92,-196.29 568.8,-203.03"/>
+</a>
+</g>
 </g>
 <!-- Node10 -->
-<g id="node10" class="node">
+<g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_node10"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a6c5f929afcbad5219646990edee22e18" target="_top" xlink:title="Check if node is a 3&#45;node or 4&#45;node, this is useful when we delete item from 2&#45;3&#45;4 tree.">
+<g id="a_Node000010"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a6c5f929afcbad5219646990edee22e18" target="_top" xlink:title="Check if node is a 3&#45;node or 4&#45;node, this is useful when we delete item from 2&#45;3&#45;4 tree.">
 <polygon fill="white" stroke="#666666" points="492,-30.5 377.75,-30.5 377.75,0 492,0 492,-30.5"/>
 <text text-anchor="start" x="385.75" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="434.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Node::Is34Node</text>
@@ -139,15 +151,18 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node2&#45;&gt;Node10 -->
-<g id="edge9" class="edge">
+<g id="edge9_Node000002_Node000010" class="edge">
 <title>Node2&#45;&gt;Node10</title>
+<g id="a_edge9_Node000002_Node000010"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M248.33,-171.62C265.48,-142.59 306.03,-80.06 356,-44.25 360.43,-41.07 365.25,-38.21 370.25,-35.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="371.48,-38.44 379.02,-30.99 368.48,-32.11 371.48,-38.44"/>
+</a>
+</g>
 </g>
 <!-- Node11 -->
-<g id="node11" class="node">
+<g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_node11"><a xlink:href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae58dca20f08eaf9313f6e7b0869c2d0e" target="_top" xlink:title="Do the actual left rotate operation.">
+<g id="a_Node000011"><a xlink:href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae58dca20f08eaf9313f6e7b0869c2d0e" target="_top" xlink:title="Do the actual left rotate operation.">
 <polygon fill="white" stroke="#666666" points="692.5,-147.5 562.5,-147.5 562.5,-117 692.5,-117 692.5,-147.5"/>
 <text text-anchor="start" x="570.5" y="-134" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="627.5" y="-122.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Tree234::LeftRotate</text>
@@ -155,15 +170,18 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node2&#45;&gt;Node11 -->
-<g id="edge10" class="edge">
+<g id="edge10_Node000002_Node000011" class="edge">
 <title>Node2&#45;&gt;Node11</title>
+<g id="a_edge10_Node000002_Node000011"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M310.78,-171.52C325.68,-168.52 341.32,-165.6 356,-163.25 421.61,-152.75 496.72,-144.44 551.12,-139.07"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="551.45,-142.46 561.06,-138.01 550.77,-135.49 551.45,-142.46"/>
+</a>
+</g>
 </g>
 <!-- Node12 -->
-<g id="node12" class="node">
+<g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_node12"><a xlink:href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a36f4d5f603f7edb7db7c73fb53ba14e9" target="_top" xlink:title="Merge the item at index of the parent node, and its left and right child.">
+<g id="a_Node000012"><a xlink:href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a36f4d5f603f7edb7db7c73fb53ba14e9" target="_top" xlink:title="Merge the item at index of the parent node, and its left and right child.">
 <polygon fill="white" stroke="#666666" points="490.5,-294.5 379.25,-294.5 379.25,-264 490.5,-264 490.5,-294.5"/>
 <text text-anchor="start" x="387.25" y="-281" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="434.88" y="-269.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Tree234::Merge</text>
@@ -171,15 +189,18 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node2&#45;&gt;Node12 -->
-<g id="edge11" class="edge">
+<g id="edge11_Node000002_Node000012" class="edge">
 <title>Node2&#45;&gt;Node12</title>
+<g id="a_edge11_Node000002_Node000012"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M270.52,-202.77C293.92,-214.39 326.85,-230.57 356,-244.25 366.47,-249.16 377.8,-254.34 388.49,-259.15"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="386.93,-262.74 397.49,-263.64 389.8,-256.35 386.93,-262.74"/>
+</a>
+</g>
 </g>
 <!-- Node18 -->
-<g id="node18" class="node">
+<g id="Node000018" class="node">
 <title>Node18</title>
-<g id="a_node18"><a xlink:href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae68f8e62be02657c1287def6b38d7cc9" target="_top" xlink:title="Do the actual right rotate operation.">
+<g id="a_Node000018"><a xlink:href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae68f8e62be02657c1287def6b38d7cc9" target="_top" xlink:title="Do the actual right rotate operation.">
 <polygon fill="white" stroke="#666666" points="695.88,-89.5 559.12,-89.5 559.12,-59 695.88,-59 695.88,-89.5"/>
 <text text-anchor="start" x="567.12" y="-76" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="627.5" y="-64.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Tree234::RightRotate</text>
@@ -187,15 +208,18 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node2&#45;&gt;Node18 -->
-<g id="edge18" class="edge">
+<g id="edge18_Node000002_Node000018" class="edge">
 <title>Node2&#45;&gt;Node18</title>
+<g id="a_edge18_Node000002_Node000018"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M249.82,-171.83C267.84,-146.45 307.77,-96.73 356,-77.25 417.03,-52.6 492.32,-54.04 547.95,-60.39"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="547.46,-63.98 557.81,-61.72 548.31,-57.03 547.46,-63.98"/>
+</a>
+</g>
 </g>
 <!-- Node19 -->
-<g id="node19" class="node">
+<g id="Node000019" class="node">
 <title>Node19</title>
-<g id="a_node19"><a xlink:href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac5361479dd996eb331759f33808657d9" target="_top" xlink:title="A handy function to try if we can do a left rotate to the target node.">
+<g id="a_Node000019"><a xlink:href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac5361479dd996eb331759f33808657d9" target="_top" xlink:title="A handy function to try if we can do a left rotate to the target node.">
 <polygon fill="white" stroke="#666666" points="507,-202.5 362.75,-202.5 362.75,-172 507,-172 507,-202.5"/>
 <text text-anchor="start" x="370.75" y="-189" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="434.88" y="-177.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Tree234::TryLeftRotate</text>
@@ -203,15 +227,18 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node2&#45;&gt;Node19 -->
-<g id="edge19" class="edge">
+<g id="edge19_Node000002_Node000019" class="edge">
 <title>Node2&#45;&gt;Node19</title>
+<g id="a_edge19_Node000002_Node000019"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M320.24,-187.25C330.62,-187.25 341.25,-187.25 351.65,-187.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="351.37,-190.75 361.37,-187.25 351.37,-183.75 351.37,-190.75"/>
+</a>
+</g>
 </g>
 <!-- Node20 -->
-<g id="node20" class="node">
+<g id="Node000020" class="node">
 <title>Node20</title>
-<g id="a_node20"><a xlink:href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#aec0642d1d151521ca7c70ea85cdb15d3" target="_top" xlink:title="A handy function to try if we can do a right rotate to the target node.">
+<g id="a_Node000020"><a xlink:href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#aec0642d1d151521ca7c70ea85cdb15d3" target="_top" xlink:title="A handy function to try if we can do a right rotate to the target node.">
 <polygon fill="white" stroke="#666666" points="510.38,-116.5 359.38,-116.5 359.38,-86 510.38,-86 510.38,-116.5"/>
 <text text-anchor="start" x="367.38" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="434.88" y="-91.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Tree234::TryRightRotate</text>
@@ -219,15 +246,18 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node2&#45;&gt;Node20 -->
-<g id="edge22" class="edge">
+<g id="edge22_Node000002_Node000020" class="edge">
 <title>Node2&#45;&gt;Node20</title>
+<g id="a_edge22_Node000002_Node000020"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M269.29,-171.66C292.61,-159.71 326,-143.14 356,-130.25 363.47,-127.04 371.42,-123.84 379.28,-120.8"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="380.41,-123.74 388.51,-116.91 377.92,-117.19 380.41,-123.74"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a2753b6053b8c86c5bd987a44fdfa0a57" target="_top" xlink:title="Get max item (rightmost) in the current node.">
+<g id="a_Node000004"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a2753b6053b8c86c5bd987a44fdfa0a57" target="_top" xlink:title="Get max item (rightmost) in the current node.">
 <polygon fill="white" stroke="#666666" points="690.62,-637.5 564.38,-637.5 564.38,-607 690.62,-607 690.62,-637.5"/>
 <text text-anchor="start" x="572.38" y="-624" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="627.5" y="-612.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Node::GetMaxItem</text>
@@ -235,15 +265,18 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000003_Node000004" class="edge">
 <title>Node3&#45;&gt;Node4</title>
+<g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M496.98,-588.96C515.45,-593.7 535.89,-598.96 554.98,-603.86"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="553.86,-607.45 564.42,-606.55 555.6,-600.67 553.86,-607.45"/>
+</a>
+</g>
 </g>
 <!-- Node5 -->
-<g id="node5" class="node">
+<g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a731f9ae385840cf0a06d55e7f9924a94" target="_top" xlink:title="Get rightmose child of the current node.">
+<g id="a_Node000005"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a731f9ae385840cf0a06d55e7f9924a94" target="_top" xlink:title="Get rightmose child of the current node.">
 <polygon fill="white" stroke="#666666" points="705.25,-588.5 549.75,-588.5 549.75,-558 705.25,-558 705.25,-588.5"/>
 <text text-anchor="start" x="557.75" y="-575" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="627.5" y="-563.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Node::GetRightmostChild</text>
@@ -251,15 +284,18 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node3&#45;&gt;Node5 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000003_Node000005" class="edge">
 <title>Node3&#45;&gt;Node5</title>
+<g id="a_edge4_Node000003_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M514.23,-573.25C522.21,-573.25 530.35,-573.25 538.43,-573.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="538.37,-576.75 548.37,-573.25 538.37,-569.75 538.37,-576.75"/>
+</a>
+</g>
 </g>
 <!-- Node7 -->
-<g id="node7" class="node">
+<g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ac6f619a1605cb46196360889fff4529e" target="_top" xlink:title="Get leftmose child of the current node.">
+<g id="a_Node000007"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ac6f619a1605cb46196360889fff4529e" target="_top" xlink:title="Get leftmose child of the current node.">
 <polygon fill="white" stroke="#666666" points="701.88,-539.5 553.12,-539.5 553.12,-509 701.88,-509 701.88,-539.5"/>
 <text text-anchor="start" x="561.12" y="-526" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="627.5" y="-514.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Node::GetLeftmostChild</text>
@@ -267,15 +303,18 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node6&#45;&gt;Node7 -->
-<g id="edge6" class="edge">
+<g id="edge6_Node000006_Node000007" class="edge">
 <title>Node6&#45;&gt;Node7</title>
+<g id="a_edge6_Node000006_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M496.98,-490.96C515.45,-495.7 535.89,-500.96 554.98,-505.86"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="553.86,-509.45 564.42,-508.55 555.6,-502.67 553.86,-509.45"/>
+</a>
+</g>
 </g>
 <!-- Node8 -->
-<g id="node8" class="node">
+<g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a5438d0a47850f520b2262b5a42f75b71" target="_top" xlink:title="get min item (leftmost) in the current node">
+<g id="a_Node000008"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a5438d0a47850f520b2262b5a42f75b71" target="_top" xlink:title="get min item (leftmost) in the current node">
 <polygon fill="white" stroke="#666666" points="689.12,-490.5 565.88,-490.5 565.88,-460 689.12,-460 689.12,-490.5"/>
 <text text-anchor="start" x="573.88" y="-477" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="627.5" y="-465.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Node::GetMinItem</text>
@@ -283,21 +322,27 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node6&#45;&gt;Node8 -->
-<g id="edge7" class="edge">
+<g id="edge7_Node000006_Node000008" class="edge">
 <title>Node6&#45;&gt;Node8</title>
+<g id="a_edge7_Node000006_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M512.59,-475.25C526.46,-475.25 540.89,-475.25 554.62,-475.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="554.46,-478.75 564.46,-475.25 554.46,-471.75 554.46,-478.75"/>
+</a>
+</g>
 </g>
 <!-- Node12&#45;&gt;Node9 -->
-<g id="edge14" class="edge">
+<g id="edge14_Node000012_Node000009" class="edge">
 <title>Node12&#45;&gt;Node9</title>
+<g id="a_edge14_Node000012_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M478.73,-263.57C490.59,-258.3 503.11,-251.8 513.75,-244.25 532.72,-230.78 530.08,-218.68 549.75,-206.25 553.79,-203.7 558.12,-201.38 562.58,-199.28"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="563.7,-202.18 571.52,-195.03 560.95,-195.75 563.7,-202.18"/>
+</a>
+</g>
 </g>
 <!-- Node13 -->
-<g id="node13" class="node">
+<g id="Node000013" class="node">
 <title>Node13</title>
-<g id="a_node13"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a164574a9209b5df66368530d090b32c4" target="_top" xlink:title="Get the child pointer at position of index.">
+<g id="a_Node000013"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a164574a9209b5df66368530d090b32c4" target="_top" xlink:title="Get the child pointer at position of index.">
 <polygon fill="white" stroke="#666666" points="682.75,-392.5 572.25,-392.5 572.25,-362 682.75,-362 682.75,-392.5"/>
 <text text-anchor="start" x="580.25" y="-379" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="627.5" y="-367.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Node::GetChild</text>
@@ -305,15 +350,18 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node12&#45;&gt;Node13 -->
-<g id="edge12" class="edge">
+<g id="edge12_Node000012_Node000013" class="edge">
 <title>Node12&#45;&gt;Node13</title>
+<g id="a_edge12_Node000012_Node000013"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M456.75,-294.96C478.9,-311.05 515.37,-335.96 549.75,-352.25 553.81,-354.17 558.06,-356.01 562.38,-357.74"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="560.97,-361.33 571.56,-361.62 563.45,-354.79 560.97,-361.33"/>
+</a>
+</g>
 </g>
 <!-- Node14 -->
-<g id="node14" class="node">
+<g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_node14"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a4808acb43668ff8cfd6f7cb44ceedad3" target="_top" xlink:title="Get item of the \index index.">
+<g id="a_Node000014"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a4808acb43668ff8cfd6f7cb44ceedad3" target="_top" xlink:title="Get item of the \index index.">
 <polygon fill="white" stroke="#666666" points="681.25,-343.5 573.75,-343.5 573.75,-313 681.25,-313 681.25,-343.5"/>
 <text text-anchor="start" x="581.75" y="-330" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="627.5" y="-318.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Node::GetItem</text>
@@ -321,15 +369,18 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node12&#45;&gt;Node14 -->
-<g id="edge13" class="edge">
+<g id="edge13_Node000012_Node000014" class="edge">
 <title>Node12&#45;&gt;Node14</title>
+<g id="a_edge13_Node000012_Node000014"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M490.76,-293.36C513.27,-299.14 539.47,-305.88 562.82,-311.88"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="561.76,-315.48 572.32,-314.58 563.51,-308.7 561.76,-315.48"/>
+</a>
+</g>
 </g>
 <!-- Node15 -->
-<g id="node15" class="node">
+<g id="Node000015" class="node">
 <title>Node15</title>
-<g id="a_node15"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ab4e5f7b7b260bb81d9441652cc124c74" target="_top" xlink:title="Set child pointer to the position of index.">
+<g id="a_Node000015"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ab4e5f7b7b260bb81d9441652cc124c74" target="_top" xlink:title="Set child pointer to the position of index.">
 <polygon fill="white" stroke="#666666" points="682.38,-294.5 572.62,-294.5 572.62,-264 682.38,-264 682.38,-294.5"/>
 <text text-anchor="start" x="580.62" y="-281" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="627.5" y="-269.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Node::SetChild</text>
@@ -337,15 +388,18 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node12&#45;&gt;Node15 -->
-<g id="edge15" class="edge">
+<g id="edge15_Node000012_Node000015" class="edge">
 <title>Node12&#45;&gt;Node15</title>
+<g id="a_edge15_Node000012_Node000015"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M490.76,-279.25C512.88,-279.25 538.57,-279.25 561.61,-279.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="561.34,-282.75 571.34,-279.25 561.34,-275.75 561.34,-282.75"/>
+</a>
+</g>
 </g>
 <!-- Node16 -->
-<g id="node16" class="node">
+<g id="Node000016" class="node">
 <title>Node16</title>
-<g id="a_node16"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#af564fd4b0992fff69f90de201542d3d1" target="_top" xlink:title="Set the item count of the node.">
+<g id="a_Node000016"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#af564fd4b0992fff69f90de201542d3d1" target="_top" xlink:title="Set the item count of the node.">
 <polygon fill="white" stroke="#666666" points="684.25,-245.5 570.75,-245.5 570.75,-215 684.25,-215 684.25,-245.5"/>
 <text text-anchor="start" x="578.75" y="-232" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="627.5" y="-220.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Node::SetCount</text>
@@ -353,15 +407,18 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node12&#45;&gt;Node16 -->
-<g id="edge16" class="edge">
+<g id="edge16_Node000012_Node000016" class="edge">
 <title>Node12&#45;&gt;Node16</title>
+<g id="a_edge16_Node000012_Node000016"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M490.76,-265.14C512.31,-259.6 537.25,-253.19 559.83,-247.39"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="560.54,-250.56 569.35,-244.68 558.8,-243.78 560.54,-250.56"/>
+</a>
+</g>
 </g>
 <!-- Node17 -->
-<g id="node17" class="node">
+<g id="Node000017" class="node">
 <title>Node17</title>
-<g id="a_node17"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#aaa89a3016b5dd1be3552321c34343cbc" target="_top" xlink:title="Set item value at position of index.">
+<g id="a_Node000017"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#aaa89a3016b5dd1be3552321c34343cbc" target="_top" xlink:title="Set item value at position of index.">
 <polygon fill="white" stroke="#666666" points="680.88,-441.5 574.12,-441.5 574.12,-411 680.88,-411 680.88,-441.5"/>
 <text text-anchor="start" x="582.12" y="-428" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="627.5" y="-416.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Node::SetItem</text>
@@ -369,76 +426,85 @@ var sectionId = 'dynsection-12';
 </g>
 </g>
 <!-- Node12&#45;&gt;Node17 -->
-<g id="edge17" class="edge">
+<g id="edge17_Node000012_Node000017" class="edge">
 <title>Node12&#45;&gt;Node17</title>
+<g id="a_edge17_Node000012_Node000017"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M446.28,-294.72C464.36,-320.46 504.06,-372.13 549.75,-401.25 554.1,-404.02 558.79,-406.51 563.62,-408.75"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="562.12,-412.34 572.7,-412.98 564.84,-405.88 562.12,-412.34"/>
+</a>
+</g>
 </g>
 <!-- Node19&#45;&gt;Node9 -->
-<g id="edge20" class="edge">
+<g id="edge20_Node000019_Node000009" class="edge">
 <title>Node19&#45;&gt;Node9</title>
+<g id="a_edge20_Node000019_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M507.4,-185C525.33,-184.43 544.47,-183.83 562.04,-183.28"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="561.86,-186.75 571.75,-182.94 561.64,-179.76 561.86,-186.75"/>
+</a>
+</g>
 </g>
 <!-- Node19&#45;&gt;Node11 -->
-<g id="edge21" class="edge">
+<g id="edge21_Node000019_Node000011" class="edge">
 <title>Node19&#45;&gt;Node11</title>
+<g id="a_edge21_Node000019_Node000011"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M490.25,-171.56C512.48,-165.15 538.39,-157.67 561.6,-150.97"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="562.42,-154.09 571.06,-147.96 560.48,-147.37 562.42,-154.09"/>
+</a>
+</g>
 </g>
 <!-- Node20&#45;&gt;Node9 -->
-<g id="edge23" class="edge">
+<g id="edge23_Node000020_Node000009" class="edge">
 <title>Node20&#45;&gt;Node9</title>
+<g id="a_edge23_Node000020_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M465.35,-116.85C488.05,-128.52 520.42,-144.45 549.75,-156.25 554.66,-158.23 559.8,-160.16 564.98,-162.03"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="563.37,-165.52 573.96,-165.52 565.68,-158.92 563.37,-165.52"/>
+</a>
+</g>
 </g>
 <!-- Node20&#45;&gt;Node18 -->
-<g id="edge24" class="edge">
+<g id="edge24_Node000020_Node000018" class="edge">
 <title>Node20&#45;&gt;Node18</title>
+<g id="a_edge24_Node000020_Node000018"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M510.67,-90.66C522.93,-88.92 535.67,-87.12 548.02,-85.37"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="548.34,-88.71 557.75,-83.85 547.36,-81.78 548.34,-88.71"/>
+</a>
+</g>
 </g>
 </g>
 </svg>
-        <g id="navigator" transform="translate(0 0)" fill="#404254">
-                <rect fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width=".5" x="0" y="0" width="60" height="60"/>
-                <use id="zoomplus" xlink:href="#zoomPlus" x="17" y="9" onmousedown="handleZoom(evt,'in')"/>
-                <use id="zoomminus" xlink:href="#zoomMin" x="42" y="9" onmousedown="handleZoom(evt,'out')"/>
-                <use id="reset" xlink:href="#resetDef" x="30" y="36" onmousedown="handleReset()"/>
-                <g id="arrowUp" xlink:href="#dirArrow" transform="translate(30 24)" onmousedown="handlePan(0,-1)">
-                  <use xlink:href="#rim" fill="#404040">
-                        <set attributeName="fill" to="#808080" begin="arrowUp.mouseover" end="arrowUp.mouseout"/>
-                  </use>
-                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-                <g id="arrowRight" xlink:href="#dirArrow" transform="rotate(90) translate(36 -43)" onmousedown="handlePan(1,0)">
-                  <use xlink:href="#rim" fill="#404040">
-                        <set attributeName="fill" to="#808080" begin="arrowRight.mouseover" end="arrowRight.mouseout"/>
-                  </use>
-                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-                <g id="arrowDown" xlink:href="#dirArrow" transform="rotate(180) translate(-30 -48)" onmousedown="handlePan(0,1)">
-                  <use xlink:href="#rim" fill="#404040">
-                        <set attributeName="fill" to="#808080" begin="arrowDown.mouseover" end="arrowDown.mouseout"/>
-                  </use>
-                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-                <g id="arrowLeft" xlink:href="#dirArrow" transform="rotate(270) translate(-36 17)" onmousedown="handlePan(-1,0)">
-                  <use xlink:href="#rim" fill="#404040">
-                        <set attributeName="fill" to="#808080" begin="arrowLeft.mouseover" end="arrowLeft.mouseout"/>
-                  </use>
-                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-        </g>
-        <svg viewBox="0 0 15 15" width="100%" height="30px" preserveAspectRatio="xMaxYMin meet">
-         <g id="arrow_out" transform="scale(0.3 0.3)">
-          <a xlink:href="classdata__structures_1_1tree__234_1_1_tree234_a5da1be3f5b5d967ebb36a201f3ebad11_cgraph_org.svg" target="_base">
-           <rect id="button" ry="5" rx="5" y="6" x="6" height="38" width="38"
-                fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width="1.0"/>
-           <path id="arrow"
-             d="M 11.500037,31.436501 C 11.940474,20.09759 22.043105,11.32322 32.158766,21.979434 L 37.068811,17.246167 C 37.068811,17.246167 37.088388,32 37.088388,32 L 22.160133,31.978069 C 22.160133,31.978069 26.997745,27.140456 26.997745,27.140456 C 18.528582,18.264221 13.291696,25.230495 11.500037,31.436501 z"
-             style="fill:#404040;"/>
-          </a>
-         </g>
-        </svg>
+
+<g id="navigator" transform="translate(0 0)" fill="#404254">
+  <rect fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width=".5" x="0" y="0" width="60" height="60"/>
+  <use id="zoomplus" xlink:href="#zoomPlus" x="17" y="9" onmousedown="handleZoom(evt,'in')"/>
+  <use id="zoomminus" xlink:href="#zoomMin" x="42" y="9" onmousedown="handleZoom(evt,'out')"/>
+  <use id="reset" xlink:href="#resetDef" x="30" y="36" onmousedown="handleReset()"/>
+   <use id="arrowup" xlink:href="#arrowUp" x="0" y="0" onmousedown="handlePan(0,-1)"/>
+  <use id="arrowright" xlink:href="#arrowRight" x="0" y="0" onmousedown="handlePan(1,0)"/>
+  <use id="arrowdown" xlink:href="#arrowDown" x="0" y="0" onmousedown="handlePan(0,1)"/>
+  <use id="arrowleft" xlink:href="#arrowLeft" x="0" y="0" onmousedown="handlePan(-1,0)"/>
+</g>
+<svg viewBox="0 0 15 15" width="100%" height="30px" preserveAspectRatio="xMaxYMin meet">
+ <g id="arrow_out" transform="scale(0.3 0.3)">
+  <a xlink:href="classdata__structures_1_1tree__234_1_1_tree234_a5da1be3f5b5d967ebb36a201f3ebad11_cgraph_org.svg" target="_base">
+   <rect id="button" ry="5" rx="5" y="6" x="6" height="38" width="38"
+        fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width="1.0"/>
+   <path id="arrow"
+     d="M 11.500037,31.436501 C 11.940474,20.09759 22.043105,11.32322 32.158766,21.979434 L 37.068811,17.246167 C 37.068811,17.246167 37.088388,32 37.088388,32 L 22.160133,31.978069 C 22.160133,31.978069 26.997745,27.140456 26.997745,27.140456 C 18.528582,18.264221 13.291696,25.230495 11.500037,31.436501 z"
+     style="fill:#404040;"/>
+  </a>
+ </g>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

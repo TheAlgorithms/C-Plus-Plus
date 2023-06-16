@@ -1,4 +1,6 @@
 <map id="backtracking::subset_sum::number_of_subsets" name="backtracking::subset_sum::number_of_subsets">
-<area shape="rect" id="node1" title="The main function implements count of subsets." alt="" coords="5,29,181,70"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="229,37,344,63"/>
+<area shape="rect" id="Node000001" title="The main function implements count of subsets." alt="" coords="5,29,181,70"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="56,29,54,19,60,10,73,5,93,3,115,5,127,12,125,17,113,10,93,8,75,10,64,15,60,20,61,28"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="229,37,344,63"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="181,47,214,47,214,52,181,52"/>
 </map>

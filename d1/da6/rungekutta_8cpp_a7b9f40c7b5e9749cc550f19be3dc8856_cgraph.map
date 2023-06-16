@@ -1,5 +1,8 @@
 <map id="numerical_methods::runge_kutta::rungeKutta" name="numerical_methods::runge_kutta::rungeKutta">
-<area shape="rect" id="node1" title="the Runge Kutta method finds the value of integration of a function in the given limits...." alt="" coords="5,29,166,70"/>
-<area shape="rect" id="node2" href="$d1/da6/rungekutta_8cpp.html#a450497475f5607333f9aca8f88901579" title="for using the vector container" alt="" coords="214,12,277,37"/>
-<area shape="rect" id="node3" href="$d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001" title=" " alt="" coords="226,61,265,87"/>
+<area shape="rect" id="Node000001" title="the Runge Kutta method finds the value of integration of a function in the given limits...." alt="" coords="5,29,166,70"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="55,29,53,19,58,11,69,5,86,3,104,5,114,12,111,16,102,10,85,8,71,10,62,14,58,20,60,28"/>
+<area shape="rect" id="Node000002" href="$d1/da6/rungekutta_8cpp.html#a450497475f5607333f9aca8f88901579" title="for using the vector container" alt="" coords="214,12,277,37"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,34,198,29,199,34,166,40"/>
+<area shape="rect" id="Node000003" href="$d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001" title=" " alt="" coords="226,61,265,87"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,59,212,66,211,71,165,64"/>
 </map>

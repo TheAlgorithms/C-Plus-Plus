@@ -1,7 +1,11 @@
 <map id="strings/rabin_karp.cpp" name="strings/rabin_karp.cpp">
-<area shape="rect" id="node1" title="The Rabin&#45;Karp Algorithm for finding a pattern within a piece of text with complexity O(n + m)" alt="" coords="92,5,242,31"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,79,70,105"/>
-<area shape="rect" id="node3" title=" " alt="" coords="94,79,152,105"/>
-<area shape="rect" id="node4" title=" " alt="" coords="175,79,247,105"/>
-<area shape="rect" id="node5" title=" " alt="" coords="270,79,330,105"/>
+<area shape="rect" id="Node000001" title="The Rabin&#45;Karp Algorithm for finding a pattern within a piece of text with complexity O(n + m)" alt="" coords="92,5,242,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,70,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,34,74,74,71,69,144,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="94,79,152,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,33,140,68,136,65,157,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="175,79,247,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="176,30,198,65,194,68,172,33"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="270,79,330,105"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="191,29,266,69,263,74,188,34"/>
 </map>

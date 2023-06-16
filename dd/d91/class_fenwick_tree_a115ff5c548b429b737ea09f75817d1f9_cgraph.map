@@ -1,5 +1,7 @@
 <map id="FenwickTree::sum_range" name="FenwickTree::sum_range">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,174,31"/>
-<area shape="rect" id="node2" href="$dd/d91/class_fenwick_tree.html#ade1d6a3d49af9d9df33e2fb26cab1699" title=" " alt="" coords="222,5,351,31"/>
-<area shape="rect" id="node3" href="$dd/d91/class_fenwick_tree.html#aaae15ea71455315e257baa11017cec10" title=" " alt="" coords="399,5,536,31"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,174,31"/>
+<area shape="rect" id="Node000002" href="$dd/d91/class_fenwick_tree.html#ade1d6a3d49af9d9df33e2fb26cab1699" title=" " alt="" coords="222,5,351,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,16,207,16,207,21,174,21"/>
+<area shape="rect" id="Node000003" href="$dd/d91/class_fenwick_tree.html#aaae15ea71455315e257baa11017cec10" title=" " alt="" coords="399,5,536,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="352,16,384,16,384,21,352,21"/>
 </map>

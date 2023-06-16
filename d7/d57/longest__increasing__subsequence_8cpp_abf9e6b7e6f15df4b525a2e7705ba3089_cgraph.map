@@ -1,7 +1,13 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,29,55,55"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="249,5,320,31"/>
-<area shape="rect" id="node3" href="$dd/d24/namespacedynamic__programming.html#a0a2215194e58786c34db1ccaf8031079" title="Calculate the longest increasing subsequence for the specified numbers." alt="" coords="194,55,374,80"/>
-<area shape="rect" id="node5" href="$d7/d57/longest__increasing__subsequence_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,29,146,55"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="422,55,495,80"/>
+<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,29,55,55"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="249,5,320,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,29,102,14,171,9,234,10,234,16,171,14,103,19,56,34"/>
+<area shape="rect" id="Node000003" href="$dd/d24/namespacedynamic__programming.html#a0a2215194e58786c34db1ccaf8031079" title="Calculate the longest increasing subsequence for the specified numbers." alt="" coords="194,55,374,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,50,103,65,179,71,179,76,102,70,54,56"/>
+<area shape="rect" id="Node000005" href="$d7/d57/longest__increasing__subsequence_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,29,146,55"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="55,40,88,40,88,45,55,45"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="422,55,495,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="375,65,407,65,407,70,375,70"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="146,36,233,23,234,28,147,42"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="147,43,185,49,185,54,146,48"/>
 </map>

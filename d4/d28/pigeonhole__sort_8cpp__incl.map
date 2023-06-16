@@ -1,7 +1,11 @@
 <map id="sorting/pigeonhole_sort.cpp" name="sorting/pigeonhole_sort.cpp">
-<area shape="rect" id="node1" title="Implementation of [Pigeonhole Sort algorithm] (https://en.wikipedia.org/wiki/Pigeonhole_sort)" alt="" coords="106,5,232,46"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,94,80,120"/>
-<area shape="rect" id="node3" title=" " alt="" coords="104,94,154,120"/>
-<area shape="rect" id="node4" title=" " alt="" coords="178,94,243,120"/>
-<area shape="rect" id="node5" title=" " alt="" coords="267,94,338,120"/>
+<area shape="rect" id="Node000001" title="Implementation of [Pigeonhole Sort algorithm] (https://en.wikipedia.org/wiki/Pigeonhole_sort)" alt="" coords="106,5,232,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,80,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,49,75,88,73,84,136,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="104,94,154,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,48,144,82,139,79,157,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="178,94,243,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,45,200,79,195,82,177,48"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="267,94,338,120"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="204,44,271,84,268,88,201,49"/>
 </map>

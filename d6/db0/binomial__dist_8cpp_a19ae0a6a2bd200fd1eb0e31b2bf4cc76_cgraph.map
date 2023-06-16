@@ -1,5 +1,7 @@
 <map id="binomial_x_successes" name="binomial_x_successes">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,159,56"/>
-<area shape="rect" id="node2" href="$d6/db0/binomial__dist_8cpp.html#a78d36635232e54b5d71fcbf1eac9a49a" title=" " alt="" coords="221,5,264,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="207,55,278,80"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,159,56"/>
+<area shape="rect" id="Node000002" href="$d6/db0/binomial__dist_8cpp.html#a78d36635232e54b5d71fcbf1eac9a49a" title=" " alt="" coords="221,5,264,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,29,206,21,207,26,159,34"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="207,55,278,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,52,193,57,192,63,159,58"/>
 </map>

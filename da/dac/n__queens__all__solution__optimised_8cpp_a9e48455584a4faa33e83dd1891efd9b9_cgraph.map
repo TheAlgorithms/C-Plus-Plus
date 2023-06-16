@@ -1,3 +1,4 @@
 <map id="backtracking::n_queens_optimized::CanIMove" name="backtracking::n_queens_optimized::CanIMove">
-<area shape="rect" id="node1" title=" " alt="" coords="5,29,165,70"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,165,70"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="54,29,53,19,58,11,69,5,85,3,103,5,114,12,111,16,101,10,85,8,70,10,61,14,58,20,59,28"/>
 </map>

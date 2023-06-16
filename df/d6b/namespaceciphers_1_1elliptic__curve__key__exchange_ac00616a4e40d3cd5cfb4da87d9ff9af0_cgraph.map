@@ -1,5 +1,7 @@
 <map id="ciphers::elliptic_curve_key_exchange::exp" name="ciphers::elliptic_curve_key_exchange::exp">
-<area shape="rect" id="node1" title="This function calculates number raised to exponent power under modulo mod using Modular Exponentiatio..." alt="" coords="5,5,153,46"/>
-<area shape="rect" id="node2" href="$df/def/power__for__huge__numbers_8cpp.html#ae249a2af508aa94266023ce8aa81426f" title=" " alt="" coords="201,13,257,39"/>
-<area shape="rect" id="node3" href="$df/def/power__for__huge__numbers_8cpp.html#aa141a7904f0c4668bac112d652a3acf9" title=" " alt="" coords="305,13,371,39"/>
+<area shape="rect" id="Node000001" title="This function calculates number raised to exponent power under modulo mod using Modular Exponentiatio..." alt="" coords="5,5,153,46"/>
+<area shape="rect" id="Node000002" href="$df/def/power__for__huge__numbers_8cpp.html#ae249a2af508aa94266023ce8aa81426f" title=" " alt="" coords="201,13,257,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,23,186,23,186,28,153,28"/>
+<area shape="rect" id="Node000003" href="$df/def/power__for__huge__numbers_8cpp.html#aa141a7904f0c4668bac112d652a3acf9" title=" " alt="" coords="305,13,371,39"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="258,23,290,23,290,28,258,28"/>
 </map>

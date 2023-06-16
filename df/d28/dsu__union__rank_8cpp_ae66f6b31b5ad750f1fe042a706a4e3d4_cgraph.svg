@@ -6,166 +6,230 @@
 <!-- Title: main Pages: 1 -->
 <svg width="451pt" height="139pt"
  viewBox="0.00 0.00 451.00 139.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 135.25)">
 <title>main</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Main function.">
+<g id="a_Node000001"><a xlink:title="Main function.">
 <polygon fill="#999999" stroke="#666666" points="37,-93.25 0,-93.25 0,-74 37,-74 37,-93.25"/>
 <text text-anchor="middle" x="18.5" y="-79.75" font-family="Helvetica,sans-Serif" font-size="10.00">main</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../df/d28/dsu__union__rank_8cpp.html#ae7880ce913f3058a35ff106d5be9e243" target="_top" xlink:title="Self&#45;implementations, 1st test.">
+<g id="a_Node000002"><a xlink:href="../../df/d28/dsu__union__rank_8cpp.html#ae7880ce913f3058a35ff106d5be9e243" target="_top" xlink:title="Self&#45;implementations, 1st test.">
 <polygon fill="white" stroke="#666666" points="110.75,-112.25 73,-112.25 73,-93 110.75,-93 110.75,-112.25"/>
 <text text-anchor="middle" x="91.88" y="-98.75" font-family="Helvetica,sans-Serif" font-size="10.00">test1</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M37.14,-88.32C44.81,-90.36 53.98,-92.8 62.55,-95.09"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="61.38,-98.66 71.94,-97.85 63.18,-91.9 61.38,-98.66"/>
+</a>
+</g>
 </g>
 <!-- Node9 -->
-<g id="node9" class="node">
+<g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="../../df/d28/dsu__union__rank_8cpp.html#a45d94ead4cf4e1ff9f87c38bc99f59ae" target="_top" xlink:title="Self&#45;implementations, 2nd test.">
+<g id="a_Node000009"><a xlink:href="../../df/d28/dsu__union__rank_8cpp.html#a45d94ead4cf4e1ff9f87c38bc99f59ae" target="_top" xlink:title="Self&#45;implementations, 2nd test.">
 <polygon fill="white" stroke="#666666" points="110.75,-75.25 73,-75.25 73,-56 110.75,-56 110.75,-75.25"/>
 <text text-anchor="middle" x="91.88" y="-61.75" font-family="Helvetica,sans-Serif" font-size="10.00">test2</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node9 -->
-<g id="edge10" class="edge">
+<g id="edge10_Node000001_Node000009" class="edge">
 <title>Node1&#45;&gt;Node9</title>
+<g id="a_edge10_Node000001_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M37.14,-79.18C44.81,-77.24 53.98,-74.93 62.55,-72.77"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="63.1,-75.99 71.94,-70.15 61.39,-69.2 63.1,-75.99"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/at.html#" xlink:title=" ">
+<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/at.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="227.62,-131.25 150.88,-131.25 150.88,-112 227.62,-112 227.62,-131.25"/>
 <text text-anchor="middle" x="189.25" y="-117.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::at</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
+<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M110.81,-106.2C119.14,-107.86 129.49,-109.92 139.88,-111.99"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="139.15,-115.61 149.64,-114.13 140.52,-108.75 139.15,-115.61"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="../../dd/d1f/classdsu.html#ab8ee27083a3c2e2df80755165a2ec280" target="_top" xlink:title="Method to print all the parents of i, or the path from i to representative.">
+<g id="a_Node000004"><a xlink:href="../../dd/d1f/classdsu.html#ab8ee27083a3c2e2df80755165a2ec280" target="_top" xlink:title="Method to print all the parents of i, or the path from i to representative.">
 <polygon fill="white" stroke="#666666" points="231.75,-94.25 146.75,-94.25 146.75,-75 231.75,-75 231.75,-94.25"/>
 <text text-anchor="middle" x="189.25" y="-80.75" font-family="Helvetica,sans-Serif" font-size="10.00">dsu::getParents</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000002_Node000004" class="edge">
 <title>Node2&#45;&gt;Node4</title>
+<g id="a_edge3_Node000002_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M110.81,-99.24C118.03,-97.88 126.75,-96.23 135.71,-94.54"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="136.08,-97.84 145.25,-92.55 134.78,-90.97 136.08,-97.84"/>
+</a>
+</g>
 </g>
 <!-- Node5 -->
-<g id="node5" class="node">
+<g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="../../dd/d1f/classdsu.html#a81897528bdb53fd5e796d75d7dbc430f" target="_top" xlink:title="Method that combines two disjoint sets to which i and j belongs to and make a single set having a com...">
+<g id="a_Node000005"><a xlink:href="../../dd/d1f/classdsu.html#a81897528bdb53fd5e796d75d7dbc430f" target="_top" xlink:title="Method that combines two disjoint sets to which i and j belongs to and make a single set having a com...">
 <polygon fill="white" stroke="#666666" points="227.25,-57.25 151.25,-57.25 151.25,-38 227.25,-38 227.25,-57.25"/>
 <text text-anchor="middle" x="189.25" y="-43.75" font-family="Helvetica,sans-Serif" font-size="10.00">dsu::unionSet</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node5 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000002_Node000005" class="edge">
 <title>Node2&#45;&gt;Node5</title>
+<g id="a_edge4_Node000002_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M105.71,-92.77C116.35,-84.85 132.06,-73.76 146.75,-65.62 148.74,-64.53 150.8,-63.45 152.91,-62.39"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="154.3,-65.14 161.86,-57.72 151.32,-58.8 154.3,-65.14"/>
+</a>
+</g>
 </g>
 <!-- Node6 -->
-<g id="node6" class="node">
+<g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="../../dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" target="_top" xlink:title="Method to find the representative of the set to which i belongs to, T(n) = O(1)">
+<g id="a_Node000006"><a xlink:href="../../dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" target="_top" xlink:title="Method to find the representative of the set to which i belongs to, T(n) = O(1)">
 <polygon fill="white" stroke="#666666" points="443,-76.25 374.5,-76.25 374.5,-57 443,-57 443,-76.25"/>
 <text text-anchor="middle" x="408.75" y="-62.75" font-family="Helvetica,sans-Serif" font-size="10.00">dsu::findSet</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
-<g id="edge5" class="edge">
+<g id="edge5_Node000005_Node000006" class="edge">
 <title>Node5&#45;&gt;Node6</title>
+<g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M227.64,-50.89C265.28,-54.18 323.33,-59.25 363.3,-62.74"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="362.79,-66.3 373.06,-63.68 363.4,-59.32 362.79,-66.3"/>
+</a>
+</g>
 </g>
 <!-- Node7 -->
-<g id="node7" class="node">
+<g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="../../dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303" target="_top" xlink:title="A utility function which check whether i and j belongs to same set or not.">
+<g id="a_Node000007"><a xlink:href="../../dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303" target="_top" xlink:title="A utility function which check whether i and j belongs to same set or not.">
 <polygon fill="white" stroke="#666666" points="338.5,-95.25 267.75,-95.25 267.75,-76 338.5,-76 338.5,-95.25"/>
 <text text-anchor="middle" x="303.12" y="-81.75" font-family="Helvetica,sans-Serif" font-size="10.00">dsu::isSame</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node7 -->
-<g id="edge7" class="edge">
+<g id="edge7_Node000005_Node000007" class="edge">
 <title>Node5&#45;&gt;Node7</title>
+<g id="a_edge7_Node000005_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M219.94,-57.71C232.94,-62.12 248.38,-67.37 262.35,-72.12"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="261.09,-75.72 271.69,-75.63 263.34,-69.1 261.09,-75.72"/>
+</a>
+</g>
 </g>
 <!-- Node8 -->
-<g id="node8" class="node">
+<g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/swap.html#" xlink:title=" ">
+<g id="a_Node000008"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/swap.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="332.5,-19.25 273.75,-19.25 273.75,0 332.5,0 332.5,-19.25"/>
 <text text-anchor="middle" x="303.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::swap</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node8 -->
-<g id="edge9" class="edge">
+<g id="edge9_Node000005_Node000008" class="edge">
 <title>Node5&#45;&gt;Node8</title>
+<g id="a_edge9_Node000005_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M219.94,-37.54C233.27,-33.01 249.18,-27.61 263.43,-22.77"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="264.12,-25.89 272.46,-19.36 261.87,-19.26 264.12,-25.89"/>
+</a>
+</g>
 </g>
 <!-- Node6&#45;&gt;Node6 -->
-<g id="edge6" class="edge">
+<g id="edge6_Node000006_Node000006" class="edge">
 <title>Node6&#45;&gt;Node6</title>
+<g id="a_edge6_Node000006_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M392.21,-76.54C384.67,-85.15 390.18,-94.25 408.75,-94.25 419.48,-94.25 425.85,-91.21 427.86,-86.98"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="431.08,-86.41 425.29,-77.54 424.28,-88.09 431.08,-86.41"/>
+</a>
+</g>
 </g>
 <!-- Node7&#45;&gt;Node6 -->
-<g id="edge8" class="edge">
+<g id="edge8_Node000007_Node000006" class="edge">
 <title>Node7&#45;&gt;Node6</title>
+<g id="a_edge8_Node000007_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M338.92,-79.25C346.85,-77.79 355.38,-76.23 363.64,-74.71"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="364.07,-78.01 373.28,-72.76 362.81,-71.12 364.07,-78.01"/>
+</a>
+</g>
 </g>
 <!-- Node9&#45;&gt;Node3 -->
-<g id="edge11" class="edge">
+<g id="edge11_Node000009_Node000003" class="edge">
 <title>Node9&#45;&gt;Node3</title>
+<g id="a_edge11_Node000009_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M105.24,-75.45C115.86,-83.62 131.78,-95.22 146.75,-103.62 148.73,-104.74 150.79,-105.83 152.89,-106.89"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="151.29,-110.48 161.83,-111.58 154.28,-104.15 151.29,-110.48"/>
+</a>
+</g>
 </g>
 <!-- Node9&#45;&gt;Node4 -->
-<g id="edge12" class="edge">
+<g id="edge12_Node000009_Node000004" class="edge">
 <title>Node9&#45;&gt;Node4</title>
+<g id="a_edge12_Node000009_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M110.81,-69.2C118.03,-70.64 126.75,-72.37 135.71,-74.16"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="134.76,-77.74 145.25,-76.26 136.13,-70.87 134.76,-77.74"/>
+</a>
+</g>
 </g>
 <!-- Node9&#45;&gt;Node5 -->
-<g id="edge13" class="edge">
+<g id="edge13_Node000009_Node000005" class="edge">
 <title>Node9&#45;&gt;Node5</title>
+<g id="a_edge13_Node000009_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M110.81,-62.24C119.31,-60.64 129.91,-58.64 140.51,-56.63"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="140.86,-59.94 150.04,-54.65 139.56,-53.06 140.86,-59.94"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

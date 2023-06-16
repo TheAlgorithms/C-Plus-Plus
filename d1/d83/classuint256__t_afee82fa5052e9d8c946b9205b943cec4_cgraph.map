@@ -1,4 +1,5 @@
 <map id="uint256_t::__get_integer_from_string" name="uint256_t::__get_integer_from_string">
-<area shape="rect" id="node1" title="First and second half of 256 bit number." alt="" coords="5,5,166,46"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="214,13,325,39"/>
+<area shape="rect" id="Node000001" title="First and second half of 256 bit number." alt="" coords="5,5,166,46"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="214,13,325,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,23,198,23,198,28,166,28"/>
 </map>

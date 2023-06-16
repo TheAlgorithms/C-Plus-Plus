@@ -1,6 +1,10 @@
 <map id="divide_and_conquer::karatsuba_algorithm::add_strings" name="divide_and_conquer::karatsuba_algorithm::add_strings">
-<area shape="rect" id="node1" title="Binary addition." alt="" coords="5,40,152,95"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/at.html#" title=" " alt="" coords="206,5,305,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="219,55,292,80"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="200,104,311,130"/>
+<area shape="rect" id="Node000001" title="Binary addition." alt="" coords="5,40,152,95"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="43,39,44,29,50,21,62,15,79,13,98,16,109,23,107,28,96,21,78,18,63,20,53,25,49,31,49,39"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/at.html#" title=" " alt="" coords="206,5,305,31"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="151,44,192,33,193,38,153,50"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="219,55,292,80"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="152,65,204,65,204,70,152,70"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="200,104,311,130"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="153,85,193,97,192,102,151,91"/>
 </map>

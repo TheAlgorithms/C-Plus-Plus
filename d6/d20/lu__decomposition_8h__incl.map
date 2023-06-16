@@ -1,6 +1,9 @@
 <map id="numerical_methods/lu_decomposition.h" name="numerical_methods/lu_decomposition.h">
-<area shape="rect" id="node1" title="Functions associated with LU Decomposition of a square matrix." alt="" coords="60,5,209,46"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,94,77,120"/>
-<area shape="rect" id="node3" title=" " alt="" coords="101,94,168,120"/>
-<area shape="rect" id="node4" title=" " alt="" coords="192,94,250,120"/>
+<area shape="rect" id="Node000001" title="Functions associated with LU Decomposition of a square matrix." alt="" coords="60,5,209,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,77,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,48,68,86,65,82,110,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="101,94,168,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="137,46,137,79,132,79,132,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="192,94,250,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="158,44,199,82,195,86,154,48"/>
 </map>

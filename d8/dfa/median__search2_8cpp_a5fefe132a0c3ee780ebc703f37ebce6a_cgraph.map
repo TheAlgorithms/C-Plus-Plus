@@ -1,3 +1,4 @@
 <map id="search::median_search2::middleNode" name="search::median_search2::middleNode">
-<area shape="rect" id="node1" title=" " alt="" coords="5,29,169,70"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,169,70"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="55,29,54,19,59,11,70,5,87,3,105,5,116,12,113,16,104,10,87,8,72,10,63,14,59,20,61,28"/>
 </map>

@@ -9,9 +9,9 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 34.5)">
 <title>Graphical Class Hierarchy</title>
 <!-- Node0 -->
-<g id="node1" class="node">
+<g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html" target="_top" xlink:title="Class defining the structure of trie node and containing the methods to perform operations on them.">
+<g id="a_Node000000"><a xlink:href="d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html" target="_top" xlink:title="Class defining the structure of trie node and containing the methods to perform operations on them.">
 <polygon fill="white" stroke="#666666" points="144.25,-30.5 0,-30.5 0,0 144.25,0 144.25,-30.5"/>
 <text text-anchor="start" x="8" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">operations_on_datastructures</text>
 <text text-anchor="middle" x="72.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">::trie_operations::Tnode</text>

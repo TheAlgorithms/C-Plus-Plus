@@ -1,5 +1,8 @@
 <map id="divide_and_conquer::strassens_multiplication::Matrix::operator&#45;" name="divide_and_conquer::strassens_multiplication::Matrix::operator&#45;">
-<area shape="rect" id="node1" title="Subtract two matrices and returns a new matrix." alt="" coords="5,39,175,94"/>
-<area shape="rect" id="node2" href="$dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#ae4e183ec8eab778cb243e4ae0b22a0f1" title="Get the matrix shape." alt="" coords="223,5,392,61"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="440,54,555,79"/>
+<area shape="rect" id="Node000001" title="Subtract two matrices and returns a new matrix." alt="" coords="5,39,175,94"/>
+<area shape="rect" id="Node000002" href="$dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#ae4e183ec8eab778cb243e4ae0b22a0f1" title="Get the matrix shape." alt="" coords="223,5,392,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,51,207,46,208,51,175,56"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="440,54,555,79"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="175,69,223,71,392,71,425,69,425,74,392,76,223,76,175,74"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="393,45,426,51,425,56,392,51"/>
 </map>

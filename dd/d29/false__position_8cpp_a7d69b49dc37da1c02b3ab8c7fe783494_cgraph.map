@@ -1,4 +1,7 @@
 <map id="numerical_methods::false_position::regula_falsi" name="numerical_methods::false_position::regula_falsi">
-<area shape="rect" id="node1" title="This function finds root of the equation in given interval i.e. (x1,x2)." alt="" coords="5,29,181,70"/>
-<area shape="rect" id="node2" href="$dd/d29/false__position_8cpp.html#a85a6ec58b5064d63d4f0df3854496713" title="This function gives the value of f(x) for given x." alt="" coords="229,29,371,70"/>
+<area shape="rect" id="Node000001" title="This function finds root of the equation in given interval i.e. (x1,x2)." alt="" coords="5,29,181,70"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="54,29,52,19,58,10,72,5,93,3,116,5,129,12,127,17,115,10,93,8,73,10,62,15,57,20,59,28"/>
+<area shape="rect" id="Node000002" href="$dd/d29/false__position_8cpp.html#a85a6ec58b5064d63d4f0df3854496713" title="This function gives the value of f(x) for given x." alt="" coords="229,29,371,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,47,214,47,214,52,181,52"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="261,29,259,19,265,10,279,5,300,3,323,5,336,12,334,17,321,10,300,8,280,10,268,15,264,20,266,28"/>
 </map>

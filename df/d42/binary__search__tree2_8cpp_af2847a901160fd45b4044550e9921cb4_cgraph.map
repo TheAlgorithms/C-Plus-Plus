@@ -1,6 +1,11 @@
 <map id="test_find_min" name="test_find_min">
-<area shape="rect" id="node1" title="Function for testing find_min()." alt="" coords="5,87,105,112"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="183,5,254,31"/>
-<area shape="rect" id="node3" href="$d9/dde/classbinary__search__tree.html#af9a2c7c187a7ca3142c77ce342ef3153" title="Recursive function to find the minimum value in the BST." alt="" coords="153,79,284,120"/>
-<area shape="rect" id="node4" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="153,169,284,209"/>
+<area shape="rect" id="Node000001" title="Function for testing find_min()." alt="" coords="5,87,105,112"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="183,5,254,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,84,151,41,168,34,170,39,154,46,79,88"/>
+<area shape="rect" id="Node000003" href="$d9/dde/classbinary__search__tree.html#af9a2c7c187a7ca3142c77ce342ef3153" title="Recursive function to find the minimum value in the BST." alt="" coords="153,79,284,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="105,97,138,97,138,102,105,102"/>
+<area shape="rect" id="Node000004" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="153,169,284,209"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="82,111,168,159,166,163,79,115"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="187,79,185,69,190,60,202,55,218,53,237,55,248,62,245,66,235,60,218,58,203,60,194,64,191,70,192,78"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="187,168,185,159,190,150,202,144,218,142,237,144,248,151,245,156,235,149,218,147,203,149,194,154,191,160,192,167"/>
 </map>

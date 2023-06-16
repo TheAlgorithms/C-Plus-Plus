@@ -6,36 +6,49 @@
 <!-- Title: tests Pages: 1 -->
 <svg width="485pt" height="122pt"
  viewBox="0.00 0.00 484.50 122.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 118.25)">
 <title>tests</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="37.75,-92.25 0,-92.25 0,-73 37.75,-73 37.75,-92.25"/>
 <text text-anchor="middle" x="18.88" y="-78.75" font-family="Helvetica,sans-Serif" font-size="10.00">tests</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d8/d69/classgraph_1_1_h_k_graph.html#a3b49011c09cf90a116ab53bef61cd95a" target="_top" xlink:title="function to add edge from u to v">
+<g id="a_Node000002"><a xlink:href="../../d8/d69/classgraph_1_1_h_k_graph.html#a3b49011c09cf90a116ab53bef61cd95a" target="_top" xlink:title="function to add edge from u to v">
 <polygon fill="white" stroke="#666666" points="204.5,-114.25 73.75,-114.25 73.75,-95 204.5,-95 204.5,-114.25"/>
 <text text-anchor="middle" x="139.12" y="-100.75" font-family="Helvetica,sans-Serif" font-size="10.00">graph::HKGraph::addEdge</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M38.09,-86.01C47.71,-87.8 60.16,-90.12 72.99,-92.51"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="72.33,-96.13 82.8,-94.52 73.61,-89.25 72.33,-96.13"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="../../d8/d69/classgraph_1_1_h_k_graph.html#a9dbda80d02bdc26c3e8ff7330c9be75d" target="_top" xlink:title="This function counts the number of augmenting paths between left and right sides of the Bipartite gra...">
+<g id="a_Node000004"><a xlink:href="../../d8/d69/classgraph_1_1_h_k_graph.html#a9dbda80d02bdc26c3e8ff7330c9be75d" target="_top" xlink:title="This function counts the number of augmenting paths between left and right sides of the Bipartite gra...">
 <polygon fill="white" stroke="#666666" points="203,-76.88 75.25,-76.88 75.25,-46.38 203,-46.38 203,-76.88"/>
 <text text-anchor="start" x="83.25" y="-63.38" font-family="Helvetica,sans-Serif" font-size="10.00">graph::HKGraph::hopcroft</text>
 <text text-anchor="middle" x="139.12" y="-52.12" font-family="Helvetica,sans-Serif" font-size="10.00">KarpAlgorithm</text>
@@ -43,82 +56,118 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
+<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M38.09,-79.39C45.51,-78.07 54.62,-76.45 64.29,-74.74"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="64.72,-78.04 73.95,-72.84 63.49,-71.15 64.72,-78.04"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
+<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="356.25,-114.25 240.5,-114.25 240.5,-95 356.25,-95 356.25,-114.25"/>
 <text text-anchor="middle" x="298.38" y="-100.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::push_back</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
+<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M204.99,-104.62C213.02,-104.62 221.24,-104.62 229.32,-104.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="229.2,-108.13 239.2,-104.62 229.2,-101.13 229.2,-108.13"/>
+</a>
+</g>
 </g>
 <!-- Node5 -->
-<g id="node5" class="node">
+<g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="../../d8/d69/classgraph_1_1_h_k_graph.html#a7491add14d9fc04f679114ca6d6f0f93" target="_top" xlink:title="This function checks for the possibility of augmented path availability.">
+<g id="a_Node000005"><a xlink:href="../../d8/d69/classgraph_1_1_h_k_graph.html#a7491add14d9fc04f679114ca6d6f0f93" target="_top" xlink:title="This function checks for the possibility of augmented path availability.">
 <polygon fill="white" stroke="#666666" points="351.38,-74.25 245.38,-74.25 245.38,-55 351.38,-55 351.38,-74.25"/>
 <text text-anchor="middle" x="298.38" y="-60.75" font-family="Helvetica,sans-Serif" font-size="10.00">graph::HKGraph::bfs</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000004_Node000005" class="edge">
 <title>Node4&#45;&gt;Node5</title>
+<g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M203.18,-62.83C213.34,-63.02 223.87,-63.22 234.04,-63.42"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="233.84,-66.93 243.91,-63.62 233.98,-59.93 233.84,-66.93"/>
+</a>
+</g>
 </g>
 <!-- Node7 -->
-<g id="node7" class="node">
+<g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="../../d8/d69/classgraph_1_1_h_k_graph.html#ae794950cb3407b6b47d3dc986cf714c0" target="_top" xlink:title="This functions checks whether an augmenting path is available exists beginning with free vertex u.">
+<g id="a_Node000007"><a xlink:href="../../d8/d69/classgraph_1_1_h_k_graph.html#ae794950cb3407b6b47d3dc986cf714c0" target="_top" xlink:title="This functions checks whether an augmenting path is available exists beginning with free vertex u.">
 <polygon fill="white" stroke="#666666" points="351.38,-19.25 245.38,-19.25 245.38,0 351.38,0 351.38,-19.25"/>
 <text text-anchor="middle" x="298.38" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">graph::HKGraph::dfs</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node7 -->
-<g id="edge6" class="edge">
+<g id="edge6_Node000004_Node000007" class="edge">
 <title>Node4&#45;&gt;Node7</title>
+<g id="a_edge6_Node000004_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M187.73,-45.88C209.69,-38.62 235.5,-30.09 256.56,-23.12"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="257.39,-26.2 265.78,-19.74 255.19,-19.56 257.39,-26.2"/>
+</a>
+</g>
 </g>
 <!-- Node6 -->
-<g id="node6" class="node">
+<g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/end.html#" xlink:title=" ">
+<g id="a_Node000006"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/end.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="476.5,-46.25 392.25,-46.25 392.25,-27 476.5,-27 476.5,-46.25"/>
 <text text-anchor="middle" x="434.38" y="-32.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::end</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
-<g id="edge5" class="edge">
+<g id="edge5_Node000005_Node000006" class="edge">
 <title>Node5&#45;&gt;Node6</title>
+<g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M347.75,-54.52C358.77,-52.21 370.52,-49.76 381.68,-47.43"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="382.07,-50.71 391.15,-45.24 380.64,-43.86 382.07,-50.71"/>
+</a>
+</g>
 </g>
 <!-- Node7&#45;&gt;Node6 -->
-<g id="edge8" class="edge">
+<g id="edge8_Node000007_Node000006" class="edge">
 <title>Node7&#45;&gt;Node6</title>
+<g id="a_edge8_Node000007_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M349.27,-19.68C359.65,-21.77 370.62,-23.98 381.09,-26.09"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="380.27,-29.7 390.77,-28.24 381.66,-22.84 380.27,-29.7"/>
+</a>
+</g>
 </g>
 <!-- Node7&#45;&gt;Node7 -->
-<g id="edge7" class="edge">
+<g id="edge7_Node000007_Node000007" class="edge">
 <title>Node7&#45;&gt;Node7</title>
+<g id="a_edge7_Node000007_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M277.08,-19.54C267.37,-28.15 274.47,-37.25 298.38,-37.25 312.2,-37.25 320.4,-34.21 322.98,-29.98"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="326.03,-29.01 319.67,-20.54 319.36,-31.13 326.03,-29.01"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

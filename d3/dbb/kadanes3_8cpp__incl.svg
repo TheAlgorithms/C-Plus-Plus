@@ -6,76 +6,113 @@
 <!-- Title: others/kadanes3.cpp Pages: 1 -->
 <svg width="246pt" height="83pt"
  viewBox="0.00 0.00 245.62 82.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 78.5)">
 <title>others/kadanes3.cpp</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Efficient implementation for maximum contiguous subarray sum by Kadane&#39;s algorithm.">
+<g id="a_Node000001"><a xlink:title="Efficient implementation for maximum contiguous subarray sum by Kadane&#39;s algorithm.">
 <polygon fill="#999999" stroke="#666666" points="165.25,-74.5 58.5,-74.5 58.5,-55.25 165.25,-55.25 165.25,-74.5"/>
 <text text-anchor="middle" x="111.88" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">others/kadanes3.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="37.75,-19.25 0,-19.25 0,0 37.75,0 37.75,-19.25"/>
 <text text-anchor="middle" x="18.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">array</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M96.1,-54.84C81.8,-46.66 60.49,-34.46 43.88,-24.94"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="46.15,-21.63 35.73,-19.7 42.67,-27.71 46.15,-21.63"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:title=" ">
+<g id="a_Node000003"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="104,-19.25 55.75,-19.25 55.75,0 104,0 104,-19.25"/>
 <text text-anchor="middle" x="79.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">cassert</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M106.59,-55.08C102.31,-47.96 96.13,-37.68 90.8,-28.8"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="93.42,-27.38 85.27,-20.61 87.42,-30.98 93.42,-27.38"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:title=" ">
+<g id="a_Node000004"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="166.12,-19.25 121.62,-19.25 121.62,0 166.12,0 166.12,-19.25"/>
 <text text-anchor="middle" x="143.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">climits</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
+<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M117.16,-55.08C121.44,-47.96 127.62,-37.68 132.95,-28.8"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="136.33,-30.98 138.48,-20.61 130.33,-27.38 136.33,-30.98"/>
+</a>
+</g>
 </g>
 <!-- Node5 -->
-<g id="node5" class="node">
+<g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:title=" ">
+<g id="a_Node000005"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="237.62,-19.25 184.12,-19.25 184.12,0 237.62,0 237.62,-19.25"/>
 <text text-anchor="middle" x="210.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">iostream</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000001_Node000005" class="edge">
 <title>Node1&#45;&gt;Node5</title>
+<g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M128.67,-54.84C144.03,-46.58 166.99,-34.23 184.75,-24.68"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="185.85,-27.52 193,-19.7 182.53,-21.36 185.85,-27.52"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

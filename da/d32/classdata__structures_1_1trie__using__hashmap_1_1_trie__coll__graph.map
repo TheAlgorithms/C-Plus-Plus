@@ -1,6 +1,10 @@
 <map id="data_structures::trie_using_hashmap::Trie" name="data_structures::trie_using_hashmap::Trie">
-<area shape="rect" id="node1" title="Trie class, implementation of trie using hashmap in each trie node for all the characters of char16_t..." alt="" coords="286,5,435,46"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="5,85,168,140"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_map.html" title=" " alt="" coords="277,70,444,155"/>
-<area shape="rect" id="node3" href="$d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html" title="struct representing a trie node." alt="" coords="541,152,729,193"/>
+<area shape="rect" id="Node000001" title="Trie class, implementation of trie using hashmap in each trie node for all the characters of char16_t..." alt="" coords="286,5,435,46"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="5,85,168,140"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,80,293,44,294,49,183,85"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_map.html" title=" " alt="" coords="277,70,444,155"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="183,110,276,110,276,115,183,115"/>
+<area shape="rect" id="Node000003" href="$d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html" title="struct representing a trie node." alt="" coords="541,152,729,193"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="526,189,406,195,340,193,276,185,208,167,147,143,149,138,210,162,277,179,341,187,406,190,526,184"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="459,131,541,149,540,154,458,136"/>
 </map>

@@ -1,3 +1,4 @@
 <map id="backtracking::knight_tour::issafe" name="backtracking::knight_tour::issafe">
-<area shape="rect" id="node1" title=" " alt="" coords="5,29,144,70"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,144,70"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="47,29,46,20,50,11,60,5,75,3,90,5,100,12,96,16,88,10,74,8,62,10,54,14,51,20,53,28"/>
 </map>
