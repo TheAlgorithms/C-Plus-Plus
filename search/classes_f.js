@@ -3,7 +3,7 @@ var searchData=
   ['packaged_5ftask_0',['packaged_task',['http://en.cppreference.com/w/cpp/thread/packaged_task.html',0,'std']]],
   ['pair_1',['pair',['http://en.cppreference.com/w/cpp/utility/pair.html',0,'std']]],
   ['pair_3c_20int8_5ft_2c_20int8_5ft_20_3e_2',['pair&lt; int8_t, int8_t &gt;',['http://en.cppreference.com/w/cpp/utility/pair.html',0,'std']]],
-  ['pattern_3',['pattern',['http://en.cppreference.com/w/cpp/locale/money_base.html',0,'std::money_base::pattern'],['http://en.cppreference.com/w/cpp/locale/money_base.html',0,'std::money_get::pattern'],['http://en.cppreference.com/w/cpp/locale/money_base.html',0,'std::money_put::pattern'],['http://en.cppreference.com/w/cpp/locale/money_base.html',0,'std::moneypunct::pattern'],['http://en.cppreference.com/w/cpp/locale/money_base.html',0,'std::moneypunct_byname::pattern']]],
+  ['pattern_3',['pattern',['http://en.cppreference.com/w/cpp/locale/money_base.html',0,'std::money_base::pattern'],['http://en.cppreference.com/w/cpp/locale/money_base.html',0,'std::money_get::pattern'],['http://en.cppreference.com/w/cpp/locale/money_base.html',0,'std::money_put::pattern'],['http://en.cppreference.com/w/cpp/locale/money_base.html',0,'std::moneypunct::pattern'],['http://en.cppreference.com/w/cpp/locale/money_base.html',0,'std::moneypunct_byname::pattern'],['../dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html',1,'strings::boyer_moore::pattern']]],
   ['persegtree_4',['perSegTree',['../d8/d28/classrange__queries_1_1per_seg_tree.html',1,'range_queries']]],
   ['peta_5',['peta',['http://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',0,'std']]],
   ['pico_6',['pico',['http://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',0,'std']]],

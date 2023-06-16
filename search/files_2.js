@@ -14,9 +14,10 @@ var searchData=
   ['bloom_5ffilter_2ecpp_11',['bloom_filter.cpp',['../d9/dab/bloom__filter_8cpp.html',1,'']]],
   ['bogo_5fsort_2ecpp_12',['bogo_sort.cpp',['../d5/ddb/bogo__sort_8cpp.html',1,'']]],
   ['boruvkas_5fminimum_5fspanning_5ftree_2ecpp_13',['boruvkas_minimum_spanning_tree.cpp',['../d4/d6c/boruvkas__minimum__spanning__tree_8cpp.html',1,'']]],
-  ['breadth_5ffirst_5fsearch_2ecpp_14',['breadth_first_search.cpp',['../df/d82/breadth__first__search_8cpp.html',1,'']]],
-  ['brent_5fmethod_5fextrema_2ecpp_15',['brent_method_extrema.cpp',['../db/d01/brent__method__extrema_8cpp.html',1,'']]],
-  ['brute_5fforce_5fstring_5fsearching_2ecpp_16',['brute_force_string_searching.cpp',['../d3/d7d/brute__force__string__searching_8cpp.html',1,'']]],
-  ['bubble_5fsort_2ecpp_17',['bubble_sort.cpp',['../d8/d13/bubble__sort_8cpp.html',1,'']]],
-  ['buzz_5fnumber_2ecpp_18',['buzz_number.cpp',['../d1/d76/buzz__number_8cpp.html',1,'']]]
+  ['boyer_5fmoore_2ecpp_14',['boyer_moore.cpp',['../d3/db2/boyer__moore_8cpp.html',1,'']]],
+  ['breadth_5ffirst_5fsearch_2ecpp_15',['breadth_first_search.cpp',['../df/d82/breadth__first__search_8cpp.html',1,'']]],
+  ['brent_5fmethod_5fextrema_2ecpp_16',['brent_method_extrema.cpp',['../db/d01/brent__method__extrema_8cpp.html',1,'']]],
+  ['brute_5fforce_5fstring_5fsearching_2ecpp_17',['brute_force_string_searching.cpp',['../d3/d7d/brute__force__string__searching_8cpp.html',1,'']]],
+  ['bubble_5fsort_2ecpp_18',['bubble_sort.cpp',['../d8/d13/bubble__sort_8cpp.html',1,'']]],
+  ['buzz_5fnumber_2ecpp_19',['buzz_number.cpp',['../d1/d76/buzz__number_8cpp.html',1,'']]]
 ];

@@ -1,0 +1,4 @@
+<map id="strings::boyer_moore::is_prefix" name="strings::boyer_moore::is_prefix">
+<area shape="rect" id="Node000001" title="Check if pat is prefix of str." alt="" coords="5,29,149,70"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="49,29,48,20,52,11,62,5,77,3,93,5,103,12,100,16,91,10,77,8,64,10,56,14,53,20,54,28"/>
+</map>

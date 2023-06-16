@@ -1,0 +1,11 @@
+<map id="strings::boyer_moore::pattern" name="strings::boyer_moore::pattern">
+<area shape="rect" id="Node000001" title="A structure representing all the data we need to search the preprocessed pattern in text." alt="" coords="63,213,206,253"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string.html" title=" " alt="" coords="28,109,108,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,146,125,211,120,214,81,149"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string.html" title=" " alt="" coords="5,5,131,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="71,61,71,109,65,109,65,61"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="132,109,274,135"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="190,149,149,214,145,211,185,146"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/size_t.html" title=" " alt="" coords="162,13,244,39"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="205,53,205,108,200,108,200,53"/>
+</map>
