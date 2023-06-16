@@ -1,4 +1,5 @@
 <map id="uint256_t::_trz" name="uint256_t::_trz">
-<area shape="rect" id="node1" title="Trailing zeroes in binary." alt="" coords="5,5,110,31"/>
-<area shape="rect" id="node2" href="$db/d9a/classuint128__t.html#a7d2285a8a6e20b77f82f1f0351afe76e" title="Trailing zeroes in binary." alt="" coords="158,5,262,31"/>
+<area shape="rect" id="Node000001" title="Trailing zeroes in binary." alt="" coords="5,5,110,31"/>
+<area shape="rect" id="Node000002" href="$db/d9a/classuint128__t.html#a7d2285a8a6e20b77f82f1f0351afe76e" title="Trailing zeroes in binary." alt="" coords="158,5,262,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,16,142,16,142,21,110,21"/>
 </map>

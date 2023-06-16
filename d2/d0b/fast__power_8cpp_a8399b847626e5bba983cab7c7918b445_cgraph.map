@@ -1,3 +1,4 @@
 <map id="fast_power_recursive" name="fast_power_recursive">
-<area shape="rect" id="node1" title=" " alt="" coords="5,29,151,55"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,151,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="53,30,48,21,51,11,61,5,78,3,97,6,106,13,103,17,95,11,78,8,63,10,55,14,53,20,58,28"/>
 </map>

@@ -1,6 +1,9 @@
 <map id="backtracking::subarray_sum::subarray_sum" name="backtracking::subarray_sum::subarray_sum">
-<area shape="rect" id="node1" title="The main function that implements the count of the subarrays." alt="" coords="5,55,159,96"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_map/end.html#" title=" " alt="" coords="207,5,372,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_map/find.html#" title=" " alt="" coords="221,55,358,96"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="232,120,347,146"/>
+<area shape="rect" id="Node000001" title="The main function that implements the count of the subarrays." alt="" coords="5,55,159,96"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_map/end.html#" title=" " alt="" coords="207,5,372,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,52,226,33,227,38,159,57"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_map/find.html#" title=" " alt="" coords="221,55,358,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,73,207,73,207,78,159,78"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="232,120,347,146"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,94,227,113,226,118,157,99"/>
 </map>

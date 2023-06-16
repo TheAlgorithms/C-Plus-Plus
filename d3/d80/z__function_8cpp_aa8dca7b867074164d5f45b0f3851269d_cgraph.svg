@@ -6,97 +6,140 @@
 <!-- Title: test Pages: 1 -->
 <svg width="433pt" height="103pt"
  viewBox="0.00 0.00 432.75 103.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 99.25)">
 <title>test</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Self&#45;test implementations.">
+<g id="a_Node000001"><a xlink:title="Self&#45;test implementations.">
 <polygon fill="#999999" stroke="#666666" points="32.5,-57.25 0,-57.25 0,-38 32.5,-38 32.5,-57.25"/>
 <text text-anchor="middle" x="16.25" y="-43.75" font-family="Helvetica,sans-Serif" font-size="10.00">test</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d3/d80/z__function_8cpp.html#ac186ca3ac3a69b5e52543bb13fe46db8" target="_top" xlink:title="Using Z_function to find a pattern in a text.">
+<g id="a_Node000002"><a xlink:href="../../d3/d80/z__function_8cpp.html#ac186ca3ac3a69b5e52543bb13fe46db8" target="_top" xlink:title="Using Z_function to find a pattern in a text.">
 <polygon fill="white" stroke="#666666" points="153.5,-57.25 68.5,-57.25 68.5,-38 153.5,-38 153.5,-57.25"/>
 <text text-anchor="middle" x="111" y="-43.75" font-family="Helvetica,sans-Serif" font-size="10.00">find_pat_in_text</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M32.98,-47.62C39.89,-47.62 48.44,-47.62 57.3,-47.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="57.18,-51.13 67.18,-47.62 57.18,-44.13 57.18,-51.13"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
+<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="305.25,-95.25 189.5,-95.25 189.5,-76 305.25,-76 305.25,-95.25"/>
 <text text-anchor="middle" x="247.38" y="-81.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::push_back</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
+<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M147.66,-57.71C163.88,-62.3 183.28,-67.78 200.57,-72.67"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="199.44,-76.27 210.02,-75.63 201.35,-69.54 199.44,-76.27"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" xlink:title=" ">
+<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="424.75,-56.25 341.25,-56.25 341.25,-37 424.75,-37 424.75,-56.25"/>
 <text text-anchor="middle" x="383" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::size</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000002_Node000004" class="edge">
 <title>Node2&#45;&gt;Node4</title>
+<g id="a_edge3_Node000002_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M153.89,-47.47C201.36,-47.29 278.78,-47.01 330.05,-46.82"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="329.91,-50.31 339.9,-46.78 329.88,-43.31 329.91,-50.31"/>
+</a>
+</g>
 </g>
 <!-- Node5 -->
-<g id="node5" class="node">
+<g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="../../d3/d80/z__function_8cpp.html#ac044c4794349a8cff6256b99950d5773" target="_top" xlink:title="for IO operations">
+<g id="a_Node000005"><a xlink:href="../../d3/d80/z__function_8cpp.html#ac044c4794349a8cff6256b99950d5773" target="_top" xlink:title="for IO operations">
 <polygon fill="white" stroke="#666666" points="278.25,-19.25 216.5,-19.25 216.5,0 278.25,0 278.25,-19.25"/>
 <text text-anchor="middle" x="247.38" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">Z_function</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node5 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000002_Node000005" class="edge">
 <title>Node2&#45;&gt;Node5</title>
+<g id="a_edge4_Node000002_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M147.66,-37.54C165.47,-32.51 187.1,-26.39 205.57,-21.17"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="206.35,-24.3 215.02,-18.21 204.45,-17.56 206.35,-24.3"/>
+</a>
+</g>
 </g>
 <!-- Node5&#45;&gt;Node4 -->
-<g id="edge6" class="edge">
+<g id="edge6_Node000005_Node000004" class="edge">
 <title>Node5&#45;&gt;Node4</title>
+<g id="a_edge6_Node000005_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M278.7,-18.02C295.38,-22.64 316.45,-28.47 335.19,-33.66"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="334.05,-37.26 344.62,-36.55 335.92,-30.51 334.05,-37.26"/>
+</a>
+</g>
 </g>
 <!-- Node6 -->
-<g id="node6" class="node">
+<g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/min.html#" xlink:title=" ">
+<g id="a_Node000006"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/min.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="408.62,-19.25 357.38,-19.25 357.38,0 408.62,0 408.62,-19.25"/>
 <text text-anchor="middle" x="383" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::min</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
-<g id="edge5" class="edge">
+<g id="edge5_Node000005_Node000006" class="edge">
 <title>Node5&#45;&gt;Node6</title>
+<g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M278.7,-9.62C298.8,-9.62 325.26,-9.62 346.37,-9.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="346.16,-13.13 356.16,-9.62 346.16,-6.13 346.16,-13.13"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

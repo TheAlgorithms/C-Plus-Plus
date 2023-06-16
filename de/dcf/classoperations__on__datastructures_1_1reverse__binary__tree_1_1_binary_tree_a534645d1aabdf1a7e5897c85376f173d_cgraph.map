@@ -1,4 +1,6 @@
 <map id="operations_on_datastructures::reverse_binary_tree::BinaryTree::add" name="operations_on_datastructures::reverse_binary_tree::BinaryTree::add">
-<area shape="rect" id="node1" title="Adds a new Node to the Binary Tree." alt="" coords="5,37,249,78"/>
-<area shape="rect" id="node2" href="$de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#adb2b6be741b0500ee75d89b6d06b5d50" title="inserts a node in the Binary Tree, with the behaviouur of a Binary Search Tree." alt="" coords="297,29,511,85"/>
+<area shape="rect" id="Node000001" title="Adds a new Node to the Binary Tree." alt="" coords="5,37,249,78"/>
+<area shape="rect" id="Node000002" href="$de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#adb2b6be741b0500ee75d89b6d06b5d50" title="inserts a node in the Binary Tree, with the behaviouur of a Binary Search Tree." alt="" coords="297,29,511,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="249,55,281,55,281,60,249,60"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="350,29,351,19,361,10,378,5,404,3,434,6,452,13,450,18,433,11,404,8,379,10,363,15,356,21,355,29"/>
 </map>

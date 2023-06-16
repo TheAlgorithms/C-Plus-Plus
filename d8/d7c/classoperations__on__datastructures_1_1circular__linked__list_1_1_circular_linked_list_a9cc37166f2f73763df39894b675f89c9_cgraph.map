@@ -1,6 +1,11 @@
 <map id="operations_on_datastructures::circular_linked_list::CircularLinkedList::operator=" name="operations_on_datastructures::circular_linked_list::CircularLinkedList::operator=">
-<area shape="rect" id="node1" title="Copy assignment operator." alt="" coords="5,57,198,113"/>
-<area shape="rect" id="node2" href="$d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html#a398d6cc927a2c8e4a156ae2806f48986" title=" " alt="" coords="246,5,438,61"/>
-<area shape="rect" id="node3" href="$d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html#ac38565472a07d07f63ec0d2fd8a69d4d" title="Inserts all the values from a vector into the Circular Linked List." alt="" coords="246,109,438,165"/>
-<area shape="rect" id="node4" href="$d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html#a53611ec1fef92eeeb875aea1bde1e4de" title="Returns a std::vector of the values of the Circular Linked List." alt="" coords="486,109,678,165"/>
+<area shape="rect" id="Node000001" title="Copy assignment operator." alt="" coords="5,57,198,113"/>
+<area shape="rect" id="Node000002" href="$d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html#a398d6cc927a2c8e4a156ae2806f48986" title=" " alt="" coords="246,5,438,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,62,230,55,231,60,199,67"/>
+<area shape="rect" id="Node000003" href="$d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html#ac38565472a07d07f63ec0d2fd8a69d4d" title="Inserts all the values from a vector into the Circular Linked List." alt="" coords="246,109,438,165"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,103,231,111,230,116,198,109"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="295,109,295,99,304,90,319,85,342,83,368,85,383,93,381,97,366,91,342,88,321,90,307,95,300,101,300,109"/>
+<area shape="rect" id="Node000004" href="$d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html#a53611ec1fef92eeeb875aea1bde1e4de" title="Returns a std::vector of the values of the Circular Linked List." alt="" coords="486,109,678,165"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="438,135,471,135,471,140,438,140"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="535,109,536,99,544,90,560,85,582,83,608,85,623,93,621,97,607,91,582,88,561,90,547,95,541,101,540,109"/>
 </map>

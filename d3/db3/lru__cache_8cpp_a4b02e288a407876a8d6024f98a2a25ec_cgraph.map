@@ -1,15 +1,28 @@
 <map id="lru_tests::test_2" name="lru_tests::test_2">
-<area shape="rect" id="node1" title="A test case contains hits more than cache size The assert statement will check expected hist and miss..." alt="" coords="5,153,121,179"/>
-<area shape="rect" id="node2" href="$d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html#aa24a141455b9fbcbec22392c28d04933" title="A function to get page hits." alt="" coords="186,81,323,121"/>
-<area shape="rect" id="node3" href="$d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html#a78be932dac71c90f485a67d4fda877e2" title="A function to get page fault." alt="" coords="169,146,340,187"/>
-<area shape="rect" id="node4" href="$d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html#a7dbf04bf7e1472c48639694f0b110602" title="Refer to a page, or request a page from memory." alt="" coords="190,211,319,252"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/back.html#" title=" " alt="" coords="421,5,521,31"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/begin.html#" title=" " alt="" coords="419,55,522,80"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_map/end.html#" title=" " alt="" coords="388,104,553,130"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_map/erase.html#" title=" " alt="" coords="403,154,539,195"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/erase.html#" title=" " alt="" coords="419,219,523,244"/>
-<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_map/find.html#" title=" " alt="" coords="403,269,539,309"/>
-<area shape="rect" id="node11" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/pop_back.html#" title=" " alt="" coords="407,333,535,359"/>
-<area shape="rect" id="node12" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/push_front.html#" title=" " alt="" coords="404,383,537,408"/>
-<area shape="rect" id="node13" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/size.html#" title=" " alt="" coords="423,432,519,458"/>
+<area shape="rect" id="Node000001" title="A test case contains hits more than cache size The assert statement will check expected hist and miss..." alt="" coords="5,153,121,179"/>
+<area shape="poly" id="edge13_Node000001_Node000001" title=" " alt="" coords="31,154,25,145,28,135,42,129,63,127,88,130,99,137,96,142,86,135,63,132,43,134,32,139,30,144,35,151"/>
+<area shape="rect" id="Node000002" href="$d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html#aa24a141455b9fbcbec22392c28d04933" title="A function to get page hits." alt="" coords="186,81,323,121"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,150,178,124,180,129,104,155"/>
+<area shape="rect" id="Node000003" href="$d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html#a78be932dac71c90f485a67d4fda877e2" title="A function to get page fault." alt="" coords="169,146,340,187"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,164,154,164,154,169,121,169"/>
+<area shape="rect" id="Node000004" href="$d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html#a7dbf04bf7e1472c48639694f0b110602" title="Refer to a page, or request a page from memory." alt="" coords="190,211,319,252"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="104,177,180,203,178,208,102,182"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/back.html#" title=" " alt="" coords="421,5,521,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="318,212,338,196,352,177,358,158,360,119,363,80,371,60,386,40,405,27,408,32,390,44,375,63,368,81,366,119,364,159,356,179,342,200,321,216"/>
+<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/begin.html#" title=" " alt="" coords="419,55,522,80"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="318,211,338,196,349,183,355,170,361,144,367,117,374,103,386,89,404,78,407,83,390,94,378,106,372,118,366,145,360,172,353,186,342,200,321,215"/>
+<area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_map/end.html#" title=" " alt="" coords="388,104,553,130"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="317,208,338,196,353,182,361,168,371,154,386,140,397,134,400,138,390,144,375,158,366,171,357,186,342,200,320,213"/>
+<area shape="rect" id="Node000008" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_map/erase.html#" title=" " alt="" coords="403,154,539,195"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="319,212,387,193,389,199,320,217"/>
+<area shape="rect" id="Node000009" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/erase.html#" title=" " alt="" coords="419,219,523,244"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="319,229,403,229,403,234,319,234"/>
+<area shape="rect" id="Node000010" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_map/find.html#" title=" " alt="" coords="403,269,539,309"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="320,246,389,264,387,270,319,251"/>
+<area shape="rect" id="Node000011" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/pop_back.html#" title=" " alt="" coords="407,333,535,359"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="283,250,331,285,389,318,406,326,404,330,387,323,328,289,280,255"/>
+<area shape="rect" id="Node000012" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/push_front.html#" title=" " alt="" coords="404,383,537,408"/>
+<area shape="poly" id="edge11_Node000004_Node000012" title=" " alt="" coords="272,251,320,310,353,342,389,369,398,374,395,379,387,374,349,346,316,313,268,254"/>
+<area shape="rect" id="Node000013" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/size.html#" title=" " alt="" coords="423,432,519,458"/>
+<area shape="poly" id="edge12_Node000004_Node000013" title=" " alt="" coords="267,251,285,287,311,333,347,379,390,419,410,430,407,434,386,423,343,383,307,336,280,290,262,253"/>
 </map>

@@ -1,10 +1,17 @@
 <map id="save_exact_solution" name="save_exact_solution">
-<area shape="rect" id="node1" title=" " alt="" coords="5,104,146,130"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/clock.html#" title=" " alt="" coords="230,5,309,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " alt="" coords="201,55,338,80"/>
-<area shape="rect" id="node4" href="$d6/dd3/ode__midpoint__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b" title="Exact solution of the problem. Used for solution comparison." alt="" coords="217,104,322,130"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/is_open.html#" title=" " alt="" coords="194,153,345,179"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/c/perror.html#" title=" " alt="" coords="229,203,310,228"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/cos.html#" title=" " alt="" coords="393,80,461,106"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sin.html#" title=" " alt="" coords="395,129,459,155"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,104,146,130"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/clock.html#" title=" " alt="" coords="230,5,309,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,101,137,71,193,40,215,31,217,35,195,45,140,76,96,106"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " alt="" coords="201,55,338,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="128,101,201,82,202,87,130,106"/>
+<area shape="rect" id="Node000004" href="$d6/dd3/ode__midpoint__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b" title="Exact solution of the problem. Used for solution comparison." alt="" coords="217,104,322,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="146,114,202,114,202,120,146,120"/>
+<area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/is_open.html#" title=" " alt="" coords="194,153,345,179"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="130,128,202,147,201,152,128,133"/>
+<area shape="rect" id="Node000008" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/c/perror.html#" title=" " alt="" coords="229,203,310,228"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="96,128,140,158,195,189,216,198,214,203,193,194,137,163,93,132"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/cos.html#" title=" " alt="" coords="393,80,461,106"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="322,106,378,98,379,103,323,111"/>
+<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sin.html#" title=" " alt="" coords="395,129,459,155"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="323,123,381,132,380,137,322,128"/>
 </map>

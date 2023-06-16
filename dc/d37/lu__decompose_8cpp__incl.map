@@ -1,10 +1,18 @@
 <map id="numerical_methods/lu_decompose.cpp" name="numerical_methods/lu_decompose.cpp">
-<area shape="rect" id="node1" title="LU decomposition of a square matrix" alt="" coords="130,5,278,46"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,94,70,120"/>
-<area shape="rect" id="node3" title=" " alt="" coords="94,94,147,120"/>
-<area shape="rect" id="node4" title=" " alt="" coords="171,94,237,120"/>
-<area shape="rect" id="node5" title=" " alt="" coords="246,168,317,193"/>
-<area shape="rect" id="node6" href="$d1/dbe/lu__decomposition_8h.html" title="Functions associated with LU Decomposition of a square matrix." alt="" coords="312,94,454,120"/>
-<area shape="rect" id="node7" title=" " alt="" coords="345,168,413,193"/>
-<area shape="rect" id="node8" title=" " alt="" coords="437,168,494,193"/>
+<area shape="rect" id="Node000001" title="LU decomposition of a square matrix" alt="" coords="130,5,278,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,70,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,49,77,90,75,85,161,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="94,94,147,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,48,145,86,142,82,182,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="171,94,237,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="207,46,207,79,202,79,202,46"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="246,168,317,193"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="221,45,252,93,276,152,271,154,247,95,217,48"/>
+<area shape="rect" id="Node000006" href="$d1/dbe/lu__decomposition_8h.html" title="Functions associated with LU Decomposition of a square matrix." alt="" coords="312,94,454,120"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="250,44,343,85,341,90,248,49"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="367,122,312,161,309,157,364,118"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="345,168,413,193"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="385,120,383,153,378,152,380,120"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="437,168,494,193"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="399,118,442,156,439,160,395,122"/>
 </map>

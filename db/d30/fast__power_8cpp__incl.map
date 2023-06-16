@@ -1,9 +1,15 @@
 <map id="math/fast_power.cpp" name="math/fast_power.cpp">
-<area shape="rect" id="node1" title="Faster computation for ." alt="" coords="176,5,318,31"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,79,70,105"/>
-<area shape="rect" id="node3" title=" " alt="" coords="94,79,152,105"/>
-<area shape="rect" id="node4" title=" " alt="" coords="175,79,236,105"/>
-<area shape="rect" id="node5" title=" " alt="" coords="260,79,319,105"/>
-<area shape="rect" id="node6" title=" " alt="" coords="343,79,396,105"/>
-<area shape="rect" id="node7" title=" " alt="" coords="421,79,492,105"/>
+<area shape="rect" id="Node000001" title="Faster computation for ." alt="" coords="176,5,318,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,70,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,34,84,77,83,72,210,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="94,79,152,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,34,157,74,155,69,224,29"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="175,79,236,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="242,33,222,67,218,65,238,30"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="260,79,319,105"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="256,30,277,65,273,68,252,33"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="343,79,396,105"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="269,29,337,69,335,73,266,34"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="421,79,492,105"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="283,29,408,71,406,76,281,34"/>
 </map>

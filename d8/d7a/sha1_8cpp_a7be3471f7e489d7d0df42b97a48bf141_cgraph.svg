@@ -6,46 +6,77 @@
 <!-- Title: hashing::sha1::hash_bs Pages: 1 -->
 <svg width="255pt" height="64pt"
  viewBox="0.00 0.00 255.25 64.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 60.25)">
 <title>hashing::sha1::hash_bs</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="The SHA&#45;1 algorithm itself, taking in a bytestring.">
+<g id="a_Node000001"><a xlink:title="The SHA&#45;1 algorithm itself, taking in a bytestring.">
 <polygon fill="#999999" stroke="#666666" points="119.5,-37.25 0,-37.25 0,-18 119.5,-18 119.5,-37.25"/>
 <text text-anchor="middle" x="59.75" y="-23.75" font-family="Helvetica,sans-Serif" font-size="10.00">hashing::sha1::hash_bs</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/begin.html#" xlink:title=" ">
+<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/begin.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="247.25,-56.25 155.5,-56.25 155.5,-37 247.25,-37 247.25,-56.25"/>
 <text text-anchor="middle" x="201.38" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::begin</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M119.96,-35.68C128.04,-36.78 136.3,-37.91 144.32,-39"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="143.67,-42.58 154.05,-40.46 144.62,-35.64 143.67,-42.58"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/copy.html#" xlink:title=" ">
+<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/copy.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="229.62,-19.25 173.12,-19.25 173.12,0 229.62,0 229.62,-19.25"/>
 <text text-anchor="middle" x="201.38" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::copy</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M119.96,-19.99C134.22,-18.15 149.08,-16.24 162.09,-14.56"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="162.52,-17.91 171.99,-13.16 161.62,-10.96 162.52,-17.91"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

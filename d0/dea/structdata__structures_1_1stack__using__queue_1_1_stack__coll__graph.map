@@ -1,5 +1,7 @@
 <map id="data_structures::stack_using_queue::Stack" name="data_structures::stack_using_queue::Stack">
-<area shape="rect" id="node1" title="Stack Class implementation for basic methods of Stack Data Structure." alt="" coords="5,198,157,238"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue.html" title=" " alt="" coords="8,94,154,120"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/integer.html" title=" " alt="" coords="38,5,124,31"/>
+<area shape="rect" id="Node000001" title="Stack Class implementation for basic methods of Stack Data Structure." alt="" coords="5,198,157,238"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue.html" title=" " alt="" coords="8,94,154,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,135,84,197,78,197,78,135"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/integer.html" title=" " alt="" coords="38,5,124,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="84,46,84,94,78,94,78,46"/>
 </map>

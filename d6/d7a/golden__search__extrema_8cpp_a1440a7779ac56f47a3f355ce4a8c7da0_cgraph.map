@@ -1,7 +1,11 @@
 <map id="test1" name="test1">
-<area shape="rect" id="node1" title="Test function to find minima for the function &#160;in the interval &#160;&#160;&#160;Expected result = 2." alt="" coords="5,70,56,96"/>
-<area shape="rect" id="node2" href="$d6/d7a/golden__search__extrema_8cpp.html#a1aa76a6d5fd4d333f9072beff1dc486b" title="Get the minima of a function in the given interval. To get the maxima, simply negate the function...." alt="" coords="104,70,192,96"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/numeric_limits/infinity.html#" title=" " alt="" coords="240,5,371,46"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="271,70,340,96"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="267,120,345,145"/>
+<area shape="rect" id="Node000001" title="Test function to find minima for the function &#160;in the interval &#160;&#160;&#160;Expected result = 2." alt="" coords="5,70,56,96"/>
+<area shape="rect" id="Node000002" href="$d6/d7a/golden__search__extrema_8cpp.html#a1aa76a6d5fd4d333f9072beff1dc486b" title="Get the minima of a function in the given interval. To get the maxima, simply negate the function...." alt="" coords="104,70,192,96"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="56,80,89,80,89,86,56,86"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/numeric_limits/infinity.html#" title=" " alt="" coords="240,5,371,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="185,67,233,49,235,54,186,72"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="271,70,340,96"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="192,80,256,80,256,86,192,86"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="267,120,345,145"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="192,94,253,113,252,118,191,99"/>
 </map>

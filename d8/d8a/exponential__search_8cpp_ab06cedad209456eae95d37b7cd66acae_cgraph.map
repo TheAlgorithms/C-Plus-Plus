@@ -1,4 +1,5 @@
 <map id="binary_s" name="binary_s">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,76,31"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/floor.html#" title=" " alt="" coords="124,5,196,31"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,76,31"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/floor.html#" title=" " alt="" coords="124,5,196,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,16,109,16,109,21,76,21"/>
 </map>

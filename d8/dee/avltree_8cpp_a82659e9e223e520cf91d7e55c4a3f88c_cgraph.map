@@ -1,3 +1,4 @@
 <map id="deleteAllNodes" name="deleteAllNodes">
-<area shape="rect" id="node1" title="calls delete on every node" alt="" coords="5,29,115,55"/>
+<area shape="rect" id="Node000001" title="calls delete on every node" alt="" coords="5,29,115,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="40,30,37,21,39,11,47,5,60,3,74,6,81,13,78,16,72,10,60,8,49,10,44,14,42,20,45,28"/>
 </map>

@@ -6,43 +6,77 @@
 <!-- Title: hashing::md5::toLittleEndian32 Pages: 1 -->
 <svg width="327pt" height="45pt"
  viewBox="0.00 0.00 326.50 45.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 41.25)">
 <title>hashing::md5::toLittleEndian32</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Sets 32&#45;bit integer to little&#45;endian if needed.">
+<g id="a_Node000001"><a xlink:title="Sets 32&#45;bit integer to little&#45;endian if needed.">
 <polygon fill="#999999" stroke="#666666" points="150.25,-19.25 0,-19.25 0,0 150.25,0 150.25,-19.25"/>
 <text text-anchor="middle" x="75.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">hashing::md5::toLittleEndian32</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node1 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000001" class="edge">
 <title>Node1&#45;&gt;Node1</title>
+<g id="a_edge3_Node000001_Node000001"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M47.38,-19.54C34.72,-28.15 43.97,-37.25 75.12,-37.25 94.11,-37.25 104.96,-33.87 107.68,-29.28"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="110.44,-27.96 102.87,-20.54 104.16,-31.05 110.44,-27.96"/>
+</a>
+</g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d5/d96/md5_8cpp.html#af8e96bde0183c4b0a7ff04668f11e446" target="_top" xlink:title="Checks whether integers are stored as big endian or not.">
+<g id="a_Node000002"><a xlink:href="../../d5/d96/md5_8cpp.html#af8e96bde0183c4b0a7ff04668f11e446" target="_top" xlink:title="Checks whether integers are stored as big endian or not.">
 <polygon fill="white" stroke="#666666" points="318.5,-19.25 186.25,-19.25 186.25,0 318.5,0 318.5,-19.25"/>
 <text text-anchor="middle" x="252.38" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">hashing::md5::isBigEndian</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M150.7,-9.62C158.77,-9.62 166.99,-9.62 175.08,-9.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="175.01,-13.13 185.01,-9.62 175.01,-6.13 175.01,-13.13"/>
+</a>
+</g>
 </g>
 <!-- Node2&#45;&gt;Node2 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000002_Node000002" class="edge">
 <title>Node2&#45;&gt;Node2</title>
+<g id="a_edge2_Node000002_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M224.63,-19.54C211.97,-28.15 221.22,-37.25 252.38,-37.25 271.36,-37.25 282.21,-33.87 284.93,-29.28"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="287.69,-27.96 280.12,-20.54 281.41,-31.05 287.69,-27.96"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

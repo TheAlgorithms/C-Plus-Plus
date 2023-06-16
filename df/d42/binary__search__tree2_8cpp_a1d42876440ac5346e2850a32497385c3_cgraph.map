@@ -1,6 +1,11 @@
 <map id="test_contains" name="test_contains">
-<area shape="rect" id="node1" title="Function for testing contains()." alt="" coords="5,94,105,120"/>
-<area shape="rect" id="node2" href="$d9/dde/classbinary__search__tree.html#aa4f84b2eec9b9201af1840868ddb5fb2" title="Recursive function to check if a value is in the BST." alt="" coords="153,29,284,70"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="183,94,254,120"/>
-<area shape="rect" id="node4" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="153,168,284,209"/>
+<area shape="rect" id="Node000001" title="Function for testing contains()." alt="" coords="5,94,105,120"/>
+<area shape="rect" id="Node000002" href="$d9/dde/classbinary__search__tree.html#aa4f84b2eec9b9201af1840868ddb5fb2" title="Recursive function to check if a value is in the BST." alt="" coords="153,29,284,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,91,143,73,145,78,95,96"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="183,94,254,120"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="105,104,168,104,168,110,105,110"/>
+<area shape="rect" id="Node000004" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="153,168,284,209"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="84,118,164,159,162,163,82,123"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="187,29,185,19,190,11,202,5,218,3,237,5,248,12,245,16,235,10,218,8,203,10,194,14,191,20,192,28"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="187,168,185,158,190,149,202,143,218,141,237,144,248,151,245,155,235,149,218,147,203,148,194,153,191,159,192,167"/>
 </map>

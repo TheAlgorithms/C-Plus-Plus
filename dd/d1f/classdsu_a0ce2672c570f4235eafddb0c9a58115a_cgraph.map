@@ -1,7 +1,14 @@
 <map id="dsu::get" name="dsu::get">
-<area shape="rect" id="node1" title="prints the minimum, maximum and size of the set to which i belongs to" alt="" coords="5,55,74,80"/>
-<area shape="rect" id="node2" href="$dd/d1f/classdsu.html#a696141b8b092466767f4bfe1c5e46cde" title="A utility function that returns the max element of the set to which i belongs to." alt="" coords="122,5,222,31"/>
-<area shape="rect" id="node4" href="$dd/d1f/classdsu.html#ac713a5b496d0405c82e2808a85e58415" title="A utility function that returns the min element of the set to which i belongs to." alt="" coords="124,55,220,80"/>
-<area shape="rect" id="node5" href="$dd/d1f/classdsu.html#a1c24228b0f2f49220133fb8c3566a55c" title="A utility function that returns the size of the set to which i belongs to." alt="" coords="135,104,209,130"/>
-<area shape="rect" id="node3" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="270,55,361,80"/>
+<area shape="rect" id="Node000001" title="prints the minimum, maximum and size of the set to which i belongs to" alt="" coords="5,55,74,80"/>
+<area shape="rect" id="Node000002" href="$dd/d1f/classdsu.html#a696141b8b092466767f4bfe1c5e46cde" title="A utility function that returns the max element of the set to which i belongs to." alt="" coords="122,5,222,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,52,121,34,123,39,75,57"/>
+<area shape="rect" id="Node000004" href="$dd/d1f/classdsu.html#ac713a5b496d0405c82e2808a85e58415" title="A utility function that returns the min element of the set to which i belongs to." alt="" coords="124,55,220,80"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="74,65,109,65,109,70,74,70"/>
+<area shape="rect" id="Node000005" href="$dd/d1f/classdsu.html#a1c24228b0f2f49220133fb8c3566a55c" title="A utility function that returns the size of the set to which i belongs to." alt="" coords="135,104,209,130"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="75,78,123,96,121,101,73,83"/>
+<area shape="rect" id="Node000003" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="270,55,361,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="213,29,263,47,261,52,211,34"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="291,55,286,46,289,37,299,30,316,28,334,31,343,38,340,42,332,36,316,33,301,35,293,40,291,46,296,53"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="221,65,255,65,255,70,221,70"/>
+<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="209,102,262,83,263,88,210,107"/>
 </map>

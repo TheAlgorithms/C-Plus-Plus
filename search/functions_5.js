@@ -20,8 +20,8 @@ var searchData=
   ['end_28int_29_17',['end(int)',['http://en.cppreference.com/w/cpp/container/unordered_set/end2.html',0,'std::unordered_set::end(int)()'],['http://en.cppreference.com/w/cpp/container/unordered_multimap/end2.html',0,'std::unordered_multimap::end(int)()'],['http://en.cppreference.com/w/cpp/container/unordered_map/end2.html',0,'std::unordered_map::end(int)()'],['http://en.cppreference.com/w/cpp/container/unordered_multiset/end2.html',0,'std::unordered_multiset::end(int)()']]],
   ['endl_18',['endl',['http://en.cppreference.com/w/cpp/io/manip/endl.html',0,'std']]],
   ['ends_19',['ends',['http://en.cppreference.com/w/cpp/io/manip/ends.html',0,'std']]],
-  ['enqueue_20',['enqueue',['../d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html#a4dc64488c36f84d927365fa8d1933663',1,'data_structures::queue_using_array::Queue_Array']]],
-  ['enqueue_21',['enQueue',['../db/da9/classqueue.html#ada88d0c1f34946d66386b7a11bee4e4d',1,'queue']]],
+  ['enqueue_20',['enQueue',['../db/da9/classqueue.html#ada88d0c1f34946d66386b7a11bee4e4d',1,'queue']]],
+  ['enqueue_21',['enqueue',['../d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html#a4dc64488c36f84d927365fa8d1933663',1,'data_structures::queue_using_array::Queue_Array']]],
   ['ensurenotempty_22',['ensureNotEmpty',['../db/da9/classqueue.html#ac08ebdd38cb4ad74fc0a3f51888da604',1,'queue']]],
   ['entropy_23',['entropy',['http://en.cppreference.com/w/cpp/numeric/random/random_device/entropy.html',0,'std::random_device']]],
   ['entry_24',['Entry',['../d9/dde/structdouble__hashing_1_1_entry.html#a287b92112b6b43b34808a93778873475',1,'double_hashing::Entry::Entry()'],['../db/d19/structlinear__probing_1_1_entry.html#a2139f643a3caf074da1db8a9fa16fa77',1,'linear_probing::Entry::Entry()'],['../da/dd1/structquadratic__probing_1_1_entry.html#a9df1118010a233d13ab3dd699bcb513e',1,'quadratic_probing::Entry::Entry()']]],
@@ -62,6 +62,7 @@ var searchData=
   ['exponential_5fdistribution_59',['exponential_distribution',['http://en.cppreference.com/w/cpp/numeric/random/exponential_distribution/exponential_distribution.html',0,'std::exponential_distribution']]],
   ['extendedeuclid_60',['extendedEuclid',['../d9/d5d/extended__euclid__algorithm_8cpp.html#acba15ca55b3e7dcb91f3c65d72ba052d',1,'extended_euclid_algorithm.cpp']]],
   ['extendedeuclid_5f1_61',['extendedEuclid_1',['../d9/d5d/extended__euclid__algorithm_8cpp.html#a1792ac7c33aaf26b860ab55f5652ab25',1,'extended_euclid_algorithm.cpp']]],
-  ['extractmin_62',['extractMin',['../d2/d05/class_min_heap.html#a4014f1edaed0bd7db0c0d2ca53228980',1,'MinHeap']]],
-  ['extreme_5fvalue_5fdistribution_63',['extreme_value_distribution',['http://en.cppreference.com/w/cpp/numeric/random/extreme_value_distribution/extreme_value_distribution.html',0,'std::extreme_value_distribution']]]
+  ['extract_5fbyte_62',['extract_byte',['../d4/d08/sha256_8cpp.html#afea411191ec5281f43e91ea327984627',1,'hashing::sha256']]],
+  ['extractmin_63',['extractMin',['../d2/d05/class_min_heap.html#a4014f1edaed0bd7db0c0d2ca53228980',1,'MinHeap']]],
+  ['extreme_5fvalue_5fdistribution_64',['extreme_value_distribution',['http://en.cppreference.com/w/cpp/numeric/random/extreme_value_distribution/extreme_value_distribution.html',0,'std::extreme_value_distribution']]]
 ];

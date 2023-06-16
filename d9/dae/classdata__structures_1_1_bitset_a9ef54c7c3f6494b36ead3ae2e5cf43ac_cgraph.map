@@ -1,4 +1,5 @@
 <map id="data_structures::Bitset::contains" name="data_structures::Bitset::contains">
-<area shape="rect" id="node1" title="Doest bitset contains element x." alt="" coords="5,5,159,46"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="207,13,322,39"/>
+<area shape="rect" id="Node000001" title="Doest bitset contains element x." alt="" coords="5,5,159,46"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="207,13,322,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,23,192,23,192,28,159,28"/>
 </map>

@@ -1,7 +1,12 @@
 <map id="range_queries::perSegTree::construct" name="range_queries::perSegTree::construct">
-<area shape="rect" id="node1" title="Constructing the segment tree with the values in the passed vector. Returned root pointer is pushed i..." alt="" coords="5,112,183,153"/>
-<area shape="rect" id="node2" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a6d3f2465a7c5803a1ff16c5378bcc5e4" title="Constructing the segment tree with the early passed vector. Every call creates a node to hold the sum..." alt="" coords="231,29,408,70"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/empty.html#" title=" " alt="" coords="256,94,383,120"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="242,144,397,169"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="262,193,377,219"/>
+<area shape="rect" id="Node000001" title="Constructing the segment tree with the values in the passed vector. Returned root pointer is pushed i..." alt="" coords="5,112,183,153"/>
+<area shape="rect" id="Node000002" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a6d3f2465a7c5803a1ff16c5378bcc5e4" title="Constructing the segment tree with the early passed vector. Every call creates a node to hold the sum..." alt="" coords="231,29,408,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,109,230,79,246,73,248,78,232,84,152,114"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/empty.html#" title=" " alt="" coords="256,94,383,120"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="182,120,241,113,242,118,183,125"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="242,144,397,169"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="183,139,228,144,227,149,182,144"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="262,193,377,219"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="151,151,231,179,253,186,252,191,230,184,149,156"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="277,29,275,19,282,10,297,5,319,3,344,5,359,12,357,17,343,10,319,8,298,10,285,15,280,21,282,28"/>
 </map>

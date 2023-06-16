@@ -6,130 +6,185 @@
 <!-- Title: main Pages: 1 -->
 <svg width="273pt" height="216pt"
  viewBox="0.00 0.00 272.75 216.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 212.25)">
 <title>main</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="37,-113.25 0,-113.25 0,-94 37,-94 37,-113.25"/>
 <text text-anchor="middle" x="18.5" y="-99.75" font-family="Helvetica,sans-Serif" font-size="10.00">main</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../dd/d1c/classhash__chain.html#a6b4b4de1a8c96f98a63a77f650a9dcff" target="_top" xlink:title="create and add a new node with a give value and at a given height">
+<g id="a_Node000002"><a xlink:href="../../dd/d1c/classhash__chain.html#a6b4b4de1a8c96f98a63a77f650a9dcff" target="_top" xlink:title="create and add a new node with a give value and at a given height">
 <polygon fill="white" stroke="#666666" points="167.75,-208.25 80.5,-208.25 80.5,-189 167.75,-189 167.75,-208.25"/>
 <text text-anchor="middle" x="124.12" y="-194.75" font-family="Helvetica,sans-Serif" font-size="10.00">hash_chain::add</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M24.88,-113.53C33.39,-128.45 51.26,-156.84 73,-174.62 77.08,-177.96 81.7,-180.97 86.44,-183.63"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="84.73,-187.2 95.23,-188.62 87.91,-180.96 84.73,-187.2"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="252.4,-170.25 223.6,-170.25 223.6,-151 252.4,-151 252.4,-170.25"/>
 <text text-anchor="middle" x="238" y="-156.75" font-family="Helvetica,sans-Serif" font-size="10.00">h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge9" class="edge">
+<g id="edge9_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge9_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M30.02,-113.57C40.17,-122.54 56.41,-135.26 73,-141.62 119.95,-159.64 179.58,-161.89 212.45,-161.52"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="212.36,-165 222.28,-161.29 212.21,-158 212.36,-165"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="../../dd/d1c/classhash__chain.html#a706964ad13587fc9a8b3fe8381d410ed" target="_top" xlink:title="Display the chain.">
+<g id="a_Node000004"><a xlink:href="../../dd/d1c/classhash__chain.html#a706964ad13587fc9a8b3fe8381d410ed" target="_top" xlink:title="Display the chain.">
 <polygon fill="white" stroke="#666666" points="175.25,-95.25 73,-95.25 73,-76 175.25,-76 175.25,-95.25"/>
 <text text-anchor="middle" x="124.12" y="-81.75" font-family="Helvetica,sans-Serif" font-size="10.00">hash_chain::display</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
+<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M37.08,-100.57C44.22,-99.33 52.92,-97.82 62.03,-96.24"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="62.57,-99.52 71.83,-94.36 61.37,-92.63 62.57,-99.52"/>
+</a>
+</g>
 </g>
 <!-- Node5 -->
-<g id="node5" class="node">
+<g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_Node000005"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="264.75,-95.25 211.25,-95.25 211.25,-76 264.75,-76 264.75,-95.25"/>
 <text text-anchor="middle" x="238" y="-81.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
-<g id="edge5" class="edge">
+<g id="edge5_Node000001_Node000005" class="edge">
 <title>Node1&#45;&gt;Node5</title>
+<g id="a_edge5_Node000001_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M29.91,-93.5C40,-84.47 56.18,-71.87 73,-66.62 115.47,-53.37 166.72,-63.17 200.5,-72.94"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="199.23,-76.52 209.82,-76.09 201.27,-69.82 199.23,-76.52"/>
+</a>
+</g>
 </g>
 <!-- Node6 -->
-<g id="node6" class="node">
+<g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="../../dd/d1c/classhash__chain.html#a55aa5c6753cb8853152d469c375d946a" target="_top" xlink:title="Find if a value and corresponding hash exist.">
+<g id="a_Node000006"><a xlink:href="../../dd/d1c/classhash__chain.html#a55aa5c6753cb8853152d469c375d946a" target="_top" xlink:title="Find if a value and corresponding hash exist.">
 <polygon fill="white" stroke="#666666" points="167.75,-132.25 80.5,-132.25 80.5,-113 167.75,-113 167.75,-132.25"/>
 <text text-anchor="middle" x="124.12" y="-118.75" font-family="Helvetica,sans-Serif" font-size="10.00">hash_chain::find</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
-<g id="edge6" class="edge">
+<g id="edge6_Node000001_Node000006" class="edge">
 <title>Node1&#45;&gt;Node6</title>
+<g id="a_edge6_Node000001_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M37.08,-106.85C46.19,-108.52 57.85,-110.66 69.63,-112.82"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="68.94,-116.43 79.4,-114.79 70.2,-109.55 68.94,-116.43"/>
+</a>
+</g>
 </g>
 <!-- Node7 -->
-<g id="node7" class="node">
+<g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="../../dd/d1c/classhash__chain.html#a846a2f921f8fb7ea572e03901b671d64" target="_top" xlink:title="Compute the hash of a value for current chain.">
+<g id="a_Node000007"><a xlink:href="../../dd/d1c/classhash__chain.html#a846a2f921f8fb7ea572e03901b671d64" target="_top" xlink:title="Compute the hash of a value for current chain.">
 <polygon fill="white" stroke="#666666" points="170.38,-19.25 77.88,-19.25 77.88,0 170.38,0 170.38,-19.25"/>
 <text text-anchor="middle" x="124.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">hash_chain::hash</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
-<g id="edge10" class="edge">
+<g id="edge10_Node000001_Node000007" class="edge">
 <title>Node1&#45;&gt;Node7</title>
+<g id="a_edge10_Node000001_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M24.91,-93.86C33.47,-79.15 51.4,-51.18 73,-33.62 77.09,-30.3 81.72,-27.3 86.47,-24.64"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="87.93,-27.32 95.25,-19.66 84.75,-21.08 87.93,-27.32"/>
+</a>
+</g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
+<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M154.81,-188.54C172.97,-182.37 195.91,-174.58 212.93,-168.8"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="213.81,-171.86 222.16,-165.33 211.56,-165.23 213.81,-171.86"/>
+</a>
+</g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000004_Node000005" class="edge">
 <title>Node4&#45;&gt;Node5</title>
+<g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M175.5,-85.62C183.68,-85.62 192.03,-85.62 199.82,-85.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="199.76,-89.13 209.76,-85.62 199.76,-82.13 199.76,-89.13"/>
+</a>
+</g>
 </g>
 <!-- Node6&#45;&gt;Node3 -->
-<g id="edge8" class="edge">
+<g id="edge8_Node000006_Node000003" class="edge">
 <title>Node6&#45;&gt;Node3</title>
+<g id="a_edge8_Node000006_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M154.81,-132.71C172.97,-138.88 195.91,-146.67 212.93,-152.45"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="211.56,-156.02 222.16,-155.92 213.81,-149.39 211.56,-156.02"/>
+</a>
+</g>
 </g>
 <!-- Node6&#45;&gt;Node5 -->
-<g id="edge7" class="edge">
+<g id="edge7_Node000006_Node000005" class="edge">
 <title>Node6&#45;&gt;Node5</title>
+<g id="a_edge7_Node000006_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M155.7,-112.51C169.65,-107.9 186.27,-102.4 200.84,-97.58"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="201.62,-100.68 210.02,-94.22 199.42,-94.04 201.62,-100.68"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

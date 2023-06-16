@@ -1,9 +1,20 @@
 <map id="divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm" name="divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm">
-<area shape="rect" id="node1" title="The main function implements Karatsuba&#39;s algorithm for fast multiplication." alt="" coords="5,94,152,150"/>
-<area shape="rect" id="node2" href="$da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp.html#ad76f5cac3ef8dc034f6abb99b64c2b20" title="Binary addition." alt="" coords="200,61,346,116"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="420,6,492,32"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="400,141,511,167"/>
-<area shape="rect" id="node6" href="$da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp.html#aad9e3edfe156b59fc06a5585403fe0d6" title="Wrapper function for substr that considers leading zeros." alt="" coords="200,215,346,271"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/at.html#" title=" " alt="" coords="407,76,505,101"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/substr.html#" title=" " alt="" coords="394,230,517,256"/>
+<area shape="rect" id="Node000001" title="The main function implements Karatsuba&#39;s algorithm for fast multiplication." alt="" coords="5,94,152,150"/>
+<area shape="rect" id="Node000002" href="$da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp.html#ad76f5cac3ef8dc034f6abb99b64c2b20" title="Binary addition." alt="" coords="200,61,346,116"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,107,185,101,186,106,153,112"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="420,6,492,32"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="102,92,144,53,170,36,199,22,252,8,308,3,360,4,405,8,405,14,360,9,308,9,253,14,201,27,173,40,148,58,106,96"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="400,141,511,167"/>
+<area shape="poly" id="edge11_Node000001_Node000005" title=" " alt="" coords="152,125,385,145,385,151,152,131"/>
+<area shape="rect" id="Node000006" href="$da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp.html#aad9e3edfe156b59fc06a5585403fe0d6" title="Wrapper function for substr that considers leading zeros." alt="" coords="200,215,346,271"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="126,148,216,205,213,209,123,153"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="236,60,237,50,243,42,256,36,273,34,293,37,305,44,302,49,291,42,273,39,257,41,247,46,242,52,242,60"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/at.html#" title=" " alt="" coords="407,76,505,101"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="346,86,391,86,391,91,346,91"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="345,58,405,35,407,40,347,63"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="347,112,404,133,403,138,346,117"/>
+<area shape="poly" id="edge9_Node000006_Node000005" title=" " alt="" coords="330,212,413,171,415,176,332,217"/>
+<area shape="poly" id="edge8_Node000006_Node000006" title=" " alt="" coords="236,215,237,205,243,196,256,191,273,189,293,191,305,199,302,203,291,196,273,194,257,196,247,200,242,207,242,215"/>
+<area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/substr.html#" title=" " alt="" coords="394,230,517,256"/>
+<area shape="poly" id="edge10_Node000006_Node000007" title=" " alt="" coords="346,240,379,240,379,246,346,246"/>
 </map>

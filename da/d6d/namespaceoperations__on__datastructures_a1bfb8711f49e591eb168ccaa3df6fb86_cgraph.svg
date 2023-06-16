@@ -6,12 +6,22 @@
 <!-- Title: operations_on_datastructures::shift_right Pages: 1 -->
 <svg width="275pt" height="57pt"
  viewBox="0.00 0.00 274.75 56.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 52.5)">
 <title>operations_on_datastructures::shift_right</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Shifts the given vector to the right by the shift amount and returns a new vector with the result....">
+<g id="a_Node000001"><a xlink:title="Shifts the given vector to the right by the shift amount and returns a new vector with the result....">
 <polygon fill="#999999" stroke="#666666" points="144.25,-30.5 0,-30.5 0,0 144.25,0 144.25,-30.5"/>
 <text text-anchor="start" x="8" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">operations_on_datastructures</text>
 <text text-anchor="middle" x="72.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">::shift_right</text>
@@ -19,25 +29,46 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node1 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000001" class="edge">
 <title>Node1&#45;&gt;Node1</title>
+<g id="a_edge1_Node000001_Node000001"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M45.3,-30.99C39.83,-40.06 48.77,-48.5 72.12,-48.5 85.26,-48.5 93.84,-45.83 97.86,-41.88"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="101.43,-42.29 98.95,-31.99 94.47,-41.59 101.43,-42.29"/>
+</a>
+</g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
+<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="266.75,-24.88 180.25,-24.88 180.25,-5.63 266.75,-5.63 266.75,-24.88"/>
 <text text-anchor="middle" x="223.5" y="-11.38" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge2_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M144.75,-15.25C152.89,-15.25 161.08,-15.25 168.94,-15.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="168.77,-18.75 178.77,-15.25 168.77,-11.75 168.77,-18.75"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

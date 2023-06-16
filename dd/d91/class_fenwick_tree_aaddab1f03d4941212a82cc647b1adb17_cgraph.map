@@ -1,7 +1,11 @@
 <map id="FenwickTree::FenwickTree" name="FenwickTree::FenwickTree">
-<area shape="rect" id="node1" title=" " alt="" coords="5,55,185,80"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/assign.html#" title=" " alt="" coords="240,5,369,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="247,55,362,80"/>
-<area shape="rect" id="node4" href="$dd/d91/class_fenwick_tree.html#a2e9ea4fcbe0786487f4535c1cfc7aa00" title=" " alt="" coords="233,104,376,130"/>
-<area shape="rect" id="node5" href="$dd/d91/class_fenwick_tree.html#aaae15ea71455315e257baa11017cec10" title=" " alt="" coords="424,104,561,130"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,185,80"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/assign.html#" title=" " alt="" coords="240,5,369,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,51,232,32,233,38,153,57"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="247,55,362,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,65,232,65,232,70,185,70"/>
+<area shape="rect" id="Node000004" href="$dd/d91/class_fenwick_tree.html#a2e9ea4fcbe0786487f4535c1cfc7aa00" title=" " alt="" coords="233,104,376,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="153,78,233,97,232,103,152,84"/>
+<area shape="rect" id="Node000005" href="$dd/d91/class_fenwick_tree.html#aaae15ea71455315e257baa11017cec10" title=" " alt="" coords="424,104,561,130"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="376,114,410,114,410,120,376,120"/>
 </map>

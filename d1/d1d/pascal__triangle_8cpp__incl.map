@@ -1,6 +1,9 @@
 <map id="others/pascal_triangle.cpp" name="others/pascal_triangle.cpp">
-<area shape="rect" id="node1" title="Pascal&#39;s triangle implementation." alt="" coords="37,5,210,31"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,79,66,105"/>
-<area shape="rect" id="node3" title=" " alt="" coords="90,79,157,105"/>
-<area shape="rect" id="node4" title=" " alt="" coords="181,79,253,105"/>
+<area shape="rect" id="Node000001" title="Pascal&#39;s triangle implementation." alt="" coords="37,5,210,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,66,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,34,63,72,60,67,107,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="90,79,157,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="126,31,126,64,121,64,121,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="181,79,253,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="141,29,191,68,188,72,138,34"/>
 </map>

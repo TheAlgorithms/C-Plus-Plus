@@ -1,4 +1,6 @@
 <map id="operations_on_datastructures::reverse_binary_tree::BinaryTree" name="operations_on_datastructures::reverse_binary_tree::BinaryTree">
-<area shape="rect" id="node1" title="A Binary Tree class that implements a Binary Search Tree (BST) by default." alt="" coords="5,109,220,150"/>
-<area shape="rect" id="node2" href="$d8/dfd/structoperations__on__datastructures_1_1reverse__binary__tree_1_1_node.html" title="A Node struct that represents a single node in a Binary Tree." alt="" coords="16,5,209,46"/>
+<area shape="rect" id="Node000001" title="A Binary Tree class that implements a Binary Search Tree (BST) by default." alt="" coords="5,109,220,150"/>
+<area shape="rect" id="Node000002" href="$d8/dfd/structoperations__on__datastructures_1_1reverse__binary__tree_1_1_node.html" title="A Node struct that represents a single node in a Binary Tree." alt="" coords="16,5,209,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,61,115,109,110,109,110,61"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="225,17,235,26,227,34,210,37,209,32,225,29,230,26,222,21"/>
 </map>

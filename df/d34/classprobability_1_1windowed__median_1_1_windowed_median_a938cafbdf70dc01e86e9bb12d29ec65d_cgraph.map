@@ -1,4 +1,5 @@
 <map id="probability::windowed_median::WindowedMedian::getMedian" name="probability::windowed_median::WindowedMedian::getMedian">
-<area shape="rect" id="node1" title="Gets the median of the values in the sliding window." alt="" coords="5,5,187,61"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/multiset/size.html#" title=" " alt="" coords="235,20,360,46"/>
+<area shape="rect" id="Node000001" title="Gets the median of the values in the sliding window." alt="" coords="5,5,187,61"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/multiset/size.html#" title=" " alt="" coords="235,20,360,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,31,220,31,220,36,187,36"/>
 </map>

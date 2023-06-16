@@ -1,5 +1,7 @@
 <map id="machine_learning::aystar_search::AyStarSearch::Solution" name="machine_learning::aystar_search::AyStarSearch::Solution">
-<area shape="rect" id="node1" title="A helper solution: launches when a solution for AyStarSearch is found." alt="" coords="5,16,172,71"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/emplace_back.html#" title=" " alt="" coords="220,5,395,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/map/find.html#" title=" " alt="" coords="257,55,358,80"/>
+<area shape="rect" id="Node000001" title="A helper solution: launches when a solution for AyStarSearch is found." alt="" coords="5,16,172,71"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/emplace_back.html#" title=" " alt="" coords="220,5,395,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,31,205,27,205,33,172,36"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/map/find.html#" title=" " alt="" coords="257,55,358,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,50,243,58,242,63,172,55"/>
 </map>

@@ -1,5 +1,8 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,5,55,31"/>
-<area shape="rect" id="node2" href="$d9/d02/linear__search_8cpp.html#a84ac3988a534eb60ca351ed6caf56d84" title="for IO operations" alt="" coords="201,5,298,31"/>
-<area shape="rect" id="node3" href="$d9/d02/linear__search_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e" title="Self&#45;test implementations." alt="" coords="103,31,153,56"/>
+<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,5,55,31"/>
+<area shape="rect" id="Node000002" href="$d9/d02/linear__search_8cpp.html#a84ac3988a534eb60ca351ed6caf56d84" title="for IO operations" alt="" coords="201,5,298,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,16,186,16,186,21,55,21"/>
+<area shape="rect" id="Node000003" href="$d9/d02/linear__search_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e" title="Self&#45;test implementations." alt="" coords="103,31,153,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,22,89,31,88,36,54,27"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="153,36,186,29,187,34,154,41"/>
 </map>

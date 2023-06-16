@@ -1,5 +1,9 @@
 <map id="graph::disjoint_union::union_sets" name="graph::disjoint_union::union_sets">
-<area shape="rect" id="node1" title="Merge 2 components to become one." alt="" coords="5,59,146,99"/>
-<area shape="rect" id="node2" href="$d8/d99/connected__components__with__dsu_8cpp.html#a469384d8a4197a9b24482ce7c321a85e" title="Find the component where following node belongs to." alt="" coords="194,29,334,70"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="225,94,303,120"/>
+<area shape="rect" id="Node000001" title="Merge 2 components to become one." alt="" coords="5,59,146,99"/>
+<area shape="poly" id="edge4_Node000001_Node000001" title=" " alt="" coords="40,59,38,49,44,40,56,34,76,32,97,35,109,41,106,46,95,40,75,37,58,39,47,44,43,50,45,57"/>
+<area shape="rect" id="Node000002" href="$d8/d99/connected__components__with__dsu_8cpp.html#a469384d8a4197a9b24482ce7c321a85e" title="Find the component where following node belongs to." alt="" coords="194,29,334,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,65,179,60,179,65,146,71"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="225,94,303,120"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="146,87,210,96,209,102,146,92"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="228,29,226,19,232,10,245,5,264,3,285,5,297,12,295,17,283,10,264,8,246,10,235,15,231,20,233,28"/>
 </map>

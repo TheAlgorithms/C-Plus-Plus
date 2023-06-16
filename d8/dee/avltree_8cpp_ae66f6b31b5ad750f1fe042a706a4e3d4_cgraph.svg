@@ -6,196 +6,266 @@
 <!-- Title: main Pages: 1 -->
 <svg width="286pt" height="285pt"
  viewBox="0.00 0.00 286.25 285.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 281.25)">
 <title>main</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Main function.">
+<g id="a_Node000001"><a xlink:title="Main function.">
 <polygon fill="#999999" stroke="#666666" points="37,-194.25 0,-194.25 0,-175 37,-175 37,-194.25"/>
 <text text-anchor="middle" x="18.5" y="-180.75" font-family="Helvetica,sans-Serif" font-size="10.00">main</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d8/dee/avltree_8cpp.html#a82659e9e223e520cf91d7e55c4a3f88c" target="_top" xlink:title="calls delete on every node">
+<g id="a_Node000002"><a xlink:href="../../d8/dee/avltree_8cpp.html#a82659e9e223e520cf91d7e55c4a3f88c" target="_top" xlink:title="calls delete on every node">
 <polygon fill="white" stroke="#666666" points="155,-259.25 73,-259.25 73,-240 155,-240 155,-259.25"/>
 <text text-anchor="middle" x="114" y="-245.75" font-family="Helvetica,sans-Serif" font-size="10.00">deleteAllNodes</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M29.03,-194.6C39.21,-204.84 56.16,-220.79 73,-231.62 74.73,-232.74 76.54,-233.82 78.39,-234.85"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="76.36,-238.26 86.86,-239.69 79.55,-232.03 76.36,-238.26"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d8/dee/avltree_8cpp.html#aa29a7fdc2db1784f5a6e25025ff7cbf5" target="_top" xlink:title="removes a given element from AVL tree">
+<g id="a_Node000003"><a xlink:href="../../d8/dee/avltree_8cpp.html#aa29a7fdc2db1784f5a6e25025ff7cbf5" target="_top" xlink:title="removes a given element from AVL tree">
 <polygon fill="white" stroke="#666666" points="146.75,-167.25 81.25,-167.25 81.25,-148 146.75,-148 146.75,-167.25"/>
 <text text-anchor="middle" x="114" y="-153.75" font-family="Helvetica,sans-Serif" font-size="10.00">deleteNode</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge3_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M37.09,-179.55C46.66,-176.78 58.95,-173.23 70.84,-169.8"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="71.47,-172.97 80.11,-166.83 69.53,-166.25 71.47,-172.97"/>
+</a>
+</g>
 </g>
 <!-- Node6 -->
-<g id="node6" class="node">
+<g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="../../d8/dee/avltree_8cpp.html#a2473fe7416332495b2678ebe89652e4b" target="_top" xlink:title="inserts a new element into AVL tree">
+<g id="a_Node000006"><a xlink:href="../../d8/dee/avltree_8cpp.html#a2473fe7416332495b2678ebe89652e4b" target="_top" xlink:title="inserts a new element into AVL tree">
 <polygon fill="white" stroke="#666666" points="134,-93.25 94,-93.25 94,-74 134,-74 134,-93.25"/>
 <text text-anchor="middle" x="114" y="-79.75" font-family="Helvetica,sans-Serif" font-size="10.00">insert</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
-<g id="edge8" class="edge">
+<g id="edge8_Node000001_Node000006" class="edge">
 <title>Node1&#45;&gt;Node6</title>
+<g id="a_edge8_Node000001_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M28.81,-174.57C44.56,-157.56 76.68,-122.86 96.37,-101.59"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="98.51,-104.35 102.73,-94.64 93.37,-99.6 98.51,-104.35"/>
+</a>
+</g>
 </g>
 <!-- Node11 -->
-<g id="node11" class="node">
+<g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_node11"><a xlink:href="../../d8/dee/avltree_8cpp.html#ae197eb50188fb761346952b9b5f6be59" target="_top" xlink:title="prints given tree in the LevelOrder">
+<g id="a_Node000011"><a xlink:href="../../d8/dee/avltree_8cpp.html#ae197eb50188fb761346952b9b5f6be59" target="_top" xlink:title="prints given tree in the LevelOrder">
 <polygon fill="white" stroke="#666666" points="144.12,-222.25 83.88,-222.25 83.88,-203 144.12,-203 144.12,-222.25"/>
 <text text-anchor="middle" x="114" y="-208.75" font-family="Helvetica,sans-Serif" font-size="10.00">levelOrder</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node11 -->
-<g id="edge14" class="edge">
+<g id="edge14_Node000001_Node000011" class="edge">
 <title>Node1&#45;&gt;Node11</title>
+<g id="a_edge14_Node000001_Node000011"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M37.09,-189.89C47.34,-192.96 60.7,-196.96 73.35,-200.75"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="72.14,-204.34 82.73,-203.86 74.15,-197.64 72.14,-204.34"/>
+</a>
+</g>
 </g>
 <!-- Node2&#45;&gt;Node2 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000002_Node000002" class="edge">
 <title>Node2&#45;&gt;Node2</title>
+<g id="a_edge2_Node000002_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M99.05,-259.54C92.23,-268.15 97.21,-277.25 114,-277.25 123.44,-277.25 129.15,-274.37 131.12,-270.32"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="134.36,-269.65 128.95,-260.54 127.5,-271.03 134.36,-269.65"/>
+</a>
+</g>
 </g>
 <!-- Node3&#45;&gt;Node3 -->
-<g id="edge5" class="edge">
+<g id="edge5_Node000003_Node000003" class="edge">
 <title>Node3&#45;&gt;Node3</title>
+<g id="a_edge5_Node000003_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M99.05,-167.54C92.23,-176.15 97.21,-185.25 114,-185.25 123.44,-185.25 129.15,-182.37 131.12,-178.32"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="134.36,-177.65 128.95,-168.54 127.5,-179.03 134.36,-177.65"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/data.html#" xlink:title=" ">
+<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/data.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="278.25,-222.25 191,-222.25 191,-203 278.25,-203 278.25,-222.25"/>
 <text text-anchor="middle" x="234.62" y="-208.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::data</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000003_Node000004" class="edge">
 <title>Node3&#45;&gt;Node4</title>
+<g id="a_edge4_Node000003_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M134.86,-167.66C150.12,-175.27 171.76,-185.89 191,-194.62 193.65,-195.83 196.41,-197.05 199.18,-198.27"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="197.61,-201.83 208.18,-202.57 200.38,-195.4 197.61,-201.83"/>
+</a>
+</g>
 </g>
 <!-- Node5 -->
-<g id="node5" class="node">
+<g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="../../d8/dee/avltree_8cpp.html#a5fa160a678a34dd51c0aea1c0c00ed5e" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="../../d8/dee/avltree_8cpp.html#a5fa160a678a34dd51c0aea1c0c00ed5e" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="262.5,-167.25 206.75,-167.25 206.75,-148 262.5,-148 262.5,-167.25"/>
 <text text-anchor="middle" x="234.62" y="-153.75" font-family="Helvetica,sans-Serif" font-size="10.00">minValue</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node5 -->
-<g id="edge6" class="edge">
+<g id="edge6_Node000003_Node000005" class="edge">
 <title>Node3&#45;&gt;Node5</title>
+<g id="a_edge6_Node000003_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M147.1,-157.62C162.01,-157.62 179.85,-157.62 195.44,-157.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="195.33,-161.13 205.33,-157.62 195.33,-154.13 195.33,-161.13"/>
+</a>
+</g>
 </g>
 <!-- Node5&#45;&gt;Node5 -->
-<g id="edge7" class="edge">
+<g id="edge7_Node000005_Node000005" class="edge">
 <title>Node5&#45;&gt;Node5</title>
+<g id="a_edge7_Node000005_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M215.74,-167.54C207.13,-176.15 213.42,-185.25 234.62,-185.25 246.88,-185.25 254.16,-182.21 256.45,-177.98"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="259.59,-177.21 253.51,-168.54 252.85,-179.11 259.59,-177.21"/>
+</a>
+</g>
 </g>
 <!-- Node6&#45;&gt;Node6 -->
-<g id="edge11" class="edge">
+<g id="edge11_Node000006_Node000006" class="edge">
 <title>Node6&#45;&gt;Node6</title>
+<g id="a_edge11_Node000006_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M99.05,-93.54C92.23,-102.15 97.21,-111.25 114,-111.25 123.44,-111.25 129.15,-108.37 131.12,-104.32"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="134.36,-103.65 128.95,-94.54 127.5,-105.03 134.36,-103.65"/>
+</a>
+</g>
 </g>
 <!-- Node7 -->
-<g id="node7" class="node">
+<g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="../../d8/dee/avltree_8cpp.html#a48d897353aeb6a721dbc6b6c57e035e6" target="_top" xlink:title="creates and returns a new node">
+<g id="a_Node000007"><a xlink:href="../../d8/dee/avltree_8cpp.html#a48d897353aeb6a721dbc6b6c57e035e6" target="_top" xlink:title="creates and returns a new node">
 <polygon fill="white" stroke="#666666" points="267.75,-130.25 201.5,-130.25 201.5,-111 267.75,-111 267.75,-130.25"/>
 <text text-anchor="middle" x="234.62" y="-116.75" font-family="Helvetica,sans-Serif" font-size="10.00">createNode</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node7 -->
-<g id="edge9" class="edge">
+<g id="edge9_Node000006_Node000007" class="edge">
 <title>Node6&#45;&gt;Node7</title>
+<g id="a_edge9_Node000006_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M134.32,-89.65C149.61,-94.42 171.54,-101.26 190.9,-107.3"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="189.74,-110.92 200.33,-110.55 191.83,-104.23 189.74,-110.92"/>
+</a>
+</g>
 </g>
 <!-- Node8 -->
-<g id="node8" class="node">
+<g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="../../d8/dee/avltree_8cpp.html#aaa457ffec24c9643f2768e7a65e96546" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="../../d8/dee/avltree_8cpp.html#aaa457ffec24c9643f2768e7a65e96546" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="267,-93.25 202.25,-93.25 202.25,-74 267,-74 267,-93.25"/>
 <text text-anchor="middle" x="234.62" y="-79.75" font-family="Helvetica,sans-Serif" font-size="10.00">getBalance</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node8 -->
-<g id="edge10" class="edge">
+<g id="edge10_Node000006_Node000008" class="edge">
 <title>Node6&#45;&gt;Node8</title>
+<g id="a_edge10_Node000006_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M134.32,-83.62C149.65,-83.62 171.65,-83.62 191.05,-83.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="190.8,-87.13 200.8,-83.62 190.8,-80.13 190.8,-87.13"/>
+</a>
+</g>
 </g>
 <!-- Node9 -->
-<g id="node9" class="node">
+<g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="../../d8/dee/avltree_8cpp.html#a473eee1803e4e44a54d685e4b0eef5a6" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="../../d8/dee/avltree_8cpp.html#a473eee1803e4e44a54d685e4b0eef5a6" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="264,-56.25 205.25,-56.25 205.25,-37 264,-37 264,-56.25"/>
 <text text-anchor="middle" x="234.62" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">leftRotate</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node9 -->
-<g id="edge12" class="edge">
+<g id="edge12_Node000006_Node000009" class="edge">
 <title>Node6&#45;&gt;Node9</title>
+<g id="a_edge12_Node000006_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M134.32,-77.6C150.57,-72.53 174.32,-65.12 194.52,-58.82"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="195.49,-61.87 204,-55.55 193.41,-55.19 195.49,-61.87"/>
+</a>
+</g>
 </g>
 <!-- Node10 -->
-<g id="node10" class="node">
+<g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_node10"><a xlink:href="../../d8/dee/avltree_8cpp.html#adfc1d482a564c041756719667b955b8c" target="_top" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="../../d8/dee/avltree_8cpp.html#adfc1d482a564c041756719667b955b8c" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="266.62,-19.25 202.62,-19.25 202.62,0 266.62,0 266.62,-19.25"/>
 <text text-anchor="middle" x="234.62" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">rightRotate</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node10 -->
-<g id="edge13" class="edge">
+<g id="edge13_Node000006_Node000010" class="edge">
 <title>Node6&#45;&gt;Node10</title>
+<g id="a_edge13_Node000006_Node000010"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M126.77,-73.58C141.22,-61.58 166.78,-41.4 191,-27.62 192.96,-26.51 195.01,-25.42 197.1,-24.37"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="198.44,-27.13 206.01,-19.72 195.47,-20.79 198.44,-27.13"/>
+</a>
+</g>
 </g>
 <!-- Node11&#45;&gt;Node4 -->
-<g id="edge15" class="edge">
+<g id="edge15_Node000011_Node000004" class="edge">
 <title>Node11&#45;&gt;Node4</title>
+<g id="a_edge15_Node000011_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M144.32,-212.62C155.15,-212.62 167.78,-212.62 180.08,-212.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="179.75,-216.13 189.75,-212.62 179.75,-209.13 179.75,-216.13"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

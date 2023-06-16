@@ -1,5 +1,7 @@
 <map id="range_queries::heavy_light_decomposition::Tree::Tree" name="range_queries::heavy_light_decomposition::Tree::Tree">
-<area shape="rect" id="node1" title="Class parameterized constructor, resizes the and initializes the data members." alt="" coords="5,16,151,71"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/assign.html#" title=" " alt="" coords="199,5,328,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/resize.html#" title=" " alt="" coords="200,55,327,80"/>
+<area shape="rect" id="Node000001" title="Class parameterized constructor, resizes the and initializes the data members." alt="" coords="5,16,151,71"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/assign.html#" title=" " alt="" coords="199,5,328,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,31,184,26,184,32,151,36"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/resize.html#" title=" " alt="" coords="200,55,327,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,50,186,55,185,60,151,56"/>
 </map>

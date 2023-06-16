@@ -6,12 +6,22 @@
 <!-- Title: numerical_methods/qr_decompose.h Pages: 1 -->
 <svg width="250pt" height="105pt"
  viewBox="0.00 0.00 250.00 105.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 101)">
 <title>numerical_methods/qr_decompose.h</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Library functions to compute QR decomposition of a given matrix.">
+<g id="a_Node000001"><a xlink:title="Library functions to compute QR decomposition of a given matrix.">
 <polygon fill="#999999" stroke="#666666" points="177,-97 65,-97 65,-66.5 177,-66.5 177,-97"/>
 <text text-anchor="start" x="73" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">numerical_methods/qr</text>
 <text text-anchor="middle" x="121" y="-72.25" font-family="Helvetica,sans-Serif" font-size="10.00">_decompose.h</text>
@@ -19,9 +29,9 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d3/d24/qr__decomposition_8cpp.html" target="_top" xlink:title="Program to compute the QR decomposition of a given matrix.">
+<g id="a_Node000002"><a xlink:href="../../d3/d24/qr__decomposition_8cpp.html" target="_top" xlink:title="Program to compute the QR decomposition of a given matrix.">
 <polygon fill="white" stroke="#666666" points="112,-30.5 0,-30.5 0,0 112,0 112,-30.5"/>
 <text text-anchor="start" x="8" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">numerical_methods/qr</text>
 <text text-anchor="middle" x="56" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">_decomposition.cpp</text>
@@ -29,15 +39,18 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M98.54,-58.46C89.32,-49.32 78.91,-38.98 70.69,-30.83"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="95.69,-60.55 105.25,-65.11 100.62,-55.59 95.69,-60.55"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../de/d75/qr__eigen__values_8cpp.html" target="_top" xlink:title="Compute real eigen values and eigen vectors of a symmetric matrix using QR decomposition method.">
+<g id="a_Node000003"><a xlink:href="../../de/d75/qr__eigen__values_8cpp.html" target="_top" xlink:title="Compute real eigen values and eigen vectors of a symmetric matrix using QR decomposition method.">
 <polygon fill="white" stroke="#666666" points="242,-30.5 130,-30.5 130,0 242,0 242,-30.5"/>
 <text text-anchor="start" x="138" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">numerical_methods/qr</text>
 <text text-anchor="middle" x="186" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">_eigen_values.cpp</text>
@@ -45,10 +58,28 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M143.46,-58.46C152.68,-49.32 163.09,-38.98 171.31,-30.83"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="141.38,-55.59 136.75,-65.11 146.31,-60.55 141.38,-55.59"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

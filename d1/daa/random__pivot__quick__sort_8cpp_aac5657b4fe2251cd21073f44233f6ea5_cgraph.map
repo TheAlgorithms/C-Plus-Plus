@@ -1,3 +1,4 @@
 <map id="sorting::random_pivot_quick_sort::getRandomIndex" name="sorting::random_pivot_quick_sort::getRandomIndex">
-<area shape="rect" id="node1" title="Takes the start and end indices of an array and returns a random int64_teger between the range of tho..." alt="" coords="5,29,201,70"/>
+<area shape="rect" id="Node000001" title="Takes the start and end indices of an array and returns a random int64_teger between the range of tho..." alt="" coords="5,29,201,70"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="66,29,64,19,70,10,83,5,103,3,125,5,137,12,135,17,123,10,103,8,85,10,73,15,69,20,71,28"/>
 </map>

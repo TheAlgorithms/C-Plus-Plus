@@ -1,3 +1,4 @@
 <map id="backtracking::graph_coloring::isSafe" name="backtracking::graph_coloring::isSafe">
-<area shape="rect" id="node1" title="Utility function to check if the current color assignment is safe for vertex v." alt="" coords="5,29,141,70"/>
+<area shape="rect" id="Node000001" title="Utility function to check if the current color assignment is safe for vertex v." alt="" coords="5,29,141,70"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="46,29,45,20,49,11,59,5,73,3,89,5,98,12,94,16,87,10,73,8,61,10,53,14,50,20,52,28"/>
 </map>

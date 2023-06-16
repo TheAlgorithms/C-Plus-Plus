@@ -22,9 +22,10 @@ var searchData=
   ['array_3c_20int64_5ft_2c_20n_20_3e_19',['array&lt; int64_t, N &gt;',['http://en.cppreference.com/w/cpp/container/array.html',0,'std']]],
   ['array_3c_20std_3a_3aarray_3c_20int64_5ft_2c_20n_20_3e_2c_20m_20_3e_20',['array&lt; std::array&lt; int64_t, N &gt;, M &gt;',['http://en.cppreference.com/w/cpp/container/array.html',0,'std']]],
   ['array_3c_20std_3a_3aarray_3c_20uint32_5ft_2c_203_20_3e_2c_203_20_3e_21',['array&lt; std::array&lt; uint32_t, 3 &gt;, 3 &gt;',['http://en.cppreference.com/w/cpp/container/array.html',0,'std']]],
-  ['array_3c_20uint64_5ft_2c_20n_20_3e_22',['array&lt; uint64_t, N &gt;',['http://en.cppreference.com/w/cpp/container/array.html',0,'std']]],
-  ['atomic_23',['atomic',['http://en.cppreference.com/w/cpp/atomic/atomic.html',0,'std']]],
-  ['atomic_5fflag_24',['atomic_flag',['http://en.cppreference.com/w/cpp/atomic/atomic_flag.html',0,'std']]],
-  ['auto_5fptr_25',['auto_ptr',['http://en.cppreference.com/w/cpp/memory/auto_ptr.html',0,'std']]],
-  ['aystarsearch_26',['AyStarSearch',['../da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html',1,'machine_learning::aystar_search']]]
+  ['array_3c_20uint32_5ft_2c_208_20_3e_22',['array&lt; uint32_t, 8 &gt;',['http://en.cppreference.com/w/cpp/container/array.html',0,'std']]],
+  ['array_3c_20uint64_5ft_2c_20n_20_3e_23',['array&lt; uint64_t, N &gt;',['http://en.cppreference.com/w/cpp/container/array.html',0,'std']]],
+  ['atomic_24',['atomic',['http://en.cppreference.com/w/cpp/atomic/atomic.html',0,'std']]],
+  ['atomic_5fflag_25',['atomic_flag',['http://en.cppreference.com/w/cpp/atomic/atomic_flag.html',0,'std']]],
+  ['auto_5fptr_26',['auto_ptr',['http://en.cppreference.com/w/cpp/memory/auto_ptr.html',0,'std']]],
+  ['aystarsearch_27',['AyStarSearch',['../da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html',1,'machine_learning::aystar_search']]]
 ];

@@ -1,4 +1,5 @@
 <map id="math::cylinder_volume" name="math::cylinder_volume">
-<area shape="rect" id="node1" title="The volume of a cylinder" alt="" coords="5,5,158,31"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="206,5,277,31"/>
+<area shape="rect" id="Node000001" title="The volume of a cylinder" alt="" coords="5,5,158,31"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="206,5,277,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,16,191,16,191,21,158,21"/>
 </map>

@@ -1,11 +1,27 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,82,55,108"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="814,119,885,145"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/size.html#" title=" " alt="" coords="103,131,211,157"/>
-<area shape="rect" id="node4" href="$d1/daa/random__pivot__quick__sort_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="135,82,179,108"/>
-<area shape="rect" id="node5" href="$d5/d58/class_test_cases.html#aeabea90c02f9159e4a784bbf736e1e23" title="Executes test cases." alt="" coords="259,119,401,145"/>
-<area shape="rect" id="node6" href="$d5/d58/class_test_cases.html#aa3aa3d5bf666f327ee8e2d11d397b06e" title="A function to print given message on console." alt="" coords="657,195,766,221"/>
-<area shape="rect" id="node7" href="$d5/d58/class_test_cases.html#ac2636e8b5b9e053374c45bfcf0603008" title="A test case contains edge case, printing inorder successor of last node." alt="" coords="449,95,609,121"/>
-<area shape="rect" id="node8" href="$d5/d58/class_test_cases.html#abae0148985f159b582a385cf399254e3" title="A test case which contains main list of 100 elements and sublist of 20." alt="" coords="449,145,609,170"/>
-<area shape="rect" id="node9" href="$d5/d58/class_test_cases.html#ad9f95c09931625b41e3be1f88d1e28c5" title="A test case which contains main list of 50 elements and sublist of 20." alt="" coords="449,246,609,272"/>
+<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,82,55,108"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="814,119,885,145"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,80,103,57,170,32,248,11,288,5,329,3,530,3,600,6,653,18,704,38,767,68,798,87,825,108,822,112,795,91,765,73,702,43,652,23,599,11,530,8,329,8,289,10,249,17,172,37,105,62,56,85"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/size.html#" title=" " alt="" coords="103,131,211,157"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,102,109,123,107,128,54,107"/>
+<area shape="rect" id="Node000004" href="$d1/daa/random__pivot__quick__sort_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="135,82,179,108"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="55,92,120,92,120,97,55,97"/>
+<area shape="rect" id="Node000005" href="$d5/d58/class_test_cases.html#aeabea90c02f9159e4a784bbf736e1e23" title="Executes test cases." alt="" coords="259,119,401,145"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="180,97,254,113,253,118,179,102"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="354,116,397,96,449,80,538,67,608,67,679,79,767,100,803,111,802,116,765,105,678,84,608,73,538,72,450,85,399,101,357,121"/>
+<area shape="rect" id="Node000006" href="$d5/d58/class_test_cases.html#aa3aa3d5bf666f327ee8e2d11d397b06e" title="A function to print given message on console." alt="" coords="657,195,766,221"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="358,143,400,163,450,180,550,198,642,204,642,210,549,203,449,185,398,168,355,148"/>
+<area shape="rect" id="Node000007" href="$d5/d58/class_test_cases.html#ac2636e8b5b9e053374c45bfcf0603008" title="A test case contains edge case, printing inorder successor of last node." alt="" coords="449,95,609,121"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="401,121,434,117,435,122,402,126"/>
+<area shape="rect" id="Node000008" href="$d5/d58/class_test_cases.html#abae0148985f159b582a385cf399254e3" title="A test case which contains main list of 100 elements and sublist of 20." alt="" coords="449,145,609,170"/>
+<area shape="poly" id="edge11_Node000005_Node000008" title=" " alt="" coords="402,138,435,143,434,148,401,144"/>
+<area shape="rect" id="Node000009" href="$d5/d58/class_test_cases.html#ad9f95c09931625b41e3be1f88d1e28c5" title="A test case which contains main list of 50 elements and sublist of 20." alt="" coords="449,246,609,272"/>
+<area shape="poly" id="edge14_Node000005_Node000009" title=" " alt="" coords="347,143,392,182,451,224,476,237,474,242,448,229,388,187,344,147"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="735,192,811,150,813,155,738,197"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="609,111,800,126,799,131,609,117"/>
+<area shape="poly" id="edge10_Node000007_Node000006" title=" " alt="" coords="584,119,610,130,652,156,687,183,683,187,649,160,607,134,582,124"/>
+<area shape="poly" id="edge12_Node000008_Node000002" title=" " alt="" coords="609,148,799,133,800,139,609,154"/>
+<area shape="poly" id="edge13_Node000008_Node000006" title=" " alt="" coords="579,168,649,188,648,193,577,173"/>
+<area shape="poly" id="edge15_Node000009_Node000002" title=" " alt="" coords="609,262,687,256,727,247,765,231,786,216,805,197,833,157,837,160,809,200,790,220,767,236,729,252,688,262,609,268"/>
+<area shape="poly" id="edge16_Node000009_Node000006" title=" " alt="" coords="577,243,648,223,649,228,579,248"/>
 </map>

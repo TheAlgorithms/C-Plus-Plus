@@ -5,59 +5,59 @@
  -->
 <!-- Title: range_queries::perSegTree::update Pages: 1 -->
 <!--zoomable 131 -->
+
 <svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
 <style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
 .edge:hover path { stroke: red; }
 .edge:hover polygon { stroke: red; fill: red; }
 ]]></style>
-<script type="text/javascript"><![CDATA[
-var edges = document.getElementsByTagName('g');
-if (edges && edges.length) {
-  for (var i=0;i<edges.length;i++) {
-    if (edges[i].id.substr(0,4)=='edge') {
-      edges[i].setAttribute('class','edge');
-    }
-  }
-}
-]]></script>
-        <defs>
-                <circle id="rim" cx="0" cy="0" r="7"/>
-                <circle id="rim2" cx="0" cy="0" r="3.5"/>
-                <g id="zoomPlus">
-                        <use xlink:href="#rim" fill="#404040">
-                                <set attributeName="fill" to="#808080" begin="zoomplus.mouseover" end="zoomplus.mouseout"/>
-                        </use>
-                        <path d="M-4,0h8M0,-4v8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
-                </g>
-                <g id="zoomMin">
-                        <use xlink:href="#rim" fill="#404040">
-                                <set attributeName="fill" to="#808080" begin="zoomminus.mouseover" end="zoomminus.mouseout"/>
-                        </use>
-                        <path d="M-4,0h8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
-                </g>
-                <g id="dirArrow">
-                        <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-               <g id="resetDef">
-                       <use xlink:href="#rim2" fill="#404040">
-                               <set attributeName="fill" to="#808080" begin="reset.mouseover" end="reset.mouseout"/>
-                       </use>
-               </g>
-        </defs>
 
-<script type="text/javascript">
+<defs>
+  <circle id="rim" cx="0" cy="0" r="7"/>
+  <circle id="rim2" cx="0" cy="0" r="3.5"/>
+  <g id="zoomPlus">
+    <use xlink:href="#rim" fill="#404040"><set attributeName="fill" to="#808080" begin="zoomplus.mouseover" end="zoomplus.mouseout"/></use>
+    <path d="M-4,0h8M0,-4v8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
+  </g>
+  <g id="zoomMin">
+    <use xlink:href="#rim" fill="#404040"><set attributeName="fill" to="#808080" begin="zoomminus.mouseover" end="zoomminus.mouseout"/></use>
+    <path d="M-4,0h8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
+  </g>
+  <g id="arrowUp" transform="translate(30 24)">
+    <use xlink:href="#rim"/>
+    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+  </g>
+  <g id="arrowRight" transform="rotate(90) translate(36 -43)">
+    <use xlink:href="#rim"/>
+    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+  </g>
+  <g id="arrowDown" transform="rotate(180) translate(-30 -48)">
+    <use xlink:href="#rim"/>
+    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+  </g>
+  <g id="arrowLeft" transform="rotate(270) translate(-36 17)">
+    <use xlink:href="#rim"/>
+    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+  </g>
+  <g id="resetDef">
+    <use xlink:href="#rim2" fill="#404040"><set attributeName="fill" to="#808080" begin="reset.mouseover" end="reset.mouseout"/></use>
+  </g>
+</defs>
+<script type="application/ecmascript">
 var viewWidth = 648;
 var viewHeight = 131;
 var sectionId = 'dynsection-7';
 </script>
-<script xlink:href="../../svgpan.js"/>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>range_queries::perSegTree::update</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Doing range update by passing the left and right indexes of the range as well as the value to be adde...">
+<g id="a_Node000001"><a xlink:title="Doing range update by passing the left and right indexes of the range as well as the value to be adde...">
 <polygon fill="#999999" stroke="#666666" points="133,-91.5 0,-91.5 0,-61 133,-61 133,-91.5"/>
 <text text-anchor="start" x="8" y="-78" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::perSegTree</text>
 <text text-anchor="middle" x="66.5" y="-66.75" font-family="Helvetica,sans-Serif" font-size="10.00">::update</text>
@@ -65,39 +65,45 @@ var sectionId = 'dynsection-7';
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
+<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="293.38,-122.88 177.62,-122.88 177.62,-103.62 293.38,-103.62 293.38,-122.88"/>
 <text text-anchor="middle" x="235.5" y="-109.38" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::push_back</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M133.02,-90.77C148.1,-94.11 163.99,-97.63 178.61,-100.87"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="177.48,-104.42 188.01,-103.17 179,-97.59 177.48,-104.42"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
+<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="278.75,-85.88 192.25,-85.88 192.25,-66.62 278.75,-66.62 278.75,-85.88"/>
 <text text-anchor="middle" x="235.5" y="-72.38" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M133.02,-76.25C148.91,-76.25 165.7,-76.25 180.96,-76.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="180.76,-79.75 190.76,-76.25 180.76,-72.75 180.76,-79.75"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a24487eda25123bc4d112e8430821a6c6" target="_top" xlink:title="Doing range update, checking at every node if it has some value to be propagated. All nodes affected ...">
+<g id="a_Node000004"><a xlink:href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a24487eda25123bc4d112e8430821a6c6" target="_top" xlink:title="Doing range update, checking at every node if it has some value to be propagated. All nodes affected ...">
 <polygon fill="white" stroke="#666666" points="302,-30.5 169,-30.5 169,0 302,0 302,-30.5"/>
 <text text-anchor="start" x="177" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::perSegTree</text>
 <text text-anchor="middle" x="235.5" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">::update</text>
@@ -105,21 +111,27 @@ var sectionId = 'dynsection-7';
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
+<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M110.51,-60.54C132.13,-52.64 158.53,-43 181.41,-34.64"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="182.45,-37.62 190.64,-30.91 180.05,-31.05 182.45,-37.62"/>
+</a>
+</g>
 </g>
 <!-- Node4&#45;&gt;Node4 -->
-<g id="edge7" class="edge">
+<g id="edge7_Node000004_Node000004" class="edge">
 <title>Node4&#45;&gt;Node4</title>
+<g id="a_edge7_Node000004_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M205.55,-30.99C199.44,-40.06 209.42,-48.5 235.5,-48.5 250.17,-48.5 259.74,-45.83 264.23,-41.88"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="267.81,-42.31 265.45,-31.99 260.86,-41.53 267.81,-42.31"/>
+</a>
+</g>
 </g>
 <!-- Node5 -->
-<g id="node5" class="node">
+<g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#ace7f57935b3bb9446f11c239fd89ae79" target="_top" xlink:title="If there is some value to be propagated to the passed node, value is added to the node and the childr...">
+<g id="a_Node000005"><a xlink:href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#ace7f57935b3bb9446f11c239fd89ae79" target="_top" xlink:title="If there is some value to be propagated to the passed node, value is added to the node and the childr...">
 <polygon fill="white" stroke="#666666" points="471,-52.5 338,-52.5 338,-22 471,-22 471,-52.5"/>
 <text text-anchor="start" x="346" y="-39" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::perSegTree</text>
 <text text-anchor="middle" x="404.5" y="-27.75" font-family="Helvetica,sans-Serif" font-size="10.00">::lazy</text>
@@ -127,15 +139,18 @@ var sectionId = 'dynsection-7';
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000004_Node000005" class="edge">
 <title>Node4&#45;&gt;Node5</title>
+<g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M302.02,-23.88C310.16,-24.95 318.53,-26.06 326.81,-27.15"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="326.25,-30.73 336.62,-28.57 327.16,-23.79 326.25,-30.73"/>
+</a>
+</g>
 </g>
 <!-- Node6 -->
-<g id="node6" class="node">
+<g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a0cec4b77d264521717cf9b0482c45817" target="_top" xlink:title="Creating a new node with the same values of curr node.">
+<g id="a_Node000006"><a xlink:href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a0cec4b77d264521717cf9b0482c45817" target="_top" xlink:title="Creating a new node with the same values of curr node.">
 <polygon fill="white" stroke="#666666" points="640,-30.5 507,-30.5 507,0 640,0 640,-30.5"/>
 <text text-anchor="start" x="515" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::perSegTree</text>
 <text text-anchor="middle" x="573.5" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">::newKid</text>
@@ -143,58 +158,58 @@ var sectionId = 'dynsection-7';
 </g>
 </g>
 <!-- Node4&#45;&gt;Node6 -->
-<g id="edge6" class="edge">
+<g id="edge6_Node000004_Node000006" class="edge">
 <title>Node4&#45;&gt;Node6</title>
+<g id="a_edge6_Node000004_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M302.29,-13.76C314.18,-13.55 326.46,-13.36 338,-13.25 397.11,-12.67 411.89,-12.67 471,-13.25 479.03,-13.33 487.41,-13.44 495.77,-13.58"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="495.65,-17.09 505.71,-13.76 495.77,-10.09 495.65,-17.09"/>
+</a>
+</g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
-<g id="edge5" class="edge">
+<g id="edge5_Node000005_Node000006" class="edge">
 <title>Node5&#45;&gt;Node6</title>
+<g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M471.02,-28.62C479.16,-27.55 487.53,-26.44 495.81,-25.35"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="496.16,-28.71 505.62,-23.93 495.25,-21.77 496.16,-28.71"/>
+</a>
+</g>
 </g>
 </g>
 </svg>
-        <g id="navigator" transform="translate(0 0)" fill="#404254">
-                <rect fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width=".5" x="0" y="0" width="60" height="60"/>
-                <use id="zoomplus" xlink:href="#zoomPlus" x="17" y="9" onmousedown="handleZoom(evt,'in')"/>
-                <use id="zoomminus" xlink:href="#zoomMin" x="42" y="9" onmousedown="handleZoom(evt,'out')"/>
-                <use id="reset" xlink:href="#resetDef" x="30" y="36" onmousedown="handleReset()"/>
-                <g id="arrowUp" xlink:href="#dirArrow" transform="translate(30 24)" onmousedown="handlePan(0,-1)">
-                  <use xlink:href="#rim" fill="#404040">
-                        <set attributeName="fill" to="#808080" begin="arrowUp.mouseover" end="arrowUp.mouseout"/>
-                  </use>
-                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-                <g id="arrowRight" xlink:href="#dirArrow" transform="rotate(90) translate(36 -43)" onmousedown="handlePan(1,0)">
-                  <use xlink:href="#rim" fill="#404040">
-                        <set attributeName="fill" to="#808080" begin="arrowRight.mouseover" end="arrowRight.mouseout"/>
-                  </use>
-                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-                <g id="arrowDown" xlink:href="#dirArrow" transform="rotate(180) translate(-30 -48)" onmousedown="handlePan(0,1)">
-                  <use xlink:href="#rim" fill="#404040">
-                        <set attributeName="fill" to="#808080" begin="arrowDown.mouseover" end="arrowDown.mouseout"/>
-                  </use>
-                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-                <g id="arrowLeft" xlink:href="#dirArrow" transform="rotate(270) translate(-36 17)" onmousedown="handlePan(-1,0)">
-                  <use xlink:href="#rim" fill="#404040">
-                        <set attributeName="fill" to="#808080" begin="arrowLeft.mouseover" end="arrowLeft.mouseout"/>
-                  </use>
-                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-        </g>
-        <svg viewBox="0 0 15 15" width="100%" height="30px" preserveAspectRatio="xMaxYMin meet">
-         <g id="arrow_out" transform="scale(0.3 0.3)">
-          <a xlink:href="classrange__queries_1_1per_seg_tree_af87494e6cf012d28c4f5b9d1c15f9c5d_cgraph_org.svg" target="_base">
-           <rect id="button" ry="5" rx="5" y="6" x="6" height="38" width="38"
-                fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width="1.0"/>
-           <path id="arrow"
-             d="M 11.500037,31.436501 C 11.940474,20.09759 22.043105,11.32322 32.158766,21.979434 L 37.068811,17.246167 C 37.068811,17.246167 37.088388,32 37.088388,32 L 22.160133,31.978069 C 22.160133,31.978069 26.997745,27.140456 26.997745,27.140456 C 18.528582,18.264221 13.291696,25.230495 11.500037,31.436501 z"
-             style="fill:#404040;"/>
-          </a>
-         </g>
-        </svg>
+
+<g id="navigator" transform="translate(0 0)" fill="#404254">
+  <rect fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width=".5" x="0" y="0" width="60" height="60"/>
+  <use id="zoomplus" xlink:href="#zoomPlus" x="17" y="9" onmousedown="handleZoom(evt,'in')"/>
+  <use id="zoomminus" xlink:href="#zoomMin" x="42" y="9" onmousedown="handleZoom(evt,'out')"/>
+  <use id="reset" xlink:href="#resetDef" x="30" y="36" onmousedown="handleReset()"/>
+   <use id="arrowup" xlink:href="#arrowUp" x="0" y="0" onmousedown="handlePan(0,-1)"/>
+  <use id="arrowright" xlink:href="#arrowRight" x="0" y="0" onmousedown="handlePan(1,0)"/>
+  <use id="arrowdown" xlink:href="#arrowDown" x="0" y="0" onmousedown="handlePan(0,1)"/>
+  <use id="arrowleft" xlink:href="#arrowLeft" x="0" y="0" onmousedown="handlePan(-1,0)"/>
+</g>
+<svg viewBox="0 0 15 15" width="100%" height="30px" preserveAspectRatio="xMaxYMin meet">
+ <g id="arrow_out" transform="scale(0.3 0.3)">
+  <a xlink:href="classrange__queries_1_1per_seg_tree_af87494e6cf012d28c4f5b9d1c15f9c5d_cgraph_org.svg" target="_base">
+   <rect id="button" ry="5" rx="5" y="6" x="6" height="38" width="38"
+        fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width="1.0"/>
+   <path id="arrow"
+     d="M 11.500037,31.436501 C 11.940474,20.09759 22.043105,11.32322 32.158766,21.979434 L 37.068811,17.246167 C 37.068811,17.246167 37.088388,32 37.088388,32 L 22.160133,31.978069 C 22.160133,31.978069 26.997745,27.140456 26.997745,27.140456 C 18.528582,18.264221 13.291696,25.230495 11.500037,31.436501 z"
+     style="fill:#404040;"/>
+  </a>
+ </g>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

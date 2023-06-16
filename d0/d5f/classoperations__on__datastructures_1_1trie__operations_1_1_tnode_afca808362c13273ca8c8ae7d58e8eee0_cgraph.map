@@ -1,4 +1,5 @@
 <map id="operations_on_datastructures::trie_operations::Tnode::numberOfChildren" name="operations_on_datastructures::trie_operations::Tnode::numberOfChildren">
-<area shape="rect" id="node1" title="Function to count the number of children a node in the trie has." alt="" coords="5,5,198,61"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/count.html#" title=" " alt="" coords="246,20,325,46"/>
+<area shape="rect" id="Node000001" title="Function to count the number of children a node in the trie has." alt="" coords="5,5,198,61"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/count.html#" title=" " alt="" coords="246,20,325,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,31,231,31,231,36,198,36"/>
 </map>

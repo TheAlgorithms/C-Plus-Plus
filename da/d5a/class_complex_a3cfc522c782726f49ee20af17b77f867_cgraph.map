@@ -1,5 +1,7 @@
 <map id="Complex::Complex" name="Complex::Complex">
-<area shape="rect" id="node1" title="Complex Constructor which initialises our complex number." alt="" coords="5,31,139,56"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/cos.html#" title=" " alt="" coords="187,5,255,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sin.html#" title=" " alt="" coords="189,55,253,80"/>
+<area shape="rect" id="Node000001" title="Complex Constructor which initialises our complex number." alt="" coords="5,31,139,56"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/cos.html#" title=" " alt="" coords="187,5,255,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,29,171,24,172,29,140,35"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sin.html#" title=" " alt="" coords="189,55,253,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,52,174,57,174,63,139,57"/>
 </map>

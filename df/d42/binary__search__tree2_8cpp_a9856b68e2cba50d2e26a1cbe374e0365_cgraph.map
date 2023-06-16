@@ -1,6 +1,11 @@
 <map id="test_find_max" name="test_find_max">
-<area shape="rect" id="node1" title="Function for testing find_max()." alt="" coords="5,87,109,112"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="187,5,258,31"/>
-<area shape="rect" id="node3" href="$d9/dde/classbinary__search__tree.html#a75f897af6aa732a9901454401c869bcb" title="Recursive function to find the maximum value in the BST." alt="" coords="157,79,288,120"/>
-<area shape="rect" id="node4" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="157,169,288,209"/>
+<area shape="rect" id="Node000001" title="Function for testing find_max()." alt="" coords="5,87,109,112"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="187,5,258,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,84,155,41,172,34,174,39,158,46,81,88"/>
+<area shape="rect" id="Node000003" href="$d9/dde/classbinary__search__tree.html#a75f897af6aa732a9901454401c869bcb" title="Recursive function to find the maximum value in the BST." alt="" coords="157,79,288,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="109,97,142,97,142,102,109,102"/>
+<area shape="rect" id="Node000004" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="157,169,288,209"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="84,111,172,159,169,164,81,115"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="190,79,189,69,194,60,205,55,222,53,241,55,252,62,249,66,239,60,222,58,207,60,198,64,194,70,196,78"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="190,168,189,159,194,150,205,144,222,142,241,144,252,151,249,156,239,149,222,147,207,149,198,154,194,160,196,167"/>
 </map>

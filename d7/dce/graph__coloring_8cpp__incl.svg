@@ -6,12 +6,22 @@
 <!-- Title: backtracking/graph_coloring.cpp Pages: 1 -->
 <svg width="178pt" height="94pt"
  viewBox="0.00 0.00 178.38 93.75" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 89.75)">
 <title>backtracking/graph_coloring.cpp</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="prints the assigned colors using Graph Coloring algorithm">
+<g id="a_Node000001"><a xlink:title="prints the assigned colors using Graph Coloring algorithm">
 <polygon fill="#999999" stroke="#666666" points="132.12,-85.75 33.62,-85.75 33.62,-55.25 132.12,-55.25 132.12,-85.75"/>
 <text text-anchor="start" x="41.62" y="-72.25" font-family="Helvetica,sans-Serif" font-size="10.00">backtracking/graph</text>
 <text text-anchor="middle" x="82.88" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">_coloring.cpp</text>
@@ -19,49 +29,73 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="37.75,-19.25 0,-19.25 0,0 37.75,0 37.75,-19.25"/>
 <text text-anchor="middle" x="18.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">array</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M67.05,-54.95C57.87,-46.5 46.28,-35.83 36.76,-27.08"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="39.47,-24.9 29.74,-20.7 34.73,-30.05 39.47,-24.9"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:title=" ">
+<g id="a_Node000003"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="109.62,-19.25 56.12,-19.25 56.12,0 109.62,0 109.62,-19.25"/>
 <text text-anchor="middle" x="82.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">iostream</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M82.88,-54.95C82.88,-47.62 82.88,-38.62 82.88,-30.66"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="86.38,-30.7 82.88,-20.7 79.38,-30.7 86.38,-30.7"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:title=" ">
+<g id="a_Node000004"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="170.38,-19.25 127.38,-19.25 127.38,0 170.38,0 170.38,-19.25"/>
 <text text-anchor="middle" x="148.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">vector</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
+<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M99.19,-54.95C108.76,-46.41 120.86,-35.62 130.73,-26.81"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="132.57,-29.97 137.7,-20.7 127.91,-24.75 132.57,-29.97"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

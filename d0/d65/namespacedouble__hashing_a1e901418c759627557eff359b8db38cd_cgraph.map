@@ -1,4 +1,5 @@
 <map id="double_hashing::display" name="double_hashing::display">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,166,31"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="214,5,285,31"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,166,31"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="214,5,285,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,16,199,16,199,21,166,21"/>
 </map>

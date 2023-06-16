@@ -6,12 +6,22 @@
 <!-- Title: binary_search_tree&lt; T &gt;::bst_node Pages: 1 -->
 <svg width="224pt" height="128pt"
  viewBox="0.00 0.00 223.50 127.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 123.5)">
 <title>binary_search_tree&lt; T &gt;::bst_node</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="A struct to represent a node in the Binary Search Tree.">
+<g id="a_Node000001"><a xlink:title="A struct to represent a node in the Binary Search Tree.">
 <polygon fill="#999999" stroke="#666666" points="98.5,-30.5 0,-30.5 0,0 98.5,0 98.5,-30.5"/>
 <text text-anchor="start" x="8" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">binary_search_tree</text>
 <text text-anchor="middle" x="49.25" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; T &gt;::bst_node</text>
@@ -19,9 +29,9 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html" xlink:title=" ">
+<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="187.75,-119.5 60.75,-119.5 60.75,-89 187.75,-89 187.75,-119.5"/>
 <text text-anchor="start" x="68.75" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; binary</text>
 <text text-anchor="middle" x="124.25" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00">_search_tree::bst_node &gt;</text>
@@ -29,17 +39,20 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M103.25,-80.8C100.28,-77.54 97.3,-74.2 94.5,-71 82.82,-57.63 69.96,-41.97 60.95,-30.84"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="100.11,-82.64 109.45,-87.63 105.26,-77.9 100.11,-82.64"/>
-<text text-anchor="middle" x="104.62" y="-61.5" font-family="Helvetica,sans-Serif" font-size="10.00"> left</text>
-<text text-anchor="middle" x="104.62" y="-50.25" font-family="Helvetica,sans-Serif" font-size="10.00">right</text>
+</a>
+</g>
+<text text-anchor="middle" x="104.62" y="-61.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> left</text>
+<text text-anchor="middle" x="104.62" y="-50.25" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">right</text>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../dd/db6/structbinary__search__tree_1_1bst__node.html" target="_top" xlink:title="A struct to represent a node in the Binary Search Tree.">
+<g id="a_Node000003"><a xlink:href="../../dd/db6/structbinary__search__tree_1_1bst__node.html" target="_top" xlink:title="A struct to represent a node in the Binary Search Tree.">
 <polygon fill="white" stroke="#666666" points="215.5,-30.5 117,-30.5 117,0 215.5,0 215.5,-30.5"/>
 <text text-anchor="start" x="125" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">binary_search_tree</text>
 <text text-anchor="middle" x="166.25" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; T &gt;::bst_node</text>
@@ -47,19 +60,40 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000003_Node000002" class="edge">
 <title>Node2&#45;&gt;Node3</title>
+<g id="a_edge3_Node000003_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M117.8,-78.24C116.58,-68.49 116.89,-57.51 121.5,-48.5 125.17,-41.34 131.24,-35.41 137.76,-30.67"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="114.52,-78.73 119.77,-87.93 121.4,-77.47 114.52,-78.73"/>
-<text text-anchor="middle" x="131.62" y="-61.5" font-family="Helvetica,sans-Serif" font-size="10.00"> left</text>
-<text text-anchor="middle" x="131.62" y="-50.25" font-family="Helvetica,sans-Serif" font-size="10.00">right</text>
+</a>
+</g>
+<text text-anchor="middle" x="131.62" y="-61.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> left</text>
+<text text-anchor="middle" x="131.62" y="-50.25" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">right</text>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000002_Node000003" class="edge">
 <title>Node3&#45;&gt;Node2</title>
+<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M157.35,-41.01C153.65,-50.55 149.09,-61.44 144.25,-71 141.22,-77 137.42,-83.33 133.96,-88.79"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="160.88,-42.55 161.13,-31.96 154.33,-40.09 160.88,-42.55"/>
-<text text-anchor="middle" x="160.38" y="-55.88" font-family="Helvetica,sans-Serif" font-size="10.00"> ptr</text>
+</a>
+</g>
+<text text-anchor="middle" x="160.38" y="-55.88" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> ptr</text>
 </g>
 </g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

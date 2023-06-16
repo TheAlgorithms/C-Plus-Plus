@@ -6,12 +6,22 @@
 <!-- Title: others::postfix_expression::postfix_evaluation Pages: 1 -->
 <svg width="472pt" height="94pt"
  viewBox="0.00 0.00 472.25 93.88" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 89.88)">
 <title>others::postfix_expression::postfix_evaluation</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Postfix Evaluation algorithm to compute the value from given input array.">
+<g id="a_Node000001"><a xlink:title="Postfix Evaluation algorithm to compute the value from given input array.">
 <polygon fill="#999999" stroke="#666666" points="130.75,-45.88 0,-45.88 0,-15.37 130.75,-15.37 130.75,-45.88"/>
 <text text-anchor="start" x="8" y="-32.38" font-family="Helvetica,sans-Serif" font-size="10.00">others::postfix_expression</text>
 <text text-anchor="middle" x="65.38" y="-21.12" font-family="Helvetica,sans-Serif" font-size="10.00">::postfix_evaluation</text>
@@ -19,15 +29,18 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node1 -->
-<g id="edge5" class="edge">
+<g id="edge5_Node000001_Node000001" class="edge">
 <title>Node1&#45;&gt;Node1</title>
+<g id="a_edge5_Node000001_Node000001"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M35.83,-46.36C29.8,-55.43 39.65,-63.88 65.38,-63.88 79.85,-63.88 89.3,-61.2 93.72,-57.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="97.3,-57.68 94.92,-47.36 90.35,-56.92 97.3,-57.68"/>
+</a>
+</g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d7/d75/postfix__evaluation_8cpp.html#a59fd597e0ea394abe027ced4d2ea3338" target="_top" xlink:title="Evaluate answer using given last two operands from and operation.">
+<g id="a_Node000002"><a xlink:href="../../d7/d75/postfix__evaluation_8cpp.html#a59fd597e0ea394abe027ced4d2ea3338" target="_top" xlink:title="Evaluate answer using given last two operands from and operation.">
 <polygon fill="white" stroke="#666666" points="297.5,-67.88 166.75,-67.88 166.75,-37.38 297.5,-37.38 297.5,-67.88"/>
 <text text-anchor="start" x="174.75" y="-54.38" font-family="Helvetica,sans-Serif" font-size="10.00">others::postfix_expression</text>
 <text text-anchor="middle" x="232.12" y="-43.12" font-family="Helvetica,sans-Serif" font-size="10.00">::evaluate</text>
@@ -35,51 +48,63 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M131.02,-39.26C139.1,-40.34 147.43,-41.45 155.66,-42.55"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="155.02,-46.13 165.4,-43.98 155.95,-39.19 155.02,-46.13"/>
+</a>
+</g>
 </g>
 <!-- Node5 -->
-<g id="node5" class="node">
+<g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/stof.html#" xlink:title=" ">
+<g id="a_Node000005"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/stof.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="258.12,-19.25 206.12,-19.25 206.12,0 258.12,0 258.12,-19.25"/>
 <text text-anchor="middle" x="232.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::stof</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
-<g id="edge6" class="edge">
+<g id="edge6_Node000001_Node000005" class="edge">
 <title>Node1&#45;&gt;Node5</title>
+<g id="a_edge6_Node000001_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M131.02,-22.39C152.77,-19.61 176.25,-16.62 195,-14.23"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="195.25,-17.6 204.73,-12.86 194.37,-10.65 195.25,-17.6"/>
+</a>
+</g>
 </g>
 <!-- Node2&#45;&gt;Node2 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000002_Node000002" class="edge">
 <title>Node2&#45;&gt;Node2</title>
+<g id="a_edge3_Node000002_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M202.58,-68.36C196.55,-77.43 206.4,-85.88 232.12,-85.88 246.6,-85.88 256.05,-83.2 260.47,-79.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="264.05,-79.68 261.67,-69.36 257.1,-78.92 264.05,-79.68"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/c_str.html#" xlink:title=" ">
+<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/c_str.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="442.5,-84.25 355.25,-84.25 355.25,-65 442.5,-65 442.5,-84.25"/>
 <text text-anchor="middle" x="398.88" y="-70.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::c_str</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
+<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M297.77,-61.26C313.29,-63.33 329.7,-65.52 344.63,-67.52"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="343.84,-71.07 354.22,-68.93 344.77,-64.14 343.84,-71.07"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="../../d7/d75/postfix__evaluation_8cpp.html#ad77f8c9cc594975756838d498c237cea" target="_top" xlink:title="Pushing operand, also called the number in the array to the stack.">
+<g id="a_Node000004"><a xlink:href="../../d7/d75/postfix__evaluation_8cpp.html#ad77f8c9cc594975756838d498c237cea" target="_top" xlink:title="Pushing operand, also called the number in the array to the stack.">
 <polygon fill="white" stroke="#666666" points="464.25,-46.88 333.5,-46.88 333.5,-16.38 464.25,-16.38 464.25,-46.88"/>
 <text text-anchor="start" x="341.5" y="-33.38" font-family="Helvetica,sans-Serif" font-size="10.00">others::postfix_expression</text>
 <text text-anchor="middle" x="398.88" y="-22.12" font-family="Helvetica,sans-Serif" font-size="10.00">::push</text>
@@ -87,10 +112,28 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000002_Node000004" class="edge">
 <title>Node2&#45;&gt;Node4</title>
+<g id="a_edge4_Node000002_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M297.77,-44.39C305.85,-43.35 314.18,-42.29 322.41,-41.24"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="322.67,-44.61 332.15,-39.88 321.79,-37.67 322.67,-44.61"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

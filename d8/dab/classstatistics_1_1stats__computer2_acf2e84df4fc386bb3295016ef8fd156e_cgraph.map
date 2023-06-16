@@ -1,5 +1,7 @@
 <map id="statistics::stats_computer2::std" name="statistics::stats_computer2::std">
-<area shape="rect" id="node1" title=" " alt="" coords="5,35,211,60"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="314,5,383,31"/>
-<area shape="rect" id="node3" href="$d8/dab/classstatistics_1_1stats__computer2.html#af6198817084276113b3c064e87ce0555" title=" " alt="" coords="259,55,438,96"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,211,60"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="314,5,383,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,32,298,21,299,27,211,38"/>
+<area shape="rect" id="Node000003" href="$d8/dab/classstatistics_1_1stats__computer2.html#af6198817084276113b3c064e87ce0555" title=" " alt="" coords="259,55,438,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="211,57,244,61,243,66,211,62"/>
 </map>

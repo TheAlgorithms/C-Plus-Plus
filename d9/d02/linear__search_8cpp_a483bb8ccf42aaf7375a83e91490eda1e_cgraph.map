@@ -1,4 +1,5 @@
 <map id="tests" name="tests">
-<area shape="rect" id="node1" title="Self&#45;test implementations." alt="" coords="5,5,56,31"/>
-<area shape="rect" id="node2" href="$d9/d02/linear__search_8cpp.html#a84ac3988a534eb60ca351ed6caf56d84" title="for IO operations" alt="" coords="104,5,201,31"/>
+<area shape="rect" id="Node000001" title="Self&#45;test implementations." alt="" coords="5,5,56,31"/>
+<area shape="rect" id="Node000002" href="$d9/d02/linear__search_8cpp.html#a84ac3988a534eb60ca351ed6caf56d84" title="for IO operations" alt="" coords="104,5,201,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="56,16,89,16,89,21,56,21"/>
 </map>

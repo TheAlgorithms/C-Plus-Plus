@@ -1,7 +1,12 @@
 <map id="sorting::wave_sort::waveSort" name="sorting::wave_sort::waveSort">
-<area shape="rect" id="node1" title="The main function implements that implements the Wave Sort algorithm." alt="" coords="5,73,134,113"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " alt="" coords="182,5,304,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " alt="" coords="187,55,299,80"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/sort.html#" title=" " alt="" coords="208,104,278,130"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="204,153,282,179"/>
+<area shape="rect" id="Node000001" title="The main function implements that implements the Wave Sort algorithm." alt="" coords="5,73,134,113"/>
+<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="36,72,35,63,40,54,52,48,70,46,89,48,100,55,98,60,87,53,69,51,53,53,44,58,40,64,41,71"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " alt="" coords="182,5,304,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,69,181,40,193,35,195,39,183,45,116,74"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " alt="" coords="187,55,299,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,81,171,75,172,81,134,86"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/sort.html#" title=" " alt="" coords="208,104,278,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="134,99,194,107,193,113,134,104"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="204,153,282,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="118,111,183,140,195,145,193,150,181,145,115,116"/>
 </map>

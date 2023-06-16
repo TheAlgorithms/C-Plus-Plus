@@ -1,18 +1,39 @@
 <map id="data_structures::tree_234::Tree234::Insert" name="data_structures::tree_234::Tree234::Insert">
-<area shape="rect" id="node1" title="A helper function used by post&#45;merge insert." alt="" coords="5,143,151,183"/>
-<area shape="rect" id="node2" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a22fd25c6c811c64b6b27b0850d8c532f" title="Check if item is in the node." alt="" coords="1182,5,1330,46"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/unique_ptr/get.html#" title=" " alt="" coords="725,64,859,89"/>
-<area shape="rect" id="node4" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a91322b3bb0b2b2175eb56e9e10d7db46" title="Get next node which is possibly contains item." alt="" coords="199,229,394,284"/>
-<area shape="rect" id="node5" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a6749ebb40710c9752a2771eda03c6b3e" title="Insert item to tree." alt="" coords="224,113,369,154"/>
-<area shape="rect" id="node13" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a11f0d016dff7f7e62b3dddb9fdf47805" title="A helper function used during post&#45;merge insert." alt="" coords="448,207,627,247"/>
-<area shape="rect" id="node16" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/unique_ptr/reset.html#" title=" " alt="" coords="224,309,369,335"/>
-<area shape="rect" id="node6" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a07811b3c564a3a443b106c9aa717629d" title="A insert implementation of pre&#45;split." alt="" coords="442,113,633,154"/>
-<area shape="rect" id="node7" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ad37e29e2a4a6cc0eb65cbd5595e1da95" title="Merge node to a not&#45;full target node." alt="" coords="681,179,903,219"/>
-<area shape="rect" id="node12" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a370b625ca9f16bbef2b65e024ef78ea9" title="Split a 4&#45;node to 1 parent and 2 children, and return the parent node." alt="" coords="707,113,877,154"/>
-<area shape="rect" id="node8" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a8e809ae85ae00e937f67ddb76951b6bb" title="Insert item to the proper position of the node and return the position index." alt="" coords="951,63,1106,103"/>
-<area shape="rect" id="node10" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a4a37381c0ef93d5ae2118b2e554974dd" title="Check if node is a full (4&#45;node)" alt="" coords="1185,185,1326,226"/>
-<area shape="rect" id="node11" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ab4e5f7b7b260bb81d9441652cc124c74" title="Set child pointer to the position of index." alt="" coords="955,128,1102,169"/>
-<area shape="rect" id="node9" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a306a30931f54c84098b38d6bc8f4a956" title="Insert a value to the index position." alt="" coords="1154,71,1357,111"/>
-<area shape="rect" id="node14" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a164574a9209b5df66368530d090b32c4" title="Get the child pointer at position of index." alt="" coords="718,359,866,399"/>
-<area shape="rect" id="node15" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a4808acb43668ff8cfd6f7cb44ceedad3" title="Get item of the \index index." alt="" coords="720,293,864,334"/>
+<area shape="rect" id="Node000001" title="A helper function used by post&#45;merge insert." alt="" coords="5,143,151,183"/>
+<area shape="rect" id="Node000002" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a22fd25c6c811c64b6b27b0850d8c532f" title="Check if item is in the node." alt="" coords="1182,5,1330,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,140,140,101,168,82,198,66,288,34,363,22,439,21,536,23,793,23,1166,23,1166,28,793,28,536,28,439,27,363,28,290,40,200,71,171,86,143,105,100,144"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/unique_ptr/get.html#" title=" " alt="" coords="725,64,859,89"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="109,140,150,117,198,99,267,84,337,73,478,62,607,61,710,66,710,72,607,67,478,67,338,78,267,89,199,104,153,122,112,144"/>
+<area shape="rect" id="Node000004" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a91322b3bb0b2b2175eb56e9e10d7db46" title="Get next node which is possibly contains item." alt="" coords="199,229,394,284"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="129,181,217,220,215,225,127,186"/>
+<area shape="rect" id="Node000005" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a6749ebb40710c9752a2771eda03c6b3e" title="Insert item to tree." alt="" coords="224,113,369,154"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="151,151,208,143,209,148,152,156"/>
+<area shape="rect" id="Node000013" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a11f0d016dff7f7e62b3dddb9fdf47805" title="A helper function used during post&#45;merge insert." alt="" coords="448,207,627,247"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="152,170,434,210,433,215,151,176"/>
+<area shape="rect" id="Node000016" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/unique_ptr/reset.html#" title=" " alt="" coords="224,309,369,335"/>
+<area shape="poly" id="edge21_Node000001_Node000016" title=" " alt="" coords="94,182,137,238,166,269,200,294,212,301,210,305,197,299,163,273,133,242,90,185"/>
+<area shape="rect" id="Node000006" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a07811b3c564a3a443b106c9aa717629d" title="A insert implementation of pre&#45;split." alt="" coords="442,113,633,154"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="369,131,427,131,427,136,369,136"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="630,110,717,90,718,96,632,115"/>
+<area shape="rect" id="Node000007" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ad37e29e2a4a6cc0eb65cbd5595e1da95" title="Merge node to a not&#45;full target node." alt="" coords="681,179,903,219"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="620,152,697,172,695,177,619,157"/>
+<area shape="rect" id="Node000012" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a370b625ca9f16bbef2b65e024ef78ea9" title="Split a 4&#45;node to 1 parent and 2 children, and return the parent node." alt="" coords="707,113,877,154"/>
+<area shape="poly" id="edge14_Node000006_Node000012" title=" " alt="" coords="634,131,692,131,692,136,634,136"/>
+<area shape="rect" id="Node000008" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a8e809ae85ae00e937f67ddb76951b6bb" title="Insert item to the proper position of the node and return the position index." alt="" coords="951,63,1106,103"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="876,176,901,163,916,152,925,140,934,127,949,114,958,108,961,113,952,118,938,131,929,143,920,156,904,168,879,180"/>
+<area shape="rect" id="Node000010" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a4a37381c0ef93d5ae2118b2e554974dd" title="Check if node is a full (4&#45;node)" alt="" coords="1185,185,1326,226"/>
+<area shape="poly" id="edge12_Node000007_Node000010" title=" " alt="" coords="903,198,1170,202,1170,207,903,203"/>
+<area shape="rect" id="Node000011" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ab4e5f7b7b260bb81d9441652cc124c74" title="Set child pointer to the position of index." alt="" coords="955,128,1102,169"/>
+<area shape="poly" id="edge13_Node000007_Node000011" title=" " alt="" coords="889,175,940,164,941,170,891,181"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="1106,61,1167,45,1168,50,1107,66"/>
+<area shape="rect" id="Node000009" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a306a30931f54c84098b38d6bc8f4a956" title="Insert a value to the index position." alt="" coords="1154,71,1357,111"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="1106,83,1139,84,1139,90,1106,88"/>
+<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="1081,102,1107,114,1212,175,1209,179,1105,119,1079,106"/>
+<area shape="poly" id="edge19_Node000013_Node000007" title=" " alt="" coords="627,214,666,210,667,215,628,220"/>
+<area shape="poly" id="edge18_Node000013_Node000010" title=" " alt="" coords="628,227,681,228,792,230,903,228,1044,221,1170,211,1170,216,1044,226,903,234,792,236,681,234,628,233"/>
+<area shape="poly" id="edge20_Node000013_Node000012" title=" " alt="" coords="584,204,680,165,704,156,706,161,682,169,586,209"/>
+<area shape="rect" id="Node000014" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a164574a9209b5df66368530d090b32c4" title="Get the child pointer at position of index." alt="" coords="718,359,866,399"/>
+<area shape="poly" id="edge16_Node000013_Node000014" title=" " alt="" coords="561,246,613,295,647,321,683,343,705,354,703,359,680,348,644,325,610,299,557,250"/>
+<area shape="rect" id="Node000015" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a4808acb43668ff8cfd6f7cb44ceedad3" title="Get item of the \index index." alt="" coords="720,293,864,334"/>
+<area shape="poly" id="edge17_Node000013_Node000015" title=" " alt="" coords="601,245,717,285,715,290,599,251"/>
 </map>

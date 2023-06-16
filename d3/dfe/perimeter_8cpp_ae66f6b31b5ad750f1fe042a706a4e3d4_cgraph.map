@@ -1,13 +1,23 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,243,55,268"/>
-<area shape="rect" id="node2" href="$d3/dfe/perimeter_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,243,146,268"/>
-<area shape="rect" id="node3" href="$dd/d47/namespacemath.html#ad0acf82b7bc920182bf8322d1e103953" title="perimeter of a circle (2 * pi * r)" alt="" coords="203,5,353,31"/>
-<area shape="rect" id="node4" href="$dd/d47/namespacemath.html#a8998ca7b1886d1d7d00aef3b457a9b1b" title="surface perimeter of a cube ( 12" alt="" coords="210,55,346,96"/>
-<area shape="rect" id="node5" href="$dd/d47/namespacemath.html#a1d4df7a4e43a2eac1acc0ac610487c73" title="surface perimeter of a cylinder (2 * radius + 2 * height)" alt="" coords="201,121,354,161"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="242,185,313,211"/>
-<area shape="rect" id="node7" href="$dd/d47/namespacemath.html#aa8592c3279c41a2c6d4d64eeb488f63f" title="surface perimeter of a n&#45;polygon ( n * l)" alt="" coords="194,235,361,276"/>
-<area shape="rect" id="node8" href="$dd/d47/namespacemath.html#a0efb235330ff48e14fd31faaccbcebb3" title="perimeter of a parallelogram 2(b + h)" alt="" coords="210,301,345,341"/>
-<area shape="rect" id="node9" href="$dd/d47/namespacemath.html#a428769a16e9525e56588d7c7709d25a6" title="perimeter of a rectangle ( 2(l + w) )" alt="" coords="207,365,348,391"/>
-<area shape="rect" id="node10" href="$dd/d47/namespacemath.html#a9236348755183644f1225e162d01ab14" title="perimeter of a square (4 * l)" alt="" coords="199,415,357,440"/>
-<area shape="rect" id="node11" href="$dd/d47/namespacemath.html#a3d1e4db743b189f309327572663415f3" title="perimeter of a triangle (a + b + c)" alt="" coords="197,464,358,490"/>
+<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,243,55,268"/>
+<area shape="rect" id="Node000002" href="$d3/dfe/perimeter_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,243,146,268"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,253,88,253,88,258,55,258"/>
+<area shape="rect" id="Node000003" href="$dd/d47/namespacemath.html#ad0acf82b7bc920182bf8322d1e103953" title="perimeter of a circle (2 * pi * r)" alt="" coords="203,5,353,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,242,126,203,136,150,157,92,172,65,192,42,197,37,201,41,196,45,177,68,162,94,141,151,132,204,129,243"/>
+<area shape="rect" id="Node000004" href="$dd/d47/namespacemath.html#a8998ca7b1886d1d7d00aef3b457a9b1b" title="surface perimeter of a cube ( 12" alt="" coords="210,55,346,96"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="126,241,146,178,165,140,192,107,197,103,201,107,196,111,170,143,151,180,131,243"/>
+<area shape="rect" id="Node000005" href="$dd/d47/namespacemath.html#a1d4df7a4e43a2eac1acc0ac610487c73" title="surface perimeter of a cylinder (2 * radius + 2 * height)" alt="" coords="201,121,354,161"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="131,241,156,207,192,171,199,167,202,171,196,175,160,210,136,244"/>
+<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="242,185,313,211"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="145,242,193,221,227,209,229,214,195,226,147,247"/>
+<area shape="rect" id="Node000007" href="$dd/d47/namespacemath.html#aa8592c3279c41a2c6d4d64eeb488f63f" title="surface perimeter of a n&#45;polygon ( n * l)" alt="" coords="194,235,361,276"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="147,253,179,253,179,258,147,258"/>
+<area shape="rect" id="Node000008" href="$dd/d47/namespacemath.html#a0efb235330ff48e14fd31faaccbcebb3" title="perimeter of a parallelogram 2(b + h)" alt="" coords="210,301,345,341"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="148,263,195,285,211,292,209,297,193,290,145,268"/>
+<area shape="rect" id="Node000009" href="$dd/d47/namespacemath.html#a428769a16e9525e56588d7c7709d25a6" title="perimeter of a rectangle ( 2(l + w) )" alt="" coords="207,365,348,391"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="134,268,157,309,175,331,196,351,204,356,201,361,192,355,171,335,153,312,129,270"/>
+<area shape="rect" id="Node000010" href="$dd/d47/namespacemath.html#a9236348755183644f1225e162d01ab14" title="perimeter of a square (4 * l)" alt="" coords="199,415,357,440"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="131,268,137,296,150,332,169,370,196,402,200,405,197,409,192,405,164,372,145,334,132,298,125,269"/>
+<area shape="rect" id="Node000011" href="$dd/d47/namespacemath.html#a3d1e4db743b189f309327572663415f3" title="perimeter of a triangle (a + b + c)" alt="" coords="197,464,358,490"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="129,268,133,305,143,354,163,406,178,430,196,451,199,453,195,457,192,455,173,433,158,408,138,355,128,306,124,269"/>
 </map>

@@ -1,5 +1,7 @@
 <map id="math::ncr_modulo_p::NCRModuloP" name="math::ncr_modulo_p::NCRModuloP">
-<area shape="rect" id="node1" title="Class which contains all methods required for calculating nCr mod p." alt="" coords="12,183,152,223"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="5,94,159,120"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/integer.html" title=" " alt="" coords="35,5,129,31"/>
+<area shape="rect" id="Node000001" title="Class which contains all methods required for calculating nCr mod p." alt="" coords="12,183,152,223"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="5,94,159,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,135,85,182,79,182,79,135"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/integer.html" title=" " alt="" coords="35,5,129,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="85,46,85,94,79,94,79,46"/>
 </map>

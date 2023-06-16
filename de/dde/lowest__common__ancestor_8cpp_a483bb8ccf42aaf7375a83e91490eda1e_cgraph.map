@@ -1,5 +1,7 @@
 <map id="tests" name="tests">
-<area shape="rect" id="node1" title=" " alt="" coords="5,13,56,39"/>
-<area shape="rect" id="node2" href="$d9/d23/classgraph_1_1_lowest_common_ancestor.html#a60151e19512b48cc0b14ea121df00488" title="Query the structure to find the lowest common ancestor. Assumes that the provided numbers are valid i..." alt="" coords="104,5,312,46"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="360,13,438,39"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,56,39"/>
+<area shape="rect" id="Node000002" href="$d9/d23/classgraph_1_1_lowest_common_ancestor.html#a60151e19512b48cc0b14ea121df00488" title="Query the structure to find the lowest common ancestor. Assumes that the provided numbers are valid i..." alt="" coords="104,5,312,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="56,23,89,23,89,28,56,28"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="360,13,438,39"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="312,23,345,23,345,28,312,28"/>
 </map>

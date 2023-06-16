@@ -1,5 +1,7 @@
 <map id="uint128_t::operator%" name="uint128_t::operator%">
-<area shape="rect" id="node1" title="operator % for uint128_t" alt="" coords="5,5,147,31"/>
-<area shape="rect" id="node2" href="$db/d9a/classuint128__t.html#a8bf81f7f5f5c98f197822ec88e106c6c" title="divide function for uint128_t and other integer types." alt="" coords="195,5,311,31"/>
-<area shape="rect" id="node3" href="$db/d9a/classuint128__t.html#af139bb6e630f1a61919f180978611cd2" title="Leading zeroes in binary." alt="" coords="359,5,465,31"/>
+<area shape="rect" id="Node000001" title="operator % for uint128_t" alt="" coords="5,5,147,31"/>
+<area shape="rect" id="Node000002" href="$db/d9a/classuint128__t.html#a8bf81f7f5f5c98f197822ec88e106c6c" title="divide function for uint128_t and other integer types." alt="" coords="195,5,311,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,16,180,16,180,21,147,21"/>
+<area shape="rect" id="Node000003" href="$db/d9a/classuint128__t.html#af139bb6e630f1a61919f180978611cd2" title="Leading zeroes in binary." alt="" coords="359,5,465,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="312,16,344,16,344,21,312,21"/>
 </map>

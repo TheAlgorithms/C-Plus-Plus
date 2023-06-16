@@ -1,5 +1,7 @@
 <map id="probability/binomial_dist.cpp" name="probability/binomial_dist.cpp">
-<area shape="rect" id="node1" title="Binomial distribution example" alt="" coords="12,5,144,46"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,94,63,120"/>
-<area shape="rect" id="node3" title=" " alt="" coords="86,94,158,120"/>
+<area shape="rect" id="Node000001" title="Binomial distribution example" alt="" coords="12,5,144,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,63,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,48,50,82,46,79,65,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="86,94,158,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="91,45,110,79,106,82,87,48"/>
 </map>

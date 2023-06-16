@@ -1,7 +1,12 @@
 <map id="queue&lt; ValueType &gt;" name="queue&lt; ValueType &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="90,301,231,327"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="5,198,169,223"/>
-<area shape="rect" id="node3" href="$db/d8b/struct_node.html" title=" " alt="" coords="19,109,155,135"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="11,5,163,46"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/size_t.html" title=" " alt="" coords="193,198,275,223"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="90,301,231,327"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="5,198,169,223"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,234,154,299,149,302,102,237"/>
+<area shape="rect" id="Node000003" href="$db/d8b/struct_node.html" title=" " alt="" coords="19,109,155,135"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,149,90,197,84,197,84,149"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="172,114,182,122,174,130,156,132,155,127,171,125,177,122,169,118"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="11,5,163,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="90,61,90,109,84,109,84,61"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/size_t.html" title=" " alt="" coords="193,198,275,223"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="228,239,206,279,181,303,177,299,202,276,223,236"/>
 </map>

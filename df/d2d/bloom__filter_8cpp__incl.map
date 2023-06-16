@@ -1,9 +1,15 @@
 <map id="data_structures/bloom_filter.cpp" name="data_structures/bloom_filter.cpp">
-<area shape="rect" id="node1" title="Bloom Filter generic implementation in C++" alt="" coords="217,5,367,46"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,94,70,120"/>
-<area shape="rect" id="node3" title=" " alt="" coords="94,94,171,120"/>
-<area shape="rect" id="node4" title=" " alt="" coords="195,94,291,120"/>
-<area shape="rect" id="node5" title=" " alt="" coords="315,94,368,120"/>
-<area shape="rect" id="node6" title=" " alt="" coords="393,94,450,120"/>
-<area shape="rect" id="node7" title=" " alt="" coords="474,94,545,120"/>
+<area shape="rect" id="Node000001" title="Bloom Filter generic implementation in C++" alt="" coords="217,5,367,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,70,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,49,84,94,83,89,228,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="94,94,171,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="253,49,171,90,168,85,251,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="195,94,291,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="282,48,260,82,256,80,278,45"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="315,94,368,120"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="307,45,328,80,324,82,302,48"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="393,94,450,120"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="326,44,391,84,388,88,323,49"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="474,94,545,120"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="347,44,464,86,462,91,346,49"/>
 </map>

@@ -6,58 +6,95 @@
 <!-- Title: deleteNode Pages: 1 -->
 <svg width="197pt" height="82pt"
  viewBox="0.00 0.00 196.75 82.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 78.25)">
 <title>deleteNode</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="removes a given element from AVL tree">
+<g id="a_Node000001"><a xlink:title="removes a given element from AVL tree">
 <polygon fill="#999999" stroke="#666666" points="65.5,-46.25 0,-46.25 0,-27 65.5,-27 65.5,-46.25"/>
 <text text-anchor="middle" x="32.75" y="-32.75" font-family="Helvetica,sans-Serif" font-size="10.00">deleteNode</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node1 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000001" class="edge">
 <title>Node1&#45;&gt;Node1</title>
+<g id="a_edge2_Node000001_Node000001"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M15.16,-46.54C7.13,-55.15 13,-64.25 32.75,-64.25 44.17,-64.25 50.95,-61.21 53.08,-56.98"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="56.27,-56.32 50.34,-47.54 49.5,-58.1 56.27,-56.32"/>
+</a>
+</g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/data.html#" xlink:title=" ">
+<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/data.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="188.75,-74.25 101.5,-74.25 101.5,-55 188.75,-55 188.75,-74.25"/>
 <text text-anchor="middle" x="145.12" y="-60.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::data</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M65.97,-44.8C74.66,-47 84.28,-49.44 93.71,-51.84"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="92.66,-55.43 103.22,-54.5 94.38,-48.65 92.66,-55.43"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d8/dee/avltree_8cpp.html#a5fa160a678a34dd51c0aea1c0c00ed5e" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="../../d8/dee/avltree_8cpp.html#a5fa160a678a34dd51c0aea1c0c00ed5e" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="173,-19.25 117.25,-19.25 117.25,0 173,0 173,-19.25"/>
 <text text-anchor="middle" x="145.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">minValue</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge3_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M65.97,-28.74C78.6,-25.65 93.18,-22.09 106.3,-18.88"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="107.02,-22.06 115.9,-16.28 105.36,-15.26 107.02,-22.06"/>
+</a>
+</g>
 </g>
 <!-- Node3&#45;&gt;Node3 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000003_Node000003" class="edge">
 <title>Node3&#45;&gt;Node3</title>
+<g id="a_edge4_Node000003_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M127.53,-19.54C119.51,-28.15 125.37,-37.25 145.12,-37.25 156.54,-37.25 163.32,-34.21 165.46,-29.98"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="168.64,-29.32 162.72,-20.54 161.87,-31.1 168.64,-29.32"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

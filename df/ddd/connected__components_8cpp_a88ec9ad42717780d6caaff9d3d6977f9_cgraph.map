@@ -1,8 +1,14 @@
 <map id="tests" name="tests">
-<area shape="rect" id="node1" title=" " alt="" coords="5,55,56,80"/>
-<area shape="rect" id="node2" href="$df/dce/namespacegraph.html#a9125ceb66bfbec3093bba64c2c1e99e2" title="Function that add edge between two nodes or vertices of graph." alt="" coords="156,5,268,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="176,55,248,80"/>
-<area shape="rect" id="node4" href="$df/dce/namespacegraph.html#a83ab16e96cec644109a58dfc9329bc2b" title="Function that perfoms depth first search algorithm on graph and calculated the number of connected co..." alt="" coords="104,104,320,130"/>
-<area shape="rect" id="node5" href="$df/dce/namespacegraph.html#a3ae80bc4c6a79d041b4f3a6589eb7fb8" title="Utility function for depth first seach algorithm this function explores the vertex which is passed in..." alt="" coords="374,79,477,104"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="368,128,483,154"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,56,80"/>
+<area shape="rect" id="Node000002" href="$df/dce/namespacegraph.html#a9125ceb66bfbec3093bba64c2c1e99e2" title="Function that add edge between two nodes or vertices of graph." alt="" coords="156,5,268,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,56,103,40,141,30,142,35,104,45,57,61"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="176,55,248,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,65,162,65,162,70,56,70"/>
+<area shape="rect" id="Node000004" href="$df/dce/namespacegraph.html#a83ab16e96cec644109a58dfc9329bc2b" title="Function that perfoms depth first search algorithm on graph and calculated the number of connected co..." alt="" coords="104,104,320,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="57,74,104,90,132,98,131,103,103,95,55,79"/>
+<area shape="rect" id="Node000005" href="$df/dce/namespacegraph.html#a3ae80bc4c6a79d041b4f3a6589eb7fb8" title="Utility function for depth first seach algorithm this function explores the vertex which is passed in..." alt="" coords="374,79,477,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="320,101,359,97,360,102,321,107"/>
+<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="368,128,483,154"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="321,126,354,130,353,135,320,132"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="390,80,383,70,387,60,402,54,426,52,453,55,466,63,463,67,451,60,426,57,403,59,391,64,388,69,394,77"/>
 </map>

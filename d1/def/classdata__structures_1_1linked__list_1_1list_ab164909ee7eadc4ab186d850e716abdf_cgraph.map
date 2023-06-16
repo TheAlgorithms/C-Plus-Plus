@@ -1,4 +1,5 @@
 <map id="data_structures::linked_list::list::operator=" name="data_structures::linked_list::list::operator=">
-<area shape="rect" id="node1" title="assignment operator creating a deep copy of every node of the input" alt="" coords="5,5,159,46"/>
-<area shape="rect" id="node2" href="$d1/def/classdata__structures_1_1linked__list_1_1list.html#a540989875252b0d41d297d67efa032a8" title="calls delete operator on every node in the represented list" alt="" coords="207,5,382,46"/>
+<area shape="rect" id="Node000001" title="assignment operator creating a deep copy of every node of the input" alt="" coords="5,5,159,46"/>
+<area shape="rect" id="Node000002" href="$d1/def/classdata__structures_1_1linked__list_1_1list.html#a540989875252b0d41d297d67efa032a8" title="calls delete operator on every node in the represented list" alt="" coords="207,5,382,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,23,192,23,192,28,159,28"/>
 </map>

@@ -1,10 +1,18 @@
 <map id="operator&lt;&lt;" name="operator&lt;&lt;">
-<area shape="rect" id="node1" title="Operator overload of &#39;&lt;&lt;&#39; of ostream for Complex class. Overloaded insersion operator to accommodate ..." alt="" coords="5,80,90,106"/>
-<area shape="rect" id="node2" href="$da/d5a/class_complex.html#af8aacf982e2e6c142921bc850f6dc974" title="Member function to get imaginary value of our complex number. Member function (getter) to access the ..." alt="" coords="138,7,247,32"/>
-<area shape="rect" id="node3" href="$dc/d38/ordinary__least__squares__regressor_8cpp.html#a7075a0fccad9b2d79be0275bfe8948d4" title=" " alt="" coords="150,80,235,106"/>
-<area shape="rect" id="node8" href="$da/d5a/class_complex.html#a312e4b19146128408fb06e0150b0faf6" title="Member function to get real value of our complex number. Member function (getter) to access the class..." alt="" coords="141,129,244,155"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="299,5,370,31"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/left.html#" title=" " alt="" coords="302,55,367,80"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/setfill.html#" title=" " alt="" coords="295,104,373,130"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/setw.html#" title=" " alt="" coords="297,153,372,179"/>
+<area shape="rect" id="Node000001" title="Operator overload of &#39;&lt;&lt;&#39; of ostream for Complex class. Overloaded insersion operator to accommodate ..." alt="" coords="5,80,90,106"/>
+<area shape="rect" id="Node000002" href="$da/d5a/class_complex.html#af8aacf982e2e6c142921bc850f6dc974" title="Member function to get imaginary value of our complex number. Member function (getter) to access the ..." alt="" coords="138,7,247,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,77,136,41,146,36,148,41,139,46,73,82"/>
+<area shape="rect" id="Node000003" href="$dc/d38/ordinary__least__squares__regressor_8cpp.html#a7075a0fccad9b2d79be0275bfe8948d4" title=" " alt="" coords="150,80,235,106"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="90,90,136,90,136,96,90,96"/>
+<area shape="rect" id="Node000008" href="$da/d5a/class_complex.html#a312e4b19146128408fb06e0150b0faf6" title="Member function to get real value of our complex number. Member function (getter) to access the class..." alt="" coords="141,129,244,155"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="89,104,139,121,138,126,87,109"/>
+<area shape="poly" id="edge5_Node000003_Node000003" title=" " alt="" coords="168,81,163,71,166,62,176,56,192,53,211,56,220,64,216,68,208,61,192,59,178,61,170,65,168,71,173,78"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="299,5,370,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="217,77,294,36,296,41,220,82"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/left.html#" title=" " alt="" coords="302,55,367,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="235,83,287,73,288,78,236,88"/>
+<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/setfill.html#" title=" " alt="" coords="295,104,373,130"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="235,97,281,105,280,110,235,103"/>
+<area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/setw.html#" title=" " alt="" coords="297,153,372,179"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="226,104,248,114,300,143,297,148,246,119,224,109"/>
 </map>

@@ -6,61 +6,95 @@
 <!-- Title: test Pages: 1 -->
 <svg width="302pt" height="64pt"
  viewBox="0.00 0.00 302.00 64.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 60.25)">
 <title>test</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Self&#45;test implementations.">
+<g id="a_Node000001"><a xlink:title="Self&#45;test implementations.">
 <polygon fill="#999999" stroke="#666666" points="32.5,-37.25 0,-37.25 0,-18 32.5,-18 32.5,-37.25"/>
 <text text-anchor="middle" x="16.25" y="-23.75" font-family="Helvetica,sans-Serif" font-size="10.00">test</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="162.88,-56.25 109.38,-56.25 109.38,-37 162.88,-37 162.88,-56.25"/>
 <text text-anchor="middle" x="136.12" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M32.66,-30.11C49.21,-32.78 76.1,-37.11 98.19,-40.67"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="97.47,-44.26 107.9,-42.4 98.58,-37.35 97.47,-44.26"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../dd/d24/namespacedynamic__programming.html#a0a2215194e58786c34db1ccaf8031079" target="_top" xlink:title="Calculate the longest increasing subsequence for the specified numbers.">
+<g id="a_Node000003"><a xlink:href="../../dd/d24/namespacedynamic__programming.html#a0a2215194e58786c34db1ccaf8031079" target="_top" xlink:title="Calculate the longest increasing subsequence for the specified numbers.">
 <polygon fill="white" stroke="#666666" points="203.75,-19.25 68.5,-19.25 68.5,0 203.75,0 203.75,-19.25"/>
 <text text-anchor="middle" x="136.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">dynamic_programming::LIS</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M32.66,-25.27C39.72,-24.19 48.66,-22.83 58.3,-21.36"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="58.63,-24.69 67.99,-19.72 57.58,-17.77 58.63,-24.69"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max.html#" xlink:title=" ">
+<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="294,-19.25 239.75,-19.25 239.75,0 294,0 294,-19.25"/>
 <text text-anchor="middle" x="266.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::max</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000003_Node000004" class="edge">
 <title>Node3&#45;&gt;Node4</title>
+<g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M204.14,-9.62C212.51,-9.62 220.83,-9.62 228.52,-9.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="228.26,-13.13 238.26,-9.62 228.26,-6.13 228.26,-13.13"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

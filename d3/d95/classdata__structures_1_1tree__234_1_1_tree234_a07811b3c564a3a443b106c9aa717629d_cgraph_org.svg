@@ -9,9 +9,9 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 180.5)">
 <title>data_structures::tree_234::Tree234::InsertPreSplit</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="A insert implementation of pre&#45;split.">
+<g id="a_Node000001"><a xlink:title="A insert implementation of pre&#45;split.">
 <polygon fill="#999999" stroke="#666666" points="143.5,-79.5 0,-79.5 0,-49 143.5,-49 143.5,-79.5"/>
 <text text-anchor="start" x="8" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="71.75" y="-54.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Tree234::InsertPreSplit</text>
@@ -19,24 +19,27 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/unique_ptr/get.html#" xlink:title=" ">
+<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/unique_ptr/get.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="312.5,-116.88 212.5,-116.88 212.5,-97.62 312.5,-97.62 312.5,-116.88"/>
 <text text-anchor="middle" x="262.5" y="-103.38" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr::get</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M141.69,-79.96C163.03,-84.82 186.24,-90.1 206.5,-94.72"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="205.58,-98.33 216.11,-97.14 207.13,-91.5 205.58,-98.33"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ad37e29e2a4a6cc0eb65cbd5595e1da95" target="_top" xlink:title="Merge node to a not&#45;full target node.">
+<g id="a_Node000003"><a xlink:href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ad37e29e2a4a6cc0eb65cbd5595e1da95" target="_top" xlink:title="Merge node to a not&#45;full target node.">
 <polygon fill="white" stroke="#666666" points="345.5,-79.5 179.5,-79.5 179.5,-49 345.5,-49 345.5,-79.5"/>
 <text text-anchor="start" x="187.5" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="262.5" y="-54.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Tree234::MergeNodeNotFull</text>
@@ -44,15 +47,18 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M143.84,-64.25C151.83,-64.25 160.06,-64.25 168.28,-64.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="168.06,-67.75 178.06,-64.25 168.06,-60.75 168.06,-67.75"/>
+</a>
+</g>
 </g>
 <!-- Node9 -->
-<g id="node9" class="node">
+<g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a370b625ca9f16bbef2b65e024ef78ea9" target="_top" xlink:title="Split a 4&#45;node to 1 parent and 2 children, and return the parent node.">
+<g id="a_Node000009"><a xlink:href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a370b625ca9f16bbef2b65e024ef78ea9" target="_top" xlink:title="Split a 4&#45;node to 1 parent and 2 children, and return the parent node.">
 <polygon fill="white" stroke="#666666" points="326,-30.5 199,-30.5 199,0 326,0 326,-30.5"/>
 <text text-anchor="start" x="207" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="262.5" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Tree234::SplitNode</text>
@@ -60,15 +66,18 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node9 -->
-<g id="edge9" class="edge">
+<g id="edge9_Node000001_Node000009" class="edge">
 <title>Node1&#45;&gt;Node9</title>
+<g id="a_edge9_Node000001_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M133.25,-48.54C151.45,-43.82 171.59,-38.59 190.42,-33.7"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="191.22,-36.85 200.02,-30.95 189.46,-30.08 191.22,-36.85"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a8e809ae85ae00e937f67ddb76951b6bb" target="_top" xlink:title="Insert item to the proper position of the node and return the position index.">
+<g id="a_Node000004"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a8e809ae85ae00e937f67ddb76951b6bb" target="_top" xlink:title="Insert item to the proper position of the node and return the position index.">
 <polygon fill="white" stroke="#666666" points="498,-125.5 381.5,-125.5 381.5,-95 498,-95 498,-125.5"/>
 <text text-anchor="start" x="389.5" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="439.75" y="-100.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Node::InsertItem</text>
@@ -76,15 +85,18 @@
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000003_Node000004" class="edge">
 <title>Node3&#45;&gt;Node4</title>
+<g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M323.32,-79.95C338.69,-83.99 355.34,-88.36 371.08,-92.49"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="369.71,-96.01 380.27,-95.16 371.49,-89.24 369.71,-96.01"/>
+</a>
+</g>
 </g>
 <!-- Node7 -->
-<g id="node7" class="node">
+<g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a4a37381c0ef93d5ae2118b2e554974dd" target="_top" xlink:title="Check if node is a full (4&#45;node)">
+<g id="a_Node000007"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a4a37381c0ef93d5ae2118b2e554974dd" target="_top" xlink:title="Check if node is a full (4&#45;node)">
 <polygon fill="white" stroke="#666666" points="663.25,-78.5 557.25,-78.5 557.25,-48 663.25,-48 663.25,-78.5"/>
 <text text-anchor="start" x="565.25" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="610.25" y="-53.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Node::IsFull</text>
@@ -92,15 +104,18 @@
 </g>
 </g>
 <!-- Node3&#45;&gt;Node7 -->
-<g id="edge7" class="edge">
+<g id="edge7_Node000003_Node000007" class="edge">
 <title>Node3&#45;&gt;Node7</title>
+<g id="a_edge7_Node000003_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M345.88,-64.01C407.2,-63.83 489.69,-63.6 545.9,-63.43"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="545.79,-66.93 555.78,-63.4 545.77,-59.93 545.79,-66.93"/>
+</a>
+</g>
 </g>
 <!-- Node8 -->
-<g id="node8" class="node">
+<g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ab4e5f7b7b260bb81d9441652cc124c74" target="_top" xlink:title="Set child pointer to the position of index.">
+<g id="a_Node000008"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ab4e5f7b7b260bb81d9441652cc124c74" target="_top" xlink:title="Set child pointer to the position of index.">
 <polygon fill="white" stroke="#666666" points="494.62,-36.5 384.88,-36.5 384.88,-6 494.62,-6 494.62,-36.5"/>
 <text text-anchor="start" x="392.88" y="-23" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="439.75" y="-11.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Node::SetChild</text>
@@ -108,15 +123,18 @@
 </g>
 </g>
 <!-- Node3&#45;&gt;Node8 -->
-<g id="edge8" class="edge">
+<g id="edge8_Node000003_Node000008" class="edge">
 <title>Node3&#45;&gt;Node8</title>
+<g id="a_edge8_Node000003_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M327.27,-48.6C342.53,-44.86 358.85,-40.86 374.15,-37.1"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="374.68,-40.33 383.56,-34.55 373.01,-33.53 374.68,-40.33"/>
+</a>
+</g>
 </g>
 <!-- Node5 -->
-<g id="node5" class="node">
+<g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a22fd25c6c811c64b6b27b0850d8c532f" target="_top" xlink:title="Check if item is in the node.">
+<g id="a_Node000005"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a22fd25c6c811c64b6b27b0850d8c532f" target="_top" xlink:title="Check if item is in the node.">
 <polygon fill="white" stroke="#666666" points="665.88,-176.5 554.62,-176.5 554.62,-146 665.88,-146 665.88,-176.5"/>
 <text text-anchor="start" x="562.62" y="-163" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="610.25" y="-151.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Node::Contains</text>
@@ -124,15 +142,18 @@
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000004_Node000005" class="edge">
 <title>Node4&#45;&gt;Node5</title>
+<g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M492.68,-125.97C509.9,-131.18 529.24,-137.03 547.14,-142.45"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="545.91,-146.04 556.49,-145.58 547.93,-139.34 545.91,-146.04"/>
+</a>
+</g>
 </g>
 <!-- Node6 -->
-<g id="node6" class="node">
+<g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a306a30931f54c84098b38d6bc8f4a956" target="_top" xlink:title="Insert a value to the index position.">
+<g id="a_Node000006"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a306a30931f54c84098b38d6bc8f4a956" target="_top" xlink:title="Insert a value to the index position.">
 <polygon fill="white" stroke="#666666" points="686.5,-127.5 534,-127.5 534,-97 686.5,-97 686.5,-127.5"/>
 <text text-anchor="start" x="542" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="610.25" y="-102.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Node::InsertItemByIndex</text>
@@ -140,16 +161,22 @@
 </g>
 </g>
 <!-- Node4&#45;&gt;Node6 -->
-<g id="edge5" class="edge">
+<g id="edge5_Node000004_Node000006" class="edge">
 <title>Node4&#45;&gt;Node6</title>
+<g id="a_edge5_Node000004_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M498.27,-110.93C506.16,-111.03 514.39,-111.12 522.66,-111.22"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="522.48,-114.73 532.52,-111.35 522.56,-107.73 522.48,-114.73"/>
+</a>
+</g>
 </g>
 <!-- Node4&#45;&gt;Node7 -->
-<g id="edge6" class="edge">
+<g id="edge6_Node000004_Node000007" class="edge">
 <title>Node4&#45;&gt;Node7</title>
+<g id="a_edge6_Node000004_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M496.86,-94.6C512.72,-90.17 530.09,-85.33 546.33,-80.8"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="547.11,-83.94 555.81,-77.88 545.23,-77.19 547.11,-83.94"/>
+</a>
+</g>
 </g>
 </g>
 </svg>

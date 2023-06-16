@@ -1,8 +1,14 @@
 <map id="range_queries::perSegTree" name="range_queries::perSegTree">
-<area shape="rect" id="node1" title="Range query here is range sum, but the code can be modified to make different queries like range max ..." alt="" coords="549,94,726,119"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="264,5,475,61"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="5,63,159,118"/>
-<area shape="rect" id="node4" href="$d5/d66/classrange__queries_1_1per_seg_tree_1_1_node.html" title=" " alt="" coords="281,88,458,128"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="296,158,443,183"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/integer.html" title=" " alt="" coords="39,168,125,194"/>
+<area shape="rect" id="Node000001" title="Range query here is range sum, but the code can be modified to make different queries like range max ..." alt="" coords="549,94,726,119"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="264,5,475,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="488,63,588,91,587,96,487,68"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="5,63,159,118"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="173,61,182,59,263,44,264,49,183,64,174,66"/>
+<area shape="rect" id="Node000004" href="$d5/d66/classrange__queries_1_1per_seg_tree_1_1_node.html" title=" " alt="" coords="281,88,458,128"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="174,93,280,100,280,105,173,99"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="288,135,236,141,182,137,135,121,137,116,183,132,236,136,288,129"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="296,158,443,183"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="440,151,580,117,581,122,441,156"/>
+<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/integer.html" title=" " alt="" coords="39,168,125,194"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="140,179,240,178,296,174,296,179,240,183,140,184"/>
 </map>

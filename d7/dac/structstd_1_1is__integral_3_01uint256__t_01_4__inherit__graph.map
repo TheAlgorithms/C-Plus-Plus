@@ -1,4 +1,5 @@
 <map id="std::is_integral&lt; uint256_t &gt;" name="std::is_integral&lt; uint256_t &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="5,79,189,105"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/integral_constant.html" title=" " alt="" coords="46,5,148,31"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,79,189,105"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/integral_constant.html" title=" " alt="" coords="46,5,148,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,46,100,79,94,79,94,46"/>
 </map>

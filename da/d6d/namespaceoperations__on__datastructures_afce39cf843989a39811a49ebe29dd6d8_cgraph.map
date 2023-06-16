@@ -1,4 +1,6 @@
 <map id="operations_on_datastructures::shift_left" name="operations_on_datastructures::shift_left">
-<area shape="rect" id="node1" title="Shifts the given vector to the left by the shift amount and returns a new vector with the result...." alt="" coords="5,29,198,70"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="246,37,361,63"/>
+<area shape="rect" id="Node000001" title="Shifts the given vector to the left by the shift amount and returns a new vector with the result...." alt="" coords="5,29,198,70"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="63,29,61,19,68,10,81,5,102,3,124,5,137,12,135,17,122,10,101,8,82,10,71,15,66,20,68,28"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="246,37,361,63"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="198,47,231,47,231,52,198,52"/>
 </map>

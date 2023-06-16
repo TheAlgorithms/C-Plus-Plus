@@ -1,9 +1,17 @@
 <map id="test1" name="test1">
-<area shape="rect" id="node1" title="Self&#45;implementations, 1st test." alt="" coords="5,55,56,80"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/at.html#" title=" " alt="" coords="109,5,212,31"/>
-<area shape="rect" id="node3" href="$dd/d1f/classdsu.html#ab8ee27083a3c2e2df80755165a2ec280" title="Method to print all the parents of i, or the path from i to representative." alt="" coords="104,55,217,80"/>
-<area shape="rect" id="node4" href="$dd/d1f/classdsu.html#a81897528bdb53fd5e796d75d7dbc430f" title="Method that combines two disjoint sets to which i and j belongs to and make a single set having a com..." alt="" coords="110,104,211,130"/>
-<area shape="rect" id="node5" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="407,79,499,104"/>
-<area shape="rect" id="node6" href="$dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303" title="A utility function which check whether i and j belongs to same set or not." alt="" coords="265,104,359,130"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="273,153,351,179"/>
+<area shape="rect" id="Node000001" title="Self&#45;implementations, 1st test." alt="" coords="5,55,56,80"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/at.html#" title=" " alt="" coords="109,5,212,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,56,110,34,112,39,57,61"/>
+<area shape="rect" id="Node000003" href="$dd/d1f/classdsu.html#ab8ee27083a3c2e2df80755165a2ec280" title="Method to print all the parents of i, or the path from i to representative." alt="" coords="104,55,217,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,65,89,65,89,70,56,70"/>
+<area shape="rect" id="Node000004" href="$dd/d1f/classdsu.html#a81897528bdb53fd5e796d75d7dbc430f" title="Method that combines two disjoint sets to which i and j belongs to and make a single set having a com..." alt="" coords="110,104,211,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="57,74,112,96,110,101,55,79"/>
+<area shape="rect" id="Node000005" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="407,79,499,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="206,101,265,89,331,85,392,85,392,91,331,90,265,94,207,106"/>
+<area shape="rect" id="Node000006" href="$dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303" title="A utility function which check whether i and j belongs to same set or not." alt="" coords="265,104,359,130"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="211,114,250,114,250,120,211,120"/>
+<area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="273,153,351,179"/>
+<area shape="poly" id="edge8_Node000004_Node000007" title=" " alt="" coords="203,128,260,146,258,152,202,133"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="429,79,424,70,427,61,437,54,453,52,471,55,480,62,477,66,469,60,453,57,439,59,431,64,429,70,433,77"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="359,106,392,100,393,105,360,111"/>
 </map>

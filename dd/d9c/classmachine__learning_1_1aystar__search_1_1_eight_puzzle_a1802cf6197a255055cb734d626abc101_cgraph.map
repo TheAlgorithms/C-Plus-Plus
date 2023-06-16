@@ -1,4 +1,5 @@
 <map id="machine_learning::aystar_search::EightPuzzle::operator=" name="machine_learning::aystar_search::EightPuzzle::operator=">
-<area shape="rect" id="node1" title="Move assignment operator." alt="" coords="5,5,214,46"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/move.html#" title=" " alt="" coords="262,13,341,39"/>
+<area shape="rect" id="Node000001" title="Move assignment operator." alt="" coords="5,5,214,46"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/move.html#" title=" " alt="" coords="262,13,341,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,23,247,23,247,28,214,28"/>
 </map>

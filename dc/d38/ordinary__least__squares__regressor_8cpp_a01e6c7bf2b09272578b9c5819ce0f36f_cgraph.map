@@ -1,5 +1,7 @@
 <map id="operator+" name="operator+">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,82,56"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="152,5,223,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="130,55,245,80"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,82,56"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="152,5,223,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,34,137,24,138,30,83,39"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="130,55,245,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="83,47,115,53,115,58,82,52"/>
 </map>

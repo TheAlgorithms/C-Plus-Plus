@@ -6,61 +6,95 @@
 <!-- Title: graph/is_graph_bipartite.cpp Pages: 1 -->
 <svg width="183pt" height="83pt"
  viewBox="0.00 0.00 183.25 82.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 78.5)">
 <title>graph/is_graph_bipartite.cpp</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Algorithm to check whether a graph is bipartite">
+<g id="a_Node000001"><a xlink:title="Algorithm to check whether a graph is bipartite">
 <polygon fill="#999999" stroke="#666666" points="161.88,-74.5 23.62,-74.5 23.62,-55.25 161.88,-55.25 161.88,-74.5"/>
 <text text-anchor="middle" x="92.75" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">graph/is_graph_bipartite.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="53.5,-19.25 0,-19.25 0,0 53.5,0 53.5,-19.25"/>
 <text text-anchor="middle" x="26.75" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">iostream</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M81.55,-54.84C71.92,-47.07 57.8,-35.67 46.3,-26.4"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="48.76,-23.08 38.78,-19.52 44.37,-28.53 48.76,-23.08"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:title=" ">
+<g id="a_Node000003"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="113.88,-19.25 71.62,-19.25 71.62,0 113.88,0 113.88,-19.25"/>
 <text text-anchor="middle" x="92.75" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">queue</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M92.75,-55.08C92.75,-48.42 92.75,-38.99 92.75,-30.53"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="96.25,-30.61 92.75,-20.61 89.25,-30.61 96.25,-30.61"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:title=" ">
+<g id="a_Node000004"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="175.25,-19.25 132.25,-19.25 132.25,0 175.25,0 175.25,-19.25"/>
 <text text-anchor="middle" x="153.75" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">vector</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
+<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M103.1,-54.84C111.91,-47.15 124.8,-35.9 135.36,-26.68"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="137.32,-28.74 142.56,-19.52 132.72,-23.46 137.32,-28.74"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

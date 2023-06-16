@@ -1,7 +1,12 @@
 <map id="data_structures::SegmentTree::range_comb" name="data_structures::SegmentTree::range_comb">
-<area shape="rect" id="node1" title="Helper method for range_comb method below." alt="" coords="5,92,177,133"/>
-<area shape="rect" id="node2" href="$dd/d95/classdata__structures_1_1_segment_tree.html#a8d22286b7be3dcbb701ac5c7d9c79841" title="Any associative function that combines x and y." alt="" coords="225,5,396,46"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="274,70,347,96"/>
-<area shape="rect" id="node4" href="$dd/d95/classdata__structures_1_1_segment_tree.html#a6d3beccc936af2377c8eeb17067fd141" title="Gives the midpoint between two integers." alt="" coords="225,120,396,161"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="276,185,345,211"/>
+<area shape="rect" id="Node000001" title="Helper method for range_comb method below." alt="" coords="5,92,177,133"/>
+<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="50,92,47,82,54,73,69,67,91,65,115,68,129,74,127,79,114,73,91,71,70,73,57,77,53,83,55,91"/>
+<area shape="rect" id="Node000002" href="$dd/d95/classdata__structures_1_1_segment_tree.html#a8d22286b7be3dcbb701ac5c7d9c79841" title="Any associative function that combines x and y." alt="" coords="225,5,396,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,89,224,55,239,49,241,54,226,60,143,94"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="274,70,347,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,98,259,87,260,92,177,104"/>
+<area shape="rect" id="Node000004" href="$dd/d95/classdata__structures_1_1_segment_tree.html#a6d3beccc936af2377c8eeb17067fd141" title="Gives the midpoint between two integers." alt="" coords="225,120,396,161"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="177,121,210,125,209,130,176,126"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="276,185,345,211"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="136,131,226,170,263,182,261,187,224,175,134,136"/>
 </map>

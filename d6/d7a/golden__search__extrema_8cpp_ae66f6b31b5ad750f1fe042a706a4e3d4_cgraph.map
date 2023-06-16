@@ -1,12 +1,23 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,70,55,96"/>
-<area shape="rect" id="node2" href="$d6/d7a/golden__search__extrema_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0" title="Test function to find minima for the function &#160;in the interval &#160;&#160;&#160;Expected result = 2." alt="" coords="103,70,153,96"/>
-<area shape="rect" id="node7" href="$d6/d7a/golden__search__extrema_8cpp.html#a0283886819c7c140a023582b7269e2d0" title="Test function to find maxima for the function &#160;in the interval &#160;&#160;&#160;Expected result: ." alt="" coords="103,21,153,47"/>
-<area shape="rect" id="node9" href="$d6/d7a/golden__search__extrema_8cpp.html#a6d0455dd5c30adda100e95f0423c786e" title="Test function to find maxima for the function &#160;in the interval &#160;&#160;&#160;Expected result: ." alt="" coords="103,120,153,145"/>
-<area shape="rect" id="node3" href="$d6/d7a/golden__search__extrema_8cpp.html#a1aa76a6d5fd4d333f9072beff1dc486b" title="Get the minima of a function in the given interval. To get the maxima, simply negate the function...." alt="" coords="201,70,289,96"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/numeric_limits/infinity.html#" title=" " alt="" coords="337,5,469,46"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="368,70,438,96"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="364,120,442,145"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="210,21,281,47"/>
-<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/cos.html#" title=" " alt="" coords="211,120,279,145"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,70,55,96"/>
+<area shape="rect" id="Node000002" href="$d6/d7a/golden__search__extrema_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0" title="Test function to find minima for the function &#160;in the interval &#160;&#160;&#160;Expected result = 2." alt="" coords="103,70,153,96"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,80,88,80,88,86,55,86"/>
+<area shape="rect" id="Node000007" href="$d6/d7a/golden__search__extrema_8cpp.html#a0283886819c7c140a023582b7269e2d0" title="Test function to find maxima for the function &#160;in the interval &#160;&#160;&#160;Expected result: ." alt="" coords="103,21,153,47"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="54,68,89,50,91,55,56,73"/>
+<area shape="rect" id="Node000009" href="$d6/d7a/golden__search__extrema_8cpp.html#a6d0455dd5c30adda100e95f0423c786e" title="Test function to find maxima for the function &#160;in the interval &#160;&#160;&#160;Expected result: ." alt="" coords="103,120,153,145"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="56,93,91,111,89,116,54,98"/>
+<area shape="rect" id="Node000003" href="$d6/d7a/golden__search__extrema_8cpp.html#a1aa76a6d5fd4d333f9072beff1dc486b" title="Get the minima of a function in the given interval. To get the maxima, simply negate the function...." alt="" coords="201,70,289,96"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="153,80,186,80,186,86,153,86"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/numeric_limits/infinity.html#" title=" " alt="" coords="337,5,469,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="282,67,331,49,332,54,284,72"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="368,70,438,96"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="290,80,354,80,354,86,290,86"/>
+<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="364,120,442,145"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="290,94,351,113,349,118,288,99"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="155,42,200,61,198,66,152,47"/>
+<area shape="rect" id="Node000008" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="210,21,281,47"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="153,31,195,31,195,36,153,36"/>
+<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="152,119,198,100,200,105,155,124"/>
+<area shape="rect" id="Node000010" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/cos.html#" title=" " alt="" coords="211,120,279,145"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="153,130,196,130,196,135,153,135"/>
 </map>

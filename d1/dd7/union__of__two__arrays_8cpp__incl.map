@@ -1,7 +1,11 @@
 <map id="operations_on_datastructures/union_of_two_arrays.cpp" name="operations_on_datastructures/union_of_two_arrays.cpp">
-<area shape="rect" id="node1" title="Implementation for the Union of two sorted Arrays algorithm." alt="" coords="85,5,277,46"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,94,80,120"/>
-<area shape="rect" id="node3" title=" " alt="" coords="104,94,168,120"/>
-<area shape="rect" id="node4" title=" " alt="" coords="192,94,264,120"/>
-<area shape="rect" id="node5" title=" " alt="" coords="287,94,345,120"/>
+<area shape="rect" id="Node000001" title="Implementation for the Union of two sorted Arrays algorithm." alt="" coords="85,5,277,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,80,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,49,77,89,75,84,145,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="104,94,168,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,48,152,82,148,80,168,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="192,94,264,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="195,45,216,80,211,82,190,48"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="287,94,345,120"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="216,44,284,84,281,88,213,49"/>
 </map>

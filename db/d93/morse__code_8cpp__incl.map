@@ -1,7 +1,11 @@
 <map id="ciphers/morse_code.cpp" name="ciphers/morse_code.cpp">
-<area shape="rect" id="node1" title="Implementation of [Morse Code] (https://en.wikipedia.org/wiki/Morse_code)." alt="" coords="91,5,254,31"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,79,70,105"/>
-<area shape="rect" id="node3" title=" " alt="" coords="94,79,165,105"/>
-<area shape="rect" id="node4" title=" " alt="" coords="190,79,243,105"/>
-<area shape="rect" id="node5" title=" " alt="" coords="268,79,325,105"/>
+<area shape="rect" id="Node000001" title="Implementation of [Morse Code] (https://en.wikipedia.org/wiki/Morse_code)." alt="" coords="91,5,254,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,70,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,34,75,74,72,69,148,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="94,79,165,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="167,33,146,68,142,65,163,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="190,79,243,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,30,203,65,199,68,177,33"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="268,79,325,105"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="195,29,264,69,262,74,192,34"/>
 </map>

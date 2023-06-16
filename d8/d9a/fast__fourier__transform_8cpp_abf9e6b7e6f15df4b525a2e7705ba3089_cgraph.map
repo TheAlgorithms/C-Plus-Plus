@@ -1,7 +1,12 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,94,55,120"/>
-<area shape="rect" id="node2" href="$d8/d9a/fast__fourier__transform_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,94,146,120"/>
-<area shape="rect" id="node3" href="$d1/de0/namespacenumerical__methods.html#a158fd271b9a53e8f3f60b08b18857150" title="FastFourierTransform is a recursive function which returns list of complex numbers." alt="" coords="194,29,340,70"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/imag.html#" title=" " alt="" coords="201,94,333,120"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/real.html#" title=" " alt="" coords="205,144,330,169"/>
+<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,94,55,120"/>
+<area shape="rect" id="Node000002" href="$d8/d9a/fast__fourier__transform_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,94,146,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,104,88,104,88,110,55,110"/>
+<area shape="rect" id="Node000003" href="$d1/de0/namespacenumerical__methods.html#a158fd271b9a53e8f3f60b08b18857150" title="FastFourierTransform is a recursive function which returns list of complex numbers." alt="" coords="194,29,340,70"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="145,96,200,74,202,79,147,101"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/imag.html#" title=" " alt="" coords="201,94,333,120"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="146,104,186,104,186,110,146,110"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/real.html#" title=" " alt="" coords="205,144,330,169"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="147,112,195,130,212,136,210,141,193,135,146,117"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="239,29,238,20,242,11,252,5,267,3,284,5,293,12,290,16,282,10,267,8,254,10,246,14,243,20,244,28"/>
 </map>

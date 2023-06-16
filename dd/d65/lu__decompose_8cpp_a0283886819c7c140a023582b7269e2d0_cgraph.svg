@@ -6,67 +6,104 @@
 <!-- Title: test2 Pages: 1 -->
 <svg width="412pt" height="46pt"
  viewBox="0.00 0.00 411.75 46.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 42.25)">
 <title>test2</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="37.75,-19.25 0,-19.25 0,0 37.75,0 37.75,-19.25"/>
 <text text-anchor="middle" x="18.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">test2</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="153.5,-19.25 73.75,-19.25 73.75,0 153.5,0 153.5,-19.25"/>
 <text text-anchor="middle" x="113.62" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">determinant_lu</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M38.2,-9.62C45.41,-9.62 54.06,-9.62 62.88,-9.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="62.63,-13.13 72.63,-9.62 62.63,-6.13 62.63,-13.13"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d1/dbe/lu__decomposition_8h.html#a75b8a228c6419ecda6077255d6d60509" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="../../d1/dbe/lu__decomposition_8h.html#a75b8a228c6419ecda6077255d6d60509" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="281.25,-38.25 189.5,-38.25 189.5,-19 281.25,-19 281.25,-38.25"/>
 <text text-anchor="middle" x="235.38" y="-24.75" font-family="Helvetica,sans-Serif" font-size="10.00">lu_decomposition</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
+<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M153.84,-15.85C161.71,-17.1 170.13,-18.43 178.44,-19.75"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="177.83,-23.36 188.26,-21.47 178.93,-16.44 177.83,-23.36"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
+<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="403.75,-19.25 317.25,-19.25 317.25,0 403.75,0 403.75,-19.25"/>
 <text text-anchor="middle" x="360.5" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000002_Node000004" class="edge">
 <title>Node2&#45;&gt;Node4</title>
+<g id="a_edge4_Node000002_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M153.97,-9.62C195.18,-9.62 260.19,-9.62 306.04,-9.62"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="305.96,-13.13 315.96,-9.62 305.96,-6.13 305.96,-13.13"/>
+</a>
+</g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000003_Node000004" class="edge">
 <title>Node3&#45;&gt;Node4</title>
+<g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M281.52,-21.66C289.54,-20.42 297.96,-19.12 306.18,-17.85"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="306.47,-21.2 315.81,-16.21 305.4,-14.28 306.47,-21.2"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

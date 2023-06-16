@@ -1,6 +1,9 @@
 <map id="complex_str" name="complex_str">
-<area shape="rect" id="node1" title=" " alt="" coords="5,55,98,80"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/imag.html#" title=" " alt="" coords="146,5,278,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/real.html#" title=" " alt="" coords="149,55,275,80"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/c/fprintf.html#" title=" " alt="" coords="167,104,257,130"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,98,80"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/imag.html#" title=" " alt="" coords="146,5,278,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,51,153,33,155,38,97,57"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/real.html#" title=" " alt="" coords="149,55,275,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="98,65,134,65,134,70,98,70"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/c/fprintf.html#" title=" " alt="" coords="167,104,257,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="97,78,155,97,153,102,95,84"/>
 </map>

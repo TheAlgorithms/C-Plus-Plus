@@ -6,61 +6,95 @@
 <!-- Title: search/saddleback_search.cpp Pages: 1 -->
 <svg width="189pt" height="83pt"
  viewBox="0.00 0.00 188.62 82.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 78.5)">
 <title>search/saddleback_search.cpp</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Implementation of Saddleback Algorithm for 2D arrays.">
+<g id="a_Node000001"><a xlink:title="Implementation of Saddleback Algorithm for 2D arrays.">
 <polygon fill="#999999" stroke="#666666" points="168.62,-74.5 17.62,-74.5 17.62,-55.25 168.62,-55.25 168.62,-74.5"/>
 <text text-anchor="middle" x="93.12" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">search/saddleback_search.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="48.25,-19.25 0,-19.25 0,0 48.25,0 48.25,-19.25"/>
 <text text-anchor="middle" x="24.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">cassert</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M81.42,-54.84C71.25,-46.99 56.29,-35.45 44.21,-26.12"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="46.71,-22.86 36.66,-19.52 42.44,-28.41 46.71,-22.86"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:title=" ">
+<g id="a_Node000003"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="119.88,-19.25 66.38,-19.25 66.38,0 119.88,0 119.88,-19.25"/>
 <text text-anchor="middle" x="93.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">iostream</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M93.12,-55.08C93.12,-48.42 93.12,-38.99 93.12,-30.53"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="96.63,-30.61 93.12,-20.61 89.63,-30.61 96.63,-30.61"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:title=" ">
+<g id="a_Node000004"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="180.62,-19.25 137.62,-19.25 137.62,0 180.62,0 180.62,-19.25"/>
 <text text-anchor="middle" x="159.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">vector</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
+<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M104.32,-54.84C113.96,-47.07 128.08,-35.67 139.57,-26.4"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="141.51,-28.53 147.09,-19.52 137.11,-23.08 141.51,-28.53"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

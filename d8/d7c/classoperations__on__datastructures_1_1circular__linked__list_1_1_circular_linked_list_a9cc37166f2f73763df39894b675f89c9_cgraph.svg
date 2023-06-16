@@ -5,59 +5,59 @@
  -->
 <!-- Title: operations_on_datastructures::circular_linked_list::CircularLinkedList::operator= Pages: 1 -->
 <!--zoomable 128 -->
+
 <svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
 <style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
 .edge:hover path { stroke: red; }
 .edge:hover polygon { stroke: red; fill: red; }
 ]]></style>
-<script type="text/javascript"><![CDATA[
-var edges = document.getElementsByTagName('g');
-if (edges && edges.length) {
-  for (var i=0;i<edges.length;i++) {
-    if (edges[i].id.substr(0,4)=='edge') {
-      edges[i].setAttribute('class','edge');
-    }
-  }
-}
-]]></script>
-        <defs>
-                <circle id="rim" cx="0" cy="0" r="7"/>
-                <circle id="rim2" cx="0" cy="0" r="3.5"/>
-                <g id="zoomPlus">
-                        <use xlink:href="#rim" fill="#404040">
-                                <set attributeName="fill" to="#808080" begin="zoomplus.mouseover" end="zoomplus.mouseout"/>
-                        </use>
-                        <path d="M-4,0h8M0,-4v8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
-                </g>
-                <g id="zoomMin">
-                        <use xlink:href="#rim" fill="#404040">
-                                <set attributeName="fill" to="#808080" begin="zoomminus.mouseover" end="zoomminus.mouseout"/>
-                        </use>
-                        <path d="M-4,0h8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
-                </g>
-                <g id="dirArrow">
-                        <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-               <g id="resetDef">
-                       <use xlink:href="#rim2" fill="#404040">
-                               <set attributeName="fill" to="#808080" begin="reset.mouseover" end="reset.mouseout"/>
-                       </use>
-               </g>
-        </defs>
 
-<script type="text/javascript">
+<defs>
+  <circle id="rim" cx="0" cy="0" r="7"/>
+  <circle id="rim2" cx="0" cy="0" r="3.5"/>
+  <g id="zoomPlus">
+    <use xlink:href="#rim" fill="#404040"><set attributeName="fill" to="#808080" begin="zoomplus.mouseover" end="zoomplus.mouseout"/></use>
+    <path d="M-4,0h8M0,-4v8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
+  </g>
+  <g id="zoomMin">
+    <use xlink:href="#rim" fill="#404040"><set attributeName="fill" to="#808080" begin="zoomminus.mouseover" end="zoomminus.mouseout"/></use>
+    <path d="M-4,0h8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
+  </g>
+  <g id="arrowUp" transform="translate(30 24)">
+    <use xlink:href="#rim"/>
+    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+  </g>
+  <g id="arrowRight" transform="rotate(90) translate(36 -43)">
+    <use xlink:href="#rim"/>
+    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+  </g>
+  <g id="arrowDown" transform="rotate(180) translate(-30 -48)">
+    <use xlink:href="#rim"/>
+    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+  </g>
+  <g id="arrowLeft" transform="rotate(270) translate(-36 17)">
+    <use xlink:href="#rim"/>
+    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+  </g>
+  <g id="resetDef">
+    <use xlink:href="#rim2" fill="#404040"><set attributeName="fill" to="#808080" begin="reset.mouseover" end="reset.mouseout"/></use>
+  </g>
+</defs>
+<script type="application/ecmascript">
 var viewWidth = 513;
 var viewHeight = 128;
 var sectionId = 'dynsection-5';
 </script>
-<script xlink:href="../../svgpan.js"/>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>operations_on_datastructures::circular_linked_list::CircularLinkedList::operator=</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Copy assignment operator.">
+<g id="a_Node000001"><a xlink:title="Copy assignment operator.">
 <polygon fill="#999999" stroke="#666666" points="144.25,-80.75 0,-80.75 0,-39 144.25,-39 144.25,-80.75"/>
 <text text-anchor="start" x="8" y="-67.25" font-family="Helvetica,sans-Serif" font-size="10.00">operations_on_datastructures</text>
 <text text-anchor="start" x="8" y="-56" font-family="Helvetica,sans-Serif" font-size="10.00">::circular_linked_list::Circular</text>
@@ -66,9 +66,9 @@ var sectionId = 'dynsection-5';
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html#a398d6cc927a2c8e4a156ae2806f48986" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="../../d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html#a398d6cc927a2c8e4a156ae2806f48986" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="324.5,-119.75 180.25,-119.75 180.25,-78 324.5,-78 324.5,-119.75"/>
 <text text-anchor="start" x="188.25" y="-106.25" font-family="Helvetica,sans-Serif" font-size="10.00">operations_on_datastructures</text>
 <text text-anchor="start" x="188.25" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">::circular_linked_list::Circular</text>
@@ -77,15 +77,18 @@ var sectionId = 'dynsection-5';
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M144.6,-75.51C152.68,-77.28 160.96,-79.09 169.17,-80.89"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="168.37,-84.52 178.88,-83.23 169.86,-77.68 168.37,-84.52"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html#ac38565472a07d07f63ec0d2fd8a69d4d" target="_top" xlink:title="Inserts all the values from a vector into the Circular Linked List.">
+<g id="a_Node000003"><a xlink:href="../../d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html#ac38565472a07d07f63ec0d2fd8a69d4d" target="_top" xlink:title="Inserts all the values from a vector into the Circular Linked List.">
 <polygon fill="white" stroke="#666666" points="324.5,-41.75 180.25,-41.75 180.25,0 324.5,0 324.5,-41.75"/>
 <text text-anchor="start" x="188.25" y="-28.25" font-family="Helvetica,sans-Serif" font-size="10.00">operations_on_datastructures</text>
 <text text-anchor="start" x="188.25" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">::circular_linked_list::Circular</text>
@@ -94,21 +97,27 @@ var sectionId = 'dynsection-5';
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M144.6,-44.24C152.68,-42.47 160.96,-40.66 169.17,-38.86"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="169.86,-42.07 178.88,-36.52 168.37,-35.23 169.86,-42.07"/>
+</a>
+</g>
 </g>
 <!-- Node3&#45;&gt;Node3 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000003_Node000003" class="edge">
 <title>Node3&#45;&gt;Node3</title>
+<g id="a_edge3_Node000003_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M219.11,-42.07C215.94,-51.55 227.03,-59.75 252.38,-59.75 267.43,-59.75 277.45,-56.86 282.45,-52.53"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="286.07,-53.65 285.64,-43.07 279.37,-51.61 286.07,-53.65"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="../../d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html#a53611ec1fef92eeeb875aea1bde1e4de" target="_top" xlink:title="Returns a std::vector of the values of the Circular Linked List.">
+<g id="a_Node000004"><a xlink:href="../../d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html#a53611ec1fef92eeeb875aea1bde1e4de" target="_top" xlink:title="Returns a std::vector of the values of the Circular Linked List.">
 <polygon fill="white" stroke="#666666" points="504.75,-41.75 360.5,-41.75 360.5,0 504.75,0 504.75,-41.75"/>
 <text text-anchor="start" x="368.5" y="-28.25" font-family="Helvetica,sans-Serif" font-size="10.00">operations_on_datastructures</text>
 <text text-anchor="start" x="368.5" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">::circular_linked_list::Circular</text>
@@ -117,58 +126,58 @@ var sectionId = 'dynsection-5';
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000003_Node000004" class="edge">
 <title>Node3&#45;&gt;Node4</title>
+<g id="a_edge4_Node000003_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M324.85,-20.88C332.84,-20.88 341.03,-20.88 349.14,-20.88"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="349.13,-24.38 359.13,-20.88 349.13,-17.38 349.13,-24.38"/>
+</a>
+</g>
 </g>
 <!-- Node4&#45;&gt;Node4 -->
-<g id="edge5" class="edge">
+<g id="edge5_Node000004_Node000004" class="edge">
 <title>Node4&#45;&gt;Node4</title>
+<g id="a_edge5_Node000004_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M399.36,-42.07C396.19,-51.55 407.28,-59.75 432.62,-59.75 447.68,-59.75 457.7,-56.86 462.7,-52.53"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="466.32,-53.65 465.89,-43.07 459.62,-51.61 466.32,-53.65"/>
+</a>
+</g>
 </g>
 </g>
 </svg>
-        <g id="navigator" transform="translate(0 0)" fill="#404254">
-                <rect fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width=".5" x="0" y="0" width="60" height="60"/>
-                <use id="zoomplus" xlink:href="#zoomPlus" x="17" y="9" onmousedown="handleZoom(evt,'in')"/>
-                <use id="zoomminus" xlink:href="#zoomMin" x="42" y="9" onmousedown="handleZoom(evt,'out')"/>
-                <use id="reset" xlink:href="#resetDef" x="30" y="36" onmousedown="handleReset()"/>
-                <g id="arrowUp" xlink:href="#dirArrow" transform="translate(30 24)" onmousedown="handlePan(0,-1)">
-                  <use xlink:href="#rim" fill="#404040">
-                        <set attributeName="fill" to="#808080" begin="arrowUp.mouseover" end="arrowUp.mouseout"/>
-                  </use>
-                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-                <g id="arrowRight" xlink:href="#dirArrow" transform="rotate(90) translate(36 -43)" onmousedown="handlePan(1,0)">
-                  <use xlink:href="#rim" fill="#404040">
-                        <set attributeName="fill" to="#808080" begin="arrowRight.mouseover" end="arrowRight.mouseout"/>
-                  </use>
-                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-                <g id="arrowDown" xlink:href="#dirArrow" transform="rotate(180) translate(-30 -48)" onmousedown="handlePan(0,1)">
-                  <use xlink:href="#rim" fill="#404040">
-                        <set attributeName="fill" to="#808080" begin="arrowDown.mouseover" end="arrowDown.mouseout"/>
-                  </use>
-                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-                <g id="arrowLeft" xlink:href="#dirArrow" transform="rotate(270) translate(-36 17)" onmousedown="handlePan(-1,0)">
-                  <use xlink:href="#rim" fill="#404040">
-                        <set attributeName="fill" to="#808080" begin="arrowLeft.mouseover" end="arrowLeft.mouseout"/>
-                  </use>
-                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-        </g>
-        <svg viewBox="0 0 15 15" width="100%" height="30px" preserveAspectRatio="xMaxYMin meet">
-         <g id="arrow_out" transform="scale(0.3 0.3)">
-          <a xlink:href="classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list_a9cc37166f2f73763df39894b675f89c9_cgraph_org.svg" target="_base">
-           <rect id="button" ry="5" rx="5" y="6" x="6" height="38" width="38"
-                fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width="1.0"/>
-           <path id="arrow"
-             d="M 11.500037,31.436501 C 11.940474,20.09759 22.043105,11.32322 32.158766,21.979434 L 37.068811,17.246167 C 37.068811,17.246167 37.088388,32 37.088388,32 L 22.160133,31.978069 C 22.160133,31.978069 26.997745,27.140456 26.997745,27.140456 C 18.528582,18.264221 13.291696,25.230495 11.500037,31.436501 z"
-             style="fill:#404040;"/>
-          </a>
-         </g>
-        </svg>
+
+<g id="navigator" transform="translate(0 0)" fill="#404254">
+  <rect fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width=".5" x="0" y="0" width="60" height="60"/>
+  <use id="zoomplus" xlink:href="#zoomPlus" x="17" y="9" onmousedown="handleZoom(evt,'in')"/>
+  <use id="zoomminus" xlink:href="#zoomMin" x="42" y="9" onmousedown="handleZoom(evt,'out')"/>
+  <use id="reset" xlink:href="#resetDef" x="30" y="36" onmousedown="handleReset()"/>
+   <use id="arrowup" xlink:href="#arrowUp" x="0" y="0" onmousedown="handlePan(0,-1)"/>
+  <use id="arrowright" xlink:href="#arrowRight" x="0" y="0" onmousedown="handlePan(1,0)"/>
+  <use id="arrowdown" xlink:href="#arrowDown" x="0" y="0" onmousedown="handlePan(0,1)"/>
+  <use id="arrowleft" xlink:href="#arrowLeft" x="0" y="0" onmousedown="handlePan(-1,0)"/>
+</g>
+<svg viewBox="0 0 15 15" width="100%" height="30px" preserveAspectRatio="xMaxYMin meet">
+ <g id="arrow_out" transform="scale(0.3 0.3)">
+  <a xlink:href="classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list_a9cc37166f2f73763df39894b675f89c9_cgraph_org.svg" target="_base">
+   <rect id="button" ry="5" rx="5" y="6" x="6" height="38" width="38"
+        fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width="1.0"/>
+   <path id="arrow"
+     d="M 11.500037,31.436501 C 11.940474,20.09759 22.043105,11.32322 32.158766,21.979434 L 37.068811,17.246167 C 37.068811,17.246167 37.088388,32 37.088388,32 L 22.160133,31.978069 C 22.160133,31.978069 26.997745,27.140456 26.997745,27.140456 C 18.528582,18.264221 13.291696,25.230495 11.500037,31.436501 z"
+     style="fill:#404040;"/>
+  </a>
+ </g>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

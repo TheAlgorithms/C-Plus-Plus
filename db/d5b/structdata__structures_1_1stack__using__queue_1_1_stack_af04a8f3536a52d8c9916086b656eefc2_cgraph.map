@@ -1,7 +1,11 @@
 <map id="data_structures::stack_using_queue::Stack::push" name="data_structures::stack_using_queue::Stack::push">
-<area shape="rect" id="node1" title="Inserts an element to the top of the stack." alt="" coords="5,73,185,113"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/empty.html#" title=" " alt="" coords="233,5,359,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/front.html#" title=" " alt="" coords="238,55,354,80"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/pop.html#" title=" " alt="" coords="240,104,352,130"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/push.html#" title=" " alt="" coords="237,153,355,179"/>
+<area shape="rect" id="Node000001" title="Inserts an element to the top of the stack." alt="" coords="5,73,185,113"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/empty.html#" title=" " alt="" coords="233,5,359,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,69,245,34,246,39,153,74"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/front.html#" title=" " alt="" coords="238,55,354,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,79,223,74,223,79,185,84"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/pop.html#" title=" " alt="" coords="240,104,352,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="185,101,226,106,225,111,185,106"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/push.html#" title=" " alt="" coords="237,153,355,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="154,111,246,145,244,150,152,116"/>
 </map>

@@ -1,3 +1,4 @@
 <map id="backtracking::graph_coloring::printSolution" name="backtracking::graph_coloring::printSolution">
-<area shape="rect" id="node1" title="A utility function to print the solution." alt="" coords="5,29,159,70"/>
+<area shape="rect" id="Node000001" title="A utility function to print the solution." alt="" coords="5,29,159,70"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="52,29,51,19,56,11,66,5,82,3,99,5,110,12,107,16,98,10,82,8,68,10,59,14,56,20,57,28"/>
 </map>

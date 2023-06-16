@@ -1,6 +1,9 @@
 <map id="save_nd_data" name="save_nd_data">
-<area shape="rect" id="node1" title=" " alt="" coords="5,55,108,80"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " alt="" coords="163,5,300,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/is_open.html#" title=" " alt="" coords="156,55,307,80"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/open.html#" title=" " alt="" coords="164,104,299,130"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,108,80"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " alt="" coords="163,5,300,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,51,169,33,170,38,106,57"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/is_open.html#" title=" " alt="" coords="156,55,307,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="108,65,140,65,140,70,108,70"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/open.html#" title=" " alt="" coords="164,104,299,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="106,78,170,97,169,102,104,84"/>
 </map>

@@ -1,8 +1,14 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,100,55,126"/>
-<area shape="rect" id="node2" href="$d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html#a2aaf88c9954ef3ab686f8e4bfbd87622" title="Delete element from back of the queue." alt="" coords="103,5,282,61"/>
-<area shape="rect" id="node4" href="$d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html#a688b7ea064739ea9fa66bf64bf4ae631" title="Show all saved data." alt="" coords="103,85,282,141"/>
-<area shape="rect" id="node5" href="$d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html#a4dc64488c36f84d927365fa8d1933663" title="Add element to the first of the queue." alt="" coords="103,165,282,221"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/at.html#" title=" " alt="" coords="337,60,432,86"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/size.html#" title=" " alt="" coords="330,180,438,206"/>
+<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,100,55,126"/>
+<area shape="rect" id="Node000002" href="$d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html#a2aaf88c9954ef3ab686f8e4bfbd87622" title="Delete element from back of the queue." alt="" coords="103,5,282,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,97,101,71,112,65,115,70,104,76,55,102"/>
+<area shape="rect" id="Node000004" href="$d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html#a688b7ea064739ea9fa66bf64bf4ae631" title="Show all saved data." alt="" coords="103,85,282,141"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="55,111,88,111,88,116,55,116"/>
+<area shape="rect" id="Node000005" href="$d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html#a4dc64488c36f84d927365fa8d1933663" title="Add element to the first of the queue." alt="" coords="103,165,282,221"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="55,124,104,151,115,156,112,161,101,156,53,129"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/at.html#" title=" " alt="" coords="337,60,432,86"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="283,49,323,58,322,63,282,54"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="282,92,322,83,323,89,283,97"/>
+<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/size.html#" title=" " alt="" coords="330,180,438,206"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="282,191,315,191,315,196,282,196"/>
 </map>

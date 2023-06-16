@@ -1,4 +1,6 @@
 <map id="cll" name="cll">
-<area shape="rect" id="node1" title=" " alt="" coords="11,158,49,184"/>
-<area shape="rect" id="node2" href="$d5/da1/structnode.html" title=" " alt="" coords="5,38,55,63"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="11,158,49,184"/>
+<area shape="rect" id="Node000002" href="$d5/da1/structnode.html" title=" " alt="" coords="5,38,55,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="33,78,33,158,27,158,27,78"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="68,34,77,40,81,50,79,59,72,65,53,66,52,61,70,60,74,56,76,50,73,43,65,39"/>
 </map>

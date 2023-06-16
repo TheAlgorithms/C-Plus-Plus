@@ -1,4 +1,5 @@
 <map id="operations_on_datastructures::circular_linked_list::CircularLinkedList::~CircularLinkedList" name="operations_on_datastructures::circular_linked_list::CircularLinkedList::~CircularLinkedList">
-<area shape="rect" id="node1" title="Cleans up memory when destroyed." alt="" coords="5,5,206,61"/>
-<area shape="rect" id="node2" href="$d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html#a398d6cc927a2c8e4a156ae2806f48986" title=" " alt="" coords="254,5,446,61"/>
+<area shape="rect" id="Node000001" title="Cleans up memory when destroyed." alt="" coords="5,5,206,61"/>
+<area shape="rect" id="Node000002" href="$d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html#a398d6cc927a2c8e4a156ae2806f48986" title=" " alt="" coords="254,5,446,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,31,238,31,238,36,206,36"/>
 </map>

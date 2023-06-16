@@ -1,6 +1,10 @@
 <map id="probability::geometric_dist::geometric_distribution::draw_sample" name="probability::geometric_dist::geometric_distribution::draw_sample">
-<area shape="rect" id="node1" title="Generates a (discrete) sample according to the geometrical distribution." alt="" coords="5,58,190,114"/>
-<area shape="rect" id="node2" href="$de/d72/geometric__dist_8cpp.html#a82964ca6180507deb5fafc71050012ba" title="Returns a random number between [0,1]." alt="" coords="265,29,422,70"/>
-<area shape="rect" id="node3" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aaf762e88c66918d7afda4234f28a7ddf" title="The inverse cumulative distribution function." alt="" coords="238,94,449,150"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/log.html#" title=" " alt="" coords="497,109,561,135"/>
+<area shape="rect" id="Node000001" title="Generates a (discrete) sample according to the geometrical distribution." alt="" coords="5,58,190,114"/>
+<area shape="rect" id="Node000002" href="$de/d72/geometric__dist_8cpp.html#a82964ca6180507deb5fafc71050012ba" title="Returns a random number between [0,1]." alt="" coords="265,29,422,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,70,250,61,250,66,190,75"/>
+<area shape="rect" id="Node000003" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aaf762e88c66918d7afda4234f28a7ddf" title="The inverse cumulative distribution function." alt="" coords="238,94,449,150"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="190,97,223,101,222,107,190,102"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="308,29,306,19,312,10,324,5,343,3,364,5,376,12,374,17,363,10,343,8,326,10,315,15,311,20,313,28"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/log.html#" title=" " alt="" coords="497,109,561,135"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="450,119,482,119,482,124,450,124"/>
 </map>

@@ -1,3 +1,4 @@
 <map id="greedy_algorithms::boruvkas_minimum_spanning_tree::findParent" name="greedy_algorithms::boruvkas_minimum_spanning_tree::findParent">
-<area shape="rect" id="node1" title="Recursively returns the vertex&#39;s parent at the root of the tree." alt="" coords="5,29,199,85"/>
+<area shape="rect" id="Node000001" title="Recursively returns the vertex&#39;s parent at the root of the tree." alt="" coords="5,29,199,85"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="64,29,64,19,71,10,84,5,102,3,123,5,136,13,133,17,121,11,102,8,85,10,74,15,69,21,69,29"/>
 </map>

@@ -1,8 +1,13 @@
 <map id="graph/depth_first_search_with_stack.cpp" name="graph/depth_first_search_with_stack.cpp">
-<area shape="rect" id="node1" title="Depth First Search Algorithm using Stack (Depth First Search Algorithm)" alt="" coords="126,5,290,46"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,94,77,120"/>
-<area shape="rect" id="node3" title=" " alt="" coords="101,94,154,120"/>
-<area shape="rect" id="node4" title=" " alt="" coords="179,94,236,120"/>
-<area shape="rect" id="node5" title=" " alt="" coords="261,94,325,120"/>
-<area shape="rect" id="node6" title=" " alt="" coords="350,94,402,120"/>
+<area shape="rect" id="Node000001" title="Depth First Search Algorithm using Stack (Depth First Search Algorithm)" alt="" coords="126,5,290,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,77,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,49,81,90,78,85,165,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="101,94,154,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="190,48,152,85,149,81,186,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="179,94,236,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="210,46,210,79,205,79,205,46"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="261,94,325,120"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="231,44,271,82,267,86,227,48"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="350,94,402,120"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="251,44,338,85,336,90,248,49"/>
 </map>

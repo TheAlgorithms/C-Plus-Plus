@@ -1,8 +1,13 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,80,55,106"/>
-<area shape="rect" id="node2" href="$de/d07/cycle__sort_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Test implementations." alt="" coords="103,80,146,106"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/iterator/begin.html#" title=" " alt="" coords="205,5,283,31"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/iterator/end.html#" title=" " alt="" coords="210,55,278,80"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="209,104,280,130"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/is_sorted.html#" title=" " alt="" coords="194,153,294,179"/>
+<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,80,55,106"/>
+<area shape="rect" id="Node000002" href="$de/d07/cycle__sort_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Test implementations." alt="" coords="103,80,146,106"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,90,88,90,88,96,55,96"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/iterator/begin.html#" title=" " alt="" coords="205,5,283,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="140,77,193,40,199,36,202,41,195,44,143,82"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/iterator/end.html#" title=" " alt="" coords="210,55,278,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="146,86,195,75,196,80,147,91"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="209,104,280,130"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="147,95,195,104,194,109,146,100"/>
+<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/is_sorted.html#" title=" " alt="" coords="194,153,294,179"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="144,104,195,140,202,144,199,148,193,144,141,108"/>
 </map>

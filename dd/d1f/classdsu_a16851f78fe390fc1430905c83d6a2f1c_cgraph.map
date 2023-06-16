@@ -1,3 +1,4 @@
 <map id="dsu::findSet" name="dsu::findSet">
-<area shape="rect" id="node1" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="5,29,97,55"/>
+<area shape="rect" id="Node000001" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="5,29,97,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="34,30,31,21,33,12,40,5,51,3,63,6,69,13,65,16,60,10,51,8,42,10,38,14,37,20,39,28"/>
 </map>

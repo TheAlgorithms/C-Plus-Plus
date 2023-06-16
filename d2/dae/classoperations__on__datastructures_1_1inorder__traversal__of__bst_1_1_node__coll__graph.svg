@@ -6,12 +6,22 @@
 <!-- Title: operations_on_datastructures::inorder_traversal_of_bst::Node Pages: 1 -->
 <svg width="200pt" height="39pt"
  viewBox="0.00 0.00 200.25 38.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 34.5)">
 <title>operations_on_datastructures::inorder_traversal_of_bst::Node</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="A Node structure representing a single node in BST.">
+<g id="a_Node000001"><a xlink:title="A Node structure representing a single node in BST.">
 <polygon fill="#999999" stroke="#666666" points="155.5,-30.5 0,-30.5 0,0 155.5,0 155.5,-30.5"/>
 <text text-anchor="start" x="8" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">operations_on_datastructures</text>
 <text text-anchor="middle" x="77.75" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">::inorder_traversal_of_bst::Node</text>
@@ -19,12 +29,30 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node1 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000001" class="edge">
 <title>Node1&#45;&gt;Node1</title>
+<g id="a_edge1_Node000001_Node000001"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M166.79,-18.87C171.02,-17.96 173.5,-16.75 173.5,-15.25 173.5,-12.72 166.46,-11.03 155.89,-10.18"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="166.34,-15.53 156.89,-20.32 167.27,-22.47 166.34,-15.53"/>
-<text text-anchor="middle" x="182.88" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00"> left</text>
-<text text-anchor="middle" x="182.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">right</text>
+</a>
+</g>
+<text text-anchor="middle" x="182.88" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> left</text>
+<text text-anchor="middle" x="182.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">right</text>
 </g>
 </g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

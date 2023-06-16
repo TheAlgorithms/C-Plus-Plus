@@ -1,6 +1,10 @@
 <map id="test" name="test">
-<area shape="rect" id="node1" title="Self&#45;test implementations." alt="" coords="5,94,49,120"/>
-<area shape="rect" id="node2" href="$d1/de0/namespacenumerical__methods.html#a158fd271b9a53e8f3f60b08b18857150" title="FastFourierTransform is a recursive function which returns list of complex numbers." alt="" coords="97,29,243,70"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/imag.html#" title=" " alt="" coords="104,94,236,120"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/real.html#" title=" " alt="" coords="107,144,233,169"/>
+<area shape="rect" id="Node000001" title="Self&#45;test implementations." alt="" coords="5,94,49,120"/>
+<area shape="rect" id="Node000002" href="$d1/de0/namespacenumerical__methods.html#a158fd271b9a53e8f3f60b08b18857150" title="FastFourierTransform is a recursive function which returns list of complex numbers." alt="" coords="97,29,243,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="48,96,103,74,105,79,50,101"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/imag.html#" title=" " alt="" coords="104,94,236,120"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="49,104,89,104,89,110,49,110"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/real.html#" title=" " alt="" coords="107,144,233,169"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="50,112,98,130,115,136,113,141,96,135,48,117"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="142,29,141,20,145,11,155,5,170,3,186,5,196,12,193,16,184,10,170,8,157,10,149,14,146,20,147,28"/>
 </map>

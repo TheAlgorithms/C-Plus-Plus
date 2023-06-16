@@ -1,6 +1,10 @@
 <map id="data_structures::SegmentTree::update" name="data_structures::SegmentTree::update">
-<area shape="rect" id="node1" title="Updates a value at a certain position." alt="" coords="5,39,177,79"/>
-<area shape="rect" id="node2" href="$dd/d95/classdata__structures_1_1_segment_tree.html#a2a04f1832c5ce86def50c3021b2ab6b1" title="Helper method for update method below." alt="" coords="225,39,396,79"/>
-<area shape="rect" id="node3" href="$dd/d95/classdata__structures_1_1_segment_tree.html#a8d22286b7be3dcbb701ac5c7d9c79841" title="Any associative function that combines x and y." alt="" coords="444,5,615,46"/>
-<area shape="rect" id="node4" href="$dd/d95/classdata__structures_1_1_segment_tree.html#a6d3beccc936af2377c8eeb17067fd141" title="Gives the midpoint between two integers." alt="" coords="444,71,615,111"/>
+<area shape="rect" id="Node000001" title="Updates a value at a certain position." alt="" coords="5,39,177,79"/>
+<area shape="rect" id="Node000002" href="$dd/d95/classdata__structures_1_1_segment_tree.html#a2a04f1832c5ce86def50c3021b2ab6b1" title="Helper method for update method below." alt="" coords="225,39,396,79"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,56,210,56,210,62,177,62"/>
+<area shape="poly" id="edge4_Node000002_Node000002" title=" " alt="" coords="269,39,267,29,274,20,288,14,310,12,335,15,349,21,346,26,333,20,310,17,289,19,277,24,272,30,274,37"/>
+<area shape="rect" id="Node000003" href="$dd/d95/classdata__structures_1_1_segment_tree.html#a8d22286b7be3dcbb701ac5c7d9c79841" title="Any associative function that combines x and y." alt="" coords="444,5,615,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="396,43,429,38,429,44,396,49"/>
+<area shape="rect" id="Node000004" href="$dd/d95/classdata__structures_1_1_segment_tree.html#a6d3beccc936af2377c8eeb17067fd141" title="Gives the midpoint between two integers." alt="" coords="444,71,615,111"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="396,69,429,74,429,79,396,74"/>
 </map>

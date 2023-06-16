@@ -1,11 +1,19 @@
 <map id="ciphers/a1z26_cipher.cpp" name="ciphers/a1z26_cipher.cpp">
-<area shape="rect" id="node1" title="Implementation of the A1Z26 cipher" alt="" coords="269,5,437,31"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,79,80,105"/>
-<area shape="rect" id="node3" title=" " alt="" coords="104,79,168,105"/>
-<area shape="rect" id="node4" title=" " alt="" coords="192,79,253,105"/>
-<area shape="rect" id="node5" title=" " alt="" coords="276,79,348,105"/>
-<area shape="rect" id="node6" title=" " alt="" coords="371,79,418,105"/>
-<area shape="rect" id="node7" title=" " alt="" coords="442,79,510,105"/>
-<area shape="rect" id="node8" title=" " alt="" coords="535,79,588,105"/>
-<area shape="rect" id="node9" title=" " alt="" coords="613,79,670,105"/>
+<area shape="rect" id="Node000001" title="Implementation of the A1Z26 cipher" alt="" coords="269,5,437,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,80,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="300,34,95,81,94,76,299,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="104,79,168,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="317,34,183,78,182,73,315,29"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="192,79,253,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="332,34,259,74,256,69,330,29"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="276,79,348,105"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="349,33,328,67,324,65,344,30"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="371,79,418,105"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="362,30,382,65,378,67,358,33"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="442,79,510,105"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="375,29,444,69,441,73,373,34"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="535,79,588,105"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="389,29,521,74,520,79,388,34"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="613,79,670,105"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="406,29,599,76,597,81,405,34"/>
 </map>

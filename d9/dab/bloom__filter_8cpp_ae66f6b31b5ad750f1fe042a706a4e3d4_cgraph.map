@@ -1,14 +1,26 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,144,55,170"/>
-<area shape="rect" id="node2" href="$d9/dab/bloom__filter_8cpp.html#a6e509afe40db07681f676ad8da4fb905" title="Test for bitset." alt="" coords="140,63,222,88"/>
-<area shape="rect" id="node7" href="$d9/dab/bloom__filter_8cpp.html#a30edc0d2bb59c185baec81d69d20ed3b" title="Test for bloom filter with int as generic type." alt="" coords="112,144,250,170"/>
-<area shape="rect" id="node10" href="$d9/dab/bloom__filter_8cpp.html#a71f57bf262fe55db928b19dc124cc0d8" title="Test for bloom filter with string as generic type." alt="" coords="103,219,259,244"/>
-<area shape="rect" id="node3" href="$d9/dae/classdata__structures_1_1_bitset.html#a17dbe1b1d559302312e8091f82f7499c" title="Turn bit on position x to 1s." alt="" coords="307,5,489,31"/>
-<area shape="rect" id="node6" href="$d9/dae/classdata__structures_1_1_bitset.html#a9ef54c7c3f6494b36ead3ae2e5cf43ac" title="Doest bitset contains element x." alt="" coords="322,55,475,96"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/resize.html#" title=" " alt="" coords="537,5,664,31"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="543,59,658,84"/>
-<area shape="rect" id="node8" href="$d5/d3c/namespacedata__structures.html#aa6deb9d4a0f63ea97aef3dce4c6c6677" title="Hash function for test" alt="" coords="310,120,486,146"/>
-<area shape="rect" id="node9" href="$d5/d3c/namespacedata__structures.html#a9ed236419034917c5270c1dccd220b5c" title="Hash function for test" alt="" coords="310,169,486,195"/>
-<area shape="rect" id="node11" href="$d5/d3c/namespacedata__structures.html#a271c753baf6dc5ac6f19fa03c5873eb4" title="Function djb2 to get hash for the given string." alt="" coords="308,219,488,244"/>
-<area shape="rect" id="node12" href="$d5/d3c/namespacedata__structures.html#a35eb2bc3edbb52f9c5f0b1e51046ef15" title="Hash function, to get hash for the given string." alt="" coords="316,268,480,294"/>
+<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,144,55,170"/>
+<area shape="rect" id="Node000002" href="$d9/dab/bloom__filter_8cpp.html#a6e509afe40db07681f676ad8da4fb905" title="Test for bitset." alt="" coords="140,63,222,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,141,141,93,144,98,56,146"/>
+<area shape="rect" id="Node000007" href="$d9/dab/bloom__filter_8cpp.html#a30edc0d2bb59c185baec81d69d20ed3b" title="Test for bloom filter with int as generic type." alt="" coords="112,144,250,170"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="55,154,97,154,97,160,55,160"/>
+<area shape="rect" id="Node000010" href="$d9/dab/bloom__filter_8cpp.html#a71f57bf262fe55db928b19dc124cc0d8" title="Test for bloom filter with string as generic type." alt="" coords="103,219,259,244"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="56,166,141,209,139,214,54,171"/>
+<area shape="rect" id="Node000003" href="$d9/dae/classdata__structures_1_1_bitset.html#a17dbe1b1d559302312e8091f82f7499c" title="Turn bit on position x to 1s." alt="" coords="307,5,489,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="222,62,332,33,333,38,223,67"/>
+<area shape="rect" id="Node000006" href="$d9/dae/classdata__structures_1_1_bitset.html#a9ef54c7c3f6494b36ead3ae2e5cf43ac" title="Doest bitset contains element x." alt="" coords="322,55,475,96"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="223,73,306,73,306,78,223,78"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/resize.html#" title=" " alt="" coords="537,5,664,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="490,16,522,16,522,21,490,21"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="543,59,658,84"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="451,29,536,52,534,57,449,34"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="475,71,528,70,528,76,475,77"/>
+<area shape="rect" id="Node000008" href="$d5/d3c/namespacedata__structures.html#aa6deb9d4a0f63ea97aef3dce4c6c6677" title="Hash function for test" alt="" coords="310,120,486,146"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="250,147,295,142,295,147,250,152"/>
+<area shape="rect" id="Node000009" href="$d5/d3c/namespacedata__structures.html#a9ed236419034917c5270c1dccd220b5c" title="Hash function for test" alt="" coords="310,169,486,195"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="250,162,295,168,295,173,250,167"/>
+<area shape="rect" id="Node000011" href="$d5/d3c/namespacedata__structures.html#a271c753baf6dc5ac6f19fa03c5873eb4" title="Function djb2 to get hash for the given string." alt="" coords="308,219,488,244"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="260,229,293,229,293,234,260,234"/>
+<area shape="rect" id="Node000012" href="$d5/d3c/namespacedata__structures.html#a35eb2bc3edbb52f9c5f0b1e51046ef15" title="Hash function, to get hash for the given string." alt="" coords="316,268,480,294"/>
+<area shape="poly" id="edge12_Node000010_Node000012" title=" " alt="" coords="241,242,325,261,323,267,240,248"/>
 </map>

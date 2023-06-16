@@ -1,5 +1,7 @@
 <map id="SegmentIntersection::on_segment" name="SegmentIntersection::on_segment">
-<area shape="rect" id="node1" title=" " alt="" coords="5,23,147,64"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="195,5,267,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="197,55,265,80"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,147,64"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="195,5,267,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,29,179,24,180,29,148,35"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="197,55,265,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,52,182,57,181,63,147,57"/>
 </map>

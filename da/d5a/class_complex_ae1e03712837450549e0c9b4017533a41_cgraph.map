@@ -1,4 +1,5 @@
 <map id="Complex::arg" name="Complex::arg">
-<area shape="rect" id="node1" title="Member function to give the argument of our complex number." alt="" coords="5,5,105,31"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/atan2.html#" title=" " alt="" coords="153,5,232,31"/>
+<area shape="rect" id="Node000001" title="Member function to give the argument of our complex number." alt="" coords="5,5,105,31"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/atan2.html#" title=" " alt="" coords="153,5,232,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,16,138,16,138,21,105,21"/>
 </map>

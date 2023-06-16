@@ -1,12 +1,26 @@
 <map id="double_hashing::addInfo" name="double_hashing::addInfo">
-<area shape="rect" id="node1" title=" " alt="" coords="5,81,168,107"/>
-<area shape="rect" id="node2" href="$d0/d65/namespacedouble__hashing.html#a79a9c914a6c68275b3640303d7faad8a" title=" " alt="" coords="226,107,366,132"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="725,41,797,67"/>
-<area shape="rect" id="node5" href="$d0/d65/namespacedouble__hashing.html#a0d90726ed1de7b3d2ae261baed048003" title="Hash a key. Uses the STL library&#39;s std::hash() function." alt="" coords="676,255,846,280"/>
-<area shape="rect" id="node10" href="$d0/d65/namespacedouble__hashing.html#a1e901418c759627557eff359b8db38cd" title=" " alt="" coords="216,5,376,31"/>
-<area shape="rect" id="node3" href="$d0/d65/namespacedouble__hashing.html#a8f8ff4fb018e1bb32d67d8a1885d3200" title="Performs double hashing to resolve collisions." alt="" coords="424,156,612,182"/>
-<area shape="rect" id="node9" href="$d0/d65/namespacedouble__hashing.html#af4981819aae8bc7e7beeaef02615e30d" title=" " alt="" coords="439,107,597,132"/>
-<area shape="rect" id="node6" href="$d0/d65/namespacedouble__hashing.html#a33968a1178289ab61445dd4000df7082" title="Used for second hash function." alt="" coords="660,156,862,182"/>
-<area shape="rect" id="node7" href="$d0/d65/namespacedouble__hashing.html#ac2adfce49ac57f6dbd1778d2c1ce0d2b" title=" " alt="" coords="673,205,849,231"/>
-<area shape="rect" id="node8" href="$d0/d65/namespacedouble__hashing.html#a29f543e2626bad58907661e1e45028a6" title=" " alt="" coords="673,91,849,132"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,168,107"/>
+<area shape="rect" id="Node000002" href="$d0/d65/namespacedouble__hashing.html#a79a9c914a6c68275b3640303d7faad8a" title=" " alt="" coords="226,107,366,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,101,211,107,211,112,168,107"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="725,41,797,67"/>
+<area shape="poly" id="edge13_Node000001_Node000004" title=" " alt="" coords="168,87,710,54,711,60,168,92"/>
+<area shape="rect" id="Node000005" href="$d0/d65/namespacedouble__hashing.html#a0d90726ed1de7b3d2ae261baed048003" title="Hash a key. Uses the STL library&#39;s std::hash() function." alt="" coords="676,255,846,280"/>
+<area shape="poly" id="edge14_Node000001_Node000005" title=" " alt="" coords="119,105,217,142,337,177,459,206,667,249,666,254,458,212,336,182,215,147,117,110"/>
+<area shape="rect" id="Node000010" href="$d0/d65/namespacedouble__hashing.html#a1e901418c759627557eff359b8db38cd" title=" " alt="" coords="216,5,376,31"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="123,78,244,34,245,39,125,83"/>
+<area shape="rect" id="Node000003" href="$d0/d65/namespacedouble__hashing.html#a8f8ff4fb018e1bb32d67d8a1885d3200" title="Performs double hashing to resolve collisions." alt="" coords="424,156,612,182"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="358,130,443,150,442,155,357,136"/>
+<area shape="rect" id="Node000009" href="$d0/d65/namespacedouble__hashing.html#af4981819aae8bc7e7beeaef02615e30d" title=" " alt="" coords="439,107,597,132"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="366,125,424,126,424,131,366,131"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="591,153,611,143,626,127,634,111,642,94,659,77,684,65,710,57,711,62,686,70,662,82,647,97,639,113,630,130,614,147,593,158"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="542,180,595,210,661,241,681,248,679,253,659,246,593,215,539,185"/>
+<area shape="rect" id="Node000006" href="$d0/d65/namespacedouble__hashing.html#a33968a1178289ab61445dd4000df7082" title="Used for second hash function." alt="" coords="660,156,862,182"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="613,166,645,166,645,172,613,172"/>
+<area shape="rect" id="Node000007" href="$d0/d65/namespacedouble__hashing.html#ac2adfce49ac57f6dbd1778d2c1ce0d2b" title=" " alt="" coords="673,205,849,231"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="586,180,680,199,679,204,585,185"/>
+<area shape="rect" id="Node000008" href="$d0/d65/namespacedouble__hashing.html#a29f543e2626bad58907661e1e45028a6" title=" " alt="" coords="673,91,849,132"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="575,153,658,133,659,138,576,158"/>
+<area shape="poly" id="edge9_Node000009_Node000002" title=" " alt="" coords="439,114,380,113,380,108,439,108"/>
+<area shape="poly" id="edge10_Node000009_Node000004" title=" " alt="" coords="565,103,660,77,710,64,711,69,661,82,566,109"/>
+<area shape="poly" id="edge12_Node000010_Node000004" title=" " alt="" coords="376,22,710,48,710,53,376,27"/>
 </map>

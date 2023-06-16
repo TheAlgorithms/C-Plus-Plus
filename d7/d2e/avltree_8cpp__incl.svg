@@ -6,61 +6,95 @@
 <!-- Title: data_structures/avltree.cpp Pages: 1 -->
 <svg width="196pt" height="83pt"
  viewBox="0.00 0.00 196.00 82.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 78.5)">
 <title>data_structures/avltree.cpp</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="A simple tree implementation using nodes.">
+<g id="a_Node000001"><a xlink:title="A simple tree implementation using nodes.">
 <polygon fill="#999999" stroke="#666666" points="168.12,-74.5 33.62,-74.5 33.62,-55.25 168.12,-55.25 168.12,-74.5"/>
 <text text-anchor="middle" x="100.88" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures/avltree.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="55.75,-19.25 0,-19.25 0,0 55.75,0 55.75,-19.25"/>
 <text text-anchor="middle" x="27.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">algorithm</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M88.49,-54.84C77.62,-46.91 61.59,-35.22 48.75,-25.85"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="51.22,-22.59 41.08,-19.52 47.09,-28.25 51.22,-22.59"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:title=" ">
+<g id="a_Node000003"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="127.62,-19.25 74.12,-19.25 74.12,0 127.62,0 127.62,-19.25"/>
 <text text-anchor="middle" x="100.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">iostream</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M100.88,-55.08C100.88,-48.42 100.88,-38.99 100.88,-30.53"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="104.38,-30.61 100.88,-20.61 97.38,-30.61 104.38,-30.61"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:title=" ">
+<g id="a_Node000004"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="188,-19.25 145.75,-19.25 145.75,0 188,0 188,-19.25"/>
 <text text-anchor="middle" x="166.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">queue</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
+<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M112.07,-54.84C121.71,-47.07 135.83,-35.67 147.32,-26.4"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="149.26,-28.53 154.84,-19.52 144.86,-23.08 149.26,-28.53"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

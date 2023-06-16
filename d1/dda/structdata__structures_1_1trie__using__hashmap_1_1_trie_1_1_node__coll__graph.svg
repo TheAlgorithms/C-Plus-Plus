@@ -5,59 +5,59 @@
  -->
 <!-- Title: data_structures::trie_using_hashmap::Trie::Node Pages: 1 -->
 <!--zoomable 95 -->
+
 <svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
 <style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
 .edge:hover path { stroke: red; }
 .edge:hover polygon { stroke: red; fill: red; }
 ]]></style>
-<script type="text/javascript"><![CDATA[
-var edges = document.getElementsByTagName('g');
-if (edges && edges.length) {
-  for (var i=0;i<edges.length;i++) {
-    if (edges[i].id.substr(0,4)=='edge') {
-      edges[i].setAttribute('class','edge');
-    }
-  }
-}
-]]></script>
-        <defs>
-                <circle id="rim" cx="0" cy="0" r="7"/>
-                <circle id="rim2" cx="0" cy="0" r="3.5"/>
-                <g id="zoomPlus">
-                        <use xlink:href="#rim" fill="#404040">
-                                <set attributeName="fill" to="#808080" begin="zoomplus.mouseover" end="zoomplus.mouseout"/>
-                        </use>
-                        <path d="M-4,0h8M0,-4v8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
-                </g>
-                <g id="zoomMin">
-                        <use xlink:href="#rim" fill="#404040">
-                                <set attributeName="fill" to="#808080" begin="zoomminus.mouseover" end="zoomminus.mouseout"/>
-                        </use>
-                        <path d="M-4,0h8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
-                </g>
-                <g id="dirArrow">
-                        <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-               <g id="resetDef">
-                       <use xlink:href="#rim2" fill="#404040">
-                               <set attributeName="fill" to="#808080" begin="reset.mouseover" end="reset.mouseout"/>
-                       </use>
-               </g>
-        </defs>
 
-<script type="text/javascript">
+<defs>
+  <circle id="rim" cx="0" cy="0" r="7"/>
+  <circle id="rim2" cx="0" cy="0" r="3.5"/>
+  <g id="zoomPlus">
+    <use xlink:href="#rim" fill="#404040"><set attributeName="fill" to="#808080" begin="zoomplus.mouseover" end="zoomplus.mouseout"/></use>
+    <path d="M-4,0h8M0,-4v8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
+  </g>
+  <g id="zoomMin">
+    <use xlink:href="#rim" fill="#404040"><set attributeName="fill" to="#808080" begin="zoomminus.mouseover" end="zoomminus.mouseout"/></use>
+    <path d="M-4,0h8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
+  </g>
+  <g id="arrowUp" transform="translate(30 24)">
+    <use xlink:href="#rim"/>
+    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+  </g>
+  <g id="arrowRight" transform="rotate(90) translate(36 -43)">
+    <use xlink:href="#rim"/>
+    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+  </g>
+  <g id="arrowDown" transform="rotate(180) translate(-30 -48)">
+    <use xlink:href="#rim"/>
+    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+  </g>
+  <g id="arrowLeft" transform="rotate(270) translate(-36 17)">
+    <use xlink:href="#rim"/>
+    <path pointer-events="none" fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
+  </g>
+  <g id="resetDef">
+    <use xlink:href="#rim2" fill="#404040"><set attributeName="fill" to="#808080" begin="reset.mouseover" end="reset.mouseout"/></use>
+  </g>
+</defs>
+<script type="application/ecmascript">
 var viewWidth = 526;
 var viewHeight = 95;
 var sectionId = 'dynsection-0';
 </script>
-<script xlink:href="../../svgpan.js"/>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>data_structures::trie_using_hashmap::Trie::Node</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="struct representing a trie node.">
+<g id="a_Node000001"><a xlink:title="struct representing a trie node.">
 <polygon fill="#999999" stroke="#666666" points="141.25,-47.38 0,-47.38 0,-16.88 141.25,-16.88 141.25,-47.38"/>
 <text text-anchor="start" x="8" y="-33.88" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::trie</text>
 <text text-anchor="middle" x="70.62" y="-22.62" font-family="Helvetica,sans-Serif" font-size="10.00">_using_hashmap::Trie::Node</text>
@@ -65,9 +65,9 @@ var sectionId = 'dynsection-0';
 </g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" xlink:title=" ">
+<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="313.25,-87 191.5,-87 191.5,-45.25 313.25,-45.25 313.25,-87"/>
 <text text-anchor="start" x="199.5" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr&lt; data</text>
 <text text-anchor="start" x="199.5" y="-62.25" font-family="Helvetica,sans-Serif" font-size="10.00">_structures::trie_using</text>
@@ -76,16 +76,19 @@ var sectionId = 'dynsection-0';
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000003_Node000001" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge3_Node000003_Node000001"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M152.09,-47.35C165.23,-49.83 178.64,-52.37 191.18,-54.74"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="153.11,-43.79 142.64,-45.37 151.81,-50.67 153.11,-43.79"/>
-<text text-anchor="middle" x="166.38" y="-52.88" font-family="Helvetica,sans-Serif" font-size="10.00"> ptr</text>
+</a>
+</g>
+<text text-anchor="middle" x="166.38" y="-52.88" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> ptr</text>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/unordered_map.html" xlink:title=" ">
+<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/unordered_map.html" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="517.5,-64.25 392,-64.25 392,0 517.5,0 517.5,-64.25"/>
 <text text-anchor="start" x="400" y="-50.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::unordered_map</text>
 <text text-anchor="start" x="400" y="-39.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; char16_t, std::shared</text>
@@ -96,60 +99,60 @@ var sectionId = 'dynsection-0';
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M380.73,-27.64C359.02,-26.5 335.18,-25.44 313.25,-24.88 259.16,-23.48 245.59,-23.24 191.5,-24.88 175.35,-25.36 157.99,-26.22 141.64,-27.18"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="380.35,-31.18 390.53,-28.22 380.73,-24.19 380.35,-31.18"/>
-<text text-anchor="middle" x="252.38" y="-25.88" font-family="Helvetica,sans-Serif" font-size="10.00"> children</text>
+</a>
+</g>
+<text text-anchor="middle" x="252.38" y="-25.88" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> children</text>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000002_Node000003" class="edge">
 <title>Node3&#45;&gt;Node2</title>
+<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M324.11,-54.12C346.12,-50.39 370.21,-46.3 391.59,-42.67"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="323.77,-50.8 314.49,-55.92 324.94,-57.7 323.77,-50.8"/>
-<text text-anchor="middle" x="352.62" y="-53.88" font-family="Helvetica,sans-Serif" font-size="10.00"> elements</text>
+</a>
+</g>
+<text text-anchor="middle" x="352.62" y="-53.88" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> elements</text>
 </g>
 </g>
 </svg>
-        <g id="navigator" transform="translate(0 0)" fill="#404254">
-                <rect fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width=".5" x="0" y="0" width="60" height="60"/>
-                <use id="zoomplus" xlink:href="#zoomPlus" x="17" y="9" onmousedown="handleZoom(evt,'in')"/>
-                <use id="zoomminus" xlink:href="#zoomMin" x="42" y="9" onmousedown="handleZoom(evt,'out')"/>
-                <use id="reset" xlink:href="#resetDef" x="30" y="36" onmousedown="handleReset()"/>
-                <g id="arrowUp" xlink:href="#dirArrow" transform="translate(30 24)" onmousedown="handlePan(0,-1)">
-                  <use xlink:href="#rim" fill="#404040">
-                        <set attributeName="fill" to="#808080" begin="arrowUp.mouseover" end="arrowUp.mouseout"/>
-                  </use>
-                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-                <g id="arrowRight" xlink:href="#dirArrow" transform="rotate(90) translate(36 -43)" onmousedown="handlePan(1,0)">
-                  <use xlink:href="#rim" fill="#404040">
-                        <set attributeName="fill" to="#808080" begin="arrowRight.mouseover" end="arrowRight.mouseout"/>
-                  </use>
-                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-                <g id="arrowDown" xlink:href="#dirArrow" transform="rotate(180) translate(-30 -48)" onmousedown="handlePan(0,1)">
-                  <use xlink:href="#rim" fill="#404040">
-                        <set attributeName="fill" to="#808080" begin="arrowDown.mouseover" end="arrowDown.mouseout"/>
-                  </use>
-                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-                <g id="arrowLeft" xlink:href="#dirArrow" transform="rotate(270) translate(-36 17)" onmousedown="handlePan(-1,0)">
-                  <use xlink:href="#rim" fill="#404040">
-                        <set attributeName="fill" to="#808080" begin="arrowLeft.mouseover" end="arrowLeft.mouseout"/>
-                  </use>
-                  <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
-                </g>
-        </g>
-        <svg viewBox="0 0 15 15" width="100%" height="30px" preserveAspectRatio="xMaxYMin meet">
-         <g id="arrow_out" transform="scale(0.3 0.3)">
-          <a xlink:href="structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node__coll__graph_org.svg" target="_base">
-           <rect id="button" ry="5" rx="5" y="6" x="6" height="38" width="38"
-                fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width="1.0"/>
-           <path id="arrow"
-             d="M 11.500037,31.436501 C 11.940474,20.09759 22.043105,11.32322 32.158766,21.979434 L 37.068811,17.246167 C 37.068811,17.246167 37.088388,32 37.088388,32 L 22.160133,31.978069 C 22.160133,31.978069 26.997745,27.140456 26.997745,27.140456 C 18.528582,18.264221 13.291696,25.230495 11.500037,31.436501 z"
-             style="fill:#404040;"/>
-          </a>
-         </g>
-        </svg>
+
+<g id="navigator" transform="translate(0 0)" fill="#404254">
+  <rect fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width=".5" x="0" y="0" width="60" height="60"/>
+  <use id="zoomplus" xlink:href="#zoomPlus" x="17" y="9" onmousedown="handleZoom(evt,'in')"/>
+  <use id="zoomminus" xlink:href="#zoomMin" x="42" y="9" onmousedown="handleZoom(evt,'out')"/>
+  <use id="reset" xlink:href="#resetDef" x="30" y="36" onmousedown="handleReset()"/>
+   <use id="arrowup" xlink:href="#arrowUp" x="0" y="0" onmousedown="handlePan(0,-1)"/>
+  <use id="arrowright" xlink:href="#arrowRight" x="0" y="0" onmousedown="handlePan(1,0)"/>
+  <use id="arrowdown" xlink:href="#arrowDown" x="0" y="0" onmousedown="handlePan(0,1)"/>
+  <use id="arrowleft" xlink:href="#arrowLeft" x="0" y="0" onmousedown="handlePan(-1,0)"/>
+</g>
+<svg viewBox="0 0 15 15" width="100%" height="30px" preserveAspectRatio="xMaxYMin meet">
+ <g id="arrow_out" transform="scale(0.3 0.3)">
+  <a xlink:href="structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node__coll__graph_org.svg" target="_base">
+   <rect id="button" ry="5" rx="5" y="6" x="6" height="38" width="38"
+        fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width="1.0"/>
+   <path id="arrow"
+     d="M 11.500037,31.436501 C 11.940474,20.09759 22.043105,11.32322 32.158766,21.979434 L 37.068811,17.246167 C 37.068811,17.246167 37.088388,32 37.088388,32 L 22.160133,31.978069 C 22.160133,31.978069 26.997745,27.140456 26.997745,27.140456 C 18.528582,18.264221 13.291696,25.230495 11.500037,31.436501 z"
+     style="fill:#404040;"/>
+  </a>
+ </g>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

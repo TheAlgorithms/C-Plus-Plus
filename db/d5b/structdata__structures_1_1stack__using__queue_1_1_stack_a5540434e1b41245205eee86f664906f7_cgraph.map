@@ -1,4 +1,5 @@
 <map id="data_structures::stack_using_queue::Stack::top" name="data_structures::stack_using_queue::Stack::top">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,175,46"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/front.html#" title=" " alt="" coords="223,13,339,39"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,175,46"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/front.html#" title=" " alt="" coords="223,13,339,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,23,207,23,207,28,175,28"/>
 </map>

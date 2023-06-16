@@ -1,6 +1,9 @@
 <map id="others::iterative_tree_traversals::BinaryTree::postOrderIterative" name="others::iterative_tree_traversals::BinaryTree::postOrderIterative">
-<area shape="rect" id="node1" title="postOrderIterative() function that will perform the postorder traversal iteratively,..." alt="" coords="5,40,162,95"/>
-<area shape="rect" id="node2" href="$d1/dc2/classstack.html#a3647fb4418890f19e0dc414b8092b8b0" title=" " alt="" coords="213,5,296,31"/>
-<area shape="rect" id="node3" href="$d1/dc2/classstack.html#a90df277532c23519aa7ac3c08ed90a1d" title=" " alt="" coords="210,55,299,80"/>
-<area shape="rect" id="node4" href="$d1/dc2/classstack.html#ae09630c4384903d187801921b2ddc709" title=" " alt="" coords="215,104,294,130"/>
+<area shape="rect" id="Node000001" title="postOrderIterative() function that will perform the postorder traversal iteratively,..." alt="" coords="5,40,162,95"/>
+<area shape="rect" id="Node000002" href="$d1/dc2/classstack.html#a3647fb4418890f19e0dc414b8092b8b0" title=" " alt="" coords="213,5,296,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,42,198,32,199,37,163,47"/>
+<area shape="rect" id="Node000003" href="$d1/dc2/classstack.html#a90df277532c23519aa7ac3c08ed90a1d" title=" " alt="" coords="210,55,299,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,65,195,65,195,70,162,70"/>
+<area shape="rect" id="Node000004" href="$d1/dc2/classstack.html#ae09630c4384903d187801921b2ddc709" title=" " alt="" coords="215,104,294,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="163,88,201,99,200,104,161,93"/>
 </map>

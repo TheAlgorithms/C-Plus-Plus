@@ -1,8 +1,13 @@
 <map id="data_structures/stack.hpp" name="data_structures/stack.hpp">
-<area shape="rect" id="node1" title="This class specifies the basic operation on a stack as a linked list." alt="" coords="8,5,180,31"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,79,84,105"/>
-<area shape="rect" id="node3" href="$d3/d09/node_8hpp.html" title="Provides Node class and related utilities." alt="" coords="107,79,182,105"/>
-<area shape="rect" id="node4" title=" " alt="" coords="16,153,87,178"/>
-<area shape="rect" id="node5" title=" " alt="" coords="110,153,179,178"/>
-<area shape="rect" id="node6" title=" " alt="" coords="203,153,260,178"/>
+<area shape="rect" id="Node000001" title="This class specifies the basic operation on a stack as a linked list." alt="" coords="8,5,180,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,84,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,33,63,68,59,65,83,30"/>
+<area shape="rect" id="Node000003" href="$d3/d09/node_8hpp.html" title="Provides Node class and related utilities." alt="" coords="107,79,182,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="104,30,130,65,125,68,100,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="16,153,87,178"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="130,107,80,146,77,141,127,103"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="110,153,179,178"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="147,105,147,138,142,138,142,105"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="203,153,260,178"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="161,103,207,141,204,145,158,107"/>
 </map>

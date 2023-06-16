@@ -1,5 +1,8 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,55,55,80"/>
-<area shape="rect" id="node2" href="$de/dcf/binary__exponent_8cpp.html#aeb48dce0725e63d19147944f41843c73" title=" " alt="" coords="104,29,173,55"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="103,79,174,104"/>
+<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,55,55,80"/>
+<area shape="rect" id="Node000002" href="$de/dcf/binary__exponent_8cpp.html#aeb48dce0725e63d19147944f41843c73" title=" " alt="" coords="104,29,173,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,59,89,51,90,56,56,64"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="103,79,174,104"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="56,70,89,78,88,83,55,76"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="119,30,115,21,118,11,125,5,138,3,152,6,160,13,156,16,150,10,138,8,128,10,122,14,121,20,124,28"/>
 </map>

@@ -1,5 +1,7 @@
 <map id="uint128_t::uint128_t" name="uint128_t::uint128_t">
-<area shape="rect" id="node1" title="Parameterized constructor." alt="" coords="5,13,141,39"/>
-<area shape="rect" id="node2" href="$db/d9a/classuint128__t.html#a857a3c69c1e775a1bd3935c2bfbb02df" title="First and second half of 128 bit number." alt="" coords="189,5,349,46"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="397,13,508,39"/>
+<area shape="rect" id="Node000001" title="Parameterized constructor." alt="" coords="5,13,141,39"/>
+<area shape="rect" id="Node000002" href="$db/d9a/classuint128__t.html#a857a3c69c1e775a1bd3935c2bfbb02df" title="First and second half of 128 bit number." alt="" coords="189,5,349,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,23,174,23,174,28,141,28"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="397,13,508,39"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="350,23,382,23,382,28,350,28"/>
 </map>

@@ -6,61 +6,95 @@
 <!-- Title: math/armstrong_number.cpp Pages: 1 -->
 <svg width="189pt" height="83pt"
  viewBox="0.00 0.00 188.88 82.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 78.5)">
 <title>math/armstrong_number.cpp</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Program to check if a number is an Armstrong/Narcissistic number in decimal system.">
+<g id="a_Node000001"><a xlink:title="Program to check if a number is an Armstrong/Narcissistic number in decimal system.">
 <polygon fill="#999999" stroke="#666666" points="158,-74.5 18.25,-74.5 18.25,-55.25 158,-55.25 158,-74.5"/>
 <text text-anchor="middle" x="88.12" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">math/armstrong_number.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="48.25,-19.25 0,-19.25 0,0 48.25,0 48.25,-19.25"/>
 <text text-anchor="middle" x="24.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">cassert</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M77.27,-54.84C67.93,-47.07 54.23,-35.67 43.08,-26.4"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="45.75,-23.23 35.82,-19.52 41.27,-28.61 45.75,-23.23"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:title=" ">
+<g id="a_Node000003"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="109.62,-19.25 66.62,-19.25 66.62,0 109.62,0 109.62,-19.25"/>
 <text text-anchor="middle" x="88.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">cmath</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M88.12,-55.08C88.12,-48.42 88.12,-38.99 88.12,-30.53"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="91.63,-30.61 88.12,-20.61 84.63,-30.61 91.63,-30.61"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:title=" ">
+<g id="a_Node000004"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="180.88,-19.25 127.38,-19.25 127.38,0 180.88,0 180.88,-19.25"/>
 <text text-anchor="middle" x="154.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">iostream</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
+<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M99.32,-54.84C108.96,-47.07 123.08,-35.67 134.57,-26.4"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="136.51,-28.53 142.09,-19.52 132.11,-23.08 136.51,-28.53"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

@@ -1,4 +1,5 @@
 <map id="machine_learning/vector_ops.hpp" name="machine_learning/vector_ops.hpp">
-<area shape="rect" id="node1" title="Various functions for vectors associated with [NeuralNetwork (aka Multilayer Perceptron)] (https://en..." alt="" coords="5,5,168,46"/>
-<area shape="rect" id="node2" href="$d2/d58/neural__network_8cpp.html" title="Implementation of [Multilayer Perceptron] (https://en.wikipedia.org/wiki/Multilayer_perceptron)." alt="" coords="6,94,167,135"/>
+<area shape="rect" id="Node000001" title="Various functions for vectors associated with [NeuralNetwork (aka Multilayer Perceptron)] (https://en..." alt="" coords="5,5,168,46"/>
+<area shape="rect" id="Node000002" href="$d2/d58/neural__network_8cpp.html" title="Implementation of [Multilayer Perceptron] (https://en.wikipedia.org/wiki/Multilayer_perceptron)." alt="" coords="6,94,167,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,61,89,94,84,94,84,61"/>
 </map>

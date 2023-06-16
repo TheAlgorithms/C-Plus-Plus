@@ -1,5 +1,8 @@
 <map id="divide_and_conquer::karatsuba_algorithm::safe_substr" name="divide_and_conquer::karatsuba_algorithm::safe_substr">
-<area shape="rect" id="node1" title="Wrapper function for substr that considers leading zeros." alt="" coords="5,29,152,85"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="206,19,317,45"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/substr.html#" title=" " alt="" coords="200,68,323,94"/>
+<area shape="rect" id="Node000001" title="Wrapper function for substr that considers leading zeros." alt="" coords="5,29,152,85"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="42,29,43,19,49,10,61,5,79,3,98,5,110,13,108,17,97,10,78,8,63,10,52,14,48,21,47,29"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="206,19,317,45"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="152,44,191,39,192,44,152,50"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/substr.html#" title=" " alt="" coords="200,68,323,94"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="152,64,185,69,184,74,152,69"/>
 </map>

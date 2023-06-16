@@ -1,7 +1,11 @@
 <map id="hashing/chaining.cpp" name="hashing/chaining.cpp">
-<area shape="rect" id="node1" title="Implementation of hash chains." alt="" coords="97,5,240,31"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,79,63,105"/>
-<area shape="rect" id="node3" title=" " alt="" coords="86,79,158,105"/>
-<area shape="rect" id="node4" title=" " alt="" coords="181,79,250,105"/>
-<area shape="rect" id="node5" title=" " alt="" coords="273,79,331,105"/>
+<area shape="rect" id="Node000001" title="Implementation of hash chains." alt="" coords="97,5,240,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,63,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,34,71,74,69,69,145,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="86,79,158,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,33,140,68,136,65,159,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="181,79,250,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="179,30,202,65,197,68,174,33"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="273,79,331,105"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="193,29,268,69,265,74,190,34"/>
 </map>

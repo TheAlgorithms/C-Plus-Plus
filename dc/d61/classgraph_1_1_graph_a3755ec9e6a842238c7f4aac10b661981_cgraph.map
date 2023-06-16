@@ -1,7 +1,11 @@
 <map id="graph::Graph::breadth_first_search" name="graph::Graph::breadth_first_search">
-<area shape="rect" id="node1" title=" " alt="" coords="5,73,153,113"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/empty.html#" title=" " alt="" coords="201,5,327,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/front.html#" title=" " alt="" coords="206,55,322,80"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/pop.html#" title=" " alt="" coords="208,104,320,130"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/push.html#" title=" " alt="" coords="205,153,323,179"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,73,153,113"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/empty.html#" title=" " alt="" coords="201,5,327,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,70,200,40,213,34,215,39,202,45,130,75"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/front.html#" title=" " alt="" coords="206,55,322,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,80,191,75,191,80,153,85"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/pop.html#" title=" " alt="" coords="208,104,320,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="153,100,193,105,193,110,153,105"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/push.html#" title=" " alt="" coords="205,153,323,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="132,111,202,140,215,145,213,150,200,145,130,116"/>
 </map>

@@ -6,52 +6,86 @@
 <!-- Title: graph::getConnectedComponents Pages: 1 -->
 <svg width="293pt" height="82pt"
  viewBox="0.00 0.00 292.75 82.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 78.25)">
 <title>graph::getConnectedComponents</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Function that perfoms depth first search algorithm on graph and calculated the number of connected co...">
+<g id="a_Node000001"><a xlink:title="Function that perfoms depth first search algorithm on graph and calculated the number of connected co...">
 <polygon fill="#999999" stroke="#666666" points="162.25,-37.25 0,-37.25 0,-18 162.25,-18 162.25,-37.25"/>
 <text text-anchor="middle" x="81.12" y="-23.75" font-family="Helvetica,sans-Serif" font-size="10.00">graph::getConnectedComponents</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../df/dce/namespacegraph.html#a3ae80bc4c6a79d041b4f3a6589eb7fb8" target="_top" xlink:title="Utility function for depth first seach algorithm this function explores the vertex which is passed in...">
+<g id="a_Node000002"><a xlink:href="../../df/dce/namespacegraph.html#a3ae80bc4c6a79d041b4f3a6589eb7fb8" target="_top" xlink:title="Utility function for depth first seach algorithm this function explores the vertex which is passed in...">
 <polygon fill="white" stroke="#666666" points="280.25,-56.25 202.75,-56.25 202.75,-37 280.25,-37 280.25,-56.25"/>
 <text text-anchor="middle" x="241.5" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">graph::explore</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M162.7,-37.29C172.59,-38.48 182.45,-39.66 191.66,-40.77"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="191.19,-44.35 201.54,-42.07 192.03,-37.4 191.19,-44.35"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
+<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="284.75,-19.25 198.25,-19.25 198.25,0 284.75,0 284.75,-19.25"/>
 <text text-anchor="middle" x="241.5" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge3_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M162.7,-18.47C171.01,-17.52 179.3,-16.58 187.21,-15.68"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="187.54,-19.05 197.08,-14.45 186.75,-12.1 187.54,-19.05"/>
+</a>
+</g>
 </g>
 <!-- Node2&#45;&gt;Node2 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000002_Node000002" class="edge">
 <title>Node2&#45;&gt;Node2</title>
+<g id="a_edge2_Node000002_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M216.39,-56.54C204.94,-65.15 213.31,-74.25 241.5,-74.25 258.24,-74.25 267.99,-71.04 270.75,-66.63"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="273.64,-65.46 266.61,-57.54 267.17,-68.12 273.64,-65.46"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

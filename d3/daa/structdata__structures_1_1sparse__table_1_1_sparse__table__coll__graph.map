@@ -1,6 +1,10 @@
 <map id="data_structures::sparse_table::Sparse_table" name="data_structures::sparse_table::Sparse_table">
-<area shape="rect" id="node1" title=" " alt="" coords="5,286,164,327"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array.html" title=" " alt="" coords="6,94,163,120"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array.html" title=" " alt="" coords="114,183,258,223"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/integer.html" title=" " alt="" coords="41,5,128,31"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,286,164,327"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array.html" title=" " alt="" coords="6,94,163,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,135,77,183,78,239,84,285,79,286,73,239,72,183,78,134"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array.html" title=" " alt="" coords="114,183,258,223"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="110,128,166,180,163,184,106,132"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/integer.html" title=" " alt="" coords="41,5,128,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,46,87,94,82,94,82,46"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="158,236,106,288,102,284,154,232"/>
 </map>

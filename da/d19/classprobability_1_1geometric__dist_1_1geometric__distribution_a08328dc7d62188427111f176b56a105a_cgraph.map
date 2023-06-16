@@ -1,4 +1,5 @@
 <map id="probability::geometric_dist::geometric_distribution::cumulative_distribution" name="probability::geometric_dist::geometric_distribution::cumulative_distribution">
-<area shape="rect" id="node1" title="The cumulative distribution function." alt="" coords="5,5,190,61"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="238,20,309,46"/>
+<area shape="rect" id="Node000001" title="The cumulative distribution function." alt="" coords="5,5,190,61"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="238,20,309,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,31,223,31,223,36,190,36"/>
 </map>

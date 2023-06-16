@@ -1,7 +1,13 @@
 <map id="test_get_elements_preorder" name="test_get_elements_preorder">
-<area shape="rect" id="node1" title="Function for testing get_elements_preorder()." alt="" coords="5,63,188,88"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="281,5,352,31"/>
-<area shape="rect" id="node3" href="$d9/dde/classbinary__search__tree.html#a5764c1cf848f84a5b77462036a6d8c13" title="Get all values of the BST in pre&#45;order order." alt="" coords="236,55,397,96"/>
-<area shape="rect" id="node5" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="251,145,382,185"/>
-<area shape="rect" id="node4" href="$d9/dde/classbinary__search__tree.html#ab81edd415324d372632c42dc7dbcb9e1" title="Recursive function to traverse the tree in pre&#45;order order." alt="" coords="445,55,576,96"/>
+<area shape="rect" id="Node000001" title="Function for testing get_elements_preorder()." alt="" coords="5,63,188,88"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="281,5,352,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,59,266,28,268,33,149,65"/>
+<area shape="rect" id="Node000003" href="$d9/dde/classbinary__search__tree.html#a5764c1cf848f84a5b77462036a6d8c13" title="Get all values of the BST in pre&#45;order order." alt="" coords="236,55,397,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="188,73,221,73,221,78,188,78"/>
+<area shape="rect" id="Node000005" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="251,145,382,185"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="131,86,252,136,250,141,129,91"/>
+<area shape="rect" id="Node000004" href="$d9/dde/classbinary__search__tree.html#ab81edd415324d372632c42dc7dbcb9e1" title="Recursive function to traverse the tree in pre&#45;order order." alt="" coords="445,55,576,96"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="397,73,430,73,430,78,397,78"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="474,55,472,45,478,36,491,31,511,29,532,31,545,38,542,42,531,36,511,34,492,36,481,40,477,46,479,54"/>
+<area shape="poly" id="edge6_Node000005_Node000005" title=" " alt="" coords="279,144,277,135,284,126,297,120,316,118,338,120,351,127,348,132,336,125,316,123,298,125,287,130,283,136,285,143"/>
 </map>

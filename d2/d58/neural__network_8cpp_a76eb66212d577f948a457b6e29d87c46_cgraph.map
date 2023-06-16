@@ -1,3 +1,4 @@
 <map id="machine_learning::neural_network::activations::dsigmoid" name="machine_learning::neural_network::activations::dsigmoid">
-<area shape="rect" id="node1" title=" " alt="" coords="5,29,171,85"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,171,85"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="55,29,55,19,61,10,72,5,88,3,106,5,117,13,114,17,104,10,88,8,74,10,65,14,60,21,60,29"/>
 </map>

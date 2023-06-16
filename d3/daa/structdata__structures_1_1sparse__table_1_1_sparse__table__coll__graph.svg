@@ -6,12 +6,22 @@
 <!-- Title: data_structures::sparse_table::Sparse_table Pages: 1 -->
 <svg width="197pt" height="249pt"
  viewBox="0.00 0.00 197.12 249.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 245.25)">
 <title>data_structures::sparse_table::Sparse_table</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="118.75,-30.5 0,-30.5 0,0 118.75,0 118.75,-30.5"/>
 <text text-anchor="start" x="8" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::sparse</text>
 <text text-anchor="middle" x="59.38" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">_table::Sparse_table</text>
@@ -19,26 +29,29 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/array.html" xlink:title=" ">
+<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/array.html" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="118.38,-174.75 0.38,-174.75 0.38,-155.5 118.38,-155.5 118.38,-174.75"/>
 <text text-anchor="middle" x="59.38" y="-161.25" font-family="Helvetica,sans-Serif" font-size="10.00">std::array&lt; int64_t, N &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M56.19,-144.41C54.62,-133.74 52.9,-120.31 52.12,-108.25 50.36,-80.91 54.19,-49.05 56.92,-30.9"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="52.85,-144.72 57.83,-154.06 59.76,-143.65 52.85,-144.72"/>
-<text text-anchor="middle" x="62.5" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00"> A</text>
-<text text-anchor="middle" x="62.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">LOG</text>
+</a>
+</g>
+<text text-anchor="middle" x="62.5" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> A</text>
+<text text-anchor="middle" x="62.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">LOG</text>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/array.html" xlink:title=" ">
+<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/array.html" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="189.12,-108.25 81.62,-108.25 81.62,-77.75 189.12,-77.75 189.12,-108.25"/>
 <text text-anchor="start" x="89.62" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::array&lt; std::array</text>
 <text text-anchor="middle" x="135.38" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; int64_t, N &gt;, M &gt;</text>
@@ -46,34 +59,58 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000004_Node000002" class="edge">
 <title>Node2&#45;&gt;Node4</title>
+<g id="a_edge4_Node000004_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M77.07,-147.8C89.89,-135.96 107.09,-120.1 119.48,-108.67"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="74.98,-144.89 70,-154.24 79.72,-150.03 74.98,-144.89"/>
-<text text-anchor="middle" x="120.75" y="-128" font-family="Helvetica,sans-Serif" font-size="10.00"> elements</text>
+</a>
+</g>
+<text text-anchor="middle" x="120.75" y="-128" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> elements</text>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/types/integer.html" xlink:title=" ">
+<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/types/integer.html" xlink:title=" ">
 <polygon fill="white" stroke="#bfbfbf" points="91.75,-241.25 27,-241.25 27,-222 91.75,-222 91.75,-241.25"/>
 <text text-anchor="middle" x="59.38" y="-227.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::int64_t</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000002_Node000003" class="edge">
 <title>Node3&#45;&gt;Node2</title>
+<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M59.38,-210.9C59.38,-198.93 59.38,-184.23 59.38,-175.02"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="55.88,-210.66 59.38,-220.66 62.88,-210.66 55.88,-210.66"/>
-<text text-anchor="middle" x="80.75" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00"> elements</text>
+</a>
+</g>
+<text text-anchor="middle" x="80.75" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> elements</text>
 </g>
 <!-- Node4&#45;&gt;Node1 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000004" class="edge">
 <title>Node4&#45;&gt;Node1</title>
+<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M113.28,-69.98C100.63,-57.37 85.12,-41.91 73.98,-30.81"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="110.17,-71.81 119.72,-76.39 115.11,-66.86 110.17,-71.81"/>
-<text text-anchor="middle" x="109.25" y="-50.25" font-family="Helvetica,sans-Serif" font-size="10.00"> ST</text>
+</a>
+</g>
+<text text-anchor="middle" x="109.25" y="-50.25" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> ST</text>
 </g>
 </g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

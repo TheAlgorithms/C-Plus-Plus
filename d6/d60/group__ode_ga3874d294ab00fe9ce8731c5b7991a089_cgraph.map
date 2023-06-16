@@ -1,10 +1,17 @@
 <map id="semi_implicit_euler" name="semi_implicit_euler">
-<area shape="rect" id="node1" title="Compute approximation using the semi&#45;implicit&#45;Euler method in the given limits." alt="" coords="5,129,138,155"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/clock.html#" title=" " alt="" coords="229,5,307,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " alt="" coords="199,55,337,80"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/is_open.html#" title=" " alt="" coords="192,104,344,130"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/open.html#" title=" " alt="" coords="201,153,335,179"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/c/perror.html#" title=" " alt="" coords="228,203,308,228"/>
-<area shape="rect" id="node7" href="$d6/d60/group__ode.html#ga827bf009831ddc477c5fa8891d5cb35f" title="Compute next step approximation using the semi&#45;implicit&#45;Euler method." alt="" coords="186,252,350,278"/>
-<area shape="rect" id="node8" href="$d3/d06/ode__semi__implicit__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe" title="Problem statement for a system with first&#45;order differential equations. Updates the system differenti..." alt="" coords="398,252,465,278"/>
+<area shape="rect" id="Node000001" title="Compute approximation using the semi&#45;implicit&#45;Euler method in the given limits." alt="" coords="5,129,138,155"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/clock.html#" title=" " alt="" coords="229,5,307,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,127,124,84,153,60,184,40,213,28,215,32,187,45,156,65,128,88,86,131"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " alt="" coords="199,55,337,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="99,126,185,89,203,83,205,88,187,94,101,131"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/is_open.html#" title=" " alt="" coords="192,104,344,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="138,131,177,126,178,131,138,136"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/open.html#" title=" " alt="" coords="201,153,335,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="138,148,186,154,186,159,138,153"/>
+<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/c/perror.html#" title=" " alt="" coords="228,203,308,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="102,153,187,189,214,198,213,203,185,194,100,158"/>
+<area shape="rect" id="Node000007" href="$d6/d60/group__ode.html#ga827bf009831ddc477c5fa8891d5cb35f" title="Compute next step approximation using the semi&#45;implicit&#45;Euler method." alt="" coords="186,252,350,278"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="86,153,128,195,156,218,187,239,198,244,195,249,184,243,153,223,125,199,82,157"/>
+<area shape="rect" id="Node000008" href="$d3/d06/ode__semi__implicit__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe" title="Problem statement for a system with first&#45;order differential equations. Updates the system differenti..." alt="" coords="398,252,465,278"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="350,262,383,262,383,268,350,268"/>
 </map>

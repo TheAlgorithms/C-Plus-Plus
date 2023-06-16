@@ -1,6 +1,13 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,72,55,98"/>
-<area shape="rect" id="node2" href="$d2/d45/segtree_8cpp.html#ae752659b7c1719d68fdb2ca538a93696" title="for std::vector" alt="" coords="194,29,272,55"/>
-<area shape="rect" id="node3" href="$d2/d45/segtree_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementation." alt="" coords="103,72,146,98"/>
-<area shape="rect" id="node4" href="$d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0" title="Updates a range of the segment tree." alt="" coords="203,109,263,135"/>
+<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,72,55,98"/>
+<area shape="rect" id="Node000002" href="$d2/d45/segtree_8cpp.html#ae752659b7c1719d68fdb2ca538a93696" title="for std::vector" alt="" coords="194,29,272,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,73,102,57,179,44,180,49,103,62,56,78"/>
+<area shape="rect" id="Node000003" href="$d2/d45/segtree_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementation." alt="" coords="103,72,146,98"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="55,82,88,82,88,88,55,88"/>
+<area shape="rect" id="Node000004" href="$d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0" title="Updates a range of the segment tree." alt="" coords="203,109,263,135"/>
+<area shape="poly" id="edge7_Node000001_Node000004" title=" " alt="" coords="56,92,103,108,147,115,189,118,188,123,146,120,102,113,55,98"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="214,30,210,21,212,11,220,5,233,3,247,6,255,13,251,16,245,10,233,8,222,10,217,14,215,20,219,28"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="146,74,184,59,186,64,148,79"/>
+<area shape="poly" id="edge5_Node000003_Node000004" title=" " alt="" coords="148,90,190,105,188,110,146,95"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="214,110,210,101,212,91,220,85,233,83,247,86,255,93,251,96,245,90,233,88,222,90,217,94,215,100,219,108"/>
 </map>

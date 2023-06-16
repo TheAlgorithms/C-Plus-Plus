@@ -6,12 +6,22 @@
 <!-- Title: range_queries::perSegTree::Node Pages: 1 -->
 <svg width="141pt" height="139pt"
  viewBox="0.00 0.00 141.00 138.75" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 134.75)">
 <title>range_queries::perSegTree::Node</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="133,-130.75 0,-130.75 0,-100.25 133,-100.25 133,-130.75"/>
 <text text-anchor="start" x="8" y="-117.25" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::perSegTree</text>
 <text text-anchor="middle" x="66.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">::Node</text>
@@ -19,9 +29,9 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" xlink:title=" ">
+<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="124,-41.75 9,-41.75 9,0 124,0 124,-41.75"/>
 <text text-anchor="start" x="17" y="-28.25" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr&lt; range</text>
 <text text-anchor="start" x="17" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">_queries::perSegTree::</text>
@@ -30,19 +40,40 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000002_Node000001" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge2_Node000002_Node000001"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M51.07,-90.21C49.93,-87.6 48.95,-84.92 48.25,-82.25 45.7,-72.58 46.02,-69.5 48.25,-59.75 49.61,-53.77 52.05,-47.64 54.7,-42.1"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="48.34,-91.53 56.06,-98.78 54.54,-88.29 48.34,-91.53"/>
-<text text-anchor="middle" x="55.62" y="-67.12" font-family="Helvetica,sans-Serif" font-size="10.00"> ptr</text>
+</a>
+</g>
+<text text-anchor="middle" x="55.62" y="-67.12" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> ptr</text>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M66.5,-53.06C66.5,-68.95 66.5,-87.5 66.5,-100.03"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="70,-53.09 66.5,-43.09 63,-53.09 70,-53.09"/>
-<text text-anchor="middle" x="75.88" y="-72.75" font-family="Helvetica,sans-Serif" font-size="10.00"> left</text>
-<text text-anchor="middle" x="75.88" y="-61.5" font-family="Helvetica,sans-Serif" font-size="10.00">right</text>
+</a>
+</g>
+<text text-anchor="middle" x="75.88" y="-72.75" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> left</text>
+<text text-anchor="middle" x="75.88" y="-61.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">right</text>
 </g>
 </g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

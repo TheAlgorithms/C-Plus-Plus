@@ -1,5 +1,7 @@
 <map id="sorting::random_pivot_quick_sort::partition" name="sorting::random_pivot_quick_sort::partition">
-<area shape="rect" id="node1" title="A partition function which handles the partition logic of quick sort." alt="" coords="5,23,152,64"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/tuple/make_tuple.html#" title=" " alt="" coords="200,5,314,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="218,55,296,80"/>
+<area shape="rect" id="Node000001" title="A partition function which handles the partition logic of quick sort." alt="" coords="5,23,152,64"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/tuple/make_tuple.html#" title=" " alt="" coords="200,5,314,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,30,185,26,185,31,153,36"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="218,55,296,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="153,51,204,58,203,63,152,56"/>
 </map>

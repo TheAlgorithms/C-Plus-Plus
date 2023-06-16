@@ -1,4 +1,7 @@
 <map id="operations_on_datastructures::circular_linked_list::CircularLinkedList::insert" name="operations_on_datastructures::circular_linked_list::CircularLinkedList::insert">
-<area shape="rect" id="node1" title="Inserts all the values from a vector into the Circular Linked List." alt="" coords="5,29,198,85"/>
-<area shape="rect" id="node2" href="$d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html#a53611ec1fef92eeeb875aea1bde1e4de" title="Returns a std::vector of the values of the Circular Linked List." alt="" coords="246,29,438,85"/>
+<area shape="rect" id="Node000001" title="Inserts all the values from a vector into the Circular Linked List." alt="" coords="5,29,198,85"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="54,29,55,19,64,10,79,5,102,3,127,5,143,13,140,17,126,11,101,8,80,10,66,15,60,21,60,29"/>
+<area shape="rect" id="Node000002" href="$d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html#a53611ec1fef92eeeb875aea1bde1e4de" title="Returns a std::vector of the values of the Circular Linked List." alt="" coords="246,29,438,85"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="198,55,231,55,231,60,198,60"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="295,29,295,19,304,10,319,5,342,3,368,5,383,13,381,17,366,11,342,8,321,10,307,15,300,21,300,29"/>
 </map>

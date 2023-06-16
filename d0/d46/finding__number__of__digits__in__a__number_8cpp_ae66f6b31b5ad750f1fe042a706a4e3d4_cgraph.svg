@@ -6,36 +6,49 @@
 <!-- Title: main Pages: 1 -->
 <svg width="295pt" height="39pt"
  viewBox="0.00 0.00 295.25 38.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 34.5)">
 <title>main</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Main function.">
+<g id="a_Node000001"><a xlink:title="Main function.">
 <polygon fill="#999999" stroke="#666666" points="37,-24.88 0,-24.88 0,-5.63 37,-5.63 37,-24.88"/>
 <text text-anchor="middle" x="18.5" y="-11.38" font-family="Helvetica,sans-Serif" font-size="10.00">main</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#ab4c15b7f1aedd4419a65cd49562cc300" target="_top" xlink:title="Self&#45;test implementations.">
+<g id="a_Node000002"><a xlink:href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#ab4c15b7f1aedd4419a65cd49562cc300" target="_top" xlink:title="Self&#45;test implementations.">
 <polygon fill="white" stroke="#666666" points="127.25,-24.88 73,-24.88 73,-5.63 127.25,-5.63 127.25,-24.88"/>
 <text text-anchor="middle" x="100.12" y="-11.38" font-family="Helvetica,sans-Serif" font-size="10.00">first_test</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M37.17,-15.25C44.52,-15.25 53.34,-15.25 61.99,-15.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="61.73,-18.75 71.73,-15.25 61.73,-11.75 61.73,-18.75"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8a3b522a675ab4cdec2d275f6f7798a1" target="_top" xlink:title="for IO operations">
+<g id="a_Node000003"><a xlink:href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8a3b522a675ab4cdec2d275f6f7798a1" target="_top" xlink:title="for IO operations">
 <polygon fill="white" stroke="#666666" points="287.25,-30.5 163.25,-30.5 163.25,0 287.25,0 287.25,-30.5"/>
 <text text-anchor="start" x="171.25" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">finding_number_of_digits</text>
 <text text-anchor="middle" x="225.25" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">_in_a_number</text>
@@ -43,10 +56,28 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
+<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M127.54,-15.25C134.97,-15.25 143.44,-15.25 152.19,-15.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="151.97,-18.75 161.97,-15.25 151.97,-11.75 151.97,-18.75"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

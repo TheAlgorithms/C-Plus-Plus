@@ -1,4 +1,6 @@
 <map id="dynamic_programming::knapsack::maxKnapsackValue" name="dynamic_programming::knapsack::maxKnapsackValue">
-<area shape="rect" id="node1" title="Picking up all those items whose combined weight is below the given capacity and calculating the valu..." alt="" coords="5,29,214,70"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="262,37,334,63"/>
+<area shape="rect" id="Node000001" title="Picking up all those items whose combined weight is below the given capacity and calculating the valu..." alt="" coords="5,29,214,70"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="74,29,72,19,78,10,90,5,110,3,131,5,143,12,140,17,129,10,109,8,92,10,81,15,77,20,79,28"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="262,37,334,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,47,247,47,247,52,214,52"/>
 </map>

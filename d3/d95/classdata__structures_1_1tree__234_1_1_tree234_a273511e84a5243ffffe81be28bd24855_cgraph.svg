@@ -6,12 +6,22 @@
 <!-- Title: data_structures::tree_234::Tree234::DeleteNode Pages: 1 -->
 <svg width="294pt" height="88pt"
  viewBox="0.00 0.00 294.25 87.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 83.5)">
 <title>data_structures::tree_234::Tree234::DeleteNode</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Recursive release the tree.">
+<g id="a_Node000001"><a xlink:title="Recursive release the tree.">
 <polygon fill="#999999" stroke="#666666" points="136,-54.5 0,-54.5 0,-24 136,-24 136,-54.5"/>
 <text text-anchor="start" x="8" y="-41" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="68" y="-29.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Tree234::DeleteNode</text>
@@ -19,15 +29,18 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node1 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000001" class="edge">
 <title>Node1&#45;&gt;Node1</title>
+<g id="a_edge1_Node000001_Node000001"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M39.45,-54.99C33.62,-64.06 43.14,-72.5 68,-72.5 81.98,-72.5 91.11,-69.83 95.39,-65.88"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="98.97,-66.3 96.55,-55.99 92.01,-65.56 98.97,-66.3"/>
+</a>
+</g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a164574a9209b5df66368530d090b32c4" target="_top" xlink:title="Get the child pointer at position of index.">
+<g id="a_Node000002"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a164574a9209b5df66368530d090b32c4" target="_top" xlink:title="Get the child pointer at position of index.">
 <polygon fill="white" stroke="#666666" points="284.38,-79.5 173.88,-79.5 173.88,-49 284.38,-49 284.38,-79.5"/>
 <text text-anchor="start" x="181.88" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="229.12" y="-54.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Node::GetChild</text>
@@ -35,15 +48,18 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge2_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M136.48,-49.85C145.18,-51.22 154.07,-52.62 162.73,-53.98"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="162.13,-57.58 172.55,-55.68 163.21,-50.67 162.13,-57.58"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#aac82e17daa088ede9ee00dc69c1e6f06" target="_top" xlink:title="Get the item count that current saved in the node.">
+<g id="a_Node000003"><a xlink:href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#aac82e17daa088ede9ee00dc69c1e6f06" target="_top" xlink:title="Get the item count that current saved in the node.">
 <polygon fill="white" stroke="#666666" points="286.25,-30.5 172,-30.5 172,0 286.25,0 286.25,-30.5"/>
 <text text-anchor="start" x="180" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
 <text text-anchor="middle" x="229.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Node::GetCount</text>
@@ -51,10 +67,28 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge3_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M136.48,-29.07C144.52,-27.86 152.72,-26.62 160.76,-25.41"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="161.21,-28.73 170.58,-23.78 160.17,-21.81 161.21,-28.73"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

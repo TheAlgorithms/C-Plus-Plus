@@ -1,9 +1,17 @@
 <map id="ciphers::HillCipher::encrypt_text" name="ciphers::HillCipher::encrypt_text">
-<area shape="rect" id="node1" title="Encrypt a given text using a given key." alt="" coords="5,92,134,133"/>
-<area shape="rect" id="node2" href="$d6/d26/classciphers_1_1_hill_cipher.html#ad667fa0860977f6d6d443fa1dbcd80aa" title="Convenience function to perform block cipher operations. The operations are identical for both encryp..." alt="" coords="182,92,310,133"/>
-<area shape="rect" id="node3" href="$d6/d26/classciphers_1_1_hill_cipher.html#ae77cad522fa44b8c985779a7188d2f41" title="Get the index of a character in the STRKEY." alt="" coords="358,5,486,46"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="361,70,483,96"/>
-<area shape="rect" id="node6" href="$d6/d26/classciphers_1_1_hill_cipher.html#ad36cbcc7a458b3f3a2af0c4aa1126590" title="helper function to perform vector multiplication with encryption or decryption matrix" alt="" coords="358,120,486,161"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="534,154,650,180"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/byte/strlen.html#" title=" " alt="" coords="552,101,632,127"/>
+<area shape="rect" id="Node000001" title="Encrypt a given text using a given key." alt="" coords="5,92,134,133"/>
+<area shape="rect" id="Node000002" href="$d6/d26/classciphers_1_1_hill_cipher.html#ad667fa0860977f6d6d443fa1dbcd80aa" title="Convenience function to perform block cipher operations. The operations are identical for both encryp..." alt="" coords="182,92,310,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,110,166,110,166,115,134,115"/>
+<area shape="rect" id="Node000003" href="$d6/d26/classciphers_1_1_hill_cipher.html#ae77cad522fa44b8c985779a7188d2f41" title="Get the index of a character in the STRKEY." alt="" coords="358,5,486,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="288,89,365,51,367,55,290,94"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="361,70,483,96"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="310,99,346,93,347,98,311,104"/>
+<area shape="rect" id="Node000006" href="$d6/d26/classciphers_1_1_hill_cipher.html#ad36cbcc7a458b3f3a2af0c4aa1126590" title="helper function to perform vector multiplication with encryption or decryption matrix" alt="" coords="358,120,486,161"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="311,120,344,125,343,130,310,125"/>
+<area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="534,154,650,180"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="277,131,315,153,359,170,399,177,441,180,520,176,520,181,441,185,399,182,357,175,313,158,275,135"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/byte/strlen.html#" title=" " alt="" coords="552,101,632,127"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="466,44,488,55,555,91,552,96,485,60,464,49"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="486,128,537,119,538,125,487,133"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="487,148,520,153,519,158,486,153"/>
 </map>

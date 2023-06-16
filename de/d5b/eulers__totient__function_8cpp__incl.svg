@@ -6,12 +6,22 @@
 <!-- Title: math/eulers_totient_function.cpp Pages: 1 -->
 <svg width="128pt" height="94pt"
  viewBox="0.00 0.00 127.88 93.75" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.node, .edge {opacity: 0.7;}
+.node.selected, .edge.selected {opacity: 1;}
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
+<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 89.75)">
 <title>math/eulers_totient_function.cpp</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Implementation of Euler&#39;s Totient @description Euler Totient Function is also known as phi function.">
+<g id="a_Node000001"><a xlink:title="Implementation of Euler&#39;s Totient @description Euler Totient Function is also known as phi function.">
 <polygon fill="#999999" stroke="#666666" points="110.38,-85.75 11.12,-85.75 11.12,-55.25 110.38,-55.25 110.38,-85.75"/>
 <text text-anchor="start" x="19.12" y="-72.25" font-family="Helvetica,sans-Serif" font-size="10.00">math/eulers_totient</text>
 <text text-anchor="middle" x="60.75" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">_function.cpp</text>
@@ -19,34 +29,55 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="53.5,-19.25 0,-19.25 0,0 53.5,0 53.5,-19.25"/>
 <text text-anchor="middle" x="26.75" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">iostream</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M52.35,-54.95C47.82,-47.1 42.18,-37.35 37.35,-28.99"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="40.02,-27.61 31.99,-20.7 33.96,-31.11 40.02,-27.61"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:title=" ">
+<g id="a_Node000003"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="119.88,-19.25 71.62,-19.25 71.62,0 119.88,0 119.88,-19.25"/>
 <text text-anchor="middle" x="95.75" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">cassert</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M69.4,-54.95C74.06,-47.1 79.86,-37.35 84.84,-28.99"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="88.25,-31.09 90.35,-20.7 82.24,-27.51 88.25,-31.09"/>
+</a>
 </g>
 </g>
+</g>
+</svg>
+</svg>
+
+<style type='text/css'>
+<![CDATA[
+[data-mouse-over-selected='false'] { opacity: 0.7; }
+[data-mouse-over-selected='true']  { opacity: 1.0; }
+]]>
+</style>
+<script type="application/ecmascript"><![CDATA[
+document.addEventListener('DOMContentLoaded', (event) => {
+  highlightEdges();
+  highlightAdjacentNodes();
+});
+]]></script>
 </svg>

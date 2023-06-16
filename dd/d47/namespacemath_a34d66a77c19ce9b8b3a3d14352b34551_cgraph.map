@@ -1,4 +1,5 @@
 <map id="math::sphere_volume" name="math::sphere_volume">
-<area shape="rect" id="node1" title="The volume of a sphere" alt="" coords="5,5,152,31"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="200,5,271,31"/>
+<area shape="rect" id="Node000001" title="The volume of a sphere" alt="" coords="5,5,152,31"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="200,5,271,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,16,185,16,185,21,152,21"/>
 </map>

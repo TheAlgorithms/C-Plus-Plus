@@ -9,9 +9,9 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 126.88)">
 <title>range_queries::perSegTree::update</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Doing range update by passing the left and right indexes of the range as well as the value to be adde...">
+<g id="a_Node000001"><a xlink:title="Doing range update by passing the left and right indexes of the range as well as the value to be adde...">
 <polygon fill="#999999" stroke="#666666" points="133,-91.5 0,-91.5 0,-61 133,-61 133,-91.5"/>
 <text text-anchor="start" x="8" y="-78" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::perSegTree</text>
 <text text-anchor="middle" x="66.5" y="-66.75" font-family="Helvetica,sans-Serif" font-size="10.00">::update</text>
@@ -19,39 +19,45 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
+<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="293.38,-122.88 177.62,-122.88 177.62,-103.62 293.38,-103.62 293.38,-122.88"/>
 <text text-anchor="middle" x="235.5" y="-109.38" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::push_back</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M133.02,-90.77C148.1,-94.11 163.99,-97.63 178.61,-100.87"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="177.48,-104.42 188.01,-103.17 179,-97.59 177.48,-104.42"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
+<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="278.75,-85.88 192.25,-85.88 192.25,-66.62 278.75,-66.62 278.75,-85.88"/>
 <text text-anchor="middle" x="235.5" y="-72.38" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M133.02,-76.25C148.91,-76.25 165.7,-76.25 180.96,-76.25"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="180.76,-79.75 190.76,-76.25 180.76,-72.75 180.76,-79.75"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a24487eda25123bc4d112e8430821a6c6" target="_top" xlink:title="Doing range update, checking at every node if it has some value to be propagated. All nodes affected ...">
+<g id="a_Node000004"><a xlink:href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a24487eda25123bc4d112e8430821a6c6" target="_top" xlink:title="Doing range update, checking at every node if it has some value to be propagated. All nodes affected ...">
 <polygon fill="white" stroke="#666666" points="302,-30.5 169,-30.5 169,0 302,0 302,-30.5"/>
 <text text-anchor="start" x="177" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::perSegTree</text>
 <text text-anchor="middle" x="235.5" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">::update</text>
@@ -59,21 +65,27 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
+<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M110.51,-60.54C132.13,-52.64 158.53,-43 181.41,-34.64"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="182.45,-37.62 190.64,-30.91 180.05,-31.05 182.45,-37.62"/>
+</a>
+</g>
 </g>
 <!-- Node4&#45;&gt;Node4 -->
-<g id="edge7" class="edge">
+<g id="edge7_Node000004_Node000004" class="edge">
 <title>Node4&#45;&gt;Node4</title>
+<g id="a_edge7_Node000004_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M205.55,-30.99C199.44,-40.06 209.42,-48.5 235.5,-48.5 250.17,-48.5 259.74,-45.83 264.23,-41.88"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="267.81,-42.31 265.45,-31.99 260.86,-41.53 267.81,-42.31"/>
+</a>
+</g>
 </g>
 <!-- Node5 -->
-<g id="node5" class="node">
+<g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#ace7f57935b3bb9446f11c239fd89ae79" target="_top" xlink:title="If there is some value to be propagated to the passed node, value is added to the node and the childr...">
+<g id="a_Node000005"><a xlink:href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#ace7f57935b3bb9446f11c239fd89ae79" target="_top" xlink:title="If there is some value to be propagated to the passed node, value is added to the node and the childr...">
 <polygon fill="white" stroke="#666666" points="471,-52.5 338,-52.5 338,-22 471,-22 471,-52.5"/>
 <text text-anchor="start" x="346" y="-39" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::perSegTree</text>
 <text text-anchor="middle" x="404.5" y="-27.75" font-family="Helvetica,sans-Serif" font-size="10.00">::lazy</text>
@@ -81,15 +93,18 @@
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000004_Node000005" class="edge">
 <title>Node4&#45;&gt;Node5</title>
+<g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M302.02,-23.88C310.16,-24.95 318.53,-26.06 326.81,-27.15"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="326.25,-30.73 336.62,-28.57 327.16,-23.79 326.25,-30.73"/>
+</a>
+</g>
 </g>
 <!-- Node6 -->
-<g id="node6" class="node">
+<g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a0cec4b77d264521717cf9b0482c45817" target="_top" xlink:title="Creating a new node with the same values of curr node.">
+<g id="a_Node000006"><a xlink:href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a0cec4b77d264521717cf9b0482c45817" target="_top" xlink:title="Creating a new node with the same values of curr node.">
 <polygon fill="white" stroke="#666666" points="640,-30.5 507,-30.5 507,0 640,0 640,-30.5"/>
 <text text-anchor="start" x="515" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::perSegTree</text>
 <text text-anchor="middle" x="573.5" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">::newKid</text>
@@ -97,16 +112,22 @@
 </g>
 </g>
 <!-- Node4&#45;&gt;Node6 -->
-<g id="edge6" class="edge">
+<g id="edge6_Node000004_Node000006" class="edge">
 <title>Node4&#45;&gt;Node6</title>
+<g id="a_edge6_Node000004_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M302.29,-13.76C314.18,-13.55 326.46,-13.36 338,-13.25 397.11,-12.67 411.89,-12.67 471,-13.25 479.03,-13.33 487.41,-13.44 495.77,-13.58"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="495.65,-17.09 505.71,-13.76 495.77,-10.09 495.65,-17.09"/>
+</a>
+</g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
-<g id="edge5" class="edge">
+<g id="edge5_Node000005_Node000006" class="edge">
 <title>Node5&#45;&gt;Node6</title>
+<g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M471.02,-28.62C479.16,-27.55 487.53,-26.44 495.81,-25.35"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="496.16,-28.71 505.62,-23.93 495.25,-21.77 496.16,-28.71"/>
+</a>
+</g>
 </g>
 </g>
 </svg>

@@ -1,9 +1,16 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,55,55,80"/>
-<area shape="rect" id="node2" href="$d9/dfd/comb__sort_8cpp.html#a0f4e7569090083fb53d5cdeaf0e2974f" title=" " alt="" coords="211,31,291,56"/>
-<area shape="rect" id="node6" href="$d9/dfd/comb__sort_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9" title=" " alt="" coords="103,80,153,106"/>
-<area shape="rect" id="node3" href="$d9/dfd/comb__sort_8cpp.html#aede08143e63105faba10e9ee8e745fd5" title=" " alt="" coords="349,5,448,31"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="359,55,438,80"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="496,5,568,31"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/is_sorted.html#" title=" " alt="" coords="201,80,301,106"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,55,80"/>
+<area shape="rect" id="Node000002" href="$d9/dfd/comb__sort_8cpp.html#a0f4e7569090083fb53d5cdeaf0e2974f" title=" " alt="" coords="211,31,291,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,62,196,47,196,52,55,68"/>
+<area shape="rect" id="Node000006" href="$d9/dfd/comb__sort_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9" title=" " alt="" coords="103,80,153,106"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="56,71,89,80,88,85,54,76"/>
+<area shape="rect" id="Node000003" href="$d9/dfd/comb__sort_8cpp.html#aede08143e63105faba10e9ee8e745fd5" title=" " alt="" coords="349,5,448,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="291,34,334,27,335,32,292,39"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="359,55,438,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="292,47,345,56,344,61,291,53"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="496,5,568,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="448,16,481,16,481,21,448,21"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="153,80,203,60,205,65,155,85"/>
+<area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/is_sorted.html#" title=" " alt="" coords="201,80,301,106"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="154,90,186,90,186,96,154,96"/>
 </map>

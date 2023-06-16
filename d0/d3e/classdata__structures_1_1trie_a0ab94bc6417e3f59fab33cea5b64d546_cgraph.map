@@ -1,6 +1,9 @@
 <map id="data_structures::trie::insert" name="data_structures::trie::insert">
-<area shape="rect" id="node1" title=" " alt="" coords="5,39,143,79"/>
-<area shape="rect" id="node2" href="$d0/d3e/classdata__structures_1_1trie.html#aab373beb3f618b90922528c68797d988" title="Convert a character to integer for indexing." alt="" coords="191,5,328,46"/>
-<area shape="rect" id="node4" href="$d0/d3e/classdata__structures_1_1trie.html#a87d8bf99aea936f9381141753f1e90a8" title="Class default constructor." alt="" coords="191,71,328,111"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/program/exit.html#" title=" " alt="" coords="376,13,444,39"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,143,79"/>
+<area shape="rect" id="Node000002" href="$d0/d3e/classdata__structures_1_1trie.html#aab373beb3f618b90922528c68797d988" title="Convert a character to integer for indexing." alt="" coords="191,5,328,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,44,175,38,176,43,143,49"/>
+<area shape="rect" id="Node000004" href="$d0/d3e/classdata__structures_1_1trie.html#a87d8bf99aea936f9381141753f1e90a8" title="Class default constructor." alt="" coords="191,71,328,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="143,68,176,74,175,79,142,73"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/program/exit.html#" title=" " alt="" coords="376,13,444,39"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="328,23,361,23,361,28,328,28"/>
 </map>

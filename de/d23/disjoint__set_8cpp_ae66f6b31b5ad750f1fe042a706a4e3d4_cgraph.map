@@ -1,7 +1,13 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,55,55,80"/>
-<area shape="rect" id="node2" href="$de/d23/disjoint__set_8cpp.html#a010965fc5f16cca5a62506afab24e4ec" title=" " alt="" coords="113,5,193,31"/>
-<area shape="rect" id="node3" href="$de/d23/disjoint__set_8cpp.html#a2fb0a7cd26a477e2d48ba7e0118bc985" title=" " alt="" coords="103,55,203,80"/>
-<area shape="rect" id="node5" href="$de/d23/disjoint__set_8cpp.html#a44481bb75386fbb0f958a388d4b9f757" title=" " alt="" coords="125,104,181,130"/>
-<area shape="rect" id="node4" href="$de/d23/disjoint__set_8cpp.html#a34b9ead0608e676d9ae5188672427cc8" title=" " alt="" coords="251,80,297,106"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,55,80"/>
+<area shape="rect" id="Node000002" href="$de/d23/disjoint__set_8cpp.html#a010965fc5f16cca5a62506afab24e4ec" title=" " alt="" coords="113,5,193,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,55,104,35,106,40,56,60"/>
+<area shape="rect" id="Node000003" href="$de/d23/disjoint__set_8cpp.html#a2fb0a7cd26a477e2d48ba7e0118bc985" title=" " alt="" coords="103,55,203,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="55,65,88,65,88,70,55,70"/>
+<area shape="rect" id="Node000005" href="$de/d23/disjoint__set_8cpp.html#a44481bb75386fbb0f958a388d4b9f757" title=" " alt="" coords="125,104,181,130"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="56,75,113,98,111,103,54,80"/>
+<area shape="rect" id="Node000004" href="$de/d23/disjoint__set_8cpp.html#a34b9ead0608e676d9ae5188672427cc8" title=" " alt="" coords="251,80,297,106"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="204,75,237,82,236,88,203,81"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="253,81,249,71,251,62,260,56,274,53,290,56,298,63,294,67,287,61,274,59,262,61,256,65,254,71,258,79"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="181,109,236,98,237,103,182,114"/>
 </map>
