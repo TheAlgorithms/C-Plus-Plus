@@ -105,7 +105,7 @@ static void test() {
         math::iterativeFactorial(21);
     } catch (std::invalid_argument* e) {
         std::cout << "Exception thrown successfully \nContent: " << e->what()
-                  << "\n\n";
+                  << "\n";
     }
 
     std::cout << "All tests success.\n";
