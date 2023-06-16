@@ -78,7 +78,7 @@ static void test() {
     // is_armstrong(12) returns false.
     assert(is_armstrong(12) == false);
 
-    std::cout << "all tests have passed\n";
+    std::cout << "All tests have successfully passed!\n";
 }
 
 /**
