@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.9)
+cmake_minimum_required(VERSION 3.26.4)
 project(Algorithms_in_C++
     LANGUAGES CXX
     VERSION 1.0.0
