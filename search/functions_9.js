@@ -58,7 +58,7 @@ var searchData=
   ['is34node_55',['Is34Node',['../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a6c5f929afcbad5219646990edee22e18',1,'data_structures::tree_234::Node']]],
   ['is_5farmstrong_56',['is_armstrong',['../d4/d5d/math_2armstrong__number_8cpp.html#a9cebd92bc70890c3cfa261d68a5016e7',1,'armstrong_number.cpp']]],
   ['is_5fbipartite_57',['is_bipartite',['../de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#a9b0c6400693a5cfff971f768dd5ca5ca',1,'graph::is_graph_bipartite::Graph']]],
-  ['is_5ffactorial_58',['is_factorial',['../d8/dd5/check__factorial_8cpp.html#a814eea122b9c241c2b7c1ab760a3eca2',1,'check_factorial.cpp']]],
+  ['is_5ffactorial_58',['is_factorial',['../dd/d47/namespacemath.html#a6c72f756a7bf1b9043c357e3fe7814ca',1,'math']]],
   ['is_5fhappy_59',['is_happy',['../db/df3/happy__number_8cpp.html#a00ccdb1166a7c83ac3c33ac67a2532b7',1,'happy_number.cpp']]],
   ['is_5fheap_60',['is_heap',['http://en.cppreference.com/w/cpp/algorithm/is_heap.html',0,'std']]],
   ['is_5fheap_5funtil_61',['is_heap_until',['http://en.cppreference.com/w/cpp/algorithm/is_heap_until.html',0,'std']]],

@@ -14,6 +14,7 @@ var namespacemath =
     [ "cylinder_surface_perimeter", "dd/d47/namespacemath.html#a1d4df7a4e43a2eac1acc0ac610487c73", null ],
     [ "cylinder_volume", "dd/d47/namespacemath.html#abde24398be43538c62e4a496968e60ca", null ],
     [ "integral_approx", "dd/d47/namespacemath.html#aec65db4e5c7317323227f026fe50ef11", null ],
+    [ "is_factorial", "dd/d47/namespacemath.html#a6c72f756a7bf1b9043c357e3fe7814ca", null ],
     [ "largestPower", "dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f", null ],
     [ "lcmSum", "dd/d47/namespacemath.html#a04065193d190d605e1f0d0d93a87e244", null ],
     [ "magic_number", "dd/d47/namespacemath.html#a8d8e81a7cd59644b311ef9adb268f5f0", null ],

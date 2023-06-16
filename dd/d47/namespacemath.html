@@ -150,6 +150,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac5803413618fcfb922cb32c6db0fc864"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#ac5803413618fcfb922cb32c6db0fc864">cylinder_surface_area</a> (T radius, T height)</td></tr>
 <tr class="memdesc:ac5803413618fcfb922cb32c6db0fc864"><td class="mdescLeft">&#160;</td><td class="mdescRight">surface area of a <a href="https://en.wikipedia.org/wiki/Cylinder" target="_blank">cylinder</a> (2 * pi * r * h + 2 * pi * r^2)  <br /></td></tr>
 <tr class="separator:ac5803413618fcfb922cb32c6db0fc864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c72f756a7bf1b9043c357e3fe7814ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#a6c72f756a7bf1b9043c357e3fe7814ca">is_factorial</a> (uint64_t n)</td></tr>
+<tr class="memdesc:a6c72f756a7bf1b9043c357e3fe7814ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to check if the given number is factorial of some number or not.  <br /></td></tr>
+<tr class="separator:a6c72f756a7bf1b9043c357e3fe7814ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91366864111e1fac29722ca45e02ea8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#a91366864111e1fac29722ca45e02ea8f">sieve</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; bool &gt; *vec)</td></tr>
 <tr class="memdesc:a91366864111e1fac29722ca45e02ea8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs the sieve.  <br /></td></tr>
 <tr class="separator:a91366864111e1fac29722ca45e02ea8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -840,6 +843,59 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   40</span>    }</div>
 <div class="line"><span class="lineno">   41</span>    <span class="keywordflow">return</span> result;</div>
 <div class="line"><span class="lineno">   42</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6c72f756a7bf1b9043c357e3fe7814ca" name="a6c72f756a7bf1b9043c357e3fe7814ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c72f756a7bf1b9043c357e3fe7814ca">&#9670;&#160;</a></span>is_factorial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool math::is_factorial </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to check if the given number is factorial of some number or not. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>number to be checked. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if number is a factorial returns true </dd>
+<dd>
+false if number is not a factorial </dd></dl>
+<p>this loop is basically a reverse factorial calculation, where instead of multiplying we are dividing. We start at i = 2 since i = 1 has no impact division wise</p>
+<p>if n was the sum of a factorial then it should be divided until it becomes 1</p>
+<div class="fragment"><div class="line"><span class="lineno">   27</span>                              {</div>
+<div class="line"><span class="lineno">   28</span>    <span class="keywordflow">if</span> (n &lt;= 0) {  <span class="comment">// factorial numbers are only ever positive Integers</span></div>
+<div class="line"><span class="lineno">   29</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   30</span>    }</div>
+<div class="line"><span class="lineno">   31</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">   32</span><span class="comment">    /*!</span></div>
+<div class="line"><span class="lineno">   33</span><span class="comment">     * this loop is basically a reverse factorial calculation, where instead</span></div>
+<div class="line"><span class="lineno">   34</span><span class="comment">     * of multiplying we are dividing. We start at i = 2 since i = 1 has</span></div>
+<div class="line"><span class="lineno">   35</span><span class="comment">     * no impact division wise</span></div>
+<div class="line"><span class="lineno">   36</span><span class="comment">     */</span></div>
+<div class="line"><span class="lineno">   37</span>    <span class="keywordtype">int</span> i = 2;</div>
+<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">while</span> (n % i == 0) {</div>
+<div class="line"><span class="lineno">   39</span>        n = n / i;</div>
+<div class="line"><span class="lineno">   40</span>        i++;</div>
+<div class="line"><span class="lineno">   41</span>    }</div>
+<div class="line"><span class="lineno">   42</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">   43</span><span class="comment">    /*!</span></div>
+<div class="line"><span class="lineno">   44</span><span class="comment">     * if n was the sum of a factorial then it should be divided until it</span></div>
+<div class="line"><span class="lineno">   45</span><span class="comment">     * becomes 1</span></div>
+<div class="line"><span class="lineno">   46</span><span class="comment">     */</span></div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">return</span> (n == 1);</div>
+<div class="line"><span class="lineno">   48</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

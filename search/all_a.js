@@ -111,7 +111,7 @@ var searchData=
   ['is_5fenum_108',['is_enum',['http://en.cppreference.com/w/cpp/types/is_enum.html',0,'std']]],
   ['is_5ferror_5fcode_5fenum_109',['is_error_code_enum',['http://en.cppreference.com/w/cpp/error/error_code/is_error_code_enum.html',0,'std']]],
   ['is_5ferror_5fcondition_5fenum_110',['is_error_condition_enum',['http://en.cppreference.com/w/cpp/error/error_condition/is_error_condition_enum.html',0,'std']]],
-  ['is_5ffactorial_111',['is_factorial',['../d8/dd5/check__factorial_8cpp.html#a814eea122b9c241c2b7c1ab760a3eca2',1,'check_factorial.cpp']]],
+  ['is_5ffactorial_111',['is_factorial',['../dd/d47/namespacemath.html#a6c72f756a7bf1b9043c357e3fe7814ca',1,'math']]],
   ['is_5ffloating_5fpoint_112',['is_floating_point',['http://en.cppreference.com/w/cpp/types/is_floating_point.html',0,'std']]],
   ['is_5ffunction_113',['is_function',['http://en.cppreference.com/w/cpp/types/is_function.html',0,'std']]],
   ['is_5ffundamental_114',['is_fundamental',['http://en.cppreference.com/w/cpp/types/is_fundamental.html',0,'std']]],
