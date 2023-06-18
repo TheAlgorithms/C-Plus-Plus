@@ -22,12 +22,12 @@
  * @brief Bit manipulation algorithms
  */
 namespace bit_manipulation {
+
 /**
  * @brief The main function implements checking the next number
  * @param x the number that will be calculated
  * @returns a number
  */
-
 uint64_t next_higher_number(uint64_t x)
 {
  
