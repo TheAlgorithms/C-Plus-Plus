@@ -21,6 +21,7 @@ namespace math {
 
 /**
  * @brief function to find factorial of given number
+ * @param n is the number which is to be factorialized
  * @warning Maximum value for the parameter is 20 as 21!
  * cannot be represented in 64 bit unsigned int
  */
