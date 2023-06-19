@@ -10,7 +10,6 @@
  * @author [Akshay Gupta](https://github.com/Akshay1910)
  */
 
-#include <cstdint>   /// for uint64_t
 #include <iostream>  /// for I/O operations
 #include <cassert>   /// for assert
 
