@@ -27,11 +27,6 @@ jobs:
           wget https://raw.githubusercontent.com/TheAlgorithms/scripts/main/filename_formatter.sh
           chmod +x filename_formatter.sh
           ./filename_formatter.sh . .cpp,.hpp
-      - name: Update DIRECTORY.md
-        run: |
-          wget https://raw.githubusercontent.com/TheAlgorithms/scripts/main/build_directory_md.py
-          python3 build_directory_md.py C-Plus-Plus . .cpp,.hpp,.h > DIRECTORY.md
-          git commit -m "updating DIRECTORY.md" DIRECTORY.md ||  true
       - name: Get file changes
         run: |
           git branch
