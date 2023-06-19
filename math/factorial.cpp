@@ -1,7 +1,7 @@
 /**
  * @file
  * @brief Find the [factorial](https://en.wikipedia.org/wiki/Factorial) of a given number
- * @description calculates factorial via recursion
+ * @details Calculate factorial via recursion
  * \f[n! = n\times(n-1)\times(n-2)\times(n-3)\times\ldots\times3\times2\times1
  *       = n\times(n-1)!\f]
  * for example:
