@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../dd/d47/namespacemath.html#ab37f3a7302a84179aae682c79d8390bf" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="../../dd/d47/namespacemath.html#ab37f3a7302a84179aae682c79d8390bf" target="_top" xlink:title="to return the aliquot sum of a number">
 <polygon fill="white" stroke="#666666" points="237.75,-19.25 141.5,-19.25 141.5,0 237.75,0 237.75,-19.25"/>
 <text text-anchor="middle" x="189.62" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">math::aliquot_sum</text>
 </a>

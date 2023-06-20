@@ -115,6 +115,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab37f3a7302a84179aae682c79d8390bf"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#ab37f3a7302a84179aae682c79d8390bf">aliquot_sum</a> (const uint64_t num)</td></tr>
+<tr class="memdesc:ab37f3a7302a84179aae682c79d8390bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">to return the aliquot sum of a number  <br /></td></tr>
 <tr class="separator:ab37f3a7302a84179aae682c79d8390bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf7f2a6d91f1ca6c89698792aea3f188"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#abf7f2a6d91f1ca6c89698792aea3f188">approximate_pi</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../de/d4f/structmath_1_1_point.html">Point</a> &gt; &amp;pts)</td></tr>
 <tr class="separator:abf7f2a6d91f1ca6c89698792aea3f188"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -313,27 +314,29 @@ Algorithm</h3>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Function to return the aliquot sum of a number </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>to return the aliquot sum of a number </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">num</td><td>The input number </td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   26</span>                                         {</div>
-<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">if</span> (num == 0 || num == 1) {</div>
-<div class="line"><span class="lineno">   28</span>        <span class="keywordflow">return</span> 0;  <span class="comment">// The aliquot sum for 0 and 1 is 0</span></div>
-<div class="line"><span class="lineno">   29</span>    }</div>
-<div class="line"><span class="lineno">   30</span> </div>
-<div class="line"><span class="lineno">   31</span>    uint64_t sum = 0;</div>
-<div class="line"><span class="lineno">   32</span> </div>
-<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">for</span> (uint64_t i = 1; i &lt;= num / 2; i++) {</div>
-<div class="line"><span class="lineno">   34</span>        <span class="keywordflow">if</span> (num % i == 0) {</div>
-<div class="line"><span class="lineno">   35</span>            sum += i;</div>
-<div class="line"><span class="lineno">   36</span>        }</div>
-<div class="line"><span class="lineno">   37</span>    }</div>
-<div class="line"><span class="lineno">   38</span> </div>
-<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">sum</a>;</div>
-<div class="line"><span class="lineno">   40</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   35</span>                                         {</div>
+<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">if</span> (num == 0 || num == 1) {</div>
+<div class="line"><span class="lineno">   37</span>        <span class="keywordflow">return</span> 0;  <span class="comment">// The aliquot sum for 0 and 1 is 0</span></div>
+<div class="line"><span class="lineno">   38</span>    }</div>
+<div class="line"><span class="lineno">   39</span> </div>
+<div class="line"><span class="lineno">   40</span>    uint64_t sum = 0;</div>
+<div class="line"><span class="lineno">   41</span> </div>
+<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">for</span> (uint64_t i = 1; i &lt;= num / 2; i++) {</div>
+<div class="line"><span class="lineno">   43</span>        <span class="keywordflow">if</span> (num % i == 0) {</div>
+<div class="line"><span class="lineno">   44</span>            sum += i;</div>
+<div class="line"><span class="lineno">   45</span>        }</div>
+<div class="line"><span class="lineno">   46</span>    }</div>
+<div class="line"><span class="lineno">   47</span> </div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">sum</a>;</div>
+<div class="line"><span class="lineno">   49</span>}</div>
 <div class="ttc" id="anamespacemachine__learning_html_a6f1c98c016ad34ff3d9f39372161bd35"><div class="ttname"><a href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">machine_learning::sum</a></div><div class="ttdeci">T sum(const std::vector&lt; std::valarray&lt; T &gt; &gt; &amp;A)</div><div class="ttdef"><b>Definition</b> vector_ops.hpp:232</div></div>
 </div><!-- fragment -->
 </div>
