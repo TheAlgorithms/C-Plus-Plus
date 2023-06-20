@@ -1,6 +1,7 @@
 /**
  * @file
- * @brief Find the [factorial](https://en.wikipedia.org/wiki/Factorial) of a given number
+ * @brief Find the [factorial](https://en.wikipedia.org/wiki/Factorial) of a
+ * given number
  * @details Calculate factorial via recursion
  * \f[n! = n\times(n-1)\times(n-2)\times(n-3)\times\ldots\times3\times2\times1
  *       = n\times(n-1)!\f]
@@ -10,8 +11,8 @@
  * @author [Akshay Gupta](https://github.com/Akshay1910)
  */
 
-#include <iostream>  /// for I/O operations
 #include <cassert>   /// for assert
+#include <iostream>  /// for I/O operations
 
 /**
  * @namespace
@@ -34,19 +35,19 @@ uint64_t factorial(uint8_t n) {
     }
     return n * factorial(n - 1);
 }
-} // namespace math
+}  // namespace math
 
 /**
  * @brief Self-test implementations
  * @returns void
  */
 static void tests() {
-   assert(math::factorial(1) == 1);
-   assert(math::factorial(0) == 1);
-   assert(math::factorial(5) == 120);
-   assert(math::factorial(10) == 3628800);
-   assert(math::factorial(20) == 2432902008176640000);
-   std::cout << "All tests have passed successfully!\n";
+    assert(math::factorial(1) == 1);
+    assert(math::factorial(0) == 1);
+    assert(math::factorial(5) == 120);
+    assert(math::factorial(10) == 3628800);
+    assert(math::factorial(20) == 2432902008176640000);
+    std::cout << "All tests have passed successfully!\n";
 }
 
 /**
@@ -54,6 +55,6 @@ static void tests() {
  * @returns 0 on exit
  */
 int main() {
-    tests(); // run self-test implementations
+    tests();  // run self-test implementations
     return 0;
 }
