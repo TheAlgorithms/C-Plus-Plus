@@ -29,7 +29,7 @@ namespace ncr_modulo_p {
 /**
  * @namespace utils
  * @brief this namespace contains the definitions of the functions called from
- * the class NCRModuloP
+ * the class math::ncr_modulo_p::NCRModuloP
  */
 namespace utils {
 /**
@@ -136,6 +136,9 @@ class NCRModuloP {
 }  // namespace ncr_modulo_p
 }  // namespace math
 
+/**
+ * @brief tests math::ncr_modulo_p::NCRModuloP
+ */
 static void tests() {
     struct TestCase {
         const int64_t size;
@@ -165,7 +168,7 @@ static void tests() {
 }
 
 /**
- * @brief example showing the usage of the NCRModuloP class
+ * @brief example showing the usage of the math::ncr_modulo_p::NCRModuloP class
  */
 void example() {
     const int64_t size = 1e6 + 1;
