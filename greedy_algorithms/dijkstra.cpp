@@ -107,7 +107,7 @@ int main() {
         cout << "Enter weight: ";
         cin >> weight;
 
-        // makes sure source and destionation are in the proper bounds.
+        // makes sure source and destination are in the proper bounds.
         if (src >= 0 && src < V && dst >= 0 && dst < V) {
             G.addEdge(src, dst, weight);
         } else {
