@@ -1,24 +1,24 @@
 /**
-* @file
-* @brief Program to check if a number is an [Armstrong/Narcissistic
-* number](https://en.wikipedia.org/wiki/Narcissistic_number) in decimal system.
-*
-* @details
-* Armstrong number or [Narcissistic
-* number](https://en.wikipedia.org/wiki/Narcissistic_number) is a number that
-* is the sum of its own digits raised to the power of the number of digits.
-*
-* let n be the narcissistic number,
-* \f[F_b(n) = \sum_{i=0}^{k-1}d_{i}^{k}\f] for
-* \f$ b > 1 F_b : \N \to \N \f$ where
-* \f$ k = \lfloor log_b n\rfloor is the number of digits in the number in base \f$b\f$, and
-* \f$ d_i = \frac{n mod b^{i+1} - n mod b^{i}}{b^{i}} \f$
-*
-* @author [Neeraj Cherkara](https://github.com/iamnambiar)
-*/
-#include <cassert> /// for assert
-#include <cmath> /// for std::pow
-#include <iostream> /// for IO operations
+ * @file
+ * @brief Program to check if a number is an [Armstrong/Narcissistic
+ * number](https://en.wikipedia.org/wiki/Narcissistic_number) in decimal system.
+ *
+ * @details
+ * Armstrong number or [Narcissistic
+ * number](https://en.wikipedia.org/wiki/Narcissistic_number) is a number that
+ * is the sum of its own digits raised to the power of the number of digits.
+ *
+ * let n be the narcissistic number,
+ * \f[F_b(n) = \sum_{i=0}^{k-1}d_{i}^{k}\f] for
+ * \f$ b > 1 F_b : \N \to \N \f$ where
+ * \f$ k = \lfloor log_b n\rfloor is the number of digits in the number in base
+ * \f$b\f$, and \f$ d_i = \frac{n mod b^{i+1} - n mod b^{i}}{b^{i}} \f$
+ *
+ * @author [Neeraj Cherkara](https://github.com/iamnambiar)
+ */
+#include <cassert>   /// for assert
+#include <cmath>     /// for std::pow
+#include <iostream>  /// for IO operations
 
 /**
  * @brief Function to calculate the total number of digits in the number.
@@ -61,9 +61,9 @@ bool is_armstrong(int number) {
 }
 
 /**
-* @brief Self-test implementations
-* @returns void
-*/
+ * @brief Self-test implementations
+ * @returns void
+ */
 static void test() {
     // is_armstrong(370) returns true.
     assert(is_armstrong(370) == true);
@@ -82,10 +82,10 @@ static void test() {
 }
 
 /**
-* @brief Main Function
-* @returns 0 on exit
-*/
+ * @brief Main Function
+ * @returns 0 on exit
+ */
 int main() {
-    test(); // run self-test implementations
+    test();  // run self-test implementations
     return 0;
 }
