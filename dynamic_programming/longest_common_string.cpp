@@ -1,8 +1,8 @@
 /**
  * @file
- * @brief contains the definition of the function longest_common_string_length
+ * @brief contains the definition of the function ::longest_common_string_length
  * @details
- * the function longest_common_string_length computes the length
+ * the function ::longest_common_string_length computes the length
  * of the longest common string which can be created of two input strings
  * by removing characters from them
  *
@@ -47,6 +47,10 @@ std::size_t longest_common_string_length(const std::string& string_a,
     return sub_sols[0][0];
 }
 
+/**
+ * @brief represents single example inputs and expected output of the function
+ * ::longest_common_string_length
+ */
 struct TestCase {
     const std::string string_a;
     const std::string string_b;
@@ -59,6 +63,9 @@ struct TestCase {
           common_string_len(in_common_string_len) {}
 };
 
+/**
+ * @return example data used in the tests of ::longest_common_string_length
+ */
 std::vector<TestCase> get_test_cases() {
     return {TestCase("", "", 0),
             TestCase("ab", "ab", 2),
@@ -76,7 +83,7 @@ std::vector<TestCase> get_test_cases() {
 }
 
 /**
- * @brief checks the function longest_common_string_length agains example data
+ * @brief checks the function ::longest_common_string_length agains example data
  * @param test_cases list of test cases
  * @tparam type representing a list of test cases
  */
@@ -89,7 +96,7 @@ static void test_longest_common_string_length(const TestCases& test_cases) {
 }
 
 /**
- * @brief checks the function longest_common_string_length returns the same
+ * @brief checks if the function ::longest_common_string_length returns the same
  * result when its argument are flipped
  * @param test_cases list of test cases
  * @tparam type representing a list of test cases
@@ -114,7 +121,7 @@ std::string reverse_str(const std::string& in_str) {
 }
 
 /**
- * @brief checks the function longest_common_string_length returns the same
+ * @brief checks if the function ::longest_common_string_length returns the same
  * result when its inputs are reversed
  * @param test_cases list of test cases
  * @tparam type representing a list of test cases
@@ -130,7 +137,7 @@ static void test_longest_common_string_length_for_reversed_inputs(
 }
 
 /**
- * @brief runs all tests for longest_common_string_length funcion
+ * @brief runs all tests for ::longest_common_string_length funcion
  */
 static void tests() {
     const auto test_cases = get_test_cases();
