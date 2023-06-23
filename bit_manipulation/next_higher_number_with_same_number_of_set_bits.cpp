@@ -5,9 +5,10 @@
  * implementation
  *
  * @details
- * Given a number x, find next number with same number of 1 bits in it’s binary representation.
- * For example, consider x = 12, whose binary representation is 1100 (excluding leading zeros on 32 bit machine).
- * It contains two logic 1 bits. The next higher number with two logic 1 bits is 17 (100012).
+ * Given a number x, find next number with same number of 1 bits in it’s binary
+ * representation. For example, consider x = 12, whose binary representation is
+ * 1100 (excluding leading zeros on 32 bit machine). It contains two logic 1
+ * bits. The next higher number with two logic 1 bits is 17 (100012).
  *
  * A binary number consists of two digits. They are 0 & 1. Digit 1 is known as
  * set bit in computer terms.
@@ -28,43 +29,39 @@ namespace bit_manipulation {
  * @param x the number that will be calculated
  * @returns a number
  */
-uint64_t next_higher_number(uint64_t x)
-{
- 
-  uint64_t rightOne;
-  uint64_t nextHigherOneBit;
-  uint64_t rightOnesPattern;
- 
-  uint64_t next = 0;
- 
-  if(x)
-  {
- 
-    // right most set bit
-    rightOne = x & -(signed)x;
- 
-    // reset the pattern and set next higher bit
-    // left part of x will be here
-    nextHigherOneBit = x + rightOne;
- 
-    // nextHigherOneBit is now part [D] of the above explanation.
- 
-    // isolate the pattern
-    rightOnesPattern = x ^ nextHigherOneBit;
- 
-    // right adjust pattern
-    rightOnesPattern = (rightOnesPattern)/rightOne;
- 
-    // correction factor
-    rightOnesPattern >>= 2;
- 
-    // rightOnesPattern is now part [A] of the above explanation.
- 
-    // integrate new pattern (Add [D] and [A])
-    next = nextHigherOneBit | rightOnesPattern;
-  }
- 
-  return next;
+uint64_t next_higher_number(uint64_t x) {
+    uint64_t rightOne = 0;
+    uint64_t nextHigherOneBit = 0;
+    uint64_t rightOnesPattern = 0;
+
+    uint64_t next = 0;
+
+    if (x) {
+        // right most set bit
+        rightOne = x & -static_cast<signed>(x);
+
+        // reset the pattern and set next higher bit
+        // left part of x will be here
+        nextHigherOneBit = x + rightOne;
+
+        // nextHigherOneBit is now part [D] of the above explanation.
+
+        // isolate the pattern
+        rightOnesPattern = x ^ nextHigherOneBit;
+
+        // right adjust pattern
+        rightOnesPattern = (rightOnesPattern) / rightOne;
+
+        // correction factor
+        rightOnesPattern >>= 2;
+
+        // rightOnesPattern is now part [A] of the above explanation.
+
+        // integrate new pattern (Add [D] and [A])
+        next = nextHigherOneBit | rightOnesPattern;
+    }
+
+    return next;
 }
 
 }  // namespace bit_manipulation
