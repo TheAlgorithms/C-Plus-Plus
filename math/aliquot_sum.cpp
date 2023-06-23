@@ -3,10 +3,18 @@
  * @brief Program to return the [Aliquot
  * Sum](https://en.wikipedia.org/wiki/Aliquot_sum) of a number
  *
- * \details
- * The Aliquot sum s(n) of a non-negative integer n is the sum of all
+ * @details
+ * The Aliquot sum \f$s(n)\f$ of a non-negative integer n is the sum of all
  * proper divisors of n, that is, all the divisors of n, other than itself.
- * For example, the Aliquot sum of 18 = 1 + 2 + 3 + 6 + 9 = 21
+ *
+ * Formula:
+ *
+ * \f[
+ *      s(n) = \sum_{d|n, d\neq n}d.
+ * \f]
+ *
+ * For example;
+ *  \f$s(18) = 1 + 2 + 3 + 6 + 9 = 21 \f$
  *
  * @author [SpiderMath](https://github.com/SpiderMath)
  */
@@ -19,8 +27,9 @@
  * @namespace math
  */
 namespace math {
+
 /**
- * Function to return the aliquot sum of a number
+ * @brief to return the aliquot sum of a number
  * @param num The input number
  */
 uint64_t aliquot_sum(const uint64_t num) {
@@ -63,6 +72,5 @@ static void test() {
  */
 int main() {
     test();  // run the self-test implementations
-
     return 0;
 }
