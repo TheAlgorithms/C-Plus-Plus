@@ -149,6 +149,10 @@ static void tests() {
     std::cout << "All tests have successfully passed!\n";
 }
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     tests();
     return 0;
