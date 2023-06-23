@@ -20,6 +20,7 @@
   * [Count Of Trailing Ciphers In Factorial N](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/count_of_trailing_ciphers_in_factorial_n.cpp)
   * [Find Non Repeating Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/find_non_repeating_number.cpp)
   * [Hamming Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/hamming_distance.cpp)
+  * [next higher number with same number of set bits](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/next_higher_number_with_same_number_of_set_bits.cpp)
   * [Power Of 2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/power_of_2.cpp)
   * [Set Kth Bit](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/set_kth_bit.cpp)
   * [Travelling Salesman Using Bit Manipulation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/travelling_salesman_using_bit_manipulation.cpp)
