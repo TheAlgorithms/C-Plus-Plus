@@ -165,6 +165,8 @@ static void tests() {
         assert(math::ncr_modulo_p::NCRModuloP(tc.size, tc.p).ncr(tc.n, tc.r) ==
                tc.expected);
     }
+
+    std::cout << "\n\nAll tests have successfully passed!\n";
 }
 
 /**
