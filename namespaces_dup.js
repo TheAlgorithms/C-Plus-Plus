@@ -10,7 +10,8 @@ var namespaces_dup =
     [ "bidirectional_dijkstra", "d4/d13/namespacebidirectional__dijkstra.html", null ],
     [ "binomial", "d7/d7a/namespacebinomial.html", null ],
     [ "bit_manipulation", "d7/d81/namespacebit__manipulation.html", [
-      [ "isPowerOfTwo", "d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f", null ]
+      [ "isPowerOfTwo", "d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f", null ],
+      [ "next_higher_number", "d7/d81/namespacebit__manipulation.html#a4b76571a2a04fa99c30a96eca9997f0e", null ]
     ] ],
     [ "boruvkas_minimum_spanning_tree", "d8/d64/namespaceboruvkas__minimum__spanning__tree.html", null ],
     [ "caesar", "dd/d81/namespacecaesar.html", null ],

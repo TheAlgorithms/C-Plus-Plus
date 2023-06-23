@@ -1,5 +1,10 @@
 var NAVTREEINDEX13 =
 {
+"de/dd1/segment__tree_8cpp.html":[11,0,4,17],
+"de/dd1/segment__tree_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,4,17,2],
+"de/dd1/segment__tree_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,4,17,1],
+"de/dd3/namespace_s_h_a.html":[9,0,102],
+"de/dd3/newton__raphson__method_8cpp.html":[11,0,15,14],
 "de/dd3/newton__raphson__method_8cpp.html#a2003b5b2dcfff0769b957ab5c968b03d":[11,0,15,14,0],
 "de/dd3/newton__raphson__method_8cpp.html#a3d3f7f41977394680af6ebbed96f3386":[11,0,15,14,1],
 "de/dd3/newton__raphson__method_8cpp.html#a5c5ff05b9f37ae59dad67e1d4f6cd51d":[11,0,15,14,4],
@@ -225,8 +230,8 @@ var NAVTREEINDEX13 =
 "functions_x.html":[10,3,0,23],
 "functions_y.html":[10,3,0,24],
 "functions_~.html":[10,3,0,25],
-"globals.html":[11,1,0],
 "globals.html":[11,1,0,0],
+"globals.html":[11,1,0],
 "globals_a.html":[11,1,0,1],
 "globals_b.html":[11,1,0,2],
 "globals_c.html":[11,1,0,3],
@@ -244,10 +249,5 @@ var NAVTREEINDEX13 =
 "globals_func_f.html":[11,1,1,6],
 "globals_func_g.html":[11,1,1,7],
 "globals_func_h.html":[11,1,1,8],
-"globals_func_i.html":[11,1,1,9],
-"globals_func_j.html":[11,1,1,10],
-"globals_func_l.html":[11,1,1,11],
-"globals_func_m.html":[11,1,1,12],
-"globals_func_n.html":[11,1,1,13],
-"globals_func_o.html":[11,1,1,14]
+"globals_func_i.html":[11,1,1,9]
 };

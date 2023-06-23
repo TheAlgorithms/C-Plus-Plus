@@ -1,5 +1,10 @@
 var NAVTREEINDEX10 =
 {
+"da/dd3/namespacespirograph.html#a8e83a64e8443fff1e5ffdc1c299c1e99":[9,0,107,1],
+"da/dd3/namespacespirograph.html#aeca22dbe4563358960e907a40cd3e1ac":[9,0,107,0],
+"da/dd4/namespacemedian__search.html":[9,0,65],
+"da/dda/namespaceradix__sort.html":[9,0,92],
+"da/de7/decimal__to__hexadecimal_8cpp.html":[11,0,17,2],
 "da/de7/decimal__to__hexadecimal_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe":[11,0,17,2,0],
 "da/df2/durand__kerner__roots_8cpp.html":[11,0,15,4],
 "da/df2/durand__kerner__roots_8cpp.html#a024b8bc4755863315456d573a6732377":[11,0,15,4,1],
@@ -34,12 +39,12 @@ var NAVTREEINDEX10 =
 "db/d16/0__1__knapsack_8cpp.html#a15edf30f336885e5b851f6b7199c6cd1":[11,0,6,0,1],
 "db/d16/0__1__knapsack_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,6,0,2],
 "db/d16/0__1__knapsack_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,6,0,0],
-"db/d19/structlinear__probing_1_1_entry.html":[9,0,55,0],
 "db/d19/structlinear__probing_1_1_entry.html":[10,0,8,0],
-"db/d19/structlinear__probing_1_1_entry.html#a2139f643a3caf074da1db8a9fa16fa77":[9,0,55,0,0],
+"db/d19/structlinear__probing_1_1_entry.html":[9,0,55,0],
 "db/d19/structlinear__probing_1_1_entry.html#a2139f643a3caf074da1db8a9fa16fa77":[10,0,8,0,0],
-"db/d19/structlinear__probing_1_1_entry.html#a4d84e90b73022083761f85f8586c4c2a":[9,0,55,0,1],
+"db/d19/structlinear__probing_1_1_entry.html#a2139f643a3caf074da1db8a9fa16fa77":[9,0,55,0,0],
 "db/d19/structlinear__probing_1_1_entry.html#a4d84e90b73022083761f85f8586c4c2a":[10,0,8,0,1],
+"db/d19/structlinear__probing_1_1_entry.html#a4d84e90b73022083761f85f8586c4c2a":[9,0,55,0,1],
 "db/d27/n__bonacci_8cpp.html":[11,0,14,38],
 "db/d27/n__bonacci_8cpp.html#a6849b68f760be628d5975ab3eddec63d":[11,0,14,38,1],
 "db/d27/n__bonacci_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,14,38,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX10 =
 "dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#ac4c64e5723fa12a043fd0a7f5ed5bb37":[10,0,3,0,0,12],
 "dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#ad36ec1f1a97298e49de605384e5f8211":[10,0,3,0,0,7],
 "dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#ae190115f8d4d31e47d7290e0b6871391":[10,0,3,0,0,8],
-"dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#ae4e183ec8eab778cb243e4ae0b22a0f1":[10,0,3,0,0,13],
-"dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#aedbe01e48a96fefa0b393ec577b0f19e":[10,0,3,0,0,5],
-"dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#af09566a6a59d30875434c140e18e0a12":[10,0,3,0,0,6],
-"dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#af12ceffdc07cc87eca8a4a8ac87d60fe":[10,0,3,0,0,16],
-"dc/d14/wildcard__matching_8cpp.html":[11,0,0,11],
-"dc/d14/wildcard__matching_8cpp.html#a4a5b107f93db24e424b12899fa692c5a":[11,0,0,11,2]
+"dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#ae4e183ec8eab778cb243e4ae0b22a0f1":[10,0,3,0,0,13]
 };
