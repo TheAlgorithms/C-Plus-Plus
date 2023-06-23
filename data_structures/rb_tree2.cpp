@@ -22,10 +22,10 @@ using std::ostringstream;
 using std::string;
 using std::vector;
 
-/// defining colors
-#define COLOR_RED          0
-#define COLOR_BLACK        1
-#define COLOR_DOUBLE_BLACK 2  /// for remove()
+/// defining colors (const instead of defined macros)
+const int COLOR_RED = 0;
+const int COLOR_BLACK = 1;
+const int COLOR_DOUBLE_BLACK = 2;
 
 /**
  * @brief Node struct for nodes inside the
@@ -38,8 +38,8 @@ struct RBTNode {
     /// nodes are red by default
     /// null/root/red's child nodes are recolored to black
     uint16_t color = COLOR_RED;
-    /// has int value to represent node itself
-    int val;
+    /// has int value to represent node itself (default 0)
+    int val = 0;
 
     /// has a parent and left/right child nodes
     RBTNode* parent = nullptr;
@@ -93,6 +93,27 @@ class RedBlackTree {
         // they were inserted into the original tree
         for (int n : rbt.nodes_order_added) {
             this->Insert(n);
+        }
+    }
+
+    // TODO(brennandoubt): copy assignment operator
+    RedBlackTree& operator=(const RedBlackTree &other) {
+        // handling if user assigns object to itself (x = x)
+        if (&other != this) {
+            // empty this tree (except root)
+            if (root != nullptr) {
+                PostDelete(root->left);
+                PostDelete(root->right);
+            }
+
+            // update root node with other tree's root data
+            this->root = nullptr;
+            this->numItems = 0;
+
+            // insert nodes from other tree
+            for (int n : other.nodes_order_added) {
+                this->Insert(n);
+            }
         }
     }
 
