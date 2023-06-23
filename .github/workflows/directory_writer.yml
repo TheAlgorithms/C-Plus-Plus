@@ -2,7 +2,7 @@ name: Directory writer
 on:
   push:
     branches:
-      - main
+      - master
   schedule:
   #        ┌───────────── minute (0 - 59)
   #        │  ┌───────────── hour (0 - 23)
