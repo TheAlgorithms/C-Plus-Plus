@@ -46,7 +46,7 @@ var searchData=
   ['apply_5ffunction_43',['apply_function',['../d8/d77/namespacemachine__learning.html#ad0bdc88e5f1be47c46c0f0c8ebf754bb',1,'machine_learning']]],
   ['approximate_5fpi_44',['approximate_pi',['../dd/d47/namespacemath.html#abf7f2a6d91f1ca6c89698792aea3f188',1,'math']]],
   ['are_5falmost_5fequal_45',['are_almost_equal',['../d0/d6f/namespaceothers.html#aa17dc6d061dff34f6b9a610bc5e26703',1,'others']]],
-  ['are_5famicable_46',['are_amicable',['../d5/df6/check__amicable__pair_8cpp.html#afeb67e204ec7de02ad152c11df4d1e01',1,'check_amicable_pair.cpp']]],
+  ['are_5famicable_46',['are_amicable',['../dd/d47/namespacemath.html#a8e6eede206201db0d1dbb618fa969bec',1,'math']]],
   ['arg_47',['arg',['../da/d5a/class_complex.html#ae1e03712837450549e0c9b4017533a41',1,'Complex']]],
   ['argmax_48',['argmax',['../d8/d77/namespacemachine__learning.html#a50480fccfb39de20ca47f1bf51ecb6ec',1,'machine_learning']]],
   ['asctime_49',['asctime',['http://en.cppreference.com/w/cpp/chrono/c/asctime.html',0,'std']]],

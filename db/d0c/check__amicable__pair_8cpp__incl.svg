@@ -21,7 +21,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="A C++ Program to check whether a pair of number is amicable pair or not.">
+<g id="a_Node000001"><a xlink:title="A C++ Program to check whether a pair of numbers is an amicable pair or not.">
 <polygon fill="#999999" stroke="#666666" points="113.75,-85.75 2.5,-85.75 2.5,-55.25 113.75,-55.25 113.75,-85.75"/>
 <text text-anchor="start" x="10.5" y="-72.25" font-family="Helvetica,sans-Serif" font-size="10.00">math/check_amicable</text>
 <text text-anchor="middle" x="58.12" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">_pair.cpp</text>

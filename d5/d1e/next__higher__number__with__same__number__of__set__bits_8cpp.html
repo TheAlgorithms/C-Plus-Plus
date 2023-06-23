@@ -155,11 +155,11 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  100</span>           {</div>
-<div class="line"><span class="lineno">  101</span>    <a class="code hl_function" href="../../d5/d1e/next__higher__number__with__same__number__of__set__bits_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">  102</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  103</span>}</div>
-<div class="ttc" id="anext__higher__number__with__same__number__of__set__bits_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../d5/d1e/next__higher__number__with__same__number__of__set__bits_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> next_higher_number_with_same_number_of_set_bits.cpp:76</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   97</span>           {</div>
+<div class="line"><span class="lineno">   98</span>    <a class="code hl_function" href="../../d5/d1e/next__higher__number__with__same__number__of__set__bits_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">   99</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  100</span>}</div>
+<div class="ttc" id="anext__higher__number__with__same__number__of__set__bits_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../d5/d1e/next__higher__number__with__same__number__of__set__bits_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> next_higher_number_with_same_number_of_set_bits.cpp:73</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -193,29 +193,29 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   76</span>                   {</div>
-<div class="line"><span class="lineno">   77</span>    <span class="comment">// x = 4 return 8</span></div>
-<div class="line"><span class="lineno">   78</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a4b76571a2a04fa99c30a96eca9997f0e">bit_manipulation::next_higher_number</a>(4) == 8);</div>
-<div class="line"><span class="lineno">   79</span>    <span class="comment">// x = 6 return 9</span></div>
-<div class="line"><span class="lineno">   80</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a4b76571a2a04fa99c30a96eca9997f0e">bit_manipulation::next_higher_number</a>(6) == 9);</div>
-<div class="line"><span class="lineno">   81</span>    <span class="comment">// x = 13 return 14</span></div>
-<div class="line"><span class="lineno">   82</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a4b76571a2a04fa99c30a96eca9997f0e">bit_manipulation::next_higher_number</a>(13) == 14);</div>
-<div class="line"><span class="lineno">   83</span>    <span class="comment">// x = 64 return 128</span></div>
-<div class="line"><span class="lineno">   84</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a4b76571a2a04fa99c30a96eca9997f0e">bit_manipulation::next_higher_number</a>(64) == 128);</div>
-<div class="line"><span class="lineno">   85</span>    <span class="comment">// x = 15 return 23</span></div>
-<div class="line"><span class="lineno">   86</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a4b76571a2a04fa99c30a96eca9997f0e">bit_manipulation::next_higher_number</a>(15) == 23);</div>
-<div class="line"><span class="lineno">   87</span>    <span class="comment">// x= 32 return 64</span></div>
-<div class="line"><span class="lineno">   88</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a4b76571a2a04fa99c30a96eca9997f0e">bit_manipulation::next_higher_number</a>(32) == 64);</div>
-<div class="line"><span class="lineno">   89</span>    <span class="comment">// x = 97 return 98</span></div>
-<div class="line"><span class="lineno">   90</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a4b76571a2a04fa99c30a96eca9997f0e">bit_manipulation::next_higher_number</a>(97) == 98);</div>
-<div class="line"><span class="lineno">   91</span>    <span class="comment">// x = 1024 return 2048</span></div>
-<div class="line"><span class="lineno">   92</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a4b76571a2a04fa99c30a96eca9997f0e">bit_manipulation::next_higher_number</a>(1024) == 2048);</div>
-<div class="line"><span class="lineno">   93</span> </div>
-<div class="line"><span class="lineno">   94</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All test cases have successfully passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   95</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   73</span>                   {</div>
+<div class="line"><span class="lineno">   74</span>    <span class="comment">// x = 4 return 8</span></div>
+<div class="line"><span class="lineno">   75</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a4b76571a2a04fa99c30a96eca9997f0e">bit_manipulation::next_higher_number</a>(4) == 8);</div>
+<div class="line"><span class="lineno">   76</span>    <span class="comment">// x = 6 return 9</span></div>
+<div class="line"><span class="lineno">   77</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a4b76571a2a04fa99c30a96eca9997f0e">bit_manipulation::next_higher_number</a>(6) == 9);</div>
+<div class="line"><span class="lineno">   78</span>    <span class="comment">// x = 13 return 14</span></div>
+<div class="line"><span class="lineno">   79</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a4b76571a2a04fa99c30a96eca9997f0e">bit_manipulation::next_higher_number</a>(13) == 14);</div>
+<div class="line"><span class="lineno">   80</span>    <span class="comment">// x = 64 return 128</span></div>
+<div class="line"><span class="lineno">   81</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a4b76571a2a04fa99c30a96eca9997f0e">bit_manipulation::next_higher_number</a>(64) == 128);</div>
+<div class="line"><span class="lineno">   82</span>    <span class="comment">// x = 15 return 23</span></div>
+<div class="line"><span class="lineno">   83</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a4b76571a2a04fa99c30a96eca9997f0e">bit_manipulation::next_higher_number</a>(15) == 23);</div>
+<div class="line"><span class="lineno">   84</span>    <span class="comment">// x= 32 return 64</span></div>
+<div class="line"><span class="lineno">   85</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a4b76571a2a04fa99c30a96eca9997f0e">bit_manipulation::next_higher_number</a>(32) == 64);</div>
+<div class="line"><span class="lineno">   86</span>    <span class="comment">// x = 97 return 98</span></div>
+<div class="line"><span class="lineno">   87</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a4b76571a2a04fa99c30a96eca9997f0e">bit_manipulation::next_higher_number</a>(97) == 98);</div>
+<div class="line"><span class="lineno">   88</span>    <span class="comment">// x = 1024 return 2048</span></div>
+<div class="line"><span class="lineno">   89</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a4b76571a2a04fa99c30a96eca9997f0e">bit_manipulation::next_higher_number</a>(1024) == 2048);</div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All test cases have successfully passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   92</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="anamespacebit__manipulation_html_a4b76571a2a04fa99c30a96eca9997f0e"><div class="ttname"><a href="../../d7/d81/namespacebit__manipulation.html#a4b76571a2a04fa99c30a96eca9997f0e">bit_manipulation::next_higher_number</a></div><div class="ttdeci">uint64_t next_higher_number(uint64_t x)</div><div class="ttdoc">The main function implements checking the next number.</div><div class="ttdef"><b>Definition</b> next_higher_number_with_same_number_of_set_bits.cpp:31</div></div>
+<div class="ttc" id="anamespacebit__manipulation_html_a4b76571a2a04fa99c30a96eca9997f0e"><div class="ttname"><a href="../../d7/d81/namespacebit__manipulation.html#a4b76571a2a04fa99c30a96eca9997f0e">bit_manipulation::next_higher_number</a></div><div class="ttdeci">uint64_t next_higher_number(uint64_t x)</div><div class="ttdoc">The main function implements checking the next number.</div><div class="ttdef"><b>Definition</b> next_higher_number_with_same_number_of_set_bits.cpp:32</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

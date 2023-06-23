@@ -73,7 +73,7 @@ var searchData=
   ['approximate_5fpi_70',['approximate_pi',['../dd/d47/namespacemath.html#abf7f2a6d91f1ca6c89698792aea3f188',1,'math']]],
   ['approximate_5fpi_2ecpp_71',['approximate_pi.cpp',['../d0/d51/approximate__pi_8cpp.html',1,'']]],
   ['are_5falmost_5fequal_72',['are_almost_equal',['../d0/d6f/namespaceothers.html#aa17dc6d061dff34f6b9a610bc5e26703',1,'others']]],
-  ['are_5famicable_73',['are_amicable',['../d5/df6/check__amicable__pair_8cpp.html#afeb67e204ec7de02ad152c11df4d1e01',1,'check_amicable_pair.cpp']]],
+  ['are_5famicable_73',['are_amicable',['../dd/d47/namespacemath.html#a8e6eede206201db0d1dbb618fa969bec',1,'math']]],
   ['area_2ecpp_74',['area.cpp',['../dc/d82/area_8cpp.html',1,'']]],
   ['arg_75',['arg',['../da/d5a/class_complex.html#ae1e03712837450549e0c9b4017533a41',1,'Complex']]],
   ['argmax_76',['argmax',['../d8/d77/namespacemachine__learning.html#a50480fccfb39de20ca47f1bf51ecb6ec',1,'machine_learning']]],

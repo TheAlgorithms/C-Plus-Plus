@@ -148,9 +148,9 @@ var NAVTREEINDEX =
 "d9/d89/fibonacci_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
 "da/dd3/namespacespirograph.html#a8e83a64e8443fff1e5ffdc1c299c1e99",
 "dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#aedbe01e48a96fefa0b393ec577b0f19e",
-"dd/d47/namespacemath.html#ab31d141f7c5b551746b1eee0eb4dedca",
-"de/dd1/segment__tree_8cpp.html",
-"globals_func_j.html"
+"dd/d47/namespacemath.html#aacb1411ef2029e81f249c21e17c96fdb",
+"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#adb2b6be741b0500ee75d89b6d06b5d50",
+"globals_func_h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

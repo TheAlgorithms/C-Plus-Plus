@@ -1,7 +1,7 @@
 var check__amicable__pair_8cpp =
 [
-    [ "are_amicable", "d5/df6/check__amicable__pair_8cpp.html#afeb67e204ec7de02ad152c11df4d1e01", null ],
+    [ "are_amicable", "d5/df6/check__amicable__pair_8cpp.html#a8e6eede206201db0d1dbb618fa969bec", null ],
     [ "main", "d5/df6/check__amicable__pair_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ],
-    [ "sum_of_divisor", "d5/df6/check__amicable__pair_8cpp.html#ac656a51b4c3bd7d63b7dcc75dc3e5576", null ],
-    [ "test", "d5/df6/check__amicable__pair_8cpp.html#ae1a3968e7947464bee7714f6d43b7002", null ]
+    [ "sum_of_divisor", "d5/df6/check__amicable__pair_8cpp.html#af05567415a9ea36c254b54e3d5a2152a", null ],
+    [ "tests", "d5/df6/check__amicable__pair_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e", null ]
 ];
