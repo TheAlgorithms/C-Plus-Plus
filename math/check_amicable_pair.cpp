@@ -1,26 +1,36 @@
 /**
- *
  * @file
- * \brief A C++ Program to check whether a pair of number is [amicable
+ * @brief A C++ Program to check whether a pair of numbers is an [amicable
  * pair](https://en.wikipedia.org/wiki/Amicable_numbers) or not.
  *
- * \details
- * Amicable Pair are two positive integers such that sum of the proper divisor
- * of each number is equal to the other number.
- * @author iamnambiar
+ * @details
+ * An Amicable Pair is two positive integers such that the sum of the proper
+ * divisor for each number is equal to the other number.
+ *
+ * @note Remember that a proper divisor is any positive whole number that
+ * divides into a selected number, apart from the selected number itself, and
+ * returns a positive integer. for example 1, 2 and  5 are all proper divisors
+ * of 10.
+ *
+ * @author [iamnambiar](https://github.com/iamnambiar)
  */
-#include <cassert>
-#include <iostream>
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
 
 /**
- * Function to calculate the sum of all the proper divisor
+ * @brief Mathematical algorithms
+ * @namespace
+ */
+namespace math {
+/**
+ * @brief Function to calculate the sum of all the proper divisor
  * of an integer.
- * @param num First number.
+ * @param num selected number.
  * @return Sum of the proper divisor of the number.
  */
 int sum_of_divisor(int num) {
     // Variable to store the sum of all proper divisors.
-    int sum = 0;
+    int sum = 1;
     // Below loop condition helps to reduce Time complexity by a factor of
     // square root of the number.
     for (int div = 2; div * div <= num; ++div) {
@@ -35,11 +45,11 @@ int sum_of_divisor(int num) {
             }
         }
     }
-    return sum + 1;
+    return sum;
 }
 
 /**
- * Function to check whether the pair is amicable or not.
+ * @brief Function to check whether the pair is amicable or not.
  * @param x First number.
  * @param y Second number.
  * @return `true` if the pair is amicable
@@ -48,25 +58,27 @@ int sum_of_divisor(int num) {
 bool are_amicable(int x, int y) {
     return (sum_of_divisor(x) == y) && (sum_of_divisor(y) == x);
 }
+}  // namespace math
 
 /**
- * Function for testing the is_amicable() with
- * all the test cases.
+ * @brief Self-test implementations
+ * @returns void
  */
-void test() {
-    // are_amicable(220, 284) returns true.
-    assert(are_amicable(220, 284) == true);
-    // are_amicable(6232, 6368) returns true.
-    assert(are_amicable(6368, 6232) == true);
-    // are_amicable(458, 232) returns false.
-    assert(are_amicable(458, 232) == false);
+static void tests() {
+    assert(math::are_amicable(220, 284) == true);
+    assert(math::are_amicable(6368, 6232) == true);
+    assert(math::are_amicable(458, 232) == false);
+    assert(math::are_amicable(17296, 18416) == true);
+    assert(math::are_amicable(18416, 17296) == true);
+
+    std::cout << "All tests have successfully passed!" << std::endl;
 }
 
 /**
- * Main Function
+ * @brief Main function
+ * @returns 0 on exit
  */
 int main() {
-    test();
-    std::cout << "Assertion Success." << std::endl;
+    tests();  // perform self-tests implementations
     return 0;
 }
