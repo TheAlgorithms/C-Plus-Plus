@@ -11,13 +11,13 @@ class Graph {
 
     // Constructs a graph with V vertices and E edges
     Graph(const int V) {
-        // initializes the array edges.
+        // Initialize the array edges.
         this->edges = new int *[V];
         for (int i = 0; i < V; i++) {
             edges[i] = new int[V];
         }
 
-        // fills the array with zeros.
+        // Fills the array with zeros.
         for (int i = 0; i < V; i++) {
             for (int j = 0; j < V; j++) {
                 edges[i][j] = 0;
@@ -27,12 +27,13 @@ class Graph {
         this->vertexNum = V;
     }
 
-    // Adds the given edge to the graph
+    // Adds an edge to the graph
     void addEdge(int src, int dst, int weight) {
         this->edges[src][dst] = weight;
     }
 };
-// Utility function to find minimum distance vertex in mdist
+
+// Utility function to find the vertex with the minimum distance in mdist[]
 int minDistance(int mdist[], bool vset[], int V) {
     int minVal = INT_MAX, minInd = 0;
     for (int i = 0; i < V; i++) {
@@ -56,14 +57,13 @@ void print(int dist[], int V) {
     }
 }
 
-// The main function that finds the shortest path from given source
-// to all other vertices using Dijkstra's Algorithm.It doesn't work on negative
-// weights
+
+// Finds the shortest path from the given source to all other vertices using Dijkstra's Algorithm.
+// Note: It doesn't work with negative weights.
 void Dijkstra(Graph graph, int src) {
     int V = graph.vertexNum;
     int mdist[V];  // Stores updated distances to vertex
-    bool vset[V];  // vset[i] is true if the vertex i included
-    // in the shortest path tree
+    bool vset[V];  // vset[i] is true if the vertex i is included in the shortest path tree 
 
     // Initialise mdist and vset. Set distance of source as zero
     for (int i = 0; i < V; i++) {
@@ -98,7 +98,11 @@ int main() {
     cin >> V;
     cout << "Enter number of edges: ";
     cin >> E;
+
+    // Create a graph object
     Graph G(V);
+
+    // Input edges and weights
     for (int i = 0; i < E; i++) {
         cout << "\nEdge " << i + 1 << "\nEnter source: ";
         cin >> src;
@@ -107,7 +111,7 @@ int main() {
         cout << "Enter weight: ";
         cin >> weight;
 
-        // makes sure source and destination are in the proper bounds.
+        // Check if source and destination are within bounds
         if (src >= 0 && src < V && dst >= 0 && dst < V) {
             G.addEdge(src, dst, weight);
         } else {
