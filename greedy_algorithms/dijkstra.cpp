@@ -42,7 +42,14 @@ class Graph {
     }
 };
 
-// Utility function to find the vertex with the minimum distance in mdist[]
+/**
+ * @brief Finds the vertex with the minimum distance in mdist[].
+ * 
+ * @param mdist Array of distances to each vertex.
+ * @param vset Array indicating inclusion in the shortest path tree.
+ * @param V Number of vertices in the graph.
+ * @return Index of the vertex with the minimum distance.
+ */
 int minDistance(int mdist[], bool vset[], int V) {
     int minVal = INT_MAX, minInd = 0;
     for (int i = 0; i < V; i++) {
