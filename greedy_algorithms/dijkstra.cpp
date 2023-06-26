@@ -83,8 +83,15 @@ void print(int dist[], int V) {
 }
 
 
-// Finds the shortest path from the given source to all other vertices using Dijkstra's Algorithm.
-// Note: It doesn't work with negative weights.
+/**
+ * @brief Finds the shortest path from the given source to all other vertices using Dijkstra's Algorithm.
+ * 
+ * Note: This implementation doesn't work with negative weights.
+ * 
+ * @param graph The graph object representing the graph.
+ * @param src The source vertex.
+ * @return void
+ */
 void Dijkstra(Graph graph, int src) {
     int V = graph.vertexNum;
     int mdist[V];  // Stores updated distances to vertex
