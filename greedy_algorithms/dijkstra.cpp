@@ -43,7 +43,7 @@ class Graph {
 };
 
 /**
- * @brief Finds the vertex with the minimum distance in mdist[].
+ * @brief Utility function that finds the vertex with the minimum distance in mdist[].
  * 
  * @param mdist Array of distances to each vertex.
  * @param vset Array indicating inclusion in the shortest path tree.
@@ -62,7 +62,16 @@ int minDistance(int mdist[], bool vset[], int V) {
     return minInd;
 }
 
-// Utility function to print distances
+/**
+ * @brief Utility function to print the distances to vertices.
+ * 
+ * This function prints the distances to each vertex in a tabular format. If the distance is
+ * equal to INT_MAX, it is displayed as "INF".
+ * 
+ * @param dist An array representing the distances to each vertex.
+ * @param V The number of vertices in the graph.
+ * @return void
+ */
 void print(int dist[], int V) {
     cout << "\nVertex  Distance" << endl;
     for (int i = 0; i < V; i++) {
