@@ -9,7 +9,10 @@ class Graph {
     int vertexNum;
     int **edges;
 
-    // Constructs a graph with V vertices and E edges
+    /**
+     * @brief Constructs a graph
+     * @param V number of vertices of the graph
+     */
     Graph(const int V) {
         // Initialize the array edges.
         this->edges = new int *[V];
