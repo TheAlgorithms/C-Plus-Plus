@@ -27,7 +27,13 @@ class Graph {
         this->vertexNum = V;
     }
 
-    // Adds an edge to the graph
+    /** 
+     * @brief Adds an edge to the graph
+     * @param src the graph the edge should be added to
+     * @param dst the position where the edge should be added to
+     * @param weight the weight of the edge that should be added
+     * @returns void
+     */
     void addEdge(int src, int dst, int weight) {
         this->edges[src][dst] = weight;
     }
