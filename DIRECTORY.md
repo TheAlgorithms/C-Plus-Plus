@@ -20,6 +20,7 @@
   * [Count Of Trailing Ciphers In Factorial N](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/count_of_trailing_ciphers_in_factorial_n.cpp)
   * [Find Non Repeating Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/find_non_repeating_number.cpp)
   * [Hamming Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/hamming_distance.cpp)
+  * [next higher number with same number of set bits](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/next_higher_number_with_same_number_of_set_bits.cpp)
   * [Power Of 2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/power_of_2.cpp)
   * [Set Kth Bit](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/set_kth_bit.cpp)
   * [Travelling Salesman Using Bit Manipulation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/travelling_salesman_using_bit_manipulation.cpp)
@@ -120,6 +121,9 @@
   * [Tree Height](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/tree_height.cpp)
   * [Word Break](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/word_break.cpp)
 
+## Games
+  * [Memory Game](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/games/memory_game.cpp)
+
 ## Geometry
   * [Graham Scan Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/geometry/graham_scan_algorithm.cpp)
   * [Graham Scan Functions](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/geometry/graham_scan_functions.hpp)
@@ -168,6 +172,7 @@
   * [Md5](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/hashing/md5.cpp)
   * [Quadratic Probing Hash Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/hashing/quadratic_probing_hash_table.cpp)
   * [Sha1](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/hashing/sha1.cpp)
+  * [Sha256](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/hashing/sha256.cpp)
 
 ## Machine Learning
   * [A Star Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/machine_learning/a_star_search.cpp)
@@ -289,6 +294,7 @@
   * [Happy Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/happy_number.cpp)
   * [Iterative Tree Traversals](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/iterative_tree_traversals.cpp)
   * [Kadanes3](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/kadanes3.cpp)
+  * [Kelvin To Celsius](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/kelvin_to_celsius.cpp)
   * [Lru Cache](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/lru_cache.cpp)
   * [Matrix Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/matrix_exponentiation.cpp)
   * [Palindrome Of Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/palindrome_of_number.cpp)
