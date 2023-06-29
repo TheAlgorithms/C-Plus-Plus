@@ -123,6 +123,7 @@ class RedBlackTree {
     /**
      * @brief returns size of red black tree
      *
+     * @return number of nodes/items in red black tree
      */
     uint64_t Size() { return numItems; }
 
