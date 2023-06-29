@@ -5,8 +5,11 @@
  * @brief A Red-Black Tree (RBT) program with test cases.
  * @version 0.1
  * @date 2022-12-29
- *
+ * 
  * Copyright (no copyright)
+ * 
+ * @description A program simulating the Red Black Tree algorithm
+ * using helper functions with descriptive function names and annotations.
  */
 
 #include <cassert>   /// for assert
