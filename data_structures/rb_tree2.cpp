@@ -380,9 +380,8 @@ class RedBlackTree {
      * (left left, left right, right right, right left) to
      * fix double-blackness issue in tree.
      *
-     * *Note: Assumed that the parameters given will be correct for this
-     * function's specific
-     * use.
+     * @note Assumed that the parameters given will be correct for this
+     * function's specific use.
      *
      * @param replacement the double-black node that replaces the node to
      * delete in tree
@@ -437,15 +436,24 @@ class RedBlackTree {
         replacement->color--;
     }
 
-    // shift node colors in this rotated subtree to
-    // the right (left to parent to right) - after left rotate
+    /**
+     * @brief shift node colors in this rotated subtree to
+     * the right (left to parent to right) - after left rotate
+     * 
+     * @param sibling 
+     */
     void ShiftColorsRight(RBTNode* sibling) {
         sibling->right->color = sibling->color;
         sibling->color = sibling->left->color;
         sibling->left->color = COLOR_BLACK;
     }
-    // shift node colors in rotated subtree to the
-    // left (right to parent to left) - after right rotate
+
+    /**
+     * @brief shift node colors in rotated subtree to the
+     * left (right to parent to left) - after right rotate
+     * 
+     * @param sibling 
+     */
     void ShiftColorsLeft(RBTNode* sibling) {
         sibling->left->color = sibling->color;
         sibling->color = sibling->right->color;
@@ -548,8 +556,12 @@ class RedBlackTree {
         }
     }
 
-    // Rotate left w/ respect to parent node
-    // (in a grandparent, parent, child tree case)
+    /**
+     * @brief Rotate left w/ respect to parent node
+     * (in a grandparent, parent, child tree case)
+     * 
+     * @param node 
+     */
     void RotateLeft(RBTNode* node) {
         // to connect rotated subtree to rest of tree
         RBTNode* great_grandparent = node->parent->parent;
@@ -593,8 +605,12 @@ class RedBlackTree {
         grandparent->right = parent_left;
     }
 
-    // Rotate right w/ respect to parent (in a grandparent, parent,
-    // child tree case)
+    /**
+     * @brief Rotate right w/ respect to parent (in a grandparent, parent,
+     * child tree case)
+     * 
+     * @param node 
+     */
     void RotateRight(RBTNode* node) {
         // stores *original* locations of memory for these pointers?
         RBTNode* great_grandparent = node->parent->parent;
