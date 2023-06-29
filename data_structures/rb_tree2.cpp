@@ -364,8 +364,7 @@ class RedBlackTree {
      * @brief Checks if passed node has a red child.
      *
      * @param n
-     * @return true
-     * @return false
+     * @return true if the node has a red child, false otherwise
      */
     bool has_red_child(RBTNode* n) {
         RBTNode* n_left = n->left;
