@@ -99,7 +99,7 @@ class RedBlackTree {
         }
     }
 
-    // TODO(brennandoubt): copy assignment operator
+    // @todo implement copy assignment operator
     RedBlackTree& operator=(const RedBlackTree &other) {
         // handling if user assigns object to itself (x = x)
         if (&other != this) {
@@ -130,21 +130,21 @@ class RedBlackTree {
     /**
      * @brief Tree in infix notation
      *
-     * @return string
+     * @return string representing tree nodes in infix order
      */
     string ToInfixString() const { return ToInfixString(root); }
 
     /**
      * @brief Tree in prefix notation
      *
-     * @return string
+     * @return string representing tree nodes in prefix order
      */
     string ToPrefixString() const { return ToPrefixString(root); }
 
     /**
      * @brief Tree in postfix notation
      *
-     * @return string
+     * @return string representing tree nodes in postfix order
      */
     string ToPostfixString() const { return ToPostfixString(root); }
 
@@ -363,7 +363,7 @@ class RedBlackTree {
     /**
      * @brief Checks if passed node has a red child.
      *
-     * @param n
+     * @param n the tree node to check
      * @return true if the node has a red child, false otherwise
      */
     bool has_red_child(RBTNode* n) {
@@ -437,10 +437,10 @@ class RedBlackTree {
     }
 
     /**
-     * @brief shift node colors in this rotated subtree to
+     * @brief Shifts node colors in this rotated subtree to
      * the right (left to parent to right) - after left rotate
      * 
-     * @param sibling 
+     * @param sibling the sibling node to be shifted
      */
     void ShiftColorsRight(RBTNode* sibling) {
         sibling->right->color = sibling->color;
@@ -452,7 +452,7 @@ class RedBlackTree {
      * @brief shift node colors in rotated subtree to the
      * left (right to parent to left) - after right rotate
      * 
-     * @param sibling 
+     * @param sibling the node where the colors are shifted
      */
     void ShiftColorsLeft(RBTNode* sibling) {
         sibling->left->color = sibling->color;
@@ -560,7 +560,7 @@ class RedBlackTree {
      * @brief Rotate left w/ respect to parent node
      * (in a grandparent, parent, child tree case)
      * 
-     * @param node 
+     * @param node the parent node where the rotation occurs
      */
     void RotateLeft(RBTNode* node) {
         // to connect rotated subtree to rest of tree
@@ -586,8 +586,8 @@ class RedBlackTree {
             this->root = node;
         }
 
-        // 2: store parent's original right child pointer,
-        // will be moved to grandparent's left after
+        // 2: store parent's original left child pointer,
+        // will be moved to grandparent's right after
         // rotation to complete "hop over"
         RBTNode* parent_left = node->left;
 
@@ -606,10 +606,10 @@ class RedBlackTree {
     }
 
     /**
-     * @brief Rotate right w/ respect to parent (in a grandparent, parent,
-     * child tree case)
+     * @brief Rotate right w/ respect to parent
+     * (in a grandparent, parent, child tree case)
      * 
-     * @param node 
+     * @param node the parent node where the rotation occurs
      */
     void RotateRight(RBTNode* node) {
         // stores *original* locations of memory for these pointers?
@@ -664,7 +664,8 @@ class RedBlackTree {
      * 3) right left: Rotate right then left, Recolor
      * 4) right right: Rotate left, Recolor
      *
-     * @param node
+     * @param node the node where rotation occurs based on
+     * its tree location and surrounding nodes
      */
     void ConditionalRotate(RBTNode* node) {
         // pointer variables for checking tree cases
@@ -841,8 +842,8 @@ class RedBlackTree {
     /**
      * @brief Checks for and returns sibling of passed node.
      *
-     * @param node
-     * @return RBTNode*&
+     * @param node the node to get the sibling of
+     * @return RBTNode*& the sibling of the passed node (if it exists)
      */
     RBTNode*& GetSibling(RBTNode* node) {
         if (node == root) {
@@ -868,7 +869,8 @@ class RedBlackTree {
      * @brief ToInfixString (private impl) -- print left, print root,
      * print right
      *
-     * @param node
+     * @param node the top node where an infix string
+     * is recursively generated from it and its children
      * @return string
      */
     string ToInfixString(struct RBTNode* node) const {
@@ -898,7 +900,8 @@ class RedBlackTree {
      * @brief ToPrefixString (private impl) -- prints node, then left,
      * then right
      *
-     * @param node
+     * @param node the top node where a prefix string
+     * is recursively generated from it and its children
      * @return string
      */
     string ToPrefixString(struct RBTNode* node) const {
@@ -924,7 +927,8 @@ class RedBlackTree {
      * @brief ToPostfixString (private impl) -- prints left, then right,
      * then node
      *
-     * @param node
+     * @param node the top node where a postfix string
+     * is generated from it and its children
      * @return string
      */
     string ToPostfixString(struct RBTNode* node) const {
