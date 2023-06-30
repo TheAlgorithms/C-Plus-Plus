@@ -8,7 +8,7 @@
  * 
  * Copyright (no copyright)
  * 
- * @description A program simulating the Red Black Tree algorithm
+ * @details A program simulating the Red Black Tree algorithm
  * using helper functions with descriptive function names and annotations.
  */
 
@@ -96,27 +96,6 @@ class RedBlackTree {
         // they were inserted into the original tree
         for (int n : rbt.nodes_order_added) {
             this->Insert(n);
-        }
-    }
-
-    // @todo implement copy assignment operator
-    RedBlackTree& operator=(const RedBlackTree &other) {
-        // handling if user assigns object to itself (x = x)
-        if (&other != this) {
-            // empty this tree (except root)
-            if (root != nullptr) {
-                PostDelete(root->left);
-                PostDelete(root->right);
-            }
-
-            // update root node with other tree's root data
-            this->root = nullptr;
-            this->numItems = 0;
-
-            // insert nodes from other tree
-            for (int n : other.nodes_order_added) {
-                this->Insert(n);
-            }
         }
     }
 
@@ -871,7 +850,7 @@ class RedBlackTree {
      *
      * @param node the top node where an infix string
      * is recursively generated from it and its children
-     * @return string
+     * @return string representing tree in infix notation
      */
     string ToInfixString(struct RBTNode* node) const {
         ostringstream nodeOSS;
@@ -902,7 +881,7 @@ class RedBlackTree {
      *
      * @param node the top node where a prefix string
      * is recursively generated from it and its children
-     * @return string
+     * @return string representing tree in prefix notation
      */
     string ToPrefixString(struct RBTNode* node) const {
         ostringstream nodeOSS;
@@ -929,7 +908,7 @@ class RedBlackTree {
      *
      * @param node the top node where a postfix string
      * is generated from it and its children
-     * @return string
+     * @return string representing tree in postfix notation
      */
     string ToPostfixString(struct RBTNode* node) const {
         ostringstream nodeOSS;
@@ -1012,7 +991,6 @@ void TestInsertThirdNode() {
     rbt->Insert(30);
     rbt->Insert(15);
     rbt->Insert(10);  // Left Left
-    // cout << "rbt: "  << rbt->ToPrefixString() << endl;
 
     // ROTATE RIGHT ONCE
     assert(rbt->ToPrefixString() == " B15  R10  R30 ");
@@ -1022,7 +1000,6 @@ void TestInsertThirdNode() {
     rbt->Insert(30);
     rbt->Insert(15);
     rbt->Insert(25);  // Left right
-    // cout << "rbt: "  << rbt->ToPrefixString() << endl;
 
     // ROTATE ONCE RIGHT ON PARENT THEN ONCE LEFT ON GRANDPARENT
     assert(rbt->ToPrefixString() == " B25  R15  R30 ");
@@ -1036,9 +1013,6 @@ void TestInsertThirdNode() {
     // NODES ON EITHER SIDE AND PARENT IS BLACK, SO NO ROTATION OR RECOLOR
     assert(rbt->ToPrefixString() == " B30  R15  R45 ");
     delete rbt;
-
-    // more tests go here
-    // consider some symmetry!
 
     rbt = new RedBlackTree();
     rbt->Insert(75);
@@ -1082,7 +1056,6 @@ void TestInsertFourthNode() {
     rbt2.Insert(21984);
     rbt2.Insert(2);
 
-    // cout << "rbt2: " << rbt2.ToPrefixString() << endl;
     assert(rbt2.ToPrefixString() == " B76  B34  R2  B21984 ");
 
     cout << "PASSED!" << endl << endl;
@@ -1100,7 +1073,7 @@ void TestInsertFifthNode() {
     rbt->Insert(45);
     rbt->Insert(10);
     rbt->Insert(25);
-    // cout << "result: "  << rbt->ToPrefixString() << endl;
+
     assert(rbt->ToPrefixString() == " B30  B15  R10  R25  B45 ");
     delete rbt;
 
@@ -1110,7 +1083,7 @@ void TestInsertFifthNode() {
     rbt2.Insert(31);
     rbt2.Insert(11);
     rbt2.Insert(-87);
-    // cout << "rbt2: " << rbt2.ToPrefixString() << endl;
+
     assert(rbt2.ToPrefixString() == " B91  B11  R-87  R31  B783 ");
 
     cout << "PASSED!" << endl << endl;
@@ -1155,33 +1128,24 @@ void TestInsertRandomTests() {
     rbt->Insert(20);
     rbt->Insert(12);
     cout << endl;
-    // cout << "tree: " << rbt->ToInfixString() << endl;
+
     delete rbt;
 
     rbt = new RedBlackTree();
-    // cout << endl << "NEW TREE" << endl;
+
     rbt->Insert(12);
-    // cout << "tree: "  << rbt->ToInfixString() << endl;
     rbt->Insert(11);
-    // cout << "tree: "  << rbt->ToInfixString() << endl;
     rbt->Insert(15);
-    // cout << "tree: "  << rbt->ToInfixString() << endl;
     rbt->Insert(5);
-    // cout << "tree: "  << rbt->ToInfixString() << endl;
     rbt->Insert(13);
-    // cout << "tree: "  << rbt->ToInfixString() << endl;
     rbt->Insert(7);
-    // cout << "tree: "  << rbt->ToInfixString() << endl;
     delete rbt;
 
     rbt = new RedBlackTree();
-    // cout << endl << "NEW TREE" << endl;
+
     rbt->Insert(12);
-    // cout << "tree: "  << rbt->ToPrefixString() << endl;
     rbt->Insert(10);
-    // cout << "tree: "  << rbt->ToPrefixString() << endl;
     rbt->Insert(8);
-    // cout << "tree: "  << rbt->ToPrefixString() << endl;
     delete rbt;
 
     cout << "PASSED!" << endl << endl;
@@ -1232,7 +1196,6 @@ void TestContains() {
     rbt->Insert(17);
     rbt->Insert(29);
     rbt->Insert(34);
-    // cout << "rbt: " << rbt->ToInfixString() << endl;
 
     assert(rbt->Contains(34));
     delete rbt;
@@ -1263,7 +1226,6 @@ void TestGetMinimumMaximum() {
     rbt.Insert(21984);
     rbt.Insert(2);
 
-    // cout << "rbt: " << rbt.ToPrefixString() << endl;
     assert(rbt.GetMax() == 21984 && rbt.GetMin() == 2);
 
     cout << "PASSED!" << endl << endl;
@@ -1284,7 +1246,6 @@ void TestCopyConstructor2() {
     rbt1.Insert(31);
     rbt1.Insert(4);
 
-    // cout << "rbt: " << rbt1.ToPrefixString() << endl;
     assert(rbt1.ToPrefixString() == " B11  B9  R4  B31  R23  R52 ");
 
     RedBlackTree rbt2 = RedBlackTree(rbt1);
@@ -1325,7 +1286,7 @@ void TestCopyConstructor2() {
     rbt3.Insert(30);
     rbt3.Insert(64);
 
-    // **where left rotate on root occurs, but good here
+    // **where left rotate on root occurs
     // (root = B12, root left = R7, root right = R55)
     rbt3.Insert(69);
 
@@ -1334,7 +1295,6 @@ void TestCopyConstructor2() {
     rbt3.Insert(99);
     rbt3.Insert(89);
     rbt3.Insert(33);
-    // cout << "rbt: " << rbt3.ToPrefixString() << endl;
 
     assert(
         rbt3.ToPrefixString() ==
@@ -1376,16 +1336,17 @@ void TestInsertWithRecursiveFixUp() {
     rbt->Insert(100);  // visualization and prefix looks good up to here
     rbt->Insert(175);  // also looks good here
     rbt->Insert(160);  // does some weird stuff!
-    // cout << "rbt: " << rbt->ToPrefixString() << endl;
+
     assert(rbt->ToPrefixString() ==
            " B200  R150  B100  B175  "
            "R160  R400  B300  B800  R600  R900 ");
+
     rbt->Insert(185);
     rbt->Insert(180);  // does a recursive fix-up
+
     assert(rbt->ToPrefixString() ==
            " B200  B150  B100  R175  B160  "
            "B185  R180  B400  B300  B800  R600  R900 ");
-    // cout << "rbt: " << rbt->ToPrefixString() << endl;
     delete rbt;
 
     cout << "PASSED!" << endl << endl;
@@ -1601,25 +1562,21 @@ void RemoveTestRotateCase() {
            "  R6  R8  B14  R11  R17 ");
 
     rbt->Remove(1);  // simple remove on red leaf
-    // cout << "removing 1: " << rbt->ToPrefixString() << endl;
     assert(rbt->ToPrefixString() ==
            " B5  R3  B2  B4  R9  B7  R6"
            "  R8  B14  R11  R17 ");
 
     rbt->Insert(0);
-    // cout << "inserting 0: " << rbt->ToPrefixString() << endl;
     assert(rbt->ToPrefixString() ==
            " B5  R3  B2  R0  B4  R9  B7"
            "  R6  R8  B14  R11  R17 ");
 
     rbt->Insert(1);
-    // cout << "inserting 1: " << rbt->ToPrefixString() << endl;
     assert(rbt->ToPrefixString() ==
            " B5  R3  B1  R0  R2  B4  R9"
            "  B7  R6  R8  B14  R11  R17 ");
 
     rbt->Remove(0);  // another simple red leaf remove
-    // cout << "removing 0: " << rbt->ToPrefixString() << endl;
     assert(rbt->ToPrefixString() ==
            " B5  R3  B1  R2  B4  R9  B7"
            "  R6  R8  B14  R11  R17 ");
@@ -1633,7 +1590,6 @@ void RemoveTestRotateCase() {
            "  R8  B14  R11  R17 ");
 
     // removing 3 (recursive fix double black case)
-    // (*TRY LATER) -- PASSING NOW!! :)
     rbt->Remove(3);
     PrintTestLine("recursive double-black fix (removing 3)", rbt,
                   " B5  B2  R1  R9  B7  R6  R8  B14  R11  R17 ");
