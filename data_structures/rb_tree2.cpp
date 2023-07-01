@@ -1,15 +1,12 @@
 /**
  * @file
- * @author [Brennan Allen](https://github.com/brennandoubt)
- * (brennandoubt@gmail.com)
- * @brief A Red-Black Tree (RBT) program with test cases.
- * @version 0.1
- * @date 2022-12-29
- * 
- * Copyright (no copyright)
- * 
- * @details A program simulating the Red Black Tree algorithm
+ * @brief A Red Black Tree Program
+ * (https://www.cs.auckland.ac.nz/software/AlgAnim/red_black.html)
+ * @details
+ * A program simulating the Red Black Tree algorithm
  * using helper functions with descriptive function names and annotations.
+ * @author [Brennan Allen](https://github.com/brennandoubt)
+ * @see rb_tree.cpp
  */
 
 #include <cassert>   /// for assert
@@ -25,27 +22,25 @@ using std::ostringstream;
 using std::string;
 using std::vector;
 
-/// defining colors (const instead of defined macros)
+// defining colors
 const int COLOR_RED = 0;
 const int COLOR_BLACK = 1;
 const int COLOR_DOUBLE_BLACK = 2;
 
 /**
- * @brief Node struct for nodes inside the
- * red-black tree. Each node contains data for its color
- * (represented as a number), an integer value, and pointers to its
- * parent node and left and right child nodes.
- *
+ * @brief Node blueprint for red black tree
+ * @note
+ * Defines the structure of a node's contents in the
+ * tree. Each node contains a number representing its color,
+ * an integer value, and pointers to its
+ * parent and child nodes. Nodes are red by default.
  */
 struct RBTNode {
-    /// nodes are red by default
-    /// null/root/red's child nodes are recolored to black
     uint16_t color = COLOR_RED;
-    /// has int value to represent node itself (default 0)
+
     int val = 0;
 
-    /// has a parent and left/right child nodes
-    RBTNode* parent = nullptr;
+    RBTNode* parent = nullptr; //
     RBTNode* left = nullptr;
     RBTNode* right = nullptr;
 
@@ -55,8 +50,7 @@ struct RBTNode {
 class RedBlackTree {
  public:
     /**
-     * @brief Constructor - Initializes new Red Black Tree
-     *
+     * @brief Constructor for Red Black Tree
      */
     RedBlackTree() {
         root = nullptr;
@@ -64,13 +58,17 @@ class RedBlackTree {
     }
 
     /**
-     * @brief Deconstructor - calls helper PostDelete to
+     * @brief Deconstructor for Red Black Tree
+     * @note 
+     * PostDelete() used to
      * free Red Black Tree memory
-     *
      */
     ~RedBlackTree() { PostDelete(root); }
 
-    // Helper for deconstructor - delete nodes in post-order
+    /**
+     * @brief Deletes tree nodes through postorder traversal
+     * @param node the node where postorder traversal starts from
+     */
     void PostDelete(RBTNode* node) {
         // delete left then right (recursively)
         if (node != nullptr) {
@@ -82,56 +80,47 @@ class RedBlackTree {
     }
 
     /**
-     * @brief Constructs a new copy of the Red Black Tree passed
-     * to this function.
-     *
+     * @brief Makes this tree a copy of another tree
      * @param rbt the Red Black Tree to be copied
      */
     RedBlackTree(const RedBlackTree& rbt) {
-        // initialize tree first
+        // re-initialize tree
         this->root = nullptr;
         this->numItems = 0;
 
-        // insert nodes from passed tree in the same order
-        // they were inserted into the original tree
+        // insert tree nodes in same order as the copied tree
         for (int n : rbt.nodes_order_added) {
             this->Insert(n);
         }
     }
 
     /**
-     * @brief returns size of red black tree
-     *
-     * @return number of nodes/items in red black tree
+     * @brief Gives size of tree
+     * @return numItems number of nodes in tree
      */
     uint64_t Size() { return numItems; }
 
     /**
-     * @brief Tree in infix notation
-     *
+     * @brief Gives tree data in infix notation
      * @return string representing tree nodes in infix order
      */
     string ToInfixString() const { return ToInfixString(root); }
 
     /**
-     * @brief Tree in prefix notation
-     *
+     * @brief Gives tree data in prefix notation
      * @return string representing tree nodes in prefix order
      */
     string ToPrefixString() const { return ToPrefixString(root); }
 
     /**
-     * @brief Tree in postfix notation
-     *
+     * @brief Gives tree data in postfix notation
      * @return string representing tree nodes in postfix order
      */
     string ToPostfixString() const { return ToPostfixString(root); }
 
     /**
-     * @brief Inserts new node into tree with the
-     * value passed.
-     *
-     * @param value value of the new node
+     * @brief Inserts a new node into tree
+     * @param value integer value stored in the new node
      */
     void Insert(int value) {
         // check for duplicate keys
@@ -181,11 +170,14 @@ class RedBlackTree {
     }
 
     /**
-     * @brief Removes node from tree and checks/fixes tree to
-     * maintain RBT
-     * conditions.
-     *
-     * @param data value of the node to remove
+     * @brief Removes node from tree and re-balances as needed
+     * @note
+     * Re-balances tree by checking if
+     * red black tree conditions need to be fixed
+     * when removing the node. Node colors or pointers
+     * may need to change in order to maintain the necessary
+     * conditions for a red black tree after removal.
+     * @param data integer value of the node to remove
      */
     void Remove(int data) {
         RBTNode* node_to_delete = Find(data);
@@ -195,40 +187,34 @@ class RedBlackTree {
 
         // to check number of children the node to delete has
         unsigned int num_children = get_num_children(node_to_delete);
+
         // to check if node to delete is also the root node
         bool is_root = (node_to_delete == root);
 
-        // node to delete has two children -- update node with its
-        // IOS value and remove IOS node
         if (num_children == 2) {
             int ios_val = InOrderSuccessor(node_to_delete)->val;
             Remove(ios_val);
             node_to_delete->val = ios_val;
             return;
         } else if (num_children == 0) {
-            // node to delete has no children -- disconnect node from its parent
+            // disconnect node from parent if it has no children
 
-            // guard clause for if root is not the node to delete
             if (root != node_to_delete) {
                 node_to_delete->treatAsNull = true;
             } else {
-                // root replaced with a null pointer to empty tree
                 root = nullptr;
                 replacement_node = root;
             }
         } else if (num_children == 1) {
-            // node to delete has one child -- node's child moves up to replace
-            // deleted node
+            // replace node with its only child
 
-            // removing a root with one child
             if (is_root) {
-                // root replaced with root's child and root properties are reset
                 root = MeToOnlyChildPtr(node_to_delete);
                 root->parent = nullptr;
                 root->color = COLOR_BLACK;
                 replacement_node = root;
             } else {
-                // setting parent and child pointers for the node's one child
+                // update pointers for node's only child
                 ParentToMePtr(node_to_delete) =
                     MeToOnlyChildPtr(node_to_delete);
                 MeToOnlyChildPtr(node_to_delete)->parent =
@@ -237,44 +223,39 @@ class RedBlackTree {
             }
         }
 
-        // Now check Rotate/Recolor conditions...
+        // check rotate/recolor conditions
         if (root != nullptr) {
-            // a replacement node that's red or at the root just needs to be
-            // recolored black
             if (replacement_node == root ||
                 replacement_node->color == COLOR_RED) {
                 replacement_node->color = COLOR_BLACK;
             } else if (node_to_delete->color == COLOR_BLACK &&
                        (replacement_node->color == COLOR_BLACK ||
                         replacement_node->treatAsNull)) {
-                // deleted node was black and replacement node is black/null,
-                // causes
-                // double-blackness problem in tree that needs to be fixed
+                // fix double-blackness in tree
+
                 replacement_node->color = COLOR_DOUBLE_BLACK;
                 fix_double_black(replacement_node);
             }
         }
-        // if node to delete is a leaf, disconnect it from its parent after
-        // treating it as null to fix any double-blackness issues in tree
+
+        // node marked as null if it's a leaf
         if (node_to_delete->treatAsNull) {
+            // disconnect node from parent
             ParentToMePtr(node_to_delete) = nullptr;
         }
 
-        // finally delete node's memory and decrement tree size
         delete node_to_delete;
         numItems--;
     }
 
     /**
-     * @brief Returns the number of children for
-     * the given node (0, 1, or 2)
-     *
+     * @brief Gives the number of children a node has
      * @param node the tree node to check
-     * @return unsigned int number of children this node has
+     * @return unsigned int the number of children for this node
      */
     unsigned int get_num_children(RBTNode* node) {
-        // to check how many children the node has
         unsigned int num_children = 0;
+        
         if (node->left != nullptr)
             num_children++;
         if (node->right != nullptr)
@@ -284,9 +265,13 @@ class RedBlackTree {
     }
 
     /**
-     * @brief Fixes double-blackness issue caused by trying to remove
-     * a node from tree - to ensure each tree path has an equal number
-     * of black nodes (one of the properties of Red Black Trees).
+     * @brief Fixes double-blackness issue in tree
+     * 
+     * @note
+     * Double-blackness case can occur when removing a node
+     * from the red black tree. Fixing this case ensures each path
+     * in the tree will have an equal number of black nodes,
+     * a necessary condition for a red black tree.
      *
      * @param replacement_node the double-black node
      */
@@ -340,10 +325,9 @@ class RedBlackTree {
     }
 
     /**
-     * @brief Checks if passed node has a red child.
-     *
-     * @param n the tree node to check
-     * @return true if the node has a red child, false otherwise
+     * @brief Checks if a node has a red child
+     * @param n the node to check
+     * @returns true if node has a red child, false otherwise
      */
     bool has_red_child(RBTNode* n) {
         RBTNode* n_left = n->left;
@@ -355,23 +339,20 @@ class RedBlackTree {
     }
 
     /**
-     * @brief Rotates/recolors tree based on four sibling cases
-     * (left left, left right, right right, right left) to
-     * fix double-blackness issue in tree.
-     *
-     * @note Assumed that the parameters given will be correct for this
-     * function's specific use.
-     *
-     * @param replacement the double-black node that replaces the node to
-     * delete in tree
-     * @param sibling the sibling of double-black replacement node
+     * @brief Re-balances tree based on the double-black
+     * node and its sibling conditions
+     * @note 
+     * Assumed that parameters will be correct for this
+     * function's specific use. Tree nodes may be rotated
+     * or recolored to fix double-blackness.
+     * @param replacement the double-black tree node
+     * @param sibling the sibling of the double-black node
      */
     void CheckSiblingConditions(RBTNode* replacement, RBTNode* sibling) {
-        // need variables to check sibling's children individually
         RBTNode* s_left = sibling->left;
         RBTNode* s_right = sibling->right;
 
-        // left sibling
+        // check if sibling is the left child of its parent
         if (ParentToMePtr(sibling) == sibling->parent->left) {
             // left left: with left or 2 red kids
             if (s_left != nullptr && s_left->color == COLOR_RED) {
@@ -391,7 +372,7 @@ class RedBlackTree {
                 ShiftColorsLeft(sibling);
             }
         } else if (ParentToMePtr(sibling) == sibling->parent->right) {
-            // right sibling
+            // sibling is a right child of its parent
 
             // right right: with right or 2 red kids
             if (s_right != nullptr && s_right->color == COLOR_RED) {
@@ -416,10 +397,8 @@ class RedBlackTree {
     }
 
     /**
-     * @brief Shifts node colors in this rotated subtree to
-     * the right (left to parent to right) - after left rotate
-     * 
-     * @param sibling the sibling node to be shifted
+     * @brief Shifts colors of a node and its children to the right
+     * @param sibling the node where color shift occurs
      */
     void ShiftColorsRight(RBTNode* sibling) {
         sibling->right->color = sibling->color;
@@ -428,10 +407,11 @@ class RedBlackTree {
     }
 
     /**
-     * @brief shift node colors in rotated subtree to the
-     * left (right to parent to left) - after right rotate
-     * 
-     * @param sibling the node where the colors are shifted
+     * @brief Shifts colors of a node and its children to the left
+     * @note
+     * A left color shift is necessary after a right rotation occurs
+     * in the red black tree.
+     * @param sibling the node where color shift occurs
      */
     void ShiftColorsLeft(RBTNode* sibling) {
         sibling->left->color = sibling->color;
@@ -440,14 +420,14 @@ class RedBlackTree {
     }
 
     /**
-     * @brief Assuming node 'n' has only one valid child,
-     * check if it's a left/right child and
-     * return the pointer to it from parent node 'n'
+     * @brief Gives the pointer from a node to its only child
+     * @note
+     * Assuming node 'n' has only one valid child,
+     * this function checks if it's a left or right child and
+     * returns the pointer to it from parent node 'n'
      * (ex. returns 'n->left' or 'n->right')
-     *
      * @param n the node to get the child pointer for
-     * @return RBTNode*& the pointer from parent 'n'
-     * to its one non-null child
+     * @return RBTNode*& the node's pointer to its only child
      */
     RBTNode*& MeToOnlyChildPtr(RBTNode* n) {
         // check node has exactly one non-null child
@@ -469,12 +449,9 @@ class RedBlackTree {
     }
 
     /**
-     * @brief Finds whether node 'n' is a left or right child
-     * from its parent node.
-     *
-     * @param n the node to check whether its left or right
-     * @return RBTNode*& the parent pointer to 'n'
-     * (will point on either left or right side of parent node to get 'n')
+     * @brief Gives the pointer from a node's parent to itself
+     * @param n the node pointed to by its parent
+     * @return RBTNode*& the parent's pointer to the node
      */
     RBTNode*& ParentToMePtr(RBTNode* n) {
         RBTNode* p = n->parent;
@@ -491,10 +468,10 @@ class RedBlackTree {
     }
 
     /**
-     * @brief Checks and "fixes" tree after a new node is
-     * inserted to maintain Red Black Tree
-     * conditions (will Rotate and Recolor nodes as needed)
-     *
+     * @brief Re-balances tree after a new node is inserted
+     * @note
+     * Tree nodes may be rotated or recolored to
+     * maintain necessary conditions for red black tree.
      * @param node checks tree starting from this node (assumed
      * to be the node just inserted into tree) up to the root
      */
@@ -536,48 +513,33 @@ class RedBlackTree {
     }
 
     /**
-     * @brief Rotate left w/ respect to parent node
-     * (in a grandparent, parent, child tree case)
-     * 
-     * @param node the parent node where the rotation occurs
+     * @brief Rotates tree nodes left
+     * @note
+     * Rotation should occur with respect to the parent node
+     * in a grandparent-parent-child tree case.
+     * @param node the parent node where rotation occurs
      */
     void RotateLeft(RBTNode* node) {
-        // to connect rotated subtree to rest of tree
         RBTNode* great_grandparent = node->parent->parent;
         RBTNode* grandparent = node->parent;
 
-        // 1: change top node that will connect rotated
-        // subtree with rest of tree
-
-        // set new parent of rotated subtree to connect to rest of
-        // tree (great grandparent of original node)
         node->parent = great_grandparent;
         if (great_grandparent != nullptr) {
-            // now check if great_grandparent is < or > node to
-            // set its child pointer for node
             if (node->val <= great_grandparent->val) {
                 great_grandparent->left = node;
             } else if (node->val > great_grandparent->val) {
                 great_grandparent->right = node;
             }
         } else {
-            // parent will be new root if no great grandparent node in tree
+            // parent becomes root if there's no great grandparent node
             this->root = node;
         }
 
-        // 2: store parent's original left child pointer,
-        // will be moved to grandparent's right after
-        // rotation to complete "hop over"
         RBTNode* parent_left = node->left;
 
-        // 3: parent's left now points to grandparent
-        // (also setting parent pointer)
         grandparent->parent = node;
         node->left = grandparent;
 
-        // 4: override grandparent's right with its left (or
-        // parent's original left) (also check if nullptr in
-        // case parent pointer needs to be set)
         if (parent_left != nullptr) {
             parent_left->parent = grandparent;
         }
@@ -585,48 +547,33 @@ class RedBlackTree {
     }
 
     /**
-     * @brief Rotate right w/ respect to parent
-     * (in a grandparent, parent, child tree case)
-     * 
-     * @param node the parent node where the rotation occurs
+     * @brief Rotates tree nodes right
+     * @note
+     * Rotation should occur with respect to the parent node
+     * in a grandparent-parent-child tree case.
+     * @param node the parent node where rotation occurs
      */
     void RotateRight(RBTNode* node) {
-        // stores *original* locations of memory for these pointers?
         RBTNode* great_grandparent = node->parent->parent;
         RBTNode* grandparent = node->parent;
 
-        // 1: change top node that will connect rotated subtree
-        // with rest of tree
-
-        // set new parent of rotated subtree to
-        // connect to rest of tree (great grandparent of original node)
         node->parent = great_grandparent;
         if (great_grandparent != nullptr) {
-            // now check if great_grandparent is < or > node
-            // to set its child pointer for node
             if (node->val <= great_grandparent->val) {
                 great_grandparent->left = node;
             } else if (node->val > great_grandparent->val) {
                 great_grandparent->right = node;
             }
         } else {
-            // parent will be new root if no great grandparent node in tree
+            // parent becomes the root if there's no great grandparent node
             this->root = node;
         }
 
-        // 2: store parent's original right child pointer,
-        // will be moved to grandparent's left after
-        // rotation to complete "hop over"
         RBTNode* parent_right = node->right;
 
-        // 3: parent's right now points to grandparent
-        // (also setting parent pointer)
         grandparent->parent = node;
         node->right = grandparent;
 
-        // 4: override grandparent's left with its right
-        // (or parent's original right) (also check if nullptr
-        //  in case parent pointer needs to be set)
         if (parent_right != nullptr) {
             parent_right->parent = grandparent;
         }
@@ -634,20 +581,17 @@ class RedBlackTree {
     }
 
     /**
-     * @brief Rotates tree/subtree based on specified
-     * conditions and positions of nodes
-     * (red parent, null/black parent sibling)
-     *
+     * @brief Rotates tree based on a node and its parent
+     * and grandparent positions
+     * @note
+     * Rotation Conditions
      * 1) left left: Rotate right, Recolor
      * 2) left right: Rotate left then right, Recolor
      * 3) right left: Rotate right then left, Recolor
      * 4) right right: Rotate left, Recolor
-     *
-     * @param node the node where rotation occurs based on
-     * its tree location and surrounding nodes
+     * @param node the tree node where rotation occurs
      */
     void ConditionalRotate(RBTNode* node) {
-        // pointer variables for checking tree cases
         RBTNode* parent_left = node->parent->left;
         RBTNode* parent_right = node->parent->right;
         RBTNode* grandparent_left = node->parent->parent->left;
@@ -657,14 +601,12 @@ class RedBlackTree {
         if (parent_left == node) {
             // left left
             if (grandparent_left == node->parent) {
-                // rotate right once on parent
+                // rotate right on parent
                 RotateRight(node->parent);
                 ColorSwap(node->parent, node->parent->right);
             }
             // right left
             if (grandparent_right == node->parent) {
-                // rotate right then left, then color swap with
-                // original child/node and grandparent
                 RotateRight(node);
                 RotateLeft(node);
                 ColorSwap(node, node->left);
@@ -674,17 +616,11 @@ class RedBlackTree {
         if (parent_right == node) {
             // right right
             if (grandparent_right == node->parent) {
-                // rotate left once on parent, color swap with
-                // original parent and original grandparent of node
                 RotateLeft(node->parent);
                 ColorSwap(node->parent, node->parent->left);
             }
             // left right
             if (grandparent_left == node->parent) {
-                // rotate left then right, color
-                // swap with new parent resulting from
-                // left rotate (also original child/node) and original
-                // grandparent/new parent of node after left rotate
                 RotateLeft(node);
                 RotateRight(node);
                 ColorSwap(node, node->right);
@@ -693,12 +629,12 @@ class RedBlackTree {
     }
 
     /**
-     * @brief Swaps colors of the two nodes passed
-     * to this function (assuming nodes will always be original parent
-     * and grandparent nodes of a rotated subtree).
-     *
-     * @param parent the parent node
-     * @param grandparent the grandparent node
+     * @brief Swaps the colors of two tree nodes
+     * @note
+     * Assumed that nodes will always be original parent
+     * and grandparent nodes of a rotated subtree.
+     * @param parent the rotated parent node
+     * @param grandparent the rotated grandparent node
      */
     void ColorSwap(RBTNode* parent, RBTNode* grandparent) {
         uint16_t gp_color = grandparent->color;
@@ -707,96 +643,88 @@ class RedBlackTree {
     }
 
     /**
-     * @brief Returns the in-order successor (IOS) of the passed
-     * node, used in remove() method.
-     *
+     * @brief Gives a node's in-order successor (IOS)
+     * @note
+     * This function is used in Remove().
      * @param node the node to get the IOS of
      * @return RBTNode* the IOS node
      */
     RBTNode* InOrderSuccessor(RBTNode* node) {
-        // starting from node passed
+        // begin traversal at the given node
         RBTNode* trav = node;
 
-        // try going right once
+        // go right once
         if (trav->right != nullptr) {
             trav = trav->right;
 
-            // then go left until at leftmost node
+            // go left until at leftmost node
             while (trav->left != nullptr) {
                 trav = trav->left;
             }
         }
+
         return trav;
     }
 
     /**
-     * @brief Checks if a node with the passed integer value is
-     * in the Red Black Tree.
-     *
+     * @brief Checks if a node with a given value is in the tree
      * @param value the value to check for
-     * @return true if the tree contains a node with this value
-     * @return false otherwise
+     * @return true if the tree contains a node with this value, false otherwise
      */
     bool Contains(int value) {
-        // tree not empty
         if (root != nullptr) {
-            // traversing through tree to find node
+
             RBTNode* trav = root;
+
             while (trav != nullptr) {
-                // node with passed value found
+                // node with the same value found in tree
                 if (trav->val == value) {
                     return true;
                 } else if (value < trav->val) {
-                    // binary search: value < tree value, go left
+                    // use binary search to efficiently traverse tree
                     trav = trav->left;
                 } else if (value > trav->val) {
-                    // value > tree value, go right
                     trav = trav->right;
                 }
             }
         }
-        // node not in tree or tree empty
+
+        // node not in tree or tree is empty
         return false;
     }
 
     /**
-     * @brief Traverses down the tree until/if a node with the passed
-     * integer value is found. Same as the Contains() method except this
-     * one returns the node found or throws an exception if not found.
-     *
+     * @brief Finds a node in the tree with a specified value.
+     * @note
+     * This function is the same as Contains() 
+     * except it returns the node found or throws
+     * an exception.
      * @param value the value of the node to search for
      * @return RBTNode* the node with this value
      */
     RBTNode* Find(int value) {
-        // tree not empty
         if (root != nullptr) {
-            // traversing through tree to find node
             RBTNode* trav = root;
             while (trav != nullptr) {
-                // node with passed value found
                 if (trav->val == value) {
                     return trav;
                 } else if (value < trav->val) {
-                    // binary search: value < tree value, go left
                     trav = trav->left;
                 } else if (value > trav->val) {
-                    // value > tree value, go right
                     trav = trav->right;
                 }
             }
         }
-        // reaches here if node not in tree
+        // reaches here if node not found in tree
         throw invalid_argument("Node not in tree.");
     }
 
     /**
-     * @brief Finds the node with the minimum value in tree.
-     *
-     * @return int the minimum value in the tree
+     * @brief Gives the minimum node value in tree.
+     * @return int the lowest value in the tree
      */
     int GetMin() {
-        // tree is balanced, so go left from root until
-        // at leftmost node in tree
+        // minimum value node will be at left end of the tree
         RBTNode* trav = root;
         while (trav->left != nullptr) {
             trav = trav->left;
@@ -805,9 +733,8 @@ class RedBlackTree {
     }
 
     /**
-     * @brief Returns mode with the maximum value in tree.
-     *
-     * @return int the maximum value in the tree
+     * @brief Gives the maximum node value in tree
+     * @return int the highest value in the tree
      */
     int GetMax() {
         // rightmost node in tree
@@ -819,10 +746,9 @@ class RedBlackTree {
     }
 
     /**
-     * @brief Checks for and returns sibling of passed node.
-     *
+     * @brief Gives the sibling of a node if one exists
      * @param node the node to get the sibling of
-     * @return RBTNode*& the sibling of the passed node (if it exists)
+     * @return RBTNode*& the sibling of the passed node
      */
     RBTNode*& GetSibling(RBTNode* node) {
         if (node == root) {
@@ -845,11 +771,9 @@ class RedBlackTree {
     vector<int> nodes_order_added;
 
     /**
-     * @brief ToInfixString (private impl) -- print left, print root,
-     * print right
-     *
-     * @param node the top node where an infix string
-     * is recursively generated from it and its children
+     * @brief Creates an infix string of tree
+     * @param node the top node where the string begins
+     * recursively generating down the tree
      * @return string representing tree in infix notation
      */
     string ToInfixString(struct RBTNode* node) const {
@@ -876,11 +800,9 @@ class RedBlackTree {
     }
 
     /**
-     * @brief ToPrefixString (private impl) -- prints node, then left,
-     * then right
-     *
-     * @param node the top node where a prefix string
-     * is recursively generated from it and its children
+     * @brief Creates a prefix string of tree
+     * @param node the top node where string
+     * begins recursively generating down the tree
      * @return string representing tree in prefix notation
      */
     string ToPrefixString(struct RBTNode* node) const {
@@ -903,11 +825,9 @@ class RedBlackTree {
     }
 
     /**
-     * @brief ToPostfixString (private impl) -- prints left, then right,
-     * then node
-     *
-     * @param node the top node where a postfix string
-     * is generated from it and its children
+     * @brief Creates a postfix string of tree
+     * @param node the top node where string
+     * begins recursively generating down the tree
      * @return string representing tree in postfix notation
      */
     string ToPostfixString(struct RBTNode* node) const {
