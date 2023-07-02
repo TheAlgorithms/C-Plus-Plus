@@ -29,7 +29,7 @@ const int COLOR_DOUBLE_BLACK = 2;
 
 /**
  * @brief Node blueprint for red black tree
- * @note
+ * @details
  * Defines the structure of a node's contents in the
  * tree. Each node contains a number representing its color,
  * an integer value, and pointers to its
@@ -47,6 +47,12 @@ struct RBTNode {
     bool treatAsNull = false;
 };
 
+/**
+ * @brief Red Black Tree data structure blueprint
+ * @details
+ * Defines a collection of functions and variables
+ * used to create a red black tree data structure.
+ */
 class RedBlackTree {
  public:
     /**
@@ -59,7 +65,7 @@ class RedBlackTree {
 
     /**
      * @brief Deconstructor for Red Black Tree
-     * @note 
+     * @details 
      * PostDelete() used to
      * free Red Black Tree memory
      */
@@ -171,7 +177,7 @@ class RedBlackTree {
 
     /**
      * @brief Removes node from tree and re-balances as needed
-     * @note
+     * @details
      * Re-balances tree by checking if
      * red black tree conditions need to be fixed
      * when removing the node. Node colors or pointers
@@ -266,13 +272,11 @@ class RedBlackTree {
 
     /**
      * @brief Fixes double-blackness issue in tree
-     * 
-     * @note
+     * @details
      * Double-blackness case can occur when removing a node
      * from the red black tree. Fixing this case ensures each path
      * in the tree will have an equal number of black nodes,
      * a necessary condition for a red black tree.
-     *
      * @param replacement_node the double-black node
      */
     void fix_double_black(RBTNode* replacement_node) {
@@ -327,7 +331,7 @@ class RedBlackTree {
     /**
      * @brief Checks if a node has a red child
      * @param n the node to check
-     * @returns true if node has a red child, false otherwise
+     * @return true if node has a red child, false otherwise
      */
     bool has_red_child(RBTNode* n) {
         RBTNode* n_left = n->left;
@@ -421,7 +425,7 @@ class RedBlackTree {
 
     /**
      * @brief Gives the pointer from a node to its only child
-     * @note
+     * @details
      * Assuming node 'n' has only one valid child,
      * this function checks if it's a left or right child and
      * returns the pointer to it from parent node 'n'
@@ -469,7 +473,7 @@ class RedBlackTree {
 
     /**
      * @brief Re-balances tree after a new node is inserted
-     * @note
+     * @details
      * Tree nodes may be rotated or recolored to
      * maintain necessary conditions for red black tree.
      * @param node checks tree starting from this node (assumed
@@ -583,7 +587,7 @@ class RedBlackTree {
     /**
      * @brief Rotates tree based on a node and its parent
      * and grandparent positions
-     * @note
+     * @details
      * Rotation Conditions
      * 1) left left: Rotate right, Recolor
      * 2) left right: Rotate left then right, Recolor
@@ -669,7 +673,8 @@ class RedBlackTree {
     /**
      * @brief Checks if a node with a given value is in the tree
      * @param value the value to check for
-     * @return true if the tree contains a node with this value, false otherwise
+     * @return true if the tree contains a node with this value
+     * @return false otherwise
      */
     bool Contains(int value) {
         if (root != nullptr) {
@@ -1642,9 +1647,9 @@ void tests() {
 
 /**
  * @brief main function to run tests
- * @return 0 with exit
+ * @return 0 with successful exit
  */
 int main() {
-    tests();
+    tests();  // run self-test implementations
     return 0;
 }
