@@ -13,8 +13,8 @@
  * denote a binomial coefficient, and are sometimes read as "n choose k." \f$ \binom{n}{k} \f$
  * therefore gives the number of k-subsets possible out of a set of n distinct
  * items. For example, The 2-subsets of {1,2,3,4} are the six pairs {1,2},
- * {1,3}, {1,4}, {2,3}, {2,4}, and {3,4}, so \f$ \binom{4}{2} =6.\f$ " [Another good
- * example/explanation](https://math.stackexchange.com/questions/2172355/probability-notation-two-numbers-stacked-inside-brackets)
+ * {1,3}, {1,4}, {2,3}, {2,4}, and {3,4}, so \f$ \binom{4}{2} =6.\f$"
+ * [Another good example/explanation](https://math.stackexchange.com/questions/2172355/probability-notation-two-numbers-stacked-inside-brackets)
  *
  * @note An identity of the binomial coefficient is \f$ \binom{n}{n-k} \f$ This is explained
  * partially in the comments of this implementation but in more detail at [Prof.
