@@ -40,7 +40,7 @@ struct RBTNode {
 
     int val = 0;
 
-    RBTNode* parent = nullptr; //
+    RBTNode* parent = nullptr;
     RBTNode* left = nullptr;
     RBTNode* right = nullptr;
 
@@ -255,7 +255,7 @@ class RedBlackTree {
      */
     unsigned int get_num_children(RBTNode* node) {
         unsigned int num_children = 0;
-        
+
         if (node->left != nullptr)
             num_children++;
         if (node->right != nullptr)
@@ -673,7 +673,6 @@ class RedBlackTree {
      */
     bool Contains(int value) {
         if (root != nullptr) {
-
             RBTNode* trav = root;
 
             while (trav != nullptr) {
@@ -852,7 +851,7 @@ class RedBlackTree {
 
 /**
  * @brief self-test by calling constructor
- * @returns void
+ * @return void
  */
 void TestSimpleConstructor() {
     cout << "Testing Simple Constructor... " << endl;
@@ -865,7 +864,7 @@ void TestSimpleConstructor() {
 
 /**
  * @brief simple insert of a value into tree
- * @returns void
+ * @return void
  */
 void TestInsertFirstNode() {
     cout << "Testing Insert One Node..." << endl;
@@ -879,7 +878,7 @@ void TestInsertFirstNode() {
 
 /**
  * @brief test inserting two values into tree
- * @returns void
+ * @return void
  */
 void TestInsertSecondNode() {
     cout << "Testing Insert Second Node..." << endl;
@@ -903,7 +902,7 @@ void TestInsertSecondNode() {
 /**
  * @brief test inserting three nodes into tree
  * (and making rotations occur)
- * @returns void
+ * @return void
  */
 void TestInsertThirdNode() {
     cout << "Testing Insert Third Node..." << endl;
@@ -955,7 +954,7 @@ void TestInsertThirdNode() {
 
 /**
  * @brief test inserting four values into tree
- * @returns void
+ * @return void
  */
 void TestInsertFourthNode() {
     cout << "Testing Insert Fourth Node..." << endl;
@@ -983,7 +982,7 @@ void TestInsertFourthNode() {
 
 /**
  * @brief test inserting five nodes into tree
- * @returns void
+ * @return void
  */
 void TestInsertFifthNode() {
     cout << "Testing Insert Fifth Node..." << endl;
@@ -1012,7 +1011,7 @@ void TestInsertFifthNode() {
 /**
  * @brief testing if string functions
  * return correct values
- * @returns void
+ * @return void
  */
 void TestToStrings() {
     cout << "Testing ToString Methods..." << endl;
@@ -1035,7 +1034,7 @@ void TestToStrings() {
 /**
  * @brief additional testing with inserts into tree
  * using different values
- * @returns void
+ * @return void
  */
 void TestInsertRandomTests() {
     cout << "Testing Random Insert Stuff..." << endl;
@@ -1074,7 +1073,7 @@ void TestInsertRandomTests() {
 /**
  * @brief testing copy constructor by
  * copying a tree
- * @returns void
+ * @return void
  */
 void TestCopyConstructor() {
     cout << "Testing Copy Constructor..." << endl;
@@ -1102,7 +1101,7 @@ void TestCopyConstructor() {
 /**
  * @brief testing if Contains() function correctly
  * determines if a value is in the tree
- * @returns void
+ * @return void
  */
 void TestContains() {
     cout << "Testing Contains..." << endl;
@@ -1134,7 +1133,7 @@ void TestContains() {
 /**
  * @brief testing GetMin(), GetMax() functions return
  * correct outputs
- * @returns void
+ * @return void
  */
 void TestGetMinimumMaximum() {
     cout << "Testing Get Minimum and Get Maximum..." << endl;
@@ -1153,7 +1152,7 @@ void TestGetMinimumMaximum() {
 
 /**
  * @brief additional testing of copy constructor
- * @returns void
+ * @return void
  */
 void TestCopyConstructor2() {
     cout << "Testing Copy Constructor..." << endl;
@@ -1240,7 +1239,7 @@ void TestCopyConstructor2() {
 /**
  * @brief testing if tree properly
  * balances out when inserting values
- * @returns void
+ * @return void
  */
 void TestInsertWithRecursiveFixUp() {
     cout << "Testing Recursive FixUp..." << endl;
@@ -1273,13 +1272,10 @@ void TestInsertWithRecursiveFixUp() {
 }
 
 /**
- * @brief helper for the test functions
- * in printing/evaluating their outputs
- *
+ * @brief Prints and evaluates test outputs
  * @param desc brief description of this test
  * @param rbt red black tree used for this test
- * @param exp_ans correct output for this test (to compare
- * with actual output)
+ * @param exp_ans correct output for this test
  */
 void PrintTestLine(string desc, const RedBlackTree* rbt, string exp_ans) {
     cout << desc << ": " << rbt->ToPrefixString() << endl;
@@ -1289,7 +1285,7 @@ void PrintTestLine(string desc, const RedBlackTree* rbt, string exp_ans) {
 /**
  * @brief testing removing values from tree
  * (removing a root node with one child)
- * @returns void
+ * @return void
  */
 void RemoveTest1() {
     cout << "Testing removing root (with one child)..." << endl;
@@ -1323,7 +1319,7 @@ void RemoveTest1() {
 /**
  * @brief additional testing of removing values
  * from tree (removing a leaf node)
- * @returns void
+ * @return void
  */
 void RemoveTest2() {
     cout << "Testing removing leaf..." << endl;
@@ -1351,7 +1347,7 @@ void RemoveTest2() {
 /**
  * @brief additional testing of removing values
  * from tree (removing node with two children)
- * @returns void
+ * @return void
  */
 void RemoveTest3() {
     cout << "Testing removing node with two children..." << endl;
@@ -1380,7 +1376,7 @@ void RemoveTest3() {
 /**
  * @brief additional testing of removing values
  * from tree (removing from a larger tree)
- * @returns void
+ * @return void
  */
 void RemoveTest4() {
     cout << "Removing from larger tree "
@@ -1418,7 +1414,7 @@ void RemoveTest4() {
 /**
  * @brief testing if tree properly
  * rotates after inserting certain values
- * @returns void
+ * @return void
  */
 void RemoveTestRotateCase() {
     cout << "Testing removing that requires double-black fix..." << endl;
@@ -1521,7 +1517,7 @@ void RemoveTestRotateCase() {
 /**
  * @brief testing removing a value with a "red sibling"
  * from tree
- * @returns void
+ * @return void
  */
 void RemoveTestRedSiblingCase() {
     cout << "Testing remove that requires double-black fix with red "
@@ -1547,7 +1543,7 @@ void RemoveTestRedSiblingCase() {
 /**
  * @brief testing memory management as values are
  * removed from tree
- * @returns void
+ * @return void
  */
 void LargeRandomRemoveMemoryTest() {
     cout << "Giant Remove Test..." << endl;
@@ -1580,7 +1576,7 @@ void LargeRandomRemoveMemoryTest() {
 /**
  * @brief more testing of removing certain nodes from
  * a tree
- * @returns void
+ * @return void
  */
 void LargerComprehensiveRemoveTest() {
     cout << "Testing many removes from larger tree..." << endl;
@@ -1610,11 +1606,9 @@ void LargerComprehensiveRemoveTest() {
 }
 
 /**
- * @brief main function where all test functions are
- * called
- * @returns void
+ * @brief Runs all tests
  */
-int main() {
+void tests() {
     TestSimpleConstructor();
 
     TestInsertFirstNode();
@@ -1643,6 +1637,14 @@ int main() {
     LargeRandomRemoveMemoryTest();
     LargerComprehensiveRemoveTest();
 
-    cout << "ALL TESTS PASSED!!" << endl;
+    cout << "All tests passed!" << endl;
+}
+
+/**
+ * @brief main function to run tests
+ * @return 0 with exit
+ */
+int main() {
+    tests();
     return 0;
 }
