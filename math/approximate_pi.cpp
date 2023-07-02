@@ -32,10 +32,10 @@ namespace math {
  * @brief structure of points containing two numbers, x and y, such that 0 ≤ x ≤
  * 1 and 0 ≤ y ≤ 1.
  */
-typedef struct {
+using Point = struct {
     double x;
     double y;
-} Point;
+};
 
 /**
  * @brief This function uses the points in a given vector 'pts' (drawn at
