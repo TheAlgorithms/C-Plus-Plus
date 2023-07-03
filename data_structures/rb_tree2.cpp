@@ -65,7 +65,7 @@ class RedBlackTree {
 
     /**
      * @brief Deconstructor for Red Black Tree
-     * @details 
+     * @details
      * PostDelete() used to
      * free Red Black Tree memory
      */
@@ -168,8 +168,7 @@ class RedBlackTree {
             } else if (value > node_to_insert->parent->val) {
                 node_to_insert->parent->right = node_to_insert;
             }
-            // check and fix tree if needed after insertion
-            // to maintain RBT conditions
+            // maintain conditions for red black tree
             CheckTreeConditions(node_to_insert);
         }
         numItems++;
@@ -335,7 +334,7 @@ class RedBlackTree {
     /**
      * @brief Re-balances tree based on the double-black
      * node and its sibling conditions
-     * @note 
+     * @note
      * Assumed that parameters will be correct for this
      * function's specific use. Tree nodes may be rotated
      * or recolored to fix double-blackness.
@@ -678,7 +677,7 @@ class RedBlackTree {
     /**
      * @brief Finds a node in the tree with a specified value.
      * @note
-     * This function is the same as Contains() 
+     * This function is the same as Contains()
      * except it returns the node found or throws
      * an exception.
      * @param value the value of the node to search for
@@ -748,8 +747,8 @@ class RedBlackTree {
     }
 
  private:
-    uint64_t numItems;  /// number of nodes in tree
-    RBTNode* root;  /// top node of tree
+    uint64_t numItems;              /// number of nodes in tree
+    RBTNode* root;                  /// top node of tree
     vector<int> nodes_order_added;  /// for copy constructor
 
     /**
