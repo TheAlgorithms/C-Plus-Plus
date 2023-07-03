@@ -22,7 +22,7 @@ using std::ostringstream;
 using std::string;
 using std::vector;
 
-// defining colors
+// represent node colors as fixed integers
 const int COLOR_RED = 0;
 const int COLOR_BLACK = 1;
 const int COLOR_DOUBLE_BLACK = 2;
@@ -280,37 +280,28 @@ class RedBlackTree {
      * @param replacement_node the double-black node
      */
     void fix_double_black(RBTNode* replacement_node) {
-        // sibling not needed if replacement node is at the tree's root
         if (replacement_node == root) {
             replacement_node->color = COLOR_BLACK;
         } else {
-            // now using sibling for below conditions
             RBTNode* sibling = GetSibling(replacement_node);
 
-            // sibling is black - check sibling's kids
             if (sibling->color == COLOR_BLACK) {
-                // at least one red child
                 if (has_red_child(sibling)) {
-                    // rotate/recolor to fix double-blackness
                     CheckSiblingConditions(replacement_node, sibling);
                 } else {
-                    // no red children
-
                     // shift blackness level up to parent
                     sibling->color = COLOR_RED;
                     replacement_node->color = COLOR_BLACK;
                     replacement_node->parent->color++;
-                    // blackness shift may make parent double-black,
-                    // so fix if needed
+
                     if (replacement_node->parent->color == COLOR_DOUBLE_BLACK) {
                         fix_double_black(replacement_node->parent);
                     }
                 }
             } else if (sibling->color == COLOR_RED) {
-                // or replacement's sibling is red,
-                // rotate to give replacement a black sibling
+                // rotate tree to give replacement node a black sibling
 
-                // recoloring needed for rotation
+                // recolor before rotation
                 sibling->parent->color = COLOR_RED;
                 sibling->color = COLOR_BLACK;
 
@@ -321,8 +312,8 @@ class RedBlackTree {
                     // rotate left for right sibling
                     RotateLeft(sibling);
                 }
-                // try fixing double-blackness again after
-                // giving replacement node a black sibling
+
+                // fix again with a black sibling
                 fix_double_black(replacement_node);
             }
         }
@@ -337,7 +328,6 @@ class RedBlackTree {
         RBTNode* n_left = n->left;
         RBTNode* n_right = n->right;
 
-        // at least one red child
         return (n_left != nullptr && n_left->color == COLOR_RED) ||
                (n_right != nullptr && n_right->color == COLOR_RED);
     }
@@ -384,7 +374,7 @@ class RedBlackTree {
                 RotateLeft(sibling);
                 ShiftColorsRight(sibling);
             } else {
-                // right left: with 1 red kid on left (only other case)
+                // right left: with 1 red kid on left
 
                 // rotate right on child, making a right right rotate case
                 RotateRight(s_left);
@@ -396,7 +386,7 @@ class RedBlackTree {
                 ShiftColorsRight(sibling);
             }
         }
-        // replacement node's blackness level goes down to black again
+        // color level returns to black
         replacement->color--;
     }
 
@@ -480,38 +470,26 @@ class RedBlackTree {
      * to be the node just inserted into tree) up to the root
      */
     void CheckTreeConditions(RBTNode* node) {
-        // to make sure program doesn't skip over root to its
-        // parent's nullptr (when skipping over to grandparent)
         if (node == root || node == nullptr) {
             if (node == root) {
                 root->color = COLOR_BLACK;
             }
         } else if (node->parent->color == COLOR_RED) {
-            // 1) if inserted node's parent = red (indicates
-            // 3rd node was inserted in tree), check parent sibling
-
             RBTNode* parent_sibling = this->GetSibling(node->parent);
 
-            // a) if parent sibling = black/null, rotate and recolor
             if (parent_sibling == nullptr ||
                 parent_sibling->color == COLOR_BLACK) {
                 ConditionalRotate(node);
             } else if (parent_sibling->color == COLOR_RED) {
-                // b) if parent sibling = red, Recolor by
-                // "pushing blackness down from grandparent"
+                RBTNode* grandparent = node->parent->parent;
 
-                // parent of inserted node
-                RBTNode* gp = node->parent->parent;
+                // push blackness down from grandparent node
+                grandparent->color = COLOR_RED;
+                grandparent->left->color = COLOR_BLACK;
+                grandparent->right->color = COLOR_BLACK;
 
-                // recolor grandparent red
-                gp->color = COLOR_RED;
-
-                // recolor grandparent children black
-                gp->left->color = COLOR_BLACK;
-                gp->right->color = COLOR_BLACK;
-
-                // recursively check tree conditions after recoloring
-                CheckTreeConditions(gp);
+                // recursively check tree conditions after recolor
+                CheckTreeConditions(grandparent);
             }
         }
     }
@@ -654,7 +632,7 @@ class RedBlackTree {
      * @return RBTNode* the IOS node
      */
     RBTNode* InOrderSuccessor(RBTNode* node) {
-        // begin traversal at the given node
+        // begin traversal at the passed node
         RBTNode* trav = node;
 
         // go right once
@@ -741,7 +719,7 @@ class RedBlackTree {
      * @return int the highest value in the tree
      */
     int GetMax() {
-        // rightmost node in tree
+        // maximum value node will be at right end of the tree
         RBTNode* trav = root;
         while (trav->right != nullptr) {
             trav = trav->right;
@@ -770,9 +748,9 @@ class RedBlackTree {
     }
 
  private:
-    uint64_t numItems;
-    RBTNode* root;
-    vector<int> nodes_order_added;
+    uint64_t numItems;  /// number of nodes in tree
+    RBTNode* root;  /// top node of tree
+    vector<int> nodes_order_added;  /// for copy constructor
 
     /**
      * @brief Creates an infix string of tree
