@@ -861,7 +861,7 @@ class RedBlackTree {
 void TestSimpleConstructor() {
     cout << "Testing Simple Constructor... " << endl;
     RedBlackTree rbt = RedBlackTree();
-    // cout << "empty r-b-tree: " << rbt.ToInfixString() << endl;
+
     assert(rbt.ToInfixString() == "");
 
     cout << "PASSED!" << endl << endl;
@@ -873,9 +873,10 @@ void TestSimpleConstructor() {
  */
 void TestInsertFirstNode() {
     cout << "Testing Insert One Node..." << endl;
+
     RedBlackTree rbt = RedBlackTree();
     rbt.Insert(30);
-    // cout << "rbt: " << rbt.ToPrefixString() << endl;
+
     assert(rbt.ToPrefixString() == " B30 ");
 
     cout << "PASSED!" << endl << endl;
@@ -888,16 +889,16 @@ void TestInsertFirstNode() {
 void TestInsertSecondNode() {
     cout << "Testing Insert Second Node..." << endl;
     RedBlackTree* rbt = new RedBlackTree();
-    rbt->Insert(30);  // leak here
+    rbt->Insert(30);
     rbt->Insert(15);
-    // cout << "rbt: " << rbt->ToPrefixString() << endl;
+
     assert(rbt->ToPrefixString() == " B30  R15 ");
     delete rbt;
 
     rbt = new RedBlackTree();
     rbt->Insert(30);
     rbt->Insert(45);
-    // cout << "rbt: " << rbt->ToPrefixString() << endl;
+
     assert(rbt->ToPrefixString() == " B30  R45 ");
     delete rbt;
 
@@ -911,21 +912,22 @@ void TestInsertSecondNode() {
  */
 void TestInsertThirdNode() {
     cout << "Testing Insert Third Node..." << endl;
+
     RedBlackTree* rbt = new RedBlackTree();
     rbt->Insert(30);
     rbt->Insert(15);
     rbt->Insert(10);  // Left Left
 
-    // ROTATE RIGHT ONCE
+    // rotate right once
     assert(rbt->ToPrefixString() == " B15  R10  R30 ");
     delete rbt;
 
     rbt = new RedBlackTree();
     rbt->Insert(30);
     rbt->Insert(15);
-    rbt->Insert(25);  // Left right
+    rbt->Insert(25);  // Left Right
 
-    // ROTATE ONCE RIGHT ON PARENT THEN ONCE LEFT ON GRANDPARENT
+    // rotate once right on parent then once left on grandparent
     assert(rbt->ToPrefixString() == " B25  R15  R30 ");
     delete rbt;
 
@@ -934,14 +936,14 @@ void TestInsertThirdNode() {
     rbt->Insert(15);
     rbt->Insert(45);  // Easy case
 
-    // NODES ON EITHER SIDE AND PARENT IS BLACK, SO NO ROTATION OR RECOLOR
+    // nodes on either side and parent is black, so no rotation or recolor
     assert(rbt->ToPrefixString() == " B30  R15  R45 ");
     delete rbt;
 
     rbt = new RedBlackTree();
     rbt->Insert(75);
     rbt->Insert(215);
-    rbt->Insert(130);  // Right left
+    rbt->Insert(130);  // Right Left
 
     assert(rbt->ToPrefixString() == " B130  R75  R215 ");
     delete rbt;
@@ -949,7 +951,7 @@ void TestInsertThirdNode() {
     rbt = new RedBlackTree();
     rbt->Insert(648);
     rbt->Insert(735);
-    rbt->Insert(9442);  // Right right
+    rbt->Insert(9442);  // Right Right
 
     assert(rbt->ToPrefixString() == " B735  R648  R9442 ");
     delete rbt;
@@ -1136,8 +1138,8 @@ void TestContains() {
 }
 
 /**
- * @brief testing GetMin(), GetMax() functions return
- * correct outputs
+ * @brief testing GetMin(), GetMax() functions
+ * have correct outputs
  * @return void
  */
 void TestGetMinimumMaximum() {
@@ -1203,15 +1205,12 @@ void TestCopyConstructor2() {
     rbt3.Insert(20);
     rbt3.Insert(13);
 
-    // (good here for whole tree) should have B7
-    // root, B3 root left, R12 root right here
     rbt3.Insert(57);
 
     rbt3.Insert(30);
     rbt3.Insert(64);
 
-    // **where left rotate on root occurs
-    // (root = B12, root left = R7, root right = R55)
+    // left rotate on root
     rbt3.Insert(69);
 
     rbt3.Insert(50);
@@ -1229,9 +1228,8 @@ void TestCopyConstructor2() {
     RedBlackTree rbt4 = RedBlackTree(rbt3);
 
     string s3 = rbt3.ToPrefixString();
-    // cout << "s3: " << s3 << endl;
     string s4 = rbt4.ToPrefixString();
-    // cout << "s4: " << s4 << endl;
+
     assert(rbt3.Size() == rbt4.Size());
     assert(s3 == s4);
 
@@ -1257,9 +1255,9 @@ void TestInsertWithRecursiveFixUp() {
     rbt->Insert(150);
     rbt->Insert(900);
     rbt->Insert(300);
-    rbt->Insert(100);  // visualization and prefix looks good up to here
-    rbt->Insert(175);  // also looks good here
-    rbt->Insert(160);  // does some weird stuff!
+    rbt->Insert(100);
+    rbt->Insert(175);
+    rbt->Insert(160);
 
     assert(rbt->ToPrefixString() ==
            " B200  R150  B100  B175  "
@@ -1436,7 +1434,7 @@ void RemoveTestRotateCase() {
 
     PrintTestLine("tree", rbt, " B9  R5  B4  B6  R7  B11  R14 ");
 
-    // RIGHT RIGHT CASE -- rotate left on black sibling
+    // RIGHT RIGHT CASE (rotate left on black sibling)
     rbt->Remove(4);
 
     PrintTestLine("right right remove", rbt, " B9  R6  B5  B7  B11  R14 ");
@@ -1467,8 +1465,6 @@ void RemoveTestRotateCase() {
     rbt2.Remove(7);
     assert(rbt2.ToPrefixString() == " B9  R5  B4  B6  B11  R14 ");
 
-    // deconstruct red black tree and construct a new, empty tree again from
-    // same variable
     delete rbt;
     rbt = new RedBlackTree();
 
@@ -1611,7 +1607,7 @@ void LargerComprehensiveRemoveTest() {
 }
 
 /**
- * @brief Runs all tests
+ * @brief self-test implementation
  */
 void tests() {
     TestSimpleConstructor();
