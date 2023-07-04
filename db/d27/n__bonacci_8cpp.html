@@ -267,29 +267,29 @@ Here is the call graph for this function:</div>
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <div class="fragment"><div class="line"><span class="lineno">   69</span>                   {</div>
-<div class="line"><span class="lineno">   70</span>    <span class="keyword">struct </span>TestCase {</div>
+<div class="line"><span class="lineno">   70</span>    <span class="keyword">struct </span><a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a> {</div>
 <div class="line"><span class="lineno">   71</span>        <span class="keyword">const</span> uint64_t n;</div>
 <div class="line"><span class="lineno">   72</span>        <span class="keyword">const</span> uint64_t m;</div>
 <div class="line"><span class="lineno">   73</span>        <span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> expected;</div>
-<div class="line"><span class="lineno">   74</span>        TestCase(<span class="keyword">const</span> uint64_t in_n, <span class="keyword">const</span> uint64_t in_m,</div>
+<div class="line"><span class="lineno">   74</span>        <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(<span class="keyword">const</span> uint64_t in_n, <span class="keyword">const</span> uint64_t in_m,</div>
 <div class="line"><span class="lineno">   75</span>                 <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/initializer_list.html">std::initializer_list&lt;uint64_t&gt;</a> <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>)</div>
 <div class="line"><span class="lineno">   76</span>            : n(in_n), m(in_m), expected(<a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>) {</div>
 <div class="line"><span class="lineno">   77</span>            assert(<a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>.size() == m);</div>
 <div class="line"><span class="lineno">   78</span>        }</div>
 <div class="line"><span class="lineno">   79</span>    };</div>
 <div class="line"><span class="lineno">   80</span>    <span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;TestCase&gt;</a> test_cases = {</div>
-<div class="line"><span class="lineno">   81</span>        TestCase(0, 0, {}),</div>
-<div class="line"><span class="lineno">   82</span>        TestCase(0, 1, {0}),</div>
-<div class="line"><span class="lineno">   83</span>        TestCase(0, 2, {0, 0}),</div>
-<div class="line"><span class="lineno">   84</span>        TestCase(1, 0, {}),</div>
-<div class="line"><span class="lineno">   85</span>        TestCase(1, 1, {1}),</div>
-<div class="line"><span class="lineno">   86</span>        TestCase(1, 2, {1, 1}),</div>
-<div class="line"><span class="lineno">   87</span>        TestCase(1, 3, {1, 1, 1}),</div>
-<div class="line"><span class="lineno">   88</span>        TestCase(5, 15, {0, 0, 0, 0, 1, 1, 2, 4, 8, 16, 31, 61, 120, 236, 464}),</div>
-<div class="line"><span class="lineno">   89</span>        TestCase(</div>
+<div class="line"><span class="lineno">   81</span>        <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(0, 0, {}),</div>
+<div class="line"><span class="lineno">   82</span>        <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(0, 1, {0}),</div>
+<div class="line"><span class="lineno">   83</span>        <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(0, 2, {0, 0}),</div>
+<div class="line"><span class="lineno">   84</span>        <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(1, 0, {}),</div>
+<div class="line"><span class="lineno">   85</span>        <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(1, 1, {1}),</div>
+<div class="line"><span class="lineno">   86</span>        <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(1, 2, {1, 1}),</div>
+<div class="line"><span class="lineno">   87</span>        <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(1, 3, {1, 1, 1}),</div>
+<div class="line"><span class="lineno">   88</span>        <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(5, 15, {0, 0, 0, 0, 1, 1, 2, 4, 8, 16, 31, 61, 120, 236, 464}),</div>
+<div class="line"><span class="lineno">   89</span>        <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(</div>
 <div class="line"><span class="lineno">   90</span>            6, 17,</div>
 <div class="line"><span class="lineno">   91</span>            {0, 0, 0, 0, 0, 1, 1, 2, 4, 8, 16, 32, 63, 125, 248, 492, 976}),</div>
-<div class="line"><span class="lineno">   92</span>        TestCase(56, 15, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0})};</div>
+<div class="line"><span class="lineno">   92</span>        <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(56, 15, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0})};</div>
 <div class="line"><span class="lineno">   93</span> </div>
 <div class="line"><span class="lineno">   94</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;tc : test_cases) {</div>
 <div class="line"><span class="lineno">   95</span>        assert(math::n_bonacci::N_bonacci(tc.n, tc.m) == tc.expected);</div>
@@ -300,6 +300,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="ahash__search_8cpp_html_a6e1a77282bc65ad359d753d25df23243"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a></div><div class="ttdeci">int data[MAX]</div><div class="ttdoc">test data</div><div class="ttdef"><b>Definition</b> hash_search.cpp:24</div></div>
 <div class="ttc" id="ainitializer_list_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/initializer_list.html">std::initializer_list</a></div></div>
+<div class="ttc" id="astruct_test_case_html"><div class="ttname"><a href="../../da/d86/struct_test_case.html">TestCase</a></div><div class="ttdoc">represents single example inputs and expected output of the function longest_common_string_length</div><div class="ttdef"><b>Definition</b> longest_common_string.cpp:54</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

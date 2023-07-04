@@ -725,24 +725,24 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <div class="fragment"><div class="line"><span class="lineno">  286</span>                          {</div>
-<div class="line"><span class="lineno">  287</span>    <span class="keyword">struct </span>TestCase {</div>
+<div class="line"><span class="lineno">  287</span>    <span class="keyword">struct </span><a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a> {</div>
 <div class="line"><span class="lineno">  288</span>        <span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> input;</div>
 <div class="line"><span class="lineno">  289</span>        <span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> expected_hash;</div>
-<div class="line"><span class="lineno">  290</span>        TestCase(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> input, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> expected_hash)</div>
+<div class="line"><span class="lineno">  290</span>        <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> input, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> expected_hash)</div>
 <div class="line"><span class="lineno">  291</span>            : input(<a class="code hl_namespace" href="../../d8/dcc/namespacestd.html">std</a>::<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">move</a>(input)),</div>
 <div class="line"><span class="lineno">  292</span>              expected_hash(<a class="code hl_namespace" href="../../d8/dcc/namespacestd.html">std</a>::<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">move</a>(expected_hash)) {}</div>
 <div class="line"><span class="lineno">  293</span>    };</div>
 <div class="line"><span class="lineno">  294</span>    <span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;TestCase&gt;</a> test_cases{</div>
-<div class="line"><span class="lineno">  295</span>        TestCase(</div>
+<div class="line"><span class="lineno">  295</span>        <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(</div>
 <div class="line"><span class="lineno">  296</span>            <span class="stringliteral">&quot;&quot;</span>,</div>
 <div class="line"><span class="lineno">  297</span>            <span class="stringliteral">&quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;</span>),</div>
-<div class="line"><span class="lineno">  298</span>        TestCase(</div>
+<div class="line"><span class="lineno">  298</span>        <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(</div>
 <div class="line"><span class="lineno">  299</span>            <span class="stringliteral">&quot;test&quot;</span>,</div>
 <div class="line"><span class="lineno">  300</span>            <span class="stringliteral">&quot;9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08&quot;</span>),</div>
-<div class="line"><span class="lineno">  301</span>        TestCase(</div>
+<div class="line"><span class="lineno">  301</span>        <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(</div>
 <div class="line"><span class="lineno">  302</span>            <span class="stringliteral">&quot;Hello World&quot;</span>,</div>
 <div class="line"><span class="lineno">  303</span>            <span class="stringliteral">&quot;a591a6d40bf420404a011733cfb7b190d62c65bf0bcda32b57b277d9ad9f146e&quot;</span>),</div>
-<div class="line"><span class="lineno">  304</span>        TestCase(<span class="stringliteral">&quot;Hello World!&quot;</span>,</div>
+<div class="line"><span class="lineno">  304</span>        <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(<span class="stringliteral">&quot;Hello World!&quot;</span>,</div>
 <div class="line"><span class="lineno">  305</span>                 <span class="stringliteral">&quot;7f83b1657ff1fc53b92dc18148a1d65dfc2d4b1fa3d677284addd200126d9&quot;</span></div>
 <div class="line"><span class="lineno">  306</span>                 <span class="stringliteral">&quot;069&quot;</span>)};</div>
 <div class="line"><span class="lineno">  307</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;tc : test_cases) {</div>
@@ -752,6 +752,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
 <div class="ttc" id="amove_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a></div><div class="ttdeci">T move(T... args)</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="../../d8/dcc/namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
+<div class="ttc" id="astruct_test_case_html"><div class="ttname"><a href="../../da/d86/struct_test_case.html">TestCase</a></div><div class="ttdoc">represents single example inputs and expected output of the function longest_common_string_length</div><div class="ttdef"><b>Definition</b> longest_common_string.cpp:54</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment -->
 </div>
