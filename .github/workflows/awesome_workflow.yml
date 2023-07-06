@@ -40,12 +40,16 @@ jobs:
       - name: Lint modified files
         shell: bash
         run: python3 scripts/file_linter.py
-      - name: Commit and push changes
+      - if: github.repository == 'TheAlgorithms/C-Plus-Plus' && github.ref == 'refs/heads/master'
+        name: Commit, push, and create a PR
         run: |
-          git diff DIRECTORY.md
-          git commit -am "clang-format and clang-tidy fixes for ${GITHUB_SHA::8}" || true
-          git push origin HEAD:$GITHUB_REF || true
+          git checkout -b clang-tidy-${{ github.sha }}
+          git commit -am "fix: clang-format and clang-tidy fixes for ${GITHUB_SHA::8}" || true
+          git push origin clang-tidy-${{ github.sha }}:clang-tidy-${{ github.sha }}
 
+          if [[ $(git log --branches --not --remotes) ]]; then
+            gh pr create --base ${GITHUB_REF##*/} --head clang-tidy-${{ github.sha }} --title 'fix: `clang-tidy` fixes' --body 'Fixed formatting using `clang-tidy` and `clang-format` (see the diff. for changes).'
+          fi
   build:
     name: Compile checks
     runs-on: ${{ matrix.os }}
