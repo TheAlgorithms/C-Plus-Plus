@@ -6,9 +6,9 @@
 
  * @description :
 A C++ (CPP) code to find how many subarrays (contiguous part of an array) are
-present in an array whose product is less than a given number 'k' e.g.- Input
-array -  arr[5]= {1, 3, 4 ,5 ,2} Input No.   -   k = 5 Subarrays of arr having
-product less than (k=5) are - {1} , {3} , {4} , {2} , {1 , 3}
+present in an array whose product is less than a given number 'k' 
+e.g.- [ Input array -  arr[5]= {1, 3, 4 ,5 ,2} ] and  [ Input Number k = 5 ]
+      Now Subarrays of arr having product less than (k=5) are - {1} , {3} , {4} , {2} , {1 , 3}
 
 // Idea :
  Use Sliding Window Algorithm
