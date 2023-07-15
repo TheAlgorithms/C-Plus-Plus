@@ -1,10 +1,6 @@
 /**
  * @file
  * @brief - Finds Total Number of Subarrays whose net product is less than a given Number = k 
-<<<<<<< HEAD
- * [Source](https://leetcode.com/problems/subarray-product-less-than-k/)
- * 
-=======
 (Source -https://leetcode.com/problems/subarray-product-less-than-k/ )
 
 
@@ -30,7 +26,6 @@ hence we shift to the element to the immediate right and do the same process.
 loop (worst case) -> n times so TC = n * n .
 . Space Complexity of Code - O(1) ->  since it does not use any auxiliary space
 
->>>>>>> ae0b3fc1b6d1228f772123368aec6e860f5eb99a
  * @author - [Aryan Arya] https://github.com/hecker1002
  * 
  * @description :
