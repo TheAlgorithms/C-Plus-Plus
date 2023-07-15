@@ -1,31 +1,14 @@
 /**
  * @file
  * @brief - Finds Total Number of Subarrays whose net product is less than a given Number = k 
-(Source -https://leetcode.com/problems/subarray-product-less-than-k/ )
-
-
+ * [Source](https://leetcode.com/problems/subarray-product-less-than-k/)
+ * 
  * @description :
-A C++ (CPP) code to find how many subarrays (contiguous part of an array) are
-present in an array whose product is less than a given number 'k' 
-e.g.- [ Input array -  arr[5]= {1, 3, 4 ,5 ,2} ] and  [ Input Number k = 5 ]
-      Now Subarrays of arr having product less than (k=5) are - {1} , {3} , {4} , {2} , {1 , 3}
-
-// Idea :
- Use Sliding Window Algorithm
-
-// Procedure :
-Go in a loop (j=0 to n) and create a sliding window each time starting from the
-current element and increase its size (in the second loop) till both of these
-conditions are true  (product of all elements in the window < k and iterator <
-last_index) Proof - If at any instance, the product of all elements in the
-current window (subarray) exceeds k, then all further windows' product > k and
-hence we shift to the element to the immediate right and do the same process.
-
-// Complexities  : 
-. Time Complexity of Code - O(n^2) since the outer loop -> n times and inner
-loop (worst case) -> n times so TC = n * n .
-. Space Complexity of Code - O(1) ->  since it does not use any auxiliary space
-
+ * A C++ (CPP) code to find how many subarrays (contiguous part of an array) are
+ * present in an array whose product is less than a given number 'k' 
+ * e.g.- [ Input array -  arr[5]= {1, 3, 4 ,5 ,2} ] and  [ Input Number k = 5 ]
+ *  Now Subarrays of arr having product less than (k=5) are - {1} , {3} , {4} , {2} , {1 , 3}
+ * 
  * @author - [Aryan Arya] https://github.com/hecker1002
  * 
  * @description :
@@ -34,18 +17,20 @@ loop (worst case) -> n times so TC = n * n .
  * Example- [ Input array -  arr[5]= {1, 3, 4 ,5 ,2} ] and  [ Input Number k = 5 ]
       Now Subarrays of arr having product less than (k=5) are - {1} , {3} , {4} , {2} , {1 , 3}
  * 
- * Idea :
+ * // Idea :
  * Use Sliding Window Algorithm
  * 
- * Procedure :
+ * // Procedure :
  * Go in a loop (j=0 to n) and create a sliding window each time starting from the
  * current element and increase its size (in the second loop) till both of these
  * conditions are true  (product of all elements in the window < k and iterator <
- * last_index) Proof - If at any instance, the product of all elements in the
+ * last_index)
+ * 
+ * //  Proof - If at any instance, the product of all elements in the
  * current window (subarray) exceeds k, then all further windows' product > k and
  * hence we shift to the element to the immediate right and do the same process.
  * 
- * Complexities  : 
+ * // Complexities  : 
  * Time Complexity of Code - O(n^2) since the outer loop -> n times and inner loop (worst case) -> n times so TC = n * n 
  * Space Complexity of Code - O(1) ->  since it does not use any auxiliary space
  */
