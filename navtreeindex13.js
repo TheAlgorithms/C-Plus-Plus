@@ -1,5 +1,10 @@
 var NAVTREEINDEX13 =
 {
+"de/dc5/intersection__of__two__arrays_8cpp.html#af7b81d7a1534216af6a36a80135beb86":[11,0,16,4,8],
+"de/dcd/kadanes3_8cpp.html":[11,0,17,7],
+"de/dcd/kadanes3_8cpp.html#a338439a04148ae89f695595acfa5c147":[11,0,17,7,1],
+"de/dcd/kadanes3_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,17,7,2],
+"de/dcd/kadanes3_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,17,7,0],
 "de/dcf/binary__exponent_8cpp.html":[11,0,14,3],
 "de/dcf/binary__exponent_8cpp.html#a31dbf5f7ceb9c9eec831ef9f7782291f":[11,0,14,3,1],
 "de/dcf/binary__exponent_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,3,2],
@@ -147,12 +152,12 @@ var NAVTREEINDEX13 =
 "df/ddd/connected__components_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,9,2,3],
 "df/de5/classbacktracking_1_1generate__parentheses.html":[10,0,0,0],
 "df/de5/classbacktracking_1_1generate__parentheses.html":[9,0,5,0],
-"df/de5/classbacktracking_1_1generate__parentheses.html#ab35b9b6d2886abed3d6fb05c2be1c508":[9,0,5,0,2],
 "df/de5/classbacktracking_1_1generate__parentheses.html#ab35b9b6d2886abed3d6fb05c2be1c508":[10,0,0,0,2],
-"df/de5/classbacktracking_1_1generate__parentheses.html#ac1489edd65374f22fe04851051f0a2ec":[9,0,5,0,1],
+"df/de5/classbacktracking_1_1generate__parentheses.html#ab35b9b6d2886abed3d6fb05c2be1c508":[9,0,5,0,2],
 "df/de5/classbacktracking_1_1generate__parentheses.html#ac1489edd65374f22fe04851051f0a2ec":[10,0,0,0,1],
-"df/de5/classbacktracking_1_1generate__parentheses.html#af39c03d80ce0ba9fbf659b420980d160":[9,0,5,0,0],
+"df/de5/classbacktracking_1_1generate__parentheses.html#ac1489edd65374f22fe04851051f0a2ec":[9,0,5,0,1],
 "df/de5/classbacktracking_1_1generate__parentheses.html#af39c03d80ce0ba9fbf659b420980d160":[10,0,0,0,0],
+"df/de5/classbacktracking_1_1generate__parentheses.html#af39c03d80ce0ba9fbf659b420980d160":[9,0,5,0,0],
 "df/dea/namespacefalse__position.html":[9,0,28],
 "df/def/power__for__huge__numbers_8cpp.html":[11,0,14,43],
 "df/def/power__for__huge__numbers_8cpp.html#a392fb874e547e582e9c66a08a1f23326":[11,0,14,43,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX13 =
 "functions_x.html":[10,3,0,23],
 "functions_y.html":[10,3,0,24],
 "functions_~.html":[10,3,0,25],
-"globals.html":[11,1,0],
-"globals.html":[11,1,0,0],
-"globals_a.html":[11,1,0,1],
-"globals_b.html":[11,1,0,2],
-"globals_c.html":[11,1,0,3],
-"globals_d.html":[11,1,0,4]
+"globals.html":[11,1,0]
 };

@@ -140,17 +140,17 @@ var NAVTREEINDEX =
 "cpp/iterator/distance.html",
 "cpp/thread/lock.html",
 "d1/d83/classuint256__t.html#acb61fe17d064c61adc02defa651f9a5e",
-"d3/d40/graph__coloring_8cpp.html#a8c47fa37fb6eeeb781b2ec1b05af6b07",
-"d4/d90/classdata__structures_1_1_skip_list.html#a812611f80b8079268dbb19cc4e9bee5c",
-"d5/db5/set__kth__bit_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"d7/d00/list__array_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
-"d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html#abde75f6ee432b0378d264da8c7c64db2",
-"d9/d89/fibonacci_8cpp.html#aaf94f3212385cff0a5f19ff6b0cce8e7",
-"da/dd1/structquadratic__probing_1_1_entry.html#a75f72858f08a2fc8b94402de98db12d8",
-"dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#a4aa49765cce39ce48b9241e993e0cfb9",
-"dd/d47/namespacemath.html#a6c72f756a7bf1b9043c357e3fe7814ca",
-"de/dcf/binary__exponent_8cpp.html",
-"globals_defs.html"
+"d3/d39/manacher__algorithm_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
+"d4/d90/classdata__structures_1_1_skip_list.html#a40a4042bdf0b6683b5f21ae7854de8a9",
+"d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html#ae161f3e5ef33ade73429cab9291612e2",
+"d6/dd8/is__graph__bipartite_8cpp.html",
+"d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html#a8f26dc32615abc5bab8ac458ef424bc5",
+"d9/d70/namespacequeue__using__array.html",
+"da/dc9/fibonacci__matrix__exponentiation_8cpp.html#ae1a3968e7947464bee7714f6d43b7002",
+"dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html",
+"dd/d47/namespacemath.html#a3fe35440c27758ecc2287e08217d63a7",
+"de/dc5/intersection__of__two__arrays_8cpp.html#af7b81d7a1534216af6a36a80135beb86",
+"globals.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -108,6 +108,10 @@ $(document).ready(function(){initNavTree('dd/d24/namespacedynamic__programming.h
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:af046365a8d77a1267acc082f86135a26"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af046365a8d77a1267acc082f86135a26"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d24/namespacedynamic__programming.html#af046365a8d77a1267acc082f86135a26">is_armstrong</a> (const T &amp;number)</td></tr>
+<tr class="memdesc:af046365a8d77a1267acc082f86135a26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given number is armstrong or not.  <br /></td></tr>
+<tr class="separator:af046365a8d77a1267acc082f86135a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a2215194e58786c34db1ccaf8031079"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d24/namespacedynamic__programming.html#a0a2215194e58786c34db1ccaf8031079">LIS</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint64_t &gt; &amp;a, const uint32_t &amp;n)</td></tr>
 <tr class="memdesc:a0a2215194e58786c34db1ccaf8031079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the longest increasing subsequence for the specified numbers.  <br /></td></tr>
 <tr class="separator:a0a2215194e58786c34db1ccaf8031079"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,6 +138,69 @@ Functions</h2></td></tr>
 <p>for std::assert for IO operations for unordered map</p>
 <p>Dynamic Programming algorithms </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="af046365a8d77a1267acc082f86135a26" name="af046365a8d77a1267acc082f86135a26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af046365a8d77a1267acc082f86135a26">&#9670;&#160;</a></span>is_armstrong()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dynamic_programming::is_armstrong </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>number</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if the given number is armstrong or not. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">number</td><td>the number to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>false if the given number is NOT armstrong </dd>
+<dd>
+true if the given number IS armstrong </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>                                   {</div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordtype">int</span> count = 0, temp = number, result = 0, rem = 0;</div>
+<div class="line"><span class="lineno">   41</span> </div>
+<div class="line"><span class="lineno">   42</span>    <span class="comment">// Count the number of digits of the given number.</span></div>
+<div class="line"><span class="lineno">   43</span>    <span class="comment">// For example: 153 would be 3 digits.</span></div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">while</span> (temp != 0) {</div>
+<div class="line"><span class="lineno">   45</span>        temp /= 10;</div>
+<div class="line"><span class="lineno">   46</span>        count++;</div>
+<div class="line"><span class="lineno">   47</span>    }</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>    <span class="comment">// Calculation for checking of armstrongs number i.e.</span></div>
+<div class="line"><span class="lineno">   50</span>    <span class="comment">// in an n-digit number sum of the digits is raised to a power of `n` is</span></div>
+<div class="line"><span class="lineno">   51</span>    <span class="comment">// equal to the original number.</span></div>
+<div class="line"><span class="lineno">   52</span>    temp = number;</div>
+<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">while</span> (temp != 0) {</div>
+<div class="line"><span class="lineno">   54</span>        rem = temp % 10;</div>
+<div class="line"><span class="lineno">   55</span>        result += <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(rem, count));</div>
+<div class="line"><span class="lineno">   56</span>        temp /= 10;</div>
+<div class="line"><span class="lineno">   57</span>    }</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">if</span> (result == number) {</div>
+<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   61</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   62</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   63</span>    }</div>
+<div class="line"><span class="lineno">   64</span>}</div>
+<div class="ttc" id="apow_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a></div><div class="ttdeci">T pow(T... args)</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d24/namespacedynamic__programming_af046365a8d77a1267acc082f86135a26_cgraph.svg" width="283" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
 <a id="a0a2215194e58786c34db1ccaf8031079" name="a0a2215194e58786c34db1ccaf8031079"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0a2215194e58786c34db1ccaf8031079">&#9670;&#160;</a></span>LIS()</h2>
 

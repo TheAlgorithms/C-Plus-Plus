@@ -1,0 +1,9 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,13,55,39"/>
+<area shape="rect" id="Node000002" href="$d1/db7/dynamic__programming_2armstrong__number_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e" title="Self&#45;test implementations." alt="" coords="103,13,153,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,23,88,23,88,28,55,28"/>
+<area shape="rect" id="Node000003" href="$dd/d24/namespacedynamic__programming.html#af046365a8d77a1267acc082f86135a26" title="Checks if the given number is armstrong or not." alt="" coords="201,5,353,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="153,23,186,23,186,28,153,28"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="401,13,473,39"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="354,23,386,23,386,28,354,28"/>
+</map>

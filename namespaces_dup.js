@@ -31,6 +31,7 @@ var namespaces_dup =
     [ "double_hashing", "d0/d65/namespacedouble__hashing.html", "d0/d65/namespacedouble__hashing" ],
     [ "dp", "df/d88/namespacedp.html", null ],
     [ "dynamic_programming", "dd/d24/namespacedynamic__programming.html", [
+      [ "is_armstrong", "dd/d24/namespacedynamic__programming.html#af046365a8d77a1267acc082f86135a26", null ],
       [ "LIS", "dd/d24/namespacedynamic__programming.html#a0a2215194e58786c34db1ccaf8031079", null ],
       [ "lps", "dd/d24/namespacedynamic__programming.html#afe9f45b6e30ee187509da2d1d0093412", null ],
       [ "maxCircularSum", "dd/d24/namespacedynamic__programming.html#a5239174fa0d987f2c67edc1f2af82beb", null ]
