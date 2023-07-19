@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="This function uses the points in a given vector &#39;pts&#39; (drawn at random) to return an approximation of...">
 <polygon fill="#999999" stroke="#666666" points="109.75,-19.25 0,-19.25 0,0 109.75,0 109.75,-19.25"/>
 <text text-anchor="middle" x="54.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">math::approximate_pi</text>
 </a>

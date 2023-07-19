@@ -98,53 +98,64 @@ $(document).ready(function(){initNavTree('d0/d51/approximate__pi_8cpp.html','../
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">approximate_pi.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>Implementation to calculate an estimate of the <a href="https://en.wikipedia.org/wiki/File:Pi_30K.gif" target="_blank">number π (Pi)</a>.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for approximate_pi.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d27/approximate__pi_8cpp__incl.svg" width="247" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d27/approximate__pi_8cpp__incl.svg" width="335" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d4f/structmath_1_1_point.html">math::Point</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:dd/d47/namespacemath"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html">math</a></td></tr>
 <tr class="memdesc:dd/d47/namespacemath"><td class="mdescLeft">&#160;</td><td class="mdescRight">for IO operations <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a937dc0c826acf3e6c0d2785527f7e9d7"><td class="memItemLeft" align="right" valign="top"><a id="a937dc0c826acf3e6c0d2785527f7e9d7" name="a937dc0c826acf3e6c0d2785527f7e9d7"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>math::Point</b> = { double x</td></tr>
+<tr class="memdesc:a937dc0c826acf3e6c0d2785527f7e9d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure of points containing two numbers, x and y, such that 0 ≤ x ≤ 1 and 0 ≤ y ≤ 1. <br /></td></tr>
+<tr class="separator:a937dc0c826acf3e6c0d2785527f7e9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abf7f2a6d91f1ca6c89698792aea3f188"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#abf7f2a6d91f1ca6c89698792aea3f188">math::approximate_pi</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../de/d4f/structmath_1_1_point.html">Point</a> &gt; &amp;pts)</td></tr>
+<tr class="memitem:abf7f2a6d91f1ca6c89698792aea3f188"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#abf7f2a6d91f1ca6c89698792aea3f188">math::approximate_pi</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../dd/d47/namespacemath.html#a937dc0c826acf3e6c0d2785527f7e9d7">Point</a> &gt; &amp;pts)</td></tr>
+<tr class="memdesc:abf7f2a6d91f1ca6c89698792aea3f188"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function uses the points in a given vector 'pts' (drawn at random) to return an approximation of the number π.  <br /></td></tr>
 <tr class="separator:abf7f2a6d91f1ca6c89698792aea3f188"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d51/approximate__pi_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
-<tr class="memdesc:aa8dca7b867074164d5f45b0f3851269d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test implementations.  <br /></td></tr>
-<tr class="separator:aa8dca7b867074164d5f45b0f3851269d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d51/approximate__pi_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
-<tr class="memdesc:a0ddf1224851353fc92bfbff6f499fa97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <br /></td></tr>
-<tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a483bb8ccf42aaf7375a83e91490eda1e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d51/approximate__pi_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e">tests</a> ()</td></tr>
+<tr class="memdesc:a483bb8ccf42aaf7375a83e91490eda1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test implementations.  <br /></td></tr>
+<tr class="separator:a483bb8ccf42aaf7375a83e91490eda1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d51/approximate__pi_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <br /></td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a7d9210f6c94ea8c936a8162dc16c829a"><td class="memItemLeft" align="right" valign="top"><a id="a7d9210f6c94ea8c936a8162dc16c829a" name="a7d9210f6c94ea8c936a8162dc16c829a"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>math::y</b></td></tr>
+<tr class="separator:a7d9210f6c94ea8c936a8162dc16c829a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation to calculate an estimate of the <a href="https://en.wikipedia.org/wiki/File:Pi_30K.gif" target="_blank">number π (Pi)</a>. </p>
-<p>We take a random point P with coordinates (x, y) such that 0 ≤ x ≤ 1 and 0 ≤ y ≤ 1. If x² + y² ≤ 1, then the point is inside the quarter disk of radius 1, otherwise the point is outside. We know that the probability of the point being inside the quarter disk is equal to π/4 double approx(vector&lt;Point&gt; &amp;pts) which will use the points pts (drawn at random) to return an estimate of the number π </p><dl class="section note"><dt>Note</dt><dd>This implementation is better than naive recursive or iterative approach.</dd></dl>
+<p>We take a random point P with coordinates (x, y) such that 0 ≤ x ≤ 1 and 0 ≤ y ≤ 1. If x² + y² ≤ 1, then the point is inside the quarter disk of radius 1, else the point is outside. We know that the probability of the point being inside the quarter disk is equal to π/4 double approx(vector&lt;Point&gt; &amp;pts) which will use the points pts (drawn at random) to return an estimate of the number π </p><dl class="section note"><dt>Note</dt><dd>This implementation is better than naive recursive or iterative approach.</dd></dl>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/Qannaf" target="_blank">Qannaf AL-SAHMI</a> </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a0ddf1224851353fc92bfbff6f499fa97" name="a0ddf1224851353fc92bfbff6f499fa97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ddf1224851353fc92bfbff6f499fa97">&#9670;&#160;</a></span>main()</h2>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -152,47 +163,30 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int main </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>argc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>argv</em>[]&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Main function. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">argc</td><td>commandline argument count (ignored) </td></tr>
-    <tr><td class="paramname">argv</td><td>commandline array of arguments (ignored) </td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   75</span>                                 {</div>
-<div class="line"><span class="lineno">   76</span>    <a class="code hl_function" href="../../d0/d51/approximate__pi_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   78</span>}</div>
-<div class="ttc" id="aapproximate__pi_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../d0/d51/approximate__pi_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> approximate_pi.cpp:58</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   80</span>           {</div>
+<div class="line"><span class="lineno">   81</span>    <a class="code hl_function" href="../../d0/d51/approximate__pi_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e">tests</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   83</span>}</div>
+<div class="ttc" id="aapproximate__pi_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="../../d0/d51/approximate__pi_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> approximate_pi.cpp:62</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d51/approximate__pi_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph.svg" width="518" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d51/approximate__pi_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="524" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
 </div>
-<a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8dca7b867074164d5f45b0f3851269d">&#9670;&#160;</a></span>test()</h2>
+<a id="a483bb8ccf42aaf7375a83e91490eda1e" name="a483bb8ccf42aaf7375a83e91490eda1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">&#9670;&#160;</a></span>tests()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -201,7 +195,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void test </td>
+          <td class="memname">static void tests </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -216,28 +210,31 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   58</span>                   {</div>
-<div class="line"><span class="lineno">   59</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;math::Point&gt;</a> rands;</div>
-<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">for</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> i = 0; i &lt; 100000; i++) {</div>
-<div class="line"><span class="lineno">   61</span>        <a class="code hl_struct" href="../../de/d4f/structmath_1_1_point.html">math::Point</a> p;</div>
-<div class="line"><span class="lineno">   62</span>        p.x = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">rand</a>() / (double)RAND_MAX; <span class="comment">// 0 &lt;= x &lt;= 1</span></div>
-<div class="line"><span class="lineno">   63</span>        p.y = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">rand</a>() / (double)RAND_MAX; <span class="comment">// 0 &lt;= y &lt;= 1</span></div>
-<div class="line"><span class="lineno">   64</span>        rands.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(p);</div>
-<div class="line"><span class="lineno">   65</span>    }</div>
-<div class="line"><span class="lineno">   66</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_function" href="../../dd/d47/namespacemath.html#abf7f2a6d91f1ca6c89698792aea3f188">math::approximate_pi</a>(rands) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;          <span class="comment">// ~3.14</span></div>
-<div class="line"><span class="lineno">   67</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>                    {</div>
+<div class="line"><span class="lineno">   63</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;math::Point&gt;</a> rands;</div>
+<div class="line"><span class="lineno">   64</span>    <span class="keywordflow">for</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> i = 0; i &lt; 100000; i++) {</div>
+<div class="line"><span class="lineno">   65</span>        <a class="code hl_typedef" href="../../dd/d47/namespacemath.html#a937dc0c826acf3e6c0d2785527f7e9d7">math::Point</a> p;</div>
+<div class="line"><span class="lineno">   66</span>        p.x = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">rand</a>() / <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(RAND_MAX);  <span class="comment">// 0 &lt;= x &lt;= 1</span></div>
+<div class="line"><span class="lineno">   67</span>        p.y = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">rand</a>() / <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(RAND_MAX);  <span class="comment">// 0 &lt;= y &lt;= 1</span></div>
+<div class="line"><span class="lineno">   68</span>        rands.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(p);</div>
+<div class="line"><span class="lineno">   69</span>    }</div>
+<div class="line"><span class="lineno">   70</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#abf7f2a6d91f1ca6c89698792aea3f188">math::approximate_pi</a>(rands) &gt; 3.135);</div>
+<div class="line"><span class="lineno">   71</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#abf7f2a6d91f1ca6c89698792aea3f188">math::approximate_pi</a>(rands) &lt; 3.145);</div>
+<div class="line"><span class="lineno">   72</span> </div>
+<div class="line"><span class="lineno">   73</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   74</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="anamespacemath_html_abf7f2a6d91f1ca6c89698792aea3f188"><div class="ttname"><a href="../../dd/d47/namespacemath.html#abf7f2a6d91f1ca6c89698792aea3f188">math::approximate_pi</a></div><div class="ttdeci">double approximate_pi(const std::vector&lt; Point &gt; &amp;pts)</div><div class="ttdef"><b>Definition</b> approximate_pi.cpp:35</div></div>
+<div class="ttc" id="anamespacemath_html_a937dc0c826acf3e6c0d2785527f7e9d7"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a937dc0c826acf3e6c0d2785527f7e9d7">math::Point</a></div><div class="ttdeci">{ double x Point</div><div class="ttdoc">structure of points containing two numbers, x and y, such that 0 ≤ x ≤ 1 and 0 ≤ y ≤ 1.</div><div class="ttdef"><b>Definition</b> approximate_pi.cpp:36</div></div>
+<div class="ttc" id="anamespacemath_html_abf7f2a6d91f1ca6c89698792aea3f188"><div class="ttname"><a href="../../dd/d47/namespacemath.html#abf7f2a6d91f1ca6c89698792aea3f188">math::approximate_pi</a></div><div class="ttdeci">double approximate_pi(const std::vector&lt; Point &gt; &amp;pts)</div><div class="ttdoc">This function uses the points in a given vector 'pts' (drawn at random) to return an approximation of...</div><div class="ttdef"><b>Definition</b> approximate_pi.cpp:47</div></div>
 <div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
 <div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
 <div class="ttc" id="asize_t_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a></div></div>
-<div class="ttc" id="astructmath_1_1_point_html"><div class="ttname"><a href="../../de/d4f/structmath_1_1_point.html">math::Point</a></div><div class="ttdef"><b>Definition</b> approximate_pi.cpp:30</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d51/approximate__pi_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="420" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d51/approximate__pi_8cpp_a483bb8ccf42aaf7375a83e91490eda1e_cgraph.svg" width="427" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

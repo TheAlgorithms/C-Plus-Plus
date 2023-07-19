@@ -98,8 +98,9 @@ $(document).ready(function(){initNavTree('dd/d47/namespacemath.html','../../'); 
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">math Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -107,17 +108,20 @@ $(document).ready(function(){initNavTree('dd/d47/namespacemath.html','../../'); 
 <p>for IO operations  
 <a href="../../dd/d47/namespacemath.html#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d4f/structmath_1_1_point.html">Point</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a937dc0c826acf3e6c0d2785527f7e9d7"><td class="memItemLeft" align="right" valign="top"><a id="a937dc0c826acf3e6c0d2785527f7e9d7" name="a937dc0c826acf3e6c0d2785527f7e9d7"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Point</b> = { double x</td></tr>
+<tr class="memdesc:a937dc0c826acf3e6c0d2785527f7e9d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure of points containing two numbers, x and y, such that 0 ≤ x ≤ 1 and 0 ≤ y ≤ 1. <br /></td></tr>
+<tr class="separator:a937dc0c826acf3e6c0d2785527f7e9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab37f3a7302a84179aae682c79d8390bf"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#ab37f3a7302a84179aae682c79d8390bf">aliquot_sum</a> (const uint64_t num)</td></tr>
 <tr class="memdesc:ab37f3a7302a84179aae682c79d8390bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">to return the aliquot sum of a number  <br /></td></tr>
 <tr class="separator:ab37f3a7302a84179aae682c79d8390bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf7f2a6d91f1ca6c89698792aea3f188"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#abf7f2a6d91f1ca6c89698792aea3f188">approximate_pi</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../de/d4f/structmath_1_1_point.html">Point</a> &gt; &amp;pts)</td></tr>
+<tr class="memitem:abf7f2a6d91f1ca6c89698792aea3f188"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#abf7f2a6d91f1ca6c89698792aea3f188">approximate_pi</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../dd/d47/namespacemath.html#a937dc0c826acf3e6c0d2785527f7e9d7">Point</a> &gt; &amp;pts)</td></tr>
+<tr class="memdesc:abf7f2a6d91f1ca6c89698792aea3f188"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function uses the points in a given vector 'pts' (drawn at random) to return an approximation of the number π.  <br /></td></tr>
 <tr class="separator:abf7f2a6d91f1ca6c89698792aea3f188"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a971ce57e368f2f631cf1f4ff3f864049"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a971ce57e368f2f631cf1f4ff3f864049"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#a971ce57e368f2f631cf1f4ff3f864049">square_area</a> (T length)</td></tr>
@@ -263,6 +267,12 @@ Functions</h2></td></tr>
 <tr class="memitem:abde24398be43538c62e4a496968e60ca"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#abde24398be43538c62e4a496968e60ca">cylinder_volume</a> (T radius, T height, double PI=3.14)</td></tr>
 <tr class="memdesc:abde24398be43538c62e4a496968e60ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">The volume of a <a href="https://en.wikipedia.org/wiki/Cylinder" target="_blank">cylinder</a>  <br /></td></tr>
 <tr class="separator:abde24398be43538c62e4a496968e60ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a7d9210f6c94ea8c936a8162dc16c829a"><td class="memItemLeft" align="right" valign="top"><a id="a7d9210f6c94ea8c936a8162dc16c829a" name="a7d9210f6c94ea8c936a8162dc16c829a"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>y</b></td></tr>
+<tr class="separator:a7d9210f6c94ea8c936a8162dc16c829a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>for IO operations </p>
@@ -271,13 +281,12 @@ Functions</h2></td></tr>
 <p>Evaluate recurrence relation using <a href="https://www.hackerearth.com/practice/notes/matrix-exponentiation-1/" target="_blank">matrix exponentiation</a>.</p>
 <p>for assert</p>
 <p>Math algorithms.</p>
-<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
 <p>Mathematical algorithms.</p>
 <p>for M_PI definition and pow()</p>
-<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></p>
+<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
 <p>for assert</p>
 <p>Mathematical algorithms</p>
-<p>for IO operations for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
+<p>for assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a> for IO operations</p>
 <p>Mathematical algorithms</p>
 <p>for assert for uint16_t datatype for IO operations</p>
 <p>Mathematical algorithms</p>
@@ -359,38 +368,32 @@ Algorithm</h3>
         <tr>
           <td class="memname">double math::approximate_pi </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../de/d4f/structmath_1_1_point.html">Point</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../dd/d47/namespacemath.html#a937dc0c826acf3e6c0d2785527f7e9d7">Point</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>pts</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function use the points pts (drawn at random) to return an estimate of the number π using the given points </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>This function uses the points in a given vector 'pts' (drawn at random) to return an approximation of the number π. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pts</td><td>Each item of pts contains a point. A point is represented by a structure containing exactly two numbers, respectively x and y such that 0 ≤ x ≤ 1 and 0 ≤ y ≤ 1. pts always contains at least one item </td></tr>
+    <tr><td class="paramname">pts</td><td>Each item of pts contains a point. A point is represented by the point structure (coded above). </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>an estimate of the number π</dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   35</span>                                                        {<span class="comment"></span></div>
-<div class="line"><span class="lineno">   36</span><span class="comment">    /**</span></div>
-<div class="line"><span class="lineno">   37</span><span class="comment">     * This function use the points pts (drawn at random) to return an estimate of the number π  using the given points</span></div>
-<div class="line"><span class="lineno">   38</span><span class="comment">     * @param pts Each item of pts contains a point. A point is represented by a structure containing exactly </span></div>
-<div class="line"><span class="lineno">   39</span><span class="comment">     * two numbers, respectively x and y such that 0 ≤ x ≤ 1 and 0 ≤ y ≤ 1. </span></div>
-<div class="line"><span class="lineno">   40</span><span class="comment">     * pts always contains at least one item</span></div>
-<div class="line"><span class="lineno">   41</span><span class="comment">     * @return  an estimate of the number π</span></div>
-<div class="line"><span class="lineno">   42</span><span class="comment">     */</span></div>
-<div class="line"><span class="lineno">   43</span>        {</div>
-<div class="line"><span class="lineno">   44</span>            <span class="keywordtype">int</span> count =0;    <span class="comment">// Points in cercle</span></div>
-<div class="line"><span class="lineno">   45</span>            <span class="keywordflow">for</span>(<a class="code hl_struct" href="../../de/d4f/structmath_1_1_point.html">Point</a> p:pts)</div>
-<div class="line"><span class="lineno">   46</span>                if(p.x * p.x + p.y*p.y &lt;= 1)</div>
-<div class="line"><span class="lineno">   47</span>                    ++count;</div>
-<div class="line"><span class="lineno">   48</span>            </div>
-<div class="line"><span class="lineno">   49</span>            <span class="keywordflow">return</span> 4.0*count/pts.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
-<div class="line"><span class="lineno">   50</span>        }</div>
-<div class="line"><span class="lineno">   51</span>    }</div>
+<dl class="section return"><dt>Returns</dt><dd>an estimate of the number π. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>                                                   {</div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordtype">double</span> count = 0;  <span class="comment">// Points in circle</span></div>
+<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">for</span> (<a class="code hl_struct" href="../../d8/dc8/struct_point.html">Point</a> p : pts) {</div>
+<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">if</span> ((p.x * p.x) + (p.y * p.y) &lt;= 1) {</div>
+<div class="line"><span class="lineno">   51</span>            count++;</div>
+<div class="line"><span class="lineno">   52</span>        }</div>
+<div class="line"><span class="lineno">   53</span>    }</div>
+<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">return</span> 4.0 * count / <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(pts.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>());</div>
+<div class="line"><span class="lineno">   55</span>}</div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-<div class="ttc" id="astructmath_1_1_point_html"><div class="ttname"><a href="../../de/d4f/structmath_1_1_point.html">math::Point</a></div><div class="ttdef"><b>Definition</b> approximate_pi.cpp:30</div></div>
+<div class="ttc" id="astruct_point_html"><div class="ttname"><a href="../../d8/dc8/struct_point.html">Point</a></div><div class="ttdef"><b>Definition</b> line_segment_intersection.cpp:12</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
