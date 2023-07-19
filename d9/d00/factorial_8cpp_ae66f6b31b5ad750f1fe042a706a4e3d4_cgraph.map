@@ -1,8 +1,8 @@
 <map id="main" name="main">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,43,55,68"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="103,5,174,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,45,88,33,89,38,56,50"/>
-<area shape="rect" id="Node000003" href="$d9/d00/factorial_8cpp.html#ae9945c15826a9c1b5c141db314b7f8b4" title=" " alt="" coords="105,79,172,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,61,91,73,90,78,54,66"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="119,79,115,70,118,61,125,54,138,52,152,55,160,62,156,66,150,60,138,57,128,59,122,64,121,70,124,77"/>
+<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,29,55,55"/>
+<area shape="rect" id="Node000002" href="$d9/d00/factorial_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e" title="Self&#45;test implementations." alt="" coords="103,29,153,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,40,88,40,88,45,55,45"/>
+<area shape="rect" id="Node000003" href="$dd/d47/namespacemath.html#a7e78996673df791014cfe540b183456a" title="function to find factorial of given number" alt="" coords="201,29,305,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="153,40,186,40,186,45,153,45"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="231,30,227,21,230,11,239,5,253,3,269,6,277,13,274,17,267,10,253,8,241,10,234,14,232,20,236,28"/>
 </map>

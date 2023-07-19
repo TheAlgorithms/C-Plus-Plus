@@ -98,60 +98,49 @@ $(document).ready(function(){initNavTree('d9/d00/factorial_8cpp.html','../../');
 
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">factorial.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>C++ program to find factorial of given number.  
+<p>Find the <a href="https://en.wikipedia.org/wiki/Factorial" target="_blank">factorial</a> of a given number.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for factorial.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d78/factorial_8cpp__incl.svg" width="136" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d78/factorial_8cpp__incl.svg" width="171" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:dd/d47/namespacemath"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html">math</a></td></tr>
+<tr class="memdesc:dd/d47/namespacemath"><td class="mdescLeft">&#160;</td><td class="mdescRight">for IO operations <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae9945c15826a9c1b5c141db314b7f8b4"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d00/factorial_8cpp.html#ae9945c15826a9c1b5c141db314b7f8b4">factorial</a> (unsigned int n)</td></tr>
-<tr class="separator:ae9945c15826a9c1b5c141db314b7f8b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e78996673df791014cfe540b183456a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#a7e78996673df791014cfe540b183456a">math::factorial</a> (uint8_t n)</td></tr>
+<tr class="memdesc:a7e78996673df791014cfe540b183456a"><td class="mdescLeft">&#160;</td><td class="mdescRight">function to find factorial of given number  <br /></td></tr>
+<tr class="separator:a7e78996673df791014cfe540b183456a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a483bb8ccf42aaf7375a83e91490eda1e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d00/factorial_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e">tests</a> ()</td></tr>
+<tr class="memdesc:a483bb8ccf42aaf7375a83e91490eda1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test implementations.  <br /></td></tr>
+<tr class="separator:a483bb8ccf42aaf7375a83e91490eda1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d00/factorial_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <br /></td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>C++ program to find factorial of given number. </p>
+<div class="textblock"><p>Find the <a href="https://en.wikipedia.org/wiki/Factorial" target="_blank">factorial</a> of a given number. </p>
+<p>Calculate factorial via recursion  </p><p class="formulaDsp">
+\[n! = n\times(n-1)\times(n-2)\times(n-3)\times\ldots\times3\times2\times1
+      = n\times(n-1)!\]
+</p>
+<p> for example: \(5! = 5\times4! = 5\times4\times3\times2\times1 = 120\)</p>
+<dl class="section author"><dt>Author</dt><dd><a href="https://github.com/Akshay1910" target="_blank">Akshay Gupta</a> </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="ae9945c15826a9c1b5c141db314b7f8b4" name="ae9945c15826a9c1b5c141db314b7f8b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9945c15826a9c1b5c141db314b7f8b4">&#9670;&#160;</a></span>factorial()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int factorial </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>n</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>function to find factorial of given number </p>
-<div class="fragment"><div class="line"><span class="lineno">    8</span>                                       {</div>
-<div class="line"><span class="lineno">    9</span>    <span class="keywordflow">if</span> (n == 0)</div>
-<div class="line"><span class="lineno">   10</span>        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><span class="lineno">   11</span>    <span class="keywordflow">return</span> n * <a class="code hl_function" href="../../d9/d00/factorial_8cpp.html#ae9945c15826a9c1b5c141db314b7f8b4">factorial</a>(n - 1);</div>
-<div class="line"><span class="lineno">   12</span>}</div>
-<div class="ttc" id="afactorial_8cpp_html_ae9945c15826a9c1b5c141db314b7f8b4"><div class="ttname"><a href="../../d9/d00/factorial_8cpp.html#ae9945c15826a9c1b5c141db314b7f8b4">factorial</a></div><div class="ttdeci">unsigned int factorial(unsigned int n)</div><div class="ttdef"><b>Definition</b> factorial.cpp:8</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d00/factorial_8cpp_ae9945c15826a9c1b5c141db314b7f8b4_cgraph.svg" width="79" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
-</div>
-</div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
 
@@ -167,19 +156,61 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Main function </p>
-<div class="fragment"><div class="line"><span class="lineno">   15</span>           {</div>
-<div class="line"><span class="lineno">   16</span>    <span class="keywordtype">int</span> num = 5;</div>
-<div class="line"><span class="lineno">   17</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Factorial of &quot;</span> &lt;&lt; num &lt;&lt; <span class="stringliteral">&quot; is &quot;</span> &lt;&lt; <a class="code hl_function" href="../../d9/d00/factorial_8cpp.html#ae9945c15826a9c1b5c141db314b7f8b4">factorial</a>(num)</div>
-<div class="line"><span class="lineno">   18</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   19</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   20</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
+
+<p>Main function. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>           {</div>
+<div class="line"><span class="lineno">   58</span>    <a class="code hl_function" href="../../d9/d00/factorial_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e">tests</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   60</span>}</div>
+<div class="ttc" id="afactorial_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="../../d9/d00/factorial_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> factorial.cpp:44</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d00/factorial_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="180" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d00/factorial_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="311" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a483bb8ccf42aaf7375a83e91490eda1e" name="a483bb8ccf42aaf7375a83e91490eda1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">&#9670;&#160;</a></span>tests()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tests </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Self-test implementations. </p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>                    {</div>
+<div class="line"><span class="lineno">   45</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a7e78996673df791014cfe540b183456a">math::factorial</a>(1) == 1);</div>
+<div class="line"><span class="lineno">   46</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a7e78996673df791014cfe540b183456a">math::factorial</a>(0) == 1);</div>
+<div class="line"><span class="lineno">   47</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a7e78996673df791014cfe540b183456a">math::factorial</a>(5) == 120);</div>
+<div class="line"><span class="lineno">   48</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a7e78996673df791014cfe540b183456a">math::factorial</a>(10) == 3628800);</div>
+<div class="line"><span class="lineno">   49</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a7e78996673df791014cfe540b183456a">math::factorial</a>(20) == 2432902008176640000);</div>
+<div class="line"><span class="lineno">   50</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have passed successfully!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   51</span>}</div>
+<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
+<div class="ttc" id="anamespacemath_html_a7e78996673df791014cfe540b183456a"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a7e78996673df791014cfe540b183456a">math::factorial</a></div><div class="ttdeci">uint64_t factorial(uint8_t n)</div><div class="ttdoc">function to find factorial of given number</div><div class="ttdef"><b>Definition</b> factorial.cpp:29</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d00/factorial_8cpp_a483bb8ccf42aaf7375a83e91490eda1e_cgraph.svg" width="214" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

@@ -172,6 +172,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac37d3ba52eb296597d7a024ba8c4a5a5"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">phiFunction</a> (uint64_t n)</td></tr>
 <tr class="memdesc:ac37d3ba52eb296597d7a024ba8c4a5a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate Euler's Totient.  <br /></td></tr>
 <tr class="separator:ac37d3ba52eb296597d7a024ba8c4a5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e78996673df791014cfe540b183456a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#a7e78996673df791014cfe540b183456a">factorial</a> (uint8_t n)</td></tr>
+<tr class="memdesc:a7e78996673df791014cfe540b183456a"><td class="mdescLeft">&#160;</td><td class="mdescRight">function to find factorial of given number  <br /></td></tr>
+<tr class="separator:a7e78996673df791014cfe540b183456a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec65db4e5c7317323227f026fe50ef11"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#aec65db4e5c7317323227f026fe50ef11">integral_approx</a> (double lb, double ub, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt; double(double)&gt; &amp;func, double delta=.0001)</td></tr>
 <tr class="memdesc:aec65db4e5c7317323227f026fe50ef11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes integral approximation.  <br /></td></tr>
 <tr class="separator:aec65db4e5c7317323227f026fe50ef11"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -841,6 +844,49 @@ template&lt;typename T &gt; </div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d47/namespacemath_abde24398be43538c62e4a496968e60ca_cgraph.svg" width="283" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a7e78996673df791014cfe540b183456a" name="a7e78996673df791014cfe540b183456a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e78996673df791014cfe540b183456a">&#9670;&#160;</a></span>factorial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t math::factorial </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>function to find factorial of given number </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>is the number which is to be factorialized </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>Maximum value for the parameter is 20 as 21! cannot be represented in 64 bit unsigned int </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   29</span>                              {</div>
+<div class="line"><span class="lineno">   30</span>    <span class="keywordflow">if</span> (n &lt; 20) {</div>
+<div class="line"><span class="lineno">   31</span>        <span class="keywordflow">throw</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a>(<span class="stringliteral">&quot;maximum value is 20\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   32</span>    }</div>
+<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">if</span> (n == 0) {</div>
+<div class="line"><span class="lineno">   34</span>        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><span class="lineno">   35</span>    }</div>
+<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">return</span> n * <a class="code hl_function" href="../../dd/d47/namespacemath.html#a7e78996673df791014cfe540b183456a">factorial</a>(n - 1);</div>
+<div class="line"><span class="lineno">   37</span>}</div>
+<div class="ttc" id="ainvalid_argument_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a></div></div>
+<div class="ttc" id="anamespacemath_html_a7e78996673df791014cfe540b183456a"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a7e78996673df791014cfe540b183456a">math::factorial</a></div><div class="ttdeci">uint64_t factorial(uint8_t n)</div><div class="ttdoc">function to find factorial of given number</div><div class="ttdef"><b>Definition</b> factorial.cpp:29</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d47/namespacemath_a7e78996673df791014cfe540b183456a_cgraph.svg" width="115" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -1666,7 +1712,6 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">   90</span>}</div>
 <div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
 <div class="ttc" id="acomplex_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex</a></div></div>
-<div class="ttc" id="ainvalid_argument_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a></div></div>
 <div class="ttc" id="asqrt_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a></div><div class="ttdeci">T sqrt(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
