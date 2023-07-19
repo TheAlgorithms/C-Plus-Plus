@@ -44,7 +44,7 @@ jobs:
         name: Commit, push, and create a PR
         run: |
           git checkout -b clang-tidy-${{ github.sha }}
-          git commit -am "fix: clang-format and clang-tidy fixes for ${GITHUB_SHA::8}" || true
+          git commit -am "fix: clang-format and clang-tidy fixes for ${GITHUB_SHA::8}"
           git push origin clang-tidy-${{ github.sha }}:clang-tidy-${{ github.sha }}
 
           if [[ $(git log --branches --not --remotes) ]]; then
