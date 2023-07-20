@@ -78,7 +78,7 @@ int64_t modInverse(const int64_t& a, const int64_t& m) {
  */
 class NCRModuloP {
  private:
-    const int64_t p;  /// the p from (nCr % p)
+    const int64_t p = 0;  /// the p from (nCr % p)
     const std::vector<int64_t>
         fac;  /// stores precomputed factorial(i) % p value
 
