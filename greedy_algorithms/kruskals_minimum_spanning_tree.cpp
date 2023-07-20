@@ -45,7 +45,7 @@ void findMinimumEdge(const int &infinity,
             }
         }
         std::cout << i << "  -  " << minIndex << "\t" << graph[i][minIndex]
-                  << std::endl;
+                  << "\n";
     }
 }
 }  // namespace greedy_algorithms
