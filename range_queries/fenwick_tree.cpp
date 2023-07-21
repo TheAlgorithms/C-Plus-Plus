@@ -8,7 +8,7 @@
  * A Fenwick tree or binary indexed tree (BIT) is a clever implementation of a
  * datastructure called bionomal tree. It can update values and solve range
  * queries with operations that is; commulative, associative and has an
- * inverse for this type of element. It can also solve inmutable range queries
+ * inverse for this type of element. It can also solve immutable range queries
  * (min/max), when operations only are associative over this type of element.
  * Some of these restrictions can be removed, by storing redunant information;
  * like in max/min range queries.
