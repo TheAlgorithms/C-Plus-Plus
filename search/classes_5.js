@@ -5,7 +5,7 @@ var searchData=
   ['false_5ftype_2',['false_type',['http://en.cppreference.com/w/cpp/types/integral_constant.html',0,'std']]],
   ['fcfs_3',['FCFS',['../dd/dca/class_f_c_f_s.html',1,'']]],
   ['femto_4',['femto',['http://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',0,'std']]],
-  ['fenwicktree_5',['FenwickTree',['../dd/d91/class_fenwick_tree.html',1,'']]],
+  ['fenwick_5ftree_5',['fenwick_tree',['../de/d0d/classrange__queries_1_1fenwick__tree.html',1,'range_queries']]],
   ['file_6',['FILE',['http://en.cppreference.com/w/cpp/io/c.html',0,'std']]],
   ['filebuf_7',['filebuf',['http://en.cppreference.com/w/cpp/io/basic_filebuf.html',0,'std']]],
   ['fisher_5ff_5fdistribution_8',['fisher_f_distribution',['http://en.cppreference.com/w/cpp/numeric/random/fisher_f_distribution.html',0,'std']]],

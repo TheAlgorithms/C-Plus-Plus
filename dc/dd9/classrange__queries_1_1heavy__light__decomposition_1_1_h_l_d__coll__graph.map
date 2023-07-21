@@ -1,20 +1,19 @@
 <map id="range_queries::heavy_light_decomposition::HLD&lt; X &gt;" name="range_queries::heavy_light_decomposition::HLD&lt; X &gt;">
-<area shape="rect" id="Node000001" title="The Heavy&#45;Light Decomposition class." alt="" coords="712,198,857,254"/>
-<area shape="rect" id="Node000002" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html" title="A Basic Tree, which supports binary lifting." alt="" coords="517,107,662,163"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="666,167,724,195,722,200,663,172"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="241,5,380,46"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="395,45,494,79,543,104,541,109,492,84,393,50"/>
-<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list.html" title=" " alt="" coords="15,13,117,39"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="132,23,241,23,241,28,132,28"/>
-<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="232,148,389,189"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="404,155,516,141,517,146,404,160"/>
-<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="5,156,127,181"/>
-<area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="102,187,161,219,233,248,350,280,399,288,445,291,541,284,662,263,710,250,712,255,663,268,542,289,445,296,398,293,349,285,231,254,159,224,99,191"/>
-<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="133,149,150,146,246,129,321,122,396,121,493,124,517,126,516,131,493,130,396,126,321,127,246,135,151,151,135,154"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="142,166,231,166,231,171,142,171"/>
-<area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="252,213,369,239"/>
-<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="382,206,492,174,526,161,528,166,494,179,384,212"/>
-<area shape="rect" id="Node000008" href="$d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html" title="Segment Tree, to store heavy chains." alt="" coords="517,198,662,254"/>
-<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="384,223,517,223,517,228,384,228"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="677,223,711,223,711,228,677,228"/>
+<area shape="rect" id="Node000001" title="The Heavy&#45;Light Decomposition class." alt="" coords="660,147,805,203"/>
+<area shape="rect" id="Node000002" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html" title="A Basic Tree, which supports binary lifting." alt="" coords="465,67,610,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="622,127,664,144,662,149,620,131"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="222,71,361,111"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="375,90,465,91,465,96,375,95"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list.html" title=" " alt="" coords="5,78,108,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="123,88,222,88,222,94,123,94"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="213,5,370,46"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="381,48,465,72,464,77,379,53"/>
+<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="231,241,352,267"/>
+<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="367,266,421,272,483,275,547,271,610,257,635,247,659,233,700,201,704,205,662,237,637,252,611,263,548,276,483,280,421,277,366,271"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="366,243,405,229,439,206,449,189,451,172,453,153,463,133,475,121,479,125,467,137,458,155,457,173,454,191,443,210,407,234,367,248"/>
+<area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="233,148,350,173"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="356,141,464,112,465,117,357,146"/>
+<area shape="rect" id="Node000008" href="$d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html" title="Segment Tree, to store heavy chains." alt="" coords="465,147,610,203"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="365,165,394,167,465,171,464,176,394,173,364,170"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="625,172,659,172,659,178,625,178"/>
 </map>

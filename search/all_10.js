@@ -4,7 +4,7 @@ var searchData=
   ['ode_5fforward_5feuler_2ecpp_1',['ode_forward_euler.cpp',['../db/dd3/ode__forward__euler_8cpp.html',1,'']]],
   ['ode_5fmidpoint_5feuler_2ecpp_2',['ode_midpoint_euler.cpp',['../d6/dd3/ode__midpoint__euler_8cpp.html',1,'']]],
   ['ode_5fsemi_5fimplicit_5feuler_2ecpp_3',['ode_semi_implicit_euler.cpp',['../d3/d06/ode__semi__implicit__euler_8cpp.html',1,'']]],
-  ['offset_4',['offset',['../dd/d91/class_fenwick_tree.html#aaae15ea71455315e257baa11017cec10',1,'FenwickTree']]],
+  ['offset_4',['offset',['../de/d0d/classrange__queries_1_1fenwick__tree.html#ab492ebf07cab0e3c32d277ad986de801',1,'range_queries::fenwick_tree']]],
   ['ofstream_5',['ofstream',['http://en.cppreference.com/w/cpp/io/basic_ofstream/basic_ofstream.html',0,'std::ofstream::ofstream()'],['http://en.cppreference.com/w/cpp/io/basic_ofstream.html',0,'std::ofstream']]],
   ['ols_5ftest_6',['ols_test',['../dc/d38/ordinary__least__squares__regressor_8cpp.html#a4261f3c3c3dfdb86f3004eb8aaffea8d',1,'ordinary_least_squares_regressor.cpp']]],
   ['on_5fsegment_7',['on_segment',['../d4/db4/struct_segment_intersection.html#a008941b2272866c64cdaf959afa939bf',1,'SegmentIntersection']]],

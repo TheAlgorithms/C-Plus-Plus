@@ -22,8 +22,8 @@
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="166.12,-19.25 69.88,-19.25 69.88,0 166.12,0 166.12,-19.25"/>
-<text text-anchor="middle" x="118" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">graph::Graph&lt; T &gt;</text>
+<polygon fill="#999999" stroke="#666666" points="187.12,-19.25 90.88,-19.25 90.88,0 187.12,0 187.12,-19.25"/>
+<text text-anchor="middle" x="139" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">graph::Graph&lt; T &gt;</text>
 </a>
 </g>
 </g>
@@ -41,11 +41,11 @@
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M68.28,-57.44C73.19,-50.63 78.89,-43.38 84.75,-37.25 90.99,-30.73 98.83,-24.38 105.33,-19.51"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="64.96,-55.09 62.13,-65.3 70.71,-59.08 64.96,-55.09"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M67.51,-57.42C72.66,-50.35 78.91,-42.95 85.75,-37.25 94.41,-30.04 105.34,-24.14 115.05,-19.75"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="64.36,-54.82 61.59,-65.05 70.13,-58.78 64.36,-54.82"/>
 </a>
 </g>
-<text text-anchor="middle" x="117.62" y="-39" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> adjacency_list</text>
+<text text-anchor="middle" x="118.62" y="-39" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> adjacency_list</text>
 </g>
 <!-- Node3 -->
 <g id="Node000003" class="node">
@@ -80,30 +80,11 @@
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node4&#45;&gt;Node1</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M166.93,-57.55C161.82,-50.74 155.94,-43.47 150,-37.25 143.91,-30.88 136.35,-24.53 130.12,-19.63"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="164.65,-59.36 173.36,-65.39 170.31,-55.24 164.65,-59.36"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M168.27,-57.28C160.1,-44.26 150.42,-28.82 144.49,-19.38"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="165.6,-58.61 173.88,-65.22 171.53,-54.89 165.6,-58.61"/>
 </a>
 </g>
-<text text-anchor="middle" x="181.5" y="-39" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> neighbors</text>
-</g>
-<!-- Node5 -->
-<g id="Node000005" class="node">
-<title>Node5</title>
-<g id="a_Node000005"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="228.5,-163.5 137.5,-163.5 137.5,-144.25 228.5,-144.25 228.5,-163.5"/>
-<text text-anchor="middle" x="183" y="-150" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; int &gt;</text>
-</a>
-</g>
-</g>
-<!-- Node5&#45;&gt;Node4 -->
-<g id="edge4_Node000004_Node000005" class="edge">
-<title>Node5&#45;&gt;Node4</title>
-<g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M183,-133.03C183,-121.7 183,-107.75 183,-97.42"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="179.5,-132.99 183,-142.99 186.5,-132.99 179.5,-132.99"/>
-</a>
-</g>
-<text text-anchor="middle" x="204.38" y="-116.75" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> elements</text>
+<text text-anchor="middle" x="184.5" y="-39" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> neighbors</text>
 </g>
 </g>
 </svg>

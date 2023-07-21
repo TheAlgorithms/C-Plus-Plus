@@ -99,12 +99,13 @@ $(document).ready(function(){initNavTree('d6/d2e/fenwick__tree_8cpp.html','../..
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">fenwick_tree.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Fenwick tree.  
+<p><a href="https://en.wikipedia.org/wiki/Fenwick_tree" target="_blank">Fenwick Tree</a> algorithm implementation  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
@@ -117,17 +118,32 @@ Include dependency graph for fenwick_tree.cpp:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d91/class_fenwick_tree.html">FenwickTree</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d0d/classrange__queries_1_1fenwick__tree.html">range_queries::fenwick_tree</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class that initializes the Fenwick Tree.  <a href="../../de/d0d/classrange__queries_1_1fenwick__tree.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:dd/d69/namespacerange__queries"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d69/namespacerange__queries.html">range_queries</a></td></tr>
+<tr class="memdesc:dd/d69/namespacerange__queries"><td class="mdescLeft">&#160;</td><td class="mdescRight">Algorithms and Data Structures that support range queries and updates. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a483bb8ccf42aaf7375a83e91490eda1e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2e/fenwick__tree_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e">tests</a> ()</td></tr>
+<tr class="memdesc:a483bb8ccf42aaf7375a83e91490eda1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test implementations.  <br /></td></tr>
+<tr class="separator:a483bb8ccf42aaf7375a83e91490eda1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2e/fenwick__tree_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <br /></td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Fenwick tree. </p>
-<p>A Fenwick tree or binary indexed tree is a data structure that can efficiently update elements and calculate prefix sums in a table of numbers. </p>
+<div class="textblock"><p><a href="https://en.wikipedia.org/wiki/Fenwick_tree" target="_blank">Fenwick Tree</a> algorithm implementation </p>
+<p><em>From Wikipedia, the free encyclopedia.</em></p>
+<p>A Fenwick tree or binary indexed tree (BIT) is a clever implementation of a datastructure called bionomal tree. It can update values and solve range queries with operations that is; commulative, associative and has an inverse for this type of element. It can also solve immutable range queries (min/max), when operations only are associative over this type of element. Some of these restrictions can be removed, by storing redunant information; like in max/min range queries.</p>
+<dl class="section author"><dt>Author</dt><dd><a href="https://github.com/mateusz-grzegorzek" target="_blank">Mateusz Grzegorzek</a> </dd>
+<dd>
+<a href="https://github.com/Panquesito7" target="_blank">David Leal</a> </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -144,27 +160,67 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Main function </p>
-<div class="fragment"><div class="line"><span class="lineno">   69</span>           {</div>
-<div class="line"><span class="lineno">   70</span>    <span class="keywordtype">int</span> n = 5;</div>
-<div class="line"><span class="lineno">   71</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> arr = {1, 2, 3, 4, 5};</div>
-<div class="line"><span class="lineno">   72</span>    <a class="code hl_class" href="../../dd/d91/class_fenwick_tree.html">FenwickTree</a> fenwick_tree(arr);</div>
-<div class="line"><span class="lineno">   73</span> </div>
-<div class="line"><span class="lineno">   74</span>    assert(fenwick_tree.sum_range(0, 0) == 1);</div>
-<div class="line"><span class="lineno">   75</span>    assert(fenwick_tree.sum_range(0, 1) == 3);</div>
-<div class="line"><span class="lineno">   76</span>    assert(fenwick_tree.sum_range(0, 2) == 6);</div>
-<div class="line"><span class="lineno">   77</span>    fenwick_tree.update(0, 6);</div>
-<div class="line"><span class="lineno">   78</span>    assert(fenwick_tree.sum_range(0, 0) == 6);</div>
-<div class="line"><span class="lineno">   79</span>    assert(fenwick_tree.sum_range(0, 1) == 8);</div>
-<div class="line"><span class="lineno">   80</span>    assert(fenwick_tree.sum_range(0, 2) == 11);</div>
-<div class="line"><span class="lineno">   81</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   82</span>}</div>
-<div class="ttc" id="aclass_fenwick_tree_html"><div class="ttname"><a href="../../dd/d91/class_fenwick_tree.html">FenwickTree</a></div><div class="ttdef"><b>Definition</b> fenwick_tree.cpp:17</div></div>
+
+<p>Main function. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  132</span>           {</div>
+<div class="line"><span class="lineno">  133</span>    <a class="code hl_function" href="../../d6/d2e/fenwick__tree_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e">tests</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">  134</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  135</span>}</div>
+<div class="ttc" id="afenwick__tree_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="../../d6/d2e/fenwick__tree_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> fenwick_tree.cpp:114</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d6/d2e/fenwick__tree_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a483bb8ccf42aaf7375a83e91490eda1e" name="a483bb8ccf42aaf7375a83e91490eda1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">&#9670;&#160;</a></span>tests()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tests </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Self-test implementations. </p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  114</span>                    {</div>
+<div class="line"><span class="lineno">  115</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> arr = {1, 2, 3, 4, 5};</div>
+<div class="line"><span class="lineno">  116</span>    <a class="code hl_class" href="../../de/d0d/classrange__queries_1_1fenwick__tree.html">range_queries::fenwick_tree</a> fenwick_tree(arr);</div>
+<div class="line"><span class="lineno">  117</span> </div>
+<div class="line"><span class="lineno">  118</span>    assert(fenwick_tree.sum_range(0, 0) == 1);</div>
+<div class="line"><span class="lineno">  119</span>    assert(fenwick_tree.sum_range(0, 1) == 3);</div>
+<div class="line"><span class="lineno">  120</span>    assert(fenwick_tree.sum_range(0, 2) == 6);</div>
+<div class="line"><span class="lineno">  121</span>    assert(fenwick_tree.sum_range(0, 3) == 10);</div>
+<div class="line"><span class="lineno">  122</span>    assert(fenwick_tree.sum_range(0, 4) == 15);</div>
+<div class="line"><span class="lineno">  123</span> </div>
+<div class="line"><span class="lineno">  124</span>    fenwick_tree.update(0, 6);</div>
+<div class="line"><span class="lineno">  125</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  126</span>}</div>
+<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
+<div class="ttc" id="aclassrange__queries_1_1fenwick__tree_html"><div class="ttname"><a href="../../de/d0d/classrange__queries_1_1fenwick__tree.html">range_queries::fenwick_tree</a></div><div class="ttdoc">The class that initializes the Fenwick Tree.</div><div class="ttdef"><b>Definition</b> fenwick_tree.cpp:32</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d2e/fenwick__tree_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="654" height="87"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d6/d2e/fenwick__tree_8cpp_a483bb8ccf42aaf7375a83e91490eda1e_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>

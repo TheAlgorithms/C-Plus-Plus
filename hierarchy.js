@@ -28,7 +28,7 @@ var hierarchy =
     [ "linear_probing::Entry", "db/d19/structlinear__probing_1_1_entry.html", null ],
     [ "quadratic_probing::Entry", "da/dd1/structquadratic__probing_1_1_entry.html", null ],
     [ "FCFS< S, T, E >", "dd/dca/class_f_c_f_s.html", null ],
-    [ "FenwickTree", "dd/d91/class_fenwick_tree.html", null ],
+    [ "range_queries::fenwick_tree", "de/d0d/classrange__queries_1_1fenwick__tree.html", null ],
     [ "backtracking::generate_parentheses", "df/de5/classbacktracking_1_1generate__parentheses.html", null ],
     [ "probability::geometric_dist::geometric_distribution", "da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html", null ],
     [ "Graph", "da/d9a/class_graph.html", null ],

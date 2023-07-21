@@ -20,7 +20,7 @@ var searchData=
   ['fegetexceptflag_17',['fegetexceptflag',['http://en.cppreference.com/w/cpp/numeric/fenv/feexceptflag.html',0,'std']]],
   ['fegetround_18',['fegetround',['http://en.cppreference.com/w/cpp/numeric/fenv/feround.html',0,'std']]],
   ['feholdexcept_19',['feholdexcept',['http://en.cppreference.com/w/cpp/numeric/fenv/feholdexcept.html',0,'std']]],
-  ['fenwicktree_20',['FenwickTree',['../dd/d91/class_fenwick_tree.html#aaddab1f03d4941212a82cc647b1adb17',1,'FenwickTree::FenwickTree(const std::vector&lt; int &gt; &amp;arr)'],['../dd/d91/class_fenwick_tree.html#a70f8c261393ca09ec1ad716ac806ead6',1,'FenwickTree::FenwickTree(int x)']]],
+  ['fenwick_5ftree_20',['fenwick_tree',['../de/d0d/classrange__queries_1_1fenwick__tree.html#a5ea37183524553bbf2234a36a44a4b9a',1,'range_queries::fenwick_tree::fenwick_tree(const std::vector&lt; T &gt; &amp;arr)'],['../de/d0d/classrange__queries_1_1fenwick__tree.html#aef7ba885b91af093e9e514358fa0f36c',1,'range_queries::fenwick_tree::fenwick_tree(T x)']]],
   ['feof_21',['feof',['http://en.cppreference.com/w/cpp/io/c/feof.html',0,'std']]],
   ['feraiseexcept_22',['feraiseexcept',['http://en.cppreference.com/w/cpp/numeric/fenv/feraiseexcept.html',0,'std']]],
   ['ferror_23',['ferror',['http://en.cppreference.com/w/cpp/io/c/ferror.html',0,'std']]],

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['oct_0',['oct',['http://en.cppreference.com/w/cpp/io/manip/hex.html',0,'std']]],
-  ['offset_1',['offset',['../dd/d91/class_fenwick_tree.html#aaae15ea71455315e257baa11017cec10',1,'FenwickTree']]],
+  ['offset_1',['offset',['../de/d0d/classrange__queries_1_1fenwick__tree.html#ab492ebf07cab0e3c32d277ad986de801',1,'range_queries::fenwick_tree']]],
   ['ofstream_2',['ofstream',['http://en.cppreference.com/w/cpp/io/basic_ofstream/basic_ofstream.html',0,'std::ofstream']]],
   ['ols_5ftest_3',['ols_test',['../dc/d38/ordinary__least__squares__regressor_8cpp.html#a4261f3c3c3dfdb86f3004eb8aaffea8d',1,'ordinary_least_squares_regressor.cpp']]],
   ['on_5fsegment_4',['on_segment',['../d4/db4/struct_segment_intersection.html#a008941b2272866c64cdaf959afa939bf',1,'SegmentIntersection']]],
