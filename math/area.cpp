@@ -1,14 +1,18 @@
 /**
  * @file
- * @brief Implementations for the [area](https://en.wikipedia.org/wiki/Area) of
- * various shapes
- * @details The area of a shape is the amount of 2D space it takes up.
+ * @brief Basic function implementations for working out the
+ * [area](https://en.wikipedia.org/wiki/Area) of various shapes.
+ *
+ * @details
+ * The area of a shape is the amount of 2D space it takes up.
  * All shapes have a formula to get the area of any given shape.
  * These implementations support multiple return types.
  *
  * @author [Focusucof](https://github.com/Focusucof)
  */
-#define _USE_MATH_DEFINES
+
+#define _USE_MATH_DEFINES  /// This definition is required to use M_PI.
+
 #include <cassert>   /// for assert
 #include <cmath>     /// for M_PI definition and pow()
 #include <cstdint>   /// for uint16_t datatype
