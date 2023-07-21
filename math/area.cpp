@@ -25,6 +25,7 @@
 namespace math {
 /**
  * @brief area of a [square](https://en.wikipedia.org/wiki/Square) (l * l)
+ * @tparam T the type of the input parameter (e.g., `int`, `float`, etc.)
  * @param length is the length of the square
  * @returns area of square
  */
