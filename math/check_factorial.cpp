@@ -1,64 +1,73 @@
 /**
  * @file
- * @brief A simple program to check if the given number is a factorial of some
- * number or not.
+ * @brief A simple program to check if the given number is a
+ * [factorial](https://en.wikipedia.org/wiki/Factorial) of some number or not.
+ *
+ * @details A factorial number is the sum of k! where any value of k is a
+ * positive integer. https://www.mathsisfun.com/numbers/factorial.html
+ *
  * @author [Divyajyoti Ukirde](https://github.com/divyajyotiuk)
+ * @author [ewd00010](https://github.com/ewd00010)
  */
-#include <cassert>
-#include <iostream>
+#include <cassert>   /// for assert
+#include <iostream>  /// for cout
 
 /**
- * Function to check if the given number is factorial of some number or not.
- * @param n number to be checked.
- * @return if number is a factorial, returns true, else false.
+ * @namespace
+ * @brief Mathematical algorithms
  */
-
+namespace math {
+/**
+ * @brief Function to check if the given number is factorial of some number or
+ * not.
+ * @param n number to be checked.
+ * @return true if number is a factorial returns true
+ * @return false if number is not a factorial
+ */
 bool is_factorial(uint64_t n) {
-    if (n <= 0) {
+    if (n <= 0) {  // factorial numbers are only ever positive Integers
         return false;
     }
-    for (uint32_t i = 1;; i++) {
-        if (n % i != 0) {
-            break;
-        }
-        n = n / i;
-    }
-    if (n == 1) {
-        return true;
-    } else {
-        return false;
-    }
-}
 
-/** Test function
+    /*!
+     * this loop is basically a reverse factorial calculation, where instead
+     * of multiplying we are dividing. We start at i = 2 since i = 1 has
+     * no impact division wise
+     */
+    int i = 2;
+    while (n % i == 0) {
+        n = n / i;
+        i++;
+    }
+
+    /*!
+     * if n was the sum of a factorial then it should be divided until it
+     * becomes 1
+     */
+    return (n == 1);
+}
+}  // namespace math
+
+/**
+ * @brief Self-test implementations
  * @returns void
  */
-void tests() {
-    std::cout << "Test 1:\t n=50\n";
-    assert(is_factorial(50) == false);
-    std::cout << "passed\n";
+static void tests() {
+    assert(math::is_factorial(50) == false);
+    assert(math::is_factorial(720) == true);
+    assert(math::is_factorial(0) == false);
+    assert(math::is_factorial(1) == true);
+    assert(math::is_factorial(479001600) == true);
+    assert(math::is_factorial(-24) == false);
 
-    std::cout << "Test 2:\t n=720\n";
-    assert(is_factorial(720) == true);
-    std::cout << "passed\n";
-
-    std::cout << "Test 3:\t n=0\n";
-    assert(is_factorial(0) == false);
-    std::cout << "passed\n";
-
-    std::cout << "Test 4:\t n=479001600\n";
-    assert(is_factorial(479001600) == true);
-    std::cout << "passed\n";
-
-    std::cout << "Test 5:\t n=-24\n";
-    assert(is_factorial(-24) == false);
-    std::cout << "passed\n";
+    std::cout << "All tests have successfully passed!" << std::endl;
 }
 
-/** Main function
+/**
+ * @brief Main function
  * @returns 0 on exit
  */
 int main() {
-    tests();
+    tests();  // run self-test implementations
     return 0;
 }
