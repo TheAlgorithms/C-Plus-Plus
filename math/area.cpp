@@ -25,7 +25,8 @@
 namespace math {
 /**
  * @brief area of a [square](https://en.wikipedia.org/wiki/Square) (l * l)
- * @tparam T the type of the input parameter (e.g., `int`, `float`, etc.)
+ * @tparam T the type of the input parameter 'length' and return value (e.g.,
+ * `int`, `float`, etc.)
  * @param length is the length of the square
  * @returns area of square
  */
@@ -36,6 +37,8 @@ T square_area(T length) {
 
 /**
  * @brief area of a [rectangle](https://en.wikipedia.org/wiki/Rectangle) (l * w)
+ * @tparam T the type of the input parameters and return value (e.g., `int`,
+ * `float`, etc.)
  * @param length is the length of the rectangle
  * @param width is the width of the rectangle
  * @returns area of the rectangle
@@ -48,6 +51,8 @@ T rect_area(T length, T width) {
 /**
  * @brief area of a [triangle](https://en.wikipedia.org/wiki/Triangle) (b * h /
  * 2)
+ * @tparam T the type of the input parameters and return value (e.g., `int`,
+ * `float`, etc.)
  * @param base is the length of the bottom side of the triangle
  * @param height is the length of the tallest point in the triangle
  * @returns area of the triangle
@@ -60,6 +65,8 @@ T triangle_area(T base, T height) {
 /**
  * @brief area of a [circle](https://en.wikipedia.org/wiki/Area_of_a_circle) (pi
  * * r^2)
+ * @tparam T the type of the input parameter and return value (e.g., `int`,
+ * `float`, etc.)
  * @param radius is the radius of the circle
  * @returns area of the circle
  */
@@ -71,6 +78,8 @@ T circle_area(T radius) {
 /**
  * @brief area of a [parallelogram](https://en.wikipedia.org/wiki/Parallelogram)
  * (b * h)
+ * @tparam T the type of the input parameters and return value (e.g., `int`,
+ * `float`, etc.)
  * @param base is the length of the bottom side of the parallelogram
  * @param height is the length of the tallest point in the parallelogram
  * @returns area of the parallelogram
@@ -83,6 +92,8 @@ T parallelogram_area(T base, T height) {
 /**
  * @brief surface area of a [cube](https://en.wikipedia.org/wiki/Cube) ( 6 * (l
  * * l))
+ * @tparam T the type of the input parameter and return value (e.g., `int`,
+ * `float`, etc.)
  * @param length is the length of the cube
  * @returns surface area of the cube
  */
@@ -94,6 +105,8 @@ T cube_surface_area(T length) {
 /**
  * @brief surface area of a [sphere](https://en.wikipedia.org/wiki/Sphere) ( 4 *
  * pi * r^2)
+ * @tparam T the type of the input parameter and return value (e.g., `int`,
+ * `float`, etc.)
  * @param radius is the radius of the sphere
  * @returns surface area of the sphere
  */
@@ -105,6 +118,8 @@ T sphere_surface_area(T radius) {
 /**
  * @brief surface area of a [cylinder](https://en.wikipedia.org/wiki/Cylinder)
  * (2 * pi * r * h + 2 * pi * r^2)
+ * @tparam T the type of the input parameters and return value (e.g., `int`,
+ * `float`, etc.)
  * @param radius is the radius of the cylinder
  * @param height is the height of the cylinder
  * @returns surface area of the cylinder
