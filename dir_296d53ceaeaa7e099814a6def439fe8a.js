@@ -27,6 +27,7 @@ var dir_296d53ceaeaa7e099814a6def439fe8a =
     [ "integral_approximation.cpp", "d1/de9/integral__approximation_8cpp.html", "d1/de9/integral__approximation_8cpp" ],
     [ "integral_approximation2.cpp", "db/d40/integral__approximation2_8cpp.html", "db/d40/integral__approximation2_8cpp" ],
     [ "inv_sqrt.cpp", "d6/db8/inv__sqrt_8cpp.html", "d6/db8/inv__sqrt_8cpp" ],
+    [ "iterative_factorial.cpp", "db/d9f/iterative__factorial_8cpp.html", "db/d9f/iterative__factorial_8cpp" ],
     [ "large_factorial.cpp", "d6/d9d/large__factorial_8cpp.html", "d6/d9d/large__factorial_8cpp" ],
     [ "large_number.h", "d4/d86/large__number_8h.html", "d4/d86/large__number_8h" ],
     [ "largest_power.cpp", "d5/d7a/largest__power_8cpp.html", "d5/d7a/largest__power_8cpp" ],

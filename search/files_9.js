@@ -9,5 +9,6 @@ var searchData=
   ['inv_5fsqrt_2ecpp_6',['inv_sqrt.cpp',['../d6/db8/inv__sqrt_8cpp.html',1,'']]],
   ['inverse_5ffast_5ffourier_5ftransform_2ecpp_7',['inverse_fast_fourier_transform.cpp',['../d9/d37/inverse__fast__fourier__transform_8cpp.html',1,'']]],
   ['is_5fgraph_5fbipartite_2ecpp_8',['is_graph_bipartite.cpp',['../d6/dd8/is__graph__bipartite_8cpp.html',1,'']]],
-  ['iterative_5ftree_5ftraversals_2ecpp_9',['iterative_tree_traversals.cpp',['../d8/d90/iterative__tree__traversals_8cpp.html',1,'']]]
+  ['iterative_5ffactorial_2ecpp_9',['iterative_factorial.cpp',['../db/d9f/iterative__factorial_8cpp.html',1,'']]],
+  ['iterative_5ftree_5ftraversals_2ecpp_10',['iterative_tree_traversals.cpp',['../d8/d90/iterative__tree__traversals_8cpp.html',1,'']]]
 ];

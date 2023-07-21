@@ -185,6 +185,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a50936ee98f4d40f17823befc65a32aec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#a50936ee98f4d40f17823befc65a32aec">test_eval</a> (double approx, double expected, double threshold)</td></tr>
 <tr class="memdesc:a50936ee98f4d40f17823befc65a32aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper to evaluate if the approximated value is within <code>.XX%</code> threshold of the exact value.  <br /></td></tr>
 <tr class="separator:a50936ee98f4d40f17823befc65a32aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2565c745aac2f9561cc6fd9e56d9b77a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#a2565c745aac2f9561cc6fd9e56d9b77a">iterativeFactorial</a> (uint8_t n)</td></tr>
+<tr class="memdesc:a2565c745aac2f9561cc6fd9e56d9b77a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the factorial iteratively.  <br /></td></tr>
+<tr class="separator:a2565c745aac2f9561cc6fd9e56d9b77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa39ec943a4836c878e1614fd89b146f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f">largestPower</a> (uint32_t n, const uint16_t &amp;p)</td></tr>
 <tr class="memdesc:afa39ec943a4836c878e1614fd89b146f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate largest power.  <br /></td></tr>
 <tr class="separator:afa39ec943a4836c878e1614fd89b146f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1061,6 +1064,52 @@ false if number is not a prime. </dd></dl>
 <div class="line"><span class="lineno">   53</span>    }</div>
 <div class="line"><span class="lineno">   54</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">   55</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2565c745aac2f9561cc6fd9e56d9b77a" name="a2565c745aac2f9561cc6fd9e56d9b77a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2565c745aac2f9561cc6fd9e56d9b77a">&#9670;&#160;</a></span>iterativeFactorial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t math::iterativeFactorial </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the factorial iteratively. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Nth factorial. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Factorial. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>0! = 1. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Maximum=20 because there are no 128-bit integers in C++. 21! returns 1.419e+19, which is not 21! but (21! % UINT64_MAX). </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d6/d50/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plus-_plus_2math_2iterative_factorial_8cpp-example.html#a0">/Users/runner/work/C-Plus-Plus/C-Plus-Plus/math/iterative_factorial.cpp</a>.</dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>                                       {</div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">if</span> (n &gt; 20) {</div>
+<div class="line"><span class="lineno">   49</span>        <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a>(<span class="stringliteral">&quot;Maximum n value is 20&quot;</span>);</div>
+<div class="line"><span class="lineno">   50</span>    }</div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>    <span class="comment">// 1 because it is the identity number of multiplication.</span></div>
+<div class="line"><span class="lineno">   53</span>    uint64_t accumulator = 1;</div>
+<div class="line"><span class="lineno">   54</span> </div>
+<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">while</span> (n &gt; 1) {</div>
+<div class="line"><span class="lineno">   56</span>        accumulator *= n;</div>
+<div class="line"><span class="lineno">   57</span>        --n;</div>
+<div class="line"><span class="lineno">   58</span>    }</div>
+<div class="line"><span class="lineno">   59</span> </div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">return</span> accumulator;</div>
+<div class="line"><span class="lineno">   61</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
