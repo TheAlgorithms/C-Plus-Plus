@@ -289,6 +289,56 @@ static void test() {
 }
 
 /**
+ * @brief This self test is used to test the basic functionality of the
+ * square_area function to see if it behaves as expected.
+ * @returns void
+ */
+static void test_square_area_functionality() {
+    // Given we the lengths of different squares.
+    uint8_t square_a_side_length = 20u;
+    uint16_t square_b_side_length = 1024u;
+    uint32_t square_c_side_length = 35233030u;
+    int8_t square_d_side_length = -15;
+    int16_t square_e_side_length = -512;
+    int32_t square_f_side_length = -1234567;
+    float square_g_side_length = 500.1f;
+
+    // When we calculate the area of the different squares
+    uint8_t actual_area_square_a =
+        math::square_area<uint8_t>(square_a_side_length);
+    uint16_t actual_area_square_b =
+        math::square_area<uint16_t>(square_b_side_length);
+    uint32_t actual_area_square_c =
+        math::square_area<uint32_t>(square_c_side_length);
+    int8_t actual_area_square_d =
+        math::square_area<int8_t>(square_d_side_length);
+    int16_t actual_area_square_e =
+        math::square_area<int16_t>(square_e_side_length);
+    int32_t actual_area_square_f =
+        math::square_area<int32_t>(square_f_side_length);
+    float actual_area_square_g = math::square_area<float>(square_g_side_length);
+
+    // Then we should get the area calculated as we expect.
+    // is the expected == actual?
+    assert(400u == actual_area_square_a);
+    assert(400u == actual_area_square_b);
+    assert(400u == actual_area_square_c);
+    assert(400u == actual_area_square_d);
+    assert(400u == actual_area_square_e);
+    assert(400u == actual_area_square_f);
+    assert(400u == actual_area_square_g);
+
+    std::cout << "TEST PASSED" << std::endl << std::endl;
+
+    // NOTE TO SELF: I started adding test for the square area. The use of the T
+    // template is a really cool feature. I don't think it is useful here as I
+    // have found out, calculating a uint16_t with a large area results a number
+    // which is larger than the given type so in this case we would need to
+    // possibly have integer types and float types. with specified data types
+    // for the parameters.
+}
+
+/**
  * @brief Main function
  * @returns 0 on exit
  */
