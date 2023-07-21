@@ -1,23 +1,52 @@
-#include <limits.h>
-#include <iostream>
+/**
+ * @file
+ * @brief [Dijkstra](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) algorithm
+ * implementation
+ * @details
+ * _Quote from Wikipedia._
+ * 
+ * **Dijkstra's algorithm** is an algorithm for finding the
+ * shortest paths between nodes in a weighted graph, which may represent, for
+ * example, road networks. It was conceived by computer scientist Edsger W.
+ * Dijkstra in 1956 and published three years later.
+ *
+ * @author [David Leal](https://github.com/Panquesito7)
+ * @author [Arpan Jain](https://github.com/arpanjain97)
+ */
 
-using namespace std;
+#include <cassert>   /// for assert
+#include <climits>   /// for INT_MAX
+#include <iostream>  /// for IO operations
+#include <vector>    /// for std::vector
 
-// Wrapper class for storing a graph
+/**
+ * @namespace
+ * @brief Greedy Algorithms
+ */
+namespace greedy_algorithms {
+/**
+ * @brief 
+ */
+/**
+ * @brief Wrapper class for storing a graph
+ */
 class Graph {
  public:
-    int vertexNum;
-    int **edges;
+    int vertexNum = 0;
+    std::vector<std::vector<int>> edges{};
 
-    // Constructs a graph with V vertices and E edges
-    Graph(const int V) {
-        // initializes the array edges.
-        this->edges = new int *[V];
+    /**
+     * @brief Constructs a graph
+     * @param V number of vertices of the graph
+     */
+    explicit Graph(const int V) {
+        // Initialize the array edges
+        this->edges = std::vector<std::vector<int>>(V, std::vector<int>(V, 0));
         for (int i = 0; i < V; i++) {
-            edges[i] = new int[V];
+            edges[i] = std::vector<int>(V, 0);
         }
 
-        // fills the array with zeros.
+        // Fills the array with zeros
         for (int i = 0; i < V; i++) {
             for (int j = 0; j < V; j++) {
                 edges[i][j] = 0;
@@ -27,13 +56,28 @@ class Graph {
         this->vertexNum = V;
     }
 
-    // Adds the given edge to the graph
-    void addEdge(int src, int dst, int weight) {
+    /**
+     * @brief Adds an edge to the graph
+     * @param src the graph the edge should be added to
+     * @param dst the position where the edge should be added to
+     * @param weight the weight of the edge that should be added
+     * @returns void
+     */
+    void add_edge(int src, int dst, int weight) {
         this->edges[src][dst] = weight;
     }
 };
-// Utility function to find minimum distance vertex in mdist
-int minDistance(int mdist[], bool vset[], int V) {
+
+/**
+ * @brief Utility function that finds
+ * the vertex with the minimum distance in `mdist`.
+ *
+ * @param mdist array of distances to each vertex
+ * @param vset array indicating inclusion in the shortest path tree
+ * @param V the number of vertices in the graph
+ * @returns index of the vertex with the minimum distance
+ */
+int minimum_distance(std::vector<int> mdist, std::vector<bool> vset, int V) {
     int minVal = INT_MAX, minInd = 0;
     for (int i = 0; i < V; i++) {
         if (!vset[i] && (mdist[i] < minVal)) {
@@ -45,27 +89,42 @@ int minDistance(int mdist[], bool vset[], int V) {
     return minInd;
 }
 
-// Utility function to print distances
-void print(int dist[], int V) {
-    cout << "\nVertex  Distance" << endl;
+/**
+ * @brief Utility function to print the distances to vertices.
+ *
+ * This function prints the distances to each vertex in a tabular format. If the
+ * distance is equal to INT_MAX, it is displayed as "INF".
+ *
+ * @param dist An array representing the distances to each vertex.
+ * @param V The number of vertices in the graph.
+ * @return void
+ */
+void print(std::vector<int> dist, int V) {
+    std::cout << "\nVertex  Distance\n";
     for (int i = 0; i < V; i++) {
-        if (dist[i] < INT_MAX)
-            cout << i << "\t" << dist[i] << endl;
-        else
-            cout << i << "\tINF" << endl;
+        if (dist[i] < INT_MAX) {
+            std::cout << i << "\t" << dist[i] << "\n";
+        }
+        else {
+            std::cout << i << "\tINF" << "\n";
+        }
     }
 }
 
-// The main function that finds the shortest path from given source
-// to all other vertices using Dijkstra's Algorithm.It doesn't work on negative
-// weights
-void Dijkstra(Graph graph, int src) {
+/**
+ * @brief The main function that finds the shortest path from given source
+ * to all other vertices using Dijkstra's Algorithm.
+ * @note This doesn't work on negative weights.
+ * @param graph the graph to be processed
+ * @param src the source of the given vertex
+ * @returns void
+ */
+void dijkstra(Graph graph, int src) {
     int V = graph.vertexNum;
-    int mdist[V];  // Stores updated distances to vertex
-    bool vset[V];  // vset[i] is true if the vertex i included
-    // in the shortest path tree
+    std::vector<int> mdist{};  // Stores updated distances to the vertex
+    std::vector<bool> vset{};  // `vset[i]` is true if the vertex `i` is included in the shortest path tree
 
-    // Initialise mdist and vset. Set distance of source as zero
+    // Initialize `mdist and `vset`. Set distance of source as zero
     for (int i = 0; i < V; i++) {
         mdist[i] = INT_MAX;
         vset[i] = false;
@@ -73,9 +132,9 @@ void Dijkstra(Graph graph, int src) {
 
     mdist[src] = 0;
 
-    // iterate to find shortest path
+    // iterate to find the shortest path
     for (int count = 0; count < V - 1; count++) {
-        int u = minDistance(mdist, vset, V);
+        int u = minimum_distance(mdist, vset, V);
 
         vset[u] = true;
 
@@ -89,36 +148,52 @@ void Dijkstra(Graph graph, int src) {
 
     print(mdist, V);
 }
+}  // namespace greedy_algorithms
 
-// Driver Function
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void tests() {
+    greedy_algorithms::Graph graph(8);
+
+    // 1st test.
+    graph.add_edge(6, 2, 4);
+    graph.add_edge(2, 6, 4);
+
+    assert(graph.edges[6][2] == 4);
+
+    // 2nd test.
+    graph.add_edge(0, 1, 1);
+    graph.add_edge(1, 0, 1);
+
+    assert(graph.edges[0][1] == 1);
+
+    // 3rd test.
+    graph.add_edge(0, 2, 7);
+    graph.add_edge(2, 0, 7);
+    graph.add_edge(1, 2, 1);
+    graph.add_edge(2, 1, 1);
+
+    assert(graph.edges[0][2] == 7);
+
+    // 4th test.
+    graph.add_edge(1, 3, 3);
+    graph.add_edge(3, 1, 3);
+    graph.add_edge(1, 4, 2);
+    graph.add_edge(4, 1, 2);
+    graph.add_edge(2, 3, 2);
+
+    assert(graph.edges[1][3] == 3);
+
+    std::cout << "All tests have successfully passed!\n";
+}
+
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
-    int V, E, gsrc;
-    int src, dst, weight;
-    cout << "Enter number of vertices: ";
-    cin >> V;
-    cout << "Enter number of edges: ";
-    cin >> E;
-    Graph G(V);
-    for (int i = 0; i < E; i++) {
-        cout << "\nEdge " << i + 1 << "\nEnter source: ";
-        cin >> src;
-        cout << "Enter destination: ";
-        cin >> dst;
-        cout << "Enter weight: ";
-        cin >> weight;
-
-        // makes sure source and destionation are in the proper bounds.
-        if (src >= 0 && src < V && dst >= 0 && dst < V) {
-            G.addEdge(src, dst, weight);
-        } else {
-            cout << "source and/or destination out of bounds" << endl;
-            i--;
-            continue;
-        }
-    }
-    cout << "\nEnter source:";
-    cin >> gsrc;
-    Dijkstra(G, gsrc);
-
+    tests();  // run self-test implementations
     return 0;
 }
