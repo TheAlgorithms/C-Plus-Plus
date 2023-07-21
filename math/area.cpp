@@ -15,8 +15,8 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace math
  * @brief Mathematical algorithms
+ * @namespace math
  */
 namespace math {
 /**
