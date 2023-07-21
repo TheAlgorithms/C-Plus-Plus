@@ -203,6 +203,7 @@ var NAVTREEINDEX3 =
 "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#ae9e979edd69678b85665c01e2ee97828":[10,0,15,0,0,5],
 "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#af64848d6630c39d0f09ce2359cc7c4f8":[10,0,15,0,0,2],
 "d2/d90/namespacegreedy__algorithms.html":[9,0,36],
+"d2/d90/namespacegreedy__algorithms.html#a127ce4403660032f53ae2e6467e5427d":[9,0,36,0],
 "d2/d9a/structothers_1_1iterative__tree__traversals_1_1_node.html":[10,0,12,0,1],
 "d2/d9a/structothers_1_1iterative__tree__traversals_1_1_node.html#a1dbaeff928e469a05251879568515b8e":[10,0,12,0,1,1],
 "d2/d9a/structothers_1_1iterative__tree__traversals_1_1_node.html#ad443d44275337b9e361375ce66f1104f":[10,0,12,0,1,0],
@@ -210,8 +211,8 @@ var NAVTREEINDEX3 =
 "d2/da7/namespacefind__non__repeating__integer.html":[9,0,30],
 "d2/dc4/classstack__linked_list.html":[10,0,52],
 "d2/dcf/namespacestatistics.html":[9,0,109],
-"d2/dd4/structstd_1_1is__integral_3_01uint128__t_01_4.html":[9,0,110,7],
 "d2/dd4/structstd_1_1is__integral_3_01uint128__t_01_4.html":[10,0,18,2],
+"d2/dd4/structstd_1_1is__integral_3_01uint128__t_01_4.html":[9,0,110,7],
 "d2/de1/namespacehouse__robber.html":[9,0,42],
 "d2/de7/namespacerunge__kutta.html":[9,0,97],
 "d2/de9/heavy__light__decomposition_8cpp.html":[11,0,20,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#a7bbe538c8015e8ce158e7ed43f605ebd":[10,0,2,7,0,3],
 "d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#a832072498abeaa52ad43c4fc99cba248":[10,0,2,7,0,8],
 "d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#abcae0a4456e7f583ce716e3ef466dfd2":[10,0,2,7,0,4],
-"d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#ac0bf3d6791cba144b3f539835d835e75":[10,0,2,7,0,2],
-"d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#ad71eb24207c28b546631802dba97310f":[10,0,2,7,0,6]
+"d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#ac0bf3d6791cba144b3f539835d835e75":[10,0,2,7,0,2]
 };

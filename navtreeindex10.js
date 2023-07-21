@@ -1,5 +1,9 @@
 var NAVTREEINDEX10 =
 {
+"da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn.html#a4b17dcf17c847f0295b60029512c120e":[10,0,9,1,0,2],
+"da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn.html#a62e152db014cd4de675fa906e5ef2861":[10,0,9,1,0,6],
+"da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn.html#a9f5885c40112481ae5b588fe81d7910b":[10,0,9,1,0,1],
+"da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn.html#ac06986d5afddc767ddba4da738f75563":[10,0,9,1,0,5],
 "da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn.html#afe732a33112b457b738f403622d226e5":[10,0,9,1,0,3],
 "da/d9a/class_graph.html":[10,0,32],
 "da/d9a/class_graph.html#a5a090e1a63a5c47bdd1a539b21f7fd1d":[10,0,32,6],
@@ -86,8 +90,8 @@ var NAVTREEINDEX10 =
 "db/d19/structlinear__probing_1_1_entry.html":[10,0,8,0],
 "db/d19/structlinear__probing_1_1_entry.html#a2139f643a3caf074da1db8a9fa16fa77":[9,0,55,0,0],
 "db/d19/structlinear__probing_1_1_entry.html#a2139f643a3caf074da1db8a9fa16fa77":[10,0,8,0,0],
-"db/d19/structlinear__probing_1_1_entry.html#a4d84e90b73022083761f85f8586c4c2a":[9,0,55,0,1],
 "db/d19/structlinear__probing_1_1_entry.html#a4d84e90b73022083761f85f8586c4c2a":[10,0,8,0,1],
+"db/d19/structlinear__probing_1_1_entry.html#a4d84e90b73022083761f85f8586c4c2a":[9,0,55,0,1],
 "db/d27/n__bonacci_8cpp.html":[11,0,14,39],
 "db/d27/n__bonacci_8cpp.html#a6849b68f760be628d5975ab3eddec63d":[11,0,14,39,1],
 "db/d27/n__bonacci_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,14,39,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX10 =
 "db/d9f/iterative__factorial_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,14,27,2],
 "db/d9f/iterative__factorial_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,27,1],
 "db/da4/namespacestd_1_1regex__constants.html":[9,0,110,2],
-"db/da9/classqueue.html":[10,0,47],
-"db/da9/classqueue.html#a353e4dd5772575905c78b0b30856e368":[10,0,47,2],
-"db/da9/classqueue.html#a386fc1df8610948d3117b12f24655c7d":[10,0,47,7],
-"db/da9/classqueue.html#a4bc52ad6ed6b0cc33ad05f87f05f8bec":[10,0,47,6],
-"db/da9/classqueue.html#a6ed7f8dfefe8687841f36f2223069375":[10,0,47,0]
+"db/da9/classqueue.html":[10,0,47]
 };

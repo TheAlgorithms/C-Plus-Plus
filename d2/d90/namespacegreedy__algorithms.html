@@ -97,17 +97,84 @@ $(document).ready(function(){initNavTree('d2/d90/namespacegreedy__algorithms.htm
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">greedy_algorithms Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>  
 <a href="../../d2/d90/namespacegreedy__algorithms.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a127ce4403660032f53ae2e6467e5427d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a127ce4403660032f53ae2e6467e5427d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d90/namespacegreedy__algorithms.html#a127ce4403660032f53ae2e6467e5427d">findMinimumEdge</a> (const int &amp;infinity, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, 6 &gt;, 6 &gt; &amp;graph)</td></tr>
+<tr class="memdesc:a127ce4403660032f53ae2e6467e5427d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the minimum edge of the given graph.  <br /></td></tr>
+<tr class="separator:a127ce4403660032f53ae2e6467e5427d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> </p>
 <p>for assert for INT_MAX for IO operations</p>
 <p>Greedy Algorithms </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a127ce4403660032f53ae2e6467e5427d" name="a127ce4403660032f53ae2e6467e5427d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a127ce4403660032f53ae2e6467e5427d">&#9670;&#160;</a></span>findMinimumEdge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void greedy_algorithms::findMinimumEdge </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>infinity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, 6 &gt;, 6 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>graph</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Finds the minimum edge of the given graph. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">infinity</td><td>Defines the infinity of the graph </td></tr>
+    <tr><td class="paramname">graph</td><td>The graph that will be used to find the edge </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>                                                               {</div>
+<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>.size(); i++) {</div>
+<div class="line"><span class="lineno">   39</span>        <span class="keywordtype">int</span> min = infinity;</div>
+<div class="line"><span class="lineno">   40</span>        <span class="keywordtype">int</span> minIndex = 0;</div>
+<div class="line"><span class="lineno">   41</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; <a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>.size(); j++) {</div>
+<div class="line"><span class="lineno">   42</span>            <span class="keywordflow">if</span> (<a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>[i][j] != 0 &amp;&amp; <a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>[i][j] &lt; min) {</div>
+<div class="line"><span class="lineno">   43</span>                min = <a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>[i][j];</div>
+<div class="line"><span class="lineno">   44</span>                minIndex = j;</div>
+<div class="line"><span class="lineno">   45</span>            }</div>
+<div class="line"><span class="lineno">   46</span>        }</div>
+<div class="line"><span class="lineno">   47</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;  -  &quot;</span> &lt;&lt; minIndex &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; <a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>[i][minIndex]</div>
+<div class="line"><span class="lineno">   48</span>                  &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   49</span>    }</div>
+<div class="line"><span class="lineno">   50</span>}</div>
+<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
+<div class="ttc" id="anamespacegraph_html"><div class="ttname"><a href="../../df/dce/namespacegraph.html">graph</a></div><div class="ttdoc">Graph Algorithms.</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

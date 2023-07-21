@@ -1,5 +1,9 @@
 var NAVTREEINDEX13 =
 {
+"de/d88/travelling__salesman__problem_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[11,0,9,11,1],
+"de/d88/travelling__salesman__problem_8cpp.html#ab7706341d006e20d1ae58274187a3346":[11,0,9,11,2],
+"de/d88/travelling__salesman__problem_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,9,11,0],
+"de/d89/graham__scan__functions_8hpp_source.html":[11,0,8,0],
 "de/d95/namespace_subsets.html":[9,0,118],
 "de/d97/namespacestd_1_1experimental.html":[9,0,110,1],
 "de/d99/aliquot__sum_8cpp.html":[11,0,14,0],
@@ -193,14 +197,14 @@ var NAVTREEINDEX13 =
 "df/ddd/connected__components_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9":[11,0,9,2,4],
 "df/ddd/connected__components_8cpp.html#a9125ceb66bfbec3093bba64c2c1e99e2":[11,0,9,2,0],
 "df/ddd/connected__components_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,9,2,3],
-"df/de5/classbacktracking_1_1generate__parentheses.html":[9,0,5,0],
 "df/de5/classbacktracking_1_1generate__parentheses.html":[10,0,0,0],
-"df/de5/classbacktracking_1_1generate__parentheses.html#ab35b9b6d2886abed3d6fb05c2be1c508":[9,0,5,0,2],
+"df/de5/classbacktracking_1_1generate__parentheses.html":[9,0,5,0],
 "df/de5/classbacktracking_1_1generate__parentheses.html#ab35b9b6d2886abed3d6fb05c2be1c508":[10,0,0,0,2],
+"df/de5/classbacktracking_1_1generate__parentheses.html#ab35b9b6d2886abed3d6fb05c2be1c508":[9,0,5,0,2],
 "df/de5/classbacktracking_1_1generate__parentheses.html#ac1489edd65374f22fe04851051f0a2ec":[10,0,0,0,1],
 "df/de5/classbacktracking_1_1generate__parentheses.html#ac1489edd65374f22fe04851051f0a2ec":[9,0,5,0,1],
-"df/de5/classbacktracking_1_1generate__parentheses.html#af39c03d80ce0ba9fbf659b420980d160":[9,0,5,0,0],
 "df/de5/classbacktracking_1_1generate__parentheses.html#af39c03d80ce0ba9fbf659b420980d160":[10,0,0,0,0],
+"df/de5/classbacktracking_1_1generate__parentheses.html#af39c03d80ce0ba9fbf659b420980d160":[9,0,5,0,0],
 "df/dea/namespacefalse__position.html":[9,0,28],
 "df/def/power__for__huge__numbers_8cpp.html":[11,0,14,44],
 "df/def/power__for__huge__numbers_8cpp.html#a392fb874e547e582e9c66a08a1f23326":[11,0,14,44,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX13 =
 "functions_d.html":[10,3,0,4],
 "functions_e.html":[10,3,0,5],
 "functions_f.html":[10,3,0,6],
-"functions_func.html":[10,3,1],
-"functions_func.html":[10,3,1,0],
-"functions_func_a.html":[10,3,1,1],
-"functions_func_b.html":[10,3,1,2],
-"functions_func_c.html":[10,3,1,3]
+"functions_func.html":[10,3,1]
 };
