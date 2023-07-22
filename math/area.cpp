@@ -91,16 +91,14 @@ uint64_t parallelogram_area(uint32_t base, uint32_t height) {
 }
 
 /**
- * @brief surface area of a [cube](https://en.wikipedia.org/wiki/Cube) ( 6 * (l
- * * l))
- * @tparam T the type of the input parameter and return value (e.g., `int`,
- * `float`, etc.)
+ * @brief surface area of a [cube](https://en.wikipedia.org/wiki/Cube)
+ * ( 6 * (l * l))
  * @param length is the length of the cube
  * @returns surface area of the cube
  */
-template <typename T>
-T cube_surface_area(T length) {
-    return 6 * length * length;
+uint64_t cube_surface_area(uint16_t length) {
+    uint64_t surface_area_of_cube = 6 * length * length;
+    return surface_area_of_cube;
 }
 
 /**
