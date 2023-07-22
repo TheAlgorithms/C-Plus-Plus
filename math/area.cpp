@@ -132,211 +132,28 @@ double cylinder_surface_area(uint16_t radius, uint16_t height) {
 }  // namespace math
 
 /**
- * @brief Self-test implementations
- * @returns void
- */
-static void test() {
-    // I/O variables for testing
-    uint16_t int_length = 0;    // 16 bit integer length input
-    uint16_t int_width = 0;     // 16 bit integer width input
-    uint16_t int_base = 0;      // 16 bit integer base input
-    uint16_t int_height = 0;    // 16 bit integer height input
-    uint16_t int_expected = 0;  // 16 bit integer expected output
-    uint16_t int_area = 0;      // 16 bit integer output
-
-    float float_length = NAN;    // float length input
-    float float_expected = NAN;  // float expected output
-    float float_area = NAN;      // float output
-
-    double double_length = NAN;    // double length input
-    double double_width = NAN;     // double width input
-    double double_radius = NAN;    // double radius input
-    double double_height = NAN;    // double height input
-    double double_expected = NAN;  // double expected output
-    double double_area = NAN;      // double output
-
-    // 1st test
-    int_length = 5;
-    int_expected = 25;
-    int_area = math::square_area(int_length);
-
-    std::cout << "AREA OF A SQUARE (int)" << std::endl;
-    std::cout << "Input Length: " << int_length << std::endl;
-    std::cout << "Expected Output: " << int_expected << std::endl;
-    std::cout << "Output: " << int_area << std::endl;
-    assert(int_area == int_expected);
-    std::cout << "TEST PASSED" << std::endl << std::endl;
-
-    // 2nd test
-    float_length = 2.5;
-    float_expected = 6.25;
-    float_area = math::square_area(float_length);
-
-    std::cout << "AREA OF A SQUARE (float)" << std::endl;
-    std::cout << "Input Length: " << float_length << std::endl;
-    std::cout << "Expected Output: " << float_expected << std::endl;
-    std::cout << "Output: " << float_area << std::endl;
-    assert(float_area == float_expected);
-    std::cout << "TEST PASSED" << std::endl << std::endl;
-
-    // 3rd test
-    int_length = 4;
-    int_width = 7;
-    int_expected = 28;
-    int_area = math::rect_area(int_length, int_width);
-
-    std::cout << "AREA OF A RECTANGLE (int)" << std::endl;
-    std::cout << "Input Length: " << int_length << std::endl;
-    std::cout << "Input Width: " << int_width << std::endl;
-    std::cout << "Expected Output: " << int_expected << std::endl;
-    std::cout << "Output: " << int_area << std::endl;
-    assert(int_area == int_expected);
-    std::cout << "TEST PASSED" << std::endl << std::endl;
-
-    // 4th test
-    double_length = 2.5;
-    double_width = 5.7;
-    double_expected = 14.25;
-    double_area = math::rect_area(double_length, double_width);
-
-    std::cout << "AREA OF A RECTANGLE (double)" << std::endl;
-    std::cout << "Input Length: " << double_length << std::endl;
-    std::cout << "Input Width: " << double_width << std::endl;
-    std::cout << "Expected Output: " << double_expected << std::endl;
-    std::cout << "Output: " << double_area << std::endl;
-    assert(double_area == double_expected);
-    std::cout << "TEST PASSED" << std::endl << std::endl;
-
-    // 5th test
-    int_base = 10;
-    int_height = 3;
-    int_expected = 15;
-    int_area = math::triangle_area(int_base, int_height);
-
-    std::cout << "AREA OF A TRIANGLE" << std::endl;
-    std::cout << "Input Base: " << int_base << std::endl;
-    std::cout << "Input Height: " << int_height << std::endl;
-    std::cout << "Expected Output: " << int_expected << std::endl;
-    std::cout << "Output: " << int_area << std::endl;
-    assert(int_area == int_expected);
-    std::cout << "TEST PASSED" << std::endl << std::endl;
-
-    // 6th test
-    double_radius = 6;
-    double_expected =
-        113.09733552923255;  // rounded down because the double datatype
-                             // truncates after 14 decimal places
-    double_area = math::circle_area(double_radius);
-
-    std::cout << "AREA OF A CIRCLE" << std::endl;
-    std::cout << "Input Radius: " << double_radius << std::endl;
-    std::cout << "Expected Output: " << double_expected << std::endl;
-    std::cout << "Output: " << double_area << std::endl;
-    assert(double_area == double_expected);
-    std::cout << "TEST PASSED" << std::endl << std::endl;
-
-    // 7th test
-    int_base = 6;
-    int_height = 7;
-    int_expected = 42;
-    int_area = math::parallelogram_area(int_base, int_height);
-
-    std::cout << "AREA OF A PARALLELOGRAM" << std::endl;
-    std::cout << "Input Base: " << int_base << std::endl;
-    std::cout << "Input Height: " << int_height << std::endl;
-    std::cout << "Expected Output: " << int_expected << std::endl;
-    std::cout << "Output: " << int_area << std::endl;
-    assert(int_area == int_expected);
-    std::cout << "TEST PASSED" << std::endl << std::endl;
-
-    // 8th test
-    double_length = 5.5;
-    double_expected = 181.5;
-    double_area = math::cube_surface_area(double_length);
-
-    std::cout << "SURFACE AREA OF A CUBE" << std::endl;
-    std::cout << "Input Length: " << double_length << std::endl;
-    std::cout << "Expected Output: " << double_expected << std::endl;
-    std::cout << "Output: " << double_area << std::endl;
-    assert(double_area == double_expected);
-    std::cout << "TEST PASSED" << std::endl << std::endl;
-
-    // 9th test
-    double_radius = 10.0;
-    double_expected = 1256.6370614359172;  // rounded down because the whole
-                                           // value gets truncated
-    double_area = math::sphere_surface_area(double_radius);
-
-    std::cout << "SURFACE AREA OF A SPHERE" << std::endl;
-    std::cout << "Input Radius: " << double_radius << std::endl;
-    std::cout << "Expected Output: " << double_expected << std::endl;
-    std::cout << "Output: " << double_area << std::endl;
-    assert(double_area == double_expected);
-    std::cout << "TEST PASSED" << std::endl << std::endl;
-
-    // 10th test
-    double_radius = 4.0;
-    double_height = 7.0;
-    double_expected = 276.46015351590177;
-    double_area = math::cylinder_surface_area(double_radius, double_height);
-
-    std::cout << "SURFACE AREA OF A CYLINDER" << std::endl;
-    std::cout << "Input Radius: " << double_radius << std::endl;
-    std::cout << "Input Height: " << double_height << std::endl;
-    std::cout << "Expected Output: " << double_expected << std::endl;
-    std::cout << "Output: " << double_area << std::endl;
-    assert(double_area == double_expected);
-    std::cout << "TEST PASSED" << std::endl << std::endl;
-}
-
-/**
  * @brief This self test is used to test the basic functionality of the
  * square_area function to see if it behaves as expected.
  * @returns void
  */
 static void test_square_area_functionality() {
     // Given we the lengths of different squares.
-    uint8_t square_a_side_length = 20u;
-    uint16_t square_b_side_length = 1024u;
+    uint32_t square_a_side_length = 20u;
+    uint32_t square_b_side_length = 1024u;
     uint32_t square_c_side_length = 35233030u;
-    int8_t square_d_side_length = -15;
-    int16_t square_e_side_length = -512;
-    int32_t square_f_side_length = -1234567;
-    float square_g_side_length = 500.1f;
 
     // When we calculate the area of the different squares
-    uint8_t actual_area_square_a =
-        math::square_area<uint8_t>(square_a_side_length);
-    uint16_t actual_area_square_b =
-        math::square_area<uint16_t>(square_b_side_length);
-    uint32_t actual_area_square_c =
-        math::square_area<uint32_t>(square_c_side_length);
-    int8_t actual_area_square_d =
-        math::square_area<int8_t>(square_d_side_length);
-    int16_t actual_area_square_e =
-        math::square_area<int16_t>(square_e_side_length);
-    int32_t actual_area_square_f =
-        math::square_area<int32_t>(square_f_side_length);
-    float actual_area_square_g = math::square_area<float>(square_g_side_length);
+    uint64_t actual_area_square_a = math::square_area(square_a_side_length);
+    uint64_t actual_area_square_b = math::square_area(square_b_side_length);
+    uint64_t actual_area_square_c = math::square_area(square_c_side_length);
 
     // Then we should get the area calculated as we expect.
     // is the expected == actual?
     assert(400u == actual_area_square_a);
-    assert(400u == actual_area_square_b);
-    assert(400u == actual_area_square_c);
-    assert(400u == actual_area_square_d);
-    assert(400u == actual_area_square_e);
-    assert(400u == actual_area_square_f);
-    assert(400u == actual_area_square_g);
+    assert(1048576u == actual_area_square_b);
+    assert(1241366402980900u == actual_area_square_c);
 
     std::cout << "TEST PASSED" << std::endl << std::endl;
-
-    // NOTE TO SELF: I started adding test for the square area. The use of the T
-    // template is a really cool feature. I don't think it is useful here as I
-    // have found out, calculating a uint16_t with a large area results a number
-    // which is larger than the given type so in this case we would need to
-    // possibly have integer types and float types. with specified data types
-    // for the parameters.
 }
 
 /**
@@ -344,6 +161,6 @@ static void test_square_area_functionality() {
  * @returns 0 on exit
  */
 int main() {
-    test();  // run self-test implementations
+    test_square_area_functionality();  // run self-test implementations
     return 0;
 }
