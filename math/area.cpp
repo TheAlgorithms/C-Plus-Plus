@@ -39,6 +39,10 @@ uint64_t square_area(uint32_t length) {
        e.g. (UINT8_T_MAX * UINT8_T_MAX) == 65025
        To store this calculation we would need to specify a return type of
        uint16_t
+
+       This is important to know for the following functions because it dictates
+       what data type we decide upon when setting up the function parameters and
+       the value returned by the function.
     */
     uint64_t area_of_square = length * length;
     return area_of_square;
