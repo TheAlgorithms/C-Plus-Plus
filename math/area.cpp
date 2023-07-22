@@ -23,16 +23,21 @@
  * @namespace math
  */
 namespace math {
+
 /**
  * @brief area of a [square](https://en.wikipedia.org/wiki/Square) (l * l)
- * @tparam T the type of the input parameter 'length' and return value (e.g.,
- * `int`, `float`, etc.)
  * @param length is the length of the square
- * @returns area of square
+ * @returns area of square.
  */
-template <typename T>
-T square_area(T length) {
-    return length * length;
+uint32_t square_area(uint16_t length) {
+    /*
+       The parameter type of this function replaces the template type T because
+       it is safer. If we use the same parameter type as the return type then
+       there is a potential for the calculated value to roll over and give an
+       incorrect calculation.
+    */
+    uint32_t area_of_square = length * length;
+    return area_of_square;
 }
 
 /**
