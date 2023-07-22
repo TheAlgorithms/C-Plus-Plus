@@ -62,22 +62,20 @@ uint64_t rect_area(uint32_t length, uint32_t width) {
  * @returns area of the triangle
  */
 template <typename T>
-uint64_t triangle_area(uint32_t base, uint32_t height) {
+double triangle_area(uint32_t base, uint32_t height) {
     uint64_t area_of_triangle = (base * height) / 2;
     return area_of_triangle;
 }
 
 /**
- * @brief area of a [circle](https://en.wikipedia.org/wiki/Area_of_a_circle) (pi
- * * r^2)
- * @tparam T the type of the input parameter and return value (e.g., `int`,
- * `float`, etc.)
+ * @brief area of a [circle](https://en.wikipedia.org/wiki/Area_of_a_circle)
+ * (pi * r^2)
  * @param radius is the radius of the circle
  * @returns area of the circle
  */
-template <typename T>
-T circle_area(T radius) {
-    return M_PI * pow(radius, 2);
+double circle_area(uint32_t radius) {
+    double area_of_circle = M_PI * pow(radius, 2);
+    return area_of_circle;
 }
 
 /**
