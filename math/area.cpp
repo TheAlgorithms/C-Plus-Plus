@@ -56,17 +56,15 @@ uint64_t rect_area(uint32_t length, uint32_t width) {
 }
 
 /**
- * @brief area of a [triangle](https://en.wikipedia.org/wiki/Triangle) (b * h /
- * 2)
- * @tparam T the type of the input parameters and return value (e.g., `int`,
- * `float`, etc.)
+ * @brief area of a [triangle](https://en.wikipedia.org/wiki/Triangle) (b * h)/2
  * @param base is the length of the bottom side of the triangle
  * @param height is the length of the tallest point in the triangle
  * @returns area of the triangle
  */
 template <typename T>
-T triangle_area(T base, T height) {
-    return base * height / 2;
+uint64_t triangle_area(uint32_t base, uint32_t height) {
+    uint64_t area_of_triangle = (base * height) / 2;
+    return area_of_triangle;
 }
 
 /**
