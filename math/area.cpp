@@ -81,15 +81,13 @@ double circle_area(uint32_t radius) {
 /**
  * @brief area of a [parallelogram](https://en.wikipedia.org/wiki/Parallelogram)
  * (b * h)
- * @tparam T the type of the input parameters and return value (e.g., `int`,
- * `float`, etc.)
  * @param base is the length of the bottom side of the parallelogram
  * @param height is the length of the tallest point in the parallelogram
  * @returns area of the parallelogram
  */
-template <typename T>
-T parallelogram_area(T base, T height) {
-    return base * height;
+uint64_t parallelogram_area(uint32_t base, uint32_t height) {
+    uint64_t area_of_parallelogram = base * height;
+    return area_of_parallelogram;
 }
 
 /**
