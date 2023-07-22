@@ -119,16 +119,16 @@ double sphere_surface_area(uint16_t radius) {
 /**
  * @brief surface area of a [cylinder](https://en.wikipedia.org/wiki/Cylinder)
  * (2 * pi * r * h + 2 * pi * r^2)
- * @tparam T the type of the input parameters and return value (e.g., `int`,
- * `float`, etc.)
  * @param radius is the radius of the cylinder
  * @param height is the height of the cylinder
  * @returns surface area of the cylinder
  */
-template <typename T>
-T cylinder_surface_area(T radius, T height) {
-    return 2 * M_PI * radius * height + 2 * M_PI * pow(radius, 2);
+double cylinder_surface_area(uint16_t radius, uint16_t height) {
+    double surface_area_of_cylinder =
+        2 * M_PI * radius * height + 2 * M_PI * pow(radius, 2);
+    return surface_area_of_cylinder;
 }
+
 }  // namespace math
 
 /**
