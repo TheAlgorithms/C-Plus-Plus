@@ -29,14 +29,18 @@ namespace math {
  * @param length is the length of the square
  * @returns area of square.
  */
-uint32_t square_area(uint16_t length) {
+uint64_t square_area(uint32_t length) {
     /*
        The parameter type of this function replaces the template type T because
        it is safer. If we use the same parameter type as the return type then
        there is a potential for the calculated value to roll over and give an
        incorrect calculation.
+
+       e.g. (UINT8_T_MAX * UINT8_T_MAX) >>> UINT8_T_MAX
+       To store this calculation we would need to specify a return type of
+       uint16_t
     */
-    uint32_t area_of_square = length * length;
+    uint64_t area_of_square = length * length;
     return area_of_square;
 }
 
