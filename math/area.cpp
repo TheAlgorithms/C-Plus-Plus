@@ -104,14 +104,12 @@ uint64_t cube_surface_area(uint16_t length) {
 /**
  * @brief surface area of a [sphere](https://en.wikipedia.org/wiki/Sphere) ( 4 *
  * pi * r^2)
- * @tparam T the type of the input parameter and return value (e.g., `int`,
- * `float`, etc.)
  * @param radius is the radius of the sphere
  * @returns surface area of the sphere
  */
-template <typename T>
-T sphere_surface_area(T radius) {
-    return 4 * M_PI * pow(radius, 2);
+double sphere_surface_area(uint16_t radius) {
+    double surface_area_of_sphere = 4 * M_PI * pow(radius, 2);
+    return surface_area_of_sphere;
 }
 
 /**
