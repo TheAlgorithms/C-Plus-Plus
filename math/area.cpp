@@ -36,7 +36,7 @@ uint64_t square_area(uint32_t length) {
        there is a potential for the calculated value to roll over and give an
        incorrect calculation.
 
-       e.g. (UINT8_T_MAX * UINT8_T_MAX) >>> UINT8_T_MAX
+       e.g. (UINT8_T_MAX * UINT8_T_MAX) == 65025
        To store this calculation we would need to specify a return type of
        uint16_t
     */
@@ -46,15 +46,13 @@ uint64_t square_area(uint32_t length) {
 
 /**
  * @brief area of a [rectangle](https://en.wikipedia.org/wiki/Rectangle) (l * w)
- * @tparam T the type of the input parameters and return value (e.g., `int`,
- * `float`, etc.)
  * @param length is the length of the rectangle
  * @param width is the width of the rectangle
  * @returns area of the rectangle
  */
-template <typename T>
-T rect_area(T length, T width) {
-    return length * width;
+uint64_t rect_area(uint32_t length, uint32_t width) {
+    uint64_t area_of_rectangle = length * width;
+    return area_of_rectangle;
 }
 
 /**
