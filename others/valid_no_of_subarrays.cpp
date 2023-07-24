@@ -1,22 +1,13 @@
 /**
  * @file
- * @brief - Finds Total Number of Subarrays whose net product is less than a given Number = k 
+ * @brief Finds Total Number of Subarrays whose net product is less than a given Number = k 
  * [Source](https://leetcode.com/problems/subarray-product-less-than-k/)
  * 
- * @description :
+ * @details :
  * A C++ (CPP) code to find how many subarrays (contiguous part of an array) are
  * present in an array whose product is less than a given number 'k' 
  * e.g.- [ Input array -  arr[5]= {1, 3, 4 ,5 ,2} ] and  [ Input Number k = 5 ]
  *  Now Subarrays of arr having product less than (k=5) are - {1} , {3} , {4} , {2} , {1 , 3}
- * 
- * @author - [Aryan Arya] https://github.com/hecker1002
- * 
- * @description :
- * A C++ (CPP) code to find how many subarrays (contiguous part of an array) are
- * present in an array whose product is less than a given number 'k' 
- * Example- [ Input array -  arr[5]= {1, 3, 4 ,5 ,2} ] and  [ Input Number k = 5 ]
- * Now Subarrays of arr having product less than (k=5) are - {1} , {3} , {4} , {2} , {1 , 3}
- * 
  * // Idea :
  * Use Sliding Window Algorithm
  * 
@@ -33,6 +24,8 @@
  * // Complexities  : 
  * Time Complexity of Code - O(n^2) since the outer loop -> n times and inner loop (worst case) -> n times so TC = n * n 
  * Space Complexity of Code - O(1) ->  since it does not use any auxiliary space
+ * 
+ * @author - [Aryan Arya] https://github.com/hecker1002
  */
 
 #include <cassert>   /// for assert
@@ -63,7 +56,7 @@ struct Solution {
 
             // and with respect to current element of array , initialize the
             // window of size =1.
-            long long int product = 1;
+            uint64_t product = 1;
 
             // expanding a window continuously till (product of elements in
             // current window  < k) AND (iterator < last index of array). if any
@@ -88,7 +81,7 @@ struct Solution {
 /**
  * @brief Self-test implementation
  */
-void test() {
+static void test() {
     Solution solution;
 
     // Test case 1
