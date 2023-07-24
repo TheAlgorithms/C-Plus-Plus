@@ -32,8 +32,7 @@
 bool is_sparse_matrix(std::vector<std::vector<int>> vect)
 {
     int zero_counter = 0;
-
-     for(int i =0; i<vect.size(); i++)
+    for(int i =0; i<vect.size(); i++)
     {
         for(int j = 0; j<vect[i].size(); j++)
         {
@@ -65,7 +64,6 @@ void display(std::vector<std::vector<int>> vect)
         }
         std::cout<<"\n";
     }
-
 }
 
 /*******************************************************************************
