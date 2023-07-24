@@ -1,19 +1,35 @@
-/*
-This program checks if a given matrix is sparse or not
-i.e in a spaarse matrix zero valued elements are much more as compared to no zero values elements
-here if zero valued elemts are more than the 50% size of the matrix, we will call it a sparse matrix
-*/
-#include<iostream>
-#include<vector>
-#include<cassert>
+/*********************************************************************************
+* @file
+* @brief [Sparse Matrix]
+* @details
+* A sparse matrix is a special type of matrix that contains mostly zeros. 
+* In a regular matrix, most of the elements have values, but in a sparse matrix, the majority of the elements are zero. 
+* This means that only a few elements have non-zero values, making the matrix "sparse" with empty spaces.
+* Imagine a grid-like structure where each cell holds a number. 
+* In a regular matrix, most cells have numbers in them, but in a sparse matrix, many cells are empty (zeros). 
+* These empty cells make the sparse matrix more efficient to store and work with because you don't need to remember or process as many values.
+* Sparse matrices are common in various fields like scientific computing, graph theory, and data analysis when dealing with large datasets or structures where only a small fraction of elements have meaningful values. Using sparse matrices can save memory and computational resources, which is beneficial in many practical applications.
+*
+* ### Implementation
 
-using namespace std;
-/*
-counts the number of  zero valued elements
-check if the count is more than the half of the size of matrix
+* We counts the number of zero valued elements in the Matrix
+* Check if the count is more than the half of the size of matrix
+* If 50% of the elements from the matrix and zero valued, we call it a sparse matrix.
 
-*/
-bool is_sparse_matrix(vector<vector<int>> vect)
+* @author [Vishal Sharma] (https://github.com/codingspace1)
+***************************************************************************************/
+#include<iostream> ///for I/O operations
+#include<vector>   /// for std::vector
+#include<cassert> /// for assert
+
+
+/***
+ * @brief 
+ * function to check if matrix is sparse or not
+ * @param vect Matrix to be tested
+ * @returns zero if matrix is not sparse
+***/
+bool is_sparse_matrix(std::vector<std::vector<int>> vect)
 {
     int zero_counter = 0;
 
@@ -28,50 +44,87 @@ bool is_sparse_matrix(vector<vector<int>> vect)
         }
     }
 
-    if(zero_counter>((vect.size()* vect[0].size())/2))
-    {
-        return 1;
-    }
-    else
-    {
-        return 0;
-    }
+    return (zero_counter>(vect.size() * vect[0].size())* 0.5); //return 1 if zero values are more than non zero values
 
 }
 
-void display(vector<vector<int>> vect)
+/*******************************************************************************
+ * @brief 
+ * function to display the Matrix elements
+ * @param vect Matrix to be displayed
+ * @returns void
+*******************************************************************************/
+
+void display(std::vector<std::vector<int>> vect)
 {
     for(int i =0; i<vect.size(); i++)
     {
         for(int j = 0; j<vect[i].size(); j++)
         {
-            cout<<vect[i][j]<<" ";
+            std::cout<<vect[i][j]<<" ";
         }
-        cout<<endl;
+        std::cout<<"\n";
     }
 
 }
 
-static void tests()
-{
-    vector<vector<int>> vect1 = {{1, 0, 0, 1}, {0, 1, 0, 2}, {1, 0, 1, 4}}; 
-    vector<vector<int>> vect2 = {{1, 1, 1, 0}, {0, 1, 0, 2}, {1, 1, 1, 1}}; 
-    vector<vector<int>> vect3 = {{0, 0, 0, 1}, {0, 0, 0, 2}, {0, 1, 0, 4}};
+/*******************************************************************************
+ * @brief Self-test implementation #1
+ * @returns void
+ *******************************************************************************/
 
-    assert(is_sparse_matrix(vect1)== 0);
-    assert(is_sparse_matrix(vect2)== 0); 
-    assert(is_sparse_matrix(vect3)== 1);  
-    cout<<"all tests are passed"<<endl;
+void test1()
+{
+    std::vector<std::vector<int>> vect1 = {{1, 0, 0, 1}, {0, 1, 0, 2}, {1, 0, 1, 4}};
+    int expected_ans = 0;
+    int derived_ans = is_sparse_matrix(vect1);
+    std::cout<<"Test #1: ";
+    assert(derived_ans == expected_ans);
+    std::cout<<"Passed! \n"; 
 
 }
 
+/*******************************************************************************
+ * @brief Self-test implementation #2
+ * @returns void
+ *******************************************************************************/
+
+void test2()
+{
+    std::vector<std::vector<int>> vect1 = {{1, 1, 1, 0}, {0, 1, 0, 2}, {1, 1, 1, 1}};
+    int expected_ans = 0;
+    int derived_ans = is_sparse_matrix(vect1);
+    std::cout<<"Test #2: ";
+    assert(derived_ans == expected_ans);
+    std::cout<<"Passed! \n"; 
+
+}
+/*******************************************************************************
+ * @brief Self-test implementation #3
+ * @returns void
+ *******************************************************************************/
+
+void test3()
+{
+    std::vector<std::vector<int>> vect1 = {{0, 0, 0, 1}, {0, 0, 0, 2}, {0, 1, 0, 4}};
+    int expected_ans = 1;
+    int derived_ans = is_sparse_matrix(vect1);
+    std::cout<<"Test #3: ";
+    assert(derived_ans == expected_ans);
+    std::cout<<"Passed! \n"; 
+
+}
+
+ /*******************************************************************************
+     * @brief Main function
+     * @returns 0 on exit
+     *******************************************************************************/
+
 int main()
 {
-
-    vector<vector<int>> v = {{1, 0, 0}, {0, 1, 0}, {1, 0, 1}};
-    tests();
-
-    cout<<is_sparse_matrix(v);
+    test1();  // run self-test implementation #1
+    test2();  // run self-test implementation #2
+    test3();  // run self-test implementation #3
     
     return 0;
 }
