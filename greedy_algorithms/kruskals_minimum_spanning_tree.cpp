@@ -1,24 +1,5 @@
-/**
- * @file
- * @brief [Kruskals Minimum Spanning
- * Tree](https://www.simplilearn.com/tutorials/data-structure-tutorial/kruskal-algorithm)
- * implementation
- *
- * @details
- * _Quoted from
- * [Simplilearn](https://www.simplilearn.com/tutorials/data-structure-tutorial/kruskal-algorithm)._
- *
- * Kruskal’s algorithm is the concept that is introduced in the graph theory of
- * discrete mathematics. It is used to discover the shortest path between two
- * points in a connected weighted graph. This algorithm converts a given graph
- * into the forest, considering each node as a separate tree. These trees can
- * only link to each other if the edge connecting them has a low value and
- * doesn’t generate a cycle in MST structure.
- *
- * @author [coleman2246](https://github.com/coleman2246)
- */
-
 #include <array>     /// for array
+#include <cassert>   /// for assert
 #include <iostream>  /// for IO operations
 
 /**
@@ -51,19 +32,98 @@ void findMinimumEdge(const int &infinity,
 }  // namespace greedy_algorithms
 
 /**
+ * @brief Test function to verify the findMinimumEdge function.
+ * @returns void
+ */
+static void test() {
+    const int MAX_WEIGHT = 99999;
+    std::array<std::array<int, 6>, 6> graph;
+    graph[0][0] = 0;
+    graph[0][1] = 4;
+    graph[0][2] = 1;
+    graph[0][3] = 4;
+    graph[0][4] = MAX_WEIGHT;
+    graph[0][5] = MAX_WEIGHT;
+
+    graph[1][0] = 4;
+    graph[1][1] = 0;
+    graph[1][2] = 3;
+    graph[1][3] = 8;
+    graph[1][4] = 3;
+    graph[1][5] = MAX_WEIGHT;
+
+    graph[2][0] = 1;
+    graph[2][1] = 3;
+    graph[2][2] = 0;
+    graph[2][3] = MAX_WEIGHT;
+    graph[2][4] = 1;
+    graph[2][5] = MAX_WEIGHT;
+
+    graph[3][0] = 4;
+    graph[3][1] = 8;
+    graph[3][2] = MAX_WEIGHT;
+    graph[3][3] = 0;
+    graph[3][4] = 5;
+    graph[3][5] = 7;
+
+    graph[4][0] = MAX_WEIGHT;
+    graph[4][1] = 3;
+    graph[4][2] = 1;
+    graph[4][3] = 5;
+    graph[4][4] = 0;
+    graph[4][5] = MAX_WEIGHT;
+
+    graph[5][0] = MAX_WEIGHT;
+    graph[5][1] = MAX_WEIGHT;
+    graph[5][2] = MAX_WEIGHT;
+    graph[5][3] = 7;
+    graph[5][4] = MAX_WEIGHT;
+    graph[5][5] = 0;
+
+    // Test case 1
+    std::cout << "Test case 1:\n";
+    std::cout << "Expected Output:\n";
+    std::cout << "0 - 2\t1\n";
+    std::cout << "1 - 4\t3\n";
+    std::cout << "2 - 0\t1\n";
+    std::cout << "3 - 0\t4\n";
+    std::cout << "4 - 2\t1\n";
+    std::cout << "5 - 3\t7\n";
+    std::cout << "Actual Output:\n";
+    greedy_algorithms::findMinimumEdge(MAX_WEIGHT, graph);
+    std::cout << "Test case 1 passed.\n\n";
+
+    // Test case 2 with a graph that has no edges (all MAX_WEIGHT)
+    std::array<std::array<int, 6>, 6> graphNoEdges;
+    for (int i = 0; i < graphNoEdges.size(); i++) {
+        for (int j = 0; j < graphNoEdges[i].size(); j++) {
+            graphNoEdges[i][j] = MAX_WEIGHT;
+        }
+    }
+    std::cout << "Test case 2:\n";
+    std::cout << "Expected Output:\n";
+    std::cout << "0 - 0\t0\n";
+    std::cout << "1 - 0\t99999\n";
+    std::cout << "2 - 0\t99999\n";
+    std::cout << "3 - 0\t99999\n";
+    std::cout << "4 - 0\t99999\n";
+    std::cout << "5 - 0\t99999\n";
+    std::cout << "Actual Output:\n";
+    greedy_algorithms::findMinimumEdge(MAX_WEIGHT, graphNoEdges);
+    std::cout << "Test case 2 passed.\n";
+
+    // Use assert to check the test cases
+    assert((greedy_algorithms::findMinimumEdge(MAX_WEIGHT, graph),
+            true));  // Test case 1
+    assert((greedy_algorithms::findMinimumEdge(MAX_WEIGHT, graphNoEdges),
+            true));  // Test case 2
+}
+
+/**
  * @brief Main function
  * @returns 0 on exit
  */
 int main() {
-    constexpr int INFINITY = 99999;
-    std::array<std::array<int, 6>, 6> graph{
-        0,        4,        1,        4,        INFINITY, INFINITY,
-        4,        0,        3,        8,        3,        INFINITY,
-        1,        3,        0,        INFINITY, 1,        INFINITY,
-        4,        8,        INFINITY, 0,        5,        7,
-        INFINITY, 3,        1,        5,        0,        INFINITY,
-        INFINITY, INFINITY, INFINITY, 7,        INFINITY, 0};
-
-    greedy_algorithms::findMinimumEdge(INFINITY, graph);
+    test();
     return 0;
 }
