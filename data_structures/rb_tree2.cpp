@@ -10,11 +10,11 @@
  */
 
 #include <cassert>   /// for assert
+#include <cstdlib>   /// for rand_r
 #include <iostream>  /// for IO operations
 #include <sstream>   /// for creating ostringstreams
 #include <string>    /// for creating strings
 #include <vector>    /// for creating vectors
-#include <cstdlib>   /// for rand_r
 
 using std::cout;
 using std::endl;
@@ -1530,10 +1530,9 @@ void LargeRandomRemoveMemoryTest() {
     RedBlackTree* giant_rbt = new RedBlackTree();
 
     vector<int> random_numbers;  // to store inserted numbers
-    unsigned int seed = time(nullptr);
 
     while (giant_rbt->Size() != 711) {
-        int random_num = rand_r(&seed);
+        int random_num = rand();
         if (!giant_rbt->Contains(random_num)) {
             random_numbers.push_back(random_num);
             giant_rbt->Insert(random_num);
