@@ -14,6 +14,7 @@
 #include <sstream>   /// for creating ostringstreams
 #include <string>    /// for creating strings
 #include <vector>    /// for creating vectors
+#include <cstdlib>   /// for rand_r
 
 using std::cout;
 using std::endl;
