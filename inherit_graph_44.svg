@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="d3/d64/classgreedy__algorithms_1_1_graph.html" target="_top" xlink:title="Wrapper class for storing a graph.">
+<g id="a_Node000000"><a xlink:href="d2/daa/classgreedy__algorithms_1_1dijkstra_1_1_graph.html" target="_top" xlink:title="Wrapper class for storing a graph.">
 <polygon fill="white" stroke="#666666" points="101.5,-30.5 0,-30.5 0,0 101.5,0 101.5,-30.5"/>
 <text text-anchor="start" x="8" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">greedy_algorithms::</text>
-<text text-anchor="middle" x="50.75" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">Graph</text>
+<text text-anchor="middle" x="50.75" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">dijkstra::Graph</text>
 </a>
 </g>
 </g>

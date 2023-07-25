@@ -80,7 +80,7 @@ var searchData=
   ['minheap_77',['MinHeap',['../d2/d05/class_min_heap.html#a078cb888e642bb1f95dd0e03f0a35820',1,'MinHeap']]],
   ['minheapify_78',['MinHeapify',['../d2/d05/class_min_heap.html#aaef438c1056492cb62c4a4d9035b5cad',1,'MinHeap']]],
   ['minimax_79',['minimax',['../db/dc0/namespacebacktracking.html#a78540bcb5ef3473b2348cbc34748ec50',1,'backtracking']]],
-  ['minimum_5fdistance_80',['minimum_distance',['../d2/d90/namespacegreedy__algorithms.html#ac6731ab96fb83453aff4682d16fe2ea7',1,'greedy_algorithms']]],
+  ['minimum_5fdistance_80',['minimum_distance',['../df/dcb/greedy__algorithms_2dijkstra_8cpp.html#af6cb29ca6dc5771439f6ea7262058a71',1,'greedy_algorithms::dijkstra']]],
   ['minmax_81',['minmax',['http://en.cppreference.com/w/cpp/algorithm/minmax.html',0,'std']]],
   ['minmax_5felement_82',['minmax_element',['http://en.cppreference.com/w/cpp/algorithm/minmax_element.html',0,'std']]],
   ['minmax_5fscaler_83',['minmax_scaler',['../d8/d77/namespacemachine__learning.html#ac332d152078e96311e43ac5e7183ea26',1,'machine_learning']]],

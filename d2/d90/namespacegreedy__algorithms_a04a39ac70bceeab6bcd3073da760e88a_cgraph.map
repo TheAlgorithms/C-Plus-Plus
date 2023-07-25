@@ -1,5 +1,0 @@
-<map id="greedy_algorithms::dijkstra" name="greedy_algorithms::dijkstra">
-<area shape="rect" id="Node000001" title="The main function that finds the shortest path from given source to all other vertices using Dijkstra..." alt="" coords="5,5,141,46"/>
-<area shape="rect" id="Node000002" href="$d2/d90/namespacegreedy__algorithms.html#ac6731ab96fb83453aff4682d16fe2ea7" title="Utility function that finds the vertex with the minimum distance in mdist." alt="" coords="189,5,324,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,23,174,23,174,28,141,28"/>
-</map>

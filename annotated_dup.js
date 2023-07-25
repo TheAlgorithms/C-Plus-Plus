@@ -71,7 +71,9 @@ var annotated_dup =
       [ "RootedTree", "d0/d58/classgraph_1_1_rooted_tree.html", "d0/d58/classgraph_1_1_rooted_tree" ]
     ] ],
     [ "greedy_algorithms", "d2/d90/namespacegreedy__algorithms.html", [
-      [ "Graph", "d3/d64/classgreedy__algorithms_1_1_graph.html", "d3/d64/classgreedy__algorithms_1_1_graph" ]
+      [ "dijkstra", null, [
+        [ "Graph", "d2/daa/classgreedy__algorithms_1_1dijkstra_1_1_graph.html", "d2/daa/classgreedy__algorithms_1_1dijkstra_1_1_graph" ]
+      ] ]
     ] ],
     [ "hashing", "d6/d0c/namespacehashing.html", [
       [ "sha256", null, [

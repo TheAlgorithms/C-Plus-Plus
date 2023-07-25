@@ -129,7 +129,7 @@ var searchData=
   ['minimax_126',['minimax',['../db/dc0/namespacebacktracking.html#a78540bcb5ef3473b2348cbc34748ec50',1,'backtracking']]],
   ['minimax_2ecpp_127',['minimax.cpp',['../df/dfb/minimax_8cpp.html',1,'']]],
   ['minimum_128',['Minimum',['../d4/d12/namespace_minimum.html',1,'']]],
-  ['minimum_5fdistance_129',['minimum_distance',['../d2/d90/namespacegreedy__algorithms.html#ac6731ab96fb83453aff4682d16fe2ea7',1,'greedy_algorithms']]],
+  ['minimum_5fdistance_129',['minimum_distance',['../df/dcb/greedy__algorithms_2dijkstra_8cpp.html#af6cb29ca6dc5771439f6ea7262058a71',1,'greedy_algorithms::dijkstra']]],
   ['minimum_5fedit_5fdistance_2ecpp_130',['minimum_edit_distance.cpp',['../da/d52/minimum__edit__distance_8cpp.html',1,'']]],
   ['minmax_131',['minmax',['http://en.cppreference.com/w/cpp/algorithm/minmax.html',0,'std']]],
   ['minmax_5felement_132',['minmax_element',['http://en.cppreference.com/w/cpp/algorithm/minmax_element.html',0,'std']]],

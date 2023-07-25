@@ -1,11 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"dir_e79632891301b850df87e9c0030293fa.html":[11,0,10],
-"dir_ece9b94c107bbaa1dd68197a8c9983b9.html":[11,0,12],
-"dir_f1797d0c2a0a12033e7d74efffeb14e1.html":[11,0,4,0],
-"dir_f3c4fbc4e901afa0a54d0623c5574aa7.html":[11,0,1],
-"examples.html":[12],
-"files.html":[11,0],
 "functions.html":[10,3,0],
 "functions.html":[10,3,0,0],
 "functions_a.html":[10,3,0,1],
@@ -61,8 +55,8 @@ var NAVTREEINDEX14 =
 "functions_x.html":[10,3,0,23],
 "functions_y.html":[10,3,0,24],
 "functions_~.html":[10,3,0,25],
-"globals.html":[11,1,0,0],
 "globals.html":[11,1,0],
+"globals.html":[11,1,0,0],
 "globals_a.html":[11,1,0,1],
 "globals_b.html":[11,1,0,2],
 "globals_c.html":[11,1,0,3],

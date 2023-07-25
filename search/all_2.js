@@ -26,7 +26,7 @@ var searchData=
   ['add_5fconst_23',['add_const',['http://en.cppreference.com/w/cpp/types/add_cv.html',0,'std']]],
   ['add_5fcv_24',['add_cv',['http://en.cppreference.com/w/cpp/types/add_cv.html',0,'std']]],
   ['add_5fdigit_25',['add_digit',['../db/d82/classlarge__number.html#a60c436d1a1c5e3795d6177d3815ad615',1,'large_number']]],
-  ['add_5fedge_26',['add_edge',['../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#a79ab4601c4a95c0902ac04e779e5f54d',1,'range_queries::heavy_light_decomposition::Tree::add_edge()'],['../d3/d64/classgreedy__algorithms_1_1_graph.html#a0672b080707aaaacf9cc116d69ea4c3f',1,'greedy_algorithms::Graph::add_edge()'],['../dc/d61/classgraph_1_1_graph.html#a877b2cba40d8d46dde6fb4209effed19',1,'graph::Graph::add_edge()']]],
+  ['add_5fedge_26',['add_edge',['../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#a79ab4601c4a95c0902ac04e779e5f54d',1,'range_queries::heavy_light_decomposition::Tree::add_edge()'],['../d2/daa/classgreedy__algorithms_1_1dijkstra_1_1_graph.html#a224b6efacbad55d59e11b046f792fe79',1,'greedy_algorithms::dijkstra::Graph::add_edge()'],['../dc/d61/classgraph_1_1_graph.html#a877b2cba40d8d46dde6fb4209effed19',1,'graph::Graph::add_edge()']]],
   ['add_5flvalue_5freference_27',['add_lvalue_reference',['http://en.cppreference.com/w/cpp/types/add_reference.html',0,'std']]],
   ['add_5fpointer_28',['add_pointer',['http://en.cppreference.com/w/cpp/types/add_pointer.html',0,'std']]],
   ['add_5frvalue_5freference_29',['add_rvalue_reference',['http://en.cppreference.com/w/cpp/types/add_reference.html',0,'std']]],

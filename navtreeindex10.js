@@ -1,11 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"da/d8d/depth__first__search_8cpp.html#a64c1db5aad7502c6f08e4652f6edd463":[11,0,9,4,2],
-"da/d8d/depth__first__search_8cpp.html#ab5428a3519267a28bba4b4310cfbb6ae":[11,0,9,4,1],
-"da/d8d/depth__first__search_8cpp.html#ad4016cfc80485a43748895a2c26c7d08":[11,0,9,4,0],
-"da/d8d/depth__first__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,9,4,3],
-"da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn.html":[10,0,10,1,0],
-"da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn.html#a080f5b1742832a03c1cbba596a48bd1a":[10,0,10,1,0,4],
 "da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn.html#a16ddc13621eec6ac5f83658b3401a581":[10,0,10,1,0,7],
 "da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn.html#a188d29ffcefdb5900a8cd41eccd89200":[10,0,10,1,0,0],
 "da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn.html#a209383503fb6c03afac405a80bace964":[10,0,10,1,0,8],
@@ -43,10 +37,10 @@ var NAVTREEINDEX10 =
 "da/dc9/fibonacci__matrix__exponentiation_8cpp.html#abc3bc08249058d57cfc8f54a29d9cf9f":[11,0,14,18,0],
 "da/dc9/fibonacci__matrix__exponentiation_8cpp.html#ae1a3968e7947464bee7714f6d43b7002":[11,0,14,18,2],
 "da/dc9/fibonacci__matrix__exponentiation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,18,1],
-"da/dd1/structquadratic__probing_1_1_entry.html":[10,0,15,0],
 "da/dd1/structquadratic__probing_1_1_entry.html":[9,0,89,0],
-"da/dd1/structquadratic__probing_1_1_entry.html#a75f72858f08a2fc8b94402de98db12d8":[9,0,89,0,1],
+"da/dd1/structquadratic__probing_1_1_entry.html":[10,0,15,0],
 "da/dd1/structquadratic__probing_1_1_entry.html#a75f72858f08a2fc8b94402de98db12d8":[10,0,15,0,1],
+"da/dd1/structquadratic__probing_1_1_entry.html#a75f72858f08a2fc8b94402de98db12d8":[9,0,89,0,1],
 "da/dd1/structquadratic__probing_1_1_entry.html#a9df1118010a233d13ab3dd699bcb513e":[10,0,15,0,0],
 "da/dd1/structquadratic__probing_1_1_entry.html#a9df1118010a233d13ab3dd699bcb513e":[9,0,89,0,0],
 "da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp.html":[11,0,5,0],
@@ -249,5 +243,11 @@ var NAVTREEINDEX10 =
 "db/d9a/classuint128__t.html#add9938b97fc66560cec2d32e8c83eaad":[10,0,58,16],
 "db/d9a/classuint128__t.html#ae3f0ef8a3f68d9cbd9d99e772f1a947a":[10,0,58,69],
 "db/d9a/classuint128__t.html#ae7af1bad048942eeabc092d8e0194292":[10,0,58,63],
-"db/d9a/classuint128__t.html#aed49b24b99293ae6b14ac9850f5deb94":[10,0,58,44]
+"db/d9a/classuint128__t.html#aed49b24b99293ae6b14ac9850f5deb94":[10,0,58,44],
+"db/d9a/classuint128__t.html#af139bb6e630f1a61919f180978611cd2":[10,0,58,7],
+"db/d9a/classuint128__t.html#af4ce01d81a0369218f7d46567d136733":[10,0,58,26],
+"db/d9a/classuint128__t.html#af71990a1fba93a5528ddb1e6662bffd6":[10,0,58,34],
+"db/d9f/iterative__factorial_8cpp.html":[11,0,14,27],
+"db/d9f/iterative__factorial_8cpp.html#a2565c745aac2f9561cc6fd9e56d9b77a":[11,0,14,27,0],
+"db/d9f/iterative__factorial_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,14,27,2]
 };
