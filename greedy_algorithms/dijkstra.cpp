@@ -25,8 +25,10 @@
  */
 namespace greedy_algorithms {
 /**
- * @brief 
+ * @namespace
+ * @brief Functions for the [Dijkstra](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) algorithm implementation
  */
+namespace dijkstra {
 /**
  * @brief Wrapper class for storing a graph
  */
@@ -112,7 +114,7 @@ void print(std::vector<int> dist, int V) {
 }
 
 /**
- * @brief The main function that finds the shortest path from given source
+ * @brief The main function that finds the shortest path from a given source
  * to all other vertices using Dijkstra's Algorithm.
  * @note This doesn't work on negative weights.
  * @param graph the graph to be processed
@@ -124,7 +126,7 @@ void dijkstra(Graph graph, int src) {
     std::vector<int> mdist{};  // Stores updated distances to the vertex
     std::vector<bool> vset{};  // `vset[i]` is true if the vertex `i` is included in the shortest path tree
 
-    // Initialize `mdist and `vset`. Set distance of source as zero
+    // Initialize `mdist and `vset`. Set the distance of the source as zero
     for (int i = 0; i < V; i++) {
         mdist[i] = INT_MAX;
         vset[i] = false;
@@ -148,6 +150,7 @@ void dijkstra(Graph graph, int src) {
 
     print(mdist, V);
 }
+}  // namespace dijkstra
 }  // namespace greedy_algorithms
 
 /**
@@ -155,7 +158,7 @@ void dijkstra(Graph graph, int src) {
  * @returns void
  */
 static void tests() {
-    greedy_algorithms::Graph graph(8);
+    greedy_algorithms::dijkstra::Graph graph(8);
 
     // 1st test.
     graph.add_edge(6, 2, 4);
