@@ -5,7 +5,7 @@ var searchData=
   ['decimal_5fto_5froman_5fnumeral_2ecpp_2',['decimal_to_roman_numeral.cpp',['../de/d85/decimal__to__roman__numeral_8cpp.html',1,'']]],
   ['depth_5ffirst_5fsearch_2ecpp_3',['depth_first_search.cpp',['../da/d8d/depth__first__search_8cpp.html',1,'']]],
   ['depth_5ffirst_5fsearch_5fwith_5fstack_2ecpp_4',['depth_first_search_with_stack.cpp',['../da/d4b/depth__first__search__with__stack_8cpp.html',1,'']]],
-  ['dijkstra_2ecpp_5',['dijkstra.cpp',['../d7/d1e/graph_2dijkstra_8cpp.html',1,'']]],
+  ['dijkstra_2ecpp_5',['dijkstra.cpp',['../d7/d1e/graph_2dijkstra_8cpp.html',1,'(Global Namespace)'],['../df/dcb/greedy__algorithms_2dijkstra_8cpp.html',1,'(Global Namespace)']]],
   ['disjoint_5fset_2ecpp_6',['disjoint_set.cpp',['../de/d23/disjoint__set_8cpp.html',1,'']]],
   ['dnf_5fsort_2ecpp_7',['dnf_sort.cpp',['../d6/d1a/dnf__sort_8cpp.html',1,'']]],
   ['double_5ffactorial_2ecpp_8',['double_factorial.cpp',['../d7/d89/double__factorial_8cpp.html',1,'']]],

@@ -70,6 +70,9 @@ var annotated_dup =
       [ "LowestCommonAncestor", "d9/d23/classgraph_1_1_lowest_common_ancestor.html", "d9/d23/classgraph_1_1_lowest_common_ancestor" ],
       [ "RootedTree", "d0/d58/classgraph_1_1_rooted_tree.html", "d0/d58/classgraph_1_1_rooted_tree" ]
     ] ],
+    [ "greedy_algorithms", "d2/d90/namespacegreedy__algorithms.html", [
+      [ "Graph", "d3/d64/classgreedy__algorithms_1_1_graph.html", "d3/d64/classgreedy__algorithms_1_1_graph" ]
+    ] ],
     [ "hashing", "d6/d0c/namespacehashing.html", [
       [ "sha256", null, [
         [ "Hash", "d6/d84/classhashing_1_1sha256_1_1_hash.html", "d6/d84/classhashing_1_1sha256_1_1_hash" ]
@@ -195,8 +198,8 @@ var annotated_dup =
     [ "MinHeap", "d2/d05/class_min_heap.html", "d2/d05/class_min_heap" ],
     [ "MinHeapNode", "d5/d29/struct_min_heap_node.html", null ],
     [ "mst", "d1/d77/structmst.html", null ],
-    [ "Node", "db/d8b/struct_node.html", null ],
     [ "node", "d5/da1/structnode.html", null ],
+    [ "Node", "db/d8b/struct_node.html", null ],
     [ "Point", "d8/dc8/struct_point.html", "d8/dc8/struct_point" ],
     [ "query", "dd/d1b/structquery.html", null ],
     [ "Queue", "dc/db5/struct_queue.html", null ],

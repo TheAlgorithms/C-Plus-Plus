@@ -36,6 +36,7 @@ var hierarchy =
       [ "graph::RootedTree", "d0/d58/classgraph_1_1_rooted_tree.html", null ]
     ] ],
     [ "graph::is_graph_bipartite::Graph", "de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html", null ],
+    [ "greedy_algorithms::Graph", "d3/d64/classgreedy__algorithms_1_1_graph.html", null ],
     [ "hashing::sha256::Hash", "d6/d84/classhashing_1_1sha256_1_1_hash.html", null ],
     [ "hash_chain", "dd/d1c/classhash__chain.html", null ],
     [ "ciphers::HillCipher", "d6/d26/classciphers_1_1_hill_cipher.html", null ],
@@ -62,8 +63,8 @@ var hierarchy =
     [ "data_structures::Node", "d9/d49/structdata__structures_1_1_node.html", null ],
     [ "data_structures::tree_234::Node", "dd/d40/classdata__structures_1_1tree__234_1_1_node.html", null ],
     [ "data_structures::trie_using_hashmap::Trie::Node", "d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html", null ],
-    [ "Node< ValueType >", "db/d8b/struct_node.html", null ],
     [ "node", "d5/da1/structnode.html", null ],
+    [ "Node< ValueType >", "db/d8b/struct_node.html", null ],
     [ "operations_on_datastructures::circular_linked_list::Node", "da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html", null ],
     [ "operations_on_datastructures::inorder_traversal_of_bst::Node", "d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html", null ],
     [ "operations_on_datastructures::reverse_binary_tree::Node", "d8/dfd/structoperations__on__datastructures_1_1reverse__binary__tree_1_1_node.html", null ],
