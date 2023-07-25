@@ -1529,7 +1529,7 @@ void LargeRandomRemoveMemoryTest() {
     RedBlackTree* giant_rbt = new RedBlackTree();
 
     vector<int> random_numbers;  // to store inserted numbers
-    unsigned int seed = time(NULL);
+    unsigned int seed = time(nullptr);
 
     while (giant_rbt->Size() != 711) {
         int random_num = rand_r(&seed);
