@@ -36,14 +36,14 @@ const int COLOR_DOUBLE_BLACK = 2;
  * an integer value, and pointers to its
  * parent and child nodes. Nodes are red by default.
  */
-struct RBTNode {
+struct rbt_node {
     uint16_t color = COLOR_RED;
 
     int val = 0;
 
-    RBTNode* parent = nullptr;
-    RBTNode* left = nullptr;
-    RBTNode* right = nullptr;
+    rbt_node* parent = nullptr;
+    rbt_node* left = nullptr;
+    rbt_node* right = nullptr;
 
     bool treatAsNull = false;
 };
@@ -54,33 +54,33 @@ struct RBTNode {
  * Defines a collection of functions and variables
  * used to create a red black tree data structure.
  */
-class RedBlackTree {
+class red_black_tree {
  public:
     /**
      * @brief Constructor for Red Black Tree
      */
-    RedBlackTree() {
+    red_black_tree() {
         root = nullptr;
-        numItems = 0;
+        num_items = 0;
     }
 
     /**
      * @brief Deconstructor for Red Black Tree
      * @details
-     * PostDelete() used to
+     * post_delete() used to
      * free Red Black Tree memory
      */
-    ~RedBlackTree() { PostDelete(root); }
+    ~red_black_tree() { post_delete(root); }
 
     /**
      * @brief Deletes tree nodes through postorder traversal
      * @param node the node where postorder traversal starts from
      */
-    void PostDelete(RBTNode* node) {
+    void post_delete(rbt_node* node) {
         // delete left then right (recursively)
         if (node != nullptr) {
-            PostDelete(node->left);
-            PostDelete(node->right);
+            post_delete(node->left);
+            post_delete(node->right);
         }
         // delete parent
         delete node;
@@ -90,54 +90,54 @@ class RedBlackTree {
      * @brief Makes this tree a copy of another tree
      * @param rbt the Red Black Tree to be copied
      */
-    RedBlackTree(const RedBlackTree& rbt) {
+    red_black_tree(const red_black_tree& rbt) {
         // re-initialize tree
         this->root = nullptr;
-        this->numItems = 0;
+        this->num_items = 0;
 
         // insert tree nodes in same order as the copied tree
         for (int n : rbt.nodes_order_added) {
-            this->Insert(n);
+            this->insert(n);
         }
     }
 
     /**
      * @brief Gives size of tree
-     * @return numItems number of nodes in tree
+     * @return num_items number of nodes in tree
      */
-    uint64_t Size() { return numItems; }
+    uint64_t size() { return num_items; }
 
     /**
      * @brief Gives tree data in infix notation
      * @return string representing tree nodes in infix order
      */
-    string ToInfixString() const { return ToInfixString(root); }
+    string to_infix_string() const { return to_infix_string(root); }
 
     /**
      * @brief Gives tree data in prefix notation
      * @return string representing tree nodes in prefix order
      */
-    string ToPrefixString() const { return ToPrefixString(root); }
+    string to_prefix_string() const { return to_prefix_string(root); }
 
     /**
      * @brief Gives tree data in postfix notation
      * @return string representing tree nodes in postfix order
      */
-    string ToPostfixString() const { return ToPostfixString(root); }
+    string to_postfix_string() const { return to_postfix_string(root); }
 
     /**
-     * @brief Inserts a new node into tree
+     * @brief inserts a new node into tree
      * @param value integer value stored in the new node
      */
-    void Insert(int value) {
+    void insert(int value) {
         // check for duplicate keys
-        if (this->Contains(value)) {
+        if (this->contains(value)) {
             throw invalid_argument(
-                "Insert(): Node is already in tree"
+                "insert(): Node is already in tree"
                 ", duplicate nodes not allowed.");
         }
-        // using 'auto' specifier since type already known from 'new RBTNode'
-        auto node_to_insert = new RBTNode();
+        // using 'auto' specifier since type already known from 'new rbt_node'
+        auto node_to_insert = new rbt_node();
 
         node_to_insert->val = value;
         nodes_order_added.push_back(value);
@@ -147,8 +147,8 @@ class RedBlackTree {
             root = node_to_insert;
             root->color = COLOR_BLACK;
         } else {
-            RBTNode* curr_node = root;
-            RBTNode* curr_parent = nullptr;
+            rbt_node* curr_node = root;
+            rbt_node* curr_parent = nullptr;
 
             // traverse down tree until a place to insert node is found
             while (curr_node != nullptr) {
@@ -170,13 +170,13 @@ class RedBlackTree {
                 node_to_insert->parent->right = node_to_insert;
             }
             // maintain conditions for red black tree
-            CheckTreeConditions(node_to_insert);
+            check_tree_conditions(node_to_insert);
         }
-        numItems++;
+        num_items++;
     }
 
     /**
-     * @brief Removes node from tree and re-balances as needed
+     * @brief removes node from tree and re-balances as needed
      * @details
      * Re-balances tree by checking if
      * red black tree conditions need to be fixed
@@ -185,11 +185,11 @@ class RedBlackTree {
      * conditions for a red black tree after removal.
      * @param data integer value of the node to remove
      */
-    void Remove(int data) {
-        RBTNode* node_to_delete = Find(data);
+    void remove(int data) {
+        rbt_node* node_to_delete = find(data);
 
         // to store the node that will replace the deleted node
-        RBTNode* replacement_node = node_to_delete;
+        rbt_node* replacement_node = node_to_delete;
 
         // to check number of children the node to delete has
         unsigned int num_children = get_num_children(node_to_delete);
@@ -198,8 +198,8 @@ class RedBlackTree {
         bool is_root = (node_to_delete == root);
 
         if (num_children == 2) {
-            int ios_val = InOrderSuccessor(node_to_delete)->val;
-            Remove(ios_val);
+            int ios_val = in_order_successor(node_to_delete)->val;
+            remove(ios_val);
             node_to_delete->val = ios_val;
             return;
         } else if (num_children == 0) {
@@ -215,17 +215,17 @@ class RedBlackTree {
             // replace node with its only child
 
             if (is_root) {
-                root = MeToOnlyChildPtr(node_to_delete);
+                root = me_to_only_child_ptr(node_to_delete);
                 root->parent = nullptr;
                 root->color = COLOR_BLACK;
                 replacement_node = root;
             } else {
                 // update pointers for node's only child
-                ParentToMePtr(node_to_delete) =
-                    MeToOnlyChildPtr(node_to_delete);
-                MeToOnlyChildPtr(node_to_delete)->parent =
+                parent_to_me_ptr(node_to_delete) =
+                    me_to_only_child_ptr(node_to_delete);
+                me_to_only_child_ptr(node_to_delete)->parent =
                     node_to_delete->parent;
-                replacement_node = MeToOnlyChildPtr(node_to_delete);
+                replacement_node = me_to_only_child_ptr(node_to_delete);
             }
         }
 
@@ -247,11 +247,11 @@ class RedBlackTree {
         // node marked as null if it's a leaf
         if (node_to_delete->treatAsNull) {
             // disconnect node from parent
-            ParentToMePtr(node_to_delete) = nullptr;
+            parent_to_me_ptr(node_to_delete) = nullptr;
         }
 
         delete node_to_delete;
-        numItems--;
+        num_items--;
     }
 
     /**
@@ -259,7 +259,7 @@ class RedBlackTree {
      * @param node the tree node to check
      * @return unsigned int the number of children for this node
      */
-    unsigned int get_num_children(RBTNode* node) {
+    unsigned int get_num_children(rbt_node* node) {
         unsigned int num_children = 0;
 
         if (node->left != nullptr)
@@ -279,15 +279,15 @@ class RedBlackTree {
      * a necessary condition for a red black tree.
      * @param replacement_node the double-black node
      */
-    void fix_double_black(RBTNode* replacement_node) {
+    void fix_double_black(rbt_node* replacement_node) {
         if (replacement_node == root) {
             replacement_node->color = COLOR_BLACK;
         } else {
-            RBTNode* sibling = GetSibling(replacement_node);
+            rbt_node* sibling = get_sibling(replacement_node);
 
             if (sibling->color == COLOR_BLACK) {
                 if (has_red_child(sibling)) {
-                    CheckSiblingConditions(replacement_node, sibling);
+                    check_sibling_conditions(replacement_node, sibling);
                 } else {
                     // shift blackness level up to parent
                     sibling->color = COLOR_RED;
@@ -306,11 +306,11 @@ class RedBlackTree {
                 sibling->color = COLOR_BLACK;
 
                 // rotate right for left sibling
-                if (ParentToMePtr(sibling) == sibling->parent->left) {
-                    RotateRight(sibling);
-                } else if (ParentToMePtr(sibling) == sibling->parent->right) {
+                if (parent_to_me_ptr(sibling) == sibling->parent->left) {
+                    rotate_right(sibling);
+                } else if (parent_to_me_ptr(sibling) == sibling->parent->right) {
                     // rotate left for right sibling
-                    RotateLeft(sibling);
+                    rotate_left(sibling);
                 }
 
                 // fix again with a black sibling
@@ -324,9 +324,9 @@ class RedBlackTree {
      * @param n the node to check
      * @return true if node has a red child, false otherwise
      */
-    bool has_red_child(RBTNode* n) {
-        RBTNode* n_left = n->left;
-        RBTNode* n_right = n->right;
+    bool has_red_child(rbt_node* n) {
+        rbt_node* n_left = n->left;
+        rbt_node* n_right = n->right;
 
         return (n_left != nullptr && n_left->color == COLOR_RED) ||
                (n_right != nullptr && n_right->color == COLOR_RED);
@@ -342,48 +342,48 @@ class RedBlackTree {
      * @param replacement the double-black tree node
      * @param sibling the sibling of the double-black node
      */
-    void CheckSiblingConditions(RBTNode* replacement, RBTNode* sibling) {
-        RBTNode* s_left = sibling->left;
-        RBTNode* s_right = sibling->right;
+    void check_sibling_conditions(rbt_node* replacement, rbt_node* sibling) {
+        rbt_node* s_left = sibling->left;
+        rbt_node* s_right = sibling->right;
 
         // check if sibling is the left child of its parent
-        if (ParentToMePtr(sibling) == sibling->parent->left) {
+        if (parent_to_me_ptr(sibling) == sibling->parent->left) {
             // left left: with left or 2 red kids
             if (s_left != nullptr && s_left->color == COLOR_RED) {
                 // rotate right once and recolor to fix double-blackness
-                RotateRight(sibling);
-                ShiftColorsLeft(sibling);
+                rotate_right(sibling);
+                shift_colors_left(sibling);
             } else {
                 // left right: with 1 red kid on right (only other case)
 
                 // simpler left left case is made from rotating left
-                RotateLeft(s_right);
+                rotate_left(s_right);
                 sibling = s_right;
-                ColorSwap(sibling, sibling->left);
+                color_swap(sibling, sibling->left);
 
                 // rotate right and recolor to fix new left left case
-                RotateRight(sibling);
-                ShiftColorsLeft(sibling);
+                rotate_right(sibling);
+                shift_colors_left(sibling);
             }
-        } else if (ParentToMePtr(sibling) == sibling->parent->right) {
+        } else if (parent_to_me_ptr(sibling) == sibling->parent->right) {
             // sibling is a right child of its parent
 
             // right right: with right or 2 red kids
             if (s_right != nullptr && s_right->color == COLOR_RED) {
                 // rotate left once and recolor
-                RotateLeft(sibling);
-                ShiftColorsRight(sibling);
+                rotate_left(sibling);
+                shift_colors_right(sibling);
             } else {
                 // right left: with 1 red kid on left
 
                 // rotate right on child, making a right right rotate case
-                RotateRight(s_left);
+                rotate_right(s_left);
                 sibling = s_left;
-                ColorSwap(sibling, sibling->right);
+                color_swap(sibling, sibling->right);
 
                 // rotate left and recolor to fix new right right case
-                RotateLeft(sibling);
-                ShiftColorsRight(sibling);
+                rotate_left(sibling);
+                shift_colors_right(sibling);
             }
         }
         // color level returns to black
@@ -394,7 +394,7 @@ class RedBlackTree {
      * @brief Shifts colors of a node and its children to the right
      * @param sibling the node where color shift occurs
      */
-    void ShiftColorsRight(RBTNode* sibling) {
+    void shift_colors_right(rbt_node* sibling) {
         sibling->right->color = sibling->color;
         sibling->color = sibling->left->color;
         sibling->left->color = COLOR_BLACK;
@@ -407,7 +407,7 @@ class RedBlackTree {
      * in the red black tree.
      * @param sibling the node where color shift occurs
      */
-    void ShiftColorsLeft(RBTNode* sibling) {
+    void shift_colors_left(rbt_node* sibling) {
         sibling->left->color = sibling->color;
         sibling->color = sibling->right->color;
         sibling->right->color = COLOR_BLACK;
@@ -421,9 +421,9 @@ class RedBlackTree {
      * returns the pointer to it from parent node 'n'
      * (ex. returns 'n->left' or 'n->right')
      * @param n the node to get the child pointer for
-     * @return RBTNode*& the node's pointer to its only child
+     * @return rbt_node*& the node's pointer to its only child
      */
-    RBTNode*& MeToOnlyChildPtr(RBTNode* n) {
+    rbt_node*& me_to_only_child_ptr(rbt_node* n) {
         // check node has exactly one non-null child
         if ((n->left == nullptr || n->right == nullptr) &&
             !(n->left == nullptr && n->right == nullptr)) {
@@ -438,17 +438,17 @@ class RedBlackTree {
         }
         // reaches here if passed node is invalid for function
         throw invalid_argument(
-            "MeToOnlyChildPtr(): Node passed "
+            "me_to_only_child_ptr(): Node passed "
             "doesn't have exactly one child.");
     }
 
     /**
      * @brief Gives the pointer from a node's parent to itself
      * @param n the node pointed to by its parent
-     * @return RBTNode*& the parent's pointer to the node
+     * @return rbt_node*& the parent's pointer to the node
      */
-    RBTNode*& ParentToMePtr(RBTNode* n) {
-        RBTNode* p = n->parent;
+    rbt_node*& parent_to_me_ptr(rbt_node* n) {
+        rbt_node* p = n->parent;
         if (p != nullptr) {
             if (p->left == n) {
                 return p->left;
@@ -457,7 +457,7 @@ class RedBlackTree {
             }
         }
         throw invalid_argument(
-            "ParentToMePtr(): Node passed is root"
+            "parent_to_me_ptr(): Node passed is root"
             " or has invalid parent.");
     }
 
@@ -469,19 +469,19 @@ class RedBlackTree {
      * @param node checks tree starting from this node (assumed
      * to be the node just inserted into tree) up to the root
      */
-    void CheckTreeConditions(RBTNode* node) {
+    void check_tree_conditions(rbt_node* node) {
         if (node == root || node == nullptr) {
             if (node == root) {
                 root->color = COLOR_BLACK;
             }
         } else if (node->parent->color == COLOR_RED) {
-            RBTNode* parent_sibling = this->GetSibling(node->parent);
+            rbt_node* parent_sibling = this->get_sibling(node->parent);
 
             if (parent_sibling == nullptr ||
                 parent_sibling->color == COLOR_BLACK) {
-                ConditionalRotate(node);
+                conditional_rotate(node);
             } else if (parent_sibling->color == COLOR_RED) {
-                RBTNode* grandparent = node->parent->parent;
+                rbt_node* grandparent = node->parent->parent;
 
                 // push blackness down from grandparent node
                 grandparent->color = COLOR_RED;
@@ -489,7 +489,7 @@ class RedBlackTree {
                 grandparent->right->color = COLOR_BLACK;
 
                 // recursively check tree conditions after recolor
-                CheckTreeConditions(grandparent);
+                check_tree_conditions(grandparent);
             }
         }
     }
@@ -501,9 +501,9 @@ class RedBlackTree {
      * in a grandparent-parent-child tree case.
      * @param node the parent node where rotation occurs
      */
-    void RotateLeft(RBTNode* node) {
-        RBTNode* great_grandparent = node->parent->parent;
-        RBTNode* grandparent = node->parent;
+    void rotate_left(rbt_node* node) {
+        rbt_node* great_grandparent = node->parent->parent;
+        rbt_node* grandparent = node->parent;
 
         node->parent = great_grandparent;
         if (great_grandparent != nullptr) {
@@ -517,7 +517,7 @@ class RedBlackTree {
             this->root = node;
         }
 
-        RBTNode* parent_left = node->left;
+        rbt_node* parent_left = node->left;
 
         grandparent->parent = node;
         node->left = grandparent;
@@ -535,9 +535,9 @@ class RedBlackTree {
      * in a grandparent-parent-child tree case.
      * @param node the parent node where rotation occurs
      */
-    void RotateRight(RBTNode* node) {
-        RBTNode* great_grandparent = node->parent->parent;
-        RBTNode* grandparent = node->parent;
+    void rotate_right(rbt_node* node) {
+        rbt_node* great_grandparent = node->parent->parent;
+        rbt_node* grandparent = node->parent;
 
         node->parent = great_grandparent;
         if (great_grandparent != nullptr) {
@@ -551,7 +551,7 @@ class RedBlackTree {
             this->root = node;
         }
 
-        RBTNode* parent_right = node->right;
+        rbt_node* parent_right = node->right;
 
         grandparent->parent = node;
         node->right = grandparent;
@@ -573,39 +573,39 @@ class RedBlackTree {
      * 4) right right: Rotate left, Recolor
      * @param node the tree node where rotation occurs
      */
-    void ConditionalRotate(RBTNode* node) {
-        RBTNode* parent_left = node->parent->left;
-        RBTNode* parent_right = node->parent->right;
-        RBTNode* grandparent_left = node->parent->parent->left;
-        RBTNode* grandparent_right = node->parent->parent->right;
+    void conditional_rotate(rbt_node* node) {
+        rbt_node* parent_left = node->parent->left;
+        rbt_node* parent_right = node->parent->right;
+        rbt_node* grandparent_left = node->parent->parent->left;
+        rbt_node* grandparent_right = node->parent->parent->right;
 
         // ... left
         if (parent_left == node) {
             // left left
             if (grandparent_left == node->parent) {
                 // rotate right on parent
-                RotateRight(node->parent);
-                ColorSwap(node->parent, node->parent->right);
+                rotate_right(node->parent);
+                color_swap(node->parent, node->parent->right);
             }
             // right left
             if (grandparent_right == node->parent) {
-                RotateRight(node);
-                RotateLeft(node);
-                ColorSwap(node, node->left);
+                rotate_right(node);
+                rotate_left(node);
+                color_swap(node, node->left);
             }
         }
         // ... right
         if (parent_right == node) {
             // right right
             if (grandparent_right == node->parent) {
-                RotateLeft(node->parent);
-                ColorSwap(node->parent, node->parent->left);
+                rotate_left(node->parent);
+                color_swap(node->parent, node->parent->left);
             }
             // left right
             if (grandparent_left == node->parent) {
-                RotateLeft(node);
-                RotateRight(node);
-                ColorSwap(node, node->right);
+                rotate_left(node);
+                rotate_right(node);
+                color_swap(node, node->right);
             }
         }
     }
@@ -618,7 +618,7 @@ class RedBlackTree {
      * @param parent the rotated parent node
      * @param grandparent the rotated grandparent node
      */
-    void ColorSwap(RBTNode* parent, RBTNode* grandparent) {
+    void color_swap(rbt_node* parent, rbt_node* grandparent) {
         uint16_t gp_color = grandparent->color;
         grandparent->color = parent->color;
         parent->color = gp_color;
@@ -627,13 +627,13 @@ class RedBlackTree {
     /**
      * @brief Gives a node's in-order successor (IOS)
      * @note
-     * This function is used in Remove().
+     * This function is used in remove().
      * @param node the node to get the IOS of
-     * @return RBTNode* the IOS node
+     * @return rbt_node* the IOS node
      */
-    RBTNode* InOrderSuccessor(RBTNode* node) {
+    rbt_node* in_order_successor(rbt_node* node) {
         // begin traversal at the passed node
-        RBTNode* trav = node;
+        rbt_node* trav = node;
 
         // go right once
         if (trav->right != nullptr) {
@@ -654,9 +654,9 @@ class RedBlackTree {
      * @return true if the tree contains a node with this value
      * @return false otherwise
      */
-    bool Contains(int value) {
+    bool contains(int value) {
         if (root != nullptr) {
-            RBTNode* trav = root;
+            rbt_node* trav = root;
 
             while (trav != nullptr) {
                 // node with the same value found in tree
@@ -676,17 +676,17 @@ class RedBlackTree {
     }
 
     /**
-     * @brief Finds a node in the tree with a specified value.
+     * @brief finds a node in the tree with a specified value.
      * @note
-     * This function is the same as Contains()
+     * This function is the same as contains()
      * except it returns the node found or throws
      * an exception.
      * @param value the value of the node to search for
-     * @return RBTNode* the node with this value
+     * @return rbt_node* the node with this value
      */
-    RBTNode* Find(int value) {
+    rbt_node* find(int value) {
         if (root != nullptr) {
-            RBTNode* trav = root;
+            rbt_node* trav = root;
             while (trav != nullptr) {
                 if (trav->val == value) {
                     return trav;
@@ -705,9 +705,9 @@ class RedBlackTree {
      * @brief Gives the minimum node value in tree.
      * @return int the lowest value in the tree
      */
-    int GetMin() {
+    int get_min() {
         // minimum value node will be at left end of the tree
-        RBTNode* trav = root;
+        rbt_node* trav = root;
         while (trav->left != nullptr) {
             trav = trav->left;
         }
@@ -718,9 +718,9 @@ class RedBlackTree {
      * @brief Gives the maximum node value in tree
      * @return int the highest value in the tree
      */
-    int GetMax() {
+    int get_max() {
         // maximum value node will be at right end of the tree
-        RBTNode* trav = root;
+        rbt_node* trav = root;
         while (trav->right != nullptr) {
             trav = trav->right;
         }
@@ -730,9 +730,9 @@ class RedBlackTree {
     /**
      * @brief Gives the sibling of a node if one exists
      * @param node the node to get the sibling of
-     * @return RBTNode*& the sibling of the passed node
+     * @return rbt_node*& the sibling of the passed node
      */
-    RBTNode*& GetSibling(RBTNode* node) {
+    rbt_node*& get_sibling(rbt_node* node) {
         if (node == root) {
             throw invalid_argument("Root has no sibling.");
         }
@@ -748,8 +748,8 @@ class RedBlackTree {
     }
 
  private:
-    uint64_t numItems;              /// number of nodes in tree
-    RBTNode* root;                  /// top node of tree
+    uint64_t num_items;              /// number of nodes in tree
+    rbt_node* root;                  /// top node of tree
     vector<int> nodes_order_added;  /// for copy constructor
 
     /**
@@ -758,12 +758,12 @@ class RedBlackTree {
      * recursively generating down the tree
      * @return string representing tree in infix notation
      */
-    string ToInfixString(struct RBTNode* node) const {
+    string to_infix_string(struct rbt_node* node) const {
         ostringstream nodeOSS;
 
         if (node != nullptr) {
             // print left (recursion)
-            nodeOSS << ToInfixString(node->left);
+            nodeOSS << to_infix_string(node->left);
 
             // print node's color and value
             nodeOSS << " ";
@@ -775,7 +775,7 @@ class RedBlackTree {
             nodeOSS << node->val << " ";
 
             // print right (recursion)
-            nodeOSS << ToInfixString(node->right);
+            nodeOSS << to_infix_string(node->right);
         }
         // return string once null node reached (base case)
         return nodeOSS.str();
@@ -787,7 +787,7 @@ class RedBlackTree {
      * begins recursively generating down the tree
      * @return string representing tree in prefix notation
      */
-    string ToPrefixString(struct RBTNode* node) const {
+    string to_prefix_string(struct rbt_node* node) const {
         ostringstream nodeOSS;
         if (node != nullptr) {
             // print node's color and value
@@ -800,8 +800,8 @@ class RedBlackTree {
             nodeOSS << node->val << " ";
 
             // print left then right (recursively)
-            nodeOSS << ToPrefixString(node->left);
-            nodeOSS << ToPrefixString(node->right);
+            nodeOSS << to_prefix_string(node->left);
+            nodeOSS << to_prefix_string(node->right);
         }
         return nodeOSS.str();
     }
@@ -812,12 +812,12 @@ class RedBlackTree {
      * begins recursively generating down the tree
      * @return string representing tree in postfix notation
      */
-    string ToPostfixString(struct RBTNode* node) const {
+    string to_postfix_string(struct rbt_node* node) const {
         ostringstream nodeOSS;
         if (node != nullptr) {
             // print left then right (recursively)
-            nodeOSS << ToPostfixString(node->left);
-            nodeOSS << ToPostfixString(node->right);
+            nodeOSS << to_postfix_string(node->left);
+            nodeOSS << to_postfix_string(node->right);
 
             // print node's color and value
             nodeOSS << " ";
@@ -836,11 +836,11 @@ class RedBlackTree {
  * @brief self-test by calling constructor
  * @return void
  */
-void TestSimpleConstructor() {
+void simple_constructor_test() {
     cout << "Testing Simple Constructor... " << endl;
-    RedBlackTree rbt = RedBlackTree();
+    red_black_tree rbt = red_black_tree();
 
-    assert(rbt.ToInfixString() == "");
+    assert(rbt.to_infix_string() == "");
 
     cout << "PASSED!" << endl << endl;
 }
@@ -849,13 +849,13 @@ void TestSimpleConstructor() {
  * @brief simple insert of a value into tree
  * @return void
  */
-void TestInsertFirstNode() {
-    cout << "Testing Insert One Node..." << endl;
+void insert_first_node_test() {
+    cout << "Testing insert One Node..." << endl;
 
-    RedBlackTree rbt = RedBlackTree();
-    rbt.Insert(30);
+    red_black_tree rbt = red_black_tree();
+    rbt.insert(30);
 
-    assert(rbt.ToPrefixString() == " B30 ");
+    assert(rbt.to_prefix_string() == " B30 ");
 
     cout << "PASSED!" << endl << endl;
 }
@@ -864,20 +864,20 @@ void TestInsertFirstNode() {
  * @brief test inserting two values into tree
  * @return void
  */
-void TestInsertSecondNode() {
-    cout << "Testing Insert Second Node..." << endl;
-    RedBlackTree* rbt = new RedBlackTree();
-    rbt->Insert(30);
-    rbt->Insert(15);
+void insert_second_node_test() {
+    cout << "Testing insert Second Node..." << endl;
+    red_black_tree* rbt = new red_black_tree();
+    rbt->insert(30);
+    rbt->insert(15);
 
-    assert(rbt->ToPrefixString() == " B30  R15 ");
+    assert(rbt->to_prefix_string() == " B30  R15 ");
     delete rbt;
 
-    rbt = new RedBlackTree();
-    rbt->Insert(30);
-    rbt->Insert(45);
+    rbt = new red_black_tree();
+    rbt->insert(30);
+    rbt->insert(45);
 
-    assert(rbt->ToPrefixString() == " B30  R45 ");
+    assert(rbt->to_prefix_string() == " B30  R45 ");
     delete rbt;
 
     cout << "PASSED!" << endl << endl;
@@ -888,50 +888,50 @@ void TestInsertSecondNode() {
  * (and making rotations occur)
  * @return void
  */
-void TestInsertThirdNode() {
-    cout << "Testing Insert Third Node..." << endl;
+void insert_third_node_test() {
+    cout << "Testing insert Third Node..." << endl;
 
-    RedBlackTree* rbt = new RedBlackTree();
-    rbt->Insert(30);
-    rbt->Insert(15);
-    rbt->Insert(10);  // Left Left
+    red_black_tree* rbt = new red_black_tree();
+    rbt->insert(30);
+    rbt->insert(15);
+    rbt->insert(10);  // Left Left
 
     // rotate right once
-    assert(rbt->ToPrefixString() == " B15  R10  R30 ");
+    assert(rbt->to_prefix_string() == " B15  R10  R30 ");
     delete rbt;
 
-    rbt = new RedBlackTree();
-    rbt->Insert(30);
-    rbt->Insert(15);
-    rbt->Insert(25);  // Left Right
+    rbt = new red_black_tree();
+    rbt->insert(30);
+    rbt->insert(15);
+    rbt->insert(25);  // Left Right
 
     // rotate once right on parent then once left on grandparent
-    assert(rbt->ToPrefixString() == " B25  R15  R30 ");
+    assert(rbt->to_prefix_string() == " B25  R15  R30 ");
     delete rbt;
 
-    rbt = new RedBlackTree();
-    rbt->Insert(30);
-    rbt->Insert(15);
-    rbt->Insert(45);  // Easy case
+    rbt = new red_black_tree();
+    rbt->insert(30);
+    rbt->insert(15);
+    rbt->insert(45);  // Easy case
 
     // nodes on either side and parent is black, so no rotation or recolor
-    assert(rbt->ToPrefixString() == " B30  R15  R45 ");
+    assert(rbt->to_prefix_string() == " B30  R15  R45 ");
     delete rbt;
 
-    rbt = new RedBlackTree();
-    rbt->Insert(75);
-    rbt->Insert(215);
-    rbt->Insert(130);  // Right Left
+    rbt = new red_black_tree();
+    rbt->insert(75);
+    rbt->insert(215);
+    rbt->insert(130);  // Right Left
 
-    assert(rbt->ToPrefixString() == " B130  R75  R215 ");
+    assert(rbt->to_prefix_string() == " B130  R75  R215 ");
     delete rbt;
 
-    rbt = new RedBlackTree();
-    rbt->Insert(648);
-    rbt->Insert(735);
-    rbt->Insert(9442);  // Right Right
+    rbt = new red_black_tree();
+    rbt->insert(648);
+    rbt->insert(735);
+    rbt->insert(9442);  // Right Right
 
-    assert(rbt->ToPrefixString() == " B735  R648  R9442 ");
+    assert(rbt->to_prefix_string() == " B735  R648  R9442 ");
     delete rbt;
 
     cout << "PASSED!" << endl << endl;
@@ -941,26 +941,26 @@ void TestInsertThirdNode() {
  * @brief test inserting four values into tree
  * @return void
  */
-void TestInsertFourthNode() {
-    cout << "Testing Insert Fourth Node..." << endl;
+void insert_fourth_node_test() {
+    cout << "Testing insert Fourth Node..." << endl;
 
-    RedBlackTree rbt = RedBlackTree();
+    red_black_tree rbt = red_black_tree();
 
-    rbt.Insert(13);
-    rbt.Insert(7);
-    rbt.Insert(3);
-    rbt.Insert(9);
+    rbt.insert(13);
+    rbt.insert(7);
+    rbt.insert(3);
+    rbt.insert(9);
 
-    assert(rbt.ToPrefixString() == " B7  B3  B13  R9 ");
+    assert(rbt.to_prefix_string() == " B7  B3  B13  R9 ");
 
-    RedBlackTree rbt2 = RedBlackTree();
+    red_black_tree rbt2 = red_black_tree();
 
-    rbt2.Insert(34);
-    rbt2.Insert(76);
-    rbt2.Insert(21984);
-    rbt2.Insert(2);
+    rbt2.insert(34);
+    rbt2.insert(76);
+    rbt2.insert(21984);
+    rbt2.insert(2);
 
-    assert(rbt2.ToPrefixString() == " B76  B34  R2  B21984 ");
+    assert(rbt2.to_prefix_string() == " B76  B34  R2  B21984 ");
 
     cout << "PASSED!" << endl << endl;
 }
@@ -969,26 +969,26 @@ void TestInsertFourthNode() {
  * @brief test inserting five nodes into tree
  * @return void
  */
-void TestInsertFifthNode() {
-    cout << "Testing Insert Fifth Node..." << endl;
-    RedBlackTree* rbt = new RedBlackTree();
-    rbt->Insert(30);
-    rbt->Insert(15);
-    rbt->Insert(45);
-    rbt->Insert(10);
-    rbt->Insert(25);
+void insert_fifth_node_test() {
+    cout << "Testing insert Fifth Node..." << endl;
+    red_black_tree* rbt = new red_black_tree();
+    rbt->insert(30);
+    rbt->insert(15);
+    rbt->insert(45);
+    rbt->insert(10);
+    rbt->insert(25);
 
-    assert(rbt->ToPrefixString() == " B30  B15  R10  R25  B45 ");
+    assert(rbt->to_prefix_string() == " B30  B15  R10  R25  B45 ");
     delete rbt;
 
-    RedBlackTree rbt2 = RedBlackTree();
-    rbt2.Insert(783);
-    rbt2.Insert(91);
-    rbt2.Insert(31);
-    rbt2.Insert(11);
-    rbt2.Insert(-87);
+    red_black_tree rbt2 = red_black_tree();
+    rbt2.insert(783);
+    rbt2.insert(91);
+    rbt2.insert(31);
+    rbt2.insert(11);
+    rbt2.insert(-87);
 
-    assert(rbt2.ToPrefixString() == " B91  B11  R-87  R31  B783 ");
+    assert(rbt2.to_prefix_string() == " B91  B11  R-87  R31  B783 ");
 
     cout << "PASSED!" << endl << endl;
 }
@@ -998,20 +998,20 @@ void TestInsertFifthNode() {
  * return correct values
  * @return void
  */
-void TestToStrings() {
+void to_strings_test() {
     cout << "Testing ToString Methods..." << endl;
 
-    RedBlackTree rbt = RedBlackTree();
-    rbt.Insert(12);
-    rbt.Insert(11);
-    rbt.Insert(15);
-    rbt.Insert(5);
-    rbt.Insert(13);
-    rbt.Insert(7);
+    red_black_tree rbt = red_black_tree();
+    rbt.insert(12);
+    rbt.insert(11);
+    rbt.insert(15);
+    rbt.insert(5);
+    rbt.insert(13);
+    rbt.insert(7);
 
-    assert(rbt.ToPrefixString() == " B12  B7  R5  R11  B15  R13 ");
-    assert(rbt.ToInfixString() == " R5  B7  R11  B12  R13  B15 ");
-    assert(rbt.ToPostfixString() == " R5  R11  B7  R13  B15  B12 ");
+    assert(rbt.to_prefix_string() == " B12  B7  R5  R11  B15  R13 ");
+    assert(rbt.to_infix_string() == " R5  B7  R11  B12  R13  B15 ");
+    assert(rbt.to_postfix_string() == " R5  R11  B7  R13  B15  B12 ");
 
     cout << "PASSED!" << endl << endl;
 }
@@ -1021,35 +1021,35 @@ void TestToStrings() {
  * using different values
  * @return void
  */
-void TestInsertRandomTests() {
-    cout << "Testing Random Insert Stuff..." << endl;
+void random_inserts_test() {
+    cout << "Testing Random insert Stuff..." << endl;
     cout << "\t This test passes if it doesn't crash and valgrind"
             " reports no issues"
          << endl;
-    RedBlackTree* rbt = new RedBlackTree();
-    rbt->Insert(15);
-    rbt->Insert(13);
-    rbt->Insert(20);
-    rbt->Insert(12);
+    red_black_tree* rbt = new red_black_tree();
+    rbt->insert(15);
+    rbt->insert(13);
+    rbt->insert(20);
+    rbt->insert(12);
     cout << endl;
 
     delete rbt;
 
-    rbt = new RedBlackTree();
+    rbt = new red_black_tree();
 
-    rbt->Insert(12);
-    rbt->Insert(11);
-    rbt->Insert(15);
-    rbt->Insert(5);
-    rbt->Insert(13);
-    rbt->Insert(7);
+    rbt->insert(12);
+    rbt->insert(11);
+    rbt->insert(15);
+    rbt->insert(5);
+    rbt->insert(13);
+    rbt->insert(7);
     delete rbt;
 
-    rbt = new RedBlackTree();
+    rbt = new red_black_tree();
 
-    rbt->Insert(12);
-    rbt->Insert(10);
-    rbt->Insert(8);
+    rbt->insert(12);
+    rbt->insert(10);
+    rbt->insert(8);
     delete rbt;
 
     cout << "PASSED!" << endl << endl;
@@ -1060,77 +1060,77 @@ void TestInsertRandomTests() {
  * copying a tree
  * @return void
  */
-void TestCopyConstructor() {
+void copy_constructor_test() {
     cout << "Testing Copy Constructor..." << endl;
 
-    RedBlackTree rbt1 = RedBlackTree();
-    rbt1.Insert(11);
-    rbt1.Insert(23);
-    rbt1.Insert(9);
-    rbt1.Insert(52);
-    rbt1.Insert(31);
-    rbt1.Insert(4);
+    red_black_tree rbt1 = red_black_tree();
+    rbt1.insert(11);
+    rbt1.insert(23);
+    rbt1.insert(9);
+    rbt1.insert(52);
+    rbt1.insert(31);
+    rbt1.insert(4);
 
-    assert(rbt1.ToPrefixString() == " B11  B9  R4  B31  R23  R52 ");
+    assert(rbt1.to_prefix_string() == " B11  B9  R4  B31  R23  R52 ");
 
-    RedBlackTree rbt2 = RedBlackTree(rbt1);
+    red_black_tree rbt2 = red_black_tree(rbt1);
 
-    assert(rbt2.ToPrefixString() == rbt1.ToPrefixString());
+    assert(rbt2.to_prefix_string() == rbt1.to_prefix_string());
 
-    rbt1.Insert(200);
-    assert(rbt2.ToPrefixString() != rbt1.ToPrefixString());
+    rbt1.insert(200);
+    assert(rbt2.to_prefix_string() != rbt1.to_prefix_string());
 
     cout << "PASSED!" << endl << endl;
 }
 
 /**
- * @brief testing if Contains() function correctly
+ * @brief testing if contains() function correctly
  * determines if a value is in the tree
  * @return void
  */
-void TestContains() {
-    cout << "Testing Contains..." << endl;
-    RedBlackTree* rbt = new RedBlackTree();
-    rbt->Insert(40);
-    rbt->Insert(22);
-    rbt->Insert(15);
-    rbt->Insert(31);
-    rbt->Insert(55);
-    rbt->Insert(12);
-    rbt->Insert(17);
-    rbt->Insert(29);
-    rbt->Insert(34);
+void contains_test() {
+    cout << "Testing contains..." << endl;
+    red_black_tree* rbt = new red_black_tree();
+    rbt->insert(40);
+    rbt->insert(22);
+    rbt->insert(15);
+    rbt->insert(31);
+    rbt->insert(55);
+    rbt->insert(12);
+    rbt->insert(17);
+    rbt->insert(29);
+    rbt->insert(34);
 
-    assert(rbt->Contains(34));
+    assert(rbt->contains(34));
     delete rbt;
 
-    RedBlackTree rbt2 = RedBlackTree();
-    rbt2.Insert(1);
-    rbt2.Insert(27);
-    rbt2.Insert(99);
-    rbt2.Insert(19);
+    red_black_tree rbt2 = red_black_tree();
+    rbt2.insert(1);
+    rbt2.insert(27);
+    rbt2.insert(99);
+    rbt2.insert(19);
 
-    assert(rbt2.Contains(1) && rbt2.Contains(99));
+    assert(rbt2.contains(1) && rbt2.contains(99));
 
     cout << "PASSED!" << endl << endl;
 }
 
 /**
- * @brief testing GetMin(), GetMax() functions
+ * @brief testing get_min(), get_max() functions
  * have correct outputs
  * @return void
  */
-void TestGetMinimumMaximum() {
+void get_min_max_test() {
     cout << "Testing Get Minimum and Get Maximum..." << endl;
 
-    RedBlackTree rbt = RedBlackTree();
+    red_black_tree rbt = red_black_tree();
 
-    rbt.Insert(34);
-    rbt.Insert(76);
-    rbt.Insert(21984);
-    rbt.Insert(2);
+    rbt.insert(34);
+    rbt.insert(76);
+    rbt.insert(21984);
+    rbt.insert(2);
 
-    assert(rbt.GetMax() == 21984 && rbt.GetMin() == 2);
+    assert(rbt.get_max() == 21984 && rbt.get_min() == 2);
 
     cout << "PASSED!" << endl << endl;
 }
@@ -1139,80 +1139,80 @@ void TestGetMinimumMaximum() {
  * @brief additional testing of copy constructor
  * @return void
  */
-void TestCopyConstructor2() {
+void copy_constructor_test2() {
     cout << "Testing Copy Constructor..." << endl;
 
-    RedBlackTree rbt1 = RedBlackTree();
-    rbt1.Insert(11);
-    rbt1.Insert(23);
-    rbt1.Insert(9);
-    rbt1.Insert(52);
-    rbt1.Insert(31);
-    rbt1.Insert(4);
+    red_black_tree rbt1 = red_black_tree();
+    rbt1.insert(11);
+    rbt1.insert(23);
+    rbt1.insert(9);
+    rbt1.insert(52);
+    rbt1.insert(31);
+    rbt1.insert(4);
 
-    assert(rbt1.ToPrefixString() == " B11  B9  R4  B31  R23  R52 ");
+    assert(rbt1.to_prefix_string() == " B11  B9  R4  B31  R23  R52 ");
 
-    RedBlackTree rbt2 = RedBlackTree(rbt1);
+    red_black_tree rbt2 = red_black_tree(rbt1);
 
-    assert(rbt1.Size() == rbt2.Size());
-    assert(rbt2.ToPrefixString() == rbt1.ToPrefixString());
+    assert(rbt1.size() == rbt2.size());
+    assert(rbt2.to_prefix_string() == rbt1.to_prefix_string());
 
-    rbt1.Insert(200);
-    assert(rbt2.ToPrefixString() != rbt1.ToPrefixString());
+    rbt1.insert(200);
+    assert(rbt2.to_prefix_string() != rbt1.to_prefix_string());
 
-    RedBlackTree rbt3 = RedBlackTree();
-    cout << rbt3.ToPrefixString() << endl;
-    rbt3.Insert(12);
-    rbt3.Insert(10);
-    rbt3.Insert(0);
-    rbt3.Insert(11);
-    rbt3.Insert(3);
-    rbt3.Insert(9);
-    rbt3.Insert(2);
-    rbt3.Insert(7);
-    rbt3.Insert(1);
-    rbt3.Insert(4);
-    rbt3.Insert(6);
-    rbt3.Insert(8);
-    rbt3.Insert(37);
-    rbt3.Insert(5);
-    rbt3.Insert(72);
-    rbt3.Insert(55);
-    rbt3.Insert(90);
-    rbt3.Insert(92);
-    rbt3.Insert(20);
-    rbt3.Insert(13);
+    red_black_tree rbt3 = red_black_tree();
+    cout << rbt3.to_prefix_string() << endl;
+    rbt3.insert(12);
+    rbt3.insert(10);
+    rbt3.insert(0);
+    rbt3.insert(11);
+    rbt3.insert(3);
+    rbt3.insert(9);
+    rbt3.insert(2);
+    rbt3.insert(7);
+    rbt3.insert(1);
+    rbt3.insert(4);
+    rbt3.insert(6);
+    rbt3.insert(8);
+    rbt3.insert(37);
+    rbt3.insert(5);
+    rbt3.insert(72);
+    rbt3.insert(55);
+    rbt3.insert(90);
+    rbt3.insert(92);
+    rbt3.insert(20);
+    rbt3.insert(13);
 
-    rbt3.Insert(57);
+    rbt3.insert(57);
 
-    rbt3.Insert(30);
-    rbt3.Insert(64);
+    rbt3.insert(30);
+    rbt3.insert(64);
 
     // left rotate on root
-    rbt3.Insert(69);
+    rbt3.insert(69);
 
-    rbt3.Insert(50);
-    rbt3.Insert(67);
-    rbt3.Insert(99);
-    rbt3.Insert(89);
-    rbt3.Insert(33);
+    rbt3.insert(50);
+    rbt3.insert(67);
+    rbt3.insert(99);
+    rbt3.insert(89);
+    rbt3.insert(33);
 
     assert(
-        rbt3.ToPrefixString() ==
+        rbt3.to_prefix_string() ==
         " B12  R7  B3  B1  R0  R2  B5  R4  R6"
         "  B10  B9  R8  B11  R55  B20  B13  R37  B30  R33  B50  B69  R64  B57"
         "  B67  R90  B72  R89  B92  R99 ");
 
-    RedBlackTree rbt4 = RedBlackTree(rbt3);
+    red_black_tree rbt4 = red_black_tree(rbt3);
 
-    string s3 = rbt3.ToPrefixString();
-    string s4 = rbt4.ToPrefixString();
+    string s3 = rbt3.to_prefix_string();
+    string s4 = rbt4.to_prefix_string();
 
-    assert(rbt3.Size() == rbt4.Size());
+    assert(rbt3.size() == rbt4.size());
     assert(s3 == s4);
 
-    rbt3.Insert(200);
-    assert(rbt3.ToPrefixString() != rbt4.ToPrefixString());
+    rbt3.insert(200);
+    assert(rbt3.to_prefix_string() != rbt4.to_prefix_string());
 
     cout << "PASSED!" << endl << endl;
 }
@@ -1222,29 +1222,29 @@ void TestCopyConstructor2() {
  * balances out when inserting values
  * @return void
  */
-void TestInsertWithRecursiveFixUp() {
+void test_insert_with_recursive_fix_up() {
     cout << "Testing Recursive FixUp..." << endl;
 
-    RedBlackTree* rbt = new RedBlackTree();
-    rbt->Insert(400);
-    rbt->Insert(800);
-    rbt->Insert(200);
-    rbt->Insert(600);
-    rbt->Insert(150);
-    rbt->Insert(900);
-    rbt->Insert(300);
-    rbt->Insert(100);
-    rbt->Insert(175);
-    rbt->Insert(160);
+    red_black_tree* rbt = new red_black_tree();
+    rbt->insert(400);
+    rbt->insert(800);
+    rbt->insert(200);
+    rbt->insert(600);
+    rbt->insert(150);
+    rbt->insert(900);
+    rbt->insert(300);
+    rbt->insert(100);
+    rbt->insert(175);
+    rbt->insert(160);
 
-    assert(rbt->ToPrefixString() ==
+    assert(rbt->to_prefix_string() ==
            " B200  R150  B100  B175  "
            "R160  R400  B300  B800  R600  R900 ");
 
-    rbt->Insert(185);
-    rbt->Insert(180);  // does a recursive fix-up
+    rbt->insert(185);
+    rbt->insert(180);  // does a recursive fix-up
 
-    assert(rbt->ToPrefixString() ==
+    assert(rbt->to_prefix_string() ==
            " B200  B150  B100  R175  B160  "
            "B185  R180  B400  B300  B800  R600  R900 ");
     delete rbt;
@@ -1258,9 +1258,9 @@ void TestInsertWithRecursiveFixUp() {
  * @param rbt red black tree used for this test
  * @param exp_ans correct output for this test
  */
-void PrintTestLine(string desc, const RedBlackTree* rbt, string exp_ans) {
-    cout << desc << ": " << rbt->ToPrefixString() << endl;
-    assert(rbt->ToPrefixString() == exp_ans);
+void print_test_line(string desc, const red_black_tree* rbt, string exp_ans) {
+    cout << desc << ": " << rbt->to_prefix_string() << endl;
+    assert(rbt->to_prefix_string() == exp_ans);
 }
 
 /**
@@ -1268,31 +1268,31 @@ void PrintTestLine(string desc, const RedBlackTree* rbt, string exp_ans) {
  * (removing a root node with one child)
  * @return void
  */
-void RemoveTest1() {
+void remove_test1() {
     cout << "Testing removing root (with one child)..." << endl;
 
-    RedBlackTree rbt = RedBlackTree();
-    rbt.Insert(10);
-    rbt.Insert(459);
+    red_black_tree rbt = red_black_tree();
+    rbt.insert(10);
+    rbt.insert(459);
 
-    cout << "Size: " << rbt.Size() << endl;
-    assert(rbt.Size() == 2);
+    cout << "size: " << rbt.size() << endl;
+    assert(rbt.size() == 2);
 
-    cout << "rbt: " << rbt.ToPrefixString() << endl;
-    assert(rbt.ToPrefixString() == " B10  R459 ");
+    cout << "rbt: " << rbt.to_prefix_string() << endl;
+    assert(rbt.to_prefix_string() == " B10  R459 ");
 
     // remove root with one right child
-    rbt.Remove(10);
+    rbt.remove(10);
 
-    cout << "rbt: " << rbt.ToPrefixString() << endl;
-    assert(rbt.ToPrefixString() == " B459 ");
+    cout << "rbt: " << rbt.to_prefix_string() << endl;
+    assert(rbt.to_prefix_string() == " B459 ");
 
     // remove root with no children (empties tree)
-    rbt.Remove(459);
+    rbt.remove(459);
 
-    cout << "rbt: " << rbt.ToPrefixString() << endl;
-    assert(rbt.ToPrefixString() == "");
-    assert(rbt.Size() == 0);
+    cout << "rbt: " << rbt.to_prefix_string() << endl;
+    assert(rbt.to_prefix_string() == "");
+    assert(rbt.size() == 0);
 
     cout << "PASSED!" << endl << endl;
 }
@@ -1302,25 +1302,25 @@ void RemoveTest1() {
  * from tree (removing a leaf node)
  * @return void
  */
-void RemoveTest2() {
+void remove_test2() {
     cout << "Testing removing leaf..." << endl;
 
-    RedBlackTree rbt = RedBlackTree();
-    rbt.Insert(10);
-    rbt.Insert(459);
+    red_black_tree rbt = red_black_tree();
+    rbt.insert(10);
+    rbt.insert(459);
 
-    cout << "rbt: " << rbt.ToPrefixString() << endl;
+    cout << "rbt: " << rbt.to_prefix_string() << endl;
 
     // Removing leaf
-    rbt.Remove(459);
+    rbt.remove(459);
 
-    cout << "rbt: " << rbt.ToPrefixString() << endl;
+    cout << "rbt: " << rbt.to_prefix_string() << endl;
 
     // Removing last node/root (empties tree again)
-    rbt.Remove(10);
+    rbt.remove(10);
 
-    cout << "rbt: " << rbt.ToPrefixString() << endl;
-    assert(rbt.ToPrefixString() == "");
+    cout << "rbt: " << rbt.to_prefix_string() << endl;
+    assert(rbt.to_prefix_string() == "");
 
     cout << "PASSED!" << endl << endl;
 }
@@ -1330,25 +1330,25 @@ void RemoveTest2() {
  * from tree (removing node with two children)
  * @return void
  */
-void RemoveTest3() {
+void remove_test3() {
     cout << "Testing removing node with two children..." << endl;
 
-    RedBlackTree* rbt = new RedBlackTree();
-    rbt->Insert(14);
-    rbt->Insert(10);
-    rbt->Insert(459);  // B14 R10 R459 -- node 14 with two children 10 and 459
+    red_black_tree* rbt = new red_black_tree();
+    rbt->insert(14);
+    rbt->insert(10);
+    rbt->insert(459);  // B14 R10 R459 -- node 14 with two children 10 and 459
 
-    PrintTestLine("tree", rbt, " B14  R10  R459 ");
+    print_test_line("tree", rbt, " B14  R10  R459 ");
 
-    // Remove 14 (has two children)
-    rbt->Remove(14);
-    PrintTestLine("removing 14", rbt, " B459  R10 ");
+    // remove 14 (has two children)
+    rbt->remove(14);
+    print_test_line("removing 14", rbt, " B459  R10 ");
 
-    rbt->Remove(459);
-    PrintTestLine("removing 459", rbt, " B10 ");
+    rbt->remove(459);
+    print_test_line("removing 459", rbt, " B10 ");
 
-    rbt->Remove(10);
-    PrintTestLine("removing 10", rbt, "");
+    rbt->remove(10);
+    print_test_line("removing 10", rbt, "");
 
     delete rbt;
     cout << "PASSED!" << endl << endl;
@@ -1359,32 +1359,32 @@ void RemoveTest3() {
  * from tree (removing from a larger tree)
  * @return void
  */
-void RemoveTest4() {
+void remove_test4() {
     cout << "Removing from larger tree "
             "(recursive call with IOS or IOP test)..."
          << endl;
 
-    RedBlackTree* rbt = new RedBlackTree();
+    red_black_tree* rbt = new red_black_tree();
 
-    rbt->Insert(94);
-    rbt->Insert(18);
-    rbt->Insert(3);
-    rbt->Insert(22);
-    rbt->Insert(0);
-    rbt->Insert(537);
-    rbt->Insert(308);
-    rbt->Insert(23);
-    rbt->Insert(24);
-    rbt->Insert(21);
-    rbt->Insert(25);
+    rbt->insert(94);
+    rbt->insert(18);
+    rbt->insert(3);
+    rbt->insert(22);
+    rbt->insert(0);
+    rbt->insert(537);
+    rbt->insert(308);
+    rbt->insert(23);
+    rbt->insert(24);
+    rbt->insert(21);
+    rbt->insert(25);
 
-    PrintTestLine("tree", rbt,
+    print_test_line("tree", rbt,
                   " B23  R18  B3  R0  B22  R21  R94"
                   "  B24  R25  B537  R308 ");
 
-    rbt->Remove(23);
+    rbt->remove(23);
 
-    PrintTestLine("removing 23", rbt,
+    print_test_line("removing 23", rbt,
                   " B24  R18  B3  R0  B22  R21"
                   "  R94  B25  B537  R308 ");
 
@@ -1397,96 +1397,96 @@ void RemoveTest4() {
  * rotates after inserting certain values
  * @return void
  */
-void RemoveTestRotateCase() {
+void remove_rotate_case_test() {
     cout << "Testing removing that requires double-black fix..." << endl;
 
-    RedBlackTree* rbt = new RedBlackTree();
+    red_black_tree* rbt = new red_black_tree();
 
-    rbt->Insert(9);
-    rbt->Insert(11);
-    rbt->Insert(5);
-    rbt->Insert(14);
-    rbt->Insert(4);
-    rbt->Insert(6);
-    rbt->Insert(7);
+    rbt->insert(9);
+    rbt->insert(11);
+    rbt->insert(5);
+    rbt->insert(14);
+    rbt->insert(4);
+    rbt->insert(6);
+    rbt->insert(7);
 
-    PrintTestLine("tree", rbt, " B9  R5  B4  B6  R7  B11  R14 ");
+    print_test_line("tree", rbt, " B9  R5  B4  B6  R7  B11  R14 ");
 
     // RIGHT RIGHT CASE (rotate left on black sibling)
-    rbt->Remove(4);
+    rbt->remove(4);
 
-    PrintTestLine("right right remove", rbt, " B9  R6  B5  B7  B11  R14 ");
+    print_test_line("right right remove", rbt, " B9  R6  B5  B7  B11  R14 ");
 
-    RedBlackTree rbt2 = RedBlackTree();
+    red_black_tree rbt2 = red_black_tree();
 
-    rbt2.Insert(9);
-    rbt2.Insert(11);
-    rbt2.Insert(5);
-    rbt2.Insert(14);
-    rbt2.Insert(4);
-    rbt2.Insert(7);
-    rbt2.Insert(6);
+    rbt2.insert(9);
+    rbt2.insert(11);
+    rbt2.insert(5);
+    rbt2.insert(14);
+    rbt2.insert(4);
+    rbt2.insert(7);
+    rbt2.insert(6);
 
-    cout << "tree2: " << rbt2.ToPrefixString() << endl;
-    assert(rbt2.ToPrefixString() == " B9  R5  B4  B7  R6  B11  R14 ");
+    cout << "tree2: " << rbt2.to_prefix_string() << endl;
+    assert(rbt2.to_prefix_string() == " B9  R5  B4  B7  R6  B11  R14 ");
 
     // RIGHT LEFT CASE (black sibling 7 is right child with one left red child)
-    rbt2.Remove(4);
+    rbt2.remove(4);
 
-    cout << "right left remove: " << rbt2.ToPrefixString() << endl;
-    assert(rbt2.ToPrefixString() == " B9  R6  B5  B7  B11  R14 ");
+    cout << "right left remove: " << rbt2.to_prefix_string() << endl;
+    assert(rbt2.to_prefix_string() == " B9  R6  B5  B7  B11  R14 ");
 
-    rbt2.Insert(4);  // makes left left case when removing 7
-    assert(rbt2.ToPrefixString() == " B9  R6  B5  R4  B7  B11  R14 ");
+    rbt2.insert(4);  // makes left left case when removing 7
+    assert(rbt2.to_prefix_string() == " B9  R6  B5  R4  B7  B11  R14 ");
 
     // LEFT LEFT CASE (black sibling 5 is left child with one left red child)
-    rbt2.Remove(7);
-    assert(rbt2.ToPrefixString() == " B9  R5  B4  B6  B11  R14 ");
+    rbt2.remove(7);
+    assert(rbt2.to_prefix_string() == " B9  R5  B4  B6  B11  R14 ");
 
     delete rbt;
-    rbt = new RedBlackTree();
+    rbt = new red_black_tree();
 
     // inserting nodes into tree from an array
     int fill_tree_vec[12] = {9, 11, 5, 14, 4, 6, 7, 3, 2, 17, 1, 8};
     for (int val : fill_tree_vec) {
-        rbt->Insert(val);
+        rbt->insert(val);
     }
-    cout << "tree3: " << rbt->ToPrefixString() << endl;
-    assert(rbt->ToPrefixString() ==
+    cout << "tree3: " << rbt->to_prefix_string() << endl;
+    assert(rbt->to_prefix_string() ==
            " B5  R3  B2  R1  B4  R9  B7"
            "  R6  R8  B14  R11  R17 ");
 
-    rbt->Remove(1);  // simple remove on red leaf
-    assert(rbt->ToPrefixString() ==
+    rbt->remove(1);  // simple remove on red leaf
+    assert(rbt->to_prefix_string() ==
            " B5  R3  B2  B4  R9  B7  R6"
            "  R8  B14  R11  R17 ");
 
-    rbt->Insert(0);
-    assert(rbt->ToPrefixString() ==
+    rbt->insert(0);
+    assert(rbt->to_prefix_string() ==
            " B5  R3  B2  R0  B4  R9  B7"
            "  R6  R8  B14  R11  R17 ");
 
-    rbt->Insert(1);
-    assert(rbt->ToPrefixString() ==
+    rbt->insert(1);
+    assert(rbt->to_prefix_string() ==
            " B5  R3  B1  R0  R2  B4  R9"
            "  B7  R6  R8  B14  R11  R17 ");
 
-    rbt->Remove(0);  // another simple red leaf remove
-    assert(rbt->ToPrefixString() ==
+    rbt->remove(0);  // another simple red leaf remove
+    assert(rbt->to_prefix_string() ==
            " B5  R3  B1  R2  B4  R9  B7"
            "  R6  R8  B14  R11  R17 ");
 
     // LEFT RIGHT CASE (black sibling 1 is a left child with one right
     // red child)
-    rbt->Remove(4);
-    cout << "left right remove: " << rbt->ToPrefixString() << endl;
-    assert(rbt->ToPrefixString() ==
+    rbt->remove(4);
+    cout << "left right remove: " << rbt->to_prefix_string() << endl;
+    assert(rbt->to_prefix_string() ==
            " B5  R2  B1  B3  R9  B7  R6"
            "  R8  B14  R11  R17 ");
 
     // removing 3 (recursive fix double black case)
-    rbt->Remove(3);
-    PrintTestLine("recursive double-black fix (removing 3)", rbt,
+    rbt->remove(3);
+    print_test_line("recursive double-black fix (removing 3)", rbt,
                   " B5  B2  R1  R9  B7  R6  R8  B14  R11  R17 ");
 
     delete rbt;
@@ -1498,23 +1498,23 @@ void RemoveTestRotateCase() {
  * from tree
  * @return void
  */
-void RemoveTestRedSiblingCase() {
+void remove_red_sibling_case_test() {
     cout << "Testing remove that requires double-black fix with red "
             "sibling case..."
          << endl;
 
-    RedBlackTree rbt = RedBlackTree();
+    red_black_tree rbt = red_black_tree();
 
     int fill_tree_vec[6] = {11, 9, 7, 5, 8, 6};
     for (int val : fill_tree_vec) {
-        rbt.Insert(val);
+        rbt.insert(val);
     }
-    cout << "tree: " << rbt.ToPrefixString() << endl;
-    assert(rbt.ToPrefixString() == " B9  R7  B5  R6  B8  B11 ");
+    cout << "tree: " << rbt.to_prefix_string() << endl;
+    assert(rbt.to_prefix_string() == " B9  R7  B5  R6  B8  B11 ");
 
-    rbt.Remove(11);  // 11 is black leaf with red sibling 7
-    cout << "removing 11: " << rbt.ToPrefixString() << endl;
-    assert(rbt.ToPrefixString() == " B7  B5  R6  B9  R8 ");
+    rbt.remove(11);  // 11 is black leaf with red sibling 7
+    cout << "removing 11: " << rbt.to_prefix_string() << endl;
+    assert(rbt.to_prefix_string() == " B7  B5  R6  B9  R8 ");
 
     cout << "PASSED!" << endl << endl;
 }
@@ -1524,18 +1524,18 @@ void RemoveTestRedSiblingCase() {
  * removed from tree
  * @return void
  */
-void LargeRandomRemoveMemoryTest() {
-    cout << "Giant Remove Test..." << endl;
+void large_random_remove_memory_test() {
+    cout << "Giant remove Test..." << endl;
 
-    RedBlackTree* giant_rbt = new RedBlackTree();
+    red_black_tree* giant_rbt = new red_black_tree();
 
     vector<int> random_numbers;  // to store inserted numbers
 
-    while (giant_rbt->Size() != 711) {
+    while (giant_rbt->size() != 711) {
         int random_num = rand();
-        if (!giant_rbt->Contains(random_num)) {
+        if (!giant_rbt->contains(random_num)) {
             random_numbers.push_back(random_num);
-            giant_rbt->Insert(random_num);
+            giant_rbt->insert(random_num);
         }
     }
     // getting numbers to remove, starting from end of vector
@@ -1543,8 +1543,8 @@ void LargeRandomRemoveMemoryTest() {
 
     // then removing the numbers until tree is empty
     // (checking for memory issues/exceptions)
-    while (giant_rbt->Size() != 0) {
-        giant_rbt->Remove(random_numbers[idx--]);
+    while (giant_rbt->size() != 0) {
+        giant_rbt->remove(random_numbers[idx--]);
     }
 
     delete giant_rbt;
@@ -1556,26 +1556,26 @@ void LargeRandomRemoveMemoryTest() {
  * a tree
  * @return void
  */
-void LargerComprehensiveRemoveTest() {
+void larger_comprehensive_remove_test() {
     cout << "Testing many removes from larger tree..." << endl;
 
-    RedBlackTree* rbt = new RedBlackTree();
+    red_black_tree* rbt = new red_black_tree();
 
     int fill_tree_vec[19] = {40, 97, 12, 43,   33,   87,   99,  439, 8762, 3,
                              7,  1,  2,  9999, 8888, 2345, 111, 687, 0};
 
     for (int val : fill_tree_vec) {
-        rbt->Insert(val);
+        rbt->insert(val);
     }
 
-    cout << "tree: " << rbt->ToPrefixString() << endl;
-    assert(rbt->ToPrefixString() ==
+    cout << "tree: " << rbt->to_prefix_string() << endl;
+    assert(rbt->to_prefix_string() ==
            " B87  B12  R3  B1  R0  R2  B7  R40  B33"
            "  B43  B439  R99  B97  B111  R8762  B2345  R687  B9999  R8888 ");
 
-    rbt->Remove(87);  // removing root
-    cout << "removing 87: " << rbt->ToPrefixString() << endl;
-    assert(rbt->ToPrefixString() ==
+    rbt->remove(87);  // removing root
+    cout << "removing 87: " << rbt->to_prefix_string() << endl;
+    assert(rbt->to_prefix_string() ==
            " B97  B12  R3  B1  R0  R2  B7  R40  B33"
            "  B43  B439  B99  R111  R8762  B2345  R687  B9999  R8888 ");
 
@@ -1587,33 +1587,33 @@ void LargerComprehensiveRemoveTest() {
  * @brief self-test implementation
  */
 void tests() {
-    TestSimpleConstructor();
+    simple_constructor_test();
 
-    TestInsertFirstNode();
+    insert_first_node_test();
 
-    TestInsertSecondNode();
-    TestInsertThirdNode();
-    TestInsertFourthNode();
-    TestInsertFifthNode();
+    insert_second_node_test();
+    insert_third_node_test();
+    insert_fourth_node_test();
+    insert_fifth_node_test();
 
-    TestToStrings();
-    TestInsertRandomTests();
-    TestCopyConstructor();
+    to_strings_test();
+    random_inserts_test();
+    copy_constructor_test();
 
-    TestContains();
-    TestGetMinimumMaximum();
+    contains_test();
+    get_min_max_test();
 
-    TestCopyConstructor2();
-    TestInsertWithRecursiveFixUp();
+    copy_constructor_test2();
+    test_insert_with_recursive_fix_up();
 
-    RemoveTest1();
-    RemoveTest2();
-    RemoveTest3();
-    RemoveTest4();
-    RemoveTestRotateCase();
-    RemoveTestRedSiblingCase();
-    LargeRandomRemoveMemoryTest();
-    LargerComprehensiveRemoveTest();
+    remove_test1();
+    remove_test2();
+    remove_test3();
+    remove_test4();
+    remove_rotate_case_test();
+    remove_red_sibling_case_test();
+    large_random_remove_memory_test();
+    larger_comprehensive_remove_test();
 
     cout << "All tests passed!" << endl;
 }
