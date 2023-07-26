@@ -40,12 +40,14 @@ namespace greedy_algorithms {
  * @returns false if the index can NOT be reached
  */
 template <typename T>
-bool can_jump(const std::vector<T> &nums, const int &index = 1) {
-    const int size = nums.size() + 1 - nums[index];
-    if (nums[index] >= size) { // `>=` because the number can be higher than the size of the array.
-        return true;
+bool can_jump(const std::vector<T> &nums) {
+    size_t lastPos = nums.size() - 1;
+    for (int i = nums.size() - 1; i >= 0; i--) {
+        if (i + nums[i] >= lastPos) {
+            lastPos = i;
+        }
     }
-    return false;
+    return lastPos == 0;
 }
 }  // namespace greedy_algorithms
 
@@ -67,11 +69,11 @@ static void test() {
     assert(greedy_algorithms::can_jump(nums) == true);
 
     // 4th test
-    nums = { 4, 2, 8, 9, 6 };
+    nums = { 1, 0, 5, 8, 12 };
     assert(greedy_algorithms::can_jump(nums) == false);
 
     // 5th test
-    nums = { 7, 4, 8, 13, 2, 11 };
+    nums = {2, 1, 4, 7};
     assert(greedy_algorithms::can_jump(nums) == true);
 
     std::cout << "All tests have successfully passed!\n";
