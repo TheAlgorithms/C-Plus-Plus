@@ -44,7 +44,7 @@ namespace letter_combinations {
  * @param ans Vector to store the generated combinations.
  * @param mpp Array containing the mapping of digits to letters.
  */
-void solve(const std::string& digit, std::string& output, int index,
+void solve(const std::string& digit, std::string& output, std::size_t index,
            std::vector<std::string>& ans,
            const std::array<std::string, 10>& mpp) {
     if (index >= digit.length()) {
