@@ -39,10 +39,9 @@ namespace greedy_algorithms {
  * @returns true  if the index can be reached
  * @returns false if the index can NOT be reached
  */
-template <typename T>
-bool can_jump(const std::vector<T> &nums) {
+bool can_jump(const std::vector<int> &nums) {
     size_t lastPos = nums.size() - 1;
-    for (int i = nums.size() - 1; i >= 0; i--) {
+    for (size_t i = lastPos; i != static_cast<size_t>(-1); i--) {
         if (i + nums[i] >= lastPos) {
             lastPos = i;
         }
@@ -56,25 +55,11 @@ bool can_jump(const std::vector<T> &nums) {
  * @returns void
  */
 static void test() {
-    // 1st test
-    std::vector<int> nums = { 4, 3, 1, 0, 5 };
-    assert(greedy_algorithms::can_jump(nums) == true);
-
-    // 2nd test
-    nums = { 3, 2, 1, 0, 4 };
-    assert(greedy_algorithms::can_jump(nums) == false);
-
-    // 3rd test
-    nums = { 5, 9, 4, 7, 15, 3 };
-    assert(greedy_algorithms::can_jump(nums) == true);
-
-    // 4th test
-    nums = { 1, 0, 5, 8, 12 };
-    assert(greedy_algorithms::can_jump(nums) == false);
-
-    // 5th test
-    nums = {2, 1, 4, 7};
-    assert(greedy_algorithms::can_jump(nums) == true);
+    assert(greedy_algorithms::can_jump(std::vector<int>({4, 3, 1, 0, 5})));
+    assert(!greedy_algorithms::can_jump(std::vector<int>({3, 2, 1, 0, 4})));
+    assert(greedy_algorithms::can_jump(std::vector<int>({5, 9, 4, 7, 15, 3})));
+    assert(!greedy_algorithms::can_jump(std::vector<int>({1, 0, 5, 8, 12})));
+    assert(greedy_algorithms::can_jump(std::vector<int>({2, 1, 4, 7})));
 
     std::cout << "All tests have successfully passed!\n";
 }
