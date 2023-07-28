@@ -25,39 +25,36 @@
 #include <iostream>  /// for IO operations
 #include <vector>    /// for std::vector
 
-/**
- * @namespace backtracking
- * @brief Backtracking algorithms
- */
 namespace backtracking {
-/**
- * @namespace letter_combinations
- * @brief Functions for generating letter combinations from digits using
- * backtracking.
- */
 namespace letter_combinations {
+
+// Helper function to convert a character digit to an unsigned integer
+unsigned toUnsigned(const char digit) {
+    return static_cast<unsigned>(digit - '0');
+}
+
 /**
  * @brief Recursive utility function to generate letter combinations.
  * @param digit The input digit string to generate combinations for.
  * @param output The current output combination being formed.
- * @param index The index of the current digit being processed.
  * @param ans Vector to store the generated combinations.
  * @param mpp Array containing the mapping of digits to letters.
  */
-void solve(const std::string& digit, std::string& output, std::size_t index,
+void solve(const std::string& digit, std::string& output,
            std::vector<std::string>& ans,
            const std::array<std::string, 10>& mpp) {
-    if (index >= digit.length()) {
+    if (output.size() == digit.length()) {
         ans.push_back(output);
         return;
     }
 
-    int num = digit[index] - '0';
-    std::string value = mpp[num];
+    unsigned num = toUnsigned(digit[output.size()]);
+    const std::string& value = mpp[num];
 
-    for (int i = 0; i < value.size(); i++) {
-        output.push_back(value[i]);
-        solve(digit, output, index + 1, ans, mpp);
+    for (unsigned i = 0; i < value.size(); ++i) {
+        char letter = value[i];
+        output.push_back(letter);
+        solve(digit, output, ans, mpp);
         output.pop_back();
     }
 }
@@ -74,12 +71,10 @@ std::vector<std::string> letterCombinations(const std::string& digit) {
         return ans;
     }
 
-    std::string output = "";
-    int index = 0;
-
-    std::array<std::string, 10> mpp = {"",    "",    "abc",  "def", "ghi",
-                                       "jkl", "mno", "pqrs", "tuv", "wxyz"};
-    solve(digit, output, index, ans, mpp);
+    std::string output;
+    const std::array<std::string, 10> mpp = {
+        "", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+    solve(digit, output, ans, mpp);
     return ans;
 }
 }  // namespace letter_combinations
@@ -134,7 +129,8 @@ static void test() {
     std::string digits4 = "";
     std::vector<std::string> combinations4 =
         backtracking::letter_combinations::letterCombinations(digits4);
-    assert(combinations4.empty());
+    std::vector<std::string> expected4;  // Empty vector
+    assert(combinations4 == expected4);
 
     std::cout << "All test cases passed!\n";
 }
