@@ -136,6 +136,10 @@ struct Treap {
      * @return The element ranked number k
      */
     int _get_k_th(int &x, int k) {
+        if (k <= 0 || k > size[root]) {
+            return -1;  // Element not found, return -1
+        }
+
         if (k <= size[childs[x][0]]) {
             return _get_k_th(childs[x][0], k);
         }
@@ -157,11 +161,9 @@ struct Treap {
         }
         if (k == key[x]) {
             return size[childs[x][0]] + 1;
-        }
-        else if (k < key[x]) {
+        } else if (k < key[x]) {
             return _get_rank(childs[x][0], k);
-        }
-        else {
+        } else {
             return size[childs[x][0]] + cnt[x] + _get_rank(childs[x][1], k);
         }
     }
@@ -246,6 +248,11 @@ static void test() {
     mTreap.insert(10);
     assert(mTreap.get_rank(10) == 7);
     assert(mTreap.get_predecessor(10) == 7);
+
+    // Testcases when elements are not present
+    assert(mTreap.get_k_th(10) == -1);   // Element not found
+    assert(mTreap.get_next(100) == -1);  // No successor for a large element
+    assert(mTreap.get_predecessor(0) == -1);  // No predecessor for a small element
 
     std::cout << "All tests have successfully passed!\n";
 }
