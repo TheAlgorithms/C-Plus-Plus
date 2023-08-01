@@ -20,7 +20,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Build directory
-        uses: TheAlgorithms/scripts/directory_md@main
+        uses: TheAlgorithms/scripts/directory_md@cc09bff94e181e1042edb56455aff6259dd99139
         with:
           language: C-Plus-Plus
           working-directory: .
