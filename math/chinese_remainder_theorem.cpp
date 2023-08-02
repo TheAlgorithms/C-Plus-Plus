@@ -49,7 +49,7 @@ int compute_inverse(int a, int m) {
  * @brief Function to solve a system of linear congruences using the Chinese
  * Remainder Theorem (CRT).
  *
- * @param a Array of integers representing the remainders of the congruences.
+ * @param an Array of integers representing the remainders of the congruences.
  * @param m Array of pairwise coprime integers representing the moduli of the
  * congruences.
  * @param n Number of congruences in the system.
