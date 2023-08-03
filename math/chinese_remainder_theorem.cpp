@@ -20,6 +20,7 @@
 #include <cassert>   /// for assert
 #include <iostream>  /// for IO operations
 #include <vector>    /// for std::vector
+#include <stdexcept> // for handling exceptions
 
 struct LinearCongruance {
     const int a;
@@ -32,6 +33,9 @@ int compute_product_of_all_moduli(
     const std::vector<LinearCongruance> &congruances) {
     int res = 1;
     for (const auto congruance : congruances) {
+        if (congruance.m == 0) {
+            throw std::invalid_argument("Modulus 'm' cannot be zero.");
+        }
         res *= congruance.m;
     }
     return res;
@@ -84,7 +88,9 @@ void test() {
         LinearCongruance(2, 3), LinearCongruance(3, 4), LinearCongruance(1, 5)};
     assert(chinese_remainder_theorem(testCase) == 11);
 
-    std::cout << "One test has successfully passed!\n";
+    // Add additional test cases here if needed
+
+    std::cout << "All tests have passed successfully!\n";
 }
 
 /**
@@ -92,6 +98,11 @@ void test() {
  * @returns 0 on exit
  */
 int main() {
-    test();  // run self-test implementations
+    try {
+        test(); // run self-test implementations
+    } catch (const std::exception &ex) {
+        std::cerr << "Error: " << ex.what() << std::endl;
+        return 1; // Return a non-zero value to indicate an error
+    }
     return 0;
 }
