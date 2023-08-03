@@ -8,6 +8,8 @@
  * For example, 0, 1, and 8 are strobogrammatic because they remain the same when rotated,
  * and 6 and 9 are strobogrammatic because when rotated 180 degrees, they become each other.
  *
+ * @see For more information, refer to the source at: https://en.wikipedia.org/wiki/Strobogrammatic_number
+ *
  * @author [Himesh](https://github.com/HimeshKohad)
  */
 
