@@ -61,7 +61,6 @@ int compute_inverse(int a, int m) {
  */
 int chinese_remainder_theorem(
     const std::vector<LinearCongruance> &congruances) {
-    // Calculate the product of all moduli
     const auto M = compute_product_of_all_moduli(congruances);
 
     int result = 0;
