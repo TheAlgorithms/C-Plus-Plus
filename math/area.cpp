@@ -194,7 +194,7 @@ static void test_rect_area_functionality() {
  * @returns void
  */
 static void test_triangle_area_functionality() {
-    // Given we have a rectangle base length and height.
+    // Given we have a triangle base length and height.
     uint32_t triangle_base_length = 2420u;
     uint32_t triangle_height = 115642u;
 
