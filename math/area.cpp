@@ -270,6 +270,48 @@ static void test_cube_surface_area_functionality() {
 }
 
 /**
+ * @brief This self test is used to test the basic functionality of the
+ * sphere_surface_area function to see if it behaves as expected.
+ * @returns void
+ */
+static void test_sphere_surface_area_functionality() {
+    // Given we the radius of the sphere.
+    uint16_t sphere_radius = 5678u;
+
+    // When we calculate the sphere surface area.
+    uint64_t actual_sphere_surface_area =
+        math::sphere_surface_area(sphere_radius);
+
+    // Then we should get the area calculated as we expect.
+    // is the expected == actual?
+    assert(405135817 == actual_sphere_surface_area);
+
+    std::cout << "TEST PASSED: Sphere Surface Area" << std::endl << std::endl;
+}
+
+/**
+ * @brief This self test is used to test the basic functionality of the
+ * cylinder_surface_area function to see if it behaves as expected.
+ * @returns void
+ */
+static void test_cylinder_surface_area_functionality() {
+    // Given we the radius and the height of the cylinder.
+    uint16_t cylinder_radius = 42u;
+    uint16_t cylinder_height = 413u;
+
+    // When we calculate the cylinder surface area.
+    uint64_t actual_cylinder_surface_area =
+        math::cylinder_surface_area(cylinder_radius, cylinder_height);
+
+    // Then we should get the area calculated as we expect.
+    // is the expected == actual?
+    assert(120071 == actual_cylinder_surface_area);
+
+    std::cout << "TEST PASSED: Sphere Surface Area" << std::endl
+              << std::endl;  // sphere_surface_area
+}
+
+/**
  * @brief Main function
  * @returns 0 on exit
  */
@@ -280,5 +322,7 @@ int main() {
     test_circle_area_functionality();
     test_parallelogram_area_functionality();
     test_cube_surface_area_functionality();
+    test_sphere_surface_area_functionality();
+    test_cylinder_surface_area_functionality();
     return 0;
 }
