@@ -74,9 +74,8 @@ uint64_t rect_area(uint32_t length, uint32_t width) {
  * @param height is the length of the tallest point in the triangle
  * @returns area of the triangle
  */
-template <typename T>
 double triangle_area(uint32_t base, uint32_t height) {
-    uint64_t area_of_triangle = (base * height) / 2;
+    double area_of_triangle = (base * height) / 2;
     return area_of_triangle;
 }
 
@@ -165,7 +164,7 @@ static void test_square_area_functionality() {
     assert(1241366402980900u == actual_area_square_c);
     assert(0u == actual_area_square_d);
 
-    std::cout << "TEST PASSED" << std::endl << std::endl;
+    std::cout << "TEST PASSED: Square Area" << std::endl << std::endl;
 }
 
 /**
@@ -186,7 +185,28 @@ static void test_rect_area_functionality() {
     // is the expected == actual?
     assert(36078622720u == actual_area_rectangle);
 
-    std::cout << "TEST PASSED" << std::endl << std::endl;
+    std::cout << "TEST PASSED: Rectangle Area" << std::endl << std::endl;
+}
+
+/**
+ * @brief This self test is used to test the basic functionality of the
+ * triangle_area function to see if it behaves as expected.
+ * @returns void
+ */
+static void test_triangle_area_functionality() {
+    // Given we have a rectangle base length and height.
+    uint32_t triangle_base_length = 2420u;
+    uint32_t triangle_height = 115642u;
+
+    // When we calculate the area of the triangle.
+    double actual_triangle_area =
+        math::triangle_area(triangle_base_length, triangle_height);
+
+    // Then we should get the area calculated as we expect.
+    // is the expected == actual?
+    assert(139926820u == actual_triangle_area);
+
+    std::cout << "TEST PASSED: Triangle Area" << std::endl << std::endl;
 }
 
 /**
@@ -196,5 +216,6 @@ static void test_rect_area_functionality() {
 int main() {
     test_square_area_functionality();  // run self-test implementations
     test_rect_area_functionality();
+    test_triangle_area_functionality();
     return 0;
 }
