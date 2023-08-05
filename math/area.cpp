@@ -250,6 +250,26 @@ static void test_parallelogram_area_functionality() {
 }
 
 /**
+ * @brief This self test is used to test the basic functionality of the
+ * cube_surface_area function to see if it behaves as expected.
+ * @returns void
+ */
+static void test_cube_surface_area_functionality() {
+    // Given we the length of one face of the cube.
+    uint16_t cube_face_length = 4121u;
+
+    // When we calculate the cube surface area.
+    uint64_t actual_cube_surface_area =
+        math::cube_surface_area(cube_face_length);
+
+    // Then we should get the area calculated as we expect.
+    // is the expected == actual?
+    assert(101895846u == actual_cube_surface_area);
+
+    std::cout << "TEST PASSED: Cube Surface Area" << std::endl << std::endl;
+}
+
+/**
  * @brief Main function
  * @returns 0 on exit
  */
@@ -259,5 +279,6 @@ int main() {
     test_triangle_area_functionality();
     test_circle_area_functionality();
     test_parallelogram_area_functionality();
+    test_cube_surface_area_functionality();
     return 0;
 }
