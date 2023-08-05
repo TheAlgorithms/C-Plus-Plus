@@ -174,11 +174,11 @@ static void test_square_area_functionality() {
  * @returns void
  */
 static void test_rect_area_functionality() {
-    // Given we the lengths of different squares.
+    // Given we have a rectangle length and width.
     uint32_t rectangle_side_length = 1024u;
     uint32_t rectangle_side_width = 35233030u;
 
-    // When we calculate the area of the different squares
+    // When we calculate the area of the rectangle.
     uint64_t actual_area_rectangle =
         math::rect_area(rectangle_side_length, rectangle_side_width);
 
