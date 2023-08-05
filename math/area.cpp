@@ -216,16 +216,37 @@ static void test_triangle_area_functionality() {
  */
 static void test_circle_area_functionality() {
     // Given we have a circle radius.
-    uint32_t circle_radius = 555;
+    uint32_t circle_radius = 555u;
 
     // When we calculate the area of the circle.
     double actual_circle_area = math::circle_area(circle_radius);
 
     // Then we should get the area calculated as we expect.
     // is the expected == actual?
-    assert(967689.0771f == actual_circle_area);
+    assert(967689.07712199597 == actual_circle_area);
 
     std::cout << "TEST PASSED: Circle Area" << std::endl << std::endl;
+}
+
+/**
+ * @brief This self test is used to test the basic functionality of the
+ * parallelogram_area function to see if it behaves as expected.
+ * @returns void
+ */
+static void test_parallelogram_area_functionality() {
+    // Given we the base and height of a parallelogram.
+    uint32_t parallelogram_base = 20u;
+    uint32_t parallelogram_height = 1024u;
+
+    // When we calculate the area of the parallelogram
+    uint64_t actual_area_parallelogram =
+        math::parallelogram_area(parallelogram_base, parallelogram_height);
+
+    // Then we should get the area calculated as we expect.
+    // is the expected == actual?
+    assert(20480u == actual_area_parallelogram);
+
+    std::cout << "TEST PASSED: Parallelogram Area" << std::endl << std::endl;
 }
 
 /**
@@ -237,5 +258,6 @@ int main() {
     test_rect_area_functionality();
     test_triangle_area_functionality();
     test_circle_area_functionality();
+    test_parallelogram_area_functionality();
     return 0;
 }
