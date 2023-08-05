@@ -98,7 +98,7 @@ double circle_area(uint32_t radius) {
  * @returns area of the parallelogram
  */
 uint64_t parallelogram_area(uint32_t base, uint32_t height) {
-    uint64_t area_of_parallelogram = base * height;
+    uint64_t area_of_parallelogram = (uint64_t)base * (uint64_t)height;
     return area_of_parallelogram;
 }
 
@@ -109,7 +109,7 @@ uint64_t parallelogram_area(uint32_t base, uint32_t height) {
  * @returns surface area of the cube
  */
 uint64_t cube_surface_area(uint16_t length) {
-    uint64_t surface_area_of_cube = 6 * length * length;
+    uint64_t surface_area_of_cube = 6u * (uint64_t)length * (uint64_t)length;
     return surface_area_of_cube;
 }
 
@@ -210,6 +210,25 @@ static void test_triangle_area_functionality() {
 }
 
 /**
+ * @brief This self test is used to test the basic functionality of the
+ * circle_area function to see if it behaves as expected.
+ * @returns void
+ */
+static void test_circle_area_functionality() {
+    // Given we have a circle radius.
+    uint32_t circle_radius = 555;
+
+    // When we calculate the area of the circle.
+    double actual_circle_area = math::circle_area(circle_radius);
+
+    // Then we should get the area calculated as we expect.
+    // is the expected == actual?
+    assert(967689.0771f == actual_circle_area);
+
+    std::cout << "TEST PASSED: Circle Area" << std::endl << std::endl;
+}
+
+/**
  * @brief Main function
  * @returns 0 on exit
  */
@@ -217,5 +236,6 @@ int main() {
     test_square_area_functionality();  // run self-test implementations
     test_rect_area_functionality();
     test_triangle_area_functionality();
+    test_circle_area_functionality();
     return 0;
 }
