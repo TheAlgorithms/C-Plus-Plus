@@ -20,7 +20,7 @@
   * [Count Of Trailing Ciphers In Factorial N](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/count_of_trailing_ciphers_in_factorial_n.cpp)
   * [Find Non Repeating Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/find_non_repeating_number.cpp)
   * [Hamming Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/hamming_distance.cpp)
-  * [next higher number with same number of set bits](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/next_higher_number_with_same_number_of_set_bits.cpp)
+  * [Next Higher Number With Same Number Of Set Bits](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/next_higher_number_with_same_number_of_set_bits.cpp)
   * [Power Of 2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/power_of_2.cpp)
   * [Set Kth Bit](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/set_kth_bit.cpp)
   * [Travelling Salesman Using Bit Manipulation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/travelling_salesman_using_bit_manipulation.cpp)
@@ -79,6 +79,7 @@
   * [Test Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/test_queue.cpp)
   * [Test Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/test_stack.cpp)
   * [Test Stack Students](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/test_stack_students.cpp)
+  * [Treap](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/treap.cpp)
   * [Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/tree.cpp)
   * [Tree 234](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/tree_234.cpp)
   * [Trie Modern](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/trie_modern.cpp)
@@ -213,6 +214,7 @@
   * [Integral Approximation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/integral_approximation.cpp)
   * [Integral Approximation2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/integral_approximation2.cpp)
   * [Inv Sqrt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/inv_sqrt.cpp)
+  * [Iterative Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/iterative_factorial.cpp)
   * [Large Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/large_factorial.cpp)
   * [Large Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/large_number.h)
   * [Largest Power](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/largest_power.cpp)
@@ -391,6 +393,7 @@
   * [Wiggle Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/sorting/wiggle_sort.cpp)
 
 ## Strings
+  * [Boyer Moore](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/strings/boyer_moore.cpp)
   * [Brute Force String Searching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/strings/brute_force_string_searching.cpp)
   * [Horspool](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/strings/horspool.cpp)
   * [Knuth Morris Pratt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/strings/knuth_morris_pratt.cpp)
