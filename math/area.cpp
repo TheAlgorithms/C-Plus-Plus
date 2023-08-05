@@ -170,35 +170,10 @@ static void test_square_area_functionality() {
 
 /**
  * @brief This self test is used to test the basic functionality of the
- * square_area function to see if it behaves as expected.
- * @returns void
- */
-static void test_square_area_functionality() {
-    // Given we the lengths of different squares.
-    uint32_t square_a_side_length = 0u;
-    uint32_t square_b_side_length = 1024u;
-    uint32_t square_c_side_length = 35233030u;
-
-    // When we calculate the area of the different squares
-    uint64_t actual_area_square_a = math::square_area(square_a_side_length);
-    uint64_t actual_area_square_b = math::square_area(square_b_side_length);
-    uint64_t actual_area_square_c = math::square_area(square_c_side_length);
-
-    // Then we should get the area calculated as we expect.
-    // is the expected == actual?
-    assert(400u == actual_area_square_a);
-    assert(1048576u == actual_area_square_b);
-    assert(1241366402980900u == actual_area_square_c);
-
-    std::cout << "TEST PASSED" << std::endl << std::endl;
-}
-
-/**
- * @brief This self test is used to test the basic functionality of the
  * rect_area function to see if it behaves as expected.
  * @returns void
  */
-static void test_rectangle_area_functionality() {
+static void test_rect_area_functionality() {
     // Given we the lengths of different squares.
     uint32_t rectangle_side_length = 1024u;
     uint32_t rectangle_side_width = 35233030u;
@@ -209,7 +184,7 @@ static void test_rectangle_area_functionality() {
 
     // Then we should get the area calculated as we expect.
     // is the expected == actual?
-    assert(400u == actual_area_rectangle);
+    assert(36078622720u == actual_area_rectangle);
 
     std::cout << "TEST PASSED" << std::endl << std::endl;
 }
@@ -220,5 +195,6 @@ static void test_rectangle_area_functionality() {
  */
 int main() {
     test_square_area_functionality();  // run self-test implementations
+    test_rect_area_functionality();
     return 0;
 }
