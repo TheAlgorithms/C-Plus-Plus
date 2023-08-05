@@ -206,8 +206,6 @@ static void test_rectangle_area_functionality() {
     // When we calculate the area of the different squares
     uint64_t actual_area_rectangle =
         math::rect_area(rectangle_side_length, rectangle_side_width);
-    uint64_t actual_area_square_b = math::square_area(square_b_side_length);
-    uint64_t actual_area_square_c = math::square_area(square_c_side_length);
 
     // Then we should get the area calculated as we expect.
     // is the expected == actual?
