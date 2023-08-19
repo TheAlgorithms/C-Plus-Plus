@@ -10,7 +10,7 @@ on:
   #        │  │ │ │ │
   #        │  │ │ │ │
   #        *  * * * *
-  - cron: '0 0 * * 1'
+  - cron: '0 0 * * *'
 jobs:
   build:
     if: github.repository == 'TheAlgorithms/C-Plus-Plus' # We only need this to run in our repository.
