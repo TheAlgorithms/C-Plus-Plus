@@ -3,7 +3,7 @@
  * @brief Implementation of [Euler's
  * Totient](https://en.wikipedia.org/wiki/Euler%27s_totient_function). A way to
  * find out if two numbers are relatively prime.
- * @description
+ * @details
  * Euler Totient Function is also known as phi function.
  * \f[\phi(n) =
  * \phi\left({p_1}^{a_1}\right)\cdot\phi\left({p_2}^{a_2}\right)\ldots\f] where
