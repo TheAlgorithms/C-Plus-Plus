@@ -44,14 +44,18 @@ namespace math {
 uint64_t phiFunction(uint64_t n) {
     uint64_t result = n;
     for (uint64_t i = 2; i * i <= n; i++) {
-        if (n % i != 0)
+        if ((n % i) != 0) {
             continue;
-        while (n % i == 0) n /= i;
+        }
+        while ((n % i) == 0) {
+            n /= i;
+        }
 
         result -= result / i;
     }
-    if (n > 1)
+    if (n > 1) {
         result -= result / n;
+    }
 
     return result;
 }
