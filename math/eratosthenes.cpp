@@ -1,15 +1,14 @@
 /**
  * @file
- * @brief [The Sieve of
+ * @brief A way to find prime numbers up to the specified number, [The Sieve of
  * Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)
  * @details
- * Store an array of booleans where a true value indicates that it's index is
- * prime. For all the values in the array starting from 2 which we know is
- * prime, we walk the array in multiples of the current outer value setting them
- * to not prime. If we remove all multiples of a value as we see it, we'll be
- * left with just primes.
+ * Store an array of booleans where a True value indicates that it's index is
+ * prime. All positions start as true regardless. For all the values in the array
+ * starting from 2, which we know is prime, we walk the array in multiples of
+ * the current outer value setting them to False to represent that they are not
+ * prime. If we remove all multiples of a value, we'll be left with just primes.
  *
- * Pass "print" as a command line arg to see the generated list of primes
  * @author [Keval Kapdee](https://github.com/thechubbypanda)
  */
 
@@ -20,7 +19,7 @@
 #include <vector>    /// For std::vector
 
 /**
- * @namespace math
+ * @namespace
  * @brief Mathematical algorithms
  */
 namespace math {
@@ -36,8 +35,7 @@ void sieve(std::vector<bool> *vec) {
 
     // The sieve sets values to false as they are found not prime
     for (uint64_t n = 2; n < vec->size(); n++) {
-        for (uint64_t multiple = n << 1; multiple < vec->size();
-             multiple += n) {
+        for (uint64_t multiple = n << 1; multiple < vec->size(); multiple += n) {
             (*vec)[multiple] = false;
         }
     }
@@ -58,12 +56,25 @@ void print_primes(std::vector<bool> const &primes) {
 }  // namespace math
 
 /**
- * @brief Self-tests the sieve function for major inconsistencies
+ * @brief Self-test implementations
  * @returns void
  */
-static void test() {
+static void tests() {
     auto primes = std::vector<bool>(10, true);
+     // Store the algorithm start time
+    auto start = std::chrono::high_resolution_clock::now();
+
     math::sieve(&primes);
+
+     // Time difference calculation
+    auto time = std::chrono::duration_cast<
+                    std::chrono::duration<double, std::ratio<1>>>(
+                    std::chrono::high_resolution_clock::now() - start)
+                    .count();
+
+    // Print the time taken we found earlier
+    std::cout << "Time taken: " << time << " seconds" << std::endl;
+
     assert(primes[0] == false);
     assert(primes[1] == false);
     assert(primes[2] == true);
@@ -75,44 +86,14 @@ static void test() {
     assert(primes[8] == false);
     assert(primes[9] == false);
 
-    std::cout << "All tests have successfully passed!\n";
+    std::cout << "All tests have successfully passed!" << std::endl;
 }
 
 /**
  * @brief Main function
- * @param argc commandline argument count
- * @param argv commandline array of arguments
  * @returns 0 on exit
  */
-int main(int argc, char *argv[]) {
-    test();  // run self-test implementations
-
-    // The largest prime we will check for
-    auto max = 10000;
-
-    // Store a boolean for every number which states if that index is prime or
-    // not
-    auto primes = std::vector<bool>(max, true);
-
-    // Store the algorithm start time
-    auto start = std::chrono::high_resolution_clock::now();
-
-    // Run the sieve
-    math::sieve(&primes);
-
-    // Time difference calculation
-    auto time = std::chrono::duration_cast<
-                    std::chrono::duration<double, std::ratio<1>>>(
-                    std::chrono::high_resolution_clock::now() - start)
-                    .count();
-
-    // Print the primes if we see that "print" was passed as an arg
-    if (argc > 1 && argv[1] == std::string("print")) {
-        math::print_primes(primes);
-    }
-
-    // Print the time taken we found earlier
-    std::cout << "Time taken: " << time << " seconds" << std::endl;
-
+int main() {
+    tests();  // run self-test implementations
     return 0;
 }
