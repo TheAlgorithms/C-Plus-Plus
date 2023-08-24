@@ -1,7 +1,8 @@
 /**
  * @file
  * @brief Implementation of [Euler's
- * Totient](https://en.wikipedia.org/wiki/Euler%27s_totient_function)
+ * Totient](https://en.wikipedia.org/wiki/Euler%27s_totient_function). A way to
+ * find out if two numbers are relatively prime.
  * @description
  * Euler Totient Function is also known as phi function.
  * \f[\phi(n) =
