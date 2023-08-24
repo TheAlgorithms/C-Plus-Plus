@@ -1,6 +1,7 @@
 /**
  * @file
- * @brief Implementation of [Euler's Totient](https://en.wikipedia.org/wiki/Euler%27s_totient_function)
+ * @brief Implementation of [Euler's
+ * Totient](https://en.wikipedia.org/wiki/Euler%27s_totient_function)
  * @description
  * Euler Totient Function is also known as phi function.
  * \f[\phi(n) =
@@ -11,7 +12,7 @@
  * 2. \f$\phi(n^k) = n^k - n^{k-1}\f$
  * 3. \f$\phi(a,b) = \phi(a)\cdot\phi(b)\f$ where a and b are relative primes.
  *
- * Applying this 3 properties on the first equation.
+ * Applying the three properties on the first equation.
  * \f[\phi(n) =
  * n\cdot\left(1-\frac{1}{p_1}\right)\cdot\left(1-\frac{1}{p_2}\right)\cdots\f]
  * where \f$p_1\f$,\f$p_2\f$... are prime factors.
@@ -24,8 +25,10 @@
  * @author [Mann Mehta](https://github.com/mann2108)
  */
 
-#include <iostream> /// for IO operations
-#include <cassert> /// for assert
+#include <bits/stdint-uintn.h>  // for uint64_t
+
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
 
 /**
  * @brief Mathematical algorithms
@@ -35,16 +38,19 @@ namespace math {
 /**
  * @brief Function to calculate Euler's Totient
  * @param n the number to find the Euler's Totient of
+ * @return result the result of the claculation
  */
 uint64_t phiFunction(uint64_t n) {
     uint64_t result = n;
     for (uint64_t i = 2; i * i <= n; i++) {
-        if (n % i != 0) continue;
+        if (n % i != 0)
+            continue;
         while (n % i == 0) n /= i;
 
         result -= result / i;
     }
-    if (n > 1) result -= result / n;
+    if (n > 1)
+        result -= result / n;
 
     return result;
 }
@@ -54,7 +60,7 @@ uint64_t phiFunction(uint64_t n) {
  * @brief Self-test implementations
  * @returns void
  */
-static void test() {
+static void tests() {
     assert(math::phiFunction(1) == 1);
     assert(math::phiFunction(2) == 1);
     assert(math::phiFunction(10) == 4);
@@ -63,16 +69,14 @@ static void test() {
     assert(math::phiFunction(3141592) == 1570792);
     assert(math::phiFunction(27182818) == 12545904);
 
-    std::cout << "All tests have successfully passed!\n";
+    std::cout << "All tests have successfully passed!" << std::endl;
 }
 
 /**
  * @brief Main function
- * @param argc commandline argument count (ignored)
- * @param argv commandline array of arguments (ignored)
  * @returns 0 on exit
  */
-int main(int argc, char *argv[]) {
-    test();
+int main() {
+    tests();
     return 0;
 }
