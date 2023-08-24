@@ -4,10 +4,11 @@
  * Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)
  * @details
  * Store an array of booleans where a True value indicates that it's index is
- * prime. All positions start as true regardless. For all the values in the array
- * starting from 2, which we know is prime, we walk the array in multiples of
- * the current outer value setting them to False to represent that they are not
- * prime. If we remove all multiples of a value, we'll be left with just primes.
+ * prime. All positions start as true regardless. For all the values in the
+ * array starting from 2, which we know is prime, we walk the array in multiples
+ * of the current outer value setting them to False to represent that they are
+ * not prime. If we remove all multiples of a value, we'll be left with just
+ * primes.
  *
  * @author [Keval Kapdee](https://github.com/thechubbypanda)
  */
@@ -35,7 +36,8 @@ void sieve(std::vector<bool> *vec) {
 
     // The sieve sets values to false as they are found not prime
     for (uint64_t n = 2; n < vec->size(); n++) {
-        for (uint64_t multiple = n << 1; multiple < vec->size(); multiple += n) {
+        for (uint64_t multiple = n << 1; multiple < vec->size();
+             multiple += n) {
             (*vec)[multiple] = false;
         }
     }
@@ -61,12 +63,12 @@ void print_primes(std::vector<bool> const &primes) {
  */
 static void tests() {
     auto primes = std::vector<bool>(10, true);
-     // Store the algorithm start time
+    // Store the algorithm start time
     auto start = std::chrono::high_resolution_clock::now();
 
     math::sieve(&primes);
 
-     // Time difference calculation
+    // Time difference calculation
     auto time = std::chrono::duration_cast<
                     std::chrono::duration<double, std::ratio<1>>>(
                     std::chrono::high_resolution_clock::now() - start)
