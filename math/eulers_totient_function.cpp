@@ -26,8 +26,6 @@
  * @author [Mann Mehta](https://github.com/mann2108)
  */
 
-#include <bits/stdint-uintn.h>  // for uint64_t
-
 #include <cassert>   /// for assert
 #include <iostream>  /// for IO operations
 
