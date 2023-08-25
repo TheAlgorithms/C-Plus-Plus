@@ -13,7 +13,7 @@
  * 2. \f$\phi(n^k) = n^k - n^{k-1}\f$
  * 3. \f$\phi(a,b) = \phi(a)\cdot\phi(b)\f$ where a and b are relative primes.
  *
- * Applying the three properties on the first equation.
+ * Applying these three properties on the first equation.
  * \f[\phi(n) =
  * n\cdot\left(1-\frac{1}{p_1}\right)\cdot\left(1-\frac{1}{p_2}\right)\cdots\f]
  * where \f$p_1\f$,\f$p_2\f$... are prime factors.
@@ -39,7 +39,7 @@ namespace math {
 /**
  * @brief Function to calculate Euler's Totient
  * @param n the number to find the Euler's Totient of
- * @return result the result of the claculation
+ * @returns the result of Euler's Totient of n
  */
 uint64_t phiFunction(uint64_t n) {
     uint64_t result = n;
@@ -82,6 +82,6 @@ static void tests() {
  * @returns 0 on exit
  */
 int main() {
-    tests();
+    tests(); // run self-test implementations
     return 0;
 }
