@@ -87,7 +87,6 @@ void CarmichaelBetween(int lo, int up)
  * @brief Self-test implementations to test `isCarmichael`
  * @returns `void`
  */
-
 static void tests()
 {
     mpz_t a, n, output;
