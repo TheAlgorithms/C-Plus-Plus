@@ -1,35 +1,41 @@
 /**
+ * @file
+ * @brief [External Sorting] https://en.wikipedia.org/wiki/External_sorting
+ * @details
  * C++ program to sort a file data using external sorting
  * External sorting is required when the data being sorted do not fit into the
  * memory (RAM)
+ * @author [Hoai Le](https://github.com/bls-lehoai)
  */
 
-#include <algorithm>
-#include <cassert>
-#include <fstream>
-#include <iostream>
-#include <random>
-#include <string>
+#include <algorithm>  // for in-memory sorting
+#include <cassert>    // for testing
+#include <fstream>    // for read/write data file
+#include <iostream>   // for I/O operations
+#include <random>     // for generate a random number
+#include <string>     // for string operations (read file line by line)
 
 using namespace std;
 
-// buff data which fit in memory to sort
-constexpr auto BUFF_SIZE = 100000;
+constexpr auto BUFF_SIZE = 100000;  ///< size of  buffer data for sorting
 
+/**
+ * Use to hold chunk file information
+ */
 struct ChunkFile {
-    ifstream file;
-    int currentVal;
-    string line;
+    ifstream file;   // file input stream
+    int currentVal;  // current value (in int)
+    string line;     // current line (string)
 };
 
 /**
-   Prepare 1M rows data (int) data being sorted and write to text file.
+ * @brief Prepares 1M rows data (int) data being sorted and write to text file.
  */
-void mockData() {
+void mockData(char* path = "data.txt") {
     cout << "Preparing data" << endl;
 
     // change to absolutely path if u want
-    ofstream data_file("data.txt", ofstream::trunc);  // overwite
+    ofstream data_file(path, ofstream::trunc);  // overwite
 
     // use to get a random number
     mt19937 generator(time(0));
@@ -50,8 +56,8 @@ void externalSort(char* data_file) {
 
     string line;
     int line_number = 0;
-    vector<int> chunk;
-    vector<string> chunk_file_names;
+    vector<int> chunk{};
+    vector<string> chunk_file_names{};
 
     cout << "Do sort chunks" << endl;
 
@@ -104,9 +110,9 @@ void externalSort(char* data_file) {
     ofstream result_file("sort_result.txt", ofstream::trunc);
 
     // open chunk files and read the first value
-    for (string f_name : chunk_file_names) {
+    for (string filename : chunk_file_names) {
         ChunkFile* tmp_chunk_file = new ChunkFile();
-        tmp_chunk_file->file = ifstream(f_name);
+        tmp_chunk_file->file = ifstream(filename);
         getline(tmp_chunk_file->file, tmp_chunk_file->line);
         tmp_chunk_file->currentVal = stoi(tmp_chunk_file->line);
         chunk_files.push_back(tmp_chunk_file);
@@ -153,12 +159,15 @@ void externalSort(char* data_file) {
  * memory. (in most real cases, it doesn't)
  */
 void test() {
+    mockData();                // making test data for testing
+    externalSort("data.txt");  // sorting that to be used in the algorithm
+
     cout << "Testing" << endl;
 
     string line;
 
     // read all mock data
-    vector<int> mock_data;
+    vector<int> mock_data{};
     ifstream mock_file("data.txt");
     while (getline(mock_file, line)) {
         mock_data.push_back(stoi(line));
@@ -167,7 +176,7 @@ void test() {
     sort(mock_data.begin(), mock_data.end());
 
     // read all sorted data
-    vector<int> sorted_data;
+    vector<int> sorted_data{};
     ifstream sorted_file("sort_result.txt");
     while (getline(sorted_file, line)) {
         sorted_data.push_back(stoi(line));
@@ -180,8 +189,6 @@ void test() {
 }
 
 int main() {
-    mockData();
-    externalSort("data.txt");
-    test();
+    test();  // run self-test implementation
     return 0;
 }
