@@ -15,7 +15,6 @@
 #include <cassert>    /// for assert
 #include <gmp.h>      /// for std::mpz_*
 #include <cstdio>     /// for std::printf
-using namespace std;
 
 /** 
  * @brief Check if a given number is a Carmichael number
