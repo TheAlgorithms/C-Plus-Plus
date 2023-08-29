@@ -100,6 +100,8 @@ static void tests()
     
     mpz_set_ui(n, 1009);
     assert(isCarmichael(n, a, output) == false);
+    
+    std::cout << "All tests have passed successfully";
 }
 
 
@@ -109,6 +111,6 @@ static void tests()
  */
 int main()
 { 
-    tests();
+    tests(); // run self-implemented tests
     return 0;
 }
