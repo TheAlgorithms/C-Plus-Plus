@@ -10,11 +10,11 @@
  * Find out more on: https://en.wikipedia.org/wiki/Carmichael_number
  * 
  * -lgmp flag may be necessary, e.g.
- *         gcc -o carmichael carmichael.cpp -lgmp ; ./carmichael
+ *         g++ -o carmichael carmichael.cpp -lgmp ; ./carmichael
  */ 
 #include <cassert>    /// for assert
-#include <gmp.h>      /// for std::mpz_*
-#include <cstdio>     /// for std::printf
+#include <gmp.h>      /// for mpz_*
+#include <iostream>   /// for std::cout
 
 /** 
  * @brief Check if a given number is a Carmichael number
@@ -70,7 +70,7 @@ void CarmichaelBetween(int lo, int up)
         {
             // Write n to stdout
             mpz_out_str(stdout,10,n);
-            printf("\n");
+            std::cout << "\n";
         }
         // Increment to next odd number
         mpz_add_ui(n, n, 2);
