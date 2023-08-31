@@ -43,8 +43,9 @@
  * graph. On the event that there are two centers, either
  * one can be used to root the tree.
  */
-#include <cassert>  // for assertions
-#include <vector>   // for std::vector
+#include <cassert>   // for assertions
+#include <iostream>  // for std::cout
+#include <vector>    // for std::vector
 
 /**
  * @namespace graph
@@ -105,6 +106,14 @@ std::vector<int> treeCenters(const adjacency_list &tree) {
 }  // namespace centroid
 }  // namespace graph
 
+/**
+ * Used to check if the size of the
+ * centers if in the range of 1-2.
+ *
+ * @param size the number of centers
+ * @return true if the number of centers are in the range of 1-2
+ * @return false if the number of centers are out of the range of 1-2
+ */
 bool valid_centers(const int size) {
     return size > graph::centroid::EMPTY_SIZE &&
            size <= graph::centroid::MAX_SIZE;
@@ -131,6 +140,10 @@ void f() {
 
     std::vector<int> centers = graph::centroid::treeCenters(tree);
     assert(valid_centers(centers.size()));
+    std::cout << "Results from test 1:\n";
+    for (int center : centers) {
+        std::cout << "\t" << center << "\n";
+    }
 }
 
 /**
@@ -178,21 +191,43 @@ void f2() {
 
     std::vector<int> centers = graph::centroid::treeCenters(tree);
     assert(valid_centers(centers.size()));
+    std::cout << "Results from test 2:\n";
+    for (int center : centers) {
+        std::cout << "\t" << center << "\n";
+    }
 }
+
+void f3() {
+    const int size = 1;
+    graph::adjacency_list tree(1);
+
+    // empty tree
+    tree[0] = {0};
+
+    std::vector<int> centers = graph::centroid::treeCenters(tree);
+    assert(valid_centers(centers.size()));
+    std::cout << "Results from test 3:\n";
+    for (int center : centers) {
+        std::cout << "\t" << center << "\n";
+    }
+}
+
 /**
  * @brief self test implementation
  * @return void
  */
 static void tests() {
-  f1(); // run test one.
-  f2(); // run test two.
-  std::cout << "All tests have passed successfully";
+    f();   // run test one.
+    f2();  // run test two.
+    f3();  // run third test.
+    std::cout << "All tests have passed successfully";
 }
+
 /**
  * @brief Main function
  * @returns 0 on exit
  */
 int main() {
-    tests(); // run self-implemented tests
+    tests();  // run self-implemented tests
     return 0;
 }
