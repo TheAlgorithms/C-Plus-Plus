@@ -185,7 +185,6 @@ void f2() {
  * @returns 0 on exit
  */
 int main() {
-    f();
-    f2();
+    tests(); // run self-implemented tests
     return 0;
 }
