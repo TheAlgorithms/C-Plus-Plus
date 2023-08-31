@@ -179,7 +179,15 @@ void f2() {
     std::vector<int> centers = graph::centroid::treeCenters(tree);
     assert(valid_centers(centers.size()));
 }
-
+/**
+ * @brief self test implementation
+ * @return void
+ */
+static void tests() {
+  f1(); // run test one.
+  f2(); // run test two.
+  std::cout << "All tests have passed successfully";
+}
 /**
  * @brief Main function
  * @returns 0 on exit
