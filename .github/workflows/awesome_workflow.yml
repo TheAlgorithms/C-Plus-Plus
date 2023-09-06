@@ -21,7 +21,7 @@ jobs:
       - name: Setup Git Specs
         run: |
           git config --global user.name github-actions[bot]
-          git config --global user.email 'github-actions@users.noreply.github.com'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
       - name: Filename Formatter
         run: |
           wget https://raw.githubusercontent.com/TheAlgorithms/scripts/main/filename_formatter.sh
