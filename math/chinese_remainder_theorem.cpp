@@ -36,16 +36,17 @@ struct LinearCongruance {
      * @param a The remainder of the congruence (x == a mod m)
      * @param m The modulus of the congruence (x == a mod m)
      */
-    LinearCongruance(int a, int m) : a(a), m(m) {}
+    LinearCongruance(int a, int m) : a(a), m(m) {
+        if (m == 0) {
+            throw std::invalid_argument("Modulus 'm' cannot be zero.");
+        }
+    }
 };
 
 int compute_product_of_all_moduli(
     const std::vector<LinearCongruance> &congruances) {
     int res = 1;
     for (const auto congruance : congruances) {
-        if (congruance.m == 0) {
-            throw std::invalid_argument("Modulus 'm' cannot be zero.");
-        }
         res *= congruance.m;
     }
     return res;
