@@ -167,31 +167,21 @@ int main() {
         std::cout << "Enter the number of vertices and edges of your graph"
                   << std::endl;
         std::cin >> num_nodes >> num_edges;
-
-
-
+        
         std::vector<std::pair<int, std::pair<int, int>>> edges;
-
-
 
         //! Prompt user for edge details
         std::cout << "Enter the edges of your graph in the format: "
                   << "from to weight" << std::endl;
 
-
-
         for (int i = 0; i < num_edges; ++i) {
             int from, to, weight;
             std::cin >> from >> to >> weight;
-
-
 
             //! Store edge information
             edges.emplace_back(
                 std::make_pair(weight, std::make_pair(from, to)));
         }
-
-
 
         //! Display minimum spanning tree cost
         std::cout << "Total minimum spanning tree cost = "
