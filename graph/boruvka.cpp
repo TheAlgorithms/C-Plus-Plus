@@ -161,8 +161,6 @@ int main() {
         // Getting the input graph
         int num_nodes, num_edges;
 
-
-
         //! Prompt user for graph details
         std::cout << "Enter the number of vertices and edges of your graph"
                   << std::endl;
