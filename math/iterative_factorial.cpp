@@ -46,7 +46,7 @@ namespace math {
  */
 uint64_t iterativeFactorial(uint8_t n) {
     if (n > 20) {
-        throw new std::invalid_argument("Maximum n value is 20");
+        throw std::invalid_argument("Maximum n value is 20");
     }
 
     // 1 because it is the identity number of multiplication.
@@ -103,9 +103,9 @@ static void test() {
                  "Expected output: Exception thrown \n";
     try {
         math::iterativeFactorial(21);
-    } catch (std::invalid_argument* e) {
-        std::cout << "Exception thrown successfully \nContent: " << e->what()
-                  << "\n";
+    } catch (const std::invalid_argument& e) {
+        std::cout << "Exception thrown successfully \nContent: " << e.what()
+                  << '\n';
     }
 
     std::cout << "All tests have passed successfully.\n";
