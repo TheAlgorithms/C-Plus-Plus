@@ -101,12 +101,14 @@ static void test() {
     std::cout << "Exception test \n"
                  "Input: 21 \n"
                  "Expected output: Exception thrown \n";
+
+    bool wasExceptionThrown = false;
     try {
         math::iterativeFactorial(21);
-    } catch (const std::invalid_argument& e) {
-        std::cout << "Exception thrown successfully \nContent: " << e.what()
-                  << '\n';
+    } catch (const std::invalid_argument&) {
+        wasExceptionThrown = true;
     }
+    assert(wasExceptionThrown);
 
     std::cout << "All tests have passed successfully.\n";
 }
