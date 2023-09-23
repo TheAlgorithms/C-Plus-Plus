@@ -19,21 +19,16 @@
 
 #include <algorithm>
 #include <cassert>
+#include <cstdint>
 #include <ctime>
-#include <iostream>  /// for io operations
+#include <iostream> /// for io operations
 #include <vector>
 
 /**
  * @namespace sorting
  * @brief Sorting algorithms
  */
-namespace sorting {
-/**
- * @namespace wiggle_sort
- * @brief Functions for [Wiggle
- * Sort](https://leetcode.com/problems/wiggle-sort-ii/) algorithm
- */
-namespace wiggle_sort {
+namespace sorting::wiggle_sort {
 
 /**
  *
@@ -48,29 +43,28 @@ namespace wiggle_sort {
  * @param arr input array (unsorted elements)
  *
  */
-template <typename T>  // this allows to have vectors of ints, double, float,
-                       // etc
-                       std::vector<T> wiggleSort(const std::vector<T> &arr) {
+template <typename T> // this allows to have vectors of ints, double, float,
+                      // etc
+std::vector<T> wiggleSort(const std::vector<T> &arr) {
     uint32_t size = arr.size();
 
     std::vector<T> out(
-        arr);  // create a copy of input vector. this way, the original input
-               // vector does not get modified. a sorted array is is returned.
+        arr); // create a copy of input vector. this way, the original input
+              // vector does not get modified. a sorted array is is returned.
 
     for (int i = 0; i < size; i += 2) {
         if (i > 0 && out[i - 1] > out[i]) {
-            std::swap(out[i], out[i - 1]);  // swapping the two values
+            std::swap(out[i], out[i - 1]); // swapping the two values
         }
 
         if (i < size - 1 && out[i] < out[i + 1]) {
-            std::swap(out[i], out[i + 1]);  // swapping the two values
+            std::swap(out[i], out[i + 1]); // swapping the two values
         }
     }
 
-    return out;  // returns the sorted vector
+    return out; // returns the sorted vector
 }
-}  // namespace wiggle_sort
-}  // namespace sorting
+} // namespace sorting::wiggle_sort
 
 /**
  *
@@ -81,8 +75,7 @@ template <typename T>  // this allows to have vectors of ints, double, float,
  * @param arr array containing the sorted elements
  *
  */
-template <typename T>
-static void displayElements(const std::vector<T> &arr) {
+template <typename T> static void displayElements(const std::vector<T> &arr) {
     uint32_t size = arr.size();
 
     std::cout << "Sorted elements are as follows: ";
@@ -104,11 +97,11 @@ static void displayElements(const std::vector<T> &arr) {
  * @returns void
  */
 static void test() {
-    std::srand(std::time(nullptr));  // initialize random number generator
+    std::srand(std::time(nullptr)); // initialize random number generator
 
     std::vector<float> data1(100);
-    for (auto &d : data1) {  // generate random numbers between -5.0 and 4.99
-        d = float(std::rand() % 1000 - 500) / 100.f;
+    for (auto &d : data1) { // generate random numbers between -5.0 and 4.99
+        d = static_cast<float>(std::rand() % 1000 - 500) / 100.f;
     }
 
     std::vector<float> sorted = sorting::wiggle_sort::wiggleSort<float>(data1);
@@ -117,7 +110,7 @@ static void test() {
 
     for (uint32_t j = 0; j < data1.size(); j += 2) {
         assert(data1[j] <= data1[j + 1] &&
-               data1[j + 1] >= data1[j + 2]);  // check the validation condition
+               data1[j + 1] >= data1[j + 2]); // check the validation condition
     }
 
     std::cout << "Test 1 passed\n";

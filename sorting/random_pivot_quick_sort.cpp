@@ -44,33 +44,25 @@
  * @author [Nitin Sharma](https://github.com/foo290)
  */
 
-#include <algorithm>  /// for std::is_sorted(), std::swap()
-#include <array>      /// for std::array
-#include <cassert>    /// for assert
-#include <ctime>      /// for initializing random number generator
-#include <iostream>   /// for IO operations
-#include <tuple>      /// for returning multiple values form a function at once
+#include <algorithm> /// for std::is_sorted(), std::swap()
+#include <array>     /// for std::array
+#include <cassert>   /// for assert
+#include <ctime>     /// for initializing random number generator
+#include <iostream>  /// for IO operations
+#include <tuple>     /// for returning multiple values form a function at once
 
 /**
  * @namespace sorting
  * @brief Sorting algorithms
  */
-namespace sorting {
-/**
- * @brief Functions for the [Random Pivot Quick
- * Sort](https://www.sanfoundry.com/cpp-program-implement-quick-sort-using-randomisation)
- * implementation
- * @namespace random_pivot_quick_sort
- */
-namespace random_pivot_quick_sort {
+namespace sorting::random_pivot_quick_sort {
 /**
  * @brief Utility function to print the array
  * @tparam T size of the array
  * @param arr array used to print its content
  * @returns void
  * */
-template <size_t T>
-void showArray(std::array<int64_t, T> arr) {
+template <size_t T> void showArray(std::array<int64_t, T> arr) {
     for (int64_t i = 0; i < arr.size(); i++) {
         std::cout << arr[i] << " ";
     }
@@ -86,7 +78,7 @@ void showArray(std::array<int64_t, T> arr) {
  * @returns int64_t A random number between start and end index.
  * */
 int64_t getRandomIndex(int64_t start, int64_t end) {
-    srand(time(nullptr));  // Initialize random number generator.
+    srand(time(nullptr)); // Initialize random number generator.
     int64_t randomPivotIndex = start + rand() % (end - start + 1);
     return randomPivotIndex;
 }
@@ -100,21 +92,21 @@ int64_t getRandomIndex(int64_t start, int64_t end) {
  * index and pivot sorted array.
  */
 template <size_t size>
-std::tuple<int64_t, std::array<int64_t, size>> partition(
-    std::array<int64_t, size> arr, int64_t start, int64_t end) {
-    int64_t pivot = arr[end];  // Randomly selected element will be here from
-                               // caller function (quickSortRP()).
+std::tuple<int64_t, std::array<int64_t, size>>
+partition(std::array<int64_t, size> arr, int64_t start, int64_t end) {
+    int64_t pivot = arr[end]; // Randomly selected element will be here from
+                              // caller function (quickSortRP()).
     int64_t pInd = start;
 
     for (int64_t i = start; i < end; i++) {
         if (arr[i] <= pivot) {
-            std::swap(arr[i], arr[pInd]);  // swapping the elements from current
-                                           // index to pInd.
+            std::swap(arr[i], arr[pInd]); // swapping the elements from current
+                                          // index to pInd.
             pInd++;
         }
     }
     std::swap(arr[pInd],
-              arr[end]);  // swapping the pivot element to its sorted position
+              arr[end]); // swapping the pivot element to its sorted position
     return std::make_tuple(pInd, arr);
 }
 
@@ -172,26 +164,24 @@ std::array<int64_t, size> generateUnsortedArray(int64_t from, int64_t to) {
     return unsortedArray;
 }
 
-}  // namespace random_pivot_quick_sort
-}  // namespace sorting
+} // namespace sorting::random_pivot_quick_sort
 
 /**
  * @brief a class containing the necessary test cases
  */
 class TestCases {
- private:
+  private:
     /**
      * @brief A function to print64_t given message on console.
      * @tparam T Type of the given message.
      * @returns void
      * */
-    template <typename T>
-    void log(T msg) {
+    template <typename T> void log(T msg) {
         // It's just to avoid writing cout and endl
         std::cout << "[TESTS] : ---> " << msg << std::endl;
     }
 
- public:
+  public:
     /**
      * @brief Executes test cases
      * @returns void
@@ -221,7 +211,7 @@ class TestCases {
         std::array<int64_t, inputSize> unsorted_arr{2};
 
         int64_t start = 0;
-        int64_t end = unsorted_arr.size() - 1;  // length - 1
+        int64_t end = unsorted_arr.size() - 1; // length - 1
 
         log("Running algorithm of data of length 50 ...");
         std::array<int64_t, unsorted_arr.size()> sorted_arr =
@@ -254,7 +244,7 @@ class TestCases {
                 1, 10000);
 
         int64_t start = 0;
-        int64_t end = unsorted_arr.size() - 1;  // length - 1
+        int64_t end = unsorted_arr.size() - 1; // length - 1
 
         log("Running algorithm of data of length 500 ...");
         std::array<int64_t, unsorted_arr.size()> sorted_arr =
@@ -287,7 +277,7 @@ class TestCases {
                 1, 10000);
 
         int64_t start = 0;
-        int64_t end = unsorted_arr.size() - 1;  // length - 1
+        int64_t end = unsorted_arr.size() - 1; // length - 1
 
         log("Running algorithm...");
         std::array<int64_t, unsorted_arr.size()> sorted_arr =
@@ -321,7 +311,7 @@ static void test() {
  * @returns 0 on exit
  */
 int main(int argc, char *argv[]) {
-    test();  // Executes various test cases.
+    test(); // Executes various test cases.
 
     const int64_t inputSize = 10;
     std::array<int64_t, inputSize> unsorted_array =

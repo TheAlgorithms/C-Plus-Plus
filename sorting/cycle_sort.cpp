@@ -13,6 +13,7 @@
 
 #include <algorithm>  /// for std::is_sorted, std::swap
 #include <cassert>    /// for assert
+#include <cstdint>
 #include <iostream>   /// for io operations
 #include <vector>     /// for std::vector
 
@@ -20,13 +21,7 @@
  * @namespace sorting
  * @brief Sorting algorithms
  */
-namespace sorting {
-/**
- * @namespace cycle_sort
- * @brief Functions for [Cycle sort](https://en.wikipedia.org/wiki/Cycle_sort)
- * algorithm
- */
-namespace cycle_sort {
+namespace sorting::cycle_sort {
 /**
  * @brief The main function implements cycleSort
  * @tparam T type of array
@@ -81,8 +76,7 @@ std::vector<T> cycleSort(const std::vector<T> &in_arr) {
     }
     return arr;
 }
-}  // namespace cycle_sort
-}  // namespace sorting
+}  // namespace sorting::cycle_sort
 
 /**
  * @brief Test implementations

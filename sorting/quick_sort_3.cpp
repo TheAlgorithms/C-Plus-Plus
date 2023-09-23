@@ -146,7 +146,7 @@ static void test_int() {
         }
 
         std::cout << "Test " << num_tests << "\t Array size:" << size << "\t ";
-        std::vector<int> sorted = sorting::quicksort(arr, 0, int32_t(size) - 1);
+        std::vector<int> sorted = sorting::quicksort(arr, 0, static_cast<int32_t>(size) - 1);
         if (size < 20) {
             std::cout << "\t Sorted Array is:\n\t";
             std::cout << sorted << "\n";
@@ -163,14 +163,14 @@ static void test_double() {
         size_t size = std::rand() % 500;
         std::vector<double> arr(size);
         for (auto &a : arr) {
-            a = double(std::rand() % 500) -
+            a = static_cast<double>(std::rand() % 500) -
                 250.f;   // random numbers between -250, 249
             a /= 100.f;  // convert to -2.5 to 2.49
         }
 
         std::cout << "Test " << num_tests << "\t Array size:" << size << "\t ";
         std::vector<double> sorted =
-            sorting::quicksort(arr, 0, int32_t(size) - 1);
+            sorting::quicksort(arr, 0, static_cast<int32_t>(size) - 1);
         if (size < 20) {
             std::cout << "\t Sorted Array is:\n\t";
             std::cout << sorted << "\n";

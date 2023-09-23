@@ -12,6 +12,7 @@
 
 #include <algorithm>  /// for std::is_sorted
 #include <cassert>    /// for assert
+#include <cstdint>
 #include <iostream>   /// for std::swap and io operations
 #include <vector>     /// for std::vector
 
@@ -19,14 +20,7 @@
  * @namespace sorting
  * @breif Sorting algorithms
  */
-namespace sorting {
-/**
- * @namespace dnf_sort
- * @brief Functions for the [DNF
- * sort](https://en.wikipedia.org/wiki/Dutch_national_flag_problem)
- * implementation
- */
-namespace dnf_sort {
+namespace sorting::dnf_sort {
 /**
  * @brief The main function implements DNF sort
  * @tparam T type of array
@@ -63,8 +57,7 @@ std::vector<T> dnfSort(const std::vector<T> &in_arr) {
     }
     return arr;
 }
-}  // namespace dnf_sort
-}  // namespace sorting
+}  // namespace sorting::dnf_sort
 
 /**
  * @brief Self-test implementations

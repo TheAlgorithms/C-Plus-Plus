@@ -30,7 +30,7 @@ Bubble Sort Algorithm Analysis (Best Case - Worst Case - Average Case)
 Bubble Sort Worst Case Performance is O (n²). Why is that? Because if you
 remember Big O Notation, we were calculating the complexity of the algorithms in
 the nested loops. The n * (n - 1) product gives us O (n²) performance. In the
-worst case all the steps of the cycle will occur. Bubble Sort (Avarage Case)
+worst case all the steps of the cycle will occur. Bubble Sort (Average Case)
 Performance. Bubble Sort is not an optimal algorithm. in average, O (n²)
 performance is taken. Bubble Sort Best Case Performance. O (n). However, you
 can't get the best status in the code we shared above. This happens on the
@@ -41,13 +41,13 @@ optimized bubble sort algorithm. It's right down there.
 #include <vector>
 
 int main() {
-    int n;
+    int n{};
     bool swap_check = true;
     std::cout << "Enter the amount of numbers to sort: ";
     std::cin >> n;
     std::vector<int> numbers;
     std::cout << "Enter " << n << " numbers: ";
-    int num;
+    int num{};
 
     // Input
     for (int i = 0; i < n; i++) {

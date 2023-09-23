@@ -41,8 +41,9 @@ void CocktailSelectionSort(std::vector<int> *vec, int low, int high) {
 // Recursive Version
 
 void CocktailSelectionSort_v2(std::vector<int> *vec, int low, int high) {
-    if (low >= high)
+    if (low >= high) {
         return;
+}
 
     int minimum = (*vec)[low];
     int minimumindex = low;
@@ -72,7 +73,7 @@ void CocktailSelectionSort_v2(std::vector<int> *vec, int low, int high) {
 // main function, select any one of iterative or recursive version
 
 int main() {
-    int n;
+    int n{};
     std::cout << "Enter number of elements\n";
     std::cin >> n;
     std::vector<int> v(n);
@@ -81,7 +82,7 @@ int main() {
         std::cin >> v[i];
     }
 
-    int method;
+    int method{};
     std::cout << "Enter method: \n\t0: iterative\n\t1: recursive:\t";
     std::cin >> method;
 

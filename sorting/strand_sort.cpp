@@ -20,12 +20,7 @@
  * @namespace sorting
  * @brief Sorting algorithms
  */
-namespace sorting {
-    /**
-    * @namespace strand
-    * @brief Functions for [Strand Sort](https://en.wikipedia.org/wiki/Strand_sort) algorithm
-    */
-    namespace strand {
+namespace sorting::strand {
         /**
         * @brief Apply sorting
         * @tparam element type of list
@@ -54,8 +49,7 @@ namespace sorting {
             }
             return result; // Returns sorted list
         }
-    }  // namespace strand
-}  // namespace sorting
+    }  // namespace sorting::strand
 
 /**
  * @brief Function for testing

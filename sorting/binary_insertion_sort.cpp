@@ -39,10 +39,10 @@
  * \f{bmatrix}{10 &20 &30 &40 &50\f}
  */
 
-#include <algorithm>  /// for algorithm functions
-#include <cassert>    /// for assert
-#include <iostream>   /// for IO operations
-#include <vector>     /// for working with vectors
+#include <algorithm> /// for algorithm functions
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
+#include <vector>    /// for working with vectors
 
 /**
  * \namespace sorting
@@ -80,8 +80,7 @@ int64_t binary_search(std::vector<T> &arr, T val, int64_t low, int64_t high) {
  * \param arr The actual vector to sort.
  * \returns Void.
  */
-template <typename T>
-void insertionSort_binsrch(std::vector<T> &arr) {
+template <typename T> void insertionSort_binsrch(std::vector<T> &arr) {
     int64_t n = arr.size();
 
     for (int64_t i = 1; i < n; i++) {
@@ -95,7 +94,7 @@ void insertionSort_binsrch(std::vector<T> &arr) {
         arr[j + 1] = key;
     }
 }
-}  // namespace sorting
+} // namespace sorting
 
 /**
  * @brief Self-test implementations
@@ -141,6 +140,6 @@ static void test() {
  * @return 0 on exit.
  */
 int main() {
-    test();  // run self-test implementations
+    test(); // run self-test implementations
     return 0;
 }

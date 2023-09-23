@@ -7,7 +7,7 @@
  * digit using [Counting Sort](https://en.wikipedia.org/wiki/Counting_sort) as
  * subroutine. Running time of radix sort is O(d*(n+b)) where b is the base for
  * representing numbers and d in the max digits in input integers and n is
- * number of unsigned integers. consider example for n = 5, aray elements =
+ * number of unsigned integers. consider example for n = 5, array elements =
  * 432,234,143,332,123 sorting digit by digit sorting according to 1) 1st digit
  * place
  * => 432, 332, 143, 123, 234

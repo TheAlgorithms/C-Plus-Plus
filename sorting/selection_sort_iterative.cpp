@@ -27,10 +27,11 @@
  * @author [Lajat Manekar](https://github.com/Lazeeez)
  * @author Unknown author
  *******************************************************************************/
-#include <algorithm>  /// for std::is_sorted
-#include <cassert>    /// for std::assert
-#include <iostream>   /// for IO operations
-#include <vector>     /// for std::vector
+#include <algorithm> /// for std::is_sorted
+#include <cassert>   /// for std::assert
+#include <cstdint>
+#include <iostream>  /// for IO operations
+#include <vector>    /// for std::vector
 
 /******************************************************************************
  * @namespace sorting
@@ -48,25 +49,25 @@ std::vector<uint64_t> selectionSort(const std::vector<uint64_t> &arr,
                                     uint64_t len) {
     std::vector<uint64_t> array(
         arr.begin(),
-        arr.end());  // declare a vector in which result will be stored
+        arr.end()); // declare a vector in which result will be stored
     for (uint64_t it = 0; it < len; ++it) {
-        uint64_t min = it;  // set min value
+        uint64_t min = it; // set min value
         for (uint64_t it2 = it + 1; it2 < len; ++it2) {
-            if (array[it2] < array[min]) {  // check which element is smaller
-                min = it2;  // store index of smallest element to min
+            if (array[it2] < array[min]) { // check which element is smaller
+                min = it2; // store index of smallest element to min
             }
         }
 
-        if (min != it) {  // swap if min does not match to i
+        if (min != it) { // swap if min does not match to i
             uint64_t tmp = array[min];
             array[min] = array[it];
             array[it] = tmp;
         }
     }
 
-    return array;  // return sorted vector
+    return array; // return sorted vector
 }
-}  // namespace sorting
+} // namespace sorting
 
 /*******************************************************************************
  * @brief Self-test implementations
@@ -94,7 +95,7 @@ static void test() {
     assert(std::is_sorted(result_test2.begin(), result_test2.end()));
     std::cout << "Passed" << std::endl;
 
-    // testcase #3
+    // test case #3
     // [11, 20, 30, 41, 15, 60, 82, 15] returns [11, 15, 15, 20, 30, 41, 60, 82]
     std::vector<uint64_t> vector3 = {11, 20, 30, 41, 15, 60, 82, 15};
     uint64_t vector3size = vector3.size();
@@ -104,7 +105,7 @@ static void test() {
     assert(std::is_sorted(result_test3.begin(), result_test3.end()));
     std::cout << "Passed" << std::endl;
 
-    // testcase #4
+    // test case #4
     // [1, 9, 11, 546, 26, 65, 212, 14, -11] returns [-11, 1, 9, 11, 14, 26, 65,
     // 212, 546]
     std::vector<uint64_t> vector4 = {1, 9, 11, 546, 26, 65, 212, 14};
@@ -121,6 +122,6 @@ static void test() {
  * @returns 0 on exit
  *******************************************************************************/
 int main() {
-    test();  // run self-test implementations
+    test(); // run self-test implementations
     return 0;
 }

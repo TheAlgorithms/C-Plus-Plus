@@ -5,7 +5,7 @@
 const int RUN = 32;
 
 // this function sorts array from left index to to right index which is of size
-// atmost RUN
+// at most RUN
 void insertionSort(int arr[], int left, int right) {
     for (int i = left + 1; i <= right; i++) {
         int temp = arr[i];
@@ -23,8 +23,10 @@ void merge(int arr[], int l, int m, int r) {
     // original array is broken in two parts, left and right array
     int len1 = m - l + 1, len2 = r - m;
     int *left = new int[len1], *right = new int[len2];
-    for (int i = 0; i < len1; i++) left[i] = arr[l + i];
-    for (int i = 0; i < len2; i++) right[i] = arr[m + 1 + i];
+    for (int i = 0; i < len1; i++)
+        left[i] = arr[l + i];
+    for (int i = 0; i < len2; i++)
+        right[i] = arr[m + 1 + i];
 
     int i = 0;
     int j = 0;
@@ -85,7 +87,8 @@ void timSort(int arr[], int n) {
 
 // utility function to print the Array
 void printArray(int arr[], int n) {
-    for (int i = 0; i < n; i++) printf("%d  ", arr[i]);
+    for (int i = 0; i < n; i++)
+        printf("%d  ", arr[i]);
     std::cout << std::endl;
 }
 

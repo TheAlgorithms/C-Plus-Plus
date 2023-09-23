@@ -17,11 +17,7 @@
 /** \namespace sorting
  * \brief Sorting algorithms
  */
-namespace sorting {
-/** \namespace merge_insertion
- * \brief Combined Intersion-Merge sorting algorithm
- */
-namespace merge_insertion {
+namespace sorting::merge_insertion {
 
 /**
  * @brief Insertion merge algorithm
@@ -122,8 +118,7 @@ void mergeSort(std::array<T, N> *array, size_t min, size_t max,
     }
 }
 
-}  // namespace merge_insertion
-}  // namespace sorting
+}  // namespace sorting::merge_insertion
 
 /**
  * @brief Function to test code using random arrays

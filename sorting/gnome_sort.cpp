@@ -114,7 +114,7 @@ static void test() {
 
     for (auto &a : rand_arr) {
         // generate random numbers between -5.0 and 4.99
-        a = float(std::rand() % 1000 - 500) / 100.f;
+        a = static_cast<float>(std::rand() % 1000 - 500) / 100.f;
     }
 
     std::array<float, size2> float_arr = sorting::gnomeSort(rand_arr);

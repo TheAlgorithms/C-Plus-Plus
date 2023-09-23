@@ -16,7 +16,7 @@
  */
 template <class T>
 void show_data(T *arr, size_t LEN) {
-    size_t i;
+    size_t i = 0;
 
     for (i = 0; i < LEN; i++) {
         std::cout << arr[i] << ", ";

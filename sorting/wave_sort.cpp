@@ -8,22 +8,16 @@
  * @author [Swastika Gupta](https://github.com/Swastyy)
  */
 
-#include <algorithm>  /// for std::is_sorted, std::swap
-#include <cassert>    /// for assert
-#include <iostream>   /// for IO operations
-#include <vector>     /// for std::vector
+#include <algorithm> /// for std::is_sorted, std::swap
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
+#include <vector>    /// for std::vector
 
 /**
  * @namespace sorting
  * @brief Sorting algorithms
  */
-namespace sorting {
-/**
- * @namespace wave_sort
- * @brief Functions for the [Wave
- * sort](https://www.geeksforgeeks.org/sort-array-wave-form-2/) implementation
- */
-namespace wave_sort {
+namespace sorting::wave_sort {
 /**
  * @brief The main function implements that implements the Wave Sort algorithm
  * @tparam T type of array
@@ -38,13 +32,12 @@ std::vector<T> waveSort(const std::vector<T> &in_arr, int64_t n) {
         arr[i] = in_arr[i];
     }
     std::sort(arr.begin(), arr.end());
-    for (int64_t i = 0; i < n - 1; i += 2) {  // swap all the adjacent elements
+    for (int64_t i = 0; i < n - 1; i += 2) { // swap all the adjacent elements
         std::swap(arr[i], arr[i + 1]);
     }
     return arr;
 }
-}  // namespace wave_sort
-}  // namespace sorting
+} // namespace sorting::wave_sort
 
 /**
  * @brief Self-test implementations
@@ -89,6 +82,6 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-    test();  // run self-test implementations
+    test(); // run self-test implementations
     return 0;
 }

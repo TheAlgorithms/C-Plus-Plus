@@ -26,6 +26,7 @@
 
 #include <algorithm>  /// for std::is_sorted
 #include <cassert>    /// for std::assert
+#include <cstdint>
 #include <ctime>      /// for std::time
 #include <iostream>   /// for IO operations
 #include <vector>     /// for std::vector
@@ -34,13 +35,7 @@
  * @brief Sorting algorithms
  * @namespace sorting
  */
-namespace sorting {
-/**
- * @namespace quick_sort
- * @brief Functions for the [Quick sort
- * implementation](https://en.wikipedia.org/wiki/Quicksort) in C++
- */
-namespace quick_sort {
+namespace sorting::quick_sort {
 /**
  * @brief Sorts the array taking the last element as pivot
  * @details
@@ -125,8 +120,7 @@ void show(const std::vector<T> &arr, const int &size) {
     std::cout << "\n";
 }
 
-}  // namespace quick_sort
-}  // namespace sorting
+}  // namespace sorting::quick_sort
 
 /**
  * @brief Self-test implementations
@@ -136,7 +130,7 @@ static void tests() {
     // 1st test (normal numbers)
     std::vector<uint64_t> arr = {5, 3, 8, 12, 14, 16, 28, 96, 2, 5977};
     std::vector<uint64_t> arr_sorted = sorting::quick_sort::quick_sort(
-        arr, 0, int(std::end(arr) - std::begin(arr)) - 1);
+        arr, 0, static_cast<int>(std::end(arr) - std::begin(arr)) - 1);
 
     assert(std::is_sorted(std::begin(arr_sorted), std::end(arr_sorted)));
     std::cout << "\n1st test: passed!\n";
@@ -154,7 +148,7 @@ static void tests() {
     std::vector<double> arr3 = {29,  36,   1100, 0,      77,     1,
                                 6.7, 8.97, 1.74, 950.10, -329.65};
     std::vector<double> arr_sorted3 = sorting::quick_sort::quick_sort(
-        arr3, 0, int(std::end(arr3) - std::begin(arr3)) - 1);
+        arr3, 0, static_cast<int>(std::end(arr3) - std::begin(arr3)) - 1);
 
     assert(std::is_sorted(std::begin(arr_sorted3), std::end(arr_sorted3)));
     std::cout << "3rd test: passed!\n";
@@ -170,7 +164,7 @@ static void tests() {
     }
 
     std::vector<float> arr4_sorted = sorting::quick_sort::quick_sort(
-        arr4, 0, int(std::end(arr4) - std::begin(arr4)) - 1);
+        arr4, 0, static_cast<int>(std::end(arr4) - std::begin(arr4)) - 1);
     assert(std::is_sorted(std::begin(arr4_sorted), std::end(arr4_sorted)));
 
     std::cout << "4th test: passed!\n";
@@ -186,11 +180,11 @@ static void tests() {
     std::cout << std::endl;
     std::cout << "3rd array:\n";
     sorting::quick_sort::show(arr_sorted3,
-                              int(std::end(arr3) - std::begin(arr3)) - 1);
+                              static_cast<int>(std::end(arr3) - std::begin(arr3)) - 1);
     std::cout << std::endl;
     std::cout << "Start: 4th array:\n\n";
     sorting::quick_sort::show(
-        arr4_sorted, int(std::end(arr4_sorted) - std::begin(arr4_sorted)) - 1);
+        arr4_sorted, static_cast<int>(std::end(arr4_sorted) - std::begin(arr4_sorted)) - 1);
     std::cout << "\nEnd: 4th array.\n";
 }
 

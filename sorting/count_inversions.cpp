@@ -49,12 +49,7 @@
  * @namespace sorting
  * @brief Sorting algorithms
  */
-namespace sorting {
-/**
- * @namespace inversion
- * @brief Functions for counting inversions using Merge Sort algorithm
- */
-namespace inversion {
+namespace sorting::inversion {
 
 // Functions used --->
 // int mergeSort(int* arr, int* temp, int left, int right);
@@ -113,7 +108,7 @@ uint32_t merge(T* arr, T* temp, uint32_t left, uint32_t mid, uint32_t right) {
 }
 
 /**
- * @brief Implement merge Sort and count inverions while merging
+ * @brief Implement merge Sort and count inversions while merging
  *
  * @details
  * The mergeSort() function implements Merge Sort, a
@@ -153,11 +148,11 @@ uint32_t mergeSort(T* arr, T* temp, uint32_t left, uint32_t right) {
  * Number of inversions in a sorted array is 0.
  * Number of inversion in an array[1...n] sorted in
  * non-ascending order is n(n-1)/2, since each pair of elements
- * contitute an inversion.
+ * constitute an inversion.
  *
  * @param arr   - array, data member of std::vector<int>, input for counting
  * inversions
- * @param array_size    - number of elementa in the array
+ * @param array_size    - number of elements in the array
  * @returns number of inversions in input array, sorts the array
  */
 template <class T>
@@ -184,7 +179,6 @@ void show(T* arr, const uint32_t array_size) {
     std::cout << "\n";
 }
 
-}  // namespace inversion
 }  // namespace sorting
 
 /**
@@ -226,7 +220,7 @@ static void test() {
 }
 
 // /**
-//  * @brief Program Body contains all main funtionality
+//  * @brief Program Body contains all main functionality
 //  * @returns void
 //  */
 // template <typename T>

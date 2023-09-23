@@ -72,8 +72,8 @@ void test3() {
 
 /**
  * @brief Main function
- * @param argc commandline argument count (ignored)
- * @param argv commandline array of arguments (ignored)
+ * @param argc command line argument count (ignored)
+ * @param argv command line array of arguments (ignored)
  * @returns 0 on exit
  */
 int main() {

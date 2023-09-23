@@ -91,7 +91,7 @@ void insertionSort(std::vector<T> *arr) {
 }  // namespace sorting
 
 /**
- * @brief Create a random array objecthelper function to create a random array
+ * @brief Create a random array object helper function to create a random array
  *
  * @tparam T type of array
  * @param arr array to fill (must be pre-allocated)

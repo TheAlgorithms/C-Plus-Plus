@@ -32,8 +32,9 @@ int minSwaps(int arr[], int n) {
     for (int i = 0; i < n; i++) {
         // already swapped and corrected or
         // already present at correct pos
-        if (vis[i] || arrPos[i].second == i)
+        if (vis[i] || arrPos[i].second == i) {
             continue;
+        }
 
         // find out the number of node in
         // this cycle and add in ans

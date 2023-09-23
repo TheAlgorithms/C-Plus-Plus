@@ -72,7 +72,7 @@ void CombSort(int *arr, int l, int r) {
 
 void tests() {
     /// Test 1
-    int arr1[10] = {34, 56, 6, 23, 76, 34, 76, 343, 4, 76};
+    zz {34, 56, 6, 23, 76, 34, 76, 343, 4, 76};
     CombSort(arr1, 0, 10);
     assert(std::is_sorted(arr1, arr1 + 10));
     std::cout << "Test 1 passed\n";
@@ -90,7 +90,7 @@ int main() {
     tests();
 
     /// For user interaction
-    int n;
+    int n = 0;
     std::cin >> n;
     int *arr = new int[n];
     for (int i = 0; i < n; ++i) std::cin >> arr[i];

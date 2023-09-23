@@ -15,7 +15,7 @@ void SlowSort(int a[], int i, int j) {
         return;
     int m = i + (j - i) / 2;  // midpoint, implemented this way to avoid
                               // overflow
-    int temp;
+    int temp = 0;
     SlowSort(a, i, m);
     SlowSort(a, m + 1, j);
     if (a[j] < a[m]) {
@@ -29,7 +29,7 @@ void SlowSort(int a[], int i, int j) {
 // Sample Main function
 
 int main() {
-    int size;
+    int size = 0;
     std::cout << "\nEnter the number of elements : ";
 
     std::cin >> size;
