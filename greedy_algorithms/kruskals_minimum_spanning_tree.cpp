@@ -49,21 +49,36 @@ void findMinimumEdge(const int &infinity,
     }
 }
 }  // namespace greedy_algorithms
+static void tests()		//test case functions, for adding more test cases
+{
+    constexpr int INFINITY = 99999;
+    std::array<std::array<int, 6>, 6> graph1{
+        0,        1,        2,        6,        INFINITY, INFINITY,
+        2,        0,        3,        8,        3,        INFINITY,
+        1,        3,        0,        INFINITY, 1,        INFINITY,
+        4,        8,        INFINITY, 0,        5,        7,
+        INFINITY, 3,        1,        5,        0,        INFINITY,
+        INFINITY, INFINITY, INFINITY, 7,        INFINITY, 0};
+
+        std::array<std::array<int, 6>, 6> graph2{
+        3,        1,               7,        9,        INFINITY,    INFINITY,
+        4,        INFINITY,        1,        9,        2,           INFINITY,
+        6,        7,               2,        0,        9,           1,
+        9,        7,               INFINITY, 2,        2,           3,
+        INFINITY, 1,               6,        3,        INFINITY,    5,
+        5,        3,               1,        2,        INFINITY,    7};
+
+    std::cout<<"First test case:\n";
+    greedy_algorithms::findMinimumEdge(INFINITY, graph1);
+    std::cout<<"Second test case:\n";
+    greedy_algorithms::findMinimumEdge(INFINITY, graph2);
+}
 
 /**
  * @brief Main function
  * @returns 0 on exit
  */
 int main() {
-    constexpr int INFINITY = 99999;
-    std::array<std::array<int, 6>, 6> graph{
-        0,        4,        1,        4,        INFINITY, INFINITY,
-        4,        0,        3,        8,        3,        INFINITY,
-        1,        3,        0,        INFINITY, 1,        INFINITY,
-        4,        8,        INFINITY, 0,        5,        7,
-        INFINITY, 3,        1,        5,        0,        INFINITY,
-        INFINITY, INFINITY, INFINITY, 7,        INFINITY, 0};
-
-    greedy_algorithms::findMinimumEdge(INFINITY, graph);
+    tests();
     return 0;
 }
