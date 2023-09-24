@@ -53,7 +53,7 @@ namespace math{
 static void test() {
     assert(math::isLuckyNumber(5) == false);
     assert(math::isLuckyNumber(19) == true);
-    assert(math::isLuckyNumber(195) == true);
+    assert(math::isLuckyNumber(193) == true);
     assert(math::isLuckyNumber(200) == false);
     std::cout << "All test cases have successfully passed\n";
 }
