@@ -1,72 +1,74 @@
 /**
- * Copyright 2020 @author iamnambiar
- *
  * @file
- * \brief A C++ Program to find the Sum of Digits of input integer.
+ * @brief
+ * A C++ Program to find the [Digit
+ * Sum](https://en.wikipedia.org/wiki/Digit_sum) of any given number.
+ * @details A Digit Sum is found by adding the digits of a number.
+ * @author [iamnambiar](https://github.com/iamnambiar)
+ * @author [Dylan Cusson](https://github.com/dylancusson)
  */
-#include <cassert>
-#include <iostream>
+#include <cassert>   //Include for asserts
+#include <iostream>  //Include for IO operations
 
 /**
- * Function to find the sum of the digits of an integer.
+ * @brief Mathematical algorithms
+ * @namespace
+ */
+namespace math {
+/**
+ * @brief Function to find the sum of the digits of an integer.
  * @param num The integer.
  * @return Sum of the digits of the integer.
- *
- * \detail
- * First the algorithm check whether the num is negative or positive,
- * if it is negative, then we neglect the negative sign.
- * Next, the algorithm extract the last digit of num by dividing by 10
- * and extracting the remainder and this is added to the sum.
- * The number is then divided by 10 to remove the last digit.
- * This loop continues until num becomes 0.
  */
 int sum_of_digits(int num) {
-    // If num is negative then negative sign is neglected.
+    /*
+     * First the algorithm checks whether the number is negative or positive,
+     * and sets the sign accordingly.
+     * Performing a modulo operation % 10 gives us the value of the last digit,
+     * which we add to our running sum total.
+     * The number is then divided by 10 to remove the last digit.
+     * This loop continues until all digits have been processed.
+     */
+
+    int sign = 1;  // Start with a positive sign
+
     if (num < 0) {
-        num = -1 * num;
+        sign = -1;       // If num is negative we adjust our sign
+        num = -1 * num;  // and convert to positive for further use
     }
     int sum = 0;
-    while (num > 0) {
-        sum = sum + (num % 10);
-        num = num / 10;
+    while (num != 0) {
+        sum = sum +
+              (num %
+               10);  // Modulo gives us the last digit and we add it to our sum
+        num = num / 10;  // Divide our number by 10 to remove the last digit
     }
-    return sum;
+    return sum * sign;  // We multiply our sum by the sign to reflect the
+                        // original signed value
 }
+}  // namespace math
 
 /**
- * Function for testing the sum_of_digits() function with a
- * first test case of 119765 and assert statement.
+ * @brief Self-test implementations
+ * @returns void
  */
-void test1() {
-    int test_case_1 = sum_of_digits(119765);
-    assert(test_case_1 == 29);
+static void tests() {
+    assert(math::sum_of_digits(123) == 6);
+    assert(math::sum_of_digits(84001) == 13);
+    assert(math::sum_of_digits(1000001) == 2);
+    assert(math::sum_of_digits(1234567890) == 45);
+    assert(math::sum_of_digits(-1234567890) == -45);
+    assert(math::sum_of_digits(-1000001) == -2);
+    assert(math::sum_of_digits(-84001) == -13);
+    assert(math::sum_of_digits(-123) == -6);
+    std::cout << "All tests passed!" << std::endl;
 }
 
 /**
- * Function for testing the sum_of_digits() function with a
- * second test case of -12256 and assert statement.
- */
-void test2() {
-    int test_case_2 = sum_of_digits(-12256);
-    assert(test_case_2 == 16);
-}
-
-/**
- * Function for testing the sum_of_digits() with
- * all the test cases.
- */
-void test() {
-    // First test.
-    test1();
-    // Second test.
-    test2();
-}
-
-/**
- * Main Function
+ * @brief Main Function
+ * @returns 0 on exit
  */
 int main() {
-    test();
-    std::cout << "Success." << std::endl;
+    tests();  // Perform self-tests
     return 0;
 }
