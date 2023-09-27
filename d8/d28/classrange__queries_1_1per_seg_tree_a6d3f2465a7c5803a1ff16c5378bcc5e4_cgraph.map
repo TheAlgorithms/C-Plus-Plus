@@ -1,4 +1,4 @@
 <map id="range_queries::perSegTree::construct" name="range_queries::perSegTree::construct">
 <area shape="rect" id="Node000001" title="Constructing the segment tree with the early passed vector. Every call creates a node to hold the sum..." alt="" coords="5,29,183,70"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="60,29,58,19,64,10,76,5,94,3,114,5,125,12,123,16,112,10,94,8,77,10,67,14,64,20,65,28"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="60,29,58,19,64,10,76,5,94,3,113,5,125,11,122,16,112,10,94,8,77,10,67,14,64,20,65,28"/>
 </map>

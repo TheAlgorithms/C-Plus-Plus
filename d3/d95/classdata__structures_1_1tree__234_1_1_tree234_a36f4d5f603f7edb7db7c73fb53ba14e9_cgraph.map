@@ -1,15 +1,15 @@
 <map id="data_structures::tree_234::Tree234::Merge" name="data_structures::tree_234::Tree234::Merge">
 <area shape="rect" id="Node000001" title="Merge the item at index of the parent node, and its left and right child." alt="" coords="5,169,154,210"/>
 <area shape="rect" id="Node000002" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a164574a9209b5df66368530d090b32c4" title="Get the child pointer at position of index." alt="" coords="204,5,351,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,167,138,114,167,84,200,57,208,51,211,56,203,61,171,88,142,117,98,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,167,138,114,167,84,200,57,208,52,211,56,203,61,171,88,142,117,98,171"/>
 <area shape="rect" id="Node000003" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a4808acb43668ff8cfd6f7cb44ceedad3" title="Get item of the \index index." alt="" coords="206,71,349,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="116,167,200,122,214,115,216,120,203,127,119,171"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="116,167,200,122,213,116,216,121,203,127,119,171"/>
 <area shape="rect" id="Node000004" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#afd9f83e2d5d7f22f79c1348e98914631" title="Check if node is a 2&#45;node." alt="" coords="205,136,350,177"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="154,175,189,168,190,174,155,180"/>
 <area shape="rect" id="Node000005" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ab4e5f7b7b260bb81d9441652cc124c74" title="Set child pointer to the position of index." alt="" coords="204,201,351,242"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="154,199,190,205,189,210,154,204"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="154,199,189,205,188,210,154,204"/>
 <area shape="rect" id="Node000006" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#af564fd4b0992fff69f90de201542d3d1" title="Set the item count of the node." alt="" coords="202,267,353,307"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="120,208,203,251,216,258,214,263,200,256,117,213"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="120,208,203,251,216,257,213,262,200,256,117,213"/>
 <area shape="rect" id="Node000007" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#aaa89a3016b5dd1be3552321c34343cbc" title="Set item value at position of index." alt="" coords="206,332,349,373"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="98,209,142,262,171,291,203,317,211,322,208,327,200,321,168,295,138,265,94,212"/>
 </map>

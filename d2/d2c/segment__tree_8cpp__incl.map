@@ -1,11 +1,11 @@
 <map id="data_structures/segment_tree.cpp" name="data_structures/segment_tree.cpp">
 <area shape="rect" id="Node000001" title="A data structure to quickly do operations on ranges: the Segment Tree algorithm implementation." alt="" coords="90,5,256,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,77,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,49,75,88,72,84,139,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,49,76,88,73,83,139,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="100,94,158,120"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,48,145,82,141,79,160,45"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="181,94,256,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="187,45,207,80,202,82,182,48"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="187,45,206,79,201,82,182,48"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="280,94,344,120"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="209,44,279,84,277,89,206,49"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="209,44,279,84,276,88,206,49"/>
 </map>

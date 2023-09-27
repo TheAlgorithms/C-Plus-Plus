@@ -1,5 +1,5 @@
 <map id="sorting::quick_sort::partition" name="sorting::quick_sort::partition">
 <area shape="rect" id="Node000001" title="Sorts the array taking the last element as pivot." alt="" coords="5,5,134,46"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="182,13,260,39"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,23,167,23,167,28,134,28"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,23,166,23,166,28,134,28"/>
 </map>

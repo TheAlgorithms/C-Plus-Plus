@@ -1,9 +1,9 @@
 <map id="data_structures/binaryheap.cpp" name="data_structures/binaryheap.cpp">
 <area shape="rect" id="Node000001" title="A C++ program to demonstrate common Binary Heap Operations." alt="" coords="23,5,226,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,79,65,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,34,63,72,59,68,108,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,34,64,71,60,67,108,29"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="89,79,160,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,31,127,64,122,64,122,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,31,127,63,122,63,122,31"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="184,79,236,105"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="141,29,186,67,183,72,137,34"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="141,29,186,67,182,71,137,34"/>
 </map>

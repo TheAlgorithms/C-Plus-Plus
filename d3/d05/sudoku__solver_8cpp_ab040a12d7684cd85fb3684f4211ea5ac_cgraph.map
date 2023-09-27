@@ -1,6 +1,6 @@
 <map id="backtracking::sudoku_solver::printMat" name="backtracking::sudoku_solver::printMat">
 <area shape="rect" id="Node000001" title="Utility function to print the matrix." alt="" coords="5,29,151,70"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="48,29,46,19,51,11,62,5,78,3,96,5,106,12,103,16,94,10,78,8,64,10,55,14,51,20,53,28"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="48,29,46,19,51,11,62,5,78,3,95,5,106,11,103,16,94,10,78,8,64,10,55,14,51,20,53,28"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="199,37,270,63"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,47,184,47,184,52,151,52"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,47,183,47,183,52,151,52"/>
 </map>

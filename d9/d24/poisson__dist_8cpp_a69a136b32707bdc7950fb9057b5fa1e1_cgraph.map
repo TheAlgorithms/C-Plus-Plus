@@ -1,9 +1,9 @@
 <map id="poisson_x_successes" name="poisson_x_successes">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,55,156,80"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/exp.html#" title=" " alt="" coords="205,5,274,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,51,190,31,192,36,125,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,51,189,31,191,36,125,57"/>
 <area shape="rect" id="Node000003" href="$d9/d24/poisson__dist_8cpp.html#a63ffd347e75d5ed7a518cbcfbfeec71a" title=" " alt="" coords="218,55,261,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,65,203,65,203,70,156,70"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,65,202,65,202,70,156,70"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="204,104,275,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="125,78,190,99,189,104,124,84"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="125,78,190,99,188,104,124,84"/>
 </map>

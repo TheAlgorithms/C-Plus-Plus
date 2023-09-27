@@ -1,7 +1,7 @@
 <map id="backtracking/n_queens_all_solution_optimised.cpp" name="backtracking/n_queens_all_solution_optimised.cpp">
 <area shape="rect" id="Node000001" title="N queens all optimized" alt="" coords="5,5,187,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="28,94,79,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,48,69,82,64,79,83,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,48,70,81,65,79,83,45"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="103,94,174,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="109,45,128,79,123,82,104,48"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="109,45,127,79,122,81,104,48"/>
 </map>

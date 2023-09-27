@@ -1,9 +1,9 @@
 <map id="tests::test6" name="tests::test6">
 <area shape="rect" id="Node000001" title="A Test to check correct functionality with an array sorted using std::sort." alt="" coords="5,55,93,80"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " alt="" coords="141,5,263,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,51,145,34,146,39,92,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,51,144,34,146,39,92,57"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " alt="" coords="146,55,258,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="93,65,131,65,131,70,93,70"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="93,65,130,65,130,70,93,70"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/sort.html#" title=" " alt="" coords="167,104,237,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="92,78,154,99,152,104,91,84"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="92,78,153,98,151,104,91,84"/>
 </map>

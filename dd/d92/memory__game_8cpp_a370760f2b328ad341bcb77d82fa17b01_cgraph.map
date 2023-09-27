@@ -1,4 +1,4 @@
 <map id="games::memory_game::match" name="games::memory_game::match">
 <area shape="rect" id="Node000001" title="Checks if the two values given by the user match." alt="" coords="5,29,160,70"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="53,29,51,19,56,11,67,5,83,3,100,5,110,12,107,16,98,10,82,8,68,10,60,14,56,20,58,28"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="53,29,51,19,56,11,67,5,83,3,100,5,110,11,107,16,98,10,82,8,68,10,60,14,56,20,58,28"/>
 </map>

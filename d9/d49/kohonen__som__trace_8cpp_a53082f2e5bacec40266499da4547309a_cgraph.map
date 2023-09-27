@@ -1,7 +1,7 @@
 <map id="test_lamniscate" name="test_lamniscate">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,119,31"/>
 <area shape="rect" id="Node000002" href="$d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485" title=" " alt="" coords="167,5,238,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,16,152,16,152,21,119,21"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,16,151,16,151,21,119,21"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="286,5,358,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="238,16,271,16,271,21,238,21"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="238,16,270,16,270,21,238,21"/>
 </map>

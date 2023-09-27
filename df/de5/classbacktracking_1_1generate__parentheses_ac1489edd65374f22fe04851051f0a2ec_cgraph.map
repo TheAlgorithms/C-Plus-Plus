@@ -1,8 +1,8 @@
 <map id="backtracking::generate_parentheses::makeStrings" name="backtracking::generate_parentheses::makeStrings">
 <area shape="rect" id="Node000001" title="function that adds parenthesis to the string." alt="" coords="5,29,186,70"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="55,29,53,19,59,10,74,5,96,3,119,5,133,12,131,17,118,10,95,8,75,10,63,15,58,21,60,28"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="55,29,53,19,59,10,74,5,96,3,119,5,133,11,131,16,117,10,95,8,75,10,63,15,58,21,60,28"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="250,12,372,37"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,36,235,31,235,36,186,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,36,234,31,234,36,186,42"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="234,61,388,87"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="186,57,219,61,219,66,185,62"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="186,57,218,61,218,66,185,62"/>
 </map>

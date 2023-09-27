@@ -1,6 +1,6 @@
 <map id="graph::bidirectional_dijkstra::addEdge" name="graph::bidirectional_dijkstra::addEdge">
 <area shape="rect" id="Node000001" title="Function that add edge between two nodes or vertices of graph." alt="" coords="5,29,136,70"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="38,29,37,19,42,11,53,5,71,3,89,5,100,12,97,16,88,10,70,8,55,10,46,14,42,20,44,28"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="38,29,37,19,42,11,53,5,71,3,89,5,100,11,97,16,87,10,70,8,55,10,46,14,42,20,44,28"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair/make_pair.html#" title=" " alt="" coords="184,37,291,63"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="136,47,169,47,169,52,136,52"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="136,47,168,47,168,52,136,52"/>
 </map>

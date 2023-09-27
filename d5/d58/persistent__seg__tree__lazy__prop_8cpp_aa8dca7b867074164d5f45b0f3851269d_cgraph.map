@@ -1,22 +1,22 @@
 <map id="test" name="test">
 <area shape="rect" id="Node000001" title="Test implementations." alt="" coords="5,160,49,185"/>
 <area shape="rect" id="Node000002" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a6d3f2465a7c5803a1ff16c5378bcc5e4" title="Constructing the segment tree with the early passed vector. Every call creates a node to hold the sum..." alt="" coords="97,29,274,70"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="33,157,57,120,75,99,95,81,103,75,106,80,98,85,79,103,62,123,38,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="33,157,57,120,75,99,95,81,103,76,106,80,98,85,79,103,62,123,38,160"/>
 <area shape="rect" id="Node000003" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#ae8ae4b1835e5e8aec32f68c5059ed4d4" title="Querying the range from index l to index r, checking at every node if it has some value to be propaga..." alt="" coords="97,209,274,250"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="50,178,115,201,113,206,48,183"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="50,178,114,201,112,206,48,183"/>
 <area shape="rect" id="Node000006" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a0fe4e431f3e09c274ecd7d2d58dcb865" title="Getting the number of versions after updates so far which is equal to the size of the pointers vector..." alt="" coords="97,95,274,135"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="48,162,113,138,115,143,50,167"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="48,162,112,139,114,144,50,167"/>
 <area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="353,132,468,157"/>
-<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="49,168,338,147,339,152,49,173"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="49,168,338,147,338,152,49,173"/>
 <area shape="rect" id="Node000008" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a24487eda25123bc4d112e8430821a6c6" title="Doing range update, checking at every node if it has some value to be propagated. All nodes affected ..." alt="" coords="97,299,274,339"/>
-<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="39,184,63,220,98,260,136,288,133,293,95,264,59,223,34,187"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="155,29,153,19,158,11,169,5,185,3,203,5,214,12,211,16,201,10,185,8,171,10,162,14,158,20,160,28"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="39,184,63,220,98,260,135,288,132,292,95,264,59,223,34,187"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="155,29,153,19,158,11,169,5,185,3,203,5,213,11,210,16,201,10,185,8,171,10,162,14,158,20,160,28"/>
 <area shape="rect" id="Node000004" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#ace7f57935b3bb9446f11c239fd89ae79" title="If there is some value to be propagated to the passed node, value is added to the node and the childr..." alt="" coords="322,241,499,282"/>
-<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="274,240,307,244,307,250,274,245"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="274,240,307,244,306,250,274,245"/>
 <area shape="rect" id="Node000005" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a0cec4b77d264521717cf9b0482c45817" title="Creating a new node with the same values of curr node." alt="" coords="547,271,725,311"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="500,271,533,275,532,280,499,276"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="274,124,338,132,338,138,274,129"/>
-<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="267,296,313,284,315,289,268,301"/>
-<area shape="poly" id="edge11_Node000008_Node000005" title=" " alt="" coords="274,311,533,295,533,300,275,316"/>
-<area shape="poly" id="edge12_Node000008_Node000008" title=" " alt="" coords="155,298,153,289,158,280,169,274,185,272,203,275,214,281,211,286,201,280,185,277,171,279,162,284,158,290,160,298"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="500,271,532,275,531,280,499,276"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="274,124,338,132,337,137,274,129"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="267,296,313,284,314,289,268,301"/>
+<area shape="poly" id="edge11_Node000008_Node000005" title=" " alt="" coords="274,311,532,295,532,300,275,316"/>
+<area shape="poly" id="edge12_Node000008_Node000008" title=" " alt="" coords="155,298,153,289,158,280,169,274,185,272,203,274,213,281,210,285,201,279,185,277,171,279,162,284,158,290,160,298"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="hashing::sha256::right_rotate" name="hashing::sha256::right_rotate">
 <area shape="rect" id="Node000001" title="Rotates the bits of a 32&#45;bit unsigned integer." alt="" coords="5,29,155,70"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="51,29,50,19,54,11,65,5,80,3,97,5,107,12,104,16,95,10,80,8,66,10,58,14,55,20,56,28"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="51,29,50,19,54,11,65,5,80,3,97,5,106,11,104,16,95,10,80,8,66,10,58,14,55,20,56,28"/>
 </map>

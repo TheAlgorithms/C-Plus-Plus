@@ -1,4 +1,4 @@
 <map id="machine_learning::neural_network::activations::drelu" name="machine_learning::neural_network::activations::drelu">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,187,70"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="61,29,60,19,65,10,78,5,96,3,116,5,128,12,126,16,115,10,96,8,79,10,69,14,65,20,66,28"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="61,29,60,19,65,10,78,5,96,3,116,5,128,11,125,16,114,10,96,8,79,10,69,14,65,20,66,28"/>
 </map>

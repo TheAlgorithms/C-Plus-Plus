@@ -1,7 +1,7 @@
 <map id="numerical_methods::babylonian_method" name="numerical_methods::babylonian_method">
 <area shape="rect" id="Node000001" title="Babylonian methods is an iterative function which returns square root of radicand." alt="" coords="5,23,148,64"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="196,5,268,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,29,181,24,181,29,148,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,29,180,24,181,29,148,35"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="198,55,266,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,52,183,57,183,63,147,57"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,52,183,57,182,63,147,57"/>
 </map>

@@ -1,7 +1,7 @@
 <map id="jumpSearch" name="jumpSearch">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,31,96,56"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="144,5,213,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,32,129,25,130,30,97,37"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,32,128,25,129,31,97,37"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="144,55,213,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="97,49,130,56,129,61,96,55"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="97,49,129,56,128,61,96,55"/>
 </map>

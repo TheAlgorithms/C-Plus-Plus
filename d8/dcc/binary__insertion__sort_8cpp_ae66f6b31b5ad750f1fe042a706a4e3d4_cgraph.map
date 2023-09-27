@@ -1,20 +1,20 @@
 <map id="main" name="main">
 <area shape="rect" id="Node000001" title="Main function." alt="" coords="5,104,55,130"/>
 <area shape="rect" id="Node000002" href="$d8/dcc/binary__insertion__sort_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,104,146,130"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,114,88,114,88,120,55,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,114,87,114,87,120,55,120"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/iterator/begin.html#" title=" " alt="" coords="226,5,304,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="133,102,157,71,192,40,210,30,213,35,196,44,161,75,137,105"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="133,102,157,71,192,40,210,31,212,35,196,44,161,75,137,105"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/iterator/end.html#" title=" " alt="" coords="231,55,299,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="146,106,193,89,216,81,218,86,195,94,147,111"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="146,106,193,89,215,81,217,86,195,94,147,111"/>
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="229,104,300,130"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="147,114,214,114,214,120,147,120"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="147,114,213,114,213,120,147,120"/>
 <area shape="rect" id="Node000006" href="$d5/d91/namespacesorting.html#a5f4bc75cca6dd8294af2d0e328006c68" title="Insertion sort function to sort the vector." alt="" coords="194,154,335,195"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="148,123,201,145,199,150,146,128"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="148,123,200,145,198,150,146,128"/>
 <area shape="rect" id="Node000009" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/is_sorted.html#" title=" " alt="" coords="215,219,315,244"/>
-<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="135,129,159,166,176,186,196,204,204,209,201,214,192,208,172,190,155,169,130,132"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="135,129,159,166,176,186,196,204,203,209,200,213,192,208,172,190,155,169,130,132"/>
 <area shape="rect" id="Node000007" href="$d5/d91/namespacesorting.html#a034d8b276518a902962e87d3158b64fd" title="Binary search function to find the most suitable pace for an element." alt="" coords="383,137,533,163"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="336,163,368,159,369,164,336,168"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="336,163,368,159,368,164,336,168"/>
 <area shape="rect" id="Node000008" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="400,187,516,212"/>
-<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="336,181,386,187,385,193,336,186"/>
-<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="426,138,419,129,423,119,436,113,458,111,483,114,495,121,492,126,481,119,458,116,438,118,427,123,425,128,430,135"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="336,181,385,187,385,193,336,186"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="426,138,419,129,423,119,436,113,458,111,482,113,494,120,491,125,480,118,458,116,438,118,427,123,425,128,430,135"/>
 </map>

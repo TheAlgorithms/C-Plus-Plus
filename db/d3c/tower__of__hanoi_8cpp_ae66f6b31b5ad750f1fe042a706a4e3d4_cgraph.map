@@ -1,8 +1,8 @@
 <map id="main" name="main">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,55,55"/>
 <area shape="rect" id="Node000002" href="$db/d3c/tower__of__hanoi_8cpp.html#ab037f72a5eac476535a6cfbbcb965417" title=" " alt="" coords="103,29,142,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,40,88,40,88,45,55,45"/>
-<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="106,30,103,21,104,12,111,5,122,3,135,6,141,13,137,16,132,10,122,8,114,10,109,14,108,20,111,28"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,40,87,40,87,45,55,45"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="106,30,103,21,104,12,111,5,122,3,134,6,140,12,136,16,132,10,122,8,114,10,109,14,108,20,111,28"/>
 <area shape="rect" id="Node000003" href="$db/d3c/tower__of__hanoi_8cpp.html#af4cfc41e546f1f8d25f01e0804e8b61d" title=" " alt="" coords="190,29,236,55"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="142,40,175,40,175,45,142,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="142,40,174,40,174,45,142,45"/>
 </map>

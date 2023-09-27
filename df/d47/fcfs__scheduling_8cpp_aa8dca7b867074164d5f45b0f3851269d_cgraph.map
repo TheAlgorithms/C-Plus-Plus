@@ -1,21 +1,13 @@
 <map id="test" name="test">
-<area shape="rect" id="Node000001" title="Self&#45;test implementations." alt="" coords="5,221,49,247"/>
-<area shape="rect" id="Node000002" href="$dd/dca/class_f_c_f_s.html#a8fbfe4d85f7576b4a7aade07d29fbd69" title="Adds the process to the ready queue if it isn&#39;t already there." alt="" coords="111,128,244,154"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="47,219,141,160,144,164,50,223"/>
-<area shape="rect" id="Node000007" href="$dd/dca/class_f_c_f_s.html#aa25dbe30ba9930b5a7c1a6d11758bd91" title="Algorithm for scheduling CPU processes according to the First Come First Serve(FCFS) scheduling algor..." alt="" coords="97,287,258,312"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="50,241,134,278,132,283,48,246"/>
+<area shape="rect" id="Node000001" title="Self&#45;test implementations." alt="" coords="5,88,49,114"/>
+<area shape="rect" id="Node000002" href="$dd/dca/class_f_c_f_s.html#a8fbfe4d85f7576b4a7aade07d29fbd69" title="Adds the process to the ready queue if it isn&#39;t already there." alt="" coords="111,63,244,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="48,95,95,87,96,92,49,100"/>
+<area shape="rect" id="Node000006" href="$dd/dca/class_f_c_f_s.html#aa25dbe30ba9930b5a7c1a6d11758bd91" title="Algorithm for scheduling CPU processes according to the First Come First Serve(FCFS) scheduling algor..." alt="" coords="97,112,258,138"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="49,102,82,107,81,112,48,107"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_set/end.html#" title=" " alt="" coords="306,5,464,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="191,125,239,84,305,41,320,34,322,39,307,46,243,89,195,129"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="226,59,321,33,322,38,227,65"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_set/find.html#" title=" " alt="" coords="321,55,450,96"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="220,125,305,98,307,103,221,130"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="244,73,305,73,305,78,244,78"/>
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_set/insert.html#" title=" " alt="" coords="321,121,450,161"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="244,138,306,138,306,144,244,144"/>
-<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/priority_queue/push.html#" title=" " alt="" coords="321,186,449,227"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="221,152,308,179,306,184,220,157"/>
-<area shape="rect" id="Node000008" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/priority_queue/empty.html#" title=" " alt="" coords="321,251,449,292"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="258,286,306,279,307,285,259,291"/>
-<area shape="rect" id="Node000009" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/priority_queue/pop.html#" title=" " alt="" coords="307,316,464,342"/>
-<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="259,308,292,313,291,318,258,314"/>
-<area shape="rect" id="Node000010" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/priority_queue/top.html#" title=" " alt="" coords="308,365,462,391"/>
-<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="209,311,307,352,324,358,323,363,305,357,207,315"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="224,86,259,97,308,113,306,118,257,102,223,91"/>
 </map>

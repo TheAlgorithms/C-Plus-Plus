@@ -1,45 +1,45 @@
 <map id="main" name="main">
 <area shape="rect" id="Node000001" title="Main function." alt="" coords="5,275,55,301"/>
 <area shape="rect" id="Node000002" href="$de/d72/geometric__dist_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,275,146,301"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,285,88,285,88,291,55,291"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,285,87,285,87,291,55,291"/>
 <area shape="rect" id="Node000003" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a08328dc7d62188427111f176b56a105a" title="The cumulative distribution function." alt="" coords="426,5,611,61"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="125,274,147,156,167,91,179,66,192,50,216,34,243,21,299,7,357,4,411,8,411,13,357,9,300,13,244,26,219,38,196,54,183,69,172,93,152,157,130,275"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="125,274,147,156,167,91,179,66,192,50,216,34,243,21,299,7,356,4,411,8,411,13,356,9,299,13,244,26,219,38,196,54,183,69,172,93,152,157,130,275"/>
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="483,275,554,301"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="146,285,468,285,468,291,146,291"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="146,285,467,285,467,291,146,291"/>
 <area shape="rect" id="Node000006" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a41051365f8ac7700f2ed5880a6760413" title="The expected value of a geometrically distributed random variable X." alt="" coords="426,325,611,381"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="147,289,412,333,411,338,146,294"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="147,289,411,333,410,338,146,294"/>
 <area shape="rect" id="Node000007" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aaf762e88c66918d7afda4234f28a7ddf" title="The inverse cumulative distribution function." alt="" coords="659,259,870,314"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="146,278,194,267,310,252,402,248,494,251,611,260,644,263,644,269,610,265,493,256,402,253,311,257,194,272,147,283"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="146,278,194,267,310,252,402,248,494,251,611,260,644,263,643,268,610,265,493,256,402,253,311,257,194,272,147,283"/>
 <area shape="rect" id="Node000009" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aee973db9f0435e0cb4cc70f8eb3447a1" title="The probability density function." alt="" coords="194,144,378,200"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="134,273,159,245,192,216,209,205,212,210,196,221,163,249,138,277"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="134,273,159,245,192,216,209,206,211,210,196,221,163,249,138,277"/>
 <area shape="rect" id="Node000010" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a4620163a196709484225774d87de6d69" title="This function computes the probability to have success in a given range of tries." alt="" coords="194,64,378,120"/>
-<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="125,274,145,207,165,166,192,130,195,127,199,131,196,134,169,169,150,209,131,275"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="125,274,145,207,165,166,192,130,195,128,198,131,196,134,169,169,150,209,131,275"/>
 <area shape="rect" id="Node000012" href="$de/d72/geometric__dist_8cpp.html#a70fd1cc5c3a2813f28683dc75dcd65b6" title="Tests the sampling method of the geometric distribution." alt="" coords="240,395,332,421"/>
-<area shape="poly" id="edge13_Node000002_Node000012" title=" " alt="" coords="137,299,161,330,196,363,236,386,233,391,192,367,157,334,132,302"/>
+<area shape="poly" id="edge13_Node000002_Node000012" title=" " alt="" coords="137,299,161,330,196,363,235,386,232,391,192,367,157,334,132,302"/>
 <area shape="rect" id="Node000016" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aea8b0d649f0dc9a6f8baf3341a0b4960" title="The variance of a geometrically distributed random variable X." alt="" coords="426,536,611,592"/>
 <area shape="poly" id="edge25_Node000002_Node000016" title=" " alt="" coords="131,300,151,362,170,399,196,431,232,455,286,481,413,528,411,533,284,486,229,460,192,435,166,402,146,364,126,302"/>
 <area shape="rect" id="Node000017" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a0a10c512e13dd3a052e1c6d7f4d6f0f2" title="The standard deviation of a geometrically distributed random variable X." alt="" coords="194,536,378,592"/>
-<area shape="poly" id="edge22_Node000002_Node000017" title=" " alt="" coords="130,301,135,337,147,388,167,444,196,497,224,525,220,529,192,500,162,447,142,390,130,338,124,301"/>
+<area shape="poly" id="edge22_Node000002_Node000017" title=" " alt="" coords="130,301,135,337,147,388,167,444,196,497,223,525,220,528,192,500,162,447,142,390,130,338,124,301"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="729,79,800,105"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="612,53,715,77,714,83,610,58"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="612,53,715,77,713,83,610,58"/>
 <area shape="rect" id="Node000008" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/log.html#" title=" " alt="" coords="918,274,982,299"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="871,284,903,284,903,289,871,289"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="871,284,902,284,902,289,871,289"/>
 <area shape="poly" id="edge9_Node000009_Node000004" title=" " alt="" coords="379,157,610,121,713,100,714,106,611,126,379,162"/>
-<area shape="poly" id="edge11_Node000010_Node000003" title=" " alt="" coords="378,66,411,58,412,63,380,71"/>
+<area shape="poly" id="edge11_Node000010_Node000003" title=" " alt="" coords="378,66,410,58,412,63,380,71"/>
 <area shape="rect" id="Node000011" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/numeric_limits/max.html#" title=" " alt="" coords="436,86,601,111"/>
-<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="379,92,421,93,421,98,379,97"/>
-<area shape="poly" id="edge18_Node000012_Node000005" title=" " alt="" coords="302,392,354,353,425,311,468,296,469,301,427,316,357,357,305,397"/>
-<area shape="poly" id="edge19_Node000012_Node000006" title=" " alt="" coords="332,394,411,376,412,381,333,400"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="379,92,420,93,420,98,379,97"/>
+<area shape="poly" id="edge18_Node000012_Node000005" title=" " alt="" coords="302,392,354,353,425,311,467,296,469,301,427,316,357,357,305,397"/>
+<area shape="poly" id="edge19_Node000012_Node000006" title=" " alt="" coords="332,394,410,376,412,381,333,400"/>
 <area shape="rect" id="Node000013" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a8aae1cebcf42ed2332f1c7217c401aa3" title="Generates a (discrete) sample according to the geometrical distribution." alt="" coords="426,405,611,461"/>
-<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="333,410,412,419,411,424,333,415"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="333,410,411,419,410,424,333,415"/>
 <area shape="rect" id="Node000015" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/resize.html#" title=" " alt="" coords="455,486,582,511"/>
-<area shape="poly" id="edge20_Node000012_Node000015" title=" " alt="" coords="314,419,365,444,427,471,450,478,449,483,425,476,363,449,311,424"/>
-<area shape="poly" id="edge21_Node000012_Node000016" title=" " alt="" coords="318,419,349,436,380,459,395,476,404,492,413,507,428,522,433,526,430,530,425,526,409,510,400,494,391,479,377,463,346,441,315,423"/>
-<area shape="poly" id="edge17_Node000013_Node000007" title=" " alt="" coords="587,403,609,391,664,357,714,321,717,326,667,361,612,395,589,407"/>
+<area shape="poly" id="edge20_Node000012_Node000015" title=" " alt="" coords="314,419,365,444,427,471,450,478,448,483,425,476,363,449,311,424"/>
+<area shape="poly" id="edge21_Node000012_Node000016" title=" " alt="" coords="318,419,349,436,380,459,395,476,404,492,413,507,428,522,433,525,429,529,425,526,409,510,400,494,391,479,377,463,346,441,315,423"/>
+<area shape="poly" id="edge17_Node000013_Node000007" title=" " alt="" coords="587,403,609,391,664,357,713,322,716,326,667,361,612,395,589,407"/>
 <area shape="rect" id="Node000014" href="$de/d72/geometric__dist_8cpp.html#a82964ca6180507deb5fafc71050012ba" title="Returns a random number between [0,1]." alt="" coords="686,413,843,454"/>
-<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="611,431,671,431,671,436,611,436"/>
-<area shape="poly" id="edge16_Node000014_Node000014" title=" " alt="" coords="729,413,727,403,733,394,745,388,764,386,785,389,797,395,795,400,784,394,764,391,747,393,736,398,732,404,734,412"/>
-<area shape="poly" id="edge24_Node000017_Node000016" title=" " alt="" coords="379,561,411,561,411,567,379,567"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="611,431,670,431,670,436,611,436"/>
+<area shape="poly" id="edge16_Node000014_Node000014" title=" " alt="" coords="729,413,727,403,733,394,745,388,764,386,785,389,797,395,794,400,783,394,764,391,747,393,736,398,732,404,734,412"/>
+<area shape="poly" id="edge24_Node000017_Node000016" title=" " alt="" coords="379,561,410,561,410,567,379,567"/>
 <area shape="rect" id="Node000018" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="484,616,553,642"/>
-<area shape="poly" id="edge23_Node000017_Node000018" title=" " alt="" coords="380,588,427,601,470,613,469,619,426,606,378,593"/>
+<area shape="poly" id="edge23_Node000017_Node000018" title=" " alt="" coords="380,588,427,601,470,613,468,618,426,606,378,593"/>
 </map>

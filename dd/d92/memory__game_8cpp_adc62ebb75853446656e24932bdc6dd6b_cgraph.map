@@ -1,14 +1,14 @@
 <map id="games::memory_game::reset_data" name="games::memory_game::reset_data">
 <area shape="rect" id="Node000001" title="Utility function that resets the data if the user enters an invalid value." alt="" coords="5,75,160,115"/>
-<area shape="poly" id="edge8_Node000001_Node000001" title=" " alt="" coords="44,75,42,65,48,56,62,50,83,48,105,51,118,57,116,62,104,56,82,53,63,55,52,60,47,66,49,73"/>
+<area shape="poly" id="edge8_Node000001_Node000001" title=" " alt="" coords="44,75,42,65,48,56,62,50,83,48,105,50,118,57,115,61,103,56,82,53,63,55,52,60,47,66,49,73"/>
 <area shape="rect" id="Node000002" href="$dd/d92/memory__game_8cpp.html#a5714d97649c0edd57b4fb449799676a3" title="Function that asks the user for their input in the table they previously chose." alt="" coords="208,75,362,115"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,101,193,101,193,107,160,106"/>
-<area shape="poly" id="edge7_Node000002_Node000001" title=" " alt="" coords="208,89,174,89,174,83,208,84"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="246,75,244,65,251,56,264,50,285,48,307,51,320,57,318,62,306,56,285,53,266,55,254,60,250,66,252,73"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,101,192,101,192,107,160,106"/>
+<area shape="poly" id="edge7_Node000002_Node000001" title=" " alt="" coords="208,89,175,89,175,83,208,84"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="246,75,244,65,251,56,264,50,285,48,307,50,320,57,318,61,305,56,285,53,266,55,254,60,250,66,252,73"/>
 <area shape="rect" id="Node000003" href="$dd/d92/memory__game_8cpp.html#a33167bb9cce6d527b478b4f6ae8c3f59" title="Utility function to verify if the given input is a number or not. This is very useful to prevent the ..." alt="" coords="410,29,564,70"/>
-<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="362,75,395,67,396,73,363,80"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="362,75,395,68,396,73,363,80"/>
 <area shape="rect" id="Node000004" href="$dd/d92/memory__game_8cpp.html#ac589ef65abb0a6b9a7116ee0f9fd5280" title="Utility function to print the table." alt="" coords="410,119,564,159"/>
-<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="363,109,396,117,395,122,362,114"/>
-<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="449,29,447,19,453,10,467,5,487,3,510,5,523,12,520,17,508,10,487,8,468,10,456,15,452,20,454,28"/>
-<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="449,119,447,109,453,100,467,94,487,92,510,95,523,101,520,106,508,100,487,97,468,99,456,104,452,110,454,117"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="363,109,396,116,395,122,362,114"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="449,29,447,19,453,10,467,5,487,3,509,5,522,11,520,16,508,10,487,8,468,10,456,15,452,20,454,28"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="449,119,447,109,453,100,467,94,487,92,509,94,522,101,520,105,508,100,487,97,468,99,456,104,452,110,454,117"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="TH" name="TH">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,45,55"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="8,30,5,21,7,12,14,5,25,3,37,6,43,13,39,16,34,10,25,8,16,10,12,14,11,20,13,28"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="8,30,5,21,7,12,14,5,25,3,37,6,43,12,39,16,34,10,25,8,16,10,12,14,11,20,13,28"/>
 <area shape="rect" id="Node000002" href="$db/d3c/tower__of__hanoi_8cpp.html#af4cfc41e546f1f8d25f01e0804e8b61d" title=" " alt="" coords="93,29,139,55"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="45,40,77,40,77,45,45,45"/>
 </map>

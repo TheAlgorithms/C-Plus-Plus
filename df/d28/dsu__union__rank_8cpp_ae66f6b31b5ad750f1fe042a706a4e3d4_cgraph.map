@@ -1,24 +1,24 @@
 <map id="main" name="main">
 <area shape="rect" id="Node000001" title="Main function." alt="" coords="5,56,55,82"/>
 <area shape="rect" id="Node000002" href="$df/d28/dsu__union__rank_8cpp.html#ae7880ce913f3058a35ff106d5be9e243" title="Self&#45;implementations, 1st test." alt="" coords="103,31,153,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,60,88,51,89,56,56,65"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,60,87,51,89,56,56,65"/>
 <area shape="rect" id="Node000009" href="$df/d28/dsu__union__rank_8cpp.html#a45d94ead4cf4e1ff9f87c38bc99f59ae" title="Self&#45;implementations, 2nd test." alt="" coords="103,80,153,106"/>
-<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="56,72,89,81,88,86,54,77"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="56,72,89,81,87,86,54,77"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/at.html#" title=" " alt="" coords="207,5,309,31"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="153,36,191,28,192,34,154,41"/>
 <area shape="rect" id="Node000004" href="$dd/d1f/classdsu.html#ab8ee27083a3c2e2df80755165a2ec280" title="Method to print all the parents of i, or the path from i to representative." alt="" coords="201,55,314,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="154,45,187,52,186,57,153,51"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="154,45,186,52,185,57,153,51"/>
 <area shape="rect" id="Node000005" href="$dd/d1f/classdsu.html#a81897528bdb53fd5e796d75d7dbc430f" title="Method that combines two disjoint sets to which i and j belongs to and make a single set having a com..." alt="" coords="207,104,308,130"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="148,54,202,91,210,95,208,100,200,95,145,59"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="148,54,202,91,210,95,208,99,200,95,145,59"/>
 <area shape="rect" id="Node000006" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="505,79,596,104"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="309,110,489,94,490,99,309,115"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="309,110,489,94,489,99,309,115"/>
 <area shape="rect" id="Node000007" href="$dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303" title="A utility function which check whether i and j belongs to same set or not." alt="" coords="362,53,457,79"/>
-<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="298,101,354,82,356,87,299,106"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="298,101,354,82,355,87,299,106"/>
 <area shape="rect" id="Node000008" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="370,155,449,180"/>
-<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="299,128,357,147,356,153,298,133"/>
-<area shape="poly" id="edge6_Node000006_Node000006" title=" " alt="" coords="526,79,521,70,524,61,534,54,550,52,569,55,578,62,574,66,566,60,550,57,536,59,528,64,527,70,531,77"/>
-<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="458,72,491,78,490,83,457,77"/>
-<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="144,78,200,40,208,35,210,40,202,44,147,82"/>
-<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="153,85,186,79,187,84,154,91"/>
-<area shape="poly" id="edge13_Node000009_Node000005" title=" " alt="" coords="154,95,193,102,192,107,153,100"/>
+<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="299,128,356,147,355,152,298,133"/>
+<area shape="poly" id="edge6_Node000006_Node000006" title=" " alt="" coords="526,79,521,70,524,61,534,54,550,52,568,55,577,61,574,66,566,60,550,57,536,59,528,64,527,70,531,77"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="458,72,490,78,489,83,457,77"/>
+<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="144,78,200,40,208,36,210,40,202,44,147,82"/>
+<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="153,85,185,79,186,84,154,91"/>
+<area shape="poly" id="edge13_Node000009_Node000005" title=" " alt="" coords="154,95,192,102,191,107,153,100"/>
 </map>

@@ -1,9 +1,9 @@
 <map id="probability::windowed_median::WindowedMedian::eraseFromSorted" name="probability::windowed_median::WindowedMedian::eraseFromSorted">
 <area shape="rect" id="Node000001" title="Erases a value from a sorted multi&#45;value BST." alt="" coords="5,40,187,95"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/multiset/erase.html#" title=" " alt="" coords="235,5,368,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,43,230,32,232,38,187,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,43,229,33,231,38,187,48"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/multiset/find.html#" title=" " alt="" coords="240,55,363,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="187,65,225,65,225,70,187,70"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="187,65,224,65,224,70,187,70"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/multiset/size.html#" title=" " alt="" coords="239,104,364,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="187,87,232,97,230,103,186,92"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="187,87,231,97,229,102,186,92"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="others/buzz_number.cpp" name="others/buzz_number.cpp">
 <area shape="rect" id="Node000001" title="A buzz number is a number that is either divisible by 7 or has last digit as 7." alt="" coords="5,5,169,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="51,79,123,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,31,90,64,84,64,84,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,31,90,63,84,63,84,31"/>
 </map>

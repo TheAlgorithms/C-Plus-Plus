@@ -1,7 +1,7 @@
 <map id="main" name="main">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,31,55,56"/>
 <area shape="rect" id="Node000002" href="$df/dce/namespacegraph.html#a9125ceb66bfbec3093bba64c2c1e99e2" title="Function that add edge between two nodes or vertices of graph." alt="" coords="103,5,215,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,36,88,29,89,35,56,41"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,36,87,30,88,35,56,41"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="123,55,195,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,45,109,56,108,61,55,51"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,45,109,55,108,61,55,51"/>
 </map>

@@ -1,17 +1,17 @@
 <map id="midpoint_euler" name="midpoint_euler">
 <area shape="rect" id="Node000001" title="Compute approximation using the midpoint&#45;Euler method in the given limits." alt="" coords="5,129,111,155"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/clock.html#" title=" " alt="" coords="195,5,274,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,127,104,85,129,61,157,40,180,29,182,34,160,44,132,65,107,88,71,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,127,104,85,129,61,157,40,179,29,182,34,160,44,132,65,107,88,71,131"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " alt="" coords="166,55,303,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="82,126,158,89,173,83,175,88,160,94,84,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="82,126,158,89,172,83,174,88,160,94,84,131"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/is_open.html#" title=" " alt="" coords="159,104,310,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="111,132,143,127,144,132,111,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="111,132,143,127,143,133,111,137"/>
 <area shape="rect" id="Node000005" href="$d6/d60/group__ode.html#ga8c319db420c3d97a83e9dcca803b6812" title="Compute next step approximation using the midpoint&#45;Euler method." alt="" coords="166,153,303,179"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="111,147,151,152,151,157,111,152"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="111,147,151,152,150,157,111,152"/>
 <area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/open.html#" title=" " alt="" coords="167,203,302,228"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="85,153,160,189,175,195,173,200,158,194,83,158"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="85,153,160,189,174,195,173,200,158,194,83,158"/>
 <area shape="rect" id="Node000008" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/c/perror.html#" title=" " alt="" coords="194,252,275,278"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="71,154,108,195,132,218,160,239,181,249,179,254,157,243,129,223,104,199,67,157"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="71,154,108,195,132,218,160,239,181,249,179,253,157,243,129,223,104,199,67,157"/>
 <area shape="rect" id="Node000006" href="$d6/dd3/ode__midpoint__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe" title="Problem statement for a system with first&#45;order differential equations. Updates the system differenti..." alt="" coords="358,153,425,179"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="304,164,343,164,343,169,304,169"/>
 </map>

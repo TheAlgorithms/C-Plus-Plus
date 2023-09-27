@@ -1,9 +1,9 @@
 <map id="tests" name="tests">
 <area shape="rect" id="Node000001" title="Self&#45;test implementations." alt="" coords="5,31,56,56"/>
 <area shape="rect" id="Node000002" href="$dd/d47/namespacemath.html#a8e6eede206201db0d1dbb618fa969bec" title="Function to check whether the pair is amicable or not." alt="" coords="104,5,239,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,36,89,30,90,36,56,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,36,88,30,89,36,56,42"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="136,55,207,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="56,45,122,56,121,62,55,50"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="56,45,121,56,120,62,55,50"/>
 <area shape="rect" id="Node000003" href="$dd/d47/namespacemath.html#af05567415a9ea36c254b54e3d5a2152a" title="Function to calculate the sum of all the proper divisor of an integer." alt="" coords="287,5,433,31"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="239,16,272,16,272,21,239,21"/>
 </map>

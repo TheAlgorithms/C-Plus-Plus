@@ -1,20 +1,20 @@
 <map id="operator&lt;&lt;" name="operator&lt;&lt;">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,136,90,162"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="305,5,376,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,134,86,91,109,68,136,49,175,33,215,23,289,15,290,20,216,28,176,38,139,54,113,72,90,95,59,137"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,134,86,91,109,68,136,49,174,33,214,23,288,15,289,20,215,28,176,38,139,54,113,72,90,95,59,137"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/left.html#" title=" " alt="" coords="308,92,373,118"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="57,134,90,101,112,84,137,72,178,63,221,65,262,73,297,84,295,89,260,78,220,70,179,69,139,77,115,89,93,105,61,138"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="57,134,90,101,112,84,137,72,178,63,220,65,261,72,295,83,294,88,259,78,220,70,178,69,139,77,115,89,93,105,61,138"/>
 <area shape="rect" id="Node000004" href="$dc/d38/ordinary__least__squares__regressor_8cpp.html#a7075a0fccad9b2d79be0275bfe8948d4" title=" " alt="" coords="153,111,238,136"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="90,139,138,131,139,136,91,144"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="90,139,137,131,138,136,91,144"/>
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/setfill.html#" title=" " alt="" coords="301,152,379,178"/>
-<area shape="poly" id="edge9_Node000001_Node000005" title=" " alt="" coords="90,148,286,159,286,165,90,154"/>
+<area shape="poly" id="edge9_Node000001_Node000005" title=" " alt="" coords="90,148,286,159,285,165,90,154"/>
 <area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/setw.html#" title=" " alt="" coords="303,201,378,227"/>
-<area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="90,155,289,200,287,205,89,161"/>
+<area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="90,155,288,200,287,205,89,161"/>
 <area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="138,263,253,288"/>
-<area shape="poly" id="edge11_Node000001_Node000007" title=" " alt="" coords="61,161,94,199,139,241,156,253,153,257,136,246,90,203,57,164"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="213,108,308,38,311,42,216,112"/>
-<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="237,115,292,108,293,114,238,121"/>
-<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="170,112,166,102,168,93,179,86,195,84,214,87,223,94,220,98,212,92,195,89,180,91,173,96,171,102,175,109"/>
-<area shape="poly" id="edge7_Node000004_Node000005" title=" " alt="" coords="239,133,288,147,286,152,237,138"/>
+<area shape="poly" id="edge11_Node000001_Node000007" title=" " alt="" coords="61,161,94,199,139,241,155,252,152,257,136,246,90,203,57,164"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="213,108,307,38,311,42,216,112"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="237,115,292,108,292,114,238,121"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="170,112,166,102,168,93,179,86,195,84,213,87,223,93,219,98,211,92,195,89,180,91,173,96,171,102,175,109"/>
+<area shape="poly" id="edge7_Node000004_Node000005" title=" " alt="" coords="239,133,287,147,286,152,237,138"/>
 <area shape="poly" id="edge8_Node000004_Node000006" title=" " alt="" coords="219,135,302,188,307,191,304,195,300,192,216,139"/>
 </map>

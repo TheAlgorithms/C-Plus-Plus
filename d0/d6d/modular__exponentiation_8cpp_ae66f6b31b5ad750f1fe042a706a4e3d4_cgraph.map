@@ -1,9 +1,9 @@
 <map id="main" name="main">
 <area shape="rect" id="Node000001" title="Main function." alt="" coords="5,31,55,56"/>
 <area shape="rect" id="Node000002" href="$d0/d6d/modular__exponentiation_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title=" " alt="" coords="103,31,146,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,41,88,41,88,46,55,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,41,87,41,87,46,55,46"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="205,5,276,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,36,190,26,191,32,147,41"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,36,189,27,191,32,147,41"/>
 <area shape="rect" id="Node000004" href="$dd/d47/namespacemath.html#afcd07701d73ed65cd616bcba02737f3d" title="This function calculates a raised to exponent b under modulo c using modular exponentiation." alt="" coords="194,55,287,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="147,45,180,52,179,57,146,51"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="147,45,179,52,178,57,146,51"/>
 </map>

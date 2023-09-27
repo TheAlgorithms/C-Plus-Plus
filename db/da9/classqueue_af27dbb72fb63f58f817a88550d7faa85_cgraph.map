@@ -1,7 +1,7 @@
 <map id="queue::deQueue" name="queue::deQueue">
 <area shape="rect" id="Node000001" title="removes the first element from the queue" alt="" coords="5,5,122,31"/>
 <area shape="rect" id="Node000002" href="$db/da9/classqueue.html#ac08ebdd38cb4ad74fc0a3f51888da604" title="throws an exception if queue is empty" alt="" coords="170,5,332,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,16,155,16,155,21,122,21"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,16,154,16,154,21,122,21"/>
 <area shape="rect" id="Node000003" href="$db/da9/classqueue.html#a4bc52ad6ed6b0cc33ad05f87f05f8bec" title="checks if the queue has no elements" alt="" coords="380,5,530,31"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="332,16,365,16,365,21,332,21"/>
 </map>

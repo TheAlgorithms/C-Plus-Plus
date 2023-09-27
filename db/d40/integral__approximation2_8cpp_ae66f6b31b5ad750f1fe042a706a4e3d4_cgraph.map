@@ -1,13 +1,13 @@
 <map id="main" name="main">
 <area shape="rect" id="Node000001" title="Main function." alt="" coords="5,80,55,106"/>
 <area shape="rect" id="Node000002" href="$db/d40/integral__approximation2_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,80,146,106"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,90,88,90,88,96,55,96"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,90,87,90,87,96,55,96"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="194,5,265,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="142,77,192,40,196,38,199,42,196,44,145,82"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="142,77,192,40,195,38,198,42,196,44,145,82"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/exp.html#" title=" " alt="" coords="196,55,264,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="146,85,180,77,182,82,147,90"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="146,85,180,77,181,82,147,90"/>
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sin.html#" title=" " alt="" coords="198,104,262,130"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="147,95,184,104,182,109,146,100"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="147,95,183,103,182,109,146,100"/>
 <area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="195,153,264,179"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="146,104,196,140,199,142,196,147,192,144,143,108"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="146,104,196,140,198,142,195,146,192,144,143,108"/>
 </map>

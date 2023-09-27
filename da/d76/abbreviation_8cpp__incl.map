@@ -1,11 +1,11 @@
 <map id="dynamic_programming/abbreviation.cpp" name="dynamic_programming/abbreviation.cpp">
 <area shape="rect" id="Node000001" title="Implementation of Abbrievation" alt="" coords="96,5,248,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,70,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,49,72,88,69,84,137,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,49,73,88,70,83,137,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="94,94,165,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,48,145,82,141,79,159,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,48,146,81,141,79,159,45"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="190,94,243,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="185,45,205,79,200,82,181,48"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="185,45,204,79,200,82,181,48"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="268,94,325,120"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="204,44,266,83,263,88,201,49"/>
 </map>

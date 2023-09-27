@@ -1,12 +1,12 @@
 <map id="FCFS&lt; S, T, E &gt;" name="FCFS&lt; S, T, E &gt;">
-<area shape="rect" id="Node000001" title="Class which implements the FCFS scheduling algorithm." alt="" coords="576,146,696,171"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/priority_queue.html" title=" " alt="" coords="278,5,472,106"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="487,97,602,142,600,147,485,102"/>
+<area shape="rect" id="Node000001" title="Class which implements the FCFS scheduling algorithm." alt="" coords="606,146,726,171"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/priority_queue.html" title=" " alt="" coords="278,5,502,106"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="517,100,630,142,628,147,515,105"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/tuple.html" title=" " alt="" coords="5,87,173,128"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="187,87,277,71,278,76,188,93"/>
-<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="290,131,460,186"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="188,122,290,141,289,146,187,128"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="474,156,575,156,575,161,474,161"/>
-<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_set.html" title=" " alt="" coords="294,211,456,237"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="443,204,581,169,582,174,444,209"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="188,88,277,72,278,78,189,93"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="305,131,475,186"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="188,122,305,141,304,147,187,127"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="490,156,605,156,605,161,490,161"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_set.html" title=" " alt="" coords="309,211,471,237"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="465,204,501,196,610,169,612,174,503,201,466,209"/>
 </map>

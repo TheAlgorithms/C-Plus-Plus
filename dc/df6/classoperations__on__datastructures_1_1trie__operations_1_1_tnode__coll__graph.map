@@ -1,6 +1,6 @@
 <map id="operations_on_datastructures::trie_operations::Tnode" name="operations_on_datastructures::trie_operations::Tnode">
 <area shape="rect" id="Node000001" title="Class defining the structure of trie node and containing the methods to perform operations on them." alt="" coords="5,5,198,46"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="22,109,181,165"/>
-<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="63,58,56,71,56,84,71,107,67,110,51,86,50,70,58,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,95,114,70,107,47,112,46,119,70,118,95"/>
+<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="62,58,56,71,56,84,71,107,67,110,51,86,50,70,58,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,94,114,70,107,47,112,46,119,70,118,94"/>
 </map>

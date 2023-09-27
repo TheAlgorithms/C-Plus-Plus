@@ -1,13 +1,13 @@
 <map id="operations_on_datastructures::reverse_binary_tree::BinaryTree::print" name="operations_on_datastructures::reverse_binary_tree::BinaryTree::print">
 <area shape="rect" id="Node000001" title="Prints all of the elements in the tree to stdout level&#45;by&#45;level, using the get_level_order() function..." alt="" coords="5,73,253,113"/>
 <area shape="rect" id="Node000002" href="$de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#a2e683b271d8d5cd63e0d09cf8aaa325c" title="Level order traversal of a tree consists of visiting its elements, top to bottom, left to right...." alt="" coords="301,65,515,121"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="253,90,286,90,286,96,253,96"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="253,90,285,90,285,96,253,96"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/empty.html#" title=" " alt="" coords="563,5,689,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="490,62,572,34,573,39,492,67"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="490,62,571,34,573,39,492,67"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/front.html#" title=" " alt="" coords="568,55,684,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="515,78,553,73,553,79,515,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="515,78,552,73,553,79,515,83"/>
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/pop.html#" title=" " alt="" coords="571,104,682,130"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="515,102,556,106,555,112,515,107"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="515,102,555,106,555,112,515,107"/>
 <area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/push.html#" title=" " alt="" coords="567,153,685,179"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="493,119,573,146,571,151,492,124"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="493,119,572,145,570,150,492,124"/>
 </map>

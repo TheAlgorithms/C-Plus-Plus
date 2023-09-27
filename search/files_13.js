@@ -13,7 +13,7 @@ var searchData=
   ['skip_5flist_2ecpp_10',['skip_list.cpp',['../d0/d5a/skip__list_8cpp.html',1,'']]],
   ['smallest_5fcircle_2ecpp_11',['smallest_circle.cpp',['../d0/d01/smallest__circle_8cpp.html',1,'']]],
   ['sparse_5fmatrix_2ecpp_12',['sparse_matrix.cpp',['../d3/d19/sparse__matrix_8cpp.html',1,'']]],
-  ['sparse_5ftable_2ecpp_13',['sparse_table.cpp',['../d6/d42/data__structures_2sparse__table_8cpp.html',1,'(Global Namespace)'],['../d4/d96/range__queries_2sparse__table_8cpp.html',1,'(Global Namespace)']]],
+  ['sparse_5ftable_2ecpp_13',['sparse_table.cpp',['../d4/d96/range__queries_2sparse__table_8cpp.html',1,'(Global Namespace)'],['../d6/d42/data__structures_2sparse__table_8cpp.html',1,'(Global Namespace)']]],
   ['spiral_5fprint_2ecpp_14',['spiral_print.cpp',['../db/d07/spiral__print_8cpp.html',1,'']]],
   ['spirograph_2ecpp_15',['spirograph.cpp',['../da/d77/spirograph_8cpp.html',1,'']]],
   ['sqrt_5fdouble_2ecpp_16',['sqrt_double.cpp',['../da/d24/sqrt__double_8cpp.html',1,'']]],

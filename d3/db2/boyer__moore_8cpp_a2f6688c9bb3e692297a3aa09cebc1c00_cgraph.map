@@ -1,8 +1,8 @@
 <map id="strings::boyer_moore::init_bad_char" name="strings::boyer_moore::init_bad_char">
 <area shape="rect" id="Node000001" title="A function that preprocess the bad char table." alt="" coords="5,29,149,70"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="42,29,40,19,46,10,58,5,77,3,98,5,109,12,107,16,96,10,77,8,60,10,49,14,46,20,47,28"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="42,29,40,19,46,10,58,5,77,3,97,5,109,11,106,16,95,10,77,8,60,10,49,14,46,20,47,28"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="199,12,321,37"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="149,37,184,32,184,37,149,42"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="149,37,183,32,184,37,149,42"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/resize.html#" title=" " alt="" coords="197,61,323,87"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="149,56,182,61,182,66,149,62"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="149,56,182,61,181,66,149,62"/>
 </map>

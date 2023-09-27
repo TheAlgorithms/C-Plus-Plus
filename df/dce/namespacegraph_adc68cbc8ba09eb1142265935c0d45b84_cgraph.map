@@ -1,15 +1,15 @@
 <map id="graph::dijkstra" name="graph::dijkstra">
 <area shape="rect" id="Node000001" title="Function runs the dijkstra algorithm for some source vertex and target vertex in the graph and return..." alt="" coords="5,149,109,175"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/priority_queue/empty.html#" title=" " alt="" coords="171,5,300,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,147,102,103,127,78,155,56,162,51,165,55,158,60,131,82,106,107,70,150"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,147,102,103,127,78,155,56,162,51,164,56,158,60,131,82,106,107,70,150"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair/make_pair.html#" title=" " alt="" coords="182,70,289,96"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="78,146,156,105,171,99,173,104,158,109,81,151"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="78,146,156,105,170,99,172,104,158,109,81,151"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/priority_queue/pop.html#" title=" " alt="" coords="157,120,314,145"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="109,151,142,145,143,150,110,156"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="109,151,141,145,142,150,110,156"/>
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/priority_queue/push.html#" title=" " alt="" coords="171,169,300,210"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="110,167,157,175,156,180,109,172"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="110,167,156,175,155,180,109,172"/>
 <area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="178,234,293,260"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="79,173,115,196,158,219,175,226,173,231,156,224,112,201,76,177"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="79,173,115,196,158,219,174,226,172,231,156,224,112,201,76,177"/>
 <area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/priority_queue/top.html#" title=" " alt="" coords="158,284,313,309"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="69,173,104,221,129,247,158,270,166,275,164,279,155,275,126,251,100,224,64,177"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="69,173,104,221,129,247,158,270,166,274,163,279,155,275,126,251,100,224,64,177"/>
 </map>

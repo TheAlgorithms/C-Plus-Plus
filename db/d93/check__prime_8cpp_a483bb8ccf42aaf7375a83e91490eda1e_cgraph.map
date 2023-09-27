@@ -1,7 +1,7 @@
 <map id="tests" name="tests">
 <area shape="rect" id="Node000001" title="Self&#45;test implementations." alt="" coords="5,31,56,56"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="122,5,193,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,36,106,26,108,31,56,41"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,36,106,26,107,31,56,41"/>
 <area shape="rect" id="Node000003" href="$dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444" title="Function to check if the given number is prime or not." alt="" coords="104,55,211,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,46,90,52,89,57,55,51"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,46,89,52,88,57,55,51"/>
 </map>

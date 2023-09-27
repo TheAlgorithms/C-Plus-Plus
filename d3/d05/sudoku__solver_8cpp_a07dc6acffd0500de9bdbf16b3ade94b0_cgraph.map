@@ -1,4 +1,4 @@
 <map id="backtracking::sudoku_solver::isPossible" name="backtracking::sudoku_solver::isPossible">
 <area shape="rect" id="Node000001" title="Check if it&#39;s possible to place a number (no parameter)" alt="" coords="5,29,151,70"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="50,29,48,20,53,11,63,5,78,3,95,5,104,12,101,16,93,10,78,8,65,10,57,14,54,20,55,28"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="50,29,48,20,53,11,63,5,78,3,94,5,104,12,101,16,92,10,78,8,65,10,57,14,54,20,55,28"/>
 </map>

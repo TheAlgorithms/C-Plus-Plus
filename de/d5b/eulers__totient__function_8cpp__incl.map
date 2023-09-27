@@ -1,7 +1,7 @@
 <map id="math/eulers_totient_function.cpp" name="math/eulers_totient_function.cpp">
 <area shape="rect" id="Node000001" title="Implementation of Euler&#39;s Totient @description Euler Totient Function is also known as phi function." alt="" coords="20,5,153,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,77,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,48,57,82,53,80,73,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,48,58,82,53,79,73,45"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="101,94,165,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="100,45,121,80,116,82,96,48"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="100,45,120,79,116,82,96,48"/>
 </map>

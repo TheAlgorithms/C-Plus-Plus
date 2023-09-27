@@ -1,17 +1,17 @@
 <map id="games/memory_game.cpp" name="games/memory_game.cpp">
 <area shape="rect" id="Node000001" title="A simple Memory Game with 3 different sizes and multiple letters." alt="" coords="212,5,388,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,79,80,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="257,34,95,79,93,74,255,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="257,34,95,79,94,74,255,29"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="104,79,163,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="273,34,176,75,174,70,271,29"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="273,34,177,75,174,70,271,29"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="187,79,240,105"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="287,34,241,72,237,67,283,29"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="287,34,241,71,238,67,283,29"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="264,79,336,105"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="303,31,303,64,297,64,297,31"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="303,31,303,63,297,63,297,31"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="360,79,424,105"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="317,29,367,68,363,72,314,34"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="317,29,366,67,363,72,314,34"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="449,79,506,105"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="331,29,436,71,434,76,329,34"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="331,29,435,71,433,76,329,34"/>
 <area shape="rect" id="Node000008" title=" " alt="" coords="530,79,598,105"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="345,29,517,75,515,80,344,34"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="345,29,516,75,515,80,344,34"/>
 </map>

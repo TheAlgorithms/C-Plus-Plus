@@ -1,11 +1,11 @@
 <map id="others/vector_important_functions.cpp" name="others/vector_important_functions.cpp">
 <area shape="rect" id="Node000001" title="A C++ program to demonstrate working of std::sort(), std::reverse()" alt="" coords="107,5,266,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,80,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,49,79,89,76,84,149,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,49,79,88,77,84,149,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="104,94,176,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,48,157,82,152,80,173,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,48,157,82,153,79,173,45"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="200,94,267,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="200,45,221,80,216,82,196,48"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="200,45,220,79,216,82,196,48"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="291,94,349,120"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="221,44,288,84,286,88,218,49"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="221,44,288,83,285,88,218,49"/>
 </map>

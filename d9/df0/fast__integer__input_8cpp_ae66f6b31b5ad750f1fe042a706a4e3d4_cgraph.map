@@ -1,9 +1,9 @@
 <map id="main" name="main">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,31,55,56"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="103,5,174,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,35,88,27,89,32,56,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,35,87,27,88,33,56,40"/>
 <area shape="rect" id="Node000003" href="$d9/df0/fast__integer__input_8cpp.html#a4e097ac8509b717bdc8ab09ecd86ae82" title=" " alt="" coords="103,55,174,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,46,89,54,88,59,55,52"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,46,88,54,87,59,55,52"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/c/getchar.html#" title=" " alt="" coords="222,55,312,80"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="174,65,207,65,207,70,174,70"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="174,65,206,65,206,70,174,70"/>
 </map>

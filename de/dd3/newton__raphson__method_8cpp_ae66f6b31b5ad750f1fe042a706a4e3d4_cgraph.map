@@ -1,18 +1,18 @@
 <map id="main" name="main">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,129,55,155"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="107,5,178,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="36,128,62,86,101,40,103,38,107,42,105,44,66,89,41,130"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="36,128,62,86,101,40,102,39,106,43,105,44,66,89,41,130"/>
 <area shape="rect" id="Node000003" href="$de/dd3/newton__raphson__method_8cpp.html#a2003b5b2dcfff0769b957ab5c968b03d" title=" " alt="" coords="123,55,162,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="48,127,101,89,109,84,112,88,104,94,51,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="48,127,101,89,109,84,112,89,104,94,51,131"/>
 <area shape="rect" id="Node000005" href="$de/dd3/newton__raphson__method_8cpp.html#a3d3f7f41977394680af6ebbed96f3386" title=" " alt="" coords="112,104,173,130"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="55,134,97,124,98,129,56,139"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="55,134,96,124,97,130,56,139"/>
 <area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="106,153,179,179"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="56,145,92,153,91,158,55,150"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="56,145,91,153,90,158,55,150"/>
 <area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/srand.html#" title=" " alt="" coords="103,203,182,228"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="51,153,104,189,109,192,106,197,101,194,48,158"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="51,153,104,189,108,192,105,196,101,194,48,158"/>
 <area shape="rect" id="Node000008" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/time.html#" title=" " alt="" coords="106,252,179,278"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="41,154,67,194,105,239,107,241,103,245,101,243,62,198,36,157"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="41,154,67,194,105,239,106,240,102,244,101,243,62,198,36,157"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="230,80,301,106"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="163,69,216,80,215,85,161,74"/>
-<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="172,108,215,100,216,105,173,114"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="172,108,214,100,215,105,173,114"/>
 </map>

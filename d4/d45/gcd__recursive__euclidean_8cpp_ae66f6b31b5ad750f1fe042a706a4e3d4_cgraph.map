@@ -1,8 +1,8 @@
 <map id="main" name="main">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,43,55,68"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="103,5,174,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,45,88,33,89,38,56,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,45,87,33,89,38,56,50"/>
 <area shape="rect" id="Node000003" href="$d4/d45/gcd__recursive__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e" title=" " alt="" coords="117,79,160,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,61,104,77,102,83,54,66"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="119,79,115,70,118,61,125,54,138,52,152,55,160,62,156,66,150,60,138,57,128,59,122,64,121,70,124,77"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,61,103,77,101,82,54,66"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="119,79,115,70,118,61,125,54,138,52,152,55,159,62,156,65,150,59,138,57,128,59,122,64,121,70,124,77"/>
 </map>

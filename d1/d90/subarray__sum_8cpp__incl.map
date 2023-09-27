@@ -1,11 +1,11 @@
 <map id="backtracking/subarray_sum.cpp" name="backtracking/subarray_sum.cpp">
 <area shape="rect" id="Node000001" title="Subset&#45;sum (only continuous subsets) problem" alt="" coords="112,5,262,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,70,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,49,74,89,72,84,148,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,49,75,89,72,84,148,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="94,94,165,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="175,48,149,83,145,80,171,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="175,48,150,83,145,79,171,45"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="189,94,299,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="203,45,229,80,225,83,199,48"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="203,45,228,79,224,83,199,48"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="324,94,381,120"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="229,44,315,85,313,90,227,49"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="229,44,314,85,312,89,227,49"/>
 </map>

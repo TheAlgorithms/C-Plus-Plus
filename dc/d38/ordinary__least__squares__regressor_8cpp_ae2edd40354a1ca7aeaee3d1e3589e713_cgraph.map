@@ -1,7 +1,7 @@
 <map id="operator*" name="operator*">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,31,79,56"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="149,5,220,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,34,134,24,135,30,80,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,34,133,25,134,30,80,40"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="127,55,242,80"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="80,47,112,53,111,58,79,52"/>
 </map>

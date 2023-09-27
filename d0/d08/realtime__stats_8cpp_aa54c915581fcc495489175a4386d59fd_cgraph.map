@@ -1,26 +1,26 @@
 <map id="test_function" name="test_function">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,259,102,284"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="217,5,288,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,258,61,216,77,157,105,95,124,66,148,41,174,26,202,19,203,24,176,31,151,46,128,70,109,98,82,159,66,217,59,259"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,258,61,216,77,157,105,95,124,66,148,41,173,27,201,19,202,24,175,31,151,46,128,70,109,98,82,159,66,217,59,259"/>
 <area shape="rect" id="Node000003" href="$d7/d7c/classstatistics_1_1stats__computer1.html#a390697dcee210b91823ceff04b25081b" title=" " alt="" coords="163,55,342,96"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,257,68,227,86,186,113,144,148,107,155,102,158,106,151,111,117,147,91,189,73,229,61,259"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,257,68,227,86,186,113,144,148,107,154,102,158,106,151,111,117,147,91,189,73,229,61,259"/>
 <area shape="rect" id="Node000004" href="$d8/dab/classstatistics_1_1stats__computer2.html#a8290966ad468f2a8c266d008bc60720e" title=" " alt="" coords="163,121,342,161"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="62,256,97,215,121,192,148,172,159,166,162,170,151,176,125,196,101,219,66,260"/>
 <area shape="rect" id="Node000005" href="$d7/d7c/classstatistics_1_1stats__computer1.html#aa13bf7c38de112f71921a5525d71a2f2" title=" " alt="" coords="163,186,342,227"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="94,256,149,237,173,229,174,234,151,242,95,261"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="94,256,149,237,172,229,174,234,151,242,95,261"/>
 <area shape="rect" id="Node000006" href="$d8/dab/classstatistics_1_1stats__computer2.html#ade6de704deea24fdc88077b3d9a0d534" title=" " alt="" coords="163,251,342,292"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="102,269,148,269,148,274,102,274"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="102,269,147,269,147,274,102,274"/>
 <area shape="rect" id="Node000007" href="$d7/d7c/classstatistics_1_1stats__computer1.html#af57e942d49f4fd70f059f224b4ac07e1" title=" " alt="" coords="150,367,355,392"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="70,283,105,314,151,345,183,359,181,364,148,350,101,318,66,287"/>
 <area shape="rect" id="Node000009" href="$d7/d7c/classstatistics_1_1stats__computer1.html#a27f0a03e2fd2254f1c81fe668226bd92" title=" " alt="" coords="403,314,582,355"/>
-<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="89,282,150,301,273,320,388,329,388,334,272,325,149,306,87,287"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="89,282,150,301,273,320,387,329,387,334,272,325,149,306,87,287"/>
 <area shape="rect" id="Node000010" href="$d8/dab/classstatistics_1_1stats__computer2.html#acf2e84df4fc386bb3295016ef8fd156e" title=" " alt="" coords="150,416,355,442"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="63,284,94,342,120,375,151,403,158,407,156,412,148,407,116,379,90,345,58,286"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="63,284,94,342,120,375,151,403,158,407,155,411,148,407,116,379,90,345,58,286"/>
 <area shape="rect" id="Node000011" href="$d8/dab/classstatistics_1_1stats__computer2.html#af6198817084276113b3c064e87ce0555" title=" " alt="" coords="403,442,582,483"/>
-<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="60,284,68,320,85,367,112,415,130,435,151,452,179,466,208,477,270,488,332,489,390,483,391,488,332,494,269,493,206,482,176,471,148,456,126,439,107,418,80,369,63,321,54,285"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="60,284,68,320,85,367,112,415,130,435,151,452,178,466,208,477,269,488,331,489,389,483,390,488,332,494,269,493,206,482,176,471,148,456,126,439,107,418,80,369,63,321,54,285"/>
 <area shape="rect" id="Node000008" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="458,383,527,408"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="356,384,443,390,443,395,355,389"/>
-<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="324,363,388,351,389,356,325,369"/>
-<area shape="poly" id="edge10_Node000010_Node000008" title=" " alt="" coords="349,413,443,400,444,405,350,418"/>
-<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="350,440,389,445,388,450,349,445"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="356,384,443,390,442,395,355,389"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="324,363,387,351,388,357,325,369"/>
+<area shape="poly" id="edge10_Node000010_Node000008" title=" " alt="" coords="349,413,443,400,443,405,350,418"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="350,440,388,445,387,450,349,445"/>
 </map>

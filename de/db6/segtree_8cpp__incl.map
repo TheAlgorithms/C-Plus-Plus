@@ -1,11 +1,11 @@
 <map id="range_queries/segtree.cpp" name="range_queries/segtree.cpp">
 <area shape="rect" id="Node000001" title="Implementation of [Segment Tree] (https://en.wikipedia.org/wiki/Segment_tree) data structure." alt="" coords="80,5,254,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,79,70,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,34,74,74,71,69,144,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,34,74,73,72,69,144,29"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="94,79,152,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,33,140,68,136,65,157,30"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,33,141,67,136,64,157,30"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="175,79,247,105"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="176,30,198,65,194,68,172,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="176,30,198,64,193,67,172,33"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="270,79,328,105"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="190,29,265,69,263,74,188,34"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="190,29,265,69,262,74,188,34"/>
 </map>

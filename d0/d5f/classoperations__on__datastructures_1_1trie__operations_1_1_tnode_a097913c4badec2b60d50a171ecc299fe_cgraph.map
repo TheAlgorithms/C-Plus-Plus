@@ -1,6 +1,6 @@
 <map id="operations_on_datastructures::trie_operations::Tnode::SuggestAutocomplete" name="operations_on_datastructures::trie_operations::Tnode::SuggestAutocomplete">
 <area shape="rect" id="Node000001" title="Recursive function to suggest all the entries of trie which have a given common prefix." alt="" coords="5,29,198,85"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="66,29,66,19,73,10,84,5,102,3,121,5,133,13,130,17,119,10,101,8,86,10,76,14,71,21,71,29"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="66,29,66,19,73,10,84,5,102,3,121,5,132,12,130,17,119,10,101,8,86,10,76,14,71,21,71,29"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="246,44,317,70"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,55,231,55,231,60,198,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,55,230,55,230,60,198,60"/>
 </map>

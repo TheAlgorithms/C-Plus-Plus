@@ -1,8 +1,8 @@
 <map id="numerical_methods::simpson_method::g" name="numerical_methods::simpson_method::g">
 <area shape="rect" id="Node000001" title="Another test function." alt="" coords="5,29,148,70"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="46,29,45,19,50,11,61,5,77,3,94,5,104,12,101,16,92,10,76,8,62,10,54,14,50,20,52,28"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="46,29,45,19,50,11,61,5,77,3,94,5,104,11,101,16,92,10,76,8,62,10,54,14,50,20,52,28"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/exp.html#" title=" " alt="" coords="197,12,266,37"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,35,182,30,183,35,149,41"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,35,181,30,182,35,149,41"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="196,61,267,87"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="149,58,181,63,181,69,148,63"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="149,58,181,63,180,68,148,63"/>
 </map>

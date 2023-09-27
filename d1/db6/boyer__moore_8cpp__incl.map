@@ -1,15 +1,15 @@
 <map id="strings/boyer_moore.cpp" name="strings/boyer_moore.cpp">
 <area shape="rect" id="Node000001" title="The Boyer–Moore algorithm searches for occurrences of pattern P in text T by performing explicit char..." alt="" coords="169,5,333,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,79,70,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,34,85,78,83,73,214,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,34,85,77,83,72,214,29"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="93,79,153,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="230,34,159,74,156,69,228,29"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="230,34,159,73,157,69,228,29"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="177,79,237,105"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="246,33,224,68,220,65,241,30"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="246,33,225,67,220,64,241,30"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="261,79,332,105"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="261,30,283,65,278,68,256,33"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="261,30,283,64,278,67,256,33"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="356,79,410,105"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="274,29,349,69,347,74,272,34"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="274,29,349,69,346,74,272,34"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="434,79,492,105"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="288,29,421,74,419,79,286,34"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="288,29,420,73,419,79,286,34"/>
 </map>

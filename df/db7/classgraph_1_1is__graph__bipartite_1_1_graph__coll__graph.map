@@ -1,7 +1,7 @@
 <map id="graph::is_graph_bipartite::Graph" name="graph::is_graph_bipartite::Graph">
 <area shape="rect" id="Node000001" title="Class for representing graph as an adjacency list." alt="" coords="84,109,247,150"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="5,5,163,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,56,152,107,148,110,107,59"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,57,152,107,148,110,107,60"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="187,13,309,39"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="231,52,183,110,179,107,227,48"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="231,52,183,110,179,107,227,49"/>
 </map>

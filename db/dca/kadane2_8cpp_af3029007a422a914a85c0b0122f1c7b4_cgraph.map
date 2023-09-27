@@ -1,6 +1,6 @@
 <map id="dynamic_programming::kadane::maxSubArray" name="dynamic_programming::kadane::maxSubArray">
 <area shape="rect" id="Node000001" title="maxSubArray function is used to calculate the maximum sum subarray and returns the value of maximum s..." alt="" coords="5,29,164,70"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="53,29,51,19,57,11,68,5,85,3,103,5,114,12,111,16,101,10,84,8,69,10,60,14,57,20,58,28"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="53,29,51,19,57,11,68,5,85,3,103,5,113,11,111,16,101,10,84,8,69,10,60,14,57,20,58,28"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="212,37,284,63"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,47,197,47,197,52,164,52"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,47,196,47,196,52,164,52"/>
 </map>

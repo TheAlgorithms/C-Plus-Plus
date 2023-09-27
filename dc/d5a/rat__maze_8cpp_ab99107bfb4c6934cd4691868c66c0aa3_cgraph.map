@@ -1,6 +1,6 @@
 <map id="backtracking::rat_maze::solveMaze" name="backtracking::rat_maze::solveMaze">
 <area shape="rect" id="Node000001" title="Solve rat maze problem." alt="" coords="5,29,163,70"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="53,29,51,19,56,11,67,5,84,3,102,5,113,12,110,16,101,10,84,8,69,10,60,14,56,20,58,28"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="53,29,51,19,56,11,67,5,84,3,102,5,113,11,110,16,100,10,84,8,69,10,60,14,56,20,58,28"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="211,37,282,63"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,47,196,47,196,52,163,52"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,47,195,47,195,52,163,52"/>
 </map>

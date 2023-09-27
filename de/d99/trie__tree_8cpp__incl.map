@@ -1,15 +1,15 @@
 <map id="data_structures/trie_tree.cpp" name="data_structures/trie_tree.cpp">
 <area shape="rect" id="Node000001" title="Implementation of Trie data structure for English alphabets in small characters." alt="" coords="184,5,317,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,56,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,49,71,94,69,89,195,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,49,72,94,70,89,195,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="80,94,144,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,49,147,89,144,84,215,44"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,49,147,88,145,84,215,44"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="168,94,240,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="241,48,221,82,216,80,237,45"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="241,48,221,82,217,79,237,45"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="263,94,331,120"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="264,45,285,80,280,82,260,48"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="264,45,284,79,280,82,260,48"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="356,94,409,120"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="285,44,351,84,349,88,282,49"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="285,44,351,83,348,88,282,49"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="434,94,491,120"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="304,44,421,87,419,92,303,49"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="304,44,420,87,418,92,303,49"/>
 </map>

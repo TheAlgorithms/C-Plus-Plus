@@ -1,9 +1,9 @@
 <map id="test_f" name="test_f">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,55,60,80"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/clock.html#" title=" " alt="" coords="108,5,186,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,53,101,35,103,40,61,58"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,53,100,35,102,40,61,58"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/qsort.html#" title=" " alt="" coords="109,55,185,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="60,65,94,65,94,70,60,70"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="60,65,93,65,93,70,60,70"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="111,104,183,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="61,77,103,95,101,100,59,82"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="61,77,102,95,100,100,59,82"/>
 </map>

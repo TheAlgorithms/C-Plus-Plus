@@ -1,11 +1,11 @@
 <map id="math::print_primes" name="math::print_primes">
 <area shape="rect" id="Node000001" title="Prints all the indexes of true values in the passed std::vector." alt="" coords="5,55,135,80"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="205,5,276,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,51,190,30,191,35,118,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,51,189,30,191,35,118,57"/>
 <area shape="rect" id="Node000003" href="$de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a" title=" " alt="" coords="210,55,271,80"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="135,65,195,65,195,70,135,70"/>
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="183,104,298,130"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="118,78,180,97,179,102,116,84"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="118,78,180,97,178,102,116,84"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/emplace_back.html#" title=" " alt="" coords="346,55,521,80"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="271,65,331,65,331,70,271,70"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="271,65,330,65,330,70,271,70"/>
 </map>

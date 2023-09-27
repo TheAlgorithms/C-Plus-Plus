@@ -1,7 +1,7 @@
 <map id="strings::manacher::manacher" name="strings::manacher::manacher">
 <area shape="rect" id="Node000001" title="A function that implements Manacher&#39;s algorithm." alt="" coords="5,23,139,64"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="208,5,277,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,31,193,23,194,28,140,36"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,31,192,23,193,28,140,36"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="187,55,298,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,50,172,55,171,60,139,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,50,171,55,171,60,139,56"/>
 </map>

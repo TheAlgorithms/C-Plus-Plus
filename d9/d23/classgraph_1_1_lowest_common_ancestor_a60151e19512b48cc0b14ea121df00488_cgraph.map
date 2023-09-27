@@ -1,5 +1,5 @@
 <map id="graph::LowestCommonAncestor::lowest_common_ancestor" name="graph::LowestCommonAncestor::lowest_common_ancestor">
 <area shape="rect" id="Node000001" title="Query the structure to find the lowest common ancestor. Assumes that the provided numbers are valid i..." alt="" coords="5,5,214,46"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="262,13,340,39"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,23,247,23,247,28,214,28"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,23,246,23,246,28,214,28"/>
 </map>

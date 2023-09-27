@@ -1,35 +1,35 @@
 <map id="main" name="main">
 <area shape="rect" id="Node000001" title="Main function." alt="" coords="5,311,55,336"/>
 <area shape="rect" id="Node000002" href="$d5/d8a/trie__using__hashmap_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,311,146,336"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,321,88,321,88,326,55,326"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,321,87,321,87,326,55,326"/>
 <area shape="rect" id="Node000003" href="$d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#ac0bf3d6791cba144b3f539835d835e75" title="delete a word/string from a trie" alt="" coords="194,85,343,141"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="125,310,144,237,164,192,192,151,194,149,198,153,196,154,169,195,149,239,130,311"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="125,310,144,237,164,192,192,151,193,149,197,153,196,154,169,195,149,239,130,311"/>
 <area shape="rect" id="Node000009" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="233,165,304,191"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="127,309,149,257,168,228,192,201,217,187,220,192,196,206,172,231,154,260,132,311"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="127,309,149,257,168,228,192,201,217,187,219,192,196,206,172,231,154,260,132,311"/>
 <area shape="rect" id="Node000010" href="$d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#abcae0a4456e7f583ce716e3ef466dfd2" title="insert the string into the trie" alt="" coords="194,216,343,271"/>
-<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="145,309,193,281,201,277,204,281,195,286,148,313"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="145,309,193,281,200,277,203,282,195,286,148,313"/>
 <area shape="rect" id="Node000011" href="$d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#ae15fdc7f2b5023992d87a711d78566c4" title="predict/recommend a word that starts with a given prefix" alt="" coords="194,296,343,351"/>
 <area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="147,321,179,321,179,326,147,326"/>
 <area shape="rect" id="Node000014" href="$d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#ad71eb24207c28b546631802dba97310f" title="search a word/string inside the trie" alt="" coords="194,376,343,431"/>
-<area shape="poly" id="edge15_Node000002_Node000014" title=" " alt="" coords="148,334,195,361,204,366,201,370,193,366,145,338"/>
+<area shape="poly" id="edge15_Node000002_Node000014" title=" " alt="" coords="148,334,195,361,203,365,200,370,193,366,145,338"/>
 <area shape="rect" id="Node000015" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="211,456,326,482"/>
-<area shape="poly" id="edge16_Node000002_Node000015" title=" " alt="" coords="132,336,154,387,172,416,196,442,202,446,199,451,192,445,168,419,149,390,127,338"/>
+<area shape="poly" id="edge16_Node000002_Node000015" title=" " alt="" coords="132,336,154,387,172,416,196,442,202,446,199,450,192,445,168,419,149,390,127,338"/>
 <area shape="rect" id="Node000016" href="$d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#af3aee573fbabd2c1510c0f74f842dd17" title="search a word/string that starts with a given prefix" alt="" coords="194,506,343,562"/>
-<area shape="poly" id="edge17_Node000002_Node000016" title=" " alt="" coords="130,336,149,408,169,452,196,493,198,494,194,498,192,496,164,455,144,410,125,337"/>
+<area shape="poly" id="edge17_Node000002_Node000016" title=" " alt="" coords="130,336,149,408,169,452,196,493,197,494,193,498,192,496,164,455,144,410,125,337"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/back.html#" title=" " alt="" coords="408,5,524,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="312,82,390,40,404,34,406,39,392,45,314,87"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="312,82,390,40,403,34,405,39,392,45,314,87"/>
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/stack/pop.html#" title=" " alt="" coords="412,55,520,80"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="343,93,397,81,398,86,344,98"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="343,93,396,81,397,86,344,98"/>
 <area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/pop_back.html#" title=" " alt="" coords="594,181,738,207"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="344,113,439,122,541,141,585,155,626,172,624,177,584,160,540,146,438,127,344,118"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="344,113,439,122,541,141,585,155,625,172,623,177,583,160,540,146,438,127,344,118"/>
 <area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/stack/push.html#" title=" " alt="" coords="408,156,524,182"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="344,131,405,149,404,154,343,137"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="344,131,404,149,403,154,343,137"/>
 <area shape="rect" id="Node000008" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/stack/top.html#" title=" " alt="" coords="413,205,519,231"/>
-<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="327,139,345,151,369,172,393,192,402,197,400,202,390,196,365,176,342,155,324,144"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="327,139,345,151,369,172,393,192,402,196,399,201,390,196,365,176,342,155,324,144"/>
 <area shape="rect" id="Node000012" href="$d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#a7bbe538c8015e8ce158e7ed43f605ebd" title="helper function to predict/recommend words that starts with a given prefix from the end of prefix&#39;s n..." alt="" coords="391,285,541,341"/>
-<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="343,317,376,315,377,320,344,322"/>
-<area shape="poly" id="edge13_Node000012_Node000006" title=" " alt="" coords="513,282,629,212,632,217,516,287"/>
-<area shape="poly" id="edge12_Node000012_Node000012" title=" " alt="" coords="427,284,427,275,434,266,447,260,466,258,487,261,500,268,498,273,486,266,466,264,449,265,438,270,432,277,432,285"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="343,317,376,315,376,320,344,322"/>
+<area shape="poly" id="edge13_Node000012_Node000006" title=" " alt="" coords="513,282,628,213,631,218,516,287"/>
+<area shape="poly" id="edge12_Node000012_Node000012" title=" " alt="" coords="427,284,427,275,434,266,447,260,466,258,487,261,500,268,497,273,485,266,466,264,449,265,438,270,432,277,432,285"/>
 <area shape="rect" id="Node000013" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="589,300,743,326"/>
-<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="541,310,574,310,574,316,541,316"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="541,310,573,310,573,316,541,316"/>
 </map>

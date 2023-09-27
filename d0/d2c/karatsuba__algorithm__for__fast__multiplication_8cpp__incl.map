@@ -1,11 +1,11 @@
 <map id="divide_and_conquer/karatsuba_algorithm_for_fast_multiplication.cpp" name="divide_and_conquer/karatsuba_algorithm_for_fast_multiplication.cpp">
 <area shape="rect" id="Node000001" title="Implementation of the Karatsuba algorithm for fast multiplication" alt="" coords="78,5,258,61"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,109,70,135"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,64,69,103,66,98,126,59"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,64,70,103,67,98,126,59"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="94,109,154,135"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,62,139,97,135,94,152,60"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,62,140,96,135,94,152,60"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="178,109,249,135"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="185,60,203,94,198,97,180,62"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="185,60,202,94,198,96,180,62"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="273,109,330,135"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="211,59,272,98,269,103,209,64"/>
 </map>

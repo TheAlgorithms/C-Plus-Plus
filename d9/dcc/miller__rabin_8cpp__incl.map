@@ -1,11 +1,11 @@
 <map id="math/miller_rabin.cpp" name="math/miller_rabin.cpp">
 <area shape="rect" id="Node000001" title=" " alt="" coords="102,5,248,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,79,70,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,34,75,74,73,69,150,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,34,76,74,73,69,150,29"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="94,79,165,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,33,147,68,143,65,165,30"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,33,147,67,143,64,165,30"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="189,79,254,105"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="185,30,208,65,203,68,180,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="185,30,208,64,203,67,180,33"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="278,79,336,105"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="198,29,273,69,271,74,196,34"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="198,29,273,69,270,74,196,34"/>
 </map>

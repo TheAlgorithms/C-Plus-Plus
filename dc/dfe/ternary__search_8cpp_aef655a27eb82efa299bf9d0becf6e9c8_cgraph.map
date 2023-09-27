@@ -1,10 +1,10 @@
 <map id="ternary_search" name="ternary_search">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,55,113,80"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="191,5,263,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,51,177,30,178,35,106,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,51,176,30,178,35,106,57"/>
 <area shape="rect" id="Node000003" href="$dc/dfe/ternary__search_8cpp.html#ae30dfe2894191bfeffe5b3b1854b95b0" title=" " alt="" coords="166,55,288,80"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="113,65,151,65,151,70,113,70"/>
 <area shape="rect" id="Node000004" href="$dc/dfe/ternary__search_8cpp.html#a93d0099db95022f1eb90ddfd68f73ead" title=" " alt="" coords="161,128,293,154"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="92,79,183,119,181,124,90,83"/>
-<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="198,129,193,119,196,110,208,104,227,101,248,104,259,112,256,116,246,109,227,107,209,109,200,113,198,119,203,126"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="198,129,193,119,196,110,208,104,227,101,247,104,258,111,255,115,245,109,227,107,209,109,200,113,198,119,203,126"/>
 </map>

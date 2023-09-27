@@ -1,9 +1,9 @@
 <map id="main" name="main">
 <area shape="rect" id="Node000001" title="Main function." alt="" coords="5,35,55,60"/>
 <area shape="rect" id="Node000002" href="$d5/d1e/next__higher__number__with__same__number__of__set__bits_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,35,146,60"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,45,88,45,88,50,55,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,45,87,45,87,50,55,50"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="233,5,304,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,41,217,26,219,31,147,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,41,217,26,218,31,147,46"/>
 <area shape="rect" id="Node000004" href="$d7/d81/namespacebit__manipulation.html#a4b76571a2a04fa99c30a96eca9997f0e" title="The main function implements checking the next number." alt="" coords="194,55,342,96"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="147,49,180,56,179,61,146,54"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="147,49,179,55,178,61,146,54"/>
 </map>

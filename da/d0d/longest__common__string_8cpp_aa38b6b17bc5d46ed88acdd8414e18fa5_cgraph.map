@@ -1,7 +1,7 @@
 <map id="longest_common_string_length" name="longest_common_string_length">
 <area shape="rect" id="Node000001" title="for std::vector" alt="" coords="5,23,165,64"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="232,5,305,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,30,217,22,218,28,165,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,30,216,23,217,28,165,35"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="213,55,324,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,51,198,56,198,61,165,57"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,51,198,56,197,61,165,57"/>
 </map>

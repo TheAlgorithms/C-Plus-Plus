@@ -1,13 +1,13 @@
 <map id="large_number::operator*=" name="large_number::operator*=">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,31,173,56"/>
 <area shape="rect" id="Node000002" href="$db/d82/classlarge__number.html#a2f5571e66305cf68bb8283e4aeda58bc" title=" " alt="" coords="221,31,373,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,41,206,41,206,46,173,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,41,205,41,205,46,173,46"/>
 <area shape="rect" id="Node000003" href="$db/d82/classlarge__number.html#a60c436d1a1c5e3795d6177d3815ad615" title=" " alt="" coords="427,5,586,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="373,32,411,27,412,32,374,37"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="373,32,410,27,411,32,374,37"/>
 <area shape="rect" id="Node000005" href="$db/d82/classlarge__number.html#ac09a05ec4aafb4d9e0b4440d6f0e2a93" title=" " alt="" coords="421,55,591,80"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="374,50,406,53,406,59,373,55"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="374,50,406,53,405,59,373,55"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="639,5,794,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="586,16,625,16,625,21,586,21"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="586,16,624,16,624,21,586,21"/>
 <area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="659,55,774,80"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="592,65,644,65,644,70,592,70"/>
 </map>

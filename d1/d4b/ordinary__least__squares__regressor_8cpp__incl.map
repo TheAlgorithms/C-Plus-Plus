@@ -1,13 +1,13 @@
 <map id="machine_learning/ordinary_least_squares_regressor.cpp" name="machine_learning/ordinary_least_squares_regressor.cpp">
 <area shape="rect" id="Node000001" title="Linear regression example using Ordinary least squares" alt="" coords="111,5,305,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,70,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,49,78,90,76,85,164,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,49,79,90,76,85,164,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="94,94,152,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,48,148,86,145,82,185,44"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,48,149,85,145,81,185,44"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="175,94,241,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="211,46,211,79,206,79,206,46"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="211,46,211,78,206,78,206,46"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="266,94,337,120"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="233,44,278,82,275,86,230,48"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="233,44,277,82,274,86,230,48"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="361,94,418,120"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="255,44,349,85,347,90,252,49"/>
 </map>

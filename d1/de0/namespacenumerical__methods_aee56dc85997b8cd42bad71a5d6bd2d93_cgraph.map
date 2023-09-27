@@ -1,8 +1,8 @@
 <map id="numerical_methods::InverseFastFourierTransform" name="numerical_methods::InverseFastFourierTransform">
 <area shape="rect" id="Node000001" title="InverseFastFourierTransform is a recursive function which returns list of complex numbers." alt="" coords="5,29,195,70"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="60,29,58,19,65,10,79,5,100,3,123,5,137,12,134,17,122,10,100,8,80,10,68,15,64,20,66,28"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="60,29,58,19,65,10,79,5,100,3,123,5,136,11,134,16,121,10,100,8,80,10,68,15,64,20,66,28"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/imag.html#" title=" " alt="" coords="243,12,375,37"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,36,227,31,228,37,195,41"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,36,227,32,227,37,195,41"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/real.html#" title=" " alt="" coords="246,61,372,87"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="195,58,232,62,231,67,194,63"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="195,58,231,62,230,67,194,63"/>
 </map>

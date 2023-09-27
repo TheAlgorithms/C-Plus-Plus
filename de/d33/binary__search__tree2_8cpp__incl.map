@@ -1,13 +1,13 @@
 <map id="data_structures/binary_search_tree2.cpp" name="data_structures/binary_search_tree2.cpp">
 <area shape="rect" id="Node000001" title="A generic binary search tree implementation. Here you can find more information about the algorithm: ..." alt="" coords="156,5,306,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,70,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,49,82,90,80,86,182,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,49,82,90,80,85,182,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="94,94,171,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,48,161,86,157,82,205,44"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,48,161,86,158,82,205,44"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="195,94,267,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="234,46,234,79,228,79,228,46"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="234,46,234,78,228,78,228,46"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="290,94,358,120"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="256,44,301,82,297,86,252,48"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="256,44,300,82,296,86,252,48"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="382,94,440,120"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="277,44,371,85,369,90,275,49"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="277,44,371,85,368,90,275,49"/>
 </map>

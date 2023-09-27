@@ -1,11 +1,11 @@
 <map id="main" name="main">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,31,55,56"/>
 <area shape="rect" id="Node000002" href="$de/d47/string__fibonacci_8cpp.html#ad8055ee368a5d5b24de01bdde6bf8fca" title=" " alt="" coords="103,31,197,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,41,88,41,88,46,55,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,41,87,41,87,46,55,46"/>
 <area shape="rect" id="Node000003" href="$de/d47/string__fibonacci_8cpp.html#a28052eee05d43c2ebc5147c52bd50c35" title=" " alt="" coords="245,31,287,56"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="197,41,230,41,230,46,197,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="197,41,229,41,229,46,197,46"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="336,5,458,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="287,37,321,30,322,35,288,42"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="287,37,320,30,321,36,288,42"/>
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/substr.html#" title=" " alt="" coords="335,55,459,80"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="288,45,321,51,320,56,287,50"/>
 </map>

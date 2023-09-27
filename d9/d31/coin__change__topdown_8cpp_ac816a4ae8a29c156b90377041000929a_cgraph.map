@@ -1,6 +1,6 @@
 <map id="dynamic_programming::mincoins_topdown::mincoins" name="dynamic_programming::mincoins_topdown::mincoins">
 <area shape="rect" id="Node000001" title="This implementation is for finding minimum number of coins ." alt="" coords="5,29,158,85"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="50,29,50,19,56,10,66,5,82,3,99,6,109,13,106,17,97,10,81,8,68,10,59,14,55,21,55,29"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="50,29,50,19,56,10,66,5,82,3,98,5,109,12,106,16,96,10,81,8,68,10,59,14,55,21,55,29"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="206,44,274,70"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,55,191,55,191,60,158,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,55,190,55,190,60,158,60"/>
 </map>

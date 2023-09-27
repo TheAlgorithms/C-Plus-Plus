@@ -1,4 +1,4 @@
 <map id="physics::ground_to_ground_projectile_motion::degrees_to_radians" name="physics::ground_to_ground_projectile_motion::degrees_to_radians">
 <area shape="rect" id="Node000001" title="Convert radians to degrees." alt="" coords="5,29,178,85"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="57,29,57,19,64,10,75,5,92,3,110,5,122,13,119,17,109,10,91,8,77,10,67,14,63,21,62,29"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="57,29,57,19,64,10,75,5,92,3,110,5,121,12,118,16,108,10,91,8,77,10,67,14,63,21,62,29"/>
 </map>

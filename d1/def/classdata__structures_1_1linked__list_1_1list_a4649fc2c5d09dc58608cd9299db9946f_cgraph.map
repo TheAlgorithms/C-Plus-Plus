@@ -1,7 +1,7 @@
 <map id="data_structures::linked_list::list::insert" name="data_structures::linked_list::list::insert">
 <area shape="rect" id="Node000001" title="Utility function that adds a new element at the end of the list." alt="" coords="5,35,159,75"/>
 <area shape="rect" id="Node000002" href="$d1/def/classdata__structures_1_1linked__list_1_1list.html#ae8424a4fce3d483f7c85d6f6a5c79a1a" title=" " alt="" coords="207,5,360,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,41,192,36,193,42,159,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,41,191,36,192,42,159,46"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/error/exception/what.html#" title=" " alt="" coords="214,70,353,96"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,63,200,69,199,74,159,68"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,63,199,69,198,74,159,68"/>
 </map>

@@ -1,9 +1,9 @@
 <map id="math/ncr_modulo_p.cpp" name="math/ncr_modulo_p.cpp">
 <area shape="rect" id="Node000001" title="This program aims at calculating nCr modulo p." alt="" coords="49,5,210,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,79,70,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,34,66,72,63,68,112,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,34,66,72,63,67,112,29"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="94,79,165,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="132,31,132,64,127,64,127,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="132,31,132,63,127,63,127,31"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="189,79,246,105"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="146,29,193,67,190,72,143,34"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="146,29,193,67,189,71,143,34"/>
 </map>

@@ -1,15 +1,15 @@
 <map id="dynamic_programming/word_break.cpp" name="dynamic_programming/word_break.cpp">
 <area shape="rect" id="Node000001" title="Word Break Problem" alt="" coords="179,5,331,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,70,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,49,84,91,83,86,200,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,49,85,91,84,86,200,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="93,94,153,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,49,157,88,154,84,221,44"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,49,157,88,155,83,221,44"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="177,94,248,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="247,48,228,82,223,79,242,45"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="247,48,228,81,224,79,242,45"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="272,94,326,120"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="268,45,287,79,283,82,263,48"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="268,45,287,79,282,82,263,48"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="350,94,453,120"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="293,44,368,84,365,89,290,49"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="293,44,367,84,365,89,290,49"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="477,94,534,120"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="318,44,463,89,462,95,317,49"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="318,44,463,89,461,94,317,49"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="greedy_algorithms::boruvkas_minimum_spanning_tree::test_findGraphSum" name="greedy_algorithms::boruvkas_minimum_spanning_tree::test_findGraphSum">
 <area shape="rect" id="Node000001" title="counts the sum of edges in the given tree" alt="" coords="5,29,199,85"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="62,29,63,19,70,10,83,5,102,3,124,5,137,13,134,17,122,11,102,8,84,10,73,15,67,21,67,29"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="62,29,63,19,70,10,83,5,102,3,123,5,137,12,134,17,122,10,102,8,84,10,73,15,67,21,67,29"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="247,44,362,70"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,55,232,55,232,60,199,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,55,231,55,231,60,199,60"/>
 </map>

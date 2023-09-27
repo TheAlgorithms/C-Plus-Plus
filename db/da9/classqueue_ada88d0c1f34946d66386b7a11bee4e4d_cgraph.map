@@ -1,5 +1,5 @@
 <map id="queue::enQueue" name="queue::enQueue">
 <area shape="rect" id="Node000001" title="inserts a new item into the queue" alt="" coords="5,5,122,31"/>
 <area shape="rect" id="Node000002" href="$db/da9/classqueue.html#a4bc52ad6ed6b0cc33ad05f87f05f8bec" title="checks if the queue has no elements" alt="" coords="170,5,320,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,16,155,16,155,21,122,21"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,16,154,16,154,21,122,21"/>
 </map>

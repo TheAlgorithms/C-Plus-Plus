@@ -1,7 +1,7 @@
 <map id="data_structures::trie::search" name="data_structures::trie::search">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,35,143,75"/>
 <area shape="rect" id="Node000002" href="$d0/d3e/classdata__structures_1_1trie.html#aab373beb3f618b90922528c68797d988" title="Convert a character to integer for indexing." alt="" coords="191,5,328,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,42,175,36,176,41,143,47"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,42,175,36,176,42,143,47"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="198,70,321,96"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="143,63,184,69,183,74,142,68"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/program/exit.html#" title=" " alt="" coords="376,13,444,39"/>

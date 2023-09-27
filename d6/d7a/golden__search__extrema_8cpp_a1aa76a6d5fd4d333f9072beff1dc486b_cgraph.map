@@ -1,9 +1,9 @@
 <map id="get_minima" name="get_minima">
 <area shape="rect" id="Node000001" title="Get the minima of a function in the given interval. To get the maxima, simply negate the function...." alt="" coords="5,70,94,96"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/numeric_limits/infinity.html#" title=" " alt="" coords="142,5,273,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,67,135,49,137,54,88,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,67,134,49,136,54,88,72"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="173,70,242,96"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="94,80,158,80,158,86,94,86"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="168,120,247,145"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="94,94,155,113,153,118,92,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="94,94,154,113,153,118,92,99"/>
 </map>

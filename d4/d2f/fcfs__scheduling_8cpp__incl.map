@@ -1,21 +1,21 @@
 <map id="cpu_scheduling_algorithms/fcfs_scheduling.cpp" name="cpu_scheduling_algorithms/fcfs_scheduling.cpp">
 <area shape="rect" id="Node000001" title="Implementation of FCFS CPU scheduling algorithm." alt="" coords="296,5,474,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,80,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="300,49,95,96,94,91,299,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="300,49,96,96,94,91,299,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="104,94,168,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="324,49,183,93,181,88,322,44"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="324,49,183,93,182,88,322,44"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="192,94,251,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="345,49,261,90,258,85,343,44"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="345,49,261,89,259,85,343,44"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="275,94,328,120"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="366,48,326,86,323,82,363,44"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="366,48,327,85,323,81,363,44"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="352,94,418,120"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="388,46,388,79,383,79,383,46"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="388,46,388,78,383,78,383,46"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="443,94,514,120"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="410,44,455,82,452,86,407,48"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="410,44,454,82,451,86,407,48"/>
 <area shape="rect" id="Node000008" title=" " alt="" coords="538,94,595,120"/>
 <area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="432,44,526,85,524,90,429,49"/>
 <area shape="rect" id="Node000009" title=" " alt="" coords="619,94,722,120"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="457,44,613,87,612,92,456,49"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="457,44,612,87,611,92,456,49"/>
 <area shape="rect" id="Node000010" title=" " alt="" coords="746,94,803,120"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="475,39,594,61,732,91,731,96,593,66,474,44"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="475,39,593,61,731,91,730,96,592,66,474,44"/>
 </map>

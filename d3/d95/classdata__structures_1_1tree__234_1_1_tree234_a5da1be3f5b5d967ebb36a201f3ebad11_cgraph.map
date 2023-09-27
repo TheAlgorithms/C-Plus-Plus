@@ -1,46 +1,46 @@
 <map id="data_structures::tree_234::Tree234::Remove" name="data_structures::tree_234::Tree234::Remove">
 <area shape="rect" id="Node000001" title="Remove item from tree." alt="" coords="5,585,167,626"/>
 <area shape="rect" id="Node000002" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a61dd051a74e5f36c8dc03dae8dca6ef4" title="Main function implement the pre&#45;merge remove operation." alt="" coords="215,585,432,626"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,603,200,603,200,608,167,608"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,603,199,603,199,608,167,608"/>
 <area shape="rect" id="Node000003" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac85ba5abfd6d34dcd908b2afe6464657" title="Get the max item of the tree." alt="" coords="480,71,690,111"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="326,584,343,515,373,414,418,299,446,242,478,188,509,150,543,119,547,122,513,154,482,191,451,244,423,301,378,416,348,516,331,586"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="326,584,343,515,373,414,418,299,446,242,478,188,509,150,543,119,546,123,513,154,482,191,451,244,423,301,378,416,348,516,331,586"/>
 <area shape="rect" id="Node000006" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a65a1235659356166a3e9b451c64fcc36" title="Get the min item of the tree." alt="" coords="482,201,688,242"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="336,584,560,253,564,256,341,587"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="336,584,559,254,563,257,341,587"/>
 <area shape="rect" id="Node000009" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#afd9f83e2d5d7f22f79c1348e98914631" title="Check if node is a 2&#45;node." alt="" coords="769,593,915,634"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="410,582,480,571,585,563,691,571,763,586,762,591,690,576,585,568,480,576,411,587"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="410,582,480,571,585,563,691,571,763,586,761,591,690,576,585,568,480,576,411,587"/>
 <area shape="rect" id="Node000010" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a6c5f929afcbad5219646990edee22e18" title="Check if node is a 3&#45;node or 4&#45;node, this is useful when we delete item from 2&#45;3&#45;4 tree." alt="" coords="509,815,661,855"/>
-<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="339,625,394,706,435,753,482,794,500,806,498,810,478,798,431,757,390,710,334,628"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="339,625,394,706,435,753,482,794,500,805,497,810,478,798,431,757,390,710,334,628"/>
 <area shape="rect" id="Node000011" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae58dca20f08eaf9313f6e7b0869c2d0e" title="Do the actual left rotate operation." alt="" coords="755,659,929,699"/>
-<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="420,624,480,635,616,654,740,667,740,673,615,659,480,640,419,629"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="420,624,480,635,616,654,740,667,739,673,615,659,480,640,419,629"/>
 <area shape="rect" id="Node000012" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a36f4d5f603f7edb7db7c73fb53ba14e9" title="Merge the item at index of the parent node, and its left and right child." alt="" coords="511,463,659,503"/>
-<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="365,583,479,527,522,507,524,512,481,532,367,587"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="365,583,479,527,522,508,524,512,481,532,367,587"/>
 <area shape="rect" id="Node000018" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae68f8e62be02657c1287def6b38d7cc9" title="Do the actual right rotate operation." alt="" coords="751,736,933,777"/>
-<area shape="poly" id="edge18_Node000002_Node000018" title=" " alt="" coords="341,625,364,655,396,690,436,724,481,750,544,768,611,776,676,777,736,772,736,777,676,782,610,782,543,774,479,755,433,729,392,694,360,658,336,628"/>
+<area shape="poly" id="edge18_Node000002_Node000018" title=" " alt="" coords="341,625,364,655,396,690,436,724,481,750,544,768,611,776,676,777,735,772,736,778,676,782,610,782,543,773,479,755,433,729,392,694,360,658,336,628"/>
 <area shape="rect" id="Node000019" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac5361479dd996eb331759f33808657d9" title="A handy function to try if we can do a left rotate to the target node." alt="" coords="489,585,681,626"/>
-<area shape="poly" id="edge19_Node000002_Node000019" title=" " alt="" coords="432,603,474,603,474,608,432,608"/>
+<area shape="poly" id="edge19_Node000002_Node000019" title=" " alt="" coords="432,603,473,603,473,608,432,608"/>
 <area shape="rect" id="Node000020" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#aec0642d1d151521ca7c70ea85cdb15d3" title="A handy function to try if we can do a right rotate to the target node." alt="" coords="485,700,686,741"/>
 <area shape="poly" id="edge22_Node000002_Node000020" title=" " alt="" coords="366,624,481,679,512,692,510,697,479,684,363,629"/>
 <area shape="rect" id="Node000004" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a2753b6053b8c86c5bd987a44fdfa0a57" title="Get max item (rightmost) in the current node." alt="" coords="758,5,926,46"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="667,67,745,48,746,53,669,73"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="667,67,744,48,745,53,669,73"/>
 <area shape="rect" id="Node000005" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a731f9ae385840cf0a06d55e7f9924a94" title="Get rightmose child of the current node." alt="" coords="738,71,946,111"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="691,88,723,88,723,94,691,94"/>
 <area shape="rect" id="Node000007" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ac6f619a1605cb46196360889fff4529e" title="Get leftmose child of the current node." alt="" coords="743,136,941,177"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="667,198,745,178,746,183,669,203"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="667,198,744,178,745,184,669,203"/>
 <area shape="rect" id="Node000008" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a5438d0a47850f520b2262b5a42f75b71" title="get min item (leftmost) in the current node" alt="" coords="760,201,924,242"/>
-<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="689,219,745,219,745,224,689,224"/>
-<area shape="poly" id="edge14_Node000012_Node000009" title=" " alt="" coords="645,502,692,527,707,541,716,554,725,566,740,578,757,587,754,592,737,583,721,570,712,557,703,545,689,532,642,506"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="689,219,744,219,744,224,689,224"/>
+<area shape="poly" id="edge14_Node000012_Node000009" title=" " alt="" coords="645,502,692,527,707,541,716,554,725,566,740,578,756,587,754,592,737,583,721,570,712,557,703,545,689,532,642,506"/>
 <area shape="rect" id="Node000013" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a164574a9209b5df66368530d090b32c4" title="Get the child pointer at position of index." alt="" coords="768,332,916,373"/>
 <area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="613,460,669,422,737,383,754,376,756,381,740,388,672,426,616,464"/>
 <area shape="rect" id="Node000014" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a4808acb43668ff8cfd6f7cb44ceedad3" title="Get item of the \index index." alt="" coords="770,397,914,438"/>
-<area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="659,462,755,437,756,442,660,467"/>
+<area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="659,462,754,437,756,442,660,467"/>
 <area shape="rect" id="Node000015" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ab4e5f7b7b260bb81d9441652cc124c74" title="Set child pointer to the position of index." alt="" coords="769,463,915,503"/>
-<area shape="poly" id="edge15_Node000012_Node000015" title=" " alt="" coords="660,480,754,480,754,486,660,486"/>
+<area shape="poly" id="edge15_Node000012_Node000015" title=" " alt="" coords="660,480,753,480,753,486,660,486"/>
 <area shape="rect" id="Node000016" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#af564fd4b0992fff69f90de201542d3d1" title="Set the item count of the node." alt="" coords="766,528,918,569"/>
-<area shape="poly" id="edge16_Node000012_Node000016" title=" " alt="" coords="660,499,752,523,751,528,659,504"/>
+<area shape="poly" id="edge16_Node000012_Node000016" title=" " alt="" coords="660,499,752,523,750,528,659,504"/>
 <area shape="rect" id="Node000017" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#aaa89a3016b5dd1be3552321c34343cbc" title="Set item value at position of index." alt="" coords="771,267,913,307"/>
-<area shape="poly" id="edge17_Node000012_Node000017" title=" " alt="" coords="598,461,654,391,693,352,737,318,756,308,758,313,740,323,696,356,658,395,602,464"/>
-<area shape="poly" id="edge20_Node000019_Node000009" title=" " alt="" coords="682,606,755,608,755,614,682,611"/>
-<area shape="poly" id="edge21_Node000019_Node000011" title=" " alt="" coords="660,624,755,651,753,657,658,629"/>
-<area shape="poly" id="edge23_Node000020_Node000009" title=" " alt="" coords="625,697,737,645,758,637,760,642,739,649,627,702"/>
-<area shape="poly" id="edge24_Node000020_Node000018" title=" " alt="" coords="687,732,736,739,736,744,686,737"/>
+<area shape="poly" id="edge17_Node000012_Node000017" title=" " alt="" coords="598,461,654,391,693,352,737,318,755,308,758,313,740,323,696,356,658,395,602,464"/>
+<area shape="poly" id="edge20_Node000019_Node000009" title=" " alt="" coords="682,606,754,608,754,614,682,611"/>
+<area shape="poly" id="edge21_Node000019_Node000011" title=" " alt="" coords="660,624,754,651,753,656,658,629"/>
+<area shape="poly" id="edge23_Node000020_Node000009" title=" " alt="" coords="625,697,737,645,757,637,759,642,739,649,627,702"/>
+<area shape="poly" id="edge24_Node000020_Node000018" title=" " alt="" coords="687,732,736,739,735,744,686,737"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="operations_on_datastructures::reverse_binary_tree::BinaryTree::reverseBinaryTree" name="operations_on_datastructures::reverse_binary_tree::BinaryTree::reverseBinaryTree">
 <area shape="rect" id="Node000001" title="Reverses a Binary Tree recursively by swapping the left and right subtrees and their children." alt="" coords="5,29,220,85"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="70,29,71,19,78,10,92,5,113,3,136,5,149,13,147,17,134,11,112,8,94,10,82,15,76,21,76,29"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="70,29,71,19,78,10,92,5,113,3,135,5,149,12,147,17,134,10,112,8,94,10,82,15,76,21,76,29"/>
 </map>

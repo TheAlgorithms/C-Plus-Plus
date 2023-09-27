@@ -1,14 +1,14 @@
 <map id="main" name="main">
 <area shape="rect" id="Node000001" title="Main function." alt="" coords="5,79,55,104"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="143,5,215,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="46,76,71,58,101,40,128,29,130,34,104,45,74,62,49,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="46,76,71,58,101,40,127,29,129,34,104,45,74,62,49,80"/>
 <area shape="rect" id="Node000003" href="$db/dc0/namespacebacktracking.html#a78540bcb5ef3473b2348cbc34748ec50" title="Check which is the maximum/minimum number in the array." alt="" coords="103,79,255,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="55,89,88,89,88,94,55,94"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="55,89,87,89,87,94,55,94"/>
 <area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/size.html#" title=" " alt="" coords="125,128,233,154"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="56,98,104,114,122,120,120,125,102,119,54,103"/>
-<area shape="poly" id="edge5_Node000003_Node000003" title=" " alt="" coords="153,80,148,70,151,61,162,54,179,52,198,55,207,62,204,66,196,60,179,57,164,59,155,64,154,70,158,77"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="56,98,104,114,121,120,119,125,102,119,54,103"/>
+<area shape="poly" id="edge5_Node000003_Node000003" title=" " alt="" coords="153,80,148,70,151,61,162,54,179,52,197,55,207,61,204,66,195,60,179,57,164,59,155,64,154,70,158,77"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="303,55,375,80"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="255,77,288,72,289,78,256,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="255,77,287,73,288,78,256,83"/>
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="305,104,373,130"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="256,101,291,107,290,112,255,106"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="256,101,290,106,289,112,255,106"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="sorting::quicksort" name="sorting::quicksort">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,127,55"/>
 <area shape="rect" id="Node000002" href="$d5/d91/namespacesorting.html#a9f59fe72dacc1f1218ef3c303d843168" title=" " alt="" coords="175,29,296,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,40,160,40,160,45,127,45"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="207,30,201,21,204,11,216,5,235,3,257,6,267,13,264,17,255,11,235,8,218,10,208,15,206,20,211,28"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,40,159,40,159,45,127,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="207,30,201,21,204,11,216,5,235,3,256,5,267,12,264,16,254,10,235,8,218,10,208,15,206,20,211,28"/>
 </map>

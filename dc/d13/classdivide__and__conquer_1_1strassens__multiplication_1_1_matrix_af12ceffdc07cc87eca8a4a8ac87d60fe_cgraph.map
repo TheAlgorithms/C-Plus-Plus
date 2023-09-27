@@ -1,12 +1,12 @@
 <map id="divide_and_conquer::strassens_multiplication::Matrix::v_stack" name="divide_and_conquer::strassens_multiplication::Matrix::v_stack">
 <area shape="rect" id="Node000001" title="Horizontally stack the matrix (current matrix above the other)" alt="" coords="5,73,175,129"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/back.html#" title=" " alt="" coords="251,5,370,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,70,222,40,241,33,243,38,224,45,151,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,70,222,40,240,33,242,39,224,45,151,75"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/emplace_back.html#" title=" " alt="" coords="223,55,398,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,85,207,80,208,86,175,91"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,85,207,80,207,86,175,91"/>
 <area shape="rect" id="Node000004" href="$dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#ae4e183ec8eab778cb243e4ae0b22a0f1" title="Get the matrix shape." alt="" coords="226,105,395,161"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="175,110,212,116,211,121,174,116"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="175,110,211,116,210,121,174,116"/>
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="446,153,561,179"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="132,127,175,152,223,170,277,180,331,182,431,176,431,181,331,188,276,185,222,175,172,156,129,131"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="396,145,432,151,431,156,395,150"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="132,127,175,152,223,170,276,180,331,182,430,176,431,181,331,188,276,185,222,175,172,156,129,131"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="396,145,431,151,430,156,395,150"/>
 </map>

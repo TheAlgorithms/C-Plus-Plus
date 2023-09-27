@@ -1,6 +1,6 @@
 <map id="machine_learning::neural_network::activations::sigmoid" name="machine_learning::neural_network::activations::sigmoid">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,171,85"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="55,29,55,19,61,10,72,5,88,3,106,6,117,13,114,17,104,10,88,8,74,10,65,14,60,21,60,29"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="55,29,55,19,61,10,72,5,88,3,105,5,116,12,113,16,104,10,88,8,74,10,65,14,60,21,60,29"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/exp.html#" title=" " alt="" coords="219,44,287,70"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,55,204,55,204,60,171,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,55,203,55,203,60,171,60"/>
 </map>

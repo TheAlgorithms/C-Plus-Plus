@@ -1,13 +1,13 @@
 <map id="others::postfix_expression::postfix_evaluation" name="others::postfix_expression::postfix_evaluation">
 <area shape="rect" id="Node000001" title="Postfix Evaluation algorithm to compute the value from given input array." alt="" coords="5,59,180,99"/>
-<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="51,59,48,49,55,40,70,34,93,32,117,35,131,41,129,46,116,40,92,37,71,39,58,44,54,50,56,57"/>
+<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="51,59,48,49,55,40,70,34,93,32,117,34,131,41,129,46,115,40,92,37,71,39,58,44,54,50,56,57"/>
 <area shape="rect" id="Node000002" href="$d7/d75/postfix__evaluation_8cpp.html#a59fd597e0ea394abe027ced4d2ea3338" title="Evaluate answer using given last two operands from and operation." alt="" coords="228,29,402,70"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,65,213,60,213,66,180,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,65,212,61,212,66,180,70"/>
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/stof.html#" title=" " alt="" coords="280,94,350,120"/>
-<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="180,87,266,98,265,104,180,93"/>
-<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="273,29,271,19,278,10,292,5,315,3,339,5,354,12,352,17,338,10,315,8,294,10,281,15,276,21,278,28"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="180,87,265,98,264,103,180,93"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="273,29,271,19,278,10,292,5,315,3,339,5,353,11,351,16,338,10,315,8,294,10,281,15,276,21,278,28"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/c_str.html#" title=" " alt="" coords="479,8,595,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,36,464,27,465,32,403,41"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,36,464,27,465,33,403,41"/>
 <area shape="rect" id="Node000004" href="$d7/d75/postfix__evaluation_8cpp.html#ad77f8c9cc594975756838d498c237cea" title="Pushing operand, also called the number in the array to the stack." alt="" coords="450,57,624,98"/>
-<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="403,58,436,62,435,67,402,63"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="403,58,435,62,434,67,402,63"/>
 </map>

@@ -1,8 +1,8 @@
 <map id="graph::depth_first_search" name="graph::depth_first_search">
 <area shape="rect" id="Node000001" title="initiates depth first search algorithm." alt="" coords="5,47,128,88"/>
 <area shape="rect" id="Node000002" href="$df/dce/namespacegraph.html#a3ae80bc4c6a79d041b4f3a6589eb7fb8" title="Utility function for depth first seach algorithm this function explores the vertex which is passed in..." alt="" coords="182,29,285,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,56,167,50,168,55,128,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,56,166,50,167,55,128,61"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="176,79,291,104"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="128,74,161,78,161,84,128,79"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="205,30,199,21,203,11,214,5,233,3,255,6,265,13,262,17,253,11,233,8,216,10,207,15,205,20,210,28"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="128,74,161,78,160,84,128,79"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="205,30,199,21,203,11,214,5,233,3,254,5,264,12,262,16,252,10,233,8,216,10,207,15,205,20,210,28"/>
 </map>

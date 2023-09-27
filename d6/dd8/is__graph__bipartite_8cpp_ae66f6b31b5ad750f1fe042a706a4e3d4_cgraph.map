@@ -1,11 +1,11 @@
 <map id="main" name="main">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,46,55,72"/>
 <area shape="rect" id="Node000002" href="$d6/dd8/is__graph__bipartite_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title=" " alt="" coords="103,46,146,72"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,56,88,56,88,62,55,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,56,87,56,87,62,55,62"/>
 <area shape="rect" id="Node000003" href="$de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#ad8c10df34357b2cd865c81e0c4f0bd8c" title="Function that add an edge between two nodes or vertices of graph." alt="" coords="194,5,357,46"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,52,179,44,180,50,147,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,52,178,45,179,50,147,57"/>
 <area shape="rect" id="Node000005" href="$de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#a9b0c6400693a5cfff971f768dd5ca5ca" title="function to add edges to our graph" alt="" coords="194,71,357,111"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="147,61,180,68,179,73,146,66"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="147,61,179,68,178,73,146,66"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="405,13,560,39"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="358,23,391,23,391,28,358,28"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="358,23,390,23,390,28,358,28"/>
 </map>

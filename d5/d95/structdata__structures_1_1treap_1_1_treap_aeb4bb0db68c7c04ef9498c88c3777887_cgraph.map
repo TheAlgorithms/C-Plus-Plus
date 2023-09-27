@@ -1,9 +1,9 @@
 <map id="data_structures::treap::Treap::_erase" name="data_structures::treap::Treap::_erase">
 <area shape="rect" id="Node000001" title="Erase a value from the specified subtree (internal method)" alt="" coords="5,35,154,75"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="42,35,40,25,46,16,60,10,80,8,101,11,114,17,112,22,100,16,79,13,61,15,50,20,46,26,47,33"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="42,35,40,25,46,16,60,10,80,8,101,10,114,17,111,21,99,16,79,13,61,15,50,20,46,26,47,33"/>
 <area shape="rect" id="Node000002" href="$d5/d95/structdata__structures_1_1treap_1_1_treap.html#a75a48584a6560de20484fbba6229fd29" title="Rotate without breaking the property of BST." alt="" coords="202,5,350,46"/>
 <area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="154,41,186,36,187,42,154,47"/>
 <area shape="rect" id="Node000003" href="$d5/d95/structdata__structures_1_1treap_1_1_treap.html#aae9facaede462ad924856c4d707646d7" title="Update the subtree size of the node." alt="" coords="398,35,546,75"/>
-<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="154,54,202,55,350,55,383,55,383,60,350,60,202,60,154,60"/>
-<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="351,34,384,39,383,44,350,39"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="154,54,202,55,350,55,382,55,382,60,350,60,202,60,154,60"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="351,34,383,39,382,44,350,39"/>
 </map>

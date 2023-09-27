@@ -1,6 +1,6 @@
 <map id="operations_on_datastructures::reverse_binary_tree::BinaryTree::reverse" name="operations_on_datastructures::reverse_binary_tree::BinaryTree::reverse">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,220,85"/>
 <area shape="rect" id="Node000002" href="$de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#af6f974381f523fdb981fc2d843bbf4a1" title="Reverses a Binary Tree recursively by swapping the left and right subtrees and their children." alt="" coords="268,29,482,85"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,55,253,55,253,60,220,60"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="324,29,324,19,334,10,351,5,375,3,403,6,420,13,418,18,402,11,375,8,352,10,336,15,329,21,329,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,55,252,55,252,60,220,60"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="324,29,324,19,334,10,351,5,375,3,402,5,419,12,417,17,401,10,375,8,352,10,336,15,329,21,329,29"/>
 </map>

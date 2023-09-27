@@ -1,31 +1,31 @@
 <map id="durand_kerner_algo" name="durand_kerner_algo">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,203,140,228"/>
 <area shape="rect" id="Node000002" href="$da/df2/durand__kerner__roots_8cpp.html#a024b8bc4755863315456d573a6732377" title=" " alt="" coords="200,5,327,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,201,91,169,114,126,146,80,186,40,192,36,195,41,189,44,150,83,118,128,95,171,81,204"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,201,91,169,114,126,146,80,186,40,191,37,194,41,189,44,150,83,118,128,95,171,81,204"/>
 <area shape="rect" id="Node000003" href="$da/df2/durand__kerner__roots_8cpp.html#a90219e35062007d1f1b68e9af071ab5c" title=" " alt="" coords="217,104,310,130"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="90,200,132,170,186,138,202,132,204,137,189,143,135,174,93,204"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="90,200,132,170,186,138,201,132,204,137,189,143,135,174,93,204"/>
 <area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/program/exit.html#" title=" " alt="" coords="229,153,298,179"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="125,199,214,176,216,181,126,205"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="125,199,214,176,215,181,126,205"/>
 <area shape="rect" id="Node000008" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/is_open.html#" title=" " alt="" coords="188,203,339,228"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="140,213,173,213,173,218,140,218"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="140,213,172,213,172,218,140,218"/>
 <area shape="rect" id="Node000009" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/isinf.html#" title=" " alt="" coords="228,252,299,278"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="126,226,214,250,213,255,125,232"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="126,226,213,249,212,254,125,232"/>
 <area shape="rect" id="Node000010" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/isnan.html#" title=" " alt="" coords="224,301,303,327"/>
 <area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="93,227,135,257,189,288,211,297,209,302,186,293,132,261,90,231"/>
 <area shape="rect" id="Node000011" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="227,351,300,376"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="85,227,126,280,155,311,189,337,214,349,212,354,186,342,152,315,122,284,80,230"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="85,227,126,280,155,311,189,337,214,349,211,354,186,342,152,315,122,284,80,230"/>
 <area shape="rect" id="Node000012" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/open.html#" title=" " alt="" coords="196,400,331,426"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="81,227,95,260,118,303,150,348,189,387,195,390,192,395,186,391,146,351,114,305,91,262,76,230"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="81,227,95,260,118,303,150,348,189,387,194,390,191,394,186,391,146,351,114,305,91,262,76,230"/>
 <area shape="rect" id="Node000013" href="$da/df2/durand__kerner__roots_8cpp.html#ae2ab49ba1969d7a5988f9bc2c8924569" title=" " alt="" coords="214,55,313,80"/>
 <area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="80,201,122,147,152,116,186,89,199,82,201,87,189,94,155,120,126,151,85,204"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/imag.html#" title=" " alt="" coords="387,55,519,80"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="309,102,386,82,387,87,311,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="309,102,385,82,387,87,311,107"/>
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/real.html#" title=" " alt="" coords="391,104,516,130"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="310,114,376,114,376,120,310,120"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="310,114,375,114,375,120,310,120"/>
 <area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/c/fprintf.html#" title=" " alt="" coords="408,153,498,179"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="311,126,394,148,393,153,309,131"/>
-<area shape="poly" id="edge13_Node000013_Node000004" title=" " alt="" coords="313,65,372,65,372,70,313,70"/>
-<area shape="poly" id="edge15_Node000013_Node000005" title=" " alt="" coords="314,78,388,97,387,102,312,83"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="311,126,394,148,392,153,309,131"/>
+<area shape="poly" id="edge13_Node000013_Node000004" title=" " alt="" coords="313,65,371,65,371,70,313,70"/>
+<area shape="poly" id="edge15_Node000013_Node000005" title=" " alt="" coords="314,78,387,97,386,102,312,83"/>
 <area shape="rect" id="Node000014" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="418,5,489,31"/>
-<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="312,52,403,28,404,33,314,57"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="312,52,402,29,403,34,314,57"/>
 </map>

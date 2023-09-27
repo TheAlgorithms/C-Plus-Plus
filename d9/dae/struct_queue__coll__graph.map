@@ -1,6 +1,6 @@
 <map id="Queue" name="Queue">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,188,65,214"/>
 <area shape="rect" id="Node000002" href="$d5/da1/structnode.html" title=" " alt="" coords="10,38,60,63"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="38,78,38,188,32,188,32,78"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="65,31,80,35,86,50,83,62,74,69,62,70,50,66,51,61,63,65,72,64,79,59,81,50,76,39,64,36"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="38,79,38,188,32,188,32,79"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="66,31,80,35,86,50,83,62,74,69,62,70,50,66,51,61,63,65,72,64,79,59,81,50,76,39,64,36"/>
 </map>

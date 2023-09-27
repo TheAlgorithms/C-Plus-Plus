@@ -1,7 +1,7 @@
 <map id="main" name="main">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,31,55,56"/>
 <area shape="rect" id="Node000002" href="$df/dc8/successive__approximation_8cpp.html#a79c1d08919ff7780a5d7723172602389" title=" " alt="" coords="105,5,143,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,34,90,24,91,30,56,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,34,89,25,91,30,56,39"/>
 <area shape="rect" id="Node000003" href="$df/dc8/successive__approximation_8cpp.html#ae89c36add7c55298c5195d0a83de1456" title=" " alt="" coords="103,55,145,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,47,89,56,87,61,55,52"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,47,88,56,87,61,55,52"/>
 </map>

@@ -1,40 +1,40 @@
 <map id="test2" name="test2">
 <area shape="rect" id="Node000001" title="simple test to insert continuous number of range [0, n), and print the tree" alt="" coords="5,270,56,296"/>
 <area shape="rect" id="Node000002" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a6749ebb40710c9752a2771eda03c6b3e" title="Insert item to tree." alt="" coords="113,160,258,201"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="44,268,102,219,125,206,127,210,105,224,47,272"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="44,268,102,219,124,206,127,211,105,224,47,272"/>
 <area shape="rect" id="Node000012" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a2e9a9db7792cf5383f4c4cc418255165" title="Print tree into a dot file." alt="" coords="115,233,256,274"/>
-<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="56,276,100,267,101,272,57,281"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="56,276,99,267,100,273,57,281"/>
 <area shape="rect" id="Node000017" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/to_string.html#" title=" " alt="" coords="137,298,234,324"/>
-<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="57,285,123,297,122,302,56,290"/>
+<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="57,285,122,297,121,302,56,290"/>
 <area shape="rect" id="Node000018" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a84ab7b4fe7442b5e2eeed8c050bb86bd" title="In&#45;order traverse." alt="" coords="104,372,267,413"/>
 <area shape="poly" id="edge18_Node000001_Node000018" title=" " alt="" coords="51,294,105,334,143,361,140,365,102,338,48,298"/>
 <area shape="rect" id="Node000003" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a07811b3c564a3a443b106c9aa717629d" title="A insert implementation of pre&#45;split." alt="" coords="315,133,506,174"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="258,169,300,164,301,169,259,174"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="258,169,299,164,300,169,259,174"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/unique_ptr/get.html#" title=" " alt="" coords="598,84,732,109"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="503,130,590,110,591,116,505,135"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="503,130,589,111,590,116,505,135"/>
 <area shape="rect" id="Node000005" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ad37e29e2a4a6cc0eb65cbd5595e1da95" title="Merge node to a not&#45;full target node." alt="" coords="554,133,776,174"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="507,151,539,151,539,156,507,156"/>
 <area shape="rect" id="Node000011" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a370b625ca9f16bbef2b65e024ef78ea9" title="Split a 4&#45;node to 1 parent and 2 children, and return the parent node." alt="" coords="580,199,750,239"/>
-<area shape="poly" id="edge11_Node000003_Node000011" title=" " alt="" coords="493,172,570,192,568,197,492,177"/>
+<area shape="poly" id="edge11_Node000003_Node000011" title=" " alt="" coords="493,172,569,192,568,197,492,177"/>
 <area shape="rect" id="Node000006" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a8e809ae85ae00e937f67ddb76951b6bb" title="Insert item to the proper position of the node and return the position index." alt="" coords="824,72,979,113"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="745,130,809,113,810,119,747,135"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="745,130,808,114,809,119,747,135"/>
 <area shape="rect" id="Node000009" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a4a37381c0ef93d5ae2118b2e554974dd" title="Check if node is a full (4&#45;node)" alt="" coords="1058,136,1199,177"/>
-<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="776,152,1043,153,1043,159,776,157"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="776,152,1042,153,1042,159,776,157"/>
 <area shape="rect" id="Node000010" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ab4e5f7b7b260bb81d9441652cc124c74" title="Set child pointer to the position of index." alt="" coords="828,191,975,231"/>
-<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="752,172,815,187,813,192,751,177"/>
+<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="752,172,814,187,813,192,751,177"/>
 <area shape="rect" id="Node000007" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a22fd25c6c811c64b6b27b0850d8c532f" title="Check if item is in the node." alt="" coords="1055,5,1203,46"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="972,69,1042,48,1043,53,974,74"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="972,69,1041,48,1043,54,974,74"/>
 <area shape="rect" id="Node000008" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a306a30931f54c84098b38d6bc8f4a956" title="Insert a value to the index position." alt="" coords="1027,71,1230,111"/>
-<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="979,89,1012,89,1012,94,979,95"/>
-<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="977,111,1045,130,1043,135,976,116"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="979,89,1011,89,1011,94,979,95"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="977,111,1044,130,1042,135,976,116"/>
 <area shape="rect" id="Node000013" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " alt="" coords="342,198,479,224"/>
-<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="256,238,327,224,328,229,257,243"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="256,238,326,224,327,229,257,243"/>
 <area shape="rect" id="Node000014" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="375,368,446,393"/>
-<area shape="poly" id="edge14_Node000012_Node000014" title=" " alt="" coords="250,272,269,284,285,300,293,317,301,332,317,348,338,360,362,368,360,373,336,364,313,352,297,336,288,319,280,303,265,288,248,277"/>
+<area shape="poly" id="edge14_Node000012_Node000014" title=" " alt="" coords="250,272,269,284,285,300,293,317,301,332,317,348,338,360,361,368,359,373,336,364,313,352,297,336,288,319,280,303,265,288,248,277"/>
 <area shape="rect" id="Node000015" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/open.html#" title=" " alt="" coords="344,248,478,273"/>
-<area shape="poly" id="edge15_Node000012_Node000015" title=" " alt="" coords="257,253,329,255,329,261,256,258"/>
+<area shape="poly" id="edge15_Node000012_Node000015" title=" " alt="" coords="257,253,328,255,328,261,256,258"/>
 <area shape="rect" id="Node000016" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#af260f0760344771bf8fce4fc9b1739be" title="Print the tree to a dot file. You can convert it to picture with graphviz." alt="" coords="326,297,496,338"/>
-<area shape="poly" id="edge16_Node000012_Node000016" title=" " alt="" coords="257,271,323,290,321,295,256,276"/>
-<area shape="poly" id="edge19_Node000018_Node000014" title=" " alt="" coords="267,385,360,380,360,386,267,391"/>
-<area shape="poly" id="edge20_Node000018_Node000018" title=" " alt="" coords="155,372,154,362,159,353,169,347,185,345,203,348,213,355,210,359,201,353,185,351,171,352,162,357,159,363,161,371"/>
+<area shape="poly" id="edge16_Node000012_Node000016" title=" " alt="" coords="257,271,322,290,321,295,256,276"/>
+<area shape="poly" id="edge19_Node000018_Node000014" title=" " alt="" coords="267,385,359,380,359,386,267,391"/>
+<area shape="poly" id="edge20_Node000018_Node000018" title=" " alt="" coords="155,372,154,362,159,353,169,347,185,345,203,348,213,354,210,359,201,353,185,351,171,352,162,357,159,363,161,371"/>
 </map>

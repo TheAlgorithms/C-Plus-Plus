@@ -1,5 +1,5 @@
 <map id="sorting::merge" name="sorting::merge">
 <area shape="rect" id="Node000001" title="merges 2 sorted adjacent segments into a larger sorted segment" alt="" coords="5,5,110,31"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/move.html#" title=" " alt="" coords="158,5,237,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,16,143,16,143,21,110,21"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,16,142,16,142,21,110,21"/>
 </map>

@@ -1,9 +1,9 @@
 <map id="CombSort" name="CombSort">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,31,86,56"/>
 <area shape="rect" id="Node000002" href="$d9/dfd/comb__sort_8cpp.html#aede08143e63105faba10e9ee8e745fd5" title=" " alt="" coords="134,5,232,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,33,119,27,120,33,87,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,33,118,27,119,33,87,39"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="144,55,222,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="87,48,129,56,128,61,86,53"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="87,48,129,55,128,61,86,53"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="280,5,352,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="232,16,265,16,265,21,232,21"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="232,16,264,16,264,21,232,21"/>
 </map>

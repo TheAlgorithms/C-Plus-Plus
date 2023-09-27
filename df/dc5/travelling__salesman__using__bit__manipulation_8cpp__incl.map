@@ -1,13 +1,13 @@
 <map id="bit_manipulation/travelling_salesman_using_bit_manipulation.cpp" name="bit_manipulation/travelling_salesman_using_bit_manipulation.cpp">
 <area shape="rect" id="Node000001" title="Implementation to [Travelling Salesman problem using bit&#45;masking] (https://www.geeksforgeeks...." alt="" coords="104,5,352,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,80,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,49,85,90,83,85,181,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,49,86,90,84,85,181,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="104,94,168,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="207,48,163,86,159,82,203,44"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="207,48,163,86,160,82,203,44"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="192,94,264,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="231,46,231,79,225,79,225,46"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="231,46,231,78,225,78,225,46"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="287,94,339,120"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="251,44,291,82,288,86,247,48"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="251,44,291,81,287,85,247,48"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="363,94,421,120"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="270,44,355,85,352,90,268,49"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="270,44,354,85,352,89,268,49"/>
 </map>

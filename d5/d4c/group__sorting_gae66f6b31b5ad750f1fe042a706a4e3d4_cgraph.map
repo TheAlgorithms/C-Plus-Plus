@@ -1,8 +1,8 @@
 <map id="main" name="main">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,55,55"/>
 <area shape="rect" id="Node000002" href="$d5/d4c/group__sorting.html#gab6b14fea48d9841e29b9fc26be6e05d7" title=" " alt="" coords="103,29,184,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,40,88,40,88,45,55,45"/>
-<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="123,30,119,21,122,11,130,5,143,3,158,6,166,13,162,16,156,10,143,8,132,10,126,14,125,20,128,28"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,40,87,40,87,45,55,45"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="123,30,119,21,122,11,130,5,143,3,158,5,165,12,162,16,155,10,143,8,132,10,126,14,125,20,128,28"/>
 <area shape="rect" id="Node000003" href="$d5/d4c/group__sorting.html#ga460c61cd948203b4816bef2accb3fc73" title=" " alt="" coords="232,29,289,55"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="184,40,217,40,217,45,184,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="184,40,216,40,216,45,184,45"/>
 </map>

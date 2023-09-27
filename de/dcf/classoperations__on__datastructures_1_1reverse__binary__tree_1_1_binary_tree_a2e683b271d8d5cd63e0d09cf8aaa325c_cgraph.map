@@ -1,11 +1,11 @@
 <map id="operations_on_datastructures::reverse_binary_tree::BinaryTree::get_level_order" name="operations_on_datastructures::reverse_binary_tree::BinaryTree::get_level_order">
 <area shape="rect" id="Node000001" title="Level order traversal of a tree consists of visiting its elements, top to bottom, left to right...." alt="" coords="5,65,220,121"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/empty.html#" title=" " alt="" coords="268,5,394,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,62,276,34,278,39,197,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,62,276,34,277,39,197,67"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/front.html#" title=" " alt="" coords="273,55,389,80"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="219,78,257,73,258,79,220,83"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/pop.html#" title=" " alt="" coords="275,104,387,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="220,102,261,106,260,112,219,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="220,102,260,106,259,112,219,107"/>
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/push.html#" title=" " alt="" coords="272,153,390,179"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="198,119,277,146,276,151,196,124"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="198,119,277,145,275,150,196,124"/>
 </map>

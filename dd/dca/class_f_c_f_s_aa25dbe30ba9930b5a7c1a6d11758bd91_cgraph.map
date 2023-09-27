@@ -1,9 +1,0 @@
-<map id="FCFS::scheduleForFcfs" name="FCFS::scheduleForFcfs">
-<area shape="rect" id="Node000001" title="Algorithm for scheduling CPU processes according to the First Come First Serve(FCFS) scheduling algor..." alt="" coords="5,70,167,96"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/priority_queue/empty.html#" title=" " alt="" coords="229,5,358,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,67,214,45,215,50,136,72"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/priority_queue/pop.html#" title=" " alt="" coords="215,70,372,96"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="167,80,200,80,200,86,167,86"/>
-<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/priority_queue/top.html#" title=" " alt="" coords="216,120,371,145"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="144,94,223,113,222,118,143,99"/>
-</map>

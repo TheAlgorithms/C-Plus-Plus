@@ -1,10 +1,10 @@
 <map id="tests" name="tests">
 <area shape="rect" id="Node000001" title="Self&#45;test implementations." alt="" coords="5,31,56,56"/>
 <area shape="rect" id="Node000002" href="$d3/db2/boyer__moore_8cpp.html#acb8f69e7901ee7459d98bd4b9dda79d9" title="A test case in which we search for every appearance of the word &#39;and&#39;." alt="" coords="104,5,175,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,35,88,27,90,32,57,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,35,88,27,89,33,57,40"/>
 <area shape="rect" id="Node000004" href="$d3/db2/boyer__moore_8cpp.html#ac8fac0dd4b19973da103a434143a16d2" title="A test case in which we search for every appearance of the word &#39;pat&#39;." alt="" coords="105,55,174,80"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="57,46,91,54,90,59,55,52"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="223,31,338,56"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="176,22,209,28,208,33,175,27"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="173,59,208,53,209,58,174,64"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="173,59,207,53,208,59,174,64"/>
 </map>

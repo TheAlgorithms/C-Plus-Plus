@@ -1,17 +1,17 @@
 <map id="numerical_methods/composite_simpson_rule.cpp" name="numerical_methods/composite_simpson_rule.cpp">
 <area shape="rect" id="Node000001" title="Implementation of the Composite Simpson Rule for the approximation." alt="" coords="190,5,389,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,70,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,49,85,94,83,88,226,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,49,85,93,84,88,226,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="94,94,152,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="249,49,163,90,160,85,247,44"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="249,49,163,89,161,85,247,44"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="175,94,236,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="271,48,231,86,227,82,267,44"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="271,48,231,85,228,81,267,44"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="260,94,319,120"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="292,46,292,79,287,79,287,46"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="292,46,292,78,287,78,287,46"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="343,94,420,120"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="314,44,358,82,354,86,311,48"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="445,94,516,120"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="338,44,439,86,437,90,336,49"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="338,44,438,85,436,90,336,49"/>
 <area shape="rect" id="Node000008" title=" " alt="" coords="540,94,586,120"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="364,44,526,91,524,96,362,49"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="364,44,525,90,524,96,362,49"/>
 </map>

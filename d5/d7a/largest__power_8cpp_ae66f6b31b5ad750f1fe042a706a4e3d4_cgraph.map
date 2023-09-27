@@ -1,9 +1,9 @@
 <map id="main" name="main">
 <area shape="rect" id="Node000001" title="Main function." alt="" coords="5,31,55,56"/>
 <area shape="rect" id="Node000002" href="$d5/d7a/largest__power_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Function for testing largestPower function. test cases and assert statement." alt="" coords="103,31,146,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,41,88,41,88,46,55,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,41,87,41,87,46,55,46"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="226,5,297,31"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,37,210,25,211,30,147,42"/>
 <area shape="rect" id="Node000004" href="$dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f" title="Function to calculate largest power." alt="" coords="194,55,328,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="147,45,180,50,179,56,146,50"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="147,45,179,50,179,56,146,50"/>
 </map>

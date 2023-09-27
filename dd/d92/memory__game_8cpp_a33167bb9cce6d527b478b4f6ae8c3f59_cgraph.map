@@ -1,4 +1,4 @@
 <map id="games::memory_game::is_number" name="games::memory_game::is_number">
 <area shape="rect" id="Node000001" title="Utility function to verify if the given input is a number or not. This is very useful to prevent the ..." alt="" coords="5,29,160,70"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="53,29,51,19,56,11,67,5,83,3,100,5,110,12,107,16,98,10,82,8,68,10,60,14,56,20,58,28"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="53,29,51,19,56,11,67,5,83,3,100,5,110,11,107,16,98,10,82,8,68,10,60,14,56,20,58,28"/>
 </map>

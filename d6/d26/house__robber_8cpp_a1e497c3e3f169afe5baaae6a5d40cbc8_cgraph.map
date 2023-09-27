@@ -1,6 +1,6 @@
 <map id="dynamic_programming::house_robber::houseRobber" name="dynamic_programming::house_robber::houseRobber">
 <area shape="rect" id="Node000001" title="The main function that implements the House Robber algorithm using dynamic programming." alt="" coords="5,29,198,70"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="67,29,65,19,71,10,83,5,102,3,122,5,133,12,131,16,120,10,101,8,85,10,74,14,70,20,72,28"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="67,29,65,19,71,10,83,5,102,3,121,5,133,11,130,16,120,10,101,8,85,10,74,14,70,20,72,28"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="246,37,318,63"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="198,47,231,47,231,52,198,52"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="198,47,230,47,230,52,198,52"/>
 </map>

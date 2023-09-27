@@ -1,15 +1,15 @@
 <map id="operations_on_datastructures/trie_multiple_search.cpp" name="operations_on_datastructures/trie_multiple_search.cpp">
 <area shape="rect" id="Node000001" title="Trie datastructure with search variants" alt="" coords="168,5,360,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,80,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,49,91,91,89,86,208,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,49,91,91,90,86,208,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="104,94,168,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="234,49,169,88,166,84,231,44"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="234,49,170,88,167,83,231,44"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="192,94,253,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="256,48,238,82,233,79,251,45"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="256,48,238,81,234,79,251,45"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="276,94,337,120"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="277,45,295,79,291,82,272,48"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="277,45,295,79,290,81,272,48"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="360,94,432,120"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="298,44,365,84,362,88,295,49"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="298,44,364,83,361,88,295,49"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="456,94,512,120"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="320,44,442,88,441,93,318,49"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="320,44,442,88,440,93,318,49"/>
 </map>

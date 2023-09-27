@@ -1,9 +1,9 @@
 <map id="range_queries::perSegTree::update" name="range_queries::perSegTree::update">
 <area shape="rect" id="Node000001" title="Doing range update, checking at every node if it has some value to be propagated. All nodes affected ..." alt="" coords="5,35,183,75"/>
-<area shape="poly" id="edge4_Node000001_Node000001" title=" " alt="" coords="51,35,49,25,56,16,71,10,94,8,119,11,133,17,131,22,118,16,94,13,73,15,60,20,55,26,57,33"/>
+<area shape="poly" id="edge4_Node000001_Node000001" title=" " alt="" coords="51,35,49,25,56,16,71,10,94,8,118,10,133,17,131,22,117,16,94,13,73,15,60,20,55,26,57,33"/>
 <area shape="rect" id="Node000002" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#ace7f57935b3bb9446f11c239fd89ae79" title="If there is some value to be propagated to the passed node, value is added to the node and the childr..." alt="" coords="231,5,408,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,41,215,36,216,42,183,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,41,215,37,215,42,183,46"/>
 <area shape="rect" id="Node000003" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a0cec4b77d264521717cf9b0482c45817" title="Creating a new node with the same values of curr node." alt="" coords="456,35,633,75"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="183,54,231,55,408,55,441,55,441,60,408,60,231,60,183,60"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="408,35,441,39,441,44,408,40"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="183,54,231,55,408,55,440,55,440,60,408,60,231,60,183,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="408,35,441,39,440,44,408,40"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="operations_on_datastructures::trie_operations::Tnode::DeleteFrom" name="operations_on_datastructures::trie_operations::Tnode::DeleteFrom">
 <area shape="rect" id="Node000001" title="Function recursively deletes the substring character by character iterating through the string to be ..." alt="" coords="5,29,198,85"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="62,29,62,19,70,10,83,5,102,3,123,5,136,13,134,17,122,11,101,8,84,10,73,15,67,21,67,29"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="62,29,62,19,70,10,83,5,102,3,123,5,136,12,133,17,121,10,101,8,84,10,73,15,67,21,67,29"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="246,44,357,70"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="198,55,231,55,231,60,198,60"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="198,55,230,55,230,60,198,60"/>
 </map>

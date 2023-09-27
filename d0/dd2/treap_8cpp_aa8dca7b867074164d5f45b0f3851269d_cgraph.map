@@ -1,34 +1,34 @@
 <map id="test" name="test">
 <area shape="rect" id="Node000001" title="Self&#45;test implementations." alt="" coords="5,186,49,212"/>
 <area shape="rect" id="Node000002" href="$d5/d95/structdata__structures_1_1treap_1_1_treap.html#a9ea2becd904e2e7d22f23a001b444469" title="Erase element (External method)" alt="" coords="106,15,254,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="29,185,51,129,70,96,95,66,101,62,104,66,99,70,74,99,56,131,34,187"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="29,185,51,129,70,96,95,66,100,62,103,66,99,70,74,99,56,131,34,187"/>
 <area shape="rect" id="Node000006" href="$d5/d95/structdata__structures_1_1treap_1_1_treap.html#ab2db3ad3aecc240011e0c8b8604d2c69" title="Get the KTH largest value (External method)" alt="" coords="106,80,254,121"/>
-<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="37,184,62,158,95,131,105,125,108,130,98,136,66,162,41,188"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="37,184,62,158,95,131,105,126,107,130,98,136,66,162,41,188"/>
 <area shape="rect" id="Node000008" href="$d5/d95/structdata__structures_1_1treap_1_1_treap.html#a767b28f9911fc32b8462862be058a4a4" title="Get the successor node of element k." alt="" coords="106,145,254,186"/>
-<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="49,192,91,182,92,188,50,197"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="49,192,90,183,91,188,50,197"/>
 <area shape="rect" id="Node000009" href="$d5/d95/structdata__structures_1_1treap_1_1_treap.html#ab8b9899f22070cfa01db5bf874296126" title="Get the predecessor node of element k." alt="" coords="97,211,263,251"/>
-<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="50,201,83,208,81,213,49,206"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="50,201,82,208,81,213,49,206"/>
 <area shape="rect" id="Node000010" href="$d5/d95/structdata__structures_1_1treap_1_1_treap.html#ac94e9d69305940f6d8804031455af039" title="Get the rank of specified element (External method)" alt="" coords="106,276,254,317"/>
-<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="42,210,66,236,98,261,108,267,105,271,95,265,63,240,38,214"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="42,210,66,236,98,261,107,266,105,271,95,265,63,240,38,214"/>
 <area shape="rect" id="Node000012" href="$d5/d95/structdata__structures_1_1treap_1_1_treap.html#a5e884d2686aff501ef589b0d1185492f" title="Insert element (External method)" alt="" coords="106,341,254,382"/>
-<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="34,211,56,266,74,298,99,326,104,331,101,335,95,330,70,301,51,269,30,213"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="34,211,56,266,74,298,99,326,103,331,100,335,95,330,70,301,51,269,30,213"/>
 <area shape="rect" id="Node000003" href="$d5/d95/structdata__structures_1_1treap_1_1_treap.html#aeb4bb0db68c7c04ef9498c88c3777887" title="Erase a value from the specified subtree (internal method)" alt="" coords="311,29,459,70"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="255,38,296,41,296,46,254,43"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="348,29,346,19,352,10,365,5,385,3,407,5,420,12,417,17,406,10,385,8,367,10,355,15,351,20,353,28"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="255,38,295,41,295,46,254,43"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="348,29,346,19,352,10,365,5,385,3,407,5,419,11,417,16,405,10,385,8,367,10,355,15,351,20,353,28"/>
 <area shape="rect" id="Node000004" href="$d5/d95/structdata__structures_1_1treap_1_1_treap.html#a75a48584a6560de20484fbba6229fd29" title="Rotate without breaking the property of BST." alt="" coords="507,140,656,181"/>
-<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="436,68,461,81,539,129,537,134,458,85,434,73"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="436,68,461,81,539,129,536,133,458,85,434,73"/>
 <area shape="rect" id="Node000005" href="$d5/d95/structdata__structures_1_1treap_1_1_treap.html#aae9facaede462ad924856c4d707646d7" title="Update the subtree size of the node." alt="" coords="704,140,852,181"/>
-<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="461,68,690,133,689,138,459,73"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="656,158,689,158,689,163,656,163"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="461,68,689,133,688,138,459,73"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="656,158,688,158,688,163,656,163"/>
 <area shape="rect" id="Node000007" href="$d5/d95/structdata__structures_1_1treap_1_1_treap.html#ad08520c0617eb8dcfcbfa90d258aa6b2" title="Find the KTH largest value (internal method)" alt="" coords="311,119,459,159"/>
-<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="255,112,297,120,296,125,254,117"/>
-<area shape="poly" id="edge9_Node000007_Node000007" title=" " alt="" coords="348,119,346,109,352,100,365,94,385,92,407,95,420,101,417,106,406,100,385,97,367,99,355,104,351,110,353,117"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="255,112,296,120,295,125,254,117"/>
+<area shape="poly" id="edge9_Node000007_Node000007" title=" " alt="" coords="348,119,346,109,352,100,365,94,385,92,407,94,419,101,417,105,405,100,385,97,367,99,355,104,351,110,353,117"/>
 <area shape="rect" id="Node000011" href="$d5/d95/structdata__structures_1_1treap_1_1_treap.html#a9a77d22f97add119123108211c6655ec" title="Query the rank of specified element (internal method)" alt="" coords="311,223,459,263"/>
-<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="254,274,296,263,297,269,255,280"/>
-<area shape="poly" id="edge14_Node000011_Node000011" title=" " alt="" coords="348,223,346,213,352,204,365,198,385,196,407,199,420,205,417,210,406,204,385,201,367,203,355,208,351,214,353,221"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="254,274,295,264,296,269,255,280"/>
+<area shape="poly" id="edge14_Node000011_Node000011" title=" " alt="" coords="348,223,346,213,352,204,365,198,385,196,407,198,419,205,417,209,405,204,385,201,367,203,355,208,351,214,353,221"/>
 <area shape="rect" id="Node000013" href="$d5/d95/structdata__structures_1_1treap_1_1_treap.html#a6a023a4f0c42fb8ed5b3368fba1a5f2c" title="Insert a value into the specified subtree (internal method)" alt="" coords="311,312,459,353"/>
-<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="254,348,296,342,296,348,255,354"/>
-<area shape="poly" id="edge18_Node000013_Node000004" title=" " alt="" coords="413,309,458,273,547,189,551,193,461,277,416,313"/>
-<area shape="poly" id="edge19_Node000013_Node000005" title=" " alt="" coords="433,309,715,185,717,189,435,314"/>
-<area shape="poly" id="edge17_Node000013_Node000013" title=" " alt="" coords="348,312,346,302,352,293,365,287,385,285,407,288,420,294,417,299,406,293,385,291,367,293,355,297,351,303,353,311"/>
+<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="254,348,295,342,296,348,255,354"/>
+<area shape="poly" id="edge18_Node000013_Node000004" title=" " alt="" coords="413,309,458,273,547,190,550,194,461,277,416,313"/>
+<area shape="poly" id="edge19_Node000013_Node000005" title=" " alt="" coords="433,309,714,185,717,190,435,314"/>
+<area shape="poly" id="edge17_Node000013_Node000013" title=" " alt="" coords="348,312,346,302,352,293,365,287,385,285,407,288,419,294,417,299,405,293,385,291,367,293,355,297,351,303,353,311"/>
 </map>

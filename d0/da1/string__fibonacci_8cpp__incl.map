@@ -1,7 +1,7 @@
 <map id="math/string_fibonacci.cpp" name="math/string_fibonacci.cpp">
 <area shape="rect" id="Node000001" title="This Programme returns the Nth fibonacci as a string." alt="" coords="5,5,176,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="11,79,82,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,33,64,68,59,65,81,30"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,33,64,67,60,64,81,30"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="106,79,166,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="100,30,123,65,118,68,96,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="100,30,122,64,118,67,96,33"/>
 </map>

@@ -1,13 +1,13 @@
 <map id="data_structures::trie_using_hashmap::Trie::delete_word" name="data_structures::trie_using_hashmap::Trie::delete_word">
 <area shape="rect" id="Node000001" title="delete a word/string from a trie" alt="" coords="5,89,155,145"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/back.html#" title=" " alt="" coords="217,5,332,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,86,201,40,215,34,217,39,204,45,123,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,86,201,40,214,34,216,39,204,45,123,91"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/stack/pop.html#" title=" " alt="" coords="220,55,329,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="154,95,206,82,208,87,156,100"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="154,95,205,82,207,87,156,100"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/pop_back.html#" title=" " alt="" coords="203,104,346,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="155,114,188,114,188,120,155,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="155,114,187,114,187,120,155,120"/>
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/stack/push.html#" title=" " alt="" coords="217,153,332,179"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="156,133,208,147,206,152,154,138"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="156,133,207,146,205,152,154,138"/>
 <area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/stack/top.html#" title=" " alt="" coords="222,203,327,228"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="123,143,204,189,217,195,215,200,201,194,121,147"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="123,143,204,189,216,194,214,199,201,194,121,147"/>
 </map>

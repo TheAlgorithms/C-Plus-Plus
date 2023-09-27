@@ -1,25 +1,25 @@
 <map id="test_remove" name="test_remove">
 <area shape="rect" id="Node000001" title="Function for testing remove()." alt="" coords="5,226,99,252"/>
 <area shape="rect" id="Node000002" href="$d9/dde/classbinary__search__tree.html#aa4f84b2eec9b9201af1840868ddb5fb2" title="Recursive function to check if a value is in the BST." alt="" coords="147,29,278,70"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="56,225,87,158,113,117,145,80,148,77,151,81,149,84,117,120,91,160,61,227"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="56,225,87,158,113,117,145,80,147,77,151,81,149,84,117,120,91,160,61,227"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="177,94,248,120"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="61,224,96,182,145,137,164,125,167,129,148,141,100,186,65,227"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="61,224,96,182,145,137,163,125,166,130,148,141,100,186,65,227"/>
 <area shape="rect" id="Node000004" href="$d9/dde/classbinary__search__tree.html#a75f897af6aa732a9901454401c869bcb" title="Recursive function to find the maximum value in the BST." alt="" coords="326,239,457,279"/>
-<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="68,224,102,200,146,180,183,171,212,168,242,171,279,180,322,201,359,227,356,231,320,205,277,186,241,176,213,173,184,177,148,186,105,205,71,228"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="68,224,102,200,146,180,183,171,212,168,242,171,279,180,322,200,358,226,355,231,319,205,277,186,241,176,213,173,184,177,148,186,105,205,71,228"/>
 <area shape="rect" id="Node000005" href="$d9/dde/classbinary__search__tree.html#af9a2c7c187a7ca3142c77ce342ef3153" title="Recursive function to find the minimum value in the BST." alt="" coords="147,219,278,259"/>
-<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="99,236,132,236,132,242,99,242"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="99,236,131,236,131,242,99,242"/>
 <area shape="rect" id="Node000006" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="147,308,278,349"/>
-<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="78,250,163,298,161,303,76,255"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="78,250,162,298,160,302,76,255"/>
 <area shape="rect" id="Node000007" href="$d9/dde/classbinary__search__tree.html#af4a865ce5244608819b169fc78a41153" title="Recursive function to remove a value from the BST." alt="" coords="147,397,278,438"/>
-<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="65,251,100,300,149,359,177,386,173,389,145,362,96,303,60,254"/>
+<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="65,251,100,300,149,359,176,385,172,389,145,362,96,303,60,254"/>
 <area shape="rect" id="Node000009" href="$d9/dde/classbinary__search__tree.html#a564fe43e7e8f7ecb6f10667a70fbc6f3" title="Get the number of values in the BST." alt="" coords="147,463,278,503"/>
-<area shape="poly" id="edge14_Node000001_Node000009" title=" " alt="" coords="59,251,68,289,85,341,112,397,129,424,149,448,153,452,149,455,145,451,125,427,107,400,80,343,63,290,53,253"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="181,29,180,19,185,11,196,5,212,3,231,5,241,12,238,16,229,10,212,8,197,10,189,14,185,20,187,28"/>
-<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="357,239,356,229,361,220,373,214,392,212,412,215,423,221,421,226,410,220,392,217,375,219,365,224,361,230,363,238"/>
-<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="181,218,180,209,185,200,196,194,212,192,231,195,241,201,238,206,229,200,212,197,197,199,189,204,185,210,187,218"/>
-<area shape="poly" id="edge9_Node000006_Node000006" title=" " alt="" coords="181,308,180,298,185,289,196,283,212,281,231,284,241,291,238,295,229,289,212,287,197,288,189,293,185,299,187,307"/>
-<area shape="poly" id="edge11_Node000007_Node000004" title=" " alt="" coords="235,395,276,358,355,287,359,291,280,362,239,399"/>
-<area shape="poly" id="edge13_Node000007_Node000007" title=" " alt="" coords="181,397,180,387,185,379,196,373,212,371,231,373,241,380,238,384,229,378,212,376,197,378,189,382,185,388,187,396"/>
+<area shape="poly" id="edge14_Node000001_Node000009" title=" " alt="" coords="59,251,68,289,85,341,112,397,129,424,149,448,152,451,148,455,145,451,125,427,107,400,80,343,63,290,53,253"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="181,29,180,19,185,11,196,5,212,3,230,5,241,11,238,16,228,10,212,8,197,10,189,14,185,20,187,28"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="357,239,356,229,361,220,373,214,392,212,411,214,423,221,420,225,410,220,392,217,375,219,365,224,361,230,363,238"/>
+<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="181,218,180,209,185,200,196,194,212,192,230,194,241,201,238,205,228,199,212,197,197,199,189,204,185,210,187,218"/>
+<area shape="poly" id="edge9_Node000006_Node000006" title=" " alt="" coords="181,308,180,298,185,289,196,283,212,281,230,284,241,290,238,295,228,289,212,287,197,288,189,293,185,299,187,307"/>
+<area shape="poly" id="edge11_Node000007_Node000004" title=" " alt="" coords="235,395,276,358,355,287,358,291,280,362,239,399"/>
+<area shape="poly" id="edge13_Node000007_Node000007" title=" " alt="" coords="181,397,180,387,185,379,196,373,212,371,230,373,241,379,238,384,228,378,212,376,197,378,189,382,185,388,187,396"/>
 <area shape="rect" id="Node000008" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/move.html#" title=" " alt="" coords="352,405,431,431"/>
 <area shape="poly" id="edge12_Node000007_Node000008" title=" " alt="" coords="278,415,337,415,337,420,278,420"/>
 </map>

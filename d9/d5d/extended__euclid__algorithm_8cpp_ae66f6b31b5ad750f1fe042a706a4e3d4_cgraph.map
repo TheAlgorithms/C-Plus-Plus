@@ -1,17 +1,17 @@
 <map id="main" name="main">
 <area shape="rect" id="Node000001" title="Main function." alt="" coords="5,104,55,130"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="129,5,201,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="39,102,65,71,101,40,114,33,117,37,104,44,69,75,43,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="39,102,65,71,101,40,114,33,116,37,104,44,69,75,43,105"/>
 <area shape="rect" id="Node000003" href="$d9/d5d/extended__euclid__algorithm_8cpp.html#acba15ca55b3e7dcb91f3c65d72ba052d" title=" " alt="" coords="110,79,220,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="54,110,94,102,96,107,55,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="54,110,94,102,95,107,55,115"/>
 <area shape="rect" id="Node000005" href="$d9/d5d/extended__euclid__algorithm_8cpp.html#a1792ac7c33aaf26b860ab55f5652ab25" title=" " alt="" coords="103,128,227,154"/>
 <area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="55,119,88,124,87,130,54,124"/>
 <area shape="rect" id="Node000007" href="$d4/da0/gcd__iterative__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e" title=" " alt="" coords="144,177,186,203"/>
-<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="50,128,104,164,131,176,129,181,101,169,47,132"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="141,79,137,70,140,61,149,54,165,52,182,55,191,62,187,66,180,60,165,57,151,59,144,64,142,70,146,77"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="50,128,104,164,130,176,128,181,101,169,47,132"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="141,79,137,70,140,61,149,54,165,52,182,55,190,61,187,66,179,60,165,57,151,59,144,64,142,70,146,77"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="282,79,360,104"/>
 <area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="220,89,267,89,267,94,220,94"/>
-<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="207,125,267,106,269,111,209,130"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="207,125,267,106,268,111,209,130"/>
 <area shape="rect" id="Node000006" href="$d9/d5d/extended__euclid__algorithm_8cpp.html#abe92d63a0ff9bda7e304df510d5dd217" title=" " alt="" coords="275,128,367,154"/>
-<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="227,138,260,138,260,144,227,144"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="227,138,259,138,259,144,227,144"/>
 </map>

@@ -1,10 +1,10 @@
 <map id="ciphers::morse::encrypt" name="ciphers::morse::encrypt">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,37,164,63"/>
 <area shape="rect" id="Node000002" href="$d8/d76/morse__code_8cpp.html#ab31773fd11555d21f70d6914138d9535" title=" " alt="" coords="212,29,352,70"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,47,197,47,197,52,164,52"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="252,29,251,19,255,11,266,5,282,3,299,5,309,12,307,16,297,10,282,8,268,10,259,14,256,20,257,28"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,47,196,47,196,52,164,52"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="252,29,251,19,255,11,266,5,282,3,299,5,309,11,306,16,297,10,282,8,268,10,259,14,256,20,257,28"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="400,12,471,37"/>
-<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="352,35,385,30,386,35,353,41"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="352,35,384,30,385,35,353,41"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/program/exit.html#" title=" " alt="" coords="402,61,470,87"/>
-<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="353,58,387,64,387,69,352,63"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="353,58,387,63,386,69,352,63"/>
 </map>

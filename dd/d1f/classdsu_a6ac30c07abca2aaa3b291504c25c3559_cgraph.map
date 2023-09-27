@@ -1,15 +1,15 @@
 <map id="dsu::UnionSet" name="dsu::UnionSet">
 <area shape="rect" id="Node000001" title="Method that combines two disjoint sets to which i and j belongs to and make a single set having a com..." alt="" coords="5,104,110,130"/>
 <area shape="rect" id="Node000002" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="300,29,391,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,102,105,69,130,52,157,40,189,32,223,28,285,30,285,35,223,34,190,37,159,45,132,57,109,73,72,106"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,102,105,69,130,52,157,40,189,32,222,28,285,30,285,35,223,34,190,37,159,45,132,57,109,73,72,106"/>
 <area shape="rect" id="Node000003" href="$dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303" title="A utility function which check whether i and j belongs to same set or not." alt="" coords="158,55,252,80"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="98,101,150,83,151,88,99,106"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="98,101,149,83,150,88,99,106"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="169,104,241,130"/>
-<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="110,114,154,114,154,120,110,120"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="110,114,153,114,153,120,110,120"/>
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="171,153,239,179"/>
-<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="99,128,157,148,156,153,98,133"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="99,128,157,147,155,153,98,133"/>
 <area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="166,203,244,228"/>
-<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="76,128,159,189,165,193,162,197,156,194,73,132"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="321,30,317,21,319,11,329,5,346,3,364,6,373,13,369,17,362,10,346,8,331,10,324,14,322,20,326,28"/>
-<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="252,56,285,50,286,56,253,62"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="76,128,159,189,164,192,161,197,156,194,73,132"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="321,30,317,21,319,11,329,5,346,3,363,5,372,12,369,16,361,10,346,8,331,10,324,14,322,20,326,28"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="252,56,284,50,285,56,253,62"/>
 </map>

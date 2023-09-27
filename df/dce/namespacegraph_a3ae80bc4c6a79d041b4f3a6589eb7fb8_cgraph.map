@@ -1,4 +1,4 @@
 <map id="graph::explore" name="graph::explore">
 <area shape="rect" id="Node000001" title="Utility function for depth first seach algorithm this function explores the vertex which is passed in..." alt="" coords="5,29,109,55"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="38,30,35,21,37,11,45,5,57,3,71,6,77,13,74,16,68,10,57,8,47,10,42,14,40,20,43,28"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="38,30,35,21,37,11,45,5,57,3,70,5,77,12,73,16,68,10,57,8,47,10,42,14,40,20,43,28"/>
 </map>

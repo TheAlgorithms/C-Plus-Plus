@@ -1,4 +1,4 @@
-var modules =
+var topics =
 [
     [ "Open Addressing", "d4/d39/group__open__addressing.html", "d4/d39/group__open__addressing" ],
     [ "Machine Learning Algorithms", "d9/d66/group__machine__learning.html", "d9/d66/group__machine__learning" ],

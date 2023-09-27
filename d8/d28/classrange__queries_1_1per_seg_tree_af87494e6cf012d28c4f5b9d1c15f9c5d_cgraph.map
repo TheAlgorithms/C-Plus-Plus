@@ -1,15 +1,15 @@
 <map id="range_queries::perSegTree::update" name="range_queries::perSegTree::update">
 <area shape="rect" id="Node000001" title="Doing range update by passing the left and right indexes of the range as well as the value to be adde..." alt="" coords="5,47,183,88"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="242,5,397,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,46,243,32,244,37,183,51"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,46,242,32,243,37,183,51"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="262,55,377,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="183,65,247,65,247,70,183,70"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="183,65,246,65,246,70,183,70"/>
 <area shape="rect" id="Node000004" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a24487eda25123bc4d112e8430821a6c6" title="Doing range update, checking at every node if it has some value to be propagated. All nodes affected ..." alt="" coords="231,129,408,169"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="154,86,248,120,246,125,152,91"/>
-<area shape="poly" id="edge7_Node000004_Node000004" title=" " alt="" coords="277,128,275,119,282,109,297,104,319,102,344,104,359,111,357,116,343,110,319,107,298,109,285,114,280,120,282,127"/>
+<area shape="poly" id="edge7_Node000004_Node000004" title=" " alt="" coords="277,128,275,119,282,109,297,104,319,102,344,104,358,110,356,115,342,109,319,107,298,109,285,114,280,120,282,127"/>
 <area shape="rect" id="Node000005" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#ace7f57935b3bb9446f11c239fd89ae79" title="If there is some value to be propagated to the passed node, value is added to the node and the childr..." alt="" coords="456,99,633,140"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="408,135,441,130,441,136,408,140"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="408,135,440,130,441,136,408,140"/>
 <area shape="rect" id="Node000006" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a0cec4b77d264521717cf9b0482c45817" title="Creating a new node with the same values of curr node." alt="" coords="681,129,859,169"/>
 <area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="408,148,456,149,633,149,666,148,666,154,633,154,456,154,408,153"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="634,128,667,133,666,138,633,134"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="634,128,666,133,665,138,633,134"/>
 </map>

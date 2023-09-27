@@ -1,11 +1,11 @@
 <map id="dynamic_programming/coin_change_topdown.cpp" name="dynamic_programming/coin_change_topdown.cpp">
 <area shape="rect" id="Node000001" title="Minimum coins change problem is a problem used to find the minimum number of coins required to comple..." alt="" coords="77,5,257,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,70,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,49,71,88,68,84,133,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,49,72,88,69,83,133,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="93,94,153,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,48,139,82,134,79,154,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,48,139,82,135,79,154,45"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="177,94,248,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="180,45,200,80,196,82,176,48"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="180,45,200,79,195,82,176,48"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="272,94,329,120"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="201,44,269,84,266,88,199,49"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="201,44,268,83,265,88,199,49"/>
 </map>

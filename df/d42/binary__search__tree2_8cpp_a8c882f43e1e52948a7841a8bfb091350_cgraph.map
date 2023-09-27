@@ -1,16 +1,16 @@
 <map id="test_insert" name="test_insert">
 <area shape="rect" id="Node000001" title="Function for testing insert()." alt="" coords="5,176,88,202"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="166,5,237,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="50,175,79,112,103,74,134,41,151,31,153,35,137,46,107,78,84,114,55,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="50,175,79,112,103,74,134,41,150,31,153,36,137,46,107,78,84,114,55,177"/>
 <area shape="rect" id="Node000003" href="$d9/dde/classbinary__search__tree.html#a75f897af6aa732a9901454401c869bcb" title="Recursive function to find the maximum value in the BST." alt="" coords="136,79,267,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="66,173,134,131,144,125,147,130,137,135,69,178"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="66,173,134,131,144,125,146,130,137,135,69,178"/>
 <area shape="rect" id="Node000004" href="$d9/dde/classbinary__search__tree.html#af9a2c7c187a7ca3142c77ce342ef3153" title="Recursive function to find the minimum value in the BST." alt="" coords="136,169,267,209"/>
-<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="88,186,121,186,121,192,88,192"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="88,186,120,186,120,192,88,192"/>
 <area shape="rect" id="Node000005" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="136,258,267,299"/>
-<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="72,200,153,248,151,252,69,204"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="72,200,153,247,150,252,69,204"/>
 <area shape="rect" id="Node000006" href="$d9/dde/classbinary__search__tree.html#a564fe43e7e8f7ecb6f10667a70fbc6f3" title="Get the number of values in the BST." alt="" coords="136,323,267,364"/>
-<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="57,201,88,251,111,281,137,308,143,313,140,317,134,312,107,285,84,255,52,203"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="171,79,170,69,175,60,185,55,201,53,219,55,229,62,226,66,217,60,201,58,187,60,178,64,175,70,177,78"/>
-<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="171,168,170,159,175,150,185,144,201,142,219,144,229,151,226,156,217,149,201,147,187,149,178,154,175,160,177,167"/>
-<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="171,258,170,248,175,239,185,233,201,231,219,234,229,240,226,245,217,239,201,236,187,238,178,243,175,249,177,257"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="57,201,88,251,111,281,137,308,143,312,139,316,134,312,107,285,84,255,52,203"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="171,79,170,69,175,60,185,55,201,53,219,55,229,61,226,66,217,60,201,58,187,60,178,64,175,70,177,78"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="171,168,170,159,175,150,185,144,201,142,219,144,229,151,226,155,217,149,201,147,187,149,178,154,175,160,177,167"/>
+<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="171,258,170,248,175,239,185,233,201,231,219,234,229,240,226,244,217,239,201,236,187,238,178,243,175,249,177,257"/>
 </map>

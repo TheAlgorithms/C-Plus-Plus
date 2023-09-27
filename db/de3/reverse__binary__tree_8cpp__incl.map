@@ -1,11 +1,11 @@
 <map id="operations_on_datastructures/reverse_binary_tree.cpp" name="operations_on_datastructures/reverse_binary_tree.cpp">
 <area shape="rect" id="Node000001" title="Implementation for the Reversing a Binary Tree recursively algorithm." alt="" coords="77,5,270,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,70,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,49,72,89,69,84,138,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,49,72,88,70,84,138,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="94,94,165,120"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,48,146,82,141,79,160,45"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="189,94,246,120"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="187,45,206,79,201,82,182,48"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="270,94,328,120"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="206,44,269,83,266,88,203,49"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="206,44,268,83,265,88,203,49"/>
 </map>

@@ -1,15 +1,15 @@
 <map id="data_structures/skip_list.cpp" name="data_structures/skip_list.cpp">
 <area shape="rect" id="Node000001" title="Data structure for fast searching and insertion in &#160;time." alt="" coords="165,5,304,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,56,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,49,70,93,68,88,183,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,49,71,93,69,88,183,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="80,94,141,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,49,143,88,140,83,202,44"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,49,144,88,141,83,202,44"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="165,94,219,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="226,48,208,82,203,79,222,45"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="226,48,208,81,203,79,222,45"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="243,94,314,120"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="248,45,267,79,262,82,243,48"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="338,94,406,120"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="270,44,340,84,337,89,267,49"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="270,44,339,84,337,88,267,49"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="430,94,487,120"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="291,44,416,88,415,93,290,49"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="291,44,416,88,414,93,290,49"/>
 </map>

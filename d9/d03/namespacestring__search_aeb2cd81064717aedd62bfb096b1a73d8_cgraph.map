@@ -1,8 +1,8 @@
 <map id="string_search::brute_force" name="string_search::brute_force">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,142,70"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="39,29,38,19,43,10,55,5,74,3,93,5,105,12,102,16,92,10,73,8,57,10,47,14,43,20,45,28"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="39,29,38,19,43,10,55,5,74,3,93,5,105,11,102,16,91,10,73,8,57,10,47,14,43,20,45,28"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="190,12,313,37"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="142,37,175,33,176,38,142,43"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="142,37,174,33,175,38,142,43"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/substr.html#" title=" " alt="" coords="190,61,313,87"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="142,56,176,61,175,66,142,62"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="142,56,175,61,174,66,142,62"/>
 </map>

@@ -1,9 +1,9 @@
 <map id="poly_function" name="poly_function">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,55,104,80"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/imag.html#" title=" " alt="" coords="152,5,284,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,51,158,33,160,38,101,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,51,158,33,159,39,101,57"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="182,55,254,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="104,65,167,65,167,70,104,70"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="104,65,166,65,166,70,104,70"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/real.html#" title=" " alt="" coords="155,104,281,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="101,78,160,97,158,102,99,84"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="101,78,159,96,158,102,99,84"/>
 </map>

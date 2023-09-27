@@ -1,13 +1,13 @@
 <map id="numerical_methods/brent_method_extrema.cpp" name="numerical_methods/brent_method_extrema.cpp">
 <area shape="rect" id="Node000001" title="Find real extrema of a univariate real function in a given interval using Brent&#39;s method." alt="" coords="131,5,299,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,70,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,49,79,90,77,85,169,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,49,80,90,78,85,169,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="94,94,152,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,48,150,86,146,82,190,44"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,48,150,86,147,82,190,44"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="176,94,254,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="218,46,218,79,212,79,212,46"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="218,46,218,78,212,78,212,46"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="278,94,349,120"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="241,44,288,82,285,86,238,48"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="373,94,425,120"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="262,44,360,86,358,91,260,49"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="262,44,359,86,357,91,260,49"/>
 </map>

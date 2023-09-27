@@ -1,9 +1,9 @@
 <map id="fibonacci_search" name="fibonacci_search">
 <area shape="rect" id="Node000001" title="using fibonacci search algorithm finds an index of a given element in a sorted array" alt="" coords="5,55,125,80"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/empty.html#" title=" " alt="" coords="173,5,300,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,51,174,33,176,38,113,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,51,174,33,175,38,113,57"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="202,55,271,80"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="125,65,187,65,187,70,125,70"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="179,104,294,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="113,78,176,97,174,102,112,84"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="113,78,175,97,174,102,112,84"/>
 </map>

@@ -1,15 +1,15 @@
 <map id="math::monte_carlo::integral_monte_carlo" name="math::monte_carlo::integral_monte_carlo">
 <area shape="rect" id="Node000001" title="Compute an approximation of an integral using Monte Carlo integration." alt="" coords="5,77,147,117"/>
-<area shape="poly" id="edge6_Node000001_Node000001" title=" " alt="" coords="40,76,38,67,44,58,57,52,76,50,97,52,109,59,107,64,95,57,76,55,58,57,48,62,44,68,45,75"/>
+<area shape="poly" id="edge6_Node000001_Node000001" title=" " alt="" coords="40,76,38,67,44,58,57,52,76,50,96,52,109,59,106,63,95,57,76,55,58,57,48,62,44,68,45,75"/>
 <area shape="rect" id="Node000002" href="$db/d40/integral__approximation2_8cpp.html#a71249ee535f16f8ed2e9cc8f0199a2cf" title="short&#45;hand for std::functions used in this implementation" alt="" coords="195,47,332,88"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,83,180,78,181,83,148,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,83,179,78,180,83,148,88"/>
 <area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="206,112,321,138"/>
-<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="148,105,192,111,191,117,147,110"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="228,47,226,37,232,28,244,23,263,21,284,23,296,30,294,34,283,28,263,26,246,28,235,32,231,38,233,46"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="148,105,191,111,190,117,147,110"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="228,47,226,37,232,28,244,23,263,21,284,23,296,29,294,34,282,28,263,26,246,28,235,32,231,38,233,46"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="423,5,491,31"/>
-<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="332,47,408,28,410,33,333,53"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="332,47,408,28,409,33,333,53"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="380,55,534,80"/>
 <area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="333,65,365,65,365,70,333,70"/>
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/reserve.html#" title=" " alt="" coords="390,104,524,130"/>
-<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="333,82,391,97,389,102,332,88"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="333,82,390,97,389,102,332,88"/>
 </map>

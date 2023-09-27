@@ -1,12 +1,12 @@
 <map id="numerical_methods::midpoint_rule::midpoint" name="numerical_methods::midpoint_rule::midpoint">
 <area shape="rect" id="Node000001" title="Main function for implementing the Midpoint Integral Method implementation." alt="" coords="5,73,161,113"/>
-<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="48,72,46,63,52,54,64,48,83,46,103,48,115,55,113,60,102,53,83,51,66,53,56,58,52,64,53,71"/>
+<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="48,72,46,63,52,54,64,48,83,46,103,48,115,55,112,59,101,53,83,51,66,53,56,58,52,64,53,71"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/map/at.html#" title=" " alt="" coords="219,5,311,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,69,217,35,219,40,136,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,69,216,35,218,40,136,74"/>
 <area shape="rect" id="Node000003" href="$d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001" title=" " alt="" coords="246,55,284,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,79,230,69,231,75,161,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,79,230,70,231,75,161,85"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/map/insert.html#" title=" " alt="" coords="209,104,321,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="161,100,194,105,194,110,160,106"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="161,100,194,105,193,110,160,106"/>
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/isnan.html#" title=" " alt="" coords="226,153,304,179"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="136,111,218,145,216,150,134,116"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="136,111,218,145,216,149,134,116"/>
 </map>

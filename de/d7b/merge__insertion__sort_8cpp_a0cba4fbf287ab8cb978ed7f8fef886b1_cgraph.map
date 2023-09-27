@@ -1,6 +1,6 @@
 <map id="sorting::merge_insertion::InsertionSort" name="sorting::merge_insertion::InsertionSort">
 <area shape="rect" id="Node000001" title="Insertion merge algorithm." alt="" coords="5,29,166,70"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="50,29,49,19,54,10,67,5,86,3,106,5,118,12,115,16,104,10,85,8,68,10,58,14,54,20,56,28"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="50,29,49,19,54,10,67,5,86,3,106,5,117,11,115,16,104,10,85,8,68,10,58,14,54,20,56,28"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/data.html#" title=" " alt="" coords="214,37,323,63"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,47,199,47,199,52,166,52"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,47,198,47,198,52,166,52"/>
 </map>

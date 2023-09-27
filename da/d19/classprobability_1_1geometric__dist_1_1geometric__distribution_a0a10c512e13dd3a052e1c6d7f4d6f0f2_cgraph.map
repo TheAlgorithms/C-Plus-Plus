@@ -1,7 +1,7 @@
 <map id="probability::geometric_dist::geometric_distribution::standard_deviation" name="probability::geometric_dist::geometric_distribution::standard_deviation">
 <area shape="rect" id="Node000001" title="The standard deviation of a geometrically distributed random variable X." alt="" coords="5,24,190,79"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="295,5,365,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,36,280,23,281,28,191,41"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,36,279,23,280,28,191,41"/>
 <area shape="rect" id="Node000003" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aea8b0d649f0dc9a6f8baf3341a0b4960" title="The variance of a geometrically distributed random variable X." alt="" coords="238,56,422,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,62,223,66,222,71,190,67"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,62,222,66,222,71,190,67"/>
 </map>

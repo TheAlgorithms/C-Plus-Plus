@@ -1,8 +1,8 @@
 <map id="sorting::wiggle_sort::wiggleSort" name="sorting::wiggle_sort::wiggleSort">
 <area shape="rect" id="Node000001" title="Function used for sorting the elements in wave form." alt="" coords="5,29,140,70"/>
-<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="39,29,38,19,43,10,55,5,73,3,92,5,103,12,101,16,90,10,72,8,56,10,47,14,43,20,44,28"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="39,29,38,19,43,10,55,5,73,3,92,5,103,11,100,16,90,10,72,8,56,10,47,14,43,20,44,28"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="188,12,303,37"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,37,172,32,173,38,141,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,37,171,32,172,38,141,42"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="206,61,285,87"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,56,192,64,191,69,140,62"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,56,191,64,191,69,140,62"/>
 </map>

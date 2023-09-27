@@ -1,19 +1,19 @@
 <map id="probability/geometric_dist.cpp" name="probability/geometric_dist.cpp">
 <area shape="rect" id="Node000001" title="Geometric Distribution" alt="" coords="259,5,400,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,70,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="259,49,85,96,83,90,258,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="259,49,85,95,84,90,258,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="94,94,152,120"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="279,49,167,92,165,87,277,44"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="175,94,236,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="300,49,238,88,235,83,297,44"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="300,49,239,88,236,83,297,44"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="260,94,314,120"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="321,48,303,82,298,79,317,45"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="321,48,303,81,298,79,317,45"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="338,94,409,120"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="343,45,362,79,357,82,338,48"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="433,94,485,120"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="363,44,428,84,425,88,360,49"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="363,44,428,83,425,88,360,49"/>
 <area shape="rect" id="Node000008" title=" " alt="" coords="509,94,574,120"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="383,44,496,86,495,91,382,49"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="383,44,496,86,494,91,382,49"/>
 <area shape="rect" id="Node000009" title=" " alt="" coords="598,94,656,120"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="401,43,585,91,583,96,400,48"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="401,43,584,91,583,96,400,48"/>
 </map>

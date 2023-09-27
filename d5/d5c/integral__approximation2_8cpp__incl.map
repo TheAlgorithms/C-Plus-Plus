@@ -1,17 +1,17 @@
 <map id="math/integral_approximation2.cpp" name="math/integral_approximation2.cpp">
 <area shape="rect" id="Node000001" title="Monte Carlo Integration" alt="" coords="179,5,396,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,79,63,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,34,78,81,76,76,243,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,34,79,80,77,75,243,29"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="87,79,147,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="259,34,160,75,158,70,257,29"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="259,34,161,75,159,70,257,29"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="171,79,225,105"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="274,34,226,72,222,68,271,29"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="274,34,227,71,223,67,271,29"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="249,79,326,105"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="290,31,290,64,285,64,285,31"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="290,31,290,63,285,63,285,31"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="350,79,422,105"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="306,29,359,68,356,72,303,34"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="446,79,510,105"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="321,29,433,71,431,76,319,34"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="321,29,432,71,431,76,319,34"/>
 <area shape="rect" id="Node000008" title=" " alt="" coords="535,79,592,105"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="337,29,521,76,520,81,336,34"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="337,29,520,76,519,81,336,34"/>
 </map>

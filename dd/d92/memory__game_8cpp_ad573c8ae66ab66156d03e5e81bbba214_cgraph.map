@@ -1,14 +1,14 @@
 <map id="games::memory_game::init" name="games::memory_game::init">
 <area shape="rect" id="Node000001" title="Initializes the table with the letters." alt="" coords="5,97,160,137"/>
-<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="44,96,42,87,48,78,62,72,83,70,105,72,118,79,116,84,104,77,82,75,63,77,52,82,47,88,49,95"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="44,96,42,87,48,78,62,72,83,70,105,72,118,78,115,83,103,77,82,75,63,77,52,82,47,88,49,95"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " alt="" coords="224,5,346,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,94,156,66,207,40,221,34,223,39,209,45,159,71,115,98"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,94,156,66,207,40,220,34,222,39,209,45,159,71,115,98"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " alt="" coords="229,55,341,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,95,215,82,216,87,161,101"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,95,214,82,216,87,161,101"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="208,104,362,130"/>
-<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="160,114,193,114,193,120,160,120"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="160,114,192,114,192,120,160,120"/>
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/random_shuffle.html#" title=" " alt="" coords="242,153,328,179"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="161,133,228,150,227,155,159,138"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="161,133,227,150,226,155,159,138"/>
 <area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="227,203,343,228"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="115,135,159,163,209,189,223,195,221,200,207,194,156,167,112,140"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="115,135,159,163,209,189,222,194,220,199,207,194,156,167,112,140"/>
 </map>

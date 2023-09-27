@@ -1,19 +1,19 @@
 <map id="machine_learning::minmax_scaler" name="machine_learning::minmax_scaler">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,134,182,175"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="444,5,515,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,131,159,82,192,57,229,37,280,21,334,13,385,10,429,11,429,16,385,16,335,18,282,26,231,42,195,61,163,86,114,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,131,159,82,192,57,229,37,280,21,334,13,385,10,428,11,428,16,385,16,334,18,281,26,231,42,195,61,163,86,114,135"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/program/exit.html#" title=" " alt="" coords="446,112,514,138"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,145,431,126,431,131,182,150"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,145,430,126,430,131,182,150"/>
 <area shape="rect" id="Node000004" href="$d8/d77/namespacemachine__learning.html#aa4bbf61e65f8cd297255fa94b983d078" title=" " alt="" coords="230,51,378,92"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="146,131,235,95,237,100,148,136"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="146,131,235,96,237,101,148,136"/>
 <area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="268,167,340,192"/>
-<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="183,162,254,171,253,176,182,167"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="183,162,253,171,252,176,182,167"/>
 <area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="270,216,338,242"/>
-<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="150,173,231,202,256,211,254,216,229,207,148,178"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="150,173,231,202,255,211,254,216,229,207,148,178"/>
 <area shape="rect" id="Node000008" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="246,265,362,291"/>
-<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="120,173,169,213,231,252,242,257,240,262,228,257,166,217,116,177"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="372,48,429,31,430,36,374,53"/>
-<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="374,90,432,108,430,113,372,95"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="120,173,169,213,231,252,241,257,239,262,228,257,166,217,116,177"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="372,48,428,31,430,36,374,53"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="374,90,431,108,430,113,372,95"/>
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair/make_pair.html#" title=" " alt="" coords="426,59,533,84"/>
 <area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="379,69,411,69,411,74,379,74"/>
 </map>

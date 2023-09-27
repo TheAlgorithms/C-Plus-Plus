@@ -1,22 +1,22 @@
 <map id="test" name="test">
 <area shape="rect" id="Node000001" title="Self&#45;test implementations." alt="" coords="5,92,49,117"/>
 <area shape="rect" id="Node000002" href="$d5/d58/class_test_cases.html#aeabea90c02f9159e4a784bbf736e1e23" title="Executes test cases." alt="" coords="97,92,239,117"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="49,102,82,102,82,107,49,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="49,102,81,102,81,107,49,107"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="652,92,723,117"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="182,89,226,55,255,38,286,26,375,6,412,3,447,4,518,20,605,50,634,64,659,80,656,85,631,69,603,55,517,25,446,10,412,8,375,11,288,31,257,43,229,60,185,93"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="182,89,226,55,255,38,286,26,375,6,412,3,447,4,518,20,605,50,633,64,659,80,656,85,631,68,603,55,517,25,446,10,412,8,375,11,288,31,257,43,229,60,185,93"/>
 <area shape="rect" id="Node000004" href="$d5/d58/class_test_cases.html#aa3aa3d5bf666f327ee8e2d11d397b06e" title="A function to print given message on console." alt="" coords="494,92,604,117"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="239,102,480,102,480,107,239,107"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="239,102,479,102,479,107,239,107"/>
 <area shape="rect" id="Node000005" href="$d5/d58/class_test_cases.html#ac2636e8b5b9e053374c45bfcf0603008" title="A test case contains edge case, printing inorder successor of last node." alt="" coords="287,41,446,67"/>
-<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="221,88,299,68,300,73,222,94"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="221,88,298,69,299,74,222,94"/>
 <area shape="rect" id="Node000006" href="$d5/d58/class_test_cases.html#abae0148985f159b582a385cf399254e3" title="A test case which contains main list of 100 elements and sublist of 20." alt="" coords="287,142,446,168"/>
-<area shape="poly" id="edge8_Node000002_Node000006" title=" " alt="" coords="222,115,300,136,299,141,221,121"/>
+<area shape="poly" id="edge8_Node000002_Node000006" title=" " alt="" coords="222,115,299,135,298,141,221,121"/>
 <area shape="rect" id="Node000007" href="$d5/d58/class_test_cases.html#ad9f95c09931625b41e3be1f88d1e28c5" title="A test case which contains main list of 50 elements and sublist of 20." alt="" coords="287,192,446,217"/>
-<area shape="poly" id="edge11_Node000002_Node000007" title=" " alt="" coords="188,116,232,147,288,178,301,184,299,189,286,183,230,151,185,120"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="604,102,637,102,637,107,604,107"/>
-<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="447,56,523,64,604,77,638,85,637,90,603,82,523,69,446,61"/>
-<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="416,65,487,85,486,90,415,70"/>
-<area shape="poly" id="edge9_Node000006_Node000003" title=" " alt="" coords="446,148,523,140,603,127,637,119,638,124,604,132,523,145,447,153"/>
-<area shape="poly" id="edge10_Node000006_Node000004" title=" " alt="" coords="415,139,486,119,487,124,416,144"/>
-<area shape="poly" id="edge12_Node000007_Node000003" title=" " alt="" coords="446,191,523,175,603,150,654,123,656,128,605,155,524,180,447,196"/>
-<area shape="poly" id="edge13_Node000007_Node000004" title=" " alt="" coords="420,189,445,178,486,153,521,125,524,129,489,157,448,183,422,194"/>
+<area shape="poly" id="edge11_Node000002_Node000007" title=" " alt="" coords="188,116,232,147,288,178,301,183,299,188,286,183,230,151,185,120"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="604,102,636,102,636,107,604,107"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="447,56,523,64,604,77,637,85,636,90,603,82,523,69,446,61"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="416,65,486,84,485,90,415,70"/>
+<area shape="poly" id="edge9_Node000006_Node000003" title=" " alt="" coords="446,148,523,140,603,127,636,119,637,124,604,132,523,145,447,153"/>
+<area shape="poly" id="edge10_Node000006_Node000004" title=" " alt="" coords="415,139,485,119,486,125,416,144"/>
+<area shape="poly" id="edge12_Node000007_Node000003" title=" " alt="" coords="446,191,523,175,603,150,653,124,656,128,605,155,524,180,447,196"/>
+<area shape="poly" id="edge13_Node000007_Node000004" title=" " alt="" coords="420,189,445,178,486,153,520,126,524,130,489,157,448,183,422,194"/>
 </map>

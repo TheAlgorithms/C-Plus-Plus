@@ -1,9 +1,9 @@
 <map id="sorting/comb_sort.cpp" name="sorting/comb_sort.cpp">
 <area shape="rect" id="Node000001" title="Comb Sort Algorithm (Comb Sort)" alt="" coords="61,5,211,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,79,80,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,34,71,72,68,68,118,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,34,72,72,69,67,118,29"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="104,79,168,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,31,139,64,133,64,133,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,31,139,63,133,63,133,31"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="192,79,264,105"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="153,29,203,68,199,72,150,34"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="153,29,202,67,199,72,150,34"/>
 </map>

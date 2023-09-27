@@ -1,23 +1,23 @@
 <map id="math/large_factorial.cpp" name="math/large_factorial.cpp">
 <area shape="rect" id="Node000001" title="Compute factorial of any arbitratily large number/." alt="" coords="93,5,253,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,153,66,178"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,33,59,144,55,140,160,30"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,33,59,143,55,139,160,30"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="304,79,357,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="201,29,291,70,289,75,198,34"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="201,29,291,70,288,75,198,34"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="89,153,161,178"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="171,32,153,80,134,140,129,138,148,78,166,30"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="171,32,153,80,135,139,129,137,148,78,166,30"/>
 <area shape="rect" id="Node000005" href="$d4/d86/large__number_8h.html" title="Library to perform arithmatic operations on arbitrarily large numbers." alt="" coords="162,79,280,105"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="183,30,207,65,203,68,179,33"/>
-<area shape="poly" id="edge8_Node000005_Node000002" title=" " alt="" coords="190,108,80,150,79,145,188,103"/>
-<area shape="poly" id="edge9_Node000005_Node000004" title=" " alt="" coords="206,107,154,146,151,142,203,103"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="183,30,206,64,202,67,179,33"/>
+<area shape="poly" id="edge8_Node000005_Node000002" title=" " alt="" coords="190,108,81,150,79,145,188,103"/>
+<area shape="poly" id="edge9_Node000005_Node000004" title=" " alt="" coords="206,107,154,146,151,141,203,103"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="558,153,633,178"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="281,100,544,149,543,155,280,106"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="281,100,544,149,543,154,280,106"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="185,153,249,178"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="223,105,221,138,216,137,218,105"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="223,105,221,137,216,137,218,105"/>
 <area shape="rect" id="Node000008" title=" " alt="" coords="273,153,347,178"/>
-<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="238,103,286,141,283,146,234,107"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="238,103,285,141,282,145,234,107"/>
 <area shape="rect" id="Node000009" title=" " alt="" coords="372,153,454,178"/>
-<area shape="poly" id="edge10_Node000005_Node000009" title=" " alt="" coords="254,103,367,145,365,150,252,108"/>
+<area shape="poly" id="edge10_Node000005_Node000009" title=" " alt="" coords="254,103,367,144,365,149,252,108"/>
 <area shape="rect" id="Node000010" title=" " alt="" coords="478,153,535,178"/>
-<area shape="poly" id="edge11_Node000005_Node000010" title=" " alt="" coords="274,103,464,149,462,155,273,108"/>
+<area shape="poly" id="edge11_Node000005_Node000010" title=" " alt="" coords="274,103,463,149,462,154,273,108"/>
 </map>

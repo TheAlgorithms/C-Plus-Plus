@@ -1,7 +1,7 @@
 <map id="data_structures/node.hpp" name="data_structures/node.hpp">
 <area shape="rect" id="Node000001" title="Provides Node class and related utilities." alt="" coords="108,5,276,31"/>
 <area shape="rect" id="Node000002" href="$d7/ded/queue_8hpp_source.html" title=" " alt="" coords="5,79,181,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,42,111,81,108,76,162,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,43,111,81,108,76,161,38"/>
 <area shape="rect" id="Node000003" href="$df/d47/stack_8hpp.html" title="This class specifies the basic operation on a stack as a linked list." alt="" coords="204,79,377,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,38,275,76,272,81,219,42"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,38,275,76,272,81,219,43"/>
 </map>

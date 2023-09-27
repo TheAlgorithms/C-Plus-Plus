@@ -1,36 +1,36 @@
 <map id="games::memory_game::assign_results" name="games::memory_game::assign_results">
 <area shape="rect" id="Node000001" title="Function to assign the results to the table." alt="" coords="5,315,160,355"/>
-<area shape="poly" id="edge10_Node000001_Node000001" title=" " alt="" coords="44,315,42,305,48,296,62,290,83,288,105,291,118,297,116,302,104,296,82,293,63,295,52,300,47,306,49,313"/>
+<area shape="poly" id="edge10_Node000001_Node000001" title=" " alt="" coords="44,315,42,305,48,296,62,290,83,288,105,290,118,297,115,301,103,296,82,293,63,295,52,300,47,306,49,313"/>
 <area shape="rect" id="Node000002" href="$dd/d92/memory__game_8cpp.html#a5714d97649c0edd57b4fb449799676a3" title="Function that asks the user for their input in the table they previously chose." alt="" coords="208,208,362,249"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,312,231,254,233,258,124,317"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,312,230,254,232,259,124,317"/>
 <area shape="rect" id="Node000004" href="$dd/d92/memory__game_8cpp.html#ac589ef65abb0a6b9a7116ee0f9fd5280" title="Utility function to print the table." alt="" coords="410,29,564,70"/>
 <area shape="poly" id="edge20_Node000001_Node000004" title=" " alt="" coords="93,313,137,244,169,205,206,170,252,139,302,112,398,73,400,78,304,117,255,143,209,174,173,209,141,248,97,316"/>
 <area shape="rect" id="Node000006" href="$dd/d92/memory__game_8cpp.html#ad573c8ae66ab66156d03e5e81bbba214" title="Initializes the table with the letters." alt="" coords="208,315,362,355"/>
-<area shape="poly" id="edge11_Node000001_Node000006" title=" " alt="" coords="160,332,193,332,193,338,160,338"/>
+<area shape="poly" id="edge11_Node000001_Node000006" title=" " alt="" coords="160,332,192,332,192,338,160,338"/>
 <area shape="rect" id="Node000012" href="$dd/d92/memory__game_8cpp.html#a370760f2b328ad341bcb77d82fa17b01" title="Checks if the two values given by the user match." alt="" coords="208,404,362,445"/>
-<area shape="poly" id="edge18_Node000001_Node000012" title=" " alt="" coords="132,354,225,395,222,400,130,358"/>
+<area shape="poly" id="edge18_Node000001_Node000012" title=" " alt="" coords="132,354,224,395,222,400,130,358"/>
 <area shape="rect" id="Node000013" href="$dd/d92/memory__game_8cpp.html#a5bdc30951221eae9c33413ff9eb574f6" title="for sleep()" alt="" coords="253,469,317,495"/>
-<area shape="poly" id="edge21_Node000001_Node000013" title=" " alt="" coords="102,354,147,404,177,431,209,454,239,468,237,473,206,459,173,435,143,408,98,358"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="246,208,244,198,251,189,264,183,285,181,307,184,320,190,318,195,306,189,285,187,266,189,254,193,250,199,252,207"/>
+<area shape="poly" id="edge21_Node000001_Node000013" title=" " alt="" coords="102,354,147,404,177,431,209,454,239,468,236,472,206,459,173,435,143,408,98,358"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="246,208,244,198,251,189,264,183,285,181,307,184,320,190,318,195,305,189,285,187,266,189,254,193,250,199,252,207"/>
 <area shape="rect" id="Node000003" href="$dd/d92/memory__game_8cpp.html#a33167bb9cce6d527b478b4f6ae8c3f59" title="Utility function to verify if the given input is a number or not. This is very useful to prevent the ..." alt="" coords="410,119,564,159"/>
-<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="331,205,409,170,424,163,426,168,411,175,333,210"/>
-<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="297,206,342,145,373,111,408,81,416,75,419,80,412,85,377,115,346,149,302,209"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="331,205,409,170,423,164,425,168,411,175,333,210"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="297,206,342,145,373,111,408,81,416,76,419,80,412,85,377,115,346,149,302,209"/>
 <area shape="rect" id="Node000005" href="$dd/d92/memory__game_8cpp.html#adc62ebb75853446656e24932bdc6dd6b" title="Utility function that resets the data if the user enters an invalid value." alt="" coords="410,208,564,249"/>
-<area shape="poly" id="edge7_Node000002_Node000005" title=" " alt="" coords="362,234,396,235,395,240,362,240"/>
-<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="449,119,447,109,453,100,467,94,487,92,510,95,523,101,520,106,508,100,487,97,468,99,456,104,452,110,454,117"/>
-<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="449,29,447,19,453,10,467,5,487,3,510,5,523,12,520,17,508,10,487,8,468,10,456,15,452,20,454,28"/>
+<area shape="poly" id="edge7_Node000002_Node000005" title=" " alt="" coords="362,234,395,235,395,240,362,240"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="449,119,447,109,453,100,467,94,487,92,509,94,522,101,520,105,508,100,487,97,468,99,456,104,452,110,454,117"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="449,29,447,19,453,10,467,5,487,3,509,5,522,11,520,16,508,10,487,8,468,10,456,15,452,20,454,28"/>
 <area shape="poly" id="edge8_Node000005_Node000002" title=" " alt="" coords="410,222,377,222,377,217,410,217"/>
-<area shape="poly" id="edge9_Node000005_Node000005" title=" " alt="" coords="449,208,447,198,453,189,467,183,487,181,510,184,523,190,520,195,508,189,487,187,468,189,456,193,452,199,454,207"/>
-<area shape="poly" id="edge14_Node000006_Node000006" title=" " alt="" coords="246,315,244,305,251,296,264,290,285,288,307,291,320,297,318,302,306,296,285,293,266,295,254,300,250,306,252,313"/>
+<area shape="poly" id="edge9_Node000005_Node000005" title=" " alt="" coords="449,208,447,198,453,189,467,183,487,181,509,184,522,190,520,195,508,189,487,187,468,189,456,193,452,199,454,207"/>
+<area shape="poly" id="edge14_Node000006_Node000006" title=" " alt="" coords="246,315,244,305,251,296,264,290,285,288,307,290,320,297,318,301,305,296,285,293,266,295,254,300,250,306,252,313"/>
 <area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " alt="" coords="426,273,548,299"/>
 <area shape="poly" id="edge12_Node000006_Node000007" title=" " alt="" coords="362,314,417,300,418,305,363,319"/>
 <area shape="rect" id="Node000008" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " alt="" coords="431,322,543,348"/>
-<area shape="poly" id="edge13_Node000006_Node000008" title=" " alt="" coords="362,332,416,332,416,338,362,338"/>
+<area shape="poly" id="edge13_Node000006_Node000008" title=" " alt="" coords="362,332,415,332,415,338,362,338"/>
 <area shape="rect" id="Node000009" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="410,372,564,397"/>
 <area shape="poly" id="edge15_Node000006_Node000009" title=" " alt="" coords="363,351,418,365,417,370,362,356"/>
 <area shape="rect" id="Node000010" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/random_shuffle.html#" title=" " alt="" coords="444,421,530,447"/>
-<area shape="poly" id="edge16_Node000006_Node000010" title=" " alt="" coords="341,354,364,366,387,387,411,407,431,417,429,421,409,412,384,392,360,371,338,358"/>
+<area shape="poly" id="edge16_Node000006_Node000010" title=" " alt="" coords="341,354,364,366,387,387,411,407,431,416,429,421,409,412,384,392,360,371,338,358"/>
 <area shape="rect" id="Node000011" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="430,470,545,496"/>
-<area shape="poly" id="edge17_Node000006_Node000011" title=" " alt="" coords="347,354,364,366,381,390,388,414,395,436,412,457,418,462,415,466,408,461,390,438,383,415,376,393,360,370,343,358"/>
-<area shape="poly" id="edge19_Node000012_Node000012" title=" " alt="" coords="246,404,244,394,251,385,264,379,285,377,307,380,320,386,318,391,306,385,285,383,266,385,254,389,250,395,252,403"/>
+<area shape="poly" id="edge17_Node000006_Node000011" title=" " alt="" coords="347,354,364,366,381,390,388,414,395,436,412,457,418,461,415,466,408,461,390,438,383,415,376,393,360,370,343,358"/>
+<area shape="poly" id="edge19_Node000012_Node000012" title=" " alt="" coords="246,404,244,394,251,385,264,379,285,377,307,380,320,386,318,391,305,385,285,383,266,385,254,389,250,395,252,403"/>
 </map>

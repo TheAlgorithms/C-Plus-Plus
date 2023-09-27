@@ -1,12 +1,12 @@
 <map id="main" name="main">
 <area shape="rect" id="Node000001" title="Main function." alt="" coords="5,37,55,63"/>
 <area shape="rect" id="Node000002" href="$d9/d37/inverse__fast__fourier__transform_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,37,146,63"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,47,88,47,88,52,55,52"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,47,87,47,87,52,55,52"/>
 <area shape="rect" id="Node000003" href="$d1/de0/namespacenumerical__methods.html#aee56dc85997b8cd42bad71a5d6bd2d93" title="InverseFastFourierTransform is a recursive function which returns list of complex numbers." alt="" coords="194,29,383,70"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,47,179,47,179,52,146,52"/>
-<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="257,29,255,19,261,11,272,5,289,3,307,5,318,12,315,16,305,10,289,8,273,10,264,14,261,20,262,28"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,47,178,47,178,52,146,52"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="257,29,255,19,261,11,272,5,289,3,307,5,318,11,315,16,305,10,289,8,273,10,264,14,261,20,262,28"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/imag.html#" title=" " alt="" coords="431,12,564,37"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="383,36,416,31,417,37,384,41"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="383,36,415,32,416,37,384,41"/>
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/real.html#" title=" " alt="" coords="435,61,560,87"/>
-<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="384,58,420,62,420,67,383,63"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="384,58,420,62,419,67,383,63"/>
 </map>

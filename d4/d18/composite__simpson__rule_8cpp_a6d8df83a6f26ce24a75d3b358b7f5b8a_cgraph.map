@@ -1,6 +1,6 @@
 <map id="numerical_methods::simpson_method::l" name="numerical_methods::simpson_method::l">
 <area shape="rect" id="Node000001" title="Another test function." alt="" coords="5,29,148,70"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="47,29,46,19,50,11,61,5,77,3,94,5,104,12,101,16,92,10,76,8,63,10,54,14,51,20,52,28"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="47,29,46,19,50,11,61,5,77,3,93,5,103,11,100,16,91,10,76,8,63,10,54,14,51,20,52,28"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/log.html#" title=" " alt="" coords="196,37,260,63"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="148,47,181,47,181,52,148,52"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="148,47,180,47,180,52,148,52"/>
 </map>

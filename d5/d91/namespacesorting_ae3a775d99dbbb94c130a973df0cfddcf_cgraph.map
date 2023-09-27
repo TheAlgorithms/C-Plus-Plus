@@ -1,6 +1,6 @@
 <map id="sorting::recursive_bubble_sort" name="sorting::recursive_bubble_sort">
 <area shape="rect" id="Node000001" title="This is an implementation of the recursive_bubble_sort. A vector is passed to the function which is t..." alt="" coords="5,29,127,70"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="37,29,36,20,40,11,51,5,66,3,83,5,93,12,90,16,81,10,66,8,52,10,44,14,41,20,42,28"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="37,29,36,20,40,11,51,5,66,3,83,5,92,12,89,16,81,10,66,8,52,10,44,14,41,20,42,28"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="175,37,253,63"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="127,47,160,47,160,52,127,52"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="127,47,159,47,159,52,127,52"/>
 </map>

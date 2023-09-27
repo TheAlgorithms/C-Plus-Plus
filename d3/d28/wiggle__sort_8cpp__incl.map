@@ -1,13 +1,13 @@
 <map id="sorting/wiggle_sort.cpp" name="sorting/wiggle_sort.cpp">
 <area shape="rect" id="Node000001" title="[Wiggle Sort Algorithm] (https://leetcode.com/problems/wiggle&#45;sort&#45;ii/) Implementation" alt="" coords="141,5,296,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,79,80,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,34,87,75,85,71,188,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,34,87,75,85,70,188,29"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="104,79,168,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,34,162,71,159,67,203,30"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,34,163,71,159,67,203,30"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="192,79,245,105"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="221,31,221,64,216,64,216,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="221,31,221,63,216,63,216,31"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="270,79,341,105"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="235,29,281,67,278,72,232,34"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="235,29,281,67,277,71,232,34"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="365,79,422,105"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="249,29,352,71,350,76,247,34"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="249,29,351,70,349,75,247,34"/>
 </map>

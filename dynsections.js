@@ -120,4 +120,73 @@ function toggleInherit(id)
     $(img).attr('src',src.substring(0,src.length-10)+'open.png');
   }
 }
+
+var opened=true;
+// in case HTML_COLORSTYLE is LIGHT or DARK the vars will be replaced, so we write them out explicitly and use double quotes
+var plusImg  = [ "var(--fold-plus-image)",  "var(--fold-plus-image-relpath)" ];
+var minusImg = [ "var(--fold-minus-image)", "var(--fold-minus-image-relpath)" ];
+
+// toggle all folding blocks
+function codefold_toggle_all(relPath) {
+ if (opened) {
+   $('#fold_all').css('background-image',plusImg[relPath]);
+   $('div[id^=foldopen]').hide();
+   $('div[id^=foldclosed]').show();
+ } else {
+   $('#fold_all').css('background-image',minusImg[relPath]);
+   $('div[id^=foldopen]').show();
+   $('div[id^=foldclosed]').hide();
+ }
+ opened=!opened;
+}
+
+// toggle single folding block
+function codefold_toggle(id) {
+  $('#foldopen'+id).toggle();
+  $('#foldclosed'+id).toggle();
+}
+function init_codefold(relPath) {
+  $('span[class=lineno]').css(
+    {'padding-right':'4px',
+     'margin-right':'2px',
+     'display':'inline-block',
+     'width':'54px',
+     'background':'linear-gradient(var(--fold-line-color),var(--fold-line-color)) no-repeat 46px/2px 100%'
+    });
+  // add global toggle to first line
+  $('span[class=lineno]:first').append('<span class="fold" id="fold_all" '+
+                                             'onclick="javascript:codefold_toggle_all('+relPath+');" '+
+                                             'style="background-image:'+minusImg[relPath]+';"></span>');
+  // add vertical lines to other rows
+  $('span[class=lineno]').not(':eq(0)').append('<span class="fold"></span>');
+  // add toggle controls to lines with fold divs
+  $('div[class=foldopen]').each(function() {
+    // extract specific id to use
+    var id    = $(this).attr('id').replace('foldopen','');
+    // extract start and end foldable fragment attributes
+    var start = $(this).attr('data-start');
+    var end   = $(this).attr('data-end');
+    // replace normal fold span with controls for the first line of a foldable fragment
+    $(this).find('span[class=fold]:first').replaceWith('<span class="fold" '+
+                                                       'onclick="javascript:codefold_toggle(\''+id+'\');" '+
+                                                       'style="background-image:'+minusImg[relPath]+';"></span>');
+    // append div for folded (closed) representation
+    $(this).after('<div id="foldclosed'+id+'" class="foldclosed" style="display:none;"></div>');
+    // extract the first line from the "open" section to represent closed content
+    var line = $(this).children().first().clone();
+    // remove any glow that might still be active on the original line
+    $(line).removeClass('glow');
+    if (start) {
+      // if line already ends with a start marker (e.g. trailing {), remove it
+      $(line).html($(line).html().replace(new RegExp('\\s*'+start+'\\s*$','g'),''));
+    }
+    // replace minus with plus symbol
+    $(line).find('span[class=fold]').css('background-image',plusImg[relPath]);
+    // append ellipsis
+    $(line).append(' '+start+'<a href="javascript:codefold_toggle(\''+id+'\')">&#8230;</a>'+end);
+    // insert constructed line into closed div
+    $('#foldclosed'+id).html(line);
+  });
+}
+
 /* @license-end */

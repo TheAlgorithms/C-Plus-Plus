@@ -1,8 +1,8 @@
 <map id="numerical_methods::simpson_method::f" name="numerical_methods::simpson_method::f">
 <area shape="rect" id="Node000001" title="A function f(x) that will be used to test the method." alt="" coords="5,29,148,70"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="47,29,45,19,50,11,61,5,77,3,94,5,104,12,101,16,92,10,76,8,62,10,54,14,50,20,52,28"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="47,29,45,19,50,11,61,5,77,3,94,5,104,11,101,16,92,10,76,8,62,10,54,14,50,20,52,28"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/log.html#" title=" " alt="" coords="198,12,263,37"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="148,35,183,29,184,35,149,41"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="148,35,183,29,183,35,149,41"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="196,61,265,87"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="149,58,181,63,181,69,148,63"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="149,58,181,63,180,69,148,63"/>
 </map>

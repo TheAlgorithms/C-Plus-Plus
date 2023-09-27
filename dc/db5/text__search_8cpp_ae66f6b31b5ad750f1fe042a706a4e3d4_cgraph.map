@@ -1,19 +1,19 @@
 <map id="main" name="main">
 <area shape="rect" id="Node000001" title="Main function." alt="" coords="5,153,55,179"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/empty.html#" title=" " alt="" coords="103,5,226,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="33,152,56,99,76,68,101,40,105,37,108,41,104,44,80,71,61,101,38,154"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="33,152,56,99,76,68,101,40,104,37,108,42,104,44,80,71,61,101,38,154"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="129,55,200,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="39,151,65,121,101,89,114,82,117,87,104,94,69,124,43,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="39,151,65,121,101,89,113,82,116,87,104,94,69,124,43,155"/>
 <area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/find.html#" title=" " alt="" coords="110,104,219,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="54,155,113,133,115,138,56,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="54,155,112,133,114,138,56,160"/>
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/getline.html#" title=" " alt="" coords="122,153,207,179"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="55,164,107,164,107,169,55,169"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="55,164,106,164,106,169,55,169"/>
 <area shape="rect" id="Node000006" href="$dc/db5/text__search_8cpp.html#a3f8975d227cd0e58f298b380c5dac0d9" title="function to convert a C++ string to lower case" alt="" coords="274,255,326,280"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="56,173,261,250,259,255,54,178"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="56,173,260,250,258,255,54,178"/>
 <area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="374,280,497,306"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="37,179,44,204,57,236,77,267,104,291,137,306,171,316,208,321,244,323,314,318,374,307,375,312,315,324,244,329,207,327,170,321,135,311,101,295,73,270,53,238,39,206,32,180"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="37,179,44,204,57,236,77,267,104,291,137,306,171,316,207,321,244,323,314,318,374,307,375,312,315,324,244,329,207,327,170,321,135,311,101,295,73,270,53,238,39,206,32,180"/>
 <area shape="rect" id="Node000008" href="$dc/db5/text__search_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="143,255,186,280"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="45,178,71,205,104,233,131,250,128,254,101,238,67,209,41,181"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="45,178,71,205,104,233,130,249,127,254,101,238,67,209,41,181"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="327,270,360,276,359,281,326,275"/>
 <area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="186,265,259,265,259,270,186,270"/>
 </map>

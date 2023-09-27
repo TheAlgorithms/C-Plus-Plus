@@ -1,9 +1,9 @@
 <map id="physics::ground_to_ground_projectile_motion::time_of_flight" name="physics::ground_to_ground_projectile_motion::time_of_flight">
 <area shape="rect" id="Node000001" title="Calculate the time of flight." alt="" coords="5,63,178,118"/>
-<area shape="poly" id="edge4_Node000001_Node000001" title=" " alt="" coords="48,62,49,52,57,44,71,38,92,36,115,39,129,46,127,51,114,44,91,41,72,43,60,48,54,54,53,62"/>
+<area shape="poly" id="edge4_Node000001_Node000001" title=" " alt="" coords="48,62,49,52,57,44,71,38,92,36,115,39,129,45,127,50,113,44,91,41,72,43,60,48,54,54,53,62"/>
 <area shape="rect" id="Node000002" href="$d9/d29/ground__to__ground__projectile__motion_8cpp.html#aba1d26faf6a5379c28cae458956241de" title="Convert radians to degrees." alt="" coords="226,29,398,85"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,75,211,70,211,75,179,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,75,210,70,211,75,179,80"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sin.html#" title=" " alt="" coords="280,110,344,135"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="179,100,265,113,264,118,178,106"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="269,29,269,19,277,10,291,5,312,3,336,5,350,13,347,17,334,11,312,8,292,10,280,15,274,21,274,29"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="179,100,264,113,264,118,178,106"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="269,29,269,19,277,10,291,5,312,3,335,5,349,12,347,17,334,10,312,8,292,10,280,15,274,21,274,29"/>
 </map>
