@@ -1,0 +1,27 @@
+https://www.interviewbit.com/problems/scramble-string/
+unordered_map<string,bool>mp;
+bool solve(string s1, string s2){
+        string key=s1;
+        key.push_back(' ');
+        key+=s2;
+        if(mp.find(key)!=mp.end())    return mp[key];
+        if(s1.length()!=s2.length())  return mp[key]=false;
+        if(s1==s2) return mp[key]=true;
+        //empty allowed nhi h aur same nhi h to 1 len k bhi match nhi karega so false
+        if(s1.size()<=1 or s2.size()<=1) return mp[key]=false;
+        bool flag=false;
+        for(int i=1; i<s1.size(); i++){
+            //swap krke check karo
+            bool cond1= solve(s1.substr(0, i), s2.substr(s2.length()-i)) && solve(s1.substr(i), s2.substr(0, s2.size()-i));
+            //without swap check karo
+            bool cond2= solve(s1.substr(0, i), s2.substr(0, i)) && solve(s1.substr(i), s2.substr(i));
+            if(cond1 or cond2){
+                flag=true;
+                break;
+            }
+        }
+        return mp[key]=flag;
+    }
+int Solution::isScramble(const string s1, const string s2){
+        return solve(s1,s2);
+}
