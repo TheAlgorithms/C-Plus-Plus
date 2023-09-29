@@ -1,0 +1,27 @@
+bool isPalindrome(string &s,int i,int j){
+        while(i<=j){
+            if(s[i++]!=s[j--])  return false;
+        }
+        return true;
+    }
+    void solve(string &s,int indx,int len,vector<vector<string>>&ans,vector<string>&temp){
+       if(indx==len) {
+           ans.push_back(temp);
+           return;
+       }
+
+       for(int i=indx;i<len;i++){
+           if(isPalindrome(s,indx,i)){
+               temp.push_back(s.substr(indx,i-indx+1));
+               solve(s,i+1,len,ans,temp);
+               temp.pop_back();
+           }
+       }
+    }
+    vector<vector<string>> partition(string s) {
+        vector<vector<string>>ans;
+        vector<string>temp;
+        int n=s.size();
+        solve(s,0,n,ans,temp);
+        return ans;
+    }
