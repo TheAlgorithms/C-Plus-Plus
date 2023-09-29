@@ -1,0 +1,30 @@
+shortest path from src to all vertex in directed graph, may contain negative weight edges,simpler than Dijkstra 
+suites for distributed systems, directed graph not given then make undirected as directed
+If we iterate through all edges one more time and get a shorter path for any vertex, then there is a negative weight cycle
+calculates shortest paths in bottom-up manner
+There can be maximum |V| – 1 edges in any simple path, that is why the outer loop runs |v| – 1 times
+
+int isNegativeWeightCycle(int v, vector<vector<int>>edges){
+	for(int src=0;src<v;src++){    //for all nodes as source
+	    vector<int>dist(v,1e8);
+            dist[src]=0;
+	    for(int i=1;i<v;i++){      //for v-1 loop runs
+	        for(auto it: edges){
+	            int u=it[0], v=it[1], d=it[2];
+	            if(dist[u]!=1e8 && dist[u]+d<dist[v]){
+	                dist[v]=dist[u]+d;
+	            }
+	        }
+	    } 
+	    //for loop, check nth iteration
+	    for(auto it: edges){
+	        int u=it[0], v=it[1], d=it[2];
+	        if(dist[u]!=1e8 && dist[u]+d<dist[v]){
+	            return 1;
+	        }
+	    }
+	}
+   return 0;
+}
+TC- O(EV)
+SC- O(V)
