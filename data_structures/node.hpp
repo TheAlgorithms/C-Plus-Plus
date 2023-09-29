@@ -5,6 +5,7 @@
 #ifndef DATA_STRUCTURES_NODE_HPP_
 #define DATA_STRUCTURES_NODE_HPP_
 
+#include <functional>
 #include <iostream>  /// for std::cout
 #include <memory>    /// for std::shared_ptr
 #include <vector>    /// for std::vector
@@ -19,27 +20,30 @@ struct Node {
     std::shared_ptr<Node<ValueType>> next = {};
 };
 
-template <typename Node, typename Action>
-void traverse(const Node* const inNode, const Action& action) {
+template <typename ValueType>
+void traverse(const Node<ValueType>* const inNode,
+              const std::function<void(Node<ValueType>)>& action) {
     if (inNode) {
         action(*inNode);
         traverse(inNode->next.get(), action);
     }
 }
 
-template <typename Node>
-void display_all(const Node* const inNode) {
-    traverse(inNode,
-             [](const Node& curNode) { std::cout << curNode.data << " "; });
+template <typename ValueType>
+void display_all(const Node<ValueType>* const inNode) {
+    traverse<ValueType>(inNode, [](const Node<ValueType>& curNode) {
+        std::cout << curNode.data << " ";
+    });
 }
 
-template <typename Node>
-std::vector<typename Node::value_type> push_all_to_vector(
-    const Node* const inNode, const std::size_t expected_size = 0) {
-    std::vector<typename Node::value_type> res;
+template <typename ValueType>
+std::vector<ValueType> push_all_to_vector(const Node<ValueType>* const inNode,
+                                          const std::size_t expected_size = 0) {
+    std::vector<ValueType> res;
     res.reserve(expected_size);
-    traverse(inNode,
-             [&res](const Node& curNode) { res.push_back(curNode.data); });
+    traverse<ValueType>(inNode, [&res](const Node<ValueType>& curNode) {
+        res.push_back(curNode.data);
+    });
     return res;
 }
 
