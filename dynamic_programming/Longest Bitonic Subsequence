@@ -1,0 +1,24 @@
+https://practice.geeksforgeeks.org/problems/longest-bitonic-subsequence0824/1
+int LongestBitonicSequence(vector<int>nums){
+	int n=nums.size();
+        vector<int>dp1(n,1),dp2(n,1);
+// left to right increasing sequence length
+        for(int i=0;i<n;i++){
+            for(int prev=0;prev<i;prev++){
+                if(nums[prev]<nums[i] && 1+dp1[prev]>dp1[i]) dp1[i]=1+dp1[prev];
+            }
+        }
+        reverse(nums.begin(),nums.end());
+// right to left increasing sequence lngth
+        for(int i=0;i<n;i++){
+          for(int prev=0;prev<i;prev++){
+               if(nums[prev]<nums[i] && dp2[prev]+1>dp2[i]) dp2[i]=1+dp2[prev];
+            }
+        }
+        int ans=1;
+        for(int i=0;i<n;i++)
+            ans=max(ans,dp2[n-1-i]+dp1[i]-1);
+        return ans;
+}
+TC - O(N*N + N*N + N)
+SC - O(N)
