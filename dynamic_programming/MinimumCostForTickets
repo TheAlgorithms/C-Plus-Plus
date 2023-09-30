@@ -1,0 +1,41 @@
+#include<bits/stdc++.h>
+using namespace std;
+int solve(vector<int>&day,vector<int>&cost){
+    int n=day.size();
+    vector<int>dp(n+1,0);
+    dp[0]=0;
+    for(int i=1;i<=n;i++){
+        int a=dp[i-1]+cost[0];
+        int j=1;
+        for(j=1;j<i;j++){
+            if(day[j-1]>day[i-1]-7) break;
+        }
+        int b=dp[j-1]+cost[1];
+        j=1;
+        for(j=1;j<i;j++){
+            if(day[j-1]>day[i-1]-30) break;
+        }
+        int c=dp[j-1]+cost[2];
+        dp[i]=min(a,min(b,c));
+    }
+    cout<<endl;
+    return dp[n];
+}
+int main(){
+    int n;
+    cin>>n;
+    vector<int>cost;
+    for(int i=0;i<3;i++){
+        int a;
+        cin>>a;
+        cost.push_back(a);
+    }
+    vector<int>day;
+    for(int i=0;i<n;i++){
+        int a;
+        cin>>a;
+        day.push_back(a);
+    }
+    cout<<solve(day,cost);
+    return 0;
+}
