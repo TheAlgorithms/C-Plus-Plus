@@ -1,0 +1,53 @@
+-->Explanation: Cycle Sort is an in-place, non-comparing sorting algorithm. It minimizes the number of writes to the original array,
+-->making it useful when writing to the data is costly. 
+-->It works by selecting an item and finding its correct position in the sorted part of the array, then repeating this process for the remaining items.
+
+#include <iostream>
+using namespace std;
+void cycleSort(int arr[], int n) {
+    for (int cycleStart = 0; cycleStart < n - 1; cycleStart++) {
+        int item = arr[cycleStart];
+        int pos = cycleStart;
+        for (int i = cycleStart + 1; i < n; i++) {
+            if (arr[i] < item) {
+                pos++;
+            }
+        }
+        if (pos == cycleStart) {
+            continue;
+        }
+        while (item == arr[pos]) {
+            pos++;
+        }
+        swap(item, arr[pos]);
+        while (pos != cycleStart) {
+            pos = cycleStart;
+            for (int i = cycleStart + 1; i < n; i++) {
+                if (arr[i] < item) {
+                    pos++;
+                }
+            }
+            while (item == arr[pos]) {
+                pos++;
+            }
+            swap(item, arr[pos]);
+        }
+    }
+}
+
+int main() {
+    int n;
+    cout << "Enter the number of elements: ";
+    cin >> n;
+    int arr[n];
+    cout << "Enter the elements: ";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    cycleSort(arr, n);
+    cout << "Sorted array: ";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    return 0;
+}
