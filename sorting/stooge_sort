@@ -1,0 +1,49 @@
+#include <iostream>
+#include <vector>
+
+void stoogeSort(std::vector<int>& arr, int low, int high) {
+    if (low >= high) {
+        return;
+    }
+
+    if (arr[low] > arr[high]) {
+        std::swap(arr[low], arr[high]);
+    }
+
+    if (high - low + 1 > 2) {
+        int third = (high - low + 1) / 3;
+        stoogeSort(arr, low, high - third);
+        stoogeSort(arr, low + third, high);
+        stoogeSort(arr, low, high - third);
+    }
+}
+
+int main() {
+    std::vector<int> arr;
+    int n, num;
+
+    std::cout << "Enter the number of elements: ";
+    std::cin >> n;
+
+    std::cout << "Enter the elements:\n";
+    for (int i = 0; i < n; ++i) {
+        std::cin >> num;
+        arr.push_back(num);
+    }
+
+    std::cout << "Original Array: ";
+    for (int num : arr) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+
+    stoogeSort(arr, 0, arr.size() - 1);
+
+    std::cout << "Sorted Array: ";
+    for (int num : arr) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}
