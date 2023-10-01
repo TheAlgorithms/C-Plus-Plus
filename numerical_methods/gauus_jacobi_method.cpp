@@ -1,7 +1,9 @@
 /**
  * @file
  * @brief Implementation of [The Jacobi Method]
- (https://en.wikipedia.org/wiki/Jacobi_method#Algorithm)
+ * (https://en.wikipedia.org/wiki/Jacobi_method#Algorithm)
+ * (https://www3.nd.edu/~zxu2/acms40390F12/Lec-7.3.pdf)
+ *
  * @details
  * ### Algorithm
  *
