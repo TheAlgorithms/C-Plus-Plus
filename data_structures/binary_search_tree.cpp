@@ -6,169 +6,59 @@
  * \warning This program is a poor implementation - C style - and does not
  * utilize any of the C++ STL features.
  */
-#include <iostream>
+// C++ program to implement recursive Binary Search
 
-struct node {
-    int val;
-    node *left;
-    node *right;
-};
+#include <bits/stdc++.h>
+using namespace std;
 
-struct Queue {
-    node *t[100];
-    int front;
-    int rear;
-};
+// Recursive Binary Search function to find the index of an
+// element 'x' in a sorted array 'arr' if elements is
+// present, otherwise it return -1
 
-Queue queue;
+// low: The index of the first element in the current
+// sub-array high: The index of the last element in the
+// current sub-array
+int binarySearch(int arr[], int low, int high, int x)
+{
+	// Base case: If the search space becomes empty, the
+	// element is not present in the array
+	if (high >= low) {
+		// Calculate the middle index to divide the search
+		// space in half
+		int mid = low + (high - low) / 2;
 
-void enqueue(node *n) { queue.t[queue.rear++] = n; }
+		// If the middle element is equal to 'x', we have
+		// found the element, return its index
+		if (arr[mid] == x)
+			return mid;
 
-node *dequeue() { return (queue.t[queue.front++]); }
+		// If the middle element is greater than 'x', search
+		// in the left half of the array
+		if (arr[mid] > x)
+			return binarySearch(arr, low, mid - 1, x);
 
-void Insert(node *n, int x) {
-    if (x < n->val) {
-        if (n->left == NULL) {
-            node *temp = new node;
-            temp->val = x;
-            temp->left = NULL;
-            temp->right = NULL;
-            n->left = temp;
-        } else {
-            Insert(n->left, x);
-        }
-    } else {
-        if (n->right == NULL) {
-            node *temp = new node;
-            temp->val = x;
-            temp->left = NULL;
-            temp->right = NULL;
-            n->right = temp;
-        } else {
-            Insert(n->right, x);
-        }
-    }
+		// If the middle element is less than 'x', search in
+		// the right half of the array
+		return binarySearch(arr, mid + 1, high, x);
+	}
+
+	// If the base case is reached, the element is not
+	// present in the array, return -1
+	return -1;
 }
 
-int findMaxInLeftST(node *n) {
-    while (n->right != NULL) {
-        n = n->right;
-    }
-    return n->val;
-}
+// Driver code
+int main(void)
+{
+	int arr[] = { 2, 3, 4, 10, 40 };
 
-void Remove(node *p, node *n, int x) {
-    if (n->val == x) {
-        if (n->right == NULL && n->left == NULL) {
-            if (x < p->val) {
-                p->right = NULL;
-            } else {
-                p->left = NULL;
-            }
-        } else if (n->right == NULL) {
-            if (x < p->val) {
-                p->right = n->left;
-            } else {
-                p->left = n->left;
-            }
-        } else if (n->left == NULL) {
-            if (x < p->val) {
-                p->right = n->right;
-            } else {
-                p->left = n->right;
-            }
-        } else {
-            int y = findMaxInLeftST(n->left);
-            n->val = y;
-            Remove(n, n->right, y);
-        }
-    } else if (x < n->val) {
-        Remove(n, n->left, x);
-    } else {
-        Remove(n, n->right, x);
-    }
-}
+	// Element to be searched
+	int x = 10;
+	int n = sizeof(arr) / sizeof(arr[0]);
+	int result = binarySearch(arr, 0, n - 1, x);
+	(result == -1)
+		? cout << "Element is not present in array"
+		: cout << "Element is present at index " << result;
 
-void BFT(node *n) {
-    if (n != NULL) {
-        std::cout << n->val << "  ";
-        enqueue(n->left);
-        enqueue(n->right);
-        BFT(dequeue());
-    }
-}
-
-void Pre(node *n) {
-    if (n != NULL) {
-        std::cout << n->val << "  ";
-        Pre(n->left);
-        Pre(n->right);
-    }
-}
-
-void In(node *n) {
-    if (n != NULL) {
-        In(n->left);
-        std::cout << n->val << "  ";
-        In(n->right);
-    }
-}
-
-void Post(node *n) {
-    if (n != NULL) {
-        Post(n->left);
-        Post(n->right);
-        std::cout << n->val << "  ";
-    }
-}
-
-int main() {
-    queue.front = 0;
-    queue.rear = 0;
-    int value;
-    int ch;
-    node *root = new node;
-    std::cout << "\nEnter the value of root node :";
-    std::cin >> value;
-    root->val = value;
-    root->left = NULL;
-    root->right = NULL;
-    do {
-        std::cout << "\n1. Insert"
-                  << "\n2. Delete"
-                  << "\n3. Breadth First"
-                  << "\n4. Preorder Depth First"
-                  << "\n5. Inorder Depth First"
-                  << "\n6. Postorder Depth First";
-
-        std::cout << "\nEnter Your Choice : ";
-        std::cin >> ch;
-        int x;
-        switch (ch) {
-        case 1:
-            std::cout << "\nEnter the value to be Inserted : ";
-            std::cin >> x;
-            Insert(root, x);
-            break;
-        case 2:
-            std::cout << "\nEnter the value to be Deleted : ";
-            std::cin >> x;
-            Remove(root, root, x);
-            break;
-        case 3:
-            BFT(root);
-            break;
-        case 4:
-            Pre(root);
-            break;
-        case 5:
-            In(root);
-            break;
-        case 6:
-            Post(root);
-            break;
-        }
-    } while (ch != 0);
-
-    return 0;
+	return 0;
 }
