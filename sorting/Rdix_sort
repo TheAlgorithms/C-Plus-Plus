@@ -1,0 +1,74 @@
+/** Algorithm- Steps
+ 1) First we will find the largest element in the array, and count the number of digits in it.
+  Now we make all the elements in the array of same number of digits.
+ 2) Sort the elements based on the unit place digits (X=0). Here we use the counting sort technique,to sort the digits at each significant place.
+ 3) Sort the elements based on the ones,tens, hundreds,... place digits.
+ 4) The array is now sorted in ascending order.
+ **/
+ 
+// Implementation
+
+#include <iostream>
+
+using namespace std;
+
+// function to find largest element from the array
+int Max(int arr[], int n){ 
+    int max = arr[0];
+    for(int i=1;i<n;i++) 
+        if(arr[i]>max)
+        max= arr[i];
+        return max;
+    
+}
+
+void countSort(int arr[], int n, int digit)
+{ 
+    int output[n];
+    int i;
+    int count[10]= {0}; //array to store count of occurrences
+    for (i = 0; i < n; i++)
+        count[(arr[i] / digit) % 10]++;
+      
+        
+    // Change count[i] so that count[i]
+    // now contains actual position
+    // of this digit in output[]
+    for (i = 1; i < 10; i++)
+        count[i] += count[i - 1];
+        
+        // output array
+        for (i = n - 1; i >= 0; i--) {
+        output[count[(arr[i] / digit) % 10] - 1] = arr[i];
+        count[(arr[i] / digit) % 10]--;
+    }
+    for (i = 0; i < n; i++)
+        arr[i] = output[i];
+}
+
+    void radixsort(int arr[], int n)
+   {
+       int getmax = Max(arr, n);
+       for (int digit = 1; getmax / digit> 0; digit *= 10)
+        countSort(arr, n, digit);
+}
+     // function to print a sorted array 
+      void print(int arr[], int n)
+{
+    for (int i = 0; i < n; i++)
+        cout << arr[i] << " ";
+} 
+
+   
+
+
+
+int main()
+{
+      int arr[] = { 43, 86, 210, 75, 329 };
+    int n = sizeof(arr) / sizeof(arr[0]);
+    radixsort(arr, n);
+    print(arr, n);
+
+    return 0;
+}
