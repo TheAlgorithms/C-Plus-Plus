@@ -100,138 +100,139 @@
  *
  */
 class ArticulationPointsAndBridges {
+ public:
+    // Edge used to store bridges
+    struct Edge {
+        int u, v;
+        Edge(int u, int v) : u(u), v(v) {}
+    };
 
-public:
-  // Edge used to store bridges
-  struct Edge {
-    int u, v;
-    Edge(int u, int v) : u(u), v(v) {}
-  };
+ private:
+    int V;                              // Number of vertices
+    std::vector<std::vector<int>> adj;  // Adjacency list
 
-private:
-  int V;                             // Number of vertices
-  std::vector<std::vector<int>> adj; // Adjacency list
+    int time = 0;
+    std::vector<bool> visited;  // To track visited vertices during traversal
+    std::vector<int> disc;      // Discovery time of vertices
+    std::vector<int> low;  // Lowest discovery time reachable from the vertex
+    std::vector<int>
+        parent;  // Parent vertex in DFS traversal, initialized to -1
+    std::vector<bool> articulationPoints;  // To store articulation points
 
-  int time = 0;
-  std::vector<bool> visited; // To track visited vertices during traversal
-  std::vector<int> disc;     // Discovery time of vertices
-  std::vector<int> low;      // Lowest discovery time reachable from the vertex
-  std::vector<int> parent; // Parent vertex in DFS traversal, initialized to -1
-  std::vector<bool> articulationPoints; // To store articulation points
+    std::vector<Edge> bridges;  // Vector to store bridges
 
-  std::vector<Edge> bridges; // Vector to store bridges
-
-public:
-  /**
-   * Constructor
-   *
-   * @param v number of vertex in graph
-   */
-  ArticulationPointsAndBridges(int v) : V(v) {
-    adj.resize(v);
-    visited.assign(v, false);
-    disc.resize(v);
-    low.resize(v);
-    parent.assign(v, -1);
-    articulationPoints.assign(v, false);
-  }
-
-  /**
-   * function addEdge - Add an edge between vertices u and v
-   * @param u - source vertex of graph that needs to be conneted to v
-   * @param v - end vertex f graph that needs to be connected to u
-   */
-  void addEdge(int u, int v) {
-    adj[u].push_back(v);
-    adj[v].push_back(u);
-  }
-
-  // Find articulation points and bridges in the graph
-  void findArticulationPointsAndBridges() {
-    for (int i = 0; i < V; i++) {
-      if (!visited[i]) {
-        findArticulationPointsAndBridges(i);
-      }
+ public:
+    /**
+     * Constructor
+     *
+     * @param v number of vertex in graph
+     */
+    ArticulationPointsAndBridges(int v) : V(v) {
+        adj.resize(v);
+        visited.assign(v, false);
+        disc.resize(v);
+        low.resize(v);
+        parent.assign(v, -1);
+        articulationPoints.assign(v, false);
     }
-  }
 
-  /*
-   * Helper function to perform DFS and find articulation points and bridges
-   *
-   * @param u source vertex
-   */
-  void findArticulationPointsAndBridges(int u) {
-    int children = 0;
-    visited[u] = true;
-    disc[u] = low[u] = ++time;
-
-    for (int v : adj[u]) {
-      if (!visited[v]) {
-        children++;
-        parent[v] = u;
-        findArticulationPointsAndBridges(v);
-        low[u] = std::min(low[u], low[v]);
-
-        if (parent[u] == -1 && children > 1) {
-          articulationPoints[u] = true;
-        }
-        if (parent[u] != -1 && low[v] >= disc[u]) {
-          articulationPoints[u] = true;
-        }
-
-        if (low[v] > disc[u]) {
-          bridges.emplace_back(u, v);
-        }
-      } else if (v != parent[u]) {
-        low[u] = std::min(low[u], disc[v]);
-      }
+    /**
+     * function addEdge - Add an edge between vertices u and v
+     * @param u - source vertex of graph that needs to be conneted to v
+     * @param v - end vertex f graph that needs to be connected to u
+     */
+    void addEdge(int u, int v) {
+        adj[u].push_back(v);
+        adj[v].push_back(u);
     }
-  }
 
-  /* Check if a vertex is an articulation point
-   *
-   * @param u source vertex
-   */
-  bool isArticulationPoint(int u) { return articulationPoints[u]; }
-
-  // Get an ArrayList of bridges in the graph
-  std::vector<Edge> getBridges() { return bridges; }
-  // Get an ArrayList of articulation points in the graph
-  std::vector<int> getArticulationPoints() {
-    std::vector<int> articulationPointsList;
-    for (int i = 0; i < V; i++) {
-      if (articulationPoints[i]) {
-        articulationPointsList.push_back(i);
-      }
+    // Find articulation points and bridges in the graph
+    void findArticulationPointsAndBridges() {
+        for (int i = 0; i < V; i++) {
+            if (!visited[i]) {
+                findArticulationPointsAndBridges(i);
+            }
+        }
     }
-    return articulationPointsList;
-  }
+
+    /*
+     * Helper function to perform DFS and find articulation points and bridges
+     *
+     * @param u source vertex
+     */
+    void findArticulationPointsAndBridges(int u) {
+        int children = 0;
+        visited[u] = true;
+        disc[u] = low[u] = ++time;
+
+        for (int v : adj[u]) {
+            if (!visited[v]) {
+                children++;
+                parent[v] = u;
+                findArticulationPointsAndBridges(v);
+                low[u] = std::min(low[u], low[v]);
+
+                if (parent[u] == -1 && children > 1) {
+                    articulationPoints[u] = true;
+                }
+                if (parent[u] != -1 && low[v] >= disc[u]) {
+                    articulationPoints[u] = true;
+                }
+
+                if (low[v] > disc[u]) {
+                    bridges.emplace_back(u, v);
+                }
+            } else if (v != parent[u]) {
+                low[u] = std::min(low[u], disc[v]);
+            }
+        }
+    }
+
+    /* Check if a vertex is an articulation point
+     *
+     * @param u source vertex
+     */
+    bool isArticulationPoint(int u) { return articulationPoints[u]; }
+
+    // Get an ArrayList of bridges in the graph
+    std::vector<Edge> getBridges() { return bridges; }
+    // Get an ArrayList of articulation points in the graph
+    std::vector<int> getArticulationPoints() {
+        std::vector<int> articulationPointsList;
+        for (int i = 0; i < V; i++) {
+            if (articulationPoints[i]) {
+                articulationPointsList.push_back(i);
+            }
+        }
+        return articulationPointsList;
+    }
 };
 
 // main for test check
 int main() {
-  int V = 5;
-  ArticulationPointsAndBridges graph(V);
+    int V = 5;
+    ArticulationPointsAndBridges graph(V);
 
-  graph.addEdge(0, 1);
-  graph.addEdge(0, 2);
-  graph.addEdge(1, 2);
-  graph.addEdge(2, 3);
-  graph.addEdge(3, 4);
-  graph.findArticulationPointsAndBridges();
+    graph.addEdge(0, 1);
+    graph.addEdge(0, 2);
+    graph.addEdge(1, 2);
+    graph.addEdge(2, 3);
+    graph.addEdge(3, 4);
+    graph.findArticulationPointsAndBridges();
 
-  std::cout << "Articulation Points:" << std::endl;
-  std::vector<int> articulationPoints = graph.getArticulationPoints();
-  for (int point : articulationPoints) {
-    std::cout << point << " ";
-  }
-  std::cout << std::endl;
+    std::cout << "Articulation Points:" << std::endl;
+    std::vector<int> articulationPoints = graph.getArticulationPoints();
+    for (int point : articulationPoints) {
+        std::cout << point << " ";
+    }
+    std::cout << std::endl;
 
-  std::cout << "\nBridges:" << std::endl;
-  std::vector<ArticulationPointsAndBridges::Edge> bridges = graph.getBridges();
-  for (const auto &bridge : bridges) {
-    std::cout << "Bridge: " << bridge.u << " - " << bridge.v << std::endl;
-  }
+    std::cout << "\nBridges:" << std::endl;
+    std::vector<ArticulationPointsAndBridges::Edge> bridges =
+        graph.getBridges();
+    for (const auto &bridge : bridges) {
+        std::cout << "Bridge: " << bridge.u << " - " << bridge.v << std::endl;
+    }
 
-  return 0;
+    return 0;
 }
