@@ -34,17 +34,9 @@ class Job {
     int ct;   // Completion time
 
  public:
-    Job(int i, string n, int a, int b) {
-        id = i;
-        name = n;
-        at = a;
-        bt = b;
-        b1 = bt;
-        wt = 0;
-        tat = 0;
-        ct = 0;
-    }
-    /** @brief prints the porcess data
+    Job(int i, string n, int a, int b)
+        : id(i), name(n), at(a), bt(b), b1(bt), wt(0), tat(0), ct(0) {}
+    /** @brief prints the process data
      *  @returns void
      */
     void printJob() {
@@ -70,12 +62,8 @@ class Scheduler {
     double avgTAT;         // Average turnaround time
 
  public:
-    Scheduler(int n, vector<Job> t) {
-        num = n;
-        taskList = t;
-        avgTAT = 0;
-        avgWT = 0;
-    }
+    Scheduler(int n, vector<Job> t)
+        : num(n), taskList(t), avgTAT(0), avgWT(0) {}
     /** @brief round robin cpu scheduling algorithm
      *  @returns pair of avg. waiting time and avg. Turn Around time
      */
@@ -102,8 +90,9 @@ class Scheduler {
             if (taskList[i].at == init_at) {
                 ready.push(i);
                 i++;
-            } else
+            } else {
                 break;
+            }
         }
 
         // Main Round Robin scheduling loop
@@ -113,10 +102,11 @@ class Scheduler {
             temp = t;
 
             // Execute a job for a time quantum or until completion
-            if (taskList[j].b1 < tm)
+            if (taskList[j].b1 < tm) {
                 t += taskList[j].b1;
-            else
+            } else {
                 t += tm;
+            }
 
             taskList[j].b1 =
                 max(taskList[j].b1 - tm, 0);  // Update remaining burst time
@@ -145,8 +135,8 @@ class Scheduler {
 
         // Calculate and display average waiting time and average turnaround
         // time
-        avgWT = (double)totalWT / (double)num;
-        avgTAT = (double)totalTAT / (double)num;
+        avgWT = static_cast<double>(totalWT) / static_cast<double>(num);
+        avgTAT = static_cast<double>(totalTAT) / static_cast<double>(num);
 
         return {avgWT, avgTAT};
     }
@@ -154,7 +144,7 @@ class Scheduler {
     void display() {
         cout << "Status of all the proceses post completion :" << endl;
         cout << "id\tname\tat\tbt\tct\twt\ttat" << endl;
-        for (auto i : taskList) {
+        for (const auto& i : taskList) {
             cout << i.id << "\t" << i.name << "\t" << i.at << "\t" << i.bt
                  << "\t" << i.ct << "\t" << i.wt << "\t" << i.tat << endl;
         }
