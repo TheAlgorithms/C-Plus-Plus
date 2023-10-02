@@ -10,15 +10,22 @@
  *
  */
 
-#include <algorithm>
-#include <cassert>
-#include <iostream>
-#include <queue>
-#include <string>
-#include <utility>
-#include <vector>
+#include <algorithm>  // for max function
+#include <cassert>    // fot testing purpose
+#include <iostream>   //for printing results
+#include <queue>      //for job queue
+#include <string>     // for job name
+#include <utility>    //for using pair
+#include <vector>     // for tasklist of processes
 
-using namespace std;
+using std::cin;
+using std::cout;
+using std::endl;
+using std::max;
+using std::pair;
+using std::queue;
+using std::string;
+using std::vector;
 
 /** @class Job
     @brief class to represent each process or job
@@ -27,15 +34,15 @@ class Job {
     int id;
     string name;
     int at;   // Arrival time
-    int wt;   // Waiting time
+    int wt{0};  // Waiting time
     int bt;   // Burst time
     int b1;   // Remaining burst time
-    int tat;  // Turnaround time
-    int ct;   // Completion time
+    int tat{0};  // Turnaround time
+    int ct{0};   // Completion time
 
  public:
     Job(int i, string n, int a, int b)
-        : id(i), name(n), at(a), bt(b), b1(bt), wt(0), tat(0), ct(0) {}
+        : id(i), name(std::move(std::move(n))), at(a), bt(b), b1(bt) {}
     /** @brief prints the process data
      *  @returns void
      */
@@ -58,12 +65,12 @@ class Job {
 class Scheduler {
     int num;               // Number of jobs
     vector<Job> taskList;  // List of jobs
-    double avgWT;          // Average waiting time
-    double avgTAT;         // Average turnaround time
+    double avgWT{0};       // Average waiting time
+    double avgTAT{0};      // Average turnaround time
 
  public:
     Scheduler(int n, vector<Job> t)
-        : num(n), taskList(t), avgTAT(0), avgWT(0) {}
+        : num(n), taskList(std::move(std::move(t))) {}
     /** @brief round robin cpu scheduling algorithm
      *  @returns pair of avg. waiting time and avg. Turn Around time
      */
