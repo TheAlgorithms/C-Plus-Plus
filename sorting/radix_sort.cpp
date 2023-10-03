@@ -2,57 +2,36 @@
 #include <cstdlib>
 #include <cstring>
 #include <iostream>
-
-void radixsort(int a[], int n) {
-    int count[10];
-    int* output = new int[n];
-    memset(output, 0, n * sizeof(*output));
-    memset(count, 0, sizeof(count));
-    int max = 0;
-    for (int i = 0; i < n; ++i) {
-        if (a[i] > max) {
-            max = a[i];
-        }
+using namespace std; 
+void countSort(int arr[],const int &n,const int &exp) {
+    int count[10] = {0};
+    for(int i = 0; i < n; i++) count[(arr[i]/exp) % 10]++;  
+    for(int i = 1; i < 10; i++) count[i] += count[i - 1];
+    int output[n];
+    for(int i = n - 1; i >= 0; i--) {
+        output[count[(arr[i]/exp) % 10] - 1] = arr[i];
+        count[(arr[i]/exp) % 10]--;
     }
-    int maxdigits = 0;
-    while (max) {
-        maxdigits++;
-        max /= 10;
-    }
-    for (int j = 0; j < maxdigits; j++) {
-        for (int i = 0; i < n; i++) {
-            int t = std::pow(10, j);
-            count[(a[i] % (10 * t)) / t]++;
-        }
-        int k = 0;
-        for (int p = 0; p < 10; p++) {
-            for (int i = 0; i < n; i++) {
-                int t = std::pow(10, j);
-                if ((a[i] % (10 * t)) / t == p) {
-                    output[k] = a[i];
-                    k++;
-                }
-            }
-        }
-        memset(count, 0, sizeof(count));
-        for (int i = 0; i < n; ++i) {
-            a[i] = output[i];
-        }
-    }
-    delete[] output;
+    for(int i = 0; i < n; i++) arr[i] = output[i];
 }
 
+void radixsort(int arr[], int n) { 
+   int maxElement = arr[0];
+   for(int i = 0; i < n; i++) maxElement = max(arr[i], maxElement); // Finding maximum element
+   for(int exp = 1; maxElement/exp > 0; exp *= 10)
+        countSort(arr, n, exp);    // Counting sort for every i-th digit 
+}
 void print(int a[], int n) {
     for (int i = 0; i < n; ++i) {
-        std::cout << a[i] << " ";
+        cout << a[i] << " ";
     }
-    std::cout << std::endl;
+    cout << endl;
 }
 
 int main(int argc, char const* argv[]) {
-    int a[] = {170, 45, 75, 90, 802, 24, 2, 66};
+    int a[] = {9358,133,943,235,3140,22,1,4,92,22,10};
     int n = sizeof(a) / sizeof(a[0]);
-    radixsort(a, n);
+    radixsort(a,n);
     print(a, n);
     return 0;
 }
