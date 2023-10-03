@@ -27,8 +27,7 @@
  *                    Sort list
  *                    Size of list
  *                    Reverse list
- *                    Traverse list forward
- *                    Traverse list backwards
+ *                    Traverse list
  *                    Exit
  */
 

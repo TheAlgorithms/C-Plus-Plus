@@ -1,4 +1,41 @@
-#include <bits/stdc++.h>
+/**
+ * @file
+ *
+ * @brief Implementation of singly linked list algorithm.
+ *
+ * @details
+ * The linked list is a dynamic data structure which stores the values at random
+ * locations in the memory. * It contains a node which is divided into two
+ * parts, data and pointer. The linked list nodes are connected with each other
+ * with the help of pointers.
+ *
+ * @example
+ * E.g - 42 <--> 45 <--> 77 <--> 5 <--> 20 <--> 31
+ *
+ * ### Algorithm
+ * This is a menu driven algorithm and supports plenty of different operations.
+ *
+ * #### Operations -: Create node
+ *                    Insert at beginning
+ *                    Insert at position
+ *                    Insert at end
+ *                    Deleteion from beginning
+ *                    Deletion from position
+ *                    Deletion from end
+ *                    Updation of a value
+ *                    Search a value
+ *                    Sort list
+ *                    Size of list
+ *                    Reverse list
+ *                    Traverse list forward
+ *                    Traverse list backwards
+ *                    Exit
+ */
+
+#include <iostream>
+#include <string>
+#include <vector>
+
 using namespace std;
 
 typedef struct node {
