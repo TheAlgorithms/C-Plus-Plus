@@ -11,6 +11,7 @@ on:
   #        │  │ │ │ │
   #        *  * * * *
   - cron: '0 0 * * *'
+  workflow_dispatch:
 jobs:
   build:
     if: github.repository == 'TheAlgorithms/C-Plus-Plus' # We only need this to run in our repository.
