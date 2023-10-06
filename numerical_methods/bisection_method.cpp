@@ -55,7 +55,7 @@ int main() {
 
     // start iterations
     for (i = 0; i < MAX_ITERATIONS; i++) {
-        x = (a + b) / 2;
+        x = a + (b - a) / 2;
         z = eq(x);
         std::cout << "\n\nz: " << z << "\t[" << a << " , " << b
                   << " | Bisect: " << x << "]";
