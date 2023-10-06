@@ -1,58 +1,40 @@
 /**
  * @file
- * @brief [Binary Search in a 2d array](https://www.geeksforgeeks.org/searching-algorithms-for-a-2d-arrays-matrix/)
+ * @brief [Linear Search in a 2d array](https://www.geeksforgeeks.org/searching-algorithms-for-a-2d-arrays-matrix/)
  * in C++
  * @details
- *      Binary search is an efficient divide-and-conquer searching algorithm . 
- *      It works by repeatedly dividing the search space in half, eliminating half of the elements each time, until the target element is found or it is determined that the element is not present in the array. 
- *      It can only be applied to sorted matrixes(row-wise or column-wise).
+ *      Linear search is a simple and sequential searching algorithm. 
+ *      It is used to find whether a particular element is present in the array or not by traversing every element in the array.
  *
  * ### Complexities
  *
  * //n, m is the number rows and columns in the array.
  *
- * Worst-case time complexity	O(log (n*m)
- * Average time complexity	    O(log (n*m) 
- * Best-case time complexity	O(1)
- * Worst-case space complexity  0(1)
+ * Worst-case time complexity	O(n*m) => linear
+ * Average time complexity	    O(n*m) => linear
+ * Best-case time complexity	O(1)   => constant
+ * Worst-case space complexity  0(1)   => constant
  */
 
 #include <iostream>  /// for IO operations
 #include <vector>    /// for std::vector
-#include <algorithm> /// fro std::is_sorted
 #include <cassert>   /// for assert
 
 template <typename T>
-std::vector<int> binary_search_matrix(const std::vector<std::vector<T>>& matrix, const T& target){
+std::vector<int> linear_search_matrix(const std::vector<std::vector<T>>& matrix, const T& target){
 
     if(matrix.empty() || matrix[0].empty()){
         return {-1, -1};
     }
-
-    for (const auto& row : matrix) {
-
-        if (!std::is_sorted(row.begin(), row.end())) {
-            return {-1, -1};
-        }
-    }
     
-    int m = matrix.size();
-    int n = matrix[0].size();
-    int i = 0, j = m*n-1;
+    int rows = matrix.size();
+    int columns = matrix[0].size();
 
-    while(i <= j){
-
-        int mid = i + (j-i) / 2;
-        T midValue = matrix[mid/n][mid%n];
-
-        if(midValue == target){
-            return {mid/n, mid%n};
-        }
-        else if(midValue < target){
-            i = mid + 1;
-        } 
-        else{
-            j = mid - 1;
+    for(int i = 0; i < rows; i++){
+        for(int j = 0 ; j < columns; j++){
+            if(matrix[i][j] == target){
+                return {i, j};
+            }
         }
     }
 
@@ -76,8 +58,8 @@ static void test1() {
         {4, 5, 6},
         {7, 8, 9}
     };
-    std::vector<int> expected_ans = {2, 1};
-    std::vector<int> derived_ans = binary_search_matrix(intMatrix, 8);
+    std::vector<int> expected_ans = {0, 2};
+    std::vector<int> derived_ans = linear_search_matrix(intMatrix, 3);
     std::cout << "Test #1: ";
     assert(derived_ans == expected_ans);
     std::cout << "Passed!" << std::endl;
@@ -98,10 +80,10 @@ static void test2() {
     std::vector<std::vector<double>> doubleMatrix = {
         {1.1, 2.2, 3.3},
         {4.4, 5.5, 6.6},
-        {7.7, 8.8, 9.9}
+        {12.6, 8.8, 9.9}
     };
-    std::vector<int> expected_ans = {0, 0};
-    std::vector<int> derived_ans = binary_search_matrix(doubleMatrix, 1.1);
+    std::vector<int> expected_ans = {1, 2};
+    std::vector<int> derived_ans = linear_search_matrix(doubleMatrix, 6.6);
     std::cout << "Test #2: ";
     assert(derived_ans == expected_ans);
     std::cout << "Passed!" << std::endl;
@@ -121,11 +103,11 @@ static void test3() {
 
     std::vector<std::vector<char>> charMatrix = {
         {'a', 'b', 'c'},
-        {'d', 'e', 'f'},
-        {'g', 'h', 'i'} 
+        {'f', 'e', 'd'},
+        {'g', 'j', 'x'} 
     };
-    std::vector<int> expected_ans = {2, 1};
-    std::vector<int> derived_ans = binary_search_matrix(charMatrix, 'h');
+    std::vector<int> expected_ans = {2, 2};
+    std::vector<int> derived_ans = linear_search_matrix(charMatrix, 'x');
     std::cout << "Test #3: ";
     assert(derived_ans == expected_ans);
     std::cout << "Passed!" << std::endl;
