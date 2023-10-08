@@ -15,29 +15,28 @@
  * \returns index of a peak element in the array
  * \returns -1 if no peak element is found
  */
-int FindPeakElement(int *array, int size) {
+#include <iostream>
+#include <cassert>
+
+int findPeakElement(int *array, int left, int right, int size) {
     if (size == 0) {
         return -1; // No elements in the array
     }
 
-    if (size == 1) {
-        return 0;  // Single element is a peak
-    }
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
 
-    // Check the first element
-    if (array[0] >= array[1]) {
-        return 0;
-    }
-
-    // Check the last element
-    if (array[size - 1] >= array[size - 2]) {
-        return size - 1;
-    }
-
-    // Check elements in the middle
-    for (int i = 1; i < size - 1; ++i) {
-        if (array[i] >= array[i - 1] && array[i] >= array[i + 1]) {
-            return i;
+        // Check if mid is a peak element
+        if ((mid == 0 || array[mid] >= array[mid - 1]) && (mid == size - 1 || array[mid] >= array[mid + 1])) {
+            return mid;
+        }
+        // If the element to the right of mid is greater, move right
+        else if (mid < size - 1 && array[mid] < array[mid + 1]) {
+            left = mid + 1;
+        }
+        // Otherwise, move left
+        else {
+            right = mid - 1;
         }
     }
 
@@ -52,22 +51,23 @@ int FindPeakElement(int *array, int size) {
 static void tests() {
     int size = 6;
     int array[] = {1, 3, 20, 4, 1, 0};
-    assert(FindPeakElement(array, size) == 2);
+    assert(findPeakElement(array, 0, size - 1, size) == 2);
 
     size = 5;
     int array2[] = {5, 10, 20, 15, 5};
-    assert(FindPeakElement(array2, size) == 2);
+    assert(findPeakElement(array2, 0, size - 1, size) == 2);
 
     size = 4;
     int array3[] = {10, 20, 15, 2};
-    assert(FindPeakElement(array3, size) == 1);
+    assert(findPeakElement(array3, 0, size - 1, size) == 1);
 
     size = 1;
     int array4[] = {5};
-    assert(FindPeakElement(array4, size) == 0);
+    assert(findPeakElement(array4, 0, size - 1, size) == 0);
 
     std::cout << "All tests have successfully passed!" << std::endl;
 }
+
 
 /**
  * @brief Main function
@@ -92,15 +92,14 @@ int main() {
         }
 
         int *array = new int[size];
-        int key = 0;
 
         // Input for the array elements
-        std::cout << "Enter the array of " << size << " numbers: ";
+        std::cout << "Enter " << size << " numbers in ascending order: ";
         for (int i = 0; i < size; i++) {
             std::cin >> array[i];
         }
 
-        int peakIndex = FindPeakElement(array, size);
+        int peakIndex = findPeakElement(array, 0, size - 1, size);
         if (peakIndex != -1) {
             std::cout << "Peak element is " << array[peakIndex] << " at index: " << peakIndex << std::endl;
         } else {
@@ -113,3 +112,4 @@ int main() {
     }
     return 0;
 }
+
