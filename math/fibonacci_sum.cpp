@@ -35,16 +35,12 @@ using matrix = std::vector<std::vector<uint64_t> >;
  * @param A martix 2
  * @returns resultant matrix
  */
-math::fibonacci_sum::matrix multiply(const math::fibonacci_sum::matrix &T,
-                                     const math::fibonacci_sum::matrix &A) {
-    math::fibonacci_sum::matrix result(2, std::vector<uint64_t>(2, 0));
-
-    // multiplying matrices
+math::fibonacci_sum::matrix multiply(const matrix &T, const matrix &A) {
+    matrix result(2, std::vector<uint64_t>(2, 0));
     result[0][0] = T[0][0] * A[0][0] + T[0][1] * A[1][0];
     result[0][1] = T[0][0] * A[0][1] + T[0][1] * A[1][1];
     result[1][0] = T[1][0] * A[0][0] + T[1][1] * A[1][0];
     result[1][1] = T[1][0] * A[0][1] + T[1][1] * A[1][1];
-
     return result;
 }
 
@@ -127,6 +123,12 @@ static void test() {
     uint64_t test_5 = math::fibonacci_sum::fiboSum(n, m);
     assert(test_5 == 322);
     std::cout << "Passed Test 5!" << std::endl;
+
+    n=20;
+    m=30;
+    uint64_t test_6 = math::fibonacci_sum::fiboSum(n, m);
+    assert(test_6 == 14328);
+    std::court << "Passed Test 6!" << std::endl;
 }
 
 /**
