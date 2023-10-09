@@ -31,7 +31,7 @@ namespace bit_manipulation {
  * @param n is the number who will be checked
  * @returns either true or false
  */
-std::int64_t missingNumber(
+std::int64_t missing_number(
     std ::int64_t *array,
     std ::int64_t size) {  // int64_t is preferred over int so that
                            // no Overflow can be there.
@@ -106,6 +106,7 @@ static void test() {
 
     std::cout << "All test cases successfully passed!" << std::endl;
 }
+
 /**
  * @brief Main function
  * @returns 0 on exit
