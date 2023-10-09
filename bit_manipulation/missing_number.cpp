@@ -78,31 +78,31 @@ std::int64_t missing_number(
 static void test() {
     std::int64_t arr1[] = {1, 2, 3, 4, 5};
     std::int64_t size1 = sizeof(arr1) / sizeof(arr1[0]);
-    assert(bit_manipulation::missingNumber(arr1, size1) == 6);
+    assert(bit_manipulation::missing_number(arr1, size1) == 6);
 
     std::int64_t arr2[] = {2, 3, 4, 5, 6};
     std::int64_t size2 = sizeof(arr2) / sizeof(arr2[0]);
-    assert(bit_manipulation::missingNumber(arr2, size2) == 1);
+    assert(bit_manipulation::missing_number(arr2, size2) == 1);
 
     std::int64_t arr3[] = {1, 2, 3, 5, 6};
     std::int64_t size3 = sizeof(arr3) / sizeof(arr3[0]);
-    assert(bit_manipulation::missingNumber(arr3, size3) == 4);
+    assert(bit_manipulation::missing_number(arr3, size3) == 4);
 
     std::int64_t arr4[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 11};
     std::int64_t size4 = sizeof(arr4) / sizeof(arr4[0]);
-    assert(bit_manipulation::missingNumber(arr4, size4) == 10);
+    assert(bit_manipulation::missing_number(arr4, size4) == 10);
 
     std::int64_t arr5[] = {1};
     std::int64_t size5 = sizeof(arr5) / sizeof(arr5[0]);
-    assert(bit_manipulation::missingNumber(arr5, size5) == 2);
+    assert(bit_manipulation::missing_number(arr5, size5) == 2);
 
     std::int64_t arr6[] = {2};
     std::int64_t size6 = sizeof(arr6) / sizeof(arr6[0]);
-    assert(bit_manipulation::missingNumber(arr6, size6) == 1);
+    assert(bit_manipulation::missing_number(arr6, size6) == 1);
 
     std::int64_t arr7[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
     std::int64_t size7 = sizeof(arr7) / sizeof(arr7[0]);
-    assert(bit_manipulation::missingNumber(arr7, size7) == 12);
+    assert(bit_manipulation::missing_number(arr7, size7) == 12);
 
     std::cout << "All test cases successfully passed!" << std::endl;
 }
