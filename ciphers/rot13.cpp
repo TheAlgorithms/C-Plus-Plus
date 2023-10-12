@@ -22,16 +22,18 @@
  */
 namespace ciphers {
 /**
- * @namespace rot13_encoding
+ * @namespace rot13
  * @brief Function for [ROT13 Encoding and
  * Decoding](https://en.wikipedia.org/wiki/ROT13) implementation.
  */
 namespace rot13 {
 /**
  * @brief ROT13 Encoder/Decoder
+ *
  * @details Converts the given string using ROT13 algorithm.
  * Because a second application of ROT13 would restore the original text,
  * we can use the same function to encrypt as well as decrypt.
+ *
  * @param input Input as a string
  * @returns ROT13 encoded/decoded string
  */
