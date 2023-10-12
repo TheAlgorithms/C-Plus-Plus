@@ -1,0 +1,32 @@
+The std::unique algorithm in C++ is used to remove consecutive duplicate elements from a range (e.g., a container like a std::vector) and return an iterator pointing to the new end of the range.
+It's part of the C++ Standard Library and is defined in the <algorithm> header.
+
+#include <algorithm>
+
+template<class ForwardIt>
+ForwardIt unique(ForwardIt first, ForwardIt last);
+
+
+first and last represent the range of elements in which you want to remove consecutive duplicates. It is typically a pair of iterators, such as those returned by begin() and end() for a container.
+FOR EXAMPLE:
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+int main() {
+    std::vector<int> numbers = {1, 2, 2, 3, 3, 4, 4, 5};
+
+    // Use std::unique to remove consecutive duplicates
+    auto newEnd = std::unique(numbers.begin(), numbers.end());
+
+    // Resize the vector to the new size
+    numbers.resize(std::distance(numbers.begin(), newEnd));
+
+    // Print the result
+    for (const int& num : numbers) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}
