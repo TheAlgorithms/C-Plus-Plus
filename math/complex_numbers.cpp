@@ -203,6 +203,17 @@ double get_rand() { return (std::rand() % 100 - 50) / 100.f; }
 /**
  * Tests Function
  */
+
+
+
+//added function
+bool approx_equal(double a, double b, double epsilon = 1e-9)
+{
+    return std::abs(a - b) < epsilon;
+}
+
+
+
 void tests() {
     std::srand(std::time(nullptr));
     double x1 = get_rand(), y1 = get_rand(), x2 = get_rand(), y2 = get_rand();
@@ -213,52 +224,77 @@ void tests() {
     // Test for addition
     result = num1 + num2;
     expected = cnum1 + cnum2;
+
+    //error fixed
     assert(((void)"1 + 1i + 1 + 1i is equal to 2 + 2i but the addition doesn't "
                   "add up \n",
             (result.real() == expected.real() &&
              result.imag() == expected.imag())));
+
+             
     std::cout << "First test passes." << std::endl;
     // Test for subtraction
     result = num1 - num2;
     expected = cnum1 - cnum2;
+
+    //error fixed
     assert(((void)"1 + 1i - 1 - 1i is equal to 0 but the program says "
                   "otherwise. \n",
             (result.real() == expected.real() &&
              result.imag() == expected.imag())));
+
+
     std::cout << "Second test passes." << std::endl;
     // Test for multiplication
     result = num1 * num2;
     expected = cnum1 * cnum2;
+
+    //error fixed
     assert(((void)"(1 + 1i) * (1 + 1i) is equal to 2i but the program says "
                   "otherwise. \n",
-            (result.real() == expected.real() &&
-             result.imag() == expected.imag())));
+            (approx_equal(result.real(), expected.real()) && approx_equal(result.imag(), expected.imag()))));
+
+
     std::cout << "Third test passes." << std::endl;
     // Test for division
     result = num1 / num2;
     expected = cnum1 / cnum2;
+
+    //error fixed
     assert(((void)"(1 + 1i) / (1 + 1i) is equal to 1 but the program says "
                   "otherwise.\n",
-            (result.real() == expected.real() &&
-             result.imag() == expected.imag())));
+            (approx_equal(result.real(), expected.real()) && approx_equal(result.imag(), expected.imag()))));
+
+
     std::cout << "Fourth test passes." << std::endl;
     // Test for conjugates
     result = ~num1;
     expected = std::conj(cnum1);
+
+    //error fixed
     assert(((void)"(1 + 1i) has a conjugate which is equal to (1 - 1i) but the "
                   "program says otherwise.\n",
-            (result.real() == expected.real() &&
-             result.imag() == expected.imag())));
+            (approx_equal(result.real(), expected.real()) && approx_equal(result.imag(), expected.imag()))));
+
+
     std::cout << "Fifth test passes.\n";
     // Test for Argument of our complex number
+
+    //error fixed
     assert(((void)"(1 + 1i) has argument PI / 4 but the program differs from "
                   "the std::complex result.\n",
-            (num1.arg() == std::arg(cnum1))));
+            (approx_equal(num1.arg(), std::arg(cnum1)))));
+
+
     std::cout << "Sixth test passes.\n";
     // Test for absolute value of our complex number
+
+    //error fixed
     assert(((void)"(1 + 1i) has absolute value sqrt(2) but the program differs "
                   "from the std::complex result. \n",
-            (num1.abs() == std::abs(cnum1))));
+            (approx_equal(num1.abs(), std::abs(cnum1)))));
+
+
     std::cout << "Seventh test passes.\n";
 }
 
