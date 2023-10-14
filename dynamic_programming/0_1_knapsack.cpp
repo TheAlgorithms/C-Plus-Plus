@@ -117,6 +117,7 @@ static void test() {
     assert(max_value2 == expected_max_value2);
     std::cout << "Maximum Knapsack value with " << n2 << " items is "
               << max_value2 << std::endl;
+
 }
 
 /**
