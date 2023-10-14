@@ -2,7 +2,7 @@
 #include <vector>
 
 // Returns the maximum element in an array
-int getMax(const std::vector<int>& arr) {
+int Max(const std::vector<int>& arr) {
     int maxVal = arr[0];
     for (const auto& val : arr)
         if (val > maxVal)
@@ -11,7 +11,7 @@ int getMax(const std::vector<int>& arr) {
 }
 
 // Returns the minimum element in an array
-int getMin(const std::vector<int>& arr) {
+int Min(const std::vector<int>& arr) {
     int minVal = arr[0];
     for (const auto& val : arr)
         if (val < minVal)
@@ -28,8 +28,8 @@ void printArray(const std::vector<int>& arr) {
 
 // Writing The counting sort algorithm
 std::vector<int> countingSort(const std::vector<int>& arr) {
-    int maxVal = getMax(arr);
-    int minVal = getMin(arr);
+    int maxVal = Max(arr);
+    int minVal = Min(arr);
     
     std::vector<int> count(maxVal - minVal + 1, 0);
     std::vector<int> sortedArr(arr.size());
