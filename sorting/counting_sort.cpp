@@ -1,57 +1,78 @@
 #include <iostream>
-using namespace std;
+#include <vector>
 
-int Max(int Arr[], int N) {
-    int max = Arr[0];
-    for (int i = 1; i < N; i++)
-        if (Arr[i] > max)
-            max = Arr[i];
-    return max;
+// Returns the maximum element in an array
+int getMax(const std::vector<int>& arr) {
+    int maxVal = arr[0];
+    for (const auto& val : arr)
+        if (val > maxVal)
+            maxVal = val;
+    return maxVal;
 }
 
-int Min(int Arr[], int N) {
-    int min = Arr[0];
-    for (int i = 1; i < N; i++)
-        if (Arr[i] < min)
-            min = Arr[i];
-    return min;
+// Returns the minimum element in an array
+int getMin(const std::vector<int>& arr) {
+    int minVal = arr[0];
+    for (const auto& val : arr)
+        if (val < minVal)
+            minVal = val;
+    return minVal;
 }
 
-void Print(int Arr[], int N) {
-    for (int i = 0; i < N; i++) cout << Arr[i] << ", ";
+// Prints the array elements
+void printArray(const std::vector<int>& arr) {
+    for (const auto& val : arr) 
+        std::cout << val << ", ";
+    std::cout << std::endl;
 }
 
-int *Counting_Sort(int Arr[], int N) {
-    int max = Max(Arr, N);
-    int min = Min(Arr, N);
-    int *Sorted_Arr = new int[N];
+// Writing The counting sort algorithm
+std::vector<int> countingSort(const std::vector<int>& arr) {
+    int maxVal = getMax(arr);
+    int minVal = getMin(arr);
+    
+    std::vector<int> count(maxVal - minVal + 1, 0);
+    std::vector<int> sortedArr(arr.size());
 
-    int *Count = new int[max - min + 1];
+    for (const auto& val : arr) 
+        count[val - minVal]++;
 
-    for (int i = 0; i < N; i++) Count[Arr[i] - min]++;
+    for (int i = 1; i < count.size(); i++) 
+        count[i] += count[i - 1];
 
-    for (int i = 1; i < (max - min + 1); i++) Count[i] += Count[i - 1];
-
-    for (int i = N - 1; i >= 0; i--) {
-        Sorted_Arr[Count[Arr[i] - min] - 1] = Arr[i];
-        Count[Arr[i] - min]--;
+    for (int i = arr.size() - 1; i >= 0; i--) {
+        sortedArr[count[arr[i] - minVal] - 1] = arr[i];
+        count[arr[i] - minVal]--;
     }
 
-    return Sorted_Arr;
+    return sortedArr;
+}
+
+// Checks if the array is sorted
+bool isSorted(const std::vector<int>& arr) {
+    for (size_t i = 1; i < arr.size(); i++) 
+        if (arr[i] < arr[i - 1])
+            return false;
+    return true;
 }
 
 int main() {
-    int Arr[] = {47, 65, 20, 66, 25, 53, 64, 69, 72, 22,
-                 74, 25, 53, 15, 42, 36, 4,  69, 86, 19},
-        N = 20;
-    int *Sorted_Arr;
+    std::vector<int> arr = {47, 65, 20, 66, 25, 53, 64, 69, 72, 22,
+                            74, 25, 53, 15, 42, 36, 4,  69, 86, 19};
 
-    cout << "\n\tOrignal Array = ";
-    Print(Arr, N);
-    Sorted_Arr = Counting_Sort(Arr, N);
-    cout << "\n\t Sorted Array = ";
-    Print(Sorted_Arr, N);
-    cout << endl;
+    std::cout << "Original Array: ";
+    printArray(arr);
+
+    std::vector<int> sortedArr = countingSort(arr);
+
+    std::cout << "Sorted Array: ";
+    printArray(sortedArr);
+
+//Automation Check
+    if (isSorted(sortedArr))
+        std::cout << "Array is sorted." << std::endl;
+    else
+        std::cout << "Array is not sorted." << std::endl;
 
     return 0;
 }
