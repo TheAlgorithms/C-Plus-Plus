@@ -1,0 +1,177 @@
+// IMEPLEMENTATION OF SHORTEST JOB FIRST ALGORITHM USING LINKED LIST IN CPP
+/* SHORTEST JOB FIRST - It is a non-preemptive CPU scheduling algorithm which allocates CPU time to the process which has less BURST time */
+/* It is the most optimal scheduling algorithm but it do not have practical implementation */
+
+
+#include<bits/stdc++.h>
+using namespace std;
+struct process   //node for every process
+{   
+    int pid;    //process id
+    int at;     //arrival time for every process-(The time at which process arrived)
+    int bt;     //burst time for every process-(Total time taken by the process for execution)
+    int et;     //This is used to check whether cpu is already allocated to the particular process or not
+    int tat;    //turn around time for every process-(Difference between the time at which process arrived and process completed)
+    int wt;     //waiting time for every process-(difference between turn around time and burst time)
+    int ct;     //completion time for every process-(The time at which process completed its execution)
+    struct process *next;    //pointer to the next node
+};
+struct process *front=NULL; 
+struct process *temp=NULL;
+struct process *new1 , *ganttchart;
+int p=0;
+int total_burst=0;
+vector<int>order;
+
+
+void insert(int b,int a) //Inserting arrival time and burst times into the linked list
+{
+  temp=front;
+  new1=(struct process*)malloc(sizeof(struct process));
+  new1->pid=++p;
+  new1->bt=b;
+  new1->at=a;
+  new1->et=0;
+  new1->wt=0;
+  new1->tat=0;
+  new1->ct=0;
+  new1->next=NULL;
+  // A new node with arrival and burst times is created
+  if(front==NULL)
+  // if front node is empty new node is attached in the beginning itself
+   front=new1;
+  // else new node is attached in the end of the linked list
+  else
+  {
+    while(temp->next!=NULL)// Traversing upto end of the linked list
+       temp=temp->next;
+    temp->next=new1;//attaching new node at the end
+  }
+}
+
+void sjf()
+{
+    int time=0;                //intially time is set to 0
+    int min=total_burst;       //setting to maximum value
+    temp=front;
+    while(time<=total_burst)
+    {
+           ganttchart=NULL;
+           min=total_burst;
+           temp=front;
+           while(temp!=NULL)  // Finding the minimum burst time process and allocating it to ganttchart
+           {
+                if(temp->et==0)
+                {
+                    if(time>=temp->at && min>temp->bt)
+                    {
+                        min=temp->bt; 
+                        ganttchart=temp;
+                    }
+                }
+                temp=temp->next;
+            }
+            if(ganttchart==NULL)   // if ganttchart  is null then cpu is not utilised by any process at that time
+            {
+                  time+=1;
+            }
+            else
+            {
+                  time=time+ganttchart->bt;
+                  order.push_back(ganttchart->pid);
+                  ganttchart->ct=time;
+                  ganttchart->et=1;
+                  ganttchart->wt=time-(ganttchart->at+ganttchart->bt);  // waiting time = turn around time - burst time
+                  ganttchart->tat=time-(ganttchart->at);                // Turn around time = completion time - arrival time
+            }
+    }
+
+}
+
+
+void display(int n) // this is used to print the output
+{  
+   temp=front;
+   float avg_wt=0,avg_tat=0;
+   printf("\npid\tburst_time\tarrival_time\tCompletion_time\twaiting_time\tturn_around_time");
+   while(temp!=NULL)
+   {
+     printf("\n%d\t\t%d\t\t%d\t\t%d\t\t%d\t\t%d",temp->pid,temp->bt,temp->at,temp->ct,temp->wt,temp->tat);
+     avg_wt+=temp->wt;
+     avg_tat+=temp->tat;
+     temp=temp->next;
+   }
+   
+   cout<<"\n";
+   cout<<"\n";
+   printf("THE ORDER OF EXECUTION OF PROCESSES IS : ");
+   
+   for(int i=0;i<order.size();i++)
+   {  
+      if(i!=order.size()-1)
+        cout<<order[i]<<"->";
+      else
+        cout<<order[i];
+   }
+   cout<<"\n";
+   printf("\naverage waiting time is %f",avg_wt/n);
+   printf("\naverage turn around time is %f",avg_tat/n);
+
+
+}
+
+
+int main()
+{
+    int n,a,b;
+    /*
+      n = no of processes
+      a = for taking input of arrival time
+      b = for taking input of burst time of process
+    */
+    cout<<"ENTER NO OF PROCESSES : ";
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        cout<<"ENTER THE ARRIVAL TIME AND BURST TIME FOR PROCESS "<<i+1<<":";
+        cin>>a>>b;
+        insert(b,a);       // function call for inserting process into linked list
+        if(i==0 || i==n-1)
+           total_burst+=a;
+        total_burst+=b;
+    }
+     sjf();               // function call for implementing SJF algorithm
+     display(n);         // function call for printing output
+}
+
+
+
+
+
+
+/*  
+       EXAMPLE INPUT AND OUTPUT
+      --------------------------
+
+
+       ENTER NO OF PROCESSES : 5
+ENTER THE ARRIVAL TIME AND BURST TIME FOR PROCESS 1:0 2
+ENTER THE ARRIVAL TIME AND BURST TIME FOR PROCESS 2:4 5
+ENTER THE ARRIVAL TIME AND BURST TIME FOR PROCESS 3:4 6
+ENTER THE ARRIVAL TIME AND BURST TIME FOR PROCESS 4:20 30
+ENTER THE ARRIVAL TIME AND BURST TIME FOR PROCESS 5:90 65
+
+pid     burst_time      arrival_time    Completion_time waiting_time    turn_around_time
+1               2               0               2               0               2
+2               5               4               9               0               5
+3               6               4               15              5               11
+4               30              20              50              0               30
+5               65              90              155             0               65
+
+THE ORDER OF EXECUTION OF PROCESSES IS : 1->2->3->4->5
+
+average waiting time is 1.000000
+average turn around time is 22.600000
+
+*/
+    
