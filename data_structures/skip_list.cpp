@@ -15,14 +15,16 @@
 
 #include <algorithm>
 #include <array>
-#include <cmath>
+#include <cassert>
+#include <chrono>
 #include <cstring>
 #include <ctime>
 #include <iostream>
 #include <memory>
+#include <random>
 #include <regex>
 #include <sstream>
-#include <string>
+#include <type_traits>
 #include <vector>
 
 template <typename T, typename... Args>
@@ -30,32 +32,24 @@ std::unique_ptr<T> make_unique(Args&&... args) {
     return std::unique_ptr<T>(new T(std::forward<Args>(args)...));
 }
 
-/** \namespace data_structures
- * \brief Data-structure algorithms
- */
-namespace data_structures {
-constexpr int MAX_LEVEL = 6;        ///< Maximum level of skip list
-constexpr float PROBABILITY = 0.5;  ///< Current probability for "coin toss"
+class Stopwatch {
+    typedef std::chrono::steady_clock Clock;
 
-/**
- *  Node structure [Key][Node*, Node*...]
- */
-struct Node {
-    int key;      ///< key integer
-    void* value;  ///< pointer of value
-    std::vector<std::shared_ptr<Node>>
-        forward;  ///< nodes of the given one in all levels
+ private:
+    std::chrono::time_point<Clock> last;
 
-    /**
-     * Creates node with provided key, level and value
-     * @param key is number that is used for comparision
-     * @param level is the maximum level node's going to added
-     */
-    Node(int key, int level, void* value = nullptr) : key(key), value(value) {
-        // Initialization of forward vector
-        for (int i = 0; i < (level + 1); i++) {
-            forward.push_back(nullptr);
-        }
+ public:
+    void reset() noexcept { last = Clock::now(); }
+    Stopwatch() noexcept { reset(); }
+    double operator()() const noexcept {  // returns time in Resolution
+        return std::chrono::duration<double, std::micro>(Clock::now() - last)
+            .count();
+    }
+    ~Stopwatch() {
+        // bad encapulation, you should reconsider this design!
+        // e.g. take a std::function as argument to the constructor and call it
+        // here
+        std::cout << (*this)() << " microseconds\n";
     }
 };
 
@@ -72,6 +66,21 @@ class BaseRandomNumberGenerator {
 class CRandBasedGenerator : public BaseRandomNumberGenerator {
  public:
     float operator()() { return static_cast<float>(std::rand()) / RAND_MAX; }
+};
+
+class MerseneUniformGenerator : public BaseRandomNumberGenerator {
+ private:
+    std::random_device dev;
+    std::mt19937 rng;
+    std::uniform_int_distribution<std::mt19937::result_type> distribution;
+
+ public:
+    MerseneUniformGenerator() {
+        rng = std::mt19937(dev());
+        distribution =
+            std::uniform_int_distribution<std::mt19937::result_type>(0, 1);
+    }
+    virtual float operator()() { return distribution(rng); }
 };
 
 /*
@@ -96,11 +105,36 @@ class MockRandomNumberGenerator : public BaseRandomNumberGenerator {
     }
 };
 
+/** \namespace data_structures
+ * \brief Data-structure algorithms
+ */
+namespace data_structures {
+constexpr float PROBABILITY = 0.5;  ///< Current probability for "coin toss"
+
+/**
+ *  Node structure [Key][Node*, Node*...]
+ */
+struct Node {
+    int key;      ///< key integer
+    void* value;  ///< pointer of value
+    std::vector<std::shared_ptr<Node>>
+        forward;  ///< nodes of the given one in all levels
+
+    /**
+     * Creates node with provided key, level and value
+     * @param key is number that is used for comparision
+     * @param level is the maximum level node's going to added
+     */
+    Node(int key, int level, void* value = nullptr)
+        : key(key),
+          value(value),
+          forward(std::vector<std::shared_ptr<Node>>(level + 1, nullptr)) {}
+};
+
 /**
  * SkipList class implementation with basic methods
  */
 class SkipList {
-    // const int MAX_LEVEL;          ///< Maximum level of skip list
     int level;                     ///< Maximum level of the skiplist
     std::shared_ptr<Node> header;  ///< Pointer to the header node
     std::unique_ptr<BaseRandomNumberGenerator> uniformRealNumberGenerator;
@@ -119,15 +153,55 @@ class SkipList {
         return lvl;
     }
 
+    struct SearchResult {
+        SearchResult(std::vector<std::shared_ptr<Node>>& update, bool found) {
+            this->update = std::move(update);
+            this->found = found;
+        }
+        std::vector<std::shared_ptr<Node>> update;
+        bool found;
+    };
+
+    SearchResult find(int key, bool shortCircuit = true) {
+        std::shared_ptr<Node> x = header;
+        std::vector<std::shared_ptr<Node>> update(MAX_LEVEL + 1, nullptr);
+
+        bool found = false;
+
+        for (int i = level; i >= 0; i--) {
+            while (x->forward[i] != nullptr && x->forward[i]->key < key) {
+                x = x->forward[i];
+            }
+            update[i] = x;
+            if (x->forward[i] != nullptr && x->forward[i]->key == key) {
+                found = true;
+                if (shortCircuit) {
+                    update[i] = x->forward[i];
+                    return SearchResult(update, true);
+                }
+            }
+        }
+
+        return SearchResult(update, found);
+    }
+
  public:
+    const int MAX_LEVEL;
+
     /**
      * Skip List constructor. Initializes header, start
      * Node for searching in the list
+     * MAX_LEVEL is computed using the formula from the resource referenced in
+     * the introduction. We aim to have 4 nodes at the highest level.
      */
-    SkipList(std::unique_ptr<BaseRandomNumberGenerator> generator) {
+    SkipList(std::unique_ptr<BaseRandomNumberGenerator> generator,
+             int num_nodes)
+        : MAX_LEVEL(log(double(num_nodes)) / log(4.0 / 2)) {
         level = 0;
         // Header initialization
         header = std::make_shared<Node>(-1, MAX_LEVEL);
+        std::cout << "Max number of levels: " << MAX_LEVEL
+                  << "\nGiven nodes in the region of: " << num_nodes << "\n ";
         uniformRealNumberGenerator = std::move(generator);
     }
 
@@ -143,21 +217,10 @@ class SkipList {
      * @param value pointer to a value, that can be any type
      */
     void insertElement(int key, void* value) {
-        std::shared_ptr<Node> x = header;
-        std::array<std::shared_ptr<Node>, MAX_LEVEL + 1> update;
-        update.fill(nullptr);
+        SearchResult result = find(key);
+        auto& update = result.update;
 
-        for (int i = level; i >= 0; i--) {
-            while (x->forward[i] != nullptr && x->forward[i]->key < key) {
-                x = x->forward[i];
-            }
-            update[i] = x;
-        }
-
-        x = x->forward[0];
-
-        bool doesnt_exist = (x == nullptr || x->key != key);
-        if (doesnt_exist) {
+        if (result.found == false) {
             int rlevel = randomLevel();
 
             if (rlevel > level) {
@@ -181,23 +244,11 @@ class SkipList {
      * @param key is number that is used for comparision.
      */
     void deleteElement(int key) {
-        std::shared_ptr<Node> x = header;
+        auto result = find(key, false);
+        auto& update = result.update;
+        auto x = update[0]->forward[0];
 
-        std::array<std::shared_ptr<Node>, MAX_LEVEL + 1> update;
-        update.fill(nullptr);
-
-        for (int i = level; i >= 0; i--) {
-            while (x->forward[i] != nullptr && x->forward[i]->key < key) {
-                x = x->forward[i];
-            }
-            update[i] = x;
-        }
-
-        x = x->forward[0];
-
-        bool doesnt_exist = (x == nullptr || x->key != key);
-
-        if (!doesnt_exist) {
+        if (result.found) {
             for (int i = 0; i <= level; i++) {
                 if (update[i]->forward[i] != x) {
                     break;
@@ -235,7 +286,6 @@ class SkipList {
     void displayList(std::ostream& out, std::string end = " ") {
         for (int i = 0; i <= level; i++) {
             std::shared_ptr<Node> node = header->forward[i];
-            // out << /*"Level " << (i) << ": "; */
             while (node != nullptr) {
                 out << node->key << " ";
                 node = node->forward[i];
@@ -316,8 +366,7 @@ std::string insertItem(const std::string input, int key, const int level) {
 }
 
 data_structures::SkipList createSkipListTestInstance() {
-    data_structures::SkipList lst(
-        make_unique<data_structures::CRandBasedGenerator>());
+    data_structures::SkipList lst(make_unique<CRandBasedGenerator>(), 100);
 
     int count = 0;
     for (int j = 0; j < 100; j++) {
@@ -329,7 +378,8 @@ data_structures::SkipList createSkipListTestInstance() {
     return lst;
 }
 
-void isTrue(bool isEqual, std::string failure_msg, std::string success_msg) {
+void isTrue(bool isEqual, const std::string& failure_msg,
+            const std::string& success_msg) {
     if (isEqual)
         std::cout << success_msg << std::endl;
     else
@@ -351,8 +401,7 @@ void testInsertNewKey() {
 
     // This mock allows us to control the random numbers generated so we can
     // ensure the new key is added to the required number of levels.
-    lst.setNumberGenerator(
-        make_unique<data_structures::MockRandomNumberGenerator>(level));
+    lst.setNumberGenerator(make_unique<MockRandomNumberGenerator>(level));
 
     // Actually insert into the skip list
     lst.insertElement(key, NULL);
@@ -378,8 +427,7 @@ void testInsertExistingKey() {
     lst.displayList(ss_insertion_gt, "");
 
     // Actually insert into the skip list
-    lst.setNumberGenerator(
-        make_unique<data_structures::MockRandomNumberGenerator>(level));
+    lst.setNumberGenerator(make_unique<MockRandomNumberGenerator>(level));
     lst.insertElement(key, NULL);
 
     std::stringstream ss_insertion;
@@ -394,7 +442,7 @@ void testInsertLargestKey() {  // TEST: Insert the largest key
     data_structures::SkipList lst = createSkipListTestInstance();
 
     int key = 10000;
-    int level = data_structures::MAX_LEVEL;
+    int level = lst.MAX_LEVEL;
 
     // We will use string processing to insert a key into this string and
     // use the result as a target
@@ -405,8 +453,7 @@ void testInsertLargestKey() {  // TEST: Insert the largest key
     // Actually insert into the skip list
     // This mock allows us to control the random numbers generated so we can
     // ensure the new key is added to the required number of levels.
-    lst.setNumberGenerator(
-        make_unique<data_structures::MockRandomNumberGenerator>(level));
+    lst.setNumberGenerator(make_unique<MockRandomNumberGenerator>(level));
 
     lst.insertElement(key, NULL);
 
@@ -433,8 +480,7 @@ void testInsertSmallestKey() {
     // Actually insert into the skip list
     // This mock allows us to control the random numbers generated so we can
     // ensure the new key is added to the required number of levels.
-    lst.setNumberGenerator(
-        make_unique<data_structures::MockRandomNumberGenerator>(level));
+    lst.setNumberGenerator(make_unique<MockRandomNumberGenerator>(level));
 
     lst.insertElement(key, NULL);
 
@@ -460,8 +506,7 @@ void testDeleteExistingKey() {  // TEST: Delete an existing key
     // Actually insert into the skip list
     // This mock allows us to control the random numbers generated so we can
     // ensure the new key is added to the required number of levels.
-    lst.setNumberGenerator(
-        make_unique<data_structures::MockRandomNumberGenerator>(level));
+    lst.setNumberGenerator(make_unique<MockRandomNumberGenerator>(level));
 
     lst.deleteElement(key);
 
@@ -488,8 +533,7 @@ void testDeleteKeyNotInSkipList() {
     // Actually insert into the skip list
     // This mock allows us to control the random numbers generated so we can
     // ensure the new key is added to the required number of levels.
-    lst.setNumberGenerator(
-        make_unique<data_structures::MockRandomNumberGenerator>(level));
+    lst.setNumberGenerator(make_unique<MockRandomNumberGenerator>(level));
 
     lst.deleteElement(key);
 
@@ -509,8 +553,7 @@ void testDeleteKeyNotInSkipList() {
 int main() {
     std::srand(0);
 
-    data_structures::SkipList lst(
-        make_unique<data_structures::CRandBasedGenerator>());
+    data_structures::SkipList lst(make_unique<CRandBasedGenerator>(), 100);
 
     int count = 0;
     for (int j = 0; j < 100; j++) {
@@ -519,7 +562,7 @@ int main() {
         count++;
     }
     std::cout << "Number of nodes: " << count << "  "
-              << (2 << (data_structures::MAX_LEVEL + 2)) << "\n";
+              << (2 << (lst.MAX_LEVEL + 2)) << "\n";
 
     lst.displayList(std::cout, "\n");
 
@@ -534,6 +577,65 @@ int main() {
     testDeleteExistingKey();
 
     testDeleteKeyNotInSkipList();
+
+    // Generate 100,000 and compare it to binary search
+    // Sort a vector that contains the same numbers and compare to searching in
+    // a skip list
+    int N = 10000000;
+    std::random_device dev;
+    auto rng = std::mt19937(dev());
+    auto distribution =
+        std::uniform_int_distribution<std::mt19937::result_type>(-N / 2, N / 2);
+
+    std::vector<int> randos(N);
+    std::generate_n(std::begin(randos), N, [&]() { return distribution(rng); });
+
+    data_structures::SkipList sl2(make_unique<MerseneUniformGenerator>(), N);
+    {
+        std::cout << "\n\nSkipList insertion which is equivalent to sorting: ";
+        Stopwatch sw;
+        for (int n : randos) sl2.insertElement(n, nullptr);
+    }
+
+    {
+        std::cout << "\n\nSorting a vector: ";
+        Stopwatch sw;
+        std::sort(std::begin(randos), std ::end(randos));
+    }
+
+    {
+        std::cout << "\n\nBinary search: ";
+        Stopwatch sw;
+        std::binary_search(std::begin(randos), std::end(randos), 0);
+    }
+
+    {
+        std::cout << "\n\nSkipList search: ";
+        Stopwatch sw;
+        sl2.searchElement(2);
+    }
+
+    {
+        std::cout << "\n\nInserting in a vector: ";
+        Stopwatch sw;
+        auto last = std::end(randos);
+        auto mid = std::partition(std::begin(randos), std::end(randos),
+                                  [](int x) { return x < 0; });
+        std::move_backward(mid, last - 2, last);
+        *mid = 0;
+    }
+
+    {
+        std::cout << "\n\nInserting into SkipList: ";
+        Stopwatch sw;
+        sl2.insertElement(0, nullptr);
+    }
+
+    {
+        std::cout << "\nDeleting from SkipList: ";
+        Stopwatch sw;
+        sl2.deleteElement(0);
+    }
 
     return 0;
 }
