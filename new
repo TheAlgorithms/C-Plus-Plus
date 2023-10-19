@@ -1,0 +1,33 @@
+Compression algorithms are used to reduce the size of data for various purposes, such as saving storage space, reducing transmission time over a network, 
+or optimizing data for efficient processing. There are several compression algorithms, and I'll provide examples of a few common ones:
+
+Run-Length Encoding (RLE):
+
+Run-Length Encoding is a simple compression algorithm that replaces sequences of repeated identical characters with a single character and a count. 
+It's effective for compressing data with long runs of the same value.
+
+#include <iostream>
+#include <string>
+
+std::string runLengthEncode(const std::string& input) {
+    std::string result = "";
+    int count = 1;
+    for (int i = 1; i < input.length(); i++) {
+        if (input[i] == input[i - 1]) {
+            count++;
+        } else {
+            result += input[i - 1] + std::to_string(count);
+            count = 1;
+        }
+    }
+    result += input[input.length() - 1] + std::to_string(count);
+    return result;
+}
+
+int main() {
+    std::string input = "AAABBBCCCDDDD";
+    std::string compressed = runLengthEncode(input);
+    std::cout << "Original: " << input << std::endl;
+    std::cout << "Compressed: " << compressed << std::endl;
+    return 0;
+}
