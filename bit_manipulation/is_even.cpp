@@ -9,7 +9,7 @@
  * is even or odd.
  *
  * A binary number consists of two digits. They are 0 & 1. Digit 1 is known as
- * set bit in computer terms.
+ * set bit in computer terms. test comment
  * Worst Case Time Complexity: O(1)
  * Space complexity: O(1)
  * @author [Simona Isakova](https://github.com/Buringskul)
