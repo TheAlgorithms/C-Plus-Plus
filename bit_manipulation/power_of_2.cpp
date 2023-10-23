@@ -22,7 +22,7 @@
  * @namespace bit_manipulation
  * @brief Bit manipulation algorithms
  */
-namespace bit_manipulation {
+namespace bit_manipulation { 
 /**
  * @brief The main function implements check for power of 2
  * @param n is the number who will be checked

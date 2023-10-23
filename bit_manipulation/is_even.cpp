@@ -31,9 +31,8 @@ namespace bit_manipulation {
 
 bool is_even(std ::int64_t n) {  // int64_t is preferred over int so that
                                  // no Overflow can be there. x) {
-    return n & 1 == 0;
+    return n & 1 == 0; // If a number has a 0 at the end in binary it is even but if it's one then the number is false.
 }
-
 
 /**
  * @brief Self-test implementations
@@ -66,4 +65,4 @@ int main() {
     test();  // run self-test implementations
     return 0;
 }
-}
+}  // namespace bit_manipulation
