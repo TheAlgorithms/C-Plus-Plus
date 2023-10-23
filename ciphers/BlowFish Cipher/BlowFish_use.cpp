@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-#include "blowfish.h"
+#include "BlowFish_Header.h"
 using namespace std;
 typedef unsigned char byte;
 int main() {
