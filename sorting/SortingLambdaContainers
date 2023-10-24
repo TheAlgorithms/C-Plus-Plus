@@ -1,0 +1,48 @@
+// Include sequence containers
+#include <vector>
+#include <deque>
+#include <list>
+#include <array>
+#include <forward_list>
+
+// Include sorting algorithm
+#include <algorithm>
+
+class Base {
+ public:
+
+    // Constructor that set variable to the value of v
+    Base(int v): variable(v) {
+    }
+    
+    int variable;
+};
+
+
+int main() {
+    // Create 2 elements to sort
+    Base a(10);
+    Base b(5);
+    
+    // We're using C++11, so let's use initializer lists to insert items.
+    std::vector <Base> vector = {a, b};
+    std::deque <Base> deque = {a, b};
+    std::list <Base> list = {a, b};
+    std::array <Base, 2> array = {a, b};
+    std::forward_list<Base> flist = {a, b};
+    
+    // We can sort data using an inline lambda expression
+    std::sort(std::begin(vector), std::end(vector),
+      [](const Base &a, const Base &b) { return a.variable < b.variable;});
+
+    // We can also pass a lambda object as the comparator
+    // and reuse the lambda multiple times
+    auto compare = [](const Base &a, const Base &b) {
+                     return a.variable < b.variable;};
+    std::sort(std::begin(deque), std::end(deque), compare);
+    std::sort(std::begin(array), std::end(array), compare);
+    list.sort(compare);
+    flist.sort(compare);
+
+    return 0;
+}
