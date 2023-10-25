@@ -1,0 +1,45 @@
+**Project Description:**
+
+The C++ Password Manager is a text-based application that allows users to securely store and retrieve passwords for various services or accounts. The program uses a simplified Caesar cipher to encrypt passwords before storing them. It provides the following functionalities:
+
+1. **Add Password:**
+   - Users can add passwords for different services (e.g., email, social media, banking).
+   - They need to input the service or account name, their username, and the password.
+   - The password is encrypted using a Caesar cipher before being stored.
+
+2. **List Passwords:**
+   - Users can list all the stored passwords.
+   - The program decrypts and displays the passwords alongside their corresponding service and username.
+
+3. **Retrieve Password:**
+   - Users can retrieve a password by specifying the service or account name.
+   - The program searches the database for the specified service and, if found, decrypts and displays the password.
+
+4. **Quit:**
+   - Users can exit the application.
+
+**Usage:**
+
+1. **Add Password:**
+   - Select option 1.
+   - Enter the service or account name, e.g., "Gmail."
+   - Enter your username or email associated with the service, e.g., "example@gmail.com."
+   - Enter your password, e.g., "myStrongPassword."
+   - The password is encrypted and stored in the database.
+
+2. **List Passwords:**
+   - Select option 2.
+   - The program displays a list of stored passwords along with their respective services and usernames.
+   - Passwords are decrypted and displayed in plain text.
+
+3. **Retrieve Password:**
+   - Select option 3.
+   - Enter the service or account name you want to retrieve a password for, e.g., "Gmail."
+   - The program searches the database for the specified service.
+   - If the service is found, it displays the service name, username, and decrypts and displays the password.
+
+4. **Quit:**
+   - Select option 4 to exit the application.
+
+**Security Note:**
+This project uses a simplified Caesar cipher for encryption, which is not recommended for actual password management applications. In practice, it's essential to use strong encryption methods and follow best security practices to ensure the safety of sensitive data. This project serves as a simple example and should not be used for storing actual passwords. In a real-world application, consider using a reputable encryption library and implementing more robust security measures.
