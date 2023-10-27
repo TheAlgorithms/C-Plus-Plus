@@ -13,113 +13,130 @@
  */
 #include <iostream>
 using namespace std;
-/*A structure for Node*/
-struct Node {      // defining node of a LinkedList
+/**
+ * A structure for Node
+ * By defining a structure,we set the data and priority part within it
+ */
+struct Node {
     int data;      // defining data part of a node
     int priority;  // defining priority part of a node
-    Node* next;    // Node pointer points to next
+    Node* next;
 };
-/*A class for Min Heap*/
-class PQ {             // defining class
- private:              // can be accessed only when the class is called
-    Node* front;       // Node pointer points to next
- public:               // can be accessed globally
-    PQ() {             // constructor
-        front = NULL;  // initializing front as NULL
-    }
-    void insert(int, int);  // calling insert function
-    void clear();           // calling remove function
-    bool isEmpty();         // calling isEmpty function
-    void display();         // calling display function
+/**
+ * A class for PriorityQueue
+ * Here we define the private elements and the public elements
+ * Private elements can be accessed only when the class is called
+ * Public elements can be accessed globally
+ */
+class PQ {
+ private:
+    Node* front;
+
+ public:
+    PQ() { front = NULL; }
+    // calling functions through the class
+    void insert(int, int);
+    void clear();
+    bool isEmpty();
+    void display();
 };
-void PQ::insert(
-    int value,
-    int p)  // using scope resolution operator to use the class variables
-{
+/**
+ * Insert function is used to add a new value to a queue
+ * It adds the value according to the priority provided by the user
+ */
+void PQ::insert(int value, int p) {
     Node* newNode = new Node;  // creating a newNode
-    newNode->data = value;     // assigning value to the data part of newNode
-    newNode->priority = p;     // assidning p to the priority part of newNode
-    if (front == NULL || p < front->priority)  // comparing and checking
-    {
-        newNode->next = front;  // if the condition is true,then assigning front
-                                // to the next part of newNode
+    newNode->data = value;
+    newNode->priority = p;
+    if (front == NULL || p < front->priority) {
+        newNode->next = front;
+
         front = newNode;
     } else {
-        Node* curr =
-            front;  // Node pointer pointing to curr is assigned as front
-        while (curr->next &&
-               curr->next->priority <= p)  // comparing and checking
-        {
-            curr = curr->next;  // changing the pointer
+        Node* curr = front;
+        while (curr->next && curr->next->priority <= p) {
+            curr = curr->next;
         }
-        newNode->next = curr->next;  // assigning the next part of newNode with
-                                     // next part of curr
-        curr->next = newNode;        // assigning next part of curr as newNode
+        newNode->next = curr->next;
+
+        curr->next = newNode;
     }
 }
-void PQ::clear()  // using scope resolution operator to use the class variables
-{
-    while (!isEmpty())  // checking if the list is empty or not
-    {
-        Node* temp =
-            front;  // Node pointer pointing to temp is assigned as front
-        front = front->next;  // changing the pointer
-        delete temp;          // deleting the temporary variable
+/**
+ * Deleting elements using clear function
+ * clear() function is used to delete the elements
+ * this is done using defining the temporary variable first
+ * then assingning it using front and then changing the next pointer
+ * Finally deleting the temp variable
+ */
+void PQ::clear() {
+    while (!isEmpty()) {
+        Node* temp = front;
+        front = front->next;
+        delete temp;
     }
 }
-bool PQ::isEmpty() {       // using scope resolution operator to use the class
-                           // variables
-    return front == NULL;  // checking if front equals NULL
-}
-void PQ::display() {  // using scope resolution operator to use the class
-                      // variables
+/**
+ * isEmpty() function is used to check whether the queue is empty or not
+ * if the queue is empty,then it returns front as NULL
+ */
+bool PQ::isEmpty() { return front == NULL; }
+/**
+ * display() function is used to display the whole queue
+ * if the queue is empty it returns,"Empty Queue"
+ */
+void PQ::display() {
     if (isEmpty()) {
         cout << "Priority Queue is empty" << endl;
         return;
     }
     Node* temp = front;
-    while (temp != NULL)  // traversing over the List using while loop
-    {
-        cout << "Value: " << temp->data << endl;         // printing the value
-        cout << "Priority: " << temp->priority << endl;  // printing the
-                                                         // priority
-        temp = temp->next;                               // changing the pointer
+    while (temp != NULL) {
+        cout << "Value: " << temp->data << endl;
+        cout << "Priority: " << temp->priority << endl;
+
+        temp = temp->next;
     }
 }
-int main()  // calling main function
-{
-    PQ p;    // creating object
-    int ch;  // initializing ch variable
+/**
+ * Main function
+ * This is the function where we call all the values
+ * This is the function where we create an object
+ * Here,we take the items as input from the user and pass them
+ * We pass the values while calling the function,i.e,call by reference
+ * We use do while loop and switch case to make a menu driven program
+ */
+int main() {
+    PQ p;
+    int ch;
     cout << "1.Insert" << endl;
     cout << "2.Remove" << endl;
     cout << "3.Display" << endl;
     cout << "4.Exit" << endl;
     do {
         cout << "Enter your choice" << endl;
-        cin >> ch;   // taking choice as input
-        switch (ch)  // using switch case
-        {
+        cin >> ch;
+        switch (ch) {
             case 1:
                 cout << "Enter the value to be inserted" << endl;
                 int value, priority;
-                cin >> value;  // taking value as input
+                cin >> value;
                 cout << "Enter the priority" << endl;
-                cin >> priority;            // taking priority as input
-                p.insert(value, priority);  // passing the values to the
-                                            // function
-                break;
+                cin >> priority;
+                p.insert(value, priority);
+
             case 2:
-                p.clear();  // calling remove function
+                p.clear();
                 break;
             case 3:
-                p.display();  // calling display function
+                p.display();
                 break;
             case 4:
-                exit(1);  // exiting the function
+                exit(1);
                 break;
             default:
                 cout << "Invalid Choice" << endl;
         }
-    } while (ch != 5);  // checking the condition
+    } while (ch != 5);
     return 0;
 }
