@@ -3,10 +3,11 @@
  * \brief [Priority Queue Data Structure]
  *[(Priority Queue)](https://en.wikipedia.org/wiki/Priority_queue)
  *\details
- *A priority queue is a type of queue that arranges elements based on their priority values.
- *Elements with higher priority values are typically retrieved before elements with lower priority values.
- *In a priority queue, each element has a priority value associated with it.
- *When you add an element to the queue, it is inserted in a position based on its priority value.
+ *A priority queue is a type of queue that arranges elements based on their
+ *priority values. Elements with higher priority values are typically retrieved
+ *before elements with lower priority values. In a priority queue, each element
+ *has a priority value associated with it. When you add an element to the queue,
+ *it is inserted in a position based on its priority value.
  *\author[AbhirajBose](https://github.com/AbhirajBose)
  *
  */
@@ -27,7 +28,7 @@ class PQ {             // defining class
         front = NULL;  // initializing front as NULL
     }
     void insert(int, int);  // calling insert function
-    void clear();          // calling remove function
+    void clear();           // calling remove function
     bool isEmpty();         // calling isEmpty function
     void display();         // calling display function
 };
