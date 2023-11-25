@@ -10,13 +10,13 @@
  *
  */
 
-#include <algorithm>  // for max function
-#include <cassert>    // fot testing purpose
-#include <iostream>   //for printing results
-#include <queue>      //for job queue
-#include <string>     // for job name
-#include <utility>    //for using pair
-#include <vector>     // for tasklist of processes
+#include <algorithm>  /// for max function
+#include <cassert>    /// for testing purpose
+#include <iostream>   /// for printing results
+#include <queue>      /// for job queue
+#include <string>     /// for job name
+#include <utility>    /// for using pair
+#include <vector>     /// for tasklist of processes
 
 using std::cin;
 using std::cout;
