@@ -162,7 +162,6 @@ class Scheduler {
  * time
  * @returns void
  */
-
 static void test() {
     vector<Job> t;
     Job j1(1, "P1", 0, 5);
