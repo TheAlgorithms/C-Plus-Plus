@@ -33,12 +33,12 @@ using std::vector;
 class Job {
     int id;
     string name;
-    int at;   // Arrival time
-    int wt{0};  // Waiting time
-    int bt;   // Burst time
-    int b1;   // Remaining burst time
-    int tat{0};  // Turnaround time
-    int ct{0};   // Completion time
+    int at;   ///< Arrival time
+    int wt{0};  ///< Waiting time
+    int bt;   ///< Burst time
+    int b1;   ///< Remaining burst time
+    int tat{0};  ///< Turnaround time
+    int ct{0};   ///< Completion time
 
  public:
     Job(int i, string n, int a, int b)
