@@ -163,7 +163,7 @@ class Scheduler {
  * @returns void
  */
 
-void test() {
+static void test() {
     vector<Job> t;
     Job j1(1, "P1", 0, 5);
     Job j2(2, "P2", 1, 4);
