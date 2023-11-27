@@ -33,26 +33,30 @@ using std::vector;
 class Job {
     int id;
     string name;
-    int at;   ///< Arrival time
-    int wt{0};  ///< Waiting time
-    int bt;   ///< Burst time
-    int b1;   ///< Remaining burst time
-    int tat{0};  ///< Turnaround time
-    int ct{0};   ///< Completion time
+    int arrivalTime;         ///< Arrival time
+    int waitingTime{0};      ///< Waiting time
+    int burstTime;           ///< Burst time
+    int remainingBurstTime;  ///< Remaining burst time
+    int turnAroundTime{0};   ///< Turnaround time
+    int completionTime{0};   ///< Completion time
 
  public:
     Job(int i, string n, int a, int b)
-        : id(i), name(std::move(std::move(n))), at(a), bt(b), b1(bt) {}
+        : id(i),
+          name(std::move(std::move(n))),
+          arrivalTime(a),
+          burstTime(b),
+          remainingBurstTime(burstTime) {}
     /** @brief prints the process data
      *  @returns void
      */
     void printJob() {
         cout << name << endl;
         cout << "id : " << id << endl;
-        cout << "waiting time : " << wt << endl;
-        cout << "burst time : " << bt << endl;
-        cout << "turn around time : " << tat << endl;
-        cout << "completion time : " << ct << endl;
+        cout << "waiting time : " << waitingTime << endl;
+        cout << "burst time : " << burstTime << endl;
+        cout << "turn around time : " << turnAroundTime << endl;
+        cout << "completion time : " << completionTime << endl;
     }
 
     friend class Scheduler;
@@ -63,10 +67,10 @@ class Job {
  *  @param num number of jobs
  */
 class Scheduler {
-    int num;               // Number of jobs
-    vector<Job> taskList;  // List of jobs
-    double avgWT{0};       // Average waiting time
-    double avgTAT{0};      // Average turnaround time
+    int num;                      // Number of jobs
+    vector<Job> taskList;         // List of jobs
+    double avgWaitingTime{0};     // Average waiting time
+    double avgTurnAroundTime{0};  // Average turnaround time
 
  public:
     Scheduler(int n, vector<Job> t)
@@ -75,14 +79,16 @@ class Scheduler {
      *  @returns pair of avg. waiting time and avg. Turn Around time
      */
     pair<double, double> roundRobin(int tm) {
-        int totalTAT = 0;  // Total Turnaround Time
-        int totalWT = 0;   // Total Waiting Time
+        int totalTurnAroundTime = 0;  // Total Turnaround Time
+        int totalWaitingTime = 0;     // Total Waiting Time
 
         queue<int> ready;  // Queue to store indices of ready jobs
 
         // Sort jobs by arrival
         sort(taskList.begin(), taskList.end(),
-             [](const Job& jl, const Job& jr) { return jl.at < jr.at; });
+             [](const Job& jl, const Job& jr) {
+                 return jl.arrivalTime < jr.arrivalTime;
+             });
 
         int temp = 0;
 
@@ -90,11 +96,12 @@ class Scheduler {
 
         int t = 0;  // Current time
         int i = 0;
-        int init_at = taskList[0].at;  // Initial arrival time of jobs
+        int init_arrival_time =
+            taskList[0].arrivalTime;  // Initial arrival time of jobs
 
         // Add jobs with the same initial arrival time to the ready queue
         while (i < num) {
-            if (taskList[i].at == init_at) {
+            if (taskList[i].arrivalTime == init_arrival_time) {
                 ready.push(i);
                 i++;
             } else {
@@ -109,51 +116,61 @@ class Scheduler {
             temp = t;
 
             // Execute a job for a time quantum or until completion
-            if (taskList[j].b1 < tm) {
-                t += taskList[j].b1;
+            if (taskList[j].remainingBurstTime < tm) {
+                t += taskList[j].remainingBurstTime;
             } else {
                 t += tm;
             }
 
-            taskList[j].b1 =
-                max(taskList[j].b1 - tm, 0);  // Update remaining burst time
+            taskList[j].remainingBurstTime =
+                max(taskList[j].remainingBurstTime - tm,
+                    0);  // Update remaining burst time
 
             // Add jobs that arrive while a job is executing and have remaining
             // burst time
             for (int i = 0; i < num; i++) {
-                if (taskList[i].at <= t && taskList[i].at > temp &&
-                    taskList[i].b1 > 0) {
+                if (taskList[i].arrivalTime <= t &&
+                    taskList[i].arrivalTime > temp &&
+                    taskList[i].remainingBurstTime > 0) {
                     ready.push(i);
                 }
             }
 
             // If the job is completed, calculate turnaround time and waiting
             // time
-            if (taskList[j].b1 > 0) {
+            if (taskList[j].remainingBurstTime > 0) {
                 ready.push(j);
             } else {
-                taskList[j].ct = t;
-                taskList[j].tat = taskList[j].ct - taskList[j].at;
-                taskList[j].wt = taskList[j].tat - taskList[j].bt;
-                totalWT += taskList[j].wt;
-                totalTAT += taskList[j].tat;
+                taskList[j].completionTime = t;
+                taskList[j].turnAroundTime =
+                    taskList[j].completionTime - taskList[j].arrivalTime;
+                taskList[j].waitingTime =
+                    taskList[j].turnAroundTime - taskList[j].burstTime;
+                totalWaitingTime += taskList[j].waitingTime;
+                totalTurnAroundTime += taskList[j].turnAroundTime;
             }
         }
 
         // Calculate and display average waiting time and average turnaround
         // time
-        avgWT = static_cast<double>(totalWT) / static_cast<double>(num);
-        avgTAT = static_cast<double>(totalTAT) / static_cast<double>(num);
+        avgWaitingTime =
+            static_cast<double>(totalWaitingTime) / static_cast<double>(num);
+        avgTurnAroundTime =
+            static_cast<double>(totalTurnAroundTime) / static_cast<double>(num);
 
-        return {avgWT, avgTAT};
+        return {avgWaitingTime, avgTurnAroundTime};
     }
 
     void display() {
         cout << "Status of all the proceses post completion :" << endl;
-        cout << "id\tname\tat\tbt\tct\twt\ttat" << endl;
+        cout << "id\tname\tarrivalTime\tburstTime\tcompletionTime\twaitingTim"
+                "e\tTurnAroun"
+                "dTime"
+             << endl;
         for (const auto& i : taskList) {
-            cout << i.id << "\t" << i.name << "\t" << i.at << "\t" << i.bt
-                 << "\t" << i.ct << "\t" << i.wt << "\t" << i.tat << endl;
+            cout << i.id << "\t" << i.name << "\t" << i.arrivalTime << "\t"
+                 << i.burstTime << "\t" << i.completionTime << "\t"
+                 << i.waitingTime << "\t" << i.turnAroundTime << endl;
         }
     }
 };
@@ -185,6 +202,6 @@ static void test() {
  *  @returns 0
  */
 int main() {
-    test(); // run self-test implimentations
+    test();  // run self-test implimentations
     return 0;
 }
