@@ -33,15 +33,15 @@ using std::vector;
 class Job {
     int id;
     string name;
-    int arrivalTime;         ///< Arrival time
-    int waitingTime{0};      ///< Waiting time
-    int burstTime;           ///< Burst time
-    int remainingBurstTime;  ///< Remaining burst time
-    int turnAroundTime{0};   ///< Turnaround time
-    int completionTime{0};   ///< Completion time
+    unsigned int arrivalTime;         ///< Arrival time
+    unsigned int waitingTime{0};      ///< Waiting time
+    unsigned int burstTime;           ///< Burst time
+    unsigned int remainingBurstTime;  ///< Remaining burst time
+    unsigned int turnAroundTime{0};   ///< Turnaround time
+    unsigned int completionTime{0};   ///< Completion time
 
  public:
-    Job(int i, string n, int a, int b)
+    Job(int i, string n, unsigned int a, unsigned int b)
         : id(i),
           name(std::move(std::move(n))),
           arrivalTime(a),
@@ -79,8 +79,8 @@ class Scheduler {
      *  @returns pair of avg. waiting time and avg. Turn Around time
      */
     pair<double, double> roundRobin(int tm) {
-        int totalTurnAroundTime = 0;  // Total Turnaround Time
-        int totalWaitingTime = 0;     // Total Waiting Time
+        unsigned int totalTurnAroundTime = 0;  // Total Turnaround Time
+        unsigned int totalWaitingTime = 0;     // Total Waiting Time
 
         queue<int> ready;  // Queue to store indices of ready jobs
 
@@ -90,13 +90,13 @@ class Scheduler {
                  return jl.arrivalTime < jr.arrivalTime;
              });
 
-        int temp = 0;
+        unsigned int temp = 0;
 
         cout << endl << endl;
 
-        int t = 0;  // Current time
+        unsigned int t = 0;  // Current time
         int i = 0;
-        int init_arrival_time =
+        unsigned int init_arrival_time =
             taskList[0].arrivalTime;  // Initial arrival time of jobs
 
         // Add jobs with the same initial arrival time to the ready queue
@@ -123,8 +123,7 @@ class Scheduler {
             }
 
             taskList[j].remainingBurstTime =
-                max(taskList[j].remainingBurstTime - tm,
-                    0);  // Update remaining burst time
+                max(static_cast<int>(taskList[j].remainingBurstTime - tm),0);  // Update remaining burst time
 
             // Add jobs that arrive while a job is executing and have remaining
             // burst time
