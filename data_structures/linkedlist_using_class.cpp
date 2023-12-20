@@ -184,36 +184,53 @@ public:
     }
 };
 
+void testcase()
+{
+    LinkedList myList;
+
+    // Insert elements
+    myList.InsertAtEnd(1);
+    myList.InsertAtEnd(2);
+    myList.InsertAtEnd(3);
+
+    // Display original list
+    std::cout << "Original List: ";
+    myList.Display();
+
+    // Reverse the list
+    myList.reverse();
+    std::cout << "Reversed List: ";
+    myList.Display();
+
+    // Concatenate two lists
+    LinkedList list1, list2;
+    list1.InsertAtEnd(4);
+    list1.InsertAtEnd(5);
+    list2.InsertAtEnd(6);
+    list2.InsertAtEnd(7);
+
+    LinkedList concatenatedList = list1 + list2;
+    std::cout << "Concatenated List: ";
+    concatenatedList.Display();
+
+    // Perform k-group reversal
+    std::cout << "K-Group Reversal (k=2): ";
+    LinkedList kGroupedList = concatenatedList.kgroup(2);
+    kGroupedList.Display();
+
+    // Remove elements
+    myList.Remove(2);
+    std::cout << "After Removing 2: ";
+    myList.Display();
+
+    myList.RemoveNth(1);
+    std::cout << "After Removing Node at Index 1: ";
+    myList.Display();
+}
+
+
 int main()
 {
-
-    // trial run of function and class
-    LinkedList list;
-    list.InsertAtEnd(1);
-    list.InsertAtEnd(2);
-    list.InsertAtEnd(3);
-    list.InsertAtEnd(4);
-    list.Display();
-    list.reverse();
-    list.Display();
-
-    LinkedList list1, list2;
-    list1.InsertAtEnd(1);
-    list1.InsertAtEnd(2);
-    list2.InsertAtEnd(3);
-    list2.InsertAtEnd(4);
-    list1.Display();
-    list2.Display();
-    list1 = list1 + list2;
-    list1.Display();
-
-    list1.InsertAtEnd(5);
-    LinkedList list4;
-    list4 = list1.kgroup(3);
-    list4.Display();
-    list.Remove(1);
-    list.Display();
-    list.RemoveNth(3);
-    list.Display();
+    testcase();
     return 0;
 }
