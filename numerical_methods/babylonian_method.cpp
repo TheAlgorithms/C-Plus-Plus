@@ -41,7 +41,7 @@ double babylonian_method(double radicand) {
         (radicand / x0 + x0) / 2;  /// Storing calculated value for comparison
     double temp = NAN;             /// Temp variable to x0 and x1
 
-    while (std::max(x0, x1) - std::min(x0, x1) < 0.0001) {
+    while (std::max(x0, x1) - std::min(x0, x1) >= 0.0001) {
         temp = (radicand / x1 + x1) / 2;  /// Newly calculated root
         x0 = x1;
         x1 = temp;
@@ -64,14 +64,18 @@ static void test() {
 
     auto testcase1 = 125348;  /// Testcase 1
     auto testcase2 = 752080;  /// Testcase 2
+    auto testcase3 = 2;     /// Testcase 3
 
     auto real_output1 = 354.045194855;  /// Real Output 1
     auto real_output2 = 867.225460881;  /// Real Output 2
+    auto real_output3 = 1.4142135623730950488;  /// Real Output 3
 
     auto test_result1 = numerical_methods::babylonian_method(testcase1);
     /// Test result for testcase 1
     auto test_result2 = numerical_methods::babylonian_method(testcase2);
     /// Test result for testcase 2
+    auto test_result3 = numerical_methods::babylonian_method(testcase3);
+    /// Test result for testcase 3
 
     assert(std::max(test_result1, real_output1) -
                std::min(test_result1, real_output1) <
@@ -81,6 +85,10 @@ static void test() {
                std::min(test_result2, real_output2) <
            0.0001);
     /// Testing for test Case 2
+    assert(std::max(test_result3, real_output3) -
+               std::min(test_result3, real_output3) <
+           0.0001);
+    /// Testing for test Case 3
 
     std::cout << "All tests have successfully passed!\n";
 }
