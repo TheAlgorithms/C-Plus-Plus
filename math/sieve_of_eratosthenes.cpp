@@ -10,7 +10,7 @@
  *
  * @see primes_up_to_billion.cpp prime_numbers.cpp
  */
-
+#include <cstdint>
 #include <cassert>
 #include <iostream>
 #include <vector>
