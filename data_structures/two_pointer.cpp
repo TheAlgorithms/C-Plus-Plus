@@ -52,7 +52,6 @@ int maxArea(const std::vector<int>& height) {
  * maxArea function, checks if the result matches the expected result, and
  * prints a success message for each test case.
  */
-
 void testContainerWithMostWater() {
     // Test cases with expected maximum water values
     std::vector<std::pair<std::vector<int>, int>> testCases = {
