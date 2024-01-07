@@ -23,7 +23,6 @@
  * @param height Vector representing the heights of vertical lines.
  * @return int Maximum water that can be trapped.
  */
-
 int maxArea(const std::vector<int>& height) {
     int maxWater = 0;
     int left = 0;
