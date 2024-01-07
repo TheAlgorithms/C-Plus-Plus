@@ -44,6 +44,7 @@ int maxArea(const std::vector<int>& height) {
 
     return maxWater;
 }
+
 /**
  * @brief Tests the maxArea function with various test cases.
  *
