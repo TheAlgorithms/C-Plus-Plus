@@ -1,5 +1,5 @@
-#include <iostream>
-#include <vector>
+#include <array>    // sttd::array<type, nElemnts>
+#include <iostream> // for std::cout
 
 /// @brief performs lagrange interpolation on `xi, yi` with `x` provided
 /// @param xi first container
@@ -23,8 +23,15 @@ template <class Cont, class Ty>
   return lagrange;
 }
 
+// check if lagrange
+constexpr auto check = []() {
+  constexpr std::array<float, 5> xi{1, 2, 3, 4, 5};
+  constexpr std::array<float, 5> yi{2, 3, 4, 6, 7};
+  // should return true
+  return (lagrange(xi, yi, 3.) == 4.0f);
+};
+
 int main() {
-  std::vector<float> xi{1, 2, 3, 4, 5};
-  std::vector<float> yi{2, 3, 4, 6, 7};
-  std::cout << lagrange(xi, yi, 3.);
+  // shows the the result for the calculations
+  std::cout << std::boolalpha << check();
 }
