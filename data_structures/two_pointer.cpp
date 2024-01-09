@@ -5,6 +5,12 @@
 /**
  * @brief Calculates the maximum water that can be trapped between vertical
  * lines on a 2D plane.
+ * This file provides a solution to the "Container With Most Water" problem.
+ * The problem involves finding two lines in an array of non-negative integers
+ * representing vertical lines on a 2D plane, such that, together with the
+ * x-axis, they form a container that can hold the most water. The width of each
+ * line is 1, and the goal is to maximize the water trapped between the lines
+ * @sources [Geeks for Geeks](https://www.geeksforgeeks.org/container-with-most-water/)
  *
  * Given an array of non-negative integers representing vertical lines on a 2D
  * plane, where the width of each line is 1, the function finds two lines that,
