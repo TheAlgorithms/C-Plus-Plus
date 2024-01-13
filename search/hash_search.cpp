@@ -14,15 +14,22 @@
 #include <cstdlib>
 #include <iostream>
 
-#define MAX     6
-#define HASHMAX 5
+#define MAX     6  ///< Determines how much data
+#define HASHMAX 5  ///< Determines the length of the hash table
+
+/**
+ * Mode of hash detection :
+ * Division method
+ * \param [in] key to hash
+ * \returns hash value for `key`
+ */
 
 int h(int key) { return key % HASHMAX; }
 
 class hashnode {
  public:
-    int key;
-    hashnode* next;
+    int key;         // key value for node
+    hashnode* next;  // pointer to next link in chain
 
     // Constructor
     hashnode() {
@@ -37,7 +44,7 @@ class hashnode {
 
 class hashtable {
  public:
-    hashnode hashtab[HASHMAX];
+    hashnode hashtab[HASHMAX];  // array of hashnode object pointer
 
     hashtable() {
         for (int i = 0; i < HASHMAX; i++) {
@@ -95,7 +102,7 @@ int main() {
         htable.create_hashtable(data[index]);
         index++;
     }
-
+    // output hashtable
     for (int i = 0; i < HASHMAX; i++) {
         std::cout << "hashtab [" << i << "]\n";
 
@@ -122,6 +129,9 @@ int main() {
         } else {
             std::cout << "Not found!\n";
         }
+        /* The test sample is returned as:
+         * data[0]:data[5]:data[15]:data[10]:search time = 3 The search is
+         * successful. There are 10 in this set of data */
     }
 
     return 0;
