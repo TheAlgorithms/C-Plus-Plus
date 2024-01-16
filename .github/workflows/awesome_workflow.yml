@@ -8,7 +8,7 @@ jobs:
     name: Code Formatter
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - uses: actions/setup-python@v4
@@ -21,7 +21,7 @@ jobs:
       - name: Setup Git Specs
         run: |
           git config --global user.name github-actions[bot]
-          git config --global user.email 'github-actions@users.noreply.github.com'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
       - name: Filename Formatter
         run: |
           wget https://raw.githubusercontent.com/TheAlgorithms/scripts/main/filename_formatter.sh
@@ -56,7 +56,7 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest, macOS-latest]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: true
       - run: |
