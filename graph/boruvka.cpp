@@ -7,10 +7,10 @@
  * https://en.wikipedia.org/wiki/Bor%C5%AFvka%27s_algorithm
  */
 
-#include <cassert>
-#include <iostream>
-#include <numeric>
-#include <vector>
+#include <cassert> // for asset in tests()
+#include <iostream> // for cin/cout in interactive mode
+#include <numeric> // for iota function to initialize union find structure
+#include <vector> // for vector used in boruvka/union-find
 
 /**
  * @brief Union-Find data structure (with union by rank and path compression).
