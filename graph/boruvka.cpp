@@ -16,13 +16,13 @@
  * @brief Union-Find data structure (with union by rank and path compression).
  */
 struct union_find {
-    std::vector<int> parent, component_size;
+    std::vector<uint32_t> parent, component_size;
 
     /**
      * @brief Initializes the union_find data structure.
      * @param n Number of elements.
      */
-    union_find(int n) {
+    union_find(uint32_t n) {
         parent.resize(n);
         component_size.assign(n, 1);
         std::iota(parent.begin(), parent.end(), 0);
@@ -33,7 +33,7 @@ struct union_find {
      * @param x An element of the set.
      * @return The representative of the set containing x.
      */
-    int find(int x) {
+    uint32_t find(int x) {
         return (parent[x] == x) ? x : parent[x] = find(parent[x]);
     }
 
@@ -42,7 +42,7 @@ struct union_find {
      * @param x An element of the first set.
      * @param y An element of the second set.
      */
-    void unite(int x, int y) {
+    void unite(uint32_t x, uint32_t y) {
         x = find(x), y = find(y);
         if (x != y) {
             if (component_size[x] < component_size[y]) {
@@ -61,16 +61,16 @@ struct union_find {
  * @param edges Edges of the graph.
  * @return Minimum spanning tree cost.
  */
-long long boruvka(
-    int num_nodes, int num_edges,
-    const std::vector<std::pair<int, std::pair<int, int>>>& edges) {
+int64_t boruvka(
+    uint32_t num_nodes, uint32_t num_edges,
+    const std::vector<std::pair<int, std::pair<uint32_t, uint32_t>>>& edges) {
     union_find UF(num_nodes);
 
     // In the beginning, each vertex represents an individual component
     int total_components = num_nodes;
 
     std::vector<int> cheapest_edge_from(num_nodes, -1);
-    long long total_cost = 0;
+    int64_t total_cost = 0;
 
     // This implementation assumes a connected graph as input. Algorithm can be
     // adapted to find the minimum spanning forest by stopping whenever we
@@ -83,12 +83,12 @@ long long boruvka(
         // We now want to go over all edges and find the cheapest edge that
         // leaves each one of the remaining components.
         for (int e = 0; e < num_edges && total_components > 1; ++e) {
-            int from = edges[e].second.first;
-            int to = edges[e].second.second;
+            uint32_t from = edges[e].second.first;
+            uint32_t to = edges[e].second.second;
             int weight = edges[e].first;
 
-            int from_component = UF.find(from);
-            int to_component = UF.find(to);
+            uint32_t from_component = UF.find(from);
+            uint32_t to_component = UF.find(to);
 
             if (from_component == to_component) {
                 continue;
@@ -106,8 +106,8 @@ long long boruvka(
 
             for (int i = 0; i < num_nodes; ++i) {
                 if (cheapest_edge_from[i] != -1) {
-                    int from = edges[cheapest_edge_from[i]].second.first;
-                    int to = edges[cheapest_edge_from[i]].second.second;
+                    uint32_t from = edges[cheapest_edge_from[i]].second.first;
+                    uint32_t to = edges[cheapest_edge_from[i]].second.second;
                     int weight = edges[cheapest_edge_from[i]].first;
 
                     if (UF.find(from) != UF.find(to)) {
@@ -127,15 +127,15 @@ long long boruvka(
  * @brief Test function for Boruvka's algorithm.
  */
 void tests() {
-    std::vector<std::pair<int, std::pair<int, int>>> edges;
+    std::vector<std::pair<int, std::pair<uint32_t, uint32_t>>> edges;
     edges.push_back({1, {0, 1}});
-    edges.push_back({2, {0, 2}});
+    edges.push_back({-2, {0, 2}});
     edges.push_back({3, {1, 2}});
     edges.push_back({4, {1, 3}});
     edges.push_back({5, {2, 3}});
     edges.push_back({6, {2, 4}});
     edges.push_back({7, {3, 4}});
-    assert(boruvka(5, 7, edges) == 13);
+    assert(boruvka(5, 7, edges) == 9);
 }
 
 int main() {
@@ -165,7 +165,7 @@ int main() {
         std::cout << "Enter the number of vertices and edges of your graph"
                   << std::endl;
         std::cin >> num_nodes >> num_edges;
-        
+
         std::vector<std::pair<int, std::pair<int, int>>> edges;
 
         //! Prompt user for edge details
