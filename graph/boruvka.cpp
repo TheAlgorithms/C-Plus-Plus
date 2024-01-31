@@ -33,7 +33,7 @@ struct union_find {
      * @param x An element of the set.
      * @return The representative of the set containing x.
      */
-    uint32_t find(int x) {
+    uint32_t find(uint32_t x) {
         return (parent[x] == x) ? x : parent[x] = find(parent[x]);
     }
 
