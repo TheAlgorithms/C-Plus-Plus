@@ -139,7 +139,7 @@ void tests() {
 }
 
 int main() {
-    tests();
+    tests(); // run self-test implementations
 
     /**
      * @mainpage Interactive Execution Mode
