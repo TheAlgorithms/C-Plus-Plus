@@ -16,6 +16,20 @@ int getSize(Node *root) {
     return 1 + getSize(root->next);
 }
 
+/*
+ * @brief This function dealocates memory related to the given list
+ * It recursively deletes all of the nodes of the input list.
+ * @param room the root/head of the input list
+ * @warning Plese note that the memory for each node has to be alocated using new.
+ */
+void deleteList(Node *const root) {
+    if (root != NULL)
+    {
+        deleteList(root->next);
+        delete root;
+    }
+}
+
 int main() {
     Node *myList = new Node(0, NULL);  // Initializes the LinkedList
     Node *temp = myList;
@@ -31,6 +45,8 @@ int main() {
     std::cout << getSize(myList) << std::endl
               << getSize(secondList) << std::endl
               << getSize(thirdList) << std::endl;
+    deleteList(secondList);
+    deleteList(myList);
 
     return 0;
 }
