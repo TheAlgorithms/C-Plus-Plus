@@ -69,6 +69,11 @@ void librarySort(int *index, int n) {
             index_pos_for_output++;
         }
     }
+    delete[] numbered;
+    delete[] gaps;
+    for (int i = 0; i < 2; ++i) {
+        delete[] library[i];
+    }
 }
 
 int main() {
