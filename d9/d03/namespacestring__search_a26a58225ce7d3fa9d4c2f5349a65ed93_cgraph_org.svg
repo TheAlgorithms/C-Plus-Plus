@@ -17,15 +17,6 @@
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node1 -->
-<g id="edge3_Node000001_Node000001" class="edge">
-<title>Node1&#45;&gt;Node1</title>
-<g id="a_edge3_Node000001_Node000001"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M26.57,-19.54C16.06,-28.15 23.74,-37.25 49.62,-37.25 64.18,-37.25 72.99,-34.37 76.03,-30.32"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="79.44,-29.49 73.13,-20.98 72.75,-31.57 79.44,-29.49"/>
-</a>
-</g>
-</g>
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
@@ -55,9 +46,9 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge4_Node000001_Node000003" class="edge">
+<g id="edge3_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<g id="a_edge4_Node000001_Node000003"><a xlink:title=" ">
+<g id="a_edge3_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M99.4,-8.28C111.14,-8.01 123.64,-7.76 135.25,-7.62 190.02,-6.98 203.73,-6.91 258.5,-7.62 266.38,-7.73 274.72,-7.89 282.88,-8.08"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="282.63,-11.57 292.71,-8.32 282.8,-4.58 282.63,-11.57"/>
 </a>

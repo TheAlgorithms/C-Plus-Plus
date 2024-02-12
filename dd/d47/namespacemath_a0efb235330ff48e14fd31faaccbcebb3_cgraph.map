@@ -1,0 +1,8 @@
+<map id="math::parallelogram_perimeter" name="math::parallelogram_perimeter">
+<area shape="rect" id="Node000001" title="perimeter of a parallelogram 2(b + h)" alt="" coords="5,22,141,63"/>
+<area shape="rect" id="Node000002" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="189,29,245,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,40,173,40,173,45,141,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="197,30,193,21,195,11,204,5,217,3,231,5,239,12,235,16,229,10,217,8,206,10,200,14,198,20,202,28"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="293,29,365,55"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="245,40,277,40,277,45,245,45"/>
+</map>

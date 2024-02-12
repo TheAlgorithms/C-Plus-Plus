@@ -1,10 +1,9 @@
 <map id="sorting::shell_sort" name="sorting::shell_sort">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,79,130,104"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,130,80"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/data.html#" title=" " alt="" coords="182,5,298,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,76,177,40,189,35,191,40,179,45,98,81"/>
-<area shape="rect" id="Node000003" href="$d5/d91/namespacesorting.html#a5669396c6a6b1e14b97589b6e37980aa" title=" " alt="" coords="178,79,302,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,89,162,89,162,94,130,94"/>
-<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="182,128,298,154"/>
-<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="116,102,178,121,177,126,114,108"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="211,80,205,70,208,60,220,54,240,52,261,55,272,61,269,66,259,60,240,57,222,59,212,64,210,69,215,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,51,177,33,178,38,116,57"/>
+<area shape="rect" id="Node000003" href="$d5/d91/namespacesorting.html#a5669396c6a6b1e14b97589b6e37980aa" title=" " alt="" coords="178,55,302,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,65,162,65,162,70,130,70"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="182,104,298,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="116,78,178,97,177,102,114,84"/>
 </map>

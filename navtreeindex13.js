@@ -1,6 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"de/d9d/classdata__structures_1_1linked__list_1_1link.html":[10,0,2,0,0],
 "de/d9d/classdata__structures_1_1linked__list_1_1link.html#aba4672fbc40c38962d1510b843a577bb":[10,0,2,0,0,0],
 "de/d9d/classdata__structures_1_1linked__list_1_1link.html#ac121ce37b6ea864b160ebcada0bce936":[10,0,2,0,0,4],
 "de/d9d/classdata__structures_1_1linked__list_1_1link.html#acf96f3a9a1d3b15268c38e8822300c11":[10,0,2,0,0,2],
@@ -155,8 +154,8 @@ var NAVTREEINDEX13 =
 "df/d94/subarray__sum_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,0,8,2],
 "df/d94/subarray__sum_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,0,8,0],
 "df/d94/subarray__sum_8cpp.html#af5687bbd9faf927fbd363c71e0baba5e":[11,0,0,8,1],
-"df/d99/structstd_1_1is__unsigned_3_01uint256__t_01_4.html":[10,0,19,5],
 "df/d99/structstd_1_1is__unsigned_3_01uint256__t_01_4.html":[9,0,110,5],
+"df/d99/structstd_1_1is__unsigned_3_01uint256__t_01_4.html":[10,0,19,5],
 "df/dc8/successive__approximation_8cpp.html":[11,0,15,22],
 "df/dc8/successive__approximation_8cpp.html#a79c1d08919ff7780a5d7723172602389":[11,0,15,22,0],
 "df/dc8/successive__approximation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,15,22,2],
@@ -190,14 +189,14 @@ var NAVTREEINDEX13 =
 "df/ddd/connected__components_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9":[11,0,9,2,4],
 "df/ddd/connected__components_8cpp.html#a9125ceb66bfbec3093bba64c2c1e99e2":[11,0,9,2,0],
 "df/ddd/connected__components_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,9,2,3],
-"df/de5/classbacktracking_1_1generate__parentheses.html":[10,0,0,0],
 "df/de5/classbacktracking_1_1generate__parentheses.html":[9,0,5,0],
-"df/de5/classbacktracking_1_1generate__parentheses.html#ab35b9b6d2886abed3d6fb05c2be1c508":[10,0,0,0,2],
+"df/de5/classbacktracking_1_1generate__parentheses.html":[10,0,0,0],
 "df/de5/classbacktracking_1_1generate__parentheses.html#ab35b9b6d2886abed3d6fb05c2be1c508":[9,0,5,0,2],
+"df/de5/classbacktracking_1_1generate__parentheses.html#ab35b9b6d2886abed3d6fb05c2be1c508":[10,0,0,0,2],
 "df/de5/classbacktracking_1_1generate__parentheses.html#ac1489edd65374f22fe04851051f0a2ec":[10,0,0,0,1],
 "df/de5/classbacktracking_1_1generate__parentheses.html#ac1489edd65374f22fe04851051f0a2ec":[9,0,5,0,1],
-"df/de5/classbacktracking_1_1generate__parentheses.html#af39c03d80ce0ba9fbf659b420980d160":[9,0,5,0,0],
 "df/de5/classbacktracking_1_1generate__parentheses.html#af39c03d80ce0ba9fbf659b420980d160":[10,0,0,0,0],
+"df/de5/classbacktracking_1_1generate__parentheses.html#af39c03d80ce0ba9fbf659b420980d160":[9,0,5,0,0],
 "df/dea/namespacefalse__position.html":[9,0,28],
 "df/def/power__for__huge__numbers_8cpp.html":[11,0,14,44],
 "df/def/power__for__huge__numbers_8cpp.html#a392fb874e547e582e9c66a08a1f23326":[11,0,14,44,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX13 =
 "functions_func_c.html":[10,3,1,3],
 "functions_func_d.html":[10,3,1,4],
 "functions_func_e.html":[10,3,1,5],
-"functions_func_f.html":[10,3,1,6]
+"functions_func_f.html":[10,3,1,6],
+"functions_func_g.html":[10,3,1,7]
 };

@@ -1,0 +1,10 @@
+<map id="range_queries::perSegTree::query" name="range_queries::perSegTree::query">
+<area shape="rect" id="Node000001" title="Querying the range from index l to index r, getting the sum of the elements whose index x satisfies l..." alt="" coords="5,29,183,70"/>
+<area shape="rect" id="Node000002" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#ae8ae4b1835e5e8aec32f68c5059ed4d4" title="Querying the range from index l to index r, checking at every node if it has some value to be propaga..." alt="" coords="231,29,408,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,47,215,47,215,52,183,52"/>
+<area shape="poly" id="edge4_Node000002_Node000002" title=" " alt="" coords="277,29,275,19,282,10,297,5,319,3,344,5,358,11,356,16,342,10,319,8,298,10,285,15,280,21,282,28"/>
+<area shape="rect" id="Node000003" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#ace7f57935b3bb9446f11c239fd89ae79" title="If there is some value to be propagated to the passed node, value is added to the node and the childr..." alt="" coords="456,29,633,70"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="408,47,440,47,440,52,408,52"/>
+<area shape="rect" id="Node000004" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a0cec4b77d264521717cf9b0482c45817" title="Creating a new node with the same values of curr node." alt="" coords="681,29,859,70"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="633,47,666,47,666,52,633,52"/>
+</map>

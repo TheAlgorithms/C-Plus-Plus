@@ -1,14 +1,19 @@
 <map id="main" name="main">
-<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,79,55,104"/>
+<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,93,55,119"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="143,5,215,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="46,76,71,58,101,40,127,29,129,34,104,45,74,62,49,80"/>
-<area shape="rect" id="Node000003" href="$db/dc0/namespacebacktracking.html#a78540bcb5ef3473b2348cbc34748ec50" title="Check which is the maximum/minimum number in the array." alt="" coords="103,79,255,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="55,89,87,89,87,94,55,94"/>
-<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/size.html#" title=" " alt="" coords="125,128,233,154"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="56,98,104,114,121,120,119,125,102,119,54,103"/>
-<area shape="poly" id="edge5_Node000003_Node000003" title=" " alt="" coords="153,80,148,70,151,61,162,54,179,52,197,55,207,61,204,66,195,60,179,57,164,59,155,64,154,70,158,77"/>
-<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="303,55,375,80"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="255,77,287,73,288,78,256,83"/>
-<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="305,104,373,130"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="256,101,290,106,289,112,255,106"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="44,91,70,70,101,48,128,34,130,39,104,52,73,74,48,95"/>
+<area shape="rect" id="Node000003" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="309,68,365,94"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="55,99,102,92,205,83,293,79,293,85,205,88,103,97,55,104"/>
+<area shape="rect" id="Node000005" href="$db/dc0/namespacebacktracking.html#a78540bcb5ef3473b2348cbc34748ec50" title="Check which is the maximum/minimum number in the array." alt="" coords="103,131,255,156"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="55,110,111,124,110,129,54,115"/>
+<area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/size.html#" title=" " alt="" coords="125,180,233,206"/>
+<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="45,118,71,142,104,167,113,171,111,176,101,171,67,146,41,121"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="316,69,312,59,315,50,323,44,337,41,352,44,360,51,356,55,350,49,337,47,325,49,319,53,318,59,321,67"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="419,93,492,119"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="366,84,405,93,404,98,365,89"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="213,128,294,95,296,100,215,133"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="255,131,403,110,404,116,256,136"/>
+<area shape="poly" id="edge9_Node000005_Node000005" title=" " alt="" coords="153,132,148,122,151,113,162,106,179,104,197,107,207,113,204,118,195,112,179,109,164,111,155,116,154,122,158,129"/>
+<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="303,169,371,195"/>
+<area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="235,154,289,168,287,173,234,160"/>
 </map>

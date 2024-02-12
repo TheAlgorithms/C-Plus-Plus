@@ -1,8 +1,12 @@
 <map id="backtracking::minimax" name="backtracking::minimax">
-<area shape="rect" id="Node000001" title="Check which is the maximum/minimum number in the array." alt="" coords="5,31,158,56"/>
-<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="54,32,49,22,52,12,63,6,82,4,101,7,111,13,109,18,99,12,81,9,65,11,56,16,54,21,59,29"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="206,5,278,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,29,190,24,191,29,158,34"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="208,55,276,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,52,193,58,192,63,158,58"/>
+<area shape="rect" id="Node000001" title="Check which is the maximum/minimum number in the array." alt="" coords="5,80,158,106"/>
+<area shape="poly" id="edge6_Node000001_Node000001" title=" " alt="" coords="54,81,49,71,52,62,63,56,82,53,101,56,111,63,108,67,99,61,81,59,65,61,56,65,55,71,59,78"/>
+<area shape="rect" id="Node000002" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="212,29,268,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,77,196,53,198,58,125,82"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="322,55,394,80"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="158,83,306,70,307,75,158,89"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="206,131,274,156"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="125,104,192,126,190,131,123,109"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="219,30,215,21,217,11,226,5,240,3,255,5,263,12,259,16,252,10,240,8,228,10,222,14,220,20,224,28"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="269,46,307,54,306,59,268,51"/>
 </map>

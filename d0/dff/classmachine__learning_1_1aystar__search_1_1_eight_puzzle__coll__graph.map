@@ -1,9 +1,11 @@
 <map id="machine_learning::aystar_search::EightPuzzle&lt; N &gt;" name="machine_learning::aystar_search::EightPuzzle&lt; N &gt;">
-<area shape="rect" id="Node000001" title="A class defining EightPuzzle/15&#45;Puzzle game." alt="" coords="461,37,640,78"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array.html" title=" " alt="" coords="227,5,370,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="386,34,461,44,460,49,385,39"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="227,71,370,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="384,77,460,67,461,72,385,82"/>
-<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair.html" title=" " alt="" coords="5,71,122,111"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="138,88,227,88,227,94,138,94"/>
+<area shape="rect" id="Node000001" title="A class defining EightPuzzle/15&#45;Puzzle game." alt="" coords="662,37,842,78"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array.html" title=" " alt="" coords="428,5,571,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="587,34,662,44,661,49,587,39"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="429,71,571,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="586,77,661,67,662,72,586,82"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair.html" title=" " alt="" coords="207,71,323,111"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="339,88,428,88,428,94,339,94"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/integer.html" title=" " alt="" coords="5,78,85,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="100,88,206,88,206,94,100,94"/>
 </map>

@@ -24,13 +24,12 @@
  */
 function initMenu(relPath,searchEnabled,serverSide,searchPage,search) {
   function makeTree(data,relPath) {
-    var result='';
+    let result='';
     if ('children' in data) {
       result+='<ul>';
-      for (var i in data.children) {
-        var url;
-        var link;
-        link = data.children[i].url;
+      for (let i in data.children) {
+        let url;
+        const link = data.children[i].url;
         if (link.substring(0,1)=='^') {
           url = link.substring(1);
         } else {
@@ -44,7 +43,7 @@ function initMenu(relPath,searchEnabled,serverSide,searchPage,search) {
     }
     return result;
   }
-  var searchBoxHtml;
+  let searchBoxHtml;
   if (searchEnabled) {
     if (serverSide) {
       searchBoxHtml='<div id="MSearchBox" class="MSearchBoxInactive">'+
@@ -88,29 +87,28 @@ function initMenu(relPath,searchEnabled,serverSide,searchPage,search) {
   if (searchBoxHtml) {
     $('#main-menu').append('<li id="searchBoxPos2" style="float:right"></li>');
   }
-  var $mainMenuState = $('#main-menu-state');
-  var prevWidth = 0;
+  const $mainMenuState = $('#main-menu-state');
+  let prevWidth = 0;
   if ($mainMenuState.length) {
-    function initResizableIfExists() {
+    const initResizableIfExists = function() {
       if (typeof initResizable==='function') initResizable();
     }
     // animate mobile menu
-    $mainMenuState.change(function(e) {
-      var $menu = $('#main-menu');
-      var options = { duration: 250, step: initResizableIfExists };
+    $mainMenuState.change(function() {
+      const $menu = $('#main-menu');
+      let options = { duration: 250, step: initResizableIfExists };
       if (this.checked) {
-        options['complete'] = function() { $menu.css('display', 'block') };
+        options['complete'] = () => $menu.css('display', 'block');
         $menu.hide().slideDown(options);
       } else {
-        options['complete'] = function() { $menu.css('display', 'none') };
+        options['complete'] = () => $menu.css('display', 'none');
         $menu.show().slideUp(options);
       }
     });
     // set default menu visibility
-    function resetState() {
-      var $menu = $('#main-menu');
-      var $mainMenuState = $('#main-menu-state');
-      var newWidth = $(window).outerWidth();
+    const resetState = function() {
+      const $menu = $('#main-menu');
+      const newWidth = $(window).outerWidth();
       if (newWidth!=prevWidth) {
         if ($(window).outerWidth()<768) {
           $mainMenuState.prop('checked',false); $menu.hide();

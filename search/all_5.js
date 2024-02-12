@@ -15,7 +15,7 @@ var searchData=
   ['_5fsortedvalues_12',['_sortedValues',['../df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#aacd76f078632faee1a8788d031e6c2de',1,'probability::windowed_median::WindowedMedian']]],
   ['_5ftarget_13',['_target',['../dc/dfe/ternary__search_8cpp.html#a23ad617bfce1e7cf4591059c85c1a027',1,'ternary_search.cpp']]],
   ['_5ftrz_14',['_trz',['../db/d9a/classuint128__t.html#a7d2285a8a6e20b77f82f1f0351afe76e',1,'uint128_t::_trz()'],['../d1/d83/classuint256__t.html#a9ddd133cee83f3a2ab6ed60a7ccbc250',1,'uint256_t::_trz()']]],
-  ['_5fuse_5fmath_5fdefines_15',['_use_math_defines',['../da/d77/spirograph_8cpp.html#a525335710b53cb064ca56b936120431e',1,'_USE_MATH_DEFINES:&#160;spirograph.cpp'],['../db/d01/brent__method__extrema_8cpp.html#a525335710b53cb064ca56b936120431e',1,'_USE_MATH_DEFINES:&#160;brent_method_extrema.cpp']]],
+  ['_5fuse_5fmath_5fdefines_15',['_USE_MATH_DEFINES',['../da/d77/spirograph_8cpp.html#a525335710b53cb064ca56b936120431e',1,'_USE_MATH_DEFINES:&#160;spirograph.cpp'],['../db/d01/brent__method__extrema_8cpp.html#a525335710b53cb064ca56b936120431e',1,'_USE_MATH_DEFINES:&#160;brent_method_extrema.cpp']]],
   ['_5fwindow_16',['_window',['../df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a825a7aaef844c9f743a27b268e8569b2',1,'probability::windowed_median::WindowedMedian']]],
   ['_5fwindowsize_17',['_windowSize',['../df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#aafda847b152684578dab891e5268d750',1,'probability::windowed_median::WindowedMedian']]]
 ];

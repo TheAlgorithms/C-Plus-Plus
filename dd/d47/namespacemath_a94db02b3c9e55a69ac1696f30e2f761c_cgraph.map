@@ -1,0 +1,8 @@
+<map id="math::pyramid_volume" name="math::pyramid_volume">
+<area shape="rect" id="Node000001" title="The volume of a pyramid" alt="" coords="5,29,159,55"/>
+<area shape="rect" id="Node000002" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="207,29,263,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,40,191,40,191,45,159,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="215,30,211,21,213,11,222,5,235,3,249,5,257,12,253,16,247,10,235,8,224,10,218,14,216,20,220,28"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="311,29,383,55"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="263,40,295,40,295,45,263,45"/>
+</map>

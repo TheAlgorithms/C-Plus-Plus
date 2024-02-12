@@ -1,0 +1,8 @@
+<map id="math::parallelogram_area" name="math::parallelogram_area">
+<area shape="rect" id="Node000001" title="area of a parallelogram (b * h)" alt="" coords="5,29,173,55"/>
+<area shape="rect" id="Node000002" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="221,29,277,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,40,205,40,205,45,173,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="229,30,225,21,227,11,236,5,249,3,263,5,271,12,267,16,261,10,249,8,238,10,232,14,230,20,234,28"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="325,29,397,55"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="277,40,309,40,309,45,277,45"/>
+</map>

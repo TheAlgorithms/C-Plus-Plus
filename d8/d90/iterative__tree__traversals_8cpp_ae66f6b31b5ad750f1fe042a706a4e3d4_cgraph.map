@@ -10,20 +10,20 @@
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="36,262,43,291,56,329,76,368,104,402,122,413,141,420,139,425,119,418,101,406,72,371,51,331,38,292,31,263"/>
 <area shape="rect" id="Node000017" href="$d3/dae/dsu__path__compression_8cpp.html#a45d94ead4cf4e1ff9f87c38bc99f59ae" title="Self&#45;implementations, 2nd test." alt="" coords="156,366,206,391"/>
 <area shape="poly" id="edge21_Node000001_Node000017" title=" " alt="" coords="45,261,104,322,148,355,144,359,101,326,41,264"/>
-<area shape="rect" id="Node000018" href="$dd/d0c/hamiltons__cycle_8cpp.html#a0cc94918b6831f308d4fe4fa27f08299" title=" " alt="" coords="156,515,206,541"/>
-<area shape="poly" id="edge25_Node000001_Node000018" title=" " alt="" coords="36,262,58,345,78,400,105,452,127,480,152,503,149,507,123,483,100,455,73,402,53,347,31,263"/>
-<area shape="rect" id="Node000021" href="$d8/d90/iterative__tree__traversals_8cpp.html#a038b236fe900f7bb7e57164f5bed66c2" title="Test the computed preorder with the actual preorder on negative value." alt="" coords="156,135,206,161"/>
-<area shape="poly" id="edge28_Node000001_Node000021" title=" " alt="" coords="40,234,66,206,101,178,140,158,142,163,104,182,70,210,44,238"/>
-<area shape="rect" id="Node000026" href="$d8/d90/iterative__tree__traversals_8cpp.html#aa9ef334cd7eb607f4eb8732566ea00b8" title="Test the computed postorder with the actual postorder on negative value." alt="" coords="156,236,206,262"/>
-<area shape="poly" id="edge34_Node000001_Node000026" title=" " alt="" coords="55,247,140,247,140,252,55,252"/>
-<area shape="rect" id="Node000028" href="$d8/d90/iterative__tree__traversals_8cpp.html#af727f920064f2b8f484b589b60d49b89" title="Test the computed inorder with the actual inorder on negative value." alt="" coords="156,286,206,311"/>
-<area shape="poly" id="edge40_Node000001_Node000028" title=" " alt="" coords="56,255,104,272,141,284,140,289,102,277,54,260"/>
+<area shape="rect" id="Node000018" href="$dd/d0c/hamiltons__cycle_8cpp.html#a0cc94918b6831f308d4fe4fa27f08299" title=" " alt="" coords="156,602,206,627"/>
+<area shape="poly" id="edge25_Node000001_Node000018" title=" " alt="" coords="38,261,64,343,105,452,168,587,163,589,100,454,59,344,33,263"/>
+<area shape="rect" id="Node000022" href="$d8/d90/iterative__tree__traversals_8cpp.html#a038b236fe900f7bb7e57164f5bed66c2" title="Test the computed preorder with the actual preorder on negative value." alt="" coords="156,135,206,161"/>
+<area shape="poly" id="edge31_Node000001_Node000022" title=" " alt="" coords="40,234,66,206,101,178,140,158,142,163,104,182,70,210,44,238"/>
+<area shape="rect" id="Node000027" href="$d8/d90/iterative__tree__traversals_8cpp.html#aa9ef334cd7eb607f4eb8732566ea00b8" title="Test the computed postorder with the actual postorder on negative value." alt="" coords="156,236,206,262"/>
+<area shape="poly" id="edge37_Node000001_Node000027" title=" " alt="" coords="55,247,140,247,140,252,55,252"/>
+<area shape="rect" id="Node000029" href="$d8/d90/iterative__tree__traversals_8cpp.html#af727f920064f2b8f484b589b60d49b89" title="Test the computed inorder with the actual inorder on negative value." alt="" coords="156,286,206,311"/>
+<area shape="poly" id="edge43_Node000001_Node000029" title=" " alt="" coords="56,255,104,272,141,284,140,289,102,277,54,260"/>
 <area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/at.html#" title=" " alt="" coords="334,366,436,391"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="206,419,318,392,319,397,207,424"/>
 <area shape="rect" id="Node000007" href="$dd/d1f/classdsu.html#a0ce2672c570f4235eafddb0c9a58115a" title="prints the minimum, maximum and size of the set to which i belongs to" alt="" coords="351,415,419,441"/>
 <area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="206,425,335,425,335,431,206,431"/>
-<area shape="rect" id="Node000012" href="$dd/d1f/classdsu.html#a6ac30c07abca2aaa3b291504c25c3559" title="Method that combines two disjoint sets to which i and j belongs to and make a single set having a com..." alt="" coords="333,516,437,542"/>
-<area shape="poly" id="edge14_Node000005_Node000012" title=" " alt="" coords="208,438,345,507,343,512,205,442"/>
+<area shape="rect" id="Node000012" href="$dd/d1f/classdsu.html#a6ac30c07abca2aaa3b291504c25c3559" title="Method that combines two disjoint sets to which i and j belongs to and make a single set having a com..." alt="" coords="333,514,437,539"/>
+<area shape="poly" id="edge14_Node000005_Node000012" title=" " alt="" coords="208,437,344,504,342,509,205,442"/>
 <area shape="rect" id="Node000008" href="$dd/d1f/classdsu.html#a696141b8b092466767f4bfe1c5e46cde" title="A utility function that returns the max element of the set to which i belongs to." alt="" coords="538,316,639,342"/>
 <area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="419,419,441,412,462,402,476,389,485,377,494,364,510,351,522,344,525,349,513,355,498,368,490,380,480,393,465,406,443,417,421,424"/>
 <area shape="rect" id="Node000010" href="$dd/d1f/classdsu.html#ac713a5b496d0405c82e2808a85e58415" title="A utility function that returns the min element of the set to which i belongs to." alt="" coords="540,366,637,391"/>
@@ -35,42 +35,46 @@
 <area shape="poly" id="edge9_Node000009_Node000009" title=" " alt="" coords="730,416,725,406,728,397,740,391,759,388,780,391,791,398,788,402,778,396,759,394,742,396,732,400,730,406,735,413"/>
 <area shape="poly" id="edge11_Node000010_Node000009" title=" " alt="" coords="637,389,699,408,698,413,635,395"/>
 <area shape="poly" id="edge13_Node000011_Node000009" title=" " alt="" coords="626,425,698,425,698,431,626,431"/>
-<area shape="poly" id="edge15_Node000012_Node000009" title=" " alt="" coords="435,513,665,451,698,442,699,447,666,456,437,518"/>
-<area shape="rect" id="Node000013" href="$dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303" title="A utility function which check whether i and j belongs to same set or not." alt="" coords="541,516,636,542"/>
-<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="438,527,526,527,526,532,438,532"/>
-<area shape="rect" id="Node000014" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="552,664,625,690"/>
-<area shape="poly" id="edge18_Node000012_Node000014" title=" " alt="" coords="398,541,444,594,476,624,513,651,539,663,537,668,510,655,473,629,440,598,394,544"/>
-<area shape="rect" id="Node000015" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="554,566,623,591"/>
-<area shape="poly" id="edge19_Node000012_Node000015" title=" " alt="" coords="438,539,540,564,538,569,437,544"/>
-<area shape="rect" id="Node000016" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="549,615,628,641"/>
-<area shape="poly" id="edge20_Node000012_Node000016" title=" " alt="" coords="407,540,454,570,512,601,536,610,534,615,510,606,451,575,404,545"/>
-<area shape="poly" id="edge17_Node000013_Node000009" title=" " alt="" coords="625,513,664,495,730,448,733,453,667,499,628,518"/>
+<area shape="poly" id="edge15_Node000012_Node000009" title=" " alt="" coords="420,537,469,554,532,566,566,569,600,567,633,561,664,549,691,530,714,506,744,454,749,456,718,509,695,534,667,554,635,566,601,573,566,574,532,571,468,559,418,542"/>
+<area shape="rect" id="Node000013" href="$dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303" title="A utility function which check whether i and j belongs to same set or not." alt="" coords="541,615,636,641"/>
+<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="410,537,513,593,541,606,539,611,510,598,407,542"/>
+<area shape="rect" id="Node000014" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="723,703,796,729"/>
+<area shape="poly" id="edge18_Node000012_Node000014" title=" " alt="" coords="398,538,443,593,476,625,513,651,548,665,599,680,708,704,707,709,598,685,546,670,510,656,472,629,439,597,394,542"/>
+<area shape="rect" id="Node000015" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="554,464,623,490"/>
+<area shape="poly" id="edge19_Node000012_Node000015" title=" " alt="" coords="437,511,538,486,540,492,438,517"/>
+<area shape="rect" id="Node000016" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="549,514,628,539"/>
+<area shape="poly" id="edge20_Node000012_Node000016" title=" " alt="" coords="438,524,534,524,534,529,438,529"/>
+<area shape="poly" id="edge17_Node000013_Node000009" title=" " alt="" coords="634,612,664,594,693,561,717,523,747,454,752,456,721,526,697,564,667,598,637,617"/>
 <area shape="poly" id="edge22_Node000017_Node000006" title=" " alt="" coords="206,376,318,376,318,381,206,381"/>
 <area shape="poly" id="edge23_Node000017_Node000007" title=" " alt="" coords="207,382,336,413,335,419,206,387"/>
-<area shape="poly" id="edge24_Node000017_Node000012" title=" " alt="" coords="207,380,234,388,260,400,276,412,287,424,309,451,361,504,358,507,305,455,283,427,273,416,258,405,232,393,206,385"/>
-<area shape="rect" id="Node000019" href="$dd/d0c/hamiltons__cycle_8cpp.html#abcf824e347eecfeeb69ea0280f34f3e4" title=" " alt="" coords="331,639,439,665"/>
-<area shape="poly" id="edge26_Node000018_Node000019" title=" " alt="" coords="205,539,351,628,348,633,202,543"/>
-<area shape="rect" id="Node000020" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="511,714,666,739"/>
-<area shape="poly" id="edge27_Node000019_Node000020" title=" " alt="" coords="419,663,512,700,529,706,528,711,510,705,417,668"/>
-<area shape="poly" id="edge29_Node000021_Node000004" title=" " alt="" coords="207,148,334,160,333,166,206,153"/>
-<area shape="rect" id="Node000022" href="$d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#ad4c6a8e67fb8267a65439b035666b5ae" title="preOrderIterative() function that will perform the preorder traversal iteratively,..." alt="" coords="307,75,463,130"/>
-<area shape="poly" id="edge30_Node000021_Node000022" title=" " alt="" coords="206,140,291,121,292,126,207,145"/>
-<area shape="rect" id="Node000023" href="$d1/dc2/classstack.html#a3647fb4418890f19e0dc414b8092b8b0" title=" " alt="" coords="547,168,630,194"/>
-<area shape="poly" id="edge31_Node000022_Node000023" title=" " alt="" coords="460,128,540,160,538,165,458,133"/>
-<area shape="rect" id="Node000024" href="$d1/dc2/classstack.html#a90df277532c23519aa7ac3c08ed90a1d" title=" " alt="" coords="544,218,633,243"/>
-<area shape="poly" id="edge32_Node000022_Node000024" title=" " alt="" coords="449,129,465,141,480,158,489,174,498,189,513,204,531,214,528,219,510,209,493,193,484,177,476,161,462,144,446,133"/>
-<area shape="rect" id="Node000025" href="$d1/dc2/classstack.html#ae09630c4384903d187801921b2ddc709" title=" " alt="" coords="549,267,628,293"/>
-<area shape="poly" id="edge33_Node000022_Node000025" title=" " alt="" coords="452,129,465,141,477,156,483,171,489,200,494,227,501,241,513,254,536,267,533,272,510,258,497,244,489,229,483,201,478,173,472,159,461,144,449,133"/>
-<area shape="poly" id="edge35_Node000026_Node000004" title=" " alt="" coords="206,237,258,215,306,191,334,180,336,185,308,196,260,220,208,242"/>
-<area shape="rect" id="Node000027" href="$d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a636a07c90b7f312bb86d2ec104efca25" title="postOrderIterative() function that will perform the postorder traversal iteratively,..." alt="" coords="307,205,463,261"/>
-<area shape="poly" id="edge36_Node000026_Node000027" title=" " alt="" coords="206,245,291,238,291,243,207,250"/>
-<area shape="poly" id="edge37_Node000027_Node000023" title=" " alt="" coords="463,211,532,193,533,198,464,216"/>
-<area shape="poly" id="edge38_Node000027_Node000024" title=" " alt="" coords="463,229,529,229,529,234,464,235"/>
-<area shape="poly" id="edge39_Node000027_Node000025" title=" " alt="" coords="464,248,534,265,533,270,463,254"/>
-<area shape="poly" id="edge41_Node000028_Node000004" title=" " alt="" coords="206,293,232,286,257,272,273,253,281,233,288,212,305,191,334,176,336,181,309,195,293,215,286,235,278,256,261,277,234,291,207,298"/>
-<area shape="rect" id="Node000029" href="$d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a0c33f2c1a3a3deb486a1c33ee5239499" title="inOrderIterative() function that will perform the inorder traversal iteratively, and return the resul..." alt="" coords="307,285,463,341"/>
-<area shape="poly" id="edge42_Node000028_Node000029" title=" " alt="" coords="207,298,291,304,291,309,206,303"/>
-<area shape="poly" id="edge43_Node000029_Node000023" title=" " alt="" coords="446,283,462,271,476,254,484,237,493,220,510,203,531,191,534,196,513,207,497,223,489,239,481,257,465,275,449,287"/>
-<area shape="poly" id="edge44_Node000029_Node000024" title=" " alt="" coords="442,282,510,252,528,245,530,250,512,257,444,287"/>
-<area shape="poly" id="edge45_Node000029_Node000025" title=" " alt="" coords="463,298,533,286,534,291,464,303"/>
+<area shape="poly" id="edge24_Node000017_Node000012" title=" " alt="" coords="207,380,234,388,260,400,276,412,287,424,309,451,360,501,357,505,305,455,283,427,273,416,258,405,232,393,206,385"/>
+<area shape="rect" id="Node000019" href="$dd/d0c/hamiltons__cycle_8cpp.html#abcf824e347eecfeeb69ea0280f34f3e4" title=" " alt="" coords="331,740,439,766"/>
+<area shape="poly" id="edge26_Node000018_Node000019" title=" " alt="" coords="203,626,353,729,350,733,200,630"/>
+<area shape="rect" id="Node000020" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="560,740,617,766"/>
+<area shape="poly" id="edge27_Node000019_Node000020" title=" " alt="" coords="440,751,545,751,545,756,440,756"/>
+<area shape="rect" id="Node000021" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="511,790,666,815"/>
+<area shape="poly" id="edge30_Node000019_Node000021" title=" " alt="" coords="440,764,518,783,517,788,439,769"/>
+<area shape="poly" id="edge29_Node000020_Node000014" title=" " alt="" coords="617,744,708,724,709,729,618,750"/>
+<area shape="poly" id="edge28_Node000020_Node000020" title=" " alt="" coords="559,741,554,732,557,722,569,716,589,714,609,716,620,723,617,727,608,721,588,719,571,721,561,726,559,731,564,739"/>
+<area shape="poly" id="edge32_Node000022_Node000004" title=" " alt="" coords="207,148,334,160,333,166,206,153"/>
+<area shape="rect" id="Node000023" href="$d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#ad4c6a8e67fb8267a65439b035666b5ae" title="preOrderIterative() function that will perform the preorder traversal iteratively,..." alt="" coords="307,75,463,130"/>
+<area shape="poly" id="edge33_Node000022_Node000023" title=" " alt="" coords="206,140,291,121,292,126,207,145"/>
+<area shape="rect" id="Node000024" href="$d1/dc2/classstack.html#a3647fb4418890f19e0dc414b8092b8b0" title=" " alt="" coords="547,168,630,194"/>
+<area shape="poly" id="edge34_Node000023_Node000024" title=" " alt="" coords="460,128,540,160,538,165,458,133"/>
+<area shape="rect" id="Node000025" href="$d1/dc2/classstack.html#a90df277532c23519aa7ac3c08ed90a1d" title=" " alt="" coords="544,218,633,243"/>
+<area shape="poly" id="edge35_Node000023_Node000025" title=" " alt="" coords="449,129,465,141,480,158,489,174,498,189,513,204,531,214,528,219,510,209,493,193,484,177,476,161,462,144,446,133"/>
+<area shape="rect" id="Node000026" href="$d1/dc2/classstack.html#ae09630c4384903d187801921b2ddc709" title=" " alt="" coords="549,267,628,293"/>
+<area shape="poly" id="edge36_Node000023_Node000026" title=" " alt="" coords="452,129,465,141,477,156,483,171,489,200,494,227,501,241,513,254,536,267,533,272,510,258,497,244,489,229,483,201,478,173,472,159,461,144,449,133"/>
+<area shape="poly" id="edge38_Node000027_Node000004" title=" " alt="" coords="206,237,258,215,306,191,334,180,336,185,308,196,260,220,208,242"/>
+<area shape="rect" id="Node000028" href="$d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a636a07c90b7f312bb86d2ec104efca25" title="postOrderIterative() function that will perform the postorder traversal iteratively,..." alt="" coords="307,205,463,261"/>
+<area shape="poly" id="edge39_Node000027_Node000028" title=" " alt="" coords="206,245,291,238,291,243,207,250"/>
+<area shape="poly" id="edge40_Node000028_Node000024" title=" " alt="" coords="463,211,532,193,533,198,464,216"/>
+<area shape="poly" id="edge41_Node000028_Node000025" title=" " alt="" coords="463,229,529,229,529,234,464,235"/>
+<area shape="poly" id="edge42_Node000028_Node000026" title=" " alt="" coords="464,248,534,265,533,270,463,254"/>
+<area shape="poly" id="edge44_Node000029_Node000004" title=" " alt="" coords="206,293,232,286,257,272,273,253,281,233,288,212,305,191,334,176,336,181,309,195,293,215,286,235,278,256,261,277,234,291,207,298"/>
+<area shape="rect" id="Node000030" href="$d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a0c33f2c1a3a3deb486a1c33ee5239499" title="inOrderIterative() function that will perform the inorder traversal iteratively, and return the resul..." alt="" coords="307,285,463,341"/>
+<area shape="poly" id="edge45_Node000029_Node000030" title=" " alt="" coords="207,298,291,304,291,309,206,303"/>
+<area shape="poly" id="edge46_Node000030_Node000024" title=" " alt="" coords="446,283,462,271,476,254,484,237,493,220,510,203,531,191,534,196,513,207,497,223,489,239,481,257,465,275,449,287"/>
+<area shape="poly" id="edge47_Node000030_Node000025" title=" " alt="" coords="442,282,510,252,528,245,530,250,512,257,444,287"/>
+<area shape="poly" id="edge48_Node000030_Node000026" title=" " alt="" coords="463,298,533,286,534,291,464,303"/>
 </map>

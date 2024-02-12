@@ -1,0 +1,8 @@
+<map id="math::triangle_prism_volume" name="math::triangle_prism_volume">
+<area shape="rect" id="Node000001" title="The volume of a triangular prism." alt="" coords="5,22,145,63"/>
+<area shape="rect" id="Node000002" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="193,29,249,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,40,177,40,177,45,145,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="201,30,197,21,199,11,208,5,221,3,235,5,243,12,239,16,233,10,221,8,210,10,204,14,202,20,206,28"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="297,29,369,55"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="249,40,281,40,281,45,249,45"/>
+</map>

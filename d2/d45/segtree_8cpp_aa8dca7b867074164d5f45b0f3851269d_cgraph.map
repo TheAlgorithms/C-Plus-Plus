@@ -1,9 +1,12 @@
 <map id="test" name="test">
-<area shape="rect" id="Node000001" title="Self&#45;test implementation." alt="" coords="5,67,49,92"/>
+<area shape="rect" id="Node000001" title="Self&#45;test implementation." alt="" coords="5,103,49,128"/>
 <area shape="rect" id="Node000002" href="$d2/d45/segtree_8cpp.html#ae752659b7c1719d68fdb2ca538a93696" title="for std::vector" alt="" coords="97,29,175,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="48,70,81,58,83,63,50,75"/>
-<area shape="rect" id="Node000003" href="$d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0" title="Updates a range of the segment tree." alt="" coords="106,103,166,128"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="50,84,92,98,90,103,48,89"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="45,100,95,64,99,62,102,66,98,68,48,104"/>
+<area shape="rect" id="Node000003" href="$d2/d45/segtree_8cpp.html#a423a97ea0c7ea6e33b5844a6858d902d" title="Returns the sum of all elements in a range." alt="" coords="109,103,163,128"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="49,113,94,113,94,118,49,118"/>
+<area shape="rect" id="Node000004" href="$d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0" title="Updates a range of the segment tree." alt="" coords="106,176,166,202"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="49,127,104,165,101,169,46,131"/>
 <area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="116,30,113,21,115,11,123,5,136,3,150,5,157,12,153,16,147,10,136,8,125,10,119,14,118,20,121,28"/>
 <area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="116,103,113,94,115,85,123,78,136,76,150,79,157,86,153,89,147,83,136,81,125,83,119,88,118,94,121,101"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="116,177,113,167,115,158,123,152,136,149,150,152,157,159,153,163,147,157,136,155,125,157,119,161,118,167,121,175"/>
 </map>

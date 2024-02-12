@@ -1,7 +1,12 @@
 <map id="test1" name="test1">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,56,31"/>
-<area shape="rect" id="Node000002" href="$dd/d0c/hamiltons__cycle_8cpp.html#abcf824e347eecfeeb69ea0280f34f3e4" title=" " alt="" coords="104,5,212,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="56,16,88,16,88,21,56,21"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="260,5,414,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="213,16,244,16,244,21,213,21"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,56,80"/>
+<area shape="rect" id="Node000002" href="$dd/d0c/hamiltons__cycle_8cpp.html#abcf824e347eecfeeb69ea0280f34f3e4" title=" " alt="" coords="104,55,212,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="56,65,88,65,88,70,56,70"/>
+<area shape="rect" id="Node000003" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="309,29,365,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="212,57,293,46,294,51,213,62"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="260,79,414,104"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="213,72,245,76,244,82,212,77"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="310,30,304,21,308,11,319,5,337,3,357,5,367,12,364,16,355,10,337,8,320,10,312,15,310,20,314,28"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="462,29,535,55"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="366,40,447,40,447,45,366,45"/>
 </map>

@@ -1,7 +1,13 @@
 <map id="Complex::operator/" name="Complex::operator/">
-<area shape="rect" id="Node000001" title="Operator overload of &#39;/&#39; on Complex class. Operator overload to be able to divide two complex numbers..." alt="" coords="5,31,138,56"/>
-<area shape="rect" id="Node000002" href="$da/d5a/class_complex.html#af8aacf982e2e6c142921bc850f6dc974" title="Member function to get imaginary value of our complex number. Member function (getter) to access the ..." alt="" coords="186,5,295,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,31,170,26,171,31,138,36"/>
-<area shape="rect" id="Node000003" href="$da/d5a/class_complex.html#a312e4b19146128408fb06e0150b0faf6" title="Member function to get real value of our complex number. Member function (getter) to access the class..." alt="" coords="189,55,292,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,50,174,55,173,61,138,56"/>
+<area shape="rect" id="Node000001" title="Operator overload of &#39;/&#39; on Complex class. Operator overload to be able to divide two complex numbers..." alt="" coords="5,79,138,104"/>
+<area shape="rect" id="Node000002" href="$da/d5a/class_complex.html#a3cfc522c782726f49ee20af17b77f867" title="Complex Constructor which initialises our complex number." alt="" coords="186,29,319,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,75,187,57,188,62,122,81"/>
+<area shape="rect" id="Node000005" href="$da/d5a/class_complex.html#af8aacf982e2e6c142921bc850f6dc974" title="Member function to get imaginary value of our complex number. Member function (getter) to access the ..." alt="" coords="198,79,307,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="138,89,182,89,182,94,138,94"/>
+<area shape="rect" id="Node000006" href="$da/d5a/class_complex.html#a312e4b19146128408fb06e0150b0faf6" title="Member function to get real value of our complex number. Member function (getter) to access the class..." alt="" coords="201,128,304,154"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="122,102,188,121,187,126,121,108"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/cos.html#" title=" " alt="" coords="367,5,435,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="319,29,351,23,352,29,320,34"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sin.html#" title=" " alt="" coords="369,55,433,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="320,51,354,57,353,62,319,56"/>
 </map>

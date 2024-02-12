@@ -1,6 +1,5 @@
 <map id="operations_on_datastructures::shift_right" name="operations_on_datastructures::shift_right">
-<area shape="rect" id="Node000001" title="Shifts the given vector to the right by the shift amount and returns a new vector with the result...." alt="" coords="5,29,198,70"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="63,29,61,19,68,10,81,5,102,3,123,5,137,11,134,16,122,10,101,8,82,10,71,15,66,20,68,28"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="246,37,361,63"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="198,47,230,47,230,52,198,52"/>
+<area shape="rect" id="Node000001" title="Shifts the given vector to the right by the shift amount and returns a new vector with the result...." alt="" coords="5,5,198,46"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="246,13,361,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,23,230,23,230,28,198,28"/>
 </map>

@@ -8,16 +8,23 @@
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="127,201,148,147,167,116,192,89,197,86,200,90,196,94,171,119,153,150,132,203"/>
 <area shape="rect" id="Node000005" href="$dd/d47/namespacemath.html#ac5803413618fcfb922cb32c6db0fc864" title="surface area of a cylinder (2 * pi * r * h + 2 * pi * r^2)" alt="" coords="194,104,379,130"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="132,201,157,169,192,139,202,134,204,138,196,143,161,173,136,204"/>
-<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="251,153,322,179"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="146,205,193,188,235,176,236,181,195,193,147,210"/>
-<area shape="rect" id="Node000007" href="$dd/d47/namespacemath.html#a5de184925e68658f15415dd53954df4f" title="area of a parallelogram (b * h)" alt="" coords="203,203,370,228"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="147,213,188,213,188,218,147,218"/>
-<area shape="rect" id="Node000008" href="$dd/d47/namespacemath.html#ab31d141f7c5b551746b1eee0eb4dedca" title="area of a rectangle (l * w)" alt="" coords="231,252,343,278"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="147,221,195,238,217,245,215,250,193,243,146,226"/>
-<area shape="rect" id="Node000009" href="$dd/d47/namespacemath.html#ab7f29862d30df351c317eedd60a0c656" title="surface area of a sphere ( 4 * pi * r^2)" alt="" coords="197,301,376,327"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="136,227,161,258,196,288,204,293,202,297,192,292,157,262,132,230"/>
-<area shape="rect" id="Node000010" href="$dd/d47/namespacemath.html#a971ce57e368f2f631cf1f4ff3f864049" title="area of a square (l * l)" alt="" coords="222,351,351,376"/>
-<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="132,228,153,281,171,312,196,337,209,346,206,350,192,342,167,315,148,284,127,230"/>
-<area shape="rect" id="Node000011" href="$dd/d47/namespacemath.html#ab3b920cc56442abd92279ba23b50f4dc" title="area of a triangle (b * h / 2)" alt="" coords="221,400,353,426"/>
-<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="130,228,135,261,146,304,166,349,179,369,196,387,208,395,205,400,192,391,175,372,161,351,141,305,129,262,124,229"/>
+<area shape="rect" id="Node000008" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="251,153,322,179"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="146,205,193,188,235,176,236,181,195,193,147,210"/>
+<area shape="rect" id="Node000009" href="$dd/d47/namespacemath.html#a5de184925e68658f15415dd53954df4f" title="area of a parallelogram (b * h)" alt="" coords="203,203,370,228"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="147,213,188,213,188,218,147,218"/>
+<area shape="rect" id="Node000010" href="$dd/d47/namespacemath.html#ab31d141f7c5b551746b1eee0eb4dedca" title="area of a rectangle (l * w)" alt="" coords="231,252,343,278"/>
+<area shape="poly" id="edge11_Node000002_Node000010" title=" " alt="" coords="147,221,195,238,217,245,215,250,193,243,146,226"/>
+<area shape="rect" id="Node000011" href="$dd/d47/namespacemath.html#ab7f29862d30df351c317eedd60a0c656" title="surface area of a sphere ( 4 * pi * r^2)" alt="" coords="197,301,376,327"/>
+<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="136,227,161,258,196,288,204,293,202,297,192,292,157,262,132,230"/>
+<area shape="rect" id="Node000012" href="$dd/d47/namespacemath.html#a971ce57e368f2f631cf1f4ff3f864049" title="area of a square (l * l)" alt="" coords="222,351,351,376"/>
+<area shape="poly" id="edge13_Node000002_Node000012" title=" " alt="" coords="132,228,153,281,171,312,196,337,209,346,206,350,192,342,167,315,148,284,127,230"/>
+<area shape="rect" id="Node000013" href="$dd/d47/namespacemath.html#ab3b920cc56442abd92279ba23b50f4dc" title="area of a triangle (b * h / 2)" alt="" coords="221,400,353,426"/>
+<area shape="poly" id="edge14_Node000002_Node000013" title=" " alt="" coords="130,228,135,261,146,304,166,349,179,369,196,387,208,395,205,400,192,391,175,372,161,351,141,305,129,262,124,229"/>
+<area shape="rect" id="Node000006" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="427,203,484,228"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="357,128,381,139,412,162,437,189,433,193,409,166,378,143,354,133"/>
+<area shape="poly" id="edge6_Node000006_Node000006" title=" " alt="" coords="435,203,432,194,434,185,442,178,456,176,470,179,477,186,474,189,467,184,455,181,444,183,439,188,437,194,440,201"/>
+<area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="532,203,604,228"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="484,213,516,213,516,218,484,218"/>
+<area shape="poly" id="edge10_Node000009_Node000006" title=" " alt="" coords="371,213,412,213,412,218,371,218"/>
+<area shape="poly" id="edge15_Node000013_Node000006" title=" " alt="" coords="352,401,378,387,406,354,426,315,439,276,447,243,452,244,444,278,431,317,410,357,381,391,354,406"/>
 </map>

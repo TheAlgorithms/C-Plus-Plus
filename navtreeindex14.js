@@ -1,6 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"functions_func_g.html":[10,3,1,7],
 "functions_func_h.html":[10,3,1,8],
 "functions_func_i.html":[10,3,1,9],
 "functions_func_k.html":[10,3,1,10],
@@ -39,8 +38,8 @@ var NAVTREEINDEX14 =
 "functions_x.html":[10,3,0,23],
 "functions_y.html":[10,3,0,24],
 "functions_~.html":[10,3,0,25],
-"globals.html":[11,1,0,0],
 "globals.html":[11,1,0],
+"globals.html":[11,1,0,0],
 "globals_a.html":[11,1,0,1],
 "globals_b.html":[11,1,0,2],
 "globals_c.html":[11,1,0,3],

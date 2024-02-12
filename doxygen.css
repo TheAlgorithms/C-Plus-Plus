@@ -1,4 +1,4 @@
-/* The standard CSS for doxygen 1.9.8*/
+/* The standard CSS for doxygen 1.10.0*/
 
 html {
 /* page base colors */
@@ -145,6 +145,7 @@ html {
 --fragment-lineno-link-bg-color: #D8D8D8;
 --fragment-lineno-link-hover-fg-color: #4665A2;
 --fragment-lineno-link-hover-bg-color: #C8C8C8;
+--fragment-copy-ok-color: #2EC82E;
 --tooltip-foreground-color: black;
 --tooltip-background-color: white;
 --tooltip-border-color: gray;
@@ -168,6 +169,28 @@ html {
 --font-family-icon: Arial,Helvetica;
 --font-family-tooltip: Roboto,sans-serif;
 
+/** special sections */
+--warning-color-bg: #f8d1cc;
+--warning-color-hl: #b61825;
+--warning-color-text: #75070f;
+--note-color-bg: #faf3d8;
+--note-color-hl: #f3a600;
+--note-color-text: #5f4204;
+--todo-color-bg: #e4f3ff;
+--todo-color-hl: #1879C4;
+--todo-color-text: #274a5c;
+--test-color-bg: #e8e8ff;
+--test-color-hl: #3939C4;
+--test-color-text: #1a1a5c;
+--deprecated-color-bg: #ecf0f3;
+--deprecated-color-hl: #5b6269;
+--deprecated-color-text: #43454a;
+--bug-color-bg: #e4dafd;
+--bug-color-hl: #5b2bdd;
+--bug-color-text: #2a0d72;
+--invariant-color-bg: #d8f1e3;
+--invariant-color-hl: #44b86f;
+--invariant-color-text: #265532;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -309,7 +332,7 @@ html {
 --code-link-color: #79C0FF;
 --code-external-link-color: #79C0FF;
 --fragment-foreground-color: #C9D1D9;
---fragment-background-color: black;
+--fragment-background-color: #090D16;
 --fragment-border-color: #30363D;
 --fragment-lineno-border-color: #30363D;
 --fragment-lineno-background-color: black;
@@ -318,6 +341,7 @@ html {
 --fragment-lineno-link-bg-color: #303030;
 --fragment-lineno-link-hover-fg-color: #8E96A1;
 --fragment-lineno-link-hover-bg-color: #505050;
+--fragment-copy-ok-color: #0EA80E;
 --tooltip-foreground-color: #C9D1D9;
 --tooltip-background-color: #202020;
 --tooltip-border-color: #C9D1D9;
@@ -341,6 +365,28 @@ html {
 --font-family-icon: Arial,Helvetica;
 --font-family-tooltip: Roboto,sans-serif;
 
+/** special sections */
+--warning-color-bg: #2e1917;
+--warning-color-hl: #ad2617;
+--warning-color-text: #f5b1aa;
+--note-color-bg: #3b2e04;
+--note-color-hl: #f1b602;
+--note-color-text: #ceb670;
+--todo-color-bg: #163750;
+--todo-color-hl: #1982D2;
+--todo-color-text: #dcf0fa;
+--test-color-bg: #121258;
+--test-color-hl: #4242cf;
+--test-color-text: #c0c0da;
+--deprecated-color-bg: #2e323b;
+--deprecated-color-hl: #738396;
+--deprecated-color-text: #abb0bd;
+--bug-color-bg: #2a2536;
+--bug-color-hl: #7661b3;
+--bug-color-text: #ae9ed6;
+--invariant-color-bg: #303a35;
+--invariant-color-hl: #76ce96;
+--invariant-color-text: #cceed5;
 }}
 body {
     background-color: var(--page-background-color);
@@ -357,8 +403,6 @@ body, table, div, p, dl {
 /* @group Heading Levels */
 
 .title {
-	font-weight: 400;
-	font-size: 14px;
 	font-family: var(--font-family-normal);
 	line-height: 28px;
 	font-size: 150%;
@@ -556,7 +600,13 @@ a {
 }
 
 a:hover {
-	text-decoration: underline;
+	text-decoration: none;
+	background:   linear-gradient(to bottom, transparent 0,transparent calc(100% - 1px), currentColor 100%);
+}
+
+a:hover > span.arrow {
+        text-decoration: none;
+        background : var(--nav-background-color);
 }
 
 a.el {
@@ -632,30 +682,63 @@ ul.multicol {
 .fragment {
   text-align: left;
   direction: ltr;
-  overflow-x: auto; /*Fixed: fragment lines overlap floating elements*/
+  overflow-x: auto;
   overflow-y: hidden;
+  position: relative;
+  min-height: 12px;
+  margin: 10px 0px;
+  padding: 10px 10px;
+  border: 1px solid var(--fragment-border-color);
+  border-radius: 4px;
+  background-color: var(--fragment-background-color);
+  color: var(--fragment-foreground-color);
 }
 
 pre.fragment {
-        border: 1px solid var(--fragment-border-color);
-        background-color: var(--fragment-background-color);
-	color: var(--fragment-foreground-color);
-        padding: 4px 6px;
-        margin: 4px 8px 4px 2px;
-        overflow: auto;
-        word-wrap: break-word;
-        font-size:  9pt;
-        line-height: 125%;
-        font-family: var(--font-family-monospace);
-        font-size: 105%;
+  word-wrap: break-word;
+  font-size:  10pt;
+  line-height: 125%;
+  font-family: var(--font-family-monospace);
 }
 
-div.fragment {
-	padding: 0 0 1px 0; /*Fixed: last line underline overlap border*/
-	margin: 4px 8px 4px 2px;
-	color: var(--fragment-foreground-color);
-	background-color: var(--fragment-background-color);
-	border: 1px solid var(--fragment-border-color);
+.clipboard {
+        width: 24px;
+        height: 24px;
+        right: 5px;
+        top: 5px;
+        opacity: 0;
+        position: absolute;
+        display: inline;
+        overflow: auto;
+        fill: var(--fragment-foreground-color);
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+}
+
+.clipboard.success {
+        border: 1px solid var(--fragment-foreground-color);
+        border-radius: 4px;
+}
+
+.fragment:hover .clipboard, .clipboard.success {
+        opacity: .28;
+}
+
+.clipboard:hover, .clipboard.success {
+        opacity: 1 !important;
+}
+
+.clipboard:active:not([class~=success]) svg {
+        transform: scale(.91);
+}
+
+.clipboard.success svg {
+        fill: var(--fragment-copy-ok-color);
+}
+
+.clipboard.success {
+        border-color: var(--fragment-copy-ok-color);
 }
 
 div.line {
@@ -776,10 +859,6 @@ img.dark-mode-visible {
 }
 img.light-mode-visible {
 	display: none;
-}
-
-img.formulaDsp {
-	
 }
 
 img.formulaInl, img.inline {
@@ -1081,17 +1160,25 @@ dl.reflist dd {
 
 .paramtype {
 	white-space: nowrap;
+	padding: 0px;
+	padding-bottom: 1px;
 }
 
 .paramname {
-	color: var(--memdef-param-name-color);
 	white-space: nowrap;
+        padding: 0px;
+        padding-bottom: 1px;
+        margin-left: 2px;
 }
+
 .paramname em {
+	color: var(--memdef-param-name-color);
 	font-style: normal;
+	margin-right: 1px;
 }
-.paramname code {
-        line-height: 14px;
+
+.paramname .paramdefval {
+	font-family: var(--font-family-monospace);
 }
 
 .params, .retval, .exception, .tparams {
@@ -1425,7 +1512,6 @@ table.fieldtable {
 {
 	height:32px;
 	display:block;
-	text-decoration: none;
 	outline: none;
 	color: var(--nav-text-normal-color);
 	font-family: var(--font-family-nav);
@@ -1514,7 +1600,8 @@ dl {
         padding: 0 0 0 0;
 }
 
-/* dl.note, dl.warning, dl.attention, dl.pre, dl.post, dl.invariant, dl.deprecated, dl.todo, dl.test, dl.bug, dl.examples */
+/*
+
 dl.section {
 	margin-left: 0px;
 	padding-left: 0px;
@@ -1569,8 +1656,101 @@ dl.bug {
   border-color: #C08050;
 }
 
+*/
+
+dl.bug dt a, dl.deprecated dt a, dl.todo dt a, dl.test a {
+    font-weight: bold !important;
+}
+
+dl.warning, dl.attention, dl.note, dl.deprecated, dl.bug,
+dl.invariant, dl.pre, dl.post, dl.todo, dl.test, dl.remark {
+    padding: 10px;
+    margin: 10px 0px;
+    overflow: hidden;
+    margin-left: 0;
+    border-radius: 4px;
+}
+
 dl.section dd {
-	margin-bottom: 6px;
+    margin-bottom: 2px;
+}
+
+dl.warning, dl.attention {
+    background: var(--warning-color-bg);
+    border-left: 8px solid var(--warning-color-hl);
+    color: var(--warning-color-text);
+}
+
+dl.warning dt, dl.attention dt {
+    color: var(--warning-color-hl);
+}
+
+dl.note, dl.remark {
+    background: var(--note-color-bg);
+    border-left: 8px solid var(--note-color-hl);
+    color: var(--note-color-text);
+}
+
+dl.note dt, dl.remark dt {
+    color: var(--note-color-hl);
+}
+
+dl.todo {
+    background: var(--todo-color-bg);
+    border-left: 8px solid var(--todo-color-hl);
+    color: var(--todo-color-text);
+}
+
+dl.todo dt {
+    color: var(--todo-color-hl);
+}
+
+dl.test {
+    background: var(--test-color-bg);
+    border-left: 8px solid var(--test-color-hl);
+    color: var(--test-color-text);
+}
+
+dl.test dt {
+    color: var(--test-color-hl);
+}
+
+dl.bug dt a {
+    color: var(--bug-color-hl) !important;
+}
+
+dl.bug {
+    background: var(--bug-color-bg);
+    border-left: 8px solid var(--bug-color-hl);
+    color: var(--bug-color-text);
+}
+
+dl.bug dt a {
+    color: var(--bug-color-hl) !important;
+}
+
+dl.deprecated {
+    background: var(--deprecated-color-bg);
+    border-left: 8px solid var(--deprecated-color-hl);
+    color: var(--deprecated-color-text);
+}
+
+dl.deprecated dt a {
+    color: var(--deprecated-color-hl) !important;
+}
+
+dl.section dd, dl.bug dd, dl.deprecated dd, dl.todo dd, dl.test dd {
+    margin-inline-start: 0px;
+}
+
+dl.invariant, dl.pre, dl.post {
+    background: var(--invariant-color-bg);
+    border-left: 8px solid var(--invariant-color-hl);
+    color: var(--invariant-color-text);
+}
+
+dl.invariant dt, dl.pre dt, dl.post dt {
+    color: var(--invariant-color-hl);
 }
 
 
@@ -1585,12 +1765,12 @@ dl.section dd {
 	vertical-align: bottom;
 	border-collapse: separate;
 }
- 
+
 #projectlogo img
-{ 
+{
 	border: 0px none;
 }
- 
+
 #projectalign
 {
         vertical-align: middle;

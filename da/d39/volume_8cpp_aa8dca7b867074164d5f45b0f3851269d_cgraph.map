@@ -1,24 +1,33 @@
 <map id="test" name="test">
-<area shape="rect" id="Node000001" title="Self&#45;test implementations." alt="" coords="5,179,49,204"/>
-<area shape="rect" id="Node000002" href="$dd/d47/namespacemath.html#a3fe35440c27758ecc2287e08217d63a7" title="The volume of a cone" alt="" coords="113,5,249,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="28,177,35,149,47,112,67,73,95,40,98,37,102,42,99,44,71,76,52,114,40,150,33,179"/>
-<area shape="rect" id="Node000004" href="$dd/d47/namespacemath.html#ae413098478fa38acaac887b7654f0725" title="The volume of a cube" alt="" coords="113,55,249,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="31,177,55,134,73,110,95,89,101,86,104,90,98,94,77,114,59,137,36,180"/>
-<area shape="rect" id="Node000005" href="$dd/d47/namespacemath.html#abde24398be43538c62e4a496968e60ca" title="The volume of a cylinder" alt="" coords="105,104,257,130"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="41,176,66,157,95,138,108,133,110,138,98,143,69,161,45,180"/>
-<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="145,153,217,179"/>
-<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="48,185,129,172,130,177,49,191"/>
-<area shape="rect" id="Node000007" href="$dd/d47/namespacemath.html#a94db02b3c9e55a69ac1696f30e2f761c" title="The volume of a pyramid" alt="" coords="104,203,258,228"/>
-<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="49,192,89,198,88,204,48,197"/>
-<area shape="rect" id="Node000008" href="$dd/d47/namespacemath.html#a3fdc74c24697ec5bb5c3698c96117c12" title="The volume of a rectangular prism." alt="" coords="97,252,265,278"/>
-<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="45,203,69,221,98,238,110,244,108,249,95,243,66,226,42,207"/>
-<area shape="rect" id="Node000009" href="$dd/d47/namespacemath.html#a34d66a77c19ce9b8b3a3d14352b34551" title="The volume of a sphere" alt="" coords="108,301,254,327"/>
-<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="36,204,59,246,77,269,98,288,104,292,101,296,95,292,73,272,55,249,32,206"/>
-<area shape="rect" id="Node000010" href="$dd/d47/namespacemath.html#a2d704a7b72a6b2db8b76c8581b577b2c" title="The volume of a triangular prism." alt="" coords="111,351,251,392"/>
-<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="34,204,53,268,72,305,99,338,101,340,97,344,95,341,68,308,48,270,28,206"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="313,80,384,106"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="237,29,266,40,318,69,315,73,264,45,235,34"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="249,75,298,83,297,88,248,80"/>
-<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="257,103,297,97,298,103,258,109"/>
-<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="248,298,263,288,295,249,318,204,333,158,341,120,346,122,338,160,323,206,300,252,267,292,251,303"/>
+<area shape="rect" id="Node000001" title="Self&#45;test implementations." alt="" coords="5,195,49,220"/>
+<area shape="rect" id="Node000002" href="$dd/d47/namespacemath.html#a3fe35440c27758ecc2287e08217d63a7" title="The volume of a cone" alt="" coords="113,169,249,195"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="48,201,97,193,98,198,49,207"/>
+<area shape="rect" id="Node000006" href="$dd/d47/namespacemath.html#ae413098478fa38acaac887b7654f0725" title="The volume of a cube" alt="" coords="113,268,249,294"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="45,219,69,237,98,254,110,260,108,265,95,259,66,242,42,223"/>
+<area shape="rect" id="Node000007" href="$dd/d47/namespacemath.html#abde24398be43538c62e4a496968e60ca" title="The volume of a cylinder" alt="" coords="105,219,257,244"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="49,208,90,215,89,220,48,213"/>
+<area shape="rect" id="Node000008" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="145,367,217,392"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="33,220,40,248,52,284,71,322,98,353,113,363,131,370,129,375,111,368,95,358,67,325,47,286,35,250,28,221"/>
+<area shape="rect" id="Node000009" href="$dd/d47/namespacemath.html#a94db02b3c9e55a69ac1696f30e2f761c" title="The volume of a pyramid" alt="" coords="104,5,258,31"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="27,194,33,162,45,121,65,78,95,40,98,37,102,42,99,44,69,81,50,123,38,164,33,195"/>
+<area shape="rect" id="Node000010" href="$dd/d47/namespacemath.html#a3fdc74c24697ec5bb5c3698c96117c12" title="The volume of a rectangular prism." alt="" coords="97,55,265,80"/>
+<area shape="poly" id="edge14_Node000001_Node000010" title=" " alt="" coords="30,193,52,144,71,115,95,91,102,86,105,90,98,95,75,119,57,146,35,195"/>
+<area shape="rect" id="Node000011" href="$dd/d47/namespacemath.html#a34d66a77c19ce9b8b3a3d14352b34551" title="The volume of a sphere" alt="" coords="108,317,254,343"/>
+<area shape="poly" id="edge16_Node000001_Node000011" title=" " alt="" coords="36,220,59,262,77,285,98,304,104,308,101,312,95,308,73,288,55,265,32,222"/>
+<area shape="rect" id="Node000012" href="$dd/d47/namespacemath.html#a2d704a7b72a6b2db8b76c8581b577b2c" title="The volume of a triangular prism." alt="" coords="111,105,251,145"/>
+<area shape="poly" id="edge18_Node000001_Node000012" title=" " alt="" coords="42,192,95,155,105,150,107,154,98,159,45,196"/>
+<area shape="rect" id="Node000003" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="321,112,377,138"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="228,166,264,154,305,139,307,144,266,159,229,171"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="313,243,384,268"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="237,193,266,204,317,232,315,236,264,209,235,198"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="327,113,324,103,326,94,335,88,349,85,364,88,372,95,368,99,361,93,349,91,337,93,330,97,329,103,332,111"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="432,112,505,138"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="377,122,417,122,417,128,377,128"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="248,268,297,261,298,266,249,273"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="241,216,264,205,299,178,326,148,330,151,302,182,266,210,243,221"/>
+<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="258,240,298,246,297,251,257,245"/>
+<area shape="poly" id="edge13_Node000009_Node000003" title=" " alt="" coords="243,29,266,40,302,68,330,98,326,102,299,72,264,44,241,34"/>
+<area shape="poly" id="edge15_Node000010_Node000003" title=" " alt="" coords="229,78,266,90,307,106,305,111,264,95,228,84"/>
+<area shape="poly" id="edge17_Node000011_Node000005" title=" " alt="" coords="235,314,264,304,315,275,318,280,266,309,237,319"/>
+<area shape="poly" id="edge19_Node000012_Node000003" title=" " alt="" coords="251,122,305,122,305,128,251,128"/>
 </map>
