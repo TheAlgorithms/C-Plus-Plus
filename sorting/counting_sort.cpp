@@ -27,6 +27,9 @@ int *Counting_Sort(int Arr[], int N) {
     int *Sorted_Arr = new int[N];
 
     int *Count = new int[max - min + 1];
+    for (int i = 0; i < max - min + 1; ++i) {
+        Count[i] = 0;
+    }
 
     for (int i = 0; i < N; i++) Count[Arr[i] - min]++;
 
@@ -37,6 +40,7 @@ int *Counting_Sort(int Arr[], int N) {
         Count[Arr[i] - min]--;
     }
 
+    delete[] Count;
     return Sorted_Arr;
 }
 
@@ -51,6 +55,7 @@ int main() {
     Sorted_Arr = Counting_Sort(Arr, N);
     cout << "\n\t Sorted Array = ";
     Print(Sorted_Arr, N);
+    delete[] Sorted_Arr;
     cout << endl;
 
     return 0;
