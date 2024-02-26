@@ -6,8 +6,8 @@ if(OpenGL_FOUND)
         include(ExternalProject)
         ExternalProject_Add (
             FREEGLUT-PRJ
-            URL https://github.com/FreeGLUTProject/freeglut/releases/download/v3.2.2/freeglut-3.2.2.tar.gz
-            URL_MD5 485c1976165315fc42c0b0a1802816d9
+            URL https://github.com/FreeGLUTProject/freeglut/releases/download/v3.4.0/freeglut-3.4.0.tar.gz
+            URL_MD5 f1621464e6525d0368976870cab8f418
             CMAKE_GENERATOR ${CMAKE_GENERATOR}
             CMAKE_GENERATOR_TOOLSET ${CMAKE_GENERATOR_TOOLSET}
             CMAKE_GENERATOR_PLATFORM ${CMAKE_GENERATOR_PLATFORM}

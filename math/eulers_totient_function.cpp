@@ -1,9 +1,7 @@
 /**
  * @file
- * @brief C++ Program to find
- * [Euler's Totient](https://en.wikipedia.org/wiki/Euler%27s_totient_function)
- * function
- *
+ * @brief Implementation of [Euler's Totient](https://en.wikipedia.org/wiki/Euler%27s_totient_function)
+ * @description
  * Euler Totient Function is also known as phi function.
  * \f[\phi(n) =
  * \phi\left({p_1}^{a_1}\right)\cdot\phi\left({p_2}^{a_2}\right)\ldots\f] where
@@ -23,36 +21,58 @@
  * * \f$\phi(1) = 1\f$
  * * \f$\phi(17501) = 15120\f$
  * * \f$\phi(1420) = 560\f$
+ * @author [Mann Mehta](https://github.com/mann2108)
  */
-#include <cstdlib>
-#include <iostream>
 
-/** Function to caculate Euler's totient phi
+#include <iostream> /// for IO operations
+#include <cassert> /// for assert
+
+/**
+ * @brief Mathematical algorithms
+ * @namespace
+ */
+namespace math {
+/**
+ * @brief Function to calculate Euler's Totient
+ * @param n the number to find the Euler's Totient of
  */
 uint64_t phiFunction(uint64_t n) {
     uint64_t result = n;
     for (uint64_t i = 2; i * i <= n; i++) {
-        if (n % i == 0) {
-            while (n % i == 0) {
-                n /= i;
-            }
-            result -= result / i;
-        }
+        if (n % i != 0) continue;
+        while (n % i == 0) n /= i;
+
+        result -= result / i;
     }
-    if (n > 1)
-        result -= result / n;
+    if (n > 1) result -= result / n;
+
     return result;
 }
+}  // namespace math
 
-/// Main function
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void test() {
+    assert(math::phiFunction(1) == 1);
+    assert(math::phiFunction(2) == 1);
+    assert(math::phiFunction(10) == 4);
+    assert(math::phiFunction(123456) == 41088);
+    assert(math::phiFunction(808017424794) == 263582333856);
+    assert(math::phiFunction(3141592) == 1570792);
+    assert(math::phiFunction(27182818) == 12545904);
+
+    std::cout << "All tests have successfully passed!\n";
+}
+
+/**
+ * @brief Main function
+ * @param argc commandline argument count (ignored)
+ * @param argv commandline array of arguments (ignored)
+ * @returns 0 on exit
+ */
 int main(int argc, char *argv[]) {
-    uint64_t n;
-    if (argc < 2) {
-        std::cout << "Enter the number: ";
-    } else {
-        n = strtoull(argv[1], nullptr, 10);
-    }
-    std::cin >> n;
-    std::cout << phiFunction(n);
+    test();
     return 0;
 }

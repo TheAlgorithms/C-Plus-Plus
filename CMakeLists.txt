@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.9)
+cmake_minimum_required(VERSION 3.22)
 project(Algorithms_in_C++
     LANGUAGES CXX
     VERSION 1.0.0
@@ -43,6 +43,9 @@ add_subdirectory(machine_learning)
 add_subdirectory(numerical_methods)
 add_subdirectory(graph)
 add_subdirectory(divide_and_conquer)
+add_subdirectory(games)
+add_subdirectory(cpu_scheduling_algorithms)
+add_subdirectory(physics)
 
 cmake_policy(SET CMP0054 NEW)
 cmake_policy(SET CMP0057 NEW)
