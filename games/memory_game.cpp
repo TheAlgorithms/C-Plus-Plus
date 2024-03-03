@@ -373,8 +373,6 @@ int main() {
                              ///< (previous answered values do not count).
 
     std::cout << "\tMEMORY GAME\n";
-    std::cout << std::boolalpha;
-    std::cout << std::is_literal_type<void>::value;
 
     do {
         std::cout << "\n1. 4x2 (1)";
