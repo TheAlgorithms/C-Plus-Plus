@@ -41,8 +41,8 @@ namespace greedy_algorithms {
 namespace knapsack {
 // Struct representing an item with profit and weight
 struct Item {
-    uint64_t profit;  // Profit of the item
-    uint64_t weight;  // Weight of the item
+    uint64_t profit;  ///< Profit of the item
+    uint64_t weight;  ///< Weight of the item
 };
 
 // Function to find the maximum profit using the knapsack algorithm
