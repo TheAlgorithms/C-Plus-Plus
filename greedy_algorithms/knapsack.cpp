@@ -31,10 +31,10 @@
  *
  *******************************************************************************/
 
-#include <algorithm>  // for std::max and std::fill
-#include <cassert>    // for assert
-#include <iostream>   // for I/O operations
-#include <vector>     // for std::vector
+#include <algorithm>  /// for std::max and std::fill
+#include <cassert>    /// for assert
+#include <iostream>   /// for I/O operations
+#include <vector>     /// for std::vector
 
 // Namespace for greedy algorithms related to the knapsack problem
 namespace greedy_algorithms {
