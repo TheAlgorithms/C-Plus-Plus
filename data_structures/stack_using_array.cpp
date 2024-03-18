@@ -10,6 +10,10 @@
 #include <cassert>   /// For assert
 #include <iostream>  /// For IO operations
 
+/*
+ * @namespace
+ * @brief Data structures
+ */
 namespace data_structures {
 /**
  * @brief Class representation of a stack
