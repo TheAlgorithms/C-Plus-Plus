@@ -10,7 +10,6 @@
  * And it also contain fstraem file there the data of the queue kept.
  * When removing the value of the head indexOfFirst increase by one
  * @author [Your Name](https://github.com/your_handle)
- * @see <Related File(s)>
  */
 
 #include <fstream>
