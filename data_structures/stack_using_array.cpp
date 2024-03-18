@@ -7,8 +7,9 @@
  * functionality.
  */
 
-#include <cassert>   /// For assert
-#include <iostream>  /// For IO operations
+#include <cassert>    /// For assert
+#include <iostream>   /// For IO operations
+#include <stdexcept>  /// For std::out_of_range
 
 /*
  * @namespace
@@ -22,7 +23,7 @@ namespace data_structures {
 template <typename T>
 class Stack {
  private:
-    T *stack;        ///< Pointer to the stack array
+    T* stack;        ///< Pointer to the stack array
     int stackSize;   ///< Maximum size of the stack
     int stackIndex;  ///< Index pointing to the top element of the stack
 
@@ -59,10 +60,11 @@ class Stack {
      * @brief Pops an element from the stack
      *
      * @return The popped element
+     * @throws std::out_of_range if the stack is empty
      */
     T pop() {
         if (stackIndex == 0) {
-            return T();
+            throw std::out_of_range("Stack is empty");
         } else {
             return stack[--stackIndex];
         }
@@ -81,12 +83,13 @@ class Stack {
      * @brief Displays the topmost element of the stack
      *
      * @return The topmost element of the stack
+     * @throws std::out_of_range if the stack is empty
      */
     T topmost() const {
         if (stackIndex > 0) {
             return stack[stackIndex - 1];
         } else {
-            return T();
+            throw std::out_of_range("Stack is empty");
         }
     }
 
@@ -94,12 +97,13 @@ class Stack {
      * @brief Displays the bottom element of the stack
      *
      * @return The bottom element of the stack
+     * @throws std::out_of_range if the stack is empty
      */
     T bottom() const {
         if (stackIndex > 0) {
             return stack[0];
         } else {
-            return T();
+            throw std::out_of_range("Stack is empty");
         }
     }
 };
@@ -112,6 +116,7 @@ class Stack {
 static void test() {
     data_structures::Stack<int> stack(5);
 
+    // Test push, pop, topmost and bottom operations
     assert(stack.push(10) == true);
     assert(stack.push(20) == true);
     assert(stack.push(30) == true);
@@ -125,6 +130,22 @@ static void test() {
 
     assert(stack.topmost() == 20);
     assert(stack.bottom() == 10);
+
+    assert(stack.pop() == 20);
+    assert(stack.pop() == 10);
+
+    // Test for exceptions when stack is empty
+    try {
+        stack.topmost();
+    } catch (const std::out_of_range& e) {
+        assert(std::string(e.what()) == "Stack is empty");
+    }
+
+    try {
+        stack.bottom();
+    } catch (const std::out_of_range& e) {
+        assert(std::string(e.what()) == "Stack is empty");
+    }
 }
 
 /**
