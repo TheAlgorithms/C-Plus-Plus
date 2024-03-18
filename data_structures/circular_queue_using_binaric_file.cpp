@@ -132,28 +132,5 @@ class QueueFile : public MyQueue<T> {
  * @returns 0 on exit.
  */
 int main() {
-    try {
-        QueueFile<int> queue(5);
-        queue.enqueue(1);
-        queue.enqueue(2);
-        queue.enqueue(3);
-        cout << queue.dequeue() << endl;  // 1
-        cout << queue.dequeue() << endl;
-        queue.enqueue(4);
-        queue.enqueue(5);
-        cout << queue.front() << endl;  //  3
-        // Clear the queue
-        queue.clear();
-        if (queue.isEmpty())
-            cout << "Queue is empty" << endl;
-        queue.enqueue(4);
-        queue.enqueue(5);
-        cout << queue.front() << endl;
-        cout << queue.dequeue() << endl;
-        cout << queue.dequeue() << endl;
-        cout << queue.dequeue() << endl;
-    } catch (const char* error) {
-        cout << error << endl;
-    }
     return 0;
 }
