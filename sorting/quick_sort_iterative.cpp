@@ -46,6 +46,7 @@ int partition(std::vector<int> &arr, int start, int end)
  * and restoring the environment between calls.
  * It does not need the end and start params, because
  * it is not recursive.
+ * @param arr array to be sorted
  * @return void
  */
 void iterativeQuickSort(std::vector<int> &arr)
