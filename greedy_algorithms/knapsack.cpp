@@ -36,16 +36,30 @@
 #include <iostream>   /// for I/O operations
 #include <vector>     /// for std::vector
 
-// Namespace for greedy algorithms related to the knapsack problem
+/* @namespace greedy_algorithms
+ * @brief greedy algorithms is a namespace which is bound to greedy algorithms
+ */
+
 namespace greedy_algorithms {
+
+/*@namespace knapsack 
+ *@brief knapsack is a namespace which is bound to the knapsack algorithm
+ */
+
 namespace knapsack {
+
 // Struct representing an item with profit and weight
 struct Item {
     uint64_t profit;  ///< Profit of the item
     uint64_t weight;  ///< Weight of the item
 };
 
-// Function to find the maximum profit using the knapsack algorithm
+/* @brief Function to find the maximum profit using the knapsack algorithm
+ * @params capacity: capacity is the upper limit of the algorithm
+ * @params arr: arr is the vector which contains the profit and the weight 
+ * @params size: size is the size of the vector
+ * @returns the max value of the knapsack in uint64_t type
+ */
 uint64_t knapSack(uint64_t capacity, const std::vector<Item>& arr,
                   uint64_t size) {
     // Making and initializing dp array for dynamic programming
@@ -72,46 +86,38 @@ uint64_t knapSack(uint64_t capacity, const std::vector<Item>& arr,
 }  // namespace knapsack
 }  // namespace greedy_algorithms
 
-// Test case 1
-static void test_case_1() {
-    std::vector<greedy_algorithms::knapsack::Item> arr{
-        {60, 10}, {100, 20}, {120, 30}};  // Items with profit and weight
-    uint64_t capacity = 50;               // Capacity of the knapsack
-    std::vector<uint64_t>::size_type size = arr.size();  // Number of items
-    uint64_t expected_result = 220;  // Expected maximum profit
-    // Compute the maximum profit and compare with the expected result
-    uint64_t derived_result =
-        greedy_algorithms::knapsack::knapSack(capacity, arr, size);
-    assert(expected_result == derived_result);
-}
 
-// Test case 2
-static void test_case_2() {
-    std::vector<greedy_algorithms::knapsack::Item> arr{{1, 4}, {2, 5}, {3, 1}};
-    uint64_t capacity = 4;
-    std::vector<uint64_t>::size_type size = arr.size();
-    uint64_t expected_result = 3;
-    uint64_t derived_result =
-        greedy_algorithms::knapsack::knapSack(capacity, arr, size);
-    assert(expected_result == derived_result);
-}
+// Testcases
+/* @breif this function implements the unit testing of the algorithm
+ * @params none
+ * @returns nothing
+ */
+static void testcases() {
+	std::vector<greedy_algorithms::knapsack::Item> arr {{60, 10}, {100, 20}, {120, 30}};
+	uint64_t capacity = 50;
+	std::vector<uint64_t>::size_type size = arr.size();
+	uint64_t expected_result = 220;
+	uint64_t derived_result = greedy_algorithms::knapsack::knapsack(capacity, arr, size);
+	assert(expected_result == derived result)
 
-// Test case 3
-static void test_case_3() {
-    std::vector<greedy_algorithms::knapsack::Item> arr{{1, 4}, {2, 5}, {3, 6}};
-    uint64_t capacity = 3;
-    std::vector<uint64_t>::size_type size = arr.size();
-    uint64_t expected_result = 0;
-    uint64_t derived_result =
-        greedy_algorithms::knapsack::knapSack(capacity, arr, size);
-    assert(expected_result == derived_result);
+    	std::vector<greedy_algorithms::knapsack::Item> arr{{1, 4}, {2, 5}, {3, 1}};
+	uint64_t capacity = 4;
+    	std::vector<uint64_t>::size_type size = arr.size();
+        uint64_t expected_result = 3;
+        uint64_t derived_result = greedy_algorithms::knapsack::knapSack(capacity, arr, size);
+        assert(expected_result == derived_result);
+
+        std::vector<greedy_algorithms::knapsack::Item> arr{{1, 4}, {2, 5}, {3, 6}};
+        uint64_t capacity = 3;
+        std::vector<uint64_t>::size_type size = arr.size();
+        uint64_t expected_result = 0;
+        uint64_t derived_result = greedy_algorithms::knapsack::knapSack(capacity, arr, size);
+        assert(expected_result == derived_result);
 }
 
 // Driver code to run test cases
 int main() {
-    test_case_1();
-    test_case_2();
-    test_case_3();
+    testcases();
     std::cout << "All test cases passed!" << std::endl;
     return 0;
 }
