@@ -87,5 +87,6 @@
     "xtree": "cpp",
     "xutility": "cpp",
     "climits": "cpp"
-  }
+  },
+  "cmake.configureOnOpen": false
 }

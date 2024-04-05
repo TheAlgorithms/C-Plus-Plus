@@ -19,7 +19,7 @@
 #include <queue>     /// for the priority_queue of distances
 #include <utility>   /// for make_pair function
 #include <vector>    /// for store the graph, the distances, and the path
-
+#include <cstdint>   /// added required library to avoid errors in int64_t definition
 constexpr int64_t INF = std::numeric_limits<int64_t>::max();
 
 /**
