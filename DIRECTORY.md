@@ -11,6 +11,7 @@
   * [Rat Maze](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/backtracking/rat_maze.cpp)
   * [Subarray Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/backtracking/subarray_sum.cpp)
   * [Subset Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/backtracking/subset_sum.cpp)
+  * [Trapped Rain Water](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/backtracking/trapped_rainwater.cpp)
   * [Sudoku Solver](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/backtracking/sudoku_solver.cpp)
   * [Wildcard Matching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/backtracking/wildcard_matching.cpp)
 
