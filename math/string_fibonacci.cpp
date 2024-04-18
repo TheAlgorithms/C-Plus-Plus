@@ -15,71 +15,46 @@
 #include <cstring>  // otherwise
 #endif
 
+#include <algorithm>
+#include <vector>
+
 /**
  * function to add two string numbers
  * \param [in] a first number in string to add
  * \param [in] b second number in string to add
  * \returns sum as a std::string
  */
-std::string add(std::string a, std::string b) {
-    std::string temp = "";
-
-    // carry flag
+std::string add(const std::string& a, const std::string& b) {
+    std::string result;
     int carry = 0;
-
-    // fills up with zeros
-    while (a.length() < b.length()) {
-        a = "0" + a;
+    for (int i = 0; i < std::max(a.size(), b.size()); i++) {
+        int sum = carry;
+        if (i < a.size()) sum += a[a.size() - 1 - i] - '0';
+        if (i < b.size()) sum += b[b.size() - 1 - i] - '0';
+        carry = sum / 10;
+        result.push_back(sum % 10 + '0');
     }
-
-    // fills up with zeros
-    while (b.length() < a.length()) {
-        b = "0" + b;
-    }
-
-    // adds the numbers a and b
-    for (int i = a.length() - 1; i >= 0; i--) {
-        char val = static_cast<char>(((a[i] - 48) + (b[i] - 48)) + 48 + carry);
-        if (val > 57) {
-            carry = 1;
-            val -= 10;
-        } else {
-            carry = 0;
-        }
-        temp = val + temp;
-    }
-
-    // processes the carry flag
-    if (carry == 1) {
-        temp = "1" + temp;
-    }
-
-    // removes leading zeros.
-    while (temp[0] == '0' && temp.length() > 1) {
-        temp = temp.substr(1);
-    }
-
-    return temp;
+    if (carry) result.push_back(carry + '0');
+    std::reverse(result.begin(), result.end());
+    return result;
 }
 
 /** Fibonacci iterator
  * \param [in] n n^th Fibonacci number
  */
 void fib_Accurate(uint64_t n) {
-    std::string tmp = "";
-    std::string fibMinus1 = "1";
-    std::string fibMinus2 = "0";
-    for (uint64_t i = 0; i < n; i++) {
-        tmp = add(fibMinus1, fibMinus2);
-        fibMinus2 = fibMinus1;
-        fibMinus1 = tmp;
+    std::vector<std::string> fib(n+1);
+    fib[0] = "0";
+    fib[1] = "1";
+    for (uint64_t i = 2; i <= n; i++) {
+        fib[i] = add(fib[i-1], fib[i-2]);
     }
-    std::cout << fibMinus2;
+    std::cout << fib[n];
 }
 
 /** main function */
 int main() {
-    int n;
+    uint64_t n;
     std::cout << "Enter whatever number N you want to find the fibonacci of\n";
     std::cin >> n;
     std::cout << n << " th Fibonacci is \n";
