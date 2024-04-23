@@ -1,6 +1,8 @@
 // C++ program to perform TimSort.
 #include <algorithm>
+#include <cassert>
 #include <iostream>
+#include <numeric>
 
 const int RUN = 32;
 
@@ -74,7 +76,7 @@ void timSort(int arr[], int n) {
         for (int left = 0; left < n; left += 2 * size) {
             // find ending point of left sub array
             // mid+1 is starting point of right sub array
-            int mid = left + size - 1;
+            int mid = std::min((left + size - 1), (n - 1));
             int right = std::min((left + 2 * size - 1), (n - 1));
 
             // merge sub array arr[left.....mid] & arr[mid+1....right]
@@ -89,8 +91,23 @@ void printArray(int arr[], int n) {
     std::cout << std::endl;
 }
 
+void test(int n) {
+    int *arr = new int[n];
+
+    std::iota(arr, arr + n, 0);
+    std::reverse(arr, arr + n);
+    assert(!std::is_sorted(arr, arr + n));
+
+    timSort(arr, n);
+    assert(std::is_sorted(arr, arr + n));
+
+    delete[] arr;
+}
+
 // Driver program to test above function
 int main() {
+    test(65);
+
     int arr[] = {5, 21, 7, 23, 19};
     int n = sizeof(arr) / sizeof(arr[0]);
     printf("Given Array is\n");
