@@ -41,6 +41,20 @@ class Stack {
     ~Stack() { delete[] stack; }
 
     /**
+     * @brief Checks if the stack is full
+     *
+     * @return true if the stack is full, false otherwise
+     */
+    bool full() const { return stackIndex == stackSize; }
+
+    /**
+     * @brief Checks if the stack is empty
+     *
+     * @return true if the stack is empty, false otherwise
+     */
+    bool empty() const { return stackIndex == 0; }
+
+    /**
      * @brief Pushes an element onto the stack
      *
      * @param element Element to push onto the stack
@@ -48,7 +62,7 @@ class Stack {
      * otherwise
      */
     bool push(T element) {
-        if (stackIndex == stackSize) {
+        if (full()) {
             return false;
         } else {
             stack[stackIndex++] = element;
@@ -63,7 +77,7 @@ class Stack {
      * @throws std::out_of_range if the stack is empty
      */
     T pop() {
-        if (stackIndex == 0) {
+        if (empty()) {
             throw std::out_of_range("Stack is empty");
         } else {
             return stack[--stackIndex];
@@ -86,10 +100,10 @@ class Stack {
      * @throws std::out_of_range if the stack is empty
      */
     T topmost() const {
-        if (stackIndex > 0) {
-            return stack[stackIndex - 1];
-        } else {
+        if (empty()) {
             throw std::out_of_range("Stack is empty");
+        } else {
+            return stack[stackIndex - 1];
         }
     }
 
@@ -100,10 +114,10 @@ class Stack {
      * @throws std::out_of_range if the stack is empty
      */
     T bottom() const {
-        if (stackIndex > 0) {
-            return stack[0];
-        } else {
+        if (empty()) {
             throw std::out_of_range("Stack is empty");
+        } else {
+            return stack[0];
         }
     }
 };
@@ -116,7 +130,10 @@ class Stack {
 static void test() {
     data_structures::Stack<int> stack(5);
 
-    // Test push, pop, topmost and bottom operations
+    // Test push, pop, topmost, bottom, full, and empty operations
+    assert(stack.empty() == true);
+    assert(stack.full() == false);
+
     assert(stack.push(10) == true);
     assert(stack.push(20) == true);
     assert(stack.push(30) == true);
@@ -133,6 +150,9 @@ static void test() {
 
     assert(stack.pop() == 20);
     assert(stack.pop() == 10);
+
+    assert(stack.empty() == true);
+    assert(stack.full() == false);
 
     // Test for exceptions when stack is empty
     try {
