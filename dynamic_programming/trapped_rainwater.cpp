@@ -1,6 +1,7 @@
 /**
  * @file
- * @brief Implementation of the Trapped Rainwater Problem
+ * @brief Implementation of the [Trapped Rainwater
+ * Problem](https://www.geeksforgeeks.org/trapping-rain-water/)
  * @details
  * This implementation calculates the amount of rainwater that can be trapped
  * between walls represented by an array of heights.
@@ -57,6 +58,9 @@ int trappedRainwater(const std::vector<int>& heights) {
  * @returns void
  */
 static void test() {
+    std::vector<int> heights0 = {0, 1};
+    assert(dynamic_programming::trappedRainwater(heights0) == 0);
+
     std::vector<int> heights1 = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
     assert(dynamic_programming::trappedRainwater(heights1) == 6);
 
