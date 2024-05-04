@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int queue[10];
+int arr[10];
 int front = 0;
 int rear = 0;
 
@@ -9,7 +9,7 @@ void Enque(int x) {
     if (rear == 10) {
         cout << "\nOverflow";
     } else {
-        queue[rear++] = x;
+        arr[rear++] = x;
     }
 }
 
@@ -19,9 +19,9 @@ void Deque() {
     }
 
     else {
-        cout << "\n" << queue[front++] << " deleted";
+        cout << "\n" << arr[front++] << " deleted";
         for (int i = front; i < rear; i++) {
-            queue[i - front] = queue[i];
+            arr[i - front] = arr[i];
         }
         rear = rear - front;
         front = 0;
@@ -30,7 +30,7 @@ void Deque() {
 
 void show() {
     for (int i = front; i < rear; i++) {
-        cout << queue[i] << "\t";
+        cout << arr[i] << "\t";
     }
 }
 
