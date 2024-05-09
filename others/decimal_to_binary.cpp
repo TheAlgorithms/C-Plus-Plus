@@ -38,8 +38,8 @@ void method2(int number) {
     } while (number > 0);
 
     std::cout << "Method 2 : ";
-    while (num_bits >= 0)
-        std::cout << bit_string[num_bits--];  // print from MSB to LSB
+    while (num_bits > 0)
+        std::cout << bit_string[--num_bits];  // print from MSB to LSB
     std::cout << std::endl;
 }
 
