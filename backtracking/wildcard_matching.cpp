@@ -14,7 +14,7 @@
 #include <cassert>   /// for assert
 #include <iostream>  /// for IO operations
 #include <vector>    /// for std::vector
-
+#include <cstdint>   /// for std::uint32_t, std::int64_t
 /**
  * @namespace backtracking
  * @brief Backtracking algorithms
