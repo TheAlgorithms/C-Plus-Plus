@@ -2,26 +2,23 @@
  * @file
  * @brief [A fast Fourier transform
  * (FFT)](https://medium.com/@aiswaryamathur/understanding-fast-fouriertransform-from-scratch-to-solve-polynomial-multiplication-8018d511162f)
- * is an algorithm that computes the
- * discrete Fourier transform (DFT) of a sequence, or its inverse (IDFT).
+ * is an algorithm that computes the discrete Fourier transform (DFT)
+ * of a sequence, or its inverse (IDFT).
  * @details
- * This
- * algorithm has application in use case scenario where a user wants to find
- points of a
- * function
- * in a short time by just using the coefficients of the polynomial
- * function.
- * It can be also used to find inverse fourier transform by just switching the
- value of omega.
- * Time complexity
- * this algorithm computes the DFT in O(nlogn) time in comparison to traditional
+ * This algorithm has application in use case scenario where a user wants
+ * to find points of a function in a short time by just using
+ * the coefficients of the polynomial function.
+ * It can be also used to find inverse fourier transform
+ * by just switching the value of omega.
+ * Time complexity this algorithm computes the DFT in O(nlogn) time
+ * in comparison to traditional
  O(n^2).
  * @author [Ameya Chawla](https://github.com/ameyachawlaggsipu)
  */
 
 #include <cassert>   /// for assert
 #include <cmath>     /// for mathematical-related functions
-#include <complex>   /// for storing points and coefficents
+#include <complex>   /// for storing points and coefficients
 #include <iostream>  /// for IO operations
 #include <vector>    /// for std::vector
 #include <cstdint>   /// for uint8_t and other
