@@ -37,6 +37,7 @@ namespace numerical_methods {
  * @returns y if n!=1
  */
 using ComplVec = std::vector<std::complex<double>>;
+constexpr double pi = 3.14159265358979323846;
 
 ComplVec FastFourierTransform(ComplVec &p) {
     size_t n = p.size();
@@ -44,8 +45,6 @@ ComplVec FastFourierTransform(ComplVec &p) {
     if (n == 1) {
         return p;  /// Base Case To return
     }
-
-    double pi = 2 * asin(1.0);  /// Declaring value of pi
 
     std::complex<double> om = std::complex<double>(
         cos(2 * pi / n), sin(2 * pi / n));  /// Calculating value of omega
