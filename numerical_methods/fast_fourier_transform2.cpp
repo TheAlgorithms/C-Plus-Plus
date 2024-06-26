@@ -74,11 +74,13 @@ static void test() {
 
     uint8_t n1 = 2;
     uint8_t n2 = 4;
+    // The result was verified using the following
+    // online tool: https://scistatcalc.blogspot.com/2013/12/fft-calculator.html
     std::vector<std::complex<double>> r1 = {
         {3, 0}, {-1, 0}};  /// True Answer for test case 1
 
     std::vector<std::complex<double>> r2 = {
-        {10, 0}, {-2, -2}, {-2, 0}, {-2, 2}};  /// True Answer for test case 2
+        {10, 0}, {-2, 2}, {-2, 0}, {-2, -2}};  /// True Answer for test case 2
 
     ComplVec o1 = fft(t1, 1);
     ComplVec o2 = fft(t2, 2);
