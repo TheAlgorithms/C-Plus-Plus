@@ -8,6 +8,8 @@
 #include <complex>
 #include <iostream>
 #include <vector>
+#include <cstdint>   /// for uint8_t and other
+#include <cassert>   /// for assert
 
 using namespace std;
 
@@ -23,8 +25,7 @@ unsigned int bitReverse(unsigned int x, const unsigned int log2n) {
 
 const double PI = 3.1415926536;
 
-template<typename Container,
-    std::enable_if<>>
+template<typename Container>
 Container fft(const Container& a, const unsigned int log2n)
 {
     using Complex = typename Container::value_type;
@@ -56,6 +57,53 @@ Container fft(const Container& a, const unsigned int log2n)
     return b;
 }
 
+static void test() {
+    using ComplVec = std::vector<std::complex<double>>;
+
+    /* descriptions of the following test */
+
+    //    auto *t1 = new std::complex<double>[2];  /// Test case 1
+    //    auto *t2 = new std::complex<double>[4];  /// Test case 2
+
+    auto t1 = std::vector<std::complex<double>> {{1, 0}, {2, 0}};
+    auto t2 = std::vector<std::complex<double>> {
+        {1, 0},
+        {2, 0},
+        {3, 0},
+        {4, 0}};
+
+    uint8_t n1 = 2;
+    uint8_t n2 = 4;
+    std::vector<std::complex<double>> r1 = {
+        {3, 0}, {-1, 0}};  /// True Answer for test case 1
+
+    std::vector<std::complex<double>> r2 = {
+        {10, 0}, {-2, -2}, {-2, 0}, {-2, 2}};  /// True Answer for test case 2
+
+    ComplVec o1 = fft(t1, 1);
+    ComplVec o2 = fft(t2, 2);
+    for (short i = 0; i < n1; i++) {
+        std::cout << i << ": r = " << r2[i].real() - o2[i].real() << std::endl;
+        std::cout << i << ": i = " << r2[i].imag() - o2[i].imag() << std::endl;
+        assert((r1[i].real() - o1[i].real() < 0.000000000001) &&
+               (r1[i].imag() - o1[i].imag() <
+                0.000000000001));  /// Comparing for both real and imaginary
+                                   /// values for test case 1
+    }
+
+    std::cout << std::endl;
+
+    for (short i = 0; i < n2; i++) {
+        std::cout << i << ": r = " << r2[i].real() - o2[i].real() << std::endl;
+        std::cout << i << ": i = " << r2[i].imag() - o2[i].imag() << std::endl;
+        assert((r2[i].real() - o2[i].real() < 0.000000000001) &&
+               (r2[i].imag() - o2[i].imag() <
+                0.000000000001));  /// Comparing for both real and imaginary
+                                   /// values for test case 2
+    }
+    std::cout << "All tests have successfully passed!\n";
+}
+
 int main() {
     using cx = complex<double>;
     vector<cx> a = { cx(0,0), cx(1,1), cx(3,3), cx(4,4),
@@ -64,4 +112,7 @@ int main() {
     auto b = fft(a, 3);
     for (auto i : b)
         cout << i << "\n";
+
+    test();  //  run self-test implementations
+             //  with 2 defined test cases
 }
