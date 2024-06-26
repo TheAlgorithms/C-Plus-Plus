@@ -85,23 +85,17 @@ static void test() {
     ComplVec o1 = fft(t1, 1);
     ComplVec o2 = fft(t2, 2);
     for (short i = 0; i < n1; i++) {
-        std::cout << i << ": r = " << r2[i].real() - o2[i].real() << std::endl;
-        std::cout << i << ": i = " << r2[i].imag() - o2[i].imag() << std::endl;
+        // Comparing for both real and imaginary values for test case 1
         assert((r1[i].real() - o1[i].real() < 0.000000000001) &&
-               (r1[i].imag() - o1[i].imag() <
-                0.000000000001));  /// Comparing for both real and imaginary
-                                   /// values for test case 1
+               (r1[i].imag() - o1[i].imag() < 0.000000000001));
     }
 
     std::cout << std::endl;
 
     for (short i = 0; i < n2; i++) {
-        std::cout << i << ": r = " << r2[i].real() - o2[i].real() << std::endl;
-        std::cout << i << ": i = " << r2[i].imag() - o2[i].imag() << std::endl;
-        assert((r2[i].real() - o2[i].real() < 0.000000000001) &&
-               (r2[i].imag() - o2[i].imag() <
-                0.000000000001));  /// Comparing for both real and imaginary
-                                   /// values for test case 2
+        // Comparing for both real and imaginary values for test case 2
+        assert((r2[i].real() - o2[i].real() < 0.00000001) &&
+               (r2[i].imag() - o2[i].imag() < 0.00000001));
     }
     std::cout << "All tests have successfully passed!\n";
 }
