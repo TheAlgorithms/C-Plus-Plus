@@ -26,16 +26,16 @@ unsigned int bitReverse(unsigned int x, const unsigned int log2n) {
 const double PI = 3.1415926536;
 
 template<typename Container>
-Container fft(const Container& a, const unsigned int log2n)
+Container fft(const Container& in_data, const unsigned int log2n)
 {
     using Complex = typename Container::value_type;
 
     const Complex J(0, 1);
     int n = 1 << log2n;
-    Container b(n);
+    Container out_data(n);
 
     for (unsigned int i=0; i < n; ++i) {
-        b[bitReverse(i, log2n)] = a[i];
+        out_data[bitReverse(i, log2n)] = in_data[i];
     }
 
     for (int s = 1; s <= log2n; ++s) {
@@ -45,16 +45,16 @@ Container fft(const Container& a, const unsigned int log2n)
         Complex wm = exp(-J * (PI / m2));
         for (int j=0; j < m2; ++j) {
             for (int k=j; k < n; k += m) {
-                Complex t = w * b[k + m2];
-                Complex u = b[k];
-                b[k] = u + t;
-                b[k + m2] = u - t;
+                Complex t = w * out_data[k + m2];
+                Complex u = out_data[k];
+                out_data[k] = u + t;
+                out_data[k + m2] = u - t;
             }
             w *= wm;
         }
     }
 
-    return b;
+    return out_data;
 }
 
 static void test() {
