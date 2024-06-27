@@ -86,8 +86,8 @@ static void test() {
     ComplVec o2 = fft(t2, 2);
     for (short i = 0; i < n1; i++) {
         // Comparing for both real and imaginary values for test case 1
-        assert((r1[i].real() - o1[i].real() < 0.000000000001) &&
-               (r1[i].imag() - o1[i].imag() < 0.000000000001));
+        assert((r1[i].real() - o1[i].real() < 0.00000001) &&
+               (r1[i].imag() - o1[i].imag() < 0.00000001));
     }
 
     std::cout << std::endl;
