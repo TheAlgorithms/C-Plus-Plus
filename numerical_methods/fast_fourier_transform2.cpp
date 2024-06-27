@@ -101,14 +101,6 @@ static void test() {
 }
 
 int main() {
-    using cx = complex<double>;
-    vector<cx> a = { cx(0,0), cx(1,1), cx(3,3), cx(4,4),
-              cx(4, 4), cx(3, 3), cx(1,1), cx(0,0) };
-
-    auto b = fft(a, 3);
-    for (auto i : b)
-        cout << i << "\n";
-
     test();  //  run self-test implementations
              //  with 2 defined test cases
 }
