@@ -1,19 +1,34 @@
 /**
  * @file
  * @brief [A fast Fourier transform
-* (FFT)](https://www.oreilly.com/library/view/c-cookbook/0596007612/ch11s18.html)
- */
+ * (FFT)](https://www.oreilly.com/library/view/c-cookbook/0596007612/ch11s18.html)
+ * is an algorithm that computes the discrete Fats Fourier transform (FFT)
+ * @details
+ * Function in this example, was written to be as simple as possible rather
+ * than focusing on efficiency. Time complexity this algorithm computes
+ * the DFT in O(nlogn) time in comparison to traditional O(n^2).
+ * @author [Alexey Elfimov](https://github.com/ikocs)
+*/
 
-#include <cmath>
-#include <complex>
-#include <iostream>
-#include <vector>
+#include <complex>   /// for storing points and coefficients
+#include <iostream>  /// for IO operations
+#include <vector>    /// for std::vector
 #include <cstdint>   /// for uint8_t and other
 #include <cassert>   /// for assert
 
 using namespace std;
 
+/**
+ * @namespace numerical_methods
+ * @brief Numerical algorithms/methods
+ */
 namespace numerical_methods {
+/**
+ * @brief Performs bit inversion in a number
+ * @param x input number
+ * @param log2n number size
+ * @return result revert number
+ */
 unsigned int bit_reverse(unsigned int x, const unsigned int log2n) {
     unsigned int n = 0;
     for (int i = 0; i < log2n; i++) {
@@ -26,6 +41,14 @@ unsigned int bit_reverse(unsigned int x, const unsigned int log2n) {
 
 const double PI = 3.1415926536;
 
+/**
+ * @brief Fast Fourier Transform is a recursive function which
+ * returns Container of complex numbers
+ * @tparam Container container for storing data. For example std::vector
+ * @param in_data input data
+ * @param log2n size fft in power of two format
+ * @return calculation result
+ */
 template <typename Container>
 Container fft(const Container& in_data, const unsigned int log2n) {
     using Complex = typename Container::value_type;
@@ -58,6 +81,13 @@ Container fft(const Container& in_data, const unsigned int log2n) {
 }
 } // namespace numerical_methods
 
+/**
+ * @brief Self-test implementations
+ * @details
+ * Declaring three test cases and checking for the error
+ * in predicted and true value is less than 1e-6.
+ * @returns void
+ */
 static void test() {
     using ComplVec = std::vector<std::complex<double>>;
 
