@@ -13,9 +13,10 @@
 
 using namespace std;
 
-unsigned int bitReverse(unsigned int x, const unsigned int log2n) {
+namespace numerical_methods {
+unsigned int bit_reverse(unsigned int x, const unsigned int log2n) {
     unsigned int n = 0;
-    for (int i=0; i < log2n; i++) {
+    for (int i = 0; i < log2n; i++) {
         n <<= 1;
         n |= (x & 1);
         x >>= 1;
@@ -25,17 +26,16 @@ unsigned int bitReverse(unsigned int x, const unsigned int log2n) {
 
 const double PI = 3.1415926536;
 
-template<typename Container>
-Container fft(const Container& in_data, const unsigned int log2n)
-{
+template <typename Container>
+Container fft(const Container& in_data, const unsigned int log2n) {
     using Complex = typename Container::value_type;
 
     const Complex J(0, 1);
     int n = 1 << log2n;
     Container out_data(n);
 
-    for (unsigned int i=0; i < n; ++i) {
-        out_data[bitReverse(i, log2n)] = in_data[i];
+    for (unsigned int i = 0; i < n; ++i) {
+        out_data[bit_reverse(i, log2n)] = in_data[i];
     }
 
     for (int s = 1; s <= log2n; ++s) {
@@ -43,8 +43,8 @@ Container fft(const Container& in_data, const unsigned int log2n)
         int m2 = m >> 1;
         Complex w(1, 0);
         Complex wm = exp(-J * (PI / m2));
-        for (int j=0; j < m2; ++j) {
-            for (int k=j; k < n; k += m) {
+        for (int j = 0; j < m2; ++j) {
+            for (int k = j; k < n; k += m) {
                 Complex t = w * out_data[k + m2];
                 Complex u = out_data[k];
                 out_data[k] = u + t;
@@ -56,6 +56,7 @@ Container fft(const Container& in_data, const unsigned int log2n)
 
     return out_data;
 }
+} // namespace numerical_methods
 
 static void test() {
     using ComplVec = std::vector<std::complex<double>>;
@@ -103,21 +104,21 @@ static void test() {
         {0, 0},
         {-11.6569, -4.82843}};
 
-    ComplVec o1 = fft(t1, logN1);
+    ComplVec o1 = numerical_methods::fft(t1, logN1);
     for (short i = 0; i < n1; i++) {
         // Comparing for both real and imaginary values for test case 1
         assert((r1[i].real() - o1[i].real() < 0.00000001) &&
                (r1[i].imag() - o1[i].imag() < 0.00000001));
     }
 
-    ComplVec o2 = fft(t2, logN2);
+    ComplVec o2 = numerical_methods::fft(t2, logN2);
     for (short i = 0; i < n2; i++) {
         // Comparing for both real and imaginary values for test case 2
         assert((r2[i].real() - o2[i].real() < 0.00000001) &&
                (r2[i].imag() - o2[i].imag() < 0.00000001));
     }
 
-    ComplVec o3 = fft(t3, logN3);
+    ComplVec o3 = numerical_methods::fft(t3, logN3);
     for (short i = 0; i < n3; i++) {
         // Comparing for both real and imaginary values for test case 3
         assert((r3[i].real() - o3[i].real() < 0.00000001) &&
