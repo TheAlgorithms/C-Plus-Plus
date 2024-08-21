@@ -41,7 +41,10 @@ void show()
         t = t->next;
     }
 }
-
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main()
 {
     int ch = 0, x = 0;
