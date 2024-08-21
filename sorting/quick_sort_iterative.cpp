@@ -7,7 +7,7 @@
  * https://stackoverflow.com/questions/12553238/quicksort-iterative-or-recursive
  * https://en.wikipedia.org/wiki/Quicksort
  * https://www.geeksforgeeks.org/iterative-quick-sort/
- * @author Sebe324 (https://github.com/sebe324)
+ * @author [Sebe324](https://github.com/sebe324)
  */
 
 #include <iostream> /// for std::cout
