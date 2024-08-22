@@ -95,17 +95,17 @@ void printArray(int arr[], int n) {
  * @brief self-test implementation 
  * @returns void
  */
-void test() {
+void tests() {
     // Case: array of length 65
-    int arr[65];
+    constexpr int N = 65;
+    int arr[N];
 
-    std::iota(arr, arr + n, 0);
-    std::reverse(arr, arr + n);
-    assert(!std::is_sorted(arr, arr + n));
+    std::iota(arr, arr + N, 0);
+    std::reverse(arr, arr + N);
+    assert(!std::is_sorted(arr, arr + N));
 
-    timSort(arr, n);
-    assert(std::is_sorted(arr, arr + n));
-
+    timSort(arr, N);
+    assert(std::is_sorted(arr, arr + N));
 }
 
 // Driver program to test above function
