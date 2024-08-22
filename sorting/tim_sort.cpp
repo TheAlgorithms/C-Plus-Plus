@@ -91,8 +91,13 @@ void printArray(int arr[], int n) {
     std::cout << std::endl;
 }
 
-void test(int n) {
-    int *arr = new int[n];
+/**
+ * @brief self-test implementation 
+ * @returns void
+ */
+void test() {
+    // Case: array of length 65
+    int arr[65];
 
     std::iota(arr, arr + n, 0);
     std::reverse(arr, arr + n);
@@ -101,12 +106,11 @@ void test(int n) {
     timSort(arr, n);
     assert(std::is_sorted(arr, arr + n));
 
-    delete[] arr;
 }
 
 // Driver program to test above function
 int main() {
-    test(65);
+    tests();
 
     int arr[] = {5, 21, 7, 23, 19};
     int n = sizeof(arr) / sizeof(arr[0]);
