@@ -110,7 +110,7 @@ void tests() {
 
 // Driver program to test above function
 int main() {
-    tests();
+    tests(); // run self test implementations
 
     int arr[] = {5, 21, 7, 23, 19};
     int n = sizeof(arr) / sizeof(arr[0]);
