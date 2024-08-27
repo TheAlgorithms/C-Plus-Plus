@@ -21,14 +21,15 @@
 #include <cassert>
 #include <vector>
 
-/** \namespace string_search
- * \brief String search algorithms
+/**
+ * @namespace string_search
+ * @brief String search algorithms
  */
 namespace string_search {
 /**
  * @brief Generate the partial match table aka failure function for a pattern to
  * search.
- * @param[in] pattern text for which to create the partial match table
+ * @param pattern text for which to create the partial match table
  * @returns the partial match table as a vector array
  */
 std::vector<size_t> getFailureArray(const std::string &pattern) {
