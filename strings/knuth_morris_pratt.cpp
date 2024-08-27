@@ -1,9 +1,9 @@
 /**
- * \file
- * \brief The [Knuth-Morris-Pratt
+ * @file
+ * @brief The [Knuth-Morris-Pratt
  * Algorithm](https://en.wikipedia.org/wiki/Knuth–Morris–Pratt_algorithm) for
  * finding a pattern within a piece of text with complexity O(n + m)
- *
+ * @details
  * 1. Preprocess pattern to identify any suffixes that are identical to
  * prefixes. This tells us where to continue from if we get a mismatch between a
  * character in our pattern and the text.
@@ -18,6 +18,7 @@
 #else
 #include <cstring>
 #endif
+#include <cassert>
 #include <vector>
 
 /** \namespace string_search
@@ -25,75 +26,75 @@
  */
 namespace string_search {
 /**
- * Generate the partial match table aka failure function for a pattern to
+ * @brief Generate the partial match table aka failure function for a pattern to
  * search.
- * \param[in] pattern text for which to create the partial match table
- * \returns the partial match table as a vector array
+ * @param[in] pattern text for which to create the partial match table
+ * @returns the partial match table as a vector array
  */
-std::vector<int> getFailureArray(const std::string &pattern) {
-    int pattern_length = pattern.size();
-    std::vector<int> failure(pattern_length + 1);
-    failure[0] = -1;
-    int j = -1;
-
+std::vector<size_t> getFailureArray(const std::string &pattern) {
+    size_t pattern_length = pattern.size();
+    std::vector<size_t> failure(pattern_length + 1);
+    failure[0] = std::string::npos;
+    size_t j = std::string::npos;
     for (int i = 0; i < pattern_length; i++) {
-        while (j != -1 && pattern[j] != pattern[i]) {
+        while (j != std::string::npos && pattern[j] != pattern[i]) {
             j = failure[j];
         }
-        j++;
-        failure[i + 1] = j;
+        failure[i + 1] = ++j;
     }
     return failure;
 }
 
 /**
- * KMP algorithm to find a pattern in a text
- * \param[in] pattern string pattern to search
- * \param[in] text text in which to search
- * \returns `true` if pattern was found
- * \returns `false` if pattern was not found
+ * @brief KMP algorithm to find a pattern in a text
+ * @param pattern string pattern to search
+ * @param text text in which to search
+ * @returns the starting index of the pattern if found
+ * @returns `std::string::npos` if not found
  */
-bool kmp(const std::string &pattern, const std::string &text) {
+size_t kmp(const std::string &pattern, const std::string &text) {
     if (pattern.empty()) {
-        return true;
+        return 0;
     }
-    
-    int text_length = text.size(), pattern_length = pattern.size();
-    std::vector<int> failure = getFailureArray(pattern);
-
-    int k = 0;
-    for (int j = 0; j < text_length; j++) {
-        while (k != -1 && pattern[k] != text[j]) {
+    std::vector<size_t> failure = getFailureArray(pattern);
+    size_t text_length = text.size();
+    size_t pattern_length = pattern.size();
+    size_t k = 0;
+    for (size_t j = 0; j < text_length; j++) {
+        while (k != std::string::npos && pattern[k] != text[j]) {
             k = failure[k];
         }
-        k++;
-        if (k == pattern_length)
-            return true;
+        if (++k == pattern_length) {
+            return j - k + 1;
+        }
     }
-    return false;
+    return std::string::npos;
 }
 }  // namespace string_search
 
 using string_search::kmp;
 
-/** Main function */
+/**
+ * @brief test KMP algorithm
+ * @returns void
+ */
+static void tests() {
+    assert(kmp("abc1abc12l", "alskfjaldsabc1abc1abc12k2") == std::string::npos);
+    assert(kmp("bca", "abcabc") == 1);
+    assert(kmp("World", "helloWorld") == 5);
+    assert(kmp("c++", "his_is_c++") == 7);
+    assert(kmp("happy", "happy_coding") == 0);
+    assert(kmp("", "pattern is empty") == 0);
+
+    // this lets the user know that the tests have passed
+    std::cout << "All KMP algorithm tests have successfully passed!\n";
+}
+
+/*
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
-    std::string text = "alskfjaldsabc1abc1abc12k23adsfabcabc";
-    std::string pattern = "abc1abc12l";
-
-    if (kmp(pattern, text) == true) {
-        std::cout << "Found" << std::endl;
-    } else {
-        std::cout << "Not Found" << std::endl;
-    }
-
-    text = "abcabc";
-    pattern = "bca";
-    if (kmp(pattern, text) == true) {
-        std::cout << "Found" << std::endl;
-    } else {
-        std::cout << "Not Found" << std::endl;
-    }
-
+    tests();
     return 0;
 }
