@@ -54,6 +54,10 @@ std::vector<int> getFailureArray(const std::string &pattern) {
  * \returns `false` if pattern was not found
  */
 bool kmp(const std::string &pattern, const std::string &text) {
+    if (pattern.empty()) {
+        return true;
+    }
+    
     int text_length = text.size(), pattern_length = pattern.size();
     std::vector<int> failure = getFailureArray(pattern);
 
