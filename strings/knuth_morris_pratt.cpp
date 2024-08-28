@@ -76,7 +76,7 @@ size_t kmp(const std::string &pattern, const std::string &text) {
 using string_search::kmp;
 
 /**
- * @brief test KMP algorithm
+ * @brief self-test implementations
  * @returns void
  */
 static void tests() {
