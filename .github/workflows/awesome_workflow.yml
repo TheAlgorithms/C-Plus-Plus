@@ -61,7 +61,7 @@ jobs:
           submodules: true
       - run: |
           cmake -B ./build -S .
-          cmake --build --parallel build
+          cmake --build build -j
       - name: Label on PR fail
         uses: actions/github-script@v6
         if: ${{ failure() && matrix.os == 'ubuntu-latest' && github.event_name == 'pull_request' }}
