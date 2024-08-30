@@ -8,13 +8,13 @@
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="153,101,204,91,206,96,154,107"/>
 <area shape="rect" id="Node000008" href="$da/d0d/longest__common__string_8cpp.html#a23ab67b0d9600697695fc8679462d8fe" title="checks if the function longest_common_string_length returns the same result when its inputs are rever..." alt="" coords="204,185,385,241"/>
 <area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="143,120,169,145,203,171,210,175,207,180,199,175,166,149,140,124"/>
-<area shape="rect" id="Node000012" href="$da/d0d/longest__common__string_8cpp.html#ad1e613c1b85cc04ed931b6c745fec155" title="checks if the function longest_common_string_length returns the same result when its argument are fli..." alt="" coords="201,121,388,161"/>
+<area shape="rect" id="Node000012" href="$da/d0d/longest__common__string_8cpp.html#ad1e613c1b85cc04ed931b6c745fec155" title="checks if the function longest_common_string_length returns the same result when its argument are fli..." alt="" coords="201,120,388,161"/>
 <area shape="poly" id="edge12_Node000002_Node000012" title=" " alt="" coords="154,111,186,117,185,122,153,116"/>
-<area shape="rect" id="Node000005" href="$da/d0d/longest__common__string_8cpp.html#aa38b6b17bc5d46ed88acdd8414e18fa5" title="for std::vector" alt="" coords="436,121,596,161"/>
+<area shape="rect" id="Node000005" href="$da/d0d/longest__common__string_8cpp.html#aa38b6b17bc5d46ed88acdd8414e18fa5" title="computes the length of the longest common string created from input strings" alt="" coords="436,120,596,161"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="367,94,431,113,429,118,365,99"/>
 <area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="669,84,741,110"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="596,120,653,106,654,111,597,125"/>
-<area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="649,133,761,159"/>
+<area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="649,133,760,159"/>
 <area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="596,140,634,141,634,147,596,146"/>
 <area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="382,182,436,164,438,169,383,187"/>
 <area shape="rect" id="Node000009" href="$da/d0d/longest__common__string_8cpp.html#acb03dbbcee6d607db471021168be8541" title="reverses a given string" alt="" coords="473,200,559,226"/>

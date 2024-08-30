@@ -1,9 +1,7 @@
 <map id="deleteNode" name="deleteNode">
-<area shape="rect" id="Node000001" title="removes a given element from AVL tree" alt="" coords="5,43,93,68"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="23,44,18,34,21,25,32,18,49,16,67,19,77,25,74,30,65,24,49,21,34,23,25,28,24,34,28,41"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/data.html#" title=" " alt="" coords="141,5,257,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,42,129,33,130,38,94,47"/>
-<area shape="rect" id="Node000003" href="$d8/dee/avltree_8cpp.html#a5fa160a678a34dd51c0aea1c0c00ed5e" title=" " alt="" coords="162,79,236,104"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="94,63,147,76,146,82,93,69"/>
-<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="173,80,168,70,171,61,182,54,199,52,217,55,227,61,224,66,215,60,199,57,183,59,175,64,173,70,178,77"/>
+<area shape="rect" id="Node000001" title="removes a given element from AVL tree" alt="" coords="5,29,93,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="26,30,22,21,25,11,34,5,49,3,65,5,74,12,70,16,63,10,49,8,36,10,29,14,28,20,31,28"/>
+<area shape="rect" id="Node000002" href="$d8/dee/avltree_8cpp.html#a5fa160a678a34dd51c0aea1c0c00ed5e" title=" " alt="" coords="141,29,215,55"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="93,40,125,40,125,45,93,45"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="155,30,151,21,154,11,163,5,178,3,194,5,202,12,199,16,192,10,178,8,165,10,158,14,156,20,160,28"/>
 </map>

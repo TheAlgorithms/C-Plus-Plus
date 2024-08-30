@@ -1,6 +1,6 @@
 <map id="test_longest_common_string_length_for_reversed_inputs" name="test_longest_common_string_length_for_reversed_inputs">
 <area shape="rect" id="Node000001" title="checks if the function longest_common_string_length returns the same result when its inputs are rever..." alt="" coords="5,68,187,123"/>
-<area shape="rect" id="Node000002" href="$da/d0d/longest__common__string_8cpp.html#aa38b6b17bc5d46ed88acdd8414e18fa5" title="for std::vector" alt="" coords="235,46,394,87"/>
+<area shape="rect" id="Node000002" href="$da/d0d/longest__common__string_8cpp.html#aa38b6b17bc5d46ed88acdd8414e18fa5" title="computes the length of the longest common string created from input strings" alt="" coords="235,46,394,86"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,81,219,76,219,82,187,86"/>
 <area shape="rect" id="Node000005" href="$da/d0d/longest__common__string_8cpp.html#acb03dbbcee6d607db471021168be8541" title="reverses a given string" alt="" coords="271,111,358,136"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="187,104,257,113,256,119,187,110"/>

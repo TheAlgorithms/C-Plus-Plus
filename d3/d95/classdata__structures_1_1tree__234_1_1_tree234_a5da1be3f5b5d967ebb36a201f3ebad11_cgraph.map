@@ -18,7 +18,7 @@
 <area shape="poly" id="edge18_Node000002_Node000018" title=" " alt="" coords="341,625,364,655,396,690,436,724,481,750,544,768,611,776,676,777,735,772,736,778,676,782,610,782,543,773,479,755,433,729,392,694,360,658,336,628"/>
 <area shape="rect" id="Node000019" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac5361479dd996eb331759f33808657d9" title="A handy function to try if we can do a left rotate to the target node." alt="" coords="489,585,681,626"/>
 <area shape="poly" id="edge19_Node000002_Node000019" title=" " alt="" coords="432,603,473,603,473,608,432,608"/>
-<area shape="rect" id="Node000020" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#aec0642d1d151521ca7c70ea85cdb15d3" title="A handy function to try if we can do a right rotate to the target node." alt="" coords="485,700,686,741"/>
+<area shape="rect" id="Node000020" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#aec0642d1d151521ca7c70ea85cdb15d3" title="A handy function to try if we can do a right rotate to the target node." alt="" coords="484,700,686,741"/>
 <area shape="poly" id="edge22_Node000002_Node000020" title=" " alt="" coords="366,624,481,679,512,692,510,697,479,684,363,629"/>
 <area shape="rect" id="Node000004" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a2753b6053b8c86c5bd987a44fdfa0a57" title="Get max item (rightmost) in the current node." alt="" coords="758,5,926,46"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="667,67,744,48,745,53,669,73"/>

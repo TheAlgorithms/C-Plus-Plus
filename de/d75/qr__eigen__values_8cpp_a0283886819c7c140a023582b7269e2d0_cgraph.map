@@ -1,6 +1,6 @@
 <map id="test2" name="test2">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,59,56,84"/>
-<area shape="rect" id="Node000002" href="$d2/d3b/namespaceqr__algorithm.html#a28e2fa3e803abaea6c568dc45d69d8cc" title=" " alt="" coords="104,22,235,63"/>
+<area shape="rect" id="Node000002" href="$d2/d3b/namespaceqr__algorithm.html#a28e2fa3e803abaea6c568dc45d69d8cc" title=" " alt="" coords="104,22,235,62"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="56,64,88,57,89,62,57,69"/>
 <area shape="rect" id="Node000009" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="134,87,205,112"/>
 <area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="57,74,119,87,118,92,56,79"/>

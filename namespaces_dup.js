@@ -39,6 +39,7 @@ var namespaces_dup =
     [ "false_position", "df/dea/namespacefalse__position.html", null ],
     [ "fibonacci_sum", "d3/dc9/namespacefibonacci__sum.html", null ],
     [ "find_non_repeating_integer", "d2/da7/namespacefind__non__repeating__integer.html", null ],
+    [ "games", "da/d9c/namespacegames.html", "da/d9c/namespacegames" ],
     [ "geometric_dist", "dd/d8a/namespacegeometric__dist.html", null ],
     [ "geometry", "d5/d5f/namespacegeometry.html", null ],
     [ "gram_schmidt", "d4/d0f/namespacegram__schmidt.html", null ],
@@ -165,7 +166,7 @@ var namespaces_dup =
       [ "rabin_karp", "d9/d03/namespacestring__search.html#a21c673d56cbf67b1d2ee4d869185b7d9", null ],
       [ "recalculate_hash", "d9/d03/namespacestring__search.html#aed769d565b705a9b3e0eb1ec74088893", null ]
     ] ],
-    [ "strings", "df/dcb/namespacestrings.html", null ],
+    [ "strings", "df/dcb/namespacestrings.html", "df/dcb/namespacestrings" ],
     [ "subarray_sum", "df/d74/namespacesubarray__sum.html", null ],
     [ "sublist_search", "d9/def/namespacesublist__search.html", null ],
     [ "subset_sum", "dc/d3a/namespacesubset__sum.html", null ],

@@ -23,6 +23,10 @@
  @licend  The above is the entire license notice for the JavaScript code in this file
  */
 
+function toggleVisibility(linkObj) {
+  return dynsection.toggleVisibility(linkObj);
+}
+
 let dynsection = {
 
   // helper function

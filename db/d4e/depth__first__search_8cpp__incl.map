@@ -1,9 +1,9 @@
 <map id="graph/depth_first_search.cpp" name="graph/depth_first_search.cpp">
-<area shape="rect" id="Node000001" title="Depth First Search Algorithm (Depth First Search)" alt="" coords="45,5,235,31"/>
+<area shape="rect" id="Node000001" title="Depth First Search Algorithm (Depth First Search)" alt="" coords="45,5,234,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,79,80,105"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,34,72,72,69,68,122,29"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="104,79,176,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="143,31,143,63,137,63,137,31"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="199,79,257,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,31,142,63,137,63,137,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="199,79,256,105"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="156,29,203,67,200,71,153,34"/>
 </map>

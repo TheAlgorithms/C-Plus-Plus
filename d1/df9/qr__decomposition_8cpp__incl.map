@@ -1,12 +1,12 @@
 <map id="numerical_methods/qr_decomposition.cpp" name="numerical_methods/qr_decomposition.cpp">
-<area shape="rect" id="Node000001" title="Program to compute the QR decomposition of a given matrix." alt="" coords="95,5,244,46"/>
+<area shape="rect" id="Node000001" title="Program to compute the QR decomposition of a given matrix." alt="" coords="94,5,244,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,56,120"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,49,66,88,63,84,133,44"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="21,168,78,193"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="20,168,78,193"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,48,70,157,66,154,152,45"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="102,168,162,193"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="167,47,141,153,136,152,162,46"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="381,94,435,120"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="381,94,434,120"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="230,44,367,89,365,94,228,49"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="186,168,257,193"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="178,45,215,152,210,154,173,47"/>

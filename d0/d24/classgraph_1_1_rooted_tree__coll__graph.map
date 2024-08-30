@@ -1,6 +1,6 @@
 <map id="graph::RootedTree" name="graph::RootedTree">
 <area shape="rect" id="Node000001" title=" " alt="" coords="173,316,302,342"/>
-<area shape="rect" id="Node000002" href="$dc/d61/classgraph_1_1_graph.html" title=" " alt="" coords="99,213,227,238"/>
+<area shape="rect" id="Node000002" href="$dc/d61/classgraph_1_1_graph.html" title=" " alt="" coords="98,213,227,238"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,249,231,314,226,317,178,252"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/map.html" title=" " alt="" coords="5,109,147,150"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,159,154,211,150,214,102,163"/>

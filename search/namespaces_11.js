@@ -22,9 +22,10 @@ var searchData=
   ['strassens_5fmultiplication_19',['strassens_multiplication',['../d3/d91/namespacestrassens__multiplication.html',1,'']]],
   ['string_5fsearch_20',['string_search',['../d9/d03/namespacestring__search.html',1,'']]],
   ['strings_21',['strings',['../df/dcb/namespacestrings.html',1,'']]],
-  ['subarray_5fsum_22',['subarray_sum',['../df/d74/namespacesubarray__sum.html',1,'']]],
-  ['sublist_5fsearch_23',['sublist_search',['../d9/def/namespacesublist__search.html',1,'']]],
-  ['subset_5fsum_24',['subset_sum',['../dc/d3a/namespacesubset__sum.html',1,'']]],
-  ['subsets_25',['Subsets',['../de/d95/namespace_subsets.html',1,'']]],
-  ['sudoku_5fsolver_26',['sudoku_solver',['../d8/d9f/namespacesudoku__solver.html',1,'']]]
+  ['strings_3a_3aboyer_5fmoore_22',['boyer_moore',['../d0/dbc/namespacestrings_1_1boyer__moore.html',1,'strings']]],
+  ['subarray_5fsum_23',['subarray_sum',['../df/d74/namespacesubarray__sum.html',1,'']]],
+  ['sublist_5fsearch_24',['sublist_search',['../d9/def/namespacesublist__search.html',1,'']]],
+  ['subset_5fsum_25',['subset_sum',['../dc/d3a/namespacesubset__sum.html',1,'']]],
+  ['subsets_26',['Subsets',['../de/d95/namespace_subsets.html',1,'']]],
+  ['sudoku_5fsolver_27',['sudoku_solver',['../d8/d9f/namespacesudoku__solver.html',1,'']]]
 ];

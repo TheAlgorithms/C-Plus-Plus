@@ -1,5 +1,5 @@
 <map id="graph/breadth_first_search.cpp" name="graph/breadth_first_search.cpp">
-<area shape="rect" id="Node000001" title="Breadth First Search Algorithm (Breadth First Search)" alt="" coords="275,5,405,46"/>
+<area shape="rect" id="Node000001" title="Breadth First Search Algorithm (Breadth First Search)" alt="" coords="275,5,404,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,80,120"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,47,95,94,94,89,274,42"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="104,94,168,120"/>
@@ -12,8 +12,8 @@
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="351,45,365,78,360,81,346,47"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="421,94,477,120"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="368,44,422,82,419,87,365,49"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="501,94,555,120"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="501,94,554,120"/>
 <area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="388,44,488,86,486,91,386,49"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="579,94,637,120"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="579,94,636,120"/>
 <area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="406,44,565,90,564,95,404,49"/>
 </map>

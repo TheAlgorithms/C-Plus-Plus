@@ -5,8 +5,6 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,86,230,79,231,84,199,91"/>
 <area shape="rect" id="Node000003" href="$d4/d32/inorder__successor__of__bst_8cpp.html#a824cbf1814854824cf05f062eea07b95" title="Searches the given data in BST and returns the pointer to the node containing that data." alt="" coords="246,133,438,189"/>
 <area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="199,127,231,134,230,140,198,133"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="302,29,302,19,310,10,323,5,342,3,363,5,376,12,374,17,362,10,342,8,324,10,313,15,307,21,307,29"/>
-<area shape="poly" id="edge6_Node000003_Node000003" title=" " alt="" coords="302,133,302,123,310,114,323,109,342,107,363,109,376,116,374,121,362,114,342,112,324,114,313,119,307,125,307,133"/>
-<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/data.html#" title=" " alt="" coords="486,148,602,174"/>
-<area shape="poly" id="edge5_Node000003_Node000004" title=" " alt="" coords="438,159,470,159,470,164,438,164"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="295,29,295,19,304,10,319,5,342,3,367,5,382,12,380,17,366,10,342,8,321,10,307,15,300,21,300,29"/>
+<area shape="poly" id="edge5_Node000003_Node000003" title=" " alt="" coords="295,133,295,123,304,114,319,109,342,107,367,109,382,116,380,121,366,114,342,112,321,114,307,119,300,125,300,133"/>
 </map>

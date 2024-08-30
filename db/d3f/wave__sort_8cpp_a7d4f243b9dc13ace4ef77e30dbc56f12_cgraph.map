@@ -1,5 +1,5 @@
 <map id="sorting::wave_sort::waveSort" name="sorting::wave_sort::waveSort">
-<area shape="rect" id="Node000001" title="The main function implements that implements the Wave Sort algorithm." alt="" coords="5,73,134,113"/>
+<area shape="rect" id="Node000001" title="The main function implements that implements the Wave Sort algorithm." alt="" coords="5,72,134,113"/>
 <area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="36,72,35,63,40,54,52,48,70,46,89,48,100,55,97,59,87,53,69,51,53,53,44,58,40,64,41,71"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " alt="" coords="182,5,304,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,69,181,40,192,35,194,40,183,45,116,74"/>

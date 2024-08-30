@@ -8,7 +8,7 @@
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="181,47,155,153,149,152,176,46"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="395,94,448,120"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="243,44,380,89,379,94,242,49"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="199,168,271,193"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="199,168,270,193"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="192,45,228,152,223,154,187,47"/>
 <area shape="rect" id="Node000007" href="$d4/d68/qr__decompose_8h.html" title="Library functions to compute QR decomposition of a given matrix." alt="" coords="246,94,371,120"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="215,44,277,83,275,88,212,49"/>
@@ -19,8 +19,8 @@
 <area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="356,118,540,164,538,170,355,123"/>
 <area shape="rect" id="Node000009" title=" " alt="" coords="294,168,346,193"/>
 <area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="313,119,318,152,313,153,308,120"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="371,168,438,193"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="370,168,438,193"/>
 <area shape="poly" id="edge12_Node000007_Node000010" title=" " alt="" coords="326,118,378,156,375,161,323,122"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="463,168,530,193"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="462,168,530,193"/>
 <area shape="poly" id="edge13_Node000007_Node000011" title=" " alt="" coords="341,118,451,159,449,164,339,123"/>
 </map>

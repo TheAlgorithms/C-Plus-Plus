@@ -1,8 +1,8 @@
 <map id="data_structures/node.hpp" name="data_structures/node.hpp">
-<area shape="rect" id="Node000001" title="Provides Node class and related utilities." alt="" coords="50,5,219,31"/>
+<area shape="rect" id="Node000001" title="Provides Node class and related utilities." alt="" coords="50,5,218,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,79,77,105"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,34,70,72,67,67,117,29"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="100,79,169,105"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="100,79,168,105"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="137,31,137,63,132,63,132,31"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="192,79,250,105"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="151,29,197,67,193,71,147,34"/>

@@ -5,7 +5,7 @@
 <area shape="rect" id="Node000003" href="$d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#af64848d6630c39d0f09ce2359cc7c4f8" title="Utility function to assign heavy child to each node (&#45;1 for a leaf node)" alt="" coords="199,109,344,165"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,210,203,170,206,175,133,215"/>
 <area shape="rect" id="Node000004" href="$d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a0579062b384e54b611b80c6337c7f2c8" title="Utility function to lable the nodes so that heavy chains have a contigous lable." alt="" coords="199,213,344,269"/>
-<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="151,239,183,239,183,244,151,244"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="151,238,183,238,183,244,151,244"/>
 <area shape="rect" id="Node000005" href="$d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a2dfbda148aad0bfaba2ebfda9ebc915a" title="Utility function to assign highest parent that can be reached though heavy chains." alt="" coords="199,317,344,373"/>
 <area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="133,267,206,307,203,312,130,272"/>
 <area shape="rect" id="Node000006" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ad22d760a5a33545a70e7ea5e1786c8dc" title="This function must be called after the tree adjacency list and node values are populated The function..." alt="" coords="199,397,344,453"/>

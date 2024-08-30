@@ -1,5 +1,5 @@
 <map id="graph::dijkstra" name="graph::dijkstra">
-<area shape="rect" id="Node000001" title="Function runs the dijkstra algorithm for some source vertex and target vertex in the graph and return..." alt="" coords="5,149,109,175"/>
+<area shape="rect" id="Node000001" title="Function runs the dijkstra algorithm for some source vertex and target vertex in the graph and return..." alt="" coords="5,149,109,174"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/priority_queue/empty.html#" title=" " alt="" coords="171,5,300,46"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,147,102,103,127,78,155,56,162,51,164,56,158,60,131,82,106,107,70,150"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair/make_pair.html#" title=" " alt="" coords="182,70,289,96"/>
@@ -10,6 +10,6 @@
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="110,167,156,175,155,180,109,172"/>
 <area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="178,234,293,260"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="79,173,115,196,158,219,174,226,172,231,156,224,112,201,76,177"/>
-<area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/priority_queue/top.html#" title=" " alt="" coords="158,284,313,309"/>
+<area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/priority_queue/top.html#" title=" " alt="" coords="158,284,312,309"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="69,173,104,221,129,247,158,270,166,274,163,279,155,275,126,251,100,224,64,177"/>
 </map>

@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title="Implementation of Spirograph" alt="" coords="232,5,392,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,79,56,105"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="258,34,71,81,70,75,256,29"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="79,79,137,105"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="79,79,136,105"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="278,34,152,78,150,73,276,29"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="161,79,220,105"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="293,34,226,73,223,68,290,29"/>

@@ -4,7 +4,7 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,59,265,29,267,34,149,65"/>
 <area shape="rect" id="Node000003" href="$d9/dde/classbinary__search__tree.html#a5764c1cf848f84a5b77462036a6d8c13" title="Get all values of the BST in pre&#45;order order." alt="" coords="236,55,397,96"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="188,73,220,73,220,78,188,78"/>
-<area shape="rect" id="Node000005" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="251,145,382,185"/>
+<area shape="rect" id="Node000005" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="251,144,382,185"/>
 <area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="131,86,251,136,249,141,129,91"/>
 <area shape="rect" id="Node000004" href="$d9/dde/classbinary__search__tree.html#ab81edd415324d372632c42dc7dbcb9e1" title="Recursive function to traverse the tree in pre&#45;order order." alt="" coords="445,55,576,96"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="397,73,429,73,429,78,397,78"/>

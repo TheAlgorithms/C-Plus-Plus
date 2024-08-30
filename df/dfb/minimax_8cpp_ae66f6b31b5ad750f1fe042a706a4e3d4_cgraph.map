@@ -1,6 +1,6 @@
 <map id="main" name="main">
 <area shape="rect" id="Node000001" title="Main function." alt="" coords="5,93,55,119"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="143,5,215,31"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="143,5,214,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="44,91,70,70,101,48,128,34,130,39,104,52,73,74,48,95"/>
 <area shape="rect" id="Node000003" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="309,68,365,94"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="55,99,102,92,205,83,293,79,293,85,205,88,103,97,55,104"/>

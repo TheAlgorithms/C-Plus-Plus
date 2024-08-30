@@ -1,6 +1,6 @@
 <map id="data_structures::BloomFilter&lt; T &gt;" name="data_structures::BloomFilter&lt; T &gt;">
-<area shape="rect" id="Node000001" title="Bloom filter template class." alt="" coords="135,286,353,312"/>
-<area shape="rect" id="Node000002" href="$d9/dae/classdata__structures_1_1_bitset.html" title="Simple bitset implementation for bloom filter." alt="" coords="75,190,229,216"/>
+<area shape="rect" id="Node000001" title="Bloom filter template class." alt="" coords="135,286,352,312"/>
+<area shape="rect" id="Node000002" href="$d9/dae/classdata__structures_1_1_bitset.html" title="Simple bitset implementation for bloom filter." alt="" coords="75,190,228,216"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,225,234,284,230,288,172,229"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="110,94,279,120"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="185,135,160,191,155,189,180,133"/>
@@ -10,5 +10,5 @@
 <area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="252,183,420,223"/>
 <area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="308,236,257,288,253,284,304,233"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="317,94,355,120"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="339,135,339,182,333,182,333,135"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="338,135,338,182,333,182,333,135"/>
 </map>

@@ -1,16 +1,16 @@
 <map id="data_structures::tree_234::Tree234::Insert" name="data_structures::tree_234::Tree234::Insert">
 <area shape="rect" id="Node000001" title="A helper function used by post&#45;merge insert." alt="" coords="5,143,151,183"/>
 <area shape="rect" id="Node000002" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a22fd25c6c811c64b6b27b0850d8c532f" title="Check if item is in the node." alt="" coords="1182,5,1330,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,140,140,101,168,82,198,66,288,34,363,22,439,21,536,23,793,23,1166,23,1166,28,793,28,536,28,439,27,363,28,290,40,200,71,171,86,143,105,100,144"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,140,140,100,167,81,198,65,288,33,363,22,439,21,536,23,793,23,1166,23,1166,28,793,28,536,28,439,27,363,27,290,38,200,69,170,85,143,105,100,144"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/unique_ptr/get.html#" title=" " alt="" coords="725,64,859,89"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="109,140,150,117,198,99,266,84,337,73,477,62,606,61,710,66,710,72,606,67,478,67,337,78,267,89,199,104,153,122,112,144"/>
-<area shape="rect" id="Node000004" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a91322b3bb0b2b2175eb56e9e10d7db46" title="Get next node which is possibly contains item." alt="" coords="199,229,394,284"/>
+<area shape="rect" id="Node000004" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a91322b3bb0b2b2175eb56e9e10d7db46" title="Get next node which is possibly contains item." alt="" coords="199,228,394,284"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="129,181,217,219,214,224,127,186"/>
 <area shape="rect" id="Node000005" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a6749ebb40710c9752a2771eda03c6b3e" title="Insert item to tree." alt="" coords="224,113,369,154"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="151,151,208,143,209,148,152,156"/>
 <area shape="rect" id="Node000013" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a11f0d016dff7f7e62b3dddb9fdf47805" title="A helper function used during post&#45;merge insert." alt="" coords="448,207,627,247"/>
 <area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="152,170,433,210,432,215,151,176"/>
-<area shape="rect" id="Node000016" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/unique_ptr/reset.html#" title=" " alt="" coords="224,309,369,335"/>
+<area shape="rect" id="Node000016" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/unique_ptr/reset.html#" title=" " alt="" coords="224,309,368,334"/>
 <area shape="poly" id="edge21_Node000001_Node000016" title=" " alt="" coords="94,182,137,238,166,269,200,294,212,300,209,305,197,299,163,273,133,242,90,185"/>
 <area shape="rect" id="Node000006" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a07811b3c564a3a443b106c9aa717629d" title="A insert implementation of pre&#45;split." alt="" coords="442,113,633,154"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="369,131,426,131,426,136,369,136"/>

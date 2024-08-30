@@ -1,6 +1,6 @@
 <map id="machine_learning::kohonen_som_tracer" name="machine_learning::kohonen_som_tracer">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,146,185,187"/>
-<area shape="rect" id="Node000002" href="$d8/d77/namespacemachine__learning.html#ae868ad43698a1d69ba46ea3827d7d2c3" title=" " alt="" coords="233,146,402,187"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,146,185,186"/>
+<area shape="rect" id="Node000002" href="$d8/d77/namespacemachine__learning.html#ae868ad43698a1d69ba46ea3827d7d2c3" title=" " alt="" coords="233,146,402,186"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,164,217,164,217,169,185,169"/>
 <area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/exp.html#" title=" " alt="" coords="494,29,562,55"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="339,143,387,103,449,64,478,52,480,57,451,69,391,108,342,148"/>

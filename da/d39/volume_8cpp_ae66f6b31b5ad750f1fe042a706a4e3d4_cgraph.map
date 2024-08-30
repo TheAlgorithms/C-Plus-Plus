@@ -2,13 +2,13 @@
 <area shape="rect" id="Node000001" title="Main function." alt="" coords="5,195,55,220"/>
 <area shape="rect" id="Node000002" href="$da/d39/volume_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,195,146,220"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,205,87,205,87,210,55,210"/>
-<area shape="rect" id="Node000003" href="$dd/d47/namespacemath.html#a3fe35440c27758ecc2287e08217d63a7" title="The volume of a cone" alt="" coords="211,169,346,195"/>
+<area shape="rect" id="Node000003" href="$dd/d47/namespacemath.html#a3fe35440c27758ecc2287e08217d63a7" title="The volume of a cone" alt="" coords="210,169,346,195"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,201,195,193,196,198,146,207"/>
-<area shape="rect" id="Node000007" href="$dd/d47/namespacemath.html#ae413098478fa38acaac887b7654f0725" title="The volume of a cube" alt="" coords="211,268,346,294"/>
+<area shape="rect" id="Node000007" href="$dd/d47/namespacemath.html#ae413098478fa38acaac887b7654f0725" title="The volume of a cube" alt="" coords="210,268,346,294"/>
 <area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="143,219,167,237,195,254,207,260,205,265,193,259,164,242,139,223"/>
 <area shape="rect" id="Node000008" href="$dd/d47/namespacemath.html#abde24398be43538c62e4a496968e60ca" title="The volume of a cylinder" alt="" coords="202,219,354,244"/>
 <area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="146,208,187,215,186,220,146,213"/>
-<area shape="rect" id="Node000009" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="243,367,314,392"/>
+<area shape="rect" id="Node000009" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="242,367,314,392"/>
 <area shape="poly" id="edge12_Node000002_Node000009" title=" " alt="" coords="131,220,137,248,150,284,169,322,196,353,211,363,228,370,226,375,208,368,192,358,164,325,145,286,132,250,125,221"/>
 <area shape="rect" id="Node000010" href="$dd/d47/namespacemath.html#a94db02b3c9e55a69ac1696f30e2f761c" title="The volume of a pyramid" alt="" coords="202,5,355,31"/>
 <area shape="poly" id="edge13_Node000002_Node000010" title=" " alt="" coords="125,194,130,162,142,121,162,78,192,40,195,37,199,42,196,44,167,81,147,123,136,164,130,195"/>
@@ -16,7 +16,7 @@
 <area shape="poly" id="edge15_Node000002_Node000011" title=" " alt="" coords="127,193,150,144,168,115,192,91,200,86,203,90,196,95,173,119,154,146,132,195"/>
 <area shape="rect" id="Node000012" href="$dd/d47/namespacemath.html#a34d66a77c19ce9b8b3a3d14352b34551" title="The volume of a sphere" alt="" coords="205,317,351,343"/>
 <area shape="poly" id="edge17_Node000002_Node000012" title=" " alt="" coords="134,220,157,262,174,285,196,304,201,308,198,312,192,308,170,288,152,265,129,222"/>
-<area shape="rect" id="Node000013" href="$dd/d47/namespacemath.html#a2d704a7b72a6b2db8b76c8581b577b2c" title="The volume of a triangular prism." alt="" coords="209,105,348,145"/>
+<area shape="rect" id="Node000013" href="$dd/d47/namespacemath.html#a2d704a7b72a6b2db8b76c8581b577b2c" title="The volume of a triangular prism." alt="" coords="208,104,348,145"/>
 <area shape="poly" id="edge19_Node000002_Node000013" title=" " alt="" coords="140,192,193,155,202,150,205,154,195,159,143,196"/>
 <area shape="rect" id="Node000004" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="418,112,474,138"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="325,166,361,154,402,139,404,144,363,159,327,171"/>

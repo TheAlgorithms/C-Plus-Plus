@@ -1,5 +1,5 @@
 <map id="dynamic_programming::shortest_common_supersequence::scs" name="dynamic_programming::shortest_common_supersequence::scs">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,122,263,163"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,122,263,162"/>
 <area shape="poly" id="edge7_Node000001_Node000001" title=" " alt="" coords="87,122,84,112,92,103,109,97,134,95,161,98,177,104,175,109,160,103,134,100,110,102,95,107,90,113,92,120"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/begin.html#" title=" " alt="" coords="327,5,445,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,119,231,80,310,40,323,34,325,39,312,45,234,85,169,124"/>

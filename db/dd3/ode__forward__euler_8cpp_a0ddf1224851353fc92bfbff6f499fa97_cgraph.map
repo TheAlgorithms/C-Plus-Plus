@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,128,55,154"/>
 <area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/byte/atof.html#" title=" " alt="" coords="138,79,208,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,130,102,113,123,106,124,111,104,118,56,135"/>
-<area shape="rect" id="Node000003" href="$d6/d60/group__ode.html#gae0509f8843e2bc42de2abbd00a14b7b9" title="Compute approximation using the forward&#45;Euler method in the given limits." alt="" coords="123,177,223,203"/>
+<area shape="rect" id="Node000003" href="$d6/d60/group__ode.html#gae0509f8843e2bc42de2abbd00a14b7b9" title="Compute approximation using the forward&#45;Euler method in the given limits." alt="" coords="123,177,222,203"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,147,104,164,120,169,118,174,102,169,54,152"/>
 <area shape="rect" id="Node000011" href="$db/dd3/ode__forward__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f" title=" " alt="" coords="103,128,243,154"/>
 <area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="55,138,87,138,87,144,55,144"/>
@@ -16,7 +16,7 @@
 <area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="222,175,298,155,299,161,224,180"/>
 <area shape="rect" id="Node000009" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/open.html#" title=" " alt="" coords="300,276,434,302"/>
 <area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="193,201,237,231,292,262,304,268,302,273,290,267,234,236,190,206"/>
-<area shape="rect" id="Node000010" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/c/perror.html#" title=" " alt="" coords="327,177,407,203"/>
+<area shape="rect" id="Node000010" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/c/perror.html#" title=" " alt="" coords="326,177,407,203"/>
 <area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="223,188,311,188,311,193,223,193"/>
 <area shape="rect" id="Node000007" href="$db/dd3/ode__forward__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe" title="Problem statement for a system with first&#45;order differential equations. Updates the system differenti..." alt="" coords="491,325,558,351"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="433,336,475,336,475,341,433,341"/>

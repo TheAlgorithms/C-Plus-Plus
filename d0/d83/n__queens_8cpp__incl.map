@@ -2,6 +2,6 @@
 <area shape="rect" id="Node000001" title="Eight Queens puzzle" alt="" coords="5,5,186,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="28,79,78,105"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,33,70,67,66,64,86,30"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="103,79,174,105"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="102,79,174,105"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="105,30,125,64,121,67,100,33"/>
 </map>

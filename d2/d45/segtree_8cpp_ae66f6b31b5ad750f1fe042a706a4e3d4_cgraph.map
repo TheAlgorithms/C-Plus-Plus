@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title="Main function." alt="" coords="5,104,55,130"/>
 <area shape="rect" id="Node000002" href="$d2/d45/segtree_8cpp.html#ae752659b7c1719d68fdb2ca538a93696" title="for std::vector" alt="" coords="194,29,272,55"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="44,101,70,82,102,64,140,51,178,44,179,49,141,57,104,69,73,86,48,106"/>
-<area shape="rect" id="Node000003" href="$d2/d45/segtree_8cpp.html#a423a97ea0c7ea6e33b5844a6858d902d" title="Returns the sum of all elements in a range." alt="" coords="207,103,260,128"/>
+<area shape="rect" id="Node000003" href="$d2/d45/segtree_8cpp.html#a423a97ea0c7ea6e33b5844a6858d902d" title="Returns the sum of all elements in a range." alt="" coords="206,103,260,128"/>
 <area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="55,114,146,114,191,114,191,119,146,119,55,120"/>
 <area shape="rect" id="Node000004" href="$d2/d45/segtree_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementation." alt="" coords="103,79,146,104"/>
 <area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="54,108,87,99,88,104,56,113"/>

@@ -2,13 +2,13 @@
 <area shape="rect" id="Node000001" title="An implementation of a median calculation of a sliding window along a data stream." alt="" coords="166,5,309,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,70,120"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,49,83,90,81,85,187,44"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="93,94,153,120"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="93,94,152,120"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="211,49,154,87,151,83,208,44"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="176,94,230,120"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="231,47,217,81,212,78,226,45"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="253,94,291,120"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="249,45,263,78,258,81,244,47"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="315,94,355,120"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="315,94,354,120"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="263,44,310,82,306,86,260,48"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="378,94,436,120"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="281,44,368,85,366,90,279,49"/>

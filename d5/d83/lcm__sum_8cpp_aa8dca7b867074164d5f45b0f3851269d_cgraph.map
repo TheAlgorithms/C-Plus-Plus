@@ -4,11 +4,11 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="36,250,61,220,95,188,100,185,103,189,98,192,65,224,40,254"/>
 <area shape="rect" id="Node000003" href="$dd/d47/namespacemath.html#a04065193d190d605e1f0d0d93a87e244" title=" " alt="" coords="97,203,203,228"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="48,254,101,232,103,237,50,259"/>
-<area shape="rect" id="Node000004" href="$d2/de9/heavy__light__decomposition_8cpp.html#a34b8683a2b429de5cce57e6d733ec817" title=" " alt="" coords="121,399,179,424"/>
+<area shape="rect" id="Node000004" href="$d2/de9/heavy__light__decomposition_8cpp.html#a34b8683a2b429de5cce57e6d733ec817" title=" " alt="" coords="121,399,178,424"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="41,276,130,385,126,389,37,280"/>
-<area shape="rect" id="Node000024" href="$d2/de9/heavy__light__decomposition_8cpp.html#a458410412185a5f09199deaff7157a8d" title=" " alt="" coords="121,252,179,278"/>
+<area shape="rect" id="Node000024" href="$d2/de9/heavy__light__decomposition_8cpp.html#a458410412185a5f09199deaff7157a8d" title=" " alt="" coords="121,252,178,278"/>
 <area shape="poly" id="edge31_Node000001_Node000024" title=" " alt="" coords="49,262,105,262,105,268,49,268"/>
-<area shape="rect" id="Node000025" href="$d2/de9/heavy__light__decomposition_8cpp.html#af31ec5409537703d9c8a47350386b32a" title=" " alt="" coords="121,301,179,327"/>
+<area shape="rect" id="Node000025" href="$d2/de9/heavy__light__decomposition_8cpp.html#af31ec5409537703d9c8a47350386b32a" title=" " alt="" coords="121,301,178,327"/>
 <area shape="poly" id="edge39_Node000001_Node000025" title=" " alt="" coords="50,271,108,295,105,300,48,276"/>
 <area shape="rect" id="Node000005" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#a79ab4601c4a95c0902ac04e779e5f54d" title="Adds an undirected edge from node u to node v in the tree." alt="" coords="251,352,396,407"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="179,404,235,393,236,398,180,409"/>
@@ -49,7 +49,7 @@
 <area shape="rect" id="Node000018" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ae2b407e64aaf9878fbee7ee6efe9c7d4" title="The function returns the least common ancestor of two nodes." alt="" coords="449,364,594,419"/>
 <area shape="poly" id="edge24_Node000015_Node000018" title=" " alt="" coords="367,480,395,461,443,429,450,425,453,430,446,434,398,466,370,484"/>
 <area shape="poly" id="edge22_Node000016_Node000008" title=" " alt="" coords="580,498,600,509,665,550,662,554,597,514,577,502"/>
-<area shape="rect" id="Node000017" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="680,459,759,484"/>
+<area shape="rect" id="Node000017" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="680,459,758,484"/>
 <area shape="poly" id="edge23_Node000016_Node000017" title=" " alt="" coords="594,469,665,469,665,474,594,474"/>
 <area shape="rect" id="Node000019" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ac7761255f2ba06b398b9aae5e4dce5f3" title="The function lifts a node, k units up the tree. The lifting is done in place, and the result is store..." alt="" coords="647,364,792,419"/>
 <area shape="poly" id="edge25_Node000018_Node000019" title=" " alt="" coords="594,389,631,389,631,394,594,394"/>

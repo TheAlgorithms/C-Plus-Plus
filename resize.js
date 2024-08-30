@@ -23,7 +23,7 @@
  @licend  The above is the entire license notice for the JavaScript code in this file
  */
 
-function initResizable() {
+function initResizable(treeview) {
   let sidenav,navtree,content,header,footer,barWidth=6;
   const RESIZE_COOKIE_NAME = ''+'width';
 
@@ -44,23 +44,31 @@ function initResizable() {
     sidenav.css({width:navWidth + "px"});
   }
 
-  function resizeHeight() {
+  function resizeHeight(treeview) {
     const headerHeight = header.outerHeight();
-    const footerHeight = footer.outerHeight();
     const windowHeight = $(window).height();
-    let contentHeight,navtreeHeight,sideNavHeight;
-    if (typeof page_layout==='undefined' || page_layout==0) { /* DISABLE_INDEX=NO */
-      contentHeight = windowHeight - headerHeight - footerHeight;
-      navtreeHeight = contentHeight;
-      sideNavHeight = contentHeight;
-    } else if (page_layout==1) { /* DISABLE_INDEX=YES */
-      contentHeight = windowHeight - footerHeight;
-      navtreeHeight = windowHeight - headerHeight;
-      sideNavHeight = windowHeight;
+    let contentHeight;
+    if (treeview)
+    {
+      const footerHeight = footer.outerHeight();
+      let navtreeHeight,sideNavHeight;
+      if (typeof page_layout==='undefined' || page_layout==0) { /* DISABLE_INDEX=NO */
+        contentHeight = windowHeight - headerHeight - footerHeight;
+        navtreeHeight = contentHeight;
+        sideNavHeight = contentHeight;
+      } else if (page_layout==1) { /* DISABLE_INDEX=YES */
+        contentHeight = windowHeight - footerHeight;
+        navtreeHeight = windowHeight - headerHeight;
+        sideNavHeight = windowHeight;
+      }
+      navtree.css({height:navtreeHeight + "px"});
+      sidenav.css({height:sideNavHeight + "px"});
+    }
+    else
+    {
+      contentHeight = windowHeight - headerHeight;
     }
     content.css({height:contentHeight + "px"});
-    navtree.css({height:navtreeHeight + "px"});
-    sidenav.css({height:sideNavHeight + "px"});
     if (location.hash.slice(1)) {
       (document.getElementById(location.hash.slice(1))||document.body).scrollIntoView();
     }
@@ -80,30 +88,60 @@ function initResizable() {
   }
 
   header  = $("#top");
-  sidenav = $("#side-nav");
   content = $("#doc-content");
-  navtree = $("#nav-tree");
   footer  = $("#nav-path");
-  $(".side-nav-resizable").resizable({resize: () => resizeWidth() });
-  $(sidenav).resizable({ minWidth: 0 });
-  $(window).resize(() => resizeHeight());
-  const device = navigator.userAgent.toLowerCase();
-  const touch_device = device.match(/(iphone|ipod|ipad|android)/);
-  if (touch_device) { /* wider split bar for touch only devices */
-    $(sidenav).css({ paddingRight:'20px' });
-    $('.ui-resizable-e').css({ width:'20px' });
-    $('#nav-sync').css({ right:'34px' });
-    barWidth=20;
+  sidenav = $("#side-nav");
+  if (!treeview) {
+//    title   = $("#titlearea");
+//    titleH  = $(title).height();
+//    let animating = false;
+//    content.on("scroll", function() {
+//      slideOpts = { duration: 200,
+//                    step: function() {
+//                        contentHeight = $(window).height() - header.outerHeight();
+//                        content.css({ height : contentHeight + "px" });
+//                      },
+//                    done: function() { animating=false; }
+//                  };
+//      if (content.scrollTop()>titleH && title.css('display')!='none' && !animating) {
+//        title.slideUp(slideOpts);
+//        animating=true;
+//      } else if (content.scrollTop()<=titleH && title.css('display')=='none' && !animating) {
+//        title.slideDown(slideOpts);
+//        animating=true;
+//      }
+//    });
+  } else {
+    navtree = $("#nav-tree");
+    $(".side-nav-resizable").resizable({resize: function(e, ui) { resizeWidth(); } });
+    $(sidenav).resizable({ minWidth: 0 });
   }
-  const width = Cookie.readSetting(RESIZE_COOKIE_NAME,250);
-  if (width) { restoreWidth(width); } else { resizeWidth(); }
-  resizeHeight();
+  $(window).resize(function() { resizeHeight(treeview); });
+  if (treeview)
+  {
+    const device = navigator.userAgent.toLowerCase();
+    const touch_device = device.match(/(iphone|ipod|ipad|android)/);
+    if (touch_device) { /* wider split bar for touch only devices */
+      $(sidenav).css({ paddingRight:'20px' });
+      $('.ui-resizable-e').css({ width:'20px' });
+      $('#nav-sync').css({ right:'34px' });
+      barWidth=20;
+    }
+    const width = Cookie.readSetting(RESIZE_COOKIE_NAME,250);
+    if (width) { restoreWidth(width); } else { resizeWidth(); }
+  }
+  resizeHeight(treeview);
   const url = location.href;
   const i=url.indexOf("#");
   if (i>=0) window.location.hash=url.substr(i);
-  const _preventDefault = (evt) => evt.preventDefault();
-  $("#splitbar").bind("dragstart", _preventDefault).bind("selectstart", _preventDefault);
-  $(".ui-resizable-handle").dblclick(collapseExpand);
-  $(window).on('load',resizeHeight);
+  const _preventDefault = function(evt) { evt.preventDefault(); };
+  if (treeview)
+  {
+    $("#splitbar").bind("dragstart", _preventDefault).bind("selectstart", _preventDefault);
+    $(".ui-resizable-handle").dblclick(collapseExpand);
+    // workaround for firefox
+    $("body").css({overflow: "hidden"});
+  }
+  $(window).on('load',function() { resizeHeight(treeview); });
 }
 /* @license-end */

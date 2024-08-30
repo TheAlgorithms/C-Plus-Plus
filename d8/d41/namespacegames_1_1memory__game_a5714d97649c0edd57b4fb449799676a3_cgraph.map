@@ -1,0 +1,10 @@
+<map id="games::memory_game::ask_data" name="games::memory_game::ask_data">
+<area shape="rect" id="Node000001" title="Function that asks the user for their input in the table they previously chose." alt="" coords="5,104,160,145"/>
+<area shape="rect" id="Node000002" href="$d8/d41/namespacegames_1_1memory__game.html#a33167bb9cce6d527b478b4f6ae8c3f59" title="Utility function to verify if the given input is a number or not. This is very useful to prevent the ..." alt="" coords="208,5,362,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,101,206,57,220,50,222,55,209,61,123,106"/>
+<area shape="rect" id="Node000003" href="$d8/d41/namespacegames_1_1memory__game.html#ac589ef65abb0a6b9a7116ee0f9fd5280" title="Utility function to print the table." alt="" coords="208,71,362,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,109,192,104,193,109,160,114"/>
+<area shape="rect" id="Node000004" href="$d8/d41/namespacegames_1_1memory__game.html#adc62ebb75853446656e24932bdc6dd6b" title="Utility function that resets the data if the user enters an invalid value." alt="" coords="208,136,362,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="160,143,193,148,192,153,159,148"/>
+<area shape="poly" id="edge4_Node000004_Node000001" title=" " alt="" coords="207,138,174,133,175,127,208,133"/>
+</map>

@@ -1,4 +1,4 @@
-/* The standard CSS for doxygen 1.10.0*/
+/* The standard CSS for doxygen 1.12.0*/
 
 html {
 /* page base colors */
@@ -657,7 +657,24 @@ dl.el {
 	margin-left: -1cm;
 }
 
+ul.check {
+  list-style:none;
+  text-indent: -16px;
+  padding-left: 38px;
+}
+li.unchecked:before {
+  content: "\2610\A0";
+}
+li.checked:before {
+  content: "\2611\A0";
+}
+
+ol {
+  text-indent: 0px;
+}
+
 ul {
+  text-indent: 0px;
   overflow: visible;
 }
 
@@ -1428,7 +1445,7 @@ table.fieldtable {
         padding: 3px 7px 2px;
 }
 
-.fieldtable td.fieldtype, .fieldtable td.fieldname {
+.fieldtable td.fieldtype, .fieldtable td.fieldname, .fieldtable td.fieldinit {
         white-space: nowrap;
         border-right: 1px solid var(--memdef-border-color);
         border-bottom: 1px solid var(--memdef-border-color);
@@ -1438,6 +1455,12 @@ table.fieldtable {
 .fieldtable td.fieldname {
         padding-top: 3px;
 }
+
+.fieldtable td.fieldinit {
+        padding-top: 3px;
+        text-align: right;
+}
+
 
 .fieldtable td.fielddoc {
         border-bottom: 1px solid var(--memdef-border-color);
@@ -1614,7 +1637,7 @@ dl.note {
   border-color: #D0C000;
 }
 
-dl.warning, dl.attention {
+dl.warning, dl.attention, dl.important {
   margin-left: -7px;
   padding-left: 3px;
   border-left: 4px solid;
@@ -1662,7 +1685,7 @@ dl.bug dt a, dl.deprecated dt a, dl.todo dt a, dl.test a {
     font-weight: bold !important;
 }
 
-dl.warning, dl.attention, dl.note, dl.deprecated, dl.bug,
+dl.warning, dl.attention, dl.important, dl.note, dl.deprecated, dl.bug,
 dl.invariant, dl.pre, dl.post, dl.todo, dl.test, dl.remark {
     padding: 10px;
     margin: 10px 0px;
@@ -1675,13 +1698,13 @@ dl.section dd {
     margin-bottom: 2px;
 }
 
-dl.warning, dl.attention {
+dl.warning, dl.attention, dl.important {
     background: var(--warning-color-bg);
     border-left: 8px solid var(--warning-color-hl);
     color: var(--warning-color-text);
 }
 
-dl.warning dt, dl.attention dt {
+dl.warning dt, dl.attention dt, dl.important dt {
     color: var(--warning-color-hl);
 }
 
@@ -1739,7 +1762,9 @@ dl.deprecated dt a {
     color: var(--deprecated-color-hl) !important;
 }
 
-dl.section dd, dl.bug dd, dl.deprecated dd, dl.todo dd, dl.test dd {
+dl.note dd, dl.warning dd, dl.pre dd, dl.post dd,
+dl.remark dd, dl.attention dd, dl.important dd, dl.invariant dd,
+dl.bug dd, dl.deprecated dd, dl.todo dd, dl.test dd {
     margin-inline-start: 0px;
 }
 
@@ -1891,20 +1916,17 @@ div.toc ul {
         padding: 0px;
 }
 
+div.toc li[class^='level'] {
+        margin-left: 15px;
+}
+
 div.toc li.level1 {
         margin-left: 0px;
 }
 
-div.toc li.level2 {
-        margin-left: 15px;
-}
-
-div.toc li.level3 {
-        margin-left: 15px;
-}
-
-div.toc li.level4 {
-        margin-left: 15px;
+div.toc li.empty {
+        background-image: none;
+        margin-top: 0px;
 }
 
 span.emoji {

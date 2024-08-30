@@ -1,6 +1,6 @@
 <map id="main" name="main">
 <area shape="rect" id="Node000001" title="Main function." alt="" coords="5,29,55,55"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="249,5,320,31"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="248,5,320,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,29,102,14,170,9,233,10,233,16,170,14,103,19,56,34"/>
 <area shape="rect" id="Node000003" href="$dd/d24/namespacedynamic__programming.html#a0a2215194e58786c34db1ccaf8031079" title="Calculate the longest increasing subsequence for the specified numbers." alt="" coords="194,55,374,80"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,50,103,65,178,71,178,76,102,70,54,56"/>

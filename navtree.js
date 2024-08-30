@@ -136,8 +136,19 @@ function initNavTree(toroot,relpath) {
       docContent.animate({
         scrollTop: pos + dcScrTop - dcOffset
       },Math.max(50,Math.min(500,dist)),function() {
-        window.location.href=aname;
         animationInProgress=false;
+        if (anchor.parent().attr('class')=='memItemLeft') {
+          let rows = $('.memberdecls tr[class$="'+hashValue()+'"]');
+          glowEffect(rows.children(),300); // member without details
+        } else if (anchor.parent().attr('class')=='fieldname') {
+          glowEffect(anchor.parent().parent(),1000); // enum value
+        } else if (anchor.parent().attr('class')=='fieldtype') {
+          glowEffect(anchor.parent().parent(),1000); // struct field
+        } else if (anchor.parent().is(":header")) {
+          glowEffect(anchor.parent(),1000); // section header
+        } else {
+          glowEffect(anchor.next(),1000); // normal member
+        }
       });
     }
   }
@@ -260,18 +271,6 @@ function initNavTree(toroot,relpath) {
   const highlightAnchor = function() {
     const aname = hashUrl();
     const anchor = $(aname);
-    if (anchor.parent().attr('class')=='memItemLeft') {
-      let rows = $('.memberdecls tr[class$="'+hashValue()+'"]');
-      glowEffect(rows.children(),300); // member without details
-    } else if (anchor.parent().attr('class')=='fieldname') {
-      glowEffect(anchor.parent().parent(),1000); // enum value
-    } else if (anchor.parent().attr('class')=='fieldtype') {
-      glowEffect(anchor.parent().parent(),1000); // struct field
-    } else if (anchor.parent().is(":header")) {
-      glowEffect(anchor.parent(),1000); // section header
-    } else {
-      glowEffect(anchor.next(),1000); // normal member
-    }
     gotoAnchor(anchor,aname);
   }
 
@@ -453,23 +452,25 @@ function initNavTree(toroot,relpath) {
   showRoot();
 
   $(window).bind('hashchange', () => {
-    if (window.location.hash && window.location.hash.length>1) {
-      let a;
-      if ($(location).attr('hash')) {
-        const clslink=stripPath(pathName())+':'+hashValue();
-        a=$('.item a[class$="'+clslink.replace(/</g,'\\3c ')+'"]');
-      }
-      if (a==null || !$(a).parent().parent().hasClass('selected')) {
+    if (!animationInProgress) {
+      if (window.location.hash && window.location.hash.length>1) {
+        let a;
+        if ($(location).attr('hash')) {
+          const clslink=stripPath(pathName())+':'+hashValue();
+          a=$('.item a[class$="'+clslink.replace(/</g,'\\3c ')+'"]');
+        }
+        if (a==null || !$(a).parent().parent().hasClass('selected')) {
+          $('.item').removeClass('selected');
+          $('.item').removeAttr('id');
+        }
+        const link=stripPath2(pathName());
+        navTo(o,link,hashUrl(),relpath);
+        } else {
+        $('#doc-content').scrollTop(0);
         $('.item').removeClass('selected');
         $('.item').removeAttr('id');
+        navTo(o,toroot,hashUrl(),relpath);
       }
-      const link=stripPath2(pathName());
-      navTo(o,link,hashUrl(),relpath);
-    } else if (!animationInProgress) {
-      $('#doc-content').scrollTop(0);
-      $('.item').removeClass('selected');
-      $('.item').removeAttr('id');
-      navTo(o,toroot,hashUrl(),relpath);
     }
   });
 

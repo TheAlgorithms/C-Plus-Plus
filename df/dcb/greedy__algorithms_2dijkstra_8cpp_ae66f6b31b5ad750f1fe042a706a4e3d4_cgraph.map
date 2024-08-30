@@ -1,10 +1,10 @@
 <map id="main" name="main">
-<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,149,55,175"/>
-<area shape="rect" id="Node000002" href="$d7/d1e/graph_2dijkstra_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9" title=" " alt="" coords="103,149,153,175"/>
+<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,149,55,174"/>
+<area shape="rect" id="Node000002" href="$d7/d1e/graph_2dijkstra_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9" title=" " alt="" coords="103,149,153,174"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,159,88,159,88,164,55,164"/>
 <area shape="rect" id="Node000003" href="$df/dce/namespacegraph.html#a9125ceb66bfbec3093bba64c2c1e99e2" title="Function that add edge between two nodes or vertices of graph." alt="" coords="201,100,313,125"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="153,150,206,129,208,134,155,155"/>
-<area shape="rect" id="Node000004" href="$df/dce/namespacegraph.html#adc68cbc8ba09eb1142265935c0d45b84" title="Function runs the dijkstra algorithm for some source vertex and target vertex in the graph and return..." alt="" coords="206,149,309,175"/>
+<area shape="rect" id="Node000004" href="$df/dce/namespacegraph.html#adc68cbc8ba09eb1142265935c0d45b84" title="Function runs the dijkstra algorithm for some source vertex and target vertex in the graph and return..." alt="" coords="206,149,309,174"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="154,159,190,159,190,164,154,164"/>
 <area shape="rect" id="Node000011" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="222,198,293,224"/>
 <area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="155,169,208,190,206,195,153,174"/>
