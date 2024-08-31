@@ -23,8 +23,10 @@
  */
 
 /// header files
+
 #include <algorithm>  /// for collection of functions
 #include <cassert>  /// for a macro called assert which can be used to verify assumptions
+#include <cstdint>   /// for integral typedefs
 #include <iostream>  /// for io operations
 #include <vector>    /// for std::vector
 

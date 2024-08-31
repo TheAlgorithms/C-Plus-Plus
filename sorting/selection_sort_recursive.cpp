@@ -28,9 +28,10 @@
  */
 
 #include <algorithm>  /// for std::is_sorted
-#include <cassert>    /// for assert
-#include <iostream>   /// for std::swap and io operations
-#include <vector>     /// for std::vector
+#include <cassert>  /// for assert#include <cstdint>    /// for integral typedefs
+#include <cstdint>   /// for integral typedefs
+#include <iostream>  /// for std::swap and io operations
+#include <vector>    /// for std::vector
 
 /**
  * @namespace sorting
