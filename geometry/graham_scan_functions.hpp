@@ -39,6 +39,7 @@
  *
  *******************************************************************************/
 #include <algorithm>  /// for std::swap
+#include <cstdint>    /// for integral typedefs
 #include <cstdlib>    /// for mathematics and datatype conversion
 #include <iostream>   /// for IO operations
 #include <stack>      /// for std::stack
