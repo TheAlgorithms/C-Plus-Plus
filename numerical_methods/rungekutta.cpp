@@ -19,9 +19,9 @@
  * There can be many such equations
  */
 #include <cassert>   /// asserting the test functions
+#include <cstdint>   /// for integral typedefs
 #include <iostream>  /// for io operations
 #include <vector>    /// for using the vector container
-
 /**
  * @brief The change() function is used
  * to return the updated iterative value corresponding

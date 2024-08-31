@@ -10,6 +10,7 @@
 #define _USE_MATH_DEFINES  //< required for MS Visual C++
 #include <cassert>
 #include <cmath>
+#include <cstdint>  /// for integral typedefs
 #include <functional>
 #include <iostream>
 #include <limits>
