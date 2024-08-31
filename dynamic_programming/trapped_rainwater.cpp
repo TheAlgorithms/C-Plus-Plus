@@ -5,6 +5,7 @@
  * @details
  * This implementation calculates the amount of rainwater that can be trapped
  * between walls represented by an array of heights.
+ * @author [SOZEL](https://github.com/TruongNhanNguyen)
  */
 
 #include <algorithm>  /// For std::min and std::max
