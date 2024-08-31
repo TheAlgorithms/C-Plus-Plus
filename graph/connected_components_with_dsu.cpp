@@ -3,20 +3,24 @@
  * @brief [Disjoint union](https://en.wikipedia.org/wiki/Disjoint_union)
  *
  * @details
- * The Disjoint union is the technique to find connected component in graph efficiently.
+ * The Disjoint union is the technique to find connected component in graph
+ * efficiently.
  *
  * ### Algorithm
- * In Graph, if you have to find out the number of connected components, there are 2 options
+ * In Graph, if you have to find out the number of connected components, there
+ * are 2 options
  * 1. Depth first search
  * 2. Disjoint union
- * 1st option is inefficient, Disjoint union is the most optimal way to find this.
+ * 1st option is inefficient, Disjoint union is the most optimal way to find
+ * this.
  *
  * @author Unknown author
  * @author [Sagar Pandya](https://github.com/sagarpandyansit)
  */
-#include <iostream> /// for IO operations
-#include <set>    /// for std::set
-#include <vector> /// for std::vector
+#include <cstdint>   /// for integer typedefs
+#include <iostream>  /// for IO operations
+#include <set>       /// for std::set
+#include <vector>    /// for std::vector
 
 /**
  * @namespace graph
@@ -25,7 +29,8 @@
 namespace graph {
 /**
  * @namespace disjoint_union
- * @brief Functions for [Disjoint union](https://en.wikipedia.org/wiki/Disjoint_union) implementation
+ * @brief Functions for [Disjoint
+ * union](https://en.wikipedia.org/wiki/Disjoint_union) implementation
  */
 namespace disjoint_union {
 uint32_t number_of_nodes = 0;                // denotes number of nodes
