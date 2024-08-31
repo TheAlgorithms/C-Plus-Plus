@@ -11,8 +11,8 @@
  */
 
 #include <cassert>   /// for assert
+#include <cstdint>   /// for integral typedefs
 #include <iostream>  /// for io operations
-
 /**
  * @namespace math
  * @brief Mathematical algorithms

@@ -12,6 +12,7 @@
  */
 
 #include <cassert>
+#include <cstdint>  /// for integral typedefs
 #include <iostream>
 #include <vector>
 
@@ -21,7 +22,8 @@
  * a prime p starting from p * p since all of the lower multiples
  * have been already eliminated.
  * @param N number of primes to check
- * @return is_prime a vector of `N + 1` booleans identifying if `i`^th number is a prime or not
+ * @return is_prime a vector of `N + 1` booleans identifying if `i`^th number is
+ * a prime or not
  */
 std::vector<bool> sieve(uint32_t N) {
     std::vector<bool> is_prime(N + 1, true);
@@ -39,7 +41,8 @@ std::vector<bool> sieve(uint32_t N) {
 /**
  * This function prints out the primes to STDOUT
  * @param N number of primes to check
- * @param is_prime a vector of `N + 1` booleans identifying if `i`^th number is a prime or not
+ * @param is_prime a vector of `N + 1` booleans identifying if `i`^th number is
+ * a prime or not
  */
 void print(uint32_t N, const std::vector<bool> &is_prime) {
     for (uint32_t i = 2; i <= N; i++) {
@@ -54,9 +57,11 @@ void print(uint32_t N, const std::vector<bool> &is_prime) {
  * Test implementations
  */
 void tests() {
-  //                    0      1      2     3     4      5     6      7     8      9      10
-  std::vector<bool> ans{false, false, true, true, false, true, false, true, false, false, false};
-  assert(sieve(10) == ans);
+    //                    0      1      2     3     4      5     6      7     8
+    //                    9      10
+    std::vector<bool> ans{false, false, true,  true,  false, true,
+                          false, true,  false, false, false};
+    assert(sieve(10) == ans);
 }
 
 /**

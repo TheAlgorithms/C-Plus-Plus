@@ -17,6 +17,7 @@
  * @author [Neha Hasija](https://github.com/neha-hasija17)
  */
 #include <cassert>   /// for assert
+#include <cstdint>   /// for integral typedefs
 #include <iostream>  /// for io operations
 
 /**

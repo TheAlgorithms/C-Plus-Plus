@@ -10,6 +10,7 @@
  * @author [muskan0719](https://github.com/muskan0719)
  */
 #include <cassert>   /// for assert
+#include <cstdint>   /// for integral typedefs
 #include <iostream>  /// for std::cin and std::cout
 
 /**

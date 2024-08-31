@@ -1,18 +1,29 @@
 /**
  * @file
- * @brief Compute integral approximation of the function using [Riemann sum](https://en.wikipedia.org/wiki/Riemann_sum)
- * @details In mathematics, a Riemann sum is a certain kind of approximation of an integral by a finite sum. It is named after nineteenth-century German mathematician Bernhard Riemann.
- * One very common application is approximating the area of functions or lines on a graph and the length of curves and other approximations.
- * The sum is calculated by partitioning the region into shapes (rectangles, trapezoids, parabolas, or cubics) that form a region similar to the region being measured, then calculating the area for each of these shapes, and finally adding all of these small areas together.
- * This approach can be used to find a numerical approximation for a definite integral even if the fundamental theorem of calculus does not make it easy to find a closed-form solution.
- * Because the region filled by the small shapes is usually not the same shape as the region being measured, the Riemann sum will differ from the area being measured.
- * This error can be reduced by dividing up the region more finely, using smaller and smaller shapes. As the shapes get smaller and smaller, the sum approaches the Riemann integral.
- * \author [Benjamin Walton](https://github.com/bwalton24)
- * \author [Shiqi Sheng](https://github.com/shiqisheng00)
+ * @brief Compute integral approximation of the function using [Riemann
+ * sum](https://en.wikipedia.org/wiki/Riemann_sum)
+ * @details In mathematics, a Riemann sum is a certain kind of approximation of
+ * an integral by a finite sum. It is named after nineteenth-century German
+ * mathematician Bernhard Riemann. One very common application is approximating
+ * the area of functions or lines on a graph and the length of curves and other
+ * approximations. The sum is calculated by partitioning the region into shapes
+ * (rectangles, trapezoids, parabolas, or cubics) that form a region similar to
+ * the region being measured, then calculating the area for each of these
+ * shapes, and finally adding all of these small areas together. This approach
+ * can be used to find a numerical approximation for a definite integral even if
+ * the fundamental theorem of calculus does not make it easy to find a
+ * closed-form solution. Because the region filled by the small shapes is
+ * usually not the same shape as the region being measured, the Riemann sum will
+ * differ from the area being measured. This error can be reduced by dividing up
+ * the region more finely, using smaller and smaller shapes. As the shapes get
+ * smaller and smaller, the sum approaches the Riemann integral. \author
+ * [Benjamin Walton](https://github.com/bwalton24) \author [Shiqi
+ * Sheng](https://github.com/shiqisheng00)
  */
-#include <cassert>        /// for assert
-#include <cmath>         /// for mathematical functions
-#include <functional>   /// for passing in functions
+#include <cassert>     /// for assert
+#include <cmath>       /// for mathematical functions
+#include <cstdint>     /// for integral typedefs
+#include <functional>  /// for passing in functions
 #include <iostream>    /// for IO operations
 
 /**

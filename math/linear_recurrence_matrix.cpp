@@ -18,6 +18,7 @@
  * @author [Ashish Daulatabad](https://github.com/AshishYUO)
  */
 #include <cassert>   /// for assert
+#include <cstdint>   /// for integral typedefs
 #include <iostream>  /// for IO operations
 #include <vector>    /// for std::vector STL
 

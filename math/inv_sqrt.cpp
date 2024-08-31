@@ -10,9 +10,9 @@
 
 #include <cassert>   /// for assert
 #include <cmath>     /// for `std::sqrt`
+#include <cstdint>   /// for integral typedefs
 #include <iostream>  /// for IO operations
 #include <limits>    /// for numeric_limits
-
 /**
  * @brief This is the function that calculates the fast inverse square root.
  * The following code is the fast inverse square root implementation from

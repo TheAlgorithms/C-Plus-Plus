@@ -16,9 +16,9 @@
  */
 
 #include <cassert>   /// for assert
+#include <cstdint>   /// for integral typedefs
 #include <iostream>  /// for std::cout
 #include <vector>    /// for std::vector
-
 /**
  * @namespace math
  * @brief Mathematical algorithms

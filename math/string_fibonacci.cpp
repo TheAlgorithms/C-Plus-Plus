@@ -8,6 +8,7 @@
  * @see fibonacci_large.cpp, fibonacci_fast.cpp, fibonacci.cpp
  */
 
+#include <cstdint>  /// for integral typedefs
 #include <iostream>
 #ifdef _MSC_VER
 #include <string>  // use this for MS Visual C

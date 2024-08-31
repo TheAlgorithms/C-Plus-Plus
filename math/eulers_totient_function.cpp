@@ -1,6 +1,7 @@
 /**
  * @file
- * @brief Implementation of [Euler's Totient](https://en.wikipedia.org/wiki/Euler%27s_totient_function)
+ * @brief Implementation of [Euler's
+ * Totient](https://en.wikipedia.org/wiki/Euler%27s_totient_function)
  * @description
  * Euler Totient Function is also known as phi function.
  * \f[\phi(n) =
@@ -24,8 +25,9 @@
  * @author [Mann Mehta](https://github.com/mann2108)
  */
 
-#include <iostream> /// for IO operations
-#include <cassert> /// for assert
+#include <cassert>   /// for assert
+#include <cstdint>   /// for integral typedefs
+#include <iostream>  /// for IO operations
 
 /**
  * @brief Mathematical algorithms
@@ -39,12 +41,14 @@ namespace math {
 uint64_t phiFunction(uint64_t n) {
     uint64_t result = n;
     for (uint64_t i = 2; i * i <= n; i++) {
-        if (n % i != 0) continue;
+        if (n % i != 0)
+            continue;
         while (n % i == 0) n /= i;
 
         result -= result / i;
     }
-    if (n > 1) result -= result / n;
+    if (n > 1)
+        result -= result / n;
 
     return result;
 }

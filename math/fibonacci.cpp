@@ -9,8 +9,8 @@
  * @see fibonacci_large.cpp, fibonacci_fast.cpp, string_fibonacci.cpp
  */
 #include <cassert>
+#include <cstdint>  /// for integral typedefs
 #include <iostream>
-
 /**
  * Recursively compute sequences
  * @param n input
@@ -31,7 +31,7 @@ uint64_t fibonacci(uint64_t n) {
  * Function for testing the fibonacci() function with a few
  * test cases and assert statement.
  * @returns `void`
-*/
+ */
 static void test() {
     uint64_t test_case_1 = fibonacci(0);
     assert(test_case_1 == 0);
