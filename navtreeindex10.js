@@ -121,7 +121,7 @@ var NAVTREEINDEX10 =
 "db/d01/brent__method__extrema_8cpp.html#a6d0455dd5c30adda100e95f0423c786e":[11,0,15,2,6],
 "db/d01/brent__method__extrema_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,15,2,3],
 "db/d03/_s_t-example.html":[12,0],
-"db/d03/namespacewildcard__matching.html":[9,0,131],
+"db/d03/namespacewildcard__matching.html":[9,0,132],
 "db/d07/spiral__print_8cpp.html":[11,0,17,19],
 "db/d07/spiral__print_8cpp.html#a850d3f55e1a8d227176cdcc67352c197":[11,0,17,19,2],
 "db/d07/spiral__print_8cpp.html#acfff36db81326fb990a643ab198ee8a5":[11,0,17,19,0],

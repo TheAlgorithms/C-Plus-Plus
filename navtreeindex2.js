@@ -81,7 +81,7 @@ var NAVTREEINDEX2 =
 "d0/d51/approximate__pi_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[11,0,14,1,3],
 "d0/d51/approximate__pi_8cpp.html#abf7f2a6d91f1ca6c89698792aea3f188":[11,0,14,1,1],
 "d0/d51/approximate__pi_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,1,2],
-"d0/d52/namespacewiggle__sort.html":[9,0,130],
+"d0/d52/namespacewiggle__sort.html":[9,0,131],
 "d0/d58/classgraph_1_1_rooted_tree.html":[9,0,35,3],
 "d0/d58/classgraph_1_1_rooted_tree.html":[10,0,6,4],
 "d0/d58/classgraph_1_1_rooted_tree.html#a2ee3ad1161ac2532da30c3e22c265ad3":[9,0,35,3,2],

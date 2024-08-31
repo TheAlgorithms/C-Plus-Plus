@@ -82,5 +82,6 @@ var searchData=
   ['user_20interface_79',['User-interface',['../dc/d64/md__coding_guidelines.html#autotoc_md18',1,'']]],
   ['user_5finput_5ftest_80',['user_input_test',['../d4/d38/power__of__two_8cpp.html#adfd6be45be425ae28c62ce3bfb4b40dc',1,'power_of_two.cpp']]],
   ['uses_5fallocator_81',['uses_allocator',['http://en.cppreference.com/w/cpp/memory/uses_allocator.html',0,'std']]],
-  ['util_5ffunctions_82',['util_functions',['../d3/d17/namespaceutil__functions.html',1,'']]]
+  ['util_5ffunctions_82',['util_functions',['../d3/d17/namespaceutil__functions.html',1,'']]],
+  ['utils_83',['utils',['../d6/d84/namespaceutils.html',1,'']]]
 ];

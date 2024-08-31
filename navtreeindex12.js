@@ -32,7 +32,7 @@ var NAVTREEINDEX12 =
 "dd/d1f/classdsu.html#ab8ee27083a3c2e2df80755165a2ec280":[10,0,29,7],
 "dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55":[10,0,29,17],
 "dd/d1f/classdsu.html#ac713a5b496d0405c82e2808a85e58415":[10,0,29,6],
-"dd/d21/namespacewindowed__median.html":[9,0,132],
+"dd/d21/namespacewindowed__median.html":[9,0,133],
 "dd/d24/namespacedynamic__programming.html":[9,0,27],
 "dd/d24/namespacedynamic__programming.html#a0a2215194e58786c34db1ccaf8031079":[9,0,27,1],
 "dd/d24/namespacedynamic__programming.html#a5239174fa0d987f2c67edc1f2af82beb":[9,0,27,3],

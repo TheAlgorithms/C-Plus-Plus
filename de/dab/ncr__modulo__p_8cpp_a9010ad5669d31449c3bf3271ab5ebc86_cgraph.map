@@ -1,0 +1,6 @@
+<map id="math::ncr_modulo_p::utils::gcdExtended" name="math::ncr_modulo_p::utils::gcdExtended">
+<area shape="rect" id="Node000001" title="finds the values x and y such that a*x + b*y = gcd(a,b)" alt="" coords="5,29,145,70"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="48,29,46,20,51,11,61,5,75,3,91,5,100,12,97,16,89,10,75,8,62,10,55,14,52,20,53,28"/>
+<area shape="rect" id="Node000002" href="$d4/da0/gcd__iterative__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e" title=" " alt="" coords="193,37,235,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,47,177,47,177,52,145,52"/>
+</map>

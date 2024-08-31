@@ -1,8 +1,7 @@
 var classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p =
 [
-    [ "NCRModuloP", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html#af3d41271912f9fa50b774c96c51874b9", null ],
-    [ "gcdExtended", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html#afde201f4687740454302c444f507a926", null ],
-    [ "modInverse", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html#a0431ec5c876e1154d8e1e5f89e1ab34a", null ],
-    [ "ncr", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html#a6b95277f5f527beacc8d0f3bc91fcd08", null ],
-    [ "p", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html#a57c168cd6eb85718eab97da658a698ad", null ]
+    [ "NCRModuloP", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html#a94b07e7dc61d8d7a1e9c5a28988e72f9", null ],
+    [ "computeFactorialsMod", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html#ab5744fa589f6a48f9fe7bca13dbe661f", null ],
+    [ "ncr", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html#a499df7a01bcd348345dc5a0ab79bb0e9", null ],
+    [ "fac", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html#a738a5f59bb3560c81cdb7f43bcfe9fec", null ]
 ];

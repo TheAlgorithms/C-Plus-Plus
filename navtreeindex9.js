@@ -6,7 +6,7 @@ var NAVTREEINDEX9 =
 "d9/d14/array__left__rotation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,16,0,0],
 "d9/d14/array__left__rotation_8cpp.html#af7b81d7a1534216af6a36a80135beb86":[11,0,16,0,8],
 "d9/d14/array__left__rotation_8cpp.html#afce39cf843989a39811a49ebe29dd6d8":[11,0,16,0,2],
-"d9/d21/namespacewave__sort.html":[9,0,129],
+"d9/d21/namespacewave__sort.html":[9,0,130],
 "d9/d23/classgraph_1_1_lowest_common_ancestor.html":[9,0,35,2],
 "d9/d23/classgraph_1_1_lowest_common_ancestor.html":[10,0,6,3],
 "d9/d23/classgraph_1_1_lowest_common_ancestor.html#a42589cc39d6bbff6c997152f1b96e356":[9,0,35,2,2],

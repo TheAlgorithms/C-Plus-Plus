@@ -75,8 +75,10 @@ var NAVTREEINDEX13 =
 "de/d9d/classdata__structures_1_1linked__list_1_1link.html#af6bbeb9bfde1683ba917071edeedd5c3":[10,0,2,0,0,1],
 "de/d9d/classdata__structures_1_1linked__list_1_1link.html#af94c06f3220e5406245680f58b8e7081":[10,0,2,0,0,3],
 "de/dab/ncr__modulo__p_8cpp.html":[11,0,14,41],
-"de/dab/ncr__modulo__p_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,41,1],
-"de/dab/ncr__modulo__p_8cpp.html#af0a3e6827f41c151e47451f5ff98b1f1":[11,0,14,41,2],
+"de/dab/ncr__modulo__p_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[11,0,14,41,4],
+"de/dab/ncr__modulo__p_8cpp.html#a6c7bfe3bdaa086d32261a5c5584d0fa9":[11,0,14,41,3],
+"de/dab/ncr__modulo__p_8cpp.html#a9010ad5669d31449c3bf3271ab5ebc86":[11,0,14,41,2],
+"de/dab/ncr__modulo__p_8cpp.html#afa2b50f4716fc3b42221a72e676e1422":[11,0,14,41,1],
 "de/db3/namespaceatbash.html":[9,0,3],
 "de/db4/namespacedisjoint__union.html":[9,0,22],
 "de/db6/a1z26__cipher_8cpp.html":[11,0,2,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX13 =
 "df/dce/namespacegraph.html#a9125ceb66bfbec3093bba64c2c1e99e2":[9,0,35,4],
 "df/dce/namespacegraph.html#ab5428a3519267a28bba4b4310cfbb6ae":[9,0,35,8],
 "df/dce/namespacegraph.html#ab7706341d006e20d1ae58274187a3346":[9,0,35,14],
-"df/dce/namespacegraph.html#ad4016cfc80485a43748895a2c26c7d08":[9,0,35,5],
-"df/dce/namespacegraph.html#adc68cbc8ba09eb1142265935c0d45b84":[9,0,35,9],
-"df/dd0/queue__using__two__stacks_8cpp.html":[11,0,4,15]
+"df/dce/namespacegraph.html#ad4016cfc80485a43748895a2c26c7d08":[9,0,35,5]
 };

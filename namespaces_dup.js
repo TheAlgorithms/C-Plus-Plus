@@ -185,6 +185,7 @@ var namespaces_dup =
     [ "trie_operations", "df/d8e/namespacetrie__operations.html", null ],
     [ "trie_using_hashmap", "d7/d0a/namespacetrie__using__hashmap.html", null ],
     [ "util_functions", "d3/d17/namespaceutil__functions.html", null ],
+    [ "utils", "d6/d84/namespaceutils.html", null ],
     [ "vector_cross", "d4/d91/namespacevector__cross.html", null ],
     [ "vigenere", "d6/da2/namespacevigenere.html", null ],
     [ "wave_sort", "d9/d21/namespacewave__sort.html", null ],
