@@ -1,20 +1,8 @@
-/**
- * @file
- * @brief Implementation of a stack data structure
- * @details
- * This implementation provides functionalities to push, pop, and view elements
- * of the stack. It also includes a self-test method to ensure proper
- * functionality.
- */
+#include <cassert>
+#include <iostream>
+#include <memory>
+#include <stdexcept>
 
-#include <cassert>    /// For assert
-#include <iostream>   /// For IO operations
-#include <stdexcept>  /// For std::out_of_range
-
-/*
- * @namespace
- * @brief Data structures
- */
 namespace data_structures {
 /**
  * @brief Class representation of a stack
@@ -23,8 +11,8 @@ namespace data_structures {
 template <typename T>
 class Stack {
  private:
-    T* stack;        ///< Pointer to the stack array
-    int stackSize;   ///< Maximum size of the stack
+    std::unique_ptr<T[]> stack;  ///< Smart pointer to the stack array
+    int stackSize;               ///< Maximum size of the stack
     int stackIndex;  ///< Index pointing to the top element of the stack
 
  public:
@@ -33,40 +21,32 @@ class Stack {
      *
      * @param size Maximum size of the stack
      */
-    Stack(int size) : stackSize(size), stackIndex(0) { stack = new T[size]; }
-
-    /**
-     * @brief Destroys the Stack object
-     */
-    ~Stack() { delete[] stack; }
+    Stack(int size) : stackSize(size), stackIndex(-1), stack(new T[size]) {}
 
     /**
      * @brief Checks if the stack is full
      *
      * @return true if the stack is full, false otherwise
      */
-    bool full() const { return stackIndex == stackSize; }
+    bool full() const { return stackIndex == stackSize - 1; }
 
     /**
      * @brief Checks if the stack is empty
      *
      * @return true if the stack is empty, false otherwise
      */
-    bool empty() const { return stackIndex == 0; }
+    bool empty() const { return stackIndex == -1; }
 
     /**
      * @brief Pushes an element onto the stack
      *
      * @param element Element to push onto the stack
-     * @return true if the element was successfully pushed onto the stack, false
-     * otherwise
      */
-    bool push(T element) {
+    void push(T element) {
         if (full()) {
-            return false;
+            throw std::out_of_range("Stack overflow");
         } else {
-            stack[stackIndex++] = element;
-            return true;
+            stack[++stackIndex] = element;
         }
     }
 
@@ -78,17 +58,16 @@ class Stack {
      */
     T pop() {
         if (empty()) {
-            throw std::out_of_range("Stack is empty");
-        } else {
-            return stack[--stackIndex];
+            throw std::out_of_range("Stack underflow");
         }
+        return stack[stackIndex--];
     }
 
     /**
      * @brief Displays all elements in the stack
      */
-    void show() {
-        for (int i = 0; i < stackIndex; i++) {
+    void show() const {
+        for (int i = 0; i <= stackIndex; i++) {
             std::cout << stack[i] << "\n";
         }
     }
@@ -101,10 +80,9 @@ class Stack {
      */
     T topmost() const {
         if (empty()) {
-            throw std::out_of_range("Stack is empty");
-        } else {
-            return stack[stackIndex - 1];
+            throw std::out_of_range("Stack underflow");
         }
+        return stack[stackIndex];
     }
 
     /**
@@ -115,10 +93,9 @@ class Stack {
      */
     T bottom() const {
         if (empty()) {
-            throw std::out_of_range("Stack is empty");
-        } else {
-            return stack[0];
+            throw std::out_of_range("Stack underflow");
         }
+        return stack[0];
     }
 };
 }  // namespace data_structures
@@ -130,21 +107,35 @@ class Stack {
 static void test() {
     data_structures::Stack<int> stack(5);
 
-    // Test push, pop, topmost, bottom, full, and empty operations
+    // Test empty and full operations
     assert(stack.empty() == true);
     assert(stack.full() == false);
 
-    assert(stack.push(10) == true);
-    assert(stack.push(20) == true);
-    assert(stack.push(30) == true);
-    assert(stack.push(40) == true);
-    assert(stack.push(50) == true);
-    assert(stack.push(60) == false);
+    // Test pushing elements and checking topmost
+    stack.push(10);
+    assert(stack.topmost() == 10);
 
+    stack.push(20);
+    assert(stack.topmost() == 20);
+
+    stack.push(30);
+    stack.push(40);
+    stack.push(50);
+    assert(stack.full() == true);
+
+    // Test stack overflow
+    try {
+        stack.push(60);
+    } catch (const std::out_of_range& e) {
+        assert(std::string(e.what()) == "Stack overflow");
+    }
+
+    // Test popping elements
     assert(stack.pop() == 50);
     assert(stack.pop() == 40);
     assert(stack.pop() == 30);
 
+    // Check topmost and bottom elements
     assert(stack.topmost() == 20);
     assert(stack.bottom() == 10);
 
@@ -154,17 +145,23 @@ static void test() {
     assert(stack.empty() == true);
     assert(stack.full() == false);
 
-    // Test for exceptions when stack is empty
+    // Test stack underflow
+    try {
+        stack.pop();
+    } catch (const std::out_of_range& e) {
+        assert(std::string(e.what()) == "Stack underflow");
+    }
+
     try {
         stack.topmost();
     } catch (const std::out_of_range& e) {
-        assert(std::string(e.what()) == "Stack is empty");
+        assert(std::string(e.what()) == "Stack underflow");
     }
 
     try {
         stack.bottom();
     } catch (const std::out_of_range& e) {
-        assert(std::string(e.what()) == "Stack is empty");
+        assert(std::string(e.what()) == "Stack underflow");
     }
 }
 
@@ -174,5 +171,6 @@ static void test() {
  */
 int main() {
     test();  // run self-test implementations
+    std::cout << "All tests passed!" << std::endl;
     return 0;
 }
