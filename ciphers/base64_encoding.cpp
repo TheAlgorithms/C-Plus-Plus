@@ -13,6 +13,7 @@
  */
 #include <array>     /// for `std::array`
 #include <cassert>   /// for `assert` operations
+#include <cstdint>   /// for integral typedefs
 #include <iostream>  /// for IO operations
 
 /**
