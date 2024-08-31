@@ -11,8 +11,8 @@
 #include <algorithm>  /// For std::min and std::max
 #include <cassert>    /// For assert
 #include <cstddef>    /// For std::size_t
-#include <vector>     /// For std::vector
 #include <cstdint>    /// For integral typedefs
+#include <vector>     /// For std::vector
 
 /*
  * @namespace
@@ -89,7 +89,7 @@ static void test() {
            0);
 
     std::vector<uint32_t> test_large_elevation_map_difference = {5, 1, 6, 1,
-                                                                     7, 1, 8};
+                                                                 7, 1, 8};
     assert(dynamic_programming::trappedRainwater(
                test_large_elevation_map_difference) == 15);
 }
