@@ -1,7 +1,7 @@
-#include <cassert> /// For std::assert
-#include <iostream> /// For std::cout
-#include <memory> /// For std::unique_ptr
-#include <stdexcept> /// For std::out_of_range
+#include <cassert>    /// For std::assert
+#include <iostream>   /// For std::cout
+#include <memory>     /// For std::unique_ptr
+#include <stdexcept>  /// For std::out_of_range
 
 /**
  * @namespace
@@ -36,7 +36,6 @@ class Stack {
 
     /**
      * @brief Checks if the stack is empty
-     *
      * @return true if the stack is empty, false otherwise
      */
     bool empty() const { return stackIndex == -1; }
