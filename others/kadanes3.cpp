@@ -17,8 +17,8 @@
 #include <array>     /// for std::array
 #include <cassert>   /// for assert
 #include <climits>   /// for INT_MIN value
+#include <cstdint>   /// for integral typedefs
 #include <iostream>  /// for IO operations
-
 /**
  * @brief Utility function to check the current maximum number
  * \param arr input array

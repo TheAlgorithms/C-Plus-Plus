@@ -46,6 +46,7 @@
  * */
 
 #include <cassert>        /// for assert
+#include <cstdint>        /// for integral typedefs
 #include <iostream>       /// for IO Operations
 #include <list>           /// for std::list
 #include <unordered_map>  /// for std::unordered_map
