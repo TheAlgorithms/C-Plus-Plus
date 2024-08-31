@@ -9,7 +9,6 @@
 
 #include <algorithm>  /// For std::min and std::max
 #include <cassert>    /// For assert
-#include <iostream>   /// For IO operations
 #include <vector>     /// For vector container
 
 /*
@@ -58,17 +57,38 @@ int trappedRainwater(const std::vector<int>& heights) {
  * @returns void
  */
 static void test() {
-    std::vector<int> heights0 = {0, 1};
-    assert(dynamic_programming::trappedRainwater(heights0) == 0);
+    std::vector<int> test_basic = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+    assert(dynamic_programming::trappedRainwater(test_basic) == 6);
 
-    std::vector<int> heights1 = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
-    assert(dynamic_programming::trappedRainwater(heights1) == 6);
+    std::vector<int> test_peak_under_water = {3, 0, 2, 0, 4};
+    assert(dynamic_programming::trappedRainwater(test_peak_under_water) == 7);
 
-    std::vector<int> heights2 = {3, 0, 0, 2, 0, 4};
-    assert(dynamic_programming::trappedRainwater(heights2) == 10);
+    std::vector<int> test_bucket = {5, 1, 5};
+    assert(dynamic_programming::trappedRainwater(test_bucket) == 4);
 
-    std::vector<int> heights3 = {1, 2, 3, 4, 5};
-    assert(dynamic_programming::trappedRainwater(heights3) == 0);
+    std::vector<int> test_skewed_bucket = {4, 1, 5};
+    assert(dynamic_programming::trappedRainwater(test_skewed_bucket) == 3);
+
+    std::vector<int> test_empty = {};
+    assert(dynamic_programming::trappedRainwater(test_empty) == 0);
+
+    std::vector<int> test_flat = {0, 0, 0, 0, 0};
+    assert(dynamic_programming::trappedRainwater(test_flat) == 0);
+
+    std::vector<int> test_no_trapped_water = {1, 1, 2, 4, 0, 0, 0};
+    assert(dynamic_programming::trappedRainwater(test_no_trapped_water) == 0);
+
+    std::vector<int> test_single_elevation = {5};
+    assert(dynamic_programming::trappedRainwater(test_single_elevation) == 0);
+
+    std::vector<int> test_two_point_elevation = {5, 1};
+    assert(dynamic_programming::trappedRainwater(test_two_point_elevation) ==
+           0);
+
+    std::vector<int> test_large_elevation_map_difference = {5, 1, 6, 1,
+                                                            7, 1, 8};
+    assert(dynamic_programming::trappedRainwater(
+               test_large_elevation_map_difference) == 15);
 }
 
 /**
