@@ -974,19 +974,23 @@ template&lt;typename T , size_t N&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>new array with elements sorted from a given array </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   51</span>                                                          {</div>
-<div class="line"><span class="lineno">   52</span>    <span class="comment">// Untill array is not sorted</span></div>
-<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">while</span> (!<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/begin.html">begin</a>(), arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/end.html">end</a>())) {</div>
-<div class="line"><span class="lineno">   54</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/random_shuffle.html">std::random_shuffle</a>(arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/begin.html">begin</a>(), arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/end.html">end</a>());<span class="comment">// Shuffle the array</span></div>
-<div class="line"><span class="lineno">   55</span>    }</div>
-<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">return</span> arr;</div>
-<div class="line"><span class="lineno">   57</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   52</span>                                                          {</div>
+<div class="line"><span class="lineno">   53</span>    <span class="comment">// Untill array is not sorted</span></div>
+<div class="line"><span class="lineno">   54</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/random_device.html">std::random_device</a> random_device;</div>
+<div class="line"><span class="lineno">   55</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/mersenne_twister_engine.html">std::mt19937</a> generator(random_device());</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">while</span> (!<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/begin.html">begin</a>(), arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/end.html">end</a>())) {</div>
+<div class="line"><span class="lineno">   57</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/random_shuffle.html">std::shuffle</a>(arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/begin.html">begin</a>(), arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/end.html">end</a>(), generator);<span class="comment">// Shuffle the array</span></div>
+<div class="line"><span class="lineno">   58</span>    }</div>
+<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">return</span> arr;</div>
+<div class="line"><span class="lineno">   60</span>}</div>
 <div class="ttc" id="ais_sorted_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></div><div class="ttdeci">T is_sorted(T... args)</div></div>
-<div class="ttc" id="arandom_shuffle_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/random_shuffle.html">std::random_shuffle</a></div><div class="ttdeci">T random_shuffle(T... args)</div></div>
+<div class="ttc" id="amersenne_twister_engine_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/mersenne_twister_engine.html">std::mt19937</a></div></div>
+<div class="ttc" id="arandom_device_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/random_device.html">std::random_device</a></div></div>
+<div class="ttc" id="arandom_shuffle_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/random_shuffle.html">std::shuffle</a></div><div class="ttdeci">T shuffle(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_affc6ee160142cd017f8c4b213437d0fd_cgraph.svg" width="331" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_affc6ee160142cd017f8c4b213437d0fd_cgraph.svg" width="310" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -1226,13 +1230,13 @@ template&lt;typename T , size_t N&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>new array with elements shuffled from a given array </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   36</span>                                              {</div>
-<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; N; i++) {</div>
-<div class="line"><span class="lineno">   38</span>        <span class="comment">// Swaps i&#39;th  index with random index (less than array size)</span></div>
-<div class="line"><span class="lineno">   39</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(arr[i], arr[<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % N]);</div>
-<div class="line"><span class="lineno">   40</span>    }</div>
-<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">return</span> arr;</div>
-<div class="line"><span class="lineno">   42</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>                                              {</div>
+<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; N; i++) {</div>
+<div class="line"><span class="lineno">   39</span>        <span class="comment">// Swaps i&#39;th  index with random index (less than array size)</span></div>
+<div class="line"><span class="lineno">   40</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(arr[i], arr[<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % N]);</div>
+<div class="line"><span class="lineno">   41</span>    }</div>
+<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">return</span> arr;</div>
+<div class="line"><span class="lineno">   43</span>}</div>
 <div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

@@ -117,10 +117,11 @@ $(function(){initNavTree('d5/ddb/bogo__sort_8cpp.html','../../'); initResizable(
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;array&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;random&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for bogo_sort.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/df7/bogo__sort_8cpp__incl.svg" width="344" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/df7/bogo__sort_8cpp__incl.svg" width="432" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -168,26 +169,26 @@ Algorithm</h3>
       </table>
 </div><div class="memdoc">
 <p>Driver Code </p>
-<div class="fragment"><div class="line"><span class="lineno">  104</span>           {</div>
-<div class="line"><span class="lineno">  105</span>    <span class="comment">// Testing</span></div>
-<div class="line"><span class="lineno">  106</span>    <a class="code hl_function" href="#ae1a3968e7947464bee7714f6d43b7002">test</a>();</div>
-<div class="line"><span class="lineno">  107</span>    <span class="comment">// Example Usage</span></div>
-<div class="line"><span class="lineno">  108</span>    std::array &lt;int, 5&gt; arr = {3, 7, 10, 4, 1}; <span class="comment">// Defining array which we want to sort</span></div>
-<div class="line"><span class="lineno">  109</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Original Array : &quot;</span>;</div>
-<div class="line"><span class="lineno">  110</span>    <a class="code hl_function" href="#ae8adaeff66471f9ed84f2e673b38a859">show_array</a>(arr);</div>
-<div class="line"><span class="lineno">  111</span>    arr = <a class="code hl_function" href="../../d5/d91/namespacesorting.html#affc6ee160142cd017f8c4b213437d0fd">sorting::randomized_bogosort</a>(arr); <span class="comment">// Callling bogo sort on it</span></div>
-<div class="line"><span class="lineno">  112</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sorted Array : &quot;</span>;</div>
-<div class="line"><span class="lineno">  113</span>    <a class="code hl_function" href="#ae8adaeff66471f9ed84f2e673b38a859">show_array</a>(arr); <span class="comment">// Printing sorted array</span></div>
-<div class="line"><span class="lineno">  114</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  115</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  107</span>           {</div>
+<div class="line"><span class="lineno">  108</span>    <span class="comment">// Testing</span></div>
+<div class="line"><span class="lineno">  109</span>    <a class="code hl_function" href="#ae1a3968e7947464bee7714f6d43b7002">test</a>();</div>
+<div class="line"><span class="lineno">  110</span>    <span class="comment">// Example Usage</span></div>
+<div class="line"><span class="lineno">  111</span>    std::array &lt;int, 5&gt; arr = {3, 7, 10, 4, 1}; <span class="comment">// Defining array which we want to sort</span></div>
+<div class="line"><span class="lineno">  112</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Original Array : &quot;</span>;</div>
+<div class="line"><span class="lineno">  113</span>    <a class="code hl_function" href="#ae8adaeff66471f9ed84f2e673b38a859">show_array</a>(arr);</div>
+<div class="line"><span class="lineno">  114</span>    arr = <a class="code hl_function" href="../../d5/d91/namespacesorting.html#affc6ee160142cd017f8c4b213437d0fd">sorting::randomized_bogosort</a>(arr); <span class="comment">// Callling bogo sort on it</span></div>
+<div class="line"><span class="lineno">  115</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sorted Array : &quot;</span>;</div>
+<div class="line"><span class="lineno">  116</span>    <a class="code hl_function" href="#ae8adaeff66471f9ed84f2e673b38a859">show_array</a>(arr); <span class="comment">// Printing sorted array</span></div>
+<div class="line"><span class="lineno">  117</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  118</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="abogo__sort_8cpp_html_ae1a3968e7947464bee7714f6d43b7002"><div class="ttname"><a href="#ae1a3968e7947464bee7714f6d43b7002">test</a></div><div class="ttdeci">void test()</div><div class="ttdef"><b>Definition</b> bogo_sort.cpp:78</div></div>
-<div class="ttc" id="abogo__sort_8cpp_html_ae8adaeff66471f9ed84f2e673b38a859"><div class="ttname"><a href="#ae8adaeff66471f9ed84f2e673b38a859">show_array</a></div><div class="ttdeci">void show_array(const std::array&lt; T, N &gt; &amp;arr)</div><div class="ttdef"><b>Definition</b> bogo_sort.cpp:68</div></div>
-<div class="ttc" id="anamespacesorting_html_affc6ee160142cd017f8c4b213437d0fd"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#affc6ee160142cd017f8c4b213437d0fd">sorting::randomized_bogosort</a></div><div class="ttdeci">std::array&lt; T, N &gt; randomized_bogosort(std::array&lt; T, N &gt; arr)</div><div class="ttdef"><b>Definition</b> bogo_sort.cpp:51</div></div>
+<div class="ttc" id="abogo__sort_8cpp_html_ae1a3968e7947464bee7714f6d43b7002"><div class="ttname"><a href="#ae1a3968e7947464bee7714f6d43b7002">test</a></div><div class="ttdeci">void test()</div><div class="ttdef"><b>Definition</b> bogo_sort.cpp:81</div></div>
+<div class="ttc" id="abogo__sort_8cpp_html_ae8adaeff66471f9ed84f2e673b38a859"><div class="ttname"><a href="#ae8adaeff66471f9ed84f2e673b38a859">show_array</a></div><div class="ttdeci">void show_array(const std::array&lt; T, N &gt; &amp;arr)</div><div class="ttdef"><b>Definition</b> bogo_sort.cpp:71</div></div>
+<div class="ttc" id="anamespacesorting_html_affc6ee160142cd017f8c4b213437d0fd"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#affc6ee160142cd017f8c4b213437d0fd">sorting::randomized_bogosort</a></div><div class="ttdeci">std::array&lt; T, N &gt; randomized_bogosort(std::array&lt; T, N &gt; arr)</div><div class="ttdef"><b>Definition</b> bogo_sort.cpp:52</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/ddb/bogo__sort_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="519" height="298"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/ddb/bogo__sort_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="499" height="298"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -221,12 +222,12 @@ template&lt;typename T , size_t N&gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   68</span>                                             {</div>
-<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x : arr) {</div>
-<div class="line"><span class="lineno">   70</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; x &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
-<div class="line"><span class="lineno">   71</span>    }</div>
-<div class="line"><span class="lineno">   72</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><span class="lineno">   73</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   71</span>                                             {</div>
+<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x : arr) {</div>
+<div class="line"><span class="lineno">   73</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; x &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><span class="lineno">   74</span>    }</div>
+<div class="line"><span class="lineno">   75</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">   76</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -245,36 +246,36 @@ template&lt;typename T , size_t N&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Function to test above algorithm </p>
-<div class="fragment"><div class="line"><span class="lineno">   78</span>            {</div>
-<div class="line"><span class="lineno">   79</span>    <span class="comment">// Test 1</span></div>
-<div class="line"><span class="lineno">   80</span>    std::array &lt;int, 5&gt; arr1;</div>
-<div class="line"><span class="lineno">   81</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> &amp;x : arr1) {</div>
-<div class="line"><span class="lineno">   82</span>        x = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100;</div>
-<div class="line"><span class="lineno">   83</span>    }</div>
-<div class="line"><span class="lineno">   84</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Original Array : &quot;</span>;</div>
-<div class="line"><span class="lineno">   85</span>    <a class="code hl_function" href="#ae8adaeff66471f9ed84f2e673b38a859">show_array</a>(arr1);</div>
-<div class="line"><span class="lineno">   86</span>    arr1 = <a class="code hl_function" href="../../d5/d91/namespacesorting.html#affc6ee160142cd017f8c4b213437d0fd">sorting::randomized_bogosort</a>(arr1);</div>
-<div class="line"><span class="lineno">   87</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sorted Array : &quot;</span>;</div>
+<div class="fragment"><div class="line"><span class="lineno">   81</span>            {</div>
+<div class="line"><span class="lineno">   82</span>    <span class="comment">// Test 1</span></div>
+<div class="line"><span class="lineno">   83</span>    std::array &lt;int, 5&gt; arr1;</div>
+<div class="line"><span class="lineno">   84</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> &amp;x : arr1) {</div>
+<div class="line"><span class="lineno">   85</span>        x = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100;</div>
+<div class="line"><span class="lineno">   86</span>    }</div>
+<div class="line"><span class="lineno">   87</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Original Array : &quot;</span>;</div>
 <div class="line"><span class="lineno">   88</span>    <a class="code hl_function" href="#ae8adaeff66471f9ed84f2e673b38a859">show_array</a>(arr1);</div>
-<div class="line"><span class="lineno">   89</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(arr1.begin(), arr1.end()));</div>
-<div class="line"><span class="lineno">   90</span>    <span class="comment">// Test 2</span></div>
-<div class="line"><span class="lineno">   91</span>    std::array &lt;int, 5&gt; arr2;</div>
-<div class="line"><span class="lineno">   92</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> &amp;x : arr2) {</div>
-<div class="line"><span class="lineno">   93</span>        x = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100;</div>
-<div class="line"><span class="lineno">   94</span>    }</div>
-<div class="line"><span class="lineno">   95</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Original Array : &quot;</span>;</div>
-<div class="line"><span class="lineno">   96</span>    <a class="code hl_function" href="#ae8adaeff66471f9ed84f2e673b38a859">show_array</a>(arr2);</div>
-<div class="line"><span class="lineno">   97</span>    arr2 = <a class="code hl_function" href="../../d5/d91/namespacesorting.html#affc6ee160142cd017f8c4b213437d0fd">sorting::randomized_bogosort</a>(arr2);</div>
-<div class="line"><span class="lineno">   98</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sorted Array : &quot;</span>;</div>
+<div class="line"><span class="lineno">   89</span>    arr1 = <a class="code hl_function" href="../../d5/d91/namespacesorting.html#affc6ee160142cd017f8c4b213437d0fd">sorting::randomized_bogosort</a>(arr1);</div>
+<div class="line"><span class="lineno">   90</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sorted Array : &quot;</span>;</div>
+<div class="line"><span class="lineno">   91</span>    <a class="code hl_function" href="#ae8adaeff66471f9ed84f2e673b38a859">show_array</a>(arr1);</div>
+<div class="line"><span class="lineno">   92</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(arr1.begin(), arr1.end()));</div>
+<div class="line"><span class="lineno">   93</span>    <span class="comment">// Test 2</span></div>
+<div class="line"><span class="lineno">   94</span>    std::array &lt;int, 5&gt; arr2;</div>
+<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> &amp;x : arr2) {</div>
+<div class="line"><span class="lineno">   96</span>        x = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100;</div>
+<div class="line"><span class="lineno">   97</span>    }</div>
+<div class="line"><span class="lineno">   98</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Original Array : &quot;</span>;</div>
 <div class="line"><span class="lineno">   99</span>    <a class="code hl_function" href="#ae8adaeff66471f9ed84f2e673b38a859">show_array</a>(arr2);</div>
-<div class="line"><span class="lineno">  100</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(arr2.begin(), arr2.end()));</div>
-<div class="line"><span class="lineno">  101</span>}</div>
+<div class="line"><span class="lineno">  100</span>    arr2 = <a class="code hl_function" href="../../d5/d91/namespacesorting.html#affc6ee160142cd017f8c4b213437d0fd">sorting::randomized_bogosort</a>(arr2);</div>
+<div class="line"><span class="lineno">  101</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sorted Array : &quot;</span>;</div>
+<div class="line"><span class="lineno">  102</span>    <a class="code hl_function" href="#ae8adaeff66471f9ed84f2e673b38a859">show_array</a>(arr2);</div>
+<div class="line"><span class="lineno">  103</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(arr2.begin(), arr2.end()));</div>
+<div class="line"><span class="lineno">  104</span>}</div>
 <div class="ttc" id="ais_sorted_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></div><div class="ttdeci">T is_sorted(T... args)</div></div>
 <div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/ddb/bogo__sort_8cpp_ae1a3968e7947464bee7714f6d43b7002_cgraph.svg" width="422" height="299"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/ddb/bogo__sort_8cpp_ae1a3968e7947464bee7714f6d43b7002_cgraph.svg" width="402" height="299"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
