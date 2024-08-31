@@ -10,7 +10,7 @@
 
 #include <algorithm>  /// For std::min and std::max
 #include <cassert>    /// For assert
-#include <vector>     /// For vector container
+#include <vector>     /// For std::vector
 
 /*
  * @namespace
