@@ -11,6 +11,7 @@
  * @author [Ritika Gupta](https://github.com/RitikaGupta8734)
  */
 
+#include <cstdint>   /// for integral typedefs
 #include <iostream>  /// for IO operations
 #ifdef _MSC_VER
 #include <string>  /// for string (use this for MS Visual C++)
