@@ -214,7 +214,8 @@ var NAVTREEINDEX3 =
 "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#ae9e979edd69678b85665c01e2ee97828":[10,0,16,0,0,5],
 "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#af64848d6630c39d0f09ce2359cc7c4f8":[10,0,16,0,0,2],
 "d2/d90/namespacegreedy__algorithms.html":[9,0,37],
-"d2/d90/namespacegreedy__algorithms.html#a127ce4403660032f53ae2e6467e5427d":[9,0,37,1],
+"d2/d90/namespacegreedy__algorithms.html#a127ce4403660032f53ae2e6467e5427d":[9,0,37,2],
+"d2/d90/namespacegreedy__algorithms.html#a33e3819aa9ffec0e380383c52603b502":[9,0,37,1],
 "d2/d9a/structothers_1_1iterative__tree__traversals_1_1_node.html":[10,0,13,0,1],
 "d2/d9a/structothers_1_1iterative__tree__traversals_1_1_node.html#a1dbaeff928e469a05251879568515b8e":[10,0,13,0,1,1],
 "d2/d9a/structothers_1_1iterative__tree__traversals_1_1_node.html#ad443d44275337b9e361375ce66f1104f":[10,0,13,0,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "d3/d06/ode__semi__implicit__euler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[11,0,15,17,1],
 "d3/d06/ode__semi__implicit__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f":[11,0,15,17,3],
 "d3/d06/ode__semi__implicit__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe":[11,0,15,17,2],
-"d3/d06/ode__semi__implicit__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b":[11,0,15,17,0],
-"d3/d09/node_8hpp.html":[11,0,4,12]
+"d3/d06/ode__semi__implicit__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b":[11,0,15,17,0]
 };

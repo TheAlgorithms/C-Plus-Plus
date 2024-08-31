@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"d5/d91/namespacesorting.html#af2c5b92cbfe73f63f6074c61b0a45331":[9,0,106,15],
 "d5/d91/namespacesorting.html#affc6ee160142cd017f8c4b213437d0fd":[9,0,106,13],
 "d5/d95/structdata__structures_1_1treap_1_1_treap.html":[9,0,20,0,0],
 "d5/d95/structdata__structures_1_1treap_1_1_treap.html":[10,0,2,5,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "d6/d80/dynamic__programming_2subset__sum_8cpp.html#ac94e6c0dee11278ac0a5491f1b9a4a50":[11,0,6,14,1],
 "d6/d80/dynamic__programming_2subset__sum_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,6,14,0],
 "d6/d84/classhashing_1_1sha256_1_1_hash.html":[10,0,8,0,0],
-"d6/d84/classhashing_1_1sha256_1_1_hash.html#a0896c27ac39c780e0ee62417fdd0b9d3":[10,0,8,0,0,1],
-"d6/d84/classhashing_1_1sha256_1_1_hash.html#a4581f503a263d8e928e5716d54477e08":[10,0,8,0,0,0]
+"d6/d84/classhashing_1_1sha256_1_1_hash.html#a0896c27ac39c780e0ee62417fdd0b9d3":[10,0,8,0,0,1]
 };

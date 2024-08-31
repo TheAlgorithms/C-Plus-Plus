@@ -1,5 +1,10 @@
 var NAVTREEINDEX13 =
 {
+"de/d0d/classrange__queries_1_1fenwick__tree.html#af9f543aa5976b8cc5422490b3d6250c6":[10,0,16,1,7],
+"de/d0d/fibonacci__search_8cpp.html":[11,0,21,1],
+"de/d0d/fibonacci__search_8cpp.html#a0bc61b3903d9a53061bf31e5d110fe61":[11,0,21,1,0],
+"de/d0d/fibonacci__search_8cpp.html#a2aa09bef74ee063c1331de0883af4f4f":[11,0,21,1,3],
+"de/d0d/fibonacci__search_8cpp.html#a5e144326104e57a3808aed7eb098db0d":[11,0,21,1,2],
 "de/d0d/fibonacci__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,21,1,1],
 "de/d23/disjoint__set_8cpp.html":[11,0,4,6],
 "de/d23/disjoint__set_8cpp.html#a010965fc5f16cca5a62506afab24e4ec":[11,0,4,6,0],
@@ -196,10 +201,6 @@ var NAVTREEINDEX13 =
 "df/d47/stack_8hpp.html":[11,0,4,20],
 "df/d47/stack_8hpp_source.html":[11,0,4,20],
 "df/d4a/namespaceselection__sort__recursive.html":[9,0,101],
-"df/d64/jumpgame_8cpp.html":[11,0,11,2],
-"df/d64/jumpgame_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,11,2,2],
-"df/d64/jumpgame_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,11,2,1],
-"df/d64/jumpgame_8cpp.html#af205390325e8c999bd68b93fa5252755":[11,0,11,2,0],
 "df/d66/vector__cross__product_8cpp.html":[11,0,14,56],
 "df/d66/vector__cross__product_8cpp.html#a225732399c5c076976eae5b180a9f8c9":[11,0,14,56,0],
 "df/d66/vector__cross__product_8cpp.html#a4b2a9757a87c18e1642d72410ecfaba8":[11,0,14,56,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "df/dce/namespacegraph.html#a8e1b547cd407c0774e63f0dc95cda9e7":[9,0,35,7],
 "df/dce/namespacegraph.html#a9125ceb66bfbec3093bba64c2c1e99e2":[9,0,35,4],
 "df/dce/namespacegraph.html#ab5428a3519267a28bba4b4310cfbb6ae":[9,0,35,8],
-"df/dce/namespacegraph.html#ab7706341d006e20d1ae58274187a3346":[9,0,35,14],
-"df/dce/namespacegraph.html#ad4016cfc80485a43748895a2c26c7d08":[9,0,35,5]
+"df/dce/namespacegraph.html#ab7706341d006e20d1ae58274187a3346":[9,0,35,14]
 };

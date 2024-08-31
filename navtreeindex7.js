@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"d6/d84/classhashing_1_1sha256_1_1_hash.html#a4581f503a263d8e928e5716d54477e08":[10,0,8,0,0,0],
 "d6/d84/namespaceutils.html":[9,0,127],
 "d6/d8d/namespacemorse.html":[9,0,73],
 "d6/d9d/large__factorial_8cpp.html":[11,0,14,28],
@@ -32,6 +33,10 @@ var NAVTREEINDEX7 =
 "d6/db8/inv__sqrt_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,14,26,3],
 "d6/db8/inv__sqrt_8cpp.html#ad219034bf5fba657f5035ec5a1d50f52":[11,0,14,26,0],
 "d6/db8/inv__sqrt_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,26,1],
+"d6/dba/jump__game_8cpp.html":[11,0,11,2],
+"d6/dba/jump__game_8cpp.html#a33e3819aa9ffec0e380383c52603b502":[11,0,11,2,0],
+"d6/dba/jump__game_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,11,2,2],
+"d6/dba/jump__game_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,11,2,1],
 "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html":[10,0,11,0,0],
 "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html#a499df7a01bcd348345dc5a0ab79bb0e9":[10,0,11,0,0,2],
 "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html#a738a5f59bb3560c81cdb7f43bcfe9fec":[10,0,11,0,0,3],
@@ -244,10 +249,5 @@ var NAVTREEINDEX7 =
 "d8/d61/radix__sort2_8cpp.html#a98ead7d43b11505398daf9a894f122f9":[11,0,22,17,2],
 "d8/d61/radix__sort2_8cpp.html#ae0cfd94fa3765b53d4ec7893ffaee5f8":[11,0,22,17,1],
 "d8/d61/radix__sort2_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,22,17,0],
-"d8/d64/namespaceboruvkas__minimum__spanning__tree.html":[9,0,10],
-"d8/d69/classgraph_1_1_h_k_graph.html":[9,0,35,1],
-"d8/d69/classgraph_1_1_h_k_graph.html":[10,0,6,2],
-"d8/d69/classgraph_1_1_h_k_graph.html#a0da5aa674d3b3e54a38251ee60d7cd64":[9,0,35,1,1],
-"d8/d69/classgraph_1_1_h_k_graph.html#a0da5aa674d3b3e54a38251ee60d7cd64":[10,0,6,2,1],
-"d8/d69/classgraph_1_1_h_k_graph.html#a35893def7a1c5cd60907b4893117796f":[9,0,35,1,6]
+"d8/d64/namespaceboruvkas__minimum__spanning__tree.html":[9,0,10]
 };

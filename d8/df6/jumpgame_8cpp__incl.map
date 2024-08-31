@@ -1,9 +1,0 @@
-<map id="greedy_algorithms/jumpgame.cpp" name="greedy_algorithms/jumpgame.cpp">
-<area shape="rect" id="Node000001" title="Implementation of an algorithm to solve the jumping game problem." alt="" coords="14,5,230,31"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,63,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,34,62,71,59,67,105,29"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="86,79,158,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="125,31,125,63,119,63,119,31"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="182,79,246,105"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="139,29,188,67,185,72,136,34"/>
-</map>
