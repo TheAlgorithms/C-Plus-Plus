@@ -16,6 +16,7 @@
  * @author [Prashant Thakur](https://github.com/prashant-th18)
  */
 #include <cassert>   /// for assert
+#include <cstdint>   /// for integral typedefs
 #include <iostream>  /// for IO operations
 /**
  * @namespace bit_manipulation
