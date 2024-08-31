@@ -9,6 +9,7 @@
  * @author [tushar2407](https://github.com/tushar2407)
  */
 #include <cassert>   /// for assert
+#include <cstdint>   /// for integral typedefs
 #include <iostream>  /// for IO operations
 #include <queue>     /// for queue data structure
 
