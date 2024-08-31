@@ -12,7 +12,8 @@
  * @author [Ravishankar Joshi](https://github.com/ravibitsgoa)
  */
 
-#include <cassert>   /// for assert
+#include <cassert>  /// for assert
+#include <cstdint>
 #include <iostream>  /// for io operations
 
 /**
