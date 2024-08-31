@@ -128,6 +128,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5239174fa0d987f2c67edc1f2af82beb" id="r_a5239174fa0d987f2c67edc1f2af82beb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5239174fa0d987f2c67edc1f2af82beb">maxCircularSum</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &amp;arr)</td></tr>
 <tr class="memdesc:a5239174fa0d987f2c67edc1f2af82beb"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the maximum contiguous circular sum of an array  <br /></td></tr>
 <tr class="separator:a5239174fa0d987f2c67edc1f2af82beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a066e0e739e7c276eee6e61d5b4d37ce8" id="r_a066e0e739e7c276eee6e61d5b4d37ce8"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a066e0e739e7c276eee6e61d5b4d37ce8">trappedRainwater</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint32_t &gt; &amp;heights)</td></tr>
+<tr class="memdesc:a066e0e739e7c276eee6e61d5b4d37ce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate the trapped rainwater.  <br /></td></tr>
+<tr class="separator:a066e0e739e7c276eee6e61d5b4d37ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Dynamic Programming algorithms. </p>
@@ -148,7 +151,8 @@ Functions</h2></td></tr>
 <p>Dynamic Programming algorithms</p>
 <p>for assert for IO operations for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
 <p>for std::assert for IO operations for unordered map</p>
-<p>Dynamic Programming algorithms </p>
+<p>Dynamic Programming algorithms</p>
+<p>For <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a> and <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a> For assert For <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> For integral typedefs For <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="af046365a8d77a1267acc082f86135a26" name="af046365a8d77a1267acc082f86135a26"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af046365a8d77a1267acc082f86135a26">&#9670;&#160;</a></span>is_armstrong()</h2>
@@ -409,6 +413,66 @@ Here is the call graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d24/namespacedynamic__programming_a5239174fa0d987f2c67edc1f2af82beb_cgraph.svg" width="327" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a066e0e739e7c276eee6e61d5b4d37ce8" name="a066e0e739e7c276eee6e61d5b4d37ce8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a066e0e739e7c276eee6e61d5b4d37ce8">&#9670;&#160;</a></span>trappedRainwater()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t dynamic_programming::trappedRainwater </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint32_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>heights</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to calculate the trapped rainwater. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">heights</td><td>Array representing the heights of walls </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The amount of trapped rainwater </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   27</span>                                                              {</div>
+<div class="line"><span class="lineno">   28</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> n = heights.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">if</span> (n &lt;= 2)</div>
+<div class="line"><span class="lineno">   30</span>        <span class="keywordflow">return</span> 0;  <span class="comment">// No water can be trapped with less than 3 walls</span></div>
+<div class="line"><span class="lineno">   31</span> </div>
+<div class="line"><span class="lineno">   32</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a> leftMax(n), rightMax(n);</div>
+<div class="line"><span class="lineno">   33</span> </div>
+<div class="line"><span class="lineno">   34</span>    <span class="comment">// Calculate the maximum height of wall to the left of each wall</span></div>
+<div class="line"><span class="lineno">   35</span>    leftMax[0] = heights[0];</div>
+<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">for</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> i = 1; i &lt; n; ++i) {</div>
+<div class="line"><span class="lineno">   37</span>        leftMax[i] = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(leftMax[i - 1], heights[i]);</div>
+<div class="line"><span class="lineno">   38</span>    }</div>
+<div class="line"><span class="lineno">   39</span> </div>
+<div class="line"><span class="lineno">   40</span>    <span class="comment">// Calculate the maximum height of wall to the right of each wall</span></div>
+<div class="line"><span class="lineno">   41</span>    rightMax[n - 1] = heights[n - 1];</div>
+<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">for</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> i = n - 2; i &lt; n; --i) {</div>
+<div class="line"><span class="lineno">   43</span>        rightMax[i] = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(rightMax[i + 1], heights[i]);</div>
+<div class="line"><span class="lineno">   44</span>    }</div>
+<div class="line"><span class="lineno">   45</span> </div>
+<div class="line"><span class="lineno">   46</span>    <span class="comment">// Calculate the trapped rainwater between walls</span></div>
+<div class="line"><span class="lineno">   47</span>    uint32_t trappedWater = 0;</div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">for</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> i = 0; i &lt; n; ++i) {</div>
+<div class="line"><span class="lineno">   49</span>        trappedWater +=</div>
+<div class="line"><span class="lineno">   50</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(0u, <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(leftMax[i], rightMax[i]) - heights[i]);</div>
+<div class="line"><span class="lineno">   51</span>    }</div>
+<div class="line"><span class="lineno">   52</span> </div>
+<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">return</span> trappedWater;</div>
+<div class="line"><span class="lineno">   54</span>}</div>
+<div class="ttc" id="asize_t_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d24/namespacedynamic__programming_a066e0e739e7c276eee6e61d5b4d37ce8_cgraph.svg" width="327" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

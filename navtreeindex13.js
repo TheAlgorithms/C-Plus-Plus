@@ -1,5 +1,10 @@
 var NAVTREEINDEX13 =
 {
+"de/d0d/classrange__queries_1_1fenwick__tree.html#aef7ba885b91af093e9e514358fa0f36c":[9,0,95,0,1],
+"de/d0d/classrange__queries_1_1fenwick__tree.html#aef7ba885b91af093e9e514358fa0f36c":[10,0,16,1,1],
+"de/d0d/classrange__queries_1_1fenwick__tree.html#af7b7a8c1c5724ed8683d7e28bef526e6":[9,0,95,0,6],
+"de/d0d/classrange__queries_1_1fenwick__tree.html#af7b7a8c1c5724ed8683d7e28bef526e6":[10,0,16,1,6],
+"de/d0d/classrange__queries_1_1fenwick__tree.html#af9f543aa5976b8cc5422490b3d6250c6":[9,0,95,0,7],
 "de/d0d/classrange__queries_1_1fenwick__tree.html#af9f543aa5976b8cc5422490b3d6250c6":[10,0,16,1,7],
 "de/d0d/fibonacci__search_8cpp.html":[11,0,21,1],
 "de/d0d/fibonacci__search_8cpp.html#a0bc61b3903d9a53061bf31e5d110fe61":[11,0,21,1,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX13 =
 "df/dce/namespacegraph.html#a0e30e0dca68cb6e4f671440819b35b6a":[9,0,35,6],
 "df/dce/namespacegraph.html#a3ae80bc4c6a79d041b4f3a6589eb7fb8":[9,0,35,10],
 "df/dce/namespacegraph.html#a64c1db5aad7502c6f08e4652f6edd463":[9,0,35,11],
-"df/dce/namespacegraph.html#a83ab16e96cec644109a58dfc9329bc2b":[9,0,35,12],
-"df/dce/namespacegraph.html#a84b0551489c613a681cc83b34450da4b":[9,0,35,13],
-"df/dce/namespacegraph.html#a8e1b547cd407c0774e63f0dc95cda9e7":[9,0,35,7],
-"df/dce/namespacegraph.html#a9125ceb66bfbec3093bba64c2c1e99e2":[9,0,35,4],
-"df/dce/namespacegraph.html#ab5428a3519267a28bba4b4310cfbb6ae":[9,0,35,8],
-"df/dce/namespacegraph.html#ab7706341d006e20d1ae58274187a3346":[9,0,35,14]
+"df/dce/namespacegraph.html#a83ab16e96cec644109a58dfc9329bc2b":[9,0,35,12]
 };

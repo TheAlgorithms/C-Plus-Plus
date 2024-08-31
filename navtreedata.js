@@ -146,11 +146,11 @@ var NAVTREEINDEX =
 "d6/d84/classhashing_1_1sha256_1_1_hash.html#a4581f503a263d8e928e5716d54477e08",
 "d8/d69/classgraph_1_1_h_k_graph.html",
 "d9/d13/namespaceinversion.html",
-"da/d52/minimum__edit__distance_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
-"db/d9a/classuint128__t.html#a5133f854a93efe47fd1f0f6a9589856d",
-"dd/d12/vigenere__cipher_8cpp.html",
-"de/d0d/classrange__queries_1_1fenwick__tree.html#af9f543aa5976b8cc5422490b3d6250c6",
-"df/dce/namespacegraph.html#ad4016cfc80485a43748895a2c26c7d08"
+"da/d50/count__of__trailing__ciphers__in__factorial__n_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"db/d9a/classuint128__t.html#a44e472cf685cac6edc5172eac2e66860",
+"dd/d0d/insertion__sort_8cpp.html#a78cb2f3b97b6db2c062b2a1df05c9ea9",
+"de/d0d/classrange__queries_1_1fenwick__tree.html#aef7ba885b91af093e9e514358fa0f36c",
+"df/dce/namespacegraph.html#a84b0551489c613a681cc83b34450da4b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

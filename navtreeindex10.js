@@ -1,5 +1,9 @@
 var NAVTREEINDEX10 =
 {
+"da/d50/count__of__trailing__ciphers__in__factorial__n_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,1,2,0],
+"da/d52/minimum__edit__distance_8cpp.html":[11,0,6,11],
+"da/d52/minimum__edit__distance_8cpp.html#a0138c226bd79ffe6d839c787cfc60347":[11,0,6,11,2],
+"da/d52/minimum__edit__distance_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[11,0,6,11,1],
 "da/d52/minimum__edit__distance_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,6,11,3],
 "da/d52/minimum__edit__distance_8cpp.html#ade2fcfe0359f3c7691bfaa04b14943e2":[11,0,6,11,0],
 "da/d5a/class_complex.html":[10,0,26],
@@ -245,9 +249,5 @@ var NAVTREEINDEX10 =
 "db/d9a/classuint128__t.html#a3c4a7e775a0820196fc08303bbeed44a":[10,0,58,57],
 "db/d9a/classuint128__t.html#a3facc74d6d078604fe2c80d0abfd3304":[10,0,58,70],
 "db/d9a/classuint128__t.html#a4147188abcdcdb12c61bfbe4e4c0a363":[10,0,58,5],
-"db/d9a/classuint128__t.html#a43eafd4824666b413befe5edbc90ae7f":[10,0,58,76],
-"db/d9a/classuint128__t.html#a44e472cf685cac6edc5172eac2e66860":[10,0,58,28],
-"db/d9a/classuint128__t.html#a44fd2a4a4cc1d13f93ac222db5a46c67":[10,0,58,68],
-"db/d9a/classuint128__t.html#a4562c218813c8705bccb25d8786ca77c":[10,0,58,52],
-"db/d9a/classuint128__t.html#a488e65a14d4c32a096011aa4725cdb30":[10,0,58,27]
+"db/d9a/classuint128__t.html#a43eafd4824666b413befe5edbc90ae7f":[10,0,58,76]
 };

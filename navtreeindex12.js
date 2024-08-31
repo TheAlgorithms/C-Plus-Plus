@@ -1,5 +1,9 @@
 var NAVTREEINDEX12 =
 {
+"dd/d0d/insertion__sort_8cpp.html#a78cb2f3b97b6db2c062b2a1df05c9ea9":[11,0,22,9,2],
+"dd/d0d/insertion__sort_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9":[11,0,22,9,4],
+"dd/d0d/insertion__sort_8cpp.html#a8fe6bac9e03f58abcc2ce26ef3de1b5f":[11,0,22,9,1],
+"dd/d0d/insertion__sort_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,22,9,3],
 "dd/d12/vigenere__cipher_8cpp.html":[11,0,2,8],
 "dd/d12/vigenere__cipher_8cpp.html#a3cfc3f9b20a0f230a2fcefd31dc6848e":[11,0,2,8,0],
 "dd/d12/vigenere__cipher_8cpp.html#a6bd3880ea6820c232c1eddf47553c257":[11,0,2,8,1],
@@ -39,6 +43,7 @@ var NAVTREEINDEX12 =
 "dd/d1f/classdsu.html#ac713a5b496d0405c82e2808a85e58415":[10,0,29,6],
 "dd/d21/namespacewindowed__median.html":[9,0,133],
 "dd/d24/namespacedynamic__programming.html":[9,0,27],
+"dd/d24/namespacedynamic__programming.html#a066e0e739e7c276eee6e61d5b4d37ce8":[9,0,27,4],
 "dd/d24/namespacedynamic__programming.html#a0a2215194e58786c34db1ccaf8031079":[9,0,27,1],
 "dd/d24/namespacedynamic__programming.html#a5239174fa0d987f2c67edc1f2af82beb":[9,0,27,3],
 "dd/d24/namespacedynamic__programming.html#af046365a8d77a1267acc082f86135a26":[9,0,27,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX12 =
 "de/d0d/classrange__queries_1_1fenwick__tree.html#a5ea37183524553bbf2234a36a44a4b9a":[9,0,95,0,0],
 "de/d0d/classrange__queries_1_1fenwick__tree.html#a5ea37183524553bbf2234a36a44a4b9a":[10,0,16,1,0],
 "de/d0d/classrange__queries_1_1fenwick__tree.html#ab492ebf07cab0e3c32d277ad986de801":[9,0,95,0,2],
-"de/d0d/classrange__queries_1_1fenwick__tree.html#ab492ebf07cab0e3c32d277ad986de801":[10,0,16,1,2],
-"de/d0d/classrange__queries_1_1fenwick__tree.html#aef7ba885b91af093e9e514358fa0f36c":[9,0,95,0,1],
-"de/d0d/classrange__queries_1_1fenwick__tree.html#aef7ba885b91af093e9e514358fa0f36c":[10,0,16,1,1],
-"de/d0d/classrange__queries_1_1fenwick__tree.html#af7b7a8c1c5724ed8683d7e28bef526e6":[9,0,95,0,6],
-"de/d0d/classrange__queries_1_1fenwick__tree.html#af7b7a8c1c5724ed8683d7e28bef526e6":[10,0,16,1,6],
-"de/d0d/classrange__queries_1_1fenwick__tree.html#af9f543aa5976b8cc5422490b3d6250c6":[9,0,95,0,7]
+"de/d0d/classrange__queries_1_1fenwick__tree.html#ab492ebf07cab0e3c32d277ad986de801":[10,0,16,1,2]
 };
