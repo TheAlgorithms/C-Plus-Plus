@@ -41,6 +41,7 @@
 #include <algorithm>  /// Used for std::copy
 #include <array>      /// Used for std::array
 #include <cassert>    /// Used for assert
+#include <cstdint>    /// for integral typedefs
 #include <cstring>    /// Used for std::memcopy
 #include <iostream>   /// Used for IO operations
 #include <string>     /// Used for strings

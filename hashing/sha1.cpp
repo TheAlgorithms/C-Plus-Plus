@@ -32,6 +32,7 @@
 #include <algorithm>  /// For std::copy
 #include <array>      /// For std::array
 #include <cassert>    /// For assert
+#include <cstdint>    /// for integral typedefs
 #include <cstring>    /// For std::memcopy
 #include <iostream>   /// For IO operations
 #include <string>     /// For strings
