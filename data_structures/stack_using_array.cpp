@@ -1,7 +1,7 @@
-#include <cassert>
-#include <iostream>
-#include <memory>
-#include <stdexcept>
+#include <cassert> /// For std::assert
+#include <iostream> /// For std::cout
+#include <memory> /// For std::unique_ptr
+#include <stdexcept> /// For std::out_of_range
 
 namespace data_structures {
 /**
