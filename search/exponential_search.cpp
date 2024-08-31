@@ -14,7 +14,8 @@
  */
 #include <cassert>
 #include <cmath>
-#include <iostream>
+#include <cstdint>
+#include <cstdint>  /// for integral typedefs
 #ifdef _MSC_VER
 #include <string>  // use for MS Visual C++
 #else
