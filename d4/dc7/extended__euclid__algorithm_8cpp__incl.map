@@ -1,7 +1,9 @@
 <map id="math/extended_euclid_algorithm.cpp" name="math/extended_euclid_algorithm.cpp">
-<area shape="rect" id="Node000001" title="GCD using [extended Euclid&#39;s algorithm] (https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm)" alt="" coords="16,5,165,46"/>
+<area shape="rect" id="Node000001" title="GCD using [extended Euclid&#39;s algorithm] (https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm)" alt="" coords="66,5,214,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,80,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,48,60,82,55,79,76,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,48,71,86,68,82,114,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="104,94,176,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="105,45,126,79,122,82,100,48"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,46,142,78,137,78,137,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="199,94,259,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="164,44,206,82,202,86,160,48"/>
 </map>
