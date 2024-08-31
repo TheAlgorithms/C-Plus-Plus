@@ -108,8 +108,8 @@ static void test() {
     data_structures::Stack<int> stack(5);
 
     // Test empty and full operations
-    assert(stack.empty() == true);
-    assert(stack.full() == false);
+    assert(stack.empty());
+    assert(!stack.full());
 
     // Test pushing elements and checking topmost
     stack.push(10);
@@ -121,7 +121,7 @@ static void test() {
     stack.push(30);
     stack.push(40);
     stack.push(50);
-    assert(stack.full() == true);
+    assert(stack.full());
 
     // Test stack overflow
     try {
@@ -142,8 +142,8 @@ static void test() {
     assert(stack.pop() == 20);
     assert(stack.pop() == 10);
 
-    assert(stack.empty() == true);
-    assert(stack.full() == false);
+    assert(stack.empty());
+    assert(!stack.full());
 
     // Test stack underflow
     try {
