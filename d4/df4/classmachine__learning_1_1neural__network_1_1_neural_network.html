@@ -554,7 +554,7 @@ Here is the call graph for this function:</div>
 </dl>
 <div class="fragment"><div class="line"><span class="lineno">  607</span>                                                                      {</div>
 <div class="line"><span class="lineno">  608</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;INFO: Evaluation Started&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  609</span>        <span class="keywordtype">double</span> acc = 0, loss = 0;  <span class="comment">// intialize performance metrics with zero</span></div>
+<div class="line"><span class="lineno">  609</span>        <span class="keywordtype">double</span> acc = 0, loss = 0;  <span class="comment">// initialize performance metrics with zero</span></div>
 <div class="line"><span class="lineno">  610</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; X.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {  <span class="comment">// For every sample in input</span></div>
 <div class="line"><span class="lineno">  611</span>            <span class="comment">// Get predictions</span></div>
 <div class="line"><span class="lineno">  612</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::valarray&lt;double&gt;</a>&gt; pred =</div>
@@ -723,7 +723,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  502</span>            <span class="keyword">auto</span> start =</div>
 <div class="line"><span class="lineno">  503</span>                <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/high_resolution_clock/now.html">std::chrono::high_resolution_clock::now</a>();  <span class="comment">// Start clock</span></div>
 <div class="line"><span class="lineno">  504</span>            <span class="keywordtype">double</span> loss = 0,</div>
-<div class="line"><span class="lineno">  505</span>                   acc = 0;  <span class="comment">// Intialize performance metrics with zero</span></div>
+<div class="line"><span class="lineno">  505</span>                   acc = 0;  <span class="comment">// Initialize performance metrics with zero</span></div>
 <div class="line"><span class="lineno">  506</span>            <span class="comment">// For each starting index of batch</span></div>
 <div class="line"><span class="lineno">  507</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> batch_start = 0; batch_start &lt; X.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
 <div class="line"><span class="lineno">  508</span>                 batch_start += batch_size) {</div>
@@ -736,7 +736,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  515</span>                    <span class="comment">// They will be averaged and applied to kernel</span></div>
 <div class="line"><span class="lineno">  516</span>                    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;std::valarray&lt;double&gt;</a>&gt;&gt; gradients;</div>
 <div class="line"><span class="lineno">  517</span>                    gradients.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/resize.html">resize</a>(this-&gt;<a class="code hl_namespace" href="../../d5/d2c/namespacelayers.html">layers</a>.size());</div>
-<div class="line"><span class="lineno">  518</span>                    <span class="comment">// First intialize gradients to zero</span></div>
+<div class="line"><span class="lineno">  518</span>                    <span class="comment">// First initialize gradients to zero</span></div>
 <div class="line"><span class="lineno">  519</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; gradients.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {</div>
 <div class="line"><span class="lineno">  520</span>                        <a class="code hl_function" href="../../d8/d77/namespacemachine__learning.html#ac1bdaa2a724b4ce6a6bb371a5dbe2e7e">zeroes_initialization</a>(</div>
 <div class="line"><span class="lineno">  521</span>                            gradients[i], <a class="code hl_function" href="../../d8/d77/namespacemachine__learning.html#aa4bbf61e65f8cd297255fa94b983d078">get_shape</a>(this-&gt;<a class="code hl_namespace" href="../../d5/d2c/namespacelayers.html">layers</a>[i].kernel));</div>
