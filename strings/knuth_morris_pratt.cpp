@@ -10,16 +10,13 @@
  * 2. Step through the text one character at a time and compare it to a
  * character in the pattern updating our location within the pattern if
  * necessary
+ * @author [Yancey](https://github.com/Yancey2023)
  */
 
-#include <iostream>
-#ifdef _MSC_VER
-#include <string>  // use this for MS Visual C++
-#else
-#include <cstring>
-#endif
-#include <cassert>
-#include <vector>
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
+#include <string>    /// for std::string
+#include <vector>    /// for std::vector
 
 /**
  * @namespace string_search
