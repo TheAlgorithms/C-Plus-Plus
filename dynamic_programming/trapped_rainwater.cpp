@@ -12,6 +12,7 @@
 #include <cassert>    /// For assert
 #include <cstddef>    /// For std::size_t
 #include <vector>     /// For std::vector
+#include <cstdint>    /// For integral typedefs
 
 /*
  * @namespace
@@ -23,12 +24,12 @@ namespace dynamic_programming {
  * @param heights Array representing the heights of walls
  * @return The amount of trapped rainwater
  */
-unsigned int trappedRainwater(const std::vector<unsigned int>& heights) {
+uint32_t trappedRainwater(const std::vector<uint32_t>& heights) {
     std::size_t n = heights.size();
     if (n <= 2)
         return 0;  // No water can be trapped with less than 3 walls
 
-    std::vector<unsigned int> leftMax(n), rightMax(n);
+    std::vector<uint32_t> leftMax(n), rightMax(n);
 
     // Calculate the maximum height of wall to the left of each wall
     leftMax[0] = heights[0];
@@ -43,7 +44,7 @@ unsigned int trappedRainwater(const std::vector<unsigned int>& heights) {
     }
 
     // Calculate the trapped rainwater between walls
-    unsigned int trappedWater = 0;
+    uint32_t trappedWater = 0;
     for (std::size_t i = 0; i < n; ++i) {
         trappedWater +=
             std::max(0u, std::min(leftMax[i], rightMax[i]) - heights[i]);
@@ -59,35 +60,35 @@ unsigned int trappedRainwater(const std::vector<unsigned int>& heights) {
  * @returns void
  */
 static void test() {
-    std::vector<unsigned int> test_basic = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+    std::vector<uint32_t> test_basic = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
     assert(dynamic_programming::trappedRainwater(test_basic) == 6);
 
-    std::vector<unsigned int> test_peak_under_water = {3, 0, 2, 0, 4};
+    std::vector<uint32_t> test_peak_under_water = {3, 0, 2, 0, 4};
     assert(dynamic_programming::trappedRainwater(test_peak_under_water) == 7);
 
-    std::vector<unsigned int> test_bucket = {5, 1, 5};
+    std::vector<uint32_t> test_bucket = {5, 1, 5};
     assert(dynamic_programming::trappedRainwater(test_bucket) == 4);
 
-    std::vector<unsigned int> test_skewed_bucket = {4, 1, 5};
+    std::vector<uint32_t> test_skewed_bucket = {4, 1, 5};
     assert(dynamic_programming::trappedRainwater(test_skewed_bucket) == 3);
 
-    std::vector<unsigned int> test_empty = {};
+    std::vector<uint32_t> test_empty = {};
     assert(dynamic_programming::trappedRainwater(test_empty) == 0);
 
-    std::vector<unsigned int> test_flat = {0, 0, 0, 0, 0};
+    std::vector<uint32_t> test_flat = {0, 0, 0, 0, 0};
     assert(dynamic_programming::trappedRainwater(test_flat) == 0);
 
-    std::vector<unsigned int> test_no_trapped_water = {1, 1, 2, 4, 0, 0, 0};
+    std::vector<uint32_t> test_no_trapped_water = {1, 1, 2, 4, 0, 0, 0};
     assert(dynamic_programming::trappedRainwater(test_no_trapped_water) == 0);
 
-    std::vector<unsigned int> test_single_elevation = {5};
+    std::vector<uint32_t> test_single_elevation = {5};
     assert(dynamic_programming::trappedRainwater(test_single_elevation) == 0);
 
-    std::vector<unsigned int> test_two_point_elevation = {5, 1};
+    std::vector<uint32_t> test_two_point_elevation = {5, 1};
     assert(dynamic_programming::trappedRainwater(test_two_point_elevation) ==
            0);
 
-    std::vector<unsigned int> test_large_elevation_map_difference = {5, 1, 6, 1,
+    std::vector<uint32_t> test_large_elevation_map_difference = {5, 1, 6, 1,
                                                                      7, 1, 8};
     assert(dynamic_programming::trappedRainwater(
                test_large_elevation_map_difference) == 15);
