@@ -2,7 +2,7 @@
 # when doing a git push
 name: leetcode_directory_writer
 on:
-  push:
+  pull_request:
     paths:
       - 'leetcode/src/**.cpp'
 jobs:
