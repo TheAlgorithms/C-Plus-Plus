@@ -3,6 +3,10 @@
 #include <memory> /// For std::unique_ptr
 #include <stdexcept> /// For std::out_of_range
 
+/**
+ * @namespace
+ * @brief data_structures
+ */
 namespace data_structures {
 /**
  * @brief Class representation of a stack
