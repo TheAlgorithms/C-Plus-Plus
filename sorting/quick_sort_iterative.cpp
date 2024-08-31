@@ -13,7 +13,7 @@
 #include <iostream> /// for std::cout
 #include <vector> /// for std::vector
 #include <stack> /// for std::stack
-#include <algorithm> ///for std::is_sorted
+#include <algorithm> /// for std::is_sorted
 #include <cassert> /// for assert
 
 /**
