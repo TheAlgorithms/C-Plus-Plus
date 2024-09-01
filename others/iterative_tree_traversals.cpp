@@ -180,6 +180,25 @@ std::vector<int64_t> BinaryTree::inOrderIterative(Node *root) {
     }
     return result;
 }
+void deleteAll(Node *root) {
+    if (root) {
+        std::stack<Node *> stack;
+        stack.push(root);
+
+        while (!stack.empty()) {
+            const Node *current = stack.top();
+            stack.pop();
+
+            if (current->right) {
+                stack.push(current->right);
+            }
+            if (current->left) {
+                stack.push(current->left);
+            }
+            delete current;
+        }
+    }
+}
 }  // namespace iterative_tree_traversals
 }  // namespace others
 
@@ -395,6 +414,8 @@ int main() {
 
     test6(binaryTree, root);  // run inorder-iterative test on negative values
     std::cout << "\nIn-order test on-negative value Passed!" << std::endl;
+
+    deleteAll(root);
 
     return 0;
 }
