@@ -87,7 +87,7 @@ var searchData=
   ['getconvexhull_84',['getConvexHull',['../d4/dde/classgeometry_1_1jarvis_1_1_convexhull.html#aeec46e86786ddd461464b07a77c4d5f1',1,'geometry::jarvis::Convexhull']]],
   ['getcount_85',['GetCount',['../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#aac82e17daa088ede9ee00dc69c1e6f06',1,'data_structures::tree_234::Node']]],
   ['getenv_86',['getenv',['http://en.cppreference.com/w/cpp/utility/program/getenv.html',0,'std']]],
-  ['getfailurearray_87',['getFailureArray',['../d9/d03/namespacestring__search.html#a996573527312d5255e1495b879e8a34f',1,'string_search']]],
+  ['getfailurearray_87',['getFailureArray',['../d9/d03/namespacestring__search.html#a83c72ff237cdf623e42d4295e0029bf9',1,'string_search']]],
   ['gethits_88',['getHits',['../d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html#aa24a141455b9fbcbec22392c28d04933',1,'others::lru_cache::LRUCache']]],
   ['getinordersuccessor_89',['getInorderSuccessor',['../d4/d32/inorder__successor__of__bst_8cpp.html#a3923fb22b46e085376703cae0b44d690',1,'operations_on_datastructures::inorder_traversal_of_bst']]],
   ['getitem_90',['GetItem',['../dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a4808acb43668ff8cfd6f7cb44ceedad3',1,'data_structures::tree_234::Node']]],

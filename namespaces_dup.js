@@ -162,8 +162,8 @@ var namespaces_dup =
       [ "brute_force", "d9/d03/namespacestring__search.html#aeb2cd81064717aedd62bfb096b1a73d8", null ],
       [ "check_if_equal", "d9/d03/namespacestring__search.html#aebe07cea289a13142503d98be7df11fd", null ],
       [ "create_hash", "d9/d03/namespacestring__search.html#a8fb0bc932ba8b582c9f4c71338d050f8", null ],
-      [ "getFailureArray", "d9/d03/namespacestring__search.html#a996573527312d5255e1495b879e8a34f", null ],
-      [ "kmp", "d9/d03/namespacestring__search.html#a26a58225ce7d3fa9d4c2f5349a65ed93", null ],
+      [ "getFailureArray", "d9/d03/namespacestring__search.html#a83c72ff237cdf623e42d4295e0029bf9", null ],
+      [ "kmp", "d9/d03/namespacestring__search.html#a1e37af2f023495129cb57338c801209e", null ],
       [ "rabin_karp", "d9/d03/namespacestring__search.html#a21c673d56cbf67b1d2ee4d869185b7d9", null ],
       [ "recalculate_hash", "d9/d03/namespacestring__search.html#aed769d565b705a9b3e0eb1ec74088893", null ]
     ] ],

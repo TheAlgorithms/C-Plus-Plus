@@ -1,0 +1,10 @@
+<map id="string_search::kmp" name="string_search::kmp">
+<area shape="rect" id="Node000001" title="KMP algorithm to find a pattern in a text." alt="" coords="5,63,138,88"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/empty.html#" title=" " alt="" coords="206,5,330,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,60,206,33,207,38,119,65"/>
+<area shape="rect" id="Node000003" href="$d9/d03/namespacestring__search.html#a83c72ff237cdf623e42d4295e0029bf9" title="Generate the partial match table aka failure function for a pattern to search." alt="" coords="186,55,350,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,73,170,73,170,78,138,78"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="398,92,509,118"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="111,86,186,105,288,111,382,109,382,114,288,117,185,110,110,92"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="351,86,383,91,382,96,350,91"/>
+</map>

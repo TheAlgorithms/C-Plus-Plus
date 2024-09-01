@@ -1,8 +1,0 @@
-<map id="string_search::kmp" name="string_search::kmp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,42,138,68"/>
-<area shape="rect" id="Node000002" href="$d9/d03/namespacestring__search.html#a996573527312d5255e1495b879e8a34f" title=" " alt="" coords="186,5,350,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,43,170,38,171,43,138,48"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="398,42,509,68"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="138,54,186,55,350,55,382,54,383,60,350,60,186,60,138,59"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="351,36,383,41,382,46,350,41"/>
-</map>
