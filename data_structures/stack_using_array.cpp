@@ -1,62 +1,179 @@
-#include <iostream>
+#include <cassert>    /// For std::assert
+#include <iostream>   /// For std::cout
+#include <memory>     /// For std::unique_ptr
+#include <stdexcept>  /// For std::out_of_range
 
-int *stack;
-int stack_idx = 0, stack_size;
+/**
+ * @namespace
+ * @brief data_structures
+ */
+namespace data_structures {
+/**
+ * @brief Class representation of a stack
+ * @tparam T The type of the elements in the stack
+ */
+template <typename T>
+class Stack {
+ private:
+    std::unique_ptr<T[]> stack;  ///< Smart pointer to the stack array
+    int stackSize;               ///< Maximum size of the stack
+    int stackIndex;  ///< Index pointing to the top element of the stack
 
-void push(int x) {
-    if (stack_idx == stack_size) {
-        std::cout << "\nOverflow";
-    } else {
-        stack[stack_idx++] = x;
-    }
-}
+ public:
+    /**
+     * @brief Constructs a new Stack object
+     *
+     * @param size Maximum size of the stack
+     */
+    Stack(int size) : stackSize(size), stackIndex(-1), stack(new T[size]) {}
 
-void pop() {
-    if (stack_idx == 0) {
-        std::cout << "\nUnderflow";
-    } else {
-        std::cout << "\n" << stack[--stack_idx] << " deleted";
-    }
-}
+    /**
+     * @brief Checks if the stack is full
+     *
+     * @return true if the stack is full, false otherwise
+     */
+    bool full() const { return stackIndex == stackSize - 1; }
 
-void show() {
-    for (int i = 0; i < stack_idx; i++) {
-        std::cout << stack[i] << "\n";
-    }
-}
+    /**
+     * @brief Checks if the stack is empty
+     * @return true if the stack is empty, false otherwise
+     */
+    bool empty() const { return stackIndex == -1; }
 
-void topmost() { std::cout << "\nTopmost element: " << stack[stack_idx - 1]; }
-void bottom() { std::cout << "\nBottom element: " << stack[0]; } // If we need access to first element without using pop command 
-int main() {
-    std::cout << "\nEnter stack_size of stack : ";
-    std::cin >> stack_size;
-    stack = new int[stack_size];
-    int ch, x;
-    do {
-        std::cout << "\n0. Exit";
-        std::cout << "\n1. Push";
-        std::cout << "\n2. Pop";
-        std::cout << "\n3. Print";
-        std::cout << "\n4. Print topmost element:";
-        std::cout << "\n5. Print Bottom element:";
-        std::cout << "\nEnter Your Choice : ";
-        std::cin >> ch;
-        if (ch == 1) {
-            std::cout << "\nInsert : ";
-            std::cin >> x;
-            push(x);
-        } else if (ch == 2) {
-            pop();
-        } else if (ch == 3) {
-            show();
-        } else if (ch == 4) {
-            topmost();
-        } else if(ch == 5) {
-            bottom();
+    /**
+     * @brief Pushes an element onto the stack
+     *
+     * @param element Element to push onto the stack
+     */
+    void push(T element) {
+        if (full()) {
+            throw std::out_of_range("Stack overflow");
+        } else {
+            stack[++stackIndex] = element;
         }
-    } while (ch != 0);
+    }
 
-    delete[] stack;
+    /**
+     * @brief Pops an element from the stack
+     *
+     * @return The popped element
+     * @throws std::out_of_range if the stack is empty
+     */
+    T pop() {
+        if (empty()) {
+            throw std::out_of_range("Stack underflow");
+        }
+        return stack[stackIndex--];
+    }
 
+    /**
+     * @brief Displays all elements in the stack
+     */
+    void show() const {
+        for (int i = 0; i <= stackIndex; i++) {
+            std::cout << stack[i] << "\n";
+        }
+    }
+
+    /**
+     * @brief Displays the topmost element of the stack
+     *
+     * @return The topmost element of the stack
+     * @throws std::out_of_range if the stack is empty
+     */
+    T topmost() const {
+        if (empty()) {
+            throw std::out_of_range("Stack underflow");
+        }
+        return stack[stackIndex];
+    }
+
+    /**
+     * @brief Displays the bottom element of the stack
+     *
+     * @return The bottom element of the stack
+     * @throws std::out_of_range if the stack is empty
+     */
+    T bottom() const {
+        if (empty()) {
+            throw std::out_of_range("Stack underflow");
+        }
+        return stack[0];
+    }
+};
+}  // namespace data_structures
+
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void test() {
+    data_structures::Stack<int> stack(5);
+
+    // Test empty and full operations
+    assert(stack.empty());
+    assert(!stack.full());
+
+    // Test pushing elements and checking topmost
+    stack.push(10);
+    assert(stack.topmost() == 10);
+
+    stack.push(20);
+    assert(stack.topmost() == 20);
+
+    stack.push(30);
+    stack.push(40);
+    stack.push(50);
+    assert(stack.full());
+
+    // Test stack overflow
+    try {
+        stack.push(60);
+    } catch (const std::out_of_range& e) {
+        assert(std::string(e.what()) == "Stack overflow");
+    }
+
+    // Test popping elements
+    assert(stack.pop() == 50);
+    assert(stack.pop() == 40);
+    assert(stack.pop() == 30);
+
+    // Check topmost and bottom elements
+    assert(stack.topmost() == 20);
+    assert(stack.bottom() == 10);
+
+    assert(stack.pop() == 20);
+    assert(stack.pop() == 10);
+
+    assert(stack.empty());
+    assert(!stack.full());
+
+    // Test stack underflow
+    try {
+        stack.pop();
+    } catch (const std::out_of_range& e) {
+        assert(std::string(e.what()) == "Stack underflow");
+    }
+
+    try {
+        stack.topmost();
+    } catch (const std::out_of_range& e) {
+        assert(std::string(e.what()) == "Stack underflow");
+    }
+
+    try {
+        stack.bottom();
+    } catch (const std::out_of_range& e) {
+        assert(std::string(e.what()) == "Stack underflow");
+    }
+}
+
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
+int main() {
+    test();  // run self-test implementations
+    std::cout << "All tests passed!" << std::endl;
     return 0;
 }
