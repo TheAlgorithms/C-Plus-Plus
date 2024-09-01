@@ -6,6 +6,7 @@ var namespacedata__structures =
     [ "Node", "d9/d49/structdata__structures_1_1_node.html", "d9/d49/structdata__structures_1_1_node" ],
     [ "SegmentTree", "dd/d95/classdata__structures_1_1_segment_tree.html", "dd/d95/classdata__structures_1_1_segment_tree" ],
     [ "SkipList", "d4/d90/classdata__structures_1_1_skip_list.html", "d4/d90/classdata__structures_1_1_skip_list" ],
+    [ "Stack", "d2/dc8/classdata__structures_1_1_stack.html", "d2/dc8/classdata__structures_1_1_stack" ],
     [ "trie", "d0/d3e/classdata__structures_1_1trie.html", "d0/d3e/classdata__structures_1_1trie" ],
     [ "hashDJB2", "d5/d3c/namespacedata__structures.html#a271c753baf6dc5ac6f19fa03c5873eb4", null ],
     [ "hashInt_1", "d5/d3c/namespacedata__structures.html#aa6deb9d4a0f63ea97aef3dce4c6c6677", null ],

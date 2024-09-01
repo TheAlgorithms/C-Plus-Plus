@@ -1,0 +1,5 @@
+<map id="data_structures::Stack::pop" name="data_structures::Stack::pop">
+<area shape="rect" id="Node000001" title="Pops an element from the stack." alt="" coords="5,13,188,38"/>
+<area shape="rect" id="Node000002" href="$d2/dc8/classdata__structures_1_1_stack.html#a04e2e7cb58b2de6d3a15053bfaaf6080" title="Checks if the stack is empty." alt="" coords="236,5,389,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,23,220,23,220,28,188,28"/>
+</map>

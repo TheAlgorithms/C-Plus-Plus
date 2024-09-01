@@ -153,11 +153,12 @@ var searchData=
   ['fsetpos_150',['fsetpos',['http://en.cppreference.com/w/cpp/io/c/fsetpos.html',0,'std']]],
   ['fstream_151',['fstream',['http://en.cppreference.com/w/cpp/io/basic_fstream.html',0,'std::fstream'],['http://en.cppreference.com/w/cpp/io/basic_fstream/basic_fstream.html',0,'std::fstream::fstream()']]],
   ['ftell_152',['ftell',['http://en.cppreference.com/w/cpp/io/c/ftell.html',0,'std']]],
-  ['function_153',['function',['http://en.cppreference.com/w/cpp/utility/functional/function.html',0,'std::function'],['http://en.cppreference.com/w/cpp/utility/functional/function/function.html',0,'std::function::function()']]],
-  ['future_154',['future',['http://en.cppreference.com/w/cpp/thread/future.html',0,'std::future'],['http://en.cppreference.com/w/cpp/thread/future/future.html',0,'std::future::future()']]],
-  ['future_5fcategory_155',['future_category',['http://en.cppreference.com/w/cpp/thread/future/future_category.html',0,'std']]],
-  ['future_5ferror_156',['future_error',['http://en.cppreference.com/w/cpp/thread/future_error.html',0,'std::future_error'],['http://en.cppreference.com/w/cpp/thread/future_error/future_error.html',0,'std::future_error::future_error()']]],
-  ['fwprintf_157',['fwprintf',['http://en.cppreference.com/w/cpp/io/c/fwprintf.html',0,'std']]],
-  ['fwrite_158',['fwrite',['http://en.cppreference.com/w/cpp/io/c/fwrite.html',0,'std']]],
-  ['fwscanf_159',['fwscanf',['http://en.cppreference.com/w/cpp/io/c/fwscanf.html',0,'std']]]
+  ['full_153',['full',['../d2/dc8/classdata__structures_1_1_stack.html#aa753346c8ee5f21d4f4482398fe6d5c1',1,'data_structures::Stack']]],
+  ['function_154',['function',['http://en.cppreference.com/w/cpp/utility/functional/function.html',0,'std::function'],['http://en.cppreference.com/w/cpp/utility/functional/function/function.html',0,'std::function::function()']]],
+  ['future_155',['future',['http://en.cppreference.com/w/cpp/thread/future.html',0,'std::future'],['http://en.cppreference.com/w/cpp/thread/future/future.html',0,'std::future::future()']]],
+  ['future_5fcategory_156',['future_category',['http://en.cppreference.com/w/cpp/thread/future/future_category.html',0,'std']]],
+  ['future_5ferror_157',['future_error',['http://en.cppreference.com/w/cpp/thread/future_error.html',0,'std::future_error'],['http://en.cppreference.com/w/cpp/thread/future_error/future_error.html',0,'std::future_error::future_error()']]],
+  ['fwprintf_158',['fwprintf',['http://en.cppreference.com/w/cpp/io/c/fwprintf.html',0,'std']]],
+  ['fwrite_159',['fwrite',['http://en.cppreference.com/w/cpp/io/c/fwrite.html',0,'std']]],
+  ['fwscanf_160',['fwscanf',['http://en.cppreference.com/w/cpp/io/c/fwscanf.html',0,'std']]]
 ];

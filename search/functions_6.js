@@ -117,11 +117,12 @@ var searchData=
   ['fsetpos_114',['fsetpos',['http://en.cppreference.com/w/cpp/io/c/fsetpos.html',0,'std']]],
   ['fstream_115',['fstream',['http://en.cppreference.com/w/cpp/io/basic_fstream/basic_fstream.html',0,'std::fstream']]],
   ['ftell_116',['ftell',['http://en.cppreference.com/w/cpp/io/c/ftell.html',0,'std']]],
-  ['function_117',['function',['http://en.cppreference.com/w/cpp/utility/functional/function/function.html',0,'std::function']]],
-  ['future_118',['future',['http://en.cppreference.com/w/cpp/thread/future/future.html',0,'std::future']]],
-  ['future_5fcategory_119',['future_category',['http://en.cppreference.com/w/cpp/thread/future/future_category.html',0,'std']]],
-  ['future_5ferror_120',['future_error',['http://en.cppreference.com/w/cpp/thread/future_error/future_error.html',0,'std::future_error']]],
-  ['fwprintf_121',['fwprintf',['http://en.cppreference.com/w/cpp/io/c/fwprintf.html',0,'std']]],
-  ['fwrite_122',['fwrite',['http://en.cppreference.com/w/cpp/io/c/fwrite.html',0,'std']]],
-  ['fwscanf_123',['fwscanf',['http://en.cppreference.com/w/cpp/io/c/fwscanf.html',0,'std']]]
+  ['full_117',['full',['../d2/dc8/classdata__structures_1_1_stack.html#aa753346c8ee5f21d4f4482398fe6d5c1',1,'data_structures::Stack']]],
+  ['function_118',['function',['http://en.cppreference.com/w/cpp/utility/functional/function/function.html',0,'std::function']]],
+  ['future_119',['future',['http://en.cppreference.com/w/cpp/thread/future/future.html',0,'std::future']]],
+  ['future_5fcategory_120',['future_category',['http://en.cppreference.com/w/cpp/thread/future/future_category.html',0,'std']]],
+  ['future_5ferror_121',['future_error',['http://en.cppreference.com/w/cpp/thread/future_error/future_error.html',0,'std::future_error']]],
+  ['fwprintf_122',['fwprintf',['http://en.cppreference.com/w/cpp/io/c/fwprintf.html',0,'std']]],
+  ['fwrite_123',['fwrite',['http://en.cppreference.com/w/cpp/io/c/fwrite.html',0,'std']]],
+  ['fwscanf_124',['fwscanf',['http://en.cppreference.com/w/cpp/io/c/fwscanf.html',0,'std']]]
 ];

@@ -92,6 +92,7 @@ var hierarchy =
     [ "data_structures::SkipList", "d4/d90/classdata__structures_1_1_skip_list.html", null ],
     [ "Solution", "dd/d4f/class_solution.html", null ],
     [ "data_structures::sparse_table::Sparse_table", "da/d37/structdata__structures_1_1sparse__table_1_1_sparse__table.html", null ],
+    [ "data_structures::Stack< T >", "d2/dc8/classdata__structures_1_1_stack.html", null ],
     [ "data_structures::stack_using_queue::Stack", "db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html", null ],
     [ "others::postfix_expression::Stack", "d5/d8a/classothers_1_1postfix__expression_1_1_stack.html", null ],
     [ "stack< ValueType >", "d1/dc2/classstack.html", null ],
