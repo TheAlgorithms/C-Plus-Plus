@@ -86,6 +86,7 @@ void iterativeQuickSort(std::vector<int> &arr)
     }
 }
 
+} // namespace sorting
 /**
  * @brief Self-test implementations
  * @returns void
