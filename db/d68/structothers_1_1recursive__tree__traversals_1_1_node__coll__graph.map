@@ -1,4 +1,6 @@
 <map id="others::recursive_tree_traversals::Node" name="others::recursive_tree_traversals::Node">
-<area shape="rect" id="Node000001" title="The structure to hold Nodes of the tree." alt="" coords="5,5,153,46"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="169,18,179,26,171,33,153,36,153,30,169,28,174,26,167,23"/>
+<area shape="rect" id="Node000001" title="The structure to hold Nodes of the tree." alt="" coords="5,94,153,135"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="170,105,179,114,171,123,154,126,153,121,169,118,174,114,166,110"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/integer.html" title=" " alt="" coords="32,5,126,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,46,82,93,76,93,76,46"/>
 </map>

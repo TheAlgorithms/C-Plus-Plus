@@ -87,7 +87,7 @@ var searchData=
   ['create_5fmatrix_84',['create_matrix',['../de/d75/qr__eigen__values_8cpp.html#a9bbf469d5525a816b0d6ca812119093d',1,'qr_eigen_values.cpp']]],
   ['create_5fmessage_5fschedule_5farray_85',['create_message_schedule_array',['../d4/d08/sha256_8cpp.html#a525531b3939ed44fbf01674e21931b3a',1,'hashing::sha256']]],
   ['create_5frandom_5farray_86',['create_random_array',['../dd/d0d/insertion__sort_8cpp.html#a59914553f24088342c139645a02a8a49',1,'insertion_sort.cpp']]],
-  ['createnewnode_87',['createNewNode',['../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a3078a5ccf45d6a7031dcf46e43de65b6',1,'others::iterative_tree_traversals::BinaryTree::createNewNode()'],['../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#a08711eb2d741f4b51d980cff03b53154',1,'others::recursive_tree_traversals::BT::createNewNode()']]],
+  ['createnewnode_87',['createNewNode',['../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a3078a5ccf45d6a7031dcf46e43de65b6',1,'others::iterative_tree_traversals::BinaryTree::createNewNode()'],['../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#af16da5fe0f5c54d31778d71d5a042114',1,'others::recursive_tree_traversals::BT::createNewNode()']]],
   ['createnode_88',['createNode',['../d8/dee/avltree_8cpp.html#a48d897353aeb6a721dbc6b6c57e035e6',1,'avltree.cpp']]],
   ['createset_89',['CreateSet',['../de/d23/disjoint__set_8cpp.html#a010965fc5f16cca5a62506afab24e4ec',1,'disjoint_set.cpp']]],
   ['cref_90',['cref',['http://en.cppreference.com/w/cpp/utility/functional/ref.html',0,'std']]],

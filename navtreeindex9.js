@@ -191,7 +191,7 @@ var NAVTREEINDEX9 =
 "d9/df4/namespacetests.html#abdd77344d4af8fd56d14a5cabbf2f669":[9,0,121,1],
 "d9/df4/namespacetests.html#af7b81d7a1534216af6a36a80135beb86":[9,0,121,4],
 "d9/df7/structothers_1_1recursive__tree__traversals_1_1_node.html":[10,0,13,3,1],
-"d9/df7/structothers_1_1recursive__tree__traversals_1_1_node.html#a3b8c7ec2863de75916be027fa5287570":[10,0,13,3,1,0],
+"d9/df7/structothers_1_1recursive__tree__traversals_1_1_node.html#a59cc94ba784aeaefec2e915ddfdb1ade":[10,0,13,3,1,0],
 "d9/df7/structothers_1_1recursive__tree__traversals_1_1_node.html#a5a8a7bc2d2f847994220ae9e0b60fff3":[10,0,13,3,1,1],
 "d9/df7/structothers_1_1recursive__tree__traversals_1_1_node.html#ab875304781a4eb9661c0931a6f1fae83":[10,0,13,3,1,2],
 "d9/dfd/comb__sort_8cpp.html":[11,0,22,3],

@@ -11,11 +11,11 @@
 <area shape="rect" id="Node000010" href="$dc/de1/recursive__tree__traversal_8cpp.html#a6d0455dd5c30adda100e95f0423c786e" title="3rd test&#45;case" alt="" coords="201,155,251,180"/>
 <area shape="poly" id="edge16_Node000002_Node000010" title=" " alt="" coords="148,106,197,143,194,147,145,110"/>
 <area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="251,57,299,41,353,27,354,32,300,46,253,62"/>
-<area shape="rect" id="Node000005" href="$dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#a08711eb2d741f4b51d980cff03b53154" title="will allocate the memory for a node and, along the data and return the node." alt="" coords="299,55,510,96"/>
+<area shape="rect" id="Node000005" href="$dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#af16da5fe0f5c54d31778d71d5a042114" title="will allocate the memory for a node and, along the data and return the node." alt="" coords="299,55,510,96"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="252,67,284,68,284,74,252,72"/>
-<area shape="rect" id="Node000006" href="$dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#a5224e6c2ba322b17cc2c3287b77742d5" title="postorder function that will perform the postorder traversal recursively, and return the result vecto..." alt="" coords="319,144,490,185"/>
+<area shape="rect" id="Node000006" href="$dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#ac9404b65f407f631915515fa2e08a40c" title="postorder function that will perform the postorder traversal recursively, and return the result vecto..." alt="" coords="319,144,490,185"/>
 <area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="253,80,353,134,350,139,251,85"/>
-<area shape="rect" id="Node000007" href="$dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#abce10afbf9e16ce4a788af6b58abbebb" title="preorder function that will perform the preorder traversal recursively, and return the resultant vect..." alt="" coords="323,234,486,274"/>
+<area shape="rect" id="Node000007" href="$dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#a6397b78ceec18cb1959a1d159e134da5" title="preorder function that will perform the preorder traversal recursively, and return the resultant vect..." alt="" coords="323,234,486,274"/>
 <area shape="poly" id="edge8_Node000004_Node000007" title=" " alt="" coords="245,81,254,91,269,121,276,146,284,170,301,195,339,224,336,228,297,199,279,172,271,147,264,122,249,94,240,84"/>
 <area shape="poly" id="edge7_Node000006_Node000006" title=" " alt="" coords="370,144,369,135,374,126,386,120,405,118,424,120,436,127,433,131,422,125,404,123,388,125,378,130,374,136,376,143"/>
 <area shape="poly" id="edge9_Node000007_Node000007" title=" " alt="" coords="370,234,369,224,374,215,386,209,405,207,424,210,436,216,433,221,422,215,404,212,388,214,378,219,374,225,376,233"/>
