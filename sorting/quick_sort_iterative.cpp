@@ -16,6 +16,12 @@
 #include <algorithm> /// for std::is_sorted
 #include <cassert> /// for assert
 
+
+/**
+ * @namespace sorting
+ * @brief Sorting algorithms
+ */
+namespace sorting {
 /**
  * @brief The partition function sorts the array from
  * start to end and uses the last element as the pivot.
