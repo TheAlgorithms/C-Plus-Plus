@@ -12,7 +12,7 @@ void insertionSort(int arr[], int left, int right) {
     for (int i = left + 1; i <= right; i++) {
         const int temp = arr[i];
         int j = i - 1;
-        while (arr[j] > temp && j >= left) {
+        while (j >= left && arr[j] > temp) {
             arr[j + 1] = arr[j];
             j--;
         }
@@ -92,7 +92,7 @@ void printArray(int arr[], int n) {
 }
 
 /**
- * @brief self-test implementation 
+ * @brief self-test implementation
  * @returns void
  */
 void tests() {
@@ -110,7 +110,7 @@ void tests() {
 
 // Driver program to test above function
 int main() {
-    tests(); // run self test implementations
+    tests();  // run self test implementations
 
     int arr[] = {5, 21, 7, 23, 19};
     const int n = sizeof(arr) / sizeof(arr[0]);
