@@ -99,7 +99,7 @@ void tests()
     std::cout<<"Before: \n";
     for(auto x : case1) std::cout<<x<<",";
     std::cout<<"\n";
-    iterativeQuickSort(case1);
+    sorting::iterativeQuickSort(case1);
     assert(std::is_sorted(std::begin(case1),std::end(case1)));
     std::cout<<"Test 1 succesful!\n";
     std::cout<<"After: \n";
@@ -112,7 +112,7 @@ void tests()
     std::cout<<"Before: \n";
     for(auto x : case2) std::cout<<x<<",";
     std::cout<<"\n";
-    iterativeQuickSort(case2);
+    sorting::iterativeQuickSort(case2);
     assert(std::is_sorted(std::begin(case2),std::end(case2)));
     std::cout<<"Test 2 succesful!\n";
     std::cout<<"After: \n";
