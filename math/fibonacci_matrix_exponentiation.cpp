@@ -88,7 +88,7 @@ uint64_t fibo(uint64_t n, uint64_t mod) {
 /**
  * Function to test above algorithm
  */
-void test() {
+static void test() {
     assert(fibo(6, 1000000007) == 8);
     std::cout << "test case:1 passed\n";
     assert(fibo(5, 1000000007) == 5);
