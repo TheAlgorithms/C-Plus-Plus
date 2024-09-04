@@ -119,6 +119,7 @@
   * [Searching Of Element In Dynamic Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/searching_of_element_in_dynamic_array.cpp)
   * [Shortest Common Supersequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/shortest_common_supersequence.cpp)
   * [Subset Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/subset_sum.cpp)
+  * [Trapped Rainwater](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/trapped_rainwater.cpp)
   * [Tree Height](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/tree_height.cpp)
   * [Word Break](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/word_break.cpp)
 
@@ -161,7 +162,7 @@
   * [Boruvkas Minimum Spanning Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/boruvkas_minimum_spanning_tree.cpp)
   * [Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/dijkstra.cpp)
   * [Huffman](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/huffman.cpp)
-  * [Jumpgame](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/jumpgame.cpp)
+  * [Jump Game](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/jump_game.cpp)
   * [Knapsack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/knapsack.cpp)
   * [Kruskals Minimum Spanning Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/kruskals_minimum_spanning_tree.cpp)
   * [Prims Minimum Spanning Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/prims_minimum_spanning_tree.cpp)

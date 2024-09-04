@@ -52,6 +52,7 @@
  */
 
 #include <cassert>   /// for assert
+#include <cstdint>   /// for std::uint64_t
 #include <iostream>  /// for I/O operations
 #include <vector>    /// for vector
 
@@ -76,9 +77,9 @@ namespace recursive_tree_traversals {
  * @param right follow up right subtree.
  */
 struct Node {
-    uint64_t data = 0;     ///< The value/key of the node.
-    struct Node *left{};   ///< struct pointer to left subtree.
-    struct Node *right{};  ///< struct pointer to right subtree.
+    std::uint64_t data = 0;  ///< The value/key of the node.
+    struct Node *left{};     ///< struct pointer to left subtree.
+    struct Node *right{};    ///< struct pointer to right subtree.
 };
 /**
  * @brief BT used to make the entire structure of the binary tree and the
@@ -86,23 +87,24 @@ struct Node {
  */
 class BT {
  public:
-    std::vector<uint64_t>
+    std::vector<std::uint64_t>
         inorder_result;  // vector to store the inorder traversal of the tree.
-    std::vector<uint64_t>
+    std::vector<std::uint64_t>
         preorder_result;  // vector to store the preorder traversal of the tree.
-    std::vector<uint64_t> postorder_result;  // vector to store the preorder
-                                             // traversal of the tree.
+    std::vector<std::uint64_t>
+        postorder_result;  // vector to store the preorder
+                           // traversal of the tree.
 
     Node *createNewNode(
-        uint64_t);  // function that will create new node for insertion.
+        std::uint64_t);  // function that will create new node for insertion.
 
-    std::vector<uint64_t> inorder(
+    std::vector<std::uint64_t> inorder(
         Node *);  // function that takes root of the tree as an argument and
                   // returns its inorder traversal.
-    std::vector<uint64_t> preorder(
+    std::vector<std::uint64_t> preorder(
         Node *);  // function that takes root of the tree as an argument and
                   // returns its preorder traversal.
-    std::vector<uint64_t> postorder(
+    std::vector<std::uint64_t> postorder(
         Node *);  // function that takes root of the tree as an argument and
                   // returns its postorder traversal.
 };
@@ -113,7 +115,7 @@ class BT {
  * @param data value that a particular node will contain.
  * @return pointer to the newly created node with assigned data.
  */
-Node *BT::createNewNode(uint64_t data) {
+Node *BT::createNewNode(std::uint64_t data) {
     Node *node = new Node();
     node->data = data;
     node->left = node->right = nullptr;
@@ -127,7 +129,7 @@ Node *BT::createNewNode(uint64_t data) {
  * @param root head/root node of a tree
  * @return result that is containing the inorder traversal of a tree
  **/
-std::vector<uint64_t> BT::inorder(Node *root) {
+std::vector<std::uint64_t> BT::inorder(Node *root) {
     if (root == nullptr) {  // return if the current node is empty
         return {};
     }
@@ -147,7 +149,7 @@ std::vector<uint64_t> BT::inorder(Node *root) {
  * @param root head/root node of a tree
  * @return result that is containing the preorder traversal of a tree
  */
-std::vector<uint64_t> BT::preorder(Node *root) {
+std::vector<std::uint64_t> BT::preorder(Node *root) {
     if (root == nullptr) {  // if the current node is empty
         return {};
     }
@@ -167,7 +169,7 @@ std::vector<uint64_t> BT::preorder(Node *root) {
  * @param root head/root node of a tree
  * @return result that is containing the postorder traversal of a tree
  */
-std::vector<uint64_t> BT::postorder(Node *root) {
+std::vector<std::uint64_t> BT::postorder(Node *root) {
     if (root == nullptr) {  // if the current node is empty
         return {};
     }
@@ -178,6 +180,14 @@ std::vector<uint64_t> BT::postorder(Node *root) {
         root->data);  // Display the data part of the root (or current node)
 
     return postorder_result;
+}
+
+void deleteAll(const Node *const root) {
+    if (root) {
+        deleteAll(root->left);
+        deleteAll(root->right);
+        delete root;
+    }
 }
 
 }  // namespace recursive_tree_traversals
@@ -200,17 +210,23 @@ void test1() {
     root->left->right->right = obj1.createNewNode(11);
     root->right->right->left = obj1.createNewNode(4);
 
-    std::vector<uint64_t> actual_result_inorder{2, 7, 5, 6, 11, 2, 5, 4, 9};
-    std::vector<uint64_t> actual_result_preorder{2, 7, 2, 6, 5, 11, 5, 9, 4};
-    std::vector<uint64_t> actual_result_postorder{2, 5, 11, 6, 7, 4, 9, 5, 2};
-    std::vector<uint64_t> result_inorder;    ///< result stores the inorder
-                                             ///< traversal of the binary tree
-    std::vector<uint64_t> result_preorder;   ///< result stores the preorder
-                                             ///< traversal of the binary tree
-    std::vector<uint64_t> result_postorder;  ///< result stores the postorder
-                                             ///< traversal of the binary tree
+    std::vector<std::uint64_t> actual_result_inorder{2, 7, 5, 6, 11,
+                                                     2, 5, 4, 9};
+    std::vector<std::uint64_t> actual_result_preorder{2,  7, 2, 6, 5,
+                                                      11, 5, 9, 4};
+    std::vector<std::uint64_t> actual_result_postorder{2, 5, 11, 6, 7,
+                                                       4, 9, 5,  2};
+    std::vector<std::uint64_t>
+        result_inorder;  ///< result stores the inorder
+                         ///< traversal of the binary tree
+    std::vector<std::uint64_t>
+        result_preorder;  ///< result stores the preorder
+                          ///< traversal of the binary tree
+    std::vector<std::uint64_t>
+        result_postorder;  ///< result stores the postorder
+                           ///< traversal of the binary tree
 
-    uint64_t size = actual_result_inorder.size();
+    std::uint64_t size = actual_result_inorder.size();
 
     // Calling inorder() function by passing a root node,
     // and storing the inorder traversal in result_inorder.
@@ -240,6 +256,7 @@ void test1() {
     std::cout << "Passed!" << std::endl;
 
     std::cout << std::endl;
+    deleteAll(root);
 }
 
 /**
@@ -257,17 +274,20 @@ void test2() {
     root->right->left->left = obj2.createNewNode(7);
     root->right->left->right = obj2.createNewNode(8);
 
-    std::vector<uint64_t> actual_result_inorder{4, 2, 1, 7, 5, 8, 3, 6};
-    std::vector<uint64_t> actual_result_preorder{1, 2, 4, 3, 5, 7, 8, 6};
-    std::vector<uint64_t> actual_result_postorder{4, 2, 7, 8, 5, 6, 3, 1};
-    std::vector<uint64_t> result_inorder;    ///< result stores the inorder
-                                             ///< traversal of the binary tree
-    std::vector<uint64_t> result_preorder;   ///< result stores the preorder
-                                             ///< traversal of the binary tree
-    std::vector<uint64_t> result_postorder;  ///< result stores the postorder
-                                             ///< traversal of the binary tree
+    std::vector<std::uint64_t> actual_result_inorder{4, 2, 1, 7, 5, 8, 3, 6};
+    std::vector<std::uint64_t> actual_result_preorder{1, 2, 4, 3, 5, 7, 8, 6};
+    std::vector<std::uint64_t> actual_result_postorder{4, 2, 7, 8, 5, 6, 3, 1};
+    std::vector<std::uint64_t>
+        result_inorder;  ///< result stores the inorder
+                         ///< traversal of the binary tree
+    std::vector<std::uint64_t>
+        result_preorder;  ///< result stores the preorder
+                          ///< traversal of the binary tree
+    std::vector<std::uint64_t>
+        result_postorder;  ///< result stores the postorder
+                           ///< traversal of the binary tree
 
-    uint64_t size = actual_result_inorder.size();
+    std::uint64_t size = actual_result_inorder.size();
 
     // Calling inorder() function by passing a root node,
     // and storing the inorder traversal in result_inorder.
@@ -297,6 +317,7 @@ void test2() {
     std::cout << "Passed!" << std::endl;
 
     std::cout << std::endl;
+    deleteAll(root);
 }
 
 /**
@@ -311,17 +332,20 @@ void test3() {
     root->left->left = obj3.createNewNode(4);
     root->left->right = obj3.createNewNode(5);
 
-    std::vector<uint64_t> actual_result_inorder{4, 2, 5, 1, 3};
-    std::vector<uint64_t> actual_result_preorder{1, 2, 4, 5, 3};
-    std::vector<uint64_t> actual_result_postorder{4, 5, 2, 3, 1};
-    std::vector<uint64_t> result_inorder;    ///< result stores the inorder
-                                             ///< traversal of the binary tree
-    std::vector<uint64_t> result_preorder;   ///< result stores the preorder
-                                             ///< traversal of the binary tree
-    std::vector<uint64_t> result_postorder;  ///< result stores the postorder
-                                             ///< traversal of the binary tree
+    std::vector<std::uint64_t> actual_result_inorder{4, 2, 5, 1, 3};
+    std::vector<std::uint64_t> actual_result_preorder{1, 2, 4, 5, 3};
+    std::vector<std::uint64_t> actual_result_postorder{4, 5, 2, 3, 1};
+    std::vector<std::uint64_t>
+        result_inorder;  ///< result stores the inorder
+                         ///< traversal of the binary tree
+    std::vector<std::uint64_t>
+        result_preorder;  ///< result stores the preorder
+                          ///< traversal of the binary tree
+    std::vector<std::uint64_t>
+        result_postorder;  ///< result stores the postorder
+                           ///< traversal of the binary tree
 
-    uint64_t size = actual_result_inorder.size();
+    std::uint64_t size = actual_result_inorder.size();
 
     // Calling inorder() function by passing a root node,
     // and storing the inorder traversal in result_inorder.
@@ -352,6 +376,7 @@ void test3() {
     std::cout << "Passed!" << std::endl;
 
     std::cout << std::endl;
+    deleteAll(root);
 }
 
 /**
