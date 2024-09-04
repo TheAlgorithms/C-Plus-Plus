@@ -56,7 +56,7 @@ void print(uint32_t N, const std::vector<bool> &is_prime) {
 /**
  * Test implementations
  */
-void tests() {
+static void tests() {
     //                    0      1      2     3     4      5     6      7     8
     //                    9      10
     std::vector<bool> ans{false, false, true,  true,  false, true,
