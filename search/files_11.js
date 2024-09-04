@@ -8,5 +8,6 @@ var searchData=
   ['queue_5fusing_5farray_2ecpp_5',['queue_using_array.cpp',['../d8/df0/queue__using__array_8cpp.html',1,'']]],
   ['queue_5fusing_5ftwo_5fstacks_2ecpp_6',['queue_using_two_stacks.cpp',['../df/dd0/queue__using__two__stacks_8cpp.html',1,'']]],
   ['quick_5fsort_2ecpp_7',['quick_sort.cpp',['../d1/d21/quick__sort_8cpp.html',1,'']]],
-  ['quick_5fsort_5f3_2ecpp_8',['quick_sort_3.cpp',['../d3/d4c/quick__sort__3_8cpp.html',1,'']]]
+  ['quick_5fsort_5f3_2ecpp_8',['quick_sort_3.cpp',['../d3/d4c/quick__sort__3_8cpp.html',1,'']]],
+  ['quick_5fsort_5fiterative_2ecpp_9',['quick_sort_iterative.cpp',['../d3/d22/quick__sort__iterative_8cpp.html',1,'']]]
 ];

@@ -1,0 +1,5 @@
+<map id="sorting::partition" name="sorting::partition">
+<area shape="rect" id="Node000001" title="The partition function sorts the array from start to end and uses the last element as the pivot." alt="" coords="5,5,120,31"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="168,5,246,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,16,152,16,152,21,120,21"/>
+</map>

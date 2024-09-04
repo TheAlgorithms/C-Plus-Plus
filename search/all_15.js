@@ -27,7 +27,7 @@ var searchData=
   ['partial_5fsort_24',['partial_sort',['http://en.cppreference.com/w/cpp/algorithm/partial_sort.html',0,'std']]],
   ['partial_5fsort_5fcopy_25',['partial_sort_copy',['http://en.cppreference.com/w/cpp/algorithm/partial_sort_copy.html',0,'std']]],
   ['partial_5fsum_26',['partial_sum',['http://en.cppreference.com/w/cpp/algorithm/partial_sum.html',0,'std']]],
-  ['partition_27',['partition',['http://en.cppreference.com/w/cpp/algorithm/partition.html',0,'std::partition()'],['../d1/d21/quick__sort_8cpp.html#a1b2a2cc2d319240f3b65c5b2f479ed82',1,'sorting::quick_sort::partition()'],['../d1/daa/random__pivot__quick__sort_8cpp.html#a3d1c39e1ff42c04fb8ec0c0b9411cd3e',1,'sorting::random_pivot_quick_sort::partition()']]],
+  ['partition_27',['partition',['http://en.cppreference.com/w/cpp/algorithm/partition.html',0,'std::partition()'],['../d1/d21/quick__sort_8cpp.html#a1b2a2cc2d319240f3b65c5b2f479ed82',1,'sorting::quick_sort::partition()'],['../d5/d91/namespacesorting.html#aac8f44b28b4aa96444383030b28f8b34',1,'sorting::partition()'],['../d1/daa/random__pivot__quick__sort_8cpp.html#a3d1c39e1ff42c04fb8ec0c0b9411cd3e',1,'sorting::random_pivot_quick_sort::partition()']]],
   ['partition_5fcopy_28',['partition_copy',['http://en.cppreference.com/w/cpp/algorithm/partition_copy.html',0,'std']]],
   ['partition_5fpoint_29',['partition_point',['http://en.cppreference.com/w/cpp/algorithm/partition_point.html',0,'std']]],
   ['pascal_5ftriangle_30',['pascal_triangle',['../dc/d1a/pascal__triangle_8cpp.html#a4fc0e5a112f715c3a73989450b2cc5fd',1,'pascal_triangle.cpp']]],

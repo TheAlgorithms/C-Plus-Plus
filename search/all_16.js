@@ -27,7 +27,8 @@ var searchData=
   ['quick_5fsort_24',['quick_sort',['../d0/d2b/namespacequick__sort.html',1,'quick_sort'],['../d1/d21/quick__sort_8cpp.html#a5e6213e8008356ac6eda9427f3f4b394',1,'sorting::quick_sort::quick_sort(std::vector&lt; T &gt; *arr, const int &amp;low, const int &amp;high)'],['../d1/d21/quick__sort_8cpp.html#a53adad7e4d83e1495df25fe8dbb4cc05',1,'sorting::quick_sort::quick_sort(std::vector&lt; T &gt; arr, const int &amp;low, const int &amp;high)']]],
   ['quick_5fsort_2ecpp_25',['quick_sort.cpp',['../d1/d21/quick__sort_8cpp.html',1,'']]],
   ['quick_5fsort_5f3_2ecpp_26',['quick_sort_3.cpp',['../d3/d4c/quick__sort__3_8cpp.html',1,'']]],
-  ['quicksort_27',['quicksort',['../d5/d91/namespacesorting.html#a9f59fe72dacc1f1218ef3c303d843168',1,'sorting::quicksort(std::vector&lt; T &gt; *arr, int32_t low, int32_t high)'],['../d5/d91/namespacesorting.html#a6eb67c2f91c98cf4464f75b5882022de',1,'sorting::quicksort(std::vector&lt; T &gt; arr, int32_t low, int32_t high)']]],
-  ['quicksortrp_28',['quickSortRP',['../d1/daa/random__pivot__quick__sort_8cpp.html#a7d2e7465e7b5d54c2de6d5e9db1ea6a5',1,'sorting::random_pivot_quick_sort']]],
-  ['quiet_5fnan_29',['quiet_NaN',['http://en.cppreference.com/w/cpp/types/numeric_limits/quiet_NaN.html',0,'std::numeric_limits']]]
+  ['quick_5fsort_5fiterative_2ecpp_27',['quick_sort_iterative.cpp',['../d3/d22/quick__sort__iterative_8cpp.html',1,'']]],
+  ['quicksort_28',['quicksort',['../d5/d91/namespacesorting.html#a9f59fe72dacc1f1218ef3c303d843168',1,'sorting::quicksort(std::vector&lt; T &gt; *arr, int32_t low, int32_t high)'],['../d5/d91/namespacesorting.html#a6eb67c2f91c98cf4464f75b5882022de',1,'sorting::quicksort(std::vector&lt; T &gt; arr, int32_t low, int32_t high)']]],
+  ['quicksortrp_29',['quickSortRP',['../d1/daa/random__pivot__quick__sort_8cpp.html#a7d2e7465e7b5d54c2de6d5e9db1ea6a5',1,'sorting::random_pivot_quick_sort']]],
+  ['quiet_5fnan_30',['quiet_NaN',['http://en.cppreference.com/w/cpp/types/numeric_limits/quiet_NaN.html',0,'std::numeric_limits']]]
 ];

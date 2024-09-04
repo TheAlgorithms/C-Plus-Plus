@@ -167,6 +167,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a6eb67c2f91c98cf4464f75b5882022de" id="r_a6eb67c2f91c98cf4464f75b5882022de"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a6eb67c2f91c98cf4464f75b5882022de"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6eb67c2f91c98cf4464f75b5882022de">quicksort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; arr, int32_t low, int32_t high)</td></tr>
 <tr class="separator:a6eb67c2f91c98cf4464f75b5882022de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac8f44b28b4aa96444383030b28f8b34" id="r_aac8f44b28b4aa96444383030b28f8b34"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac8f44b28b4aa96444383030b28f8b34">partition</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &amp;arr, int start, int end)</td></tr>
+<tr class="memdesc:aac8f44b28b4aa96444383030b28f8b34"><td class="mdescLeft">&#160;</td><td class="mdescRight">The partition function sorts the array from start to end and uses the last element as the pivot.  <br /></td></tr>
+<tr class="separator:aac8f44b28b4aa96444383030b28f8b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a263595fd9a0163b5b997b89fab3a0dc5" id="r_a263595fd9a0163b5b997b89fab3a0dc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a263595fd9a0163b5b997b89fab3a0dc5">iterativeQuickSort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &amp;arr)</td></tr>
+<tr class="memdesc:a263595fd9a0163b5b997b89fab3a0dc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main sorting function.  <br /></td></tr>
+<tr class="separator:a263595fd9a0163b5b997b89fab3a0dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3a775d99dbbb94c130a973df0cfddcf" id="r_ae3a775d99dbbb94c130a973df0cfddcf"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ae3a775d99dbbb94c130a973df0cfddcf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae3a775d99dbbb94c130a973df0cfddcf">recursive_bubble_sort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *nums, uint64_t n)</td></tr>
 <tr class="memdesc:ae3a775d99dbbb94c130a973df0cfddcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an implementation of the recursive_bubble_sort. A vector is passed to the function which is then dereferenced, so that the changes are reflected in the original vector. It also accepts a second parameter of type <code>int</code> and name <code>n</code>, which is the size of the array.  <br /></td></tr>
@@ -202,6 +208,7 @@ Functions</h2></td></tr>
 <p>Sorting algorithms</p>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a> for std::assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a> for IO operations</p>
 <p>Sorting algorithms</p>
+<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/stack.html">std::stack</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a> for assert</p>
 <p>header files for collection of functions for a macro called assert which can be used to verify assumptions for io operations</p>
 <p>Sorting algorithms</p>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted()</a>, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap()</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a> for assert for initializing random number generator for IO operations</p>
@@ -547,6 +554,72 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a263595fd9a0163b5b997b89fab3a0dc5" name="a263595fd9a0163b5b997b89fab3a0dc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a263595fd9a0163b5b997b89fab3a0dc5">&#9670;&#160;</a></span>iterativeQuickSort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sorting::iterativeQuickSort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The main sorting function. </p>
+<p>The iterative quick sort uses the stack instead of recursion for saving and restoring the environment between calls. It does not need the end and start params, because it is not recursive. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>array to be sorted </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   59</span>{</div>
+<div class="line"><span class="lineno">   60</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/stack.html">std::stack&lt;int&gt;</a> <a class="code hl_variable" href="../../dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7">stack</a>;</div>
+<div class="line"><span class="lineno">   61</span>    <span class="keywordtype">int</span> start = 0;</div>
+<div class="line"><span class="lineno">   62</span>    <span class="keywordtype">int</span> end = arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()-1;</div>
+<div class="line"><span class="lineno">   63</span>    <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.<a class="code hl_function" href="../../d1/dc2/classstack.html#a90df277532c23519aa7ac3c08ed90a1d">push</a>(start);</div>
+<div class="line"><span class="lineno">   64</span>    <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.<a class="code hl_function" href="../../d1/dc2/classstack.html#a90df277532c23519aa7ac3c08ed90a1d">push</a>(end);</div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">while</span>(!<a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.empty())</div>
+<div class="line"><span class="lineno">   67</span>    {</div>
+<div class="line"><span class="lineno">   68</span>        end = <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.<a class="code hl_function" href="../../d1/dc2/classstack.html#ae09630c4384903d187801921b2ddc709">top</a>();</div>
+<div class="line"><span class="lineno">   69</span>        <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.<a class="code hl_function" href="../../d1/dc2/classstack.html#a3647fb4418890f19e0dc414b8092b8b0">pop</a>();</div>
+<div class="line"><span class="lineno">   70</span>        start = <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.<a class="code hl_function" href="../../d1/dc2/classstack.html#ae09630c4384903d187801921b2ddc709">top</a>();</div>
+<div class="line"><span class="lineno">   71</span>        <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.<a class="code hl_function" href="../../d1/dc2/classstack.html#a3647fb4418890f19e0dc414b8092b8b0">pop</a>();</div>
+<div class="line"><span class="lineno">   72</span> </div>
+<div class="line"><span class="lineno">   73</span>        <span class="keywordtype">int</span> pivotIndex = partition(arr,start,end);</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>        <span class="keywordflow">if</span>(pivotIndex -1 &gt; start)</div>
+<div class="line"><span class="lineno">   76</span>        {</div>
+<div class="line"><span class="lineno">   77</span>            <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.<a class="code hl_function" href="../../d1/dc2/classstack.html#a90df277532c23519aa7ac3c08ed90a1d">push</a>(start);</div>
+<div class="line"><span class="lineno">   78</span>            <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.<a class="code hl_function" href="../../d1/dc2/classstack.html#a90df277532c23519aa7ac3c08ed90a1d">push</a>(pivotIndex-1);</div>
+<div class="line"><span class="lineno">   79</span>        }</div>
+<div class="line"><span class="lineno">   80</span> </div>
+<div class="line"><span class="lineno">   81</span>        <span class="keywordflow">if</span>(pivotIndex+1&lt;end)</div>
+<div class="line"><span class="lineno">   82</span>        {</div>
+<div class="line"><span class="lineno">   83</span>            <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.<a class="code hl_function" href="../../d1/dc2/classstack.html#a90df277532c23519aa7ac3c08ed90a1d">push</a>(pivotIndex+1);</div>
+<div class="line"><span class="lineno">   84</span>            <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.<a class="code hl_function" href="../../d1/dc2/classstack.html#a90df277532c23519aa7ac3c08ed90a1d">push</a>(end);</div>
+<div class="line"><span class="lineno">   85</span>        }</div>
+<div class="line"><span class="lineno">   86</span>    }</div>
+<div class="line"><span class="lineno">   87</span>}</div>
+<div class="ttc" id="aclassstack_html"><div class="ttname"><a href="../../d1/dc2/classstack.html">stack</a></div><div class="ttdoc">for std::invalid_argument</div><div class="ttdef"><b>Definition</b> stack.hpp:19</div></div>
+<div class="ttc" id="aclassstack_html_a3647fb4418890f19e0dc414b8092b8b0"><div class="ttname"><a href="../../d1/dc2/classstack.html#a3647fb4418890f19e0dc414b8092b8b0">stack::pop</a></div><div class="ttdeci">void pop()</div><div class="ttdef"><b>Definition</b> stack.hpp:62</div></div>
+<div class="ttc" id="aclassstack_html_a90df277532c23519aa7ac3c08ed90a1d"><div class="ttname"><a href="../../d1/dc2/classstack.html#a90df277532c23519aa7ac3c08ed90a1d">stack::push</a></div><div class="ttdeci">void push(const value_type &amp;item)</div><div class="ttdef"><b>Definition</b> stack.hpp:47</div></div>
+<div class="ttc" id="aclassstack_html_ae09630c4384903d187801921b2ddc709"><div class="ttname"><a href="../../d1/dc2/classstack.html#ae09630c4384903d187801921b2ddc709">stack::top</a></div><div class="ttdeci">value_type top() const</div><div class="ttdef"><b>Definition</b> stack.hpp:56</div></div>
+<div class="ttc" id="aparanthesis__matching_8cpp_html_aa37d24a036d239b3b528f13b9de880c7"><div class="ttname"><a href="../../dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7">stack</a></div><div class="ttdeci">char stack[MAX]</div><div class="ttdef"><b>Definition</b> paranthesis_matching.cpp:20</div></div>
+<div class="ttc" id="astack_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/stack.html">std::stack</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_a263595fd9a0163b5b997b89fab3a0dc5_cgraph.svg" width="520" height="234"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
 <a id="aa26de383227859210f14dcf12201a079" name="aa26de383227859210f14dcf12201a079"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa26de383227859210f14dcf12201a079">&#9670;&#160;</a></span>merge()</h2>
 
@@ -753,6 +826,61 @@ template&lt;class Iterator &gt; </div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_a27236b8d3df3832e1f1225576a122534_cgraph.svg" width="638" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aac8f44b28b4aa96444383030b28f8b34" name="aac8f44b28b4aa96444383030b28f8b34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac8f44b28b4aa96444383030b28f8b34">&#9670;&#160;</a></span>partition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sorting::partition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>end</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The partition function sorts the array from start to end and uses the last element as the pivot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>the array to be sorted </td></tr>
+    <tr><td class="paramname">start</td><td>starting index </td></tr>
+    <tr><td class="paramname">end</td><td>ending index </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int next index of the pivot </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   34</span>{</div>
+<div class="line"><span class="lineno">   35</span>    <span class="keywordtype">int</span> pivot = arr[end];</div>
+<div class="line"><span class="lineno">   36</span>    <span class="keywordtype">int</span> index = start - 1;</div>
+<div class="line"><span class="lineno">   37</span> </div>
+<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = start; j &lt; end; j++) {</div>
+<div class="line"><span class="lineno">   39</span>        <span class="keywordflow">if</span> (arr[j] &lt;= pivot) {</div>
+<div class="line"><span class="lineno">   40</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(arr[++index], arr[j]);</div>
+<div class="line"><span class="lineno">   41</span>        }</div>
+<div class="line"><span class="lineno">   42</span>    }</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(arr[index + 1], arr[end]);</div>
+<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">return</span> index + 1;</div>
+<div class="line"><span class="lineno">   46</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_aac8f44b28b4aa96444383030b28f8b34_cgraph.svg" width="252" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

@@ -1,5 +1,12 @@
 var NAVTREEINDEX12 =
 {
+"dc/dd9/strand__sort_8cpp.html":[11,0,22,24],
+"dc/dd9/strand__sort_8cpp.html#a2bea2fe5dd38ed63610fdeaddf5785cd":[11,0,22,24,1],
+"dc/dd9/strand__sort_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,22,24,2],
+"dc/dd9/strand__sort_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,22,24,0],
+"dc/de1/recursive__tree__traversal_8cpp.html":[11,0,17,16],
+"dc/de1/recursive__tree__traversal_8cpp.html#a0283886819c7c140a023582b7269e2d0":[11,0,17,16,4],
+"dc/de1/recursive__tree__traversal_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0":[11,0,17,16,3],
 "dc/de1/recursive__tree__traversal_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[11,0,17,16,6],
 "dc/de1/recursive__tree__traversal_8cpp.html#a6d0455dd5c30adda100e95f0423c786e":[11,0,17,16,5],
 "dc/de1/recursive__tree__traversal_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,17,16,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX12 =
 "dd/db6/structbinary__search__tree_1_1bst__node.html#a55c165b9e0e5b50a23104e0604dcc788":[10,0,21,0,1],
 "dd/dba/namespacedivide__and__conquer.html":[9,0,23],
 "dd/dca/class_f_c_f_s.html":[10,0,32],
-"dd/dca/class_f_c_f_s.html#a8fbfe4d85f7576b4a7aade07d29fbd69":[10,0,32,0],
-"dd/dca/class_f_c_f_s.html#aa25dbe30ba9930b5a7c1a6d11758bd91":[10,0,32,2],
-"dd/dca/class_f_c_f_s.html#abb361a612b18bb189aa6d3c49288b793":[10,0,32,1],
-"dd/dca/class_f_c_f_s.html#af2594e22a867b308e027623940193d46":[10,0,32,3],
-"dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html":[10,0,13,3,0],
-"dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#a6397b78ceec18cb1959a1d159e134da5":[10,0,13,3,0,2],
-"dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#ac9404b65f407f631915515fa2e08a40c":[10,0,13,3,0,1],
-"dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#af16da5fe0f5c54d31778d71d5a042114":[10,0,13,3,0,0]
+"dd/dca/class_f_c_f_s.html#a8fbfe4d85f7576b4a7aade07d29fbd69":[10,0,32,0]
 };
