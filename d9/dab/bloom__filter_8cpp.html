@@ -342,13 +342,13 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  228</span>        10, {<a class="code hl_function" href="../../d5/d3c/namespacedata__structures.html#a271c753baf6dc5ac6f19fa03c5873eb4">data_structures::hashDJB2</a>, <a class="code hl_function" href="../../d5/d3c/namespacedata__structures.html#a35eb2bc3edbb52f9c5f0b1e51046ef15">data_structures::hashStr</a>});</div>
 <div class="line"><span class="lineno">  229</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::string&gt;</a> toCheck{<span class="stringliteral">&quot;hello&quot;</span>, <span class="stringliteral">&quot;world&quot;</span>, <span class="stringliteral">&quot;!&quot;</span>};</div>
 <div class="line"><span class="lineno">  230</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::string&gt;</a> toFalse{<span class="stringliteral">&quot;false&quot;</span>, <span class="stringliteral">&quot;world2&quot;</span>, <span class="stringliteral">&quot;!!!&quot;</span>};</div>
-<div class="line"><span class="lineno">  231</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; x : toCheck) {</div>
+<div class="line"><span class="lineno">  231</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; x : toCheck) {</div>
 <div class="line"><span class="lineno">  232</span>        filter.add(x);</div>
 <div class="line"><span class="lineno">  233</span>    }</div>
-<div class="line"><span class="lineno">  234</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; x : toFalse) {</div>
+<div class="line"><span class="lineno">  234</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; x : toFalse) {</div>
 <div class="line"><span class="lineno">  235</span>        assert(filter.contains(x) == <span class="keyword">false</span>);</div>
 <div class="line"><span class="lineno">  236</span>    }</div>
-<div class="line"><span class="lineno">  237</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; x : toCheck) {</div>
+<div class="line"><span class="lineno">  237</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; x : toCheck) {</div>
 <div class="line"><span class="lineno">  238</span>        assert(filter.contains(x));</div>
 <div class="line"><span class="lineno">  239</span>    }</div>
 <div class="line"><span class="lineno">  240</span>}</div>
