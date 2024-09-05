@@ -228,13 +228,13 @@ static void test_bloom_filter_string() {
         10, {data_structures::hashDJB2, data_structures::hashStr});
     std::vector<std::string> toCheck{"hello", "world", "!"};
     std::vector<std::string> toFalse{"false", "world2", "!!!"};
-    for (auto& x : toCheck) {
+    for (const auto& x : toCheck) {
         filter.add(x);
     }
-    for (auto& x : toFalse) {
+    for (const auto& x : toFalse) {
         assert(filter.contains(x) == false);
     }
-    for (auto& x : toCheck) {
+    for (const auto& x : toCheck) {
         assert(filter.contains(x));
     }
 }
