@@ -1,0 +1,604 @@
+[33mcommit 505957d2e19bbc99db1c23e8ded8a029b4ee4280[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32madd-me[m[33m)[m
+Author: somyasinghmalik <somyasinghmalik@gmail.com>
+Date:   Mon Sep 9 08:10:06 2024 +0530
+
+    Add logic to label PRs as approved on review approval
+
+[33mcommit 15e3fed9248fbf2709e4dafec76728ef2c3b3d69[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Piotr Idzik <65706193+vil02@users.noreply.github.com>
+Date:   Thu Sep 5 01:54:16 2024 +0200
+
+    style: add missing `const` in `bloom_filter.cpp` (#2724)
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+
+[33mcommit ef209dfab3622b6aafc7b41115de2c5c13b8944d[m
+Author: Sebastian Skonieczny <58781463+sebe324@users.noreply.github.com>
+Date:   Wed Sep 4 16:44:41 2024 -0700
+
+    Added Iterative Quick Sort  (#2684)
+    
+    * feat: Added iterative quick sort using stack
+    
+    * fix: Forgot to add @param for sort function
+    
+    * Update sorting/quick_sort_iterative.cpp
+    
+    * Update sorting/quick_sort_iterative.cpp
+    
+    * Update sorting/quick_sort_iterative.cpp
+    
+    * style: space b/w for and comment
+    
+    * Update sorting/quick_sort_iterative.cpp
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+    
+    * Update sorting/quick_sort_iterative.cpp
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+    
+    * fixed namespace error
+    
+    ---------
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+
+[33mcommit 490974eeb32f989b19b277acee3366bfead686d9[m
+Author: Piotr Idzik <65706193+vil02@users.noreply.github.com>
+Date:   Wed Sep 4 02:01:30 2024 +0200
+
+    fix: memory leak in `median_search2.cpp` (#2723)
+
+[33mcommit c652c4f2378275dc32c387148c2eaaf49b3f7bd7[m
+Author: Piotr Idzik <65706193+vil02@users.noreply.github.com>
+Date:   Tue Sep 3 13:44:49 2024 +0200
+
+    fix: stack buffer underflow in `tim_sort.cpp` (#2722)
+
+[33mcommit b6108e494dbd9ef05926fc5e8bc7f60147445ecb[m
+Author: Piotr Idzik <65706193+vil02@users.noreply.github.com>
+Date:   Mon Sep 2 14:42:26 2024 +0200
+
+    fix: remove memory leak from `recursive_tree_traversal.cpp` (#2721)
+
+[33mcommit db182d55217384912d7e837917d1dbc3ede45637[m
+Author: Maxim Smolskiy <mithridatus@mail.ru>
+Date:   Mon Sep 2 02:12:33 2024 +0300
+
+    fix: fix bug in timSort (#2692)
+    
+    * fix: fix bug in timSort
+    
+    * Apply suggestions from code review
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+    
+    * Fix
+    
+    * Update sorting/tim_sort.cpp
+    
+    * Add const
+    
+    ---------
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+
+[33mcommit 52db277fb686a3232abdff9dd4e76ca999328418[m
+Author: Piotr Idzik <65706193+vil02@users.noreply.github.com>
+Date:   Mon Sep 2 01:03:19 2024 +0200
+
+    fix: remove memory leak from `iterative_tree_traversals.cpp` (#2720)
+
+[33mcommit 54a20b447efbdf56da7f331de7469e86d50f7dd5[m
+Author: SOZEL <80200848+TruongNhanNguyen@users.noreply.github.com>
+Date:   Sun Sep 1 11:37:27 2024 +0700
+
+    Rework on Stack Array Data Structure (#2683)
+    
+    * ref: rework on stack array data structure
+    - The `Stack` class is placed within the `data_structures` namespace
+    - The destructor is added to the Stack class to ensure memory deallocation
+    - Comments are added to the member functions to describe their purpose
+    - The self-test function is provided, which demonstrates the usage of the Stack class
+    
+    * chore(docs): add `namespace` docstring
+    
+    * chore: add `std::out_of_range` exception and test cases when stack is empty
+    
+    * ref: add `full` and `empty` methods
+    
+    * ref: improve stack array implementation
+    - Use TOS instead of stack index
+    - Add tests for overflow and underflow
+    
+    * fix: remove comparision to true from asserts
+    
+    * chore: remove `stack.hpp`
+    
+    * fix: revert
+    
+    * Update data_structures/stack_using_array.cpp
+    
+    * docs: add namespace comment
+    
+    * chore: remove redundant line in docstring of `empty` method
+    
+    ---------
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+
+[33mcommit fe41cf4d1131580e9b45fe1c8e8e4ced88a567e9[m
+Author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+Date:   Sun Sep 1 09:54:27 2024 +0530
+
+    docs: update DIRECTORY.md (#2718)
+    
+    Co-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+
+[33mcommit 502a953e23443c8b3fee07e3d2c37fa6e07017b4[m
+Author: Yancey <135342560+Yancey2023@users.noreply.github.com>
+Date:   Sun Sep 1 12:17:49 2024 +0800
+
+    feat: let KMP algorithm return index (#2713)
+    
+    * fix: KMP algorithm (#2712)
+    
+    * feat: let the KMP algorithm return index and add more tests.
+    
+    * feat: format code
+    
+    * Update strings/knuth_morris_pratt.cpp
+    
+    * update knuth_morris_pratt.cpp
+    
+    ---------
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+
+[33mcommit 9702903a12a0bfe30382c01584e368fa29ae2691[m
+Author: SOZEL <80200848+TruongNhanNguyen@users.noreply.github.com>
+Date:   Sat Aug 31 16:38:24 2024 +0700
+
+    Implement Trapped RainWater (#2716)
+    
+    * chore: add `trapped_rainwater.cpp` to DIRECTORY.md
+    
+    * feat: implement Trapped Rain Water algorithm
+    
+    * chore: add links to the trapped rain water problem
+    
+    * chore(docs): remove Trapped Rain Water dir
+    
+    * ref: add edges tests
+    
+    * doc: adding Sozel as author
+    
+    * doc: includes documentatino
+    
+    * ref: use `unsigned int` for height of walls
+    
+    * fix: use fixed-width integers instead of unsigned int
+    
+    * chore: rearrange included libraries
+    
+    ---------
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+
+[33mcommit 1d692227dc3dcd8d800966177f8d8d26a996088c[m
+Author: Ikko Eltociear Ashimine <eltociear@gmail.com>
+Date:   Sat Aug 31 13:05:55 2024 +0900
+
+    refactor: fix typo in neural_network.cpp (#2689)
+    
+    intialize -> initialize
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+
+[33mcommit c84c7da30fabd49715ce3345af8c8eb60bf68a50[m
+Author: David Leal <halfpacho@gmail.com>
+Date:   Fri Aug 30 19:23:37 2024 -0600
+
+    [fix/docs]: improve the Jump Game algorithm (#2514)
+    
+    * [fix/docs]: improve the Jump Game algorithm
+    
+    * fix: pass `index` by reference and `const` it
+    
+    * fix: use previous algorithm
+    
+    * chore: apply suggestions from code review
+    
+    Co-authored-by: Caeden Perelli-Harris <caedenperelliharris@gmail.com>
+    Co-authored-by: Piotr Idzik <vil02@users.noreply.github.com>
+    
+    ---------
+    
+    Co-authored-by: Caeden Perelli-Harris <caedenperelliharris@gmail.com>
+    Co-authored-by: Piotr Idzik <vil02@users.noreply.github.com>
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+
+[33mcommit 1f5828eadfbe27c33a8f7c865a0d19664a2f1782[m
+Author: Maxim Smolskiy <mithridatus@mail.ru>
+Date:   Sat Aug 31 04:05:53 2024 +0300
+
+    fix: fix deprecation warning for macOS (#2711)
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+
+[33mcommit 4a03c62dd37ed54a2f1b0208d4bd10df0e354e43[m
+Author: Tim Lander <5424257+VirtualTim@users.noreply.github.com>
+Date:   Sat Aug 31 08:55:29 2024 +0800
+
+    Fix compilation failure with gcc >= 13 (#2702)
+    
+    For testing - https://godbolt.org/z/6WWh3zs9G
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+
+[33mcommit af72fab013cc448c74b79a2981f3ceee957f9eae[m
+Author: Piotr Idzik <65706193+vil02@users.noreply.github.com>
+Date:   Sat Aug 31 02:42:39 2024 +0200
+
+    fix: make interface of `NCRModuloP` fail-safe (#2469)
+    
+    * fix: set proper size of fac
+    
+    * style: use std::size_t as a type of loop counter
+    
+    * style: use uint64_t as a type of loop counter
+    
+    * fix: remove p from the argument list of NCRModuloP::ncr
+    
+    * refactor: add utils namespace
+    
+    * refactor: use references in gcdExtended
+    
+    * refactor: add NCRModuloP::computeFactorialsMod
+    
+    * style: make NCRModuloP::ncr const
+    
+    * test: reorganize tests
+    
+    * test: add missing test cases
+    
+    * refactor: simplify logic
+    
+    * style: make example object const
+    
+    * style: use auto
+    
+    * style: use int64_t to avoid narrowing conversions
+    
+    * docs: update explanation why to import iostream
+    
+    * docs: remove `p` from docstr of `NCRModuloP::ncr`
+    
+    * docs: udpate doc-strs and add example()
+    
+    * Apply suggestions from code review
+    
+    Co-authored-by: David Leal <halfpacho@gmail.com>
+    
+    * dosc: add missing docs
+    
+    * feat: display message when all tests pass
+    
+    Co-authored-by: David Leal <halfpacho@gmail.com>
+    
+    * style: initialize `NCRModuloP::p` with `0`
+    
+    Co-authored-by: David Leal <halfpacho@gmail.com>
+    
+    ---------
+    
+    Co-authored-by: David Leal <halfpacho@gmail.com>
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+
+[33mcommit 8bde3ea612448b0d5fdbd2f092429e86de03ca62[m
+Author: Piotr Idzik <65706193+vil02@users.noreply.github.com>
+Date:   Sat Aug 31 02:37:42 2024 +0200
+
+    fix: remove memory leak in `sublist_search.cpp` (#2541)
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+
+[33mcommit 7fc338d0fdb75590da946ff99e38883cfb89772b[m
+Author: Piotr Idzik <65706193+vil02@users.noreply.github.com>
+Date:   Sat Aug 31 02:33:44 2024 +0200
+
+    fix: use `GITHUB_ACTOR` in `git config` (#2673)
+
+[33mcommit 519d37f6bcfe0fd6997351685487ba5ee5a6af94[m
+Author: Piotr Idzik <65706193+vil02@users.noreply.github.com>
+Date:   Fri Aug 30 20:12:15 2024 +0200
+
+    fix: remove memory issues (#2533)
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+
+[33mcommit 9e44b6807038b9f8a25bfa3772fea2548f19c900[m
+Author: Piotr Idzik <65706193+vil02@users.noreply.github.com>
+Date:   Fri Aug 30 20:05:30 2024 +0200
+
+    fix: remove memory leak (#2532)
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+
+[33mcommit 435f1eded487a4d0af50b91402b5fcd32718a5d2[m
+Author: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+Date:   Fri Aug 30 23:07:19 2024 +0530
+
+    chore: Make CI builds parallel (#2714)
+    
+    * chore: make ci builds parallel
+    
+    * chore: fix specification of job number
+    
+    * chore: use 4 as a limit for parallel builds
+    
+    * fix: remove parallel from linting
+
+[33mcommit e139ee952fefbce85ad1ef8704c28bac3fd44824[m
+Author: Piotr Idzik <65706193+vil02@users.noreply.github.com>
+Date:   Fri Aug 30 19:30:06 2024 +0200
+
+    fix: add and use function `deleteList` to remove memory leak (#2534)
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+
+[33mcommit 8a368240e20b4bbacb67e1ec2283900396b3ef4c[m
+Author: Piotr Idzik <65706193+vil02@users.noreply.github.com>
+Date:   Fri Aug 30 19:20:08 2024 +0200
+
+    fix: remove memory leak `iterative_factorial.cpp` (#2535)
+    
+    * fix: remove memory leak
+    
+    * tests: check properly if `math::iterativeFactorial` throws
+
+[33mcommit 2dadbf73f41f2ac2e2c4a96f8116638cec17a07f[m
+Author: David Leal <halfpacho@gmail.com>
+Date:   Mon Feb 12 20:03:19 2024 +0000
+
+    chore: remove unnecessary prints in `games/memory_game.cpp`
+
+[33mcommit 08900b8c983b861ddd9c2e1efe7bf0bdd53beb4a[m
+Author: David Leal <halfpacho@gmail.com>
+Date:   Mon Jan 15 20:02:44 2024 -0600
+
+    chore: update copyright notice to 2024
+
+[33mcommit 6cd283950b5dfb2f85cd3abc9513c840400926b7[m
+Author: Piotr Idzik <65706193+vil02@users.noreply.github.com>
+Date:   Tue Jan 16 02:38:58 2024 +0100
+
+    chore: update `actions/checkout` to `v4` (#2530)
+
+[33mcommit 6376bf46aff52a1944d4efcd5ae884b39119cd34[m
+Author: David Leal <halfpacho@gmail.com>
+Date:   Wed Sep 27 12:34:55 2023 -0600
+
+    chore: add `workflow_dispatch` in directory workflow
+
+[33mcommit 23b133ae1eac4ad7e94e74da140d462180738413[m
+Author: David Leal <halfpacho@gmail.com>
+Date:   Wed Sep 6 11:37:12 2023 -0600
+
+    fix: GitHub Actions bot username on Awesome Workflow
+
+[33mcommit f49369065c13e6cfee906de9dd0f5a6443f524e8[m
+Author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+Date:   Wed Sep 6 11:35:38 2023 -0600
+
+    docs: update DIRECTORY.md (#2521)
+    
+    Co-authored-by: github-actions[bot] <github-actions@users.noreply.github.com>
+
+[33mcommit 6daf7015e31d079ae5896bb20719e46ccf8dd821[m
+Author: David Leal <halfpacho@gmail.com>
+Date:   Fri Aug 4 15:06:36 2023 -0600
+
+    chore: run directory workflow daily
+
+[33mcommit 2c68b68ca6e55b0838f779e8e6bf7ec75ecfae15[m
+Author: David Leal <halfpacho@gmail.com>
+Date:   Mon Jul 24 18:52:45 2023 -0600
+
+    fix: add missing namespace in Dijkstra
+
+[33mcommit 17c374dc149e6b1bcdbe109db886124724268a40[m
+Author: David Leal <halfpacho@gmail.com>
+Date:   Mon Jul 24 18:49:51 2023 -0600
+
+    [feat/docs/fix]: improve the Dijkstra algorithm (#2508)
+    
+    Originally initiated in #2490.
+    Co-authored-by: Mark Matthew Vergara <mmvergara@users.noreply.github.com>
+
+[33mcommit b480ddb191a94dac3252b48d9f2761347c888089[m
+Author: David Leal <halfpacho@gmail.com>
+Date:   Fri Jul 21 12:17:24 2023 -0600
+
+    docs: add documentation in `kruskals_minimum_spanning_tree.cpp` (#2482)
+    
+    * docs: add documentation in `kruskals_minimum_spanning_tree.cpp`
+    
+    * clang-format and clang-tidy fixes for 4e234390
+    
+    * chore: remove myself as an author
+    
+    * chore: `std::endl` -> `\n`
+    
+    ---------
+    
+    Co-authored-by: github-actions[bot] <github-actions@users.noreply.github.com>
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+
+[33mcommit 882ba119dcc55f02776a8948127bd5d66b7682ff[m
+Author: David Leal <halfpacho@gmail.com>
+Date:   Fri Jul 21 12:16:15 2023 -0600
+
+    [feat/docs]: improve Fenwick Tree algorithm (#2506)
+    
+    * [feat/docs]: improve Fenwick Tree algorithm
+    
+    * chore: apply suggestions from code review
+    
+    Co-authored-by: Taj <tjgurwara99@users.noreply.github.com>
+    
+    ---------
+    
+    Co-authored-by: Taj <tjgurwara99@users.noreply.github.com>
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+
+[33mcommit a39892b80f74a700d3f4c9b3fff603132b2bcea5[m
+Author: Vikrant A P <42289399+hexavik@users.noreply.github.com>
+Date:   Fri Jul 21 10:51:09 2023 +0530
+
+    fix: wrong contributing guidelines link (#2507)
+    
+    Co-authored-by: David Leal <halfpacho@gmail.com>
+
+[33mcommit 170f7e59ff6732996d010bc7eec62e6d9e5279e9[m
+Author: KAIRAO ZHENG <kairaozheng@gmail.com>
+Date:   Fri Jul 21 13:05:40 2023 +0800
+
+    feat: Treap Data Structure (#2458)
+    
+    * feat: Treap Data Structure
+    
+    * fix: suggested changes
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+    
+    * fix: suggested changes
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+    
+    * fix: suggested changes
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+    
+    * fix: suggested changes
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+    
+    * fix: suggested changes
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+    
+    * fix: suggested changes
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+    
+    * fix: suggested changes
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+    
+    * fix: suggested changes
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+    
+    * fix: suggested changes
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+    
+    * fix: suggested changes
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+    
+    * fix: suggested changes
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+    
+    * fix: suggested changes
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+    
+    * fix: suggested changes
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+    
+    * fix: suggested changes
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+    
+    * fix: suggested changes
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+    
+    * fix: suggested changes
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+    
+    * fix: suggested changes
+    
+    * fix: suggested changes
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+    
+    * fix: add more self-tests
+    
+    * fix: suggested changes
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+    
+    * suggested changes
+    
+    Co-authored-by: David Leal <halfpacho@gmail.com>
+    
+    * suggested changes
+    
+    Co-authored-by: David Leal <halfpacho@gmail.com>
+    
+    * suggested changes
+    
+    Co-authored-by: David Leal <halfpacho@gmail.com>
+    
+    * suggested changes
+    
+    Co-authored-by: David Leal <halfpacho@gmail.com>
+    
+    * suggested changes
+    
+    Co-authored-by: David Leal <halfpacho@gmail.com>
+    
+    * suggested changes
+    
+    Co-authored-by: David Leal <halfpacho@gmail.com>
+    
+    * suggested changes
+    
+    Co-authored-by: David Leal <halfpacho@gmail.com>
+    
+    * suggested changes
+    
+    Co-authored-by: David Leal <halfpacho@gmail.com>
+    
+    * suggested changes
+    
+    Co-authored-by: David Leal <halfpacho@gmail.com>
+    
+    * fix: add namespace prefixs
+    
+    * suggested changes
+    
+    Co-authored-by: David Leal <halfpacho@gmail.com>
+    
+    * fix: use containers
+    
+    * fix: add initialization
+    
+    * fix: suggested changes
+    
+    * fix: a few `clang-tidy` warnings
+    
+    * fix: segmentation fault
+    
+    ---------
+    
+    Co-authored-by: realstealthninja <68815218+realstealthninja@users.noreply.github.com>
+    Co-authored-by: David Leal <halfpacho@gmail.com>
