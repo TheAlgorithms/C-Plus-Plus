@@ -2,6 +2,7 @@ name: Awesome CI Workflow
 on: [push, pull_request]
 permissions:
   contents: write
+  pull_request: write
 
 jobs:
   MainSequence:
@@ -44,7 +45,22 @@ jobs:
         run: |
           git diff DIRECTORY.md
           git commit -am "clang-format and clang-tidy fixes for ${GITHUB_SHA::8}" || true
-          git push origin HEAD:$GITHUB_REF || true
+          git push origin HEAD:$GITHUB_REF || true          
+  label-on-approval:
+    name: Label on PR Approval
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && github.event.action == 'submitted' && github.event.review.state == 'approved'
+    steps:
+      - name: Add approved label
+        uses: actions/github-script@v6
+        with:
+          script: |
+            await github.rest.issues.addLabels({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ['approved']
+            });
 
   build:
     name: Compile checks
