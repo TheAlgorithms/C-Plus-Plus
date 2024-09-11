@@ -72,49 +72,21 @@ constexpr double INFINITY_DOUBLE = std::numeric_limits<double>::max();
 static void test() {
     // Test case with interger values
     std::cout << "\nTest Case 1 :\n";
-    std::array<std::array<int, 6>, 6> graph1{0,
-                                             4,
-                                             1,
-                                             4,
-                                             INFINITY_INT,
-                                             INFINITY_INT,
-                                             4,
-                                             0,
-                                             3,
-                                             8,
-                                             3,
-                                             INFINITY_INT,
-                                             1,
-                                             3,
-                                             0,
-                                             INFINITY_INT,
-                                             1,
-                                             INFINITY_INT,
-                                             4,
-                                             8,
-                                             INFINITY_INT,
-                                             0,
-                                             5,
-                                             7,
-                                             INFINITY_INT,
-                                             3,
-                                             1,
-                                             5,
-                                             0,
-                                             INFINITY_INT,
-                                             INFINITY_INT,
-                                             INFINITY_INT,
-                                             INFINITY_INT,
-                                             7,
-                                             INFINITY_INT,
-                                             0};
+    std::array<std::array<int, 6>, 6> graph1{
+        0,        4,        1,        4,        INFINITY_INT, INFINITY_INT,
+        4,        0,        3,        8,        3,        INFINITY_INT,
+        1,        3,        0,        INFINITY_INT, 1,        INFINITY_INT,
+        4,        8,        INFINITY_INT, 0,        5,        7,
+        INFINITY_INT, 3,        1,        5,        0,        INFINITY_INT,
+        INFINITY_INT, INFINITY_INT, INFINITY_INT, 7,        INFINITY_INT, 0};
     greedy_algorithms::findMinimumEdge(INFINITY_INT, graph1);
 
     // Test case with floating values
     std::cout << "\nTest Case 2 :\n";
-    std::array<std::array<float, 3>, 3> graph2{0.0f, 2.5f, INFINITY_FLOAT, 2.5f,
-                                               0.0f, 3.2f, INFINITY_FLOAT, 3.2f,
-                                               0.0f};
+     std::array<std::array<float, 3>, 3> graph2{
+        0.0f, 2.5f, INFINITY_FLOAT,
+        2.5f, 0.0f, 3.2f,
+        INFINITY_FLOAT, 3.2f, 0.0f};
     greedy_algorithms::findMinimumEdge(INFINITY_FLOAT, graph2);
 
     // Test case with double values
