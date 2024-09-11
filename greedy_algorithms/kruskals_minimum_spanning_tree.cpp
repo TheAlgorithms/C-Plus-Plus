@@ -73,12 +73,12 @@ static void test() {
     // Test case with interger values
     std::cout << "\nTest Case 1 :\n";
     std::array<std::array<int, 6>, 6> graph1{
-        0,        4,        1,        4,        INFINITY_INT, INFINITY_INT,
-        4,        0,        3,        8,        3,        INFINITY_INT,
-        1,        3,        0,        INFINITY_INT, 1,        INFINITY_INT,
-        4,        8,        INFINITY_INT, 0,        5,        7,
-        INFINITY_INT, 3,        1,        5,        0,        INFINITY_INT,
-        INFINITY_INT, INFINITY_INT, INFINITY_INT, 7,        INFINITY_INT, 0};
+             0,            4,            1,             4,        INFINITY_INT,   INFINITY_INT,
+             4,            0,            3,             8,             3,         INFINITY_INT,
+             1,            3,            0,        INFINITY_INT,       1,         INFINITY_INT,
+             4,            8,       INFINITY_INT,        0,            5,              7,
+        INFINITY_INT,      3,            1,              5,            0,        INFINITY_INT,
+        INFINITY_INT, INFINITY_INT, INFINITY_INT,        7,       INFINITY_INT,       0};
     greedy_algorithms::findMinimumEdge(INFINITY_INT, graph1);
 
     // Test case with floating values
@@ -91,31 +91,12 @@ static void test() {
 
     // Test case with double values
     std::cout << "\nTest Case 3 :\n";
-    std::array<std::array<double, 5>, 5> graph3{0.0,
-                                                10.5,
-                                                INFINITY_DOUBLE,
-                                                6.7,
-                                                3.3,
-                                                10.5,
-                                                0.0,
-                                                8.1,
-                                                15.4,
-                                                INFINITY_DOUBLE,
-                                                INFINITY_DOUBLE,
-                                                8.1,
-                                                0.0,
-                                                INFINITY_DOUBLE,
-                                                7.8,
-                                                6.7,
-                                                15.4,
-                                                INFINITY_DOUBLE,
-                                                0.0,
-                                                9.9,
-                                                3.3,
-                                                INFINITY_DOUBLE,
-                                                7.8,
-                                                9.9,
-                                                0.0};
+   std::array<std::array<double, 5>, 5> graph3{
+        0.0, 10.5, INFINITY_DOUBLE, 6.7, 3.3,
+        10.5, 0.0, 8.1, 15.4, INFINITY_DOUBLE,
+        INFINITY_DOUBLE, 8.1, 0.0, INFINITY_DOUBLE, 7.8,
+        6.7, 15.4, INFINITY_DOUBLE, 0.0, 9.9,
+        3.3, INFINITY_DOUBLE, 7.8, 9.9, 0.0};
     greedy_algorithms::findMinimumEdge(INFINITY_DOUBLE, graph3);
 
     // Test Case with negative weights
