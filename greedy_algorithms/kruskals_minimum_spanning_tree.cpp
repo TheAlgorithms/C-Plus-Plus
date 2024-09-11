@@ -84,8 +84,8 @@ static void test() {
     // Test case with floating values
     std::cout << "\nTest Case 2 :\n";
      std::array<std::array<float, 3>, 3> graph2{
-        0.0f, 2.5f, INFINITY_FLOAT,
-        2.5f, 0.0f, 3.2f,
+        0.0f,           2.5f, INFINITY_FLOAT,
+        2.5f,           0.0f, 3.2f,
         INFINITY_FLOAT, 3.2f, 0.0f};
     greedy_algorithms::findMinimumEdge(INFINITY_FLOAT, graph2);
 
@@ -101,64 +101,64 @@ static void test() {
 
     // Test Case with negative weights
     std::cout << "\nTest Case 4 :\n";
-    std::array<std::array<int, 3>, 3> graph_neg{0, -2, 4, -2, 0, 3, 4, 3, 0};
+    std::array<std::array<int, 3>, 3> graph_neg{
+        0, -2, 4,
+        -2, 0, 3,
+        4, 3, 0};
     greedy_algorithms::findMinimumEdge(INFINITY_INT, graph_neg);
 
     // Test Case with Self-Loops
     std::cout << "\nTest Case 5 :\n";
     std::array<std::array<int, 3>, 3> graph_self_loop{
-        2, 1, INFINITY_INT, INFINITY_INT, 0, 4, INFINITY_INT, 4, 0};
+        2, 1, INFINITY_INT,
+        INFINITY_INT, 0, 4,
+        INFINITY_INT, 4, 0};
     greedy_algorithms::findMinimumEdge(INFINITY_INT, graph_self_loop);
 
     // Test Case with no edges
     std::cout << "\nTest Case 6 :\n";
     std::array<std::array<int, 4>, 4> no_edges{
-        0, INFINITY_INT, INFINITY_INT, INFINITY_INT, INFINITY_INT,
-        0, INFINITY_INT, INFINITY_INT, INFINITY_INT, INFINITY_INT,
-        0, INFINITY_INT, INFINITY_INT, INFINITY_INT, INFINITY_INT,
-        0};
+        0, INFINITY_INT, INFINITY_INT, INFINITY_INT,
+        INFINITY_INT, 0, INFINITY_INT, INFINITY_INT,
+        INFINITY_INT, INFINITY_INT, 0, INFINITY_INT,
+        INFINITY_INT, INFINITY_INT, INFINITY_INT, 0};
     greedy_algorithms::findMinimumEdge(INFINITY_INT, no_edges);
 
     // Test Case with a non-connected graph
     std::cout << "\nTest Case 7:\n";
     std::array<std::array<int, 4>, 4> partial_graph{
-        0, 2, INFINITY_INT, 6, 2, 0, 3, INFINITY_INT, INFINITY_INT, 3, 0,
-        4, 6, INFINITY_INT, 4, 0};
+        0, 2, INFINITY_INT, 6,
+        2, 0, 3, INFINITY_INT,
+        INFINITY_INT, 3, 0, 4,
+        6, INFINITY_INT, 4, 0};
     greedy_algorithms::findMinimumEdge(INFINITY_INT, partial_graph);
 
     // Test Case with Directed weighted graph. Krushkal algorithm does not give
     // optimal answer
     std::cout << "\nTest Case 8:\n";
     std::array<std::array<int, 4>, 4> directed_graph{
-        0,
-        3,
-        7,
-        INFINITY_INT,  // Vertex 0 has edges to Vertex 1 and Vertex 2
-        INFINITY_INT,
-        0,
-        2,
-        5,  // Vertex 1 has edges to Vertex 2 and Vertex 3
-        INFINITY_INT,
-        INFINITY_INT,
-        0,
-        1,  // Vertex 2 has an edge to Vertex 3
-        INFINITY_INT,
-        INFINITY_INT,
-        INFINITY_INT,
-        0};  // Vertex 3 has no outgoing edges
+        0, 3, 7, INFINITY_INT,  // Vertex 0 has edges to Vertex 1 and Vertex 2
+        INFINITY_INT, 0, 2, 5,  // Vertex 1 has edges to Vertex 2 and Vertex 3
+        INFINITY_INT, INFINITY_INT, 0, 1,  // Vertex 2 has an edge to Vertex 3
+        INFINITY_INT, INFINITY_INT, INFINITY_INT, 0};  // Vertex 3 has no outgoing edges
     greedy_algorithms::findMinimumEdge(INFINITY_INT, directed_graph);
 
     // Test case with wrong input passed
     std::cout << "\nTest Case 9:\n";
-    std::array<std::array<int, 4>, 3> graph9{0, 5, 5, 5, 5, 0,
-                                             5, 5, 5, 5, 5, 5};
+   std::array<std::array<int, 4>, 3> graph9{
+        0,        5,        5,        5,
+        5,        0,        5,        5,        
+        5,        5,        5,        5};
     greedy_algorithms::findMinimumEdge(INFINITY_INT, graph9);
 
     // Test case with all same values between every edges
     std::cout << "\nTest Case 10:\n";
-    std::array<std::array<int, 5>, 5> graph10{0, 5, 5, 5, 5, 5, 0, 5, 5,
-                                              5, 5, 5, 0, 5, 5, 5, 5, 5,
-                                              0, 5, 5, 5, 5, 5, 0};
+    std::array<std::array<int, 5>, 5> graph10{
+        0,        5,        5,        5,        5,
+        5,        0,        5,        5,        5,
+        5,        5,        0,        5,        5,
+        5,        5,        5,        0,        5,
+        5,        5,        5,        5,        0};
     greedy_algorithms::findMinimumEdge(INFINITY_INT, graph10);
 
     std::cout << "\nAll tests have successfully passed!\n";
