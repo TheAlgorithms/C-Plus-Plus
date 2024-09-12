@@ -58,21 +58,21 @@ void findMinimumEdge(const T &infinity,
 }  // namespace greedy_algorithms
 
 /**
- * define a large constant value for int
- * define a large constant value for float
- * define a large constant value for double
- * define infinity for uint32_t
- */
-constexpr int INFINITY_INT = std::numeric_limits<int>::max();
-constexpr float INFINITY_FLOAT = std::numeric_limits<float>::max();
-constexpr double INFINITY_DOUBLE = std::numeric_limits<double>::max();
-constexpr uint32_t INFINITY_UINT32 = UINT32_MAX;
-
-/**
  * @brief Self-test implementations
  * @returns void
  */
 static void test() {
+    /**
+     * define a large value for int
+     * define a large value for float
+     * define a large value for double
+     * define a large value for uint32_t
+     */
+    constexpr int INFINITY_INT = std::numeric_limits<int>::max();
+    constexpr float INFINITY_FLOAT = std::numeric_limits<float>::max();
+    constexpr double INFINITY_DOUBLE = std::numeric_limits<double>::max();
+    constexpr uint32_t INFINITY_UINT32 = UINT32_MAX;
+  
     // Test case with integer values
     std::cout << "\nTest Case 1 :\n";
     std::array<std::array<int, 6>, 6> graph1{
