@@ -122,7 +122,8 @@ var NAVTREEINDEX8 =
 "d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html#ac341901e926b3fa3a796c64ca572f592":[10,0,12,0,0,10],
 "d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html#ac38565472a07d07f63ec0d2fd8a69d4d":[10,0,12,0,0,5],
 "d8/d7d/kruskals__minimum__spanning__tree_8cpp.html":[11,0,11,3],
-"d8/d7d/kruskals__minimum__spanning__tree_8cpp.html#a127ce4403660032f53ae2e6467e5427d":[11,0,11,3,0],
+"d8/d7d/kruskals__minimum__spanning__tree_8cpp.html#a349e4ab9a97532c3931a2bd2a19c0098":[11,0,11,3,0],
+"d8/d7d/kruskals__minimum__spanning__tree_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,11,3,2],
 "d8/d7d/kruskals__minimum__spanning__tree_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,11,3,1],
 "d8/d88/namespaceset_kth_bit.html":[9,0,102],
 "d8/d89/namespacelinear__probing.html":[8,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "d8/dee/avltree_8cpp.html#ae197eb50188fb761346952b9b5f6be59":[11,0,4,1,8],
 "d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83":[11,0,4,1,5],
 "d8/dee/avltree_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,4,1,9],
-"d8/df0/queue__using__array_8cpp.html":[11,0,4,14],
-"d8/df0/queue__using__array_8cpp.html#a2d49e79bd164c298912db252970520d8":[11,0,4,14,2]
+"d8/df0/queue__using__array_8cpp.html":[11,0,4,14]
 };

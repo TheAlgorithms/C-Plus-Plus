@@ -115,10 +115,12 @@ $(function(){initNavTree('d8/d7d/kruskals__minimum__spanning__tree_8cpp.html','.
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;array&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for kruskals_minimum_spanning_tree.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d2b/kruskals__minimum__spanning__tree_8cpp__incl.svg" width="206" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d2b/kruskals__minimum__spanning__tree_8cpp__incl.svg" width="318" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -129,10 +131,13 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a127ce4403660032f53ae2e6467e5427d" id="r_a127ce4403660032f53ae2e6467e5427d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a127ce4403660032f53ae2e6467e5427d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d90/namespacegreedy__algorithms.html#a127ce4403660032f53ae2e6467e5427d">greedy_algorithms::findMinimumEdge</a> (const int &amp;infinity, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, 6 &gt;, 6 &gt; &amp;graph)</td></tr>
-<tr class="memdesc:a127ce4403660032f53ae2e6467e5427d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the minimum edge of the given graph.  <br /></td></tr>
-<tr class="separator:a127ce4403660032f53ae2e6467e5427d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a349e4ab9a97532c3931a2bd2a19c0098" id="r_a349e4ab9a97532c3931a2bd2a19c0098"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> N, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> M&gt; </td></tr>
+<tr class="memitem:a349e4ab9a97532c3931a2bd2a19c0098"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d90/namespacegreedy__algorithms.html#a349e4ab9a97532c3931a2bd2a19c0098">greedy_algorithms::findMinimumEdge</a> (const T &amp;infinity, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt;, M &gt; &amp;graph)</td></tr>
+<tr class="memdesc:a349e4ab9a97532c3931a2bd2a19c0098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the minimum edge of the given graph.  <br /></td></tr>
+<tr class="separator:a349e4ab9a97532c3931a2bd2a19c0098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
+<tr class="memdesc:aa8dca7b867074164d5f45b0f3851269d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test implementations.  <br /></td></tr>
+<tr class="separator:aa8dca7b867074164d5f45b0f3851269d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <br /></td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,26 +165,167 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   57</span>           {</div>
-<div class="line"><span class="lineno">   58</span>    <span class="keyword">constexpr</span> <span class="keywordtype">int</span> INFINITY = 99999;</div>
-<div class="line"><span class="lineno">   59</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::array&lt;int, 6&gt;</a>, 6&gt; <a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>{</div>
-<div class="line"><span class="lineno">   60</span>        0,        4,        1,        4,        INFINITY, INFINITY,</div>
-<div class="line"><span class="lineno">   61</span>        4,        0,        3,        8,        3,        INFINITY,</div>
-<div class="line"><span class="lineno">   62</span>        1,        3,        0,        INFINITY, 1,        INFINITY,</div>
-<div class="line"><span class="lineno">   63</span>        4,        8,        INFINITY, 0,        5,        7,</div>
-<div class="line"><span class="lineno">   64</span>        INFINITY, 3,        1,        5,        0,        INFINITY,</div>
-<div class="line"><span class="lineno">   65</span>        INFINITY, INFINITY, INFINITY, 7,        INFINITY, 0};</div>
-<div class="line"><span class="lineno">   66</span> </div>
-<div class="line"><span class="lineno">   67</span>    <a class="code hl_function" href="../../d2/d90/namespacegreedy__algorithms.html#a127ce4403660032f53ae2e6467e5427d">greedy_algorithms::findMinimumEdge</a>(INFINITY, <a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>);</div>
-<div class="line"><span class="lineno">   68</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   69</span>}</div>
-<div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
-<div class="ttc" id="anamespacegraph_html"><div class="ttname"><a href="../../df/dce/namespacegraph.html">graph</a></div><div class="ttdoc">Graph Algorithms.</div></div>
-<div class="ttc" id="anamespacegreedy__algorithms_html_a127ce4403660032f53ae2e6467e5427d"><div class="ttname"><a href="../../d2/d90/namespacegreedy__algorithms.html#a127ce4403660032f53ae2e6467e5427d">greedy_algorithms::findMinimumEdge</a></div><div class="ttdeci">void findMinimumEdge(const int &amp;infinity, const std::array&lt; std::array&lt; T, 6 &gt;, 6 &gt; &amp;graph)</div><div class="ttdoc">Finds the minimum edge of the given graph.</div><div class="ttdef"><b>Definition</b> kruskals_minimum_spanning_tree.cpp:36</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  184</span>           {</div>
+<div class="line"><span class="lineno">  185</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run Self-test implementation</span></div>
+<div class="line"><span class="lineno">  186</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  187</span>}</div>
+<div class="ttc" id="akruskals__minimum__spanning__tree_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> kruskals_minimum_spanning_tree.cpp:64</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d7d/kruskals__minimum__spanning__tree_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="244" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d7d/kruskals__minimum__spanning__tree_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="364" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8dca7b867074164d5f45b0f3851269d">&#9670;&#160;</a></span>test()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void test </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Self-test implementations. </p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>define a large value for int define a large value for float define a large value for double define a large value for uint32_t</p>
+<div class="fragment"><div class="line"><span class="lineno">   64</span>                   {<span class="comment"></span></div>
+<div class="line"><span class="lineno">   65</span><span class="comment">    /**</span></div>
+<div class="line"><span class="lineno">   66</span><span class="comment">     * define a large value for int</span></div>
+<div class="line"><span class="lineno">   67</span><span class="comment">     * define a large value for float</span></div>
+<div class="line"><span class="lineno">   68</span><span class="comment">     * define a large value for double</span></div>
+<div class="line"><span class="lineno">   69</span><span class="comment">     * define a large value for uint32_t</span></div>
+<div class="line"><span class="lineno">   70</span><span class="comment">     */</span></div>
+<div class="line"><span class="lineno">   71</span>    <span class="keyword">constexpr</span> <span class="keywordtype">int</span> INFINITY_INT = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/numeric_limits/max.html">std::numeric_limits&lt;int&gt;::max</a>();</div>
+<div class="line"><span class="lineno">   72</span>    <span class="keyword">constexpr</span> <span class="keywordtype">float</span> INFINITY_FLOAT = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/numeric_limits/max.html">std::numeric_limits&lt;float&gt;::max</a>();</div>
+<div class="line"><span class="lineno">   73</span>    <span class="keyword">constexpr</span> <span class="keywordtype">double</span> INFINITY_DOUBLE = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/numeric_limits/max.html">std::numeric_limits&lt;double&gt;::max</a>();</div>
+<div class="line"><span class="lineno">   74</span>    <span class="keyword">constexpr</span> uint32_t INFINITY_UINT32 = UINT32_MAX;</div>
+<div class="line"><span class="lineno">   75</span>  </div>
+<div class="line"><span class="lineno">   76</span>    <span class="comment">// Test case with integer values</span></div>
+<div class="line"><span class="lineno">   77</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nTest Case 1 :\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   78</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::array&lt;int, 6&gt;</a>, 6&gt; graph1{</div>
+<div class="line"><span class="lineno">   79</span>             0,            4,            1,             4,        INFINITY_INT,   INFINITY_INT,</div>
+<div class="line"><span class="lineno">   80</span>             4,            0,            3,             8,             3,         INFINITY_INT,</div>
+<div class="line"><span class="lineno">   81</span>             1,            3,            0,        INFINITY_INT,       1,         INFINITY_INT,</div>
+<div class="line"><span class="lineno">   82</span>             4,            8,       INFINITY_INT,        0,            5,              7,</div>
+<div class="line"><span class="lineno">   83</span>        INFINITY_INT,      3,            1,              5,            0,         INFINITY_INT,</div>
+<div class="line"><span class="lineno">   84</span>        INFINITY_INT, INFINITY_INT, INFINITY_INT,        7,       INFINITY_INT,       0};</div>
+<div class="line"><span class="lineno">   85</span>    <a class="code hl_function" href="../../d2/d90/namespacegreedy__algorithms.html#a349e4ab9a97532c3931a2bd2a19c0098">greedy_algorithms::findMinimumEdge</a>(INFINITY_INT, graph1);</div>
+<div class="line"><span class="lineno">   86</span> </div>
+<div class="line"><span class="lineno">   87</span>    <span class="comment">// Test case with floating values</span></div>
+<div class="line"><span class="lineno">   88</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nTest Case 2 :\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   89</span>     <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::array&lt;float, 3&gt;</a>, 3&gt; graph2{</div>
+<div class="line"><span class="lineno">   90</span>             0.0f,           2.5f,  INFINITY_FLOAT,</div>
+<div class="line"><span class="lineno">   91</span>             2.5f,           0.0f,       3.2f,</div>
+<div class="line"><span class="lineno">   92</span>        INFINITY_FLOAT,      3.2f,       0.0f};</div>
+<div class="line"><span class="lineno">   93</span>    <a class="code hl_function" href="../../d2/d90/namespacegreedy__algorithms.html#a349e4ab9a97532c3931a2bd2a19c0098">greedy_algorithms::findMinimumEdge</a>(INFINITY_FLOAT, graph2);</div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>    <span class="comment">// Test case with double values</span></div>
+<div class="line"><span class="lineno">   96</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nTest Case 3 :\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   97</span>   <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::array&lt;double, 5&gt;</a>, 5&gt; graph3{</div>
+<div class="line"><span class="lineno">   98</span>               0.0,             10.5,       INFINITY_DOUBLE,        6.7,              3.3,</div>
+<div class="line"><span class="lineno">   99</span>               10.5,            0.0,              8.1,              15.4,       INFINITY_DOUBLE,</div>
+<div class="line"><span class="lineno">  100</span>        INFINITY_DOUBLE,        8.1,              0.0,        INFINITY_DOUBLE,         7.8,</div>
+<div class="line"><span class="lineno">  101</span>               6.7,             15.4,       INFINITY_DOUBLE,        0.0,               9.9,</div>
+<div class="line"><span class="lineno">  102</span>               3.3,       INFINITY_DOUBLE,        7.8,              9.9,               0.0};</div>
+<div class="line"><span class="lineno">  103</span>    <a class="code hl_function" href="../../d2/d90/namespacegreedy__algorithms.html#a349e4ab9a97532c3931a2bd2a19c0098">greedy_algorithms::findMinimumEdge</a>(INFINITY_DOUBLE, graph3);</div>
+<div class="line"><span class="lineno">  104</span> </div>
+<div class="line"><span class="lineno">  105</span>    <span class="comment">// Test Case with negative weights</span></div>
+<div class="line"><span class="lineno">  106</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nTest Case 4 :\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  107</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::array&lt;int, 3&gt;</a>, 3&gt; graph_neg{</div>
+<div class="line"><span class="lineno">  108</span>        0,   -2,   4,</div>
+<div class="line"><span class="lineno">  109</span>       -2,    0,   3,</div>
+<div class="line"><span class="lineno">  110</span>        4,    3,   0};</div>
+<div class="line"><span class="lineno">  111</span>    <a class="code hl_function" href="../../d2/d90/namespacegreedy__algorithms.html#a349e4ab9a97532c3931a2bd2a19c0098">greedy_algorithms::findMinimumEdge</a>(INFINITY_INT, graph_neg);</div>
+<div class="line"><span class="lineno">  112</span> </div>
+<div class="line"><span class="lineno">  113</span>    <span class="comment">// Test Case with Self-Loops</span></div>
+<div class="line"><span class="lineno">  114</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nTest Case 5 :\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  115</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::array&lt;int, 3&gt;</a>, 3&gt; graph_self_loop{</div>
+<div class="line"><span class="lineno">  116</span>               2,       1, INFINITY_INT,</div>
+<div class="line"><span class="lineno">  117</span>        INFINITY_INT,   0,        4,</div>
+<div class="line"><span class="lineno">  118</span>        INFINITY_INT,   4,        0};</div>
+<div class="line"><span class="lineno">  119</span>    <a class="code hl_function" href="../../d2/d90/namespacegreedy__algorithms.html#a349e4ab9a97532c3931a2bd2a19c0098">greedy_algorithms::findMinimumEdge</a>(INFINITY_INT, graph_self_loop);</div>
+<div class="line"><span class="lineno">  120</span> </div>
+<div class="line"><span class="lineno">  121</span>    <span class="comment">// Test Case with no edges</span></div>
+<div class="line"><span class="lineno">  122</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nTest Case 6 :\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  123</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::array&lt;int, 4&gt;</a>, 4&gt; no_edges{</div>
+<div class="line"><span class="lineno">  124</span>               0,       INFINITY_INT,   INFINITY_INT,   INFINITY_INT,</div>
+<div class="line"><span class="lineno">  125</span>        INFINITY_INT,         0,        INFINITY_INT,   INFINITY_INT,</div>
+<div class="line"><span class="lineno">  126</span>        INFINITY_INT,   INFINITY_INT,          0,       INFINITY_INT,</div>
+<div class="line"><span class="lineno">  127</span>        INFINITY_INT,   INFINITY_INT,   INFINITY_INT,           0};</div>
+<div class="line"><span class="lineno">  128</span>    <a class="code hl_function" href="../../d2/d90/namespacegreedy__algorithms.html#a349e4ab9a97532c3931a2bd2a19c0098">greedy_algorithms::findMinimumEdge</a>(INFINITY_INT, no_edges);</div>
+<div class="line"><span class="lineno">  129</span> </div>
+<div class="line"><span class="lineno">  130</span>    <span class="comment">// Test Case with a non-connected graph</span></div>
+<div class="line"><span class="lineno">  131</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nTest Case 7:\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  132</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::array&lt;int, 4&gt;</a>, 4&gt; partial_graph{</div>
+<div class="line"><span class="lineno">  133</span>                0,             2,    INFINITY_INT,         6,</div>
+<div class="line"><span class="lineno">  134</span>                2,             0,            3,     INFINITY_INT,</div>
+<div class="line"><span class="lineno">  135</span>        INFINITY_INT,          3,            0,             4,</div>
+<div class="line"><span class="lineno">  136</span>                6,     INFINITY_INT,         4,             0};</div>
+<div class="line"><span class="lineno">  137</span>    <a class="code hl_function" href="../../d2/d90/namespacegreedy__algorithms.html#a349e4ab9a97532c3931a2bd2a19c0098">greedy_algorithms::findMinimumEdge</a>(INFINITY_INT, partial_graph);</div>
+<div class="line"><span class="lineno">  138</span> </div>
+<div class="line"><span class="lineno">  139</span>    <span class="comment">// Test Case with Directed weighted graph. The Krushkal algorithm does not give</span></div>
+<div class="line"><span class="lineno">  140</span>    <span class="comment">// optimal answer</span></div>
+<div class="line"><span class="lineno">  141</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nTest Case 8:\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  142</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::array&lt;int, 4&gt;</a>, 4&gt; directed_graph{</div>
+<div class="line"><span class="lineno">  143</span>                0,            3,            7,   INFINITY_INT,  <span class="comment">// Vertex 0 has edges to Vertex 1 and Vertex 2</span></div>
+<div class="line"><span class="lineno">  144</span>        INFINITY_INT,         0,            2,           5,  <span class="comment">// Vertex 1 has edges to Vertex 2 and Vertex 3</span></div>
+<div class="line"><span class="lineno">  145</span>        INFINITY_INT, INFINITY_INT,         0,           1,  <span class="comment">// Vertex 2 has an edge to Vertex 3</span></div>
+<div class="line"><span class="lineno">  146</span>        INFINITY_INT, INFINITY_INT, INFINITY_INT,        0};  <span class="comment">// Vertex 3 has no outgoing edges</span></div>
+<div class="line"><span class="lineno">  147</span>    <a class="code hl_function" href="../../d2/d90/namespacegreedy__algorithms.html#a349e4ab9a97532c3931a2bd2a19c0098">greedy_algorithms::findMinimumEdge</a>(INFINITY_INT, directed_graph);</div>
+<div class="line"><span class="lineno">  148</span> </div>
+<div class="line"><span class="lineno">  149</span>    <span class="comment">// Test case with wrong input passed</span></div>
+<div class="line"><span class="lineno">  150</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nTest Case 9:\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  151</span>   <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::array&lt;int, 4&gt;</a>, 3&gt; graph9{</div>
+<div class="line"><span class="lineno">  152</span>        0,        5,        5,        5,</div>
+<div class="line"><span class="lineno">  153</span>        5,        0,        5,        5,        </div>
+<div class="line"><span class="lineno">  154</span>        5,        5,        5,        5};</div>
+<div class="line"><span class="lineno">  155</span>    <a class="code hl_function" href="../../d2/d90/namespacegreedy__algorithms.html#a349e4ab9a97532c3931a2bd2a19c0098">greedy_algorithms::findMinimumEdge</a>(INFINITY_INT, graph9);</div>
+<div class="line"><span class="lineno">  156</span> </div>
+<div class="line"><span class="lineno">  157</span>    <span class="comment">// Test case with all the same values between every edge</span></div>
+<div class="line"><span class="lineno">  158</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nTest Case 10:\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  159</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::array&lt;int, 5&gt;</a>, 5&gt; graph10{</div>
+<div class="line"><span class="lineno">  160</span>        0,        5,        5,        5,        5,</div>
+<div class="line"><span class="lineno">  161</span>        5,        0,        5,        5,        5,</div>
+<div class="line"><span class="lineno">  162</span>        5,        5,        0,        5,        5,</div>
+<div class="line"><span class="lineno">  163</span>        5,        5,        5,        0,        5,</div>
+<div class="line"><span class="lineno">  164</span>        5,        5,        5,        5,        0};</div>
+<div class="line"><span class="lineno">  165</span>    <a class="code hl_function" href="../../d2/d90/namespacegreedy__algorithms.html#a349e4ab9a97532c3931a2bd2a19c0098">greedy_algorithms::findMinimumEdge</a>(INFINITY_INT, graph10);</div>
+<div class="line"><span class="lineno">  166</span> </div>
+<div class="line"><span class="lineno">  167</span>  <span class="comment">// Test Case with uint32_t values</span></div>
+<div class="line"><span class="lineno">  168</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nTest Case 11 :\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  169</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::array&lt;uint32_t, 4&gt;</a>, 4&gt; graph_uint32{</div>
+<div class="line"><span class="lineno">  170</span>                0,                      5,        INFINITY_UINT32,          9,</div>
+<div class="line"><span class="lineno">  171</span>                5,                      0,                2,        INFINITY_UINT32,</div>
+<div class="line"><span class="lineno">  172</span>        INFINITY_UINT32,                2,                0,                6,</div>
+<div class="line"><span class="lineno">  173</span>                9,               INFINITY_UINT32,         6,                0};</div>
+<div class="line"><span class="lineno">  174</span>    <a class="code hl_function" href="../../d2/d90/namespacegreedy__algorithms.html#a349e4ab9a97532c3931a2bd2a19c0098">greedy_algorithms::findMinimumEdge</a>(INFINITY_UINT32, graph_uint32);</div>
+<div class="line"><span class="lineno">  175</span> </div>
+<div class="line"><span class="lineno">  176</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nAll tests have successfully passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  177</span>}</div>
+<div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
+<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
+<div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/numeric_limits/max.html">std::numeric_limits::max</a></div><div class="ttdeci">T max(T... args)</div></div>
+<div class="ttc" id="anamespacegreedy__algorithms_html_a349e4ab9a97532c3931a2bd2a19c0098"><div class="ttname"><a href="../../d2/d90/namespacegreedy__algorithms.html#a349e4ab9a97532c3931a2bd2a19c0098">greedy_algorithms::findMinimumEdge</a></div><div class="ttdeci">void findMinimumEdge(const T &amp;infinity, const std::array&lt; std::array&lt; T, N &gt;, M &gt; &amp;graph)</div><div class="ttdoc">Finds the minimum edge of the given graph.</div><div class="ttdef"><b>Definition</b> kruskals_minimum_spanning_tree.cpp:38</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d7d/kruskals__minimum__spanning__tree_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="267" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

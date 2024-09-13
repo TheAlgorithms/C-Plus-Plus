@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"db/d82/classlarge__number.html#af4598f1f2794b5e17e10c25e0501e41a":[10,0,36,1],
 "db/d8b/struct_node.html":[10,0,43],
 "db/d93/check__prime_8cpp.html":[11,0,14,7],
 "db/d93/check__prime_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[11,0,14,7,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "dc/dd4/classdata__structures_1_1_bloom_filter.html#a67bed8ef62fcb1f33b6c72df47dcf840":[10,0,2,9,1],
 "dc/dd4/classdata__structures_1_1_bloom_filter.html#a6910d29951b57ab56e7a3db405aa1f1a":[9,0,20,2,0],
 "dc/dd4/classdata__structures_1_1_bloom_filter.html#a6910d29951b57ab56e7a3db405aa1f1a":[10,0,2,9,0],
-"dc/dd4/classdata__structures_1_1_bloom_filter.html#a90268d7901e2c1ab5f8bf8b24a30e119":[9,0,20,2,4],
-"dc/dd4/classdata__structures_1_1_bloom_filter.html#a90268d7901e2c1ab5f8bf8b24a30e119":[10,0,2,9,4]
+"dc/dd4/classdata__structures_1_1_bloom_filter.html#a90268d7901e2c1ab5f8bf8b24a30e119":[9,0,20,2,4]
 };

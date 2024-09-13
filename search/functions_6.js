@@ -66,7 +66,7 @@ var searchData=
   ['find_5fzero_63',['find_zero',['../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a94f794bf44f424b1b0ca6ef9f4f6ebd3',1,'machine_learning::aystar_search::EightPuzzle']]],
   ['finding_5fnumber_5fof_5fdigits_5fin_5fa_5fnumber_64',['finding_number_of_digits_in_a_number',['../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8a3b522a675ab4cdec2d275f6f7798a1',1,'finding_number_of_digits_in_a_number.cpp']]],
   ['finding_5fnumber_5fof_5fdigits_5fin_5fa_5fnumber_5fusing_5flog_65',['finding_number_of_digits_in_a_number_using_log',['../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#ac0862b67cf73651707ece04673e1ae49',1,'finding_number_of_digits_in_a_number.cpp']]],
-  ['findminimumedge_66',['findMinimumEdge',['../d2/d90/namespacegreedy__algorithms.html#a127ce4403660032f53ae2e6467e5427d',1,'greedy_algorithms']]],
+  ['findminimumedge_66',['findMinimumEdge',['../d2/d90/namespacegreedy__algorithms.html#a349e4ab9a97532c3931a2bd2a19c0098',1,'greedy_algorithms']]],
   ['findminindex_67',['findMinIndex',['../d4/d9f/selection__sort__recursive_8cpp.html#a5454eeb691725ccac0f59df1e133f834',1,'sorting::selection_sort_recursive']]],
   ['findminnode_68',['findMinNode',['../d4/d32/inorder__successor__of__bst_8cpp.html#a72483e3f6933e004a8d86371e8a990db',1,'operations_on_datastructures::inorder_traversal_of_bst']]],
   ['findnextgap_69',['FindNextGap',['../d9/dfd/comb__sort_8cpp.html#aede08143e63105faba10e9ee8e745fd5',1,'comb_sort.cpp']]],

@@ -93,7 +93,7 @@ var searchData=
   ['finding_5fnumber_5fof_5fdigits_5fin_5fa_5fnumber_90',['finding_number_of_digits_in_a_number',['../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8a3b522a675ab4cdec2d275f6f7798a1',1,'finding_number_of_digits_in_a_number.cpp']]],
   ['finding_5fnumber_5fof_5fdigits_5fin_5fa_5fnumber_2ecpp_91',['finding_number_of_digits_in_a_number.cpp',['../d0/d46/finding__number__of__digits__in__a__number_8cpp.html',1,'']]],
   ['finding_5fnumber_5fof_5fdigits_5fin_5fa_5fnumber_5fusing_5flog_92',['finding_number_of_digits_in_a_number_using_log',['../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#ac0862b67cf73651707ece04673e1ae49',1,'finding_number_of_digits_in_a_number.cpp']]],
-  ['findminimumedge_93',['findMinimumEdge',['../d2/d90/namespacegreedy__algorithms.html#a127ce4403660032f53ae2e6467e5427d',1,'greedy_algorithms']]],
+  ['findminimumedge_93',['findMinimumEdge',['../d2/d90/namespacegreedy__algorithms.html#a349e4ab9a97532c3931a2bd2a19c0098',1,'greedy_algorithms']]],
   ['findminindex_94',['findMinIndex',['../d4/d9f/selection__sort__recursive_8cpp.html#a5454eeb691725ccac0f59df1e133f834',1,'sorting::selection_sort_recursive']]],
   ['findminnode_95',['findMinNode',['../d4/d32/inorder__successor__of__bst_8cpp.html#a72483e3f6933e004a8d86371e8a990db',1,'operations_on_datastructures::inorder_traversal_of_bst']]],
   ['findnextgap_96',['FindNextGap',['../d9/dfd/comb__sort_8cpp.html#aede08143e63105faba10e9ee8e745fd5',1,'comb_sort.cpp']]],
