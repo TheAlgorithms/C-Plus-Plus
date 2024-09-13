@@ -3,8 +3,9 @@
  * @brief check whether two line segments intersect each other
  * or not.
  */
-#include <algorithm>
-#include <iostream>
+#include <stdio.h>    // for printf
+#include <algorithm>  // for max, min
+#include <iostream>   // for basic_istream::operator>>, char_traits, basic_i...
 
 /**
  * Define a Point.
