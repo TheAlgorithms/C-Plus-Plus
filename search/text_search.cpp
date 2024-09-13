@@ -2,13 +2,13 @@
  * \file
  * \brief Search for words in a long textual paragraph.
  */
-#include <ctype.h>   // for tolower
-#include <cassert>   // for assert
-#include <iostream>  // for basic_ostream, operator<<, char_traits, cout, endl
-#include <string>    // for basic_string, operator<<, string, getline
+#include <cassert>
+#include <cstdlib>
+#include <iostream>
 #ifdef _MSC_VER
-#include <string>    // for basic_string, operator<<, string, getline
+#include <string>  // required for MS Visual C++
 #else
+#include <cstring>
 #endif
 
 /**

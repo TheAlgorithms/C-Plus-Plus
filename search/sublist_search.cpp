@@ -25,11 +25,10 @@
  * @author [Nitin Sharma](https://github.com/foo290)
  */
 
-#include <cassert>   // for assert
-#include <cstddef>   // for NULL
-#include <cstdint>   // for uint64_t, uint32_t
-#include <iostream>  // for basic_ostream, operator<<, cout, char_traits, endl
-#include <vector>    // for vector
+#include <cassert>   /// for assert
+#include <cstdint>   /// for integral typedefs
+#include <iostream>  /// for IO operations
+#include <vector>    /// for std::vector
 
 /**
  * @namespace search

@@ -12,13 +12,14 @@
  * algorithm return null ponter, every other cases the algoritm return fom the
  * loop.
  */
-#include <cassert>  // for assert
-#include <cmath>    // for floor
-#include <cstdint>  // for int32_t, uint32_t
+#include <cassert>
+#include <cmath>
+#include <cstdint>
+#include <cstdint>  /// for integral typedefs
 #ifdef _MSC_VER
 #include <string>  // use for MS Visual C++
 #else
-#include <cstring>  // for size_t
+#include <cstring>  // for all other compilers
 #endif
 
 /** Binary Search Algorithm (used by ::struzik_search)\n
