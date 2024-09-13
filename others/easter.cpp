@@ -17,9 +17,8 @@
  * @author [AlternateWalls](https://github.com/AlternateWalls)
  */
 
-#include <cassert>   /// for assert
-#include <cstdint>   /// for integral typedefs
-#include <iostream>  /// for IO operations
+#include <cassert>  // for assert
+#include <cstdint>  // for uint64_t
 
 /*
  * @brief Contains information for Easter date

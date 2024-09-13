@@ -4,10 +4,8 @@
  * to both Lower case and Upper case Roman Numeral
  */
 
-#include <cmath>
-#include <cstdio>
-#include <cstring>
-#include <iostream>
+#include <iostream>  // for char_traits, basic_ostream, operator<<, basic_os...
+#include <string>    // for basic_string, operator+, allocator, string, oper...
 
 /** This functions fills a string with character c, n times and returns it
  * @note This can probably be replace by `memcpy` function.

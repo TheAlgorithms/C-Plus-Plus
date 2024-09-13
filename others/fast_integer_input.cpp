@@ -3,7 +3,8 @@
  * @brief Read integers from stdin continuously as they are entered without
  * waiting for the `\n` character
  */
-#include <iostream>
+#include <iostream>  // for char_traits, basic_ostream, basic_ostream::opera...
+#include <cstdio>    // for getchar
 
 /** Function to read the number from stdin. The function reads input until a non
  * numeric character is entered.

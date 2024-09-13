@@ -10,11 +10,13 @@
  * Evaluate the operator and push the result back to the stack
  * When the expression is ended, the number in the stack is the final answer
  */
+#include <ctype.h>    // for isdigit
 #include <algorithm>  // for all_of
-#include <array>      // for std::array
+#include <array>      // for array
 #include <cassert>    // for assert
-#include <iostream>   // for io operations
-#include <string>     // for stof
+#include <iostream>   // for operator<<, basic_ostream, cout
+#include <string>     // for basic_string, char_traits, string, stof
+#include <cstddef>    // for size_t
 
 /**
  * @namespace others

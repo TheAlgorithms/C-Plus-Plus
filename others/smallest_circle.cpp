@@ -7,9 +7,10 @@
  * @see [other
  * implementation](https://www.nayuki.io/page/smallest-enclosing-circle)
  */
-#include <cmath>
-#include <iostream>
-#include <vector>
+#include <cmath>     // for sqrt, INFINITY
+#include <cstddef>   // for size_t
+#include <iostream>  // for basic_ostream, char_traits, cout, endl, operator<<
+#include <vector>    // for vector
 
 /** Define a point */
 struct Point {
