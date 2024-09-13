@@ -6,10 +6,8 @@
  * hash](https://en.wikipedia.org/wiki/Linear_probing) keys.
  * @note The implementation can be optimized by using OOP style.
  */
-#include <cstddef>     // for size_t
-#include <functional>  // for hash
-#include <iostream>    // for basic_ostream, operator<<, char_traits, cout
-#include <vector>      // for vector
+#include <iostream>
+#include <vector>
 
 /**
  * @addtogroup open_addressing Open Addressing
