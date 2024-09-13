@@ -15,18 +15,14 @@
  * @todo fix the program for memory leaks and better structure in C++ and not C
  * fashion
  */
-#include <cstdlib>
-#include <iostream>
+#include <cstdlib>   // for NULL, malloc
+#include <iostream>  // for basic_ostream, operator<<, char_traits, basic_os...
 
 #define MAX 6      ///< Determines how much data
 #define HASHMAX 5  ///< Determines the length of the hash table
 
 int data[MAX] = {1, 10, 15, 5, 8, 7};  //!< test data
 
-/**
- * a one-way linked list
- */
-typedef struct list {
     int key;            //!< key value for node
     struct list* next;  //!< pointer to next link in the chain
 } node,                 /**< define node as one item list */

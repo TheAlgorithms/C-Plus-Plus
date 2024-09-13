@@ -5,11 +5,10 @@
  * algorithm](https://en.wikipedia.org/wiki/Fibonacci_search_technique)
  */
 
-#include <iostream>
-#include <vector> // for std::vector class
-#include <cassert> // for assert
-#include <cstdlib> // for random numbers
-#include <algorithm> // for sorting
+#include <vector>     // for vector
+#include <cassert>    // for assert
+#include <cstdlib>    // for rand
+#include <algorithm>  // for find, sort, min, remove
 
 
 
