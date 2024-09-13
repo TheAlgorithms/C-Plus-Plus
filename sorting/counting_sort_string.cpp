@@ -1,5 +1,6 @@
 // C++ Program for counting sort
-#include <iostream>
+#include <iostream>  // for char_traits, basic_ostream, operator<<, basic_is...
+#include <string>    // for basic_string, string, operator<<, operator>>
 
 using namespace std;
 

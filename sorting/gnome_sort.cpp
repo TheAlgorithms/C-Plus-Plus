@@ -15,10 +15,13 @@
  * can be \f$O(n)\f$.
  */
 
-#include <algorithm>  // for std::swap
-#include <array>      // for std::array
-#include <cassert>    // for assertions
-#include <iostream>   // for io operations
+#include <algorithm>  // for is_sorted
+#include <array>      // for array
+#include <cassert>    // for assert
+#include <iostream>   // for operator<<, basic_ostream, cout, char_traits, endl
+#include <cstdlib>    // for rand, size_t
+#include <iterator>   // for begin, end
+#include <utility>    // for swap
 
 /**
  * @namespace sorting

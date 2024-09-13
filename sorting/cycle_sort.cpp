@@ -11,11 +11,14 @@
  * @author [TsungHan Ho](https://github.com/dalaoqi)
  */
 
-#include <algorithm>  /// for std::is_sorted, std::swap
-#include <cassert>    /// for assert
-#include <cstdint>    /// for integral typedefs
-#include <iostream>   /// for io operations
-#include <vector>     /// for std::vector
+#include <algorithm>  // for is_sorted
+#include <cassert>    // for assert
+#include <cstddef>    // for size_t
+#include <cstdint>    // for uint32_t
+#include <iostream>   // for basic_ostream, operator<<, char_traits, cout, endl
+#include <iterator>   // for begin, end
+#include <utility>    // for swap
+#include <vector>     // for vector
 
 /**
  * @namespace sorting

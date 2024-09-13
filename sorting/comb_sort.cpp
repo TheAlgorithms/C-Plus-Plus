@@ -15,9 +15,10 @@
  *
  */
 
-#include <algorithm>
-#include <cassert>
-#include <iostream>
+#include <algorithm>  // for is_sorted, max
+#include <cassert>    // for assert
+#include <iostream>   // for char_traits, operator<<, basic_istream::operator>>
+#include <utility>    // for swap
 
 /**
  *

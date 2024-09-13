@@ -1,8 +1,9 @@
 // C++ program to perform TimSort.
-#include <algorithm>
-#include <cassert>
-#include <iostream>
-#include <numeric>
+#include <stdio.h>    // for printf
+#include <algorithm>  // for min, is_sorted, reverse
+#include <cassert>    // for assert
+#include <iostream>   // for basic_ostream, cout, endl
+#include <numeric>    // for iota
 
 const int RUN = 32;
 

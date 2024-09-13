@@ -27,11 +27,13 @@
  * @author [Tushar Khanduri](https://github.com/Tushar-K24)
  */
 
-#include <algorithm>  /// for std::is_sorted
-#include <cassert>  /// for assert
-#include <cstdint>   /// for integral typedefs
-#include <iostream>  /// for std::swap and io operations
-#include <vector>    /// for std::vector
+#include <algorithm>  // for is_sorted
+#include <cassert>    // for assert
+#include <cstdint>    // for uint64_t
+#include <iostream>   // for basic_ostream, operator<<, char_traits, cout, endl
+#include <vector>     // for vector
+#include <iterator>   // for begin, end
+#include <utility>    // for swap
 
 /**
  * @namespace sorting

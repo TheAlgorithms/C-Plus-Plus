@@ -39,10 +39,13 @@
  * \f{bmatrix}{1 &2 &3 &4 &5\f}
  */
 
-#include <algorithm>
-#include <cassert>
-#include <iostream>
-#include <vector>
+#include <stdint.h>   // for int32_t
+#include <algorithm>  // for is_sorted
+#include <cassert>    // for assert
+#include <iostream>   // for operator<<, basic_ostream, cout, char_traits, endl
+#include <vector>     // for vector
+#include <cstdlib>    // for rand, size_t
+#include <iterator>   // for begin, end
 
 /** \namespace sorting
  * \brief Sorting algorithms

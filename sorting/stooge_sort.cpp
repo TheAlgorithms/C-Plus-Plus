@@ -1,7 +1,7 @@
 /**
  * @file
- * @brief [Stooge sort implementation](https://en.wikipedia.org/wiki/Stooge_sort)
- * in C++
+ * @brief [Stooge sort
+ *implementation](https://en.wikipedia.org/wiki/Stooge_sort) in C++
  * @details
  * Stooge sort is a recursive sorting algorithm.
  * It divides the array into 3 parts and proceeds to:
@@ -13,18 +13,21 @@
  * on the street on average. Space complexity is O(1).
  */
 
-#include <vector> /// for vector
-#include <cassert> /// for assert
-#include <algorithm>  /// for std::is_sorted
-#include <iostream>   /// for IO operations
+#include <algorithm>  // for is_sorted
+#include <cassert>    // for assert
+#include <cstddef>    // for size_t
+#include <iostream>   // for operator<<, basic_ostream, cout
+#include <iterator>   // for begin, end
+#include <utility>    // for swap
+#include <vector>     // for vector
 
- /**
-  * @brief The stoogeSort() function is used for sorting the array.
-  * @param L - vector of values (int) to be sorted in in place (ascending order)
-  * @param i - the first index of the array (0)
-  * @param j - the last index of the array (L.size() - 1)
-  * @returns void
-  */
+/**
+ * @brief The stoogeSort() function is used for sorting the array.
+ * @param L - vector of values (int) to be sorted in in place (ascending order)
+ * @param i - the first index of the array (0)
+ * @param j - the last index of the array (L.size() - 1)
+ * @returns void
+ */
 void stoogeSort(std::vector<int>* L, size_t i, size_t j) {
     if (i >= j) {
         return;
@@ -45,9 +48,9 @@ void stoogeSort(std::vector<int>* L, size_t i, size_t j) {
  * @returns void
  */
 void test1() {
-	std::vector<int> L = { 8, 9, 10, 4, 3, 5, 1 };
-	stoogeSort(&L, 0, L.size() - 1);
-	assert(std::is_sorted(std::begin(L), std::end(L)));
+    std::vector<int> L = {8, 9, 10, 4, 3, 5, 1};
+    stoogeSort(&L, 0, L.size() - 1);
+    assert(std::is_sorted(std::begin(L), std::end(L)));
 }
 
 /**
@@ -55,9 +58,9 @@ void test1() {
  * @returns void
  */
 void test2() {
-	std::vector<int> L = { -1 };
-	stoogeSort(&L, 0, L.size() - 1);
-	assert(std::is_sorted(std::begin(L), std::end(L)));
+    std::vector<int> L = {-1};
+    stoogeSort(&L, 0, L.size() - 1);
+    assert(std::is_sorted(std::begin(L), std::end(L)));
 }
 
 /**
@@ -65,9 +68,9 @@ void test2() {
  * @returns void
  */
 void test3() {
-	std::vector<int> L = { 1, 2, 5, 4, 1, 5 };
-	stoogeSort(&L, 0, L.size() - 1);
-	assert(std::is_sorted(std::begin(L), std::end(L)));
+    std::vector<int> L = {1, 2, 5, 4, 1, 5};
+    stoogeSort(&L, 0, L.size() - 1);
+    assert(std::is_sorted(std::begin(L), std::end(L)));
 }
 
 /**
@@ -77,10 +80,10 @@ void test3() {
  * @returns 0 on exit
  */
 int main() {
-	test1();
-	test2();
-	test3();
-    
+    test1();
+    test2();
+    test3();
+
     std::cout << "All tests have successfully passed!\n";
-	return 0;
+    return 0;
 }

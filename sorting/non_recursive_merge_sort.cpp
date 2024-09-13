@@ -4,9 +4,10 @@
  *
  * A generic implementation of non-recursive merge sort.
  */
-#include <cstddef>  // for size_t
-#include <iostream>
-#include <utility>  // for std::move & std::remove_reference_t
+#include <cstddef>      // for size_t
+#include <iostream>     // for operator<<, basic_ostream, char_traits, basic...
+#include <utility>      // for move
+#include <type_traits>  // for remove_reference_t
 
 namespace sorting {
 template <class Iterator>

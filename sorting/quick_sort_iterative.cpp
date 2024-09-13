@@ -10,11 +10,13 @@
  * @author [Sebe324](https://github.com/sebe324)
  */
 
-#include <iostream> /// for std::cout
-#include <vector> /// for std::vector
-#include <stack> /// for std::stack
-#include <algorithm> /// for std::is_sorted
-#include <cassert> /// for assert
+#include <iostream>   // for operator<<, basic_ostream, cout, char_traits
+#include <vector>     // for vector
+#include <stack>      // for stack
+#include <algorithm>  // for is_sorted
+#include <cassert>    // for assert
+#include <iterator>   // for begin, end
+#include <utility>    // for swap
 
 
 /**

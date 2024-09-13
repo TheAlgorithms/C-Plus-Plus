@@ -7,12 +7,13 @@
  *
  * @see Individual algorithms: insertion_sort.cpp and merge_sort.cpp
  */
-#include <algorithm>
-#include <array>
-#include <cassert>
-#include <ctime>
-#include <iostream>
-#include <memory>
+#include <algorithm>  // for is_sorted
+#include <array>      // for array
+#include <cassert>    // for assert
+#include <ctime>      // for size_t, time
+#include <iostream>   // for char_traits, basic_ostream, operator<<, cout
+#include <cstdlib>    // for rand, srand
+#include <iterator>   // for begin, end
 
 /** \namespace sorting
  * \brief Sorting algorithms

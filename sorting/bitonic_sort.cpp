@@ -3,8 +3,8 @@
 /* C++ Program for Bitonic Sort. Note that this program
    works only when size of input is a power of 2. */
 
-#include <algorithm>
-#include <iostream>
+#include <iostream>  // for char_traits, operator<<, basic_ostream, basic_os...
+#include <utility>   // for swap
 
 /*The parameter dir indicates the sorting direction, ASCENDING
    or DESCENDING; if (a[i] > a[j]) agrees with the direction,

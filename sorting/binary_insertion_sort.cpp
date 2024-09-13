@@ -39,10 +39,12 @@
  * \f{bmatrix}{10 &20 &30 &40 &50\f}
  */
 
-#include <algorithm>  /// for algorithm functions
-#include <cassert>    /// for assert
-#include <iostream>   /// for IO operations
-#include <vector>     /// for working with vectors
+#include <stdint.h>   // for int64_t
+#include <algorithm>  // for is_sorted
+#include <cassert>    // for assert
+#include <iostream>   // for basic_ostream, operator<<, char_traits, cout, endl
+#include <vector>     // for vector
+#include <iterator>   // for begin, end
 
 /**
  * \namespace sorting

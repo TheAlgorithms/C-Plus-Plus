@@ -9,11 +9,15 @@
  * @author immortal-j
  * @author [Krishna Vedala](https://github/kvedala)
  */
-#include <algorithm>
-#include <cassert>
-#include <ctime>
-#include <iostream>
-#include <vector>
+#include <stdint.h>   // for int32_t
+#include <algorithm>  // for is_sorted
+#include <cassert>    // for assert
+#include <ctime>      // for size_t, time
+#include <iostream>   // for operator<<, basic_ostream, char_traits, cout
+#include <vector>     // for vector
+#include <cstdlib>    // for rand, srand
+#include <iterator>   // for begin, end
+#include <utility>    // for swap
 
 namespace {
 /**

@@ -57,12 +57,13 @@
  * complexity
 */
 
-#include <algorithm>  /// for std::is_sorted
-#include <array>      /// for std::array
-#include <cassert>    /// for assert
-#include <cstdint>    /// for integral typedefs
-#include <iostream>   /// for IO operations
-#include <vector>     /// for std::vector
+#include <algorithm>  // for is_sorted
+#include <cassert>    // for assert
+#include <cstdint>    // for uint64_t, int64_t
+#include <iostream>   // for operator<<, basic_ostream, char_traits, cout, endl
+#include <vector>     // for vector
+#include <iterator>   // for begin, end
+#include <utility>    // for swap
 
 /**
  * @namespace sorting

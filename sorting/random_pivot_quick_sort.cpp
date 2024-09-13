@@ -44,12 +44,15 @@
  * @author [Nitin Sharma](https://github.com/foo290)
  */
 
-#include <algorithm>  /// for std::is_sorted(), std::swap()
-#include <array>      /// for std::array
-#include <cassert>    /// for assert
-#include <ctime>      /// for initializing random number generator
-#include <iostream>   /// for IO operations
-#include <tuple>      /// for returning multiple values form a function at once
+#include <stdint.h>   // for int64_t
+#include <stdlib.h>   // for rand, srand
+#include <algorithm>  // for is_sorted
+#include <array>      // for array
+#include <cassert>    // for assert
+#include <ctime>      // for size_t, time
+#include <iostream>   // for basic_ostream, operator<<, char_traits, cout, endl
+#include <tuple>      // for make_tuple, tie, tuple
+#include <utility>    // for swap
 
 /**
  * @namespace sorting
