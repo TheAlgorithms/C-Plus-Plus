@@ -12,14 +12,17 @@
  * used for authenticating software packages and secure password hashing.
  */
 
-#include <array>     /// For std::array
-#include <cassert>   /// For assert
-#include <cstdint>   /// For uint8_t, uint32_t and uint64_t data types
-#include <iomanip>   /// For std::setfill and std::setw
-#include <iostream>  /// For IO operations
-#include <sstream>   /// For std::stringstream
-#include <utility>   /// For std::move
-#include <vector>    /// For std::vector
+#include <array>      // for array
+#include <cassert>    // for assert
+#include <cstdint>    // for uint32_t, uint8_t
+#include <iomanip>    // for operator<<, setfill, setw, _Setfill, _Setw
+#include <iostream>   // for char_traits, basic_ostream, operator<<, cout, hex
+#include <sstream>    // for basic_stringstream
+#include <utility>    // for move
+#include <vector>     // for allocator, vector
+#include <cstddef>    // for size_t
+#include <stdexcept>  // for out_of_range
+#include <string>     // for basic_string, string, operator==
 
 /**
  * @namespace hashing
