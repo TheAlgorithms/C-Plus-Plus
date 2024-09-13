@@ -21,10 +21,12 @@
  * alicePubKey * bobPrivKey = bobPubKey * alicePrivKey = secret
  * @author [Ashish Daulatabad](https://github.com/AshishYUO)
  */
-#include <cassert>   /// for assert
-#include <iostream>  /// for IO operations
+#include <cassert>        // for assert
+#include <iostream>       // for basic_ostream, operator<<, char_traits, cout
+#include <string>         // for basic_string
 
-#include "uint256_t.hpp"  /// for 256-bit integer
+#include "uint256_t.hpp"  // for uint256_t, operator<<
+#include "uint128_t.hpp"  // for uint128_t
 
 /**
  * @namespace ciphers

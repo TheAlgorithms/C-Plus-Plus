@@ -11,10 +11,9 @@
  * digits.
  * @author [Ashish Daulatabad](https://github.com/AshishYUO)
  */
-#include <array>     /// for `std::array`
-#include <cassert>   /// for `assert` operations
-#include <cstdint>   /// for integral typedefs
-#include <iostream>  /// for IO operations
+#include <cassert>  // for assert
+#include <cstdint>  // for uint32_t, uint8_t
+#include <string>   // for basic_string, allocator, string, char_traits, ope...
 
 /**
  * @namespace ciphers
