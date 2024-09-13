@@ -35,11 +35,13 @@
  * \see ode_forward_euler.cpp, ode_semi_implicit_euler.cpp
  */
 
-#include <cmath>
-#include <ctime>
-#include <fstream>
-#include <iostream>
-#include <valarray>
+#include <cmath>     // for cos, sin
+#include <ctime>     // for clock, clock_t, CLOCKS_PER_SEC, size_t
+#include <fstream>   // for operator<<, basic_ostream, char_traits, basic_of...
+#include <iostream>  // for cout, cin
+#include <valarray>  // for valarray, _BinClos, __multiplies, __plus, operator*
+#include <cstdio>    // for perror
+#include <cstdlib>   // for atof
 
 /**
  * @brief Problem statement for a system with first-order differential

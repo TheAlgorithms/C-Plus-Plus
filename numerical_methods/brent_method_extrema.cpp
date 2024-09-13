@@ -14,12 +14,14 @@
  * \author [Krishna Vedala](https://github.com/kvedala)
  */
 #define _USE_MATH_DEFINES  ///< required for MS Visual C++
-#include <cassert>
-#include <cmath>
-#include <cstdint>  /// for integral typedefs
-#include <functional>
-#include <iostream>
-#include <limits>
+#include <bits/std_abs.h>  // for abs
+#include <cassert>         // for assert
+#include <cmath>           // for sqrt, cos, pow, M_E, M_PI
+#include <cstdint>         // for uint32_t
+#include <functional>      // for function
+#include <iostream>        // for operator<<, basic_ostream, char_traits, cout
+#include <limits>          // for numeric_limits
+#include <utility>         // for swap
 
 #define EPSILON \
     std::sqrt(  \

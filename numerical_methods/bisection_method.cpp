@@ -13,9 +13,9 @@
  *
  * \see newton_raphson_method.cpp, false_position.cpp, secant_method.cpp
  */
-#include <cmath>
-#include <iostream>
-#include <limits>
+#include <bits/std_abs.h>  // for abs
+#include <cmath>           // for pow
+#include <iostream>        // for basic_ostream, char_traits, operator<<, cout
 
 #define EPSILON \
     1e-6  // std::numeric_limits<double>::epsilon()  ///< system accuracy limit
