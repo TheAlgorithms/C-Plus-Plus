@@ -11,11 +11,12 @@
  * @see fibonacci.cpp, fibonacci_fast.cpp, string_fibonacci.cpp
  */
 
-#include <cinttypes>
-#include <ctime>
-#include <iostream>
+#include <stdlib.h>          // for strtoull
+#include <cinttypes>         // for uint64_t
+#include <ctime>             // for clock, clock_t, CLOCKS_PER_SEC, NULL
+#include <iostream>          // for basic_ostream, char_traits, operator<<
 
-#include "./large_number.h"
+#include "./large_number.h"  // for large_number, operator<<, operator==
 
 /** Compute fibonacci numbers using the relation
  * \f[f(n)=f(n-1)+f(n-2)\f]

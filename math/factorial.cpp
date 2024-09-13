@@ -11,9 +11,11 @@
  * @author [Akshay Gupta](https://github.com/Akshay1910)
  */
 
-#include <cassert>   /// for assert
-#include <cstdint>   /// for integral typedefs
-#include <iostream>  /// for I/O operations
+#include <cassert>    // for assert
+#include <cstdint>    // for uint64_t, uint8_t
+#include <iostream>   // for operator<<, basic_ostream, cout
+#include <stdexcept>  // for invalid_argument
+
 /**
  * @namespace
  * @brief Mathematical algorithms

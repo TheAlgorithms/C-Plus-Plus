@@ -7,9 +7,10 @@
  * simple enough to be easily implemented in an embedded system.
  * \author [Krishna Vedala](https://github.com/kvedala)
  */
-#include <cassert>
-#include <cmath>
-#include <iostream>
+#include <bits/std_abs.h>  // for abs
+#include <cassert>         // for assert
+#include <cmath>           // for sqrt
+#include <iostream>        // for basic_ostream, char_traits, operator<<, cout
 
 /**
  * \namespace statistics

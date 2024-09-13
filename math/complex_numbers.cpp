@@ -7,12 +7,13 @@
  * operators overloaded to accommodate (mathematical) field operations.
  */
 
-#include <cassert>
-#include <cmath>
-#include <complex>
-#include <ctime>
-#include <iostream>
-#include <stdexcept>
+#include <cassert>    // for assert
+#include <cmath>      // for atan2, cos, sin, sqrt
+#include <complex>    // for complex, abs, arg, conj, operator*, operator+
+#include <ctime>      // for time
+#include <iostream>   // for basic_ostream, operator<<, char_traits, cout, endl
+#include <stdexcept>  // for invalid_argument
+#include <cstdlib>    // for rand, srand
 
 /**
  * \brief Class Complex to represent complex numbers as a field.

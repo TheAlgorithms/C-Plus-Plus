@@ -15,10 +15,12 @@
  * @author [Swastika Gupta](https://github.com/Swastyy)
  */
 
-#include <cassert>   /// for assert
-#include <cstdint>   /// for integral typedefs
-#include <iostream>  /// for std::cout
-#include <vector>    /// for std::vector
+#include <cassert>           // for assert
+#include <cstdint>           // for uint64_t
+#include <iostream>          // for char_traits, basic_ostream, operator<<
+#include <vector>            // for vector, operator==
+#include <initializer_list>  // for initializer_list
+
 /**
  * @namespace math
  * @brief Mathematical algorithms

@@ -2,10 +2,10 @@
  * @file
  * @brief Prime factorization of positive integers
  */
-#include <algorithm>
-#include <cstring>
-#include <iostream>
-#include <vector>
+#include <cstring>   // for memset
+#include <iostream>  // for char_traits, basic_ostream, operator<<, basic_os...
+#include <vector>    // for vector
+#include <utility>   // for pair, make_pair
 
 /** Declaring variables for maintaing prime numbers and to check whether a
  * number is prime or not

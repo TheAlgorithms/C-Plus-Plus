@@ -6,7 +6,8 @@
  *
  * @see gcd_iterative_euclidean.cpp, gcd_of_n_numbers.cpp
  */
-#include <iostream>
+#include <iostream>   // for basic_ostream, char_traits, operator<<, basic_o...
+#include <stdexcept>  // for domain_error
 
 /**
  * algorithm

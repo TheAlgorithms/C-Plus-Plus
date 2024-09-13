@@ -13,11 +13,13 @@
  * @author [Keval Kapdee](https://github.com/thechubbypanda)
  */
 
-#include <cassert>   /// For assert
-#include <chrono>    /// For timing the sieve
-#include <iostream>  /// For IO operations
-#include <string>    /// For string handling
-#include <vector>    /// For std::vector
+#include <bits/chrono.h>  // for duration, duration_cast, high_resolution_clock
+#include <stdint.h>       // for uint64_t
+#include <cassert>        // for assert
+#include <iostream>       // for basic_ostream, operator<<, cout, endl
+#include <string>         // for char_traits, basic_string, operator==, string
+#include <vector>         // for vector
+#include <ratio>          // for ratio
 
 /**
  * @namespace math
