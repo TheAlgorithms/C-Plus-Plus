@@ -1,7 +1,9 @@
 // C++ program to implement Prim's Algorithm
-#include <iostream>
-#include <queue>
-#include <vector>
+#include <iostream>    // for char_traits, basic_istream::operator>>, basic_...
+#include <queue>       // for priority_queue
+#include <vector>      // for vector
+#include <functional>  // for greater
+#include <utility>     // for make_pair, pair
 
 using PII = std::pair<int, int>;
 

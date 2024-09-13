@@ -45,13 +45,12 @@
  */
 
 
-#include <iostream>
-#include <cstdlib> 
-#include <queue>
-#include <list>
-#include <climits>
-#include <memory>
-#include <cassert>
+#include <iostream>  // for char_traits, basic_istream::operator>>, basic_is...
+#include <queue>     // for queue
+#include <list>      // for list, operator!=, _List_iterator
+#include <climits>   // for INT_MAX
+#include <cassert>   // for assert
+#include <vector>    // for vector
 
 /**
  * @namespace graph 

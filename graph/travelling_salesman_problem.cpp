@@ -17,12 +17,11 @@
  * This is the naive implementation of the problem.
  */
 
-#include <algorithm>  /// for std::min
-#include <cassert>    /// for assert
-#include <cstdint>    /// for integral typedefs
-#include <iostream>   /// for IO operations
-#include <limits>     /// for limits of integral types
-#include <vector>     /// for std::vector
+#include <algorithm>  // for min, next_permutation
+#include <cassert>    // for assert
+#include <cstdint>    // for uint32_t, int32_t
+#include <iostream>   // for basic_ostream, operator<<, char_traits, cout, endl
+#include <vector>     // for vector
 
 /**
  * @namespace graph

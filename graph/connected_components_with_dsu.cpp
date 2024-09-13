@@ -17,10 +17,11 @@
  * @author Unknown author
  * @author [Sagar Pandya](https://github.com/sagarpandyansit)
  */
-#include <cstdint>   /// for integer typedefs
-#include <iostream>  /// for IO operations
-#include <set>       /// for std::set
-#include <vector>    /// for std::vector
+#include <cstdint>   // for int64_t, uint32_t
+#include <iostream>  // for char_traits, basic_istream, cin, basic_ostream
+#include <set>       // for set
+#include <vector>    // for vector
+#include <utility>   // for swap
 
 /**
  * @namespace graph

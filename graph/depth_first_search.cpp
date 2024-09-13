@@ -32,9 +32,9 @@
  *
  */
 
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include <cstddef>   // for size_t
+#include <iostream>  // for char_traits, basic_ostream, operator<<, cout
+#include <vector>    // for vector
 
 /**
  *

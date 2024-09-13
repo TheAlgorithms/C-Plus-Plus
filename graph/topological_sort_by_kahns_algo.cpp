@@ -1,8 +1,6 @@
-#include <cstdio>
-#include <cstring>
-#include <iostream>
-#include <queue>
-#include <vector>
+#include <iostream>  // for char_traits, basic_istream::operator>>, basic_is...
+#include <queue>     // for queue
+#include <vector>    // for vector
 
 std::vector<int> topoSortKahn(int N, const std::vector<std::vector<int> > &adj);
 
