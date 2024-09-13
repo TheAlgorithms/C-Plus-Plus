@@ -15,8 +15,10 @@
  * @author [DarthCoder3200](https://github.com/DarthCoder3200)
  * @author [David Leal](https://github.com/Panquesito7)
  */
-#include <array>     /// for assert
-#include <iostream>  /// for IO operations
+#include <array>     // for array
+#include <cstddef>   // for size_t
+#include <iostream>  // for basic_ostream, char_traits, cout, operator<<
+
 
 /**
  * @namespace backtracking

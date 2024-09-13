@@ -13,8 +13,9 @@
  * @author [Nikhil Arora](https://github.com/nikhilarora068)
  * @author [David Leal](https://github.com/Panquesito7)
  */
-#include <array>     /// for std::array
-#include <iostream>  /// for IO operations
+#include <array>     // for array
+#include <cstddef>   // for size_t
+#include <iostream>  // for char_traits, operator<<, basic_ostream, cout
 
 /**
  * @namespace backtracking

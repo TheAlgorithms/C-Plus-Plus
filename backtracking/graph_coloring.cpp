@@ -18,9 +18,9 @@
  * @author [David Leal](https://github.com/Panquesito7)
  */
 
-#include <array>     /// for std::array
-#include <iostream>  /// for IO operations
-#include <vector>    /// for std::vector
+#include <array>     // for array
+#include <cstddef>   // for size_t
+#include <iostream>  // for operator<<, cout, basic_ostream, basic_ostream::...
 
 /**
  * @namespace backtracking
