@@ -22,9 +22,8 @@ Steps for Matrix Expo
 The first element of this matrix is the required result.
 */
 
-#include <stdint.h>  // for int64_t
-#include <iostream>  // for basic_istream, char_traits, cin, basic_ostream
-#include <vector>    // for vector
+#include <iostream>
+#include <vector>
 
 using std::cin;
 using std::cout;

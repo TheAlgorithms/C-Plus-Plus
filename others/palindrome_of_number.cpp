@@ -5,14 +5,14 @@
  *
  * This program cheats by using the STL library's std::reverse function.
  */
-#include <algorithm>  // for reverse
-#include <iostream>   // for operator<<, basic_ostream, cout, basic_istream:...
-#include <string>     // for basic_string, allocator, operator==, string
+#include <algorithm>
+#include <iostream>
 
 #ifdef _MSC_VER
 // Required to compile std::toString function using MSVC
-#include <string>     // for basic_string, allocator, operator==, string
+#include <string>
 #else
+#include <cstring>
 #endif
 
 /** Main function */

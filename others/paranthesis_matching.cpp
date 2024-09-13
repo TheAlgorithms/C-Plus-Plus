@@ -5,11 +5,11 @@
  * @note Implementation is C-type and does not utilize the C++ constructs
  * @todo implement as a C++ class
  */
-#include <iostream>  // for operator<<, basic_ostream, cout, basic_istream, cin
-#include <string>    // for basic_string, operator>>, string
+#include <iostream>
 #ifdef _MSC_VER
-#include <string>    // for basic_string, operator>>, string
+#include <string>  // Visual Studio C requires this include
 #else
+#include <cstring>
 #endif
 
 /** check number */

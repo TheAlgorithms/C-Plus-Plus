@@ -14,13 +14,11 @@
  * @author [Abhijeet Tiwari](https://github.com/thisabhijeet)
  */
 
-#include <array>     // for array
-#include <cassert>   // for assert
-#include <climits>   // for INT_MIN
-#include <cstdint>   // for int64_t, uint64_t
-#include <iostream>  // for operator<<, basic_ostream, cout
-#include <cstddef>   // for size_t
-
+#include <array>     /// for std::array
+#include <cassert>   /// for assert
+#include <climits>   /// for INT_MIN value
+#include <cstdint>   /// for integral typedefs
+#include <iostream>  /// for IO operations
 /**
  * @brief Utility function to check the current maximum number
  * \param arr input array

@@ -17,10 +17,9 @@
  * @author [David Leal](https://github.com/Panquesito7)
  */
 
-#include <bits/std_abs.h>  // for abs
-#include <cassert>         // for assert
-#include <iostream>        // for operator<<, basic_ostream, cout
-#include <stdexcept>       // for invalid_argument
+#include <cassert>   /// for assert
+#include <cmath>     /// for std::abs
+#include <iostream>  /// for IO operations
 
 /**
  * @namespace
