@@ -9,13 +9,16 @@
  * the K-nearest neighbors.
  */
 
-#include <algorithm>      /// for std::transform and std::sort
-#include <cassert>        /// for assert
-#include <cmath>          /// for std::pow and std::sqrt
-#include <iostream>       /// for std::cout
-#include <numeric>        /// for std::accumulate
-#include <unordered_map>  /// for std::unordered_map
-#include <vector>         /// for std::vector
+#include <algorithm>      // for sort, transform
+#include <cassert>        // for assert
+#include <cmath>          // for sqrt, pow
+#include <cstddef>        // for size_t
+#include <iostream>       // for basic_ostream, operator<<, char_traits, cout
+#include <iterator>       // for back_inserter
+#include <numeric>        // for accumulate
+#include <unordered_map>  // for unordered_map, _Node_iterator
+#include <utility>        // for pair
+#include <vector>         // for vector
 
 /**
  * @namespace machine_learning
@@ -65,7 +68,7 @@ class Knn {
      * @param Y labels vector
      */
     explicit Knn(std::vector<std::vector<double>>& X, std::vector<int>& Y)
-        : X_(X), Y_(Y){};
+        : X_(X), Y_(Y) {};
 
     /**
      * Copy Constructor for class Knn.

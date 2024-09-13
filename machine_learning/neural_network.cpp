@@ -27,18 +27,20 @@
  * MSE as loss function. Bias is also not included.
  */
 
-#include <algorithm>
-#include <cassert>
-#include <chrono>
-#include <cmath>
-#include <fstream>
-#include <iostream>
-#include <sstream>
-#include <string>
-#include <valarray>
-#include <vector>
+#include <bits/chrono.h>   // for duration, duration_cast, high_resolution_c...
+#include <algorithm>       // for max, min
+#include <cassert>         // for assert
+#include <cmath>           // for exp
+#include <fstream>         // for basic_ostream, operator<<, endl, basic_ist...
+#include <iostream>        // for cerr, cout
+#include <sstream>         // for basic_stringstream
+#include <string>          // for char_traits, basic_string, operator<<, ope...
+#include <valarray>        // for valarray
+#include <vector>          // for vector
+#include <cstdlib>         // for exit, size_t, EXIT_FAILURE
+#include <utility>         // for pair, make_pair
 
-#include "vector_ops.hpp"  // Custom header file for vector operations
+#include "vector_ops.hpp"  // for argmax, apply_function, get_shape, multiply
 
 /** \namespace machine_learning
  * \brief Machine learning algorithms
