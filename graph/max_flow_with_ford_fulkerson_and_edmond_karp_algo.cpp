@@ -4,14 +4,15 @@
  * Copyright: 2020, Open-Source
  * Last Modified: May 25, 2020
  */
-#include <algorithm>  // for min
-#include <bitset>     // for bitset
-#include <iostream>   // for char_traits, basic_ostream, operator<<, basic_i...
-#include <limits>     // for numeric_limits
-#include <queue>      // for queue
-#include <tuple>      // for tuple, make_tuple, tie
-#include <vector>     // for vector
-
+#include <algorithm>
+#include <bitset>
+#include <cstring>
+#include <iostream>
+#include <limits>
+#include <queue>
+#include <tuple>
+#include <utility>
+#include <vector>
 // std::max capacity of node in graph
 const int MAXN = 505;
 class Graph {

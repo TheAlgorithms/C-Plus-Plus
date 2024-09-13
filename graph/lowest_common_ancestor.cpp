@@ -35,11 +35,11 @@
  *     lowest_common_ancestor(x, y) = lowest_common_ancestor(y, x)
  */
 
-#include <cassert>  // for assert
-#include <cstddef>  // for size_t
-#include <queue>    // for queue
-#include <utility>  // for pair, swap
-#include <vector>   // for vector
+#include <cassert>
+#include <iostream>
+#include <queue>
+#include <utility>
+#include <vector>
 
 /**
  * \namespace graph

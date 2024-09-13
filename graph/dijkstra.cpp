@@ -23,14 +23,13 @@
  * at the code below to understand in better way.
  *
  */
-#include <stdint.h>    // for int64_t
-#include <cassert>     // for assert
-#include <iostream>    // for basic_ostream, char_traits, operator<<, basic_...
-#include <limits>      // for numeric_limits
-#include <queue>       // for priority_queue
-#include <utility>     // for pair, make_pair
-#include <vector>      // for vector
-#include <functional>  // for greater
+#include <cassert>
+#include <iostream>
+#include <limits>
+#include <memory>
+#include <queue>
+#include <utility>
+#include <vector>
 
 constexpr int64_t INF = std::numeric_limits<int64_t>::max();
 

@@ -1,10 +1,7 @@
-#include <stdint.h>   // for int64_t
-#include <algorithm>  // for sort
-#include <array>      // for array
-#include <iostream>   // for char_traits, basic_istream::operator>>, basic_i...
-#include <vector>     // for vector
-#include <utility>    // for pair, make_pair
-
+#include <algorithm>
+#include <array>
+#include <iostream>
+#include <vector>
 //#include <boost/multiprecision/cpp_int.hpp>
 // using namespace boost::multiprecision;
 const int mx = 1e6 + 5;

@@ -45,14 +45,14 @@
  *         push that element into the queue and mark this as visited
  *
  */
-#include <cassert>     // for assert
-#include <cstddef>     // for size_t
-#include <functional>  // for less
-#include <iostream>    // for basic_ostream, operator<<, cout, basic_istream...
-#include <list>        // for list
-#include <map>         // for map, operator==
-#include <queue>       // for queue
-#include <string>      // for basic_string, operator<, char_traits, allocator
+#include <algorithm>
+#include <cassert>
+#include <iostream>
+#include <list>
+#include <map>
+#include <queue>
+#include <string>
+#include <vector>
 
 /**
  * \namespace graph

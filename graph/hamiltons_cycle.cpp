@@ -15,10 +15,9 @@
  * @author [vakhokoto](https://github.com/vakhokoto)
  * @author [Krishna Vedala](https://github.com/kvedala)
  */
-#include <cassert>   // for assert
-#include <cstddef>   // for size_t
-#include <iostream>  // for operator<<, basic_ostream, cout
-#include <vector>    // for vector
+#include <cassert>
+#include <iostream>
+#include <vector>
 
 /**
  * The function determines if there is a hamilton's cycle in the graph

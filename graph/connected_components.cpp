@@ -25,9 +25,10 @@
  *
  */
 
-#include <cassert>   // for assert
-#include <iostream>  // for basic_ostream, char_traits, operator<<, basic_is...
-#include <vector>    // for vector
+#include <algorithm>
+#include <cassert>
+#include <iostream>
+#include <vector>
 
 /**
  * @namespace graph

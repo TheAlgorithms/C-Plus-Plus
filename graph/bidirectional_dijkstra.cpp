@@ -13,14 +13,13 @@
  * https://www.youtube.com/watch?v=DINCL5cd_w0&t=24s
  */
 
-#include <cassert>     // for assert
-#include <cstdint>     // for uint64_t, int64_t
-#include <iostream>    // for basic_ostream, operator<<, char_traits, cout
-#include <limits>      // for numeric_limits
-#include <queue>       // for priority_queue
-#include <utility>     // for pair, make_pair
-#include <vector>      // for vector
-#include <functional>  // for greater
+#include <cassert>   /// for assert
+#include <cstdint>   /// for integral typedefs
+#include <iostream>  /// for io operations
+#include <limits>    /// for variable INF
+#include <queue>     /// for the priority_queue of distances
+#include <utility>   /// for make_pair function
+#include <vector>    /// for store the graph, the distances, and the path
 
 constexpr int64_t INF = std::numeric_limits<int64_t>::max();
 

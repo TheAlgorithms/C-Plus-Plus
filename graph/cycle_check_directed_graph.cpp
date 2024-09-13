@@ -7,15 +7,14 @@
  *
  */
 
-#include <cstdint>           // for uint8_t
-#include <iostream>          // for char_traits, basic_ostream, operator<<
-#include <map>               // for map, operator!=, _Rb_tree_iterator
-#include <queue>             // for queue
-#include <stdexcept>         // for range_error
-#include <type_traits>       // for remove_reference
-#include <utility>           // for move, pair
-#include <vector>            // for vector
-#include <initializer_list>  // for initializer_list
+#include <cstdint>      /// for integral typedefs
+#include <iostream>     // for std::cout
+#include <map>          // for std::map
+#include <queue>        // for std::queue
+#include <stdexcept>    // for throwing errors
+#include <type_traits>  // for std::remove_reference
+#include <utility>      // for std::move
+#include <vector>       // for std::vector
 
 /**
  * Implementation of non-weighted directed edge of a graph.
