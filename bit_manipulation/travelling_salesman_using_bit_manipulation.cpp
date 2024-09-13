@@ -20,11 +20,12 @@
  * Space complexity: O(n)
  * @author [Utkarsh Yadav](https://github.com/Rytnix)
  */
-#include <algorithm>  // for min
-#include <cassert>    // for assert
-#include <cstdint>    // for uint64_t, uint32_t
-#include <iostream>   // for operator<<, char_traits, basic_ostream, cout
-#include <vector>     // for vector
+#include <algorithm>  /// for std::min
+#include <cassert>    /// for assert
+#include <cstdint>    /// for integral typedefs
+#include <iostream>   /// for IO operations
+#include <limits>     /// for limits of integral types
+#include <vector>     /// for std::vector
 
 /**
  * @namespace bit_manipulation

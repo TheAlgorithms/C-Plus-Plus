@@ -12,11 +12,9 @@
  * @author [Ravishankar Joshi](https://github.com/ravibitsgoa)
  */
 
-#include <cassert>   // for assert
-#include <cstddef>   // for size_t
-#include <cstdint>   // for uint64_t
-#include <iostream>  // for char_traits, basic_ostream, operator<<, cout, endl
-#include <string>    // for basic_string, string
+#include <cassert>   /// for assert
+#include <cstdint>   /// for integral typedefs
+#include <iostream>  /// for io operations
 
 /**
  * @namespace bit_manipulation
