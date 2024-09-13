@@ -16,10 +16,9 @@
  * @author [David Leal](https://github.com/Panquesito7)
  */
 
-#include <array>     // for array
-#include <cassert>   // for assert
-#include <cstddef>   // for size_t
-#include <iostream>  // for cout, basic_ostream, basic_ostream::operator<<
+#include <array>     /// for std::array
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
 
 /**
  * @namespace backtracking

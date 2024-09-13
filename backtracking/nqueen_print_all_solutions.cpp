@@ -7,10 +7,8 @@
  * @author [David Leal](https://github.com/Panquesito7)
  *
  */
-#include <array>     // for array
-#include <cstddef>   // for size_t
-#include <iostream>  // for cout, basic_ostream, endl, basic_ostream::operat...
-
+#include <array>     /// for std::array
+#include <iostream>  /// for IO operations
 
 /**
  * @namespace backtracking

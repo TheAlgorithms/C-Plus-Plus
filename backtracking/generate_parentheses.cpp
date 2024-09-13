@@ -11,10 +11,9 @@
 
  */
 
-#include <cassert>   // for assert
-#include <iostream>  // for char_traits, operator<<, basic_ostream, cout
-#include <vector>    // for allocator, vector, operator==
-#include <string>    // for basic_string, string, operator+, operator==
+#include <cassert>   /// for assert
+#include <iostream>  /// for I/O operation
+#include <vector>    /// for vector container
 
 /**
  * @brief Backtracking algorithms
