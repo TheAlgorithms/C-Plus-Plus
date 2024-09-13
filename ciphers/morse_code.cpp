@@ -11,11 +11,10 @@
  * and dashes or dits and dahs. Morse code is named after Samuel Morse, an
  * inventor of the telegraph.
  */
-#include <cassert>   // for assert
-#include <iostream>  // for basic_ostream, operator<<, endl, cout, cerr
-#include <string>    // for basic_string, operator==, char_traits, string
-#include <vector>    // for vector
-#include <cstdlib>   // for exit, size_t
+#include <cassert>
+#include <iostream>
+#include <string>
+#include <vector>
 
 /** \namespace ciphers
  * \brief Algorithms for encryption and decryption

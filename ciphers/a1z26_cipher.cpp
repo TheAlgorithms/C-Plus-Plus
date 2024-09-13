@@ -9,16 +9,14 @@
  * @author [Focusucof](https://github.com/Focusucof)
  */
 
-#include <ctype.h>    // for tolower, toupper
-#include <algorithm>  // for replace, transform
-#include <cassert>    // for assert
-#include <cstdint>    // for uint8_t
-#include <iostream>   // for basic_ostream, operator<<, basic_istream, cout
-#include <map>        // for map
-#include <sstream>    // for basic_stringstream
-#include <string>     // for basic_string, char_traits, operator<<, string
-#include <vector>     // for vector
-#include <utility>    // for pair
+#include <algorithm>  /// for std::transform and std::replace
+#include <cassert>    /// for assert
+#include <cstdint>    /// for uint8_t
+#include <iostream>   /// for IO operations
+#include <map>        /// for std::map
+#include <sstream>    /// for std::stringstream
+#include <string>     /// for std::string
+#include <vector>     /// for std::vector
 
 /**
  * @namespace ciphers
