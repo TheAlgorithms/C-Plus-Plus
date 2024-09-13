@@ -9,13 +9,11 @@
  *
  * \author [Krishna Vedala](https://github.com/kvedala)
  */
-#include <bits/std_abs.h>  // for abs
-
-#include <cassert>   // for assert
-#include <cstddef>   // for size_t
-#include <iomanip>   // for operator<<, setfill, setw, _Setfill, _Setw
-#include <iostream>  // for basic_ostream, operator<<, char_traits, cout
-#include <vector>    // for vector
+#include <cassert>
+#include <cmath>    // for std::abs
+#include <iomanip>  // for print formatting
+#include <iostream>
+#include <vector>
 
 /**
  * operator to print a matrix

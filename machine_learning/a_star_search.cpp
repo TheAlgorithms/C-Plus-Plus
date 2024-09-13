@@ -19,21 +19,15 @@
  * values having minimum F(state).
  * @author [Ashish Daulatabad](https://github.com/AshishYUO)
  */
-#include <stdint.h>  // for uint32_t, int8_t
-
-#include <algorithm>   // for max, min
-#include <array>       // for array, operator==
-#include <cassert>     // for assert
-#include <cstddef>     // for size_t
-#include <functional>  // for function
-#include <iostream>    // for operator<<, basic_ostream, char_traits, cout
-#include <map>         // for operator!=, map, operator==
-#include <memory>      // for shared_ptr, make_shared, operator!=
-#include <set>         // for set
-#include <tuple>       // for tie, tuple
-#include <utility>     // for pair, move, make_pair, swap
-#include <vector>      // for vector
-
+#include <algorithm>   /// for `std::reverse` function
+#include <array>       /// for `std::array`, representing `EightPuzzle` board
+#include <cassert>     /// for `assert`
+#include <functional>  /// for `std::function` STL
+#include <iostream>    /// for IO operations
+#include <map>         /// for `std::map` STL
+#include <memory>      /// for `std::shared_ptr`
+#include <set>         /// for `std::set` STL
+#include <vector>      /// for `std::vector` STL
 /**
  * @namespace machine_learning
  * @brief Machine learning algorithms

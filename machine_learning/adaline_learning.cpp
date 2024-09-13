@@ -26,14 +26,15 @@
  * computed using stochastic gradient descent method.
  */
 
-#include <bits/std_abs.h>  // for abs
-#include <array>           // for array
-#include <cassert>         // for assert
-#include <cstdlib>         // for rand, exit, srand, strtof, EXIT_FAILURE
-#include <ctime>           // for time
-#include <iostream>        // for basic_ostream, operator<<, char_traits, cout
-#include <numeric>         // for inner_product
-#include <vector>          // for vector
+#include <array>
+#include <cassert>
+#include <climits>
+#include <cmath>
+#include <cstdlib>
+#include <ctime>
+#include <iostream>
+#include <numeric>
+#include <vector>
 
 /** Maximum number of iterations to learn */
 constexpr int MAX_ITER = 500;  // INT_MAX
