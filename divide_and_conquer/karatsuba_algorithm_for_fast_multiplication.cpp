@@ -12,10 +12,11 @@
  * @author [Ameer Carlo Lubang](https://github.com/poypoyan)
  */
 
-#include <cassert>   /// for assert
-#include <cstring>   /// for string
-#include <iostream>  /// for IO operations
-#include <vector>    /// for std::vector
+#include <stdint.h>   // for int64_t
+#include <cassert>    // for assert
+#include <iostream>   // for basic_ostream, operator<<, char_traits, cout, endl
+#include <algorithm>  // for max
+#include <string>     // for basic_string, string
 
 /**
  * @namespace divide_and_conquer
