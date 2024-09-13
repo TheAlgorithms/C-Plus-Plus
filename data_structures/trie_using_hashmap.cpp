@@ -10,12 +10,14 @@
  * in trie.
  * @see trie_modern.cpp for difference
  */
-#include <cassert>        /// for assert
-#include <iostream>       /// for IO operations
-#include <memory>         /// for std::shared_ptr
-#include <stack>          /// for std::stack
-#include <unordered_map>  /// for std::unordered_map
-#include <vector>         /// for std::vector
+#include <cassert>        // for assert
+#include <iostream>       // for basic_ostream, operator<<, char_traits, cout
+#include <memory>         // for shared_ptr, __shared_ptr_access, make_shared
+#include <stack>          // for stack
+#include <unordered_map>  // for unordered_map, operator==, _Node_iterator_base
+#include <vector>         // for vector
+#include <string>         // for basic_string, string, operator<<
+#include <utility>        // for pair
 
 /**
  * @namespace data_structures

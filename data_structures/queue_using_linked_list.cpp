@@ -1,4 +1,6 @@
-#include <iostream>
+#include <cstddef>   // for NULL
+#include <iostream>  // for operator<<, basic_ostream, char_traits, cout
+
 using namespace std;
 
 struct node {

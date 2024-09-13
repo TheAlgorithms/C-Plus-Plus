@@ -1,7 +1,8 @@
-#include <cassert>    /// For std::assert
-#include <iostream>   /// For std::cout
-#include <memory>     /// For std::unique_ptr
-#include <stdexcept>  /// For std::out_of_range
+#include <cassert>    // for assert
+#include <iostream>   // for char_traits, basic_ostream, cout, operator<<, endl
+#include <memory>     // for unique_ptr
+#include <stdexcept>  // for out_of_range
+#include <string>     // for basic_string, operator==, string
 
 /**
  * @namespace

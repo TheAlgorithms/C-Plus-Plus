@@ -22,12 +22,13 @@
  * @author [DanArmor](https://github.com/DanArmor)
  */
 
-#include <cassert>           /// for assert
-#include <functional>        /// for list of hash functions for bloom filter constructor
-#include <initializer_list>  /// for initializer_list for bloom filter constructor
-#include <string>            /// for testing on strings
-#include <vector>            /// for std::vector
-#include <iostream>          /// for IO operations
+#include <cassert>           // for assert
+#include <functional>        // for function
+#include <initializer_list>  // for initializer_list
+#include <string>            // for basic_string, string
+#include <vector>            // for vector
+#include <iostream>          // for operator<<, basic_ostream, cout
+#include <cstddef>           // for size_t
 
 /**
  * @namespace data_structures

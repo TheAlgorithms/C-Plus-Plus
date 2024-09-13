@@ -7,12 +7,13 @@
  * @note the function ::data_structure::trie::deleteString might be erroneous
  * @see trie_modern.cpp
  */
-#include <array>
-#include <cassert>
-#include <iostream>
-#include <memory>
-#include <string>
-#include <vector>
+#include <stdint.h>  // for uint8_t
+#include <array>     // for array
+#include <cassert>   // for assert
+#include <iostream>  // for operator<<, basic_ostream, cout, basic_ostream::...
+#include <memory>    // for shared_ptr, __shared_ptr_access
+#include <string>    // for char_traits, basic_string, string
+#include <cstdlib>   // for exit, EXIT_FAILURE
 
 /** \namespace data_structures
  * \brief Data-structure algorithms

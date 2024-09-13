@@ -1,7 +1,10 @@
-#include <cassert>   /// for assert
-#include <iostream>  /// for std::cout
+#include <cassert>      // for assert
+#include <iostream>     // for operator<<, basic_ostream, cout
+#include <memory>       // for operator==
+#include <stdexcept>    // for invalid_argument
+#include <vector>       // for vector, operator==
 
-#include "./queue.hpp"
+#include "./queue.hpp"  // for queue
 
 template <typename T>
 void testConstructedQueueIsEmpty() {

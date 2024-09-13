@@ -1,5 +1,7 @@
-#include <iostream>
-#include <list>
+#include <cstddef>   // for NULL
+#include <iostream>  // for operator<<, basic_ostream, char_traits, cout
+#include <list>      // for list
+
 using namespace std;
 
 struct node {
@@ -90,30 +92,30 @@ int main() {
         cout << "\nEnter Your Choice : ";
         cin >> ch;
         switch (ch) {
-        case 1:
-            int x;
-            char pos;
-            cout << "\nEnter the value to be Inserted : ";
-            cin >> x;
-            cout << "\nLeft or Right of Root : ";
-            cin >> pos;
-            if (pos == 'l')
-                CreateTree(root, root->left, x, pos);
-            else if (pos == 'r')
-                CreateTree(root, root->right, x, pos);
-            break;
-        case 2:
-            BFT(root);
-            break;
-        case 3:
-            Pre(root);
-            break;
-        case 4:
-            In(root);
-            break;
-        case 5:
-            Post(root);
-            break;
+            case 1:
+                int x;
+                char pos;
+                cout << "\nEnter the value to be Inserted : ";
+                cin >> x;
+                cout << "\nLeft or Right of Root : ";
+                cin >> pos;
+                if (pos == 'l')
+                    CreateTree(root, root->left, x, pos);
+                else if (pos == 'r')
+                    CreateTree(root, root->right, x, pos);
+                break;
+            case 2:
+                BFT(root);
+                break;
+            case 3:
+                Pre(root);
+                break;
+            case 4:
+                In(root);
+                break;
+            case 5:
+                Post(root);
+                break;
         }
     } while (ch != 0);
 }

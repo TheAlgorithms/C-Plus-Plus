@@ -8,10 +8,9 @@
  * [StudyTonight](https://www.studytonight.com/data-structures/stack-using-queue)
  * @author [tushar2407](https://github.com/tushar2407)
  */
-#include <cassert>   /// for assert
-#include <cstdint>   /// for integral typedefs
-#include <iostream>  /// for IO operations
-#include <queue>     /// for queue data structure
+#include <cassert>  // for assert
+#include <cstdint>  // for int64_t, uint32_t
+#include <queue>    // for queue, swap
 
 /**
  * @namespace data_structures

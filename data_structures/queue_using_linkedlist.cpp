@@ -1,7 +1,8 @@
 /*
     Write a program to implement Queue using linkedlist.
 */
-#include <iostream>
+#include <stdlib.h>  // for NULL, exit
+#include <iostream>  // for operator<<, basic_ostream, cout, char_traits
 
 struct linkedlist {
     int data;

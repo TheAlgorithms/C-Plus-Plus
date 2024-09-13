@@ -5,11 +5,13 @@
  * @see binary_search_tree.cpp
  */
 
-#include <cassert>
-#include <functional>
-#include <iostream>
-#include <memory>
-#include <vector>
+#include <cassert>     // for assert
+#include <functional>  // for function
+#include <iostream>    // for basic_ostream, operator<<, cout, char_traits
+#include <memory>      // for operator==, unique_ptr, allocator
+#include <vector>      // for vector, operator==
+#include <cstddef>     // for size_t
+#include <utility>     // for move
 
 /**
  * @brief The Binary Search Tree class.

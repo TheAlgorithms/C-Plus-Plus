@@ -6,7 +6,8 @@
  * \warning This program is a poor implementation - C style - and does not
  * utilize any of the C++ STL features.
  */
-#include <iostream>
+#include <cstddef>   // for NULL
+#include <iostream>  // for operator<<, basic_ostream, char_traits, cout
 
 struct node {
     int val;
@@ -145,28 +146,28 @@ int main() {
         std::cin >> ch;
         int x;
         switch (ch) {
-        case 1:
-            std::cout << "\nEnter the value to be Inserted : ";
-            std::cin >> x;
-            Insert(root, x);
-            break;
-        case 2:
-            std::cout << "\nEnter the value to be Deleted : ";
-            std::cin >> x;
-            Remove(root, root, x);
-            break;
-        case 3:
-            BFT(root);
-            break;
-        case 4:
-            Pre(root);
-            break;
-        case 5:
-            In(root);
-            break;
-        case 6:
-            Post(root);
-            break;
+            case 1:
+                std::cout << "\nEnter the value to be Inserted : ";
+                std::cin >> x;
+                Insert(root, x);
+                break;
+            case 2:
+                std::cout << "\nEnter the value to be Deleted : ";
+                std::cin >> x;
+                Remove(root, root, x);
+                break;
+            case 3:
+                BFT(root);
+                break;
+            case 4:
+                Pre(root);
+                break;
+            case 5:
+                In(root);
+                break;
+            case 6:
+                Post(root);
+                break;
         }
     } while (ch != 0);
 

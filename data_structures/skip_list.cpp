@@ -13,12 +13,12 @@
  * @author [Krishna Vedala](https://github.com/kvedala)
  */
 
-#include <array>
-#include <cstring>
-#include <ctime>
-#include <iostream>
-#include <memory>
-#include <vector>
+#include <array>     // for array
+#include <ctime>     // for time
+#include <iostream>  // for basic_ostream, operator<<, char_traits, cout
+#include <memory>    // for shared_ptr, __shared_ptr_access, operator!=, ope...
+#include <vector>    // for vector
+#include <cstdlib>   // for rand, srand, RAND_MAX
 
 /** \namespace data_structures
  * \brief Data-structure algorithms

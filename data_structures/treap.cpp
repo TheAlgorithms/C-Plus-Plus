@@ -17,10 +17,11 @@
  * @author [Kairao ZHENG](https://github.com/fgmn)
  */
 
-#include <array>     /// For array
-#include <cassert>   /// For assert
-#include <cstdint>   /// for integral typedefs
-#include <iostream>  /// For IO operations
+#include <stdlib.h>  // for rand
+#include <array>     // for array
+#include <cassert>   // for assert
+#include <cstdint>   // for INT32_MAX
+#include <iostream>  // for operator<<, basic_ostream, cout
 
 /**
  * @namespace
