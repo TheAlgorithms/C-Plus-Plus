@@ -10,15 +10,14 @@
  * @author [Riti Kumari](https://github.com/riti2409)
  */
 
-#include <cassert>    // for assert
-#include <cstdint>    // for uint64_t
-#include <iostream>   // for char_traits, basic_ostream, operator<<, cout, endl
-#include <vector>     // for allocator, vector
-#include <algorithm>  // for min
-#include <string>     // for basic_string, operator==, operator+, string
+#include <cassert>   /// for assert
+#include <cstdint>   /// for integral typedefs
+#include <iostream>  /// for IO operations
+#include <vector>    /// for std::vector STL
 #ifdef _MSC_VER
-#include <string>     // for basic_string, operator==, operator+, string
+#include <string>  /// for string (required for MS Visual C++)
 #else
+#include <cstring>  /// for string
 #endif
 
 /**

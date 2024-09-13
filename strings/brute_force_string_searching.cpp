@@ -2,14 +2,13 @@
  * @file
  * @brief          String pattern search - brute force
  */
-#include <iostream>  // for operator<<, basic_ostream, char_traits, cout
-#include <string>    // for basic_string, operator==, string, to_string
+#include <iostream>
 #ifdef _MSC_VER
-#include <string>    // for basic_string, operator==, string, to_string
+#include <string>  // use this for MS Visual C++
 #else
-#include <cstring>   // for size_t
+#include <cstring>
 #endif
-#include <vector>    // for vector, allocator
+#include <vector>
 
 namespace string_search {
 /**

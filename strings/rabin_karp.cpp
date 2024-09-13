@@ -4,13 +4,13 @@
  * Algorithm](https://en.wikipedia.org/wiki/Rabin–Karp_algorithm) for finding a
  * pattern within a piece of text with complexity O(n + m)
  */
-#include <stdint.h>  // for int64_t
-#include <cassert>   // for assert
-#include <cmath>     // for pow
-#include <string>    // for basic_string, string
+#include <cassert>
+#include <cmath>
+#include <iostream>
 #ifdef _MSC_VER
-#include <string>    // for basic_string, string
+#include <string>  // use this for MS Visucal C++
 #else
+#include <cstring>
 #endif
 
 #define PRIME 5  ///< Prime modulus for hash functions

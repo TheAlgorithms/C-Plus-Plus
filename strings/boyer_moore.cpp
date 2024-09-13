@@ -42,13 +42,12 @@
  * @author [Stoycho Kyosev](https://github.com/stoychoX)
  */
 
-#include <cassert>    // for assert
-#include <climits>    // for CHAR_MAX
-#include <cstring>    // for size_t, strlen
-#include <iostream>   // for operator<<, basic_ostream, cout
-#include <string>     // for basic_string, string
-#include <vector>     // for vector
-#include <algorithm>  // for max
+#include <cassert>   /// for assert
+#include <climits>   /// for CHAR_MAX macro
+#include <cstring>   /// for strlen
+#include <iostream>  /// for IO operations
+#include <string>    /// for std::string
+#include <vector>    /// for std::vector
 
 #define APLHABET_SIZE CHAR_MAX  ///< number of symbols in the alphabet we use
 

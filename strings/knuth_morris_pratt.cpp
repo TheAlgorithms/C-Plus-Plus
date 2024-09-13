@@ -13,11 +13,10 @@
  * @author [Yancey](https://github.com/Yancey2023)
  */
 
-#include <cassert>   // for assert
-#include <cstddef>   // for size_t
-#include <iostream>  // for operator<<, basic_ostream, cout
-#include <string>    // for basic_string, string
-#include <vector>    // for vector
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
+#include <string>    /// for std::string
+#include <vector>    /// for std::vector
 
 /**
  * @namespace string_search
