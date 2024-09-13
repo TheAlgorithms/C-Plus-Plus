@@ -4,9 +4,10 @@
  * @author [Harry Kontakis](https://github.com/ckontakis)
  */
 
-#include <iostream>
-#include <unordered_map>
-#include <cassert>
+#include <unordered_map>  // for unordered_map, _Node_iterator_base, operator!=
+#include <cassert>        // for assert
+#include <string>         // for basic_string, string
+#include <utility>        // for pair, make_pair
 
 /**
  * @namespace strings

@@ -11,15 +11,15 @@
  * @author [Ritika Gupta](https://github.com/RitikaGupta8734)
  */
 
-#include <cstdint>   /// for integral typedefs
-#include <iostream>  /// for IO operations
+#include <cstdint>    // for uint64_t
+#include <algorithm>  // for min
+#include <string>     // for basic_string, string, operator+, char_traits
 #ifdef _MSC_VER
-#include <string>  /// for string (use this for MS Visual C++)
+#include <string>     // for basic_string, string, operator+, char_traits
 #else
-#include <cstring>  /// for string
 #endif
-#include <cassert>  /// for assert
-#include <vector>   /// for std::vector
+#include <cassert>    // for assert
+#include <vector>     // for vector, allocator, operator==
 
 /**
  * @brief Generate the Z-function for the inputted string.
