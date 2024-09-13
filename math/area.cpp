@@ -9,10 +9,11 @@
  * @author [Focusucof](https://github.com/Focusucof)
  */
 #define _USE_MATH_DEFINES
-#include <cassert>   // for assert
-#include <cmath>     // for NAN, M_PI, pow
-#include <cstdint>   // for uint16_t
-#include <iostream>  // for basic_ostream, operator<<, char_traits, endl, cout
+#include <cassert>  /// for assert
+#include <cmath>    /// for M_PI definition and pow()
+#include <cmath>
+#include <cstdint>   /// for uint16_t datatype
+#include <iostream>  /// for IO operations
 
 /**
  * @namespace math

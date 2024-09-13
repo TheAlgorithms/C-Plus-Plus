@@ -5,12 +5,11 @@
  * \author [Krishna Vedala](https://github.com/kvedala)
  * @see factorial.cpp
  */
-#include <stdlib.h>          // for atoi
-#include <cstring>           // for strlen, size_t
-#include <ctime>             // for clock, clock_t, CLOCKS_PER_SEC
-#include <iostream>          // for basic_ostream, char_traits, operator<<
+#include <cstring>
+#include <ctime>
+#include <iostream>
 
-#include "./large_number.h"  // for large_number, operator<<
+#include "./large_number.h"
 
 /** Test implementation for 10! Result must be 3628800.
  * @returns True if test pass else False

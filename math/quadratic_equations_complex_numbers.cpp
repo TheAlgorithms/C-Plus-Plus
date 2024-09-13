@@ -28,13 +28,13 @@
  * (-0.5,0.866025) (-0.5,0.866025)
  */
 
-#include <array>      // for array, operator==
-#include <cassert>    // for assert
-#include <cmath>      // for round, sqrt, pow
-#include <complex>    // for complex, operator==
-#include <cstddef>    // for size_t
-#include <iostream>   // for operator<<, basic_ostream, cout
-#include <stdexcept>  // for invalid_argument
+#include <array>      /// std::array
+#include <cassert>    /// assert
+#include <cmath>      /// std::sqrt, std::trunc, std::pow
+#include <complex>    /// std::complex
+#include <exception>  /// std::invalid_argument
+#include <iomanip>    /// std::setprecision
+#include <iostream>   /// std::cout
 
 /**
  * @namespace
@@ -65,7 +65,7 @@ std::array<std::complex<long double>, 2> quadraticEquation(long double a,
         solutions[1] = -b * 0.5 / a;
         return solutions;
     }
-
+    
     // Complex root (discriminant < 0)
     // Note that the left term (-b / 2a) is always real. The imaginary part
     // appears when b^2 - 4ac < 0, so sqrt(b^2 - 4ac) has no real roots. So,

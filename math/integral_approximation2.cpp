@@ -22,14 +22,13 @@
  */
 
 #define _USE_MATH_DEFINES  /// for M_PI on windows
-#include <cmath>       // for exp, M_PI, sin, sqrt
-#include <cstdint>     // for uint32_t
-#include <ctime>       // for time
-#include <functional>  // for function
-#include <iostream>    // for basic_ostream, char_traits, operator<<, endl
-#include <random>      // for normal_distribution, uniform_real_distribution
-#include <vector>      // for vector
-#include <algorithm>   // for min
+#include <cmath>           /// for math functions
+#include <cstdint>         /// for fixed size data types
+#include <ctime>           /// for time to initialize rng
+#include <functional>      /// for function pointers
+#include <iostream>        /// for std::cout
+#include <random>          /// for random number generation
+#include <vector>          /// for std::vector
 
 /**
  * @namespace math

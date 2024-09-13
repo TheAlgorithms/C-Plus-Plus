@@ -43,8 +43,8 @@
  * (as \f$a\times a^{-1} = 1\f$)
  */
 
-#include <stdint.h>  // for int64_t
-#include <iostream>  // for char_traits, basic_ostream, operator<<, cout, endl
+#include <iostream>
+#include <vector>
 
 /** Recursive function to calculate exponent in \f$O(\log n)\f$ using binary
  * exponent.

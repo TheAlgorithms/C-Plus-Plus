@@ -14,9 +14,8 @@
  * @author [ewd00010](https://github.com/ewd00010)
  */
 
-#include <stdint.h>  // for int64_t
-#include <cassert>   // for assert
-#include <iostream>  // for char_traits, basic_ostream, operator<<, cout, endl
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
 
 /**
  * @brief Mathematical algorithms

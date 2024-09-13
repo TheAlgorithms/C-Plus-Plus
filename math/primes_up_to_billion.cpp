@@ -3,9 +3,8 @@
  * @brief Compute prime numbers upto 1 billion
  * @see prime_numbers.cpp sieve_of_eratosthenes.cpp
  */
-#include <stdint.h>  // for int64_t
-#include <cstring>   // for memset
-#include <iostream>  // for operator<<, basic_ostream, cout, basic_istream, cin
+#include <cstring>
+#include <iostream>
 
 /** array to store the primes */
 char prime[100000000];

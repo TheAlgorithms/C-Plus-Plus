@@ -8,12 +8,12 @@
  * @see fibonacci_large.cpp, fibonacci_fast.cpp, fibonacci.cpp
  */
 
-#include <cstdint>   // for uint64_t
-#include <iostream>  // for char_traits, basic_ostream, operator<<, cout
-#include <string>    // for allocator, basic_string, operator+, string, oper...
+#include <cstdint>  /// for integral typedefs
+#include <iostream>
 #ifdef _MSC_VER
-#include <string>    // for allocator, basic_string, operator+, string, oper...
+#include <string>  // use this for MS Visual C
 #else
+#include <cstring>  // otherwise
 #endif
 
 /**

@@ -9,9 +9,9 @@
  * multiplicative inverse of a number. (A * B)%M == 1 Here B is the MMI of A for
  * given M, so extendedEuclid (A, M) gives B.
  */
-#include <iostream>  // for char_traits, basic_ostream, basic_ostream::opera...
-#include <cstdint>   // for uint32_t, int32_t
-#include <utility>   // for swap
+#include <algorithm>  // for swap function
+#include <iostream>
+#include <cstdint>
 
 /**
  * function to update the coefficients per iteration

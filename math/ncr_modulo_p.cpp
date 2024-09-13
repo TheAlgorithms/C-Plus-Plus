@@ -9,10 +9,9 @@
  * @author [Kaustubh Damania](https://github.com/KaustubhDamania)
  */
 
-#include <stdint.h>  // for int64_t
-#include <cassert>   // for assert
-#include <iostream>  // for char_traits, basic_ostream, operator<<, basic_os...
-#include <vector>    // for vector
+#include <cassert>   /// for assert
+#include <iostream>  /// for std::cout
+#include <vector>    /// for std::vector
 
 /**
  * @namespace math

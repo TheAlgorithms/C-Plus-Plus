@@ -3,9 +3,8 @@
  * @brief Get list of prime numbers
  * @see primes_up_to_billion.cpp sieve_of_eratosthenes.cpp
  */
-#include <cstddef>   // for size_t
-#include <iostream>  // for char_traits, basic_ostream, operator<<, cout
-#include <vector>    // for vector
+#include <iostream>
+#include <vector>
 
 /** Generate an increasingly large number of primes
  * and store in a list

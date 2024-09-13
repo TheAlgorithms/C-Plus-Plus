@@ -15,8 +15,9 @@
  * @see fibonacci_large.cpp, fibonacci.cpp, string_fibonacci.cpp
  */
 
-#include <cinttypes>  // for uint64_t
-#include <iostream>   // for char_traits, basic_ostream, operator<<, cerr, cout
+#include <cinttypes>
+#include <cstdio>
+#include <iostream>
 
 /**
  * maximum number that can be computed - The result after 93 cannot be stored

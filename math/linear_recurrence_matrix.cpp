@@ -17,9 +17,10 @@
  * here](https://en.wikipedia.org/wiki/Exponentiation_by_squaring).
  * @author [Ashish Daulatabad](https://github.com/AshishYUO)
  */
-#include <cassert>  // for assert
-#include <cstdint>  // for int64_t, uint32_t, uint64_t
-#include <vector>   // for vector
+#include <cassert>   /// for assert
+#include <cstdint>   /// for integral typedefs
+#include <iostream>  /// for IO operations
+#include <vector>    /// for std::vector STL
 
 /**
  * @namespace math
