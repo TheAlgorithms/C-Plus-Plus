@@ -23,6 +23,14 @@ struct MinHeapNode {
     }
 };
 
+void deleteAll(const MinHeapNode* const root) {
+    if (root) {
+        deleteAll(root->left);
+        deleteAll(root->right);
+        delete root;
+    }
+}
+
 // For comparison of
 // two heap nodes (needed in min heap)
 struct compare {
@@ -85,6 +93,7 @@ void HuffmanCodes(char data[], int freq[], int size) {
     // Print Huffman codes using
     // the Huffman tree built above
     printCodes(minHeap.top(), "");
+    deleteAll(minHeap.top());
 }
 
 // Driver program to test above functions
