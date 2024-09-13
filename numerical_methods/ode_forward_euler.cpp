@@ -36,13 +36,11 @@
  * \see ode_midpoint_euler.cpp, ode_semi_implicit_euler.cpp
  */
 
-#include <cmath>     // for cos, sin, NAN
-#include <ctime>     // for clock, clock_t, CLOCKS_PER_SEC, size_t
-#include <fstream>   // for operator<<, basic_ostream, char_traits, basic_of...
-#include <iostream>  // for cout, cin
-#include <valarray>  // for valarray, __multiplies, operator*, _BinClos
-#include <cstdio>    // for perror
-#include <cstdlib>   // for atof
+#include <cmath>
+#include <ctime>
+#include <fstream>
+#include <iostream>
+#include <valarray>
 
 /**
  * @brief Problem statement for a system with first-order differential

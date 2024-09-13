@@ -12,12 +12,11 @@
  * \author [Krishna Vedala](https://github.com/kvedala)
  * \see bisection_method.cpp, false_position.cpp
  */
-#include <bits/std_abs.h>  // for abs
-#include <cmath>           // for pow, NAN
-#include <cstdint>         // for INT16_MAX, int16_t
-#include <ctime>           // for time
-#include <iostream>        // for char_traits, basic_ostream, operator<<
-#include <cstdlib>         // for rand, srand
+#include <cmath>
+#include <cstdint>  /// for integral typedefs
+#include <ctime>
+#include <iostream>
+#include <limits>
 
 constexpr double EPSILON = 1e-10;              ///< system accuracy limit
 constexpr int16_t MAX_ITERATIONS = INT16_MAX;  ///< Maximum number of iterations

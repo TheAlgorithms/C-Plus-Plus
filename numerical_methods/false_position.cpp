@@ -22,8 +22,8 @@
  * \author Unknown author
  * \author [Samruddha Patil](https://github.com/sampatil578)
  */
-#include <stdint.h>  // for int16_t
-#include <iostream>  // for basic_ostream, char_traits, operator<<, cout, endl
+#include <cmath>     /// for math operations
+#include <iostream>  /// for io operations
 
 /**
  * @namespace numerical_methods

@@ -35,14 +35,14 @@
  *
  */
 
-#include <cassert>     // for assert
-#include <cmath>       // for log, sqrt, pow, exp, NAN, isnan
-#include <cstdint>     // for int32_t
-#include <cstdlib>     // for atof, atoi
-#include <functional>  // for function
-#include <iostream>    // for basic_ostream, char_traits, operator<<, cout
-#include <map>         // for map
-#include <utility>     // for pair
+#include <cassert>  /// for assert
+#include <cmath>    /// for math functions
+#include <cmath>
+#include <cstdint>     /// for integer allocation
+#include <cstdlib>     /// for std::atof
+#include <functional>  /// for std::function
+#include <iostream>    /// for IO operations
+#include <map>         /// for std::map container
 
 /**
  * @namespace numerical_methods

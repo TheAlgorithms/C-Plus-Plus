@@ -28,10 +28,12 @@
  * @author [Akanksha Gupta](https://github.com/Akanksha-Gupta920)
  */
 
-#include <array>     // for array
-#include <cassert>   // for assert
-#include <cmath>     // for fabs, NAN
-#include <iostream>  // for operator<<, basic_ostream, char_traits, cout
+#include <array>     /// for std::array
+#include <cassert>   /// for assert
+#include <cmath>     /// for fabs
+#include <iostream>  /// for io operations
+
+#include "math.h"
 
 /**
  * @namespace numerical_methods

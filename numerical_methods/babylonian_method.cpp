@@ -9,10 +9,9 @@
  * @author [Ameya Chawla](https://github.com/ameyachawlaggsipu)
  */
 
-#include <cassert>    // for assert
-#include <cmath>      // for NAN
-#include <iostream>   // for operator<<, basic_ostream, cout
-#include <algorithm>  // for max, min
+#include <cassert>  /// for assert
+#include <cmath>
+#include <iostream>  /// for IO operations
 
 /**
  * @namespace numerical_methods
