@@ -3,9 +3,9 @@
 // array simultaneously, and swaps it with the lowest and highest available
 // position iteratively or recursively
 
-#include <iostream>  // for operator<<, basic_ostream, char_traits, basic_is...
-#include <vector>    // for vector
-#include <utility>   // for swap
+#include <algorithm>
+#include <iostream>
+#include <vector>
 
 // Iterative Version
 

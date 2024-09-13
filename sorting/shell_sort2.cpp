@@ -3,11 +3,12 @@
  * \brief [Shell sort](https://en.wikipedia.org/wiki/Shell_sort) algorithm
  * \author [Krishna Vedala](https://github.com/kvedala)
  */
-#include <cassert>   // for assert
-#include <cstdlib>   // for rand, size_t, qsort, srand, NULL, atoi
-#include <ctime>     // for clock, clock_t, CLOCKS_PER_SEC, time
-#include <iostream>  // for operator<<, basic_ostream, char_traits, cout, endl
-#include <vector>    // for vector
+#include <cassert>
+#include <cstdlib>
+#include <ctime>
+#include <iostream>
+#include <utility>  // for std::swap
+#include <vector>
 
 /** pretty print array
  * \param[in] arr array to print

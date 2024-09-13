@@ -24,15 +24,12 @@
  * @author [popoapp](https://github.com/popoapp)
  */
 
-#include <algorithm>  // for is_sorted
-#include <cassert>    // for assert
-#include <cstdint>    // for uint64_t, int64_t
-#include <ctime>      // for time, size_t
-#include <iostream>   // for operator<<, cout, basic_ostream, basic_istream:...
-#include <vector>     // for vector
-#include <cstdlib>    // for rand, srand, RAND_MAX
-#include <iterator>   // for begin, end
-#include <utility>    // for swap
+#include <algorithm>  /// for std::is_sorted
+#include <cassert>    /// for std::assert
+#include <cstdint>    /// for integral typedefs
+#include <ctime>      /// for std::time
+#include <iostream>   /// for IO operations
+#include <vector>     /// for std::vector
 
 /**
  * @brief Sorting algorithms

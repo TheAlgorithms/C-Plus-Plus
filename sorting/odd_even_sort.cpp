@@ -1,7 +1,6 @@
 /* C++ implementation Odd Even Sort */
-#include <iostream>  // for operator<<, char_traits, basic_ostream, basic_is...
-#include <vector>    // for vector
-#include <utility>   // for swap
+#include <iostream>
+#include <vector>
 
 using namespace std;
 

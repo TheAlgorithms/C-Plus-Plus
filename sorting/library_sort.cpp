@@ -1,6 +1,5 @@
-#include <algorithm>  // for lower_bound
-#include <iostream>   // for char_traits, basic_ostream, operator<<, cout
-#include <iterator>   // for distance
+#include <algorithm>
+#include <iostream>
 
 void librarySort(int *index, int n) {
     int lib_size, index_pos,

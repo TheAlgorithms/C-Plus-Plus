@@ -17,13 +17,12 @@
  * arr = [2,8,9,1,7], after wiggle sort arr will become equal to [8,2,9,1,7]
  */
 
-#include <cassert>   // for assert
-#include <cstdint>   // for uint32_t
-#include <ctime>     // for time
-#include <iostream>  // for operator<<, basic_ostream, char_traits, cout, endl
-#include <vector>    // for vector
-#include <cstdlib>   // for rand, srand
-#include <utility>   // for swap
+#include <algorithm>
+#include <cassert>
+#include <cstdint>  /// for integral typedefs
+#include <ctime>
+#include <iostream>  /// for io operations
+#include <vector>
 
 /**
  * @namespace sorting

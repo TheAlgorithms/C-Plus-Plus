@@ -20,10 +20,9 @@
  *  Time Complexity - \f$O(n \log(n))\f$
  *
  */
-#include <algorithm>  // for is_sorted
-#include <cassert>    // for assert
-#include <iostream>   // for operator<<, cout, basic_ostream, basic_ostream:...
-#include <utility>    // for swap
+#include <algorithm>
+#include <cassert>
+#include <iostream>
 
 /**
  *

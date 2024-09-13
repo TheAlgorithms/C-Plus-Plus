@@ -37,9 +37,8 @@ can't get the best status in the code we shared above. This happens on the
 optimized bubble sort algorithm. It's right down there.
 */
 
-#include <iostream>  // for char_traits, basic_ostream, operator<<, basic_os...
-#include <vector>    // for vector
-#include <utility>   // for swap
+#include <iostream>
+#include <vector>
 
 int main() {
     int n;

@@ -13,12 +13,10 @@
  * The time Complexity of the algorithm is \f$O(n+N)\f$.
  */
 
-#include <algorithm>  // for is_sorted, max_element, min_element
-#include <array>      // for array
-#include <cassert>    // for assert
-#include <iostream>   // for operator<<, char_traits, basic_ostream, basic_o...
-#include <cstddef>    // for size_t
-#include <iterator>   // for begin, end
+#include <algorithm>  //for std::is_sorted
+#include <array>      //for std::array
+#include <cassert>    //for assert
+#include <iostream>   //for io operations
 
 /**
  * @namespace sorting
