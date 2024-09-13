@@ -1,5 +1,6 @@
-#include <cstdio>    // for NULL
-#include <iostream>  // for operator<<, basic_ostream, cout, char_traits
+#include <cstdio>
+#include <cstdlib>
+#include <iostream>
 
 struct node {
     int val;

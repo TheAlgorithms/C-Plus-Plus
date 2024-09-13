@@ -14,10 +14,9 @@
  * to point to the node that the current node is pointing to, and then returning
  * the current node to heap store.
  */
-#include <ctype.h>   // for isdigit
-#include <iostream>  // for operator<<, basic_ostream, cout, basic_istream, cin
-#include <memory>    // for shared_ptr, __shared_ptr_access, make_shared
-#include <string>    // for char_traits, basic_string, operator>>, stoi, string
+#include <iostream>
+#include <memory>
+#include <string>
 
 /**
  * @namespace data_structures

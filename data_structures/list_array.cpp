@@ -14,11 +14,10 @@
  * and print the list.
  */
 
-#include <array>     // for array
-#include <cassert>   // for assert
-#include <cstdint>   // for uint64_t
-#include <iostream>  // for operator<<, basic_ostream::operator<<, basic_ost...
-#include <utility>   // for swap
+#include <array>     /// for std::array
+#include <cassert>   /// for assert
+#include <cstdint>   /// for integral typedefs
+#include <iostream>  /// for io operations
 
 /**
  * @namespace data_structures

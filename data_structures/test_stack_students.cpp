@@ -8,15 +8,14 @@
  *     ./main student.txt
  ************************************************************
  * */
-#include <cassert>      // for assert
-#include <cmath>        // for NAN
-#include <fstream>      // for basic_ostream, basic_ifstream, basic_istream
-#include <iomanip>      // for operator<<, setprecision, _Setprecision
-#include <iostream>     // for cout
-#include <string>       // for char_traits, operator>>, basic_string, operat...
-#include <memory>       // for operator==
+#include <cassert>
+#include <cmath>
+#include <fstream>
+#include <iomanip>
+#include <iostream>
+#include <string>
 
-#include "./stack.hpp"  // for stack
+#include "./stack.hpp"
 
 int main(int argc, char* argv[]) {
     double GPA = NAN;

@@ -5,10 +5,9 @@
  * Implementation of a Queue using two Stacks.
  */
 
-#include <stdlib.h>  // for exit
-#include <cassert>   // for assert
-#include <iostream>  // for operator<<, basic_ostream, char_traits, cout, cerr
-#include <stack>     // for stack
+#include <cassert>
+#include <iostream>
+#include <stack>
 
 namespace {
 /**

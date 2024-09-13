@@ -17,10 +17,9 @@
  * @author [Pooja](https://github.com/pooja-git11)
  * @author [Farbod Ahmadian](https://github.com/farbodahm)
  */
-#include <stdlib.h>  // for exit
-#include <array>     // for array
-#include <cstdint>   // for int16_t, int8_t, uint16_t
-#include <iostream>  // for operator<<, basic_ostream, cout, char_traits
+#include <array>     /// for std::array
+#include <cstdint>   /// for integral typedefs
+#include <iostream>  /// for io operations
 
 constexpr uint16_t max_size{10};  ///< Maximum size of the queue
 

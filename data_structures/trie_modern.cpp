@@ -4,12 +4,9 @@
  * @author Anmol3299
  * \brief A basic implementation of trie class to store only lower-case strings.
  */
-#include <cstddef>    // for size_t
-#include <iostream>   // for basic_ostream, operator<<, cout
-#include <memory>     // for shared_ptr, __shared_ptr_access, make_shared
-#include <stdexcept>  // for runtime_error
-#include <string>     // for basic_string, char_traits, string
-#include <utility>    // for move
+#include <iostream>  // for io operations
+#include <memory>    // for std::shared_ptr<>
+#include <string>    // for std::string class
 
 /**
  * A basic implementation of trie class to store only lower-case strings.

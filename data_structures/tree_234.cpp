@@ -13,14 +13,13 @@ Introduction](https://www.educative.io/page/5689413791121408/80001)
  * Other operations should be easy to be added.
  * @author [liuhuan](https://github.com/fedom)
  */
-#include <stdint.h>  // for int64_t, int8_t, int16_t
-#include <array>     // for array
-#include <cassert>   // for assert
-#include <fstream>   // for basic_ostream, operator<<, basic_ofstream, ofstream
-#include <iostream>  // for cout
-#include <memory>    // for allocator, unique_ptr
-#include <queue>     // for queue
-#include <string>    // for char_traits, basic_string, operator+, stoi, to_s...
+#include <array>     /// for std::array
+#include <cassert>   /// for assert
+#include <fstream>   /// for std::ofstream
+#include <iostream>  /// for std::cout
+#include <memory>    /// for std::unique_ptr
+#include <queue>     /// for std::queue
+#include <string>    /// for std::to_string
 
 /**
  * @namespace data_structures

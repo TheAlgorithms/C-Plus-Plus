@@ -1,7 +1,4 @@
-#include <iostream>  // for basic_ostream, operator<<, char_traits, cout, endl
-
-#include "cll.h"     // for cll
-
+#include "cll.h"
 using namespace std;
 
 int main() {

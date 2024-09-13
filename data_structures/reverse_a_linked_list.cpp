@@ -22,12 +22,9 @@
  *scenes](https://drive.google.com/file/d/1pM5COF0wx-wermnNy_svtyZquaCUP2xS/view?usp=sharing)
  */
 
-#include <stdint.h>   // for int32_t
-#include <stdlib.h>   // for exit
-#include <cassert>    // for assert
-#include <iostream>   // for char_traits, basic_ostream, operator<<, cerr, cout
-#include <new>        // for bad_alloc
-#include <stdexcept>  // for logic_error
+#include <cassert>   /// for assert
+#include <iostream>  /// for I/O operations
+#include <new>       /// for managing  dynamic storage
 
 /**
  * @namespace data_structures

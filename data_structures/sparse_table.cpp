@@ -22,13 +22,10 @@
  * `gcd()`, `lcm()`, and `max()` by changing a few lines of code.
  */
 
-#include <algorithm>  // for copy
-#include <array>      // for array
-#include <cassert>    // for assert
-#include <cstddef>    // for size_t
-#include <cstdint>    // for int64_t, uint32_t, uint8_t
-#include <iostream>   // for char_traits, basic_ostream, operator<<, cout, endl
-#include <iterator>   // for begin, end
+#include <array>     /// for std::array
+#include <cassert>   /// for assert
+#include <cstdint>   /// for integral typedefs
+#include <iostream>  /// for IO operations
 
 /**
  * @namespace data_structures

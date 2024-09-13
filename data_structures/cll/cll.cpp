@@ -2,10 +2,6 @@
     A simple class for Cicular Linear Linked List
 */
 #include "cll.h"
-
-#include <cstdlib>   // for NULL
-#include <iostream>  // for basic_ostream, char_traits, operator<<, cout
-
 using namespace std;
 
 /* Constructor */

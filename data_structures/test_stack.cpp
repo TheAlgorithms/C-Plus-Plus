@@ -1,10 +1,9 @@
-#include <cassert>      // for assert
-#include <iostream>     // for operator<<, basic_ostream, cout
-#include <stdexcept>    // for invalid_argument
-#include <vector>       // for vector, operator==
-#include <memory>       // for operator==
+#include <cassert>    /// for assert
+#include <iostream>   /// for std::cout
+#include <stdexcept>  /// std::invalid_argument
+#include <vector>     /// for std::vector
 
-#include "./stack.hpp"  // for stack
+#include "./stack.hpp"
 
 template <typename T>
 void testConstructedStackIsEmpty() {

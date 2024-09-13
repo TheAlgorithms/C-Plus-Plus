@@ -19,11 +19,10 @@
  * @see dsu_path_compression.cpp
  */
 
-#include <cassert>   // for assert
-#include <cstdint>   // for uint64_t
-#include <iostream>  // for char_traits, basic_ostream, operator<<, cout, endl
-#include <vector>    // for vector
-#include <utility>   // for swap
+#include <cassert>   /// for assert
+#include <cstdint>   /// for integral typedefs
+#include <iostream>  /// for IO operations
+#include <vector>    /// for std::vector
 
 using std::cout;
 using std::endl;
