@@ -1,4 +1,6 @@
 on: pull_request_review
+permissions:
+  pull_request: write
 name: Add "approved" label when approved
 jobs:
   add_label:
@@ -12,5 +14,3 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         ADD_LABEL: "approved"
         REMOVE_LABEL: ""
-    permissions:
-      pull_request: write
