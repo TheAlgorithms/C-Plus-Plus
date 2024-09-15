@@ -1,6 +1,6 @@
 on: pull_request_review
 permissions:
-  pull_request: write
+  pull-requests: write
 name: Add "approved" label when approved
 jobs:
   add_label:
