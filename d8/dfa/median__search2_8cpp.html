@@ -301,7 +301,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  103</span>    }</div>
 <div class="line"><span class="lineno">  104</span>    temp-&gt;<a class="code hl_variable" href="../../d7/da4/struct_list_node.html#ad78b392c2ddc25c3243d0c2f30692fb1">next</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  105</span> </div>
-<div class="line"><span class="lineno">  106</span>    <a class="code hl_struct" href="../../d7/da4/struct_list_node.html">ListNode</a>* median = <a class="code hl_function" href="#a5fefe132a0c3ee780ebc703f37ebce6a">search::median_search2::middleNode</a>(head1);</div>
+<div class="line"><span class="lineno">  106</span>    <span class="keyword">const</span> <a class="code hl_struct" href="../../d7/da4/struct_list_node.html">ListNode</a>* <span class="keyword">const</span> median = <a class="code hl_function" href="#a5fefe132a0c3ee780ebc703f37ebce6a">search::median_search2::middleNode</a>(head1);</div>
 <div class="line"><span class="lineno">  107</span>    assert(3 == median-&gt;<a class="code hl_variable" href="../../d7/da4/struct_list_node.html#a58389d1d1fc5430c2f4ce7c5d5dc48b3">val</a>);  <span class="comment">// 3 is the value of the median node.</span></div>
 <div class="line"><span class="lineno">  108</span>    search::median_search2::deleteAll(head1);</div>
 <div class="line"><span class="lineno">  109</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;test case:1 passed\n&quot;</span>;</div>
@@ -322,7 +322,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  124</span>    }</div>
 <div class="line"><span class="lineno">  125</span>    temp2-&gt;<a class="code hl_variable" href="../../d7/da4/struct_list_node.html#ad78b392c2ddc25c3243d0c2f30692fb1">next</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  126</span> </div>
-<div class="line"><span class="lineno">  127</span>    <a class="code hl_struct" href="../../d7/da4/struct_list_node.html">ListNode</a>* median1 = <a class="code hl_function" href="#a5fefe132a0c3ee780ebc703f37ebce6a">search::median_search2::middleNode</a>(head2);</div>
+<div class="line"><span class="lineno">  127</span>    <span class="keyword">const</span> <a class="code hl_struct" href="../../d7/da4/struct_list_node.html">ListNode</a>* <span class="keyword">const</span> median1 = <a class="code hl_function" href="#a5fefe132a0c3ee780ebc703f37ebce6a">search::median_search2::middleNode</a>(head2);</div>
 <div class="line"><span class="lineno">  128</span>    assert(4 == median1-&gt;<a class="code hl_variable" href="../../d7/da4/struct_list_node.html#a58389d1d1fc5430c2f4ce7c5d5dc48b3">val</a>);  <span class="comment">// 4 is the value of the median node.</span></div>
 <div class="line"><span class="lineno">  129</span>    search::median_search2::deleteAll(head2);</div>
 <div class="line"><span class="lineno">  130</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;test case:2 passed\n&quot;</span>;</div>
