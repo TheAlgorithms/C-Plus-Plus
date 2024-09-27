@@ -12,6 +12,7 @@
 #include <cassert>  /// for assert
 #include <cstdint>  /// for std::uint64_t
 #include <cstdlib>  /// for std::size_t
+#include <numeric>  /// for std::transform_reduce
 #include <vector>   /// for std::vector
 
 /**
@@ -22,11 +23,9 @@ class catalan_numbers {
     std::vector<value_type> known{1, 1};
 
     value_type compute_next() {
-        value_type res = 0;
-        for (std::size_t i = 0; i < known.size(); ++i) {
-            res += known[i] * known[known.size() - i - 1];
-        }
-        return res;
+        return std::transform_reduce(known.begin(), known.end(), known.rbegin(),
+                                     static_cast<value_type>(), std::plus<>(),
+                                     std::multiplies<>());
     }
 
     void add() { known.push_back(this->compute_next()); }
