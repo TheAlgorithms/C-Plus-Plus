@@ -1,8 +1,12 @@
 /**
- * A Catalan number satisfies the following two properties:
- * C(0) = C(1) = 1; C(n) = sum(C(i).C(n-i-1)), from i = 0 to n-1
+ * @file
+ * @brief Provides utilities to compute Catalan numbers using dynamic
+ programming.
+ * A Catalan numbers satisfy these recurrence relations:
+ * C(0) = C(1) = 1; C(n) = sum(C(i).C(n-i-1)), for i = 0 to n-1
  * Read more about Catalan numbers here:
     https://en.wikipedia.org/wiki/Catalan_number
+    https://oeis.org/A000108/
  */
 
 #include <cassert>  /// for assert
