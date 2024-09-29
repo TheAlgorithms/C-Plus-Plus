@@ -10,6 +10,7 @@ var hierarchy =
     [ "binary_search_tree< T >::bst_node", "dd/db6/structbinary__search__tree_1_1bst__node.html", null ],
     [ "others::recursive_tree_traversals::BT", "dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html", null ],
     [ "Btree", "d9/d90/struct_btree.html", null ],
+    [ "catalan_numbers", "dc/d1f/classcatalan__numbers.html", null ],
     [ "operations_on_datastructures::circular_linked_list::CircularLinkedList", "d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html", null ],
     [ "cll", "d5/d15/classcll.html", null ],
     [ "Compare< S, T, E >", "de/d4a/class_compare.html", null ],

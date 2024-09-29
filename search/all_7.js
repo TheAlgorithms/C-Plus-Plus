@@ -103,7 +103,7 @@ var searchData=
   ['binomial_5fvariance_100',['binomial_variance',['../d6/db0/binomial__dist_8cpp.html#acd4dd4558031e4c5d045c801f73d8861',1,'binomial_dist.cpp']]],
   ['binomial_5fx_5fsuccesses_101',['binomial_x_successes',['../d6/db0/binomial__dist_8cpp.html#a19ae0a6a2bd200fd1eb0e31b2bf4cc76',1,'binomial_dist.cpp']]],
   ['binomialcoeffsum_102',['binomialCoeffSum',['../dd/d47/namespacemath.html#ae1ca505751f5a6d3977b86372cfe75ea',1,'math']]],
-  ['bipartite_20graph_103',['Bipartite graph',['../d1/d9a/hopcroft__karp_8cpp.html#autotoc_md78',1,'']]],
+  ['bipartite_20graph_103',['Bipartite graph',['../d1/d9a/hopcroft__karp_8cpp.html#autotoc_md76',1,'']]],
   ['bisection_5fmethod_2ecpp_104',['bisection_method.cpp',['../d7/d6a/bisection__method_8cpp.html',1,'']]],
   ['bit_105',['bit',['../de/d0d/classrange__queries_1_1fenwick__tree.html#af7b7a8c1c5724ed8683d7e28bef526e6',1,'range_queries::fenwick_tree']]],
   ['bit_20manipulation_106',['Bit Manipulation',['../d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md46',1,'']]],

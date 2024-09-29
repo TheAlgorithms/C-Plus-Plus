@@ -79,7 +79,7 @@ var searchData=
   ['word_5fbreak_2ecpp_76',['word_break.cpp',['../d3/d84/word__break_8cpp.html',1,'']]],
   ['word_5fend_77',['word_end',['../d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html#a3cdb077745d3dc97212d693132371219',1,'data_structures::trie_using_hashmap::Trie::Node']]],
   ['wordbreak_78',['wordBreak',['../d3/d84/word__break_8cpp.html#afe4dcd6fd5282e535685361cba645d7c',1,'dynamic_programming::word_break']]],
-  ['working_79',['Working',['../d5/d45/sublist__search_8cpp.html#autotoc_md110',1,'']]],
+  ['working_79',['Working',['../d5/d45/sublist__search_8cpp.html#autotoc_md108',1,'']]],
   ['wostream_80',['wostream',['http://en.cppreference.com/w/cpp/io/basic_ostream.html',0,'std::wostream'],['http://en.cppreference.com/w/cpp/io/basic_ostream/basic_ostream.html',0,'std::wostream::wostream()']]],
   ['wostringstream_81',['wostringstream',['http://en.cppreference.com/w/cpp/io/basic_ostringstream.html',0,'std::wostringstream'],['http://en.cppreference.com/w/cpp/io/basic_ostringstream/basic_ostringstream.html',0,'std::wostringstream::wostringstream()']]],
   ['wprintf_82',['wprintf',['http://en.cppreference.com/w/cpp/io/c/fwprintf.html',0,'std']]],

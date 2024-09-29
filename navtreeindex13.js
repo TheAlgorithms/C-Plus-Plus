@@ -1,9 +1,11 @@
 var NAVTREEINDEX13 =
 {
-"dd/dca/class_f_c_f_s.html#a8fbfe4d85f7576b4a7aade07d29fbd69":[10,0,32,0],
-"dd/dca/class_f_c_f_s.html#aa25dbe30ba9930b5a7c1a6d11758bd91":[10,0,32,2],
-"dd/dca/class_f_c_f_s.html#abb361a612b18bb189aa6d3c49288b793":[10,0,32,1],
-"dd/dca/class_f_c_f_s.html#af2594e22a867b308e027623940193d46":[10,0,32,3],
+"dd/dba/namespacedivide__and__conquer.html":[9,0,23],
+"dd/dca/class_f_c_f_s.html":[10,0,33],
+"dd/dca/class_f_c_f_s.html#a8fbfe4d85f7576b4a7aade07d29fbd69":[10,0,33,0],
+"dd/dca/class_f_c_f_s.html#aa25dbe30ba9930b5a7c1a6d11758bd91":[10,0,33,2],
+"dd/dca/class_f_c_f_s.html#abb361a612b18bb189aa6d3c49288b793":[10,0,33,1],
+"dd/dca/class_f_c_f_s.html#af2594e22a867b308e027623940193d46":[10,0,33,3],
 "dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html":[10,0,13,3,0],
 "dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#a6397b78ceec18cb1959a1d159e134da5":[10,0,13,3,0,2],
 "dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#ac9404b65f407f631915515fa2e08a40c":[10,0,13,3,0,1],
@@ -63,9 +65,9 @@ var NAVTREEINDEX13 =
 "de/d47/string__fibonacci_8cpp.html#a28052eee05d43c2ebc5147c52bd50c35":[11,0,14,53,0],
 "de/d47/string__fibonacci_8cpp.html#ad8055ee368a5d5b24de01bdde6bf8fca":[11,0,14,53,1],
 "de/d47/string__fibonacci_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,53,2],
-"de/d48/struct_trie_1_1_trie_node.html":[10,0,57,0],
-"de/d4a/class_compare.html":[10,0,24],
-"de/d4a/class_compare.html#afbdf9a44adb49728dc704155d7d1570c":[10,0,24,0],
+"de/d48/struct_trie_1_1_trie_node.html":[10,0,58,0],
+"de/d4a/class_compare.html":[10,0,25],
+"de/d4a/class_compare.html#afbdf9a44adb49728dc704155d7d1570c":[10,0,25,0],
 "de/d6a/knuth__morris__pratt_8cpp.html":[11,0,23,3],
 "de/d6a/knuth__morris__pratt_8cpp.html#a1e37af2f023495129cb57338c801209e":[11,0,23,3,1],
 "de/d6a/knuth__morris__pratt_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[11,0,23,3,2],
@@ -175,6 +177,7 @@ var NAVTREEINDEX13 =
 "de/dd3/newton__raphson__method_8cpp.html#a5c5ff05b9f37ae59dad67e1d4f6cd51d":[11,0,15,14,4],
 "de/dd3/newton__raphson__method_8cpp.html#a75f355966e0a97665eaf5a4c79baa7af":[11,0,15,14,3],
 "de/dd3/newton__raphson__method_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,15,14,2],
+"de/dd9/catalan__numbers_8cpp.html":[11,0,6,3],
 "de/dde/lowest__common__ancestor_8cpp.html":[11,0,9,10],
 "de/dde/lowest__common__ancestor_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[11,0,9,10,4],
 "de/dde/lowest__common__ancestor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,9,10,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX13 =
 "df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html":[9,0,12,0],
 "df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#a17f3d667241b88115a95282cdd719cb2":[9,0,12,0,4],
 "df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#ac00616a4e40d3cd5cfb4da87d9ff9af0":[9,0,12,0,3],
-"df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#acc5fe9c2032fb7582c38a20d1fa69bcf":[9,0,12,0,2],
-"df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#af0a6e3521629c25c2b5d620f26429830":[9,0,12,0,1],
-"df/d72/modular__division_8cpp.html":[11,0,14,35],
-"df/d72/modular__division_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[11,0,14,35,0]
+"df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#acc5fe9c2032fb7582c38a20d1fa69bcf":[9,0,12,0,2]
 };

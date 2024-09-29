@@ -1,0 +1,7 @@
+<map id="catalan_numbers" name="catalan_numbers">
+<area shape="rect" id="Node000001" title="computes and caches Catalan numbers" alt="" coords="35,183,155,208"/>
+<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="5,94,185,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,135,98,182,92,182,92,135"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/integer.html" title=" " alt="" coords="48,5,142,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="98,47,98,94,92,94,92,47"/>
+</map>

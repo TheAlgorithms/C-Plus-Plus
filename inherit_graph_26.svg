@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html" target="_top" xlink:title="2&#45;3&#45;4 tree class">
+<g id="a_Node000000"><a xlink:href="dd/d40/classdata__structures_1_1tree__234_1_1_node.html" target="_top" xlink:title="2&#45;3&#45;4 tree node class">
 <polygon fill="white" stroke="#666666" points="106,-30.5 0,-30.5 0,0 106,0 106,-30.5"/>
 <text text-anchor="start" x="8" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::tree</text>
-<text text-anchor="middle" x="53" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Tree234</text>
+<text text-anchor="middle" x="53" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">_234::Node</text>
 </a>
 </g>
 </g>

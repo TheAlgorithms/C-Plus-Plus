@@ -181,6 +181,7 @@ var annotated_dup =
     ] ],
     [ "binary_search_tree", "d9/dde/classbinary__search__tree.html", "d9/dde/classbinary__search__tree" ],
     [ "Btree", "d9/d90/struct_btree.html", null ],
+    [ "catalan_numbers", "dc/d1f/classcatalan__numbers.html", "dc/d1f/classcatalan__numbers" ],
     [ "cll", "d5/d15/classcll.html", null ],
     [ "Compare", "de/d4a/class_compare.html", "de/d4a/class_compare" ],
     [ "compare", "d1/db3/structcompare.html", null ],
