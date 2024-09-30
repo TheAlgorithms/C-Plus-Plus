@@ -12,7 +12,7 @@
 
 #include <algorithm>  /// for std::is_sorted
 #include <cassert>    /// for assert
-#include <cstdint>    /// for integral typedefs
+#include <cstdint>
 #include <iostream>   /// for std::swap and io operations
 #include <vector>     /// for std::vector
 
