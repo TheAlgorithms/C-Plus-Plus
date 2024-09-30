@@ -19,7 +19,7 @@
 
 #include <array>     /// For array
 #include <cassert>   /// For assert
-#include <cstdint>   /// for integral typedefs
+#include <cstdint>
 #include <iostream>  /// For IO operations
 
 /**
