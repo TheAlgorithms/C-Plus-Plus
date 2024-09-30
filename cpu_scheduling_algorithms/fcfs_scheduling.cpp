@@ -11,7 +11,7 @@
 
 #include <algorithm>      /// for sorting
 #include <cassert>        /// for assert
-#include <cstdint>        /// for integral typedefs
+#include <cstdint>
 #include <cstdlib>        /// random number generation
 #include <ctime>          /// for time
 #include <iomanip>        /// for formatting the output
