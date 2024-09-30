@@ -18,7 +18,7 @@
 
 #include <cassert>   /// for assert
 #include <cmath>     /// for log calculation
-#include <cstdint>   /// for integral typedefs
+#include <cstdint>
 #include <iostream>  /// for IO operations
 
 /**
