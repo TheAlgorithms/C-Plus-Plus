@@ -19,7 +19,7 @@
 
 #include <algorithm>
 #include <cassert>
-#include <cstdint>  /// for integral typedefs
+#include <cstdint>
 #include <ctime>
 #include <iostream>  /// for io operations
 #include <vector>
