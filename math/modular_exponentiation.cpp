@@ -17,7 +17,7 @@
  * @author [Shri2206](https://github.com/Shri2206)
  */
 #include <cassert>   /// for assert
-#include <cstdint>   /// for integral typedefs
+#include <cstdint>
 #include <iostream>  /// for io operations
 /**
  * @namespace math

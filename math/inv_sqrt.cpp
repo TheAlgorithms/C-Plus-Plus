@@ -10,7 +10,7 @@
 
 #include <cassert>   /// for assert
 #include <cmath>     /// for `std::sqrt`
-#include <cstdint>   /// for integral typedefs
+#include <cstdint>
 #include <iostream>  /// for IO operations
 #include <limits>    /// for numeric_limits
 /**

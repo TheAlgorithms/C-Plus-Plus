@@ -12,7 +12,7 @@
  */
 
 #include <cassert>
-#include <cstdint>  /// for integral typedefs
+#include <cstdint>
 #include <iostream>
 #include <vector>
 

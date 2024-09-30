@@ -12,7 +12,7 @@
  */
 
 #include <cassert>   /// for assert
-#include <cstdint>   /// for integral typedefs
+#include <cstdint>
 #include <iostream>  /// for std::cin and std::cout
 /**
  * @namespace math

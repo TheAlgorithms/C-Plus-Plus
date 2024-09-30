@@ -22,7 +22,7 @@
  */
 #include <cassert>     /// for assert
 #include <cmath>       /// for mathematical functions
-#include <cstdint>     /// for integral typedefs
+#include <cstdint>
 #include <functional>  /// for passing in functions
 #include <iostream>    /// for IO operations
 

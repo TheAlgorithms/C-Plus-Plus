@@ -19,7 +19,7 @@
  * There can be many such equations
  */
 #include <cassert>   /// asserting the test functions
-#include <cstdint>   /// for integral typedefs
+#include <cstdint>
 #include <iostream>  /// for io operations
 #include <vector>    /// for using the vector container
 /**

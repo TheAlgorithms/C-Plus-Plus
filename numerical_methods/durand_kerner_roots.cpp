@@ -33,7 +33,7 @@
 #include <cassert>
 #include <cmath>
 #include <complex>
-#include <cstdint>  /// for integral typedefs
+#include <cstdint>
 #include <cstdlib>
 #include <ctime>
 #include <fstream>
