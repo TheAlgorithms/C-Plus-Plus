@@ -9,7 +9,7 @@
  * @see fibonacci_large.cpp, fibonacci_fast.cpp, string_fibonacci.cpp
  */
 #include <cassert>
-#include <cstdint>  /// for integral typedefs
+#include <cstdint>
 #include <iostream>
 /**
  * Recursively compute sequences
