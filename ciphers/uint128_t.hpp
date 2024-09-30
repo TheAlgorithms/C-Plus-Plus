@@ -8,7 +8,7 @@
  */
 
 #include <algorithm>  /// for `std::reverse` and other operations
-#include <cstdint>    /// for integral typedefs
+#include <cstdint>
 #include <ostream>    /// for `std::cout` overload
 #include <string>     /// for `std::string`
 #include <utility>    /// for `std::pair` library
