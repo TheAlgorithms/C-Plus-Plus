@@ -13,7 +13,7 @@
  * @author [Hashir Niazi](https://github.com/HashirGJ8842)
  */
 #include <cassert>   /// for assert
-#include <cstdint>   /// for integral typedefs
+#include <cstdint>
 #include <iostream>  /// for io operations, and std::pair
 #include <vector>    /// for std::vector
 
