@@ -19,7 +19,7 @@
  */
 
 #include <cassert>   /// for assert
-#include <cstdint>   /// for integral typdefs
+#include <cstdint>
 #include <iostream>  /// for IO operations
 
 /**
