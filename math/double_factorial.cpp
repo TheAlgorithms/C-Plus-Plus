@@ -10,7 +10,7 @@
  */
 
 #include <cassert>
-#include <cstdint>  /// for integral typedefs
+#include <cstdint>
 #include <iostream>
 
 /** Compute double factorial using iterative method
