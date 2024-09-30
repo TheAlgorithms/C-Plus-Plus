@@ -17,7 +17,7 @@
  * @author Unknown author
  * @author [Sagar Pandya](https://github.com/sagarpandyansit)
  */
-#include <cstdint>   /// for integer typedefs
+#include <cstdint>
 #include <iostream>  /// for IO operations
 #include <set>       /// for std::set
 #include <vector>    /// for std::vector
