@@ -31,7 +31,7 @@
 
 #include <algorithm>  /// for std::sort function
 #include <cassert>    /// for std::assert
-#include <cstdint>    /// for integral typedefs
+#include <cstdint>
 #include <iostream>   /// for IO operations
 #include <vector>     /// for std::vector
 
