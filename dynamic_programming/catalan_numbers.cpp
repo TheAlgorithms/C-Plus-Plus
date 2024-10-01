@@ -24,7 +24,7 @@ class catalan_numbers {
 
     value_type compute_next() {
         return std::transform_reduce(known.begin(), known.end(), known.rbegin(),
-                                     static_cast<value_type>(), std::plus<>(),
+                                     static_cast<value_type>(0), std::plus<>(),
                                      std::multiplies<>());
     }
 
