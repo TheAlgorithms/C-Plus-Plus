@@ -12,7 +12,7 @@
 #include <cassert>     /// for assert
 #include <cstdint>     /// for std::uint64_t
 #include <cstdlib>     /// for std::size_t
-#include <functional>  /// for std::plus
+#include <functional>  /// for std::plus & std::multiplies
 #include <numeric>     /// for std::transform_reduce
 #include <vector>      /// for std::vector
 
