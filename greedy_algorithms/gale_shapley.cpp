@@ -1,16 +1,16 @@
 /**
  * @file
- * @brief [Gale Shapley](https://en.wikipedia.org/wiki/Gale%E2%80%93Shapley_algorithm)
+ * @brief [Gale Shapley Algorithm](https://en.wikipedia.org/wiki/Gale%E2%80%93Shapley_algorithm)
  * @details
  * This implementation utilizes the Gale-Shapley algorithm to find stable matches
  *
- * **Gale Shapley** aims to find a stable matching between two equally sized 
+ * **Gale Shapley Algorithm** aims to find a stable matching between two equally sized 
  * sets of elements given an ordinal preference for each element. The algorithm was
  * introduced by David Gale and Lloyd Shapley in 1962.
  * 
  * Reference: 
  * [Wikipedia](https://en.wikipedia.org/wiki/Gale%E2%80%93Shapley_algorithm)
- * [Wikipedia](https://en.wikipedia.org/wiki/Stable_marriage_problem)
+ * [Wikipedia](https://en.wikipedia.org/wiki/Stable_matching_problem)
  *
  * @author [B Karthik](https://github.com/BKarthik7)
  */
@@ -27,9 +27,9 @@
 namespace greedy_algorithms {
 /**
  * @namespace
- * @brief Functions for the [Gale Shapley](https://en.wikipedia.org/wiki/Gale%E2%80%93Shapley_algorithm) algorithm
+ * @brief Functions for the Gale Shapley Algorithm
  */
-namespace stable_marriage {
+namespace stable_matching {
 void gale_shapley(const std::vector<std::vector<int>>& set_2_prefs, const std::vector<std::vector<int>>& set_1_prefs) {
     int n = set_2_prefs.size();
     std::vector<int> engagements(n, -1);
@@ -66,7 +66,7 @@ void gale_shapley(const std::vector<std::vector<int>>& set_2_prefs, const std::v
     }
     std::cout << std::endl;
 }
-}  // namespace stable_marriage
+}  // namespace stable_matching
 }  // namespace greedy_algorithms
 
 /**
@@ -78,17 +78,17 @@ static void tests() {
     // Test Case 1
     std::vector<std::vector<int>> set_1_prefs = {{0, 1, 2, 3}, {2, 1, 3, 0}, {1, 2, 0, 3}, {3, 0, 1, 2}};
     std::vector<std::vector<int>> set_2_prefs = {{1, 0, 2, 3},{3, 0, 1, 2},{0, 2, 1, 3},{1, 2, 0, 3}};
-    greedy_algorithms::stable_marriage::gale_shapley(set_2_prefs, set_1_prefs);
+    greedy_algorithms::stable_matching::gale_shapley(set_2_prefs, set_1_prefs);
 
     // Test Case 2
     set_1_prefs = {{0, 2, 1, 3}, {2, 3, 0, 1}, {3, 1, 2, 0}, {2, 1, 0, 3}};
     set_2_prefs = {{1, 0, 2, 3},{3, 0, 1, 2},{0, 2, 1, 3},{1, 2, 0, 3}};
-    greedy_algorithms::stable_marriage::gale_shapley(set_2_prefs, set_1_prefs);
+    greedy_algorithms::stable_matching::gale_shapley(set_2_prefs, set_1_prefs);
 
     // Test Case 3
     set_1_prefs = {{0, 1, 2}, {2, 1, 0}, {1, 2, 0}};
     set_2_prefs = {{1, 0, 2},{2, 0, 1},{0, 2, 1}};
-    greedy_algorithms::stable_marriage::gale_shapley(set_2_prefs, set_1_prefs);
+    greedy_algorithms::stable_matching::gale_shapley(set_2_prefs, set_1_prefs);
 }
 
 /**
