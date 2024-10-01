@@ -8,7 +8,7 @@ project(Algorithms_in_C++
 # set(CMAKE_CXX_CPPLINT "~/anaconda3/bin/cpplint --filter=-legal/copyright --std=c++11")
 # find_program(CLANG_FORMAT "clang-format")
 
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 if(MSVC)
