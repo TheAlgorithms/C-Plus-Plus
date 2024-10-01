@@ -1,3 +1,17 @@
+/**
+ * @file
+ * @brief Stable Marriage Problem implementation
+ * @details
+ * This implementation utilizes the Gale-Shapley algorithm to find stable matches
+ * between men and women based on their preferences.
+ *
+ * **Stable Marriage Problem** aims to find a stable matching between two equally sized 
+ * sets of elements given an ordinal preference for each element. The algorithm was
+ * introduced by David Gale and Lloyd Shapley in 1962.
+ *
+ * @author [B Karthik](https://github.com/BKarthik7)
+ */
+
 #include <iostream>
 #include <vector>
 #include <cstring>
