@@ -1,13 +1,16 @@
 /**
  * @file
- * @brief Stable Marriage Problem implementation
+ * @brief [Stable Marriage](https://en.wikipedia.org/wiki/Gale%E2%80%93Shapley_algorithm)
  * @details
  * This implementation utilizes the Gale-Shapley algorithm to find stable matches
- * between men and women based on their preferences.
  *
  * **Stable Marriage Problem** aims to find a stable matching between two equally sized 
  * sets of elements given an ordinal preference for each element. The algorithm was
  * introduced by David Gale and Lloyd Shapley in 1962.
+ * 
+ * Reference: 
+ * [Wikipedia](https://en.wikipedia.org/wiki/Gale%E2%80%93Shapley_algorithm)
+ * [Wikipedia](https://en.wikipedia.org/wiki/Stable_marriage_problem)
  *
  * @author [B Karthik](https://github.com/BKarthik7)
  */
@@ -16,105 +19,83 @@
 #include <vector>
 #include <cstring>
 #include <algorithm>
-using namespace std;
 
-void stableMatch(const vector<vector<int>>& women_prefs, const vector<vector<int>>& men_prefs, int n) {
-    vector<int> engagements(n, -1);
-    vector<bool> free_men(n, true);
-    vector<int> next_proposal(n, 0); // Tracks the next woman to propose for each man
+/**
+ * @namespace
+ * @brief Greedy Algorithms
+ */
+namespace greedy_algorithms {
+/**
+ * @namespace
+ * @brief Functions for the [Gale Shapley](https://en.wikipedia.org/wiki/Gale%E2%80%93Shapley_algorithm) algorithm
+ */
+namespace stable_marriage {
+void gale_shapley(const std::vector<std::vector<int>>& set_2_prefs, const std::vector<std::vector<int>>& set_1_prefs) {
+    int n = set_2_prefs.size();
+    std::vector<int> engagements(n, -1);
+    std::vector<bool> free_set_1_s(n, true);
+    std::vector<int> next_proposal(n, 0); // Tracks the next set_2 to propose for each set_1
 
     while (true) {
-        int freeMan;
-        for (freeMan = 0; freeMan < n; freeMan++) {
-            if (free_men[freeMan]) break;
+        int free_set_1;
+        for (free_set_1 = 0; free_set_1 < n; free_set_1++) {
+            if (free_set_1_s[free_set_1]) break;
         }
-        if (freeMan == n) break;
+        if (free_set_1 == n) break;
 
-        int womanToPropose = men_prefs[freeMan][next_proposal[freeMan]];
-        next_proposal[freeMan]++;
-        int currentFiance = engagements[womanToPropose];
+        int set_2_to_propose = set_1_prefs[free_set_1][next_proposal[free_set_1]];
+        next_proposal[free_set_1]++;
+        int currentFiance = engagements[set_2_to_propose];
 
         if (currentFiance == -1) {
-            engagements[womanToPropose] = freeMan;
-            free_men[freeMan] = false;
+            engagements[set_2_to_propose] = free_set_1;
+            free_set_1_s[free_set_1] = false;
         } else {
-            if (find(women_prefs[womanToPropose].begin(), women_prefs[womanToPropose].end(), freeMan) <
-                find(women_prefs[womanToPropose].begin(), women_prefs[womanToPropose].end(), currentFiance)) {
-                engagements[womanToPropose] = freeMan;
-                free_men[freeMan] = false;
-                free_men[currentFiance] = true;
+            if (std::find(set_2_prefs[set_2_to_propose].begin(), set_2_prefs[set_2_to_propose].end(), free_set_1) <
+                std::find(set_2_prefs[set_2_to_propose].begin(), set_2_prefs[set_2_to_propose].end(), currentFiance)) {
+                engagements[set_2_to_propose] = free_set_1;
+                free_set_1_s[free_set_1] = false;
+                free_set_1_s[currentFiance] = true;
             }
         }
     }
 
-    cout << "Stable Matches:\n";
-    for (int woman = 0; woman < n; woman++) {
-        cout << "Woman " << woman << " is engaged to Man " << engagements[woman] << endl;
+    std::cout << "Stable Matches:\n";
+    for (int set_2 = 0; set_2 < n; set_2++) {
+        std::cout << "set_2's " << set_2 << " is matched to set_1's " << engagements[set_2] << std::endl;
     }
+    std::cout << std::endl;
 }
+}  // namespace stable_marriage
+}  // namespace greedy_algorithms
 
-void runTestCase(int caseNum) {
-    const int n = 4; // Number of men and women
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
 
+static void tests() {
     // Test Case 1
-    if (caseNum == 1) {
-        cout << "Test Case 1:\n";
-        vector<vector<int>> women_prefs = {
-            {1, 0, 3, 2}, // Alice
-            {0, 1, 2, 3}, // Becky
-            {1, 2, 0, 3}, // Cathy
-            {3, 2, 1, 0}  // Diana
-        };
-        vector<vector<int>> men_prefs = {
-            {0, 1, 2, 3}, // Bob
-            {1, 0, 3, 2}, // Charlie
-            {0, 2, 3, 1}, // David
-            {2, 1, 0, 3}  // Edward
-        };
-        stableMatch(women_prefs, men_prefs, n);
-    }
-    
+    std::vector<std::vector<int>> set_1_prefs = {{0, 1, 2, 3}, {2, 1, 3, 0}, {1, 2, 0, 3}, {3, 0, 1, 2}};
+    std::vector<std::vector<int>> set_2_prefs = {{1, 0, 2, 3},{3, 0, 1, 2},{0, 2, 1, 3},{1, 2, 0, 3}};
+    greedy_algorithms::stable_marriage::gale_shapley(set_2_prefs, set_1_prefs);
+
     // Test Case 2
-    else if (caseNum == 2) {
-        cout << "Test Case 2:\n";
-        vector<vector<int>> women_prefs = {
-            {0, 1, 2, 3}, // Eve
-            {1, 0, 3, 2}, // Grace
-            {2, 1, 0, 3}, // Hannah
-            {3, 2, 1, 0}  // Ivy
-        };
-        vector<vector<int>> men_prefs = {
-            {1, 0, 3, 2}, // Frank
-            {0, 1, 2, 3}, // George
-            {1, 2, 0, 3}, // Henry
-            {2, 0, 1, 3}  // Ian
-        };
-        stableMatch(women_prefs, men_prefs, n);
-    }
+    set_1_prefs = {{0, 2, 1, 3}, {2, 3, 0, 1}, {3, 1, 2, 0}, {2, 1, 0, 3}};
+    set_2_prefs = {{1, 0, 2, 3},{3, 0, 1, 2},{0, 2, 1, 3},{1, 2, 0, 3}};
+    greedy_algorithms::stable_marriage::gale_shapley(set_2_prefs, set_1_prefs);
 
     // Test Case 3
-    else if (caseNum == 3) {
-        cout << "Test Case 3:\n";
-        vector<vector<int>> women_prefs = {
-            {2, 1, 0, 3}, // Jade
-            {0, 2, 3, 1}, // Lucy
-            {3, 2, 1, 0}, // Mia
-            {1, 3, 0, 2}  // Nina
-        };
-        vector<vector<int>> men_prefs = {
-            {1, 0, 2, 3}, // Kyle
-            {0, 2, 3, 1}, // Liam
-            {2, 1, 3, 0}, // Mason
-            {3, 2, 1, 0}  // Nathan
-        };
-        stableMatch(women_prefs, men_prefs, n);
-    }
+    set_1_prefs = {{0, 1, 2}, {2, 1, 0}, {1, 2, 0}};
+    set_2_prefs = {{1, 0, 2},{2, 0, 1},{0, 2, 1}};
+    greedy_algorithms::stable_marriage::gale_shapley(set_2_prefs, set_1_prefs);
 }
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
-    for (int i = 1; i <= 3; i++) {
-        runTestCase(i);
-        cout << endl;
-    }
+    tests(); // run self-test implementations
     return 0;
 }
