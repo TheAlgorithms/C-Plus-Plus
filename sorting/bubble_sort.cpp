@@ -41,24 +41,24 @@ optimized bubble sort algorithm. It's right down there.
 #include <vector>
 
 int main() {
-    int n;
+    int numbers_of_elts; //for better understanding
     bool swap_check = true;
     std::cout << "Enter the amount of numbers to sort: ";
-    std::cin >> n;
+    std::cin >> numbers_of_elts;
     std::vector<int> numbers;
-    std::cout << "Enter " << n << " numbers: ";
+    std::cout << "Enter " << numbers_of_elts << " numbers: ";
     int num;
 
     // Input
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < numbers_of_elts; i++) {
         std::cin >> num;
         numbers.push_back(num);
     }
 
     // Bubble Sorting
-    for (int i = 0; (i < n) && (swap_check); i++) {
+    for (int i = 0; (i < numbers_of_elts) && (swap_check); i++) {
         swap_check = false;
-        for (int j = 0; j < n - 1 - i; j++) {
+        for (int j = 0; j < numbers_of_elts - 1 - i; j++) {
             if (numbers[j] > numbers[j + 1]) {
                 swap_check = true;
                 std::swap(numbers[j],
