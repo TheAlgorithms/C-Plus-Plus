@@ -84,10 +84,7 @@ std::vector<int> gale_shapley(const std::vector<std::vector<int>>& secondary_pre
 }  // namespace stable_matching
 }  // namespace greedy_algorithms
 
-/**
- * @brief Self-test implementations
- * @returns void
- */
+
 static void tests() {
     // Test Case 1
     std::vector<std::vector<int>> primary_preferences = {{0, 1, 2, 3}, {2, 1, 3, 0}, {1, 2, 0, 3}, {3, 0, 1, 2}};
