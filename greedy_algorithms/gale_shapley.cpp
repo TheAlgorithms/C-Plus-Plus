@@ -1,10 +1,10 @@
 /**
  * @file
- * @brief [Stable Marriage](https://en.wikipedia.org/wiki/Gale%E2%80%93Shapley_algorithm)
+ * @brief [Gale Shapley](https://en.wikipedia.org/wiki/Gale%E2%80%93Shapley_algorithm)
  * @details
  * This implementation utilizes the Gale-Shapley algorithm to find stable matches
  *
- * **Stable Marriage Problem** aims to find a stable matching between two equally sized 
+ * **Gale Shapley** aims to find a stable matching between two equally sized 
  * sets of elements given an ordinal preference for each element. The algorithm was
  * introduced by David Gale and Lloyd Shapley in 1962.
  * 
