@@ -3,6 +3,7 @@
 // tested on : https://cses.fi/problemset/task/1145/
 
 #include <iostream>
+#include <set>
 
 using namespace std;
 int LIS(int arr[], int n) {
