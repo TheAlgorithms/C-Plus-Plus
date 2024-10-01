@@ -51,7 +51,7 @@ void print(int dist[], int V) {
 
 // The main function that finds the shortest path from a vertex
 // to all other vertices using Floyd-Warshall Algorithm.
-void FloydWarshall(Graph graph) {
+void FloydWarshall(Graph& graph) {
     int V = graph.vertexNum;
     int dist[V][V];
 
