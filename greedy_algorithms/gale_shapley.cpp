@@ -2,7 +2,7 @@
  * @file
  * @brief [Gale Shapley Algorithm](https://en.wikipedia.org/wiki/Gale%E2%80%93Shapley_algorithm)
  * @details
- * This implementation utilizes the Gale-Shapley algorithm to find stable matches
+ * This implementation utilizes the Gale-Shapley algorithm to find stable matches.
  *
  * **Gale Shapley Algorithm** aims to find a stable matching between two equally sized 
  * sets of elements given an ordinal preference for each element. The algorithm was
@@ -17,8 +17,8 @@
 
 #include <iostream>
 #include <vector>
-#include <cstring>
 #include <algorithm>
+#include <cassert>
 
 /**
  * @namespace
@@ -27,44 +27,59 @@
 namespace greedy_algorithms {
 /**
  * @namespace
- * @brief Functions for the Gale Shapley Algorithm
+ * @brief Functions for the Gale-Shapley Algorithm
  */
 namespace stable_matching {
-void gale_shapley(const std::vector<std::vector<int>>& set_2_prefs, const std::vector<std::vector<int>>& set_1_prefs) {
-    int n = set_2_prefs.size();
-    std::vector<int> engagements(n, -1);
-    std::vector<bool> free_set_1_s(n, true);
-    std::vector<int> next_proposal(n, 0); // Tracks the next set_2 to propose for each set_1
+std::vector<int> gale_shapley(const std::vector<std::vector<int>>& secondary_preferences, const std::vector<std::vector<int>>& primary_preferences) {
+    int num_elements = secondary_preferences.size();
+    std::vector<int> matches(num_elements, -1);
+    std::vector<bool> is_free_primary(num_elements, true);
+    std::vector<int> proposal_index(num_elements, 0); // Tracks the next secondary to propose for each primary
 
     while (true) {
-        int free_set_1;
-        for (free_set_1 = 0; free_set_1 < n; free_set_1++) {
-            if (free_set_1_s[free_set_1]) break;
+        int free_primary_index = -1;
+
+        // Find the next free primary
+        for (int i = 0; i < num_elements; i++) {
+            if (is_free_primary[i]) {
+                free_primary_index = i;
+                break;
+            }
         }
-        if (free_set_1 == n) break;
 
-        int set_2_to_propose = set_1_prefs[free_set_1][next_proposal[free_set_1]];
-        next_proposal[free_set_1]++;
-        int currentFiance = engagements[set_2_to_propose];
+        // If no free primary is found, break the loop
+        if (free_primary_index == -1) break;
 
-        if (currentFiance == -1) {
-            engagements[set_2_to_propose] = free_set_1;
-            free_set_1_s[free_set_1] = false;
+        // Get the next secondary to propose
+        int secondary_to_propose = primary_preferences[free_primary_index][proposal_index[free_primary_index]];
+        proposal_index[free_primary_index]++;
+
+        // Get the current match of the secondary
+        int current_match = matches[secondary_to_propose];
+
+        // If the secondary is free, match them
+        if (current_match == -1) {
+            matches[secondary_to_propose] = free_primary_index;
+            is_free_primary[free_primary_index] = false;
         } else {
-            if (std::find(set_2_prefs[set_2_to_propose].begin(), set_2_prefs[set_2_to_propose].end(), free_set_1) <
-                std::find(set_2_prefs[set_2_to_propose].begin(), set_2_prefs[set_2_to_propose].end(), currentFiance)) {
-                engagements[set_2_to_propose] = free_set_1;
-                free_set_1_s[free_set_1] = false;
-                free_set_1_s[currentFiance] = true;
+            // Determine if the current match should be replaced
+            auto new_proposer_rank = std::find(secondary_preferences[secondary_to_propose].begin(),
+                                                secondary_preferences[secondary_to_propose].end(),
+                                                free_primary_index);
+            auto current_match_rank = std::find(secondary_preferences[secondary_to_propose].begin(),
+                                                 secondary_preferences[secondary_to_propose].end(),
+                                                 current_match);
+
+            // If the new proposer is preferred over the current match
+            if (new_proposer_rank < current_match_rank) {
+                matches[secondary_to_propose] = free_primary_index;
+                is_free_primary[free_primary_index] = false;
+                is_free_primary[current_match] = true; // Current match is now free
             }
         }
     }
 
-    std::cout << "Stable Matches:\n";
-    for (int set_2 = 0; set_2 < n; set_2++) {
-        std::cout << "set_2's " << set_2 << " is matched to set_1's " << engagements[set_2] << std::endl;
-    }
-    std::cout << std::endl;
+    return matches;
 }
 }  // namespace stable_matching
 }  // namespace greedy_algorithms
@@ -73,22 +88,21 @@ void gale_shapley(const std::vector<std::vector<int>>& set_2_prefs, const std::v
  * @brief Self-test implementations
  * @returns void
  */
-
 static void tests() {
     // Test Case 1
-    std::vector<std::vector<int>> set_1_prefs = {{0, 1, 2, 3}, {2, 1, 3, 0}, {1, 2, 0, 3}, {3, 0, 1, 2}};
-    std::vector<std::vector<int>> set_2_prefs = {{1, 0, 2, 3},{3, 0, 1, 2},{0, 2, 1, 3},{1, 2, 0, 3}};
-    greedy_algorithms::stable_matching::gale_shapley(set_2_prefs, set_1_prefs);
+    std::vector<std::vector<int>> primary_preferences = {{0, 1, 2, 3}, {2, 1, 3, 0}, {1, 2, 0, 3}, {3, 0, 1, 2}};
+    std::vector<std::vector<int>> secondary_preferences = {{1, 0, 2, 3}, {3, 0, 1, 2}, {0, 2, 1, 3}, {1, 2, 0, 3}};
+    assert(greedy_algorithms::stable_matching::gale_shapley(secondary_preferences, primary_preferences) == std::vector<int>({0, 2, 1, 3}));
 
     // Test Case 2
-    set_1_prefs = {{0, 2, 1, 3}, {2, 3, 0, 1}, {3, 1, 2, 0}, {2, 1, 0, 3}};
-    set_2_prefs = {{1, 0, 2, 3},{3, 0, 1, 2},{0, 2, 1, 3},{1, 2, 0, 3}};
-    greedy_algorithms::stable_matching::gale_shapley(set_2_prefs, set_1_prefs);
+    primary_preferences = {{0, 2, 1, 3}, {2, 3, 0, 1}, {3, 1, 2, 0}, {2, 1, 0, 3}};
+    secondary_preferences = {{1, 0, 2, 3}, {3, 0, 1, 2}, {0, 2, 1, 3}, {1, 2, 0, 3}};
+    assert(greedy_algorithms::stable_matching::gale_shapley(secondary_preferences, primary_preferences) == std::vector<int>({0, 3, 1, 2}));
 
     // Test Case 3
-    set_1_prefs = {{0, 1, 2}, {2, 1, 0}, {1, 2, 0}};
-    set_2_prefs = {{1, 0, 2},{2, 0, 1},{0, 2, 1}};
-    greedy_algorithms::stable_matching::gale_shapley(set_2_prefs, set_1_prefs);
+    primary_preferences = {{0, 1, 2}, {2, 1, 0}, {1, 2, 0}};
+    secondary_preferences = {{1, 0, 2}, {2, 0, 1}, {0, 2, 1}};
+    assert(greedy_algorithms::stable_matching::gale_shapley(secondary_preferences, primary_preferences) == std::vector<int>({0, 2, 1}));
 }
 
 /**
@@ -96,6 +110,6 @@ static void tests() {
  * @returns 0 on exit
  */
 int main() {
-    tests(); // run self-test implementations
+    tests(); // Run self-test implementations
     return 0;
 }
