@@ -10,6 +10,7 @@
  */
 
 #include <cassert>   /// for assert()
+#define _USE_MATH_DEFINES
 #include <cmath>     /// for std::pow(), std::sin(), and std::cos()
 #include <iostream>  /// for IO operations
 
