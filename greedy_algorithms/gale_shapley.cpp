@@ -100,6 +100,11 @@ static void tests() {
     primary_preferences = {{0, 1, 2}, {2, 1, 0}, {1, 2, 0}};
     secondary_preferences = {{1, 0, 2}, {2, 0, 1}, {0, 2, 1}};
     assert(greedy_algorithms::stable_matching::gale_shapley(secondary_preferences, primary_preferences) == std::vector<int>({0, 2, 1}));
+
+    // Test Case 4
+    primary_preferences = {};
+    secondary_preferences = {};
+    assert(greedy_algorithms::stable_matching::gale_shapley(secondary_preferences, primary_preferences) == std::vector<int>({}));
 }
 
 /**
