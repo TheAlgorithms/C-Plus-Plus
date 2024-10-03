@@ -29,7 +29,7 @@ namespace greedy_algorithms {
  * @namespace
  * @brief Functions for the Gale-Shapley Algorithm
  */
-
+namespace stable_matching {
 /**
  * @brief The main function that finds the stable matching between two sets of elements 
  * using the Gale-Shapley Algorithm.
