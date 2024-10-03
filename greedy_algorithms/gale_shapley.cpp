@@ -39,8 +39,6 @@ namespace greedy_algorithms {
  * @param secondary_preferences the preferences of the secondary set should be a 2D vector
  * @returns matches the stable matching between the two sets
  */
-
-namespace stable_matching {
 std::vector<int> gale_shapley(const std::vector<std::vector<int>>& secondary_preferences, const std::vector<std::vector<int>>& primary_preferences) {
     int num_elements = secondary_preferences.size();
     std::vector<int> matches(num_elements, -1);
