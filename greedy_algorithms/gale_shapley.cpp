@@ -29,6 +29,17 @@ namespace greedy_algorithms {
  * @namespace
  * @brief Functions for the Gale-Shapley Algorithm
  */
+
+/**
+ * @brief The main function that finds the stable matching between two sets of elements 
+ * using the Gale-Shapley Algorithm.
+ * @note This doesn't work on negative preferences. the preferences should be continuous integers starting from 
+ * 0 to number of preferences - 1.
+ * @param primary_preferences the preferences of the primary set should be a 2D vector
+ * @param secondary_preferences the preferences of the secondary set should be a 2D vector
+ * @returns matches the stable matching between the two sets
+ */
+
 namespace stable_matching {
 std::vector<int> gale_shapley(const std::vector<std::vector<int>>& secondary_preferences, const std::vector<std::vector<int>>& primary_preferences) {
     int num_elements = secondary_preferences.size();
@@ -84,7 +95,10 @@ std::vector<int> gale_shapley(const std::vector<std::vector<int>>& secondary_pre
 }  // namespace stable_matching
 }  // namespace greedy_algorithms
 
-
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
 static void tests() {
     // Test Case 1
     std::vector<std::vector<int>> primary_preferences = {{0, 1, 2, 3}, {2, 1, 3, 0}, {1, 2, 0, 3}, {3, 0, 1, 2}};
