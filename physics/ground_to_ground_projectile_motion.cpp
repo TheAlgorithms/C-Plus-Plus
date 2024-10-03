@@ -31,8 +31,8 @@ namespace ground_to_ground_projectile_motion {
  * @returns Angle in degrees
  */
 
-double degrees_to_radians(double degree){
-    double radians = degree * (M_PI / 180);
+double degrees_to_radians(double degrees){
+    double radians = degrees * (M_PI / 180);
     return radians;
 }
 
