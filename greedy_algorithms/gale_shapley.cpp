@@ -29,7 +29,7 @@ namespace greedy_algorithms {
  * @namespace
  * @brief Functions for the Gale-Shapley Algorithm
  */
-
+namespace stable_matching {
 /**
  * @brief The main function that finds the stable matching between two sets of elements 
  * using the Gale-Shapley Algorithm.
@@ -39,8 +39,6 @@ namespace greedy_algorithms {
  * @param secondary_preferences the preferences of the secondary set should be a 2D vector
  * @returns matches the stable matching between the two sets
  */
-
-namespace stable_matching {
 std::vector<unsigned int> gale_shapley(const std::vector<std::vector<unsigned int>>& secondary_preferences, const std::vector<std::vector<unsigned int>>& primary_preferences) {
     unsigned int num_elements = secondary_preferences.size();
     std::vector<unsigned int> matches(num_elements, -1);
