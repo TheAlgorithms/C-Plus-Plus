@@ -28,7 +28,6 @@ namespace ground_to_ground_projectile_motion {
 /**
  * @brief Convert radians to degrees
  * @param radian Angle in radians
- * @param PI The definition of the constant PI
  * @returns Angle in degrees
  */
 
