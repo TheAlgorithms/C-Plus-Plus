@@ -31,9 +31,7 @@ namespace ground_to_ground_projectile_motion {
  * @param PI The definition of the constant PI
  * @returns Angle in degrees
  */
-// double degrees_to_radians(double radian, double PI = M_PI) {
-//     return (radian * (PI / 180));
-// }
+
 double degree_to_radians(double degree){
     double radians = degree * (M_PI / 180);
     return radians;
