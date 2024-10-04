@@ -15,10 +15,10 @@
  * @author [B Karthik](https://github.com/BKarthik7)
  */
 
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <cassert>
+#include <iostream>   /// for std::u32int_t
+#include <vector>     /// for std::vector
+#include <algorithm>  /// for std::find
+#include <cassert>    /// for assert
 
 /**
  * @namespace
@@ -39,17 +39,17 @@ namespace stable_matching {
  * @param secondary_preferences the preferences of the secondary set should be a 2D vector
  * @returns matches the stable matching between the two sets
  */
-std::vector<unsigned int> gale_shapley(const std::vector<std::vector<unsigned int>>& secondary_preferences, const std::vector<std::vector<unsigned int>>& primary_preferences) {
-    unsigned int num_elements = secondary_preferences.size();
-    std::vector<unsigned int> matches(num_elements, -1);
+std::vector<std::uint32_t> gale_shapley(const std::vector<std::vector<std::uint32_t>>& secondary_preferences, const std::vector<std::vector<std::uint32_t>>& primary_preferences) {
+    std::uint32_t num_elements = secondary_preferences.size();
+    std::vector<std::uint32_t> matches(num_elements, -1);
     std::vector<bool> is_free_primary(num_elements, true);
-    std::vector<unsigned int> proposal_index(num_elements, 0); // Tracks the next secondary to propose for each primary
+    std::vector<std::uint32_t> proposal_index(num_elements, 0); // Tracks the next secondary to propose for each primary
 
     while (true) {
         int free_primary_index = -1;
 
         // Find the next free primary
-        for (unsigned int i = 0; i < num_elements; i++) {
+        for (std::uint32_t i = 0; i < num_elements; i++) {
             if (is_free_primary[i]) {
                 free_primary_index = i;
                 break;
@@ -60,11 +60,11 @@ std::vector<unsigned int> gale_shapley(const std::vector<std::vector<unsigned in
         if (free_primary_index == -1) break;
 
         // Get the next secondary to propose
-        unsigned int secondary_to_propose = primary_preferences[free_primary_index][proposal_index[free_primary_index]];
+        std::uint32_t secondary_to_propose = primary_preferences[free_primary_index][proposal_index[free_primary_index]];
         proposal_index[free_primary_index]++;
 
         // Get the current match of the secondary
-        unsigned int current_match = matches[secondary_to_propose];
+        std::uint32_t current_match = matches[secondary_to_propose];
 
         // If the secondary is free, match them
         if (current_match == -1) {
@@ -99,24 +99,24 @@ std::vector<unsigned int> gale_shapley(const std::vector<std::vector<unsigned in
  */
 static void tests() {
     // Test Case 1
-    std::vector<std::vector<unsigned int>> primary_preferences = {{0, 1, 2, 3}, {2, 1, 3, 0}, {1, 2, 0, 3}, {3, 0, 1, 2}};
-    std::vector<std::vector<unsigned int>> secondary_preferences = {{1, 0, 2, 3}, {3, 0, 1, 2}, {0, 2, 1, 3}, {1, 2, 0, 3}};
-    assert(greedy_algorithms::stable_matching::gale_shapley(secondary_preferences, primary_preferences) == std::vector<unsigned int>({0, 2, 1, 3}));
+    std::vector<std::vector<std::uint32_t>> primary_preferences = {{0, 1, 2, 3}, {2, 1, 3, 0}, {1, 2, 0, 3}, {3, 0, 1, 2}};
+    std::vector<std::vector<std::uint32_t>> secondary_preferences = {{1, 0, 2, 3}, {3, 0, 1, 2}, {0, 2, 1, 3}, {1, 2, 0, 3}};
+    assert(greedy_algorithms::stable_matching::gale_shapley(secondary_preferences, primary_preferences) == std::vector<std::uint32_t>({0, 2, 1, 3}));
 
     // Test Case 2
     primary_preferences = {{0, 2, 1, 3}, {2, 3, 0, 1}, {3, 1, 2, 0}, {2, 1, 0, 3}};
     secondary_preferences = {{1, 0, 2, 3}, {3, 0, 1, 2}, {0, 2, 1, 3}, {1, 2, 0, 3}};
-    assert(greedy_algorithms::stable_matching::gale_shapley(secondary_preferences, primary_preferences) == std::vector<unsigned int>({0, 3, 1, 2}));
+    assert(greedy_algorithms::stable_matching::gale_shapley(secondary_preferences, primary_preferences) == std::vector<std::uint32_t>({0, 3, 1, 2}));
 
     // Test Case 3
     primary_preferences = {{0, 1, 2}, {2, 1, 0}, {1, 2, 0}};
     secondary_preferences = {{1, 0, 2}, {2, 0, 1}, {0, 2, 1}};
-    assert(greedy_algorithms::stable_matching::gale_shapley(secondary_preferences, primary_preferences) == std::vector<unsigned int>({0, 2, 1}));
+    assert(greedy_algorithms::stable_matching::gale_shapley(secondary_preferences, primary_preferences) == std::vector<std::uint32_t>({0, 2, 1}));
 
     // Test Case 4
     primary_preferences = {};
     secondary_preferences = {};
-    assert(greedy_algorithms::stable_matching::gale_shapley(secondary_preferences, primary_preferences) == std::vector<unsigned int>({}));
+    assert(greedy_algorithms::stable_matching::gale_shapley(secondary_preferences, primary_preferences) == std::vector<std::uint32_t>({}));
 }
 
 /**
