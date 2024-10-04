@@ -1,6 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+/**
+ * @file
+ * @brief Implementation of Iterative deepening Search algorithm
+ * @author [Sushant Kogurwar](https://github.com/sushskvnitn)
+ */
 #define N 3 // Define the size of the tile puzzle (3x3)
 
 /**
@@ -48,8 +52,30 @@ public:
 
 /**
  * @class Solve8TilePuzzle
- * @brief Solves the 8-tile puzzle using iterative deepening search.
+ * @brief A class to solve the 8-tile puzzle using Iterative Deepening Search (IDS).
+ *
+ * @details
+ * This class implements a solution for the 8-tile puzzle, where the goal is to
+ * rearrange the tiles from a given initial state to a specified goal state.
+ * The algorithm uses Iterative Deepening Search, which combines the benefits of
+ * depth-first search (space efficiency) and breadth-first search (completeness).
+ *
+ * The initial state of the puzzle is provided by the user, and the algorithm
+ * checks if the puzzle is solvable based on the number of inversions in the array.
+ * If the puzzle is solvable, it attempts to find the solution using a depth-limited
+ * search approach, increasing the depth limit iteratively until a solution is found
+ * or it is confirmed that no solution exists.
+ *
+ * The implementation ensures that:
+ * - The space complexity is efficient, as it avoids storing large states in memory.
+ * - The time complexity is less than O(n^2) due to the iterative deepening approach.
+ * - The original array remains unmodified throughout the process.
+ *
+ * If the puzzle is not solvable, the algorithm returns a message indicating this.
+ * 
+ * @note The blank tile is represented by 0 in the puzzle.
  */
+
 class Solve8TilePuzzle {
 public:
     vector<vector<int>> initialState, goalState; ///< Initial and goal states
