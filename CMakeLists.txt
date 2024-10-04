@@ -9,13 +9,12 @@ project(Algorithms_in_C++
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-
 # Additional warnings and errors
-set(EXTRA_COMPILE_FLAGS_CXX "-Wno-register -Werror=vla")
-
 if(MSVC)
     add_compile_definitions(_CRT_SECURE_NO_WARNINGS)
-endif(MSVC)
+else()
+    set(EXTRA_COMPILE_FLAGS_CXX "-Wno-register -Werror=vla")
+endif()
 
 option(USE_OPENMP "flag to use OpenMP for multithreading" ON)
 if(USE_OPENMP)
