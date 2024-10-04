@@ -12,7 +12,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Additional warnings and errors
 if(MSVC)
     add_compile_definitions(_CRT_SECURE_NO_WARNINGS)
-    add_compile_options(/W4)
+    add_compile_options(/W4 /permissive-)
 else()
     add_compile_options(-Wall -Wextra -Wno-register -Werror=vla)
 endif()
