@@ -6,8 +6,7 @@ using namespace std;
 // Function to find the Minimum number of coins required to get Sum S
 int findMinCoins(int arr[], int n, int N) {
     // dp[i] = no of coins required to get a total of i
-    std::vector<int> dp;
-    dp.reserve(N + 1);
+    std::vector<int> dp(N + 1);
 
     // 0 coins are needed for 0 sum
 
