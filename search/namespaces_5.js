@@ -7,7 +7,8 @@ var searchData=
   ['gram_5fschmidt_4',['gram_schmidt',['../d4/d0f/namespacegram__schmidt.html',1,'']]],
   ['graph_5',['graph',['../df/dce/namespacegraph.html',1,'']]],
   ['graph_5fcoloring_6',['graph_coloring',['../d7/d08/namespacegraph__coloring.html',1,'']]],
-  ['greedy_5falgorithms_7',['greedy_algorithms',['../d2/d90/namespacegreedy__algorithms.html',1,'']]],
-  ['greedy_5falgorithms_3a_3adijkstra_8',['dijkstra',['../d2/d2f/namespacegreedy__algorithms_1_1dijkstra.html',1,'greedy_algorithms']]],
-  ['ground_5fto_5fground_5fprojectile_5fmotion_9',['ground_to_ground_projectile_motion',['../d0/d20/namespaceground__to__ground__projectile__motion.html',1,'']]]
+  ['gray_5fcode_7',['gray_code',['../de/d9b/namespacegray__code.html',1,'']]],
+  ['greedy_5falgorithms_8',['greedy_algorithms',['../d2/d90/namespacegreedy__algorithms.html',1,'']]],
+  ['greedy_5falgorithms_3a_3adijkstra_9',['dijkstra',['../d2/d2f/namespacegreedy__algorithms_1_1dijkstra.html',1,'greedy_algorithms']]],
+  ['ground_5fto_5fground_5fprojectile_5fmotion_10',['ground_to_ground_projectile_motion',['../d0/d20/namespaceground__to__ground__projectile__motion.html',1,'']]]
 ];
