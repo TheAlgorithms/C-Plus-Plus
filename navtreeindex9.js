@@ -63,12 +63,13 @@ var NAVTREEINDEX9 =
 "d9/d24/poisson__dist_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,19,4,1],
 "d9/d27/namespacelist__array.html":[9,0,60],
 "d9/d29/ground__to__ground__projectile__motion_8cpp.html":[11,0,18,0],
-"d9/d29/ground__to__ground__projectile__motion_8cpp.html#a10362eb607d7882bac3a0688504b00ff":[11,0,18,0,1],
-"d9/d29/ground__to__ground__projectile__motion_8cpp.html#a563e066975fed1b84750a0a47c3cbb37":[11,0,18,0,5],
-"d9/d29/ground__to__ground__projectile__motion_8cpp.html#aa554429def63077ab7a550c0affbfefa":[11,0,18,0,3],
-"d9/d29/ground__to__ground__projectile__motion_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,18,0,4],
-"d9/d29/ground__to__ground__projectile__motion_8cpp.html#aba1d26faf6a5379c28cae458956241de":[11,0,18,0,0],
-"d9/d29/ground__to__ground__projectile__motion_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,18,0,2],
+"d9/d29/ground__to__ground__projectile__motion_8cpp.html#a10362eb607d7882bac3a0688504b00ff":[11,0,18,0,2],
+"d9/d29/ground__to__ground__projectile__motion_8cpp.html#a525335710b53cb064ca56b936120431e":[11,0,18,0,0],
+"d9/d29/ground__to__ground__projectile__motion_8cpp.html#a563e066975fed1b84750a0a47c3cbb37":[11,0,18,0,6],
+"d9/d29/ground__to__ground__projectile__motion_8cpp.html#aa554429def63077ab7a550c0affbfefa":[11,0,18,0,4],
+"d9/d29/ground__to__ground__projectile__motion_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,18,0,5],
+"d9/d29/ground__to__ground__projectile__motion_8cpp.html#ab00e9785fb2670f7af99d6f3d636f87c":[11,0,18,0,1],
+"d9/d29/ground__to__ground__projectile__motion_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,18,0,3],
 "d9/d31/coin__change__topdown_8cpp.html":[11,0,6,4],
 "d9/d31/coin__change__topdown_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,6,4,2],
 "d9/d31/coin__change__topdown_8cpp.html#ac816a4ae8a29c156b90377041000929a":[11,0,6,4,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "da/d23/eulers__totient__function_8cpp.html#ac37d3ba52eb296597d7a024ba8c4a5a5":[11,0,14,11,1],
 "da/d24/sqrt__double_8cpp.html":[11,0,14,52],
 "da/d24/sqrt__double_8cpp.html#ae662282ad0740d2063ac404ca3bd74fc":[11,0,14,52,1],
-"da/d24/sqrt__double_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,52,0],
-"da/d37/structdata__structures_1_1sparse__table_1_1_sparse__table.html":[10,0,2,3,0]
+"da/d24/sqrt__double_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,52,0]
 };

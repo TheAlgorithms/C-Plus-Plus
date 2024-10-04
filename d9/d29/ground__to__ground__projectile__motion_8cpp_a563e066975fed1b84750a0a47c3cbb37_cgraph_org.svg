@@ -31,7 +31,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../d9/d29/ground__to__ground__projectile__motion_8cpp.html#aba1d26faf6a5379c28cae458956241de" target="_top" xlink:title="Convert radians to degrees.">
+<g id="a_Node000002"><a xlink:href="../../d9/d29/ground__to__ground__projectile__motion_8cpp.html#ab00e9785fb2670f7af99d6f3d636f87c" target="_top" xlink:title="Convert radians to degrees.">
 <polygon fill="white" stroke="#666666" points="294.5,-79.5 165.25,-79.5 165.25,-37.75 294.5,-37.75 294.5,-79.5"/>
 <text text-anchor="start" x="173.25" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">physics::ground_to</text>
 <text text-anchor="start" x="173.25" y="-54.75" font-family="Helvetica,sans-Serif" font-size="10.00">_ground_projectile_motion</text>

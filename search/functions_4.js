@@ -14,7 +14,7 @@ var searchData=
   ['default_5fdelete_11',['default_delete',['http://en.cppreference.com/w/cpp/memory/default_delete.html',0,'std::default_delete']]],
   ['default_5ferror_5fcondition_12',['default_error_condition',['http://en.cppreference.com/w/cpp/error/error_code/default_error_condition.html',0,'std::error_code::default_error_condition()'],['http://en.cppreference.com/w/cpp/error/error_category/default_error_condition.html',0,'std::error_category::default_error_condition()']]],
   ['defaultfloat_13',['defaultfloat',['http://en.cppreference.com/w/cpp/io/manip/fixed.html',0,'std']]],
-  ['degrees_5fto_5fradians_14',['degrees_to_radians',['../d9/d29/ground__to__ground__projectile__motion_8cpp.html#aba1d26faf6a5379c28cae458956241de',1,'physics::ground_to_ground_projectile_motion']]],
+  ['degrees_5fto_5fradians_14',['degrees_to_radians',['../d9/d29/ground__to__ground__projectile__motion_8cpp.html#ab00e9785fb2670f7af99d6f3d636f87c',1,'physics::ground_to_ground_projectile_motion']]],
   ['delete_15',['Delete',['../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html#aefd24626ac47277431c9b8604e064340',1,'operations_on_datastructures::trie_operations::Tnode']]],
   ['delete_5fall_5fnodes_16',['delete_all_nodes',['../d1/def/classdata__structures_1_1linked__list_1_1list.html#ac614ed8f1953f5486fab1cd6d7aa0500',1,'data_structures::linked_list::list']]],
   ['delete_5fword_17',['delete_word',['../d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#ac0bf3d6791cba144b3f539835d835e75',1,'data_structures::trie_using_hashmap::Trie']]],

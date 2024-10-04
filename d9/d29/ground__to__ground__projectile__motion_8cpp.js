@@ -1,6 +1,7 @@
 var ground__to__ground__projectile__motion_8cpp =
 [
-    [ "degrees_to_radians", "d9/d29/ground__to__ground__projectile__motion_8cpp.html#aba1d26faf6a5379c28cae458956241de", null ],
+    [ "_USE_MATH_DEFINES", "d9/d29/ground__to__ground__projectile__motion_8cpp.html#a525335710b53cb064ca56b936120431e", null ],
+    [ "degrees_to_radians", "d9/d29/ground__to__ground__projectile__motion_8cpp.html#ab00e9785fb2670f7af99d6f3d636f87c", null ],
     [ "horizontal_range", "d9/d29/ground__to__ground__projectile__motion_8cpp.html#a10362eb607d7882bac3a0688504b00ff", null ],
     [ "main", "d9/d29/ground__to__ground__projectile__motion_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ],
     [ "max_height", "d9/d29/ground__to__ground__projectile__motion_8cpp.html#aa554429def63077ab7a550c0affbfefa", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"dd/dae/namespacecount__of__set__bits.html":[9,0,15],
 "dd/db0/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plus-_plus_2sorting_2wiggle_sort_8cpp-example.html":[12,4],
 "dd/db6/structbinary__search__tree_1_1bst__node.html":[10,0,21,0],
 "dd/db6/structbinary__search__tree_1_1bst__node.html#a05f3a7aa6c31622f855ce4b5a95e91df":[10,0,21,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "df/d47/stack_8hpp.html":[11,0,4,20],
 "df/d47/stack_8hpp_source.html":[11,0,4,20],
 "df/d4a/namespaceselection__sort__recursive.html":[9,0,102],
-"df/d66/vector__cross__product_8cpp.html":[11,0,14,56],
-"df/d66/vector__cross__product_8cpp.html#a225732399c5c076976eae5b180a9f8c9":[11,0,14,56,0]
+"df/d66/vector__cross__product_8cpp.html":[11,0,14,56]
 };
