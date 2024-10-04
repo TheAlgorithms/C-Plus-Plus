@@ -1,6 +1,6 @@
 #include <climits>
+#include <cstddef>
 #include <iostream>
-#include <string>
 #include <vector>
 
 using std::cin;
@@ -55,7 +55,7 @@ void print(const std::vector<int> dist, int V) {
 // The main function that finds the shortest path from a vertex
 // to all other vertices using Floyd-Warshall Algorithm.
 void FloydWarshall(Graph graph) {
-    int V = graph.vertexNum;
+    std::size_t V = graph.vertexNum;
     std::vector<std::vector<int> > dist(V, std::vector<int>(V));
 
     // Initialise distance array
