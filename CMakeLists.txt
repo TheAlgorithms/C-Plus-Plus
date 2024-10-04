@@ -12,9 +12,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Additional warnings and errors
 if(MSVC)
     add_compile_definitions(_CRT_SECURE_NO_WARNINGS)
-    set(EXTRA_COMPILE_FLAGS_CXX "/W4")
+    add_compile_options("/W4")
 else()
-    set(EXTRA_COMPILE_FLAGS_CXX "-Wall -Wextra -Wno-register -Werror=vla")
+    add_compile_options("-Wall -Wextra -Wno-register -Werror=vla")
 endif()
 
 option(USE_OPENMP "flag to use OpenMP for multithreading" ON)
