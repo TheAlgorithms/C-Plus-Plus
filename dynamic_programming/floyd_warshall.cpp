@@ -25,7 +25,9 @@ class Graph {
     }
 
     ~Graph() {
-        for (int i = 0; i < vertexNum; i++) delete[] edges[i];
+        for (int i = 0; i < vertexNum; i++) {
+            delete[] edges[i];
+        }
         delete[] edges;
     }
 
@@ -36,7 +38,7 @@ class Graph {
 };
 
 // Utility function to print distances
-void print(int dist[], int V) {
+void print(const std::vector<int> dist, int V) {
     cout << "\nThe Distance matrix for Floyd - Warshall" << endl;
     for (int i = 0; i < V; i++) {
         for (int j = 0; j < V; j++) {
@@ -77,7 +79,7 @@ void FloydWarshall(Graph graph) {
                     dist[i][j] = dist[i][k] + dist[k][j];
 
     // Convert 2d array to 1d array for print
-    int dist1d[V * V];
+    std::vector<int> dist1d(V * V);
     for (int i = 0; i < V; i++)
         for (int j = 0; j < V; j++) dist1d[i * V + j] = dist[i][j];
 
