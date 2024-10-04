@@ -7,7 +7,7 @@
 #include <vector>
 
 using namespace std;
-int LIS(int arr[], int n) {
+int LIS(const std::vector<int>& arr, int n) {
     set<int> active;  // The current built LIS.
     active.insert(arr[0]);
     // Loop through every element.
