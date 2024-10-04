@@ -5,11 +5,11 @@
 #include <climits>
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
 int eggDrop(int n, int k) {
-    std::vector<std::vector<int> > eggFloor;
-    eggFloor.reserve(n + 1);
+    std::vector<std::vector<int> > eggFloor(n + 1, std::vector<int>(k + 1));
 
     int result;
 
