@@ -15,15 +15,24 @@
 #include <vector>  /// for vector data structure
 
 /**
+ * @namespace bit_manipulation
+ * @brief Bit manipulation algorithms
+ */
+namespace bit_manipulation {
+/**
+ * @namespace gray_code
  * @brief Generate n-bit Gray code
+ */
+namespace gray_code {
+/**
+ * @brief The main function to generate n-bit Gray code
  *
  * @param n Number of bits
  * @return A vector that stores the n-bit Gray code
  */
-
 std::vector<std::bitset<32>> gray_code_generation(int n) {
     std::vector<std::bitset<32>> gray_code = {};  // Initialise empty vector
-    
+
     // No Gray codes for non-positive values of n
     if (n <= 0) {
         return gray_code;
@@ -37,15 +46,18 @@ std::vector<std::bitset<32>> gray_code_generation(int n) {
     }
 
     return gray_code;
-}
+} 
+}  // namespace gray_code
+}  // namespace bit_manipulation
 
 /**
  * @brief Self-test implementation
  *
  * @returns void
  */
-
 static void test() { 
+    std::vector<std::bitset<32>> gray_code_negative_1 = {};
+
     std::vector<std::bitset<32>> gray_code_0 = {};
 
     std::vector<std::bitset<32>> gray_code_1 = {
@@ -79,12 +91,16 @@ static void test() {
         std::bitset<32>(18), std::bitset<32>(19), std::bitset<32>(17), std::bitset<32>(16)
     };
 
-    assert(gray_code_generation(0) == gray_code_0);
-    assert(gray_code_generation(1) == gray_code_1);
-    assert(gray_code_generation(2) == gray_code_2);
-    assert(gray_code_generation(3) == gray_code_3);
-    assert(gray_code_generation(4) == gray_code_4);
-    assert(gray_code_generation(5) == gray_code_5);
+    // invalid values for n
+    assert(bit_manipulation::gray_code::gray_code_generation(-1) == gray_code_negative_1);
+    assert(bit_manipulation::gray_code::gray_code_generation(0) == gray_code_0);
+
+    // valid values for n
+    assert(bit_manipulation::gray_code::gray_code_generation(1) == gray_code_1);
+    assert(bit_manipulation::gray_code::gray_code_generation(2) == gray_code_2);
+    assert(bit_manipulation::gray_code::gray_code_generation(3) == gray_code_3);
+    assert(bit_manipulation::gray_code::gray_code_generation(4) == gray_code_4);
+    assert(bit_manipulation::gray_code::gray_code_generation(5) == gray_code_5);
 }
 
 /**
