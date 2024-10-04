@@ -19,9 +19,15 @@
  * @author [Karan Sharma](https://github.com/deDSeC00720)
  */
 
-#include <iostream>
-#include <unordered_map>
+#include <cassert>        // for assert
+#include <iostream>       // for IO operations
+#include <unordered_map>  // for hash map
 
+/**
+ * @namespace
+ * @brief Other algorithms
+ */
+namespace others {
 namespace Cache {
 
 template <typename T>
@@ -31,7 +37,7 @@ class D_Node {
     D_Node<T> *prev;
     D_Node<T> *next;
 
-    D_Node(T data) : data(data), prev(nullptr), next(nullptr) {}
+    explicit D_Node(T data) : data(data), prev(nullptr), next(nullptr) {}
 };
 
 template <typename K, typename V>
@@ -65,8 +71,9 @@ class LFUCache {
     void push(int freq, CacheNode<K, V> *node) {
         // if freq is not present, then make a new list with node as the head as
         // well as tail.
-        if (!freq_map.count(key)) {
+        if (!freq_map.count(freq)) {
             freq_map[freq] = {node, node};
+            return;
         }
 
         std::pair<CacheNode<K, V> *, CacheNode<K, V> *> &p = freq_map[freq];
@@ -116,7 +123,7 @@ class LFUCache {
             }
         }
         push(freq + 1, node);
-        p_node.second++;
+        ++p_node.second;
     }
 
     /**
@@ -177,7 +184,7 @@ class LFUCache {
      */
     V get(K key) {
         if (!node_map.count(key)) {
-            throw std::exception("key is not present in the cache");
+            throw std::runtime_error("key is not present in the cache");
         }
 
         // increase the frequency and return the value
@@ -190,19 +197,19 @@ class LFUCache {
      * @brief Returns the number of items present in the cache.
      * @return number of items in the cache
      */
-    int size() { return node_map.size(); }
+    int size() const { return node_map.size(); }
 
     /**
      * @brief Returns the total capacity of the cache
      * @return Total capacity of the cache
      */
-    int capacity() { return _capacity; }
+    int capacity() const { return _capacity; }
 
     /**
      * @brief returns true if the cache is empty, false otherwise.
      * @return true if the cache is empty, false otherwise.
      */
-    bool empty() { return node_map.size() == 0; }
+    bool empty() const { return node_map.empty(); }
 
     /**
      * @brief destructs the cache, iterates on the map and deletes every node
@@ -212,8 +219,80 @@ class LFUCache {
         auto it = node_map.begin();
         while (it != node_map.end()) {
             delete it->second.first;
-            it++;
+            ++it;
         }
     }
 };
 }  // namespace Cache
+}  // namespace others
+
+/**
+ * @brief A simple test case
+ * @return void
+ */
+void test1() {
+    others::Cache::LFUCache<int, int> cache(5);
+    assert(cache.size() == 0);
+    assert(cache.capacity() == 5);
+    assert(cache.empty());
+    cache.put(1, 10);
+    cache.put(2, 20);
+
+    assert(cache.size() == 2);
+    assert(cache.capacity() == 5);
+    assert(!cache.empty());
+
+    cache.put(3, 30);
+    cache.put(4, 40);
+    cache.put(5, 50);
+    cache.put(6, 60);
+
+    assert(cache.size() == 5);
+    assert(cache.capacity() == 5);
+    assert(!cache.empty());
+
+    std::cout << "test1 - passed\n";
+}
+
+/**
+ * @brief A simple test case
+ * @return void
+ */
+void test2() {
+    others::Cache::LFUCache<int, int> cache(5);
+    cache.put(1, 10);
+    cache.put(2, 20);
+    cache.put(3, 30);
+
+    assert(cache.get(1) == 10);
+    cache.get(2);
+    cache.get(3);
+
+    cache.put(4, 40);
+    cache.put(5, 50);
+    cache.put(6, 60);
+
+    assert(cache.get(5) == 50);
+
+    std::cout << "test2 - passed\n";
+}
+
+/**
+ * @brief test method with 2 tests
+ * @return void
+ */
+
+void test() {
+    test1();
+    test2();
+}
+
+/**
+ * @brief main function
+ * @return 0 on exit
+ */
+
+int main() {
+    test();
+    return 0;
+}
