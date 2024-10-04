@@ -1,0 +1,9 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,20,55,46"/>
+<area shape="rect" id="Node000002" href="$db/d80/gale__shapley_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e" title="Self&#45;test implementations." alt="" coords="103,20,153,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,30,88,30,88,36,55,36"/>
+<area shape="rect" id="Node000003" href="$dd/d9a/namespacegreedy__algorithms_1_1stable__matching.html#a6d7e84df47dcf19e88f95f8f9040306c" title="The main function that finds the stable matching between two sets of elements using the Gale&#45;Shapley ..." alt="" coords="201,5,349,61"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="153,30,185,30,185,36,153,36"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/find.html#" title=" " alt="" coords="397,20,466,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="350,30,382,30,382,36,350,36"/>
+</map>

@@ -1,5 +1,9 @@
 var NAVTREEINDEX12 =
 {
+"dc/dd4/classdata__structures_1_1_bloom_filter.html#a65ca6742d3be88d4aca4f080068a7a80":[10,0,2,9,3],
+"dc/dd4/classdata__structures_1_1_bloom_filter.html#a67bed8ef62fcb1f33b6c72df47dcf840":[9,0,20,2,1],
+"dc/dd4/classdata__structures_1_1_bloom_filter.html#a67bed8ef62fcb1f33b6c72df47dcf840":[10,0,2,9,1],
+"dc/dd4/classdata__structures_1_1_bloom_filter.html#a6910d29951b57ab56e7a3db405aa1f1a":[9,0,20,2,0],
 "dc/dd4/classdata__structures_1_1_bloom_filter.html#a6910d29951b57ab56e7a3db405aa1f1a":[10,0,2,9,0],
 "dc/dd4/classdata__structures_1_1_bloom_filter.html#a90268d7901e2c1ab5f8bf8b24a30e119":[9,0,20,2,4],
 "dc/dd4/classdata__structures_1_1_bloom_filter.html#a90268d7901e2c1ab5f8bf8b24a30e119":[10,0,2,9,4],
@@ -217,6 +221,8 @@ var NAVTREEINDEX12 =
 "dd/d95/classdata__structures_1_1_segment_tree.html#a8fecc48e8e3f6f5f6e728495a4282e52":[10,0,2,11,2],
 "dd/d95/classdata__structures_1_1_segment_tree.html#ad0e78179ab979ae2bc4304bdc181db17":[9,0,20,4,5],
 "dd/d95/classdata__structures_1_1_segment_tree.html#ad0e78179ab979ae2bc4304bdc181db17":[10,0,2,11,5],
+"dd/d9a/namespacegreedy__algorithms_1_1stable__matching.html":[9,0,38,1],
+"dd/d9a/namespacegreedy__algorithms_1_1stable__matching.html#a6d7e84df47dcf19e88f95f8f9040306c":[9,0,38,1,0],
 "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html":[10,0,10,0,1],
 "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a1802cf6197a255055cb734d626abc101":[10,0,10,0,1,14],
 "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a194c2973b51a5467fc17064a4ea4e6f9":[10,0,10,0,1,4],
@@ -243,11 +249,5 @@ var NAVTREEINDEX12 =
 "dd/da8/pigeonhole__sort_8cpp.html#a458410412185a5f09199deaff7157a8d":[11,0,22,14,3],
 "dd/da8/pigeonhole__sort_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,22,14,0],
 "dd/da8/pigeonhole__sort_8cpp.html#af31ec5409537703d9c8a47350386b32a":[11,0,22,14,4],
-"dd/dae/namespacecount__of__set__bits.html":[9,0,15],
-"dd/db0/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plus-_plus_2sorting_2wiggle_sort_8cpp-example.html":[12,4],
-"dd/db6/structbinary__search__tree_1_1bst__node.html":[10,0,21,0],
-"dd/db6/structbinary__search__tree_1_1bst__node.html#a05f3a7aa6c31622f855ce4b5a95e91df":[10,0,21,0,2],
-"dd/db6/structbinary__search__tree_1_1bst__node.html#a09da9e5b801ede4764bc812975ff7f29":[10,0,21,0,3],
-"dd/db6/structbinary__search__tree_1_1bst__node.html#a51dd9bd6dd32bce3b74dd64557306778":[10,0,21,0,0],
-"dd/db6/structbinary__search__tree_1_1bst__node.html#a55c165b9e0e5b50a23104e0604dcc788":[10,0,21,0,1]
+"dd/dae/namespacecount__of__set__bits.html":[9,0,15]
 };

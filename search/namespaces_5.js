@@ -10,5 +10,6 @@ var searchData=
   ['gray_5fcode_7',['gray_code',['../de/d9b/namespacegray__code.html',1,'']]],
   ['greedy_5falgorithms_8',['greedy_algorithms',['../d2/d90/namespacegreedy__algorithms.html',1,'']]],
   ['greedy_5falgorithms_3a_3adijkstra_9',['dijkstra',['../d2/d2f/namespacegreedy__algorithms_1_1dijkstra.html',1,'greedy_algorithms']]],
-  ['ground_5fto_5fground_5fprojectile_5fmotion_10',['ground_to_ground_projectile_motion',['../d0/d20/namespaceground__to__ground__projectile__motion.html',1,'']]]
+  ['greedy_5falgorithms_3a_3astable_5fmatching_10',['stable_matching',['../dd/d9a/namespacegreedy__algorithms_1_1stable__matching.html',1,'greedy_algorithms']]],
+  ['ground_5fto_5fground_5fprojectile_5fmotion_11',['ground_to_ground_projectile_motion',['../d0/d20/namespaceground__to__ground__projectile__motion.html',1,'']]]
 ];

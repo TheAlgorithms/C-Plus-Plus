@@ -1,5 +1,11 @@
 var NAVTREEINDEX13 =
 {
+"dd/db0/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plus-_plus_2sorting_2wiggle_sort_8cpp-example.html":[12,4],
+"dd/db6/structbinary__search__tree_1_1bst__node.html":[10,0,21,0],
+"dd/db6/structbinary__search__tree_1_1bst__node.html#a05f3a7aa6c31622f855ce4b5a95e91df":[10,0,21,0,2],
+"dd/db6/structbinary__search__tree_1_1bst__node.html#a09da9e5b801ede4764bc812975ff7f29":[10,0,21,0,3],
+"dd/db6/structbinary__search__tree_1_1bst__node.html#a51dd9bd6dd32bce3b74dd64557306778":[10,0,21,0,0],
+"dd/db6/structbinary__search__tree_1_1bst__node.html#a55c165b9e0e5b50a23104e0604dcc788":[10,0,21,0,1],
 "dd/dba/namespacedivide__and__conquer.html":[9,0,23],
 "dd/dca/class_f_c_f_s.html":[10,0,33],
 "dd/dca/class_f_c_f_s.html#a8fbfe4d85f7576b4a7aade07d29fbd69":[10,0,33,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX13 =
 "df/d47/stack_8hpp_source.html":[11,0,4,20],
 "df/d4a/namespaceselection__sort__recursive.html":[9,0,102],
 "df/d66/vector__cross__product_8cpp.html":[11,0,14,56],
-"df/d66/vector__cross__product_8cpp.html#a225732399c5c076976eae5b180a9f8c9":[11,0,14,56,0],
-"df/d66/vector__cross__product_8cpp.html#a4b2a9757a87c18e1642d72410ecfaba8":[11,0,14,56,1],
-"df/d66/vector__cross__product_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,14,56,3],
-"df/d66/vector__cross__product_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,56,2],
-"df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html":[9,0,12,0],
-"df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#a17f3d667241b88115a95282cdd719cb2":[9,0,12,0,4],
-"df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#ac00616a4e40d3cd5cfb4da87d9ff9af0":[9,0,12,0,3]
+"df/d66/vector__cross__product_8cpp.html#a225732399c5c076976eae5b180a9f8c9":[11,0,14,56,0]
 };
