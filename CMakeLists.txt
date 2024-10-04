@@ -5,14 +5,15 @@ project(Algorithms_in_C++
     DESCRIPTION "Set of algorithms implemented in C++."
 )
 
-# set(CMAKE_CXX_CPPLINT "~/anaconda3/bin/cpplint --filter=-legal/copyright --std=c++11")
-# find_program(CLANG_FORMAT "clang-format")
-
+# C++ standard
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+
+# Additional warnings and errors
+set(EXTRA_COMPILE_FLAGS_CXX "-Wno-register -Werror=vla")
+
 if(MSVC)
-    # set(CMAKE_CXX_STANDARD 14)
     add_compile_definitions(_CRT_SECURE_NO_WARNINGS)
 endif(MSVC)
 
