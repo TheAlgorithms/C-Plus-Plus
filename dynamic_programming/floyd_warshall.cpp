@@ -1,6 +1,7 @@
 #include <climits>
 #include <iostream>
 #include <string>
+#include <vector>
 
 using std::cin;
 using std::cout;
@@ -53,7 +54,7 @@ void print(int dist[], int V) {
 // to all other vertices using Floyd-Warshall Algorithm.
 void FloydWarshall(Graph graph) {
     int V = graph.vertexNum;
-    int dist[V][V];
+    std::vector<std::vector<int> > dist(V, std::vector<int>(V));
 
     // Initialise distance array
     for (int i = 0; i < V; i++)
