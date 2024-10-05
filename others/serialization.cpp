@@ -1,7 +1,9 @@
-#include <fstream>
-#include <iostream>
-#include <string>
-#include <cassert> 
+#include <cassert>      // for assert
+#include <cstdint>      // for std::uint32_t
+#include <fstream>      // for std::ifstream std::ofstream
+#include <iostream>     // for std::ios std::cout std::cerr
+#include <string>       // for std::string
+#include <type_traits>  // for std::is_fundamental
 
 /**
  * @file
