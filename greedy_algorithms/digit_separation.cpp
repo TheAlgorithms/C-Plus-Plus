@@ -1,9 +1,24 @@
-#include <algorithm>
-#include <cmath>
-#include <iostream>
-#include <vector>
-#include <cassert>
+/**
+ * @file digit_separation.cpp
+ * @brief This file contains the DigitSeparation class for separating digits of large numbers.
+ * https://www.log2base2.com/c-examples/loop/split-a-number-into-digits-in-c.html
+ * @details
+ * @author [Muhammad Junaid Khalid](https://github.com/mjk22071998)
+ * @see related_file.cpp, another_file.cpp
+ */
 
+#include <algorithm>    /// For reveresing the vector
+#include <cmath>        /// For abs() function
+#include <iostream>     /// For input/output operations
+#include <vector>       /// For std::vector to store separated digits
+#include <cassert>      /// For assert() function to check for errors
+#include <cstdint>      /// For int64_t data type to handle large numbers
+
+
+/**
+ * @namespace
+ * @brief Greedy Algorithms
+ */
 namespace greedy_algorithms{
 
 /**
@@ -24,8 +39,8 @@ namespace greedy_algorithms{
          * @param largeNumber The large number to separate digits from.
          * @return A vector of digits in reverse order.
          */
-        std::vector<long long> digitSeparationReverseOrder(
-            long long largeNumber) const;
+        std::vector<std::int64_t> digitSeparationReverseOrder(
+            std::int64_t largeNumber) const;
 
         /**
          * @brief Separates the digits of a large positive number into a vector in
@@ -34,8 +49,8 @@ namespace greedy_algorithms{
          * @param largeNumber The large number to separate digits from.
          * @return A vector of digits in forward order.
          */
-        std::vector<long long> digitSeparationForwardOrder(
-            long long largeNumber) const;
+        std::vector<std::int64_t> digitSeparationForwardOrder(
+            std::int64_t largeNumber) const;
     };
 
     /**
@@ -44,9 +59,9 @@ namespace greedy_algorithms{
      * @param largeNumber The large number to separate digits from.
      * @return A vector of digits in reverse order.
      */
-    std::vector<long long> DigitSeparation::digitSeparationReverseOrder(
-        long long largeNumber) const {
-        std::vector<long long> result;
+    std::vector<std::int64_t> DigitSeparation::digitSeparationReverseOrder(
+        std::int64_t largeNumber) const {
+        std::vector<std::int64_t> result;
         if (largeNumber != 0) {
             while (largeNumber != 0) {
                 result.push_back(std::abs(largeNumber % 10));
@@ -64,9 +79,9 @@ namespace greedy_algorithms{
      * @param largeNumber The large number to separate digits from.
      * @return A vector of digits in forward order.
      */
-    std::vector<long long> DigitSeparation::digitSeparationForwardOrder(
-        long long largeNumber) const {
-        std::vector<long long> result = digitSeparationReverseOrder(largeNumber);
+    std::vector<std::int64_t> DigitSeparation::digitSeparationForwardOrder(
+        std::int64_t largeNumber) const {
+        std::vector<std::int64_t> result = digitSeparationReverseOrder(largeNumber);
         std::reverse(result.begin(), result.end());
         return result;
     }
@@ -76,16 +91,16 @@ int main() {
     greedy_algorithms::DigitSeparation ds;
 
     // Test case: Positive number
-    long long number = 1234567890;
-    std::vector<long long> expectedReverse = {0, 9, 8, 7, 6, 5, 4, 3, 2, 1};
-    std::vector<long long> expectedForward = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+    std::int64_t number = 1234567890;
+    std::vector<std::int64_t> expectedReverse = {0, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+    std::vector<std::int64_t> expectedForward = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
 
     // Testing reverse order
-    std::vector<long long> reverseOrder = ds.digitSeparationReverseOrder(number);
+    std::vector<std::int64_t> reverseOrder = ds.digitSeparationReverseOrder(number);
     assert(reverseOrder == expectedReverse);
 
     // Testing forward order
-    std::vector<long long> forwardOrder = ds.digitSeparationForwardOrder(number);
+    std::vector<std::int64_t> forwardOrder = ds.digitSeparationForwardOrder(number);
     assert(forwardOrder == expectedForward);
 
     // Test case: Single digit number
