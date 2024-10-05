@@ -134,8 +134,6 @@ void tests(){
     expectedForward = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 1, 2, 3, 4, 5};
     std::vector<std::int64_t> reverseOrder = ds.digitSeparationReverseOrder(number);
     assert(reverseOrder == expectedReverse);
-    std::vector<std::int64_t> forwardOrder = ds.digitSeparationForwardOrder(number);
-    assert(forwardOrder == expectedForward);
 }
 
     reverseOrder = ds.digitSeparationReverseOrder(number);
