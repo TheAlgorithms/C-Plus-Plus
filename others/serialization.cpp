@@ -32,7 +32,7 @@ class Serializer {
      * @param out The output stream (std::ofstream).
      * @param data The string to be serialized.
      *
-     * The string is serialized by first storing its length, followed by the
+     * @note The string is serialized by first storing its length, followed by the
      * content.
      */
     static void serialize(std::ofstream &out, const std::string &data) {
