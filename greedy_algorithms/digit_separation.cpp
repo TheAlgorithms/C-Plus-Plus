@@ -139,7 +139,7 @@ void tests(){
     reverseOrder = ds.digitSeparationReverseOrder(number);
     assert(reverseOrder == expectedReverse);
 int main() {
-    tests();
+    tests(); // run self test implementation
 
     return 0;
 }
