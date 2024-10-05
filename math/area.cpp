@@ -114,6 +114,7 @@ T cylinder_surface_area(T radius, T height) {
  * @brief surface area of a [hemi-sphere](https://en.wikipedia.org/wiki/Surface_area) ( 3 *
  * pi * r^2)
  * @param radius is the radius of the hemi-sphere
+ * @tparam T datatype of radius
  * @returns surface area of the hemi-sphere
  */
 template <typename T>
