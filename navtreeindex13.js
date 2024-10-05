@@ -1,5 +1,11 @@
 var NAVTREEINDEX13 =
 {
+"dd/da8/pigeonhole__sort_8cpp.html":[11,0,22,14],
+"dd/da8/pigeonhole__sort_8cpp.html#a0e9e1b21a1684585e9e50f9afe4d53a3":[11,0,22,14,1],
+"dd/da8/pigeonhole__sort_8cpp.html#a34b8683a2b429de5cce57e6d733ec817":[11,0,22,14,2],
+"dd/da8/pigeonhole__sort_8cpp.html#a458410412185a5f09199deaff7157a8d":[11,0,22,14,3],
+"dd/da8/pigeonhole__sort_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,22,14,0],
+"dd/da8/pigeonhole__sort_8cpp.html#af31ec5409537703d9c8a47350386b32a":[11,0,22,14,4],
 "dd/dae/namespacecount__of__set__bits.html":[9,0,15],
 "dd/db0/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plus-_plus_2sorting_2wiggle_sort_8cpp-example.html":[12,4],
 "dd/db6/structbinary__search__tree_1_1bst__node.html":[10,0,21,0],
@@ -75,10 +81,10 @@ var NAVTREEINDEX13 =
 "de/d48/struct_trie_1_1_trie_node.html":[10,0,58,0],
 "de/d4a/class_compare.html":[10,0,25],
 "de/d4a/class_compare.html#afbdf9a44adb49728dc704155d7d1570c":[10,0,25,0],
-"de/d6a/knuth__morris__pratt_8cpp.html":[11,0,23,3],
-"de/d6a/knuth__morris__pratt_8cpp.html#a1e37af2f023495129cb57338c801209e":[11,0,23,3,1],
-"de/d6a/knuth__morris__pratt_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[11,0,23,3,2],
-"de/d6a/knuth__morris__pratt_8cpp.html#a83c72ff237cdf623e42d4295e0029bf9":[11,0,23,3,0],
+"de/d6a/knuth__morris__pratt_8cpp.html":[11,0,23,4],
+"de/d6a/knuth__morris__pratt_8cpp.html#a1e37af2f023495129cb57338c801209e":[11,0,23,4,1],
+"de/d6a/knuth__morris__pratt_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[11,0,23,4,2],
+"de/d6a/knuth__morris__pratt_8cpp.html#a83c72ff237cdf623e42d4295e0029bf9":[11,0,23,4,0],
 "de/d6b/namespacerandom__pivot__quick__sort.html":[9,0,95],
 "de/d72/geometric__dist_8cpp.html":[11,0,19,3],
 "de/d72/geometric__dist_8cpp.html#a70fd1cc5c3a2813f28683dc75dcd65b6":[11,0,19,3,3],
@@ -110,7 +116,7 @@ var NAVTREEINDEX13 =
 "de/d88/travelling__salesman__problem_8cpp.html#ab7706341d006e20d1ae58274187a3346":[11,0,9,11,2],
 "de/d88/travelling__salesman__problem_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,9,11,0],
 "de/d89/graham__scan__functions_8hpp_source.html":[11,0,8,0],
-"de/d95/namespace_subsets.html":[9,0,120],
+"de/d95/namespace_subsets.html":[9,0,121],
 "de/d97/namespacestd_1_1experimental.html":[9,0,112,1],
 "de/d99/aliquot__sum_8cpp.html":[11,0,14,0],
 "de/d99/aliquot__sum_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,14,0,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX13 =
 "df/d44/namespacen__queens__all__solutions.html":[9,0,77],
 "df/d47/fcfs__scheduling_8cpp.html":[11,0,3,0],
 "df/d47/fcfs__scheduling_8cpp.html#a18920aa331faf4476b251c8cdb2c2bec":[11,0,3,0,4],
-"df/d47/fcfs__scheduling_8cpp.html#a8f2b90cb64d63a7080965e66a05ccf86":[11,0,3,0,2],
-"df/d47/fcfs__scheduling_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,3,0,5],
-"df/d47/fcfs__scheduling_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,3,0,3],
-"df/d47/stack_8hpp.html":[11,0,4,20],
-"df/d47/stack_8hpp_source.html":[11,0,4,20],
-"df/d4a/namespaceselection__sort__recursive.html":[9,0,102],
-"df/d66/vector__cross__product_8cpp.html":[11,0,14,56]
+"df/d47/fcfs__scheduling_8cpp.html#a8f2b90cb64d63a7080965e66a05ccf86":[11,0,3,0,2]
 };

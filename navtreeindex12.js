@@ -1,5 +1,11 @@
 var NAVTREEINDEX12 =
 {
+"dc/dc5/paranthesis__matching_8cpp.html#ade525d33459755a32ba21e1b6910ff21":[11,0,17,12,1],
+"dc/dc5/paranthesis__matching_8cpp.html#af4c937d823c412d99fbe60c99dbf0a4f":[11,0,17,12,5],
+"dc/dd4/classdata__structures_1_1_bloom_filter.html":[9,0,20,2],
+"dc/dd4/classdata__structures_1_1_bloom_filter.html":[10,0,2,9],
+"dc/dd4/classdata__structures_1_1_bloom_filter.html#a576db259488dbfb67624a9652a5ab08b":[9,0,20,2,2],
+"dc/dd4/classdata__structures_1_1_bloom_filter.html#a576db259488dbfb67624a9652a5ab08b":[10,0,2,9,2],
 "dc/dd4/classdata__structures_1_1_bloom_filter.html#a65ca6742d3be88d4aca4f080068a7a80":[9,0,20,2,3],
 "dc/dd4/classdata__structures_1_1_bloom_filter.html#a65ca6742d3be88d4aca4f080068a7a80":[10,0,2,9,3],
 "dc/dd4/classdata__structures_1_1_bloom_filter.html#a67bed8ef62fcb1f33b6c72df47dcf840":[9,0,20,2,1],
@@ -80,7 +86,7 @@ var NAVTREEINDEX12 =
 "dd/d1f/classdsu.html#ab8ee27083a3c2e2df80755165a2ec280":[10,0,30,7],
 "dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55":[10,0,30,17],
 "dd/d1f/classdsu.html#ac713a5b496d0405c82e2808a85e58415":[10,0,30,6],
-"dd/d21/namespacewindowed__median.html":[9,0,134],
+"dd/d21/namespacewindowed__median.html":[9,0,135],
 "dd/d24/namespacedynamic__programming.html":[9,0,27],
 "dd/d24/namespacedynamic__programming.html#a066e0e739e7c276eee6e61d5b4d37ce8":[9,0,27,4],
 "dd/d24/namespacedynamic__programming.html#a0a2215194e58786c34db1ccaf8031079":[9,0,27,1],
@@ -176,11 +182,11 @@ var NAVTREEINDEX12 =
 "dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f":[9,0,65,19],
 "dd/d47/namespacemath.html#afcd07701d73ed65cd616bcba02737f3d":[9,0,65,27],
 "dd/d4f/class_solution.html":[10,0,52],
-"dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html":[9,0,116,0,0],
+"dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html":[9,0,117,0,0],
 "dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html":[10,0,20,0,0],
-"dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html#a3d62f615a0171a5d77e7018f704f3a7e":[9,0,116,0,0,1],
+"dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html#a3d62f615a0171a5d77e7018f704f3a7e":[9,0,117,0,0,1],
 "dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html#a3d62f615a0171a5d77e7018f704f3a7e":[10,0,20,0,0,1],
-"dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html#ae5ca7abf15e939eddc80542131de3645":[9,0,116,0,0,0],
+"dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html#ae5ca7abf15e939eddc80542131de3645":[9,0,117,0,0,0],
 "dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html#ae5ca7abf15e939eddc80542131de3645":[10,0,20,0,0,0],
 "dd/d65/lu__decompose_8cpp.html":[11,0,15,11],
 "dd/d65/lu__decompose_8cpp.html#a0283886819c7c140a023582b7269e2d0":[11,0,15,11,3],
@@ -243,11 +249,5 @@ var NAVTREEINDEX12 =
 "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#ae145ac4a0d2ec58945b58fad3c04f00f":[10,0,10,0,1,8],
 "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#af22395b8e9e04222aa93a329523faef9":[10,0,10,0,1,3],
 "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#af778034b2942ecac6df1e9ec8b5412ee":[10,0,10,0,1,12],
-"dd/da0/todo.html":[7],
-"dd/da8/pigeonhole__sort_8cpp.html":[11,0,22,14],
-"dd/da8/pigeonhole__sort_8cpp.html#a0e9e1b21a1684585e9e50f9afe4d53a3":[11,0,22,14,1],
-"dd/da8/pigeonhole__sort_8cpp.html#a34b8683a2b429de5cce57e6d733ec817":[11,0,22,14,2],
-"dd/da8/pigeonhole__sort_8cpp.html#a458410412185a5f09199deaff7157a8d":[11,0,22,14,3],
-"dd/da8/pigeonhole__sort_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,22,14,0],
-"dd/da8/pigeonhole__sort_8cpp.html#af31ec5409537703d9c8a47350386b32a":[11,0,22,14,4]
+"dd/da0/todo.html":[7]
 };

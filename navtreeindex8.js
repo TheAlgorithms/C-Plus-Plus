@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"d8/d28/classrange__queries_1_1per_seg_tree.html#a6d3f2465a7c5803a1ff16c5378bcc5e4":[10,0,16,2,2],
+"d8/d28/classrange__queries_1_1per_seg_tree.html#a8ff495d2f389b4aaa54449c26c6078f3":[9,0,96,1,11],
 "d8/d28/classrange__queries_1_1per_seg_tree.html#a8ff495d2f389b4aaa54449c26c6078f3":[10,0,16,2,11],
 "d8/d28/classrange__queries_1_1per_seg_tree.html#ac83bcabf5a8db8b0d8d156a4c1bcd4c3":[9,0,96,1,1],
 "d8/d28/classrange__queries_1_1per_seg_tree.html#ac83bcabf5a8db8b0d8d156a4c1bcd4c3":[10,0,16,2,1],
@@ -196,7 +198,7 @@ var NAVTREEINDEX8 =
 "d8/d9c/union__of__two__arrays_8cpp.html#abdd77344d4af8fd56d14a5cabbf2f669":[11,0,16,7,5],
 "d8/d9c/union__of__two__arrays_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,16,7,1],
 "d8/d9c/union__of__two__arrays_8cpp.html#af7b81d7a1534216af6a36a80135beb86":[11,0,16,7,8],
-"d8/d9f/namespacesudoku__solver.html":[9,0,121],
+"d8/d9f/namespacesudoku__solver.html":[9,0,122],
 "d8/da7/namespacedepth__first__search.html":[9,0,21],
 "d8/dab/classstatistics_1_1stats__computer2.html":[9,0,111,1],
 "d8/dab/classstatistics_1_1stats__computer2.html":[10,0,18,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "d8/dee/avltree_8cpp.html#aaa457ffec24c9643f2768e7a65e96546":[11,0,4,1,4],
 "d8/dee/avltree_8cpp.html#adfc1d482a564c041756719667b955b8c":[11,0,4,1,11],
 "d8/dee/avltree_8cpp.html#ae197eb50188fb761346952b9b5f6be59":[11,0,4,1,8],
-"d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83":[11,0,4,1,5],
-"d8/dee/avltree_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,4,1,9],
-"d8/df0/queue__using__array_8cpp.html":[11,0,4,14]
+"d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83":[11,0,4,1,5]
 };

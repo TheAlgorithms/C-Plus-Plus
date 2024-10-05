@@ -147,8 +147,10 @@ var searchData=
   ['duration_144',['duration',['http://en.cppreference.com/w/cpp/chrono/duration.html',0,'std::chrono::duration'],['http://en.cppreference.com/w/cpp/chrono/duration/duration.html',0,'std::chrono::duration::duration()']]],
   ['duration_5fcast_145',['duration_cast',['http://en.cppreference.com/w/cpp/chrono/duration/duration_cast.html',0,'std::chrono']]],
   ['duration_5fvalues_146',['duration_values',['http://en.cppreference.com/w/cpp/chrono/duration_values.html',0,'std::chrono']]],
-  ['dynamic_20programming_147',['Dynamic Programming',['../d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md51',1,'']]],
-  ['dynamic_5fpointer_5fcast_148',['dynamic_pointer_cast',['http://en.cppreference.com/w/cpp/memory/shared_ptr/pointer_cast.html',0,'std']]],
-  ['dynamic_5fprogramming_149',['dynamic_programming',['../dd/d24/namespacedynamic__programming.html',1,'']]],
-  ['dynarray_150',['dynarray',['http://en.cppreference.com/w/cpp/container/dynarray.html',0,'std::dynarray'],['http://en.cppreference.com/w/cpp/container/dynarray/dynarray.html',0,'std::dynarray::dynarray()']]]
+  ['duval_147',['duval',['../d6/dd6/namespacestring.html#ac2a35302e6bed93c4b2c6f55a21a5632',1,'string']]],
+  ['duval_2ecpp_148',['duval.cpp',['../db/d09/duval_8cpp.html',1,'']]],
+  ['dynamic_20programming_149',['Dynamic Programming',['../d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md51',1,'']]],
+  ['dynamic_5fpointer_5fcast_150',['dynamic_pointer_cast',['http://en.cppreference.com/w/cpp/memory/shared_ptr/pointer_cast.html',0,'std']]],
+  ['dynamic_5fprogramming_151',['dynamic_programming',['../dd/d24/namespacedynamic__programming.html',1,'']]],
+  ['dynarray_152',['dynarray',['http://en.cppreference.com/w/cpp/container/dynarray.html',0,'std::dynarray'],['http://en.cppreference.com/w/cpp/container/dynarray/dynarray.html',0,'std::dynarray::dynarray()']]]
 ];

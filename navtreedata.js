@@ -103,7 +103,7 @@ var NAVTREE =
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", "namespacemembers_dup" ],
-        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Functions", "namespacemembers_func.html", "namespacemembers_func" ],
         [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ]
       ] ]
@@ -144,13 +144,14 @@ var NAVTREEINDEX =
 "d4/d48/hamming__distance_8cpp.html#a65d845df3fecff7087a2126c7b72030b",
 "d5/d89/namespacepalindrome__partitioning.html",
 "d6/d60/group__ode.html#ga827bf009831ddc477c5fa8891d5cb35f",
-"d8/d28/classrange__queries_1_1per_seg_tree.html#a8ff495d2f389b4aaa54449c26c6078f3",
-"d8/df0/queue__using__array_8cpp.html#a2d49e79bd164c298912db252970520d8",
-"da/d37/structdata__structures_1_1sparse__table_1_1_sparse__table.html",
-"db/d82/classlarge__number.html#ab84f29685709cbb3b6fd29b7b4a7bc7b",
-"dc/dd4/classdata__structures_1_1_bloom_filter.html#a65ca6742d3be88d4aca4f080068a7a80",
-"dd/dae/namespacecount__of__set__bits.html",
-"df/d66/vector__cross__product_8cpp.html#a225732399c5c076976eae5b180a9f8c9"
+"d8/d28/classrange__queries_1_1per_seg_tree.html#a6d3f2465a7c5803a1ff16c5378bcc5e4",
+"d8/dee/avltree_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"da/d24/sqrt__double_8cpp.html#ae662282ad0740d2063ac404ca3bd74fc",
+"db/d82/classlarge__number.html#a771e9b28cfddf1ad94668566e396e350",
+"dc/dc5/paranthesis__matching_8cpp.html#ade525d33459755a32ba21e1b6910ff21",
+"dd/da8/pigeonhole__sort_8cpp.html",
+"df/d47/fcfs__scheduling_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
+"namespacemembers_func_z.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,5 +1,7 @@
 var NAVTREEINDEX10 =
 {
+"da/d24/sqrt__double_8cpp.html#ae662282ad0740d2063ac404ca3bd74fc":[11,0,14,52,1],
+"da/d24/sqrt__double_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,52,0],
 "da/d37/structdata__structures_1_1sparse__table_1_1_sparse__table.html":[10,0,2,3,0],
 "da/d37/structdata__structures_1_1sparse__table_1_1_sparse__table.html#a0c8cbe7239232863f104793c08273039":[10,0,2,3,0,0],
 "da/d37/structdata__structures_1_1sparse__table_1_1_sparse__table.html#a6cf72f93b1551f0d943c585b4f173be3":[10,0,2,3,0,2],
@@ -163,11 +165,15 @@ var NAVTREEINDEX10 =
 "db/d01/brent__method__extrema_8cpp.html#a6d0455dd5c30adda100e95f0423c786e":[11,0,15,2,6],
 "db/d01/brent__method__extrema_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,15,2,3],
 "db/d03/_s_t-example.html":[12,0],
-"db/d03/namespacewildcard__matching.html":[9,0,133],
+"db/d03/namespacewildcard__matching.html":[9,0,134],
 "db/d07/spiral__print_8cpp.html":[11,0,17,19],
 "db/d07/spiral__print_8cpp.html#a850d3f55e1a8d227176cdcc67352c197":[11,0,17,19,2],
 "db/d07/spiral__print_8cpp.html#acfff36db81326fb990a643ab198ee8a5":[11,0,17,19,0],
 "db/d07/spiral__print_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,17,19,1],
+"db/d09/duval_8cpp.html":[11,0,23,2],
+"db/d09/duval_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,23,2,2],
+"db/d09/duval_8cpp.html#ac2a35302e6bed93c4b2c6f55a21a5632":[11,0,23,2,0],
+"db/d09/duval_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,23,2,1],
 "db/d0d/prime__factorization_8cpp.html":[11,0,14,46],
 "db/d0d/prime__factorization_8cpp.html#a0ece0145fb29a5cf48378c23dde2da46":[11,0,14,46,1],
 "db/d0d/prime__factorization_8cpp.html#a7fe38b570a51e448430d6a0f072c2f23":[11,0,14,46,4],
@@ -243,11 +249,5 @@ var NAVTREEINDEX10 =
 "db/d82/classlarge__number.html#a4757697b1f7584b69e779a72abc4ae2a":[10,0,37,9],
 "db/d82/classlarge__number.html#a60c436d1a1c5e3795d6177d3815ad615":[10,0,37,4],
 "db/d82/classlarge__number.html#a72ae1ef050c4c28c50952ecab22d4b94":[10,0,37,15],
-"db/d82/classlarge__number.html#a76ddf1ed1b00fb8c107ea56f7f91e42f":[10,0,37,3],
-"db/d82/classlarge__number.html#a771e9b28cfddf1ad94668566e396e350":[10,0,37,8],
-"db/d82/classlarge__number.html#a7ba872b9a3ce1f3da6c06c5409663cca":[10,0,37,18],
-"db/d82/classlarge__number.html#a8c381aa1ecc960cefd82ec72f59e0e08":[10,0,37,13],
-"db/d82/classlarge__number.html#a8d4364ee5a62964451d8cfee82649687":[10,0,37,10],
-"db/d82/classlarge__number.html#a959c5c1a982949bbf98e1ea0f9afe6a9":[10,0,37,14],
-"db/d82/classlarge__number.html#aab5644405094740e34983cedfecb36cf":[10,0,37,11]
+"db/d82/classlarge__number.html#a76ddf1ed1b00fb8c107ea56f7f91e42f":[10,0,37,3]
 };

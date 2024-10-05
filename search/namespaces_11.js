@@ -20,12 +20,13 @@ var searchData=
   ['std_3a_3athis_5fthread_17',['this_thread',['http://en.cppreference.com/w/d7/dbf/namespacestd_1_1this__thread.html',0,'std']]],
   ['strand_18',['strand',['../d8/d1d/namespacestrand.html',1,'']]],
   ['strassens_5fmultiplication_19',['strassens_multiplication',['../d3/d91/namespacestrassens__multiplication.html',1,'']]],
-  ['string_5fsearch_20',['string_search',['../d9/d03/namespacestring__search.html',1,'']]],
-  ['strings_21',['strings',['../df/dcb/namespacestrings.html',1,'']]],
-  ['strings_3a_3aboyer_5fmoore_22',['boyer_moore',['../d0/dbc/namespacestrings_1_1boyer__moore.html',1,'strings']]],
-  ['subarray_5fsum_23',['subarray_sum',['../df/d74/namespacesubarray__sum.html',1,'']]],
-  ['sublist_5fsearch_24',['sublist_search',['../d9/def/namespacesublist__search.html',1,'']]],
-  ['subset_5fsum_25',['subset_sum',['../dc/d3a/namespacesubset__sum.html',1,'']]],
-  ['subsets_26',['Subsets',['../de/d95/namespace_subsets.html',1,'']]],
-  ['sudoku_5fsolver_27',['sudoku_solver',['../d8/d9f/namespacesudoku__solver.html',1,'']]]
+  ['string_20',['string',['../d6/dd6/namespacestring.html',1,'']]],
+  ['string_5fsearch_21',['string_search',['../d9/d03/namespacestring__search.html',1,'']]],
+  ['strings_22',['strings',['../df/dcb/namespacestrings.html',1,'']]],
+  ['strings_3a_3aboyer_5fmoore_23',['boyer_moore',['../d0/dbc/namespacestrings_1_1boyer__moore.html',1,'strings']]],
+  ['subarray_5fsum_24',['subarray_sum',['../df/d74/namespacesubarray__sum.html',1,'']]],
+  ['sublist_5fsearch_25',['sublist_search',['../d9/def/namespacesublist__search.html',1,'']]],
+  ['subset_5fsum_26',['subset_sum',['../dc/d3a/namespacesubset__sum.html',1,'']]],
+  ['subsets_27',['Subsets',['../de/d95/namespace_subsets.html',1,'']]],
+  ['sudoku_5fsolver_28',['sudoku_solver',['../d8/d9f/namespacesudoku__solver.html',1,'']]]
 ];
