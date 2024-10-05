@@ -3,6 +3,7 @@
  * @brief Implementation for [LFU Cache]
  * (https://en.wikipedia.org/wiki/Least_frequently_used)
  *
+ * @details
  * LFU discards the least frequently used value. if there are multiple items
  * with the same minimum frequency then, the least recently used among them is
  * discarded. Data structures used - doubly linked list and unordered_map(hash
@@ -28,8 +29,17 @@
  * @brief Other algorithms
  */
 namespace others {
+
+/**
+ * @namespace
+ * @brief Cache algorithm
+ */
 namespace Cache {
 
+/**
+ * @class
+ * @brief Node for a doubly linked list with data, prev and next pointers
+ */
 template <typename T>
 class D_Node {
  public:
@@ -43,15 +53,19 @@ class D_Node {
 template <typename K, typename V>
 using CacheNode = D_Node<std::pair<K, V>>;
 
+/**
+ * @class
+ * @brief LFUCache
+ */
 template <typename K, typename V>
 class LFUCache {
     std::unordered_map<K, std::pair<CacheNode<K, V> *, int>>
-        node_map;  // maps the key to the node address and frequency
+        node_map;  ///< maps the key to the node address and frequency
     std::unordered_map<int, std::pair<CacheNode<K, V> *, CacheNode<K, V> *>>
-        freq_map;  // maps the frequency to doubly linked list
+        freq_map;  ///< maps the frequency to doubly linked list
 
-    int minFreq;    // minimum frequency in the cache
-    int _capacity;  // maximum capacity of the cache
+    int minFreq;    ///< minimum frequency in the cache
+    int _capacity;  ///< maximum capacity of the cache
 
  public:
     /**
@@ -281,7 +295,6 @@ void test2() {
  * @brief test method with 2 tests
  * @return void
  */
-
 void test() {
     test1();
     test2();
@@ -291,7 +304,6 @@ void test() {
  * @brief main function
  * @return 0 on exit
  */
-
 int main() {
     test();
     return 0;
