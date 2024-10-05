@@ -85,6 +85,9 @@ namespace greedy_algorithms{
     }
 }
 
+/**
+ * @brief main function
+ * @return 0 on sucessful exit
 void tests(){
     greedy_algorithms::DigitSeparation ds;
 
