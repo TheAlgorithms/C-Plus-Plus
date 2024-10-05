@@ -134,10 +134,11 @@ void tests(){
     expectedForward = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 1, 2, 3, 4, 5};
     std::vector<std::int64_t> reverseOrder = ds.digitSeparationReverseOrder(number);
     assert(reverseOrder == expectedReverse);
-}
-
     reverseOrder = ds.digitSeparationReverseOrder(number);
     assert(reverseOrder == expectedReverse);
+}
+
+    
 /**
  * @brief main function
  * @return 0 on successful exit
