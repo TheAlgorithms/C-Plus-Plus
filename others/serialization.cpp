@@ -28,7 +28,7 @@ class Serializer {
     }
 
     /**
-     * Serializes a string to a binary file.
+     * @brief Serializes a string to a binary file.
      * @param out The output stream (std::ofstream).
      * @param data The string to be serialized.
      *
