@@ -1,6 +1,7 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+#include <cassert> 
 
 /**
  * @file
@@ -139,7 +140,6 @@ int main() {
  * @brief A test suite to perform extensive testing on the Serializer and
  * Deserializer.
  */
-#include <cassert>  // For assert
 
 void runTests() {
     std::ofstream outFile("test_output.bin", std::ios::binary);
