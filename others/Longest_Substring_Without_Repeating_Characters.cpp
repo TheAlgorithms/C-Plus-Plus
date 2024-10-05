@@ -1,6 +1,5 @@
-/** Leetcode problem 
-* Author : @ashish5kmax (Ashish Kumar Sahoo)
-* 3. Longest_Substring_Without_Repeating_Characters
+/**
+* 3.Longest_Substring_Without_Repeating_Characters
 * Problem link :- https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
 * Intiuation :
   Intuition is strightforward and simple, we track the frequencey and as we know we can't use string to track longest substring without repeating characters, as poping a char from front of string is not in O(1) which could be optimized by deque approch.
