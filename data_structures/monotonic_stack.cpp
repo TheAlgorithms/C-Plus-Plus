@@ -17,7 +17,7 @@
  * @namespace algorithms
  * @brief A namespace for various algorithm implementations
  */
-namespace algorithms {
+namespace data_structures {
 
 /**
  * @class MonotonicStack
