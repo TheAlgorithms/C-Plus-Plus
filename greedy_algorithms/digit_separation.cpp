@@ -138,6 +138,10 @@ void tests(){
 
     reverseOrder = ds.digitSeparationReverseOrder(number);
     assert(reverseOrder == expectedReverse);
+/**
+ * @brief main function
+ * @return 0 on successful exit
+ */
 int main() {
     tests(); // run self test implementation
 
