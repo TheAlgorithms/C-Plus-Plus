@@ -8,12 +8,11 @@
  * types and strings.
  */
 
-
 class Serializer {
  public:
     /**
-     * Serializes fundamental data types (like int, float, double, etc.) to a
-     * binary file.
+     * @brief Serializes fundamental data types (like int, float, double, etc.)
+     * to a binary file.
      * @tparam T The type of the data to be serialized.
      * @param out The output stream (std::ofstream).
      * @param data The data to be serialized.
@@ -22,9 +21,7 @@ class Serializer {
      */
     template <typename T>
     static void serialize(std::ofstream &out, const T &data) {
-        static_assert(
-            std::is_fundamental<T>::value,
-            "Non-fundamental types are not allowed for this function!");
+        static_assert(std::is_fundamental<T>::value, "Non-fundamental types are not allowed for this function!");
         out.write(reinterpret_cast<const char *>(&data), sizeof(T));
     }
 
@@ -119,7 +116,7 @@ int main() {
     Serializer::serialize(outFile, num);
     Serializer::serialize(outFile, pi);
     Serializer::serialize(outFile, message);
-    outFile.close();  
+    outFile.close();
 
     int numRead;
     float piRead;
@@ -142,6 +139,8 @@ int main() {
  * @brief A test suite to perform extensive testing on the Serializer and
  * Deserializer.
  */
+#include <cassert>  // For assert
+
 void runTests() {
     std::ofstream outFile("test_output.bin", std::ios::binary);
     if (!outFile) {
@@ -181,8 +180,11 @@ void runTests() {
 
     inFile.close();
 
-    std::cout << "Test Int: " << intResult << "\n";
-    std::cout << "Test Double: " << doubleResult << "\n";
-    std::cout << "Test Char: " << charResult << "\n";
-    std::cout << "Test String: " << stringResult << "\n";
+    // Assert that the original and deserialized values are the same
+    assert(testInt == intResult);
+    assert(testDouble == doubleResult);
+    assert(testChar == charResult);
+    assert(testString == stringResult);
+
+    std::cout << "All tests passed!\n";
 }
