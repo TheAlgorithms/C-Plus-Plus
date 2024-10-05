@@ -14,8 +14,7 @@
 class Serializer {
  public:
     /**
-     * @brief Serializes fundamental data types (like int, float, double, etc.)
-     * to a binary file.
+     * @brief Serializes fundamental data types to a binary file.
      * @tparam T The type of the data to be serialized.
      * @param out The output stream (std::ofstream).
      * @param data The data to be serialized.
