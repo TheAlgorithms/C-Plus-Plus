@@ -38,7 +38,7 @@ class Graph {
 };
 
 // Utility function to print distances
-void print(const std::vector<int> dist, int V) {
+void print(const std::vector<int>& dist, int V) {
     cout << "\nThe Distance matrix for Floyd - Warshall" << endl;
     for (int i = 0; i < V; i++) {
         for (int j = 0; j < V; j++) {
