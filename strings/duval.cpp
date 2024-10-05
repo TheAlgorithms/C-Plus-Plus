@@ -26,14 +26,18 @@
  * @author [Amine Ghoussaini](https://github.com/aminegh20)
 */
 
-#include <array>    ///< for std::array
-#include <cassert>  ///< for assert
-#include <cstddef>  ///< for std::size_t
-#include <deque>    ///< for std::deque
-#include <iostream> ///< for std::cout and std::endl
-#include <string>   ///< for std::string
-#include <vector>   ///< for std::vector
+#include <array>    /// for std::array
+#include <cassert>  /// for assert
+#include <cstddef>  /// for std::size_t
+#include <deque>    /// for std::deque
+#include <iostream> /// for std::cout and std::endl
+#include <string>   /// for std::string
+#include <vector>   /// for std::vector
 
+/**
+ * @brief string manipulation algorithms
+ * @namespace
+ */
 namespace string {
 /**
  * @brief Find the lexicographically smallest cyclic shift of a sequence.
@@ -48,7 +52,7 @@ size_t duval(const T& s) {
     while (i < n) {
         ans = i;
         size_t j = i + 1, k = i;
-        while (j < n + n && s[j % n] >= s[k % n]) {
+        while (j < (n + n) && s[j % n] >= s[k % n]) {
             if (s[k % n] < s[j % n]) {
                 k = i;
             } else {
@@ -66,6 +70,10 @@ size_t duval(const T& s) {
 
 }  // namespace string
 
+/**
+ * @brief self test implementation
+ * returns void
+ */
 static void test() {
     using namespace string;
 
@@ -89,10 +97,18 @@ static void test() {
     std::deque<char> d = {'a', 'z', 'c', 'a', 'b'};
     assert(duval(d) == 3);
 
+    // Test 6
+    std::string s3;
+    assert(duval(s3) == 0);
+
     std::cout << "All tests passed!" << std::endl;
 }
 
+/**
+ * @brief main function
+ * @returns 0 on exit
+ */
 int main() {
-    test();
+    test();  // run self test implementations
     return 0;
 }
