@@ -138,6 +138,8 @@ void tests(){
     assert(forwardOrder == expectedForward);
 }
 
+    reverseOrder = ds.digitSeparationReverseOrder(number);
+    assert(reverseOrder == expectedReverse);
 int main() {
     tests();
 
