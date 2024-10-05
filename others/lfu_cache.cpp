@@ -21,8 +21,8 @@
  */
 
 #include <cassert>        // for assert
-#include <iostream>       // for IO operations
-#include <unordered_map>  // for hash map
+#include <iostream>       // for std::cout
+#include <unordered_map>  // for std::unordered_map
 
 /**
  * @namespace
@@ -39,13 +39,14 @@ namespace Cache {
 /**
  * @class
  * @brief Node for a doubly linked list with data, prev and next pointers
+ * @tparam T type of the data of the node
  */
 template <typename T>
 class D_Node {
  public:
-    T data;
-    D_Node<T> *prev;
-    D_Node<T> *next;
+    T data;           ///< data of the node
+    D_Node<T> *prev;  ///< previous node in the doubly linked list
+    D_Node<T> *next;  ///< next node in the doubly linked list
 
     explicit D_Node(T data) : data(data), prev(nullptr), next(nullptr) {}
 };
@@ -56,6 +57,8 @@ using CacheNode = D_Node<std::pair<K, V>>;
 /**
  * @class
  * @brief LFUCache
+ * @tparam K type of key in the LFU
+ * @tparam V type of value in the LFU
  */
 template <typename K, typename V>
 class LFUCache {
@@ -103,7 +106,7 @@ class LFUCache {
      * @brief increase the frequency of node and push it in the respective list.
      * @param p_node the node to be updated
      */
-    void inc_freq(std::pair<CacheNode<K, V> *, int> &p_node) {
+    void increase_frequency(std::pair<CacheNode<K, V> *, int> &p_node) {
         CacheNode<K, V> *node = p_node.first;
         int freq = p_node.second;
 
@@ -172,7 +175,7 @@ class LFUCache {
         // update the value if key already exists
         if (node_map.count(key)) {
             node_map[key].first->data.second = value;
-            inc_freq(node_map[key]);
+            increase_frequency(node_map[key]);
             return;
         }
 
@@ -203,7 +206,7 @@ class LFUCache {
 
         // increase the frequency and return the value
         V value = node_map[key].first->data.second;
-        inc_freq(node_map[key]);
+        increase_frequency(node_map[key]);
         return value;
     }
 
@@ -292,7 +295,7 @@ void test2() {
 }
 
 /**
- * @brief test method with 2 tests
+ * @brief self test implementation
  * @return void
  */
 void test() {
@@ -305,6 +308,6 @@ void test() {
  * @return 0 on exit
  */
 int main() {
-    test();
+    test();  // run the self test implementation
     return 0;
 }
