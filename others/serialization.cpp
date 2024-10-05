@@ -50,7 +50,7 @@ class Serializer {
 class Deserializer {
  public:
     /**
-     * Deserializes fundamental data types (like int, float, double, etc.) from
+     * @brief Deserializes fundamental data types (like int, float, double, etc.) from
      * a binary file.
      * @tparam T The type of the data to be deserialized.
      * @param in The input stream (std::ifstream).
