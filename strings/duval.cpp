@@ -1,5 +1,5 @@
 /**
-* @file duval.cpp
+ * @file duval.cpp
  * @brief Implementation of [Duval's algorithm](https://en.wikipedia.org/wiki/Lyndon_word).
  *
  * @details
@@ -100,6 +100,10 @@ static void test() {
     // Test 6
     std::string s3;
     assert(duval(s3) == 0);
+
+    // Test 7
+    std::vector<int> v2 = {5, 2, 1, 3, -4};
+    assert(duval(v2) == 4);
 
     std::cout << "All tests passed!" << std::endl;
 }
