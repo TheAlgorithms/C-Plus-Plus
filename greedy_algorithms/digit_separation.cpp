@@ -89,7 +89,7 @@ namespace greedy_algorithms{
  * @brief self test implementation
  * @return void
  */
-void tests(){
+static void tests(){
     greedy_algorithms::DigitSeparation ds;
 
     // Test case: Positive number
