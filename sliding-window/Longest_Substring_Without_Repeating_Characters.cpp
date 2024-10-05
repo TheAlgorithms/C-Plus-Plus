@@ -29,9 +29,9 @@
 **/
 
 // ----------------- Header files ----------------------------------
-#include <iostream>
-#include <map>
-#include <deque>
+#include <iostream> // for input and output read/write.
+#include <unordered_map> // to use it for character frequency.
+#include <deque> // for push and pop operations at O(1) time.
 
 class Solution {
 public:
