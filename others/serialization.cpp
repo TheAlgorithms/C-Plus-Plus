@@ -45,7 +45,7 @@ class Serializer {
 
 /**
  * @class Deserializer
- * A utility class for deserializing data from a binary file.
+ * @brief A utility class for deserializing data from a binary file.
  */
 class Deserializer {
  public:
