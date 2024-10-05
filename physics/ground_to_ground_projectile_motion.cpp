@@ -10,6 +10,7 @@
  */
 
 #include <cassert>   /// for assert()
+#define _USE_MATH_DEFINES
 #include <cmath>     /// for std::pow(), std::sin(), and std::cos()
 #include <iostream>  /// for IO operations
 
@@ -27,11 +28,12 @@ namespace ground_to_ground_projectile_motion {
 /**
  * @brief Convert radians to degrees
  * @param radian Angle in radians
- * @param PI The definition of the constant PI
  * @returns Angle in degrees
  */
-double degrees_to_radians(double radian, double PI = 3.14) {
-    return (radian * (PI / 180));
+
+double degrees_to_radians(double degrees){
+    double radians = degrees * (M_PI / 180);
+    return radians;
 }
 
 /**
