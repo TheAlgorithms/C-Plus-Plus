@@ -13,7 +13,6 @@
 #include <cassert>      /// For assert() function to check for errors
 #include <cstdint>      /// For int64_t data type to handle large numbers
 
-
 /**
  * @namespace
  * @brief Greedy Algorithms
