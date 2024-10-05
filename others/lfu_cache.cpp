@@ -250,13 +250,13 @@ void test1() {
     assert(cache.capacity() == 5);
     assert(cache.empty());
     cache.put(1, 10);
-    cache.put(2, 20);
+    cache.put(-2, 20);
 
     assert(cache.size() == 2);
     assert(cache.capacity() == 5);
     assert(!cache.empty());
 
-    cache.put(3, 30);
+    cache.put(3, -30);
     cache.put(4, 40);
     cache.put(5, 50);
     cache.put(6, 60);
@@ -274,11 +274,11 @@ void test1() {
  */
 void test2() {
     others::Cache::LFUCache<int, int> cache(5);
-    cache.put(1, 10);
+    cache.put(-1, -10);
     cache.put(2, 20);
     cache.put(3, 30);
 
-    assert(cache.get(1) == 10);
+    assert(cache.get(-1) == -10);
     cache.get(2);
     cache.get(3);
 
