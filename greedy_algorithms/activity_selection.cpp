@@ -2,7 +2,7 @@
 
 // The following implementation assumes that the activities
 // are already sorted according to their finish time
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 // Prints a maximum set of activities that can be done by a
