@@ -103,7 +103,7 @@ static void test() {
     }
     temp->next = nullptr;
 
-    ListNode* median = search::median_search2::middleNode(head1);
+    const ListNode* const median = search::median_search2::middleNode(head1);
     assert(3 == median->val);  // 3 is the value of the median node.
     search::median_search2::deleteAll(head1);
     std::cout << "test case:1 passed\n";
@@ -124,7 +124,7 @@ static void test() {
     }
     temp2->next = nullptr;
 
-    ListNode* median1 = search::median_search2::middleNode(head2);
+    const ListNode* const median1 = search::median_search2::middleNode(head2);
     assert(4 == median1->val);  // 4 is the value of the median node.
     search::median_search2::deleteAll(head2);
     std::cout << "test case:2 passed\n";

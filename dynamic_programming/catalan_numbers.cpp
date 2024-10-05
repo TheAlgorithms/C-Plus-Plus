@@ -1,75 +1,81 @@
-/** Print all the Catalan numbers from 0 to n, n being the user input.
-
- * A Catalan number satifies the following two properties:
- * C(0) = C(1) = 1; C(n) = sum(C(i).C(n-i-1)), from i = 0 to n-1
+/**
+ * @file
+ * @brief Provides utilities to compute Catalan numbers using dynamic
+ programming.
+ * A Catalan numbers satisfy these recurrence relations:
+ * C(0) = C(1) = 1; C(n) = sum(C(i).C(n-i-1)), for i = 0 to n-1
  * Read more about Catalan numbers here:
     https://en.wikipedia.org/wiki/Catalan_number
+    https://oeis.org/A000108/
  */
 
-#include <iostream>
-using namespace std;
+#include <cassert>  /// for assert
+#include <cstdint>  /// for std::uint64_t
+#include <cstdlib>  /// for std::size_t
+#include <numeric>  /// for std::transform_reduce
+#include <vector>   /// for std::vector
 
-int *cat;  // global array to hold catalan numbers
+/**
+ * @brief computes and caches Catalan numbers
+ */
+class catalan_numbers {
+    using value_type = std::uint64_t;
+    std::vector<value_type> known{1, 1};
 
-unsigned long int catalan_dp(int n) {
-    /** Using the tabulation technique in dynamic programming,
-        this function computes the first `n+1` Catalan numbers
-
-        Parameter
-        ---------
-        n: The number of catalan numbers to be computed.
-
-        Returns
-        -------
-        cat[n]: An array containing the first `n+1` Catalan numbers
-    */
-
-    // By definition, the first two Catalan numbers are 1
-    cat[0] = cat[1] = 1;
-
-    // Compute the remaining numbers from index 2 to index n, using tabulation
-    for (int i = 2; i <= n; i++) {
-        cat[i] = 0;
-        for (int j = 0; j < i; j++)
-            cat[i] += cat[j] * cat[i - j - 1];  // applying the definition here
+    value_type compute_next() {
+        return std::transform_reduce(known.begin(), known.end(), known.rbegin(),
+                                     static_cast<value_type>(), std::plus<>(),
+                                     std::multiplies<>());
     }
 
-    // Return the result
-    return cat[n];
-}
+    void add() { known.push_back(this->compute_next()); }
 
-int main(int argc, char *argv[]) {
-    int n;
-    cout << "Enter n: ";
-    cin >> n;
-
-    cat = new int[n + 1];
-
-    cout << "Catalan numbers from 0 to " << n << " are:\n";
-    for (int i = 0; i <= n; i++) {
-        cout << "catalan (" << i << ") = " << catalan_dp(i) << endl;
-        // NOTE: Since `cat` is a global array, calling `catalan_dp`
-        // repeatedly will not recompute the the values already computed
-        // as in case of pre-computed values, the array will simply return them,
-        // instead of recomputing them.
+ public:
+    /**
+     * @brief computes the n-th Catalan number and updates the cache.
+     * @return the n-th Catalan number
+     */
+    value_type get(std::size_t n) {
+        while (known.size() <= n) {
+            this->add();
+        }
+        return known[n];
     }
+};
 
-    return 0;
+void test_catalan_numbers_up_to_20() {
+    // data verified with https://oeis.org/A000108/
+    catalan_numbers cn;
+    assert(cn.get(0) == 1ULL);
+    assert(cn.get(1) == 1ULL);
+    assert(cn.get(2) == 2ULL);
+    assert(cn.get(3) == 5ULL);
+    assert(cn.get(4) == 14ULL);
+    assert(cn.get(5) == 42ULL);
+    assert(cn.get(6) == 132ULL);
+    assert(cn.get(7) == 429ULL);
+    assert(cn.get(8) == 1430ULL);
+    assert(cn.get(9) == 4862ULL);
+    assert(cn.get(10) == 16796ULL);
+    assert(cn.get(11) == 58786ULL);
+    assert(cn.get(12) == 208012ULL);
+    assert(cn.get(13) == 742900ULL);
+    assert(cn.get(14) == 2674440ULL);
+    assert(cn.get(15) == 9694845ULL);
+    assert(cn.get(16) == 35357670ULL);
+    assert(cn.get(17) == 129644790ULL);
+    assert(cn.get(18) == 477638700ULL);
+    assert(cn.get(19) == 1767263190ULL);
+    assert(cn.get(20) == 6564120420ULL);
 }
 
-/** Sample Test Case:
+void test_catalan_numbers_25() {
+    // data verified with https://oeis.org/A000108/
+    catalan_numbers cn;
+    assert(cn.get(25) == 4861946401452ULL);
+}
 
-$ cd "Dynamic Programming"
-$ g++ Catalan-Numbers.cpp
-$ ./a.exe
-
-Enter n: 5
-Catalan numbers from 0 to 5 are:
-catalan (0) = 1
-catalan (1) = 1
-catalan (2) = 2
-catalan (3) = 5
-catalan (4) = 14
-catalan (5) = 42
-
-*/
+int main() {
+    test_catalan_numbers_up_to_20();
+    test_catalan_numbers_25();
+}
