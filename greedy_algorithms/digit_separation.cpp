@@ -4,7 +4,6 @@
  * https://www.log2base2.com/c-examples/loop/split-a-number-into-digits-in-c.html
  * @details
  * @author [Muhammad Junaid Khalid](https://github.com/mjk22071998)
- * @see related_file.cpp, another_file.cpp
  */
 
 #include <algorithm>    /// For reveresing the vector
@@ -87,19 +86,15 @@ namespace greedy_algorithms{
     }
 }
 
-int main() {
+void tests(){
     greedy_algorithms::DigitSeparation ds;
 
     // Test case: Positive number
     std::int64_t number = 1234567890;
     std::vector<std::int64_t> expectedReverse = {0, 9, 8, 7, 6, 5, 4, 3, 2, 1};
     std::vector<std::int64_t> expectedForward = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
-
-    // Testing reverse order
     std::vector<std::int64_t> reverseOrder = ds.digitSeparationReverseOrder(number);
     assert(reverseOrder == expectedReverse);
-
-    // Testing forward order
     std::vector<std::int64_t> forwardOrder = ds.digitSeparationForwardOrder(number);
     assert(forwardOrder == expectedForward);
 
@@ -107,10 +102,8 @@ int main() {
     number = 5;
     expectedReverse = {5};
     expectedForward = {5};
-
     reverseOrder = ds.digitSeparationReverseOrder(number);
     assert(reverseOrder == expectedReverse);
-
     forwardOrder = ds.digitSeparationForwardOrder(number);
     assert(forwardOrder == expectedForward);
 
@@ -118,10 +111,8 @@ int main() {
     number = 0;
     expectedReverse = {0};
     expectedForward = {0};
-
     reverseOrder = ds.digitSeparationReverseOrder(number);
     assert(reverseOrder == expectedReverse);
-
     forwardOrder = ds.digitSeparationForwardOrder(number);
     assert(forwardOrder == expectedForward);
 
@@ -129,10 +120,8 @@ int main() {
     number = 987654321012345;
     expectedReverse = {5, 4, 3, 2, 1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
     expectedForward = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 1, 2, 3, 4, 5};
-
     reverseOrder = ds.digitSeparationReverseOrder(number);
     assert(reverseOrder == expectedReverse);
-
     forwardOrder = ds.digitSeparationForwardOrder(number);
     assert(forwardOrder == expectedForward);
 
@@ -140,8 +129,14 @@ int main() {
     number = -987654321012345;
     expectedReverse = {5, 4, 3, 2, 1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
     expectedForward = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 1, 2, 3, 4, 5};
+    std::vector<std::int64_t> reverseOrder = ds.digitSeparationReverseOrder(number);
+    assert(reverseOrder == expectedReverse);
+    std::vector<std::int64_t> forwardOrder = ds.digitSeparationForwardOrder(number);
+    assert(forwardOrder == expectedForward);
+}
 
-    std::cout << "All tests passed!" << std::endl;
+int main() {
+    tests();
 
     return 0;
 }
