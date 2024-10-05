@@ -35,12 +35,13 @@
 #include <unordered_map>   // to use it for character frequency.
 #include <deque>           // for push and pop operations at O(1) time.
 #include <string>          // for taking string as input.
+#include <cassert>         // for assert
 
 using namespace std;       // using the namespace standard to reduce redundant usage of std::
 
 //------------------ Longest_Substring Class -------------------------------
 /**
- * @class Solution
+ * @class Longest_Substring
  * @brief Class that solves the Longest Substring Without Repeating Characters problem.
  */
 class Longest_Substring {
@@ -48,7 +49,7 @@ public:
     /**
      * @brief Function to find the length of the longest substring without repeating characters.
      * @param s Input string.
-     * @returns Length of the longest substring.
+     * @return Length of the longest substring.
      */
     int lengthOfLongestSubstring(string s) {
         // If the size of string is 1, then it will be the answer.
@@ -94,22 +95,24 @@ public:
     }
 };
 
+// Testing function
+static void tests() {
+    Longest_Substring soln;
+    assert(soln.lengthOfLongestSubstring("abcabcbb") == 3);
+    assert(soln.lengthOfLongestSubstring("bbbbb") == 1);
+    assert(soln.lengthOfLongestSubstring("pwwkew") == 3);
+    assert(soln.lengthOfLongestSubstring("") == 0); // Test case for empty string
+    assert(soln.lengthOfLongestSubstring("abcdef") == 6); // Test case for all unique characters
+    assert(soln.lengthOfLongestSubstring("a") == 1); // Single character
+    cout << "All test cases passed!" << endl;
+}
+
 //-------------------- Main function -------------------------------
 /**
  * @brief Main function.
- * @returns 0 on successful execution.
+ * @return 0 on successful execution.
  */
 int main() {
-    // Create an object of the Solution class to call the function.
-    Longest_Substring s;
-
-    // User inputted string.
-    string str;
-    cout << "Enter the string: " << endl;
-    cin >> str;
-
-    // Function call to get the length of the longest substring without repeating characters.
-    cout << soln.lengthOfLongestSubstring(str) << endl;
-
+    tests(); // run self-test implementations
     return 0;
 }
