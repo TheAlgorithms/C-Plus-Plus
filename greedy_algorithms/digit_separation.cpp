@@ -57,7 +57,7 @@ class DigitSeparation {
      * @param largeNumber The large number to separate digits from.
      * @return A vector of digits in forward order.
      */
-    std::vector<std::int64_t> DigitSeparation::digitSeparationForwardOrder(
+    std::vector<std::int64_t> digitSeparationForwardOrder(
         std::int64_t largeNumber) const {
         std::vector<std::int64_t> result =
             digitSeparationReverseOrder(largeNumber);
