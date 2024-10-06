@@ -19,6 +19,7 @@
   * [Count Of Set Bits](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/count_of_set_bits.cpp)
   * [Count Of Trailing Ciphers In Factorial N](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/count_of_trailing_ciphers_in_factorial_n.cpp)
   * [Find Non Repeating Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/find_non_repeating_number.cpp)
+  * [Gray Code](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/gray_code.cpp)
   * [Hamming Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/hamming_distance.cpp)
   * [Next Higher Number With Same Number Of Set Bits](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/next_higher_number_with_same_number_of_set_bits.cpp)
   * [Power Of 2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/power_of_2.cpp)
@@ -161,6 +162,7 @@
 ## Greedy Algorithms
   * [Boruvkas Minimum Spanning Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/boruvkas_minimum_spanning_tree.cpp)
   * [Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/dijkstra.cpp)
+  * [Gale Shapley](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/gale_shapley.cpp)
   * [Huffman](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/huffman.cpp)
   * [Jump Game](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/jump_game.cpp)
   * [Knapsack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/knapsack.cpp)
@@ -377,6 +379,7 @@
   * [Pigeonhole Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/sorting/pigeonhole_sort.cpp)
   * [Quick Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/sorting/quick_sort.cpp)
   * [Quick Sort 3](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/sorting/quick_sort_3.cpp)
+  * [Quick Sort Iterative](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/sorting/quick_sort_iterative.cpp)
   * [Radix Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/sorting/radix_sort.cpp)
   * [Radix Sort2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/sorting/radix_sort2.cpp)
   * [Random Pivot Quick Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/sorting/random_pivot_quick_sort.cpp)
@@ -396,6 +399,7 @@
 ## Strings
   * [Boyer Moore](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/strings/boyer_moore.cpp)
   * [Brute Force String Searching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/strings/brute_force_string_searching.cpp)
+  * [Duval](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/strings/duval.cpp)
   * [Horspool](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/strings/horspool.cpp)
   * [Knuth Morris Pratt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/strings/knuth_morris_pratt.cpp)
   * [Manacher Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/strings/manacher_algorithm.cpp)

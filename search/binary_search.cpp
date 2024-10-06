@@ -4,8 +4,8 @@
  * algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
  * @details
  * Binary search is a search algorithm that finds the position of a target value
- * within a sorted array. Binary search compares the target value to the middle
- * element of the array. If they are not equal, the half in which the target
+ * within a sorted array.Just like looking for a word in a dictionary, in binary search we compare the target value to the middle
+ * element of the array. If they are not equal, then the half in which the target
  * cannot lie is eliminated and the search continues on the remaining half,
  * again taking the middle element to compare to the target value, and repeating
  * this until the target value is found. If the search ends with the remaining
@@ -13,7 +13,7 @@
  *
  * ### Implementation
  *
- * Binary search works on sorted arrays. Binary search begins by comparing an
+ * Binary search works on sorted arrays. It begins by comparing an
  * element in the middle of the array with the target value. If the target value
  * matches the element, its position in the array is returned. If the target
  * value is less than the element, the search continues in the lower half of
@@ -28,6 +28,7 @@
  * Worst-case time complexity	O(log n)
  * Best-case time complexity	O(1)
  * Average time complexity	    O(log n)
+ * space complexity  0(1)
  * Worst-case space complexity  0(1)
  *
  * @author [Lajat Manekar](https://github.com/Lazeeez)
