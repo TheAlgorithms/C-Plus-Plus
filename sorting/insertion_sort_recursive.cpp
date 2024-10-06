@@ -1,7 +1,7 @@
 /**
  * @file
  * @brief Insertion Sort Algorithm
- * @author [Dhanush S] (https://github.com/Fandroid745)
+ * @author [Dhanush S](https://github.com/Fandroid745)
  * 
  * @details
  * Insertion sort is a simple sorting algorithm that builds the final
