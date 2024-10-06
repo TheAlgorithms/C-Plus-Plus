@@ -1,7 +1,8 @@
 /**
  * @file
  * @brief Insertion Sort Algorithm
- *
+ * @author [Dhanush S] (https://github.com/Fandroid745)
+ * 
  * @details
  * Insertion sort is a simple sorting algorithm that builds the final
  * sorted array one element at a time. It is much less efficient compared
@@ -16,7 +17,10 @@
  * Insertion sort works similarly to how people sort playing cards in their hands.
  * The algorithm iterates through the list and inserts each element into its correct 
  * position in the sorted portion of the array.
- *
+ * 
+ * The time complexity of the algorithm is \f$O(n^2)\f$, and in some cases, it
+ * can be \f$O(n)\f$.
+ * 
  * Example execution:
  * 1. Start with the array [4, 3, 2, 5, 1].
  * 2. Insert 3 in its correct position: [3, 4, 2, 5, 1].
@@ -24,10 +28,11 @@
  * 4. Continue this until the array is sorted: [1, 2, 3, 4, 5].
  */
 
-#include <algorithm>   ///< for std::is_sorted
-#include <cassert>     ///< for assert function in testing
-#include <iostream>    ///< for std::cout and std::endl
-#include <vector>      ///< for using std::vector
+
+#include <algorithm>   /// for std::is_sorted
+#include <cassert>     /// for assert function in testing
+#include <iostream>    /// for std::cout and std::endl
+#include <vector>      /// for using std::vector
 
 /** 
  * @namespace sorting
@@ -39,7 +44,7 @@ namespace sorting {
  * @brief Insertion Sort Function
  * 
  * @tparam T Type of the array elements
- * @param [in,out] arr Array to be sorted
+ * @param[in,out] arr Array to be sorted
  * @param n Size of the array
  */
 template <typename T>
@@ -96,7 +101,7 @@ static void create_random_array(T *arr, int N) {
 /** 
  * @brief Test Cases for the sorting algorithm 
  */
-void tests() {
+static void tests() {
     int arr1[10] = {78, 34, 35, 6, 34, 56, 3, 56, 2, 4};
     std::cout << "Test 1... ";
     sorting::insertionSort(arr1, 10);
@@ -141,11 +146,11 @@ void tests() {
  * 
  * Empty except for the call to `tests()`.
  * 
- * @return 0 Always returns 0.
+ * @return 0 on successful exit.
  */
 int main() {
     /// Running predefined tests to test the algorithm
-    tests();
+    tests(); /// run self test implementations
     
     return 0;
 }
