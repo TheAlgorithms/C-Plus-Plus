@@ -149,7 +149,6 @@ static void tests() {
  * @return 0 on successful exit.
  */
 int main() {
-    /// Running predefined tests to test the algorithm
     tests(); /// run self test implementations
     
     return 0;
