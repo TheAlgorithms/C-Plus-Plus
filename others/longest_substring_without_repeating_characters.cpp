@@ -5,10 +5,8 @@
  * Problem link: https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
  * 
  * Intuition:
- * The intuition is straightforward and simple. We track the frequency of characters.
- * Since we can't use a string to track the longest substring without repeating characters
- * efficiently (as removing a character from the front of a string isn't O(1)),
- * we optimize the solution using a deque approach.
+ * 1) The intuition is straightforward and simple. We track the frequency of characters.
+ * 2) Since we can't use a string to track the longest substring without repeating characters efficiently (as removing a character from the front of a string isn't O(1)), we optimize the solution using a deque approach.
  *
  * Approach:
  * 1) Initialize an unordered_map to track the frequency of characters.
@@ -21,25 +19,16 @@
  * Time Complexity: O(N)
  * Space Complexity: O(N)
  * 
- * Examples:
- * - testcase1: s = "abcabcbb", output = 3.
- * - testcase2: s = "bbbbb", output = 1.
- * - testcase3: s = "pwwkew", output = 3.
- * 
  * I hope this helps to understand.
  * Thank you!
  **/
 
-// ----------------- Header files ----------------------------------
 #include <iostream>        // for input and output read/write.
-#include <unordered_map>   // to use it for character frequency.
+#include <unordered_map>   // for character frequency map.
 #include <deque>           // for push and pop operations at O(1) time.
 #include <string>          // for taking string as input.
-#include <cassert>         // for assert
+#include <cassert>         // for assert.
 
-using namespace std;       // using the namespace standard to reduce redundant usage of std::
-
-//------------------ Longest_Substring Class -------------------------------
 /**
  * @class Longest_Substring
  * @brief Class that solves the Longest Substring Without Repeating Characters problem.
@@ -51,17 +40,17 @@ public:
      * @param s Input string.
      * @return Length of the longest substring.
      */
-    int lengthOfLongestSubstring(string s) {
+    int lengthOfLongestSubstring(std::string s) {
         // If the size of string is 1, then it will be the answer.
         if (s.size() == 1) return 1;
 
         // Map used to store the character frequency.
-        unordered_map<char, int> m;
+        std::unordered_map<char, int> m;
         int n = s.length();
 
         // Deque to remove from back if repeating characters are present.
-        deque<char> temp;
-        deque<char> res;
+        std::deque<char> temp;
+        std::deque<char> res;
         int i, j;
 
         // Sliding window approach using two pointers.
@@ -95,7 +84,10 @@ public:
     }
 };
 
-// Testing function
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
 static void tests() {
     Longest_Substring soln;
     assert(soln.lengthOfLongestSubstring("abcabcbb") == 3);
@@ -104,10 +96,9 @@ static void tests() {
     assert(soln.lengthOfLongestSubstring("") == 0); // Test case for empty string
     assert(soln.lengthOfLongestSubstring("abcdef") == 6); // Test case for all unique characters
     assert(soln.lengthOfLongestSubstring("a") == 1); // Single character
-    cout << "All test cases passed!" << endl;
+    std::cout << "All test cases passed!" << std::endl;
 }
 
-//-------------------- Main function -------------------------------
 /**
  * @brief Main function.
  * @return 0 on successful execution.
