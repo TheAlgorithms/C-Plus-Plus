@@ -43,11 +43,25 @@
  * (as \f$a\times a^{-1} = 1\f$)
  */
 
-#include <iostream>
-#include <vector>
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO implementations
 
-/** Recursive function to calculate exponent in \f$O(\log n)\f$ using binary
- * exponent.
+/**
+ * @namespace math
+ * @brief Maths algorithms
+ */
+namespace math {
+/**
+ * @namespace modular_inverse_fermat_little_theorem
+ * @brief Calculate modular inverse using Fermat's Little Theorem
+ */
+namespace modular_inverse_fermat_little_theorem {
+/** 
+ * @brief Calculate exponent with modulo using divide-and-conquer.
+ * @param a The base
+ * @param b The exponent
+ * @param m The modulo
+ * @return res The result of \f$a^{b} % m\f$
  */
 int64_t binExpo(int64_t a, int64_t b, int64_t m) {
     a %= m;
@@ -62,8 +76,11 @@ int64_t binExpo(int64_t a, int64_t b, int64_t m) {
     }
     return res;
 }
-
-/** Prime check in \f$O(\sqrt{m})\f$ time.
+/**
+ * @brief Check if a given integer is a prime number
+ * @param m An intger to check for primality
+ * @return 'true' if the number is prime
+ * @return 'false' if the number is not prime
  */
 bool isPrime(int64_t m) {
     if (m <= 1) {
@@ -77,22 +94,40 @@ bool isPrime(int64_t m) {
     }
     return true;
 }
+/**
+ * @brief Main function to calculate modular inverse
+ * @param a Integer value for base
+ * @param m Integer value for modulo
+ * @return the result that is the modular inverse of a modulo m
+ */
+int64_t modular_inverse(int64_t a, int64_t m) {
+    // modulo m is not prime
+    if (!isPrime(m)) {
+        return -1;    // Using -1 to mark for invalid input
+    }
+    return binExpo(a, m - 2, m);  
+}
+}  // namespace modular_inverse_fermat_little_theorem
+}  // namespace math
 
 /**
- * Main function
+ * @brief Self-test implementation
+ * @return void
+ */
+static void test() {
+    assert(math::modular_inverse_fermat_little_theorem::modular_inverse(3, 6) == -1); 
+    assert(math::modular_inverse_fermat_little_theorem::modular_inverse(3, 7) == 5); 
+    assert(math::modular_inverse_fermat_little_theorem::modular_inverse(1, 1) == 1);
+    assert(math::modular_inverse_fermat_little_theorem::modular_inverse(1, 1) == 1);
+    assert(math::modular_inverse_fermat_little_theorem::modular_inverse(1, 1) == 1);
+    assert(math::modular_inverse_fermat_little_theorem::modular_inverse(1, 1) == 1); 
+}
+
+/**
+ * @brief Main function
+ * @return 0 on exit
  */
 int main() {
-    int64_t a, m;
-    // Take input of  a and m.
-    std::cout << "Computing ((a^(-1))%(m)) using Fermat's Little Theorem";
-    std::cout << std::endl << std::endl;
-    std::cout << "Give input 'a' and 'm' space separated : ";
-    std::cin >> a >> m;
-    if (isPrime(m)) {
-        std::cout << "The modular inverse of a with mod m is (a^(m-2)) : ";
-        std::cout << binExpo(a, m - 2, m) << std::endl;
-    } else {
-        std::cout << "m must be a prime number.";
-        std::cout << std::endl;
-    }
+    test();
+    return 0;
 }
