@@ -16,6 +16,7 @@
 #include <cassert>    /// for assert
 #include <iostream>   /// for IO operations
 #include <optional>   /// for std::optional
+
 /**
  * @namespace math
  * @brief Maths algorithms
@@ -42,6 +43,7 @@ int gcd_two(int x, int y) {
     }
     return gcd_two(y, x % y);  // Euclidean method
 }
+
 /**
  * @brief Function to check if all elements in the array are 0
  * @param a Array of numbers
@@ -58,6 +60,7 @@ bool check_all_zeros(const std::array<int, n>& a) {
  * @param a Array of integers to compute GCD for
  * @return std::optional<int> GCD of the numbers in the array or std::nullopt if undefined
  */
+
 template <std::size_t n>
 std::optional<int> gcd(const std::array<int, n>& a) {
     // GCD is undefined if all elements in the array are 0
@@ -81,6 +84,7 @@ std::optional<int> gcd(const std::array<int, n>& a) {
  * @brief Self-test implementation
  * @return void
  */
+
 static void test() {
     std::array<int, 1> array_1 = {0};
     std::array<int, 1> array_2 = {1};
@@ -100,6 +104,7 @@ static void test() {
     assert(math::gcd_of_n_numbers::gcd(array_7) == 3450);
     assert(math::gcd_of_n_numbers::gcd(array_8) == 1);
 }
+
 /**
  * @brief Main function
  * @return 0 on exit
