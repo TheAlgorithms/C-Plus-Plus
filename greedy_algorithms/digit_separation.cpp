@@ -45,7 +45,7 @@ class DigitSeparation {
      * @param largeNumber The large number to separate digits from.
      * @return A vector of digits in reverse order.
      */
-    std::vector<std::int64_t> DigitSeparation::digitSeparationReverseOrder(
+    std::vector<std::int64_t> digitSeparationReverseOrder(
         std::int64_t largeNumber) const {
         std::vector<std::int64_t> result;
         if (largeNumber != 0) {
@@ -65,7 +65,7 @@ class DigitSeparation {
      * @param largeNumber The large number to separate digits from.
      * @return A vector of digits in forward order.
      */
-    std::vector<std::int64_t> DigitSeparation::digitSeparationForwardOrder(
+    std::vector<std::int64_t> digitSeparationForwardOrder(
         std::int64_t largeNumber) const {
         std::vector<std::int64_t> result =
             digitSeparationReverseOrder(largeNumber);
@@ -127,7 +127,7 @@ static void tests() {
     expectedForward = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 1, 2, 3, 4, 5};
     reverseOrder = ds.digitSeparationReverseOrder(number);
     assert(reverseOrder == expectedReverse);
-    fowardOrder = ds.digitSeparationForwardOrder(number);
+    forwardOrder = ds.digitSeparationForwardOrder(number);
     assert(forwardOrder == expectedForward);
 }
 
