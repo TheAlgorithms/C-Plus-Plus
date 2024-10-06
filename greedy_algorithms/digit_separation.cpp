@@ -32,58 +32,40 @@ class DigitSeparation {
     DigitSeparation() {}
 
     /**
-     * @brief Separates the digits of a large positive number into a vector in
-     * reverse order.
+     * @brief Implementation of digitSeparationReverseOrder method.
      *
      * @param largeNumber The large number to separate digits from.
      * @return A vector of digits in reverse order.
      */
-    std::vector<std::int64_t> digitSeparationReverseOrder(
-        std::int64_t largeNumber) const;
+    std::vector<std::int64_t> DigitSeparation::digitSeparationReverseOrder(
+        std::int64_t largeNumber) const {
+        std::vector<std::int64_t> result;
+        if (largeNumber != 0) {
+            while (largeNumber != 0) {
+                result.push_back(std::abs(largeNumber % 10));
+                largeNumber /= 10;
+            }
+        } else {
+            result.push_back(0);
+        }
+        return result;
+    }
 
     /**
-     * @brief Separates the digits of a large positive number into a vector in
-     * forward order.
+     * @brief Implementation of digitSeparationForwardOrder method.
      *
      * @param largeNumber The large number to separate digits from.
      * @return A vector of digits in forward order.
      */
-    std::vector<std::int64_t> digitSeparationForwardOrder(
-        std::int64_t largeNumber) const;
+    std::vector<std::int64_t> DigitSeparation::digitSeparationForwardOrder(
+        std::int64_t largeNumber) const {
+        std::vector<std::int64_t> result =
+            digitSeparationReverseOrder(largeNumber);
+        std::reverse(result.begin(), result.end());
+        return result;
+    }
 };
 
-/**
- * @brief Implementation of digitSeparationReverseOrder method.
- *
- * @param largeNumber The large number to separate digits from.
- * @return A vector of digits in reverse order.
- */
-std::vector<std::int64_t> DigitSeparation::digitSeparationReverseOrder(
-    std::int64_t largeNumber) const {
-    std::vector<std::int64_t> result;
-    if (largeNumber != 0) {
-        while (largeNumber != 0) {
-            result.push_back(std::abs(largeNumber % 10));
-            largeNumber /= 10;
-        }
-    } else {
-        result.push_back(0);
-    }
-    return result;
-}
-
-/**
- * @brief Implementation of digitSeparationForwardOrder method.
- *
- * @param largeNumber The large number to separate digits from.
- * @return A vector of digits in forward order.
- */
-std::vector<std::int64_t> DigitSeparation::digitSeparationForwardOrder(
-    std::int64_t largeNumber) const {
-    std::vector<std::int64_t> result = digitSeparationReverseOrder(largeNumber);
-    std::reverse(result.begin(), result.end());
-    return result;
-}
 }  // namespace greedy_algorithms
 
 /**
