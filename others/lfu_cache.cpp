@@ -244,63 +244,54 @@ class LFUCache {
 }  // namespace others
 
 /**
- * @brief A simple test case
+ * @brief self test implementation
  * @return void
  */
-void test1() {
+static void test() {
     others::Cache::LFUCache<int, int> cache(5);
+
+    // test the initial state of the cache
     assert(cache.size() == 0);
     assert(cache.capacity() == 5);
     assert(cache.empty());
+
+    // test insertion in the cache
     cache.put(1, 10);
     cache.put(-2, 20);
 
+    // test the state of cache after inserting some items
     assert(cache.size() == 2);
     assert(cache.capacity() == 5);
     assert(!cache.empty());
 
-    cache.put(3, -30);
+    // test getting items from the cache
+    assert(cache.get(1) == 10);
+    assert(cache.get(-2) == 20);
+
+    cache.put(-3, -30);
     cache.put(4, 40);
-    cache.put(5, 50);
+    cache.put(5, -50);
     cache.put(6, 60);
 
+    // test the state after inserting more items than the capacity
     assert(cache.size() == 5);
     assert(cache.capacity() == 5);
     assert(!cache.empty());
 
-    std::cout << "test1 - passed\n";
-}
+    // test retrieval of all items in the cache
+    assert(cache.get(1) == 10);
+    assert(cache.get(-2) == 20);
 
-/**
- * @brief A simple test case
- * @return void
- */
-void test2() {
-    others::Cache::LFUCache<int, int> cache(5);
-    cache.put(-1, -10);
-    cache.put(2, 20);
-    cache.put(3, 30);
+    // fetching -3 throws runtime_error
+    // as -3 was evicted being the least frequently used
+    // when 6 was added
+    // assert(cache.get(-3) == -30);
 
-    assert(cache.get(-1) == -10);
-    cache.get(2);
-    cache.get(3);
+    assert(cache.get(4) == 40);
+    assert(cache.get(5) == -50);
+    assert(cache.get(6) == 60);
 
-    cache.put(4, 40);
-    cache.put(5, 50);
-    cache.put(6, 60);
-
-    assert(cache.get(5) == 50);
-
-    std::cout << "test2 - passed\n";
-}
-
-/**
- * @brief self test implementation
- * @return void
- */
-void test() {
-    test1();
-    test2();
+    std::cout << "test - passed\n";
 }
 
 /**
