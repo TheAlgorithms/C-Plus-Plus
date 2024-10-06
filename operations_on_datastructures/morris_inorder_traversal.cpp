@@ -1,5 +1,8 @@
 /*
-Morris Traversal is an algorithm to traverse a binary tree without using extra space (like a stack or recursion). It achieves O(1) space complexity by temporarily modifying the tree structure to create links (threads) to predecessors. During traversal, each node's predecessor in its left subtree is linked to the current node, allowing the algorithm to return to the current node after visiting its left child. Once visited, these links are removed, ensuring the original tree structure is restored. This allows for efficient, space-optimized in-order traversal.
+* Morris Traversal is an algorithm to traverse a binary tree without using extra space (like a stack or recursion). It achieves O(1) space complexity by temporarily modifying the tree structure to create links (threads) to predecessors. During traversal, each node's predecessor in its left subtree is linked to the current node, allowing the algorithm to return to the current node after visiting its left child. Once visited, these links are removed, ensuring the original tree structure is restored. This allows for efficient, space-optimized in-order traversal.
+
+* @author LOVISHSINGLA
+* @date 2024-10-06
 */
 
 #include <vector>
@@ -62,8 +65,14 @@ vector<int> morrisTraversal(Node *root)
     return ans; // Return the in-order traversal result
 }
 
-int main() {
-    // Creating a sample binary tree
+void testMorrisTraversal(){
+    // Create a sample binary tree:
+    //       1
+    //      / \
+    //     2   3
+    //    / \
+    //   4   5
+
     Node* root = new Node(1);
     root->left = new Node(2);
     root->right = new Node(3);
@@ -77,6 +86,9 @@ int main() {
     for(auto it : ans) {
         cout << it << " ";
     }
+}
 
+int main() {
+    testMorrisTraversal();
     return 0;
 }
