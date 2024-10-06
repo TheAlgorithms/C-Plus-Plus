@@ -6,12 +6,12 @@
  * Elements are pushed such that the stack remains monotonic.
  * If an element is pushed that is smaller than the top element, the top elements are popped until the correct position is found.
  * @see https://en.wikipedia.org/wiki/Monotonic_Stack
- * @author [Your Name](https://github.com/yourhandle)
+ * @author [Srijan Baniyal](https://github.com/Srijan-Baniyal)
  */
 
-#include <iostream>
-#include <vector>
-#include <stdexcept>  // for std::out_of_range
+#include <iostream>        /// For IO operations
+#include <vector>         /// For std::vector
+#include <stdexcept>      /// For std::out_of_range
 
 /**
  * @namespace algorithms
@@ -34,9 +34,9 @@ class MonotonicStack {
      */
     void push(int value) {
         while (!stack.empty() && stack.back() > value) {
-            stack.pop_back();
+            stack.pop_back();  // Pop elements until the correct position is found
         }
-        stack.push_back(value);
+        stack.push_back(value);  // Push the new value
     }
 
     /**
@@ -44,7 +44,7 @@ class MonotonicStack {
      */
     void pop() {
         if (!stack.empty()) {
-            stack.pop_back();
+            stack.pop_back();  // Remove the top element
         }
     }
 
@@ -55,9 +55,9 @@ class MonotonicStack {
      */
     int top() const {
         if (!stack.empty()) {
-            return stack.back();
+            return stack.back();  // Return the top element
         }
-        throw std::out_of_range("Stack is empty");
+        throw std::out_of_range("Stack is empty");  // Error if stack is empty
     }
 
     /**
@@ -65,7 +65,7 @@ class MonotonicStack {
      * @return true if the stack is empty, false otherwise
      */
     bool empty() const {
-        return stack.empty();
+        return stack.empty();  // Check if the stack is empty
     }
 };
 
@@ -76,17 +76,18 @@ class MonotonicStack {
  * @returns void
  */
 static void tests() {
-    algorithms::MonotonicStack ms;
-    ms.push(3);
+    algorithms::MonotonicStack ms;  // Create an instance of MonotonicStack
+    ms.push(3);                     // Push elements onto the stack
     ms.push(1);
     ms.push(2);
     ms.push(0);
-    std::vector<int> expected = {0};  // expected final state of the stack
+    std::vector<int> expected = {0};  // Expected final state of the stack
+
     for (int value : expected) {
-        assert(ms.top() == value);
-        ms.pop();
+        assert(ms.top() == value);  // Assert that the top matches expected value
+        ms.pop();                   // Pop the top element
     }
-    assert(ms.empty() == true);
+    assert(ms.empty() == true);     // Assert that the stack is empty
 
     std::cout << "All tests have successfully passed!\n";
 }
@@ -96,6 +97,6 @@ static void tests() {
  * @returns 0 on exit
  */
 int main() {
-    tests();  // run self-test implementations
+    tests();  // Run self-test implementations
     return 0;
 }
