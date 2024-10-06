@@ -1,9 +1,17 @@
 /**
  * @file digit_separation.cpp
- * @brief This file contains the DigitSeparation class for separating digits of
- * large numbers.
- * https://www.log2base2.com/c-examples/loop/split-a-number-into-digits-in-c.html
- * @details
+ * @brief Separates digits from numbers in forward and reverse order
+ * @see https://www.log2base2.com/c-examples/loop/split-a-number-into-digits-in-c.html
+ * @details The DigitSeparation class provides two methods to separate the
+ * digits of large integers: digitSeparationReverseOrder and
+ * digitSeparationForwardOrder. The digitSeparationReverseOrder method extracts
+ * digits by repeatedly applying the modulus operation (% 10) to isolate the
+ * last digit, then divides the number by 10 to remove it. This process
+ * continues until the entire number is broken down into its digits, which are
+ * stored in reverse order. If the number is zero, the method directly returns a
+ * vector containing {0} to handle this edge case. Negative numbers are handled
+ * by taking the absolute value, ensuring consistent behavior regardless of the
+ * sign.
  * @author [Muhammad Junaid Khalid](https://github.com/mjk22071998)
  */
 
