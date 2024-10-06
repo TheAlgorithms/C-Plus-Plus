@@ -11,11 +11,11 @@
  *
  * @see gcd_iterative_euclidean.cpp, gcd_recursive_euclidean.cpp
  */
-#include <algorithm>  // for std::abs
-#include <array>      // for std::array
-#include <cassert>    // for assert
-#include <iostream>   // for IO operations
-#include <optional>   // for std::optional
+#include <algorithm>  /// for std::abs
+#include <array>      /// for std::array
+#include <cassert>    /// for assert
+#include <iostream>   /// for IO operations
+#include <optional>   /// for std::optional
 /**
  * @namespace math
  * @brief Maths algorithms
