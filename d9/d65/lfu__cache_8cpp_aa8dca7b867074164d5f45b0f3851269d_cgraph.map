@@ -1,0 +1,21 @@
+<map id="test" name="test">
+<area shape="rect" id="Node000001" title="self test implementation" alt="" coords="5,136,49,161"/>
+<area shape="rect" id="Node000002" href="$df/d8f/classothers_1_1_cache_1_1_l_f_u_cache.html#ac27c9076377cbed2a2acc45a189fed2c" title="Returns the total capacity of the cache." alt="" coords="110,5,284,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="33,134,57,96,74,75,95,57,103,51,106,56,98,61,78,79,61,99,37,137"/>
+<area shape="rect" id="Node000003" href="$df/d8f/classothers_1_1_cache_1_1_l_f_u_cache.html#a68e1be0a3e0a6478aa35f04000e0e9b0" title="returns true if the cache is empty, false otherwise." alt="" coords="110,71,284,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="48,138,96,120,114,114,116,119,98,126,50,143"/>
+<area shape="rect" id="Node000004" href="$df/d8f/classothers_1_1_cache_1_1_l_f_u_cache.html#a58e37d3713f28d36abbb8cdf6c432781" title="get the value of the key&#45;value pair if exists" alt="" coords="97,136,297,161"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="49,146,81,146,81,151,49,151"/>
+<area shape="rect" id="Node000007" href="$df/d8f/classothers_1_1_cache_1_1_l_f_u_cache.html#af6f8e5a66a45436b490dfe015ff8866e" title="upsert a key&#45;value pair" alt="" coords="97,185,297,210"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="50,154,97,171,121,178,120,183,96,176,48,159"/>
+<area shape="rect" id="Node000009" href="$df/d8f/classothers_1_1_cache_1_1_l_f_u_cache.html#adbfb2ef7358423fdf1f49d410f55f195" title="Returns the number of items present in the cache." alt="" coords="110,235,284,275"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="39,160,63,190,98,221,106,225,103,230,95,225,60,194,35,163"/>
+<area shape="rect" id="Node000005" href="$df/d8f/classothers_1_1_cache_1_1_l_f_u_cache.html#a16a25c102554c5653721a5112ef676c9" title="increase the frequency of node and push it in the respective list." alt="" coords="360,124,534,165"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="298,144,344,143,344,149,298,149"/>
+<area shape="rect" id="Node000006" href="$df/d8f/classothers_1_1_cache_1_1_l_f_u_cache.html#adad4ab43141fb8ba43facd3a71e07047" title="push the node at first position in the linked list of given frequency" alt="" coords="596,153,771,194"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="534,152,581,158,581,164,534,158"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="260,182,344,163,345,169,261,187"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="297,190,580,176,581,181,297,195"/>
+<area shape="rect" id="Node000008" href="$df/d8f/classothers_1_1_cache_1_1_l_f_u_cache.html#ab3561ab204754295199f9566924f7e69" title="pop the last node in the least frequently used linked list" alt="" coords="345,240,548,265"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="259,208,370,233,369,238,258,214"/>
+</map>

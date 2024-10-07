@@ -1,0 +1,5 @@
+<map id="others::Cache::LFUCache::increase_frequency" name="others::Cache::LFUCache::increase_frequency">
+<area shape="rect" id="Node000001" title="increase the frequency of node and push it in the respective list." alt="" coords="5,5,180,46"/>
+<area shape="rect" id="Node000002" href="$df/d8f/classothers_1_1_cache_1_1_l_f_u_cache.html#adad4ab43141fb8ba43facd3a71e07047" title="push the node at first position in the linked list of given frequency" alt="" coords="228,5,402,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,23,212,23,212,28,180,28"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="others/lfu_cache.cpp" name="others/lfu_cache.cpp">
+<area shape="rect" id="Node000001" title="Implementation for [LFU Cache] (https://en.wikipedia.org/wiki/Least_frequently_used)" alt="" coords="58,5,201,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,70,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,34,66,72,63,67,112,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="94,79,165,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="132,31,132,63,127,63,127,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="189,79,299,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="150,29,213,68,210,73,148,34"/>
+</map>

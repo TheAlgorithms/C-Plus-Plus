@@ -33,10 +33,12 @@ var searchData=
   ['unique_5fptr_3c_20t_5b_5d_3e_30',['unique_ptr&lt; T[]&gt;',['http://en.cppreference.com/w/cpp/memory/unique_ptr.html',0,'std']]],
   ['unordered_5fmap_31',['unordered_map',['http://en.cppreference.com/w/cpp/container/unordered_map.html',0,'std']]],
   ['unordered_5fmap_3c_20char16_5ft_2c_20std_3a_3ashared_5fptr_3c_20data_5fstructures_3a_3atrie_5fusing_5fhashmap_3a_3atrie_3a_3anode_20_3e_20_3e_32',['unordered_map&lt; char16_t, std::shared_ptr&lt; data_structures::trie_using_hashmap::Trie::Node &gt; &gt;',['http://en.cppreference.com/w/cpp/container/unordered_map.html',0,'std']]],
-  ['unordered_5fmap_3c_20uint64_5ft_2c_20std_3a_3alist_3c_20uint64_5ft_20_3e_3a_3aiterator_20_3e_33',['unordered_map&lt; uint64_t, std::list&lt; uint64_t &gt;::iterator &gt;',['http://en.cppreference.com/w/cpp/container/unordered_map.html',0,'std']]],
-  ['unordered_5fmultimap_34',['unordered_multimap',['http://en.cppreference.com/w/cpp/container/unordered_multimap.html',0,'std']]],
-  ['unordered_5fmultiset_35',['unordered_multiset',['http://en.cppreference.com/w/cpp/container/unordered_multiset.html',0,'std']]],
-  ['unordered_5fset_36',['unordered_set',['http://en.cppreference.com/w/cpp/container/unordered_set.html',0,'std']]],
-  ['unordered_5fset_3c_20s_20_3e_37',['unordered_set&lt; S &gt;',['http://en.cppreference.com/w/cpp/container/unordered_set.html',0,'std']]],
-  ['uses_5fallocator_38',['uses_allocator',['http://en.cppreference.com/w/cpp/memory/uses_allocator.html',0,'std']]]
+  ['unordered_5fmap_3c_20int_2c_20std_3a_3apair_3c_20others_3a_3acache_3a_3ad_5fnode_3c_20k_2c_20v_20_3e_20_2a_2c_20others_3a_3acache_3a_3ad_5fnode_3c_20k_2c_20v_20_3e_20_2a_20_3e_20_3e_33',['unordered_map&lt; int, std::pair&lt; others::Cache::D_Node&lt; K, V &gt; *, others::Cache::D_Node&lt; K, V &gt; * &gt; &gt;',['http://en.cppreference.com/w/cpp/container/unordered_map.html',0,'std']]],
+  ['unordered_5fmap_3c_20k_2c_20std_3a_3apair_3c_20others_3a_3acache_3a_3ad_5fnode_3c_20k_2c_20v_20_3e_20_2a_2c_20int_20_3e_20_3e_34',['unordered_map&lt; K, std::pair&lt; others::Cache::D_Node&lt; K, V &gt; *, int &gt; &gt;',['http://en.cppreference.com/w/cpp/container/unordered_map.html',0,'std']]],
+  ['unordered_5fmap_3c_20uint64_5ft_2c_20std_3a_3alist_3c_20uint64_5ft_20_3e_3a_3aiterator_20_3e_35',['unordered_map&lt; uint64_t, std::list&lt; uint64_t &gt;::iterator &gt;',['http://en.cppreference.com/w/cpp/container/unordered_map.html',0,'std']]],
+  ['unordered_5fmultimap_36',['unordered_multimap',['http://en.cppreference.com/w/cpp/container/unordered_multimap.html',0,'std']]],
+  ['unordered_5fmultiset_37',['unordered_multiset',['http://en.cppreference.com/w/cpp/container/unordered_multiset.html',0,'std']]],
+  ['unordered_5fset_38',['unordered_set',['http://en.cppreference.com/w/cpp/container/unordered_set.html',0,'std']]],
+  ['unordered_5fset_3c_20s_20_3e_39',['unordered_set&lt; S &gt;',['http://en.cppreference.com/w/cpp/container/unordered_set.html',0,'std']]],
+  ['uses_5fallocator_40',['uses_allocator',['http://en.cppreference.com/w/cpp/memory/uses_allocator.html',0,'std']]]
 ];

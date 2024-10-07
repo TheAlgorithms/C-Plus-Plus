@@ -146,12 +146,12 @@ var NAVTREEINDEX =
 "d6/d60/group__ode.html",
 "d8/d28/classrange__queries_1_1per_seg_tree.html#a1eac9cf0613dfc8e2b0195009dd5c9d5",
 "d8/dee/avltree_8cpp.html#aaa457ffec24c9643f2768e7a65e96546",
-"da/d23/eulers__totient__function_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97",
-"db/d82/classlarge__number.html#a4757697b1f7584b69e779a72abc4ae2a",
-"dc/dc5/paranthesis__matching_8cpp.html",
-"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#ad45fde095ac00effe1fe00b1d85ff9c7",
-"df/d42/binary__search__tree2_8cpp.html#ab1333c3ea06dcad896ee204bbd407c4e",
-"namespacemembers_func_q.html"
+"da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aea8b0d649f0dc9a6f8baf3341a0b4960",
+"db/d82/classlarge__number.html#a10119a83839e65962621b73df46a5337",
+"dc/db5/text__search_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa17e0227321b109ed91e156ac1332915",
+"df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#aafda847b152684578dab891e5268d750",
+"globals_n.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

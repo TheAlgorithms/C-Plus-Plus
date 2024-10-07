@@ -1,0 +1,10 @@
+<map id="others::Cache::LFUCache::put" name="others::Cache::LFUCache::put">
+<area shape="rect" id="Node000001" title="upsert a key&#45;value pair" alt="" coords="5,70,206,96"/>
+<area shape="rect" id="Node000002" href="$df/d8f/classothers_1_1_cache_1_1_l_f_u_cache.html#a16a25c102554c5653721a5112ef676c9" title="increase the frequency of node and push it in the respective list." alt="" coords="268,5,442,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,67,253,46,254,52,165,72"/>
+<area shape="rect" id="Node000003" href="$df/d8f/classothers_1_1_cache_1_1_l_f_u_cache.html#adad4ab43141fb8ba43facd3a71e07047" title="push the node at first position in the linked list of given frequency" alt="" coords="505,35,679,75"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="206,75,489,58,489,64,206,80"/>
+<area shape="rect" id="Node000004" href="$df/d8f/classothers_1_1_cache_1_1_l_f_u_cache.html#ab3561ab204754295199f9566924f7e69" title="pop the last node in the least frequently used linked list" alt="" coords="254,121,457,146"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="173,94,274,115,273,120,172,99"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="443,34,490,40,489,45,442,39"/>
+</map>

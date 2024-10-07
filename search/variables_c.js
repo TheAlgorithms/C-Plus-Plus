@@ -12,6 +12,7 @@ var searchData=
   ['maxnode_9',['maxNode',['../dd/d2e/namespacedata__structures_1_1treap.html#ad939ec178d0069aeea14b7d6d7d12099',1,'data_structures::treap']]],
   ['min_5fdistance_10',['MIN_DISTANCE',['../d8/d77/namespacemachine__learning.html#a7220dbb7fa896d83bfb7a50e4fce1786',1,'machine_learning']]],
   ['minelement_11',['minElement',['../dd/d1f/classdsu.html#a1d77aad7fc39fe7140d834cd347e5c63',1,'dsu']]],
-  ['month_12',['month',['../d1/df6/class_easter_year_month_day.html#a01a068eae0b6fa8f86f5f60c2840bbde',1,'EasterYearMonthDay']]],
-  ['moves_13',['moves',['../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa73857052e69b86347859d9148933f71',1,'machine_learning::aystar_search::EightPuzzle']]]
+  ['minfreq_12',['minFreq',['../df/d8f/classothers_1_1_cache_1_1_l_f_u_cache.html#a6de844d1589a809239cc07752f311285',1,'others::Cache::LFUCache']]],
+  ['month_13',['month',['../d1/df6/class_easter_year_month_day.html#a01a068eae0b6fa8f86f5f60c2840bbde',1,'EasterYearMonthDay']]],
+  ['moves_14',['moves',['../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa73857052e69b86347859d9148933f71',1,'machine_learning::aystar_search::EightPuzzle']]]
 ];

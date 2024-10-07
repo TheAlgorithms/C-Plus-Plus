@@ -122,6 +122,10 @@ var annotated_dup =
       ] ]
     ] ],
     [ "others", "d0/d6f/namespaceothers.html", [
+      [ "Cache", "db/dde/namespaceothers_1_1_cache.html", [
+        [ "D_Node", "de/d21/classothers_1_1_cache_1_1_d___node.html", "de/d21/classothers_1_1_cache_1_1_d___node" ],
+        [ "LFUCache", "df/d8f/classothers_1_1_cache_1_1_l_f_u_cache.html", "df/d8f/classothers_1_1_cache_1_1_l_f_u_cache" ]
+      ] ],
       [ "iterative_tree_traversals", null, [
         [ "BinaryTree", "d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html", "d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree" ],
         [ "Node", "d2/d9a/structothers_1_1iterative__tree__traversals_1_1_node.html", "d2/d9a/structothers_1_1iterative__tree__traversals_1_1_node" ]
