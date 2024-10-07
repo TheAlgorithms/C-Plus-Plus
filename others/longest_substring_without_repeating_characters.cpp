@@ -21,6 +21,7 @@
  * 
  * I hope this helps to understand.
  * Thank you!
+ * @author [Ashish Kumar Sahoo](github.com/ashish5kmax)
  **/
 
 #include <iostream>        // for IO Operations
