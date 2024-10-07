@@ -94,7 +94,7 @@ bool isPrime(std::int64_t m) {
   return true;
 }
 /**
- * @brief Main function to calculate the modular inverse.
+ * @brief calculates the modular inverse.
  * @param a Integer value for the base
  * @param m Integer value for modulo
  * @return The result that is the modular inverse of a modulo m
