@@ -160,6 +160,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ac5803413618fcfb922cb32c6db0fc864"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac5803413618fcfb922cb32c6db0fc864">cylinder_surface_area</a> (T radius, T <a class="el" href="../../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83">height</a>)</td></tr>
 <tr class="memdesc:ac5803413618fcfb922cb32c6db0fc864"><td class="mdescLeft">&#160;</td><td class="mdescRight">surface area of a <a href="https://en.wikipedia.org/wiki/Cylinder" target="_blank">cylinder</a> (2 * pi * r * h + 2 * pi * r^2)  <br /></td></tr>
 <tr class="separator:ac5803413618fcfb922cb32c6db0fc864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3277e65a8f380e7632791975bfba0efb" id="r_a3277e65a8f380e7632791975bfba0efb"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3277e65a8f380e7632791975bfba0efb"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3277e65a8f380e7632791975bfba0efb">hemi_sphere_surface_area</a> (T radius)</td></tr>
+<tr class="memdesc:a3277e65a8f380e7632791975bfba0efb"><td class="mdescLeft">&#160;</td><td class="mdescRight">surface area of a <a href="https://en.wikipedia.org/wiki/Surface_area" target="_blank">hemi-sphere</a> ( 3 * pi * r^2)  <br /></td></tr>
+<tr class="separator:a3277e65a8f380e7632791975bfba0efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af05567415a9ea36c254b54e3d5a2152a" id="r_af05567415a9ea36c254b54e3d5a2152a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af05567415a9ea36c254b54e3d5a2152a">sum_of_divisor</a> (int num)</td></tr>
 <tr class="memdesc:af05567415a9ea36c254b54e3d5a2152a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate the sum of all the proper divisor of an integer.  <br /></td></tr>
 <tr class="separator:af05567415a9ea36c254b54e3d5a2152a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -884,6 +888,43 @@ Here is the call graph for this function:</div>
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d47/namespacemath_a7e78996673df791014cfe540b183456a_cgraph.svg" width="115" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
+</div>
+</div>
+<a id="a3277e65a8f380e7632791975bfba0efb" name="a3277e65a8f380e7632791975bfba0efb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3277e65a8f380e7632791975bfba0efb">&#9670;&#160;</a></span>hemi_sphere_surface_area()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T math::hemi_sphere_surface_area </td>
+          <td>(</td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>radius</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>surface area of a <a href="https://en.wikipedia.org/wiki/Surface_area" target="_blank">hemi-sphere</a> ( 3 * pi * r^2) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radius</td><td>is the radius of the hemi-sphere </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>datatype of radius </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>surface area of the hemi-sphere </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  121</span>                                     {</div>
+<div class="line"><span class="lineno">  122</span>    <span class="keywordflow">return</span> 3 * M_PI * pow(radius, 2);</div>
+<div class="line"><span class="lineno">  123</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aec65db4e5c7317323227f026fe50ef11" name="aec65db4e5c7317323227f026fe50ef11"></a>

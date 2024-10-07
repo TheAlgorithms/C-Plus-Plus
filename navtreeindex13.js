@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#af778034b2942ecac6df1e9ec8b5412ee":[10,0,10,0,1,12],
+"dd/da0/todo.html":[7],
 "dd/da8/pigeonhole__sort_8cpp.html":[11,0,22,14],
 "dd/da8/pigeonhole__sort_8cpp.html#a0e9e1b21a1684585e9e50f9afe4d53a3":[11,0,22,14,1],
 "dd/da8/pigeonhole__sort_8cpp.html#a34b8683a2b429de5cce57e6d733ec817":[11,0,22,14,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX13 =
 "df/d42/binary__search__tree2_8cpp.html#ab1333c3ea06dcad896ee204bbd407c4e":[11,0,4,3,9],
 "df/d42/binary__search__tree2_8cpp.html#af2847a901160fd45b4044550e9921cb4":[11,0,4,3,4],
 "df/d44/namespacen__queens__all__solutions.html":[9,0,77],
-"df/d47/fcfs__scheduling_8cpp.html":[11,0,3,0],
-"df/d47/fcfs__scheduling_8cpp.html#a18920aa331faf4476b251c8cdb2c2bec":[11,0,3,0,4],
-"df/d47/fcfs__scheduling_8cpp.html#a8f2b90cb64d63a7080965e66a05ccf86":[11,0,3,0,2]
+"df/d47/fcfs__scheduling_8cpp.html":[11,0,3,0]
 };
