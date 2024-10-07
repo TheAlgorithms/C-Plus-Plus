@@ -1,5 +1,16 @@
 var NAVTREEINDEX13 =
 {
+"dd/d9a/namespacegreedy__algorithms_1_1stable__matching.html#a6d7e84df47dcf19e88f95f8f9040306c":[9,0,39,1,0],
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html":[10,0,10,0,1],
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a1802cf6197a255055cb734d626abc101":[10,0,10,0,1,14],
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a194c2973b51a5467fc17064a4ea4e6f9":[10,0,10,0,1,4],
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a26a976171392d257ca0f814ed73e0658":[10,0,10,0,1,6],
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a3dc09f4742a0e1167ed202f7bf94721b":[10,0,10,0,1,0],
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a467e722dc1fcc82bfb4cef55744e04e2":[10,0,10,0,1,13],
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a48d054230468b79037964f474d842b6e":[10,0,10,0,1,10],
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a64815f10cf9fb9fdb4cc92731ccf10ba":[10,0,10,0,1,11],
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a94f794bf44f424b1b0ca6ef9f4f6ebd3":[10,0,10,0,1,5],
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a9517e162e2988f7db052296bd550a742":[10,0,10,0,1,16],
 "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa17e0227321b109ed91e156ac1332915":[10,0,10,0,1,15],
 "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa5c0486c7f29f323a2aced2ab33af420":[10,0,10,0,1,7],
 "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa73857052e69b86347859d9148933f71":[10,0,10,0,1,17],
@@ -238,16 +249,5 @@ var NAVTREEINDEX13 =
 "df/d2c/elliptic__curve__key__exchange_8cpp.html#a8800c8a84d77dadadb05ad5e83b77ef4":[11,0,2,3,7],
 "df/d2c/elliptic__curve__key__exchange_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,2,3,6],
 "df/d2c/elliptic__curve__key__exchange_8cpp.html#ac00616a4e40d3cd5cfb4da87d9ff9af0":[11,0,2,3,3],
-"df/d2c/elliptic__curve__key__exchange_8cpp.html#acc5fe9c2032fb7582c38a20d1fa69bcf":[11,0,2,3,2],
-"df/d2c/elliptic__curve__key__exchange_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,2,3,4],
-"df/d2c/elliptic__curve__key__exchange_8cpp.html#af0a6e3521629c25c2b5d620f26429830":[11,0,2,3,1],
-"df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html":[10,0,14,1,0],
-"df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a3a7f57679e9cd6c9f042dfd0612b2b24":[10,0,14,1,0,5],
-"df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a55ae3543a76045dffcb5ec7904a32a20":[10,0,14,1,0,6],
-"df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a61804988fcb1a6caf640f8291979aaa6":[10,0,14,1,0,3],
-"df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a6b52b7851750f28d53508e63c52a69f7":[10,0,14,1,0,4],
-"df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a825a7aaef844c9f743a27b268e8569b2":[10,0,14,1,0,8],
-"df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a938cafbdf70dc01e86e9bb12d29ec65d":[10,0,14,1,0,2],
-"df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#aac676369661d15a3eb782c0fee77d45d":[10,0,14,1,0,0],
-"df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#aacd76f078632faee1a8788d031e6c2de":[10,0,14,1,0,7]
+"df/d2c/elliptic__curve__key__exchange_8cpp.html#acc5fe9c2032fb7582c38a20d1fa69bcf":[11,0,2,3,2]
 };

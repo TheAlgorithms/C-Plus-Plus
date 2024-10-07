@@ -1,0 +1,10 @@
+<map id="tests" name="tests">
+<area shape="rect" id="Node000001" title="self test implementation" alt="" coords="5,54,56,79"/>
+<area shape="rect" id="Node000002" href="$da/d49/classgreedy__algorithms_1_1_digit_separation.html#a1809ae6828223999374bde5b197a59c8" title="Implementation of digitSeparationForwardOrder method." alt="" coords="104,71,308,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,68,89,74,88,80,56,74"/>
+<area shape="rect" id="Node000003" href="$da/d49/classgreedy__algorithms_1_1_digit_separation.html#a34769a780845e9d4279152899bd3bf79" title="Implementation of digitSeparationReverseOrder method." alt="" coords="356,5,560,61"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="55,61,103,56,340,38,340,43,104,61,56,66"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="308,69,340,61,341,66,309,75"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/reverse.html#" title=" " alt="" coords="413,86,503,111"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="308,96,397,96,397,101,308,101"/>
+</map>

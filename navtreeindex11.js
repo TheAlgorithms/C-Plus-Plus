@@ -1,5 +1,16 @@
 var NAVTREEINDEX11 =
 {
+"db/d71/quadratic__probing__hash__table_8cpp.html#ab431981b54c0bae1b2956f716aee1dcf":[11,0,12,4,8],
+"db/d71/quadratic__probing__hash__table_8cpp.html#ada6f1f44f7e83b0094fbcbe170788486":[11,0,12,4,9],
+"db/d71/quadratic__probing__hash__table_8cpp.html#adccc63a7e57cc6dba75bd62f40feb88b":[11,0,12,4,7],
+"db/d71/quadratic__probing__hash__table_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,12,4,6],
+"db/d71/quadratic__probing__hash__table_8cpp.html#aeb6bca8db4768226f8ea8291ea4f83f6":[11,0,12,4,12],
+"db/d80/gale__shapley_8cpp.html":[11,0,11,3],
+"db/d80/gale__shapley_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[11,0,11,3,2],
+"db/d80/gale__shapley_8cpp.html#a6d7e84df47dcf19e88f95f8f9040306c":[11,0,11,3,0],
+"db/d80/gale__shapley_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,11,3,1],
+"db/d82/classlarge__number.html":[10,0,37],
+"db/d82/classlarge__number.html#a0b1efd203274e38a67b78937dfb9b872":[10,0,37,2],
 "db/d82/classlarge__number.html#a10119a83839e65962621b73df46a5337":[10,0,37,0],
 "db/d82/classlarge__number.html#a13282908dfc4888392ed3d1fc6aae492":[10,0,37,17],
 "db/d82/classlarge__number.html#a2f5571e66305cf68bb8283e4aeda58bc":[10,0,37,6],
@@ -238,16 +249,5 @@ var NAVTREEINDEX11 =
 "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a19aaccad279b22dbbb6c55e5697b4114":[10,0,10,2,0,0,6],
 "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a2871146feaaa453558239df67b21e0d2":[10,0,10,2,0,0,2],
 "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a6c859e3737aa88b29854df0347b29f4e":[10,0,10,2,0,0,4],
-"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#ac9cda9453c4a0caf5bae7f9213b019a0":[10,0,10,2,0,0,3],
-"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#ae077132526d2863e46aa77cb0f7d6aa2":[10,0,10,2,0,0,5],
-"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#af136ec31dbd35b1be2eb9a057677c704":[10,0,10,2,0,0,1],
-"dc/d93/trie__modern_8cpp.html":[11,0,4,23],
-"dc/d93/trie__modern_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,4,23,2],
-"dc/d9c/babylonian__method_8cpp.html":[11,0,15,0],
-"dc/d9c/babylonian__method_8cpp.html#a28e67885f8606564cc8335f483f63309":[11,0,15,0,0],
-"dc/d9c/babylonian__method_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,15,0,2],
-"dc/d9c/babylonian__method_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089":[11,0,15,0,1],
-"dc/db5/struct_queue.html":[10,0,48],
-"dc/db5/text__search_8cpp.html":[11,0,21,12],
-"dc/db5/text__search_8cpp.html#a3f8975d227cd0e58f298b380c5dac0d9":[11,0,21,12,0]
+"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#ac9cda9453c4a0caf5bae7f9213b019a0":[10,0,10,2,0,0,3]
 };

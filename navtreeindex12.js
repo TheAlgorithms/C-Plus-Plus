@@ -1,5 +1,16 @@
 var NAVTREEINDEX12 =
 {
+"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#ae077132526d2863e46aa77cb0f7d6aa2":[10,0,10,2,0,0,5],
+"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#af136ec31dbd35b1be2eb9a057677c704":[10,0,10,2,0,0,1],
+"dc/d93/trie__modern_8cpp.html":[11,0,4,23],
+"dc/d93/trie__modern_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,4,23,2],
+"dc/d9c/babylonian__method_8cpp.html":[11,0,15,0],
+"dc/d9c/babylonian__method_8cpp.html#a28e67885f8606564cc8335f483f63309":[11,0,15,0,0],
+"dc/d9c/babylonian__method_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,15,0,2],
+"dc/d9c/babylonian__method_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089":[11,0,15,0,1],
+"dc/db5/struct_queue.html":[10,0,48],
+"dc/db5/text__search_8cpp.html":[11,0,21,12],
+"dc/db5/text__search_8cpp.html#a3f8975d227cd0e58f298b380c5dac0d9":[11,0,21,12,0],
 "dc/db5/text__search_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,21,12,2],
 "dc/db5/text__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,21,12,1],
 "dc/dc4/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plus-_plus_2numerical_methods_2rungekutta_8cpp-example.html":[12,3],
@@ -238,16 +249,5 @@ var NAVTREEINDEX12 =
 "dd/d95/classdata__structures_1_1_segment_tree.html#a8fecc48e8e3f6f5f6e728495a4282e52":[10,0,2,11,2],
 "dd/d95/classdata__structures_1_1_segment_tree.html#ad0e78179ab979ae2bc4304bdc181db17":[9,0,20,4,5],
 "dd/d95/classdata__structures_1_1_segment_tree.html#ad0e78179ab979ae2bc4304bdc181db17":[10,0,2,11,5],
-"dd/d9a/namespacegreedy__algorithms_1_1stable__matching.html":[9,0,39,1],
-"dd/d9a/namespacegreedy__algorithms_1_1stable__matching.html#a6d7e84df47dcf19e88f95f8f9040306c":[9,0,39,1,0],
-"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html":[10,0,10,0,1],
-"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a1802cf6197a255055cb734d626abc101":[10,0,10,0,1,14],
-"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a194c2973b51a5467fc17064a4ea4e6f9":[10,0,10,0,1,4],
-"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a26a976171392d257ca0f814ed73e0658":[10,0,10,0,1,6],
-"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a3dc09f4742a0e1167ed202f7bf94721b":[10,0,10,0,1,0],
-"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a467e722dc1fcc82bfb4cef55744e04e2":[10,0,10,0,1,13],
-"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a48d054230468b79037964f474d842b6e":[10,0,10,0,1,10],
-"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a64815f10cf9fb9fdb4cc92731ccf10ba":[10,0,10,0,1,11],
-"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a94f794bf44f424b1b0ca6ef9f4f6ebd3":[10,0,10,0,1,5],
-"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a9517e162e2988f7db052296bd550a742":[10,0,10,0,1,16]
+"dd/d9a/namespacegreedy__algorithms_1_1stable__matching.html":[9,0,39,1]
 };

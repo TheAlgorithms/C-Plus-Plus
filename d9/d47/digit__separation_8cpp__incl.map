@@ -1,0 +1,15 @@
+<map id="greedy_algorithms/digit_separation.cpp" name="greedy_algorithms/digit_separation.cpp">
+<area shape="rect" id="Node000001" title="Separates digits from numbers in forward and reverse order." alt="" coords="185,5,340,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,80,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,49,92,91,90,86,207,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="104,94,168,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="233,49,170,88,167,83,230,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="192,94,250,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="255,48,237,81,232,79,250,45"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="274,94,334,120"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="275,45,293,79,288,81,270,48"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="358,94,429,120"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="297,44,362,83,359,88,294,49"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="452,94,510,120"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="318,44,439,87,437,92,316,49"/>
+</map>

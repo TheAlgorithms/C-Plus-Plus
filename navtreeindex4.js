@@ -55,6 +55,9 @@ var NAVTREEINDEX4 =
 "d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#ae15fdc7f2b5023992d87a711d78566c4":[10,0,2,7,0,5],
 "d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#af3aee573fbabd2c1510c0f74f842dd17":[10,0,2,7,0,7],
 "d3/d2a/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1comparison__operator.html":[10,0,10,0,0,0],
+"d3/d36/digit__separation_8cpp.html":[11,0,11,1],
+"d3/d36/digit__separation_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[11,0,11,1,2],
+"d3/d36/digit__separation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,11,1,1],
 "d3/d39/manacher__algorithm_8cpp.html":[11,0,23,5],
 "d3/d39/manacher__algorithm_8cpp.html#a95e6a2976bb2f332898f373941d52098":[11,0,23,5,1],
 "d3/d39/manacher__algorithm_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,23,5,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX4 =
 "d4/d3e/k__nearest__neighbors_8cpp.html#ad6ae16e50bb153ebaa7251d0aaa97b69":[11,0,13,1,1],
 "d4/d3e/n__queens_8cpp.html":[11,0,0,4],
 "d4/d3e/n__queens_8cpp.html#a0dbd7af47d87f0b956609fe9e3288ecb":[11,0,0,4,3],
-"d4/d3e/n__queens_8cpp.html#a40ae0c7fd04eb20e7f3bff13fc6a5808":[11,0,0,4,2],
-"d4/d3e/n__queens_8cpp.html#a5730b6683f6adcf5c5ef75cf53dc7160":[11,0,0,4,0],
-"d4/d3e/n__queens_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,0,4,1],
-"d4/d45/gcd__recursive__euclidean_8cpp.html":[11,0,14,23]
+"d4/d3e/n__queens_8cpp.html#a40ae0c7fd04eb20e7f3bff13fc6a5808":[11,0,0,4,2]
 };

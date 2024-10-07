@@ -10,13 +10,14 @@ var searchData=
   ['defer_5flock_5ft_7',['defer_lock_t',['http://en.cppreference.com/w/cpp/thread/lock_tag_t.html',0,'std']]],
   ['denselayer_8',['DenseLayer',['../dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html',1,'machine_learning::neural_network::layers']]],
   ['deque_9',['deque',['http://en.cppreference.com/w/cpp/container/deque.html',0,'std']]],
-  ['discard_5fblock_5fengine_10',['discard_block_engine',['http://en.cppreference.com/w/cpp/numeric/random/discard_block_engine.html',0,'std']]],
-  ['discrete_5fdistribution_11',['discrete_distribution',['http://en.cppreference.com/w/cpp/numeric/random/discrete_distribution.html',0,'std']]],
-  ['divides_12',['divides',['http://en.cppreference.com/w/cpp/utility/functional/divides.html',0,'std']]],
-  ['domain_5ferror_13',['domain_error',['http://en.cppreference.com/w/cpp/error/domain_error.html',0,'std']]],
-  ['double_5flinked_5flist_14',['double_linked_list',['../d9/dee/classdouble__linked__list.html',1,'']]],
-  ['dsu_15',['dsu',['../dd/d1f/classdsu.html',1,'']]],
-  ['duration_16',['duration',['http://en.cppreference.com/w/cpp/chrono/duration.html',0,'std::chrono']]],
-  ['duration_5fvalues_17',['duration_values',['http://en.cppreference.com/w/cpp/chrono/duration_values.html',0,'std::chrono']]],
-  ['dynarray_18',['dynarray',['http://en.cppreference.com/w/cpp/container/dynarray.html',0,'std']]]
+  ['digitseparation_10',['DigitSeparation',['../da/d49/classgreedy__algorithms_1_1_digit_separation.html',1,'greedy_algorithms']]],
+  ['discard_5fblock_5fengine_11',['discard_block_engine',['http://en.cppreference.com/w/cpp/numeric/random/discard_block_engine.html',0,'std']]],
+  ['discrete_5fdistribution_12',['discrete_distribution',['http://en.cppreference.com/w/cpp/numeric/random/discrete_distribution.html',0,'std']]],
+  ['divides_13',['divides',['http://en.cppreference.com/w/cpp/utility/functional/divides.html',0,'std']]],
+  ['domain_5ferror_14',['domain_error',['http://en.cppreference.com/w/cpp/error/domain_error.html',0,'std']]],
+  ['double_5flinked_5flist_15',['double_linked_list',['../d9/dee/classdouble__linked__list.html',1,'']]],
+  ['dsu_16',['dsu',['../dd/d1f/classdsu.html',1,'']]],
+  ['duration_17',['duration',['http://en.cppreference.com/w/cpp/chrono/duration.html',0,'std::chrono']]],
+  ['duration_5fvalues_18',['duration_values',['http://en.cppreference.com/w/cpp/chrono/duration_values.html',0,'std::chrono']]],
+  ['dynarray_19',['dynarray',['http://en.cppreference.com/w/cpp/container/dynarray.html',0,'std']]]
 ];

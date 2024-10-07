@@ -141,17 +141,17 @@ var NAVTREEINDEX =
 "cpp/thread/lock.html",
 "d1/d83/classuint256__t.html#a9f6f3e39783c893473315bada864a183",
 "d2/dc8/classdata__structures_1_1_stack.html#aa9f9b087e9e7c00628e1289f0f1de3b2",
-"d4/d45/gcd__recursive__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e",
-"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md65",
-"d6/d60/group__ode.html",
-"d8/d28/classrange__queries_1_1per_seg_tree.html#a1eac9cf0613dfc8e2b0195009dd5c9d5",
-"d8/dee/avltree_8cpp.html#aaa457ffec24c9643f2768e7a65e96546",
-"da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aea8b0d649f0dc9a6f8baf3341a0b4960",
-"db/d82/classlarge__number.html#a10119a83839e65962621b73df46a5337",
-"dc/db5/text__search_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
-"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa17e0227321b109ed91e156ac1332915",
-"df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#aafda847b152684578dab891e5268d750",
-"globals_n.html"
+"d4/d3e/n__queens_8cpp.html#a5730b6683f6adcf5c5ef75cf53dc7160",
+"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md62",
+"d6/d57/array__right__rotation_8cpp.html#abdd77344d4af8fd56d14a5cabbf2f669",
+"d8/d28/classrange__queries_1_1per_seg_tree.html#a0fe4e431f3e09c274ecd7d2d58dcb865",
+"d8/dee/avltree_8cpp.html#a74f0cf18a0e5b832d9994e2f2d022287",
+"da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aa12088ba133dd0910103db0eb0ef2797",
+"db/d71/quadratic__probing__hash__table_8cpp.html#ab431981b54c0bae1b2956f716aee1dcf",
+"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#ae077132526d2863e46aa77cb0f7d6aa2",
+"dd/d9a/namespacegreedy__algorithms_1_1stable__matching.html#a6d7e84df47dcf19e88f95f8f9040306c",
+"df/d2c/elliptic__curve__key__exchange_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"globals_func_r.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

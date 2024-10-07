@@ -1,5 +1,8 @@
 var NAVTREEINDEX5 =
 {
+"d4/d3e/n__queens_8cpp.html#a5730b6683f6adcf5c5ef75cf53dc7160":[11,0,0,4,0],
+"d4/d3e/n__queens_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,0,4,1],
+"d4/d45/gcd__recursive__euclidean_8cpp.html":[11,0,14,23],
 "d4/d45/gcd__recursive__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e":[11,0,14,23,0],
 "d4/d45/gcd__recursive__euclidean_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,23,1],
 "d4/d48/hamming__distance_8cpp.html":[11,0,1,4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX5 =
 "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md58":[4,12],
 "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md59":[4,13],
 "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md60":[4,14],
-"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md61":[4,15],
-"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md62":[4,16],
-"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md63":[4,17],
-"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md64":[4,18]
+"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md61":[4,15]
 };

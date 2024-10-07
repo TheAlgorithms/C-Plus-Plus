@@ -22,6 +22,7 @@ var hierarchy =
     [ "others::Cache::D_Node< T >", "de/d21/classothers_1_1_cache_1_1_d___node.html", null ],
     [ "others::Cache::D_Node< K, V >", "de/d21/classothers_1_1_cache_1_1_d___node.html", null ],
     [ "machine_learning::neural_network::layers::DenseLayer", "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html", null ],
+    [ "greedy_algorithms::DigitSeparation", "da/d49/classgreedy__algorithms_1_1_digit_separation.html", null ],
     [ "double_linked_list", "d9/dee/classdouble__linked__list.html", null ],
     [ "dsu", "dd/d1f/classdsu.html", null ],
     [ "EasterYearMonthDay", "d1/df6/class_easter_year_month_day.html", null ],

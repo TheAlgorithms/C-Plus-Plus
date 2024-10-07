@@ -1,5 +1,8 @@
 var NAVTREEINDEX7 =
 {
+"d6/d57/array__right__rotation_8cpp.html#abdd77344d4af8fd56d14a5cabbf2f669":[11,0,16,1,5],
+"d6/d57/array__right__rotation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,16,1,0],
+"d6/d57/array__right__rotation_8cpp.html#af7b81d7a1534216af6a36a80135beb86":[11,0,16,1,8],
 "d6/d60/group__ode.html":[8,2],
 "d6/d60/group__ode.html#ga195d23bbdfcb80e83c9cda45c9ad5723":[8,2,1],
 "d6/d60/group__ode.html#ga36ff0710861ca39d957046c0b09b2985":[8,2,2],
@@ -68,10 +71,10 @@ var NAVTREEINDEX7 =
 "d6/db8/inv__sqrt_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,14,26,3],
 "d6/db8/inv__sqrt_8cpp.html#ad219034bf5fba657f5035ec5a1d50f52":[11,0,14,26,0],
 "d6/db8/inv__sqrt_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,26,1],
-"d6/dba/jump__game_8cpp.html":[11,0,11,3],
-"d6/dba/jump__game_8cpp.html#a33e3819aa9ffec0e380383c52603b502":[11,0,11,3,0],
-"d6/dba/jump__game_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,11,3,2],
-"d6/dba/jump__game_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,11,3,1],
+"d6/dba/jump__game_8cpp.html":[11,0,11,4],
+"d6/dba/jump__game_8cpp.html#a33e3819aa9ffec0e380383c52603b502":[11,0,11,4,0],
+"d6/dba/jump__game_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,11,4,2],
+"d6/dba/jump__game_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,11,4,1],
 "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html":[10,0,11,0,0],
 "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html#a499df7a01bcd348345dc5a0ab79bb0e9":[10,0,11,0,0,2],
 "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html#a738a5f59bb3560c81cdb7f43bcfe9fec":[10,0,11,0,0,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX7 =
 "d8/d28/classrange__queries_1_1per_seg_tree.html":[9,0,97,1],
 "d8/d28/classrange__queries_1_1per_seg_tree.html":[10,0,16,2],
 "d8/d28/classrange__queries_1_1per_seg_tree.html#a0cec4b77d264521717cf9b0482c45817":[9,0,97,1,4],
-"d8/d28/classrange__queries_1_1per_seg_tree.html#a0cec4b77d264521717cf9b0482c45817":[10,0,16,2,4],
-"d8/d28/classrange__queries_1_1per_seg_tree.html#a0fe4e431f3e09c274ecd7d2d58dcb865":[9,0,97,1,7],
-"d8/d28/classrange__queries_1_1per_seg_tree.html#a0fe4e431f3e09c274ecd7d2d58dcb865":[10,0,16,2,7],
-"d8/d28/classrange__queries_1_1per_seg_tree.html#a1eac9cf0613dfc8e2b0195009dd5c9d5":[9,0,97,1,10]
+"d8/d28/classrange__queries_1_1per_seg_tree.html#a0cec4b77d264521717cf9b0482c45817":[10,0,16,2,4]
 };
