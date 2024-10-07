@@ -78,7 +78,7 @@ std::int64_t binExpo(std::int64_t a, std::int64_t b, std::int64_t m) {
   return res;
 }
 /**
- * @brief Check if a given integer is a prime number.
+ * @brief Check if an integer is a prime number in \f$O(\sqrt{m})\f$ time.
  * @param m An intger to check for primality
  * @return true if the number is prime
  * @return false if the number is not prime
