@@ -44,7 +44,7 @@
  */
 
 #include <cassert>  /// for assert
-#include <cstdint>  /// for int64_t
+#include <cstdint>  /// for std::int64_t
 #include <iostream> /// for IO implementations
 
 /**
