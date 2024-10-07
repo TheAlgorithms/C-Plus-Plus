@@ -1,12 +1,32 @@
+/**
+ * @file binary_addition.cpp
+ * @brief Adds two binary numbers and outputs resulting string
+ * @see https://www.geeksforgeeks.org/cpp-program-to-add-two-binary-strings/
+ * @details The algorithm for adding two binary strings works by processing them
+ * from right to left, similar to manual addition. It starts by determining the
+ * longer string's length to ensure both strings are fully traversed. For each
+ * pair of corresponding bits and any carry from the previous addition, it
+ * calculates the sum. If the sum exceeds 1, a carry is generated for the next
+ * bit. The results for each bit are collected in a result string, which is
+ * reversed at the end to present the final binary sum correctly. This method
+ * efficiently handles varying string lengths and carrying during addition.
+ * @author [Muhammad Junaid Khalid](https://github.com/mjk22071998)
+ */
+
 #include <algorithm>
 #include <cassert>
 #include <iostream>
 #include <string>
 
 /**
+ * @namespace
+ * @brief Greedy Algorithms
+ */
+namespace greedy_algorithms {
+/**
  * A class to perform binary addition of two binary strings.
  */
-class Solution {
+class BinaryAddition {
  public:
     /**
      * Adds two binary strings and returns the result as a binary string.
@@ -43,46 +63,47 @@ class Solution {
         return result;
     }
 };
+}  // namespace greedy_algorithms
 
 /**
  * Function to run tests for the addBinary method.
  */
 void runTests() {
-    Solution solution;
+    BinaryAddition binaryAddition;
 
     // Test case for two binary strings of equal length without any carry over.
-    assert(solution.addBinary("1010", "1101") == "10111");
+    assert(binaryAddition.addBinary("1010", "1101") == "10111");
 
     // Test case for two binary strings of equal length with a carry over.
-    assert(solution.addBinary("1111", "1111") == "11110");
+    assert(binaryAddition.addBinary("1111", "1111") == "11110");
 
     // Test case for two binary strings where one is longer than the other.
-    assert(solution.addBinary("101", "11") == "1000");
+    assert(binaryAddition.addBinary("101", "11") == "1000");
 
     // Test case for a binary string of all zeros.
-    assert(solution.addBinary("0", "0") == "0");
+    assert(binaryAddition.addBinary("0", "0") == "0");
 
     // Test case where both binary strings consist of all ones.
-    assert(solution.addBinary("1111", "1111") == "11110");
+    assert(binaryAddition.addBinary("1111", "1111") == "11110");
 
     // Test case where one binary string is zero and the other is non-zero.
-    assert(solution.addBinary("0", "10101") == "10101");
-    assert(solution.addBinary("10101", "0") == "10101");
+    assert(binaryAddition.addBinary("0", "10101") == "10101");
+    assert(binaryAddition.addBinary("10101", "0") == "10101");
 
     // Test case for large binary numbers with many digits.
-    assert(solution.addBinary("101010101010101010101010101010",
-                              "110110110110110110110110110110") ==
+    assert(binaryAddition.addBinary("101010101010101010101010101010",
+                                    "110110110110110110110110110110") ==
            "1100001100001100001100001100000");
 
     // Test case where one binary string is much longer than the other.
-    assert(solution.addBinary("1", "11111111") == "100000000");
+    assert(binaryAddition.addBinary("1", "11111111") == "100000000");
 
     // Test case for adding empty strings (edge case).
-    assert(solution.addBinary("", "") == "");
+    assert(binaryAddition.addBinary("", "") == "");
 
     // Test case where both binary strings consist of alternating ones and
     // zeros.
-    assert(solution.addBinary("10101010", "01010101") == "11111111");
+    assert(binaryAddition.addBinary("10101010", "01010101") == "11111111");
 
     std::cout << "All tests passed!" << std::endl;
 }
