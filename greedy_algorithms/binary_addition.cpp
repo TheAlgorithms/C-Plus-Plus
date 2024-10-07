@@ -1,13 +1,13 @@
-#include <iostream>
-#include <string>
 #include <algorithm>
 #include <cassert>
+#include <iostream>
+#include <string>
 
 /**
  * A class to perform binary addition of two binary strings.
  */
 class Solution {
-public:
+ public:
     /**
      * Adds two binary strings and returns the result as a binary string.
      *
@@ -28,8 +28,9 @@ public:
 
             // Calculate the sum of bits and carry
             int sum = bitA + bitB + carry;
-            carry = sum / 2; // Determine the carry for the next bit
-            result.push_back((sum % 2) + '0'); // Append the sum's current bit to result
+            carry = sum / 2;  // Determine the carry for the next bit
+            result.push_back((sum % 2) +
+                             '0');  // Append the sum's current bit to result
         }
 
         // If there's still a carry left, append it
@@ -69,15 +70,18 @@ void runTests() {
     assert(solution.addBinary("10101", "0") == "10101");
 
     // Test case for large binary numbers with many digits.
-    assert(solution.addBinary("101010101010101010101010101010", "110110110110110110110110110110") == "1100001100001100001100001100000");
+    assert(solution.addBinary("101010101010101010101010101010",
+                              "110110110110110110110110110110") ==
+           "1100001100001100001100001100000");
 
     // Test case where one binary string is much longer than the other.
     assert(solution.addBinary("1", "11111111") == "100000000");
 
     // Test case for adding empty strings (edge case).
-    assert(solution.addBinary("", "") == "0");
+    assert(solution.addBinary("", "") == "");
 
-    // Test case where both binary strings consist of alternating ones and zeros.
+    // Test case where both binary strings consist of alternating ones and
+    // zeros.
     assert(solution.addBinary("10101010", "01010101") == "11111111");
 
     std::cout << "All tests passed!" << std::endl;
