@@ -23,11 +23,11 @@
  * Thank you!
  **/
 
-#include <iostream>        // for input and output read/write.
-#include <unordered_map>   // for character frequency map.
-#include <deque>           // for push and pop operations at O(1) time.
-#include <string>          // for taking string as input.
-#include <cassert>         // for assert.
+#include <iostream>        // for IO Operations
+#include <unordered_map>   // for std::unordered_map
+#include <deque>           // for std::deque
+#include <string>          // for string class/string datatype which is taken as input
+#include <cassert>         // for assert
 
 /**
  * @class Longest_Substring
