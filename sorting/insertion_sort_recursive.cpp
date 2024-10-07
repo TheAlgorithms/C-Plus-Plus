@@ -99,7 +99,8 @@ static void create_random_array(T *arr, int N) {
 }
 
 /** 
- * @brief Test Cases for the sorting algorithm 
+ * @brief self test implementation
+ * @return void
  */
 static void tests() {
     int arr1[10] = {78, 34, 35, 6, 34, 56, 3, 56, 2, 4};
