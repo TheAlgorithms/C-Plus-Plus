@@ -43,84 +43,90 @@
  * (as \f$a\times a^{-1} = 1\f$)
  */
 
-#include <cassert>   /// for assert
-#include <iostream>  /// for IO implementations
+#include <cassert>  /// for assert
+#include <cstdint>  /// for int64_t
+#include <iostream> /// for IO implementations
 
 /**
  * @namespace math
- * @brief Maths algorithms
+ * @brief Maths algorithms.
  */
 namespace math {
 /**
- * @namespace modular_inverse_fermat_little_theorem
- * @brief Calculate modular inverse using Fermat's Little Theorem
+ * @namespace modular_inverse_fermat
+ * @brief Calculate modular inverse using Fermat's Little Theorem.
  */
-namespace modular_inverse_fermat_little_theorem {
-/** 
- * @brief Calculate exponent with modulo using divide-and-conquer.
+namespace modular_inverse_fermat {
+/**
+ * @brief Calculate exponent with modulo using binary exponentiation.
  * @param a The base
  * @param b The exponent
  * @param m The modulo
- * @return res The result of \f$a^{b} % m\f$
+ * @return The result of \f$a^{b} % m\f$
  */
-int64_t binExpo(int64_t a, int64_t b, int64_t m) {
-    a %= m;
-    int64_t res = 1;
-    while (b > 0) {
-        if (b % 2) {
-            res = res * a % m;
-        }
-        a = a * a % m;
-        // Dividing b by 2 is similar to right shift.
-        b >>= 1;
+std::int64_t binExpo(std::int64_t a, std::int64_t b, std::int64_t m) {
+  a %= m;
+  std::int64_t res = 1;
+  while (b > 0) {
+    if (b % 2 != 0) {
+      res = res * a % m;
     }
-    return res;
+    a = a * a % m;
+    // Dividing b by 2 is similar to right shift by 1 bit
+    b >>= 1;
+  }
+  return res;
 }
 /**
- * @brief Check if a given integer is a prime number
+ * @brief Check if a given integer is a prime number.
  * @param m An intger to check for primality
- * @return 'true' if the number is prime
- * @return 'false' if the number is not prime
+ * @return 'true' if the number is prime, otherwise 'false'
  */
-bool isPrime(int64_t m) {
-    if (m <= 1) {
-        return false;
-    } else {
-        for (int64_t i = 2; i * i <= m; i++) {
-            if (m % i == 0) {
-                return false;
-            }
-        }
+bool isPrime(std::int64_t m) {
+  if (m <= 1) {
+    return false;
+  } 
+  for (std::int64_t i = 2; i * i <= m; i++) {
+    if (m % i == 0) {
+      return false;
     }
-    return true;
+  }
+  return true;
 }
 /**
- * @brief Main function to calculate modular inverse
- * @param a Integer value for base
+ * @brief Main function to calculate the modular inverse.
+ * @param a Integer value for the base
  * @param m Integer value for modulo
- * @return the result that is the modular inverse of a modulo m
+ * @return The result that is the modular inverse of a modulo m
  */
-int64_t modular_inverse(int64_t a, int64_t m) {
-    // modulo m is not prime
-    if (!isPrime(m)) {
-        return -1;    // Using -1 to mark for invalid input
-    }
-    return binExpo(a, m - 2, m);  
+std::int64_t modular_inverse(std::int64_t a, std::int64_t m) {
+  while (a < 0) {
+    a += m;
+  }
+
+  // Check for invalid cases
+  if (!isPrime(m) || a == 0) {
+    return -1; // Invalid input
+  }
+
+  return binExpo(a, m - 2, m);  // Fermat's Little Theorem
 }
-}  // namespace modular_inverse_fermat_little_theorem
-}  // namespace math
+} // namespace modular_inverse_fermat
+} // namespace math
 
 /**
  * @brief Self-test implementation
  * @return void
  */
 static void test() {
-    assert(math::modular_inverse_fermat_little_theorem::modular_inverse(3, 6) == -1); 
-    assert(math::modular_inverse_fermat_little_theorem::modular_inverse(3, 7) == 5); 
-    assert(math::modular_inverse_fermat_little_theorem::modular_inverse(1, 1) == 1);
-    assert(math::modular_inverse_fermat_little_theorem::modular_inverse(1, 1) == 1);
-    assert(math::modular_inverse_fermat_little_theorem::modular_inverse(1, 1) == 1);
-    assert(math::modular_inverse_fermat_little_theorem::modular_inverse(1, 1) == 1); 
+  assert(math::modular_inverse_fermat::modular_inverse(0, 97) == -1);
+  assert(math::modular_inverse_fermat::modular_inverse(15, -2) == -1);
+  assert(math::modular_inverse_fermat::modular_inverse(3, 10) == -1);
+  assert(math::modular_inverse_fermat::modular_inverse(3, 7) == 5);
+  assert(math::modular_inverse_fermat::modular_inverse(1, 101) == 1);
+  assert(math::modular_inverse_fermat::modular_inverse(-1337, 285179) == 165519);
+  assert(math::modular_inverse_fermat::modular_inverse(123456789, 998244353) == 25170271);
+  assert(math::modular_inverse_fermat::modular_inverse(-9876543210, 1000000007) == 784794281);
 }
 
 /**
@@ -128,6 +134,6 @@ static void test() {
  * @return 0 on exit
  */
 int main() {
-    test();
-    return 0;
+  test();  // run self-test implementation
+  return 0;
 }
