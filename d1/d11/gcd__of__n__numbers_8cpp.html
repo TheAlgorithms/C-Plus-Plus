@@ -105,73 +105,193 @@ $(function(){initNavTree('d1/d11/gcd__of__n__numbers_8cpp.html','../../'); initR
 
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">gcd_of_n_numbers.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>This program aims at calculating the GCD of n numbers by division method.  
+<p>This program aims at calculating the GCD of n numbers.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for gcd_of_n_numbers.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d7d/gcd__of__n__numbers_8cpp__incl.svg" width="200" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d7d/gcd__of__n__numbers_8cpp__incl.svg" width="344" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html">math</a></td></tr>
+<tr class="memdesc:dd/d47/namespacemath"><td class="mdescLeft">&#160;</td><td class="mdescRight">for IO operations <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddb/namespacegcd__of__n__numbers.html">gcd_of_n_numbers</a></td></tr>
+<tr class="memdesc:d2/ddb/namespacegcd__of__n__numbers"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute GCD of numbers in an array. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a25034543c20f271da04fb24ad2b2747a" id="r_a25034543c20f271da04fb24ad2b2747a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25034543c20f271da04fb24ad2b2747a">gcd</a> (int *a, int n)</td></tr>
-<tr class="separator:a25034543c20f271da04fb24ad2b2747a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a509a35e11ed1e17a9e00dd56320a4181" id="r_a509a35e11ed1e17a9e00dd56320a4181"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a509a35e11ed1e17a9e00dd56320a4181">math::gcd_of_n_numbers::gcd_two</a> (int x, int y)</td></tr>
+<tr class="memdesc:a509a35e11ed1e17a9e00dd56320a4181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to compute GCD of 2 numbers x and y.  <br /></td></tr>
+<tr class="separator:a509a35e11ed1e17a9e00dd56320a4181"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b9357c7a722f8208499d9ba573297a" id="r_a71b9357c7a722f8208499d9ba573297a"><td class="memTemplParams" colspan="2">template&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> n&gt; </td></tr>
+<tr class="memitem:a71b9357c7a722f8208499d9ba573297a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a71b9357c7a722f8208499d9ba573297a">math::gcd_of_n_numbers::check_all_zeros</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, n &gt; &amp;a)</td></tr>
+<tr class="memdesc:a71b9357c7a722f8208499d9ba573297a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to check if all elements in the array are 0.  <br /></td></tr>
+<tr class="separator:a71b9357c7a722f8208499d9ba573297a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1161713c662a14c2d5e33504f4324532" id="r_a1161713c662a14c2d5e33504f4324532"><td class="memTemplParams" colspan="2">template&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> n&gt; </td></tr>
+<tr class="memitem:a1161713c662a14c2d5e33504f4324532"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a1161713c662a14c2d5e33504f4324532">math::gcd_of_n_numbers::gcd</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, n &gt; &amp;a)</td></tr>
+<tr class="memdesc:a1161713c662a14c2d5e33504f4324532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main program to compute GCD using the Euclidean algorithm.  <br /></td></tr>
+<tr class="separator:a1161713c662a14c2d5e33504f4324532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
+<tr class="memdesc:aa8dca7b867074164d5f45b0f3851269d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test implementation.  <br /></td></tr>
+<tr class="separator:aa8dca7b867074164d5f45b0f3851269d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <br /></td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This program aims at calculating the GCD of n numbers by division method. </p>
+<div class="textblock"><p>This program aims at calculating the GCD of n numbers. </p>
+<p>The GCD of n numbers can be calculated by repeatedly calculating the GCDs of pairs of numbers i.e. \(\gcd(a, b, c)\) = \(\gcd(\gcd(a, b), c)\) Euclidean algorithm helps calculate the GCD of each pair of numbers efficiently</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d4/da0/gcd__iterative__euclidean_8cpp.html" title="Compute the greatest common denominator of two integers using iterative form of Euclidean algorithm">gcd_iterative_euclidean.cpp</a>, <a class="el" href="../../d4/d45/gcd__recursive__euclidean_8cpp.html" title="Compute the greatest common denominator of two integers using recursive form of Euclidean algorithm">gcd_recursive_euclidean.cpp</a> </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a25034543c20f271da04fb24ad2b2747a" name="a25034543c20f271da04fb24ad2b2747a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25034543c20f271da04fb24ad2b2747a">&#9670;&#160;</a></span>gcd()</h2>
+<a id="a71b9357c7a722f8208499d9ba573297a" name="a71b9357c7a722f8208499d9ba573297a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71b9357c7a722f8208499d9ba573297a">&#9670;&#160;</a></span>check_all_zeros()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> n&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool math::gcd_of_n_numbers::check_all_zeros </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, n &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to check if all elements in the array are 0. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>Array of numbers </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>'True' if all elements are 0 </dd>
+<dd>
+'False' if not all elements are 0 </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   53</span>                                                {</div>
+<div class="line"><span class="lineno">   54</span>  <span class="comment">// Use std::all_of to simplify zero-checking</span></div>
+<div class="line"><span class="lineno">   55</span>  <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/all_any_none_of.html">std::all_of</a>(a.begin(), a.end(), [](<span class="keywordtype">int</span> x) { return x == 0; });</div>
+<div class="line"><span class="lineno">   56</span>}</div>
+<div class="ttc" id="aall_any_none_of_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/all_any_none_of.html">std::all_of</a></div><div class="ttdeci">T all_of(T... args)</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d11/gcd__of__n__numbers_8cpp_a71b9357c7a722f8208499d9ba573297a_cgraph.svg" width="306" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a1161713c662a14c2d5e33504f4324532" name="a1161713c662a14c2d5e33504f4324532"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1161713c662a14c2d5e33504f4324532">&#9670;&#160;</a></span>gcd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> n&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int math::gcd_of_n_numbers::gcd </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, n &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Main program to compute GCD using the Euclidean algorithm. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>Array of integers to compute GCD for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GCD of the numbers in the array or std::nullopt if undefined </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   64</span>                                   {</div>
+<div class="line"><span class="lineno">   65</span>  <span class="comment">// GCD is undefined if all elements in the array are 0</span></div>
+<div class="line"><span class="lineno">   66</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="#a71b9357c7a722f8208499d9ba573297a">check_all_zeros</a>(a)) {</div>
+<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">return</span> -1; <span class="comment">// Use std::optional to represent undefined GCD</span></div>
+<div class="line"><span class="lineno">   68</span>  }</div>
+<div class="line"><span class="lineno">   69</span> </div>
+<div class="line"><span class="lineno">   70</span>  <span class="comment">// divisors can be negative, we only want the positive value</span></div>
+<div class="line"><span class="lineno">   71</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = std::abs(a[0]);</div>
+<div class="line"><span class="lineno">   72</span>  <span class="keywordflow">for</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> i = 1; i &lt; n; ++i) {</div>
+<div class="line"><span class="lineno">   73</span>    <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = <a class="code hl_function" href="#a509a35e11ed1e17a9e00dd56320a4181">gcd_two</a>(result, std::abs(a[i]));</div>
+<div class="line"><span class="lineno">   74</span>    <span class="keywordflow">if</span> (result == 1) {</div>
+<div class="line"><span class="lineno">   75</span>      <span class="keywordflow">break</span>; <span class="comment">// Further computations still result in gcd of 1</span></div>
+<div class="line"><span class="lineno">   76</span>    }</div>
+<div class="line"><span class="lineno">   77</span>  }</div>
+<div class="line"><span class="lineno">   78</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
+<div class="line"><span class="lineno">   79</span>}</div>
+<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> fibonacci_sum.cpp:76</div></div>
+<div class="ttc" id="agcd__of__n__numbers_8cpp_html_a509a35e11ed1e17a9e00dd56320a4181"><div class="ttname"><a href="#a509a35e11ed1e17a9e00dd56320a4181">math::gcd_of_n_numbers::gcd_two</a></div><div class="ttdeci">int gcd_two(int x, int y)</div><div class="ttdoc">Function to compute GCD of 2 numbers x and y.</div><div class="ttdef"><b>Definition</b> gcd_of_n_numbers.cpp:35</div></div>
+<div class="ttc" id="agcd__of__n__numbers_8cpp_html_a71b9357c7a722f8208499d9ba573297a"><div class="ttname"><a href="#a71b9357c7a722f8208499d9ba573297a">math::gcd_of_n_numbers::check_all_zeros</a></div><div class="ttdeci">bool check_all_zeros(const std::array&lt; int, n &gt; &amp;a)</div><div class="ttdoc">Function to check if all elements in the array are 0.</div><div class="ttdef"><b>Definition</b> gcd_of_n_numbers.cpp:53</div></div>
+<div class="ttc" id="asize_t_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d11/gcd__of__n__numbers_8cpp_a1161713c662a14c2d5e33504f4324532_cgraph.svg" width="551" height="215"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a509a35e11ed1e17a9e00dd56320a4181" name="a509a35e11ed1e17a9e00dd56320a4181"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a509a35e11ed1e17a9e00dd56320a4181">&#9670;&#160;</a></span>gcd_two()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int gcd </td>
+          <td class="memname">int math::gcd_of_n_numbers::gcd_two </td>
           <td>(</td>
-          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>n</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Compute GCD using division algorithm</p>
+
+<p>Function to compute GCD of 2 numbers x and y. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td>array of integers to compute GCD for </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>number of integers in array <code>a</code> </td></tr>
+    <tr><td class="paramname">x</td><td>First number </td></tr>
+    <tr><td class="paramname">y</td><td>Second number </td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   15</span>                       {</div>
-<div class="line"><span class="lineno">   16</span>    <span class="keywordtype">int</span> j = 1;  <span class="comment">// to access all elements of the array starting from 1</span></div>
-<div class="line"><span class="lineno">   17</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="#a25034543c20f271da04fb24ad2b2747a">gcd</a> = a[0];</div>
-<div class="line"><span class="lineno">   18</span>    <span class="keywordflow">while</span> (j &lt; n) {</div>
-<div class="line"><span class="lineno">   19</span>        <span class="keywordflow">if</span> (a[j] % <a class="code hl_function" href="#a25034543c20f271da04fb24ad2b2747a">gcd</a> == 0)  <span class="comment">// value of gcd is as needed so far</span></div>
-<div class="line"><span class="lineno">   20</span>            j++;              <span class="comment">// so we check for next element</span></div>
-<div class="line"><span class="lineno">   21</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   22</span>            <a class="code hl_function" href="#a25034543c20f271da04fb24ad2b2747a">gcd</a> = a[j] % <a class="code hl_function" href="#a25034543c20f271da04fb24ad2b2747a">gcd</a>;  <span class="comment">// calculating GCD by division method</span></div>
-<div class="line"><span class="lineno">   23</span>    }</div>
-<div class="line"><span class="lineno">   24</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="#a25034543c20f271da04fb24ad2b2747a">gcd</a>;</div>
-<div class="line"><span class="lineno">   25</span>}</div>
-<div class="ttc" id="agcd__of__n__numbers_8cpp_html_a25034543c20f271da04fb24ad2b2747a"><div class="ttname"><a href="#a25034543c20f271da04fb24ad2b2747a">gcd</a></div><div class="ttdeci">int gcd(int *a, int n)</div><div class="ttdef"><b>Definition</b> gcd_of_n_numbers.cpp:15</div></div>
+<dl class="section return"><dt>Returns</dt><dd>GCD of x and y via recursion </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   35</span>                          {</div>
+<div class="line"><span class="lineno">   36</span>  <span class="comment">// base cases</span></div>
+<div class="line"><span class="lineno">   37</span>  <span class="keywordflow">if</span> (y == 0) {</div>
+<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">return</span> x;</div>
+<div class="line"><span class="lineno">   39</span>  }</div>
+<div class="line"><span class="lineno">   40</span>  <span class="keywordflow">if</span> (x == 0) {</div>
+<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">return</span> y;</div>
+<div class="line"><span class="lineno">   42</span>  }</div>
+<div class="line"><span class="lineno">   43</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="#a509a35e11ed1e17a9e00dd56320a4181">gcd_two</a>(y, x % y); <span class="comment">// Euclidean method</span></div>
+<div class="line"><span class="lineno">   44</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d11/gcd__of__n__numbers_8cpp_a25034543c20f271da04fb24ad2b2747a_cgraph.svg" width="54" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d11/gcd__of__n__numbers_8cpp_a509a35e11ed1e17a9e00dd56320a4181_cgraph.svg" width="179" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -190,30 +310,68 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Main function </p>
-<div class="fragment"><div class="line"><span class="lineno">   28</span>           {</div>
-<div class="line"><span class="lineno">   29</span>    <span class="keywordtype">int</span> n;</div>
-<div class="line"><span class="lineno">   30</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter value of n:&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   31</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n;</div>
-<div class="line"><span class="lineno">   32</span>    <span class="keywordtype">int</span> *a = <span class="keyword">new</span> <span class="keywordtype">int</span>[n];</div>
-<div class="line"><span class="lineno">   33</span>    <span class="keywordtype">int</span> i;</div>
-<div class="line"><span class="lineno">   34</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter the n numbers:&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">for</span> (i = 0; i &lt; n; i++) std::cin &gt;&gt; a[i];</div>
-<div class="line"><span class="lineno">   36</span> </div>
-<div class="line"><span class="lineno">   37</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;GCD of entered n numbers:&quot;</span> &lt;&lt; <a class="code hl_function" href="#a25034543c20f271da04fb24ad2b2747a">gcd</a>(a, n) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   38</span> </div>
-<div class="line"><span class="lineno">   39</span>    <span class="keyword">delete</span>[] a;</div>
-<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   41</span>}</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
+
+<p>Main function. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  111</span>           {</div>
+<div class="line"><span class="lineno">  112</span>  <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>(); <span class="comment">// run self-test implementation</span></div>
+<div class="line"><span class="lineno">  113</span>  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  114</span>}</div>
+<div class="ttc" id="agcd__of__n__numbers_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementation.</div><div class="ttdef"><b>Definition</b> gcd_of_n_numbers.cpp:87</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d11/gcd__of__n__numbers_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="180" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d11/gcd__of__n__numbers_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="152" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
+</div>
+</div>
+<a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8dca7b867074164d5f45b0f3851269d">&#9670;&#160;</a></span>test()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void test </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Self-test implementation. </p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   87</span>                   {</div>
+<div class="line"><span class="lineno">   88</span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, 1&gt;</a> array_1 = {0};</div>
+<div class="line"><span class="lineno">   89</span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, 1&gt;</a> array_2 = {1};</div>
+<div class="line"><span class="lineno">   90</span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, 2&gt;</a> array_3 = {0, 2};</div>
+<div class="line"><span class="lineno">   91</span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, 3&gt;</a> array_4 = {-60, 24, 18};</div>
+<div class="line"><span class="lineno">   92</span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, 4&gt;</a> array_5 = {100, -100, -100, 200};</div>
+<div class="line"><span class="lineno">   93</span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, 5&gt;</a> array_6 = {0, 0, 0, 0, 0};</div>
+<div class="line"><span class="lineno">   94</span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, 7&gt;</a> array_7 = {10350, -24150, 0, 17250, 37950, -127650, 51750};</div>
+<div class="line"><span class="lineno">   95</span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, 7&gt;</a> array_8 = {9500000, -12121200, 0, 4444, 0, 0, 123456789};</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>  assert(math::gcd_of_n_numbers::gcd(array_1) == -1);</div>
+<div class="line"><span class="lineno">   98</span>  assert(math::gcd_of_n_numbers::gcd(array_2) == 1);</div>
+<div class="line"><span class="lineno">   99</span>  assert(math::gcd_of_n_numbers::gcd(array_3) == 2);</div>
+<div class="line"><span class="lineno">  100</span>  assert(math::gcd_of_n_numbers::gcd(array_4) == 6);</div>
+<div class="line"><span class="lineno">  101</span>  assert(math::gcd_of_n_numbers::gcd(array_5) == 100);</div>
+<div class="line"><span class="lineno">  102</span>  assert(math::gcd_of_n_numbers::gcd(array_6) == -1);</div>
+<div class="line"><span class="lineno">  103</span>  assert(math::gcd_of_n_numbers::gcd(array_7) == 3450);</div>
+<div class="line"><span class="lineno">  104</span>  assert(math::gcd_of_n_numbers::gcd(array_8) == 1);</div>
+<div class="line"><span class="lineno">  105</span>}</div>
+<div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

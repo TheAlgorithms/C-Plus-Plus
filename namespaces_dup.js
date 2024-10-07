@@ -41,6 +41,7 @@ var namespaces_dup =
     [ "fibonacci_sum", "d3/dc9/namespacefibonacci__sum.html", null ],
     [ "find_non_repeating_integer", "d2/da7/namespacefind__non__repeating__integer.html", null ],
     [ "games", "da/d9c/namespacegames.html", "da/d9c/namespacegames" ],
+    [ "gcd_of_n_numbers", "d2/ddb/namespacegcd__of__n__numbers.html", null ],
     [ "geometric_dist", "dd/d8a/namespacegeometric__dist.html", null ],
     [ "geometry", "d5/d5f/namespacegeometry.html", null ],
     [ "gram_schmidt", "d4/d0f/namespacegram__schmidt.html", null ],
