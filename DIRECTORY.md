@@ -400,6 +400,7 @@
 ## Strings
   * [Boyer Moore](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/strings/boyer_moore.cpp)
   * [Brute Force String Searching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/strings/brute_force_string_searching.cpp)
+  * [Duval](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/strings/duval.cpp)
   * [Horspool](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/strings/horspool.cpp)
   * [Knuth Morris Pratt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/strings/knuth_morris_pratt.cpp)
   * [Manacher Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/strings/manacher_algorithm.cpp)
