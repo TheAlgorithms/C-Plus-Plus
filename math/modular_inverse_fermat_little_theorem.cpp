@@ -80,7 +80,8 @@ std::int64_t binExpo(std::int64_t a, std::int64_t b, std::int64_t m) {
 /**
  * @brief Check if a given integer is a prime number.
  * @param m An intger to check for primality
- * @return 'true' if the number is prime, otherwise 'false'
+ * @return true if the number is prime
+ * @return false if the number is not prime
  */
 bool isPrime(std::int64_t m) {
   if (m <= 1) {
