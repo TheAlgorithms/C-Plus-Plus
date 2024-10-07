@@ -144,9 +144,6 @@ static void tests() {
 
 /** 
  * @brief Main function
- * 
- * Empty except for the call to `tests()`.
- * 
  * @return 0 on successful exit.
  */
 int main() {
