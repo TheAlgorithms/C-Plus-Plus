@@ -247,12 +247,17 @@ static void test() {
     assert(cache.capacity() == 5);
     assert(!cache.empty());
 
-    // test retrieval of all items in the cache
     // fetching 1 throws runtime_error
     // as 1 was evicted being the least recently used
     // when 6 was added
-    // assert(cache.get(1) == 10);
+    try {
+        cache.get(1);
+        assert(false);
+    } catch (const std::runtime_error &e) {
+        std::cout << "Expected - std::runtime_error\n";
+    }
 
+    // test retrieval of all items in the cache
     assert(cache.get(-2) == 20);
     assert(cache.get(-3) == -30);
     assert(cache.get(4) == 40);
