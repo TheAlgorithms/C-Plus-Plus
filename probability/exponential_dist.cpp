@@ -1,7 +1,6 @@
 /**
  * @file
  * @brief [Exponential Distribution](https://en.wikipedia.org/wiki/Exponential_distribution)
- * @brief [Exponential Distribution](https://en.wikipedia.org/wiki/Exponential_distribution)
  * 
  * The exponential distribution is used to model
  * events occuring between a Poisson process like radioactive decay.
