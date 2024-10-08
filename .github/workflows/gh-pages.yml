@@ -1,8 +1,8 @@
 name: Doxygen CI
 
-on: 
+on:
   push:
-    branches: [master]
+    branches: [doxygen-awesome]
 
 jobs:
   build:
