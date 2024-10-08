@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
-project(Algorithms_in_C++
+project(TheAlgorithms/C++
     LANGUAGES CXX
     VERSION 1.0.0
     DESCRIPTION "Set of algorithms implemented in C++."
@@ -56,7 +56,7 @@ if(DOXYGEN_FOUND)
         set(DOXYGEN_CPP_CLI_SUPPORT YES)
     endif()
 
-    set(DOXYGEN_HTML_STYLESHEET ${PROJECT_SOURCE_DIR}/doc/style/doxygen-awesome.css)
+    set(DOXYGEN_HTML_EXTRA_STYLESHEET ${CMAKE_CURRENT_SOURCE_DIR}/doc/styles/doxygen-awesome.css)
 
     if(Doxygen_dot_FOUND)
         set(DOXYGEN_HAVE_DOT YES)
@@ -78,7 +78,7 @@ if(DOXYGEN_FOUND)
         doc
         ${PROJECT_SOURCE_DIR}
         COMMENT "Generate documentation"
-        ${PROJECT_SOURCE_DIR}/Doxyfile
+        ${PROJECT_SOURCE_DIR}/doc/Doxyfile
     )
 endif()
 
