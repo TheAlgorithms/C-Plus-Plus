@@ -95,7 +95,7 @@ int unboundedKnapsack(std::uint16_t N, std::uint16_t W,
  * @details This function tests the implementation with predefined test cases.
  * It asserts the expected outcomes to ensure correctness of the algorithm.
  */
-void tests() {
+static void tests() {
     // Test Case 1
     std::uint16_t N1 = 4;  // Number of items
     std::vector<std::uint16_t> wt1 = {1, 3, 4, 5}; // Weights of the items
