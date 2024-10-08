@@ -78,6 +78,6 @@ void tests() {
 }
 
 int main() {
-    test_cases();
+    tests(); // run self test implementation
     return 0;
 }
