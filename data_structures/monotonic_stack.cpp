@@ -14,8 +14,8 @@
 #include <stdexcept>      /// For std::out_of_range
 
 /**
- * @namespace algorithms
- * @brief A namespace for various algorithm implementations
+ * @namespace data_structures
+ * @brief A namespace for various data structure implementations
  */
 namespace data_structures {
 
@@ -40,12 +40,17 @@ class MonotonicStack {
     }
 
     /**
-     * @brief Pop the top element
+     * @brief Pop the top element and return it
+     * @return the top element of the stack
+     * @throws std::out_of_range if the stack is empty
      */
-    void pop() {
+    int pop() {
         if (!stack.empty()) {
+            int topElement = stack.back();  // Get the top element
             stack.pop_back();  // Remove the top element
+            return topElement;  // Return the top element
         }
+        throw std::out_of_range("Stack is empty");  // Error if stack is empty
     }
 
     /**
@@ -69,14 +74,14 @@ class MonotonicStack {
     }
 };
 
-}  // namespace algorithms
+}  // namespace data_structures
 
 /**
  * @brief Self-test implementations
  * @returns void
  */
 static void tests() {
-    algorithms::MonotonicStack ms;  // Create an instance of MonotonicStack
+    data_structures::MonotonicStack ms;  // Create an instance of MonotonicStack
     ms.push(3);                     // Push elements onto the stack
     ms.push(1);
     ms.push(2);
@@ -85,7 +90,7 @@ static void tests() {
 
     for (int value : expected) {
         assert(ms.top() == value);  // Assert that the top matches expected value
-        ms.pop();                   // Pop the top element
+        assert(ms.pop() == value);  // Assert that pop returns the correct value
     }
     assert(ms.empty() == true);     // Assert that the stack is empty
 
