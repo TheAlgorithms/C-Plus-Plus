@@ -56,6 +56,8 @@ if(DOXYGEN_FOUND)
         set(DOXYGEN_CPP_CLI_SUPPORT YES)
     endif()
 
+    set(DOXYGEN_HTML_STYLESHEET ${PROJECT_SOURCE_DIR}/doc/style/doxygen-awesome.css)
+
     if(Doxygen_dot_FOUND)
         set(DOXYGEN_HAVE_DOT YES)
         set(DOXYGEN_CALL_GRAPH YES)
