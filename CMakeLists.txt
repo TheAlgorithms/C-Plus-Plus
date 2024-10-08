@@ -58,6 +58,17 @@ if(DOXYGEN_FOUND)
 
     set(DOXYGEN_HTML_EXTRA_STYLESHEET ${CMAKE_CURRENT_SOURCE_DIR}/doc/styles/doxygen-awesome.css)
 
+    # doxygen config
+    set(DOXYGEN_GENERATE_TREEVIEW YES)
+
+    # mathjax configs
+    set(DOXYGEN_USE_MATHJAX YES)
+    set(DOXYGEN_MATHJAX_VERSION MathJax_3)
+    set(DOXYGEN_MATHJAX_RELPATH https://cdn.jsdelivr.net/npm/mathjax@3)
+    set(DOXYGEN_MATHJAX_EXTENSIONS ams)
+    set(DOXYGEN_EXTRA_PACKAGES mathtools amsmath)
+
+
     if(Doxygen_dot_FOUND)
         set(DOXYGEN_HAVE_DOT YES)
         set(DOXYGEN_CALL_GRAPH YES)
