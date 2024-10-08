@@ -9,7 +9,7 @@
  * @task Given a set of N items, each with a weight and a value, represented by the array `wt` and `val` respectively, and a knapsack 
  * with a weight limit W, the task is to fill the knapsack in such a way that the maximum profit is obtained. Return the maximum profit.
  * 
- * Note: Each item can be taken any number of times.
+ * @note Each item can be taken any number of times.
  *
  * @author [Sanskruti Yeole](https://github.com/yeolesanskruti)
  * @see dynamic_programming/Unbounded_knapsack.cpp
