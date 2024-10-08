@@ -7,192 +7,424 @@
  * the C++ STL features.
  */
 #include <algorithm>  /// for std::max
+#include <cassert>    /// for assert
 #include <iostream>   /// for std::cout
+#include <memory>     /// for std::unique_ptr
 #include <queue>      /// for std::queue
+#include <sstream>    /// for std::ostringstream
+#include <vector>     /// for std::vector
 
-using node = struct node {
-    int data;
-    int height;
-    struct node *left;
-    struct node *right;
+class AVLTree {
+ public:
+    struct Node {
+        int data;
+        int height;
+        std::unique_ptr<Node> left;
+        std::unique_ptr<Node> right;
+
+        Node(int val) : data(val), height(1), left(nullptr), right(nullptr) {}
+    };
+
+    AVLTree() : root(nullptr) {}
+
+    /**
+     * @brief inserts a new element into AVL tree
+     * @param root of the tree
+     * @param[in] data the element to be insterted into the tree
+     * @return root of the updated tree
+     */
+    void insert(int data) { root = insert(std::move(root), data); }
+
+    /**
+     * @brief removes a given element from AVL tree
+     * @param root of the tree
+     * @param[in] data the element to be deleted from the tree
+     * @return root of the updated tree
+     */
+    void deleteNode(int data) { root = deleteNode(std::move(root), data); }
+
+    /**
+     * @brief prints given tree in the LevelOrder
+     * @param[in] root of the tree
+     */
+    void levelOrder() const {
+        if (!root)
+            return;
+        std::queue<Node*> q;
+        q.push(root.get());
+        while (!q.empty()) {
+            Node* current = q.front();
+            std::cout << current->data << " ";
+            q.pop();
+            if (current->left)
+                q.push(current->left.get());
+            if (current->right)
+                q.push(current->right.get());
+        }
+        std::cout << "\n";
+    }
+
+    /**
+     * @brief deletes the tree
+     */
+    void deleteTree() { root.reset(); }
+
+ private:
+    std::unique_ptr<Node> root;
+
+    /**
+     * @brief returns the height of the node
+     * @param[in] node the node whose height is to be calculated
+     * @return height of the node
+     */
+    int height(const std::unique_ptr<Node>& node) const {
+        return node ? node->height : 0;
+    }
+
+    /**
+     * @brief returns the balance factor of the node
+     * @param[in] node the node whose balance factor is to be calculated
+     * @return balance factor(difference between height of left and right
+     * subtree) of the node
+     */
+    int getBalance(const std::unique_ptr<Node>& node) const {
+        return node ? height(node->left) - height(node->right) : 0;
+    }
+
+    /**
+     * @brief rotates the node to the right
+     * @param[in] y the node to be rotated
+     * @return the new root of the subtree
+     */
+    std::unique_ptr<Node> rightRotate(std::unique_ptr<Node> y) {
+        std::unique_ptr<Node> x = std::move(y->left);
+        y->left = std::move(x->right);
+        x->right = std::move(y);
+        x->right->height =
+            std::max(height(x->right->left), height(x->right->right)) + 1;
+        x->height = std::max(height(x->left), height(x->right)) + 1;
+        return x;
+    }
+
+    /**
+     * @brief rotates the node to the left
+     * @param[in] node the node to be rotated
+     * @return the new root of the subtree
+     */
+    std::unique_ptr<Node> leftRotate(std::unique_ptr<Node> x) {
+        std::unique_ptr<Node> y = std::move(x->right);
+        x->right = std::move(y->left);
+        y->left = std::move(x);
+        y->left->height =
+            std::max(height(y->left->left), height(y->left->right)) + 1;
+        y->height = std::max(height(y->left), height(y->right)) + 1;
+        return y;
+    }
+
+    /**
+     * @brief inserts a new element into AVL tree
+     * @param root of the tree
+     * @param[in] data the element to be insterted into the tree
+     * @return root of the updated tree
+     */
+    std::unique_ptr<Node> insert(std::unique_ptr<Node> node, int data) {
+        if (!node)
+            return std::make_unique<Node>(data);
+
+        if (data < node->data) {
+            node->left = insert(std::move(node->left), data);
+        } else if (data > node->data) {
+            node->right = insert(std::move(node->right), data);
+        } else {
+            return node;
+        }
+
+        node->height = std::max(height(node->left), height(node->right)) + 1;
+        int balance = getBalance(node);
+
+        if (balance > 1 && data < node->left->data) {
+            return rightRotate(std::move(node));
+        }
+        if (balance < -1 && data > node->right->data) {
+            return leftRotate(std::move(node));
+        }
+        if (balance > 1 && data > node->left->data) {
+            node->left = leftRotate(std::move(node->left));
+            return rightRotate(std::move(node));
+        }
+        if (balance < -1 && data < node->right->data) {
+            node->right = rightRotate(std::move(node->right));
+            return leftRotate(std::move(node));
+        }
+
+        return node;
+    }
+
+    /**
+     * @brief removes a given element from AVL tree
+     * @param root of the tree
+     * @param[in] data the element to be deleted from the tree
+     * @return root of the updated tree
+     */
+    std::unique_ptr<Node> deleteNode(std::unique_ptr<Node> root, int data) {
+        if (!root)
+            return root;
+
+        if (data < root->data) {
+            root->left = deleteNode(std::move(root->left), data);
+        } else if (data > root->data) {
+            root->right = deleteNode(std::move(root->right), data);
+        } else {
+            if (!root->left || !root->right) {
+                return std::move(root->left ? root->left : root->right);
+            }
+
+            Node* temp = minValue(root->right.get());
+            root->data = temp->data;
+            root->right = deleteNode(std::move(root->right), temp->data);
+        }
+
+        root->height = std::max(height(root->left), height(root->right)) + 1;
+        int balance = getBalance(root);
+
+        if (balance > 1 && getBalance(root->left) >= 0) {
+            return rightRotate(std::move(root));
+        }
+        if (balance > 1 && getBalance(root->left) < 0) {
+            root->left = leftRotate(std::move(root->left));
+            return rightRotate(std::move(root));
+        }
+        if (balance < -1 && getBalance(root->right) <= 0) {
+            return leftRotate(std::move(root));
+        }
+        if (balance < -1 && getBalance(root->right) > 0) {
+            root->right = rightRotate(std::move(root->right));
+            return leftRotate(std::move(root));
+        }
+
+        return root;
+    }
+
+    /**
+     * @brief returns the node with minimum value in the tree
+     * @param[in] node the root of the tree
+     * @return the node with minimum value in the tree
+     */
+    Node* minValue(Node* node) {
+        Node* current = node;
+        while (current->left != nullptr) current = current->left.get();
+        return current;
+    }
 };
 
 /**
- * @brief creates and returns a new node
- * @param[in] data value stored in the node
- * @return newly created node
+ * @brief Function for testing insert().
+ *
+ * @returns `void`
  */
-node *createNode(int data) {
-    node *nn = new node();
-    nn->data = data;
-    nn->height = 0;
-    nn->left = nullptr;
-    nn->right = nullptr;
-    return nn;
+static void test_insert() {
+    std::cout << "Testing AVL insert...";
+
+    AVLTree tree;
+    tree.insert(5);
+    tree.insert(4);
+    tree.insert(3);
+    tree.insert(6);
+
+    std::ostringstream oss;
+    std::streambuf* old_cout =
+        std::cout.rdbuf(oss.rdbuf());  // Redirect std::cout to oss
+    tree.levelOrder();
+    std::cout.rdbuf(old_cout);  // Restore std::cout
+    std::string output = oss.str();
+    output.erase(std::remove_if(output.begin(), output.end(), ::isspace),
+                 output.end());  // Remove whitespaces
+    assert(output == "4356");
+
+    tree.insert(7);
+    tree.insert(2);
+    tree.insert(1);
+
+    oss.str("");
+    oss.clear();
+    std::cout.rdbuf(oss.rdbuf());
+    tree.levelOrder();
+    std::cout.rdbuf(old_cout);
+    output = oss.str();
+    output.erase(std::remove_if(output.begin(), output.end(), ::isspace),
+                 output.end());
+    assert(output == "4261357");
+
+    std::cout << "ok" << std::endl;
 }
 
 /**
- * @param[in] root the root of the tree
- * @return height of tree
+ * @brief Function for testing deleteNode().
+ *
+ * @returns `void`
  */
-int height(node *root) {
-    if (root == nullptr) {
-        return 0;
-    }
-    return 1 + std::max(height(root->left), height(root->right));
+static void test_deleteNode() {
+    std::cout << "Testing AVL deleteNode...";
+
+    AVLTree tree;
+    tree.insert(5);
+    tree.insert(4);
+    tree.insert(3);
+    tree.insert(6);
+
+    tree.deleteNode(5);
+
+    std::ostringstream oss;
+    std::streambuf* old_cout = std::cout.rdbuf(oss.rdbuf());
+    tree.levelOrder();
+    std::cout.rdbuf(old_cout);
+    std::string output = oss.str();
+    output.erase(std::remove_if(output.begin(), output.end(), ::isspace),
+                 output.end());
+    assert(output == "436");
+
+    tree.deleteNode(4);
+    tree.deleteNode(3);
+
+    oss.str("");
+    oss.clear();
+    std::cout.rdbuf(oss.rdbuf());
+    tree.levelOrder();
+    std::cout.rdbuf(old_cout);
+    output = oss.str();
+    output.erase(std::remove_if(output.begin(), output.end(), ::isspace),
+                 output.end());
+    assert(output == "6");
+
+    tree.deleteNode(6);
+
+    oss.str("");
+    oss.clear();
+    std::cout.rdbuf(oss.rdbuf());
+    tree.levelOrder();
+    std::cout.rdbuf(old_cout);
+    output = oss.str();
+    output.erase(std::remove_if(output.begin(), output.end(), ::isspace),
+                 output.end());
+    assert(output == "");
+
+    std::cout << "ok" << std::endl;
 }
 
 /**
- * @param[in] root of the tree
- * @return difference between height of left and right subtree
+ * @brief Function for testing levelOrder().
+ *
+ * @returns `void`
  */
-int getBalance(node *root) { return height(root->left) - height(root->right); }
+static void test_levelOrder() {
+    std::cout << "Testing AVL levelOrder...";
 
-/**
- * @param root of the tree to be rotated
- * @return node after right rotation
- */
-node *rightRotate(node *root) {
-    node *t = root->left;
-    node *u = t->right;
-    t->right = root;
-    root->left = u;
-    return t;
+    AVLTree tree;
+    tree.insert(5);
+    tree.insert(4);
+    tree.insert(3);
+    tree.insert(6);
+
+    std::ostringstream oss;
+    std::streambuf* old_cout = std::cout.rdbuf(oss.rdbuf());
+    tree.levelOrder();
+    std::cout.rdbuf(old_cout);
+    std::string output = oss.str();
+    output.erase(std::remove_if(output.begin(), output.end(), ::isspace),
+                 output.end());
+    assert(output == "4356");
+
+    std::cout << "ok" << std::endl;
 }
 
 /**
- * @param root of the tree to be rotated
- * @return node after left rotation
+ * @brief Function for testing tree balancing.
+ *
+ * @returns `void`
  */
-node *leftRotate(node *root) {
-    node *t = root->right;
-    node *u = t->left;
-    t->left = root;
-    root->right = u;
-    return t;
+static void test_balancing() {
+    std::cout << "Testing AVL balancing...";
+
+    AVLTree tree;
+    tree.insert(1);
+    tree.insert(2);
+    tree.insert(3);
+    tree.insert(4);
+    tree.insert(5);
+
+    std::ostringstream oss;
+    std::streambuf* old_cout = std::cout.rdbuf(oss.rdbuf());
+    tree.levelOrder();
+    std::cout.rdbuf(old_cout);
+    std::string output = oss.str();
+    output.erase(std::remove_if(output.begin(), output.end(), ::isspace),
+                 output.end());
+    assert(output == "21435");
+
+    tree.insert(6);
+    tree.insert(7);
+
+    oss.str("");
+    oss.clear();
+    std::cout.rdbuf(oss.rdbuf());
+    tree.levelOrder();
+    std::cout.rdbuf(old_cout);
+    output = oss.str();
+    output.erase(std::remove_if(output.begin(), output.end(), ::isspace),
+                 output.end());
+    assert(output == "4261357");
+
+    std::cout << "ok" << std::endl;
 }
 
 /**
- * @param root of the tree
- * @returns node with minimum value in the tree
+ * @brief Function for testing edge cases.
+ *
+ * @returns `void`
  */
-node *minValue(node *root) {
-    if (root->left == nullptr) {
-        return root;
-    }
-    return minValue(root->left);
+static void test_edge_cases() {
+    std::cout << "Testing AVL edge cases...";
+
+    AVLTree tree;
+
+    // Deleting from an empty tree
+    tree.deleteNode(1);
+    std::ostringstream oss;
+    std::streambuf* old_cout = std::cout.rdbuf(oss.rdbuf());
+    tree.levelOrder();
+    std::cout.rdbuf(old_cout);
+    std::string output = oss.str();
+    output.erase(std::remove_if(output.begin(), output.end(), ::isspace),
+                 output.end());
+    assert(output == "");
+
+    // Inserting duplicate elements
+    tree.insert(1);
+    tree.insert(1);
+    oss.str("");
+    oss.clear();
+    std::cout.rdbuf(oss.rdbuf());
+    tree.levelOrder();
+    std::cout.rdbuf(old_cout);
+    output = oss.str();
+    output.erase(std::remove_if(output.begin(), output.end(), ::isspace),
+                 output.end());
+    assert(output == "1");
+
+    std::cout << "ok" << std::endl;
 }
 
 /**
- * @brief inserts a new element into AVL tree
- * @param root of the tree
- * @param[in] item the element to be insterted into the tree
- * @return root of the updated tree
- */
-node *insert(node *root, int item) {
-    if (root == nullptr) {
-        return createNode(item);
-    }
-    if (item < root->data) {
-        root->left = insert(root->left, item);
-    } else {
-        root->right = insert(root->right, item);
-    }
-    int b = getBalance(root);
-    if (b > 1) {
-        if (getBalance(root->left) < 0) {
-            root->left = leftRotate(root->left);  // Left-Right Case
-        }
-        return rightRotate(root);  // Left-Left Case
-    } else if (b < -1) {
-        if (getBalance(root->right) > 0) {
-            root->right = rightRotate(root->right);  // Right-Left Case
-        }
-        return leftRotate(root);  // Right-Right Case
-    }
-    return root;
-}
-
-/**
- * @brief removes a given element from AVL tree
- * @param root of the tree
- * @param[in] element the element to be deleted from the tree
- * @return root of the updated tree
- */
-node *deleteNode(node *root, int element) {
-    if (root == nullptr) {
-        return root;
-    }
-    if (element < root->data) {
-        root->left = deleteNode(root->left, element);
-    } else if (element > root->data) {
-        root->right = deleteNode(root->right, element);
-
-    } else {
-        // Node to be deleted is leaf node or have only one Child
-        if (!root->right || !root->left) {
-            node *temp = !root->right ? root->left : root->right;
-            delete root;
-            return temp;
-        }
-        // Node to be deleted have both left and right subtrees
-        node *temp = minValue(root->right);
-        root->data = temp->data;
-        root->right = deleteNode(root->right, temp->data);
-    }
-    // Balancing Tree after deletion
-    return root;
-}
-
-/**
- * @brief calls delete on every node
- * @param root of the tree
- */
-void deleteAllNodes(const node *const root) {
-    if (root) {
-        deleteAllNodes(root->left);
-        deleteAllNodes(root->right);
-        delete root;
-    }
-}
-
-/**
- * @brief prints given tree in the LevelOrder
- * @param[in] root of the tree
- */
-void levelOrder(node *root) {
-    std::queue<node *> q;
-    q.push(root);
-    while (!q.empty()) {
-        root = q.front();
-        std::cout << root->data << " ";
-        q.pop();
-        if (root->left) {
-            q.push(root->left);
-        }
-        if (root->right) {
-            q.push(root->right);
-        }
-    }
-}
-
-/**
- * @brief Main function
+ * @brief Main function for running tests.
+ *
  * @returns 0 on exit
  */
 int main() {
-    // Testing AVL Tree
-    node *root = nullptr;
-    int i = 0;
-    for (i = 1; i <= 7; i++) root = insert(root, i);
-    std::cout << "LevelOrder: ";
-    levelOrder(root);
-    root = deleteNode(root, 1);  // Deleting key with value 1
-    std::cout << "\nLevelOrder: ";
-    levelOrder(root);
-    root = deleteNode(root, 4);  // Deletin key with value 4
-    std::cout << "\nLevelOrder: ";
-    levelOrder(root);
-    deleteAllNodes(root);
+    test_insert();
+    test_deleteNode();
+    test_levelOrder();
+    test_balancing();
+    test_edge_cases();
+    std::cout << "All tests passed!" << std::endl;
     return 0;
 }
