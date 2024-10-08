@@ -1,6 +1,6 @@
 /**
- * \file
- * \brief An implementation of AVL tree.
+ * @file
+ * @brief An implementation of AVL tree.
  */
 #include <algorithm>  /// for std::max
 #include <cassert>    /// for assert
@@ -10,14 +10,30 @@
 #include <sstream>    /// for std::ostringstream
 #include <vector>     /// for std::vector
 
+/**
+ * @brief Class for AVL tree.
+ * @details AVL tree is a self-balancing binary search tree where the difference
+ * between heights of left and right subtrees cannot be more than one for all
+ * nodes.
+ */
 class AVLTree {
  public:
+    /**
+     * @brief Node structure for AVL tree
+     * @details Contains the data, height of the node and pointers to left and
+     * right child nodes.
+     */
     struct Node {
         int data;
         int height;
         std::unique_ptr<Node> left;
         std::unique_ptr<Node> right;
 
+        /**
+         * @brief Constructor for Node, used to simplify node and
+         * smart pointer construction.
+         * @param val the value of the node
+         */
         Node(int val) : data(val), height(1), left(nullptr), right(nullptr) {}
     };
 
@@ -216,7 +232,7 @@ class AVLTree {
 /**
  * @brief Function for testing insert().
  *
- * @returns `void`
+ * @returns void
  */
 static void test_insert() {
     std::cout << "Testing AVL insert...";
@@ -257,7 +273,7 @@ static void test_insert() {
 /**
  * @brief Function for testing deleteNode().
  *
- * @returns `void`
+ * @returns void
  */
 static void test_deleteNode() {
     std::cout << "Testing AVL deleteNode...";
@@ -310,7 +326,7 @@ static void test_deleteNode() {
 /**
  * @brief Function for testing levelOrder().
  *
- * @returns `void`
+ * @returns void
  */
 static void test_levelOrder() {
     std::cout << "Testing AVL levelOrder...";
@@ -336,7 +352,7 @@ static void test_levelOrder() {
 /**
  * @brief Function for testing tree balancing.
  *
- * @returns `void`
+ * @returns void
  */
 static void test_balancing() {
     std::cout << "Testing AVL balancing...";
@@ -376,7 +392,7 @@ static void test_balancing() {
 /**
  * @brief Function for testing edge cases.
  *
- * @returns `void`
+ * @returns void
  */
 static void test_edge_cases() {
     std::cout << "Testing AVL edge cases...";
@@ -411,16 +427,25 @@ static void test_edge_cases() {
 }
 
 /**
- * @brief Main function for running tests.
+ * @brief Function for running tests.
  *
- * @returns 0 on exit
+ * @returns void
  */
-int main() {
+void tests() {
     test_insert();
     test_deleteNode();
     test_levelOrder();
     test_balancing();
     test_edge_cases();
     std::cout << "All tests passed!" << std::endl;
+}
+
+/**
+ * @brief Main function for running tests.
+ *
+ * @returns 0 on exit
+ */
+int main() {
+    tests();
     return 0;
 }
