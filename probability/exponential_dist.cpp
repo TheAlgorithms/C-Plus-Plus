@@ -1,22 +1,23 @@
 /**
  * @file
- * @brief [Exponential Distribution] (https://en.wikipedia.org/wiki/Exponential_distribution)
+ * @brief [Exponential Distribution](https://en.wikipedia.org/wiki/Exponential_distribution)
  * 
  * The exponential distribution is used to model
  * events occuring between a Poisson process like radioactive decay.
  * 
- * P(x,⋋) = ⋋e^(-⋋x)
+ * \( P(x, \lambda) = \lambda e^{-\lambda x} \)
  * 
  * Summary of variables used:
- * ⋋: rate parameter
+ * \lambda : rate parameter
  */
-#include<cmath>
-#include<cassert>
-#include<iostream>
 
-/** Find the expected value of the exponential distribution
- * \param [in] lambda
- * \returns \f$\mu=1/lambda\f$
+#include<cmath> // For power function
+#include<cassert> // For asserting the test cases
+#include<iostream> // For I/O operation
+
+/** 
+ * @brief the expected value of the exponential distribution
+ * @returns \( \mu = \frac{1}{\lambda} \)
  */
 double exponential_expected(double lambda){
     if (lambda<=0){
@@ -26,9 +27,9 @@ double exponential_expected(double lambda){
     return 1/lambda;
 }
 
-/** Find the variance of the exponential distribution
- * \param [in] lambda
- * \returns \f$\sigma^2=1/(lambda^2)\f$
+/** 
+ * @brief the variance of the exponential distribution
+ * @returns \( \sigma^2 = \frac{1}{\lambda^2} \)
  */
 double exponential_var(double lambda){
     if (lambda<=0){
@@ -38,9 +39,9 @@ double exponential_var(double lambda){
     return 1/pow(lambda,2);
 }
 
-/** Find the standard deviation of the exponential distribution
- * \param [in] lambda
- * \returns \f$\sigma=1/lambda\f$
+/** 
+ * @brief the standard deviation of the exponential distribution
+ * @returns \( \sigma = \frac{1}{\lambda} \)
  */
 double exponential_std(double lambda){
     if (lambda<=0){
@@ -84,7 +85,11 @@ static void test(){
     std::cout<<std::endl;
 }
 
+/**
+ * @brief Main function
+ * @return 0 on exit
+ */
 int main(){
-    test(); //Self-implemented test
+    test(); // Self test implementation
     return 0;
 }
