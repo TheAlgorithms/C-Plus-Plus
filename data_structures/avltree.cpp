@@ -1,10 +1,6 @@
 /**
  * \file
- * \brief A simple tree implementation using nodes
- *
- * \todo update code to use C++ STL library features and OO structure
- * \warning This program is a poor implementation and does not utilize any of
- * the C++ STL features.
+ * \brief An implementation of AVL tree.
  */
 #include <algorithm>  /// for std::max
 #include <cassert>    /// for assert
