@@ -66,7 +66,7 @@ int unboundedKnapsack(std::uint16_t N, std::uint16_t W, const std::vector<std::u
 /**
  * @brief Function to run test cases for the unbounded knapsack implementation.
  */
-void test_cases() {
+void tests() {
     std::uint16_t N = 4; // Number of items
     std::vector<std::uint16_t> wt = {1, 3, 4, 5}; // Weights of the items
     std::vector<std::uint16_t> val = {6, 1, 7, 7}; // Values of the items
