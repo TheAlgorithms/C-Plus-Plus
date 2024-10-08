@@ -56,7 +56,10 @@ static void test() {
     std::cout << "All tests have passed successfully!\n";
 }
 
-/// Main function
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     test();  // run self-test implementations
     return 0;
