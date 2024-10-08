@@ -1870,7 +1870,7 @@ USE_MATHJAX            = YES
 # The default value is: MathJax_2. 
 # This tag requires that the tag USE_MATHJAX is set to YES.
 
-MATHJAX_VERSION        = MathJax_2
+MATHJAX_VERSION        = MathJax_3
 
 # When MathJax is enabled you can set the default output format to be used for
 # the MathJax output. For more details about the output format see MathJax
@@ -1901,7 +1901,7 @@ MATHJAX_FORMAT         = HTML-CSS
 # - in case of MathJax version 3: https://cdn.jsdelivr.net/npm/mathjax@3
 # This tag requires that the tag USE_MATHJAX is set to YES.
 
-MATHJAX_RELPATH        = https://cdn.jsdelivr.net/npm/mathjax@2
+MATHJAX_RELPATH        =  
 
 # The MATHJAX_EXTENSIONS tag can be used to specify one or more MathJax
 # extension names that should be enabled during MathJax rendering. For example
@@ -1913,7 +1913,7 @@ MATHJAX_RELPATH        = https://cdn.jsdelivr.net/npm/mathjax@2
 # MATHJAX_EXTENSIONS = ams
 # This tag requires that the tag USE_MATHJAX is set to YES.
 
-MATHJAX_EXTENSIONS     =  TeX/AMSmath TeX/AMSsymbols
+MATHJAX_EXTENSIONS     =  
 
 # The MATHJAX_CODEFILE tag can be used to specify a file with JavaScript pieces
 # of code that will be used on startup of the MathJax code. See the MathJax site
@@ -2039,7 +2039,7 @@ LATEX_OUTPUT           = latex
 # the output language.
 # This tag requires that the tag GENERATE_LATEX is set to YES.
 
-LATEX_CMD_NAME         =
+LATEX_CMD_NAME         = latex
 
 # The MAKEINDEX_CMD_NAME tag can be used to specify the command name to generate
 # index for LaTeX.
@@ -2088,7 +2088,7 @@ PAPER_TYPE             = a4
 # If left blank no extra packages will be included.
 # This tag requires that the tag GENERATE_LATEX is set to YES.
 
-EXTRA_PACKAGES         =
+EXTRA_PACKAGES         = mathtools amsmath
 
 # The LATEX_HEADER tag can be used to specify a user-defined LaTeX header for
 # the generated LaTeX document. The header should contain everything until the
