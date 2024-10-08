@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Insertion Sort for a vector.">
 <polygon fill="#999999" stroke="#666666" points="106,-19.25 0,-19.25 0,0 106,0 106,-19.25"/>
 <text text-anchor="middle" x="53" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">sorting::insertionSort</text>
 </a>

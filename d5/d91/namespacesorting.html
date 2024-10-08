@@ -141,6 +141,7 @@ Functions</h2></td></tr>
 <tr class="separator:a78cb2f3b97b6db2c062b2a1df05c9ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fe6bac9e03f58abcc2ce26ef3de1b5f" id="r_a8fe6bac9e03f58abcc2ce26ef3de1b5f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a8fe6bac9e03f58abcc2ce26ef3de1b5f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a8fe6bac9e03f58abcc2ce26ef3de1b5f">insertionSort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *arr)</td></tr>
+<tr class="memdesc:a8fe6bac9e03f58abcc2ce26ef3de1b5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insertion Sort for a vector.  <br /></td></tr>
 <tr class="separator:a8fe6bac9e03f58abcc2ce26ef3de1b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa26de383227859210f14dcf12201a079" id="r_aa26de383227859210f14dcf12201a079"><td class="memTemplParams" colspan="2">template&lt;class Iterator &gt; </td></tr>
 <tr class="memitem:aa26de383227859210f14dcf12201a079"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aa26de383227859210f14dcf12201a079">merge</a> (Iterator l, Iterator r, const Iterator e, char b[])</td></tr>
@@ -195,6 +196,7 @@ Functions</h2></td></tr>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></p>
 <p>for returning multiple values form a function at once</p>
 <p>Sorting Algorithms.</p>
+<p>for using <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
 <p>Sorting algorithms.</p>
 <p>for algorithm functions for assert for IO operations</p>
@@ -206,6 +208,8 @@ Functions</h2></td></tr>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a> for assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a> and io operations</p>
 <p>@breif Sorting algorithms</p>
 <p>Sorting algorithms</p>
+<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a> for assert function in testing for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> and <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></p>
+<p>Contains sorting algorithms</p>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a> for std::assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a> for IO operations</p>
 <p>Sorting algorithms</p>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/stack.html">std::stack</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a> for assert</p>
@@ -416,6 +420,8 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Insertion Sort for a vector. </p>
 <p>Insertion Sort Function</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -425,7 +431,19 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">arr</td><td>pointer to array to be sorted </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">arr</td><td>pointer to array to be sorted</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Type of the vector elements </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">arr</td><td>Pointer to the vector to be sorted </td></tr>
   </table>
   </dd>
 </dl>
@@ -482,7 +500,20 @@ template&lt;typename T &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">arr</td><td>Array to be sorted </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">n</td><td>Size of Array </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">n</td><td>Size of Array</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Type of the array elements </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">arr</td><td>Array to be sorted </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">n</td><td>Size of the array </td></tr>
   </table>
   </dd>
 </dl>
