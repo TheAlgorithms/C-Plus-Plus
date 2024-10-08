@@ -77,6 +77,10 @@ void tests() {
     std::cout << "All test cases passed!" << std::endl;
 }
 
+/**
+ * @brief main function
+ * @return 0 on successful exit
+ */
 int main() {
     tests(); // run self test implementation
     return 0;
