@@ -85,6 +85,6 @@ static void test(){
 }
 
 int main(){
-    test(); //Self-implemented test
+    test(); //Self test implementation
     return 0;
 }
