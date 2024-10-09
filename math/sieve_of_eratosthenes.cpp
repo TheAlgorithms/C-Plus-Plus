@@ -56,7 +56,7 @@ std::vector<bool> sieve(uint32_t N) {
 }
 
 /**
- * This function prints out the primes to STDOUT
+ * @brief Function to print the prime numbers
  * @param N number till which primes are to be found
  * @param is_prime a vector of `N + 1` booleans identifying if `i`^th number is
  * a prime or not
