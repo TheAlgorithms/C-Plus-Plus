@@ -56,11 +56,6 @@ if(DOXYGEN_FOUND)
         set(DOXYGEN_CPP_CLI_SUPPORT YES)
     endif()
 
-    # doxygen config
-    set(DOXYGEN_HTML_EXTRA_STYLESHEET ${CMAKE_CURRENT_SOURCE_DIR}/doc/styles/doxygen-awesome.css)
-    set(DOXYGEN_HTML_HEADER ${CMAKE_CURRENT_SOURCE_DIR}/doc/html/header.html)
-    set(DOXYGEN_GENERATE_TREEVIEW YES)
-
     if(Doxygen_dot_FOUND)
         set(DOXYGEN_HAVE_DOT YES)
     endif()
