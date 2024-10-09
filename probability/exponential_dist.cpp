@@ -5,7 +5,7 @@
  * The exponential distribution is used to model
  * events occuring between a Poisson process like radioactive decay.
  * 
- * \( P(x, \lambda) = \lambda e^{-\lambda x} \)
+ * \f[P(x, \lambda) = \lambda e^{-\lambda x}\f]
  * 
  * Summary of variables used:
  * \lambda : rate parameter
