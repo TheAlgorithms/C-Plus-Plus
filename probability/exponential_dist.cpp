@@ -51,6 +51,10 @@ double exponential_std(double lambda){
     return 1/lambda;
 }
 
+/**
+ * @brief Self-test implementation
+ * @returns void
+ */
 static void test(){
     double lambda = 2;
     double expected = 0.5;
