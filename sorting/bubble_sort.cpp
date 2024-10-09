@@ -14,10 +14,12 @@
  * An additional variable is required for this operation. x = 5, y = 10.
  * We want x = 10, y = 5. Here we create the most variable to do it.
  * 
+ * ```cpp
  * int z;
  * z = x;
  * x = y;
  * y = z;
+ * ```
  * 
  * The above process is a typical displacement process.
  * When x assigns the value to x, the old value of x is lost.
