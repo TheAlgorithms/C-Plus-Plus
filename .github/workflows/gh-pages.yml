@@ -15,7 +15,7 @@ jobs:
         run: |
           brew install graphviz ninja doxygen
       - name: configure
-        run: cmake -G Ninja -Duse_libclang=ON -B ./build -S .
+        run: cmake -G Ninja -Duse_libclang=ON -DCMAKE_CXX_COMPILER=clang++ -B ./build -S .
       - name: build
         run: cmake --build build -t doc
       - name: gh-pages
