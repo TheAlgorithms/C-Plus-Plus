@@ -16,7 +16,7 @@
  * @example
  * Input: Four Jobs with following deadlines and profits
  * JobID |  Deadline |  Profit
- * -----------------------------
+ * ------|-----------|----------
  * a     |      4    |    20
  * b     |      1    |    10
  * c     |      1    |    40
