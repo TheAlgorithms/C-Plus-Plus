@@ -26,12 +26,12 @@
  * 
  * Bubble Sort Algorithm Analysis (Best Case - Worst Case - Average Case)
  * 
- * Bubble Sort Worst Case Performance is O (n²). Why is that? Because if you
+ * Bubble Sort Worst Case Performance is \f$O(n^{2})\f$. Why is that? Because if you
  * remember Big O Notation, we were calculating the complexity of the algorithms in
- * the nested loops. The n * (n - 1) product gives us O (n²) performance. In the
+ * the nested loops. The \f$n * (n - 1)\f$ product gives us \f$O(n^{2})\f$ performance. In the
  * worst case all the steps of the cycle will occur. Bubble Sort (Avarage Case)
- * Performance. Bubble Sort is not an optimal algorithm. in average, O (n²)
- * performance is taken. Bubble Sort Best Case Performance. O (n). However, you
+ * Performance. Bubble Sort is not an optimal algorithm. in average, \f$O(n^{2})\f$
+ * performance is taken. Bubble Sort Best Case Performance. \f$O(n)\f$. However, you
  * can't get the best status in the code we shared above. This happens on the
  * optimized bubble sort algorithm. It's right down there.
  */
