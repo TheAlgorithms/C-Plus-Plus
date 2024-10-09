@@ -61,13 +61,13 @@ PROJECT_BRIEF          = All the algorithms implemented in C++
 # pixels and the maximum width should not exceed 200 pixels. Doxygen will copy
 # the logo to the output directory.
 
-PROJECT_LOGO           = 
+PROJECT_LOGO           = doc/assets/project_logo.png
 
 # With the PROJECT_ICON tag one can specify an icon that is included in the tabs
 # when the HTML document is shown. Doxygen will copy the logo to the output
 # directory.
 
-PROJECT_ICON           = 
+PROJECT_ICON           = doc/assets/favicon.svg
 
 # The OUTPUT_DIRECTORY tag is used to specify the (relative or absolute) path
 # into which the generated documentation will be written. If a relative path is
