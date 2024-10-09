@@ -26,8 +26,8 @@
  *
  * @example
  *  Input:  Five Jobs with following deadlines and profits
- *  JobID | Deadline | Profit
- * ---------------------------
+ *  JobID | Deadline  | Profit
+ * -------|-----------|--------
  *   a    |     2     |  100
  *   b    |     1     |  19
  *   c    |     2     |  27
