@@ -2638,6 +2638,10 @@ DOT_FONTPATH           =
 
 CLASS_GRAPH            = YES
 
+# DOT transparency of the output
+DOT_TRANSPARENT           = YES
+
+
 # If the COLLABORATION_GRAPH tag is set to YES then Doxygen will generate a
 # graph for each documented class showing the direct and indirect implementation
 # dependencies (inheritance, containment, and class references variables) of the
@@ -2798,7 +2802,7 @@ DIR_GRAPH_MAX_DEPTH    = 1
 # The default value is: png.
 # This tag requires that the tag HAVE_DOT is set to YES.
 
-DOT_IMAGE_FORMAT       = png
+DOT_IMAGE_FORMAT       = svg
 
 # If DOT_IMAGE_FORMAT is set to svg, then this option can be set to YES to
 # enable generation of interactive SVG images that allow zooming and panning.
