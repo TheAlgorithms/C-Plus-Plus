@@ -17,7 +17,7 @@
 
 /** 
  * @brief the expected value of the exponential distribution
- * @returns \( \mu = \frac{1}{\lambda} \)
+ * @returns \f[\mu = \frac{1}{\lambda}\f]
  */
 double exponential_expected(double lambda){
     if (lambda<=0){
@@ -29,7 +29,7 @@ double exponential_expected(double lambda){
 
 /** 
  * @brief the variance of the exponential distribution
- * @returns \( \sigma^2 = \frac{1}{\lambda^2} \)
+ * @returns \f[\sigma^2 = \frac{1}{\lambda^2}\f]
  */
 double exponential_var(double lambda){
     if (lambda<=0){
@@ -41,7 +41,7 @@ double exponential_var(double lambda){
 
 /** 
  * @brief the standard deviation of the exponential distribution
- * @returns \( \sigma = \frac{1}{\lambda} \)
+ * @returns \f[\sigma = \frac{1}{\lambda}\f]
  */
 double exponential_std(double lambda){
     if (lambda<=0){
