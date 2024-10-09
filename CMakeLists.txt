@@ -11,6 +11,8 @@ project(Algorithms_in_C++
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+include(CTest) # for testing algorithms
+
 if(MSVC)
     # set(CMAKE_CXX_STANDARD 14)
     add_compile_definitions(_CRT_SECURE_NO_WARNINGS)
