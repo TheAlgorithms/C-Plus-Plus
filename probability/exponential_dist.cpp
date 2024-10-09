@@ -8,7 +8,7 @@
  * \f[P(x, \lambda) = \lambda e^{-\lambda x}\f]
  * 
  * Summary of variables used:
- * \lambda : rate parameter
+ * \f$\lambda\f$ : rate parameter
  */
 
 #include<cmath> // For power function
