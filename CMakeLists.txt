@@ -76,7 +76,6 @@ if(DOXYGEN_FOUND)
     doxygen_add_docs(
         doc
         ${PROJECT_SOURCE_DIR}
-        ALL
         COMMENT "Generate documentation"
         CONFIG_FILE ${CMAKE_CURRENT_SOURCE_DIR}/doc/Doxyfile
     )
