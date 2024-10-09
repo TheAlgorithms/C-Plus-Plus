@@ -2638,10 +2638,6 @@ DOT_FONTPATH           =
 
 CLASS_GRAPH            = YES
 
-# DOT transparency of the output
-DOT_TRANSPARENT           = YES
-
-
 # If the COLLABORATION_GRAPH tag is set to YES then Doxygen will generate a
 # graph for each documented class showing the direct and indirect implementation
 # dependencies (inheritance, containment, and class references variables) of the
