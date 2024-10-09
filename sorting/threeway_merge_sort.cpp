@@ -1,3 +1,17 @@
+/**
+ *  @{
+ *  @file
+ *  @brief 3-Way Merge Sort Algorithm implementation
+ *
+ *  @author Nirmalya Pal (http://github.com/SpEXterXD)
+ *
+ *  @details
+ *  3-Way Merge Sort is an efficient, general-purpose, comparison
+ *  based sorting algorithm. It extends the traditional Merge Sort
+ *  algorithm by dividing the input array into three parts instead of two.
+ *
+ */
+
 #include <iostream>
 #include <vector>
 #include <cassert>
