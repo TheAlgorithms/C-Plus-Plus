@@ -13,7 +13,6 @@
  *
  * Examples:
  *
- * @example
  * Input: Four Jobs with following deadlines and profits
  * JobID |  Deadline |  Profit
  * ------|-----------|----------
