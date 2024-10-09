@@ -26,7 +26,7 @@
  * That's why we created a variable z to create the first value of the value of x,
  * and finally, we have assigned to y.
  * 
- * Bubble Sort Algorithm Analysis (Best Case - Worst Case - Average Case)
+ * ## Bubble Sort Algorithm Analysis (Best Case - Worst Case - Average Case)
  * 
  * Bubble Sort Worst Case Performance is \f$O(n^{2})\f$. Why is that? Because if you
  * remember Big O Notation, we were calculating the complexity of the algorithms in
