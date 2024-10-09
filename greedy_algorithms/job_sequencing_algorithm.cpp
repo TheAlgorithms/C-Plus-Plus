@@ -24,7 +24,6 @@
  *
  * Output: Following is maximum profit sequence of jobs: c, a
  *
- * @example
  *  Input:  Five Jobs with following deadlines and profits
  *  JobID | Deadline  | Profit
  * -------|-----------|--------
