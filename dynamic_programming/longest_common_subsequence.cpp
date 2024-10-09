@@ -1,5 +1,6 @@
 // Longest common subsequence - Dynamic Programming
 #include <iostream>
+#include <vector>
 using namespace std;
 
 void Print(int trace[20][20], int m, int n, string a) {
@@ -18,7 +19,7 @@ void Print(int trace[20][20], int m, int n, string a) {
 
 int lcs(string a, string b) {
     int m = a.length(), n = b.length();
-    int res[m + 1][n + 1];
+    std::vector<std::vector<int> > res(m + 1, std::vector<int>(n + 1));
     int trace[20][20];
 
     // fills up the arrays with zeros.

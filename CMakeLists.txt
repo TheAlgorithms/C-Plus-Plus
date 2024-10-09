@@ -5,16 +5,17 @@ project(Algorithms_in_C++
     DESCRIPTION "Set of algorithms implemented in C++."
 )
 
-# set(CMAKE_CXX_CPPLINT "~/anaconda3/bin/cpplint --filter=-legal/copyright --std=c++11")
-# find_program(CLANG_FORMAT "clang-format")
-
-set(CMAKE_CXX_STANDARD 11)
+# C++ standard
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Additional warnings and errors
 if(MSVC)
-    # set(CMAKE_CXX_STANDARD 14)
     add_compile_definitions(_CRT_SECURE_NO_WARNINGS)
-endif(MSVC)
+    add_compile_options(/W4 /permissive-)
+else()
+    add_compile_options(-Wall -Wextra -Wno-register -Werror=vla)
+endif()
 
 option(USE_OPENMP "flag to use OpenMP for multithreading" ON)
 if(USE_OPENMP)
@@ -38,6 +39,10 @@ add_subdirectory(graphics)
 add_subdirectory(probability)
 add_subdirectory(backtracking)
 add_subdirectory(bit_manipulation)
+add_subdirectory(dynamic_programming)
+add_subdirectory(greedy_algorithms)
+add_subdirectory(range_queries)
+add_subdirectory(operations_on_datastructures)
 add_subdirectory(data_structures)
 add_subdirectory(machine_learning)
 add_subdirectory(numerical_methods)
