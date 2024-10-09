@@ -1,11 +1,10 @@
 /**
  * @file
- * @brief Naive recursive algorithm to calculate the n-th [Fibonacci
+ * @brief n-th [Fibonacci
  * number](https://en.wikipedia.org/wiki/Fibonacci_sequence).
  *
  * @details
- * Calculate the the value on Fibonacci's sequence given an
- * integer as input.
+ * Naive recursive implementation to calculate the n-th Fibonacci number.
  * \f[\text{fib}(n) = \text{fib}(n-1) + \text{fib}(n-2)\f]
  *
  * @see fibonacci_large.cpp, fibonacci_fast.cpp, string_fibonacci.cpp
@@ -26,16 +25,16 @@ namespace fibonacci {
 /**
  * @brief Function to compute the n-th Fibonacci number
  * @param n the index of the Fibonacci number
- * @returns n-th element of the Fbinacci's sequence
+ * @returns n-th element of the Fibonacci's sequence
  */
 uint64_t fibonacci(uint64_t n) {
-    // If the input is 0 or 1 just return the same
+    // If the input is 0 or 1 just return the same (Base Case)
     // This will set the first 2 values of the sequence
     if (n <= 1) {
         return n;
     }
 
-    // Add the last 2 values of the sequence to get next
+    // Add the preceding 2 values of the sequence to get next
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
 }  // namespace fibonacci
