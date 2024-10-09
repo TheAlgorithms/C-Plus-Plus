@@ -24,10 +24,10 @@
  * @see dynamic_programming/0_1_knapsack.cpp
  */
 
-#include <iostream>  ///< Standard input-output stream
-#include <vector>   ///< Standard library for using dynamic arrays (vectors)
-#include <cassert>  ///< For using assert function to validate test cases
-#include <cstdint>  ///< For fixed-width integer types like std::uint16_t
+#include <iostream>  // Standard input-output stream
+#include <vector>   // Standard library for using dynamic arrays (vectors)
+#include <cassert>  // For using assert function to validate test cases
+#include <cstdint>  // For fixed-width integer types like std::uint16_t
 
 /**
  * @namespace dynamic_programming
