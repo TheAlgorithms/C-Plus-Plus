@@ -1,6 +1,5 @@
 /**
  * @file
- * @author [Shree Harish S](https://github.com/ShreeHarish)
  * @brief C++ implementation of the [RIPEMD-160 Hashing
  * Algorithm](https://homes.esat.kuleuven.be/~bosselae/ripemd160/pdf/AB-9601/AB-9601.pdf)
  *
@@ -21,10 +20,11 @@
  * of 80 processing steps, split into two parallel paths that converge at the
  * end.
  *
+ * @author [Shree Harish S](https://github.com/ShreeHarish)
  */
 
 #include <cassert>   /// For assert
-#include <cstdint>   /// For data types such as int32_t, uint32_t, etc
+#include <cstdint>   /// For data types such as std::int32_t, std::uint32_t, etc
 #include <iomanip>   /// For functions like setw, setfill
 #include <iostream>  /// For managing io
 #include <sstream>   /// For bytes to hex string
@@ -65,28 +65,30 @@ class RIPEMD160 {
         // add padding to data
         int extra = data.size() % 4;
 
-        if (extra == 0) {
-            word_data.push_back(0x00000080);
-        }
+        switch (extra) {
+            case 0:
+                word_data.push_back(0x00000080);
+                break;
 
-        else if (extra == 1) {
-            word_data.push_back(static_cast<uint32_t>(data[data.size() - 1]) |
-                                0x00008000);
-        }
+            case 1:
+                word_data.push_back(
+                    static_cast<uint32_t>(data[data.size() - 1]) | 0x00008000);
+                break;
 
-        else if (extra == 2) {
-            word_data.push_back(
-                static_cast<uint32_t>(data[data.size() - 2]) |
-                (static_cast<uint32_t>(data[data.size() - 1]) << 8) |
-                0x00800000);
-        }
+            case 2:
+                word_data.push_back(
+                    static_cast<uint32_t>(data[data.size() - 2]) |
+                    (static_cast<uint32_t>(data[data.size() - 1]) << 8) |
+                    0x00800000);
+                break;
 
-        else if (extra == 3) {
-            word_data.push_back(
-                static_cast<uint32_t>(data[data.size() - 3]) |
-                (static_cast<uint32_t>(data[data.size() - 2]) << 8) |
-                (static_cast<uint32_t>(data[data.size() - 1]) << 16) |
-                0x80000000);
+            case 3:
+                word_data.push_back(
+                    static_cast<uint32_t>(data[data.size() - 3]) |
+                    (static_cast<uint32_t>(data[data.size() - 2]) << 8) |
+                    (static_cast<uint32_t>(data[data.size() - 1]) << 16) |
+                    0x80000000);
+                break;
         }
 
         while (word_data.size() % 16 != 14) {
@@ -105,30 +107,21 @@ class RIPEMD160 {
     /**
      * @brief implements f(j,x,y,z)
      * @param j round number j / 16
-     * @param x value x
-     * @param y value y
-     * @param z value z
+     * @param B,C,D the state values
      * @return returns the function value
      */
-    uint32_t f(int j, uint32_t x, uint32_t y, uint32_t z) {
-        if (j == 0) {
-            return x ^ y ^ z;
-        }
-
-        else if (j == 1) {
-            return (x & y) | (~x & z);
-        }
-
-        else if (j == 2) {
-            return (x | ~y) ^ z;
-        }
-
-        else if (j == 3) {
-            return (x & z) | (y & ~z);
-        }
-
-        else {  /// if (j == 4)
-            return x ^ (y | ~z);
+    uint32_t f(int j, uint32_t B, uint32_t C, uint32_t D) {
+        switch(j) {
+            case 0:
+                return B ^ C ^ D;
+            case 1:
+                return (B & C) | (~B & D);
+            case 2:
+                return (B | ~C) ^ D;
+            case 3:
+                return (B & D) | (C & ~D);
+            case 4:
+                return B ^ (C | ~D);
         }
     }
 
@@ -138,23 +131,15 @@ class RIPEMD160 {
      * @return appropriate K value
      */
     uint32_t K(int j) {
-        if (j == 0) {
-            return static_cast<uint32_t>(0x00000000);
-        }
-
-        else if (j == 1) {
+        switch(j) {
+            case 0: return static_cast<uint32_t>(0x00000000);
+        case 1:
             return static_cast<uint32_t>(0x5A827999);
-        }
-
-        else if (j == 2) {
+        case 2:
             return static_cast<uint32_t>(0x6ED9EBA1);
-        }
-
-        else if (j == 3) {
+        case 3:
             return static_cast<uint32_t>(0x8F1BBCDC);
-        }
-
-        else {  /// if (j == 4)
+        case 4:
             return static_cast<uint32_t>(0xA953FD4E);
         }
     }
@@ -165,24 +150,17 @@ class RIPEMD160 {
      * @return appropriate K' value
      */
     uint32_t K_dash(int j) {
-        if (j == 0) {
-            return 0x50A28BE6;
-        }
-
-        else if (j == 1) {
-            return 0x5C4DD124;
-        }
-
-        else if (j == 2) {
-            return 0x6D703EF3;
-        }
-
-        else if (j == 3) {
-            return 0x7A6D76E9;
-        }
-
-        else {  /// if (j == 4)
-            return 0x00000000;
+        switch(j){
+            case 0:
+                return 0x50A28BE6;
+            case 1:
+                return 0x5C4DD124;
+            case 2:
+                return 0x6D703EF3;
+            case 3:
+                return 0x7A6D76E9;
+            case 4: 
+                return 0x00000000;
         }
     }
 
@@ -452,6 +430,5 @@ static void test() {
  */
 int main(int argc, char *argv[]) {
     test();
-
     return 0;
 }
