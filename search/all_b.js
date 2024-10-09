@@ -59,7 +59,7 @@ var searchData=
   ['fib_5faccurate_56',['fib_Accurate',['../de/d47/string__fibonacci_8cpp.html#ad8055ee368a5d5b24de01bdde6bf8fca',1,'string_fibonacci.cpp']]],
   ['fib_5fb_57',['fib_b',['../d7/d35/matrix__exponentiation_8cpp.html#a35b7c98af53ad2ec18658679ad7d43de',1,'matrix_exponentiation.cpp']]],
   ['fibo_58',['fibo',['../da/dc9/fibonacci__matrix__exponentiation_8cpp.html#abc3bc08249058d57cfc8f54a29d9cf9f',1,'fibonacci_matrix_exponentiation.cpp']]],
-  ['fibonacci_59',['fibonacci',['../d9/d89/fibonacci_8cpp.html#aaf94f3212385cff0a5f19ff6b0cce8e7',1,'fibonacci.cpp']]],
+  ['fibonacci_59',['fibonacci',['../df/d76/namespacefibonacci.html',1,'fibonacci'],['../d9/d89/fibonacci_8cpp.html#aeaaf5439cb29de4630c7dff2fd914b28',1,'math::fibonacci::fibonacci()']]],
   ['fibonacci_2ecpp_60',['fibonacci.cpp',['../d9/d89/fibonacci_8cpp.html',1,'']]],
   ['fibonacci_5ffast_2ecpp_61',['fibonacci_fast.cpp',['../d4/d32/fibonacci__fast_8cpp.html',1,'']]],
   ['fibonacci_5flarge_2ecpp_62',['fibonacci_large.cpp',['../de/de4/fibonacci__large_8cpp.html',1,'']]],

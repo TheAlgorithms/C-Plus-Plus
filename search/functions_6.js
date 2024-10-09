@@ -43,7 +43,7 @@ var searchData=
   ['fib_40',['fib',['../d4/d32/fibonacci__fast_8cpp.html#a5712edca101204eca8accdb1e096707f',1,'fib(uint64_t n):&#160;fibonacci_fast.cpp'],['../de/de4/fibonacci__large_8cpp.html#adf3e906875ab257f7fab3bc1370aa2db',1,'fib(uint64_t n):&#160;fibonacci_large.cpp']]],
   ['fib_5faccurate_41',['fib_Accurate',['../de/d47/string__fibonacci_8cpp.html#ad8055ee368a5d5b24de01bdde6bf8fca',1,'string_fibonacci.cpp']]],
   ['fibo_42',['fibo',['../da/dc9/fibonacci__matrix__exponentiation_8cpp.html#abc3bc08249058d57cfc8f54a29d9cf9f',1,'fibonacci_matrix_exponentiation.cpp']]],
-  ['fibonacci_43',['fibonacci',['../d9/d89/fibonacci_8cpp.html#aaf94f3212385cff0a5f19ff6b0cce8e7',1,'fibonacci.cpp']]],
+  ['fibonacci_43',['fibonacci',['../d9/d89/fibonacci_8cpp.html#aeaaf5439cb29de4630c7dff2fd914b28',1,'math::fibonacci']]],
   ['fibonacci_5fsearch_44',['fibonacci_search',['../de/d0d/fibonacci__search_8cpp.html#a0bc61b3903d9a53061bf31e5d110fe61',1,'fibonacci_search.cpp']]],
   ['fibosum_45',['fiboSum',['../de/dc3/fibonacci__sum_8cpp.html#a493fbaa7a94e3b7ca573111237bb3742',1,'math::fibonacci_sum']]],
   ['filebuf_46',['filebuf',['http://en.cppreference.com/w/cpp/io/basic_filebuf/basic_filebuf.html',0,'std::filebuf']]],
