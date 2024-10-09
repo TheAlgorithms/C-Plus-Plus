@@ -133,20 +133,6 @@ void testThreeWayMergeSort() {
 
 /** Main function */
 int main() {
-    int size;
-    std::cout << "Enter the number of elements: ";
-    std::cin >> size;
-
-    std::vector<int> arr(size);
-    std::cout << "Enter the unsorted elements: ";
-    for (int i = 0; i < size; ++i) {
-        std::cin >> arr[i];
-    }
-
-    threeWayMergeSort(arr, 0, size - 1);
-    std::cout << "Sorted array: ";
-    show(arr, size);
-
     // Run the tests
     testThreeWayMergeSort();
 
