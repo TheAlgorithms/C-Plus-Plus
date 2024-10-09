@@ -83,9 +83,9 @@ void threeWayMergeSort(std::vector<int>& arr, int left, int right) {
  * @param arr - array to be printed
  * @param size - size of the array
  */
-void show(const std::vector<int>& arr, int size) {
-    for (int i = 0; i < size; i++) {
-        std::cout << arr[i] << " ";
+void show(const std::vector<int>& arr) {
+    for (const auto& element : arr) {
+        std::cout << element << " ";
     }
     std::cout << "\n";
 }
