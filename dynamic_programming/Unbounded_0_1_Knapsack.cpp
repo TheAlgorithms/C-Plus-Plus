@@ -127,6 +127,10 @@ static void tests() {
 
 }
 
+/**
+ * @brief main function
+ * @return 0 on successful exit
+ */
 int main() {
     tests(); // Run test cases to validate implementation
     return 0;
