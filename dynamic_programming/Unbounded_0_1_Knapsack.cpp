@@ -132,7 +132,7 @@ static void tests() {
  * @return 0 on successful exit
  */
 int main() {
-    tests(); // Run test cases to validate implementation
+    tests(); // Run self test implementation 
     return 0;
 }
 
