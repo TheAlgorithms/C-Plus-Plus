@@ -73,12 +73,13 @@ if(DOXYGEN_FOUND)
         set(DOXYGEN_PREDEFINED ${DOXYGEN_PREDEFINED} "GLUT_FOUND=1")
     endif()
 
-
     doxygen_add_docs(
         doc
         ${PROJECT_SOURCE_DIR}
+        ALL
+        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
         COMMENT "Generate documentation"
-        ${PROJECT_SOURCE_DIR}/doc/Doxyfile
+        CONFIG_FILE ${CMAKE_CURRENT_SOURCE_DIR}/doc/Doxyfile
     )
 endif()
 
