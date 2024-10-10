@@ -30,8 +30,8 @@
  * a^{m-2} &≡&  a^{-1} \;\text{mod}\; m
  * \f}
  *
- * We will find the exponent using binary exponentiation. Such that the
- * algorithm works in \f$O(\log m)\f$ time.
+ * We will find the exponent using binary exponentiation such that the
+ * algorithm works in logarithmic time.
  *
  * Examples: -
  * * a = 3 and m = 7
@@ -58,7 +58,7 @@ namespace math {
  */
 namespace modular_inverse_fermat {
 /**
- * @brief Calculate exponent with modulo using binary exponentiation.
+ * @brief Calculate exponent with modulo using binary exponentiation in \f$O(\log b)\f$ time.
  * @param a The base
  * @param b The exponent
  * @param m The modulo
