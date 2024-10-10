@@ -59,7 +59,6 @@ bool sortcol(tuple<S, T, E>& t1, tuple<S, T, E>& t2) {
  * @tparam T Data type of Arrival time
  * @tparam E Data type of Burst time
  */
- 
 template <typename S, typename T, typename E>
 class Compare {
  public:
