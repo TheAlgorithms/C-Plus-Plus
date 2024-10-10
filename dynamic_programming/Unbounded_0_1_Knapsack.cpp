@@ -13,7 +13,7 @@
  * `wt` and `val` respectively, and a knapsack with a weight limit W, the task is to 
  * fill the knapsack to maximize the total value.
  *
- * @note weight and value of items is greater than zero.
+ * @note weight and value of items is greater than zero 
  *
  * ### Algorithm
  * The approach uses dynamic programming to build a solution iteratively. 
@@ -85,6 +85,7 @@ int KnapSackFilling(std::uint16_t i, std::uint16_t W,
 int unboundedKnapsack(std::uint16_t N, std::uint16_t W, 
                       const std::vector<std::uint16_t>& val, 
                       const std::vector<std::uint16_t>& wt) {
+    if(N==0)return 0; // Expect 0 since no items
     std::vector<std::vector<int>> dp(N, std::vector<int>(W + 1, -1)); // Initialize memoization table
     return KnapSackFilling(N - 1, W, val, wt, dp); // Start the calculation
 }
@@ -122,6 +123,14 @@ static void tests() {
     // Test the function and assert the expected output
     assert(unboundedKnapsack(N3, W3, val3, wt3) == 27);
     std::cout << "Maximum Knapsack value " << unboundedKnapsack(N3, W3, val3, wt3) << std::endl;
+
+    // Test Case 4
+    std::uint16_t N4 = 0; // Number of items
+    std::vector<std::uint16_t> wt4 = {}; // Weights of the items
+    std::vector<std::uint16_t> val4 = {}; // Values of the items 
+    std::uint16_t W4 = 10; // Maximum capacity of the knapsack
+    assert(unboundedKnapsack(N4, W4, val4, wt4) == 0); 
+    std::cout << "Maximum Knapsack value for empty arrays: " << unboundedKnapsack(N4, W4, val4, wt4) << std::endl;
   
     std::cout << "All test cases passed!" << std::endl;
 
