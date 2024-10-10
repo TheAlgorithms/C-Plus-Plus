@@ -1,5 +1,8 @@
 var NAVTREEINDEX8 =
 {
+"d8/d28/classrange__queries_1_1per_seg_tree.html":[10,0,16,2],
+"d8/d28/classrange__queries_1_1per_seg_tree.html#a0cec4b77d264521717cf9b0482c45817":[9,0,98,1,4],
+"d8/d28/classrange__queries_1_1per_seg_tree.html#a0cec4b77d264521717cf9b0482c45817":[10,0,16,2,4],
 "d8/d28/classrange__queries_1_1per_seg_tree.html#a0fe4e431f3e09c274ecd7d2d58dcb865":[9,0,98,1,7],
 "d8/d28/classrange__queries_1_1per_seg_tree.html#a0fe4e431f3e09c274ecd7d2d58dcb865":[10,0,16,2,7],
 "d8/d28/classrange__queries_1_1per_seg_tree.html#a1eac9cf0613dfc8e2b0195009dd5c9d5":[9,0,98,1,10],
@@ -68,7 +71,7 @@ var NAVTREEINDEX8 =
 "d8/d69/classgraph_1_1_h_k_graph.html#af02b0c83911070ac6d95fc9905e58aa9":[10,0,6,2,0],
 "d8/d6c/line__segment__intersection_8cpp.html":[11,0,8,2],
 "d8/d6c/line__segment__intersection_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,8,2,2],
-"d8/d72/class_r_btree.html":[10,0,50],
+"d8/d72/class_r_btree.html":[10,0,51],
 "d8/d76/morse__code_8cpp.html":[11,0,2,5],
 "d8/d76/morse__code_8cpp.html#a0242e458904de8a242fcdaffe9e3ba1a":[11,0,2,5,2],
 "d8/d76/morse__code_8cpp.html#a15c66ec8cf4cef0a35c50cbab86965dc":[11,0,2,5,1],
@@ -224,11 +227,11 @@ var NAVTREEINDEX8 =
 "d8/db1/binomial__calculate_8cpp.html#aae407a2a13362c4c64fbe509ff325978":[11,0,14,4,0],
 "d8/db1/binomial__calculate_8cpp.html#ac0f2228420376f4db7e1274f2b41667c":[11,0,14,4,1],
 "d8/dc6/namespacemanacher.html":[9,0,66],
-"d8/dc8/struct_point.html":[10,0,46],
-"d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7":[10,0,46,2],
-"d8/dc8/struct_point.html#ab99c56589bc8ad5fa5071387110a5bc7":[10,0,46,1],
-"d8/dc8/struct_point.html#ae2d6fb1b3fd3a96169d963d62e37130a":[10,0,46,0],
-"d8/dc8/struct_point.html#afa38be143ae800e6ad69ce8ed4df62d8":[10,0,46,3],
+"d8/dc8/struct_point.html":[10,0,47],
+"d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7":[10,0,47,2],
+"d8/dc8/struct_point.html#ab99c56589bc8ad5fa5071387110a5bc7":[10,0,47,1],
+"d8/dc8/struct_point.html#ae2d6fb1b3fd3a96169d963d62e37130a":[10,0,47,0],
+"d8/dc8/struct_point.html#afa38be143ae800e6ad69ce8ed4df62d8":[10,0,47,3],
 "d8/dcc/binary__insertion__sort_8cpp.html":[11,0,22,0],
 "d8/dcc/binary__insertion__sort_8cpp.html#a034d8b276518a902962e87d3158b64fd":[11,0,22,0,0],
 "d8/dcc/binary__insertion__sort_8cpp.html#a5f4bc75cca6dd8294af2d0e328006c68":[11,0,22,0,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX8 =
 "d8/ddf/sieve__of__eratosthenes_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9":[11,0,14,51,3],
 "d8/ddf/sieve__of__eratosthenes_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,51,0],
 "d8/dee/avltree_8cpp.html":[11,0,4,1],
-"d8/dee/avltree_8cpp.html#a2473fe7416332495b2678ebe89652e4b":[11,0,4,1,6],
-"d8/dee/avltree_8cpp.html#a473eee1803e4e44a54d685e4b0eef5a6":[11,0,4,1,7],
-"d8/dee/avltree_8cpp.html#a48d897353aeb6a721dbc6b6c57e035e6":[11,0,4,1,1],
-"d8/dee/avltree_8cpp.html#a5fa160a678a34dd51c0aea1c0c00ed5e":[11,0,4,1,10]
+"d8/dee/avltree_8cpp.html#a2473fe7416332495b2678ebe89652e4b":[11,0,4,1,6]
 };

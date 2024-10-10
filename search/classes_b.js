@@ -20,6 +20,7 @@ var searchData=
   ['logical_5fnot_17',['logical_not',['http://en.cppreference.com/w/cpp/utility/functional/logical_not.html',0,'std']]],
   ['logical_5for_18',['logical_or',['http://en.cppreference.com/w/cpp/utility/functional/logical_or.html',0,'std']]],
   ['lognormal_5fdistribution_19',['lognormal_distribution',['http://en.cppreference.com/w/cpp/numeric/random/lognormal_distribution.html',0,'std']]],
-  ['lowestcommonancestor_20',['LowestCommonAncestor',['../d9/d23/classgraph_1_1_lowest_common_ancestor.html',1,'graph']]],
-  ['lrucache_21',['LRUCache',['../d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html',1,'others::lru_cache']]]
+  ['longest_5fsubstring_20',['Longest_Substring',['../da/d21/class_longest___substring.html',1,'']]],
+  ['lowestcommonancestor_21',['LowestCommonAncestor',['../d9/d23/classgraph_1_1_lowest_common_ancestor.html',1,'graph']]],
+  ['lrucache_22',['LRUCache',['../d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html',1,'others::lru_cache']]]
 ];

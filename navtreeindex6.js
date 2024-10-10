@@ -1,5 +1,8 @@
 var NAVTREEINDEX6 =
 {
+"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md59":[4,13],
+"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md60":[4,14],
+"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md61":[4,15],
 "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md62":[4,16],
 "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md63":[4,17],
 "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md64":[4,18],
@@ -93,7 +96,7 @@ var NAVTREEINDEX6 =
 "d5/d96/md5_8cpp.html#add2bf982d5dd64a45d13cba52c2b371d":[11,0,12,3,4],
 "d5/d96/md5_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,12,3,5],
 "d5/d96/md5_8cpp.html#af8e96bde0183c4b0a7ff04668f11e446":[11,0,12,3,3],
-"d5/da1/structnode.html":[10,0,45],
+"d5/da1/structnode.html":[10,0,46],
 "d5/da7/namespacejarvis.html":[9,0,52],
 "d5/dab/structdata__structures_1_1list__array_1_1list.html":[10,0,2,1,0],
 "d5/dab/structdata__structures_1_1list__array_1_1list.html#a0b7acf65026df1e9dd13eebf309dda5e":[10,0,2,1,0,4],
@@ -119,8 +122,8 @@ var NAVTREEINDEX6 =
 "d5/ddb/bogo__sort_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,22,1,0],
 "d5/ddb/bogo__sort_8cpp.html#ae8adaeff66471f9ed84f2e673b38a859":[11,0,22,1,2],
 "d5/ddb/bogo__sort_8cpp.html#affc6ee160142cd017f8c4b213437d0fd":[11,0,22,1,1],
-"d5/def/stairs__pattern_8cpp.html":[11,0,17,21],
-"d5/def/stairs__pattern_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,17,21,0],
+"d5/def/stairs__pattern_8cpp.html":[11,0,17,22],
+"d5/def/stairs__pattern_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,17,22,0],
 "d5/df4/merge__sort_8cpp.html":[8,3,0],
 "d5/df6/check__amicable__pair_8cpp.html":[11,0,14,5],
 "d5/df6/check__amicable__pair_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[11,0,14,5,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX6 =
 "d6/d57/array__right__rotation_8cpp.html":[11,0,16,1],
 "d6/d57/array__right__rotation_8cpp.html#a167c24bd817469ae47358d12e034f2d5":[11,0,16,1,4],
 "d6/d57/array__right__rotation_8cpp.html#a1bfb8711f49e591eb168ccaa3df6fb86":[11,0,16,1,2],
-"d6/d57/array__right__rotation_8cpp.html#a2b9769e44683dcb67fe1083ad91e134d":[11,0,16,1,7],
-"d6/d57/array__right__rotation_8cpp.html#a6109193567a5b7e36a27f2b4865fce20":[11,0,16,1,1],
-"d6/d57/array__right__rotation_8cpp.html#aa515639572647508b94986489aab6d76":[11,0,16,1,6],
-"d6/d57/array__right__rotation_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,16,1,3]
+"d6/d57/array__right__rotation_8cpp.html#a2b9769e44683dcb67fe1083ad91e134d":[11,0,16,1,7]
 };

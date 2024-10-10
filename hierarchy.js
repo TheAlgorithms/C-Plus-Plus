@@ -56,6 +56,7 @@ var hierarchy =
     [ "data_structures::list_array::list< N >", "d5/dab/structdata__structures_1_1list__array_1_1list.html", null ],
     [ "list", "d8/d10/structlist.html", null ],
     [ "ListNode", "d7/da4/struct_list_node.html", null ],
+    [ "Longest_Substring", "da/d21/class_longest___substring.html", null ],
     [ "graph::LowestCommonAncestor", "d9/d23/classgraph_1_1_lowest_common_ancestor.html", null ],
     [ "others::lru_cache::LRUCache", "d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html", null ],
     [ "divide_and_conquer::strassens_multiplication::Matrix< T, typename >", "dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html", null ],
