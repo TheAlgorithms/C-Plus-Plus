@@ -219,7 +219,6 @@ class SJF {
    * @returns A vector of tuples containing Process ID, Arrival time, Burst time,
    *         Completion time, Turnaround time, and Waiting time
    */
-   
     template <typename S, typename T, typename E>
   vector<tuple<S, T, E, double, double, double>> get_final_status(
       vector<tuple<S, T, E>> input) {
