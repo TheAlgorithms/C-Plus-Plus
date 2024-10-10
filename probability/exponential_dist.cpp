@@ -12,9 +12,11 @@
  * \f$\lambda\f$ : rate parameter
  */
 
-#include <cassert>   // For assert
-#include <cmath>     // For std::pow
-#include <iostream>  // For I/O operation
+#include <cassert>    // For assert
+#include <cmath>      // For std::pow
+#include <iostream>   // For I/O operation
+#include <stdexcept>  // For std::invalid_argument
+#include <string>     // For std::string
 
 /**
  * @brief the expected value of the exponential distribution
@@ -22,8 +24,7 @@
  */
 double exponential_expected(double lambda) {
     if (lambda <= 0) {
-        std::cout << "Error: Lambda must be greater than 0." << '\n';
-        assert(lambda > 0);
+        throw std::invalid_argument("lambda must be greater than 0");
     }
     return 1 / lambda;
 }
@@ -34,8 +35,7 @@ double exponential_expected(double lambda) {
  */
 double exponential_var(double lambda) {
     if (lambda <= 0) {
-        std::cout << "Error: Lambda must be greater than 0." << '\n';
-        assert(lambda > 0);
+        throw std::invalid_argument("lambda must be greater than 0");
     }
     return 1 / pow(lambda, 2);
 }
@@ -46,8 +46,7 @@ double exponential_var(double lambda) {
  */
 double exponential_std(double lambda) {
     if (lambda <= 0) {
-        std::cout << "Error: Lambda must be greater than 0." << '\n';
-        assert(lambda > 0);
+        throw std::invalid_argument("lambda must be greater than 0");
     }
     return 1 / lambda;
 }
@@ -72,6 +71,9 @@ static void test() {
     double var_3 = 0.111111;
     double std_3 = 0.333333;
 
+    double lambda_4 = 0;     // Test 0
+    double lambda_5 = -2.3;  // Test negative value
+
     const float threshold = 1e-3f;
 
     std::cout << "Test for lambda = 1 \n";
@@ -90,7 +92,27 @@ static void test() {
     assert(std::abs(expected_3 - exponential_expected(lambda_3)) < threshold);
     assert(std::abs(var_3 - exponential_var(lambda_3)) < threshold);
     assert(std::abs(std_3 - exponential_std(lambda_3)) < threshold);
-    std::cout << "ALL TEST PASSED\n";
+    std::cout << "ALL TEST PASSED\n\n";
+
+    std::cout << "Test for lambda = 0 \n";
+    try {
+        exponential_expected(lambda_4);
+        exponential_var(lambda_4);
+        exponential_std(lambda_4);
+    } catch (std::invalid_argument& err) {
+        assert(std::string(err.what()) == "lambda must be greater than 0");
+    }
+    std::cout << "ALL TEST PASSED\n\n";
+
+    std::cout << "Test for lambda = -2.3 \n";
+    try {
+        exponential_expected(lambda_5);
+        exponential_var(lambda_5);
+        exponential_std(lambda_5);
+    } catch (std::invalid_argument& err) {
+        assert(std::string(err.what()) == "lambda must be greater than 0");
+    }
+    std::cout << "ALL TEST PASSED\n\n";
 }
 
 /**
