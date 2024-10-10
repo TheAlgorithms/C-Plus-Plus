@@ -13,10 +13,9 @@
  *
  * Examples:
  *
- * @example
  * Input: Four Jobs with following deadlines and profits
  * JobID |  Deadline |  Profit
- * -----------------------------
+ * ------|-----------|----------
  * a     |      4    |    20
  * b     |      1    |    10
  * c     |      1    |    40
@@ -24,10 +23,9 @@
  *
  * Output: Following is maximum profit sequence of jobs: c, a
  *
- * @example
  *  Input:  Five Jobs with following deadlines and profits
- *  JobID | Deadline | Profit
- * ---------------------------
+ *  JobID | Deadline  | Profit
+ * -------|-----------|--------
  *   a    |     2     |  100
  *   b    |     1     |  19
  *   c    |     2     |  27
