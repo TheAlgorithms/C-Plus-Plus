@@ -9,8 +9,8 @@
  * calculates the sum. If the sum exceeds 1, a carry is generated for the next
  * bit. The results for each bit are collected in a result string, which is
  * reversed at the end to present the final binary sum correctly. Additionally,
- * the function validates the input to ensure that only valid binary strings 
- * (containing only '0' and '1') are processed. If invalid input is detected, 
+ * the function validates the input to ensure that only valid binary strings
+ * (containing only '0' and '1') are processed. If invalid input is detected,
  * it returns an empty string.
  * @author [Muhammad Junaid Khalid](https://github.com/mjk22071998)
  */
@@ -35,12 +35,13 @@ class BinaryAddition {
      *
      * @param a The first binary string.
      * @param b The second binary string.
-     * @return The sum of the two binary strings as a binary string, or an empty string
-     *         if either input string contains non-binary characters.
+     * @return The sum of the two binary strings as a binary string, or an empty
+     * string if either input string contains non-binary characters.
      */
     std::string addBinary(const std::string& a, const std::string& b) {
         if (!isValidBinaryString(a) || !isValidBinaryString(b)) {
-            return "";  // Return empty string if input contains non-binary characters
+            return "";  // Return empty string if input contains non-binary
+                        // characters
         }
 
         std::string result;
@@ -73,9 +74,8 @@ class BinaryAddition {
      * @return true if the string is binary, false otherwise.
      */
     bool isValidBinaryString(const std::string& str) const {
-        return std::all_of(str.begin(), str.end(), [](char c) {
-            return c == '0' || c == '1';
-        });
+        return std::all_of(str.begin(), str.end(),
+                           [](char c) { return c == '0' || c == '1'; });
     }
 };
 }  // namespace greedy_algorithms
