@@ -14,7 +14,7 @@
  */
 #include <cassert>
 #include <cmath>
-#include <iostream>
+#include <cstdint>
 #ifdef _MSC_VER
 #include <string>  // use for MS Visual C++
 #else

@@ -10,6 +10,7 @@
  * @author [ewd00010](https://github.com/ewd00010)
  */
 #include <cassert>   /// for assert
+#include <cstdint>
 #include <iostream>  /// for cout
 
 /**

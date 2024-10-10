@@ -9,6 +9,8 @@
  *
  * @see fibonacci_large.cpp, fibonacci_fast.cpp, string_fibonacci.cpp
  */
+
+#include <cstdint>
 #include <cassert>   /// for assert
 #include <iostream>  /// for IO operations
 
