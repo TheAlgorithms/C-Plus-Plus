@@ -357,7 +357,8 @@ class RIPEMD160 {
 }  // namespace hashing
 
 /**
- * @brief test example hashes
+ * @brief self test implementation
+ * @return void
  */
 static void check_me(std::string data, std::string expected_hash) {
     hashing::RIPEMD160 obj;
@@ -393,7 +394,7 @@ static void test() {
  * @brief main function
  * @return 0 on exit
  */
-int main(int argc, char *argv[]) {
-    test();
+int main() {
+    test(); // run self test implementation
     return 0;
 }
