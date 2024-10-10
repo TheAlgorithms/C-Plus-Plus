@@ -2,7 +2,7 @@
 /**
  * @file
  * @brief find the length of the Longest Increasing Subsequence (LIS)
- * using Binary Search(https://en.wikipedia.org/wiki/Longest_increasing_subsequence)
+ * using [Binary Search](https://en.wikipedia.org/wiki/Longest_increasing_subsequence)
  * @details
  * Given an integer array nums, return the length of the longest strictly
  * increasing subsequence.
@@ -89,6 +89,12 @@ static void tests() {
 
     std::vector<int> arr3 = {7, 7, 7, 7, 7, 7, 7};
     assert(longest_increasing_subsequence_using_binary_search(arr3) == 1);
+
+    std::vector<int> arr4 = {-10, -1, -5, 0, 5, 1, 2};
+    assert(longest_increasing_subsequence_using_binary_search(arr4) == 5);
+
+    std::vector<int> arr5 = {};
+    assert(longest_increasing_subsequence_using_binary_search(arr5) == 0);
 
     std::cout << "All tests have successfully passed!\n";
 }
