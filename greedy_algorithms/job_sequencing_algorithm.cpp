@@ -68,35 +68,59 @@
 
 // Implementation of the greedy algorithm using priority_queue AKA max_heap.
 // C++ code for the above approach
-#include <algorithm>
-#include <cassert>
-#include <iostream>
-#include <queue>
-#include <vector>
-using namespace std;
+#include <algorithm>  // for sort function.
+#include <cassert>    // for assert funtion in testing
+#include <iostream>   // for standard in/out
+#include <queue>      // for priority queue data structure
+#include <vector>     // for vector data structure
 
-// A structure to represent a job
+/**
+ * @namespace
+ * @brief Greedy Algorithms
+ */
+namespace greedy_algorithms {
+
+/**
+ * @brief A structure to represent a job
+ */
 struct Job {
     char id;     // Job Id
     int dead;    // Deadline of job
     int profit;  // Profit earned if job is completed before deadline
-};
+};  // namespace greedy_algorithmsstruct Job
 
 // Custom sorting helper struct which is used for sorting
 // all jobs according to profit
+
+/**
+ * @brief Utility function that finds Custom sorting helper
+ * struct which is used for sorting all jobs according to profit
+ *
+ * @param a first job struct
+ * @param b second job struct
+ * @returns true if the proft of a less than profit of b, else false.
+ */
 struct jobProfit {
     bool operator()(Job const& a, Job const& b) {
         return (a.profit < b.profit);
     }
 };
 
-// Returns maximum profit from jobs
-void printJobScheduling(Job arr[], int n) {
-    vector<Job> result;
-    sort(arr, arr + n, [](Job a, Job b) { return a.dead < b.dead; });
+/**
+ * @brief function that get the maximum profit from jobs
+ *
+ * @param arr array fo Jobs
+ * @param n number of the jobs in the array
+ * @returns vector of 'char' including the IDs of jobs
+ * that has the maximum profit from jobs
+ *
+ */
+std::vector<char> getJobScheduling(Job arr[], int n) {
+    std::vector<Job> result;
+    std::sort(arr, arr + n, [](Job a, Job b) { return a.dead < b.dead; });
 
     // set a custom priority queue
-    priority_queue<Job, vector<Job>, jobProfit> pq;
+    std::priority_queue<Job, std::vector<Job>, jobProfit> pq;
 
     for (int i = n - 1; i >= 0; i--) {
         int slot_available;
@@ -129,20 +153,47 @@ void printJobScheduling(Job arr[], int n) {
     sort(result.begin(), result.end(),
          [&](Job a, Job b) { return a.dead < b.dead; });
 
-    // print the result
-    for (int i = 0; i < result.size(); i++) cout << result[i].id << ' ';
-    cout << endl;
+    std::vector<char> answer;
+
+    // extract the job IDs only to be returned
+    for (int i = 0; i < result.size(); i++) answer.push_back(result[i].id);
+
+    // return the job IDs
+    return answer;
+}
+}  // namespace greedy_algorithms
+
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+void tests() {
+    greedy_algorithms::Job jobs1[] = {
+        {'a', 2, 100}, {'b', 1, 19}, {'c', 2, 27}, {'d', 1, 25}, {'e', 3, 15}};
+    int n = sizeof(jobs1) / sizeof(jobs1[0]);
+
+    // 1st test
+    assert(greedy_algorithms::getJobScheduling(jobs1, n)[0] == 'a');
+    assert(greedy_algorithms::getJobScheduling(jobs1, n)[1] == 'c');
+    assert(greedy_algorithms::getJobScheduling(jobs1, n)[2] == 'e');
+
+    greedy_algorithms::Job jobs2[] = {
+        {'x', 1, 50}, {'y', 2, 60}, {'z', 2, 20}, {'w', 3, 30}};
+    n = sizeof(jobs2) / sizeof(jobs2[0]);
+
+    // 2nd test
+    assert(greedy_algorithms::getJobScheduling(jobs2, n)[0] == 'x');
+    assert(greedy_algorithms::getJobScheduling(jobs2, n)[1] == 'y');
+    assert(greedy_algorithms::getJobScheduling(jobs2, n)[2] == 'w');
+
+    std::cout << "All tests have successfully passed!\n";
 }
 
-// main function to test the code
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
-    Job arr[] = {
-        {'a', 2, 100}, {'b', 1, 19}, {'c', 2, 27}, {'d', 1, 25}, {'e', 3, 15}};
-
-    int n = sizeof(arr) / sizeof(arr[0]);
-    cout << "Following is maximum profit sequence of jobs \n";
-
-    // Function call
-    printJobScheduling(arr, n);
+    tests();
     return 0;
 }
