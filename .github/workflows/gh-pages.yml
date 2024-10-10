@@ -2,7 +2,7 @@ name: Doxygen CI
 
 on:
   push:
-    branches: [doxygen-awesome]
+    branches: [master]
 
 jobs:
   build:
