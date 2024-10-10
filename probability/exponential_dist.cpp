@@ -11,7 +11,7 @@
  * \f$\lambda\f$ : rate parameter
  */
 
-#include<cmath> // For power function
+#include<cmath> // For std::pow
 #include<cassert> // For asserting the test cases
 #include<iostream> // For I/O operation
 
