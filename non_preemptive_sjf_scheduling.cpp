@@ -74,7 +74,6 @@ class Compare {
      * @returns true if the tuples SHOULD be swapped
      * @returns false if the tuples SHOULDN'T be swapped
      */
-     
     bool operator()(tuple<S, T, E, double, double, double>& t1,
                     tuple<S, T, E, double, double, double>& t2) {
         // Compare burst times for SJF
