@@ -8,15 +8,17 @@
  * pair of corresponding bits and any carry from the previous addition, it
  * calculates the sum. If the sum exceeds 1, a carry is generated for the next
  * bit. The results for each bit are collected in a result string, which is
- * reversed at the end to present the final binary sum correctly. This method
- * efficiently handles varying string lengths and carrying during addition.
+ * reversed at the end to present the final binary sum correctly. Additionally,
+ * the function validates the input to ensure that only valid binary strings 
+ * (containing only '0' and '1') are processed. If invalid input is detected, 
+ * it returns an empty string.
  * @author [Muhammad Junaid Khalid](https://github.com/mjk22071998)
  */
 
 #include <algorithm>  /// for reverse function
 #include <cassert>    /// for tests
 #include <iostream>   /// for input and outputs
-#include <string>     /// for sting class
+#include <string>     /// for string class
 
 /**
  * @namespace
@@ -33,9 +35,14 @@ class BinaryAddition {
      *
      * @param a The first binary string.
      * @param b The second binary string.
-     * @return The sum of the two binary strings as a binary string.
+     * @return The sum of the two binary strings as a binary string, or an empty string
+     *         if either input string contains non-binary characters.
      */
     std::string addBinary(const std::string& a, const std::string& b) {
+        if (!isValidBinaryString(a) || !isValidBinaryString(b)) {
+            return "";  // Return empty string if input contains non-binary characters
+        }
+
         std::string result;
         int carry = 0;
         int maxLength = std::max(a.size(), b.size());
@@ -58,6 +65,18 @@ class BinaryAddition {
         std::reverse(result.begin(), result.end());
         return result;
     }
+
+ private:
+    /**
+     * Validates whether a string contains only binary characters (0 or 1).
+     * @param str The string to validate.
+     * @return true if the string is binary, false otherwise.
+     */
+    bool isValidBinaryString(const std::string& str) const {
+        return std::all_of(str.begin(), str.end(), [](char c) {
+            return c == '0' || c == '1';
+        });
+    }
 };
 }  // namespace greedy_algorithms
 
@@ -65,8 +84,9 @@ class BinaryAddition {
  * Function to run tests for the addBinary method.
  */
 void tests() {
-    BinaryAddition binaryAddition;
+    greedy_algorithms::BinaryAddition binaryAddition;
 
+    // Valid binary string tests
     assert(binaryAddition.addBinary("1010", "1101") == "10111");
     assert(binaryAddition.addBinary("1111", "1111") == "11110");
     assert(binaryAddition.addBinary("101", "11") == "1000");
@@ -78,8 +98,15 @@ void tests() {
                                     "110110110110110110110110110110") ==
            "1100001100001100001100001100000");
     assert(binaryAddition.addBinary("1", "11111111") == "100000000");
-    assert(binaryAddition.addBinary("", "") == "");
     assert(binaryAddition.addBinary("10101010", "01010101") == "11111111");
+
+    // Invalid binary string tests (should return empty string)
+    assert(binaryAddition.addBinary("10102", "1101") == "");
+    assert(binaryAddition.addBinary("ABC", "1101") == "");
+    assert(binaryAddition.addBinary("1010", "1102") == "");
+    assert(binaryAddition.addBinary("111", "1x1") == "");
+    assert(binaryAddition.addBinary("1x1", "111") == "");
+    assert(binaryAddition.addBinary("1234", "1101") == "");
 }
 
 /**
@@ -87,5 +114,6 @@ void tests() {
  */
 int main() {
     tests();
+    std::cout << "All tests passed.\n";
     return 0;
 }
