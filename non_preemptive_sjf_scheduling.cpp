@@ -11,8 +11,7 @@
 
 #include <algorithm>         /// for sorting
 #include <cassert>          /// for assert
-#include <cstdlib>          /// random number generation
-#include <ctime>            /// for time   
+#include <random>          /// random number generation  
 #include <iomanip>          /// for formatting the output
 #include <iostream>         /// for IO operations
 #include <queue>            /// for std::priority_queue
@@ -26,8 +25,6 @@ using std::get;
 using std::left;
 using std::make_tuple;
 using std::priority_queue;
-using std::rand;
-using std::srand;
 using std::tuple;
 using std::unordered_set;
 using std::vector;
@@ -37,8 +34,8 @@ using std::vector;
  * @tparam S Data type of Process ID
  * @tparam T Data type of Arrival time
  * @tparam E Data type of Burst time
- * @param t1 First tuple
- * @param t2 Second tuple
+ * @param t1 First tuple<S,T,E>t1
+ * @param t2 Second tuple<S,T,E>t2
  * @returns true if t1 and t2 are in the CORRECT order
  * @returns false if t1 and t2 are in the INCORRECT order
  */
@@ -260,27 +257,55 @@ class SJF {
  * @returns void
  */
 static void test() {
-    for (int i{}; i < 1000; i++) {
-        srand(time(nullptr));
-        uint32_t n = 1 + rand() % 1000;
+    // A vector to store the results of all processes across all test cases.
+    vector<tuple<uint32_t, uint32_t, uint32_t, double, double, double>> finalResult;
+
+    for (int i{}; i < 100; i++) {  
+        std::random_device rd;    // Seeding
+        std::mt19937 eng(rd());
+        std::uniform_int_distribution<> distr(1, 100);   
+
+        uint32_t n = distr(eng);  
         SJF<uint32_t, uint32_t, uint32_t> readyQueue;
         vector<tuple<uint32_t, uint32_t, uint32_t>> input(n);
 
+        // Generate random arrival and burst times
         for (uint32_t i{}; i < n; i++) {
             get<0>(input[i]) = i;
-            srand(time(nullptr));
-            get<1>(input[i]) = 1 + rand() % 10000;
-            srand(time(nullptr));
-            get<2>(input[i]) = 1 + rand() % 10000;
+            get<1>(input[i]) = distr(eng);  // Random arrival time
+            get<2>(input[i]) = distr(eng);  // Random burst time
         }
 
+        // Add processes to the queue
         for (uint32_t i{}; i < n; i++) {
-            readyQueue.addProcess(get<0>(input[i]), get<1>(input[i]),
-                                  get<2>(input[i]));
+            readyQueue.addProcess(get<0>(input[i]), get<1>(input[i]), get<2>(input[i]));
         }
-        readyQueue.scheduleForSJF();
-        //readyQueue.printResult();
+        
+        // Schedule processes using SJF
+        vector<tuple<uint32_t, uint32_t, uint32_t, double, double, double>> beforeResult = readyQueue.scheduleForSJF();
+
+        // Append the results of this test case to the final result
+        finalResult.insert(finalResult.end(), partialResult.begin(), partialResult.end());
     }
+
+    // Now, print the results after all test cases
+    cout << "Status of all processes post completion is as follows:" << endl;
+    cout << std::setw(17) << left << "Process ID" << std::setw(17) << left
+         << "Arrival Time" << std::setw(17) << left << "Burst Time"
+         << std::setw(17) << left << "Completion Time" << std::setw(17)
+         << left << "Turnaround Time" << std::setw(17) << left << "Waiting Time" << endl;
+
+    // Loop through the final result and print all process details
+    for (size_t i{}; i < finalResult.size(); i++) {
+        cout << std::setprecision(2) << std::fixed << std::setw(17) << left
+             << get<0>(finalResult[i]) << std::setw(17) << left
+             << get<1>(finalResult[i]) << std::setw(17) << left
+             << get<2>(finalResult[i]) << std::setw(17) << left
+             << get<3>(finalResult[i]) << std::setw(17) << left
+             << get<4>(finalResult[i]) << std::setw(17) << left
+             << get<5>(finalResult[i]) << endl;
+    }
+
     cout << "All the tests have successfully passed!" << endl;
 }
 
