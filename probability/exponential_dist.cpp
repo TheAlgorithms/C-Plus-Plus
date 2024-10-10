@@ -12,7 +12,7 @@
  */
 
 #include<cmath> // For std::pow
-#include<cassert> // For asserting the test cases
+#include<cassert> // For assert
 #include<iostream> // For I/O operation
 
 /** 
