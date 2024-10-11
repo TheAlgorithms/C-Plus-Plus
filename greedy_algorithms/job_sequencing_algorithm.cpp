@@ -85,7 +85,7 @@ struct Job {
     char id;     // Job Id
     int dead;    // Deadline of job
     int profit;  // Profit earned if job is completed before deadline
-};  // namespace greedy_algorithmsstruct Job
+};
 
 // Custom sorting helper struct which is used for sorting
 // all jobs according to profit
