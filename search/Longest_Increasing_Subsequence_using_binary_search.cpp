@@ -1,4 +1,3 @@
-
 /**
  * @file
  * @brief find the length of the Longest Increasing Subsequence (LIS)
@@ -53,27 +52,31 @@
 #include <iostream>  /// for IO operations
 #include <vector>    /// for std::vector
 #include <algorithm> /// for std::lower_bound
+#include <cstdint>   /// for std::uint32_t
 
 /**
  * @brief Function to find the length of the Longest Increasing Subsequence (LIS)
  * using Binary Search
- * @param nums The input vector of integers
+ * @tparam T The type of the elements in the input vector
+ * @param nums The input vector of elements of type T
  * @return The length of the longest increasing subsequence
  */
-int longest_increasing_subsequence_using_binary_search(std::vector<int>& nums) {
+
+template <typename T>
+std::uint32_t longest_increasing_subsequence_using_binary_search(std::vector<T>& nums) {
     if (nums.empty()) return 0;
 
-    std::vector<int> ans;
+    std::vector<T> ans;
     ans.push_back(nums[0]);
-    for (int i = 1; i < nums.size(); i++) {
+    for (std::size_t i = 1; i < nums.size(); i++) {
         if (nums[i] > ans.back()) {
             ans.push_back(nums[i]);
         } else {
-            int idx = std::lower_bound(ans.begin(), ans.end(), nums[i]) - ans.begin();
+            auto idx = std::lower_bound(ans.begin(), ans.end(), nums[i]) - ans.begin();
             ans[idx] = nums[i];
         }
     }
-    return ans.size();
+    return static_cast<std::uint32_t>(ans.size());
 }
 
 /**
@@ -93,8 +96,14 @@ static void tests() {
     std::vector<int> arr4 = {-10, -1, -5, 0, 5, 1, 2};
     assert(longest_increasing_subsequence_using_binary_search(arr4) == 5);
 
-    std::vector<int> arr5 = {};
-    assert(longest_increasing_subsequence_using_binary_search(arr5) == 0);
+    std::vector<double> arr5 = {3.5, 1.2, 2.8, 3.1, 4.0};
+    assert(longest_increasing_subsequence_using_binary_search(arr5) == 4);
+
+    std::vector<char> arr6 = {'a', 'b', 'c', 'a', 'd'};
+    assert(longest_increasing_subsequence_using_binary_search(arr6) == 4);
+
+    std::vector<int> arr7 = {};
+    assert(longest_increasing_subsequence_using_binary_search(arr7) == 0);
 
     std::cout << "All tests have successfully passed!\n";
 }
