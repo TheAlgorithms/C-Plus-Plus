@@ -34,5 +34,9 @@ a.out
 *.out
 *.app
 
+# Cache
+.cache/
+
+# Build
 build/
 git_diff.txt

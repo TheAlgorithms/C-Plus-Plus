@@ -1,5 +1,6 @@
 #include <iostream>
-using namespace std;
+using std::cin;
+using std::cout;
 
 int queue[10];
 int front = 0;

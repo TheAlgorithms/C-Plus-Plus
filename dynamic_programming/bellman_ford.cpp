@@ -1,5 +1,6 @@
-#include <limits.h>
+#include <climits>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -13,13 +14,13 @@ class Edge {
 class Graph {
  public:
     int vertexNum, edgeNum;
-    Edge *edges;
+    std::vector<Edge> edges;
 
     // Constructs a graph with V vertices and E edges
     Graph(int V, int E) {
         this->vertexNum = V;
         this->edgeNum = E;
-        this->edges = (Edge *)malloc(E * sizeof(Edge));
+        this->edges.reserve(E);
     }
 
     // Adds the given edge to the graph
@@ -36,7 +37,7 @@ class Graph {
 };
 
 // Utility function to print distances
-void print(int dist[], int V) {
+void print(const std::vector<int>& dist, int V) {
     cout << "\nVertex  Distance" << endl;
     for (int i = 0; i < V; i++) {
         if (dist[i] != INT_MAX)
@@ -52,7 +53,8 @@ void print(int dist[], int V) {
 void BellmanFord(Graph graph, int src) {
     int V = graph.vertexNum;
     int E = graph.edgeNum;
-    int dist[V];
+    std::vector<int> dist;
+    dist.reserve(E);
 
     // Initialize distances array as INF for all except source
     // Intialize source as zero
