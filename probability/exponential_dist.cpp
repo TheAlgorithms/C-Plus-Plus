@@ -19,6 +19,18 @@
 #include <string>     // For std::string
 
 /**
+ * @namespace probability
+ * @brief Probability algorithms
+ */
+namespace probability {
+/**
+ * @namespace exponential_dist
+ * @brief Functions for the [Exponential
+ * Distribution](https://en.wikipedia.org/wiki/Exponential_distribution)
+ * algorithm implementation
+ */
+namespace geometric_dist {
+/**
  * @brief the expected value of the exponential distribution
  * @returns \f[\mu = \frac{1}{\lambda}\f]
  */
@@ -50,6 +62,8 @@ double exponential_std(double lambda) {
     }
     return 1 / lambda;
 }
+}  // namespace geometric_dist
+}  // namespace probability
 
 /**
  * @brief Self-test implementations
@@ -77,28 +91,40 @@ static void test() {
     const float threshold = 1e-3f;
 
     std::cout << "Test for lambda = 1 \n";
-    assert(std::abs(expected_1 - exponential_expected(lambda_1)) < threshold);
-    assert(std::abs(var_1 - exponential_var(lambda_1)) < threshold);
-    assert(std::abs(std_1 - exponential_std(lambda_1)) < threshold);
+    assert(
+        std::abs(expected_1 - probability::geometric_dist::exponential_expected(
+                                  lambda_1)) < threshold);
+    assert(std::abs(var_1 - probability::geometric_dist::exponential_var(
+                                lambda_1)) < threshold);
+    assert(std::abs(std_1 - probability::geometric_dist::exponential_std(
+                                lambda_1)) < threshold);
     std::cout << "ALL TEST PASSED\n\n";
 
     std::cout << "Test for lambda = 2 \n";
-    assert(std::abs(expected_2 - exponential_expected(lambda_2)) < threshold);
-    assert(std::abs(var_2 - exponential_var(lambda_2)) < threshold);
-    assert(std::abs(std_2 - exponential_std(lambda_2)) < threshold);
+    assert(
+        std::abs(expected_2 - probability::geometric_dist::exponential_expected(
+                                  lambda_2)) < threshold);
+    assert(std::abs(var_2 - probability::geometric_dist::exponential_var(
+                                lambda_2)) < threshold);
+    assert(std::abs(std_2 - probability::geometric_dist::exponential_std(
+                                lambda_2)) < threshold);
     std::cout << "ALL TEST PASSED\n\n";
 
     std::cout << "Test for lambda = 3 \n";
-    assert(std::abs(expected_3 - exponential_expected(lambda_3)) < threshold);
-    assert(std::abs(var_3 - exponential_var(lambda_3)) < threshold);
-    assert(std::abs(std_3 - exponential_std(lambda_3)) < threshold);
+    assert(
+        std::abs(expected_3 - probability::geometric_dist::exponential_expected(
+                                  lambda_3)) < threshold);
+    assert(std::abs(var_3 - probability::geometric_dist::exponential_var(
+                                lambda_3)) < threshold);
+    assert(std::abs(std_3 - probability::geometric_dist::exponential_std(
+                                lambda_3)) < threshold);
     std::cout << "ALL TEST PASSED\n\n";
 
     std::cout << "Test for lambda = 0 \n";
     try {
-        exponential_expected(lambda_4);
-        exponential_var(lambda_4);
-        exponential_std(lambda_4);
+        probability::geometric_dist::exponential_expected(lambda_4);
+        probability::geometric_dist::exponential_var(lambda_4);
+        probability::geometric_dist::exponential_std(lambda_4);
     } catch (std::invalid_argument& err) {
         assert(std::string(err.what()) == "lambda must be greater than 0");
     }
@@ -106,9 +132,9 @@ static void test() {
 
     std::cout << "Test for lambda = -2.3 \n";
     try {
-        exponential_expected(lambda_5);
-        exponential_var(lambda_5);
-        exponential_std(lambda_5);
+        probability::geometric_dist::exponential_expected(lambda_5);
+        probability::geometric_dist::exponential_var(lambda_5);
+        probability::geometric_dist::exponential_std(lambda_5);
     } catch (std::invalid_argument& err) {
         assert(std::string(err.what()) == "lambda must be greater than 0");
     }
