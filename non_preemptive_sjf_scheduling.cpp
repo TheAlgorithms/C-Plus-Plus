@@ -34,7 +34,7 @@ using std::vector;
  * @tparam S Data type of Process ID
  * @tparam T Data type of Arrival time
  * @tparam E Data type of Burst time
- * @param t1 First tuple<S,T,E>t1
+ * @param t1 tuple containing process id, arrival time and burst time
  * @param t2 tuple containing process id, arrival time and burst time
  * @returns true if t1 and t2 are in the CORRECT order
  * @returns false if t1 and t2 are in the INCORRECT order
