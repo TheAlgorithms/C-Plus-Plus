@@ -252,9 +252,8 @@ static void test() {
     // when 6 was added
     try {
         cache.get(1);
-        assert(false);
     } catch (const std::runtime_error &e) {
-        std::cout << "Expected - std::runtime_error\n";
+        assert(std::string(e.what()) == "key is not present in the cache");
     }
 
     // test retrieval of all items in the cache
