@@ -90,6 +90,10 @@ int unboundedKnapsack(std::uint16_t N, std::uint16_t W,
     return KnapSackFilling(N - 1, W, val, wt, dp); // Start the calculation
 }
 
+} // unbounded_knapsack
+
+} // dynamic_programming
+
 /**
  * @brief Function to run test cases for the unbounded knapsack implementation.
  * 
@@ -145,5 +149,3 @@ int main() {
     return 0;
 }
 
-}
-}
