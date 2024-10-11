@@ -1,7 +1,15 @@
 <map id="sorting/bubble_sort.cpp" name="sorting/bubble_sort.cpp">
-<area shape="rect" id="Node000001" title="Bubble sort algorithm." alt="" coords="7,5,163,31"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,77,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,33,59,67,54,64,75,30"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="100,79,158,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="95,30,116,64,111,67,90,33"/>
+<area shape="rect" id="Node000001" title="Bubble sort algorithm." alt="" coords="192,5,349,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,80,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,34,96,77,94,72,231,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="104,79,168,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="249,34,173,74,171,69,246,29"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="192,79,264,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="266,33,245,67,241,64,261,30"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="288,79,341,105"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="280,30,301,64,297,67,275,33"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="366,79,418,105"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="292,29,359,68,357,73,290,34"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="442,79,499,105"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="305,29,428,73,426,78,304,34"/>
 </map>

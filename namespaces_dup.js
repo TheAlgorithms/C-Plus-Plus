@@ -14,6 +14,7 @@ var namespaces_dup =
       [ "next_higher_number", "d7/d81/namespacebit__manipulation.html#a4b76571a2a04fa99c30a96eca9997f0e", null ]
     ] ],
     [ "boruvkas_minimum_spanning_tree", "d8/d64/namespaceboruvkas__minimum__spanning__tree.html", null ],
+    [ "bubble_sort", "d0/dd5/namespacebubble__sort.html", null ],
     [ "caesar", "dd/d81/namespacecaesar.html", null ],
     [ "ciphers", "d6/d4e/namespaceciphers.html", "d6/d4e/namespaceciphers" ],
     [ "circular_linked_list", "d4/dcd/namespacecircular__linked__list.html", null ],

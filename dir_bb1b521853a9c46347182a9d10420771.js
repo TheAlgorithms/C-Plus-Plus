@@ -2,7 +2,7 @@ var dir_bb1b521853a9c46347182a9d10420771 =
 [
     [ "binary_insertion_sort.cpp", "d8/dcc/binary__insertion__sort_8cpp.html", "d8/dcc/binary__insertion__sort_8cpp" ],
     [ "bogo_sort.cpp", "d5/ddb/bogo__sort_8cpp.html", "d5/ddb/bogo__sort_8cpp" ],
-    [ "bubble_sort.cpp", "d8/d13/bubble__sort_8cpp.html", null ],
+    [ "bubble_sort.cpp", "d8/d13/bubble__sort_8cpp.html", "d8/d13/bubble__sort_8cpp" ],
     [ "comb_sort.cpp", "d9/dfd/comb__sort_8cpp.html", "d9/dfd/comb__sort_8cpp" ],
     [ "count_inversions.cpp", "d2/d26/count__inversions_8cpp.html", "d2/d26/count__inversions_8cpp" ],
     [ "cycle_sort.cpp", "de/d07/cycle__sort_8cpp.html", "de/d07/cycle__sort_8cpp" ],

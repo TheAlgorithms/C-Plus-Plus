@@ -105,6 +105,7 @@ $(function(){initNavTree('d8/d13/bubble__sort_8cpp.html','../../'); initResizabl
 
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">bubble_sort.cpp File Reference</div></div>
 </div><!--header-->
@@ -112,30 +113,117 @@ $(function(){initNavTree('d8/d13/bubble__sort_8cpp.html','../../'); initResizabl
 
 <p>Bubble sort algorithm.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for bubble_sort.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d1d/bubble__sort_8cpp__incl.svg" width="168" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d1d/bubble__sort_8cpp__incl.svg" width="504" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html">sorting</a></td></tr>
+<tr class="memdesc:d5/d91/namespacesorting"><td class="mdescLeft">&#160;</td><td class="mdescRight">for working with vectors <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd5/namespacebubble__sort.html">bubble_sort</a></td></tr>
+<tr class="memdesc:d0/dd5/namespacebubble__sort"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bubble sort algorithm. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:af3b12930a83915712461d53fe9659686" id="r_af3b12930a83915712461d53fe9659686"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af3b12930a83915712461d53fe9659686"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af3b12930a83915712461d53fe9659686">sorting::bubble_sort::bubble_sort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;array)</td></tr>
+<tr class="memdesc:af3b12930a83915712461d53fe9659686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bubble sort algorithm.  <br /></td></tr>
+<tr class="separator:af3b12930a83915712461d53fe9659686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
+<tr class="memdesc:aa8dca7b867074164d5f45b0f3851269d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test implementation.  <br /></td></tr>
+<tr class="separator:aa8dca7b867074164d5f45b0f3851269d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <br /></td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Bubble sort algorithm. </p>
-<p>The working principle of the Bubble sort algorithm:</p>
 <p>Bubble sort algorithm is the bubble sorting algorithm. The most important reason for calling the bubble is that the largest number is thrown at the end of this algorithm. This is all about the logic. In each iteration, the largest number is expired and when iterations are completed, the sorting takes place.</p>
 <p>What is Swap?</p>
 <p>Swap in the software means that two variables are displaced. An additional variable is required for this operation. x = 5, y = 10. We want x = 10, y = 5. Here we create the most variable to do it.</p>
-<p>int z; z = x; x = y; y = z;</p>
-<p>The above process is a typical displacement process. When x assigns the value to x, the old value of x is lost. That's why we created a variable z to create the first value of the value of x, and finally, we have assigned to y.</p>
-<p>Bubble Sort Algorithm Analysis (Best Case - Worst Case - Average Case)</p>
-<p>Bubble Sort Worst Case Performance is O (n²). Why is that? Because if you remember Big O Notation, we were calculating the complexity of the algorithms in the nested loops. The n * (n - 1) product gives us O (n²) performance. In the worst case all the steps of the cycle will occur. Bubble Sort (Avarage Case) Performance. Bubble Sort is not an optimal algorithm. in average, O (n²) performance is taken. Bubble Sort Best Case Performance. O (n). However, you can't get the best status in the code we shared above. This happens on the optimized bubble sort algorithm. It's right down there. </p>
+<div class="fragment"><div class="line"><span class="keywordtype">int</span> z;</div>
+<div class="line">z = x;</div>
+<div class="line">x = y;</div>
+<div class="line">y = z;</div>
+</div><!-- fragment --><p>The above process is a typical displacement process. When x assigns the value to x, the old value of x is lost. That's why we created a variable z to create the first value of the value of x, and finally, we have assigned to y.</p>
+<h2><a class="anchor" id="autotoc_md110"></a>
+Bubble Sort Algorithm Analysis (Best Case - Worst Case - Average Case)</h2>
+<h3><a class="anchor" id="autotoc_md111"></a>
+Best Case</h3>
+<p>Bubble Sort Best Case Performance. \(O(n)\). However, you can't get the best status in the code we shared above. This happens on the optimized bubble sort algorithm. It's right down there.</p>
+<h3><a class="anchor" id="autotoc_md112"></a>
+Worst Case</h3>
+<p>Bubble Sort Worst Case Performance is \(O(n^{2})\). Why is that? Because if you remember Big O Notation, we were calculating the complexity of the algorithms in the nested loops. The \(n * (n - 1)\) product gives us \(O(n^{2})\) performance. In the worst case all the steps of the cycle will occur.</p>
+<h3><a class="anchor" id="autotoc_md113"></a>
+Average Case</h3>
+<p>Bubble Sort is not an optimal algorithm. In average, \(O(n^{2})\) performance is taken.</p>
+<dl class="section author"><dt>Author</dt><dd><a href="https://github.com/Deepak-j-p" target="_blank">Deepak</a> </dd>
+<dd>
+<a href="https://github.com/hollowcrust" target="_blank">Nguyen Phuc Chuong</a> </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="af3b12930a83915712461d53fe9659686" name="af3b12930a83915712461d53fe9659686"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3b12930a83915712461d53fe9659686">&#9670;&#160;</a></span>bubble_sort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; sorting::bubble_sort::bubble_sort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>array</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bubble sort algorithm. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">array</td><td>An array to be sorted </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The array sorted in ascending order </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   72</span>                                              {</div>
+<div class="line"><span class="lineno">   73</span>  <span class="comment">// swap_check flag to terminate the function early</span></div>
+<div class="line"><span class="lineno">   74</span>  <span class="comment">// if there is no swap occurs in one iteration.</span></div>
+<div class="line"><span class="lineno">   75</span>  <span class="keywordtype">bool</span> swap_check = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   76</span>  <span class="keywordtype">int</span> size = array.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">   77</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; (i &lt; size) &amp;&amp; (swap_check); i++) {</div>
+<div class="line"><span class="lineno">   78</span>    swap_check = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   79</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; size - 1 - i; j++) {</div>
+<div class="line"><span class="lineno">   80</span>      <span class="keywordflow">if</span> (array[j] &gt; array[j + 1]) {</div>
+<div class="line"><span class="lineno">   81</span>        swap_check = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   82</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(array[j], array[j + 1]);</div>
+<div class="line"><span class="lineno">   83</span>      }</div>
+<div class="line"><span class="lineno">   84</span>    }</div>
+<div class="line"><span class="lineno">   85</span>  }</div>
+<div class="line"><span class="lineno">   86</span> </div>
+<div class="line"><span class="lineno">   87</span>  <span class="keywordflow">return</span> array;</div>
+<div class="line"><span class="lineno">   88</span>}</div>
+<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
+<div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d13/bubble__sort_8cpp_af3b12930a83915712461d53fe9659686_cgraph.svg" width="310" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
 
@@ -150,55 +238,88 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   43</span>           {</div>
-<div class="line"><span class="lineno">   44</span>    <span class="keywordtype">int</span> n;</div>
-<div class="line"><span class="lineno">   45</span>    <span class="keywordtype">bool</span> swap_check = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   46</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter the amount of numbers to sort: &quot;</span>;</div>
-<div class="line"><span class="lineno">   47</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n;</div>
-<div class="line"><span class="lineno">   48</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> numbers;</div>
-<div class="line"><span class="lineno">   49</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter &quot;</span> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot; numbers: &quot;</span>;</div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordtype">int</span> num;</div>
-<div class="line"><span class="lineno">   51</span> </div>
-<div class="line"><span class="lineno">   52</span>    <span class="comment">// Input</span></div>
-<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++) {</div>
-<div class="line"><span class="lineno">   54</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; num;</div>
-<div class="line"><span class="lineno">   55</span>        numbers.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(num);</div>
-<div class="line"><span class="lineno">   56</span>    }</div>
-<div class="line"><span class="lineno">   57</span> </div>
-<div class="line"><span class="lineno">   58</span>    <span class="comment">// Bubble Sorting</span></div>
-<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; (i &lt; n) &amp;&amp; (swap_check); i++) {</div>
-<div class="line"><span class="lineno">   60</span>        swap_check = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   61</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; n - 1 - i; j++) {</div>
-<div class="line"><span class="lineno">   62</span>            <span class="keywordflow">if</span> (numbers[j] &gt; numbers[j + 1]) {</div>
-<div class="line"><span class="lineno">   63</span>                swap_check = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   64</span>                <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(numbers[j],</div>
-<div class="line"><span class="lineno">   65</span>                          numbers[j + 1]);  <span class="comment">// by changing swap location.</span></div>
-<div class="line"><span class="lineno">   66</span>                                            <span class="comment">// I mean, j. If the number is</span></div>
-<div class="line"><span class="lineno">   67</span>                                            <span class="comment">// greater than j + 1, then it</span></div>
-<div class="line"><span class="lineno">   68</span>                                            <span class="comment">// means the location.</span></div>
-<div class="line"><span class="lineno">   69</span>            }</div>
-<div class="line"><span class="lineno">   70</span>        }</div>
-<div class="line"><span class="lineno">   71</span>    }</div>
-<div class="line"><span class="lineno">   72</span> </div>
-<div class="line"><span class="lineno">   73</span>    <span class="comment">// Output</span></div>
-<div class="line"><span class="lineno">   74</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nSorted Array : &quot;</span>;</div>
-<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; numbers.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {</div>
-<div class="line"><span class="lineno">   76</span>        <span class="keywordflow">if</span> (i != numbers.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() - 1) {</div>
-<div class="line"><span class="lineno">   77</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; numbers[i] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
-<div class="line"><span class="lineno">   78</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   79</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; numbers[i] &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   80</span>        }</div>
-<div class="line"><span class="lineno">   81</span>    }</div>
-<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   83</span>}</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-<div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
+
+<p>Main function. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  131</span>           {</div>
+<div class="line"><span class="lineno">  132</span>  <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();</div>
+<div class="line"><span class="lineno">  133</span>  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  134</span>}</div>
+<div class="ttc" id="abubble__sort_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementation.</div><div class="ttdef"><b>Definition</b> bubble_sort.cpp:96</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d13/bubble__sort_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="322" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8dca7b867074164d5f45b0f3851269d">&#9670;&#160;</a></span>test()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void test </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Self-test implementation. </p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   96</span>                   {</div>
+<div class="line"><span class="lineno">   97</span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> vec_1 = {3, 1, -9, 0};</div>
+<div class="line"><span class="lineno">   98</span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> sorted_1 = <a class="code hl_function" href="#af3b12930a83915712461d53fe9659686">sorting::bubble_sort::bubble_sort</a>(vec_1);</div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> vec_2 = {3};</div>
+<div class="line"><span class="lineno">  101</span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> sorted_2 = <a class="code hl_function" href="#af3b12930a83915712461d53fe9659686">sorting::bubble_sort::bubble_sort</a>(vec_2);</div>
+<div class="line"><span class="lineno">  102</span> </div>
+<div class="line"><span class="lineno">  103</span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> vec_3 = {10, 10, 10, 10, 10};</div>
+<div class="line"><span class="lineno">  104</span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> sorted_3 = <a class="code hl_function" href="#af3b12930a83915712461d53fe9659686">sorting::bubble_sort::bubble_sort</a>(vec_3);</div>
+<div class="line"><span class="lineno">  105</span> </div>
+<div class="line"><span class="lineno">  106</span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> vec_4 = {1234, -273.1, 23, 150, 1234, 1555.55, -2000};</div>
+<div class="line"><span class="lineno">  107</span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> sorted_4 = <a class="code hl_function" href="#af3b12930a83915712461d53fe9659686">sorting::bubble_sort::bubble_sort</a>(vec_4);</div>
+<div class="line"><span class="lineno">  108</span> </div>
+<div class="line"><span class="lineno">  109</span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;char&gt;</a> vec_5 = {<span class="charliteral">&#39;z&#39;</span>, <span class="charliteral">&#39;Z&#39;</span>, <span class="charliteral">&#39;a&#39;</span>, <span class="charliteral">&#39;B&#39;</span>, <span class="charliteral">&#39; &#39;</span>, <span class="charliteral">&#39;c&#39;</span>, <span class="charliteral">&#39;a&#39;</span>};</div>
+<div class="line"><span class="lineno">  110</span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;char&gt;</a> sorted_5 = <a class="code hl_function" href="#af3b12930a83915712461d53fe9659686">sorting::bubble_sort::bubble_sort</a>(vec_5);</div>
+<div class="line"><span class="lineno">  111</span> </div>
+<div class="line"><span class="lineno">  112</span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::string&gt;</a> vec_6 = {<span class="stringliteral">&quot;Hello&quot;</span>, <span class="stringliteral">&quot;hello&quot;</span>, <span class="stringliteral">&quot;Helo&quot;</span>, <span class="stringliteral">&quot;Hi&quot;</span>, <span class="stringliteral">&quot;hehe&quot;</span>};</div>
+<div class="line"><span class="lineno">  113</span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::string&gt;</a> sorted_6 = <a class="code hl_function" href="#af3b12930a83915712461d53fe9659686">sorting::bubble_sort::bubble_sort</a>(vec_6);</div>
+<div class="line"><span class="lineno">  114</span> </div>
+<div class="line"><span class="lineno">  115</span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::pair&lt;int, char&gt;</a>&gt; vec_7 = {{10, <span class="charliteral">&#39;c&#39;</span>}, {2, <span class="charliteral">&#39;z&#39;</span>}, {10, <span class="charliteral">&#39;a&#39;</span>}, {0, <span class="charliteral">&#39;b&#39;</span>}, {-1, <span class="charliteral">&#39;z&#39;</span>}};</div>
+<div class="line"><span class="lineno">  116</span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::pair&lt;int, char&gt;</a>&gt; sorted_7 = <a class="code hl_function" href="#af3b12930a83915712461d53fe9659686">sorting::bubble_sort::bubble_sort</a>(vec_7);</div>
+<div class="line"><span class="lineno">  117</span> </div>
+<div class="line"><span class="lineno">  118</span>  assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(sorted_1.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), sorted_1.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>()));</div>
+<div class="line"><span class="lineno">  119</span>  assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(sorted_2.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), sorted_2.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>()));</div>
+<div class="line"><span class="lineno">  120</span>  assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(sorted_3.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), sorted_3.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>()));</div>
+<div class="line"><span class="lineno">  121</span>  assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(sorted_4.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), sorted_4.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>()));</div>
+<div class="line"><span class="lineno">  122</span>  assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(sorted_5.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), sorted_5.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>()));</div>
+<div class="line"><span class="lineno">  123</span>  assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(sorted_6.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), sorted_6.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>()));</div>
+<div class="line"><span class="lineno">  124</span>  assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(sorted_7.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), sorted_7.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>()));</div>
+<div class="line"><span class="lineno">  125</span>}</div>
+<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/begin.html">std::vector::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
+<div class="ttc" id="abubble__sort_8cpp_html_af3b12930a83915712461d53fe9659686"><div class="ttname"><a href="#af3b12930a83915712461d53fe9659686">sorting::bubble_sort::bubble_sort</a></div><div class="ttdeci">std::vector&lt; T &gt; bubble_sort(std::vector&lt; T &gt; &amp;array)</div><div class="ttdoc">Bubble sort algorithm.</div><div class="ttdef"><b>Definition</b> bubble_sort.cpp:72</div></div>
+<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/end.html">std::vector::end</a></div><div class="ttdeci">T end(T... args)</div></div>
+<div class="ttc" id="ais_sorted_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></div><div class="ttdeci">T is_sorted(T... args)</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment -->
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d13/bubble__sort_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="224" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
 </div><!-- contents -->
