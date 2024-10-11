@@ -31,7 +31,7 @@
  * \f}
  *
  * We will find the exponent using binary exponentiation such that the
- * algorithm works in logarithmic time.
+ * algorithm works in \f$O(\log n)\f$ time.
  *
  * Examples: -
  * * a = 3 and m = 7
