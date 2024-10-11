@@ -79,6 +79,7 @@
 namespace greedy_algorithms {
 
 /**
+ * @struct Job
  * @brief A structure to represent a job
  */
 struct Job {
