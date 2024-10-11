@@ -11,8 +11,8 @@
 #include <algorithm>  /// For std::min and std::max
 #include <cassert>    /// For assert
 #include <cstddef>    /// For std::size_t
-#include <cstdint>    /// For integral typedefs
-#include <vector>     /// For std::vector
+#include <cstdint>
+#include <vector>  /// For std::vector
 
 /*
  * @namespace

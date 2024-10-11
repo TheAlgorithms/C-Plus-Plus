@@ -14,6 +14,7 @@
 #include <cassert>   /// for assert
 #include <cmath>     /// for mathematical-related functions
 #include <complex>   /// for storing points and coefficents
+#include <cstdint>
 #include <iostream>  /// for IO operations
 #include <vector>    /// for std::vector
 

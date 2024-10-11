@@ -14,6 +14,7 @@
  */
 
 #include <cassert>   /// for assert
+#include <cstdint>
 #include <iostream>  /// for io operations
 #include <limits>    /// for variable INF
 #include <queue>     /// for the priority_queue of distances

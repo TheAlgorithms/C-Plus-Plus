@@ -12,8 +12,8 @@
  */
 
 #include <cassert>   /// for assert
+#include <cstdint>
 #include <iostream>  /// for I/O operations
-
 /**
  * @namespace
  * @brief Mathematical algorithms
