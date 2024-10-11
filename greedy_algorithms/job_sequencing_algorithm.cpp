@@ -83,9 +83,9 @@ namespace greedy_algorithms {
  * @brief A structure to represent a job
  */
 struct Job {
-    char id;     // Job Id
-    int dead;    // Deadline of job
-    int profit;  // Profit earned if job is completed before deadline
+    char id;     ///< Job Id
+    int dead;    ///< Deadline of job
+    int profit;  ///< Profit earned if job is completed before deadline
 };
 
 // Custom sorting helper struct which is used for sorting
