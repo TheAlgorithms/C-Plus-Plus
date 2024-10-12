@@ -80,7 +80,7 @@ class BinaryAddition {
 }  // namespace greedy_algorithms
 
 /**
- * @brief Function to run tests for the addBinary method.
+ * @brief run self test implementation.
  */
 void tests() {
     greedy_algorithms::BinaryAddition binaryAddition;
