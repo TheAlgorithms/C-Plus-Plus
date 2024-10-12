@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['layers_0',['layers',['../d5/d2c/namespacelayers.html',1,'']]],
-  ['linear_5fprobing_1',['linear_probing',['../d8/d89/namespacelinear__probing.html',1,'']]],
-  ['linear_5frecurrence_5fmatrix_2',['linear_recurrence_matrix',['../d9/dd1/namespacelinear__recurrence__matrix.html',1,'']]],
-  ['linked_5flist_3',['linked_list',['../d3/db0/namespacelinked__list.html',1,'']]],
-  ['list_5farray_4',['list_array',['../d9/d27/namespacelist__array.html',1,'']]],
-  ['lru_5fcache_5',['lru_cache',['../d8/dcd/namespacelru__cache.html',1,'']]]
+  ['k_5fnearest_5fneighbors_0',['k_nearest_neighbors',['../d7/d4c/namespacek__nearest__neighbors.html',1,'']]],
+  ['kadane_1',['kadane',['../d6/d74/namespacekadane.html',1,'']]],
+  ['karatsuba_5falgorithm_2',['karatsuba_algorithm',['../de/d41/namespacekaratsuba__algorithm.html',1,'']]],
+  ['knapsack_3',['Knapsack',['../d7/daf/namespace_knapsack.html',1,'']]],
+  ['knight_5ftour_4',['knight_tour',['../d1/db6/namespaceknight__tour.html',1,'']]]
 ];

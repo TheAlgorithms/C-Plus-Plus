@@ -1,10 +1,16 @@
 var searchData=
 [
-  ['n_5fbonacci_0',['n_bonacci',['../de/d36/namespacen__bonacci.html',1,'']]],
-  ['n_5fqueens_1',['n_queens',['../d3/da1/namespacen__queens.html',1,'']]],
-  ['n_5fqueens_5fall_5fsolutions_2',['n_queens_all_solutions',['../df/d44/namespacen__queens__all__solutions.html',1,'']]],
-  ['n_5fqueens_5foptimized_3',['n_queens_optimized',['../d8/d14/namespacen__queens__optimized.html',1,'']]],
-  ['ncr_5fmodulo_5fp_4',['ncr_modulo_p',['../d4/db9/namespacencr__modulo__p.html',1,'']]],
-  ['neural_5fnetwork_5',['neural_network',['../d0/d2e/namespaceneural__network.html',1,'']]],
-  ['numerical_5fmethods_6',['numerical_methods',['../d1/de0/namespacenumerical__methods.html',1,'']]]
+  ['machine_5flearning_0',['machine_learning',['../d8/d77/namespacemachine__learning.html',1,'']]],
+  ['magic_5fsequence_1',['magic_sequence',['../d8/d93/namespacemagic__sequence.html',1,'']]],
+  ['manacher_2',['manacher',['../d8/dc6/namespacemanacher.html',1,'']]],
+  ['math_3',['math',['../dd/d47/namespacemath.html',1,'']]],
+  ['md5_4',['MD5',['../dd/d43/namespace_m_d5.html',1,'']]],
+  ['median_5fsearch_5',['median_search',['../da/dd4/namespacemedian__search.html',1,'']]],
+  ['merge_5finsertion_6',['merge_insertion',['../de/d0a/namespacemerge__insertion.html',1,'']]],
+  ['midpoint_5frule_7',['midpoint_rule',['../d9/daa/namespacemidpoint__rule.html',1,'']]],
+  ['mincoins_5ftopdown_8',['mincoins_topdown',['../d5/db8/namespacemincoins__topdown.html',1,'']]],
+  ['minimum_9',['Minimum',['../d4/d12/namespace_minimum.html',1,'']]],
+  ['modular_5fdivision_10',['modular_division',['../d1/d64/namespacemodular__division.html',1,'']]],
+  ['monte_5fcarlo_11',['monte_carlo',['../d0/da4/namespacemonte__carlo.html',1,'']]],
+  ['morse_12',['morse',['../d6/d8d/namespacemorse.html',1,'']]]
 ];

@@ -1,16 +1,9 @@
 var searchData=
 [
-  ['machine_5flearning_0',['machine_learning',['../d8/d77/namespacemachine__learning.html',1,'']]],
-  ['magic_5fsequence_1',['magic_sequence',['../d8/d93/namespacemagic__sequence.html',1,'']]],
-  ['manacher_2',['manacher',['../d8/dc6/namespacemanacher.html',1,'']]],
-  ['math_3',['math',['../dd/d47/namespacemath.html',1,'']]],
-  ['md5_4',['MD5',['../dd/d43/namespace_m_d5.html',1,'']]],
-  ['median_5fsearch_5',['median_search',['../da/dd4/namespacemedian__search.html',1,'']]],
-  ['merge_5finsertion_6',['merge_insertion',['../de/d0a/namespacemerge__insertion.html',1,'']]],
-  ['midpoint_5frule_7',['midpoint_rule',['../d9/daa/namespacemidpoint__rule.html',1,'']]],
-  ['mincoins_5ftopdown_8',['mincoins_topdown',['../d5/db8/namespacemincoins__topdown.html',1,'']]],
-  ['minimum_9',['Minimum',['../d4/d12/namespace_minimum.html',1,'']]],
-  ['modular_5fdivision_10',['modular_division',['../d1/d64/namespacemodular__division.html',1,'']]],
-  ['monte_5fcarlo_11',['monte_carlo',['../d0/da4/namespacemonte__carlo.html',1,'']]],
-  ['morse_12',['morse',['../d6/d8d/namespacemorse.html',1,'']]]
+  ['layers_0',['layers',['../d5/d2c/namespacelayers.html',1,'']]],
+  ['linear_5fprobing_1',['linear_probing',['../d8/d89/namespacelinear__probing.html',1,'']]],
+  ['linear_5frecurrence_5fmatrix_2',['linear_recurrence_matrix',['../d9/dd1/namespacelinear__recurrence__matrix.html',1,'']]],
+  ['linked_5flist_3',['linked_list',['../d3/db0/namespacelinked__list.html',1,'']]],
+  ['list_5farray_4',['list_array',['../d9/d27/namespacelist__array.html',1,'']]],
+  ['lru_5fcache_5',['lru_cache',['../d8/dcd/namespacelru__cache.html',1,'']]]
 ];

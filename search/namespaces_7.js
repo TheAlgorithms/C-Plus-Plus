@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['inorder_5fsuccessor_5fof_5fbst_0',['inorder_successor_of_bst',['../dd/d74/namespaceinorder__successor__of__bst.html',1,'']]],
-  ['interpolation_5fsearch_1',['interpolation_search',['../d1/d64/namespaceinterpolation__search.html',1,'']]],
-  ['inversion_2',['inversion',['../d9/d13/namespaceinversion.html',1,'']]],
-  ['is_5fgraph_5fbipartite_3',['is_graph_bipartite',['../de/d83/namespaceis__graph__bipartite.html',1,'']]],
-  ['iterative_5ftree_5ftraversals_4',['iterative_tree_traversals',['../dd/d73/namespaceiterative__tree__traversals.html',1,'']]]
+  ['hamming_5fdistance_0',['hamming_distance',['../d4/d1c/namespacehamming__distance.html',1,'']]],
+  ['hashing_1',['hashing',['../d6/d0c/namespacehashing.html',1,'']]],
+  ['heavy_5flight_5fdecomposition_2',['heavy_light_decomposition',['../db/d6f/namespaceheavy__light__decomposition.html',1,'']]],
+  ['horspool_3',['horspool',['../d5/d02/namespacehorspool.html',1,'']]],
+  ['house_5frobber_4',['house_robber',['../d2/de1/namespacehouse__robber.html',1,'']]]
 ];

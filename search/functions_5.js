@@ -61,9 +61,12 @@ var searchData=
   ['explore_58',['explore',['../df/dce/namespacegraph.html#a3ae80bc4c6a79d041b4f3a6589eb7fb8',1,'graph::explore(const std::vector&lt; std::vector&lt; int &gt; &gt; *adj, int u, std::vector&lt; bool &gt; *visited)'],['../df/dce/namespacegraph.html#a64c1db5aad7502c6f08e4652f6edd463',1,'graph::explore(const std::vector&lt; std::vector&lt; size_t &gt; &gt; &amp;adj, size_t v, std::vector&lt; bool &gt; *visited)']]],
   ['expm1_59',['expm1',['http://en.cppreference.com/w/cpp/numeric/math/expm1.html',0,'std']]],
   ['exponential_5fdistribution_60',['exponential_distribution',['http://en.cppreference.com/w/cpp/numeric/random/exponential_distribution/exponential_distribution.html',0,'std::exponential_distribution']]],
-  ['extendedeuclid_61',['extendedEuclid',['../d9/d5d/extended__euclid__algorithm_8cpp.html#acba15ca55b3e7dcb91f3c65d72ba052d',1,'extended_euclid_algorithm.cpp']]],
-  ['extendedeuclid_5f1_62',['extendedEuclid_1',['../d9/d5d/extended__euclid__algorithm_8cpp.html#a1792ac7c33aaf26b860ab55f5652ab25',1,'extended_euclid_algorithm.cpp']]],
-  ['extract_5fbyte_63',['extract_byte',['../d4/d08/sha256_8cpp.html#afea411191ec5281f43e91ea327984627',1,'hashing::sha256']]],
-  ['extractmin_64',['extractMin',['../d2/d05/class_min_heap.html#a4014f1edaed0bd7db0c0d2ca53228980',1,'MinHeap']]],
-  ['extreme_5fvalue_5fdistribution_65',['extreme_value_distribution',['http://en.cppreference.com/w/cpp/numeric/random/extreme_value_distribution/extreme_value_distribution.html',0,'std::extreme_value_distribution']]]
+  ['exponential_5fexpected_61',['exponential_expected',['../d9/da2/exponential__dist_8cpp.html#a1c8b6e787f72a209ef96c096eedf7afc',1,'probability::geometric_dist']]],
+  ['exponential_5fstd_62',['exponential_std',['../d9/da2/exponential__dist_8cpp.html#ac7b0091e17479d47438a281fefc2549a',1,'probability::geometric_dist']]],
+  ['exponential_5fvar_63',['exponential_var',['../d9/da2/exponential__dist_8cpp.html#af435dbeb43a05c8c7785f53bf4ce1df1',1,'probability::geometric_dist']]],
+  ['extendedeuclid_64',['extendedEuclid',['../d9/d5d/extended__euclid__algorithm_8cpp.html#acba15ca55b3e7dcb91f3c65d72ba052d',1,'extended_euclid_algorithm.cpp']]],
+  ['extendedeuclid_5f1_65',['extendedEuclid_1',['../d9/d5d/extended__euclid__algorithm_8cpp.html#a1792ac7c33aaf26b860ab55f5652ab25',1,'extended_euclid_algorithm.cpp']]],
+  ['extract_5fbyte_66',['extract_byte',['../d4/d08/sha256_8cpp.html#afea411191ec5281f43e91ea327984627',1,'hashing::sha256']]],
+  ['extractmin_67',['extractMin',['../d2/d05/class_min_heap.html#a4014f1edaed0bd7db0c0d2ca53228980',1,'MinHeap']]],
+  ['extreme_5fvalue_5fdistribution_68',['extreme_value_distribution',['http://en.cppreference.com/w/cpp/numeric/random/extreme_value_distribution/extreme_value_distribution.html',0,'std::extreme_value_distribution']]]
 ];
