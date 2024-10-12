@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 using namespace std;
 
 int partition(vector<int>& arr, int left, int right) {
@@ -30,8 +31,27 @@ int quickSelect(vector<int>& arr, int left, int right, int k) {
 }
 
 int main() {
-    vector<int> arr = {3, 2, 1, 5, 6, 4};
-    int k = 2;
+    vector<int> arr;
+    int n, k;
+
+    cout << "Enter the number of elements in the array: ";
+    cin >> n;
+
+    cout << "Enter the elements of the array: ";
+    for (int i = 0; i < n; ++i) {
+        int num;
+        cin >> num;
+        arr.push_back(num);
+    }
+
+    cout << "Enter the value of k (to find the k-th smallest element): ";
+    cin >> k;
+
+    if (k < 1 || k > n) {
+        cout << "Invalid value of k. Please enter a value between 1 and " << n << "." << endl;
+        return 1; // Exit with error code
+    }
+
     cout << k << "-th smallest element is " << quickSelect(arr, 0, arr.size() - 1, k - 1) << endl;
     return 0;
 }
