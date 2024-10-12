@@ -61,7 +61,6 @@
  * @param nums The input vector of elements of type T
  * @return The length of the longest increasing subsequence
  */
-
 template <typename T>
 std::uint32_t longest_increasing_subsequence_using_binary_search(std::vector<T>& nums) {
     if (nums.empty()) return 0;
@@ -113,6 +112,6 @@ static void tests() {
  * @returns 0 on exit
  */
 int main() {
-    tests();
+    tests();  // run self test implementation
     return 0;
 }
