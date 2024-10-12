@@ -1,7 +1,18 @@
 /**
  * \file
- * \brief [Linear search
- * algorithm](https://en.wikipedia.org/wiki/Linear_search)
+ * \brief [Linear search algorithm]
+ * Linear search algorithm is based on traversing the the list element one by one, until you find your target element. 
+ * It is also known as sequential search.
+ 
+Time complexity: O(n)
+ * Worst case: O(n) (Worst case will be : the last element is the target element)
+ * Best Case: O(1) (The best case will be: the first element is the target element )
+ 
+Space complexity: O(1)
+ * Worst case: O(1) 
+ * Best Case: O(1) 
+ 
+ * (https://en.wikipedia.org/wiki/Linear_search)
  *
  * @author Unknown author
  * @author [Ritika Mukherjee](https://github.com/ritikaa17)
