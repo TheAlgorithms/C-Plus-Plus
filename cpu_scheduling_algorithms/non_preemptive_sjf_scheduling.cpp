@@ -6,8 +6,9 @@
  * scheduling policy that selects for execution the waiting process with the
  * smallest execution time. SJN is a non-preemptive algorithm. Shortest
  * remaining time is a preemptive variant of SJN.
- * @link https://www.guru99.com/shortest-job-first-sjf-scheduling.html
- * @author [Lakshmi Srikumar](https://github.com/LakshmiSrikumar)
+ * <a href="https://www.guru99.com/shortest-job-first-sjf-scheduling.html">
+ * detailed description on SJF scheduling </a>
+ * <a href="https://github.com/LakshmiSrikumar">Author : Lakshmi Srikumar </a>
  */
 
 #include <algorithm>      /// for sorting
@@ -42,9 +43,8 @@ using std::vector;
  */
 template <typename S, typename T, typename E>
 bool sortcol(tuple<S, T, E>& t1, tuple<S, T, E>& t2) {
-    if (get<1>(t1) < get<1>(t2)) {
-        return true;
-    } else if (get<1>(t1) == get<1>(t2) && get<0>(t1) < get<0>(t2)) {
+    if (get<1>(t1) < get<1>(t2) ||
+        (get<1>(t1) == get<1>(t2) && get<0>(t1) < get<0>(t2))) {
         return true;
     }
     return false;
@@ -180,6 +180,12 @@ class SJF {
             // Waiting time = Turnaround time - Burst time
             get<5>(cur) = get<4>(cur) - get<2>(cur);
 
+            // Turnaround time >= Burst time
+            assert(get<4>(cur) >= get<2>(cur));
+
+            // Waiting time is never negative
+            assert(get<5>(cur) >= 0);
+
             result.push_back(cur);
             schedule.pop();
         }
@@ -284,8 +290,8 @@ static void test() {
         }
 
         // Print processes before scheduling
-        cout << "Processes before SJF scheduling:" << endl;
-        readyQueue.printResult(input);
+        // cout << "Processes before SJF scheduling:" << endl;
+        // readyQueue.printResult(input);
 
         // Add processes to the queue
         for (uint32_t i{}; i < n; i++) {
@@ -297,8 +303,8 @@ static void test() {
         auto finalResult = readyQueue.scheduleForSJF();
 
         // Print processes after scheduling
-        cout << "\nProcesses after SJF scheduling:" << endl;
-        readyQueue.printResult(finalResult);
+        // cout << "\nProcesses after SJF scheduling:" << endl;
+        // readyQueue.printResult(finalResult);
     }
     cout << "All the tests have successfully passed!" << endl;
 }
