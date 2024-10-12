@@ -87,9 +87,6 @@ struct Job {
     int profit;  // Profit earned if job is completed before deadline
 };  // namespace greedy_algorithmsstruct Job
 
-// Custom sorting helper struct which is used for sorting
-// all jobs according to profit
-
 /**
  * @brief Utility function that finds Custom sorting helper
  * struct which is used for sorting all jobs according to profit
@@ -98,11 +95,7 @@ struct Job {
  * @param b second job struct
  * @returns true if the proft of a less than profit of b, else false.
  */
-struct jobProfit {
-    bool operator()(Job const& a, Job const& b) {
-        return (a.profit < b.profit);
-    }
-};
+bool jobComparator(Job const &a, Job const &b) { return (a.profit < b.profit); }
 
 /**
  * @brief function that get the maximum profit from jobs
@@ -118,7 +111,8 @@ std::vector<char> getJobScheduling(Job arr[], int n) {
     std::sort(arr, arr + n, [](Job a, Job b) { return a.dead < b.dead; });
 
     // set a custom priority queue
-    std::priority_queue<Job, std::vector<Job>, jobProfit> pq;
+    std::priority_queue<Job, std::vector<Job>, decltype(&jobComparator)> pq(
+        jobComparator);
 
     for (int i = n - 1; i >= 0; i--) {
         int slot_available;
