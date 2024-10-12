@@ -60,7 +60,7 @@ template <typename K, typename V>
 class LRUCache {
     CacheNode<K, V> *head;  ///< head of the doubly linked list
     CacheNode<K, V> *tail;  ///< tail of the doubly linked list
-    int _capacity;          ///< maximum capacity of the cache
+    uint32_t _capacity;     ///< maximum capacity of the cache
 
     std::unordered_map<K, CacheNode<K, V> *>
         node_map;  ///< maps the key to the node address
