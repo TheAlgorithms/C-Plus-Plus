@@ -25,7 +25,7 @@
 
 #include <cassert>   /// For assert
 #include <cstdint>   /// For data types such as std::int32_t, std::uint32_t, etc
-#include <iomanip>   /// For functions like setw, setfill
+#include <iomanip>   /// For functions like std::setw, std::setfill
 #include <iostream>  /// For managing io
 #include <sstream>   /// For bytes to hex string
 #include <string>    /// For string data
@@ -44,6 +44,129 @@ namespace hashing {
  */
 class RIPEMD160 {
  private:
+    /**
+     * @brief Implements f(j,x,y,z)
+     * @param j Round number j / 16
+     * @param B,C,D The state values
+     * @return Returns the function value
+     */
+    uint32_t f(int j, uint32_t B, uint32_t C, uint32_t D) {
+        switch (j) {
+            case 0:
+                return B ^ C ^ D;
+            case 1:
+                return (B & C) | (~B & D);
+            case 2:
+                return (B | ~C) ^ D;
+            case 3:
+                return (B & D) | (C & ~D);
+            case 4:
+                return B ^ (C | ~D);
+        }
+    }
+
+    /**
+     * @brief Implements K value for a given j
+     * @param j Round number j / 16
+     * @return Appropriate K value
+     */
+    uint32_t K(int j) {
+        switch (j) {
+            case 0:
+                return static_cast<uint32_t>(0x00000000);
+            case 1:
+                return static_cast<uint32_t>(0x5A827999);
+            case 2:
+                return static_cast<uint32_t>(0x6ED9EBA1);
+            case 3:
+                return static_cast<uint32_t>(0x8F1BBCDC);
+            case 4:
+                return static_cast<uint32_t>(0xA953FD4E);
+        }
+    }
+
+    /**
+     * @brief Implements K' value for a given j
+     * @param j Round number j / 16
+     * @return Appropriate K' value
+     */
+    uint32_t K_dash(int j) {
+        switch (j) {
+            case 0:
+                return 0x50A28BE6;
+            case 1:
+                return 0x5C4DD124;
+            case 2:
+                return 0x6D703EF3;
+            case 3:
+                return 0x7A6D76E9;
+            case 4:
+                return 0x00000000;
+        }
+    }
+
+    /**
+     * @brief Specifies r value for a given j.
+     *
+     * @details Specifies the order in which 4-byte words of the current
+     * 512-bits block are accessed and processed in each step of the compression
+     * function. Introduces non-linearity to the code. It is used by one of the
+     * parallel path.
+     */
+    static constexpr int r[80] = {
+        0, 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15,
+        7, 4,  13, 1,  10, 6,  15, 3,  12, 0, 9,  5,  2,  14, 11, 8,
+        3, 10, 14, 4,  9,  15, 8,  1,  2,  7, 0,  6,  13, 11, 5,  12,
+        1, 9,  11, 10, 0,  8,  12, 4,  13, 3, 7,  15, 14, 5,  6,  2,
+        4, 0,  5,  9,  7,  12, 2,  10, 14, 1, 3,  8,  11, 6,  15, 13};
+
+    /**
+     * @brief Specifies the r' value a given j.
+     *
+     * @details Specifies the order in which 4-byte words of the current
+     * 512-bits block are accessed and processed in each step of the compression
+     * function. Introduces non-linearity to the code. It is used in the other
+     * parallel path.
+     */
+    static constexpr int r_dash[80] = {
+        5,  14, 7,  0, 9, 2,  11, 4,  13, 6,  15, 8,  1,  10, 3,  12,
+        6,  11, 3,  7, 0, 13, 5,  10, 14, 15, 8,  12, 4,  9,  1,  2,
+        15, 5,  1,  3, 7, 14, 6,  9,  11, 8,  12, 2,  10, 0,  4,  13,
+        8,  6,  4,  1, 3, 11, 15, 0,  5,  12, 2,  13, 9,  7,  10, 14,
+        12, 15, 10, 4, 1, 5,  8,  7,  6,  2,  13, 14, 0,  3,  9,  11};
+
+    /**
+     * @brief Specifies the s value for a given j.
+     *
+     * @details Determines the number of bits to cyclically shift (left rotate)
+     * the result of each step. The different shift values prevent patterns from
+     * emerging in the output, which is crucial for achieving properties like
+     * the avalanche effect (where a small change in the input results in a
+     * large change in the output). It is used by one of the parallel path.
+     */
+    static constexpr int s[80] = {
+        11, 14, 15, 12, 5,  8,  7,  9,  11, 13, 14, 15, 6,  7,  9,  8,
+        7,  6,  8,  13, 11, 9,  7,  15, 7,  12, 15, 9,  11, 7,  13, 12,
+        11, 13, 6,  7,  14, 9,  13, 15, 14, 8,  13, 6,  5,  12, 7,  5,
+        11, 12, 14, 15, 14, 15, 9,  8,  9,  14, 5,  6,  8,  6,  5,  12,
+        9,  15, 5,  11, 6,  8,  13, 12, 5,  12, 13, 14, 11, 8,  5,  6};
+
+    /**
+     * @brief Specifies the s' value for a given j.
+     *
+     * @details Determines the number of bits to cyclically shift (left rotate)
+     * the result of each step. The different shift values prevent patterns from
+     * emerging in the output, which is crucial for achieving properties like
+     * the avalanche effect (where a small change in the input results in a
+     * large change in the output). It is used in the other parallel path.
+     */
+    static constexpr int s_dash[80] = {
+        8,  9,  9,  11, 13, 15, 15, 5,  7,  7,  8,  11, 14, 14, 12, 6,
+        9,  13, 15, 7,  12, 8,  9,  11, 7,  7,  12, 7,  6,  15, 13, 11,
+        9,  7,  15, 11, 8,  6,  6,  14, 12, 13, 5,  14, 13, 13, 7,  5,
+        15, 5,  8,  11, 14, 14, 6,  14, 6,  9,  12, 9,  12, 5,  15, 8,
+        8,  5,  12, 9,  12, 5,  14, 6,  8,  13, 6,  5,  15, 13, 11, 11};
+
     /**
      * @brief converts string data to vector of uint32_t (4 byte words)
      * @details converts the string to 4 byte words in little endian format
@@ -103,95 +226,6 @@ class RIPEMD160 {
 
         return word_data;
     }
-
-    /**
-     * @brief implements f(j,x,y,z)
-     * @param j round number j / 16
-     * @param B,C,D the state values
-     * @return returns the function value
-     */
-    uint32_t f(int j, uint32_t B, uint32_t C, uint32_t D) {
-        switch (j) {
-            case 0:
-                return B ^ C ^ D;
-            case 1:
-                return (B & C) | (~B & D);
-            case 2:
-                return (B | ~C) ^ D;
-            case 3:
-                return (B & D) | (C & ~D);
-            case 4:
-                return B ^ (C | ~D);
-        }
-    }
-
-    /**
-     * @brief implements K value for a given j
-     * @param j round number j / 16
-     * @return appropriate K value
-     */
-    uint32_t K(int j) {
-        switch (j) {
-            case 0:
-                return static_cast<uint32_t>(0x00000000);
-            case 1:
-                return static_cast<uint32_t>(0x5A827999);
-            case 2:
-                return static_cast<uint32_t>(0x6ED9EBA1);
-            case 3:
-                return static_cast<uint32_t>(0x8F1BBCDC);
-            case 4:
-                return static_cast<uint32_t>(0xA953FD4E);
-        }
-    }
-
-    /**
-     * @brief implements K' value for a given j
-     * @param j round number j / 16
-     * @return appropriate K' value
-     */
-    uint32_t K_dash(int j) {
-        switch (j) {
-            case 0:
-                return 0x50A28BE6;
-            case 1:
-                return 0x5C4DD124;
-            case 2:
-                return 0x6D703EF3;
-            case 3:
-                return 0x7A6D76E9;
-            case 4:
-                return 0x00000000;
-        }
-    }
-
-    static constexpr int r[80] = {
-        0, 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15,
-        7, 4,  13, 1,  10, 6,  15, 3,  12, 0, 9,  5,  2,  14, 11, 8,
-        3, 10, 14, 4,  9,  15, 8,  1,  2,  7, 0,  6,  13, 11, 5,  12,
-        1, 9,  11, 10, 0,  8,  12, 4,  13, 3, 7,  15, 14, 5,  6,  2,
-        4, 0,  5,  9,  7,  12, 2,  10, 14, 1, 3,  8,  11, 6,  15, 13};
-
-    static constexpr int r_dash[80] = {
-        5,  14, 7,  0, 9, 2,  11, 4,  13, 6,  15, 8,  1,  10, 3,  12,
-        6,  11, 3,  7, 0, 13, 5,  10, 14, 15, 8,  12, 4,  9,  1,  2,
-        15, 5,  1,  3, 7, 14, 6,  9,  11, 8,  12, 2,  10, 0,  4,  13,
-        8,  6,  4,  1, 3, 11, 15, 0,  5,  12, 2,  13, 9,  7,  10, 14,
-        12, 15, 10, 4, 1, 5,  8,  7,  6,  2,  13, 14, 0,  3,  9,  11};
-
-    static constexpr int s[80] = {
-        11, 14, 15, 12, 5,  8,  7,  9,  11, 13, 14, 15, 6,  7,  9,  8,
-        7,  6,  8,  13, 11, 9,  7,  15, 7,  12, 15, 9,  11, 7,  13, 12,
-        11, 13, 6,  7,  14, 9,  13, 15, 14, 8,  13, 6,  5,  12, 7,  5,
-        11, 12, 14, 15, 14, 15, 9,  8,  9,  14, 5,  6,  8,  6,  5,  12,
-        9,  15, 5,  11, 6,  8,  13, 12, 5,  12, 13, 14, 11, 8,  5,  6};
-
-    static constexpr int s_dash[80] = {
-        8,  9,  9,  11, 13, 15, 15, 5,  7,  7,  8,  11, 14, 14, 12, 6,
-        9,  13, 15, 7,  12, 8,  9,  11, 7,  7,  12, 7,  6,  15, 13, 11,
-        9,  7,  15, 11, 8,  6,  6,  14, 12, 13, 5,  14, 13, 13, 7,  5,
-        15, 5,  8,  11, 14, 14, 6,  14, 6,  9,  12, 9,  12, 5,  15, 8,
-        8,  5,  12, 9,  12, 5,  14, 6,  8,  13, 6,  5,  15, 13, 11, 11};
 
     /**
      * @brief cyclic left shift of uint32_t
@@ -395,6 +429,6 @@ static void test() {
  * @return 0 on exit
  */
 int main() {
-    test(); // run self test implementation
+    test();  // run self test implementation
     return 0;
 }
