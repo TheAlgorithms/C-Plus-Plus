@@ -192,6 +192,6 @@ void tests() {
  * @returns 0 on exit
  */
 int main() {
-    tests();
+    tests(); // run self test implementations
     return 0;
 }
