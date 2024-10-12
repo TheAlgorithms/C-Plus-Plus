@@ -1,20 +1,24 @@
 #include <iostream>
-#include <cassert> // For test case assertions
-#include <stdexcept> // For runtime error handling
+#include <cassert>    // For test case assertions
+#include <stdexcept>  // For runtime error handling
+#include <array>      // For std::array
 
 /**
- * @brief A class to represent a circular queue.
+ * @brief A class to represent a circular queue using std::array.
  * 
- * This Queue class uses a fixed-size array to implement a circular queue.
+ * This Queue class uses a fixed-size std::array to implement a circular queue.
  * It supports basic operations like enqueue, dequeue, and display.
+ * 
+ * @tparam T The type of elements stored in the queue.
+ * @tparam N The maximum size of the queue.
  */
+template <typename T, size_t N>
 class Queue {
 private:
-    static const int MAX_SIZE = 10; ///< The maximum number of elements the queue can hold
-    int queue[MAX_SIZE]; ///< Array to store the queue elements
-    int front;           ///< Index pointing to the front of the queue
-    int rear;            ///< Index pointing to the next available position for inserting elements
-    int count;           ///< The number of elements currently in the queue
+    std::array<T, N> queue; ///< Array to store the queue elements
+    size_t front;           ///< Index pointing to the front of the queue
+    size_t rear;            ///< Index pointing to the next available position for inserting elements
+    size_t count;           ///< The number of elements currently in the queue
 
 public:
     /**
@@ -22,115 +26,96 @@ public:
      * 
      * Initializes front, rear, and count to 0.
      */
-    Queue();
+    Queue() : front(0), rear(0), count(0) {}
 
     /**
      * @brief Enqueues an element into the queue.
      * 
      * Adds an element to the rear of the queue. If the queue is full, it prints an overflow message.
      * 
-     * @param x The element to enqueue
+     * @param x The element to enqueue.
      */
-    void Enqueue(int x);
+    void Enqueue(const T& x) {
+        if (count == N) {
+            std::cout << "\nOverflow: Queue is full, cannot enqueue " << x;
+        } else {
+            queue[rear] = x;
+            rear = (rear + 1) % N;
+            count++;
+        }
+    }
 
     /**
      * @brief Dequeues an element from the queue.
      * 
      * Removes the element from the front of the queue. If the queue is empty, it prints an underflow message.
      */
-    void Dequeue();
+    void Dequeue() {
+        if (count == 0) {
+            std::cout << "\nUnderflow: Queue is empty, cannot dequeue";
+        } else {
+            std::cout << "\n" << queue[front] << " deleted";
+            front = (front + 1) % N;
+            count--;
+        }
+    }
 
     /**
      * @brief Displays the elements of the queue.
      * 
      * Prints the elements of the queue from front to rear. If the queue is empty, it prints an appropriate message.
      */
-    void Show() const;
+    void Show() const {
+        if (count == 0) {
+            std::cout << "\nQueue is empty";
+            return;
+        }
+
+        std::cout << "\nQueue elements: ";
+        for (size_t i = 0; i < count; i++) {
+            std::cout << queue[(front + i) % N] << "\t";
+        }
+    }
 
     /**
      * @brief Gets the current number of elements in the queue.
      * 
-     * @return The number of elements in the queue
+     * @return The number of elements in the queue.
      */
-    int getCount() const;
+    size_t getCount() const {
+        return count;
+    }
 
     /**
      * @brief Gets the front element of the queue.
      * 
      * Returns the front element of the queue. Throws a runtime error if the queue is empty.
      * 
-     * @return The front element of the queue
-     * @throws std::runtime_error if the queue is empty
+     * @return The front element of the queue.
+     * @throws std::runtime_error if the queue is empty.
      */
-    int getFrontElement() const;
+    T getFrontElement() const {
+        if (count == 0) {
+            throw std::runtime_error("Queue is empty");
+        }
+        return queue[front];
+    }
 
     /**
      * @brief Gets the rear element of the queue.
      * 
      * Returns the rear element of the queue. Throws a runtime error if the queue is empty.
      * 
-     * @return The rear element of the queue
-     * @throws std::runtime_error if the queue is empty
+     * @return The rear element of the queue.
+     * @throws std::runtime_error if the queue is empty.
      */
-    int getRearElement() const;
+    T getRearElement() const {
+        if (count == 0) {
+            throw std::runtime_error("Queue is empty");
+        }
+        return queue[(rear - 1 + N) % N];
+    }
 };
-
-// Constructor definition
-Queue::Queue() {
-    front = 0;
-    rear = 0;
-    count = 0;
-}
-
-void Queue::Enqueue(int x) {
-    if (count == MAX_SIZE) {
-        std::cout << "\nOverflow: Queue is full, cannot enqueue " << x;
-    } else {
-        queue[rear] = x;
-        rear = (rear + 1) % MAX_SIZE;
-        count++;
-    }
-}
-
-void Queue::Dequeue() {
-    if (count == 0) {
-        std::cout << "\nUnderflow: Queue is empty, cannot dequeue";
-    } else {
-        std::cout << "\n" << queue[front] << " deleted";
-        front = (front + 1) % MAX_SIZE;
-        count--;
-    }
-}
-
-void Queue::Show() const {
-    if (count == 0) {
-        std::cout << "\nQueue is empty";
-        return;
-    }
-
-    std::cout << "\nQueue elements: ";
-    for (int i = 0; i < count; i++) {
-        std::cout << queue[(front + i) % MAX_SIZE] << "\t";
-    }
-}
-
-int Queue::getCount() const {
-    return count;
-}
-
-int Queue::getFrontElement() const {
-    if (count == 0) {
-        throw std::runtime_error("Queue is empty");
-    }
-    return queue[front];
-}
-
-int Queue::getRearElement() const {
-    if (count == 0) {
-        throw std::runtime_error("Queue is empty");
-    }
-    return queue[(rear - 1 + MAX_SIZE) % MAX_SIZE];
-}
 
 /**
  * @brief Runs automated test cases for the Queue class.
@@ -138,7 +123,7 @@ int Queue::getRearElement() const {
  * This function tests the queue functionality including enqueueing, dequeueing, overflow, and underflow scenarios.
  */
 void runTestCases() {
-    Queue q;
+    Queue<int, 10> q;
 
     // Test case 1: Enqueue elements
     q.Enqueue(10);
@@ -163,7 +148,7 @@ void runTestCases() {
     std::cout << "\nTest Case 3 passed: Enqueue and dequeue combination";
 
     // Test case 4: Overflow
-    for (int i = 0; i < 7; i++) {
+    for (size_t i = 0; i < 7; i++) {
         q.Enqueue(60 + i);  // Keep adding until the queue is full
     }
     q.Enqueue(100); // This should trigger overflow
@@ -171,7 +156,7 @@ void runTestCases() {
     std::cout << "\nTest Case 4 passed: Overflow check";
 
     // Test case 5: Underflow
-    for (int i = 0; i < 10; i++) {
+    for (size_t i = 0; i < 10; i++) {
         q.Dequeue();  // Dequeue all elements
     }
     q.Dequeue(); // This should trigger underflow
