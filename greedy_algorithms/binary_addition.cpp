@@ -26,13 +26,12 @@
  */
 namespace greedy_algorithms {
 /**
- * A class to perform binary addition of two binary strings.
+ * @brief A class to perform binary addition of two binary strings.
  */
 class BinaryAddition {
  public:
     /**
-     * Adds two binary strings and returns the result as a binary string.
-     *
+     * @brief Adds two binary strings and returns the result as a binary string.
      * @param a The first binary string.
      * @param b The second binary string.
      * @return The sum of the two binary strings as a binary string, or an empty
@@ -69,7 +68,7 @@ class BinaryAddition {
 
  private:
     /**
-     * Validates whether a string contains only binary characters (0 or 1).
+     * @brief Validates whether a string contains only binary characters (0 or 1).
      * @param str The string to validate.
      * @return true if the string is binary, false otherwise.
      */
@@ -81,7 +80,7 @@ class BinaryAddition {
 }  // namespace greedy_algorithms
 
 /**
- * Function to run tests for the addBinary method.
+ * @brief Function to run tests for the addBinary method.
  */
 void tests() {
     greedy_algorithms::BinaryAddition binaryAddition;
@@ -110,10 +109,9 @@ void tests() {
 }
 
 /**
- * Main function to execute the program.
+ * @brief main function
  */
 int main() {
-    tests();
-    std::cout << "All tests passed.\n";
+    tests(); /// To execute tests
     return 0;
 }
