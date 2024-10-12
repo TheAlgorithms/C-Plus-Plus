@@ -65,9 +65,7 @@ class Compare {
      * @param t2 Second tuple
      * @brief A comparator function that checks whether to swap the two tuples
      * or not.
-     * @link Refer to
-     * https://www.geeksforgeeks.org/comparator-class-in-c-with-examples/ for
-     * detailed description of comparator
+     * <a href="https://www.geeksforgeeks.org/comparator-class-in-c-with-examples/"> detailed description of comparator </a>
      * @returns true if the tuples SHOULD be swapped
      * @returns false if the tuples SHOULDN'T be swapped
      */
