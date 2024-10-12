@@ -45,7 +45,7 @@ namespace hashing {
 class RIPEMD160 {
  private:
     /**
-     * @brief Implements f(j,x,y,z)
+     * @brief Implements f(j,B,C,D)
      * @param j Round number j / 16
      * @param B,C,D The state values
      * @return Returns the function value
