@@ -394,34 +394,27 @@ class RIPEMD160 {
  * @brief self test implementation
  * @return void
  */
-static void check_me(std::string data, std::string expected_hash) {
-    hashing::RIPEMD160 obj;
-
-    std::cout << "Hashing the data " + data + "\n";
-    std::cout << "Obtained hash : " + obj.hash(data) + "\n";
-    std::cout << "Expected hash : " + expected_hash + "\n";
-    assert(obj.hash(data).compare(expected_hash) == 0);
-    std::cout
-        << "**********************************************************\n\n";
-}
-
 static void test() {
-    check_me("", "9c1185a5c5e9fc54612808977ee8f548b2258d31");
-    check_me("a", "0bdc9d2d256b3ee9daae347be6f4dc835a467ffe");
-    check_me("abc", "8eb208f7e05d987a9b044a8e98c6b087f15a0bfc");
-    check_me("message digest", "5d0689ef49d2fae572b881b123a85ffa21595f36");
-    check_me("abcdefghijklmnopqrstuvwxyz",
-             "f71c27109c692c1b56bbdceb5b9d2865b3708dbc");
-    check_me("abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq",
-             "12a053384a9c0c88e405a06c27dcf49ada62eb2b");
-    check_me(
-        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0"
-        "123456789",
-        "b0e20b6e3116640286ed3a87a5713079b21f5189");
-    check_me(
-        "12345678901234567890123456789012345678901234567890123"
-        "456789012345678901234567890",
-        "9b752e45573d4b39f4dbd3323cab82bf63326bfb");
+    hashing::RIPEMD160 obj;
+    assert(obj.hash("").compare("9c1185a5c5e9fc54612808977ee8f548b2258d31") ==
+           0);
+    assert(obj.hash("a").compare("0bdc9d2d256b3ee9daae347be6f4dc835a467ffe") ==
+           0);
+    assert(obj.hash("abc").compare(
+               "8eb208f7e05d987a9b044a8e98c6b087f15a0bfc") == 0);
+    assert(obj.hash("message digest")
+               .compare("5d0689ef49d2fae572b881b123a85ffa21595f36") == 0);
+    assert(obj.hash("abcdefghijklmnopqrstuvwxyz")
+               .compare("f71c27109c692c1b56bbdceb5b9d2865b3708dbc") == 0);
+    assert(obj.hash("abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq")
+               .compare("12a053384a9c0c88e405a06c27dcf49ada62eb2b") == 0);
+    assert(
+        obj.hash(
+               "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789")
+            .compare("b0e20b6e3116640286ed3a87a5713079b21f5189") == 0);
+    assert(obj.hash("1234567890123456789012345678901234567890123456789012345678"
+                    "9012345678901234567890")
+               .compare("9b752e45573d4b39f4dbd3323cab82bf63326bfb") == 0);
 }
 
 /**
