@@ -86,6 +86,10 @@
     "xtr1common": "cpp",
     "xtree": "cpp",
     "xutility": "cpp",
-    "climits": "cpp"
+    "climits": "cpp",
+    "ranges": "cpp",
+    "span": "cpp",
+    "stacktrace": "cpp",
+    "regex": "cpp"
   }
 }
