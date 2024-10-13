@@ -28,9 +28,10 @@
 #include <iomanip>   /// For functions like std::setw, std::setfill
 #include <iostream>  /// For managing io
 #include <sstream>   /// For bytes to hex string
-#include <string>    /// For string data
-#include <thread>    /// To parallelize for efficiency
-#include <vector>    /// For dynamic arrays
+#include <stdexcept>  /// For standard exceptions like std::runtime_error
+#include <string>     /// For string data
+#include <thread>     /// To parallelize for efficiency
+#include <vector>     /// For dynamic arrays
 
 /**
  * @namespace hashing
@@ -49,6 +50,7 @@ class RIPEMD160 {
      * @param j Round number j / 16
      * @param B,C,D The state values
      * @return Returns the function value
+     * @note 0 <= j <= 4
      */
     uint32_t f(int j, uint32_t B, uint32_t C, uint32_t D) {
         switch (j) {
@@ -63,12 +65,15 @@ class RIPEMD160 {
             case 4:
                 return B ^ (C | ~D);
         }
+
+        throw std::runtime_error("j value out of bound");
     }
 
     /**
      * @brief Implements K value for a given j
      * @param j Round number j / 16
      * @return Appropriate K value
+     * @note 0 <= j <= 4
      */
     uint32_t K(int j) {
         switch (j) {
@@ -83,12 +88,15 @@ class RIPEMD160 {
             case 4:
                 return static_cast<uint32_t>(0xA953FD4E);
         }
+
+        throw std::runtime_error("j value out of bound");
     }
 
     /**
      * @brief Implements K' value for a given j
      * @param j Round number j / 16
      * @return Appropriate K' value
+     * @note 0 <= j <= 4
      */
     uint32_t K_dash(int j) {
         switch (j) {
@@ -103,6 +111,8 @@ class RIPEMD160 {
             case 4:
                 return 0x00000000;
         }
+
+        throw std::runtime_error("j value out of bound");
     }
 
     /**
