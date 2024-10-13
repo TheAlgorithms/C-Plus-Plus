@@ -1,7 +1,10 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
+
 using namespace std;
 
+// Function to partition the array and return the pivot index
 int partition(vector<int>& arr, int left, int right) {
     int pivot = arr[right];
     int i = left;
@@ -16,40 +19,29 @@ int partition(vector<int>& arr, int left, int right) {
     return i;
 }
 
+// Function to find the k-th smallest element using QuickSelect
 int quickSelect(vector<int>& arr, int left, int right, int k) {
-    if (left == right) return arr[left];
+    if (left == right) return arr[left]; // Base case: only one element
 
     int pivotIndex = partition(arr, left, right);
 
     if (k == pivotIndex) {
-        return arr[k];
+        return arr[k]; // Found the k-th smallest element
     } else if (k < pivotIndex) {
-        return quickSelect(arr, left, pivotIndex - 1, k);
+        return quickSelect(arr, left, pivotIndex - 1, k); // Search left
     } else {
-        return quickSelect(arr, pivotIndex + 1, right, k);
+        return quickSelect(arr, pivotIndex + 1, right, k); // Search right
     }
 }
 
 int main() {
-    vector<int> arr;
-    int n, k;
+    vector<int> arr = {3, 2, 1, 5, 6, 4};
+    int k = 2; // We want the 2nd smallest element
 
-    cout << "Enter the number of elements in the array: ";
-    cin >> n;
-
-    cout << "Enter the elements of the array: ";
-    for (int i = 0; i < n; ++i) {
-        int num;
-        cin >> num;
-        arr.push_back(num);
-    }
-
-    cout << "Enter the value of k (to find the k-th smallest element): ";
-    cin >> k;
-
-    if (k < 1 || k > n) {
-        cout << "Invalid value of k. Please enter a value between 1 and " << n << "." << endl;
-        return 1; // Exit with error code
+    // Input validation for k
+    if (k < 1 || k > arr.size()) {
+        cout << "Error: k must be between 1 and " << arr.size() << endl;
+        return -1;
     }
 
     cout << k << "-th smallest element is " << quickSelect(arr, 0, arr.size() - 1, k - 1) << endl;
