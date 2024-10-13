@@ -135,24 +135,21 @@ class SJF {
     }
 
     /**
-   * @brief Algorithm for scheduling CPU processes according to the Shortest Job
-   First (SJF) scheduling algorithm.
-   *
-   * @details Non pre-emptive SJF is an algorithm that schedules processes based
-   on the length
-   * of their burst times. The process with the smallest burst time is executed
-   first.
-   * In a non-preemptive scheduling algorithm, once a process starts executing,
-   * it runs to completion without being interrupted.
-   *
-   * I used a min priority queue because it allows you to efficiently pick the
-   process
-   * with the smallest burst time in constant time, by maintaining a priority
-   order where
-   * the shortest burst process is always at the front.
-   *
-   * @returns void
-   */
+     * @brief Algorithm for scheduling CPU processes according to
+     * the Shortest Job First (SJF) scheduling algorithm.
+     *
+     * @details Non pre-emptive SJF is an algorithm that schedules processes
+     * based on the length of their burst times. The process with the smallest
+     * burst time is executed first.In a non-preemptive scheduling algorithm,
+     * once a process starts executing,it runs to completion without being
+     * interrupted.
+     *
+     * I used a min priority queue because it allows you to efficiently pick the
+     * process with the smallest burst time in constant time, by maintaining a
+     * priority order where the shortest burst process is always at the front.
+     *
+     * @returns void
+     */
 
     vector<tuple<S, T, E, double, double, double>> scheduleForSJF() {
         // Variable to keep track of time elapsed so far
@@ -192,8 +189,8 @@ class SJF {
         return result;
     }
     /**
-     * @brief Utility function for printing the status of each process after
-     * execution
+     * @brief Utility function for printing the status of
+     *  each process after execution
      * @returns void
      */
 
@@ -217,8 +214,8 @@ class SJF {
 };
 
 /**
- * @brief Computes the final status of processes after applying non-preemptive
- * SJF scheduling
+ * @brief Computes the final status of processes after
+ * applying non-preemptive SJF scheduling
  * @tparam S Data type of Process ID
  * @tparam T Data type of Arrival time
  * @tparam E Data type of Burst time
@@ -290,8 +287,8 @@ static void test() {
         }
 
         // Print processes before scheduling
-        // cout << "Processes before SJF scheduling:" << endl;
-        // readyQueue.printResult(input);
+        cout << "Processes before SJF scheduling:" << endl;
+        readyQueue.printResult(input);
 
         // Add processes to the queue
         for (uint32_t i{}; i < n; i++) {
@@ -303,8 +300,8 @@ static void test() {
         auto finalResult = readyQueue.scheduleForSJF();
 
         // Print processes after scheduling
-        // cout << "\nProcesses after SJF scheduling:" << endl;
-        // readyQueue.printResult(finalResult);
+        cout << "\nProcesses after SJF scheduling:" << endl;
+        readyQueue.printResult(finalResult);
     }
     cout << "All the tests have successfully passed!" << endl;
 }
