@@ -100,6 +100,7 @@ void BFT(node *n) {
 
 /*
     Prints the preorder traversal starting from the node n
+    Prints root - leftChild - rightChild
 */
 void Pre(node *n) {
     if (n != NULL) {
@@ -111,6 +112,7 @@ void Pre(node *n) {
 
 /*
     Prints the inorder traversal starting from the node n
+    Prints leftChild - root - rightChild
 */
 void In(node *n) {
     if (n != NULL) {
@@ -122,6 +124,7 @@ void In(node *n) {
 
 /*
     Prints the postorder traversal starting from the node n
+    Prints left - rightChild - root
 */
 void Post(node *n) {
     if (n != NULL) {
