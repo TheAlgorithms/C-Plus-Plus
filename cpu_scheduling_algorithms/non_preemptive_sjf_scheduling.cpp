@@ -307,7 +307,8 @@ static void test() {
 }
 
 /**
- * @brief Entry point of the program
+ * @brief Main function
+ * @returns 0 on successful exit
  */
 int main() {
     test();
