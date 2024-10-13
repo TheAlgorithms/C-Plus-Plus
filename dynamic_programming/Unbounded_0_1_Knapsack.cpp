@@ -48,7 +48,9 @@ namespace unbounded_knapsack {
  * @param i Current index in the value and weight vectors.
  * @param W Remaining capacity of the knapsack.
  * @param val Vector of values corresponding to the items.
+ * @note "val" data type can be changed according to the size of the input.
  * @param wt Vector of weights corresponding to the items.
+ * @note "wt" data type can be changed according to the size of the input.
  * @param dp 2D vector for memoization to avoid redundant calculations.
  * @return The maximum value that can be obtained for the given index and capacity.
  */
