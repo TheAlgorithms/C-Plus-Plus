@@ -28,7 +28,7 @@
 #include <iomanip>   /// For functions like std::setw, std::setfill
 #include <iostream>  /// For managing io
 #include <sstream>   /// For bytes to hex string
-#include <stdexcept>  /// For standard exceptions like std::runtime_error
+#include <stdexcept>  /// For standard exceptions like std::invalid_argument
 #include <string>     /// For string data
 #include <thread>     /// To parallelize for efficiency
 #include <vector>     /// For dynamic arrays
@@ -64,9 +64,9 @@ class RIPEMD160 {
                 return (B & D) | (C & ~D);
             case 4:
                 return B ^ (C | ~D);
+            default:
+                throw std::invalid_argument("j value out of bound");
         }
-
-        throw std::runtime_error("j value out of bound");
     }
 
     /**
@@ -87,9 +87,9 @@ class RIPEMD160 {
                 return static_cast<uint32_t>(0x8F1BBCDC);
             case 4:
                 return static_cast<uint32_t>(0xA953FD4E);
+            default:
+                throw std::invalid_argument("j value out of bound");
         }
-
-        throw std::runtime_error("j value out of bound");
     }
 
     /**
@@ -110,9 +110,9 @@ class RIPEMD160 {
                 return 0x7A6D76E9;
             case 4:
                 return 0x00000000;
+            default:
+                throw std::invalid_argument("j value out of bound");
         }
-
-        throw std::runtime_error("j value out of bound");
     }
 
     /**
