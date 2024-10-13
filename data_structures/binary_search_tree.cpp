@@ -98,6 +98,9 @@ void BFT(node *n) {
     }
 }
 
+/*
+    Prints the preorder traversal starting from the node n
+*/
 void Pre(node *n) {
     if (n != NULL) {
         std::cout << n->val << "  ";
@@ -106,6 +109,9 @@ void Pre(node *n) {
     }
 }
 
+/*
+    Prints the inorder traversal starting from the node n
+*/
 void In(node *n) {
     if (n != NULL) {
         In(n->left);
@@ -114,6 +120,9 @@ void In(node *n) {
     }
 }
 
+/*
+    Prints the postorder traversal starting from the node n
+*/
 void Post(node *n) {
     if (n != NULL) {
         Post(n->left);
@@ -145,28 +154,28 @@ int main() {
         std::cin >> ch;
         int x;
         switch (ch) {
-        case 1:
-            std::cout << "\nEnter the value to be Inserted : ";
-            std::cin >> x;
-            Insert(root, x);
-            break;
-        case 2:
-            std::cout << "\nEnter the value to be Deleted : ";
-            std::cin >> x;
-            Remove(root, root, x);
-            break;
-        case 3:
-            BFT(root);
-            break;
-        case 4:
-            Pre(root);
-            break;
-        case 5:
-            In(root);
-            break;
-        case 6:
-            Post(root);
-            break;
+            case 1:
+                std::cout << "\nEnter the value to be Inserted : ";
+                std::cin >> x;
+                Insert(root, x);
+                break;
+            case 2:
+                std::cout << "\nEnter the value to be Deleted : ";
+                std::cin >> x;
+                Remove(root, root, x);
+                break;
+            case 3:
+                BFT(root);
+                break;
+            case 4:
+                Pre(root);
+                break;
+            case 5:
+                In(root);
+                break;
+            case 6:
+                Post(root);
+                break;
         }
     } while (ch != 0);
 
