@@ -146,6 +146,6 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-    test();
+    test();  // Self - test implementation
     return 0;
 }
