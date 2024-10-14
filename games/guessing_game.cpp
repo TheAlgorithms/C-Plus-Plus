@@ -1,3 +1,16 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+/**
+    * This function plays the guessing game.
+    * The function generates a random number between 1 and max_number.
+    * The user is asked to guess the number.
+    * The user is given feedback if the guess is too high or too low.
+    * The user is informed of the number of attempts it took to guess the number.
+    * @param max_number The maximum number that can be generated.
+ */
 void play_game(int max_number) {
     srand(time(0));
     int secret_number = rand() % max_number + 1;
@@ -22,6 +35,13 @@ void play_game(int max_number) {
     }
 }
 
+/**
+    * The main function asks the user to choose a difficulty level.
+    * The user can choose between Easy (1-50), Medium (1-100), and Hard (1-500).
+    * The user can play the game multiple times.
+    * The user is asked if they want to play again.
+    * The game continues until the user chooses to stop playing.
+ */
 int main() {
     char choice;
     int difficulty_choice;
