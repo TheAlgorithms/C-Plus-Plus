@@ -97,10 +97,8 @@ int unboundedKnapsack(std::uint16_t N, std::uint16_t W,
 } // dynamic_programming
 
 /**
- * @brief Function to run test cases for the unbounded knapsack implementation.
- * 
- * @details This function tests the implementation with predefined test cases.
- * It asserts the expected outcomes to ensure correctness of the algorithm.
+ * @brief self test implementation
+ * @return void
  */
 static void tests() {
     // Test Case 1
