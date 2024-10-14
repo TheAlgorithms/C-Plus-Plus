@@ -17,6 +17,7 @@
  */
 
 #include <cassert>        // for assert
+#include <cstdint>        // for std::uint32_t
 #include <iostream>       // for std::cout
 #include <unordered_map>  // for std::unordered_map
 
@@ -58,9 +59,9 @@ using CacheNode = D_Node<std::pair<K, V>>;
  */
 template <typename K, typename V>
 class LRUCache {
-    CacheNode<K, V> *head;  ///< head of the doubly linked list
-    CacheNode<K, V> *tail;  ///< tail of the doubly linked list
-    uint32_t _capacity;     ///< maximum capacity of the cache
+    CacheNode<K, V> *head;    ///< head of the doubly linked list
+    CacheNode<K, V> *tail;    ///< tail of the doubly linked list
+    std::uint32_t _capacity;  ///< maximum capacity of the cache
 
     std::unordered_map<K, CacheNode<K, V> *>
         node_map;  ///< maps the key to the node address
