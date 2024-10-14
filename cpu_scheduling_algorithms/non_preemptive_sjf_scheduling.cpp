@@ -97,12 +97,12 @@ class SJF {
     /**
      * Priority queue of schedules(stored as tuples) of processes.
      * In each tuple
-     * 1st element: Process ID
-     * 2nd element: Arrival Time
-     * 3rd element: Burst time
-     * 4th element: Completion time
-     * 5th element: Turnaround time
-     * 6th element: Waiting time
+     * @tparam 1st element: Process ID
+     * @tparam 2nd element: Arrival Time
+     * @tparam 3rd element: Burst time
+     * @tparam 4th element: Completion time
+     * @tparam 5th element: Turnaround time
+     * @tparam 6th element: Waiting time
      */
     priority_queue<tuple<S, T, E, double, double, double>,
                    vector<tuple<S, T, E, double, double, double>>,
