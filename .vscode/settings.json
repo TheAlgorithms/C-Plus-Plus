@@ -86,6 +86,7 @@
     "xtr1common": "cpp",
     "xtree": "cpp",
     "xutility": "cpp",
-    "climits": "cpp"
+    "climits": "cpp",
+    "cassert": "cpp"
   }
 }
