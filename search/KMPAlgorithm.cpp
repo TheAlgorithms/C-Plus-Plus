@@ -1,9 +1,10 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include <iostream>
+#include <vector>
+#include <string>
 
-vector<int> computeLPSArray(string& pattern) {
+std::vector<int> computeLPSArray(const std::string& pattern) {
     int m = pattern.size();
-    vector<int> lps(m);
+    std::vector<int> lps(m);
     int len = 0;
     int i = 1;
 
@@ -24,10 +25,10 @@ vector<int> computeLPSArray(string& pattern) {
     return lps;
 }
 
-void KMP(string& text, string& pattern) {
+void KMP(const std::string& text, const std::string& pattern) {
     int n = text.size();
     int m = pattern.size();
-    vector<int> lps = computeLPSArray(pattern);
+    std::vector<int> lps = computeLPSArray(pattern);
     int i = 0, j = 0;
 
     while (i < n) {
@@ -37,7 +38,7 @@ void KMP(string& text, string& pattern) {
         }
 
         if (j == m) {
-            cout << "Pattern found at index " << i - j << endl;
+            std::cout << "Pattern found at index " << i - j << std::endl;
             j = lps[j - 1];
         } else if (i < n && pattern[j] != text[i]) {
             if (j != 0) {
@@ -50,8 +51,8 @@ void KMP(string& text, string& pattern) {
 }
 
 int main() {
-    string text = "ababcabcabababd";
-    string pattern = "ababd";
+    std::string text = "ababcabcabababd";
+    std::string pattern = "ababd";
     KMP(text, pattern);
     return 0;
 }
