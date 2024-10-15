@@ -54,7 +54,7 @@ namespace unbounded_knapsack {
  * @param dp 2D vector for memoization to avoid redundant calculations.
  * @return The maximum value that can be obtained for the given index and capacity.
  */
-uint16_t KnapSackFilling(std::uint16_t i, std::uint16_t W, 
+std::uint16_t KnapSackFilling(std::uint16_t i, std::uint16_t W, 
                     const std::vector<std::uint16_t>& val, 
                     const std::vector<std::uint16_t>& wt, 
                     std::vector<std::vector<int>>& dp) {
@@ -84,7 +84,7 @@ uint16_t KnapSackFilling(std::uint16_t i, std::uint16_t W,
  * @param wt Vector of weights corresponding to the items.
  * @return The maximum value that can be obtained for the given capacity.
  */
-uint16_t unboundedKnapsack(std::uint16_t N, std::uint16_t W, 
+std::uint16_t unboundedKnapsack(std::uint16_t N, std::uint16_t W, 
                       const std::vector<std::uint16_t>& val, 
                       const std::vector<std::uint16_t>& wt) {
     if(N==0)return 0; // Expect 0 since no items
