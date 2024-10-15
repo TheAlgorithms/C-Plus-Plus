@@ -42,25 +42,30 @@ static void tests() {
     std::vector<int> finish = {2, 4, 6, 7, 9, 9};
 
     std::vector<int> ans = getMaxActivities(start, finish, start.size());
-    std::vector<int> activities = {0, 1, 6, 4};
+    // activity 0, 1, 3, 4 are selected since their start time is greater than the end time of the previous activity
+    std::vector<int> activities = {0, 1, 3, 4};
 
     for(int i = 0 ; i < activities.size(); i++){
         uint64_t activityNumber = ans[i];
         assert(activityNumber == activities[i]);
     }
+    std::vector<int> start2 = {10, 12, 20};
+    std::vector<int> finish2 = {20, 25, 30};
+
+    std::vector<int> ans2 = getMaxActivities(start2, finish2, start2.size());
+    // only the first activity is chosen, others dont fulfill the criteria
+    std::vector<int> activities2 = {0};
+
+    for(int i = 0 ; i < activities2.size(); i++){
+        uint64_t activityNumber = ans2[i];
+        assert(activityNumber == activities2[i]);
+    }
+
 }
 
 // Driver code
 int main()
 {
-    //tests();
-    std::vector<int> start = {1, 3, 0, 5, 8, 5};
-    std::vector<int> finish = {2, 4, 6, 7, 9, 9};
-    // Function call
-    std::vector<int> ans = getMaxActivities(start, finish, start.size());
-    std::cout << "Following activities are selected" << "\n";
-    for(int x: ans) {
-        std::cout << x <<", ";
-    }
+    tests();
     return 0;
 }
