@@ -53,6 +53,7 @@ int main(){
     int majority_element = majorityelementement(arr,n);
     if(majority_element!=-1){
         std::cout<<"Majority Element: "<<majority_element<<std::endl;
+        // Majority Element: 4
     }else{
         std::cout<<"No Majority Element Found "<<std::endl;
     }
