@@ -1,0 +1,140 @@
+/**
+ * @file
+ * @brief Implementation of the [Merge Sort algorithm]
+ * (https://en.wikipedia.org/wiki/Merge_sort)
+ * @details
+ * Merge sort is a classic divide and conquer algorithm that divides the array
+ * into havles, recursively sorts the teo halves, and then merges the sorted
+ * havles. This results in a time complexity of O(nlogn).
+ * @author [Keshav Agrawal](https://github.com/keshavagr025)
+ */
+
+#include <cassert>   // for assert
+#include <iostream>  // for IO operations
+#include <vector>    // for std:: vector
+
+/**
+ * @namespace divide_and_conquer
+ * @brief Divide and Conquer algorithms
+ */
+namespace divide_and_conquer {
+/**
+ * @namespace merge_sort
+ * @brief Functions for the [Karatsuba algorithm for fast
+ * multiplication](https://en.wikipedia.org/wiki/Merge_sort)
+ * implementation
+ */
+
+namespace merge_sort {
+/*
+ * @brief Merge two sorted subarrays into a single sorted array
+ * @param left the starting index of left subarray
+ * @param mid the ending index of the left subarray
+ * @param right the ending index of the right subarray
+ */
+
+void merge(std::vector<int>& arr, int left, int mid, int right) {
+    int n1 = mid - left + 1;
+    int n2 = right = mid;
+
+    // Temporary arrays to hold the two halves
+
+    std::vector<int> L(n1), R(n2);
+
+    for (int i = 0; i < n1; i++) {
+        L[i] = arr[left + i];
+    }
+
+    for (int i = 0; i < n2; i++) {
+        R[i] = arr[mid + 1 + i];
+    }
+
+    int i = 0, j = 0, k = left;
+    while (i < n1 && j < n2) {
+        if (L[i] <= R[j]) {
+            arr[k] = L[i];
+            i++;
+        } else {
+            arr[k] = R[j];
+            j++;
+        }
+        k++;
+    }
+
+    // copy the remaining elements of L[], if any
+
+    while (i < n1) {
+        arr[k] = L[i];
+        i++;
+        k++;
+    }
+
+    // copy the remainig elements of R[], if any
+
+    while (j < n2) {
+        arr[k] = R[j];
+        j++;
+        k++;
+    }
+}
+
+/**
+ * @brief Recursive function that divides the array and sorts each half
+ * @param arr the input array to sort
+ * @param left the starting index of thr subarray
+ * @param right the ending index of the subarry
+ */
+
+void merge_sort(std::vector<int>& arr, int left, int right) {
+    if (left < right) {
+        int mid = left + (right - left) / 2;
+
+        // sort the first and second halves
+        merge_sort(arr, left, mid);
+        merge_sort(arr, mid + 1, right);
+
+        // Merger the both sorted part of it
+
+        merge(arr, left, mid, right);
+    }
+}
+}  // namespace merge_sort
+}  // namespace divide_and_conquer
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void test() {
+    // 1st test
+    std::vector<int> arr1 = {12, 11, 13, 5, 6, 7};
+    std::vector<int> sorted1 = {5, 6, 7, 11, 12, 13};
+    std::cout << "1st test... ";
+    divide_and_conquer::merge_sort::merge_sort(arr1, 0, arr1.size() - 1);
+    assert(arr1 == sorted1);
+    std::cout << "passed" << std::endl;
+
+    // 2nd test
+    std::vector<int> arr2 = {38, 27, 43, 3, 9, 82, 10};
+    std::vector<int> sorted2 = {3, 9, 10, 27, 38, 43, 82};
+    std::cout << "2nd test... ";
+    divide_and_conquer::merge_sort::merge_sort(arr2, 0, arr2.size() - 1);
+    assert(arr2 == sorted2);
+    std::cout << "passed" << std::endl;
+
+    // 3rd test
+    std::vector<int> arr3 = {5, 2, 9, 1, 5, 6};
+    std::vector<int> sorted3 = {1, 2, 5, 5, 6, 9};
+    std::cout << "3rd test... ";
+    divide_and_conquer::merge_sort::merge_sort(arr3, 0, arr3.size() - 1);
+    assert(arr3 == sorted3);
+    std::cout << "passed" << std::endl;
+}
+
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
+int main() {
+    test();  // run self-test implementations
+    return 0;
+}
