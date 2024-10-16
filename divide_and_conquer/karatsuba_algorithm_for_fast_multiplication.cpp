@@ -61,11 +61,10 @@ std::string add_strings(std::string first, std::string second) {
         int64_t firstBit = first.at(i) - '0';
         int64_t secondBit = second.at(i) - '0';
 
-        int64_t sum = (char(firstBit ^ secondBit ^ carry)) + '0';  // sum of 3 bits
-        result.insert(result.begin(), sum);
+        int64_t sum = firstBit + secondBit + carry; 
+        result.insert(result.begin(), (sum % 2) + '0');
 
-        carry = char((firstBit & secondBit) | (secondBit & carry) |
-                (firstBit & carry));  // sum of 3 bits
+        carry = sum / 2;
     }
 
     if (carry) {
