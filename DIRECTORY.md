@@ -161,6 +161,7 @@
 
 ## Greedy Algorithms
   * [Boruvkas Minimum Spanning Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/boruvkas_minimum_spanning_tree.cpp)
+  * [Digit Separation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/digit_separation.cpp)
   * [Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/dijkstra.cpp)
   * [Gale Shapley](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/gale_shapley.cpp)
   * [Huffman](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/huffman.cpp)
@@ -300,6 +301,8 @@
   * [Iterative Tree Traversals](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/iterative_tree_traversals.cpp)
   * [Kadanes3](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/kadanes3.cpp)
   * [Kelvin To Celsius](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/kelvin_to_celsius.cpp)
+  * [Lfu Cache](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/lfu_cache.cpp)
+  * [Longest Substring Without Repeating Characters](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/longest_substring_without_repeating_characters.cpp)
   * [Lru Cache](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/lru_cache.cpp)
   * [Matrix Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/matrix_exponentiation.cpp)
   * [Palindrome Of Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/palindrome_of_number.cpp)
@@ -322,6 +325,7 @@
   * [Addition Rule](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/probability/addition_rule.cpp)
   * [Bayes Theorem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/probability/bayes_theorem.cpp)
   * [Binomial Dist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/probability/binomial_dist.cpp)
+  * [Exponential Dist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/probability/exponential_dist.cpp)
   * [Geometric Dist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/probability/geometric_dist.cpp)
   * [Poisson Dist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/probability/poisson_dist.cpp)
   * [Windowed Median](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/probability/windowed_median.cpp)
@@ -369,6 +373,7 @@
   * [Gnome Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/sorting/gnome_sort.cpp)
   * [Heap Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/sorting/heap_sort.cpp)
   * [Insertion Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/sorting/insertion_sort.cpp)
+  * [Insertion Sort Recursive](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/sorting/insertion_sort_recursive.cpp)
   * [Library Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/sorting/library_sort.cpp)
   * [Merge Insertion Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/sorting/merge_insertion_sort.cpp)
   * [Merge Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/sorting/merge_sort.cpp)
