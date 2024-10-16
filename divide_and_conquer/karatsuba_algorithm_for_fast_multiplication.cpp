@@ -60,11 +60,11 @@ std::string add_strings(std::string first, std::string second) {
     for (int64_t i = length - 1; i >= 0; i--) {
         int64_t firstBit = first.at(i) - '0';
         int64_t secondBit = second.at(i) - '0';
-
+        // sum logic using integer arithmetic
         int64_t sum = firstBit + secondBit + carry; 
-        result.insert(result.begin(), (sum % 2) + '0');
+        result.insert(result.begin(), (sum % 2) + '0');  // Insert the binary sum bit
 
-        carry = sum / 2;
+        carry = sum / 2;   // Calculate the carry for the next iteration
     }
 
     if (carry) {
