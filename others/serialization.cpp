@@ -1,19 +1,23 @@
-#include <fstream>
-#include <iostream>
-#include <string>
-#include <cassert> 
-
 /**
  * @file
  * @brief A simple Serializer and Deserializer utility for fundamental data
  * types and strings.
  */
+#include <cassert>      // for assert
+#include <cstdint>      // for std::uint32_t
+#include <fstream>      // for std::ifstream std::ofstream
+#include <iostream>     // for std::ios std::cout std::cerr
+#include <string>       // for std::string
+#include <type_traits>  // for std::is_fundamental
 
+/**
+ * @brief A utility class for serializing fundamental data types and strings to
+ * a binary file.
+ */
 class Serializer {
  public:
     /**
-     * @brief Serializes fundamental data types (like int, float, double, etc.)
-     * to a binary file.
+     * @brief Serializes fundamental data types to a binary file.
      * @tparam T The type of the data to be serialized.
      * @param out The output stream (std::ofstream).
      * @param data The data to be serialized.
@@ -22,7 +26,9 @@ class Serializer {
      */
     template <typename T>
     static void serialize(std::ofstream &out, const T &data) {
-        static_assert(std::is_fundamental<T>::value, "Non-fundamental types are not allowed for this function!");
+        static_assert(
+            std::is_fundamental<T>::value,
+            "Non-fundamental types are not allowed for this function!");
         out.write(reinterpret_cast<const char *>(&data), sizeof(T));
     }
 
@@ -43,8 +49,8 @@ class Serializer {
 };
 
 /**
- * @class Deserializer
- * A utility class for deserializing data from a binary file.
+ * A utility class for deserializing fundamental data types and strings to a
+ * binary file
  */
 class Deserializer {
  public:
@@ -93,55 +99,11 @@ class Deserializer {
         }
     }
 };
-
-void runTests();
-
 /**
- * Demonstrates the use of Serializer and Deserializer for fundamental types and
- * strings.
+ * @brief self test implementation
+ * @return void
  */
-int main() {
-    std::ofstream outFile("output.bin", std::ios::binary);
-    std::ifstream inFile("output.bin", std::ios::binary);
-
-    if (!outFile || !inFile) {
-        std::cerr << "Error opening files.\n";
-        return 1;
-    }
-
-    // Data to be serialized.
-    int num = 42;
-    float pi = 3.14159f;
-    std::string message = "Hello, Sharon!";
-
-    Serializer::serialize(outFile, num);
-    Serializer::serialize(outFile, pi);
-    Serializer::serialize(outFile, message);
-    outFile.close();
-
-    int numRead;
-    float piRead;
-    std::string messageRead;
-
-    // Deserialize the data.
-    Deserializer::deserialize(inFile, numRead);
-    Deserializer::deserialize(inFile, piRead);
-    Deserializer::deserialize(inFile, messageRead);
-    inFile.close();
-
-    std::cout << "Deserialized int: " << numRead << "\n";
-    std::cout << "Deserialized float: " << piRead << "\n";
-    std::cout << "Deserialized string: " << messageRead << "\n";
-
-    return 0;
-}
-
-/**
- * @brief A test suite to perform extensive testing on the Serializer and
- * Deserializer.
- */
-
-void runTests() {
+void tests() {
     std::ofstream outFile("test_output.bin", std::ios::binary);
     if (!outFile) {
         std::cerr << "Error opening file for output.\n";
@@ -188,3 +150,14 @@ void runTests() {
 
     std::cout << "All tests passed!\n";
 }
+
+int main() {
+    tests();
+
+    return 0;
+}
+
+/**
+ * @brief A test suite to perform extensive testing on the Serializer and
+ * Deserializer.
+ */
