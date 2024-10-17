@@ -41,7 +41,7 @@ class Serializer {
      * content.
      */
     static void serialize(std::ofstream &out, const std::string &data) {
-        ssize_t length = data.size();
+        std::uint32_t length = data.size();
         serialize(out, length);           // Serialize the length of the string.
         out.write(data.c_str(), length);  // Serialize the string characters.
         out.put('|');  // Add a delimiter to denote the end of the string.
@@ -81,7 +81,7 @@ class Deserializer {
      * delimiter '|' is not found.
      */
     static void deserialize(std::ifstream &in, std::string &data) {
-        ssize_t length;
+        std::uint32_t length;
         deserialize(in, length);  // Deserialize the length of the string.
 
         if (length > 1024 * 1024)  // Sanity check to prevent huge strings.
