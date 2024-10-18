@@ -7,7 +7,7 @@
  * instead of individual letters. It uses a 5x5 grid filled with the letters of the alphabet (combining 'I' and 'J')
  * and a keyword to create the grid. Each pair of letters in the plaintext is encrypted by locating the letters in the grid.
  * 
- * ### Algorithm
+ * @algorithm
  * The encryption process works by first finding the letters of the digraph in the 5x5 grid:
  *  - If the two letters are in the same row, each letter is replaced by the letter to its immediate right (wrapping to the leftmost letter if needed).
  *  - If the two letters are in the same column, each letter is replaced by the letter immediately below it (wrapping to the topmost letter if needed).
@@ -15,6 +15,7 @@
  * 
  * Decryption reverses these steps using the same key.
  * 
+ * @example
  * For Example:
  * If the key is "PLAYFAIR", the 5x5 grid will be:
  * ```
@@ -33,17 +34,17 @@
  */
 
 
-#include <iostream>
-#include <vector>
-#include <string>
-#include <cassert>
+#include <iostream>     // For input/output stream operations
+#include <vector>       // For using vectors to create the 5x5 grid
+#include <string>       // For handling strings
+#include <cassert>      // For assertions in case of unexpected input
 
-/** \namespace ciphers
- * \brief Algorithms for encryption and decryption
+/** @namespace ciphers
+ *  @brief Algorithms for encryption and decryption
  */
 namespace ciphers {
-    /** \namespace playfair
-     * \brief Functions for [Playfair cipher](https://en.wikipedia.org/wiki/Playfair_cipher) algorithm.
+    /** @namespace playfair
+     *  @brief Functions for [Playfair cipher](https://en.wikipedia.org/wiki/Playfair_cipher) algorithm.
      */
     namespace playfair {
 
@@ -215,9 +216,6 @@ namespace ciphers {
     } // namespace playfair
 } // namespace ciphers
 
-/**
- * Function to test the Playfair cipher algorithm.
- */
 void test() {
     // Test 1
     std::string text1 = "HEYO";
