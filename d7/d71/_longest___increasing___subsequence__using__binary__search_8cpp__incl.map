@@ -1,0 +1,13 @@
+<map id="search/Longest_Increasing_Subsequence_using_binary_search.cpp" name="search/Longest_Increasing_Subsequence_using_binary_search.cpp">
+<area shape="rect" id="Node000001" title="find the length of the Longest Increasing Subsequence (LIS) using Binary Search" alt="" coords="124,5,311,61"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,109,70,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,64,77,104,75,100,160,59"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="94,109,165,135"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="192,63,155,100,151,96,188,59"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="189,109,246,135"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="220,61,220,93,215,93,215,61"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="270,109,344,135"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="247,59,285,96,281,100,243,63"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="369,109,429,135"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="276,59,361,100,359,104,273,64"/>
+</map>

@@ -7,6 +7,7 @@ var dir_19b2bf9199a15c634a08b1ede1dd896a =
     [ "interpolation_search2.cpp", "df/d39/interpolation__search2_8cpp.html", "df/d39/interpolation__search2_8cpp" ],
     [ "jump_search.cpp", "d2/d22/jump__search_8cpp.html", "d2/d22/jump__search_8cpp" ],
     [ "linear_search.cpp", "d9/d02/linear__search_8cpp.html", "d9/d02/linear__search_8cpp" ],
+    [ "Longest_Increasing_Subsequence_using_binary_search.cpp", "df/d99/_longest___increasing___subsequence__using__binary__search_8cpp.html", "df/d99/_longest___increasing___subsequence__using__binary__search_8cpp" ],
     [ "median_search.cpp", "d9/d69/median__search_8cpp.html", "d9/d69/median__search_8cpp" ],
     [ "median_search2.cpp", "d8/dfa/median__search2_8cpp.html", "d8/dfa/median__search2_8cpp" ],
     [ "saddleback_search.cpp", "d3/d22/saddleback__search_8cpp.html", "d3/d22/saddleback__search_8cpp" ],
