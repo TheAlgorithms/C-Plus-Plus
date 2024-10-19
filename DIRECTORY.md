@@ -340,6 +340,7 @@
   * [Sparse Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/range_queries/sparse_table.cpp)
 
 ## Search
+  * [Longest Increasing Subsequence Using Binary Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/Longest_Increasing_Subsequence_using_binary_search.cpp)
   * [Binary Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/binary_search.cpp)
   * [Exponential Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/exponential_search.cpp)
   * [Fibonacci Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/fibonacci_search.cpp)
