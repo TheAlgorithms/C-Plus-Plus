@@ -325,6 +325,7 @@
   * [Addition Rule](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/probability/addition_rule.cpp)
   * [Bayes Theorem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/probability/bayes_theorem.cpp)
   * [Binomial Dist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/probability/binomial_dist.cpp)
+  * [Exponential Dist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/probability/exponential_dist.cpp)
   * [Geometric Dist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/probability/geometric_dist.cpp)
   * [Poisson Dist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/probability/poisson_dist.cpp)
   * [Windowed Median](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/probability/windowed_median.cpp)
@@ -339,6 +340,7 @@
   * [Sparse Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/range_queries/sparse_table.cpp)
 
 ## Search
+  * [Longest Increasing Subsequence Using Binary Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/Longest_Increasing_Subsequence_using_binary_search.cpp)
   * [Binary Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/binary_search.cpp)
   * [Exponential Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/exponential_search.cpp)
   * [Fibonacci Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/fibonacci_search.cpp)
