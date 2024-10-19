@@ -1,12 +1,32 @@
 /**
-Problem Statement:
-You are given n activities with their start and finish times. Select the maximum number of activities
-that can be performed by a single person, assuming that a person can only work on a single activity at a time.
-Solution:
-Since the activities are sorted in increasing order of finish time, we chose the activity whose finish time is less than
-all other activities and start time is more than the previous activities finish time. We should sort the activities in
-increasing order of finish time of activities.
+ * @file
+ * @brief
+ * [https://www.geeksforgeeks.org/greedy-algorithms/] - Greedy algorithm
+ * Problem info: https://www.geeksforgeeks.org/activity-selection-problem-greedy-algo-1/
+ *
+ * @details
+ * You are given n activities with their start and finish times. Select the maximum number of activities
+ * that can be performed by a single person, assuming that a person can only work on a single activity at a time.
+ *
+ * Input: start[]  =  {10, 12, 20}, finish[] =  {20, 25, 30}
+ * Output: 0
+ * Explanation: A person can perform at most one activities.
+ *
+ *
+ *  Input: start[]  =  {1, 3, 0, 5, 8, 5}, finish[] =  {2, 4, 6, 7, 9, 9};
+ *  Output: 0 1 3 4
+ *  Explanation: A person can perform at most four activities. The
+ *  maximum set of activities that can be executed
+ *  is {0, 1, 3, 4} [ These are indexes in start[] and finish[]
+ *
+ * @Approach
+ * Since the activities are sorted in increasing order of finish time, we chose the activity whose finish time is less than
+ * all other activities and start time is more than the previous activities finish time. We should sort the activities in
+ * increasing order of finish time of activities.
+ *
+ * @author [Chhavi Bansal](https://github.com/chhavibansal)
 */
+
 // The assumption here is input activities will be provided in sorted order of finish time of activities.
 #include <cassert>   /// for assert
 #include <iostream>
