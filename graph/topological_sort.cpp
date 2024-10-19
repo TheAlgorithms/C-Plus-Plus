@@ -26,28 +26,55 @@
 namespace graph {
 
 /**
- * @brief Function that add edge between two nodes or vertices of graph
- * @param u any node or vertex of graph
- * @param v any node or vertex of graph
- * @returns None
+ * @class Graph
+ * @brief Class that represents a directed graph and provides methods for
+ * manipulating the graph
  */
-void addEdge(std::vector<std::vector<int>>& adj, int u, int v) {
-    adj[u].push_back(v);
-}
+class Graph {
+ private:
+    int n;                              // Number of nodes
+    std::vector<std::vector<int>> adj;  // Adjacency list representation
+
+ public:
+    /**
+     * @brief Constructor for the Graph class
+     * @param nodes Number of nodes in the graph
+     */
+    Graph(int nodes) : n(nodes), adj(nodes) {}
+
+    /**
+     * @brief Function that adds an edge between two nodes or vertices of graph
+     * @param u Start node of the edge
+     * @param v End node of the edge
+     */
+    void addEdge(int u, int v) { adj[u].push_back(v); }
+
+    /**
+     * @brief Get the adjacency list of the graph
+     * @returns A reference to the adjacency list
+     */
+    const std::vector<std::vector<int>>& getAdjacencyList() const {
+        return adj;
+    }
+
+    /**
+     * @brief Get the number of nodes in the graph
+     * @returns The number of nodes
+     */
+    int getNumNodes() const { return n; }
+};
 
 /**
  * @brief Function to perform Depth First Search on the graph
- * @param v starting vertex for depth first search
- * @param vistied array representing if a node is visited
- * @param graph adjecancy list of the graph
- * @param s stack containing the vertex of topological sort
- * @returns None
+ * @param v Starting vertex for depth-first search
+ * @param visited Array representing whether each node has been visited
+ * @param graph Adjacency list of the graph
+ * @param s Stack containing the vertices for topological sorting
  */
-void dfs(int v, std::vector<int>& visited, std::vector<std::vector<int>>& graph,
-         std::stack<int>& s) {
+void dfs(int v, std::vector<int>& visited,
+         const std::vector<std::vector<int>>& graph, std::stack<int>& s) {
     visited[v] = 1;
-    for (int i = 0; i < graph[v].size(); i++) {
-        int neighbour = graph[v][i];
+    for (int neighbour : graph[v]) {
         if (!visited[neighbour]) {
             dfs(neighbour, visited, graph, s);
         }
@@ -57,25 +84,30 @@ void dfs(int v, std::vector<int>& visited, std::vector<std::vector<int>>& graph,
 
 /**
  * @brief Function to get the topological sort of the graph
- * @param graph adjecancy list of the graph
- * @param n number of nodes in the graph
+ * @param g Graph object
+ * @returns A vector containing the topological order of nodes
  */
-std::vector<int> topological_sort(std::vector<std::vector<int>>& graph, int n) {
+std::vector<int> topologicalSort(const Graph& g) {
+    int n = g.getNumNodes();
+    const auto& adj = g.getAdjacencyList();
     std::vector<int> visited(n, 0);
     std::stack<int> s;
+
     for (int i = 0; i < n; i++) {
         if (!visited[i]) {
-            dfs(i, visited, graph, s);
+            dfs(i, visited, adj, s);
         }
     }
+
     std::vector<int> ans;
     while (!s.empty()) {
         int elem = s.top();
         s.pop();
         ans.push_back(elem);
     }
+
     if (ans.size() < n) {  // Cycle detected
-        throw std::invalid_argument("cycle present in graph");
+        throw std::invalid_argument("cycle detected in graph");
     }
     return ans;
 }
@@ -86,17 +118,17 @@ std::vector<int> topological_sort(std::vector<std::vector<int>>& graph, int n) {
  * @returns void
  */
 static void test() {
-    // Test 1;
+    // Test 1
     std::cout << "Testing for graph 1\n";
     int n_1 = 6;
-    std::vector<std::vector<int>> adj_1(n_1);
-    graph::addEdge(adj_1, 4, 0);
-    graph::addEdge(adj_1, 5, 0);
-    graph::addEdge(adj_1, 5, 2);
-    graph::addEdge(adj_1, 2, 3);
-    graph::addEdge(adj_1, 3, 1);
-    graph::addEdge(adj_1, 4, 1);
-    std::vector<int> ans_1 = graph::topological_sort(adj_1, n_1);
+    graph::Graph graph1(n_1);
+    graph1.addEdge(4, 0);
+    graph1.addEdge(5, 0);
+    graph1.addEdge(5, 2);
+    graph1.addEdge(2, 3);
+    graph1.addEdge(3, 1);
+    graph1.addEdge(4, 1);
+    std::vector<int> ans_1 = graph::topologicalSort(graph1);
     std::vector<int> expected_1 = {5, 4, 2, 3, 1, 0};
     std::cout << "Topological Sorting Order: ";
     for (int i : ans_1) {
@@ -109,14 +141,14 @@ static void test() {
     // Test 2
     std::cout << "Testing for graph 2\n";
     int n_2 = 5;
-    std::vector<std::vector<int>> adj_2(n_2);
-    graph::addEdge(adj_2, 0, 1);
-    graph::addEdge(adj_2, 0, 2);
-    graph::addEdge(adj_2, 1, 2);
-    graph::addEdge(adj_2, 2, 3);
-    graph::addEdge(adj_2, 1, 3);
-    graph::addEdge(adj_2, 2, 4);
-    std::vector<int> ans_2 = graph::topological_sort(adj_2, n_2);
+    graph::Graph graph2(n_2);
+    graph2.addEdge(0, 1);
+    graph2.addEdge(0, 2);
+    graph2.addEdge(1, 2);
+    graph2.addEdge(2, 3);
+    graph2.addEdge(1, 3);
+    graph2.addEdge(2, 4);
+    std::vector<int> ans_2 = graph::topologicalSort(graph2);
     std::vector<int> expected_2 = {0, 1, 2, 4, 3};
     std::cout << "Topological Sorting Order: ";
     for (int i : ans_2) {
@@ -129,16 +161,16 @@ static void test() {
     // Test 3 - Graph with cycle
     std::cout << "Testing for graph 3\n";
     int n_3 = 3;
-    std::vector<std::vector<int>> adj_3(n_3);
-    graph::addEdge(adj_3, 0, 1);
-    graph::addEdge(adj_3, 1, 2);
-    graph::addEdge(adj_3, 2, 0);
+    graph::Graph graph3(n_3);
+    graph3.addEdge(0, 1);
+    graph3.addEdge(1, 2);
+    graph3.addEdge(2, 0);
     try {
-        graph::topological_sort(adj_3, n_3);
+        graph::topologicalSort(graph3);
     } catch (std::invalid_argument& err) {
         assert(std::string(err.what()) == "cycle detected in graph");
     }
-    std::cout << "Test Passed \n";
+    std::cout << "Test Passed\n";
 }
 
 /**
@@ -146,6 +178,6 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-    test();  // Self - test implementation
+    test();
     return 0;
 }
