@@ -37,40 +37,34 @@ namespace karatsuba_algorithm {
 std::string add_strings(std::string first, std::string second) {
     std::string result;  // to store the resulting sum bits
 
-    // make the string lengths equal
+    // Make the string lengths equal by padding with zeros
     int64_t len1 = first.size();
     int64_t len2 = second.size();
-    std::string zero = "0";
+
     if (len1 < len2) {
-        for (int64_t i = 0; i < len2 - len1; i++) {
-            zero += first;
-            first = zero;
-            zero = "0"; // Prevents CI from failing
-        }
+        first.insert(0, len2 - len1, '0'); // Pad first with zeros
     } else if (len1 > len2) {
-        for (int64_t i = 0; i < len1 - len2; i++) {
-            zero += second;
-            second = zero;
-            zero = "0"; // Prevents CI from failing
-        }
+        second.insert(0, len1 - len2, '0'); // Pad second with zeros
     }
 
-    int64_t length = std::max(len1, len2);
+    int64_t length = first.size();
     int64_t carry = 0;
+
     for (int64_t i = length - 1; i >= 0; i--) {
-        int64_t firstBit = first.at(i) - '0';
-        int64_t secondBit = second.at(i) - '0';
+        int64_t firstBit = first.at(i) - '0';  // Convert char to int
+        int64_t secondBit = second.at(i) - '0'; // Convert char to int
 
-        int64_t sum = (char(firstBit ^ secondBit ^ carry)) + '0';  // sum of 3 bits
-        result.insert(result.begin(), sum);
-
-        carry = char((firstBit & secondBit) | (secondBit & carry) |
-                (firstBit & carry));  // sum of 3 bits
+        // Calculate sum and carry
+        int64_t sum = firstBit + secondBit + carry; // Add bits and carry
+        result.insert(result.begin(), (sum % 2) + '0'); // Append the result bit
+        carry = sum / 2; // Update carry for next iteration
     }
 
+    // If there's a carry left, add it to the result
     if (carry) {
-        result.insert(result.begin(), '1');  // adding 1 incase of overflow
+        result.insert(result.begin(), '1'); // Add carry at the front
     }
+
     return result;
 }
 
@@ -153,26 +147,43 @@ static void test() {
     std::string s11 = "1";     // 1
     std::string s12 = "1010";  // 10
     std::cout << "1st test... ";
-    assert(divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm(
-               s11, s12) == 10);
+    assert(divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm(s11, s12) == 10);
     std::cout << "passed" << std::endl;
 
     // 2nd test
     std::string s21 = "11";    // 3
     std::string s22 = "1010";  // 10
     std::cout << "2nd test... ";
-    assert(divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm(
-               s21, s22) == 30);
+    assert(divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm(s21, s22) == 30);
     std::cout << "passed" << std::endl;
 
     // 3rd test
     std::string s31 = "110";   // 6
     std::string s32 = "1010";  // 10
     std::cout << "3rd test... ";
-    assert(divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm(
-               s31, s32) == 60);
+    assert(divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm(s31, s32) == 60);
+    std::cout << "passed" << std::endl;
+
+    // Additional tests
+    std::string s41 = "1101";   // 13
+    std::string s42 = "1011";   // 11
+    std::cout << "4th test... ";
+    assert(divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm(s41, s42) == 143);
+    std::cout << "passed" << std::endl;
+
+    std::string s51 = "0";       // 0
+    std::string s52 = "1010";    // 10
+    std::cout << "5th test... ";
+    assert(divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm(s51, s52) == 0);
+    std::cout << "passed" << std::endl;
+
+    std::string s61 = "1111";   // 15
+    std::string s62 = "1111";   // 15
+    std::cout << "6th test... ";
+    assert(divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm(s61, s62) == 225);
     std::cout << "passed" << std::endl;
 }
+
 
 /**
  * @brief Main function
