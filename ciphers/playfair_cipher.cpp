@@ -217,21 +217,17 @@ namespace ciphers {
 } // namespace ciphers
 
 void test() {
-    // Test 1
-    std::string text1 = "HEYO";
-    std::string encrypted1 = ciphers::playfair::encrypt(text1, "OLDTAVERN");
-    std::string decrypted1 = ciphers::playfair::decrypt(encrypted1, "OLDTAVERN");
-    std::cout << "Original text: " << text1;
-    std::cout << " , Encrypted text (key = OLDTAVERN): " << encrypted1;
-    std::cout << " , Decrypted text: " << decrypted1 << std::endl;
+     // Test 1
+    std::string text1 = "heyo";
+    std::string encrypted1 = ciphers::playfair::encrypt(text1, "oldtavern");
+    std::string decrypted1 = ciphers::playfair::decrypt(encrypted1, "oldtavern");
+    assert(text1 == decrypted1);
 
     // Test 2
-    std::string text2 = "HELLO";
-    std::string encrypted2 = ciphers::playfair::encrypt(text2, "OLDTAVERN");
-    std::string decrypted2 = ciphers::playfair::decrypt(encrypted2, "OLDTAVERN");
-    std::cout << "Original text: " << text2;
-    std::cout << " , Encrypted text (key = OLDTAVERN): " << encrypted2;
-    std::cout << " , Decrypted text: " << decrypted2 << std::endl;
+    std::string text2 = "maid";
+    std::string encrypted2 = ciphers::playfair::encrypt(text2, "oldtavern");
+    std::string decrypted2 = ciphers::playfair::decrypt(encrypted2, "oldtavern");
+    assert(text2 == decrypted2);
 }
 
 /** Driver Code */
