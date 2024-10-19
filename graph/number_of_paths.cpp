@@ -14,6 +14,7 @@
 #include <vector>   /// for std::vector
 #include <iostream> /// for IO operations
 #include <cassert>  /// for assert
+#include <cstdint>  /// for fixed-size integer types (e.g., std::uint32_t)
 
 /**
  * @namespace graph
@@ -30,15 +31,19 @@ namespace graph {
      * @param visited a vector to keep track of visited nodes in the current DFS path
      * @returns the number of paths from node `u` to node `v`
      */
-    int count_paths_dfs(const std::vector<std::vector<unsigned int>>& A, int u, int v, int n, std::vector<bool>& visited) {
+    std::uint32_t count_paths_dfs(const std::vector<std::vector<std::uint32_t>>& A, 
+                                  std::uint32_t u, 
+                                  std::uint32_t v, 
+                                  std::uint32_t n, 
+                                  std::vector<bool>& visited) {
         if (u == v) {
             return 1; // Base case: Reached the destination node
         }
 
         visited[u] = true; // Mark the current node as visited
-        int path_count = 0; // Count of all paths from `u` to `v`
+        std::uint32_t path_count = 0; // Count of all paths from `u` to `v`
 
-        for (int i = 0; i < n; i++) {
+        for (std::uint32_t i = 0; i < n; i++) {
             if (A[u][i] == 1 && !visited[i]) { // Check if there is an edge and the node is not visited
                 path_count += count_paths_dfs(A, i, v, n, visited); // Recursively explore paths from `i` to `v`
             }
@@ -58,7 +63,10 @@ namespace graph {
      * @param n the number of nodes in the graph
      * @returns the number of paths from node `u` to node `v`
      */
-    int count_paths(const std::vector<std::vector<unsigned int>>& A, int u, int v, int n) {
+    std::uint32_t count_paths(const std::vector<std::vector<std::uint32_t>>& A, 
+                              std::uint32_t u, 
+                              std::uint32_t v, 
+                              std::uint32_t n) {
         std::vector<bool> visited(n, false); // Initialize a visited vector for tracking nodes
         return count_paths_dfs(A, u, v, n, visited);
     }
@@ -71,43 +79,43 @@ namespace graph {
  */
 static void test() {
     // Test case 1: Simple directed graph with multiple paths
-    std::vector<std::vector<unsigned int>> graph1 = {
+    std::vector<std::vector<std::uint32_t>> graph1 = {
         {0, 1, 0, 1, 0}, 
         {0, 0, 1, 0, 1}, 
         {0, 0, 0, 0, 1}, 
         {0, 0, 1, 0, 0}, 
         {0, 0, 0, 0, 0}  
     };
-    int n1 = 5, u1 = 0, v1 = 4;
+    std::uint32_t n1 = 5, u1 = 0, v1 = 4;
     assert(graph::count_paths(graph1, u1, v1, n1) == 3);  // There are 3 paths from node 0 to 4
 
     // Test case 2: No possible path (disconnected graph)
-    std::vector<std::vector<unsigned int>> graph2 = {
+    std::vector<std::vector<std::uint32_t>> graph2 = {
         {0, 1, 0, 0, 0}, 
         {0, 0, 0, 0, 0}, 
         {0, 0, 0, 0, 1}, 
         {0, 0, 1, 0, 0}, 
         {0, 0, 0, 0, 0}  
     };
-    int n2 = 5, u2 = 0, v2 = 4;
+    std::uint32_t n2 = 5, u2 = 0, v2 = 4;
     assert(graph::count_paths(graph2, u2, v2, n2) == 0);  // No path from node 0 to 4
 
     // Test case 3: Cyclic graph with multiple paths
-    std::vector<std::vector<unsigned int>> graph3 = {
+    std::vector<std::vector<std::uint32_t>> graph3 = {
         {0, 1, 0, 0, 0}, 
         {0, 0, 1, 1, 0}, 
         {1, 0, 0, 0, 1}, 
         {0, 0, 1, 0, 1}, 
         {0, 0, 0, 0, 0}  
     };
-    int n3 = 5, u3 = 0, v3 = 4;
+    std::uint32_t n3 = 5, u3 = 0, v3 = 4;
     assert(graph::count_paths(graph3, u3, v3, n3) == 3);  // There are 3 paths from node 0 to 4
 
     // Test case 4: Single node graph (self-loop)
-    std::vector<std::vector<unsigned int>> graph4 = {
+    std::vector<std::vector<std::uint32_t>> graph4 = {
         {0}
     };
-    int n4 = 1, u4 = 0, v4 = 0;
+    std::uint32_t n4 = 1, u4 = 0, v4 = 0;
     assert(graph::count_paths(graph4, u4, v4, n4) == 1);  // There is self-loop, so 1 path from node 0 to 0
 
     std::cout << "All tests have successfully passed!\n";
