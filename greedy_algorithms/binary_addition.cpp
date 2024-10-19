@@ -1,7 +1,7 @@
 /**
  * @file binary_addition.cpp
  * @brief Adds two binary numbers and outputs resulting string
- * @see https://www.geeksforgeeks.org/cpp-program-to-add-two-binary-strings/
+ *
  * @details The algorithm for adding two binary strings works by processing them
  * from right to left, similar to manual addition. It starts by determining the
  * longer string's length to ensure both strings are fully traversed. For each
