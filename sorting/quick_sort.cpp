@@ -54,7 +54,7 @@ namespace quick_sort {
  * @param high last point of the array (ending index)
  * @returns index of the smaller element
  *  
- *  Time Complexity
+ *  ### Time Complexity
  *  best case, average Case: O(nlog(n))
  *  Worst Case: O(n^2)  (Worst case occur when the partition 
  *  is consistently unbalanced.)
