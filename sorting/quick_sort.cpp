@@ -59,7 +59,7 @@ namespace quick_sort {
  *  Worst Case: O(n^2)  (Worst case occur when the partition 
  *  is consistently unbalanced.)
  
- *  Space Complexity
+ *  ### Space Complexity
  *  average Case: O(log(n))
  *  Worst Case: O(n)  
  *  It's space complexity is due to the recursive function calls and partitioning process. 
