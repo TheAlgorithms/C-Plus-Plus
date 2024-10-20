@@ -1,174 +1,183 @@
-/**
- * \file
- * \brief A simple tree implementation using structured nodes
- *
- * \todo update code to use C++ STL library features and OO structure
- * \warning This program is a poor implementation - C style - and does not
- * utilize any of the C++ STL features.
- */
 #include <iostream>
+#include <queue>
 
-struct node {
+class Node {
+public:
     int val;
-    node *left;
-    node *right;
+    Node* left;
+    Node* right;
+
+    Node(int value) : val(value), left(nullptr), right(nullptr) {}
 };
 
-struct Queue {
-    node *t[100];
-    int front;
-    int rear;
+class BinarySearchTree {
+public:
+    Node* root;
+
+    BinarySearchTree() : root(nullptr) {}
+
+    void insert(int x) {
+        if (!root) {
+            root = new Node(x);
+        } else {
+            insertRec(root, x);
+        }
+    }
+
+    void remove(int x) {
+        root = removeRec(root, x);
+    }
+
+    void breadthFirstTraversal() const {
+        if (!root) return;
+        std::queue<Node*> q;
+        q.push(root);
+
+        while (!q.empty()) {
+            Node* current = q.front();
+            q.pop();
+            std::cout << current->val << " ";
+            
+            if (current->left) q.push(current->left);
+            if (current->right) q.push(current->right);
+        }
+        std::cout << std::endl;
+    }
+
+    void preorderTraversal() const {
+        preorderRec(root);
+        std::cout << std::endl;
+    }
+
+    void inorderTraversal() const {
+        inorderRec(root);
+        std::cout << std::endl;
+    }
+
+    void postorderTraversal() const {
+        postorderRec(root);
+        std::cout << std::endl;
+    }
+
+private:
+    void insertRec(Node* n, int x) {
+        if (x < n->val) {
+            if (!n->left) {
+                n->left = new Node(x);
+            } else {
+                insertRec(n->left, x);
+            }
+        } else {
+            if (!n->right) {
+                n->right = new Node(x);
+            } else {
+                insertRec(n->right, x);
+            }
+        }
+    }
+
+    Node* removeRec(Node* n, int x) {
+        if (!n) return nullptr;
+
+        if (x < n->val) {
+            n->left = removeRec(n->left, x);
+        } else if (x > n->val) {
+            n->right = removeRec(n->right, x);
+        } else {
+            if (!n->left && !n->right) {
+                delete n;
+                return nullptr;
+            } else if (!n->left) {
+                Node* temp = n->right;
+                delete n;
+                return temp;
+            } else if (!n->right) {
+                Node* temp = n->left;
+                delete n;
+                return temp;
+            } else {
+                int maxInLeftSubtree = findMax(n->left);
+                n->val = maxInLeftSubtree;
+                n->left = removeRec(n->left, maxInLeftSubtree);
+            }
+        }
+        return n;
+    }
+
+    int findMax(Node* n) const {
+        while (n->right) {
+            n = n->right;
+        }
+        return n->val;
+    }
+
+    void preorderRec(Node* n) const {
+        if (!n) return;
+        std::cout << n->val << " ";
+        preorderRec(n->left);
+        preorderRec(n->right);
+    }
+
+    void inorderRec(Node* n) const {
+        if (!n) return;
+        inorderRec(n->left);
+        std::cout << n->val << " ";
+        inorderRec(n->right);
+    }
+
+    void postorderRec(Node* n) const {
+        if (!n) return;
+        postorderRec(n->left);
+        postorderRec(n->right);
+        std::cout << n->val << " ";
+    }
 };
-
-Queue queue;
-
-void enqueue(node *n) { queue.t[queue.rear++] = n; }
-
-node *dequeue() { return (queue.t[queue.front++]); }
-
-void Insert(node *n, int x) {
-    if (x < n->val) {
-        if (n->left == NULL) {
-            node *temp = new node;
-            temp->val = x;
-            temp->left = NULL;
-            temp->right = NULL;
-            n->left = temp;
-        } else {
-            Insert(n->left, x);
-        }
-    } else {
-        if (n->right == NULL) {
-            node *temp = new node;
-            temp->val = x;
-            temp->left = NULL;
-            temp->right = NULL;
-            n->right = temp;
-        } else {
-            Insert(n->right, x);
-        }
-    }
-}
-
-int findMaxInLeftST(node *n) {
-    while (n->right != NULL) {
-        n = n->right;
-    }
-    return n->val;
-}
-
-void Remove(node *p, node *n, int x) {
-    if (n->val == x) {
-        if (n->right == NULL && n->left == NULL) {
-            if (x < p->val) {
-                p->right = NULL;
-            } else {
-                p->left = NULL;
-            }
-        } else if (n->right == NULL) {
-            if (x < p->val) {
-                p->right = n->left;
-            } else {
-                p->left = n->left;
-            }
-        } else if (n->left == NULL) {
-            if (x < p->val) {
-                p->right = n->right;
-            } else {
-                p->left = n->right;
-            }
-        } else {
-            int y = findMaxInLeftST(n->left);
-            n->val = y;
-            Remove(n, n->right, y);
-        }
-    } else if (x < n->val) {
-        Remove(n, n->left, x);
-    } else {
-        Remove(n, n->right, x);
-    }
-}
-
-void BFT(node *n) {
-    if (n != NULL) {
-        std::cout << n->val << "  ";
-        enqueue(n->left);
-        enqueue(n->right);
-        BFT(dequeue());
-    }
-}
-
-void Pre(node *n) {
-    if (n != NULL) {
-        std::cout << n->val << "  ";
-        Pre(n->left);
-        Pre(n->right);
-    }
-}
-
-void In(node *n) {
-    if (n != NULL) {
-        In(n->left);
-        std::cout << n->val << "  ";
-        In(n->right);
-    }
-}
-
-void Post(node *n) {
-    if (n != NULL) {
-        Post(n->left);
-        Post(n->right);
-        std::cout << n->val << "  ";
-    }
-}
 
 int main() {
-    queue.front = 0;
-    queue.rear = 0;
-    int value;
-    int ch;
-    node *root = new node;
-    std::cout << "\nEnter the value of root node :";
+    BinarySearchTree bst;
+    int value, choice;
+
+    std::cout << "\nEnter the value of root node: ";
     std::cin >> value;
-    root->val = value;
-    root->left = NULL;
-    root->right = NULL;
+    bst.insert(value);
+
     do {
         std::cout << "\n1. Insert"
                   << "\n2. Delete"
                   << "\n3. Breadth First"
                   << "\n4. Preorder Depth First"
                   << "\n5. Inorder Depth First"
-                  << "\n6. Postorder Depth First";
+                  << "\n6. Postorder Depth First"
+                  << "\nEnter Your Choice: ";
+        std::cin >> choice;
 
-        std::cout << "\nEnter Your Choice : ";
-        std::cin >> ch;
-        int x;
-        switch (ch) {
-        case 1:
-            std::cout << "\nEnter the value to be Inserted : ";
-            std::cin >> x;
-            Insert(root, x);
-            break;
-        case 2:
-            std::cout << "\nEnter the value to be Deleted : ";
-            std::cin >> x;
-            Remove(root, root, x);
-            break;
-        case 3:
-            BFT(root);
-            break;
-        case 4:
-            Pre(root);
-            break;
-        case 5:
-            In(root);
-            break;
-        case 6:
-            Post(root);
-            break;
+        switch (choice) {
+            case 1:
+                std::cout << "\nEnter the value to be Inserted: ";
+                std::cin >> value;
+                bst.insert(value);
+                break;
+            case 2:
+                std::cout << "\nEnter the value to be Deleted: ";
+                std::cin >> value;
+                bst.remove(value);
+                break;
+            case 3:
+                bst.breadthFirstTraversal();
+                break;
+            case 4:
+                bst.preorderTraversal();
+                break;
+            case 5:
+                bst.inorderTraversal();
+                break;
+            case 6:
+                bst.postorderTraversal();
+                break;
+            default:
+                std::cout << "Invalid choice!\n";
         }
-    } while (ch != 0);
+    } while (choice != 0);
 
     return 0;
 }
