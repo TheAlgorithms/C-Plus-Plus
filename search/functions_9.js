@@ -99,7 +99,7 @@ var searchData=
   ['ispossible_96',['isPossible',['../d3/d05/sudoku__solver_8cpp.html#a07dc6acffd0500de9bdbf16b3ade94b0',1,'backtracking::sudoku_solver']]],
   ['ispoweroftwo_97',['isPowerOfTwo',['../d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f',1,'bit_manipulation']]],
   ['isprime_98',['IsPrime',['../da/d7b/primality__test_8cpp.html#a2bfa6adead2bdcbf1dac94cbe08d7eaf',1,'primality_test.cpp']]],
-  ['isprime_99',['isPrime',['../d8/d53/modular__inverse__fermat__little__theorem_8cpp.html#a09660096b134753128952246f4f4e4bd',1,'modular_inverse_fermat_little_theorem.cpp']]],
+  ['isprime_99',['isPrime',['../d8/d53/modular__inverse__fermat__little__theorem_8cpp.html#aba4929409fee35c3cb559e962a544b3e',1,'math::modular_inverse_fermat']]],
   ['isprint_100',['isprint',['http://en.cppreference.com/w/cpp/string/byte/isprint.html',0,'std']]],
   ['ispunct_101',['ispunct',['http://en.cppreference.com/w/cpp/string/byte/ispunct.html',0,'std']]],
   ['issafe_102',['isSafe',['../d3/d40/graph__coloring_8cpp.html#a976efe049deb042bf1f02612e181ab1d',1,'backtracking::graph_coloring::isSafe()'],['../d4/d3e/n__queens_8cpp.html#a5730b6683f6adcf5c5ef75cf53dc7160',1,'backtracking::n_queens::isSafe()']]],

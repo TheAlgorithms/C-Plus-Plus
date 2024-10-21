@@ -86,6 +86,7 @@ var namespaces_dup =
     [ "mincoins_topdown", "d5/db8/namespacemincoins__topdown.html", null ],
     [ "Minimum", "d4/d12/namespace_minimum.html", null ],
     [ "modular_division", "d1/d64/namespacemodular__division.html", null ],
+    [ "modular_inverse_fermat", "d7/d50/namespacemodular__inverse__fermat.html", null ],
     [ "monte_carlo", "d0/da4/namespacemonte__carlo.html", null ],
     [ "morse", "d6/d8d/namespacemorse.html", null ],
     [ "n_bonacci", "de/d36/namespacen__bonacci.html", null ],

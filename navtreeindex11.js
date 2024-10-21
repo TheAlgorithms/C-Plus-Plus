@@ -1,5 +1,8 @@
 var NAVTREEINDEX11 =
 {
+"db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#ac0ddec9ab8f778dad23ec446d7a77b39":[10,0,2,4,0,2],
+"db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#acf8ca54d5dd6676f255fff3dedacc7c6":[10,0,2,4,0,6],
+"db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#af04a8f3536a52d8c9916086b656eefc2":[10,0,2,4,0,1],
 "db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#afdfd2f4418c70b1bda50f2c3e416d80b":[10,0,2,4,0,5],
 "db/d66/struct_item.html":[10,0,36],
 "db/d6b/kelvin__to__celsius_8cpp.html":[11,0,17,8],
@@ -135,7 +138,7 @@ var NAVTREEINDEX11 =
 "db/d9f/iterative__factorial_8cpp.html#a2565c745aac2f9561cc6fd9e56d9b77a":[11,0,14,27,0],
 "db/d9f/iterative__factorial_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,14,27,2],
 "db/d9f/iterative__factorial_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,27,1],
-"db/da4/namespacestd_1_1regex__constants.html":[9,0,116,2],
+"db/da4/namespacestd_1_1regex__constants.html":[9,0,117,2],
 "db/da9/classqueue.html":[10,0,50],
 "db/da9/classqueue.html#a353e4dd5772575905c78b0b30856e368":[10,0,50,2],
 "db/da9/classqueue.html#a386fc1df8610948d3117b12f24655c7d":[10,0,50,7],
@@ -166,7 +169,7 @@ var NAVTREEINDEX11 =
 "db/dd3/ode__forward__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe":[11,0,15,15,4],
 "db/dd3/ode__forward__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b":[11,0,15,15,0],
 "db/ddc/namespaceaystar__search.html":[9,0,4],
-"db/dde/namespaceothers_1_1_cache.html":[9,0,87,0],
+"db/dde/namespaceothers_1_1_cache.html":[9,0,88,0],
 "db/df3/happy__number_8cpp.html":[11,0,17,5],
 "db/df3/happy__number_8cpp.html#a00ccdb1166a7c83ac3c33ac67a2532b7":[11,0,17,5,0],
 "db/df3/happy__number_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,17,5,1],
@@ -220,7 +223,7 @@ var NAVTREEINDEX11 =
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#ae2edd40354a1ca7aeaee3d1e3589e713":[11,0,13,5,7],
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,13,5,4],
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#af7243bdc6ae3c7169f01b85bb226e66a":[11,0,13,5,1],
-"dc/d3a/namespacesubset__sum.html":[9,0,124],
+"dc/d3a/namespacesubset__sum.html":[9,0,125],
 "dc/d5a/rat__maze_8cpp.html":[11,0,0,7],
 "dc/d5a/rat__maze_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,0,7,2],
 "dc/d5a/rat__maze_8cpp.html#ab99107bfb4c6934cd4691868c66c0aa3":[11,0,0,7,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX11 =
 "dc/d6d/power__of__2_8cpp.html#a5032470c9974bbd6ec254bf296530a5f":[11,0,1,6,0],
 "dc/d6d/power__of__2_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,1,6,2],
 "dc/d6d/power__of__2_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,1,6,1],
-"dc/d6d/structstd_1_1is__arithmetic_3_01uint256__t_01_4.html":[9,0,116,6],
-"dc/d6d/structstd_1_1is__arithmetic_3_01uint256__t_01_4.html":[10,0,19,1],
-"dc/d82/area_8cpp.html":[11,0,14,2],
-"dc/d82/area_8cpp.html#a3277e65a8f380e7632791975bfba0efb":[11,0,14,2,3]
+"dc/d6d/structstd_1_1is__arithmetic_3_01uint256__t_01_4.html":[9,0,117,6]
 };

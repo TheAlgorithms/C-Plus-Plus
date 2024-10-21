@@ -1,7 +1,9 @@
 <map id="math/modular_inverse_fermat_little_theorem.cpp" name="math/modular_inverse_fermat_little_theorem.cpp">
-<area shape="rect" id="Node000001" title="C++ Program to find the modular inverse using Fermat&#39;s Little Theorem" alt="" coords="5,5,181,46"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="13,94,85,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,48,65,82,61,79,80,45"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="108,94,166,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="106,45,125,79,121,82,102,48"/>
+<area shape="rect" id="Node000001" title="C++ Program to find the modular inverse using Fermat&#39;s Little Theorem" alt="" coords="36,5,212,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,70,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,48,64,85,60,81,101,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="94,94,154,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,46,127,78,122,78,122,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="178,94,249,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="148,44,190,82,187,86,144,48"/>
 </map>

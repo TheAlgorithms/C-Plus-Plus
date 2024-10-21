@@ -11,6 +11,7 @@ var searchData=
   ['mincoins_5ftopdown_8',['mincoins_topdown',['../d5/db8/namespacemincoins__topdown.html',1,'']]],
   ['minimum_9',['Minimum',['../d4/d12/namespace_minimum.html',1,'']]],
   ['modular_5fdivision_10',['modular_division',['../d1/d64/namespacemodular__division.html',1,'']]],
-  ['monte_5fcarlo_11',['monte_carlo',['../d0/da4/namespacemonte__carlo.html',1,'']]],
-  ['morse_12',['morse',['../d6/d8d/namespacemorse.html',1,'']]]
+  ['modular_5finverse_5ffermat_11',['modular_inverse_fermat',['../d7/d50/namespacemodular__inverse__fermat.html',1,'']]],
+  ['monte_5fcarlo_12',['monte_carlo',['../d0/da4/namespacemonte__carlo.html',1,'']]],
+  ['morse_13',['morse',['../d6/d8d/namespacemorse.html',1,'']]]
 ];
