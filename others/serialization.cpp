@@ -55,11 +55,11 @@ class Serializer {
     }
 
     /**
-     * Serializes a string to a binary file.
+     * @brief Serializes a string to a binary file.
      * @param out The output stream (std::ofstream).
      * @param data The string to be serialized.
      *
-     * The string is serialized by first storing its length, followed by the
+     * @note The string is serialized by first storing its length, followed by the
      * content.
      */
     static void serialize(std::ofstream &out, const std::string &data) {
@@ -77,7 +77,7 @@ class Serializer {
 class Deserializer {
  public:
     /**
-     * Deserializes fundamental data types (like int, float, double, etc.) from
+     * @brief Deserializes fundamental data types (like int, float, double, etc.) from
      * a binary file.
      * @tparam T The type of the data to be deserialized.
      * @param in The input stream (std::ifstream).
@@ -94,7 +94,7 @@ class Deserializer {
     }
 
     /**
-     * Deserializes a string from a binary file.
+     * @brief Deserializes a string from a binary file.
      * @param in The input stream (std::ifstream).
      * @param data The string where the deserialized content will be stored.
      *
