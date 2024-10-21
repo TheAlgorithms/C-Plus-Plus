@@ -32,26 +32,27 @@ namespace graph {
      * @returns the number of paths from node `u` to node `v`
      */
     std::uint32_t count_paths_dfs(const std::vector<std::vector<std::uint32_t>>& A, 
-                                  std::uint32_t u, 
-                                  std::uint32_t v, 
-                                  std::uint32_t n, 
-                                  std::vector<bool>& visited) {
+                              std::uint32_t u, 
+                              std::uint32_t v, 
+                              std::uint32_t n, 
+                              std::vector<bool>& visited) {
         if (u == v) {
-            return 1; // Base case: Reached the destination node
+            return 1;  // Base case: Reached the destination node
         }
 
-        visited[u] = true; // Mark the current node as visited
-        std::uint32_t path_count = 0; // Count of all paths from `u` to `v`
+        visited[u] = true;  // Mark the current node as visited
+        std::uint32_t path_count = 0;  // Count of all paths from `u` to `v`
 
         for (std::uint32_t i = 0; i < n; i++) {
-            if (A[u][i] == 1 && !visited[i]) { // Check if there is an edge and the node is not visited
-                path_count += count_paths_dfs(A, i, v, n, visited); // Recursively explore paths from `i` to `v`
+            if (A[u][i] == 1 && !visited[i]) {  // Check if there is an edge and the node is not visited
+                path_count += count_paths_dfs(A, i, v, n, visited);  // Recursively explore paths from `i` to `v`
             }
         }
 
-        visited[u] = false; // Unmark the current node as visited (backtracking)
+        visited[u] = false;  // Unmark the current node as visited (backtracking)
         return path_count;
     }
+
 
     /**
      * @brief Counts the number of paths from node `u` to node `v` in a directed graph
@@ -64,11 +65,16 @@ namespace graph {
      * @returns the number of paths from node `u` to node `v`
      */
     std::uint32_t count_paths(const std::vector<std::vector<std::uint32_t>>& A, 
-                              std::uint32_t u, 
-                              std::uint32_t v, 
-                              std::uint32_t n) {
-        std::vector<bool> visited(n, false); // Initialize a visited vector for tracking nodes
-        return count_paths_dfs(A, u, v, n, visited);
+                          std::uint32_t u, 
+                          std::uint32_t v, 
+                          std::uint32_t n) {
+        // Check for invalid nodes or empty graph
+        if (u >= n || v >= n || A.empty() || A[0].empty()) {
+            return 0;  // No valid paths if graph is empty or nodes are out of bounds
+        }
+
+        std::vector<bool> visited(n, false);  // Initialize a visited vector for tracking nodes
+        return count_paths_dfs(A, u, v, n, visited);  // Start DFS
     }
 
 } // namespace graph
@@ -117,6 +123,20 @@ static void test() {
     };
     std::uint32_t n4 = 1, u4 = 0, v4 = 0;
     assert(graph::count_paths(graph4, u4, v4, n4) == 1);  // There is self-loop, so 1 path from node 0 to 0
+
+    // Test case 5: Empty graph (no nodes, no paths)
+    std::vector<std::vector<std::uint32_t>> graph5 = {{}};
+    int n5 = 0, u5 = 0, v5 = 0;
+    assert(graph::count_paths(graph5, u5, v5, n5) == 0);  // There are no paths in an empty graph
+
+    // Test case 6: Invalid nodes (out of bounds)
+    std::vector<std::vector<std::uint32_t>> graph6 = {
+        {0, 1, 0}, 
+        {0, 0, 1}, 
+        {0, 0, 0}
+    };
+    int n6 = 3, u6 = 0, v6 = 5;  // Node `v` is out of bounds (n = 3, so valid indices are 0, 1, 2)
+    assert(graph::count_paths(graph6, u6, v6, n6) == 0);  // Should return 0 because `v = 5` is invalid
 
     std::cout << "All tests have successfully passed!\n";
 }
