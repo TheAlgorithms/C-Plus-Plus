@@ -91,16 +91,5 @@ static void test() {
  */
 int main(int argc, char *argv[]) {
     test();  // Run self-test implementations
-
-    vector<int> arr = {3, 2, 1, 5, 6, 4};
-    int k = 2; // We want the 2nd smallest element
-
-    // Input validation for k
-    if (k < 1 || k > arr.size()) {
-        cout << "Error: k must be between 1 and " << arr.size() << endl;
-        return -1;
-    }
-
-    cout << k << "-th smallest element is " << quickSelect(arr, 0, arr.size() - 1, k - 1) << endl;
     return 0;
 }
