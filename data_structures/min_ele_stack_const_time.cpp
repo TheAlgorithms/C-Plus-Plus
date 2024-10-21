@@ -9,10 +9,10 @@
  * The MinStack data structure keeps track of the minimum element present in a
  * stack and retrieves them at O(1) time.
  */
-#include <cassert>
-#include <iostream>
-#include <stack>
-#include <stdexcept>
+#include <cassert>    /// for assert
+#include <iostream>   /// for IO operations
+#include <stack>      /// for std::vector
+#include <stdexcept>  /// For std::out_of_range
 
 /**
  * @namespace
