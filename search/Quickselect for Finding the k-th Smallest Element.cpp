@@ -3,7 +3,6 @@
 #include <algorithm>
 #include <cassert>
 
-using namespace std;
 
 /**
  * @brief Partition the array and return the pivot index.
