@@ -82,7 +82,7 @@ class BinaryAddition {
 /**
  * @brief run self test implementation.
  */
-void tests() {
+static void tests() {
     greedy_algorithms::BinaryAddition binaryAddition;
 
     // Valid binary string tests
