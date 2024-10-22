@@ -111,6 +111,7 @@ static void tests() {
 
 /**
  * @brief main function
+ * @returns 0 on successful exit
  */
 int main() {
     tests(); /// To execute tests
