@@ -81,6 +81,7 @@ class BinaryAddition {
 
 /**
  * @brief run self test implementation.
+ * @returns void
  */
 static void tests() {
     greedy_algorithms::BinaryAddition binaryAddition;
