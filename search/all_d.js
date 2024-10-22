@@ -36,7 +36,7 @@ var searchData=
   ['hashstr_33',['hashStr',['../d5/d3c/namespacedata__structures.html#a35eb2bc3edbb52f9c5f0b1e51046ef15',1,'data_structures']]],
   ['hashtab_34',['hashtab',['../d1/df3/hash__search_8cpp.html#af413b1740073db54796642b0ab814d6d',1,'hash_search.cpp']]],
   ['have_20a_20right_20node_20subtree_35',['Case 2: The given node does not have a right node/subtree',['../d4/d32/inorder__successor__of__bst_8cpp.html#autotoc_md89',1,'']]],
-  ['head_36',['head',['../dd/d1c/classhash__chain.html#ae8457d13620497fa2046ac566252c4b0',1,'hash_chain']]],
+  ['head_36',['head',['../dd/d1c/classhash__chain.html#ae8457d13620497fa2046ac566252c4b0',1,'hash_chain::head'],['../d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache.html#a042bb403f4452ad8c669fbf87ef82821',1,'others::Cache::LRUCache::head']]],
   ['header_37',['header',['../d4/d90/classdata__structures_1_1_skip_list.html#ad7e392386d7db622185d6f7c718e4f16',1,'data_structures::SkipList']]],
   ['heap_5fsize_38',['heap_size',['../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913',1,'MinHeap']]],
   ['heap_5fsort_2ecpp_39',['heap_sort.cpp',['../d2/d52/heap__sort_8cpp.html',1,'']]],

@@ -6,7 +6,7 @@ var searchData=
   ['harr_3',['harr',['../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e',1,'MinHeap']]],
   ['hashfunks_4',['hashFunks',['../dc/dd4/classdata__structures_1_1_bloom_filter.html#a65ca6742d3be88d4aca4f080068a7a80',1,'data_structures::BloomFilter']]],
   ['hashtab_5',['hashtab',['../d1/df3/hash__search_8cpp.html#af413b1740073db54796642b0ab814d6d',1,'hash_search.cpp']]],
-  ['head_6',['head',['../dd/d1c/classhash__chain.html#ae8457d13620497fa2046ac566252c4b0',1,'hash_chain']]],
+  ['head_6',['head',['../dd/d1c/classhash__chain.html#ae8457d13620497fa2046ac566252c4b0',1,'hash_chain::head'],['../d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache.html#a042bb403f4452ad8c669fbf87ef82821',1,'others::Cache::LRUCache::head']]],
   ['header_7',['header',['../d4/d90/classdata__structures_1_1_skip_list.html#ad7e392386d7db622185d6f7c718e4f16',1,'data_structures::SkipList']]],
   ['heap_5fsize_8',['heap_size',['../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913',1,'MinHeap']]],
   ['heuristic_5fvalue_9',['heuristic_value',['../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a331d1070d008a4f9d55775a51013baa3',1,'machine_learning::aystar_search::AyStarSearch::Info']]],

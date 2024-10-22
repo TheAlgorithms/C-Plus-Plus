@@ -62,7 +62,7 @@ var searchData=
   ['lps_59',['lps',['../dd/d24/namespacedynamic__programming.html#afe9f45b6e30ee187509da2d1d0093412',1,'dynamic_programming']]],
   ['lrint_60',['lrint',['http://en.cppreference.com/w/cpp/numeric/math/rint.html',0,'std']]],
   ['lround_61',['lround',['http://en.cppreference.com/w/cpp/numeric/math/round.html',0,'std']]],
-  ['lrucache_62',['LRUCache',['../d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html#a41c9b6f1693b8a316cc4a2d8c9149ba4',1,'others::lru_cache::LRUCache']]],
+  ['lrucache_62',['LRUCache',['../d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html#a41c9b6f1693b8a316cc4a2d8c9149ba4',1,'others::lru_cache::LRUCache::LRUCache()'],['../d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache.html#a8980cbbc9cf0a98a9592b40c4d6ec28f',1,'others::Cache::LRUCache::LRUCache()']]],
   ['lt_63',['lt',['http://en.cppreference.com/w/cpp/string/char_traits/cmp.html',0,'std::char_traits']]],
   ['lu_5fdecomposition_64',['lu_decomposition',['../d1/dbe/lu__decomposition_8h.html#a75b8a228c6419ecda6077255d6d60509',1,'lu_decomposition.h']]]
 ];

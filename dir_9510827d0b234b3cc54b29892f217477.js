@@ -12,6 +12,7 @@ var dir_9510827d0b234b3cc54b29892f217477 =
     [ "lfu_cache.cpp", "d9/d65/lfu__cache_8cpp.html", "d9/d65/lfu__cache_8cpp" ],
     [ "longest_substring_without_repeating_characters.cpp", "d4/db8/longest__substring__without__repeating__characters_8cpp.html", "d4/db8/longest__substring__without__repeating__characters_8cpp" ],
     [ "lru_cache.cpp", "d3/db3/lru__cache_8cpp.html", "d3/db3/lru__cache_8cpp" ],
+    [ "lru_cache2.cpp", "dc/daa/lru__cache2_8cpp.html", "dc/daa/lru__cache2_8cpp" ],
     [ "matrix_exponentiation.cpp", "d7/d35/matrix__exponentiation_8cpp.html", "d7/d35/matrix__exponentiation_8cpp" ],
     [ "palindrome_of_number.cpp", "da/d9a/palindrome__of__number_8cpp.html", "da/d9a/palindrome__of__number_8cpp" ],
     [ "paranthesis_matching.cpp", "dc/dc5/paranthesis__matching_8cpp.html", "dc/dc5/paranthesis__matching_8cpp" ],

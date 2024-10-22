@@ -1,0 +1,5 @@
+<map id="others::Cache::LRUCache::make_recent" name="others::Cache::LRUCache::make_recent">
+<area shape="rect" id="Node000001" title="move the existing node in the list to the beginning of the list." alt="" coords="5,5,182,46"/>
+<area shape="rect" id="Node000002" href="$d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache.html#a2e53b5ad1368d87da501f61473eb9ea2" title="push the node to the front of the linked list." alt="" coords="230,5,406,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,23,214,23,214,28,182,28"/>
+</map>

@@ -22,5 +22,5 @@ var searchData=
   ['lognormal_5fdistribution_19',['lognormal_distribution',['http://en.cppreference.com/w/cpp/numeric/random/lognormal_distribution.html',0,'std']]],
   ['longest_5fsubstring_20',['Longest_Substring',['../da/d21/class_longest___substring.html',1,'']]],
   ['lowestcommonancestor_21',['LowestCommonAncestor',['../d9/d23/classgraph_1_1_lowest_common_ancestor.html',1,'graph']]],
-  ['lrucache_22',['LRUCache',['../d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html',1,'others::lru_cache']]]
+  ['lrucache_22',['LRUCache',['../d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache.html',1,'others::Cache::LRUCache&lt; K, V &gt;'],['../d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html',1,'others::lru_cache::LRUCache']]]
 ];

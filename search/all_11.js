@@ -108,9 +108,10 @@ var searchData=
   ['lround_105',['lround',['http://en.cppreference.com/w/cpp/numeric/math/round.html',0,'std']]],
   ['lru_5fcache_106',['lru_cache',['../d8/dcd/namespacelru__cache.html',1,'']]],
   ['lru_5fcache_2ecpp_107',['lru_cache.cpp',['../d3/db3/lru__cache_8cpp.html',1,'']]],
-  ['lrucache_108',['LRUCache',['../d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html',1,'others::lru_cache::LRUCache'],['../d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html#a41c9b6f1693b8a316cc4a2d8c9149ba4',1,'others::lru_cache::LRUCache::LRUCache()']]],
-  ['lt_109',['lt',['http://en.cppreference.com/w/cpp/string/char_traits/cmp.html',0,'std::char_traits']]],
-  ['lu_5fdecompose_2ecpp_110',['lu_decompose.cpp',['../dd/d65/lu__decompose_8cpp.html',1,'']]],
-  ['lu_5fdecomposition_111',['lu_decomposition',['../d1/dbe/lu__decomposition_8h.html#a75b8a228c6419ecda6077255d6d60509',1,'lu_decomposition.h']]],
-  ['lu_5fdecomposition_2eh_112',['lu_decomposition.h',['../d1/dbe/lu__decomposition_8h.html',1,'']]]
+  ['lru_5fcache2_2ecpp_108',['lru_cache2.cpp',['../dc/daa/lru__cache2_8cpp.html',1,'']]],
+  ['lrucache_109',['LRUCache',['../d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache.html',1,'others::Cache::LRUCache&lt; K, V &gt;'],['../d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html',1,'others::lru_cache::LRUCache'],['../d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html#a41c9b6f1693b8a316cc4a2d8c9149ba4',1,'others::lru_cache::LRUCache::LRUCache()'],['../d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache.html#a8980cbbc9cf0a98a9592b40c4d6ec28f',1,'others::Cache::LRUCache::LRUCache()']]],
+  ['lt_110',['lt',['http://en.cppreference.com/w/cpp/string/char_traits/cmp.html',0,'std::char_traits']]],
+  ['lu_5fdecompose_2ecpp_111',['lu_decompose.cpp',['../dd/d65/lu__decompose_8cpp.html',1,'']]],
+  ['lu_5fdecomposition_112',['lu_decomposition',['../d1/dbe/lu__decomposition_8h.html#a75b8a228c6419ecda6077255d6d60509',1,'lu_decomposition.h']]],
+  ['lu_5fdecomposition_2eh_113',['lu_decomposition.h',['../d1/dbe/lu__decomposition_8h.html',1,'']]]
 ];

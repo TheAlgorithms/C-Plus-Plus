@@ -2,7 +2,7 @@ var searchData=
 [
   ['_5f_5fdetailed_5fsingle_5fprediction_0',['__detailed_single_prediction',['../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#a361a45f3c3d8347d79103bf182d0570b',1,'machine_learning::neural_network::NeuralNetwork']]],
   ['_5f_5fget_5finteger_5ffrom_5fstring_1',['__get_integer_from_string',['../db/d9a/classuint128__t.html#a857a3c69c1e775a1bd3935c2bfbb02df',1,'uint128_t::__get_integer_from_string()'],['../d1/d83/classuint256__t.html#afee82fa5052e9d8c946b9205b943cec4',1,'uint256_t::__get_integer_from_string()']]],
-  ['_5fcapacity_2',['_capacity',['../df/d8f/classothers_1_1_cache_1_1_l_f_u_cache.html#a3acc10e6bb67d9d9c4187f625723e6c5',1,'others::Cache::LFUCache']]],
+  ['_5fcapacity_2',['_capacity',['../df/d8f/classothers_1_1_cache_1_1_l_f_u_cache.html#a3acc10e6bb67d9d9c4187f625723e6c5',1,'others::Cache::LFUCache::_capacity'],['../d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache.html#af34bb8b8eaa34cc499b4fed30b9d05fc',1,'others::Cache::LRUCache::_capacity']]],
   ['_5fdigits_3',['_digits',['../db/d82/classlarge__number.html#af2b3ec9c35842d3a46ac7326f268af57',1,'large_number']]],
   ['_5ferase_4',['_erase',['../d5/d95/structdata__structures_1_1treap_1_1_treap.html#aeb4bb0db68c7c04ef9498c88c3777887',1,'data_structures::treap::Treap']]],
   ['_5fexit_5',['_Exit',['http://en.cppreference.com/w/cpp/utility/program/_Exit.html',0,'std']]],

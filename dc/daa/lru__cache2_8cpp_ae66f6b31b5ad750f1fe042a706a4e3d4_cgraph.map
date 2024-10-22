@@ -1,0 +1,25 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title="main function" alt="" coords="5,161,55,186"/>
+<area shape="rect" id="Node000002" href="$dc/daa/lru__cache2_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="self test implementations" alt="" coords="103,161,146,186"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,171,87,171,87,176,55,176"/>
+<area shape="rect" id="Node000003" href="$d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache.html#af8edfe5a7def5d5b846463041c33136a" title="Returns the total capacity of the cache." alt="" coords="207,5,383,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="128,159,150,110,169,81,192,57,199,52,203,56,196,61,173,85,155,112,133,161"/>
+<area shape="rect" id="Node000004" href="$d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache.html#ab8b6a6aa95db678596bc2a49e864683e" title="returns whether the cache is empty or not" alt="" coords="207,71,383,111"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="139,158,163,139,193,121,204,115,206,120,195,125,166,144,142,163"/>
+<area shape="rect" id="Node000005" href="$d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache.html#ac1be0357ecc7c34144f3d9a63c6cb3ea" title="get the value of the key&#45;value pair if exists" alt="" coords="194,136,396,161"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="146,168,189,161,190,167,147,173"/>
+<area shape="rect" id="Node000008" href="$d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache.html#a5ee34fcee480f21bb6f68a34f0f69b45" title="upsert a key&#45;value pair" alt="" coords="194,185,396,210"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="147,174,185,179,184,185,146,179"/>
+<area shape="rect" id="Node000010" href="$d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache.html#a1b709333874b4633ee02a3661cd042e1" title="Returns the number of items present in the cache." alt="" coords="207,235,383,275"/>
+<area shape="poly" id="edge11_Node000002_Node000010" title=" " alt="" coords="143,185,167,203,195,221,207,226,205,231,193,225,164,208,139,189"/>
+<area shape="rect" id="Node000011" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/error/exception/what.html#" title=" " alt="" coords="234,300,357,341"/>
+<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="133,186,155,234,173,261,196,285,221,300,218,305,192,289,169,265,150,237,128,188"/>
+<area shape="rect" id="Node000006" href="$d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache.html#ad022d494b40f82417340b113445e79a4" title="move the existing node in the list to the beginning of the list." alt="" coords="444,124,621,165"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="397,144,429,143,429,149,397,149"/>
+<area shape="rect" id="Node000007" href="$d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache.html#a2e53b5ad1368d87da501f61473eb9ea2" title="push the node to the front of the linked list." alt="" coords="669,153,845,194"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="621,153,653,157,653,163,620,158"/>
+<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="355,182,429,165,430,170,356,187"/>
+<area shape="poly" id="edge10_Node000008_Node000007" title=" " alt="" coords="397,190,653,176,654,182,397,195"/>
+<area shape="rect" id="Node000009" href="$d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache.html#ab211a4be58491bf11834cae88a0c44f7" title="pop the last node in the linked list." alt="" coords="444,239,621,279"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="351,209,397,220,440,232,438,237,396,226,349,214"/>
+</map>
