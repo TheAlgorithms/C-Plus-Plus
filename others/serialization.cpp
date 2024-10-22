@@ -251,7 +251,11 @@ void tests() {
     std::remove("missing_delimiter.bin");
 }
 
+/**
+ * @brief Main function
+ * @returns 0 on successful exit
+ */
 int main() {
-    tests();
+    tests(); // run self test implementations
     return 0;
 }
