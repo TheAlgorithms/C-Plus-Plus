@@ -26,6 +26,11 @@
 namespace graph {
 
 /**
+ * @namespace topological_sort
+ * @brief Topological Sort Algorithm
+ */
+namespace topological_sort {
+/**
  * @class Graph
  * @brief Class that represents a directed graph and provides methods for
  * manipulating the graph
@@ -111,6 +116,7 @@ std::vector<int> topologicalSort(const Graph& g) {
     }
     return ans;
 }
+}  // namespace topological_sort
 }  // namespace graph
 
 /**
@@ -121,14 +127,14 @@ static void test() {
     // Test 1
     std::cout << "Testing for graph 1\n";
     int n_1 = 6;
-    graph::Graph graph1(n_1);
+    graph::topological_sort::Graph graph1(n_1);
     graph1.addEdge(4, 0);
     graph1.addEdge(5, 0);
     graph1.addEdge(5, 2);
     graph1.addEdge(2, 3);
     graph1.addEdge(3, 1);
     graph1.addEdge(4, 1);
-    std::vector<int> ans_1 = graph::topologicalSort(graph1);
+    std::vector<int> ans_1 = graph::topological_sort::topologicalSort(graph1);
     std::vector<int> expected_1 = {5, 4, 2, 3, 1, 0};
     std::cout << "Topological Sorting Order: ";
     for (int i : ans_1) {
@@ -141,14 +147,14 @@ static void test() {
     // Test 2
     std::cout << "Testing for graph 2\n";
     int n_2 = 5;
-    graph::Graph graph2(n_2);
+    graph::topological_sort::Graph graph2(n_2);
     graph2.addEdge(0, 1);
     graph2.addEdge(0, 2);
     graph2.addEdge(1, 2);
     graph2.addEdge(2, 3);
     graph2.addEdge(1, 3);
     graph2.addEdge(2, 4);
-    std::vector<int> ans_2 = graph::topologicalSort(graph2);
+    std::vector<int> ans_2 = graph::topological_sort::topologicalSort(graph2);
     std::vector<int> expected_2 = {0, 1, 2, 4, 3};
     std::cout << "Topological Sorting Order: ";
     for (int i : ans_2) {
@@ -161,12 +167,12 @@ static void test() {
     // Test 3 - Graph with cycle
     std::cout << "Testing for graph 3\n";
     int n_3 = 3;
-    graph::Graph graph3(n_3);
+    graph::topological_sort::Graph graph3(n_3);
     graph3.addEdge(0, 1);
     graph3.addEdge(1, 2);
     graph3.addEdge(2, 0);
     try {
-        graph::topologicalSort(graph3);
+        graph::topological_sort::topologicalSort(graph3);
     } catch (std::invalid_argument& err) {
         assert(std::string(err.what()) == "cycle detected in graph");
     }
@@ -178,6 +184,6 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-    test(); // run self test implementations
+    test();  // run self test implementations
     return 0;
 }
