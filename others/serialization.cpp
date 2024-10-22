@@ -12,7 +12,7 @@
  * ### Serializing:
  * - **Fundamental Types**: Written directly in their binary form.
  * - **Strings**: The string's length is written first, followed by the string
- * data, and a `|` delimiter to mark the end.
+ * data, and a `|` delimiter to mark the end. String size should not exceed 1MB.
  *
  * ### Deserializing:
  * - **Fundamental Types**: Reads the binary data back into the appropriate
@@ -59,11 +59,19 @@ class Serializer {
      * @param out The output stream (std::ofstream).
      * @param data The string to be serialized.
      *
-     * @note The string is serialized by first storing its length, followed by the
-     * content.
+     * @note The string is serialized by first storing its length, followed by
+     * the content. String length should not exceed 1MB
      */
     static void serialize(std::ofstream &out, const std::string &data) {
         std::uint32_t length = data.size();
+
+        // Check if the string exceeds the size limit of 1MB.
+        const std::uint32_t max_size = 1024 * 1024;
+        if (length > max_size) {
+            throw std::runtime_error(
+                "String exceeds the maximum size of 1MB.");
+        }
+
         serialize(out, length);           // Serialize the length of the string.
         out.write(data.c_str(), length);  // Serialize the string characters.
         out.put('|');  // Add a delimiter to denote the end of the string.
@@ -77,8 +85,8 @@ class Serializer {
 class Deserializer {
  public:
     /**
-     * @brief Deserializes fundamental data types (like int, float, double, etc.) from
-     * a binary file.
+     * @brief Deserializes fundamental data types (like int, float, double,
+     * etc.) from a binary file.
      * @tparam T The type of the data to be deserialized.
      * @param in The input stream (std::ifstream).
      * @param data The variable where the deserialized data will be stored.
@@ -126,131 +134,97 @@ class Deserializer {
  * @return void
  */
 void tests() {
-    try {
-        std::ofstream outFile("test_output.bin", std::ios::binary);
-        if (!outFile) {
-            throw std::runtime_error("Error opening file for output.");
-        }
-
-        int testInt = 12345;
-        double testDouble = 9876.54321;
-        char testChar = 'A';
-        std::string testString = "Testing String Serialization!";
-
-        // Serialize the data
-        Serializer::serialize(outFile, testInt);
-        Serializer::serialize(outFile, testDouble);
-        Serializer::serialize(outFile, testChar);
-        Serializer::serialize(outFile, testString);
-
-        outFile.close();
-
-        std::ifstream inFile("test_output.bin", std::ios::binary);
-        if (!inFile) {
-            throw std::runtime_error("Error opening file for input.");
-        }
-
-        int intResult;
-        double doubleResult;
-        char charResult;
-        std::string stringResult;
-
-        // Deserialize the data
-        Deserializer::deserialize(inFile, intResult);
-        Deserializer::deserialize(inFile, doubleResult);
-        Deserializer::deserialize(inFile, charResult);
-        Deserializer::deserialize(inFile, stringResult);
-
-        inFile.close();
-
-        // Assert that the original and deserialized values are the same
-        assert(testInt == intResult);
-        assert(testDouble == doubleResult);
-        assert(testChar == charResult);
-        assert(testString == stringResult);
-
-        std::cout << "All tests passed!\n";
-    } catch (const std::exception &e) {
-        std::cerr << "Test failed: " << e.what() << std::endl;
+    // Serialize fundamental types and string
+    std::ofstream outFile("test_output.bin", std::ios::binary);
+    if (!outFile) {
+        throw std::runtime_error("Error opening file for output.");
     }
 
-    // Test for file opening failure
-    try {
-        std::ifstream inFile("non_existent_file.bin", std::ios::binary);
-        if (!inFile) {
-            throw std::runtime_error("Error opening non-existent file.");
-        }
-    } catch (const std::runtime_error &e) {
-        assert(std::string(e.what()) == "Error opening non-existent file.");
-        std::cout << "File opening error test passed!\n";
+    int testInt = 12345;
+    double testDouble = 9876.54321;
+    char testChar = 'A';
+    std::string testString = "Testing String Serialization!";
+
+    // Serialize the data
+    Serializer::serialize(outFile, testInt);
+    Serializer::serialize(outFile, testDouble);
+    Serializer::serialize(outFile, testChar);
+    Serializer::serialize(outFile, testString);
+
+    outFile.close();
+
+    // Deserialize the data and assert
+    std::ifstream inFile("test_output.bin", std::ios::binary);
+    if (!inFile) {
+        throw std::runtime_error("Error opening file for input.");
     }
 
-    // Test for deserialization failure (e.g., wrong file format)
-    try {
-        std::ofstream outFile("wrong_format.bin", std::ios::binary);
-        outFile << "This is not serialized data";  // Writing incorrect data
-        outFile.close();
+    int intResult;
+    double doubleResult;
+    char charResult;
+    std::string stringResult;
 
-        std::ifstream inFile("wrong_format.bin", std::ios::binary);
-        if (!inFile) {
-            throw std::runtime_error("Error opening file for input.");
-        }
+    // Deserialize the data
+    Deserializer::deserialize(inFile, intResult);
+    Deserializer::deserialize(inFile, doubleResult);
+    Deserializer::deserialize(inFile, charResult);
+    Deserializer::deserialize(inFile, stringResult);
 
-        int intResult;
-        // Deserialize expecting binary data, this should fail
-        Deserializer::deserialize(inFile, intResult);
+    inFile.close();
 
-        inFile.close();
-    } catch (const std::exception &e) {
-        std::cout << "Deserialization error test passed: " << e.what()
-                  << std::endl;
-    }
+    // Assert that the original and deserialized values are the same
+    assert(testInt == intResult);
+    assert(testDouble == doubleResult);
+    assert(testChar == charResult);
+    assert(testString == stringResult);
+
+    std::cout << "Basic serialization/deserialization tests passed!\n";
 
     // Test for string too large error
     try {
-        std::ofstream outFile("large_string.bin", std::ios::binary);
-        std::string largeString(1024 * 1024 + 1,
-                                'A');  // String larger than 1MB
-        Serializer::serialize(outFile,
-                              largeString);  // Should succeed in serialization
-        outFile.close();
-
-        std::ifstream inFile("large_string.bin", std::ios::binary);
-        std::string deserializedString;
-        Deserializer::deserialize(
-            inFile, deserializedString);  // Should fail in deserialization
-        inFile.close();
+        std::ofstream largeOutFile("large_string.bin", std::ios::binary);
+        // Create a string larger than 1MB
+        std::string largeString(1024 * 1024 + 1, 'A');
+        Serializer::serialize(largeOutFile, largeString);  // Should throw an error
+        largeOutFile.close();
+        assert(false);  // If we reach here, the test has failed.
     } catch (const std::runtime_error &e) {
         assert(std::string(e.what()) ==
-               "Deserialized string length is too large.");
-        std::cout << "Large string error test passed!\n";
+               "String exceeds the maximum size of 1MB.");
+        std::cout << "Large string serialization error test passed!\n";
     }
-
-    // Test for missing delimiter
+    // Test for missing delimiter in string serialization
     try {
-        std::ofstream outFile("missing_delimiter.bin", std::ios::binary);
-        std::string testString = "Test String";
-        std::uint32_t length = testString.size();
-        outFile.write(reinterpret_cast<const char *>(&length), sizeof(length));
-        outFile.write(testString.c_str(), length);  // No delimiter
-        outFile.close();
+        std::ofstream missingDelimiterOutFile("missing_delimiter.bin",std::ios::binary);
 
-        std::ifstream inFile("missing_delimiter.bin", std::ios::binary);
+        std::string incompleteString = "Incomplete string test";
+        std::uint32_t length = incompleteString.size();
+
+        // Serialize string length and content without the delimiter
+        missingDelimiterOutFile.write(reinterpret_cast<const char *>(&length),sizeof(length));
+        missingDelimiterOutFile.write(incompleteString.c_str(), length);  // No delimiter '|'
+        missingDelimiterOutFile.close();
+
+        std::ifstream missingDelimiterInFile("missing_delimiter.bin",std::ios::binary);
+
         std::string deserializedString;
-        Deserializer::deserialize(inFile, deserializedString);  // Should fail
-        inFile.close();
+        Deserializer::deserialize(missingDelimiterInFile,deserializedString);  // Should throw an error
+        missingDelimiterInFile.close();
+
+        assert(false);
     } catch (const std::runtime_error &e) {
         assert(std::string(e.what()) ==
                "Delimiter '|' not found after string.");
         std::cout << "Missing delimiter error test passed!\n";
     }
-    // Clean up temporary files that were created during testing.
-    std::remove("test_output.bin");
-    std::remove("wrong_format.bin");
+
+    // Clean up temporary files that were created during testing
     std::remove("large_string.bin");
     std::remove("missing_delimiter.bin");
-}
+    std::remove("test_output.bin");
 
+    std::cout << "All tests passed successfully!\n";
+}
 /**
  * @brief Main function
  * @returns 0 on successful exit
