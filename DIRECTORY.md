@@ -304,6 +304,7 @@
   * [Lfu Cache](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/lfu_cache.cpp)
   * [Longest Substring Without Repeating Characters](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/longest_substring_without_repeating_characters.cpp)
   * [Lru Cache](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/lru_cache.cpp)
+  * [Lru Cache2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/lru_cache2.cpp)
   * [Matrix Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/matrix_exponentiation.cpp)
   * [Palindrome Of Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/palindrome_of_number.cpp)
   * [Paranthesis Matching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/paranthesis_matching.cpp)
