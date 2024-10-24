@@ -1,0 +1,17 @@
+<map id="greedy_algorithms::BinaryAddition::addBinary" name="greedy_algorithms::BinaryAddition::addBinary">
+<area shape="rect" id="Node000001" title="Adds two binary strings and returns the result as a binary string." alt="" coords="5,138,177,178"/>
+<area shape="rect" id="Node000002" href="$de/df6/classgreedy__algorithms_1_1_binary_addition.html#a4cfb595ba80795a9efae0e3f6f5c34d2" title="Validates whether a string contains only binary characters (0 or 1)." alt="" coords="225,40,413,95"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,135,232,99,234,104,145,140"/>
+<area shape="rect" id="Node000006" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="283,120,355,146"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="177,146,267,136,267,141,177,151"/>
+<area shape="rect" id="Node000007" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/reverse.html#" title=" " alt="" coords="274,169,364,195"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="177,165,258,173,258,178,177,170"/>
+<area shape="rect" id="Node000008" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="263,219,374,244"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="146,177,225,205,249,212,248,217,224,210,144,182"/>
+<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/all_any_none_of.html#" title=" " alt="" coords="481,5,559,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="412,42,465,29,466,34,414,47"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/begin.html#" title=" " alt="" coords="461,55,579,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="413,65,445,65,445,70,413,70"/>
+<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/end.html#" title=" " alt="" coords="466,104,574,130"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="414,88,451,97,450,102,412,93"/>
+</map>

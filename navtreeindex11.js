@@ -1,5 +1,12 @@
 var NAVTREEINDEX11 =
 {
+"db/d0d/prime__factorization_8cpp.html#a7fe38b570a51e448430d6a0f072c2f23":[11,0,14,46,4],
+"db/d0d/prime__factorization_8cpp.html#acfb0df439a4beae5a34ef131ce737c1b":[11,0,14,46,3],
+"db/d0d/prime__factorization_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,46,0],
+"db/d0d/prime__factorization_8cpp.html#af097796783684712b8326e5b82bfd4fe":[11,0,14,46,5],
+"db/d0d/prime__factorization_8cpp.html#affe577b9bce8f604f5e2f861c63c7099":[11,0,14,46,2],
+"db/d16/0__1__knapsack_8cpp.html":[11,0,6,0],
+"db/d16/0__1__knapsack_8cpp.html#a15edf30f336885e5b851f6b7199c6cd1":[11,0,6,0,1],
 "db/d16/0__1__knapsack_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,6,0,2],
 "db/d16/0__1__knapsack_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,6,0,0],
 "db/d19/structlinear__probing_1_1_entry.html":[9,0,61,0],
@@ -54,10 +61,10 @@ var NAVTREEINDEX11 =
 "db/d71/quadratic__probing__hash__table_8cpp.html#adccc63a7e57cc6dba75bd62f40feb88b":[11,0,12,4,7],
 "db/d71/quadratic__probing__hash__table_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,12,4,6],
 "db/d71/quadratic__probing__hash__table_8cpp.html#aeb6bca8db4768226f8ea8291ea4f83f6":[11,0,12,4,12],
-"db/d80/gale__shapley_8cpp.html":[11,0,11,3],
-"db/d80/gale__shapley_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[11,0,11,3,2],
-"db/d80/gale__shapley_8cpp.html#a6d7e84df47dcf19e88f95f8f9040306c":[11,0,11,3,0],
-"db/d80/gale__shapley_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,11,3,1],
+"db/d80/gale__shapley_8cpp.html":[11,0,11,4],
+"db/d80/gale__shapley_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[11,0,11,4,2],
+"db/d80/gale__shapley_8cpp.html#a6d7e84df47dcf19e88f95f8f9040306c":[11,0,11,4,0],
+"db/d80/gale__shapley_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,11,4,1],
 "db/d82/classlarge__number.html":[10,0,37],
 "db/d82/classlarge__number.html#a0b1efd203274e38a67b78937dfb9b872":[10,0,37,2],
 "db/d82/classlarge__number.html#a10119a83839e65962621b73df46a5337":[10,0,37,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX11 =
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#a21c80569aaffb7bf1657e54fa4b97deb":[11,0,13,5,2],
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#a42535e20e97d85aa61271e0894cc0359":[11,0,13,5,9],
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#a4261f3c3c3dfdb86f3004eb8aaffea8d":[11,0,13,5,5],
-"dc/d38/ordinary__least__squares__regressor_8cpp.html#a4a6a560dbdd0177633783b72db37dc19":[11,0,13,5,11],
-"dc/d38/ordinary__least__squares__regressor_8cpp.html#a7075a0fccad9b2d79be0275bfe8948d4":[11,0,13,5,13],
-"dc/d38/ordinary__least__squares__regressor_8cpp.html#a7a2d742b9a3ae7b85292e1f86428bb4f":[11,0,13,5,12],
-"dc/d38/ordinary__least__squares__regressor_8cpp.html#a865e8d26a01962cc93aca66e71346f37":[11,0,13,5,8],
-"dc/d38/ordinary__least__squares__regressor_8cpp.html#a8fa731952b0ee3bc7ec51c51ed21911e":[11,0,13,5,3],
-"dc/d38/ordinary__least__squares__regressor_8cpp.html#aaddc683af581b51351e1023d2a01ef3b":[11,0,13,5,0],
-"dc/d38/ordinary__least__squares__regressor_8cpp.html#ab1ad727903d7817c2758d25bcb52cbc8":[11,0,13,5,14],
-"dc/d38/ordinary__least__squares__regressor_8cpp.html#ade6e463f37878fe2a219f927c65b5493":[11,0,13,5,15]
+"dc/d38/ordinary__least__squares__regressor_8cpp.html#a4a6a560dbdd0177633783b72db37dc19":[11,0,13,5,11]
 };

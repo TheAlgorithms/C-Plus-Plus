@@ -75,6 +75,7 @@ var annotated_dup =
       [ "dijkstra", "d2/d2f/namespacegreedy__algorithms_1_1dijkstra.html", [
         [ "Graph", "d2/daa/classgreedy__algorithms_1_1dijkstra_1_1_graph.html", "d2/daa/classgreedy__algorithms_1_1dijkstra_1_1_graph" ]
       ] ],
+      [ "BinaryAddition", "de/df6/classgreedy__algorithms_1_1_binary_addition.html", "de/df6/classgreedy__algorithms_1_1_binary_addition" ],
       [ "DigitSeparation", "da/d49/classgreedy__algorithms_1_1_digit_separation.html", "da/d49/classgreedy__algorithms_1_1_digit_separation" ]
     ] ],
     [ "hashing", "d6/d0c/namespacehashing.html", [

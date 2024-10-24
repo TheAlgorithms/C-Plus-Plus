@@ -1,5 +1,6 @@
 var dir_0eaa691bd54ab0922ca7f50599de6d22 =
 [
+    [ "binary_addition.cpp", "d9/d1f/binary__addition_8cpp.html", "d9/d1f/binary__addition_8cpp" ],
     [ "boruvkas_minimum_spanning_tree.cpp", "d4/d6c/boruvkas__minimum__spanning__tree_8cpp.html", "d4/d6c/boruvkas__minimum__spanning__tree_8cpp" ],
     [ "digit_separation.cpp", "d3/d36/digit__separation_8cpp.html", "d3/d36/digit__separation_8cpp" ],
     [ "dijkstra.cpp", "df/dcb/greedy__algorithms_2dijkstra_8cpp.html", "df/dcb/greedy__algorithms_2dijkstra_8cpp" ],

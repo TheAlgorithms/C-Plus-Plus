@@ -3,6 +3,7 @@ var hierarchy =
     [ "machine_learning::adaline", "d6/d30/classmachine__learning_1_1adaline.html", null ],
     [ "machine_learning::aystar_search::AyStarSearch< Puzzle >", "da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html", null ],
     [ "binary_search_tree< T >", "d9/dde/classbinary__search__tree.html", null ],
+    [ "greedy_algorithms::BinaryAddition", "de/df6/classgreedy__algorithms_1_1_binary_addition.html", null ],
     [ "operations_on_datastructures::reverse_binary_tree::BinaryTree", "de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html", null ],
     [ "others::iterative_tree_traversals::BinaryTree", "d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html", null ],
     [ "data_structures::Bitset", "d9/dae/classdata__structures_1_1_bitset.html", null ],

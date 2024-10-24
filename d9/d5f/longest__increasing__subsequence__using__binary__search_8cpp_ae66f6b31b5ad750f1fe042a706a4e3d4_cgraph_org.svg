@@ -6,17 +6,6 @@
 <!-- Title: main Pages: 1 -->
 <svg width="425pt" height="101pt"
  viewBox="0.00 0.00 425.25 101.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
-
-<style type="text/css"><![CDATA[
-.node, .edge {opacity: 0.7;}
-.node.selected, .edge.selected {opacity: 1;}
-.edge:hover path { stroke: red; }
-.edge:hover polygon { stroke: red; fill: red; }
-]]></style>
-<script type="application/ecmascript" xlink:href="../../svg.min.js"/>
-<svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 97.25)">
 <title>main</title>
 <!-- Node1 -->
@@ -31,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../df/d99/_longest___increasing___subsequence__using__binary__search_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e" target="_top" xlink:title="Test cases for Longest Increasing Subsequence function.">
+<g id="a_Node000002"><a xlink:href="../../d9/d5f/longest__increasing__subsequence__using__binary__search_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e" target="_top" xlink:title="Test cases for Longest Increasing Subsequence function.">
 <polygon fill="white" stroke="#666666" points="110.75,-56.25 73,-56.25 73,-37 110.75,-37 110.75,-56.25"/>
 <text text-anchor="middle" x="91.88" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">tests</text>
 </a>
@@ -49,7 +38,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../df/d99/_longest___increasing___subsequence__using__binary__search_8cpp.html#a313539d9a97fc6e121ce496873ba892e" target="_top" xlink:title="for std::uint32_t">
+<g id="a_Node000003"><a xlink:href="../../d9/d5f/longest__increasing__subsequence__using__binary__search_8cpp.html#a313539d9a97fc6e121ce496873ba892e" target="_top" xlink:title="for std::uint32_t">
 <polygon fill="white" stroke="#666666" points="285.75,-67.5 146.75,-67.5 146.75,-25.75 285.75,-25.75 285.75,-67.5"/>
 <text text-anchor="start" x="154.75" y="-54" font-family="Helvetica,sans-Serif" font-size="10.00">longest_increasing</text>
 <text text-anchor="start" x="154.75" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">_subsequence_using_binary</text>
@@ -121,19 +110,4 @@
 </g>
 </g>
 </g>
-</svg>
-</svg>
-
-<style type='text/css'>
-<![CDATA[
-[data-mouse-over-selected='false'] { opacity: 0.7; }
-[data-mouse-over-selected='true']  { opacity: 1.0; }
-]]>
-</style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>

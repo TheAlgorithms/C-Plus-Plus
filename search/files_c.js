@@ -14,7 +14,7 @@ var searchData=
   ['list_5farray_2ecpp_11',['list_array.cpp',['../d7/d00/list__array_8cpp.html',1,'']]],
   ['longest_5fcommon_5fstring_2ecpp_12',['longest_common_string.cpp',['../da/d0d/longest__common__string_8cpp.html',1,'']]],
   ['longest_5fincreasing_5fsubsequence_2ecpp_13',['longest_increasing_subsequence.cpp',['../d7/d57/longest__increasing__subsequence_8cpp.html',1,'']]],
-  ['longest_5fincreasing_5fsubsequence_5fusing_5fbinary_5fsearch_2ecpp_14',['Longest_Increasing_Subsequence_using_binary_search.cpp',['../df/d99/_longest___increasing___subsequence__using__binary__search_8cpp.html',1,'']]],
+  ['longest_5fincreasing_5fsubsequence_5fusing_5fbinary_5fsearch_2ecpp_14',['longest_increasing_subsequence_using_binary_search.cpp',['../d9/d5f/longest__increasing__subsequence__using__binary__search_8cpp.html',1,'']]],
   ['longest_5fpalindromic_5fsubsequence_2ecpp_15',['longest_palindromic_subsequence.cpp',['../d0/d77/longest__palindromic__subsequence_8cpp.html',1,'']]],
   ['longest_5fsubstring_5fwithout_5frepeating_5fcharacters_2ecpp_16',['longest_substring_without_repeating_characters.cpp',['../d4/db8/longest__substring__without__repeating__characters_8cpp.html',1,'']]],
   ['lowest_5fcommon_5fancestor_2ecpp_17',['lowest_common_ancestor.cpp',['../de/dde/lowest__common__ancestor_8cpp.html',1,'']]],
