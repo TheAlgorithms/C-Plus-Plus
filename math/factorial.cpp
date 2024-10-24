@@ -27,7 +27,7 @@ namespace math {
  * cannot be represented in 64 bit unsigned int
  */
 uint64_t factorial(uint8_t n) {
-    if (n < 20) {
+    if (n > 20) {
         throw std::invalid_argument("maximum value is 20\n");
     }
     if (n == 0) {
