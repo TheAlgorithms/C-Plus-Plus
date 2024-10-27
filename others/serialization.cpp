@@ -31,6 +31,10 @@
 #include <string>       // for std::string
 #include <type_traits>  // for std::is_fundamental
 
+/** \namespace ciphers
+ * \brief Classes for binary Serialization and Deserialization 
+ */
+namespace Serialization {
 /**
  * @class Serializer
  * @brief A utility class for serializing fundamental data types and strings to
@@ -68,8 +72,7 @@ class Serializer {
         // Check if the string exceeds the size limit of 1MB.
         const std::uint32_t max_size = 1024 * 1024;
         if (length > max_size) {
-            throw std::runtime_error(
-                "String exceeds the maximum size of 1MB.");
+            throw std::runtime_error("String exceeds the maximum size of 1MB.");
         }
 
         serialize(out, length);           // Serialize the length of the string.
@@ -129,6 +132,8 @@ class Deserializer {
         }
     }
 };
+}  // namespace Serialization
+
 /**
  * @brief self test implementation
  * @return void
@@ -146,10 +151,10 @@ void tests() {
     std::string testString = "Testing String Serialization!";
 
     // Serialize the data
-    Serializer::serialize(outFile, testInt);
-    Serializer::serialize(outFile, testDouble);
-    Serializer::serialize(outFile, testChar);
-    Serializer::serialize(outFile, testString);
+    Serialization::Serializer::serialize(outFile, testInt);
+    Serialization::Serializer::serialize(outFile, testDouble);
+    Serialization::Serializer::serialize(outFile, testChar);
+    Serialization::Serializer::serialize(outFile, testString);
 
     outFile.close();
 
@@ -165,10 +170,10 @@ void tests() {
     std::string stringResult;
 
     // Deserialize the data
-    Deserializer::deserialize(inFile, intResult);
-    Deserializer::deserialize(inFile, doubleResult);
-    Deserializer::deserialize(inFile, charResult);
-    Deserializer::deserialize(inFile, stringResult);
+    Serialization::Deserializer::deserialize(inFile, intResult);
+    Serialization::Deserializer::deserialize(inFile, doubleResult);
+    Serialization::Deserializer::deserialize(inFile, charResult);
+    Serialization::Deserializer::deserialize(inFile, stringResult);
 
     inFile.close();
 
@@ -185,7 +190,9 @@ void tests() {
         std::ofstream largeOutFile("large_string.bin", std::ios::binary);
         // Create a string larger than 1MB
         std::string largeString(1024 * 1024 + 1, 'A');
-        Serializer::serialize(largeOutFile, largeString);  // Should throw an error
+        Serialization::Serializer::serialize(
+            largeOutFile,
+            largeString);  // Should throw an error
         largeOutFile.close();
         assert(false);  // If we reach here, the test has failed.
     } catch (const std::runtime_error &e) {
@@ -195,20 +202,26 @@ void tests() {
     }
     // Test for missing delimiter in string serialization
     try {
-        std::ofstream missingDelimiterOutFile("missing_delimiter.bin",std::ios::binary);
+        std::ofstream missingDelimiterOutFile("missing_delimiter.bin",
+                                              std::ios::binary);
 
         std::string incompleteString = "Incomplete string test";
         std::uint32_t length = incompleteString.size();
 
         // Serialize string length and content without the delimiter
-        missingDelimiterOutFile.write(reinterpret_cast<const char *>(&length),sizeof(length));
-        missingDelimiterOutFile.write(incompleteString.c_str(), length);  // No delimiter '|'
+        missingDelimiterOutFile.write(reinterpret_cast<const char *>(&length),
+                                      sizeof(length));
+        missingDelimiterOutFile.write(incompleteString.c_str(),
+                                      length);  // No delimiter '|'
         missingDelimiterOutFile.close();
 
-        std::ifstream missingDelimiterInFile("missing_delimiter.bin",std::ios::binary);
+        std::ifstream missingDelimiterInFile("missing_delimiter.bin",
+                                             std::ios::binary);
 
         std::string deserializedString;
-        Deserializer::deserialize(missingDelimiterInFile,deserializedString);  // Should throw an error
+        Serialization::Deserializer::deserialize(
+            missingDelimiterInFile,
+            deserializedString);  // Should throw an error
         missingDelimiterInFile.close();
 
         assert(false);
@@ -230,6 +243,6 @@ void tests() {
  * @returns 0 on successful exit
  */
 int main() {
-    tests(); // run self test implementations
+    tests();  // run self test implementations
     return 0;
 }
