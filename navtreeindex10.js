@@ -1,5 +1,10 @@
 var NAVTREEINDEX10 =
 {
+"d9/dde/classbinary__search__tree.html#af4a865ce5244608819b169fc78a41153":[10,0,21,13],
+"d9/dde/classbinary__search__tree.html#af9a2c7c187a7ca3142c77ce342ef3153":[10,0,21,6],
+"d9/dde/structdouble__hashing_1_1_entry.html":[9,0,26,0],
+"d9/dde/structdouble__hashing_1_1_entry.html":[10,0,4,0],
+"d9/dde/structdouble__hashing_1_1_entry.html#a287b92112b6b43b34808a93778873475":[9,0,26,0,0],
 "d9/dde/structdouble__hashing_1_1_entry.html#a287b92112b6b43b34808a93778873475":[10,0,4,0,0],
 "d9/dde/structdouble__hashing_1_1_entry.html#ae114967c89dbba3b754dc4976bba3248":[9,0,26,0,1],
 "d9/dde/structdouble__hashing_1_1_entry.html#ae114967c89dbba3b754dc4976bba3248":[10,0,4,0,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX10 =
 "db/d07/spiral__print_8cpp.html#a850d3f55e1a8d227176cdcc67352c197":[11,0,17,22,2],
 "db/d07/spiral__print_8cpp.html#acfff36db81326fb990a643ab198ee8a5":[11,0,17,22,0],
 "db/d07/spiral__print_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,17,22,1],
-"db/d09/duval_8cpp.html":[11,0,23,2],
-"db/d09/duval_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,23,2,2],
-"db/d09/duval_8cpp.html#ac2a35302e6bed93c4b2c6f55a21a5632":[11,0,23,2,0],
-"db/d09/duval_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,23,2,1],
-"db/d0d/prime__factorization_8cpp.html":[11,0,14,46],
-"db/d0d/prime__factorization_8cpp.html#a0ece0145fb29a5cf48378c23dde2da46":[11,0,14,46,1]
+"db/d09/duval_8cpp.html":[11,0,23,2]
 };

@@ -80,7 +80,7 @@ var searchData=
   ['log10_77',['log10',['http://en.cppreference.com/w/cpp/numeric/math/log10.html',0,'std']]],
   ['log1p_78',['log1p',['http://en.cppreference.com/w/cpp/numeric/math/log1p.html',0,'std']]],
   ['logb_79',['logb',['http://en.cppreference.com/w/cpp/numeric/math/logb.html',0,'std']]],
-  ['logic_80',['Logic',['../d3/db3/lru__cache_8cpp.html#autotoc_md95',1,'']]],
+  ['logic_80',['Logic',['../d3/db3/lru__cache_8cpp.html#autotoc_md96',1,'']]],
   ['logic_5ferror_81',['logic_error',['http://en.cppreference.com/w/cpp/error/logic_error.html',0,'std::logic_error'],['http://en.cppreference.com/w/cpp/error/logic_error.html',0,'std::logic_error::logic_error()']]],
   ['logical_5fand_82',['logical_and',['http://en.cppreference.com/w/cpp/utility/functional/logical_and.html',0,'std']]],
   ['logical_5fnot_83',['logical_not',['http://en.cppreference.com/w/cpp/utility/functional/logical_not.html',0,'std']]],
