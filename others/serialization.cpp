@@ -31,10 +31,10 @@
 #include <string>       // for std::string
 #include <type_traits>  // for std::is_fundamental
 
-/** \namespace ciphers
- * \brief Classes for binary Serialization and Deserialization 
+/** @namespace serialization
+ * @brief Classes for binary Serialization and Deserialization 
  */
-namespace Serialization {
+namespace serialization {
 /**
  * @class Serializer
  * @brief A utility class for serializing fundamental data types and strings to
@@ -151,10 +151,10 @@ void tests() {
     std::string testString = "Testing String Serialization!";
 
     // Serialize the data
-    Serialization::Serializer::serialize(outFile, testInt);
-    Serialization::Serializer::serialize(outFile, testDouble);
-    Serialization::Serializer::serialize(outFile, testChar);
-    Serialization::Serializer::serialize(outFile, testString);
+    serialization::Serializer::serialize(outFile, testInt);
+    serialization::Serializer::serialize(outFile, testDouble);
+    serialization::Serializer::serialize(outFile, testChar);
+    serialization::Serializer::serialize(outFile, testString);
 
     outFile.close();
 
@@ -170,10 +170,10 @@ void tests() {
     std::string stringResult;
 
     // Deserialize the data
-    Serialization::Deserializer::deserialize(inFile, intResult);
-    Serialization::Deserializer::deserialize(inFile, doubleResult);
-    Serialization::Deserializer::deserialize(inFile, charResult);
-    Serialization::Deserializer::deserialize(inFile, stringResult);
+    serialization::Deserializer::deserialize(inFile, intResult);
+    serialization::Deserializer::deserialize(inFile, doubleResult);
+    serialization::Deserializer::deserialize(inFile, charResult);
+    serialization::Deserializer::deserialize(inFile, stringResult);
 
     inFile.close();
 
@@ -190,7 +190,7 @@ void tests() {
         std::ofstream largeOutFile("large_string.bin", std::ios::binary);
         // Create a string larger than 1MB
         std::string largeString(1024 * 1024 + 1, 'A');
-        Serialization::Serializer::serialize(
+        serialization::Serializer::serialize(
             largeOutFile,
             largeString);  // Should throw an error
         largeOutFile.close();
@@ -219,7 +219,7 @@ void tests() {
                                              std::ios::binary);
 
         std::string deserializedString;
-        Serialization::Deserializer::deserialize(
+        serialization::Deserializer::deserialize(
             missingDelimiterInFile,
             deserializedString);  // Should throw an error
         missingDelimiterInFile.close();
