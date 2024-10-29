@@ -351,12 +351,13 @@ class RIPEMD160 {
             E_dash = h_4;
 
             // parallely process the 80 rounds
-            std::thread compute_for_block_thread(&compute_for_block, this, &A,
-                                                 &B, &C, &D, &E, &T,
+            std::thread compute_for_block_thread(&RIPEMD160::compute_for_block,
+                                                 this, &A, &B, &C, &D, &E, &T,
                                                  std::ref(current_block_data));
             std::thread compute_for_block_dash_thread(
-                &compute_for_block_dash, this, &A_dash, &B_dash, &C_dash,
-                &D_dash, &E_dash, &T_dash, std::ref(current_block_data));
+                &RIPEMD160::compute_for_block_dash, this, &A_dash, &B_dash,
+                &C_dash, &D_dash, &E_dash, &T_dash,
+                std::ref(current_block_data));
 
             compute_for_block_thread.join();
             compute_for_block_dash_thread.join();
