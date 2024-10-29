@@ -141,17 +141,17 @@ var NAVTREEINDEX =
 "cpp/thread/lock.html",
 "d1/d83/classuint256__t.html#a9ddd133cee83f3a2ab6ed60a7ccbc250",
 "d2/dc8/classdata__structures_1_1_stack.html#aa753346c8ee5f21d4f4482398fe6d5c1",
-"d4/d3e/n__queens_8cpp.html#a0dbd7af47d87f0b956609fe9e3288ecb",
-"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md57",
-"d6/d57/array__right__rotation_8cpp.html#a1bfb8711f49e591eb168ccaa3df6fb86",
-"d7/def/trie__multiple__search_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089",
-"d8/d9c/union__of__two__arrays_8cpp.html#af7b81d7a1534216af6a36a80135beb86",
-"d9/dde/classbinary__search__tree.html#af4a865ce5244608819b169fc78a41153",
-"db/d09/duval_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
-"dc/d38/ordinary__least__squares__regressor_8cpp.html#a207b3a99fd5974d3117e0b0ac0aad234",
-"dd/d47/namespacemath.html#ab3b920cc56442abd92279ba23b50f4dc",
-"de/dc3/fibonacci__sum_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"functions_d.html"
+"d4/d3e/n__queens_8cpp.html",
+"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md56",
+"d6/d57/array__right__rotation_8cpp.html#a167c24bd817469ae47358d12e034f2d5",
+"d7/def/trie__multiple__search_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
+"d8/d9c/union__of__two__arrays_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"d9/dde/classbinary__search__tree.html#ad9912e8574538e86f9bd2c38e7e63d03",
+"db/d09/duval_8cpp.html",
+"dc/d38/ordinary__least__squares__regressor_8cpp.html#a01e6c7bf2b09272578b9c5819ce0f36f",
+"dd/d47/namespacemath.html#ab37f3a7302a84179aae682c79d8390bf",
+"de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa",
+"functions_c.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -22,7 +22,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Get list of prime numbers using Sieve of Eratosthenes.">
+<g id="a_Node000001"><a xlink:title="Prime Numbers using Sieve of Eratosthenes">
 <polygon fill="#999999" stroke="#666666" points="172,-74.5 14.25,-74.5 14.25,-55.25 172,-55.25 172,-74.5"/>
 <text text-anchor="middle" x="93.12" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">math/sieve_of_eratosthenes.cpp</text>
 </a>

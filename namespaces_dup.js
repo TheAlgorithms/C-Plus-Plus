@@ -132,6 +132,7 @@ var namespaces_dup =
     [ "setKthBit", "d8/d88/namespaceset_kth_bit.html", null ],
     [ "SHA", "de/dd3/namespace_s_h_a.html", null ],
     [ "shortest_common_supersequence", "d3/deb/namespaceshortest__common__supersequence.html", null ],
+    [ "sieve_of_eratosthenes", "d2/db0/namespacesieve__of__eratosthenes.html", null ],
     [ "simpson_method", "d3/d6d/namespacesimpson__method.html", null ],
     [ "sorting", "d5/d91/namespacesorting.html", [
       [ "binary_search", "d5/d91/namespacesorting.html#a034d8b276518a902962e87d3158b64fd", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"dd/d47/namespacemath.html#ab37f3a7302a84179aae682c79d8390bf":[9,0,69,1],
 "dd/d47/namespacemath.html#ab3b920cc56442abd92279ba23b50f4dc":[9,0,69,43],
 "dd/d47/namespacemath.html#ab7f29862d30df351c317eedd60a0c656":[9,0,69,37],
 "dd/d47/namespacemath.html#abc46c784a297fc1d2eb8b33a327fba4c":[9,0,69,8],
@@ -17,11 +18,11 @@ var NAVTREEINDEX13 =
 "dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f":[9,0,69,20],
 "dd/d47/namespacemath.html#afcd07701d73ed65cd616bcba02737f3d":[9,0,69,28],
 "dd/d4f/class_solution.html":[10,0,53],
-"dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html":[9,0,122,0,0],
+"dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html":[9,0,123,0,0],
 "dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html":[10,0,20,0,0],
-"dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html#a3d62f615a0171a5d77e7018f704f3a7e":[9,0,122,0,0,1],
+"dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html#a3d62f615a0171a5d77e7018f704f3a7e":[9,0,123,0,0,1],
 "dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html#a3d62f615a0171a5d77e7018f704f3a7e":[10,0,20,0,0,1],
-"dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html#ae5ca7abf15e939eddc80542131de3645":[9,0,122,0,0,0],
+"dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html#ae5ca7abf15e939eddc80542131de3645":[9,0,123,0,0,0],
 "dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html#ae5ca7abf15e939eddc80542131de3645":[10,0,20,0,0,0],
 "dd/d65/lu__decompose_8cpp.html":[11,0,15,11],
 "dd/d65/lu__decompose_8cpp.html#a0283886819c7c140a023582b7269e2d0":[11,0,15,11,3],
@@ -215,8 +216,8 @@ var NAVTREEINDEX13 =
 "de/d88/travelling__salesman__problem_8cpp.html#ab7706341d006e20d1ae58274187a3346":[11,0,9,11,2],
 "de/d88/travelling__salesman__problem_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,9,11,0],
 "de/d89/graham__scan__functions_8hpp_source.html":[11,0,8,0],
-"de/d95/namespace_subsets.html":[9,0,126],
-"de/d97/namespacestd_1_1experimental.html":[9,0,117,1],
+"de/d95/namespace_subsets.html":[9,0,127],
+"de/d97/namespacestd_1_1experimental.html":[9,0,118,1],
 "de/d99/aliquot__sum_8cpp.html":[11,0,14,0],
 "de/d99/aliquot__sum_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,14,0,2],
 "de/d99/aliquot__sum_8cpp.html#ab37f3a7302a84179aae682c79d8390bf":[11,0,14,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "de/dc3/fibonacci__sum_8cpp.html#a493fbaa7a94e3b7ca573111237bb3742":[11,0,14,19,0],
 "de/dc3/fibonacci__sum_8cpp.html#a7cf5feaf168b88e74544da59ed830311":[11,0,14,19,3],
 "de/dc3/fibonacci__sum_8cpp.html#a9c83cca09a3e4ff2a25c816a9303448e":[11,0,14,19,2],
-"de/dc3/fibonacci__sum_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,14,19,5],
-"de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa":[11,0,14,19,4]
+"de/dc3/fibonacci__sum_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,14,19,5]
 };

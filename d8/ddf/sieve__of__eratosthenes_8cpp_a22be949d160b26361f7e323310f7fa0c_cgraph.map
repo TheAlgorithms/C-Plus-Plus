@@ -1,0 +1,9 @@
+<map id="math::sieve_of_eratosthenes::sieve" name="math::sieve_of_eratosthenes::sieve">
+<area shape="rect" id="Node000001" title="Function to sieve out the primes." alt="" coords="5,23,195,64"/>
+<area shape="rect" id="Node000002" href="$dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444" title="Function to check if the given number is prime or not." alt="" coords="243,5,350,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,29,227,24,228,30,196,34"/>
+<area shape="rect" id="Node000003" href="$dd/d47/namespacemath.html#a91366864111e1fac29722ca45e02ea8f" title="Performs the sieve." alt="" coords="252,55,341,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,53,236,58,236,63,195,58"/>
+<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="398,55,513,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="341,65,382,65,382,70,341,70"/>
+</map>

@@ -232,6 +232,7 @@ var NAVTREEINDEX3 =
 "d2/daa/classgreedy__algorithms_1_1dijkstra_1_1_graph.html#a224b6efacbad55d59e11b046f792fe79":[10,0,7,0,0,1],
 "d2/daa/classgreedy__algorithms_1_1dijkstra_1_1_graph.html#afefaeb247734a7c64bd04e68e3c1c4bc":[9,0,42,0,0,0],
 "d2/daa/classgreedy__algorithms_1_1dijkstra_1_1_graph.html#afefaeb247734a7c64bd04e68e3c1c4bc":[10,0,7,0,0,0],
+"d2/db0/namespacesieve__of__eratosthenes.html":[9,0,111],
 "d2/dc4/classstack__linked_list.html":[10,0,55],
 "d2/dc8/classdata__structures_1_1_stack.html":[9,0,21,6],
 "d2/dc8/classdata__structures_1_1_stack.html":[10,0,2,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "d2/dc8/classdata__structures_1_1_stack.html#a88a10062c0662a385f172669f2f19b86":[9,0,21,6,10],
 "d2/dc8/classdata__structures_1_1_stack.html#a88a10062c0662a385f172669f2f19b86":[10,0,2,13,10],
 "d2/dc8/classdata__structures_1_1_stack.html#a8cb0602c8a9c1603d0315938177ecc6a":[9,0,21,6,0],
-"d2/dc8/classdata__structures_1_1_stack.html#a8cb0602c8a9c1603d0315938177ecc6a":[10,0,2,13,0],
-"d2/dc8/classdata__structures_1_1_stack.html#aa753346c8ee5f21d4f4482398fe6d5c1":[9,0,21,6,3]
+"d2/dc8/classdata__structures_1_1_stack.html#a8cb0602c8a9c1603d0315938177ecc6a":[10,0,2,13,0]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"db/d09/duval_8cpp.html":[11,0,23,2],
 "db/d09/duval_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,23,2,2],
 "db/d09/duval_8cpp.html#ac2a35302e6bed93c4b2c6f55a21a5632":[11,0,23,2,0],
 "db/d09/duval_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,23,2,1],
@@ -180,7 +181,7 @@ var NAVTREEINDEX11 =
 "db/d9f/iterative__factorial_8cpp.html#a2565c745aac2f9561cc6fd9e56d9b77a":[11,0,14,27,0],
 "db/d9f/iterative__factorial_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,14,27,2],
 "db/d9f/iterative__factorial_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,27,1],
-"db/da4/namespacestd_1_1regex__constants.html":[9,0,117,2],
+"db/da4/namespacestd_1_1regex__constants.html":[9,0,118,2],
 "db/da9/classqueue.html":[10,0,50],
 "db/da9/classqueue.html#a353e4dd5772575905c78b0b30856e368":[10,0,50,2],
 "db/da9/classqueue.html#a386fc1df8610948d3117b12f24655c7d":[10,0,50,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "dc/d1f/classcatalan__numbers.html":[10,0,23],
 "dc/d1f/classcatalan__numbers.html#a54655c66cf89186d3d1fa90829b28ab8":[10,0,23,0],
 "dc/d2f/namespacecount__of__trailing__ciphers__in__factorial__n.html":[9,0,17],
-"dc/d38/ordinary__least__squares__regressor_8cpp.html":[11,0,13,5],
-"dc/d38/ordinary__least__squares__regressor_8cpp.html#a01e6c7bf2b09272578b9c5819ce0f36f":[11,0,13,5,10]
+"dc/d38/ordinary__least__squares__regressor_8cpp.html":[11,0,13,5]
 };

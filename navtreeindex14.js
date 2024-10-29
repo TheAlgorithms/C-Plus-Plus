@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa":[11,0,14,19,4],
 "de/dc3/fibonacci__sum_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,19,1],
 "de/dc5/intersection__of__two__arrays_8cpp.html":[11,0,16,4],
 "de/dc5/intersection__of__two__arrays_8cpp.html#a167c24bd817469ae47358d12e034f2d5":[11,0,16,4,4],
@@ -64,7 +65,7 @@ var NAVTREEINDEX14 =
 "df/d11/midpoint__integral__method_8cpp.html#ad53616fb4fa6880ae876bcba53365c51":[11,0,15,13,3],
 "df/d11/midpoint__integral__method_8cpp.html#ae682ee71af44b1e9e884849cc6a6b040":[11,0,15,13,1],
 "df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a":[11,0,15,13,2],
-"df/d1c/namespacestack__using__queue.html":[9,0,115],
+"df/d1c/namespacestack__using__queue.html":[9,0,116],
 "df/d28/dsu__union__rank_8cpp.html":[11,0,4,8],
 "df/d28/dsu__union__rank_8cpp.html#a45d94ead4cf4e1ff9f87c38bc99f59ae":[11,0,4,8,3],
 "df/d28/dsu__union__rank_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,4,8,1],
@@ -125,13 +126,13 @@ var NAVTREEINDEX14 =
 "df/d72/modular__division_8cpp.html#a66cdf93153cbd1408bd74ac68961d179":[11,0,14,35,2],
 "df/d72/modular__division_8cpp.html#a905e368ae121beb7e7ea35349ddcdac7":[11,0,14,35,1],
 "df/d72/modular__division_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,14,35,3],
-"df/d74/namespacesubarray__sum.html":[9,0,123],
+"df/d74/namespacesubarray__sum.html":[9,0,124],
 "df/d76/namespacefibonacci.html":[9,0,31],
 "df/d82/breadth__first__search_8cpp.html":[11,0,9,1],
 "df/d82/breadth__first__search_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[11,0,9,1,2],
 "df/d82/breadth__first__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,9,1,1],
 "df/d88/namespacedp.html":[9,0,27],
-"df/d8e/namespacetrie__operations.html":[9,0,131],
+"df/d8e/namespacetrie__operations.html":[9,0,132],
 "df/d8f/classothers_1_1_cache_1_1_l_f_u_cache.html":[9,0,88,0,1],
 "df/d8f/classothers_1_1_cache_1_1_l_f_u_cache.html":[10,0,13,0,1],
 "df/d8f/classothers_1_1_cache_1_1_l_f_u_cache.html#a16a25c102554c5653721a5112ef676c9":[9,0,88,0,1,5],
@@ -166,7 +167,7 @@ var NAVTREEINDEX14 =
 "df/d94/subarray__sum_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,0,8,2],
 "df/d94/subarray__sum_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,0,8,0],
 "df/d94/subarray__sum_8cpp.html#af5687bbd9faf927fbd363c71e0baba5e":[11,0,0,8,1],
-"df/d99/structstd_1_1is__unsigned_3_01uint256__t_01_4.html":[9,0,117,10],
+"df/d99/structstd_1_1is__unsigned_3_01uint256__t_01_4.html":[9,0,118,10],
 "df/d99/structstd_1_1is__unsigned_3_01uint256__t_01_4.html":[10,0,19,5],
 "df/dc8/successive__approximation_8cpp.html":[11,0,15,22],
 "df/dc8/successive__approximation_8cpp.html#a79c1d08919ff7780a5d7723172602389":[11,0,15,22,0],
@@ -178,7 +179,7 @@ var NAVTREEINDEX14 =
 "df/dcb/greedy__algorithms_2dijkstra_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,11,3,2],
 "df/dcb/greedy__algorithms_2dijkstra_8cpp.html#af6cb29ca6dc5771439f6ea7262058a71":[11,0,11,3,3],
 "df/dcb/greedy__algorithms_2dijkstra_8cpp.html#af915876d0ca33cc71a6a6191a8cd3ccd":[11,0,11,3,1],
-"df/dcb/namespacestrings.html":[9,0,122],
+"df/dcb/namespacestrings.html":[9,0,123],
 "df/dcd/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plus-_plus_2math_2quadratic_equations_complex_numbers_8cpp-example.html":[12,2],
 "df/dce/namespacegraph.html":[9,0,39],
 "df/dce/namespacegraph.html#a0e30e0dca68cb6e4f671440819b35b6a":[9,0,39,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "functions.html":[10,3,0],
 "functions.html":[10,3,0,0],
 "functions_a.html":[10,3,0,1],
-"functions_b.html":[10,3,0,2],
-"functions_c.html":[10,3,0,3]
+"functions_b.html":[10,3,0,2]
 };

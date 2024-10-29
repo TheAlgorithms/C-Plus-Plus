@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"dc/d38/ordinary__least__squares__regressor_8cpp.html#a01e6c7bf2b09272578b9c5819ce0f36f":[11,0,13,5,10],
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#a207b3a99fd5974d3117e0b0ac0aad234":[11,0,13,5,6],
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#a21c80569aaffb7bf1657e54fa4b97deb":[11,0,13,5,2],
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#a42535e20e97d85aa61271e0894cc0359":[11,0,13,5,9],
@@ -15,7 +16,7 @@ var NAVTREEINDEX12 =
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#ae2edd40354a1ca7aeaee3d1e3589e713":[11,0,13,5,7],
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,13,5,4],
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#af7243bdc6ae3c7169f01b85bb226e66a":[11,0,13,5,1],
-"dc/d3a/namespacesubset__sum.html":[9,0,125],
+"dc/d3a/namespacesubset__sum.html":[9,0,126],
 "dc/d5a/rat__maze_8cpp.html":[11,0,0,7],
 "dc/d5a/rat__maze_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,0,7,2],
 "dc/d5a/rat__maze_8cpp.html#ab99107bfb4c6934cd4691868c66c0aa3":[11,0,0,7,1],
@@ -41,7 +42,7 @@ var NAVTREEINDEX12 =
 "dc/d6d/power__of__2_8cpp.html#a5032470c9974bbd6ec254bf296530a5f":[11,0,1,6,0],
 "dc/d6d/power__of__2_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,1,6,2],
 "dc/d6d/power__of__2_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,1,6,1],
-"dc/d6d/structstd_1_1is__arithmetic_3_01uint256__t_01_4.html":[9,0,117,6],
+"dc/d6d/structstd_1_1is__arithmetic_3_01uint256__t_01_4.html":[9,0,118,6],
 "dc/d6d/structstd_1_1is__arithmetic_3_01uint256__t_01_4.html":[10,0,19,1],
 "dc/d82/area_8cpp.html":[11,0,14,2],
 "dc/d82/area_8cpp.html#a3277e65a8f380e7632791975bfba0efb":[11,0,14,2,3],
@@ -170,7 +171,7 @@ var NAVTREEINDEX12 =
 "dd/d1f/classdsu.html#ab8ee27083a3c2e2df80755165a2ec280":[10,0,30,7],
 "dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55":[10,0,30,17],
 "dd/d1f/classdsu.html#ac713a5b496d0405c82e2808a85e58415":[10,0,30,6],
-"dd/d21/namespacewindowed__median.html":[9,0,140],
+"dd/d21/namespacewindowed__median.html":[9,0,141],
 "dd/d24/namespacedynamic__programming.html":[9,0,28],
 "dd/d24/namespacedynamic__programming.html#a066e0e739e7c276eee6e61d5b4d37ce8":[9,0,28,4],
 "dd/d24/namespacedynamic__programming.html#a0a2215194e58786c34db1ccaf8031079":[9,0,28,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "dd/d47/namespacemath.html#a971ce57e368f2f631cf1f4ff3f864049":[9,0,69,39],
 "dd/d47/namespacemath.html#aa8592c3279c41a2c6d4d64eeb488f63f":[9,0,69,24],
 "dd/d47/namespacemath.html#aacb1411ef2029e81f249c21e17c96fdb":[9,0,69,32],
-"dd/d47/namespacemath.html#ab31d141f7c5b551746b1eee0eb4dedca":[9,0,69,33],
-"dd/d47/namespacemath.html#ab37f3a7302a84179aae682c79d8390bf":[9,0,69,1]
+"dd/d47/namespacemath.html#ab31d141f7c5b551746b1eee0eb4dedca":[9,0,69,33]
 };
