@@ -1,6 +1,7 @@
 /**
  * @file
- * @brief Exponentiating by squaring is a general method for fast computation of large positive integer powers of a number.
+ * @brief Exponentiating by squaring is a general method for fast computation of
+ *large positive integer powers of a number.
  * (https://en.wikipedia.org/wiki/Exponentiation_by_squaring)
  *@details
  * Program that computes \f$a^b\f$ in \f$O(logN)\f$ time.
@@ -9,10 +10,8 @@
  *  \f$a^b = a^\frac{b}{2} \cdot a^\frac{b}{2} = {a^\frac{b}{2}}^2\f$
  * 2. if \f$b\f$ is odd: \f$a^b = a^\frac{b-1}{2}
  *  \cdot a^\frac{b-1}{2} \cdot a = {a^\frac{b-1}{2}}^2 \cdot a\f$
- *
  * We can compute \f$a^b\f$ recursively using above algorithm.
- * @author
- * @see
+ * @author [ibahadiraltun](https://github.com/ibahadiraltun)
  */
 
 #include <cassert>  /// for assert
@@ -27,7 +26,6 @@
  * @namespace math
  * @brief algorithm implementation for \f$a^b\f$
  */
-
 namespace math {
 
 /**
