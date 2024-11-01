@@ -1,5 +1,16 @@
 var NAVTREEINDEX10 =
 {
+"d9/dde/classbinary__search__tree.html#a5c011e1b0863d79c3a7c11a0426bdcff":[10,0,21,9],
+"d9/dde/classbinary__search__tree.html#a6bf5b410299df2320ddf2709dda61f63":[10,0,21,3],
+"d9/dde/classbinary__search__tree.html#a75f897af6aa732a9901454401c869bcb":[10,0,21,4],
+"d9/dde/classbinary__search__tree.html#a8168edf29316f2b436eac1fc416c52e0":[10,0,21,12],
+"d9/dde/classbinary__search__tree.html#a87c0a35845d27e0f6fc1f4eaa0333362":[10,0,21,17],
+"d9/dde/classbinary__search__tree.html#a99771c2e1353e8ddfd4bb9d30b7a98fb":[10,0,21,14],
+"d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778":[10,0,21,11],
+"d9/dde/classbinary__search__tree.html#aa08f65f6f3bfcb14f8c3d1e65305ae50":[10,0,21,19],
+"d9/dde/classbinary__search__tree.html#aa4f84b2eec9b9201af1840868ddb5fb2":[10,0,21,2],
+"d9/dde/classbinary__search__tree.html#aa67321ed575ca313cd71d833d91234a6":[10,0,21,1],
+"d9/dde/classbinary__search__tree.html#ab81edd415324d372632c42dc7dbcb9e1":[10,0,21,18],
 "d9/dde/classbinary__search__tree.html#ad9912e8574538e86f9bd2c38e7e63d03":[10,0,21,7],
 "d9/dde/classbinary__search__tree.html#af4a865ce5244608819b169fc78a41153":[10,0,21,13],
 "d9/dde/classbinary__search__tree.html#af9a2c7c187a7ca3142c77ce342ef3153":[10,0,21,6],
@@ -238,16 +249,5 @@ var NAVTREEINDEX10 =
 "da/df2/durand__kerner__roots_8cpp.html#af270a96662132d0385cb6b4637c5a689":[11,0,15,4,0],
 "db/d01/brent__method__extrema_8cpp.html":[11,0,15,2],
 "db/d01/brent__method__extrema_8cpp.html#a002b2f4894492820fe708b1b7e7c5e70":[11,0,15,2,1],
-"db/d01/brent__method__extrema_8cpp.html#a0283886819c7c140a023582b7269e2d0":[11,0,15,2,5],
-"db/d01/brent__method__extrema_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0":[11,0,15,2,4],
-"db/d01/brent__method__extrema_8cpp.html#a1aa76a6d5fd4d333f9072beff1dc486b":[11,0,15,2,2],
-"db/d01/brent__method__extrema_8cpp.html#a525335710b53cb064ca56b936120431e":[11,0,15,2,0],
-"db/d01/brent__method__extrema_8cpp.html#a6d0455dd5c30adda100e95f0423c786e":[11,0,15,2,6],
-"db/d01/brent__method__extrema_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,15,2,3],
-"db/d03/_s_t-example.html":[12,0],
-"db/d03/namespacewildcard__matching.html":[9,0,140],
-"db/d07/spiral__print_8cpp.html":[11,0,17,22],
-"db/d07/spiral__print_8cpp.html#a850d3f55e1a8d227176cdcc67352c197":[11,0,17,22,2],
-"db/d07/spiral__print_8cpp.html#acfff36db81326fb990a643ab198ee8a5":[11,0,17,22,0],
-"db/d07/spiral__print_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,17,22,1]
+"db/d01/brent__method__extrema_8cpp.html#a0283886819c7c140a023582b7269e2d0":[11,0,15,2,5]
 };

@@ -1,5 +1,16 @@
 var NAVTREEINDEX11 =
 {
+"db/d01/brent__method__extrema_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0":[11,0,15,2,4],
+"db/d01/brent__method__extrema_8cpp.html#a1aa76a6d5fd4d333f9072beff1dc486b":[11,0,15,2,2],
+"db/d01/brent__method__extrema_8cpp.html#a525335710b53cb064ca56b936120431e":[11,0,15,2,0],
+"db/d01/brent__method__extrema_8cpp.html#a6d0455dd5c30adda100e95f0423c786e":[11,0,15,2,6],
+"db/d01/brent__method__extrema_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,15,2,3],
+"db/d03/_s_t-example.html":[12,0],
+"db/d03/namespacewildcard__matching.html":[9,0,141],
+"db/d07/spiral__print_8cpp.html":[11,0,17,22],
+"db/d07/spiral__print_8cpp.html#a850d3f55e1a8d227176cdcc67352c197":[11,0,17,22,2],
+"db/d07/spiral__print_8cpp.html#acfff36db81326fb990a643ab198ee8a5":[11,0,17,22,0],
+"db/d07/spiral__print_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,17,22,1],
 "db/d09/duval_8cpp.html":[11,0,23,2],
 "db/d09/duval_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,23,2,2],
 "db/d09/duval_8cpp.html#ac2a35302e6bed93c4b2c6f55a21a5632":[11,0,23,2,0],
@@ -238,16 +249,5 @@ var NAVTREEINDEX11 =
 "dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#aedbe01e48a96fefa0b393ec577b0f19e":[10,0,3,0,0,5],
 "dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#af09566a6a59d30875434c140e18e0a12":[10,0,3,0,0,6],
 "dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#af12ceffdc07cc87eca8a4a8ac87d60fe":[10,0,3,0,0,16],
-"dc/d14/wildcard__matching_8cpp.html":[11,0,0,11],
-"dc/d14/wildcard__matching_8cpp.html#a4a5b107f93db24e424b12899fa692c5a":[11,0,0,11,2],
-"dc/d14/wildcard__matching_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,0,11,1],
-"dc/d14/wildcard__matching_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,0,11,0],
-"dc/d1a/pascal__triangle_8cpp.html":[11,0,17,16],
-"dc/d1a/pascal__triangle_8cpp.html#a4fc0e5a112f715c3a73989450b2cc5fd":[11,0,17,16,1],
-"dc/d1a/pascal__triangle_8cpp.html#ad7a31d9cb2818d21b1ba12aead7f4c5c":[11,0,17,16,2],
-"dc/d1a/pascal__triangle_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,17,16,0],
-"dc/d1f/classcatalan__numbers.html":[10,0,23],
-"dc/d1f/classcatalan__numbers.html#a54655c66cf89186d3d1fa90829b28ab8":[10,0,23,0],
-"dc/d2f/namespacecount__of__trailing__ciphers__in__factorial__n.html":[9,0,17],
-"dc/d38/ordinary__least__squares__regressor_8cpp.html":[11,0,13,5]
+"dc/d14/wildcard__matching_8cpp.html":[11,0,0,11]
 };

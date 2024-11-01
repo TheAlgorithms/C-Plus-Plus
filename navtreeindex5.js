@@ -77,7 +77,7 @@ var NAVTREEINDEX5 =
 "d4/d90/classdata__structures_1_1_skip_list.html#ad7e392386d7db622185d6f7c718e4f16":[10,0,2,12,6],
 "d4/d90/classdata__structures_1_1_skip_list.html#af2f3d4e15b1f47afac849c2e08a730f4":[9,0,21,5,5],
 "d4/d90/classdata__structures_1_1_skip_list.html#af2f3d4e15b1f47afac849c2e08a730f4":[10,0,2,12,5],
-"d4/d91/namespacevector__cross.html":[9,0,136],
+"d4/d91/namespacevector__cross.html":[9,0,137],
 "d4/d96/range__queries_2sparse__table_8cpp.html":[11,0,20,5],
 "d4/d96/range__queries_2sparse__table_8cpp.html#a40810d8c0fe3f8cf432ab128b1ae0300":[11,0,20,5,1],
 "d4/d96/range__queries_2sparse__table_8cpp.html#a803a2451e87021d14ae06f148383e6bc":[11,0,20,5,0],

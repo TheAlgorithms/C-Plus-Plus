@@ -41,6 +41,7 @@ var hierarchy =
       [ "graph::RootedTree", "d0/d58/classgraph_1_1_rooted_tree.html", null ]
     ] ],
     [ "graph::is_graph_bipartite::Graph", "de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html", null ],
+    [ "graph::topological_sort::Graph", "d5/dec/classgraph_1_1topological__sort_1_1_graph.html", null ],
     [ "greedy_algorithms::dijkstra::Graph", "d2/daa/classgreedy__algorithms_1_1dijkstra_1_1_graph.html", null ],
     [ "hashing::sha256::Hash", "d6/d84/classhashing_1_1sha256_1_1_hash.html", null ],
     [ "hash_chain", "dd/d1c/classhash__chain.html", null ],
