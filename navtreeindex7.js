@@ -248,6 +248,6 @@ var NAVTREEINDEX7 =
 "d7/db9/hill__cipher_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,2,4,1],
 "d7/dba/cll_8h_source.html":[11,0,4,0,0],
 "d7/dbf/namespacestd_1_1this__thread.html":[9,0,118,4],
-"d7/dcb/_unbounded__0__1___knapsack_8cpp.html":[11,0,6,17],
-"d7/dcb/_unbounded__0__1___knapsack_8cpp.html#a1bcff7f76de48fa7f629480f8f18b5ef":[11,0,6,17,3]
+"d7/ded/queue_8hpp_source.html":[11,0,4,13],
+"d7/def/trie__multiple__search_8cpp.html":[11,0,16,6]
 };

@@ -17,7 +17,7 @@ var searchData=
   ['kilo_14',['kilo',['http://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',0,'std']]],
   ['kmp_15',['kmp',['../d9/d03/namespacestring__search.html#a1e37af2f023495129cb57338c801209e',1,'string_search']]],
   ['knapsack_16',['Knapsack',['../d7/daf/namespace_knapsack.html',1,'']]],
-  ['knapsackfilling_17',['KnapSackFilling',['../d7/dcb/_unbounded__0__1___knapsack_8cpp.html#afe447a5979582174908695952c8a079c',1,'dynamic_programming::unbounded_knapsack']]],
+  ['knapsackfilling_17',['KnapSackFilling',['../d9/dec/unbounded__0__1__knapsack_8cpp.html#afe447a5979582174908695952c8a079c',1,'dynamic_programming::unbounded_knapsack']]],
   ['knight_5ftour_18',['knight_tour',['../d1/db6/namespaceknight__tour.html',1,'']]],
   ['knight_5ftour_2ecpp_19',['knight_tour.cpp',['../d1/d2a/knight__tour_8cpp.html',1,'']]],
   ['knn_20',['Knn',['../da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn.html',1,'machine_learning::k_nearest_neighbors::Knn'],['../da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn.html#a188d29ffcefdb5900a8cd41eccd89200',1,'machine_learning::k_nearest_neighbors::Knn::Knn(std::vector&lt; std::vector&lt; double &gt; &gt; &amp;X, std::vector&lt; int &gt; &amp;Y)'],['../da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn.html#a9f5885c40112481ae5b588fe81d7910b',1,'machine_learning::k_nearest_neighbors::Knn::Knn(const Knn &amp;model)=default'],['../da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn.html#a4b17dcf17c847f0295b60029512c120e',1,'machine_learning::k_nearest_neighbors::Knn::Knn(Knn &amp;&amp;)=default']]],

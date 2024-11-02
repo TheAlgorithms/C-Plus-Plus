@@ -42,7 +42,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../d7/dcb/_unbounded__0__1___knapsack_8cpp.html#afe447a5979582174908695952c8a079c" target="_top" xlink:title="Recursive function to calculate the maximum value obtainable using an unbounded knapsack approach.">
+<g id="a_Node000002"><a xlink:href="../../d9/dec/unbounded__0__1__knapsack_8cpp.html#afe447a5979582174908695952c8a079c" target="_top" xlink:title="Recursive function to calculate the maximum value obtainable using an unbounded knapsack approach.">
 <polygon fill="white" stroke="#666666" points="269,-41.75 152.5,-41.75 152.5,0 269,0 269,-41.75"/>
 <text text-anchor="start" x="160.5" y="-28.25" font-family="Helvetica,sans-Serif" font-size="10.00">dynamic_programming</text>
 <text text-anchor="start" x="160.5" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">::unbounded_knapsack</text>

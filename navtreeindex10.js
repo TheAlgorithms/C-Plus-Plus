@@ -1,10 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"d9/dde/classbinary__search__tree.html#a5c011e1b0863d79c3a7c11a0426bdcff":[10,0,21,9],
-"d9/dde/classbinary__search__tree.html#a6bf5b410299df2320ddf2709dda61f63":[10,0,21,3],
-"d9/dde/classbinary__search__tree.html#a75f897af6aa732a9901454401c869bcb":[10,0,21,4],
-"d9/dde/classbinary__search__tree.html#a8168edf29316f2b436eac1fc416c52e0":[10,0,21,12],
-"d9/dde/classbinary__search__tree.html#a87c0a35845d27e0f6fc1f4eaa0333362":[10,0,21,17],
 "d9/dde/classbinary__search__tree.html#a99771c2e1353e8ddfd4bb9d30b7a98fb":[10,0,21,14],
 "d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778":[10,0,21,11],
 "d9/dde/classbinary__search__tree.html#aa08f65f6f3bfcb14f8c3d1e65305ae50":[10,0,21,19],
@@ -20,6 +15,11 @@ var NAVTREEINDEX10 =
 "d9/dde/structdouble__hashing_1_1_entry.html#a287b92112b6b43b34808a93778873475":[10,0,4,0,0],
 "d9/dde/structdouble__hashing_1_1_entry.html#ae114967c89dbba3b754dc4976bba3248":[9,0,26,0,1],
 "d9/dde/structdouble__hashing_1_1_entry.html#ae114967c89dbba3b754dc4976bba3248":[10,0,4,0,1],
+"d9/dec/unbounded__0__1__knapsack_8cpp.html":[11,0,6,17],
+"d9/dec/unbounded__0__1__knapsack_8cpp.html#a1bcff7f76de48fa7f629480f8f18b5ef":[11,0,6,17,3],
+"d9/dec/unbounded__0__1__knapsack_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[11,0,6,17,2],
+"d9/dec/unbounded__0__1__knapsack_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,6,17,1],
+"d9/dec/unbounded__0__1__knapsack_8cpp.html#afe447a5979582174908695952c8a079c":[11,0,6,17,0],
 "d9/dee/classdouble__linked__list.html":[10,0,29],
 "d9/def/namespacesublist__search.html":[9,0,125],
 "d9/df0/fast__integer__input_8cpp.html":[11,0,17,4],

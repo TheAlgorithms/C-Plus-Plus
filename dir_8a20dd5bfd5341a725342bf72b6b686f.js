@@ -17,6 +17,6 @@ var dir_8a20dd5bfd5341a725342bf72b6b686f =
     [ "shortest_common_supersequence.cpp", "d7/d65/shortest__common__supersequence_8cpp.html", "d7/d65/shortest__common__supersequence_8cpp" ],
     [ "subset_sum.cpp", "d6/d80/dynamic__programming_2subset__sum_8cpp.html", "d6/d80/dynamic__programming_2subset__sum_8cpp" ],
     [ "trapped_rainwater.cpp", "d9/d80/trapped__rainwater_8cpp.html", "d9/d80/trapped__rainwater_8cpp" ],
-    [ "Unbounded_0_1_Knapsack.cpp", "d7/dcb/_unbounded__0__1___knapsack_8cpp.html", "d7/dcb/_unbounded__0__1___knapsack_8cpp" ],
+    [ "unbounded_0_1_knapsack.cpp", "d9/dec/unbounded__0__1__knapsack_8cpp.html", "d9/dec/unbounded__0__1__knapsack_8cpp" ],
     [ "word_break.cpp", "d3/d84/word__break_8cpp.html", "d3/d84/word__break_8cpp" ]
 ];
