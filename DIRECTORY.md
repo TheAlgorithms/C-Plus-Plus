@@ -160,6 +160,7 @@
   * [Spirograph](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/graphics/spirograph.cpp)
 
 ## Greedy Algorithms
+  * [Binary Addition](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/binary_addition.cpp)
   * [Boruvkas Minimum Spanning Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/boruvkas_minimum_spanning_tree.cpp)
   * [Digit Separation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/digit_separation.cpp)
   * [Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/dijkstra.cpp)
@@ -304,6 +305,7 @@
   * [Lfu Cache](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/lfu_cache.cpp)
   * [Longest Substring Without Repeating Characters](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/longest_substring_without_repeating_characters.cpp)
   * [Lru Cache](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/lru_cache.cpp)
+  * [Lru Cache2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/lru_cache2.cpp)
   * [Matrix Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/matrix_exponentiation.cpp)
   * [Palindrome Of Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/palindrome_of_number.cpp)
   * [Paranthesis Matching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/paranthesis_matching.cpp)
@@ -349,6 +351,7 @@
   * [Interpolation Search2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/interpolation_search2.cpp)
   * [Jump Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/jump_search.cpp)
   * [Linear Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/linear_search.cpp)
+  * [Longest Increasing Subsequence Using Binary Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/longest_increasing_subsequence_using_binary_search.cpp)
   * [Median Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/median_search.cpp)
   * [Median Search2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/median_search2.cpp)
   * [Saddleback Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/saddleback_search.cpp)
