@@ -122,6 +122,7 @@
   * [Subset Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/subset_sum.cpp)
   * [Trapped Rainwater](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/trapped_rainwater.cpp)
   * [Tree Height](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/tree_height.cpp)
+  * [Unbounded 0 1 Knapsack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/unbounded_0_1_knapsack.cpp)
   * [Word Break](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/word_break.cpp)
 
 ## Games
