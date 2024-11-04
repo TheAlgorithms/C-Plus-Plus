@@ -253,10 +253,10 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  175</span>                    {</div>
-<div class="line"><span class="lineno">  176</span>        <span class="comment">// It&#39;s just to avoid writing cout and endl</span></div>
-<div class="line"><span class="lineno">  177</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;[TESTS] : ---&gt; &quot;</span> &lt;&lt; msg &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  178</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  176</span>                    {</div>
+<div class="line"><span class="lineno">  177</span>        <span class="comment">// It&#39;s just to avoid writing cout and endl</span></div>
+<div class="line"><span class="lineno">  178</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;[TESTS] : ---&gt; &quot;</span> &lt;&lt; msg &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  179</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -382,16 +382,16 @@ Here is the call graph for this function:</div>
 
 <p>Executes test cases. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  185</span>                    {</div>
-<div class="line"><span class="lineno">  186</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Running Tests...&quot;</span>);</div>
-<div class="line"><span class="lineno">  187</span> </div>
-<div class="line"><span class="lineno">  188</span>        <a class="code hl_function" href="#ac2636e8b5b9e053374c45bfcf0603008">testCase_1</a>();</div>
-<div class="line"><span class="lineno">  189</span>        <a class="code hl_function" href="#abae0148985f159b582a385cf399254e3">testCase_2</a>();</div>
-<div class="line"><span class="lineno">  190</span>        <a class="code hl_function" href="#ad9f95c09931625b41e3be1f88d1e28c5">testCase_3</a>();</div>
-<div class="line"><span class="lineno">  191</span> </div>
-<div class="line"><span class="lineno">  192</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Test Cases over!&quot;</span>);</div>
-<div class="line"><span class="lineno">  193</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  194</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  186</span>                    {</div>
+<div class="line"><span class="lineno">  187</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Running Tests...&quot;</span>);</div>
+<div class="line"><span class="lineno">  188</span> </div>
+<div class="line"><span class="lineno">  189</span>        <a class="code hl_function" href="#ac2636e8b5b9e053374c45bfcf0603008">testCase_1</a>();</div>
+<div class="line"><span class="lineno">  190</span>        <a class="code hl_function" href="#abae0148985f159b582a385cf399254e3">testCase_2</a>();</div>
+<div class="line"><span class="lineno">  191</span>        <a class="code hl_function" href="#ad9f95c09931625b41e3be1f88d1e28c5">testCase_3</a>();</div>
+<div class="line"><span class="lineno">  192</span> </div>
+<div class="line"><span class="lineno">  193</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Test Cases over!&quot;</span>);</div>
+<div class="line"><span class="lineno">  194</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  195</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -557,46 +557,46 @@ Here is the call graph for this function:</div>
 <p>&lt; Sublist to be searched</p>
 <p>&lt; Main list in which sublist is to be searched</p>
 <p>&lt; boolean, if sublist exist or not</p>
-<div class="fragment"><div class="line"><span class="lineno">  200</span>                      {</div>
-<div class="line"><span class="lineno">  201</span>        <span class="keyword">const</span> <span class="keywordtype">bool</span> expectedOutput = <span class="keyword">true</span>;  <span class="comment">///&lt; Expected output of this test</span></div>
-<div class="line"><span class="lineno">  202</span> </div>
-<div class="line"><span class="lineno">  203</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span></div>
-<div class="line"><span class="lineno">  204</span>            <span class="stringliteral">&quot;~&quot;</span>);</div>
-<div class="line"><span class="lineno">  205</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;This is test case 1 for sublist search Algorithm : &quot;</span>);</div>
-<div class="line"><span class="lineno">  206</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Description:&quot;</span>);</div>
-<div class="line"><span class="lineno">  207</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;   EDGE CASE : Only contains one element&quot;</span>);</div>
-<div class="line"><span class="lineno">  208</span> </div>
-<div class="line"><span class="lineno">  209</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> sublistData = {</div>
-<div class="line"><span class="lineno">  210</span>            6};  <span class="comment">///&lt; Data to make linked list which will be the sublist</span></div>
-<div class="line"><span class="lineno">  211</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> mainlistData = {</div>
-<div class="line"><span class="lineno">  212</span>            2, 5, 6, 7,</div>
-<div class="line"><span class="lineno">  213</span>            8};  <span class="comment">///&lt; Data to make linked list which will be the main list</span></div>
-<div class="line"><span class="lineno">  214</span> </div>
-<div class="line"><span class="lineno">  215</span>        <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *sublistLL =</div>
-<div class="line"><span class="lineno">  216</span>            <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(</div>
-<div class="line"><span class="lineno">  217</span>                sublistData);  <span class="comment">///&lt; Sublist to be searched</span></div>
-<div class="line"><span class="lineno">  218</span>        <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *mainlistLL =</div>
-<div class="line"><span class="lineno">  219</span>            <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(</div>
-<div class="line"><span class="lineno">  220</span>                mainlistData);  <span class="comment">///&lt; Main list in which sublist is to be</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  221</span><span class="comment">                                ///&lt; searched</span></div>
-<div class="line"><span class="lineno">  222</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  223</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/d84/word__break_8cpp.html#a1cc9dd6e6190d10a010fdcdfe7a21a81">exists</a> = <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a4faee403e2758aaab682ed6622ae218c">search::sublist_search::sublistSearch</a>(</div>
-<div class="line"><span class="lineno">  224</span>            sublistLL, mainlistLL);  <span class="comment">///&lt; boolean, if sublist exist or not</span></div>
-<div class="line"><span class="lineno">  225</span> </div>
-<div class="line"><span class="lineno">  226</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Checking assert expression...&quot;</span>);</div>
-<div class="line"><span class="lineno">  227</span>        assert(exists == expectedOutput);</div>
-<div class="line"><span class="lineno">  228</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Assertion check passed!&quot;</span>);</div>
-<div class="line"><span class="lineno">  229</span> </div>
-<div class="line"><span class="lineno">  230</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;[PASS] : TEST CASE 1 PASS!&quot;</span>);</div>
-<div class="line"><span class="lineno">  231</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span></div>
-<div class="line"><span class="lineno">  232</span>            <span class="stringliteral">&quot;~&quot;</span>);</div>
-<div class="line"><span class="lineno">  233</span> </div>
-<div class="line"><span class="lineno">  234</span>        deleteList(mainlistLL);</div>
-<div class="line"><span class="lineno">  235</span>        deleteList(sublistLL);</div>
-<div class="line"><span class="lineno">  236</span>    }</div>
-<div class="ttc" id="astructsearch_1_1sublist__search_1_1_node_html"><div class="ttname"><a href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a></div><div class="ttdoc">A Node structure representing a single link Node in a linked list.</div><div class="ttdef"><b>Definition</b> sublist_search.cpp:47</div></div>
-<div class="ttc" id="asublist__search_8cpp_html_a4faee403e2758aaab682ed6622ae218c"><div class="ttname"><a href="../../d5/d45/sublist__search_8cpp.html#a4faee403e2758aaab682ed6622ae218c">search::sublist_search::sublistSearch</a></div><div class="ttdeci">bool sublistSearch(Node *sublist, Node *mainList)</div><div class="ttdoc">Main searching function.</div><div class="ttdef"><b>Definition</b> sublist_search.cpp:114</div></div>
-<div class="ttc" id="asublist__search_8cpp_html_a70ca8d0267008e09cfa50b4e2ddfbe53"><div class="ttname"><a href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a></div><div class="ttdeci">Node * makeLinkedList(const std::vector&lt; uint64_t &gt; &amp;data)</div><div class="ttdoc">Give a vector of data, it adds each element of vector in the linked list and return the address of he...</div><div class="ttdef"><b>Definition</b> sublist_search.cpp:73</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  201</span>                      {</div>
+<div class="line"><span class="lineno">  202</span>        <span class="keyword">const</span> <span class="keywordtype">bool</span> expectedOutput = <span class="keyword">true</span>;  <span class="comment">///&lt; Expected output of this test</span></div>
+<div class="line"><span class="lineno">  203</span> </div>
+<div class="line"><span class="lineno">  204</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span></div>
+<div class="line"><span class="lineno">  205</span>            <span class="stringliteral">&quot;~&quot;</span>);</div>
+<div class="line"><span class="lineno">  206</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;This is test case 1 for sublist search Algorithm : &quot;</span>);</div>
+<div class="line"><span class="lineno">  207</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Description:&quot;</span>);</div>
+<div class="line"><span class="lineno">  208</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;   EDGE CASE : Only contains one element&quot;</span>);</div>
+<div class="line"><span class="lineno">  209</span> </div>
+<div class="line"><span class="lineno">  210</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> sublistData = {</div>
+<div class="line"><span class="lineno">  211</span>            6};  <span class="comment">///&lt; Data to make linked list which will be the sublist</span></div>
+<div class="line"><span class="lineno">  212</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> mainlistData = {</div>
+<div class="line"><span class="lineno">  213</span>            2, 5, 6, 7,</div>
+<div class="line"><span class="lineno">  214</span>            8};  <span class="comment">///&lt; Data to make linked list which will be the main list</span></div>
+<div class="line"><span class="lineno">  215</span> </div>
+<div class="line"><span class="lineno">  216</span>        <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *sublistLL =</div>
+<div class="line"><span class="lineno">  217</span>            <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(</div>
+<div class="line"><span class="lineno">  218</span>                sublistData);  <span class="comment">///&lt; Sublist to be searched</span></div>
+<div class="line"><span class="lineno">  219</span>        <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *mainlistLL =</div>
+<div class="line"><span class="lineno">  220</span>            <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(</div>
+<div class="line"><span class="lineno">  221</span>                mainlistData);  <span class="comment">///&lt; Main list in which sublist is to be</span><span class="comment"></span></div>
+<div class="line"><span class="lineno">  222</span><span class="comment">                                ///&lt; searched</span></div>
+<div class="line"><span class="lineno">  223</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">  224</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/d84/word__break_8cpp.html#a1cc9dd6e6190d10a010fdcdfe7a21a81">exists</a> = <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a4faee403e2758aaab682ed6622ae218c">search::sublist_search::sublistSearch</a>(</div>
+<div class="line"><span class="lineno">  225</span>            sublistLL, mainlistLL);  <span class="comment">///&lt; boolean, if sublist exist or not</span></div>
+<div class="line"><span class="lineno">  226</span> </div>
+<div class="line"><span class="lineno">  227</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Checking assert expression...&quot;</span>);</div>
+<div class="line"><span class="lineno">  228</span>        assert(exists == expectedOutput);</div>
+<div class="line"><span class="lineno">  229</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Assertion check passed!&quot;</span>);</div>
+<div class="line"><span class="lineno">  230</span> </div>
+<div class="line"><span class="lineno">  231</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;[PASS] : TEST CASE 1 PASS!&quot;</span>);</div>
+<div class="line"><span class="lineno">  232</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span></div>
+<div class="line"><span class="lineno">  233</span>            <span class="stringliteral">&quot;~&quot;</span>);</div>
+<div class="line"><span class="lineno">  234</span> </div>
+<div class="line"><span class="lineno">  235</span>        deleteList(mainlistLL);</div>
+<div class="line"><span class="lineno">  236</span>        deleteList(sublistLL);</div>
+<div class="line"><span class="lineno">  237</span>    }</div>
+<div class="ttc" id="astructsearch_1_1sublist__search_1_1_node_html"><div class="ttname"><a href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a></div><div class="ttdoc">A Node structure representing a single link Node in a linked list.</div><div class="ttdef"><b>Definition</b> sublist_search.cpp:48</div></div>
+<div class="ttc" id="asublist__search_8cpp_html_a4faee403e2758aaab682ed6622ae218c"><div class="ttname"><a href="../../d5/d45/sublist__search_8cpp.html#a4faee403e2758aaab682ed6622ae218c">search::sublist_search::sublistSearch</a></div><div class="ttdeci">bool sublistSearch(Node *sublist, Node *mainList)</div><div class="ttdoc">Main searching function.</div><div class="ttdef"><b>Definition</b> sublist_search.cpp:115</div></div>
+<div class="ttc" id="asublist__search_8cpp_html_a70ca8d0267008e09cfa50b4e2ddfbe53"><div class="ttname"><a href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a></div><div class="ttdeci">Node * makeLinkedList(const std::vector&lt; uint64_t &gt; &amp;data)</div><div class="ttdoc">Give a vector of data, it adds each element of vector in the linked list and return the address of he...</div><div class="ttdef"><b>Definition</b> sublist_search.cpp:74</div></div>
 <div class="ttc" id="aword__break_8cpp_html_a1cc9dd6e6190d10a010fdcdfe7a21a81"><div class="ttname"><a href="../../d3/d84/word__break_8cpp.html#a1cc9dd6e6190d10a010fdcdfe7a21a81">dynamic_programming::word_break::exists</a></div><div class="ttdeci">bool exists(const std::string &amp;str, const std::unordered_set&lt; std::string &gt; &amp;strSet)</div><div class="ttdoc">Function that checks if the string passed in param is present in the the unordered_set passed.</div><div class="ttdef"><b>Definition</b> word_break.cpp:60</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -778,54 +778,54 @@ Here is the call graph for this function:</div>
 <p>&lt; Sublist to be searched</p>
 <p>&lt; Main list in which sublist is to be searched</p>
 <p>&lt; boolean, if sublist exist or not</p>
-<div class="fragment"><div class="line"><span class="lineno">  243</span>                      {</div>
-<div class="line"><span class="lineno">  244</span>        <span class="keyword">const</span> <span class="keywordtype">bool</span> expectedOutput = <span class="keyword">true</span>;  <span class="comment">/// Expected output of this test</span></div>
-<div class="line"><span class="lineno">  245</span> </div>
-<div class="line"><span class="lineno">  246</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span></div>
-<div class="line"><span class="lineno">  247</span>            <span class="stringliteral">&quot;~&quot;</span>);</div>
-<div class="line"><span class="lineno">  248</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;This is test case 2 for sublist search Algorithm : &quot;</span>);</div>
-<div class="line"><span class="lineno">  249</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Description:&quot;</span>);</div>
-<div class="line"><span class="lineno">  250</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;   contains main list of 100 elements and sublist of 20&quot;</span>);</div>
-<div class="line"><span class="lineno">  251</span> </div>
-<div class="line"><span class="lineno">  252</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> sublistData(</div>
-<div class="line"><span class="lineno">  253</span>            20);  <span class="comment">///&lt; Data to make linked list which will be the sublist</span></div>
-<div class="line"><span class="lineno">  254</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> mainlistData(</div>
-<div class="line"><span class="lineno">  255</span>            100);  <span class="comment">///&lt; Main list in which sublist is to be searched</span></div>
-<div class="line"><span class="lineno">  256</span> </div>
-<div class="line"><span class="lineno">  257</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 100; i++) {<span class="comment"></span></div>
-<div class="line"><span class="lineno">  258</span><span class="comment">            /// Inserts 100 elements in main list</span></div>
-<div class="line"><span class="lineno">  259</span><span class="comment"></span>            mainlistData[i] = i + 1;</div>
-<div class="line"><span class="lineno">  260</span>        }</div>
-<div class="line"><span class="lineno">  261</span> </div>
-<div class="line"><span class="lineno">  262</span>        <span class="keywordtype">int</span> temp = 0;</div>
-<div class="line"><span class="lineno">  263</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 45; i &lt; 65; i++) {<span class="comment"></span></div>
-<div class="line"><span class="lineno">  264</span><span class="comment">            /// Inserts 20 elements in sublist</span></div>
-<div class="line"><span class="lineno">  265</span><span class="comment"></span>            sublistData[temp] = i + 1;</div>
-<div class="line"><span class="lineno">  266</span>            temp++;</div>
-<div class="line"><span class="lineno">  267</span>        }</div>
-<div class="line"><span class="lineno">  268</span> </div>
-<div class="line"><span class="lineno">  269</span>        <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *sublistLL =</div>
-<div class="line"><span class="lineno">  270</span>            <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(</div>
-<div class="line"><span class="lineno">  271</span>                sublistData);  <span class="comment">///&lt; Sublist to be searched</span></div>
-<div class="line"><span class="lineno">  272</span>        <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *mainlistLL =</div>
-<div class="line"><span class="lineno">  273</span>            <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(</div>
-<div class="line"><span class="lineno">  274</span>                mainlistData);  <span class="comment">///&lt; Main list in which sublist is to be</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  275</span><span class="comment">                                ///&lt; searched</span></div>
-<div class="line"><span class="lineno">  276</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  277</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/d84/word__break_8cpp.html#a1cc9dd6e6190d10a010fdcdfe7a21a81">exists</a> = <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a4faee403e2758aaab682ed6622ae218c">search::sublist_search::sublistSearch</a>(</div>
-<div class="line"><span class="lineno">  278</span>            sublistLL, mainlistLL);  <span class="comment">///&lt; boolean, if sublist exist or not</span></div>
-<div class="line"><span class="lineno">  279</span> </div>
-<div class="line"><span class="lineno">  280</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Checking assert expression...&quot;</span>);</div>
-<div class="line"><span class="lineno">  281</span>        assert(exists == expectedOutput);</div>
-<div class="line"><span class="lineno">  282</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Assertion check passed!&quot;</span>);</div>
-<div class="line"><span class="lineno">  283</span> </div>
-<div class="line"><span class="lineno">  284</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;[PASS] : TEST CASE 2 PASS!&quot;</span>);</div>
-<div class="line"><span class="lineno">  285</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span></div>
-<div class="line"><span class="lineno">  286</span>            <span class="stringliteral">&quot;~&quot;</span>);</div>
-<div class="line"><span class="lineno">  287</span> </div>
-<div class="line"><span class="lineno">  288</span>        deleteList(mainlistLL);</div>
-<div class="line"><span class="lineno">  289</span>        deleteList(sublistLL);</div>
-<div class="line"><span class="lineno">  290</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  244</span>                      {</div>
+<div class="line"><span class="lineno">  245</span>        <span class="keyword">const</span> <span class="keywordtype">bool</span> expectedOutput = <span class="keyword">true</span>;  <span class="comment">/// Expected output of this test</span></div>
+<div class="line"><span class="lineno">  246</span> </div>
+<div class="line"><span class="lineno">  247</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span></div>
+<div class="line"><span class="lineno">  248</span>            <span class="stringliteral">&quot;~&quot;</span>);</div>
+<div class="line"><span class="lineno">  249</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;This is test case 2 for sublist search Algorithm : &quot;</span>);</div>
+<div class="line"><span class="lineno">  250</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Description:&quot;</span>);</div>
+<div class="line"><span class="lineno">  251</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;   contains main list of 100 elements and sublist of 20&quot;</span>);</div>
+<div class="line"><span class="lineno">  252</span> </div>
+<div class="line"><span class="lineno">  253</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> sublistData(</div>
+<div class="line"><span class="lineno">  254</span>            20);  <span class="comment">///&lt; Data to make linked list which will be the sublist</span></div>
+<div class="line"><span class="lineno">  255</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> mainlistData(</div>
+<div class="line"><span class="lineno">  256</span>            100);  <span class="comment">///&lt; Main list in which sublist is to be searched</span></div>
+<div class="line"><span class="lineno">  257</span> </div>
+<div class="line"><span class="lineno">  258</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 100; i++) {<span class="comment"></span></div>
+<div class="line"><span class="lineno">  259</span><span class="comment">            /// Inserts 100 elements in main list</span></div>
+<div class="line"><span class="lineno">  260</span><span class="comment"></span>            mainlistData[i] = i + 1;</div>
+<div class="line"><span class="lineno">  261</span>        }</div>
+<div class="line"><span class="lineno">  262</span> </div>
+<div class="line"><span class="lineno">  263</span>        <span class="keywordtype">int</span> temp = 0;</div>
+<div class="line"><span class="lineno">  264</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 45; i &lt; 65; i++) {<span class="comment"></span></div>
+<div class="line"><span class="lineno">  265</span><span class="comment">            /// Inserts 20 elements in sublist</span></div>
+<div class="line"><span class="lineno">  266</span><span class="comment"></span>            sublistData[temp] = i + 1;</div>
+<div class="line"><span class="lineno">  267</span>            temp++;</div>
+<div class="line"><span class="lineno">  268</span>        }</div>
+<div class="line"><span class="lineno">  269</span> </div>
+<div class="line"><span class="lineno">  270</span>        <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *sublistLL =</div>
+<div class="line"><span class="lineno">  271</span>            <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(</div>
+<div class="line"><span class="lineno">  272</span>                sublistData);  <span class="comment">///&lt; Sublist to be searched</span></div>
+<div class="line"><span class="lineno">  273</span>        <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *mainlistLL =</div>
+<div class="line"><span class="lineno">  274</span>            <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(</div>
+<div class="line"><span class="lineno">  275</span>                mainlistData);  <span class="comment">///&lt; Main list in which sublist is to be</span><span class="comment"></span></div>
+<div class="line"><span class="lineno">  276</span><span class="comment">                                ///&lt; searched</span></div>
+<div class="line"><span class="lineno">  277</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">  278</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/d84/word__break_8cpp.html#a1cc9dd6e6190d10a010fdcdfe7a21a81">exists</a> = <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a4faee403e2758aaab682ed6622ae218c">search::sublist_search::sublistSearch</a>(</div>
+<div class="line"><span class="lineno">  279</span>            sublistLL, mainlistLL);  <span class="comment">///&lt; boolean, if sublist exist or not</span></div>
+<div class="line"><span class="lineno">  280</span> </div>
+<div class="line"><span class="lineno">  281</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Checking assert expression...&quot;</span>);</div>
+<div class="line"><span class="lineno">  282</span>        assert(exists == expectedOutput);</div>
+<div class="line"><span class="lineno">  283</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Assertion check passed!&quot;</span>);</div>
+<div class="line"><span class="lineno">  284</span> </div>
+<div class="line"><span class="lineno">  285</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;[PASS] : TEST CASE 2 PASS!&quot;</span>);</div>
+<div class="line"><span class="lineno">  286</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span></div>
+<div class="line"><span class="lineno">  287</span>            <span class="stringliteral">&quot;~&quot;</span>);</div>
+<div class="line"><span class="lineno">  288</span> </div>
+<div class="line"><span class="lineno">  289</span>        deleteList(mainlistLL);</div>
+<div class="line"><span class="lineno">  290</span>        deleteList(sublistLL);</div>
+<div class="line"><span class="lineno">  291</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1003,51 +1003,51 @@ Here is the call graph for this function:</div>
 <p>&lt; Sublist to be searched</p>
 <p>&lt; Main list in which sublist is to be searched</p>
 <p>&lt; boolean, if sublist exist or not</p>
-<div class="fragment"><div class="line"><span class="lineno">  297</span>                      {</div>
-<div class="line"><span class="lineno">  298</span>        <span class="keyword">const</span> <span class="keywordtype">bool</span> expectedOutput = <span class="keyword">false</span>;  <span class="comment">///&lt; Expected output of this test</span></div>
-<div class="line"><span class="lineno">  299</span> </div>
-<div class="line"><span class="lineno">  300</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span></div>
-<div class="line"><span class="lineno">  301</span>            <span class="stringliteral">&quot;~&quot;</span>);</div>
-<div class="line"><span class="lineno">  302</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;This is test case 3 for sublist search Algorithm : &quot;</span>);</div>
-<div class="line"><span class="lineno">  303</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Description:&quot;</span>);</div>
-<div class="line"><span class="lineno">  304</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;   contains main list of 50 elements and sublist of 20&quot;</span>);</div>
-<div class="line"><span class="lineno">  305</span> </div>
-<div class="line"><span class="lineno">  306</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> sublistData(20);  <span class="comment">///&lt; Sublist to be searched</span></div>
-<div class="line"><span class="lineno">  307</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> mainlistData(</div>
-<div class="line"><span class="lineno">  308</span>            50);  <span class="comment">///&lt; Main list in which sublist is to be searched</span></div>
-<div class="line"><span class="lineno">  309</span> </div>
-<div class="line"><span class="lineno">  310</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 50; i++) {<span class="comment"></span></div>
-<div class="line"><span class="lineno">  311</span><span class="comment">            /// Inserts 100 elements in main list</span></div>
-<div class="line"><span class="lineno">  312</span><span class="comment"></span>            mainlistData.push_back(i + 1);</div>
-<div class="line"><span class="lineno">  313</span>        }</div>
-<div class="line"><span class="lineno">  314</span> </div>
-<div class="line"><span class="lineno">  315</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 45; i &lt; 65; i++) {<span class="comment"></span></div>
-<div class="line"><span class="lineno">  316</span><span class="comment">            /// Inserts 20 elements in sublist</span></div>
-<div class="line"><span class="lineno">  317</span><span class="comment"></span>            sublistData.push_back(i + 1);</div>
-<div class="line"><span class="lineno">  318</span>        }</div>
-<div class="line"><span class="lineno">  319</span> </div>
-<div class="line"><span class="lineno">  320</span>        <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *sublistLL =</div>
-<div class="line"><span class="lineno">  321</span>            <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(</div>
-<div class="line"><span class="lineno">  322</span>                sublistData);  <span class="comment">///&lt; Sublist to be searched</span></div>
-<div class="line"><span class="lineno">  323</span>        <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *mainlistLL =</div>
-<div class="line"><span class="lineno">  324</span>            <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(</div>
-<div class="line"><span class="lineno">  325</span>                mainlistData);  <span class="comment">///&lt; Main list in which sublist is to be</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  326</span><span class="comment">                                ///&lt; searched</span></div>
-<div class="line"><span class="lineno">  327</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  328</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/d84/word__break_8cpp.html#a1cc9dd6e6190d10a010fdcdfe7a21a81">exists</a> = <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a4faee403e2758aaab682ed6622ae218c">search::sublist_search::sublistSearch</a>(</div>
-<div class="line"><span class="lineno">  329</span>            sublistLL, mainlistLL);  <span class="comment">///&lt; boolean, if sublist exist or not</span></div>
-<div class="line"><span class="lineno">  330</span> </div>
-<div class="line"><span class="lineno">  331</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Checking assert expression...&quot;</span>);</div>
-<div class="line"><span class="lineno">  332</span>        assert(exists == expectedOutput);</div>
-<div class="line"><span class="lineno">  333</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Assertion check passed!&quot;</span>);</div>
-<div class="line"><span class="lineno">  334</span> </div>
-<div class="line"><span class="lineno">  335</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;[PASS] : TEST CASE 3 PASS!&quot;</span>);</div>
-<div class="line"><span class="lineno">  336</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span></div>
-<div class="line"><span class="lineno">  337</span>            <span class="stringliteral">&quot;~&quot;</span>);</div>
-<div class="line"><span class="lineno">  338</span> </div>
-<div class="line"><span class="lineno">  339</span>        deleteList(mainlistLL);</div>
-<div class="line"><span class="lineno">  340</span>        deleteList(sublistLL);</div>
-<div class="line"><span class="lineno">  341</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  298</span>                      {</div>
+<div class="line"><span class="lineno">  299</span>        <span class="keyword">const</span> <span class="keywordtype">bool</span> expectedOutput = <span class="keyword">false</span>;  <span class="comment">///&lt; Expected output of this test</span></div>
+<div class="line"><span class="lineno">  300</span> </div>
+<div class="line"><span class="lineno">  301</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span></div>
+<div class="line"><span class="lineno">  302</span>            <span class="stringliteral">&quot;~&quot;</span>);</div>
+<div class="line"><span class="lineno">  303</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;This is test case 3 for sublist search Algorithm : &quot;</span>);</div>
+<div class="line"><span class="lineno">  304</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Description:&quot;</span>);</div>
+<div class="line"><span class="lineno">  305</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;   contains main list of 50 elements and sublist of 20&quot;</span>);</div>
+<div class="line"><span class="lineno">  306</span> </div>
+<div class="line"><span class="lineno">  307</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> sublistData(20);  <span class="comment">///&lt; Sublist to be searched</span></div>
+<div class="line"><span class="lineno">  308</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> mainlistData(</div>
+<div class="line"><span class="lineno">  309</span>            50);  <span class="comment">///&lt; Main list in which sublist is to be searched</span></div>
+<div class="line"><span class="lineno">  310</span> </div>
+<div class="line"><span class="lineno">  311</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 50; i++) {<span class="comment"></span></div>
+<div class="line"><span class="lineno">  312</span><span class="comment">            /// Inserts 100 elements in main list</span></div>
+<div class="line"><span class="lineno">  313</span><span class="comment"></span>            mainlistData.push_back(i + 1);</div>
+<div class="line"><span class="lineno">  314</span>        }</div>
+<div class="line"><span class="lineno">  315</span> </div>
+<div class="line"><span class="lineno">  316</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 45; i &lt; 65; i++) {<span class="comment"></span></div>
+<div class="line"><span class="lineno">  317</span><span class="comment">            /// Inserts 20 elements in sublist</span></div>
+<div class="line"><span class="lineno">  318</span><span class="comment"></span>            sublistData.push_back(i + 1);</div>
+<div class="line"><span class="lineno">  319</span>        }</div>
+<div class="line"><span class="lineno">  320</span> </div>
+<div class="line"><span class="lineno">  321</span>        <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *sublistLL =</div>
+<div class="line"><span class="lineno">  322</span>            <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(</div>
+<div class="line"><span class="lineno">  323</span>                sublistData);  <span class="comment">///&lt; Sublist to be searched</span></div>
+<div class="line"><span class="lineno">  324</span>        <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *mainlistLL =</div>
+<div class="line"><span class="lineno">  325</span>            <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(</div>
+<div class="line"><span class="lineno">  326</span>                mainlistData);  <span class="comment">///&lt; Main list in which sublist is to be</span><span class="comment"></span></div>
+<div class="line"><span class="lineno">  327</span><span class="comment">                                ///&lt; searched</span></div>
+<div class="line"><span class="lineno">  328</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">  329</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/d84/word__break_8cpp.html#a1cc9dd6e6190d10a010fdcdfe7a21a81">exists</a> = <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a4faee403e2758aaab682ed6622ae218c">search::sublist_search::sublistSearch</a>(</div>
+<div class="line"><span class="lineno">  330</span>            sublistLL, mainlistLL);  <span class="comment">///&lt; boolean, if sublist exist or not</span></div>
+<div class="line"><span class="lineno">  331</span> </div>
+<div class="line"><span class="lineno">  332</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Checking assert expression...&quot;</span>);</div>
+<div class="line"><span class="lineno">  333</span>        assert(exists == expectedOutput);</div>
+<div class="line"><span class="lineno">  334</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Assertion check passed!&quot;</span>);</div>
+<div class="line"><span class="lineno">  335</span> </div>
+<div class="line"><span class="lineno">  336</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;[PASS] : TEST CASE 3 PASS!&quot;</span>);</div>
+<div class="line"><span class="lineno">  337</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span></div>
+<div class="line"><span class="lineno">  338</span>            <span class="stringliteral">&quot;~&quot;</span>);</div>
+<div class="line"><span class="lineno">  339</span> </div>
+<div class="line"><span class="lineno">  340</span>        deleteList(mainlistLL);</div>
+<div class="line"><span class="lineno">  341</span>        deleteList(sublistLL);</div>
+<div class="line"><span class="lineno">  342</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

@@ -115,6 +115,7 @@ $(function(){initNavTree('df/d47/fcfs__scheduling_8cpp.html','../../'); initResi
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;ctime&gt;</code><br />
 <code>#include &lt;iomanip&gt;</code><br />
@@ -183,35 +184,35 @@ template&lt;typename S , typename T , typename E &gt; </div>
   </dd>
 </dl>
 <p>Sorts the input vector according to arrival time. Processes whose arrival times are same get sorted according to process ID For each process, completion time, turnaround time and completion time are calculated, inserted in a tuple, which is added to the vector result. </p><dl class="section return"><dt>Returns</dt><dd>A vector of tuples consisting of process ID, arrival time, burst time, completion time, turnaround time and waiting time for each process. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  226</span>                                                       {</div>
-<div class="line"><span class="lineno">  227</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/sort.html">sort</a>(input.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), input.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>(), <a class="code hl_function" href="#a18920aa331faf4476b251c8cdb2c2bec">sortcol&lt;S, T, E&gt;</a>);</div>
-<div class="line"><span class="lineno">  228</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;tuple&lt;S, T, E, double, double, double&gt;</a>&gt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(input.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>());</div>
-<div class="line"><span class="lineno">  229</span>    <span class="keywordtype">double</span> timeElapsed = 0;</div>
-<div class="line"><span class="lineno">  230</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i{}; i &lt; input.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {</div>
-<div class="line"><span class="lineno">  231</span>        T arrival = get&lt;1&gt;(input[i]);</div>
-<div class="line"><span class="lineno">  232</span>        E burst = get&lt;2&gt;(input[i]);</div>
-<div class="line"><span class="lineno">  233</span> </div>
-<div class="line"><span class="lineno">  234</span>        <span class="keywordflow">if</span> (arrival &gt; timeElapsed) {</div>
-<div class="line"><span class="lineno">  235</span>            timeElapsed += arrival - timeElapsed;</div>
-<div class="line"><span class="lineno">  236</span>        }</div>
-<div class="line"><span class="lineno">  237</span>        timeElapsed += burst;</div>
-<div class="line"><span class="lineno">  238</span>        <span class="keywordtype">double</span> completion = timeElapsed;</div>
-<div class="line"><span class="lineno">  239</span>        <span class="keywordtype">double</span> turnaround = completion - arrival;</div>
-<div class="line"><span class="lineno">  240</span>        <span class="keywordtype">double</span> waiting = turnaround - burst;</div>
-<div class="line"><span class="lineno">  241</span> </div>
-<div class="line"><span class="lineno">  242</span>        get&lt;0&gt;(result[i]) = get&lt;0&gt;(input[i]);</div>
-<div class="line"><span class="lineno">  243</span>        get&lt;1&gt;(result[i]) = arrival;</div>
-<div class="line"><span class="lineno">  244</span>        get&lt;2&gt;(result[i]) = burst;</div>
-<div class="line"><span class="lineno">  245</span>        get&lt;3&gt;(result[i]) = completion;</div>
-<div class="line"><span class="lineno">  246</span>        get&lt;4&gt;(result[i]) = turnaround;</div>
-<div class="line"><span class="lineno">  247</span>        get&lt;5&gt;(result[i]) = waiting;</div>
-<div class="line"><span class="lineno">  248</span>    }</div>
-<div class="line"><span class="lineno">  249</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
-<div class="line"><span class="lineno">  250</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  227</span>                                                       {</div>
+<div class="line"><span class="lineno">  228</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/sort.html">sort</a>(input.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), input.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>(), <a class="code hl_function" href="#a18920aa331faf4476b251c8cdb2c2bec">sortcol&lt;S, T, E&gt;</a>);</div>
+<div class="line"><span class="lineno">  229</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;tuple&lt;S, T, E, double, double, double&gt;</a>&gt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(input.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>());</div>
+<div class="line"><span class="lineno">  230</span>    <span class="keywordtype">double</span> timeElapsed = 0;</div>
+<div class="line"><span class="lineno">  231</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i{}; i &lt; input.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {</div>
+<div class="line"><span class="lineno">  232</span>        T arrival = get&lt;1&gt;(input[i]);</div>
+<div class="line"><span class="lineno">  233</span>        E burst = get&lt;2&gt;(input[i]);</div>
+<div class="line"><span class="lineno">  234</span> </div>
+<div class="line"><span class="lineno">  235</span>        <span class="keywordflow">if</span> (arrival &gt; timeElapsed) {</div>
+<div class="line"><span class="lineno">  236</span>            timeElapsed += arrival - timeElapsed;</div>
+<div class="line"><span class="lineno">  237</span>        }</div>
+<div class="line"><span class="lineno">  238</span>        timeElapsed += burst;</div>
+<div class="line"><span class="lineno">  239</span>        <span class="keywordtype">double</span> completion = timeElapsed;</div>
+<div class="line"><span class="lineno">  240</span>        <span class="keywordtype">double</span> turnaround = completion - arrival;</div>
+<div class="line"><span class="lineno">  241</span>        <span class="keywordtype">double</span> waiting = turnaround - burst;</div>
+<div class="line"><span class="lineno">  242</span> </div>
+<div class="line"><span class="lineno">  243</span>        get&lt;0&gt;(result[i]) = get&lt;0&gt;(input[i]);</div>
+<div class="line"><span class="lineno">  244</span>        get&lt;1&gt;(result[i]) = arrival;</div>
+<div class="line"><span class="lineno">  245</span>        get&lt;2&gt;(result[i]) = burst;</div>
+<div class="line"><span class="lineno">  246</span>        get&lt;3&gt;(result[i]) = completion;</div>
+<div class="line"><span class="lineno">  247</span>        get&lt;4&gt;(result[i]) = turnaround;</div>
+<div class="line"><span class="lineno">  248</span>        get&lt;5&gt;(result[i]) = waiting;</div>
+<div class="line"><span class="lineno">  249</span>    }</div>
+<div class="line"><span class="lineno">  250</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
+<div class="line"><span class="lineno">  251</span>}</div>
 <div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/begin.html">std::vector::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/end.html">std::vector::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="afcfs__scheduling_8cpp_html_a18920aa331faf4476b251c8cdb2c2bec"><div class="ttname"><a href="#a18920aa331faf4476b251c8cdb2c2bec">sortcol</a></div><div class="ttdeci">bool sortcol(tuple&lt; S, T, E &gt; &amp;t1, tuple&lt; S, T, E &gt; &amp;t2)</div><div class="ttdoc">Comparator function for sorting a vector.</div><div class="ttdef"><b>Definition</b> fcfs_scheduling.cpp:45</div></div>
-<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> fibonacci_sum.cpp:76</div></div>
+<div class="ttc" id="afcfs__scheduling_8cpp_html_a18920aa331faf4476b251c8cdb2c2bec"><div class="ttname"><a href="#a18920aa331faf4476b251c8cdb2c2bec">sortcol</a></div><div class="ttdeci">bool sortcol(tuple&lt; S, T, E &gt; &amp;t1, tuple&lt; S, T, E &gt; &amp;t2)</div><div class="ttdoc">Comparator function for sorting a vector.</div><div class="ttdef"><b>Definition</b> fcfs_scheduling.cpp:46</div></div>
+<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> fibonacci_sum.cpp:77</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 <div class="ttc" id="asort_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/sort.html">std::sort</a></div><div class="ttdeci">T sort(T... args)</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
@@ -240,11 +241,11 @@ Here is the call graph for this function:</div>
 
 <p>Entry point of the program. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  287</span>           {</div>
-<div class="line"><span class="lineno">  288</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">  289</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  290</span>}</div>
-<div class="ttc" id="afcfs__scheduling_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> fcfs_scheduling.cpp:256</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  288</span>           {</div>
+<div class="line"><span class="lineno">  289</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">  290</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  291</span>}</div>
+<div class="ttc" id="afcfs__scheduling_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> fcfs_scheduling.cpp:257</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -293,14 +294,14 @@ template&lt;typename S , typename T , typename E &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>true if t1 and t2 are in the CORRECT order </dd>
 <dd>
 false if t1 and t2 are in the INCORRECT order </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   45</span>                                                     {</div>
-<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">if</span> (get&lt;1&gt;(t1) &lt; get&lt;1&gt;(t2)) {</div>
-<div class="line"><span class="lineno">   47</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   48</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (get&lt;1&gt;(t1) == get&lt;1&gt;(t2) &amp;&amp; get&lt;0&gt;(t1) &lt; get&lt;0&gt;(t2)) {</div>
-<div class="line"><span class="lineno">   49</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   50</span>    }</div>
-<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   52</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   46</span>                                                     {</div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">if</span> (get&lt;1&gt;(t1) &lt; get&lt;1&gt;(t2)) {</div>
+<div class="line"><span class="lineno">   48</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   49</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (get&lt;1&gt;(t1) == get&lt;1&gt;(t2) &amp;&amp; get&lt;0&gt;(t1) &lt; get&lt;0&gt;(t2)) {</div>
+<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   51</span>    }</div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   53</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -329,37 +330,37 @@ false if t1 and t2 are in the INCORRECT order </dd></dl>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  256</span>                   {</div>
-<div class="line"><span class="lineno">  257</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i{}; i &lt; 1000; i++) {</div>
-<div class="line"><span class="lineno">  258</span>        srand(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">time</a>(<span class="keyword">nullptr</span>));</div>
-<div class="line"><span class="lineno">  259</span>        uint32_t n = 1 + rand() % 1000;</div>
-<div class="line"><span class="lineno">  260</span>        <a class="code hl_class" href="../../dd/dca/class_f_c_f_s.html">FCFS&lt;uint32_t, uint32_t, uint32_t&gt;</a> readyQueue;</div>
-<div class="line"><span class="lineno">  261</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;tuple&lt;uint32_t, uint32_t, uint32_t&gt;</a>&gt; input(n);</div>
-<div class="line"><span class="lineno">  262</span> </div>
-<div class="line"><span class="lineno">  263</span>        <span class="keywordflow">for</span> (uint32_t i{}; i &lt; n; i++) {</div>
-<div class="line"><span class="lineno">  264</span>            get&lt;0&gt;(input[i]) = i;</div>
-<div class="line"><span class="lineno">  265</span>            srand(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">time</a>(<span class="keyword">nullptr</span>));</div>
-<div class="line"><span class="lineno">  266</span>            get&lt;1&gt;(input[i]) = 1 + rand() % 10000;</div>
-<div class="line"><span class="lineno">  267</span>            srand(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">time</a>(<span class="keyword">nullptr</span>));</div>
-<div class="line"><span class="lineno">  268</span>            get&lt;2&gt;(input[i]) = 1 + rand() % 10000;</div>
-<div class="line"><span class="lineno">  269</span>        }</div>
-<div class="line"><span class="lineno">  270</span> </div>
-<div class="line"><span class="lineno">  271</span>        <span class="keywordflow">for</span> (uint32_t i{}; i &lt; n; i++) {</div>
-<div class="line"><span class="lineno">  272</span>            readyQueue.<a class="code hl_function" href="../../dd/dca/class_f_c_f_s.html#a8fbfe4d85f7576b4a7aade07d29fbd69">addProcess</a>(get&lt;0&gt;(input[i]), get&lt;1&gt;(input[i]),</div>
-<div class="line"><span class="lineno">  273</span>                                  get&lt;2&gt;(input[i]));</div>
-<div class="line"><span class="lineno">  274</span>        }</div>
-<div class="line"><span class="lineno">  275</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;tuple&lt;uint32_t, uint32_t, uint32_t, double, double, double&gt;</a>&gt;</div>
-<div class="line"><span class="lineno">  276</span>            res = <a class="code hl_function" href="#a8f2b90cb64d63a7080965e66a05ccf86">get_final_status&lt;uint32_t, uint32_t, uint32_t&gt;</a>(input);</div>
-<div class="line"><span class="lineno">  277</span>        assert(res == readyQueue.<a class="code hl_function" href="../../dd/dca/class_f_c_f_s.html#aa25dbe30ba9930b5a7c1a6d11758bd91">scheduleForFcfs</a>());</div>
-<div class="line"><span class="lineno">  278</span>        <span class="comment">// readyQueue.printResult();</span></div>
-<div class="line"><span class="lineno">  279</span>    }</div>
-<div class="line"><span class="lineno">  280</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">cout</a> &lt;&lt; <span class="stringliteral">&quot;All the tests have successfully passed!&quot;</span> &lt;&lt; <a class="code hl_define" href="../../d7/d35/matrix__exponentiation_8cpp.html#a600eaf353befc174637855795f12d258">endl</a>;</div>
-<div class="line"><span class="lineno">  281</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  257</span>                   {</div>
+<div class="line"><span class="lineno">  258</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i{}; i &lt; 1000; i++) {</div>
+<div class="line"><span class="lineno">  259</span>        srand(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">time</a>(<span class="keyword">nullptr</span>));</div>
+<div class="line"><span class="lineno">  260</span>        uint32_t n = 1 + rand() % 1000;</div>
+<div class="line"><span class="lineno">  261</span>        <a class="code hl_class" href="../../dd/dca/class_f_c_f_s.html">FCFS&lt;uint32_t, uint32_t, uint32_t&gt;</a> readyQueue;</div>
+<div class="line"><span class="lineno">  262</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;tuple&lt;uint32_t, uint32_t, uint32_t&gt;</a>&gt; input(n);</div>
+<div class="line"><span class="lineno">  263</span> </div>
+<div class="line"><span class="lineno">  264</span>        <span class="keywordflow">for</span> (uint32_t i{}; i &lt; n; i++) {</div>
+<div class="line"><span class="lineno">  265</span>            get&lt;0&gt;(input[i]) = i;</div>
+<div class="line"><span class="lineno">  266</span>            srand(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">time</a>(<span class="keyword">nullptr</span>));</div>
+<div class="line"><span class="lineno">  267</span>            get&lt;1&gt;(input[i]) = 1 + rand() % 10000;</div>
+<div class="line"><span class="lineno">  268</span>            srand(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">time</a>(<span class="keyword">nullptr</span>));</div>
+<div class="line"><span class="lineno">  269</span>            get&lt;2&gt;(input[i]) = 1 + rand() % 10000;</div>
+<div class="line"><span class="lineno">  270</span>        }</div>
+<div class="line"><span class="lineno">  271</span> </div>
+<div class="line"><span class="lineno">  272</span>        <span class="keywordflow">for</span> (uint32_t i{}; i &lt; n; i++) {</div>
+<div class="line"><span class="lineno">  273</span>            readyQueue.<a class="code hl_function" href="../../dd/dca/class_f_c_f_s.html#a8fbfe4d85f7576b4a7aade07d29fbd69">addProcess</a>(get&lt;0&gt;(input[i]), get&lt;1&gt;(input[i]),</div>
+<div class="line"><span class="lineno">  274</span>                                  get&lt;2&gt;(input[i]));</div>
+<div class="line"><span class="lineno">  275</span>        }</div>
+<div class="line"><span class="lineno">  276</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;tuple&lt;uint32_t, uint32_t, uint32_t, double, double, double&gt;</a>&gt;</div>
+<div class="line"><span class="lineno">  277</span>            res = <a class="code hl_function" href="#a8f2b90cb64d63a7080965e66a05ccf86">get_final_status&lt;uint32_t, uint32_t, uint32_t&gt;</a>(input);</div>
+<div class="line"><span class="lineno">  278</span>        assert(res == readyQueue.<a class="code hl_function" href="../../dd/dca/class_f_c_f_s.html#aa25dbe30ba9930b5a7c1a6d11758bd91">scheduleForFcfs</a>());</div>
+<div class="line"><span class="lineno">  279</span>        <span class="comment">// readyQueue.printResult();</span></div>
+<div class="line"><span class="lineno">  280</span>    }</div>
+<div class="line"><span class="lineno">  281</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">cout</a> &lt;&lt; <span class="stringliteral">&quot;All the tests have successfully passed!&quot;</span> &lt;&lt; <a class="code hl_define" href="../../d7/d35/matrix__exponentiation_8cpp.html#a600eaf353befc174637855795f12d258">endl</a>;</div>
+<div class="line"><span class="lineno">  282</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aclass_f_c_f_s_html"><div class="ttname"><a href="../../dd/dca/class_f_c_f_s.html">FCFS</a></div><div class="ttdoc">Class which implements the FCFS scheduling algorithm.</div><div class="ttdef"><b>Definition</b> fcfs_scheduling.cpp:97</div></div>
-<div class="ttc" id="aclass_f_c_f_s_html_a8fbfe4d85f7576b4a7aade07d29fbd69"><div class="ttname"><a href="../../dd/dca/class_f_c_f_s.html#a8fbfe4d85f7576b4a7aade07d29fbd69">FCFS::addProcess</a></div><div class="ttdeci">void addProcess(S id, T arrival, E burst)</div><div class="ttdoc">Adds the process to the ready queue if it isn't already there.</div><div class="ttdef"><b>Definition</b> fcfs_scheduling.cpp:129</div></div>
-<div class="ttc" id="aclass_f_c_f_s_html_aa25dbe30ba9930b5a7c1a6d11758bd91"><div class="ttname"><a href="../../dd/dca/class_f_c_f_s.html#aa25dbe30ba9930b5a7c1a6d11758bd91">FCFS::scheduleForFcfs</a></div><div class="ttdeci">vector&lt; tuple&lt; S, T, E, double, double, double &gt; &gt; scheduleForFcfs()</div><div class="ttdoc">Algorithm for scheduling CPU processes according to the First Come First Serve(FCFS) scheduling algor...</div><div class="ttdef"><b>Definition</b> fcfs_scheduling.cpp:154</div></div>
-<div class="ttc" id="afcfs__scheduling_8cpp_html_a8f2b90cb64d63a7080965e66a05ccf86"><div class="ttname"><a href="#a8f2b90cb64d63a7080965e66a05ccf86">get_final_status</a></div><div class="ttdeci">vector&lt; tuple&lt; S, T, E, double, double, double &gt; &gt; get_final_status(vector&lt; tuple&lt; uint32_t, uint32_t, uint32_t &gt; &gt; input)</div><div class="ttdoc">Function to be used for testing purposes. This function guarantees the correct solution for FCFS sche...</div><div class="ttdef"><b>Definition</b> fcfs_scheduling.cpp:225</div></div>
+<div class="ttc" id="aclass_f_c_f_s_html"><div class="ttname"><a href="../../dd/dca/class_f_c_f_s.html">FCFS</a></div><div class="ttdoc">Class which implements the FCFS scheduling algorithm.</div><div class="ttdef"><b>Definition</b> fcfs_scheduling.cpp:98</div></div>
+<div class="ttc" id="aclass_f_c_f_s_html_a8fbfe4d85f7576b4a7aade07d29fbd69"><div class="ttname"><a href="../../dd/dca/class_f_c_f_s.html#a8fbfe4d85f7576b4a7aade07d29fbd69">FCFS::addProcess</a></div><div class="ttdeci">void addProcess(S id, T arrival, E burst)</div><div class="ttdoc">Adds the process to the ready queue if it isn't already there.</div><div class="ttdef"><b>Definition</b> fcfs_scheduling.cpp:130</div></div>
+<div class="ttc" id="aclass_f_c_f_s_html_aa25dbe30ba9930b5a7c1a6d11758bd91"><div class="ttname"><a href="../../dd/dca/class_f_c_f_s.html#aa25dbe30ba9930b5a7c1a6d11758bd91">FCFS::scheduleForFcfs</a></div><div class="ttdeci">vector&lt; tuple&lt; S, T, E, double, double, double &gt; &gt; scheduleForFcfs()</div><div class="ttdoc">Algorithm for scheduling CPU processes according to the First Come First Serve(FCFS) scheduling algor...</div><div class="ttdef"><b>Definition</b> fcfs_scheduling.cpp:155</div></div>
+<div class="ttc" id="afcfs__scheduling_8cpp_html_a8f2b90cb64d63a7080965e66a05ccf86"><div class="ttname"><a href="#a8f2b90cb64d63a7080965e66a05ccf86">get_final_status</a></div><div class="ttdeci">vector&lt; tuple&lt; S, T, E, double, double, double &gt; &gt; get_final_status(vector&lt; tuple&lt; uint32_t, uint32_t, uint32_t &gt; &gt; input)</div><div class="ttdoc">Function to be used for testing purposes. This function guarantees the correct solution for FCFS sche...</div><div class="ttdef"><b>Definition</b> fcfs_scheduling.cpp:226</div></div>
 <div class="ttc" id="amatrix__exponentiation_8cpp_html_a600eaf353befc174637855795f12d258"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#a600eaf353befc174637855795f12d258">endl</a></div><div class="ttdeci">#define endl</div><div class="ttdef"><b>Definition</b> matrix_exponentiation.cpp:36</div></div>
 <div class="ttc" id="atime_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a></div><div class="ttdeci">T time(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">

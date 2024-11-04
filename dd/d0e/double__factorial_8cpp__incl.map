@@ -1,7 +1,9 @@
 <map id="math/double_factorial.cpp" name="math/double_factorial.cpp">
-<area shape="rect" id="Node000001" title="Compute double factorial: ." alt="" coords="5,5,176,31"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="13,79,77,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,33,63,67,59,64,81,30"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="102,79,173,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="100,30,123,64,119,67,96,33"/>
+<area shape="rect" id="Node000001" title="Compute double factorial: ." alt="" coords="39,5,209,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,70,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,34,65,71,62,67,108,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="94,79,154,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,31,127,63,122,63,122,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="178,79,249,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="141,29,188,67,185,71,138,34"/>
 </map>

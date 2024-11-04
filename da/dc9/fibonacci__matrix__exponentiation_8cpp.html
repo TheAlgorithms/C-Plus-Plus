@@ -112,21 +112,22 @@ $(function(){initNavTree('da/dc9/fibonacci__matrix__exponentiation_8cpp.html','.
 
 <p>This program computes the N^th Fibonacci number in modulo mod input argument .  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;cassert&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for fibonacci_matrix_exponentiation.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/ded/fibonacci__matrix__exponentiation_8cpp__incl.svg" width="252" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/ded/fibonacci__matrix__exponentiation_8cpp__incl.svg" width="336" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:abc3bc08249058d57cfc8f54a29d9cf9f" id="r_abc3bc08249058d57cfc8f54a29d9cf9f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc3bc08249058d57cfc8f54a29d9cf9f">fibo</a> (uint64_t n, uint64_t mod)</td></tr>
 <tr class="separator:abc3bc08249058d57cfc8f54a29d9cf9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1a3968e7947464bee7714f6d43b7002" id="r_ae1a3968e7947464bee7714f6d43b7002"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1a3968e7947464bee7714f6d43b7002">test</a> ()</td></tr>
-<tr class="separator:ae1a3968e7947464bee7714f6d43b7002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
+<tr class="separator:aa8dca7b867074164d5f45b0f3851269d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -163,68 +164,70 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   24</span>{</div>
-<div class="line"><span class="lineno">   25</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(2,0);</div>
-<div class="line"><span class="lineno">   26</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;uint64_t&gt;</a>&gt; transition(2,<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a>(2,0));</div>
-<div class="line"><span class="lineno">   27</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;uint64_t&gt;</a>&gt; Identity(2,<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a>(2,0));</div>
-<div class="line"><span class="lineno">   28</span>    n--;</div>
-<div class="line"><span class="lineno">   29</span>    <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>[0]=1, <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>[1]=1;</div>
-<div class="line"><span class="lineno">   30</span>    Identity[0][0]=1; Identity[0][1]=0;</div>
-<div class="line"><span class="lineno">   31</span>    Identity[1][0]=0; Identity[1][1]=1;</div>
-<div class="line"><span class="lineno">   32</span>     </div>
-<div class="line"><span class="lineno">   33</span>    transition[0][0]=0;</div>
-<div class="line"><span class="lineno">   34</span>    transition[1][0]=transition[1][1]=transition[0][1]=1;</div>
-<div class="line"><span class="lineno">   35</span>    </div>
-<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">while</span>(n)</div>
-<div class="line"><span class="lineno">   37</span>    {</div>
-<div class="line"><span class="lineno">   38</span>        <span class="keywordflow">if</span>(n%2)</div>
-<div class="line"><span class="lineno">   39</span>        {</div>
-<div class="line"><span class="lineno">   40</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;uint64_t&gt;</a>&gt; res(2, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a>(2,0));</div>
-<div class="line"><span class="lineno">   41</span>                    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;2;i++)</div>
-<div class="line"><span class="lineno">   42</span>            {</div>
-<div class="line"><span class="lineno">   43</span>                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0;j&lt;2;j++)</div>
-<div class="line"><span class="lineno">   44</span>                {</div>
-<div class="line"><span class="lineno">   45</span>                    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> k=0;<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>&lt;2;<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>++)</div>
-<div class="line"><span class="lineno">   46</span>                        {</div>
-<div class="line"><span class="lineno">   47</span>                            res[i][j]=(res[i][j]%mod+((Identity[i][<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>]%mod*transition[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>][j]%mod))%mod)%mod;</div>
-<div class="line"><span class="lineno">   48</span>                        }</div>
-<div class="line"><span class="lineno">   49</span>                }</div>
-<div class="line"><span class="lineno">   50</span>            }</div>
-<div class="line"><span class="lineno">   51</span>                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;2;i++)</div>
-<div class="line"><span class="lineno">   52</span>            {</div>
-<div class="line"><span class="lineno">   53</span>                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0;j&lt;2;j++)</div>
-<div class="line"><span class="lineno">   54</span>                {</div>
-<div class="line"><span class="lineno">   55</span>                Identity[i][j]=res[i][j];</div>
-<div class="line"><span class="lineno">   56</span>                }</div>
-<div class="line"><span class="lineno">   57</span>                }</div>
-<div class="line"><span class="lineno">   58</span>            n--;</div>
-<div class="line"><span class="lineno">   59</span>        }</div>
-<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">else</span>{</div>
-<div class="line"><span class="lineno">   61</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;uint64_t&gt;</a>&gt; res1(2, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a>(2,0));</div>
-<div class="line"><span class="lineno">   62</span>            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;2;i++)</div>
-<div class="line"><span class="lineno">   63</span>            {</div>
-<div class="line"><span class="lineno">   64</span>                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0;j&lt;2;j++)</div>
-<div class="line"><span class="lineno">   65</span>                {</div>
-<div class="line"><span class="lineno">   66</span>                    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> k=0;<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>&lt;2;<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>++)</div>
-<div class="line"><span class="lineno">   67</span>                    {</div>
-<div class="line"><span class="lineno">   68</span>                        res1[i][j]=(res1[i][j]%mod+((transition[i][<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>]%mod*transition[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>][j]%mod))%mod)%mod;</div>
-<div class="line"><span class="lineno">   69</span>                    }</div>
-<div class="line"><span class="lineno">   70</span>                }</div>
-<div class="line"><span class="lineno">   71</span>            }</div>
-<div class="line"><span class="lineno">   72</span>            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;2;i++)</div>
-<div class="line"><span class="lineno">   73</span>            {</div>
-<div class="line"><span class="lineno">   74</span>                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0;j&lt;2;j++)</div>
-<div class="line"><span class="lineno">   75</span>                {</div>
-<div class="line"><span class="lineno">   76</span>                    transition[i][j]=res1[i][j];</div>
-<div class="line"><span class="lineno">   77</span>                }</div>
-<div class="line"><span class="lineno">   78</span>            } </div>
-<div class="line"><span class="lineno">   79</span>            n=n/2;</div>
-<div class="line"><span class="lineno">   80</span>            }</div>
-<div class="line"><span class="lineno">   81</span>    }</div>
-<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">return</span> ((result[0]%mod*Identity[0][0]%mod)%mod+(result[1]%mod*Identity[1][0]%mod)%mod)%mod;</div>
-<div class="line"><span class="lineno">   83</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   25</span>                                        {</div>
+<div class="line"><span class="lineno">   26</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(2, 0);</div>
+<div class="line"><span class="lineno">   27</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;uint64_t&gt;</a>&gt; transition(2,</div>
+<div class="line"><span class="lineno">   28</span>                                                  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a>(2, 0));</div>
+<div class="line"><span class="lineno">   29</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;uint64_t&gt;</a>&gt; Identity(2, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a>(2, 0));</div>
+<div class="line"><span class="lineno">   30</span>    n--;</div>
+<div class="line"><span class="lineno">   31</span>    <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>[0] = 1, <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>[1] = 1;</div>
+<div class="line"><span class="lineno">   32</span>    Identity[0][0] = 1;</div>
+<div class="line"><span class="lineno">   33</span>    Identity[0][1] = 0;</div>
+<div class="line"><span class="lineno">   34</span>    Identity[1][0] = 0;</div>
+<div class="line"><span class="lineno">   35</span>    Identity[1][1] = 1;</div>
+<div class="line"><span class="lineno">   36</span> </div>
+<div class="line"><span class="lineno">   37</span>    transition[0][0] = 0;</div>
+<div class="line"><span class="lineno">   38</span>    transition[1][0] = transition[1][1] = transition[0][1] = 1;</div>
+<div class="line"><span class="lineno">   39</span> </div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">while</span> (n) {</div>
+<div class="line"><span class="lineno">   41</span>        <span class="keywordflow">if</span> (n % 2) {</div>
+<div class="line"><span class="lineno">   42</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;uint64_t&gt;</a>&gt; res(2,</div>
+<div class="line"><span class="lineno">   43</span>                                                   <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a>(2, 0));</div>
+<div class="line"><span class="lineno">   44</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 2; i++) {</div>
+<div class="line"><span class="lineno">   45</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; 2; j++) {</div>
+<div class="line"><span class="lineno">   46</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a> &lt; 2; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>++) {</div>
+<div class="line"><span class="lineno">   47</span>                        res[i][j] =</div>
+<div class="line"><span class="lineno">   48</span>                            (res[i][j] % mod +</div>
+<div class="line"><span class="lineno">   49</span>                             ((Identity[i][<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>] % mod * transition[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>][j] % mod)) %</div>
+<div class="line"><span class="lineno">   50</span>                                 mod) %</div>
+<div class="line"><span class="lineno">   51</span>                            mod;</div>
+<div class="line"><span class="lineno">   52</span>                    }</div>
+<div class="line"><span class="lineno">   53</span>                }</div>
+<div class="line"><span class="lineno">   54</span>            }</div>
+<div class="line"><span class="lineno">   55</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 2; i++) {</div>
+<div class="line"><span class="lineno">   56</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; 2; j++) {</div>
+<div class="line"><span class="lineno">   57</span>                    Identity[i][j] = res[i][j];</div>
+<div class="line"><span class="lineno">   58</span>                }</div>
+<div class="line"><span class="lineno">   59</span>            }</div>
+<div class="line"><span class="lineno">   60</span>            n--;</div>
+<div class="line"><span class="lineno">   61</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   62</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;uint64_t&gt;</a>&gt; res1(</div>
+<div class="line"><span class="lineno">   63</span>                2, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a>(2, 0));</div>
+<div class="line"><span class="lineno">   64</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 2; i++) {</div>
+<div class="line"><span class="lineno">   65</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; 2; j++) {</div>
+<div class="line"><span class="lineno">   66</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a> &lt; 2; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>++) {</div>
+<div class="line"><span class="lineno">   67</span>                        res1[i][j] =</div>
+<div class="line"><span class="lineno">   68</span>                            (res1[i][j] % mod + ((transition[i][<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>] % mod *</div>
+<div class="line"><span class="lineno">   69</span>                                                  transition[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>][j] % mod)) %</div>
+<div class="line"><span class="lineno">   70</span>                                                    mod) %</div>
+<div class="line"><span class="lineno">   71</span>                            mod;</div>
+<div class="line"><span class="lineno">   72</span>                    }</div>
+<div class="line"><span class="lineno">   73</span>                }</div>
+<div class="line"><span class="lineno">   74</span>            }</div>
+<div class="line"><span class="lineno">   75</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 2; i++) {</div>
+<div class="line"><span class="lineno">   76</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; 2; j++) {</div>
+<div class="line"><span class="lineno">   77</span>                    transition[i][j] = res1[i][j];</div>
+<div class="line"><span class="lineno">   78</span>                }</div>
+<div class="line"><span class="lineno">   79</span>            }</div>
+<div class="line"><span class="lineno">   80</span>            n = n / 2;</div>
+<div class="line"><span class="lineno">   81</span>        }</div>
+<div class="line"><span class="lineno">   82</span>    }</div>
+<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">return</span> ((result[0] % mod * Identity[0][0] % mod) % mod +</div>
+<div class="line"><span class="lineno">   84</span>            (result[1] % mod * Identity[1][0] % mod) % mod) %</div>
+<div class="line"><span class="lineno">   85</span>           mod;</div>
+<div class="line"><span class="lineno">   86</span>}</div>
 <div class="ttc" id="acomposite__simpson__rule_8cpp_html_a1b74d828b33760094906797042b89442"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">numerical_methods::simpson_method::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:117</div></div>
-<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> fibonacci_sum.cpp:76</div></div>
+<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> fibonacci_sum.cpp:77</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -244,18 +247,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Main function </p>
-<div class="fragment"><div class="line"><span class="lineno">  107</span>{</div>
-<div class="line"><span class="lineno">  108</span>    <a class="code hl_function" href="#ae1a3968e7947464bee7714f6d43b7002">test</a>();</div>
-<div class="line"><span class="lineno">  109</span>    uint64_t mod=1000000007;</div>
-<div class="line"><span class="lineno">  110</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;Enter the value of N: &quot;</span>;</div>
-<div class="line"><span class="lineno">  111</span>    uint64_t n=0; <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a>&gt;&gt;n; </div>
-<div class="line"><span class="lineno">  112</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;n&lt;&lt;<span class="stringliteral">&quot;th Fibonacci number in modulo &quot;</span> &lt;&lt; mod &lt;&lt; <span class="stringliteral">&quot;: &quot;</span>&lt;&lt; <a class="code hl_function" href="#abc3bc08249058d57cfc8f54a29d9cf9f">fibo</a>( n , mod) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  113</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  108</span>           {</div>
+<div class="line"><span class="lineno">  109</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();</div>
+<div class="line"><span class="lineno">  110</span>    uint64_t mod = 1000000007;</div>
+<div class="line"><span class="lineno">  111</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter the value of N: &quot;</span>;</div>
+<div class="line"><span class="lineno">  112</span>    uint64_t n = 0;</div>
+<div class="line"><span class="lineno">  113</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n;</div>
+<div class="line"><span class="lineno">  114</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot;th Fibonacci number in modulo &quot;</span> &lt;&lt; mod &lt;&lt; <span class="stringliteral">&quot;: &quot;</span></div>
+<div class="line"><span class="lineno">  115</span>              &lt;&lt; <a class="code hl_function" href="#abc3bc08249058d57cfc8f54a29d9cf9f">fibo</a>(n, mod) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  116</span>}</div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="afibonacci__matrix__exponentiation_8cpp_html_abc3bc08249058d57cfc8f54a29d9cf9f"><div class="ttname"><a href="#abc3bc08249058d57cfc8f54a29d9cf9f">fibo</a></div><div class="ttdeci">uint64_t fibo(uint64_t n, uint64_t mod)</div><div class="ttdef"><b>Definition</b> fibonacci_matrix_exponentiation.cpp:23</div></div>
-<div class="ttc" id="afibonacci__matrix__exponentiation_8cpp_html_ae1a3968e7947464bee7714f6d43b7002"><div class="ttname"><a href="#ae1a3968e7947464bee7714f6d43b7002">test</a></div><div class="ttdeci">void test()</div><div class="ttdef"><b>Definition</b> fibonacci_matrix_exponentiation.cpp:88</div></div>
+<div class="ttc" id="afibonacci__matrix__exponentiation_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdef"><b>Definition</b> fibonacci_matrix_exponentiation.cpp:91</div></div>
+<div class="ttc" id="afibonacci__matrix__exponentiation_8cpp_html_abc3bc08249058d57cfc8f54a29d9cf9f"><div class="ttname"><a href="#abc3bc08249058d57cfc8f54a29d9cf9f">fibo</a></div><div class="ttdeci">uint64_t fibo(uint64_t n, uint64_t mod)</div><div class="ttdef"><b>Definition</b> fibonacci_matrix_exponentiation.cpp:25</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -264,38 +269,46 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="ae1a3968e7947464bee7714f6d43b7002" name="ae1a3968e7947464bee7714f6d43b7002"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1a3968e7947464bee7714f6d43b7002">&#9670;&#160;</a></span>test()</h2>
+<a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8dca7b867074164d5f45b0f3851269d">&#9670;&#160;</a></span>test()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void test </td>
+          <td class="memname">static void test </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Function to test above algorithm </p>
-<div class="fragment"><div class="line"><span class="lineno">   89</span>{</div>
-<div class="line"><span class="lineno">   90</span>    assert(<a class="code hl_function" href="#abc3bc08249058d57cfc8f54a29d9cf9f">fibo</a>(6, 1000000007 ) == 8);</div>
-<div class="line"><span class="lineno">   91</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;test case:1 passed\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   92</span>    assert(<a class="code hl_function" href="#abc3bc08249058d57cfc8f54a29d9cf9f">fibo</a>(5, 1000000007  ) == 5);</div>
-<div class="line"><span class="lineno">   93</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;test case:2 passed\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   94</span>    assert(<a class="code hl_function" href="#abc3bc08249058d57cfc8f54a29d9cf9f">fibo</a>(10 , 1000000007) == 55);</div>
-<div class="line"><span class="lineno">   95</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;test case:3 passed\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   96</span>    assert(<a class="code hl_function" href="#abc3bc08249058d57cfc8f54a29d9cf9f">fibo</a>(500 , 100) == 25);</div>
+<div class="fragment"><div class="line"><span class="lineno">   91</span>                   {</div>
+<div class="line"><span class="lineno">   92</span>    assert(<a class="code hl_function" href="#abc3bc08249058d57cfc8f54a29d9cf9f">fibo</a>(6, 1000000007) == 8);</div>
+<div class="line"><span class="lineno">   93</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;test case:1 passed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   94</span>    assert(<a class="code hl_function" href="#abc3bc08249058d57cfc8f54a29d9cf9f">fibo</a>(5, 1000000007) == 5);</div>
+<div class="line"><span class="lineno">   95</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;test case:2 passed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   96</span>    assert(<a class="code hl_function" href="#abc3bc08249058d57cfc8f54a29d9cf9f">fibo</a>(10, 1000000007) == 55);</div>
 <div class="line"><span class="lineno">   97</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;test case:3 passed\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   98</span>    assert(<a class="code hl_function" href="#abc3bc08249058d57cfc8f54a29d9cf9f">fibo</a>(500 , 10000) == 4125);</div>
+<div class="line"><span class="lineno">   98</span>    assert(<a class="code hl_function" href="#abc3bc08249058d57cfc8f54a29d9cf9f">fibo</a>(500, 100) == 25);</div>
 <div class="line"><span class="lineno">   99</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;test case:3 passed\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  100</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;--All tests passed--\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  101</span>}</div>
+<div class="line"><span class="lineno">  100</span>    assert(<a class="code hl_function" href="#abc3bc08249058d57cfc8f54a29d9cf9f">fibo</a>(500, 10000) == 4125);</div>
+<div class="line"><span class="lineno">  101</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;test case:3 passed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  102</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;--All tests passed--\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  103</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/dc9/fibonacci__matrix__exponentiation_8cpp_ae1a3968e7947464bee7714f6d43b7002_cgraph.svg" width="144" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/dc9/fibonacci__matrix__exponentiation_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="144" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

@@ -114,19 +114,20 @@ $(function(){initNavTree('d6/db8/inv__sqrt_8cpp.html','../../'); initResizable(t
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for inv_sqrt.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d53/inv__sqrt_8cpp__incl.svg" width="328" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d53/inv__sqrt_8cpp__incl.svg" width="412" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ad219034bf5fba657f5035ec5a1d50f52" id="r_ad219034bf5fba657f5035ec5a1d50f52"><td class="memTemplParams" colspan="2">template&lt;typename T  = double, char iterations = 2&gt; </td></tr>
 <tr class="memitem:ad219034bf5fba657f5035ec5a1d50f52"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad219034bf5fba657f5035ec5a1d50f52">Fast_InvSqrt</a> (T x)</td></tr>
-<tr class="memdesc:ad219034bf5fba657f5035ec5a1d50f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">for numeric_limits  <br /></td></tr>
+<tr class="memdesc:ad219034bf5fba657f5035ec5a1d50f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">for <code><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a></code>  <br /></td></tr>
 <tr class="separator:ad219034bf5fba657f5035ec5a1d50f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2703e5cf3fecde8becd9066b9666b97" id="r_aa2703e5cf3fecde8becd9066b9666b97"><td class="memTemplParams" colspan="2">template&lt;typename T  = double&gt; </td></tr>
 <tr class="memitem:aa2703e5cf3fecde8becd9066b9666b97"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aa2703e5cf3fecde8becd9066b9666b97">Standard_InvSqrt</a> (T number)</td></tr>
@@ -168,8 +169,8 @@ template&lt;typename T  = double, char iterations = 2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>for numeric_limits </p>
-<p>for assert for <code><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a></code> for IO operations</p>
+<p>for <code><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a></code> </p>
+<p>for assert for IO operations for numeric_limits</p>
 <p>This is the function that calculates the fast inverse square root. The following code is the fast inverse square root implementation from Quake III Arena (Adapted for C++). More information can be found at <a href="https://en.wikipedia.org/wiki/Fast_inverse_square_root" target="_blank">Wikipedia</a> </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>floating type </td></tr>
@@ -247,7 +248,7 @@ template&lt;typename T  = double, char iterations = 2&gt; </div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="ainv__sqrt_8cpp_html_aa2703e5cf3fecde8becd9066b9666b97"><div class="ttname"><a href="#aa2703e5cf3fecde8becd9066b9666b97">Standard_InvSqrt</a></div><div class="ttdeci">T Standard_InvSqrt(T number)</div><div class="ttdoc">This is the function that calculates the fast inverse square root. The following code is the fast inv...</div><div class="ttdef"><b>Definition</b> inv_sqrt.cpp:59</div></div>
 <div class="ttc" id="ainv__sqrt_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> inv_sqrt.cpp:68</div></div>
-<div class="ttc" id="ainv__sqrt_8cpp_html_ad219034bf5fba657f5035ec5a1d50f52"><div class="ttname"><a href="#ad219034bf5fba657f5035ec5a1d50f52">Fast_InvSqrt</a></div><div class="ttdeci">T Fast_InvSqrt(T x)</div><div class="ttdoc">for numeric_limits</div><div class="ttdef"><b>Definition</b> inv_sqrt.cpp:28</div></div>
+<div class="ttc" id="ainv__sqrt_8cpp_html_ad219034bf5fba657f5035ec5a1d50f52"><div class="ttname"><a href="#ad219034bf5fba657f5035ec5a1d50f52">Fast_InvSqrt</a></div><div class="ttdeci">T Fast_InvSqrt(T x)</div><div class="ttdoc">for std::sqrt</div><div class="ttdef"><b>Definition</b> inv_sqrt.cpp:28</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

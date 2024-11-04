@@ -114,17 +114,18 @@ $(function(){initNavTree('d7/d56/count__bits__flip_8cpp.html','../../'); initRes
 <p>Implementation to [Count number of bits to be flipped to convert A to B] (<a href="https://www.geeksforgeeks.org/count-number-of-bits-to-be-flipped-to-convert-a-to-b/">https://www.geeksforgeeks.org/count-number-of-bits-to-be-flipped-to-convert-a-to-b/</a>) in an integer.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for count_bits_flip.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/dcc/count__bits__flip_8cpp__incl.svg" width="171" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/dcc/count__bits__flip_8cpp__incl.svg" width="255" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d81/namespacebit__manipulation.html">bit_manipulation</a></td></tr>
-<tr class="memdesc:d7/d81/namespacebit__manipulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">for IO operations <br /></td></tr>
+<tr class="memdesc:d7/d81/namespacebit__manipulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">for assert <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d38/namespacecount__bits__flip.html">count_bits_flip</a></td></tr>
 <tr class="memdesc:d4/d38/namespacecount__bits__flip"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for the <a href="https://www.geeksforgeeks.org/count-set-bits-in-an-integer/" target="_blank">count bits flip</a> implementation. <br /></td></tr>
@@ -177,19 +178,19 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>total number of bits needed to be flipped to convert A to B </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   44</span>                  {  <span class="comment">// int64_t is preferred over int so that</span></div>
-<div class="line"><span class="lineno">   45</span>                       <span class="comment">// no Overflow can be there.</span></div>
-<div class="line"><span class="lineno">   46</span> </div>
-<div class="line"><span class="lineno">   47</span>    <span class="keywordtype">int</span> count =</div>
-<div class="line"><span class="lineno">   48</span>        0;  <span class="comment">// &quot;count&quot; variable is used to count number of bits flip of the</span></div>
-<div class="line"><span class="lineno">   49</span>            <span class="comment">// number A to form B in binary representation of number &#39;n&#39;</span></div>
-<div class="line"><span class="lineno">   50</span>    A = A ^ B;</div>
-<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">while</span> (A) {</div>
-<div class="line"><span class="lineno">   52</span>        A = A &amp; (A - 1);</div>
-<div class="line"><span class="lineno">   53</span>        count++;</div>
-<div class="line"><span class="lineno">   54</span>    }</div>
-<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">return</span> count;</div>
-<div class="line"><span class="lineno">   56</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>                  {  <span class="comment">// int64_t is preferred over int so that</span></div>
+<div class="line"><span class="lineno">   46</span>                       <span class="comment">// no Overflow can be there.</span></div>
+<div class="line"><span class="lineno">   47</span> </div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordtype">int</span> count =</div>
+<div class="line"><span class="lineno">   49</span>        0;  <span class="comment">// &quot;count&quot; variable is used to count number of bits flip of the</span></div>
+<div class="line"><span class="lineno">   50</span>            <span class="comment">// number A to form B in binary representation of number &#39;n&#39;</span></div>
+<div class="line"><span class="lineno">   51</span>    A = A ^ B;</div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">while</span> (A) {</div>
+<div class="line"><span class="lineno">   53</span>        A = A &amp; (A - 1);</div>
+<div class="line"><span class="lineno">   54</span>        count++;</div>
+<div class="line"><span class="lineno">   55</span>    }</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">return</span> count;</div>
+<div class="line"><span class="lineno">   57</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -215,11 +216,11 @@ Here is the call graph for this function:</div>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   85</span>           {</div>
-<div class="line"><span class="lineno">   86</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">   87</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   88</span>}</div>
-<div class="ttc" id="acount__bits__flip_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> count_bits_flip.cpp:64</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   86</span>           {</div>
+<div class="line"><span class="lineno">   87</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   89</span>}</div>
+<div class="ttc" id="acount__bits__flip_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> count_bits_flip.cpp:65</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -253,23 +254,23 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   64</span>                   {</div>
-<div class="line"><span class="lineno">   65</span>    <span class="comment">// A = 10, B = 20 return 4</span></div>
-<div class="line"><span class="lineno">   66</span>    assert(bit_manipulation::count_bits_flip::countBitsFlip(10, 20) == 4);</div>
-<div class="line"><span class="lineno">   67</span>    <span class="comment">// A = 20, B = 25 return 3</span></div>
-<div class="line"><span class="lineno">   68</span>    assert(bit_manipulation::count_bits_flip::countBitsFlip(20, 25) == 3);</div>
-<div class="line"><span class="lineno">   69</span>    <span class="comment">// A = 7, B = 10 return 3</span></div>
-<div class="line"><span class="lineno">   70</span>    assert(bit_manipulation::count_bits_flip::countBitsFlip(7, 10) == 3);</div>
-<div class="line"><span class="lineno">   71</span>    <span class="comment">// A = 17, B = 25 return 1</span></div>
-<div class="line"><span class="lineno">   72</span>    assert(bit_manipulation::count_bits_flip::countBitsFlip(17, 25) == 1);</div>
-<div class="line"><span class="lineno">   73</span>    <span class="comment">// A = 11, B = 8 return 2</span></div>
-<div class="line"><span class="lineno">   74</span>    assert(bit_manipulation::count_bits_flip::countBitsFlip(11, 8) == 2);</div>
-<div class="line"><span class="lineno">   75</span>    <span class="comment">// A = 21, B = 22 return 2</span></div>
-<div class="line"><span class="lineno">   76</span>    assert(bit_manipulation::count_bits_flip::countBitsFlip(21, 22) == 2);</div>
-<div class="line"><span class="lineno">   77</span>    <span class="comment">// A = 7, B = 786 return 5</span></div>
-<div class="line"><span class="lineno">   78</span>    assert(bit_manipulation::count_bits_flip::countBitsFlip(7, 786) == 5);</div>
-<div class="line"><span class="lineno">   79</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All test cases successfully passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   80</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   65</span>                   {</div>
+<div class="line"><span class="lineno">   66</span>    <span class="comment">// A = 10, B = 20 return 4</span></div>
+<div class="line"><span class="lineno">   67</span>    assert(bit_manipulation::count_bits_flip::countBitsFlip(10, 20) == 4);</div>
+<div class="line"><span class="lineno">   68</span>    <span class="comment">// A = 20, B = 25 return 3</span></div>
+<div class="line"><span class="lineno">   69</span>    assert(bit_manipulation::count_bits_flip::countBitsFlip(20, 25) == 3);</div>
+<div class="line"><span class="lineno">   70</span>    <span class="comment">// A = 7, B = 10 return 3</span></div>
+<div class="line"><span class="lineno">   71</span>    assert(bit_manipulation::count_bits_flip::countBitsFlip(7, 10) == 3);</div>
+<div class="line"><span class="lineno">   72</span>    <span class="comment">// A = 17, B = 25 return 1</span></div>
+<div class="line"><span class="lineno">   73</span>    assert(bit_manipulation::count_bits_flip::countBitsFlip(17, 25) == 1);</div>
+<div class="line"><span class="lineno">   74</span>    <span class="comment">// A = 11, B = 8 return 2</span></div>
+<div class="line"><span class="lineno">   75</span>    assert(bit_manipulation::count_bits_flip::countBitsFlip(11, 8) == 2);</div>
+<div class="line"><span class="lineno">   76</span>    <span class="comment">// A = 21, B = 22 return 2</span></div>
+<div class="line"><span class="lineno">   77</span>    assert(bit_manipulation::count_bits_flip::countBitsFlip(21, 22) == 2);</div>
+<div class="line"><span class="lineno">   78</span>    <span class="comment">// A = 7, B = 786 return 5</span></div>
+<div class="line"><span class="lineno">   79</span>    assert(bit_manipulation::count_bits_flip::countBitsFlip(7, 786) == 5);</div>
+<div class="line"><span class="lineno">   80</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All test cases successfully passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   81</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">

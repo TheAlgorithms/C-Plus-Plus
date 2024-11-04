@@ -114,17 +114,18 @@ $(function(){initNavTree('d5/db5/set__kth__bit_8cpp.html','../../'); initResizab
 <p>Implementation to [From the right, set the Kth bit in the binary representation of N] (<a href="https://practice.geeksforgeeks.org/problems/set-kth-bit3724/1/">https://practice.geeksforgeeks.org/problems/set-kth-bit3724/1/</a>) in an integer.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for set_kth_bit.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d43/set__kth__bit_8cpp__incl.svg" width="171" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d43/set__kth__bit_8cpp__incl.svg" width="255" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d81/namespacebit__manipulation.html">bit_manipulation</a></td></tr>
-<tr class="memdesc:d7/d81/namespacebit__manipulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">for IO operations <br /></td></tr>
+<tr class="memdesc:d7/d81/namespacebit__manipulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">for assert <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d88/namespaceset_kth_bit.html">setKthBit</a></td></tr>
 <tr class="memdesc:d8/d88/namespaceset_kth_bit"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for the [From the right, set the Kth bit in the binary representation of N] (<a href="https://practice.geeksforgeeks.org/problems/set-kth-bit3724/1/">https://practice.geeksforgeeks.org/problems/set-kth-bit3724/1/</a>) implementation. <br /></td></tr>
@@ -165,11 +166,11 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   76</span>           {</div>
-<div class="line"><span class="lineno">   77</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   79</span>}</div>
-<div class="ttc" id="aset__kth__bit_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> set_kth_bit.cpp:60</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   77</span>           {</div>
+<div class="line"><span class="lineno">   78</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">   79</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   80</span>}</div>
+<div class="ttc" id="aset__kth__bit_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> set_kth_bit.cpp:61</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -205,18 +206,18 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>returns an integer after setting the K'th bit in N </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   43</span>                                       {  <span class="comment">// int64_t is preferred over int so</span></div>
-<div class="line"><span class="lineno">   44</span>                                            <span class="comment">// that no Overflow can be there.</span></div>
-<div class="line"><span class="lineno">   45</span> </div>
-<div class="line"><span class="lineno">   46</span>    <span class="keywordtype">int</span> pos =</div>
-<div class="line"><span class="lineno">   47</span>        1 &lt;&lt; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>;  <span class="comment">// &quot;pos&quot; variable is used to store 1 at kth postion and</span></div>
-<div class="line"><span class="lineno">   48</span>                 <span class="comment">// rest bits are 0. in binary representation of number &#39;n&#39;</span></div>
-<div class="line"><span class="lineno">   49</span> </div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> | pos;  <span class="comment">// by taking or with the pos and the N we set the bit of N</span></div>
-<div class="line"><span class="lineno">   51</span>                     <span class="comment">// at kth position.</span></div>
-<div class="line"><span class="lineno">   52</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>                                       {  <span class="comment">// int64_t is preferred over int so</span></div>
+<div class="line"><span class="lineno">   45</span>                                            <span class="comment">// that no Overflow can be there.</span></div>
+<div class="line"><span class="lineno">   46</span> </div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordtype">int</span> pos =</div>
+<div class="line"><span class="lineno">   48</span>        1 &lt;&lt; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>;  <span class="comment">// &quot;pos&quot; variable is used to store 1 at kth postion and</span></div>
+<div class="line"><span class="lineno">   49</span>                 <span class="comment">// rest bits are 0. in binary representation of number &#39;n&#39;</span></div>
+<div class="line"><span class="lineno">   50</span> </div>
+<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> | pos;  <span class="comment">// by taking or with the pos and the N we set the bit of N</span></div>
+<div class="line"><span class="lineno">   52</span>                     <span class="comment">// at kth position.</span></div>
+<div class="line"><span class="lineno">   53</span>}</div>
 <div class="ttc" id="acomposite__simpson__rule_8cpp_html_a1b74d828b33760094906797042b89442"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">numerical_methods::simpson_method::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:117</div></div>
-<div class="ttc" id="adata__structures_2sparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:47</div></div>
+<div class="ttc" id="adata__structures_2sparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:48</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -245,18 +246,18 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   60</span>                   {</div>
-<div class="line"><span class="lineno">   61</span>    <span class="comment">// n = 10,2 return 14</span></div>
-<div class="line"><span class="lineno">   62</span>    assert(bit_manipulation::set_kth_bit::setKthBit(10, 2) == 14);</div>
-<div class="line"><span class="lineno">   63</span>    <span class="comment">// n = 25,1 return 27</span></div>
-<div class="line"><span class="lineno">   64</span>    assert(bit_manipulation::set_kth_bit::setKthBit(25, 1) == 27);</div>
-<div class="line"><span class="lineno">   65</span>    <span class="comment">// n = 400001,5 return 400033</span></div>
-<div class="line"><span class="lineno">   66</span>    assert(bit_manipulation::set_kth_bit::setKthBit(400001, 5) == 400033);</div>
-<div class="line"><span class="lineno">   67</span>    <span class="comment">// n = 123 return 123</span></div>
-<div class="line"><span class="lineno">   68</span>    assert(bit_manipulation::set_kth_bit::setKthBit(123, 3) == 123);</div>
-<div class="line"><span class="lineno">   69</span> </div>
-<div class="line"><span class="lineno">   70</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All test cases successfully passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   71</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   61</span>                   {</div>
+<div class="line"><span class="lineno">   62</span>    <span class="comment">// n = 10,2 return 14</span></div>
+<div class="line"><span class="lineno">   63</span>    assert(bit_manipulation::set_kth_bit::setKthBit(10, 2) == 14);</div>
+<div class="line"><span class="lineno">   64</span>    <span class="comment">// n = 25,1 return 27</span></div>
+<div class="line"><span class="lineno">   65</span>    assert(bit_manipulation::set_kth_bit::setKthBit(25, 1) == 27);</div>
+<div class="line"><span class="lineno">   66</span>    <span class="comment">// n = 400001,5 return 400033</span></div>
+<div class="line"><span class="lineno">   67</span>    assert(bit_manipulation::set_kth_bit::setKthBit(400001, 5) == 400033);</div>
+<div class="line"><span class="lineno">   68</span>    <span class="comment">// n = 123 return 123</span></div>
+<div class="line"><span class="lineno">   69</span>    assert(bit_manipulation::set_kth_bit::setKthBit(123, 3) == 123);</div>
+<div class="line"><span class="lineno">   70</span> </div>
+<div class="line"><span class="lineno">   71</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All test cases successfully passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   72</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">

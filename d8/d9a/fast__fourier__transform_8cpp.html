@@ -116,12 +116,13 @@ $(function(){initNavTree('d8/d9a/fast__fourier__transform_8cpp.html','../../'); 
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;complex&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for fast_fourier_transform.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d15/fast__fourier__transform_8cpp__incl.svg" width="428" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d15/fast__fourier__transform_8cpp__incl.svg" width="512" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -174,12 +175,12 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  162</span>                                       {</div>
-<div class="line"><span class="lineno">  163</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">//  run self-test implementations</span></div>
-<div class="line"><span class="lineno">  164</span>             <span class="comment">//  with 2 defined test cases</span></div>
-<div class="line"><span class="lineno">  165</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  166</span>}</div>
-<div class="ttc" id="afast__fourier__transform_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> fast_fourier_transform.cpp:104</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  163</span>                                       {</div>
+<div class="line"><span class="lineno">  164</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">//  run self-test implementations</span></div>
+<div class="line"><span class="lineno">  165</span>             <span class="comment">//  with 2 defined test cases</span></div>
+<div class="line"><span class="lineno">  166</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  167</span>}</div>
+<div class="ttc" id="afast__fourier__transform_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> fast_fourier_transform.cpp:105</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -221,59 +222,59 @@ Here is the call graph for this function:</div>
 <p>Temporary variable used to delete memory location of o2</p>
 <p>Comparing for both real and imaginary values for test case 1</p>
 <p>Comparing for both real and imaginary values for test case 2</p>
-<div class="fragment"><div class="line"><span class="lineno">  104</span>                   {</div>
-<div class="line"><span class="lineno">  105</span>    <span class="comment">/* descriptions of the following test */</span></div>
-<div class="line"><span class="lineno">  106</span> </div>
-<div class="line"><span class="lineno">  107</span>    <span class="keyword">auto</span> *t1 = <span class="keyword">new</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>[2];  <span class="comment">/// Test case 1</span></div>
-<div class="line"><span class="lineno">  108</span>    <span class="keyword">auto</span> *t2 = <span class="keyword">new</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>[4];  <span class="comment">/// Test case 2</span></div>
-<div class="line"><span class="lineno">  109</span> </div>
-<div class="line"><span class="lineno">  110</span>    t1[0] = {1, 0};</div>
-<div class="line"><span class="lineno">  111</span>    t1[1] = {2, 0};</div>
-<div class="line"><span class="lineno">  112</span>    t2[0] = {1, 0};</div>
-<div class="line"><span class="lineno">  113</span>    t2[1] = {2, 0};</div>
-<div class="line"><span class="lineno">  114</span>    t2[2] = {3, 0};</div>
-<div class="line"><span class="lineno">  115</span>    t2[3] = {4, 0};</div>
-<div class="line"><span class="lineno">  116</span> </div>
-<div class="line"><span class="lineno">  117</span>    uint8_t n1 = 2;</div>
-<div class="line"><span class="lineno">  118</span>    uint8_t n2 = 4;</div>
-<div class="line"><span class="lineno">  119</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::complex&lt;double&gt;</a>&gt; r1 = {</div>
-<div class="line"><span class="lineno">  120</span>        {3, 0}, {-1, 0}};  <span class="comment">/// True Answer for test case 1</span></div>
-<div class="line"><span class="lineno">  121</span> </div>
-<div class="line"><span class="lineno">  122</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::complex&lt;double&gt;</a>&gt; r2 = {</div>
-<div class="line"><span class="lineno">  123</span>        {10, 0}, {-2, -2}, {-2, 0}, {-2, 2}};  <span class="comment">/// True Answer for test case 2</span></div>
-<div class="line"><span class="lineno">  124</span> </div>
-<div class="line"><span class="lineno">  125</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a> *o1 = <a class="code hl_function" href="../../d1/de0/namespacenumerical__methods.html#a158fd271b9a53e8f3f60b08b18857150">numerical_methods::FastFourierTransform</a>(t1, n1);</div>
-<div class="line"><span class="lineno">  126</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a> *t3 =</div>
-<div class="line"><span class="lineno">  127</span>        o1;  <span class="comment">/// Temporary variable used to delete memory location of o1</span></div>
-<div class="line"><span class="lineno">  128</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a> *o2 = <a class="code hl_function" href="../../d1/de0/namespacenumerical__methods.html#a158fd271b9a53e8f3f60b08b18857150">numerical_methods::FastFourierTransform</a>(t2, n2);</div>
-<div class="line"><span class="lineno">  129</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a> *t4 =</div>
-<div class="line"><span class="lineno">  130</span>        o2;  <span class="comment">/// Temporary variable used to delete memory location of o2</span></div>
-<div class="line"><span class="lineno">  131</span>    <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; n1; i++) {</div>
-<div class="line"><span class="lineno">  132</span>        assert((r1[i].real() - o1-&gt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex/real.html">real</a>() &lt; 0.000000000001) &amp;&amp;</div>
-<div class="line"><span class="lineno">  133</span>               (r1[i].imag() - o1-&gt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex/imag.html">imag</a>() &lt;</div>
-<div class="line"><span class="lineno">  134</span>                0.000000000001));  <span class="comment">/// Comparing for both real and imaginary</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  135</span><span class="comment">                                   /// values for test case 1</span></div>
-<div class="line"><span class="lineno">  136</span><span class="comment"></span>        o1++;</div>
-<div class="line"><span class="lineno">  137</span>    }</div>
-<div class="line"><span class="lineno">  138</span> </div>
-<div class="line"><span class="lineno">  139</span>    <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; n2; i++) {</div>
-<div class="line"><span class="lineno">  140</span>        assert((r2[i].real() - o2-&gt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex/real.html">real</a>() &lt; 0.000000000001) &amp;&amp;</div>
-<div class="line"><span class="lineno">  141</span>               (r2[i].imag() - o2-&gt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex/imag.html">imag</a>() &lt;</div>
-<div class="line"><span class="lineno">  142</span>                0.000000000001));  <span class="comment">/// Comparing for both real and imaginary</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  143</span><span class="comment">                                   /// values for test case 2</span></div>
-<div class="line"><span class="lineno">  144</span><span class="comment"></span>        o2++;</div>
-<div class="line"><span class="lineno">  145</span>    }</div>
-<div class="line"><span class="lineno">  146</span> </div>
-<div class="line"><span class="lineno">  147</span>    <span class="keyword">delete</span>[] t1;</div>
-<div class="line"><span class="lineno">  148</span>    <span class="keyword">delete</span>[] t2;</div>
-<div class="line"><span class="lineno">  149</span>    <span class="keyword">delete</span>[] t3;</div>
-<div class="line"><span class="lineno">  150</span>    <span class="keyword">delete</span>[] t4;</div>
-<div class="line"><span class="lineno">  151</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  152</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  105</span>                   {</div>
+<div class="line"><span class="lineno">  106</span>    <span class="comment">/* descriptions of the following test */</span></div>
+<div class="line"><span class="lineno">  107</span> </div>
+<div class="line"><span class="lineno">  108</span>    <span class="keyword">auto</span> *t1 = <span class="keyword">new</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>[2];  <span class="comment">/// Test case 1</span></div>
+<div class="line"><span class="lineno">  109</span>    <span class="keyword">auto</span> *t2 = <span class="keyword">new</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>[4];  <span class="comment">/// Test case 2</span></div>
+<div class="line"><span class="lineno">  110</span> </div>
+<div class="line"><span class="lineno">  111</span>    t1[0] = {1, 0};</div>
+<div class="line"><span class="lineno">  112</span>    t1[1] = {2, 0};</div>
+<div class="line"><span class="lineno">  113</span>    t2[0] = {1, 0};</div>
+<div class="line"><span class="lineno">  114</span>    t2[1] = {2, 0};</div>
+<div class="line"><span class="lineno">  115</span>    t2[2] = {3, 0};</div>
+<div class="line"><span class="lineno">  116</span>    t2[3] = {4, 0};</div>
+<div class="line"><span class="lineno">  117</span> </div>
+<div class="line"><span class="lineno">  118</span>    uint8_t n1 = 2;</div>
+<div class="line"><span class="lineno">  119</span>    uint8_t n2 = 4;</div>
+<div class="line"><span class="lineno">  120</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::complex&lt;double&gt;</a>&gt; r1 = {</div>
+<div class="line"><span class="lineno">  121</span>        {3, 0}, {-1, 0}};  <span class="comment">/// True Answer for test case 1</span></div>
+<div class="line"><span class="lineno">  122</span> </div>
+<div class="line"><span class="lineno">  123</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::complex&lt;double&gt;</a>&gt; r2 = {</div>
+<div class="line"><span class="lineno">  124</span>        {10, 0}, {-2, -2}, {-2, 0}, {-2, 2}};  <span class="comment">/// True Answer for test case 2</span></div>
+<div class="line"><span class="lineno">  125</span> </div>
+<div class="line"><span class="lineno">  126</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a> *o1 = <a class="code hl_function" href="../../d1/de0/namespacenumerical__methods.html#a158fd271b9a53e8f3f60b08b18857150">numerical_methods::FastFourierTransform</a>(t1, n1);</div>
+<div class="line"><span class="lineno">  127</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a> *t3 =</div>
+<div class="line"><span class="lineno">  128</span>        o1;  <span class="comment">/// Temporary variable used to delete memory location of o1</span></div>
+<div class="line"><span class="lineno">  129</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a> *o2 = <a class="code hl_function" href="../../d1/de0/namespacenumerical__methods.html#a158fd271b9a53e8f3f60b08b18857150">numerical_methods::FastFourierTransform</a>(t2, n2);</div>
+<div class="line"><span class="lineno">  130</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a> *t4 =</div>
+<div class="line"><span class="lineno">  131</span>        o2;  <span class="comment">/// Temporary variable used to delete memory location of o2</span></div>
+<div class="line"><span class="lineno">  132</span>    <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; n1; i++) {</div>
+<div class="line"><span class="lineno">  133</span>        assert((r1[i].real() - o1-&gt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex/real.html">real</a>() &lt; 0.000000000001) &amp;&amp;</div>
+<div class="line"><span class="lineno">  134</span>               (r1[i].imag() - o1-&gt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex/imag.html">imag</a>() &lt;</div>
+<div class="line"><span class="lineno">  135</span>                0.000000000001));  <span class="comment">/// Comparing for both real and imaginary</span><span class="comment"></span></div>
+<div class="line"><span class="lineno">  136</span><span class="comment">                                   /// values for test case 1</span></div>
+<div class="line"><span class="lineno">  137</span><span class="comment"></span>        o1++;</div>
+<div class="line"><span class="lineno">  138</span>    }</div>
+<div class="line"><span class="lineno">  139</span> </div>
+<div class="line"><span class="lineno">  140</span>    <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; n2; i++) {</div>
+<div class="line"><span class="lineno">  141</span>        assert((r2[i].real() - o2-&gt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex/real.html">real</a>() &lt; 0.000000000001) &amp;&amp;</div>
+<div class="line"><span class="lineno">  142</span>               (r2[i].imag() - o2-&gt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex/imag.html">imag</a>() &lt;</div>
+<div class="line"><span class="lineno">  143</span>                0.000000000001));  <span class="comment">/// Comparing for both real and imaginary</span><span class="comment"></span></div>
+<div class="line"><span class="lineno">  144</span><span class="comment">                                   /// values for test case 2</span></div>
+<div class="line"><span class="lineno">  145</span><span class="comment"></span>        o2++;</div>
+<div class="line"><span class="lineno">  146</span>    }</div>
+<div class="line"><span class="lineno">  147</span> </div>
+<div class="line"><span class="lineno">  148</span>    <span class="keyword">delete</span>[] t1;</div>
+<div class="line"><span class="lineno">  149</span>    <span class="keyword">delete</span>[] t2;</div>
+<div class="line"><span class="lineno">  150</span>    <span class="keyword">delete</span>[] t3;</div>
+<div class="line"><span class="lineno">  151</span>    <span class="keyword">delete</span>[] t4;</div>
+<div class="line"><span class="lineno">  152</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  153</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="acomplex_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex</a></div></div>
 <div class="ttc" id="aimag_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/complex/imag.html">std::complex::imag</a></div><div class="ttdeci">T imag(T... args)</div></div>
-<div class="ttc" id="anamespacenumerical__methods_html_a158fd271b9a53e8f3f60b08b18857150"><div class="ttname"><a href="../../d1/de0/namespacenumerical__methods.html#a158fd271b9a53e8f3f60b08b18857150">numerical_methods::FastFourierTransform</a></div><div class="ttdeci">std::complex&lt; double &gt; * FastFourierTransform(std::complex&lt; double &gt; *p, uint8_t n)</div><div class="ttdoc">FastFourierTransform is a recursive function which returns list of complex numbers.</div><div class="ttdef"><b>Definition</b> fast_fourier_transform.cpp:41</div></div>
+<div class="ttc" id="anamespacenumerical__methods_html_a158fd271b9a53e8f3f60b08b18857150"><div class="ttname"><a href="../../d1/de0/namespacenumerical__methods.html#a158fd271b9a53e8f3f60b08b18857150">numerical_methods::FastFourierTransform</a></div><div class="ttdeci">std::complex&lt; double &gt; * FastFourierTransform(std::complex&lt; double &gt; *p, uint8_t n)</div><div class="ttdoc">FastFourierTransform is a recursive function which returns list of complex numbers.</div><div class="ttdef"><b>Definition</b> fast_fourier_transform.cpp:42</div></div>
 <div class="ttc" id="areal_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/complex/real.html">std::complex::real</a></div><div class="ttdeci">T real(T... args)</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><div class="dynheader">

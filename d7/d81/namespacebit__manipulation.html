@@ -110,7 +110,7 @@ $(function(){initNavTree('d7/d81/namespacebit__manipulation.html','../../'); ini
 </div><!--header-->
 <div class="contents">
 
-<p>for IO operations  
+<p>for assert  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -123,20 +123,19 @@ Functions</h2></td></tr>
 <tr class="separator:a5032470c9974bbd6ec254bf296530a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>for IO operations </p>
-<p>Bit manipulation algorithms.</p>
-<p>for io operations</p>
+<div class="textblock"><p>for assert </p>
 <p>Program to generate n-bit <a href="https://en.wikipedia.org/wiki/Gray_code" target="_blank">Gray code</a></p>
 <p>storing the numbers</p>
-<p>for assert</p>
+<p>for IO operations</p>
 <p>Bit manipulation algorithms</p>
 <p>for assert for IO operations</p>
 <p>Bit manipulation algorithms</p>
 <p>Gray code is a binary numeral system where consecutive values differ in exactly 1 bit. The following code offers one of many possible Gray codes given some pre-determined number of bits. for gray code representation for assert for IO operations for vector data structure</p>
 <p>Bit manipulation algorithms</p>
-<p>for assert</p>
+<p>for io operations</p>
 <p>Bit Manipulation algorithms</p>
-<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a> for assert for IO operations for limits of integral types for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> </p>
+<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a> for IO operations for limits of integral types for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
+<p>Bit manipulation algorithms </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a5032470c9974bbd6ec254bf296530a5f" name="a5032470c9974bbd6ec254bf296530a5f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5032470c9974bbd6ec254bf296530a5f">&#9670;&#160;</a></span>isPowerOfTwo()</h2>
@@ -161,17 +160,17 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>either true or false </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   31</span>                                 {  <span class="comment">// int64_t is preferred over int so that</span></div>
-<div class="line"><span class="lineno">   32</span>                                      <span class="comment">// no Overflow can be there.</span></div>
-<div class="line"><span class="lineno">   33</span> </div>
-<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">return</span> n &gt; 0 &amp;&amp; !(n &amp; n - 1);  <span class="comment">// If we subtract a power of 2 numbers by 1</span></div>
-<div class="line"><span class="lineno">   35</span>    <span class="comment">// then all unset bits after the only set bit become set; and the set bit</span></div>
-<div class="line"><span class="lineno">   36</span>    <span class="comment">// becomes unset.</span></div>
-<div class="line"><span class="lineno">   37</span> </div>
-<div class="line"><span class="lineno">   38</span>    <span class="comment">// If a number n is a power of 2 then bitwise and of n-1 and n will be zero.</span></div>
-<div class="line"><span class="lineno">   39</span>    <span class="comment">// The expression n&amp;(n-1) will not work when n is 0.</span></div>
-<div class="line"><span class="lineno">   40</span>    <span class="comment">// To handle this case also, our expression will become n&amp; (!n&amp;(n-1))</span></div>
-<div class="line"><span class="lineno">   41</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>                                 {  <span class="comment">// int64_t is preferred over int so that</span></div>
+<div class="line"><span class="lineno">   33</span>                                      <span class="comment">// no Overflow can be there.</span></div>
+<div class="line"><span class="lineno">   34</span> </div>
+<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">return</span> n &gt; 0 &amp;&amp; !(n &amp; n - 1);  <span class="comment">// If we subtract a power of 2 numbers by 1</span></div>
+<div class="line"><span class="lineno">   36</span>    <span class="comment">// then all unset bits after the only set bit become set; and the set bit</span></div>
+<div class="line"><span class="lineno">   37</span>    <span class="comment">// becomes unset.</span></div>
+<div class="line"><span class="lineno">   38</span> </div>
+<div class="line"><span class="lineno">   39</span>    <span class="comment">// If a number n is a power of 2 then bitwise and of n-1 and n will be zero.</span></div>
+<div class="line"><span class="lineno">   40</span>    <span class="comment">// The expression n&amp;(n-1) will not work when n is 0.</span></div>
+<div class="line"><span class="lineno">   41</span>    <span class="comment">// To handle this case also, our expression will become n&amp; (!n&amp;(n-1))</span></div>
+<div class="line"><span class="lineno">   42</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -198,40 +197,40 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a number </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   32</span>                                        {</div>
-<div class="line"><span class="lineno">   33</span>    uint64_t rightOne = 0;</div>
-<div class="line"><span class="lineno">   34</span>    uint64_t nextHigherOneBit = 0;</div>
-<div class="line"><span class="lineno">   35</span>    uint64_t rightOnesPattern = 0;</div>
-<div class="line"><span class="lineno">   36</span> </div>
-<div class="line"><span class="lineno">   37</span>    uint64_t next = 0;</div>
-<div class="line"><span class="lineno">   38</span> </div>
-<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">if</span> (x) {</div>
-<div class="line"><span class="lineno">   40</span>        <span class="comment">// right most set bit</span></div>
-<div class="line"><span class="lineno">   41</span>        rightOne = x &amp; -<span class="keyword">static_cast&lt;</span><span class="keywordtype">signed</span><span class="keyword">&gt;</span>(x);</div>
-<div class="line"><span class="lineno">   42</span> </div>
-<div class="line"><span class="lineno">   43</span>        <span class="comment">// reset the pattern and set next higher bit</span></div>
-<div class="line"><span class="lineno">   44</span>        <span class="comment">// left part of x will be here</span></div>
-<div class="line"><span class="lineno">   45</span>        nextHigherOneBit = x + rightOne;</div>
-<div class="line"><span class="lineno">   46</span> </div>
-<div class="line"><span class="lineno">   47</span>        <span class="comment">// nextHigherOneBit is now part [D] of the above explanation.</span></div>
-<div class="line"><span class="lineno">   48</span> </div>
-<div class="line"><span class="lineno">   49</span>        <span class="comment">// isolate the pattern</span></div>
-<div class="line"><span class="lineno">   50</span>        rightOnesPattern = x ^ nextHigherOneBit;</div>
-<div class="line"><span class="lineno">   51</span> </div>
-<div class="line"><span class="lineno">   52</span>        <span class="comment">// right adjust pattern</span></div>
-<div class="line"><span class="lineno">   53</span>        rightOnesPattern = (rightOnesPattern) / rightOne;</div>
-<div class="line"><span class="lineno">   54</span> </div>
-<div class="line"><span class="lineno">   55</span>        <span class="comment">// correction factor</span></div>
-<div class="line"><span class="lineno">   56</span>        rightOnesPattern &gt;&gt;= 2;</div>
-<div class="line"><span class="lineno">   57</span> </div>
-<div class="line"><span class="lineno">   58</span>        <span class="comment">// rightOnesPattern is now part [A] of the above explanation.</span></div>
-<div class="line"><span class="lineno">   59</span> </div>
-<div class="line"><span class="lineno">   60</span>        <span class="comment">// integrate new pattern (Add [D] and [A])</span></div>
-<div class="line"><span class="lineno">   61</span>        next = nextHigherOneBit | rightOnesPattern;</div>
-<div class="line"><span class="lineno">   62</span>    }</div>
-<div class="line"><span class="lineno">   63</span> </div>
-<div class="line"><span class="lineno">   64</span>    <span class="keywordflow">return</span> next;</div>
-<div class="line"><span class="lineno">   65</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>                                        {</div>
+<div class="line"><span class="lineno">   34</span>    uint64_t rightOne = 0;</div>
+<div class="line"><span class="lineno">   35</span>    uint64_t nextHigherOneBit = 0;</div>
+<div class="line"><span class="lineno">   36</span>    uint64_t rightOnesPattern = 0;</div>
+<div class="line"><span class="lineno">   37</span> </div>
+<div class="line"><span class="lineno">   38</span>    uint64_t next = 0;</div>
+<div class="line"><span class="lineno">   39</span> </div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">if</span> (x) {</div>
+<div class="line"><span class="lineno">   41</span>        <span class="comment">// right most set bit</span></div>
+<div class="line"><span class="lineno">   42</span>        rightOne = x &amp; -<span class="keyword">static_cast&lt;</span><span class="keywordtype">signed</span><span class="keyword">&gt;</span>(x);</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>        <span class="comment">// reset the pattern and set next higher bit</span></div>
+<div class="line"><span class="lineno">   45</span>        <span class="comment">// left part of x will be here</span></div>
+<div class="line"><span class="lineno">   46</span>        nextHigherOneBit = x + rightOne;</div>
+<div class="line"><span class="lineno">   47</span> </div>
+<div class="line"><span class="lineno">   48</span>        <span class="comment">// nextHigherOneBit is now part [D] of the above explanation.</span></div>
+<div class="line"><span class="lineno">   49</span> </div>
+<div class="line"><span class="lineno">   50</span>        <span class="comment">// isolate the pattern</span></div>
+<div class="line"><span class="lineno">   51</span>        rightOnesPattern = x ^ nextHigherOneBit;</div>
+<div class="line"><span class="lineno">   52</span> </div>
+<div class="line"><span class="lineno">   53</span>        <span class="comment">// right adjust pattern</span></div>
+<div class="line"><span class="lineno">   54</span>        rightOnesPattern = (rightOnesPattern) / rightOne;</div>
+<div class="line"><span class="lineno">   55</span> </div>
+<div class="line"><span class="lineno">   56</span>        <span class="comment">// correction factor</span></div>
+<div class="line"><span class="lineno">   57</span>        rightOnesPattern &gt;&gt;= 2;</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>        <span class="comment">// rightOnesPattern is now part [A] of the above explanation.</span></div>
+<div class="line"><span class="lineno">   60</span> </div>
+<div class="line"><span class="lineno">   61</span>        <span class="comment">// integrate new pattern (Add [D] and [A])</span></div>
+<div class="line"><span class="lineno">   62</span>        next = nextHigherOneBit | rightOnesPattern;</div>
+<div class="line"><span class="lineno">   63</span>    }</div>
+<div class="line"><span class="lineno">   64</span> </div>
+<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">return</span> next;</div>
+<div class="line"><span class="lineno">   66</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

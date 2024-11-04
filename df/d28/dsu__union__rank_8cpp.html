@@ -114,12 +114,13 @@ $(function(){initNavTree('df/d28/dsu__union__rank_8cpp.html','../../'); initResi
 <p><a href="https://en.wikipedia.org/wiki/Disjoint-set-data_structure" target="_blank">DSU (Disjoint sets)</a>  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for dsu_union_rank.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/dda/dsu__union__rank_8cpp__incl.svg" width="252" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/dda/dsu__union__rank_8cpp__incl.svg" width="336" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -163,14 +164,14 @@ element). Disjoint sets uses cases : for finding connected components in a graph
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  182</span>           {</div>
-<div class="line"><span class="lineno">  183</span>    <a class="code hl_function" href="#ae7880ce913f3058a35ff106d5be9e243">test1</a>();  <span class="comment">// run 1st test case</span></div>
-<div class="line"><span class="lineno">  184</span>    <a class="code hl_function" href="#a45d94ead4cf4e1ff9f87c38bc99f59ae">test2</a>();  <span class="comment">// run 2nd test case</span></div>
-<div class="line"><span class="lineno">  185</span> </div>
-<div class="line"><span class="lineno">  186</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  187</span>}</div>
-<div class="ttc" id="adsu__union__rank_8cpp_html_a45d94ead4cf4e1ff9f87c38bc99f59ae"><div class="ttname"><a href="#a45d94ead4cf4e1ff9f87c38bc99f59ae">test2</a></div><div class="ttdeci">static void test2()</div><div class="ttdoc">Self-implementations, 2nd test.</div><div class="ttdef"><b>Definition</b> dsu_union_rank.cpp:157</div></div>
-<div class="ttc" id="adsu__union__rank_8cpp_html_ae7880ce913f3058a35ff106d5be9e243"><div class="ttname"><a href="#ae7880ce913f3058a35ff106d5be9e243">test1</a></div><div class="ttdeci">static void test1()</div><div class="ttdoc">Self-implementations, 1st test.</div><div class="ttdef"><b>Definition</b> dsu_union_rank.cpp:133</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  183</span>           {</div>
+<div class="line"><span class="lineno">  184</span>    <a class="code hl_function" href="#ae7880ce913f3058a35ff106d5be9e243">test1</a>();  <span class="comment">// run 1st test case</span></div>
+<div class="line"><span class="lineno">  185</span>    <a class="code hl_function" href="#a45d94ead4cf4e1ff9f87c38bc99f59ae">test2</a>();  <span class="comment">// run 2nd test case</span></div>
+<div class="line"><span class="lineno">  186</span> </div>
+<div class="line"><span class="lineno">  187</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  188</span>}</div>
+<div class="ttc" id="adsu__union__rank_8cpp_html_a45d94ead4cf4e1ff9f87c38bc99f59ae"><div class="ttname"><a href="#a45d94ead4cf4e1ff9f87c38bc99f59ae">test2</a></div><div class="ttdeci">static void test2()</div><div class="ttdoc">Self-implementations, 2nd test.</div><div class="ttdef"><b>Definition</b> dsu_union_rank.cpp:158</div></div>
+<div class="ttc" id="adsu__union__rank_8cpp_html_ae7880ce913f3058a35ff106d5be9e243"><div class="ttname"><a href="#ae7880ce913f3058a35ff106d5be9e243">test1</a></div><div class="ttdeci">static void test1()</div><div class="ttdoc">Self-implementations, 1st test.</div><div class="ttdef"><b>Definition</b> dsu_union_rank.cpp:134</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -207,28 +208,28 @@ Here is the call graph for this function:</div>
 <p>&lt; number of elements</p>
 <p>&lt; object of class disjoint sets</p>
 <p>&lt; performs union operation on 1 and 2</p>
-<div class="fragment"><div class="line"><span class="lineno">  133</span>                    {</div>
-<div class="line"><span class="lineno">  134</span>    <span class="comment">/* checks the parents in the resultant structures */</span></div>
-<div class="line"><span class="lineno">  135</span>    uint64_t n = 10;   <span class="comment">///&lt; number of elements</span></div>
-<div class="line"><span class="lineno">  136</span>    <a class="code hl_class" href="../../dd/d1f/classdsu.html">dsu</a> d(n + 1);      <span class="comment">///&lt; object of class disjoint sets</span></div>
-<div class="line"><span class="lineno">  137</span>    d.unionSet(2, 1);  <span class="comment">///&lt; performs union operation on 1 and 2</span></div>
-<div class="line"><span class="lineno">  138</span>    d.unionSet(1, 4);</div>
-<div class="line"><span class="lineno">  139</span>    d.unionSet(8, 1);</div>
-<div class="line"><span class="lineno">  140</span>    d.unionSet(3, 5);</div>
-<div class="line"><span class="lineno">  141</span>    d.unionSet(5, 6);</div>
-<div class="line"><span class="lineno">  142</span>    d.unionSet(5, 7);</div>
-<div class="line"><span class="lineno">  143</span>    d.unionSet(9, 10);</div>
-<div class="line"><span class="lineno">  144</span>    d.unionSet(2, 10);</div>
-<div class="line"><span class="lineno">  145</span>    <span class="comment">// keeping track of the changes using parent pointers</span></div>
-<div class="line"><span class="lineno">  146</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;uint64_t&gt;</a> ans = {7, 5};</div>
-<div class="line"><span class="lineno">  147</span>    <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; ans.size(); i++) {</div>
-<div class="line"><span class="lineno">  148</span>        assert(d.getParents(7).at(i) ==</div>
-<div class="line"><span class="lineno">  149</span>               ans[i]);  <span class="comment">// makes sure algorithm works fine</span></div>
-<div class="line"><span class="lineno">  150</span>    }</div>
-<div class="line"><span class="lineno">  151</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">cout</a> &lt;&lt; <span class="stringliteral">&quot;1st test passed!&quot;</span> &lt;&lt; <a class="code hl_define" href="../../d7/d35/matrix__exponentiation_8cpp.html#a600eaf353befc174637855795f12d258">endl</a>;</div>
-<div class="line"><span class="lineno">  152</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  134</span>                    {</div>
+<div class="line"><span class="lineno">  135</span>    <span class="comment">/* checks the parents in the resultant structures */</span></div>
+<div class="line"><span class="lineno">  136</span>    uint64_t n = 10;   <span class="comment">///&lt; number of elements</span></div>
+<div class="line"><span class="lineno">  137</span>    <a class="code hl_class" href="../../dd/d1f/classdsu.html">dsu</a> d(n + 1);      <span class="comment">///&lt; object of class disjoint sets</span></div>
+<div class="line"><span class="lineno">  138</span>    d.unionSet(2, 1);  <span class="comment">///&lt; performs union operation on 1 and 2</span></div>
+<div class="line"><span class="lineno">  139</span>    d.unionSet(1, 4);</div>
+<div class="line"><span class="lineno">  140</span>    d.unionSet(8, 1);</div>
+<div class="line"><span class="lineno">  141</span>    d.unionSet(3, 5);</div>
+<div class="line"><span class="lineno">  142</span>    d.unionSet(5, 6);</div>
+<div class="line"><span class="lineno">  143</span>    d.unionSet(5, 7);</div>
+<div class="line"><span class="lineno">  144</span>    d.unionSet(9, 10);</div>
+<div class="line"><span class="lineno">  145</span>    d.unionSet(2, 10);</div>
+<div class="line"><span class="lineno">  146</span>    <span class="comment">// keeping track of the changes using parent pointers</span></div>
+<div class="line"><span class="lineno">  147</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;uint64_t&gt;</a> ans = {7, 5};</div>
+<div class="line"><span class="lineno">  148</span>    <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; ans.size(); i++) {</div>
+<div class="line"><span class="lineno">  149</span>        assert(d.getParents(7).at(i) ==</div>
+<div class="line"><span class="lineno">  150</span>               ans[i]);  <span class="comment">// makes sure algorithm works fine</span></div>
+<div class="line"><span class="lineno">  151</span>    }</div>
+<div class="line"><span class="lineno">  152</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">cout</a> &lt;&lt; <span class="stringliteral">&quot;1st test passed!&quot;</span> &lt;&lt; <a class="code hl_define" href="../../d7/d35/matrix__exponentiation_8cpp.html#a600eaf353befc174637855795f12d258">endl</a>;</div>
+<div class="line"><span class="lineno">  153</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aclassdsu_html"><div class="ttname"><a href="../../dd/d1f/classdsu.html">dsu</a></div><div class="ttdoc">Disjoint sets union data structure, class based representation.</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:33</div></div>
+<div class="ttc" id="aclassdsu_html"><div class="ttname"><a href="../../dd/d1f/classdsu.html">dsu</a></div><div class="ttdoc">Disjoint sets union data structure, class based representation.</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:34</div></div>
 <div class="ttc" id="amatrix__exponentiation_8cpp_html_a600eaf353befc174637855795f12d258"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#a600eaf353befc174637855795f12d258">endl</a></div><div class="ttdeci">#define endl</div><div class="ttdef"><b>Definition</b> matrix_exponentiation.cpp:36</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -269,27 +270,27 @@ Here is the call graph for this function:</div>
 <p>performs union operation on 1 and 2</p>
 <p>keeping track of the changes using parent pointers</p>
 <p>makes sure algorithm works fine</p>
-<div class="fragment"><div class="line"><span class="lineno">  157</span>                    {</div>
-<div class="line"><span class="lineno">  158</span>    <span class="comment">// checks the parents in the resultant structures</span></div>
-<div class="line"><span class="lineno">  159</span>    uint64_t n = 10;   <span class="comment">///&lt; number of elements</span></div>
-<div class="line"><span class="lineno">  160</span>    <a class="code hl_class" href="../../dd/d1f/classdsu.html">dsu</a> d(n + 1);      <span class="comment">///&lt; object of class disjoint sets</span></div>
-<div class="line"><span class="lineno">  161</span>    d.unionSet(2, 1);  <span class="comment">/// performs union operation on 1 and 2</span></div>
-<div class="line"><span class="lineno">  162</span>    d.unionSet(1, 4);</div>
-<div class="line"><span class="lineno">  163</span>    d.unionSet(8, 1);</div>
-<div class="line"><span class="lineno">  164</span>    d.unionSet(3, 5);</div>
-<div class="line"><span class="lineno">  165</span>    d.unionSet(5, 6);</div>
-<div class="line"><span class="lineno">  166</span>    d.unionSet(5, 7);</div>
-<div class="line"><span class="lineno">  167</span>    d.unionSet(9, 10);</div>
-<div class="line"><span class="lineno">  168</span>    d.unionSet(2, 10);</div>
-<div class="line"><span class="lineno">  169</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  170</span><span class="comment">    /// keeping track of the changes using parent pointers</span></div>
-<div class="line"><span class="lineno">  171</span><span class="comment"></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;uint64_t&gt;</a> ans = {2, 1, 10};</div>
-<div class="line"><span class="lineno">  172</span>    <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; ans.size(); i++) {</div>
-<div class="line"><span class="lineno">  173</span>        assert(d.getParents(2).at(i) ==</div>
-<div class="line"><span class="lineno">  174</span>               ans[i]);  <span class="comment">/// makes sure algorithm works fine</span></div>
-<div class="line"><span class="lineno">  175</span>    }</div>
-<div class="line"><span class="lineno">  176</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">cout</a> &lt;&lt; <span class="stringliteral">&quot;2nd test passed!&quot;</span> &lt;&lt; <a class="code hl_define" href="../../d7/d35/matrix__exponentiation_8cpp.html#a600eaf353befc174637855795f12d258">endl</a>;</div>
-<div class="line"><span class="lineno">  177</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  158</span>                    {</div>
+<div class="line"><span class="lineno">  159</span>    <span class="comment">// checks the parents in the resultant structures</span></div>
+<div class="line"><span class="lineno">  160</span>    uint64_t n = 10;   <span class="comment">///&lt; number of elements</span></div>
+<div class="line"><span class="lineno">  161</span>    <a class="code hl_class" href="../../dd/d1f/classdsu.html">dsu</a> d(n + 1);      <span class="comment">///&lt; object of class disjoint sets</span></div>
+<div class="line"><span class="lineno">  162</span>    d.unionSet(2, 1);  <span class="comment">/// performs union operation on 1 and 2</span></div>
+<div class="line"><span class="lineno">  163</span>    d.unionSet(1, 4);</div>
+<div class="line"><span class="lineno">  164</span>    d.unionSet(8, 1);</div>
+<div class="line"><span class="lineno">  165</span>    d.unionSet(3, 5);</div>
+<div class="line"><span class="lineno">  166</span>    d.unionSet(5, 6);</div>
+<div class="line"><span class="lineno">  167</span>    d.unionSet(5, 7);</div>
+<div class="line"><span class="lineno">  168</span>    d.unionSet(9, 10);</div>
+<div class="line"><span class="lineno">  169</span>    d.unionSet(2, 10);</div>
+<div class="line"><span class="lineno">  170</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">  171</span><span class="comment">    /// keeping track of the changes using parent pointers</span></div>
+<div class="line"><span class="lineno">  172</span><span class="comment"></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;uint64_t&gt;</a> ans = {2, 1, 10};</div>
+<div class="line"><span class="lineno">  173</span>    <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; ans.size(); i++) {</div>
+<div class="line"><span class="lineno">  174</span>        assert(d.getParents(2).at(i) ==</div>
+<div class="line"><span class="lineno">  175</span>               ans[i]);  <span class="comment">/// makes sure algorithm works fine</span></div>
+<div class="line"><span class="lineno">  176</span>    }</div>
+<div class="line"><span class="lineno">  177</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">cout</a> &lt;&lt; <span class="stringliteral">&quot;2nd test passed!&quot;</span> &lt;&lt; <a class="code hl_define" href="../../d7/d35/matrix__exponentiation_8cpp.html#a600eaf353befc174637855795f12d258">endl</a>;</div>
+<div class="line"><span class="lineno">  178</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

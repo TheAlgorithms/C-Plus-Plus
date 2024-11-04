@@ -115,12 +115,13 @@ $(function(){initNavTree('de/d07/cycle__sort_8cpp.html','../../'); initResizable
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for cycle_sort.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/deb/cycle__sort_8cpp__incl.svg" width="350" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/deb/cycle__sort_8cpp__incl.svg" width="434" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -180,53 +181,53 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   37</span>                                                   {</div>
-<div class="line"><span class="lineno">   38</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> arr(in_arr);</div>
-<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> cycle_start = 0; cycle_start &lt;= arr.size() - 1; cycle_start++) {</div>
-<div class="line"><span class="lineno">   40</span>        <span class="comment">// initialize item</span></div>
-<div class="line"><span class="lineno">   41</span>        T item = arr[cycle_start];</div>
-<div class="line"><span class="lineno">   42</span> </div>
-<div class="line"><span class="lineno">   43</span>        <span class="comment">// Count the number of elements smaller than item, this  number is the</span></div>
-<div class="line"><span class="lineno">   44</span>        <span class="comment">// correct index of item.</span></div>
-<div class="line"><span class="lineno">   45</span>        <span class="keywordtype">int</span> pos = cycle_start;</div>
-<div class="line"><span class="lineno">   46</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = cycle_start + 1; i &lt; arr.size(); i++) {</div>
-<div class="line"><span class="lineno">   47</span>            <span class="keywordflow">if</span> (arr[i] &lt; item) {</div>
-<div class="line"><span class="lineno">   48</span>                pos++;</div>
-<div class="line"><span class="lineno">   49</span>            }</div>
-<div class="line"><span class="lineno">   50</span>        }</div>
-<div class="line"><span class="lineno">   51</span> </div>
-<div class="line"><span class="lineno">   52</span>        <span class="comment">// item is already in correct position</span></div>
-<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">if</span> (pos == cycle_start) {</div>
-<div class="line"><span class="lineno">   54</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">   55</span>        }</div>
-<div class="line"><span class="lineno">   56</span> </div>
-<div class="line"><span class="lineno">   57</span>        <span class="comment">// duplicate  elements</span></div>
-<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">while</span> (item == arr[pos]) pos += 1;</div>
-<div class="line"><span class="lineno">   59</span>        <span class="keywordflow">if</span> (pos == cycle_start) {</div>
-<div class="line"><span class="lineno">   60</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">   61</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   62</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(item, arr[pos]);</div>
-<div class="line"><span class="lineno">   63</span>        }</div>
-<div class="line"><span class="lineno">   64</span>        <span class="comment">// Rest of the  elements</span></div>
-<div class="line"><span class="lineno">   65</span>        <span class="keywordflow">while</span> (pos != cycle_start) {</div>
-<div class="line"><span class="lineno">   66</span>            pos = cycle_start;</div>
-<div class="line"><span class="lineno">   67</span>            <span class="comment">// Find position where we put the element</span></div>
-<div class="line"><span class="lineno">   68</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = cycle_start + 1; i &lt; arr.size(); i++) {</div>
-<div class="line"><span class="lineno">   69</span>                <span class="keywordflow">if</span> (arr[i] &lt; item) {</div>
-<div class="line"><span class="lineno">   70</span>                    pos += 1;</div>
-<div class="line"><span class="lineno">   71</span>                }</div>
-<div class="line"><span class="lineno">   72</span>            }</div>
-<div class="line"><span class="lineno">   73</span>            <span class="comment">// duplicate  elements</span></div>
-<div class="line"><span class="lineno">   74</span>            <span class="keywordflow">while</span> (item == arr[pos]) pos += 1;</div>
-<div class="line"><span class="lineno">   75</span>            <span class="keywordflow">if</span> (item == arr[pos]) {</div>
-<div class="line"><span class="lineno">   76</span>                <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">   77</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   78</span>                <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(item, arr[pos]);</div>
-<div class="line"><span class="lineno">   79</span>            }</div>
-<div class="line"><span class="lineno">   80</span>        }</div>
-<div class="line"><span class="lineno">   81</span>    }</div>
-<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">return</span> arr;</div>
-<div class="line"><span class="lineno">   83</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>                                                   {</div>
+<div class="line"><span class="lineno">   39</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> arr(in_arr);</div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> cycle_start = 0; cycle_start &lt;= arr.size() - 1; cycle_start++) {</div>
+<div class="line"><span class="lineno">   41</span>        <span class="comment">// initialize item</span></div>
+<div class="line"><span class="lineno">   42</span>        T item = arr[cycle_start];</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>        <span class="comment">// Count the number of elements smaller than item, this  number is the</span></div>
+<div class="line"><span class="lineno">   45</span>        <span class="comment">// correct index of item.</span></div>
+<div class="line"><span class="lineno">   46</span>        <span class="keywordtype">int</span> pos = cycle_start;</div>
+<div class="line"><span class="lineno">   47</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = cycle_start + 1; i &lt; arr.size(); i++) {</div>
+<div class="line"><span class="lineno">   48</span>            <span class="keywordflow">if</span> (arr[i] &lt; item) {</div>
+<div class="line"><span class="lineno">   49</span>                pos++;</div>
+<div class="line"><span class="lineno">   50</span>            }</div>
+<div class="line"><span class="lineno">   51</span>        }</div>
+<div class="line"><span class="lineno">   52</span> </div>
+<div class="line"><span class="lineno">   53</span>        <span class="comment">// item is already in correct position</span></div>
+<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">if</span> (pos == cycle_start) {</div>
+<div class="line"><span class="lineno">   55</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">   56</span>        }</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>        <span class="comment">// duplicate  elements</span></div>
+<div class="line"><span class="lineno">   59</span>        <span class="keywordflow">while</span> (item == arr[pos]) pos += 1;</div>
+<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">if</span> (pos == cycle_start) {</div>
+<div class="line"><span class="lineno">   61</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">   62</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   63</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(item, arr[pos]);</div>
+<div class="line"><span class="lineno">   64</span>        }</div>
+<div class="line"><span class="lineno">   65</span>        <span class="comment">// Rest of the  elements</span></div>
+<div class="line"><span class="lineno">   66</span>        <span class="keywordflow">while</span> (pos != cycle_start) {</div>
+<div class="line"><span class="lineno">   67</span>            pos = cycle_start;</div>
+<div class="line"><span class="lineno">   68</span>            <span class="comment">// Find position where we put the element</span></div>
+<div class="line"><span class="lineno">   69</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = cycle_start + 1; i &lt; arr.size(); i++) {</div>
+<div class="line"><span class="lineno">   70</span>                <span class="keywordflow">if</span> (arr[i] &lt; item) {</div>
+<div class="line"><span class="lineno">   71</span>                    pos += 1;</div>
+<div class="line"><span class="lineno">   72</span>                }</div>
+<div class="line"><span class="lineno">   73</span>            }</div>
+<div class="line"><span class="lineno">   74</span>            <span class="comment">// duplicate  elements</span></div>
+<div class="line"><span class="lineno">   75</span>            <span class="keywordflow">while</span> (item == arr[pos]) pos += 1;</div>
+<div class="line"><span class="lineno">   76</span>            <span class="keywordflow">if</span> (item == arr[pos]) {</div>
+<div class="line"><span class="lineno">   77</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">   78</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   79</span>                <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(item, arr[pos]);</div>
+<div class="line"><span class="lineno">   80</span>            }</div>
+<div class="line"><span class="lineno">   81</span>        }</div>
+<div class="line"><span class="lineno">   82</span>    }</div>
+<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">return</span> arr;</div>
+<div class="line"><span class="lineno">   84</span>}</div>
 <div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -254,11 +255,11 @@ Here is the call graph for this function:</div>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  127</span>           {</div>
-<div class="line"><span class="lineno">  128</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// execute the test</span></div>
-<div class="line"><span class="lineno">  129</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  130</span>}</div>
-<div class="ttc" id="acycle__sort_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Test implementations.</div><div class="ttdef"><b>Definition</b> cycle_sort.cpp:91</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  128</span>           {</div>
+<div class="line"><span class="lineno">  129</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// execute the test</span></div>
+<div class="line"><span class="lineno">  130</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  131</span>}</div>
+<div class="ttc" id="acycle__sort_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Test implementations.</div><div class="ttdef"><b>Definition</b> cycle_sort.cpp:92</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -292,40 +293,40 @@ Here is the call graph for this function:</div>
 
 <p>Test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   91</span>                   {</div>
-<div class="line"><span class="lineno">   92</span>    <span class="comment">// Test 1</span></div>
-<div class="line"><span class="lineno">   93</span>    <span class="comment">// [4, 3, 2, 1] return [1, 2, 3, 4]</span></div>
-<div class="line"><span class="lineno">   94</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a> array1 = {4, 3, 2, 1};</div>
-<div class="line"><span class="lineno">   95</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1... &quot;</span>;</div>
-<div class="line"><span class="lineno">   96</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a> arr1 = <a class="code hl_function" href="#ae79a9d247691fce0d655fce75f1c04fa">sorting::cycle_sort::cycleSort</a>(array1);</div>
-<div class="line"><span class="lineno">   97</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr1), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr1)));</div>
-<div class="line"><span class="lineno">   98</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   99</span> </div>
-<div class="line"><span class="lineno">  100</span>    <span class="comment">// [4.3, -6.5, -7.4, 0, 2.7, 1.8] return [-7.4, -6.5, 0, 1.8, 2.7, 4.3]</span></div>
-<div class="line"><span class="lineno">  101</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;double&gt;</a> array2 = {4.3, -6.5, -7.4, 0, 2.7, 1.8};</div>
-<div class="line"><span class="lineno">  102</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2... &quot;</span>;</div>
-<div class="line"><span class="lineno">  103</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;double&gt;</a> arr2 = <a class="code hl_function" href="#ae79a9d247691fce0d655fce75f1c04fa">sorting::cycle_sort::cycleSort</a>(array2);</div>
-<div class="line"><span class="lineno">  104</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr2), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr2)));</div>
-<div class="line"><span class="lineno">  105</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  106</span> </div>
-<div class="line"><span class="lineno">  107</span>    <span class="comment">// Test 3</span></div>
-<div class="line"><span class="lineno">  108</span>    <span class="comment">// [3, 3, 3, 3] return [3, 3, 3, 3]</span></div>
-<div class="line"><span class="lineno">  109</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a> array3 = {3, 3, 3, 3};</div>
-<div class="line"><span class="lineno">  110</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 3... &quot;</span>;</div>
-<div class="line"><span class="lineno">  111</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a> arr3 = <a class="code hl_function" href="#ae79a9d247691fce0d655fce75f1c04fa">sorting::cycle_sort::cycleSort</a>(array3);</div>
-<div class="line"><span class="lineno">  112</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr3), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr3)));</div>
-<div class="line"><span class="lineno">  113</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  114</span> </div>
-<div class="line"><span class="lineno">  115</span>    <span class="comment">// [9, 4, 6, 8, 14, 3] return [9, 4, 6, 8, 14, 3]</span></div>
-<div class="line"><span class="lineno">  116</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a> array4 = {3, 4, 6, 8, 9, 14};</div>
-<div class="line"><span class="lineno">  117</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 4... &quot;</span>;</div>
-<div class="line"><span class="lineno">  118</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a> arr4 = <a class="code hl_function" href="#ae79a9d247691fce0d655fce75f1c04fa">sorting::cycle_sort::cycleSort</a>(array4);</div>
-<div class="line"><span class="lineno">  119</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr4), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr4)));</div>
-<div class="line"><span class="lineno">  120</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  121</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   92</span>                   {</div>
+<div class="line"><span class="lineno">   93</span>    <span class="comment">// Test 1</span></div>
+<div class="line"><span class="lineno">   94</span>    <span class="comment">// [4, 3, 2, 1] return [1, 2, 3, 4]</span></div>
+<div class="line"><span class="lineno">   95</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a> array1 = {4, 3, 2, 1};</div>
+<div class="line"><span class="lineno">   96</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1... &quot;</span>;</div>
+<div class="line"><span class="lineno">   97</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a> arr1 = <a class="code hl_function" href="#ae79a9d247691fce0d655fce75f1c04fa">sorting::cycle_sort::cycleSort</a>(array1);</div>
+<div class="line"><span class="lineno">   98</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr1), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr1)));</div>
+<div class="line"><span class="lineno">   99</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  100</span> </div>
+<div class="line"><span class="lineno">  101</span>    <span class="comment">// [4.3, -6.5, -7.4, 0, 2.7, 1.8] return [-7.4, -6.5, 0, 1.8, 2.7, 4.3]</span></div>
+<div class="line"><span class="lineno">  102</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;double&gt;</a> array2 = {4.3, -6.5, -7.4, 0, 2.7, 1.8};</div>
+<div class="line"><span class="lineno">  103</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2... &quot;</span>;</div>
+<div class="line"><span class="lineno">  104</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;double&gt;</a> arr2 = <a class="code hl_function" href="#ae79a9d247691fce0d655fce75f1c04fa">sorting::cycle_sort::cycleSort</a>(array2);</div>
+<div class="line"><span class="lineno">  105</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr2), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr2)));</div>
+<div class="line"><span class="lineno">  106</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  107</span> </div>
+<div class="line"><span class="lineno">  108</span>    <span class="comment">// Test 3</span></div>
+<div class="line"><span class="lineno">  109</span>    <span class="comment">// [3, 3, 3, 3] return [3, 3, 3, 3]</span></div>
+<div class="line"><span class="lineno">  110</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a> array3 = {3, 3, 3, 3};</div>
+<div class="line"><span class="lineno">  111</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 3... &quot;</span>;</div>
+<div class="line"><span class="lineno">  112</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a> arr3 = <a class="code hl_function" href="#ae79a9d247691fce0d655fce75f1c04fa">sorting::cycle_sort::cycleSort</a>(array3);</div>
+<div class="line"><span class="lineno">  113</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr3), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr3)));</div>
+<div class="line"><span class="lineno">  114</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  115</span> </div>
+<div class="line"><span class="lineno">  116</span>    <span class="comment">// [9, 4, 6, 8, 14, 3] return [9, 4, 6, 8, 14, 3]</span></div>
+<div class="line"><span class="lineno">  117</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a> array4 = {3, 4, 6, 8, 9, 14};</div>
+<div class="line"><span class="lineno">  118</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 4... &quot;</span>;</div>
+<div class="line"><span class="lineno">  119</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a> arr4 = <a class="code hl_function" href="#ae79a9d247691fce0d655fce75f1c04fa">sorting::cycle_sort::cycleSort</a>(array4);</div>
+<div class="line"><span class="lineno">  120</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr4), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr4)));</div>
+<div class="line"><span class="lineno">  121</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  122</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
-<div class="ttc" id="acycle__sort_8cpp_html_ae79a9d247691fce0d655fce75f1c04fa"><div class="ttname"><a href="#ae79a9d247691fce0d655fce75f1c04fa">sorting::cycle_sort::cycleSort</a></div><div class="ttdeci">std::vector&lt; T &gt; cycleSort(const std::vector&lt; T &gt; &amp;in_arr)</div><div class="ttdoc">The main function implements cycleSort.</div><div class="ttdef"><b>Definition</b> cycle_sort.cpp:37</div></div>
+<div class="ttc" id="acycle__sort_8cpp_html_ae79a9d247691fce0d655fce75f1c04fa"><div class="ttname"><a href="#ae79a9d247691fce0d655fce75f1c04fa">sorting::cycle_sort::cycleSort</a></div><div class="ttdeci">std::vector&lt; T &gt; cycleSort(const std::vector&lt; T &gt; &amp;in_arr)</div><div class="ttdoc">The main function implements cycleSort.</div><div class="ttdef"><b>Definition</b> cycle_sort.cpp:38</div></div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="ais_sorted_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></div><div class="ttdeci">T is_sorted(T... args)</div></div>

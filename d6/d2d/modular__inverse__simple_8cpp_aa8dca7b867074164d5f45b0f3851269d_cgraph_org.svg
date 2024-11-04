@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../d6/d2d/modular__inverse__simple_8cpp.html#a618b198f74a88ab0023355b3a05d9ad6" target="_top" xlink:title="for IO operations">
+<g id="a_Node000002"><a xlink:href="../../d6/d2d/modular__inverse__simple_8cpp.html#a618b198f74a88ab0023355b3a05d9ad6" target="_top" xlink:title="for assert">
 <polygon fill="white" stroke="#666666" points="105.5,-19.25 68.5,-19.25 68.5,0 105.5,0 105.5,-19.25"/>
 <text text-anchor="middle" x="87" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">imod</text>
 </a>

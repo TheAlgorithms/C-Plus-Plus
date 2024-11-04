@@ -113,14 +113,14 @@ $(function(){initNavTree('db/d80/gale__shapley_8cpp.html','../../'); initResizab
 
 <p><a href="https://en.wikipedia.org/wiki/Gale%E2%80%93Shapley_algorithm" target="_blank">Gale Shapley Algorithm</a>  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for gale_shapley.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/dab/gale__shapley_8cpp__incl.svg" width="350" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/dab/gale__shapley_8cpp__incl.svg" width="339" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -168,11 +168,11 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  126</span>           {</div>
-<div class="line"><span class="lineno">  127</span>    <a class="code hl_function" href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a>(); <span class="comment">// Run self-test implementations</span></div>
-<div class="line"><span class="lineno">  128</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  129</span>}</div>
-<div class="ttc" id="agale__shapley_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> gale_shapley.cpp:100</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  152</span>           {</div>
+<div class="line"><span class="lineno">  153</span>    <a class="code hl_function" href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a>();  <span class="comment">// Run self-test implementations</span></div>
+<div class="line"><span class="lineno">  154</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  155</span>}</div>
+<div class="ttc" id="agale__shapley_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> gale_shapley.cpp:114</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -206,28 +206,40 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  100</span>                    {</div>
-<div class="line"><span class="lineno">  101</span>    <span class="comment">// Test Case 1</span></div>
-<div class="line"><span class="lineno">  102</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;std::uint32_t&gt;</a>&gt; primary_preferences = {{0, 1, 2, 3}, {2, 1, 3, 0}, {1, 2, 0, 3}, {3, 0, 1, 2}};</div>
-<div class="line"><span class="lineno">  103</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;std::uint32_t&gt;</a>&gt; secondary_preferences = {{1, 0, 2, 3}, {3, 0, 1, 2}, {0, 2, 1, 3}, {1, 2, 0, 3}};</div>
-<div class="line"><span class="lineno">  104</span>    assert(<a class="code hl_function" href="../../dd/d9a/namespacegreedy__algorithms_1_1stable__matching.html#a6d7e84df47dcf19e88f95f8f9040306c">greedy_algorithms::stable_matching::gale_shapley</a>(secondary_preferences, primary_preferences) == <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint32_t&gt;</a>({0, 2, 1, 3}));</div>
-<div class="line"><span class="lineno">  105</span> </div>
-<div class="line"><span class="lineno">  106</span>    <span class="comment">// Test Case 2</span></div>
-<div class="line"><span class="lineno">  107</span>    primary_preferences = {{0, 2, 1, 3}, {2, 3, 0, 1}, {3, 1, 2, 0}, {2, 1, 0, 3}};</div>
-<div class="line"><span class="lineno">  108</span>    secondary_preferences = {{1, 0, 2, 3}, {3, 0, 1, 2}, {0, 2, 1, 3}, {1, 2, 0, 3}};</div>
-<div class="line"><span class="lineno">  109</span>    assert(<a class="code hl_function" href="../../dd/d9a/namespacegreedy__algorithms_1_1stable__matching.html#a6d7e84df47dcf19e88f95f8f9040306c">greedy_algorithms::stable_matching::gale_shapley</a>(secondary_preferences, primary_preferences) == <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint32_t&gt;</a>({0, 3, 1, 2}));</div>
-<div class="line"><span class="lineno">  110</span> </div>
-<div class="line"><span class="lineno">  111</span>    <span class="comment">// Test Case 3</span></div>
-<div class="line"><span class="lineno">  112</span>    primary_preferences = {{0, 1, 2}, {2, 1, 0}, {1, 2, 0}};</div>
-<div class="line"><span class="lineno">  113</span>    secondary_preferences = {{1, 0, 2}, {2, 0, 1}, {0, 2, 1}};</div>
-<div class="line"><span class="lineno">  114</span>    assert(<a class="code hl_function" href="../../dd/d9a/namespacegreedy__algorithms_1_1stable__matching.html#a6d7e84df47dcf19e88f95f8f9040306c">greedy_algorithms::stable_matching::gale_shapley</a>(secondary_preferences, primary_preferences) == <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint32_t&gt;</a>({0, 2, 1}));</div>
-<div class="line"><span class="lineno">  115</span> </div>
-<div class="line"><span class="lineno">  116</span>    <span class="comment">// Test Case 4</span></div>
-<div class="line"><span class="lineno">  117</span>    primary_preferences = {};</div>
-<div class="line"><span class="lineno">  118</span>    secondary_preferences = {};</div>
-<div class="line"><span class="lineno">  119</span>    assert(<a class="code hl_function" href="../../dd/d9a/namespacegreedy__algorithms_1_1stable__matching.html#a6d7e84df47dcf19e88f95f8f9040306c">greedy_algorithms::stable_matching::gale_shapley</a>(secondary_preferences, primary_preferences) == <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint32_t&gt;</a>({}));</div>
-<div class="line"><span class="lineno">  120</span>}</div>
-<div class="ttc" id="anamespacegreedy__algorithms_1_1stable__matching_html_a6d7e84df47dcf19e88f95f8f9040306c"><div class="ttname"><a href="../../dd/d9a/namespacegreedy__algorithms_1_1stable__matching.html#a6d7e84df47dcf19e88f95f8f9040306c">greedy_algorithms::stable_matching::gale_shapley</a></div><div class="ttdeci">std::vector&lt; std::uint32_t &gt; gale_shapley(const std::vector&lt; std::vector&lt; std::uint32_t &gt; &gt; &amp;secondary_preferences, const std::vector&lt; std::vector&lt; std::uint32_t &gt; &gt; &amp;primary_preferences)</div><div class="ttdoc">The main function that finds the stable matching between two sets of elements using the Gale-Shapley ...</div><div class="ttdef"><b>Definition</b> gale_shapley.cpp:42</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  114</span>                    {</div>
+<div class="line"><span class="lineno">  115</span>    <span class="comment">// Test Case 1</span></div>
+<div class="line"><span class="lineno">  116</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;std::uint32_t&gt;</a>&gt; primary_preferences = {</div>
+<div class="line"><span class="lineno">  117</span>        {0, 1, 2, 3}, {2, 1, 3, 0}, {1, 2, 0, 3}, {3, 0, 1, 2}};</div>
+<div class="line"><span class="lineno">  118</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;std::uint32_t&gt;</a>&gt; secondary_preferences = {</div>
+<div class="line"><span class="lineno">  119</span>        {1, 0, 2, 3}, {3, 0, 1, 2}, {0, 2, 1, 3}, {1, 2, 0, 3}};</div>
+<div class="line"><span class="lineno">  120</span>    assert(<a class="code hl_function" href="../../dd/d9a/namespacegreedy__algorithms_1_1stable__matching.html#a6d7e84df47dcf19e88f95f8f9040306c">greedy_algorithms::stable_matching::gale_shapley</a>(</div>
+<div class="line"><span class="lineno">  121</span>               secondary_preferences, primary_preferences) ==</div>
+<div class="line"><span class="lineno">  122</span>           <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint32_t&gt;</a>({0, 2, 1, 3}));</div>
+<div class="line"><span class="lineno">  123</span> </div>
+<div class="line"><span class="lineno">  124</span>    <span class="comment">// Test Case 2</span></div>
+<div class="line"><span class="lineno">  125</span>    primary_preferences = {</div>
+<div class="line"><span class="lineno">  126</span>        {0, 2, 1, 3}, {2, 3, 0, 1}, {3, 1, 2, 0}, {2, 1, 0, 3}};</div>
+<div class="line"><span class="lineno">  127</span>    secondary_preferences = {</div>
+<div class="line"><span class="lineno">  128</span>        {1, 0, 2, 3}, {3, 0, 1, 2}, {0, 2, 1, 3}, {1, 2, 0, 3}};</div>
+<div class="line"><span class="lineno">  129</span>    assert(<a class="code hl_function" href="../../dd/d9a/namespacegreedy__algorithms_1_1stable__matching.html#a6d7e84df47dcf19e88f95f8f9040306c">greedy_algorithms::stable_matching::gale_shapley</a>(</div>
+<div class="line"><span class="lineno">  130</span>               secondary_preferences, primary_preferences) ==</div>
+<div class="line"><span class="lineno">  131</span>           <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint32_t&gt;</a>({0, 3, 1, 2}));</div>
+<div class="line"><span class="lineno">  132</span> </div>
+<div class="line"><span class="lineno">  133</span>    <span class="comment">// Test Case 3</span></div>
+<div class="line"><span class="lineno">  134</span>    primary_preferences = {{0, 1, 2}, {2, 1, 0}, {1, 2, 0}};</div>
+<div class="line"><span class="lineno">  135</span>    secondary_preferences = {{1, 0, 2}, {2, 0, 1}, {0, 2, 1}};</div>
+<div class="line"><span class="lineno">  136</span>    assert(<a class="code hl_function" href="../../dd/d9a/namespacegreedy__algorithms_1_1stable__matching.html#a6d7e84df47dcf19e88f95f8f9040306c">greedy_algorithms::stable_matching::gale_shapley</a>(</div>
+<div class="line"><span class="lineno">  137</span>               secondary_preferences, primary_preferences) ==</div>
+<div class="line"><span class="lineno">  138</span>           <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint32_t&gt;</a>({0, 2, 1}));</div>
+<div class="line"><span class="lineno">  139</span> </div>
+<div class="line"><span class="lineno">  140</span>    <span class="comment">// Test Case 4</span></div>
+<div class="line"><span class="lineno">  141</span>    primary_preferences = {};</div>
+<div class="line"><span class="lineno">  142</span>    secondary_preferences = {};</div>
+<div class="line"><span class="lineno">  143</span>    assert(<a class="code hl_function" href="../../dd/d9a/namespacegreedy__algorithms_1_1stable__matching.html#a6d7e84df47dcf19e88f95f8f9040306c">greedy_algorithms::stable_matching::gale_shapley</a>(</div>
+<div class="line"><span class="lineno">  144</span>               secondary_preferences, primary_preferences) ==</div>
+<div class="line"><span class="lineno">  145</span>           <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint32_t&gt;</a>({}));</div>
+<div class="line"><span class="lineno">  146</span>}</div>
+<div class="ttc" id="anamespacegreedy__algorithms_1_1stable__matching_html_a6d7e84df47dcf19e88f95f8f9040306c"><div class="ttname"><a href="../../dd/d9a/namespacegreedy__algorithms_1_1stable__matching.html#a6d7e84df47dcf19e88f95f8f9040306c">greedy_algorithms::stable_matching::gale_shapley</a></div><div class="ttdeci">std::vector&lt; std::uint32_t &gt; gale_shapley(const std::vector&lt; std::vector&lt; std::uint32_t &gt; &gt; &amp;secondary_preferences, const std::vector&lt; std::vector&lt; std::uint32_t &gt; &gt; &amp;primary_preferences)</div><div class="ttdoc">The main function that finds the stable matching between two sets of elements using the Gale-Shapley ...</div><div class="ttdef"><b>Definition</b> gale_shapley.cpp:46</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

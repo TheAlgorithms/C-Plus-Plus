@@ -1,9 +1,11 @@
 <map id="math/fibonacci_matrix_exponentiation.cpp" name="math/fibonacci_matrix_exponentiation.cpp">
-<area shape="rect" id="Node000001" title="This program computes the N^th Fibonacci number in modulo mod input argument ." alt="" coords="54,5,204,46"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,77,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,48,68,85,64,81,105,44"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="100,94,158,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="132,46,132,78,126,78,126,46"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="182,94,246,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="152,44,192,81,188,85,148,48"/>
+<area shape="rect" id="Node000001" title="This program computes the N^th Fibonacci number in modulo mod input argument ." alt="" coords="94,5,243,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,70,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,49,72,88,69,83,134,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="94,94,154,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,48,141,82,136,79,155,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="178,94,249,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,45,201,79,197,82,177,48"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="273,94,330,120"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="203,44,269,83,267,88,200,49"/>
 </map>

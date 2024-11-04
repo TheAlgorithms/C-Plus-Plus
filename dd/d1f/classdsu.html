@@ -227,32 +227,32 @@ Private Attributes</h2></td></tr>
 <p>initially, all of them are their own parents</p>
 <p>initially all have depth are equals to zero</p>
 <p>initially set size will be equals to one</p>
-<div class="fragment"><div class="line"><span class="lineno">   45</span>                             {</div>
-<div class="line"><span class="lineno">   46</span>        <a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>.assign(n, 0);<span class="comment"></span></div>
-<div class="line"><span class="lineno">   47</span><span class="comment">        /// initially, all of them are their own parents</span></div>
-<div class="line"><span class="lineno">   48</span><span class="comment"></span>        <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; n; i++) {</div>
-<div class="line"><span class="lineno">   49</span>            <a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i] = i;</div>
-<div class="line"><span class="lineno">   50</span>        }<span class="comment"></span></div>
-<div class="line"><span class="lineno">   51</span><span class="comment">        /// initially all have depth are equals to zero</span></div>
-<div class="line"><span class="lineno">   52</span><span class="comment"></span>        <a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>.assign(n, 0);</div>
-<div class="line"><span class="lineno">   53</span>        <a class="code hl_variable" href="#a4ade6f16c418fc98b54452f7b0252a53">maxElement</a>.assign(n, 0);</div>
-<div class="line"><span class="lineno">   54</span>        <a class="code hl_variable" href="#a1d77aad7fc39fe7140d834cd347e5c63">minElement</a>.assign(n, 0);</div>
-<div class="line"><span class="lineno">   55</span>        <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; n; i++) {</div>
-<div class="line"><span class="lineno">   56</span>            <a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[i] = 0;</div>
-<div class="line"><span class="lineno">   57</span>            <a class="code hl_variable" href="#a4ade6f16c418fc98b54452f7b0252a53">maxElement</a>[i] = i;</div>
-<div class="line"><span class="lineno">   58</span>            <a class="code hl_variable" href="#a1d77aad7fc39fe7140d834cd347e5c63">minElement</a>[i] = i;</div>
-<div class="line"><span class="lineno">   59</span>        }</div>
-<div class="line"><span class="lineno">   60</span>        <a class="code hl_variable" href="#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>.assign(n, 0);<span class="comment"></span></div>
-<div class="line"><span class="lineno">   61</span><span class="comment">        /// initially set size will be equals to one</span></div>
-<div class="line"><span class="lineno">   62</span><span class="comment"></span>        <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; n; i++) {</div>
-<div class="line"><span class="lineno">   63</span>            <a class="code hl_variable" href="#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[i] = 1;</div>
-<div class="line"><span class="lineno">   64</span>        }</div>
-<div class="line"><span class="lineno">   65</span>    }</div>
-<div class="ttc" id="aclassdsu_html_a1d77aad7fc39fe7140d834cd347e5c63"><div class="ttname"><a href="#a1d77aad7fc39fe7140d834cd347e5c63">dsu::minElement</a></div><div class="ttdeci">vector&lt; uint64_t &gt; minElement</div><div class="ttdoc">minimum of each set to which i belongs to</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:39</div></div>
-<div class="ttc" id="aclassdsu_html_a1ef0b0462a0dda63514f641cbb7dd8cb"><div class="ttname"><a href="#a1ef0b0462a0dda63514f641cbb7dd8cb">dsu::p</a></div><div class="ttdeci">vector&lt; uint64_t &gt; p</div><div class="ttdoc">keeps track of the parent of ith element</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:35</div></div>
-<div class="ttc" id="aclassdsu_html_a4ade6f16c418fc98b54452f7b0252a53"><div class="ttname"><a href="#a4ade6f16c418fc98b54452f7b0252a53">dsu::maxElement</a></div><div class="ttdeci">vector&lt; uint64_t &gt; maxElement</div><div class="ttdoc">maximum of each set to which i belongs to</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:38</div></div>
-<div class="ttc" id="aclassdsu_html_a4bf54d33fba178998dbbe4c57f2e9429"><div class="ttname"><a href="#a4bf54d33fba178998dbbe4c57f2e9429">dsu::depth</a></div><div class="ttdeci">vector&lt; uint64_t &gt; depth</div><div class="ttdoc">tracks the depth(rank) of i in the tree</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:36</div></div>
-<div class="ttc" id="aclassdsu_html_ac0dc3e17e49fe19b159b4ea4096d7b55"><div class="ttname"><a href="#ac0dc3e17e49fe19b159b4ea4096d7b55">dsu::setSize</a></div><div class="ttdeci">vector&lt; uint64_t &gt; setSize</div><div class="ttdoc">size of each chunk(set)</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:37</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   46</span>                             {</div>
+<div class="line"><span class="lineno">   47</span>        <a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>.assign(n, 0);<span class="comment"></span></div>
+<div class="line"><span class="lineno">   48</span><span class="comment">        /// initially, all of them are their own parents</span></div>
+<div class="line"><span class="lineno">   49</span><span class="comment"></span>        <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; n; i++) {</div>
+<div class="line"><span class="lineno">   50</span>            <a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i] = i;</div>
+<div class="line"><span class="lineno">   51</span>        }<span class="comment"></span></div>
+<div class="line"><span class="lineno">   52</span><span class="comment">        /// initially all have depth are equals to zero</span></div>
+<div class="line"><span class="lineno">   53</span><span class="comment"></span>        <a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>.assign(n, 0);</div>
+<div class="line"><span class="lineno">   54</span>        <a class="code hl_variable" href="#a4ade6f16c418fc98b54452f7b0252a53">maxElement</a>.assign(n, 0);</div>
+<div class="line"><span class="lineno">   55</span>        <a class="code hl_variable" href="#a1d77aad7fc39fe7140d834cd347e5c63">minElement</a>.assign(n, 0);</div>
+<div class="line"><span class="lineno">   56</span>        <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; n; i++) {</div>
+<div class="line"><span class="lineno">   57</span>            <a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[i] = 0;</div>
+<div class="line"><span class="lineno">   58</span>            <a class="code hl_variable" href="#a4ade6f16c418fc98b54452f7b0252a53">maxElement</a>[i] = i;</div>
+<div class="line"><span class="lineno">   59</span>            <a class="code hl_variable" href="#a1d77aad7fc39fe7140d834cd347e5c63">minElement</a>[i] = i;</div>
+<div class="line"><span class="lineno">   60</span>        }</div>
+<div class="line"><span class="lineno">   61</span>        <a class="code hl_variable" href="#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>.assign(n, 0);<span class="comment"></span></div>
+<div class="line"><span class="lineno">   62</span><span class="comment">        /// initially set size will be equals to one</span></div>
+<div class="line"><span class="lineno">   63</span><span class="comment"></span>        <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; n; i++) {</div>
+<div class="line"><span class="lineno">   64</span>            <a class="code hl_variable" href="#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[i] = 1;</div>
+<div class="line"><span class="lineno">   65</span>        }</div>
+<div class="line"><span class="lineno">   66</span>    }</div>
+<div class="ttc" id="aclassdsu_html_a1d77aad7fc39fe7140d834cd347e5c63"><div class="ttname"><a href="#a1d77aad7fc39fe7140d834cd347e5c63">dsu::minElement</a></div><div class="ttdeci">vector&lt; uint64_t &gt; minElement</div><div class="ttdoc">minimum of each set to which i belongs to</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:40</div></div>
+<div class="ttc" id="aclassdsu_html_a1ef0b0462a0dda63514f641cbb7dd8cb"><div class="ttname"><a href="#a1ef0b0462a0dda63514f641cbb7dd8cb">dsu::p</a></div><div class="ttdeci">vector&lt; uint64_t &gt; p</div><div class="ttdoc">keeps track of the parent of ith element</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:36</div></div>
+<div class="ttc" id="aclassdsu_html_a4ade6f16c418fc98b54452f7b0252a53"><div class="ttname"><a href="#a4ade6f16c418fc98b54452f7b0252a53">dsu::maxElement</a></div><div class="ttdeci">vector&lt; uint64_t &gt; maxElement</div><div class="ttdoc">maximum of each set to which i belongs to</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:39</div></div>
+<div class="ttc" id="aclassdsu_html_a4bf54d33fba178998dbbe4c57f2e9429"><div class="ttname"><a href="#a4bf54d33fba178998dbbe4c57f2e9429">dsu::depth</a></div><div class="ttdeci">vector&lt; uint64_t &gt; depth</div><div class="ttdoc">tracks the depth(rank) of i in the tree</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:37</div></div>
+<div class="ttc" id="aclassdsu_html_ac0dc3e17e49fe19b159b4ea4096d7b55"><div class="ttname"><a href="#ac0dc3e17e49fe19b159b4ea4096d7b55">dsu::setSize</a></div><div class="ttdeci">vector&lt; uint64_t &gt; setSize</div><div class="ttdoc">size of each chunk(set)</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:38</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -287,17 +287,17 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <p>initially all of them are their own parents</p>
-<div class="fragment"><div class="line"><span class="lineno">   44</span>                             {</div>
-<div class="line"><span class="lineno">   45</span>        <a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>.assign(n, 0);<span class="comment"></span></div>
-<div class="line"><span class="lineno">   46</span><span class="comment">        /// initially all of them are their own parents</span></div>
-<div class="line"><span class="lineno">   47</span><span class="comment"></span>        <a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>.assign(n, 0);</div>
-<div class="line"><span class="lineno">   48</span>        <a class="code hl_variable" href="#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>.assign(n, 0);</div>
-<div class="line"><span class="lineno">   49</span>        <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; n; i++) {</div>
-<div class="line"><span class="lineno">   50</span>            <a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i] = i;</div>
-<div class="line"><span class="lineno">   51</span>            <a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[i] = 0;</div>
-<div class="line"><span class="lineno">   52</span>            <a class="code hl_variable" href="#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[i] = 1;</div>
-<div class="line"><span class="lineno">   53</span>        }</div>
-<div class="line"><span class="lineno">   54</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>                             {</div>
+<div class="line"><span class="lineno">   46</span>        <a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>.assign(n, 0);<span class="comment"></span></div>
+<div class="line"><span class="lineno">   47</span><span class="comment">        /// initially all of them are their own parents</span></div>
+<div class="line"><span class="lineno">   48</span><span class="comment"></span>        <a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>.assign(n, 0);</div>
+<div class="line"><span class="lineno">   49</span>        <a class="code hl_variable" href="#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>.assign(n, 0);</div>
+<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; n; i++) {</div>
+<div class="line"><span class="lineno">   51</span>            <a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i] = i;</div>
+<div class="line"><span class="lineno">   52</span>            <a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[i] = 0;</div>
+<div class="line"><span class="lineno">   53</span>            <a class="code hl_variable" href="#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[i] = 1;</div>
+<div class="line"><span class="lineno">   54</span>        }</div>
+<div class="line"><span class="lineno">   55</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -334,14 +334,14 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>representative of the set to which i belongs to. </dd></dl>
 <p>using path compression</p>
-<div class="fragment"><div class="line"><span class="lineno">   73</span>                                 {<span class="comment"></span></div>
-<div class="line"><span class="lineno">   74</span><span class="comment">        /// using path compression</span></div>
-<div class="line"><span class="lineno">   75</span><span class="comment"></span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i] == i) {</div>
-<div class="line"><span class="lineno">   76</span>            <span class="keywordflow">return</span> i;</div>
-<div class="line"><span class="lineno">   77</span>        }</div>
-<div class="line"><span class="lineno">   78</span>        <span class="keywordflow">return</span> (<a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i] = <a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(<a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i]));</div>
-<div class="line"><span class="lineno">   79</span>    }</div>
-<div class="ttc" id="aclassdsu_html_a16851f78fe390fc1430905c83d6a2f1c"><div class="ttname"><a href="#a16851f78fe390fc1430905c83d6a2f1c">dsu::findSet</a></div><div class="ttdeci">uint64_t findSet(uint64_t i)</div><div class="ttdoc">Method to find the representative of the set to which i belongs to, T(n) = O(1)</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:73</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   74</span>                                 {<span class="comment"></span></div>
+<div class="line"><span class="lineno">   75</span><span class="comment">        /// using path compression</span></div>
+<div class="line"><span class="lineno">   76</span><span class="comment"></span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i] == i) {</div>
+<div class="line"><span class="lineno">   77</span>            <span class="keywordflow">return</span> i;</div>
+<div class="line"><span class="lineno">   78</span>        }</div>
+<div class="line"><span class="lineno">   79</span>        <span class="keywordflow">return</span> (<a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i] = <a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(<a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i]));</div>
+<div class="line"><span class="lineno">   80</span>    }</div>
+<div class="ttc" id="aclassdsu_html_a16851f78fe390fc1430905c83d6a2f1c"><div class="ttname"><a href="#a16851f78fe390fc1430905c83d6a2f1c">dsu::findSet</a></div><div class="ttdeci">uint64_t findSet(uint64_t i)</div><div class="ttdoc">Method to find the representative of the set to which i belongs to, T(n) = O(1)</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:74</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -382,13 +382,13 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>representative of the set to which i belongs to </dd></dl>
 <p>using union-rank</p>
-<div class="fragment"><div class="line"><span class="lineno">   61</span>                                 {<span class="comment"></span></div>
-<div class="line"><span class="lineno">   62</span><span class="comment">        /// using union-rank</span></div>
-<div class="line"><span class="lineno">   63</span><span class="comment"></span>        <span class="keywordflow">while</span> (i != <a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i]) {</div>
-<div class="line"><span class="lineno">   64</span>            i = <a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i];</div>
-<div class="line"><span class="lineno">   65</span>        }</div>
-<div class="line"><span class="lineno">   66</span>        <span class="keywordflow">return</span> i;</div>
-<div class="line"><span class="lineno">   67</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>                                 {<span class="comment"></span></div>
+<div class="line"><span class="lineno">   63</span><span class="comment">        /// using union-rank</span></div>
+<div class="line"><span class="lineno">   64</span><span class="comment"></span>        <span class="keywordflow">while</span> (i != <a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i]) {</div>
+<div class="line"><span class="lineno">   65</span>            i = <a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i];</div>
+<div class="line"><span class="lineno">   66</span>        }</div>
+<div class="line"><span class="lineno">   67</span>        <span class="keywordflow">return</span> i;</div>
+<div class="line"><span class="lineno">   68</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -423,16 +423,16 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  135</span>                                     {</div>
-<div class="line"><span class="lineno">  136</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;uint64_t&gt;</a> ans;</div>
-<div class="line"><span class="lineno">  137</span>        ans.push_back(<a class="code hl_function" href="#ac713a5b496d0405c82e2808a85e58415">get_min</a>(i));</div>
-<div class="line"><span class="lineno">  138</span>        ans.push_back(<a class="code hl_function" href="#a696141b8b092466767f4bfe1c5e46cde">get_max</a>(i));</div>
-<div class="line"><span class="lineno">  139</span>        ans.push_back(<a class="code hl_function" href="#a1c24228b0f2f49220133fb8c3566a55c">size</a>(i));</div>
-<div class="line"><span class="lineno">  140</span>        <span class="keywordflow">return</span> ans;</div>
-<div class="line"><span class="lineno">  141</span>    }</div>
-<div class="ttc" id="aclassdsu_html_a1c24228b0f2f49220133fb8c3566a55c"><div class="ttname"><a href="#a1c24228b0f2f49220133fb8c3566a55c">dsu::size</a></div><div class="ttdeci">uint64_t size(uint64_t i)</div><div class="ttdoc">A utility function that returns the size of the set to which i belongs to.</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:148</div></div>
-<div class="ttc" id="aclassdsu_html_a696141b8b092466767f4bfe1c5e46cde"><div class="ttname"><a href="#a696141b8b092466767f4bfe1c5e46cde">dsu::get_max</a></div><div class="ttdeci">uint64_t get_max(uint64_t i)</div><div class="ttdoc">A utility function that returns the max element of the set to which i belongs to.</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:155</div></div>
-<div class="ttc" id="aclassdsu_html_ac713a5b496d0405c82e2808a85e58415"><div class="ttname"><a href="#ac713a5b496d0405c82e2808a85e58415">dsu::get_min</a></div><div class="ttdeci">uint64_t get_min(uint64_t i)</div><div class="ttdoc">A utility function that returns the min element of the set to which i belongs to.</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:162</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  136</span>                                     {</div>
+<div class="line"><span class="lineno">  137</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;uint64_t&gt;</a> ans;</div>
+<div class="line"><span class="lineno">  138</span>        ans.push_back(<a class="code hl_function" href="#ac713a5b496d0405c82e2808a85e58415">get_min</a>(i));</div>
+<div class="line"><span class="lineno">  139</span>        ans.push_back(<a class="code hl_function" href="#a696141b8b092466767f4bfe1c5e46cde">get_max</a>(i));</div>
+<div class="line"><span class="lineno">  140</span>        ans.push_back(<a class="code hl_function" href="#a1c24228b0f2f49220133fb8c3566a55c">size</a>(i));</div>
+<div class="line"><span class="lineno">  141</span>        <span class="keywordflow">return</span> ans;</div>
+<div class="line"><span class="lineno">  142</span>    }</div>
+<div class="ttc" id="aclassdsu_html_a1c24228b0f2f49220133fb8c3566a55c"><div class="ttname"><a href="#a1c24228b0f2f49220133fb8c3566a55c">dsu::size</a></div><div class="ttdeci">uint64_t size(uint64_t i)</div><div class="ttdoc">A utility function that returns the size of the set to which i belongs to.</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:149</div></div>
+<div class="ttc" id="aclassdsu_html_a696141b8b092466767f4bfe1c5e46cde"><div class="ttname"><a href="#a696141b8b092466767f4bfe1c5e46cde">dsu::get_max</a></div><div class="ttdeci">uint64_t get_max(uint64_t i)</div><div class="ttdoc">A utility function that returns the max element of the set to which i belongs to.</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:156</div></div>
+<div class="ttc" id="aclassdsu_html_ac713a5b496d0405c82e2808a85e58415"><div class="ttname"><a href="#ac713a5b496d0405c82e2808a85e58415">dsu::get_min</a></div><div class="ttdeci">uint64_t get_min(uint64_t i)</div><div class="ttdoc">A utility function that returns the min element of the set to which i belongs to.</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:163</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -473,7 +473,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>maximum of the set to which i belongs to </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  155</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a4ade6f16c418fc98b54452f7b0252a53">maxElement</a>[<a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i)]; }</div>
+<div class="fragment"><div class="line"><span class="lineno">  156</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a4ade6f16c418fc98b54452f7b0252a53">maxElement</a>[<a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i)]; }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -513,7 +513,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>minimum of the set to which i belongs to </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  162</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a1d77aad7fc39fe7140d834cd347e5c63">minElement</a>[<a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i)]; }</div>
+<div class="fragment"><div class="line"><span class="lineno">  163</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a1d77aad7fc39fe7140d834cd347e5c63">minElement</a>[<a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i)]; }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -553,15 +553,15 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  119</span>                                            {</div>
-<div class="line"><span class="lineno">  120</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;uint64_t&gt;</a> ans;</div>
-<div class="line"><span class="lineno">  121</span>        <span class="keywordflow">while</span> (<a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i] != i) {</div>
-<div class="line"><span class="lineno">  122</span>            ans.push_back(i);</div>
-<div class="line"><span class="lineno">  123</span>            i = <a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i];</div>
-<div class="line"><span class="lineno">  124</span>        }</div>
-<div class="line"><span class="lineno">  125</span>        ans.push_back(i);</div>
-<div class="line"><span class="lineno">  126</span>        <span class="keywordflow">return</span> ans;</div>
-<div class="line"><span class="lineno">  127</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  120</span>                                            {</div>
+<div class="line"><span class="lineno">  121</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;uint64_t&gt;</a> ans;</div>
+<div class="line"><span class="lineno">  122</span>        <span class="keywordflow">while</span> (<a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i] != i) {</div>
+<div class="line"><span class="lineno">  123</span>            ans.push_back(i);</div>
+<div class="line"><span class="lineno">  124</span>            i = <a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i];</div>
+<div class="line"><span class="lineno">  125</span>        }</div>
+<div class="line"><span class="lineno">  126</span>        ans.push_back(i);</div>
+<div class="line"><span class="lineno">  127</span>        <span class="keywordflow">return</span> ans;</div>
+<div class="line"><span class="lineno">  128</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -603,12 +603,12 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if element <code>i</code> and <code>j</code> ARE in the same set </dd>
 <dd>
 <code>false</code> if element <code>i</code> and <code>j</code> are NOT in same set </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  123</span>                                        {</div>
-<div class="line"><span class="lineno">  124</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i) == <a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(j)) {</div>
-<div class="line"><span class="lineno">  125</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  126</span>        }</div>
-<div class="line"><span class="lineno">  127</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  128</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  124</span>                                        {</div>
+<div class="line"><span class="lineno">  125</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i) == <a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(j)) {</div>
+<div class="line"><span class="lineno">  126</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  127</span>        }</div>
+<div class="line"><span class="lineno">  128</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  129</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -655,12 +655,12 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if element i and j are in same set </dd>
 <dd>
 <code>false</code> if element i and j are not in same set </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  107</span>                                        {</div>
-<div class="line"><span class="lineno">  108</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i) == <a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(j)) {</div>
-<div class="line"><span class="lineno">  109</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  110</span>        }</div>
-<div class="line"><span class="lineno">  111</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  112</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  108</span>                                        {</div>
+<div class="line"><span class="lineno">  109</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i) == <a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(j)) {</div>
+<div class="line"><span class="lineno">  110</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  111</span>        }</div>
+<div class="line"><span class="lineno">  112</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  113</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -700,7 +700,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>size of the set to which i belongs to </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  148</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[<a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i)]; }</div>
+<div class="fragment"><div class="line"><span class="lineno">  149</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[<a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i)]; }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -751,35 +751,35 @@ Here is the call graph for this function:</div>
 <p>if same depth, then increase one's depth</p>
 <p>total size of the resultant set</p>
 <p>changing the maximum elements</p>
-<div class="fragment"><div class="line"><span class="lineno">   87</span>                                          {<span class="comment"></span></div>
-<div class="line"><span class="lineno">   88</span><span class="comment">        /// check if both belongs to the same set or not</span></div>
-<div class="line"><span class="lineno">   89</span><span class="comment"></span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="#a64d25c5986742f7c234ed449b2ff7303">isSame</a>(i, j)) {</div>
-<div class="line"><span class="lineno">   90</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   91</span>        }</div>
-<div class="line"><span class="lineno">   92</span> </div>
-<div class="line"><span class="lineno">   93</span>        <span class="comment">// we find the representative of the i and j</span></div>
-<div class="line"><span class="lineno">   94</span>        uint64_t x = <a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i);</div>
-<div class="line"><span class="lineno">   95</span>        uint64_t y = <a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(j);</div>
-<div class="line"><span class="lineno">   96</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   97</span><span class="comment">        /// always keeping the min as x</span></div>
-<div class="line"><span class="lineno">   98</span><span class="comment">        /// shallow tree</span></div>
-<div class="line"><span class="lineno">   99</span><span class="comment"></span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[x] &gt; <a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[y]) {</div>
-<div class="line"><span class="lineno">  100</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(x, y);</div>
-<div class="line"><span class="lineno">  101</span>        }<span class="comment"></span></div>
-<div class="line"><span class="lineno">  102</span><span class="comment">        /// making the shallower root&#39;s parent the deeper root</span></div>
-<div class="line"><span class="lineno">  103</span><span class="comment"></span>        <a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[x] = y;</div>
-<div class="line"><span class="lineno">  104</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  105</span><span class="comment">        /// if same depth, then increase one&#39;s depth</span></div>
-<div class="line"><span class="lineno">  106</span><span class="comment"></span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[x] == <a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[y]) {</div>
-<div class="line"><span class="lineno">  107</span>            <a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[y]++;</div>
-<div class="line"><span class="lineno">  108</span>        }<span class="comment"></span></div>
-<div class="line"><span class="lineno">  109</span><span class="comment">        /// total size of the resultant set</span></div>
-<div class="line"><span class="lineno">  110</span><span class="comment"></span>        <a class="code hl_variable" href="#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[y] += <a class="code hl_variable" href="#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[x];<span class="comment"></span></div>
-<div class="line"><span class="lineno">  111</span><span class="comment">        /// changing the maximum elements</span></div>
-<div class="line"><span class="lineno">  112</span><span class="comment"></span>        <a class="code hl_variable" href="#a4ade6f16c418fc98b54452f7b0252a53">maxElement</a>[y] = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(<a class="code hl_variable" href="#a4ade6f16c418fc98b54452f7b0252a53">maxElement</a>[x], <a class="code hl_variable" href="#a4ade6f16c418fc98b54452f7b0252a53">maxElement</a>[y]);</div>
-<div class="line"><span class="lineno">  113</span>        <a class="code hl_variable" href="#a1d77aad7fc39fe7140d834cd347e5c63">minElement</a>[y] = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(<a class="code hl_variable" href="#a1d77aad7fc39fe7140d834cd347e5c63">minElement</a>[x], <a class="code hl_variable" href="#a1d77aad7fc39fe7140d834cd347e5c63">minElement</a>[y]);</div>
-<div class="line"><span class="lineno">  114</span>    }</div>
-<div class="ttc" id="aclassdsu_html_a64d25c5986742f7c234ed449b2ff7303"><div class="ttname"><a href="#a64d25c5986742f7c234ed449b2ff7303">dsu::isSame</a></div><div class="ttdeci">bool isSame(uint64_t i, uint64_t j)</div><div class="ttdoc">A utility function which check whether i and j belongs to same set or not.</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:123</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   88</span>                                          {<span class="comment"></span></div>
+<div class="line"><span class="lineno">   89</span><span class="comment">        /// check if both belongs to the same set or not</span></div>
+<div class="line"><span class="lineno">   90</span><span class="comment"></span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="#a64d25c5986742f7c234ed449b2ff7303">isSame</a>(i, j)) {</div>
+<div class="line"><span class="lineno">   91</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   92</span>        }</div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>        <span class="comment">// we find the representative of the i and j</span></div>
+<div class="line"><span class="lineno">   95</span>        uint64_t x = <a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i);</div>
+<div class="line"><span class="lineno">   96</span>        uint64_t y = <a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(j);</div>
+<div class="line"><span class="lineno">   97</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">   98</span><span class="comment">        /// always keeping the min as x</span></div>
+<div class="line"><span class="lineno">   99</span><span class="comment">        /// shallow tree</span></div>
+<div class="line"><span class="lineno">  100</span><span class="comment"></span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[x] &gt; <a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[y]) {</div>
+<div class="line"><span class="lineno">  101</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(x, y);</div>
+<div class="line"><span class="lineno">  102</span>        }<span class="comment"></span></div>
+<div class="line"><span class="lineno">  103</span><span class="comment">        /// making the shallower root&#39;s parent the deeper root</span></div>
+<div class="line"><span class="lineno">  104</span><span class="comment"></span>        <a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[x] = y;</div>
+<div class="line"><span class="lineno">  105</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">  106</span><span class="comment">        /// if same depth, then increase one&#39;s depth</span></div>
+<div class="line"><span class="lineno">  107</span><span class="comment"></span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[x] == <a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[y]) {</div>
+<div class="line"><span class="lineno">  108</span>            <a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[y]++;</div>
+<div class="line"><span class="lineno">  109</span>        }<span class="comment"></span></div>
+<div class="line"><span class="lineno">  110</span><span class="comment">        /// total size of the resultant set</span></div>
+<div class="line"><span class="lineno">  111</span><span class="comment"></span>        <a class="code hl_variable" href="#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[y] += <a class="code hl_variable" href="#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[x];<span class="comment"></span></div>
+<div class="line"><span class="lineno">  112</span><span class="comment">        /// changing the maximum elements</span></div>
+<div class="line"><span class="lineno">  113</span><span class="comment"></span>        <a class="code hl_variable" href="#a4ade6f16c418fc98b54452f7b0252a53">maxElement</a>[y] = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(<a class="code hl_variable" href="#a4ade6f16c418fc98b54452f7b0252a53">maxElement</a>[x], <a class="code hl_variable" href="#a4ade6f16c418fc98b54452f7b0252a53">maxElement</a>[y]);</div>
+<div class="line"><span class="lineno">  114</span>        <a class="code hl_variable" href="#a1d77aad7fc39fe7140d834cd347e5c63">minElement</a>[y] = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(<a class="code hl_variable" href="#a1d77aad7fc39fe7140d834cd347e5c63">minElement</a>[x], <a class="code hl_variable" href="#a1d77aad7fc39fe7140d834cd347e5c63">minElement</a>[y]);</div>
+<div class="line"><span class="lineno">  115</span>    }</div>
+<div class="ttc" id="aclassdsu_html_a64d25c5986742f7c234ed449b2ff7303"><div class="ttname"><a href="#a64d25c5986742f7c234ed449b2ff7303">dsu::isSame</a></div><div class="ttdeci">bool isSame(uint64_t i, uint64_t j)</div><div class="ttdoc">A utility function which check whether i and j belongs to same set or not.</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:124</div></div>
 <div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
 <div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
 <div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
@@ -833,30 +833,30 @@ Here is the call graph for this function:</div>
 <p>making the shallower tree, root parent of the deeper root</p>
 <p>if same depth, then increase one's depth</p>
 <p>total size of the resultant set</p>
-<div class="fragment"><div class="line"><span class="lineno">   75</span>                                          {<span class="comment"></span></div>
-<div class="line"><span class="lineno">   76</span><span class="comment">        /// checks if both belongs to same set or not</span></div>
-<div class="line"><span class="lineno">   77</span><span class="comment"></span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="#a64d25c5986742f7c234ed449b2ff7303">isSame</a>(i, j)) {</div>
-<div class="line"><span class="lineno">   78</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   79</span>        }<span class="comment"></span></div>
-<div class="line"><span class="lineno">   80</span><span class="comment">        /// we find representative of the i and j</span></div>
-<div class="line"><span class="lineno">   81</span><span class="comment"></span>        uint64_t x = <a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i);</div>
-<div class="line"><span class="lineno">   82</span>        uint64_t y = <a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(j);</div>
-<div class="line"><span class="lineno">   83</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   84</span><span class="comment">        /// always keeping the min as x</span></div>
-<div class="line"><span class="lineno">   85</span><span class="comment">        /// in order to create a shallow tree</span></div>
-<div class="line"><span class="lineno">   86</span><span class="comment"></span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[x] &gt; <a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[y]) {</div>
-<div class="line"><span class="lineno">   87</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(x, y);</div>
-<div class="line"><span class="lineno">   88</span>        }<span class="comment"></span></div>
-<div class="line"><span class="lineno">   89</span><span class="comment">        /// making the shallower tree, root parent of the deeper root</span></div>
-<div class="line"><span class="lineno">   90</span><span class="comment"></span>        <a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[x] = y;</div>
-<div class="line"><span class="lineno">   91</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   92</span><span class="comment">        /// if same depth, then increase one&#39;s depth</span></div>
-<div class="line"><span class="lineno">   93</span><span class="comment"></span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[x] == <a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[y]) {</div>
-<div class="line"><span class="lineno">   94</span>            <a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[y]++;</div>
-<div class="line"><span class="lineno">   95</span>        }<span class="comment"></span></div>
-<div class="line"><span class="lineno">   96</span><span class="comment">        /// total size of the resultant set</span></div>
-<div class="line"><span class="lineno">   97</span><span class="comment"></span>        <a class="code hl_variable" href="#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[y] += <a class="code hl_variable" href="#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[x];</div>
-<div class="line"><span class="lineno">   98</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">   76</span>                                          {<span class="comment"></span></div>
+<div class="line"><span class="lineno">   77</span><span class="comment">        /// checks if both belongs to same set or not</span></div>
+<div class="line"><span class="lineno">   78</span><span class="comment"></span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="#a64d25c5986742f7c234ed449b2ff7303">isSame</a>(i, j)) {</div>
+<div class="line"><span class="lineno">   79</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   80</span>        }<span class="comment"></span></div>
+<div class="line"><span class="lineno">   81</span><span class="comment">        /// we find representative of the i and j</span></div>
+<div class="line"><span class="lineno">   82</span><span class="comment"></span>        uint64_t x = <a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i);</div>
+<div class="line"><span class="lineno">   83</span>        uint64_t y = <a class="code hl_function" href="#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(j);</div>
+<div class="line"><span class="lineno">   84</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">   85</span><span class="comment">        /// always keeping the min as x</span></div>
+<div class="line"><span class="lineno">   86</span><span class="comment">        /// in order to create a shallow tree</span></div>
+<div class="line"><span class="lineno">   87</span><span class="comment"></span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[x] &gt; <a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[y]) {</div>
+<div class="line"><span class="lineno">   88</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(x, y);</div>
+<div class="line"><span class="lineno">   89</span>        }<span class="comment"></span></div>
+<div class="line"><span class="lineno">   90</span><span class="comment">        /// making the shallower tree, root parent of the deeper root</span></div>
+<div class="line"><span class="lineno">   91</span><span class="comment"></span>        <a class="code hl_variable" href="#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[x] = y;</div>
+<div class="line"><span class="lineno">   92</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">   93</span><span class="comment">        /// if same depth, then increase one&#39;s depth</span></div>
+<div class="line"><span class="lineno">   94</span><span class="comment"></span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[x] == <a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[y]) {</div>
+<div class="line"><span class="lineno">   95</span>            <a class="code hl_variable" href="#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[y]++;</div>
+<div class="line"><span class="lineno">   96</span>        }<span class="comment"></span></div>
+<div class="line"><span class="lineno">   97</span><span class="comment">        /// total size of the resultant set</span></div>
+<div class="line"><span class="lineno">   98</span><span class="comment"></span>        <a class="code hl_variable" href="#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[y] += <a class="code hl_variable" href="#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[x];</div>
+<div class="line"><span class="lineno">   99</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

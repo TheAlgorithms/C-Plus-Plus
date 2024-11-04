@@ -113,11 +113,12 @@ $(function(){initNavTree('d7/d89/double__factorial_8cpp.html','../../'); initRes
 <p>Compute <a href="https://en.wikipedia.org/wiki/Double_factorial" target="_blank">double factorial</a>: \(n!!\).  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for double_factorial.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d0e/double__factorial_8cpp__incl.svg" width="182" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d0e/double__factorial_8cpp__incl.svg" width="255" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -153,15 +154,15 @@ It is also called as semifactorial of a number and is denoted by \(n!!\) </p>
       </table>
 </div><div class="memdoc">
 <p>Compute double factorial using iterative method </p>
-<div class="fragment"><div class="line"><span class="lineno">   17</span>                                                {</div>
-<div class="line"><span class="lineno">   18</span>    uint64_t res = 1;</div>
-<div class="line"><span class="lineno">   19</span>    <span class="keywordflow">for</span> (uint64_t i = n;; i -= 2) {</div>
-<div class="line"><span class="lineno">   20</span>        <span class="keywordflow">if</span> (i == 0 || i == 1)</div>
-<div class="line"><span class="lineno">   21</span>            <span class="keywordflow">return</span> res;</div>
-<div class="line"><span class="lineno">   22</span>        res *= i;</div>
-<div class="line"><span class="lineno">   23</span>    }</div>
-<div class="line"><span class="lineno">   24</span>    <span class="keywordflow">return</span> res;</div>
-<div class="line"><span class="lineno">   25</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   18</span>                                                {</div>
+<div class="line"><span class="lineno">   19</span>    uint64_t res = 1;</div>
+<div class="line"><span class="lineno">   20</span>    <span class="keywordflow">for</span> (uint64_t i = n;; i -= 2) {</div>
+<div class="line"><span class="lineno">   21</span>        <span class="keywordflow">if</span> (i == 0 || i == 1)</div>
+<div class="line"><span class="lineno">   22</span>            <span class="keywordflow">return</span> res;</div>
+<div class="line"><span class="lineno">   23</span>        res *= i;</div>
+<div class="line"><span class="lineno">   24</span>    }</div>
+<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">return</span> res;</div>
+<div class="line"><span class="lineno">   26</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -181,12 +182,12 @@ It is also called as semifactorial of a number and is denoted by \(n!!\) </p>
 </div><div class="memdoc">
 <p>Compute double factorial using resursive method. <br  />
 Recursion can be costly for large numbers. </p>
-<div class="fragment"><div class="line"><span class="lineno">   30</span>                                                {</div>
-<div class="line"><span class="lineno">   31</span>    <span class="keywordflow">if</span> (n &lt;= 1)</div>
-<div class="line"><span class="lineno">   32</span>        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">return</span> n * <a class="code hl_function" href="#a68ba20fed2ce427f6469c7689437829d">double_factorial_recursive</a>(n - 2);</div>
-<div class="line"><span class="lineno">   34</span>}</div>
-<div class="ttc" id="adouble__factorial_8cpp_html_a68ba20fed2ce427f6469c7689437829d"><div class="ttname"><a href="#a68ba20fed2ce427f6469c7689437829d">double_factorial_recursive</a></div><div class="ttdeci">uint64_t double_factorial_recursive(uint64_t n)</div><div class="ttdef"><b>Definition</b> double_factorial.cpp:30</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>                                                {</div>
+<div class="line"><span class="lineno">   32</span>    <span class="keywordflow">if</span> (n &lt;= 1)</div>
+<div class="line"><span class="lineno">   33</span>        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">return</span> n * <a class="code hl_function" href="#a68ba20fed2ce427f6469c7689437829d">double_factorial_recursive</a>(n - 2);</div>
+<div class="line"><span class="lineno">   35</span>}</div>
+<div class="ttc" id="adouble__factorial_8cpp_html_a68ba20fed2ce427f6469c7689437829d"><div class="ttname"><a href="#a68ba20fed2ce427f6469c7689437829d">double_factorial_recursive</a></div><div class="ttdeci">uint64_t double_factorial_recursive(uint64_t n)</div><div class="ttdef"><b>Definition</b> double_factorial.cpp:31</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -210,11 +211,11 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Main function </p>
-<div class="fragment"><div class="line"><span class="lineno">   67</span>           {</div>
-<div class="line"><span class="lineno">   68</span>    <a class="code hl_function" href="#a88ec9ad42717780d6caaff9d3d6977f9">tests</a>();</div>
-<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   70</span>}</div>
-<div class="ttc" id="adouble__factorial_8cpp_html_a88ec9ad42717780d6caaff9d3d6977f9"><div class="ttname"><a href="#a88ec9ad42717780d6caaff9d3d6977f9">tests</a></div><div class="ttdeci">void tests()</div><div class="ttdef"><b>Definition</b> double_factorial.cpp:50</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>           {</div>
+<div class="line"><span class="lineno">   69</span>    <a class="code hl_function" href="#a88ec9ad42717780d6caaff9d3d6977f9">tests</a>();</div>
+<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   71</span>}</div>
+<div class="ttc" id="adouble__factorial_8cpp_html_a88ec9ad42717780d6caaff9d3d6977f9"><div class="ttname"><a href="#a88ec9ad42717780d6caaff9d3d6977f9">tests</a></div><div class="ttdeci">void tests()</div><div class="ttdef"><b>Definition</b> double_factorial.cpp:51</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -248,11 +249,11 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>                                         {</div>
-<div class="line"><span class="lineno">   43</span>    assert(<a class="code hl_function" href="#a0a3c417360400093891a9ccddaa4be26">double_factorial_iterative</a>(n) == expected);</div>
-<div class="line"><span class="lineno">   44</span>    assert(<a class="code hl_function" href="#a68ba20fed2ce427f6469c7689437829d">double_factorial_recursive</a>(n) == expected);</div>
-<div class="line"><span class="lineno">   45</span>}</div>
-<div class="ttc" id="adouble__factorial_8cpp_html_a0a3c417360400093891a9ccddaa4be26"><div class="ttname"><a href="#a0a3c417360400093891a9ccddaa4be26">double_factorial_iterative</a></div><div class="ttdeci">uint64_t double_factorial_iterative(uint64_t n)</div><div class="ttdef"><b>Definition</b> double_factorial.cpp:17</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>                                         {</div>
+<div class="line"><span class="lineno">   44</span>    assert(<a class="code hl_function" href="#a0a3c417360400093891a9ccddaa4be26">double_factorial_iterative</a>(n) == expected);</div>
+<div class="line"><span class="lineno">   45</span>    assert(<a class="code hl_function" href="#a68ba20fed2ce427f6469c7689437829d">double_factorial_recursive</a>(n) == expected);</div>
+<div class="line"><span class="lineno">   46</span>}</div>
+<div class="ttc" id="adouble__factorial_8cpp_html_a0a3c417360400093891a9ccddaa4be26"><div class="ttname"><a href="#a0a3c417360400093891a9ccddaa4be26">double_factorial_iterative</a></div><div class="ttdeci">uint64_t double_factorial_iterative(uint64_t n)</div><div class="ttdef"><b>Definition</b> double_factorial.cpp:18</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -276,19 +277,19 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Test implementations </p>
-<div class="fragment"><div class="line"><span class="lineno">   50</span>             {</div>
-<div class="line"><span class="lineno">   51</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1:\t n=5\t...&quot;</span>;</div>
-<div class="line"><span class="lineno">   52</span>    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>(5, 15);</div>
-<div class="line"><span class="lineno">   53</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   54</span> </div>
-<div class="line"><span class="lineno">   55</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2:\t n=15\t...&quot;</span>;</div>
-<div class="line"><span class="lineno">   56</span>    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>(15, 2027025);</div>
-<div class="line"><span class="lineno">   57</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   58</span> </div>
-<div class="line"><span class="lineno">   59</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 3:\t n=0\t...&quot;</span>;</div>
-<div class="line"><span class="lineno">   60</span>    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>(0, 1);</div>
-<div class="line"><span class="lineno">   61</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   62</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   51</span>             {</div>
+<div class="line"><span class="lineno">   52</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1:\t n=5\t...&quot;</span>;</div>
+<div class="line"><span class="lineno">   53</span>    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>(5, 15);</div>
+<div class="line"><span class="lineno">   54</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   55</span> </div>
+<div class="line"><span class="lineno">   56</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2:\t n=15\t...&quot;</span>;</div>
+<div class="line"><span class="lineno">   57</span>    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>(15, 2027025);</div>
+<div class="line"><span class="lineno">   58</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   59</span> </div>
+<div class="line"><span class="lineno">   60</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 3:\t n=0\t...&quot;</span>;</div>
+<div class="line"><span class="lineno">   61</span>    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>(0, 1);</div>
+<div class="line"><span class="lineno">   62</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   63</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="agenerate__parentheses_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> generate_parentheses.cpp:82</div></div>
 </div><!-- fragment --><div class="dynheader">

@@ -117,6 +117,7 @@ $(function(){initNavTree('d7/db9/hill__cipher_8cpp.html','../../'); initResizabl
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;ctime&gt;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
@@ -189,23 +190,23 @@ The matrix generation algorithm is very rudimentary and does not guarantee an in
       </table>
 </div><div class="memdoc">
 <p>Main function </p>
-<div class="fragment"><div class="line"><span class="lineno">  532</span>           {</div>
-<div class="line"><span class="lineno">  533</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a>(<span class="keyword">nullptr</span>));</div>
-<div class="line"><span class="lineno">  534</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Key dictionary: (&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/strlen.html">std::strlen</a>(<a class="code hl_variable" href="../../d6/d4e/namespaceciphers.html#ab9aec0ccf4b6809f652bb540be87c216">ciphers::STRKEY</a>) &lt;&lt; <span class="stringliteral">&quot;)\n\t&quot;</span></div>
-<div class="line"><span class="lineno">  535</span>              &lt;&lt; <a class="code hl_variable" href="../../d6/d4e/namespaceciphers.html#ab9aec0ccf4b6809f652bb540be87c216">ciphers::STRKEY</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  536</span> </div>
-<div class="line"><span class="lineno">  537</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> text = <span class="stringliteral">&quot;This is a simple text with numb3r5 and exclamat!0n.&quot;</span>;</div>
-<div class="line"><span class="lineno">  538</span> </div>
-<div class="line"><span class="lineno">  539</span>    <a class="code hl_function" href="../../d3/dae/dsu__path__compression_8cpp.html#ae7880ce913f3058a35ff106d5be9e243">test1</a>(text);</div>
-<div class="line"><span class="lineno">  540</span>    <a class="code hl_function" href="../../d3/dae/dsu__path__compression_8cpp.html#a45d94ead4cf4e1ff9f87c38bc99f59ae">test2</a>(text);</div>
-<div class="line"><span class="lineno">  541</span> </div>
-<div class="line"><span class="lineno">  542</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  543</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  533</span>           {</div>
+<div class="line"><span class="lineno">  534</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a>(<span class="keyword">nullptr</span>));</div>
+<div class="line"><span class="lineno">  535</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Key dictionary: (&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/strlen.html">std::strlen</a>(<a class="code hl_variable" href="../../d6/d4e/namespaceciphers.html#ab9aec0ccf4b6809f652bb540be87c216">ciphers::STRKEY</a>) &lt;&lt; <span class="stringliteral">&quot;)\n\t&quot;</span></div>
+<div class="line"><span class="lineno">  536</span>              &lt;&lt; <a class="code hl_variable" href="../../d6/d4e/namespaceciphers.html#ab9aec0ccf4b6809f652bb540be87c216">ciphers::STRKEY</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  537</span> </div>
+<div class="line"><span class="lineno">  538</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> text = <span class="stringliteral">&quot;This is a simple text with numb3r5 and exclamat!0n.&quot;</span>;</div>
+<div class="line"><span class="lineno">  539</span> </div>
+<div class="line"><span class="lineno">  540</span>    <a class="code hl_function" href="../../d3/dae/dsu__path__compression_8cpp.html#ae7880ce913f3058a35ff106d5be9e243">test1</a>(text);</div>
+<div class="line"><span class="lineno">  541</span>    <a class="code hl_function" href="../../d3/dae/dsu__path__compression_8cpp.html#a45d94ead4cf4e1ff9f87c38bc99f59ae">test2</a>(text);</div>
+<div class="line"><span class="lineno">  542</span> </div>
+<div class="line"><span class="lineno">  543</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  544</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
-<div class="ttc" id="adsu__path__compression_8cpp_html_a45d94ead4cf4e1ff9f87c38bc99f59ae"><div class="ttname"><a href="../../d3/dae/dsu__path__compression_8cpp.html#a45d94ead4cf4e1ff9f87c38bc99f59ae">test2</a></div><div class="ttdeci">static void test2()</div><div class="ttdoc">Self-implementations, 2nd test.</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:186</div></div>
-<div class="ttc" id="adsu__path__compression_8cpp_html_ae7880ce913f3058a35ff106d5be9e243"><div class="ttname"><a href="../../d3/dae/dsu__path__compression_8cpp.html#ae7880ce913f3058a35ff106d5be9e243">test1</a></div><div class="ttdeci">static void test1()</div><div class="ttdoc">Self-test implementations, 1st test.</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:169</div></div>
-<div class="ttc" id="anamespaceciphers_html_ab9aec0ccf4b6809f652bb540be87c216"><div class="ttname"><a href="../../d6/d4e/namespaceciphers.html#ab9aec0ccf4b6809f652bb540be87c216">ciphers::STRKEY</a></div><div class="ttdeci">static const char * STRKEY</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:73</div></div>
+<div class="ttc" id="adsu__path__compression_8cpp_html_a45d94ead4cf4e1ff9f87c38bc99f59ae"><div class="ttname"><a href="../../d3/dae/dsu__path__compression_8cpp.html#a45d94ead4cf4e1ff9f87c38bc99f59ae">test2</a></div><div class="ttdeci">static void test2()</div><div class="ttdoc">Self-implementations, 2nd test.</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:187</div></div>
+<div class="ttc" id="adsu__path__compression_8cpp_html_ae7880ce913f3058a35ff106d5be9e243"><div class="ttname"><a href="../../d3/dae/dsu__path__compression_8cpp.html#ae7880ce913f3058a35ff106d5be9e243">test1</a></div><div class="ttdeci">static void test1()</div><div class="ttdoc">Self-test implementations, 1st test.</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:170</div></div>
+<div class="ttc" id="anamespaceciphers_html_ab9aec0ccf4b6809f652bb540be87c216"><div class="ttname"><a href="../../d6/d4e/namespaceciphers.html#ab9aec0ccf4b6809f652bb540be87c216">ciphers::STRKEY</a></div><div class="ttdeci">static const char * STRKEY</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:74</div></div>
 <div class="ttc" id="asrand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a></div><div class="ttdeci">T srand(T... args)</div></div>
 <div class="ttc" id="astrlen_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/byte/strlen.html">std::strlen</a></div><div class="ttdeci">T strlen(T... args)</div></div>
 <div class="ttc" id="atime_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a></div><div class="ttdeci">T time(T... args)</div></div>
@@ -246,19 +247,19 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>operator to print a matrix </p>
-<div class="fragment"><div class="line"><span class="lineno">   54</span>                                                                   {</div>
-<div class="line"><span class="lineno">   55</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> width = 15;</div>
-<div class="line"><span class="lineno">   56</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> separator = <span class="charliteral">&#39; &#39;</span>;</div>
-<div class="line"><span class="lineno">   57</span> </div>
-<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; v.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); row++) {</div>
-<div class="line"><span class="lineno">   59</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col = 0; col &lt; v[row].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); col++)</div>
-<div class="line"><span class="lineno">   60</span>            out &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::left</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(width) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setfill.html">std::setfill</a>(separator)</div>
-<div class="line"><span class="lineno">   61</span>                &lt;&lt; v[row][col];</div>
-<div class="line"><span class="lineno">   62</span>        out &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   63</span>    }</div>
-<div class="line"><span class="lineno">   64</span> </div>
-<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">return</span> out;</div>
-<div class="line"><span class="lineno">   66</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>                                                                   {</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> width = 15;</div>
+<div class="line"><span class="lineno">   57</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> separator = <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; v.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); row++) {</div>
+<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col = 0; col &lt; v[row].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); col++)</div>
+<div class="line"><span class="lineno">   61</span>            out &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::left</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(width) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setfill.html">std::setfill</a>(separator)</div>
+<div class="line"><span class="lineno">   62</span>                &lt;&lt; v[row][col];</div>
+<div class="line"><span class="lineno">   63</span>        out &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   64</span>    }</div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">return</span> out;</div>
+<div class="line"><span class="lineno">   67</span>}</div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="aleft_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::left</a></div><div class="ttdeci">T left(T... args)</div></div>
 <div class="ttc" id="asetfill_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/setfill.html">std::setfill</a></div><div class="ttdeci">T setfill(T... args)</div></div>
@@ -294,39 +295,39 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  470</span>                                  {</div>
-<div class="line"><span class="lineno">  471</span>    <span class="comment">// std::string text = &quot;Hello world!&quot;;</span></div>
-<div class="line"><span class="lineno">  472</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;======Test 1 (3x3 key) ======\nOriginal text:\n\t&quot;</span> &lt;&lt; text</div>
-<div class="line"><span class="lineno">  473</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  474</span> </div>
-<div class="line"><span class="lineno">  475</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair&lt;matrix&lt;int&gt;</a>, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;int&gt;</a>&gt; p =</div>
-<div class="line"><span class="lineno">  476</span>        <a class="code hl_function" href="../../d6/d26/classciphers_1_1_hill_cipher.html#a405b0a28d66a61239d3565d5256f9cb5">ciphers::HillCipher::generate_keys</a>(3, 0, 100);</div>
-<div class="line"><span class="lineno">  477</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;int&gt;</a> ekey = p.first;</div>
-<div class="line"><span class="lineno">  478</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;int&gt;</a> dkey = p.second;</div>
-<div class="line"><span class="lineno">  479</span> </div>
-<div class="line"><span class="lineno">  480</span>    <span class="comment">// matrix&lt;int&gt; ekey = {{22, 28, 25}, {5, 26, 15}, {14, 18, 9}};</span></div>
-<div class="line"><span class="lineno">  481</span>    <span class="comment">// std::cout &lt;&lt; &quot;Encryption key: \n&quot; &lt;&lt; ekey;</span></div>
-<div class="line"><span class="lineno">  482</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> gibberish = <a class="code hl_function" href="../../d6/d26/classciphers_1_1_hill_cipher.html#aa8bbb6e4a5749f6008b06602d5103917">ciphers::HillCipher::encrypt_text</a>(text, ekey);</div>
-<div class="line"><span class="lineno">  483</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Encrypted text:\n\t&quot;</span> &lt;&lt; gibberish &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  484</span> </div>
-<div class="line"><span class="lineno">  485</span>    <span class="comment">// matrix&lt;int&gt; dkey = ciphers::HillCipher::generate_decryption_key(ekey);</span></div>
-<div class="line"><span class="lineno">  486</span>    <span class="comment">// std::cout &lt;&lt; &quot;Decryption key: \n&quot; &lt;&lt; dkey;</span></div>
-<div class="line"><span class="lineno">  487</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> txt_back = <a class="code hl_function" href="../../d6/d26/classciphers_1_1_hill_cipher.html#a427acfac1dbff3f48a2b071d449d965b">ciphers::HillCipher::decrypt_text</a>(gibberish, dkey);</div>
-<div class="line"><span class="lineno">  488</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Reconstruct text:\n\t&quot;</span> &lt;&lt; txt_back &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  489</span> </div>
-<div class="line"><span class="lineno">  490</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a> out_file(<span class="stringliteral">&quot;hill_cipher_test1.txt&quot;</span>);</div>
-<div class="line"><span class="lineno">  491</span>    out_file &lt;&lt; <span class="stringliteral">&quot;Block size: &quot;</span> &lt;&lt; ekey.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  492</span>    out_file &lt;&lt; <span class="stringliteral">&quot;Encryption Key:\n&quot;</span> &lt;&lt; ekey;</div>
-<div class="line"><span class="lineno">  493</span>    out_file &lt;&lt; <span class="stringliteral">&quot;\nDecryption Key:\n&quot;</span> &lt;&lt; dkey;</div>
-<div class="line"><span class="lineno">  494</span>    out_file.close();</div>
-<div class="line"><span class="lineno">  495</span> </div>
-<div class="line"><span class="lineno">  496</span>    assert(txt_back == text);</div>
-<div class="line"><span class="lineno">  497</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Passed :)\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  498</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  471</span>                                  {</div>
+<div class="line"><span class="lineno">  472</span>    <span class="comment">// std::string text = &quot;Hello world!&quot;;</span></div>
+<div class="line"><span class="lineno">  473</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;======Test 1 (3x3 key) ======\nOriginal text:\n\t&quot;</span> &lt;&lt; text</div>
+<div class="line"><span class="lineno">  474</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  475</span> </div>
+<div class="line"><span class="lineno">  476</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair&lt;matrix&lt;int&gt;</a>, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;int&gt;</a>&gt; p =</div>
+<div class="line"><span class="lineno">  477</span>        <a class="code hl_function" href="../../d6/d26/classciphers_1_1_hill_cipher.html#a405b0a28d66a61239d3565d5256f9cb5">ciphers::HillCipher::generate_keys</a>(3, 0, 100);</div>
+<div class="line"><span class="lineno">  478</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;int&gt;</a> ekey = p.first;</div>
+<div class="line"><span class="lineno">  479</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;int&gt;</a> dkey = p.second;</div>
+<div class="line"><span class="lineno">  480</span> </div>
+<div class="line"><span class="lineno">  481</span>    <span class="comment">// matrix&lt;int&gt; ekey = {{22, 28, 25}, {5, 26, 15}, {14, 18, 9}};</span></div>
+<div class="line"><span class="lineno">  482</span>    <span class="comment">// std::cout &lt;&lt; &quot;Encryption key: \n&quot; &lt;&lt; ekey;</span></div>
+<div class="line"><span class="lineno">  483</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> gibberish = <a class="code hl_function" href="../../d6/d26/classciphers_1_1_hill_cipher.html#aa8bbb6e4a5749f6008b06602d5103917">ciphers::HillCipher::encrypt_text</a>(text, ekey);</div>
+<div class="line"><span class="lineno">  484</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Encrypted text:\n\t&quot;</span> &lt;&lt; gibberish &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  485</span> </div>
+<div class="line"><span class="lineno">  486</span>    <span class="comment">// matrix&lt;int&gt; dkey = ciphers::HillCipher::generate_decryption_key(ekey);</span></div>
+<div class="line"><span class="lineno">  487</span>    <span class="comment">// std::cout &lt;&lt; &quot;Decryption key: \n&quot; &lt;&lt; dkey;</span></div>
+<div class="line"><span class="lineno">  488</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> txt_back = <a class="code hl_function" href="../../d6/d26/classciphers_1_1_hill_cipher.html#a427acfac1dbff3f48a2b071d449d965b">ciphers::HillCipher::decrypt_text</a>(gibberish, dkey);</div>
+<div class="line"><span class="lineno">  489</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Reconstruct text:\n\t&quot;</span> &lt;&lt; txt_back &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  490</span> </div>
+<div class="line"><span class="lineno">  491</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a> out_file(<span class="stringliteral">&quot;hill_cipher_test1.txt&quot;</span>);</div>
+<div class="line"><span class="lineno">  492</span>    out_file &lt;&lt; <span class="stringliteral">&quot;Block size: &quot;</span> &lt;&lt; ekey.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  493</span>    out_file &lt;&lt; <span class="stringliteral">&quot;Encryption Key:\n&quot;</span> &lt;&lt; ekey;</div>
+<div class="line"><span class="lineno">  494</span>    out_file &lt;&lt; <span class="stringliteral">&quot;\nDecryption Key:\n&quot;</span> &lt;&lt; dkey;</div>
+<div class="line"><span class="lineno">  495</span>    out_file.close();</div>
+<div class="line"><span class="lineno">  496</span> </div>
+<div class="line"><span class="lineno">  497</span>    assert(txt_back == text);</div>
+<div class="line"><span class="lineno">  498</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Passed :)\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  499</span>}</div>
 <div class="ttc" id="abasic_ofstream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a></div></div>
-<div class="ttc" id="aclassciphers_1_1_hill_cipher_html_a405b0a28d66a61239d3565d5256f9cb5"><div class="ttname"><a href="../../d6/d26/classciphers_1_1_hill_cipher.html#a405b0a28d66a61239d3565d5256f9cb5">ciphers::HillCipher::generate_keys</a></div><div class="ttdeci">static std::pair&lt; matrix&lt; int &gt;, matrix&lt; int &gt; &gt; generate_keys(size_t size, int limit1=0, int limit2=10)</div><div class="ttdoc">Generate encryption and decryption key pair.</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:424</div></div>
-<div class="ttc" id="aclassciphers_1_1_hill_cipher_html_a427acfac1dbff3f48a2b071d449d965b"><div class="ttname"><a href="../../d6/d26/classciphers_1_1_hill_cipher.html#a427acfac1dbff3f48a2b071d449d965b">ciphers::HillCipher::decrypt_text</a></div><div class="ttdeci">static const std::string decrypt_text(const std::string &amp;text, const matrix&lt; int &gt; &amp;decrypt_key)</div><div class="ttdoc">Decrypt a given text using a given key.</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:457</div></div>
-<div class="ttc" id="aclassciphers_1_1_hill_cipher_html_aa8bbb6e4a5749f6008b06602d5103917"><div class="ttname"><a href="../../d6/d26/classciphers_1_1_hill_cipher.html#aa8bbb6e4a5749f6008b06602d5103917">ciphers::HillCipher::encrypt_text</a></div><div class="ttdeci">static const std::string encrypt_text(const std::string &amp;text, const matrix&lt; int &gt; &amp;encrypt_key)</div><div class="ttdoc">Encrypt a given text using a given key.</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:445</div></div>
+<div class="ttc" id="aclassciphers_1_1_hill_cipher_html_a405b0a28d66a61239d3565d5256f9cb5"><div class="ttname"><a href="../../d6/d26/classciphers_1_1_hill_cipher.html#a405b0a28d66a61239d3565d5256f9cb5">ciphers::HillCipher::generate_keys</a></div><div class="ttdeci">static std::pair&lt; matrix&lt; int &gt;, matrix&lt; int &gt; &gt; generate_keys(size_t size, int limit1=0, int limit2=10)</div><div class="ttdoc">Generate encryption and decryption key pair.</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:425</div></div>
+<div class="ttc" id="aclassciphers_1_1_hill_cipher_html_a427acfac1dbff3f48a2b071d449d965b"><div class="ttname"><a href="../../d6/d26/classciphers_1_1_hill_cipher.html#a427acfac1dbff3f48a2b071d449d965b">ciphers::HillCipher::decrypt_text</a></div><div class="ttdeci">static const std::string decrypt_text(const std::string &amp;text, const matrix&lt; int &gt; &amp;decrypt_key)</div><div class="ttdoc">Decrypt a given text using a given key.</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:458</div></div>
+<div class="ttc" id="aclassciphers_1_1_hill_cipher_html_aa8bbb6e4a5749f6008b06602d5103917"><div class="ttname"><a href="../../d6/d26/classciphers_1_1_hill_cipher.html#aa8bbb6e4a5749f6008b06602d5103917">ciphers::HillCipher::encrypt_text</a></div><div class="ttdeci">static const std::string encrypt_text(const std::string &amp;text, const matrix&lt; int &gt; &amp;encrypt_key)</div><div class="ttdoc">Encrypt a given text using a given key.</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:446</div></div>
 <div class="ttc" id="apair_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a></div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -359,31 +360,31 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  505</span>                                  {</div>
-<div class="line"><span class="lineno">  506</span>    <span class="comment">// std::string text = &quot;Hello world!&quot;;</span></div>
-<div class="line"><span class="lineno">  507</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;======Test 2 (8x8 key) ======\nOriginal text:\n\t&quot;</span> &lt;&lt; text</div>
-<div class="line"><span class="lineno">  508</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  509</span> </div>
-<div class="line"><span class="lineno">  510</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair&lt;matrix&lt;int&gt;</a>, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;int&gt;</a>&gt; p =</div>
-<div class="line"><span class="lineno">  511</span>        <a class="code hl_function" href="../../d6/d26/classciphers_1_1_hill_cipher.html#a405b0a28d66a61239d3565d5256f9cb5">ciphers::HillCipher::generate_keys</a>(8, 0, 3);</div>
-<div class="line"><span class="lineno">  512</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;int&gt;</a> ekey = p.first;</div>
-<div class="line"><span class="lineno">  513</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;int&gt;</a> dkey = p.second;</div>
-<div class="line"><span class="lineno">  514</span> </div>
-<div class="line"><span class="lineno">  515</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> gibberish = <a class="code hl_function" href="../../d6/d26/classciphers_1_1_hill_cipher.html#aa8bbb6e4a5749f6008b06602d5103917">ciphers::HillCipher::encrypt_text</a>(text, ekey);</div>
-<div class="line"><span class="lineno">  516</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Encrypted text:\n\t&quot;</span> &lt;&lt; gibberish &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  517</span> </div>
-<div class="line"><span class="lineno">  518</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> txt_back = <a class="code hl_function" href="../../d6/d26/classciphers_1_1_hill_cipher.html#a427acfac1dbff3f48a2b071d449d965b">ciphers::HillCipher::decrypt_text</a>(gibberish, dkey);</div>
-<div class="line"><span class="lineno">  519</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Reconstruct text:\n\t&quot;</span> &lt;&lt; txt_back &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  520</span> </div>
-<div class="line"><span class="lineno">  521</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a> out_file(<span class="stringliteral">&quot;hill_cipher_test2.txt&quot;</span>);</div>
-<div class="line"><span class="lineno">  522</span>    out_file &lt;&lt; <span class="stringliteral">&quot;Block size: &quot;</span> &lt;&lt; ekey.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  523</span>    out_file &lt;&lt; <span class="stringliteral">&quot;Encryption Key:\n&quot;</span> &lt;&lt; ekey;</div>
-<div class="line"><span class="lineno">  524</span>    out_file &lt;&lt; <span class="stringliteral">&quot;\nDecryption Key:\n&quot;</span> &lt;&lt; dkey;</div>
-<div class="line"><span class="lineno">  525</span>    out_file.close();</div>
-<div class="line"><span class="lineno">  526</span> </div>
-<div class="line"><span class="lineno">  527</span>    assert(txt_back.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/compare.html">compare</a>(0, text.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>(), text) == 0);</div>
-<div class="line"><span class="lineno">  528</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Passed :)\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  529</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  506</span>                                  {</div>
+<div class="line"><span class="lineno">  507</span>    <span class="comment">// std::string text = &quot;Hello world!&quot;;</span></div>
+<div class="line"><span class="lineno">  508</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;======Test 2 (8x8 key) ======\nOriginal text:\n\t&quot;</span> &lt;&lt; text</div>
+<div class="line"><span class="lineno">  509</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  510</span> </div>
+<div class="line"><span class="lineno">  511</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair&lt;matrix&lt;int&gt;</a>, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;int&gt;</a>&gt; p =</div>
+<div class="line"><span class="lineno">  512</span>        <a class="code hl_function" href="../../d6/d26/classciphers_1_1_hill_cipher.html#a405b0a28d66a61239d3565d5256f9cb5">ciphers::HillCipher::generate_keys</a>(8, 0, 3);</div>
+<div class="line"><span class="lineno">  513</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;int&gt;</a> ekey = p.first;</div>
+<div class="line"><span class="lineno">  514</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;int&gt;</a> dkey = p.second;</div>
+<div class="line"><span class="lineno">  515</span> </div>
+<div class="line"><span class="lineno">  516</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> gibberish = <a class="code hl_function" href="../../d6/d26/classciphers_1_1_hill_cipher.html#aa8bbb6e4a5749f6008b06602d5103917">ciphers::HillCipher::encrypt_text</a>(text, ekey);</div>
+<div class="line"><span class="lineno">  517</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Encrypted text:\n\t&quot;</span> &lt;&lt; gibberish &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  518</span> </div>
+<div class="line"><span class="lineno">  519</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> txt_back = <a class="code hl_function" href="../../d6/d26/classciphers_1_1_hill_cipher.html#a427acfac1dbff3f48a2b071d449d965b">ciphers::HillCipher::decrypt_text</a>(gibberish, dkey);</div>
+<div class="line"><span class="lineno">  520</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Reconstruct text:\n\t&quot;</span> &lt;&lt; txt_back &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  521</span> </div>
+<div class="line"><span class="lineno">  522</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a> out_file(<span class="stringliteral">&quot;hill_cipher_test2.txt&quot;</span>);</div>
+<div class="line"><span class="lineno">  523</span>    out_file &lt;&lt; <span class="stringliteral">&quot;Block size: &quot;</span> &lt;&lt; ekey.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  524</span>    out_file &lt;&lt; <span class="stringliteral">&quot;Encryption Key:\n&quot;</span> &lt;&lt; ekey;</div>
+<div class="line"><span class="lineno">  525</span>    out_file &lt;&lt; <span class="stringliteral">&quot;\nDecryption Key:\n&quot;</span> &lt;&lt; dkey;</div>
+<div class="line"><span class="lineno">  526</span>    out_file.close();</div>
+<div class="line"><span class="lineno">  527</span> </div>
+<div class="line"><span class="lineno">  528</span>    assert(txt_back.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/compare.html">compare</a>(0, text.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>(), text) == 0);</div>
+<div class="line"><span class="lineno">  529</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Passed :)\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  530</span>}</div>
 <div class="ttc" id="acompare_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/compare.html">std::string::compare</a></div><div class="ttdeci">T compare(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

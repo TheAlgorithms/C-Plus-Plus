@@ -1,9 +1,11 @@
 <map id="graph/connected_components_with_dsu.cpp" name="graph/connected_components_with_dsu.cpp">
-<area shape="rect" id="Node000001" title="Disjoint union" alt="" coords="23,5,219,46"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,77,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,48,66,85,62,81,99,45"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="101,94,141,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="124,46,124,78,118,78,118,46"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="164,94,222,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="141,45,174,80,170,84,137,48"/>
+<area shape="rect" id="Node000001" title="Disjoint union" alt="" coords="67,5,262,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,66,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,49,70,88,67,83,131,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="89,94,160,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,48,140,81,135,79,153,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="185,94,224,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="177,45,194,79,189,81,172,48"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="248,94,306,120"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="194,44,249,82,246,87,191,49"/>
 </map>

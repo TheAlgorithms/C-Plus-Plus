@@ -1,9 +1,11 @@
 <map id="math/finding_number_of_digits_in_a_number.cpp" name="math/finding_number_of_digits_in_a_number.cpp">
-<area shape="rect" id="Node000001" title="[Program to count digits in an integer](https://www.geeksforgeeks.org/program&#45;count&#45;digits&#45;integer&#45;3&#45;..." alt="" coords="32,5,214,46"/>
+<area shape="rect" id="Node000001" title="[Program to count digits in an integer](https://www.geeksforgeeks.org/program&#45;count&#45;digits&#45;integer&#45;3&#45;..." alt="" coords="73,5,255,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,70,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,48,64,85,60,81,100,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,49,71,88,69,83,131,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="94,94,152,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="126,46,126,78,120,78,120,46"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="175,94,246,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="146,44,188,81,184,85,143,48"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,48,139,81,134,79,152,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="175,94,236,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="177,45,194,79,190,81,172,48"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="259,94,330,120"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="198,44,263,83,261,88,195,49"/>
 </map>

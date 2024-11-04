@@ -114,17 +114,18 @@ $(function(){initNavTree('df/d72/modular__division_8cpp.html','../../'); initRes
 <p>An algorithm to divide two numbers under modulo p <a href="https://www.geeksforgeeks.org/modular-division" target="_blank">Modular Division</a>  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for modular_division.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/dcc/modular__division_8cpp__incl.svg" width="187" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/dcc/modular__division_8cpp__incl.svg" width="255" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html">math</a></td></tr>
-<tr class="memdesc:dd/d47/namespacemath"><td class="mdescLeft">&#160;</td><td class="mdescRight">for IO operations <br /></td></tr>
+<tr class="memdesc:dd/d47/namespacemath"><td class="mdescLeft">&#160;</td><td class="mdescRight">for assert <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d64/namespacemodular__division.html">modular_division</a></td></tr>
 <tr class="memdesc:d1/d64/namespacemodular__division"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for <a href="https://www.geeksforgeeks.org/modular-division" target="_blank">Modular Division</a> implementation. <br /></td></tr>
@@ -177,11 +178,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  112</span>                                 {</div>
-<div class="line"><span class="lineno">  113</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// execute the tests</span></div>
-<div class="line"><span class="lineno">  114</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  115</span>}</div>
-<div class="ttc" id="amodular__division_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdef"><b>Definition</b> modular_division.cpp:88</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  113</span>                                 {</div>
+<div class="line"><span class="lineno">  114</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// execute the tests</span></div>
+<div class="line"><span class="lineno">  115</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  116</span>}</div>
+<div class="ttc" id="amodular__division_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdef"><b>Definition</b> modular_division.cpp:89</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -226,13 +227,13 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>a/b modulo c </dd></dl>
 <p>Calculate the inverse of b</p>
 <p>Calculate the final result</p>
-<div class="fragment"><div class="line"><span class="lineno">   74</span>                                                          {</div>
-<div class="line"><span class="lineno">   75</span>    uint64_t inverse = <a class="code hl_function" href="../../df/def/power__for__huge__numbers_8cpp.html#ae249a2af508aa94266023ce8aa81426f">power</a>(b, p - 2, p) % p;  <span class="comment">/// Calculate the inverse of b</span></div>
-<div class="line"><span class="lineno">   76</span>    uint64_t <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> =</div>
-<div class="line"><span class="lineno">   77</span>        ((a % p) * (inverse % p)) % p;  <span class="comment">/// Calculate the final result</span></div>
-<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
-<div class="line"><span class="lineno">   79</span>}</div>
-<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> fibonacci_sum.cpp:76</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   75</span>                                                          {</div>
+<div class="line"><span class="lineno">   76</span>    uint64_t inverse = <a class="code hl_function" href="../../df/def/power__for__huge__numbers_8cpp.html#ae249a2af508aa94266023ce8aa81426f">power</a>(b, p - 2, p) % p;  <span class="comment">/// Calculate the inverse of b</span></div>
+<div class="line"><span class="lineno">   77</span>    uint64_t <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> =</div>
+<div class="line"><span class="lineno">   78</span>        ((a % p) * (inverse % p)) % p;  <span class="comment">/// Calculate the final result</span></div>
+<div class="line"><span class="lineno">   79</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
+<div class="line"><span class="lineno">   80</span>}</div>
+<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> fibonacci_sum.cpp:77</div></div>
 <div class="ttc" id="apower__for__huge__numbers_8cpp_html_ae249a2af508aa94266023ce8aa81426f"><div class="ttname"><a href="../../df/def/power__for__huge__numbers_8cpp.html#ae249a2af508aa94266023ce8aa81426f">power</a></div><div class="ttdeci">void power(int x, int n)</div><div class="ttdef"><b>Definition</b> power_for_huge_numbers.cpp:56</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -282,23 +283,23 @@ Here is the call graph for this function:</div>
 <p>If b is odd, multiply a with answer</p>
 <p>b must be even now</p>
 <p>b = b/2</p>
-<div class="fragment"><div class="line"><span class="lineno">   49</span>                                                   {</div>
-<div class="line"><span class="lineno">   50</span>    uint64_t ans = 1;  <span class="comment">/// Initialize the answer to be returned</span></div>
-<div class="line"><span class="lineno">   51</span>    a = a % c;         <span class="comment">/// Update a if it is more than or equal to c</span></div>
-<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">if</span> (a == 0) {</div>
-<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">return</span> 0;  <span class="comment">/// In case a is divisible by c;</span></div>
-<div class="line"><span class="lineno">   54</span>    }</div>
-<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">while</span> (b &gt; 0) {<span class="comment"></span></div>
-<div class="line"><span class="lineno">   56</span><span class="comment">        /// If b is odd, multiply a with answer</span></div>
-<div class="line"><span class="lineno">   57</span><span class="comment"></span>        <span class="keywordflow">if</span> (b &amp; 1) {</div>
-<div class="line"><span class="lineno">   58</span>            ans = ((ans % c) * (a % c)) % c;</div>
-<div class="line"><span class="lineno">   59</span>        }<span class="comment"></span></div>
-<div class="line"><span class="lineno">   60</span><span class="comment">        /// b must be even now</span></div>
-<div class="line"><span class="lineno">   61</span><span class="comment"></span>        b = b &gt;&gt; 1;  <span class="comment">/// b = b/2</span></div>
-<div class="line"><span class="lineno">   62</span>        a = ((a % c) * (a % c)) % c;</div>
-<div class="line"><span class="lineno">   63</span>    }</div>
-<div class="line"><span class="lineno">   64</span>    <span class="keywordflow">return</span> ans;</div>
-<div class="line"><span class="lineno">   65</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   50</span>                                                   {</div>
+<div class="line"><span class="lineno">   51</span>    uint64_t ans = 1;  <span class="comment">/// Initialize the answer to be returned</span></div>
+<div class="line"><span class="lineno">   52</span>    a = a % c;         <span class="comment">/// Update a if it is more than or equal to c</span></div>
+<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">if</span> (a == 0) {</div>
+<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">return</span> 0;  <span class="comment">/// In case a is divisible by c;</span></div>
+<div class="line"><span class="lineno">   55</span>    }</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">while</span> (b &gt; 0) {<span class="comment"></span></div>
+<div class="line"><span class="lineno">   57</span><span class="comment">        /// If b is odd, multiply a with answer</span></div>
+<div class="line"><span class="lineno">   58</span><span class="comment"></span>        <span class="keywordflow">if</span> (b &amp; 1) {</div>
+<div class="line"><span class="lineno">   59</span>            ans = ((ans % c) * (a % c)) % c;</div>
+<div class="line"><span class="lineno">   60</span>        }<span class="comment"></span></div>
+<div class="line"><span class="lineno">   61</span><span class="comment">        /// b must be even now</span></div>
+<div class="line"><span class="lineno">   62</span><span class="comment"></span>        b = b &gt;&gt; 1;  <span class="comment">/// b = b/2</span></div>
+<div class="line"><span class="lineno">   63</span>        a = ((a % c) * (a % c)) % c;</div>
+<div class="line"><span class="lineno">   64</span>    }</div>
+<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">return</span> ans;</div>
+<div class="line"><span class="lineno">   66</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -325,26 +326,26 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Function for testing power function. test cases and assert statement. </p><dl class="section return"><dt>Returns</dt><dd><code>void</code> </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   88</span>                   {</div>
-<div class="line"><span class="lineno">   89</span>    uint64_t test_case_1 = <a class="code hl_function" href="#a905e368ae121beb7e7ea35349ddcdac7">math::modular_division::mod_division</a>(8, 2, 2);</div>
-<div class="line"><span class="lineno">   90</span>    assert(test_case_1 == 0);</div>
-<div class="line"><span class="lineno">   91</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1 Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   92</span>    uint64_t test_case_2 = <a class="code hl_function" href="#a905e368ae121beb7e7ea35349ddcdac7">math::modular_division::mod_division</a>(15, 3, 7);</div>
-<div class="line"><span class="lineno">   93</span>    assert(test_case_2 == 5);</div>
-<div class="line"><span class="lineno">   94</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2 Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   95</span>    uint64_t test_case_3 = <a class="code hl_function" href="#a905e368ae121beb7e7ea35349ddcdac7">math::modular_division::mod_division</a>(10, 5, 2);</div>
-<div class="line"><span class="lineno">   96</span>    assert(test_case_3 == 0);</div>
-<div class="line"><span class="lineno">   97</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 3 Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   98</span>    uint64_t test_case_4 = <a class="code hl_function" href="#a905e368ae121beb7e7ea35349ddcdac7">math::modular_division::mod_division</a>(81, 3, 5);</div>
-<div class="line"><span class="lineno">   99</span>    assert(test_case_4 == 2);</div>
-<div class="line"><span class="lineno">  100</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 4 Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  101</span>    uint64_t test_case_5 = <a class="code hl_function" href="#a905e368ae121beb7e7ea35349ddcdac7">math::modular_division::mod_division</a>(12848, 73, 29);</div>
-<div class="line"><span class="lineno">  102</span>    assert(test_case_5 == 2);</div>
-<div class="line"><span class="lineno">  103</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 5 Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  104</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   89</span>                   {</div>
+<div class="line"><span class="lineno">   90</span>    uint64_t test_case_1 = <a class="code hl_function" href="#a905e368ae121beb7e7ea35349ddcdac7">math::modular_division::mod_division</a>(8, 2, 2);</div>
+<div class="line"><span class="lineno">   91</span>    assert(test_case_1 == 0);</div>
+<div class="line"><span class="lineno">   92</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1 Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   93</span>    uint64_t test_case_2 = <a class="code hl_function" href="#a905e368ae121beb7e7ea35349ddcdac7">math::modular_division::mod_division</a>(15, 3, 7);</div>
+<div class="line"><span class="lineno">   94</span>    assert(test_case_2 == 5);</div>
+<div class="line"><span class="lineno">   95</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2 Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   96</span>    uint64_t test_case_3 = <a class="code hl_function" href="#a905e368ae121beb7e7ea35349ddcdac7">math::modular_division::mod_division</a>(10, 5, 2);</div>
+<div class="line"><span class="lineno">   97</span>    assert(test_case_3 == 0);</div>
+<div class="line"><span class="lineno">   98</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 3 Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   99</span>    uint64_t test_case_4 = <a class="code hl_function" href="#a905e368ae121beb7e7ea35349ddcdac7">math::modular_division::mod_division</a>(81, 3, 5);</div>
+<div class="line"><span class="lineno">  100</span>    assert(test_case_4 == 2);</div>
+<div class="line"><span class="lineno">  101</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 4 Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  102</span>    uint64_t test_case_5 = <a class="code hl_function" href="#a905e368ae121beb7e7ea35349ddcdac7">math::modular_division::mod_division</a>(12848, 73, 29);</div>
+<div class="line"><span class="lineno">  103</span>    assert(test_case_5 == 2);</div>
+<div class="line"><span class="lineno">  104</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 5 Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  105</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="amodular__division_8cpp_html_a905e368ae121beb7e7ea35349ddcdac7"><div class="ttname"><a href="#a905e368ae121beb7e7ea35349ddcdac7">math::modular_division::mod_division</a></div><div class="ttdeci">uint64_t mod_division(uint64_t a, uint64_t b, uint64_t p)</div><div class="ttdoc">This function calculates modular division.</div><div class="ttdef"><b>Definition</b> modular_division.cpp:74</div></div>
+<div class="ttc" id="amodular__division_8cpp_html_a905e368ae121beb7e7ea35349ddcdac7"><div class="ttname"><a href="#a905e368ae121beb7e7ea35349ddcdac7">math::modular_division::mod_division</a></div><div class="ttdeci">uint64_t mod_division(uint64_t a, uint64_t b, uint64_t p)</div><div class="ttdoc">This function calculates modular division.</div><div class="ttdef"><b>Definition</b> modular_division.cpp:75</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

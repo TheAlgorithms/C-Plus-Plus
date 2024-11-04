@@ -114,18 +114,19 @@ $(function(){initNavTree('d3/d22/saddleback__search_8cpp.html','../../'); initRe
 <p>Implementation of <a href="https://www.geeksforgeeks.org/saddleback-search-algorithm-in-a-2d-array" target="_blank">Saddleback Algorithm</a> for 2D arrays.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for saddleback_search.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d4c/saddleback__search_8cpp__incl.svg" width="252" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d4c/saddleback__search_8cpp__incl.svg" width="336" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dca/namespacesearch.html">search</a></td></tr>
-<tr class="memdesc:d9/dca/namespacesearch"><td class="mdescLeft">&#160;</td><td class="mdescRight">for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> <br /></td></tr>
+<tr class="memdesc:d9/dca/namespacesearch"><td class="mdescLeft">&#160;</td><td class="mdescRight">for std::assert <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dda/namespacesaddleback.html">saddleback</a></td></tr>
 <tr class="memdesc:d0/dda/namespacesaddleback"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for implementing <a href="https://www.geeksforgeeks.org/saddleback-search-algorithm-in-a-2d-array" target="_blank">Saddleback Algorithm</a>. <br /></td></tr>
@@ -164,11 +165,11 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  103</span>           {</div>
-<div class="line"><span class="lineno">  104</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();     <span class="comment">// execute the tests</span></div>
-<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  106</span>}</div>
-<div class="ttc" id="asaddleback__search_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Test implementations.</div><div class="ttdef"><b>Definition</b> saddleback_search.cpp:70</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  112</span>           {</div>
+<div class="line"><span class="lineno">  113</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// execute the tests</span></div>
+<div class="line"><span class="lineno">  114</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  115</span>}</div>
+<div class="ttc" id="asaddleback__search_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Test implementations.</div><div class="ttdef"><b>Definition</b> saddleback_search.cpp:78</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -205,35 +206,37 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>An <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a> of with row and column populated within it, if the element is present. </dd>
 <dd>
 An <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a> with (0, 0), if the element is not present. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   34</span>                                                {</div>
-<div class="line"><span class="lineno">   35</span>    uint32_t left_index = 0;</div>
-<div class="line"><span class="lineno">   36</span>    uint32_t right_index = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix</a>[0].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() - 1;  <span class="comment">// Start from top right corner</span></div>
-<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">while</span> (left_index &lt; <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()) {  <span class="comment">// Exit once the value of indexes get out of range.</span></div>
-<div class="line"><span class="lineno">   38</span>        <span class="keywordflow">if</span> (element ==</div>
-<div class="line"><span class="lineno">   39</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix</a>[left_index]</div>
-<div class="line"><span class="lineno">   40</span>                  [right_index]) {  <span class="comment">// If value on this position of matrix is</span></div>
-<div class="line"><span class="lineno">   41</span>                                    <span class="comment">// equal to element, return (row, column).</span></div>
-<div class="line"><span class="lineno">   42</span>            <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(left_index+1, right_index+1);</div>
-<div class="line"><span class="lineno">   43</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (element &gt;</div>
-<div class="line"><span class="lineno">   44</span>                   <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix</a>[left_index]</div>
-<div class="line"><span class="lineno">   45</span>                         [right_index]) {  <span class="comment">// Else if value on this position of</span></div>
-<div class="line"><span class="lineno">   46</span>                                           <span class="comment">// matrix is less than the element,</span></div>
-<div class="line"><span class="lineno">   47</span>                                           <span class="comment">// move left.</span></div>
-<div class="line"><span class="lineno">   48</span>            ++left_index;</div>
-<div class="line"><span class="lineno">   49</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (element &lt;</div>
-<div class="line"><span class="lineno">   50</span>                   <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix</a>[left_index]</div>
-<div class="line"><span class="lineno">   51</span>                         [right_index]) {  <span class="comment">// Else if value on this position of</span></div>
-<div class="line"><span class="lineno">   52</span>                                           <span class="comment">// matrix is greater than the</span></div>
-<div class="line"><span class="lineno">   53</span>                                           <span class="comment">// element, move down.</span></div>
-<div class="line"><span class="lineno">   54</span>            <span class="keywordflow">if</span>(!right_index)</div>
-<div class="line"><span class="lineno">   55</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   56</span>            <span class="keywordflow">else</span> --right_index;</div>
-<div class="line"><span class="lineno">   57</span>        }</div>
-<div class="line"><span class="lineno">   58</span>    }</div>
-<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(</div>
-<div class="line"><span class="lineno">   60</span>        0, 0);  <span class="comment">// If the program reaches here, that means one of the index</span></div>
-<div class="line"><span class="lineno">   61</span>                  <span class="comment">// went out of index, hence no element present.</span></div>
-<div class="line"><span class="lineno">   62</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>                                                           {</div>
+<div class="line"><span class="lineno">   41</span>    uint32_t left_index = 0;</div>
+<div class="line"><span class="lineno">   42</span>    uint32_t right_index = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix</a>[0].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() - 1;  <span class="comment">// Start from top right corner</span></div>
+<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">while</span> (left_index &lt;</div>
+<div class="line"><span class="lineno">   44</span>           <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()) {  <span class="comment">// Exit once the value of indexes get out of range.</span></div>
+<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">if</span> (element ==</div>
+<div class="line"><span class="lineno">   46</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix</a>[left_index]</div>
+<div class="line"><span class="lineno">   47</span>                  [right_index]) {  <span class="comment">// If value on this position of matrix is</span></div>
+<div class="line"><span class="lineno">   48</span>                                    <span class="comment">// equal to element, return (row, column).</span></div>
+<div class="line"><span class="lineno">   49</span>            <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(left_index + 1, right_index + 1);</div>
+<div class="line"><span class="lineno">   50</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (element &gt;</div>
+<div class="line"><span class="lineno">   51</span>                   <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix</a>[left_index]</div>
+<div class="line"><span class="lineno">   52</span>                         [right_index]) {  <span class="comment">// Else if value on this position of</span></div>
+<div class="line"><span class="lineno">   53</span>                                           <span class="comment">// matrix is less than the element,</span></div>
+<div class="line"><span class="lineno">   54</span>                                           <span class="comment">// move left.</span></div>
+<div class="line"><span class="lineno">   55</span>            ++left_index;</div>
+<div class="line"><span class="lineno">   56</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (element &lt;</div>
+<div class="line"><span class="lineno">   57</span>                   <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix</a>[left_index]</div>
+<div class="line"><span class="lineno">   58</span>                         [right_index]) {  <span class="comment">// Else if value on this position of</span></div>
+<div class="line"><span class="lineno">   59</span>                                           <span class="comment">// matrix is greater than the</span></div>
+<div class="line"><span class="lineno">   60</span>                                           <span class="comment">// element, move down.</span></div>
+<div class="line"><span class="lineno">   61</span>            <span class="keywordflow">if</span> (!right_index)</div>
+<div class="line"><span class="lineno">   62</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   63</span>            <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   64</span>                --right_index;</div>
+<div class="line"><span class="lineno">   65</span>        }</div>
+<div class="line"><span class="lineno">   66</span>    }</div>
+<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(</div>
+<div class="line"><span class="lineno">   68</span>        0, 0);  <span class="comment">// If the program reaches here, that means one of the index</span></div>
+<div class="line"><span class="lineno">   69</span>                <span class="comment">// went out of index, hence no element present.</span></div>
+<div class="line"><span class="lineno">   70</span>}</div>
 <div class="ttc" id="amake_pair_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a></div><div class="ttdeci">T make_pair(T... args)</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
@@ -270,36 +273,37 @@ Here is the call graph for this function:</div>
 
 <p>Test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   70</span>                   {</div>
-<div class="line"><span class="lineno">   71</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;int32_t&gt;</a>&gt; <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix</a> = {{1, 10, 100, 1000, 10000},</div>
-<div class="line"><span class="lineno">   72</span>                                            {2, 20, 200, 2000, 20000},</div>
-<div class="line"><span class="lineno">   73</span>                                            {3, 30, 300, 3000, 30000},</div>
-<div class="line"><span class="lineno">   74</span>                                            {4, 40, 400, 4000, 40000},</div>
-<div class="line"><span class="lineno">   75</span>                                            {5, 50, 500, 5000, 50000}};</div>
-<div class="line"><span class="lineno">   76</span> </div>
-<div class="line"><span class="lineno">   77</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair&lt;uint32_t, uint32_t&gt;</a> not_found = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(0, 0);</div>
-<div class="line"><span class="lineno">   78</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair&lt;uint32_t, uint32_t&gt;</a> test_answer;</div>
-<div class="line"><span class="lineno">   79</span>    <span class="comment">// Test 1</span></div>
-<div class="line"><span class="lineno">   80</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair&lt;uint32_t, uint32_t&gt;</a> answer1 = <a class="code hl_function" href="#ad1e0ca34797d88490747c08eca70a2e6">search::saddleback::saddleback</a>(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix</a>, 123);</div>
-<div class="line"><span class="lineno">   81</span>    assert(not_found == answer1);</div>
-<div class="line"><span class="lineno">   82</span>    <span class="comment">// Test 2</span></div>
-<div class="line"><span class="lineno">   83</span>    answer1 = <a class="code hl_function" href="#ad1e0ca34797d88490747c08eca70a2e6">search::saddleback::saddleback</a>(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix</a>, 0);</div>
-<div class="line"><span class="lineno">   84</span>    assert(not_found == answer1);</div>
-<div class="line"><span class="lineno">   85</span>    <span class="comment">// Test 3</span></div>
-<div class="line"><span class="lineno">   86</span>    answer1 = <a class="code hl_function" href="#ad1e0ca34797d88490747c08eca70a2e6">search::saddleback::saddleback</a>(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix</a>, 1);</div>
-<div class="line"><span class="lineno">   87</span>    test_answer = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(1, 1);</div>
-<div class="line"><span class="lineno">   88</span>    assert(test_answer == answer1);</div>
-<div class="line"><span class="lineno">   89</span>    <span class="comment">// Test 4</span></div>
-<div class="line"><span class="lineno">   90</span>    answer1 = <a class="code hl_function" href="#ad1e0ca34797d88490747c08eca70a2e6">search::saddleback::saddleback</a>(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix</a>, 50000);</div>
-<div class="line"><span class="lineno">   91</span>    test_answer = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(5, 5);</div>
-<div class="line"><span class="lineno">   92</span>    assert(test_answer == answer1);</div>
-<div class="line"><span class="lineno">   93</span>    <span class="comment">// Test 5</span></div>
-<div class="line"><span class="lineno">   94</span>    answer1 = <a class="code hl_function" href="#ad1e0ca34797d88490747c08eca70a2e6">search::saddleback::saddleback</a>(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix</a>, 300);</div>
-<div class="line"><span class="lineno">   95</span>    test_answer = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(3, 3);</div>
-<div class="line"><span class="lineno">   96</span>    assert(test_answer == answer1);</div>
-<div class="line"><span class="lineno">   97</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   78</span>                   {</div>
+<div class="line"><span class="lineno">   79</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;int32_t&gt;</a>&gt; <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix</a> = {{1, 10, 100, 1000, 10000},</div>
+<div class="line"><span class="lineno">   80</span>                                                {2, 20, 200, 2000, 20000},</div>
+<div class="line"><span class="lineno">   81</span>                                                {3, 30, 300, 3000, 30000},</div>
+<div class="line"><span class="lineno">   82</span>                                                {4, 40, 400, 4000, 40000},</div>
+<div class="line"><span class="lineno">   83</span>                                                {5, 50, 500, 5000, 50000}};</div>
+<div class="line"><span class="lineno">   84</span> </div>
+<div class="line"><span class="lineno">   85</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair&lt;uint32_t, uint32_t&gt;</a> not_found = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(0, 0);</div>
+<div class="line"><span class="lineno">   86</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair&lt;uint32_t, uint32_t&gt;</a> test_answer;</div>
+<div class="line"><span class="lineno">   87</span>    <span class="comment">// Test 1</span></div>
+<div class="line"><span class="lineno">   88</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair&lt;uint32_t, uint32_t&gt;</a> answer1 =</div>
+<div class="line"><span class="lineno">   89</span>        <a class="code hl_function" href="#ad1e0ca34797d88490747c08eca70a2e6">search::saddleback::saddleback</a>(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix</a>, 123);</div>
+<div class="line"><span class="lineno">   90</span>    assert(not_found == answer1);</div>
+<div class="line"><span class="lineno">   91</span>    <span class="comment">// Test 2</span></div>
+<div class="line"><span class="lineno">   92</span>    answer1 = <a class="code hl_function" href="#ad1e0ca34797d88490747c08eca70a2e6">search::saddleback::saddleback</a>(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix</a>, 0);</div>
+<div class="line"><span class="lineno">   93</span>    assert(not_found == answer1);</div>
+<div class="line"><span class="lineno">   94</span>    <span class="comment">// Test 3</span></div>
+<div class="line"><span class="lineno">   95</span>    answer1 = <a class="code hl_function" href="#ad1e0ca34797d88490747c08eca70a2e6">search::saddleback::saddleback</a>(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix</a>, 1);</div>
+<div class="line"><span class="lineno">   96</span>    test_answer = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(1, 1);</div>
+<div class="line"><span class="lineno">   97</span>    assert(test_answer == answer1);</div>
+<div class="line"><span class="lineno">   98</span>    <span class="comment">// Test 4</span></div>
+<div class="line"><span class="lineno">   99</span>    answer1 = <a class="code hl_function" href="#ad1e0ca34797d88490747c08eca70a2e6">search::saddleback::saddleback</a>(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix</a>, 50000);</div>
+<div class="line"><span class="lineno">  100</span>    test_answer = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(5, 5);</div>
+<div class="line"><span class="lineno">  101</span>    assert(test_answer == answer1);</div>
+<div class="line"><span class="lineno">  102</span>    <span class="comment">// Test 5</span></div>
+<div class="line"><span class="lineno">  103</span>    answer1 = <a class="code hl_function" href="#ad1e0ca34797d88490747c08eca70a2e6">search::saddleback::saddleback</a>(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix</a>, 300);</div>
+<div class="line"><span class="lineno">  104</span>    test_answer = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(3, 3);</div>
+<div class="line"><span class="lineno">  105</span>    assert(test_answer == answer1);</div>
+<div class="line"><span class="lineno">  106</span>}</div>
 <div class="ttc" id="apair_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a></div></div>
-<div class="ttc" id="asaddleback__search_8cpp_html_ad1e0ca34797d88490747c08eca70a2e6"><div class="ttname"><a href="#ad1e0ca34797d88490747c08eca70a2e6">search::saddleback::saddleback</a></div><div class="ttdeci">std::pair&lt; uint32_t, uint32_t &gt; saddleback(std::vector&lt; std::vector&lt; int32_t &gt; &gt; matrix, int32_t element)</div><div class="ttdef"><b>Definition</b> saddleback_search.cpp:33</div></div>
+<div class="ttc" id="asaddleback__search_8cpp_html_ad1e0ca34797d88490747c08eca70a2e6"><div class="ttname"><a href="#ad1e0ca34797d88490747c08eca70a2e6">search::saddleback::saddleback</a></div><div class="ttdeci">std::pair&lt; uint32_t, uint32_t &gt; saddleback(std::vector&lt; std::vector&lt; int32_t &gt; &gt; matrix, int32_t element)</div><div class="ttdef"><b>Definition</b> saddleback_search.cpp:39</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

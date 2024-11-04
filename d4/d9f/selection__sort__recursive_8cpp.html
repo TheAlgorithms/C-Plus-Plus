@@ -115,12 +115,13 @@ $(function(){initNavTree('d4/d9f/selection__sort__recursive_8cpp.html','../../')
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for selection_sort_recursive.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d44/selection__sort__recursive_8cpp__incl.svg" width="350" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d44/selection__sort__recursive_8cpp__incl.svg" width="434" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -193,17 +194,17 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>index of the minimum element </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>                                                     {</div>
-<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">if</span> (current_position + 1 == in_arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()) {</div>
-<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">return</span> current_position;</div>
-<div class="line"><span class="lineno">   59</span>    }</div>
-<div class="line"><span class="lineno">   60</span>    uint64_t answer = <a class="code hl_function" href="#a5454eeb691725ccac0f59df1e133f834">findMinIndex</a>(in_arr, current_position + 1);</div>
-<div class="line"><span class="lineno">   61</span>    <span class="keywordflow">if</span> (in_arr[current_position] &lt; in_arr[answer]) {</div>
-<div class="line"><span class="lineno">   62</span>        answer = current_position;</div>
-<div class="line"><span class="lineno">   63</span>    }</div>
-<div class="line"><span class="lineno">   64</span>    <span class="keywordflow">return</span> answer;</div>
-<div class="line"><span class="lineno">   65</span>}</div>
-<div class="ttc" id="aselection__sort__recursive_8cpp_html_a5454eeb691725ccac0f59df1e133f834"><div class="ttname"><a href="#a5454eeb691725ccac0f59df1e133f834">sorting::selection_sort_recursive::findMinIndex</a></div><div class="ttdeci">uint64_t findMinIndex(const std::vector&lt; T &gt; &amp;in_arr, uint64_t current_position=0)</div><div class="ttdoc">The main function finds the index of the minimum element.</div><div class="ttdef"><b>Definition</b> selection_sort_recursive.cpp:55</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>                                                     {</div>
+<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">if</span> (current_position + 1 == in_arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()) {</div>
+<div class="line"><span class="lineno">   59</span>        <span class="keywordflow">return</span> current_position;</div>
+<div class="line"><span class="lineno">   60</span>    }</div>
+<div class="line"><span class="lineno">   61</span>    uint64_t answer = <a class="code hl_function" href="#a5454eeb691725ccac0f59df1e133f834">findMinIndex</a>(in_arr, current_position + 1);</div>
+<div class="line"><span class="lineno">   62</span>    <span class="keywordflow">if</span> (in_arr[current_position] &lt; in_arr[answer]) {</div>
+<div class="line"><span class="lineno">   63</span>        answer = current_position;</div>
+<div class="line"><span class="lineno">   64</span>    }</div>
+<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">return</span> answer;</div>
+<div class="line"><span class="lineno">   66</span>}</div>
+<div class="ttc" id="aselection__sort__recursive_8cpp_html_a5454eeb691725ccac0f59df1e133f834"><div class="ttname"><a href="#a5454eeb691725ccac0f59df1e133f834">sorting::selection_sort_recursive::findMinIndex</a></div><div class="ttdeci">uint64_t findMinIndex(const std::vector&lt; T &gt; &amp;in_arr, uint64_t current_position=0)</div><div class="ttdoc">The main function finds the index of the minimum element.</div><div class="ttdef"><b>Definition</b> selection_sort_recursive.cpp:56</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -230,11 +231,11 @@ Here is the call graph for this function:</div>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  129</span>           {</div>
-<div class="line"><span class="lineno">  130</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">  131</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  132</span>}</div>
-<div class="ttc" id="aselection__sort__recursive_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> selection_sort_recursive.cpp:94</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  130</span>           {</div>
+<div class="line"><span class="lineno">  131</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">  132</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  133</span>}</div>
+<div class="ttc" id="aselection__sort__recursive_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> selection_sort_recursive.cpp:95</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -279,18 +280,18 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   76</span>                                                           {</div>
-<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">if</span> (current_position == in_arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()) {</div>
-<div class="line"><span class="lineno">   78</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   79</span>    }</div>
-<div class="line"><span class="lineno">   80</span>    uint64_t min_element_idx =</div>
-<div class="line"><span class="lineno">   81</span>        selection_sort_recursive::findMinIndex(in_arr, current_position);</div>
-<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">if</span> (min_element_idx != current_position) {</div>
-<div class="line"><span class="lineno">   83</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(in_arr[min_element_idx], in_arr[current_position]);</div>
-<div class="line"><span class="lineno">   84</span>    }</div>
-<div class="line"><span class="lineno">   85</span>    <a class="code hl_function" href="#ab6f7b33a070e376e1f4374e534435e89">selectionSortRecursive</a>(in_arr, current_position + 1);</div>
-<div class="line"><span class="lineno">   86</span>}</div>
-<div class="ttc" id="aselection__sort__recursive_8cpp_html_ab6f7b33a070e376e1f4374e534435e89"><div class="ttname"><a href="#ab6f7b33a070e376e1f4374e534435e89">sorting::selection_sort_recursive::selectionSortRecursive</a></div><div class="ttdeci">void selectionSortRecursive(std::vector&lt; T &gt; &amp;in_arr, uint64_t current_position=0)</div><div class="ttdoc">The main function implements Selection sort.</div><div class="ttdef"><b>Definition</b> selection_sort_recursive.cpp:75</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   77</span>                                                           {</div>
+<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">if</span> (current_position == in_arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()) {</div>
+<div class="line"><span class="lineno">   79</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   80</span>    }</div>
+<div class="line"><span class="lineno">   81</span>    uint64_t min_element_idx =</div>
+<div class="line"><span class="lineno">   82</span>        selection_sort_recursive::findMinIndex(in_arr, current_position);</div>
+<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">if</span> (min_element_idx != current_position) {</div>
+<div class="line"><span class="lineno">   84</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(in_arr[min_element_idx], in_arr[current_position]);</div>
+<div class="line"><span class="lineno">   85</span>    }</div>
+<div class="line"><span class="lineno">   86</span>    <a class="code hl_function" href="#ab6f7b33a070e376e1f4374e534435e89">selectionSortRecursive</a>(in_arr, current_position + 1);</div>
+<div class="line"><span class="lineno">   87</span>}</div>
+<div class="ttc" id="aselection__sort__recursive_8cpp_html_ab6f7b33a070e376e1f4374e534435e89"><div class="ttname"><a href="#ab6f7b33a070e376e1f4374e534435e89">sorting::selection_sort_recursive::selectionSortRecursive</a></div><div class="ttdeci">void selectionSortRecursive(std::vector&lt; T &gt; &amp;in_arr, uint64_t current_position=0)</div><div class="ttdoc">The main function implements Selection sort.</div><div class="ttdef"><b>Definition</b> selection_sort_recursive.cpp:76</div></div>
 <div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -325,36 +326,36 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   94</span>                   {</div>
-<div class="line"><span class="lineno">   95</span>    <span class="comment">// 1st test</span></div>
-<div class="line"><span class="lineno">   96</span>    <span class="comment">// [1, 0, 2, 1] return [0, 1, 1, 2]</span></div>
-<div class="line"><span class="lineno">   97</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> array1 = {0, 1, 1, 2};</div>
-<div class="line"><span class="lineno">   98</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;1st test... &quot;</span>;</div>
-<div class="line"><span class="lineno">   99</span>    <a class="code hl_function" href="#ab6f7b33a070e376e1f4374e534435e89">sorting::selection_sort_recursive::selectionSortRecursive</a>(array1);</div>
-<div class="line"><span class="lineno">  100</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(array1), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(array1)));</div>
-<div class="line"><span class="lineno">  101</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  102</span>    <span class="comment">// 2nd test</span></div>
-<div class="line"><span class="lineno">  103</span>    <span class="comment">// [1, 0, 0, 1, 1, 0, 2, 1] return [0, 0, 0, 1, 1, 1, 1, 2]</span></div>
-<div class="line"><span class="lineno">  104</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> array2 = {1, 0, 0, 1, 1, 0, 2, 1};</div>
-<div class="line"><span class="lineno">  105</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;2nd test... &quot;</span>;</div>
-<div class="line"><span class="lineno">  106</span>    <a class="code hl_function" href="#ab6f7b33a070e376e1f4374e534435e89">sorting::selection_sort_recursive::selectionSortRecursive</a>(array2);</div>
-<div class="line"><span class="lineno">  107</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(array2), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(array2)));</div>
-<div class="line"><span class="lineno">  108</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  109</span>    <span class="comment">// 3rd test</span></div>
-<div class="line"><span class="lineno">  110</span>    <span class="comment">// [1, 1, 0, 0, 1, 2, 2, 0, 2, 1] return [0, 0, 0, 1, 1, 1, 1, 2, 2, 2]</span></div>
-<div class="line"><span class="lineno">  111</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> array3 = {1, 1, 0, 0, 1, 2, 2, 0, 2, 1};</div>
-<div class="line"><span class="lineno">  112</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;3rd test... &quot;</span>;</div>
-<div class="line"><span class="lineno">  113</span>    <a class="code hl_function" href="#ab6f7b33a070e376e1f4374e534435e89">sorting::selection_sort_recursive::selectionSortRecursive</a>(array3);</div>
-<div class="line"><span class="lineno">  114</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(array3), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(array3)));</div>
-<div class="line"><span class="lineno">  115</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  116</span>    <span class="comment">// 4th test</span></div>
-<div class="line"><span class="lineno">  117</span>    <span class="comment">// [2, 2, 2, 0, 0, 1, 1] return [0, 0, 1, 1, 2, 2, 2]</span></div>
-<div class="line"><span class="lineno">  118</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> array4 = {2, 2, 2, 0, 0, 1, 1};</div>
-<div class="line"><span class="lineno">  119</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;4th test... &quot;</span>;</div>
-<div class="line"><span class="lineno">  120</span>    <a class="code hl_function" href="#ab6f7b33a070e376e1f4374e534435e89">sorting::selection_sort_recursive::selectionSortRecursive</a>(array4);</div>
-<div class="line"><span class="lineno">  121</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(array4), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(array4)));</div>
-<div class="line"><span class="lineno">  122</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  123</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   95</span>                   {</div>
+<div class="line"><span class="lineno">   96</span>    <span class="comment">// 1st test</span></div>
+<div class="line"><span class="lineno">   97</span>    <span class="comment">// [1, 0, 2, 1] return [0, 1, 1, 2]</span></div>
+<div class="line"><span class="lineno">   98</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> array1 = {0, 1, 1, 2};</div>
+<div class="line"><span class="lineno">   99</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;1st test... &quot;</span>;</div>
+<div class="line"><span class="lineno">  100</span>    <a class="code hl_function" href="#ab6f7b33a070e376e1f4374e534435e89">sorting::selection_sort_recursive::selectionSortRecursive</a>(array1);</div>
+<div class="line"><span class="lineno">  101</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(array1), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(array1)));</div>
+<div class="line"><span class="lineno">  102</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  103</span>    <span class="comment">// 2nd test</span></div>
+<div class="line"><span class="lineno">  104</span>    <span class="comment">// [1, 0, 0, 1, 1, 0, 2, 1] return [0, 0, 0, 1, 1, 1, 1, 2]</span></div>
+<div class="line"><span class="lineno">  105</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> array2 = {1, 0, 0, 1, 1, 0, 2, 1};</div>
+<div class="line"><span class="lineno">  106</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;2nd test... &quot;</span>;</div>
+<div class="line"><span class="lineno">  107</span>    <a class="code hl_function" href="#ab6f7b33a070e376e1f4374e534435e89">sorting::selection_sort_recursive::selectionSortRecursive</a>(array2);</div>
+<div class="line"><span class="lineno">  108</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(array2), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(array2)));</div>
+<div class="line"><span class="lineno">  109</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  110</span>    <span class="comment">// 3rd test</span></div>
+<div class="line"><span class="lineno">  111</span>    <span class="comment">// [1, 1, 0, 0, 1, 2, 2, 0, 2, 1] return [0, 0, 0, 1, 1, 1, 1, 2, 2, 2]</span></div>
+<div class="line"><span class="lineno">  112</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> array3 = {1, 1, 0, 0, 1, 2, 2, 0, 2, 1};</div>
+<div class="line"><span class="lineno">  113</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;3rd test... &quot;</span>;</div>
+<div class="line"><span class="lineno">  114</span>    <a class="code hl_function" href="#ab6f7b33a070e376e1f4374e534435e89">sorting::selection_sort_recursive::selectionSortRecursive</a>(array3);</div>
+<div class="line"><span class="lineno">  115</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(array3), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(array3)));</div>
+<div class="line"><span class="lineno">  116</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  117</span>    <span class="comment">// 4th test</span></div>
+<div class="line"><span class="lineno">  118</span>    <span class="comment">// [2, 2, 2, 0, 0, 1, 1] return [0, 0, 1, 1, 2, 2, 2]</span></div>
+<div class="line"><span class="lineno">  119</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> array4 = {2, 2, 2, 0, 0, 1, 1};</div>
+<div class="line"><span class="lineno">  120</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;4th test... &quot;</span>;</div>
+<div class="line"><span class="lineno">  121</span>    <a class="code hl_function" href="#ab6f7b33a070e376e1f4374e534435e89">sorting::selection_sort_recursive::selectionSortRecursive</a>(array4);</div>
+<div class="line"><span class="lineno">  122</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(array4), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(array4)));</div>
+<div class="line"><span class="lineno">  123</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  124</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>

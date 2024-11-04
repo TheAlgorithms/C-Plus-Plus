@@ -117,11 +117,12 @@ $(function(){initNavTree('d6/d42/data__structures_2sparse__table_8cpp.html','../
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;array&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sparse_table.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d88/data__structures_2sparse__table_8cpp__incl.svg" width="246" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d88/data__structures_2sparse__table_8cpp__incl.svg" width="330" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -193,11 +194,11 @@ constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>data_str
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  161</span>                                 {</div>
-<div class="line"><span class="lineno">  162</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">  163</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  164</span>}</div>
-<div class="ttc" id="adata__structures_2sparse__table_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:128</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  162</span>                                 {</div>
+<div class="line"><span class="lineno">  163</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">  164</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  165</span>}</div>
+<div class="ttc" id="adata__structures_2sparse__table_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:129</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -240,39 +241,39 @@ Here is the call graph for this function:</div>
 <p>&lt; as 1 is smallest from 1..9</p>
 <p>&lt; as 2 is smallest from 2..6</p>
 <p>&lt; as 3 is smallest from 3..8</p>
-<div class="fragment"><div class="line"><span class="lineno">  128</span>                   {</div>
-<div class="line"><span class="lineno">  129</span>    <span class="comment">/* We take an array as an input on which we need to perform the ranged</span></div>
-<div class="line"><span class="lineno">  130</span><span class="comment">     * minimum queries[RMQ](https://en.wikipedia.org/wiki/Range_minimum_query).</span></div>
-<div class="line"><span class="lineno">  131</span><span class="comment">     */</span></div>
-<div class="line"><span class="lineno">  132</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int64_t, 10&gt;</a> testcase = {</div>
-<div class="line"><span class="lineno">  133</span>        1, 2, 3, 4, 5,</div>
-<div class="line"><span class="lineno">  134</span>        6, 7, 8, 9, 10};  <span class="comment">///&lt; array on which RMQ will be performed.</span></div>
-<div class="line"><span class="lineno">  135</span>    <span class="keywordtype">size_t</span> testcase_size =</div>
-<div class="line"><span class="lineno">  136</span>        <span class="keyword">sizeof</span>(testcase) / <span class="keyword">sizeof</span>(testcase[0]);  <span class="comment">///&lt; size of self test&#39;s array</span></div>
-<div class="line"><span class="lineno">  137</span> </div>
-<div class="line"><span class="lineno">  138</span>    <a class="code hl_struct" href="../../da/d37/structdata__structures_1_1sparse__table_1_1_sparse__table.html">data_structures::sparse_table::Sparse_table</a></div>
-<div class="line"><span class="lineno">  139</span>        st{};  <span class="comment">///&lt; declaring sparse tree</span></div>
-<div class="line"><span class="lineno">  140</span> </div>
-<div class="line"><span class="lineno">  141</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/copy.html">std::copy</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(testcase), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(testcase),</div>
-<div class="line"><span class="lineno">  142</span>              <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(st.A));  <span class="comment">///&lt; copying array to the struct</span></div>
-<div class="line"><span class="lineno">  143</span>    st.n = testcase_size;         <span class="comment">///&lt; passing the array&#39;s size to the struct</span></div>
-<div class="line"><span class="lineno">  144</span> </div>
-<div class="line"><span class="lineno">  145</span>    st.buildST();  <span class="comment">///&lt; precomputing sparse tree</span></div>
-<div class="line"><span class="lineno">  146</span> </div>
-<div class="line"><span class="lineno">  147</span>    <span class="comment">// pass queries of the form: [l,r]</span></div>
-<div class="line"><span class="lineno">  148</span>    assert(st.query(1, 9) == 1);  <span class="comment">///&lt; as 1 is smallest from 1..9</span></div>
-<div class="line"><span class="lineno">  149</span>    assert(st.query(2, 6) == 2);  <span class="comment">///&lt; as 2 is smallest from 2..6</span></div>
-<div class="line"><span class="lineno">  150</span>    assert(st.query(3, 8) == 3);  <span class="comment">///&lt; as 3 is smallest from 3..8</span></div>
-<div class="line"><span class="lineno">  151</span> </div>
-<div class="line"><span class="lineno">  152</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Self-test implementations passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  153</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  129</span>                   {</div>
+<div class="line"><span class="lineno">  130</span>    <span class="comment">/* We take an array as an input on which we need to perform the ranged</span></div>
+<div class="line"><span class="lineno">  131</span><span class="comment">     * minimum queries[RMQ](https://en.wikipedia.org/wiki/Range_minimum_query).</span></div>
+<div class="line"><span class="lineno">  132</span><span class="comment">     */</span></div>
+<div class="line"><span class="lineno">  133</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int64_t, 10&gt;</a> testcase = {</div>
+<div class="line"><span class="lineno">  134</span>        1, 2, 3, 4, 5,</div>
+<div class="line"><span class="lineno">  135</span>        6, 7, 8, 9, 10};  <span class="comment">///&lt; array on which RMQ will be performed.</span></div>
+<div class="line"><span class="lineno">  136</span>    <span class="keywordtype">size_t</span> testcase_size =</div>
+<div class="line"><span class="lineno">  137</span>        <span class="keyword">sizeof</span>(testcase) / <span class="keyword">sizeof</span>(testcase[0]);  <span class="comment">///&lt; size of self test&#39;s array</span></div>
+<div class="line"><span class="lineno">  138</span> </div>
+<div class="line"><span class="lineno">  139</span>    <a class="code hl_struct" href="../../da/d37/structdata__structures_1_1sparse__table_1_1_sparse__table.html">data_structures::sparse_table::Sparse_table</a></div>
+<div class="line"><span class="lineno">  140</span>        st{};  <span class="comment">///&lt; declaring sparse tree</span></div>
+<div class="line"><span class="lineno">  141</span> </div>
+<div class="line"><span class="lineno">  142</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/copy.html">std::copy</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(testcase), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(testcase),</div>
+<div class="line"><span class="lineno">  143</span>              <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(st.A));  <span class="comment">///&lt; copying array to the struct</span></div>
+<div class="line"><span class="lineno">  144</span>    st.n = testcase_size;         <span class="comment">///&lt; passing the array&#39;s size to the struct</span></div>
+<div class="line"><span class="lineno">  145</span> </div>
+<div class="line"><span class="lineno">  146</span>    st.buildST();  <span class="comment">///&lt; precomputing sparse tree</span></div>
+<div class="line"><span class="lineno">  147</span> </div>
+<div class="line"><span class="lineno">  148</span>    <span class="comment">// pass queries of the form: [l,r]</span></div>
+<div class="line"><span class="lineno">  149</span>    assert(st.query(1, 9) == 1);  <span class="comment">///&lt; as 1 is smallest from 1..9</span></div>
+<div class="line"><span class="lineno">  150</span>    assert(st.query(2, 6) == 2);  <span class="comment">///&lt; as 2 is smallest from 2..6</span></div>
+<div class="line"><span class="lineno">  151</span>    assert(st.query(3, 8) == 3);  <span class="comment">///&lt; as 3 is smallest from 3..8</span></div>
+<div class="line"><span class="lineno">  152</span> </div>
+<div class="line"><span class="lineno">  153</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Self-test implementations passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  154</span>}</div>
 <div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
 <div class="ttc" id="acopy_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/copy.html">std::copy</a></div><div class="ttdeci">T copy(T... args)</div></div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="astructdata__structures_1_1sparse__table_1_1_sparse__table_html"><div class="ttname"><a href="../../da/d37/structdata__structures_1_1sparse__table_1_1_sparse__table.html">data_structures::sparse_table::Sparse_table</a></div><div class="ttdef"><b>Definition</b> sparse_table.cpp:50</div></div>
+<div class="ttc" id="astructdata__structures_1_1sparse__table_1_1_sparse__table_html"><div class="ttname"><a href="../../da/d37/structdata__structures_1_1sparse__table_1_1_sparse__table.html">data_structures::sparse_table::Sparse_table</a></div><div class="ttdef"><b>Definition</b> sparse_table.cpp:51</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

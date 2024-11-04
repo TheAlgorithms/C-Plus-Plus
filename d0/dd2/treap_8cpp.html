@@ -117,11 +117,12 @@ $(function(){initNavTree('d0/dd2/treap_8cpp.html','../../'); initResizable(true)
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;array&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for treap.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/de6/treap_8cpp__incl.svg" width="246" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/de6/treap_8cpp__incl.svg" width="330" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -179,11 +180,11 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>data_structures:
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  256</span>           {</div>
-<div class="line"><span class="lineno">  257</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">  258</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  259</span>}</div>
-<div class="ttc" id="atreap_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> treap.cpp:230</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  255</span>           {</div>
+<div class="line"><span class="lineno">  256</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">  257</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  258</span>}</div>
+<div class="ttc" id="atreap_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> treap.cpp:229</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -218,36 +219,36 @@ Here is the call graph for this function:</div>
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <p>&lt; Treap object instance</p>
-<div class="fragment"><div class="line"><span class="lineno">  230</span>                   {</div>
-<div class="line"><span class="lineno">  231</span>    <a class="code hl_struct" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html">data_structures::treap::Treap</a> mTreap;  <span class="comment">///&lt; Treap object instance</span></div>
-<div class="line"><span class="lineno">  232</span> </div>
-<div class="line"><span class="lineno">  233</span>    mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a5e884d2686aff501ef589b0d1185492f">insert</a>(1);</div>
-<div class="line"><span class="lineno">  234</span>    mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a5e884d2686aff501ef589b0d1185492f">insert</a>(2);</div>
-<div class="line"><span class="lineno">  235</span>    mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a5e884d2686aff501ef589b0d1185492f">insert</a>(3);</div>
-<div class="line"><span class="lineno">  236</span>    assert(mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ab2db3ad3aecc240011e0c8b8604d2c69">get_k_th</a>(2) == 2);</div>
-<div class="line"><span class="lineno">  237</span>    mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a5e884d2686aff501ef589b0d1185492f">insert</a>(4);</div>
-<div class="line"><span class="lineno">  238</span>    mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a5e884d2686aff501ef589b0d1185492f">insert</a>(5);</div>
-<div class="line"><span class="lineno">  239</span>    mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a5e884d2686aff501ef589b0d1185492f">insert</a>(6);</div>
-<div class="line"><span class="lineno">  240</span>    assert(mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a767b28f9911fc32b8462862be058a4a4">get_next</a>(4) == 5);</div>
-<div class="line"><span class="lineno">  241</span>    mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a5e884d2686aff501ef589b0d1185492f">insert</a>(7);</div>
-<div class="line"><span class="lineno">  242</span>    assert(mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ab8b9899f22070cfa01db5bf874296126">get_predecessor</a>(7) == 6);</div>
-<div class="line"><span class="lineno">  243</span>    mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a9ea2becd904e2e7d22f23a001b444469">erase</a>(4);</div>
-<div class="line"><span class="lineno">  244</span>    assert(mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ab2db3ad3aecc240011e0c8b8604d2c69">get_k_th</a>(4) == 5);</div>
-<div class="line"><span class="lineno">  245</span>    assert(mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ac94e9d69305940f6d8804031455af039">get_rank</a>(5) == 4);</div>
-<div class="line"><span class="lineno">  246</span>    mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a5e884d2686aff501ef589b0d1185492f">insert</a>(10);</div>
-<div class="line"><span class="lineno">  247</span>    assert(mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ac94e9d69305940f6d8804031455af039">get_rank</a>(10) == 7);</div>
-<div class="line"><span class="lineno">  248</span>    assert(mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ab8b9899f22070cfa01db5bf874296126">get_predecessor</a>(10) == 7);</div>
-<div class="line"><span class="lineno">  249</span> </div>
-<div class="line"><span class="lineno">  250</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  251</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  229</span>                   {</div>
+<div class="line"><span class="lineno">  230</span>    <a class="code hl_struct" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html">data_structures::treap::Treap</a> mTreap;  <span class="comment">///&lt; Treap object instance</span></div>
+<div class="line"><span class="lineno">  231</span> </div>
+<div class="line"><span class="lineno">  232</span>    mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a5e884d2686aff501ef589b0d1185492f">insert</a>(1);</div>
+<div class="line"><span class="lineno">  233</span>    mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a5e884d2686aff501ef589b0d1185492f">insert</a>(2);</div>
+<div class="line"><span class="lineno">  234</span>    mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a5e884d2686aff501ef589b0d1185492f">insert</a>(3);</div>
+<div class="line"><span class="lineno">  235</span>    assert(mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ab2db3ad3aecc240011e0c8b8604d2c69">get_k_th</a>(2) == 2);</div>
+<div class="line"><span class="lineno">  236</span>    mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a5e884d2686aff501ef589b0d1185492f">insert</a>(4);</div>
+<div class="line"><span class="lineno">  237</span>    mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a5e884d2686aff501ef589b0d1185492f">insert</a>(5);</div>
+<div class="line"><span class="lineno">  238</span>    mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a5e884d2686aff501ef589b0d1185492f">insert</a>(6);</div>
+<div class="line"><span class="lineno">  239</span>    assert(mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a767b28f9911fc32b8462862be058a4a4">get_next</a>(4) == 5);</div>
+<div class="line"><span class="lineno">  240</span>    mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a5e884d2686aff501ef589b0d1185492f">insert</a>(7);</div>
+<div class="line"><span class="lineno">  241</span>    assert(mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ab8b9899f22070cfa01db5bf874296126">get_predecessor</a>(7) == 6);</div>
+<div class="line"><span class="lineno">  242</span>    mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a9ea2becd904e2e7d22f23a001b444469">erase</a>(4);</div>
+<div class="line"><span class="lineno">  243</span>    assert(mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ab2db3ad3aecc240011e0c8b8604d2c69">get_k_th</a>(4) == 5);</div>
+<div class="line"><span class="lineno">  244</span>    assert(mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ac94e9d69305940f6d8804031455af039">get_rank</a>(5) == 4);</div>
+<div class="line"><span class="lineno">  245</span>    mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a5e884d2686aff501ef589b0d1185492f">insert</a>(10);</div>
+<div class="line"><span class="lineno">  246</span>    assert(mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ac94e9d69305940f6d8804031455af039">get_rank</a>(10) == 7);</div>
+<div class="line"><span class="lineno">  247</span>    assert(mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ab8b9899f22070cfa01db5bf874296126">get_predecessor</a>(10) == 7);</div>
+<div class="line"><span class="lineno">  248</span> </div>
+<div class="line"><span class="lineno">  249</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  250</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html">data_structures::treap::Treap</a></div><div class="ttdoc">Struct representation of the treap.</div><div class="ttdef"><b>Definition</b> treap.cpp:39</div></div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a5e884d2686aff501ef589b0d1185492f"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a5e884d2686aff501ef589b0d1185492f">data_structures::treap::Treap::insert</a></div><div class="ttdeci">void insert(int k)</div><div class="ttdoc">Insert element (External method)</div><div class="ttdef"><b>Definition</b> treap.cpp:204</div></div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a767b28f9911fc32b8462862be058a4a4"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a767b28f9911fc32b8462862be058a4a4">data_structures::treap::Treap::get_next</a></div><div class="ttdeci">int get_next(int k)</div><div class="ttdoc">Get the successor node of element k.</div><div class="ttdef"><b>Definition</b> treap.cpp:189</div></div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a9ea2becd904e2e7d22f23a001b444469"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a9ea2becd904e2e7d22f23a001b444469">data_structures::treap::Treap::erase</a></div><div class="ttdeci">void erase(int k)</div><div class="ttdoc">Erase element (External method)</div><div class="ttdef"><b>Definition</b> treap.cpp:209</div></div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_ab2db3ad3aecc240011e0c8b8604d2c69"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ab2db3ad3aecc240011e0c8b8604d2c69">data_structures::treap::Treap::get_k_th</a></div><div class="ttdeci">int get_k_th(int k)</div><div class="ttdoc">Get the KTH largest value (External method)</div><div class="ttdef"><b>Definition</b> treap.cpp:215</div></div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_ab8b9899f22070cfa01db5bf874296126"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ab8b9899f22070cfa01db5bf874296126">data_structures::treap::Treap::get_predecessor</a></div><div class="ttdeci">int get_predecessor(int k)</div><div class="ttdoc">Get the predecessor node of element k.</div><div class="ttdef"><b>Definition</b> treap.cpp:173</div></div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_ac94e9d69305940f6d8804031455af039"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ac94e9d69305940f6d8804031455af039">data_structures::treap::Treap::get_rank</a></div><div class="ttdeci">int get_rank(int k)</div><div class="ttdoc">Get the rank of specified element (External method)</div><div class="ttdef"><b>Definition</b> treap.cpp:221</div></div>
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html">data_structures::treap::Treap</a></div><div class="ttdoc">Struct representation of the treap.</div><div class="ttdef"><b>Definition</b> treap.cpp:40</div></div>
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a5e884d2686aff501ef589b0d1185492f"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a5e884d2686aff501ef589b0d1185492f">data_structures::treap::Treap::insert</a></div><div class="ttdeci">void insert(int k)</div><div class="ttdoc">Insert element (External method)</div><div class="ttdef"><b>Definition</b> treap.cpp:203</div></div>
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a767b28f9911fc32b8462862be058a4a4"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a767b28f9911fc32b8462862be058a4a4">data_structures::treap::Treap::get_next</a></div><div class="ttdeci">int get_next(int k)</div><div class="ttdoc">Get the successor node of element k.</div><div class="ttdef"><b>Definition</b> treap.cpp:188</div></div>
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a9ea2becd904e2e7d22f23a001b444469"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a9ea2becd904e2e7d22f23a001b444469">data_structures::treap::Treap::erase</a></div><div class="ttdeci">void erase(int k)</div><div class="ttdoc">Erase element (External method)</div><div class="ttdef"><b>Definition</b> treap.cpp:208</div></div>
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_ab2db3ad3aecc240011e0c8b8604d2c69"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ab2db3ad3aecc240011e0c8b8604d2c69">data_structures::treap::Treap::get_k_th</a></div><div class="ttdeci">int get_k_th(int k)</div><div class="ttdoc">Get the KTH largest value (External method)</div><div class="ttdef"><b>Definition</b> treap.cpp:214</div></div>
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_ab8b9899f22070cfa01db5bf874296126"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ab8b9899f22070cfa01db5bf874296126">data_structures::treap::Treap::get_predecessor</a></div><div class="ttdeci">int get_predecessor(int k)</div><div class="ttdoc">Get the predecessor node of element k.</div><div class="ttdef"><b>Definition</b> treap.cpp:172</div></div>
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_ac94e9d69305940f6d8804031455af039"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ac94e9d69305940f6d8804031455af039">data_structures::treap::Treap::get_rank</a></div><div class="ttdeci">int get_rank(int k)</div><div class="ttdoc">Get the rank of specified element (External method)</div><div class="ttdef"><b>Definition</b> treap.cpp:220</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

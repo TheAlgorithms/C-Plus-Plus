@@ -114,13 +114,14 @@ $(function(){initNavTree('d8/d99/connected__components__with__dsu_8cpp.html','..
 
 <p><a href="https://en.wikipedia.org/wiki/Disjoint_union" target="_blank">Disjoint union</a>  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;set&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for connected_components_with_dsu.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d74/connected__components__with__dsu_8cpp__incl.svg" width="227" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d74/connected__components__with__dsu_8cpp__incl.svg" width="311" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -199,13 +200,13 @@ Algorithm</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>parent of val </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   49</span>                              {</div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">while</span> (parent[val] != val) {</div>
-<div class="line"><span class="lineno">   51</span>        parent[val] = parent[parent[val]];</div>
-<div class="line"><span class="lineno">   52</span>        val = parent[val];</div>
-<div class="line"><span class="lineno">   53</span>    }</div>
-<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">return</span> val;</div>
-<div class="line"><span class="lineno">   55</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   54</span>                              {</div>
+<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">while</span> (parent[val] != val) {</div>
+<div class="line"><span class="lineno">   56</span>        parent[val] = parent[parent[val]];</div>
+<div class="line"><span class="lineno">   57</span>        val = parent[val];</div>
+<div class="line"><span class="lineno">   58</span>    }</div>
+<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">return</span> val;</div>
+<div class="line"><span class="lineno">   60</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -231,11 +232,11 @@ Here is the call graph for this function:</div>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  112</span>           {</div>
-<div class="line"><span class="lineno">  113</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// Execute the tests</span></div>
-<div class="line"><span class="lineno">  114</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  115</span>}</div>
-<div class="ttc" id="aconnected__components__with__dsu_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Test Implementations.</div><div class="ttdef"><b>Definition</b> connected_components_with_dsu.cpp:92</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  117</span>           {</div>
+<div class="line"><span class="lineno">  118</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// Execute the tests</span></div>
+<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  120</span>}</div>
+<div class="ttc" id="aconnected__components__with__dsu_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Test Implementations.</div><div class="ttdef"><b>Definition</b> connected_components_with_dsu.cpp:97</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -261,12 +262,12 @@ Here is the call graph for this function:</div>
 
 <p>function the initialize every node as it's own parent </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   38</span>                {</div>
-<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">for</span> (uint32_t i = 1; i &lt;= number_of_nodes; i++) {</div>
-<div class="line"><span class="lineno">   40</span>        parent[i] = i;</div>
-<div class="line"><span class="lineno">   41</span>        connected_set_size[i] = 1;</div>
-<div class="line"><span class="lineno">   42</span>    }</div>
-<div class="line"><span class="lineno">   43</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>                {</div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">for</span> (uint32_t i = 1; i &lt;= number_of_nodes; i++) {</div>
+<div class="line"><span class="lineno">   45</span>        parent[i] = i;</div>
+<div class="line"><span class="lineno">   46</span>        connected_set_size[i] = 1;</div>
+<div class="line"><span class="lineno">   47</span>    }</div>
+<div class="line"><span class="lineno">   48</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -292,12 +293,12 @@ Here is the call graph for this function:</div>
 
 <p>Find total no. of connected components. </p>
 <dl class="section return"><dt>Returns</dt><dd>Number of connected components </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   80</span>                                      {</div>
-<div class="line"><span class="lineno">   81</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/set.html">std::set&lt;int64_t&gt;</a> temp;  <span class="comment">// temp set to count number of connected components</span></div>
-<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">for</span> (uint32_t i = 1; i &lt;= number_of_nodes; i++) temp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/set/insert.html">insert</a>(<a class="code hl_function" href="#a469384d8a4197a9b24482ce7c321a85e">find_set</a>(i));</div>
-<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">return</span> temp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/set/size.html">size</a>();  <span class="comment">// return the size of temp set</span></div>
-<div class="line"><span class="lineno">   84</span>}</div>
-<div class="ttc" id="aconnected__components__with__dsu_8cpp_html_a469384d8a4197a9b24482ce7c321a85e"><div class="ttname"><a href="#a469384d8a4197a9b24482ce7c321a85e">graph::disjoint_union::find_set</a></div><div class="ttdeci">int64_t find_set(int64_t val)</div><div class="ttdoc">Find the component where following node belongs to.</div><div class="ttdef"><b>Definition</b> connected_components_with_dsu.cpp:49</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   85</span>                                      {</div>
+<div class="line"><span class="lineno">   86</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/set.html">std::set&lt;int64_t&gt;</a> temp;  <span class="comment">// temp set to count number of connected components</span></div>
+<div class="line"><span class="lineno">   87</span>    <span class="keywordflow">for</span> (uint32_t i = 1; i &lt;= number_of_nodes; i++) temp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/set/insert.html">insert</a>(<a class="code hl_function" href="#a469384d8a4197a9b24482ce7c321a85e">find_set</a>(i));</div>
+<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">return</span> temp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/set/size.html">size</a>();  <span class="comment">// return the size of temp set</span></div>
+<div class="line"><span class="lineno">   89</span>}</div>
+<div class="ttc" id="aconnected__components__with__dsu_8cpp_html_a469384d8a4197a9b24482ce7c321a85e"><div class="ttname"><a href="#a469384d8a4197a9b24482ce7c321a85e">graph::disjoint_union::find_set</a></div><div class="ttdeci">int64_t find_set(int64_t val)</div><div class="ttdoc">Find the component where following node belongs to.</div><div class="ttdef"><b>Definition</b> connected_components_with_dsu.cpp:54</div></div>
 <div class="ttc" id="ainsert_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/set/insert.html">std::set::insert</a></div><div class="ttdeci">T insert(T... args)</div></div>
 <div class="ttc" id="aset_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/set.html">std::set</a></div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/set/size.html">std::set::size</a></div><div class="ttdeci">T size(T... args)</div></div>
@@ -334,24 +335,24 @@ Here is the call graph for this function:</div>
 
 <p>Test Implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   92</span>                   {</div>
-<div class="line"><span class="lineno">   93</span>    <span class="keyword">namespace </span><a class="code hl_class" href="../../dd/d1f/classdsu.html">dsu</a> = graph::disjoint_union;</div>
-<div class="line"><span class="lineno">   94</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; dsu::number_of_nodes;</div>
-<div class="line"><span class="lineno">   95</span>    dsu::parent.resize(dsu::number_of_nodes + 1);</div>
-<div class="line"><span class="lineno">   96</span>    dsu::connected_set_size.resize(dsu::number_of_nodes + 1);</div>
-<div class="line"><span class="lineno">   97</span>    dsu::make_set();</div>
-<div class="line"><span class="lineno">   98</span>    uint32_t edges = 0;</div>
-<div class="line"><span class="lineno">   99</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; edges;  <span class="comment">// no of edges in the graph</span></div>
-<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">while</span> (edges--) {</div>
-<div class="line"><span class="lineno">  101</span>        int64_t node_a = 0, node_b = 0;</div>
-<div class="line"><span class="lineno">  102</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; node_a &gt;&gt; node_b;</div>
-<div class="line"><span class="lineno">  103</span>        dsu::union_sets(node_a, node_b);</div>
-<div class="line"><span class="lineno">  104</span>    }</div>
-<div class="line"><span class="lineno">  105</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; dsu::no_of_connected_components() &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  106</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   97</span>                   {</div>
+<div class="line"><span class="lineno">   98</span>    <span class="keyword">namespace </span><a class="code hl_class" href="../../dd/d1f/classdsu.html">dsu</a> = graph::disjoint_union;</div>
+<div class="line"><span class="lineno">   99</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; dsu::number_of_nodes;</div>
+<div class="line"><span class="lineno">  100</span>    dsu::parent.resize(dsu::number_of_nodes + 1);</div>
+<div class="line"><span class="lineno">  101</span>    dsu::connected_set_size.resize(dsu::number_of_nodes + 1);</div>
+<div class="line"><span class="lineno">  102</span>    dsu::make_set();</div>
+<div class="line"><span class="lineno">  103</span>    uint32_t edges = 0;</div>
+<div class="line"><span class="lineno">  104</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; edges;  <span class="comment">// no of edges in the graph</span></div>
+<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">while</span> (edges--) {</div>
+<div class="line"><span class="lineno">  106</span>        int64_t node_a = 0, node_b = 0;</div>
+<div class="line"><span class="lineno">  107</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; node_a &gt;&gt; node_b;</div>
+<div class="line"><span class="lineno">  108</span>        dsu::union_sets(node_a, node_b);</div>
+<div class="line"><span class="lineno">  109</span>    }</div>
+<div class="line"><span class="lineno">  110</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; dsu::no_of_connected_components() &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  111</span>}</div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aclassdsu_html"><div class="ttname"><a href="../../dd/d1f/classdsu.html">dsu</a></div><div class="ttdoc">Disjoint sets union data structure, class based representation.</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:33</div></div>
+<div class="ttc" id="aclassdsu_html"><div class="ttname"><a href="../../dd/d1f/classdsu.html">dsu</a></div><div class="ttdoc">Disjoint sets union data structure, class based representation.</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:34</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -389,20 +390,20 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   62</span>                                              {</div>
-<div class="line"><span class="lineno">   63</span>    node1 = <a class="code hl_function" href="#a469384d8a4197a9b24482ce7c321a85e">find_set</a>(node1);  <span class="comment">// find the parent of node1</span></div>
-<div class="line"><span class="lineno">   64</span>    node2 = <a class="code hl_function" href="#a469384d8a4197a9b24482ce7c321a85e">find_set</a>(node2);  <span class="comment">// find the parent of node2</span></div>
-<div class="line"><span class="lineno">   65</span> </div>
-<div class="line"><span class="lineno">   66</span>    <span class="comment">// If parents of both nodes are not same, combine them</span></div>
-<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">if</span> (node1 != node2) {</div>
-<div class="line"><span class="lineno">   68</span>        <span class="keywordflow">if</span> (connected_set_size[node1] &lt; connected_set_size[node2]) {</div>
-<div class="line"><span class="lineno">   69</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(node1, node2);  <span class="comment">// swap both components</span></div>
-<div class="line"><span class="lineno">   70</span>        }</div>
-<div class="line"><span class="lineno">   71</span>        parent[node2] = node1;  <span class="comment">// make node1 as parent of node2.</span></div>
-<div class="line"><span class="lineno">   72</span>        connected_set_size[node1] +=</div>
-<div class="line"><span class="lineno">   73</span>            connected_set_size[node2];  <span class="comment">// sum the size of both as they combined</span></div>
-<div class="line"><span class="lineno">   74</span>    }</div>
-<div class="line"><span class="lineno">   75</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   67</span>                                              {</div>
+<div class="line"><span class="lineno">   68</span>    node1 = <a class="code hl_function" href="#a469384d8a4197a9b24482ce7c321a85e">find_set</a>(node1);  <span class="comment">// find the parent of node1</span></div>
+<div class="line"><span class="lineno">   69</span>    node2 = <a class="code hl_function" href="#a469384d8a4197a9b24482ce7c321a85e">find_set</a>(node2);  <span class="comment">// find the parent of node2</span></div>
+<div class="line"><span class="lineno">   70</span> </div>
+<div class="line"><span class="lineno">   71</span>    <span class="comment">// If parents of both nodes are not same, combine them</span></div>
+<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">if</span> (node1 != node2) {</div>
+<div class="line"><span class="lineno">   73</span>        <span class="keywordflow">if</span> (connected_set_size[node1] &lt; connected_set_size[node2]) {</div>
+<div class="line"><span class="lineno">   74</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(node1, node2);  <span class="comment">// swap both components</span></div>
+<div class="line"><span class="lineno">   75</span>        }</div>
+<div class="line"><span class="lineno">   76</span>        parent[node2] = node1;  <span class="comment">// make node1 as parent of node2.</span></div>
+<div class="line"><span class="lineno">   77</span>        connected_set_size[node1] +=</div>
+<div class="line"><span class="lineno">   78</span>            connected_set_size[node2];  <span class="comment">// sum the size of both as they combined</span></div>
+<div class="line"><span class="lineno">   79</span>    }</div>
+<div class="line"><span class="lineno">   80</span>}</div>
 <div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -424,7 +425,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   33</span>{};  <span class="comment">// size of each set</span></div>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>{};  <span class="comment">// size of each set</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -439,7 +440,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   32</span>{};               <span class="comment">// parent of each node</span></div>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>{};               <span class="comment">// parent of each node</span></div>
 </div><!-- fragment -->
 </div>
 </div>

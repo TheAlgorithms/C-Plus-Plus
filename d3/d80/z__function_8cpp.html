@@ -112,14 +112,15 @@ $(function(){initNavTree('d3/d80/z__function_8cpp.html','../../'); initResizable
 
 <p>The <a href="https://cp-algorithms.com/string/z-function.html" target="_blank">Z function</a> for finding occurences of a pattern within a piece of text with time and space complexity O(n + m)  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for z_function.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/df1/z__function_8cpp__incl.svg" width="336" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/df1/z__function_8cpp__incl.svg" width="420" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -173,22 +174,22 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a vector of starting indexes where pattern is found in the text </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   54</span>                                                              {</div>
-<div class="line"><span class="lineno">   55</span>    uint64_t text_length = text.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>(), pattern_length = pattern.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>();</div>
-<div class="line"><span class="lineno">   56</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> z = <a class="code hl_function" href="#ac044c4794349a8cff6256b99950d5773">Z_function</a>(pattern + <span class="charliteral">&#39;#&#39;</span> + text);</div>
-<div class="line"><span class="lineno">   57</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> matching_indexes;</div>
-<div class="line"><span class="lineno">   58</span> </div>
-<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; text_length; i++) {</div>
-<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">if</span> (z[i + pattern_length + 1] == pattern_length) {</div>
-<div class="line"><span class="lineno">   61</span>            matching_indexes.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(i);</div>
-<div class="line"><span class="lineno">   62</span>        }</div>
-<div class="line"><span class="lineno">   63</span>    }</div>
-<div class="line"><span class="lineno">   64</span>    <span class="keywordflow">return</span> matching_indexes;</div>
-<div class="line"><span class="lineno">   65</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>                                                              {</div>
+<div class="line"><span class="lineno">   56</span>    uint64_t text_length = text.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>(), pattern_length = pattern.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>();</div>
+<div class="line"><span class="lineno">   57</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> z = <a class="code hl_function" href="#ac044c4794349a8cff6256b99950d5773">Z_function</a>(pattern + <span class="charliteral">&#39;#&#39;</span> + text);</div>
+<div class="line"><span class="lineno">   58</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> matching_indexes;</div>
+<div class="line"><span class="lineno">   59</span> </div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; text_length; i++) {</div>
+<div class="line"><span class="lineno">   61</span>        <span class="keywordflow">if</span> (z[i + pattern_length + 1] == pattern_length) {</div>
+<div class="line"><span class="lineno">   62</span>            matching_indexes.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(i);</div>
+<div class="line"><span class="lineno">   63</span>        }</div>
+<div class="line"><span class="lineno">   64</span>    }</div>
+<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">return</span> matching_indexes;</div>
+<div class="line"><span class="lineno">   66</span>}</div>
 <div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">std::string::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-<div class="ttc" id="az__function_8cpp_html_ac044c4794349a8cff6256b99950d5773"><div class="ttname"><a href="#ac044c4794349a8cff6256b99950d5773">Z_function</a></div><div class="ttdeci">std::vector&lt; uint64_t &gt; Z_function(const std::string &amp;pattern)</div><div class="ttdoc">for IO operations</div><div class="ttdef"><b>Definition</b> z_function.cpp:28</div></div>
+<div class="ttc" id="az__function_8cpp_html_ac044c4794349a8cff6256b99950d5773"><div class="ttname"><a href="#ac044c4794349a8cff6256b99950d5773">Z_function</a></div><div class="ttdeci">std::vector&lt; uint64_t &gt; Z_function(const std::string &amp;pattern)</div><div class="ttdoc">for IO operations</div><div class="ttdef"><b>Definition</b> z_function.cpp:29</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -214,11 +215,11 @@ Here is the call graph for this function:</div>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   93</span>           {</div>
-<div class="line"><span class="lineno">   94</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   96</span>}</div>
-<div class="ttc" id="az__function_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> z_function.cpp:71</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   94</span>           {</div>
+<div class="line"><span class="lineno">   95</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   97</span>}</div>
+<div class="ttc" id="az__function_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> z_function.cpp:72</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -252,25 +253,25 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   71</span>                   {</div>
-<div class="line"><span class="lineno">   72</span>    <span class="comment">// usual case</span></div>
-<div class="line"><span class="lineno">   73</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> text1 = <span class="stringliteral">&quot;alskfjaldsabc1abc1abcbksbcdnsdabcabc&quot;</span>;</div>
-<div class="line"><span class="lineno">   74</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> pattern1 = <span class="stringliteral">&quot;abc&quot;</span>;</div>
-<div class="line"><span class="lineno">   75</span> </div>
-<div class="line"><span class="lineno">   76</span>    <span class="comment">// matching_indexes1 gets the indexes where pattern1 exists in text1</span></div>
-<div class="line"><span class="lineno">   77</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> matching_indexes1 = <a class="code hl_function" href="#ac186ca3ac3a69b5e52543bb13fe46db8">find_pat_in_text</a>(pattern1, text1);</div>
-<div class="line"><span class="lineno">   78</span>    assert((matching_indexes1 == <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a>{10, 14, 18, 30, 33}));</div>
-<div class="line"><span class="lineno">   79</span> </div>
-<div class="line"><span class="lineno">   80</span>    <span class="comment">// corner case</span></div>
-<div class="line"><span class="lineno">   81</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> text2 = <span class="stringliteral">&quot;greengrass&quot;</span>;</div>
-<div class="line"><span class="lineno">   82</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> pattern2 = <span class="stringliteral">&quot;abc&quot;</span>;</div>
-<div class="line"><span class="lineno">   83</span> </div>
-<div class="line"><span class="lineno">   84</span>    <span class="comment">// matching_indexes2 gets the indexes where pattern2 exists in text2</span></div>
-<div class="line"><span class="lineno">   85</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> matching_indexes2 = <a class="code hl_function" href="#ac186ca3ac3a69b5e52543bb13fe46db8">find_pat_in_text</a>(pattern2, text2);</div>
-<div class="line"><span class="lineno">   86</span>    assert((matching_indexes2 == <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a>{}));</div>
-<div class="line"><span class="lineno">   87</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   72</span>                   {</div>
+<div class="line"><span class="lineno">   73</span>    <span class="comment">// usual case</span></div>
+<div class="line"><span class="lineno">   74</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> text1 = <span class="stringliteral">&quot;alskfjaldsabc1abc1abcbksbcdnsdabcabc&quot;</span>;</div>
+<div class="line"><span class="lineno">   75</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> pattern1 = <span class="stringliteral">&quot;abc&quot;</span>;</div>
+<div class="line"><span class="lineno">   76</span> </div>
+<div class="line"><span class="lineno">   77</span>    <span class="comment">// matching_indexes1 gets the indexes where pattern1 exists in text1</span></div>
+<div class="line"><span class="lineno">   78</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> matching_indexes1 = <a class="code hl_function" href="#ac186ca3ac3a69b5e52543bb13fe46db8">find_pat_in_text</a>(pattern1, text1);</div>
+<div class="line"><span class="lineno">   79</span>    assert((matching_indexes1 == <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a>{10, 14, 18, 30, 33}));</div>
+<div class="line"><span class="lineno">   80</span> </div>
+<div class="line"><span class="lineno">   81</span>    <span class="comment">// corner case</span></div>
+<div class="line"><span class="lineno">   82</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> text2 = <span class="stringliteral">&quot;greengrass&quot;</span>;</div>
+<div class="line"><span class="lineno">   83</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> pattern2 = <span class="stringliteral">&quot;abc&quot;</span>;</div>
+<div class="line"><span class="lineno">   84</span> </div>
+<div class="line"><span class="lineno">   85</span>    <span class="comment">// matching_indexes2 gets the indexes where pattern2 exists in text2</span></div>
+<div class="line"><span class="lineno">   86</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> matching_indexes2 = <a class="code hl_function" href="#ac186ca3ac3a69b5e52543bb13fe46db8">find_pat_in_text</a>(pattern2, text2);</div>
+<div class="line"><span class="lineno">   87</span>    assert((matching_indexes2 == <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a>{}));</div>
+<div class="line"><span class="lineno">   88</span>}</div>
 <div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
-<div class="ttc" id="az__function_8cpp_html_ac186ca3ac3a69b5e52543bb13fe46db8"><div class="ttname"><a href="#ac186ca3ac3a69b5e52543bb13fe46db8">find_pat_in_text</a></div><div class="ttdeci">std::vector&lt; uint64_t &gt; find_pat_in_text(const std::string &amp;pattern, const std::string &amp;text)</div><div class="ttdoc">Using Z_function to find a pattern in a text.</div><div class="ttdef"><b>Definition</b> z_function.cpp:53</div></div>
+<div class="ttc" id="az__function_8cpp_html_ac186ca3ac3a69b5e52543bb13fe46db8"><div class="ttname"><a href="#ac186ca3ac3a69b5e52543bb13fe46db8">find_pat_in_text</a></div><div class="ttdeci">std::vector&lt; uint64_t &gt; find_pat_in_text(const std::string &amp;pattern, const std::string &amp;text)</div><div class="ttdoc">Using Z_function to find a pattern in a text.</div><div class="ttdef"><b>Definition</b> z_function.cpp:54</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -303,24 +304,24 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the Z-function output as a vector array </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   28</span>                                                         {</div>
-<div class="line"><span class="lineno">   29</span>    uint64_t pattern_length = pattern.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>();</div>
-<div class="line"><span class="lineno">   30</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> z(pattern_length, 0);</div>
-<div class="line"><span class="lineno">   31</span> </div>
-<div class="line"><span class="lineno">   32</span>    <span class="keywordflow">for</span> (uint64_t i = 1, l = 0, r = 0; i &lt; pattern_length; i++) {</div>
-<div class="line"><span class="lineno">   33</span>        <span class="keywordflow">if</span> (i &lt;= r) {</div>
-<div class="line"><span class="lineno">   34</span>            z[i] = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(r - i + 1, z[i - l]);</div>
-<div class="line"><span class="lineno">   35</span>        }</div>
-<div class="line"><span class="lineno">   36</span>        <span class="keywordflow">while</span> (i + z[i] &lt; pattern_length &amp;&amp;</div>
-<div class="line"><span class="lineno">   37</span>               pattern[z[i]] == pattern[i + z[i]]) {</div>
-<div class="line"><span class="lineno">   38</span>            z[i]++;</div>
-<div class="line"><span class="lineno">   39</span>        }</div>
-<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">if</span> (i + z[i] - 1 &gt; r) {</div>
-<div class="line"><span class="lineno">   41</span>            r = i + z[i] - 1;</div>
-<div class="line"><span class="lineno">   42</span>        }</div>
-<div class="line"><span class="lineno">   43</span>    }</div>
-<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">return</span> z;</div>
-<div class="line"><span class="lineno">   45</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   29</span>                                                         {</div>
+<div class="line"><span class="lineno">   30</span>    uint64_t pattern_length = pattern.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>();</div>
+<div class="line"><span class="lineno">   31</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> z(pattern_length, 0);</div>
+<div class="line"><span class="lineno">   32</span> </div>
+<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">for</span> (uint64_t i = 1, l = 0, r = 0; i &lt; pattern_length; i++) {</div>
+<div class="line"><span class="lineno">   34</span>        <span class="keywordflow">if</span> (i &lt;= r) {</div>
+<div class="line"><span class="lineno">   35</span>            z[i] = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(r - i + 1, z[i - l]);</div>
+<div class="line"><span class="lineno">   36</span>        }</div>
+<div class="line"><span class="lineno">   37</span>        <span class="keywordflow">while</span> (i + z[i] &lt; pattern_length &amp;&amp;</div>
+<div class="line"><span class="lineno">   38</span>               pattern[z[i]] == pattern[i + z[i]]) {</div>
+<div class="line"><span class="lineno">   39</span>            z[i]++;</div>
+<div class="line"><span class="lineno">   40</span>        }</div>
+<div class="line"><span class="lineno">   41</span>        <span class="keywordflow">if</span> (i + z[i] - 1 &gt; r) {</div>
+<div class="line"><span class="lineno">   42</span>            r = i + z[i] - 1;</div>
+<div class="line"><span class="lineno">   43</span>        }</div>
+<div class="line"><span class="lineno">   44</span>    }</div>
+<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">return</span> z;</div>
+<div class="line"><span class="lineno">   46</span>}</div>
 <div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

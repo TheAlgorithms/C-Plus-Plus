@@ -191,8 +191,8 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>pageFrame</b></td
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   84</span>{ <a class="code hl_variable" href="#a1aafd0444b410e0fcb66287e9954c893">pageFrame</a> = pf; }</div>
-<div class="ttc" id="aclassothers_1_1lru__cache_1_1_l_r_u_cache_html_a1aafd0444b410e0fcb66287e9954c893"><div class="ttname"><a href="#a1aafd0444b410e0fcb66287e9954c893">others::lru_cache::LRUCache::pageFrame</a></div><div class="ttdeci">uint64_t pageFrame</div><div class="ttdoc">Page frame, or total size of the cache.</div><div class="ttdef"><b>Definition</b> lru_cache.cpp:68</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   85</span>{ <a class="code hl_variable" href="#a1aafd0444b410e0fcb66287e9954c893">pageFrame</a> = pf; }</div>
+<div class="ttc" id="aclassothers_1_1lru__cache_1_1_l_r_u_cache_html_a1aafd0444b410e0fcb66287e9954c893"><div class="ttname"><a href="#a1aafd0444b410e0fcb66287e9954c893">others::lru_cache::LRUCache::pageFrame</a></div><div class="ttdeci">uint64_t pageFrame</div><div class="ttdoc">Page frame, or total size of the cache.</div><div class="ttdef"><b>Definition</b> lru_cache.cpp:69</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -222,14 +222,14 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>pageFrame</b></td
 
 <p>A function to display the current cache. </p>
 <dl class="section return"><dt>Returns</dt><dd>Void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  120</span>                   {</div>
-<div class="line"><span class="lineno">  121</span>        <span class="keywordflow">for</span> (uint64_t &amp;it : <a class="code hl_variable" href="#a3ee3560a6b90e6f50f6e063d690ba8e8">cache</a>) {</div>
-<div class="line"><span class="lineno">  122</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; it &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><span class="lineno">  123</span>        }</div>
-<div class="line"><span class="lineno">  124</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  125</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  121</span>                   {</div>
+<div class="line"><span class="lineno">  122</span>        <span class="keywordflow">for</span> (uint64_t &amp;it : <a class="code hl_variable" href="#a3ee3560a6b90e6f50f6e063d690ba8e8">cache</a>) {</div>
+<div class="line"><span class="lineno">  123</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; it &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">  124</span>        }</div>
+<div class="line"><span class="lineno">  125</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  126</span>    }</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aclassothers_1_1lru__cache_1_1_l_r_u_cache_html_a3ee3560a6b90e6f50f6e063d690ba8e8"><div class="ttname"><a href="#a3ee3560a6b90e6f50f6e063d690ba8e8">others::lru_cache::LRUCache::cache</a></div><div class="ttdeci">std::list&lt; uint64_t &gt; cache</div><div class="ttdoc">Cache linked list (using the STL)</div><div class="ttdef"><b>Definition</b> lru_cache.cpp:69</div></div>
+<div class="ttc" id="aclassothers_1_1lru__cache_1_1_l_r_u_cache_html_a3ee3560a6b90e6f50f6e063d690ba8e8"><div class="ttname"><a href="#a3ee3560a6b90e6f50f6e063d690ba8e8">others::lru_cache::LRUCache::cache</a></div><div class="ttdeci">std::list&lt; uint64_t &gt; cache</div><div class="ttdoc">Cache linked list (using the STL)</div><div class="ttdef"><b>Definition</b> lru_cache.cpp:70</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -264,8 +264,8 @@ Here is the call graph for this function:</div>
 
 <p>A function to get page hits. </p>
 <dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  130</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a5f33913e7ddfbb38062362e7bd859154">hits</a>; }</div>
-<div class="ttc" id="aclassothers_1_1lru__cache_1_1_l_r_u_cache_html_a5f33913e7ddfbb38062362e7bd859154"><div class="ttname"><a href="#a5f33913e7ddfbb38062362e7bd859154">others::lru_cache::LRUCache::hits</a></div><div class="ttdeci">uint64_t hits</div><div class="ttdoc">was found in cache.</div><div class="ttdef"><b>Definition</b> lru_cache.cpp:73</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  131</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a5f33913e7ddfbb38062362e7bd859154">hits</a>; }</div>
+<div class="ttc" id="aclassothers_1_1lru__cache_1_1_l_r_u_cache_html_a5f33913e7ddfbb38062362e7bd859154"><div class="ttname"><a href="#a5f33913e7ddfbb38062362e7bd859154">others::lru_cache::LRUCache::hits</a></div><div class="ttdeci">uint64_t hits</div><div class="ttdoc">was found in cache.</div><div class="ttdef"><b>Definition</b> lru_cache.cpp:74</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -294,8 +294,8 @@ Here is the call graph for this function:</div>
 
 <p>A function to get page fault. </p>
 <dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  135</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a09cbe562b0c396329607f5d388d57c9c">pageFault</a>; }</div>
-<div class="ttc" id="aclassothers_1_1lru__cache_1_1_l_r_u_cache_html_a09cbe562b0c396329607f5d388d57c9c"><div class="ttname"><a href="#a09cbe562b0c396329607f5d388d57c9c">others::lru_cache::LRUCache::pageFault</a></div><div class="ttdeci">uint64_t pageFault</div><div class="ttdef"><b>Definition</b> lru_cache.cpp:76</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  136</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a09cbe562b0c396329607f5d388d57c9c">pageFault</a>; }</div>
+<div class="ttc" id="aclassothers_1_1lru__cache_1_1_l_r_u_cache_html_a09cbe562b0c396329607f5d388d57c9c"><div class="ttname"><a href="#a09cbe562b0c396329607f5d388d57c9c">others::lru_cache::LRUCache::pageFault</a></div><div class="ttdeci">uint64_t pageFault</div><div class="ttdef"><b>Definition</b> lru_cache.cpp:77</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -331,33 +331,33 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <p>&lt; Increase the page fault by one.</p>
-<div class="fragment"><div class="line"><span class="lineno">   91</span>                              {</div>
-<div class="line"><span class="lineno">   92</span>        <span class="comment">// If the page requested not in cache.</span></div>
-<div class="line"><span class="lineno">   93</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#aa4d6db56109af196ffc7e5f72bc9907c">pageMap</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_map/find.html">find</a>(page) == <a class="code hl_variable" href="#aa4d6db56109af196ffc7e5f72bc9907c">pageMap</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_map/end.html">end</a>()) {</div>
-<div class="line"><span class="lineno">   94</span>            <a class="code hl_variable" href="#a09cbe562b0c396329607f5d388d57c9c">pageFault</a>++;  <span class="comment">///&lt; Increase the page fault by one.</span></div>
-<div class="line"><span class="lineno">   95</span> </div>
-<div class="line"><span class="lineno">   96</span>            <span class="comment">// Check if the cache is full</span></div>
-<div class="line"><span class="lineno">   97</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a3ee3560a6b90e6f50f6e063d690ba8e8">cache</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list/size.html">size</a>() == <a class="code hl_variable" href="#a1aafd0444b410e0fcb66287e9954c893">pageFrame</a>) {</div>
-<div class="line"><span class="lineno">   98</span>                <span class="comment">// delete the last page from cache</span></div>
-<div class="line"><span class="lineno">   99</span>                uint64_t lastPage = <a class="code hl_variable" href="#a3ee3560a6b90e6f50f6e063d690ba8e8">cache</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list/back.html">back</a>();</div>
-<div class="line"><span class="lineno">  100</span>                <a class="code hl_variable" href="#a3ee3560a6b90e6f50f6e063d690ba8e8">cache</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list/pop_back.html">pop_back</a>();</div>
-<div class="line"><span class="lineno">  101</span>                <a class="code hl_variable" href="#aa4d6db56109af196ffc7e5f72bc9907c">pageMap</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_map/erase.html">erase</a>(lastPage);</div>
-<div class="line"><span class="lineno">  102</span>            }</div>
-<div class="line"><span class="lineno">  103</span>        }</div>
-<div class="line"><span class="lineno">  104</span>        <span class="comment">// The requested page is in the cache</span></div>
-<div class="line"><span class="lineno">  105</span>        <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  106</span>            <a class="code hl_variable" href="#a5f33913e7ddfbb38062362e7bd859154">hits</a>++;</div>
-<div class="line"><span class="lineno">  107</span>            <span class="comment">// present in cache, erase from current position to bring in front</span></div>
-<div class="line"><span class="lineno">  108</span>            <a class="code hl_variable" href="#a3ee3560a6b90e6f50f6e063d690ba8e8">cache</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list/erase.html">erase</a>(<a class="code hl_variable" href="#aa4d6db56109af196ffc7e5f72bc9907c">pageMap</a>[page]);</div>
-<div class="line"><span class="lineno">  109</span>        }</div>
-<div class="line"><span class="lineno">  110</span>        <span class="comment">// Push it in the front of the cache and update the page reference in</span></div>
-<div class="line"><span class="lineno">  111</span>        <span class="comment">// page map.</span></div>
-<div class="line"><span class="lineno">  112</span>        <a class="code hl_variable" href="#a3ee3560a6b90e6f50f6e063d690ba8e8">cache</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list/push_front.html">push_front</a>(page);</div>
-<div class="line"><span class="lineno">  113</span>        <a class="code hl_variable" href="#aa4d6db56109af196ffc7e5f72bc9907c">pageMap</a>[page] = <a class="code hl_variable" href="#a3ee3560a6b90e6f50f6e063d690ba8e8">cache</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list/begin.html">begin</a>();</div>
-<div class="line"><span class="lineno">  114</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">   92</span>                              {</div>
+<div class="line"><span class="lineno">   93</span>        <span class="comment">// If the page requested not in cache.</span></div>
+<div class="line"><span class="lineno">   94</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#aa4d6db56109af196ffc7e5f72bc9907c">pageMap</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_map/find.html">find</a>(page) == <a class="code hl_variable" href="#aa4d6db56109af196ffc7e5f72bc9907c">pageMap</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_map/end.html">end</a>()) {</div>
+<div class="line"><span class="lineno">   95</span>            <a class="code hl_variable" href="#a09cbe562b0c396329607f5d388d57c9c">pageFault</a>++;  <span class="comment">///&lt; Increase the page fault by one.</span></div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>            <span class="comment">// Check if the cache is full</span></div>
+<div class="line"><span class="lineno">   98</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a3ee3560a6b90e6f50f6e063d690ba8e8">cache</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list/size.html">size</a>() == <a class="code hl_variable" href="#a1aafd0444b410e0fcb66287e9954c893">pageFrame</a>) {</div>
+<div class="line"><span class="lineno">   99</span>                <span class="comment">// delete the last page from cache</span></div>
+<div class="line"><span class="lineno">  100</span>                uint64_t lastPage = <a class="code hl_variable" href="#a3ee3560a6b90e6f50f6e063d690ba8e8">cache</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list/back.html">back</a>();</div>
+<div class="line"><span class="lineno">  101</span>                <a class="code hl_variable" href="#a3ee3560a6b90e6f50f6e063d690ba8e8">cache</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list/pop_back.html">pop_back</a>();</div>
+<div class="line"><span class="lineno">  102</span>                <a class="code hl_variable" href="#aa4d6db56109af196ffc7e5f72bc9907c">pageMap</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_map/erase.html">erase</a>(lastPage);</div>
+<div class="line"><span class="lineno">  103</span>            }</div>
+<div class="line"><span class="lineno">  104</span>        }</div>
+<div class="line"><span class="lineno">  105</span>        <span class="comment">// The requested page is in the cache</span></div>
+<div class="line"><span class="lineno">  106</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  107</span>            <a class="code hl_variable" href="#a5f33913e7ddfbb38062362e7bd859154">hits</a>++;</div>
+<div class="line"><span class="lineno">  108</span>            <span class="comment">// present in cache, erase from current position to bring in front</span></div>
+<div class="line"><span class="lineno">  109</span>            <a class="code hl_variable" href="#a3ee3560a6b90e6f50f6e063d690ba8e8">cache</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list/erase.html">erase</a>(<a class="code hl_variable" href="#aa4d6db56109af196ffc7e5f72bc9907c">pageMap</a>[page]);</div>
+<div class="line"><span class="lineno">  110</span>        }</div>
+<div class="line"><span class="lineno">  111</span>        <span class="comment">// Push it in the front of the cache and update the page reference in</span></div>
+<div class="line"><span class="lineno">  112</span>        <span class="comment">// page map.</span></div>
+<div class="line"><span class="lineno">  113</span>        <a class="code hl_variable" href="#a3ee3560a6b90e6f50f6e063d690ba8e8">cache</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list/push_front.html">push_front</a>(page);</div>
+<div class="line"><span class="lineno">  114</span>        <a class="code hl_variable" href="#aa4d6db56109af196ffc7e5f72bc9907c">pageMap</a>[page] = <a class="code hl_variable" href="#a3ee3560a6b90e6f50f6e063d690ba8e8">cache</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list/begin.html">begin</a>();</div>
+<div class="line"><span class="lineno">  115</span>    }</div>
 <div class="ttc" id="aback_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/list/back.html">std::list::back</a></div><div class="ttdeci">T back(T... args)</div></div>
 <div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/list/begin.html">std::list::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
-<div class="ttc" id="aclassothers_1_1lru__cache_1_1_l_r_u_cache_html_aa4d6db56109af196ffc7e5f72bc9907c"><div class="ttname"><a href="#aa4d6db56109af196ffc7e5f72bc9907c">others::lru_cache::LRUCache::pageMap</a></div><div class="ttdeci">std::unordered_map&lt; uint64_t, std::list&lt; uint64_t &gt;::iterator &gt; pageMap</div><div class="ttdoc">Hash map containing pages and their addresses.</div><div class="ttdef"><b>Definition</b> lru_cache.cpp:71</div></div>
+<div class="ttc" id="aclassothers_1_1lru__cache_1_1_l_r_u_cache_html_aa4d6db56109af196ffc7e5f72bc9907c"><div class="ttname"><a href="#aa4d6db56109af196ffc7e5f72bc9907c">others::lru_cache::LRUCache::pageMap</a></div><div class="ttdeci">std::unordered_map&lt; uint64_t, std::list&lt; uint64_t &gt;::iterator &gt; pageMap</div><div class="ttdoc">Hash map containing pages and their addresses.</div><div class="ttdef"><b>Definition</b> lru_cache.cpp:72</div></div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/unordered_map/end.html">std::unordered_map::end</a></div><div class="ttdeci">T end(T... args)</div></div>
 <div class="ttc" id="aerase_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/unordered_map/erase.html">std::unordered_map::erase</a></div><div class="ttdeci">T erase(T... args)</div></div>
 <div class="ttc" id="afind_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/unordered_map/find.html">std::unordered_map::find</a></div><div class="ttdeci">T find(T... args)</div></div>

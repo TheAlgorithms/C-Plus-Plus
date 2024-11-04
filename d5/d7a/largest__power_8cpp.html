@@ -113,18 +113,19 @@ $(function(){initNavTree('d5/d7a/largest__power_8cpp.html','../../'); initResiza
 
 <p>Algorithm to find largest x such that p^x divides n! (factorial) using Legendre's Formula.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;cassert&gt;</code><br />
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for largest_power.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d7e/largest__power_8cpp__incl.svg" width="172" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d7e/largest__power_8cpp__incl.svg" width="255" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html">math</a></td></tr>
-<tr class="memdesc:dd/d47/namespacemath"><td class="mdescLeft">&#160;</td><td class="mdescRight">for IO operations <br /></td></tr>
+<tr class="memdesc:dd/d47/namespacemath"><td class="mdescLeft">&#160;</td><td class="mdescRight">for assert <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -141,8 +142,11 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Algorithm to find largest x such that p^x divides n! (factorial) using Legendre's Formula. </p>
-<p>Given an integer n and a prime number p, the task is to find the largest x such that p^x (p raised to power x) divides n! (factorial). This will be done using Legendre's formula: x = [n/(p^1)] + [n/(p^2)] + [n/(p^3)] + \ldots + 1 </p><dl class="section see"><dt>See also</dt><dd>more on <a href="https://math.stackexchange.com/questions/141196/highest-power-of-a-prime-p-dividing-n">https://math.stackexchange.com/questions/141196/highest-power-of-a-prime-p-dividing-n</a> </dd></dl>
+<p>Given an integer n and a prime number p, the task is to find the largest x such that p^x (p raised to power x) divides n! (factorial). This will be done using Legendre's formula: x = [n/(p^1)] + [n/(p^2)] + [n/(p^3)]</p><ul>
+<li>\ldots + 1 <dl class="section see"><dt>See also</dt><dd>more on <a href="https://math.stackexchange.com/questions/141196/highest-power-of-a-prime-p-dividing-n">https://math.stackexchange.com/questions/141196/highest-power-of-a-prime-p-dividing-n</a> </dd></dl>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/uday6670" target="_blank">uday6670</a> </dd></dl>
+</li>
+</ul>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -161,11 +165,11 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   75</span>{ </div>
-<div class="line"><span class="lineno">   76</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>(); <span class="comment">// execute the tests</span></div>
-<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   78</span>} </div>
-<div class="ttc" id="alargest__power_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Function for testing largestPower function. test cases and assert statement.</div><div class="ttdef"><b>Definition</b> largest_power.cpp:47</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   74</span>           {</div>
+<div class="line"><span class="lineno">   75</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// execute the tests</span></div>
+<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   77</span>}</div>
+<div class="ttc" id="alargest__power_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Function for testing largestPower function. test cases and assert statement.</div><div class="ttdef"><b>Definition</b> largest_power.cpp:48</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -199,30 +203,30 @@ Here is the call graph for this function:</div>
 
 <p>Function for testing largestPower function. test cases and assert statement. </p>
 <dl class="section return"><dt>Returns</dt><dd><code>void</code> </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   48</span>{</div>
-<div class="line"><span class="lineno">   49</span>    uint8_t test_case_1 = <a class="code hl_function" href="../../dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f">math::largestPower</a>(5,2);</div>
-<div class="line"><span class="lineno">   50</span>    assert(test_case_1==3);</div>
-<div class="line"><span class="lineno">   51</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;Test 1 Passed!&quot;</span>&lt;&lt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   52</span>    </div>
-<div class="line"><span class="lineno">   53</span>    uint16_t test_case_2 = <a class="code hl_function" href="../../dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f">math::largestPower</a>(10,3);</div>
-<div class="line"><span class="lineno">   54</span>    assert(test_case_2==4);</div>
-<div class="line"><span class="lineno">   55</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;Test 2 Passed!&quot;</span>&lt;&lt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   56</span>    </div>
-<div class="line"><span class="lineno">   57</span>    uint32_t test_case_3 = <a class="code hl_function" href="../../dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f">math::largestPower</a>(25,5);</div>
-<div class="line"><span class="lineno">   58</span>    assert(test_case_3==6);</div>
-<div class="line"><span class="lineno">   59</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;Test 3 Passed!&quot;</span>&lt;&lt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   60</span>    </div>
-<div class="line"><span class="lineno">   61</span>    uint32_t test_case_4 = <a class="code hl_function" href="../../dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f">math::largestPower</a>(27,2);</div>
-<div class="line"><span class="lineno">   62</span>    assert(test_case_4==23);</div>
-<div class="line"><span class="lineno">   63</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;Test 4 Passed!&quot;</span>&lt;&lt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   64</span>    </div>
-<div class="line"><span class="lineno">   65</span>    uint16_t test_case_5 = <a class="code hl_function" href="../../dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f">math::largestPower</a>(7,3);</div>
-<div class="line"><span class="lineno">   66</span>    assert(test_case_5==2);</div>
-<div class="line"><span class="lineno">   67</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;Test 5 Passed!&quot;</span>&lt;&lt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   68</span>} </div>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>                   {</div>
+<div class="line"><span class="lineno">   49</span>    uint8_t test_case_1 = <a class="code hl_function" href="../../dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f">math::largestPower</a>(5, 2);</div>
+<div class="line"><span class="lineno">   50</span>    assert(test_case_1 == 3);</div>
+<div class="line"><span class="lineno">   51</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1 Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   52</span> </div>
+<div class="line"><span class="lineno">   53</span>    uint16_t test_case_2 = <a class="code hl_function" href="../../dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f">math::largestPower</a>(10, 3);</div>
+<div class="line"><span class="lineno">   54</span>    assert(test_case_2 == 4);</div>
+<div class="line"><span class="lineno">   55</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2 Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   56</span> </div>
+<div class="line"><span class="lineno">   57</span>    uint32_t test_case_3 = <a class="code hl_function" href="../../dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f">math::largestPower</a>(25, 5);</div>
+<div class="line"><span class="lineno">   58</span>    assert(test_case_3 == 6);</div>
+<div class="line"><span class="lineno">   59</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 3 Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   60</span> </div>
+<div class="line"><span class="lineno">   61</span>    uint32_t test_case_4 = <a class="code hl_function" href="../../dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f">math::largestPower</a>(27, 2);</div>
+<div class="line"><span class="lineno">   62</span>    assert(test_case_4 == 23);</div>
+<div class="line"><span class="lineno">   63</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 4 Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   64</span> </div>
+<div class="line"><span class="lineno">   65</span>    uint16_t test_case_5 = <a class="code hl_function" href="../../dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f">math::largestPower</a>(7, 3);</div>
+<div class="line"><span class="lineno">   66</span>    assert(test_case_5 == 2);</div>
+<div class="line"><span class="lineno">   67</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 5 Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   68</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="anamespacemath_html_afa39ec943a4836c878e1614fd89b146f"><div class="ttname"><a href="../../dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f">math::largestPower</a></div><div class="ttdeci">uint64_t largestPower(uint32_t n, const uint16_t &amp;p)</div><div class="ttdoc">Function to calculate largest power.</div><div class="ttdef"><b>Definition</b> largest_power.cpp:26</div></div>
+<div class="ttc" id="anamespacemath_html_afa39ec943a4836c878e1614fd89b146f"><div class="ttname"><a href="../../dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f">math::largestPower</a></div><div class="ttdeci">uint64_t largestPower(uint32_t n, const uint16_t &amp;p)</div><div class="ttdoc">Function to calculate largest power.</div><div class="ttdef"><b>Definition</b> largest_power.cpp:29</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

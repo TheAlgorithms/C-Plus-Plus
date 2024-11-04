@@ -348,7 +348,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   56</span>: m_adjList({}) {}</div>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>: m_adjList({}) {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -386,7 +386,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   69</span>        : m_vertices(vertices), m_adjList(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(adjList)) {}</div>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>        : m_vertices(vertices), m_adjList(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(adjList)) {}</div>
 <div class="ttc" id="amove_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a></div><div class="ttdeci">T move(T... args)</div></div>
 </div><!-- fragment -->
 </div>
@@ -425,7 +425,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   77</span>        : m_vertices(vertices), m_adjList(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(adjList)) {}</div>
+<div class="fragment"><div class="line"><span class="lineno">   78</span>        : m_vertices(vertices), m_adjList(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(adjList)) {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -464,15 +464,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   89</span>        : m_vertices(vertices) {</div>
-<div class="line"><span class="lineno">   90</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; edge : edges) {</div>
-<div class="line"><span class="lineno">   91</span>            <span class="keywordflow">if</span> (edge.src &gt;= vertices || edge.dest &gt;= vertices) {</div>
-<div class="line"><span class="lineno">   92</span>                <span class="keywordflow">throw</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/range_error.html">std::range_error</a>(</div>
-<div class="line"><span class="lineno">   93</span>                    <span class="stringliteral">&quot;Either src or dest of edge out of range&quot;</span>);</div>
-<div class="line"><span class="lineno">   94</span>            }</div>
-<div class="line"><span class="lineno">   95</span>            m_adjList[edge.src].emplace_back(edge.dest);</div>
-<div class="line"><span class="lineno">   96</span>        }</div>
-<div class="line"><span class="lineno">   97</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">   90</span>        : m_vertices(vertices) {</div>
+<div class="line"><span class="lineno">   91</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; edge : edges) {</div>
+<div class="line"><span class="lineno">   92</span>            <span class="keywordflow">if</span> (edge.src &gt;= vertices || edge.dest &gt;= vertices) {</div>
+<div class="line"><span class="lineno">   93</span>                <span class="keywordflow">throw</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/range_error.html">std::range_error</a>(</div>
+<div class="line"><span class="lineno">   94</span>                    <span class="stringliteral">&quot;Either src or dest of edge out of range&quot;</span>);</div>
+<div class="line"><span class="lineno">   95</span>            }</div>
+<div class="line"><span class="lineno">   96</span>            m_adjList[edge.src].emplace_back(edge.dest);</div>
+<div class="line"><span class="lineno">   97</span>        }</div>
+<div class="line"><span class="lineno">   98</span>    }</div>
 <div class="ttc" id="arange_error_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/error/range_error.html">std::range_error</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -507,12 +507,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  124</span>                                   {</div>
-<div class="line"><span class="lineno">  125</span>        <span class="keywordflow">if</span> (edge.src &gt;= m_vertices || edge.dest &gt;= m_vertices) {</div>
-<div class="line"><span class="lineno">  126</span>            <span class="keywordflow">throw</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/range_error.html">std::range_error</a>(<span class="stringliteral">&quot;Either src or dest of edge out of range&quot;</span>);</div>
-<div class="line"><span class="lineno">  127</span>        }</div>
-<div class="line"><span class="lineno">  128</span>        m_adjList[edge.src].emplace_back(edge.dest);</div>
-<div class="line"><span class="lineno">  129</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  125</span>                                   {</div>
+<div class="line"><span class="lineno">  126</span>        <span class="keywordflow">if</span> (edge.src &gt;= m_vertices || edge.dest &gt;= m_vertices) {</div>
+<div class="line"><span class="lineno">  127</span>            <span class="keywordflow">throw</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/range_error.html">std::range_error</a>(<span class="stringliteral">&quot;Either src or dest of edge out of range&quot;</span>);</div>
+<div class="line"><span class="lineno">  128</span>        }</div>
+<div class="line"><span class="lineno">  129</span>        m_adjList[edge.src].emplace_back(edge.dest);</div>
+<div class="line"><span class="lineno">  130</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -631,13 +631,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  136</span>                                                                {</div>
-<div class="line"><span class="lineno">  137</span>        <span class="keywordflow">if</span> (source &gt;= m_vertices || destination &gt;= m_vertices) {</div>
-<div class="line"><span class="lineno">  138</span>            <span class="keywordflow">throw</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/range_error.html">std::range_error</a>(</div>
-<div class="line"><span class="lineno">  139</span>                <span class="stringliteral">&quot;Either source or destination of edge out of range&quot;</span>);</div>
-<div class="line"><span class="lineno">  140</span>        }</div>
-<div class="line"><span class="lineno">  141</span>        m_adjList[source].emplace_back(destination);</div>
-<div class="line"><span class="lineno">  142</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  137</span>                                                                {</div>
+<div class="line"><span class="lineno">  138</span>        <span class="keywordflow">if</span> (source &gt;= m_vertices || destination &gt;= m_vertices) {</div>
+<div class="line"><span class="lineno">  139</span>            <span class="keywordflow">throw</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/range_error.html">std::range_error</a>(</div>
+<div class="line"><span class="lineno">  140</span>                <span class="stringliteral">&quot;Either source or destination of edge out of range&quot;</span>);</div>
+<div class="line"><span class="lineno">  141</span>        }</div>
+<div class="line"><span class="lineno">  142</span>        m_adjList[source].emplace_back(destination);</div>
+<div class="line"><span class="lineno">  143</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -670,7 +670,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  118</span>{ m_vertices += num; }</div>
+<div class="fragment"><div class="line"><span class="lineno">  119</span>{ m_vertices += num; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -798,9 +798,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
 </div><div class="memdoc">
 <p>Return a const reference of the adjacency list.</p>
 <dl class="section return"><dt>Returns</dt><dd>const reference to the adjacency list </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  103</span>                                                               {</div>
-<div class="line"><span class="lineno">  104</span>        <span class="keywordflow">return</span> m_adjList;</div>
-<div class="line"><span class="lineno">  105</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  104</span>                                                               {</div>
+<div class="line"><span class="lineno">  105</span>        <span class="keywordflow">return</span> m_adjList;</div>
+<div class="line"><span class="lineno">  106</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -827,7 +827,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>number of vertices in the graph. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  110</span>{ <span class="keywordflow">return</span> m_vertices; }</div>
+<div class="fragment"><div class="line"><span class="lineno">  111</span>{ <span class="keywordflow">return</span> m_vertices; }</div>
 </div><!-- fragment -->
 </div>
 </div>

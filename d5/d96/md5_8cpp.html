@@ -116,6 +116,7 @@ $(function(){initNavTree('d5/d96/md5_8cpp.html','../../'); initResizable(true); 
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;array&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
@@ -123,13 +124,13 @@ $(function(){initNavTree('d5/d96/md5_8cpp.html','../../'); initResizable(true); 
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for md5.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d0f/md5_8cpp__incl.svg" width="587" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../dd/d0f/md5_8cpp__incl.svg" width="100%" height="383"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0c/namespacehashing.html">hashing</a></td></tr>
-<tr class="memdesc:d6/d0c/namespacehashing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hashing algorithms. <br /></td></tr>
+<tr class="memdesc:d6/d0c/namespacehashing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used for assert. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d43/namespace_m_d5.html">MD5</a></td></tr>
 <tr class="memdesc:dd/d43/namespace_m_d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for the <a href="https://en.wikipedia.org/wiki/MD5" target="_blank">MD5</a> algorithm implementation. <br /></td></tr>
@@ -206,10 +207,10 @@ Algorithm</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void* Pointer to the <a class="el" href="../../dd/d43/namespace_m_d5.html" title="Functions for the MD5 algorithm implementation.">MD5</a> signature </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  287</span>                                     {</div>
-<div class="line"><span class="lineno">  288</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="#a5341431cef7fcfc33794326e1deb2425">hash_bs</a>(&amp;message[0], message.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>());</div>
-<div class="line"><span class="lineno">  289</span>}</div>
-<div class="ttc" id="amd5_8cpp_html_a5341431cef7fcfc33794326e1deb2425"><div class="ttname"><a href="#a5341431cef7fcfc33794326e1deb2425">hashing::md5::hash_bs</a></div><div class="ttdeci">void * hash_bs(const void *input_bs, uint64_t input_size)</div><div class="ttdoc">The MD5 algorithm itself, taking in a bytestring.</div><div class="ttdef"><b>Definition</b> md5.cpp:138</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  288</span>                                     {</div>
+<div class="line"><span class="lineno">  289</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="#a5341431cef7fcfc33794326e1deb2425">hash_bs</a>(&amp;message[0], message.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>());</div>
+<div class="line"><span class="lineno">  290</span>}</div>
+<div class="ttc" id="amd5_8cpp_html_a5341431cef7fcfc33794326e1deb2425"><div class="ttname"><a href="#a5341431cef7fcfc33794326e1deb2425">hashing::md5::hash_bs</a></div><div class="ttdeci">void * hash_bs(const void *input_bs, uint64_t input_size)</div><div class="ttdoc">The MD5 algorithm itself, taking in a bytestring.</div><div class="ttdef"><b>Definition</b> md5.cpp:139</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">std::string::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -251,156 +252,156 @@ Here is the call graph for this function:</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(64):</div>
 <div class="line">    print(floor(2**32 * abs(sin(i+1))))</div>
-</div><!-- fragment --><div class="fragment"><div class="line"><span class="lineno">  138</span>                                                         {</div>
-<div class="line"><span class="lineno">  139</span>    <span class="keyword">auto</span>* input = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>uint8_t*<span class="keyword">&gt;</span>(input_bs);</div>
-<div class="line"><span class="lineno">  140</span> </div>
-<div class="line"><span class="lineno">  141</span>    <span class="comment">// Step 0: Initial Data (Those are decided in the MD5 protocol)</span></div>
-<div class="line"><span class="lineno">  142</span>    <span class="comment">// s is the shift used in the leftrotate each round</span></div>
-<div class="line"><span class="lineno">  143</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;uint32_t, 64&gt;</a> s = {</div>
-<div class="line"><span class="lineno">  144</span>        7, 12, 17, 22, 7, 12, 17, 22, 7, 12, 17, 22, 7, 12, 17, 22,</div>
-<div class="line"><span class="lineno">  145</span>        5, 9,  14, 20, 5, 9,  14, 20, 5, 9,  14, 20, 5, 9,  14, 20,</div>
-<div class="line"><span class="lineno">  146</span>        4, 11, 16, 23, 4, 11, 16, 23, 4, 11, 16, 23, 4, 11, 16, 23,</div>
-<div class="line"><span class="lineno">  147</span>        6, 10, 15, 21, 6, 10, 15, 21, 6, 10, 15, 21, 6, 10, 15, 21};</div>
-<div class="line"><span class="lineno">  148</span>    <span class="comment">// K is pseudo-random values used each round</span></div>
-<div class="line"><span class="lineno">  149</span>    <span class="comment">// The values can be obtained by the following python code:</span></div>
-<div class="line"><span class="lineno">  150</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  151</span><span class="comment">    /**</span></div>
-<div class="line"><span class="lineno">  152</span><span class="comment">     * @brief Values of K are pseudo-random and used to &quot;salt&quot; each round</span></div>
-<div class="line"><span class="lineno">  153</span><span class="comment">     * The values can be obtained by the following python code</span></div>
-<div class="line"><span class="lineno">  154</span><span class="comment">     * @code{.py}</span></div>
-<div class="line"><span class="lineno">  155</span><span class="comment">     * from math import floor, sin</span></div>
-<div class="line"><span class="lineno">  156</span><span class="comment">     *</span></div>
-<div class="line"><span class="lineno">  157</span><span class="comment">     * for i in range(64):</span></div>
-<div class="line"><span class="lineno">  158</span><span class="comment">     *     print(floor(2**32 * abs(sin(i+1))))</span></div>
-<div class="line"><span class="lineno">  159</span><span class="comment">     * @endcode</span></div>
-<div class="line"><span class="lineno">  160</span><span class="comment">     */</span></div>
-<div class="line"><span class="lineno">  161</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;uint32_t, 64&gt;</a> K = {</div>
-<div class="line"><span class="lineno">  162</span>        3614090360, 3905402710, 606105819,  3250441966, 4118548399, 1200080426,</div>
-<div class="line"><span class="lineno">  163</span>        2821735955, 4249261313, 1770035416, 2336552879, 4294925233, 2304563134,</div>
-<div class="line"><span class="lineno">  164</span>        1804603682, 4254626195, 2792965006, 1236535329, 4129170786, 3225465664,</div>
-<div class="line"><span class="lineno">  165</span>        643717713,  3921069994, 3593408605, 38016083,   3634488961, 3889429448,</div>
-<div class="line"><span class="lineno">  166</span>        568446438,  3275163606, 4107603335, 1163531501, 2850285829, 4243563512,</div>
-<div class="line"><span class="lineno">  167</span>        1735328473, 2368359562, 4294588738, 2272392833, 1839030562, 4259657740,</div>
-<div class="line"><span class="lineno">  168</span>        2763975236, 1272893353, 4139469664, 3200236656, 681279174,  3936430074,</div>
-<div class="line"><span class="lineno">  169</span>        3572445317, 76029189,   3654602809, 3873151461, 530742520,  3299628645,</div>
-<div class="line"><span class="lineno">  170</span>        4096336452, 1126891415, 2878612391, 4237533241, 1700485571, 2399980690,</div>
-<div class="line"><span class="lineno">  171</span>        4293915773, 2240044497, 1873313359, 4264355552, 2734768916, 1309151649,</div>
-<div class="line"><span class="lineno">  172</span>        4149444226, 3174756917, 718787259,  3951481745};</div>
-<div class="line"><span class="lineno">  173</span> </div>
-<div class="line"><span class="lineno">  174</span>    <span class="comment">// The initial 128-bit state</span></div>
-<div class="line"><span class="lineno">  175</span>    uint32_t a0 = 0x67452301, A = 0;</div>
-<div class="line"><span class="lineno">  176</span>    uint32_t b0 = 0xefcdab89, B = 0;</div>
-<div class="line"><span class="lineno">  177</span>    uint32_t c0 = 0x98badcfe, C = 0;</div>
-<div class="line"><span class="lineno">  178</span>    uint32_t d0 = 0x10325476, D = 0;</div>
-<div class="line"><span class="lineno">  179</span> </div>
-<div class="line"><span class="lineno">  180</span>    <span class="comment">// Step 1: Processing the bytestring</span></div>
-<div class="line"><span class="lineno">  181</span> </div>
-<div class="line"><span class="lineno">  182</span>    <span class="comment">// First compute the size the padded message will have</span></div>
-<div class="line"><span class="lineno">  183</span>    <span class="comment">// so it is possible to allocate the right amount of memory</span></div>
-<div class="line"><span class="lineno">  184</span>    uint64_t padded_message_size = 0;</div>
-<div class="line"><span class="lineno">  185</span>    <span class="keywordflow">if</span> (input_size % 64 &lt; 56) {</div>
-<div class="line"><span class="lineno">  186</span>        padded_message_size = input_size + 64 - (input_size % 64);</div>
-<div class="line"><span class="lineno">  187</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  188</span>        padded_message_size = input_size + 128 - (input_size % 64);</div>
-<div class="line"><span class="lineno">  189</span>    }</div>
-<div class="line"><span class="lineno">  190</span> </div>
-<div class="line"><span class="lineno">  191</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint8_t&gt;</a> padded_message(padded_message_size);</div>
-<div class="line"><span class="lineno">  192</span> </div>
-<div class="line"><span class="lineno">  193</span>    <span class="comment">// Beginning of the padded message is the original message</span></div>
-<div class="line"><span class="lineno">  194</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/copy.html">std::copy</a>(input, input + input_size, padded_message.begin());</div>
-<div class="line"><span class="lineno">  195</span> </div>
-<div class="line"><span class="lineno">  196</span>    <span class="comment">// Afterwards comes a single 1 bit and then only zeroes</span></div>
-<div class="line"><span class="lineno">  197</span>    padded_message[input_size] = 1 &lt;&lt; 7;  <span class="comment">// 10000000</span></div>
-<div class="line"><span class="lineno">  198</span>    <span class="keywordflow">for</span> (uint64_t i = input_size; i % 64 != 56; i++) {</div>
-<div class="line"><span class="lineno">  199</span>        <span class="keywordflow">if</span> (i == input_size) {</div>
-<div class="line"><span class="lineno">  200</span>            <span class="keywordflow">continue</span>;  <span class="comment">// pass first iteration</span></div>
-<div class="line"><span class="lineno">  201</span>        }</div>
-<div class="line"><span class="lineno">  202</span>        padded_message[i] = 0;</div>
-<div class="line"><span class="lineno">  203</span>    }</div>
-<div class="line"><span class="lineno">  204</span> </div>
-<div class="line"><span class="lineno">  205</span>    <span class="comment">// We then have to add the 64-bit size of the message at the end</span></div>
-<div class="line"><span class="lineno">  206</span>    <span class="comment">// When there is a conversion from int to bytestring or vice-versa</span></div>
-<div class="line"><span class="lineno">  207</span>    <span class="comment">// We always need to make sure it is little endian</span></div>
-<div class="line"><span class="lineno">  208</span>    uint64_t input_bitsize_le = <a class="code hl_function" href="#a6be48c1e6e742f9bd329f501d61dcaef">toLittleEndian64</a>(input_size * 8);</div>
-<div class="line"><span class="lineno">  209</span>    <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; 8; i++) {</div>
-<div class="line"><span class="lineno">  210</span>        padded_message[padded_message_size - 8 + i] =</div>
-<div class="line"><span class="lineno">  211</span>            (input_bitsize_le &gt;&gt; (56 - 8 * i)) &amp; 0xFF;</div>
-<div class="line"><span class="lineno">  212</span>    }</div>
-<div class="line"><span class="lineno">  213</span> </div>
-<div class="line"><span class="lineno">  214</span>    <span class="comment">// Already allocate memory for blocks</span></div>
-<div class="line"><span class="lineno">  215</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;uint32_t, 16&gt;</a> blocks{};</div>
-<div class="line"><span class="lineno">  216</span> </div>
-<div class="line"><span class="lineno">  217</span>    <span class="comment">// Rounds</span></div>
-<div class="line"><span class="lineno">  218</span>    <span class="keywordflow">for</span> (uint64_t chunk = 0; chunk * 64 &lt; padded_message_size; chunk++) {</div>
-<div class="line"><span class="lineno">  219</span>        <span class="comment">// First, build the 16 32-bits blocks from the chunk</span></div>
-<div class="line"><span class="lineno">  220</span>        <span class="keywordflow">for</span> (uint8_t bid = 0; bid &lt; 16; bid++) {</div>
-<div class="line"><span class="lineno">  221</span>            blocks[bid] = 0;</div>
-<div class="line"><span class="lineno">  222</span> </div>
-<div class="line"><span class="lineno">  223</span>            <span class="comment">// Having to build a 32-bit word from 4-bit words</span></div>
-<div class="line"><span class="lineno">  224</span>            <span class="comment">// Add each and shift them to the left</span></div>
-<div class="line"><span class="lineno">  225</span>            <span class="keywordflow">for</span> (uint8_t cid = 0; cid &lt; 4; cid++) {</div>
-<div class="line"><span class="lineno">  226</span>                blocks[bid] = (blocks[bid] &lt;&lt; 8) +</div>
-<div class="line"><span class="lineno">  227</span>                              padded_message[chunk * 64 + bid * 4 + cid];</div>
-<div class="line"><span class="lineno">  228</span>            }</div>
-<div class="line"><span class="lineno">  229</span>        }</div>
-<div class="line"><span class="lineno">  230</span> </div>
-<div class="line"><span class="lineno">  231</span>        A = a0;</div>
-<div class="line"><span class="lineno">  232</span>        B = b0;</div>
-<div class="line"><span class="lineno">  233</span>        C = c0;</div>
-<div class="line"><span class="lineno">  234</span>        D = d0;</div>
-<div class="line"><span class="lineno">  235</span> </div>
-<div class="line"><span class="lineno">  236</span>        <span class="comment">// Main &quot;hashing&quot; loop</span></div>
-<div class="line"><span class="lineno">  237</span>        <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; 64; i++) {</div>
-<div class="line"><span class="lineno">  238</span>            uint32_t F = 0, <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = 0;</div>
-<div class="line"><span class="lineno">  239</span>            <span class="keywordflow">if</span> (i &lt; 16) {</div>
-<div class="line"><span class="lineno">  240</span>                F = (B &amp; C) | ((~B) &amp; D);</div>
-<div class="line"><span class="lineno">  241</span>                <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = i;</div>
-<div class="line"><span class="lineno">  242</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (i &lt; 32) {</div>
-<div class="line"><span class="lineno">  243</span>                F = (D &amp; B) | ((~D) &amp; C);</div>
-<div class="line"><span class="lineno">  244</span>                <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = (5 * i + 1) % 16;</div>
-<div class="line"><span class="lineno">  245</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (i &lt; 48) {</div>
-<div class="line"><span class="lineno">  246</span>                F = B ^ C ^ D;</div>
-<div class="line"><span class="lineno">  247</span>                <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = (3 * i + 5) % 16;</div>
-<div class="line"><span class="lineno">  248</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  249</span>                F = C ^ (B | (~D));</div>
-<div class="line"><span class="lineno">  250</span>                <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = (7 * i) % 16;</div>
-<div class="line"><span class="lineno">  251</span>            }</div>
-<div class="line"><span class="lineno">  252</span> </div>
-<div class="line"><span class="lineno">  253</span>            <span class="comment">// Update the accumulators</span></div>
-<div class="line"><span class="lineno">  254</span>            F += A + K[i] + <a class="code hl_function" href="#a694712c9665051ba52b686387b87a689">toLittleEndian32</a>(blocks[g]);</div>
-<div class="line"><span class="lineno">  255</span> </div>
-<div class="line"><span class="lineno">  256</span>            A = D;</div>
-<div class="line"><span class="lineno">  257</span>            D = C;</div>
-<div class="line"><span class="lineno">  258</span>            C = B;</div>
-<div class="line"><span class="lineno">  259</span>            B += <a class="code hl_function" href="#add2bf982d5dd64a45d13cba52c2b371d">leftRotate32bits</a>(F, s[i]);</div>
-<div class="line"><span class="lineno">  260</span>        }</div>
-<div class="line"><span class="lineno">  261</span>        <span class="comment">// Update the state with this chunk&#39;s hash</span></div>
-<div class="line"><span class="lineno">  262</span>        a0 += A;</div>
-<div class="line"><span class="lineno">  263</span>        b0 += B;</div>
-<div class="line"><span class="lineno">  264</span>        c0 += C;</div>
-<div class="line"><span class="lineno">  265</span>        d0 += D;</div>
-<div class="line"><span class="lineno">  266</span>    }</div>
-<div class="line"><span class="lineno">  267</span> </div>
-<div class="line"><span class="lineno">  268</span>    <span class="comment">// Build signature from state</span></div>
-<div class="line"><span class="lineno">  269</span>    <span class="comment">// Note, any type could be used for the signature</span></div>
-<div class="line"><span class="lineno">  270</span>    <span class="comment">// uint8_t was used to make the 16 bytes obvious</span></div>
-<div class="line"><span class="lineno">  271</span>    <span class="comment">// The sig needs to be little endian</span></div>
-<div class="line"><span class="lineno">  272</span>    <span class="keyword">auto</span>* sig = <span class="keyword">new</span> uint8_t[16];</div>
-<div class="line"><span class="lineno">  273</span>    <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; 4; i++) {</div>
-<div class="line"><span class="lineno">  274</span>        sig[i] = (a0 &gt;&gt; (8 * i)) &amp; 0xFF;</div>
-<div class="line"><span class="lineno">  275</span>        sig[i + 4] = (b0 &gt;&gt; (8 * i)) &amp; 0xFF;</div>
-<div class="line"><span class="lineno">  276</span>        sig[i + 8] = (c0 &gt;&gt; (8 * i)) &amp; 0xFF;</div>
-<div class="line"><span class="lineno">  277</span>        sig[i + 12] = (d0 &gt;&gt; (8 * i)) &amp; 0xFF;</div>
-<div class="line"><span class="lineno">  278</span>    }</div>
-<div class="line"><span class="lineno">  279</span> </div>
-<div class="line"><span class="lineno">  280</span>    <span class="keywordflow">return</span> sig;</div>
-<div class="line"><span class="lineno">  281</span>}</div>
+</div><!-- fragment --><div class="fragment"><div class="line"><span class="lineno">  139</span>                                                         {</div>
+<div class="line"><span class="lineno">  140</span>    <span class="keyword">auto</span>* input = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>uint8_t*<span class="keyword">&gt;</span>(input_bs);</div>
+<div class="line"><span class="lineno">  141</span> </div>
+<div class="line"><span class="lineno">  142</span>    <span class="comment">// Step 0: Initial Data (Those are decided in the MD5 protocol)</span></div>
+<div class="line"><span class="lineno">  143</span>    <span class="comment">// s is the shift used in the leftrotate each round</span></div>
+<div class="line"><span class="lineno">  144</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;uint32_t, 64&gt;</a> s = {</div>
+<div class="line"><span class="lineno">  145</span>        7, 12, 17, 22, 7, 12, 17, 22, 7, 12, 17, 22, 7, 12, 17, 22,</div>
+<div class="line"><span class="lineno">  146</span>        5, 9,  14, 20, 5, 9,  14, 20, 5, 9,  14, 20, 5, 9,  14, 20,</div>
+<div class="line"><span class="lineno">  147</span>        4, 11, 16, 23, 4, 11, 16, 23, 4, 11, 16, 23, 4, 11, 16, 23,</div>
+<div class="line"><span class="lineno">  148</span>        6, 10, 15, 21, 6, 10, 15, 21, 6, 10, 15, 21, 6, 10, 15, 21};</div>
+<div class="line"><span class="lineno">  149</span>    <span class="comment">// K is pseudo-random values used each round</span></div>
+<div class="line"><span class="lineno">  150</span>    <span class="comment">// The values can be obtained by the following python code:</span></div>
+<div class="line"><span class="lineno">  151</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">  152</span><span class="comment">    /**</span></div>
+<div class="line"><span class="lineno">  153</span><span class="comment">     * @brief Values of K are pseudo-random and used to &quot;salt&quot; each round</span></div>
+<div class="line"><span class="lineno">  154</span><span class="comment">     * The values can be obtained by the following python code</span></div>
+<div class="line"><span class="lineno">  155</span><span class="comment">     * @code{.py}</span></div>
+<div class="line"><span class="lineno">  156</span><span class="comment">     * from math import floor, sin</span></div>
+<div class="line"><span class="lineno">  157</span><span class="comment">     *</span></div>
+<div class="line"><span class="lineno">  158</span><span class="comment">     * for i in range(64):</span></div>
+<div class="line"><span class="lineno">  159</span><span class="comment">     *     print(floor(2**32 * abs(sin(i+1))))</span></div>
+<div class="line"><span class="lineno">  160</span><span class="comment">     * @endcode</span></div>
+<div class="line"><span class="lineno">  161</span><span class="comment">     */</span></div>
+<div class="line"><span class="lineno">  162</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;uint32_t, 64&gt;</a> K = {</div>
+<div class="line"><span class="lineno">  163</span>        3614090360, 3905402710, 606105819,  3250441966, 4118548399, 1200080426,</div>
+<div class="line"><span class="lineno">  164</span>        2821735955, 4249261313, 1770035416, 2336552879, 4294925233, 2304563134,</div>
+<div class="line"><span class="lineno">  165</span>        1804603682, 4254626195, 2792965006, 1236535329, 4129170786, 3225465664,</div>
+<div class="line"><span class="lineno">  166</span>        643717713,  3921069994, 3593408605, 38016083,   3634488961, 3889429448,</div>
+<div class="line"><span class="lineno">  167</span>        568446438,  3275163606, 4107603335, 1163531501, 2850285829, 4243563512,</div>
+<div class="line"><span class="lineno">  168</span>        1735328473, 2368359562, 4294588738, 2272392833, 1839030562, 4259657740,</div>
+<div class="line"><span class="lineno">  169</span>        2763975236, 1272893353, 4139469664, 3200236656, 681279174,  3936430074,</div>
+<div class="line"><span class="lineno">  170</span>        3572445317, 76029189,   3654602809, 3873151461, 530742520,  3299628645,</div>
+<div class="line"><span class="lineno">  171</span>        4096336452, 1126891415, 2878612391, 4237533241, 1700485571, 2399980690,</div>
+<div class="line"><span class="lineno">  172</span>        4293915773, 2240044497, 1873313359, 4264355552, 2734768916, 1309151649,</div>
+<div class="line"><span class="lineno">  173</span>        4149444226, 3174756917, 718787259,  3951481745};</div>
+<div class="line"><span class="lineno">  174</span> </div>
+<div class="line"><span class="lineno">  175</span>    <span class="comment">// The initial 128-bit state</span></div>
+<div class="line"><span class="lineno">  176</span>    uint32_t a0 = 0x67452301, A = 0;</div>
+<div class="line"><span class="lineno">  177</span>    uint32_t b0 = 0xefcdab89, B = 0;</div>
+<div class="line"><span class="lineno">  178</span>    uint32_t c0 = 0x98badcfe, C = 0;</div>
+<div class="line"><span class="lineno">  179</span>    uint32_t d0 = 0x10325476, D = 0;</div>
+<div class="line"><span class="lineno">  180</span> </div>
+<div class="line"><span class="lineno">  181</span>    <span class="comment">// Step 1: Processing the bytestring</span></div>
+<div class="line"><span class="lineno">  182</span> </div>
+<div class="line"><span class="lineno">  183</span>    <span class="comment">// First compute the size the padded message will have</span></div>
+<div class="line"><span class="lineno">  184</span>    <span class="comment">// so it is possible to allocate the right amount of memory</span></div>
+<div class="line"><span class="lineno">  185</span>    uint64_t padded_message_size = 0;</div>
+<div class="line"><span class="lineno">  186</span>    <span class="keywordflow">if</span> (input_size % 64 &lt; 56) {</div>
+<div class="line"><span class="lineno">  187</span>        padded_message_size = input_size + 64 - (input_size % 64);</div>
+<div class="line"><span class="lineno">  188</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  189</span>        padded_message_size = input_size + 128 - (input_size % 64);</div>
+<div class="line"><span class="lineno">  190</span>    }</div>
+<div class="line"><span class="lineno">  191</span> </div>
+<div class="line"><span class="lineno">  192</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint8_t&gt;</a> padded_message(padded_message_size);</div>
+<div class="line"><span class="lineno">  193</span> </div>
+<div class="line"><span class="lineno">  194</span>    <span class="comment">// Beginning of the padded message is the original message</span></div>
+<div class="line"><span class="lineno">  195</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/copy.html">std::copy</a>(input, input + input_size, padded_message.begin());</div>
+<div class="line"><span class="lineno">  196</span> </div>
+<div class="line"><span class="lineno">  197</span>    <span class="comment">// Afterwards comes a single 1 bit and then only zeroes</span></div>
+<div class="line"><span class="lineno">  198</span>    padded_message[input_size] = 1 &lt;&lt; 7;  <span class="comment">// 10000000</span></div>
+<div class="line"><span class="lineno">  199</span>    <span class="keywordflow">for</span> (uint64_t i = input_size; i % 64 != 56; i++) {</div>
+<div class="line"><span class="lineno">  200</span>        <span class="keywordflow">if</span> (i == input_size) {</div>
+<div class="line"><span class="lineno">  201</span>            <span class="keywordflow">continue</span>;  <span class="comment">// pass first iteration</span></div>
+<div class="line"><span class="lineno">  202</span>        }</div>
+<div class="line"><span class="lineno">  203</span>        padded_message[i] = 0;</div>
+<div class="line"><span class="lineno">  204</span>    }</div>
+<div class="line"><span class="lineno">  205</span> </div>
+<div class="line"><span class="lineno">  206</span>    <span class="comment">// We then have to add the 64-bit size of the message at the end</span></div>
+<div class="line"><span class="lineno">  207</span>    <span class="comment">// When there is a conversion from int to bytestring or vice-versa</span></div>
+<div class="line"><span class="lineno">  208</span>    <span class="comment">// We always need to make sure it is little endian</span></div>
+<div class="line"><span class="lineno">  209</span>    uint64_t input_bitsize_le = <a class="code hl_function" href="#a6be48c1e6e742f9bd329f501d61dcaef">toLittleEndian64</a>(input_size * 8);</div>
+<div class="line"><span class="lineno">  210</span>    <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; 8; i++) {</div>
+<div class="line"><span class="lineno">  211</span>        padded_message[padded_message_size - 8 + i] =</div>
+<div class="line"><span class="lineno">  212</span>            (input_bitsize_le &gt;&gt; (56 - 8 * i)) &amp; 0xFF;</div>
+<div class="line"><span class="lineno">  213</span>    }</div>
+<div class="line"><span class="lineno">  214</span> </div>
+<div class="line"><span class="lineno">  215</span>    <span class="comment">// Already allocate memory for blocks</span></div>
+<div class="line"><span class="lineno">  216</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;uint32_t, 16&gt;</a> blocks{};</div>
+<div class="line"><span class="lineno">  217</span> </div>
+<div class="line"><span class="lineno">  218</span>    <span class="comment">// Rounds</span></div>
+<div class="line"><span class="lineno">  219</span>    <span class="keywordflow">for</span> (uint64_t chunk = 0; chunk * 64 &lt; padded_message_size; chunk++) {</div>
+<div class="line"><span class="lineno">  220</span>        <span class="comment">// First, build the 16 32-bits blocks from the chunk</span></div>
+<div class="line"><span class="lineno">  221</span>        <span class="keywordflow">for</span> (uint8_t bid = 0; bid &lt; 16; bid++) {</div>
+<div class="line"><span class="lineno">  222</span>            blocks[bid] = 0;</div>
+<div class="line"><span class="lineno">  223</span> </div>
+<div class="line"><span class="lineno">  224</span>            <span class="comment">// Having to build a 32-bit word from 4-bit words</span></div>
+<div class="line"><span class="lineno">  225</span>            <span class="comment">// Add each and shift them to the left</span></div>
+<div class="line"><span class="lineno">  226</span>            <span class="keywordflow">for</span> (uint8_t cid = 0; cid &lt; 4; cid++) {</div>
+<div class="line"><span class="lineno">  227</span>                blocks[bid] = (blocks[bid] &lt;&lt; 8) +</div>
+<div class="line"><span class="lineno">  228</span>                              padded_message[chunk * 64 + bid * 4 + cid];</div>
+<div class="line"><span class="lineno">  229</span>            }</div>
+<div class="line"><span class="lineno">  230</span>        }</div>
+<div class="line"><span class="lineno">  231</span> </div>
+<div class="line"><span class="lineno">  232</span>        A = a0;</div>
+<div class="line"><span class="lineno">  233</span>        B = b0;</div>
+<div class="line"><span class="lineno">  234</span>        C = c0;</div>
+<div class="line"><span class="lineno">  235</span>        D = d0;</div>
+<div class="line"><span class="lineno">  236</span> </div>
+<div class="line"><span class="lineno">  237</span>        <span class="comment">// Main &quot;hashing&quot; loop</span></div>
+<div class="line"><span class="lineno">  238</span>        <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; 64; i++) {</div>
+<div class="line"><span class="lineno">  239</span>            uint32_t F = 0, <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = 0;</div>
+<div class="line"><span class="lineno">  240</span>            <span class="keywordflow">if</span> (i &lt; 16) {</div>
+<div class="line"><span class="lineno">  241</span>                F = (B &amp; C) | ((~B) &amp; D);</div>
+<div class="line"><span class="lineno">  242</span>                <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = i;</div>
+<div class="line"><span class="lineno">  243</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (i &lt; 32) {</div>
+<div class="line"><span class="lineno">  244</span>                F = (D &amp; B) | ((~D) &amp; C);</div>
+<div class="line"><span class="lineno">  245</span>                <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = (5 * i + 1) % 16;</div>
+<div class="line"><span class="lineno">  246</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (i &lt; 48) {</div>
+<div class="line"><span class="lineno">  247</span>                F = B ^ C ^ D;</div>
+<div class="line"><span class="lineno">  248</span>                <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = (3 * i + 5) % 16;</div>
+<div class="line"><span class="lineno">  249</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  250</span>                F = C ^ (B | (~D));</div>
+<div class="line"><span class="lineno">  251</span>                <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = (7 * i) % 16;</div>
+<div class="line"><span class="lineno">  252</span>            }</div>
+<div class="line"><span class="lineno">  253</span> </div>
+<div class="line"><span class="lineno">  254</span>            <span class="comment">// Update the accumulators</span></div>
+<div class="line"><span class="lineno">  255</span>            F += A + K[i] + <a class="code hl_function" href="#a694712c9665051ba52b686387b87a689">toLittleEndian32</a>(blocks[g]);</div>
+<div class="line"><span class="lineno">  256</span> </div>
+<div class="line"><span class="lineno">  257</span>            A = D;</div>
+<div class="line"><span class="lineno">  258</span>            D = C;</div>
+<div class="line"><span class="lineno">  259</span>            C = B;</div>
+<div class="line"><span class="lineno">  260</span>            B += <a class="code hl_function" href="#add2bf982d5dd64a45d13cba52c2b371d">leftRotate32bits</a>(F, s[i]);</div>
+<div class="line"><span class="lineno">  261</span>        }</div>
+<div class="line"><span class="lineno">  262</span>        <span class="comment">// Update the state with this chunk&#39;s hash</span></div>
+<div class="line"><span class="lineno">  263</span>        a0 += A;</div>
+<div class="line"><span class="lineno">  264</span>        b0 += B;</div>
+<div class="line"><span class="lineno">  265</span>        c0 += C;</div>
+<div class="line"><span class="lineno">  266</span>        d0 += D;</div>
+<div class="line"><span class="lineno">  267</span>    }</div>
+<div class="line"><span class="lineno">  268</span> </div>
+<div class="line"><span class="lineno">  269</span>    <span class="comment">// Build signature from state</span></div>
+<div class="line"><span class="lineno">  270</span>    <span class="comment">// Note, any type could be used for the signature</span></div>
+<div class="line"><span class="lineno">  271</span>    <span class="comment">// uint8_t was used to make the 16 bytes obvious</span></div>
+<div class="line"><span class="lineno">  272</span>    <span class="comment">// The sig needs to be little endian</span></div>
+<div class="line"><span class="lineno">  273</span>    <span class="keyword">auto</span>* sig = <span class="keyword">new</span> uint8_t[16];</div>
+<div class="line"><span class="lineno">  274</span>    <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; 4; i++) {</div>
+<div class="line"><span class="lineno">  275</span>        sig[i] = (a0 &gt;&gt; (8 * i)) &amp; 0xFF;</div>
+<div class="line"><span class="lineno">  276</span>        sig[i + 4] = (b0 &gt;&gt; (8 * i)) &amp; 0xFF;</div>
+<div class="line"><span class="lineno">  277</span>        sig[i + 8] = (c0 &gt;&gt; (8 * i)) &amp; 0xFF;</div>
+<div class="line"><span class="lineno">  278</span>        sig[i + 12] = (d0 &gt;&gt; (8 * i)) &amp; 0xFF;</div>
+<div class="line"><span class="lineno">  279</span>    }</div>
+<div class="line"><span class="lineno">  280</span> </div>
+<div class="line"><span class="lineno">  281</span>    <span class="keywordflow">return</span> sig;</div>
+<div class="line"><span class="lineno">  282</span>}</div>
 <div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
 <div class="ttc" id="acomposite__simpson__rule_8cpp_html_a2f67508d5f392b0321772169342c98ad"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">numerical_methods::simpson_method::g</a></div><div class="ttdeci">double g(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:115</div></div>
 <div class="ttc" id="acopy_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/copy.html">std::copy</a></div><div class="ttdeci">T copy(T... args)</div></div>
-<div class="ttc" id="amd5_8cpp_html_a694712c9665051ba52b686387b87a689"><div class="ttname"><a href="#a694712c9665051ba52b686387b87a689">hashing::md5::toLittleEndian32</a></div><div class="ttdeci">uint32_t toLittleEndian32(uint32_t n)</div><div class="ttdoc">Sets 32-bit integer to little-endian if needed.</div><div class="ttdef"><b>Definition</b> md5.cpp:89</div></div>
-<div class="ttc" id="amd5_8cpp_html_a6be48c1e6e742f9bd329f501d61dcaef"><div class="ttname"><a href="#a6be48c1e6e742f9bd329f501d61dcaef">hashing::md5::toLittleEndian64</a></div><div class="ttdeci">uint64_t toLittleEndian64(uint64_t n)</div><div class="ttdoc">Sets 64-bit integer to little-endian if needed.</div><div class="ttdef"><b>Definition</b> md5.cpp:102</div></div>
-<div class="ttc" id="amd5_8cpp_html_add2bf982d5dd64a45d13cba52c2b371d"><div class="ttname"><a href="#add2bf982d5dd64a45d13cba52c2b371d">hashing::md5::leftRotate32bits</a></div><div class="ttdeci">uint32_t leftRotate32bits(uint32_t n, std::size_t rotate)</div><div class="ttdoc">Rotates the bits of a 32-bit unsigned integer.</div><div class="ttdef"><b>Definition</b> md5.cpp:66</div></div>
+<div class="ttc" id="amd5_8cpp_html_a694712c9665051ba52b686387b87a689"><div class="ttname"><a href="#a694712c9665051ba52b686387b87a689">hashing::md5::toLittleEndian32</a></div><div class="ttdeci">uint32_t toLittleEndian32(uint32_t n)</div><div class="ttdoc">Sets 32-bit integer to little-endian if needed.</div><div class="ttdef"><b>Definition</b> md5.cpp:90</div></div>
+<div class="ttc" id="amd5_8cpp_html_a6be48c1e6e742f9bd329f501d61dcaef"><div class="ttname"><a href="#a6be48c1e6e742f9bd329f501d61dcaef">hashing::md5::toLittleEndian64</a></div><div class="ttdeci">uint64_t toLittleEndian64(uint64_t n)</div><div class="ttdoc">Sets 64-bit integer to little-endian if needed.</div><div class="ttdef"><b>Definition</b> md5.cpp:103</div></div>
+<div class="ttc" id="amd5_8cpp_html_add2bf982d5dd64a45d13cba52c2b371d"><div class="ttname"><a href="#add2bf982d5dd64a45d13cba52c2b371d">hashing::md5::leftRotate32bits</a></div><div class="ttdeci">uint32_t leftRotate32bits(uint32_t n, std::size_t rotate)</div><div class="ttdoc">Rotates the bits of a 32-bit unsigned integer.</div><div class="ttdef"><b>Definition</b> md5.cpp:67</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -435,34 +436,34 @@ Here is the call graph for this function:</div>
 
 <p>Puts user in a loop where inputs can be given and <a class="el" href="../../dd/d43/namespace_m_d5.html" title="Functions for the MD5 algorithm implementation.">MD5</a> hash will be computed and printed. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  351</span>                          {</div>
-<div class="line"><span class="lineno">  352</span>    <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
-<div class="line"><span class="lineno">  353</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> input;</div>
-<div class="line"><span class="lineno">  354</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter a message to be hashed (Ctrl-C to exit): &quot;</span></div>
-<div class="line"><span class="lineno">  355</span>                  &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  356</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/getline.html">std::getline</a>(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a>, input);</div>
-<div class="line"><span class="lineno">  357</span>        <span class="keywordtype">void</span>* sig = <a class="code hl_function" href="#a88705fab5f92adf3427b4cf76ff33edb">hashing::md5::hash</a>(input);</div>
-<div class="line"><span class="lineno">  358</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Hash is: &quot;</span> &lt;&lt; <a class="code hl_function" href="#aaee69c6136a841043f956de32116e348">hashing::md5::sig2hex</a>(sig) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  359</span> </div>
-<div class="line"><span class="lineno">  360</span>        <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
-<div class="line"><span class="lineno">  361</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Want to enter another message? (y/n) &quot;</span>;</div>
-<div class="line"><span class="lineno">  362</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/getline.html">std::getline</a>(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a>, input);</div>
-<div class="line"><span class="lineno">  363</span>            <span class="keywordflow">if</span> (input.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/compare.html">compare</a>(<span class="stringliteral">&quot;y&quot;</span>) == 0) {</div>
-<div class="line"><span class="lineno">  364</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  365</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (input.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/compare.html">compare</a>(<span class="stringliteral">&quot;n&quot;</span>) == 0) {</div>
-<div class="line"><span class="lineno">  366</span>                <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  367</span>            }</div>
-<div class="line"><span class="lineno">  368</span>        }</div>
-<div class="line"><span class="lineno">  369</span>    }</div>
-<div class="line"><span class="lineno">  370</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  352</span>                          {</div>
+<div class="line"><span class="lineno">  353</span>    <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
+<div class="line"><span class="lineno">  354</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> input;</div>
+<div class="line"><span class="lineno">  355</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter a message to be hashed (Ctrl-C to exit): &quot;</span></div>
+<div class="line"><span class="lineno">  356</span>                  &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  357</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/getline.html">std::getline</a>(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a>, input);</div>
+<div class="line"><span class="lineno">  358</span>        <span class="keywordtype">void</span>* sig = <a class="code hl_function" href="#a88705fab5f92adf3427b4cf76ff33edb">hashing::md5::hash</a>(input);</div>
+<div class="line"><span class="lineno">  359</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Hash is: &quot;</span> &lt;&lt; <a class="code hl_function" href="#aaee69c6136a841043f956de32116e348">hashing::md5::sig2hex</a>(sig) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  360</span> </div>
+<div class="line"><span class="lineno">  361</span>        <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
+<div class="line"><span class="lineno">  362</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Want to enter another message? (y/n) &quot;</span>;</div>
+<div class="line"><span class="lineno">  363</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/getline.html">std::getline</a>(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a>, input);</div>
+<div class="line"><span class="lineno">  364</span>            <span class="keywordflow">if</span> (input.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/compare.html">compare</a>(<span class="stringliteral">&quot;y&quot;</span>) == 0) {</div>
+<div class="line"><span class="lineno">  365</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  366</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (input.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/compare.html">compare</a>(<span class="stringliteral">&quot;n&quot;</span>) == 0) {</div>
+<div class="line"><span class="lineno">  367</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  368</span>            }</div>
+<div class="line"><span class="lineno">  369</span>        }</div>
+<div class="line"><span class="lineno">  370</span>    }</div>
+<div class="line"><span class="lineno">  371</span>}</div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
 <div class="ttc" id="acompare_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/compare.html">std::string::compare</a></div><div class="ttdeci">T compare(T... args)</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="agetline_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/getline.html">std::getline</a></div><div class="ttdeci">T getline(T... args)</div></div>
-<div class="ttc" id="amd5_8cpp_html_a88705fab5f92adf3427b4cf76ff33edb"><div class="ttname"><a href="#a88705fab5f92adf3427b4cf76ff33edb">hashing::md5::hash</a></div><div class="ttdeci">void * hash(const std::string &amp;message)</div><div class="ttdoc">Converts the string to bytestring and calls the main algorithm.</div><div class="ttdef"><b>Definition</b> md5.cpp:287</div></div>
-<div class="ttc" id="amd5_8cpp_html_aaee69c6136a841043f956de32116e348"><div class="ttname"><a href="#aaee69c6136a841043f956de32116e348">hashing::md5::sig2hex</a></div><div class="ttdeci">std::string sig2hex(void *sig)</div><div class="ttdoc">Transforms the 128-bit MD5 signature into a 32 char hex string.</div><div class="ttdef"><b>Definition</b> md5.cpp:122</div></div>
+<div class="ttc" id="amd5_8cpp_html_a88705fab5f92adf3427b4cf76ff33edb"><div class="ttname"><a href="#a88705fab5f92adf3427b4cf76ff33edb">hashing::md5::hash</a></div><div class="ttdeci">void * hash(const std::string &amp;message)</div><div class="ttdoc">Converts the string to bytestring and calls the main algorithm.</div><div class="ttdef"><b>Definition</b> md5.cpp:288</div></div>
+<div class="ttc" id="amd5_8cpp_html_aaee69c6136a841043f956de32116e348"><div class="ttname"><a href="#aaee69c6136a841043f956de32116e348">hashing::md5::sig2hex</a></div><div class="ttdeci">std::string sig2hex(void *sig)</div><div class="ttdoc">Transforms the 128-bit MD5 signature into a 32 char hex string.</div><div class="ttdef"><b>Definition</b> md5.cpp:123</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -491,14 +492,14 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>true IF integers are detected to work as big-endian </dd>
 <dd>
 false IF integers are detected to work as little-endian </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   76</span>                   {</div>
-<div class="line"><span class="lineno">   77</span>    <span class="keyword">union </span>{</div>
-<div class="line"><span class="lineno">   78</span>        uint32_t i;</div>
-<div class="line"><span class="lineno">   79</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;char, 4&gt;</a> c;</div>
-<div class="line"><span class="lineno">   80</span>    } bint = {0x01020304};</div>
-<div class="line"><span class="lineno">   81</span> </div>
-<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">return</span> bint.c[0] == 1;</div>
-<div class="line"><span class="lineno">   83</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   77</span>                   {</div>
+<div class="line"><span class="lineno">   78</span>    <span class="keyword">union </span>{</div>
+<div class="line"><span class="lineno">   79</span>        uint32_t i;</div>
+<div class="line"><span class="lineno">   80</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;char, 4&gt;</a> c;</div>
+<div class="line"><span class="lineno">   81</span>    } bint = {0x01020304};</div>
+<div class="line"><span class="lineno">   82</span> </div>
+<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">return</span> bint.c[0] == 1;</div>
+<div class="line"><span class="lineno">   84</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -535,9 +536,9 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t The rotated integer </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   66</span>                                                        {</div>
-<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">return</span> (n &lt;&lt; rotate) | (n &gt;&gt; (32 - <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/rotate.html">rotate</a>));</div>
-<div class="line"><span class="lineno">   68</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   67</span>                                                        {</div>
+<div class="line"><span class="lineno">   68</span>    <span class="keywordflow">return</span> (n &lt;&lt; rotate) | (n &gt;&gt; (32 - <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/rotate.html">rotate</a>));</div>
+<div class="line"><span class="lineno">   69</span>}</div>
 <div class="ttc" id="arotate_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/rotate.html">std::rotate</a></div><div class="ttdeci">T rotate(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -564,16 +565,16 @@ Here is the call graph for this function:</div>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  376</span>           {</div>
-<div class="line"><span class="lineno">  377</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">  378</span> </div>
-<div class="line"><span class="lineno">  379</span>    <span class="comment">// Launch interactive mode where user can input messages and see</span></div>
-<div class="line"><span class="lineno">  380</span>    <span class="comment">// their hash</span></div>
-<div class="line"><span class="lineno">  381</span>    <a class="code hl_function" href="#ac9e1a11f44135b890dd10a00e73b5661">interactive</a>();</div>
-<div class="line"><span class="lineno">  382</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  383</span>}</div>
-<div class="ttc" id="amd5_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations of well-known MD5 hashes.</div><div class="ttdef"><b>Definition</b> md5.cpp:297</div></div>
-<div class="ttc" id="amd5_8cpp_html_ac9e1a11f44135b890dd10a00e73b5661"><div class="ttname"><a href="#ac9e1a11f44135b890dd10a00e73b5661">interactive</a></div><div class="ttdeci">static void interactive()</div><div class="ttdoc">Puts user in a loop where inputs can be given and MD5 hash will be computed and printed.</div><div class="ttdef"><b>Definition</b> md5.cpp:351</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  377</span>           {</div>
+<div class="line"><span class="lineno">  378</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">  379</span> </div>
+<div class="line"><span class="lineno">  380</span>    <span class="comment">// Launch interactive mode where user can input messages and see</span></div>
+<div class="line"><span class="lineno">  381</span>    <span class="comment">// their hash</span></div>
+<div class="line"><span class="lineno">  382</span>    <a class="code hl_function" href="#ac9e1a11f44135b890dd10a00e73b5661">interactive</a>();</div>
+<div class="line"><span class="lineno">  383</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  384</span>}</div>
+<div class="ttc" id="amd5_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations of well-known MD5 hashes.</div><div class="ttdef"><b>Definition</b> md5.cpp:298</div></div>
+<div class="ttc" id="amd5_8cpp_html_ac9e1a11f44135b890dd10a00e73b5661"><div class="ttname"><a href="#ac9e1a11f44135b890dd10a00e73b5661">interactive</a></div><div class="ttdeci">static void interactive()</div><div class="ttdoc">Puts user in a loop where inputs can be given and MD5 hash will be computed and printed.</div><div class="ttdef"><b>Definition</b> md5.cpp:352</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -605,16 +606,16 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> The hex signature </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  122</span>                             {</div>
-<div class="line"><span class="lineno">  123</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* hexChars = <span class="stringliteral">&quot;0123456789abcdef&quot;</span>;</div>
-<div class="line"><span class="lineno">  124</span>    <span class="keyword">auto</span>* intsig = <span class="keyword">static_cast&lt;</span>uint8_t*<span class="keyword">&gt;</span>(sig);</div>
-<div class="line"><span class="lineno">  125</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/hex.html">hex</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><span class="lineno">  126</span>    <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; 16; i++) {</div>
-<div class="line"><span class="lineno">  127</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/hex.html">hex</a>.push_back(hexChars[(intsig[i] &gt;&gt; 4) &amp; 0xF]);</div>
-<div class="line"><span class="lineno">  128</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/hex.html">hex</a>.push_back(hexChars[(intsig[i]) &amp; 0xF]);</div>
-<div class="line"><span class="lineno">  129</span>    }</div>
-<div class="line"><span class="lineno">  130</span>    <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/hex.html">hex</a>;</div>
-<div class="line"><span class="lineno">  131</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  123</span>                             {</div>
+<div class="line"><span class="lineno">  124</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* hexChars = <span class="stringliteral">&quot;0123456789abcdef&quot;</span>;</div>
+<div class="line"><span class="lineno">  125</span>    <span class="keyword">auto</span>* intsig = <span class="keyword">static_cast&lt;</span>uint8_t*<span class="keyword">&gt;</span>(sig);</div>
+<div class="line"><span class="lineno">  126</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/hex.html">hex</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">  127</span>    <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; 16; i++) {</div>
+<div class="line"><span class="lineno">  128</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/hex.html">hex</a>.push_back(hexChars[(intsig[i] &gt;&gt; 4) &amp; 0xF]);</div>
+<div class="line"><span class="lineno">  129</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/hex.html">hex</a>.push_back(hexChars[(intsig[i]) &amp; 0xF]);</div>
+<div class="line"><span class="lineno">  130</span>    }</div>
+<div class="line"><span class="lineno">  131</span>    <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/hex.html">hex</a>;</div>
+<div class="line"><span class="lineno">  132</span>}</div>
 <div class="ttc" id="ahex_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/hex.html">std::hex</a></div><div class="ttdeci">T hex(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -649,54 +650,54 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations of well-known <a class="el" href="../../dd/d43/namespace_m_d5.html" title="Functions for the MD5 algorithm implementation.">MD5</a> hashes. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  297</span>                   {</div>
-<div class="line"><span class="lineno">  298</span>    <span class="comment">// Hashes empty string and stores signature</span></div>
-<div class="line"><span class="lineno">  299</span>    <span class="keywordtype">void</span>* sig = <a class="code hl_function" href="#a88705fab5f92adf3427b4cf76ff33edb">hashing::md5::hash</a>(<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><span class="lineno">  300</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Hashing empty string&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  301</span>    <span class="comment">// Prints signature hex representation</span></div>
-<div class="line"><span class="lineno">  302</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_function" href="#aaee69c6136a841043f956de32116e348">hashing::md5::sig2hex</a>(sig) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  303</span>    <span class="comment">// Test with cassert whether sig is correct from the expected value</span></div>
-<div class="line"><span class="lineno">  304</span>    assert(hashing::md5::sig2hex(sig).<a class="code hl_function" href="../../d4/d7a/shell__sort2_8cpp.html#a7eb77daed2cf1513f6d68c47a1c2db1c">compare</a>(</div>
-<div class="line"><span class="lineno">  305</span>               <span class="stringliteral">&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</span>) == 0);</div>
-<div class="line"><span class="lineno">  306</span> </div>
-<div class="line"><span class="lineno">  307</span>    <span class="comment">// Hashes &quot;The quick brown fox jumps over the lazy dog&quot; and stores signature</span></div>
-<div class="line"><span class="lineno">  308</span>    <span class="keywordtype">void</span>* sig2 =</div>
-<div class="line"><span class="lineno">  309</span>        <a class="code hl_function" href="#a88705fab5f92adf3427b4cf76ff33edb">hashing::md5::hash</a>(<span class="stringliteral">&quot;The quick brown fox jumps over the lazy dog&quot;</span>);</div>
-<div class="line"><span class="lineno">  310</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Hashing The quick brown fox jumps over the lazy dog&quot;</span></div>
-<div class="line"><span class="lineno">  311</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  312</span>    <span class="comment">// Prints signature hex representation</span></div>
-<div class="line"><span class="lineno">  313</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_function" href="#aaee69c6136a841043f956de32116e348">hashing::md5::sig2hex</a>(sig2) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  314</span>    <span class="comment">// Test with cassert whether sig is correct from the expected value</span></div>
-<div class="line"><span class="lineno">  315</span>    assert(hashing::md5::sig2hex(sig2).<a class="code hl_function" href="../../d4/d7a/shell__sort2_8cpp.html#a7eb77daed2cf1513f6d68c47a1c2db1c">compare</a>(</div>
-<div class="line"><span class="lineno">  316</span>               <span class="stringliteral">&quot;9e107d9d372bb6826bd81d3542a419d6&quot;</span>) == 0);</div>
-<div class="line"><span class="lineno">  317</span> </div>
-<div class="line"><span class="lineno">  318</span>    <span class="comment">// Hashes &quot;The quick brown fox jumps over the lazy dog.&quot; (notice the</span></div>
-<div class="line"><span class="lineno">  319</span>    <span class="comment">// additional period) and stores signature</span></div>
-<div class="line"><span class="lineno">  320</span>    <span class="keywordtype">void</span>* sig3 =</div>
-<div class="line"><span class="lineno">  321</span>        <a class="code hl_function" href="#a88705fab5f92adf3427b4cf76ff33edb">hashing::md5::hash</a>(<span class="stringliteral">&quot;The quick brown fox jumps over the lazy dog.&quot;</span>);</div>
-<div class="line"><span class="lineno">  322</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Hashing &quot;</span></div>
-<div class="line"><span class="lineno">  323</span>                 <span class="stringliteral">&quot;The quick brown fox jumps over the lazy dog.&quot;</span></div>
-<div class="line"><span class="lineno">  324</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  325</span>    <span class="comment">// Prints signature hex representation</span></div>
-<div class="line"><span class="lineno">  326</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_function" href="#aaee69c6136a841043f956de32116e348">hashing::md5::sig2hex</a>(sig3) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  327</span>    <span class="comment">// Test with cassert whether sig is correct from the expected value</span></div>
-<div class="line"><span class="lineno">  328</span>    assert(hashing::md5::sig2hex(sig3).<a class="code hl_function" href="../../d4/d7a/shell__sort2_8cpp.html#a7eb77daed2cf1513f6d68c47a1c2db1c">compare</a>(</div>
-<div class="line"><span class="lineno">  329</span>               <span class="stringliteral">&quot;e4d909c290d0fb1ca068ffaddf22cbd0&quot;</span>) == 0);</div>
-<div class="line"><span class="lineno">  330</span> </div>
-<div class="line"><span class="lineno">  331</span>    <span class="comment">// Hashes &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789&quot;</span></div>
-<div class="line"><span class="lineno">  332</span>    <span class="comment">// and stores signature</span></div>
-<div class="line"><span class="lineno">  333</span>    <span class="keywordtype">void</span>* sig4 = <a class="code hl_function" href="#a88705fab5f92adf3427b4cf76ff33edb">hashing::md5::hash</a>(</div>
-<div class="line"><span class="lineno">  334</span>        <span class="stringliteral">&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789&quot;</span>);</div>
-<div class="line"><span class="lineno">  335</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div>
-<div class="line"><span class="lineno">  336</span>        &lt;&lt; <span class="stringliteral">&quot;Hashing &quot;</span></div>
-<div class="line"><span class="lineno">  337</span>           <span class="stringliteral">&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789&quot;</span></div>
-<div class="line"><span class="lineno">  338</span>        &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  339</span>    <span class="comment">// Prints signature hex representation</span></div>
-<div class="line"><span class="lineno">  340</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_function" href="#aaee69c6136a841043f956de32116e348">hashing::md5::sig2hex</a>(sig4) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  341</span>    <span class="comment">// Test with cassert whether sig is correct from the expected value</span></div>
-<div class="line"><span class="lineno">  342</span>    assert(hashing::md5::sig2hex(sig4).<a class="code hl_function" href="../../d4/d7a/shell__sort2_8cpp.html#a7eb77daed2cf1513f6d68c47a1c2db1c">compare</a>(</div>
-<div class="line"><span class="lineno">  343</span>               <span class="stringliteral">&quot;d174ab98d277d9f5a5611c2c9f419d9f&quot;</span>) == 0);</div>
-<div class="line"><span class="lineno">  344</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  298</span>                   {</div>
+<div class="line"><span class="lineno">  299</span>    <span class="comment">// Hashes empty string and stores signature</span></div>
+<div class="line"><span class="lineno">  300</span>    <span class="keywordtype">void</span>* sig = <a class="code hl_function" href="#a88705fab5f92adf3427b4cf76ff33edb">hashing::md5::hash</a>(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  301</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Hashing empty string&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  302</span>    <span class="comment">// Prints signature hex representation</span></div>
+<div class="line"><span class="lineno">  303</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_function" href="#aaee69c6136a841043f956de32116e348">hashing::md5::sig2hex</a>(sig) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  304</span>    <span class="comment">// Test with cassert whether sig is correct from the expected value</span></div>
+<div class="line"><span class="lineno">  305</span>    assert(hashing::md5::sig2hex(sig).<a class="code hl_function" href="../../d4/d7a/shell__sort2_8cpp.html#a7eb77daed2cf1513f6d68c47a1c2db1c">compare</a>(</div>
+<div class="line"><span class="lineno">  306</span>               <span class="stringliteral">&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</span>) == 0);</div>
+<div class="line"><span class="lineno">  307</span> </div>
+<div class="line"><span class="lineno">  308</span>    <span class="comment">// Hashes &quot;The quick brown fox jumps over the lazy dog&quot; and stores signature</span></div>
+<div class="line"><span class="lineno">  309</span>    <span class="keywordtype">void</span>* sig2 =</div>
+<div class="line"><span class="lineno">  310</span>        <a class="code hl_function" href="#a88705fab5f92adf3427b4cf76ff33edb">hashing::md5::hash</a>(<span class="stringliteral">&quot;The quick brown fox jumps over the lazy dog&quot;</span>);</div>
+<div class="line"><span class="lineno">  311</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Hashing The quick brown fox jumps over the lazy dog&quot;</span></div>
+<div class="line"><span class="lineno">  312</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  313</span>    <span class="comment">// Prints signature hex representation</span></div>
+<div class="line"><span class="lineno">  314</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_function" href="#aaee69c6136a841043f956de32116e348">hashing::md5::sig2hex</a>(sig2) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  315</span>    <span class="comment">// Test with cassert whether sig is correct from the expected value</span></div>
+<div class="line"><span class="lineno">  316</span>    assert(hashing::md5::sig2hex(sig2).<a class="code hl_function" href="../../d4/d7a/shell__sort2_8cpp.html#a7eb77daed2cf1513f6d68c47a1c2db1c">compare</a>(</div>
+<div class="line"><span class="lineno">  317</span>               <span class="stringliteral">&quot;9e107d9d372bb6826bd81d3542a419d6&quot;</span>) == 0);</div>
+<div class="line"><span class="lineno">  318</span> </div>
+<div class="line"><span class="lineno">  319</span>    <span class="comment">// Hashes &quot;The quick brown fox jumps over the lazy dog.&quot; (notice the</span></div>
+<div class="line"><span class="lineno">  320</span>    <span class="comment">// additional period) and stores signature</span></div>
+<div class="line"><span class="lineno">  321</span>    <span class="keywordtype">void</span>* sig3 =</div>
+<div class="line"><span class="lineno">  322</span>        <a class="code hl_function" href="#a88705fab5f92adf3427b4cf76ff33edb">hashing::md5::hash</a>(<span class="stringliteral">&quot;The quick brown fox jumps over the lazy dog.&quot;</span>);</div>
+<div class="line"><span class="lineno">  323</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Hashing &quot;</span></div>
+<div class="line"><span class="lineno">  324</span>                 <span class="stringliteral">&quot;The quick brown fox jumps over the lazy dog.&quot;</span></div>
+<div class="line"><span class="lineno">  325</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  326</span>    <span class="comment">// Prints signature hex representation</span></div>
+<div class="line"><span class="lineno">  327</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_function" href="#aaee69c6136a841043f956de32116e348">hashing::md5::sig2hex</a>(sig3) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  328</span>    <span class="comment">// Test with cassert whether sig is correct from the expected value</span></div>
+<div class="line"><span class="lineno">  329</span>    assert(hashing::md5::sig2hex(sig3).<a class="code hl_function" href="../../d4/d7a/shell__sort2_8cpp.html#a7eb77daed2cf1513f6d68c47a1c2db1c">compare</a>(</div>
+<div class="line"><span class="lineno">  330</span>               <span class="stringliteral">&quot;e4d909c290d0fb1ca068ffaddf22cbd0&quot;</span>) == 0);</div>
+<div class="line"><span class="lineno">  331</span> </div>
+<div class="line"><span class="lineno">  332</span>    <span class="comment">// Hashes &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789&quot;</span></div>
+<div class="line"><span class="lineno">  333</span>    <span class="comment">// and stores signature</span></div>
+<div class="line"><span class="lineno">  334</span>    <span class="keywordtype">void</span>* sig4 = <a class="code hl_function" href="#a88705fab5f92adf3427b4cf76ff33edb">hashing::md5::hash</a>(</div>
+<div class="line"><span class="lineno">  335</span>        <span class="stringliteral">&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789&quot;</span>);</div>
+<div class="line"><span class="lineno">  336</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div>
+<div class="line"><span class="lineno">  337</span>        &lt;&lt; <span class="stringliteral">&quot;Hashing &quot;</span></div>
+<div class="line"><span class="lineno">  338</span>           <span class="stringliteral">&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789&quot;</span></div>
+<div class="line"><span class="lineno">  339</span>        &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  340</span>    <span class="comment">// Prints signature hex representation</span></div>
+<div class="line"><span class="lineno">  341</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_function" href="#aaee69c6136a841043f956de32116e348">hashing::md5::sig2hex</a>(sig4) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  342</span>    <span class="comment">// Test with cassert whether sig is correct from the expected value</span></div>
+<div class="line"><span class="lineno">  343</span>    assert(hashing::md5::sig2hex(sig4).<a class="code hl_function" href="../../d4/d7a/shell__sort2_8cpp.html#a7eb77daed2cf1513f6d68c47a1c2db1c">compare</a>(</div>
+<div class="line"><span class="lineno">  344</span>               <span class="stringliteral">&quot;d174ab98d277d9f5a5611c2c9f419d9f&quot;</span>) == 0);</div>
+<div class="line"><span class="lineno">  345</span>}</div>
 <div class="ttc" id="ashell__sort2_8cpp_html_a7eb77daed2cf1513f6d68c47a1c2db1c"><div class="ttname"><a href="../../d4/d7a/shell__sort2_8cpp.html#a7eb77daed2cf1513f6d68c47a1c2db1c">compare</a></div><div class="ttdeci">int compare(const void *a, const void *b)</div><div class="ttdef"><b>Definition</b> shell_sort2.cpp:87</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -729,15 +730,15 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t param n with binary representation as little-endian </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   89</span>                                      {</div>
-<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="#af8e96bde0183c4b0a7ff04668f11e446">isBigEndian</a>()) {</div>
-<div class="line"><span class="lineno">   91</span>        <span class="keywordflow">return</span> ((n &lt;&lt; 24) &amp; 0xFF000000) | ((n &lt;&lt; 8) &amp; 0x00FF0000) |</div>
-<div class="line"><span class="lineno">   92</span>               ((n &gt;&gt; 8) &amp; 0x0000FF00) | ((n &gt;&gt; 24) &amp; 0x000000FF);</div>
-<div class="line"><span class="lineno">   93</span>    }</div>
-<div class="line"><span class="lineno">   94</span>    <span class="comment">// Machine works on little endian, no need to change anything</span></div>
-<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">return</span> n;</div>
-<div class="line"><span class="lineno">   96</span>}</div>
-<div class="ttc" id="amd5_8cpp_html_af8e96bde0183c4b0a7ff04668f11e446"><div class="ttname"><a href="#af8e96bde0183c4b0a7ff04668f11e446">hashing::md5::isBigEndian</a></div><div class="ttdeci">bool isBigEndian()</div><div class="ttdoc">Checks whether integers are stored as big endian or not.</div><div class="ttdef"><b>Definition</b> md5.cpp:76</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   90</span>                                      {</div>
+<div class="line"><span class="lineno">   91</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="#af8e96bde0183c4b0a7ff04668f11e446">isBigEndian</a>()) {</div>
+<div class="line"><span class="lineno">   92</span>        <span class="keywordflow">return</span> ((n &lt;&lt; 24) &amp; 0xFF000000) | ((n &lt;&lt; 8) &amp; 0x00FF0000) |</div>
+<div class="line"><span class="lineno">   93</span>               ((n &gt;&gt; 8) &amp; 0x0000FF00) | ((n &gt;&gt; 24) &amp; 0x000000FF);</div>
+<div class="line"><span class="lineno">   94</span>    }</div>
+<div class="line"><span class="lineno">   95</span>    <span class="comment">// Machine works on little endian, no need to change anything</span></div>
+<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">return</span> n;</div>
+<div class="line"><span class="lineno">   97</span>}</div>
+<div class="ttc" id="amd5_8cpp_html_af8e96bde0183c4b0a7ff04668f11e446"><div class="ttname"><a href="#af8e96bde0183c4b0a7ff04668f11e446">hashing::md5::isBigEndian</a></div><div class="ttdeci">bool isBigEndian()</div><div class="ttdoc">Checks whether integers are stored as big endian or not.</div><div class="ttdef"><b>Definition</b> md5.cpp:77</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -769,21 +770,21 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint64_t param n with binary representation as little-endian </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  102</span>                                      {</div>
-<div class="line"><span class="lineno">  103</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="#af8e96bde0183c4b0a7ff04668f11e446">isBigEndian</a>()) {</div>
-<div class="line"><span class="lineno">  104</span>        <span class="keywordflow">return</span> ((n &lt;&lt; 56) &amp; 0xFF00000000000000) |</div>
-<div class="line"><span class="lineno">  105</span>               ((n &lt;&lt; 40) &amp; 0x00FF000000000000) |</div>
-<div class="line"><span class="lineno">  106</span>               ((n &lt;&lt; 24) &amp; 0x0000FF0000000000) |</div>
-<div class="line"><span class="lineno">  107</span>               ((n &lt;&lt; 8) &amp; 0x000000FF00000000) |</div>
-<div class="line"><span class="lineno">  108</span>               ((n &gt;&gt; 8) &amp; 0x00000000FF000000) |</div>
-<div class="line"><span class="lineno">  109</span>               ((n &gt;&gt; 24) &amp; 0x0000000000FF0000) |</div>
-<div class="line"><span class="lineno">  110</span>               ((n &gt;&gt; 40) &amp; 0x000000000000FF00) |</div>
-<div class="line"><span class="lineno">  111</span>               ((n &gt;&gt; 56) &amp; 0x00000000000000FF);</div>
-<div class="line"><span class="lineno">  112</span>        ;</div>
-<div class="line"><span class="lineno">  113</span>    }</div>
-<div class="line"><span class="lineno">  114</span>    <span class="comment">// Machine works on little endian, no need to change anything</span></div>
-<div class="line"><span class="lineno">  115</span>    <span class="keywordflow">return</span> n;</div>
-<div class="line"><span class="lineno">  116</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  103</span>                                      {</div>
+<div class="line"><span class="lineno">  104</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="#af8e96bde0183c4b0a7ff04668f11e446">isBigEndian</a>()) {</div>
+<div class="line"><span class="lineno">  105</span>        <span class="keywordflow">return</span> ((n &lt;&lt; 56) &amp; 0xFF00000000000000) |</div>
+<div class="line"><span class="lineno">  106</span>               ((n &lt;&lt; 40) &amp; 0x00FF000000000000) |</div>
+<div class="line"><span class="lineno">  107</span>               ((n &lt;&lt; 24) &amp; 0x0000FF0000000000) |</div>
+<div class="line"><span class="lineno">  108</span>               ((n &lt;&lt; 8) &amp; 0x000000FF00000000) |</div>
+<div class="line"><span class="lineno">  109</span>               ((n &gt;&gt; 8) &amp; 0x00000000FF000000) |</div>
+<div class="line"><span class="lineno">  110</span>               ((n &gt;&gt; 24) &amp; 0x0000000000FF0000) |</div>
+<div class="line"><span class="lineno">  111</span>               ((n &gt;&gt; 40) &amp; 0x000000000000FF00) |</div>
+<div class="line"><span class="lineno">  112</span>               ((n &gt;&gt; 56) &amp; 0x00000000000000FF);</div>
+<div class="line"><span class="lineno">  113</span>        ;</div>
+<div class="line"><span class="lineno">  114</span>    }</div>
+<div class="line"><span class="lineno">  115</span>    <span class="comment">// Machine works on little endian, no need to change anything</span></div>
+<div class="line"><span class="lineno">  116</span>    <span class="keywordflow">return</span> n;</div>
+<div class="line"><span class="lineno">  117</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

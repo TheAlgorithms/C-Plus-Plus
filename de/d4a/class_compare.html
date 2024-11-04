@@ -172,17 +172,17 @@ template&lt;typename S , typename T , typename E &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>true if the tuples SHOULD be swapped </dd>
 <dd>
 false if the tuples SHOULDN'T be swapped </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   76</span>                                                                {</div>
-<div class="line"><span class="lineno">   77</span>        <span class="comment">// Compare arrival times</span></div>
-<div class="line"><span class="lineno">   78</span>        <span class="keywordflow">if</span> (get&lt;1&gt;(t2) &lt; get&lt;1&gt;(t1)) {</div>
-<div class="line"><span class="lineno">   79</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   80</span>        }</div>
-<div class="line"><span class="lineno">   81</span>        <span class="comment">// If arrival times are same, then compare Process IDs</span></div>
-<div class="line"><span class="lineno">   82</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (get&lt;1&gt;(t2) == get&lt;1&gt;(t1)) {</div>
-<div class="line"><span class="lineno">   83</span>            <span class="keywordflow">return</span> get&lt;0&gt;(t2) &lt; get&lt;0&gt;(t1);</div>
-<div class="line"><span class="lineno">   84</span>        }</div>
-<div class="line"><span class="lineno">   85</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   86</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">   77</span>                                                                {</div>
+<div class="line"><span class="lineno">   78</span>        <span class="comment">// Compare arrival times</span></div>
+<div class="line"><span class="lineno">   79</span>        <span class="keywordflow">if</span> (get&lt;1&gt;(t2) &lt; get&lt;1&gt;(t1)) {</div>
+<div class="line"><span class="lineno">   80</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   81</span>        }</div>
+<div class="line"><span class="lineno">   82</span>        <span class="comment">// If arrival times are same, then compare Process IDs</span></div>
+<div class="line"><span class="lineno">   83</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (get&lt;1&gt;(t2) == get&lt;1&gt;(t1)) {</div>
+<div class="line"><span class="lineno">   84</span>            <span class="keywordflow">return</span> get&lt;0&gt;(t2) &lt; get&lt;0&gt;(t1);</div>
+<div class="line"><span class="lineno">   85</span>        }</div>
+<div class="line"><span class="lineno">   86</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   87</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -180,22 +180,22 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>n</b> = 0</td></tr>
 <p>&lt; represents minimum value over the range [g,l]</p>
 <p>&lt; represents minimum value over the range [g, r - pow(2,g) + 1]</p>
 <p>&lt; represents minimum value over the whole range [l,r]</p>
-<div class="fragment"><div class="line"><span class="lineno">  109</span>                                        {</div>
-<div class="line"><span class="lineno">  110</span>        int64_t <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = <a class="code hl_variable" href="#a6cf72f93b1551f0d943c585b4f173be3">LOG</a>[r - <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a> + 1];  <span class="comment">///&lt; smallest power of 2 covering [l,r]</span></div>
-<div class="line"><span class="lineno">  111</span>        int64_t x = <a class="code hl_variable" href="#ad36b9a20fed47b068e407008c04e9f81">ST</a>[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>][<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a>];  <span class="comment">///&lt; represents minimum value over the range</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  112</span><span class="comment">                               ///&lt; [g,l]</span></div>
-<div class="line"><span class="lineno">  113</span><span class="comment"></span>        int64_t y =</div>
-<div class="line"><span class="lineno">  114</span>            <a class="code hl_variable" href="#ad36b9a20fed47b068e407008c04e9f81">ST</a>[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>][r - (1 &lt;&lt; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>) + 1];  <span class="comment">///&lt; represents minimum value over the</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  115</span><span class="comment">                                      ///&lt; range [g, r - pow(2,g) + 1]</span></div>
-<div class="line"><span class="lineno">  116</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  117</span>        <span class="keywordflow">return</span> (<a class="code hl_variable" href="#ab78620742305a35ff2f8d61179f47d3e">A</a>[x] &lt;= <a class="code hl_variable" href="#ab78620742305a35ff2f8d61179f47d3e">A</a>[y] ? x : y);  <span class="comment">///&lt; represents minimum value over</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  118</span><span class="comment">                                        ///&lt; the whole range [l,r]</span></div>
-<div class="line"><span class="lineno">  119</span><span class="comment"></span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  110</span>                                        {</div>
+<div class="line"><span class="lineno">  111</span>        int64_t <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = <a class="code hl_variable" href="#a6cf72f93b1551f0d943c585b4f173be3">LOG</a>[r - <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a> + 1];  <span class="comment">///&lt; smallest power of 2 covering [l,r]</span></div>
+<div class="line"><span class="lineno">  112</span>        int64_t x = <a class="code hl_variable" href="#ad36b9a20fed47b068e407008c04e9f81">ST</a>[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>][<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a>];  <span class="comment">///&lt; represents minimum value over the range</span><span class="comment"></span></div>
+<div class="line"><span class="lineno">  113</span><span class="comment">                               ///&lt; [g,l]</span></div>
+<div class="line"><span class="lineno">  114</span><span class="comment"></span>        int64_t y =</div>
+<div class="line"><span class="lineno">  115</span>            <a class="code hl_variable" href="#ad36b9a20fed47b068e407008c04e9f81">ST</a>[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>][r - (1 &lt;&lt; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>) + 1];  <span class="comment">///&lt; represents minimum value over the</span><span class="comment"></span></div>
+<div class="line"><span class="lineno">  116</span><span class="comment">                                      ///&lt; range [g, r - pow(2,g) + 1]</span></div>
+<div class="line"><span class="lineno">  117</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">  118</span>        <span class="keywordflow">return</span> (<a class="code hl_variable" href="#ab78620742305a35ff2f8d61179f47d3e">A</a>[x] &lt;= <a class="code hl_variable" href="#ab78620742305a35ff2f8d61179f47d3e">A</a>[y] ? x : y);  <span class="comment">///&lt; represents minimum value over</span><span class="comment"></span></div>
+<div class="line"><span class="lineno">  119</span><span class="comment">                                        ///&lt; the whole range [l,r]</span></div>
+<div class="line"><span class="lineno">  120</span><span class="comment"></span>    }</div>
 <div class="ttc" id="acomposite__simpson__rule_8cpp_html_a2f67508d5f392b0321772169342c98ad"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">numerical_methods::simpson_method::g</a></div><div class="ttdeci">double g(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:115</div></div>
 <div class="ttc" id="acomposite__simpson__rule_8cpp_html_a6d8df83a6f26ce24a75d3b358b7f5b8a"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">numerical_methods::simpson_method::l</a></div><div class="ttdeci">double l(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:119</div></div>
-<div class="ttc" id="astructdata__structures_1_1sparse__table_1_1_sparse__table_html_a6cf72f93b1551f0d943c585b4f173be3"><div class="ttname"><a href="#a6cf72f93b1551f0d943c585b4f173be3">data_structures::sparse_table::Sparse_table::LOG</a></div><div class="ttdeci">std::array&lt; int64_t, N &gt; LOG</div><div class="ttdoc">where floor(log2(i)) are precomputed.</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:59</div></div>
-<div class="ttc" id="astructdata__structures_1_1sparse__table_1_1_sparse__table_html_ab78620742305a35ff2f8d61179f47d3e"><div class="ttname"><a href="#ab78620742305a35ff2f8d61179f47d3e">data_structures::sparse_table::Sparse_table::A</a></div><div class="ttdeci">std::array&lt; int64_t, N &gt; A</div><div class="ttdoc">input array to perform RMQ.</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:56</div></div>
-<div class="ttc" id="astructdata__structures_1_1sparse__table_1_1_sparse__table_html_ad36b9a20fed47b068e407008c04e9f81"><div class="ttname"><a href="#ad36b9a20fed47b068e407008c04e9f81">data_structures::sparse_table::Sparse_table::ST</a></div><div class="ttdeci">std::array&lt; std::array&lt; int64_t, N &gt;, M &gt; ST</div><div class="ttdoc">the sparse table storing min() values for given interval.</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:58</div></div>
+<div class="ttc" id="astructdata__structures_1_1sparse__table_1_1_sparse__table_html_a6cf72f93b1551f0d943c585b4f173be3"><div class="ttname"><a href="#a6cf72f93b1551f0d943c585b4f173be3">data_structures::sparse_table::Sparse_table::LOG</a></div><div class="ttdeci">std::array&lt; int64_t, N &gt; LOG</div><div class="ttdoc">where floor(log2(i)) are precomputed.</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:60</div></div>
+<div class="ttc" id="astructdata__structures_1_1sparse__table_1_1_sparse__table_html_ab78620742305a35ff2f8d61179f47d3e"><div class="ttname"><a href="#ab78620742305a35ff2f8d61179f47d3e">data_structures::sparse_table::Sparse_table::A</a></div><div class="ttdeci">std::array&lt; int64_t, N &gt; A</div><div class="ttdoc">input array to perform RMQ.</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:57</div></div>
+<div class="ttc" id="astructdata__structures_1_1sparse__table_1_1_sparse__table_html_ad36b9a20fed47b068e407008c04e9f81"><div class="ttname"><a href="#ad36b9a20fed47b068e407008c04e9f81">data_structures::sparse_table::Sparse_table::ST</a></div><div class="ttdeci">std::array&lt; std::array&lt; int64_t, N &gt;, M &gt; ST</div><div class="ttdoc">the sparse table storing min() values for given interval.</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:59</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -214,7 +214,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>n</b> = 0</td></tr>
 
 <p>input array to perform RMQ. </p>
 <dl class="section warning"><dt>Warning</dt><dd>check if <code>N</code> is not less than <code>n</code>. if so, manually increase the value of N </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>{};  <span class="comment">///&lt; input array to perform RMQ.</span></div>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>{};  <span class="comment">///&lt; input array to perform RMQ.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -231,7 +231,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>n</b> = 0</td></tr>
 </div><div class="memdoc">
 
 <p>where floor(log2(i)) are precomputed. </p>
-<div class="fragment"><div class="line"><span class="lineno">   59</span>{};  <span class="comment">///&lt; where floor(log2(i)) are precomputed.</span></div>
+<div class="fragment"><div class="line"><span class="lineno">   60</span>{};  <span class="comment">///&lt; where floor(log2(i)) are precomputed.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -248,7 +248,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>n</b> = 0</td></tr>
 </div><div class="memdoc">
 
 <p>the sparse table storing <code>min()</code> values for given interval. </p>
-<div class="fragment"><div class="line"><span class="lineno">   58</span>{};  <span class="comment">///&lt; the sparse table storing `min()` values for given interval.</span></div>
+<div class="fragment"><div class="line"><span class="lineno">   59</span>{};  <span class="comment">///&lt; the sparse table storing `min()` values for given interval.</span></div>
 </div><!-- fragment -->
 </div>
 </div>

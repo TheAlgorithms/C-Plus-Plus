@@ -114,17 +114,18 @@ $(function(){initNavTree('da/d50/count__of__trailing__ciphers__in__factorial__n_
 <p><a href="https://www.tutorialspoint.com/count-trailing-zeros-in-factorial-of-a-number-in-cplusplus" target="_blank">Count the number of ciphers</a> in <code>n!</code> implementation  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for count_of_trailing_ciphers_in_factorial_n.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/dbe/count__of__trailing__ciphers__in__factorial__n_8cpp__incl.svg" width="171" height="140"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/dbe/count__of__trailing__ciphers__in__factorial__n_8cpp__incl.svg" width="255" height="140"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d81/namespacebit__manipulation.html">bit_manipulation</a></td></tr>
-<tr class="memdesc:d7/d81/namespacebit__manipulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">for IO operations <br /></td></tr>
+<tr class="memdesc:d7/d81/namespacebit__manipulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">for assert <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2f/namespacecount__of__trailing__ciphers__in__factorial__n.html">count_of_trailing_ciphers_in_factorial_n</a></td></tr>
 <tr class="memdesc:dc/d2f/namespacecount__of__trailing__ciphers__in__factorial__n"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for the <a href="https://www.tutorialspoint.com/count-trailing-zeros-in-factorial-of-a-number-in-cplusplus" target="_blank">Count the number of ciphers</a> in <code>n!</code> implementation. <br /></td></tr>
@@ -164,11 +165,11 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   95</span>           {</div>
-<div class="line"><span class="lineno">   96</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">   97</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   98</span>}</div>
-<div class="ttc" id="acount__of__trailing__ciphers__in__factorial__n_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> count_of_trailing_ciphers_in_factorial_n.cpp:59</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   96</span>           {</div>
+<div class="line"><span class="lineno">   97</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   99</span>}</div>
+<div class="ttc" id="acount__of__trailing__ciphers__in__factorial__n_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> count_of_trailing_ciphers_in_factorial_n.cpp:60</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -200,18 +201,18 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>count, Number of ciphers in <code>n!</code>. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   40</span>                                                 {</div>
-<div class="line"><span class="lineno">   41</span>    <span class="comment">// count is to store the number of 5&#39;s in factorial(n)</span></div>
-<div class="line"><span class="lineno">   42</span>    uint64_t count = 0;</div>
-<div class="line"><span class="lineno">   43</span> </div>
-<div class="line"><span class="lineno">   44</span>    <span class="comment">// Keep dividing n by powers of</span></div>
-<div class="line"><span class="lineno">   45</span>    <span class="comment">// 5 and update count</span></div>
-<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">for</span> (uint64_t i = 5; n / i &gt;= 1; i *= 5) {</div>
-<div class="line"><span class="lineno">   47</span>        count += <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(n) / i;</div>
-<div class="line"><span class="lineno">   48</span>    }</div>
-<div class="line"><span class="lineno">   49</span> </div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">return</span> count;</div>
-<div class="line"><span class="lineno">   51</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   41</span>                                                 {</div>
+<div class="line"><span class="lineno">   42</span>    <span class="comment">// count is to store the number of 5&#39;s in factorial(n)</span></div>
+<div class="line"><span class="lineno">   43</span>    uint64_t count = 0;</div>
+<div class="line"><span class="lineno">   44</span> </div>
+<div class="line"><span class="lineno">   45</span>    <span class="comment">// Keep dividing n by powers of</span></div>
+<div class="line"><span class="lineno">   46</span>    <span class="comment">// 5 and update count</span></div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">for</span> (uint64_t i = 5; n / i &gt;= 1; i *= 5) {</div>
+<div class="line"><span class="lineno">   48</span>        count += <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(n) / i;</div>
+<div class="line"><span class="lineno">   49</span>    }</div>
+<div class="line"><span class="lineno">   50</span> </div>
+<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">return</span> count;</div>
+<div class="line"><span class="lineno">   52</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -245,39 +246,39 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   59</span>                   {</div>
-<div class="line"><span class="lineno">   60</span>    <span class="comment">// 1st test</span></div>
-<div class="line"><span class="lineno">   61</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;1st test &quot;</span>;</div>
-<div class="line"><span class="lineno">   62</span>    assert(bit_manipulation::count_of_trailing_ciphers_in_factorial_n::</div>
-<div class="line"><span class="lineno">   63</span>               <a class="code hl_function" href="#a0d5e1d651d0d30bd682f176d8f2b83d0">numberOfCiphersInFactorialN</a>(395) == 97);</div>
-<div class="line"><span class="lineno">   64</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   65</span> </div>
-<div class="line"><span class="lineno">   66</span>    <span class="comment">// 2nd test</span></div>
-<div class="line"><span class="lineno">   67</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;2nd test &quot;</span>;</div>
-<div class="line"><span class="lineno">   68</span>    assert(bit_manipulation::count_of_trailing_ciphers_in_factorial_n::</div>
-<div class="line"><span class="lineno">   69</span>               <a class="code hl_function" href="#a0d5e1d651d0d30bd682f176d8f2b83d0">numberOfCiphersInFactorialN</a>(977) == 242);</div>
-<div class="line"><span class="lineno">   70</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   71</span> </div>
-<div class="line"><span class="lineno">   72</span>    <span class="comment">// 3rd test</span></div>
-<div class="line"><span class="lineno">   73</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;3rd test &quot;</span>;</div>
-<div class="line"><span class="lineno">   74</span>    assert(bit_manipulation::count_of_trailing_ciphers_in_factorial_n::</div>
-<div class="line"><span class="lineno">   75</span>               <a class="code hl_function" href="#a0d5e1d651d0d30bd682f176d8f2b83d0">numberOfCiphersInFactorialN</a>(871) == 215);</div>
-<div class="line"><span class="lineno">   76</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   77</span> </div>
-<div class="line"><span class="lineno">   78</span>    <span class="comment">// 4th test</span></div>
-<div class="line"><span class="lineno">   79</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;4th test &quot;</span>;</div>
-<div class="line"><span class="lineno">   80</span>    assert(bit_manipulation::count_of_trailing_ciphers_in_factorial_n::</div>
-<div class="line"><span class="lineno">   81</span>               <a class="code hl_function" href="#a0d5e1d651d0d30bd682f176d8f2b83d0">numberOfCiphersInFactorialN</a>(239) == 57);</div>
-<div class="line"><span class="lineno">   82</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   83</span> </div>
-<div class="line"><span class="lineno">   84</span>    <span class="comment">// 5th test</span></div>
-<div class="line"><span class="lineno">   85</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;5th test &quot;</span>;</div>
-<div class="line"><span class="lineno">   86</span>    assert(bit_manipulation::count_of_trailing_ciphers_in_factorial_n::</div>
-<div class="line"><span class="lineno">   87</span>               <a class="code hl_function" href="#a0d5e1d651d0d30bd682f176d8f2b83d0">numberOfCiphersInFactorialN</a>(0) == 0);</div>
-<div class="line"><span class="lineno">   88</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   89</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   60</span>                   {</div>
+<div class="line"><span class="lineno">   61</span>    <span class="comment">// 1st test</span></div>
+<div class="line"><span class="lineno">   62</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;1st test &quot;</span>;</div>
+<div class="line"><span class="lineno">   63</span>    assert(bit_manipulation::count_of_trailing_ciphers_in_factorial_n::</div>
+<div class="line"><span class="lineno">   64</span>               <a class="code hl_function" href="#a0d5e1d651d0d30bd682f176d8f2b83d0">numberOfCiphersInFactorialN</a>(395) == 97);</div>
+<div class="line"><span class="lineno">   65</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   67</span>    <span class="comment">// 2nd test</span></div>
+<div class="line"><span class="lineno">   68</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;2nd test &quot;</span>;</div>
+<div class="line"><span class="lineno">   69</span>    assert(bit_manipulation::count_of_trailing_ciphers_in_factorial_n::</div>
+<div class="line"><span class="lineno">   70</span>               <a class="code hl_function" href="#a0d5e1d651d0d30bd682f176d8f2b83d0">numberOfCiphersInFactorialN</a>(977) == 242);</div>
+<div class="line"><span class="lineno">   71</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   72</span> </div>
+<div class="line"><span class="lineno">   73</span>    <span class="comment">// 3rd test</span></div>
+<div class="line"><span class="lineno">   74</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;3rd test &quot;</span>;</div>
+<div class="line"><span class="lineno">   75</span>    assert(bit_manipulation::count_of_trailing_ciphers_in_factorial_n::</div>
+<div class="line"><span class="lineno">   76</span>               <a class="code hl_function" href="#a0d5e1d651d0d30bd682f176d8f2b83d0">numberOfCiphersInFactorialN</a>(871) == 215);</div>
+<div class="line"><span class="lineno">   77</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   78</span> </div>
+<div class="line"><span class="lineno">   79</span>    <span class="comment">// 4th test</span></div>
+<div class="line"><span class="lineno">   80</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;4th test &quot;</span>;</div>
+<div class="line"><span class="lineno">   81</span>    assert(bit_manipulation::count_of_trailing_ciphers_in_factorial_n::</div>
+<div class="line"><span class="lineno">   82</span>               <a class="code hl_function" href="#a0d5e1d651d0d30bd682f176d8f2b83d0">numberOfCiphersInFactorialN</a>(239) == 57);</div>
+<div class="line"><span class="lineno">   83</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   84</span> </div>
+<div class="line"><span class="lineno">   85</span>    <span class="comment">// 5th test</span></div>
+<div class="line"><span class="lineno">   86</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;5th test &quot;</span>;</div>
+<div class="line"><span class="lineno">   87</span>    assert(bit_manipulation::count_of_trailing_ciphers_in_factorial_n::</div>
+<div class="line"><span class="lineno">   88</span>               <a class="code hl_function" href="#a0d5e1d651d0d30bd682f176d8f2b83d0">numberOfCiphersInFactorialN</a>(0) == 0);</div>
+<div class="line"><span class="lineno">   89</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   90</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="acount__of__trailing__ciphers__in__factorial__n_8cpp_html_a0d5e1d651d0d30bd682f176d8f2b83d0"><div class="ttname"><a href="#a0d5e1d651d0d30bd682f176d8f2b83d0">bit_manipulation::count_of_trailing_ciphers_in_factorial_n::numberOfCiphersInFactorialN</a></div><div class="ttdeci">uint64_t numberOfCiphersInFactorialN(uint64_t n)</div><div class="ttdoc">Function to count the number of the trailing ciphers.</div><div class="ttdef"><b>Definition</b> count_of_trailing_ciphers_in_factorial_n.cpp:40</div></div>
+<div class="ttc" id="acount__of__trailing__ciphers__in__factorial__n_8cpp_html_a0d5e1d651d0d30bd682f176d8f2b83d0"><div class="ttname"><a href="#a0d5e1d651d0d30bd682f176d8f2b83d0">bit_manipulation::count_of_trailing_ciphers_in_factorial_n::numberOfCiphersInFactorialN</a></div><div class="ttdeci">uint64_t numberOfCiphersInFactorialN(uint64_t n)</div><div class="ttdoc">Function to count the number of the trailing ciphers.</div><div class="ttdef"><b>Definition</b> count_of_trailing_ciphers_in_factorial_n.cpp:41</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

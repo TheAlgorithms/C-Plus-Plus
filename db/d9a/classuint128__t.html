@@ -446,7 +446,7 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  100</span>: s(low) {}</div>
+<div class="fragment"><div class="line"><span class="lineno">  101</span>: s(low) {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -480,10 +480,10 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  106</span>                                             {</div>
-<div class="line"><span class="lineno">  107</span>        <a class="code hl_function" href="#a857a3c69c1e775a1bd3935c2bfbb02df">__get_integer_from_string</a>(str);</div>
-<div class="line"><span class="lineno">  108</span>    }</div>
-<div class="ttc" id="aclassuint128__t_html_a857a3c69c1e775a1bd3935c2bfbb02df"><div class="ttname"><a href="#a857a3c69c1e775a1bd3935c2bfbb02df">uint128_t::__get_integer_from_string</a></div><div class="ttdeci">void __get_integer_from_string(const std::string &amp;str)</div><div class="ttdoc">First and second half of 128 bit number.</div><div class="ttdef"><b>Definition</b> uint128_t.hpp:69</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  107</span>                                             {</div>
+<div class="line"><span class="lineno">  108</span>        <a class="code hl_function" href="#a857a3c69c1e775a1bd3935c2bfbb02df">__get_integer_from_string</a>(str);</div>
+<div class="line"><span class="lineno">  109</span>    }</div>
+<div class="ttc" id="aclassuint128__t_html_a857a3c69c1e775a1bd3935c2bfbb02df"><div class="ttname"><a href="#a857a3c69c1e775a1bd3935c2bfbb02df">uint128_t::__get_integer_from_string</a></div><div class="ttdeci">void __get_integer_from_string(const std::string &amp;str)</div><div class="ttdoc">First and second half of 128 bit number.</div><div class="ttdef"><b>Definition</b> uint128_t.hpp:70</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -527,7 +527,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  115</span>: f(high), s(low) {}</div>
+<div class="fragment"><div class="line"><span class="lineno">  116</span>: f(high), s(low) {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -594,7 +594,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  127</span>: f(num.f), s(num.s) {}</div>
+<div class="fragment"><div class="line"><span class="lineno">  128</span>: f(num.f), s(num.s) {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -631,26 +631,26 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   69</span>                                                         {</div>
-<div class="line"><span class="lineno">   70</span>        this-&gt;f = this-&gt;s = 0;</div>
-<div class="line"><span class="lineno">   71</span>        <span class="keywordflow">if</span> (str.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>() &gt; 1 &amp;&amp; str[1] == <span class="charliteral">&#39;x&#39;</span>) {  <span class="comment">// if hexadecimal</span></div>
-<div class="line"><span class="lineno">   72</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 2; i &lt; str.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>(); ++i) {</div>
-<div class="line"><span class="lineno">   73</span>                *<span class="keyword">this</span> *= 16LL;</div>
-<div class="line"><span class="lineno">   74</span>                <span class="keywordflow">if</span> (str[i] &gt;= <span class="charliteral">&#39;0&#39;</span> &amp;&amp; str[i] &lt;= <span class="charliteral">&#39;9&#39;</span>) {</div>
-<div class="line"><span class="lineno">   75</span>                    *<span class="keyword">this</span> += (str[i] - <span class="charliteral">&#39;0&#39;</span>);</div>
-<div class="line"><span class="lineno">   76</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (str[i] &gt;= <span class="charliteral">&#39;A&#39;</span> &amp;&amp; str[i] &lt;= <span class="charliteral">&#39;F&#39;</span>) {</div>
-<div class="line"><span class="lineno">   77</span>                    *<span class="keyword">this</span> += (str[i] - <span class="charliteral">&#39;A&#39;</span> + 10);</div>
-<div class="line"><span class="lineno">   78</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (str[i] &gt;= <span class="charliteral">&#39;a&#39;</span> &amp;&amp; str[i] &lt;= <span class="charliteral">&#39;f&#39;</span>) {</div>
-<div class="line"><span class="lineno">   79</span>                    *<span class="keyword">this</span> += (str[i] - <span class="charliteral">&#39;a&#39;</span> + 10);</div>
-<div class="line"><span class="lineno">   80</span>                }</div>
-<div class="line"><span class="lineno">   81</span>            }</div>
-<div class="line"><span class="lineno">   82</span>        } <span class="keywordflow">else</span> {  <span class="comment">// if decimal</span></div>
-<div class="line"><span class="lineno">   83</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;x : str) {</div>
-<div class="line"><span class="lineno">   84</span>                *<span class="keyword">this</span> *= 10LL;</div>
-<div class="line"><span class="lineno">   85</span>                *<span class="keyword">this</span> += (x - <span class="charliteral">&#39;0&#39;</span>);</div>
-<div class="line"><span class="lineno">   86</span>            }</div>
-<div class="line"><span class="lineno">   87</span>        }</div>
-<div class="line"><span class="lineno">   88</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>                                                         {</div>
+<div class="line"><span class="lineno">   71</span>        this-&gt;f = this-&gt;s = 0;</div>
+<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">if</span> (str.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>() &gt; 1 &amp;&amp; str[1] == <span class="charliteral">&#39;x&#39;</span>) {  <span class="comment">// if hexadecimal</span></div>
+<div class="line"><span class="lineno">   73</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 2; i &lt; str.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>(); ++i) {</div>
+<div class="line"><span class="lineno">   74</span>                *<span class="keyword">this</span> *= 16LL;</div>
+<div class="line"><span class="lineno">   75</span>                <span class="keywordflow">if</span> (str[i] &gt;= <span class="charliteral">&#39;0&#39;</span> &amp;&amp; str[i] &lt;= <span class="charliteral">&#39;9&#39;</span>) {</div>
+<div class="line"><span class="lineno">   76</span>                    *<span class="keyword">this</span> += (str[i] - <span class="charliteral">&#39;0&#39;</span>);</div>
+<div class="line"><span class="lineno">   77</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (str[i] &gt;= <span class="charliteral">&#39;A&#39;</span> &amp;&amp; str[i] &lt;= <span class="charliteral">&#39;F&#39;</span>) {</div>
+<div class="line"><span class="lineno">   78</span>                    *<span class="keyword">this</span> += (str[i] - <span class="charliteral">&#39;A&#39;</span> + 10);</div>
+<div class="line"><span class="lineno">   79</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (str[i] &gt;= <span class="charliteral">&#39;a&#39;</span> &amp;&amp; str[i] &lt;= <span class="charliteral">&#39;f&#39;</span>) {</div>
+<div class="line"><span class="lineno">   80</span>                    *<span class="keyword">this</span> += (str[i] - <span class="charliteral">&#39;a&#39;</span> + 10);</div>
+<div class="line"><span class="lineno">   81</span>                }</div>
+<div class="line"><span class="lineno">   82</span>            }</div>
+<div class="line"><span class="lineno">   83</span>        } <span class="keywordflow">else</span> {  <span class="comment">// if decimal</span></div>
+<div class="line"><span class="lineno">   84</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;x : str) {</div>
+<div class="line"><span class="lineno">   85</span>                *<span class="keyword">this</span> *= 10LL;</div>
+<div class="line"><span class="lineno">   86</span>                *<span class="keyword">this</span> += (x - <span class="charliteral">&#39;0&#39;</span>);</div>
+<div class="line"><span class="lineno">   87</span>            }</div>
+<div class="line"><span class="lineno">   88</span>        }</div>
+<div class="line"><span class="lineno">   89</span>    }</div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">std::string::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -685,23 +685,23 @@ Here is the call graph for this function:</div>
 
 <p>Leading zeroes in binary. </p>
 <p>Calculates leading zeros in 128-bit integer </p><dl class="section return"><dt>Returns</dt><dd>Integer denoting leading zeroes </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  139</span>                           {</div>
-<div class="line"><span class="lineno">  140</span><span class="preprocessor">#ifndef _MSC_VER</span></div>
-<div class="line"><span class="lineno">  141</span>        <span class="keywordflow">if</span> (f) {</div>
-<div class="line"><span class="lineno">  142</span>            <span class="keywordflow">return</span> __builtin_clzll(f);</div>
-<div class="line"><span class="lineno">  143</span>        }</div>
-<div class="line"><span class="lineno">  144</span>        <span class="keywordflow">return</span> 64 + __builtin_clzll(s);</div>
-<div class="line"><span class="lineno">  145</span><span class="preprocessor">#else</span></div>
-<div class="line"><span class="lineno">  146</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> r = 0;</div>
-<div class="line"><span class="lineno">  147</span>        _BitScanForward64(&amp;r, f);</div>
-<div class="line"><span class="lineno">  148</span>        <span class="keywordflow">if</span> (r == 64) {</div>
-<div class="line"><span class="lineno">  149</span>            <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a> = 0;</div>
-<div class="line"><span class="lineno">  150</span>            _BitScanForward64(&amp;l, s);</div>
-<div class="line"><span class="lineno">  151</span>            <span class="keywordflow">return</span> 64 + <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a>;</div>
-<div class="line"><span class="lineno">  152</span>        }</div>
-<div class="line"><span class="lineno">  153</span>        <span class="keywordflow">return</span> r;</div>
-<div class="line"><span class="lineno">  154</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">  155</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  140</span>                           {</div>
+<div class="line"><span class="lineno">  141</span><span class="preprocessor">#ifndef _MSC_VER</span></div>
+<div class="line"><span class="lineno">  142</span>        <span class="keywordflow">if</span> (f) {</div>
+<div class="line"><span class="lineno">  143</span>            <span class="keywordflow">return</span> __builtin_clzll(f);</div>
+<div class="line"><span class="lineno">  144</span>        }</div>
+<div class="line"><span class="lineno">  145</span>        <span class="keywordflow">return</span> 64 + __builtin_clzll(s);</div>
+<div class="line"><span class="lineno">  146</span><span class="preprocessor">#else</span></div>
+<div class="line"><span class="lineno">  147</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> r = 0;</div>
+<div class="line"><span class="lineno">  148</span>        _BitScanForward64(&amp;r, f);</div>
+<div class="line"><span class="lineno">  149</span>        <span class="keywordflow">if</span> (r == 64) {</div>
+<div class="line"><span class="lineno">  150</span>            <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a> = 0;</div>
+<div class="line"><span class="lineno">  151</span>            _BitScanForward64(&amp;l, s);</div>
+<div class="line"><span class="lineno">  152</span>            <span class="keywordflow">return</span> 64 + <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a>;</div>
+<div class="line"><span class="lineno">  153</span>        }</div>
+<div class="line"><span class="lineno">  154</span>        <span class="keywordflow">return</span> r;</div>
+<div class="line"><span class="lineno">  155</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  156</span>    }</div>
 <div class="ttc" id="acomposite__simpson__rule_8cpp_html_a6d8df83a6f26ce24a75d3b358b7f5b8a"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">numerical_methods::simpson_method::l</a></div><div class="ttdeci">double l(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:119</div></div>
 </div><!-- fragment -->
 </div>
@@ -731,23 +731,23 @@ Here is the call graph for this function:</div>
 
 <p>Trailing zeroes in binary. </p>
 <p>Calculates leading zeros in 128-bit integer </p><dl class="section return"><dt>Returns</dt><dd>Integer denoting Trailing zeroes </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  162</span>                           {</div>
-<div class="line"><span class="lineno">  163</span><span class="preprocessor">#ifndef _MSC_VER</span></div>
-<div class="line"><span class="lineno">  164</span>        <span class="keywordflow">if</span> (f) {</div>
-<div class="line"><span class="lineno">  165</span>            <span class="keywordflow">return</span> __builtin_ctzll(f);</div>
-<div class="line"><span class="lineno">  166</span>        }</div>
-<div class="line"><span class="lineno">  167</span>        <span class="keywordflow">return</span> 64 + __builtin_ctzll(s);</div>
-<div class="line"><span class="lineno">  168</span><span class="preprocessor">#else</span></div>
-<div class="line"><span class="lineno">  169</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> r = 0;</div>
-<div class="line"><span class="lineno">  170</span>        _BitScanReverse64(&amp;r, s);</div>
-<div class="line"><span class="lineno">  171</span>        <span class="keywordflow">if</span> (r == 64) {</div>
-<div class="line"><span class="lineno">  172</span>            <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a> = 0;</div>
-<div class="line"><span class="lineno">  173</span>            _BitScanReverse64(&amp;l, f);</div>
-<div class="line"><span class="lineno">  174</span>            <span class="keywordflow">return</span> 64 + <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a>;</div>
-<div class="line"><span class="lineno">  175</span>        }</div>
-<div class="line"><span class="lineno">  176</span>        <span class="keywordflow">return</span> r;</div>
-<div class="line"><span class="lineno">  177</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">  178</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  163</span>                           {</div>
+<div class="line"><span class="lineno">  164</span><span class="preprocessor">#ifndef _MSC_VER</span></div>
+<div class="line"><span class="lineno">  165</span>        <span class="keywordflow">if</span> (f) {</div>
+<div class="line"><span class="lineno">  166</span>            <span class="keywordflow">return</span> __builtin_ctzll(f);</div>
+<div class="line"><span class="lineno">  167</span>        }</div>
+<div class="line"><span class="lineno">  168</span>        <span class="keywordflow">return</span> 64 + __builtin_ctzll(s);</div>
+<div class="line"><span class="lineno">  169</span><span class="preprocessor">#else</span></div>
+<div class="line"><span class="lineno">  170</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> r = 0;</div>
+<div class="line"><span class="lineno">  171</span>        _BitScanReverse64(&amp;r, s);</div>
+<div class="line"><span class="lineno">  172</span>        <span class="keywordflow">if</span> (r == 64) {</div>
+<div class="line"><span class="lineno">  173</span>            <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a> = 0;</div>
+<div class="line"><span class="lineno">  174</span>            _BitScanReverse64(&amp;l, f);</div>
+<div class="line"><span class="lineno">  175</span>            <span class="keywordflow">return</span> 64 + <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a>;</div>
+<div class="line"><span class="lineno">  176</span>        }</div>
+<div class="line"><span class="lineno">  177</span>        <span class="keywordflow">return</span> r;</div>
+<div class="line"><span class="lineno">  178</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  179</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -782,36 +782,36 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pair denoting quotient and remainder. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  454</span>                                                             {</div>
-<div class="line"><span class="lineno">  455</span>        <span class="keywordflow">if</span> (*<span class="keyword">this</span> &lt; p) {  <span class="comment">// if this is less than divisor</span></div>
-<div class="line"><span class="lineno">  456</span>            <span class="keywordflow">return</span> {<a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(0), *<span class="keyword">this</span>};</div>
-<div class="line"><span class="lineno">  457</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (*<span class="keyword">this</span> == p) {  <span class="comment">// if this is equal to divisor</span></div>
-<div class="line"><span class="lineno">  458</span>            <span class="keywordflow">return</span> {<a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(1), <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(0)};</div>
-<div class="line"><span class="lineno">  459</span>        }</div>
-<div class="line"><span class="lineno">  460</span>        <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a> tmp = p, tmp2 = *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  461</span>        uint16_t left = tmp.<a class="code hl_function" href="#af139bb6e630f1a61919f180978611cd2">_lez</a>() - <a class="code hl_function" href="#af139bb6e630f1a61919f180978611cd2">_lez</a>();</div>
-<div class="line"><span class="lineno">  462</span>        tmp &lt;&lt;= left;</div>
-<div class="line"><span class="lineno">  463</span>        <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a> quotient(0);</div>
-<div class="line"><span class="lineno">  464</span>        <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a> zero(0);</div>
-<div class="line"><span class="lineno">  465</span>        <span class="keywordflow">while</span> (tmp2 &gt;= p) {</div>
-<div class="line"><span class="lineno">  466</span>            uint16_t shf = tmp2._lez() - tmp.<a class="code hl_function" href="#af139bb6e630f1a61919f180978611cd2">_lez</a>();</div>
-<div class="line"><span class="lineno">  467</span>            <span class="keywordflow">if</span> (shf) {</div>
-<div class="line"><span class="lineno">  468</span>                tmp &gt;&gt;= shf;</div>
-<div class="line"><span class="lineno">  469</span>                quotient &lt;&lt;= shf;</div>
-<div class="line"><span class="lineno">  470</span>                left -= shf;</div>
-<div class="line"><span class="lineno">  471</span>            }</div>
-<div class="line"><span class="lineno">  472</span>            <span class="keywordflow">if</span> (tmp2 &lt; tmp) {</div>
-<div class="line"><span class="lineno">  473</span>                tmp &gt;&gt;= 1;</div>
-<div class="line"><span class="lineno">  474</span>                quotient &lt;&lt;= 1;</div>
-<div class="line"><span class="lineno">  475</span>                --left;</div>
-<div class="line"><span class="lineno">  476</span>            }</div>
-<div class="line"><span class="lineno">  477</span>            tmp2 -= tmp;</div>
-<div class="line"><span class="lineno">  478</span>            ++quotient;</div>
-<div class="line"><span class="lineno">  479</span>        }</div>
-<div class="line"><span class="lineno">  480</span>        <span class="keywordflow">return</span> {quotient &lt;&lt; left, tmp2};</div>
-<div class="line"><span class="lineno">  481</span>    }</div>
-<div class="ttc" id="aclassuint128__t_html"><div class="ttname"><a href="../../db/d9a/classuint128__t.html">uint128_t</a></div><div class="ttdoc">class for 128-bit unsigned integer</div><div class="ttdef"><b>Definition</b> uint128_t.hpp:59</div></div>
-<div class="ttc" id="aclassuint128__t_html_af139bb6e630f1a61919f180978611cd2"><div class="ttname"><a href="#af139bb6e630f1a61919f180978611cd2">uint128_t::_lez</a></div><div class="ttdeci">uint32_t _lez()</div><div class="ttdoc">Leading zeroes in binary.</div><div class="ttdef"><b>Definition</b> uint128_t.hpp:139</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  455</span>                                                             {</div>
+<div class="line"><span class="lineno">  456</span>        <span class="keywordflow">if</span> (*<span class="keyword">this</span> &lt; p) {  <span class="comment">// if this is less than divisor</span></div>
+<div class="line"><span class="lineno">  457</span>            <span class="keywordflow">return</span> {<a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(0), *<span class="keyword">this</span>};</div>
+<div class="line"><span class="lineno">  458</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (*<span class="keyword">this</span> == p) {  <span class="comment">// if this is equal to divisor</span></div>
+<div class="line"><span class="lineno">  459</span>            <span class="keywordflow">return</span> {<a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(1), <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(0)};</div>
+<div class="line"><span class="lineno">  460</span>        }</div>
+<div class="line"><span class="lineno">  461</span>        <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a> tmp = p, tmp2 = *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  462</span>        uint16_t left = tmp.<a class="code hl_function" href="#af139bb6e630f1a61919f180978611cd2">_lez</a>() - <a class="code hl_function" href="#af139bb6e630f1a61919f180978611cd2">_lez</a>();</div>
+<div class="line"><span class="lineno">  463</span>        tmp &lt;&lt;= left;</div>
+<div class="line"><span class="lineno">  464</span>        <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a> quotient(0);</div>
+<div class="line"><span class="lineno">  465</span>        <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a> zero(0);</div>
+<div class="line"><span class="lineno">  466</span>        <span class="keywordflow">while</span> (tmp2 &gt;= p) {</div>
+<div class="line"><span class="lineno">  467</span>            uint16_t shf = tmp2._lez() - tmp.<a class="code hl_function" href="#af139bb6e630f1a61919f180978611cd2">_lez</a>();</div>
+<div class="line"><span class="lineno">  468</span>            <span class="keywordflow">if</span> (shf) {</div>
+<div class="line"><span class="lineno">  469</span>                tmp &gt;&gt;= shf;</div>
+<div class="line"><span class="lineno">  470</span>                quotient &lt;&lt;= shf;</div>
+<div class="line"><span class="lineno">  471</span>                left -= shf;</div>
+<div class="line"><span class="lineno">  472</span>            }</div>
+<div class="line"><span class="lineno">  473</span>            <span class="keywordflow">if</span> (tmp2 &lt; tmp) {</div>
+<div class="line"><span class="lineno">  474</span>                tmp &gt;&gt;= 1;</div>
+<div class="line"><span class="lineno">  475</span>                quotient &lt;&lt;= 1;</div>
+<div class="line"><span class="lineno">  476</span>                --left;</div>
+<div class="line"><span class="lineno">  477</span>            }</div>
+<div class="line"><span class="lineno">  478</span>            tmp2 -= tmp;</div>
+<div class="line"><span class="lineno">  479</span>            ++quotient;</div>
+<div class="line"><span class="lineno">  480</span>        }</div>
+<div class="line"><span class="lineno">  481</span>        <span class="keywordflow">return</span> {quotient &lt;&lt; left, tmp2};</div>
+<div class="line"><span class="lineno">  482</span>    }</div>
+<div class="ttc" id="aclassuint128__t_html"><div class="ttname"><a href="../../db/d9a/classuint128__t.html">uint128_t</a></div><div class="ttdoc">class for 128-bit unsigned integer</div><div class="ttdef"><b>Definition</b> uint128_t.hpp:60</div></div>
+<div class="ttc" id="aclassuint128__t_html_af139bb6e630f1a61919f180978611cd2"><div class="ttname"><a href="#af139bb6e630f1a61919f180978611cd2">uint128_t::_lez</a></div><div class="ttdeci">uint32_t _lez()</div><div class="ttdoc">Leading zeroes in binary.</div><div class="ttdef"><b>Definition</b> uint128_t.hpp:140</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -845,7 +845,7 @@ Here is the call graph for this function:</div>
 
 <p>returns lower 64-bit integer part </p>
 <dl class="section return"><dt>Returns</dt><dd>returns lower 64-bit integer part </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  201</span>{ <span class="keywordflow">return</span> s; }</div>
+<div class="fragment"><div class="line"><span class="lineno">  202</span>{ <span class="keywordflow">return</span> s; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -874,7 +874,7 @@ Here is the call graph for this function:</div>
 
 <p>casting operator to boolean value </p>
 <dl class="section return"><dt>Returns</dt><dd>true if value of this is non-zero, else false </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  184</span>{ <span class="keywordflow">return</span> (f || s); }</div>
+<div class="fragment"><div class="line"><span class="lineno">  185</span>{ <span class="keywordflow">return</span> (f || s); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -911,9 +911,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>integer value casted to mentioned type </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  193</span>                                       {</div>
-<div class="line"><span class="lineno">  194</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(s);</div>
-<div class="line"><span class="lineno">  195</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  194</span>                                       {</div>
+<div class="line"><span class="lineno">  195</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(s);</div>
+<div class="line"><span class="lineno">  196</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -942,7 +942,7 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
 
 <p>operator ! for <a class="el" href="../../db/d9a/classuint128__t.html" title="class for 128-bit unsigned integer">uint128_t</a> </p>
 <dl class="section return"><dt>Returns</dt><dd>true if this has zero value, else false </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  627</span>{ <span class="keywordflow">return</span> !f &amp;&amp; !s; }</div>
+<div class="fragment"><div class="line"><span class="lineno">  628</span>{ <span class="keywordflow">return</span> !f &amp;&amp; !s; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -985,9 +985,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if this is not equal to other, else false </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  721</span>                                          {</div>
-<div class="line"><span class="lineno">  722</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span> != <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(other);</div>
-<div class="line"><span class="lineno">  723</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  722</span>                                          {</div>
+<div class="line"><span class="lineno">  723</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span> != <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(other);</div>
+<div class="line"><span class="lineno">  724</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1022,9 +1022,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if this is not equal than other, else false </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  619</span>                                                   {</div>
-<div class="line"><span class="lineno">  620</span>        <span class="keywordflow">return</span> f != other.f || s != other.s;</div>
-<div class="line"><span class="lineno">  621</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  620</span>                                                   {</div>
+<div class="line"><span class="lineno">  621</span>        <span class="keywordflow">return</span> f != other.f || s != other.s;</div>
+<div class="line"><span class="lineno">  622</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1067,9 +1067,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>unsigned 128-bit remainder. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  542</span>                                           {</div>
-<div class="line"><span class="lineno">  543</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span> % <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p);</div>
-<div class="line"><span class="lineno">  544</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  543</span>                                           {</div>
+<div class="line"><span class="lineno">  544</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span> % <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p);</div>
+<div class="line"><span class="lineno">  545</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1104,8 +1104,8 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>unsigned 128-bit remainder. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  532</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#a8bf81f7f5f5c98f197822ec88e106c6c">divide</a>(p).second; }</div>
-<div class="ttc" id="aclassuint128__t_html_a8bf81f7f5f5c98f197822ec88e106c6c"><div class="ttname"><a href="#a8bf81f7f5f5c98f197822ec88e106c6c">uint128_t::divide</a></div><div class="ttdeci">std::pair&lt; uint128_t, uint128_t &gt; divide(const uint128_t &amp;p)</div><div class="ttdoc">divide function for uint128_t and other integer types.</div><div class="ttdef"><b>Definition</b> uint128_t.hpp:454</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  533</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#a8bf81f7f5f5c98f197822ec88e106c6c">divide</a>(p).second; }</div>
+<div class="ttc" id="aclassuint128__t_html_a8bf81f7f5f5c98f197822ec88e106c6c"><div class="ttname"><a href="#a8bf81f7f5f5c98f197822ec88e106c6c">uint128_t::divide</a></div><div class="ttdeci">std::pair&lt; uint128_t, uint128_t &gt; divide(const uint128_t &amp;p)</div><div class="ttdoc">divide function for uint128_t and other integer types.</div><div class="ttdef"><b>Definition</b> uint128_t.hpp:455</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1153,10 +1153,10 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>this set as unsigned 128-bit remainder. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  564</span>                                             {</div>
-<div class="line"><span class="lineno">  565</span>        *<span class="keyword">this</span> %= <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p);</div>
-<div class="line"><span class="lineno">  566</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  567</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  565</span>                                             {</div>
+<div class="line"><span class="lineno">  566</span>        *<span class="keyword">this</span> %= <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p);</div>
+<div class="line"><span class="lineno">  567</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  568</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1191,10 +1191,10 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>this set as unsigned 128-bit remainder. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  551</span>                                                     {</div>
-<div class="line"><span class="lineno">  552</span>        *<span class="keyword">this</span> = <a class="code hl_function" href="#a8bf81f7f5f5c98f197822ec88e106c6c">divide</a>(p).second;</div>
-<div class="line"><span class="lineno">  553</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  554</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  552</span>                                                     {</div>
+<div class="line"><span class="lineno">  553</span>        *<span class="keyword">this</span> = <a class="code hl_function" href="#a8bf81f7f5f5c98f197822ec88e106c6c">divide</a>(p).second;</div>
+<div class="line"><span class="lineno">  554</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  555</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1242,10 +1242,10 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>value of this &amp; p (&amp; is bit-wise operator) </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  855</span>                                   {</div>
-<div class="line"><span class="lineno">  856</span>        <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a> tmp = *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  857</span>        <span class="keywordflow">return</span> tmp &amp; <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p);</div>
-<div class="line"><span class="lineno">  858</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  856</span>                                   {</div>
+<div class="line"><span class="lineno">  857</span>        <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a> tmp = *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  858</span>        <span class="keywordflow">return</span> tmp &amp; <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p);</div>
+<div class="line"><span class="lineno">  859</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1280,9 +1280,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>value of this &amp; p (&amp; is bit-wise operator) </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  843</span>                                                   {</div>
-<div class="line"><span class="lineno">  844</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(this-&gt;f &amp; p.f, this-&gt;s &amp; p.s);</div>
-<div class="line"><span class="lineno">  845</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  844</span>                                                   {</div>
+<div class="line"><span class="lineno">  845</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(this-&gt;f &amp; p.f, this-&gt;s &amp; p.s);</div>
+<div class="line"><span class="lineno">  846</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1325,9 +1325,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if this is both values are non-zero, else false </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  733</span>                                      {</div>
-<div class="line"><span class="lineno">  734</span>        <span class="keywordflow">return</span> (f || s) &amp;&amp; b;</div>
-<div class="line"><span class="lineno">  735</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  734</span>                                      {</div>
+<div class="line"><span class="lineno">  735</span>        <span class="keywordflow">return</span> (f || s) &amp;&amp; b;</div>
+<div class="line"><span class="lineno">  736</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1362,9 +1362,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if both of the values are not zero, else false </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  634</span>                                               {</div>
-<div class="line"><span class="lineno">  635</span>        <span class="keywordflow">return</span> (s || f) &amp;&amp; (b.s || b.f);</div>
-<div class="line"><span class="lineno">  636</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  635</span>                                               {</div>
+<div class="line"><span class="lineno">  636</span>        <span class="keywordflow">return</span> (s || f) &amp;&amp; (b.s || b.f);</div>
+<div class="line"><span class="lineno">  637</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1407,10 +1407,10 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>this = this &amp; p (&amp; is bit-wise operator) </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  879</span>                                     {</div>
-<div class="line"><span class="lineno">  880</span>        *<span class="keyword">this</span> &amp;= <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p);</div>
-<div class="line"><span class="lineno">  881</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  882</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  880</span>                                     {</div>
+<div class="line"><span class="lineno">  881</span>        *<span class="keyword">this</span> &amp;= <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p);</div>
+<div class="line"><span class="lineno">  882</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  883</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1445,11 +1445,11 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>this = this &amp; p (&amp; is bit-wise operator) </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  865</span>                                              {</div>
-<div class="line"><span class="lineno">  866</span>        this-&gt;f &amp;= p.f;</div>
-<div class="line"><span class="lineno">  867</span>        this-&gt;s &amp;= p.s;</div>
-<div class="line"><span class="lineno">  868</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  869</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  866</span>                                              {</div>
+<div class="line"><span class="lineno">  867</span>        this-&gt;f &amp;= p.f;</div>
+<div class="line"><span class="lineno">  868</span>        this-&gt;s &amp;= p.s;</div>
+<div class="line"><span class="lineno">  869</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  870</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1478,7 +1478,7 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
 
 <p>operator () for <a class="el" href="../../db/d9a/classuint128__t.html" title="class for 128-bit unsigned integer">uint128_t</a> </p>
 <dl class="section return"><dt>Returns</dt><dd>true if this value is non-zero, else false </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  651</span>{ <span class="keywordflow">return</span> s || f; }</div>
+<div class="fragment"><div class="line"><span class="lineno">  652</span>{ <span class="keywordflow">return</span> s || f; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1521,9 +1521,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>multiplication of this and p, returning <a class="el" href="../../db/d9a/classuint128__t.html" title="class for 128-bit unsigned integer">uint128_t</a> integer </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  392</span>                                          {</div>
-<div class="line"><span class="lineno">  393</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span> * <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p);</div>
-<div class="line"><span class="lineno">  394</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  393</span>                                          {</div>
+<div class="line"><span class="lineno">  394</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span> * <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p);</div>
+<div class="line"><span class="lineno">  395</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1558,19 +1558,19 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>multiplication of this and p, returning <a class="el" href="../../db/d9a/classuint128__t.html" title="class for 128-bit unsigned integer">uint128_t</a> integer </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  401</span>                                            {</div>
-<div class="line"><span class="lineno">  402</span>        uint64_t f_first = s &gt;&gt; 32, f_second = s &amp; 0xFFFFFFFF,</div>
-<div class="line"><span class="lineno">  403</span>                 s_first = p.s &gt;&gt; 32, s_second = p.s &amp; 0xFFFFFFFF;</div>
-<div class="line"><span class="lineno">  404</span>        uint64_t fi = f_first * s_first, se = f_first * s_second,</div>
-<div class="line"><span class="lineno">  405</span>                 th = s_first * f_second, fo = s_second * f_second;</div>
-<div class="line"><span class="lineno">  406</span>        uint64_t tmp = ((se &amp; 0xFFFFFFFF) &lt;&lt; 32), tmp2 = (th &amp; 0xFFFFFFFF)</div>
-<div class="line"><span class="lineno">  407</span>                                                         &lt;&lt; 32;</div>
-<div class="line"><span class="lineno">  408</span>        <span class="keywordtype">int</span> cc = (tmp + tmp2 &lt; tmp);</div>
-<div class="line"><span class="lineno">  409</span>        tmp += tmp2;</div>
-<div class="line"><span class="lineno">  410</span>        cc += (tmp + fo &lt; tmp);</div>
-<div class="line"><span class="lineno">  411</span>        uint64_t carry = fi + (se &gt;&gt; 32) + (th &gt;&gt; 32);</div>
-<div class="line"><span class="lineno">  412</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(this-&gt;f * p.s + this-&gt;s * p.f + carry + cc, tmp + fo);</div>
-<div class="line"><span class="lineno">  413</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  402</span>                                            {</div>
+<div class="line"><span class="lineno">  403</span>        uint64_t f_first = s &gt;&gt; 32, f_second = s &amp; 0xFFFFFFFF,</div>
+<div class="line"><span class="lineno">  404</span>                 s_first = p.s &gt;&gt; 32, s_second = p.s &amp; 0xFFFFFFFF;</div>
+<div class="line"><span class="lineno">  405</span>        uint64_t fi = f_first * s_first, se = f_first * s_second,</div>
+<div class="line"><span class="lineno">  406</span>                 th = s_first * f_second, fo = s_second * f_second;</div>
+<div class="line"><span class="lineno">  407</span>        uint64_t tmp = ((se &amp; 0xFFFFFFFF) &lt;&lt; 32), tmp2 = (th &amp; 0xFFFFFFFF)</div>
+<div class="line"><span class="lineno">  408</span>                                                         &lt;&lt; 32;</div>
+<div class="line"><span class="lineno">  409</span>        <span class="keywordtype">int</span> cc = (tmp + tmp2 &lt; tmp);</div>
+<div class="line"><span class="lineno">  410</span>        tmp += tmp2;</div>
+<div class="line"><span class="lineno">  411</span>        cc += (tmp + fo &lt; tmp);</div>
+<div class="line"><span class="lineno">  412</span>        uint64_t carry = fi + (se &gt;&gt; 32) + (th &gt;&gt; 32);</div>
+<div class="line"><span class="lineno">  413</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(this-&gt;f * p.s + this-&gt;s * p.f + carry + cc, tmp + fo);</div>
+<div class="line"><span class="lineno">  414</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1613,10 +1613,10 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>multiplication of this and p, returning this </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  423</span>                                            {</div>
-<div class="line"><span class="lineno">  424</span>        *<span class="keyword">this</span> *= <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p);</div>
-<div class="line"><span class="lineno">  425</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  426</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  424</span>                                            {</div>
+<div class="line"><span class="lineno">  425</span>        *<span class="keyword">this</span> *= <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p);</div>
+<div class="line"><span class="lineno">  426</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  427</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1651,20 +1651,20 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>multiplication of this and p, returning this </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  433</span>                                              {</div>
-<div class="line"><span class="lineno">  434</span>        uint64_t f_first = s &gt;&gt; 32, f_second = s &amp; 0xFFFFFFFF,</div>
-<div class="line"><span class="lineno">  435</span>                 s_first = p.s &gt;&gt; 32, s_second = p.s &amp; 0xFFFFFFFF;</div>
-<div class="line"><span class="lineno">  436</span>        uint64_t fi = f_first * s_first, se = f_first * s_second,</div>
-<div class="line"><span class="lineno">  437</span>                 th = s_first * f_second, fo = s_second * f_second;</div>
-<div class="line"><span class="lineno">  438</span>        uint64_t tmp = (se &lt;&lt; 32), tmp2 = (th &lt;&lt; 32);</div>
-<div class="line"><span class="lineno">  439</span>        <span class="keywordtype">int</span> cc = (tmp + tmp2 &lt; tmp);</div>
-<div class="line"><span class="lineno">  440</span>        tmp += tmp2;</div>
-<div class="line"><span class="lineno">  441</span>        cc += (tmp + fo &lt; tmp);</div>
-<div class="line"><span class="lineno">  442</span>        uint64_t carry = fi + (se &gt;&gt; 32) + (th &gt;&gt; 32);</div>
-<div class="line"><span class="lineno">  443</span>        f = this-&gt;f * p.s + this-&gt;s * p.f + carry + cc;</div>
-<div class="line"><span class="lineno">  444</span>        s = tmp + fo;</div>
-<div class="line"><span class="lineno">  445</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  446</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  434</span>                                              {</div>
+<div class="line"><span class="lineno">  435</span>        uint64_t f_first = s &gt;&gt; 32, f_second = s &amp; 0xFFFFFFFF,</div>
+<div class="line"><span class="lineno">  436</span>                 s_first = p.s &gt;&gt; 32, s_second = p.s &amp; 0xFFFFFFFF;</div>
+<div class="line"><span class="lineno">  437</span>        uint64_t fi = f_first * s_first, se = f_first * s_second,</div>
+<div class="line"><span class="lineno">  438</span>                 th = s_first * f_second, fo = s_second * f_second;</div>
+<div class="line"><span class="lineno">  439</span>        uint64_t tmp = (se &lt;&lt; 32), tmp2 = (th &lt;&lt; 32);</div>
+<div class="line"><span class="lineno">  440</span>        <span class="keywordtype">int</span> cc = (tmp + tmp2 &lt; tmp);</div>
+<div class="line"><span class="lineno">  441</span>        tmp += tmp2;</div>
+<div class="line"><span class="lineno">  442</span>        cc += (tmp + fo &lt; tmp);</div>
+<div class="line"><span class="lineno">  443</span>        uint64_t carry = fi + (se &gt;&gt; 32) + (th &gt;&gt; 32);</div>
+<div class="line"><span class="lineno">  444</span>        f = this-&gt;f * p.s + this-&gt;s * p.f + carry + cc;</div>
+<div class="line"><span class="lineno">  445</span>        s = tmp + fo;</div>
+<div class="line"><span class="lineno">  446</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  447</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1707,9 +1707,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>addition of this and p, returning <a class="el" href="../../db/d9a/classuint128__t.html" title="class for 128-bit unsigned integer">uint128_t</a> integer </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  252</span>                                          {</div>
-<div class="line"><span class="lineno">  253</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(f + (p + s &lt; s), p + s);</div>
-<div class="line"><span class="lineno">  254</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  253</span>                                          {</div>
+<div class="line"><span class="lineno">  254</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(f + (p + s &lt; s), p + s);</div>
+<div class="line"><span class="lineno">  255</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1744,9 +1744,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>addition of this and p, returning <a class="el" href="../../db/d9a/classuint128__t.html" title="class for 128-bit unsigned integer">uint128_t</a> integer </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  261</span>                                                   {</div>
-<div class="line"><span class="lineno">  262</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(f + (p.s + s &lt; s) + p.f, p.s + s);</div>
-<div class="line"><span class="lineno">  263</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  262</span>                                                   {</div>
+<div class="line"><span class="lineno">  263</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(f + (p.s + s &lt; s) + p.f, p.s + s);</div>
+<div class="line"><span class="lineno">  264</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1775,10 +1775,10 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
 
 <p>pre-increment operator </p>
 <dl class="section return"><dt>Returns</dt><dd>incremented value of this. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  296</span>                                   {</div>
-<div class="line"><span class="lineno">  297</span>        *<span class="keyword">this</span> += 1;</div>
-<div class="line"><span class="lineno">  298</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  299</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  297</span>                                   {</div>
+<div class="line"><span class="lineno">  298</span>        *<span class="keyword">this</span> += 1;</div>
+<div class="line"><span class="lineno">  299</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  300</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1807,10 +1807,10 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
 
 <p>post-increment operator </p>
 <dl class="section return"><dt>Returns</dt><dd>incremented value of this. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  305</span>                                     {</div>
-<div class="line"><span class="lineno">  306</span>        ++*<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  307</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  308</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  306</span>                                     {</div>
+<div class="line"><span class="lineno">  307</span>        ++*<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  308</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  309</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1853,12 +1853,12 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>addition of this and p, returning this </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  273</span>                                            {</div>
-<div class="line"><span class="lineno">  274</span>        <span class="keywordtype">bool</span> app = p + s &lt; s;</div>
-<div class="line"><span class="lineno">  275</span>        this-&gt;f += app;</div>
-<div class="line"><span class="lineno">  276</span>        this-&gt;s += p;</div>
-<div class="line"><span class="lineno">  277</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  278</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  274</span>                                            {</div>
+<div class="line"><span class="lineno">  275</span>        <span class="keywordtype">bool</span> app = p + s &lt; s;</div>
+<div class="line"><span class="lineno">  276</span>        this-&gt;f += app;</div>
+<div class="line"><span class="lineno">  277</span>        this-&gt;s += p;</div>
+<div class="line"><span class="lineno">  278</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  279</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1893,12 +1893,12 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>addition of this and p, returning this </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  285</span>                                              {</div>
-<div class="line"><span class="lineno">  286</span>        <span class="keywordtype">bool</span> app = p.s + s &lt; s;</div>
-<div class="line"><span class="lineno">  287</span>        f = f + app + p.f;</div>
-<div class="line"><span class="lineno">  288</span>        s = p.s + s;</div>
-<div class="line"><span class="lineno">  289</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  290</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  286</span>                                              {</div>
+<div class="line"><span class="lineno">  287</span>        <span class="keywordtype">bool</span> app = p.s + s &lt; s;</div>
+<div class="line"><span class="lineno">  288</span>        f = f + app + p.f;</div>
+<div class="line"><span class="lineno">  289</span>        s = p.s + s;</div>
+<div class="line"><span class="lineno">  290</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  291</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1927,7 +1927,7 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
 
 <p>operator - using twos complement </p>
 <dl class="section return"><dt>Returns</dt><dd>2's complement of this. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  337</span>{ <span class="keywordflow">return</span> ~*<span class="keyword">this</span> + <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(1); }</div>
+<div class="fragment"><div class="line"><span class="lineno">  338</span>{ <span class="keywordflow">return</span> ~*<span class="keyword">this</span> + <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(1); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1970,10 +1970,10 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>subtraction of this and p, returning <a class="el" href="../../db/d9a/classuint128__t.html" title="class for 128-bit unsigned integer">uint128_t</a> integer </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  318</span>                                           {</div>
-<div class="line"><span class="lineno">  319</span>        <span class="keywordtype">bool</span> app = p &gt; s;</div>
-<div class="line"><span class="lineno">  320</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(f - app, s - p);</div>
-<div class="line"><span class="lineno">  321</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  319</span>                                           {</div>
+<div class="line"><span class="lineno">  320</span>        <span class="keywordtype">bool</span> app = p &gt; s;</div>
+<div class="line"><span class="lineno">  321</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(f - app, s - p);</div>
+<div class="line"><span class="lineno">  322</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2008,10 +2008,10 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>subtraction of this and p, returning <a class="el" href="../../db/d9a/classuint128__t.html" title="class for 128-bit unsigned integer">uint128_t</a> integer </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  328</span>                                                   {</div>
-<div class="line"><span class="lineno">  329</span>        <span class="keywordtype">bool</span> app = p.s &gt; s;</div>
-<div class="line"><span class="lineno">  330</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(f - p.f - app, s - p.s);</div>
-<div class="line"><span class="lineno">  331</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  329</span>                                                   {</div>
+<div class="line"><span class="lineno">  330</span>        <span class="keywordtype">bool</span> app = p.s &gt; s;</div>
+<div class="line"><span class="lineno">  331</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(f - p.f - app, s - p.s);</div>
+<div class="line"><span class="lineno">  332</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2040,10 +2040,10 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
 
 <p>operator &ndash; (pre-decrement) </p>
 <dl class="section return"><dt>Returns</dt><dd>decremented value of this </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  343</span>                                   {</div>
-<div class="line"><span class="lineno">  344</span>        *<span class="keyword">this</span> -= 1;</div>
-<div class="line"><span class="lineno">  345</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  346</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  344</span>                                   {</div>
+<div class="line"><span class="lineno">  345</span>        *<span class="keyword">this</span> -= 1;</div>
+<div class="line"><span class="lineno">  346</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  347</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2072,10 +2072,10 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
 
 <p>operator &ndash; (post-decrement) </p>
 <dl class="section return"><dt>Returns</dt><dd>decremented value of this </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  352</span>                                       {</div>
-<div class="line"><span class="lineno">  353</span>        --*<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  354</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  355</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  353</span>                                       {</div>
+<div class="line"><span class="lineno">  354</span>        --*<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  355</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  356</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2118,12 +2118,12 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>subtraction of this and p, returning this </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  365</span>                                      {</div>
-<div class="line"><span class="lineno">  366</span>        <span class="keywordtype">bool</span> app = p &gt; s;</div>
-<div class="line"><span class="lineno">  367</span>        f -= app;</div>
-<div class="line"><span class="lineno">  368</span>        s -= p;</div>
-<div class="line"><span class="lineno">  369</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  370</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  366</span>                                      {</div>
+<div class="line"><span class="lineno">  367</span>        <span class="keywordtype">bool</span> app = p &gt; s;</div>
+<div class="line"><span class="lineno">  368</span>        f -= app;</div>
+<div class="line"><span class="lineno">  369</span>        s -= p;</div>
+<div class="line"><span class="lineno">  370</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  371</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2158,12 +2158,12 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>subtraction of this and p, returning this </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  377</span>                                              {</div>
-<div class="line"><span class="lineno">  378</span>        <span class="keywordtype">bool</span> app = p.s &gt; s;</div>
-<div class="line"><span class="lineno">  379</span>        f = f - p.f - app;</div>
-<div class="line"><span class="lineno">  380</span>        s = s - p.s;</div>
-<div class="line"><span class="lineno">  381</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  382</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  378</span>                                              {</div>
+<div class="line"><span class="lineno">  379</span>        <span class="keywordtype">bool</span> app = p.s &gt; s;</div>
+<div class="line"><span class="lineno">  380</span>        f = f - p.f - app;</div>
+<div class="line"><span class="lineno">  381</span>        s = s - p.s;</div>
+<div class="line"><span class="lineno">  382</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  383</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2206,11 +2206,11 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>unsigned 128-bit quotient. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  498</span>                                          {</div>
-<div class="line"><span class="lineno">  499</span>        <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a> tmp = *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  500</span>        tmp /= <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(0, p);</div>
-<div class="line"><span class="lineno">  501</span>        <span class="keywordflow">return</span> tmp;</div>
-<div class="line"><span class="lineno">  502</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  499</span>                                          {</div>
+<div class="line"><span class="lineno">  500</span>        <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a> tmp = *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  501</span>        tmp /= <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(0, p);</div>
+<div class="line"><span class="lineno">  502</span>        <span class="keywordflow">return</span> tmp;</div>
+<div class="line"><span class="lineno">  503</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2245,7 +2245,7 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>unsigned 128-bit quotient. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  488</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#a8bf81f7f5f5c98f197822ec88e106c6c">divide</a>(p).first; }</div>
+<div class="fragment"><div class="line"><span class="lineno">  489</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#a8bf81f7f5f5c98f197822ec88e106c6c">divide</a>(p).first; }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2293,10 +2293,10 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>this set as unsigned 128-bit quotient. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  522</span>                                            {</div>
-<div class="line"><span class="lineno">  523</span>        *<span class="keyword">this</span> /= <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(0, p);</div>
-<div class="line"><span class="lineno">  524</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  525</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  523</span>                                            {</div>
+<div class="line"><span class="lineno">  524</span>        *<span class="keyword">this</span> /= <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(0, p);</div>
+<div class="line"><span class="lineno">  525</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  526</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2331,10 +2331,10 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>this set as unsigned 128-bit quotient. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  509</span>                                                     {</div>
-<div class="line"><span class="lineno">  510</span>        *<span class="keyword">this</span> = <a class="code hl_function" href="#a8bf81f7f5f5c98f197822ec88e106c6c">divide</a>(p).first;</div>
-<div class="line"><span class="lineno">  511</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  512</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  510</span>                                                     {</div>
+<div class="line"><span class="lineno">  511</span>        *<span class="keyword">this</span> = <a class="code hl_function" href="#a8bf81f7f5f5c98f197822ec88e106c6c">divide</a>(p).first;</div>
+<div class="line"><span class="lineno">  512</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  513</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2382,9 +2382,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if this is less than other, else false </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  661</span>                                         {</div>
-<div class="line"><span class="lineno">  662</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span> &lt; <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(other);</div>
-<div class="line"><span class="lineno">  663</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  662</span>                                         {</div>
+<div class="line"><span class="lineno">  663</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span> &lt; <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(other);</div>
+<div class="line"><span class="lineno">  664</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2419,9 +2419,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if this is less than other, else false </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  574</span>                                                  {</div>
-<div class="line"><span class="lineno">  575</span>        <span class="keywordflow">return</span> f &lt; other.f || (f == other.f &amp;&amp; s &lt; other.s);</div>
-<div class="line"><span class="lineno">  576</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  575</span>                                                  {</div>
+<div class="line"><span class="lineno">  576</span>        <span class="keywordflow">return</span> f &lt; other.f || (f == other.f &amp;&amp; s &lt; other.s);</div>
+<div class="line"><span class="lineno">  577</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2464,17 +2464,17 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>value of this shifted by p to left </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  764</span>                                    {</div>
-<div class="line"><span class="lineno">  765</span>        <span class="keywordflow">if</span> (!p) {</div>
-<div class="line"><span class="lineno">  766</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(f, s);</div>
-<div class="line"><span class="lineno">  767</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (p &gt;= 64 &amp;&amp; p &lt;= 128) {</div>
-<div class="line"><span class="lineno">  768</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>((this-&gt;s &lt;&lt; (p - 64)), 0);</div>
-<div class="line"><span class="lineno">  769</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (p &lt; 64 &amp;&amp; p &gt; 0) {</div>
-<div class="line"><span class="lineno">  770</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>((this-&gt;f &lt;&lt; p) + ((this-&gt;s &gt;&gt; (64 - p))),</div>
-<div class="line"><span class="lineno">  771</span>                             this-&gt;s &lt;&lt; p);</div>
-<div class="line"><span class="lineno">  772</span>        }</div>
-<div class="line"><span class="lineno">  773</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(0);</div>
-<div class="line"><span class="lineno">  774</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  765</span>                                    {</div>
+<div class="line"><span class="lineno">  766</span>        <span class="keywordflow">if</span> (!p) {</div>
+<div class="line"><span class="lineno">  767</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(f, s);</div>
+<div class="line"><span class="lineno">  768</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (p &gt;= 64 &amp;&amp; p &lt;= 128) {</div>
+<div class="line"><span class="lineno">  769</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>((this-&gt;s &lt;&lt; (p - 64)), 0);</div>
+<div class="line"><span class="lineno">  770</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (p &lt; 64 &amp;&amp; p &gt; 0) {</div>
+<div class="line"><span class="lineno">  771</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>((this-&gt;f &lt;&lt; p) + ((this-&gt;s &gt;&gt; (64 - p))),</div>
+<div class="line"><span class="lineno">  772</span>                             this-&gt;s &lt;&lt; p);</div>
+<div class="line"><span class="lineno">  773</span>        }</div>
+<div class="line"><span class="lineno">  774</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(0);</div>
+<div class="line"><span class="lineno">  775</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2517,18 +2517,18 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>this shifted by p to left </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  784</span>                                      {</div>
-<div class="line"><span class="lineno">  785</span>        <span class="keywordflow">if</span> (p) {</div>
-<div class="line"><span class="lineno">  786</span>            <span class="keywordflow">if</span> (p &gt;= 64 &amp;&amp; p &lt;= 128) {</div>
-<div class="line"><span class="lineno">  787</span>                this-&gt;f = (this-&gt;s &lt;&lt; (p - 64));</div>
-<div class="line"><span class="lineno">  788</span>                this-&gt;s = 0;</div>
-<div class="line"><span class="lineno">  789</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  790</span>                f = ((this-&gt;f &lt;&lt; p) + (this-&gt;s &gt;&gt; (64 - p)));</div>
-<div class="line"><span class="lineno">  791</span>                s = (this-&gt;s &lt;&lt; p);</div>
-<div class="line"><span class="lineno">  792</span>            }</div>
-<div class="line"><span class="lineno">  793</span>        }</div>
-<div class="line"><span class="lineno">  794</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  795</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  785</span>                                      {</div>
+<div class="line"><span class="lineno">  786</span>        <span class="keywordflow">if</span> (p) {</div>
+<div class="line"><span class="lineno">  787</span>            <span class="keywordflow">if</span> (p &gt;= 64 &amp;&amp; p &lt;= 128) {</div>
+<div class="line"><span class="lineno">  788</span>                this-&gt;f = (this-&gt;s &lt;&lt; (p - 64));</div>
+<div class="line"><span class="lineno">  789</span>                this-&gt;s = 0;</div>
+<div class="line"><span class="lineno">  790</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  791</span>                f = ((this-&gt;f &lt;&lt; p) + (this-&gt;s &gt;&gt; (64 - p)));</div>
+<div class="line"><span class="lineno">  792</span>                s = (this-&gt;s &lt;&lt; p);</div>
+<div class="line"><span class="lineno">  793</span>            }</div>
+<div class="line"><span class="lineno">  794</span>        }</div>
+<div class="line"><span class="lineno">  795</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  796</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2571,9 +2571,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if this is less than or equal to other, else false </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  673</span>                                          {</div>
-<div class="line"><span class="lineno">  674</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span> &lt;= <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(other);</div>
-<div class="line"><span class="lineno">  675</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  674</span>                                          {</div>
+<div class="line"><span class="lineno">  675</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span> &lt;= <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(other);</div>
+<div class="line"><span class="lineno">  676</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2608,9 +2608,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if this is less than or equal to other, else false </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  583</span>                                                   {</div>
-<div class="line"><span class="lineno">  584</span>        <span class="keywordflow">return</span> f &lt; other.f || (f == other.f &amp;&amp; s &lt;= other.s);</div>
-<div class="line"><span class="lineno">  585</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  584</span>                                                   {</div>
+<div class="line"><span class="lineno">  585</span>        <span class="keywordflow">return</span> f &lt; other.f || (f == other.f &amp;&amp; s &lt;= other.s);</div>
+<div class="line"><span class="lineno">  586</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2645,10 +2645,10 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>this pointer with it's value equal to <code>p</code> </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  227</span>                                                    {</div>
-<div class="line"><span class="lineno">  228</span>        this-&gt;<a class="code hl_function" href="#a857a3c69c1e775a1bd3935c2bfbb02df">__get_integer_from_string</a>(p);</div>
-<div class="line"><span class="lineno">  229</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  230</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  228</span>                                                    {</div>
+<div class="line"><span class="lineno">  229</span>        this-&gt;<a class="code hl_function" href="#a857a3c69c1e775a1bd3935c2bfbb02df">__get_integer_from_string</a>(p);</div>
+<div class="line"><span class="lineno">  230</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  231</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2696,10 +2696,10 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>this pointer with it's value equal to <code>p</code> </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  217</span>                                            {</div>
-<div class="line"><span class="lineno">  218</span>        this-&gt;s = p;</div>
-<div class="line"><span class="lineno">  219</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  220</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  218</span>                                            {</div>
+<div class="line"><span class="lineno">  219</span>        this-&gt;s = p;</div>
+<div class="line"><span class="lineno">  220</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  221</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2776,9 +2776,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if this is equal to other, else false </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  709</span>                                          {</div>
-<div class="line"><span class="lineno">  710</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span> == <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(other);</div>
-<div class="line"><span class="lineno">  711</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  710</span>                                          {</div>
+<div class="line"><span class="lineno">  711</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span> == <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(other);</div>
+<div class="line"><span class="lineno">  712</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2813,9 +2813,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if this is equal than other, else false </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  610</span>                                                   {</div>
-<div class="line"><span class="lineno">  611</span>        <span class="keywordflow">return</span> f == other.f &amp;&amp; s == other.s;</div>
-<div class="line"><span class="lineno">  612</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  611</span>                                                   {</div>
+<div class="line"><span class="lineno">  612</span>        <span class="keywordflow">return</span> f == other.f &amp;&amp; s == other.s;</div>
+<div class="line"><span class="lineno">  613</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2858,9 +2858,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if this is greater than other, else false </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  685</span>                                         {</div>
-<div class="line"><span class="lineno">  686</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span> &gt; <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(other);</div>
-<div class="line"><span class="lineno">  687</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  686</span>                                         {</div>
+<div class="line"><span class="lineno">  687</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span> &gt; <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(other);</div>
+<div class="line"><span class="lineno">  688</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2895,9 +2895,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if this is greater than other, else false </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  592</span>                                                  {</div>
-<div class="line"><span class="lineno">  593</span>        <span class="keywordflow">return</span> f &gt; other.f || (f == other.f &amp;&amp; s &gt; other.s);</div>
-<div class="line"><span class="lineno">  594</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  593</span>                                                  {</div>
+<div class="line"><span class="lineno">  594</span>        <span class="keywordflow">return</span> f &gt; other.f || (f == other.f &amp;&amp; s &gt; other.s);</div>
+<div class="line"><span class="lineno">  595</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2940,9 +2940,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if this is greater than or equal other, else false </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  697</span>                                          {</div>
-<div class="line"><span class="lineno">  698</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span> &gt;= <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(other);</div>
-<div class="line"><span class="lineno">  699</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  698</span>                                          {</div>
+<div class="line"><span class="lineno">  699</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span> &gt;= <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(other);</div>
+<div class="line"><span class="lineno">  700</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2977,9 +2977,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if this is greater than or equal than other, else false </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  601</span>                                                   {</div>
-<div class="line"><span class="lineno">  602</span>        <span class="keywordflow">return</span> (f &gt; other.f) || (f == other.f &amp;&amp; s &gt;= other.s);</div>
-<div class="line"><span class="lineno">  603</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  602</span>                                                   {</div>
+<div class="line"><span class="lineno">  603</span>        <span class="keywordflow">return</span> (f &gt; other.f) || (f == other.f &amp;&amp; s &gt;= other.s);</div>
+<div class="line"><span class="lineno">  604</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3022,17 +3022,17 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>value of this shifted by p to right </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  805</span>                                    {</div>
-<div class="line"><span class="lineno">  806</span>        <span class="keywordflow">if</span> (!p) {</div>
-<div class="line"><span class="lineno">  807</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(this-&gt;f, this-&gt;s);</div>
-<div class="line"><span class="lineno">  808</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (p &gt;= 64 &amp;&amp; p &lt;= 128) {</div>
-<div class="line"><span class="lineno">  809</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(0, (this-&gt;f &gt;&gt; (p - 64)));</div>
-<div class="line"><span class="lineno">  810</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (p &lt; 64 &amp;&amp; p &gt; 0) {</div>
-<div class="line"><span class="lineno">  811</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>((this-&gt;f &gt;&gt; p),</div>
-<div class="line"><span class="lineno">  812</span>                             (this-&gt;s &gt;&gt; p) + (this-&gt;f &lt;&lt; (64 - p)));</div>
-<div class="line"><span class="lineno">  813</span>        }</div>
-<div class="line"><span class="lineno">  814</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(0);</div>
-<div class="line"><span class="lineno">  815</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  806</span>                                    {</div>
+<div class="line"><span class="lineno">  807</span>        <span class="keywordflow">if</span> (!p) {</div>
+<div class="line"><span class="lineno">  808</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(this-&gt;f, this-&gt;s);</div>
+<div class="line"><span class="lineno">  809</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (p &gt;= 64 &amp;&amp; p &lt;= 128) {</div>
+<div class="line"><span class="lineno">  810</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(0, (this-&gt;f &gt;&gt; (p - 64)));</div>
+<div class="line"><span class="lineno">  811</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (p &lt; 64 &amp;&amp; p &gt; 0) {</div>
+<div class="line"><span class="lineno">  812</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>((this-&gt;f &gt;&gt; p),</div>
+<div class="line"><span class="lineno">  813</span>                             (this-&gt;s &gt;&gt; p) + (this-&gt;f &lt;&lt; (64 - p)));</div>
+<div class="line"><span class="lineno">  814</span>        }</div>
+<div class="line"><span class="lineno">  815</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(0);</div>
+<div class="line"><span class="lineno">  816</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3075,18 +3075,18 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>this shifted by p to right </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  825</span>                                      {</div>
-<div class="line"><span class="lineno">  826</span>        <span class="keywordflow">if</span> (p) {</div>
-<div class="line"><span class="lineno">  827</span>            <span class="keywordflow">if</span> (p &gt;= 64) {</div>
-<div class="line"><span class="lineno">  828</span>                f = 0;</div>
-<div class="line"><span class="lineno">  829</span>                s = (this-&gt;f &gt;&gt; (p - 64));</div>
-<div class="line"><span class="lineno">  830</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  831</span>                s = (this-&gt;s &gt;&gt; p) + (this-&gt;f &lt;&lt; (64 - p));</div>
-<div class="line"><span class="lineno">  832</span>                f = (this-&gt;f &gt;&gt; p);</div>
-<div class="line"><span class="lineno">  833</span>            }</div>
-<div class="line"><span class="lineno">  834</span>        }</div>
-<div class="line"><span class="lineno">  835</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  836</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  826</span>                                      {</div>
+<div class="line"><span class="lineno">  827</span>        <span class="keywordflow">if</span> (p) {</div>
+<div class="line"><span class="lineno">  828</span>            <span class="keywordflow">if</span> (p &gt;= 64) {</div>
+<div class="line"><span class="lineno">  829</span>                f = 0;</div>
+<div class="line"><span class="lineno">  830</span>                s = (this-&gt;f &gt;&gt; (p - 64));</div>
+<div class="line"><span class="lineno">  831</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  832</span>                s = (this-&gt;s &gt;&gt; p) + (this-&gt;f &lt;&lt; (64 - p));</div>
+<div class="line"><span class="lineno">  833</span>                f = (this-&gt;f &gt;&gt; p);</div>
+<div class="line"><span class="lineno">  834</span>            }</div>
+<div class="line"><span class="lineno">  835</span>        }</div>
+<div class="line"><span class="lineno">  836</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  837</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3129,9 +3129,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>value of this ^ p (^ is bit-wise <a class="el" href="../../d7/d47/namespace_x_o_r.html" title="Functions for XOR cipher algorithm.">XOR</a> operator) </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  937</span>                                          {</div>
-<div class="line"><span class="lineno">  938</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(this-&gt;f, this-&gt;s ^ p);</div>
-<div class="line"><span class="lineno">  939</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  938</span>                                          {</div>
+<div class="line"><span class="lineno">  939</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(this-&gt;f, this-&gt;s ^ p);</div>
+<div class="line"><span class="lineno">  940</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3166,9 +3166,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>value of this ^ p (^ is bit-wise <a class="el" href="../../d7/d47/namespace_x_o_r.html" title="Functions for XOR cipher algorithm.">XOR</a> operator) </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  946</span>                                                   {</div>
-<div class="line"><span class="lineno">  947</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(this-&gt;f ^ p.f, this-&gt;s ^ p.s);</div>
-<div class="line"><span class="lineno">  948</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  947</span>                                                   {</div>
+<div class="line"><span class="lineno">  948</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(this-&gt;f ^ p.f, this-&gt;s ^ p.s);</div>
+<div class="line"><span class="lineno">  949</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3211,10 +3211,10 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>this = this ^ p (^ is bit-wise <a class="el" href="../../d7/d47/namespace_x_o_r.html" title="Functions for XOR cipher algorithm.">XOR</a> operator) </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  969</span>                                             {</div>
-<div class="line"><span class="lineno">  970</span>        s ^= p;</div>
-<div class="line"><span class="lineno">  971</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  972</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  970</span>                                             {</div>
+<div class="line"><span class="lineno">  971</span>        s ^= p;</div>
+<div class="line"><span class="lineno">  972</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  973</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3249,11 +3249,11 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>this = this ^ p (^ is bit-wise <a class="el" href="../../d7/d47/namespace_x_o_r.html" title="Functions for XOR cipher algorithm.">XOR</a> operator) </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  955</span>                                              {</div>
-<div class="line"><span class="lineno">  956</span>        f ^= p.f;</div>
-<div class="line"><span class="lineno">  957</span>        s ^= p.s;</div>
-<div class="line"><span class="lineno">  958</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  959</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  956</span>                                              {</div>
+<div class="line"><span class="lineno">  957</span>        f ^= p.f;</div>
+<div class="line"><span class="lineno">  958</span>        s ^= p.s;</div>
+<div class="line"><span class="lineno">  959</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  960</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3296,9 +3296,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>value of this | p (| is bit-wise operator) </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  892</span>                                          {</div>
-<div class="line"><span class="lineno">  893</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p | s);</div>
-<div class="line"><span class="lineno">  894</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  893</span>                                          {</div>
+<div class="line"><span class="lineno">  894</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p | s);</div>
+<div class="line"><span class="lineno">  895</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3333,9 +3333,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>value of this | p (| is bit-wise OR operator) </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  901</span>                                                   {</div>
-<div class="line"><span class="lineno">  902</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(this-&gt;f | p.f, this-&gt;s | p.s);</div>
-<div class="line"><span class="lineno">  903</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  902</span>                                                   {</div>
+<div class="line"><span class="lineno">  903</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(this-&gt;f | p.f, this-&gt;s | p.s);</div>
+<div class="line"><span class="lineno">  904</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3378,10 +3378,10 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>this = this | p (| is bit-wise OR operator) </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  924</span>                                            {</div>
-<div class="line"><span class="lineno">  925</span>        s |= p.s;</div>
-<div class="line"><span class="lineno">  926</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  927</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  925</span>                                            {</div>
+<div class="line"><span class="lineno">  926</span>        s |= p.s;</div>
+<div class="line"><span class="lineno">  927</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  928</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3416,11 +3416,11 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>this = this | p (| is bit-wise OR operator) </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  910</span>                                              {</div>
-<div class="line"><span class="lineno">  911</span>        f |= p.f;</div>
-<div class="line"><span class="lineno">  912</span>        s |= p.s;</div>
-<div class="line"><span class="lineno">  913</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  914</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  911</span>                                              {</div>
+<div class="line"><span class="lineno">  912</span>        f |= p.f;</div>
+<div class="line"><span class="lineno">  913</span>        s |= p.s;</div>
+<div class="line"><span class="lineno">  914</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  915</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3463,9 +3463,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if this is either one of the values are non-zero, else false </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  746</span>                                      {</div>
-<div class="line"><span class="lineno">  747</span>        <span class="keywordflow">return</span> (f || s) || b;</div>
-<div class="line"><span class="lineno">  748</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  747</span>                                      {</div>
+<div class="line"><span class="lineno">  748</span>        <span class="keywordflow">return</span> (f || s) || b;</div>
+<div class="line"><span class="lineno">  749</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3500,9 +3500,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if one of the values are not zero, else false </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  643</span>                                               {</div>
-<div class="line"><span class="lineno">  644</span>        <span class="keywordflow">return</span> (s || f) || (b.s || b.f);</div>
-<div class="line"><span class="lineno">  645</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  644</span>                                               {</div>
+<div class="line"><span class="lineno">  645</span>        <span class="keywordflow">return</span> (s || f) || (b.s || b.f);</div>
+<div class="line"><span class="lineno">  646</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3531,7 +3531,7 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
 
 <p>operator ~ for <a class="el" href="../../db/d9a/classuint128__t.html" title="class for 128-bit unsigned integer">uint128_t</a> </p>
 <dl class="section return"><dt>Returns</dt><dd>1's complement of this number </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  754</span>{ <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(~this-&gt;f, ~this-&gt;s); }</div>
+<div class="fragment"><div class="line"><span class="lineno">  755</span>{ <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(~this-&gt;f, ~this-&gt;s); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3560,7 +3560,7 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
 
 <p>returns upper 64-bit integer part </p>
 <dl class="section return"><dt>Returns</dt><dd>returns upper 64-bit integer part </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  207</span>{ <span class="keywordflow">return</span> f; }</div>
+<div class="fragment"><div class="line"><span class="lineno">  208</span>{ <span class="keywordflow">return</span> f; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3602,29 +3602,29 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>op, ostream object. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  983</span>                                                                      {</div>
-<div class="line"><span class="lineno">  984</span>        <span class="keywordflow">if</span> (!p.f) {</div>
-<div class="line"><span class="lineno">  985</span>            op &lt;&lt; p.s;</div>
-<div class="line"><span class="lineno">  986</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  987</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> out = <span class="stringliteral">&quot;0&quot;</span>, p_2 = <span class="stringliteral">&quot;1&quot;</span>;</div>
-<div class="line"><span class="lineno">  988</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 64; ++i) {</div>
-<div class="line"><span class="lineno">  989</span>                <span class="keywordflow">if</span> (p.s &amp; (1LL &lt;&lt; i)) {</div>
-<div class="line"><span class="lineno">  990</span>                    out = <a class="code hl_function" href="../../da/d41/uint128__t_8hpp.html#a3ff77262ffd6743df5b808d41382a6f3">add</a>(out, p_2);</div>
-<div class="line"><span class="lineno">  991</span>                }</div>
-<div class="line"><span class="lineno">  992</span>                p_2 = <a class="code hl_function" href="../../da/d41/uint128__t_8hpp.html#a3ff77262ffd6743df5b808d41382a6f3">add</a>(p_2, p_2);</div>
-<div class="line"><span class="lineno">  993</span>            }</div>
-<div class="line"><span class="lineno">  994</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 64; ++i) {</div>
-<div class="line"><span class="lineno">  995</span>                <span class="keywordflow">if</span> (p.f &amp; (1LL &lt;&lt; i)) {</div>
-<div class="line"><span class="lineno">  996</span>                    out = <a class="code hl_function" href="../../da/d41/uint128__t_8hpp.html#a3ff77262ffd6743df5b808d41382a6f3">add</a>(out, p_2);</div>
-<div class="line"><span class="lineno">  997</span>                }</div>
-<div class="line"><span class="lineno">  998</span>                p_2 = <a class="code hl_function" href="../../da/d41/uint128__t_8hpp.html#a3ff77262ffd6743df5b808d41382a6f3">add</a>(p_2, p_2);</div>
-<div class="line"><span class="lineno">  999</span>            }</div>
-<div class="line"><span class="lineno"> 1000</span>            op &lt;&lt; out;</div>
-<div class="line"><span class="lineno"> 1001</span>        }</div>
-<div class="line"><span class="lineno"> 1002</span>        <span class="keywordflow">return</span> op;</div>
-<div class="line"><span class="lineno"> 1003</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  984</span>                                                                      {</div>
+<div class="line"><span class="lineno">  985</span>        <span class="keywordflow">if</span> (!p.f) {</div>
+<div class="line"><span class="lineno">  986</span>            op &lt;&lt; p.s;</div>
+<div class="line"><span class="lineno">  987</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  988</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> out = <span class="stringliteral">&quot;0&quot;</span>, p_2 = <span class="stringliteral">&quot;1&quot;</span>;</div>
+<div class="line"><span class="lineno">  989</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 64; ++i) {</div>
+<div class="line"><span class="lineno">  990</span>                <span class="keywordflow">if</span> (p.s &amp; (1LL &lt;&lt; i)) {</div>
+<div class="line"><span class="lineno">  991</span>                    out = <a class="code hl_function" href="../../da/d41/uint128__t_8hpp.html#a3ff77262ffd6743df5b808d41382a6f3">add</a>(out, p_2);</div>
+<div class="line"><span class="lineno">  992</span>                }</div>
+<div class="line"><span class="lineno">  993</span>                p_2 = <a class="code hl_function" href="../../da/d41/uint128__t_8hpp.html#a3ff77262ffd6743df5b808d41382a6f3">add</a>(p_2, p_2);</div>
+<div class="line"><span class="lineno">  994</span>            }</div>
+<div class="line"><span class="lineno">  995</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 64; ++i) {</div>
+<div class="line"><span class="lineno">  996</span>                <span class="keywordflow">if</span> (p.f &amp; (1LL &lt;&lt; i)) {</div>
+<div class="line"><span class="lineno">  997</span>                    out = <a class="code hl_function" href="../../da/d41/uint128__t_8hpp.html#a3ff77262ffd6743df5b808d41382a6f3">add</a>(out, p_2);</div>
+<div class="line"><span class="lineno">  998</span>                }</div>
+<div class="line"><span class="lineno">  999</span>                p_2 = <a class="code hl_function" href="../../da/d41/uint128__t_8hpp.html#a3ff77262ffd6743df5b808d41382a6f3">add</a>(p_2, p_2);</div>
+<div class="line"><span class="lineno"> 1000</span>            }</div>
+<div class="line"><span class="lineno"> 1001</span>            op &lt;&lt; out;</div>
+<div class="line"><span class="lineno"> 1002</span>        }</div>
+<div class="line"><span class="lineno"> 1003</span>        <span class="keywordflow">return</span> op;</div>
+<div class="line"><span class="lineno"> 1004</span>    }</div>
 <div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
-<div class="ttc" id="auint128__t_8hpp_html_a3ff77262ffd6743df5b808d41382a6f3"><div class="ttname"><a href="../../da/d41/uint128__t_8hpp.html#a3ff77262ffd6743df5b808d41382a6f3">add</a></div><div class="ttdeci">std::string add(const std::string &amp;first, const std::string &amp;second)</div><div class="ttdoc">Adding two string.</div><div class="ttdef"><b>Definition</b> uint128_t.hpp:37</div></div>
+<div class="ttc" id="auint128__t_8hpp_html_a3ff77262ffd6743df5b808d41382a6f3"><div class="ttname"><a href="../../da/d41/uint128__t_8hpp.html#a3ff77262ffd6743df5b808d41382a6f3">add</a></div><div class="ttdeci">std::string add(const std::string &amp;first, const std::string &amp;second)</div><div class="ttdoc">Adding two string.</div><div class="ttdef"><b>Definition</b> uint128_t.hpp:38</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3648,7 +3648,7 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   60</span>{}, s{};  <span class="comment">/// First and second half of 128 bit number</span></div>
+<div class="fragment"><div class="line"><span class="lineno">   61</span>{}, s{};  <span class="comment">/// First and second half of 128 bit number</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3671,7 +3671,7 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   60</span>{}, s{};  <span class="comment">/// First and second half of 128 bit number</span></div>
+<div class="fragment"><div class="line"><span class="lineno">   61</span>{}, s{};  <span class="comment">/// First and second half of 128 bit number</span></div>
 </div><!-- fragment -->
 </div>
 </div>

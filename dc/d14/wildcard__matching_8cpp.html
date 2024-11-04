@@ -115,12 +115,13 @@ $(function(){initNavTree('dc/d14/wildcard__matching_8cpp.html','../../'); initRe
 <p>Implementation of the <a href="https://www.geeksforgeeks.org/wildcard-pattern-matching/" target="_blank">Wildcard Matching</a> problem.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for wildcard_matching.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d92/wildcard__matching_8cpp__incl.svg" width="252" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d92/wildcard__matching_8cpp__incl.svg" width="336" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -170,11 +171,11 @@ Variables</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  152</span>           {</div>
-<div class="line"><span class="lineno">  153</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">  154</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  155</span>}</div>
-<div class="ttc" id="awildcard__matching_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> wildcard_matching.cpp:101</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  153</span>           {</div>
+<div class="line"><span class="lineno">  154</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">  155</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  156</span>}</div>
+<div class="ttc" id="awildcard__matching_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> wildcard_matching.cpp:102</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -208,52 +209,52 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  101</span>                   {</div>
-<div class="line"><span class="lineno">  102</span>    <span class="comment">// 1st test</span></div>
-<div class="line"><span class="lineno">  103</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;1st test &quot;</span>;</div>
-<div class="line"><span class="lineno">  104</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> matching1 = <span class="stringliteral">&quot;baaabab&quot;</span>;</div>
-<div class="line"><span class="lineno">  105</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> pattern1 = <span class="stringliteral">&quot;*****ba*****ab&quot;</span>;</div>
-<div class="line"><span class="lineno">  106</span>    assert(backtracking::wildcard_matching::wildcard_matching(matching1,</div>
-<div class="line"><span class="lineno">  107</span>                                                              pattern1, 0, 0) ==</div>
-<div class="line"><span class="lineno">  108</span>           1);  <span class="comment">// here the pattern matches with given string</span></div>
-<div class="line"><span class="lineno">  109</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  110</span> </div>
-<div class="line"><span class="lineno">  111</span>    <span class="comment">// 2nd test</span></div>
-<div class="line"><span class="lineno">  112</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;2nd test &quot;</span>;</div>
-<div class="line"><span class="lineno">  113</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> matching2 = <span class="stringliteral">&quot;baaabab&quot;</span>;</div>
-<div class="line"><span class="lineno">  114</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> pattern2 = <span class="stringliteral">&quot;ba*****ab&quot;</span>;</div>
-<div class="line"><span class="lineno">  115</span>    assert(backtracking::wildcard_matching::wildcard_matching(matching2,</div>
-<div class="line"><span class="lineno">  116</span>                                                              pattern2, 0, 0) ==</div>
-<div class="line"><span class="lineno">  117</span>           1);  <span class="comment">// here the pattern matches with given string</span></div>
-<div class="line"><span class="lineno">  118</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  119</span> </div>
-<div class="line"><span class="lineno">  120</span>    <span class="comment">// 3rd test</span></div>
-<div class="line"><span class="lineno">  121</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;3rd test &quot;</span>;</div>
-<div class="line"><span class="lineno">  122</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> matching3 = <span class="stringliteral">&quot;baaabab&quot;</span>;</div>
-<div class="line"><span class="lineno">  123</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> pattern3 = <span class="stringliteral">&quot;ba*ab&quot;</span>;</div>
-<div class="line"><span class="lineno">  124</span>    assert(backtracking::wildcard_matching::wildcard_matching(matching3,</div>
-<div class="line"><span class="lineno">  125</span>                                                              pattern3, 0, 0) ==</div>
-<div class="line"><span class="lineno">  126</span>           1);  <span class="comment">// here the pattern matches with given string</span></div>
-<div class="line"><span class="lineno">  127</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  128</span> </div>
-<div class="line"><span class="lineno">  129</span>    <span class="comment">// 4th test</span></div>
-<div class="line"><span class="lineno">  130</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;4th test &quot;</span>;</div>
-<div class="line"><span class="lineno">  131</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> matching4 = <span class="stringliteral">&quot;baaabab&quot;</span>;</div>
-<div class="line"><span class="lineno">  132</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> pattern4 = <span class="stringliteral">&quot;a*ab&quot;</span>;</div>
-<div class="line"><span class="lineno">  133</span>    assert(backtracking::wildcard_matching::wildcard_matching(matching4,</div>
-<div class="line"><span class="lineno">  134</span>                                                              pattern4, 0, 0) ==</div>
-<div class="line"><span class="lineno">  135</span>           1);  <span class="comment">// here the pattern matches with given string</span></div>
-<div class="line"><span class="lineno">  136</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  137</span> </div>
-<div class="line"><span class="lineno">  138</span>    <span class="comment">// 5th test</span></div>
-<div class="line"><span class="lineno">  139</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;5th test &quot;</span>;</div>
-<div class="line"><span class="lineno">  140</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> matching5 = <span class="stringliteral">&quot;baaabab&quot;</span>;</div>
-<div class="line"><span class="lineno">  141</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> pattern5 = <span class="stringliteral">&quot;aa?ab&quot;</span>;</div>
-<div class="line"><span class="lineno">  142</span>    assert(backtracking::wildcard_matching::wildcard_matching(matching5,</div>
-<div class="line"><span class="lineno">  143</span>                                                              pattern5, 0, 0) ==</div>
-<div class="line"><span class="lineno">  144</span>           1);  <span class="comment">// here the pattern matches with given string</span></div>
-<div class="line"><span class="lineno">  145</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  146</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  102</span>                   {</div>
+<div class="line"><span class="lineno">  103</span>    <span class="comment">// 1st test</span></div>
+<div class="line"><span class="lineno">  104</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;1st test &quot;</span>;</div>
+<div class="line"><span class="lineno">  105</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> matching1 = <span class="stringliteral">&quot;baaabab&quot;</span>;</div>
+<div class="line"><span class="lineno">  106</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> pattern1 = <span class="stringliteral">&quot;*****ba*****ab&quot;</span>;</div>
+<div class="line"><span class="lineno">  107</span>    assert(backtracking::wildcard_matching::wildcard_matching(matching1,</div>
+<div class="line"><span class="lineno">  108</span>                                                              pattern1, 0, 0) ==</div>
+<div class="line"><span class="lineno">  109</span>           1);  <span class="comment">// here the pattern matches with given string</span></div>
+<div class="line"><span class="lineno">  110</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  111</span> </div>
+<div class="line"><span class="lineno">  112</span>    <span class="comment">// 2nd test</span></div>
+<div class="line"><span class="lineno">  113</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;2nd test &quot;</span>;</div>
+<div class="line"><span class="lineno">  114</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> matching2 = <span class="stringliteral">&quot;baaabab&quot;</span>;</div>
+<div class="line"><span class="lineno">  115</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> pattern2 = <span class="stringliteral">&quot;ba*****ab&quot;</span>;</div>
+<div class="line"><span class="lineno">  116</span>    assert(backtracking::wildcard_matching::wildcard_matching(matching2,</div>
+<div class="line"><span class="lineno">  117</span>                                                              pattern2, 0, 0) ==</div>
+<div class="line"><span class="lineno">  118</span>           1);  <span class="comment">// here the pattern matches with given string</span></div>
+<div class="line"><span class="lineno">  119</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  120</span> </div>
+<div class="line"><span class="lineno">  121</span>    <span class="comment">// 3rd test</span></div>
+<div class="line"><span class="lineno">  122</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;3rd test &quot;</span>;</div>
+<div class="line"><span class="lineno">  123</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> matching3 = <span class="stringliteral">&quot;baaabab&quot;</span>;</div>
+<div class="line"><span class="lineno">  124</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> pattern3 = <span class="stringliteral">&quot;ba*ab&quot;</span>;</div>
+<div class="line"><span class="lineno">  125</span>    assert(backtracking::wildcard_matching::wildcard_matching(matching3,</div>
+<div class="line"><span class="lineno">  126</span>                                                              pattern3, 0, 0) ==</div>
+<div class="line"><span class="lineno">  127</span>           1);  <span class="comment">// here the pattern matches with given string</span></div>
+<div class="line"><span class="lineno">  128</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  129</span> </div>
+<div class="line"><span class="lineno">  130</span>    <span class="comment">// 4th test</span></div>
+<div class="line"><span class="lineno">  131</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;4th test &quot;</span>;</div>
+<div class="line"><span class="lineno">  132</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> matching4 = <span class="stringliteral">&quot;baaabab&quot;</span>;</div>
+<div class="line"><span class="lineno">  133</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> pattern4 = <span class="stringliteral">&quot;a*ab&quot;</span>;</div>
+<div class="line"><span class="lineno">  134</span>    assert(backtracking::wildcard_matching::wildcard_matching(matching4,</div>
+<div class="line"><span class="lineno">  135</span>                                                              pattern4, 0, 0) ==</div>
+<div class="line"><span class="lineno">  136</span>           1);  <span class="comment">// here the pattern matches with given string</span></div>
+<div class="line"><span class="lineno">  137</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  138</span> </div>
+<div class="line"><span class="lineno">  139</span>    <span class="comment">// 5th test</span></div>
+<div class="line"><span class="lineno">  140</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;5th test &quot;</span>;</div>
+<div class="line"><span class="lineno">  141</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> matching5 = <span class="stringliteral">&quot;baaabab&quot;</span>;</div>
+<div class="line"><span class="lineno">  142</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> pattern5 = <span class="stringliteral">&quot;aa?ab&quot;</span>;</div>
+<div class="line"><span class="lineno">  143</span>    assert(backtracking::wildcard_matching::wildcard_matching(matching5,</div>
+<div class="line"><span class="lineno">  144</span>                                                              pattern5, 0, 0) ==</div>
+<div class="line"><span class="lineno">  145</span>           1);  <span class="comment">// here the pattern matches with given string</span></div>
+<div class="line"><span class="lineno">  146</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  147</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
@@ -293,59 +294,59 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   40</span>                                      {</div>
-<div class="line"><span class="lineno">   41</span>    uint32_t n = s.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>();</div>
-<div class="line"><span class="lineno">   42</span>    uint32_t m = p.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>();</div>
-<div class="line"><span class="lineno">   43</span>    <span class="comment">// matching is successfull if both strings are done</span></div>
-<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">if</span> (pos1 == n &amp;&amp; pos2 == m) {</div>
-<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   46</span>    }</div>
-<div class="line"><span class="lineno">   47</span> </div>
-<div class="line"><span class="lineno">   48</span>    <span class="comment">// matching is unsuccessfull if pattern is not finished but matching string</span></div>
-<div class="line"><span class="lineno">   49</span>    <span class="comment">// is</span></div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">if</span> (pos1 != n &amp;&amp; pos2 == m) {</div>
-<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   52</span>    }</div>
-<div class="line"><span class="lineno">   53</span> </div>
-<div class="line"><span class="lineno">   54</span>    <span class="comment">// all the remaining characters of patterns must be * inorder to match with</span></div>
-<div class="line"><span class="lineno">   55</span>    <span class="comment">// finished string</span></div>
-<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">if</span> (pos1 == n &amp;&amp; pos2 != m) {</div>
-<div class="line"><span class="lineno">   57</span>        <span class="keywordflow">while</span> (pos2 &lt; m &amp;&amp; p[pos2] == <span class="charliteral">&#39;*&#39;</span>) {</div>
-<div class="line"><span class="lineno">   58</span>            pos2++;</div>
-<div class="line"><span class="lineno">   59</span>        }</div>
-<div class="line"><span class="lineno">   60</span> </div>
-<div class="line"><span class="lineno">   61</span>        <span class="keywordflow">return</span> pos2 == m;</div>
-<div class="line"><span class="lineno">   62</span>    }</div>
-<div class="line"><span class="lineno">   63</span> </div>
-<div class="line"><span class="lineno">   64</span>    <span class="comment">// if already calculted for these positions</span></div>
-<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">if</span> (dpTable[pos1][pos2] != -1) {</div>
-<div class="line"><span class="lineno">   66</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a4a5b107f93db24e424b12899fa692c5a">dpTable</a>[pos1][pos2];</div>
-<div class="line"><span class="lineno">   67</span>    }</div>
-<div class="line"><span class="lineno">   68</span> </div>
-<div class="line"><span class="lineno">   69</span>    <span class="comment">// if the characters are same just go ahead in both the string</span></div>
-<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">if</span> (s[pos1] == p[pos2]) {</div>
-<div class="line"><span class="lineno">   71</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a4a5b107f93db24e424b12899fa692c5a">dpTable</a>[pos1][pos2] =</div>
-<div class="line"><span class="lineno">   72</span>                   <a class="code hl_namespace" href="../../db/d03/namespacewildcard__matching.html">wildcard_matching</a>(s, p, pos1 + 1, pos2 + 1);</div>
-<div class="line"><span class="lineno">   73</span>    }</div>
-<div class="line"><span class="lineno">   74</span> </div>
-<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   76</span>        <span class="comment">// can only single character</span></div>
-<div class="line"><span class="lineno">   77</span>        <span class="keywordflow">if</span> (p[pos2] == <span class="charliteral">&#39;?&#39;</span>) {</div>
-<div class="line"><span class="lineno">   78</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="#a4a5b107f93db24e424b12899fa692c5a">dpTable</a>[pos1][pos2] =</div>
-<div class="line"><span class="lineno">   79</span>                       <a class="code hl_namespace" href="../../db/d03/namespacewildcard__matching.html">wildcard_matching</a>(s, p, pos1 + 1, pos2 + 1);</div>
-<div class="line"><span class="lineno">   80</span>        }</div>
-<div class="line"><span class="lineno">   81</span>        <span class="comment">// have choice either to match one or more charcters</span></div>
-<div class="line"><span class="lineno">   82</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (p[pos2] == <span class="charliteral">&#39;*&#39;</span>) {</div>
-<div class="line"><span class="lineno">   83</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="#a4a5b107f93db24e424b12899fa692c5a">dpTable</a>[pos1][pos2] =</div>
-<div class="line"><span class="lineno">   84</span>                       <a class="code hl_namespace" href="../../db/d03/namespacewildcard__matching.html">wildcard_matching</a>(s, p, pos1, pos2 + 1) ||</div>
-<div class="line"><span class="lineno">   85</span>                       <a class="code hl_namespace" href="../../db/d03/namespacewildcard__matching.html">wildcard_matching</a>(s, p, pos1 + 1, pos2);</div>
-<div class="line"><span class="lineno">   86</span>        }</div>
-<div class="line"><span class="lineno">   87</span>        <span class="comment">// not possible to match</span></div>
-<div class="line"><span class="lineno">   88</span>        <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   89</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="#a4a5b107f93db24e424b12899fa692c5a">dpTable</a>[pos1][pos2] = 0;</div>
-<div class="line"><span class="lineno">   90</span>        }</div>
-<div class="line"><span class="lineno">   91</span>    }</div>
-<div class="line"><span class="lineno">   92</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   41</span>                                      {</div>
+<div class="line"><span class="lineno">   42</span>    uint32_t n = s.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>();</div>
+<div class="line"><span class="lineno">   43</span>    uint32_t m = p.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>();</div>
+<div class="line"><span class="lineno">   44</span>    <span class="comment">// matching is successfull if both strings are done</span></div>
+<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">if</span> (pos1 == n &amp;&amp; pos2 == m) {</div>
+<div class="line"><span class="lineno">   46</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   47</span>    }</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>    <span class="comment">// matching is unsuccessfull if pattern is not finished but matching string</span></div>
+<div class="line"><span class="lineno">   50</span>    <span class="comment">// is</span></div>
+<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">if</span> (pos1 != n &amp;&amp; pos2 == m) {</div>
+<div class="line"><span class="lineno">   52</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   53</span>    }</div>
+<div class="line"><span class="lineno">   54</span> </div>
+<div class="line"><span class="lineno">   55</span>    <span class="comment">// all the remaining characters of patterns must be * inorder to match with</span></div>
+<div class="line"><span class="lineno">   56</span>    <span class="comment">// finished string</span></div>
+<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">if</span> (pos1 == n &amp;&amp; pos2 != m) {</div>
+<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">while</span> (pos2 &lt; m &amp;&amp; p[pos2] == <span class="charliteral">&#39;*&#39;</span>) {</div>
+<div class="line"><span class="lineno">   59</span>            pos2++;</div>
+<div class="line"><span class="lineno">   60</span>        }</div>
+<div class="line"><span class="lineno">   61</span> </div>
+<div class="line"><span class="lineno">   62</span>        <span class="keywordflow">return</span> pos2 == m;</div>
+<div class="line"><span class="lineno">   63</span>    }</div>
+<div class="line"><span class="lineno">   64</span> </div>
+<div class="line"><span class="lineno">   65</span>    <span class="comment">// if already calculted for these positions</span></div>
+<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">if</span> (dpTable[pos1][pos2] != -1) {</div>
+<div class="line"><span class="lineno">   67</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a4a5b107f93db24e424b12899fa692c5a">dpTable</a>[pos1][pos2];</div>
+<div class="line"><span class="lineno">   68</span>    }</div>
+<div class="line"><span class="lineno">   69</span> </div>
+<div class="line"><span class="lineno">   70</span>    <span class="comment">// if the characters are same just go ahead in both the string</span></div>
+<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">if</span> (s[pos1] == p[pos2]) {</div>
+<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a4a5b107f93db24e424b12899fa692c5a">dpTable</a>[pos1][pos2] =</div>
+<div class="line"><span class="lineno">   73</span>                   <a class="code hl_namespace" href="../../db/d03/namespacewildcard__matching.html">wildcard_matching</a>(s, p, pos1 + 1, pos2 + 1);</div>
+<div class="line"><span class="lineno">   74</span>    }</div>
+<div class="line"><span class="lineno">   75</span> </div>
+<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   77</span>        <span class="comment">// can only single character</span></div>
+<div class="line"><span class="lineno">   78</span>        <span class="keywordflow">if</span> (p[pos2] == <span class="charliteral">&#39;?&#39;</span>) {</div>
+<div class="line"><span class="lineno">   79</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="#a4a5b107f93db24e424b12899fa692c5a">dpTable</a>[pos1][pos2] =</div>
+<div class="line"><span class="lineno">   80</span>                       <a class="code hl_namespace" href="../../db/d03/namespacewildcard__matching.html">wildcard_matching</a>(s, p, pos1 + 1, pos2 + 1);</div>
+<div class="line"><span class="lineno">   81</span>        }</div>
+<div class="line"><span class="lineno">   82</span>        <span class="comment">// have choice either to match one or more charcters</span></div>
+<div class="line"><span class="lineno">   83</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (p[pos2] == <span class="charliteral">&#39;*&#39;</span>) {</div>
+<div class="line"><span class="lineno">   84</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="#a4a5b107f93db24e424b12899fa692c5a">dpTable</a>[pos1][pos2] =</div>
+<div class="line"><span class="lineno">   85</span>                       <a class="code hl_namespace" href="../../db/d03/namespacewildcard__matching.html">wildcard_matching</a>(s, p, pos1, pos2 + 1) ||</div>
+<div class="line"><span class="lineno">   86</span>                       <a class="code hl_namespace" href="../../db/d03/namespacewildcard__matching.html">wildcard_matching</a>(s, p, pos1 + 1, pos2);</div>
+<div class="line"><span class="lineno">   87</span>        }</div>
+<div class="line"><span class="lineno">   88</span>        <span class="comment">// not possible to match</span></div>
+<div class="line"><span class="lineno">   89</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   90</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="#a4a5b107f93db24e424b12899fa692c5a">dpTable</a>[pos1][pos2] = 0;</div>
+<div class="line"><span class="lineno">   91</span>        }</div>
+<div class="line"><span class="lineno">   92</span>    }</div>
+<div class="line"><span class="lineno">   93</span>}</div>
 <div class="ttc" id="anamespacewildcard__matching_html"><div class="ttname"><a href="../../db/d03/namespacewildcard__matching.html">wildcard_matching</a></div><div class="ttdoc">Functions for the Wildcard Matching problem.</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">std::string::length</a></div><div class="ttdeci">T length(T... args)</div></div>
 <div class="ttc" id="awildcard__matching_8cpp_html_a4a5b107f93db24e424b12899fa692c5a"><div class="ttname"><a href="#a4a5b107f93db24e424b12899fa692c5a">backtracking::wildcard_matching::dpTable</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; int64_t &gt; &gt; dpTable(1000, std::vector&lt; int64_t &gt;(1000, -1))</div><div class="ttdoc">The main function implements if pattern can be matched with given string.</div></div>

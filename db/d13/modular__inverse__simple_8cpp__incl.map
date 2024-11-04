@@ -1,7 +1,9 @@
 <map id="math/modular_inverse_simple.cpp" name="math/modular_inverse_simple.cpp">
-<area shape="rect" id="Node000001" title="Simple implementation of modular multiplicative inverse" alt="" coords="8,5,158,46"/>
+<area shape="rect" id="Node000001" title="Simple implementation of modular multiplicative inverse" alt="" coords="50,5,199,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,70,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,48,54,82,50,79,69,45"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="94,94,165,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="97,45,117,79,112,82,92,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,48,64,85,60,81,101,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="94,94,154,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,46,127,78,122,78,122,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="178,94,249,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="148,44,190,82,187,86,144,48"/>
 </map>

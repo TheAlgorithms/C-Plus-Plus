@@ -1,7 +1,9 @@
 <map id="bit_manipulation/power_of_2.cpp" name="bit_manipulation/power_of_2.cpp">
-<area shape="rect" id="Node000001" title="[Find whether a given number is power of 2] (https://www.geeksforgeeks.org/program&#45;to&#45;find&#45;whether&#45;a&#45;..." alt="" coords="6,5,160,46"/>
+<area shape="rect" id="Node000001" title="[Find whether a given number is power of 2] (https://www.geeksforgeeks.org/program&#45;to&#45;find&#45;whether&#45;a&#45;..." alt="" coords="47,5,201,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,70,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,48,54,82,50,79,69,45"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="94,94,165,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="97,45,117,79,112,82,92,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,48,64,85,60,81,101,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="94,94,154,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,46,127,78,122,78,122,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="178,94,249,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="148,44,190,82,187,86,144,48"/>
 </map>

@@ -113,18 +113,19 @@ $(function(){initNavTree('da/d23/eulers__totient__function_8cpp.html','../../');
 
 <p>Implementation of <a href="https://en.wikipedia.org/wiki/Euler%27s_totient_function" target="_blank">Euler's Totient</a> @description Euler Totient Function is also known as phi function.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;cassert&gt;</code><br />
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for eulers_totient_function.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d5b/eulers__totient__function_8cpp__incl.svg" width="171" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d5b/eulers__totient__function_8cpp__incl.svg" width="255" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html">math</a></td></tr>
-<tr class="memdesc:dd/d47/namespacemath"><td class="mdescLeft">&#160;</td><td class="mdescRight">for IO operations <br /></td></tr>
+<tr class="memdesc:dd/d47/namespacemath"><td class="mdescLeft">&#160;</td><td class="mdescRight">for assert <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -192,11 +193,11 @@ Some known values are:</p><ul>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   75</span>                                 {</div>
-<div class="line"><span class="lineno">   76</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();</div>
-<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   78</span>}</div>
-<div class="ttc" id="aeulers__totient__function_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> eulers_totient_function.cpp:57</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   79</span>                                 {</div>
+<div class="line"><span class="lineno">   80</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();</div>
+<div class="line"><span class="lineno">   81</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   82</span>}</div>
+<div class="ttc" id="aeulers__totient__function_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> eulers_totient_function.cpp:61</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -230,19 +231,19 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   57</span>                   {</div>
-<div class="line"><span class="lineno">   58</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a>(1) == 1);</div>
-<div class="line"><span class="lineno">   59</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a>(2) == 1);</div>
-<div class="line"><span class="lineno">   60</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a>(10) == 4);</div>
-<div class="line"><span class="lineno">   61</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a>(123456) == 41088);</div>
-<div class="line"><span class="lineno">   62</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a>(808017424794) == 263582333856);</div>
-<div class="line"><span class="lineno">   63</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a>(3141592) == 1570792);</div>
-<div class="line"><span class="lineno">   64</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a>(27182818) == 12545904);</div>
-<div class="line"><span class="lineno">   65</span> </div>
-<div class="line"><span class="lineno">   66</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   67</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   61</span>                   {</div>
+<div class="line"><span class="lineno">   62</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a>(1) == 1);</div>
+<div class="line"><span class="lineno">   63</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a>(2) == 1);</div>
+<div class="line"><span class="lineno">   64</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a>(10) == 4);</div>
+<div class="line"><span class="lineno">   65</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a>(123456) == 41088);</div>
+<div class="line"><span class="lineno">   66</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a>(808017424794) == 263582333856);</div>
+<div class="line"><span class="lineno">   67</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a>(3141592) == 1570792);</div>
+<div class="line"><span class="lineno">   68</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a>(27182818) == 12545904);</div>
+<div class="line"><span class="lineno">   69</span> </div>
+<div class="line"><span class="lineno">   70</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   71</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="anamespacemath_html_ac37d3ba52eb296597d7a024ba8c4a5a5"><div class="ttname"><a href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a></div><div class="ttdeci">uint64_t phiFunction(uint64_t n)</div><div class="ttdoc">Function to calculate Euler's Totient.</div><div class="ttdef"><b>Definition</b> eulers_totient_function.cpp:39</div></div>
+<div class="ttc" id="anamespacemath_html_ac37d3ba52eb296597d7a024ba8c4a5a5"><div class="ttname"><a href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a></div><div class="ttdeci">uint64_t phiFunction(uint64_t n)</div><div class="ttdoc">Function to calculate Euler's Totient.</div><div class="ttdef"><b>Definition</b> eulers_totient_function.cpp:41</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

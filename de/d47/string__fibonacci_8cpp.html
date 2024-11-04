@@ -112,12 +112,13 @@ $(function(){initNavTree('de/d47/string__fibonacci_8cpp.html','../../'); initRes
 
 <p>This Programme returns the Nth fibonacci as a string.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for string_fibonacci.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/da1/string__fibonacci_8cpp__incl.svg" width="182" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/da1/string__fibonacci_8cpp__incl.svg" width="250" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -160,46 +161,46 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>sum as a <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   24</span>                                        {</div>
-<div class="line"><span class="lineno">   25</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> temp = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><span class="lineno">   26</span> </div>
-<div class="line"><span class="lineno">   27</span>    <span class="comment">// carry flag</span></div>
-<div class="line"><span class="lineno">   28</span>    <span class="keywordtype">int</span> carry = 0;</div>
-<div class="line"><span class="lineno">   29</span> </div>
-<div class="line"><span class="lineno">   30</span>    <span class="comment">// fills up with zeros</span></div>
-<div class="line"><span class="lineno">   31</span>    <span class="keywordflow">while</span> (a.length() &lt; b.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>()) {</div>
-<div class="line"><span class="lineno">   32</span>        a = <span class="stringliteral">&quot;0&quot;</span> + a;</div>
-<div class="line"><span class="lineno">   33</span>    }</div>
-<div class="line"><span class="lineno">   34</span> </div>
-<div class="line"><span class="lineno">   35</span>    <span class="comment">// fills up with zeros</span></div>
-<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">while</span> (b.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>() &lt; a.length()) {</div>
-<div class="line"><span class="lineno">   37</span>        b = <span class="stringliteral">&quot;0&quot;</span> + b;</div>
-<div class="line"><span class="lineno">   38</span>    }</div>
-<div class="line"><span class="lineno">   39</span> </div>
-<div class="line"><span class="lineno">   40</span>    <span class="comment">// adds the numbers a and b</span></div>
-<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = a.length() - 1; i &gt;= 0; i--) {</div>
-<div class="line"><span class="lineno">   42</span>        <span class="keywordtype">char</span> val = <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(((a[i] - 48) + (b[i] - 48)) + 48 + carry);</div>
-<div class="line"><span class="lineno">   43</span>        <span class="keywordflow">if</span> (val &gt; 57) {</div>
-<div class="line"><span class="lineno">   44</span>            carry = 1;</div>
-<div class="line"><span class="lineno">   45</span>            val -= 10;</div>
-<div class="line"><span class="lineno">   46</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   47</span>            carry = 0;</div>
-<div class="line"><span class="lineno">   48</span>        }</div>
-<div class="line"><span class="lineno">   49</span>        temp = val + temp;</div>
-<div class="line"><span class="lineno">   50</span>    }</div>
-<div class="line"><span class="lineno">   51</span> </div>
-<div class="line"><span class="lineno">   52</span>    <span class="comment">// processes the carry flag</span></div>
-<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">if</span> (carry == 1) {</div>
-<div class="line"><span class="lineno">   54</span>        temp = <span class="stringliteral">&quot;1&quot;</span> + temp;</div>
-<div class="line"><span class="lineno">   55</span>    }</div>
-<div class="line"><span class="lineno">   56</span> </div>
-<div class="line"><span class="lineno">   57</span>    <span class="comment">// removes leading zeros.</span></div>
-<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">while</span> (temp[0] == <span class="charliteral">&#39;0&#39;</span> &amp;&amp; temp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>() &gt; 1) {</div>
-<div class="line"><span class="lineno">   59</span>        temp = temp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/substr.html">substr</a>(1);</div>
-<div class="line"><span class="lineno">   60</span>    }</div>
-<div class="line"><span class="lineno">   61</span> </div>
-<div class="line"><span class="lineno">   62</span>    <span class="keywordflow">return</span> temp;</div>
-<div class="line"><span class="lineno">   63</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   25</span>                                        {</div>
+<div class="line"><span class="lineno">   26</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> temp = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">   27</span> </div>
+<div class="line"><span class="lineno">   28</span>    <span class="comment">// carry flag</span></div>
+<div class="line"><span class="lineno">   29</span>    <span class="keywordtype">int</span> carry = 0;</div>
+<div class="line"><span class="lineno">   30</span> </div>
+<div class="line"><span class="lineno">   31</span>    <span class="comment">// fills up with zeros</span></div>
+<div class="line"><span class="lineno">   32</span>    <span class="keywordflow">while</span> (a.length() &lt; b.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>()) {</div>
+<div class="line"><span class="lineno">   33</span>        a = <span class="stringliteral">&quot;0&quot;</span> + a;</div>
+<div class="line"><span class="lineno">   34</span>    }</div>
+<div class="line"><span class="lineno">   35</span> </div>
+<div class="line"><span class="lineno">   36</span>    <span class="comment">// fills up with zeros</span></div>
+<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">while</span> (b.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>() &lt; a.length()) {</div>
+<div class="line"><span class="lineno">   38</span>        b = <span class="stringliteral">&quot;0&quot;</span> + b;</div>
+<div class="line"><span class="lineno">   39</span>    }</div>
+<div class="line"><span class="lineno">   40</span> </div>
+<div class="line"><span class="lineno">   41</span>    <span class="comment">// adds the numbers a and b</span></div>
+<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = a.length() - 1; i &gt;= 0; i--) {</div>
+<div class="line"><span class="lineno">   43</span>        <span class="keywordtype">char</span> val = <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(((a[i] - 48) + (b[i] - 48)) + 48 + carry);</div>
+<div class="line"><span class="lineno">   44</span>        <span class="keywordflow">if</span> (val &gt; 57) {</div>
+<div class="line"><span class="lineno">   45</span>            carry = 1;</div>
+<div class="line"><span class="lineno">   46</span>            val -= 10;</div>
+<div class="line"><span class="lineno">   47</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   48</span>            carry = 0;</div>
+<div class="line"><span class="lineno">   49</span>        }</div>
+<div class="line"><span class="lineno">   50</span>        temp = val + temp;</div>
+<div class="line"><span class="lineno">   51</span>    }</div>
+<div class="line"><span class="lineno">   52</span> </div>
+<div class="line"><span class="lineno">   53</span>    <span class="comment">// processes the carry flag</span></div>
+<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">if</span> (carry == 1) {</div>
+<div class="line"><span class="lineno">   55</span>        temp = <span class="stringliteral">&quot;1&quot;</span> + temp;</div>
+<div class="line"><span class="lineno">   56</span>    }</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>    <span class="comment">// removes leading zeros.</span></div>
+<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">while</span> (temp[0] == <span class="charliteral">&#39;0&#39;</span> &amp;&amp; temp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>() &gt; 1) {</div>
+<div class="line"><span class="lineno">   60</span>        temp = temp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/substr.html">substr</a>(1);</div>
+<div class="line"><span class="lineno">   61</span>    }</div>
+<div class="line"><span class="lineno">   62</span> </div>
+<div class="line"><span class="lineno">   63</span>    <span class="keywordflow">return</span> temp;</div>
+<div class="line"><span class="lineno">   64</span>}</div>
 <div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">std::string::length</a></div><div class="ttdeci">T length(T... args)</div></div>
 <div class="ttc" id="asubstr_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/substr.html">std::string::substr</a></div><div class="ttdeci">T substr(T... args)</div></div>
@@ -231,19 +232,19 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   68</span>                              {</div>
-<div class="line"><span class="lineno">   69</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> tmp = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><span class="lineno">   70</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> fibMinus1 = <span class="stringliteral">&quot;1&quot;</span>;</div>
-<div class="line"><span class="lineno">   71</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> fibMinus2 = <span class="stringliteral">&quot;0&quot;</span>;</div>
-<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; n; i++) {</div>
-<div class="line"><span class="lineno">   73</span>        tmp = <a class="code hl_function" href="#a28052eee05d43c2ebc5147c52bd50c35">add</a>(fibMinus1, fibMinus2);</div>
-<div class="line"><span class="lineno">   74</span>        fibMinus2 = fibMinus1;</div>
-<div class="line"><span class="lineno">   75</span>        fibMinus1 = tmp;</div>
-<div class="line"><span class="lineno">   76</span>    }</div>
-<div class="line"><span class="lineno">   77</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; fibMinus2;</div>
-<div class="line"><span class="lineno">   78</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   69</span>                              {</div>
+<div class="line"><span class="lineno">   70</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> tmp = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">   71</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> fibMinus1 = <span class="stringliteral">&quot;1&quot;</span>;</div>
+<div class="line"><span class="lineno">   72</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> fibMinus2 = <span class="stringliteral">&quot;0&quot;</span>;</div>
+<div class="line"><span class="lineno">   73</span>    <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; n; i++) {</div>
+<div class="line"><span class="lineno">   74</span>        tmp = <a class="code hl_function" href="#a28052eee05d43c2ebc5147c52bd50c35">add</a>(fibMinus1, fibMinus2);</div>
+<div class="line"><span class="lineno">   75</span>        fibMinus2 = fibMinus1;</div>
+<div class="line"><span class="lineno">   76</span>        fibMinus1 = tmp;</div>
+<div class="line"><span class="lineno">   77</span>    }</div>
+<div class="line"><span class="lineno">   78</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; fibMinus2;</div>
+<div class="line"><span class="lineno">   79</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="astring__fibonacci_8cpp_html_a28052eee05d43c2ebc5147c52bd50c35"><div class="ttname"><a href="#a28052eee05d43c2ebc5147c52bd50c35">add</a></div><div class="ttdeci">std::string add(std::string a, std::string b)</div><div class="ttdef"><b>Definition</b> string_fibonacci.cpp:24</div></div>
+<div class="ttc" id="astring__fibonacci_8cpp_html_a28052eee05d43c2ebc5147c52bd50c35"><div class="ttname"><a href="#a28052eee05d43c2ebc5147c52bd50c35">add</a></div><div class="ttdeci">std::string add(std::string a, std::string b)</div><div class="ttdef"><b>Definition</b> string_fibonacci.cpp:25</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -267,17 +268,17 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>main function </p>
-<div class="fragment"><div class="line"><span class="lineno">   81</span>           {</div>
-<div class="line"><span class="lineno">   82</span>    <span class="keywordtype">int</span> n;</div>
-<div class="line"><span class="lineno">   83</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter whatever number N you want to find the fibonacci of\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   84</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n;</div>
-<div class="line"><span class="lineno">   85</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot; th Fibonacci is \n&quot;</span>;</div>
-<div class="line"><span class="lineno">   86</span>    <a class="code hl_function" href="#ad8055ee368a5d5b24de01bdde6bf8fca">fib_Accurate</a>(n);</div>
-<div class="line"><span class="lineno">   87</span> </div>
-<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   89</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   82</span>           {</div>
+<div class="line"><span class="lineno">   83</span>    <span class="keywordtype">int</span> n;</div>
+<div class="line"><span class="lineno">   84</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter whatever number N you want to find the fibonacci of\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   85</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n;</div>
+<div class="line"><span class="lineno">   86</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot; th Fibonacci is \n&quot;</span>;</div>
+<div class="line"><span class="lineno">   87</span>    <a class="code hl_function" href="#ad8055ee368a5d5b24de01bdde6bf8fca">fib_Accurate</a>(n);</div>
+<div class="line"><span class="lineno">   88</span> </div>
+<div class="line"><span class="lineno">   89</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   90</span>}</div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="astring__fibonacci_8cpp_html_ad8055ee368a5d5b24de01bdde6bf8fca"><div class="ttname"><a href="#ad8055ee368a5d5b24de01bdde6bf8fca">fib_Accurate</a></div><div class="ttdeci">void fib_Accurate(uint64_t n)</div><div class="ttdef"><b>Definition</b> string_fibonacci.cpp:68</div></div>
+<div class="ttc" id="astring__fibonacci_8cpp_html_ad8055ee368a5d5b24de01bdde6bf8fca"><div class="ttname"><a href="#ad8055ee368a5d5b24de01bdde6bf8fca">fib_Accurate</a></div><div class="ttdeci">void fib_Accurate(uint64_t n)</div><div class="ttdef"><b>Definition</b> string_fibonacci.cpp:69</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

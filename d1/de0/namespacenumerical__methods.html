@@ -129,7 +129,7 @@ Functions</h2></td></tr>
 <div class="textblock"><p>for assert </p>
 <p>Numerical Methods.</p>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">std::map</a> container</p>
-<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
+<p>for storing points and coefficents</p>
 <p>for io operations</p>
 <p>for math functions</p>
 <p>for IO operations</p>
@@ -138,7 +138,7 @@ Functions</h2></td></tr>
 <p>Numerical algorithms/methods</p>
 <p>for math operations</p>
 <p>Numerical methods</p>
-<p>for assert for mathematical-related functions for storing points and coefficents for IO operations</p>
+<p>for assert for mathematical-related functions for IO operations for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
 <p>Numerical algorithms/methods</p>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a> for assert for fabs</p>
 <p>Numerical Methods algorithms</p>
@@ -251,61 +251,61 @@ y if n!=1 </dd></dl>
 <p>Updating the last n/2 elements</p>
 <p>Deleting dynamic array ye</p>
 <p>Deleting dynamic array yo</p>
-<div class="fragment"><div class="line"><span class="lineno">   41</span>                                                                           {</div>
-<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">if</span> (n == 1) {</div>
-<div class="line"><span class="lineno">   43</span>        <span class="keywordflow">return</span> p;  <span class="comment">/// Base Case To return</span></div>
-<div class="line"><span class="lineno">   44</span>    }</div>
-<div class="line"><span class="lineno">   45</span> </div>
-<div class="line"><span class="lineno">   46</span>    <span class="keywordtype">double</span> pi = 2 * asin(1.0);  <span class="comment">/// Declaring value of pi</span></div>
-<div class="line"><span class="lineno">   47</span> </div>
-<div class="line"><span class="lineno">   48</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a> om = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>(</div>
-<div class="line"><span class="lineno">   49</span>        cos(2 * pi / n), sin(2 * pi / n));  <span class="comment">/// Calculating value of omega</span></div>
-<div class="line"><span class="lineno">   50</span> </div>
-<div class="line"><span class="lineno">   51</span>    <span class="keyword">auto</span> *pe = <span class="keyword">new</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>[n / 2];  <span class="comment">/// Coefficients of even power</span></div>
-<div class="line"><span class="lineno">   52</span> </div>
-<div class="line"><span class="lineno">   53</span>    <span class="keyword">auto</span> *po = <span class="keyword">new</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>[n / 2];  <span class="comment">/// Coefficients of odd power</span></div>
-<div class="line"><span class="lineno">   54</span> </div>
-<div class="line"><span class="lineno">   55</span>    <span class="keywordtype">int</span> k1 = 0, k2 = 0;</div>
-<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; n; j++) {</div>
-<div class="line"><span class="lineno">   57</span>        <span class="keywordflow">if</span> (j % 2 == 0) {</div>
-<div class="line"><span class="lineno">   58</span>            pe[k1++] = p[j];  <span class="comment">/// Assigning values of even Coefficients</span></div>
-<div class="line"><span class="lineno">   59</span> </div>
-<div class="line"><span class="lineno">   60</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   61</span>            po[k2++] = p[j];  <span class="comment">/// Assigning value of odd Coefficients</span></div>
-<div class="line"><span class="lineno">   62</span>        }</div>
-<div class="line"><span class="lineno">   63</span>    }</div>
-<div class="line"><span class="lineno">   64</span> </div>
-<div class="line"><span class="lineno">   65</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a> *ye =</div>
-<div class="line"><span class="lineno">   66</span>        <a class="code hl_function" href="#a158fd271b9a53e8f3f60b08b18857150">FastFourierTransform</a>(pe, n / 2);  <span class="comment">/// Recursive Call</span></div>
-<div class="line"><span class="lineno">   67</span> </div>
-<div class="line"><span class="lineno">   68</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a> *yo =</div>
-<div class="line"><span class="lineno">   69</span>        <a class="code hl_function" href="#a158fd271b9a53e8f3f60b08b18857150">FastFourierTransform</a>(po, n / 2);  <span class="comment">/// Recursive Call</span></div>
-<div class="line"><span class="lineno">   70</span> </div>
-<div class="line"><span class="lineno">   71</span>    <span class="keyword">auto</span> *y = <span class="keyword">new</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>[n];  <span class="comment">/// Final value representation list</span></div>
-<div class="line"><span class="lineno">   72</span> </div>
-<div class="line"><span class="lineno">   73</span>    k1 = 0, k2 = 0;</div>
-<div class="line"><span class="lineno">   74</span> </div>
-<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n / 2; i++) {</div>
-<div class="line"><span class="lineno">   76</span>        y[i] =</div>
-<div class="line"><span class="lineno">   77</span>            ye[k1] + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">pow</a>(om, i) * yo[k2];  <span class="comment">/// Updating the first n/2 elements</span></div>
-<div class="line"><span class="lineno">   78</span>        y[i + n / 2] =</div>
-<div class="line"><span class="lineno">   79</span>            ye[k1] - <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">pow</a>(om, i) * yo[k2];  <span class="comment">/// Updating the last n/2 elements</span></div>
-<div class="line"><span class="lineno">   80</span> </div>
-<div class="line"><span class="lineno">   81</span>        k1++;</div>
-<div class="line"><span class="lineno">   82</span>        k2++;</div>
-<div class="line"><span class="lineno">   83</span>    }</div>
-<div class="line"><span class="lineno">   84</span> </div>
-<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">if</span> (n != 2) {</div>
-<div class="line"><span class="lineno">   86</span>        <span class="keyword">delete</span>[] pe;</div>
-<div class="line"><span class="lineno">   87</span>        <span class="keyword">delete</span>[] po;</div>
-<div class="line"><span class="lineno">   88</span>    }</div>
-<div class="line"><span class="lineno">   89</span> </div>
-<div class="line"><span class="lineno">   90</span>    <span class="keyword">delete</span>[] ye;  <span class="comment">/// Deleting dynamic array ye</span></div>
-<div class="line"><span class="lineno">   91</span>    <span class="keyword">delete</span>[] yo;  <span class="comment">/// Deleting dynamic array yo</span></div>
-<div class="line"><span class="lineno">   92</span>    <span class="keywordflow">return</span> y;</div>
-<div class="line"><span class="lineno">   93</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>                                                                           {</div>
+<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">if</span> (n == 1) {</div>
+<div class="line"><span class="lineno">   44</span>        <span class="keywordflow">return</span> p;  <span class="comment">/// Base Case To return</span></div>
+<div class="line"><span class="lineno">   45</span>    }</div>
+<div class="line"><span class="lineno">   46</span> </div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordtype">double</span> pi = 2 * asin(1.0);  <span class="comment">/// Declaring value of pi</span></div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a> om = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>(</div>
+<div class="line"><span class="lineno">   50</span>        cos(2 * pi / n), sin(2 * pi / n));  <span class="comment">/// Calculating value of omega</span></div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>    <span class="keyword">auto</span> *pe = <span class="keyword">new</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>[n / 2];  <span class="comment">/// Coefficients of even power</span></div>
+<div class="line"><span class="lineno">   53</span> </div>
+<div class="line"><span class="lineno">   54</span>    <span class="keyword">auto</span> *po = <span class="keyword">new</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>[n / 2];  <span class="comment">/// Coefficients of odd power</span></div>
+<div class="line"><span class="lineno">   55</span> </div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordtype">int</span> k1 = 0, k2 = 0;</div>
+<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; n; j++) {</div>
+<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">if</span> (j % 2 == 0) {</div>
+<div class="line"><span class="lineno">   59</span>            pe[k1++] = p[j];  <span class="comment">/// Assigning values of even Coefficients</span></div>
+<div class="line"><span class="lineno">   60</span> </div>
+<div class="line"><span class="lineno">   61</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   62</span>            po[k2++] = p[j];  <span class="comment">/// Assigning value of odd Coefficients</span></div>
+<div class="line"><span class="lineno">   63</span>        }</div>
+<div class="line"><span class="lineno">   64</span>    }</div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a> *ye =</div>
+<div class="line"><span class="lineno">   67</span>        <a class="code hl_function" href="#a158fd271b9a53e8f3f60b08b18857150">FastFourierTransform</a>(pe, n / 2);  <span class="comment">/// Recursive Call</span></div>
+<div class="line"><span class="lineno">   68</span> </div>
+<div class="line"><span class="lineno">   69</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a> *yo =</div>
+<div class="line"><span class="lineno">   70</span>        <a class="code hl_function" href="#a158fd271b9a53e8f3f60b08b18857150">FastFourierTransform</a>(po, n / 2);  <span class="comment">/// Recursive Call</span></div>
+<div class="line"><span class="lineno">   71</span> </div>
+<div class="line"><span class="lineno">   72</span>    <span class="keyword">auto</span> *y = <span class="keyword">new</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>[n];  <span class="comment">/// Final value representation list</span></div>
+<div class="line"><span class="lineno">   73</span> </div>
+<div class="line"><span class="lineno">   74</span>    k1 = 0, k2 = 0;</div>
+<div class="line"><span class="lineno">   75</span> </div>
+<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n / 2; i++) {</div>
+<div class="line"><span class="lineno">   77</span>        y[i] =</div>
+<div class="line"><span class="lineno">   78</span>            ye[k1] + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">pow</a>(om, i) * yo[k2];  <span class="comment">/// Updating the first n/2 elements</span></div>
+<div class="line"><span class="lineno">   79</span>        y[i + n / 2] =</div>
+<div class="line"><span class="lineno">   80</span>            ye[k1] - <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">pow</a>(om, i) * yo[k2];  <span class="comment">/// Updating the last n/2 elements</span></div>
+<div class="line"><span class="lineno">   81</span> </div>
+<div class="line"><span class="lineno">   82</span>        k1++;</div>
+<div class="line"><span class="lineno">   83</span>        k2++;</div>
+<div class="line"><span class="lineno">   84</span>    }</div>
+<div class="line"><span class="lineno">   85</span> </div>
+<div class="line"><span class="lineno">   86</span>    <span class="keywordflow">if</span> (n != 2) {</div>
+<div class="line"><span class="lineno">   87</span>        <span class="keyword">delete</span>[] pe;</div>
+<div class="line"><span class="lineno">   88</span>        <span class="keyword">delete</span>[] po;</div>
+<div class="line"><span class="lineno">   89</span>    }</div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>    <span class="keyword">delete</span>[] ye;  <span class="comment">/// Deleting dynamic array ye</span></div>
+<div class="line"><span class="lineno">   92</span>    <span class="keyword">delete</span>[] yo;  <span class="comment">/// Deleting dynamic array yo</span></div>
+<div class="line"><span class="lineno">   93</span>    <span class="keywordflow">return</span> y;</div>
+<div class="line"><span class="lineno">   94</span>}</div>
 <div class="ttc" id="acomplex_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex</a></div></div>
-<div class="ttc" id="anamespacenumerical__methods_html_a158fd271b9a53e8f3f60b08b18857150"><div class="ttname"><a href="#a158fd271b9a53e8f3f60b08b18857150">numerical_methods::FastFourierTransform</a></div><div class="ttdeci">std::complex&lt; double &gt; * FastFourierTransform(std::complex&lt; double &gt; *p, uint8_t n)</div><div class="ttdoc">FastFourierTransform is a recursive function which returns list of complex numbers.</div><div class="ttdef"><b>Definition</b> fast_fourier_transform.cpp:41</div></div>
+<div class="ttc" id="anamespacenumerical__methods_html_a158fd271b9a53e8f3f60b08b18857150"><div class="ttname"><a href="#a158fd271b9a53e8f3f60b08b18857150">numerical_methods::FastFourierTransform</a></div><div class="ttdeci">std::complex&lt; double &gt; * FastFourierTransform(std::complex&lt; double &gt; *p, uint8_t n)</div><div class="ttdoc">FastFourierTransform is a recursive function which returns list of complex numbers.</div><div class="ttdef"><b>Definition</b> fast_fourier_transform.cpp:42</div></div>
 <div class="ttc" id="apow_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a></div><div class="ttdeci">T pow(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -361,64 +361,64 @@ y if n!=1 </dd></dl>
 <p>Updating the last n/2 elements</p>
 <p>Deleting dynamic array ye</p>
 <p>Deleting dynamic array yo</p>
-<div class="fragment"><div class="line"><span class="lineno">   34</span>                                                             {</div>
-<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">if</span> (n == 1) {</div>
-<div class="line"><span class="lineno">   36</span>        <span class="keywordflow">return</span> p;  <span class="comment">/// Base Case To return</span></div>
-<div class="line"><span class="lineno">   37</span>    }</div>
-<div class="line"><span class="lineno">   38</span> </div>
-<div class="line"><span class="lineno">   39</span>    <span class="keywordtype">double</span> pi = 2 * asin(1.0);  <span class="comment">/// Declaring value of pi</span></div>
-<div class="line"><span class="lineno">   40</span> </div>
-<div class="line"><span class="lineno">   41</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a> om = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>(</div>
-<div class="line"><span class="lineno">   42</span>        cos(2 * pi / n), sin(2 * pi / n));  <span class="comment">/// Calculating value of omega</span></div>
-<div class="line"><span class="lineno">   43</span> </div>
-<div class="line"><span class="lineno">   44</span>    om.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex/real.html">real</a>(om.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex/real.html">real</a>() / n);  <span class="comment">/// One change in comparison with DFT</span></div>
-<div class="line"><span class="lineno">   45</span>    om.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex/imag.html">imag</a>(om.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex/imag.html">imag</a>() / n);  <span class="comment">/// One change in comparison with DFT</span></div>
-<div class="line"><span class="lineno">   46</span> </div>
-<div class="line"><span class="lineno">   47</span>    <span class="keyword">auto</span> *pe = <span class="keyword">new</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>[n / 2];  <span class="comment">/// Coefficients of even power</span></div>
-<div class="line"><span class="lineno">   48</span> </div>
-<div class="line"><span class="lineno">   49</span>    <span class="keyword">auto</span> *po = <span class="keyword">new</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>[n / 2];  <span class="comment">/// Coefficients of odd power</span></div>
-<div class="line"><span class="lineno">   50</span> </div>
-<div class="line"><span class="lineno">   51</span>    <span class="keywordtype">int</span> k1 = 0, k2 = 0;</div>
-<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; n; j++) {</div>
-<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">if</span> (j % 2 == 0) {</div>
-<div class="line"><span class="lineno">   54</span>            pe[k1++] = p[j];  <span class="comment">/// Assigning values of even Coefficients</span></div>
-<div class="line"><span class="lineno">   55</span> </div>
-<div class="line"><span class="lineno">   56</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   57</span>            po[k2++] = p[j];  <span class="comment">/// Assigning value of odd Coefficients</span></div>
-<div class="line"><span class="lineno">   58</span>        }</div>
-<div class="line"><span class="lineno">   59</span>    }</div>
-<div class="line"><span class="lineno">   60</span> </div>
-<div class="line"><span class="lineno">   61</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a> *ye =</div>
-<div class="line"><span class="lineno">   62</span>        <a class="code hl_function" href="#aee56dc85997b8cd42bad71a5d6bd2d93">InverseFastFourierTransform</a>(pe, n / 2);  <span class="comment">/// Recursive Call</span></div>
-<div class="line"><span class="lineno">   63</span> </div>
-<div class="line"><span class="lineno">   64</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a> *yo =</div>
-<div class="line"><span class="lineno">   65</span>        <a class="code hl_function" href="#aee56dc85997b8cd42bad71a5d6bd2d93">InverseFastFourierTransform</a>(po, n / 2);  <span class="comment">/// Recursive Call</span></div>
-<div class="line"><span class="lineno">   66</span> </div>
-<div class="line"><span class="lineno">   67</span>    <span class="keyword">auto</span> *y = <span class="keyword">new</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>[n];  <span class="comment">/// Final value representation list</span></div>
-<div class="line"><span class="lineno">   68</span> </div>
-<div class="line"><span class="lineno">   69</span>    k1 = 0, k2 = 0;</div>
-<div class="line"><span class="lineno">   70</span> </div>
-<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n / 2; i++) {</div>
-<div class="line"><span class="lineno">   72</span>        y[i] =</div>
-<div class="line"><span class="lineno">   73</span>            ye[k1] + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">pow</a>(om, i) * yo[k2];  <span class="comment">/// Updating the first n/2 elements</span></div>
-<div class="line"><span class="lineno">   74</span>        y[i + n / 2] =</div>
-<div class="line"><span class="lineno">   75</span>            ye[k1] - <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">pow</a>(om, i) * yo[k2];  <span class="comment">/// Updating the last n/2 elements</span></div>
-<div class="line"><span class="lineno">   76</span> </div>
-<div class="line"><span class="lineno">   77</span>        k1++;</div>
-<div class="line"><span class="lineno">   78</span>        k2++;</div>
-<div class="line"><span class="lineno">   79</span>    }</div>
-<div class="line"><span class="lineno">   80</span> </div>
-<div class="line"><span class="lineno">   81</span>    <span class="keywordflow">if</span> (n != 2) {</div>
-<div class="line"><span class="lineno">   82</span>        <span class="keyword">delete</span>[] pe;</div>
-<div class="line"><span class="lineno">   83</span>        <span class="keyword">delete</span>[] po;</div>
-<div class="line"><span class="lineno">   84</span>    }</div>
-<div class="line"><span class="lineno">   85</span> </div>
-<div class="line"><span class="lineno">   86</span>    <span class="keyword">delete</span>[] ye;  <span class="comment">/// Deleting dynamic array ye</span></div>
-<div class="line"><span class="lineno">   87</span>    <span class="keyword">delete</span>[] yo;  <span class="comment">/// Deleting dynamic array yo</span></div>
-<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">return</span> y;</div>
-<div class="line"><span class="lineno">   89</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   35</span>                                                             {</div>
+<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">if</span> (n == 1) {</div>
+<div class="line"><span class="lineno">   37</span>        <span class="keywordflow">return</span> p;  <span class="comment">/// Base Case To return</span></div>
+<div class="line"><span class="lineno">   38</span>    }</div>
+<div class="line"><span class="lineno">   39</span> </div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordtype">double</span> pi = 2 * asin(1.0);  <span class="comment">/// Declaring value of pi</span></div>
+<div class="line"><span class="lineno">   41</span> </div>
+<div class="line"><span class="lineno">   42</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a> om = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>(</div>
+<div class="line"><span class="lineno">   43</span>        cos(2 * pi / n), sin(2 * pi / n));  <span class="comment">/// Calculating value of omega</span></div>
+<div class="line"><span class="lineno">   44</span> </div>
+<div class="line"><span class="lineno">   45</span>    om.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex/real.html">real</a>(om.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex/real.html">real</a>() / n);  <span class="comment">/// One change in comparison with DFT</span></div>
+<div class="line"><span class="lineno">   46</span>    om.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex/imag.html">imag</a>(om.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex/imag.html">imag</a>() / n);  <span class="comment">/// One change in comparison with DFT</span></div>
+<div class="line"><span class="lineno">   47</span> </div>
+<div class="line"><span class="lineno">   48</span>    <span class="keyword">auto</span> *pe = <span class="keyword">new</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>[n / 2];  <span class="comment">/// Coefficients of even power</span></div>
+<div class="line"><span class="lineno">   49</span> </div>
+<div class="line"><span class="lineno">   50</span>    <span class="keyword">auto</span> *po = <span class="keyword">new</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>[n / 2];  <span class="comment">/// Coefficients of odd power</span></div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordtype">int</span> k1 = 0, k2 = 0;</div>
+<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; n; j++) {</div>
+<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">if</span> (j % 2 == 0) {</div>
+<div class="line"><span class="lineno">   55</span>            pe[k1++] = p[j];  <span class="comment">/// Assigning values of even Coefficients</span></div>
+<div class="line"><span class="lineno">   56</span> </div>
+<div class="line"><span class="lineno">   57</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   58</span>            po[k2++] = p[j];  <span class="comment">/// Assigning value of odd Coefficients</span></div>
+<div class="line"><span class="lineno">   59</span>        }</div>
+<div class="line"><span class="lineno">   60</span>    }</div>
+<div class="line"><span class="lineno">   61</span> </div>
+<div class="line"><span class="lineno">   62</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a> *ye =</div>
+<div class="line"><span class="lineno">   63</span>        <a class="code hl_function" href="#aee56dc85997b8cd42bad71a5d6bd2d93">InverseFastFourierTransform</a>(pe, n / 2);  <span class="comment">/// Recursive Call</span></div>
+<div class="line"><span class="lineno">   64</span> </div>
+<div class="line"><span class="lineno">   65</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a> *yo =</div>
+<div class="line"><span class="lineno">   66</span>        <a class="code hl_function" href="#aee56dc85997b8cd42bad71a5d6bd2d93">InverseFastFourierTransform</a>(po, n / 2);  <span class="comment">/// Recursive Call</span></div>
+<div class="line"><span class="lineno">   67</span> </div>
+<div class="line"><span class="lineno">   68</span>    <span class="keyword">auto</span> *y = <span class="keyword">new</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>[n];  <span class="comment">/// Final value representation list</span></div>
+<div class="line"><span class="lineno">   69</span> </div>
+<div class="line"><span class="lineno">   70</span>    k1 = 0, k2 = 0;</div>
+<div class="line"><span class="lineno">   71</span> </div>
+<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n / 2; i++) {</div>
+<div class="line"><span class="lineno">   73</span>        y[i] =</div>
+<div class="line"><span class="lineno">   74</span>            ye[k1] + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">pow</a>(om, i) * yo[k2];  <span class="comment">/// Updating the first n/2 elements</span></div>
+<div class="line"><span class="lineno">   75</span>        y[i + n / 2] =</div>
+<div class="line"><span class="lineno">   76</span>            ye[k1] - <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">pow</a>(om, i) * yo[k2];  <span class="comment">/// Updating the last n/2 elements</span></div>
+<div class="line"><span class="lineno">   77</span> </div>
+<div class="line"><span class="lineno">   78</span>        k1++;</div>
+<div class="line"><span class="lineno">   79</span>        k2++;</div>
+<div class="line"><span class="lineno">   80</span>    }</div>
+<div class="line"><span class="lineno">   81</span> </div>
+<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">if</span> (n != 2) {</div>
+<div class="line"><span class="lineno">   83</span>        <span class="keyword">delete</span>[] pe;</div>
+<div class="line"><span class="lineno">   84</span>        <span class="keyword">delete</span>[] po;</div>
+<div class="line"><span class="lineno">   85</span>    }</div>
+<div class="line"><span class="lineno">   86</span> </div>
+<div class="line"><span class="lineno">   87</span>    <span class="keyword">delete</span>[] ye;  <span class="comment">/// Deleting dynamic array ye</span></div>
+<div class="line"><span class="lineno">   88</span>    <span class="keyword">delete</span>[] yo;  <span class="comment">/// Deleting dynamic array yo</span></div>
+<div class="line"><span class="lineno">   89</span>    <span class="keywordflow">return</span> y;</div>
+<div class="line"><span class="lineno">   90</span>}</div>
 <div class="ttc" id="aimag_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/complex/imag.html">std::complex::imag</a></div><div class="ttdeci">T imag(T... args)</div></div>
-<div class="ttc" id="anamespacenumerical__methods_html_aee56dc85997b8cd42bad71a5d6bd2d93"><div class="ttname"><a href="#aee56dc85997b8cd42bad71a5d6bd2d93">numerical_methods::InverseFastFourierTransform</a></div><div class="ttdeci">std::complex&lt; double &gt; * InverseFastFourierTransform(std::complex&lt; double &gt; *p, uint8_t n)</div><div class="ttdoc">InverseFastFourierTransform is a recursive function which returns list of complex numbers.</div><div class="ttdef"><b>Definition</b> inverse_fast_fourier_transform.cpp:33</div></div>
+<div class="ttc" id="anamespacenumerical__methods_html_aee56dc85997b8cd42bad71a5d6bd2d93"><div class="ttname"><a href="#aee56dc85997b8cd42bad71a5d6bd2d93">numerical_methods::InverseFastFourierTransform</a></div><div class="ttdeci">std::complex&lt; double &gt; * InverseFastFourierTransform(std::complex&lt; double &gt; *p, uint8_t n)</div><div class="ttdoc">InverseFastFourierTransform is a recursive function which returns list of complex numbers.</div><div class="ttdef"><b>Definition</b> inverse_fast_fourier_transform.cpp:34</div></div>
 <div class="ttc" id="areal_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/complex/real.html">std::complex::real</a></div><div class="ttdeci">T real(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

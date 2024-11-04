@@ -151,57 +151,65 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>matches the stable matching between the two sets </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>                                                                                                                                                                  {</div>
-<div class="line"><span class="lineno">   43</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> num_elements = secondary_preferences.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
-<div class="line"><span class="lineno">   44</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint32_t&gt;</a> matches(num_elements, -1);</div>
-<div class="line"><span class="lineno">   45</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> is_free_primary(num_elements, <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">   46</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint32_t&gt;</a> proposal_index(num_elements, 0); <span class="comment">// Tracks the next secondary to propose for each primary</span></div>
-<div class="line"><span class="lineno">   47</span> </div>
-<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
-<div class="line"><span class="lineno">   49</span>        <span class="keywordtype">int</span> free_primary_index = -1;</div>
-<div class="line"><span class="lineno">   50</span> </div>
-<div class="line"><span class="lineno">   51</span>        <span class="comment">// Find the next free primary</span></div>
-<div class="line"><span class="lineno">   52</span>        <span class="keywordflow">for</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> i = 0; i &lt; num_elements; i++) {</div>
-<div class="line"><span class="lineno">   53</span>            <span class="keywordflow">if</span> (is_free_primary[i]) {</div>
-<div class="line"><span class="lineno">   54</span>                free_primary_index = i;</div>
-<div class="line"><span class="lineno">   55</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   56</span>            }</div>
-<div class="line"><span class="lineno">   57</span>        }</div>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>                                                                  {</div>
+<div class="line"><span class="lineno">   49</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> num_elements = secondary_preferences.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">   50</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint32_t&gt;</a> matches(num_elements, -1);</div>
+<div class="line"><span class="lineno">   51</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> is_free_primary(num_elements, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   52</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint32_t&gt;</a> proposal_index(</div>
+<div class="line"><span class="lineno">   53</span>        num_elements,</div>
+<div class="line"><span class="lineno">   54</span>        0);  <span class="comment">// Tracks the next secondary to propose for each primary</span></div>
+<div class="line"><span class="lineno">   55</span> </div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
+<div class="line"><span class="lineno">   57</span>        <span class="keywordtype">int</span> free_primary_index = -1;</div>
 <div class="line"><span class="lineno">   58</span> </div>
-<div class="line"><span class="lineno">   59</span>        <span class="comment">// If no free primary is found, break the loop</span></div>
-<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">if</span> (free_primary_index == -1) <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   61</span> </div>
-<div class="line"><span class="lineno">   62</span>        <span class="comment">// Get the next secondary to propose</span></div>
-<div class="line"><span class="lineno">   63</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> secondary_to_propose = primary_preferences[free_primary_index][proposal_index[free_primary_index]];</div>
-<div class="line"><span class="lineno">   64</span>        proposal_index[free_primary_index]++;</div>
-<div class="line"><span class="lineno">   65</span> </div>
-<div class="line"><span class="lineno">   66</span>        <span class="comment">// Get the current match of the secondary</span></div>
-<div class="line"><span class="lineno">   67</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> current_match = matches[secondary_to_propose];</div>
-<div class="line"><span class="lineno">   68</span> </div>
-<div class="line"><span class="lineno">   69</span>        <span class="comment">// If the secondary is free, match them</span></div>
-<div class="line"><span class="lineno">   70</span>        <span class="keywordflow">if</span> (current_match == -1) {</div>
-<div class="line"><span class="lineno">   71</span>            matches[secondary_to_propose] = free_primary_index;</div>
-<div class="line"><span class="lineno">   72</span>            is_free_primary[free_primary_index] = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   73</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   74</span>            <span class="comment">// Determine if the current match should be replaced</span></div>
-<div class="line"><span class="lineno">   75</span>            <span class="keyword">auto</span> new_proposer_rank = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/find.html">std::find</a>(secondary_preferences[secondary_to_propose].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">begin</a>(),</div>
-<div class="line"><span class="lineno">   76</span>                                                secondary_preferences[secondary_to_propose].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a>(),</div>
-<div class="line"><span class="lineno">   77</span>                                                free_primary_index);</div>
-<div class="line"><span class="lineno">   78</span>            <span class="keyword">auto</span> current_match_rank = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/find.html">std::find</a>(secondary_preferences[secondary_to_propose].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">begin</a>(),</div>
-<div class="line"><span class="lineno">   79</span>                                                 secondary_preferences[secondary_to_propose].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a>(),</div>
-<div class="line"><span class="lineno">   80</span>                                                 current_match);</div>
-<div class="line"><span class="lineno">   81</span> </div>
-<div class="line"><span class="lineno">   82</span>            <span class="comment">// If the new proposer is preferred over the current match</span></div>
-<div class="line"><span class="lineno">   83</span>            <span class="keywordflow">if</span> (new_proposer_rank &lt; current_match_rank) {</div>
-<div class="line"><span class="lineno">   84</span>                matches[secondary_to_propose] = free_primary_index;</div>
-<div class="line"><span class="lineno">   85</span>                is_free_primary[free_primary_index] = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   86</span>                is_free_primary[current_match] = <span class="keyword">true</span>; <span class="comment">// Current match is now free</span></div>
-<div class="line"><span class="lineno">   87</span>            }</div>
-<div class="line"><span class="lineno">   88</span>        }</div>
-<div class="line"><span class="lineno">   89</span>    }</div>
-<div class="line"><span class="lineno">   90</span> </div>
-<div class="line"><span class="lineno">   91</span>    <span class="keywordflow">return</span> matches;</div>
-<div class="line"><span class="lineno">   92</span>}</div>
+<div class="line"><span class="lineno">   59</span>        <span class="comment">// Find the next free primary</span></div>
+<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">for</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> i = 0; i &lt; num_elements; i++) {</div>
+<div class="line"><span class="lineno">   61</span>            <span class="keywordflow">if</span> (is_free_primary[i]) {</div>
+<div class="line"><span class="lineno">   62</span>                free_primary_index = i;</div>
+<div class="line"><span class="lineno">   63</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   64</span>            }</div>
+<div class="line"><span class="lineno">   65</span>        }</div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   67</span>        <span class="comment">// If no free primary is found, break the loop</span></div>
+<div class="line"><span class="lineno">   68</span>        <span class="keywordflow">if</span> (free_primary_index == -1)</div>
+<div class="line"><span class="lineno">   69</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   70</span> </div>
+<div class="line"><span class="lineno">   71</span>        <span class="comment">// Get the next secondary to propose</span></div>
+<div class="line"><span class="lineno">   72</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> secondary_to_propose =</div>
+<div class="line"><span class="lineno">   73</span>            primary_preferences[free_primary_index]</div>
+<div class="line"><span class="lineno">   74</span>                               [proposal_index[free_primary_index]];</div>
+<div class="line"><span class="lineno">   75</span>        proposal_index[free_primary_index]++;</div>
+<div class="line"><span class="lineno">   76</span> </div>
+<div class="line"><span class="lineno">   77</span>        <span class="comment">// Get the current match of the secondary</span></div>
+<div class="line"><span class="lineno">   78</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> current_match = matches[secondary_to_propose];</div>
+<div class="line"><span class="lineno">   79</span> </div>
+<div class="line"><span class="lineno">   80</span>        <span class="comment">// If the secondary is free, match them</span></div>
+<div class="line"><span class="lineno">   81</span>        <span class="keywordflow">if</span> (current_match == -1) {</div>
+<div class="line"><span class="lineno">   82</span>            matches[secondary_to_propose] = free_primary_index;</div>
+<div class="line"><span class="lineno">   83</span>            is_free_primary[free_primary_index] = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   84</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   85</span>            <span class="comment">// Determine if the current match should be replaced</span></div>
+<div class="line"><span class="lineno">   86</span>            <span class="keyword">auto</span> new_proposer_rank =</div>
+<div class="line"><span class="lineno">   87</span>                <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/find.html">std::find</a>(secondary_preferences[secondary_to_propose].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">begin</a>(),</div>
+<div class="line"><span class="lineno">   88</span>                          secondary_preferences[secondary_to_propose].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a>(),</div>
+<div class="line"><span class="lineno">   89</span>                          free_primary_index);</div>
+<div class="line"><span class="lineno">   90</span>            <span class="keyword">auto</span> current_match_rank =</div>
+<div class="line"><span class="lineno">   91</span>                <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/find.html">std::find</a>(secondary_preferences[secondary_to_propose].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">begin</a>(),</div>
+<div class="line"><span class="lineno">   92</span>                          secondary_preferences[secondary_to_propose].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a>(),</div>
+<div class="line"><span class="lineno">   93</span>                          current_match);</div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>            <span class="comment">// If the new proposer is preferred over the current match</span></div>
+<div class="line"><span class="lineno">   96</span>            <span class="keywordflow">if</span> (new_proposer_rank &lt; current_match_rank) {</div>
+<div class="line"><span class="lineno">   97</span>                matches[secondary_to_propose] = free_primary_index;</div>
+<div class="line"><span class="lineno">   98</span>                is_free_primary[free_primary_index] = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   99</span>                is_free_primary[current_match] =</div>
+<div class="line"><span class="lineno">  100</span>                    <span class="keyword">true</span>;  <span class="comment">// Current match is now free</span></div>
+<div class="line"><span class="lineno">  101</span>            }</div>
+<div class="line"><span class="lineno">  102</span>        }</div>
+<div class="line"><span class="lineno">  103</span>    }</div>
+<div class="line"><span class="lineno">  104</span> </div>
+<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">return</span> matches;</div>
+<div class="line"><span class="lineno">  106</span>}</div>
 <div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
 <div class="ttc" id="afind_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/find.html">std::find</a></div><div class="ttdeci">T find(T... args)</div></div>

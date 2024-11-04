@@ -115,13 +115,14 @@ $(function(){initNavTree('d6/d7a/golden__search__extrema_8cpp.html','../../'); i
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for golden_search_extrema.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d94/golden__search__extrema_8cpp__incl.svg" width="431" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d94/golden__search__extrema_8cpp__incl.svg" width="515" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -197,50 +198,50 @@ k=\frac{3-\sqrt{5}}{2} \approx 0.381966\ldots\]
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>local minima found in the interval </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   30</span>                                {</div>
-<div class="line"><span class="lineno">   31</span>    uint32_t iters = 0;</div>
-<div class="line"><span class="lineno">   32</span>    <span class="keywordtype">double</span> c, d;</div>
-<div class="line"><span class="lineno">   33</span>    <span class="keywordtype">double</span> prev_mean, mean = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/numeric_limits/infinity.html">std::numeric_limits&lt;double&gt;::infinity</a>();</div>
-<div class="line"><span class="lineno">   34</span> </div>
-<div class="line"><span class="lineno">   35</span>    <span class="comment">// golden ratio value</span></div>
-<div class="line"><span class="lineno">   36</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> M_GOLDEN_RATIO = (1.f + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(5.f)) / 2.f;</div>
-<div class="line"><span class="lineno">   37</span> </div>
-<div class="line"><span class="lineno">   38</span>    <span class="comment">// ensure that lim_a &lt; lim_b</span></div>
-<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">if</span> (lim_a &gt; lim_b) {</div>
-<div class="line"><span class="lineno">   40</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(lim_a, lim_b);</div>
-<div class="line"><span class="lineno">   41</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (std::abs(lim_a - lim_b) &lt;= <a class="code hl_define" href="#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>) {</div>
-<div class="line"><span class="lineno">   42</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Search range must be greater than &quot;</span> &lt;&lt; <a class="code hl_define" href="#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   43</span>        <span class="keywordflow">return</span> lim_a;</div>
-<div class="line"><span class="lineno">   44</span>    }</div>
-<div class="line"><span class="lineno">   45</span> </div>
-<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno">   47</span>        prev_mean = mean;</div>
-<div class="line"><span class="lineno">   48</span> </div>
-<div class="line"><span class="lineno">   49</span>        <span class="comment">// compute the section ratio width</span></div>
-<div class="line"><span class="lineno">   50</span>        <span class="keywordtype">double</span> ratio = (lim_b - lim_a) / M_GOLDEN_RATIO;</div>
-<div class="line"><span class="lineno">   51</span>        c = lim_b - ratio;  <span class="comment">// right-side section start</span></div>
-<div class="line"><span class="lineno">   52</span>        d = lim_a + ratio;  <span class="comment">// left-side section end</span></div>
-<div class="line"><span class="lineno">   53</span> </div>
-<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a4251b4df4748a0b9c43a48f61bdd2397">f</a>(c) &lt; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a4251b4df4748a0b9c43a48f61bdd2397">f</a>(d)) {</div>
-<div class="line"><span class="lineno">   55</span>            <span class="comment">// select left section</span></div>
-<div class="line"><span class="lineno">   56</span>            lim_b = d;</div>
-<div class="line"><span class="lineno">   57</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   58</span>            <span class="comment">// selct right section</span></div>
-<div class="line"><span class="lineno">   59</span>            lim_a = c;</div>
-<div class="line"><span class="lineno">   60</span>        }</div>
-<div class="line"><span class="lineno">   61</span> </div>
-<div class="line"><span class="lineno">   62</span>        mean = (lim_a + lim_b) / 2.f;</div>
-<div class="line"><span class="lineno">   63</span>        iters++;</div>
-<div class="line"><span class="lineno">   64</span> </div>
-<div class="line"><span class="lineno">   65</span>        <span class="comment">// continue till the interval width is greater than sqrt(system epsilon)</span></div>
-<div class="line"><span class="lineno">   66</span>    } <span class="keywordflow">while</span> (std::abs(lim_a - lim_b) &gt; <a class="code hl_define" href="#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>);</div>
-<div class="line"><span class="lineno">   67</span> </div>
-<div class="line"><span class="lineno">   68</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot; (iters: &quot;</span> &lt;&lt; iters &lt;&lt; <span class="stringliteral">&quot;) &quot;</span>;</div>
-<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">return</span> prev_mean;</div>
-<div class="line"><span class="lineno">   70</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>                                {</div>
+<div class="line"><span class="lineno">   32</span>    uint32_t iters = 0;</div>
+<div class="line"><span class="lineno">   33</span>    <span class="keywordtype">double</span> c, d;</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordtype">double</span> prev_mean, mean = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/numeric_limits/infinity.html">std::numeric_limits&lt;double&gt;::infinity</a>();</div>
+<div class="line"><span class="lineno">   35</span> </div>
+<div class="line"><span class="lineno">   36</span>    <span class="comment">// golden ratio value</span></div>
+<div class="line"><span class="lineno">   37</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> M_GOLDEN_RATIO = (1.f + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(5.f)) / 2.f;</div>
+<div class="line"><span class="lineno">   38</span> </div>
+<div class="line"><span class="lineno">   39</span>    <span class="comment">// ensure that lim_a &lt; lim_b</span></div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">if</span> (lim_a &gt; lim_b) {</div>
+<div class="line"><span class="lineno">   41</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(lim_a, lim_b);</div>
+<div class="line"><span class="lineno">   42</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (std::abs(lim_a - lim_b) &lt;= <a class="code hl_define" href="#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>) {</div>
+<div class="line"><span class="lineno">   43</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Search range must be greater than &quot;</span> &lt;&lt; <a class="code hl_define" href="#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   44</span>        <span class="keywordflow">return</span> lim_a;</div>
+<div class="line"><span class="lineno">   45</span>    }</div>
+<div class="line"><span class="lineno">   46</span> </div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">do</span> {</div>
+<div class="line"><span class="lineno">   48</span>        prev_mean = mean;</div>
+<div class="line"><span class="lineno">   49</span> </div>
+<div class="line"><span class="lineno">   50</span>        <span class="comment">// compute the section ratio width</span></div>
+<div class="line"><span class="lineno">   51</span>        <span class="keywordtype">double</span> ratio = (lim_b - lim_a) / M_GOLDEN_RATIO;</div>
+<div class="line"><span class="lineno">   52</span>        c = lim_b - ratio;  <span class="comment">// right-side section start</span></div>
+<div class="line"><span class="lineno">   53</span>        d = lim_a + ratio;  <span class="comment">// left-side section end</span></div>
+<div class="line"><span class="lineno">   54</span> </div>
+<div class="line"><span class="lineno">   55</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a4251b4df4748a0b9c43a48f61bdd2397">f</a>(c) &lt; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a4251b4df4748a0b9c43a48f61bdd2397">f</a>(d)) {</div>
+<div class="line"><span class="lineno">   56</span>            <span class="comment">// select left section</span></div>
+<div class="line"><span class="lineno">   57</span>            lim_b = d;</div>
+<div class="line"><span class="lineno">   58</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   59</span>            <span class="comment">// selct right section</span></div>
+<div class="line"><span class="lineno">   60</span>            lim_a = c;</div>
+<div class="line"><span class="lineno">   61</span>        }</div>
+<div class="line"><span class="lineno">   62</span> </div>
+<div class="line"><span class="lineno">   63</span>        mean = (lim_a + lim_b) / 2.f;</div>
+<div class="line"><span class="lineno">   64</span>        iters++;</div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>        <span class="comment">// continue till the interval width is greater than sqrt(system epsilon)</span></div>
+<div class="line"><span class="lineno">   67</span>    } <span class="keywordflow">while</span> (std::abs(lim_a - lim_b) &gt; <a class="code hl_define" href="#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>);</div>
+<div class="line"><span class="lineno">   68</span> </div>
+<div class="line"><span class="lineno">   69</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot; (iters: &quot;</span> &lt;&lt; iters &lt;&lt; <span class="stringliteral">&quot;) &quot;</span>;</div>
+<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">return</span> prev_mean;</div>
+<div class="line"><span class="lineno">   71</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a></div></div>
 <div class="ttc" id="acomposite__simpson__rule_8cpp_html_a4251b4df4748a0b9c43a48f61bdd2397"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a4251b4df4748a0b9c43a48f61bdd2397">numerical_methods::simpson_method::f</a></div><div class="ttdeci">double f(double x)</div><div class="ttdoc">A function f(x) that will be used to test the method.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:113</div></div>
-<div class="ttc" id="agolden__search__extrema_8cpp_html_a002b2f4894492820fe708b1b7e7c5e70"><div class="ttname"><a href="#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a></div><div class="ttdeci">#define EPSILON</div><div class="ttdoc">solution accuracy limit</div><div class="ttdef"><b>Definition</b> golden_search_extrema.cpp:17</div></div>
+<div class="ttc" id="agolden__search__extrema_8cpp_html_a002b2f4894492820fe708b1b7e7c5e70"><div class="ttname"><a href="#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a></div><div class="ttdeci">#define EPSILON</div><div class="ttdoc">solution accuracy limit</div><div class="ttdef"><b>Definition</b> golden_search_extrema.cpp:18</div></div>
 <div class="ttc" id="ainfinity_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/numeric_limits/infinity.html">std::numeric_limits::infinity</a></div><div class="ttdeci">T infinity(T... args)</div></div>
 <div class="ttc" id="asqrt_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a></div><div class="ttdeci">T sqrt(T... args)</div></div>
 <div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
@@ -267,21 +268,21 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Main function </p>
-<div class="fragment"><div class="line"><span class="lineno">  139</span>           {</div>
-<div class="line"><span class="lineno">  140</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>.precision(9);</div>
-<div class="line"><span class="lineno">  141</span> </div>
-<div class="line"><span class="lineno">  142</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Computations performed with machine epsilon: &quot;</span> &lt;&lt; <a class="code hl_define" href="#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a></div>
-<div class="line"><span class="lineno">  143</span>              &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  144</span> </div>
-<div class="line"><span class="lineno">  145</span>    <a class="code hl_function" href="#a1440a7779ac56f47a3f355ce4a8c7da0">test1</a>();</div>
-<div class="line"><span class="lineno">  146</span>    <a class="code hl_function" href="#a0283886819c7c140a023582b7269e2d0">test2</a>();</div>
-<div class="line"><span class="lineno">  147</span>    <a class="code hl_function" href="#a6d0455dd5c30adda100e95f0423c786e">test3</a>();</div>
-<div class="line"><span class="lineno">  148</span> </div>
-<div class="line"><span class="lineno">  149</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  150</span>}</div>
-<div class="ttc" id="agolden__search__extrema_8cpp_html_a0283886819c7c140a023582b7269e2d0"><div class="ttname"><a href="#a0283886819c7c140a023582b7269e2d0">test2</a></div><div class="ttdeci">void test2()</div><div class="ttdoc">Test function to find maxima for the function  in the interval    Expected result: .</div><div class="ttdef"><b>Definition</b> golden_search_extrema.cpp:100</div></div>
-<div class="ttc" id="agolden__search__extrema_8cpp_html_a1440a7779ac56f47a3f355ce4a8c7da0"><div class="ttname"><a href="#a1440a7779ac56f47a3f355ce4a8c7da0">test1</a></div><div class="ttdeci">void test1()</div><div class="ttdoc">Test function to find minima for the function  in the interval    Expected result = 2.</div><div class="ttdef"><b>Definition</b> golden_search_extrema.cpp:78</div></div>
-<div class="ttc" id="agolden__search__extrema_8cpp_html_a6d0455dd5c30adda100e95f0423c786e"><div class="ttname"><a href="#a6d0455dd5c30adda100e95f0423c786e">test3</a></div><div class="ttdeci">void test3()</div><div class="ttdoc">Test function to find maxima for the function  in the interval    Expected result: .</div><div class="ttdef"><b>Definition</b> golden_search_extrema.cpp:123</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  140</span>           {</div>
+<div class="line"><span class="lineno">  141</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>.precision(9);</div>
+<div class="line"><span class="lineno">  142</span> </div>
+<div class="line"><span class="lineno">  143</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Computations performed with machine epsilon: &quot;</span> &lt;&lt; <a class="code hl_define" href="#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a></div>
+<div class="line"><span class="lineno">  144</span>              &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  145</span> </div>
+<div class="line"><span class="lineno">  146</span>    <a class="code hl_function" href="#a1440a7779ac56f47a3f355ce4a8c7da0">test1</a>();</div>
+<div class="line"><span class="lineno">  147</span>    <a class="code hl_function" href="#a0283886819c7c140a023582b7269e2d0">test2</a>();</div>
+<div class="line"><span class="lineno">  148</span>    <a class="code hl_function" href="#a6d0455dd5c30adda100e95f0423c786e">test3</a>();</div>
+<div class="line"><span class="lineno">  149</span> </div>
+<div class="line"><span class="lineno">  150</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  151</span>}</div>
+<div class="ttc" id="agolden__search__extrema_8cpp_html_a0283886819c7c140a023582b7269e2d0"><div class="ttname"><a href="#a0283886819c7c140a023582b7269e2d0">test2</a></div><div class="ttdeci">void test2()</div><div class="ttdoc">Test function to find maxima for the function  in the interval    Expected result: .</div><div class="ttdef"><b>Definition</b> golden_search_extrema.cpp:101</div></div>
+<div class="ttc" id="agolden__search__extrema_8cpp_html_a1440a7779ac56f47a3f355ce4a8c7da0"><div class="ttname"><a href="#a1440a7779ac56f47a3f355ce4a8c7da0">test1</a></div><div class="ttdeci">void test1()</div><div class="ttdoc">Test function to find minima for the function  in the interval    Expected result = 2.</div><div class="ttdef"><b>Definition</b> golden_search_extrema.cpp:79</div></div>
+<div class="ttc" id="agolden__search__extrema_8cpp_html_a6d0455dd5c30adda100e95f0423c786e"><div class="ttname"><a href="#a6d0455dd5c30adda100e95f0423c786e">test3</a></div><div class="ttdeci">void test3()</div><div class="ttdoc">Test function to find maxima for the function  in the interval    Expected result: .</div><div class="ttdef"><b>Definition</b> golden_search_extrema.cpp:124</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -307,23 +308,23 @@ Here is the call graph for this function:</div>
 
 <p>Test function to find minima for the function \(f(x)= (x-2)^2\) in the interval \([1,5]\) <br  />
  Expected result = 2. </p>
-<div class="fragment"><div class="line"><span class="lineno">   78</span>             {</div>
-<div class="line"><span class="lineno">   79</span>    <span class="comment">// define the function to minimize as a lambda function</span></div>
-<div class="line"><span class="lineno">   80</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt;double(<span class="keywordtype">double</span>)&gt; f1 = [](<span class="keywordtype">double</span> x) {</div>
-<div class="line"><span class="lineno">   81</span>        <span class="keywordflow">return</span> (x - 2) * (x - 2);</div>
-<div class="line"><span class="lineno">   82</span>    };</div>
-<div class="line"><span class="lineno">   83</span> </div>
-<div class="line"><span class="lineno">   84</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1.... &quot;</span>;</div>
-<div class="line"><span class="lineno">   85</span> </div>
-<div class="line"><span class="lineno">   86</span>    <span class="keywordtype">double</span> minima = <a class="code hl_function" href="#a1aa76a6d5fd4d333f9072beff1dc486b">get_minima</a>(f1, 1, 5);</div>
-<div class="line"><span class="lineno">   87</span> </div>
-<div class="line"><span class="lineno">   88</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; minima &lt;&lt; <span class="stringliteral">&quot;...&quot;</span>;</div>
-<div class="line"><span class="lineno">   89</span> </div>
-<div class="line"><span class="lineno">   90</span>    assert(std::abs(minima - 2) &lt; <a class="code hl_define" href="#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>);</div>
-<div class="line"><span class="lineno">   91</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   92</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   79</span>             {</div>
+<div class="line"><span class="lineno">   80</span>    <span class="comment">// define the function to minimize as a lambda function</span></div>
+<div class="line"><span class="lineno">   81</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt;double(<span class="keywordtype">double</span>)&gt; f1 = [](<span class="keywordtype">double</span> x) {</div>
+<div class="line"><span class="lineno">   82</span>        <span class="keywordflow">return</span> (x - 2) * (x - 2);</div>
+<div class="line"><span class="lineno">   83</span>    };</div>
+<div class="line"><span class="lineno">   84</span> </div>
+<div class="line"><span class="lineno">   85</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1.... &quot;</span>;</div>
+<div class="line"><span class="lineno">   86</span> </div>
+<div class="line"><span class="lineno">   87</span>    <span class="keywordtype">double</span> minima = <a class="code hl_function" href="#a1aa76a6d5fd4d333f9072beff1dc486b">get_minima</a>(f1, 1, 5);</div>
+<div class="line"><span class="lineno">   88</span> </div>
+<div class="line"><span class="lineno">   89</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; minima &lt;&lt; <span class="stringliteral">&quot;...&quot;</span>;</div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>    assert(std::abs(minima - 2) &lt; <a class="code hl_define" href="#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>);</div>
+<div class="line"><span class="lineno">   92</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   93</span>}</div>
 <div class="ttc" id="afunction_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a></div></div>
-<div class="ttc" id="agolden__search__extrema_8cpp_html_a1aa76a6d5fd4d333f9072beff1dc486b"><div class="ttname"><a href="#a1aa76a6d5fd4d333f9072beff1dc486b">get_minima</a></div><div class="ttdeci">double get_minima(const std::function&lt; double(double)&gt; &amp;f, double lim_a, double lim_b)</div><div class="ttdoc">Get the minima of a function in the given interval. To get the maxima, simply negate the function....</div><div class="ttdef"><b>Definition</b> golden_search_extrema.cpp:29</div></div>
+<div class="ttc" id="agolden__search__extrema_8cpp_html_a1aa76a6d5fd4d333f9072beff1dc486b"><div class="ttname"><a href="#a1aa76a6d5fd4d333f9072beff1dc486b">get_minima</a></div><div class="ttdeci">double get_minima(const std::function&lt; double(double)&gt; &amp;f, double lim_a, double lim_b)</div><div class="ttdoc">Get the minima of a function in the given interval. To get the maxima, simply negate the function....</div><div class="ttdef"><b>Definition</b> golden_search_extrema.cpp:30</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -349,22 +350,22 @@ Here is the call graph for this function:</div>
 
 <p>Test function to find <em>maxima</em> for the function \(f(x)= x^{\frac{1}{x}}\) in the interval \([-2,10]\) <br  />
  Expected result: \(e\approx 2.71828182845904509\). </p>
-<div class="fragment"><div class="line"><span class="lineno">  100</span>             {</div>
-<div class="line"><span class="lineno">  101</span>    <span class="comment">// define the function to maximize as a lambda function</span></div>
-<div class="line"><span class="lineno">  102</span>    <span class="comment">// since we are maximixing, we negated the function return value</span></div>
-<div class="line"><span class="lineno">  103</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt;double(<span class="keywordtype">double</span>)&gt; func = [](<span class="keywordtype">double</span> x) {</div>
-<div class="line"><span class="lineno">  104</span>        <span class="keywordflow">return</span> -<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(x, 1.f / x);</div>
-<div class="line"><span class="lineno">  105</span>    };</div>
-<div class="line"><span class="lineno">  106</span> </div>
-<div class="line"><span class="lineno">  107</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2.... &quot;</span>;</div>
-<div class="line"><span class="lineno">  108</span> </div>
-<div class="line"><span class="lineno">  109</span>    <span class="keywordtype">double</span> minima = <a class="code hl_function" href="#a1aa76a6d5fd4d333f9072beff1dc486b">get_minima</a>(func, -2, 10);</div>
-<div class="line"><span class="lineno">  110</span> </div>
-<div class="line"><span class="lineno">  111</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; minima &lt;&lt; <span class="stringliteral">&quot; (&quot;</span> &lt;&lt; M_E &lt;&lt; <span class="stringliteral">&quot;)...&quot;</span>;</div>
-<div class="line"><span class="lineno">  112</span> </div>
-<div class="line"><span class="lineno">  113</span>    assert(std::abs(minima - M_E) &lt; <a class="code hl_define" href="#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>);</div>
-<div class="line"><span class="lineno">  114</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  115</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  101</span>             {</div>
+<div class="line"><span class="lineno">  102</span>    <span class="comment">// define the function to maximize as a lambda function</span></div>
+<div class="line"><span class="lineno">  103</span>    <span class="comment">// since we are maximixing, we negated the function return value</span></div>
+<div class="line"><span class="lineno">  104</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt;double(<span class="keywordtype">double</span>)&gt; func = [](<span class="keywordtype">double</span> x) {</div>
+<div class="line"><span class="lineno">  105</span>        <span class="keywordflow">return</span> -<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(x, 1.f / x);</div>
+<div class="line"><span class="lineno">  106</span>    };</div>
+<div class="line"><span class="lineno">  107</span> </div>
+<div class="line"><span class="lineno">  108</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2.... &quot;</span>;</div>
+<div class="line"><span class="lineno">  109</span> </div>
+<div class="line"><span class="lineno">  110</span>    <span class="keywordtype">double</span> minima = <a class="code hl_function" href="#a1aa76a6d5fd4d333f9072beff1dc486b">get_minima</a>(func, -2, 10);</div>
+<div class="line"><span class="lineno">  111</span> </div>
+<div class="line"><span class="lineno">  112</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; minima &lt;&lt; <span class="stringliteral">&quot; (&quot;</span> &lt;&lt; M_E &lt;&lt; <span class="stringliteral">&quot;)...&quot;</span>;</div>
+<div class="line"><span class="lineno">  113</span> </div>
+<div class="line"><span class="lineno">  114</span>    assert(std::abs(minima - M_E) &lt; <a class="code hl_define" href="#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>);</div>
+<div class="line"><span class="lineno">  115</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  116</span>}</div>
 <div class="ttc" id="apow_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a></div><div class="ttdeci">T pow(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -391,20 +392,20 @@ Here is the call graph for this function:</div>
 
 <p>Test function to find <em>maxima</em> for the function \(f(x)= \cos x\) in the interval \([0,12]\) <br  />
  Expected result: \(\pi\approx 3.14159265358979312\). </p>
-<div class="fragment"><div class="line"><span class="lineno">  123</span>             {</div>
-<div class="line"><span class="lineno">  124</span>    <span class="comment">// define the function to maximize as a lambda function</span></div>
-<div class="line"><span class="lineno">  125</span>    <span class="comment">// since we are maximixing, we negated the function return value</span></div>
-<div class="line"><span class="lineno">  126</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt;double(<span class="keywordtype">double</span>)&gt; func = [](<span class="keywordtype">double</span> x) { <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/cos.html">std::cos</a>(x); };</div>
-<div class="line"><span class="lineno">  127</span> </div>
-<div class="line"><span class="lineno">  128</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 3.... &quot;</span>;</div>
-<div class="line"><span class="lineno">  129</span> </div>
-<div class="line"><span class="lineno">  130</span>    <span class="keywordtype">double</span> minima = <a class="code hl_function" href="#a1aa76a6d5fd4d333f9072beff1dc486b">get_minima</a>(func, -4, 12);</div>
-<div class="line"><span class="lineno">  131</span> </div>
-<div class="line"><span class="lineno">  132</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; minima &lt;&lt; <span class="stringliteral">&quot; (&quot;</span> &lt;&lt; M_PI &lt;&lt; <span class="stringliteral">&quot;)...&quot;</span>;</div>
-<div class="line"><span class="lineno">  133</span> </div>
-<div class="line"><span class="lineno">  134</span>    assert(std::abs(minima - M_PI) &lt; <a class="code hl_define" href="#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>);</div>
-<div class="line"><span class="lineno">  135</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  136</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  124</span>             {</div>
+<div class="line"><span class="lineno">  125</span>    <span class="comment">// define the function to maximize as a lambda function</span></div>
+<div class="line"><span class="lineno">  126</span>    <span class="comment">// since we are maximixing, we negated the function return value</span></div>
+<div class="line"><span class="lineno">  127</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt;double(<span class="keywordtype">double</span>)&gt; func = [](<span class="keywordtype">double</span> x) { <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/cos.html">std::cos</a>(x); };</div>
+<div class="line"><span class="lineno">  128</span> </div>
+<div class="line"><span class="lineno">  129</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 3.... &quot;</span>;</div>
+<div class="line"><span class="lineno">  130</span> </div>
+<div class="line"><span class="lineno">  131</span>    <span class="keywordtype">double</span> minima = <a class="code hl_function" href="#a1aa76a6d5fd4d333f9072beff1dc486b">get_minima</a>(func, -4, 12);</div>
+<div class="line"><span class="lineno">  132</span> </div>
+<div class="line"><span class="lineno">  133</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; minima &lt;&lt; <span class="stringliteral">&quot; (&quot;</span> &lt;&lt; M_PI &lt;&lt; <span class="stringliteral">&quot;)...&quot;</span>;</div>
+<div class="line"><span class="lineno">  134</span> </div>
+<div class="line"><span class="lineno">  135</span>    assert(std::abs(minima - M_PI) &lt; <a class="code hl_define" href="#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>);</div>
+<div class="line"><span class="lineno">  136</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  137</span>}</div>
 <div class="ttc" id="acos_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/cos.html">std::cos</a></div><div class="ttdeci">T cos(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

@@ -1,13 +1,15 @@
 <map id="numerical_methods/inverse_fast_fourier_transform.cpp" name="numerical_methods/inverse_fast_fourier_transform.cpp">
-<area shape="rect" id="Node000001" title="An inverse fast Fourier transform (IFFT) is an algorithm that computes the inverse fourier transform." alt="" coords="121,5,301,46"/>
+<area shape="rect" id="Node000001" title="An inverse fast Fourier transform (IFFT) is an algorithm that computes the inverse fourier transform." alt="" coords="165,5,345,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,70,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,49,79,90,77,85,166,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,49,85,91,84,86,200,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="94,94,152,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,48,150,85,146,81,187,44"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,49,157,88,155,83,221,44"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="176,94,246,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="214,46,214,78,208,78,208,46"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="270,94,341,120"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="236,44,281,82,278,86,233,48"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="365,94,422,120"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="258,44,353,85,350,90,255,49"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="246,48,227,82,223,79,242,45"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="270,94,330,120"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="268,45,288,79,283,82,264,48"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="354,94,425,120"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="290,44,357,83,354,88,287,49"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="449,94,506,120"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="311,44,435,88,433,93,310,49"/>
 </map>

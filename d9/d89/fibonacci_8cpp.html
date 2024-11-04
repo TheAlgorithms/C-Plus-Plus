@@ -113,18 +113,19 @@ $(function(){initNavTree('d9/d89/fibonacci_8cpp.html','../../'); initResizable(t
 
 <p>n-th <a href="https://en.wikipedia.org/wiki/Fibonacci_sequence" target="_blank">Fibonacci number</a>.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for fibonacci.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d0f/fibonacci_8cpp__incl.svg" width="171" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d0f/fibonacci_8cpp__incl.svg" width="255" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html">math</a></td></tr>
-<tr class="memdesc:dd/d47/namespacemath"><td class="mdescLeft">&#160;</td><td class="mdescRight">for IO operations <br /></td></tr>
+<tr class="memdesc:dd/d47/namespacemath"><td class="mdescLeft">&#160;</td><td class="mdescRight">for assert <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d76/namespacefibonacci.html">fibonacci</a></td></tr>
 <tr class="memdesc:df/d76/namespacefibonacci"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for Fibonacci sequence. <br /></td></tr>
@@ -172,16 +173,16 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>n-th element of the Fibonacci's sequence </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   30</span>                               {</div>
-<div class="line"><span class="lineno">   31</span>    <span class="comment">// If the input is 0 or 1 just return the same (Base Case)</span></div>
-<div class="line"><span class="lineno">   32</span>    <span class="comment">// This will set the first 2 values of the sequence</span></div>
-<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">if</span> (n &lt;= 1) {</div>
-<div class="line"><span class="lineno">   34</span>        <span class="keywordflow">return</span> n;</div>
-<div class="line"><span class="lineno">   35</span>    }</div>
-<div class="line"><span class="lineno">   36</span> </div>
-<div class="line"><span class="lineno">   37</span>    <span class="comment">// Add the preceding 2 values of the sequence to get next</span></div>
-<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">return</span> <a class="code hl_namespace" href="../../df/d76/namespacefibonacci.html">fibonacci</a>(n - 1) + <a class="code hl_namespace" href="../../df/d76/namespacefibonacci.html">fibonacci</a>(n - 2);</div>
-<div class="line"><span class="lineno">   39</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>                               {</div>
+<div class="line"><span class="lineno">   33</span>    <span class="comment">// If the input is 0 or 1 just return the same (Base Case)</span></div>
+<div class="line"><span class="lineno">   34</span>    <span class="comment">// This will set the first 2 values of the sequence</span></div>
+<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">if</span> (n &lt;= 1) {</div>
+<div class="line"><span class="lineno">   36</span>        <span class="keywordflow">return</span> n;</div>
+<div class="line"><span class="lineno">   37</span>    }</div>
+<div class="line"><span class="lineno">   38</span> </div>
+<div class="line"><span class="lineno">   39</span>    <span class="comment">// Add the preceding 2 values of the sequence to get next</span></div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">return</span> <a class="code hl_namespace" href="../../df/d76/namespacefibonacci.html">fibonacci</a>(n - 1) + <a class="code hl_namespace" href="../../df/d76/namespacefibonacci.html">fibonacci</a>(n - 2);</div>
+<div class="line"><span class="lineno">   41</span>}</div>
 <div class="ttc" id="anamespacefibonacci_html"><div class="ttname"><a href="../../df/d76/namespacefibonacci.html">fibonacci</a></div><div class="ttdoc">Functions for Fibonacci sequence.</div></div>
 </div><!-- fragment -->
 </div>
@@ -203,11 +204,11 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   62</span>           {</div>
-<div class="line"><span class="lineno">   63</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">   64</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   65</span>}</div>
-<div class="ttc" id="afibonacci_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementation.</div><div class="ttdef"><b>Definition</b> fibonacci.cpp:47</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   64</span>           {</div>
+<div class="line"><span class="lineno">   65</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   67</span>}</div>
+<div class="ttc" id="afibonacci_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementation.</div><div class="ttdef"><b>Definition</b> fibonacci.cpp:49</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -241,16 +242,16 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementation. </p>
 <dl class="section return"><dt>Returns</dt><dd><code>void</code> </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   47</span>                   {</div>
-<div class="line"><span class="lineno">   48</span>    assert(math::fibonacci::fibonacci(0) == 0);</div>
-<div class="line"><span class="lineno">   49</span>    assert(math::fibonacci::fibonacci(1) == 1);</div>
-<div class="line"><span class="lineno">   50</span>    assert(math::fibonacci::fibonacci(2) == 1);</div>
-<div class="line"><span class="lineno">   51</span>    assert(math::fibonacci::fibonacci(3) == 2);</div>
-<div class="line"><span class="lineno">   52</span>    assert(math::fibonacci::fibonacci(4) == 3);</div>
-<div class="line"><span class="lineno">   53</span>    assert(math::fibonacci::fibonacci(15) == 610);</div>
-<div class="line"><span class="lineno">   54</span>    assert(math::fibonacci::fibonacci(20) == 6765);</div>
-<div class="line"><span class="lineno">   55</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have passed successfully!\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   56</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   49</span>                   {</div>
+<div class="line"><span class="lineno">   50</span>    assert(math::fibonacci::fibonacci(0) == 0);</div>
+<div class="line"><span class="lineno">   51</span>    assert(math::fibonacci::fibonacci(1) == 1);</div>
+<div class="line"><span class="lineno">   52</span>    assert(math::fibonacci::fibonacci(2) == 1);</div>
+<div class="line"><span class="lineno">   53</span>    assert(math::fibonacci::fibonacci(3) == 2);</div>
+<div class="line"><span class="lineno">   54</span>    assert(math::fibonacci::fibonacci(4) == 3);</div>
+<div class="line"><span class="lineno">   55</span>    assert(math::fibonacci::fibonacci(15) == 610);</div>
+<div class="line"><span class="lineno">   56</span>    assert(math::fibonacci::fibonacci(20) == 6765);</div>
+<div class="line"><span class="lineno">   57</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have passed successfully!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   58</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 </div><!-- fragment -->
 </div>

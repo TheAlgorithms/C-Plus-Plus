@@ -113,17 +113,18 @@ $(function(){initNavTree('d6/d2d/modular__inverse__simple_8cpp.html','../../'); 
 <p>Simple implementation of <a href="https://en.wikipedia.org/wiki/Modular_multiplicative_inverse" target="_blank">modular multiplicative inverse</a>  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for modular_inverse_simple.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d13/modular__inverse__simple_8cpp__incl.svg" width="171" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d13/modular__inverse__simple_8cpp__incl.svg" width="255" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a618b198f74a88ab0023355b3a05d9ad6" id="r_a618b198f74a88ab0023355b3a05d9ad6"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a618b198f74a88ab0023355b3a05d9ad6">imod</a> (uint64_t x, uint64_t y)</td></tr>
-<tr class="memdesc:a618b198f74a88ab0023355b3a05d9ad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">for IO operations  <br /></td></tr>
+<tr class="memdesc:a618b198f74a88ab0023355b3a05d9ad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">for assert  <br /></td></tr>
 <tr class="separator:a618b198f74a88ab0023355b3a05d9ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
 <tr class="memdesc:aa8dca7b867074164d5f45b0f3851269d"><td class="mdescLeft">&#160;</td><td class="mdescRight">self-test implementations  <br /></td></tr>
@@ -155,8 +156,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>for IO operations </p>
-<p>for assert</p>
+<p>for assert </p>
+<p>for IO operations</p>
 <p>Function imod Calculates the modular inverse of x with respect to y, x^{-1} \mod y </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>number </td></tr>
@@ -165,17 +166,17 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the modular inverse </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   20</span>                                      {</div>
-<div class="line"><span class="lineno">   21</span>    uint64_t aux = 0;  <span class="comment">// auxiliary variable</span></div>
-<div class="line"><span class="lineno">   22</span>    uint64_t itr = 0;  <span class="comment">// iteration counter</span></div>
-<div class="line"><span class="lineno">   23</span> </div>
-<div class="line"><span class="lineno">   24</span>    <span class="keywordflow">do</span> {  <span class="comment">// run the algorithm while not find the inverse</span></div>
-<div class="line"><span class="lineno">   25</span>        aux = y * itr + 1;</div>
-<div class="line"><span class="lineno">   26</span>        itr++;</div>
-<div class="line"><span class="lineno">   27</span>    } <span class="keywordflow">while</span> (aux % x);  <span class="comment">// while module aux % x non-zero</span></div>
-<div class="line"><span class="lineno">   28</span> </div>
-<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">return</span> aux / x;</div>
-<div class="line"><span class="lineno">   30</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   21</span>                                      {</div>
+<div class="line"><span class="lineno">   22</span>    uint64_t aux = 0;  <span class="comment">// auxiliary variable</span></div>
+<div class="line"><span class="lineno">   23</span>    uint64_t itr = 0;  <span class="comment">// iteration counter</span></div>
+<div class="line"><span class="lineno">   24</span> </div>
+<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">do</span> {  <span class="comment">// run the algorithm while not find the inverse</span></div>
+<div class="line"><span class="lineno">   26</span>        aux = y * itr + 1;</div>
+<div class="line"><span class="lineno">   27</span>        itr++;</div>
+<div class="line"><span class="lineno">   28</span>    } <span class="keywordflow">while</span> (aux % x);  <span class="comment">// while module aux % x non-zero</span></div>
+<div class="line"><span class="lineno">   29</span> </div>
+<div class="line"><span class="lineno">   30</span>    <span class="keywordflow">return</span> aux / x;</div>
+<div class="line"><span class="lineno">   31</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -196,10 +197,10 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   58</span>           {</div>
-<div class="line"><span class="lineno">   59</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">   60</span>};</div>
-<div class="ttc" id="amodular__inverse__simple_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">self-test implementations</div><div class="ttdef"><b>Definition</b> modular_inverse_simple.cpp:36</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   59</span>           {</div>
+<div class="line"><span class="lineno">   60</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">   61</span>};</div>
+<div class="ttc" id="amodular__inverse__simple_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">self-test implementations</div><div class="ttdef"><b>Definition</b> modular_inverse_simple.cpp:37</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -233,26 +234,26 @@ Here is the call graph for this function:</div>
 
 <p>self-test implementations </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   36</span>                   {</div>
-<div class="line"><span class="lineno">   37</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;First case testing... \n&quot;</span>;</div>
-<div class="line"><span class="lineno">   38</span>    <span class="comment">// for a = 3 and b = 11 return 4</span></div>
-<div class="line"><span class="lineno">   39</span>    assert(<a class="code hl_function" href="#a618b198f74a88ab0023355b3a05d9ad6">imod</a>(3, 11) == 4);</div>
-<div class="line"><span class="lineno">   40</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nPassed!\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   41</span> </div>
-<div class="line"><span class="lineno">   42</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Second case testing... \n&quot;</span>;</div>
-<div class="line"><span class="lineno">   43</span>    <span class="comment">// for a = 3 and b = 26 return 9</span></div>
-<div class="line"><span class="lineno">   44</span>    assert(<a class="code hl_function" href="#a618b198f74a88ab0023355b3a05d9ad6">imod</a>(3, 26) == 9);</div>
-<div class="line"><span class="lineno">   45</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nPassed!\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   46</span> </div>
-<div class="line"><span class="lineno">   47</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Third case testing... \n&quot;</span>;</div>
-<div class="line"><span class="lineno">   48</span>    <span class="comment">// for a = 7 and b = 26 return 15</span></div>
-<div class="line"><span class="lineno">   49</span>    assert(<a class="code hl_function" href="#a618b198f74a88ab0023355b3a05d9ad6">imod</a>(7, 26) == 15);</div>
-<div class="line"><span class="lineno">   50</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nPassed!\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   51</span> </div>
-<div class="line"><span class="lineno">   52</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nAll test cases have successfully passed!\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   53</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>                   {</div>
+<div class="line"><span class="lineno">   38</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;First case testing... \n&quot;</span>;</div>
+<div class="line"><span class="lineno">   39</span>    <span class="comment">// for a = 3 and b = 11 return 4</span></div>
+<div class="line"><span class="lineno">   40</span>    assert(<a class="code hl_function" href="#a618b198f74a88ab0023355b3a05d9ad6">imod</a>(3, 11) == 4);</div>
+<div class="line"><span class="lineno">   41</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nPassed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   42</span> </div>
+<div class="line"><span class="lineno">   43</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Second case testing... \n&quot;</span>;</div>
+<div class="line"><span class="lineno">   44</span>    <span class="comment">// for a = 3 and b = 26 return 9</span></div>
+<div class="line"><span class="lineno">   45</span>    assert(<a class="code hl_function" href="#a618b198f74a88ab0023355b3a05d9ad6">imod</a>(3, 26) == 9);</div>
+<div class="line"><span class="lineno">   46</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nPassed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   47</span> </div>
+<div class="line"><span class="lineno">   48</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Third case testing... \n&quot;</span>;</div>
+<div class="line"><span class="lineno">   49</span>    <span class="comment">// for a = 7 and b = 26 return 15</span></div>
+<div class="line"><span class="lineno">   50</span>    assert(<a class="code hl_function" href="#a618b198f74a88ab0023355b3a05d9ad6">imod</a>(7, 26) == 15);</div>
+<div class="line"><span class="lineno">   51</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nPassed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   52</span> </div>
+<div class="line"><span class="lineno">   53</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nAll test cases have successfully passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   54</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="amodular__inverse__simple_8cpp_html_a618b198f74a88ab0023355b3a05d9ad6"><div class="ttname"><a href="#a618b198f74a88ab0023355b3a05d9ad6">imod</a></div><div class="ttdeci">uint64_t imod(uint64_t x, uint64_t y)</div><div class="ttdoc">for IO operations</div><div class="ttdef"><b>Definition</b> modular_inverse_simple.cpp:20</div></div>
+<div class="ttc" id="amodular__inverse__simple_8cpp_html_a618b198f74a88ab0023355b3a05d9ad6"><div class="ttname"><a href="#a618b198f74a88ab0023355b3a05d9ad6">imod</a></div><div class="ttdeci">uint64_t imod(uint64_t x, uint64_t y)</div><div class="ttdoc">for assert</div><div class="ttdef"><b>Definition</b> modular_inverse_simple.cpp:21</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

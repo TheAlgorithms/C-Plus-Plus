@@ -204,42 +204,42 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>encrypted/decrypted output </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  211</span>                                                           {</div>
-<div class="line"><span class="lineno">  212</span>        <span class="keywordtype">size_t</span> text_len = text.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>();</div>
-<div class="line"><span class="lineno">  213</span>        <span class="keywordtype">size_t</span> key_len = key.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
-<div class="line"><span class="lineno">  214</span> </div>
-<div class="line"><span class="lineno">  215</span>        <span class="comment">// length of output string must be a multiple of key_len</span></div>
-<div class="line"><span class="lineno">  216</span>        <span class="comment">// create output string and initialize with &#39;\0&#39; character</span></div>
-<div class="line"><span class="lineno">  217</span>        <span class="keywordtype">size_t</span> L2 = text_len % key_len == 0</div>
-<div class="line"><span class="lineno">  218</span>                        ? text_len</div>
-<div class="line"><span class="lineno">  219</span>                        : text_len + key_len - (text_len % key_len);</div>
-<div class="line"><span class="lineno">  220</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> coded_text(L2, <span class="charliteral">&#39;\0&#39;</span>);</div>
-<div class="line"><span class="lineno">  221</span> </div>
-<div class="line"><span class="lineno">  222</span>        <span class="comment">// temporary array for batch processing</span></div>
-<div class="line"><span class="lineno">  223</span>        <span class="keywordtype">int</span> i;</div>
-<div class="line"><span class="lineno">  224</span><span class="preprocessor">#ifdef _OPENMP</span></div>
-<div class="line"><span class="lineno">  225</span><span class="preprocessor">#pragma parallel omp for private(i)</span></div>
-<div class="line"><span class="lineno">  226</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">  227</span>        <span class="keywordflow">for</span> (i = 0; i &lt; L2 - key_len + 1; i += key_len) {</div>
-<div class="line"><span class="lineno">  228</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;uint8_t&gt;</a> batch_int(key_len);</div>
-<div class="line"><span class="lineno">  229</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; key_len; j++) {</div>
-<div class="line"><span class="lineno">  230</span>                batch_int[j] = <a class="code hl_function" href="#ae77cad522fa44b8c985779a7188d2f41">get_char_idx</a>(text[i + j]);</div>
-<div class="line"><span class="lineno">  231</span>            }</div>
-<div class="line"><span class="lineno">  232</span> </div>
-<div class="line"><span class="lineno">  233</span>            batch_int = <a class="code hl_function" href="#ad36cbcc7a458b3f3a2af0c4aa1126590">mat_mul</a>(batch_int, key);</div>
-<div class="line"><span class="lineno">  234</span> </div>
-<div class="line"><span class="lineno">  235</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; key_len; j++) {</div>
-<div class="line"><span class="lineno">  236</span>                coded_text[i + j] =</div>
-<div class="line"><span class="lineno">  237</span>                    <a class="code hl_variable" href="../../d6/d4e/namespaceciphers.html#ab9aec0ccf4b6809f652bb540be87c216">STRKEY</a>[batch_int[j]];  <span class="comment">// get character at key</span></div>
-<div class="line"><span class="lineno">  238</span>            }</div>
-<div class="line"><span class="lineno">  239</span>        }</div>
-<div class="line"><span class="lineno">  240</span> </div>
-<div class="line"><span class="lineno">  241</span>        <span class="keywordflow">return</span> coded_text;</div>
-<div class="line"><span class="lineno">  242</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  212</span>                                                           {</div>
+<div class="line"><span class="lineno">  213</span>        <span class="keywordtype">size_t</span> text_len = text.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>();</div>
+<div class="line"><span class="lineno">  214</span>        <span class="keywordtype">size_t</span> key_len = key.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">  215</span> </div>
+<div class="line"><span class="lineno">  216</span>        <span class="comment">// length of output string must be a multiple of key_len</span></div>
+<div class="line"><span class="lineno">  217</span>        <span class="comment">// create output string and initialize with &#39;\0&#39; character</span></div>
+<div class="line"><span class="lineno">  218</span>        <span class="keywordtype">size_t</span> L2 = text_len % key_len == 0</div>
+<div class="line"><span class="lineno">  219</span>                        ? text_len</div>
+<div class="line"><span class="lineno">  220</span>                        : text_len + key_len - (text_len % key_len);</div>
+<div class="line"><span class="lineno">  221</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> coded_text(L2, <span class="charliteral">&#39;\0&#39;</span>);</div>
+<div class="line"><span class="lineno">  222</span> </div>
+<div class="line"><span class="lineno">  223</span>        <span class="comment">// temporary array for batch processing</span></div>
+<div class="line"><span class="lineno">  224</span>        <span class="keywordtype">int</span> i;</div>
+<div class="line"><span class="lineno">  225</span><span class="preprocessor">#ifdef _OPENMP</span></div>
+<div class="line"><span class="lineno">  226</span><span class="preprocessor">#pragma parallel omp for private(i)</span></div>
+<div class="line"><span class="lineno">  227</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  228</span>        <span class="keywordflow">for</span> (i = 0; i &lt; L2 - key_len + 1; i += key_len) {</div>
+<div class="line"><span class="lineno">  229</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;uint8_t&gt;</a> batch_int(key_len);</div>
+<div class="line"><span class="lineno">  230</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; key_len; j++) {</div>
+<div class="line"><span class="lineno">  231</span>                batch_int[j] = <a class="code hl_function" href="#ae77cad522fa44b8c985779a7188d2f41">get_char_idx</a>(text[i + j]);</div>
+<div class="line"><span class="lineno">  232</span>            }</div>
+<div class="line"><span class="lineno">  233</span> </div>
+<div class="line"><span class="lineno">  234</span>            batch_int = <a class="code hl_function" href="#ad36cbcc7a458b3f3a2af0c4aa1126590">mat_mul</a>(batch_int, key);</div>
+<div class="line"><span class="lineno">  235</span> </div>
+<div class="line"><span class="lineno">  236</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; key_len; j++) {</div>
+<div class="line"><span class="lineno">  237</span>                coded_text[i + j] =</div>
+<div class="line"><span class="lineno">  238</span>                    <a class="code hl_variable" href="../../d6/d4e/namespaceciphers.html#ab9aec0ccf4b6809f652bb540be87c216">STRKEY</a>[batch_int[j]];  <span class="comment">// get character at key</span></div>
+<div class="line"><span class="lineno">  239</span>            }</div>
+<div class="line"><span class="lineno">  240</span>        }</div>
+<div class="line"><span class="lineno">  241</span> </div>
+<div class="line"><span class="lineno">  242</span>        <span class="keywordflow">return</span> coded_text;</div>
+<div class="line"><span class="lineno">  243</span>    }</div>
 <div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
-<div class="ttc" id="aclassciphers_1_1_hill_cipher_html_ad36cbcc7a458b3f3a2af0c4aa1126590"><div class="ttname"><a href="#ad36cbcc7a458b3f3a2af0c4aa1126590">ciphers::HillCipher::mat_mul</a></div><div class="ttdeci">static const std::valarray&lt; uint8_t &gt; mat_mul(const std::valarray&lt; uint8_t &gt; &amp;vector, const matrix&lt; int &gt; &amp;key)</div><div class="ttdoc">helper function to perform vector multiplication with encryption or decryption matrix</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:159</div></div>
-<div class="ttc" id="aclassciphers_1_1_hill_cipher_html_ae77cad522fa44b8c985779a7188d2f41"><div class="ttname"><a href="#ae77cad522fa44b8c985779a7188d2f41">ciphers::HillCipher::get_char_idx</a></div><div class="ttdeci">static uint8_t get_char_idx(const char ch)</div><div class="ttdoc">Get the index of a character in the STRKEY.</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:190</div></div>
-<div class="ttc" id="anamespaceciphers_html_ab9aec0ccf4b6809f652bb540be87c216"><div class="ttname"><a href="../../d6/d4e/namespaceciphers.html#ab9aec0ccf4b6809f652bb540be87c216">ciphers::STRKEY</a></div><div class="ttdeci">static const char * STRKEY</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:73</div></div>
+<div class="ttc" id="aclassciphers_1_1_hill_cipher_html_ad36cbcc7a458b3f3a2af0c4aa1126590"><div class="ttname"><a href="#ad36cbcc7a458b3f3a2af0c4aa1126590">ciphers::HillCipher::mat_mul</a></div><div class="ttdeci">static const std::valarray&lt; uint8_t &gt; mat_mul(const std::valarray&lt; uint8_t &gt; &amp;vector, const matrix&lt; int &gt; &amp;key)</div><div class="ttdoc">helper function to perform vector multiplication with encryption or decryption matrix</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:160</div></div>
+<div class="ttc" id="aclassciphers_1_1_hill_cipher_html_ae77cad522fa44b8c985779a7188d2f41"><div class="ttname"><a href="#ae77cad522fa44b8c985779a7188d2f41">ciphers::HillCipher::get_char_idx</a></div><div class="ttdeci">static uint8_t get_char_idx(const char ch)</div><div class="ttdoc">Get the index of a character in the STRKEY.</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:191</div></div>
+<div class="ttc" id="anamespaceciphers_html_ab9aec0ccf4b6809f652bb540be87c216"><div class="ttname"><a href="../../d6/d4e/namespaceciphers.html#ab9aec0ccf4b6809f652bb540be87c216">ciphers::STRKEY</a></div><div class="ttdeci">static const char * STRKEY</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:74</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">std::string::length</a></div><div class="ttdeci">T length(T... args)</div></div>
 <div class="ttc" id="avalarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a></div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -286,10 +286,10 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>decrypted text </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  458</span>                                                                          {</div>
-<div class="line"><span class="lineno">  459</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#ad667fa0860977f6d6d443fa1dbcd80aa">codec</a>(text, decrypt_key);</div>
-<div class="line"><span class="lineno">  460</span>    }</div>
-<div class="ttc" id="aclassciphers_1_1_hill_cipher_html_ad667fa0860977f6d6d443fa1dbcd80aa"><div class="ttname"><a href="#ad667fa0860977f6d6d443fa1dbcd80aa">ciphers::HillCipher::codec</a></div><div class="ttdeci">static const std::string codec(const std::string &amp;text, const matrix&lt; int &gt; &amp;key)</div><div class="ttdoc">Convenience function to perform block cipher operations. The operations are identical for both encryp...</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:210</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  459</span>                                                                          {</div>
+<div class="line"><span class="lineno">  460</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#ad667fa0860977f6d6d443fa1dbcd80aa">codec</a>(text, decrypt_key);</div>
+<div class="line"><span class="lineno">  461</span>    }</div>
+<div class="ttc" id="aclassciphers_1_1_hill_cipher_html_ad667fa0860977f6d6d443fa1dbcd80aa"><div class="ttname"><a href="#ad667fa0860977f6d6d443fa1dbcd80aa">ciphers::HillCipher::codec</a></div><div class="ttdeci">static const std::string codec(const std::string &amp;text, const matrix&lt; int &gt; &amp;key)</div><div class="ttdoc">Convenience function to perform block cipher operations. The operations are identical for both encryp...</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:211</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -334,9 +334,9 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>encrypted text </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  446</span>                                                                          {</div>
-<div class="line"><span class="lineno">  447</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#ad667fa0860977f6d6d443fa1dbcd80aa">codec</a>(text, encrypt_key);</div>
-<div class="line"><span class="lineno">  448</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  447</span>                                                                          {</div>
+<div class="line"><span class="lineno">  448</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#ad667fa0860977f6d6d443fa1dbcd80aa">codec</a>(text, encrypt_key);</div>
+<div class="line"><span class="lineno">  449</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -383,18 +383,18 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>GCD of \(a\) and \(b\) </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  138</span>                                 {</div>
-<div class="line"><span class="lineno">  139</span>        <span class="keywordflow">if</span> (b &gt; a)  <span class="comment">// ensure always a &lt; b</span></div>
-<div class="line"><span class="lineno">  140</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(a, b);</div>
-<div class="line"><span class="lineno">  141</span> </div>
-<div class="line"><span class="lineno">  142</span>        <span class="keywordflow">while</span> (b != 0) {</div>
-<div class="line"><span class="lineno">  143</span>            T tmp = b;</div>
-<div class="line"><span class="lineno">  144</span>            b = a % b;</div>
-<div class="line"><span class="lineno">  145</span>            a = tmp;</div>
-<div class="line"><span class="lineno">  146</span>        }</div>
-<div class="line"><span class="lineno">  147</span> </div>
-<div class="line"><span class="lineno">  148</span>        <span class="keywordflow">return</span> a;</div>
-<div class="line"><span class="lineno">  149</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  139</span>                                 {</div>
+<div class="line"><span class="lineno">  140</span>        <span class="keywordflow">if</span> (b &gt; a)  <span class="comment">// ensure always a &lt; b</span></div>
+<div class="line"><span class="lineno">  141</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(a, b);</div>
+<div class="line"><span class="lineno">  142</span> </div>
+<div class="line"><span class="lineno">  143</span>        <span class="keywordflow">while</span> (b != 0) {</div>
+<div class="line"><span class="lineno">  144</span>            T tmp = b;</div>
+<div class="line"><span class="lineno">  145</span>            b = a % b;</div>
+<div class="line"><span class="lineno">  146</span>            a = tmp;</div>
+<div class="line"><span class="lineno">  147</span>        }</div>
+<div class="line"><span class="lineno">  148</span> </div>
+<div class="line"><span class="lineno">  149</span>        <span class="keywordflow">return</span> a;</div>
+<div class="line"><span class="lineno">  150</span>    }</div>
 <div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -435,49 +435,49 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Decryption martix </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  371</span>                                                                               {</div>
-<div class="line"><span class="lineno">  372</span>        <span class="keywordtype">size_t</span> size = encrypt_key.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
-<div class="line"><span class="lineno">  373</span>        <span class="keywordtype">int</span> L = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/strlen.html">std::strlen</a>(<a class="code hl_variable" href="../../d6/d4e/namespaceciphers.html#ab9aec0ccf4b6809f652bb540be87c216">STRKEY</a>);</div>
-<div class="line"><span class="lineno">  374</span> </div>
-<div class="line"><span class="lineno">  375</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;int&gt;</a> decrypt_key(size, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;int&gt;</a>(size));</div>
-<div class="line"><span class="lineno">  376</span>        <span class="keywordtype">int</span> det_encrypt = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_function" href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f">determinant_lu</a>(encrypt_key));</div>
-<div class="line"><span class="lineno">  377</span> </div>
-<div class="line"><span class="lineno">  378</span>        <span class="keywordtype">int</span> mat_determinant = det_encrypt &lt; 0 ? det_encrypt % L : det_encrypt;</div>
-<div class="line"><span class="lineno">  379</span> </div>
-<div class="line"><span class="lineno">  380</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;double&gt;</a> tmp_inverse = <a class="code hl_function" href="#a2eb58750b978a93ac5e6eb29e3e570b7">get_inverse</a>(encrypt_key);</div>
-<div class="line"><span class="lineno">  381</span>        <span class="keywordtype">double</span> d2 = <a class="code hl_function" href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f">determinant_lu</a>(decrypt_key);</div>
-<div class="line"><span class="lineno">  382</span> </div>
-<div class="line"><span class="lineno">  383</span>        <span class="comment">// find co-prime factor for inversion</span></div>
-<div class="line"><span class="lineno">  384</span>        <span class="keywordtype">int</span> det_inv = -1;</div>
-<div class="line"><span class="lineno">  385</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; L; i++) {</div>
-<div class="line"><span class="lineno">  386</span>            <span class="keywordflow">if</span> (modulo(mat_determinant * i, L) == 1) {</div>
-<div class="line"><span class="lineno">  387</span>                det_inv = i;</div>
-<div class="line"><span class="lineno">  388</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  389</span>            }</div>
-<div class="line"><span class="lineno">  390</span>        }</div>
-<div class="line"><span class="lineno">  391</span> </div>
-<div class="line"><span class="lineno">  392</span>        <span class="keywordflow">if</span> (det_inv == -1) {</div>
-<div class="line"><span class="lineno">  393</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Could not find a co-prime for inversion\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  394</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/program/exit.html">std::exit</a>(EXIT_FAILURE);</div>
-<div class="line"><span class="lineno">  395</span>        }</div>
-<div class="line"><span class="lineno">  396</span> </div>
-<div class="line"><span class="lineno">  397</span>        mat_determinant = det_inv * det_encrypt;</div>
-<div class="line"><span class="lineno">  398</span> </div>
-<div class="line"><span class="lineno">  399</span>        <span class="comment">// perform modular inverse of encryption matrix</span></div>
-<div class="line"><span class="lineno">  400</span>        <span class="keywordtype">int</span> i;</div>
-<div class="line"><span class="lineno">  401</span><span class="preprocessor">#ifdef _OPENMP</span></div>
-<div class="line"><span class="lineno">  402</span><span class="preprocessor">#pragma parallel omp for private(i)</span></div>
-<div class="line"><span class="lineno">  403</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">  404</span>        <span class="keywordflow">for</span> (i = 0; i &lt; size; i++) {</div>
-<div class="line"><span class="lineno">  405</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; size; j++) {</div>
-<div class="line"><span class="lineno">  406</span>                <span class="keywordtype">int</span> temp = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/round.html">std::round</a>(tmp_inverse[i][j] * mat_determinant);</div>
-<div class="line"><span class="lineno">  407</span>                decrypt_key[i][j] = modulo(temp, L);</div>
-<div class="line"><span class="lineno">  408</span>            }</div>
-<div class="line"><span class="lineno">  409</span>        }</div>
-<div class="line"><span class="lineno">  410</span>        <span class="keywordflow">return</span> decrypt_key;</div>
-<div class="line"><span class="lineno">  411</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  372</span>                                                                               {</div>
+<div class="line"><span class="lineno">  373</span>        <span class="keywordtype">size_t</span> size = encrypt_key.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">  374</span>        <span class="keywordtype">int</span> L = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/strlen.html">std::strlen</a>(<a class="code hl_variable" href="../../d6/d4e/namespaceciphers.html#ab9aec0ccf4b6809f652bb540be87c216">STRKEY</a>);</div>
+<div class="line"><span class="lineno">  375</span> </div>
+<div class="line"><span class="lineno">  376</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;int&gt;</a> decrypt_key(size, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;int&gt;</a>(size));</div>
+<div class="line"><span class="lineno">  377</span>        <span class="keywordtype">int</span> det_encrypt = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_function" href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f">determinant_lu</a>(encrypt_key));</div>
+<div class="line"><span class="lineno">  378</span> </div>
+<div class="line"><span class="lineno">  379</span>        <span class="keywordtype">int</span> mat_determinant = det_encrypt &lt; 0 ? det_encrypt % L : det_encrypt;</div>
+<div class="line"><span class="lineno">  380</span> </div>
+<div class="line"><span class="lineno">  381</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;double&gt;</a> tmp_inverse = <a class="code hl_function" href="#a2eb58750b978a93ac5e6eb29e3e570b7">get_inverse</a>(encrypt_key);</div>
+<div class="line"><span class="lineno">  382</span>        <span class="keywordtype">double</span> d2 = <a class="code hl_function" href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f">determinant_lu</a>(decrypt_key);</div>
+<div class="line"><span class="lineno">  383</span> </div>
+<div class="line"><span class="lineno">  384</span>        <span class="comment">// find co-prime factor for inversion</span></div>
+<div class="line"><span class="lineno">  385</span>        <span class="keywordtype">int</span> det_inv = -1;</div>
+<div class="line"><span class="lineno">  386</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; L; i++) {</div>
+<div class="line"><span class="lineno">  387</span>            <span class="keywordflow">if</span> (modulo(mat_determinant * i, L) == 1) {</div>
+<div class="line"><span class="lineno">  388</span>                det_inv = i;</div>
+<div class="line"><span class="lineno">  389</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  390</span>            }</div>
+<div class="line"><span class="lineno">  391</span>        }</div>
+<div class="line"><span class="lineno">  392</span> </div>
+<div class="line"><span class="lineno">  393</span>        <span class="keywordflow">if</span> (det_inv == -1) {</div>
+<div class="line"><span class="lineno">  394</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Could not find a co-prime for inversion\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  395</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/program/exit.html">std::exit</a>(EXIT_FAILURE);</div>
+<div class="line"><span class="lineno">  396</span>        }</div>
+<div class="line"><span class="lineno">  397</span> </div>
+<div class="line"><span class="lineno">  398</span>        mat_determinant = det_inv * det_encrypt;</div>
+<div class="line"><span class="lineno">  399</span> </div>
+<div class="line"><span class="lineno">  400</span>        <span class="comment">// perform modular inverse of encryption matrix</span></div>
+<div class="line"><span class="lineno">  401</span>        <span class="keywordtype">int</span> i;</div>
+<div class="line"><span class="lineno">  402</span><span class="preprocessor">#ifdef _OPENMP</span></div>
+<div class="line"><span class="lineno">  403</span><span class="preprocessor">#pragma parallel omp for private(i)</span></div>
+<div class="line"><span class="lineno">  404</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  405</span>        <span class="keywordflow">for</span> (i = 0; i &lt; size; i++) {</div>
+<div class="line"><span class="lineno">  406</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; size; j++) {</div>
+<div class="line"><span class="lineno">  407</span>                <span class="keywordtype">int</span> temp = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/round.html">std::round</a>(tmp_inverse[i][j] * mat_determinant);</div>
+<div class="line"><span class="lineno">  408</span>                decrypt_key[i][j] = modulo(temp, L);</div>
+<div class="line"><span class="lineno">  409</span>            }</div>
+<div class="line"><span class="lineno">  410</span>        }</div>
+<div class="line"><span class="lineno">  411</span>        <span class="keywordflow">return</span> decrypt_key;</div>
+<div class="line"><span class="lineno">  412</span>    }</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a></div></div>
-<div class="ttc" id="aclassciphers_1_1_hill_cipher_html_a2eb58750b978a93ac5e6eb29e3e570b7"><div class="ttname"><a href="#a2eb58750b978a93ac5e6eb29e3e570b7">ciphers::HillCipher::get_inverse</a></div><div class="ttdeci">static matrix&lt; double &gt; get_inverse(matrix&lt; T &gt; const &amp;A)</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:250</div></div>
+<div class="ttc" id="aclassciphers_1_1_hill_cipher_html_a2eb58750b978a93ac5e6eb29e3e570b7"><div class="ttname"><a href="#a2eb58750b978a93ac5e6eb29e3e570b7">ciphers::HillCipher::get_inverse</a></div><div class="ttdeci">static matrix&lt; double &gt; get_inverse(matrix&lt; T &gt; const &amp;A)</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:251</div></div>
 <div class="ttc" id="aexit_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/program/exit.html">std::exit</a></div><div class="ttdeci">T exit(T... args)</div></div>
 <div class="ttc" id="alu__decomposition_8h_html_a3108d43bd32c6fb3b3c158476c51ba7f"><div class="ttname"><a href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f">determinant_lu</a></div><div class="ttdeci">double determinant_lu(const matrix&lt; T &gt; &amp;A)</div><div class="ttdef"><b>Definition</b> lu_decomposition.h:90</div></div>
 <div class="ttc" id="around_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/round.html">std::round</a></div><div class="ttdeci">T round(T... args)</div></div>
@@ -537,32 +537,32 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Encryption martix </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  340</span>                                                                {</div>
-<div class="line"><span class="lineno">  341</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;int&gt;</a> encrypt_key(size, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;int&gt;</a>(size));</div>
-<div class="line"><span class="lineno">  342</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;int&gt;</a> min_mat = encrypt_key;</div>
-<div class="line"><span class="lineno">  343</span>        <span class="keywordtype">int</span> mat_determinant = -1;  <span class="comment">// because matrix has only ints, the</span></div>
-<div class="line"><span class="lineno">  344</span>                                   <span class="comment">// determinant will also be an int</span></div>
-<div class="line"><span class="lineno">  345</span>        <span class="keywordtype">int</span> L = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/strlen.html">std::strlen</a>(<a class="code hl_variable" href="../../d6/d4e/namespaceciphers.html#ab9aec0ccf4b6809f652bb540be87c216">STRKEY</a>);</div>
-<div class="line"><span class="lineno">  346</span> </div>
-<div class="line"><span class="lineno">  347</span>        <span class="keywordtype">double</span> dd;</div>
-<div class="line"><span class="lineno">  348</span>        <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno">  349</span>            <span class="comment">// keeping the random number range smaller generates better</span></div>
-<div class="line"><span class="lineno">  350</span>            <span class="comment">// defined matrices with more ease of cracking</span></div>
-<div class="line"><span class="lineno">  351</span>            dd = <a class="code hl_function" href="#a629be41c1ab78850963e4ce14e1d11d9">rand_range</a>(&amp;encrypt_key, limit1, limit2);</div>
-<div class="line"><span class="lineno">  352</span>            mat_determinant = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(dd);</div>
-<div class="line"><span class="lineno">  353</span> </div>
-<div class="line"><span class="lineno">  354</span>            <span class="keywordflow">if</span> (mat_determinant &lt; 0)</div>
-<div class="line"><span class="lineno">  355</span>                mat_determinant = (mat_determinant % L);</div>
-<div class="line"><span class="lineno">  356</span>        } <span class="keywordflow">while</span> (std::abs(dd) &gt; 1e3 ||  <span class="comment">// while ill-defined</span></div>
-<div class="line"><span class="lineno">  357</span>                 dd &lt; 0.1 ||  <span class="comment">// while singular or negative determinant</span></div>
-<div class="line"><span class="lineno">  358</span>                 !<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/isfinite.html">std::isfinite</a>(dd) ||  <span class="comment">// while determinant is not finite</span></div>
-<div class="line"><span class="lineno">  359</span>                 <a class="code hl_function" href="#a7760f3665651a0a37937c79c62f219c0">gcd</a>(mat_determinant, L) != 1);  <span class="comment">// while no common factors</span></div>
-<div class="line"><span class="lineno">  360</span>        <span class="comment">// std::cout &lt;&lt;</span></div>
-<div class="line"><span class="lineno">  361</span> </div>
-<div class="line"><span class="lineno">  362</span>        <span class="keywordflow">return</span> encrypt_key;</div>
-<div class="line"><span class="lineno">  363</span>    }</div>
-<div class="ttc" id="aclassciphers_1_1_hill_cipher_html_a629be41c1ab78850963e4ce14e1d11d9"><div class="ttname"><a href="#a629be41c1ab78850963e4ce14e1d11d9">ciphers::HillCipher::rand_range</a></div><div class="ttdeci">static const T2 rand_range(T1 a, T1 b)</div><div class="ttdoc">Function to generate a random integer in a given interval.</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:92</div></div>
-<div class="ttc" id="aclassciphers_1_1_hill_cipher_html_a7760f3665651a0a37937c79c62f219c0"><div class="ttname"><a href="#a7760f3665651a0a37937c79c62f219c0">ciphers::HillCipher::gcd</a></div><div class="ttdeci">static const T gcd(T a, T b)</div><div class="ttdoc">Compute GCD of two integers using Euler's algorithm.</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:138</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  341</span>                                                                {</div>
+<div class="line"><span class="lineno">  342</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;int&gt;</a> encrypt_key(size, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;int&gt;</a>(size));</div>
+<div class="line"><span class="lineno">  343</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;int&gt;</a> min_mat = encrypt_key;</div>
+<div class="line"><span class="lineno">  344</span>        <span class="keywordtype">int</span> mat_determinant = -1;  <span class="comment">// because matrix has only ints, the</span></div>
+<div class="line"><span class="lineno">  345</span>                                   <span class="comment">// determinant will also be an int</span></div>
+<div class="line"><span class="lineno">  346</span>        <span class="keywordtype">int</span> L = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/strlen.html">std::strlen</a>(<a class="code hl_variable" href="../../d6/d4e/namespaceciphers.html#ab9aec0ccf4b6809f652bb540be87c216">STRKEY</a>);</div>
+<div class="line"><span class="lineno">  347</span> </div>
+<div class="line"><span class="lineno">  348</span>        <span class="keywordtype">double</span> dd;</div>
+<div class="line"><span class="lineno">  349</span>        <span class="keywordflow">do</span> {</div>
+<div class="line"><span class="lineno">  350</span>            <span class="comment">// keeping the random number range smaller generates better</span></div>
+<div class="line"><span class="lineno">  351</span>            <span class="comment">// defined matrices with more ease of cracking</span></div>
+<div class="line"><span class="lineno">  352</span>            dd = <a class="code hl_function" href="#a629be41c1ab78850963e4ce14e1d11d9">rand_range</a>(&amp;encrypt_key, limit1, limit2);</div>
+<div class="line"><span class="lineno">  353</span>            mat_determinant = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(dd);</div>
+<div class="line"><span class="lineno">  354</span> </div>
+<div class="line"><span class="lineno">  355</span>            <span class="keywordflow">if</span> (mat_determinant &lt; 0)</div>
+<div class="line"><span class="lineno">  356</span>                mat_determinant = (mat_determinant % L);</div>
+<div class="line"><span class="lineno">  357</span>        } <span class="keywordflow">while</span> (std::abs(dd) &gt; 1e3 ||  <span class="comment">// while ill-defined</span></div>
+<div class="line"><span class="lineno">  358</span>                 dd &lt; 0.1 ||  <span class="comment">// while singular or negative determinant</span></div>
+<div class="line"><span class="lineno">  359</span>                 !<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/isfinite.html">std::isfinite</a>(dd) ||  <span class="comment">// while determinant is not finite</span></div>
+<div class="line"><span class="lineno">  360</span>                 <a class="code hl_function" href="#a7760f3665651a0a37937c79c62f219c0">gcd</a>(mat_determinant, L) != 1);  <span class="comment">// while no common factors</span></div>
+<div class="line"><span class="lineno">  361</span>        <span class="comment">// std::cout &lt;&lt;</span></div>
+<div class="line"><span class="lineno">  362</span> </div>
+<div class="line"><span class="lineno">  363</span>        <span class="keywordflow">return</span> encrypt_key;</div>
+<div class="line"><span class="lineno">  364</span>    }</div>
+<div class="ttc" id="aclassciphers_1_1_hill_cipher_html_a629be41c1ab78850963e4ce14e1d11d9"><div class="ttname"><a href="#a629be41c1ab78850963e4ce14e1d11d9">ciphers::HillCipher::rand_range</a></div><div class="ttdeci">static const T2 rand_range(T1 a, T1 b)</div><div class="ttdoc">Function to generate a random integer in a given interval.</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:93</div></div>
+<div class="ttc" id="aclassciphers_1_1_hill_cipher_html_a7760f3665651a0a37937c79c62f219c0"><div class="ttname"><a href="#a7760f3665651a0a37937c79c62f219c0">ciphers::HillCipher::gcd</a></div><div class="ttdeci">static const T gcd(T a, T b)</div><div class="ttdoc">Compute GCD of two integers using Euler's algorithm.</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:139</div></div>
 <div class="ttc" id="aisfinite_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/isfinite.html">std::isfinite</a></div><div class="ttdeci">T isfinite(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -615,19 +615,19 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt;matrix&lt;int&gt;, matrix&lt;int&gt;&gt; encryption and decryption keys as a pair</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="#a642f70fb54cb50b00fb6df7c3f2b120e" title="Generate encryption matrix of a given size. Larger size matrices are difficult to generate but provid...">generate_encryption_key</a> </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  426</span>                                                                              {</div>
-<div class="line"><span class="lineno">  427</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;int&gt;</a> encrypt_key = <a class="code hl_function" href="#a642f70fb54cb50b00fb6df7c3f2b120e">generate_encryption_key</a>(size);</div>
-<div class="line"><span class="lineno">  428</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;int&gt;</a> decrypt_key = <a class="code hl_function" href="#ab02c7563889bf1e363deb8e21967b706">generate_decryption_key</a>(encrypt_key);</div>
-<div class="line"><span class="lineno">  429</span>        <span class="keywordtype">double</span> det2 = <a class="code hl_function" href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f">determinant_lu</a>(decrypt_key);</div>
-<div class="line"><span class="lineno">  430</span>        <span class="keywordflow">while</span> (std::abs(det2) &lt; 0.1 || std::abs(det2) &gt; 1e3) {</div>
-<div class="line"><span class="lineno">  431</span>            encrypt_key = <a class="code hl_function" href="#a642f70fb54cb50b00fb6df7c3f2b120e">generate_encryption_key</a>(size, limit1, limit2);</div>
-<div class="line"><span class="lineno">  432</span>            decrypt_key = <a class="code hl_function" href="#ab02c7563889bf1e363deb8e21967b706">generate_decryption_key</a>(encrypt_key);</div>
-<div class="line"><span class="lineno">  433</span>            det2 = <a class="code hl_function" href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f">determinant_lu</a>(decrypt_key);</div>
-<div class="line"><span class="lineno">  434</span>        }</div>
-<div class="line"><span class="lineno">  435</span>        <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(encrypt_key, decrypt_key);</div>
-<div class="line"><span class="lineno">  436</span>    }</div>
-<div class="ttc" id="aclassciphers_1_1_hill_cipher_html_a642f70fb54cb50b00fb6df7c3f2b120e"><div class="ttname"><a href="#a642f70fb54cb50b00fb6df7c3f2b120e">ciphers::HillCipher::generate_encryption_key</a></div><div class="ttdeci">static matrix&lt; int &gt; generate_encryption_key(size_t size, int limit1=0, int limit2=10)</div><div class="ttdoc">Generate encryption matrix of a given size. Larger size matrices are difficult to generate but provid...</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:339</div></div>
-<div class="ttc" id="aclassciphers_1_1_hill_cipher_html_ab02c7563889bf1e363deb8e21967b706"><div class="ttname"><a href="#ab02c7563889bf1e363deb8e21967b706">ciphers::HillCipher::generate_decryption_key</a></div><div class="ttdeci">static matrix&lt; int &gt; generate_decryption_key(matrix&lt; int &gt; const &amp;encrypt_key)</div><div class="ttdoc">Generate decryption matrix from an encryption matrix key.</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:371</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  427</span>                                                                              {</div>
+<div class="line"><span class="lineno">  428</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;int&gt;</a> encrypt_key = <a class="code hl_function" href="#a642f70fb54cb50b00fb6df7c3f2b120e">generate_encryption_key</a>(size);</div>
+<div class="line"><span class="lineno">  429</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;int&gt;</a> decrypt_key = <a class="code hl_function" href="#ab02c7563889bf1e363deb8e21967b706">generate_decryption_key</a>(encrypt_key);</div>
+<div class="line"><span class="lineno">  430</span>        <span class="keywordtype">double</span> det2 = <a class="code hl_function" href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f">determinant_lu</a>(decrypt_key);</div>
+<div class="line"><span class="lineno">  431</span>        <span class="keywordflow">while</span> (std::abs(det2) &lt; 0.1 || std::abs(det2) &gt; 1e3) {</div>
+<div class="line"><span class="lineno">  432</span>            encrypt_key = <a class="code hl_function" href="#a642f70fb54cb50b00fb6df7c3f2b120e">generate_encryption_key</a>(size, limit1, limit2);</div>
+<div class="line"><span class="lineno">  433</span>            decrypt_key = <a class="code hl_function" href="#ab02c7563889bf1e363deb8e21967b706">generate_decryption_key</a>(encrypt_key);</div>
+<div class="line"><span class="lineno">  434</span>            det2 = <a class="code hl_function" href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f">determinant_lu</a>(decrypt_key);</div>
+<div class="line"><span class="lineno">  435</span>        }</div>
+<div class="line"><span class="lineno">  436</span>        <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(encrypt_key, decrypt_key);</div>
+<div class="line"><span class="lineno">  437</span>    }</div>
+<div class="ttc" id="aclassciphers_1_1_hill_cipher_html_a642f70fb54cb50b00fb6df7c3f2b120e"><div class="ttname"><a href="#a642f70fb54cb50b00fb6df7c3f2b120e">ciphers::HillCipher::generate_encryption_key</a></div><div class="ttdeci">static matrix&lt; int &gt; generate_encryption_key(size_t size, int limit1=0, int limit2=10)</div><div class="ttdoc">Generate encryption matrix of a given size. Larger size matrices are difficult to generate but provid...</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:340</div></div>
+<div class="ttc" id="aclassciphers_1_1_hill_cipher_html_ab02c7563889bf1e363deb8e21967b706"><div class="ttname"><a href="#ab02c7563889bf1e363deb8e21967b706">ciphers::HillCipher::generate_decryption_key</a></div><div class="ttdeci">static matrix&lt; int &gt; generate_decryption_key(matrix&lt; int &gt; const &amp;encrypt_key)</div><div class="ttdoc">Generate decryption matrix from an encryption matrix key.</div><div class="ttdef"><b>Definition</b> hill_cipher.cpp:372</div></div>
 <div class="ttc" id="amake_pair_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a></div><div class="ttdeci">T make_pair(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -668,17 +668,17 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>index of character </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  190</span>                                                      {</div>
-<div class="line"><span class="lineno">  191</span>        <span class="keywordtype">size_t</span> L = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/strlen.html">std::strlen</a>(<a class="code hl_variable" href="../../d6/d4e/namespaceciphers.html#ab9aec0ccf4b6809f652bb540be87c216">STRKEY</a>);</div>
-<div class="line"><span class="lineno">  192</span> </div>
-<div class="line"><span class="lineno">  193</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> idx = 0; idx &lt;= L; idx++)</div>
-<div class="line"><span class="lineno">  194</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d6/d4e/namespaceciphers.html#ab9aec0ccf4b6809f652bb540be87c216">STRKEY</a>[idx] == ch)</div>
-<div class="line"><span class="lineno">  195</span>                <span class="keywordflow">return</span> idx;</div>
-<div class="line"><span class="lineno">  196</span> </div>
-<div class="line"><span class="lineno">  197</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; __func__ &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot;: (&quot;</span> &lt;&lt; ch</div>
-<div class="line"><span class="lineno">  198</span>                  &lt;&lt; <span class="stringliteral">&quot;) Should not reach here!\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  199</span>        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  200</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  191</span>                                                      {</div>
+<div class="line"><span class="lineno">  192</span>        <span class="keywordtype">size_t</span> L = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/strlen.html">std::strlen</a>(<a class="code hl_variable" href="../../d6/d4e/namespaceciphers.html#ab9aec0ccf4b6809f652bb540be87c216">STRKEY</a>);</div>
+<div class="line"><span class="lineno">  193</span> </div>
+<div class="line"><span class="lineno">  194</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> idx = 0; idx &lt;= L; idx++)</div>
+<div class="line"><span class="lineno">  195</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d6/d4e/namespaceciphers.html#ab9aec0ccf4b6809f652bb540be87c216">STRKEY</a>[idx] == ch)</div>
+<div class="line"><span class="lineno">  196</span>                <span class="keywordflow">return</span> idx;</div>
+<div class="line"><span class="lineno">  197</span> </div>
+<div class="line"><span class="lineno">  198</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; __func__ &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot;: (&quot;</span> &lt;&lt; ch</div>
+<div class="line"><span class="lineno">  199</span>                  &lt;&lt; <span class="stringliteral">&quot;) Should not reach here!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  200</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  201</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -718,7 +718,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>character at the index </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  182</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d6/d4e/namespaceciphers.html#ab9aec0ccf4b6809f652bb540be87c216">STRKEY</a>[idx]; }</div>
+<div class="fragment"><div class="line"><span class="lineno">  183</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d6/d4e/namespaceciphers.html#ab9aec0ccf4b6809f652bb540be87c216">STRKEY</a>[idx]; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -747,70 +747,70 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Get matrix inverse using Row-transformations. Given matrix must be a square and non-singular. </p><dl class="section return"><dt>Returns</dt><dd>inverse matrix </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  250</span>                                                          {</div>
-<div class="line"><span class="lineno">  251</span>        <span class="comment">// Assuming A is square matrix</span></div>
-<div class="line"><span class="lineno">  252</span>        <span class="keywordtype">size_t</span> <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
-<div class="line"><span class="lineno">  253</span> </div>
-<div class="line"><span class="lineno">  254</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;double&gt;</a> inverse(N, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a>(N));</div>
-<div class="line"><span class="lineno">  255</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; row++) {</div>
-<div class="line"><span class="lineno">  256</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col = 0; col &lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; col++) {</div>
-<div class="line"><span class="lineno">  257</span>                <span class="comment">// create identity matrix</span></div>
-<div class="line"><span class="lineno">  258</span>                inverse[row][col] = (row == col) ? 1.f : 0.f;</div>
-<div class="line"><span class="lineno">  259</span>            }</div>
-<div class="line"><span class="lineno">  260</span>        }</div>
-<div class="line"><span class="lineno">  261</span> </div>
-<div class="line"><span class="lineno">  262</span>        <span class="keywordflow">if</span> (A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() != A[0].size()) {</div>
-<div class="line"><span class="lineno">  263</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;A must be a square matrix!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  264</span>            <span class="keywordflow">return</span> inverse;</div>
-<div class="line"><span class="lineno">  265</span>        }</div>
-<div class="line"><span class="lineno">  266</span> </div>
-<div class="line"><span class="lineno">  267</span>        <span class="comment">// preallocate a temporary matrix identical to A</span></div>
-<div class="line"><span class="lineno">  268</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;double&gt;</a> temp(N, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a>(N));</div>
-<div class="line"><span class="lineno">  269</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; row++) {</div>
-<div class="line"><span class="lineno">  270</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col = 0; col &lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; col++)</div>
-<div class="line"><span class="lineno">  271</span>                temp[row][col] = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(A[row][col]);</div>
-<div class="line"><span class="lineno">  272</span>        }</div>
-<div class="line"><span class="lineno">  273</span> </div>
-<div class="line"><span class="lineno">  274</span>        <span class="comment">// start transformations</span></div>
-<div class="line"><span class="lineno">  275</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; row++) {</div>
-<div class="line"><span class="lineno">  276</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row2 = row; row2 &lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> &amp;&amp; temp[row][row] == 0; row2++) {</div>
-<div class="line"><span class="lineno">  277</span>                <span class="comment">// this to ensure diagonal elements are not 0</span></div>
-<div class="line"><span class="lineno">  278</span>                temp[row] = temp[row] + temp[row2];</div>
-<div class="line"><span class="lineno">  279</span>                inverse[row] = inverse[row] + inverse[row2];</div>
-<div class="line"><span class="lineno">  280</span>            }</div>
-<div class="line"><span class="lineno">  281</span> </div>
-<div class="line"><span class="lineno">  282</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col2 = row; col2 &lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> &amp;&amp; temp[row][row] == 0; col2++) {</div>
-<div class="line"><span class="lineno">  283</span>                <span class="comment">// this to further ensure diagonal elements are not 0</span></div>
-<div class="line"><span class="lineno">  284</span>                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row2 = 0; row2 &lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; row2++) {</div>
-<div class="line"><span class="lineno">  285</span>                    temp[row2][row] = temp[row2][row] + temp[row2][col2];</div>
-<div class="line"><span class="lineno">  286</span>                    inverse[row2][row] =</div>
-<div class="line"><span class="lineno">  287</span>                        inverse[row2][row] + inverse[row2][col2];</div>
-<div class="line"><span class="lineno">  288</span>                }</div>
-<div class="line"><span class="lineno">  289</span>            }</div>
-<div class="line"><span class="lineno">  290</span> </div>
-<div class="line"><span class="lineno">  291</span>            <span class="keywordflow">if</span> (temp[row][row] == 0) {</div>
-<div class="line"><span class="lineno">  292</span>                <span class="comment">// Probably a low-rank matrix and hence singular</span></div>
-<div class="line"><span class="lineno">  293</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Low-rank matrix, no inverse!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  294</span>                <span class="keywordflow">return</span> inverse;</div>
-<div class="line"><span class="lineno">  295</span>            }</div>
-<div class="line"><span class="lineno">  296</span> </div>
-<div class="line"><span class="lineno">  297</span>            <span class="comment">// set diagonal to 1</span></div>
-<div class="line"><span class="lineno">  298</span>            <span class="keywordtype">double</span> divisor = temp[row][row];</div>
-<div class="line"><span class="lineno">  299</span>            temp[row] = temp[row] / divisor;</div>
-<div class="line"><span class="lineno">  300</span>            inverse[row] = inverse[row] / divisor;</div>
-<div class="line"><span class="lineno">  301</span>            <span class="comment">// Row transformations</span></div>
-<div class="line"><span class="lineno">  302</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row2 = 0; row2 &lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; row2++) {</div>
-<div class="line"><span class="lineno">  303</span>                <span class="keywordflow">if</span> (row2 == row)</div>
-<div class="line"><span class="lineno">  304</span>                    <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  305</span>                <span class="keywordtype">double</span> factor = temp[row2][row];</div>
-<div class="line"><span class="lineno">  306</span>                temp[row2] = temp[row2] - factor * temp[row];</div>
-<div class="line"><span class="lineno">  307</span>                inverse[row2] = inverse[row2] - factor * inverse[row];</div>
-<div class="line"><span class="lineno">  308</span>            }</div>
-<div class="line"><span class="lineno">  309</span>        }</div>
-<div class="line"><span class="lineno">  310</span> </div>
-<div class="line"><span class="lineno">  311</span>        <span class="keywordflow">return</span> inverse;</div>
-<div class="line"><span class="lineno">  312</span>    }</div>
-<div class="ttc" id="adata__structures_2sparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:47</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  251</span>                                                          {</div>
+<div class="line"><span class="lineno">  252</span>        <span class="comment">// Assuming A is square matrix</span></div>
+<div class="line"><span class="lineno">  253</span>        <span class="keywordtype">size_t</span> <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">  254</span> </div>
+<div class="line"><span class="lineno">  255</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;double&gt;</a> inverse(N, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a>(N));</div>
+<div class="line"><span class="lineno">  256</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; row++) {</div>
+<div class="line"><span class="lineno">  257</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col = 0; col &lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; col++) {</div>
+<div class="line"><span class="lineno">  258</span>                <span class="comment">// create identity matrix</span></div>
+<div class="line"><span class="lineno">  259</span>                inverse[row][col] = (row == col) ? 1.f : 0.f;</div>
+<div class="line"><span class="lineno">  260</span>            }</div>
+<div class="line"><span class="lineno">  261</span>        }</div>
+<div class="line"><span class="lineno">  262</span> </div>
+<div class="line"><span class="lineno">  263</span>        <span class="keywordflow">if</span> (A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() != A[0].size()) {</div>
+<div class="line"><span class="lineno">  264</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;A must be a square matrix!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  265</span>            <span class="keywordflow">return</span> inverse;</div>
+<div class="line"><span class="lineno">  266</span>        }</div>
+<div class="line"><span class="lineno">  267</span> </div>
+<div class="line"><span class="lineno">  268</span>        <span class="comment">// preallocate a temporary matrix identical to A</span></div>
+<div class="line"><span class="lineno">  269</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;double&gt;</a> temp(N, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a>(N));</div>
+<div class="line"><span class="lineno">  270</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; row++) {</div>
+<div class="line"><span class="lineno">  271</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col = 0; col &lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; col++)</div>
+<div class="line"><span class="lineno">  272</span>                temp[row][col] = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(A[row][col]);</div>
+<div class="line"><span class="lineno">  273</span>        }</div>
+<div class="line"><span class="lineno">  274</span> </div>
+<div class="line"><span class="lineno">  275</span>        <span class="comment">// start transformations</span></div>
+<div class="line"><span class="lineno">  276</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; row++) {</div>
+<div class="line"><span class="lineno">  277</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row2 = row; row2 &lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> &amp;&amp; temp[row][row] == 0; row2++) {</div>
+<div class="line"><span class="lineno">  278</span>                <span class="comment">// this to ensure diagonal elements are not 0</span></div>
+<div class="line"><span class="lineno">  279</span>                temp[row] = temp[row] + temp[row2];</div>
+<div class="line"><span class="lineno">  280</span>                inverse[row] = inverse[row] + inverse[row2];</div>
+<div class="line"><span class="lineno">  281</span>            }</div>
+<div class="line"><span class="lineno">  282</span> </div>
+<div class="line"><span class="lineno">  283</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col2 = row; col2 &lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> &amp;&amp; temp[row][row] == 0; col2++) {</div>
+<div class="line"><span class="lineno">  284</span>                <span class="comment">// this to further ensure diagonal elements are not 0</span></div>
+<div class="line"><span class="lineno">  285</span>                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row2 = 0; row2 &lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; row2++) {</div>
+<div class="line"><span class="lineno">  286</span>                    temp[row2][row] = temp[row2][row] + temp[row2][col2];</div>
+<div class="line"><span class="lineno">  287</span>                    inverse[row2][row] =</div>
+<div class="line"><span class="lineno">  288</span>                        inverse[row2][row] + inverse[row2][col2];</div>
+<div class="line"><span class="lineno">  289</span>                }</div>
+<div class="line"><span class="lineno">  290</span>            }</div>
+<div class="line"><span class="lineno">  291</span> </div>
+<div class="line"><span class="lineno">  292</span>            <span class="keywordflow">if</span> (temp[row][row] == 0) {</div>
+<div class="line"><span class="lineno">  293</span>                <span class="comment">// Probably a low-rank matrix and hence singular</span></div>
+<div class="line"><span class="lineno">  294</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Low-rank matrix, no inverse!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  295</span>                <span class="keywordflow">return</span> inverse;</div>
+<div class="line"><span class="lineno">  296</span>            }</div>
+<div class="line"><span class="lineno">  297</span> </div>
+<div class="line"><span class="lineno">  298</span>            <span class="comment">// set diagonal to 1</span></div>
+<div class="line"><span class="lineno">  299</span>            <span class="keywordtype">double</span> divisor = temp[row][row];</div>
+<div class="line"><span class="lineno">  300</span>            temp[row] = temp[row] / divisor;</div>
+<div class="line"><span class="lineno">  301</span>            inverse[row] = inverse[row] / divisor;</div>
+<div class="line"><span class="lineno">  302</span>            <span class="comment">// Row transformations</span></div>
+<div class="line"><span class="lineno">  303</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row2 = 0; row2 &lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; row2++) {</div>
+<div class="line"><span class="lineno">  304</span>                <span class="keywordflow">if</span> (row2 == row)</div>
+<div class="line"><span class="lineno">  305</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  306</span>                <span class="keywordtype">double</span> factor = temp[row2][row];</div>
+<div class="line"><span class="lineno">  307</span>                temp[row2] = temp[row2] - factor * temp[row];</div>
+<div class="line"><span class="lineno">  308</span>                inverse[row2] = inverse[row2] - factor * inverse[row];</div>
+<div class="line"><span class="lineno">  309</span>            }</div>
+<div class="line"><span class="lineno">  310</span>        }</div>
+<div class="line"><span class="lineno">  311</span> </div>
+<div class="line"><span class="lineno">  312</span>        <span class="keywordflow">return</span> inverse;</div>
+<div class="line"><span class="lineno">  313</span>    }</div>
+<div class="ttc" id="adata__structures_2sparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:48</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -856,21 +856,21 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>corresponding encrypted or decrypted text </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  160</span>                                                                    {</div>
-<div class="line"><span class="lineno">  161</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;uint8_t&gt;</a> out(vector);  <span class="comment">// make a copy</span></div>
-<div class="line"><span class="lineno">  162</span> </div>
-<div class="line"><span class="lineno">  163</span>        <span class="keywordtype">size_t</span> L = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/strlen.html">std::strlen</a>(<a class="code hl_variable" href="../../d6/d4e/namespaceciphers.html#ab9aec0ccf4b6809f652bb540be87c216">STRKEY</a>);</div>
-<div class="line"><span class="lineno">  164</span> </div>
-<div class="line"><span class="lineno">  165</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; key.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {</div>
-<div class="line"><span class="lineno">  166</span>            <span class="keywordtype">int</span> tmp = 0;</div>
-<div class="line"><span class="lineno">  167</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; vector.size(); j++) {</div>
-<div class="line"><span class="lineno">  168</span>                tmp += key[i][j] * vector[j];</div>
-<div class="line"><span class="lineno">  169</span>            }</div>
-<div class="line"><span class="lineno">  170</span>            out[i] = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(tmp % L);</div>
-<div class="line"><span class="lineno">  171</span>        }</div>
-<div class="line"><span class="lineno">  172</span> </div>
-<div class="line"><span class="lineno">  173</span>        <span class="keywordflow">return</span> out;</div>
-<div class="line"><span class="lineno">  174</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  161</span>                                                                    {</div>
+<div class="line"><span class="lineno">  162</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;uint8_t&gt;</a> out(vector);  <span class="comment">// make a copy</span></div>
+<div class="line"><span class="lineno">  163</span> </div>
+<div class="line"><span class="lineno">  164</span>        <span class="keywordtype">size_t</span> L = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/strlen.html">std::strlen</a>(<a class="code hl_variable" href="../../d6/d4e/namespaceciphers.html#ab9aec0ccf4b6809f652bb540be87c216">STRKEY</a>);</div>
+<div class="line"><span class="lineno">  165</span> </div>
+<div class="line"><span class="lineno">  166</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; key.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {</div>
+<div class="line"><span class="lineno">  167</span>            <span class="keywordtype">int</span> tmp = 0;</div>
+<div class="line"><span class="lineno">  168</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; vector.size(); j++) {</div>
+<div class="line"><span class="lineno">  169</span>                tmp += key[i][j] * vector[j];</div>
+<div class="line"><span class="lineno">  170</span>            }</div>
+<div class="line"><span class="lineno">  171</span>            out[i] = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(tmp % L);</div>
+<div class="line"><span class="lineno">  172</span>        }</div>
+<div class="line"><span class="lineno">  173</span> </div>
+<div class="line"><span class="lineno">  174</span>        <span class="keywordflow">return</span> out;</div>
+<div class="line"><span class="lineno">  175</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -905,12 +905,12 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  314</span>                                    {</div>
-<div class="line"><span class="lineno">  315</span>        <span class="keywordtype">int</span> ret = a % b;</div>
-<div class="line"><span class="lineno">  316</span>        <span class="keywordflow">if</span> (ret &lt; 0)</div>
-<div class="line"><span class="lineno">  317</span>            ret += b;</div>
-<div class="line"><span class="lineno">  318</span>        <span class="keywordflow">return</span> ret;</div>
-<div class="line"><span class="lineno">  319</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  315</span>                                    {</div>
+<div class="line"><span class="lineno">  316</span>        <span class="keywordtype">int</span> ret = a % b;</div>
+<div class="line"><span class="lineno">  317</span>        <span class="keywordflow">if</span> (ret &lt; 0)</div>
+<div class="line"><span class="lineno">  318</span>            ret += b;</div>
+<div class="line"><span class="lineno">  319</span>        <span class="keywordflow">return</span> ret;</div>
+<div class="line"><span class="lineno">  320</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -966,16 +966,16 @@ template&lt;typename T1 , typename T2 &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>determinant of generated random matrix</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>There will need to be a balance between the matrix size and the range of random numbers. If the matrix is large, the range of random numbers must be small to have a well defined keys. Or if the matrix is smaller, the random numbers range can be larger. For an 8x8 matrix, range should be no more than \([0,10]\) </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  118</span>                                                        {</div>
-<div class="line"><span class="lineno">  119</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#af7db62f21983565c64d5d42d2a49888e">M</a>-&gt;size(); i++) {</div>
-<div class="line"><span class="lineno">  120</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#af7db62f21983565c64d5d42d2a49888e">M</a>[0][0].size(); j++) {</div>
-<div class="line"><span class="lineno">  121</span>                <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#af7db62f21983565c64d5d42d2a49888e">M</a>[0][i][j] = <a class="code hl_function" href="#a629be41c1ab78850963e4ce14e1d11d9">rand_range&lt;T1, T2&gt;</a>(a, b);</div>
-<div class="line"><span class="lineno">  122</span>            }</div>
-<div class="line"><span class="lineno">  123</span>        }</div>
-<div class="line"><span class="lineno">  124</span> </div>
-<div class="line"><span class="lineno">  125</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f">determinant_lu</a>(*M);</div>
-<div class="line"><span class="lineno">  126</span>    }</div>
-<div class="ttc" id="adata__structures_2sparse__table_8cpp_html_af7db62f21983565c64d5d42d2a49888e"><div class="ttname"><a href="../../d6/d42/data__structures_2sparse__table_8cpp.html#af7db62f21983565c64d5d42d2a49888e">data_structures::sparse_table::M</a></div><div class="ttdeci">constexpr uint8_t M</div><div class="ttdoc">ceil(log2(N)).</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:48</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  119</span>                                                        {</div>
+<div class="line"><span class="lineno">  120</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#af7db62f21983565c64d5d42d2a49888e">M</a>-&gt;size(); i++) {</div>
+<div class="line"><span class="lineno">  121</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#af7db62f21983565c64d5d42d2a49888e">M</a>[0][0].size(); j++) {</div>
+<div class="line"><span class="lineno">  122</span>                <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#af7db62f21983565c64d5d42d2a49888e">M</a>[0][i][j] = <a class="code hl_function" href="#a629be41c1ab78850963e4ce14e1d11d9">rand_range&lt;T1, T2&gt;</a>(a, b);</div>
+<div class="line"><span class="lineno">  123</span>            }</div>
+<div class="line"><span class="lineno">  124</span>        }</div>
+<div class="line"><span class="lineno">  125</span> </div>
+<div class="line"><span class="lineno">  126</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f">determinant_lu</a>(*M);</div>
+<div class="line"><span class="lineno">  127</span>    }</div>
+<div class="ttc" id="adata__structures_2sparse__table_8cpp_html_af7db62f21983565c64d5d42d2a49888e"><div class="ttname"><a href="../../d6/d42/data__structures_2sparse__table_8cpp.html#af7db62f21983565c64d5d42d2a49888e">data_structures::sparse_table::M</a></div><div class="ttdeci">constexpr uint8_t M</div><div class="ttdoc">ceil(log2(N)).</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:49</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1028,13 +1028,13 @@ template&lt;typename T1 , typename T2 &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>random integer in the interval \([a,b)\) </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   92</span>                                           {</div>
-<div class="line"><span class="lineno">   93</span>        <span class="comment">// generate random number between 0 and 1</span></div>
-<div class="line"><span class="lineno">   94</span>        <span class="keywordtype">long</span> <span class="keywordtype">double</span> r = <span class="keyword">static_cast&lt;</span><span class="keywordtype">long</span> <span class="keywordtype">double</span><span class="keyword">&gt;</span>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>()) / RAND_MAX;</div>
-<div class="line"><span class="lineno">   95</span> </div>
-<div class="line"><span class="lineno">   96</span>        <span class="comment">// scale and return random number as integer</span></div>
-<div class="line"><span class="lineno">   97</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T2<span class="keyword">&gt;</span>(r * (b - a) + a);</div>
-<div class="line"><span class="lineno">   98</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">   93</span>                                           {</div>
+<div class="line"><span class="lineno">   94</span>        <span class="comment">// generate random number between 0 and 1</span></div>
+<div class="line"><span class="lineno">   95</span>        <span class="keywordtype">long</span> <span class="keywordtype">double</span> r = <span class="keyword">static_cast&lt;</span><span class="keywordtype">long</span> <span class="keywordtype">double</span><span class="keyword">&gt;</span>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>()) / RAND_MAX;</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>        <span class="comment">// scale and return random number as integer</span></div>
+<div class="line"><span class="lineno">   98</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T2<span class="keyword">&gt;</span>(r * (b - a) + a);</div>
+<div class="line"><span class="lineno">   99</span>    }</div>
 <div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

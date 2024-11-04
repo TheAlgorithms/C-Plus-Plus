@@ -113,19 +113,20 @@ $(function(){initNavTree('d8/ddf/sieve__of__eratosthenes_8cpp.html','../../'); i
 
 <p>Prime Numbers using <a href="https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes" target="_blank">Sieve of Eratosthenes</a>  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sieve_of_eratosthenes.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d35/sieve__of__eratosthenes_8cpp__incl.svg" width="252" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d35/sieve__of__eratosthenes_8cpp__incl.svg" width="336" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html">math</a></td></tr>
-<tr class="memdesc:dd/d47/namespacemath"><td class="mdescLeft">&#160;</td><td class="mdescRight">for IO operations <br /></td></tr>
+<tr class="memdesc:dd/d47/namespacemath"><td class="mdescLeft">&#160;</td><td class="mdescRight">for assert <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db0/namespacesieve__of__eratosthenes.html">sieve_of_eratosthenes</a></td></tr>
 <tr class="memdesc:d2/db0/namespacesieve__of__eratosthenes"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for finding Prime Numbers using Sieve of Eratosthenes. <br /></td></tr>
@@ -174,7 +175,7 @@ Space Complexity : \(O(N)\)</p>
 <div class="line"><span class="lineno">  120</span>    <a class="code hl_function" href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a>();</div>
 <div class="line"><span class="lineno">  121</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  122</span>}</div>
-<div class="ttc" id="asieve__of__eratosthenes_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> sieve_of_eratosthenes.cpp:80</div></div>
+<div class="ttc" id="asieve__of__eratosthenes_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> sieve_of_eratosthenes.cpp:81</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -210,16 +211,16 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   64</span>                                                        {</div>
-<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">for</span> (uint32_t i = 2; i &lt;= <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
-<div class="line"><span class="lineno">   66</span>        <span class="keywordflow">if</span> (is_prime[i]) {</div>
-<div class="line"><span class="lineno">   67</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; i &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
-<div class="line"><span class="lineno">   68</span>        }</div>
-<div class="line"><span class="lineno">   69</span>    }</div>
-<div class="line"><span class="lineno">   70</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   71</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   65</span>                                                        {</div>
+<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">for</span> (uint32_t i = 2; i &lt;= <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
+<div class="line"><span class="lineno">   67</span>        <span class="keywordflow">if</span> (is_prime[i]) {</div>
+<div class="line"><span class="lineno">   68</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; i &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><span class="lineno">   69</span>        }</div>
+<div class="line"><span class="lineno">   70</span>    }</div>
+<div class="line"><span class="lineno">   71</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   72</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="adata__structures_2sparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:47</div></div>
+<div class="ttc" id="adata__structures_2sparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:48</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -253,19 +254,19 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>is_prime a vector of <code>N + 1</code> booleans identifying if <code>i</code>^th number is a prime or not </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   44</span>                                  {</div>
-<div class="line"><span class="lineno">   45</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> <a class="code hl_function" href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">is_prime</a>(N + 1, <span class="keyword">true</span>);  <span class="comment">// Initialize all as prime numbers</span></div>
-<div class="line"><span class="lineno">   46</span>    <a class="code hl_function" href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">is_prime</a>[0] = <a class="code hl_function" href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">is_prime</a>[1] = <span class="keyword">false</span>;        <span class="comment">// 0 and 1 are not prime numbers</span></div>
-<div class="line"><span class="lineno">   47</span> </div>
-<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">for</span> (uint32_t i = 2; i * i &lt;= <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
-<div class="line"><span class="lineno">   49</span>        <span class="keywordflow">if</span> (is_prime[i]) {</div>
-<div class="line"><span class="lineno">   50</span>            <span class="keywordflow">for</span> (uint32_t j = i * i; j &lt;= <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; j += i) {</div>
-<div class="line"><span class="lineno">   51</span>                <a class="code hl_function" href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">is_prime</a>[j] = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   52</span>            }</div>
-<div class="line"><span class="lineno">   53</span>        }</div>
-<div class="line"><span class="lineno">   54</span>    }</div>
-<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">is_prime</a>;</div>
-<div class="line"><span class="lineno">   56</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>                                  {</div>
+<div class="line"><span class="lineno">   46</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> <a class="code hl_function" href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">is_prime</a>(N + 1, <span class="keyword">true</span>);  <span class="comment">// Initialize all as prime numbers</span></div>
+<div class="line"><span class="lineno">   47</span>    <a class="code hl_function" href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">is_prime</a>[0] = <a class="code hl_function" href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">is_prime</a>[1] = <span class="keyword">false</span>;        <span class="comment">// 0 and 1 are not prime numbers</span></div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">for</span> (uint32_t i = 2; i * i &lt;= <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
+<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">if</span> (is_prime[i]) {</div>
+<div class="line"><span class="lineno">   51</span>            <span class="keywordflow">for</span> (uint32_t j = i * i; j &lt;= <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; j += i) {</div>
+<div class="line"><span class="lineno">   52</span>                <a class="code hl_function" href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">is_prime</a>[j] = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   53</span>            }</div>
+<div class="line"><span class="lineno">   54</span>        }</div>
+<div class="line"><span class="lineno">   55</span>    }</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">is_prime</a>;</div>
+<div class="line"><span class="lineno">   57</span>}</div>
 <div class="ttc" id="anamespacemath_html_abd8f794b2229b42876169ff841b6e444"><div class="ttname"><a href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">math::is_prime</a></div><div class="ttdeci">bool is_prime(int64_t num)</div><div class="ttdoc">Function to check if the given number is prime or not.</div><div class="ttdef"><b>Definition</b> check_prime.cpp:31</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -301,41 +302,40 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   80</span>                    {</div>
-<div class="line"><span class="lineno">   81</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> is_prime_1 =</div>
-<div class="line"><span class="lineno">   82</span>        <a class="code hl_function" href="#a22be949d160b26361f7e323310f7fa0c">math::sieve_of_eratosthenes::sieve</a>(<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(10));</div>
-<div class="line"><span class="lineno">   83</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> is_prime_2 =</div>
-<div class="line"><span class="lineno">   84</span>        <a class="code hl_function" href="#a22be949d160b26361f7e323310f7fa0c">math::sieve_of_eratosthenes::sieve</a>(<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(20));</div>
-<div class="line"><span class="lineno">   85</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> is_prime_3 =</div>
-<div class="line"><span class="lineno">   86</span>        <a class="code hl_function" href="#a22be949d160b26361f7e323310f7fa0c">math::sieve_of_eratosthenes::sieve</a>(<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(100));</div>
-<div class="line"><span class="lineno">   87</span> </div>
-<div class="line"><span class="lineno">   88</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> expected_1{<span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
-<div class="line"><span class="lineno">   89</span>                                 <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>};</div>
-<div class="line"><span class="lineno">   90</span>    assert(is_prime_1 == expected_1);</div>
-<div class="line"><span class="lineno">   91</span> </div>
-<div class="line"><span class="lineno">   92</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> expected_2{<span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
-<div class="line"><span class="lineno">   93</span>                                 <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
+<div class="fragment"><div class="line"><span class="lineno">   81</span>                    {</div>
+<div class="line"><span class="lineno">   82</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> is_prime_1 =</div>
+<div class="line"><span class="lineno">   83</span>        <a class="code hl_function" href="#a22be949d160b26361f7e323310f7fa0c">math::sieve_of_eratosthenes::sieve</a>(<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(10));</div>
+<div class="line"><span class="lineno">   84</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> is_prime_2 =</div>
+<div class="line"><span class="lineno">   85</span>        <a class="code hl_function" href="#a22be949d160b26361f7e323310f7fa0c">math::sieve_of_eratosthenes::sieve</a>(<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(20));</div>
+<div class="line"><span class="lineno">   86</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> is_prime_3 =</div>
+<div class="line"><span class="lineno">   87</span>        <a class="code hl_function" href="#a22be949d160b26361f7e323310f7fa0c">math::sieve_of_eratosthenes::sieve</a>(<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(100));</div>
+<div class="line"><span class="lineno">   88</span> </div>
+<div class="line"><span class="lineno">   89</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> expected_1{<span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
+<div class="line"><span class="lineno">   90</span>                                 <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>};</div>
+<div class="line"><span class="lineno">   91</span>    assert(is_prime_1 == expected_1);</div>
+<div class="line"><span class="lineno">   92</span> </div>
+<div class="line"><span class="lineno">   93</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> expected_2{<span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
 <div class="line"><span class="lineno">   94</span>                                 <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
-<div class="line"><span class="lineno">   95</span>                                 <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>};</div>
-<div class="line"><span class="lineno">   96</span>    assert(is_prime_2 == expected_2);</div>
-<div class="line"><span class="lineno">   97</span> </div>
-<div class="line"><span class="lineno">   98</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> expected_3{</div>
-<div class="line"><span class="lineno">   99</span>        <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>,</div>
-<div class="line"><span class="lineno">  100</span>        <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
-<div class="line"><span class="lineno">  101</span>        <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
-<div class="line"><span class="lineno">  102</span>        <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>,</div>
-<div class="line"><span class="lineno">  103</span>        <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>,</div>
-<div class="line"><span class="lineno">  104</span>        <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
-<div class="line"><span class="lineno">  105</span>        <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>,</div>
-<div class="line"><span class="lineno">  106</span>        <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
-<div class="line"><span class="lineno">  107</span>        <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
-<div class="line"><span class="lineno">  108</span>        <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>,</div>
-<div class="line"><span class="lineno">  109</span>        <span class="keyword">false</span>};</div>
-<div class="line"><span class="lineno">  110</span>    assert(is_prime_3 == expected_3);</div>
-<div class="line"><span class="lineno">  111</span> </div>
-<div class="line"><span class="lineno">  112</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have passed successfully!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   95</span>                                 <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
+<div class="line"><span class="lineno">   96</span>                                 <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>};</div>
+<div class="line"><span class="lineno">   97</span>    assert(is_prime_2 == expected_2);</div>
+<div class="line"><span class="lineno">   98</span> </div>
+<div class="line"><span class="lineno">   99</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> expected_3{</div>
+<div class="line"><span class="lineno">  100</span>        <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>,</div>
+<div class="line"><span class="lineno">  101</span>        <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
+<div class="line"><span class="lineno">  102</span>        <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
+<div class="line"><span class="lineno">  103</span>        <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>,</div>
+<div class="line"><span class="lineno">  104</span>        <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>,</div>
+<div class="line"><span class="lineno">  105</span>        <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
+<div class="line"><span class="lineno">  106</span>        <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>,</div>
+<div class="line"><span class="lineno">  107</span>        <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
+<div class="line"><span class="lineno">  108</span>        <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
+<div class="line"><span class="lineno">  109</span>        <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>,</div>
+<div class="line"><span class="lineno">  110</span>        <span class="keyword">false</span>};</div>
+<div class="line"><span class="lineno">  111</span>    assert(is_prime_3 == expected_3);</div>
+<div class="line"><span class="lineno">  112</span> </div>
 <div class="line"><span class="lineno">  113</span>}</div>
-<div class="ttc" id="asieve__of__eratosthenes_8cpp_html_a22be949d160b26361f7e323310f7fa0c"><div class="ttname"><a href="#a22be949d160b26361f7e323310f7fa0c">math::sieve_of_eratosthenes::sieve</a></div><div class="ttdeci">std::vector&lt; bool &gt; sieve(uint32_t N)</div><div class="ttdoc">Function to sieve out the primes.</div><div class="ttdef"><b>Definition</b> sieve_of_eratosthenes.cpp:44</div></div>
+<div class="ttc" id="asieve__of__eratosthenes_8cpp_html_a22be949d160b26361f7e323310f7fa0c"><div class="ttname"><a href="#a22be949d160b26361f7e323310f7fa0c">math::sieve_of_eratosthenes::sieve</a></div><div class="ttdeci">std::vector&lt; bool &gt; sieve(uint32_t N)</div><div class="ttdoc">Function to sieve out the primes.</div><div class="ttdef"><b>Definition</b> sieve_of_eratosthenes.cpp:45</div></div>
 </div><!-- fragment -->
 </div>
 </div>

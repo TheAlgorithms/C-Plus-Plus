@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="../../d6/db8/inv__sqrt_8cpp.html#ad219034bf5fba657f5035ec5a1d50f52" target="_top" xlink:title="for numeric_limits">
+<g id="a_Node000003"><a xlink:href="../../d6/db8/inv__sqrt_8cpp.html#ad219034bf5fba657f5035ec5a1d50f52" target="_top" xlink:title="for std::sqrt">
 <polygon fill="white" stroke="#666666" points="244.5,-93.25 172.25,-93.25 172.25,-74 244.5,-74 244.5,-93.25"/>
 <text text-anchor="middle" x="208.38" y="-79.75" font-family="Helvetica,sans-Serif" font-size="10.00">Fast_InvSqrt</text>
 </a>
