@@ -1,3 +1,10 @@
+/*
+ * @Author: chuanjun
+ * @Date: 2024-11-02 14:13:24
+ * @email: chuanjun1978@gmail.com
+ * @website-github: https://github.com/Chuan1937
+ * @LastEditTime: 2024-11-04 12:31:24
+ */
 /**
  * @{
  * \file montecarlo_pi.cpp
@@ -10,10 +17,11 @@
  * The Monte Carlo method is used to approximate the value of PI by randomly sampling points in a unit square and determining the ratio of points within a unit circle.
  */
 
-#include <iostream>    /// for input and output operations
+#include <iostream>    /// for input and output
 #include <cmath>       /// for mathematical functions like sqrt
 #include <random>      /// for random number generation
 #include <cassert>     /// for using assert
+
 
 /**
  * @namespace numerical_methods
