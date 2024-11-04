@@ -1,68 +1,65 @@
 /**
  * @file
- * @brief Generate fibonacci sequence
+ * @brief n-th [Fibonacci
+ * number](https://en.wikipedia.org/wiki/Fibonacci_sequence).
  *
- * Calculate the the value on Fibonacci's sequence given an
- * integer as input.
+ * @details
+ * Naive recursive implementation to calculate the n-th Fibonacci number.
  * \f[\text{fib}(n) = \text{fib}(n-1) + \text{fib}(n-2)\f]
  *
  * @see fibonacci_large.cpp, fibonacci_fast.cpp, string_fibonacci.cpp
  */
-#include <cassert>
-#include <iostream>
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
 
 /**
- * Recursively compute sequences
- * @param n input
- * @returns n-th element of the Fbinacci's sequence
+ * @namespace math
+ * @brief Math algorithms
+ */
+namespace math {
+/**
+ * @namespace fibonacci
+ * @brief Functions for Fibonacci sequence
+ */
+namespace fibonacci {
+/**
+ * @brief Function to compute the n-th Fibonacci number
+ * @param n the index of the Fibonacci number
+ * @returns n-th element of the Fibonacci's sequence
  */
 uint64_t fibonacci(uint64_t n) {
-    /* If the input is 0 or 1 just return the same
-       This will set the first 2 values of the sequence */
+    // If the input is 0 or 1 just return the same (Base Case)
+    // This will set the first 2 values of the sequence
     if (n <= 1) {
         return n;
     }
 
-    /* Add the last 2 values of the sequence to get next */
+    // Add the preceding 2 values of the sequence to get next
     return fibonacci(n - 1) + fibonacci(n - 2);
+}
+}  // namespace fibonacci
+}  // namespace math
+
+/**
+ * @brief Self-test implementation
+ * @returns `void`
+ */
+static void test() {
+    assert(math::fibonacci::fibonacci(0) == 0);
+    assert(math::fibonacci::fibonacci(1) == 1);
+    assert(math::fibonacci::fibonacci(2) == 1);
+    assert(math::fibonacci::fibonacci(3) == 2);
+    assert(math::fibonacci::fibonacci(4) == 3);
+    assert(math::fibonacci::fibonacci(15) == 610);
+    assert(math::fibonacci::fibonacci(20) == 6765);
+    std::cout << "All tests have passed successfully!\n";
 }
 
 /**
- * Function for testing the fibonacci() function with a few
- * test cases and assert statement.
- * @returns `void`
-*/
-static void test() {
-    uint64_t test_case_1 = fibonacci(0);
-    assert(test_case_1 == 0);
-    std::cout << "Passed Test 1!" << std::endl;
-
-    uint64_t test_case_2 = fibonacci(1);
-    assert(test_case_2 == 1);
-    std::cout << "Passed Test 2!" << std::endl;
-
-    uint64_t test_case_3 = fibonacci(2);
-    assert(test_case_3 == 1);
-    std::cout << "Passed Test 3!" << std::endl;
-
-    uint64_t test_case_4 = fibonacci(3);
-    assert(test_case_4 == 2);
-    std::cout << "Passed Test 4!" << std::endl;
-
-    uint64_t test_case_5 = fibonacci(4);
-    assert(test_case_5 == 3);
-    std::cout << "Passed Test 5!" << std::endl;
-
-    uint64_t test_case_6 = fibonacci(15);
-    assert(test_case_6 == 610);
-    std::cout << "Passed Test 6!" << std::endl << std::endl;
-}
-
-/// Main function
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
-    test();
-    int n = 0;
-    std::cin >> n;
-    assert(n >= 0);
-    std::cout << "F(" << n << ")= " << fibonacci(n) << std::endl;
+    test();  // run self-test implementations
+    return 0;
 }
