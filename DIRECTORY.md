@@ -122,6 +122,7 @@
   * [Subset Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/subset_sum.cpp)
   * [Trapped Rainwater](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/trapped_rainwater.cpp)
   * [Tree Height](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/tree_height.cpp)
+  * [Unbounded 0 1 Knapsack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/unbounded_0_1_knapsack.cpp)
   * [Word Break](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/word_break.cpp)
 
 ## Games
@@ -160,6 +161,7 @@
   * [Spirograph](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/graphics/spirograph.cpp)
 
 ## Greedy Algorithms
+  * [Binary Addition](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/binary_addition.cpp)
   * [Boruvkas Minimum Spanning Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/boruvkas_minimum_spanning_tree.cpp)
   * [Digit Separation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/digit_separation.cpp)
   * [Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/dijkstra.cpp)
@@ -302,7 +304,9 @@
   * [Kadanes3](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/kadanes3.cpp)
   * [Kelvin To Celsius](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/kelvin_to_celsius.cpp)
   * [Lfu Cache](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/lfu_cache.cpp)
+  * [Longest Substring Without Repeating Characters](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/longest_substring_without_repeating_characters.cpp)
   * [Lru Cache](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/lru_cache.cpp)
+  * [Lru Cache2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/lru_cache2.cpp)
   * [Matrix Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/matrix_exponentiation.cpp)
   * [Palindrome Of Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/palindrome_of_number.cpp)
   * [Paranthesis Matching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/paranthesis_matching.cpp)
@@ -324,6 +328,7 @@
   * [Addition Rule](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/probability/addition_rule.cpp)
   * [Bayes Theorem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/probability/bayes_theorem.cpp)
   * [Binomial Dist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/probability/binomial_dist.cpp)
+  * [Exponential Dist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/probability/exponential_dist.cpp)
   * [Geometric Dist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/probability/geometric_dist.cpp)
   * [Poisson Dist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/probability/poisson_dist.cpp)
   * [Windowed Median](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/probability/windowed_median.cpp)
@@ -347,6 +352,7 @@
   * [Interpolation Search2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/interpolation_search2.cpp)
   * [Jump Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/jump_search.cpp)
   * [Linear Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/linear_search.cpp)
+  * [Longest Increasing Subsequence Using Binary Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/longest_increasing_subsequence_using_binary_search.cpp)
   * [Median Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/median_search.cpp)
   * [Median Search2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/median_search2.cpp)
   * [Saddleback Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/saddleback_search.cpp)
