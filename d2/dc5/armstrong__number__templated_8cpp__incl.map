@@ -1,0 +1,9 @@
+<map id="dynamic_programming/armstrong_number_templated.cpp" name="dynamic_programming/armstrong_number_templated.cpp">
+<area shape="rect" id="Node000001" title="Checks whether a number is an Armstrong Number or not." alt="" coords="12,5,234,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,70,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,48,64,85,60,81,100,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="94,94,152,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="126,46,126,78,120,78,120,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="175,94,246,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="146,44,188,81,184,85,143,48"/>
+</map>

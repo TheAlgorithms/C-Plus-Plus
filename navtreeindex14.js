@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"de/db4/namespacedisjoint__union.html":[9,0,23],
 "de/db6/a1z26__cipher_8cpp.html":[11,0,2,0],
 "de/db6/a1z26__cipher_8cpp.html#a0a78954e96c862430904ee3e64623c38":[11,0,2,0,0],
 "de/db6/a1z26__cipher_8cpp.html#a77a6b827a0b9c7aca2d705811459d744":[11,0,2,0,1],
@@ -184,12 +185,6 @@ var NAVTREEINDEX14 =
 "df/dc8/successive__approximation_8cpp.html#a79c1d08919ff7780a5d7723172602389":[11,0,15,22,0],
 "df/dc8/successive__approximation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,15,22,2],
 "df/dc8/successive__approximation_8cpp.html#ae89c36add7c55298c5195d0a83de1456":[11,0,15,22,1],
-"df/dcb/greedy__algorithms_2dijkstra_8cpp.html":[11,0,11,3],
-"df/dcb/greedy__algorithms_2dijkstra_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[11,0,11,3,5],
-"df/dcb/greedy__algorithms_2dijkstra_8cpp.html#a7341d7c76a6145e991cdd231f689fca8":[11,0,11,3,4],
-"df/dcb/greedy__algorithms_2dijkstra_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,11,3,2],
-"df/dcb/greedy__algorithms_2dijkstra_8cpp.html#af6cb29ca6dc5771439f6ea7262058a71":[11,0,11,3,3],
-"df/dcb/greedy__algorithms_2dijkstra_8cpp.html#af915876d0ca33cc71a6a6191a8cd3ccd":[11,0,11,3,1],
 "df/dcb/namespacestrings.html":[9,0,123],
 "df/dcd/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plus-_plus_2math_2quadratic_equations_complex_numbers_8cpp-example.html":[12,2],
 "df/dce/namespacegraph.html":[9,0,39],
@@ -249,5 +244,10 @@ var NAVTREEINDEX14 =
 "dir_9c6faab82c22511b50177aa2e38e2780.html":[11,0,15],
 "dir_bb1b521853a9c46347182a9d10420771.html":[11,0,22],
 "dir_c11585dfcef32a26e29098facab6c144.html":[11,0,0],
-"dir_cc8e79ed9d2b7756c78e8d0c87c6c0c7.html":[11,0,3]
+"dir_cc8e79ed9d2b7756c78e8d0c87c6c0c7.html":[11,0,3],
+"dir_e3380d2178455503f266746fb14246a5.html":[11,0,8],
+"dir_e79632891301b850df87e9c0030293fa.html":[11,0,10],
+"dir_ece9b94c107bbaa1dd68197a8c9983b9.html":[11,0,12],
+"dir_f1797d0c2a0a12033e7d74efffeb14e1.html":[11,0,4,0],
+"dir_f3c4fbc4e901afa0a54d0623c5574aa7.html":[11,0,1]
 };

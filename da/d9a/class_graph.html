@@ -116,7 +116,7 @@ $(function(){initNavTree('da/d9a/class_graph.html','../../'); initResizable(true
 <div class="dynheader">
 Collaboration diagram for Graph:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/dc2/class_graph__coll__graph.svg" width="647" height="346"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/dc2/class_graph__coll__graph.svg" width="647" height="348"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -172,9 +172,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>vertexNum</b></td></tr
 <tr class="memitem:a10ff9c6c323cf435f18e424dbb62235e" id="r_a10ff9c6c323cf435f18e424dbb62235e"><td class="memItemLeft" align="right" valign="top"><a id="a10ff9c6c323cf435f18e424dbb62235e" name="a10ff9c6c323cf435f18e424dbb62235e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>edgeNum</b></td></tr>
 <tr class="separator:a10ff9c6c323cf435f18e424dbb62235e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a546eb4062eb56cb88eb0a381d10a12" id="r_a2a546eb4062eb56cb88eb0a381d10a12"><td class="memItemLeft" align="right" valign="top"><a id="a2a546eb4062eb56cb88eb0a381d10a12" name="a2a546eb4062eb56cb88eb0a381d10a12"></a>
-<a class="el" href="../../d7/d77/class_edge.html">Edge</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>edges</b></td></tr>
-<tr class="separator:a2a546eb4062eb56cb88eb0a381d10a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28d19ea9c7d111f55fee78331abe88bd" id="r_a28d19ea9c7d111f55fee78331abe88bd"><td class="memItemLeft" align="right" valign="top"><a id="a28d19ea9c7d111f55fee78331abe88bd" name="a28d19ea9c7d111f55fee78331abe88bd"></a>
+<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../d7/d77/class_edge.html">Edge</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>edges</b></td></tr>
+<tr class="separator:a28d19ea9c7d111f55fee78331abe88bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a268ba18d421817ad8713c2e92f19d82a" id="r_a268ba18d421817ad8713c2e92f19d82a"><td class="memItemLeft" align="right" valign="top"><a id="a268ba18d421817ad8713c2e92f19d82a" name="a268ba18d421817ad8713c2e92f19d82a"></a>
 int **&#160;</td><td class="memItemRight" valign="bottom"><b>edges</b></td></tr>
 <tr class="separator:a268ba18d421817ad8713c2e92f19d82a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,13 +253,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   19</span>                        {</div>
-<div class="line"><span class="lineno">   20</span>        this-&gt;vertexNum = V;</div>
-<div class="line"><span class="lineno">   21</span>        this-&gt;edgeNum = E;</div>
-<div class="line"><span class="lineno">   22</span>        this-&gt;edges = (<a class="code hl_struct" href="../../d7/d77/class_edge.html">Edge</a> *)<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/c/malloc.html">malloc</a>(E * <span class="keyword">sizeof</span>(<a class="code hl_struct" href="../../d7/d77/class_edge.html">Edge</a>));</div>
-<div class="line"><span class="lineno">   23</span>    }</div>
-<div class="ttc" id="aclass_edge_html"><div class="ttname"><a href="../../d7/d77/class_edge.html">Edge</a></div><div class="ttdef"><b>Definition</b> bellman_ford.cpp:7</div></div>
-<div class="ttc" id="amalloc_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/c/malloc.html">std::malloc</a></div><div class="ttdeci">T malloc(T... args)</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   20</span>                        {</div>
+<div class="line"><span class="lineno">   21</span>        this-&gt;vertexNum = V;</div>
+<div class="line"><span class="lineno">   22</span>        this-&gt;edgeNum = E;</div>
+<div class="line"><span class="lineno">   23</span>        this-&gt;edges.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/reserve.html">reserve</a>(E);</div>
+<div class="line"><span class="lineno">   24</span>    }</div>
+<div class="ttc" id="areserve_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/reserve.html">std::vector::reserve</a></div><div class="ttdeci">T reserve(T... args)</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -285,15 +284,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   16</span>                 {</div>
-<div class="line"><span class="lineno">   17</span>        this-&gt;vertexNum = V;</div>
-<div class="line"><span class="lineno">   18</span>        this-&gt;edges = <span class="keyword">new</span> <span class="keywordtype">int</span> *[V];</div>
-<div class="line"><span class="lineno">   19</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; V; i++) {</div>
-<div class="line"><span class="lineno">   20</span>            this-&gt;edges[i] = <span class="keyword">new</span> <span class="keywordtype">int</span>[V];</div>
-<div class="line"><span class="lineno">   21</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; V; j++) this-&gt;edges[i][j] = INT_MAX;</div>
-<div class="line"><span class="lineno">   22</span>            this-&gt;edges[i][i] = 0;</div>
-<div class="line"><span class="lineno">   23</span>        }</div>
-<div class="line"><span class="lineno">   24</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">   17</span>                 {</div>
+<div class="line"><span class="lineno">   18</span>        this-&gt;vertexNum = V;</div>
+<div class="line"><span class="lineno">   19</span>        this-&gt;edges = <span class="keyword">new</span> <span class="keywordtype">int</span> *[V];</div>
+<div class="line"><span class="lineno">   20</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; V; i++) {</div>
+<div class="line"><span class="lineno">   21</span>            this-&gt;edges[i] = <span class="keyword">new</span> <span class="keywordtype">int</span>[V];</div>
+<div class="line"><span class="lineno">   22</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; V; j++) this-&gt;edges[i][j] = INT_MAX;</div>
+<div class="line"><span class="lineno">   23</span>            this-&gt;edges[i][i] = 0;</div>
+<div class="line"><span class="lineno">   24</span>        }</div>
+<div class="line"><span class="lineno">   25</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -319,10 +318,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   26</span>             {</div>
-<div class="line"><span class="lineno">   27</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; vertexNum; i++) <span class="keyword">delete</span>[] edges[i];</div>
-<div class="line"><span class="lineno">   28</span>        <span class="keyword">delete</span>[] edges;</div>
-<div class="line"><span class="lineno">   29</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">   27</span>             {</div>
+<div class="line"><span class="lineno">   28</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; vertexNum; i++) {</div>
+<div class="line"><span class="lineno">   29</span>            <span class="keyword">delete</span>[] edges[i];</div>
+<div class="line"><span class="lineno">   30</span>        }</div>
+<div class="line"><span class="lineno">   31</span>        <span class="keyword">delete</span>[] edges;</div>
+<div class="line"><span class="lineno">   32</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -547,16 +548,17 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   26</span>                                               {</div>
-<div class="line"><span class="lineno">   27</span>        <span class="keyword">static</span> <span class="keywordtype">int</span> edgeInd = 0;</div>
-<div class="line"><span class="lineno">   28</span>        <span class="keywordflow">if</span> (edgeInd &lt; this-&gt;edgeNum) {</div>
-<div class="line"><span class="lineno">   29</span>            <a class="code hl_struct" href="../../d7/d77/class_edge.html">Edge</a> newEdge;</div>
-<div class="line"><span class="lineno">   30</span>            newEdge.src = src;</div>
-<div class="line"><span class="lineno">   31</span>            newEdge.dst = dst;</div>
-<div class="line"><span class="lineno">   32</span>            newEdge.weight = weight;</div>
-<div class="line"><span class="lineno">   33</span>            this-&gt;edges[edgeInd++] = newEdge;</div>
-<div class="line"><span class="lineno">   34</span>        }</div>
-<div class="line"><span class="lineno">   35</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">   27</span>                                               {</div>
+<div class="line"><span class="lineno">   28</span>        <span class="keyword">static</span> <span class="keywordtype">int</span> edgeInd = 0;</div>
+<div class="line"><span class="lineno">   29</span>        <span class="keywordflow">if</span> (edgeInd &lt; this-&gt;edgeNum) {</div>
+<div class="line"><span class="lineno">   30</span>            <a class="code hl_struct" href="../../d7/d77/class_edge.html">Edge</a> newEdge;</div>
+<div class="line"><span class="lineno">   31</span>            newEdge.src = src;</div>
+<div class="line"><span class="lineno">   32</span>            newEdge.dst = dst;</div>
+<div class="line"><span class="lineno">   33</span>            newEdge.weight = weight;</div>
+<div class="line"><span class="lineno">   34</span>            this-&gt;edges[edgeInd++] = newEdge;</div>
+<div class="line"><span class="lineno">   35</span>        }</div>
+<div class="line"><span class="lineno">   36</span>    }</div>
+<div class="ttc" id="aclass_edge_html"><div class="ttname"><a href="../../d7/d77/class_edge.html">Edge</a></div><div class="ttdef"><b>Definition</b> bellman_ford.cpp:8</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -591,9 +593,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   32</span>                                               {</div>
-<div class="line"><span class="lineno">   33</span>        this-&gt;edges[src][dst] = weight;</div>
-<div class="line"><span class="lineno">   34</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">   35</span>                                               {</div>
+<div class="line"><span class="lineno">   36</span>        this-&gt;edges[src][dst] = weight;</div>
+<div class="line"><span class="lineno">   37</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>

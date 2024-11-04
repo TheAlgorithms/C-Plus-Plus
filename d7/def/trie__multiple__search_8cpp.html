@@ -117,13 +117,14 @@ $(function(){initNavTree('d7/def/trie__multiple__search_8cpp.html','../../'); in
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cctype&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;queue&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for trie_multiple_search.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/df4/trie__multiple__search_8cpp__incl.svg" width="518" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/df4/trie__multiple__search_8cpp__incl.svg" width="602" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -182,11 +183,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  463</span>                                       {</div>
-<div class="line"><span class="lineno">  464</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">  465</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  466</span>}</div>
-<div class="ttc" id="atrie__multiple__search_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Function to test a simple search before and after deleting an entry. And to test out the multiple var...</div><div class="ttdef"><b>Definition</b> trie_multiple_search.cpp:422</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  466</span>                                       {</div>
+<div class="line"><span class="lineno">  467</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">  468</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  469</span>}</div>
+<div class="ttc" id="atrie__multiple__search_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Function to test a simple search before and after deleting an entry. And to test out the multiple var...</div><div class="ttdef"><b>Definition</b> trie_multiple_search.cpp:425</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -219,42 +220,42 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Function to test a simple search before and after deleting an entry. And to test out the multiple variants of search. </p>
-<div class="fragment"><div class="line"><span class="lineno">  422</span>                   {</div>
-<div class="line"><span class="lineno">  423</span>    <span class="keyword">auto</span> root = <span class="keyword">new</span> <a class="code hl_class" href="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html">operations_on_datastructures::trie_operations::Tnode</a>();</div>
-<div class="line"><span class="lineno">  424</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::string&gt;</a> inputs = {</div>
-<div class="line"><span class="lineno">  425</span>        <span class="stringliteral">&quot;abcde&quot;</span>, <span class="stringliteral">&quot;sss&quot;</span>,    <span class="stringliteral">&quot;ssss&quot;</span>,  <span class="stringliteral">&quot;ssst&quot;</span>, <span class="stringliteral">&quot;sssu&quot;</span>, <span class="stringliteral">&quot;sssv&quot;</span>,</div>
-<div class="line"><span class="lineno">  426</span>        <span class="stringliteral">&quot;sst&quot;</span>,   <span class="stringliteral">&quot;ssts&quot;</span>,   <span class="stringliteral">&quot;sstt&quot;</span>,  <span class="stringliteral">&quot;sstu&quot;</span>, <span class="stringliteral">&quot;tutu&quot;</span>, <span class="stringliteral">&quot;tutuv&quot;</span>,</div>
-<div class="line"><span class="lineno">  427</span>        <span class="stringliteral">&quot;tutuu&quot;</span>, <span class="stringliteral">&quot;tutuvs&quot;</span>, <span class="stringliteral">&quot;tutus&quot;</span>, <span class="stringliteral">&quot;tvst&quot;</span>, <span class="stringliteral">&quot;tvsu&quot;</span>, <span class="stringliteral">&quot;vvvv&quot;</span>};</div>
-<div class="line"><span class="lineno">  428</span> </div>
-<div class="line"><span class="lineno">  429</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;i : inputs) {</div>
-<div class="line"><span class="lineno">  430</span>        root-&gt;Insert(i);</div>
-<div class="line"><span class="lineno">  431</span>    }</div>
-<div class="line"><span class="lineno">  432</span>    <span class="comment">// Search an existing entry</span></div>
-<div class="line"><span class="lineno">  433</span>    assert(root-&gt;SearchPresence(<span class="stringliteral">&quot;vvvv&quot;</span>));</div>
-<div class="line"><span class="lineno">  434</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; root-&gt;SearchPresence(<span class="stringliteral">&quot;vvvv&quot;</span>) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  435</span>    <span class="comment">// Delete it</span></div>
-<div class="line"><span class="lineno">  436</span>    root-&gt;Delete(<span class="stringliteral">&quot;vvvv&quot;</span>);</div>
-<div class="line"><span class="lineno">  437</span>    <span class="comment">// Search for the entry again</span></div>
-<div class="line"><span class="lineno">  438</span>    assert(!root-&gt;SearchPresence(<span class="stringliteral">&quot;vvvv&quot;</span>));</div>
-<div class="line"><span class="lineno">  439</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; root-&gt;SearchPresence(<span class="stringliteral">&quot;vvvv&quot;</span>) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  440</span> </div>
-<div class="line"><span class="lineno">  441</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; root-&gt;SearchPresence(<span class="stringliteral">&quot;tutu&quot;</span>) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  442</span>    root-&gt;SearchSuggestions(<span class="stringliteral">&quot;tutu&quot;</span>);</div>
-<div class="line"><span class="lineno">  443</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; root-&gt;SearchPresence(<span class="stringliteral">&quot;tutu&quot;</span>) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  444</span> </div>
-<div class="line"><span class="lineno">  445</span>    root-&gt;SearchSuggestions(<span class="stringliteral">&quot;tutuv&quot;</span>);</div>
-<div class="line"><span class="lineno">  446</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; root-&gt;SearchPresence(<span class="stringliteral">&quot;tutuv&quot;</span>) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="fragment"><div class="line"><span class="lineno">  425</span>                   {</div>
+<div class="line"><span class="lineno">  426</span>    <span class="keyword">auto</span> root = <span class="keyword">new</span> <a class="code hl_class" href="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html">operations_on_datastructures::trie_operations::Tnode</a>();</div>
+<div class="line"><span class="lineno">  427</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::string&gt;</a> inputs = {</div>
+<div class="line"><span class="lineno">  428</span>        <span class="stringliteral">&quot;abcde&quot;</span>, <span class="stringliteral">&quot;sss&quot;</span>,    <span class="stringliteral">&quot;ssss&quot;</span>,  <span class="stringliteral">&quot;ssst&quot;</span>, <span class="stringliteral">&quot;sssu&quot;</span>, <span class="stringliteral">&quot;sssv&quot;</span>,</div>
+<div class="line"><span class="lineno">  429</span>        <span class="stringliteral">&quot;sst&quot;</span>,   <span class="stringliteral">&quot;ssts&quot;</span>,   <span class="stringliteral">&quot;sstt&quot;</span>,  <span class="stringliteral">&quot;sstu&quot;</span>, <span class="stringliteral">&quot;tutu&quot;</span>, <span class="stringliteral">&quot;tutuv&quot;</span>,</div>
+<div class="line"><span class="lineno">  430</span>        <span class="stringliteral">&quot;tutuu&quot;</span>, <span class="stringliteral">&quot;tutuvs&quot;</span>, <span class="stringliteral">&quot;tutus&quot;</span>, <span class="stringliteral">&quot;tvst&quot;</span>, <span class="stringliteral">&quot;tvsu&quot;</span>, <span class="stringliteral">&quot;vvvv&quot;</span>};</div>
+<div class="line"><span class="lineno">  431</span> </div>
+<div class="line"><span class="lineno">  432</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;i : inputs) {</div>
+<div class="line"><span class="lineno">  433</span>        root-&gt;Insert(i);</div>
+<div class="line"><span class="lineno">  434</span>    }</div>
+<div class="line"><span class="lineno">  435</span>    <span class="comment">// Search an existing entry</span></div>
+<div class="line"><span class="lineno">  436</span>    assert(root-&gt;SearchPresence(<span class="stringliteral">&quot;vvvv&quot;</span>));</div>
+<div class="line"><span class="lineno">  437</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; root-&gt;SearchPresence(<span class="stringliteral">&quot;vvvv&quot;</span>) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  438</span>    <span class="comment">// Delete it</span></div>
+<div class="line"><span class="lineno">  439</span>    root-&gt;Delete(<span class="stringliteral">&quot;vvvv&quot;</span>);</div>
+<div class="line"><span class="lineno">  440</span>    <span class="comment">// Search for the entry again</span></div>
+<div class="line"><span class="lineno">  441</span>    assert(!root-&gt;SearchPresence(<span class="stringliteral">&quot;vvvv&quot;</span>));</div>
+<div class="line"><span class="lineno">  442</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; root-&gt;SearchPresence(<span class="stringliteral">&quot;vvvv&quot;</span>) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  443</span> </div>
+<div class="line"><span class="lineno">  444</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; root-&gt;SearchPresence(<span class="stringliteral">&quot;tutu&quot;</span>) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  445</span>    root-&gt;SearchSuggestions(<span class="stringliteral">&quot;tutu&quot;</span>);</div>
+<div class="line"><span class="lineno">  446</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; root-&gt;SearchPresence(<span class="stringliteral">&quot;tutu&quot;</span>) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><span class="lineno">  447</span> </div>
-<div class="line"><span class="lineno">  448</span>    root-&gt;SearchSuggestions(<span class="stringliteral">&quot;tutuvs&quot;</span>);</div>
-<div class="line"><span class="lineno">  449</span> </div>
-<div class="line"><span class="lineno">  450</span>    root-&gt;SearchFreqSuggestions(</div>
-<div class="line"><span class="lineno">  451</span>        <span class="stringliteral">&quot;tu&quot;</span>);  <span class="comment">// The top 3 frequent entries with prefix tu are tutu, tutuv &amp;</span></div>
-<div class="line"><span class="lineno">  452</span>                <span class="comment">// tutuvs respectively</span></div>
-<div class="line"><span class="lineno">  453</span>    root-&gt;SearchSuggestions(</div>
-<div class="line"><span class="lineno">  454</span>        <span class="stringliteral">&quot;&quot;</span>);  <span class="comment">// Empty search to list all the entries in the trie</span></div>
-<div class="line"><span class="lineno">  455</span>}</div>
+<div class="line"><span class="lineno">  448</span>    root-&gt;SearchSuggestions(<span class="stringliteral">&quot;tutuv&quot;</span>);</div>
+<div class="line"><span class="lineno">  449</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; root-&gt;SearchPresence(<span class="stringliteral">&quot;tutuv&quot;</span>) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  450</span> </div>
+<div class="line"><span class="lineno">  451</span>    root-&gt;SearchSuggestions(<span class="stringliteral">&quot;tutuvs&quot;</span>);</div>
+<div class="line"><span class="lineno">  452</span> </div>
+<div class="line"><span class="lineno">  453</span>    root-&gt;SearchFreqSuggestions(</div>
+<div class="line"><span class="lineno">  454</span>        <span class="stringliteral">&quot;tu&quot;</span>);  <span class="comment">// The top 3 frequent entries with prefix tu are tutu, tutuv &amp;</span></div>
+<div class="line"><span class="lineno">  455</span>                <span class="comment">// tutuvs respectively</span></div>
+<div class="line"><span class="lineno">  456</span>    root-&gt;SearchSuggestions(</div>
+<div class="line"><span class="lineno">  457</span>        <span class="stringliteral">&quot;&quot;</span>);  <span class="comment">// Empty search to list all the entries in the trie</span></div>
+<div class="line"><span class="lineno">  458</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aclassoperations__on__datastructures_1_1trie__operations_1_1_tnode_html"><div class="ttname"><a href="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html">operations_on_datastructures::trie_operations::Tnode</a></div><div class="ttdoc">Class defining the structure of trie node and containing the methods to perform operations on them.</div><div class="ttdef"><b>Definition</b> trie_multiple_search.cpp:34</div></div>
+<div class="ttc" id="aclassoperations__on__datastructures_1_1trie__operations_1_1_tnode_html"><div class="ttname"><a href="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html">operations_on_datastructures::trie_operations::Tnode</a></div><div class="ttdoc">Class defining the structure of trie node and containing the methods to perform operations on them.</div><div class="ttdef"><b>Definition</b> trie_multiple_search.cpp:37</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><div class="dynheader">

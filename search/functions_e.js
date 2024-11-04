@@ -56,7 +56,7 @@ var searchData=
   ['num_5fget_53',['num_get',['http://en.cppreference.com/w/cpp/locale/num_get/num_get.html',0,'std::num_get']]],
   ['num_5fput_54',['num_put',['http://en.cppreference.com/w/cpp/locale/num_put/num_put.html',0,'std::num_put']]],
   ['number_5fof_5fpositive_5fdivisors_55',['number_of_positive_divisors',['../d0/da2/number__of__positive__divisors_8cpp.html#ad89ccced8504b5116046cfa03066ffeb',1,'number_of_positive_divisors.cpp']]],
-  ['number_5fof_5fsubsets_56',['number_of_subsets',['../d0/dfe/backtracking_2subset__sum_8cpp.html#a7cb50d36a59427a33f64a266dac83d99',1,'backtracking::subset_sum']]],
+  ['number_5fof_5fsubsets_56',['number_of_subsets',['../d2/d5a/subset__sum_8cpp.html#a7cb50d36a59427a33f64a266dac83d99',1,'backtracking::subset_sum']]],
   ['number_5fof_5fvertices_57',['number_of_vertices',['../dc/d61/classgraph_1_1_graph.html#a8930d1470d132b19e430d1c71f94c904',1,'graph::Graph']]],
   ['numberofchildren_58',['numberOfChildren',['../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html#afca808362c13273ca8c8ae7d58e8eee0',1,'operations_on_datastructures::trie_operations::Tnode']]],
   ['numberofciphersinfactorialn_59',['numberOfCiphersInFactorialN',['../da/d50/count__of__trailing__ciphers__in__factorial__n_8cpp.html#a0d5e1d651d0d30bd682f176d8f2b83d0',1,'bit_manipulation::count_of_trailing_ciphers_in_factorial_n']]],

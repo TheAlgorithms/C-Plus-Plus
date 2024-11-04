@@ -1,9 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"dc/d14/wildcard__matching_8cpp.html#a4a5b107f93db24e424b12899fa692c5a":[11,0,0,11,2],
-"dc/d14/wildcard__matching_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,0,11,1],
-"dc/d14/wildcard__matching_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,0,11,0],
-"dc/d1a/pascal__triangle_8cpp.html":[11,0,17,16],
 "dc/d1a/pascal__triangle_8cpp.html#a4fc0e5a112f715c3a73989450b2cc5fd":[11,0,17,16,1],
 "dc/d1a/pascal__triangle_8cpp.html#ad7a31d9cb2818d21b1ba12aead7f4c5c":[11,0,17,16,2],
 "dc/d1a/pascal__triangle_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,17,16,0],
@@ -49,6 +45,11 @@ var NAVTREEINDEX12 =
 "dc/d64/md__coding_guidelines.html":[2],
 "dc/d64/md__coding_guidelines.html#autotoc_md18":[2,0],
 "dc/d64/md__coding_guidelines.html#autotoc_md20":[2,1],
+"dc/d67/subset__sum__dynamic_8cpp.html":[11,0,6,15],
+"dc/d67/subset__sum__dynamic_8cpp.html#a280fcfb2f6fe49a31c4da572e7032607":[11,0,6,15,2],
+"dc/d67/subset__sum__dynamic_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,6,15,3],
+"dc/d67/subset__sum__dynamic_8cpp.html#ac94e6c0dee11278ac0a5491f1b9a4a50":[11,0,6,15,1],
+"dc/d67/subset__sum__dynamic_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,6,15,0],
 "dc/d6d/power__of__2_8cpp.html":[11,0,1,6],
 "dc/d6d/power__of__2_8cpp.html#a5032470c9974bbd6ec254bf296530a5f":[11,0,1,6,0],
 "dc/d6d/power__of__2_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,1,6,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "dd/d47/namespacemath.html#a50936ee98f4d40f17823befc65a32aec":[9,0,69,42],
 "dd/d47/namespacemath.html#a5de184925e68658f15415dd53954df4f":[9,0,69,25],
 "dd/d47/namespacemath.html#a6c72f756a7bf1b9043c357e3fe7814ca":[9,0,69,17],
-"dd/d47/namespacemath.html#a6e2dff75c5de70455b90c799d6ad6967":[9,0,69,23],
-"dd/d47/namespacemath.html#a7e78996673df791014cfe540b183456a":[9,0,69,14]
+"dd/d47/namespacemath.html#a6e2dff75c5de70455b90c799d6ad6967":[9,0,69,23]
 };

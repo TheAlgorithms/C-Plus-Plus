@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['n_0',['N',['../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d',1,'data_structures::sparse_table']]],
+  ['n_0',['N',['../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d',1,'data_structures::sparse_table']]],
   ['n_1',['n',['../da/d37/structdata__structures_1_1sparse__table_1_1_sparse__table.html#ad71ecd43d0af1127df5f4006258f9635',1,'data_structures::sparse_table::Sparse_table::n'],['../d8/d69/classgraph_1_1_h_k_graph.html#a6f5a9fdbb83ef731d739ba6707e21c3c',1,'graph::HKGraph::n'],['../de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#aefea7ee87a708298c486d5a38ac628ef',1,'graph::is_graph_bipartite::Graph::n'],['../de/d0d/classrange__queries_1_1fenwick__tree.html#af9f543aa5976b8cc5422490b3d6250c6',1,'range_queries::fenwick_tree::n'],['http://en.cppreference.com/w/cpp/numeric/random/student_t_distribution/n.html',0,'std::student_t_distribution::n()'],['http://en.cppreference.com/w/cpp/numeric/random/chi_squared_distribution/n.html',0,'std::chi_squared_distribution::n()'],['http://en.cppreference.com/w/cpp/numeric/random/fisher_f_distribution/params.html',0,'std::fisher_f_distribution::n()']]],
   ['n_5fbonacci_2',['N_bonacci',['../db/d27/n__bonacci_8cpp.html#a6849b68f760be628d5975ab3eddec63d',1,'math::n_bonacci']]],
   ['n_5fbonacci_3',['n_bonacci',['../de/d36/namespacen__bonacci.html',1,'']]],
@@ -94,7 +94,7 @@ var searchData=
   ['num_5fput_91',['num_put',['http://en.cppreference.com/w/cpp/locale/num_put.html',0,'std::num_put'],['http://en.cppreference.com/w/cpp/locale/num_put/num_put.html',0,'std::num_put::num_put()']]],
   ['number_5fof_5fpositive_5fdivisors_92',['number_of_positive_divisors',['../d0/da2/number__of__positive__divisors_8cpp.html#ad89ccced8504b5116046cfa03066ffeb',1,'number_of_positive_divisors.cpp']]],
   ['number_5fof_5fpositive_5fdivisors_2ecpp_93',['number_of_positive_divisors.cpp',['../d0/da2/number__of__positive__divisors_8cpp.html',1,'']]],
-  ['number_5fof_5fsubsets_94',['number_of_subsets',['../d0/dfe/backtracking_2subset__sum_8cpp.html#a7cb50d36a59427a33f64a266dac83d99',1,'backtracking::subset_sum']]],
+  ['number_5fof_5fsubsets_94',['number_of_subsets',['../d2/d5a/subset__sum_8cpp.html#a7cb50d36a59427a33f64a266dac83d99',1,'backtracking::subset_sum']]],
   ['number_5fof_5fvertices_95',['number_of_vertices',['../dc/d61/classgraph_1_1_graph.html#a8930d1470d132b19e430d1c71f94c904',1,'graph::Graph']]],
   ['numberofchildren_96',['numberOfChildren',['../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html#afca808362c13273ca8c8ae7d58e8eee0',1,'operations_on_datastructures::trie_operations::Tnode']]],
   ['numberofciphersinfactorialn_97',['numberOfCiphersInFactorialN',['../da/d50/count__of__trailing__ciphers__in__factorial__n_8cpp.html#a0d5e1d651d0d30bd682f176d8f2b83d0',1,'bit_manipulation::count_of_trailing_ciphers_in_factorial_n']]],

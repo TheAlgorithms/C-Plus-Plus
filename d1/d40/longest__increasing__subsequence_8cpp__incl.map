@@ -1,11 +1,13 @@
 <map id="dynamic_programming/longest_increasing_subsequence.cpp" name="dynamic_programming/longest_increasing_subsequence.cpp">
-<area shape="rect" id="Node000001" title="Calculate the length of the longest increasing subsequence in an array." alt="" coords="91,5,243,61"/>
+<area shape="rect" id="Node000001" title="Calculate the length of the longest increasing subsequence in an array." alt="" coords="131,5,283,61"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,109,70,135"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,64,69,103,66,98,125,59"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,64,76,104,73,99,153,59"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="93,109,152,135"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,62,138,96,134,94,151,60"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="176,109,248,135"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="183,60,201,94,196,96,179,62"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="272,109,329,135"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="210,59,270,98,267,103,207,64"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="183,63,147,100,143,96,179,59"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="177,109,237,135"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="210,61,210,93,204,93,204,61"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="260,109,332,135"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="236,59,274,96,271,100,233,63"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="356,109,413,135"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="264,59,347,99,344,104,261,64"/>
 </map>

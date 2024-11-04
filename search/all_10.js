@@ -4,7 +4,7 @@ var searchData=
   ['k_5fnearest_5fneighbors_1',['k_nearest_neighbors',['../d7/d4c/namespacek__nearest__neighbors.html',1,'']]],
   ['k_5fnearest_5fneighbors_2ecpp_2',['k_nearest_neighbors.cpp',['../d4/d3e/k__nearest__neighbors_8cpp.html',1,'']]],
   ['kadane_3',['kadane',['../d6/d74/namespacekadane.html',1,'']]],
-  ['kadane2_2ecpp_4',['kadane2.cpp',['../db/dca/kadane2_8cpp.html',1,'']]],
+  ['kadane_2ecpp_4',['kadane.cpp',['../d4/da0/kadane_8cpp.html',1,'']]],
   ['kadanes3_2ecpp_5',['kadanes3.cpp',['../de/dcd/kadanes3_8cpp.html',1,'']]],
   ['karatsuba_5falgorithm_6',['karatsuba_algorithm',['../de/d41/namespacekaratsuba__algorithm.html',1,'karatsuba_algorithm'],['../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp.html#a7a890d2f26855ada3b9f1d43aec70a86',1,'divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm()']]],
   ['karatsuba_5falgorithm_5ffor_5ffast_5fmultiplication_2ecpp_7',['karatsuba_algorithm_for_fast_multiplication.cpp',['../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp.html',1,'']]],

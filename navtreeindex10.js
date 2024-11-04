@@ -1,12 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"d9/dde/classbinary__search__tree.html#a99771c2e1353e8ddfd4bb9d30b7a98fb":[10,0,21,14],
-"d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778":[10,0,21,11],
-"d9/dde/classbinary__search__tree.html#aa08f65f6f3bfcb14f8c3d1e65305ae50":[10,0,21,19],
-"d9/dde/classbinary__search__tree.html#aa4f84b2eec9b9201af1840868ddb5fb2":[10,0,21,2],
-"d9/dde/classbinary__search__tree.html#aa67321ed575ca313cd71d833d91234a6":[10,0,21,1],
-"d9/dde/classbinary__search__tree.html#ab81edd415324d372632c42dc7dbcb9e1":[10,0,21,18],
-"d9/dde/classbinary__search__tree.html#ad9912e8574538e86f9bd2c38e7e63d03":[10,0,21,7],
 "d9/dde/classbinary__search__tree.html#af4a865ce5244608819b169fc78a41153":[10,0,21,13],
 "d9/dde/classbinary__search__tree.html#af9a2c7c187a7ca3142c77ce342ef3153":[10,0,21,6],
 "d9/dde/structdouble__hashing_1_1_entry.html":[9,0,26,0],
@@ -239,6 +232,12 @@ var NAVTREEINDEX10 =
 "da/dda/namespaceradix__sort.html":[9,0,99],
 "da/de7/decimal__to__hexadecimal_8cpp.html":[11,0,17,2],
 "da/de7/decimal__to__hexadecimal_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe":[11,0,17,2,0],
+"da/de8/dijkstra__greedy_8cpp.html":[11,0,11,3],
+"da/de8/dijkstra__greedy_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[11,0,11,3,5],
+"da/de8/dijkstra__greedy_8cpp.html#a7341d7c76a6145e991cdd231f689fca8":[11,0,11,3,4],
+"da/de8/dijkstra__greedy_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,11,3,2],
+"da/de8/dijkstra__greedy_8cpp.html#af6cb29ca6dc5771439f6ea7262058a71":[11,0,11,3,3],
+"da/de8/dijkstra__greedy_8cpp.html#af915876d0ca33cc71a6a6191a8cd3ccd":[11,0,11,3,1],
 "da/df2/durand__kerner__roots_8cpp.html":[11,0,15,4],
 "da/df2/durand__kerner__roots_8cpp.html#a024b8bc4755863315456d573a6732377":[11,0,15,4,1],
 "da/df2/durand__kerner__roots_8cpp.html#a0283886819c7c140a023582b7269e2d0":[11,0,15,4,6],
@@ -249,5 +248,6 @@ var NAVTREEINDEX10 =
 "da/df2/durand__kerner__roots_8cpp.html#af270a96662132d0385cb6b4637c5a689":[11,0,15,4,0],
 "db/d01/brent__method__extrema_8cpp.html":[11,0,15,2],
 "db/d01/brent__method__extrema_8cpp.html#a002b2f4894492820fe708b1b7e7c5e70":[11,0,15,2,1],
-"db/d01/brent__method__extrema_8cpp.html#a0283886819c7c140a023582b7269e2d0":[11,0,15,2,5]
+"db/d01/brent__method__extrema_8cpp.html#a0283886819c7c140a023582b7269e2d0":[11,0,15,2,5],
+"db/d01/brent__method__extrema_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0":[11,0,15,2,4]
 };

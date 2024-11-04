@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"dd/d47/namespacemath.html#a7e78996673df791014cfe540b183456a":[9,0,69,14],
 "dd/d47/namespacemath.html#a8998ca7b1886d1d7d00aef3b457a9b1b":[9,0,69,9],
 "dd/d47/namespacemath.html#a8a48be4d7f14e34c5c92925bc1cbf3bb":[9,0,69,29],
 "dd/d47/namespacemath.html#a8d8e81a7cd59644b311ef9adb268f5f0":[9,0,69,22],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "de/dab/ncr__modulo__p_8cpp.html#a6c7bfe3bdaa086d32261a5c5584d0fa9":[11,0,14,41,3],
 "de/dab/ncr__modulo__p_8cpp.html#a9010ad5669d31449c3bf3271ab5ebc86":[11,0,14,41,2],
 "de/dab/ncr__modulo__p_8cpp.html#afa2b50f4716fc3b42221a72e676e1422":[11,0,14,41,1],
-"de/db3/namespaceatbash.html":[9,0,3],
-"de/db4/namespacedisjoint__union.html":[9,0,23]
+"de/db3/namespaceatbash.html":[9,0,3]
 };

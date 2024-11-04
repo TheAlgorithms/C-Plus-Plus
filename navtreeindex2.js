@@ -157,10 +157,6 @@ var NAVTREEINDEX2 =
 "d0/de2/gaussian__elimination_8cpp.html":[11,0,15,7],
 "d0/de2/gaussian__elimination_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,15,7,0],
 "d0/df8/namespaceabbreviation.html":[9,0,1],
-"d0/dfe/backtracking_2subset__sum_8cpp.html":[11,0,0,9],
-"d0/dfe/backtracking_2subset__sum_8cpp.html#a7cb50d36a59427a33f64a266dac83d99":[11,0,0,9,1],
-"d0/dfe/backtracking_2subset__sum_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,0,9,2],
-"d0/dfe/backtracking_2subset__sum_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,0,9,0],
 "d0/dff/structlinkedlist.html":[10,0,38],
 "d1/d11/gcd__of__n__numbers_8cpp.html":[11,0,14,22],
 "d1/d11/gcd__of__n__numbers_8cpp.html#a1161713c662a14c2d5e33504f4324532":[11,0,14,22,1],
@@ -249,5 +245,9 @@ var NAVTREEINDEX2 =
 "d1/d83/classuint256__t.html#a90ce75bec5b525de55bbf92c564a2261":[10,0,61,61],
 "d1/d83/classuint256__t.html#a91badfd31be84b12cbb6d85ebc04d13a":[10,0,61,80],
 "d1/d83/classuint256__t.html#a9879f7ec85fc148e1931fcb492ddc484":[10,0,61,60],
-"d1/d83/classuint256__t.html#a9bc6cc460108306a59281ce4ca216839":[10,0,61,23]
+"d1/d83/classuint256__t.html#a9bc6cc460108306a59281ce4ca216839":[10,0,61,23],
+"d1/d83/classuint256__t.html#a9ddd133cee83f3a2ab6ed60a7ccbc250":[10,0,61,9],
+"d1/d83/classuint256__t.html#a9e1b39a46ea16bc6587e25e294c6c363":[10,0,61,13],
+"d1/d83/classuint256__t.html#a9f6f3e39783c893473315bada864a183":[10,0,61,42],
+"d1/d83/classuint256__t.html#aa0e532832640e9fe273b35c481b18963":[10,0,61,25]
 };

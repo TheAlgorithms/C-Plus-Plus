@@ -148,6 +148,5 @@ var searchData=
   ['bucket_5fsize_145',['bucket_size',['http://en.cppreference.com/w/cpp/container/unordered_map/bucket_size.html',0,'std::unordered_map::bucket_size()'],['http://en.cppreference.com/w/cpp/container/unordered_multimap/bucket_size.html',0,'std::unordered_multimap::bucket_size()'],['http://en.cppreference.com/w/cpp/container/unordered_multiset/bucket_size.html',0,'std::unordered_multiset::bucket_size()'],['http://en.cppreference.com/w/cpp/container/unordered_set/bucket_size.html',0,'std::unordered_set::bucket_size()']]],
   ['build_146',['build',['../d1/d9e/prefix__sum__array_8cpp.html#ab36151479ad37d53ef9fcb60a274b1d9',1,'range_queries::prefix_sum_array']]],
   ['building_20locally_147',['Building Locally',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md37',1,'']]],
-  ['buildtable_148',['buildTable',['../d4/d96/range__queries_2sparse__table_8cpp.html#a803a2451e87021d14ae06f148383e6bc',1,'range_queries::sparse_table']]],
-  ['buzz_5fnumber_2ecpp_149',['buzz_number.cpp',['../d1/d76/buzz__number_8cpp.html',1,'']]]
+  ['buzz_5fnumber_2ecpp_148',['buzz_number.cpp',['../d1/d76/buzz__number_8cpp.html',1,'']]]
 ];

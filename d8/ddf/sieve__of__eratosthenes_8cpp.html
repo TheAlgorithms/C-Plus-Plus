@@ -212,7 +212,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <div class="fragment"><div class="line"><span class="lineno">   65</span>                                                        {</div>
-<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">for</span> (uint32_t i = 2; i &lt;= <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
+<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">for</span> (uint32_t i = 2; i &lt;= <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
 <div class="line"><span class="lineno">   67</span>        <span class="keywordflow">if</span> (is_prime[i]) {</div>
 <div class="line"><span class="lineno">   68</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; i &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line"><span class="lineno">   69</span>        }</div>
@@ -220,8 +220,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   71</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><span class="lineno">   72</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="adata__structures_2sparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:48</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
+<div class="ttc" id="asparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:48</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -258,9 +258,9 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   46</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> <a class="code hl_function" href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">is_prime</a>(N + 1, <span class="keyword">true</span>);  <span class="comment">// Initialize all as prime numbers</span></div>
 <div class="line"><span class="lineno">   47</span>    <a class="code hl_function" href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">is_prime</a>[0] = <a class="code hl_function" href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">is_prime</a>[1] = <span class="keyword">false</span>;        <span class="comment">// 0 and 1 are not prime numbers</span></div>
 <div class="line"><span class="lineno">   48</span> </div>
-<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">for</span> (uint32_t i = 2; i * i &lt;= <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
+<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">for</span> (uint32_t i = 2; i * i &lt;= <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
 <div class="line"><span class="lineno">   50</span>        <span class="keywordflow">if</span> (is_prime[i]) {</div>
-<div class="line"><span class="lineno">   51</span>            <span class="keywordflow">for</span> (uint32_t j = i * i; j &lt;= <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; j += i) {</div>
+<div class="line"><span class="lineno">   51</span>            <span class="keywordflow">for</span> (uint32_t j = i * i; j &lt;= <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; j += i) {</div>
 <div class="line"><span class="lineno">   52</span>                <a class="code hl_function" href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">is_prime</a>[j] = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   53</span>            }</div>
 <div class="line"><span class="lineno">   54</span>        }</div>

@@ -113,10 +113,10 @@ $(function(){initNavTree('d9/dec/unbounded__0__1__knapsack_8cpp.html','../../');
 
 <p>Implementation of the Unbounded 0/1 <a class="el" href="../../d7/daf/namespace_knapsack.html" title="Implementation of 0-1 Knapsack problem.">Knapsack</a> Problem.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;cassert&gt;</code><br />
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for unbounded_0_1_knapsack.cpp:</div>
 <div class="dyncontent">
@@ -216,26 +216,31 @@ Algorithm</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The maximum value that can be obtained for the given index and capacity. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   60</span>                                                   {</div>
-<div class="line"><span class="lineno">   61</span>    <span class="keywordflow">if</span> (i == 0) {</div>
-<div class="line"><span class="lineno">   62</span>        <span class="keywordflow">if</span> (wt[0] &lt;= W) {</div>
-<div class="line"><span class="lineno">   63</span>            <span class="keywordflow">return</span> (W / wt[0]) * val[0]; <span class="comment">// Take as many of the first item as possible</span></div>
-<div class="line"><span class="lineno">   64</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   65</span>            <span class="keywordflow">return</span> 0; <span class="comment">// Can&#39;t take the first item</span></div>
-<div class="line"><span class="lineno">   66</span>        }</div>
-<div class="line"><span class="lineno">   67</span>    }</div>
-<div class="line"><span class="lineno">   68</span>    <span class="keywordflow">if</span> (<a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[i][W] != -1) <span class="keywordflow">return</span> <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[i][W]; <span class="comment">// Return result if available</span></div>
-<div class="line"><span class="lineno">   69</span> </div>
-<div class="line"><span class="lineno">   70</span>    <span class="keywordtype">int</span> nottake = <a class="code hl_function" href="#afe447a5979582174908695952c8a079c">KnapSackFilling</a>(i - 1, W, val, wt, <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>); <span class="comment">// Value without taking item i</span></div>
-<div class="line"><span class="lineno">   71</span>    <span class="keywordtype">int</span> take = 0;</div>
-<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">if</span> (W &gt;= wt[i]) {</div>
-<div class="line"><span class="lineno">   73</span>        take = val[i] + <a class="code hl_function" href="#afe447a5979582174908695952c8a079c">KnapSackFilling</a>(i, W - wt[i], val, wt, <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>); <span class="comment">// Value taking item i</span></div>
-<div class="line"><span class="lineno">   74</span>    }</div>
-<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">return</span> <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[i][W] = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(take, nottake); <span class="comment">// Store and return the maximum value</span></div>
-<div class="line"><span class="lineno">   76</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   61</span>                                                             {</div>
+<div class="line"><span class="lineno">   62</span>    <span class="keywordflow">if</span> (i == 0) {</div>
+<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">if</span> (wt[0] &lt;= W) {</div>
+<div class="line"><span class="lineno">   64</span>            <span class="keywordflow">return</span> (W / wt[0]) *</div>
+<div class="line"><span class="lineno">   65</span>                   val[0];  <span class="comment">// Take as many of the first item as possible</span></div>
+<div class="line"><span class="lineno">   66</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   67</span>            <span class="keywordflow">return</span> 0;  <span class="comment">// Can&#39;t take the first item</span></div>
+<div class="line"><span class="lineno">   68</span>        }</div>
+<div class="line"><span class="lineno">   69</span>    }</div>
+<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">if</span> (<a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[i][W] != -1)</div>
+<div class="line"><span class="lineno">   71</span>        <span class="keywordflow">return</span> <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[i][W];  <span class="comment">// Return result if available</span></div>
+<div class="line"><span class="lineno">   72</span> </div>
+<div class="line"><span class="lineno">   73</span>    <span class="keywordtype">int</span> nottake =</div>
+<div class="line"><span class="lineno">   74</span>        <a class="code hl_function" href="#afe447a5979582174908695952c8a079c">KnapSackFilling</a>(i - 1, W, val, wt, <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>);  <span class="comment">// Value without taking item i</span></div>
+<div class="line"><span class="lineno">   75</span>    <span class="keywordtype">int</span> take = 0;</div>
+<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">if</span> (W &gt;= wt[i]) {</div>
+<div class="line"><span class="lineno">   77</span>        take = val[i] + <a class="code hl_function" href="#afe447a5979582174908695952c8a079c">KnapSackFilling</a>(i, W - wt[i], val, wt,</div>
+<div class="line"><span class="lineno">   78</span>                                        <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>);  <span class="comment">// Value taking item i</span></div>
+<div class="line"><span class="lineno">   79</span>    }</div>
+<div class="line"><span class="lineno">   80</span>    <span class="keywordflow">return</span> <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[i][W] =</div>
+<div class="line"><span class="lineno">   81</span>               <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(take, nottake);  <span class="comment">// Store and return the maximum value</span></div>
+<div class="line"><span class="lineno">   82</span>}</div>
 <div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
 <div class="ttc" id="anamespacedp_html"><div class="ttname"><a href="../../df/d88/namespacedp.html">dp</a></div><div class="ttdoc">for std::vector</div><div class="ttdef"><b>Definition</b> partition_problem.cpp:39</div></div>
-<div class="ttc" id="aunbounded__0__1__knapsack_8cpp_html_afe447a5979582174908695952c8a079c"><div class="ttname"><a href="#afe447a5979582174908695952c8a079c">dynamic_programming::unbounded_knapsack::KnapSackFilling</a></div><div class="ttdeci">std::uint16_t KnapSackFilling(std::uint16_t i, std::uint16_t W, const std::vector&lt; std::uint16_t &gt; &amp;val, const std::vector&lt; std::uint16_t &gt; &amp;wt, std::vector&lt; std::vector&lt; int &gt; &gt; &amp;dp)</div><div class="ttdoc">Recursive function to calculate the maximum value obtainable using an unbounded knapsack approach.</div><div class="ttdef"><b>Definition</b> unbounded_0_1_knapsack.cpp:57</div></div>
+<div class="ttc" id="aunbounded__0__1__knapsack_8cpp_html_afe447a5979582174908695952c8a079c"><div class="ttname"><a href="#afe447a5979582174908695952c8a079c">dynamic_programming::unbounded_knapsack::KnapSackFilling</a></div><div class="ttdeci">std::uint16_t KnapSackFilling(std::uint16_t i, std::uint16_t W, const std::vector&lt; std::uint16_t &gt; &amp;val, const std::vector&lt; std::uint16_t &gt; &amp;wt, std::vector&lt; std::vector&lt; int &gt; &gt; &amp;dp)</div><div class="ttdoc">Recursive function to calculate the maximum value obtainable using an unbounded knapsack approach.</div><div class="ttdef"><b>Definition</b> unbounded_0_1_knapsack.cpp:58</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -261,11 +266,11 @@ Here is the call graph for this function:</div>
 
 <p>main function </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on successful exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  147</span>           {</div>
-<div class="line"><span class="lineno">  148</span>    <a class="code hl_function" href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a>(); <span class="comment">// Run self test implementation </span></div>
-<div class="line"><span class="lineno">  149</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  150</span>}</div>
-<div class="ttc" id="aunbounded__0__1__knapsack_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">self test implementation</div><div class="ttdef"><b>Definition</b> unbounded_0_1_knapsack.cpp:103</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  170</span>           {</div>
+<div class="line"><span class="lineno">  171</span>    <a class="code hl_function" href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a>();  <span class="comment">// Run self test implementation</span></div>
+<div class="line"><span class="lineno">  172</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  173</span>}</div>
+<div class="ttc" id="aunbounded__0__1__knapsack_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">self test implementation</div><div class="ttdef"><b>Definition</b> unbounded_0_1_knapsack.cpp:111</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -299,49 +304,64 @@ Here is the call graph for this function:</div>
 
 <p>self test implementation </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  103</span>                    {</div>
-<div class="line"><span class="lineno">  104</span>    <span class="comment">// Test Case 1</span></div>
-<div class="line"><span class="lineno">  105</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint16_t</a> N1 = 4;  <span class="comment">// Number of items</span></div>
-<div class="line"><span class="lineno">  106</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint16_t&gt;</a> wt1 = {1, 3, 4, 5}; <span class="comment">// Weights of the items</span></div>
-<div class="line"><span class="lineno">  107</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint16_t&gt;</a> val1 = {6, 1, 7, 7}; <span class="comment">// Values of the items</span></div>
-<div class="line"><span class="lineno">  108</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint16_t</a> W1 = 8; <span class="comment">// Maximum capacity of the knapsack</span></div>
-<div class="line"><span class="lineno">  109</span>    <span class="comment">// Test the function and assert the expected output</span></div>
-<div class="line"><span class="lineno">  110</span>    assert(<a class="code hl_function" href="#a1bcff7f76de48fa7f629480f8f18b5ef">unboundedKnapsack</a>(N1, W1, val1, wt1) == 48);</div>
-<div class="line"><span class="lineno">  111</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Maximum Knapsack value &quot;</span> &lt;&lt; <a class="code hl_function" href="#a1bcff7f76de48fa7f629480f8f18b5ef">unboundedKnapsack</a>(N1, W1, val1, wt1) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  112</span> </div>
-<div class="line"><span class="lineno">  113</span>    <span class="comment">// Test Case 2</span></div>
-<div class="line"><span class="lineno">  114</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint16_t</a> N2 = 3; <span class="comment">// Number of items</span></div>
-<div class="line"><span class="lineno">  115</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint16_t&gt;</a> wt2 = {10, 20, 30}; <span class="comment">// Weights of the items</span></div>
-<div class="line"><span class="lineno">  116</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint16_t&gt;</a> val2 = {60, 100, 120}; <span class="comment">// Values of the items</span></div>
-<div class="line"><span class="lineno">  117</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint16_t</a> W2 = 5; <span class="comment">// Maximum capacity of the knapsack</span></div>
-<div class="line"><span class="lineno">  118</span>    <span class="comment">// Test the function and assert the expected output</span></div>
-<div class="line"><span class="lineno">  119</span>    assert(<a class="code hl_function" href="#a1bcff7f76de48fa7f629480f8f18b5ef">unboundedKnapsack</a>(N2, W2, val2, wt2) == 0);</div>
-<div class="line"><span class="lineno">  120</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Maximum Knapsack value &quot;</span> &lt;&lt; <a class="code hl_function" href="#a1bcff7f76de48fa7f629480f8f18b5ef">unboundedKnapsack</a>(N2, W2, val2, wt2) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  121</span> </div>
-<div class="line"><span class="lineno">  122</span>    <span class="comment">// Test Case 3</span></div>
-<div class="line"><span class="lineno">  123</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint16_t</a> N3 = 3; <span class="comment">// Number of items</span></div>
-<div class="line"><span class="lineno">  124</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint16_t&gt;</a> wt3 = {2, 4, 6}; <span class="comment">// Weights of the items</span></div>
-<div class="line"><span class="lineno">  125</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint16_t&gt;</a> val3 = {5, 11, 13};<span class="comment">// Values of the items </span></div>
-<div class="line"><span class="lineno">  126</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint16_t</a> W3 = 27;<span class="comment">// Maximum capacity of the knapsack </span></div>
-<div class="line"><span class="lineno">  127</span>    <span class="comment">// Test the function and assert the expected output</span></div>
-<div class="line"><span class="lineno">  128</span>    assert(<a class="code hl_function" href="#a1bcff7f76de48fa7f629480f8f18b5ef">unboundedKnapsack</a>(N3, W3, val3, wt3) == 27);</div>
-<div class="line"><span class="lineno">  129</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Maximum Knapsack value &quot;</span> &lt;&lt; <a class="code hl_function" href="#a1bcff7f76de48fa7f629480f8f18b5ef">unboundedKnapsack</a>(N3, W3, val3, wt3) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  130</span> </div>
-<div class="line"><span class="lineno">  131</span>    <span class="comment">// Test Case 4</span></div>
-<div class="line"><span class="lineno">  132</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint16_t</a> N4 = 0; <span class="comment">// Number of items</span></div>
-<div class="line"><span class="lineno">  133</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint16_t&gt;</a> wt4 = {}; <span class="comment">// Weights of the items</span></div>
-<div class="line"><span class="lineno">  134</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint16_t&gt;</a> val4 = {}; <span class="comment">// Values of the items </span></div>
-<div class="line"><span class="lineno">  135</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint16_t</a> W4 = 10; <span class="comment">// Maximum capacity of the knapsack</span></div>
-<div class="line"><span class="lineno">  136</span>    assert(<a class="code hl_function" href="#a1bcff7f76de48fa7f629480f8f18b5ef">unboundedKnapsack</a>(N4, W4, val4, wt4) == 0); </div>
-<div class="line"><span class="lineno">  137</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Maximum Knapsack value for empty arrays: &quot;</span> &lt;&lt; <a class="code hl_function" href="#a1bcff7f76de48fa7f629480f8f18b5ef">unboundedKnapsack</a>(N4, W4, val4, wt4) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  138</span>  </div>
-<div class="line"><span class="lineno">  139</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All test cases passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  140</span> </div>
-<div class="line"><span class="lineno">  141</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  111</span>                    {</div>
+<div class="line"><span class="lineno">  112</span>    <span class="comment">// Test Case 1</span></div>
+<div class="line"><span class="lineno">  113</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint16_t</a> N1 = 4;                            <span class="comment">// Number of items</span></div>
+<div class="line"><span class="lineno">  114</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint16_t&gt;</a> wt1 = {1, 3, 4, 5};   <span class="comment">// Weights of the items</span></div>
+<div class="line"><span class="lineno">  115</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint16_t&gt;</a> val1 = {6, 1, 7, 7};  <span class="comment">// Values of the items</span></div>
+<div class="line"><span class="lineno">  116</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint16_t</a> W1 = 8;  <span class="comment">// Maximum capacity of the knapsack</span></div>
+<div class="line"><span class="lineno">  117</span>    <span class="comment">// Test the function and assert the expected output</span></div>
+<div class="line"><span class="lineno">  118</span>    assert(dynamic_programming::unbounded_knapsack::unboundedKnapsack(</div>
+<div class="line"><span class="lineno">  119</span>               N1, W1, val1, wt1) == 48);</div>
+<div class="line"><span class="lineno">  120</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Maximum Knapsack value &quot;</span></div>
+<div class="line"><span class="lineno">  121</span>              &lt;&lt; <a class="code hl_function" href="#a1bcff7f76de48fa7f629480f8f18b5ef">dynamic_programming::unbounded_knapsack::unboundedKnapsack</a>(</div>
+<div class="line"><span class="lineno">  122</span>                     N1, W1, val1, wt1)</div>
+<div class="line"><span class="lineno">  123</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  124</span> </div>
+<div class="line"><span class="lineno">  125</span>    <span class="comment">// Test Case 2</span></div>
+<div class="line"><span class="lineno">  126</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint16_t</a> N2 = 3;                              <span class="comment">// Number of items</span></div>
+<div class="line"><span class="lineno">  127</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint16_t&gt;</a> wt2 = {10, 20, 30};     <span class="comment">// Weights of the items</span></div>
+<div class="line"><span class="lineno">  128</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint16_t&gt;</a> val2 = {60, 100, 120};  <span class="comment">// Values of the items</span></div>
+<div class="line"><span class="lineno">  129</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint16_t</a> W2 = 5;  <span class="comment">// Maximum capacity of the knapsack</span></div>
+<div class="line"><span class="lineno">  130</span>    <span class="comment">// Test the function and assert the expected output</span></div>
+<div class="line"><span class="lineno">  131</span>    assert(dynamic_programming::unbounded_knapsack::unboundedKnapsack(</div>
+<div class="line"><span class="lineno">  132</span>               N2, W2, val2, wt2) == 0);</div>
+<div class="line"><span class="lineno">  133</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Maximum Knapsack value &quot;</span></div>
+<div class="line"><span class="lineno">  134</span>              &lt;&lt; <a class="code hl_function" href="#a1bcff7f76de48fa7f629480f8f18b5ef">dynamic_programming::unbounded_knapsack::unboundedKnapsack</a>(</div>
+<div class="line"><span class="lineno">  135</span>                     N2, W2, val2, wt2)</div>
+<div class="line"><span class="lineno">  136</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  137</span> </div>
+<div class="line"><span class="lineno">  138</span>    <span class="comment">// Test Case 3</span></div>
+<div class="line"><span class="lineno">  139</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint16_t</a> N3 = 3;                           <span class="comment">// Number of items</span></div>
+<div class="line"><span class="lineno">  140</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint16_t&gt;</a> wt3 = {2, 4, 6};     <span class="comment">// Weights of the items</span></div>
+<div class="line"><span class="lineno">  141</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint16_t&gt;</a> val3 = {5, 11, 13};  <span class="comment">// Values of the items</span></div>
+<div class="line"><span class="lineno">  142</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint16_t</a> W3 = 27;  <span class="comment">// Maximum capacity of the knapsack</span></div>
+<div class="line"><span class="lineno">  143</span>    <span class="comment">// Test the function and assert the expected output</span></div>
+<div class="line"><span class="lineno">  144</span>    assert(dynamic_programming::unbounded_knapsack::unboundedKnapsack(</div>
+<div class="line"><span class="lineno">  145</span>               N3, W3, val3, wt3) == 27);</div>
+<div class="line"><span class="lineno">  146</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Maximum Knapsack value &quot;</span></div>
+<div class="line"><span class="lineno">  147</span>              &lt;&lt; <a class="code hl_function" href="#a1bcff7f76de48fa7f629480f8f18b5ef">dynamic_programming::unbounded_knapsack::unboundedKnapsack</a>(</div>
+<div class="line"><span class="lineno">  148</span>                     N3, W3, val3, wt3)</div>
+<div class="line"><span class="lineno">  149</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  150</span> </div>
+<div class="line"><span class="lineno">  151</span>    <span class="comment">// Test Case 4</span></div>
+<div class="line"><span class="lineno">  152</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint16_t</a> N4 = 0;                  <span class="comment">// Number of items</span></div>
+<div class="line"><span class="lineno">  153</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint16_t&gt;</a> wt4 = {};   <span class="comment">// Weights of the items</span></div>
+<div class="line"><span class="lineno">  154</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint16_t&gt;</a> val4 = {};  <span class="comment">// Values of the items</span></div>
+<div class="line"><span class="lineno">  155</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint16_t</a> W4 = 10;                 <span class="comment">// Maximum capacity of the knapsack</span></div>
+<div class="line"><span class="lineno">  156</span>    assert(dynamic_programming::unbounded_knapsack::unboundedKnapsack(</div>
+<div class="line"><span class="lineno">  157</span>               N4, W4, val4, wt4) == 0);</div>
+<div class="line"><span class="lineno">  158</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Maximum Knapsack value for empty arrays: &quot;</span></div>
+<div class="line"><span class="lineno">  159</span>              &lt;&lt; <a class="code hl_function" href="#a1bcff7f76de48fa7f629480f8f18b5ef">dynamic_programming::unbounded_knapsack::unboundedKnapsack</a>(</div>
+<div class="line"><span class="lineno">  160</span>                     N4, W4, val4, wt4)</div>
+<div class="line"><span class="lineno">  161</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  162</span> </div>
+<div class="line"><span class="lineno">  163</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All test cases passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  164</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="ainteger_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint16_t</a></div></div>
-<div class="ttc" id="aunbounded__0__1__knapsack_8cpp_html_a1bcff7f76de48fa7f629480f8f18b5ef"><div class="ttname"><a href="#a1bcff7f76de48fa7f629480f8f18b5ef">dynamic_programming::unbounded_knapsack::unboundedKnapsack</a></div><div class="ttdeci">std::uint16_t unboundedKnapsack(std::uint16_t N, std::uint16_t W, const std::vector&lt; std::uint16_t &gt; &amp;val, const std::vector&lt; std::uint16_t &gt; &amp;wt)</div><div class="ttdoc">Wrapper function to initiate the unbounded knapsack calculation.</div><div class="ttdef"><b>Definition</b> unbounded_0_1_knapsack.cpp:87</div></div>
+<div class="ttc" id="aunbounded__0__1__knapsack_8cpp_html_a1bcff7f76de48fa7f629480f8f18b5ef"><div class="ttname"><a href="#a1bcff7f76de48fa7f629480f8f18b5ef">dynamic_programming::unbounded_knapsack::unboundedKnapsack</a></div><div class="ttdeci">std::uint16_t unboundedKnapsack(std::uint16_t N, std::uint16_t W, const std::vector&lt; std::uint16_t &gt; &amp;val, const std::vector&lt; std::uint16_t &gt; &amp;wt)</div><div class="ttdoc">Wrapper function to initiate the unbounded knapsack calculation.</div><div class="ttdef"><b>Definition</b> unbounded_0_1_knapsack.cpp:93</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -391,11 +411,13 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The maximum value that can be obtained for the given capacity. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   89</span>                                                        {</div>
-<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">if</span>(N==0)<span class="keywordflow">return</span> 0; <span class="comment">// Expect 0 since no items</span></div>
-<div class="line"><span class="lineno">   91</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;int&gt;</a>&gt; <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>(N, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a>(W + 1, -1)); <span class="comment">// Initialize memoization table</span></div>
-<div class="line"><span class="lineno">   92</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="#afe447a5979582174908695952c8a079c">KnapSackFilling</a>(N - 1, W, val, wt, <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>); <span class="comment">// Start the calculation</span></div>
-<div class="line"><span class="lineno">   93</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   95</span>                                                                  {</div>
+<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">if</span> (N == 0)</div>
+<div class="line"><span class="lineno">   97</span>        <span class="keywordflow">return</span> 0;  <span class="comment">// Expect 0 since no items</span></div>
+<div class="line"><span class="lineno">   98</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;int&gt;</a>&gt; <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>(</div>
+<div class="line"><span class="lineno">   99</span>        N, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a>(W + 1, -1));  <span class="comment">// Initialize memoization table</span></div>
+<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="#afe447a5979582174908695952c8a079c">KnapSackFilling</a>(N - 1, W, val, wt, <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>);  <span class="comment">// Start the calculation</span></div>
+<div class="line"><span class="lineno">  101</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

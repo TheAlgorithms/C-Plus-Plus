@@ -1,7 +1,7 @@
 var searchData=
 [
   ['k_5fnearest_5fneighbors_2ecpp_0',['k_nearest_neighbors.cpp',['../d4/d3e/k__nearest__neighbors_8cpp.html',1,'']]],
-  ['kadane2_2ecpp_1',['kadane2.cpp',['../db/dca/kadane2_8cpp.html',1,'']]],
+  ['kadane_2ecpp_1',['kadane.cpp',['../d4/da0/kadane_8cpp.html',1,'']]],
   ['kadanes3_2ecpp_2',['kadanes3.cpp',['../de/dcd/kadanes3_8cpp.html',1,'']]],
   ['karatsuba_5falgorithm_5ffor_5ffast_5fmultiplication_2ecpp_3',['karatsuba_algorithm_for_fast_multiplication.cpp',['../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp.html',1,'']]],
   ['kelvin_5fto_5fcelsius_2ecpp_4',['kelvin_to_celsius.cpp',['../db/d6b/kelvin__to__celsius_8cpp.html',1,'']]],

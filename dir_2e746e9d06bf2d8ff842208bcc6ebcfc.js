@@ -19,7 +19,7 @@ var dir_2e746e9d06bf2d8ff842208bcc6ebcfc =
     [ "reverse_a_linked_list.cpp", "d6/d05/reverse__a__linked__list_8cpp.html", "d6/d05/reverse__a__linked__list_8cpp" ],
     [ "segment_tree.cpp", "de/dd1/segment__tree_8cpp.html", "de/dd1/segment__tree_8cpp" ],
     [ "skip_list.cpp", "d0/d5a/skip__list_8cpp.html", "d0/d5a/skip__list_8cpp" ],
-    [ "sparse_table.cpp", "d6/d42/data__structures_2sparse__table_8cpp.html", "d6/d42/data__structures_2sparse__table_8cpp" ],
+    [ "sparse_table.cpp", "d8/dab/sparse__table_8cpp.html", "d8/dab/sparse__table_8cpp" ],
     [ "stack.hpp", "df/d47/stack_8hpp.html", "df/d47/stack_8hpp" ],
     [ "treap.cpp", "d0/dd2/treap_8cpp.html", "d0/dd2/treap_8cpp" ],
     [ "tree_234.cpp", "db/dbc/tree__234_8cpp.html", "db/dbc/tree__234_8cpp" ],

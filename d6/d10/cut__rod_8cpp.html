@@ -116,11 +116,12 @@ $(function(){initNavTree('d6/d10/cut__rod_8cpp.html','../../'); initResizable(tr
 <div class="textblock"><code>#include &lt;array&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;climits&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for cut_rod.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/da4/cut__rod_8cpp__incl.svg" width="328" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/da4/cut__rod_8cpp__incl.svg" width="412" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -172,12 +173,12 @@ Algorithm</h3>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  110</span>           {</div>
-<div class="line"><span class="lineno">  111</span>    <span class="comment">// Testing</span></div>
-<div class="line"><span class="lineno">  112</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();</div>
-<div class="line"><span class="lineno">  113</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  114</span>}</div>
-<div class="ttc" id="acut__rod_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Function to test above algorithm.</div><div class="ttdef"><b>Definition</b> cut_rod.cpp:71</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  111</span>           {</div>
+<div class="line"><span class="lineno">  112</span>    <span class="comment">// Testing</span></div>
+<div class="line"><span class="lineno">  113</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();</div>
+<div class="line"><span class="lineno">  114</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  115</span>}</div>
+<div class="ttc" id="acut__rod_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Function to test above algorithm.</div><div class="ttdef"><b>Definition</b> cut_rod.cpp:72</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -228,26 +229,26 @@ template&lt;size_t T&gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   44</span>                                                                            {</div>
-<div class="line"><span class="lineno">   45</span>    <span class="keywordtype">int</span> *profit =</div>
-<div class="line"><span class="lineno">   46</span>        <span class="keyword">new</span> <span class="keywordtype">int</span>[n + 1];  <span class="comment">// profit[i] will hold maximum profit for i inch rod</span></div>
-<div class="line"><span class="lineno">   47</span> </div>
-<div class="line"><span class="lineno">   48</span>    profit[0] = 0;  <span class="comment">// if length of rod is zero, then no profit</span></div>
-<div class="line"><span class="lineno">   49</span> </div>
-<div class="line"><span class="lineno">   50</span>    <span class="comment">// outer loop will select size of rod, starting from 1 inch to n inch rod.</span></div>
-<div class="line"><span class="lineno">   51</span>    <span class="comment">// inner loop will evaluate the maximum profit we can get for i inch rod by</span></div>
-<div class="line"><span class="lineno">   52</span>    <span class="comment">// making every possible cut on it and will store it in profit[i].</span></div>
-<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt;= n; i++) {</div>
-<div class="line"><span class="lineno">   54</span>        <span class="keywordtype">int</span> q = INT_MIN;</div>
-<div class="line"><span class="lineno">   55</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 1; j &lt;= i; j++) {</div>
-<div class="line"><span class="lineno">   56</span>            q = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(q, price[j - 1] + profit[i - j]);</div>
-<div class="line"><span class="lineno">   57</span>        }</div>
-<div class="line"><span class="lineno">   58</span>        profit[i] = q;</div>
-<div class="line"><span class="lineno">   59</span>    }</div>
-<div class="line"><span class="lineno">   60</span>    <span class="keyword">const</span> int16_t ans = profit[n];</div>
-<div class="line"><span class="lineno">   61</span>    <span class="keyword">delete</span>[] profit;</div>
-<div class="line"><span class="lineno">   62</span>    <span class="keywordflow">return</span> ans;  <span class="comment">// returning maximum profit</span></div>
-<div class="line"><span class="lineno">   63</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>                                                                            {</div>
+<div class="line"><span class="lineno">   46</span>    <span class="keywordtype">int</span> *profit =</div>
+<div class="line"><span class="lineno">   47</span>        <span class="keyword">new</span> <span class="keywordtype">int</span>[n + 1];  <span class="comment">// profit[i] will hold maximum profit for i inch rod</span></div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>    profit[0] = 0;  <span class="comment">// if length of rod is zero, then no profit</span></div>
+<div class="line"><span class="lineno">   50</span> </div>
+<div class="line"><span class="lineno">   51</span>    <span class="comment">// outer loop will select size of rod, starting from 1 inch to n inch rod.</span></div>
+<div class="line"><span class="lineno">   52</span>    <span class="comment">// inner loop will evaluate the maximum profit we can get for i inch rod by</span></div>
+<div class="line"><span class="lineno">   53</span>    <span class="comment">// making every possible cut on it and will store it in profit[i].</span></div>
+<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt;= n; i++) {</div>
+<div class="line"><span class="lineno">   55</span>        <span class="keywordtype">int</span> q = INT_MIN;</div>
+<div class="line"><span class="lineno">   56</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 1; j &lt;= i; j++) {</div>
+<div class="line"><span class="lineno">   57</span>            q = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(q, price[j - 1] + profit[i - j]);</div>
+<div class="line"><span class="lineno">   58</span>        }</div>
+<div class="line"><span class="lineno">   59</span>        profit[i] = q;</div>
+<div class="line"><span class="lineno">   60</span>    }</div>
+<div class="line"><span class="lineno">   61</span>    <span class="keyword">const</span> int16_t ans = profit[n];</div>
+<div class="line"><span class="lineno">   62</span>    <span class="keyword">delete</span>[] profit;</div>
+<div class="line"><span class="lineno">   63</span>    <span class="keywordflow">return</span> ans;  <span class="comment">// returning maximum profit</span></div>
+<div class="line"><span class="lineno">   64</span>}</div>
 <div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -282,43 +283,43 @@ Here is the call graph for this function:</div>
 
 <p>Function to test above algorithm. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   71</span>                   {</div>
-<div class="line"><span class="lineno">   72</span>    <span class="comment">// Test 1</span></div>
-<div class="line"><span class="lineno">   73</span>    <span class="keyword">const</span> int16_t n1 = 8;                                        <span class="comment">// size of rod</span></div>
-<div class="line"><span class="lineno">   74</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int32_t, n1&gt;</a> price1 = {1,2,4,6,8,45,21,9};  <span class="comment">// price array</span></div>
-<div class="line"><span class="lineno">   75</span>    <span class="keyword">const</span> int64_t max_profit1 =</div>
-<div class="line"><span class="lineno">   76</span>        <a class="code hl_function" href="#a1cc523a30c18c63eac58220c3c494cfa">dynamic_programming::cut_rod::maxProfitByCuttingRod</a>(price1, n1);</div>
-<div class="line"><span class="lineno">   77</span>    <span class="keyword">const</span> int64_t expected_max_profit1 = 47;</div>
-<div class="line"><span class="lineno">   78</span>    assert(max_profit1 == expected_max_profit1);</div>
-<div class="line"><span class="lineno">   79</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Maximum profit with &quot;</span> &lt;&lt; n1 &lt;&lt; <span class="stringliteral">&quot; inch road is &quot;</span> &lt;&lt; max_profit1</div>
-<div class="line"><span class="lineno">   80</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   81</span> </div>
-<div class="line"><span class="lineno">   82</span>    <span class="comment">// Test 2</span></div>
-<div class="line"><span class="lineno">   83</span>    <span class="keyword">const</span> int16_t n2 = 30;  <span class="comment">// size of rod</span></div>
-<div class="line"><span class="lineno">   84</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int32_t, n2&gt;</a> price2 = {</div>
-<div class="line"><span class="lineno">   85</span>        1,  5,  8,  9,  10, 17, 17, 20, 24, 30,  <span class="comment">// price array</span></div>
-<div class="line"><span class="lineno">   86</span>        31, 32, 33, 34, 35, 36, 37, 38, 39, 40,</div>
-<div class="line"><span class="lineno">   87</span>        41, 42, 43, 44, 45, 46, 47, 48, 49, 50};</div>
-<div class="line"><span class="lineno">   88</span> </div>
-<div class="line"><span class="lineno">   89</span>    <span class="keyword">const</span> int64_t max_profit2=</div>
-<div class="line"><span class="lineno">   90</span>        <a class="code hl_function" href="#a1cc523a30c18c63eac58220c3c494cfa">dynamic_programming::cut_rod::maxProfitByCuttingRod</a>(price2, n2);</div>
-<div class="line"><span class="lineno">   91</span>    <span class="keyword">const</span> int32_t expected_max_profit2 = 90;</div>
-<div class="line"><span class="lineno">   92</span>    assert(max_profit2 == expected_max_profit2);</div>
-<div class="line"><span class="lineno">   93</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Maximum profit with &quot;</span> &lt;&lt; n2 &lt;&lt; <span class="stringliteral">&quot; inch road is &quot;</span> &lt;&lt; max_profit2</div>
-<div class="line"><span class="lineno">   94</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   95</span>     <span class="comment">// Test 3</span></div>
-<div class="line"><span class="lineno">   96</span>    <span class="keyword">const</span> int16_t n3 = 5;                                        <span class="comment">// size of rod</span></div>
-<div class="line"><span class="lineno">   97</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int32_t, n3&gt;</a> price3 = {2,9,17,23,45};  <span class="comment">// price array</span></div>
-<div class="line"><span class="lineno">   98</span>    <span class="keyword">const</span> int64_t max_profit3 =</div>
-<div class="line"><span class="lineno">   99</span>        <a class="code hl_function" href="#a1cc523a30c18c63eac58220c3c494cfa">dynamic_programming::cut_rod::maxProfitByCuttingRod</a>(price3, n3);</div>
-<div class="line"><span class="lineno">  100</span>    <span class="keyword">const</span> int64_t expected_max_profit3 = 45;</div>
-<div class="line"><span class="lineno">  101</span>    assert(max_profit3 == expected_max_profit3);</div>
-<div class="line"><span class="lineno">  102</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Maximum profit with &quot;</span> &lt;&lt; n3 &lt;&lt; <span class="stringliteral">&quot; inch road is &quot;</span> &lt;&lt; max_profit3</div>
-<div class="line"><span class="lineno">  103</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  104</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   72</span>                   {</div>
+<div class="line"><span class="lineno">   73</span>    <span class="comment">// Test 1</span></div>
+<div class="line"><span class="lineno">   74</span>    <span class="keyword">const</span> int16_t n1 = 8;                                         <span class="comment">// size of rod</span></div>
+<div class="line"><span class="lineno">   75</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int32_t, n1&gt;</a> price1 = {1, 2, 4, 6, 8, 45, 21, 9};  <span class="comment">// price array</span></div>
+<div class="line"><span class="lineno">   76</span>    <span class="keyword">const</span> int64_t max_profit1 =</div>
+<div class="line"><span class="lineno">   77</span>        <a class="code hl_function" href="#a1cc523a30c18c63eac58220c3c494cfa">dynamic_programming::cut_rod::maxProfitByCuttingRod</a>(price1, n1);</div>
+<div class="line"><span class="lineno">   78</span>    <span class="keyword">const</span> int64_t expected_max_profit1 = 47;</div>
+<div class="line"><span class="lineno">   79</span>    assert(max_profit1 == expected_max_profit1);</div>
+<div class="line"><span class="lineno">   80</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Maximum profit with &quot;</span> &lt;&lt; n1 &lt;&lt; <span class="stringliteral">&quot; inch road is &quot;</span> &lt;&lt; max_profit1</div>
+<div class="line"><span class="lineno">   81</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   82</span> </div>
+<div class="line"><span class="lineno">   83</span>    <span class="comment">// Test 2</span></div>
+<div class="line"><span class="lineno">   84</span>    <span class="keyword">const</span> int16_t n2 = 30;  <span class="comment">// size of rod</span></div>
+<div class="line"><span class="lineno">   85</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int32_t, n2&gt;</a> price2 = {</div>
+<div class="line"><span class="lineno">   86</span>        1,  5,  8,  9,  10, 17, 17, 20, 24, 30,  <span class="comment">// price array</span></div>
+<div class="line"><span class="lineno">   87</span>        31, 32, 33, 34, 35, 36, 37, 38, 39, 40,</div>
+<div class="line"><span class="lineno">   88</span>        41, 42, 43, 44, 45, 46, 47, 48, 49, 50};</div>
+<div class="line"><span class="lineno">   89</span> </div>
+<div class="line"><span class="lineno">   90</span>    <span class="keyword">const</span> int64_t max_profit2 =</div>
+<div class="line"><span class="lineno">   91</span>        <a class="code hl_function" href="#a1cc523a30c18c63eac58220c3c494cfa">dynamic_programming::cut_rod::maxProfitByCuttingRod</a>(price2, n2);</div>
+<div class="line"><span class="lineno">   92</span>    <span class="keyword">const</span> int32_t expected_max_profit2 = 90;</div>
+<div class="line"><span class="lineno">   93</span>    assert(max_profit2 == expected_max_profit2);</div>
+<div class="line"><span class="lineno">   94</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Maximum profit with &quot;</span> &lt;&lt; n2 &lt;&lt; <span class="stringliteral">&quot; inch road is &quot;</span> &lt;&lt; max_profit2</div>
+<div class="line"><span class="lineno">   95</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   96</span>    <span class="comment">// Test 3</span></div>
+<div class="line"><span class="lineno">   97</span>    <span class="keyword">const</span> int16_t n3 = 5;                                 <span class="comment">// size of rod</span></div>
+<div class="line"><span class="lineno">   98</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int32_t, n3&gt;</a> price3 = {2, 9, 17, 23, 45};  <span class="comment">// price array</span></div>
+<div class="line"><span class="lineno">   99</span>    <span class="keyword">const</span> int64_t max_profit3 =</div>
+<div class="line"><span class="lineno">  100</span>        <a class="code hl_function" href="#a1cc523a30c18c63eac58220c3c494cfa">dynamic_programming::cut_rod::maxProfitByCuttingRod</a>(price3, n3);</div>
+<div class="line"><span class="lineno">  101</span>    <span class="keyword">const</span> int64_t expected_max_profit3 = 45;</div>
+<div class="line"><span class="lineno">  102</span>    assert(max_profit3 == expected_max_profit3);</div>
+<div class="line"><span class="lineno">  103</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Maximum profit with &quot;</span> &lt;&lt; n3 &lt;&lt; <span class="stringliteral">&quot; inch road is &quot;</span> &lt;&lt; max_profit3</div>
+<div class="line"><span class="lineno">  104</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  105</span>}</div>
 <div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="acut__rod_8cpp_html_a1cc523a30c18c63eac58220c3c494cfa"><div class="ttname"><a href="#a1cc523a30c18c63eac58220c3c494cfa">dynamic_programming::cut_rod::maxProfitByCuttingRod</a></div><div class="ttdeci">int maxProfitByCuttingRod(const std::array&lt; int, T &gt; &amp;price, const uint64_t &amp;n)</div><div class="ttdoc">Cuts the rod in different pieces and stores the maximum profit for each piece of the rod.</div><div class="ttdef"><b>Definition</b> cut_rod.cpp:44</div></div>
+<div class="ttc" id="acut__rod_8cpp_html_a1cc523a30c18c63eac58220c3c494cfa"><div class="ttname"><a href="#a1cc523a30c18c63eac58220c3c494cfa">dynamic_programming::cut_rod::maxProfitByCuttingRod</a></div><div class="ttdeci">int maxProfitByCuttingRod(const std::array&lt; int, T &gt; &amp;price, const uint64_t &amp;n)</div><div class="ttdoc">Cuts the rod in different pieces and stores the maximum profit for each piece of the rod.</div><div class="ttdef"><b>Definition</b> cut_rod.cpp:45</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

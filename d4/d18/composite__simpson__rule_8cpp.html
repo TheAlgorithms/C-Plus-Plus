@@ -206,7 +206,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   72</span> </div>
 <div class="line"><span class="lineno">   73</span>    <span class="comment">// Create the data table</span></div>
 <div class="line"><span class="lineno">   74</span>    <span class="keywordtype">double</span> temp = NAN;</div>
-<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">for</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int32_t</a> i = 0; i &lt;= <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
+<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">for</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int32_t</a> i = 0; i &lt;= <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
 <div class="line"><span class="lineno">   76</span>        temp = func(xi);</div>
 <div class="line"><span class="lineno">   77</span>        data_table.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map/insert.html">insert</a>(</div>
 <div class="line"><span class="lineno">   78</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair&lt;std::int32_t, double&gt;</a>(i, temp));  <span class="comment">// add i and f(xi)</span></div>
@@ -216,7 +216,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   82</span>    <span class="comment">// Evaluate the integral.</span></div>
 <div class="line"><span class="lineno">   83</span>    <span class="comment">// Remember: f(x0) + 4*f(x1) + 2*f(x2) + ... + 2*f(xN-2) + 4*f(xN-1) + f(xN)</span></div>
 <div class="line"><span class="lineno">   84</span>    <span class="keywordtype">double</span> evaluate_integral = 0;</div>
-<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">for</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int32_t</a> i = 0; i &lt;= <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
+<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">for</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int32_t</a> i = 0; i &lt;= <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
 <div class="line"><span class="lineno">   86</span>        <span class="keywordflow">if</span> (i == 0 || i == N) {</div>
 <div class="line"><span class="lineno">   87</span>            evaluate_integral += data_table.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map/at.html">at</a>(i);</div>
 <div class="line"><span class="lineno">   88</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (i % 2 == 1) {</div>
@@ -238,13 +238,13 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  104</span>    <span class="keywordflow">return</span> evaluate_integral;</div>
 <div class="line"><span class="lineno">  105</span>}</div>
 <div class="ttc" id="aat_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/map/at.html">std::map::at</a></div><div class="ttdeci">T at(T... args)</div></div>
-<div class="ttc" id="adata__structures_2sparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:48</div></div>
 <div class="ttc" id="ahash__search_8cpp_html_a566eaf0ffafd50bc61e644561fd27001"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a></div><div class="ttdeci">int h(int key)</div><div class="ttdef"><b>Definition</b> hash_search.cpp:45</div></div>
 <div class="ttc" id="ainsert_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/map/insert.html">std::map::insert</a></div><div class="ttdeci">T insert(T... args)</div></div>
 <div class="ttc" id="ainteger_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/integer.html">std::int32_t</a></div></div>
 <div class="ttc" id="aisnan_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/isnan.html">std::isnan</a></div><div class="ttdeci">T isnan(T... args)</div></div>
 <div class="ttc" id="amap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/map.html">std::map</a></div></div>
 <div class="ttc" id="apair_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a></div></div>
+<div class="ttc" id="asparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:48</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -391,7 +391,7 @@ Here is the call graph for this function:</div>
 <p>Starting and ending point of the integration in the real axis</p>
 <p>Step, calculated by a, b and N</p>
 <div class="fragment"><div class="line"><span class="lineno">  170</span>                                {</div>
-<div class="line"><span class="lineno">  171</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int32_t</a> <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = 16;  <span class="comment">/// Number of intervals to divide the integration</span><span class="comment"></span></div>
+<div class="line"><span class="lineno">  171</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int32_t</a> <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = 16;  <span class="comment">/// Number of intervals to divide the integration</span><span class="comment"></span></div>
 <div class="line"><span class="lineno">  172</span><span class="comment">                          /// interval. MUST BE EVEN</span></div>
 <div class="line"><span class="lineno">  173</span><span class="comment"></span>    <span class="keywordtype">double</span> a = 1, b = 3;  <span class="comment">/// Starting and ending point of the integration in</span><span class="comment"></span></div>
 <div class="line"><span class="lineno">  174</span><span class="comment">                          /// the real axis</span></div>
@@ -404,7 +404,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  181</span>    <span class="comment">// Get user input (by the command line parameters or the console after</span></div>
 <div class="line"><span class="lineno">  182</span>    <span class="comment">// displaying messages)</span></div>
 <div class="line"><span class="lineno">  183</span>    <span class="keywordflow">if</span> (argc == 4) {</div>
-<div class="line"><span class="lineno">  184</span>        <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/atoi.html">std::atoi</a>(argv[1]);</div>
+<div class="line"><span class="lineno">  184</span>        <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/atoi.html">std::atoi</a>(argv[1]);</div>
 <div class="line"><span class="lineno">  185</span>        a = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/atof.html">std::atof</a>(argv[2]);</div>
 <div class="line"><span class="lineno">  186</span>        b = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/atof.html">std::atof</a>(argv[3]);</div>
 <div class="line"><span class="lineno">  187</span>        <span class="comment">// Check if a&lt;b else abort</span></div>
@@ -413,10 +413,10 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  190</span>        <span class="keywordflow">if</span> (N &lt; 16 || a != 1 || b != 3) {</div>
 <div class="line"><span class="lineno">  191</span>            used_argv_parameters = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  192</span>        }</div>
-<div class="line"><span class="lineno">  193</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;You selected N=&quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> &lt;&lt; <span class="stringliteral">&quot;, a=&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;, b=&quot;</span> &lt;&lt; b</div>
+<div class="line"><span class="lineno">  193</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;You selected N=&quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> &lt;&lt; <span class="stringliteral">&quot;, a=&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;, b=&quot;</span> &lt;&lt; b</div>
 <div class="line"><span class="lineno">  194</span>                  &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><span class="lineno">  195</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  196</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Default N=&quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> &lt;&lt; <span class="stringliteral">&quot;, a=&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;, b=&quot;</span> &lt;&lt; b</div>
+<div class="line"><span class="lineno">  196</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Default N=&quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> &lt;&lt; <span class="stringliteral">&quot;, a=&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;, b=&quot;</span> &lt;&lt; b</div>
 <div class="line"><span class="lineno">  197</span>                  &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><span class="lineno">  198</span>    }</div>
 <div class="line"><span class="lineno">  199</span> </div>

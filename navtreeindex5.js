@@ -78,11 +78,6 @@ var NAVTREEINDEX5 =
 "d4/d90/classdata__structures_1_1_skip_list.html#af2f3d4e15b1f47afac849c2e08a730f4":[9,0,21,5,5],
 "d4/d90/classdata__structures_1_1_skip_list.html#af2f3d4e15b1f47afac849c2e08a730f4":[10,0,2,12,5],
 "d4/d91/namespacevector__cross.html":[9,0,137],
-"d4/d96/range__queries_2sparse__table_8cpp.html":[11,0,20,5],
-"d4/d96/range__queries_2sparse__table_8cpp.html#a40810d8c0fe3f8cf432ab128b1ae0300":[11,0,20,5,1],
-"d4/d96/range__queries_2sparse__table_8cpp.html#a803a2451e87021d14ae06f148383e6bc":[11,0,20,5,0],
-"d4/d96/range__queries_2sparse__table_8cpp.html#a932816c3de9e5ad122b180de60978e8f":[11,0,20,5,2],
-"d4/d96/range__queries_2sparse__table_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,20,5,3],
 "d4/d9c/primes__up__to__billion_8cpp.html":[11,0,14,48],
 "d4/d9c/primes__up__to__billion_8cpp.html#a031cada84819ed6426f58e4f7e81261c":[11,0,14,48,1],
 "d4/d9c/primes__up__to__billion_8cpp.html#ac0f4b77b901ddb15dab4c4dee1ac6e95":[11,0,14,48,2],
@@ -99,6 +94,9 @@ var NAVTREEINDEX5 =
 "d4/da0/gcd__iterative__euclidean_8cpp.html":[11,0,14,21],
 "d4/da0/gcd__iterative__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e":[11,0,14,21,0],
 "d4/da0/gcd__iterative__euclidean_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,21,1],
+"d4/da0/kadane_8cpp.html":[11,0,6,7],
+"d4/da0/kadane_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,6,7,0],
+"d4/da0/kadane_8cpp.html#af3029007a422a914a85c0b0122f1c7b4":[11,0,6,7,1],
 "d4/db4/struct_segment_intersection.html":[10,0,52],
 "d4/db4/struct_segment_intersection.html#a008941b2272866c64cdaf959afa939bf":[10,0,52,1],
 "d4/db4/struct_segment_intersection.html#a3beb2ac1b35d67354f1dbaf9a971e655":[10,0,52,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX5 =
 "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md52":[4,6],
 "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md53":[4,7],
 "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md54":[4,8],
-"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md55":[4,9]
+"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md55":[4,9],
+"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md56":[4,10],
+"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md57":[4,11]
 };

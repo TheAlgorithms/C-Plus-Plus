@@ -114,12 +114,13 @@ $(function(){initNavTree('d2/d45/segtree_8cpp.html','../../'); initResizable(tru
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for segtree.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/db6/segtree_8cpp__incl.svg" width="334" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/db6/segtree_8cpp__incl.svg" width="418" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -190,7 +191,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> </p>
-<p>for assert for log2 for IO operations</p>
+<p>for assert for log2 for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a> for IO operations</p>
 <p>Constructs the initial segment tree</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -203,18 +204,18 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   38</span>                                                         {</div>
-<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">if</span> (low == high) {</div>
-<div class="line"><span class="lineno">   40</span>        (*segtree)[pos] = arr[low];</div>
-<div class="line"><span class="lineno">   41</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   42</span>    }</div>
-<div class="line"><span class="lineno">   43</span> </div>
-<div class="line"><span class="lineno">   44</span>    uint64_t mid = (low + high) / 2;</div>
-<div class="line"><span class="lineno">   45</span>    <a class="code hl_function" href="#ae752659b7c1719d68fdb2ca538a93696">ConsTree</a>(arr, segtree, low, mid, 2 * pos + 1);</div>
-<div class="line"><span class="lineno">   46</span>    <a class="code hl_function" href="#ae752659b7c1719d68fdb2ca538a93696">ConsTree</a>(arr, segtree, mid + 1, high, 2 * pos + 2);</div>
-<div class="line"><span class="lineno">   47</span>    (*segtree)[pos] = (*segtree)[2 * pos + 1] + (*segtree)[2 * pos + 2];</div>
-<div class="line"><span class="lineno">   48</span>}</div>
-<div class="ttc" id="asegtree_8cpp_html_ae752659b7c1719d68fdb2ca538a93696"><div class="ttname"><a href="#ae752659b7c1719d68fdb2ca538a93696">ConsTree</a></div><div class="ttdeci">void ConsTree(const std::vector&lt; int64_t &gt; &amp;arr, std::vector&lt; int64_t &gt; *segtree, uint64_t low, uint64_t high, uint64_t pos)</div><div class="ttdoc">for std::vector</div><div class="ttdef"><b>Definition</b> segtree.cpp:37</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>                                                         {</div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">if</span> (low == high) {</div>
+<div class="line"><span class="lineno">   41</span>        (*segtree)[pos] = arr[low];</div>
+<div class="line"><span class="lineno">   42</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   43</span>    }</div>
+<div class="line"><span class="lineno">   44</span> </div>
+<div class="line"><span class="lineno">   45</span>    uint64_t mid = (low + high) / 2;</div>
+<div class="line"><span class="lineno">   46</span>    <a class="code hl_function" href="#ae752659b7c1719d68fdb2ca538a93696">ConsTree</a>(arr, segtree, low, mid, 2 * pos + 1);</div>
+<div class="line"><span class="lineno">   47</span>    <a class="code hl_function" href="#ae752659b7c1719d68fdb2ca538a93696">ConsTree</a>(arr, segtree, mid + 1, high, 2 * pos + 2);</div>
+<div class="line"><span class="lineno">   48</span>    (*segtree)[pos] = (*segtree)[2 * pos + 1] + (*segtree)[2 * pos + 2];</div>
+<div class="line"><span class="lineno">   49</span>}</div>
+<div class="ttc" id="asegtree_8cpp_html_ae752659b7c1719d68fdb2ca538a93696"><div class="ttname"><a href="#ae752659b7c1719d68fdb2ca538a93696">ConsTree</a></div><div class="ttdeci">void ConsTree(const std::vector&lt; int64_t &gt; &amp;arr, std::vector&lt; int64_t &gt; *segtree, uint64_t low, uint64_t high, uint64_t pos)</div><div class="ttdoc">for std::vector</div><div class="ttdef"><b>Definition</b> segtree.cpp:38</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -240,66 +241,66 @@ Here is the call graph for this function:</div>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  167</span>           {</div>
-<div class="line"><span class="lineno">  168</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">  169</span> </div>
-<div class="line"><span class="lineno">  170</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter number of elements: &quot;</span>;</div>
-<div class="line"><span class="lineno">  171</span> </div>
-<div class="line"><span class="lineno">  172</span>    uint64_t n = 0;</div>
-<div class="line"><span class="lineno">  173</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n;</div>
-<div class="line"><span class="lineno">  174</span> </div>
-<div class="line"><span class="lineno">  175</span>    <span class="keyword">auto</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">max</a> = <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(2 * <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">pow</a>(2, <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/ceil.html">ceil</a>(log2(n))) - 1);</div>
-<div class="line"><span class="lineno">  176</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> arr(n), lazy(max), segtree(max);</div>
-<div class="line"><span class="lineno">  177</span> </div>
-<div class="line"><span class="lineno">  178</span>    <span class="keywordtype">int</span> choice = 0;</div>
-<div class="line"><span class="lineno">  179</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nDo you wish to enter each number?:\n&quot;</span></div>
-<div class="line"><span class="lineno">  180</span>                 <span class="stringliteral">&quot;1: Yes\n&quot;</span></div>
-<div class="line"><span class="lineno">  181</span>                 <span class="stringliteral">&quot;0: No (default initialize them to 0)\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  182</span> </div>
-<div class="line"><span class="lineno">  183</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; choice;</div>
-<div class="line"><span class="lineno">  184</span>    <span class="keywordflow">if</span> (choice == 1) {</div>
-<div class="line"><span class="lineno">  185</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter &quot;</span> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot; numbers:\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  186</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= n; i++) {</div>
-<div class="line"><span class="lineno">  187</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;: &quot;</span>;</div>
-<div class="line"><span class="lineno">  188</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; arr[i];</div>
-<div class="line"><span class="lineno">  189</span>        }</div>
-<div class="line"><span class="lineno">  190</span>    }</div>
-<div class="line"><span class="lineno">  191</span> </div>
-<div class="line"><span class="lineno">  192</span>    <a class="code hl_function" href="#ae752659b7c1719d68fdb2ca538a93696">ConsTree</a>(arr, &amp;segtree, 0, n - 1, 0);</div>
-<div class="line"><span class="lineno">  193</span> </div>
-<div class="line"><span class="lineno">  194</span>    <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno">  195</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nMake your choice:\n&quot;</span></div>
-<div class="line"><span class="lineno">  196</span>                     <span class="stringliteral">&quot;1: Range update (input)\n&quot;</span></div>
-<div class="line"><span class="lineno">  197</span>                     <span class="stringliteral">&quot;2: Range query (output)\n&quot;</span></div>
-<div class="line"><span class="lineno">  198</span>                     <span class="stringliteral">&quot;0: Exit\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  199</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; choice;</div>
-<div class="line"><span class="lineno">  200</span> </div>
-<div class="line"><span class="lineno">  201</span>        <span class="keywordflow">if</span> (choice == 1) {</div>
-<div class="line"><span class="lineno">  202</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter 1-indexed lower bound, upper bound &amp; value:\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  203</span> </div>
-<div class="line"><span class="lineno">  204</span>            uint64_t p = 1, q = 1, v = 0;</div>
-<div class="line"><span class="lineno">  205</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; p &gt;&gt; q &gt;&gt; v;</div>
-<div class="line"><span class="lineno">  206</span>            <a class="code hl_function" href="#abd3e818681fb2e29cf08f4f60f82c8e0">update</a>(&amp;segtree, &amp;lazy, p - 1, q - 1, v, 0, n - 1, 0);</div>
-<div class="line"><span class="lineno">  207</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (choice == 2) {</div>
-<div class="line"><span class="lineno">  208</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter 1-indexed lower bound &amp; upper bound:\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  209</span> </div>
-<div class="line"><span class="lineno">  210</span>            uint64_t p = 1, q = 1;</div>
-<div class="line"><span class="lineno">  211</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; p &gt;&gt; q;</div>
-<div class="line"><span class="lineno">  212</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_function" href="#a423a97ea0c7ea6e33b5844a6858d902d">query</a>(&amp;segtree, &amp;lazy, p - 1, q - 1, 0, n - 1, 0);</div>
-<div class="line"><span class="lineno">  213</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  214</span>        }</div>
-<div class="line"><span class="lineno">  215</span>    } <span class="keywordflow">while</span> (choice &gt; 0);</div>
-<div class="line"><span class="lineno">  216</span> </div>
-<div class="line"><span class="lineno">  217</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  218</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  168</span>           {</div>
+<div class="line"><span class="lineno">  169</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">  170</span> </div>
+<div class="line"><span class="lineno">  171</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter number of elements: &quot;</span>;</div>
+<div class="line"><span class="lineno">  172</span> </div>
+<div class="line"><span class="lineno">  173</span>    uint64_t n = 0;</div>
+<div class="line"><span class="lineno">  174</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n;</div>
+<div class="line"><span class="lineno">  175</span> </div>
+<div class="line"><span class="lineno">  176</span>    <span class="keyword">auto</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">max</a> = <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(2 * <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">pow</a>(2, <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/ceil.html">ceil</a>(log2(n))) - 1);</div>
+<div class="line"><span class="lineno">  177</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> arr(n), lazy(max), segtree(max);</div>
+<div class="line"><span class="lineno">  178</span> </div>
+<div class="line"><span class="lineno">  179</span>    <span class="keywordtype">int</span> choice = 0;</div>
+<div class="line"><span class="lineno">  180</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nDo you wish to enter each number?:\n&quot;</span></div>
+<div class="line"><span class="lineno">  181</span>                 <span class="stringliteral">&quot;1: Yes\n&quot;</span></div>
+<div class="line"><span class="lineno">  182</span>                 <span class="stringliteral">&quot;0: No (default initialize them to 0)\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  183</span> </div>
+<div class="line"><span class="lineno">  184</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; choice;</div>
+<div class="line"><span class="lineno">  185</span>    <span class="keywordflow">if</span> (choice == 1) {</div>
+<div class="line"><span class="lineno">  186</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter &quot;</span> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot; numbers:\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  187</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= n; i++) {</div>
+<div class="line"><span class="lineno">  188</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;: &quot;</span>;</div>
+<div class="line"><span class="lineno">  189</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; arr[i];</div>
+<div class="line"><span class="lineno">  190</span>        }</div>
+<div class="line"><span class="lineno">  191</span>    }</div>
+<div class="line"><span class="lineno">  192</span> </div>
+<div class="line"><span class="lineno">  193</span>    <a class="code hl_function" href="#ae752659b7c1719d68fdb2ca538a93696">ConsTree</a>(arr, &amp;segtree, 0, n - 1, 0);</div>
+<div class="line"><span class="lineno">  194</span> </div>
+<div class="line"><span class="lineno">  195</span>    <span class="keywordflow">do</span> {</div>
+<div class="line"><span class="lineno">  196</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nMake your choice:\n&quot;</span></div>
+<div class="line"><span class="lineno">  197</span>                     <span class="stringliteral">&quot;1: Range update (input)\n&quot;</span></div>
+<div class="line"><span class="lineno">  198</span>                     <span class="stringliteral">&quot;2: Range query (output)\n&quot;</span></div>
+<div class="line"><span class="lineno">  199</span>                     <span class="stringliteral">&quot;0: Exit\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  200</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; choice;</div>
+<div class="line"><span class="lineno">  201</span> </div>
+<div class="line"><span class="lineno">  202</span>        <span class="keywordflow">if</span> (choice == 1) {</div>
+<div class="line"><span class="lineno">  203</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter 1-indexed lower bound, upper bound &amp; value:\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  204</span> </div>
+<div class="line"><span class="lineno">  205</span>            uint64_t p = 1, q = 1, v = 0;</div>
+<div class="line"><span class="lineno">  206</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; p &gt;&gt; q &gt;&gt; v;</div>
+<div class="line"><span class="lineno">  207</span>            <a class="code hl_function" href="#abd3e818681fb2e29cf08f4f60f82c8e0">update</a>(&amp;segtree, &amp;lazy, p - 1, q - 1, v, 0, n - 1, 0);</div>
+<div class="line"><span class="lineno">  208</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (choice == 2) {</div>
+<div class="line"><span class="lineno">  209</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter 1-indexed lower bound &amp; upper bound:\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  210</span> </div>
+<div class="line"><span class="lineno">  211</span>            uint64_t p = 1, q = 1;</div>
+<div class="line"><span class="lineno">  212</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; p &gt;&gt; q;</div>
+<div class="line"><span class="lineno">  213</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_function" href="#a423a97ea0c7ea6e33b5844a6858d902d">query</a>(&amp;segtree, &amp;lazy, p - 1, q - 1, 0, n - 1, 0);</div>
+<div class="line"><span class="lineno">  214</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  215</span>        }</div>
+<div class="line"><span class="lineno">  216</span>    } <span class="keywordflow">while</span> (choice &gt; 0);</div>
+<div class="line"><span class="lineno">  217</span> </div>
+<div class="line"><span class="lineno">  218</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  219</span>}</div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aceil_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/ceil.html">std::ceil</a></div><div class="ttdeci">T ceil(T... args)</div></div>
 <div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
 <div class="ttc" id="apow_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a></div><div class="ttdeci">T pow(T... args)</div></div>
-<div class="ttc" id="asegtree_8cpp_html_a423a97ea0c7ea6e33b5844a6858d902d"><div class="ttname"><a href="#a423a97ea0c7ea6e33b5844a6858d902d">query</a></div><div class="ttdeci">int64_t query(std::vector&lt; int64_t &gt; *segtree, std::vector&lt; int64_t &gt; *lazy, uint64_t qlow, uint64_t qhigh, uint64_t low, uint64_t high, uint64_t pos)</div><div class="ttdoc">Returns the sum of all elements in a range.</div><div class="ttdef"><b>Definition</b> segtree.cpp:62</div></div>
-<div class="ttc" id="asegtree_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementation.</div><div class="ttdef"><b>Definition</b> segtree.cpp:146</div></div>
-<div class="ttc" id="asegtree_8cpp_html_abd3e818681fb2e29cf08f4f60f82c8e0"><div class="ttname"><a href="#abd3e818681fb2e29cf08f4f60f82c8e0">update</a></div><div class="ttdeci">void update(std::vector&lt; int64_t &gt; *segtree, std::vector&lt; int64_t &gt; *lazy, int64_t start, int64_t end, int64_t delta, uint64_t low, uint64_t high, uint64_t pos)</div><div class="ttdoc">Updates a range of the segment tree.</div><div class="ttdef"><b>Definition</b> segtree.cpp:102</div></div>
+<div class="ttc" id="asegtree_8cpp_html_a423a97ea0c7ea6e33b5844a6858d902d"><div class="ttname"><a href="#a423a97ea0c7ea6e33b5844a6858d902d">query</a></div><div class="ttdeci">int64_t query(std::vector&lt; int64_t &gt; *segtree, std::vector&lt; int64_t &gt; *lazy, uint64_t qlow, uint64_t qhigh, uint64_t low, uint64_t high, uint64_t pos)</div><div class="ttdoc">Returns the sum of all elements in a range.</div><div class="ttdef"><b>Definition</b> segtree.cpp:63</div></div>
+<div class="ttc" id="asegtree_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementation.</div><div class="ttdef"><b>Definition</b> segtree.cpp:147</div></div>
+<div class="ttc" id="asegtree_8cpp_html_abd3e818681fb2e29cf08f4f60f82c8e0"><div class="ttname"><a href="#abd3e818681fb2e29cf08f4f60f82c8e0">update</a></div><div class="ttdeci">void update(std::vector&lt; int64_t &gt; *segtree, std::vector&lt; int64_t &gt; *lazy, int64_t start, int64_t end, int64_t delta, uint64_t low, uint64_t high, uint64_t pos)</div><div class="ttdoc">Updates a range of the segment tree.</div><div class="ttdef"><b>Definition</b> segtree.cpp:103</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -367,30 +368,30 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>result of the range query for this function call </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   64</span>                            {</div>
-<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">if</span> (low &gt; high || qlow &gt; high || low &gt; qhigh) {</div>
-<div class="line"><span class="lineno">   66</span>        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   67</span>    }</div>
-<div class="line"><span class="lineno">   68</span> </div>
-<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">if</span> ((*lazy)[pos] != 0) {</div>
-<div class="line"><span class="lineno">   70</span>        (*segtree)[pos] += (*lazy)[pos] * (high - low + 1);</div>
-<div class="line"><span class="lineno">   71</span> </div>
-<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">if</span> (low != high) {</div>
-<div class="line"><span class="lineno">   73</span>            (*lazy)[2 * pos + 1] += (*lazy)[pos];</div>
-<div class="line"><span class="lineno">   74</span>            (*lazy)[2 * pos + 2] += (*lazy)[pos];</div>
-<div class="line"><span class="lineno">   75</span>        }</div>
-<div class="line"><span class="lineno">   76</span>        (*lazy)[pos] = 0;</div>
-<div class="line"><span class="lineno">   77</span>    }</div>
-<div class="line"><span class="lineno">   78</span> </div>
-<div class="line"><span class="lineno">   79</span>    <span class="keywordflow">if</span> (qlow &lt;= low &amp;&amp; qhigh &gt;= high) {</div>
-<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">return</span> (*segtree)[pos];</div>
-<div class="line"><span class="lineno">   81</span>    }</div>
-<div class="line"><span class="lineno">   82</span> </div>
-<div class="line"><span class="lineno">   83</span>    uint64_t mid = (low + high) / 2;</div>
-<div class="line"><span class="lineno">   84</span> </div>
-<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="#a423a97ea0c7ea6e33b5844a6858d902d">query</a>(segtree, lazy, qlow, qhigh, low, mid, 2 * pos + 1) +</div>
-<div class="line"><span class="lineno">   86</span>           <a class="code hl_function" href="#a423a97ea0c7ea6e33b5844a6858d902d">query</a>(segtree, lazy, qlow, qhigh, mid + 1, high, 2 * pos + 2);</div>
-<div class="line"><span class="lineno">   87</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   65</span>                            {</div>
+<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">if</span> (low &gt; high || qlow &gt; high || low &gt; qhigh) {</div>
+<div class="line"><span class="lineno">   67</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   68</span>    }</div>
+<div class="line"><span class="lineno">   69</span> </div>
+<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">if</span> ((*lazy)[pos] != 0) {</div>
+<div class="line"><span class="lineno">   71</span>        (*segtree)[pos] += (*lazy)[pos] * (high - low + 1);</div>
+<div class="line"><span class="lineno">   72</span> </div>
+<div class="line"><span class="lineno">   73</span>        <span class="keywordflow">if</span> (low != high) {</div>
+<div class="line"><span class="lineno">   74</span>            (*lazy)[2 * pos + 1] += (*lazy)[pos];</div>
+<div class="line"><span class="lineno">   75</span>            (*lazy)[2 * pos + 2] += (*lazy)[pos];</div>
+<div class="line"><span class="lineno">   76</span>        }</div>
+<div class="line"><span class="lineno">   77</span>        (*lazy)[pos] = 0;</div>
+<div class="line"><span class="lineno">   78</span>    }</div>
+<div class="line"><span class="lineno">   79</span> </div>
+<div class="line"><span class="lineno">   80</span>    <span class="keywordflow">if</span> (qlow &lt;= low &amp;&amp; qhigh &gt;= high) {</div>
+<div class="line"><span class="lineno">   81</span>        <span class="keywordflow">return</span> (*segtree)[pos];</div>
+<div class="line"><span class="lineno">   82</span>    }</div>
+<div class="line"><span class="lineno">   83</span> </div>
+<div class="line"><span class="lineno">   84</span>    uint64_t mid = (low + high) / 2;</div>
+<div class="line"><span class="lineno">   85</span> </div>
+<div class="line"><span class="lineno">   86</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="#a423a97ea0c7ea6e33b5844a6858d902d">query</a>(segtree, lazy, qlow, qhigh, low, mid, 2 * pos + 1) +</div>
+<div class="line"><span class="lineno">   87</span>           <a class="code hl_function" href="#a423a97ea0c7ea6e33b5844a6858d902d">query</a>(segtree, lazy, qlow, qhigh, mid + 1, high, 2 * pos + 2);</div>
+<div class="line"><span class="lineno">   88</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -424,21 +425,21 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementation. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  146</span>                   {</div>
-<div class="line"><span class="lineno">  147</span>    <span class="keyword">auto</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">max</a> = <span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(2 * <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">pow</a>(2, <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/ceil.html">ceil</a>(log2(7))) - 1);</div>
-<div class="line"><span class="lineno">  148</span>    assert(max == 15);</div>
-<div class="line"><span class="lineno">  149</span> </div>
-<div class="line"><span class="lineno">  150</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> arr{1, 2, 3, 4, 5, 6, 7}, lazy(max), segtree(max);</div>
-<div class="line"><span class="lineno">  151</span>    <a class="code hl_function" href="#ae752659b7c1719d68fdb2ca538a93696">ConsTree</a>(arr, &amp;segtree, 0, 7 - 1, 0);</div>
-<div class="line"><span class="lineno">  152</span> </div>
-<div class="line"><span class="lineno">  153</span>    assert(<a class="code hl_function" href="#a423a97ea0c7ea6e33b5844a6858d902d">query</a>(&amp;segtree, &amp;lazy, 1, 5, 0, 7 - 1, 0) == 2 + 3 + 4 + 5 + 6);</div>
-<div class="line"><span class="lineno">  154</span> </div>
-<div class="line"><span class="lineno">  155</span>    <a class="code hl_function" href="#abd3e818681fb2e29cf08f4f60f82c8e0">update</a>(&amp;segtree, &amp;lazy, 2, 4, 1, 0, 7 - 1, 0);</div>
-<div class="line"><span class="lineno">  156</span>    assert(<a class="code hl_function" href="#a423a97ea0c7ea6e33b5844a6858d902d">query</a>(&amp;segtree, &amp;lazy, 1, 5, 0, 7 - 1, 0) == 2 + 4 + 5 + 6 + 6);</div>
-<div class="line"><span class="lineno">  157</span> </div>
-<div class="line"><span class="lineno">  158</span>    <a class="code hl_function" href="#abd3e818681fb2e29cf08f4f60f82c8e0">update</a>(&amp;segtree, &amp;lazy, 0, 6, -2, 0, 7 - 1, 0);</div>
-<div class="line"><span class="lineno">  159</span>    assert(<a class="code hl_function" href="#a423a97ea0c7ea6e33b5844a6858d902d">query</a>(&amp;segtree, &amp;lazy, 0, 4, 0, 7 - 1, 0) == -1 + 0 + 2 + 3 + 4);</div>
-<div class="line"><span class="lineno">  160</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  147</span>                   {</div>
+<div class="line"><span class="lineno">  148</span>    <span class="keyword">auto</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">max</a> = <span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(2 * <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">pow</a>(2, <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/ceil.html">ceil</a>(log2(7))) - 1);</div>
+<div class="line"><span class="lineno">  149</span>    assert(max == 15);</div>
+<div class="line"><span class="lineno">  150</span> </div>
+<div class="line"><span class="lineno">  151</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> arr{1, 2, 3, 4, 5, 6, 7}, lazy(max), segtree(max);</div>
+<div class="line"><span class="lineno">  152</span>    <a class="code hl_function" href="#ae752659b7c1719d68fdb2ca538a93696">ConsTree</a>(arr, &amp;segtree, 0, 7 - 1, 0);</div>
+<div class="line"><span class="lineno">  153</span> </div>
+<div class="line"><span class="lineno">  154</span>    assert(<a class="code hl_function" href="#a423a97ea0c7ea6e33b5844a6858d902d">query</a>(&amp;segtree, &amp;lazy, 1, 5, 0, 7 - 1, 0) == 2 + 3 + 4 + 5 + 6);</div>
+<div class="line"><span class="lineno">  155</span> </div>
+<div class="line"><span class="lineno">  156</span>    <a class="code hl_function" href="#abd3e818681fb2e29cf08f4f60f82c8e0">update</a>(&amp;segtree, &amp;lazy, 2, 4, 1, 0, 7 - 1, 0);</div>
+<div class="line"><span class="lineno">  157</span>    assert(<a class="code hl_function" href="#a423a97ea0c7ea6e33b5844a6858d902d">query</a>(&amp;segtree, &amp;lazy, 1, 5, 0, 7 - 1, 0) == 2 + 4 + 5 + 6 + 6);</div>
+<div class="line"><span class="lineno">  158</span> </div>
+<div class="line"><span class="lineno">  159</span>    <a class="code hl_function" href="#abd3e818681fb2e29cf08f4f60f82c8e0">update</a>(&amp;segtree, &amp;lazy, 0, 6, -2, 0, 7 - 1, 0);</div>
+<div class="line"><span class="lineno">  160</span>    assert(<a class="code hl_function" href="#a423a97ea0c7ea6e33b5844a6858d902d">query</a>(&amp;segtree, &amp;lazy, 0, 4, 0, 7 - 1, 0) == -1 + 0 + 2 + 3 + 4);</div>
+<div class="line"><span class="lineno">  161</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -511,42 +512,42 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  104</span>                                         {</div>
-<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">if</span> (low &gt; high) {</div>
-<div class="line"><span class="lineno">  106</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  107</span>    }</div>
-<div class="line"><span class="lineno">  108</span> </div>
-<div class="line"><span class="lineno">  109</span>    <span class="keywordflow">if</span> ((*lazy)[pos] != 0) {</div>
-<div class="line"><span class="lineno">  110</span>        (*segtree)[pos] += (*lazy)[pos] * (high - low + 1);</div>
-<div class="line"><span class="lineno">  111</span> </div>
-<div class="line"><span class="lineno">  112</span>        <span class="keywordflow">if</span> (low != high) {</div>
-<div class="line"><span class="lineno">  113</span>            (*lazy)[2 * pos + 1] += (*lazy)[pos];</div>
-<div class="line"><span class="lineno">  114</span>            (*lazy)[2 * pos + 2] += (*lazy)[pos];</div>
-<div class="line"><span class="lineno">  115</span>        }</div>
-<div class="line"><span class="lineno">  116</span>        (*lazy)[pos] = 0;</div>
-<div class="line"><span class="lineno">  117</span>    }</div>
-<div class="line"><span class="lineno">  118</span> </div>
-<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">if</span> (start &gt; high || end &lt; low) {</div>
-<div class="line"><span class="lineno">  120</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  121</span>    }</div>
-<div class="line"><span class="lineno">  122</span> </div>
-<div class="line"><span class="lineno">  123</span>    <span class="keywordflow">if</span> (start &lt;= low &amp;&amp; end &gt;= high) {</div>
-<div class="line"><span class="lineno">  124</span>        (*segtree)[pos] += delta * (high - low + 1);</div>
-<div class="line"><span class="lineno">  125</span> </div>
-<div class="line"><span class="lineno">  126</span>        <span class="keywordflow">if</span> (low != high) {</div>
-<div class="line"><span class="lineno">  127</span>            (*lazy)[2 * pos + 1] += delta;</div>
-<div class="line"><span class="lineno">  128</span>            (*lazy)[2 * pos + 2] += delta;</div>
-<div class="line"><span class="lineno">  129</span>        }</div>
-<div class="line"><span class="lineno">  130</span> </div>
-<div class="line"><span class="lineno">  131</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  132</span>    }</div>
-<div class="line"><span class="lineno">  133</span> </div>
-<div class="line"><span class="lineno">  134</span>    uint64_t mid = (low + high) / 2;</div>
-<div class="line"><span class="lineno">  135</span> </div>
-<div class="line"><span class="lineno">  136</span>    <a class="code hl_function" href="#abd3e818681fb2e29cf08f4f60f82c8e0">update</a>(segtree, lazy, start, end, delta, low, mid, 2 * pos + 1);</div>
-<div class="line"><span class="lineno">  137</span>    <a class="code hl_function" href="#abd3e818681fb2e29cf08f4f60f82c8e0">update</a>(segtree, lazy, start, end, delta, mid + 1, high, 2 * pos + 2);</div>
-<div class="line"><span class="lineno">  138</span>    (*segtree)[pos] = (*segtree)[2 * pos + 1] + (*segtree)[2 * pos + 2];</div>
-<div class="line"><span class="lineno">  139</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  105</span>                                         {</div>
+<div class="line"><span class="lineno">  106</span>    <span class="keywordflow">if</span> (low &gt; high) {</div>
+<div class="line"><span class="lineno">  107</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  108</span>    }</div>
+<div class="line"><span class="lineno">  109</span> </div>
+<div class="line"><span class="lineno">  110</span>    <span class="keywordflow">if</span> ((*lazy)[pos] != 0) {</div>
+<div class="line"><span class="lineno">  111</span>        (*segtree)[pos] += (*lazy)[pos] * (high - low + 1);</div>
+<div class="line"><span class="lineno">  112</span> </div>
+<div class="line"><span class="lineno">  113</span>        <span class="keywordflow">if</span> (low != high) {</div>
+<div class="line"><span class="lineno">  114</span>            (*lazy)[2 * pos + 1] += (*lazy)[pos];</div>
+<div class="line"><span class="lineno">  115</span>            (*lazy)[2 * pos + 2] += (*lazy)[pos];</div>
+<div class="line"><span class="lineno">  116</span>        }</div>
+<div class="line"><span class="lineno">  117</span>        (*lazy)[pos] = 0;</div>
+<div class="line"><span class="lineno">  118</span>    }</div>
+<div class="line"><span class="lineno">  119</span> </div>
+<div class="line"><span class="lineno">  120</span>    <span class="keywordflow">if</span> (start &gt; high || end &lt; low) {</div>
+<div class="line"><span class="lineno">  121</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  122</span>    }</div>
+<div class="line"><span class="lineno">  123</span> </div>
+<div class="line"><span class="lineno">  124</span>    <span class="keywordflow">if</span> (start &lt;= low &amp;&amp; end &gt;= high) {</div>
+<div class="line"><span class="lineno">  125</span>        (*segtree)[pos] += delta * (high - low + 1);</div>
+<div class="line"><span class="lineno">  126</span> </div>
+<div class="line"><span class="lineno">  127</span>        <span class="keywordflow">if</span> (low != high) {</div>
+<div class="line"><span class="lineno">  128</span>            (*lazy)[2 * pos + 1] += delta;</div>
+<div class="line"><span class="lineno">  129</span>            (*lazy)[2 * pos + 2] += delta;</div>
+<div class="line"><span class="lineno">  130</span>        }</div>
+<div class="line"><span class="lineno">  131</span> </div>
+<div class="line"><span class="lineno">  132</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  133</span>    }</div>
+<div class="line"><span class="lineno">  134</span> </div>
+<div class="line"><span class="lineno">  135</span>    uint64_t mid = (low + high) / 2;</div>
+<div class="line"><span class="lineno">  136</span> </div>
+<div class="line"><span class="lineno">  137</span>    <a class="code hl_function" href="#abd3e818681fb2e29cf08f4f60f82c8e0">update</a>(segtree, lazy, start, end, delta, low, mid, 2 * pos + 1);</div>
+<div class="line"><span class="lineno">  138</span>    <a class="code hl_function" href="#abd3e818681fb2e29cf08f4f60f82c8e0">update</a>(segtree, lazy, start, end, delta, mid + 1, high, 2 * pos + 2);</div>
+<div class="line"><span class="lineno">  139</span>    (*segtree)[pos] = (*segtree)[2 * pos + 1] + (*segtree)[2 * pos + 2];</div>
+<div class="line"><span class="lineno">  140</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

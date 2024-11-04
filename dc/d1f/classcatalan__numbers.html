@@ -148,7 +148,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>computes and caches Catalan numbers </p>
-<p>for assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> for std::transform_reduce for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> </p>
+<p>for assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/plus.html">std::plus</a> &amp; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/multiplies.html">std::multiplies</a> for std::transform_reduce for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="abf882dee674593be3df61a36443b5632" name="abf882dee674593be3df61a36443b5632"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abf882dee674593be3df61a36443b5632">&#9670;&#160;</a></span>add()</h2>
@@ -172,7 +172,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   31</span>{ known.push_back(this-&gt;compute_next()); }</div>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>{ known.push_back(this-&gt;compute_next()); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -198,11 +198,11 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   25</span>                              {</div>
-<div class="line"><span class="lineno">   26</span>        <span class="keywordflow">return</span> std::transform_reduce(known.begin(), known.end(), known.rbegin(),</div>
-<div class="line"><span class="lineno">   27</span>                                     <span class="keyword">static_cast&lt;</span>value_type<span class="keyword">&gt;</span>(), <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/plus.html">std::plus&lt;&gt;</a>(),</div>
-<div class="line"><span class="lineno">   28</span>                                     <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/multiplies.html">std::multiplies&lt;&gt;</a>());</div>
-<div class="line"><span class="lineno">   29</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">   26</span>                              {</div>
+<div class="line"><span class="lineno">   27</span>        <span class="keywordflow">return</span> std::transform_reduce(known.begin(), known.end(), known.rbegin(),</div>
+<div class="line"><span class="lineno">   28</span>                                     <span class="keyword">static_cast&lt;</span>value_type<span class="keyword">&gt;</span>(0), <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/plus.html">std::plus&lt;&gt;</a>(),</div>
+<div class="line"><span class="lineno">   29</span>                                     <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/multiplies.html">std::multiplies&lt;&gt;</a>());</div>
+<div class="line"><span class="lineno">   30</span>    }</div>
 <div class="ttc" id="amultiplies_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/functional/multiplies.html">std::multiplies</a></div></div>
 <div class="ttc" id="aplus_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/functional/plus.html">std::plus</a></div></div>
 </div><!-- fragment -->
@@ -233,12 +233,12 @@ Private Attributes</h2></td></tr>
 
 <p>computes the n-th Catalan number and updates the cache. </p>
 <dl class="section return"><dt>Returns</dt><dd>the n-th Catalan number </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   38</span>                                {</div>
-<div class="line"><span class="lineno">   39</span>        <span class="keywordflow">while</span> (known.size() &lt;= n) {</div>
-<div class="line"><span class="lineno">   40</span>            this-&gt;add();</div>
-<div class="line"><span class="lineno">   41</span>        }</div>
-<div class="line"><span class="lineno">   42</span>        <span class="keywordflow">return</span> known[n];</div>
-<div class="line"><span class="lineno">   43</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>                                {</div>
+<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">while</span> (known.size() &lt;= n) {</div>
+<div class="line"><span class="lineno">   41</span>            this-&gt;add();</div>
+<div class="line"><span class="lineno">   42</span>        }</div>
+<div class="line"><span class="lineno">   43</span>        <span class="keywordflow">return</span> known[n];</div>
+<div class="line"><span class="lineno">   44</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -262,7 +262,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   23</span>{1, 1};</div>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>{1, 1};</div>
 </div><!-- fragment -->
 </div>
 </div>
