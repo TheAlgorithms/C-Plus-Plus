@@ -19,6 +19,7 @@
 
 #include <array>     /// For array
 #include <cassert>   /// For assert
+#include <cstdint>
 #include <iostream>  /// For IO operations
 
 /**
@@ -157,11 +158,9 @@ struct Treap {
         }
         if (k == key[x]) {
             return size[childs[x][0]] + 1;
-        }
-        else if (k < key[x]) {
+        } else if (k < key[x]) {
             return _get_rank(childs[x][0], k);
-        }
-        else {
+        } else {
             return size[childs[x][0]] + cnt[x] + _get_rank(childs[x][1], k);
         }
     }
