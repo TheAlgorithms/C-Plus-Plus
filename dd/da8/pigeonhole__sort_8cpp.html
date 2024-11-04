@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: sorting/pigeonhole_sort.cpp File Reference</title>
+<title>TheAlgorithms/C++: sorting/pigeonhole_sort.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -122,7 +139,9 @@ Include dependency graph for pigeonhole_sort.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d28/pigeonhole__sort_8cpp__incl.svg" width="344" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../dd/da8/pigeonhole__sort_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html">sorting</a></td></tr>
@@ -131,8 +150,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0e9e1b21a1684585e9e50f9afe4d53a3" id="r_a0e9e1b21a1684585e9e50f9afe4d53a3"><td class="memTemplParams" colspan="2">template&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> N&gt; </td></tr>
-<tr class="memitem:a0e9e1b21a1684585e9e50f9afe4d53a3"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a0e9e1b21a1684585e9e50f9afe4d53a3">sorting::pigeonSort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, N &gt; arr)</td></tr>
+<tr class="memitem:a0e9e1b21a1684585e9e50f9afe4d53a3" id="r_a0e9e1b21a1684585e9e50f9afe4d53a3"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
+<tr class="memitem:a0e9e1b21a1684585e9e50f9afe4d53a3"><td class="memTemplItemLeft" align="right" valign="top">std::array&lt; int, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a0e9e1b21a1684585e9e50f9afe4d53a3">sorting::pigeonSort</a> (std::array&lt; int, N &gt; arr)</td></tr>
 <tr class="separator:a0e9e1b21a1684585e9e50f9afe4d53a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34b8683a2b429de5cce57e6d733ec817" id="r_a34b8683a2b429de5cce57e6d733ec817"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34b8683a2b429de5cce57e6d733ec817">test_1</a> ()</td></tr>
 <tr class="separator:a34b8683a2b429de5cce57e6d733ec817"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,6 +167,8 @@ Functions</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/Lownish" target="_blank">Lownish</a></dd></dl>
 <p>Pigeonhole sorting is a sorting algorithm that is suitable for sorting lists of elements where the number of elements and the number of possible key values are approximately the same. It requires O(n + Range) time where n is number of elements in input array and ‘Range’ is number of possible values in array.</p>
 <p>The time Complexity of the algorithm is \(O(n+N)\). </p>
+
+<p class="definition">Definition in file <a class="el" href="../../dd/da8/pigeonhole__sort_8cpp_source.html">pigeonhole_sort.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -164,6 +185,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Main function </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/da8/pigeonhole__sort_8cpp_source.html#l00127">127</a> of file <a class="el" href="../../dd/da8/pigeonhole__sort_8cpp_source.html">pigeonhole_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  127</span>           {</div>
 <div class="line"><span class="lineno">  128</span>    <a class="code hl_function" href="#a34b8683a2b429de5cce57e6d733ec817">test_1</a>();</div>
 <div class="line"><span class="lineno">  129</span>    <a class="code hl_function" href="#a458410412185a5f09199deaff7157a8d">test_2</a>();</div>
@@ -171,15 +194,10 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  131</span> </div>
 <div class="line"><span class="lineno">  132</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  133</span>}</div>
-<div class="ttc" id="apigeonhole__sort_8cpp_html_a34b8683a2b429de5cce57e6d733ec817"><div class="ttname"><a href="#a34b8683a2b429de5cce57e6d733ec817">test_1</a></div><div class="ttdeci">static void test_1()</div><div class="ttdef"><b>Definition</b> pigeonhole_sort.cpp:68</div></div>
-<div class="ttc" id="apigeonhole__sort_8cpp_html_a458410412185a5f09199deaff7157a8d"><div class="ttname"><a href="#a458410412185a5f09199deaff7157a8d">test_2</a></div><div class="ttdeci">static void test_2()</div><div class="ttdef"><b>Definition</b> pigeonhole_sort.cpp:88</div></div>
-<div class="ttc" id="apigeonhole__sort_8cpp_html_af31ec5409537703d9c8a47350386b32a"><div class="ttname"><a href="#af31ec5409537703d9c8a47350386b32a">test_3</a></div><div class="ttdeci">static void test_3()</div><div class="ttdef"><b>Definition</b> pigeonhole_sort.cpp:109</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/da8/pigeonhole__sort_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="518" height="391"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="apigeonhole__sort_8cpp_html_a34b8683a2b429de5cce57e6d733ec817"><div class="ttname"><a href="#a34b8683a2b429de5cce57e6d733ec817">test_1</a></div><div class="ttdeci">static void test_1()</div><div class="ttdef"><b>Definition</b> <a href="../../dd/da8/pigeonhole__sort_8cpp_source.html#l00068">pigeonhole_sort.cpp:68</a></div></div>
+<div class="ttc" id="apigeonhole__sort_8cpp_html_a458410412185a5f09199deaff7157a8d"><div class="ttname"><a href="#a458410412185a5f09199deaff7157a8d">test_2</a></div><div class="ttdeci">static void test_2()</div><div class="ttdef"><b>Definition</b> <a href="../../dd/da8/pigeonhole__sort_8cpp_source.html#l00088">pigeonhole_sort.cpp:88</a></div></div>
+<div class="ttc" id="apigeonhole__sort_8cpp_html_af31ec5409537703d9c8a47350386b32a"><div class="ttname"><a href="#af31ec5409537703d9c8a47350386b32a">test_3</a></div><div class="ttdeci">static void test_3()</div><div class="ttdef"><b>Definition</b> <a href="../../dd/da8/pigeonhole__sort_8cpp_source.html#l00109">pigeonhole_sort.cpp:109</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a34b8683a2b429de5cce57e6d733ec817" name="a34b8683a2b429de5cce57e6d733ec817"></a>
@@ -205,33 +223,24 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Test function 1 with unsorted array {8, 3, 2, 7, 4, 6, 8} </p><dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/da8/pigeonhole__sort_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../dd/da8/pigeonhole__sort_8cpp_source.html">pigeonhole_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   68</span>                     {</div>
 <div class="line"><span class="lineno">   69</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> n = 7;</div>
-<div class="line"><span class="lineno">   70</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, n&gt;</a> test_array = {8, 3, 2, 7, 4, 6, 8};</div>
+<div class="line"><span class="lineno">   70</span>    std::array&lt;int, n&gt; test_array = {8, 3, 2, 7, 4, 6, 8};</div>
 <div class="line"><span class="lineno">   71</span> </div>
 <div class="line"><span class="lineno">   72</span>    test_array = <a class="code hl_function" href="../../d5/d91/namespacesorting.html#a0e9e1b21a1684585e9e50f9afe4d53a3">sorting::pigeonSort&lt;n&gt;</a>(test_array);</div>
 <div class="line"><span class="lineno">   73</span> </div>
-<div class="line"><span class="lineno">   74</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(test_array), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(test_array)));</div>
+<div class="line"><span class="lineno">   74</span>    assert(std::is_sorted(std::begin(test_array), std::end(test_array)));</div>
 <div class="line"><span class="lineno">   75</span> </div>
 <div class="line"><span class="lineno">   76</span>    <span class="comment">// Printing sorted array</span></div>
 <div class="line"><span class="lineno">   77</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++) {</div>
-<div class="line"><span class="lineno">   78</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; test_array.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/at.html">at</a>(i) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">   78</span>        std::cout &lt;&lt; test_array.at(i) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
 <div class="line"><span class="lineno">   79</span>    }</div>
-<div class="line"><span class="lineno">   80</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nPassed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   80</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nPassed\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   81</span>}</div>
-<div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
-<div class="ttc" id="aat_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array/at.html">std::array::at</a></div><div class="ttdeci">T at(T... args)</div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="ais_sorted_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></div><div class="ttdeci">T is_sorted(T... args)</div></div>
-<div class="ttc" id="anamespacesorting_html_a0e9e1b21a1684585e9e50f9afe4d53a3"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#a0e9e1b21a1684585e9e50f9afe4d53a3">sorting::pigeonSort</a></div><div class="ttdeci">std::array&lt; int, N &gt; pigeonSort(std::array&lt; int, N &gt; arr)</div><div class="ttdef"><b>Definition</b> pigeonhole_sort.cpp:34</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/da8/pigeonhole__sort_8cpp_a34b8683a2b429de5cce57e6d733ec817_cgraph.svg" width="420" height="238"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="anamespacesorting_html_a0e9e1b21a1684585e9e50f9afe4d53a3"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#a0e9e1b21a1684585e9e50f9afe4d53a3">sorting::pigeonSort</a></div><div class="ttdeci">std::array&lt; int, N &gt; pigeonSort(std::array&lt; int, N &gt; arr)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/da8/pigeonhole__sort_8cpp_source.html#l00034">pigeonhole_sort.cpp:34</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a458410412185a5f09199deaff7157a8d" name="a458410412185a5f09199deaff7157a8d"></a>
@@ -257,27 +266,24 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Test function 2 with unsorted array {802, 630, 20, 745, 52, 300, 612, 932, 78, 187} </p><dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/da8/pigeonhole__sort_8cpp_source.html#l00088">88</a> of file <a class="el" href="../../dd/da8/pigeonhole__sort_8cpp_source.html">pigeonhole_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   88</span>                     {</div>
 <div class="line"><span class="lineno">   89</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> n = 10;</div>
-<div class="line"><span class="lineno">   90</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, n&gt;</a> test_array = {802, 630, 20,  745, 52,</div>
+<div class="line"><span class="lineno">   90</span>    std::array&lt;int, n&gt; test_array = {802, 630, 20,  745, 52,</div>
 <div class="line"><span class="lineno">   91</span>                                     300, 612, 932, 78,  187};</div>
 <div class="line"><span class="lineno">   92</span> </div>
 <div class="line"><span class="lineno">   93</span>    test_array = <a class="code hl_function" href="../../d5/d91/namespacesorting.html#a0e9e1b21a1684585e9e50f9afe4d53a3">sorting::pigeonSort&lt;n&gt;</a>(test_array);</div>
 <div class="line"><span class="lineno">   94</span> </div>
-<div class="line"><span class="lineno">   95</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(test_array), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(test_array)));</div>
+<div class="line"><span class="lineno">   95</span>    assert(std::is_sorted(std::begin(test_array), std::end(test_array)));</div>
 <div class="line"><span class="lineno">   96</span> </div>
 <div class="line"><span class="lineno">   97</span>    <span class="comment">// Printing sorted array</span></div>
 <div class="line"><span class="lineno">   98</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++) {</div>
-<div class="line"><span class="lineno">   99</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; test_array.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/at.html">at</a>(i) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">   99</span>        std::cout &lt;&lt; test_array.at(i) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
 <div class="line"><span class="lineno">  100</span>    }</div>
-<div class="line"><span class="lineno">  101</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nPassed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  101</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nPassed\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  102</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/da8/pigeonhole__sort_8cpp_a458410412185a5f09199deaff7157a8d_cgraph.svg" width="420" height="238"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af31ec5409537703d9c8a47350386b32a" name="af31ec5409537703d9c8a47350386b32a"></a>
@@ -303,26 +309,23 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Test function 1 with unsorted array {11,13,12,14} </p><dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/da8/pigeonhole__sort_8cpp_source.html#l00109">109</a> of file <a class="el" href="../../dd/da8/pigeonhole__sort_8cpp_source.html">pigeonhole_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  109</span>                     {</div>
 <div class="line"><span class="lineno">  110</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> n = 4;</div>
-<div class="line"><span class="lineno">  111</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, n&gt;</a> test_array = {11, 13, 12, 14};</div>
+<div class="line"><span class="lineno">  111</span>    std::array&lt;int, n&gt; test_array = {11, 13, 12, 14};</div>
 <div class="line"><span class="lineno">  112</span> </div>
 <div class="line"><span class="lineno">  113</span>    test_array = <a class="code hl_function" href="../../d5/d91/namespacesorting.html#a0e9e1b21a1684585e9e50f9afe4d53a3">sorting::pigeonSort&lt;n&gt;</a>(test_array);</div>
 <div class="line"><span class="lineno">  114</span> </div>
-<div class="line"><span class="lineno">  115</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(test_array), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(test_array)));</div>
+<div class="line"><span class="lineno">  115</span>    assert(std::is_sorted(std::begin(test_array), std::end(test_array)));</div>
 <div class="line"><span class="lineno">  116</span> </div>
 <div class="line"><span class="lineno">  117</span>    <span class="comment">// Printing sorted array</span></div>
 <div class="line"><span class="lineno">  118</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++) {</div>
-<div class="line"><span class="lineno">  119</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; test_array.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/at.html">at</a>(i) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">  119</span>        std::cout &lt;&lt; test_array.at(i) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
 <div class="line"><span class="lineno">  120</span>    }</div>
-<div class="line"><span class="lineno">  121</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nPassed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  121</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nPassed\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  122</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/da8/pigeonhole__sort_8cpp_af31ec5409537703d9c8a47350386b32a_cgraph.svg" width="420" height="238"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

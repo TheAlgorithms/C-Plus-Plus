@@ -1,12 +1,10 @@
 <map id="binary_search_tree&lt; T &gt;" name="binary_search_tree&lt; T &gt;">
-<area shape="rect" id="Node000001" title="The Binary Search Tree class." alt="" coords="207,132,370,157"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/unique_ptr.html" title=" " alt="" coords="68,5,237,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,54,276,129,273,133,185,58"/>
-<area shape="rect" id="Node000003" href="$dd/db6/structbinary__search__tree_1_1bst__node.html" title="A struct to represent a node in the Binary Search Tree." alt="" coords="38,124,169,165"/>
-<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="142,61,126,101,115,125,110,122,121,99,137,59"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="95,108,96,89,102,69,121,45,125,48,107,71,102,89,101,109"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="5,13,44,38"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="36,52,60,98,81,122,77,125,55,102,31,54"/>
-<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/size_t.html" title=" " alt="" coords="261,13,343,38"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="301,54,293,131,287,131,296,54"/>
+<area shape="rect" id="Node000001" title="The Binary Search Tree class." alt="" coords="5,132,169,157"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="70,5,240,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,59,116,71,101,103,92,132,87,130,96,101,112,69,121,56"/>
+<area shape="rect" id="Node000003" href="$dd/db6/structbinary__search__tree_1_1bst__node.html" title="A struct to represent a node in the Binary Search Tree." alt="" coords="193,124,325,165"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="160,61,166,81,176,98,189,111,205,121,202,126,186,115,172,102,161,83,155,62"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="235,113,202,72,178,49,181,45,206,68,239,109"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="264,13,302,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="280,54,266,124,260,123,275,53"/>
 </map>

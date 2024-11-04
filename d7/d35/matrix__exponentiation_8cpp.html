@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: others/matrix_exponentiation.cpp File Reference</title>
+<title>TheAlgorithms/C++: others/matrix_exponentiation.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -121,7 +138,9 @@ Include dependency graph for matrix_exponentiation.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d30/matrix__exponentiation_8cpp__incl.svg" width="224" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d7/d35/matrix__exponentiation_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ae1d1ec9482079231e898236e2b23c9ba" id="r_ae1d1ec9482079231e898236e2b23c9ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a>&#160;&#160;&#160;int64_t</td></tr>
@@ -130,15 +149,14 @@ Macros</h2></td></tr>
 <tr class="separator:a600eaf353befc174637855795f12d258"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a276c5a0e984cf60015b27252fe04fe6b" id="r_a276c5a0e984cf60015b27252fe04fe6b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a276c5a0e984cf60015b27252fe04fe6b">pb</a>&#160;&#160;&#160;push_back</td></tr>
 <tr class="separator:a276c5a0e984cf60015b27252fe04fe6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca7d5718ab8c38506adb3bef2469b319" id="r_aca7d5718ab8c38506adb3bef2469b319"><td class="memItemLeft" align="right" valign="top"><a id="aca7d5718ab8c38506adb3bef2469b319" name="aca7d5718ab8c38506adb3bef2469b319"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MOD</b>&#160;&#160;&#160;1000000007</td></tr>
+<tr class="memitem:aca7d5718ab8c38506adb3bef2469b319" id="r_aca7d5718ab8c38506adb3bef2469b319"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca7d5718ab8c38506adb3bef2469b319">MOD</a>&#160;&#160;&#160;1000000007</td></tr>
 <tr class="separator:aca7d5718ab8c38506adb3bef2469b319"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a357cfbebfdc47a237a2862fe146af252" id="r_a357cfbebfdc47a237a2862fe146af252"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a357cfbebfdc47a237a2862fe146af252">multiply</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt; &gt; &amp;A, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt; &gt; &amp;B)</td></tr>
+<tr class="memitem:a357cfbebfdc47a237a2862fe146af252" id="r_a357cfbebfdc47a237a2862fe146af252"><td class="memItemLeft" align="right" valign="top">vector&lt; vector&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a357cfbebfdc47a237a2862fe146af252">multiply</a> (const vector&lt; vector&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt; &gt; &amp;A, const vector&lt; vector&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt; &gt; &amp;B)</td></tr>
 <tr class="separator:a357cfbebfdc47a237a2862fe146af252"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a702a9fc90e79b05b863cc4efa26ae2ec" id="r_a702a9fc90e79b05b863cc4efa26ae2ec"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a702a9fc90e79b05b863cc4efa26ae2ec">power</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt; &gt; &amp;A, <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> p)</td></tr>
+<tr class="memitem:a702a9fc90e79b05b863cc4efa26ae2ec" id="r_a702a9fc90e79b05b863cc4efa26ae2ec"><td class="memItemLeft" align="right" valign="top">vector&lt; vector&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a702a9fc90e79b05b863cc4efa26ae2ec">power</a> (const vector&lt; vector&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt; &gt; &amp;A, <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> p)</td></tr>
 <tr class="separator:a702a9fc90e79b05b863cc4efa26ae2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8389ed58fd0ec66df248014775ad1fa" id="r_ad8389ed58fd0ec66df248014775ad1fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8389ed58fd0ec66df248014775ad1fa">ans</a> (<a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> n)</td></tr>
 <tr class="separator:ad8389ed58fd0ec66df248014775ad1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,10 +167,9 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a9977ad12548c4a49dee9dc3f0685aa54" id="r_a9977ad12548c4a49dee9dc3f0685aa54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a></td></tr>
 <tr class="separator:a9977ad12548c4a49dee9dc3f0685aa54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35b7c98af53ad2ec18658679ad7d43de" id="r_a35b7c98af53ad2ec18658679ad7d43de"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35b7c98af53ad2ec18658679ad7d43de">fib_b</a></td></tr>
+<tr class="memitem:a35b7c98af53ad2ec18658679ad7d43de" id="r_a35b7c98af53ad2ec18658679ad7d43de"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35b7c98af53ad2ec18658679ad7d43de">fib_b</a></td></tr>
 <tr class="separator:a35b7c98af53ad2ec18658679ad7d43de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cbd1162483ef7eccd5b947b2e01b1ab" id="r_a0cbd1162483ef7eccd5b947b2e01b1ab"><td class="memItemLeft" align="right" valign="top"><a id="a0cbd1162483ef7eccd5b947b2e01b1ab" name="a0cbd1162483ef7eccd5b947b2e01b1ab"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fib_c</b></td></tr>
+<tr class="memitem:a0cbd1162483ef7eccd5b947b2e01b1ab" id="r_a0cbd1162483ef7eccd5b947b2e01b1ab"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cbd1162483ef7eccd5b947b2e01b1ab">fib_c</a></td></tr>
 <tr class="separator:a0cbd1162483ef7eccd5b947b2e01b1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -172,6 +189,8 @@ This way you can find the \(10^{18}\) fibonacci numberMOD. I have given a genera
 <li>Multiply with F to get the last matrix of size (1 \(\times\)k).</li>
 </ol>
 <p>The first element of this matrix is the required result. </p>
+
+<p class="definition">Definition in file <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp_source.html">matrix_exponentiation.cpp</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a600eaf353befc174637855795f12d258" name="a600eaf353befc174637855795f12d258"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a600eaf353befc174637855795f12d258">&#9670;&#160;</a></span>endl</h2>
@@ -184,7 +203,9 @@ This way you can find the \(10^{18}\) fibonacci numberMOD. I have given a genera
         </tr>
       </table>
 </div><div class="memdoc">
-<p>shorthand definition for <code><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></code> </p>
+<p>shorthand definition for <code>std::endl</code> </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp_source.html">matrix_exponentiation.cpp</a>.</p>
 
 </div>
 </div>
@@ -201,6 +222,24 @@ This way you can find the \(10^{18}\) fibonacci numberMOD. I have given a genera
 </div><div class="memdoc">
 <p>shorthand definition for <code>int64_t</code> </p>
 
+<p class="definition">Definition at line <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp_source.html">matrix_exponentiation.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aca7d5718ab8c38506adb3bef2469b319" name="aca7d5718ab8c38506adb3bef2469b319"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca7d5718ab8c38506adb3bef2469b319">&#9670;&#160;</a></span>MOD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MOD&#160;&#160;&#160;1000000007</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp_source.html">matrix_exponentiation.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a276c5a0e984cf60015b27252fe04fe6b" name="a276c5a0e984cf60015b27252fe04fe6b"></a>
@@ -215,6 +254,8 @@ This way you can find the \(10^{18}\) fibonacci numberMOD. I have given a genera
       </table>
 </div><div class="memdoc">
 <p>shorthand definition for <code>int64_t</code> </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp_source.html#l00039">39</a> of file <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp_source.html">matrix_exponentiation.cpp</a>.</p>
 
 </div>
 </div>
@@ -240,17 +281,19 @@ This way you can find the \(10^{18}\) fibonacci numberMOD. I have given a genera
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>\(n^\text{th}\) Fibonacci number </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp_source.html#l00091">91</a> of file <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp_source.html">matrix_exponentiation.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   91</span>             {</div>
 <div class="line"><span class="lineno">   92</span>    <span class="keywordflow">if</span> (n == 0)</div>
 <div class="line"><span class="lineno">   93</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   94</span>    <span class="keywordflow">if</span> (n &lt;= <a class="code hl_variable" href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a>)</div>
 <div class="line"><span class="lineno">   95</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a35b7c98af53ad2ec18658679ad7d43de">fib_b</a>[n - 1];</div>
 <div class="line"><span class="lineno">   96</span>    <span class="comment">// F1</span></div>
-<div class="line"><span class="lineno">   97</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;ll&gt;</a> F1(<a class="code hl_variable" href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a> + 1);</div>
+<div class="line"><span class="lineno">   97</span>    vector&lt;ll&gt; F1(<a class="code hl_variable" href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a> + 1);</div>
 <div class="line"><span class="lineno">   98</span>    <span class="keywordflow">for</span> (ll i = 1; i &lt;= <a class="code hl_variable" href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a>; i++) F1[i] = <a class="code hl_variable" href="#a35b7c98af53ad2ec18658679ad7d43de">fib_b</a>[i - 1];</div>
 <div class="line"><span class="lineno">   99</span> </div>
 <div class="line"><span class="lineno">  100</span>    <span class="comment">// Transpose matrix</span></div>
-<div class="line"><span class="lineno">  101</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;vector&lt;ll&gt;</a>&gt; T(<a class="code hl_variable" href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a> + 1, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;ll&gt;</a>(<a class="code hl_variable" href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a> + 1));</div>
+<div class="line"><span class="lineno">  101</span>    vector&lt;vector&lt;ll&gt;&gt; T(<a class="code hl_variable" href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a> + 1, vector&lt;ll&gt;(<a class="code hl_variable" href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a> + 1));</div>
 <div class="line"><span class="lineno">  102</span>    <span class="keywordflow">for</span> (ll i = 1; i &lt;= <a class="code hl_variable" href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a>; i++) {</div>
 <div class="line"><span class="lineno">  103</span>        <span class="keywordflow">for</span> (ll j = 1; j &lt;= <a class="code hl_variable" href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a>; j++) {</div>
 <div class="line"><span class="lineno">  104</span>            <span class="keywordflow">if</span> (i &lt; <a class="code hl_variable" href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a>) {</div>
@@ -273,16 +316,10 @@ This way you can find the \(10^{18}\) fibonacci numberMOD. I have given a genera
 <div class="line"><span class="lineno">  121</span>    }</div>
 <div class="line"><span class="lineno">  122</span>    <span class="keywordflow">return</span> res;</div>
 <div class="line"><span class="lineno">  123</span>}</div>
-<div class="ttc" id="amatrix__exponentiation_8cpp_html_a35b7c98af53ad2ec18658679ad7d43de"><div class="ttname"><a href="#a35b7c98af53ad2ec18658679ad7d43de">fib_b</a></div><div class="ttdeci">vector&lt; ll &gt; fib_b</div><div class="ttdef"><b>Definition</b> matrix_exponentiation.cpp:50</div></div>
-<div class="ttc" id="amatrix__exponentiation_8cpp_html_a702a9fc90e79b05b863cc4efa26ae2ec"><div class="ttname"><a href="#a702a9fc90e79b05b863cc4efa26ae2ec">power</a></div><div class="ttdeci">vector&lt; vector&lt; ll &gt; &gt; power(const vector&lt; vector&lt; ll &gt; &gt; &amp;A, ll p)</div><div class="ttdef"><b>Definition</b> matrix_exponentiation.cpp:76</div></div>
-<div class="ttc" id="amatrix__exponentiation_8cpp_html_a9977ad12548c4a49dee9dc3f0685aa54"><div class="ttname"><a href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a></div><div class="ttdeci">ll mat_size</div><div class="ttdef"><b>Definition</b> matrix_exponentiation.cpp:45</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d35/matrix__exponentiation_8cpp_ad8389ed58fd0ec66df248014775ad1fa_cgraph.svg" width="272" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="amatrix__exponentiation_8cpp_html_a35b7c98af53ad2ec18658679ad7d43de"><div class="ttname"><a href="#a35b7c98af53ad2ec18658679ad7d43de">fib_b</a></div><div class="ttdeci">vector&lt; ll &gt; fib_b</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d35/matrix__exponentiation_8cpp_source.html#l00050">matrix_exponentiation.cpp:50</a></div></div>
+<div class="ttc" id="amatrix__exponentiation_8cpp_html_a702a9fc90e79b05b863cc4efa26ae2ec"><div class="ttname"><a href="#a702a9fc90e79b05b863cc4efa26ae2ec">power</a></div><div class="ttdeci">vector&lt; vector&lt; ll &gt; &gt; power(const vector&lt; vector&lt; ll &gt; &gt; &amp;A, ll p)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d35/matrix__exponentiation_8cpp_source.html#l00076">matrix_exponentiation.cpp:76</a></div></div>
+<div class="ttc" id="amatrix__exponentiation_8cpp_html_a9977ad12548c4a49dee9dc3f0685aa54"><div class="ttname"><a href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a></div><div class="ttdeci">ll mat_size</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d35/matrix__exponentiation_8cpp_source.html#l00045">matrix_exponentiation.cpp:45</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -300,32 +337,32 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Main function </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp_source.html#l00126">126</a> of file <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp_source.html">matrix_exponentiation.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  126</span>           {</div>
-<div class="line"><span class="lineno">  127</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">cin</a>.tie(0);</div>
-<div class="line"><span class="lineno">  128</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">cout</a>.tie(0);</div>
+<div class="line"><span class="lineno">  127</span>    cin.tie(0);</div>
+<div class="line"><span class="lineno">  128</span>    cout.tie(0);</div>
 <div class="line"><span class="lineno">  129</span>    ll t;</div>
-<div class="line"><span class="lineno">  130</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">cin</a> &gt;&gt; t;</div>
+<div class="line"><span class="lineno">  130</span>    cin &gt;&gt; t;</div>
 <div class="line"><span class="lineno">  131</span>    ll i, j, x;</div>
 <div class="line"><span class="lineno">  132</span>    <span class="keywordflow">while</span> (t--) {</div>
-<div class="line"><span class="lineno">  133</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">cin</a> &gt;&gt; <a class="code hl_variable" href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a>;</div>
+<div class="line"><span class="lineno">  133</span>        cin &gt;&gt; <a class="code hl_variable" href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a>;</div>
 <div class="line"><span class="lineno">  134</span>        <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code hl_variable" href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a>; i++) {</div>
-<div class="line"><span class="lineno">  135</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">cin</a> &gt;&gt; x;</div>
+<div class="line"><span class="lineno">  135</span>            cin &gt;&gt; x;</div>
 <div class="line"><span class="lineno">  136</span>            <a class="code hl_variable" href="#a35b7c98af53ad2ec18658679ad7d43de">fib_b</a>.pb(x);</div>
 <div class="line"><span class="lineno">  137</span>        }</div>
 <div class="line"><span class="lineno">  138</span>        <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code hl_variable" href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a>; i++) {</div>
-<div class="line"><span class="lineno">  139</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">cin</a> &gt;&gt; x;</div>
+<div class="line"><span class="lineno">  139</span>            cin &gt;&gt; x;</div>
 <div class="line"><span class="lineno">  140</span>            fib_c.pb(x);</div>
 <div class="line"><span class="lineno">  141</span>        }</div>
-<div class="line"><span class="lineno">  142</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">cin</a> &gt;&gt; x;</div>
-<div class="line"><span class="lineno">  143</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">cout</a> &lt;&lt; ans(x) &lt;&lt; <a class="code hl_define" href="#a600eaf353befc174637855795f12d258">endl</a>;</div>
+<div class="line"><span class="lineno">  142</span>        cin &gt;&gt; x;</div>
+<div class="line"><span class="lineno">  143</span>        cout &lt;&lt; ans(x) &lt;&lt; <a class="code hl_define" href="#a600eaf353befc174637855795f12d258">endl</a>;</div>
 <div class="line"><span class="lineno">  144</span>        <a class="code hl_variable" href="#a35b7c98af53ad2ec18658679ad7d43de">fib_b</a>.clear();</div>
 <div class="line"><span class="lineno">  145</span>        fib_c.clear();</div>
 <div class="line"><span class="lineno">  146</span>    }</div>
 <div class="line"><span class="lineno">  147</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  148</span>}</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="amatrix__exponentiation_8cpp_html_a600eaf353befc174637855795f12d258"><div class="ttname"><a href="#a600eaf353befc174637855795f12d258">endl</a></div><div class="ttdeci">#define endl</div><div class="ttdef"><b>Definition</b> matrix_exponentiation.cpp:36</div></div>
+<div class="ttc" id="amatrix__exponentiation_8cpp_html_a600eaf353befc174637855795f12d258"><div class="ttname"><a href="#a600eaf353befc174637855795f12d258">endl</a></div><div class="ttdeci">#define endl</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d35/matrix__exponentiation_8cpp_source.html#l00036">matrix_exponentiation.cpp:36</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -336,14 +373,14 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt; &gt; multiply </td>
+          <td class="memname">vector&lt; vector&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt; &gt; multiply </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
+          <td class="paramtype">const vector&lt; vector&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>B</em></span>&#160;)</td>
+          <td class="paramtype">const vector&lt; vector&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>B</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -357,8 +394,10 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>\(p=n\) </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>matrix of dimension (m \(\times\)q) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp_source.html">matrix_exponentiation.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   58</span>                                                         {</div>
-<div class="line"><span class="lineno">   59</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;vector&lt;ll&gt;</a>&gt; C(<a class="code hl_variable" href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a> + 1, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;ll&gt;</a>(<a class="code hl_variable" href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a> + 1));</div>
+<div class="line"><span class="lineno">   59</span>    vector&lt;vector&lt;ll&gt;&gt; C(<a class="code hl_variable" href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a> + 1, vector&lt;ll&gt;(<a class="code hl_variable" href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a> + 1));</div>
 <div class="line"><span class="lineno">   60</span>    <span class="keywordflow">for</span> (ll i = 1; i &lt;= <a class="code hl_variable" href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a>; i++) {</div>
 <div class="line"><span class="lineno">   61</span>        <span class="keywordflow">for</span> (ll j = 1; j &lt;= <a class="code hl_variable" href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a>; j++) {</div>
 <div class="line"><span class="lineno">   62</span>            <span class="keywordflow">for</span> (ll z = 1; z &lt;= <a class="code hl_variable" href="#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a>; z++) {</div>
@@ -378,9 +417,9 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt; &gt; power </td>
+          <td class="memname">vector&lt; vector&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt; &gt; power </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
+          <td class="paramtype">const vector&lt; vector&lt; <a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -398,23 +437,20 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>matrix of same dimension as A </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp_source.html#l00076">76</a> of file <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp_source.html">matrix_exponentiation.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   76</span>                                                            {</div>
 <div class="line"><span class="lineno">   77</span>    <span class="keywordflow">if</span> (p == 1)</div>
 <div class="line"><span class="lineno">   78</span>        <span class="keywordflow">return</span> A;</div>
 <div class="line"><span class="lineno">   79</span>    <span class="keywordflow">if</span> (p % 2 == 1) {</div>
 <div class="line"><span class="lineno">   80</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a357cfbebfdc47a237a2862fe146af252">multiply</a>(A, <a class="code hl_function" href="#a702a9fc90e79b05b863cc4efa26ae2ec">power</a>(A, p - 1));</div>
 <div class="line"><span class="lineno">   81</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   82</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;vector&lt;ll&gt;</a>&gt; X = <a class="code hl_function" href="#a702a9fc90e79b05b863cc4efa26ae2ec">power</a>(A, p / 2);</div>
+<div class="line"><span class="lineno">   82</span>        vector&lt;vector&lt;ll&gt;&gt; X = <a class="code hl_function" href="#a702a9fc90e79b05b863cc4efa26ae2ec">power</a>(A, p / 2);</div>
 <div class="line"><span class="lineno">   83</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a357cfbebfdc47a237a2862fe146af252">multiply</a>(X, X);</div>
 <div class="line"><span class="lineno">   84</span>    }</div>
 <div class="line"><span class="lineno">   85</span>}</div>
-<div class="ttc" id="amatrix__exponentiation_8cpp_html_a357cfbebfdc47a237a2862fe146af252"><div class="ttname"><a href="#a357cfbebfdc47a237a2862fe146af252">multiply</a></div><div class="ttdeci">vector&lt; vector&lt; ll &gt; &gt; multiply(const vector&lt; vector&lt; ll &gt; &gt; &amp;A, const vector&lt; vector&lt; ll &gt; &gt; &amp;B)</div><div class="ttdef"><b>Definition</b> matrix_exponentiation.cpp:57</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d35/matrix__exponentiation_8cpp_a702a9fc90e79b05b863cc4efa26ae2ec_cgraph.svg" width="182" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="amatrix__exponentiation_8cpp_html_a357cfbebfdc47a237a2862fe146af252"><div class="ttname"><a href="#a357cfbebfdc47a237a2862fe146af252">multiply</a></div><div class="ttdeci">vector&lt; vector&lt; ll &gt; &gt; multiply(const vector&lt; vector&lt; ll &gt; &gt; &amp;A, const vector&lt; vector&lt; ll &gt; &gt; &amp;B)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d35/matrix__exponentiation_8cpp_source.html#l00057">matrix_exponentiation.cpp:57</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -425,11 +461,29 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt;<a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a>&gt; fib_b</td>
+          <td class="memname">vector&lt;<a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a>&gt; fib_b</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>global vector variables used in the <a class="el" href="#ad8389ed58fd0ec66df248014775ad1fa">ans</a> function. </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000008">Todo</a></b></dt><dd>@stepfencurryxiao add documetnation </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp_source.html">matrix_exponentiation.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0cbd1162483ef7eccd5b947b2e01b1ab" name="a0cbd1162483ef7eccd5b947b2e01b1ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cbd1162483ef7eccd5b947b2e01b1ab">&#9670;&#160;</a></span>fib_c</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="#ae1d1ec9482079231e898236e2b23c9ba">ll</a>&gt; fib_c</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp_source.html">matrix_exponentiation.cpp</a>.</p>
 
 </div>
 </div>
@@ -445,6 +499,8 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>global variable mat_size </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000007">Todo</a></b></dt><dd>@stepfencurryxiao add documetnation </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp_source.html">matrix_exponentiation.cpp</a>.</p>
 
 </div>
 </div>

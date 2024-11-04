@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: greedy_algorithms::DigitSeparation Class Reference</title>
+<title>TheAlgorithms/C++: greedy_algorithms::DigitSeparation Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -119,15 +136,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afd54c969a6c9bab16b4a064fbc8ed40e" id="r_afd54c969a6c9bab16b4a064fbc8ed40e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd54c969a6c9bab16b4a064fbc8ed40e">DigitSeparation</a> ()</td></tr>
 <tr class="memdesc:afd54c969a6c9bab16b4a064fbc8ed40e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for the <a class="el" href="../../da/d49/classgreedy__algorithms_1_1_digit_separation.html" title="A class that provides methods to separate the digits of a large positive number.">DigitSeparation</a> class.  <br /></td></tr>
 <tr class="separator:afd54c969a6c9bab16b4a064fbc8ed40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34769a780845e9d4279152899bd3bf79" id="r_a34769a780845e9d4279152899bd3bf79"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34769a780845e9d4279152899bd3bf79">digitSeparationReverseOrder</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a> largeNumber) const</td></tr>
+<tr class="memitem:a34769a780845e9d4279152899bd3bf79" id="r_a34769a780845e9d4279152899bd3bf79"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34769a780845e9d4279152899bd3bf79">digitSeparationReverseOrder</a> (std::int64_t largeNumber) const</td></tr>
 <tr class="memdesc:a34769a780845e9d4279152899bd3bf79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of digitSeparationReverseOrder method.  <br /></td></tr>
 <tr class="separator:a34769a780845e9d4279152899bd3bf79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1809ae6828223999374bde5b197a59c8" id="r_a1809ae6828223999374bde5b197a59c8"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1809ae6828223999374bde5b197a59c8">digitSeparationForwardOrder</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a> largeNumber) const</td></tr>
+<tr class="memitem:a1809ae6828223999374bde5b197a59c8" id="r_a1809ae6828223999374bde5b197a59c8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1809ae6828223999374bde5b197a59c8">digitSeparationForwardOrder</a> (std::int64_t largeNumber) const</td></tr>
 <tr class="memdesc:a1809ae6828223999374bde5b197a59c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of digitSeparationForwardOrder method.  <br /></td></tr>
 <tr class="separator:a1809ae6828223999374bde5b197a59c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class that provides methods to separate the digits of a large positive number. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d36/digit__separation_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../d3/d36/digit__separation_8cpp_source.html">digit_separation.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afd54c969a6c9bab16b4a064fbc8ed40e" name="afd54c969a6c9bab16b4a064fbc8ed40e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd54c969a6c9bab16b4a064fbc8ed40e">&#9670;&#160;</a></span>DigitSeparation()</h2>
@@ -153,6 +172,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Default constructor for the <a class="el" href="../../da/d49/classgreedy__algorithms_1_1_digit_separation.html" title="A class that provides methods to separate the digits of a large positive number.">DigitSeparation</a> class. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d36/digit__separation_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../d3/d36/digit__separation_8cpp_source.html">digit_separation.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   40</span>{}</div>
 </div><!-- fragment -->
 </div>
@@ -168,9 +189,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a> &gt; greedy_algorithms::DigitSeparation::digitSeparationForwardOrder </td>
+          <td class="memname">std::vector&lt; std::int64_t &gt; greedy_algorithms::DigitSeparation::digitSeparationForwardOrder </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a></td>          <td class="paramname"><span class="paramname"><em>largeNumber</em></span></td><td>)</td>
+          <td class="paramtype">std::int64_t</td>          <td class="paramname"><span class="paramname"><em>largeNumber</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -189,22 +210,17 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A vector of digits in forward order. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d36/digit__separation_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../d3/d36/digit__separation_8cpp_source.html">digit_separation.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   69</span>                                      {</div>
-<div class="line"><span class="lineno">   70</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::int64_t&gt;</a> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> =</div>
+<div class="line"><span class="lineno">   70</span>        std::vector&lt;std::int64_t&gt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> =</div>
 <div class="line"><span class="lineno">   71</span>            <a class="code hl_function" href="#a34769a780845e9d4279152899bd3bf79">digitSeparationReverseOrder</a>(largeNumber);</div>
-<div class="line"><span class="lineno">   72</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/reverse.html">std::reverse</a>(<a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.begin(), <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.end());</div>
+<div class="line"><span class="lineno">   72</span>        std::reverse(<a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.begin(), <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.end());</div>
 <div class="line"><span class="lineno">   73</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">   74</span>    }</div>
-<div class="ttc" id="aclassgreedy__algorithms_1_1_digit_separation_html_a34769a780845e9d4279152899bd3bf79"><div class="ttname"><a href="#a34769a780845e9d4279152899bd3bf79">greedy_algorithms::DigitSeparation::digitSeparationReverseOrder</a></div><div class="ttdeci">std::vector&lt; std::int64_t &gt; digitSeparationReverseOrder(std::int64_t largeNumber) const</div><div class="ttdoc">Implementation of digitSeparationReverseOrder method.</div><div class="ttdef"><b>Definition</b> digit_separation.cpp:48</div></div>
-<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> fibonacci_sum.cpp:77</div></div>
-<div class="ttc" id="areverse_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/reverse.html">std::reverse</a></div><div class="ttdeci">T reverse(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d49/classgreedy__algorithms_1_1_digit_separation_a1809ae6828223999374bde5b197a59c8_cgraph.svg" width="468" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassgreedy__algorithms_1_1_digit_separation_html_a34769a780845e9d4279152899bd3bf79"><div class="ttname"><a href="#a34769a780845e9d4279152899bd3bf79">greedy_algorithms::DigitSeparation::digitSeparationReverseOrder</a></div><div class="ttdeci">std::vector&lt; std::int64_t &gt; digitSeparationReverseOrder(std::int64_t largeNumber) const</div><div class="ttdoc">Implementation of digitSeparationReverseOrder method.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d36/digit__separation_8cpp_source.html#l00048">digit_separation.cpp:48</a></div></div>
+<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> <a href="../../de/dc3/fibonacci__sum_8cpp_source.html#l00077">fibonacci_sum.cpp:77</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a34769a780845e9d4279152899bd3bf79" name="a34769a780845e9d4279152899bd3bf79"></a>
@@ -217,9 +233,9 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a> &gt; greedy_algorithms::DigitSeparation::digitSeparationReverseOrder </td>
+          <td class="memname">std::vector&lt; std::int64_t &gt; greedy_algorithms::DigitSeparation::digitSeparationReverseOrder </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a></td>          <td class="paramname"><span class="paramname"><em>largeNumber</em></span></td><td>)</td>
+          <td class="paramtype">std::int64_t</td>          <td class="paramname"><span class="paramname"><em>largeNumber</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -238,8 +254,10 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A vector of digits in reverse order. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d36/digit__separation_8cpp_source.html#l00048">48</a> of file <a class="el" href="../../d3/d36/digit__separation_8cpp_source.html">digit_separation.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   49</span>                                      {</div>
-<div class="line"><span class="lineno">   50</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::int64_t&gt;</a> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
+<div class="line"><span class="lineno">   50</span>        std::vector&lt;std::int64_t&gt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">   51</span>        <span class="keywordflow">if</span> (largeNumber != 0) {</div>
 <div class="line"><span class="lineno">   52</span>            <span class="keywordflow">while</span> (largeNumber != 0) {</div>
 <div class="line"><span class="lineno">   53</span>                <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.push_back(std::abs(largeNumber % 10));</div>
@@ -254,7 +272,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>greedy_algorithms/<a class="el" href="../../d3/d36/digit__separation_8cpp.html">digit_separation.cpp</a></li>
+<li>greedy_algorithms/<a class="el" href="../../d3/d36/digit__separation_8cpp_source.html">digit_separation.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: data_structures/stack.hpp Source File</title>
+<title>TheAlgorithms/C++: data_structures/stack.hpp Source File</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -107,74 +124,60 @@ $(function(){initNavTree('df/d47/stack_8hpp_source.html','../../'); initResizabl
   <div class="headertitle"><div class="title">stack.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../df/d47/stack_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @file</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @author danghai</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * @author [Piotr Idzik](https://github.com/vil02)</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * @brief  This class specifies the basic operation on a stack as a linked list</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> **/</span></div>
+<a href="../../df/d47/stack_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef DATA_STRUCTURES_STACK_HPP_</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define DATA_STRUCTURES_STACK_HPP_</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;stdexcept&gt;</span>  <span class="comment">/// for std::invalid_argument</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;stdexcept&gt;</span>  </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="../../d3/d09/node_8hpp.html">node.hpp</a>&quot;</span>  <span class="comment">/// for Node</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"></span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">/** Definition of the stack class</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * \tparam value_type type of data nodes of the linked list in the stack should</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * contain</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="../../d3/d09/node_8hpp.html">node.hpp</a>&quot;</span>  </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> ValueType&gt;</div>
 <div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../d1/dc2/classstack.html">   19</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a> {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">using </span>value_type = ValueType;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"></span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">    /** Show stack */</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../d1/dc2/classstack.html#a8bce109630118a34faae717f72986033">   24</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/dc2/classstack.html#a8bce109630118a34faae717f72986033">display</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Top --&gt; &quot;</span>;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        display_all(this-&gt;<a class="code hl_variable" href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stackTop</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/get.html">get</a>());</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Size of stack: &quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e">size</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Top --&gt; &quot;</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        display_all(this-&gt;<a class="code hl_variable" href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stackTop</a>.get());</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        std::cout &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Size of stack: &quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e">size</a> &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
 </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;value_type&gt;</a> toVector()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">return</span> push_all_to_vector(this-&gt;<a class="code hl_variable" href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stackTop</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/get.html">get</a>(), this-&gt;size);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    std::vector&lt;value_type&gt; toVector()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">return</span> push_all_to_vector(this-&gt;<a class="code hl_variable" href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stackTop</a>.get(), this-&gt;size);</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> ensureNotEmpty()<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d1/dc2/classstack.html#a163eb9a6206c874c9bf98d032fca11c5">isEmptyStack</a>()) {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keywordflow">throw</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a>(<span class="stringliteral">&quot;Stack is empty.&quot;</span>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Stack is empty.&quot;</span>);</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        }</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> <span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">    /** Determine whether the stack is empty */</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../d1/dc2/classstack.html#a163eb9a6206c874c9bf98d032fca11c5">   44</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d1/dc2/classstack.html#a163eb9a6206c874c9bf98d032fca11c5">isEmptyStack</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stackTop</a> == <span class="keyword">nullptr</span>); }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"></span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">    /** Add new item to the stack */</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d1/dc2/classstack.html#a90df277532c23519aa7ac3c08ed90a1d">   47</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/dc2/classstack.html#a90df277532c23519aa7ac3c08ed90a1d">push</a>(<span class="keyword">const</span> value_type&amp; item) {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keyword">auto</span> newNode = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html">std::make_shared&lt;Node&lt;value_type&gt;</a>&gt;();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keyword">auto</span> newNode = std::make_shared&lt;Node&lt;value_type&gt;&gt;();</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        newNode-&gt;data = item;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        newNode-&gt;next = <a class="code hl_variable" href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stackTop</a>;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <a class="code hl_variable" href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stackTop</a> = newNode;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <a class="code hl_variable" href="../../d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e">size</a>++;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
 </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"></span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">    /** Return the top element of the stack */</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../d1/dc2/classstack.html#ae09630c4384903d187801921b2ddc709">   56</a></span>    value_type <a class="code hl_function" href="../../d1/dc2/classstack.html#ae09630c4384903d187801921b2ddc709">top</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        ensureNotEmpty();</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stackTop</a>-&gt;data;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
 </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment"></span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">    /** Remove the top element of the stack */</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../d1/dc2/classstack.html#a3647fb4418890f19e0dc414b8092b8b0">   62</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/dc2/classstack.html#a3647fb4418890f19e0dc414b8092b8b0">pop</a>() {</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        ensureNotEmpty();</div>
@@ -182,8 +185,7 @@ $(function(){initNavTree('df/d47/stack_8hpp_source.html','../../'); initResizabl
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <a class="code hl_variable" href="../../d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e">size</a>--;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
 </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"></span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">    /** Clear stack */</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../d1/dc2/classstack.html#a6f13157faa1a762c59e67da8b9516092">   69</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/dc2/classstack.html#a6f13157faa1a762c59e67da8b9516092">clear</a>() {</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <a class="code hl_variable" href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stackTop</a> = <span class="keyword">nullptr</span>;</div>
@@ -193,32 +195,24 @@ $(function(){initNavTree('df/d47/stack_8hpp_source.html','../../'); initResizabl
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> <span class="keyword">private</span>:</div>
 <div class="foldopen" id="foldopen00075" data-start="{" data-end="};">
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">   75</a></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;Node&lt;value_type&gt;</a>&gt; <a class="code hl_variable" href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stackTop</a> =</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        {};                <span class="comment">/**&lt; Pointer to the stack */</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">   75</a></span>    std::shared_ptr&lt;Node&lt;value_type&gt;&gt; <a class="code hl_variable" href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stackTop</a> =</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        {};                </div>
 </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e">   77</a></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> <a class="code hl_variable" href="../../d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e">size</a> = 0;  <span class="comment">///&lt; size of stack</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e">   77</a></span>    std::size_t <a class="code hl_variable" href="../../d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e">size</a> = 0;  </div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>};</div>
 </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#endif  </span><span class="comment">// DATA_STRUCTURES_STACK_HPP_</span></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aclassstack_html"><div class="ttname"><a href="../../d1/dc2/classstack.html">stack</a></div><div class="ttdoc">for std::invalid_argument</div><div class="ttdef"><b>Definition</b> stack.hpp:19</div></div>
-<div class="ttc" id="aclassstack_html_a0a6b2b93ec970296940798ee98a5072e"><div class="ttname"><a href="../../d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e">stack::size</a></div><div class="ttdeci">std::size_t size</div><div class="ttdoc">size of stack</div><div class="ttdef"><b>Definition</b> stack.hpp:77</div></div>
-<div class="ttc" id="aclassstack_html_a163eb9a6206c874c9bf98d032fca11c5"><div class="ttname"><a href="../../d1/dc2/classstack.html#a163eb9a6206c874c9bf98d032fca11c5">stack::isEmptyStack</a></div><div class="ttdeci">bool isEmptyStack() const</div><div class="ttdef"><b>Definition</b> stack.hpp:44</div></div>
-<div class="ttc" id="aclassstack_html_a3647fb4418890f19e0dc414b8092b8b0"><div class="ttname"><a href="../../d1/dc2/classstack.html#a3647fb4418890f19e0dc414b8092b8b0">stack::pop</a></div><div class="ttdeci">void pop()</div><div class="ttdef"><b>Definition</b> stack.hpp:62</div></div>
-<div class="ttc" id="aclassstack_html_a6f13157faa1a762c59e67da8b9516092"><div class="ttname"><a href="../../d1/dc2/classstack.html#a6f13157faa1a762c59e67da8b9516092">stack::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition</b> stack.hpp:69</div></div>
-<div class="ttc" id="aclassstack_html_a8bce109630118a34faae717f72986033"><div class="ttname"><a href="../../d1/dc2/classstack.html#a8bce109630118a34faae717f72986033">stack::display</a></div><div class="ttdeci">void display() const</div><div class="ttdef"><b>Definition</b> stack.hpp:24</div></div>
-<div class="ttc" id="aclassstack_html_a90df277532c23519aa7ac3c08ed90a1d"><div class="ttname"><a href="../../d1/dc2/classstack.html#a90df277532c23519aa7ac3c08ed90a1d">stack::push</a></div><div class="ttdeci">void push(const value_type &amp;item)</div><div class="ttdef"><b>Definition</b> stack.hpp:47</div></div>
-<div class="ttc" id="aclassstack_html_ae09630c4384903d187801921b2ddc709"><div class="ttname"><a href="../../d1/dc2/classstack.html#ae09630c4384903d187801921b2ddc709">stack::top</a></div><div class="ttdeci">value_type top() const</div><div class="ttdef"><b>Definition</b> stack.hpp:56</div></div>
-<div class="ttc" id="aclassstack_html_aefb3dac828e32b4ec014ff4b5d43a6b8"><div class="ttname"><a href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stack::stackTop</a></div><div class="ttdeci">std::shared_ptr&lt; Node&lt; value_type &gt; &gt; stackTop</div><div class="ttdef"><b>Definition</b> stack.hpp:75</div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="aget_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/shared_ptr/get.html">std::shared_ptr::get</a></div><div class="ttdeci">T get(T... args)</div></div>
-<div class="ttc" id="ainvalid_argument_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a></div></div>
-<div class="ttc" id="amake_shared_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html">std::make_shared</a></div><div class="ttdeci">T make_shared(T... args)</div></div>
+<div class="ttc" id="aclassstack_html"><div class="ttname"><a href="../../d1/dc2/classstack.html">stack</a></div><div class="ttdoc">for std::invalid_argument</div><div class="ttdef"><b>Definition</b> <a href="#l00019">stack.hpp:19</a></div></div>
+<div class="ttc" id="aclassstack_html_a0a6b2b93ec970296940798ee98a5072e"><div class="ttname"><a href="../../d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e">stack::size</a></div><div class="ttdeci">std::size_t size</div><div class="ttdoc">size of stack</div><div class="ttdef"><b>Definition</b> <a href="#l00077">stack.hpp:77</a></div></div>
+<div class="ttc" id="aclassstack_html_a163eb9a6206c874c9bf98d032fca11c5"><div class="ttname"><a href="../../d1/dc2/classstack.html#a163eb9a6206c874c9bf98d032fca11c5">stack::isEmptyStack</a></div><div class="ttdeci">bool isEmptyStack() const</div><div class="ttdef"><b>Definition</b> <a href="#l00044">stack.hpp:44</a></div></div>
+<div class="ttc" id="aclassstack_html_a3647fb4418890f19e0dc414b8092b8b0"><div class="ttname"><a href="../../d1/dc2/classstack.html#a3647fb4418890f19e0dc414b8092b8b0">stack::pop</a></div><div class="ttdeci">void pop()</div><div class="ttdef"><b>Definition</b> <a href="#l00062">stack.hpp:62</a></div></div>
+<div class="ttc" id="aclassstack_html_a6f13157faa1a762c59e67da8b9516092"><div class="ttname"><a href="../../d1/dc2/classstack.html#a6f13157faa1a762c59e67da8b9516092">stack::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition</b> <a href="#l00069">stack.hpp:69</a></div></div>
+<div class="ttc" id="aclassstack_html_a8bce109630118a34faae717f72986033"><div class="ttname"><a href="../../d1/dc2/classstack.html#a8bce109630118a34faae717f72986033">stack::display</a></div><div class="ttdeci">void display() const</div><div class="ttdef"><b>Definition</b> <a href="#l00024">stack.hpp:24</a></div></div>
+<div class="ttc" id="aclassstack_html_a90df277532c23519aa7ac3c08ed90a1d"><div class="ttname"><a href="../../d1/dc2/classstack.html#a90df277532c23519aa7ac3c08ed90a1d">stack::push</a></div><div class="ttdeci">void push(const value_type &amp;item)</div><div class="ttdef"><b>Definition</b> <a href="#l00047">stack.hpp:47</a></div></div>
+<div class="ttc" id="aclassstack_html_ae09630c4384903d187801921b2ddc709"><div class="ttname"><a href="../../d1/dc2/classstack.html#ae09630c4384903d187801921b2ddc709">stack::top</a></div><div class="ttdeci">value_type top() const</div><div class="ttdef"><b>Definition</b> <a href="#l00056">stack.hpp:56</a></div></div>
+<div class="ttc" id="aclassstack_html_aefb3dac828e32b4ec014ff4b5d43a6b8"><div class="ttname"><a href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stack::stackTop</a></div><div class="ttdeci">std::shared_ptr&lt; Node&lt; value_type &gt; &gt; stackTop</div><div class="ttdef"><b>Definition</b> <a href="#l00075">stack.hpp:75</a></div></div>
 <div class="ttc" id="anode_8hpp_html"><div class="ttname"><a href="../../d3/d09/node_8hpp.html">node.hpp</a></div><div class="ttdoc">Provides Node class and related utilities.</div></div>
-<div class="ttc" id="ashared_ptr_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a></div></div>
-<div class="ttc" id="asize_t_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a></div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

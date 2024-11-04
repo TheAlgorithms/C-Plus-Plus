@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: math/ncr_modulo_p.cpp File Reference</title>
+<title>TheAlgorithms/C++: math/ncr_modulo_p.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -122,7 +139,9 @@ Include dependency graph for ncr_modulo_p.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d25/ncr__modulo__p_8cpp__incl.svg" width="252" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../de/dab/ncr__modulo__p_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html">math::ncr_modulo_p::NCRModuloP</a></td></tr>
@@ -160,6 +179,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This program aims at calculating <a href="https://cp-algorithms.com/combinatorics/binomial-coefficients.html" target="_blank">nCr modulo p</a>. </p>
 <p>nCr is defined as n! / (r! * (n-r)!) where n! represents factorial of n. In many cases, the value of nCr is too large to fit in a 64 bit integer. Hence, in competitive programming, there are many problems or subproblems to compute nCr modulo p where p is a given number. </p><dl class="section author"><dt>Author</dt><dd><a href="https://github.com/KaustubhDamania" target="_blank">Kaustubh Damania</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../de/dab/ncr__modulo__p_8cpp_source.html">ncr_modulo_p.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="afa2b50f4716fc3b42221a72e676e1422" name="afa2b50f4716fc3b42221a72e676e1422"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa2b50f4716fc3b42221a72e676e1422">&#9670;&#160;</a></span>example()</h2>
@@ -177,6 +198,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>example showing the usage of the <a class="el" href="../../d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html" title="Class which contains all methods required for calculating nCr mod p.">math::ncr_modulo_p::NCRModuloP</a> class </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dab/ncr__modulo__p_8cpp_source.html#l00175">175</a> of file <a class="el" href="../../de/dab/ncr__modulo__p_8cpp_source.html">ncr_modulo_p.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  175</span>               {</div>
 <div class="line"><span class="lineno">  176</span>    <span class="keyword">const</span> int64_t size = 1e6 + 1;</div>
 <div class="line"><span class="lineno">  177</span>    <span class="keyword">const</span> int64_t p = 1e9 + 7;</div>
@@ -188,12 +211,11 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  183</span>    <span class="comment">// having the ncrObj we can efficiently query the values of (n C r)%p</span></div>
 <div class="line"><span class="lineno">  184</span>    <span class="comment">// note that time of the computation does not depend on size</span></div>
 <div class="line"><span class="lineno">  185</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= 7; i++) {</div>
-<div class="line"><span class="lineno">  186</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; 6 &lt;&lt; <span class="stringliteral">&quot;C&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; mod &quot;</span> &lt;&lt; p &lt;&lt; <span class="stringliteral">&quot; = &quot;</span> &lt;&lt; ncrObj.ncr(6, i)</div>
+<div class="line"><span class="lineno">  186</span>        std::cout &lt;&lt; 6 &lt;&lt; <span class="stringliteral">&quot;C&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; mod &quot;</span> &lt;&lt; p &lt;&lt; <span class="stringliteral">&quot; = &quot;</span> &lt;&lt; ncrObj.ncr(6, i)</div>
 <div class="line"><span class="lineno">  187</span>                  &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  188</span>    }</div>
 <div class="line"><span class="lineno">  189</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aclassmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p_html"><div class="ttname"><a href="../../d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html">math::ncr_modulo_p::NCRModuloP</a></div><div class="ttdoc">Class which contains all methods required for calculating nCr mod p.</div><div class="ttdef"><b>Definition</b> ncr_modulo_p.cpp:79</div></div>
+<div class="ttc" id="aclassmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p_html"><div class="ttname"><a href="../../d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html">math::ncr_modulo_p::NCRModuloP</a></div><div class="ttdoc">Class which contains all methods required for calculating nCr mod p.</div><div class="ttdef"><b>Definition</b> <a href="../../de/dab/ncr__modulo__p_8cpp_source.html#l00079">ncr_modulo_p.cpp:79</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -237,6 +259,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the gcd of a and b </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dab/ncr__modulo__p_8cpp_source.html#l00044">44</a> of file <a class="el" href="../../de/dab/ncr__modulo__p_8cpp_source.html">ncr_modulo_p.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   45</span>                                {</div>
 <div class="line"><span class="lineno">   46</span>    <span class="keywordflow">if</span> (a == 0) {</div>
 <div class="line"><span class="lineno">   47</span>        x = 0;</div>
@@ -251,14 +275,9 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   56</span>    y = x1;</div>
 <div class="line"><span class="lineno">   57</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/da0/gcd__iterative__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e">gcd</a>;</div>
 <div class="line"><span class="lineno">   58</span>}</div>
-<div class="ttc" id="agcd__iterative__euclidean_8cpp_html_ae48807fa2b7000afae599e67f327545e"><div class="ttname"><a href="../../d4/da0/gcd__iterative__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e">gcd</a></div><div class="ttdeci">int gcd(int num1, int num2)</div><div class="ttdef"><b>Definition</b> gcd_iterative_euclidean.cpp:15</div></div>
-<div class="ttc" id="ancr__modulo__p_8cpp_html_a9010ad5669d31449c3bf3271ab5ebc86"><div class="ttname"><a href="#a9010ad5669d31449c3bf3271ab5ebc86">math::ncr_modulo_p::utils::gcdExtended</a></div><div class="ttdeci">int64_t gcdExtended(const int64_t &amp;a, const int64_t &amp;b, int64_t &amp;x, int64_t &amp;y)</div><div class="ttdoc">finds the values x and y such that a*x + b*y = gcd(a,b)</div><div class="ttdef"><b>Definition</b> ncr_modulo_p.cpp:44</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/dab/ncr__modulo__p_8cpp_a9010ad5669d31449c3bf3271ab5ebc86_cgraph.svg" width="240" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="agcd__iterative__euclidean_8cpp_html_ae48807fa2b7000afae599e67f327545e"><div class="ttname"><a href="../../d4/da0/gcd__iterative__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e">gcd</a></div><div class="ttdeci">int gcd(int num1, int num2)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/da0/gcd__iterative__euclidean_8cpp_source.html#l00015">gcd_iterative_euclidean.cpp:15</a></div></div>
+<div class="ttc" id="ancr__modulo__p_8cpp_html_a9010ad5669d31449c3bf3271ab5ebc86"><div class="ttname"><a href="#a9010ad5669d31449c3bf3271ab5ebc86">math::ncr_modulo_p::utils::gcdExtended</a></div><div class="ttdeci">int64_t gcdExtended(const int64_t &amp;a, const int64_t &amp;b, int64_t &amp;x, int64_t &amp;y)</div><div class="ttdoc">finds the values x and y such that a*x + b*y = gcd(a,b)</div><div class="ttdef"><b>Definition</b> <a href="../../de/dab/ncr__modulo__p_8cpp_source.html#l00044">ncr_modulo_p.cpp:44</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -275,13 +294,15 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/dab/ncr__modulo__p_8cpp_source.html#l00191">191</a> of file <a class="el" href="../../de/dab/ncr__modulo__p_8cpp_source.html">ncr_modulo_p.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  191</span>           {</div>
 <div class="line"><span class="lineno">  192</span>    <a class="code hl_function" href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a>();</div>
 <div class="line"><span class="lineno">  193</span>    <a class="code hl_function" href="#afa2b50f4716fc3b42221a72e676e1422">example</a>();</div>
 <div class="line"><span class="lineno">  194</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  195</span>}</div>
-<div class="ttc" id="ancr__modulo__p_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">tests math::ncr_modulo_p::NCRModuloP</div><div class="ttdef"><b>Definition</b> ncr_modulo_p.cpp:142</div></div>
-<div class="ttc" id="ancr__modulo__p_8cpp_html_afa2b50f4716fc3b42221a72e676e1422"><div class="ttname"><a href="#afa2b50f4716fc3b42221a72e676e1422">example</a></div><div class="ttdeci">void example()</div><div class="ttdoc">example showing the usage of the math::ncr_modulo_p::NCRModuloP class</div><div class="ttdef"><b>Definition</b> ncr_modulo_p.cpp:175</div></div>
+<div class="ttc" id="ancr__modulo__p_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">tests math::ncr_modulo_p::NCRModuloP</div><div class="ttdef"><b>Definition</b> <a href="../../de/dab/ncr__modulo__p_8cpp_source.html#l00142">ncr_modulo_p.cpp:142</a></div></div>
+<div class="ttc" id="ancr__modulo__p_8cpp_html_afa2b50f4716fc3b42221a72e676e1422"><div class="ttname"><a href="#afa2b50f4716fc3b42221a72e676e1422">example</a></div><div class="ttdeci">void example()</div><div class="ttdoc">example showing the usage of the math::ncr_modulo_p::NCRModuloP class</div><div class="ttdef"><b>Definition</b> <a href="../../de/dab/ncr__modulo__p_8cpp_source.html#l00175">ncr_modulo_p.cpp:175</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -312,6 +333,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the inverce of a modulo m, if it exists, -1 otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dab/ncr__modulo__p_8cpp_source.html#l00066">66</a> of file <a class="el" href="../../de/dab/ncr__modulo__p_8cpp_source.html">ncr_modulo_p.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   66</span>                                                       {</div>
 <div class="line"><span class="lineno">   67</span>    int64_t x = 0, y = 0;</div>
 <div class="line"><span class="lineno">   68</span>    <span class="keyword">const</span> int64_t <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = <a class="code hl_function" href="#a9010ad5669d31449c3bf3271ab5ebc86">gcdExtended</a>(a, m, x, y);</div>
@@ -321,13 +344,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   72</span>        <span class="keywordflow">return</span> ((x + m) % m);</div>
 <div class="line"><span class="lineno">   73</span>    }</div>
 <div class="line"><span class="lineno">   74</span>}</div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a2f67508d5f392b0321772169342c98ad"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">numerical_methods::simpson_method::g</a></div><div class="ttdeci">double g(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:115</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/dab/ncr__modulo__p_8cpp_a6c7bfe3bdaa086d32261a5c5584d0fa9_cgraph.svg" width="428" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a2f67508d5f392b0321772169342c98ad"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">numerical_methods::simpson_method::g</a></div><div class="ttdeci">double g(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d18/composite__simpson__rule_8cpp_source.html#l00115">composite_simpson_rule.cpp:115</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a483bb8ccf42aaf7375a83e91490eda1e" name="a483bb8ccf42aaf7375a83e91490eda1e"></a>
@@ -354,6 +372,8 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>tests <a class="el" href="../../d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html" title="Class which contains all methods required for calculating nCr mod p.">math::ncr_modulo_p::NCRModuloP</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dab/ncr__modulo__p_8cpp_source.html#l00142">142</a> of file <a class="el" href="../../de/dab/ncr__modulo__p_8cpp_source.html">ncr_modulo_p.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  142</span>                    {</div>
 <div class="line"><span class="lineno">  143</span>    <span class="keyword">struct </span><a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a> {</div>
 <div class="line"><span class="lineno">  144</span>        <span class="keyword">const</span> int64_t size;</div>
@@ -366,7 +386,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  151</span>                 <span class="keyword">const</span> int64_t r, <span class="keyword">const</span> int64_t expected)</div>
 <div class="line"><span class="lineno">  152</span>            : size(size), p(p), n(n), r(r), expected(expected) {}</div>
 <div class="line"><span class="lineno">  153</span>    };</div>
-<div class="line"><span class="lineno">  154</span>    <span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;TestCase&gt;</a> test_cases = {</div>
+<div class="line"><span class="lineno">  154</span>    <span class="keyword">const</span> std::vector&lt;TestCase&gt; test_cases = {</div>
 <div class="line"><span class="lineno">  155</span>        <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(60000, 1000000007, 52323, 26161, 224944353),</div>
 <div class="line"><span class="lineno">  156</span>        <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(20, 5, 6, 2, 30 % 5),</div>
 <div class="line"><span class="lineno">  157</span>        <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(100, 29, 7, 3, 35 % 29),</div>
@@ -381,17 +401,11 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  166</span>               tc.expected);</div>
 <div class="line"><span class="lineno">  167</span>    }</div>
 <div class="line"><span class="lineno">  168</span> </div>
-<div class="line"><span class="lineno">  169</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n\nAll tests have successfully passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  169</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\n\nAll tests have successfully passed!\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  170</span>}</div>
-<div class="ttc" id="aclassmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p_html_a499df7a01bcd348345dc5a0ab79bb0e9"><div class="ttname"><a href="../../d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html#a499df7a01bcd348345dc5a0ab79bb0e9">math::ncr_modulo_p::NCRModuloP::ncr</a></div><div class="ttdeci">int64_t ncr(const int64_t &amp;n, const int64_t &amp;r) const</div><div class="ttdoc">computes nCr % p</div><div class="ttdef"><b>Definition</b> ncr_modulo_p.cpp:116</div></div>
-<div class="ttc" id="astruct_test_case_html"><div class="ttname"><a href="../../da/d86/struct_test_case.html">TestCase</a></div><div class="ttdoc">represents single example inputs and expected output of the function longest_common_string_length</div><div class="ttdef"><b>Definition</b> longest_common_string.cpp:54</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/dab/ncr__modulo__p_8cpp_a483bb8ccf42aaf7375a83e91490eda1e_cgraph.svg" width="248" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p_html_a499df7a01bcd348345dc5a0ab79bb0e9"><div class="ttname"><a href="../../d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html#a499df7a01bcd348345dc5a0ab79bb0e9">math::ncr_modulo_p::NCRModuloP::ncr</a></div><div class="ttdeci">int64_t ncr(const int64_t &amp;n, const int64_t &amp;r) const</div><div class="ttdoc">computes nCr % p</div><div class="ttdef"><b>Definition</b> <a href="../../de/dab/ncr__modulo__p_8cpp_source.html#l00116">ncr_modulo_p.cpp:116</a></div></div>
+<div class="ttc" id="astruct_test_case_html"><div class="ttname"><a href="../../da/d86/struct_test_case.html">TestCase</a></div><div class="ttdoc">represents single example inputs and expected output of the function longest_common_string_length</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/longest__common__string_8cpp_source.html#l00054">longest_common_string.cpp:54</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

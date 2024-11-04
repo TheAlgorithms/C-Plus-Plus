@@ -1,9 +1,9 @@
 <map id="machine_learning::aystar_search::AyStarSearch&lt; Puzzle &gt;" name="machine_learning::aystar_search::AyStarSearch&lt; Puzzle &gt;">
 <area shape="rect" id="Node000001" title="A class defining A* search algorithm. for some initial state and final state." alt="" coords="8,346,175,402"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="7,213,176,268"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="7,213,176,268"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,284,94,346,89,346,89,284"/>
 <area shape="rect" id="Node000003" href="$da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html" title="Struct that handles all the information related to the current state." alt="" coords="8,94,175,150"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,165,94,212,89,212,89,165"/>
-<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="5,5,178,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,5,178,31"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,47,94,93,89,93,89,47"/>
 </map>

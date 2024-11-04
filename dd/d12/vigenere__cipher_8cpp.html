@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: ciphers/vigenere_cipher.cpp File Reference</title>
+<title>TheAlgorithms/C++: ciphers/vigenere_cipher.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -121,7 +138,9 @@ Include dependency graph for vigenere_cipher.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d1a/vigenere__cipher_8cpp__incl.svg" width="248" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../dd/d12/vigenere__cipher_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/namespaceciphers.html">ciphers</a></td></tr>
@@ -133,9 +152,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6bd3880ea6820c232c1eddf47553c257" id="r_a6bd3880ea6820c232c1eddf47553c257"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bd3880ea6820c232c1eddf47553c257">ciphers::vigenere::encrypt</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;text, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;key)</td></tr>
+<tr class="memitem:a6bd3880ea6820c232c1eddf47553c257" id="r_a6bd3880ea6820c232c1eddf47553c257"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bd3880ea6820c232c1eddf47553c257">ciphers::vigenere::encrypt</a> (const std::string &amp;text, const std::string &amp;key)</td></tr>
 <tr class="separator:a6bd3880ea6820c232c1eddf47553c257"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cfc3f9b20a0f230a2fcefd31dc6848e" id="r_a3cfc3f9b20a0f230a2fcefd31dc6848e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cfc3f9b20a0f230a2fcefd31dc6848e">ciphers::vigenere::decrypt</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;text, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;key)</td></tr>
+<tr class="memitem:a3cfc3f9b20a0f230a2fcefd31dc6848e" id="r_a3cfc3f9b20a0f230a2fcefd31dc6848e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cfc3f9b20a0f230a2fcefd31dc6848e">ciphers::vigenere::decrypt</a> (const std::string &amp;text, const std::string &amp;key)</td></tr>
 <tr class="separator:a3cfc3f9b20a0f230a2fcefd31dc6848e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1a3968e7947464bee7714f6d43b7002" id="r_ae1a3968e7947464bee7714f6d43b7002"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1a3968e7947464bee7714f6d43b7002">test</a> ()</td></tr>
 <tr class="separator:ae1a3968e7947464bee7714f6d43b7002"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,6 +180,8 @@ Algorithm</h3>
 <dd>
 This program implements Vigenère cipher for only uppercase English alphabet characters (i.e. A-Z).</dd></dl>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/imdeep2905" target="_blank">Deep Raval</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../dd/d12/vigenere__cipher_8cpp_source.html">vigenere_cipher.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a3cfc3f9b20a0f230a2fcefd31dc6848e" name="a3cfc3f9b20a0f230a2fcefd31dc6848e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3cfc3f9b20a0f230a2fcefd31dc6848e">&#9670;&#160;</a></span>decrypt()</h2>
@@ -169,14 +190,14 @@ This program implements Vigenère cipher for only uppercase English alphabet cha
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> ciphers::vigenere::decrypt </td>
+          <td class="memname">std::string ciphers::vigenere::decrypt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span>&#160;)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -188,11 +209,13 @@ This program implements Vigenère cipher for only uppercase English alphabet cha
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>new decrypted text </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d12/vigenere__cipher_8cpp_source.html#l00092">92</a> of file <a class="el" href="../../dd/d12/vigenere__cipher_8cpp_source.html">vigenere_cipher.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   92</span>                                                                        {</div>
 <div class="line"><span class="lineno">   93</span>            <span class="comment">// Going through each character of text and key</span></div>
 <div class="line"><span class="lineno">   94</span>            <span class="comment">// Note that key is visited in circular way hence  j = (j + 1) % |key|</span></div>
-<div class="line"><span class="lineno">   95</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> decrypted_text = <span class="stringliteral">&quot;&quot;</span>; <span class="comment">// Empty string to store decrypted text</span></div>
-<div class="line"><span class="lineno">   96</span>            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0, j = 0; i &lt; text.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>(); i++, j = (j + 1) % key.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>()) {</div>
+<div class="line"><span class="lineno">   95</span>            std::string decrypted_text = <span class="stringliteral">&quot;&quot;</span>; <span class="comment">// Empty string to store decrypted text</span></div>
+<div class="line"><span class="lineno">   96</span>            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0, j = 0; i &lt; text.length(); i++, j = (j + 1) % key.length()) {</div>
 <div class="line"><span class="lineno">   97</span>                <span class="keywordtype">int</span> place_value_text = get_value(text[i]); <span class="comment">// Getting value of character in text</span></div>
 <div class="line"><span class="lineno">   98</span>                <span class="keywordtype">int</span> place_value_key = get_value(key[j]); <span class="comment">// Getting value of character in key</span></div>
 <div class="line"><span class="lineno">   99</span>                place_value_text = (place_value_text - place_value_key + 26) % 26; <span class="comment">// Applying decryption</span></div>
@@ -201,15 +224,8 @@ This program implements Vigenère cipher for only uppercase English alphabet cha
 <div class="line"><span class="lineno">  102</span>            }        </div>
 <div class="line"><span class="lineno">  103</span>            <span class="keywordflow">return</span> decrypted_text; <span class="comment">// Returning decrypted text</span></div>
 <div class="line"><span class="lineno">  104</span>        }</div>
-<div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
-<div class="ttc" id="asha256_8cpp_html_a9e98c180d32b04aab6f767cb0c13e1da"><div class="ttname"><a href="../../d4/d08/sha256_8cpp.html#a9e98c180d32b04aab6f767cb0c13e1da">hashing::sha256::get_char</a></div><div class="ttdeci">char get_char(const std::string &amp;input, std::size_t pos)</div><div class="ttdoc">Returns the character at pos after the input is padded.</div><div class="ttdef"><b>Definition</b> sha256.cpp:170</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">std::string::length</a></div><div class="ttdeci">T length(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d12/vigenere__cipher_8cpp_a3cfc3f9b20a0f230a2fcefd31dc6848e_cgraph.svg" width="310" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="asha256_8cpp_html_a9e98c180d32b04aab6f767cb0c13e1da"><div class="ttname"><a href="../../d4/d08/sha256_8cpp.html#a9e98c180d32b04aab6f767cb0c13e1da">hashing::sha256::get_char</a></div><div class="ttdeci">char get_char(const std::string &amp;input, std::size_t pos)</div><div class="ttdoc">Returns the character at pos after the input is padded.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d08/sha256_8cpp_source.html#l00170">sha256.cpp:170</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6bd3880ea6820c232c1eddf47553c257" name="a6bd3880ea6820c232c1eddf47553c257"></a>
@@ -219,14 +235,14 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> ciphers::vigenere::encrypt </td>
+          <td class="memname">std::string ciphers::vigenere::encrypt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span>&#160;)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -238,11 +254,13 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>new encrypted text </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d12/vigenere__cipher_8cpp_source.html#l00073">73</a> of file <a class="el" href="../../dd/d12/vigenere__cipher_8cpp_source.html">vigenere_cipher.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   73</span>                                                                        {</div>
-<div class="line"><span class="lineno">   74</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> encrypted_text = <span class="stringliteral">&quot;&quot;</span>; <span class="comment">// Empty string to store encrypted text</span></div>
+<div class="line"><span class="lineno">   74</span>            std::string encrypted_text = <span class="stringliteral">&quot;&quot;</span>; <span class="comment">// Empty string to store encrypted text</span></div>
 <div class="line"><span class="lineno">   75</span>            <span class="comment">// Going through each character of text and key</span></div>
 <div class="line"><span class="lineno">   76</span>            <span class="comment">// Note that key is visited in circular way hence  j = (j + 1) % |key|</span></div>
-<div class="line"><span class="lineno">   77</span>            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0, j = 0; i &lt; text.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>(); i++, j = (j + 1) % key.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>()) {</div>
+<div class="line"><span class="lineno">   77</span>            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0, j = 0; i &lt; text.length(); i++, j = (j + 1) % key.length()) {</div>
 <div class="line"><span class="lineno">   78</span>                <span class="keywordtype">int</span> place_value_text = get_value(text[i]); <span class="comment">// Getting value of character in text</span></div>
 <div class="line"><span class="lineno">   79</span>                <span class="keywordtype">int</span> place_value_key = get_value(key[j]); <span class="comment">// Getting value of character in key</span></div>
 <div class="line"><span class="lineno">   80</span>                place_value_text = (place_value_text + place_value_key) % 26; <span class="comment">// Applying encryption</span></div>
@@ -251,12 +269,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   83</span>            }</div>
 <div class="line"><span class="lineno">   84</span>            <span class="keywordflow">return</span> encrypted_text; <span class="comment">// Returning encrypted text</span></div>
 <div class="line"><span class="lineno">   85</span>        }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d12/vigenere__cipher_8cpp_a6bd3880ea6820c232c1eddf47553c257_cgraph.svg" width="310" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -274,18 +287,15 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Driver Code </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d12/vigenere__cipher_8cpp_source.html#l00131">131</a> of file <a class="el" href="../../dd/d12/vigenere__cipher_8cpp_source.html">vigenere_cipher.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  131</span>           {</div>
 <div class="line"><span class="lineno">  132</span>    <span class="comment">// Testing</span></div>
 <div class="line"><span class="lineno">  133</span>    <a class="code hl_function" href="#ae1a3968e7947464bee7714f6d43b7002">test</a>();</div>
 <div class="line"><span class="lineno">  134</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  135</span>}</div>
-<div class="ttc" id="avigenere__cipher_8cpp_html_ae1a3968e7947464bee7714f6d43b7002"><div class="ttname"><a href="#ae1a3968e7947464bee7714f6d43b7002">test</a></div><div class="ttdeci">void test()</div><div class="ttdef"><b>Definition</b> vigenere_cipher.cpp:111</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d12/vigenere__cipher_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="271" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="avigenere__cipher_8cpp_html_ae1a3968e7947464bee7714f6d43b7002"><div class="ttname"><a href="#ae1a3968e7947464bee7714f6d43b7002">test</a></div><div class="ttdeci">void test()</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d12/vigenere__cipher_8cpp_source.html#l00111">vigenere_cipher.cpp:111</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae1a3968e7947464bee7714f6d43b7002" name="ae1a3968e7947464bee7714f6d43b7002"></a>
@@ -303,34 +313,29 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Function to test above algorithm </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d12/vigenere__cipher_8cpp_source.html#l00111">111</a> of file <a class="el" href="../../dd/d12/vigenere__cipher_8cpp_source.html">vigenere_cipher.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  111</span>            {</div>
 <div class="line"><span class="lineno">  112</span>    <span class="comment">// Test 1</span></div>
-<div class="line"><span class="lineno">  113</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> text1 = <span class="stringliteral">&quot;NIKOLATESLA&quot;</span>;</div>
-<div class="line"><span class="lineno">  114</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> encrypted1 = <a class="code hl_function" href="#a6bd3880ea6820c232c1eddf47553c257">ciphers::vigenere::encrypt</a>(text1, <span class="stringliteral">&quot;TESLA&quot;</span>);</div>
-<div class="line"><span class="lineno">  115</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> decrypted1 = <a class="code hl_function" href="#a3cfc3f9b20a0f230a2fcefd31dc6848e">ciphers::vigenere::decrypt</a>(encrypted1, <span class="stringliteral">&quot;TESLA&quot;</span>);</div>
+<div class="line"><span class="lineno">  113</span>    std::string text1 = <span class="stringliteral">&quot;NIKOLATESLA&quot;</span>;</div>
+<div class="line"><span class="lineno">  114</span>    std::string encrypted1 = <a class="code hl_function" href="#a6bd3880ea6820c232c1eddf47553c257">ciphers::vigenere::encrypt</a>(text1, <span class="stringliteral">&quot;TESLA&quot;</span>);</div>
+<div class="line"><span class="lineno">  115</span>    std::string decrypted1 = <a class="code hl_function" href="#a3cfc3f9b20a0f230a2fcefd31dc6848e">ciphers::vigenere::decrypt</a>(encrypted1, <span class="stringliteral">&quot;TESLA&quot;</span>);</div>
 <div class="line"><span class="lineno">  116</span>    assert(text1 == decrypted1);</div>
-<div class="line"><span class="lineno">  117</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Original text : &quot;</span> &lt;&lt; text1;</div>
-<div class="line"><span class="lineno">  118</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot; , Encrypted text (with key = TESLA) : &quot;</span> &lt;&lt; encrypted1;</div>
-<div class="line"><span class="lineno">  119</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot; , Decrypted text : &quot;</span>&lt;&lt; decrypted1 &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  117</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Original text : &quot;</span> &lt;&lt; text1;</div>
+<div class="line"><span class="lineno">  118</span>    std::cout &lt;&lt; <span class="stringliteral">&quot; , Encrypted text (with key = TESLA) : &quot;</span> &lt;&lt; encrypted1;</div>
+<div class="line"><span class="lineno">  119</span>    std::cout &lt;&lt; <span class="stringliteral">&quot; , Decrypted text : &quot;</span>&lt;&lt; decrypted1 &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  120</span>    <span class="comment">// Test 2</span></div>
-<div class="line"><span class="lineno">  121</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> text2 = <span class="stringliteral">&quot;GOOGLEIT&quot;</span>;</div>
-<div class="line"><span class="lineno">  122</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> encrypted2 = <a class="code hl_function" href="#a6bd3880ea6820c232c1eddf47553c257">ciphers::vigenere::encrypt</a>(text2, <span class="stringliteral">&quot;REALLY&quot;</span>);</div>
-<div class="line"><span class="lineno">  123</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> decrypted2 = <a class="code hl_function" href="#a3cfc3f9b20a0f230a2fcefd31dc6848e">ciphers::vigenere::decrypt</a>(encrypted2, <span class="stringliteral">&quot;REALLY&quot;</span>);</div>
+<div class="line"><span class="lineno">  121</span>    std::string text2 = <span class="stringliteral">&quot;GOOGLEIT&quot;</span>;</div>
+<div class="line"><span class="lineno">  122</span>    std::string encrypted2 = <a class="code hl_function" href="#a6bd3880ea6820c232c1eddf47553c257">ciphers::vigenere::encrypt</a>(text2, <span class="stringliteral">&quot;REALLY&quot;</span>);</div>
+<div class="line"><span class="lineno">  123</span>    std::string decrypted2 = <a class="code hl_function" href="#a3cfc3f9b20a0f230a2fcefd31dc6848e">ciphers::vigenere::decrypt</a>(encrypted2, <span class="stringliteral">&quot;REALLY&quot;</span>);</div>
 <div class="line"><span class="lineno">  124</span>    assert(text2 == decrypted2);</div>
-<div class="line"><span class="lineno">  125</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Original text : &quot;</span> &lt;&lt; text2;</div>
-<div class="line"><span class="lineno">  126</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot; , Encrypted text (with key = REALLY) : &quot;</span> &lt;&lt; encrypted2;</div>
-<div class="line"><span class="lineno">  127</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot; , Decrypted text : &quot;</span>&lt;&lt; decrypted2 &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  125</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Original text : &quot;</span> &lt;&lt; text2;</div>
+<div class="line"><span class="lineno">  126</span>    std::cout &lt;&lt; <span class="stringliteral">&quot; , Encrypted text (with key = REALLY) : &quot;</span> &lt;&lt; encrypted2;</div>
+<div class="line"><span class="lineno">  127</span>    std::cout &lt;&lt; <span class="stringliteral">&quot; , Decrypted text : &quot;</span>&lt;&lt; decrypted2 &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  128</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="avigenere__cipher_8cpp_html_a3cfc3f9b20a0f230a2fcefd31dc6848e"><div class="ttname"><a href="#a3cfc3f9b20a0f230a2fcefd31dc6848e">ciphers::vigenere::decrypt</a></div><div class="ttdeci">std::string decrypt(const std::string &amp;text, const std::string &amp;key)</div><div class="ttdef"><b>Definition</b> vigenere_cipher.cpp:92</div></div>
-<div class="ttc" id="avigenere__cipher_8cpp_html_a6bd3880ea6820c232c1eddf47553c257"><div class="ttname"><a href="#a6bd3880ea6820c232c1eddf47553c257">ciphers::vigenere::encrypt</a></div><div class="ttdeci">std::string encrypt(const std::string &amp;text, const std::string &amp;key)</div><div class="ttdef"><b>Definition</b> vigenere_cipher.cpp:73</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d12/vigenere__cipher_8cpp_ae1a3968e7947464bee7714f6d43b7002_cgraph.svg" width="174" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="avigenere__cipher_8cpp_html_a3cfc3f9b20a0f230a2fcefd31dc6848e"><div class="ttname"><a href="#a3cfc3f9b20a0f230a2fcefd31dc6848e">ciphers::vigenere::decrypt</a></div><div class="ttdeci">std::string decrypt(const std::string &amp;text, const std::string &amp;key)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d12/vigenere__cipher_8cpp_source.html#l00092">vigenere_cipher.cpp:92</a></div></div>
+<div class="ttc" id="avigenere__cipher_8cpp_html_a6bd3880ea6820c232c1eddf47553c257"><div class="ttname"><a href="#a6bd3880ea6820c232c1eddf47553c257">ciphers::vigenere::encrypt</a></div><div class="ttdeci">std::string encrypt(const std::string &amp;text, const std::string &amp;key)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d12/vigenere__cipher_8cpp_source.html#l00073">vigenere_cipher.cpp:73</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

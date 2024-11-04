@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: data_structures/binary_search_tree.cpp File Reference</title>
+<title>TheAlgorithms/C++: data_structures/binary_search_tree.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -120,7 +137,9 @@ Include dependency graph for binary_search_tree.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d0c/binary__search__tree_8cpp__incl.svg" width="162" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d3/d26/binary__search__tree_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da1/structnode.html">node</a></td></tr>
@@ -153,14 +172,15 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aebb1a5194a2cd7efe7ee7fc417e78293" id="r_aebb1a5194a2cd7efe7ee7fc417e78293"><td class="memItemLeft" align="right" valign="top"><a id="aebb1a5194a2cd7efe7ee7fc417e78293" name="aebb1a5194a2cd7efe7ee7fc417e78293"></a>
-<a class="el" href="../../dc/db5/struct_queue.html">Queue</a>&#160;</td><td class="memItemRight" valign="bottom"><b>queue</b></td></tr>
+<tr class="memitem:aebb1a5194a2cd7efe7ee7fc417e78293" id="r_aebb1a5194a2cd7efe7ee7fc417e78293"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/db5/struct_queue.html">Queue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebb1a5194a2cd7efe7ee7fc417e78293">queue</a></td></tr>
 <tr class="separator:aebb1a5194a2cd7efe7ee7fc417e78293"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A simple tree implementation using structured nodes. </p>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000003">Todo</a></b></dt><dd>update code to use C++ STL library features and OO structure </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>This program is a poor implementation - C style - and does not utilize any of the C++ STL features. </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d3/d26/binary__search__tree_8cpp_source.html">binary_search_tree.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="aa65d9b7fa9bd517ace3d819abc85c8b6" name="aa65d9b7fa9bd517ace3d819abc85c8b6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa65d9b7fa9bd517ace3d819abc85c8b6">&#9670;&#160;</a></span>BFT()</h2>
@@ -176,15 +196,16 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d26/binary__search__tree_8cpp_source.html#l00092">92</a> of file <a class="el" href="../../d3/d26/binary__search__tree_8cpp_source.html">binary_search_tree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   92</span>                  {</div>
 <div class="line"><span class="lineno">   93</span>    <span class="keywordflow">if</span> (n != NULL) {</div>
-<div class="line"><span class="lineno">   94</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; n-&gt;val &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
+<div class="line"><span class="lineno">   94</span>        std::cout &lt;&lt; n-&gt;val &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
 <div class="line"><span class="lineno">   95</span>        enqueue(n-&gt;left);</div>
 <div class="line"><span class="lineno">   96</span>        enqueue(n-&gt;right);</div>
 <div class="line"><span class="lineno">   97</span>        BFT(dequeue());</div>
 <div class="line"><span class="lineno">   98</span>    }</div>
 <div class="line"><span class="lineno">   99</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -202,9 +223,11 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d26/binary__search__tree_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../d3/d26/binary__search__tree_8cpp_source.html">binary_search_tree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   27</span>{ <span class="keywordflow">return</span> (<a class="code hl_class" href="../../db/da9/classqueue.html">queue</a>.t[<a class="code hl_class" href="../../db/da9/classqueue.html">queue</a>.<a class="code hl_function" href="../../db/da9/classqueue.html#a75e231798bc706b8b0773a07f78713e7">front</a>++]); }</div>
-<div class="ttc" id="aclassqueue_html"><div class="ttname"><a href="../../db/da9/classqueue.html">queue</a></div><div class="ttdef"><b>Definition</b> queue.hpp:9</div></div>
-<div class="ttc" id="aclassqueue_html_a75e231798bc706b8b0773a07f78713e7"><div class="ttname"><a href="../../db/da9/classqueue.html#a75e231798bc706b8b0773a07f78713e7">queue::front</a></div><div class="ttdeci">value_type front() const</div><div class="ttdef"><b>Definition</b> queue.hpp:72</div></div>
+<div class="ttc" id="aclassqueue_html"><div class="ttname"><a href="../../db/da9/classqueue.html">queue</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/ded/queue_8hpp_source.html#l00009">queue.hpp:9</a></div></div>
+<div class="ttc" id="aclassqueue_html_a75e231798bc706b8b0773a07f78713e7"><div class="ttname"><a href="../../db/da9/classqueue.html#a75e231798bc706b8b0773a07f78713e7">queue::front</a></div><div class="ttdeci">value_type front() const</div><div class="ttdef"><b>Definition</b> <a href="../../d7/ded/queue_8hpp_source.html#l00072">queue.hpp:72</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -222,6 +245,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d26/binary__search__tree_8cpp_source.html#l00025">25</a> of file <a class="el" href="../../d3/d26/binary__search__tree_8cpp_source.html">binary_search_tree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   25</span>{ <a class="code hl_class" href="../../db/da9/classqueue.html">queue</a>.t[<a class="code hl_class" href="../../db/da9/classqueue.html">queue</a>.rear++] = n; }</div>
 </div><!-- fragment -->
 </div>
@@ -240,6 +265,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d26/binary__search__tree_8cpp_source.html#l00053">53</a> of file <a class="el" href="../../d3/d26/binary__search__tree_8cpp_source.html">binary_search_tree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   53</span>                             {</div>
 <div class="line"><span class="lineno">   54</span>    <span class="keywordflow">while</span> (n-&gt;right != NULL) {</div>
 <div class="line"><span class="lineno">   55</span>        n = n-&gt;right;</div>
@@ -263,10 +290,12 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d26/binary__search__tree_8cpp_source.html#l00109">109</a> of file <a class="el" href="../../d3/d26/binary__search__tree_8cpp_source.html">binary_search_tree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  109</span>                 {</div>
 <div class="line"><span class="lineno">  110</span>    <span class="keywordflow">if</span> (n != NULL) {</div>
 <div class="line"><span class="lineno">  111</span>        In(n-&gt;left);</div>
-<div class="line"><span class="lineno">  112</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; n-&gt;val &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
+<div class="line"><span class="lineno">  112</span>        std::cout &lt;&lt; n-&gt;val &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
 <div class="line"><span class="lineno">  113</span>        In(n-&gt;right);</div>
 <div class="line"><span class="lineno">  114</span>    }</div>
 <div class="line"><span class="lineno">  115</span>}</div>
@@ -291,6 +320,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d26/binary__search__tree_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../d3/d26/binary__search__tree_8cpp_source.html">binary_search_tree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   29</span>                            {</div>
 <div class="line"><span class="lineno">   30</span>    <span class="keywordflow">if</span> (x &lt; n-&gt;val) {</div>
 <div class="line"><span class="lineno">   31</span>        <span class="keywordflow">if</span> (n-&gt;left == NULL) {</div>
@@ -314,8 +345,8 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   49</span>        }</div>
 <div class="line"><span class="lineno">   50</span>    }</div>
 <div class="line"><span class="lineno">   51</span>}</div>
-<div class="ttc" id="aavltree_8cpp_html_a74f0cf18a0e5b832d9994e2f2d022287"><div class="ttname"><a href="../../d8/dee/avltree_8cpp.html#a74f0cf18a0e5b832d9994e2f2d022287">node</a></div><div class="ttdeci">struct node { int data; int height; struct node *left; struct node *right;} node</div><div class="ttdoc">for std::queue</div><div class="ttdef"><b>Definition</b> avltree.cpp:13</div></div>
-<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition</b> binary_search_tree.cpp:11</div></div>
+<div class="ttc" id="aavltree_8cpp_html_a74f0cf18a0e5b832d9994e2f2d022287"><div class="ttname"><a href="../../d8/dee/avltree_8cpp.html#a74f0cf18a0e5b832d9994e2f2d022287">node</a></div><div class="ttdeci">struct node { int data; int height; struct node *left; struct node *right;} node</div><div class="ttdoc">for std::queue</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dee/avltree_8cpp_source.html#l00013">avltree.cpp:13</a></div></div>
+<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d26/binary__search__tree_8cpp_source.html#l00011">binary_search_tree.cpp:11</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -333,37 +364,39 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d26/binary__search__tree_8cpp_source.html#l00125">125</a> of file <a class="el" href="../../d3/d26/binary__search__tree_8cpp_source.html">binary_search_tree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  125</span>           {</div>
 <div class="line"><span class="lineno">  126</span>    <a class="code hl_class" href="../../db/da9/classqueue.html">queue</a>.<a class="code hl_function" href="../../db/da9/classqueue.html#a75e231798bc706b8b0773a07f78713e7">front</a> = 0;</div>
 <div class="line"><span class="lineno">  127</span>    <a class="code hl_class" href="../../db/da9/classqueue.html">queue</a>.rear = 0;</div>
 <div class="line"><span class="lineno">  128</span>    <span class="keywordtype">int</span> value;</div>
 <div class="line"><span class="lineno">  129</span>    <span class="keywordtype">int</span> ch;</div>
 <div class="line"><span class="lineno">  130</span>    <a class="code hl_class" href="../../d5/da1/structnode.html">node</a> *root = <span class="keyword">new</span> <a class="code hl_typedef" href="../../d8/dee/avltree_8cpp.html#a74f0cf18a0e5b832d9994e2f2d022287">node</a>;</div>
-<div class="line"><span class="lineno">  131</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter the value of root node :&quot;</span>;</div>
-<div class="line"><span class="lineno">  132</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; value;</div>
+<div class="line"><span class="lineno">  131</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nEnter the value of root node :&quot;</span>;</div>
+<div class="line"><span class="lineno">  132</span>    std::cin &gt;&gt; value;</div>
 <div class="line"><span class="lineno">  133</span>    root-&gt;val = value;</div>
 <div class="line"><span class="lineno">  134</span>    root-&gt;left = NULL;</div>
 <div class="line"><span class="lineno">  135</span>    root-&gt;right = NULL;</div>
 <div class="line"><span class="lineno">  136</span>    <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno">  137</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n1. Insert&quot;</span></div>
+<div class="line"><span class="lineno">  137</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\n1. Insert&quot;</span></div>
 <div class="line"><span class="lineno">  138</span>                  &lt;&lt; <span class="stringliteral">&quot;\n2. Delete&quot;</span></div>
 <div class="line"><span class="lineno">  139</span>                  &lt;&lt; <span class="stringliteral">&quot;\n3. Breadth First&quot;</span></div>
 <div class="line"><span class="lineno">  140</span>                  &lt;&lt; <span class="stringliteral">&quot;\n4. Preorder Depth First&quot;</span></div>
 <div class="line"><span class="lineno">  141</span>                  &lt;&lt; <span class="stringliteral">&quot;\n5. Inorder Depth First&quot;</span></div>
 <div class="line"><span class="lineno">  142</span>                  &lt;&lt; <span class="stringliteral">&quot;\n6. Postorder Depth First&quot;</span>;</div>
 <div class="line"><span class="lineno">  143</span> </div>
-<div class="line"><span class="lineno">  144</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter Your Choice : &quot;</span>;</div>
-<div class="line"><span class="lineno">  145</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; ch;</div>
+<div class="line"><span class="lineno">  144</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\nEnter Your Choice : &quot;</span>;</div>
+<div class="line"><span class="lineno">  145</span>        std::cin &gt;&gt; ch;</div>
 <div class="line"><span class="lineno">  146</span>        <span class="keywordtype">int</span> x;</div>
 <div class="line"><span class="lineno">  147</span>        <span class="keywordflow">switch</span> (ch) {</div>
 <div class="line"><span class="lineno">  148</span>        <span class="keywordflow">case</span> 1:</div>
-<div class="line"><span class="lineno">  149</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter the value to be Inserted : &quot;</span>;</div>
-<div class="line"><span class="lineno">  150</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; x;</div>
+<div class="line"><span class="lineno">  149</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;\nEnter the value to be Inserted : &quot;</span>;</div>
+<div class="line"><span class="lineno">  150</span>            std::cin &gt;&gt; x;</div>
 <div class="line"><span class="lineno">  151</span>            Insert(root, x);</div>
 <div class="line"><span class="lineno">  152</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  153</span>        <span class="keywordflow">case</span> 2:</div>
-<div class="line"><span class="lineno">  154</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter the value to be Deleted : &quot;</span>;</div>
-<div class="line"><span class="lineno">  155</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; x;</div>
+<div class="line"><span class="lineno">  154</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;\nEnter the value to be Deleted : &quot;</span>;</div>
+<div class="line"><span class="lineno">  155</span>            std::cin &gt;&gt; x;</div>
 <div class="line"><span class="lineno">  156</span>            Remove(root, root, x);</div>
 <div class="line"><span class="lineno">  157</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  158</span>        <span class="keywordflow">case</span> 3:</div>
@@ -383,7 +416,6 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  172</span> </div>
 <div class="line"><span class="lineno">  173</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  174</span>}</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -401,11 +433,13 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d26/binary__search__tree_8cpp_source.html#l00117">117</a> of file <a class="el" href="../../d3/d26/binary__search__tree_8cpp_source.html">binary_search_tree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  117</span>                   {</div>
 <div class="line"><span class="lineno">  118</span>    <span class="keywordflow">if</span> (n != NULL) {</div>
 <div class="line"><span class="lineno">  119</span>        Post(n-&gt;left);</div>
 <div class="line"><span class="lineno">  120</span>        Post(n-&gt;right);</div>
-<div class="line"><span class="lineno">  121</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; n-&gt;val &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
+<div class="line"><span class="lineno">  121</span>        std::cout &lt;&lt; n-&gt;val &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
 <div class="line"><span class="lineno">  122</span>    }</div>
 <div class="line"><span class="lineno">  123</span>}</div>
 </div><!-- fragment -->
@@ -425,9 +459,11 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d26/binary__search__tree_8cpp_source.html#l00101">101</a> of file <a class="el" href="../../d3/d26/binary__search__tree_8cpp_source.html">binary_search_tree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  101</span>                  {</div>
 <div class="line"><span class="lineno">  102</span>    <span class="keywordflow">if</span> (n != NULL) {</div>
-<div class="line"><span class="lineno">  103</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; n-&gt;val &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
+<div class="line"><span class="lineno">  103</span>        std::cout &lt;&lt; n-&gt;val &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
 <div class="line"><span class="lineno">  104</span>        Pre(n-&gt;left);</div>
 <div class="line"><span class="lineno">  105</span>        Pre(n-&gt;right);</div>
 <div class="line"><span class="lineno">  106</span>    }</div>
@@ -458,6 +494,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d26/binary__search__tree_8cpp_source.html#l00060">60</a> of file <a class="el" href="../../d3/d26/binary__search__tree_8cpp_source.html">binary_search_tree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   60</span>                                     {</div>
 <div class="line"><span class="lineno">   61</span>    <span class="keywordflow">if</span> (n-&gt;val == x) {</div>
 <div class="line"><span class="lineno">   62</span>        <span class="keywordflow">if</span> (n-&gt;right == NULL &amp;&amp; n-&gt;left == NULL) {</div>
@@ -490,6 +528,23 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   89</span>    }</div>
 <div class="line"><span class="lineno">   90</span>}</div>
 </div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aebb1a5194a2cd7efe7ee7fc417e78293" name="aebb1a5194a2cd7efe7ee7fc417e78293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebb1a5194a2cd7efe7ee7fc417e78293">&#9670;&#160;</a></span>queue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/db5/struct_queue.html">Queue</a> queue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d26/binary__search__tree_8cpp_source.html#l00023">23</a> of file <a class="el" href="../../d3/d26/binary__search__tree_8cpp_source.html">binary_search_tree.cpp</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->

@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="118,-108.25 0,-108.25 0,-77.75 118,-77.75 118,-108.25"/>
 <text text-anchor="start" x="8" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; std::vector</text>
 <text text-anchor="middle" x="59" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; double &gt; &gt;</text>
@@ -41,7 +41,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_Node000003"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="113.5,-174.75 4.5,-174.75 4.5,-155.5 113.5,-155.5 113.5,-174.75"/>
 <text text-anchor="middle" x="59" y="-161.25" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; double &gt;</text>
 </a>
@@ -60,7 +60,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_Node000004"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="227.5,-102.62 136.5,-102.62 136.5,-83.38 227.5,-83.38 227.5,-102.62"/>
 <text text-anchor="middle" x="182" y="-89.12" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; int &gt;</text>
 </a>

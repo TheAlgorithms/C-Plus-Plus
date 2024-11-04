@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: sorting/recursive_bubble_sort.cpp File Reference</title>
+<title>TheAlgorithms/C++: sorting/recursive_bubble_sort.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -124,7 +141,9 @@ Include dependency graph for recursive_bubble_sort.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d31/recursive__bubble__sort_8cpp__incl.svg" width="508" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d3/df9/recursive__bubble__sort_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html">sorting</a></td></tr>
@@ -134,7 +153,7 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae3a775d99dbbb94c130a973df0cfddcf" id="r_ae3a775d99dbbb94c130a973df0cfddcf"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ae3a775d99dbbb94c130a973df0cfddcf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#ae3a775d99dbbb94c130a973df0cfddcf">sorting::recursive_bubble_sort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *nums, uint64_t n)</td></tr>
+<tr class="memitem:ae3a775d99dbbb94c130a973df0cfddcf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#ae3a775d99dbbb94c130a973df0cfddcf">sorting::recursive_bubble_sort</a> (std::vector&lt; T &gt; *nums, uint64_t n)</td></tr>
 <tr class="memdesc:ae3a775d99dbbb94c130a973df0cfddcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an implementation of the recursive_bubble_sort. A vector is passed to the function which is then dereferenced, so that the changes are reflected in the original vector. It also accepts a second parameter of type <code>int</code> and name <code>n</code>, which is the size of the array.  <br /></td></tr>
 <tr class="separator:ae3a775d99dbbb94c130a973df0cfddcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
@@ -159,6 +178,8 @@ Algorithm</h3>
 <p>While the recursive method does not necessarily have advantages over iterative versions, but it is useful to enhance the understanding of the algorithm and recursion itself. In Recursive Bubble sort algorithm, we firstly call the function on the entire array, and for every subsequent function call, we exclude the last element. This fixes the last element for that sub-array.Formally, for <code>ith</code> iteration, we consider elements up to n-i, where n is the number of elements in the array. Exit condition: n==1; i.e. the sub-array contains only one element.</p>
 <p>Complexity Time complexity: O(n) best case; O(n²) average case; O(n²) worst case Space complexity: O(n)</p>
 <p>We need to traverse the array <code>n * (n-1)</code> times. However, if the entire array is already sorted, then we need to traverse it only once. Hence, O(n) is the best case complexity </p>
+
+<p class="definition">Definition in file <a class="el" href="../../d3/df9/recursive__bubble__sort_8cpp_source.html">recursive_bubble_sort.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -177,17 +198,14 @@ Algorithm</h3>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df9/recursive__bubble__sort_8cpp_source.html#l00155">155</a> of file <a class="el" href="../../d3/df9/recursive__bubble__sort_8cpp_source.html">recursive_bubble_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  155</span>           {</div>
 <div class="line"><span class="lineno">  156</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
 <div class="line"><span class="lineno">  157</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  158</span>}</div>
-<div class="ttc" id="arecursive__bubble__sort_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> recursive_bubble_sort.cpp:105</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/df9/recursive__bubble__sort_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="480" height="323"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="arecursive__bubble__sort_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/df9/recursive__bubble__sort_8cpp_source.html#l00105">recursive_bubble_sort.cpp:105</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -215,65 +233,55 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df9/recursive__bubble__sort_8cpp_source.html#l00105">105</a> of file <a class="el" href="../../d3/df9/recursive__bubble__sort_8cpp_source.html">recursive_bubble_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  105</span>                   {</div>
 <div class="line"><span class="lineno">  106</span>    <span class="comment">// 1st example. Creating an array of type `int`.</span></div>
-<div class="line"><span class="lineno">  107</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;1st test using `int`\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  107</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;1st test using `int`\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  108</span>    <span class="keyword">const</span> uint64_t size = 6;</div>
-<div class="line"><span class="lineno">  109</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> arr;</div>
+<div class="line"><span class="lineno">  109</span>    std::vector&lt;int64_t&gt; arr;</div>
 <div class="line"><span class="lineno">  110</span>    <span class="comment">// populating the array</span></div>
-<div class="line"><span class="lineno">  111</span>    arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(22);</div>
-<div class="line"><span class="lineno">  112</span>    arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(46);</div>
-<div class="line"><span class="lineno">  113</span>    arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(94);</div>
-<div class="line"><span class="lineno">  114</span>    arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(12);</div>
-<div class="line"><span class="lineno">  115</span>    arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(37);</div>
-<div class="line"><span class="lineno">  116</span>    arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(63);</div>
+<div class="line"><span class="lineno">  111</span>    arr.push_back(22);</div>
+<div class="line"><span class="lineno">  112</span>    arr.push_back(46);</div>
+<div class="line"><span class="lineno">  113</span>    arr.push_back(94);</div>
+<div class="line"><span class="lineno">  114</span>    arr.push_back(12);</div>
+<div class="line"><span class="lineno">  115</span>    arr.push_back(37);</div>
+<div class="line"><span class="lineno">  116</span>    arr.push_back(63);</div>
 <div class="line"><span class="lineno">  117</span>    <span class="comment">// array populating ends</span></div>
 <div class="line"><span class="lineno">  118</span> </div>
 <div class="line"><span class="lineno">  119</span>    <a class="code hl_function" href="../../d5/d91/namespacesorting.html#ae3a775d99dbbb94c130a973df0cfddcf">sorting::recursive_bubble_sort</a>(&amp;arr, size);</div>
-<div class="line"><span class="lineno">  120</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr)));</div>
-<div class="line"><span class="lineno">  121</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot; 1st test passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  120</span>    assert(std::is_sorted(std::begin(arr), std::end(arr)));</div>
+<div class="line"><span class="lineno">  121</span>    std::cout &lt;&lt; <span class="stringliteral">&quot; 1st test passed!\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  122</span>    <span class="comment">// printing the array</span></div>
 <div class="line"><span class="lineno">  123</span>    <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; size; i++) {</div>
-<div class="line"><span class="lineno">  124</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; arr[i] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
+<div class="line"><span class="lineno">  124</span>        std::cout &lt;&lt; arr[i] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
 <div class="line"><span class="lineno">  125</span>    }</div>
-<div class="line"><span class="lineno">  126</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  126</span>    std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  127</span> </div>
 <div class="line"><span class="lineno">  128</span>    <span class="comment">// 2nd example. Creating an array of type `double`.</span></div>
-<div class="line"><span class="lineno">  129</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;2nd test using doubles\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  130</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;double&gt;</a> double_arr;</div>
+<div class="line"><span class="lineno">  129</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;2nd test using doubles\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  130</span>    std::vector&lt;double&gt; double_arr;</div>
 <div class="line"><span class="lineno">  131</span> </div>
 <div class="line"><span class="lineno">  132</span>    <span class="comment">// populating the array</span></div>
-<div class="line"><span class="lineno">  133</span>    double_arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(20.4);</div>
-<div class="line"><span class="lineno">  134</span>    double_arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(62.7);</div>
-<div class="line"><span class="lineno">  135</span>    double_arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(12.2);</div>
-<div class="line"><span class="lineno">  136</span>    double_arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(43.6);</div>
-<div class="line"><span class="lineno">  137</span>    double_arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(74.1);</div>
-<div class="line"><span class="lineno">  138</span>    double_arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(57.9);</div>
+<div class="line"><span class="lineno">  133</span>    double_arr.push_back(20.4);</div>
+<div class="line"><span class="lineno">  134</span>    double_arr.push_back(62.7);</div>
+<div class="line"><span class="lineno">  135</span>    double_arr.push_back(12.2);</div>
+<div class="line"><span class="lineno">  136</span>    double_arr.push_back(43.6);</div>
+<div class="line"><span class="lineno">  137</span>    double_arr.push_back(74.1);</div>
+<div class="line"><span class="lineno">  138</span>    double_arr.push_back(57.9);</div>
 <div class="line"><span class="lineno">  139</span>    <span class="comment">// array populating ends</span></div>
 <div class="line"><span class="lineno">  140</span> </div>
 <div class="line"><span class="lineno">  141</span>    <a class="code hl_function" href="../../d5/d91/namespacesorting.html#ae3a775d99dbbb94c130a973df0cfddcf">sorting::recursive_bubble_sort</a>(&amp;double_arr, size);</div>
-<div class="line"><span class="lineno">  142</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(double_arr), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(double_arr)));</div>
-<div class="line"><span class="lineno">  143</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot; 2nd test passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  142</span>    assert(std::is_sorted(std::begin(double_arr), std::end(double_arr)));</div>
+<div class="line"><span class="lineno">  143</span>    std::cout &lt;&lt; <span class="stringliteral">&quot; 2nd test passed!\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  144</span>    <span class="comment">// printing the array</span></div>
 <div class="line"><span class="lineno">  145</span>    <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; size; i++) {</div>
-<div class="line"><span class="lineno">  146</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; double_arr[i] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
+<div class="line"><span class="lineno">  146</span>        std::cout &lt;&lt; double_arr[i] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
 <div class="line"><span class="lineno">  147</span>    }</div>
-<div class="line"><span class="lineno">  148</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  148</span>    std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  149</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="ais_sorted_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></div><div class="ttdeci">T is_sorted(T... args)</div></div>
-<div class="ttc" id="anamespacesorting_html_ae3a775d99dbbb94c130a973df0cfddcf"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#ae3a775d99dbbb94c130a973df0cfddcf">sorting::recursive_bubble_sort</a></div><div class="ttdeci">void recursive_bubble_sort(std::vector&lt; T &gt; *nums, uint64_t n)</div><div class="ttdoc">This is an implementation of the recursive_bubble_sort. A vector is passed to the function which is t...</div><div class="ttdef"><b>Definition</b> recursive_bubble_sort.cpp:84</div></div>
-<div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/df9/recursive__bubble__sort_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="383" height="323"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="anamespacesorting_html_ae3a775d99dbbb94c130a973df0cfddcf"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#ae3a775d99dbbb94c130a973df0cfddcf">sorting::recursive_bubble_sort</a></div><div class="ttdeci">void recursive_bubble_sort(std::vector&lt; T &gt; *nums, uint64_t n)</div><div class="ttdoc">This is an implementation of the recursive_bubble_sort. A vector is passed to the function which is t...</div><div class="ttdef"><b>Definition</b> <a href="../../d3/df9/recursive__bubble__sort_8cpp_source.html#l00084">recursive_bubble_sort.cpp:84</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

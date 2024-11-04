@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: data_structures::sparse_table::Sparse_table Struct Reference</title>
+<title>TheAlgorithms/C++: data_structures::sparse_table::Sparse_table Struct Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -114,7 +131,7 @@ $(function(){initNavTree('da/d37/structdata__structures_1_1sparse__table_1_1_spa
 <div class="dynheader">
 Collaboration diagram for data_structures::sparse_table::Sparse_table:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/daa/structdata__structures_1_1sparse__table_1_1_sparse__table__coll__graph.svg" width="263" height="332"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/daa/structdata__structures_1_1sparse__table_1_1_sparse__table__coll__graph.svg" width="263" height="244"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -125,21 +142,23 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ad71ecd43d0af1127df5f4006258f9635" id="r_ad71ecd43d0af1127df5f4006258f9635"><td class="memItemLeft" align="right" valign="top"><a id="ad71ecd43d0af1127df5f4006258f9635" name="ad71ecd43d0af1127df5f4006258f9635"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>n</b> = 0</td></tr>
-<tr class="memdesc:ad71ecd43d0af1127df5f4006258f9635"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of input array. <br /></td></tr>
+<tr class="memitem:ad71ecd43d0af1127df5f4006258f9635" id="r_ad71ecd43d0af1127df5f4006258f9635"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad71ecd43d0af1127df5f4006258f9635">n</a> = 0</td></tr>
+<tr class="memdesc:ad71ecd43d0af1127df5f4006258f9635"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of input array.  <br /></td></tr>
 <tr class="separator:ad71ecd43d0af1127df5f4006258f9635"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab78620742305a35ff2f8d61179f47d3e" id="r_ab78620742305a35ff2f8d61179f47d3e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int64_t, <a class="el" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab78620742305a35ff2f8d61179f47d3e">A</a> = {}</td></tr>
+<tr class="memitem:ab78620742305a35ff2f8d61179f47d3e" id="r_ab78620742305a35ff2f8d61179f47d3e"><td class="memItemLeft" align="right" valign="top">std::array&lt; int64_t, <a class="el" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab78620742305a35ff2f8d61179f47d3e">A</a> = {}</td></tr>
 <tr class="memdesc:ab78620742305a35ff2f8d61179f47d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">input array to perform RMQ.  <br /></td></tr>
 <tr class="separator:ab78620742305a35ff2f8d61179f47d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad36b9a20fed47b068e407008c04e9f81" id="r_ad36b9a20fed47b068e407008c04e9f81"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int64_t, <a class="el" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> &gt;, <a class="el" href="../../d8/dab/sparse__table_8cpp.html#af7db62f21983565c64d5d42d2a49888e">M</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad36b9a20fed47b068e407008c04e9f81">ST</a> {}</td></tr>
+<tr class="memitem:ad36b9a20fed47b068e407008c04e9f81" id="r_ad36b9a20fed47b068e407008c04e9f81"><td class="memItemLeft" align="right" valign="top">std::array&lt; std::array&lt; int64_t, <a class="el" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> &gt;, <a class="el" href="../../d8/dab/sparse__table_8cpp.html#af7db62f21983565c64d5d42d2a49888e">M</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad36b9a20fed47b068e407008c04e9f81">ST</a> {}</td></tr>
 <tr class="memdesc:ad36b9a20fed47b068e407008c04e9f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">the sparse table storing <code>min()</code> values for given interval.  <br /></td></tr>
 <tr class="separator:ad36b9a20fed47b068e407008c04e9f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cf72f93b1551f0d943c585b4f173be3" id="r_a6cf72f93b1551f0d943c585b4f173be3"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int64_t, <a class="el" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cf72f93b1551f0d943c585b4f173be3">LOG</a> = {}</td></tr>
+<tr class="memitem:a6cf72f93b1551f0d943c585b4f173be3" id="r_a6cf72f93b1551f0d943c585b4f173be3"><td class="memItemLeft" align="right" valign="top">std::array&lt; int64_t, <a class="el" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cf72f93b1551f0d943c585b4f173be3">LOG</a> = {}</td></tr>
 <tr class="memdesc:a6cf72f93b1551f0d943c585b4f173be3"><td class="mdescLeft">&#160;</td><td class="mdescRight">where floor(log2(i)) are precomputed.  <br /></td></tr>
 <tr class="separator:a6cf72f93b1551f0d943c585b4f173be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="../../d8/dab/sparse__table_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../d8/dab/sparse__table_8cpp_source.html">sparse_table.cpp</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0c8cbe7239232863f104793c08273039" name="a0c8cbe7239232863f104793c08273039"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0c8cbe7239232863f104793c08273039">&#9670;&#160;</a></span>query()</h2>
 
@@ -180,22 +199,21 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>n</b> = 0</td></tr>
 <p>&lt; represents minimum value over the range [g,l]</p>
 <p>&lt; represents minimum value over the range [g, r - pow(2,g) + 1]</p>
 <p>&lt; represents minimum value over the whole range [l,r]</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dab/sparse__table_8cpp_source.html#l00110">110</a> of file <a class="el" href="../../d8/dab/sparse__table_8cpp_source.html">sparse_table.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  110</span>                                        {</div>
-<div class="line"><span class="lineno">  111</span>        int64_t <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = <a class="code hl_variable" href="#a6cf72f93b1551f0d943c585b4f173be3">LOG</a>[r - <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a> + 1];  <span class="comment">///&lt; smallest power of 2 covering [l,r]</span></div>
-<div class="line"><span class="lineno">  112</span>        int64_t x = <a class="code hl_variable" href="#ad36b9a20fed47b068e407008c04e9f81">ST</a>[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>][<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a>];  <span class="comment">///&lt; represents minimum value over the range</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  113</span><span class="comment">                               ///&lt; [g,l]</span></div>
-<div class="line"><span class="lineno">  114</span><span class="comment"></span>        int64_t y =</div>
-<div class="line"><span class="lineno">  115</span>            <a class="code hl_variable" href="#ad36b9a20fed47b068e407008c04e9f81">ST</a>[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>][r - (1 &lt;&lt; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>) + 1];  <span class="comment">///&lt; represents minimum value over the</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  116</span><span class="comment">                                      ///&lt; range [g, r - pow(2,g) + 1]</span></div>
-<div class="line"><span class="lineno">  117</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  118</span>        <span class="keywordflow">return</span> (<a class="code hl_variable" href="#ab78620742305a35ff2f8d61179f47d3e">A</a>[x] &lt;= <a class="code hl_variable" href="#ab78620742305a35ff2f8d61179f47d3e">A</a>[y] ? x : y);  <span class="comment">///&lt; represents minimum value over</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  119</span><span class="comment">                                        ///&lt; the whole range [l,r]</span></div>
-<div class="line"><span class="lineno">  120</span><span class="comment"></span>    }</div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a2f67508d5f392b0321772169342c98ad"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">numerical_methods::simpson_method::g</a></div><div class="ttdeci">double g(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:115</div></div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a6d8df83a6f26ce24a75d3b358b7f5b8a"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">numerical_methods::simpson_method::l</a></div><div class="ttdeci">double l(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:119</div></div>
-<div class="ttc" id="astructdata__structures_1_1sparse__table_1_1_sparse__table_html_a6cf72f93b1551f0d943c585b4f173be3"><div class="ttname"><a href="#a6cf72f93b1551f0d943c585b4f173be3">data_structures::sparse_table::Sparse_table::LOG</a></div><div class="ttdeci">std::array&lt; int64_t, N &gt; LOG</div><div class="ttdoc">where floor(log2(i)) are precomputed.</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:60</div></div>
-<div class="ttc" id="astructdata__structures_1_1sparse__table_1_1_sparse__table_html_ab78620742305a35ff2f8d61179f47d3e"><div class="ttname"><a href="#ab78620742305a35ff2f8d61179f47d3e">data_structures::sparse_table::Sparse_table::A</a></div><div class="ttdeci">std::array&lt; int64_t, N &gt; A</div><div class="ttdoc">input array to perform RMQ.</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:57</div></div>
-<div class="ttc" id="astructdata__structures_1_1sparse__table_1_1_sparse__table_html_ad36b9a20fed47b068e407008c04e9f81"><div class="ttname"><a href="#ad36b9a20fed47b068e407008c04e9f81">data_structures::sparse_table::Sparse_table::ST</a></div><div class="ttdeci">std::array&lt; std::array&lt; int64_t, N &gt;, M &gt; ST</div><div class="ttdoc">the sparse table storing min() values for given interval.</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:59</div></div>
+<div class="line"><span class="lineno">  111</span>        int64_t <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = <a class="code hl_variable" href="#a6cf72f93b1551f0d943c585b4f173be3">LOG</a>[r - <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a> + 1];  </div>
+<div class="line"><span class="lineno">  112</span>        int64_t x = <a class="code hl_variable" href="#ad36b9a20fed47b068e407008c04e9f81">ST</a>[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>][<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a>];  </div>
+<div class="line"><span class="lineno">  114</span>        int64_t y =</div>
+<div class="line"><span class="lineno">  115</span>            <a class="code hl_variable" href="#ad36b9a20fed47b068e407008c04e9f81">ST</a>[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>][r - (1 &lt;&lt; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>) + 1];  </div>
+<div class="line"><span class="lineno">  117</span> </div>
+<div class="line"><span class="lineno">  118</span>        <span class="keywordflow">return</span> (<a class="code hl_variable" href="#ab78620742305a35ff2f8d61179f47d3e">A</a>[x] &lt;= <a class="code hl_variable" href="#ab78620742305a35ff2f8d61179f47d3e">A</a>[y] ? x : y);  </div>
+<div class="line"><span class="lineno">  120</span>    }</div>
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a2f67508d5f392b0321772169342c98ad"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">numerical_methods::simpson_method::g</a></div><div class="ttdeci">double g(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d18/composite__simpson__rule_8cpp_source.html#l00115">composite_simpson_rule.cpp:115</a></div></div>
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a6d8df83a6f26ce24a75d3b358b7f5b8a"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">numerical_methods::simpson_method::l</a></div><div class="ttdeci">double l(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d18/composite__simpson__rule_8cpp_source.html#l00119">composite_simpson_rule.cpp:119</a></div></div>
+<div class="ttc" id="astructdata__structures_1_1sparse__table_1_1_sparse__table_html_a6cf72f93b1551f0d943c585b4f173be3"><div class="ttname"><a href="#a6cf72f93b1551f0d943c585b4f173be3">data_structures::sparse_table::Sparse_table::LOG</a></div><div class="ttdeci">std::array&lt; int64_t, N &gt; LOG</div><div class="ttdoc">where floor(log2(i)) are precomputed.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dab/sparse__table_8cpp_source.html#l00060">sparse_table.cpp:60</a></div></div>
+<div class="ttc" id="astructdata__structures_1_1sparse__table_1_1_sparse__table_html_ab78620742305a35ff2f8d61179f47d3e"><div class="ttname"><a href="#ab78620742305a35ff2f8d61179f47d3e">data_structures::sparse_table::Sparse_table::A</a></div><div class="ttdeci">std::array&lt; int64_t, N &gt; A</div><div class="ttdoc">input array to perform RMQ.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dab/sparse__table_8cpp_source.html#l00057">sparse_table.cpp:57</a></div></div>
+<div class="ttc" id="astructdata__structures_1_1sparse__table_1_1_sparse__table_html_ad36b9a20fed47b068e407008c04e9f81"><div class="ttname"><a href="#ad36b9a20fed47b068e407008c04e9f81">data_structures::sparse_table::Sparse_table::ST</a></div><div class="ttdeci">std::array&lt; std::array&lt; int64_t, N &gt;, M &gt; ST</div><div class="ttdoc">the sparse table storing min() values for given interval.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dab/sparse__table_8cpp_source.html#l00059">sparse_table.cpp:59</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -207,14 +225,16 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>n</b> = 0</td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt;int64_t, <a class="el" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>&gt; data_structures::sparse_table::Sparse_table::A = {}</td>
+          <td class="memname">std::array&lt;int64_t, <a class="el" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>&gt; data_structures::sparse_table::Sparse_table::A = {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>input array to perform RMQ. </p>
 <dl class="section warning"><dt>Warning</dt><dd>check if <code>N</code> is not less than <code>n</code>. if so, manually increase the value of N </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   57</span>{};  <span class="comment">///&lt; input array to perform RMQ.</span></div>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dab/sparse__table_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../d8/dab/sparse__table_8cpp_source.html">sparse_table.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>{};  </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -225,14 +245,34 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>n</b> = 0</td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt;int64_t, <a class="el" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>&gt; data_structures::sparse_table::Sparse_table::LOG = {}</td>
+          <td class="memname">std::array&lt;int64_t, <a class="el" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>&gt; data_structures::sparse_table::Sparse_table::LOG = {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>where floor(log2(i)) are precomputed. </p>
-<div class="fragment"><div class="line"><span class="lineno">   60</span>{};  <span class="comment">///&lt; where floor(log2(i)) are precomputed.</span></div>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dab/sparse__table_8cpp_source.html#l00060">60</a> of file <a class="el" href="../../d8/dab/sparse__table_8cpp_source.html">sparse_table.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   60</span>{};  </div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="ad71ecd43d0af1127df5f4006258f9635" name="ad71ecd43d0af1127df5f4006258f9635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad71ecd43d0af1127df5f4006258f9635">&#9670;&#160;</a></span>n</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t data_structures::sparse_table::Sparse_table::n = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>size of input array. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dab/sparse__table_8cpp_source.html#l00052">52</a> of file <a class="el" href="../../d8/dab/sparse__table_8cpp_source.html">sparse_table.cpp</a>.</p>
+
 </div>
 </div>
 <a id="ad36b9a20fed47b068e407008c04e9f81" name="ad36b9a20fed47b068e407008c04e9f81"></a>
@@ -242,18 +282,20 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>n</b> = 0</td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt;int64_t, <a class="el" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>&gt;, <a class="el" href="../../d8/dab/sparse__table_8cpp.html#af7db62f21983565c64d5d42d2a49888e">M</a>&gt; data_structures::sparse_table::Sparse_table::ST {}</td>
+          <td class="memname">std::array&lt;std::array&lt;int64_t, <a class="el" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>&gt;, <a class="el" href="../../d8/dab/sparse__table_8cpp.html#af7db62f21983565c64d5d42d2a49888e">M</a>&gt; data_structures::sparse_table::Sparse_table::ST {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>the sparse table storing <code>min()</code> values for given interval. </p>
-<div class="fragment"><div class="line"><span class="lineno">   59</span>{};  <span class="comment">///&lt; the sparse table storing `min()` values for given interval.</span></div>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dab/sparse__table_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../d8/dab/sparse__table_8cpp_source.html">sparse_table.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   59</span>{};  </div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>data_structures/<a class="el" href="../../d8/dab/sparse__table_8cpp.html">sparse_table.cpp</a></li>
+<li>data_structures/<a class="el" href="../../d8/dab/sparse__table_8cpp_source.html">sparse_table.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

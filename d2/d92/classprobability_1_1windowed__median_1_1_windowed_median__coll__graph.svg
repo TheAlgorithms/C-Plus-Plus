@@ -32,7 +32,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/list.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="76.75,-108.25 0,-108.25 0,-89 76.75,-89 76.75,-108.25"/>
 <text text-anchor="middle" x="38.38" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::list&lt; int &gt;</text>
 </a>
@@ -51,7 +51,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/multiset.html" xlink:title=" ">
+<g id="a_Node000003"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="193.62,-108.25 95.12,-108.25 95.12,-89 193.62,-89 193.62,-108.25"/>
 <text text-anchor="middle" x="144.38" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::multiset&lt; int &gt;</text>
 </a>

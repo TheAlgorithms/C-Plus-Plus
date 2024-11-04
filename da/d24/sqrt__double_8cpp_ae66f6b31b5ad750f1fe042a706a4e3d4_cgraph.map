@@ -1,8 +1,0 @@
-<map id="main" name="main">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,43,55,68"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/fixed.html#" title=" " alt="" coords="103,5,178,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,45,87,33,89,38,56,50"/>
-<area shape="rect" id="Node000003" href="$da/d24/sqrt__double_8cpp.html#ae662282ad0740d2063ac404ca3bd74fc" title=" " alt="" coords="118,79,163,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,61,104,77,102,82,54,66"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="121,79,117,70,119,61,127,54,140,52,154,55,162,62,158,65,152,60,140,57,129,59,124,64,122,70,126,77"/>
-</map>

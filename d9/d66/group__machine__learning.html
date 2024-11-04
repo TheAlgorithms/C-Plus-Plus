@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: Machine Learning Algorithms</title>
+<title>TheAlgorithms/C++: Machine Learning Algorithms</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -136,11 +153,11 @@ Namespaces</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:gaf5ce14f026d6d231bef29161bac2b485" id="r_gaf5ce14f026d6d231bef29161bac2b485"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf5ce14f026d6d231bef29161bac2b485">_random</a> (double a, double b)</td></tr>
 <tr class="separator:gaf5ce14f026d6d231bef29161bac2b485"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabc90175770bf0d5853c466e14993a08c" id="r_gabc90175770bf0d5853c466e14993a08c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabc90175770bf0d5853c466e14993a08c">save_2d_data</a> (const char *fname, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; &gt; &amp;X)</td></tr>
+<tr class="memitem:gabc90175770bf0d5853c466e14993a08c" id="r_gabc90175770bf0d5853c466e14993a08c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabc90175770bf0d5853c466e14993a08c">save_2d_data</a> (const char *fname, const std::vector&lt; std::valarray&lt; double &gt; &gt; &amp;X)</td></tr>
 <tr class="separator:gabc90175770bf0d5853c466e14993a08c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga60f9186ccb682724a8792a2bf81e9b9e" id="r_ga60f9186ccb682724a8792a2bf81e9b9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga60f9186ccb682724a8792a2bf81e9b9e">get_min_2d</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; &gt; &amp;X, double *val, int *x_idx, int *y_idx)</td></tr>
+<tr class="memitem:ga60f9186ccb682724a8792a2bf81e9b9e" id="r_ga60f9186ccb682724a8792a2bf81e9b9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga60f9186ccb682724a8792a2bf81e9b9e">get_min_2d</a> (const std::vector&lt; std::valarray&lt; double &gt; &gt; &amp;X, double *val, int *x_idx, int *y_idx)</td></tr>
 <tr class="separator:ga60f9186ccb682724a8792a2bf81e9b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae0208548f8b393528e5db01717e88e67" id="r_gae0208548f8b393528e5db01717e88e67"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae0208548f8b393528e5db01717e88e67">save_nd_data</a> (const char *fname, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; &gt; &amp;X)</td></tr>
+<tr class="memitem:gae0208548f8b393528e5db01717e88e67" id="r_gae0208548f8b393528e5db01717e88e67"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae0208548f8b393528e5db01717e88e67">save_nd_data</a> (const char *fname, const std::vector&lt; std::valarray&lt; double &gt; &gt; &amp;X)</td></tr>
 <tr class="separator:gae0208548f8b393528e5db01717e88e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -149,6 +166,39 @@ Variables</h2></td></tr>
 <tr class="separator:ga5118e5cbc4f0886e27b3a7a2544dded1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga525335710b53cb064ca56b936120431e" name="ga525335710b53cb064ca56b936120431e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga525335710b53cb064ca56b936120431e">&#9670;&#160;</a></span>_USE_MATH_DEFINES <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _USE_MATH_DEFINES</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/def/kohonen__som__topology_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../d4/def/kohonen__som__topology_8cpp_source.html">kohonen_som_topology.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ga525335710b53cb064ca56b936120431e" name="ga525335710b53cb064ca56b936120431e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga525335710b53cb064ca56b936120431e">&#9670;&#160;</a></span>_USE_MATH_DEFINES <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _USE_MATH_DEFINES</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d49/kohonen__som__trace_8cpp_source.html#l00021">21</a> of file <a class="el" href="../../d9/d49/kohonen__som__trace_8cpp_source.html">kohonen_som_trace.cpp</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gaf5ce14f026d6d231bef29161bac2b485" name="gaf5ce14f026d6d231bef29161bac2b485"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf5ce14f026d6d231bef29161bac2b485">&#9670;&#160;</a></span>_random()</h2>
@@ -182,16 +232,12 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>random number in the range \([a,b]\) </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   53</span>                                   {</div>
-<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">return</span> ((b - a) * (<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100) / 100.f) + a;</div>
-<div class="line"><span class="lineno">   55</span>}</div>
-<div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d66/group__machine__learning_gaf5ce14f026d6d231bef29161bac2b485_cgraph.svg" width="203" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../d4/def/kohonen__som__topology_8cpp_source.html#l00053">53</a> of file <a class="el" href="../../d4/def/kohonen__som__topology_8cpp_source.html">kohonen_som_topology.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   53</span>                                   {</div>
+<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">return</span> ((b - a) * (std::rand() % 100) / 100.f) + a;</div>
+<div class="line"><span class="lineno">   55</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ga60f9186ccb682724a8792a2bf81e9b9e" name="ga60f9186ccb682724a8792a2bf81e9b9e"></a>
@@ -203,7 +249,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void get_min_2d </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>X</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; std::valarray&lt; double &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>X</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -232,14 +278,16 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/def/kohonen__som__topology_8cpp_source.html#l00105">105</a> of file <a class="el" href="../../d4/def/kohonen__som__topology_8cpp_source.html">kohonen_som_topology.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  106</span>                                        {</div>
 <div class="line"><span class="lineno">  107</span>    val[0] = INFINITY;  <span class="comment">// initial min value</span></div>
-<div class="line"><span class="lineno">  108</span>    <span class="keywordtype">size_t</span> N = X.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">  108</span>    <span class="keywordtype">size_t</span> N = X.size();</div>
 <div class="line"><span class="lineno">  109</span> </div>
 <div class="line"><span class="lineno">  110</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; N; i++) {  <span class="comment">// traverse each x-index</span></div>
-<div class="line"><span class="lineno">  111</span>        <span class="keyword">auto</span> result = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min_element.html">std::min_element</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(X[i]), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(X[i]));</div>
+<div class="line"><span class="lineno">  111</span>        <span class="keyword">auto</span> result = std::min_element(std::begin(X[i]), std::end(X[i]));</div>
 <div class="line"><span class="lineno">  112</span>        <span class="keywordtype">double</span> d_min = *result;</div>
-<div class="line"><span class="lineno">  113</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/ptrdiff_t.html">std::ptrdiff_t</a> j = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/distance.html">std::distance</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(X[i]), result);</div>
+<div class="line"><span class="lineno">  113</span>        std::ptrdiff_t j = std::distance(std::begin(X[i]), result);</div>
 <div class="line"><span class="lineno">  114</span> </div>
 <div class="line"><span class="lineno">  115</span>        <span class="keywordflow">if</span> (d_min &lt; val[0]) {  <span class="comment">// if a lower value is found</span></div>
 <div class="line"><span class="lineno">  116</span>                               <span class="comment">// save the value and its index</span></div>
@@ -249,18 +297,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  120</span>        }</div>
 <div class="line"><span class="lineno">  121</span>    }</div>
 <div class="line"><span class="lineno">  122</span>}</div>
-<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
-<div class="ttc" id="adistance_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/distance.html">std::distance</a></div><div class="ttdeci">T distance(T... args)</div></div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="amin_element_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min_element.html">std::min_element</a></div><div class="ttdeci">T min_element(T... args)</div></div>
-<div class="ttc" id="aptrdiff_t_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/ptrdiff_t.html">std::ptrdiff_t</a></div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d66/group__machine__learning_ga60f9186ccb682724a8792a2bf81e9b9e_cgraph.svg" width="268" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="gabc90175770bf0d5853c466e14993a08c" name="gabc90175770bf0d5853c466e14993a08c"></a>
@@ -277,7 +314,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>X</em></span>&#160;)</td>
+          <td class="paramtype">const std::vector&lt; std::valarray&lt; double &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>X</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -292,16 +329,18 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>0 if all ok </dd>
 <dd>
 -1 if file creation failed </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/def/kohonen__som__topology_8cpp_source.html#l00065">65</a> of file <a class="el" href="../../d4/def/kohonen__som__topology_8cpp_source.html">kohonen_som_topology.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   66</span>                                                          {</div>
-<div class="line"><span class="lineno">   67</span>    <span class="keywordtype">size_t</span> num_points = X.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();       <span class="comment">// number of rows</span></div>
-<div class="line"><span class="lineno">   68</span>    <span class="keywordtype">size_t</span> num_features = X[0].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();  <span class="comment">// number of columns</span></div>
+<div class="line"><span class="lineno">   67</span>    <span class="keywordtype">size_t</span> num_points = X.size();       <span class="comment">// number of rows</span></div>
+<div class="line"><span class="lineno">   68</span>    <span class="keywordtype">size_t</span> num_features = X[0].size();  <span class="comment">// number of columns</span></div>
 <div class="line"><span class="lineno">   69</span> </div>
-<div class="line"><span class="lineno">   70</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a> fp;</div>
-<div class="line"><span class="lineno">   71</span>    fp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html">open</a>(fname);</div>
-<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">if</span> (!fp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">is_open</a>()) {</div>
+<div class="line"><span class="lineno">   70</span>    std::ofstream fp;</div>
+<div class="line"><span class="lineno">   71</span>    fp.open(fname);</div>
+<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">if</span> (!fp.is_open()) {</div>
 <div class="line"><span class="lineno">   73</span>        <span class="comment">// error with opening file to write</span></div>
-<div class="line"><span class="lineno">   74</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Error opening file &quot;</span> &lt;&lt; fname &lt;&lt; <span class="stringliteral">&quot;: &quot;</span></div>
-<div class="line"><span class="lineno">   75</span>                  &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/strerror.html">std::strerror</a>(errno) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   74</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Error opening file &quot;</span> &lt;&lt; fname &lt;&lt; <span class="stringliteral">&quot;: &quot;</span></div>
+<div class="line"><span class="lineno">   75</span>                  &lt;&lt; std::strerror(errno) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   76</span>        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><span class="lineno">   77</span>    }</div>
 <div class="line"><span class="lineno">   78</span> </div>
@@ -319,21 +358,10 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   90</span>        }</div>
 <div class="line"><span class="lineno">   91</span>    }</div>
 <div class="line"><span class="lineno">   92</span> </div>
-<div class="line"><span class="lineno">   93</span>    fp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html">close</a>();</div>
+<div class="line"><span class="lineno">   93</span>    fp.close();</div>
 <div class="line"><span class="lineno">   94</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   95</span>}</div>
-<div class="ttc" id="abasic_ofstream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a></div></div>
-<div class="ttc" id="aclose_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html">std::ofstream::close</a></div><div class="ttdeci">T close(T... args)</div></div>
-<div class="ttc" id="ais_open_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">std::ofstream::is_open</a></div><div class="ttdeci">T is_open(T... args)</div></div>
-<div class="ttc" id="aopen_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html">std::ofstream::open</a></div><div class="ttdeci">T open(T... args)</div></div>
-<div class="ttc" id="astrerror_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/byte/strerror.html">std::strerror</a></div><div class="ttdeci">T strerror(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d66/group__machine__learning_gabc90175770bf0d5853c466e14993a08c_cgraph.svg" width="312" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="gae0208548f8b393528e5db01717e88e67" name="gae0208548f8b393528e5db01717e88e67"></a>
@@ -350,7 +378,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>X</em></span>&#160;)</td>
+          <td class="paramtype">const std::vector&lt; std::valarray&lt; double &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>X</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -365,15 +393,17 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>0 if all ok </dd>
 <dd>
 -1 if file creation failed </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d49/kohonen__som__trace_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../d9/d49/kohonen__som__trace_8cpp_source.html">kohonen_som_trace.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   59</span>                                                          {</div>
-<div class="line"><span class="lineno">   60</span>    <span class="keywordtype">size_t</span> num_points = X.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();       <span class="comment">// number of rows</span></div>
-<div class="line"><span class="lineno">   61</span>    <span class="keywordtype">size_t</span> num_features = X[0].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();  <span class="comment">// number of columns</span></div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordtype">size_t</span> num_points = X.size();       <span class="comment">// number of rows</span></div>
+<div class="line"><span class="lineno">   61</span>    <span class="keywordtype">size_t</span> num_features = X[0].size();  <span class="comment">// number of columns</span></div>
 <div class="line"><span class="lineno">   62</span> </div>
-<div class="line"><span class="lineno">   63</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a> fp;</div>
-<div class="line"><span class="lineno">   64</span>    fp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html">open</a>(fname);</div>
-<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">if</span> (!fp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">is_open</a>()) {</div>
+<div class="line"><span class="lineno">   63</span>    std::ofstream fp;</div>
+<div class="line"><span class="lineno">   64</span>    fp.open(fname);</div>
+<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">if</span> (!fp.is_open()) {</div>
 <div class="line"><span class="lineno">   66</span>        <span class="comment">// error with opening file to write</span></div>
-<div class="line"><span class="lineno">   67</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Error opening file &quot;</span> &lt;&lt; fname &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   67</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Error opening file &quot;</span> &lt;&lt; fname &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   68</span>        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><span class="lineno">   69</span>    }</div>
 <div class="line"><span class="lineno">   70</span> </div>
@@ -391,15 +421,10 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   82</span>        }</div>
 <div class="line"><span class="lineno">   83</span>    }</div>
 <div class="line"><span class="lineno">   84</span> </div>
-<div class="line"><span class="lineno">   85</span>    fp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html">close</a>();</div>
+<div class="line"><span class="lineno">   85</span>    fp.close();</div>
 <div class="line"><span class="lineno">   86</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   87</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d66/group__machine__learning_gae0208548f8b393528e5db01717e88e67_cgraph.svg" width="312" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -423,6 +448,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Maximum number of iterations to learn </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html">adaline_learning.cpp</a>.</p>
 
 </div>
 </div>

@@ -1,11 +1,8 @@
 <map id="others::lru_cache::LRUCache" name="others::lru_cache::LRUCache">
-<area shape="rect" id="Node000001" title="LRU cache class." alt="" coords="699,12,829,53"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list.html" title=" " alt="" coords="204,9,338,35"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="354,18,362,18,519,19,675,25,699,26,699,31,675,30,519,24,362,23,354,23"/>
-<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_map.html" title=" " alt="" coords="443,43,594,99"/>
-<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="354,36,443,54,442,59,353,41"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/integer.html" title=" " alt="" coords="5,40,99,65"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="114,41,203,29,204,34,114,47"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="114,54,204,60,443,67,442,73,204,65,114,60"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="610,54,698,40,699,45,610,60"/>
+<area shape="rect" id="Node000001" title="LRU cache class." alt="" coords="501,5,630,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,22,140,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,27,164,27,320,21,477,20,500,21,500,26,477,26,320,26,164,32,155,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="245,46,396,102"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="156,45,245,59,244,65,155,50"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="411,53,500,36,501,41,412,59"/>
 </map>

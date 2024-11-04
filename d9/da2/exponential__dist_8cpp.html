@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: probability/exponential_dist.cpp File Reference</title>
+<title>TheAlgorithms/C++: probability/exponential_dist.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -123,7 +140,9 @@ Include dependency graph for exponential_dist.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d5e/exponential__dist_8cpp__incl.svg" width="431" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d9/da2/exponential__dist_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ded/namespaceprobability.html">probability</a></td></tr>
@@ -158,6 +177,8 @@ Functions</h2></td></tr>
 \[P(x, \lambda) = \lambda e^{-\lambda x}\]
 </p>
 <p>Summary of variables used: \(\lambda\) : rate parameter </p>
+
+<p class="definition">Definition in file <a class="el" href="../../d9/da2/exponential__dist_8cpp_source.html">exponential_dist.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a1c8b6e787f72a209ef96c096eedf7afc" name="a1c8b6e787f72a209ef96c096eedf7afc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1c8b6e787f72a209ef96c096eedf7afc">&#9670;&#160;</a></span>exponential_expected()</h2>
@@ -179,19 +200,15 @@ Functions</h2></td></tr>
 \[\mu = \frac{1}{\lambda}\]
 </p>
  </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/da2/exponential__dist_8cpp_source.html#l00037">37</a> of file <a class="el" href="../../d9/da2/exponential__dist_8cpp_source.html">exponential_dist.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   37</span>                                           {</div>
 <div class="line"><span class="lineno">   38</span>    <span class="keywordflow">if</span> (lambda &lt;= 0) {</div>
-<div class="line"><span class="lineno">   39</span>        <span class="keywordflow">throw</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a>(<span class="stringliteral">&quot;lambda must be greater than 0&quot;</span>);</div>
+<div class="line"><span class="lineno">   39</span>        <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;lambda must be greater than 0&quot;</span>);</div>
 <div class="line"><span class="lineno">   40</span>    }</div>
 <div class="line"><span class="lineno">   41</span>    <span class="keywordflow">return</span> 1 / lambda;</div>
 <div class="line"><span class="lineno">   42</span>}</div>
-<div class="ttc" id="ainvalid_argument_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/da2/exponential__dist_8cpp_a1c8b6e787f72a209ef96c096eedf7afc_cgraph.svg" width="195" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac7b0091e17479d47438a281fefc2549a" name="ac7b0091e17479d47438a281fefc2549a"></a>
@@ -214,18 +231,15 @@ Here is the call graph for this function:</div>
 \[\sigma = \frac{1}{\lambda}\]
 </p>
  </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/da2/exponential__dist_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../d9/da2/exponential__dist_8cpp_source.html">exponential_dist.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   59</span>                                      {</div>
 <div class="line"><span class="lineno">   60</span>    <span class="keywordflow">if</span> (lambda &lt;= 0) {</div>
-<div class="line"><span class="lineno">   61</span>        <span class="keywordflow">throw</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a>(<span class="stringliteral">&quot;lambda must be greater than 0&quot;</span>);</div>
+<div class="line"><span class="lineno">   61</span>        <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;lambda must be greater than 0&quot;</span>);</div>
 <div class="line"><span class="lineno">   62</span>    }</div>
 <div class="line"><span class="lineno">   63</span>    <span class="keywordflow">return</span> 1 / lambda;</div>
 <div class="line"><span class="lineno">   64</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/da2/exponential__dist_8cpp_ac7b0091e17479d47438a281fefc2549a_cgraph.svg" width="159" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af435dbeb43a05c8c7785f53bf4ce1df1" name="af435dbeb43a05c8c7785f53bf4ce1df1"></a>
@@ -248,19 +262,15 @@ Here is the call graph for this function:</div>
 \[\sigma^2 = \frac{1}{\lambda^2}\]
 </p>
  </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/da2/exponential__dist_8cpp_source.html#l00048">48</a> of file <a class="el" href="../../d9/da2/exponential__dist_8cpp_source.html">exponential_dist.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   48</span>                                      {</div>
 <div class="line"><span class="lineno">   49</span>    <span class="keywordflow">if</span> (lambda &lt;= 0) {</div>
-<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">throw</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a>(<span class="stringliteral">&quot;lambda must be greater than 0&quot;</span>);</div>
+<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;lambda must be greater than 0&quot;</span>);</div>
 <div class="line"><span class="lineno">   51</span>    }</div>
-<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">return</span> 1 / <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">pow</a>(lambda, 2);</div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">return</span> 1 / pow(lambda, 2);</div>
 <div class="line"><span class="lineno">   53</span>}</div>
-<div class="ttc" id="apow_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a></div><div class="ttdeci">T pow(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/da2/exponential__dist_8cpp_af435dbeb43a05c8c7785f53bf4ce1df1_cgraph.svg" width="159" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -280,17 +290,14 @@ Here is the call graph for this function:</div>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/da2/exponential__dist_8cpp_source.html#l00148">148</a> of file <a class="el" href="../../d9/da2/exponential__dist_8cpp_source.html">exponential_dist.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  148</span>           {</div>
 <div class="line"><span class="lineno">  149</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// Self test implementation</span></div>
 <div class="line"><span class="lineno">  150</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  151</span>}</div>
-<div class="ttc" id="aexponential__dist_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> exponential_dist.cpp:72</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/da2/exponential__dist_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="346" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aexponential__dist_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/da2/exponential__dist_8cpp_source.html#l00072">exponential_dist.cpp:72</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -318,6 +325,8 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/da2/exponential__dist_8cpp_source.html#l00072">72</a> of file <a class="el" href="../../d9/da2/exponential__dist_8cpp_source.html">exponential_dist.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   72</span>                   {</div>
 <div class="line"><span class="lineno">   73</span>    <span class="keywordtype">double</span> lambda_1 = 1;</div>
 <div class="line"><span class="lineno">   74</span>    <span class="keywordtype">double</span> expected_1 = 1;</div>
@@ -339,7 +348,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   90</span> </div>
 <div class="line"><span class="lineno">   91</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> threshold = 1e-3f;</div>
 <div class="line"><span class="lineno">   92</span> </div>
-<div class="line"><span class="lineno">   93</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test for lambda = 1 \n&quot;</span>;</div>
+<div class="line"><span class="lineno">   93</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test for lambda = 1 \n&quot;</span>;</div>
 <div class="line"><span class="lineno">   94</span>    assert(</div>
 <div class="line"><span class="lineno">   95</span>        std::abs(expected_1 - probability::geometric_dist::exponential_expected(</div>
 <div class="line"><span class="lineno">   96</span>                                  lambda_1)) &lt; threshold);</div>
@@ -347,9 +356,9 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   98</span>                                lambda_1)) &lt; threshold);</div>
 <div class="line"><span class="lineno">   99</span>    assert(std::abs(std_1 - probability::geometric_dist::exponential_std(</div>
 <div class="line"><span class="lineno">  100</span>                                lambda_1)) &lt; threshold);</div>
-<div class="line"><span class="lineno">  101</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;ALL TEST PASSED\n\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  101</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;ALL TEST PASSED\n\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  102</span> </div>
-<div class="line"><span class="lineno">  103</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test for lambda = 2 \n&quot;</span>;</div>
+<div class="line"><span class="lineno">  103</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test for lambda = 2 \n&quot;</span>;</div>
 <div class="line"><span class="lineno">  104</span>    assert(</div>
 <div class="line"><span class="lineno">  105</span>        std::abs(expected_2 - probability::geometric_dist::exponential_expected(</div>
 <div class="line"><span class="lineno">  106</span>                                  lambda_2)) &lt; threshold);</div>
@@ -357,9 +366,9 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  108</span>                                lambda_2)) &lt; threshold);</div>
 <div class="line"><span class="lineno">  109</span>    assert(std::abs(std_2 - probability::geometric_dist::exponential_std(</div>
 <div class="line"><span class="lineno">  110</span>                                lambda_2)) &lt; threshold);</div>
-<div class="line"><span class="lineno">  111</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;ALL TEST PASSED\n\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  111</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;ALL TEST PASSED\n\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  112</span> </div>
-<div class="line"><span class="lineno">  113</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test for lambda = 3 \n&quot;</span>;</div>
+<div class="line"><span class="lineno">  113</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test for lambda = 3 \n&quot;</span>;</div>
 <div class="line"><span class="lineno">  114</span>    assert(</div>
 <div class="line"><span class="lineno">  115</span>        std::abs(expected_3 - probability::geometric_dist::exponential_expected(</div>
 <div class="line"><span class="lineno">  116</span>                                  lambda_3)) &lt; threshold);</div>
@@ -367,40 +376,32 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  118</span>                                lambda_3)) &lt; threshold);</div>
 <div class="line"><span class="lineno">  119</span>    assert(std::abs(std_3 - probability::geometric_dist::exponential_std(</div>
 <div class="line"><span class="lineno">  120</span>                                lambda_3)) &lt; threshold);</div>
-<div class="line"><span class="lineno">  121</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;ALL TEST PASSED\n\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  121</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;ALL TEST PASSED\n\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  122</span> </div>
-<div class="line"><span class="lineno">  123</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test for lambda = 0 \n&quot;</span>;</div>
+<div class="line"><span class="lineno">  123</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test for lambda = 0 \n&quot;</span>;</div>
 <div class="line"><span class="lineno">  124</span>    <span class="keywordflow">try</span> {</div>
 <div class="line"><span class="lineno">  125</span>        <a class="code hl_function" href="#a1c8b6e787f72a209ef96c096eedf7afc">probability::geometric_dist::exponential_expected</a>(lambda_4);</div>
 <div class="line"><span class="lineno">  126</span>        <a class="code hl_function" href="#af435dbeb43a05c8c7785f53bf4ce1df1">probability::geometric_dist::exponential_var</a>(lambda_4);</div>
 <div class="line"><span class="lineno">  127</span>        <a class="code hl_function" href="#ac7b0091e17479d47438a281fefc2549a">probability::geometric_dist::exponential_std</a>(lambda_4);</div>
-<div class="line"><span class="lineno">  128</span>    } <span class="keywordflow">catch</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a>&amp; err) {</div>
-<div class="line"><span class="lineno">  129</span>        assert(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>(err.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/exception/what.html">what</a>()) == <span class="stringliteral">&quot;lambda must be greater than 0&quot;</span>);</div>
+<div class="line"><span class="lineno">  128</span>    } <span class="keywordflow">catch</span> (std::invalid_argument&amp; err) {</div>
+<div class="line"><span class="lineno">  129</span>        assert(std::string(err.what()) == <span class="stringliteral">&quot;lambda must be greater than 0&quot;</span>);</div>
 <div class="line"><span class="lineno">  130</span>    }</div>
-<div class="line"><span class="lineno">  131</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;ALL TEST PASSED\n\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  131</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;ALL TEST PASSED\n\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  132</span> </div>
-<div class="line"><span class="lineno">  133</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test for lambda = -2.3 \n&quot;</span>;</div>
+<div class="line"><span class="lineno">  133</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test for lambda = -2.3 \n&quot;</span>;</div>
 <div class="line"><span class="lineno">  134</span>    <span class="keywordflow">try</span> {</div>
 <div class="line"><span class="lineno">  135</span>        <a class="code hl_function" href="#a1c8b6e787f72a209ef96c096eedf7afc">probability::geometric_dist::exponential_expected</a>(lambda_5);</div>
 <div class="line"><span class="lineno">  136</span>        <a class="code hl_function" href="#af435dbeb43a05c8c7785f53bf4ce1df1">probability::geometric_dist::exponential_var</a>(lambda_5);</div>
 <div class="line"><span class="lineno">  137</span>        <a class="code hl_function" href="#ac7b0091e17479d47438a281fefc2549a">probability::geometric_dist::exponential_std</a>(lambda_5);</div>
-<div class="line"><span class="lineno">  138</span>    } <span class="keywordflow">catch</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a>&amp; err) {</div>
-<div class="line"><span class="lineno">  139</span>        assert(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>(err.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/exception/what.html">what</a>()) == <span class="stringliteral">&quot;lambda must be greater than 0&quot;</span>);</div>
+<div class="line"><span class="lineno">  138</span>    } <span class="keywordflow">catch</span> (std::invalid_argument&amp; err) {</div>
+<div class="line"><span class="lineno">  139</span>        assert(std::string(err.what()) == <span class="stringliteral">&quot;lambda must be greater than 0&quot;</span>);</div>
 <div class="line"><span class="lineno">  140</span>    }</div>
-<div class="line"><span class="lineno">  141</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;ALL TEST PASSED\n\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  141</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;ALL TEST PASSED\n\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  142</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
-<div class="ttc" id="aexponential__dist_8cpp_html_a1c8b6e787f72a209ef96c096eedf7afc"><div class="ttname"><a href="#a1c8b6e787f72a209ef96c096eedf7afc">probability::geometric_dist::exponential_expected</a></div><div class="ttdeci">double exponential_expected(double lambda)</div><div class="ttdoc">the expected value of the exponential distribution</div><div class="ttdef"><b>Definition</b> exponential_dist.cpp:37</div></div>
-<div class="ttc" id="aexponential__dist_8cpp_html_ac7b0091e17479d47438a281fefc2549a"><div class="ttname"><a href="#ac7b0091e17479d47438a281fefc2549a">probability::geometric_dist::exponential_std</a></div><div class="ttdeci">double exponential_std(double lambda)</div><div class="ttdoc">the standard deviation of the exponential distribution</div><div class="ttdef"><b>Definition</b> exponential_dist.cpp:59</div></div>
-<div class="ttc" id="aexponential__dist_8cpp_html_af435dbeb43a05c8c7785f53bf4ce1df1"><div class="ttname"><a href="#af435dbeb43a05c8c7785f53bf4ce1df1">probability::geometric_dist::exponential_var</a></div><div class="ttdeci">double exponential_var(double lambda)</div><div class="ttdoc">the variance of the exponential distribution</div><div class="ttdef"><b>Definition</b> exponential_dist.cpp:48</div></div>
-<div class="ttc" id="awhat_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/error/exception/what.html">std::invalid_argument::what</a></div><div class="ttdeci">T what(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/da2/exponential__dist_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="248" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aexponential__dist_8cpp_html_a1c8b6e787f72a209ef96c096eedf7afc"><div class="ttname"><a href="#a1c8b6e787f72a209ef96c096eedf7afc">probability::geometric_dist::exponential_expected</a></div><div class="ttdeci">double exponential_expected(double lambda)</div><div class="ttdoc">the expected value of the exponential distribution</div><div class="ttdef"><b>Definition</b> <a href="../../d9/da2/exponential__dist_8cpp_source.html#l00037">exponential_dist.cpp:37</a></div></div>
+<div class="ttc" id="aexponential__dist_8cpp_html_ac7b0091e17479d47438a281fefc2549a"><div class="ttname"><a href="#ac7b0091e17479d47438a281fefc2549a">probability::geometric_dist::exponential_std</a></div><div class="ttdeci">double exponential_std(double lambda)</div><div class="ttdoc">the standard deviation of the exponential distribution</div><div class="ttdef"><b>Definition</b> <a href="../../d9/da2/exponential__dist_8cpp_source.html#l00059">exponential_dist.cpp:59</a></div></div>
+<div class="ttc" id="aexponential__dist_8cpp_html_af435dbeb43a05c8c7785f53bf4ce1df1"><div class="ttname"><a href="#af435dbeb43a05c8c7785f53bf4ce1df1">probability::geometric_dist::exponential_var</a></div><div class="ttdeci">double exponential_var(double lambda)</div><div class="ttdoc">the variance of the exponential distribution</div><div class="ttdef"><b>Definition</b> <a href="../../d9/da2/exponential__dist_8cpp_source.html#l00048">exponential_dist.cpp:48</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

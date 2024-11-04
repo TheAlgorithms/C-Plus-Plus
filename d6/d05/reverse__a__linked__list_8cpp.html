@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: data_structures/reverse_a_linked_list.cpp File Reference</title>
+<title>TheAlgorithms/C++: data_structures/reverse_a_linked_list.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -122,7 +139,9 @@ Include dependency graph for reverse_a_linked_list.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../db/da2/reverse__a__linked__list_8cpp__incl.svg" width="240" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d6/d05/reverse__a__linked__list_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d0e/classdata__structures_1_1linked__list_1_1_node.html">data_structures::linked_list::Node</a></td></tr>
@@ -163,6 +182,8 @@ Algorithm</h3>
 <p>Values can be added by iterating to the end of a list (by following the pointers) starting from the first link. Whichever link points to null is considered the last link and is pointed to the new value.</p>
 <p>Linked List can be reversed by using 3 pointers: current, previous, and next_node; we keep iterating until the last node. Meanwhile, before changing to the next of current, we store it in the next_node pointer, now we store the prev pointer in the current of next, this is where the actual reversal happens. And then we move the prev and current pointers one step forward. Then the head node is made to point to the last node (prev pointer) after completion of an iteration.</p>
 <p><a href="https://drive.google.com/file/d/1pM5COF0wx-wermnNy_svtyZquaCUP2xS/view?usp=sharing" target="_blank">A graphic explanation and view of what's happening behind the scenes</a> </p>
+
+<p class="definition">Definition in file <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html">reverse_a_linked_list.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a7f80d9712cc7d77399dcacb4c2917511" name="a7f80d9712cc7d77399dcacb4c2917511"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f80d9712cc7d77399dcacb4c2917511">&#9670;&#160;</a></span>copy_all_nodes()</h2>
@@ -187,6 +208,8 @@ Algorithm</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer to the first node/head of the copied list or nullptr </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00053">53</a> of file <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html">reverse_a_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   53</span>                                             {</div>
 <div class="line"><span class="lineno">   54</span>    <span class="keywordflow">if</span> (<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>) {</div>
 <div class="line"><span class="lineno">   55</span>        <span class="comment">// NOLINTNEXTLINE(cppcoreguidelines-owning-memory)</span></div>
@@ -197,15 +220,10 @@ Algorithm</h3>
 <div class="line"><span class="lineno">   60</span>    }</div>
 <div class="line"><span class="lineno">   61</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">   62</span>}</div>
-<div class="ttc" id="areverse__a__linked__list_8cpp_html_a7f80d9712cc7d77399dcacb4c2917511"><div class="ttname"><a href="#a7f80d9712cc7d77399dcacb4c2917511">data_structures::linked_list::copy_all_nodes</a></div><div class="ttdeci">Node * copy_all_nodes(const Node *const node)</div><div class="ttdoc">creates a deep copy of a list starting at the input node</div><div class="ttdef"><b>Definition</b> reverse_a_linked_list.cpp:53</div></div>
-<div class="ttc" id="astruct_node_html"><div class="ttname"><a href="../../db/d8b/struct_node.html">Node</a></div><div class="ttdef"><b>Definition</b> linkedlist_implentation_usingarray.cpp:14</div></div>
-<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition</b> binary_search_tree.cpp:11</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d05/reverse__a__linked__list_8cpp_a7f80d9712cc7d77399dcacb4c2917511_cgraph.svg" width="164" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="areverse__a__linked__list_8cpp_html_a7f80d9712cc7d77399dcacb4c2917511"><div class="ttname"><a href="#a7f80d9712cc7d77399dcacb4c2917511">data_structures::linked_list::copy_all_nodes</a></div><div class="ttdeci">Node * copy_all_nodes(const Node *const node)</div><div class="ttdoc">creates a deep copy of a list starting at the input node</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00053">reverse_a_linked_list.cpp:53</a></div></div>
+<div class="ttc" id="astruct_node_html"><div class="ttname"><a href="../../db/d8b/struct_node.html">Node</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/dce/linkedlist__implentation__usingarray_8cpp_source.html#l00014">linkedlist_implentation_usingarray.cpp:14</a></div></div>
+<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d26/binary__search__tree_8cpp_source.html#l00011">binary_search_tree.cpp:11</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -225,19 +243,16 @@ Here is the call graph for this function:</div>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00301">301</a> of file <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html">reverse_a_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  301</span>           {</div>
 <div class="line"><span class="lineno">  302</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
 <div class="line"><span class="lineno">  303</span>    test_copy_constructor();</div>
 <div class="line"><span class="lineno">  304</span>    test_assignment_operator();</div>
 <div class="line"><span class="lineno">  305</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  306</span>}</div>
-<div class="ttc" id="areverse__a__linked__list_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> reverse_a_linked_list.cpp:228</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d05/reverse__a__linked__list_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="555" height="298"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="areverse__a__linked__list_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00228">reverse_a_linked_list.cpp:228</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -265,6 +280,8 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00228">228</a> of file <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html">reverse_a_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  228</span>                   {</div>
 <div class="line"><span class="lineno">  229</span>    <a class="code hl_class" href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html">data_structures::linked_list::list</a> L;</div>
 <div class="line"><span class="lineno">  230</span>    <span class="comment">// 1st test</span></div>
@@ -286,22 +303,15 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  246</span>    assert(L.<a class="code hl_function" href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#a2b951a3f1123b9b2f4891ec96aa76d69">traverse</a>(4) == 15);</div>
 <div class="line"><span class="lineno">  247</span>    assert(L.<a class="code hl_function" href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#a2b951a3f1123b9b2f4891ec96aa76d69">traverse</a>(5) == 12);</div>
 <div class="line"><span class="lineno">  248</span>    assert(L.<a class="code hl_variable" href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#af39bcc08641ce0c813023f364a9a9015">last</a>() == 11);</div>
-<div class="line"><span class="lineno">  249</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  249</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  250</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aclassdata__structures_1_1linked__list_1_1list_html"><div class="ttname"><a href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html">data_structures::linked_list::list</a></div><div class="ttdef"><b>Definition</b> reverse_a_linked_list.cpp:68</div></div>
-<div class="ttc" id="aclassdata__structures_1_1linked__list_1_1list_html_a2b951a3f1123b9b2f4891ec96aa76d69"><div class="ttname"><a href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#a2b951a3f1123b9b2f4891ec96aa76d69">data_structures::linked_list::list::traverse</a></div><div class="ttdeci">int32_t traverse(int32_t index) const</div><div class="ttdoc">Utility function to find the i th element of the list.</div><div class="ttdef"><b>Definition</b> reverse_a_linked_list.cpp:168</div></div>
-<div class="ttc" id="aclassdata__structures_1_1linked__list_1_1list_html_a9785d1478e59f5a90288b2928a7094d6"><div class="ttname"><a href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#a9785d1478e59f5a90288b2928a7094d6">data_structures::linked_list::list::top</a></div><div class="ttdeci">int32_t top() const</div><div class="ttdoc">Utility function to find the top element of the list.</div><div class="ttdef"><b>Definition</b> reverse_a_linked_list.cpp:142</div></div>
-<div class="ttc" id="aclassdata__structures_1_1linked__list_1_1list_html_aa69707af46eb6d410eb3a54ee58e1ed1"><div class="ttname"><a href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#aa69707af46eb6d410eb3a54ee58e1ed1">data_structures::linked_list::list::insert</a></div><div class="ttdeci">void insert(int32_t new_elem)</div><div class="ttdoc">Utility function that adds a new element at the end of the list.</div><div class="ttdef"><b>Definition</b> reverse_a_linked_list.cpp:99</div></div>
-<div class="ttc" id="aclassdata__structures_1_1linked__list_1_1list_html_ac466ec086c0835822467bd3d8f3ab90e"><div class="ttname"><a href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#ac466ec086c0835822467bd3d8f3ab90e">data_structures::linked_list::list::reverseList</a></div><div class="ttdeci">void reverseList()</div><div class="ttdoc">Utility function for reversing a list.</div><div class="ttdef"><b>Definition</b> reverse_a_linked_list.cpp:125</div></div>
-<div class="ttc" id="aclassdata__structures_1_1linked__list_1_1list_html_af39bcc08641ce0c813023f364a9a9015"><div class="ttname"><a href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#af39bcc08641ce0c813023f364a9a9015">data_structures::linked_list::list::last</a></div><div class="ttdeci">std::shared_ptr&lt; link &gt; last</div><div class="ttdoc">last link on the list</div><div class="ttdef"><b>Definition</b> linked_list.cpp:84</div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d05/reverse__a__linked__list_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="458" height="298"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassdata__structures_1_1linked__list_1_1list_html"><div class="ttname"><a href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html">data_structures::linked_list::list</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00068">reverse_a_linked_list.cpp:68</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1linked__list_1_1list_html_a2b951a3f1123b9b2f4891ec96aa76d69"><div class="ttname"><a href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#a2b951a3f1123b9b2f4891ec96aa76d69">data_structures::linked_list::list::traverse</a></div><div class="ttdeci">int32_t traverse(int32_t index) const</div><div class="ttdoc">Utility function to find the i th element of the list.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00168">reverse_a_linked_list.cpp:168</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1linked__list_1_1list_html_a9785d1478e59f5a90288b2928a7094d6"><div class="ttname"><a href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#a9785d1478e59f5a90288b2928a7094d6">data_structures::linked_list::list::top</a></div><div class="ttdeci">int32_t top() const</div><div class="ttdoc">Utility function to find the top element of the list.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00142">reverse_a_linked_list.cpp:142</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1linked__list_1_1list_html_aa69707af46eb6d410eb3a54ee58e1ed1"><div class="ttname"><a href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#aa69707af46eb6d410eb3a54ee58e1ed1">data_structures::linked_list::list::insert</a></div><div class="ttdeci">void insert(int32_t new_elem)</div><div class="ttdoc">Utility function that adds a new element at the end of the list.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00099">reverse_a_linked_list.cpp:99</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1linked__list_1_1list_html_ac466ec086c0835822467bd3d8f3ab90e"><div class="ttname"><a href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#ac466ec086c0835822467bd3d8f3ab90e">data_structures::linked_list::list::reverseList</a></div><div class="ttdeci">void reverseList()</div><div class="ttdoc">Utility function for reversing a list.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00125">reverse_a_linked_list.cpp:125</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1linked__list_1_1list_html_af39bcc08641ce0c813023f364a9a9015"><div class="ttname"><a href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#af39bcc08641ce0c813023f364a9a9015">data_structures::linked_list::list::last</a></div><div class="ttdeci">std::shared_ptr&lt; link &gt; last</div><div class="ttdoc">last link on the list</div><div class="ttdef"><b>Definition</b> <a href="../../da/dc3/linked__list_8cpp_source.html#l00084">linked_list.cpp:84</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a29e92f516e1606aa6743fc992aab35be" name="a29e92f516e1606aa6743fc992aab35be"></a>
@@ -318,6 +328,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00274">274</a> of file <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html">reverse_a_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  274</span>                                {</div>
 <div class="line"><span class="lineno">  275</span>    <a class="code hl_class" href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html">data_structures::linked_list::list</a> L;</div>
 <div class="line"><span class="lineno">  276</span>    <a class="code hl_class" href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html">data_structures::linked_list::list</a> otherList;</div>
@@ -357,6 +369,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00252">252</a> of file <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html">reverse_a_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  252</span>                             {</div>
 <div class="line"><span class="lineno">  253</span>    <a class="code hl_class" href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html">data_structures::linked_list::list</a> L;</div>
 <div class="line"><span class="lineno">  254</span>    L.<a class="code hl_function" href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#aa69707af46eb6d410eb3a54ee58e1ed1">insert</a>(10);</div>

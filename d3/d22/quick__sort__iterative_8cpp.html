@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: sorting/quick_sort_iterative.cpp File Reference</title>
+<title>TheAlgorithms/C++: sorting/quick_sort_iterative.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -123,7 +140,9 @@ Include dependency graph for quick_sort_iterative.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d33/quick__sort__iterative_8cpp__incl.svg" width="428" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d3/d22/quick__sort__iterative_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html">sorting</a></td></tr>
@@ -132,10 +151,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aac8f44b28b4aa96444383030b28f8b34" id="r_aac8f44b28b4aa96444383030b28f8b34"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#aac8f44b28b4aa96444383030b28f8b34">sorting::partition</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &amp;arr, int start, int end)</td></tr>
+<tr class="memitem:aac8f44b28b4aa96444383030b28f8b34" id="r_aac8f44b28b4aa96444383030b28f8b34"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#aac8f44b28b4aa96444383030b28f8b34">sorting::partition</a> (std::vector&lt; int &gt; &amp;arr, int start, int end)</td></tr>
 <tr class="memdesc:aac8f44b28b4aa96444383030b28f8b34"><td class="mdescLeft">&#160;</td><td class="mdescRight">The partition function sorts the array from start to end and uses the last element as the pivot.  <br /></td></tr>
 <tr class="separator:aac8f44b28b4aa96444383030b28f8b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a263595fd9a0163b5b997b89fab3a0dc5" id="r_a263595fd9a0163b5b997b89fab3a0dc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a263595fd9a0163b5b997b89fab3a0dc5">sorting::iterativeQuickSort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &amp;arr)</td></tr>
+<tr class="memitem:a263595fd9a0163b5b997b89fab3a0dc5" id="r_a263595fd9a0163b5b997b89fab3a0dc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a263595fd9a0163b5b997b89fab3a0dc5">sorting::iterativeQuickSort</a> (std::vector&lt; int &gt; &amp;arr)</td></tr>
 <tr class="memdesc:a263595fd9a0163b5b997b89fab3a0dc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main sorting function.  <br /></td></tr>
 <tr class="separator:a263595fd9a0163b5b997b89fab3a0dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88ec9ad42717780d6caaff9d3d6977f9" id="r_a88ec9ad42717780d6caaff9d3d6977f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88ec9ad42717780d6caaff9d3d6977f9">tests</a> ()</td></tr>
@@ -148,6 +167,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Quick Sort without recursion. This method uses the stack instead. Both recursive and iterative implementations have O(n log n) best case and O(n^2) worst case. </p>
 <p><a href="https://stackoverflow.com/questions/12553238/quicksort-iterative-or-recursive">https://stackoverflow.com/questions/12553238/quicksort-iterative-or-recursive</a> <a href="https://en.wikipedia.org/wiki/Quicksort">https://en.wikipedia.org/wiki/Quicksort</a> <a href="https://www.geeksforgeeks.org/iterative-quick-sort/">https://www.geeksforgeeks.org/iterative-quick-sort/</a> </p><dl class="section author"><dt>Author</dt><dd><a href="https://github.com/sebe324" target="_blank">Sebe324</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d3/d22/quick__sort__iterative_8cpp_source.html">quick_sort_iterative.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -166,17 +187,14 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d22/quick__sort__iterative_8cpp_source.html#l00128">128</a> of file <a class="el" href="../../d3/d22/quick__sort__iterative_8cpp_source.html">quick_sort_iterative.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  129</span>{</div>
 <div class="line"><span class="lineno">  130</span>    <a class="code hl_function" href="#a88ec9ad42717780d6caaff9d3d6977f9">tests</a>(); <span class="comment">// run self test implementation</span></div>
 <div class="line"><span class="lineno">  131</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  132</span>}</div>
-<div class="ttc" id="aquick__sort__iterative_8cpp_html_a88ec9ad42717780d6caaff9d3d6977f9"><div class="ttname"><a href="#a88ec9ad42717780d6caaff9d3d6977f9">tests</a></div><div class="ttdeci">void tests()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> quick_sort_iterative.cpp:94</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d3/d22/quick__sort__iterative_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="100%" height="512"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="aquick__sort__iterative_8cpp_html_a88ec9ad42717780d6caaff9d3d6977f9"><div class="ttname"><a href="#a88ec9ad42717780d6caaff9d3d6977f9">tests</a></div><div class="ttdeci">void tests()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d22/quick__sort__iterative_8cpp_source.html#l00094">quick_sort_iterative.cpp:94</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a88ec9ad42717780d6caaff9d3d6977f9" name="a88ec9ad42717780d6caaff9d3d6977f9"></a>
@@ -196,45 +214,37 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d22/quick__sort__iterative_8cpp_source.html#l00094">94</a> of file <a class="el" href="../../d3/d22/quick__sort__iterative_8cpp_source.html">quick_sort_iterative.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   95</span>{</div>
 <div class="line"><span class="lineno">   96</span>    <span class="comment">//TEST 1 - Positive numbers</span></div>
-<div class="line"><span class="lineno">   97</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> case1={100,534,1000000,553,10,61,2000,238,2756,9,12,56,30};</div>
-<div class="line"><span class="lineno">   98</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;TEST 1\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   99</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;Before: \n&quot;</span>;</div>
-<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span> x : case1) <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;x&lt;&lt;<span class="stringliteral">&quot;,&quot;</span>;</div>
-<div class="line"><span class="lineno">  101</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   97</span>    std::vector&lt;int&gt; case1={100,534,1000000,553,10,61,2000,238,2756,9,12,56,30};</div>
+<div class="line"><span class="lineno">   98</span>    std::cout&lt;&lt;<span class="stringliteral">&quot;TEST 1\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   99</span>    std::cout&lt;&lt;<span class="stringliteral">&quot;Before: \n&quot;</span>;</div>
+<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span> x : case1) std::cout&lt;&lt;x&lt;&lt;<span class="stringliteral">&quot;,&quot;</span>;</div>
+<div class="line"><span class="lineno">  101</span>    std::cout&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  102</span>    <a class="code hl_function" href="../../d5/d91/namespacesorting.html#a263595fd9a0163b5b997b89fab3a0dc5">sorting::iterativeQuickSort</a>(case1);</div>
-<div class="line"><span class="lineno">  103</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(case1),<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(case1)));</div>
-<div class="line"><span class="lineno">  104</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;Test 1 succesful!\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  105</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;After: \n&quot;</span>;</div>
-<div class="line"><span class="lineno">  106</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span> x : case1) <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;x&lt;&lt;<span class="stringliteral">&quot;,&quot;</span>;</div>
-<div class="line"><span class="lineno">  107</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  103</span>    assert(std::is_sorted(std::begin(case1),std::end(case1)));</div>
+<div class="line"><span class="lineno">  104</span>    std::cout&lt;&lt;<span class="stringliteral">&quot;Test 1 succesful!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  105</span>    std::cout&lt;&lt;<span class="stringliteral">&quot;After: \n&quot;</span>;</div>
+<div class="line"><span class="lineno">  106</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span> x : case1) std::cout&lt;&lt;x&lt;&lt;<span class="stringliteral">&quot;,&quot;</span>;</div>
+<div class="line"><span class="lineno">  107</span>    std::cout&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  108</span> </div>
 <div class="line"><span class="lineno">  109</span>    <span class="comment">//TEST 2 - Negative numbers</span></div>
-<div class="line"><span class="lineno">  110</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> case2={-10,-2,-5,-2,-3746,-785,-123, -452, -32456};</div>
-<div class="line"><span class="lineno">  111</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;TEST 2\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  112</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;Before: \n&quot;</span>;</div>
-<div class="line"><span class="lineno">  113</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span> x : case2) <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;x&lt;&lt;<span class="stringliteral">&quot;,&quot;</span>;</div>
-<div class="line"><span class="lineno">  114</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  110</span>    std::vector&lt;int&gt; case2={-10,-2,-5,-2,-3746,-785,-123, -452, -32456};</div>
+<div class="line"><span class="lineno">  111</span>    std::cout&lt;&lt;<span class="stringliteral">&quot;TEST 2\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  112</span>    std::cout&lt;&lt;<span class="stringliteral">&quot;Before: \n&quot;</span>;</div>
+<div class="line"><span class="lineno">  113</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span> x : case2) std::cout&lt;&lt;x&lt;&lt;<span class="stringliteral">&quot;,&quot;</span>;</div>
+<div class="line"><span class="lineno">  114</span>    std::cout&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  115</span>    <a class="code hl_function" href="../../d5/d91/namespacesorting.html#a263595fd9a0163b5b997b89fab3a0dc5">sorting::iterativeQuickSort</a>(case2);</div>
-<div class="line"><span class="lineno">  116</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(case2),<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(case2)));</div>
-<div class="line"><span class="lineno">  117</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;Test 2 succesful!\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  118</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;After: \n&quot;</span>;</div>
-<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span> x : case2) <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;x&lt;&lt;<span class="stringliteral">&quot;,&quot;</span>;</div>
-<div class="line"><span class="lineno">  120</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  116</span>    assert(std::is_sorted(std::begin(case2),std::end(case2)));</div>
+<div class="line"><span class="lineno">  117</span>    std::cout&lt;&lt;<span class="stringliteral">&quot;Test 2 succesful!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  118</span>    std::cout&lt;&lt;<span class="stringliteral">&quot;After: \n&quot;</span>;</div>
+<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span> x : case2) std::cout&lt;&lt;x&lt;&lt;<span class="stringliteral">&quot;,&quot;</span>;</div>
+<div class="line"><span class="lineno">  120</span>    std::cout&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  121</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="ais_sorted_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></div><div class="ttdeci">T is_sorted(T... args)</div></div>
-<div class="ttc" id="anamespacesorting_html_a263595fd9a0163b5b997b89fab3a0dc5"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#a263595fd9a0163b5b997b89fab3a0dc5">sorting::iterativeQuickSort</a></div><div class="ttdeci">void iterativeQuickSort(std::vector&lt; int &gt; &amp;arr)</div><div class="ttdoc">The main sorting function.</div><div class="ttdef"><b>Definition</b> quick_sort_iterative.cpp:58</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d22/quick__sort__iterative_8cpp_a88ec9ad42717780d6caaff9d3d6977f9_cgraph.svg" width="619" height="283"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="anamespacesorting_html_a263595fd9a0163b5b997b89fab3a0dc5"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#a263595fd9a0163b5b997b89fab3a0dc5">sorting::iterativeQuickSort</a></div><div class="ttdeci">void iterativeQuickSort(std::vector&lt; int &gt; &amp;arr)</div><div class="ttdoc">The main sorting function.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d22/quick__sort__iterative_8cpp_source.html#l00058">quick_sort_iterative.cpp:58</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

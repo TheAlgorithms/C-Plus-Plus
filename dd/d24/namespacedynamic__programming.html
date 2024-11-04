@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: dynamic_programming Namespace Reference</title>
+<title>TheAlgorithms/C++: dynamic_programming Namespace Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -119,16 +136,16 @@ Functions</h2></td></tr>
 <tr class="memitem:af046365a8d77a1267acc082f86135a26"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af046365a8d77a1267acc082f86135a26">is_armstrong</a> (const T &amp;number)</td></tr>
 <tr class="memdesc:af046365a8d77a1267acc082f86135a26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given number is armstrong or not.  <br /></td></tr>
 <tr class="separator:af046365a8d77a1267acc082f86135a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a2215194e58786c34db1ccaf8031079" id="r_a0a2215194e58786c34db1ccaf8031079"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a2215194e58786c34db1ccaf8031079">LIS</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint64_t &gt; &amp;a, const uint32_t &amp;n)</td></tr>
+<tr class="memitem:a0a2215194e58786c34db1ccaf8031079" id="r_a0a2215194e58786c34db1ccaf8031079"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a2215194e58786c34db1ccaf8031079">LIS</a> (const std::vector&lt; uint64_t &gt; &amp;a, const uint32_t &amp;n)</td></tr>
 <tr class="memdesc:a0a2215194e58786c34db1ccaf8031079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the longest increasing subsequence for the specified numbers.  <br /></td></tr>
 <tr class="separator:a0a2215194e58786c34db1ccaf8031079"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe9f45b6e30ee187509da2d1d0093412" id="r_afe9f45b6e30ee187509da2d1d0093412"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe9f45b6e30ee187509da2d1d0093412">lps</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;a)</td></tr>
+<tr class="memitem:afe9f45b6e30ee187509da2d1d0093412" id="r_afe9f45b6e30ee187509da2d1d0093412"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe9f45b6e30ee187509da2d1d0093412">lps</a> (const std::string &amp;a)</td></tr>
 <tr class="memdesc:afe9f45b6e30ee187509da2d1d0093412"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that returns the longest palindromic subsequence of a string.  <br /></td></tr>
 <tr class="separator:afe9f45b6e30ee187509da2d1d0093412"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5239174fa0d987f2c67edc1f2af82beb" id="r_a5239174fa0d987f2c67edc1f2af82beb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5239174fa0d987f2c67edc1f2af82beb">maxCircularSum</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &amp;arr)</td></tr>
+<tr class="memitem:a5239174fa0d987f2c67edc1f2af82beb" id="r_a5239174fa0d987f2c67edc1f2af82beb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5239174fa0d987f2c67edc1f2af82beb">maxCircularSum</a> (std::vector&lt; int &gt; &amp;arr)</td></tr>
 <tr class="memdesc:a5239174fa0d987f2c67edc1f2af82beb"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the maximum contiguous circular sum of an array  <br /></td></tr>
 <tr class="separator:a5239174fa0d987f2c67edc1f2af82beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a066e0e739e7c276eee6e61d5b4d37ce8" id="r_a066e0e739e7c276eee6e61d5b4d37ce8"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a066e0e739e7c276eee6e61d5b4d37ce8">trappedRainwater</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint32_t &gt; &amp;heights)</td></tr>
+<tr class="memitem:a066e0e739e7c276eee6e61d5b4d37ce8" id="r_a066e0e739e7c276eee6e61d5b4d37ce8"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a066e0e739e7c276eee6e61d5b4d37ce8">trappedRainwater</a> (const std::vector&lt; uint32_t &gt; &amp;heights)</td></tr>
 <tr class="memdesc:a066e0e739e7c276eee6e61d5b4d37ce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate the trapped rainwater.  <br /></td></tr>
 <tr class="separator:a066e0e739e7c276eee6e61d5b4d37ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -136,26 +153,26 @@ Functions</h2></td></tr>
 <div class="textblock"><p>Dynamic Programming algorithms. </p>
 <p>Dynamic programming algorithms.</p>
 <p>Namespace for dynamic programming algorithms.</p>
-<p>For <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>.</p>
-<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
+<p>For std::vector.</p>
+<p>for std::vector</p>
 <p>Dynamic Programming algorithm.</p>
 <p>for IO operations</p>
 <p>Dynamic Programming Algorithms.</p>
-<p>for <code>assert</code> for <code><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a></code> for IO operations for <code><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></code> library for <code><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></code> STL library</p>
-<p>for assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a></p>
+<p>for <code>assert</code> for <code>std::uint32_t</code> for IO operations for <code>std::string</code> library for <code>std::vector</code> STL library</p>
+<p>for assert for std::pow</p>
 <p>Dynamic Programming algorithms</p>
-<p>for assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> for io operations</p>
+<p>for assert for std::max for std::uint32_t for io operations</p>
 <p>Dynamic Programming algorithms</p>
-<p>for assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a> for IO operations</p>
+<p>for assert for std::max for std::uint64_t for IO operations</p>
 <p>Dynamic Programming algorithms</p>
-<p>for assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
+<p>for assert for std::string for std::vector</p>
 <p>for assert for IO operations</p>
 <p>Dynamic Programming algorithms</p>
-<p>for assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a> for IO operations</p>
+<p>for assert for std::uint64_t for IO operations</p>
 <p>Dynamic Programming algorithms</p>
 <p>for std::assert for IO operations for unordered map</p>
 <p>Dynamic Programming algorithms</p>
-<p>For <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a> and <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a> For assert For <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> </p>
+<p>For std::min and std::max For assert For std::size_t </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="af046365a8d77a1267acc082f86135a26" name="af046365a8d77a1267acc082f86135a26"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af046365a8d77a1267acc082f86135a26">&#9670;&#160;</a></span>is_armstrong()</h2>
@@ -184,6 +201,8 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>false if the given number is NOT armstrong </dd>
 <dd>
 true if the given number IS armstrong </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/da7/armstrong__number__templated_8cpp_source.html#l00039">39</a> of file <a class="el" href="../../d1/da7/armstrong__number__templated_8cpp_source.html">armstrong_number_templated.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   39</span>                                   {</div>
 <div class="line"><span class="lineno">   40</span>    <span class="keywordtype">int</span> count = 0, temp = number, result = 0, rem = 0;</div>
 <div class="line"><span class="lineno">   41</span> </div>
@@ -200,7 +219,7 @@ true if the given number IS armstrong </dd></dl>
 <div class="line"><span class="lineno">   52</span>    temp = number;</div>
 <div class="line"><span class="lineno">   53</span>    <span class="keywordflow">while</span> (temp != 0) {</div>
 <div class="line"><span class="lineno">   54</span>        rem = temp % 10;</div>
-<div class="line"><span class="lineno">   55</span>        result += <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(rem, count));</div>
+<div class="line"><span class="lineno">   55</span>        result += <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(std::pow(rem, count));</div>
 <div class="line"><span class="lineno">   56</span>        temp /= 10;</div>
 <div class="line"><span class="lineno">   57</span>    }</div>
 <div class="line"><span class="lineno">   58</span> </div>
@@ -210,13 +229,7 @@ true if the given number IS armstrong </dd></dl>
 <div class="line"><span class="lineno">   62</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   63</span>    }</div>
 <div class="line"><span class="lineno">   64</span>}</div>
-<div class="ttc" id="apow_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a></div><div class="ttdeci">T pow(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d24/namespacedynamic__programming_af046365a8d77a1267acc082f86135a26_cgraph.svg" width="283" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0a2215194e58786c34db1ccaf8031079" name="a0a2215194e58786c34db1ccaf8031079"></a>
@@ -228,7 +241,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">uint64_t dynamic_programming::LIS </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint64_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; uint64_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -247,8 +260,10 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the length of the longest increasing subsequence in the <code>a</code> array of size <code>n</code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d57/longest__increasing__subsequence_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../d7/d57/longest__increasing__subsequence_8cpp_source.html">longest_increasing_subsequence.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   40</span>                                                              {</div>
-<div class="line"><span class="lineno">   41</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> lis(n);</div>
+<div class="line"><span class="lineno">   41</span>    std::vector&lt;int&gt; lis(n);</div>
 <div class="line"><span class="lineno">   42</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; ++i) {</div>
 <div class="line"><span class="lineno">   43</span>        lis[i] = 1;</div>
 <div class="line"><span class="lineno">   44</span>    }</div>
@@ -261,18 +276,11 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   51</span>    }</div>
 <div class="line"><span class="lineno">   52</span>    <span class="keywordtype">int</span> res = 0;</div>
 <div class="line"><span class="lineno">   53</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; ++i) {</div>
-<div class="line"><span class="lineno">   54</span>        res = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(res, lis[i]);</div>
+<div class="line"><span class="lineno">   54</span>        res = std::max(res, lis[i]);</div>
 <div class="line"><span class="lineno">   55</span>    }</div>
 <div class="line"><span class="lineno">   56</span>    <span class="keywordflow">return</span> res;</div>
 <div class="line"><span class="lineno">   57</span>}</div>
-<div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d24/namespacedynamic__programming_a0a2215194e58786c34db1ccaf8031079_cgraph.svg" width="312" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afe9f45b6e30ee187509da2d1d0093412" name="afe9f45b6e30ee187509da2d1d0093412"></a>
@@ -282,9 +290,9 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> dynamic_programming::lps </td>
+          <td class="memname">std::string dynamic_programming::lps </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -298,12 +306,14 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>longest palindromic subsequence of the string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d77/longest__palindromic__subsequence_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../d0/d77/longest__palindromic__subsequence_8cpp_source.html">longest_palindromic_subsequence.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   31</span>                                  {</div>
-<div class="line"><span class="lineno">   32</span>    <span class="keyword">const</span> <span class="keyword">auto</span> b = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>(a.rbegin(), a.rend());</div>
+<div class="line"><span class="lineno">   32</span>    <span class="keyword">const</span> <span class="keyword">auto</span> b = std::string(a.rbegin(), a.rend());</div>
 <div class="line"><span class="lineno">   33</span>    <span class="keyword">const</span> <span class="keyword">auto</span> m = a.length();</div>
 <div class="line"><span class="lineno">   34</span>    <span class="keyword">using </span>ind_type = std::string::size_type;</div>
-<div class="line"><span class="lineno">   35</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;ind_type&gt;</a> &gt; res(m + 1,</div>
-<div class="line"><span class="lineno">   36</span>                                            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;ind_type&gt;</a>(m + 1));</div>
+<div class="line"><span class="lineno">   35</span>    std::vector&lt;std::vector&lt;ind_type&gt; &gt; res(m + 1,</div>
+<div class="line"><span class="lineno">   36</span>                                            std::vector&lt;ind_type&gt;(m + 1));</div>
 <div class="line"><span class="lineno">   37</span> </div>
 <div class="line"><span class="lineno">   38</span>    <span class="comment">// Finding the length of the longest</span></div>
 <div class="line"><span class="lineno">   39</span>    <span class="comment">// palindromic subsequence and storing</span></div>
@@ -315,14 +325,14 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   45</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (a[i - 1] == b[j - 1]) {</div>
 <div class="line"><span class="lineno">   46</span>                res[i][j] = res[i - 1][j - 1] + 1;</div>
 <div class="line"><span class="lineno">   47</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   48</span>                res[i][j] = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(res[i - 1][j], res[i][j - 1]);</div>
+<div class="line"><span class="lineno">   48</span>                res[i][j] = std::max(res[i - 1][j], res[i][j - 1]);</div>
 <div class="line"><span class="lineno">   49</span>            }</div>
 <div class="line"><span class="lineno">   50</span>        }</div>
 <div class="line"><span class="lineno">   51</span>    }</div>
 <div class="line"><span class="lineno">   52</span>    <span class="comment">// Length of longest palindromic subsequence</span></div>
 <div class="line"><span class="lineno">   53</span>    <span class="keyword">auto</span> idx = res[m][m];</div>
 <div class="line"><span class="lineno">   54</span>    <span class="comment">// Creating string of index+1 length</span></div>
-<div class="line"><span class="lineno">   55</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> ans(idx, <span class="charliteral">&#39;\0&#39;</span>);</div>
+<div class="line"><span class="lineno">   55</span>    std::string ans(idx, <span class="charliteral">&#39;\0&#39;</span>);</div>
 <div class="line"><span class="lineno">   56</span>    ind_type i = m, j = m;</div>
 <div class="line"><span class="lineno">   57</span> </div>
 <div class="line"><span class="lineno">   58</span>    <span class="comment">// starting from right-most bottom-most corner</span></div>
@@ -347,13 +357,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   77</span> </div>
 <div class="line"><span class="lineno">   78</span>    <span class="keywordflow">return</span> ans;</div>
 <div class="line"><span class="lineno">   79</span>}</div>
-<div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d24/namespacedynamic__programming_afe9f45b6e30ee187509da2d1d0093412_cgraph.svg" width="308" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5239174fa0d987f2c67edc1f2af82beb" name="a5239174fa0d987f2c67edc1f2af82beb"></a>
@@ -365,7 +369,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">int dynamic_programming::maxCircularSum </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span></td><td>)</td>
+          <td class="paramtype">std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -379,14 +383,16 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int which is the maximum sum </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dfb/maximum__circular__subarray_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../db/dfb/maximum__circular__subarray_8cpp_source.html">maximum_circular_subarray.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   27</span>{</div>
 <div class="line"><span class="lineno">   28</span>    <span class="comment">// Edge Case</span></div>
-<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">if</span> (arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() == 1)</div>
+<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">if</span> (arr.size() == 1)</div>
 <div class="line"><span class="lineno">   30</span>        <span class="keywordflow">return</span> arr[0];</div>
 <div class="line"><span class="lineno">   31</span>  </div>
 <div class="line"><span class="lineno">   32</span>    <span class="comment">// Sum variable which stores total sum of the array.</span></div>
 <div class="line"><span class="lineno">   33</span>    <span class="keywordtype">int</span> sum = 0;</div>
-<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; arr.size(); i++) {</div>
 <div class="line"><span class="lineno">   35</span>        sum += arr[i];</div>
 <div class="line"><span class="lineno">   36</span>    }</div>
 <div class="line"><span class="lineno">   37</span>  </div>
@@ -394,30 +400,23 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   39</span>    <span class="keywordtype">int</span> current_max = arr[0], max_so_far = arr[0], current_min = arr[0], min_so_far = arr[0];</div>
 <div class="line"><span class="lineno">   40</span>  </div>
 <div class="line"><span class="lineno">   41</span>    <span class="comment">// Concept of Kadane&#39;s Algorithm</span></div>
-<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {</div>
+<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; arr.size(); i++) {</div>
 <div class="line"><span class="lineno">   43</span>        <span class="comment">// Kadane&#39;s Algorithm to find Maximum subarray sum.</span></div>
-<div class="line"><span class="lineno">   44</span>        current_max = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(current_max + arr[i], arr[i]);</div>
-<div class="line"><span class="lineno">   45</span>        max_so_far = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(max_so_far, current_max);</div>
+<div class="line"><span class="lineno">   44</span>        current_max = std::max(current_max + arr[i], arr[i]);</div>
+<div class="line"><span class="lineno">   45</span>        max_so_far = std::max(max_so_far, current_max);</div>
 <div class="line"><span class="lineno">   46</span>  </div>
 <div class="line"><span class="lineno">   47</span>        <span class="comment">// Kadane&#39;s Algorithm to find Minimum subarray sum.</span></div>
-<div class="line"><span class="lineno">   48</span>        current_min = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(current_min + arr[i], arr[i]);</div>
-<div class="line"><span class="lineno">   49</span>        min_so_far = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(min_so_far, current_min);</div>
+<div class="line"><span class="lineno">   48</span>        current_min = std::min(current_min + arr[i], arr[i]);</div>
+<div class="line"><span class="lineno">   49</span>        min_so_far = std::min(min_so_far, current_min);</div>
 <div class="line"><span class="lineno">   50</span>    }</div>
 <div class="line"><span class="lineno">   51</span>  </div>
 <div class="line"><span class="lineno">   52</span>    <span class="keywordflow">if</span> (min_so_far == sum)</div>
 <div class="line"><span class="lineno">   53</span>        <span class="keywordflow">return</span> max_so_far;</div>
 <div class="line"><span class="lineno">   54</span>  </div>
 <div class="line"><span class="lineno">   55</span>    <span class="comment">// Return the maximum value</span></div>
-<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(max_so_far, sum - min_so_far);</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">return</span> std::max(max_so_far, sum - min_so_far);</div>
 <div class="line"><span class="lineno">   57</span>}</div>
-<div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d24/namespacedynamic__programming_a5239174fa0d987f2c67edc1f2af82beb_cgraph.svg" width="327" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a066e0e739e7c276eee6e61d5b4d37ce8" name="a066e0e739e7c276eee6e61d5b4d37ce8"></a>
@@ -429,7 +428,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">uint32_t dynamic_programming::trappedRainwater </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint32_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>heights</em></span></td><td>)</td>
+          <td class="paramtype">const std::vector&lt; uint32_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>heights</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -443,41 +442,37 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The amount of trapped rainwater </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d80/trapped__rainwater_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../d9/d80/trapped__rainwater_8cpp_source.html">trapped_rainwater.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   27</span>                                                              {</div>
-<div class="line"><span class="lineno">   28</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> n = heights.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">   28</span>    std::size_t n = heights.size();</div>
 <div class="line"><span class="lineno">   29</span>    <span class="keywordflow">if</span> (n &lt;= 2)</div>
 <div class="line"><span class="lineno">   30</span>        <span class="keywordflow">return</span> 0;  <span class="comment">// No water can be trapped with less than 3 walls</span></div>
 <div class="line"><span class="lineno">   31</span> </div>
-<div class="line"><span class="lineno">   32</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a> leftMax(n), rightMax(n);</div>
+<div class="line"><span class="lineno">   32</span>    std::vector&lt;uint32_t&gt; leftMax(n), rightMax(n);</div>
 <div class="line"><span class="lineno">   33</span> </div>
 <div class="line"><span class="lineno">   34</span>    <span class="comment">// Calculate the maximum height of wall to the left of each wall</span></div>
 <div class="line"><span class="lineno">   35</span>    leftMax[0] = heights[0];</div>
-<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">for</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> i = 1; i &lt; n; ++i) {</div>
-<div class="line"><span class="lineno">   37</span>        leftMax[i] = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(leftMax[i - 1], heights[i]);</div>
+<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">for</span> (std::size_t i = 1; i &lt; n; ++i) {</div>
+<div class="line"><span class="lineno">   37</span>        leftMax[i] = std::max(leftMax[i - 1], heights[i]);</div>
 <div class="line"><span class="lineno">   38</span>    }</div>
 <div class="line"><span class="lineno">   39</span> </div>
 <div class="line"><span class="lineno">   40</span>    <span class="comment">// Calculate the maximum height of wall to the right of each wall</span></div>
 <div class="line"><span class="lineno">   41</span>    rightMax[n - 1] = heights[n - 1];</div>
-<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">for</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> i = n - 2; i &lt; n; --i) {</div>
-<div class="line"><span class="lineno">   43</span>        rightMax[i] = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(rightMax[i + 1], heights[i]);</div>
+<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">for</span> (std::size_t i = n - 2; i &lt; n; --i) {</div>
+<div class="line"><span class="lineno">   43</span>        rightMax[i] = std::max(rightMax[i + 1], heights[i]);</div>
 <div class="line"><span class="lineno">   44</span>    }</div>
 <div class="line"><span class="lineno">   45</span> </div>
 <div class="line"><span class="lineno">   46</span>    <span class="comment">// Calculate the trapped rainwater between walls</span></div>
 <div class="line"><span class="lineno">   47</span>    uint32_t trappedWater = 0;</div>
-<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">for</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> i = 0; i &lt; n; ++i) {</div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; n; ++i) {</div>
 <div class="line"><span class="lineno">   49</span>        trappedWater +=</div>
-<div class="line"><span class="lineno">   50</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(0u, <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(leftMax[i], rightMax[i]) - heights[i]);</div>
+<div class="line"><span class="lineno">   50</span>            std::max(0u, std::min(leftMax[i], rightMax[i]) - heights[i]);</div>
 <div class="line"><span class="lineno">   51</span>    }</div>
 <div class="line"><span class="lineno">   52</span> </div>
 <div class="line"><span class="lineno">   53</span>    <span class="keywordflow">return</span> trappedWater;</div>
 <div class="line"><span class="lineno">   54</span>}</div>
-<div class="ttc" id="asize_t_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d24/namespacedynamic__programming_a066e0e739e7c276eee6e61d5b4d37ce8_cgraph.svg" width="327" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

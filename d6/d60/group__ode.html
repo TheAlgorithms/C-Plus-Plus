@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: Ordinary Differential Equations</title>
+<title>TheAlgorithms/C++: Ordinary Differential Equations</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -112,22 +129,22 @@ $(function(){initNavTree('d6/d60/group__ode.html','../../'); initResizable(true)
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga195d23bbdfcb80e83c9cda45c9ad5723" id="r_ga195d23bbdfcb80e83c9cda45c9ad5723"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga195d23bbdfcb80e83c9cda45c9ad5723">forward_euler_step</a> (const double dx, const double x, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *y, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *dy)</td></tr>
+<tr class="memitem:ga195d23bbdfcb80e83c9cda45c9ad5723" id="r_ga195d23bbdfcb80e83c9cda45c9ad5723"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga195d23bbdfcb80e83c9cda45c9ad5723">forward_euler_step</a> (const double dx, const double x, std::valarray&lt; double &gt; *y, std::valarray&lt; double &gt; *dy)</td></tr>
 <tr class="memdesc:ga195d23bbdfcb80e83c9cda45c9ad5723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute next step approximation using the forward-Euler method.  <br /></td></tr>
 <tr class="separator:ga195d23bbdfcb80e83c9cda45c9ad5723"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae0509f8843e2bc42de2abbd00a14b7b9" id="r_gae0509f8843e2bc42de2abbd00a14b7b9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae0509f8843e2bc42de2abbd00a14b7b9">forward_euler</a> (double dx, double x0, double x_max, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *y, bool save_to_file=false)</td></tr>
+<tr class="memitem:gae0509f8843e2bc42de2abbd00a14b7b9" id="r_gae0509f8843e2bc42de2abbd00a14b7b9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae0509f8843e2bc42de2abbd00a14b7b9">forward_euler</a> (double dx, double x0, double x_max, std::valarray&lt; double &gt; *y, bool save_to_file=false)</td></tr>
 <tr class="memdesc:gae0509f8843e2bc42de2abbd00a14b7b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute approximation using the forward-Euler method in the given limits.  <br /></td></tr>
 <tr class="separator:gae0509f8843e2bc42de2abbd00a14b7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8c319db420c3d97a83e9dcca803b6812" id="r_ga8c319db420c3d97a83e9dcca803b6812"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8c319db420c3d97a83e9dcca803b6812">midpoint_euler_step</a> (const double dx, const double &amp;x, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *y, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *dy)</td></tr>
+<tr class="memitem:ga8c319db420c3d97a83e9dcca803b6812" id="r_ga8c319db420c3d97a83e9dcca803b6812"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8c319db420c3d97a83e9dcca803b6812">midpoint_euler_step</a> (const double dx, const double &amp;x, std::valarray&lt; double &gt; *y, std::valarray&lt; double &gt; *dy)</td></tr>
 <tr class="memdesc:ga8c319db420c3d97a83e9dcca803b6812"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute next step approximation using the midpoint-Euler method.  <br /></td></tr>
 <tr class="separator:ga8c319db420c3d97a83e9dcca803b6812"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga36ff0710861ca39d957046c0b09b2985" id="r_ga36ff0710861ca39d957046c0b09b2985"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga36ff0710861ca39d957046c0b09b2985">midpoint_euler</a> (double dx, double x0, double x_max, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *y, bool save_to_file=false)</td></tr>
+<tr class="memitem:ga36ff0710861ca39d957046c0b09b2985" id="r_ga36ff0710861ca39d957046c0b09b2985"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga36ff0710861ca39d957046c0b09b2985">midpoint_euler</a> (double dx, double x0, double x_max, std::valarray&lt; double &gt; *y, bool save_to_file=false)</td></tr>
 <tr class="memdesc:ga36ff0710861ca39d957046c0b09b2985"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute approximation using the midpoint-Euler method in the given limits.  <br /></td></tr>
 <tr class="separator:ga36ff0710861ca39d957046c0b09b2985"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga827bf009831ddc477c5fa8891d5cb35f" id="r_ga827bf009831ddc477c5fa8891d5cb35f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga827bf009831ddc477c5fa8891d5cb35f">semi_implicit_euler_step</a> (const double dx, const double &amp;x, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *y, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *dy)</td></tr>
+<tr class="memitem:ga827bf009831ddc477c5fa8891d5cb35f" id="r_ga827bf009831ddc477c5fa8891d5cb35f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga827bf009831ddc477c5fa8891d5cb35f">semi_implicit_euler_step</a> (const double dx, const double &amp;x, std::valarray&lt; double &gt; *y, std::valarray&lt; double &gt; *dy)</td></tr>
 <tr class="memdesc:ga827bf009831ddc477c5fa8891d5cb35f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute next step approximation using the semi-implicit-Euler method.  <br /></td></tr>
 <tr class="separator:ga827bf009831ddc477c5fa8891d5cb35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3874d294ab00fe9ce8731c5b7991a089" id="r_ga3874d294ab00fe9ce8731c5b7991a089"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3874d294ab00fe9ce8731c5b7991a089">semi_implicit_euler</a> (double dx, double x0, double x_max, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *y, bool save_to_file=false)</td></tr>
+<tr class="memitem:ga3874d294ab00fe9ce8731c5b7991a089" id="r_ga3874d294ab00fe9ce8731c5b7991a089"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3874d294ab00fe9ce8731c5b7991a089">semi_implicit_euler</a> (double dx, double x0, double x_max, std::valarray&lt; double &gt; *y, bool save_to_file=false)</td></tr>
 <tr class="memdesc:ga3874d294ab00fe9ce8731c5b7991a089"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute approximation using the semi-implicit-Euler method in the given limits.  <br /></td></tr>
 <tr class="separator:ga3874d294ab00fe9ce8731c5b7991a089"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -158,7 +175,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+          <td class="paramtype">std::valarray&lt; double &gt; *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -180,25 +197,27 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>time taken for computation in seconds </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dd3/ode__forward__euler_8cpp_source.html#l00102">102</a> of file <a class="el" href="../../db/dd3/ode__forward__euler_8cpp_source.html">ode_forward_euler.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  103</span>                                                                        {</div>
-<div class="line"><span class="lineno">  104</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a> dy = *y;</div>
+<div class="line"><span class="lineno">  104</span>    std::valarray&lt;double&gt; dy = *y;</div>
 <div class="line"><span class="lineno">  105</span> </div>
-<div class="line"><span class="lineno">  106</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a> fp;</div>
+<div class="line"><span class="lineno">  106</span>    std::ofstream fp;</div>
 <div class="line"><span class="lineno">  107</span>    <span class="keywordflow">if</span> (save_to_file) {</div>
-<div class="line"><span class="lineno">  108</span>        fp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html">open</a>(<span class="stringliteral">&quot;forward_euler.csv&quot;</span>, std::ofstream::out);</div>
-<div class="line"><span class="lineno">  109</span>        <span class="keywordflow">if</span> (!fp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">is_open</a>()) {</div>
-<div class="line"><span class="lineno">  110</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/c/perror.html">std::perror</a>(<span class="stringliteral">&quot;Error! &quot;</span>);</div>
+<div class="line"><span class="lineno">  108</span>        fp.open(<span class="stringliteral">&quot;forward_euler.csv&quot;</span>, std::ofstream::out);</div>
+<div class="line"><span class="lineno">  109</span>        <span class="keywordflow">if</span> (!fp.is_open()) {</div>
+<div class="line"><span class="lineno">  110</span>            std::perror(<span class="stringliteral">&quot;Error! &quot;</span>);</div>
 <div class="line"><span class="lineno">  111</span>        }</div>
 <div class="line"><span class="lineno">  112</span>    }</div>
 <div class="line"><span class="lineno">  113</span> </div>
-<div class="line"><span class="lineno">  114</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> L = y-&gt;size();</div>
+<div class="line"><span class="lineno">  114</span>    std::size_t L = y-&gt;size();</div>
 <div class="line"><span class="lineno">  115</span> </div>
 <div class="line"><span class="lineno">  116</span>    <span class="comment">/* start integration */</span></div>
-<div class="line"><span class="lineno">  117</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock_t.html">std::clock_t</a> t1 = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a>();</div>
+<div class="line"><span class="lineno">  117</span>    std::clock_t t1 = std::clock();</div>
 <div class="line"><span class="lineno">  118</span>    <span class="keywordtype">double</span> x = x0;</div>
 <div class="line"><span class="lineno">  119</span> </div>
 <div class="line"><span class="lineno">  120</span>    <span class="keywordflow">do</span> {  <span class="comment">// iterate for each step of independent variable</span></div>
-<div class="line"><span class="lineno">  121</span>        <span class="keywordflow">if</span> (save_to_file &amp;&amp; fp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">is_open</a>()) {</div>
+<div class="line"><span class="lineno">  121</span>        <span class="keywordflow">if</span> (save_to_file &amp;&amp; fp.is_open()) {</div>
 <div class="line"><span class="lineno">  122</span>            <span class="comment">// write to file</span></div>
 <div class="line"><span class="lineno">  123</span>            fp &lt;&lt; x &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
 <div class="line"><span class="lineno">  124</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; L - 1; i++) {</div>
@@ -211,30 +230,16 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  131</span>        x += dx;                            <span class="comment">// update step</span></div>
 <div class="line"><span class="lineno">  132</span>    } <span class="keywordflow">while</span> (x &lt;= x_max);  <span class="comment">// till upper limit of independent variable</span></div>
 <div class="line"><span class="lineno">  133</span>    <span class="comment">/* end of integration */</span></div>
-<div class="line"><span class="lineno">  134</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock_t.html">std::clock_t</a> t2 = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a>();</div>
+<div class="line"><span class="lineno">  134</span>    std::clock_t t2 = std::clock();</div>
 <div class="line"><span class="lineno">  135</span> </div>
-<div class="line"><span class="lineno">  136</span>    <span class="keywordflow">if</span> (fp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">is_open</a>()) {</div>
-<div class="line"><span class="lineno">  137</span>        fp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html">close</a>();</div>
+<div class="line"><span class="lineno">  136</span>    <span class="keywordflow">if</span> (fp.is_open()) {</div>
+<div class="line"><span class="lineno">  137</span>        fp.close();</div>
 <div class="line"><span class="lineno">  138</span>    }</div>
 <div class="line"><span class="lineno">  139</span> </div>
 <div class="line"><span class="lineno">  140</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(t2 - t1) / CLOCKS_PER_SEC;</div>
 <div class="line"><span class="lineno">  141</span>}</div>
-<div class="ttc" id="abasic_ofstream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a></div></div>
-<div class="ttc" id="aclock_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a></div><div class="ttdeci">T clock(T... args)</div></div>
-<div class="ttc" id="aclock_t_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/clock_t.html">std::clock_t</a></div></div>
-<div class="ttc" id="aclose_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html">std::ofstream::close</a></div><div class="ttdeci">T close(T... args)</div></div>
-<div class="ttc" id="agroup__ode_html_ga195d23bbdfcb80e83c9cda45c9ad5723"><div class="ttname"><a href="#ga195d23bbdfcb80e83c9cda45c9ad5723">forward_euler_step</a></div><div class="ttdeci">void forward_euler_step(const double dx, const double x, std::valarray&lt; double &gt; *y, std::valarray&lt; double &gt; *dy)</div><div class="ttdoc">Compute next step approximation using the forward-Euler method.</div><div class="ttdef"><b>Definition</b> ode_forward_euler.cpp:86</div></div>
-<div class="ttc" id="ais_open_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">std::ofstream::is_open</a></div><div class="ttdeci">T is_open(T... args)</div></div>
-<div class="ttc" id="aopen_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html">std::ofstream::open</a></div><div class="ttdeci">T open(T... args)</div></div>
-<div class="ttc" id="aperror_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/c/perror.html">std::perror</a></div><div class="ttdeci">T perror(T... args)</div></div>
-<div class="ttc" id="asize_t_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a></div></div>
-<div class="ttc" id="avalarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d60/group__ode_gae0509f8843e2bc42de2abbd00a14b7b9_cgraph.svg" width="426" height="283"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="agroup__ode_html_ga195d23bbdfcb80e83c9cda45c9ad5723"><div class="ttname"><a href="#ga195d23bbdfcb80e83c9cda45c9ad5723">forward_euler_step</a></div><div class="ttdeci">void forward_euler_step(const double dx, const double x, std::valarray&lt; double &gt; *y, std::valarray&lt; double &gt; *dy)</div><div class="ttdoc">Compute next step approximation using the forward-Euler method.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dd3/ode__forward__euler_8cpp_source.html#l00086">ode_forward_euler.cpp:86</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ga195d23bbdfcb80e83c9cda45c9ad5723" name="ga195d23bbdfcb80e83c9cda45c9ad5723"></a>
@@ -256,12 +261,12 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+          <td class="paramtype">std::valarray&lt; double &gt; *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *</td>          <td class="paramname"><span class="paramname"><em>dy</em></span>&#160;)</td>
+          <td class="paramtype">std::valarray&lt; double &gt; *</td>          <td class="paramname"><span class="paramname"><em>dy</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -279,17 +284,14 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dd3/ode__forward__euler_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../db/dd3/ode__forward__euler_8cpp_source.html">ode_forward_euler.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   87</span>                                                                         {</div>
 <div class="line"><span class="lineno">   88</span>    <a class="code hl_function" href="../../db/dd3/ode__forward__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe">problem</a>(x, y, dy);</div>
 <div class="line"><span class="lineno">   89</span>    *y += *dy * dx;</div>
 <div class="line"><span class="lineno">   90</span>}</div>
-<div class="ttc" id="aode__forward__euler_8cpp_html_abaeae8f62a018d197f0187a1c80a90fe"><div class="ttname"><a href="../../db/dd3/ode__forward__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe">problem</a></div><div class="ttdeci">void problem(const double &amp;x, std::valarray&lt; double &gt; *y, std::valarray&lt; double &gt; *dy)</div><div class="ttdoc">Problem statement for a system with first-order differential equations. Updates the system differenti...</div><div class="ttdef"><b>Definition</b> ode_forward_euler.cpp:54</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d60/group__ode_ga195d23bbdfcb80e83c9cda45c9ad5723_cgraph.svg" width="258" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aode__forward__euler_8cpp_html_abaeae8f62a018d197f0187a1c80a90fe"><div class="ttname"><a href="../../db/dd3/ode__forward__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe">problem</a></div><div class="ttdeci">void problem(const double &amp;x, std::valarray&lt; double &gt; *y, std::valarray&lt; double &gt; *dy)</div><div class="ttdoc">Problem statement for a system with first-order differential equations. Updates the system differenti...</div><div class="ttdef"><b>Definition</b> <a href="../../db/dd3/ode__forward__euler_8cpp_source.html#l00054">ode_forward_euler.cpp:54</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ga36ff0710861ca39d957046c0b09b2985" name="ga36ff0710861ca39d957046c0b09b2985"></a>
@@ -316,7 +318,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+          <td class="paramtype">std::valarray&lt; double &gt; *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -338,24 +340,26 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>time taken for computation in seconds </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dd3/ode__midpoint__euler_8cpp_source.html#l00107">107</a> of file <a class="el" href="../../d6/dd3/ode__midpoint__euler_8cpp_source.html">ode_midpoint_euler.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  108</span>                                                                         {</div>
-<div class="line"><span class="lineno">  109</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a> dy = y[0];</div>
+<div class="line"><span class="lineno">  109</span>    std::valarray&lt;double&gt; dy = y[0];</div>
 <div class="line"><span class="lineno">  110</span> </div>
-<div class="line"><span class="lineno">  111</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a> fp;</div>
+<div class="line"><span class="lineno">  111</span>    std::ofstream fp;</div>
 <div class="line"><span class="lineno">  112</span>    <span class="keywordflow">if</span> (save_to_file) {</div>
-<div class="line"><span class="lineno">  113</span>        fp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html">open</a>(<span class="stringliteral">&quot;midpoint_euler.csv&quot;</span>, std::ofstream::out);</div>
-<div class="line"><span class="lineno">  114</span>        <span class="keywordflow">if</span> (!fp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">is_open</a>()) {</div>
-<div class="line"><span class="lineno">  115</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/c/perror.html">std::perror</a>(<span class="stringliteral">&quot;Error! &quot;</span>);</div>
+<div class="line"><span class="lineno">  113</span>        fp.open(<span class="stringliteral">&quot;midpoint_euler.csv&quot;</span>, std::ofstream::out);</div>
+<div class="line"><span class="lineno">  114</span>        <span class="keywordflow">if</span> (!fp.is_open()) {</div>
+<div class="line"><span class="lineno">  115</span>            std::perror(<span class="stringliteral">&quot;Error! &quot;</span>);</div>
 <div class="line"><span class="lineno">  116</span>        }</div>
 <div class="line"><span class="lineno">  117</span>    }</div>
 <div class="line"><span class="lineno">  118</span> </div>
-<div class="line"><span class="lineno">  119</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> L = y-&gt;size();</div>
+<div class="line"><span class="lineno">  119</span>    std::size_t L = y-&gt;size();</div>
 <div class="line"><span class="lineno">  120</span> </div>
 <div class="line"><span class="lineno">  121</span>    <span class="comment">/* start integration */</span></div>
-<div class="line"><span class="lineno">  122</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock_t.html">std::clock_t</a> t1 = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a>();</div>
+<div class="line"><span class="lineno">  122</span>    std::clock_t t1 = std::clock();</div>
 <div class="line"><span class="lineno">  123</span>    <span class="keywordtype">double</span> x = x0;</div>
 <div class="line"><span class="lineno">  124</span>    <span class="keywordflow">do</span> {  <span class="comment">// iterate for each step of independent variable</span></div>
-<div class="line"><span class="lineno">  125</span>        <span class="keywordflow">if</span> (save_to_file &amp;&amp; fp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">is_open</a>()) {</div>
+<div class="line"><span class="lineno">  125</span>        <span class="keywordflow">if</span> (save_to_file &amp;&amp; fp.is_open()) {</div>
 <div class="line"><span class="lineno">  126</span>            <span class="comment">// write to file</span></div>
 <div class="line"><span class="lineno">  127</span>            fp &lt;&lt; x &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
 <div class="line"><span class="lineno">  128</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; L - 1; i++) {</div>
@@ -368,20 +372,15 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  135</span>        x += dx;                             <span class="comment">// update step</span></div>
 <div class="line"><span class="lineno">  136</span>    } <span class="keywordflow">while</span> (x &lt;= x_max);  <span class="comment">// till upper limit of independent variable</span></div>
 <div class="line"><span class="lineno">  137</span>    <span class="comment">/* end of integration */</span></div>
-<div class="line"><span class="lineno">  138</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock_t.html">std::clock_t</a> t2 = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a>();</div>
+<div class="line"><span class="lineno">  138</span>    std::clock_t t2 = std::clock();</div>
 <div class="line"><span class="lineno">  139</span> </div>
-<div class="line"><span class="lineno">  140</span>    <span class="keywordflow">if</span> (fp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">is_open</a>())</div>
-<div class="line"><span class="lineno">  141</span>        fp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html">close</a>();</div>
+<div class="line"><span class="lineno">  140</span>    <span class="keywordflow">if</span> (fp.is_open())</div>
+<div class="line"><span class="lineno">  141</span>        fp.close();</div>
 <div class="line"><span class="lineno">  142</span> </div>
 <div class="line"><span class="lineno">  143</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(t2 - t1) / CLOCKS_PER_SEC;</div>
 <div class="line"><span class="lineno">  144</span>}</div>
-<div class="ttc" id="agroup__ode_html_ga8c319db420c3d97a83e9dcca803b6812"><div class="ttname"><a href="#ga8c319db420c3d97a83e9dcca803b6812">midpoint_euler_step</a></div><div class="ttdeci">void midpoint_euler_step(const double dx, const double &amp;x, std::valarray&lt; double &gt; *y, std::valarray&lt; double &gt; *dy)</div><div class="ttdoc">Compute next step approximation using the midpoint-Euler method.</div><div class="ttdef"><b>Definition</b> ode_midpoint_euler.cpp:85</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d60/group__ode_ga36ff0710861ca39d957046c0b09b2985_cgraph.svg" width="431" height="283"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="agroup__ode_html_ga8c319db420c3d97a83e9dcca803b6812"><div class="ttname"><a href="#ga8c319db420c3d97a83e9dcca803b6812">midpoint_euler_step</a></div><div class="ttdeci">void midpoint_euler_step(const double dx, const double &amp;x, std::valarray&lt; double &gt; *y, std::valarray&lt; double &gt; *dy)</div><div class="ttdoc">Compute next step approximation using the midpoint-Euler method.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dd3/ode__midpoint__euler_8cpp_source.html#l00085">ode_midpoint_euler.cpp:85</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ga8c319db420c3d97a83e9dcca803b6812" name="ga8c319db420c3d97a83e9dcca803b6812"></a>
@@ -403,12 +402,12 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+          <td class="paramtype">std::valarray&lt; double &gt; *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *</td>          <td class="paramname"><span class="paramname"><em>dy</em></span>&#160;)</td>
+          <td class="paramtype">std::valarray&lt; double &gt; *</td>          <td class="paramname"><span class="paramname"><em>dy</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -427,23 +426,20 @@ y_n + \frac{1}{2}dx\,f\left(x_n,y_n\right)\right)\]
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dd3/ode__midpoint__euler_8cpp_source.html#l00085">85</a> of file <a class="el" href="../../d6/dd3/ode__midpoint__euler_8cpp_source.html">ode_midpoint_euler.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   86</span>                                                                          {</div>
 <div class="line"><span class="lineno">   87</span>    <a class="code hl_function" href="../../d6/dd3/ode__midpoint__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe">problem</a>(x, y, dy);</div>
 <div class="line"><span class="lineno">   88</span>    <span class="keywordtype">double</span> tmp_x = x + 0.5 * dx;</div>
 <div class="line"><span class="lineno">   89</span> </div>
-<div class="line"><span class="lineno">   90</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a> tmp_y = y[0] + dy[0] * (0.5 * dx);</div>
+<div class="line"><span class="lineno">   90</span>    std::valarray&lt;double&gt; tmp_y = y[0] + dy[0] * (0.5 * dx);</div>
 <div class="line"><span class="lineno">   91</span> </div>
 <div class="line"><span class="lineno">   92</span>    <a class="code hl_function" href="../../d6/dd3/ode__midpoint__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe">problem</a>(tmp_x, &amp;tmp_y, dy);</div>
 <div class="line"><span class="lineno">   93</span> </div>
 <div class="line"><span class="lineno">   94</span>    y[0] += dy[0] * dx;</div>
 <div class="line"><span class="lineno">   95</span>}</div>
-<div class="ttc" id="aode__midpoint__euler_8cpp_html_abaeae8f62a018d197f0187a1c80a90fe"><div class="ttname"><a href="../../d6/dd3/ode__midpoint__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe">problem</a></div><div class="ttdeci">void problem(const double &amp;x, std::valarray&lt; double &gt; *y, std::valarray&lt; double &gt; *dy)</div><div class="ttdoc">Problem statement for a system with first-order differential equations. Updates the system differenti...</div><div class="ttdef"><b>Definition</b> ode_midpoint_euler.cpp:53</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d60/group__ode_ga8c319db420c3d97a83e9dcca803b6812_cgraph.svg" width="264" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aode__midpoint__euler_8cpp_html_abaeae8f62a018d197f0187a1c80a90fe"><div class="ttname"><a href="../../d6/dd3/ode__midpoint__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe">problem</a></div><div class="ttdeci">void problem(const double &amp;x, std::valarray&lt; double &gt; *y, std::valarray&lt; double &gt; *dy)</div><div class="ttdoc">Problem statement for a system with first-order differential equations. Updates the system differenti...</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dd3/ode__midpoint__euler_8cpp_source.html#l00053">ode_midpoint_euler.cpp:53</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ga3874d294ab00fe9ce8731c5b7991a089" name="ga3874d294ab00fe9ce8731c5b7991a089"></a>
@@ -470,7 +466,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+          <td class="paramtype">std::valarray&lt; double &gt; *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -492,24 +488,26 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>time taken for computation in seconds </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d06/ode__semi__implicit__euler_8cpp_source.html#l00103">103</a> of file <a class="el" href="../../d3/d06/ode__semi__implicit__euler_8cpp_source.html">ode_semi_implicit_euler.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  105</span>                                                      {</div>
-<div class="line"><span class="lineno">  106</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a> dy = y[0];</div>
+<div class="line"><span class="lineno">  106</span>    std::valarray&lt;double&gt; dy = y[0];</div>
 <div class="line"><span class="lineno">  107</span> </div>
-<div class="line"><span class="lineno">  108</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a> fp;</div>
+<div class="line"><span class="lineno">  108</span>    std::ofstream fp;</div>
 <div class="line"><span class="lineno">  109</span>    <span class="keywordflow">if</span> (save_to_file) {</div>
-<div class="line"><span class="lineno">  110</span>        fp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html">open</a>(<span class="stringliteral">&quot;semi_implicit_euler.csv&quot;</span>, std::ofstream::out);</div>
-<div class="line"><span class="lineno">  111</span>        <span class="keywordflow">if</span> (!fp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">is_open</a>()) {</div>
-<div class="line"><span class="lineno">  112</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/c/perror.html">std::perror</a>(<span class="stringliteral">&quot;Error! &quot;</span>);</div>
+<div class="line"><span class="lineno">  110</span>        fp.open(<span class="stringliteral">&quot;semi_implicit_euler.csv&quot;</span>, std::ofstream::out);</div>
+<div class="line"><span class="lineno">  111</span>        <span class="keywordflow">if</span> (!fp.is_open()) {</div>
+<div class="line"><span class="lineno">  112</span>            std::perror(<span class="stringliteral">&quot;Error! &quot;</span>);</div>
 <div class="line"><span class="lineno">  113</span>        }</div>
 <div class="line"><span class="lineno">  114</span>    }</div>
 <div class="line"><span class="lineno">  115</span> </div>
-<div class="line"><span class="lineno">  116</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> L = y-&gt;size();</div>
+<div class="line"><span class="lineno">  116</span>    std::size_t L = y-&gt;size();</div>
 <div class="line"><span class="lineno">  117</span> </div>
 <div class="line"><span class="lineno">  118</span>    <span class="comment">/* start integration */</span></div>
-<div class="line"><span class="lineno">  119</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock_t.html">std::clock_t</a> t1 = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a>();</div>
+<div class="line"><span class="lineno">  119</span>    std::clock_t t1 = std::clock();</div>
 <div class="line"><span class="lineno">  120</span>    <span class="keywordtype">double</span> x = x0;</div>
 <div class="line"><span class="lineno">  121</span>    <span class="keywordflow">do</span> {  <span class="comment">// iterate for each step of independent variable</span></div>
-<div class="line"><span class="lineno">  122</span>        <span class="keywordflow">if</span> (save_to_file &amp;&amp; fp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">is_open</a>()) {</div>
+<div class="line"><span class="lineno">  122</span>        <span class="keywordflow">if</span> (save_to_file &amp;&amp; fp.is_open()) {</div>
 <div class="line"><span class="lineno">  123</span>            <span class="comment">// write to file</span></div>
 <div class="line"><span class="lineno">  124</span>            fp &lt;&lt; x &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
 <div class="line"><span class="lineno">  125</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; L - 1; i++) {</div>
@@ -522,20 +520,15 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  132</span>        x += dx;                                  <span class="comment">// update step</span></div>
 <div class="line"><span class="lineno">  133</span>    } <span class="keywordflow">while</span> (x &lt;= x_max);  <span class="comment">// till upper limit of independent variable</span></div>
 <div class="line"><span class="lineno">  134</span>    <span class="comment">/* end of integration */</span></div>
-<div class="line"><span class="lineno">  135</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock_t.html">std::clock_t</a> t2 = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a>();</div>
+<div class="line"><span class="lineno">  135</span>    std::clock_t t2 = std::clock();</div>
 <div class="line"><span class="lineno">  136</span> </div>
-<div class="line"><span class="lineno">  137</span>    <span class="keywordflow">if</span> (fp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">is_open</a>())</div>
-<div class="line"><span class="lineno">  138</span>        fp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html">close</a>();</div>
+<div class="line"><span class="lineno">  137</span>    <span class="keywordflow">if</span> (fp.is_open())</div>
+<div class="line"><span class="lineno">  138</span>        fp.close();</div>
 <div class="line"><span class="lineno">  139</span> </div>
 <div class="line"><span class="lineno">  140</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(t2 - t1) / CLOCKS_PER_SEC;</div>
 <div class="line"><span class="lineno">  141</span>}</div>
-<div class="ttc" id="agroup__ode_html_ga827bf009831ddc477c5fa8891d5cb35f"><div class="ttname"><a href="#ga827bf009831ddc477c5fa8891d5cb35f">semi_implicit_euler_step</a></div><div class="ttdeci">void semi_implicit_euler_step(const double dx, const double &amp;x, std::valarray&lt; double &gt; *y, std::valarray&lt; double &gt; *dy)</div><div class="ttdoc">Compute next step approximation using the semi-implicit-Euler method.</div><div class="ttdef"><b>Definition</b> ode_semi_implicit_euler.cpp:82</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d60/group__ode_ga3874d294ab00fe9ce8731c5b7991a089_cgraph.svg" width="471" height="283"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="agroup__ode_html_ga827bf009831ddc477c5fa8891d5cb35f"><div class="ttname"><a href="#ga827bf009831ddc477c5fa8891d5cb35f">semi_implicit_euler_step</a></div><div class="ttdeci">void semi_implicit_euler_step(const double dx, const double &amp;x, std::valarray&lt; double &gt; *y, std::valarray&lt; double &gt; *dy)</div><div class="ttdoc">Compute next step approximation using the semi-implicit-Euler method.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d06/ode__semi__implicit__euler_8cpp_source.html#l00082">ode_semi_implicit_euler.cpp:82</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ga827bf009831ddc477c5fa8891d5cb35f" name="ga827bf009831ddc477c5fa8891d5cb35f"></a>
@@ -557,12 +550,12 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+          <td class="paramtype">std::valarray&lt; double &gt; *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *</td>          <td class="paramname"><span class="paramname"><em>dy</em></span>&#160;)</td>
+          <td class="paramtype">std::valarray&lt; double &gt; *</td>          <td class="paramname"><span class="paramname"><em>dy</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -580,6 +573,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d06/ode__semi__implicit__euler_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../d3/d06/ode__semi__implicit__euler_8cpp_source.html">ode_semi_implicit_euler.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   84</span>                                                       {</div>
 <div class="line"><span class="lineno">   85</span>    <a class="code hl_function" href="../../d3/d06/ode__semi__implicit__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe">problem</a>(x, y, dy);         <span class="comment">// update dy once</span></div>
 <div class="line"><span class="lineno">   86</span>    y[0][0] += dx * dy[0][0];  <span class="comment">// update y0</span></div>
@@ -588,13 +583,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   89</span>    dy[0][0] = 0.f;      <span class="comment">// ignore y0</span></div>
 <div class="line"><span class="lineno">   90</span>    y[0] += dy[0] * dx;  <span class="comment">// update remaining using new dy</span></div>
 <div class="line"><span class="lineno">   91</span>}</div>
-<div class="ttc" id="aode__semi__implicit__euler_8cpp_html_abaeae8f62a018d197f0187a1c80a90fe"><div class="ttname"><a href="../../d3/d06/ode__semi__implicit__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe">problem</a></div><div class="ttdeci">void problem(const double &amp;x, std::valarray&lt; double &gt; *y, std::valarray&lt; double &gt; *dy)</div><div class="ttdoc">Problem statement for a system with first-order differential equations. Updates the system differenti...</div><div class="ttdef"><b>Definition</b> ode_semi_implicit_euler.cpp:53</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d60/group__ode_ga827bf009831ddc477c5fa8891d5cb35f_cgraph.svg" width="291" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aode__semi__implicit__euler_8cpp_html_abaeae8f62a018d197f0187a1c80a90fe"><div class="ttname"><a href="../../d3/d06/ode__semi__implicit__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe">problem</a></div><div class="ttdeci">void problem(const double &amp;x, std::valarray&lt; double &gt; *y, std::valarray&lt; double &gt; *dy)</div><div class="ttdoc">Problem statement for a system with first-order differential equations. Updates the system differenti...</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d06/ode__semi__implicit__euler_8cpp_source.html#l00053">ode_semi_implicit_euler.cpp:53</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

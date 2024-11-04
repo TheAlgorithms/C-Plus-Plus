@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: geometry::jarvis::Convexhull Class Reference</title>
+<title>TheAlgorithms/C++: geometry::jarvis::Convexhull Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -120,9 +137,9 @@ Collaboration diagram for geometry::jarvis::Convexhull:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8306e48040a8570e164c58d1c530f870" id="r_a8306e48040a8570e164c58d1c530f870"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8306e48040a8570e164c58d1c530f870">Convexhull</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../d9/d5a/structgeometry_1_1jarvis_1_1_point.html">Point</a> &gt; &amp;pointList)</td></tr>
+<tr class="memitem:a8306e48040a8570e164c58d1c530f870" id="r_a8306e48040a8570e164c58d1c530f870"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8306e48040a8570e164c58d1c530f870">Convexhull</a> (const std::vector&lt; <a class="el" href="../../d9/d5a/structgeometry_1_1jarvis_1_1_point.html">Point</a> &gt; &amp;pointList)</td></tr>
 <tr class="separator:a8306e48040a8570e164c58d1c530f870"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeec46e86786ddd461464b07a77c4d5f1" id="r_aeec46e86786ddd461464b07a77c4d5f1"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../d9/d5a/structgeometry_1_1jarvis_1_1_point.html">Point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeec46e86786ddd461464b07a77c4d5f1">getConvexHull</a> () const</td></tr>
+<tr class="memitem:aeec46e86786ddd461464b07a77c4d5f1" id="r_aeec46e86786ddd461464b07a77c4d5f1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d9/d5a/structgeometry_1_1jarvis_1_1_point.html">Point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeec46e86786ddd461464b07a77c4d5f1">getConvexHull</a> () const</td></tr>
 <tr class="separator:aeec46e86786ddd461464b07a77c4d5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
@@ -132,15 +149,15 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a835cd4cdc5a644abb84535197d753b02" id="r_a835cd4cdc5a644abb84535197d753b02"><td class="memItemLeft" align="right" valign="top"><a id="a835cd4cdc5a644abb84535197d753b02" name="a835cd4cdc5a644abb84535197d753b02"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../d9/d5a/structgeometry_1_1jarvis_1_1_point.html">Point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>points</b></td></tr>
+<tr class="memitem:a835cd4cdc5a644abb84535197d753b02" id="r_a835cd4cdc5a644abb84535197d753b02"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d9/d5a/structgeometry_1_1jarvis_1_1_point.html">Point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a835cd4cdc5a644abb84535197d753b02">points</a></td></tr>
 <tr class="separator:a835cd4cdc5a644abb84535197d753b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2272bb62c35af959953b0ea06b010036" id="r_a2272bb62c35af959953b0ea06b010036"><td class="memItemLeft" align="right" valign="top"><a id="a2272bb62c35af959953b0ea06b010036" name="a2272bb62c35af959953b0ea06b010036"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b></td></tr>
+<tr class="memitem:a2272bb62c35af959953b0ea06b010036" id="r_a2272bb62c35af959953b0ea06b010036"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2272bb62c35af959953b0ea06b010036">size</a></td></tr>
 <tr class="separator:a2272bb62c35af959953b0ea06b010036"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class which can be called from main and is globally available throughout the code </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d8d/jarvis__algorithm_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../d4/d8d/jarvis__algorithm_8cpp_source.html">jarvis_algorithm.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8306e48040a8570e164c58d1c530f870" name="a8306e48040a8570e164c58d1c530f870"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8306e48040a8570e164c58d1c530f870">&#9670;&#160;</a></span>Convexhull()</h2>
@@ -154,7 +171,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b></td></tr>
         <tr>
           <td class="memname">geometry::jarvis::Convexhull::Convexhull </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../d9/d5a/structgeometry_1_1jarvis_1_1_point.html">Point</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>pointList</em></span></td><td>)</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../d9/d5a/structgeometry_1_1jarvis_1_1_point.html">Point</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>pointList</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -172,16 +189,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d8d/jarvis__algorithm_8cpp_source.html#l00066">66</a> of file <a class="el" href="../../d4/d8d/jarvis__algorithm_8cpp_source.html">jarvis_algorithm.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   66</span>                                                                   {</div>
 <div class="line"><span class="lineno">   67</span>                points = pointList;</div>
 <div class="line"><span class="lineno">   68</span>                size = points.size();</div>
 <div class="line"><span class="lineno">   69</span>            }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/dde/classgeometry_1_1jarvis_1_1_convexhull_a8306e48040a8570e164c58d1c530f870_cgraph.svg" width="362" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -195,7 +209,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../d9/d5a/structgeometry_1_1jarvis_1_1_point.html">Point</a> &gt; geometry::jarvis::Convexhull::getConvexHull </td>
+          <td class="memname">std::vector&lt; <a class="el" href="../../d9/d5a/structgeometry_1_1jarvis_1_1_point.html">Point</a> &gt; geometry::jarvis::Convexhull::getConvexHull </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -209,9 +223,11 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Creates convex hull of a set of n points. There must be 3 points at least for the convex hull to exist</p>
 <dl class="section return"><dt>Returns</dt><dd>an vector array containing points in space which enclose all given points thus forming a hull </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d8d/jarvis__algorithm_8cpp_source.html#l00078">78</a> of file <a class="el" href="../../d4/d8d/jarvis__algorithm_8cpp_source.html">jarvis_algorithm.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   78</span>                                                   {</div>
 <div class="line"><span class="lineno">   79</span>                <span class="comment">// Initialize Result</span></div>
-<div class="line"><span class="lineno">   80</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;Point&gt;</a> hull;</div>
+<div class="line"><span class="lineno">   80</span>                std::vector&lt;Point&gt; hull;</div>
 <div class="line"><span class="lineno">   81</span> </div>
 <div class="line"><span class="lineno">   82</span>                <span class="comment">// Find the leftmost point</span></div>
 <div class="line"><span class="lineno">   83</span>                <span class="keywordtype">int</span> leftmost_point = 0;</div>
@@ -226,7 +242,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   92</span>                <span class="keywordtype">int</span> p = leftmost_point, q = 0;</div>
 <div class="line"><span class="lineno">   93</span>                <span class="keywordflow">do</span> {</div>
 <div class="line"><span class="lineno">   94</span>                    <span class="comment">// Add current point to result</span></div>
-<div class="line"><span class="lineno">   95</span>                    hull.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(points[p]);</div>
+<div class="line"><span class="lineno">   95</span>                    hull.push_back(points[p]);</div>
 <div class="line"><span class="lineno">   96</span> </div>
 <div class="line"><span class="lineno">   97</span>                    <span class="comment">// Search for a point &#39;q&#39; such that orientation(p, x, q)</span></div>
 <div class="line"><span class="lineno">   98</span>                    <span class="comment">// is counterclockwise for all points &#39;x&#39;. The idea</span></div>
@@ -251,15 +267,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  117</span> </div>
 <div class="line"><span class="lineno">  118</span>                <span class="keywordflow">return</span> hull;</div>
 <div class="line"><span class="lineno">  119</span>            }</div>
-<div class="ttc" id="aclassgeometry_1_1jarvis_1_1_convexhull_html_a54df5f9a8f37170bd97c91127664655c"><div class="ttname"><a href="#a54df5f9a8f37170bd97c91127664655c">geometry::jarvis::Convexhull::orientation</a></div><div class="ttdeci">static int orientation(const Point &amp;p, const Point &amp;q, const Point &amp;r)</div><div class="ttdef"><b>Definition</b> jarvis_algorithm.cpp:133</div></div>
-<div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/dde/classgeometry_1_1jarvis_1_1_convexhull_aeec46e86786ddd461464b07a77c4d5f1_cgraph.svg" width="434" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassgeometry_1_1jarvis_1_1_convexhull_html_a54df5f9a8f37170bd97c91127664655c"><div class="ttname"><a href="#a54df5f9a8f37170bd97c91127664655c">geometry::jarvis::Convexhull::orientation</a></div><div class="ttdeci">static int orientation(const Point &amp;p, const Point &amp;q, const Point &amp;r)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d8d/jarvis__algorithm_8cpp_source.html#l00133">jarvis_algorithm.cpp:133</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a54df5f9a8f37170bd97c91127664655c" name="a54df5f9a8f37170bd97c91127664655c"></a>
@@ -306,6 +315,8 @@ Here is the call graph for this function:</div>
 1 -&gt; Clock Wise </dd>
 <dd>
 2 -&gt; Anti Clock Wise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d8d/jarvis__algorithm_8cpp_source.html#l00133">133</a> of file <a class="el" href="../../d4/d8d/jarvis__algorithm_8cpp_source.html">jarvis_algorithm.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  133</span>                                                                                   {</div>
 <div class="line"><span class="lineno">  134</span>                <span class="keywordtype">int</span> val = (q.y - p.<a class="code hl_variable" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>) * (r.x - q.x) - (q.x - p.x) * (r.<a class="code hl_variable" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a> - q.y);</div>
 <div class="line"><span class="lineno">  135</span> </div>
@@ -314,12 +325,61 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  138</span>                }</div>
 <div class="line"><span class="lineno">  139</span>                <span class="keywordflow">return</span> (val &gt; 0) ? 1 : 2;</div>
 <div class="line"><span class="lineno">  140</span>            }</div>
-<div class="ttc" id="astruct_point_html_a2e1b5fb2b2a83571f5c0bc0f66a73cf7"><div class="ttname"><a href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">Point::y</a></div><div class="ttdeci">int y</div><div class="ttdoc">Point respect to x coordinate.</div><div class="ttdef"><b>Definition</b> line_segment_intersection.cpp:14</div></div>
+<div class="ttc" id="astruct_point_html_a2e1b5fb2b2a83571f5c0bc0f66a73cf7"><div class="ttname"><a href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">Point::y</a></div><div class="ttdeci">int y</div><div class="ttdoc">Point respect to x coordinate.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d6c/line__segment__intersection_8cpp_source.html#l00014">line_segment_intersection.cpp:14</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a835cd4cdc5a644abb84535197d753b02" name="a835cd4cdc5a644abb84535197d753b02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a835cd4cdc5a644abb84535197d753b02">&#9670;&#160;</a></span>points</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d9/d5a/structgeometry_1_1jarvis_1_1_point.html">Point</a>&gt; geometry::jarvis::Convexhull::points</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d8d/jarvis__algorithm_8cpp_source.html#l00056">56</a> of file <a class="el" href="../../d4/d8d/jarvis__algorithm_8cpp_source.html">jarvis_algorithm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2272bb62c35af959953b0ea06b010036" name="a2272bb62c35af959953b0ea06b010036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2272bb62c35af959953b0ea06b010036">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int geometry::jarvis::Convexhull::size</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d8d/jarvis__algorithm_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../d4/d8d/jarvis__algorithm_8cpp_source.html">jarvis_algorithm.cpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>geometry/<a class="el" href="../../d4/d8d/jarvis__algorithm_8cpp.html">jarvis_algorithm.cpp</a></li>
+<li>geometry/<a class="el" href="../../d4/d8d/jarvis__algorithm_8cpp_source.html">jarvis_algorithm.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

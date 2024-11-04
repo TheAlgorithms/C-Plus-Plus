@@ -31,7 +31,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/map.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="106,-97 0,-97 0,-66.5 106,-66.5 106,-97"/>
 <text text-anchor="start" x="8" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::map&lt; T, std::list</text>
 <text text-anchor="middle" x="53" y="-72.25" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; T &gt; &gt;</text>
@@ -71,7 +71,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_Node000004"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="242,-97 124,-97 124,-66.5 242,-66.5 242,-97"/>
 <text text-anchor="start" x="132" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; std::vector</text>
 <text text-anchor="middle" x="183" y="-72.25" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; int &gt; &gt;</text>

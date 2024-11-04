@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: graph/breadth_first_search.cpp File Reference</title>
+<title>TheAlgorithms/C++: graph/breadth_first_search.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -127,7 +144,9 @@ Include dependency graph for breadth_first_search.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/dec/breadth__first__search_8cpp__incl.svg" width="642" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../df/d82/breadth__first__search_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d61/classgraph_1_1_graph.html">graph::Graph&lt; T &gt;</a></td></tr>
@@ -171,6 +190,8 @@ Functions</h2></td></tr>
 </ol>
 </li>
 </ol>
+
+<p class="definition">Definition in file <a class="el" href="../../df/d82/breadth__first__search_8cpp_source.html">breadth_first_search.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -187,37 +208,31 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Main function </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d82/breadth__first__search_8cpp_source.html#l00186">186</a> of file <a class="el" href="../../df/d82/breadth__first__search_8cpp_source.html">breadth_first_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  186</span>           {</div>
 <div class="line"><span class="lineno">  187</span>    <a class="code hl_function" href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a>();</div>
 <div class="line"><span class="lineno">  188</span>    <span class="keywordtype">size_t</span> edges = 0;</div>
-<div class="line"><span class="lineno">  189</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter the number of edges: &quot;</span>;</div>
-<div class="line"><span class="lineno">  190</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; edges;</div>
+<div class="line"><span class="lineno">  189</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter the number of edges: &quot;</span>;</div>
+<div class="line"><span class="lineno">  190</span>    std::cin &gt;&gt; edges;</div>
 <div class="line"><span class="lineno">  191</span> </div>
 <div class="line"><span class="lineno">  192</span>    <a class="code hl_class" href="../../dc/d61/classgraph_1_1_graph.html">graph::Graph&lt;int&gt;</a> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>;</div>
 <div class="line"><span class="lineno">  193</span> </div>
-<div class="line"><span class="lineno">  194</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter space-separated pairs of vertices that form edges: &quot;</span></div>
-<div class="line"><span class="lineno">  195</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  194</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter space-separated pairs of vertices that form edges: &quot;</span></div>
+<div class="line"><span class="lineno">  195</span>              &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  196</span>    <span class="keywordflow">while</span> (edges--) {</div>
 <div class="line"><span class="lineno">  197</span>        <span class="keywordtype">int</span> u = 0, v = 0;</div>
-<div class="line"><span class="lineno">  198</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; u &gt;&gt; v;</div>
+<div class="line"><span class="lineno">  198</span>        std::cin &gt;&gt; u &gt;&gt; v;</div>
 <div class="line"><span class="lineno">  199</span>        <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>.add_edge(u, v);</div>
 <div class="line"><span class="lineno">  200</span>    }</div>
 <div class="line"><span class="lineno">  201</span> </div>
 <div class="line"><span class="lineno">  202</span>    <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>.breadth_first_search(0);</div>
 <div class="line"><span class="lineno">  203</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  204</span>}</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="abreadth__first__search_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdef"><b>Definition</b> breadth_first_search.cpp:139</div></div>
-<div class="ttc" id="aclassgraph_1_1_graph_html"><div class="ttname"><a href="../../dc/d61/classgraph_1_1_graph.html">graph::Graph</a></div><div class="ttdef"><b>Definition</b> lowest_common_ancestor.cpp:53</div></div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a2f67508d5f392b0321772169342c98ad"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">numerical_methods::simpson_method::g</a></div><div class="ttdeci">double g(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:115</div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d82/breadth__first__search_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="542" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="abreadth__first__search_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdef"><b>Definition</b> <a href="../../df/d82/breadth__first__search_8cpp_source.html#l00139">breadth_first_search.cpp:139</a></div></div>
+<div class="ttc" id="aclassgraph_1_1_graph_html"><div class="ttname"><a href="../../dc/d61/classgraph_1_1_graph.html">graph::Graph</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/dde/lowest__common__ancestor_8cpp_source.html#l00053">lowest_common_ancestor.cpp:53</a></div></div>
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a2f67508d5f392b0321772169342c98ad"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">numerical_methods::simpson_method::g</a></div><div class="ttdeci">double g(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d18/composite__simpson__rule_8cpp_source.html#l00115">composite_simpson_rule.cpp:115</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a483bb8ccf42aaf7375a83e91490eda1e" name="a483bb8ccf42aaf7375a83e91490eda1e"></a>
@@ -246,10 +261,11 @@ Here is the call graph for this function:</div>
 <p>Test 1 Begin</p>
 <p>Test 2 Begin</p>
 <p>Test 3 Begins</p>
-<div class="fragment"><div class="line"><span class="lineno">  139</span>                    {<span class="comment"></span></div>
-<div class="line"><span class="lineno">  140</span><span class="comment">    /// Test 1 Begin</span></div>
-<div class="line"><span class="lineno">  141</span><span class="comment"></span>    <a class="code hl_class" href="../../dc/d61/classgraph_1_1_graph.html">graph::Graph&lt;int&gt;</a> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>;</div>
-<div class="line"><span class="lineno">  142</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">std::map&lt;int, bool&gt;</a> correct_result;</div>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d82/breadth__first__search_8cpp_source.html#l00139">139</a> of file <a class="el" href="../../df/d82/breadth__first__search_8cpp_source.html">breadth_first_search.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  139</span>                    {</div>
+<div class="line"><span class="lineno">  141</span>    <a class="code hl_class" href="../../dc/d61/classgraph_1_1_graph.html">graph::Graph&lt;int&gt;</a> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>;</div>
+<div class="line"><span class="lineno">  142</span>    std::map&lt;int, bool&gt; correct_result;</div>
 <div class="line"><span class="lineno">  143</span>    <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>.add_edge(0, 1);</div>
 <div class="line"><span class="lineno">  144</span>    <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>.add_edge(1, 2);</div>
 <div class="line"><span class="lineno">  145</span>    <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>.add_edge(2, 3);</div>
@@ -258,19 +274,17 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  148</span>    correct_result[2] = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  149</span>    correct_result[3] = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  150</span> </div>
-<div class="line"><span class="lineno">  151</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">std::map&lt;int, bool&gt;</a> returned_result = <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>.breadth_first_search(2);</div>
+<div class="line"><span class="lineno">  151</span>    std::map&lt;int, bool&gt; returned_result = <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>.breadth_first_search(2);</div>
 <div class="line"><span class="lineno">  152</span> </div>
 <div class="line"><span class="lineno">  153</span>    assert(returned_result == correct_result);</div>
-<div class="line"><span class="lineno">  154</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1 Passed...&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  155</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  156</span><span class="comment">    /// Test 2 Begin</span></div>
-<div class="line"><span class="lineno">  157</span><span class="comment"></span>    returned_result = <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>.breadth_first_search(0);</div>
+<div class="line"><span class="lineno">  154</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 1 Passed...&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  155</span> </div>
+<div class="line"><span class="lineno">  157</span>    returned_result = <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>.breadth_first_search(0);</div>
 <div class="line"><span class="lineno">  158</span> </div>
 <div class="line"><span class="lineno">  159</span>    assert(returned_result == correct_result);</div>
-<div class="line"><span class="lineno">  160</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2 Passed...&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  161</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  162</span><span class="comment">    /// Test 3 Begins</span></div>
-<div class="line"><span class="lineno">  163</span><span class="comment"></span>    <a class="code hl_class" href="../../dc/d61/classgraph_1_1_graph.html">graph::Graph&lt;std::string&gt;</a> g2;</div>
+<div class="line"><span class="lineno">  160</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 2 Passed...&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  161</span> </div>
+<div class="line"><span class="lineno">  163</span>    <a class="code hl_class" href="../../dc/d61/classgraph_1_1_graph.html">graph::Graph&lt;std::string&gt;</a> g2;</div>
 <div class="line"><span class="lineno">  164</span> </div>
 <div class="line"><span class="lineno">  165</span>    g2.<a class="code hl_function" href="../../dc/d61/classgraph_1_1_graph.html#a877b2cba40d8d46dde6fb4209effed19">add_edge</a>(<span class="stringliteral">&quot;Gorakhpur&quot;</span>, <span class="stringliteral">&quot;Lucknow&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><span class="lineno">  166</span>    g2.<a class="code hl_function" href="../../dc/d61/classgraph_1_1_graph.html#a877b2cba40d8d46dde6fb4209effed19">add_edge</a>(<span class="stringliteral">&quot;Gorakhpur&quot;</span>, <span class="stringliteral">&quot;Kanpur&quot;</span>, <span class="keyword">false</span>);</div>
@@ -279,8 +293,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  169</span>    g2.<a class="code hl_function" href="../../dc/d61/classgraph_1_1_graph.html#a877b2cba40d8d46dde6fb4209effed19">add_edge</a>(<span class="stringliteral">&quot;Lucknow&quot;</span>, <span class="stringliteral">&quot;Prayagraj&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><span class="lineno">  170</span>    g2.<a class="code hl_function" href="../../dc/d61/classgraph_1_1_graph.html#a877b2cba40d8d46dde6fb4209effed19">add_edge</a>(<span class="stringliteral">&quot;Agra&quot;</span>, <span class="stringliteral">&quot;Noida&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><span class="lineno">  171</span> </div>
-<div class="line"><span class="lineno">  172</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">std::map&lt;std::string, bool&gt;</a> correct_res;</div>
-<div class="line"><span class="lineno">  173</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">std::map&lt;std::string, bool&gt;</a> returned_res =</div>
+<div class="line"><span class="lineno">  172</span>    std::map&lt;std::string, bool&gt; correct_res;</div>
+<div class="line"><span class="lineno">  173</span>    std::map&lt;std::string, bool&gt; returned_res =</div>
 <div class="line"><span class="lineno">  174</span>        g2.<a class="code hl_function" href="../../dc/d61/classgraph_1_1_graph.html#a3755ec9e6a842238c7f4aac10b661981">breadth_first_search</a>(<span class="stringliteral">&quot;Kanpur&quot;</span>);</div>
 <div class="line"><span class="lineno">  175</span>    correct_res[<span class="stringliteral">&quot;Gorakhpur&quot;</span>] = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  176</span>    correct_res[<span class="stringliteral">&quot;Lucknow&quot;</span>] = <span class="keyword">false</span>;</div>
@@ -289,17 +303,11 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  179</span>    correct_res[<span class="stringliteral">&quot;Prayagraj&quot;</span>] = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  180</span>    correct_res[<span class="stringliteral">&quot;Noida&quot;</span>] = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  181</span>    assert(correct_res == returned_res);</div>
-<div class="line"><span class="lineno">  182</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 3 Passed...&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  182</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 3 Passed...&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  183</span>}</div>
-<div class="ttc" id="aclassgraph_1_1_graph_html_a3755ec9e6a842238c7f4aac10b661981"><div class="ttname"><a href="../../dc/d61/classgraph_1_1_graph.html#a3755ec9e6a842238c7f4aac10b661981">graph::Graph::breadth_first_search</a></div><div class="ttdeci">std::map&lt; T, bool &gt; breadth_first_search(T src)</div><div class="ttdef"><b>Definition</b> breadth_first_search.cpp:96</div></div>
-<div class="ttc" id="aclassgraph_1_1_graph_html_a877b2cba40d8d46dde6fb4209effed19"><div class="ttname"><a href="../../dc/d61/classgraph_1_1_graph.html#a877b2cba40d8d46dde6fb4209effed19">graph::Graph::add_edge</a></div><div class="ttdeci">void add_edge(T u, T v, bool bidir=true)</div><div class="ttdef"><b>Definition</b> breadth_first_search.cpp:74</div></div>
-<div class="ttc" id="amap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/map.html">std::map</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d82/breadth__first__search_8cpp_a483bb8ccf42aaf7375a83e91490eda1e_cgraph.svg" width="444" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassgraph_1_1_graph_html_a3755ec9e6a842238c7f4aac10b661981"><div class="ttname"><a href="../../dc/d61/classgraph_1_1_graph.html#a3755ec9e6a842238c7f4aac10b661981">graph::Graph::breadth_first_search</a></div><div class="ttdeci">std::map&lt; T, bool &gt; breadth_first_search(T src)</div><div class="ttdef"><b>Definition</b> <a href="../../df/d82/breadth__first__search_8cpp_source.html#l00096">breadth_first_search.cpp:96</a></div></div>
+<div class="ttc" id="aclassgraph_1_1_graph_html_a877b2cba40d8d46dde6fb4209effed19"><div class="ttname"><a href="../../dc/d61/classgraph_1_1_graph.html#a877b2cba40d8d46dde6fb4209effed19">graph::Graph::add_edge</a></div><div class="ttdeci">void add_edge(T u, T v, bool bidir=true)</div><div class="ttdef"><b>Definition</b> <a href="../../df/d82/breadth__first__search_8cpp_source.html#l00074">breadth_first_search.cpp:74</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

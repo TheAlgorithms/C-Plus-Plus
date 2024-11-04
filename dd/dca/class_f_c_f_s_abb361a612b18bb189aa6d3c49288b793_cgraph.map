@@ -1,9 +1,0 @@
-<map id="FCFS::printResult" name="FCFS::printResult">
-<area shape="rect" id="Node000001" title="Utility function for printing the status of each process after execution." alt="" coords="5,55,133,80"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/fixed.html#" title=" " alt="" coords="202,5,277,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,51,186,31,188,36,117,57"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/setprecision.html#" title=" " alt="" coords="181,55,298,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="133,65,165,65,165,70,133,70"/>
-<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/setw.html#" title=" " alt="" coords="202,104,277,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="117,78,188,99,186,104,115,84"/>
-</map>

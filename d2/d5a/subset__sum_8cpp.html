@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: backtracking/subset_sum.cpp File Reference</title>
+<title>TheAlgorithms/C++: backtracking/subset_sum.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -122,7 +139,9 @@ Include dependency graph for subset_sum.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../db/da8/subset__sum_8cpp__incl.svg" width="336" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d2/d5a/subset__sum_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc0/namespacebacktracking.html">backtracking</a></td></tr>
@@ -134,7 +153,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7cb50d36a59427a33f64a266dac83d99" id="r_a7cb50d36a59427a33f64a266dac83d99"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cb50d36a59427a33f64a266dac83d99">backtracking::subset_sum::number_of_subsets</a> (int32_t sum, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int32_t &gt; &amp;in_arr)</td></tr>
+<tr class="memitem:a7cb50d36a59427a33f64a266dac83d99" id="r_a7cb50d36a59427a33f64a266dac83d99"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cb50d36a59427a33f64a266dac83d99">backtracking::subset_sum::number_of_subsets</a> (int32_t sum, const std::vector&lt; int32_t &gt; &amp;in_arr)</td></tr>
 <tr class="memdesc:a7cb50d36a59427a33f64a266dac83d99"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main function implements count of subsets.  <br /></td></tr>
 <tr class="separator:a7cb50d36a59427a33f64a266dac83d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
@@ -147,6 +166,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of the <a href="https://en.wikipedia.org/wiki/Subset_sum_problem" target="_blank">Subset Sum</a> problem. </p>
 <p>We are given an array and a sum value. The algorithm finds all the subsets of that array with sum equal to the given sum and return such subsets count. This approach will have exponential time complexity. </p><dl class="section author"><dt>Author</dt><dd><a href="https://github.com/Swastyy" target="_blank">Swastika Gupta</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d2/d5a/subset__sum_8cpp_source.html">subset_sum.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -165,17 +186,14 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d5a/subset__sum_8cpp_source.html#l00104">104</a> of file <a class="el" href="../../d2/d5a/subset__sum_8cpp_source.html">subset_sum.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  104</span>           {</div>
 <div class="line"><span class="lineno">  105</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
 <div class="line"><span class="lineno">  106</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  107</span>}</div>
-<div class="ttc" id="asubset__sum_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Test implementations.</div><div class="ttdef"><b>Definition</b> subset_sum.cpp:58</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d5a/subset__sum_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="271" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="asubset__sum_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d5a/subset__sum_8cpp_source.html#l00058">subset_sum.cpp:58</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7cb50d36a59427a33f64a266dac83d99" name="a7cb50d36a59427a33f64a266dac83d99"></a>
@@ -192,7 +210,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int32_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>in_arr</em></span>&#160;)</td>
+          <td class="paramtype">const std::vector&lt; int32_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>in_arr</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -206,15 +224,17 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>count of the number of subsets with required sum </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d5a/subset__sum_8cpp_source.html#l00034">34</a> of file <a class="el" href="../../d2/d5a/subset__sum_8cpp_source.html">subset_sum.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   34</span>                                                                          {</div>
-<div class="line"><span class="lineno">   35</span>    int32_t nelement = in_arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">   35</span>    int32_t nelement = in_arr.size();</div>
 <div class="line"><span class="lineno">   36</span>    uint64_t count_of_subset = 0;</div>
 <div class="line"><span class="lineno">   37</span> </div>
 <div class="line"><span class="lineno">   38</span>    <span class="keywordflow">for</span> (int32_t i = 0; i &lt; (1 &lt;&lt; (nelement)); i++) {</div>
-<div class="line"><span class="lineno">   39</span>        int32_t <a class="code hl_function" href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">check</a> = 0;</div>
+<div class="line"><span class="lineno">   39</span>        int32_t check = 0;</div>
 <div class="line"><span class="lineno">   40</span>        <span class="keywordflow">for</span> (int32_t j = 0; j &lt; nelement; j++) {</div>
 <div class="line"><span class="lineno">   41</span>            <span class="keywordflow">if</span> (i &amp; (1 &lt;&lt; j)) {</div>
-<div class="line"><span class="lineno">   42</span>                <a class="code hl_function" href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">check</a> += (in_arr[j]);</div>
+<div class="line"><span class="lineno">   42</span>                check += (in_arr[j]);</div>
 <div class="line"><span class="lineno">   43</span>            }</div>
 <div class="line"><span class="lineno">   44</span>        }</div>
 <div class="line"><span class="lineno">   45</span>        <span class="keywordflow">if</span> (check == sum) {</div>
@@ -223,14 +243,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   48</span>    }</div>
 <div class="line"><span class="lineno">   49</span>    <span class="keywordflow">return</span> count_of_subset;</div>
 <div class="line"><span class="lineno">   50</span>}</div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-<div class="ttc" id="aword__break_8cpp_html_a272b0f5cdb4e41fd6dee4538b808c06a"><div class="ttname"><a href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">dynamic_programming::word_break::check</a></div><div class="ttdeci">bool check(const std::string &amp;s, const std::unordered_set&lt; std::string &gt; &amp;strSet, int pos, std::vector&lt; int &gt; *dp)</div><div class="ttdoc">Function that checks if the string passed in param can be segmented from position 'pos',...</div><div class="ttdef"><b>Definition</b> word_break.cpp:80</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d5a/subset__sum_8cpp_a7cb50d36a59427a33f64a266dac83d99_cgraph.svg" width="350" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -258,56 +271,50 @@ Here is the call graph for this function:</div>
 
 <p>Test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d5a/subset__sum_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../d2/d5a/subset__sum_8cpp_source.html">subset_sum.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   58</span>                   {</div>
 <div class="line"><span class="lineno">   59</span>    <span class="comment">// 1st test</span></div>
-<div class="line"><span class="lineno">   60</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;1st test &quot;</span>;</div>
-<div class="line"><span class="lineno">   61</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int32_t&gt;</a> array1 = {-7, -3, -2, 5, 8};  <span class="comment">// input array</span></div>
+<div class="line"><span class="lineno">   60</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;1st test &quot;</span>;</div>
+<div class="line"><span class="lineno">   61</span>    std::vector&lt;int32_t&gt; array1 = {-7, -3, -2, 5, 8};  <span class="comment">// input array</span></div>
 <div class="line"><span class="lineno">   62</span>    assert(backtracking::subset_sum::number_of_subsets(0, array1) ==</div>
 <div class="line"><span class="lineno">   63</span>           2);  <span class="comment">// first argument in subset_sum function is the required sum and</span></div>
 <div class="line"><span class="lineno">   64</span>                <span class="comment">// second is the input array</span></div>
-<div class="line"><span class="lineno">   65</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   65</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   66</span> </div>
 <div class="line"><span class="lineno">   67</span>    <span class="comment">// 2nd test</span></div>
-<div class="line"><span class="lineno">   68</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;2nd test &quot;</span>;</div>
-<div class="line"><span class="lineno">   69</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int32_t&gt;</a> array2 = {1, 2, 3, 3};</div>
+<div class="line"><span class="lineno">   68</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;2nd test &quot;</span>;</div>
+<div class="line"><span class="lineno">   69</span>    std::vector&lt;int32_t&gt; array2 = {1, 2, 3, 3};</div>
 <div class="line"><span class="lineno">   70</span>    assert(backtracking::subset_sum::number_of_subsets(6, array2) ==</div>
 <div class="line"><span class="lineno">   71</span>           3);  <span class="comment">// here we are expecting 3 subsets which sum up to 6 i.e.</span></div>
 <div class="line"><span class="lineno">   72</span>                <span class="comment">// {(1,2,3),(1,2,3),(3,3)}</span></div>
-<div class="line"><span class="lineno">   73</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   73</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   74</span> </div>
 <div class="line"><span class="lineno">   75</span>    <span class="comment">// 3rd test</span></div>
-<div class="line"><span class="lineno">   76</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;3rd test &quot;</span>;</div>
-<div class="line"><span class="lineno">   77</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int32_t&gt;</a> array3 = {1, 1, 1, 1};</div>
+<div class="line"><span class="lineno">   76</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;3rd test &quot;</span>;</div>
+<div class="line"><span class="lineno">   77</span>    std::vector&lt;int32_t&gt; array3 = {1, 1, 1, 1};</div>
 <div class="line"><span class="lineno">   78</span>    assert(backtracking::subset_sum::number_of_subsets(1, array3) ==</div>
 <div class="line"><span class="lineno">   79</span>           4);  <span class="comment">// here we are expecting 4 subsets which sum up to 1 i.e.</span></div>
 <div class="line"><span class="lineno">   80</span>                <span class="comment">// {(1),(1),(1),(1)}</span></div>
-<div class="line"><span class="lineno">   81</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   81</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   82</span> </div>
 <div class="line"><span class="lineno">   83</span>    <span class="comment">// 4th test</span></div>
-<div class="line"><span class="lineno">   84</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;4th test &quot;</span>;</div>
-<div class="line"><span class="lineno">   85</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int32_t&gt;</a> array4 = {3, 3, 3, 3};</div>
+<div class="line"><span class="lineno">   84</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;4th test &quot;</span>;</div>
+<div class="line"><span class="lineno">   85</span>    std::vector&lt;int32_t&gt; array4 = {3, 3, 3, 3};</div>
 <div class="line"><span class="lineno">   86</span>    assert(backtracking::subset_sum::number_of_subsets(6, array4) ==</div>
 <div class="line"><span class="lineno">   87</span>           6);  <span class="comment">// here we are expecting 6 subsets which sum up to 6 i.e.</span></div>
 <div class="line"><span class="lineno">   88</span>                <span class="comment">// {(3,3),(3,3),(3,3),(3,3),(3,3),(3,3)}</span></div>
-<div class="line"><span class="lineno">   89</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   89</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   90</span> </div>
 <div class="line"><span class="lineno">   91</span>    <span class="comment">// Test 5</span></div>
-<div class="line"><span class="lineno">   92</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;5th test &quot;</span>;</div>
-<div class="line"><span class="lineno">   93</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int32_t&gt;</a> array5 = {};</div>
+<div class="line"><span class="lineno">   92</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;5th test &quot;</span>;</div>
+<div class="line"><span class="lineno">   93</span>    std::vector&lt;int32_t&gt; array5 = {};</div>
 <div class="line"><span class="lineno">   94</span>    assert(backtracking::subset_sum::number_of_subsets(6, array5) ==</div>
 <div class="line"><span class="lineno">   95</span>           0);  <span class="comment">// here we are expecting 0 subsets which sum up to 6 i.e. we</span></div>
 <div class="line"><span class="lineno">   96</span>                <span class="comment">// cannot select anything from an empty array</span></div>
-<div class="line"><span class="lineno">   97</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   97</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   98</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d5a/subset__sum_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="174" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

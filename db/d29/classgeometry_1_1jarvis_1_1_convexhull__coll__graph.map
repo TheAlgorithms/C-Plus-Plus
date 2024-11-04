@@ -1,6 +1,6 @@
 <map id="geometry::jarvis::Convexhull" name="geometry::jarvis::Convexhull">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,198,193,223"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="24,94,174,135"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="24,94,174,135"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,150,102,197,96,197,96,150"/>
 <area shape="rect" id="Node000003" href="$d9/d5a/structgeometry_1_1jarvis_1_1_point.html" title=" " alt="" coords="23,5,175,31"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,46,102,93,96,93,96,46"/>

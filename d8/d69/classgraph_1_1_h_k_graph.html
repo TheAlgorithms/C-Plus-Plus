@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: graph::HKGraph Class Reference</title>
+<title>TheAlgorithms/C++: graph::HKGraph Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -154,25 +171,23 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ae6d069bd16d6eafa6e08c7e5f735eda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44742cb9cfecd1a4493970af9b8bbb15" id="r_a44742cb9cfecd1a4493970af9b8bbb15"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44742cb9cfecd1a4493970af9b8bbb15">INF</a> {INT_MAX}</td></tr>
 <tr class="separator:a44742cb9cfecd1a4493970af9b8bbb15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35893def7a1c5cd60907b4893117796f" id="r_a35893def7a1c5cd60907b4893117796f"><td class="memItemLeft" align="right" valign="top"><a id="a35893def7a1c5cd60907b4893117796f" name="a35893def7a1c5cd60907b4893117796f"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list.html">std::list</a>&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>adj</b></td></tr>
-<tr class="memdesc:a35893def7a1c5cd60907b4893117796f"><td class="mdescLeft">&#160;</td><td class="mdescRight">adj[u] stores adjacents of left side and 0 is used for dummy vertex <br /></td></tr>
+<tr class="memitem:a35893def7a1c5cd60907b4893117796f" id="r_a35893def7a1c5cd60907b4893117796f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::list&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35893def7a1c5cd60907b4893117796f">adj</a></td></tr>
+<tr class="memdesc:a35893def7a1c5cd60907b4893117796f"><td class="mdescLeft">&#160;</td><td class="mdescRight">adj[u] stores adjacents of left side and 0 is used for dummy vertex  <br /></td></tr>
 <tr class="separator:a35893def7a1c5cd60907b4893117796f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86ebff8a70cbfedd05281993d5d1987b" id="r_a86ebff8a70cbfedd05281993d5d1987b"><td class="memItemLeft" align="right" valign="top"><a id="a86ebff8a70cbfedd05281993d5d1987b" name="a86ebff8a70cbfedd05281993d5d1987b"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pair_u</b></td></tr>
-<tr class="memdesc:a86ebff8a70cbfedd05281993d5d1987b"><td class="mdescLeft">&#160;</td><td class="mdescRight">value of vertex 'u' ranges from 1 to m <br /></td></tr>
+<tr class="memitem:a86ebff8a70cbfedd05281993d5d1987b" id="r_a86ebff8a70cbfedd05281993d5d1987b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86ebff8a70cbfedd05281993d5d1987b">pair_u</a></td></tr>
+<tr class="memdesc:a86ebff8a70cbfedd05281993d5d1987b"><td class="mdescLeft">&#160;</td><td class="mdescRight">value of vertex 'u' ranges from 1 to m  <br /></td></tr>
 <tr class="separator:a86ebff8a70cbfedd05281993d5d1987b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a976ee239402cc2726a280e781c706d77" id="r_a976ee239402cc2726a280e781c706d77"><td class="memItemLeft" align="right" valign="top"><a id="a976ee239402cc2726a280e781c706d77" name="a976ee239402cc2726a280e781c706d77"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pair_v</b></td></tr>
-<tr class="memdesc:a976ee239402cc2726a280e781c706d77"><td class="mdescLeft">&#160;</td><td class="mdescRight">value of vertex 'v' ranges from 1 to n <br /></td></tr>
+<tr class="memitem:a976ee239402cc2726a280e781c706d77" id="r_a976ee239402cc2726a280e781c706d77"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a976ee239402cc2726a280e781c706d77">pair_v</a></td></tr>
+<tr class="memdesc:a976ee239402cc2726a280e781c706d77"><td class="mdescLeft">&#160;</td><td class="mdescRight">value of vertex 'v' ranges from 1 to n  <br /></td></tr>
 <tr class="separator:a976ee239402cc2726a280e781c706d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a0228bbba3818447fcf6b56128b552a" id="r_a6a0228bbba3818447fcf6b56128b552a"><td class="memItemLeft" align="right" valign="top"><a id="a6a0228bbba3818447fcf6b56128b552a" name="a6a0228bbba3818447fcf6b56128b552a"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>dist</b></td></tr>
-<tr class="memdesc:a6a0228bbba3818447fcf6b56128b552a"><td class="mdescLeft">&#160;</td><td class="mdescRight">dist represents the distance between vertex 'u' and vertex 'v' <br /></td></tr>
+<tr class="memitem:a6a0228bbba3818447fcf6b56128b552a" id="r_a6a0228bbba3818447fcf6b56128b552a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a0228bbba3818447fcf6b56128b552a">dist</a></td></tr>
+<tr class="memdesc:a6a0228bbba3818447fcf6b56128b552a"><td class="mdescLeft">&#160;</td><td class="mdescRight">dist represents the distance between vertex 'u' and vertex 'v'  <br /></td></tr>
 <tr class="separator:a6a0228bbba3818447fcf6b56128b552a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents Bipartite graph for Hopcroft Karp implementation. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html#l00066">66</a> of file <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html">hopcroft_karp.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0da5aa674d3b3e54a38251ee60d7cd64" name="a0da5aa674d3b3e54a38251ee60d7cd64"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0da5aa674d3b3e54a38251ee60d7cd64">&#9670;&#160;</a></span>HKGraph()</h2>
@@ -201,15 +216,16 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html#l00231">231</a> of file <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html">hopcroft_karp.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  231</span>                             {</div>
 <div class="line"><span class="lineno">  232</span>    this-&gt;<a class="code hl_variable" href="#a3d9101e3b4598159005fd028b9b0ff74">m</a> = <a class="code hl_variable" href="#a3d9101e3b4598159005fd028b9b0ff74">m</a>;</div>
 <div class="line"><span class="lineno">  233</span>    this-&gt;<a class="code hl_variable" href="#a6f5a9fdbb83ef731d739ba6707e21c3c">n</a> = <a class="code hl_variable" href="#a6f5a9fdbb83ef731d739ba6707e21c3c">n</a>;</div>
-<div class="line"><span class="lineno">  234</span>    <a class="code hl_variable" href="#a35893def7a1c5cd60907b4893117796f">adj</a> = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::list&lt;int&gt;</a> &gt;(<a class="code hl_variable" href="#a3d9101e3b4598159005fd028b9b0ff74">m</a> + 1);</div>
+<div class="line"><span class="lineno">  234</span>    <a class="code hl_variable" href="#a35893def7a1c5cd60907b4893117796f">adj</a> = std::vector&lt;std::list&lt;int&gt; &gt;(<a class="code hl_variable" href="#a3d9101e3b4598159005fd028b9b0ff74">m</a> + 1);</div>
 <div class="line"><span class="lineno">  235</span>}</div>
-<div class="ttc" id="aclassgraph_1_1_h_k_graph_html_a35893def7a1c5cd60907b4893117796f"><div class="ttname"><a href="#a35893def7a1c5cd60907b4893117796f">graph::HKGraph::adj</a></div><div class="ttdeci">std::vector&lt; std::list&lt; int &gt; &gt; adj</div><div class="ttdoc">adj[u] stores adjacents of left side and 0 is used for dummy vertex</div><div class="ttdef"><b>Definition</b> hopcroft_karp.cpp:73</div></div>
-<div class="ttc" id="aclassgraph_1_1_h_k_graph_html_a3d9101e3b4598159005fd028b9b0ff74"><div class="ttname"><a href="#a3d9101e3b4598159005fd028b9b0ff74">graph::HKGraph::m</a></div><div class="ttdeci">int m</div><div class="ttdoc">m is the number of vertices on left side of Bipartite Graph</div><div class="ttdef"><b>Definition</b> hopcroft_karp.cpp:68</div></div>
-<div class="ttc" id="aclassgraph_1_1_h_k_graph_html_a6f5a9fdbb83ef731d739ba6707e21c3c"><div class="ttname"><a href="#a6f5a9fdbb83ef731d739ba6707e21c3c">graph::HKGraph::n</a></div><div class="ttdeci">int n</div><div class="ttdoc">n is the number of vertices on right side of Bipartite Graph</div><div class="ttdef"><b>Definition</b> hopcroft_karp.cpp:69</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
+<div class="ttc" id="aclassgraph_1_1_h_k_graph_html_a35893def7a1c5cd60907b4893117796f"><div class="ttname"><a href="#a35893def7a1c5cd60907b4893117796f">graph::HKGraph::adj</a></div><div class="ttdeci">std::vector&lt; std::list&lt; int &gt; &gt; adj</div><div class="ttdoc">adj[u] stores adjacents of left side and 0 is used for dummy vertex</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d9a/hopcroft__karp_8cpp_source.html#l00073">hopcroft_karp.cpp:73</a></div></div>
+<div class="ttc" id="aclassgraph_1_1_h_k_graph_html_a3d9101e3b4598159005fd028b9b0ff74"><div class="ttname"><a href="#a3d9101e3b4598159005fd028b9b0ff74">graph::HKGraph::m</a></div><div class="ttdeci">int m</div><div class="ttdoc">m is the number of vertices on left side of Bipartite Graph</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d9a/hopcroft__karp_8cpp_source.html#l00068">hopcroft_karp.cpp:68</a></div></div>
+<div class="ttc" id="aclassgraph_1_1_h_k_graph_html_a6f5a9fdbb83ef731d739ba6707e21c3c"><div class="ttname"><a href="#a6f5a9fdbb83ef731d739ba6707e21c3c">graph::HKGraph::n</a></div><div class="ttdeci">int n</div><div class="ttdoc">n is the number of vertices on right side of Bipartite Graph</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d9a/hopcroft__karp_8cpp_source.html#l00069">hopcroft_karp.cpp:69</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -241,16 +257,12 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  243</span>{</div>
-<div class="line"><span class="lineno">  244</span>    <a class="code hl_variable" href="#a35893def7a1c5cd60907b4893117796f">adj</a>[u].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(v); <span class="comment">// Add v to u’s list.</span></div>
-<div class="line"><span class="lineno">  245</span>}</div>
-<div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d69/classgraph_1_1_h_k_graph_a3b49011c09cf90a116ab53bef61cd95a_cgraph.svg" width="388" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html#l00242">242</a> of file <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html">hopcroft_karp.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  243</span>{</div>
+<div class="line"><span class="lineno">  244</span>    <a class="code hl_variable" href="#a35893def7a1c5cd60907b4893117796f">adj</a>[u].push_back(v); <span class="comment">// Add v to u’s list.</span></div>
+<div class="line"><span class="lineno">  245</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7491add14d9fc04f679114ca6d6f0f93" name="a7491add14d9fc04f679114ca6d6f0f93"></a>
@@ -272,8 +284,10 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if there is an augmenting path available </dd>
 <dd>
 <code>false</code> if there is no augmenting path available </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html#l00133">133</a> of file <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html">hopcroft_karp.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  134</span>{</div>
-<div class="line"><span class="lineno">  135</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue&lt;int&gt;</a> q; <span class="comment">// an integer queue for bfs</span></div>
+<div class="line"><span class="lineno">  135</span>    std::queue&lt;int&gt; q; <span class="comment">// an integer queue for bfs</span></div>
 <div class="line"><span class="lineno">  136</span> </div>
 <div class="line"><span class="lineno">  137</span>    <span class="comment">// First layer of vertices (set distance as 0)</span></div>
 <div class="line"><span class="lineno">  138</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> u = 1; u &lt;= <a class="code hl_variable" href="#a3d9101e3b4598159005fd028b9b0ff74">m</a>; u++)</div>
@@ -304,7 +318,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  163</span>        {</div>
 <div class="line"><span class="lineno">  164</span>            <span class="comment">// Get all the adjacent vertices of the dequeued vertex u</span></div>
 <div class="line"><span class="lineno">  165</span>            std::list&lt;int&gt;::iterator it;</div>
-<div class="line"><span class="lineno">  166</span>            <span class="keywordflow">for</span> (it = <a class="code hl_variable" href="#a35893def7a1c5cd60907b4893117796f">adj</a>[u].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">begin</a>(); it != <a class="code hl_variable" href="#a35893def7a1c5cd60907b4893117796f">adj</a>[u].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>(); ++it)</div>
+<div class="line"><span class="lineno">  166</span>            <span class="keywordflow">for</span> (it = <a class="code hl_variable" href="#a35893def7a1c5cd60907b4893117796f">adj</a>[u].begin(); it != <a class="code hl_variable" href="#a35893def7a1c5cd60907b4893117796f">adj</a>[u].end(); ++it)</div>
 <div class="line"><span class="lineno">  167</span>            {</div>
 <div class="line"><span class="lineno">  168</span>                <span class="keywordtype">int</span> v = *it;</div>
 <div class="line"><span class="lineno">  169</span> </div>
@@ -322,18 +336,10 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  181</span>   </div>
 <div class="line"><span class="lineno">  182</span>    <span class="keywordflow">return</span> (<a class="code hl_variable" href="#a6a0228bbba3818447fcf6b56128b552a">dist</a>[NIL] != INF);   <span class="comment">// If we could come back to NIL using alternating path of distinct vertices then there is an augmenting path available</span></div>
 <div class="line"><span class="lineno">  183</span>}</div>
-<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
-<div class="ttc" id="aclassgraph_1_1_h_k_graph_html_a6a0228bbba3818447fcf6b56128b552a"><div class="ttname"><a href="#a6a0228bbba3818447fcf6b56128b552a">graph::HKGraph::dist</a></div><div class="ttdeci">std::vector&lt; int &gt; dist</div><div class="ttdoc">dist represents the distance between vertex 'u' and vertex 'v'</div><div class="ttdef"><b>Definition</b> hopcroft_karp.cpp:77</div></div>
-<div class="ttc" id="aclassgraph_1_1_h_k_graph_html_a86ebff8a70cbfedd05281993d5d1987b"><div class="ttname"><a href="#a86ebff8a70cbfedd05281993d5d1987b">graph::HKGraph::pair_u</a></div><div class="ttdeci">std::vector&lt; int &gt; pair_u</div><div class="ttdoc">value of vertex 'u' ranges from 1 to m</div><div class="ttdef"><b>Definition</b> hopcroft_karp.cpp:75</div></div>
-<div class="ttc" id="aclassgraph_1_1_h_k_graph_html_a976ee239402cc2726a280e781c706d77"><div class="ttname"><a href="#a976ee239402cc2726a280e781c706d77">graph::HKGraph::pair_v</a></div><div class="ttdeci">std::vector&lt; int &gt; pair_v</div><div class="ttdoc">value of vertex 'v' ranges from 1 to n</div><div class="ttdef"><b>Definition</b> hopcroft_karp.cpp:76</div></div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/end.html">std::vector::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="aqueue_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d69/classgraph_1_1_h_k_graph_a7491add14d9fc04f679114ca6d6f0f93_cgraph.svg" width="312" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassgraph_1_1_h_k_graph_html_a6a0228bbba3818447fcf6b56128b552a"><div class="ttname"><a href="#a6a0228bbba3818447fcf6b56128b552a">graph::HKGraph::dist</a></div><div class="ttdeci">std::vector&lt; int &gt; dist</div><div class="ttdoc">dist represents the distance between vertex 'u' and vertex 'v'</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d9a/hopcroft__karp_8cpp_source.html#l00077">hopcroft_karp.cpp:77</a></div></div>
+<div class="ttc" id="aclassgraph_1_1_h_k_graph_html_a86ebff8a70cbfedd05281993d5d1987b"><div class="ttname"><a href="#a86ebff8a70cbfedd05281993d5d1987b">graph::HKGraph::pair_u</a></div><div class="ttdeci">std::vector&lt; int &gt; pair_u</div><div class="ttdoc">value of vertex 'u' ranges from 1 to m</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d9a/hopcroft__karp_8cpp_source.html#l00075">hopcroft_karp.cpp:75</a></div></div>
+<div class="ttc" id="aclassgraph_1_1_h_k_graph_html_a976ee239402cc2726a280e781c706d77"><div class="ttname"><a href="#a976ee239402cc2726a280e781c706d77">graph::HKGraph::pair_v</a></div><div class="ttdeci">std::vector&lt; int &gt; pair_v</div><div class="ttdoc">value of vertex 'v' ranges from 1 to n</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d9a/hopcroft__karp_8cpp_source.html#l00076">hopcroft_karp.cpp:76</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae794950cb3407b6b47d3dc986cf714c0" name="ae794950cb3407b6b47d3dc986cf714c0"></a>
@@ -361,11 +367,13 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if there is an augmenting path beginning with free vertex u </dd>
 <dd>
 <code>false</code> if there is no augmenting path beginning with free vertex u </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html#l00191">191</a> of file <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html">hopcroft_karp.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  192</span>{</div>
 <div class="line"><span class="lineno">  193</span>    <span class="keywordflow">if</span> (u != NIL)</div>
 <div class="line"><span class="lineno">  194</span>    {</div>
 <div class="line"><span class="lineno">  195</span>        std::list&lt;int&gt;::iterator it;</div>
-<div class="line"><span class="lineno">  196</span>        <span class="keywordflow">for</span> (it = <a class="code hl_variable" href="#a35893def7a1c5cd60907b4893117796f">adj</a>[u].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">begin</a>(); it != <a class="code hl_variable" href="#a35893def7a1c5cd60907b4893117796f">adj</a>[u].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>(); ++it)</div>
+<div class="line"><span class="lineno">  196</span>        <span class="keywordflow">for</span> (it = <a class="code hl_variable" href="#a35893def7a1c5cd60907b4893117796f">adj</a>[u].begin(); it != <a class="code hl_variable" href="#a35893def7a1c5cd60907b4893117796f">adj</a>[u].end(); ++it)</div>
 <div class="line"><span class="lineno">  197</span>        {</div>
 <div class="line"><span class="lineno">  198</span>            </div>
 <div class="line"><span class="lineno">  199</span>            <span class="keywordtype">int</span> v = *it; <span class="comment">// Adjacent vertex of u</span></div>
@@ -389,13 +397,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  217</span>    }</div>
 <div class="line"><span class="lineno">  218</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  219</span>}</div>
-<div class="ttc" id="aclassgraph_1_1_h_k_graph_html_ae794950cb3407b6b47d3dc986cf714c0"><div class="ttname"><a href="#ae794950cb3407b6b47d3dc986cf714c0">graph::HKGraph::dfs</a></div><div class="ttdeci">bool dfs(int u)</div><div class="ttdoc">This functions checks whether an augmenting path is available exists beginning with free vertex u.</div><div class="ttdef"><b>Definition</b> hopcroft_karp.cpp:191</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d69/classgraph_1_1_h_k_graph_ae794950cb3407b6b47d3dc986cf714c0_cgraph.svg" width="312" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassgraph_1_1_h_k_graph_html_ae794950cb3407b6b47d3dc986cf714c0"><div class="ttname"><a href="#ae794950cb3407b6b47d3dc986cf714c0">graph::HKGraph::dfs</a></div><div class="ttdeci">bool dfs(int u)</div><div class="ttdoc">This functions checks whether an augmenting path is available exists beginning with free vertex u.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d9a/hopcroft__karp_8cpp_source.html#l00191">hopcroft_karp.cpp:191</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9dbda80d02bdc26c3e8ff7330c9be75d" name="a9dbda80d02bdc26c3e8ff7330c9be75d"></a>
@@ -415,17 +418,19 @@ Here is the call graph for this function:</div>
 
 <p>This function counts the number of augmenting paths between left and right sides of the Bipartite graph. </p>
 <dl class="section return"><dt>Returns</dt><dd>size of maximum matching </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html#l00095">95</a> of file <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html">hopcroft_karp.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   96</span>{</div>
 <div class="line"><span class="lineno">   97</span> </div>
 <div class="line"><span class="lineno">   98</span>    <span class="comment">// pair_u[u] stores pair of u in matching on left side of Bipartite Graph.</span></div>
 <div class="line"><span class="lineno">   99</span>    <span class="comment">// If u doesn&#39;t have any pair, then pair_u[u] is NIL</span></div>
-<div class="line"><span class="lineno">  100</span>    <a class="code hl_variable" href="#a86ebff8a70cbfedd05281993d5d1987b">pair_u</a> = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a>(<a class="code hl_variable" href="#a3d9101e3b4598159005fd028b9b0ff74">m</a> + 1,NIL); </div>
+<div class="line"><span class="lineno">  100</span>    <a class="code hl_variable" href="#a86ebff8a70cbfedd05281993d5d1987b">pair_u</a> = std::vector&lt;int&gt;(<a class="code hl_variable" href="#a3d9101e3b4598159005fd028b9b0ff74">m</a> + 1,NIL); </div>
 <div class="line"><span class="lineno">  101</span> </div>
 <div class="line"><span class="lineno">  102</span>    <span class="comment">// pair_v[v] stores pair of v in matching on right side of Biparite Graph.</span></div>
 <div class="line"><span class="lineno">  103</span>    <span class="comment">// If v doesn&#39;t have any pair, then pair_u[v] is NIL</span></div>
-<div class="line"><span class="lineno">  104</span>    <a class="code hl_variable" href="#a976ee239402cc2726a280e781c706d77">pair_v</a> = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a>(<a class="code hl_variable" href="#a6f5a9fdbb83ef731d739ba6707e21c3c">n</a> + 1,NIL); </div>
+<div class="line"><span class="lineno">  104</span>    <a class="code hl_variable" href="#a976ee239402cc2726a280e781c706d77">pair_v</a> = std::vector&lt;int&gt;(<a class="code hl_variable" href="#a6f5a9fdbb83ef731d739ba6707e21c3c">n</a> + 1,NIL); </div>
 <div class="line"><span class="lineno">  105</span> </div>
-<div class="line"><span class="lineno">  106</span>    <a class="code hl_variable" href="#a6a0228bbba3818447fcf6b56128b552a">dist</a> = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a>(<a class="code hl_variable" href="#a3d9101e3b4598159005fd028b9b0ff74">m</a> + 1);  <span class="comment">// dist[u] stores distance of left side vertices</span></div>
+<div class="line"><span class="lineno">  106</span>    <a class="code hl_variable" href="#a6a0228bbba3818447fcf6b56128b552a">dist</a> = std::vector&lt;int&gt;(<a class="code hl_variable" href="#a3d9101e3b4598159005fd028b9b0ff74">m</a> + 1);  <span class="comment">// dist[u] stores distance of left side vertices</span></div>
 <div class="line"><span class="lineno">  107</span> </div>
 <div class="line"><span class="lineno">  108</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = 0;  <span class="comment">// Initialize result</span></div>
 <div class="line"><span class="lineno">  109</span> </div>
@@ -445,17 +450,64 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  123</span>    }</div>
 <div class="line"><span class="lineno">  124</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">  125</span>}</div>
-<div class="ttc" id="aclassgraph_1_1_h_k_graph_html_a7491add14d9fc04f679114ca6d6f0f93"><div class="ttname"><a href="#a7491add14d9fc04f679114ca6d6f0f93">graph::HKGraph::bfs</a></div><div class="ttdeci">bool bfs()</div><div class="ttdoc">This function checks for the possibility of augmented path availability.</div><div class="ttdef"><b>Definition</b> hopcroft_karp.cpp:133</div></div>
-<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> fibonacci_sum.cpp:77</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d69/classgraph_1_1_h_k_graph_a9dbda80d02bdc26c3e8ff7330c9be75d_cgraph.svg" width="531" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassgraph_1_1_h_k_graph_html_a7491add14d9fc04f679114ca6d6f0f93"><div class="ttname"><a href="#a7491add14d9fc04f679114ca6d6f0f93">graph::HKGraph::bfs</a></div><div class="ttdeci">bool bfs()</div><div class="ttdoc">This function checks for the possibility of augmented path availability.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d9a/hopcroft__karp_8cpp_source.html#l00133">hopcroft_karp.cpp:133</a></div></div>
+<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> <a href="../../de/dc3/fibonacci__sum_8cpp_source.html#l00077">fibonacci_sum.cpp:77</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a35893def7a1c5cd60907b4893117796f" name="a35893def7a1c5cd60907b4893117796f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35893def7a1c5cd60907b4893117796f">&#9670;&#160;</a></span>adj</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::list&lt;int&gt; &gt; graph::HKGraph::adj</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>adj[u] stores adjacents of left side and 0 is used for dummy vertex </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html#l00073">73</a> of file <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html">hopcroft_karp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6a0228bbba3818447fcf6b56128b552a" name="a6a0228bbba3818447fcf6b56128b552a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a0228bbba3818447fcf6b56128b552a">&#9670;&#160;</a></span>dist</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int&gt; graph::HKGraph::dist</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>dist represents the distance between vertex 'u' and vertex 'v' </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html">hopcroft_karp.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a44742cb9cfecd1a4493970af9b8bbb15" name="a44742cb9cfecd1a4493970af9b8bbb15"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44742cb9cfecd1a4493970af9b8bbb15">&#9670;&#160;</a></span>INF</h2>
 
@@ -475,6 +527,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html#l00071">71</a> of file <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html">hopcroft_karp.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   71</span>{INT_MAX};</div>
 </div><!-- fragment -->
 </div>
@@ -500,7 +554,9 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>m is the number of vertices on left side of Bipartite <a class="el" href="../../dc/d61/classgraph_1_1_graph.html">Graph</a> </p>
-<div class="fragment"><div class="line"><span class="lineno">   68</span>{};  <span class="comment">///&lt; m is the number of vertices on left side of Bipartite Graph</span></div>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html">hopcroft_karp.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>{};  </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -525,7 +581,9 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>n is the number of vertices on right side of Bipartite <a class="el" href="../../dc/d61/classgraph_1_1_graph.html">Graph</a> </p>
-<div class="fragment"><div class="line"><span class="lineno">   69</span>{};  <span class="comment">///&lt; n is the number of vertices on right side of Bipartite Graph</span></div>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html#l00069">69</a> of file <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html">hopcroft_karp.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   69</span>{};  </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -548,12 +606,66 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html#l00070">70</a> of file <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html">hopcroft_karp.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   70</span>{0};</div>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a86ebff8a70cbfedd05281993d5d1987b" name="a86ebff8a70cbfedd05281993d5d1987b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86ebff8a70cbfedd05281993d5d1987b">&#9670;&#160;</a></span>pair_u</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int&gt; graph::HKGraph::pair_u</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>value of vertex 'u' ranges from 1 to m </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html#l00075">75</a> of file <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html">hopcroft_karp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a976ee239402cc2726a280e781c706d77" name="a976ee239402cc2726a280e781c706d77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a976ee239402cc2726a280e781c706d77">&#9670;&#160;</a></span>pair_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int&gt; graph::HKGraph::pair_v</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>value of vertex 'v' ranges from 1 to n </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html#l00076">76</a> of file <a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html">hopcroft_karp.cpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>graph/<a class="el" href="../../d1/d9a/hopcroft__karp_8cpp.html">hopcroft_karp.cpp</a></li>
+<li>graph/<a class="el" href="../../d1/d9a/hopcroft__karp_8cpp_source.html">hopcroft_karp.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

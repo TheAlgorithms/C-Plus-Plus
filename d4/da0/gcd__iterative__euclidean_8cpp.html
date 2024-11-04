@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: math/gcd_iterative_euclidean.cpp File Reference</title>
+<title>TheAlgorithms/C++: math/gcd_iterative_euclidean.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -119,7 +136,9 @@ Include dependency graph for gcd_iterative_euclidean.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/deb/gcd__iterative__euclidean_8cpp__incl.svg" width="184" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d4/da0/gcd__iterative__euclidean_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae48807fa2b7000afae599e67f327545e" id="r_ae48807fa2b7000afae599e67f327545e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae48807fa2b7000afae599e67f327545e">gcd</a> (int num1, int num2)</td></tr>
@@ -130,6 +149,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Compute the greatest common denominator of two integers using <em>iterative form</em> of <a href="https://en.wikipedia.org/wiki/Euclidean_algorithm" target="_blank">Euclidean algorithm</a> </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d4/d45/gcd__recursive__euclidean_8cpp.html" title="Compute the greatest common denominator of two integers using recursive form of Euclidean algorithm">gcd_recursive_euclidean.cpp</a>, <a class="el" href="../../d1/d11/gcd__of__n__numbers_8cpp.html" title="This program aims at calculating the GCD of n numbers.">gcd_of_n_numbers.cpp</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d4/da0/gcd__iterative__euclidean_8cpp_source.html">gcd_iterative_euclidean.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae48807fa2b7000afae599e67f327545e" name="ae48807fa2b7000afae599e67f327545e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae48807fa2b7000afae599e67f327545e">&#9670;&#160;</a></span>gcd()</h2>
@@ -150,9 +171,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>algorithm </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da0/gcd__iterative__euclidean_8cpp_source.html#l00015">15</a> of file <a class="el" href="../../d4/da0/gcd__iterative__euclidean_8cpp_source.html">gcd_iterative_euclidean.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   15</span>                            {</div>
 <div class="line"><span class="lineno">   16</span>    <span class="keywordflow">if</span> (num1 &lt;= 0 | num2 &lt;= 0) {</div>
-<div class="line"><span class="lineno">   17</span>        <span class="keywordflow">throw</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/domain_error.html">std::domain_error</a>(<span class="stringliteral">&quot;Euclidean algorithm domain is for ints &gt; 0&quot;</span>);</div>
+<div class="line"><span class="lineno">   17</span>        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;Euclidean algorithm domain is for ints &gt; 0&quot;</span>);</div>
 <div class="line"><span class="lineno">   18</span>    }</div>
 <div class="line"><span class="lineno">   19</span> </div>
 <div class="line"><span class="lineno">   20</span>    <span class="keywordflow">if</span> (num1 == num2) {</div>
@@ -178,7 +201,6 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   40</span> </div>
 <div class="line"><span class="lineno">   41</span>    <span class="keywordflow">return</span> previous_remainder;</div>
 <div class="line"><span class="lineno">   42</span>}</div>
-<div class="ttc" id="adomain_error_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/error/domain_error.html">std::domain_error</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -197,27 +219,22 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Main function </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da0/gcd__iterative__euclidean_8cpp_source.html#l00047">47</a> of file <a class="el" href="../../d4/da0/gcd__iterative__euclidean_8cpp_source.html">gcd_iterative_euclidean.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   47</span>           {</div>
-<div class="line"><span class="lineno">   48</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;gcd of 120,7 is &quot;</span> &lt;&lt; (<a class="code hl_function" href="#ae48807fa2b7000afae599e67f327545e">gcd</a>(120, 7)) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   48</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;gcd of 120,7 is &quot;</span> &lt;&lt; (<a class="code hl_function" href="#ae48807fa2b7000afae599e67f327545e">gcd</a>(120, 7)) &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   49</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">   50</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;gcd of -120,10 is &quot;</span> &lt;&lt; <a class="code hl_function" href="#ae48807fa2b7000afae599e67f327545e">gcd</a>(-120, 10) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   51</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/domain_error.html">std::domain_error</a> &amp;e) {</div>
-<div class="line"><span class="lineno">   52</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Error handling was successful&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   50</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;gcd of -120,10 is &quot;</span> &lt;&lt; <a class="code hl_function" href="#ae48807fa2b7000afae599e67f327545e">gcd</a>(-120, 10) &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   51</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::domain_error &amp;e) {</div>
+<div class="line"><span class="lineno">   52</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Error handling was successful&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   53</span>    }</div>
-<div class="line"><span class="lineno">   54</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;gcd of 312,221 is &quot;</span> &lt;&lt; (<a class="code hl_function" href="#ae48807fa2b7000afae599e67f327545e">gcd</a>(312, 221)) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   55</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;gcd of 289,204 is &quot;</span> &lt;&lt; (<a class="code hl_function" href="#ae48807fa2b7000afae599e67f327545e">gcd</a>(289, 204)) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   54</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;gcd of 312,221 is &quot;</span> &lt;&lt; (<a class="code hl_function" href="#ae48807fa2b7000afae599e67f327545e">gcd</a>(312, 221)) &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   55</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;gcd of 289,204 is &quot;</span> &lt;&lt; (<a class="code hl_function" href="#ae48807fa2b7000afae599e67f327545e">gcd</a>(289, 204)) &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   56</span> </div>
 <div class="line"><span class="lineno">   57</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   58</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="agcd__iterative__euclidean_8cpp_html_ae48807fa2b7000afae599e67f327545e"><div class="ttname"><a href="#ae48807fa2b7000afae599e67f327545e">gcd</a></div><div class="ttdeci">int gcd(int num1, int num2)</div><div class="ttdef"><b>Definition</b> gcd_iterative_euclidean.cpp:15</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/da0/gcd__iterative__euclidean_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="180" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="agcd__iterative__euclidean_8cpp_html_ae48807fa2b7000afae599e67f327545e"><div class="ttname"><a href="#ae48807fa2b7000afae599e67f327545e">gcd</a></div><div class="ttdeci">int gcd(int num1, int num2)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/da0/gcd__iterative__euclidean_8cpp_source.html#l00015">gcd_iterative_euclidean.cpp:15</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

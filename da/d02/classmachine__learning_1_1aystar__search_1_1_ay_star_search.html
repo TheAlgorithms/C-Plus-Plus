@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: machine_learning::aystar_search::AyStarSearch&lt; Puzzle &gt; Class Template Reference</title>
+<title>TheAlgorithms/C++: machine_learning::aystar_search::AyStarSearch&lt; Puzzle &gt; Class Template Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -146,10 +163,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abaff2ea6d309e1133fd95bbd1e39946e" id="r_abaff2ea6d309e1133fd95bbd1e39946e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abaff2ea6d309e1133fd95bbd1e39946e">AyStarSearch</a> (const Puzzle &amp;initial, const Puzzle &amp;final)</td></tr>
 <tr class="memdesc:abaff2ea6d309e1133fd95bbd1e39946e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameterized constructor for <a class="el" href="../../da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html" title="A class defining A* search algorithm. for some initial state and final state.">AyStarSearch</a>.  <br /></td></tr>
 <tr class="separator:abaff2ea6d309e1133fd95bbd1e39946e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a26aa9ad3d73707370d9fe83707aca4" id="r_a0a26aa9ad3d73707370d9fe83707aca4"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; Puzzle &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a26aa9ad3d73707370d9fe83707aca4">Solution</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html">Info</a> &gt; FinalState, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">MapOfPuzzleInfoWithPuzzleInfo</a> &amp;parent_of)</td></tr>
+<tr class="memitem:a0a26aa9ad3d73707370d9fe83707aca4" id="r_a0a26aa9ad3d73707370d9fe83707aca4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Puzzle &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a26aa9ad3d73707370d9fe83707aca4">Solution</a> (std::shared_ptr&lt; <a class="el" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html">Info</a> &gt; FinalState, const MapOfPuzzleInfoWithPuzzleInfo &amp;parent_of)</td></tr>
 <tr class="memdesc:a0a26aa9ad3d73707370d9fe83707aca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper solution: launches when a solution for <a class="el" href="../../da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html" title="A class defining A* search algorithm. for some initial state and final state.">AyStarSearch</a> is found.  <br /></td></tr>
 <tr class="separator:a0a26aa9ad3d73707370d9fe83707aca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48284e156fdd48fd0c41008c7e48f201" id="r_a48284e156fdd48fd0c41008c7e48f201"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; Puzzle &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48284e156fdd48fd0c41008c7e48f201">a_star_search</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt; uint32_t(const Puzzle &amp;, const Puzzle &amp;)&gt; &amp;dist, const uint32_t permissible_depth=30)</td></tr>
+<tr class="memitem:a48284e156fdd48fd0c41008c7e48f201" id="r_a48284e156fdd48fd0c41008c7e48f201"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Puzzle &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48284e156fdd48fd0c41008c7e48f201">a_star_search</a> (const std::function&lt; uint32_t(const Puzzle &amp;, const Puzzle &amp;)&gt; &amp;dist, const uint32_t permissible_depth=30)</td></tr>
 <tr class="separator:a48284e156fdd48fd0c41008c7e48f201"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
@@ -161,11 +178,9 @@ typedef struct machine_learning::aystar_search::AyStarSearch::Info&#160;</td><td
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ac11d62d01fac136efbd2bace6c55cea5" id="r_ac11d62d01fac136efbd2bace6c55cea5"><td class="memItemLeft" align="right" valign="top"><a id="ac11d62d01fac136efbd2bace6c55cea5" name="ac11d62d01fac136efbd2bace6c55cea5"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html">Info</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Initial</b></td></tr>
+<tr class="memitem:ac11d62d01fac136efbd2bace6c55cea5" id="r_ac11d62d01fac136efbd2bace6c55cea5"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html">Info</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac11d62d01fac136efbd2bace6c55cea5">Initial</a></td></tr>
 <tr class="separator:ac11d62d01fac136efbd2bace6c55cea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1686cbc0c50ae9e6f949b1e4b46be9ff" id="r_a1686cbc0c50ae9e6f949b1e4b46be9ff"><td class="memItemLeft" align="right" valign="top"><a id="a1686cbc0c50ae9e6f949b1e4b46be9ff" name="a1686cbc0c50ae9e6f949b1e4b46be9ff"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html">Info</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Final</b></td></tr>
+<tr class="memitem:a1686cbc0c50ae9e6f949b1e4b46be9ff" id="r_a1686cbc0c50ae9e6f949b1e4b46be9ff"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html">Info</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1686cbc0c50ae9e6f949b1e4b46be9ff">Final</a></td></tr>
 <tr class="separator:a1686cbc0c50ae9e6f949b1e4b46be9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -181,6 +196,8 @@ class machine_learning::aystar_search::AyStarSearch&lt; Puzzle &gt;</div><p>A cl
 <li>For <code><a class="el" href="../../da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html" title="A class defining A* search algorithm. for some initial state and final state.">AyStarSearch</a></code> to work, the definitions for template Puzzle is compulsory. a. Comparison operator for template Puzzle (<code>&lt;</code>, <code>==</code>, and <code>&lt;=</code>) b. <code>generate_possible_moves()</code> </li>
 </ol>
 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00288">288</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a0c683b037f42e827a16420ce8bccfab9" name="a0c683b037f42e827a16420ce8bccfab9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0c683b037f42e827a16420ce8bccfab9">&#9670;&#160;</a></span>MapOfPuzzleInfoWithInteger</h2>
@@ -196,9 +213,10 @@ template&lt;typename Puzzle &gt; </div>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line"> </div>
-<div class="line">        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">std::map&lt;std::shared_ptr&lt;Info&gt;</a>, uint32_t, comparison_operator&gt;</div>
-<div class="ttc" id="amap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/map.html">std::map</a></div></div>
+<div class="line">        std::map&lt;std::shared_ptr&lt;Info&gt;, uint32_t, comparison_operator&gt;</div>
 </div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00382">382</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a9e0065bda9eeaa2247a32e89f326b9a8" name="a9e0065bda9eeaa2247a32e89f326b9a8"></a>
@@ -215,10 +233,11 @@ template&lt;typename Puzzle &gt; </div>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line"> </div>
-<div class="line">        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">std::map&lt;std::shared_ptr&lt;Info&gt;</a>, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;Info&gt;</a>,</div>
+<div class="line">        std::map&lt;std::shared_ptr&lt;Info&gt;, std::shared_ptr&lt;Info&gt;,</div>
 <div class="line">                 comparison_operator&gt;</div>
-<div class="ttc" id="ashared_ptr_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a></div></div>
 </div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00378">378</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
+
 </div>
 </div>
 <a id="ae8c3627dd2c94f297eb0fbbcad4ad101" name="ae8c3627dd2c94f297eb0fbbcad4ad101"></a>
@@ -235,9 +254,10 @@ template&lt;typename Puzzle &gt; </div>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line"> </div>
-<div class="line">        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/set.html">std::set&lt;std::shared_ptr&lt;Info&gt;</a>, comparison_operator&gt;</div>
-<div class="ttc" id="aset_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/set.html">std::set</a></div></div>
+<div class="line">        std::set&lt;std::shared_ptr&lt;Info&gt;, comparison_operator&gt;</div>
 </div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00385">385</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -278,17 +298,13 @@ template&lt;typename Puzzle &gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  392</span>                                                             {</div>
-<div class="line"><span class="lineno">  393</span>        Initial = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html">std::make_shared&lt;Info&gt;</a>(initial);</div>
-<div class="line"><span class="lineno">  394</span>        Final = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html">std::make_shared&lt;Info&gt;</a>(<span class="keyword">final</span>);</div>
-<div class="line"><span class="lineno">  395</span>    }</div>
-<div class="ttc" id="amake_shared_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html">std::make_shared</a></div><div class="ttdeci">T make_shared(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search_abaff2ea6d309e1133fd95bbd1e39946e_cgraph.svg" width="351" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00392">392</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  392</span>                                                             {</div>
+<div class="line"><span class="lineno">  393</span>        Initial = std::make_shared&lt;Info&gt;(initial);</div>
+<div class="line"><span class="lineno">  394</span>        Final = std::make_shared&lt;Info&gt;(<span class="keyword">final</span>);</div>
+<div class="line"><span class="lineno">  395</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -304,9 +320,9 @@ template&lt;typename Puzzle &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; Puzzle &gt; <a class="el" href="../../da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html">machine_learning::aystar_search::AyStarSearch</a>&lt; Puzzle &gt;::a_star_search </td>
+          <td class="memname">std::vector&lt; Puzzle &gt; <a class="el" href="../../da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html">machine_learning::aystar_search::AyStarSearch</a>&lt; Puzzle &gt;::a_star_search </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt; uint32_t(const Puzzle &amp;, const Puzzle &amp;)&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>dist</em></span>, </td>
+          <td class="paramtype">const std::function&lt; uint32_t(const Puzzle &amp;, const Puzzle &amp;)&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>dist</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -332,12 +348,14 @@ template&lt;typename Puzzle &gt; </div>
 <p>Stores the g_score</p>
 <p>Stores the list to explore</p>
 <p>Stores the list that are explored</p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00429">429</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  431</span>                                               {</div>
 <div class="line"><span class="lineno">  432</span>        MapOfPuzzleInfoWithPuzzleInfo</div>
-<div class="line"><span class="lineno">  433</span>            parent_of;                       <span class="comment">/// Stores the parent of the states</span></div>
-<div class="line"><span class="lineno">  434</span>        MapOfPuzzleInfoWithInteger g_score;  <span class="comment">/// Stores the g_score</span></div>
-<div class="line"><span class="lineno">  435</span>        SetOfPuzzleInfo open_list;           <span class="comment">/// Stores the list to explore</span></div>
-<div class="line"><span class="lineno">  436</span>        SetOfPuzzleInfo closed_list;  <span class="comment">/// Stores the list that are explored</span></div>
+<div class="line"><span class="lineno">  433</span>            parent_of;                       </div>
+<div class="line"><span class="lineno">  434</span>        MapOfPuzzleInfoWithInteger g_score;  </div>
+<div class="line"><span class="lineno">  435</span>        SetOfPuzzleInfo open_list;           </div>
+<div class="line"><span class="lineno">  436</span>        SetOfPuzzleInfo closed_list;  </div>
 <div class="line"><span class="lineno">  437</span> </div>
 <div class="line"><span class="lineno">  438</span>        <span class="comment">// Before starting the AyStartSearch, initialize the set and maps</span></div>
 <div class="line"><span class="lineno">  439</span>        open_list.emplace(Initial);</div>
@@ -360,7 +378,7 @@ template&lt;typename Puzzle &gt; </div>
 <div class="line"><span class="lineno">  456</span>            }</div>
 <div class="line"><span class="lineno">  457</span> </div>
 <div class="line"><span class="lineno">  458</span>            <span class="comment">// current_state, stores lowest f score so far for this state.</span></div>
-<div class="line"><span class="lineno">  459</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;Info&gt;</a> current_state = *it_low_f_score;</div>
+<div class="line"><span class="lineno">  459</span>            std::shared_ptr&lt;Info&gt; current_state = *it_low_f_score;</div>
 <div class="line"><span class="lineno">  460</span> </div>
 <div class="line"><span class="lineno">  461</span>            <span class="comment">// if this current state is equal to final, return</span></div>
 <div class="line"><span class="lineno">  462</span>            <span class="keywordflow">if</span> (*(current_state-&gt;state) == *(Final-&gt;state)) {</div>
@@ -375,13 +393,13 @@ template&lt;typename Puzzle &gt; </div>
 <div class="line"><span class="lineno">  471</span>            }</div>
 <div class="line"><span class="lineno">  472</span>            <span class="comment">// Generate all possible moves (neighbors) given the current</span></div>
 <div class="line"><span class="lineno">  473</span>            <span class="comment">// state</span></div>
-<div class="line"><span class="lineno">  474</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;Puzzle&gt;</a> total_possible_moves =</div>
+<div class="line"><span class="lineno">  474</span>            std::vector&lt;Puzzle&gt; total_possible_moves =</div>
 <div class="line"><span class="lineno">  475</span>                current_state-&gt;state-&gt;generate_possible_moves();</div>
 <div class="line"><span class="lineno">  476</span> </div>
 <div class="line"><span class="lineno">  477</span>            <span class="keywordflow">for</span> (Puzzle &amp;neighbor : total_possible_moves) {</div>
 <div class="line"><span class="lineno">  478</span>                <span class="comment">// calculate score of neighbors with respect to</span></div>
 <div class="line"><span class="lineno">  479</span>                <span class="comment">// current_state</span></div>
-<div class="line"><span class="lineno">  480</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;Info&gt;</a> Neighbor = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html">std::make_shared&lt;Info&gt;</a>(</div>
+<div class="line"><span class="lineno">  480</span>                std::shared_ptr&lt;Info&gt; Neighbor = std::make_shared&lt;Info&gt;(</div>
 <div class="line"><span class="lineno">  481</span>                    neighbor, dist(neighbor, *(Final-&gt;state)),</div>
 <div class="line"><span class="lineno">  482</span>                    current_state-&gt;depth + 1U);</div>
 <div class="line"><span class="lineno">  483</span>                uint32_t temp_g_score = Neighbor-&gt;depth;</div>
@@ -425,16 +443,10 @@ template&lt;typename Puzzle &gt; </div>
 <div class="line"><span class="lineno">  521</span>            closed_list.emplace(current_state);</div>
 <div class="line"><span class="lineno">  522</span>        }</div>
 <div class="line"><span class="lineno">  523</span>        <span class="comment">// Cannot find the solution, return empty vector</span></div>
-<div class="line"><span class="lineno">  524</span>        <span class="keywordflow">return</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;Puzzle&gt;</a>(0);</div>
+<div class="line"><span class="lineno">  524</span>        <span class="keywordflow">return</span> std::vector&lt;Puzzle&gt;(0);</div>
 <div class="line"><span class="lineno">  525</span>    }</div>
-<div class="ttc" id="aclassmachine__learning_1_1aystar__search_1_1_ay_star_search_html_a0a26aa9ad3d73707370d9fe83707aca4"><div class="ttname"><a href="#a0a26aa9ad3d73707370d9fe83707aca4">machine_learning::aystar_search::AyStarSearch::Solution</a></div><div class="ttdeci">std::vector&lt; Puzzle &gt; Solution(std::shared_ptr&lt; Info &gt; FinalState, const MapOfPuzzleInfoWithPuzzleInfo &amp;parent_of)</div><div class="ttdoc">A helper solution: launches when a solution for AyStarSearch is found.</div><div class="ttdef"><b>Definition</b> a_star_search.cpp:405</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search_a48284e156fdd48fd0c41008c7e48f201_cgraph.svg" width="615" height="515"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassmachine__learning_1_1aystar__search_1_1_ay_star_search_html_a0a26aa9ad3d73707370d9fe83707aca4"><div class="ttname"><a href="#a0a26aa9ad3d73707370d9fe83707aca4">machine_learning::aystar_search::AyStarSearch::Solution</a></div><div class="ttdeci">std::vector&lt; Puzzle &gt; Solution(std::shared_ptr&lt; Info &gt; FinalState, const MapOfPuzzleInfoWithPuzzleInfo &amp;parent_of)</div><div class="ttdoc">A helper solution: launches when a solution for AyStarSearch is found.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dec/a__star__search_8cpp_source.html#l00405">a_star_search.cpp:405</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0a26aa9ad3d73707370d9fe83707aca4" name="a0a26aa9ad3d73707370d9fe83707aca4"></a>
@@ -449,14 +461,14 @@ template&lt;typename Puzzle &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; Puzzle &gt; <a class="el" href="../../da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html">machine_learning::aystar_search::AyStarSearch</a>&lt; Puzzle &gt;<a class="el" href="../../dd/d4f/class_solution.html">::Solution</a> </td>
+          <td class="memname">std::vector&lt; Puzzle &gt; <a class="el" href="../../da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html">machine_learning::aystar_search::AyStarSearch</a>&lt; Puzzle &gt;<a class="el" href="../../dd/d4f/class_solution.html">::Solution</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html">Info</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>FinalState</em></span>, </td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html">Info</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>FinalState</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">MapOfPuzzleInfoWithPuzzleInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>parent_of</em></span>&#160;)</td>
+          <td class="paramtype">const MapOfPuzzleInfoWithPuzzleInfo &amp;</td>          <td class="paramname"><span class="paramname"><em>parent_of</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -475,6 +487,8 @@ template&lt;typename Puzzle &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the list of moves denoting moves from final state to initial state (in reverse) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00405">405</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  407</span>                                                        {</div>
 <div class="line"><span class="lineno">  408</span>        <span class="comment">//  Useful for traversing from final state to current state.</span></div>
 <div class="line"><span class="lineno">  409</span>        <span class="keyword">auto</span> current_state = FinalState;</div>
@@ -482,24 +496,71 @@ template&lt;typename Puzzle &gt; </div>
 <div class="line"><span class="lineno">  411</span><span class="comment">         * For storing the solution tree starting from initial state to</span></div>
 <div class="line"><span class="lineno">  412</span><span class="comment">         * final state</span></div>
 <div class="line"><span class="lineno">  413</span><span class="comment">         */</span></div>
-<div class="line"><span class="lineno">  414</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;Puzzle&gt;</a> answer;</div>
+<div class="line"><span class="lineno">  414</span>        std::vector&lt;Puzzle&gt; answer;</div>
 <div class="line"><span class="lineno">  415</span>        <span class="keywordflow">while</span> (current_state != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">  416</span>            answer.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/emplace_back.html">emplace_back</a>(*current_state-&gt;state);</div>
+<div class="line"><span class="lineno">  416</span>            answer.emplace_back(*current_state-&gt;state);</div>
 <div class="line"><span class="lineno">  417</span>            current_state = parent_of.find(current_state)-&gt;second;</div>
 <div class="line"><span class="lineno">  418</span>        }</div>
 <div class="line"><span class="lineno">  419</span>        <span class="keywordflow">return</span> answer;</div>
 <div class="line"><span class="lineno">  420</span>    }</div>
-<div class="ttc" id="aemplace_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/emplace_back.html">std::vector::emplace_back</a></div><div class="ttdeci">T emplace_back(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search_a0a26aa9ad3d73707370d9fe83707aca4_cgraph.svg" width="400" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div><!-- fragment -->
 </div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1686cbc0c50ae9e6f949b1e4b46be9ff" name="a1686cbc0c50ae9e6f949b1e4b46be9ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1686cbc0c50ae9e6f949b1e4b46be9ff">&#9670;&#160;</a></span>Final</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Puzzle &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html">Info</a>&gt; <a class="el" href="../../da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html">machine_learning::aystar_search::AyStarSearch</a>&lt; Puzzle &gt;::Final</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00366">366</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac11d62d01fac136efbd2bace6c55cea5" name="ac11d62d01fac136efbd2bace6c55cea5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac11d62d01fac136efbd2bace6c55cea5">&#9670;&#160;</a></span>Initial</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Puzzle &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html">Info</a>&gt; <a class="el" href="../../da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html">machine_learning::aystar_search::AyStarSearch</a>&lt; Puzzle &gt;::Initial</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00365">365</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>machine_learning/<b>a_star_search.cpp</b></li>
+<li>machine_learning/<a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

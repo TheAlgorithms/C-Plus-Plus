@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: machine_learning/ordinary_least_squares_regressor.cpp File Reference</title>
+<title>TheAlgorithms/C++: machine_learning/ordinary_least_squares_regressor.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -122,50 +139,52 @@ Include dependency graph for ordinary_least_squares_regressor.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d4b/ordinary__least__squares__regressor_8cpp__incl.svg" width="424" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a7075a0fccad9b2d79be0275bfe8948d4" id="r_a7075a0fccad9b2d79be0275bfe8948d4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a7075a0fccad9b2d79be0275bfe8948d4"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7075a0fccad9b2d79be0275bfe8948d4">operator&lt;&lt;</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp;out, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &gt; const &amp;v)</td></tr>
+<tr class="memitem:a7075a0fccad9b2d79be0275bfe8948d4"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7075a0fccad9b2d79be0275bfe8948d4">operator&lt;&lt;</a> (std::ostream &amp;out, std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;v)</td></tr>
 <tr class="separator:a7075a0fccad9b2d79be0275bfe8948d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1ad727903d7817c2758d25bcb52cbc8" id="r_ab1ad727903d7817c2758d25bcb52cbc8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ab1ad727903d7817c2758d25bcb52cbc8"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab1ad727903d7817c2758d25bcb52cbc8">operator&lt;&lt;</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp;out, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; const &amp;v)</td></tr>
+<tr class="memitem:ab1ad727903d7817c2758d25bcb52cbc8"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab1ad727903d7817c2758d25bcb52cbc8">operator&lt;&lt;</a> (std::ostream &amp;out, std::vector&lt; T &gt; const &amp;v)</td></tr>
 <tr class="separator:ab1ad727903d7817c2758d25bcb52cbc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fa731952b0ee3bc7ec51c51ed21911e" id="r_a8fa731952b0ee3bc7ec51c51ed21911e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a8fa731952b0ee3bc7ec51c51ed21911e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a8fa731952b0ee3bc7ec51c51ed21911e">is_square</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &gt; const &amp;A)</td></tr>
+<tr class="memitem:a8fa731952b0ee3bc7ec51c51ed21911e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a8fa731952b0ee3bc7ec51c51ed21911e">is_square</a> (std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;A)</td></tr>
 <tr class="separator:a8fa731952b0ee3bc7ec51c51ed21911e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2edd40354a1ca7aeaee3d1e3589e713" id="r_ae2edd40354a1ca7aeaee3d1e3589e713"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ae2edd40354a1ca7aeaee3d1e3589e713"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae2edd40354a1ca7aeaee3d1e3589e713">operator*</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &gt; const &amp;A, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &gt; const &amp;B)</td></tr>
+<tr class="memitem:ae2edd40354a1ca7aeaee3d1e3589e713"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae2edd40354a1ca7aeaee3d1e3589e713">operator*</a> (std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;A, std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;B)</td></tr>
 <tr class="separator:ae2edd40354a1ca7aeaee3d1e3589e713"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a865e8d26a01962cc93aca66e71346f37" id="r_a865e8d26a01962cc93aca66e71346f37"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a865e8d26a01962cc93aca66e71346f37"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a865e8d26a01962cc93aca66e71346f37">operator*</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &gt; const &amp;A, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; const &amp;B)</td></tr>
+<tr class="memitem:a865e8d26a01962cc93aca66e71346f37"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a865e8d26a01962cc93aca66e71346f37">operator*</a> (std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;A, std::vector&lt; T &gt; const &amp;B)</td></tr>
 <tr class="separator:a865e8d26a01962cc93aca66e71346f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a207b3a99fd5974d3117e0b0ac0aad234" id="r_a207b3a99fd5974d3117e0b0ac0aad234"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a207b3a99fd5974d3117e0b0ac0aad234"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; float &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a207b3a99fd5974d3117e0b0ac0aad234">operator*</a> (float const scalar, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; const &amp;A)</td></tr>
+<tr class="memitem:a207b3a99fd5974d3117e0b0ac0aad234"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a207b3a99fd5974d3117e0b0ac0aad234">operator*</a> (float const scalar, std::vector&lt; T &gt; const &amp;A)</td></tr>
 <tr class="separator:a207b3a99fd5974d3117e0b0ac0aad234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42535e20e97d85aa61271e0894cc0359" id="r_a42535e20e97d85aa61271e0894cc0359"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a42535e20e97d85aa61271e0894cc0359"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; float &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a42535e20e97d85aa61271e0894cc0359">operator*</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; const &amp;A, float const scalar)</td></tr>
+<tr class="memitem:a42535e20e97d85aa61271e0894cc0359"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a42535e20e97d85aa61271e0894cc0359">operator*</a> (std::vector&lt; T &gt; const &amp;A, float const scalar)</td></tr>
 <tr class="separator:a42535e20e97d85aa61271e0894cc0359"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a2d742b9a3ae7b85292e1f86428bb4f" id="r_a7a2d742b9a3ae7b85292e1f86428bb4f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a7a2d742b9a3ae7b85292e1f86428bb4f"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; float &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7a2d742b9a3ae7b85292e1f86428bb4f">operator/</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; const &amp;A, float const scalar)</td></tr>
+<tr class="memitem:a7a2d742b9a3ae7b85292e1f86428bb4f"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7a2d742b9a3ae7b85292e1f86428bb4f">operator/</a> (std::vector&lt; T &gt; const &amp;A, float const scalar)</td></tr>
 <tr class="separator:a7a2d742b9a3ae7b85292e1f86428bb4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a6a560dbdd0177633783b72db37dc19" id="r_a4a6a560dbdd0177633783b72db37dc19"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a4a6a560dbdd0177633783b72db37dc19"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4a6a560dbdd0177633783b72db37dc19">operator-</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; const &amp;A, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; const &amp;B)</td></tr>
+<tr class="memitem:a4a6a560dbdd0177633783b72db37dc19"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4a6a560dbdd0177633783b72db37dc19">operator-</a> (std::vector&lt; T &gt; const &amp;A, std::vector&lt; T &gt; const &amp;B)</td></tr>
 <tr class="separator:a4a6a560dbdd0177633783b72db37dc19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01e6c7bf2b09272578b9c5819ce0f36f" id="r_a01e6c7bf2b09272578b9c5819ce0f36f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a01e6c7bf2b09272578b9c5819ce0f36f"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a01e6c7bf2b09272578b9c5819ce0f36f">operator+</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; const &amp;A, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; const &amp;B)</td></tr>
+<tr class="memitem:a01e6c7bf2b09272578b9c5819ce0f36f"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a01e6c7bf2b09272578b9c5819ce0f36f">operator+</a> (std::vector&lt; T &gt; const &amp;A, std::vector&lt; T &gt; const &amp;B)</td></tr>
 <tr class="separator:a01e6c7bf2b09272578b9c5819ce0f36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7243bdc6ae3c7169f01b85bb226e66a" id="r_af7243bdc6ae3c7169f01b85bb226e66a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:af7243bdc6ae3c7169f01b85bb226e66a"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; float &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af7243bdc6ae3c7169f01b85bb226e66a">get_inverse</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &gt; const &amp;A)</td></tr>
+<tr class="memitem:af7243bdc6ae3c7169f01b85bb226e66a"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; float &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af7243bdc6ae3c7169f01b85bb226e66a">get_inverse</a> (std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;A)</td></tr>
 <tr class="separator:af7243bdc6ae3c7169f01b85bb226e66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21c80569aaffb7bf1657e54fa4b97deb" id="r_a21c80569aaffb7bf1657e54fa4b97deb"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a21c80569aaffb7bf1657e54fa4b97deb"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a21c80569aaffb7bf1657e54fa4b97deb">get_transpose</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &gt; const &amp;A)</td></tr>
+<tr class="memitem:a21c80569aaffb7bf1657e54fa4b97deb"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a21c80569aaffb7bf1657e54fa4b97deb">get_transpose</a> (std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;A)</td></tr>
 <tr class="separator:a21c80569aaffb7bf1657e54fa4b97deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaddc683af581b51351e1023d2a01ef3b" id="r_aaddc683af581b51351e1023d2a01ef3b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aaddc683af581b51351e1023d2a01ef3b"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; float &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aaddc683af581b51351e1023d2a01ef3b">fit_OLS_regressor</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &gt; const &amp;X, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; const &amp;Y)</td></tr>
+<tr class="memitem:aaddc683af581b51351e1023d2a01ef3b"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aaddc683af581b51351e1023d2a01ef3b">fit_OLS_regressor</a> (std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;X, std::vector&lt; T &gt; const &amp;Y)</td></tr>
 <tr class="separator:aaddc683af581b51351e1023d2a01ef3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade6e463f37878fe2a219f927c65b5493" id="r_ade6e463f37878fe2a219f927c65b5493"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ade6e463f37878fe2a219f927c65b5493"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; float &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ade6e463f37878fe2a219f927c65b5493">predict_OLS_regressor</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &gt; const &amp;X, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; float &gt; const &amp;beta)</td></tr>
+<tr class="memitem:ade6e463f37878fe2a219f927c65b5493"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ade6e463f37878fe2a219f927c65b5493">predict_OLS_regressor</a> (std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;X, std::vector&lt; float &gt; const &amp;beta)</td></tr>
 <tr class="separator:ade6e463f37878fe2a219f927c65b5493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4261f3c3c3dfdb86f3004eb8aaffea8d" id="r_a4261f3c3c3dfdb86f3004eb8aaffea8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4261f3c3c3dfdb86f3004eb8aaffea8d">ols_test</a> ()</td></tr>
 <tr class="separator:a4261f3c3c3dfdb86f3004eb8aaffea8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,6 +195,8 @@ Functions</h2></td></tr>
 <div class="textblock"><p>Linear regression example using <a href="https://en.wikipedia.org/wiki/Ordinary_least_squares" target="_blank">Ordinary least squares</a> </p>
 <p>Program that gets the number of data samples and number of features per sample along with output per sample. It applies OLS regression to compute the regression output for additional test data samples.</p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/kvedala" target="_blank">Krishna Vedala</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html">ordinary_least_squares_regressor.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="aaddc683af581b51351e1023d2a01ef3b" name="aaddc683af581b51351e1023d2a01ef3b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaddc683af581b51351e1023d2a01ef3b">&#9670;&#160;</a></span>fit_OLS_regressor()</h2>
@@ -186,14 +207,14 @@ Functions</h2></td></tr>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; float &gt; fit_OLS_regressor </td>
+          <td class="memname">std::vector&lt; float &gt; fit_OLS_regressor </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>X</em></span>, </td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>X</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>Y</em></span>&#160;)</td>
+          <td class="paramtype">std::vector&lt; T &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>Y</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -208,36 +229,30 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>fitted regression model polynomial coefficients </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html#l00321">321</a> of file <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html">ordinary_least_squares_regressor.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  322</span>                                                            {</div>
 <div class="line"><span class="lineno">  323</span>    <span class="comment">// NxF</span></div>
-<div class="line"><span class="lineno">  324</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;T&gt;</a>&gt; X2 = X;</div>
-<div class="line"><span class="lineno">  325</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; X2.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {</div>
+<div class="line"><span class="lineno">  324</span>    std::vector&lt;std::vector&lt;T&gt;&gt; X2 = X;</div>
+<div class="line"><span class="lineno">  325</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; X2.size(); i++) {</div>
 <div class="line"><span class="lineno">  326</span>        <span class="comment">// add Y-intercept -&gt; Nx(F+1)</span></div>
-<div class="line"><span class="lineno">  327</span>        X2[i].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(1);</div>
+<div class="line"><span class="lineno">  327</span>        X2[i].push_back(1);</div>
 <div class="line"><span class="lineno">  328</span>    }</div>
 <div class="line"><span class="lineno">  329</span>    <span class="comment">// (F+1)xN</span></div>
-<div class="line"><span class="lineno">  330</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;T&gt;</a>&gt; Xt = <a class="code hl_function" href="#a21c80569aaffb7bf1657e54fa4b97deb">get_transpose</a>(X2);</div>
+<div class="line"><span class="lineno">  330</span>    std::vector&lt;std::vector&lt;T&gt;&gt; Xt = <a class="code hl_function" href="#a21c80569aaffb7bf1657e54fa4b97deb">get_transpose</a>(X2);</div>
 <div class="line"><span class="lineno">  331</span>    <span class="comment">// (F+1)x(F+1)</span></div>
-<div class="line"><span class="lineno">  332</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;T&gt;</a>&gt; tmp = <a class="code hl_function" href="#af7243bdc6ae3c7169f01b85bb226e66a">get_inverse</a>(Xt * X2);</div>
+<div class="line"><span class="lineno">  332</span>    std::vector&lt;std::vector&lt;T&gt;&gt; tmp = <a class="code hl_function" href="#af7243bdc6ae3c7169f01b85bb226e66a">get_inverse</a>(Xt * X2);</div>
 <div class="line"><span class="lineno">  333</span>    <span class="comment">// (F+1)xN</span></div>
-<div class="line"><span class="lineno">  334</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;float&gt;</a>&gt; out = tmp * Xt;</div>
+<div class="line"><span class="lineno">  334</span>    std::vector&lt;std::vector&lt;float&gt;&gt; out = tmp * Xt;</div>
 <div class="line"><span class="lineno">  335</span>    <span class="comment">// cout &lt;&lt; endl</span></div>
 <div class="line"><span class="lineno">  336</span>    <span class="comment">//      &lt;&lt; &quot;Projection matrix: &quot; &lt;&lt; X2 * out &lt;&lt; endl;</span></div>
 <div class="line"><span class="lineno">  337</span> </div>
 <div class="line"><span class="lineno">  338</span>    <span class="comment">// Fx1,1    -&gt; (F+1)^th element is the independent constant</span></div>
 <div class="line"><span class="lineno">  339</span>    <span class="keywordflow">return</span> out * Y;</div>
 <div class="line"><span class="lineno">  340</span>}</div>
-<div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_a21c80569aaffb7bf1657e54fa4b97deb"><div class="ttname"><a href="#a21c80569aaffb7bf1657e54fa4b97deb">get_transpose</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; T &gt; &gt; get_transpose(std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;A)</div><div class="ttdef"><b>Definition</b> ordinary_least_squares_regressor.cpp:300</div></div>
-<div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_af7243bdc6ae3c7169f01b85bb226e66a"><div class="ttname"><a href="#af7243bdc6ae3c7169f01b85bb226e66a">get_inverse</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; float &gt; &gt; get_inverse(std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;A)</div><div class="ttdef"><b>Definition</b> ordinary_least_squares_regressor.cpp:226</div></div>
-<div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d38/ordinary__least__squares__regressor_8cpp_aaddc683af581b51351e1023d2a01ef3b_cgraph.svg" width="466" height="208"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_a21c80569aaffb7bf1657e54fa4b97deb"><div class="ttname"><a href="#a21c80569aaffb7bf1657e54fa4b97deb">get_transpose</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; T &gt; &gt; get_transpose(std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;A)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html#l00300">ordinary_least_squares_regressor.cpp:300</a></div></div>
+<div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_af7243bdc6ae3c7169f01b85bb226e66a"><div class="ttname"><a href="#af7243bdc6ae3c7169f01b85bb226e66a">get_inverse</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; float &gt; &gt; get_inverse(std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;A)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html#l00226">ordinary_least_squares_regressor.cpp:226</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af7243bdc6ae3c7169f01b85bb226e66a" name="af7243bdc6ae3c7169f01b85bb226e66a"></a>
@@ -249,36 +264,38 @@ Here is the call graph for this function:</div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; float &gt; &gt; get_inverse </td>
+          <td class="memname">std::vector&lt; std::vector&lt; float &gt; &gt; get_inverse </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span></td><td>)</td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Get matrix inverse using Row-trasnformations. Given matrix must be a square and non-singular. </p><dl class="section return"><dt>Returns</dt><dd>inverse matrix </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html#l00226">226</a> of file <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html">ordinary_least_squares_regressor.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  227</span>                                      {</div>
 <div class="line"><span class="lineno">  228</span>    <span class="comment">// Assuming A is square matrix</span></div>
-<div class="line"><span class="lineno">  229</span>    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">  229</span>    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = A.size();</div>
 <div class="line"><span class="lineno">  230</span> </div>
-<div class="line"><span class="lineno">  231</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;float&gt;</a>&gt; inverse(N);</div>
+<div class="line"><span class="lineno">  231</span>    std::vector&lt;std::vector&lt;float&gt;&gt; inverse(N);</div>
 <div class="line"><span class="lineno">  232</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; row++) {</div>
 <div class="line"><span class="lineno">  233</span>        <span class="comment">// preallocatae a resultant identity matrix</span></div>
-<div class="line"><span class="lineno">  234</span>        inverse[row] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a>(N);</div>
+<div class="line"><span class="lineno">  234</span>        inverse[row] = std::vector&lt;float&gt;(N);</div>
 <div class="line"><span class="lineno">  235</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col = 0; col &lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; col++) {</div>
 <div class="line"><span class="lineno">  236</span>            inverse[row][col] = (row == col) ? 1.f : 0.f;</div>
 <div class="line"><span class="lineno">  237</span>        }</div>
 <div class="line"><span class="lineno">  238</span>    }</div>
 <div class="line"><span class="lineno">  239</span> </div>
 <div class="line"><span class="lineno">  240</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="#a8fa731952b0ee3bc7ec51c51ed21911e">is_square</a>(A)) {</div>
-<div class="line"><span class="lineno">  241</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;A must be a square matrix!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  241</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;A must be a square matrix!&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  242</span>        <span class="keywordflow">return</span> inverse;</div>
 <div class="line"><span class="lineno">  243</span>    }</div>
 <div class="line"><span class="lineno">  244</span> </div>
 <div class="line"><span class="lineno">  245</span>    <span class="comment">// preallocatae a temporary matrix identical to A</span></div>
-<div class="line"><span class="lineno">  246</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;float&gt;</a>&gt; temp(N);</div>
+<div class="line"><span class="lineno">  246</span>    std::vector&lt;std::vector&lt;float&gt;&gt; temp(N);</div>
 <div class="line"><span class="lineno">  247</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; row++) {</div>
-<div class="line"><span class="lineno">  248</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> v(N);</div>
+<div class="line"><span class="lineno">  248</span>        std::vector&lt;float&gt; v(N);</div>
 <div class="line"><span class="lineno">  249</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col = 0; col &lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; col++) {</div>
 <div class="line"><span class="lineno">  250</span>            v[col] = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(A[row][col]);</div>
 <div class="line"><span class="lineno">  251</span>        }</div>
@@ -303,7 +320,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  270</span> </div>
 <div class="line"><span class="lineno">  271</span>        <span class="keywordflow">if</span> (temp[row][row] == 0) {</div>
 <div class="line"><span class="lineno">  272</span>            <span class="comment">// Probably a low-rank matrix and hence singular</span></div>
-<div class="line"><span class="lineno">  273</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Low-rank matrix, no inverse!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  273</span>            std::cerr &lt;&lt; <span class="stringliteral">&quot;Low-rank matrix, no inverse!&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  274</span>            <span class="keywordflow">return</span> inverse;</div>
 <div class="line"><span class="lineno">  275</span>        }</div>
 <div class="line"><span class="lineno">  276</span> </div>
@@ -324,16 +341,9 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  291</span> </div>
 <div class="line"><span class="lineno">  292</span>    <span class="keywordflow">return</span> inverse;</div>
 <div class="line"><span class="lineno">  293</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_a8fa731952b0ee3bc7ec51c51ed21911e"><div class="ttname"><a href="#a8fa731952b0ee3bc7ec51c51ed21911e">is_square</a></div><div class="ttdeci">bool is_square(std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;A)</div><div class="ttdef"><b>Definition</b> ordinary_least_squares_regressor.cpp:59</div></div>
-<div class="ttc" id="asparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:48</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d38/ordinary__least__squares__regressor_8cpp_af7243bdc6ae3c7169f01b85bb226e66a_cgraph.svg" width="224" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_a8fa731952b0ee3bc7ec51c51ed21911e"><div class="ttname"><a href="#a8fa731952b0ee3bc7ec51c51ed21911e">is_square</a></div><div class="ttdeci">bool is_square(std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;A)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html#l00059">ordinary_least_squares_regressor.cpp:59</a></div></div>
+<div class="ttc" id="asparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dab/sparse__table_8cpp_source.html#l00048">sparse_table.cpp:48</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a21c80569aaffb7bf1657e54fa4b97deb" name="a21c80569aaffb7bf1657e54fa4b97deb"></a>
@@ -345,26 +355,28 @@ Here is the call graph for this function:</div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &gt; get_transpose </td>
+          <td class="memname">std::vector&lt; std::vector&lt; T &gt; &gt; get_transpose </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span></td><td>)</td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>matrix transpose </p><dl class="section return"><dt>Returns</dt><dd>resultant matrix </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html#l00300">300</a> of file <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html">ordinary_least_squares_regressor.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  301</span>                                      {</div>
-<div class="line"><span class="lineno">  302</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;T&gt;</a>&gt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(A[0].size());</div>
+<div class="line"><span class="lineno">  302</span>    std::vector&lt;std::vector&lt;T&gt;&gt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(A[0].size());</div>
 <div class="line"><span class="lineno">  303</span> </div>
-<div class="line"><span class="lineno">  304</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; A[0].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); row++) {</div>
-<div class="line"><span class="lineno">  305</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> v(A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>());</div>
-<div class="line"><span class="lineno">  306</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col = 0; col &lt; A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); col++) v[col] = A[col][row];</div>
+<div class="line"><span class="lineno">  304</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; A[0].size(); row++) {</div>
+<div class="line"><span class="lineno">  305</span>        std::vector&lt;T&gt; v(A.size());</div>
+<div class="line"><span class="lineno">  306</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col = 0; col &lt; A.size(); col++) v[col] = A[col][row];</div>
 <div class="line"><span class="lineno">  307</span> </div>
 <div class="line"><span class="lineno">  308</span>        <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>[row] = v;</div>
 <div class="line"><span class="lineno">  309</span>    }</div>
 <div class="line"><span class="lineno">  310</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">  311</span>}</div>
-<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> fibonacci_sum.cpp:77</div></div>
+<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> <a href="../../de/dc3/fibonacci__sum_8cpp_source.html#l00077">fibonacci_sum.cpp:77</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -382,7 +394,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">bool is_square </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span></td><td>)</td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -393,9 +405,11 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>function to check if given matrix is a square matrix </p><dl class="section return"><dt>Returns</dt><dd>1 if true, 0 if false </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html">ordinary_least_squares_regressor.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   59</span>                                                        {</div>
 <div class="line"><span class="lineno">   60</span>    <span class="comment">// Assuming A is square matrix</span></div>
-<div class="line"><span class="lineno">   61</span>    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">   61</span>    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = A.size();</div>
 <div class="line"><span class="lineno">   62</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
 <div class="line"><span class="lineno">   63</span>        <span class="keywordflow">if</span> (A[i].size() != N) {</div>
 <div class="line"><span class="lineno">   64</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -421,70 +435,66 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>main function </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html#l00423">423</a> of file <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html">ordinary_least_squares_regressor.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  423</span>           {</div>
 <div class="line"><span class="lineno">  424</span>    <a class="code hl_function" href="#a4261f3c3c3dfdb86f3004eb8aaffea8d">ols_test</a>();</div>
 <div class="line"><span class="lineno">  425</span> </div>
 <div class="line"><span class="lineno">  426</span>    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = 0, F = 0;</div>
 <div class="line"><span class="lineno">  427</span> </div>
-<div class="line"><span class="lineno">  428</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter number of features: &quot;</span>;</div>
+<div class="line"><span class="lineno">  428</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter number of features: &quot;</span>;</div>
 <div class="line"><span class="lineno">  429</span>    <span class="comment">// number of features = columns</span></div>
-<div class="line"><span class="lineno">  430</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; F;</div>
-<div class="line"><span class="lineno">  431</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter number of samples: &quot;</span>;</div>
+<div class="line"><span class="lineno">  430</span>    std::cin &gt;&gt; F;</div>
+<div class="line"><span class="lineno">  431</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter number of samples: &quot;</span>;</div>
 <div class="line"><span class="lineno">  432</span>    <span class="comment">// number of samples = rows</span></div>
-<div class="line"><span class="lineno">  433</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>;</div>
+<div class="line"><span class="lineno">  433</span>    std::cin &gt;&gt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>;</div>
 <div class="line"><span class="lineno">  434</span> </div>
-<div class="line"><span class="lineno">  435</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;float&gt;</a>&gt; <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>(N);</div>
-<div class="line"><span class="lineno">  436</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> Y(N);</div>
+<div class="line"><span class="lineno">  435</span>    std::vector&lt;std::vector&lt;float&gt;&gt; <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>(N);</div>
+<div class="line"><span class="lineno">  436</span>    std::vector&lt;float&gt; Y(N);</div>
 <div class="line"><span class="lineno">  437</span> </div>
-<div class="line"><span class="lineno">  438</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div>
+<div class="line"><span class="lineno">  438</span>    std::cout</div>
 <div class="line"><span class="lineno">  439</span>        &lt;&lt; <span class="stringliteral">&quot;Enter training data. Per sample, provide features and one output.&quot;</span></div>
-<div class="line"><span class="lineno">  440</span>        &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  440</span>        &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  441</span> </div>
 <div class="line"><span class="lineno">  442</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; rows++) {</div>
-<div class="line"><span class="lineno">  443</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> v(F);</div>
-<div class="line"><span class="lineno">  444</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sample# &quot;</span> &lt;&lt; rows + 1 &lt;&lt; <span class="stringliteral">&quot;: &quot;</span>;</div>
+<div class="line"><span class="lineno">  443</span>        std::vector&lt;float&gt; v(F);</div>
+<div class="line"><span class="lineno">  444</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Sample# &quot;</span> &lt;&lt; rows + 1 &lt;&lt; <span class="stringliteral">&quot;: &quot;</span>;</div>
 <div class="line"><span class="lineno">  445</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> cols = 0; cols &lt; F; cols++) {</div>
 <div class="line"><span class="lineno">  446</span>            <span class="comment">// get the F features</span></div>
-<div class="line"><span class="lineno">  447</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; v[cols];</div>
+<div class="line"><span class="lineno">  447</span>            std::cin &gt;&gt; v[cols];</div>
 <div class="line"><span class="lineno">  448</span>        }</div>
 <div class="line"><span class="lineno">  449</span>        <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>[rows] = v;</div>
 <div class="line"><span class="lineno">  450</span>        <span class="comment">// get the corresponding output</span></div>
-<div class="line"><span class="lineno">  451</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; Y[rows];</div>
+<div class="line"><span class="lineno">  451</span>        std::cin &gt;&gt; Y[rows];</div>
 <div class="line"><span class="lineno">  452</span>    }</div>
 <div class="line"><span class="lineno">  453</span> </div>
-<div class="line"><span class="lineno">  454</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> beta = <a class="code hl_function" href="#aaddc683af581b51351e1023d2a01ef3b">fit_OLS_regressor</a>(<a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>, Y);</div>
-<div class="line"><span class="lineno">  455</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a> &lt;&lt; <span class="stringliteral">&quot;beta:&quot;</span> &lt;&lt; beta &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  454</span>    std::vector&lt;float&gt; beta = <a class="code hl_function" href="#aaddc683af581b51351e1023d2a01ef3b">fit_OLS_regressor</a>(<a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>, Y);</div>
+<div class="line"><span class="lineno">  455</span>    std::cout &lt;&lt; std::endl &lt;&lt; std::endl &lt;&lt; <span class="stringliteral">&quot;beta:&quot;</span> &lt;&lt; beta &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  456</span> </div>
 <div class="line"><span class="lineno">  457</span>    <span class="keywordtype">size_t</span> T = 0;</div>
-<div class="line"><span class="lineno">  458</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter number of test samples: &quot;</span>;</div>
+<div class="line"><span class="lineno">  458</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter number of test samples: &quot;</span>;</div>
 <div class="line"><span class="lineno">  459</span>    <span class="comment">// number of test sample inputs</span></div>
-<div class="line"><span class="lineno">  460</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; T;</div>
-<div class="line"><span class="lineno">  461</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;float&gt;</a>&gt; data2(T);</div>
+<div class="line"><span class="lineno">  460</span>    std::cin &gt;&gt; T;</div>
+<div class="line"><span class="lineno">  461</span>    std::vector&lt;std::vector&lt;float&gt;&gt; data2(T);</div>
 <div class="line"><span class="lineno">  462</span>    <span class="comment">// vector&lt;float&gt; Y2(T);</span></div>
 <div class="line"><span class="lineno">  463</span> </div>
 <div class="line"><span class="lineno">  464</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; T; rows++) {</div>
-<div class="line"><span class="lineno">  465</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sample# &quot;</span> &lt;&lt; rows + 1 &lt;&lt; <span class="stringliteral">&quot;: &quot;</span>;</div>
-<div class="line"><span class="lineno">  466</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> v(F);</div>
+<div class="line"><span class="lineno">  465</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Sample# &quot;</span> &lt;&lt; rows + 1 &lt;&lt; <span class="stringliteral">&quot;: &quot;</span>;</div>
+<div class="line"><span class="lineno">  466</span>        std::vector&lt;float&gt; v(F);</div>
 <div class="line"><span class="lineno">  467</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> cols = 0; cols &lt; F; cols++) std::cin &gt;&gt; v[cols];</div>
 <div class="line"><span class="lineno">  468</span>        data2[rows] = v;</div>
 <div class="line"><span class="lineno">  469</span>    }</div>
 <div class="line"><span class="lineno">  470</span> </div>
-<div class="line"><span class="lineno">  471</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> out = <a class="code hl_function" href="#ade6e463f37878fe2a219f927c65b5493">predict_OLS_regressor</a>(data2, beta);</div>
-<div class="line"><span class="lineno">  472</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; T; rows++) <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; out[rows] &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  471</span>    std::vector&lt;float&gt; out = <a class="code hl_function" href="#ade6e463f37878fe2a219f927c65b5493">predict_OLS_regressor</a>(data2, beta);</div>
+<div class="line"><span class="lineno">  472</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; T; rows++) std::cout &lt;&lt; out[rows] &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  473</span> </div>
 <div class="line"><span class="lineno">  474</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  475</span>}</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="ahash__search_8cpp_html_a6e1a77282bc65ad359d753d25df23243"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a></div><div class="ttdeci">int data[MAX]</div><div class="ttdoc">test data</div><div class="ttdef"><b>Definition</b> hash_search.cpp:24</div></div>
-<div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_a4261f3c3c3dfdb86f3004eb8aaffea8d"><div class="ttname"><a href="#a4261f3c3c3dfdb86f3004eb8aaffea8d">ols_test</a></div><div class="ttdeci">void ols_test()</div><div class="ttdef"><b>Definition</b> ordinary_least_squares_regressor.cpp:369</div></div>
-<div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_aaddc683af581b51351e1023d2a01ef3b"><div class="ttname"><a href="#aaddc683af581b51351e1023d2a01ef3b">fit_OLS_regressor</a></div><div class="ttdeci">std::vector&lt; float &gt; fit_OLS_regressor(std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;X, std::vector&lt; T &gt; const &amp;Y)</div><div class="ttdef"><b>Definition</b> ordinary_least_squares_regressor.cpp:321</div></div>
-<div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_ade6e463f37878fe2a219f927c65b5493"><div class="ttname"><a href="#ade6e463f37878fe2a219f927c65b5493">predict_OLS_regressor</a></div><div class="ttdeci">std::vector&lt; float &gt; predict_OLS_regressor(std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;X, std::vector&lt; float &gt; const &amp;beta)</div><div class="ttdef"><b>Definition</b> ordinary_least_squares_regressor.cpp:352</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../dc/d38/ordinary__least__squares__regressor_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="100%" height="529"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="ahash__search_8cpp_html_a6e1a77282bc65ad359d753d25df23243"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a></div><div class="ttdeci">int data[MAX]</div><div class="ttdoc">test data</div><div class="ttdef"><b>Definition</b> <a href="../../d1/df3/hash__search_8cpp_source.html#l00024">hash_search.cpp:24</a></div></div>
+<div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_a4261f3c3c3dfdb86f3004eb8aaffea8d"><div class="ttname"><a href="#a4261f3c3c3dfdb86f3004eb8aaffea8d">ols_test</a></div><div class="ttdeci">void ols_test()</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html#l00369">ordinary_least_squares_regressor.cpp:369</a></div></div>
+<div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_aaddc683af581b51351e1023d2a01ef3b"><div class="ttname"><a href="#aaddc683af581b51351e1023d2a01ef3b">fit_OLS_regressor</a></div><div class="ttdeci">std::vector&lt; float &gt; fit_OLS_regressor(std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;X, std::vector&lt; T &gt; const &amp;Y)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html#l00321">ordinary_least_squares_regressor.cpp:321</a></div></div>
+<div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_ade6e463f37878fe2a219f927c65b5493"><div class="ttname"><a href="#ade6e463f37878fe2a219f927c65b5493">predict_OLS_regressor</a></div><div class="ttdeci">std::vector&lt; float &gt; predict_OLS_regressor(std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;X, std::vector&lt; float &gt; const &amp;beta)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html#l00352">ordinary_least_squares_regressor.cpp:352</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4261f3c3c3dfdb86f3004eb8aaffea8d" name="a4261f3c3c3dfdb86f3004eb8aaffea8d"></a>
@@ -502,62 +512,59 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Self test checks </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html#l00369">369</a> of file <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html">ordinary_least_squares_regressor.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  369</span>                {</div>
 <div class="line"><span class="lineno">  370</span>    <span class="keywordtype">int</span> F = 3, <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = 5;</div>
 <div class="line"><span class="lineno">  371</span> </div>
 <div class="line"><span class="lineno">  372</span>    <span class="comment">/* test function = x^2 -5 */</span></div>
-<div class="line"><span class="lineno">  373</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1 (quadratic function)....&quot;</span>;</div>
+<div class="line"><span class="lineno">  373</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 1 (quadratic function)....&quot;</span>;</div>
 <div class="line"><span class="lineno">  374</span>    <span class="comment">// create training data set with features = x, x^2, x^3</span></div>
-<div class="line"><span class="lineno">  375</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;float&gt;</a>&gt; data1(</div>
+<div class="line"><span class="lineno">  375</span>    std::vector&lt;std::vector&lt;float&gt;&gt; data1(</div>
 <div class="line"><span class="lineno">  376</span>        {{-5, 25, -125}, {-1, 1, -1}, {0, 0, 0}, {1, 1, 1}, {6, 36, 216}});</div>
 <div class="line"><span class="lineno">  377</span>    <span class="comment">// create corresponding outputs</span></div>
-<div class="line"><span class="lineno">  378</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> Y1({20, -4, -5, -4, 31});</div>
+<div class="line"><span class="lineno">  378</span>    std::vector&lt;float&gt; Y1({20, -4, -5, -4, 31});</div>
 <div class="line"><span class="lineno">  379</span>    <span class="comment">// perform regression modelling</span></div>
-<div class="line"><span class="lineno">  380</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> beta1 = <a class="code hl_function" href="#aaddc683af581b51351e1023d2a01ef3b">fit_OLS_regressor</a>(data1, Y1);</div>
+<div class="line"><span class="lineno">  380</span>    std::vector&lt;float&gt; beta1 = <a class="code hl_function" href="#aaddc683af581b51351e1023d2a01ef3b">fit_OLS_regressor</a>(data1, Y1);</div>
 <div class="line"><span class="lineno">  381</span>    <span class="comment">// create test data set with same features = x, x^2, x^3</span></div>
-<div class="line"><span class="lineno">  382</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;float&gt;</a>&gt; test_data1(</div>
+<div class="line"><span class="lineno">  382</span>    std::vector&lt;std::vector&lt;float&gt;&gt; test_data1(</div>
 <div class="line"><span class="lineno">  383</span>        {{-2, 4, -8}, {2, 4, 8}, {-10, 100, -1000}, {10, 100, 1000}});</div>
 <div class="line"><span class="lineno">  384</span>    <span class="comment">// expected regression outputs</span></div>
-<div class="line"><span class="lineno">  385</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> expected1({-1, -1, 95, 95});</div>
+<div class="line"><span class="lineno">  385</span>    std::vector&lt;float&gt; expected1({-1, -1, 95, 95});</div>
 <div class="line"><span class="lineno">  386</span>    <span class="comment">// predicted regression outputs</span></div>
-<div class="line"><span class="lineno">  387</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> out1 = <a class="code hl_function" href="#ade6e463f37878fe2a219f927c65b5493">predict_OLS_regressor</a>(test_data1, beta1);</div>
+<div class="line"><span class="lineno">  387</span>    std::vector&lt;float&gt; out1 = <a class="code hl_function" href="#ade6e463f37878fe2a219f927c65b5493">predict_OLS_regressor</a>(test_data1, beta1);</div>
 <div class="line"><span class="lineno">  388</span>    <span class="comment">// compare predicted results are within +-0.01 limit of expected</span></div>
-<div class="line"><span class="lineno">  389</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; out1.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); rows++) {</div>
+<div class="line"><span class="lineno">  389</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; out1.size(); rows++) {</div>
 <div class="line"><span class="lineno">  390</span>        assert(std::abs(out1[rows] - expected1[rows]) &lt; 0.01);</div>
 <div class="line"><span class="lineno">  391</span>    }</div>
-<div class="line"><span class="lineno">  392</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  392</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  393</span> </div>
 <div class="line"><span class="lineno">  394</span>    <span class="comment">/* test function = x^3 + x^2 - 100 */</span></div>
-<div class="line"><span class="lineno">  395</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2 (cubic function)....&quot;</span>;</div>
+<div class="line"><span class="lineno">  395</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 2 (cubic function)....&quot;</span>;</div>
 <div class="line"><span class="lineno">  396</span>    <span class="comment">// create training data set with features = x, x^2, x^3</span></div>
-<div class="line"><span class="lineno">  397</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;float&gt;</a>&gt; data2(</div>
+<div class="line"><span class="lineno">  397</span>    std::vector&lt;std::vector&lt;float&gt;&gt; data2(</div>
 <div class="line"><span class="lineno">  398</span>        {{-5, 25, -125}, {-1, 1, -1}, {0, 0, 0}, {1, 1, 1}, {6, 36, 216}});</div>
 <div class="line"><span class="lineno">  399</span>    <span class="comment">// create corresponding outputs</span></div>
-<div class="line"><span class="lineno">  400</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> Y2({-200, -100, -100, 98, 152});</div>
+<div class="line"><span class="lineno">  400</span>    std::vector&lt;float&gt; Y2({-200, -100, -100, 98, 152});</div>
 <div class="line"><span class="lineno">  401</span>    <span class="comment">// perform regression modelling</span></div>
-<div class="line"><span class="lineno">  402</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> beta2 = <a class="code hl_function" href="#aaddc683af581b51351e1023d2a01ef3b">fit_OLS_regressor</a>(data2, Y2);</div>
+<div class="line"><span class="lineno">  402</span>    std::vector&lt;float&gt; beta2 = <a class="code hl_function" href="#aaddc683af581b51351e1023d2a01ef3b">fit_OLS_regressor</a>(data2, Y2);</div>
 <div class="line"><span class="lineno">  403</span>    <span class="comment">// create test data set with same features = x, x^2, x^3</span></div>
-<div class="line"><span class="lineno">  404</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;float&gt;</a>&gt; test_data2(</div>
+<div class="line"><span class="lineno">  404</span>    std::vector&lt;std::vector&lt;float&gt;&gt; test_data2(</div>
 <div class="line"><span class="lineno">  405</span>        {{-2, 4, -8}, {2, 4, 8}, {-10, 100, -1000}, {10, 100, 1000}});</div>
 <div class="line"><span class="lineno">  406</span>    <span class="comment">// expected regression outputs</span></div>
-<div class="line"><span class="lineno">  407</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> expected2({-104, -88, -1000, 1000});</div>
+<div class="line"><span class="lineno">  407</span>    std::vector&lt;float&gt; expected2({-104, -88, -1000, 1000});</div>
 <div class="line"><span class="lineno">  408</span>    <span class="comment">// predicted regression outputs</span></div>
-<div class="line"><span class="lineno">  409</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> out2 = <a class="code hl_function" href="#ade6e463f37878fe2a219f927c65b5493">predict_OLS_regressor</a>(test_data2, beta2);</div>
+<div class="line"><span class="lineno">  409</span>    std::vector&lt;float&gt; out2 = <a class="code hl_function" href="#ade6e463f37878fe2a219f927c65b5493">predict_OLS_regressor</a>(test_data2, beta2);</div>
 <div class="line"><span class="lineno">  410</span>    <span class="comment">// compare predicted results are within +-0.01 limit of expected</span></div>
-<div class="line"><span class="lineno">  411</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; out2.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); rows++) {</div>
+<div class="line"><span class="lineno">  411</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; out2.size(); rows++) {</div>
 <div class="line"><span class="lineno">  412</span>        assert(std::abs(out2[rows] - expected2[rows]) &lt; 0.01);</div>
 <div class="line"><span class="lineno">  413</span>    }</div>
-<div class="line"><span class="lineno">  414</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  414</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  415</span> </div>
-<div class="line"><span class="lineno">  416</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;  <span class="comment">// ensure test results are displayed on screen</span></div>
+<div class="line"><span class="lineno">  416</span>    std::cout &lt;&lt; std::endl;  <span class="comment">// ensure test results are displayed on screen</span></div>
 <div class="line"><span class="lineno">  417</span>                             <span class="comment">// (flush stdout)</span></div>
 <div class="line"><span class="lineno">  418</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d38/ordinary__least__squares__regressor_8cpp_a4261f3c3c3dfdb86f3004eb8aaffea8d_cgraph.svg" width="608" height="260"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a207b3a99fd5974d3117e0b0ac0aad234" name="a207b3a99fd5974d3117e0b0ac0aad234"></a>
@@ -569,23 +576,25 @@ Here is the call graph for this function:</div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; float &gt; operator* </td>
+          <td class="memname">std::vector&lt; float &gt; operator* </td>
           <td>(</td>
           <td class="paramtype">float const</td>          <td class="paramname"><span class="paramname"><em>scalar</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span>&#160;)</td>
+          <td class="paramtype">std::vector&lt; T &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>pre-multiplication of a vector by a scalar </p><dl class="section return"><dt>Returns</dt><dd>resultant vector </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html#l00138">138</a> of file <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html">ordinary_least_squares_regressor.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  138</span>                                                                      {</div>
 <div class="line"><span class="lineno">  139</span>    <span class="comment">// Number of rows in A</span></div>
-<div class="line"><span class="lineno">  140</span>    <span class="keywordtype">size_t</span> N_A = A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">  140</span>    <span class="keywordtype">size_t</span> N_A = A.size();</div>
 <div class="line"><span class="lineno">  141</span> </div>
-<div class="line"><span class="lineno">  142</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(N_A);</div>
+<div class="line"><span class="lineno">  142</span>    std::vector&lt;float&gt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(N_A);</div>
 <div class="line"><span class="lineno">  143</span> </div>
 <div class="line"><span class="lineno">  144</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; N_A; row++) {</div>
 <div class="line"><span class="lineno">  145</span>        <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>[row] += A[row] * <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(scalar);</div>
@@ -593,12 +602,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  147</span> </div>
 <div class="line"><span class="lineno">  148</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">  149</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d38/ordinary__least__squares__regressor_8cpp_a207b3a99fd5974d3117e0b0ac0aad234_cgraph.svg" width="248" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae2edd40354a1ca7aeaee3d1e3589e713" name="ae2edd40354a1ca7aeaee3d1e3589e713"></a>
@@ -610,38 +614,40 @@ Here is the call graph for this function:</div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &gt; operator* </td>
+          <td class="memname">std::vector&lt; std::vector&lt; T &gt; &gt; operator* </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>B</em></span>&#160;)</td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>B</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Matrix multiplication such that if A is size (mxn) and B is of size (pxq) then the multiplication is defined only when n = p and the resultant matrix is of size (mxq)</p>
 <dl class="section return"><dt>Returns</dt><dd>resultant matrix </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html#l00078">78</a> of file <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html">ordinary_least_squares_regressor.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   79</span>                                                                        {</div>
 <div class="line"><span class="lineno">   80</span>    <span class="comment">// Number of rows in A</span></div>
-<div class="line"><span class="lineno">   81</span>    <span class="keywordtype">size_t</span> N_A = A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">   81</span>    <span class="keywordtype">size_t</span> N_A = A.size();</div>
 <div class="line"><span class="lineno">   82</span>    <span class="comment">// Number of columns in B</span></div>
-<div class="line"><span class="lineno">   83</span>    <span class="keywordtype">size_t</span> N_B = B[0].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">   83</span>    <span class="keywordtype">size_t</span> N_B = B[0].size();</div>
 <div class="line"><span class="lineno">   84</span> </div>
-<div class="line"><span class="lineno">   85</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;T&gt;</a>&gt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(N_A);</div>
+<div class="line"><span class="lineno">   85</span>    std::vector&lt;std::vector&lt;T&gt;&gt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(N_A);</div>
 <div class="line"><span class="lineno">   86</span> </div>
-<div class="line"><span class="lineno">   87</span>    <span class="keywordflow">if</span> (A[0].size() != B.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()) {</div>
-<div class="line"><span class="lineno">   88</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Number of columns in A != Number of rows in B (&quot;</span></div>
-<div class="line"><span class="lineno">   89</span>                  &lt;&lt; A[0].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; B.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   87</span>    <span class="keywordflow">if</span> (A[0].size() != B.size()) {</div>
+<div class="line"><span class="lineno">   88</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Number of columns in A != Number of rows in B (&quot;</span></div>
+<div class="line"><span class="lineno">   89</span>                  &lt;&lt; A[0].size() &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; B.size() &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   90</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">   91</span>    }</div>
 <div class="line"><span class="lineno">   92</span> </div>
 <div class="line"><span class="lineno">   93</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; N_A; row++) {</div>
-<div class="line"><span class="lineno">   94</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> v(N_B);</div>
+<div class="line"><span class="lineno">   94</span>        std::vector&lt;T&gt; v(N_B);</div>
 <div class="line"><span class="lineno">   95</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col = 0; col &lt; N_B; col++) {</div>
 <div class="line"><span class="lineno">   96</span>            v[col] = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0);</div>
-<div class="line"><span class="lineno">   97</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; B.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); j++) {</div>
+<div class="line"><span class="lineno">   97</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; B.size(); j++) {</div>
 <div class="line"><span class="lineno">   98</span>                v[col] += A[row][j] * B[j][col];</div>
 <div class="line"><span class="lineno">   99</span>            }</div>
 <div class="line"><span class="lineno">  100</span>        }</div>
@@ -650,12 +656,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  103</span> </div>
 <div class="line"><span class="lineno">  104</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">  105</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d38/ordinary__least__squares__regressor_8cpp_ae2edd40354a1ca7aeaee3d1e3589e713_cgraph.svg" width="248" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a865e8d26a01962cc93aca66e71346f37" name="a865e8d26a01962cc93aca66e71346f37"></a>
@@ -667,43 +668,40 @@ Here is the call graph for this function:</div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; operator* </td>
+          <td class="memname">std::vector&lt; T &gt; operator* </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>B</em></span>&#160;)</td>
+          <td class="paramtype">std::vector&lt; T &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>B</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>multiplication of a matrix with a column vector </p><dl class="section return"><dt>Returns</dt><dd>resultant vector </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html#l00112">112</a> of file <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html">ordinary_least_squares_regressor.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  113</span>                                                {</div>
 <div class="line"><span class="lineno">  114</span>    <span class="comment">// Number of rows in A</span></div>
-<div class="line"><span class="lineno">  115</span>    <span class="keywordtype">size_t</span> N_A = A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">  115</span>    <span class="keywordtype">size_t</span> N_A = A.size();</div>
 <div class="line"><span class="lineno">  116</span> </div>
-<div class="line"><span class="lineno">  117</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(N_A);</div>
+<div class="line"><span class="lineno">  117</span>    std::vector&lt;T&gt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(N_A);</div>
 <div class="line"><span class="lineno">  118</span> </div>
-<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">if</span> (A[0].size() != B.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()) {</div>
-<div class="line"><span class="lineno">  120</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Number of columns in A != Number of rows in B (&quot;</span></div>
-<div class="line"><span class="lineno">  121</span>                  &lt;&lt; A[0].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; B.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">if</span> (A[0].size() != B.size()) {</div>
+<div class="line"><span class="lineno">  120</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Number of columns in A != Number of rows in B (&quot;</span></div>
+<div class="line"><span class="lineno">  121</span>                  &lt;&lt; A[0].size() &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; B.size() &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  122</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">  123</span>    }</div>
 <div class="line"><span class="lineno">  124</span> </div>
 <div class="line"><span class="lineno">  125</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; N_A; row++) {</div>
 <div class="line"><span class="lineno">  126</span>        <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>[row] = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0);</div>
-<div class="line"><span class="lineno">  127</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; B.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); j++) result[row] += A[row][j] * B[j];</div>
+<div class="line"><span class="lineno">  127</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; B.size(); j++) result[row] += A[row][j] * B[j];</div>
 <div class="line"><span class="lineno">  128</span>    }</div>
 <div class="line"><span class="lineno">  129</span> </div>
 <div class="line"><span class="lineno">  130</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">  131</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d38/ordinary__least__squares__regressor_8cpp_a865e8d26a01962cc93aca66e71346f37_cgraph.svg" width="248" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a42535e20e97d85aa61271e0894cc0359" name="a42535e20e97d85aa61271e0894cc0359"></a>
@@ -715,9 +713,9 @@ Here is the call graph for this function:</div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; float &gt; operator* </td>
+          <td class="memname">std::vector&lt; float &gt; operator* </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
+          <td class="paramtype">std::vector&lt; T &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -727,11 +725,13 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>post-multiplication of a vector by a scalar </p><dl class="section return"><dt>Returns</dt><dd>resultant vector </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html#l00156">156</a> of file <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html">ordinary_least_squares_regressor.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  156</span>                                                                      {</div>
 <div class="line"><span class="lineno">  157</span>    <span class="comment">// Number of rows in A</span></div>
-<div class="line"><span class="lineno">  158</span>    <span class="keywordtype">size_t</span> N_A = A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">  158</span>    <span class="keywordtype">size_t</span> N_A = A.size();</div>
 <div class="line"><span class="lineno">  159</span> </div>
-<div class="line"><span class="lineno">  160</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(N_A);</div>
+<div class="line"><span class="lineno">  160</span>    std::vector&lt;float&gt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(N_A);</div>
 <div class="line"><span class="lineno">  161</span> </div>
 <div class="line"><span class="lineno">  162</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; N_A; row++) {</div>
 <div class="line"><span class="lineno">  163</span>        <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>[row] = A[row] * <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(scalar);</div>
@@ -739,12 +739,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  165</span> </div>
 <div class="line"><span class="lineno">  166</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">  167</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d38/ordinary__least__squares__regressor_8cpp_a42535e20e97d85aa61271e0894cc0359_cgraph.svg" width="248" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a01e6c7bf2b09272578b9c5819ce0f36f" name="a01e6c7bf2b09272578b9c5819ce0f36f"></a>
@@ -756,26 +751,28 @@ Here is the call graph for this function:</div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; operator+ </td>
+          <td class="memname">std::vector&lt; T &gt; operator+ </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
+          <td class="paramtype">std::vector&lt; T &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>B</em></span>&#160;)</td>
+          <td class="paramtype">std::vector&lt; T &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>B</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>addition of two vectors of identical lengths </p><dl class="section return"><dt>Returns</dt><dd>resultant vector </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html#l00204">204</a> of file <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html">ordinary_least_squares_regressor.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  204</span>                                                                     {</div>
 <div class="line"><span class="lineno">  205</span>    <span class="comment">// Number of rows in A</span></div>
-<div class="line"><span class="lineno">  206</span>    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">  206</span>    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = A.size();</div>
 <div class="line"><span class="lineno">  207</span> </div>
-<div class="line"><span class="lineno">  208</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(N);</div>
+<div class="line"><span class="lineno">  208</span>    std::vector&lt;T&gt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(N);</div>
 <div class="line"><span class="lineno">  209</span> </div>
-<div class="line"><span class="lineno">  210</span>    <span class="keywordflow">if</span> (B.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() != N) {</div>
-<div class="line"><span class="lineno">  211</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Vector dimensions shouldbe identical!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  210</span>    <span class="keywordflow">if</span> (B.size() != N) {</div>
+<div class="line"><span class="lineno">  211</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Vector dimensions shouldbe identical!&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  212</span>        <span class="keywordflow">return</span> A;</div>
 <div class="line"><span class="lineno">  213</span>    }</div>
 <div class="line"><span class="lineno">  214</span> </div>
@@ -783,12 +780,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  216</span> </div>
 <div class="line"><span class="lineno">  217</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">  218</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d38/ordinary__least__squares__regressor_8cpp_a01e6c7bf2b09272578b9c5819ce0f36f_cgraph.svg" width="251" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4a6a560dbdd0177633783b72db37dc19" name="a4a6a560dbdd0177633783b72db37dc19"></a>
@@ -800,26 +792,28 @@ Here is the call graph for this function:</div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; operator- </td>
+          <td class="memname">std::vector&lt; T &gt; operator- </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
+          <td class="paramtype">std::vector&lt; T &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>B</em></span>&#160;)</td>
+          <td class="paramtype">std::vector&lt; T &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>B</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>subtraction of two vectors of identical lengths </p><dl class="section return"><dt>Returns</dt><dd>resultant vector </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html#l00183">183</a> of file <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html">ordinary_least_squares_regressor.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  183</span>                                                                     {</div>
 <div class="line"><span class="lineno">  184</span>    <span class="comment">// Number of rows in A</span></div>
-<div class="line"><span class="lineno">  185</span>    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">  185</span>    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = A.size();</div>
 <div class="line"><span class="lineno">  186</span> </div>
-<div class="line"><span class="lineno">  187</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(N);</div>
+<div class="line"><span class="lineno">  187</span>    std::vector&lt;T&gt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(N);</div>
 <div class="line"><span class="lineno">  188</span> </div>
-<div class="line"><span class="lineno">  189</span>    <span class="keywordflow">if</span> (B.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() != N) {</div>
-<div class="line"><span class="lineno">  190</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Vector dimensions shouldbe identical!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  189</span>    <span class="keywordflow">if</span> (B.size() != N) {</div>
+<div class="line"><span class="lineno">  190</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Vector dimensions shouldbe identical!&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  191</span>        <span class="keywordflow">return</span> A;</div>
 <div class="line"><span class="lineno">  192</span>    }</div>
 <div class="line"><span class="lineno">  193</span> </div>
@@ -827,12 +821,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  195</span> </div>
 <div class="line"><span class="lineno">  196</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">  197</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d38/ordinary__least__squares__regressor_8cpp_a4a6a560dbdd0177633783b72db37dc19_cgraph.svg" width="247" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7a2d742b9a3ae7b85292e1f86428bb4f" name="a7a2d742b9a3ae7b85292e1f86428bb4f"></a>
@@ -844,9 +833,9 @@ Here is the call graph for this function:</div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; float &gt; operator/ </td>
+          <td class="memname">std::vector&lt; float &gt; operator/ </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
+          <td class="paramtype">std::vector&lt; T &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -856,6 +845,8 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>division of a vector by a scalar </p><dl class="section return"><dt>Returns</dt><dd>resultant vector </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html#l00174">174</a> of file <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html">ordinary_least_squares_regressor.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  174</span>                                                                      {</div>
 <div class="line"><span class="lineno">  175</span>    <span class="keywordflow">return</span> (1.f / scalar) * A;</div>
 <div class="line"><span class="lineno">  176</span>}</div>
@@ -871,41 +862,35 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp; operator&lt;&lt; </td>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>&#160;)</td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>operator to print a matrix </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html#l00022">22</a> of file <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html">ordinary_least_squares_regressor.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   23</span>                                                           {</div>
 <div class="line"><span class="lineno">   24</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> width = 10;</div>
 <div class="line"><span class="lineno">   25</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> separator = <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line"><span class="lineno">   26</span> </div>
-<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; v.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); row++) {</div>
-<div class="line"><span class="lineno">   28</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col = 0; col &lt; v[row].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); col++) {</div>
-<div class="line"><span class="lineno">   29</span>            out &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::left</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(width) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setfill.html">std::setfill</a>(separator)</div>
+<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; v.size(); row++) {</div>
+<div class="line"><span class="lineno">   28</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col = 0; col &lt; v[row].size(); col++) {</div>
+<div class="line"><span class="lineno">   29</span>            out &lt;&lt; std::left &lt;&lt; std::setw(width) &lt;&lt; std::setfill(separator)</div>
 <div class="line"><span class="lineno">   30</span>                &lt;&lt; v[row][col];</div>
 <div class="line"><span class="lineno">   31</span>        }</div>
-<div class="line"><span class="lineno">   32</span>        out &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   32</span>        out &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   33</span>    }</div>
 <div class="line"><span class="lineno">   34</span> </div>
 <div class="line"><span class="lineno">   35</span>    <span class="keywordflow">return</span> out;</div>
 <div class="line"><span class="lineno">   36</span>}</div>
-<div class="ttc" id="aleft_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::left</a></div><div class="ttdeci">T left(T... args)</div></div>
-<div class="ttc" id="asetfill_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/setfill.html">std::setfill</a></div><div class="ttdeci">T setfill(T... args)</div></div>
-<div class="ttc" id="asetw_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a></div><div class="ttdeci">T setw(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d38/ordinary__least__squares__regressor_8cpp_a7075a0fccad9b2d79be0275bfe8948d4_cgraph.svg" width="222" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab1ad727903d7817c2758d25bcb52cbc8" name="ab1ad727903d7817c2758d25bcb52cbc8"></a>
@@ -917,35 +902,32 @@ Here is the call graph for this function:</div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp; operator&lt;&lt; </td>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>&#160;)</td>
+          <td class="paramtype">std::vector&lt; T &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>operator to print a vector </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html">ordinary_least_squares_regressor.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   42</span>                                                               {</div>
 <div class="line"><span class="lineno">   43</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> width = 15;</div>
 <div class="line"><span class="lineno">   44</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> separator = <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line"><span class="lineno">   45</span> </div>
-<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; v.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); row++) {</div>
-<div class="line"><span class="lineno">   47</span>        out &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::left</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(width) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setfill.html">std::setfill</a>(separator)</div>
+<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; v.size(); row++) {</div>
+<div class="line"><span class="lineno">   47</span>        out &lt;&lt; std::left &lt;&lt; std::setw(width) &lt;&lt; std::setfill(separator)</div>
 <div class="line"><span class="lineno">   48</span>            &lt;&lt; v[row];</div>
 <div class="line"><span class="lineno">   49</span>    }</div>
 <div class="line"><span class="lineno">   50</span> </div>
 <div class="line"><span class="lineno">   51</span>    <span class="keywordflow">return</span> out;</div>
 <div class="line"><span class="lineno">   52</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d38/ordinary__least__squares__regressor_8cpp_ab1ad727903d7817c2758d25bcb52cbc8_cgraph.svg" width="259" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ade6e463f37878fe2a219f927c65b5493" name="ade6e463f37878fe2a219f927c65b5493"></a>
@@ -957,14 +939,14 @@ Here is the call graph for this function:</div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; float &gt; predict_OLS_regressor </td>
+          <td class="memname">std::vector&lt; float &gt; predict_OLS_regressor </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>X</em></span>, </td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>X</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; float &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>beta</em></span>&#160;)</td>
+          <td class="paramtype">std::vector&lt; float &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>beta</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -979,12 +961,14 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>vector with regression values for each sample </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html#l00352">352</a> of file <a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp_source.html">ordinary_least_squares_regressor.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  354</span>  {</div>
-<div class="line"><span class="lineno">  355</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(X.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>());</div>
+<div class="line"><span class="lineno">  355</span>    std::vector&lt;float&gt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(X.size());</div>
 <div class="line"><span class="lineno">  356</span> </div>
-<div class="line"><span class="lineno">  357</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; X.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); rows++) {</div>
+<div class="line"><span class="lineno">  357</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; X.size(); rows++) {</div>
 <div class="line"><span class="lineno">  358</span>        <span class="comment">// -&gt; start with constant term</span></div>
-<div class="line"><span class="lineno">  359</span>        <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>[rows] = beta[X[0].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()];</div>
+<div class="line"><span class="lineno">  359</span>        <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>[rows] = beta[X[0].size()];</div>
 <div class="line"><span class="lineno">  360</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> cols = 0; cols &lt; X[0].size(); cols++) {</div>
 <div class="line"><span class="lineno">  361</span>            <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>[rows] += beta[cols] * X[rows][cols];</div>
 <div class="line"><span class="lineno">  362</span>        }</div>

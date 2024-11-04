@@ -1,9 +1,0 @@
-<map id="probability::windowed_median::WindowedMedian::insertToSorted" name="probability::windowed_median::WindowedMedian::insertToSorted">
-<area shape="rect" id="Node000001" title="Inserts a value to a sorted multi&#45;value BST." alt="" coords="5,40,187,95"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/multiset/begin.html#" title=" " alt="" coords="235,5,368,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,43,229,33,231,38,187,48"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/multiset/insert.html#" title=" " alt="" coords="235,55,368,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="187,65,219,65,219,70,187,70"/>
-<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/multiset/size.html#" title=" " alt="" coords="239,104,364,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="187,87,231,97,229,102,186,92"/>
-</map>

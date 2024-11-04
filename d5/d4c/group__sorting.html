@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: Sorting Algorithm</title>
+<title>TheAlgorithms/C++: Sorting Algorithm</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -144,7 +161,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gae66f6b31b5ad750f1fe042a706a4e3d4" id="r_gae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:gae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga135e4c638e3bcf548bd122b5f49a3e72" id="r_ga135e4c638e3bcf548bd122b5f49a3e72"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga135e4c638e3bcf548bd122b5f49a3e72"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga135e4c638e3bcf548bd122b5f49a3e72">displayElements</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;arr)</td></tr>
+<tr class="memitem:ga135e4c638e3bcf548bd122b5f49a3e72"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga135e4c638e3bcf548bd122b5f49a3e72">displayElements</a> (const std::vector&lt; T &gt; &amp;arr)</td></tr>
 <tr class="memdesc:ga135e4c638e3bcf548bd122b5f49a3e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function used for printing the elements. Prints elements of the array after they're sorted using wiggle sort algorithm.  <br /></td></tr>
 <tr class="separator:ga135e4c638e3bcf548bd122b5f49a3e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa8dca7b867074164d5f45b0f3851269d" id="r_gaa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
@@ -175,7 +192,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">static void displayElements </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span></td><td>)</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -193,33 +210,27 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../dd/db0/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plus-_plus_2sorting_2wiggle_sort_8cpp-example.html#a4">/Users/runner/work/C-Plus-Plus/C-Plus-Plus/sorting/wiggle_sort.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../dd/db0/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plus-_plus_2sorting_2wiggle_sort_8cpp-example.html#a1">/Users/runner/work/C-Plus-Plus/C-Plus-Plus/sorting/wiggle_sort.cpp</a>.</dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dcc/wiggle__sort_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../d1/dcc/wiggle__sort_8cpp_source.html">wiggle_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   86</span>                                                     {</div>
-<div class="line"><span class="lineno">   87</span>    uint32_t size = arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">   87</span>    uint32_t size = arr.size();</div>
 <div class="line"><span class="lineno">   88</span> </div>
-<div class="line"><span class="lineno">   89</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sorted elements are as follows: &quot;</span>;</div>
+<div class="line"><span class="lineno">   89</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Sorted elements are as follows: &quot;</span>;</div>
 <div class="line"><span class="lineno">   90</span> </div>
-<div class="line"><span class="lineno">   91</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;[&quot;</span>;</div>
+<div class="line"><span class="lineno">   91</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;[&quot;</span>;</div>
 <div class="line"><span class="lineno">   92</span> </div>
 <div class="line"><span class="lineno">   93</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; i++) {</div>
-<div class="line"><span class="lineno">   94</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; arr[i];</div>
+<div class="line"><span class="lineno">   94</span>        std::cout &lt;&lt; arr[i];</div>
 <div class="line"><span class="lineno">   95</span>        <span class="keywordflow">if</span> (i != size - 1) {</div>
-<div class="line"><span class="lineno">   96</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
+<div class="line"><span class="lineno">   96</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
 <div class="line"><span class="lineno">   97</span>        }</div>
 <div class="line"><span class="lineno">   98</span>    }</div>
 <div class="line"><span class="lineno">   99</span> </div>
-<div class="line"><span class="lineno">  100</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;]&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  100</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;]&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  101</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d4c/group__sorting_ga135e4c638e3bcf548bd122b5f49a3e72_cgraph.svg" width="292" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="gabd9a93f241c5c86f2ec0abf8b66b4145" name="gabd9a93f241c5c86f2ec0abf8b66b4145"></a>
@@ -247,6 +258,8 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d52/heap__sort_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../d2/d52/heap__sort_8cpp_source.html">heap_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   58</span>                                   {</div>
 <div class="line"><span class="lineno">   59</span>    <span class="keywordtype">int</span> largest = i;</div>
 <div class="line"><span class="lineno">   60</span>    <span class="keywordtype">int</span> l = 2 * i + 1;</div>
@@ -259,11 +272,10 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">   67</span>        largest = r;</div>
 <div class="line"><span class="lineno">   68</span> </div>
 <div class="line"><span class="lineno">   69</span>    <span class="keywordflow">if</span> (largest != i) {</div>
-<div class="line"><span class="lineno">   70</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(arr[i], arr[largest]);</div>
+<div class="line"><span class="lineno">   70</span>        std::swap(arr[i], arr[largest]);</div>
 <div class="line"><span class="lineno">   71</span>        heapify(arr, n, largest);</div>
 <div class="line"><span class="lineno">   72</span>    }</div>
 <div class="line"><span class="lineno">   73</span>}</div>
-<div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -295,20 +307,17 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d52/heap__sort_8cpp_source.html#l00084">84</a> of file <a class="el" href="../../d2/d52/heap__sort_8cpp_source.html">heap_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   84</span>                             {</div>
 <div class="line"><span class="lineno">   85</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = n - 1; i &gt;= 0; i--) heapify(arr, n, i);</div>
 <div class="line"><span class="lineno">   86</span> </div>
 <div class="line"><span class="lineno">   87</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = n - 1; i &gt;= 0; i--) {</div>
-<div class="line"><span class="lineno">   88</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(arr[0], arr[i]);</div>
+<div class="line"><span class="lineno">   88</span>        std::swap(arr[0], arr[i]);</div>
 <div class="line"><span class="lineno">   89</span>        heapify(arr, i, 0);</div>
 <div class="line"><span class="lineno">   90</span>    }</div>
 <div class="line"><span class="lineno">   91</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d4c/group__sorting_ga29d28b140174dbdde7c9f5157758435f_cgraph.svg" width="211" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="gae66f6b31b5ad750f1fe042a706a4e3d4" name="gae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -327,29 +336,25 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Main function</p>
 <p>Driver Code </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/df4/merge__sort_8cpp_source.html#l00090">90</a> of file <a class="el" href="../../d5/df4/merge__sort_8cpp_source.html">merge_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   90</span>           {</div>
 <div class="line"><span class="lineno">   91</span>    <span class="keywordtype">int</span> size;</div>
-<div class="line"><span class="lineno">   92</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter the number of elements : &quot;</span>;</div>
-<div class="line"><span class="lineno">   93</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; size;</div>
+<div class="line"><span class="lineno">   92</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter the number of elements : &quot;</span>;</div>
+<div class="line"><span class="lineno">   93</span>    std::cin &gt;&gt; size;</div>
 <div class="line"><span class="lineno">   94</span>    <span class="keywordtype">int</span> *arr = <span class="keyword">new</span> <span class="keywordtype">int</span>[size];</div>
-<div class="line"><span class="lineno">   95</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter the unsorted elements : &quot;</span>;</div>
+<div class="line"><span class="lineno">   95</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter the unsorted elements : &quot;</span>;</div>
 <div class="line"><span class="lineno">   96</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; ++i) {</div>
-<div class="line"><span class="lineno">   97</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; arr[i];</div>
+<div class="line"><span class="lineno">   97</span>        std::cin &gt;&gt; arr[i];</div>
 <div class="line"><span class="lineno">   98</span>    }</div>
 <div class="line"><span class="lineno">   99</span>    <a class="code hl_function" href="#gab6b14fea48d9841e29b9fc26be6e05d7">mergeSort</a>(arr, 0, size - 1);</div>
-<div class="line"><span class="lineno">  100</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sorted array : &quot;</span>;</div>
+<div class="line"><span class="lineno">  100</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Sorted array : &quot;</span>;</div>
 <div class="line"><span class="lineno">  101</span>    show(arr, size);</div>
 <div class="line"><span class="lineno">  102</span>    <span class="keyword">delete</span>[] arr;</div>
 <div class="line"><span class="lineno">  103</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  104</span>}</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="agroup__sorting_html_gab6b14fea48d9841e29b9fc26be6e05d7"><div class="ttname"><a href="#gab6b14fea48d9841e29b9fc26be6e05d7">mergeSort</a></div><div class="ttdeci">void mergeSort(int *arr, int l, int r)</div><div class="ttdef"><b>Definition</b> merge_sort.cpp:71</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d4c/group__sorting_gae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="295" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="agroup__sorting_html_gab6b14fea48d9841e29b9fc26be6e05d7"><div class="ttname"><a href="#gab6b14fea48d9841e29b9fc26be6e05d7">mergeSort</a></div><div class="ttdeci">void mergeSort(int *arr, int l, int r)</div><div class="ttdef"><b>Definition</b> <a href="../../d5/df4/merge__sort_8cpp_source.html#l00071">merge_sort.cpp:71</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ga460c61cd948203b4816bef2accb3fc73" name="ga460c61cd948203b4816bef2accb3fc73"></a>
@@ -396,6 +401,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/df4/merge__sort_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../d5/df4/merge__sort_8cpp_source.html">merge_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   33</span>                                          {</div>
 <div class="line"><span class="lineno">   34</span>    <span class="keywordtype">int</span> i, j, k;</div>
 <div class="line"><span class="lineno">   35</span>    <span class="keywordtype">int</span> n1 = m - l + 1;</div>
@@ -423,7 +430,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   57</span>    <span class="keyword">delete</span>[] L;</div>
 <div class="line"><span class="lineno">   58</span>    <span class="keyword">delete</span>[] R;</div>
 <div class="line"><span class="lineno">   59</span>}</div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a1b74d828b33760094906797042b89442"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">numerical_methods::simpson_method::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:117</div></div>
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a1b74d828b33760094906797042b89442"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">numerical_methods::simpson_method::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d18/composite__simpson__rule_8cpp_source.html#l00117">composite_simpson_rule.cpp:117</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -459,6 +466,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/df4/merge__sort_8cpp_source.html#l00071">71</a> of file <a class="el" href="../../d5/df4/merge__sort_8cpp_source.html">merge_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   71</span>                                       {</div>
 <div class="line"><span class="lineno">   72</span>    <span class="keywordflow">if</span> (l &lt; r) {</div>
 <div class="line"><span class="lineno">   73</span>        <span class="keywordtype">int</span> m = l + (r - l) / 2;</div>
@@ -467,13 +476,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   76</span>        <a class="code hl_function" href="#ga460c61cd948203b4816bef2accb3fc73">merge</a>(arr, l, m, r);</div>
 <div class="line"><span class="lineno">   77</span>    }</div>
 <div class="line"><span class="lineno">   78</span>}</div>
-<div class="ttc" id="agroup__sorting_html_ga460c61cd948203b4816bef2accb3fc73"><div class="ttname"><a href="#ga460c61cd948203b4816bef2accb3fc73">merge</a></div><div class="ttdeci">void merge(int *arr, int l, int m, int r)</div><div class="ttdef"><b>Definition</b> merge_sort.cpp:33</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d4c/group__sorting_gab6b14fea48d9841e29b9fc26be6e05d7_cgraph.svg" width="198" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="agroup__sorting_html_ga460c61cd948203b4816bef2accb3fc73"><div class="ttname"><a href="#ga460c61cd948203b4816bef2accb3fc73">merge</a></div><div class="ttdeci">void merge(int *arr, int l, int m, int r)</div><div class="ttdef"><b>Definition</b> <a href="../../d5/df4/merge__sort_8cpp_source.html#l00033">merge_sort.cpp:33</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ga0a9a57a1f1bbba3d4822531d002b7e07" name="ga0a9a57a1f1bbba3d4822531d002b7e07"></a>
@@ -495,9 +499,11 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Utility function used to print the array after sorting </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/df4/merge__sort_8cpp_source.html#l00084">84</a> of file <a class="el" href="../../d5/df4/merge__sort_8cpp_source.html">merge_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   84</span>                              {</div>
-<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; i++) <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; arr[i] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><span class="lineno">   86</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; i++) std::cout &lt;&lt; arr[i] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">   86</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   87</span>}</div>
 </div><!-- fragment -->
 </div>
@@ -525,15 +531,17 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Test function </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dcc/wiggle__sort_8cpp_source.html#l00107">107</a> of file <a class="el" href="../../d1/dcc/wiggle__sort_8cpp_source.html">wiggle_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  107</span>                   {</div>
-<div class="line"><span class="lineno">  108</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a>(<span class="keyword">nullptr</span>));  <span class="comment">// initialize random number generator</span></div>
+<div class="line"><span class="lineno">  108</span>    std::srand(std::time(<span class="keyword">nullptr</span>));  <span class="comment">// initialize random number generator</span></div>
 <div class="line"><span class="lineno">  109</span> </div>
-<div class="line"><span class="lineno">  110</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> data1(100);</div>
+<div class="line"><span class="lineno">  110</span>    std::vector&lt;float&gt; data1(100);</div>
 <div class="line"><span class="lineno">  111</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;d : data1) {  <span class="comment">// generate random numbers between -5.0 and 4.99</span></div>
-<div class="line"><span class="lineno">  112</span>        d = float(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 1000 - 500) / 100.f;</div>
+<div class="line"><span class="lineno">  112</span>        d = float(std::rand() % 1000 - 500) / 100.f;</div>
 <div class="line"><span class="lineno">  113</span>    }</div>
 <div class="line"><span class="lineno">  114</span> </div>
-<div class="line"><span class="lineno">  115</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> sorted = sorting::wiggle_sort::wiggleSort&lt;float&gt;(data1);</div>
+<div class="line"><span class="lineno">  115</span>    std::vector&lt;float&gt; sorted = sorting::wiggle_sort::wiggleSort&lt;float&gt;(data1);</div>
 <div class="line"><span class="lineno">  116</span> </div>
 <div class="line"><span class="lineno">  117</span>    <a class="code hl_function" href="#ga135e4c638e3bcf548bd122b5f49a3e72">displayElements</a>(sorted);</div>
 <div class="line"><span class="lineno">  118</span> </div>
@@ -542,19 +550,10 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  121</span>               data1[j + 1] &gt;= data1[j + 2]);  <span class="comment">// check the validation condition</span></div>
 <div class="line"><span class="lineno">  122</span>    }</div>
 <div class="line"><span class="lineno">  123</span> </div>
-<div class="line"><span class="lineno">  124</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1 passed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  124</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 1 passed\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  125</span>}</div>
-<div class="ttc" id="agroup__sorting_html_ga135e4c638e3bcf548bd122b5f49a3e72"><div class="ttname"><a href="#ga135e4c638e3bcf548bd122b5f49a3e72">displayElements</a></div><div class="ttdeci">static void displayElements(const std::vector&lt; T &gt; &amp;arr)</div><div class="ttdoc">Utility function used for printing the elements. Prints elements of the array after they're sorted us...</div><div class="ttdef"><b>Definition</b> wiggle_sort.cpp:86</div></div>
-<div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
-<div class="ttc" id="asrand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a></div><div class="ttdeci">T srand(T... args)</div></div>
-<div class="ttc" id="atime_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a></div><div class="ttdeci">T time(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d4c/group__sorting_gaa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="383" height="236"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="agroup__sorting_html_ga135e4c638e3bcf548bd122b5f49a3e72"><div class="ttname"><a href="#ga135e4c638e3bcf548bd122b5f49a3e72">displayElements</a></div><div class="ttdeci">static void displayElements(const std::vector&lt; T &gt; &amp;arr)</div><div class="ttdoc">Utility function used for printing the elements. Prints elements of the array after they're sorted us...</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dcc/wiggle__sort_8cpp_source.html#l00086">wiggle_sort.cpp:86</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

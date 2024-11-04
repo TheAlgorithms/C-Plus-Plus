@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: numerical_methods/qr_decompose.h File Reference</title>
+<title>TheAlgorithms/C++: numerical_methods/qr_decompose.h File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -142,27 +159,29 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:adfbdf47277c8cfee229b05b72f1f7834" id="r_adfbdf47277c8cfee229b05b72f1f7834"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:adfbdf47277c8cfee229b05b72f1f7834"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d3b/namespaceqr__algorithm.html#adfbdf47277c8cfee229b05b72f1f7834">qr_algorithm::operator&lt;&lt;</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp;out, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; T &gt; &gt; const &amp;v)</td></tr>
+<tr class="memitem:adfbdf47277c8cfee229b05b72f1f7834"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d3b/namespaceqr__algorithm.html#adfbdf47277c8cfee229b05b72f1f7834">qr_algorithm::operator&lt;&lt;</a> (std::ostream &amp;out, std::valarray&lt; std::valarray&lt; T &gt; &gt; const &amp;v)</td></tr>
 <tr class="separator:adfbdf47277c8cfee229b05b72f1f7834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a257425cb2365359da51c6fe6741834d8" id="r_a257425cb2365359da51c6fe6741834d8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a257425cb2365359da51c6fe6741834d8"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d3b/namespaceqr__algorithm.html#a257425cb2365359da51c6fe6741834d8">qr_algorithm::operator&lt;&lt;</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp;out, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; T &gt; const &amp;v)</td></tr>
+<tr class="memitem:a257425cb2365359da51c6fe6741834d8"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d3b/namespaceqr__algorithm.html#a257425cb2365359da51c6fe6741834d8">qr_algorithm::operator&lt;&lt;</a> (std::ostream &amp;out, std::valarray&lt; T &gt; const &amp;v)</td></tr>
 <tr class="separator:a257425cb2365359da51c6fe6741834d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ea313a1a1b5f9d0e3e332c29c6446ec" id="r_a8ea313a1a1b5f9d0e3e332c29c6446ec"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a8ea313a1a1b5f9d0e3e332c29c6446ec"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d3b/namespaceqr__algorithm.html#a8ea313a1a1b5f9d0e3e332c29c6446ec">qr_algorithm::vector_dot</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; T &gt; &amp;a, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="memitem:a8ea313a1a1b5f9d0e3e332c29c6446ec"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d3b/namespaceqr__algorithm.html#a8ea313a1a1b5f9d0e3e332c29c6446ec">qr_algorithm::vector_dot</a> (const std::valarray&lt; T &gt; &amp;a, const std::valarray&lt; T &gt; &amp;b)</td></tr>
 <tr class="separator:a8ea313a1a1b5f9d0e3e332c29c6446ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad16da2183db22378435042f26af43d5f" id="r_ad16da2183db22378435042f26af43d5f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad16da2183db22378435042f26af43d5f"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d3b/namespaceqr__algorithm.html#ad16da2183db22378435042f26af43d5f">qr_algorithm::vector_mag</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; T &gt; &amp;a)</td></tr>
+<tr class="memitem:ad16da2183db22378435042f26af43d5f"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d3b/namespaceqr__algorithm.html#ad16da2183db22378435042f26af43d5f">qr_algorithm::vector_mag</a> (const std::valarray&lt; T &gt; &amp;a)</td></tr>
 <tr class="separator:ad16da2183db22378435042f26af43d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d3c7dce1f142141f509d09f6c0e25dc" id="r_a6d3c7dce1f142141f509d09f6c0e25dc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a6d3c7dce1f142141f509d09f6c0e25dc"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d3b/namespaceqr__algorithm.html#a6d3c7dce1f142141f509d09f6c0e25dc">qr_algorithm::vector_proj</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; T &gt; &amp;a, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="memitem:a6d3c7dce1f142141f509d09f6c0e25dc"><td class="memTemplItemLeft" align="right" valign="top">std::valarray&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d3b/namespaceqr__algorithm.html#a6d3c7dce1f142141f509d09f6c0e25dc">qr_algorithm::vector_proj</a> (const std::valarray&lt; T &gt; &amp;a, const std::valarray&lt; T &gt; &amp;b)</td></tr>
 <tr class="separator:a6d3c7dce1f142141f509d09f6c0e25dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73ce637634fc49e1d10d190eb388ebf1" id="r_a73ce637634fc49e1d10d190eb388ebf1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a73ce637634fc49e1d10d190eb388ebf1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d3b/namespaceqr__algorithm.html#a73ce637634fc49e1d10d190eb388ebf1">qr_algorithm::qr_decompose</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; T &gt; &gt; &amp;A, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; T &gt; &gt; *Q, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; T &gt; &gt; *R)</td></tr>
+<tr class="memitem:a73ce637634fc49e1d10d190eb388ebf1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d3b/namespaceqr__algorithm.html#a73ce637634fc49e1d10d190eb388ebf1">qr_algorithm::qr_decompose</a> (const std::valarray&lt; std::valarray&lt; T &gt; &gt; &amp;A, std::valarray&lt; std::valarray&lt; T &gt; &gt; *Q, std::valarray&lt; std::valarray&lt; T &gt; &gt; *R)</td></tr>
 <tr class="separator:a73ce637634fc49e1d10d190eb388ebf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Library functions to compute <a href="https://en.wikipedia.org/wiki/QR_decomposition" target="_blank">QR decomposition</a> of a given matrix. </p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/kvedala" target="_blank">Krishna Vedala</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d4/d68/qr__decompose_8h_source.html">qr_decompose.h</a>.</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

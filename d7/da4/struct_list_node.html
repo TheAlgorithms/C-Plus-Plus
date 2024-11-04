@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: ListNode Struct Reference</title>
+<title>TheAlgorithms/C++: ListNode Struct Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -126,13 +143,11 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ListNode</b> ()=default</td></tr>
 <tr class="memdesc:a3cfee2eb667c332dc32595208164ef0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor <br /></td></tr>
 <tr class="separator:a3cfee2eb667c332dc32595208164ef0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaad9b553e2f936726f5b35ff2734125d" id="r_aaad9b553e2f936726f5b35ff2734125d"><td class="memItemLeft" align="right" valign="top"><a id="aaad9b553e2f936726f5b35ff2734125d" name="aaad9b553e2f936726f5b35ff2734125d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ListNode</b> (int x)</td></tr>
-<tr class="memdesc:aaad9b553e2f936726f5b35ff2734125d"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor with value for node-&gt;val provided <br /></td></tr>
+<tr class="memitem:aaad9b553e2f936726f5b35ff2734125d" id="r_aaad9b553e2f936726f5b35ff2734125d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaad9b553e2f936726f5b35ff2734125d">ListNode</a> (int x)</td></tr>
+<tr class="memdesc:aaad9b553e2f936726f5b35ff2734125d"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor with value for node-&gt;val provided  <br /></td></tr>
 <tr class="separator:aaad9b553e2f936726f5b35ff2734125d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc97c5b9d2e7cc82d0718245688f6ff9" id="r_afc97c5b9d2e7cc82d0718245688f6ff9"><td class="memItemLeft" align="right" valign="top"><a id="afc97c5b9d2e7cc82d0718245688f6ff9" name="afc97c5b9d2e7cc82d0718245688f6ff9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ListNode</b> (int x, <a class="el" href="../../d7/da4/struct_list_node.html">ListNode</a> *<a class="el" href="#ad78b392c2ddc25c3243d0c2f30692fb1">next</a>)</td></tr>
-<tr class="memdesc:afc97c5b9d2e7cc82d0718245688f6ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor with values provided for node-&gt;val and node-&gt;next <br /></td></tr>
+<tr class="memitem:afc97c5b9d2e7cc82d0718245688f6ff9" id="r_afc97c5b9d2e7cc82d0718245688f6ff9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc97c5b9d2e7cc82d0718245688f6ff9">ListNode</a> (int x, <a class="el" href="../../d7/da4/struct_list_node.html">ListNode</a> *<a class="el" href="#ad78b392c2ddc25c3243d0c2f30692fb1">next</a>)</td></tr>
+<tr class="memdesc:afc97c5b9d2e7cc82d0718245688f6ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor with values provided for node-&gt;val and node-&gt;next  <br /></td></tr>
 <tr class="separator:afc97c5b9d2e7cc82d0718245688f6ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -147,7 +162,72 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>for IO operations </p>
 <p>for assert Definition for singly-linked list. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfa/median__search2_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../d8/dfa/median__search2_8cpp_source.html">median_search2.cpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aaad9b553e2f936726f5b35ff2734125d" name="aaad9b553e2f936726f5b35ff2734125d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaad9b553e2f936726f5b35ff2734125d">&#9670;&#160;</a></span>ListNode() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ListNode::ListNode </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>constructor with value for node-&gt;val provided </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfa/median__search2_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../d8/dfa/median__search2_8cpp_source.html">median_search2.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afc97c5b9d2e7cc82d0718245688f6ff9" name="afc97c5b9d2e7cc82d0718245688f6ff9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc97c5b9d2e7cc82d0718245688f6ff9">&#9670;&#160;</a></span>ListNode() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ListNode::ListNode </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/da4/struct_list_node.html">ListNode</a> *</td>          <td class="paramname"><span class="paramname"><em>next</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>constructor with values provided for node-&gt;val and node-&gt;next </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfa/median__search2_8cpp_source.html#l00037">37</a> of file <a class="el" href="../../d8/dfa/median__search2_8cpp_source.html">median_search2.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="ad78b392c2ddc25c3243d0c2f30692fb1" name="ad78b392c2ddc25c3243d0c2f30692fb1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad78b392c2ddc25c3243d0c2f30692fb1">&#9670;&#160;</a></span>next</h2>
 
@@ -161,7 +241,9 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>pointer to the next node </p>
-<div class="fragment"><div class="line"><span class="lineno">   33</span>{<span class="keyword">nullptr</span>};  <span class="comment">///&lt; pointer to the next node</span></div>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfa/median__search2_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../d8/dfa/median__search2_8cpp_source.html">median_search2.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>{<span class="keyword">nullptr</span>};  </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -178,12 +260,14 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>the value stored in the node </p>
-<div class="fragment"><div class="line"><span class="lineno">   32</span>{0};               <span class="comment">///&lt; the value stored in the node</span></div>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfa/median__search2_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../d8/dfa/median__search2_8cpp_source.html">median_search2.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>{0};               </div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>search/<a class="el" href="../../d8/dfa/median__search2_8cpp.html">median_search2.cpp</a></li>
+<li>search/<a class="el" href="../../d8/dfa/median__search2_8cpp_source.html">median_search2.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

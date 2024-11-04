@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="126.25,-97 14.25,-97 14.25,-66.5 126.25,-66.5 126.25,-97"/>
 <text text-anchor="start" x="22.25" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; geometry</text>
 <text text-anchor="middle" x="70.25" y="-72.25" font-family="Helvetica,sans-Serif" font-size="10.00">::jarvis::Point &gt;</text>

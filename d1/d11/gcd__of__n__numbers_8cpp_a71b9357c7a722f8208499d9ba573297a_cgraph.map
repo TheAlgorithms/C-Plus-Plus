@@ -1,6 +1,0 @@
-<map id="math::gcd_of_n_numbers::check_all_zeros" name="math::gcd_of_n_numbers::check_all_zeros">
-<area shape="rect" id="Node000001" title="Function to check if all elements in the array are 0." alt="" coords="5,29,174,70"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="57,29,55,19,60,11,72,5,90,3,108,5,120,11,117,16,107,10,89,8,73,10,64,14,60,20,62,28"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/all_any_none_of.html#" title=" " alt="" coords="222,37,300,62"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,47,206,47,206,52,174,52"/>
-</map>

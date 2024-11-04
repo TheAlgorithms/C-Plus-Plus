@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: machine_learning::aystar_search::EightPuzzle&lt; N &gt; Class Template Reference</title>
+<title>TheAlgorithms/C++: machine_learning::aystar_search::EightPuzzle&lt; N &gt; Class Template Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -119,7 +136,7 @@ $(function(){initNavTree('dd/d9c/classmachine__learning_1_1aystar__search_1_1_ei
 <div class="dynheader">
 Collaboration diagram for machine_learning::aystar_search::EightPuzzle&lt; N &gt;:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/dff/classmachine__learning_1_1aystar__search_1_1_eight_puzzle__coll__graph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/dff/classmachine__learning_1_1aystar__search_1_1_eight_puzzle__coll__graph.svg" width="646" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -127,7 +144,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa5c0486c7f29f323a2aced2ab33af420" id="r_aa5c0486c7f29f323a2aced2ab33af420"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5c0486c7f29f323a2aced2ab33af420">get</a> (size_t i, size_t j) const</td></tr>
 <tr class="memdesc:aa5c0486c7f29f323a2aced2ab33af420"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the value from i units from right and j units from left side of the board  <br /></td></tr>
 <tr class="separator:aa5c0486c7f29f323a2aced2ab33af420"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade14b0e1a88543b91426e2008e4d0f99" id="r_ade14b0e1a88543b91426e2008e4d0f99"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; uint32_t, N &gt;, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade14b0e1a88543b91426e2008e4d0f99">get_state</a> ()</td></tr>
+<tr class="memitem:ade14b0e1a88543b91426e2008e4d0f99" id="r_ade14b0e1a88543b91426e2008e4d0f99"><td class="memItemLeft" align="right" valign="top">std::array&lt; std::array&lt; uint32_t, N &gt;, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade14b0e1a88543b91426e2008e4d0f99">get_state</a> ()</td></tr>
 <tr class="memdesc:ade14b0e1a88543b91426e2008e4d0f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current state of the board.  <br /></td></tr>
 <tr class="separator:ade14b0e1a88543b91426e2008e4d0f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae145ac4a0d2ec58945b58fad3c04f00f" id="r_ae145ac4a0d2ec58945b58fad3c04f00f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae145ac4a0d2ec58945b58fad3c04f00f">get_size</a> () const</td></tr>
@@ -136,7 +153,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3dc09f4742a0e1167ed202f7bf94721b" id="r_a3dc09f4742a0e1167ed202f7bf94721b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3dc09f4742a0e1167ed202f7bf94721b">EightPuzzle</a> ()</td></tr>
 <tr class="memdesc:a3dc09f4742a0e1167ed202f7bf94721b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html" title="A class defining EightPuzzle/15-Puzzle game.">EightPuzzle</a>.  <br /></td></tr>
 <tr class="separator:a3dc09f4742a0e1167ed202f7bf94721b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7fd890a7ccf756e4b3313087b76a8c2" id="r_ab7fd890a7ccf756e4b3313087b76a8c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7fd890a7ccf756e4b3313087b76a8c2">EightPuzzle</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; uint32_t, N &gt;, N &gt; &amp;init)</td></tr>
+<tr class="memitem:ab7fd890a7ccf756e4b3313087b76a8c2" id="r_ab7fd890a7ccf756e4b3313087b76a8c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7fd890a7ccf756e4b3313087b76a8c2">EightPuzzle</a> (const std::array&lt; std::array&lt; uint32_t, N &gt;, N &gt; &amp;init)</td></tr>
 <tr class="memdesc:ab7fd890a7ccf756e4b3313087b76a8c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameterized Constructor for <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html" title="A class defining EightPuzzle/15-Puzzle game.">EightPuzzle</a>.  <br /></td></tr>
 <tr class="separator:ab7fd890a7ccf756e4b3313087b76a8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad45fde095ac00effe1fe00b1d85ff9c7" id="r_ad45fde095ac00effe1fe00b1d85ff9c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad45fde095ac00effe1fe00b1d85ff9c7">EightPuzzle</a> (const <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html">EightPuzzle</a>&lt; N &gt; &amp;A)</td></tr>
@@ -155,7 +172,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1802cf6197a255055cb734d626abc101" id="r_a1802cf6197a255055cb734d626abc101"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html">EightPuzzle</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1802cf6197a255055cb734d626abc101">operator=</a> (<a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html">EightPuzzle</a> &amp;&amp;A) noexcept</td></tr>
 <tr class="memdesc:a1802cf6197a255055cb734d626abc101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment operator.  <br /></td></tr>
 <tr class="separator:a1802cf6197a255055cb734d626abc101"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26a976171392d257ca0f814ed73e0658" id="r_a26a976171392d257ca0f814ed73e0658"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html">EightPuzzle</a>&lt; N &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26a976171392d257ca0f814ed73e0658">generate_possible_moves</a> ()</td></tr>
+<tr class="memitem:a26a976171392d257ca0f814ed73e0658" id="r_a26a976171392d257ca0f814ed73e0658"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html">EightPuzzle</a>&lt; N &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26a976171392d257ca0f814ed73e0658">generate_possible_moves</a> ()</td></tr>
 <tr class="memdesc:a26a976171392d257ca0f814ed73e0658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find all possible states after processing all possible moves, given the current state of the puzzle.  <br /></td></tr>
 <tr class="separator:a26a976171392d257ca0f814ed73e0658"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa17e0227321b109ed91e156ac1332915" id="r_aa17e0227321b109ed91e156ac1332915"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa17e0227321b109ed91e156ac1332915">operator==</a> (const <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html">EightPuzzle</a>&lt; N &gt; &amp;check) const</td></tr>
@@ -170,7 +187,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a94f794bf44f424b1b0ca6ef9f4f6ebd3" id="r_a94f794bf44f424b1b0ca6ef9f4f6ebd3"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; uint32_t, uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94f794bf44f424b1b0ca6ef9f4f6ebd3">find_zero</a> ()</td></tr>
+<tr class="memitem:a94f794bf44f424b1b0ca6ef9f4f6ebd3" id="r_a94f794bf44f424b1b0ca6ef9f4f6ebd3"><td class="memItemLeft" align="right" valign="top">std::pair&lt; uint32_t, uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94f794bf44f424b1b0ca6ef9f4f6ebd3">find_zero</a> ()</td></tr>
 <tr class="memdesc:a94f794bf44f424b1b0ca6ef9f4f6ebd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper array to evaluate the next state from current state;.  <br /></td></tr>
 <tr class="separator:a94f794bf44f424b1b0ca6ef9f4f6ebd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48d054230468b79037964f474d842b6e" id="r_a48d054230468b79037964f474d842b6e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48d054230468b79037964f474d842b6e">in_range</a> (const uint32_t value) const</td></tr>
@@ -179,16 +196,15 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a35d8f14ca17218f236c09ff9ad864f9c" id="r_a35d8f14ca17218f236c09ff9ad864f9c"><td class="memItemLeft" align="right" valign="top"><a id="a35d8f14ca17218f236c09ff9ad864f9c" name="a35d8f14ca17218f236c09ff9ad864f9c"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; uint32_t, N &gt;, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>board</b></td></tr>
+<tr class="memitem:a35d8f14ca17218f236c09ff9ad864f9c" id="r_a35d8f14ca17218f236c09ff9ad864f9c"><td class="memItemLeft" align="right" valign="top">std::array&lt; std::array&lt; uint32_t, N &gt;, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35d8f14ca17218f236c09ff9ad864f9c">board</a></td></tr>
 <tr class="separator:a35d8f14ca17218f236c09ff9ad864f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa73857052e69b86347859d9148933f71" id="r_aa73857052e69b86347859d9148933f71"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; int8_t, int8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa73857052e69b86347859d9148933f71">moves</a></td></tr>
+<tr class="memitem:aa73857052e69b86347859d9148933f71" id="r_aa73857052e69b86347859d9148933f71"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; int8_t, int8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa73857052e69b86347859d9148933f71">moves</a></td></tr>
 <tr class="memdesc:aa73857052e69b86347859d9148933f71"><td class="mdescLeft">&#160;</td><td class="mdescRight">N x N array to store the current state of the Puzzle.  <br /></td></tr>
 <tr class="separator:aa73857052e69b86347859d9148933f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a9517e162e2988f7db052296bd550a742" id="r_a9517e162e2988f7db052296bd550a742"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9517e162e2988f7db052296bd550a742">operator&lt;&lt;</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp;op, const <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html">EightPuzzle</a>&lt; N &gt; &amp;SomeState)</td></tr>
+<tr class="memitem:a9517e162e2988f7db052296bd550a742" id="r_a9517e162e2988f7db052296bd550a742"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9517e162e2988f7db052296bd550a742">operator&lt;&lt;</a> (std::ostream &amp;op, const <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html">EightPuzzle</a>&lt; N &gt; &amp;SomeState)</td></tr>
 <tr class="memdesc:a9517e162e2988f7db052296bd550a742"><td class="mdescLeft">&#160;</td><td class="mdescRight">friend operator to display EightPuzzle&lt;&gt;  <br /></td></tr>
 <tr class="separator:a9517e162e2988f7db052296bd550a742"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -201,6 +217,8 @@ class machine_learning::aystar_search::EightPuzzle&lt; N &gt;</div><p>A class de
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00060">60</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3dc09f4742a0e1167ed202f7bf94721b" name="a3dc09f4742a0e1167ed202f7bf94721b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3dc09f4742a0e1167ed202f7bf94721b">&#9670;&#160;</a></span>EightPuzzle() <span class="overload">[1/4]</span></h2>
@@ -228,6 +246,8 @@ template&lt;size_t N = 3&gt; </div>
 </div><div class="memdoc">
 
 <p>Default constructor for <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html" title="A class defining EightPuzzle/15-Puzzle game.">EightPuzzle</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00121">121</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  121</span>                  {</div>
 <div class="line"><span class="lineno">  122</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++i) {</div>
 <div class="line"><span class="lineno">  123</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++j) {</div>
@@ -235,7 +255,7 @@ template&lt;size_t N = 3&gt; </div>
 <div class="line"><span class="lineno">  125</span>            }</div>
 <div class="line"><span class="lineno">  126</span>        }</div>
 <div class="line"><span class="lineno">  127</span>    }</div>
-<div class="ttc" id="asparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:48</div></div>
+<div class="ttc" id="asparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dab/sparse__table_8cpp_source.html#l00048">sparse_table.cpp:48</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -253,7 +273,7 @@ template&lt;size_t N = 3&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html">machine_learning::aystar_search::EightPuzzle</a>&lt; N &gt;::EightPuzzle </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; uint32_t, N &gt;, N &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>init</em></span></td><td>)</td>
+          <td class="paramtype">const std::array&lt; std::array&lt; uint32_t, N &gt;, N &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>init</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -271,6 +291,8 @@ template&lt;size_t N = 3&gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00132">132</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  133</span>        : board(init) {}</div>
 </div><!-- fragment -->
 </div>
@@ -307,6 +329,8 @@ template&lt;size_t N = 3&gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00139">139</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  139</span>: board(A.board) {}</div>
 </div><!-- fragment -->
 </div>
@@ -343,8 +367,9 @@ template&lt;size_t N = 3&gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  146</span>        : board(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.board)) {}</div>
-<div class="ttc" id="amove_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a></div><div class="ttdeci">T move(T... args)</div></div>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00145">145</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  146</span>        : board(std::move(A.board)) {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -361,7 +386,7 @@ template&lt;size_t N = 3&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; uint32_t, uint32_t &gt; <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html">machine_learning::aystar_search::EightPuzzle</a>&lt; N &gt;::find_zero </td>
+          <td class="memname">std::pair&lt; uint32_t, uint32_t &gt; <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html">machine_learning::aystar_search::EightPuzzle</a>&lt; N &gt;::find_zero </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -376,6 +401,8 @@ template&lt;size_t N = 3&gt; </div>
 
 <p>A helper array to evaluate the next state from current state;. </p>
 <p>Finds an empty space in puzzle (in this case; a zero) </p><dl class="section return"><dt>Returns</dt><dd>a pair indicating integer distances from top and right respectively, else returns -1, -1 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00075">75</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   75</span>                                            {</div>
 <div class="line"><span class="lineno">   76</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++i) {</div>
 <div class="line"><span class="lineno">   77</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++j) {</div>
@@ -401,7 +428,7 @@ template&lt;size_t N = 3&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html">EightPuzzle</a>&lt; N &gt; &gt; <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html">machine_learning::aystar_search::EightPuzzle</a>&lt; N &gt;::generate_possible_moves </td>
+          <td class="memname">std::vector&lt; <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html">EightPuzzle</a>&lt; N &gt; &gt; <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html">machine_learning::aystar_search::EightPuzzle</a>&lt; N &gt;::generate_possible_moves </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -417,39 +444,32 @@ template&lt;size_t N = 3&gt; </div>
 <p>Find all possible states after processing all possible moves, given the current state of the puzzle. </p>
 <dl class="section return"><dt>Returns</dt><dd>list of vector containing all possible next moves </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>the implementation is compulsory to create A* search </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00176">176</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  176</span>                                                        {</div>
 <div class="line"><span class="lineno">  177</span>        <span class="keyword">auto</span> zero_pos = <a class="code hl_function" href="#a94f794bf44f424b1b0ca6ef9f4f6ebd3">find_zero</a>();</div>
 <div class="line"><span class="lineno">  178</span>        <span class="comment">// vector which will contain all possible state from current state</span></div>
-<div class="line"><span class="lineno">  179</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;EightPuzzle&lt;N&gt;</a>&gt; NewStates;</div>
+<div class="line"><span class="lineno">  179</span>        std::vector&lt;EightPuzzle&lt;N&gt;&gt; NewStates;</div>
 <div class="line"><span class="lineno">  180</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;move : <a class="code hl_variable" href="#aa73857052e69b86347859d9148933f71">moves</a>) {</div>
-<div class="line"><span class="lineno">  181</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="#a48d054230468b79037964f474d842b6e">in_range</a>(zero_pos.first + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">move</a>.first) &amp;&amp;</div>
-<div class="line"><span class="lineno">  182</span>                <a class="code hl_function" href="#a48d054230468b79037964f474d842b6e">in_range</a>(zero_pos.second + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">move</a>.second)) {</div>
+<div class="line"><span class="lineno">  181</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="#a48d054230468b79037964f474d842b6e">in_range</a>(zero_pos.first + move.first) &amp;&amp;</div>
+<div class="line"><span class="lineno">  182</span>                <a class="code hl_function" href="#a48d054230468b79037964f474d842b6e">in_range</a>(zero_pos.second + move.second)) {</div>
 <div class="line"><span class="lineno">  183</span>                <span class="comment">// swap with the possible moves</span></div>
-<div class="line"><span class="lineno">  184</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::array&lt;uint32_t, N&gt;</a>, <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>&gt; new_config = board;</div>
-<div class="line"><span class="lineno">  185</span>                <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(new_config[zero_pos.first][zero_pos.second],</div>
-<div class="line"><span class="lineno">  186</span>                          new_config[zero_pos.first + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">move</a>.first]</div>
-<div class="line"><span class="lineno">  187</span>                                    [zero_pos.second + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">move</a>.second]);</div>
+<div class="line"><span class="lineno">  184</span>                std::array&lt;std::array&lt;uint32_t, N&gt;, <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>&gt; new_config = board;</div>
+<div class="line"><span class="lineno">  185</span>                std::swap(new_config[zero_pos.first][zero_pos.second],</div>
+<div class="line"><span class="lineno">  186</span>                          new_config[zero_pos.first + move.first]</div>
+<div class="line"><span class="lineno">  187</span>                                    [zero_pos.second + move.second]);</div>
 <div class="line"><span class="lineno">  188</span>                <a class="code hl_function" href="#a3dc09f4742a0e1167ed202f7bf94721b">EightPuzzle&lt;N&gt;</a> new_state(new_config);</div>
 <div class="line"><span class="lineno">  189</span>                <span class="comment">// Store new state and calculate heuristic value, and depth</span></div>
-<div class="line"><span class="lineno">  190</span>                NewStates.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/emplace_back.html">emplace_back</a>(new_state);</div>
+<div class="line"><span class="lineno">  190</span>                NewStates.emplace_back(new_state);</div>
 <div class="line"><span class="lineno">  191</span>            }</div>
 <div class="line"><span class="lineno">  192</span>        }</div>
 <div class="line"><span class="lineno">  193</span>        <span class="keywordflow">return</span> NewStates;</div>
 <div class="line"><span class="lineno">  194</span>    }</div>
-<div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
-<div class="ttc" id="aclassmachine__learning_1_1aystar__search_1_1_eight_puzzle_html_a3dc09f4742a0e1167ed202f7bf94721b"><div class="ttname"><a href="#a3dc09f4742a0e1167ed202f7bf94721b">machine_learning::aystar_search::EightPuzzle::EightPuzzle</a></div><div class="ttdeci">EightPuzzle()</div><div class="ttdoc">Default constructor for EightPuzzle.</div><div class="ttdef"><b>Definition</b> a_star_search.cpp:121</div></div>
-<div class="ttc" id="aclassmachine__learning_1_1aystar__search_1_1_eight_puzzle_html_a48d054230468b79037964f474d842b6e"><div class="ttname"><a href="#a48d054230468b79037964f474d842b6e">machine_learning::aystar_search::EightPuzzle::in_range</a></div><div class="ttdeci">bool in_range(const uint32_t value) const</div><div class="ttdoc">check whether the index value is bounded within the puzzle area</div><div class="ttdef"><b>Definition</b> a_star_search.cpp:90</div></div>
-<div class="ttc" id="aclassmachine__learning_1_1aystar__search_1_1_eight_puzzle_html_a94f794bf44f424b1b0ca6ef9f4f6ebd3"><div class="ttname"><a href="#a94f794bf44f424b1b0ca6ef9f4f6ebd3">machine_learning::aystar_search::EightPuzzle::find_zero</a></div><div class="ttdeci">std::pair&lt; uint32_t, uint32_t &gt; find_zero()</div><div class="ttdoc">A helper array to evaluate the next state from current state;.</div><div class="ttdef"><b>Definition</b> a_star_search.cpp:75</div></div>
-<div class="ttc" id="aclassmachine__learning_1_1aystar__search_1_1_eight_puzzle_html_aa73857052e69b86347859d9148933f71"><div class="ttname"><a href="#aa73857052e69b86347859d9148933f71">machine_learning::aystar_search::EightPuzzle::moves</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; int8_t, int8_t &gt; &gt; moves</div><div class="ttdoc">N x N array to store the current state of the Puzzle.</div><div class="ttdef"><b>Definition</b> a_star_search.cpp:64</div></div>
-<div class="ttc" id="aemplace_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/emplace_back.html">std::vector::emplace_back</a></div><div class="ttdeci">T emplace_back(T... args)</div></div>
-<div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle_a26a976171392d257ca0f814ed73e0658_cgraph.svg" width="468" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassmachine__learning_1_1aystar__search_1_1_eight_puzzle_html_a3dc09f4742a0e1167ed202f7bf94721b"><div class="ttname"><a href="#a3dc09f4742a0e1167ed202f7bf94721b">machine_learning::aystar_search::EightPuzzle::EightPuzzle</a></div><div class="ttdeci">EightPuzzle()</div><div class="ttdoc">Default constructor for EightPuzzle.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dec/a__star__search_8cpp_source.html#l00121">a_star_search.cpp:121</a></div></div>
+<div class="ttc" id="aclassmachine__learning_1_1aystar__search_1_1_eight_puzzle_html_a48d054230468b79037964f474d842b6e"><div class="ttname"><a href="#a48d054230468b79037964f474d842b6e">machine_learning::aystar_search::EightPuzzle::in_range</a></div><div class="ttdeci">bool in_range(const uint32_t value) const</div><div class="ttdoc">check whether the index value is bounded within the puzzle area</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dec/a__star__search_8cpp_source.html#l00090">a_star_search.cpp:90</a></div></div>
+<div class="ttc" id="aclassmachine__learning_1_1aystar__search_1_1_eight_puzzle_html_a94f794bf44f424b1b0ca6ef9f4f6ebd3"><div class="ttname"><a href="#a94f794bf44f424b1b0ca6ef9f4f6ebd3">machine_learning::aystar_search::EightPuzzle::find_zero</a></div><div class="ttdeci">std::pair&lt; uint32_t, uint32_t &gt; find_zero()</div><div class="ttdoc">A helper array to evaluate the next state from current state;.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dec/a__star__search_8cpp_source.html#l00075">a_star_search.cpp:75</a></div></div>
+<div class="ttc" id="aclassmachine__learning_1_1aystar__search_1_1_eight_puzzle_html_aa73857052e69b86347859d9148933f71"><div class="ttname"><a href="#aa73857052e69b86347859d9148933f71">machine_learning::aystar_search::EightPuzzle::moves</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; int8_t, int8_t &gt; &gt; moves</div><div class="ttdoc">N x N array to store the current state of the Puzzle.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dec/a__star__search_8cpp_source.html#l00064">a_star_search.cpp:64</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa5c0486c7f29f323a2aced2ab33af420" name="aa5c0486c7f29f323a2aced2ab33af420"></a>
@@ -492,18 +512,15 @@ template&lt;size_t N = 3&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>non-negative integer denoting the value at ith row and jth column </dd>
 <dd>
 -1 if invalid i or j position </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00102">102</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  102</span>                                           {</div>
 <div class="line"><span class="lineno">  103</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="#a48d054230468b79037964f474d842b6e">in_range</a>(i) &amp;&amp; <a class="code hl_function" href="#a48d054230468b79037964f474d842b6e">in_range</a>(j)) {</div>
 <div class="line"><span class="lineno">  104</span>            <span class="keywordflow">return</span> board[i][j];</div>
 <div class="line"><span class="lineno">  105</span>        }</div>
 <div class="line"><span class="lineno">  106</span>        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><span class="lineno">  107</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle_aa5c0486c7f29f323a2aced2ab33af420_cgraph.svg" width="432" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae145ac4a0d2ec58945b58fad3c04f00f" name="ae145ac4a0d2ec58945b58fad3c04f00f"></a>
@@ -533,6 +550,8 @@ template&lt;size_t N = 3&gt; </div>
 
 <p>returns the size of the <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html" title="A class defining EightPuzzle/15-Puzzle game.">EightPuzzle</a> (number of row / column) </p>
 <dl class="section return"><dt>Returns</dt><dd>N, the size of the puzzle. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00117">117</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  117</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; }</div>
 </div><!-- fragment -->
 </div>
@@ -549,7 +568,7 @@ template&lt;size_t N = 3&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; uint32_t, N &gt;, N &gt; <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html">machine_learning::aystar_search::EightPuzzle</a>&lt; N &gt;::get_state </td>
+          <td class="memname">std::array&lt; std::array&lt; uint32_t, N &gt;, N &gt; <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html">machine_learning::aystar_search::EightPuzzle</a>&lt; N &gt;::get_state </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -563,6 +582,8 @@ template&lt;size_t N = 3&gt; </div>
 </div><div class="memdoc">
 
 <p>Returns the current state of the board. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00111">111</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  111</span>{ <span class="keywordflow">return</span> board; }</div>
 </div><!-- fragment -->
 </div>
@@ -600,6 +621,8 @@ template&lt;size_t N = 3&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if index is within the board, else <code>false</code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00090">90</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   90</span>{ <span class="keywordflow">return</span> value &lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; }</div>
 </div><!-- fragment -->
 </div>
@@ -631,17 +654,18 @@ template&lt;size_t N = 3&gt; </div>
 
 <p>check whether one board is lexicographically smaller </p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if this-&gt;state is lexicographically smaller than <code>check.state</code>, else <code>false</code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00218">218</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  218</span>                                                      {</div>
 <div class="line"><span class="lineno">  219</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++i) {</div>
 <div class="line"><span class="lineno">  220</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++j) {</div>
-<div class="line"><span class="lineno">  221</span>                <span class="keywordflow">if</span> (board[i][j] != <a class="code hl_function" href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">check</a>.board[i][j]) {</div>
-<div class="line"><span class="lineno">  222</span>                    <span class="keywordflow">return</span> board[i][j] &lt; <a class="code hl_function" href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">check</a>.board[i][j];</div>
+<div class="line"><span class="lineno">  221</span>                <span class="keywordflow">if</span> (board[i][j] != check.board[i][j]) {</div>
+<div class="line"><span class="lineno">  222</span>                    <span class="keywordflow">return</span> board[i][j] &lt; check.board[i][j];</div>
 <div class="line"><span class="lineno">  223</span>                }</div>
 <div class="line"><span class="lineno">  224</span>            }</div>
 <div class="line"><span class="lineno">  225</span>        }</div>
 <div class="line"><span class="lineno">  226</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  227</span>    }</div>
-<div class="ttc" id="aword__break_8cpp_html_a272b0f5cdb4e41fd6dee4538b808c06a"><div class="ttname"><a href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">dynamic_programming::word_break::check</a></div><div class="ttdeci">bool check(const std::string &amp;s, const std::unordered_set&lt; std::string &gt; &amp;strSet, int pos, std::vector&lt; int &gt; *dp)</div><div class="ttdoc">Function that checks if the string passed in param can be segmented from position 'pos',...</div><div class="ttdef"><b>Definition</b> word_break.cpp:80</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -672,11 +696,13 @@ template&lt;size_t N = 3&gt; </div>
 
 <p>check whether one board is lexicographically smaller or equal </p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if this-&gt;state is lexicographically smaller than <code>check.state</code> or same, else <code>false</code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00233">233</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  233</span>                                                       {</div>
 <div class="line"><span class="lineno">  234</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++i) {</div>
 <div class="line"><span class="lineno">  235</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++j) {</div>
-<div class="line"><span class="lineno">  236</span>                <span class="keywordflow">if</span> (board[i][j] != <a class="code hl_function" href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">check</a>.board[i][j]) {</div>
-<div class="line"><span class="lineno">  237</span>                    <span class="keywordflow">return</span> board[i][j] &lt; <a class="code hl_function" href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">check</a>.board[i][j];</div>
+<div class="line"><span class="lineno">  236</span>                <span class="keywordflow">if</span> (board[i][j] != check.board[i][j]) {</div>
+<div class="line"><span class="lineno">  237</span>                    <span class="keywordflow">return</span> board[i][j] &lt; check.board[i][j];</div>
 <div class="line"><span class="lineno">  238</span>                }</div>
 <div class="line"><span class="lineno">  239</span>            }</div>
 <div class="line"><span class="lineno">  240</span>        }</div>
@@ -717,6 +743,8 @@ template&lt;size_t N = 3&gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00156">156</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  156</span>                                                 {</div>
 <div class="line"><span class="lineno">  157</span>        board = A.board;</div>
 <div class="line"><span class="lineno">  158</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
@@ -756,16 +784,13 @@ template&lt;size_t N = 3&gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00165">165</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  165</span>                                                     {</div>
-<div class="line"><span class="lineno">  166</span>        board = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.board);</div>
+<div class="line"><span class="lineno">  166</span>        board = std::move(A.board);</div>
 <div class="line"><span class="lineno">  167</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><span class="lineno">  168</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle_a1802cf6197a255055cb734d626abc101_cgraph.svg" width="347" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa17e0227321b109ed91e156ac1332915" name="aa17e0227321b109ed91e156ac1332915"></a>
@@ -795,13 +820,15 @@ template&lt;size_t N = 3&gt; </div>
 
 <p>check whether two boards are equal </p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if check.state is equal to <code>this-&gt;state</code>, else <code>false</code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00200">200</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  200</span>                                                       {</div>
-<div class="line"><span class="lineno">  201</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">check</a>.get_size() != N) {</div>
+<div class="line"><span class="lineno">  201</span>        <span class="keywordflow">if</span> (check.get_size() != N) {</div>
 <div class="line"><span class="lineno">  202</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  203</span>        }</div>
 <div class="line"><span class="lineno">  204</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++i) {</div>
 <div class="line"><span class="lineno">  205</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++j) {</div>
-<div class="line"><span class="lineno">  206</span>                <span class="keywordflow">if</span> (board[i][j] != <a class="code hl_function" href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">check</a>.board[i][j]) {</div>
+<div class="line"><span class="lineno">  206</span>                <span class="keywordflow">if</span> (board[i][j] != check.board[i][j]) {</div>
 <div class="line"><span class="lineno">  207</span>                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  208</span>                }</div>
 <div class="line"><span class="lineno">  209</span>            }</div>
@@ -824,9 +851,9 @@ template&lt;size_t N = 3&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp; operator&lt;&lt; </td>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>op</em></span>, </td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>op</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -850,6 +877,8 @@ template&lt;size_t N = 3&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ostream operator op </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00250">250</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  251</span>                                                                     {</div>
 <div class="line"><span class="lineno">  252</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++i) {</div>
 <div class="line"><span class="lineno">  253</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++j) {</div>
@@ -863,6 +892,32 @@ template&lt;size_t N = 3&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a35d8f14ca17218f236c09ff9ad864f9c" name="a35d8f14ca17218f236c09ff9ad864f9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35d8f14ca17218f236c09ff9ad864f9c">&#9670;&#160;</a></span>board</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t N = 3&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;std::array&lt;uint32_t, N&gt;, N&gt; <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html">machine_learning::aystar_search::EightPuzzle</a>&lt; N &gt;::board</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
+
+</div>
+</div>
 <a id="aa73857052e69b86347859d9148933f71" name="aa73857052e69b86347859d9148933f71"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa73857052e69b86347859d9148933f71">&#9670;&#160;</a></span>moves</h2>
 
@@ -875,7 +930,7 @@ template&lt;size_t N = 3&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt;int8_t, int8_t&gt; &gt; <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html">machine_learning::aystar_search::EightPuzzle</a>&lt; N &gt;::moves</td>
+          <td class="memname">std::vector&lt;std::pair&lt;int8_t, int8_t&gt; &gt; <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html">machine_learning::aystar_search::EightPuzzle</a>&lt; N &gt;::moves</td>
         </tr>
       </table>
   </td>
@@ -892,17 +947,19 @@ template&lt;size_t N = 3&gt; </div>
 <div class="line">         0}}</div>
 </div><!-- fragment -->
 <p>N x N array to store the current state of the Puzzle. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00064">64</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   64</span>                                               {</div>
 <div class="line"><span class="lineno">   65</span>        {0, 1},</div>
 <div class="line"><span class="lineno">   66</span>        {1, 0},</div>
 <div class="line"><span class="lineno">   67</span>        {0, -1},</div>
 <div class="line"><span class="lineno">   68</span>        {-1,</div>
-<div class="line"><span class="lineno">   69</span>         0}};  <span class="comment">/// A helper array to evaluate the next state from current state;</span></div>
+<div class="line"><span class="lineno">   69</span>         0}};  </div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>machine_learning/<b>a_star_search.cpp</b></li>
+<li>machine_learning/<a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

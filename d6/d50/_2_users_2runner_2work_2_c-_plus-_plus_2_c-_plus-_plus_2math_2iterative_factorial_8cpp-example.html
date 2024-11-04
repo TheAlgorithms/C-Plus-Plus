@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: /Users/runner/work/C-Plus-Plus/C-Plus-Plus/math/iterative_factorial.cpp</title>
+<title>TheAlgorithms/C++: /Users/runner/work/C-Plus-Plus/C-Plus-Plus/math/iterative_factorial.cpp</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -110,55 +127,17 @@ $(function(){initNavTree('d6/d50/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plu
 <p>5! = 5 * 4 * 3 * 2 * 1</p>
 <p>Recursive implementation of factorial pseudocode:</p>
 <p>function factorial(n): if n == 1: return 1 else: return factorial(n-1)</p>
-<div class="fragment"><div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * @file</span></div>
-<div class="line"><span class="comment"> * @brief Iterative implementation of</span></div>
-<div class="line"><span class="comment"> * [Factorial](https://en.wikipedia.org/wiki/Factorial)</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> * @author [Renjian-buchai](https://github.com/Renjian-buchai)</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> * @details Calculates factorial iteratively.</span></div>
-<div class="line"><span class="comment"> * \f[n! = n\times(n-1)\times(n-2)\times(n-3)\times\ldots\times3\times2\times1</span></div>
-<div class="line"><span class="comment"> *       = n\times(n-1)!\f]</span></div>
-<div class="line"><span class="comment"> * for example:</span></div>
-<div class="line"><span class="comment"> * \f$4! = 4\times3! = 4\times3\times2\times1 = 24\f$</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> * @example</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> * 5! = 5 * 4 * 3 * 2 * 1</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> * Recursive implementation of factorial pseudocode:</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> * function factorial(n):</span></div>
-<div class="line"><span class="comment"> *     if n == 1:</span></div>
-<div class="line"><span class="comment"> *         return 1</span></div>
-<div class="line"><span class="comment"> *     else:</span></div>
-<div class="line"><span class="comment"> *         return factorial(n-1)</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> */</span></div>
+<div class="fragment"><div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;cassert&gt;</span>    </div>
+<div class="line"><span class="preprocessor">#include &lt;cstdint&gt;</span>    </div>
+<div class="line"><span class="preprocessor">#include &lt;exception&gt;</span>  </div>
+<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span>   </div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;cassert&gt;</span>    <span class="comment">/// for assert</span></div>
-<div class="line"><span class="preprocessor">#include &lt;cstdint&gt;</span>    <span class="comment">/// for integral types</span></div>
-<div class="line"><span class="preprocessor">#include &lt;exception&gt;</span>  <span class="comment">/// for std::invalid_argument</span></div>
-<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span>   <span class="comment">/// for std::cout</span></div>
-<div class="line"><span class="comment"></span> </div>
-<div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * @namespace</span></div>
-<div class="line"><span class="comment"> * @brief Mathematical algorithms</span></div>
-<div class="line"><span class="comment"> */</span></div>
 <div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="../../dd/d47/namespacemath.html">math</a> {</div>
-<div class="line"><span class="comment"></span> </div>
-<div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * @brief Calculates the factorial iteratively.</span></div>
-<div class="line"><span class="comment"> * @param n Nth factorial.</span></div>
-<div class="line"><span class="comment"> * @return Factorial.</span></div>
-<div class="line"><span class="comment"> * @note 0! = 1.</span></div>
-<div class="line"><span class="comment"> * @warning Maximum=20 because there are no 128-bit integers in C++. 21!</span></div>
-<div class="line"><span class="comment"> * returns 1.419e+19, which is not 21! but (21! % UINT64_MAX).</span></div>
-<div class="line"><span class="comment"> */</span></div>
+<div class="line"> </div>
 <div class="line">uint64_t <a id="a0" name="a0"></a><a class="code hl_function" href="../../dd/d47/namespacemath.html#a2565c745aac2f9561cc6fd9e56d9b77a">iterativeFactorial</a>(uint8_t n) {</div>
 <div class="line">    <span class="keywordflow">if</span> (n &gt; 20) {</div>
-<div class="line">        <span class="keywordflow">throw</span> <a id="_a1" name="_a1"></a><a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a>(<span class="stringliteral">&quot;Maximum n value is 20&quot;</span>);</div>
+<div class="line">        <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Maximum n value is 20&quot;</span>);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// 1 because it is the identity number of multiplication.</span></div>
@@ -173,72 +152,62 @@ $(function(){initNavTree('d6/d50/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plu
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">}  <span class="comment">// namespace math</span></div>
-<div class="line"><span class="comment"></span> </div>
-<div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * @brief Self-test implementations to test iterativeFactorial function.</span></div>
-<div class="line"><span class="comment"> * @note There is 1 special case: 0! = 1.</span></div>
-<div class="line"><span class="comment"> */</span></div>
-<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> <a id="a2" name="a2"></a><a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>() {</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> <a id="a1" name="a1"></a><a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>() {</div>
 <div class="line">    <span class="comment">// Special case test</span></div>
-<div class="line">    <a id="_a3" name="_a3"></a><a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Exception case test \n&quot;</span></div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Exception case test \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;Input: 0 \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;Expected output: 1 \n\n&quot;</span>;</div>
 <div class="line">    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a2565c745aac2f9561cc6fd9e56d9b77a">math::iterativeFactorial</a>(0) == 1);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Base case</span></div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Base case test \n&quot;</span></div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Base case test \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;Input: 1 \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;Expected output: 1 \n\n&quot;</span>;</div>
 <div class="line">    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a2565c745aac2f9561cc6fd9e56d9b77a">math::iterativeFactorial</a>(1) == 1);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Small case</span></div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Small number case test \n&quot;</span></div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Small number case test \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;Input: 5 \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;Expected output: 120 \n\n&quot;</span>;</div>
 <div class="line">    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a2565c745aac2f9561cc6fd9e56d9b77a">math::iterativeFactorial</a>(5) == 120);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Medium case</span></div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Medium number case test \n&quot;</span></div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Medium number case test \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;Input: 10 \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;Expected output: 3628800 \n\n&quot;</span>;</div>
 <div class="line">    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a2565c745aac2f9561cc6fd9e56d9b77a">math::iterativeFactorial</a>(10) == 3628800);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Maximum case</span></div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Maximum case test \n&quot;</span></div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Maximum case test \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;Input: 20 \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;Expected output: 2432902008176640000\n\n&quot;</span>;</div>
 <div class="line">    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a2565c745aac2f9561cc6fd9e56d9b77a">math::iterativeFactorial</a>(20) == 2432902008176640000);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Exception test</span></div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Exception test \n&quot;</span></div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Exception test \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;Input: 21 \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;Expected output: Exception thrown \n&quot;</span>;</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">bool</span> wasExceptionThrown = <span class="keyword">false</span>;</div>
 <div class="line">    <span class="keywordflow">try</span> {</div>
 <div class="line">        <a class="code hl_function" href="../../dd/d47/namespacemath.html#a2565c745aac2f9561cc6fd9e56d9b77a">math::iterativeFactorial</a>(21);</div>
-<div class="line">    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a>&amp;) {</div>
+<div class="line">    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::invalid_argument&amp;) {</div>
 <div class="line">        wasExceptionThrown = <span class="keyword">true</span>;</div>
 <div class="line">    }</div>
 <div class="line">    assert(wasExceptionThrown);</div>
 <div class="line"> </div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have passed successfully.\n&quot;</span>;</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;All tests have passed successfully.\n&quot;</span>;</div>
 <div class="line">}</div>
-<div class="line"><span class="comment"></span> </div>
-<div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * @brief Main function</span></div>
-<div class="line"><span class="comment"> * @returns 0 on exit</span></div>
-<div class="line"><span class="comment"> */</span></div>
-<div class="line"><span class="keywordtype">int</span> <a id="a4" name="a4"></a><a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> <a id="a2" name="a2"></a><a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
 <div class="line">    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// Run self-test implementation</span></div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="agenerate__parentheses_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> generate_parentheses.cpp:82</div></div>
-<div class="ttc" id="agenerate__parentheses_8cpp_html_gae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="../../dd/d1e/generate__parentheses_8cpp.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Main function.</div><div class="ttdef"><b>Definition</b> generate_parentheses.cpp:110</div></div>
-<div class="ttc" id="ainvalid_argument_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a></div></div>
+<div class="ttc" id="agenerate__parentheses_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d1e/generate__parentheses_8cpp_source.html#l00082">generate_parentheses.cpp:82</a></div></div>
+<div class="ttc" id="agenerate__parentheses_8cpp_html_gae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="../../dd/d1e/generate__parentheses_8cpp.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Main function.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d1e/generate__parentheses_8cpp_source.html#l00110">generate_parentheses.cpp:110</a></div></div>
 <div class="ttc" id="anamespacemath_html"><div class="ttname"><a href="../../dd/d47/namespacemath.html">math</a></div><div class="ttdoc">for assert</div></div>
-<div class="ttc" id="anamespacemath_html_a2565c745aac2f9561cc6fd9e56d9b77a"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a2565c745aac2f9561cc6fd9e56d9b77a">math::iterativeFactorial</a></div><div class="ttdeci">uint64_t iterativeFactorial(uint8_t n)</div><div class="ttdoc">Calculates the factorial iteratively.</div><div class="ttdef"><b>Definition</b> iterative_factorial.cpp:47</div></div>
+<div class="ttc" id="anamespacemath_html_a2565c745aac2f9561cc6fd9e56d9b77a"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a2565c745aac2f9561cc6fd9e56d9b77a">math::iterativeFactorial</a></div><div class="ttdeci">uint64_t iterativeFactorial(uint8_t n)</div><div class="ttdoc">Calculates the factorial iteratively.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d9f/iterative__factorial_8cpp_source.html#l00047">iterative_factorial.cpp:47</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

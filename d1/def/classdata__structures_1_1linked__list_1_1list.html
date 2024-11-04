@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: data_structures::linked_list::list Class Reference</title>
+<title>TheAlgorithms/C++: data_structures::linked_list::list Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -132,7 +149,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a009b19ac8cca40f2e4daa2e5989fa4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1313837c0e9ec67fd9fbd17987e2d615" id="r_a1313837c0e9ec67fd9fbd17987e2d615"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1313837c0e9ec67fd9fbd17987e2d615">display</a> ()</td></tr>
 <tr class="separator:a1313837c0e9ec67fd9fbd17987e2d615"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3423f7518671351340932db3c24959a" id="r_ad3423f7518671351340932db3c24959a"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="../../de/d9d/classdata__structures_1_1linked__list_1_1link.html">link</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3423f7518671351340932db3c24959a">search</a> (int find_elem)</td></tr>
+<tr class="memitem:ad3423f7518671351340932db3c24959a" id="r_ad3423f7518671351340932db3c24959a"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../de/d9d/classdata__structures_1_1linked__list_1_1link.html">link</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3423f7518671351340932db3c24959a">search</a> (int find_elem)</td></tr>
 <tr class="separator:ad3423f7518671351340932db3c24959a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0981944884c6dc19361ff67451261c9" id="r_af0981944884c6dc19361ff67451261c9"><td class="memItemLeft" align="right" valign="top"><a id="af0981944884c6dc19361ff67451261c9" name="af0981944884c6dc19361ff67451261c9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>reverse</b> ()</td></tr>
@@ -175,19 +192,19 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:aa3801cea564a3b3bb7b03abfffdcf1e1" id="r_aa3801cea564a3b3bb7b03abfffdcf1e1"><td class="memItemLeft" align="right" valign="top"><a id="aa3801cea564a3b3bb7b03abfffdcf1e1" name="aa3801cea564a3b3bb7b03abfffdcf1e1"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="../../de/d9d/classdata__structures_1_1linked__list_1_1link.html">link</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>first</b></td></tr>
-<tr class="memdesc:aa3801cea564a3b3bb7b03abfffdcf1e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">link before the actual first element <br /></td></tr>
+<tr class="memitem:aa3801cea564a3b3bb7b03abfffdcf1e1" id="r_aa3801cea564a3b3bb7b03abfffdcf1e1"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../de/d9d/classdata__structures_1_1linked__list_1_1link.html">link</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3801cea564a3b3bb7b03abfffdcf1e1">first</a></td></tr>
+<tr class="memdesc:aa3801cea564a3b3bb7b03abfffdcf1e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">link before the actual first element  <br /></td></tr>
 <tr class="separator:aa3801cea564a3b3bb7b03abfffdcf1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af39bcc08641ce0c813023f364a9a9015" id="r_af39bcc08641ce0c813023f364a9a9015"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="../../de/d9d/classdata__structures_1_1linked__list_1_1link.html">link</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af39bcc08641ce0c813023f364a9a9015">last</a></td></tr>
+<tr class="memitem:af39bcc08641ce0c813023f364a9a9015" id="r_af39bcc08641ce0c813023f364a9a9015"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../de/d9d/classdata__structures_1_1linked__list_1_1link.html">link</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af39bcc08641ce0c813023f364a9a9015">last</a></td></tr>
 <tr class="memdesc:af39bcc08641ce0c813023f364a9a9015"><td class="mdescLeft">&#160;</td><td class="mdescRight">last link on the list  <br /></td></tr>
 <tr class="separator:af39bcc08641ce0c813023f364a9a9015"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7e7823ae52c4ebf3b85a1bec096be5d" id="r_ad7e7823ae52c4ebf3b85a1bec096be5d"><td class="memItemLeft" align="right" valign="top"><a id="ad7e7823ae52c4ebf3b85a1bec096be5d" name="ad7e7823ae52c4ebf3b85a1bec096be5d"></a>
-<a class="el" href="../../d4/d0e/classdata__structures_1_1linked__list_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>head</b> = nullptr</td></tr>
+<tr class="memitem:ad7e7823ae52c4ebf3b85a1bec096be5d" id="r_ad7e7823ae52c4ebf3b85a1bec096be5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d0e/classdata__structures_1_1linked__list_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7e7823ae52c4ebf3b85a1bec096be5d">head</a> = nullptr</td></tr>
 <tr class="separator:ad7e7823ae52c4ebf3b85a1bec096be5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A list class containing a sequence of links </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html">reverse_a_linked_list.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a50e209b55b83622254177050945e7826" name="a50e209b55b83622254177050945e7826"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a50e209b55b83622254177050945e7826">&#9670;&#160;</a></span>list() <span class="overload">[1/2]</span></h2>
@@ -212,21 +229,17 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>List constructor. Initializes the first and last link. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/dc3/linked__list_8cpp_source.html#l00089">89</a> of file <a class="el" href="../../da/dc3/linked__list_8cpp_source.html">linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   89</span>           {</div>
 <div class="line"><span class="lineno">   90</span>        <span class="comment">// Initialize the first link</span></div>
-<div class="line"><span class="lineno">   91</span>        <a class="code hl_variable" href="#aa3801cea564a3b3bb7b03abfffdcf1e1">first</a> = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html">std::make_shared&lt;link&gt;</a>();</div>
+<div class="line"><span class="lineno">   91</span>        <a class="code hl_variable" href="#aa3801cea564a3b3bb7b03abfffdcf1e1">first</a> = std::make_shared&lt;link&gt;();</div>
 <div class="line"><span class="lineno">   92</span>        <span class="comment">// Initialize the last link with the first link</span></div>
 <div class="line"><span class="lineno">   93</span>        <a class="code hl_variable" href="#af39bcc08641ce0c813023f364a9a9015">last</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">   94</span>    }</div>
-<div class="ttc" id="aclassdata__structures_1_1linked__list_1_1list_html_aa3801cea564a3b3bb7b03abfffdcf1e1"><div class="ttname"><a href="#aa3801cea564a3b3bb7b03abfffdcf1e1">data_structures::linked_list::list::first</a></div><div class="ttdeci">std::shared_ptr&lt; link &gt; first</div><div class="ttdoc">link before the actual first element</div><div class="ttdef"><b>Definition</b> linked_list.cpp:83</div></div>
-<div class="ttc" id="aclassdata__structures_1_1linked__list_1_1list_html_af39bcc08641ce0c813023f364a9a9015"><div class="ttname"><a href="#af39bcc08641ce0c813023f364a9a9015">data_structures::linked_list::list::last</a></div><div class="ttdeci">std::shared_ptr&lt; link &gt; last</div><div class="ttdoc">last link on the list</div><div class="ttdef"><b>Definition</b> linked_list.cpp:84</div></div>
-<div class="ttc" id="amake_shared_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html">std::make_shared</a></div><div class="ttdeci">T make_shared(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/def/classdata__structures_1_1linked__list_1_1list_a50e209b55b83622254177050945e7826_cgraph.svg" width="338" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassdata__structures_1_1linked__list_1_1list_html_aa3801cea564a3b3bb7b03abfffdcf1e1"><div class="ttname"><a href="#aa3801cea564a3b3bb7b03abfffdcf1e1">data_structures::linked_list::list::first</a></div><div class="ttdeci">std::shared_ptr&lt; link &gt; first</div><div class="ttdoc">link before the actual first element</div><div class="ttdef"><b>Definition</b> <a href="../../da/dc3/linked__list_8cpp_source.html#l00083">linked_list.cpp:83</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1linked__list_1_1list_html_af39bcc08641ce0c813023f364a9a9015"><div class="ttname"><a href="#af39bcc08641ce0c813023f364a9a9015">data_structures::linked_list::list::last</a></div><div class="ttdeci">std::shared_ptr&lt; link &gt; last</div><div class="ttdoc">last link on the list</div><div class="ttdef"><b>Definition</b> <a href="../../da/dc3/linked__list_8cpp_source.html#l00084">linked_list.cpp:84</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a72eaabb03a048506432f8d167db12524" name="a72eaabb03a048506432f8d167db12524"></a>
@@ -243,8 +256,10 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00196">196</a> of file <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html">reverse_a_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  196</span>{ <a class="code hl_function" href="#ac614ed8f1953f5486fab1cd6d7aa0500">delete_all_nodes</a>(); }</div>
-<div class="ttc" id="aclassdata__structures_1_1linked__list_1_1list_html_ac614ed8f1953f5486fab1cd6d7aa0500"><div class="ttname"><a href="#ac614ed8f1953f5486fab1cd6d7aa0500">data_structures::linked_list::list::delete_all_nodes</a></div><div class="ttdeci">void delete_all_nodes()</div><div class="ttdoc">calls delete operator on every node in the represented list</div><div class="ttdef"><b>Definition</b> reverse_a_linked_list.cpp:188</div></div>
+<div class="ttc" id="aclassdata__structures_1_1linked__list_1_1list_html_ac614ed8f1953f5486fab1cd6d7aa0500"><div class="ttname"><a href="#ac614ed8f1953f5486fab1cd6d7aa0500">data_structures::linked_list::list::delete_all_nodes</a></div><div class="ttdeci">void delete_all_nodes()</div><div class="ttdoc">calls delete operator on every node in the represented list</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00188">reverse_a_linked_list.cpp:188</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -264,6 +279,8 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>copy constructor creating a deep copy of every node of the input </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00206">206</a> of file <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html">reverse_a_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  206</span>{ copy_all_nodes_from_list(other); }</div>
 </div><!-- fragment -->
 </div>
@@ -291,12 +308,14 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00198">198</a> of file <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html">reverse_a_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  198</span>                                                     {</div>
 <div class="line"><span class="lineno">  199</span>    assert(<a class="code hl_function" href="#a454ab4918f579869dfed4bb420a3f897">isEmpty</a>());</div>
 <div class="line"><span class="lineno">  200</span>    head = <a class="code hl_function" href="../../d6/d05/reverse__a__linked__list_8cpp.html#a7f80d9712cc7d77399dcacb4c2917511">copy_all_nodes</a>(other.head);</div>
 <div class="line"><span class="lineno">  201</span>}</div>
-<div class="ttc" id="aclassdata__structures_1_1linked__list_1_1list_html_a454ab4918f579869dfed4bb420a3f897"><div class="ttname"><a href="#a454ab4918f579869dfed4bb420a3f897">data_structures::linked_list::list::isEmpty</a></div><div class="ttdeci">bool isEmpty()</div><div class="ttdef"><b>Definition</b> linked_list.cpp:111</div></div>
-<div class="ttc" id="areverse__a__linked__list_8cpp_html_a7f80d9712cc7d77399dcacb4c2917511"><div class="ttname"><a href="../../d6/d05/reverse__a__linked__list_8cpp.html#a7f80d9712cc7d77399dcacb4c2917511">data_structures::linked_list::copy_all_nodes</a></div><div class="ttdeci">Node * copy_all_nodes(const Node *const node)</div><div class="ttdoc">creates a deep copy of a list starting at the input node</div><div class="ttdef"><b>Definition</b> reverse_a_linked_list.cpp:53</div></div>
+<div class="ttc" id="aclassdata__structures_1_1linked__list_1_1list_html_a454ab4918f579869dfed4bb420a3f897"><div class="ttname"><a href="#a454ab4918f579869dfed4bb420a3f897">data_structures::linked_list::list::isEmpty</a></div><div class="ttdeci">bool isEmpty()</div><div class="ttdef"><b>Definition</b> <a href="../../da/dc3/linked__list_8cpp_source.html#l00111">linked_list.cpp:111</a></div></div>
+<div class="ttc" id="areverse__a__linked__list_8cpp_html_a7f80d9712cc7d77399dcacb4c2917511"><div class="ttname"><a href="../../d6/d05/reverse__a__linked__list_8cpp.html#a7f80d9712cc7d77399dcacb4c2917511">data_structures::linked_list::copy_all_nodes</a></div><div class="ttdeci">Node * copy_all_nodes(const Node *const node)</div><div class="ttdoc">creates a deep copy of a list starting at the input node</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00053">reverse_a_linked_list.cpp:53</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -324,6 +343,8 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>calls delete operator on every node in the represented list </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00188">188</a> of file <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html">reverse_a_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  188</span>                            {</div>
 <div class="line"><span class="lineno">  189</span>    <span class="keywordflow">while</span> (head != <span class="keyword">nullptr</span>) {</div>
 <div class="line"><span class="lineno">  190</span>        <span class="keyword">const</span> <span class="keyword">auto</span> tmp_node = head-&gt;<a class="code hl_variable" href="../../d4/d0e/classdata__structures_1_1linked__list_1_1_node.html#acfccd7b52c91d91300c5b317e5ec7a6e">next</a>;</div>
@@ -331,7 +352,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  192</span>        head = tmp_node;</div>
 <div class="line"><span class="lineno">  193</span>    }</div>
 <div class="line"><span class="lineno">  194</span>}</div>
-<div class="ttc" id="aclassdata__structures_1_1linked__list_1_1_node_html_acfccd7b52c91d91300c5b317e5ec7a6e"><div class="ttname"><a href="../../d4/d0e/classdata__structures_1_1linked__list_1_1_node.html#acfccd7b52c91d91300c5b317e5ec7a6e">data_structures::linked_list::Node::next</a></div><div class="ttdeci">Node * next</div><div class="ttdoc">value of the current link</div><div class="ttdef"><b>Definition</b> reverse_a_linked_list.cpp:45</div></div>
+<div class="ttc" id="aclassdata__structures_1_1linked__list_1_1_node_html_acfccd7b52c91d91300c5b317e5ec7a6e"><div class="ttname"><a href="../../d4/d0e/classdata__structures_1_1linked__list_1_1_node.html#acfccd7b52c91d91300c5b317e5ec7a6e">data_structures::linked_list::Node::next</a></div><div class="ttdeci">Node * next</div><div class="ttdoc">value of the current link</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00045">reverse_a_linked_list.cpp:45</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -350,25 +371,20 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>function displays all the elements in the list </p><dl class="section return"><dt>Returns</dt><dd>'void' </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/dc3/linked__list_8cpp_source.html#l00181">181</a> of file <a class="el" href="../../da/dc3/linked__list_8cpp_source.html">linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  181</span>                   {</div>
 <div class="line"><span class="lineno">  182</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="#a454ab4918f579869dfed4bb420a3f897">isEmpty</a>()) {</div>
-<div class="line"><span class="lineno">  183</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;List is Empty!&quot;</span>;</div>
+<div class="line"><span class="lineno">  183</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;List is Empty!&quot;</span>;</div>
 <div class="line"><span class="lineno">  184</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  185</span>    }</div>
-<div class="line"><span class="lineno">  186</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;link&gt;</a> t = <a class="code hl_variable" href="#aa3801cea564a3b3bb7b03abfffdcf1e1">first</a>;</div>
+<div class="line"><span class="lineno">  186</span>    std::shared_ptr&lt;link&gt; t = <a class="code hl_variable" href="#aa3801cea564a3b3bb7b03abfffdcf1e1">first</a>;</div>
 <div class="line"><span class="lineno">  187</span>    <span class="keywordflow">while</span> (t-&gt;succ() != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">  188</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; t-&gt;succ()-&gt;val() &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span>;</div>
+<div class="line"><span class="lineno">  188</span>        std::cout &lt;&lt; t-&gt;succ()-&gt;val() &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span>;</div>
 <div class="line"><span class="lineno">  189</span>        t = t-&gt;succ();</div>
 <div class="line"><span class="lineno">  190</span>    }</div>
 <div class="line"><span class="lineno">  191</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="ashared_ptr_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/def/classdata__structures_1_1linked__list_1_1list_a1313837c0e9ec67fd9fbd17987e2d615_cgraph.svg" width="366" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a009b19ac8cca40f2e4daa2e5989fa4f3" name="a009b19ac8cca40f2e4daa2e5989fa4f3"></a>
@@ -391,23 +407,25 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/dc3/linked__list_8cpp_source.html#l00152">152</a> of file <a class="el" href="../../da/dc3/linked__list_8cpp_source.html">linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  152</span>                             {</div>
 <div class="line"><span class="lineno">  153</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="#a454ab4918f579869dfed4bb420a3f897">isEmpty</a>()) {</div>
-<div class="line"><span class="lineno">  154</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;List is Empty!&quot;</span>;</div>
+<div class="line"><span class="lineno">  154</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;List is Empty!&quot;</span>;</div>
 <div class="line"><span class="lineno">  155</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  156</span>    }</div>
-<div class="line"><span class="lineno">  157</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;link&gt;</a> t = <a class="code hl_variable" href="#aa3801cea564a3b3bb7b03abfffdcf1e1">first</a>;</div>
-<div class="line"><span class="lineno">  158</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;link&gt;</a> to_be_removed = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  157</span>    std::shared_ptr&lt;link&gt; t = <a class="code hl_variable" href="#aa3801cea564a3b3bb7b03abfffdcf1e1">first</a>;</div>
+<div class="line"><span class="lineno">  158</span>    std::shared_ptr&lt;link&gt; to_be_removed = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  159</span>    <span class="keywordflow">while</span> (t != <a class="code hl_variable" href="#af39bcc08641ce0c813023f364a9a9015">last</a> &amp;&amp; t-&gt;succ()-&gt;val() != old_elem) {</div>
 <div class="line"><span class="lineno">  160</span>        t = t-&gt;succ();</div>
 <div class="line"><span class="lineno">  161</span>    }</div>
 <div class="line"><span class="lineno">  162</span>    <span class="keywordflow">if</span> (t == <a class="code hl_variable" href="#af39bcc08641ce0c813023f364a9a9015">last</a>) {</div>
-<div class="line"><span class="lineno">  163</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Element not found\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  163</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Element not found\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  164</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  165</span>    }</div>
 <div class="line"><span class="lineno">  166</span>    to_be_removed = t-&gt;succ();</div>
 <div class="line"><span class="lineno">  167</span>    t-&gt;succ() = t-&gt;succ()-&gt;succ();</div>
-<div class="line"><span class="lineno">  168</span>    to_be_removed.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/reset.html">reset</a>();</div>
+<div class="line"><span class="lineno">  168</span>    to_be_removed.reset();</div>
 <div class="line"><span class="lineno">  169</span>    <span class="keywordflow">if</span> (t-&gt;succ() == <span class="keyword">nullptr</span>) {</div>
 <div class="line"><span class="lineno">  170</span>        <a class="code hl_variable" href="#af39bcc08641ce0c813023f364a9a9015">last</a> = t;</div>
 <div class="line"><span class="lineno">  171</span>    }</div>
@@ -415,13 +433,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  173</span>        <a class="code hl_variable" href="#af39bcc08641ce0c813023f364a9a9015">last</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  174</span>    }</div>
 <div class="line"><span class="lineno">  175</span>}</div>
-<div class="ttc" id="areset_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/shared_ptr/reset.html">std::shared_ptr::reset</a></div><div class="ttdeci">T reset(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/def/classdata__structures_1_1linked__list_1_1list_a009b19ac8cca40f2e4daa2e5989fa4f3_cgraph.svg" width="366" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa69707af46eb6d410eb3a54ee58e1ed1" name="aa69707af46eb6d410eb3a54ee58e1ed1"></a>
@@ -446,6 +458,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00099">99</a> of file <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html">reverse_a_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   99</span>                           {</div>
 <div class="line"><span class="lineno">  100</span>    <span class="keywordflow">try</span> {</div>
 <div class="line"><span class="lineno">  101</span>        <span class="comment">// NOLINTNEXTLINE(cppcoreguidelines-owning-memory)</span></div>
@@ -462,19 +476,12 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  112</span>            }</div>
 <div class="line"><span class="lineno">  113</span>            temp-&gt;next = new_node;</div>
 <div class="line"><span class="lineno">  114</span>        }</div>
-<div class="line"><span class="lineno">  115</span>    } <span class="keywordflow">catch</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/new/bad_alloc.html">std::bad_alloc</a>&amp; exception) {</div>
-<div class="line"><span class="lineno">  116</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;bad_alloc detected: &quot;</span> &lt;&lt; exception.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/exception/what.html">what</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  115</span>    } <span class="keywordflow">catch</span> (std::bad_alloc&amp; exception) {</div>
+<div class="line"><span class="lineno">  116</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;bad_alloc detected: &quot;</span> &lt;&lt; exception.what() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  117</span>    }</div>
 <div class="line"><span class="lineno">  118</span>}</div>
-<div class="ttc" id="abad_alloc_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/new/bad_alloc.html">std::bad_alloc</a></div></div>
-<div class="ttc" id="astruct_node_html"><div class="ttname"><a href="../../db/d8b/struct_node.html">Node</a></div><div class="ttdef"><b>Definition</b> linkedlist_implentation_usingarray.cpp:14</div></div>
-<div class="ttc" id="awhat_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/error/exception/what.html">std::bad_alloc::what</a></div><div class="ttdeci">T what(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/def/classdata__structures_1_1linked__list_1_1list_aa69707af46eb6d410eb3a54ee58e1ed1_cgraph.svg" width="366" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="astruct_node_html"><div class="ttname"><a href="../../db/d8b/struct_node.html">Node</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/dce/linkedlist__implentation__usingarray_8cpp_source.html#l00014">linkedlist_implentation_usingarray.cpp:14</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a454ab4918f579869dfed4bb420a3f897" name="a454ab4918f579869dfed4bb420a3f897"></a>
@@ -494,6 +501,8 @@ Here is the call graph for this function:</div>
 <p>function checks if list is empty </p><dl class="section return"><dt>Returns</dt><dd>true if list is empty </dd>
 <dd>
 false if list is not empty </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/dc3/linked__list_8cpp_source.html#l00111">111</a> of file <a class="el" href="../../da/dc3/linked__list_8cpp_source.html">linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  111</span>                   {</div>
 <div class="line"><span class="lineno">  112</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#af39bcc08641ce0c813023f364a9a9015">last</a> == <span class="keyword">nullptr</span>) {</div>
 <div class="line"><span class="lineno">  113</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -523,6 +532,8 @@ false if list is not empty </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the list is empty </dd>
 <dd>
 false if the list is not empty </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00093">93</a> of file <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html">reverse_a_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   93</span>{ <span class="keywordflow">return</span> head == <span class="keyword">nullptr</span>; }</div>
 </div><!-- fragment -->
 </div>
@@ -543,6 +554,8 @@ false if the list is not empty </dd></dl>
 </div><div class="memdoc">
 
 <p>assignment operator creating a deep copy of every node of the input </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00211">211</a> of file <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html">reverse_a_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  211</span>                                       {</div>
 <div class="line"><span class="lineno">  212</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> == &amp;other) {</div>
 <div class="line"><span class="lineno">  213</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
@@ -552,12 +565,7 @@ false if the list is not empty </dd></dl>
 <div class="line"><span class="lineno">  217</span>    copy_all_nodes_from_list(other);</div>
 <div class="line"><span class="lineno">  218</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><span class="lineno">  219</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/def/classdata__structures_1_1linked__list_1_1list_adb04f732911fcfd30f7177b367c6af41_cgraph.svg" width="388" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6e9859d1a0755fb51e41904d20c95496" name="a6e9859d1a0755fb51e41904d20c95496"></a>
@@ -580,21 +588,18 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/dc3/linked__list_8cpp_source.html#l00123">123</a> of file <a class="el" href="../../da/dc3/linked__list_8cpp_source.html">linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  123</span>                                 {</div>
 <div class="line"><span class="lineno">  124</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="#a454ab4918f579869dfed4bb420a3f897">isEmpty</a>()) {</div>
-<div class="line"><span class="lineno">  125</span>        <a class="code hl_variable" href="#aa3801cea564a3b3bb7b03abfffdcf1e1">first</a>-&gt;succ() = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html">std::make_shared&lt;link&gt;</a>(new_elem);</div>
+<div class="line"><span class="lineno">  125</span>        <a class="code hl_variable" href="#aa3801cea564a3b3bb7b03abfffdcf1e1">first</a>-&gt;succ() = std::make_shared&lt;link&gt;(new_elem);</div>
 <div class="line"><span class="lineno">  126</span>        <a class="code hl_variable" href="#af39bcc08641ce0c813023f364a9a9015">last</a> = <a class="code hl_variable" href="#aa3801cea564a3b3bb7b03abfffdcf1e1">first</a>-&gt;succ();</div>
 <div class="line"><span class="lineno">  127</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  128</span>        <a class="code hl_variable" href="#af39bcc08641ce0c813023f364a9a9015">last</a>-&gt;succ() = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html">std::make_shared&lt;link&gt;</a>(new_elem);</div>
+<div class="line"><span class="lineno">  128</span>        <a class="code hl_variable" href="#af39bcc08641ce0c813023f364a9a9015">last</a>-&gt;succ() = std::make_shared&lt;link&gt;(new_elem);</div>
 <div class="line"><span class="lineno">  129</span>        <a class="code hl_variable" href="#af39bcc08641ce0c813023f364a9a9015">last</a> = <a class="code hl_variable" href="#af39bcc08641ce0c813023f364a9a9015">last</a>-&gt;succ();</div>
 <div class="line"><span class="lineno">  130</span>    }</div>
 <div class="line"><span class="lineno">  131</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/def/classdata__structures_1_1linked__list_1_1list_a6e9859d1a0755fb51e41904d20c95496_cgraph.svg" width="366" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a332b965afd9d6bea8d3246673acd52c7" name="a332b965afd9d6bea8d3246673acd52c7"></a>
@@ -617,22 +622,19 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/dc3/linked__list_8cpp_source.html#l00137">137</a> of file <a class="el" href="../../da/dc3/linked__list_8cpp_source.html">linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  137</span>                                  {</div>
 <div class="line"><span class="lineno">  138</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="#a454ab4918f579869dfed4bb420a3f897">isEmpty</a>()) {</div>
-<div class="line"><span class="lineno">  139</span>        <a class="code hl_variable" href="#aa3801cea564a3b3bb7b03abfffdcf1e1">first</a>-&gt;succ() = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html">std::make_shared&lt;link&gt;</a>(new_elem);</div>
+<div class="line"><span class="lineno">  139</span>        <a class="code hl_variable" href="#aa3801cea564a3b3bb7b03abfffdcf1e1">first</a>-&gt;succ() = std::make_shared&lt;link&gt;(new_elem);</div>
 <div class="line"><span class="lineno">  140</span>        <a class="code hl_variable" href="#af39bcc08641ce0c813023f364a9a9015">last</a> = <a class="code hl_variable" href="#aa3801cea564a3b3bb7b03abfffdcf1e1">first</a>-&gt;succ();</div>
 <div class="line"><span class="lineno">  141</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  142</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;link&gt;</a> t = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html">std::make_shared&lt;link&gt;</a>(new_elem);</div>
+<div class="line"><span class="lineno">  142</span>        std::shared_ptr&lt;link&gt; t = std::make_shared&lt;link&gt;(new_elem);</div>
 <div class="line"><span class="lineno">  143</span>        t-&gt;succ() = <a class="code hl_variable" href="#aa3801cea564a3b3bb7b03abfffdcf1e1">first</a>-&gt;succ();</div>
 <div class="line"><span class="lineno">  144</span>        <a class="code hl_variable" href="#aa3801cea564a3b3bb7b03abfffdcf1e1">first</a>-&gt;succ() = t;</div>
 <div class="line"><span class="lineno">  145</span>    }</div>
 <div class="line"><span class="lineno">  146</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/def/classdata__structures_1_1linked__list_1_1list_a332b965afd9d6bea8d3246673acd52c7_cgraph.svg" width="366" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac466ec086c0835822467bd3d8f3ab90e" name="ac466ec086c0835822467bd3d8f3ab90e"></a>
@@ -652,19 +654,20 @@ Here is the call graph for this function:</div>
 
 <p>Utility function for reversing a list. </p>
 <p>Using the current, previous, and next pointer. </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00125">125</a> of file <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html">reverse_a_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  125</span>                       {</div>
 <div class="line"><span class="lineno">  126</span>    <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a>* curr = head;</div>
-<div class="line"><span class="lineno">  127</span>    <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a>* <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/prev.html">prev</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  127</span>    <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a>* prev = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  128</span>    <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a>* next_node = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  129</span>    <span class="keywordflow">while</span> (curr != <span class="keyword">nullptr</span>) {</div>
 <div class="line"><span class="lineno">  130</span>        next_node = curr-&gt;next;</div>
-<div class="line"><span class="lineno">  131</span>        curr-&gt;next = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/prev.html">prev</a>;</div>
-<div class="line"><span class="lineno">  132</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/prev.html">prev</a> = curr;</div>
+<div class="line"><span class="lineno">  131</span>        curr-&gt;next = prev;</div>
+<div class="line"><span class="lineno">  132</span>        prev = curr;</div>
 <div class="line"><span class="lineno">  133</span>        curr = next_node;</div>
 <div class="line"><span class="lineno">  134</span>    }</div>
-<div class="line"><span class="lineno">  135</span>    head = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/prev.html">prev</a>;</div>
+<div class="line"><span class="lineno">  135</span>    head = prev;</div>
 <div class="line"><span class="lineno">  136</span>}</div>
-<div class="ttc" id="aprev_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/prev.html">std::prev</a></div><div class="ttdeci">T prev(T... args)</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -675,7 +678,7 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="../../de/d9d/classdata__structures_1_1linked__list_1_1link.html">link</a> &gt; data_structures::linked_list::list::search </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="../../de/d9d/classdata__structures_1_1linked__list_1_1link.html">link</a> &gt; data_structures::linked_list::list::search </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>find_elem</em></span></td><td>)</td>
           <td></td>
@@ -689,28 +692,25 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/dc3/linked__list_8cpp_source.html#l00197">197</a> of file <a class="el" href="../../da/dc3/linked__list_8cpp_source.html">linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  197</span>                                              {</div>
 <div class="line"><span class="lineno">  198</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="#a454ab4918f579869dfed4bb420a3f897">isEmpty</a>()) {</div>
-<div class="line"><span class="lineno">  199</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;List is Empty!&quot;</span>;</div>
+<div class="line"><span class="lineno">  199</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;List is Empty!&quot;</span>;</div>
 <div class="line"><span class="lineno">  200</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  201</span>    }</div>
-<div class="line"><span class="lineno">  202</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;link&gt;</a> t = <a class="code hl_variable" href="#aa3801cea564a3b3bb7b03abfffdcf1e1">first</a>;</div>
+<div class="line"><span class="lineno">  202</span>    std::shared_ptr&lt;link&gt; t = <a class="code hl_variable" href="#aa3801cea564a3b3bb7b03abfffdcf1e1">first</a>;</div>
 <div class="line"><span class="lineno">  203</span>    <span class="keywordflow">while</span> (t != <a class="code hl_variable" href="#af39bcc08641ce0c813023f364a9a9015">last</a> &amp;&amp; t-&gt;succ()-&gt;val() != find_elem) {</div>
 <div class="line"><span class="lineno">  204</span>        t = t-&gt;succ();</div>
 <div class="line"><span class="lineno">  205</span>    }</div>
 <div class="line"><span class="lineno">  206</span>    <span class="keywordflow">if</span> (t == <a class="code hl_variable" href="#af39bcc08641ce0c813023f364a9a9015">last</a>) {</div>
-<div class="line"><span class="lineno">  207</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Element not found\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  207</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Element not found\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  208</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  209</span>    }</div>
-<div class="line"><span class="lineno">  210</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Element was found\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  210</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Element was found\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  211</span>    <span class="keywordflow">return</span> t-&gt;succ();</div>
 <div class="line"><span class="lineno">  212</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/def/classdata__structures_1_1linked__list_1_1list_ad3423f7518671351340932db3c24959a_cgraph.svg" width="366" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9785d1478e59f5a90288b2928a7094d6" name="a9785d1478e59f5a90288b2928a7094d6"></a>
@@ -730,20 +730,16 @@ Here is the call graph for this function:</div>
 
 <p>Utility function to find the top element of the list. </p>
 <dl class="section return"><dt>Returns</dt><dd>the top element of the list </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00142">142</a> of file <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html">reverse_a_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  142</span>                        {</div>
 <div class="line"><span class="lineno">  143</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="#a454ab4918f579869dfed4bb420a3f897">isEmpty</a>()) {</div>
 <div class="line"><span class="lineno">  144</span>        <span class="keywordflow">return</span> head-&gt;val;</div>
 <div class="line"><span class="lineno">  145</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  146</span>        <span class="keywordflow">throw</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/logic_error.html">std::logic_error</a>(<span class="stringliteral">&quot;List is empty&quot;</span>);</div>
+<div class="line"><span class="lineno">  146</span>        <span class="keywordflow">throw</span> std::logic_error(<span class="stringliteral">&quot;List is empty&quot;</span>);</div>
 <div class="line"><span class="lineno">  147</span>    }</div>
 <div class="line"><span class="lineno">  148</span>}</div>
-<div class="ttc" id="alogic_error_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/error/logic_error.html">std::logic_error</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/def/classdata__structures_1_1linked__list_1_1list_a9785d1478e59f5a90288b2928a7094d6_cgraph.svg" width="366" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2b951a3f1123b9b2f4891ec96aa76d69" name="a2b951a3f1123b9b2f4891ec96aa76d69"></a>
@@ -763,6 +759,8 @@ Here is the call graph for this function:</div>
 
 <p>Utility function to find the i th element of the list. </p>
 <dl class="section return"><dt>Returns</dt><dd>the i th element of the list </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00168">168</a> of file <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html">reverse_a_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  168</span>                                          {</div>
 <div class="line"><span class="lineno">  169</span>    <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a>* current = head;</div>
 <div class="line"><span class="lineno">  170</span> </div>
@@ -777,13 +775,62 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  179</span> </div>
 <div class="line"><span class="lineno">  180</span>    <span class="comment">/* if we get to this line,the caller was asking for a non-existent element</span></div>
 <div class="line"><span class="lineno">  181</span><span class="comment">    so we assert fail */</span></div>
-<div class="line"><span class="lineno">  182</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/program/exit.html">exit</a>(1);</div>
+<div class="line"><span class="lineno">  182</span>    exit(1);</div>
 <div class="line"><span class="lineno">  183</span>}</div>
-<div class="ttc" id="aexit_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/program/exit.html">std::exit</a></div><div class="ttdeci">T exit(T... args)</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa3801cea564a3b3bb7b03abfffdcf1e1" name="aa3801cea564a3b3bb7b03abfffdcf1e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3801cea564a3b3bb7b03abfffdcf1e1">&#9670;&#160;</a></span>first</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="../../de/d9d/classdata__structures_1_1linked__list_1_1link.html">link</a>&gt; data_structures::linked_list::list::first</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>link before the actual first element </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/dc3/linked__list_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../da/dc3/linked__list_8cpp_source.html">linked_list.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad7e7823ae52c4ebf3b85a1bec096be5d" name="ad7e7823ae52c4ebf3b85a1bec096be5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7e7823ae52c4ebf3b85a1bec096be5d">&#9670;&#160;</a></span>head</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d0e/classdata__structures_1_1linked__list_1_1_node.html">Node</a>* data_structures::linked_list::list::head = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html#l00070">70</a> of file <a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html">reverse_a_linked_list.cpp</a>.</p>
+
+</div>
+</div>
 <a id="af39bcc08641ce0c813023f364a9a9015" name="af39bcc08641ce0c813023f364a9a9015"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af39bcc08641ce0c813023f364a9a9015">&#9670;&#160;</a></span>last</h2>
 
@@ -808,11 +855,13 @@ Here is the call graph for this function:</div>
 <p>Utility function to find the last element of the list.</p>
 <dl class="section return"><dt>Returns</dt><dd>the last element of the list </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../da/dc3/linked__list_8cpp_source.html#l00084">84</a> of file <a class="el" href="../../da/dc3/linked__list_8cpp_source.html">linked_list.cpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>data_structures/<a class="el" href="../../da/dc3/linked__list_8cpp.html">linked_list.cpp</a></li>
-<li>data_structures/<a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp.html">reverse_a_linked_list.cpp</a></li>
+<li>data_structures/<a class="el" href="../../da/dc3/linked__list_8cpp_source.html">linked_list.cpp</a></li>
+<li>data_structures/<a class="el" href="../../d6/d05/reverse__a__linked__list_8cpp_source.html">reverse_a_linked_list.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

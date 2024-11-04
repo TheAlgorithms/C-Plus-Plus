@@ -33,7 +33,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="98.12,-108.25 10.88,-108.25 10.88,-89 98.12,-89 98.12,-108.25"/>
 <text text-anchor="middle" x="54.5" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; X &gt;</text>
 </a>

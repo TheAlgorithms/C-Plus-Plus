@@ -21,6 +21,7 @@ var files_dup =
     [ "physics", "dir_59dc24c326e2a72d1164f014b22de83d.html", "dir_59dc24c326e2a72d1164f014b22de83d" ],
     [ "probability", "dir_82e494173a87936756866de2fa774307.html", "dir_82e494173a87936756866de2fa774307" ],
     [ "range_queries", "dir_074119ce3a874b57120c49a0cc4bb5ad.html", "dir_074119ce3a874b57120c49a0cc4bb5ad" ],
+    [ "scripts", "dir_53e6fa9553ac22a5646d2a2b2d7b97a1.html", "dir_53e6fa9553ac22a5646d2a2b2d7b97a1" ],
     [ "search", "dir_19b2bf9199a15c634a08b1ede1dd896a.html", "dir_19b2bf9199a15c634a08b1ede1dd896a" ],
     [ "sorting", "dir_bb1b521853a9c46347182a9d10420771.html", "dir_bb1b521853a9c46347182a9d10420771" ],
     [ "strings", "dir_73a3cc5065b223eb41b02873c0e19f0e.html", "dir_73a3cc5065b223eb41b02873c0e19f0e" ]

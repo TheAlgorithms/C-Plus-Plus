@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: graph Namespace Reference</title>
+<title>TheAlgorithms/C++: graph Namespace Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -128,37 +145,37 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9125ceb66bfbec3093bba64c2c1e99e2" id="r_a9125ceb66bfbec3093bba64c2c1e99e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9125ceb66bfbec3093bba64c2c1e99e2">addEdge</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &gt; *adj, int u, int v)</td></tr>
+<tr class="memitem:a9125ceb66bfbec3093bba64c2c1e99e2" id="r_a9125ceb66bfbec3093bba64c2c1e99e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9125ceb66bfbec3093bba64c2c1e99e2">addEdge</a> (std::vector&lt; std::vector&lt; int &gt; &gt; *adj, int u, int v)</td></tr>
 <tr class="memdesc:a9125ceb66bfbec3093bba64c2c1e99e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that add edge between two nodes or vertices of graph.  <br /></td></tr>
 <tr class="separator:a9125ceb66bfbec3093bba64c2c1e99e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ae80bc4c6a79d041b4f3a6589eb7fb8" id="r_a3ae80bc4c6a79d041b4f3a6589eb7fb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ae80bc4c6a79d041b4f3a6589eb7fb8">explore</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &gt; *adj, int u, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; bool &gt; *visited)</td></tr>
+<tr class="memitem:a3ae80bc4c6a79d041b4f3a6589eb7fb8" id="r_a3ae80bc4c6a79d041b4f3a6589eb7fb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ae80bc4c6a79d041b4f3a6589eb7fb8">explore</a> (const std::vector&lt; std::vector&lt; int &gt; &gt; *adj, int u, std::vector&lt; bool &gt; *visited)</td></tr>
 <tr class="memdesc:a3ae80bc4c6a79d041b4f3a6589eb7fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function for depth first seach algorithm this function explores the vertex which is passed into.  <br /></td></tr>
 <tr class="separator:a3ae80bc4c6a79d041b4f3a6589eb7fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83ab16e96cec644109a58dfc9329bc2b" id="r_a83ab16e96cec644109a58dfc9329bc2b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83ab16e96cec644109a58dfc9329bc2b">getConnectedComponents</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &gt; *adj)</td></tr>
+<tr class="memitem:a83ab16e96cec644109a58dfc9329bc2b" id="r_a83ab16e96cec644109a58dfc9329bc2b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83ab16e96cec644109a58dfc9329bc2b">getConnectedComponents</a> (const std::vector&lt; std::vector&lt; int &gt; &gt; *adj)</td></tr>
 <tr class="memdesc:a83ab16e96cec644109a58dfc9329bc2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that perfoms depth first search algorithm on graph and calculated the number of connected components.  <br /></td></tr>
 <tr class="separator:a83ab16e96cec644109a58dfc9329bc2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4016cfc80485a43748895a2c26c7d08" id="r_ad4016cfc80485a43748895a2c26c7d08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4016cfc80485a43748895a2c26c7d08">addEdge</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; size_t &gt; &gt; *adj, size_t u, size_t v)</td></tr>
+<tr class="memitem:ad4016cfc80485a43748895a2c26c7d08" id="r_ad4016cfc80485a43748895a2c26c7d08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4016cfc80485a43748895a2c26c7d08">addEdge</a> (std::vector&lt; std::vector&lt; size_t &gt; &gt; *adj, size_t u, size_t v)</td></tr>
 <tr class="memdesc:ad4016cfc80485a43748895a2c26c7d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds and edge between two vertices of graph say u and v in this case.  <br /></td></tr>
 <tr class="separator:ad4016cfc80485a43748895a2c26c7d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64c1db5aad7502c6f08e4652f6edd463" id="r_a64c1db5aad7502c6f08e4652f6edd463"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64c1db5aad7502c6f08e4652f6edd463">explore</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; size_t &gt; &gt; &amp;adj, size_t v, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; bool &gt; *visited)</td></tr>
+<tr class="memitem:a64c1db5aad7502c6f08e4652f6edd463" id="r_a64c1db5aad7502c6f08e4652f6edd463"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64c1db5aad7502c6f08e4652f6edd463">explore</a> (const std::vector&lt; std::vector&lt; size_t &gt; &gt; &amp;adj, size_t v, std::vector&lt; bool &gt; *visited)</td></tr>
 <tr class="memdesc:a64c1db5aad7502c6f08e4652f6edd463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explores the given vertex, exploring a vertex means traversing over all the vertices which are connected to the vertex that is currently being explored.  <br /></td></tr>
 <tr class="separator:a64c1db5aad7502c6f08e4652f6edd463"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5428a3519267a28bba4b4310cfbb6ae" id="r_ab5428a3519267a28bba4b4310cfbb6ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5428a3519267a28bba4b4310cfbb6ae">depth_first_search</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; size_t &gt; &gt; &amp;adj, size_t start)</td></tr>
+<tr class="memitem:ab5428a3519267a28bba4b4310cfbb6ae" id="r_ab5428a3519267a28bba4b4310cfbb6ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5428a3519267a28bba4b4310cfbb6ae">depth_first_search</a> (const std::vector&lt; std::vector&lt; size_t &gt; &gt; &amp;adj, size_t start)</td></tr>
 <tr class="memdesc:ab5428a3519267a28bba4b4310cfbb6ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">initiates depth first search algorithm.  <br /></td></tr>
 <tr class="separator:ab5428a3519267a28bba4b4310cfbb6ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e30e0dca68cb6e4f671440819b35b6a" id="r_a0e30e0dca68cb6e4f671440819b35b6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e30e0dca68cb6e4f671440819b35b6a">addEdge</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; int, int &gt; &gt; &gt; *adj, int u, int v, int w)</td></tr>
+<tr class="memitem:a0e30e0dca68cb6e4f671440819b35b6a" id="r_a0e30e0dca68cb6e4f671440819b35b6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e30e0dca68cb6e4f671440819b35b6a">addEdge</a> (std::vector&lt; std::vector&lt; std::pair&lt; int, int &gt; &gt; &gt; *adj, int u, int v, int w)</td></tr>
 <tr class="memdesc:a0e30e0dca68cb6e4f671440819b35b6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that add edge between two nodes or vertices of graph.  <br /></td></tr>
 <tr class="separator:a0e30e0dca68cb6e4f671440819b35b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc68cbc8ba09eb1142265935c0d45b84" id="r_adc68cbc8ba09eb1142265935c0d45b84"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc68cbc8ba09eb1142265935c0d45b84">dijkstra</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; int, int &gt; &gt; &gt; *adj, int s, int t)</td></tr>
+<tr class="memitem:adc68cbc8ba09eb1142265935c0d45b84" id="r_adc68cbc8ba09eb1142265935c0d45b84"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc68cbc8ba09eb1142265935c0d45b84">dijkstra</a> (std::vector&lt; std::vector&lt; std::pair&lt; int, int &gt; &gt; &gt; *adj, int s, int t)</td></tr>
 <tr class="memdesc:adc68cbc8ba09eb1142265935c0d45b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function runs the dijkstra algorithm for some source vertex and target vertex in the graph and returns the shortest distance of target from the source.  <br /></td></tr>
 <tr class="separator:adc68cbc8ba09eb1142265935c0d45b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e1b547cd407c0774e63f0dc95cda9e7" id="r_a8e1b547cd407c0774e63f0dc95cda9e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e1b547cd407c0774e63f0dc95cda9e7">checkBipartite</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt; &gt; &amp;graph, int64_t index, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt; *visited)</td></tr>
+<tr class="memitem:a8e1b547cd407c0774e63f0dc95cda9e7" id="r_a8e1b547cd407c0774e63f0dc95cda9e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e1b547cd407c0774e63f0dc95cda9e7">checkBipartite</a> (const std::vector&lt; std::vector&lt; int64_t &gt; &gt; &amp;graph, int64_t index, std::vector&lt; int64_t &gt; *visited)</td></tr>
 <tr class="memdesc:a8e1b547cd407c0774e63f0dc95cda9e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">function to check whether the passed graph is bipartite or not  <br /></td></tr>
 <tr class="separator:a8e1b547cd407c0774e63f0dc95cda9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84b0551489c613a681cc83b34450da4b" id="r_a84b0551489c613a681cc83b34450da4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84b0551489c613a681cc83b34450da4b">isBipartite</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt; &gt; &amp;graph)</td></tr>
+<tr class="memitem:a84b0551489c613a681cc83b34450da4b" id="r_a84b0551489c613a681cc83b34450da4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84b0551489c613a681cc83b34450da4b">isBipartite</a> (const std::vector&lt; std::vector&lt; int64_t &gt; &gt; &amp;graph)</td></tr>
 <tr class="memdesc:a84b0551489c613a681cc83b34450da4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the given graph is bipartite else returns false  <br /></td></tr>
 <tr class="separator:a84b0551489c613a681cc83b34450da4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7706341d006e20d1ae58274187a3346" id="r_ab7706341d006e20d1ae58274187a3346"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7706341d006e20d1ae58274187a3346">TravellingSalesmanProblem</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint32_t &gt; &gt; *cities, int32_t src, uint32_t V)</td></tr>
+<tr class="memitem:ab7706341d006e20d1ae58274187a3346" id="r_ab7706341d006e20d1ae58274187a3346"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7706341d006e20d1ae58274187a3346">TravellingSalesmanProblem</a> (std::vector&lt; std::vector&lt; uint32_t &gt; &gt; *cities, int32_t src, uint32_t V)</td></tr>
 <tr class="memdesc:ab7706341d006e20d1ae58274187a3346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function calculates the minimum path distance that will cover all the cities starting from the source.  <br /></td></tr>
 <tr class="separator:ab7706341d006e20d1ae58274187a3346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -166,14 +183,14 @@ Functions</h2></td></tr>
 <div class="textblock"><p><a class="el" href="../../dc/d61/classgraph_1_1_graph.html">Graph</a> Algorithms. </p>
 <p>for assert</p>
 <p>Check whether a given graph is bipartite or not.</p>
-<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
+<p>for std::vector</p>
 <p><a class="el" href="../../dc/d61/classgraph_1_1_graph.html">Graph</a> algorithms.</p>
-<p>for IO operations for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/set.html">std::set</a></p>
+<p>for IO operations for std::set</p>
 <p><a class="el" href="../../dc/d61/classgraph_1_1_graph.html">Graph</a> Algorithms</p>
 <p>A bipartite graph is the one whose nodes can be divided into two disjoint sets in such a way that the nodes in a set are not connected to each other at all, i.e. no intra-set connections. The only connections that exist are that of inter-set, i.e. the nodes from one set are connected to a subset of nodes in the other set. In this implementation, using a graph in the form of adjacency list, check whether the given graph is a bipartite or not.</p>
 <p>References used: <a href="https://www.geeksforgeeks.org/bipartite-graph/" target="_blank">GeeksForGeeks</a> </p><dl class="section author"><dt>Author</dt><dd><a href="https://github.com/tushar2407" target="_blank">tushar2407</a> for assert for IO operations for queue data structure for vector data structure</dd></dl>
 <p>Graphical algorithms</p>
-<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a> for IO operations for limits of integral types for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
+<p>for std::min for IO operations for limits of integral types for std::vector</p>
 <p><a class="el" href="../../dc/d61/classgraph_1_1_graph.html">Graph</a> Algorithms </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a9125ceb66bfbec3093bba64c2c1e99e2" name="a9125ceb66bfbec3093bba64c2c1e99e2"></a>
@@ -185,7 +202,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void graph::addEdge </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>adj</em></span>, </td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; int &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>adj</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -209,6 +226,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/ddd/connected__components_8cpp_source.html#l00046">46</a> of file <a class="el" href="../../df/ddd/connected__components_8cpp_source.html">connected_components.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   46</span>                                                           {</div>
 <div class="line"><span class="lineno">   47</span>    (*adj)[u - 1].push_back(v - 1);</div>
 <div class="line"><span class="lineno">   48</span>    (*adj)[v - 1].push_back(u - 1);</div>
@@ -225,7 +244,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void graph::addEdge </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; size_t &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>adj</em></span>, </td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; size_t &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>adj</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -249,6 +268,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d8d/depth__first__search_8cpp_source.html#l00056">56</a> of file <a class="el" href="../../da/d8d/depth__first__search_8cpp_source.html">depth_first_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   56</span>                                                                    {</div>
 <div class="line"><span class="lineno">   57</span>    <span class="comment">/*</span></div>
 <div class="line"><span class="lineno">   58</span><span class="comment">     *</span></div>
@@ -272,7 +293,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void graph::addEdge </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; int, int &gt; &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>adj</em></span>, </td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; std::pair&lt; int, int &gt; &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>adj</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -300,17 +321,13 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d68/dijkstra_8cpp_source.html#l00048">48</a> of file <a class="el" href="../../d8/d68/dijkstra_8cpp_source.html">dijkstra.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   49</span>                    {</div>
-<div class="line"><span class="lineno">   50</span>    (*adj)[u - 1].push_back(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(v - 1, w));</div>
+<div class="line"><span class="lineno">   50</span>    (*adj)[u - 1].push_back(std::make_pair(v - 1, w));</div>
 <div class="line"><span class="lineno">   51</span>    <span class="comment">// (*adj)[v - 1].push_back(std::make_pair(u - 1, w));</span></div>
 <div class="line"><span class="lineno">   52</span>}</div>
-<div class="ttc" id="amake_pair_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a></div><div class="ttdeci">T make_pair(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dce/namespacegraph_a0e30e0dca68cb6e4f671440819b35b6a_cgraph.svg" width="279" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8e1b547cd407c0774e63f0dc95cda9e7" name="a8e1b547cd407c0774e63f0dc95cda9e7"></a>
@@ -322,7 +339,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool graph::checkBipartite </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>graph</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; int64_t &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>graph</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -332,7 +349,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt; *</td>          <td class="paramname"><span class="paramname"><em>visited</em></span>&#160;)</td>
+          <td class="paramtype">std::vector&lt; int64_t &gt; *</td>          <td class="paramname"><span class="paramname"><em>visited</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -356,40 +373,35 @@ Here is the call graph for this function:</div>
 <p>insert the neighbouring node into the queue</p>
 <p>if both the current node and its neighbour has the same state then it is not a bipartite graph</p>
 <p>return true when all the connected nodes of the current nodes are travelled and satisify all the above conditions</p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dc3/is__graph__bipartite2_8cpp_source.html#l00037">37</a> of file <a class="el" href="../../dd/dc3/is__graph__bipartite2_8cpp_source.html">is_graph_bipartite2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   38</span>                                                                {</div>
-<div class="line"><span class="lineno">   39</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue&lt;int64_t&gt;</a> q;  <span class="comment">///&lt; stores the neighbouring node indexes in squence</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">   40</span><span class="comment">                            /// of being reached</span></div>
-<div class="line"><span class="lineno">   41</span><span class="comment"></span>    q.push(index);          <span class="comment">/// insert the current node into the queue</span></div>
-<div class="line"><span class="lineno">   42</span>    (*visited)[index] = 1;  <span class="comment">/// mark the current node as travelled</span></div>
+<div class="line"><span class="lineno">   39</span>    std::queue&lt;int64_t&gt; q;  </div>
+<div class="line"><span class="lineno">   41</span>    q.push(index);          </div>
+<div class="line"><span class="lineno">   42</span>    (*visited)[index] = 1;  </div>
 <div class="line"><span class="lineno">   43</span>    <span class="keywordflow">while</span> (q.size()) {</div>
 <div class="line"><span class="lineno">   44</span>        int64_t u = q.front();</div>
 <div class="line"><span class="lineno">   45</span>        q.pop();</div>
 <div class="line"><span class="lineno">   46</span>        <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; <a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>[u].size(); i++) {</div>
 <div class="line"><span class="lineno">   47</span>            int64_t v =</div>
-<div class="line"><span class="lineno">   48</span>                <a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>[u][i];     <span class="comment">///&lt; stores the neighbour of the current node</span></div>
-<div class="line"><span class="lineno">   49</span>            <span class="keywordflow">if</span> (!(*visited)[v])  <span class="comment">/// check whether the neighbour node is</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">   50</span><span class="comment">                                 /// travelled already or not</span></div>
-<div class="line"><span class="lineno">   51</span><span class="comment"></span>            {</div>
+<div class="line"><span class="lineno">   48</span>                <a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>[u][i];     </div>
+<div class="line"><span class="lineno">   49</span>            <span class="keywordflow">if</span> (!(*visited)[v])  </div>
+<div class="line"><span class="lineno">   51</span>            {</div>
 <div class="line"><span class="lineno">   52</span>                (*visited)[v] =</div>
 <div class="line"><span class="lineno">   53</span>                    ((*visited)[u] == 1)</div>
 <div class="line"><span class="lineno">   54</span>                        ? -1</div>
-<div class="line"><span class="lineno">   55</span>                        : 1;  <span class="comment">/// colour the neighbouring node with</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">   56</span><span class="comment">                              /// different colour than the current node</span></div>
-<div class="line"><span class="lineno">   57</span><span class="comment"></span>                q.push(v);    <span class="comment">/// insert the neighbouring node into the queue</span></div>
+<div class="line"><span class="lineno">   55</span>                        : 1;  </div>
+<div class="line"><span class="lineno">   57</span>                q.push(v);    </div>
 <div class="line"><span class="lineno">   58</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((*visited)[v] ==</div>
-<div class="line"><span class="lineno">   59</span>                       (*visited)[u])  <span class="comment">/// if both the current node and its</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">   60</span><span class="comment">                                       /// neighbour has the same state then it</span></div>
-<div class="line"><span class="lineno">   61</span><span class="comment">                                       /// is not a bipartite graph</span></div>
-<div class="line"><span class="lineno">   62</span><span class="comment"></span>            {</div>
+<div class="line"><span class="lineno">   59</span>                       (*visited)[u])  </div>
+<div class="line"><span class="lineno">   62</span>            {</div>
 <div class="line"><span class="lineno">   63</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   64</span>            }</div>
 <div class="line"><span class="lineno">   65</span>        }</div>
 <div class="line"><span class="lineno">   66</span>    }</div>
-<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;  <span class="comment">/// return true when all the connected nodes of the current</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">   68</span><span class="comment">                  /// nodes are travelled and satisify all the above conditions</span></div>
-<div class="line"><span class="lineno">   69</span><span class="comment"></span>}</div>
+<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;  </div>
+<div class="line"><span class="lineno">   69</span>}</div>
 <div class="ttc" id="anamespacegraph_html"><div class="ttname"><a href="../../df/dce/namespacegraph.html">graph</a></div><div class="ttdoc">Graph Algorithms.</div></div>
-<div class="ttc" id="aqueue_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -402,7 +414,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void graph::depth_first_search </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; size_t &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>adj</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; size_t &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>adj</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -420,21 +432,16 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d8d/depth__first__search_8cpp_source.html#l00099">99</a> of file <a class="el" href="../../da/d8d/depth__first__search_8cpp_source.html">depth_first_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  100</span>                                      {</div>
-<div class="line"><span class="lineno">  101</span>    <span class="keywordtype">size_t</span> vertices = adj.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">  101</span>    <span class="keywordtype">size_t</span> vertices = adj.size();</div>
 <div class="line"><span class="lineno">  102</span> </div>
-<div class="line"><span class="lineno">  103</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> visited(vertices, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  103</span>    std::vector&lt;bool&gt; visited(vertices, <span class="keyword">false</span>);</div>
 <div class="line"><span class="lineno">  104</span>    <a class="code hl_function" href="#a3ae80bc4c6a79d041b4f3a6589eb7fb8">explore</a>(adj, start, &amp;visited);</div>
 <div class="line"><span class="lineno">  105</span>}</div>
-<div class="ttc" id="anamespacegraph_html_a3ae80bc4c6a79d041b4f3a6589eb7fb8"><div class="ttname"><a href="#a3ae80bc4c6a79d041b4f3a6589eb7fb8">graph::explore</a></div><div class="ttdeci">void explore(const std::vector&lt; std::vector&lt; int &gt; &gt; *adj, int u, std::vector&lt; bool &gt; *visited)</div><div class="ttdoc">Utility function for depth first seach algorithm this function explores the vertex which is passed in...</div><div class="ttdef"><b>Definition</b> connected_components.cpp:59</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dce/namespacegraph_ab5428a3519267a28bba4b4310cfbb6ae_cgraph.svg" width="296" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="anamespacegraph_html_a3ae80bc4c6a79d041b4f3a6589eb7fb8"><div class="ttname"><a href="#a3ae80bc4c6a79d041b4f3a6589eb7fb8">graph::explore</a></div><div class="ttdeci">void explore(const std::vector&lt; std::vector&lt; int &gt; &gt; *adj, int u, std::vector&lt; bool &gt; *visited)</div><div class="ttdoc">Utility function for depth first seach algorithm this function explores the vertex which is passed in...</div><div class="ttdef"><b>Definition</b> <a href="../../df/ddd/connected__components_8cpp_source.html#l00059">connected_components.cpp:59</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adc68cbc8ba09eb1142265935c0d45b84" name="adc68cbc8ba09eb1142265935c0d45b84"></a>
@@ -446,7 +453,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">int graph::dijkstra </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; int, int &gt; &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>adj</em></span>, </td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; std::pair&lt; int, int &gt; &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>adj</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -480,42 +487,32 @@ Here is the call graph for this function:</div>
 <p>first element of pair denotes the distance</p>
 <p>for all the reachable vertex from the currently exploring vertex we will try to minimize the distance</p>
 <p>minimizing distances</p>
-<div class="fragment"><div class="line"><span class="lineno">   66</span>                                                                         {<span class="comment"></span></div>
-<div class="line"><span class="lineno">   67</span><span class="comment">    /// n denotes the number of vertices in graph</span></div>
-<div class="line"><span class="lineno">   68</span><span class="comment"></span>    <span class="keywordtype">int</span> n = adj-&gt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
-<div class="line"><span class="lineno">   69</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   70</span><span class="comment">    /// setting all the distances initially to INF</span></div>
-<div class="line"><span class="lineno">   71</span><span class="comment"></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> dist(n, INF);</div>
-<div class="line"><span class="lineno">   72</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   73</span><span class="comment">    /// creating a min heap using priority queue</span></div>
-<div class="line"><span class="lineno">   74</span><span class="comment">    /// first element of pair contains the distance</span></div>
-<div class="line"><span class="lineno">   75</span><span class="comment">    /// second element of pair contains the vertex</span></div>
-<div class="line"><span class="lineno">   76</span><span class="comment"></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue.html">std::priority_queue&lt;std::pair&lt;int, int&gt;</a>, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::pair&lt;int, int&gt;</a>&gt;,</div>
-<div class="line"><span class="lineno">   77</span>                        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/greater.html">std::greater&lt;std::pair&lt;int, int&gt;</a>&gt;&gt;</div>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d68/dijkstra_8cpp_source.html#l00066">66</a> of file <a class="el" href="../../d8/d68/dijkstra_8cpp_source.html">dijkstra.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   66</span>                                                                         {</div>
+<div class="line"><span class="lineno">   68</span>    <span class="keywordtype">int</span> n = adj-&gt;size();</div>
+<div class="line"><span class="lineno">   69</span> </div>
+<div class="line"><span class="lineno">   71</span>    std::vector&lt;int64_t&gt; dist(n, INF);</div>
+<div class="line"><span class="lineno">   72</span> </div>
+<div class="line"><span class="lineno">   76</span>    std::priority_queue&lt;std::pair&lt;int, int&gt;, std::vector&lt;std::pair&lt;int, int&gt;&gt;,</div>
+<div class="line"><span class="lineno">   77</span>                        std::greater&lt;std::pair&lt;int, int&gt;&gt;&gt;</div>
 <div class="line"><span class="lineno">   78</span>        pq;</div>
-<div class="line"><span class="lineno">   79</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   80</span><span class="comment">    /// pushing the source vertex &#39;s&#39; with 0 distance in min heap</span></div>
-<div class="line"><span class="lineno">   81</span><span class="comment"></span>    pq.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/push.html">push</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(0, s));</div>
-<div class="line"><span class="lineno">   82</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   83</span><span class="comment">    /// marking the distance of source as 0</span></div>
-<div class="line"><span class="lineno">   84</span><span class="comment"></span>    dist[s] = 0;</div>
+<div class="line"><span class="lineno">   79</span> </div>
+<div class="line"><span class="lineno">   81</span>    pq.push(std::make_pair(0, s));</div>
+<div class="line"><span class="lineno">   82</span> </div>
+<div class="line"><span class="lineno">   84</span>    dist[s] = 0;</div>
 <div class="line"><span class="lineno">   85</span> </div>
-<div class="line"><span class="lineno">   86</span>    <span class="keywordflow">while</span> (!pq.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/empty.html">empty</a>()) {<span class="comment"></span></div>
-<div class="line"><span class="lineno">   87</span><span class="comment">        /// second element of pair denotes the node / vertex</span></div>
-<div class="line"><span class="lineno">   88</span><span class="comment"></span>        <span class="keywordtype">int</span> currentNode = pq.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/top.html">top</a>().second;</div>
-<div class="line"><span class="lineno">   89</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   90</span><span class="comment">        /// first element of pair denotes the distance</span></div>
-<div class="line"><span class="lineno">   91</span><span class="comment"></span>        <span class="keywordtype">int</span> currentDist = pq.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/top.html">top</a>().first;</div>
+<div class="line"><span class="lineno">   86</span>    <span class="keywordflow">while</span> (!pq.empty()) {</div>
+<div class="line"><span class="lineno">   88</span>        <span class="keywordtype">int</span> currentNode = pq.top().second;</div>
+<div class="line"><span class="lineno">   89</span> </div>
+<div class="line"><span class="lineno">   91</span>        <span class="keywordtype">int</span> currentDist = pq.top().first;</div>
 <div class="line"><span class="lineno">   92</span> </div>
-<div class="line"><span class="lineno">   93</span>        pq.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/pop.html">pop</a>();</div>
-<div class="line"><span class="lineno">   94</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   95</span><span class="comment">        /// for all the reachable vertex from the currently exploring vertex</span></div>
-<div class="line"><span class="lineno">   96</span><span class="comment">        /// we will try to minimize the distance</span></div>
-<div class="line"><span class="lineno">   97</span><span class="comment"></span>        <span class="keywordflow">for</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair&lt;int, int&gt;</a> edge : (*adj)[currentNode]) {<span class="comment"></span></div>
-<div class="line"><span class="lineno">   98</span><span class="comment">            /// minimizing distances</span></div>
-<div class="line"><span class="lineno">   99</span><span class="comment"></span>            <span class="keywordflow">if</span> (currentDist + edge.second &lt; dist[edge.first]) {</div>
+<div class="line"><span class="lineno">   93</span>        pq.pop();</div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   97</span>        <span class="keywordflow">for</span> (std::pair&lt;int, int&gt; edge : (*adj)[currentNode]) {</div>
+<div class="line"><span class="lineno">   99</span>            <span class="keywordflow">if</span> (currentDist + edge.second &lt; dist[edge.first]) {</div>
 <div class="line"><span class="lineno">  100</span>                dist[edge.first] = currentDist + edge.second;</div>
-<div class="line"><span class="lineno">  101</span>                pq.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/push.html">push</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(dist[edge.first], edge.first));</div>
+<div class="line"><span class="lineno">  101</span>                pq.push(std::make_pair(dist[edge.first], edge.first));</div>
 <div class="line"><span class="lineno">  102</span>            }</div>
 <div class="line"><span class="lineno">  103</span>        }</div>
 <div class="line"><span class="lineno">  104</span>    }</div>
@@ -524,19 +521,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  107</span>    }</div>
 <div class="line"><span class="lineno">  108</span>    <span class="keywordflow">return</span> -1;</div>
 <div class="line"><span class="lineno">  109</span>}</div>
-<div class="ttc" id="aempty_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/priority_queue/empty.html">std::priority_queue::empty</a></div><div class="ttdeci">T empty(T... args)</div></div>
-<div class="ttc" id="agreater_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/functional/greater.html">std::greater</a></div></div>
-<div class="ttc" id="apair_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a></div></div>
-<div class="ttc" id="apop_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/priority_queue/pop.html">std::priority_queue::pop</a></div><div class="ttdeci">T pop(T... args)</div></div>
-<div class="ttc" id="apriority_queue_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/priority_queue.html">std::priority_queue</a></div></div>
-<div class="ttc" id="apush_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/priority_queue/push.html">std::priority_queue::push</a></div><div class="ttdeci">T push(T... args)</div></div>
-<div class="ttc" id="atop_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/priority_queue/top.html">std::priority_queue::top</a></div><div class="ttdeci">T top(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dce/namespacegraph_adc68cbc8ba09eb1142265935c0d45b84_cgraph.svg" width="320" height="315"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3ae80bc4c6a79d041b4f3a6589eb7fb8" name="a3ae80bc4c6a79d041b4f3a6589eb7fb8"></a>
@@ -548,7 +533,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void graph::explore </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>adj</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; int &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>adj</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -558,7 +543,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; bool &gt; *</td>          <td class="paramname"><span class="paramname"><em>visited</em></span>&#160;)</td>
+          <td class="paramtype">std::vector&lt; bool &gt; *</td>          <td class="paramname"><span class="paramname"><em>visited</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -572,6 +557,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/ddd/connected__components_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../df/ddd/connected__components_8cpp_source.html">connected_components.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   60</span>                                       {</div>
 <div class="line"><span class="lineno">   61</span>    (*visited)[u] = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">   62</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> v : (*adj)[u]) {</div>
@@ -580,12 +567,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   65</span>        }</div>
 <div class="line"><span class="lineno">   66</span>    }</div>
 <div class="line"><span class="lineno">   67</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dce/namespacegraph_a3ae80bc4c6a79d041b4f3a6589eb7fb8_cgraph.svg" width="115" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a64c1db5aad7502c6f08e4652f6edd463" name="a64c1db5aad7502c6f08e4652f6edd463"></a>
@@ -597,7 +579,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void graph::explore </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; size_t &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>adj</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; size_t &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>adj</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -607,7 +589,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; bool &gt; *</td>          <td class="paramname"><span class="paramname"><em>visited</em></span>&#160;)</td>
+          <td class="paramtype">std::vector&lt; bool &gt; *</td>          <td class="paramname"><span class="paramname"><em>visited</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -621,8 +603,10 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d8d/depth__first__search_8cpp_source.html#l00080">80</a> of file <a class="el" href="../../da/d8d/depth__first__search_8cpp_source.html">depth_first_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   81</span>                                       {</div>
-<div class="line"><span class="lineno">   82</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; v + 1 &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">   82</span>    std::cout &lt;&lt; v + 1 &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
 <div class="line"><span class="lineno">   83</span>    (*visited)[v] = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">   84</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> x : adj[v]) {</div>
 <div class="line"><span class="lineno">   85</span>        <span class="keywordflow">if</span> (!(*visited)[x]) {</div>
@@ -630,13 +614,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   87</span>        }</div>
 <div class="line"><span class="lineno">   88</span>    }</div>
 <div class="line"><span class="lineno">   89</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dce/namespacegraph_a64c1db5aad7502c6f08e4652f6edd463_cgraph.svg" width="266" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a83ab16e96cec644109a58dfc9329bc2b" name="a83ab16e96cec644109a58dfc9329bc2b"></a>
@@ -648,7 +626,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">int graph::getConnectedComponents </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>adj</em></span></td><td>)</td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; int &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>adj</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -662,10 +640,12 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>connected_components number of connected components in graph. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/ddd/connected__components_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../df/ddd/connected__components_8cpp_source.html">connected_components.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   77</span>                                                                 {</div>
-<div class="line"><span class="lineno">   78</span>    <span class="keywordtype">int</span> n = adj-&gt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">   78</span>    <span class="keywordtype">int</span> n = adj-&gt;size();</div>
 <div class="line"><span class="lineno">   79</span>    <span class="keywordtype">int</span> connected_components = 0;</div>
-<div class="line"><span class="lineno">   80</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> visited(n, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   80</span>    std::vector&lt;bool&gt; visited(n, <span class="keyword">false</span>);</div>
 <div class="line"><span class="lineno">   81</span> </div>
 <div class="line"><span class="lineno">   82</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++) {</div>
 <div class="line"><span class="lineno">   83</span>        <span class="keywordflow">if</span> (!visited[i]) {</div>
@@ -675,12 +655,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   87</span>    }</div>
 <div class="line"><span class="lineno">   88</span>    <span class="keywordflow">return</span> connected_components;</div>
 <div class="line"><span class="lineno">   89</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dce/namespacegraph_a83ab16e96cec644109a58dfc9329bc2b_cgraph.svg" width="391" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a84b0551489c613a681cc83b34450da4b" name="a84b0551489c613a681cc83b34450da4b"></a>
@@ -692,7 +667,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool graph::isBipartite </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>graph</em></span></td><td>)</td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; int64_t &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>graph</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -708,17 +683,15 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>booleans </dd></dl>
 <p>&lt; stores boolean values which signify whether that node had been visited or not</p>
 <p>if the current node is not visited then check whether the sub-graph of that node is a bipartite or not</p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dc3/is__graph__bipartite2_8cpp_source.html#l00076">76</a> of file <a class="el" href="../../dd/dc3/is__graph__bipartite2_8cpp_source.html">is_graph_bipartite2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   76</span>                                                             {</div>
-<div class="line"><span class="lineno">   77</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> visited(</div>
-<div class="line"><span class="lineno">   78</span>        <a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>.size());  <span class="comment">///&lt; stores boolean values</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">   79</span><span class="comment">                        /// which signify whether that node had been visited or</span></div>
-<div class="line"><span class="lineno">   80</span><span class="comment">                        /// not</span></div>
-<div class="line"><span class="lineno">   81</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">   77</span>    std::vector&lt;int64_t&gt; visited(</div>
+<div class="line"><span class="lineno">   78</span>        <a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>.size());  </div>
+<div class="line"><span class="lineno">   81</span> </div>
 <div class="line"><span class="lineno">   82</span>    <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; <a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>.size(); i++) {</div>
-<div class="line"><span class="lineno">   83</span>        <span class="keywordflow">if</span> (!visited[i])  <span class="comment">/// if the current node is not visited then check</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">   84</span><span class="comment">                          /// whether the sub-graph of that node is a bipartite</span></div>
-<div class="line"><span class="lineno">   85</span><span class="comment">                          /// or not</span></div>
-<div class="line"><span class="lineno">   86</span><span class="comment"></span>        {</div>
+<div class="line"><span class="lineno">   83</span>        <span class="keywordflow">if</span> (!visited[i])  </div>
+<div class="line"><span class="lineno">   86</span>        {</div>
 <div class="line"><span class="lineno">   87</span>            <span class="keywordflow">if</span> (!<a class="code hl_function" href="#a8e1b547cd407c0774e63f0dc95cda9e7">checkBipartite</a>(<a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>, i, &amp;visited)) {</div>
 <div class="line"><span class="lineno">   88</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   89</span>            }</div>
@@ -726,13 +699,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   91</span>    }</div>
 <div class="line"><span class="lineno">   92</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">   93</span>}</div>
-<div class="ttc" id="anamespacegraph_html_a8e1b547cd407c0774e63f0dc95cda9e7"><div class="ttname"><a href="#a8e1b547cd407c0774e63f0dc95cda9e7">graph::checkBipartite</a></div><div class="ttdeci">bool checkBipartite(const std::vector&lt; std::vector&lt; int64_t &gt; &gt; &amp;graph, int64_t index, std::vector&lt; int64_t &gt; *visited)</div><div class="ttdoc">function to check whether the passed graph is bipartite or not</div><div class="ttdef"><b>Definition</b> is_graph_bipartite2.cpp:37</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dce/namespacegraph_a84b0551489c613a681cc83b34450da4b_cgraph.svg" width="323" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="anamespacegraph_html_a8e1b547cd407c0774e63f0dc95cda9e7"><div class="ttname"><a href="#a8e1b547cd407c0774e63f0dc95cda9e7">graph::checkBipartite</a></div><div class="ttdeci">bool checkBipartite(const std::vector&lt; std::vector&lt; int64_t &gt; &gt; &amp;graph, int64_t index, std::vector&lt; int64_t &gt; *visited)</div><div class="ttdoc">function to check whether the passed graph is bipartite or not</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc3/is__graph__bipartite2_8cpp_source.html#l00037">is_graph_bipartite2.cpp:37</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab7706341d006e20d1ae58274187a3346" name="ab7706341d006e20d1ae58274187a3346"></a>
@@ -744,7 +712,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">int graph::TravellingSalesmanProblem </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint32_t &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>cities</em></span>, </td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; uint32_t &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>cities</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -768,48 +736,35 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>                                                       {<span class="comment"></span></div>
-<div class="line"><span class="lineno">   43</span><span class="comment">    //// vtx stores the vertexs of the graph</span></div>
-<div class="line"><span class="lineno">   44</span><span class="comment"></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a> vtx;</div>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d88/travelling__salesman__problem_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../de/d88/travelling__salesman__problem_8cpp_source.html">travelling_salesman_problem.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>                                                       {</div>
+<div class="line"><span class="lineno">   44</span>    std::vector&lt;uint32_t&gt; vtx;</div>
 <div class="line"><span class="lineno">   45</span>    <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; V; i++) {</div>
 <div class="line"><span class="lineno">   46</span>        <span class="keywordflow">if</span> (i != src) {</div>
-<div class="line"><span class="lineno">   47</span>            vtx.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(i);</div>
+<div class="line"><span class="lineno">   47</span>            vtx.push_back(i);</div>
 <div class="line"><span class="lineno">   48</span>        }</div>
 <div class="line"><span class="lineno">   49</span>    }</div>
-<div class="line"><span class="lineno">   50</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   51</span><span class="comment">    //// store minimum weight Hamiltonian Cycle.</span></div>
-<div class="line"><span class="lineno">   52</span><span class="comment"></span>    int32_t min_path = 2147483647;</div>
-<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">do</span> {<span class="comment"></span></div>
-<div class="line"><span class="lineno">   54</span><span class="comment">        //// store current Path weight(cost)</span></div>
-<div class="line"><span class="lineno">   55</span><span class="comment"></span>        int32_t curr_weight = 0;</div>
-<div class="line"><span class="lineno">   56</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   57</span><span class="comment">        //// compute current path weight</span></div>
-<div class="line"><span class="lineno">   58</span><span class="comment"></span>        <span class="keywordtype">int</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a> = src;</div>
+<div class="line"><span class="lineno">   50</span> </div>
+<div class="line"><span class="lineno">   52</span>    int32_t min_path = 2147483647;</div>
+<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">do</span> {</div>
+<div class="line"><span class="lineno">   55</span>        int32_t curr_weight = 0;</div>
+<div class="line"><span class="lineno">   56</span> </div>
+<div class="line"><span class="lineno">   58</span>        <span class="keywordtype">int</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a> = src;</div>
 <div class="line"><span class="lineno">   59</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i : vtx) {</div>
 <div class="line"><span class="lineno">   60</span>            curr_weight += (*cities)[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>][i];</div>
 <div class="line"><span class="lineno">   61</span>            <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a> = i;</div>
 <div class="line"><span class="lineno">   62</span>        }</div>
 <div class="line"><span class="lineno">   63</span>        curr_weight += (*cities)[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>][src];</div>
-<div class="line"><span class="lineno">   64</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   65</span><span class="comment">        //// update minimum</span></div>
-<div class="line"><span class="lineno">   66</span><span class="comment"></span>        min_path = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(min_path, curr_weight);</div>
+<div class="line"><span class="lineno">   64</span> </div>
+<div class="line"><span class="lineno">   66</span>        min_path = std::min(min_path, curr_weight);</div>
 <div class="line"><span class="lineno">   67</span> </div>
-<div class="line"><span class="lineno">   68</span>    } <span class="keywordflow">while</span> (<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/next_permutation.html">next_permutation</a>(vtx.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), vtx.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>()));</div>
+<div class="line"><span class="lineno">   68</span>    } <span class="keywordflow">while</span> (next_permutation(vtx.begin(), vtx.end()));</div>
 <div class="line"><span class="lineno">   69</span> </div>
 <div class="line"><span class="lineno">   70</span>    <span class="keywordflow">return</span> min_path;</div>
 <div class="line"><span class="lineno">   71</span>}</div>
-<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/begin.html">std::vector::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a1b74d828b33760094906797042b89442"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">numerical_methods::simpson_method::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:117</div></div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/end.html">std::vector::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
-<div class="ttc" id="anext_permutation_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/next_permutation.html">std::next_permutation</a></div><div class="ttdeci">T next_permutation(T... args)</div></div>
-<div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dce/namespacegraph_ab7706341d006e20d1ae58274187a3346_cgraph.svg" width="388" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a1b74d828b33760094906797042b89442"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">numerical_methods::simpson_method::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d18/composite__simpson__rule_8cpp_source.html#l00117">composite_simpson_rule.cpp:117</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

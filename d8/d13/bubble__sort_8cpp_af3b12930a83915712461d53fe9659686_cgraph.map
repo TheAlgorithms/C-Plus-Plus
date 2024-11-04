@@ -1,7 +1,0 @@
-<map id="sorting::bubble_sort::bubble_sort" name="sorting::bubble_sort::bubble_sort">
-<area shape="rect" id="Node000001" title="Bubble sort algorithm." alt="" coords="5,23,141,64"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="189,5,304,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,31,173,26,173,31,142,36"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="207,55,286,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,50,192,57,192,63,141,56"/>
-</map>

@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="128.12,-142 1.12,-142 1.12,-100.25 128.12,-100.25 128.12,-142"/>
 <text text-anchor="start" x="9.12" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr&lt; machine</text>
 <text text-anchor="start" x="9.12" y="-117.25" font-family="Helvetica,sans-Serif" font-size="10.00">_learning::aystar_search</text>
@@ -65,7 +65,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" xlink:title=" ">
+<g id="a_Node000004"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="129.25,-297.5 0,-297.5 0,-278.25 129.25,-278.25 129.25,-297.5"/>
 <text text-anchor="middle" x="64.62" y="-284" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr&lt; Puzzle &gt;</text>
 </a>

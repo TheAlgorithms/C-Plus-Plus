@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: math/iterative_factorial.cpp File Reference</title>
+<title>TheAlgorithms/C++: math/iterative_factorial.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -122,7 +139,9 @@ Include dependency graph for iterative_factorial.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d00/iterative__factorial_8cpp__incl.svg" width="358" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../db/d9f/iterative__factorial_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html">math</a></td></tr>
@@ -149,6 +168,8 @@ Functions</h2></td></tr>
       = n\times(n-1)!\]
 </p>
 <p> for example: \(4! = 4\times3! = 4\times3\times2\times1 = 24\) </p>
+
+<p class="definition">Definition in file <a class="el" href="../../db/d9f/iterative__factorial_8cpp_source.html">iterative_factorial.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -167,17 +188,14 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d9f/iterative__factorial_8cpp_source.html#l00120">120</a> of file <a class="el" href="../../db/d9f/iterative__factorial_8cpp_source.html">iterative_factorial.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  120</span>           {</div>
 <div class="line"><span class="lineno">  121</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// Run self-test implementation</span></div>
 <div class="line"><span class="lineno">  122</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  123</span>}</div>
-<div class="ttc" id="aiterative__factorial_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations to test iterativeFactorial function.</div><div class="ttdef"><b>Definition</b> iterative_factorial.cpp:69</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d9f/iterative__factorial_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="354" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aiterative__factorial_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations to test iterativeFactorial function.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d9f/iterative__factorial_8cpp_source.html#l00069">iterative_factorial.cpp:69</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -205,61 +223,56 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations to test iterativeFactorial function. </p>
 <dl class="section note"><dt>Note</dt><dd>There is 1 special case: 0! = 1. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d9f/iterative__factorial_8cpp_source.html#l00069">69</a> of file <a class="el" href="../../db/d9f/iterative__factorial_8cpp_source.html">iterative_factorial.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   69</span>                   {</div>
 <div class="line"><span class="lineno">   70</span>    <span class="comment">// Special case test</span></div>
-<div class="line"><span class="lineno">   71</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Exception case test \n&quot;</span></div>
+<div class="line"><span class="lineno">   71</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Exception case test \n&quot;</span></div>
 <div class="line"><span class="lineno">   72</span>                 <span class="stringliteral">&quot;Input: 0 \n&quot;</span></div>
 <div class="line"><span class="lineno">   73</span>                 <span class="stringliteral">&quot;Expected output: 1 \n\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   74</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a2565c745aac2f9561cc6fd9e56d9b77a">math::iterativeFactorial</a>(0) == 1);</div>
 <div class="line"><span class="lineno">   75</span> </div>
 <div class="line"><span class="lineno">   76</span>    <span class="comment">// Base case</span></div>
-<div class="line"><span class="lineno">   77</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Base case test \n&quot;</span></div>
+<div class="line"><span class="lineno">   77</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Base case test \n&quot;</span></div>
 <div class="line"><span class="lineno">   78</span>                 <span class="stringliteral">&quot;Input: 1 \n&quot;</span></div>
 <div class="line"><span class="lineno">   79</span>                 <span class="stringliteral">&quot;Expected output: 1 \n\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   80</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a2565c745aac2f9561cc6fd9e56d9b77a">math::iterativeFactorial</a>(1) == 1);</div>
 <div class="line"><span class="lineno">   81</span> </div>
 <div class="line"><span class="lineno">   82</span>    <span class="comment">// Small case</span></div>
-<div class="line"><span class="lineno">   83</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Small number case test \n&quot;</span></div>
+<div class="line"><span class="lineno">   83</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Small number case test \n&quot;</span></div>
 <div class="line"><span class="lineno">   84</span>                 <span class="stringliteral">&quot;Input: 5 \n&quot;</span></div>
 <div class="line"><span class="lineno">   85</span>                 <span class="stringliteral">&quot;Expected output: 120 \n\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   86</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a2565c745aac2f9561cc6fd9e56d9b77a">math::iterativeFactorial</a>(5) == 120);</div>
 <div class="line"><span class="lineno">   87</span> </div>
 <div class="line"><span class="lineno">   88</span>    <span class="comment">// Medium case</span></div>
-<div class="line"><span class="lineno">   89</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Medium number case test \n&quot;</span></div>
+<div class="line"><span class="lineno">   89</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Medium number case test \n&quot;</span></div>
 <div class="line"><span class="lineno">   90</span>                 <span class="stringliteral">&quot;Input: 10 \n&quot;</span></div>
 <div class="line"><span class="lineno">   91</span>                 <span class="stringliteral">&quot;Expected output: 3628800 \n\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   92</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a2565c745aac2f9561cc6fd9e56d9b77a">math::iterativeFactorial</a>(10) == 3628800);</div>
 <div class="line"><span class="lineno">   93</span> </div>
 <div class="line"><span class="lineno">   94</span>    <span class="comment">// Maximum case</span></div>
-<div class="line"><span class="lineno">   95</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Maximum case test \n&quot;</span></div>
+<div class="line"><span class="lineno">   95</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Maximum case test \n&quot;</span></div>
 <div class="line"><span class="lineno">   96</span>                 <span class="stringliteral">&quot;Input: 20 \n&quot;</span></div>
 <div class="line"><span class="lineno">   97</span>                 <span class="stringliteral">&quot;Expected output: 2432902008176640000\n\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   98</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a2565c745aac2f9561cc6fd9e56d9b77a">math::iterativeFactorial</a>(20) == 2432902008176640000);</div>
 <div class="line"><span class="lineno">   99</span> </div>
 <div class="line"><span class="lineno">  100</span>    <span class="comment">// Exception test</span></div>
-<div class="line"><span class="lineno">  101</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Exception test \n&quot;</span></div>
+<div class="line"><span class="lineno">  101</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Exception test \n&quot;</span></div>
 <div class="line"><span class="lineno">  102</span>                 <span class="stringliteral">&quot;Input: 21 \n&quot;</span></div>
 <div class="line"><span class="lineno">  103</span>                 <span class="stringliteral">&quot;Expected output: Exception thrown \n&quot;</span>;</div>
 <div class="line"><span class="lineno">  104</span> </div>
 <div class="line"><span class="lineno">  105</span>    <span class="keywordtype">bool</span> wasExceptionThrown = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  106</span>    <span class="keywordflow">try</span> {</div>
 <div class="line"><span class="lineno">  107</span>        <a class="code hl_function" href="../../dd/d47/namespacemath.html#a2565c745aac2f9561cc6fd9e56d9b77a">math::iterativeFactorial</a>(21);</div>
-<div class="line"><span class="lineno">  108</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a>&amp;) {</div>
+<div class="line"><span class="lineno">  108</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::invalid_argument&amp;) {</div>
 <div class="line"><span class="lineno">  109</span>        wasExceptionThrown = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  110</span>    }</div>
 <div class="line"><span class="lineno">  111</span>    assert(wasExceptionThrown);</div>
 <div class="line"><span class="lineno">  112</span> </div>
-<div class="line"><span class="lineno">  113</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have passed successfully.\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  113</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All tests have passed successfully.\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  114</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="ainvalid_argument_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a></div></div>
-<div class="ttc" id="anamespacemath_html_a2565c745aac2f9561cc6fd9e56d9b77a"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a2565c745aac2f9561cc6fd9e56d9b77a">math::iterativeFactorial</a></div><div class="ttdeci">uint64_t iterativeFactorial(uint8_t n)</div><div class="ttdoc">Calculates the factorial iteratively.</div><div class="ttdef"><b>Definition</b> iterative_factorial.cpp:47</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d9f/iterative__factorial_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="256" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="anamespacemath_html_a2565c745aac2f9561cc6fd9e56d9b77a"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a2565c745aac2f9561cc6fd9e56d9b77a">math::iterativeFactorial</a></div><div class="ttdeci">uint64_t iterativeFactorial(uint8_t n)</div><div class="ttdoc">Calculates the factorial iteratively.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d9f/iterative__factorial_8cpp_source.html#l00047">iterative_factorial.cpp:47</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

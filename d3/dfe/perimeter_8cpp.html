@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: math/perimeter.cpp File Reference</title>
+<title>TheAlgorithms/C++: math/perimeter.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -123,7 +140,9 @@ Include dependency graph for perimeter.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d7b/perimeter_8cpp__incl.svg" width="336" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d3/dfe/perimeter_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html">math</a></td></tr>
@@ -175,7 +194,26 @@ Functions</h2></td></tr>
 <div class="textblock"><p>Implementations for the <a href="https://en.wikipedia.org/wiki/Perimeter" target="_blank">perimeter</a> of various shapes. </p>
 <p>The of a shape is the amount of 2D space it takes up. All shapes have a formula for their perimeter. These implementations support multiple return types.</p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/OGscorpion" target="_blank">OGscorpion</a> </dd></dl>
-</div><h2 class="groupheader">Function Documentation</h2>
+
+<p class="definition">Definition in file <a class="el" href="../../d3/dfe/perimeter_8cpp_source.html">perimeter.cpp</a>.</p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a525335710b53cb064ca56b936120431e" name="a525335710b53cb064ca56b936120431e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a525335710b53cb064ca56b936120431e">&#9670;&#160;</a></span>_USE_MATH_DEFINES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _USE_MATH_DEFINES</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dfe/perimeter_8cpp_source.html#l00011">11</a> of file <a class="el" href="../../d3/dfe/perimeter_8cpp_source.html">perimeter.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
 
@@ -193,17 +231,14 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dfe/perimeter_8cpp_source.html#l00284">284</a> of file <a class="el" href="../../d3/dfe/perimeter_8cpp_source.html">perimeter.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  284</span>           {</div>
 <div class="line"><span class="lineno">  285</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
 <div class="line"><span class="lineno">  286</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  287</span>}</div>
-<div class="ttc" id="aperimeter_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> perimeter.cpp:120</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/dfe/perimeter_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="592" height="495"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aperimeter_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dfe/perimeter_8cpp_source.html#l00120">perimeter.cpp:120</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -231,6 +266,8 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dfe/perimeter_8cpp_source.html#l00120">120</a> of file <a class="el" href="../../d3/dfe/perimeter_8cpp_source.html">perimeter.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  120</span>                   {</div>
 <div class="line"><span class="lineno">  121</span>    <span class="comment">// I/O variables for testing</span></div>
 <div class="line"><span class="lineno">  122</span>    uint16_t int_length = 0;      <span class="comment">// 16 bit integer length input</span></div>
@@ -258,24 +295,24 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  144</span>    int_expected = 20;</div>
 <div class="line"><span class="lineno">  145</span>    int_perimeter = <a class="code hl_function" href="../../dd/d47/namespacemath.html#a9236348755183644f1225e162d01ab14">math::square_perimeter</a>(int_length);</div>
 <div class="line"><span class="lineno">  146</span> </div>
-<div class="line"><span class="lineno">  147</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;perimeter OF A SQUARE (int)&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  148</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Input Length: &quot;</span> &lt;&lt; int_length &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  149</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Expected Output: &quot;</span> &lt;&lt; int_expected &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  150</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Output: &quot;</span> &lt;&lt; int_perimeter &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  147</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;perimeter OF A SQUARE (int)&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  148</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Input Length: &quot;</span> &lt;&lt; int_length &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  149</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Expected Output: &quot;</span> &lt;&lt; int_expected &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  150</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Output: &quot;</span> &lt;&lt; int_perimeter &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  151</span>    assert(int_perimeter == int_expected);</div>
-<div class="line"><span class="lineno">  152</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;TEST PASSED&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  152</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;TEST PASSED&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  153</span> </div>
 <div class="line"><span class="lineno">  154</span>    <span class="comment">// 2nd test</span></div>
 <div class="line"><span class="lineno">  155</span>    float_length = 2.5;</div>
 <div class="line"><span class="lineno">  156</span>    float_expected = 10;</div>
 <div class="line"><span class="lineno">  157</span>    float_perimeter = <a class="code hl_function" href="../../dd/d47/namespacemath.html#a9236348755183644f1225e162d01ab14">math::square_perimeter</a>(float_length);</div>
 <div class="line"><span class="lineno">  158</span> </div>
-<div class="line"><span class="lineno">  159</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;perimeter OF A SQUARE (float)&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  160</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Input Length: &quot;</span> &lt;&lt; float_length &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  161</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Expected Output: &quot;</span> &lt;&lt; float_expected &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  162</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Output: &quot;</span> &lt;&lt; float_perimeter &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  159</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;perimeter OF A SQUARE (float)&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  160</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Input Length: &quot;</span> &lt;&lt; float_length &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  161</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Expected Output: &quot;</span> &lt;&lt; float_expected &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  162</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Output: &quot;</span> &lt;&lt; float_perimeter &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  163</span>    assert(float_perimeter == float_expected);</div>
-<div class="line"><span class="lineno">  164</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;TEST PASSED&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  164</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;TEST PASSED&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  165</span> </div>
 <div class="line"><span class="lineno">  166</span>    <span class="comment">// 3rd test</span></div>
 <div class="line"><span class="lineno">  167</span>    int_length = 4;</div>
@@ -283,13 +320,13 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  169</span>    int_expected = 22;</div>
 <div class="line"><span class="lineno">  170</span>    int_perimeter = <a class="code hl_function" href="../../dd/d47/namespacemath.html#a428769a16e9525e56588d7c7709d25a6">math::rect_perimeter</a>(int_length, int_width);</div>
 <div class="line"><span class="lineno">  171</span> </div>
-<div class="line"><span class="lineno">  172</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;perimeter OF A RECTANGLE (int)&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  173</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Input Length: &quot;</span> &lt;&lt; int_length &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  174</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Input Width: &quot;</span> &lt;&lt; int_width &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  175</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Expected Output: &quot;</span> &lt;&lt; int_expected &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  176</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Output: &quot;</span> &lt;&lt; int_perimeter &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  172</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;perimeter OF A RECTANGLE (int)&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  173</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Input Length: &quot;</span> &lt;&lt; int_length &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  174</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Input Width: &quot;</span> &lt;&lt; int_width &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  175</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Expected Output: &quot;</span> &lt;&lt; int_expected &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  176</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Output: &quot;</span> &lt;&lt; int_perimeter &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  177</span>    assert(int_perimeter == int_expected);</div>
-<div class="line"><span class="lineno">  178</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;TEST PASSED&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  178</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;TEST PASSED&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  179</span> </div>
 <div class="line"><span class="lineno">  180</span>    <span class="comment">// 4th test</span></div>
 <div class="line"><span class="lineno">  181</span>    double_length = 2.5;</div>
@@ -297,13 +334,13 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  183</span>    double_expected = 16.4;</div>
 <div class="line"><span class="lineno">  184</span>    double_perimeter = <a class="code hl_function" href="../../dd/d47/namespacemath.html#a428769a16e9525e56588d7c7709d25a6">math::rect_perimeter</a>(double_length, double_width);</div>
 <div class="line"><span class="lineno">  185</span> </div>
-<div class="line"><span class="lineno">  186</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;perimeter OF A RECTANGLE (double)&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  187</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Input Length: &quot;</span> &lt;&lt; double_length &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  188</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Input Width: &quot;</span> &lt;&lt; double_width &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  189</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Expected Output: &quot;</span> &lt;&lt; double_expected &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  190</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Output: &quot;</span> &lt;&lt; double_perimeter &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  186</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;perimeter OF A RECTANGLE (double)&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  187</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Input Length: &quot;</span> &lt;&lt; double_length &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  188</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Input Width: &quot;</span> &lt;&lt; double_width &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  189</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Expected Output: &quot;</span> &lt;&lt; double_expected &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  190</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Output: &quot;</span> &lt;&lt; double_perimeter &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  191</span>    assert(double_perimeter == double_expected);</div>
-<div class="line"><span class="lineno">  192</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;TEST PASSED&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  192</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;TEST PASSED&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  193</span> </div>
 <div class="line"><span class="lineno">  194</span>    <span class="comment">// 5th test</span></div>
 <div class="line"><span class="lineno">  195</span>    int_base = 10;</div>
@@ -313,13 +350,13 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  199</span>    int_perimeter =</div>
 <div class="line"><span class="lineno">  200</span>        <a class="code hl_function" href="../../dd/d47/namespacemath.html#a3d1e4db743b189f309327572663415f3">math::triangle_perimeter</a>(int_base, int_height, int_hypotenuse);</div>
 <div class="line"><span class="lineno">  201</span> </div>
-<div class="line"><span class="lineno">  202</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;perimeter OF A TRIANGLE&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  203</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Input Base: &quot;</span> &lt;&lt; int_base &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  204</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Input Height: &quot;</span> &lt;&lt; int_height &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  205</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Expected Output: &quot;</span> &lt;&lt; int_expected &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  206</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Output: &quot;</span> &lt;&lt; int_perimeter &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  202</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;perimeter OF A TRIANGLE&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  203</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Input Base: &quot;</span> &lt;&lt; int_base &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  204</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Input Height: &quot;</span> &lt;&lt; int_height &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  205</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Expected Output: &quot;</span> &lt;&lt; int_expected &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  206</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Output: &quot;</span> &lt;&lt; int_perimeter &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  207</span>    assert(int_perimeter == int_expected);</div>
-<div class="line"><span class="lineno">  208</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;TEST PASSED&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  208</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;TEST PASSED&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  209</span> </div>
 <div class="line"><span class="lineno">  210</span>    <span class="comment">// 6th test</span></div>
 <div class="line"><span class="lineno">  211</span>    double_radius = 6;</div>
@@ -328,12 +365,12 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  214</span>                            <span class="comment">// truncates after 14 decimal places</span></div>
 <div class="line"><span class="lineno">  215</span>    double_perimeter = <a class="code hl_function" href="../../dd/d47/namespacemath.html#ad0acf82b7bc920182bf8322d1e103953">math::circle_perimeter</a>(double_radius);</div>
 <div class="line"><span class="lineno">  216</span> </div>
-<div class="line"><span class="lineno">  217</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;perimeter OF A CIRCLE&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  218</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Input Radius: &quot;</span> &lt;&lt; double_radius &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  219</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Expected Output: &quot;</span> &lt;&lt; double_expected &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  220</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Output: &quot;</span> &lt;&lt; double_perimeter &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  217</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;perimeter OF A CIRCLE&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  218</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Input Radius: &quot;</span> &lt;&lt; double_radius &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  219</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Expected Output: &quot;</span> &lt;&lt; double_expected &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  220</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Output: &quot;</span> &lt;&lt; double_perimeter &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  221</span>    assert(double_perimeter == double_expected);</div>
-<div class="line"><span class="lineno">  222</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;TEST PASSED&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  222</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;TEST PASSED&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  223</span> </div>
 <div class="line"><span class="lineno">  224</span>    <span class="comment">// 7th test</span></div>
 <div class="line"><span class="lineno">  225</span>    int_base = 6;</div>
@@ -341,25 +378,25 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  227</span>    int_expected = 26;</div>
 <div class="line"><span class="lineno">  228</span>    int_perimeter = <a class="code hl_function" href="../../dd/d47/namespacemath.html#a0efb235330ff48e14fd31faaccbcebb3">math::parallelogram_perimeter</a>(int_base, int_height);</div>
 <div class="line"><span class="lineno">  229</span> </div>
-<div class="line"><span class="lineno">  230</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;perimeter OF A PARALLELOGRAM&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  231</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Input Base: &quot;</span> &lt;&lt; int_base &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  232</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Input Height: &quot;</span> &lt;&lt; int_height &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  233</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Expected Output: &quot;</span> &lt;&lt; int_expected &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  234</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Output: &quot;</span> &lt;&lt; int_perimeter &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  230</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;perimeter OF A PARALLELOGRAM&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  231</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Input Base: &quot;</span> &lt;&lt; int_base &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  232</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Input Height: &quot;</span> &lt;&lt; int_height &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  233</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Expected Output: &quot;</span> &lt;&lt; int_expected &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  234</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Output: &quot;</span> &lt;&lt; int_perimeter &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  235</span>    assert(int_perimeter == int_expected);</div>
-<div class="line"><span class="lineno">  236</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;TEST PASSED&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  236</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;TEST PASSED&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  237</span> </div>
 <div class="line"><span class="lineno">  238</span>    <span class="comment">// 8th test</span></div>
 <div class="line"><span class="lineno">  239</span>    double_length = 5.5;</div>
 <div class="line"><span class="lineno">  240</span>    double_expected = 66.0;</div>
 <div class="line"><span class="lineno">  241</span>    double_perimeter = <a class="code hl_function" href="../../dd/d47/namespacemath.html#a8998ca7b1886d1d7d00aef3b457a9b1b">math::cube_surface_perimeter</a>(double_length);</div>
 <div class="line"><span class="lineno">  242</span> </div>
-<div class="line"><span class="lineno">  243</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;SURFACE perimeter OF A CUBE&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  244</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Input Length: &quot;</span> &lt;&lt; double_length &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  245</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Expected Output: &quot;</span> &lt;&lt; double_expected &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  246</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Output: &quot;</span> &lt;&lt; double_perimeter &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  243</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;SURFACE perimeter OF A CUBE&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  244</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Input Length: &quot;</span> &lt;&lt; double_length &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  245</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Expected Output: &quot;</span> &lt;&lt; double_expected &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  246</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Output: &quot;</span> &lt;&lt; double_perimeter &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  247</span>    assert(double_perimeter == double_expected);</div>
-<div class="line"><span class="lineno">  248</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;TEST PASSED&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  248</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;TEST PASSED&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  249</span> </div>
 <div class="line"><span class="lineno">  250</span>    <span class="comment">// 9th test</span></div>
 <div class="line"><span class="lineno">  251</span>    int_sides = 7;</div>
@@ -367,13 +404,13 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  253</span>    int_expected = 70;</div>
 <div class="line"><span class="lineno">  254</span>    int_perimeter = <a class="code hl_function" href="../../dd/d47/namespacemath.html#aa8592c3279c41a2c6d4d64eeb488f63f">math::n_polygon_surface_perimeter</a>(int_sides, int_length);</div>
 <div class="line"><span class="lineno">  255</span> </div>
-<div class="line"><span class="lineno">  256</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;SURFACE perimeter OF A N-POLYGON&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  257</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Input Sides: &quot;</span> &lt;&lt; int_sides &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  258</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Input Length: &quot;</span> &lt;&lt; int_length &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  259</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Expected Output: &quot;</span> &lt;&lt; int_expected &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  260</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Output: &quot;</span> &lt;&lt; int_perimeter &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  256</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;SURFACE perimeter OF A N-POLYGON&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  257</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Input Sides: &quot;</span> &lt;&lt; int_sides &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  258</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Input Length: &quot;</span> &lt;&lt; int_length &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  259</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Expected Output: &quot;</span> &lt;&lt; int_expected &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  260</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Output: &quot;</span> &lt;&lt; int_perimeter &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  261</span>    assert(int_perimeter == int_expected);</div>
-<div class="line"><span class="lineno">  262</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;TEST PASSED&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  262</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;TEST PASSED&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  263</span> </div>
 <div class="line"><span class="lineno">  264</span>    <span class="comment">// 10th test</span></div>
 <div class="line"><span class="lineno">  265</span>    double_radius = 4.0;</div>
@@ -382,30 +419,23 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  268</span>    double_perimeter =</div>
 <div class="line"><span class="lineno">  269</span>        <a class="code hl_function" href="../../dd/d47/namespacemath.html#a1d4df7a4e43a2eac1acc0ac610487c73">math::cylinder_surface_perimeter</a>(double_radius, double_height);</div>
 <div class="line"><span class="lineno">  270</span> </div>
-<div class="line"><span class="lineno">  271</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;SURFACE perimeter OF A CYLINDER&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  272</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Input Radius: &quot;</span> &lt;&lt; double_radius &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  273</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Input Height: &quot;</span> &lt;&lt; double_height &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  274</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Expected Output: &quot;</span> &lt;&lt; double_expected &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  275</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Output: &quot;</span> &lt;&lt; double_perimeter &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  271</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;SURFACE perimeter OF A CYLINDER&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  272</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Input Radius: &quot;</span> &lt;&lt; double_radius &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  273</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Input Height: &quot;</span> &lt;&lt; double_height &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  274</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Expected Output: &quot;</span> &lt;&lt; double_expected &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  275</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Output: &quot;</span> &lt;&lt; double_perimeter &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  276</span>    assert(double_perimeter == double_expected);</div>
-<div class="line"><span class="lineno">  277</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;TEST PASSED&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  277</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;TEST PASSED&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  278</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="anamespacemath_html_a0efb235330ff48e14fd31faaccbcebb3"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a0efb235330ff48e14fd31faaccbcebb3">math::parallelogram_perimeter</a></div><div class="ttdeci">T parallelogram_perimeter(T base, T height)</div><div class="ttdoc">perimeter of a parallelogram 2(b + h)</div><div class="ttdef"><b>Definition</b> perimeter.cpp:75</div></div>
-<div class="ttc" id="anamespacemath_html_a1d4df7a4e43a2eac1acc0ac610487c73"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a1d4df7a4e43a2eac1acc0ac610487c73">math::cylinder_surface_perimeter</a></div><div class="ttdeci">T cylinder_surface_perimeter(T radius, T height)</div><div class="ttdoc">surface perimeter of a cylinder (2 * radius + 2 * height)</div><div class="ttdef"><b>Definition</b> perimeter.cpp:111</div></div>
-<div class="ttc" id="anamespacemath_html_a3d1e4db743b189f309327572663415f3"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a3d1e4db743b189f309327572663415f3">math::triangle_perimeter</a></div><div class="ttdeci">T triangle_perimeter(T base, T height, T hypotenuse)</div><div class="ttdoc">perimeter of a triangle (a + b + c)</div><div class="ttdef"><b>Definition</b> perimeter.cpp:52</div></div>
-<div class="ttc" id="anamespacemath_html_a428769a16e9525e56588d7c7709d25a6"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a428769a16e9525e56588d7c7709d25a6">math::rect_perimeter</a></div><div class="ttdeci">T rect_perimeter(T length, T width)</div><div class="ttdoc">perimeter of a rectangle ( 2(l + w) )</div><div class="ttdef"><b>Definition</b> perimeter.cpp:40</div></div>
-<div class="ttc" id="anamespacemath_html_a8998ca7b1886d1d7d00aef3b457a9b1b"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a8998ca7b1886d1d7d00aef3b457a9b1b">math::cube_surface_perimeter</a></div><div class="ttdeci">T cube_surface_perimeter(T length)</div><div class="ttdoc">surface perimeter of a cube ( 12</div><div class="ttdef"><b>Definition</b> perimeter.cpp:86</div></div>
-<div class="ttc" id="anamespacemath_html_a9236348755183644f1225e162d01ab14"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a9236348755183644f1225e162d01ab14">math::square_perimeter</a></div><div class="ttdeci">T square_perimeter(T length)</div><div class="ttdoc">perimeter of a square (4 * l)</div><div class="ttdef"><b>Definition</b> perimeter.cpp:28</div></div>
-<div class="ttc" id="anamespacemath_html_aa8592c3279c41a2c6d4d64eeb488f63f"><div class="ttname"><a href="../../dd/d47/namespacemath.html#aa8592c3279c41a2c6d4d64eeb488f63f">math::n_polygon_surface_perimeter</a></div><div class="ttdeci">T n_polygon_surface_perimeter(T sides, T length)</div><div class="ttdoc">surface perimeter of a n-polygon ( n * l)</div><div class="ttdef"><b>Definition</b> perimeter.cpp:99</div></div>
-<div class="ttc" id="anamespacemath_html_ad0acf82b7bc920182bf8322d1e103953"><div class="ttname"><a href="../../dd/d47/namespacemath.html#ad0acf82b7bc920182bf8322d1e103953">math::circle_perimeter</a></div><div class="ttdeci">T circle_perimeter(T radius)</div><div class="ttdoc">perimeter of a circle (2 * pi * r)</div><div class="ttdef"><b>Definition</b> perimeter.cpp:63</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/dfe/perimeter_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="495" height="495"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="anamespacemath_html_a0efb235330ff48e14fd31faaccbcebb3"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a0efb235330ff48e14fd31faaccbcebb3">math::parallelogram_perimeter</a></div><div class="ttdeci">T parallelogram_perimeter(T base, T height)</div><div class="ttdoc">perimeter of a parallelogram 2(b + h)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dfe/perimeter_8cpp_source.html#l00075">perimeter.cpp:75</a></div></div>
+<div class="ttc" id="anamespacemath_html_a1d4df7a4e43a2eac1acc0ac610487c73"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a1d4df7a4e43a2eac1acc0ac610487c73">math::cylinder_surface_perimeter</a></div><div class="ttdeci">T cylinder_surface_perimeter(T radius, T height)</div><div class="ttdoc">surface perimeter of a cylinder (2 * radius + 2 * height)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dfe/perimeter_8cpp_source.html#l00111">perimeter.cpp:111</a></div></div>
+<div class="ttc" id="anamespacemath_html_a3d1e4db743b189f309327572663415f3"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a3d1e4db743b189f309327572663415f3">math::triangle_perimeter</a></div><div class="ttdeci">T triangle_perimeter(T base, T height, T hypotenuse)</div><div class="ttdoc">perimeter of a triangle (a + b + c)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dfe/perimeter_8cpp_source.html#l00052">perimeter.cpp:52</a></div></div>
+<div class="ttc" id="anamespacemath_html_a428769a16e9525e56588d7c7709d25a6"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a428769a16e9525e56588d7c7709d25a6">math::rect_perimeter</a></div><div class="ttdeci">T rect_perimeter(T length, T width)</div><div class="ttdoc">perimeter of a rectangle ( 2(l + w) )</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dfe/perimeter_8cpp_source.html#l00040">perimeter.cpp:40</a></div></div>
+<div class="ttc" id="anamespacemath_html_a8998ca7b1886d1d7d00aef3b457a9b1b"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a8998ca7b1886d1d7d00aef3b457a9b1b">math::cube_surface_perimeter</a></div><div class="ttdeci">T cube_surface_perimeter(T length)</div><div class="ttdoc">surface perimeter of a cube ( 12</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dfe/perimeter_8cpp_source.html#l00086">perimeter.cpp:86</a></div></div>
+<div class="ttc" id="anamespacemath_html_a9236348755183644f1225e162d01ab14"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a9236348755183644f1225e162d01ab14">math::square_perimeter</a></div><div class="ttdeci">T square_perimeter(T length)</div><div class="ttdoc">perimeter of a square (4 * l)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dfe/perimeter_8cpp_source.html#l00028">perimeter.cpp:28</a></div></div>
+<div class="ttc" id="anamespacemath_html_aa8592c3279c41a2c6d4d64eeb488f63f"><div class="ttname"><a href="../../dd/d47/namespacemath.html#aa8592c3279c41a2c6d4d64eeb488f63f">math::n_polygon_surface_perimeter</a></div><div class="ttdeci">T n_polygon_surface_perimeter(T sides, T length)</div><div class="ttdoc">surface perimeter of a n-polygon ( n * l)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dfe/perimeter_8cpp_source.html#l00099">perimeter.cpp:99</a></div></div>
+<div class="ttc" id="anamespacemath_html_ad0acf82b7bc920182bf8322d1e103953"><div class="ttname"><a href="../../dd/d47/namespacemath.html#ad0acf82b7bc920182bf8322d1e103953">math::circle_perimeter</a></div><div class="ttdeci">T circle_perimeter(T radius)</div><div class="ttdoc">perimeter of a circle (2 * pi * r)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dfe/perimeter_8cpp_source.html#l00063">perimeter.cpp:63</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

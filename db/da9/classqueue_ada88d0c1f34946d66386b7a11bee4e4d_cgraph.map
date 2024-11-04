@@ -1,7 +1,0 @@
-<map id="queue::enQueue" name="queue::enQueue">
-<area shape="rect" id="Node000001" title="inserts a new item into the queue" alt="" coords="5,31,122,56"/>
-<area shape="rect" id="Node000002" href="$db/da9/classqueue.html#a4bc52ad6ed6b0cc33ad05f87f05f8bec" title="checks if the queue has no elements" alt="" coords="170,5,320,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,33,154,28,155,33,122,38"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr/make_shared.html#" title=" " alt="" coords="182,55,308,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="122,49,167,55,167,60,122,54"/>
-</map>

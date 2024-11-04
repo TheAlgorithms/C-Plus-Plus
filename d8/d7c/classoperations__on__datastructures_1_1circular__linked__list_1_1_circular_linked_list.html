@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: operations_on_datastructures::circular_linked_list::CircularLinkedList Class Reference</title>
+<title>TheAlgorithms/C++: operations_on_datastructures::circular_linked_list::CircularLinkedList Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -142,7 +159,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a46195fcf11b636064c7172cb74b55dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a398d6cc927a2c8e4a156ae2806f48986" id="r_a398d6cc927a2c8e4a156ae2806f48986"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a398d6cc927a2c8e4a156ae2806f48986">erase</a> ()</td></tr>
 <tr class="separator:a398d6cc927a2c8e4a156ae2806f48986"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac38565472a07d07f63ec0d2fd8a69d4d" id="r_ac38565472a07d07f63ec0d2fd8a69d4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac38565472a07d07f63ec0d2fd8a69d4d">insert</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt; &amp;<a class="el" href="#a53611ec1fef92eeeb875aea1bde1e4de">values</a>)</td></tr>
+<tr class="memitem:ac38565472a07d07f63ec0d2fd8a69d4d" id="r_ac38565472a07d07f63ec0d2fd8a69d4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac38565472a07d07f63ec0d2fd8a69d4d">insert</a> (const std::vector&lt; int64_t &gt; &amp;<a class="el" href="#a53611ec1fef92eeeb875aea1bde1e4de">values</a>)</td></tr>
 <tr class="memdesc:ac38565472a07d07f63ec0d2fd8a69d4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts all the values from a vector into the Circular Linked List.  <br /></td></tr>
 <tr class="separator:ac38565472a07d07f63ec0d2fd8a69d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b7bbb0918c261bc216aef9e6dd39aa4" id="r_a3b7bbb0918c261bc216aef9e6dd39aa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b7bbb0918c261bc216aef9e6dd39aa4">insert</a> (int64_t <a class="el" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>)</td></tr>
@@ -157,18 +174,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a424b17ddc672b25fe0bd9dc8612fba21" id="r_a424b17ddc672b25fe0bd9dc8612fba21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a424b17ddc672b25fe0bd9dc8612fba21">print</a> (<a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html">Node</a> *<a class="el" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a>)</td></tr>
 <tr class="memdesc:a424b17ddc672b25fe0bd9dc8612fba21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the values of the Circular Linked List, beginning from a given <a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html" title="A Node struct that represents a single Node in a Binary Tree.">Node</a> to be used as the root.  <br /></td></tr>
 <tr class="separator:a424b17ddc672b25fe0bd9dc8612fba21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53611ec1fef92eeeb875aea1bde1e4de" id="r_a53611ec1fef92eeeb875aea1bde1e4de"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53611ec1fef92eeeb875aea1bde1e4de">values</a> ()</td></tr>
-<tr class="memdesc:a53611ec1fef92eeeb875aea1bde1e4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> of the values of the Circular Linked List.  <br /></td></tr>
+<tr class="memitem:a53611ec1fef92eeeb875aea1bde1e4de" id="r_a53611ec1fef92eeeb875aea1bde1e4de"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53611ec1fef92eeeb875aea1bde1e4de">values</a> ()</td></tr>
+<tr class="memdesc:a53611ec1fef92eeeb875aea1bde1e4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a std::vector of the values of the Circular Linked List.  <br /></td></tr>
 <tr class="separator:a53611ec1fef92eeeb875aea1bde1e4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03a896b34d27fda69049827e0c4dab42" id="r_a03a896b34d27fda69049827e0c4dab42"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03a896b34d27fda69049827e0c4dab42">values</a> (<a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html">Node</a> *<a class="el" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a>)</td></tr>
-<tr class="memdesc:a03a896b34d27fda69049827e0c4dab42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> of the values of the Circular Linked List, beginning from a given <a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html" title="A Node struct that represents a single Node in a Binary Tree.">Node</a>.  <br /></td></tr>
+<tr class="memitem:a03a896b34d27fda69049827e0c4dab42" id="r_a03a896b34d27fda69049827e0c4dab42"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03a896b34d27fda69049827e0c4dab42">values</a> (<a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html">Node</a> *<a class="el" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a>)</td></tr>
+<tr class="memdesc:a03a896b34d27fda69049827e0c4dab42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a std::vector of the values of the Circular Linked List, beginning from a given <a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html" title="A Node struct that represents a single Node in a Binary Tree.">Node</a>.  <br /></td></tr>
 <tr class="separator:a03a896b34d27fda69049827e0c4dab42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a5d5cebd6bc906c60763fc6be10cfdd13" id="r_a5d5cebd6bc906c60763fc6be10cfdd13"><td class="memItemLeft" align="right" valign="top"><a id="a5d5cebd6bc906c60763fc6be10cfdd13" name="a5d5cebd6bc906c60763fc6be10cfdd13"></a>
-<a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>root</b></td></tr>
-<tr class="memdesc:a5d5cebd6bc906c60763fc6be10cfdd13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the root <a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html" title="A Node struct that represents a single Node in a Binary Tree.">Node</a>. <br /></td></tr>
+<tr class="memitem:a5d5cebd6bc906c60763fc6be10cfdd13" id="r_a5d5cebd6bc906c60763fc6be10cfdd13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a></td></tr>
+<tr class="memdesc:a5d5cebd6bc906c60763fc6be10cfdd13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the root <a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html" title="A Node struct that represents a single Node in a Binary Tree.">Node</a>.  <br /></td></tr>
 <tr class="separator:a5d5cebd6bc906c60763fc6be10cfdd13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab682f854f39582a20c9c4102f0482208" id="r_ab682f854f39582a20c9c4102f0482208"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab682f854f39582a20c9c4102f0482208">end</a> {}</td></tr>
 <tr class="memdesc:ab682f854f39582a20c9c4102f0482208"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the last <a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html" title="A Node struct that represents a single Node in a Binary Tree.">Node</a>.  <br /></td></tr>
@@ -176,6 +192,8 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class that implements a Circular Linked List. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html">circular_linked_list.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa704319924f97fedfb41caf193a00888" name="aa704319924f97fedfb41caf193a00888"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa704319924f97fedfb41caf193a00888">&#9670;&#160;</a></span>CircularLinkedList() <span class="overload">[1/3]</span></h2>
@@ -201,12 +219,14 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates an empty <a class="el" href="../../d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html" title="A class that implements a Circular Linked List.">CircularLinkedList</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html#l00066">66</a> of file <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html">circular_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   66</span>                         {</div>
 <div class="line"><span class="lineno">   67</span>        <a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">   68</span>        <a class="code hl_variable" href="#ab682f854f39582a20c9c4102f0482208">end</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">   69</span>    }</div>
-<div class="ttc" id="aclassoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list_html_a5d5cebd6bc906c60763fc6be10cfdd13"><div class="ttname"><a href="#a5d5cebd6bc906c60763fc6be10cfdd13">operations_on_datastructures::circular_linked_list::CircularLinkedList::root</a></div><div class="ttdeci">Node * root</div><div class="ttdoc">Pointer to the root Node.</div><div class="ttdef"><b>Definition</b> circular_linked_list.cpp:59</div></div>
-<div class="ttc" id="aclassoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list_html_ab682f854f39582a20c9c4102f0482208"><div class="ttname"><a href="#ab682f854f39582a20c9c4102f0482208">operations_on_datastructures::circular_linked_list::CircularLinkedList::end</a></div><div class="ttdeci">Node * end</div><div class="ttdoc">Pointer to the last Node.</div><div class="ttdef"><b>Definition</b> circular_linked_list.cpp:60</div></div>
+<div class="ttc" id="aclassoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list_html_a5d5cebd6bc906c60763fc6be10cfdd13"><div class="ttname"><a href="#a5d5cebd6bc906c60763fc6be10cfdd13">operations_on_datastructures::circular_linked_list::CircularLinkedList::root</a></div><div class="ttdeci">Node * root</div><div class="ttdoc">Pointer to the root Node.</div><div class="ttdef"><b>Definition</b> <a href="../../de/d33/circular__linked__list_8cpp_source.html#l00059">circular_linked_list.cpp:59</a></div></div>
+<div class="ttc" id="aclassoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list_html_ab682f854f39582a20c9c4102f0482208"><div class="ttname"><a href="#ab682f854f39582a20c9c4102f0482208">operations_on_datastructures::circular_linked_list::CircularLinkedList::end</a></div><div class="ttdeci">Node * end</div><div class="ttdoc">Pointer to the last Node.</div><div class="ttdef"><b>Definition</b> <a href="../../de/d33/circular__linked__list_8cpp_source.html#l00060">circular_linked_list.cpp:60</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -234,26 +254,22 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Copy constructor for <a class="el" href="../../d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html" title="A class that implements a Circular Linked List.">CircularLinkedList</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html#l00073">73</a> of file <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html">circular_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   73</span>                                                       {</div>
 <div class="line"><span class="lineno">   74</span>        <a class="code hl_function" href="#a398d6cc927a2c8e4a156ae2806f48986">erase</a>();</div>
 <div class="line"><span class="lineno">   75</span>        <a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   76</span>        <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a>* <a class="code hl_class" href="../../d5/da1/structnode.html">node</a> = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/copy.html">copy</a>.root;</div>
+<div class="line"><span class="lineno">   76</span>        <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a>* <a class="code hl_class" href="../../d5/da1/structnode.html">node</a> = copy.root;</div>
 <div class="line"><span class="lineno">   77</span>        <span class="keywordflow">while</span> (<a class="code hl_class" href="../../d5/da1/structnode.html">node</a> != <span class="keyword">nullptr</span>) {</div>
 <div class="line"><span class="lineno">   78</span>            <a class="code hl_function" href="#ac38565472a07d07f63ec0d2fd8a69d4d">insert</a>(<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;data);</div>
 <div class="line"><span class="lineno">   79</span>            <a class="code hl_class" href="../../d5/da1/structnode.html">node</a> = <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;next;</div>
 <div class="line"><span class="lineno">   80</span>        }</div>
 <div class="line"><span class="lineno">   81</span>    }</div>
-<div class="ttc" id="aclassoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list_html_a398d6cc927a2c8e4a156ae2806f48986"><div class="ttname"><a href="#a398d6cc927a2c8e4a156ae2806f48986">operations_on_datastructures::circular_linked_list::CircularLinkedList::erase</a></div><div class="ttdeci">void erase()</div><div class="ttdef"><b>Definition</b> circular_linked_list.cpp:126</div></div>
-<div class="ttc" id="aclassoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list_html_ac38565472a07d07f63ec0d2fd8a69d4d"><div class="ttname"><a href="#ac38565472a07d07f63ec0d2fd8a69d4d">operations_on_datastructures::circular_linked_list::CircularLinkedList::insert</a></div><div class="ttdeci">void insert(const std::vector&lt; int64_t &gt; &amp;values)</div><div class="ttdoc">Inserts all the values from a vector into the Circular Linked List.</div><div class="ttdef"><b>Definition</b> circular_linked_list.cpp:146</div></div>
-<div class="ttc" id="acopy_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/copy.html">std::copy</a></div><div class="ttdeci">T copy(T... args)</div></div>
-<div class="ttc" id="astruct_node_html"><div class="ttname"><a href="../../db/d8b/struct_node.html">Node</a></div><div class="ttdef"><b>Definition</b> linkedlist_implentation_usingarray.cpp:14</div></div>
-<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition</b> binary_search_tree.cpp:11</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list_a142fa439b102c6f86341f421ddcfe0a1_cgraph.svg" width="100%" height="428"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="aclassoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list_html_a398d6cc927a2c8e4a156ae2806f48986"><div class="ttname"><a href="#a398d6cc927a2c8e4a156ae2806f48986">operations_on_datastructures::circular_linked_list::CircularLinkedList::erase</a></div><div class="ttdeci">void erase()</div><div class="ttdef"><b>Definition</b> <a href="../../de/d33/circular__linked__list_8cpp_source.html#l00126">circular_linked_list.cpp:126</a></div></div>
+<div class="ttc" id="aclassoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list_html_ac38565472a07d07f63ec0d2fd8a69d4d"><div class="ttname"><a href="#ac38565472a07d07f63ec0d2fd8a69d4d">operations_on_datastructures::circular_linked_list::CircularLinkedList::insert</a></div><div class="ttdeci">void insert(const std::vector&lt; int64_t &gt; &amp;values)</div><div class="ttdoc">Inserts all the values from a vector into the Circular Linked List.</div><div class="ttdef"><b>Definition</b> <a href="../../de/d33/circular__linked__list_8cpp_source.html#l00146">circular_linked_list.cpp:146</a></div></div>
+<div class="ttc" id="astruct_node_html"><div class="ttname"><a href="../../db/d8b/struct_node.html">Node</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/dce/linkedlist__implentation__usingarray_8cpp_source.html#l00014">linkedlist_implentation_usingarray.cpp:14</a></div></div>
+<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d26/binary__search__tree_8cpp_source.html#l00011">binary_search_tree.cpp:11</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abde75f6ee432b0378d264da8c7c64db2" name="abde75f6ee432b0378d264da8c7c64db2"></a>
@@ -286,6 +302,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html">circular_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   86</span>                                                             {</div>
 <div class="line"><span class="lineno">   87</span>        <a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a> = source.root;</div>
 <div class="line"><span class="lineno">   88</span>        <a class="code hl_variable" href="#ab682f854f39582a20c9c4102f0482208">end</a> = source.end;</div>
@@ -319,13 +337,10 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Cleans up memory when destroyed. </p>
-<div class="fragment"><div class="line"><span class="lineno">  122</span>{ <a class="code hl_function" href="#a398d6cc927a2c8e4a156ae2806f48986">erase</a>(); }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list_a46195fcf11b636064c7172cb74b55dd0_cgraph.svg" width="452" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html#l00122">122</a> of file <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html">circular_linked_list.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  122</span>{ <a class="code hl_function" href="#a398d6cc927a2c8e4a156ae2806f48986">erase</a>(); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -352,6 +367,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Iteratively frees each node in the Circular Linked List from the heap </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html#l00126">126</a> of file <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html">circular_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  126</span>                 {</div>
 <div class="line"><span class="lineno">  127</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a> == <span class="keyword">nullptr</span>) {</div>
 <div class="line"><span class="lineno">  128</span>            <span class="keywordflow">return</span>;</div>
@@ -365,7 +382,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  136</span>        <a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  137</span>        <a class="code hl_variable" href="#ab682f854f39582a20c9c4102f0482208">end</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  138</span>    }</div>
-<div class="ttc" id="aavltree_8cpp_html_a74f0cf18a0e5b832d9994e2f2d022287"><div class="ttname"><a href="../../d8/dee/avltree_8cpp.html#a74f0cf18a0e5b832d9994e2f2d022287">node</a></div><div class="ttdeci">struct node { int data; int height; struct node *left; struct node *right;} node</div><div class="ttdoc">for std::queue</div><div class="ttdef"><b>Definition</b> avltree.cpp:13</div></div>
+<div class="ttc" id="aavltree_8cpp_html_a74f0cf18a0e5b832d9994e2f2d022287"><div class="ttname"><a href="../../d8/dee/avltree_8cpp.html#a74f0cf18a0e5b832d9994e2f2d022287">node</a></div><div class="ttdeci">struct node { int data; int height; struct node *left; struct node *right;} node</div><div class="ttdoc">for std::queue</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dee/avltree_8cpp_source.html#l00013">avltree.cpp:13</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -381,7 +398,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void operations_on_datastructures::circular_linked_list::CircularLinkedList::insert </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>values</em></span></td><td>)</td>
+          <td class="paramtype">const std::vector&lt; int64_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>values</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -400,18 +417,15 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html#l00146">146</a> of file <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html">circular_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  146</span>                                                  {</div>
 <div class="line"><span class="lineno">  147</span>        <span class="keywordflow">for</span> (int64_t value : <a class="code hl_function" href="#a53611ec1fef92eeeb875aea1bde1e4de">values</a>) {</div>
 <div class="line"><span class="lineno">  148</span>            <a class="code hl_function" href="#ac38565472a07d07f63ec0d2fd8a69d4d">insert</a>(value);</div>
 <div class="line"><span class="lineno">  149</span>        }</div>
 <div class="line"><span class="lineno">  150</span>    }</div>
-<div class="ttc" id="aclassoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list_html_a53611ec1fef92eeeb875aea1bde1e4de"><div class="ttname"><a href="#a53611ec1fef92eeeb875aea1bde1e4de">operations_on_datastructures::circular_linked_list::CircularLinkedList::values</a></div><div class="ttdeci">std::vector&lt; int64_t &gt; values()</div><div class="ttdoc">Returns a std::vector of the values of the Circular Linked List.</div><div class="ttdef"><b>Definition</b> circular_linked_list.cpp:214</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list_ac38565472a07d07f63ec0d2fd8a69d4d_cgraph.svg" width="444" height="91"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list_html_a53611ec1fef92eeeb875aea1bde1e4de"><div class="ttname"><a href="#a53611ec1fef92eeeb875aea1bde1e4de">operations_on_datastructures::circular_linked_list::CircularLinkedList::values</a></div><div class="ttdeci">std::vector&lt; int64_t &gt; values()</div><div class="ttdoc">Returns a std::vector of the values of the Circular Linked List.</div><div class="ttdef"><b>Definition</b> <a href="../../de/d33/circular__linked__list_8cpp_source.html#l00214">circular_linked_list.cpp:214</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3b7bbb0918c261bc216aef9e6dd39aa4" name="a3b7bbb0918c261bc216aef9e6dd39aa4"></a>
@@ -445,17 +459,14 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html#l00158">158</a> of file <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html">circular_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  158</span>                              {</div>
 <div class="line"><span class="lineno">  159</span>        <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a>* <a class="code hl_class" href="../../d5/da1/structnode.html">node</a> = <span class="keyword">new</span> <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a>(<a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>, <a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a>);</div>
 <div class="line"><span class="lineno">  160</span>        <a class="code hl_function" href="#ac38565472a07d07f63ec0d2fd8a69d4d">insert</a>(<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>);</div>
 <div class="line"><span class="lineno">  161</span>    }</div>
-<div class="ttc" id="ahash__search_8cpp_html_a6e1a77282bc65ad359d753d25df23243"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a></div><div class="ttdeci">int data[MAX]</div><div class="ttdoc">test data</div><div class="ttdef"><b>Definition</b> hash_search.cpp:24</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list_a3b7bbb0918c261bc216aef9e6dd39aa4_cgraph.svg" width="100%" height="368"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="ahash__search_8cpp_html_a6e1a77282bc65ad359d753d25df23243"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a></div><div class="ttdeci">int data[MAX]</div><div class="ttdoc">test data</div><div class="ttdef"><b>Definition</b> <a href="../../d1/df3/hash__search_8cpp_source.html#l00024">hash_search.cpp:24</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a15150d6d933c58190c9c1dd7d22c51ae" name="a15150d6d933c58190c9c1dd7d22c51ae"></a>
@@ -495,18 +506,20 @@ Here is the call graph for this function:</div>
 <p>&lt; Append node to the end</p>
 <p>&lt; Set the next value to the root</p>
 <p>&lt; Make end point to node</p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html#l00169">169</a> of file <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html">circular_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  169</span>                            {</div>
 <div class="line"><span class="lineno">  170</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a> == <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">  171</span>            <a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a> = <a class="code hl_typedef" href="../../d8/dee/avltree_8cpp.html#a74f0cf18a0e5b832d9994e2f2d022287">node</a>;        <span class="comment">///&lt; Set node as the root</span></div>
-<div class="line"><span class="lineno">  172</span>            <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;next = <a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a>;  <span class="comment">///&lt; Point node to itself</span></div>
-<div class="line"><span class="lineno">  173</span>            <a class="code hl_variable" href="#ab682f854f39582a20c9c4102f0482208">end</a> = <a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a>;         <span class="comment">///&lt; Set the end to the root</span></div>
+<div class="line"><span class="lineno">  171</span>            <a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a> = <a class="code hl_typedef" href="../../d8/dee/avltree_8cpp.html#a74f0cf18a0e5b832d9994e2f2d022287">node</a>;        </div>
+<div class="line"><span class="lineno">  172</span>            <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;next = <a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a>;  </div>
+<div class="line"><span class="lineno">  173</span>            <a class="code hl_variable" href="#ab682f854f39582a20c9c4102f0482208">end</a> = <a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a>;         </div>
 <div class="line"><span class="lineno">  174</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  175</span>            <a class="code hl_variable" href="#ab682f854f39582a20c9c4102f0482208">end</a>-&gt;<a class="code hl_variable" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html#a7c867b8e1034a6f5da490c8b8c09cb77">next</a> = <a class="code hl_typedef" href="../../d8/dee/avltree_8cpp.html#a74f0cf18a0e5b832d9994e2f2d022287">node</a>;   <span class="comment">///&lt; Append node to the end</span></div>
-<div class="line"><span class="lineno">  176</span>            <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;next = <a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a>;  <span class="comment">///&lt; Set the next value to the root</span></div>
-<div class="line"><span class="lineno">  177</span>            <a class="code hl_variable" href="#ab682f854f39582a20c9c4102f0482208">end</a> = <a class="code hl_typedef" href="../../d8/dee/avltree_8cpp.html#a74f0cf18a0e5b832d9994e2f2d022287">node</a>;         <span class="comment">///&lt; Make end point to node</span></div>
+<div class="line"><span class="lineno">  175</span>            <a class="code hl_variable" href="#ab682f854f39582a20c9c4102f0482208">end</a>-&gt;<a class="code hl_variable" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html#a7c867b8e1034a6f5da490c8b8c09cb77">next</a> = <a class="code hl_typedef" href="../../d8/dee/avltree_8cpp.html#a74f0cf18a0e5b832d9994e2f2d022287">node</a>;   </div>
+<div class="line"><span class="lineno">  176</span>            <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;next = <a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a>;  </div>
+<div class="line"><span class="lineno">  177</span>            <a class="code hl_variable" href="#ab682f854f39582a20c9c4102f0482208">end</a> = <a class="code hl_typedef" href="../../d8/dee/avltree_8cpp.html#a74f0cf18a0e5b832d9994e2f2d022287">node</a>;         </div>
 <div class="line"><span class="lineno">  178</span>        }</div>
 <div class="line"><span class="lineno">  179</span>    }</div>
-<div class="ttc" id="astructoperations__on__datastructures_1_1circular__linked__list_1_1_node_html_a7c867b8e1034a6f5da490c8b8c09cb77"><div class="ttname"><a href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html#a7c867b8e1034a6f5da490c8b8c09cb77">operations_on_datastructures::circular_linked_list::Node::next</a></div><div class="ttdeci">Node * next</div><div class="ttdoc">The Node's successor.</div><div class="ttdef"><b>Definition</b> circular_linked_list.cpp:34</div></div>
+<div class="ttc" id="astructoperations__on__datastructures_1_1circular__linked__list_1_1_node_html_a7c867b8e1034a6f5da490c8b8c09cb77"><div class="ttname"><a href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html#a7c867b8e1034a6f5da490c8b8c09cb77">operations_on_datastructures::circular_linked_list::Node::next</a></div><div class="ttdeci">Node * next</div><div class="ttdoc">The Node's successor.</div><div class="ttdef"><b>Definition</b> <a href="../../de/d33/circular__linked__list_8cpp_source.html#l00034">circular_linked_list.cpp:34</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -541,6 +554,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Reference to <a class="el" href="../../d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html" title="A class that implements a Circular Linked List.">CircularLinkedList</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html#l00112">112</a> of file <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html">circular_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  112</span>                                                                       {</div>
 <div class="line"><span class="lineno">  113</span>        <a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a> = other.root;</div>
 <div class="line"><span class="lineno">  114</span>        <a class="code hl_variable" href="#ab682f854f39582a20c9c4102f0482208">end</a> = other.end;</div>
@@ -582,6 +597,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Reference to <a class="el" href="../../d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html" title="A class that implements a Circular Linked List.">CircularLinkedList</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html#l00097">97</a> of file <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html">circular_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   97</span>                                                                   {</div>
 <div class="line"><span class="lineno">   98</span>        <a class="code hl_function" href="#a398d6cc927a2c8e4a156ae2806f48986">erase</a>();</div>
 <div class="line"><span class="lineno">   99</span>        <a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a> = <span class="keyword">nullptr</span>;</div>
@@ -592,12 +609,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  104</span>        }</div>
 <div class="line"><span class="lineno">  105</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><span class="lineno">  106</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list_a9cc37166f2f73763df39894b675f89c9_cgraph.svg" width="100%" height="428"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac341901e926b3fa3a796c64ca572f592" name="ac341901e926b3fa3a796c64ca572f592"></a>
@@ -625,14 +637,11 @@ Here is the call graph for this function:</div>
 
 <p>Prints the values of the Circular Linked List, beginning from the root <a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html" title="A Node struct that represents a single Node in a Binary Tree.">Node</a>. </p>
 <p>Goes through each <a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html" title="A Node struct that represents a single Node in a Binary Tree.">Node</a> from the root and prints them out in order </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  187</span>{ <a class="code hl_function" href="#ac341901e926b3fa3a796c64ca572f592">print</a>(<a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a>); }</div>
-<div class="ttc" id="aclassoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list_html_ac341901e926b3fa3a796c64ca572f592"><div class="ttname"><a href="#ac341901e926b3fa3a796c64ca572f592">operations_on_datastructures::circular_linked_list::CircularLinkedList::print</a></div><div class="ttdeci">void print()</div><div class="ttdoc">Prints the values of the Circular Linked List, beginning from the root Node.</div><div class="ttdef"><b>Definition</b> circular_linked_list.cpp:187</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list_ac341901e926b3fa3a796c64ca572f592_cgraph.svg" width="203" height="91"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html#l00187">187</a> of file <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html">circular_linked_list.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  187</span>{ <a class="code hl_function" href="#ac341901e926b3fa3a796c64ca572f592">print</a>(<a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a>); }</div>
+<div class="ttc" id="aclassoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list_html_ac341901e926b3fa3a796c64ca572f592"><div class="ttname"><a href="#ac341901e926b3fa3a796c64ca572f592">operations_on_datastructures::circular_linked_list::CircularLinkedList::print</a></div><div class="ttdeci">void print()</div><div class="ttdoc">Prints the values of the Circular Linked List, beginning from the root Node.</div><div class="ttdef"><b>Definition</b> <a href="../../de/d33/circular__linked__list_8cpp_source.html#l00187">circular_linked_list.cpp:187</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a424b17ddc672b25fe0bd9dc8612fba21" name="a424b17ddc672b25fe0bd9dc8612fba21"></a>
@@ -666,19 +675,20 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html#l00196">196</a> of file <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html">circular_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  196</span>                           {</div>
 <div class="line"><span class="lineno">  197</span>        <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a>* temp = <a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a>;</div>
 <div class="line"><span class="lineno">  198</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a> == <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">  199</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Empty List!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  199</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Empty List!\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  200</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  201</span>        }</div>
 <div class="line"><span class="lineno">  202</span>        <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno">  203</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; temp-&gt;data &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">  203</span>            std::cout &lt;&lt; temp-&gt;data &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
 <div class="line"><span class="lineno">  204</span>            temp = temp-&gt;next;</div>
 <div class="line"><span class="lineno">  205</span>        } <span class="keywordflow">while</span> (temp != <a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a>);</div>
-<div class="line"><span class="lineno">  206</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  206</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  207</span>    }</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -692,7 +702,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt; operations_on_datastructures::circular_linked_list::CircularLinkedList::values </td>
+          <td class="memname">std::vector&lt; int64_t &gt; operations_on_datastructures::circular_linked_list::CircularLinkedList::values </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -705,15 +715,12 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Returns a <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> of the values of the Circular Linked List. </p>
-<p>Starting from the root <a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html" title="A Node struct that represents a single Node in a Binary Tree.">Node</a>, appends each value of the list to a <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> and returns it </p><dl class="section return"><dt>Returns</dt><dd>A <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> of the list's values </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  214</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#a53611ec1fef92eeeb875aea1bde1e4de">values</a>(<a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a>); }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list_a53611ec1fef92eeeb875aea1bde1e4de_cgraph.svg" width="203" height="91"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p>Returns a std::vector of the values of the Circular Linked List. </p>
+<p>Starting from the root <a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html" title="A Node struct that represents a single Node in a Binary Tree.">Node</a>, appends each value of the list to a std::vector and returns it </p><dl class="section return"><dt>Returns</dt><dd>A std::vector of the list's values </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html#l00214">214</a> of file <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html">circular_linked_list.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  214</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#a53611ec1fef92eeeb875aea1bde1e4de">values</a>(<a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a>); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a03a896b34d27fda69049827e0c4dab42" name="a03a896b34d27fda69049827e0c4dab42"></a>
@@ -726,7 +733,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt; operations_on_datastructures::circular_linked_list::CircularLinkedList::values </td>
+          <td class="memname">std::vector&lt; int64_t &gt; operations_on_datastructures::circular_linked_list::CircularLinkedList::values </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html">Node</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span></td><td>)</td>
           <td></td>
@@ -739,35 +746,30 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Returns a <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> of the values of the Circular Linked List, beginning from a given <a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html" title="A Node struct that represents a single Node in a Binary Tree.">Node</a>. </p>
-<p>Starting from a given <a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html" title="A Node struct that represents a single Node in a Binary Tree.">Node</a>, appends each value of the list to a <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> and returns it </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns a std::vector of the values of the Circular Linked List, beginning from a given <a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html" title="A Node struct that represents a single Node in a Binary Tree.">Node</a>. </p>
+<p>Starting from a given <a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html" title="A Node struct that represents a single Node in a Binary Tree.">Node</a>, appends each value of the list to a std::vector and returns it </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">root</td><td>The <a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html" title="A Node struct that represents a single Node in a Binary Tree.">Node</a> to start at </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> of the list's values </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A std::vector of the list's values </dd></dl>
 <p>&lt; Return empty vector</p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html#l00223">223</a> of file <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html">circular_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  223</span>                                          {</div>
-<div class="line"><span class="lineno">  224</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> res;</div>
+<div class="line"><span class="lineno">  224</span>        std::vector&lt;int64_t&gt; res;</div>
 <div class="line"><span class="lineno">  225</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a> == <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">  226</span>            <span class="keywordflow">return</span> res;  <span class="comment">///&lt; Return empty vector</span></div>
+<div class="line"><span class="lineno">  226</span>            <span class="keywordflow">return</span> res;  </div>
 <div class="line"><span class="lineno">  227</span>        }</div>
 <div class="line"><span class="lineno">  228</span>        <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a>* temp = <a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a>;</div>
 <div class="line"><span class="lineno">  229</span>        <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno">  230</span>            res.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(temp-&gt;data);</div>
+<div class="line"><span class="lineno">  230</span>            res.push_back(temp-&gt;data);</div>
 <div class="line"><span class="lineno">  231</span>            temp = temp-&gt;next;</div>
 <div class="line"><span class="lineno">  232</span>        } <span class="keywordflow">while</span> (temp != <a class="code hl_variable" href="#a5d5cebd6bc906c60763fc6be10cfdd13">root</a>);</div>
 <div class="line"><span class="lineno">  233</span>        <span class="keywordflow">return</span> res;</div>
 <div class="line"><span class="lineno">  234</span>    }</div>
-<div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list_a03a896b34d27fda69049827e0c4dab42_cgraph.svg" width="406" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -792,12 +794,40 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Pointer to the last <a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html" title="A Node struct that represents a single Node in a Binary Tree.">Node</a>. </p>
-<div class="fragment"><div class="line"><span class="lineno">   60</span>{};  <span class="comment">///&lt; Pointer to the last Node</span></div>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html#l00060">60</a> of file <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html">circular_linked_list.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   60</span>{};  </div>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a5d5cebd6bc906c60763fc6be10cfdd13" name="a5d5cebd6bc906c60763fc6be10cfdd13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d5cebd6bc906c60763fc6be10cfdd13">&#9670;&#160;</a></span>root</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html">Node</a>* operations_on_datastructures::circular_linked_list::CircularLinkedList::root</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pointer to the root <a class="el" href="../../da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html" title="A Node struct that represents a single Node in a Binary Tree.">Node</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html">circular_linked_list.cpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>operations_on_datastructures/<a class="el" href="../../de/d33/circular__linked__list_8cpp.html">circular_linked_list.cpp</a></li>
+<li>operations_on_datastructures/<a class="el" href="../../de/d33/circular__linked__list_8cpp_source.html">circular_linked_list.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

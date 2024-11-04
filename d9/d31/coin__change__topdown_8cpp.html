@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: dynamic_programming/coin_change_topdown.cpp File Reference</title>
+<title>TheAlgorithms/C++: dynamic_programming/coin_change_topdown.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -122,7 +139,9 @@ Include dependency graph for coin_change_topdown.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d29/coin__change__topdown_8cpp__incl.svg" width="335" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d9/d31/coin__change__topdown_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d24/namespacedynamic__programming.html">dynamic_programming</a></td></tr>
@@ -135,7 +154,7 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ac816a4ae8a29c156b90377041000929a" id="r_ac816a4ae8a29c156b90377041000929a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ac816a4ae8a29c156b90377041000929a"><td class="memTemplItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac816a4ae8a29c156b90377041000929a">dynamic_programming::mincoins_topdown::mincoins</a> (const T &amp;n, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;coins, const int16_t &amp;t, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; dp)</td></tr>
+<tr class="memitem:ac816a4ae8a29c156b90377041000929a"><td class="memTemplItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac816a4ae8a29c156b90377041000929a">dynamic_programming::mincoins_topdown::mincoins</a> (const T &amp;n, const std::vector&lt; T &gt; &amp;coins, const int16_t &amp;t, std::vector&lt; T &gt; dp)</td></tr>
 <tr class="memdesc:ac816a4ae8a29c156b90377041000929a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This implementation is for finding minimum number of coins .  <br /></td></tr>
 <tr class="separator:ac816a4ae8a29c156b90377041000929a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
@@ -152,6 +171,8 @@ Functions</h2></td></tr>
 <li>Bottom up appraoch Top down approach involves a vector with all elements initialised to 0. It is based on optimal substructure and overlapping subproblems. Overall time complexity of coin change problem is O(n*t) For example: example 1:- Coins: {1,7,10} Target:15 Therfore minimum number of coins required = 3 of denomination 1,7 and 7. <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/webdesignbydivyansh" target="_blank">Divyansh Kushwaha</a> </dd></dl>
 </li>
 </ol>
+
+<p class="definition">Definition in file <a class="el" href="../../d9/d31/coin__change__topdown_8cpp_source.html">coin_change_topdown.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -170,17 +191,14 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d31/coin__change__topdown_8cpp_source.html#l00091">91</a> of file <a class="el" href="../../d9/d31/coin__change__topdown_8cpp_source.html">coin_change_topdown.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   91</span>           {</div>
 <div class="line"><span class="lineno">   92</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// execute the test</span></div>
 <div class="line"><span class="lineno">   93</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   94</span>}</div>
-<div class="ttc" id="acoin__change__topdown_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Test implementations.</div><div class="ttdef"><b>Definition</b> coin_change_topdown.cpp:74</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d31/coin__change__topdown_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="322" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="acoin__change__topdown_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d31/coin__change__topdown_8cpp_source.html#l00074">coin_change_topdown.cpp:74</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac816a4ae8a29c156b90377041000929a" name="ac816a4ae8a29c156b90377041000929a"></a>
@@ -199,7 +217,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>coins</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>coins</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -209,7 +227,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt;</td>          <td class="paramname"><span class="paramname"><em>dp</em></span>&#160;)</td>
+          <td class="paramtype">std::vector&lt; T &gt;</td>          <td class="paramname"><span class="paramname"><em>dp</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -226,6 +244,8 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>minimum number of coins </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d31/coin__change__topdown_8cpp_source.html#l00047">47</a> of file <a class="el" href="../../d9/d31/coin__change__topdown_8cpp_source.html">coin_change_topdown.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   48</span>                                  {</div>
 <div class="line"><span class="lineno">   49</span>    <span class="keywordflow">if</span> (n == 0) {</div>
 <div class="line"><span class="lineno">   50</span>        <span class="keywordflow">return</span> 0;</div>
@@ -238,21 +258,15 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">   57</span>        <span class="keywordflow">if</span> (n - coins[i] &gt;= 0) {  <span class="comment">// if after subtracting the current</span></div>
 <div class="line"><span class="lineno">   58</span>                                  <span class="comment">// denomination is it greater than 0 or not</span></div>
 <div class="line"><span class="lineno">   59</span>            <span class="keywordtype">int</span> sub = <a class="code hl_function" href="#ac816a4ae8a29c156b90377041000929a">mincoins</a>(n - coins[i], coins, t, <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>);</div>
-<div class="line"><span class="lineno">   60</span>            ans = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(ans, sub + 1);</div>
+<div class="line"><span class="lineno">   60</span>            ans = std::min(ans, sub + 1);</div>
 <div class="line"><span class="lineno">   61</span>        }</div>
 <div class="line"><span class="lineno">   62</span>    }</div>
 <div class="line"><span class="lineno">   63</span>    <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[n] = ans;</div>
 <div class="line"><span class="lineno">   64</span>    <span class="keywordflow">return</span> <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[n];  <span class="comment">// returns minimum number of coins</span></div>
 <div class="line"><span class="lineno">   65</span>}</div>
-<div class="ttc" id="acoin__change__topdown_8cpp_html_ac816a4ae8a29c156b90377041000929a"><div class="ttname"><a href="#ac816a4ae8a29c156b90377041000929a">dynamic_programming::mincoins_topdown::mincoins</a></div><div class="ttdeci">int64_t mincoins(const T &amp;n, const std::vector&lt; T &gt; &amp;coins, const int16_t &amp;t, std::vector&lt; T &gt; dp)</div><div class="ttdoc">This implementation is for finding minimum number of coins .</div><div class="ttdef"><b>Definition</b> coin_change_topdown.cpp:47</div></div>
-<div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
-<div class="ttc" id="anamespacedp_html"><div class="ttname"><a href="../../df/d88/namespacedp.html">dp</a></div><div class="ttdoc">for std::vector</div><div class="ttdef"><b>Definition</b> partition_problem.cpp:39</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d31/coin__change__topdown_8cpp_ac816a4ae8a29c156b90377041000929a_cgraph.svg" width="280" height="91"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="acoin__change__topdown_8cpp_html_ac816a4ae8a29c156b90377041000929a"><div class="ttname"><a href="#ac816a4ae8a29c156b90377041000929a">dynamic_programming::mincoins_topdown::mincoins</a></div><div class="ttdeci">int64_t mincoins(const T &amp;n, const std::vector&lt; T &gt; &amp;coins, const int16_t &amp;t, std::vector&lt; T &gt; dp)</div><div class="ttdoc">This implementation is for finding minimum number of coins .</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d31/coin__change__topdown_8cpp_source.html#l00047">coin_change_topdown.cpp:47</a></div></div>
+<div class="ttc" id="anamespacedp_html"><div class="ttname"><a href="../../df/d88/namespacedp.html">dp</a></div><div class="ttdoc">for std::vector</div><div class="ttdef"><b>Definition</b> <a href="../../de/d8c/partition__problem_8cpp_source.html#l00039">partition_problem.cpp:39</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -280,27 +294,22 @@ Here is the call graph for this function:</div>
 
 <p>Test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d31/coin__change__topdown_8cpp_source.html#l00074">74</a> of file <a class="el" href="../../d9/d31/coin__change__topdown_8cpp_source.html">coin_change_topdown.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   74</span>                   {</div>
 <div class="line"><span class="lineno">   75</span>    <span class="comment">// example 1: number of coins=3 and minimum coins required=3(7,7,1)</span></div>
 <div class="line"><span class="lineno">   76</span>    <span class="keyword">const</span> int64_t n1 = 15;</div>
 <div class="line"><span class="lineno">   77</span>    <span class="keyword">const</span> int8_t t1 = 3, a1 = 0;</div>
-<div class="line"><span class="lineno">   78</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nTest 1...&quot;</span>;</div>
-<div class="line"><span class="lineno">   79</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> arr1{1, 7, 10};</div>
-<div class="line"><span class="lineno">   80</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> dp1(n1 + 1);</div>
+<div class="line"><span class="lineno">   78</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nTest 1...&quot;</span>;</div>
+<div class="line"><span class="lineno">   79</span>    std::vector&lt;int64_t&gt; arr1{1, 7, 10};</div>
+<div class="line"><span class="lineno">   80</span>    std::vector&lt;int64_t&gt; dp1(n1 + 1);</div>
 <div class="line"><span class="lineno">   81</span>    <a class="code hl_function" href="../../de/d85/decimal__to__roman__numeral_8cpp.html#a88203bd297e8405160c132faa1187780">fill</a>(dp1.begin(), dp1.end(), a1);</div>
 <div class="line"><span class="lineno">   82</span>    assert(dynamic_programming::mincoins_topdown::mincoins(n1, arr1, t1, dp1) ==</div>
 <div class="line"><span class="lineno">   83</span>           3);</div>
-<div class="line"><span class="lineno">   84</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Passed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   84</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Passed\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   85</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="adecimal__to__roman__numeral_8cpp_html_a88203bd297e8405160c132faa1187780"><div class="ttname"><a href="../../de/d85/decimal__to__roman__numeral_8cpp.html#a88203bd297e8405160c132faa1187780">fill</a></div><div class="ttdeci">std::string fill(char c, int n)</div><div class="ttdef"><b>Definition</b> decimal_to_roman_numeral.cpp:15</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d31/coin__change__topdown_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="224" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="adecimal__to__roman__numeral_8cpp_html_a88203bd297e8405160c132faa1187780"><div class="ttname"><a href="../../de/d85/decimal__to__roman__numeral_8cpp.html#a88203bd297e8405160c132faa1187780">fill</a></div><div class="ttdeci">std::string fill(char c, int n)</div><div class="ttdef"><b>Definition</b> <a href="../../de/d85/decimal__to__roman__numeral_8cpp_source.html#l00015">decimal_to_roman_numeral.cpp:15</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

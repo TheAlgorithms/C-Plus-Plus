@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: range_queries::fenwick_tree Class Reference</title>
+<title>TheAlgorithms/C++: range_queries::fenwick_tree Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -124,7 +141,7 @@ Collaboration diagram for range_queries::fenwick_tree:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5ea37183524553bbf2234a36a44a4b9a" id="r_a5ea37183524553bbf2234a36a44a4b9a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a5ea37183524553bbf2234a36a44a4b9a"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a5ea37183524553bbf2234a36a44a4b9a">fenwick_tree</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;arr)</td></tr>
+<tr class="memitem:a5ea37183524553bbf2234a36a44a4b9a"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a5ea37183524553bbf2234a36a44a4b9a">fenwick_tree</a> (const std::vector&lt; T &gt; &amp;arr)</td></tr>
 <tr class="memdesc:a5ea37183524553bbf2234a36a44a4b9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class Constructor.  <br /></td></tr>
 <tr class="separator:a5ea37183524553bbf2234a36a44a4b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef7ba885b91af093e9e514358fa0f36c" id="r_aef7ba885b91af093e9e514358fa0f36c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
@@ -151,16 +168,17 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:af9f543aa5976b8cc5422490b3d6250c6" id="r_af9f543aa5976b8cc5422490b3d6250c6"><td class="memItemLeft" align="right" valign="top"><a id="af9f543aa5976b8cc5422490b3d6250c6" name="af9f543aa5976b8cc5422490b3d6250c6"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>n</b> = 0</td></tr>
-<tr class="memdesc:af9f543aa5976b8cc5422490b3d6250c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">No. of elements present in input array. <br /></td></tr>
+<tr class="memitem:af9f543aa5976b8cc5422490b3d6250c6" id="r_af9f543aa5976b8cc5422490b3d6250c6"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9f543aa5976b8cc5422490b3d6250c6">n</a> = 0</td></tr>
+<tr class="memdesc:af9f543aa5976b8cc5422490b3d6250c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">No. of elements present in input array.  <br /></td></tr>
 <tr class="separator:af9f543aa5976b8cc5422490b3d6250c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7b7a8c1c5724ed8683d7e28bef526e6" id="r_af7b7a8c1c5724ed8683d7e28bef526e6"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7b7a8c1c5724ed8683d7e28bef526e6">bit</a> {}</td></tr>
+<tr class="memitem:af7b7a8c1c5724ed8683d7e28bef526e6" id="r_af7b7a8c1c5724ed8683d7e28bef526e6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7b7a8c1c5724ed8683d7e28bef526e6">bit</a> {}</td></tr>
 <tr class="memdesc:af7b7a8c1c5724ed8683d7e28bef526e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array that represents Binary Indexed Tree.  <br /></td></tr>
 <tr class="separator:af7b7a8c1c5724ed8683d7e28bef526e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The class that initializes the Fenwick Tree. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d2e/fenwick__tree_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../d6/d2e/fenwick__tree_8cpp_source.html">fenwick_tree.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5ea37183524553bbf2234a36a44a4b9a" name="a5ea37183524553bbf2234a36a44a4b9a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5ea37183524553bbf2234a36a44a4b9a">&#9670;&#160;</a></span>fenwick_tree() <span class="overload">[1/2]</span></h2>
@@ -176,7 +194,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">range_queries::fenwick_tree::fenwick_tree </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span></td><td>)</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -201,23 +219,18 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   50</span>                                                   : <a class="code hl_variable" href="#af9f543aa5976b8cc5422490b3d6250c6">n</a>(arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()) {</div>
-<div class="line"><span class="lineno">   51</span>        <a class="code hl_variable" href="#af7b7a8c1c5724ed8683d7e28bef526e6">bit</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/assign.html">assign</a>(<a class="code hl_variable" href="#af9f543aa5976b8cc5422490b3d6250c6">n</a> + 1, 0);</div>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d2e/fenwick__tree_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../d6/d2e/fenwick__tree_8cpp_source.html">fenwick_tree.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   50</span>                                                   : <a class="code hl_variable" href="#af9f543aa5976b8cc5422490b3d6250c6">n</a>(arr.size()) {</div>
+<div class="line"><span class="lineno">   51</span>        <a class="code hl_variable" href="#af7b7a8c1c5724ed8683d7e28bef526e6">bit</a>.assign(<a class="code hl_variable" href="#af9f543aa5976b8cc5422490b3d6250c6">n</a> + 1, 0);</div>
 <div class="line"><span class="lineno">   52</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="#af9f543aa5976b8cc5422490b3d6250c6">n</a>; ++i) {</div>
 <div class="line"><span class="lineno">   53</span>            <a class="code hl_function" href="#a19dea5e88bbd7683a719030623315de9">update</a>(i, arr[i]);</div>
 <div class="line"><span class="lineno">   54</span>        }</div>
 <div class="line"><span class="lineno">   55</span>    }</div>
-<div class="ttc" id="aassign_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/assign.html">std::vector::assign</a></div><div class="ttdeci">T assign(T... args)</div></div>
-<div class="ttc" id="aclassrange__queries_1_1fenwick__tree_html_a19dea5e88bbd7683a719030623315de9"><div class="ttname"><a href="#a19dea5e88bbd7683a719030623315de9">range_queries::fenwick_tree::update</a></div><div class="ttdeci">void update(T id, T val)</div><div class="ttdoc">Updates the value of an element in original array and accordingly updates the values in BIT array.</div><div class="ttdef"><b>Definition</b> fenwick_tree.cpp:75</div></div>
-<div class="ttc" id="aclassrange__queries_1_1fenwick__tree_html_af7b7a8c1c5724ed8683d7e28bef526e6"><div class="ttname"><a href="#af7b7a8c1c5724ed8683d7e28bef526e6">range_queries::fenwick_tree::bit</a></div><div class="ttdeci">std::vector&lt; int &gt; bit</div><div class="ttdoc">Array that represents Binary Indexed Tree.</div><div class="ttdef"><b>Definition</b> fenwick_tree.cpp:34</div></div>
-<div class="ttc" id="aclassrange__queries_1_1fenwick__tree_html_af9f543aa5976b8cc5422490b3d6250c6"><div class="ttname"><a href="#af9f543aa5976b8cc5422490b3d6250c6">range_queries::fenwick_tree::n</a></div><div class="ttdeci">size_t n</div><div class="ttdoc">No. of elements present in input array.</div><div class="ttdef"><b>Definition</b> fenwick_tree.cpp:33</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d0d/classrange__queries_1_1fenwick__tree_a5ea37183524553bbf2234a36a44a4b9a_cgraph.svg" width="574" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassrange__queries_1_1fenwick__tree_html_a19dea5e88bbd7683a719030623315de9"><div class="ttname"><a href="#a19dea5e88bbd7683a719030623315de9">range_queries::fenwick_tree::update</a></div><div class="ttdeci">void update(T id, T val)</div><div class="ttdoc">Updates the value of an element in original array and accordingly updates the values in BIT array.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d2e/fenwick__tree_8cpp_source.html#l00075">fenwick_tree.cpp:75</a></div></div>
+<div class="ttc" id="aclassrange__queries_1_1fenwick__tree_html_af7b7a8c1c5724ed8683d7e28bef526e6"><div class="ttname"><a href="#af7b7a8c1c5724ed8683d7e28bef526e6">range_queries::fenwick_tree::bit</a></div><div class="ttdeci">std::vector&lt; int &gt; bit</div><div class="ttdoc">Array that represents Binary Indexed Tree.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d2e/fenwick__tree_8cpp_source.html#l00034">fenwick_tree.cpp:34</a></div></div>
+<div class="ttc" id="aclassrange__queries_1_1fenwick__tree_html_af9f543aa5976b8cc5422490b3d6250c6"><div class="ttname"><a href="#af9f543aa5976b8cc5422490b3d6250c6">range_queries::fenwick_tree::n</a></div><div class="ttdeci">size_t n</div><div class="ttdoc">No. of elements present in input array.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d2e/fenwick__tree_8cpp_source.html#l00033">fenwick_tree.cpp:33</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aef7ba885b91af093e9e514358fa0f36c" name="aef7ba885b91af093e9e514358fa0f36c"></a>
@@ -259,13 +272,10 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   64</span>: <a class="code hl_variable" href="#af9f543aa5976b8cc5422490b3d6250c6">n</a>(x) { <a class="code hl_variable" href="#af7b7a8c1c5724ed8683d7e28bef526e6">bit</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/assign.html">assign</a>(<a class="code hl_variable" href="#af9f543aa5976b8cc5422490b3d6250c6">n</a> + 1, 0); }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d0d/classrange__queries_1_1fenwick__tree_aef7ba885b91af093e9e514358fa0f36c_cgraph.svg" width="344" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../d6/d2e/fenwick__tree_8cpp_source.html#l00064">64</a> of file <a class="el" href="../../d6/d2e/fenwick__tree_8cpp_source.html">fenwick_tree.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   64</span>: <a class="code hl_variable" href="#af9f543aa5976b8cc5422490b3d6250c6">n</a>(x) { <a class="code hl_variable" href="#af7b7a8c1c5724ed8683d7e28bef526e6">bit</a>.assign(<a class="code hl_variable" href="#af9f543aa5976b8cc5422490b3d6250c6">n</a> + 1, 0); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -300,6 +310,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Offset of index. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d2e/fenwick__tree_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../d6/d2e/fenwick__tree_8cpp_source.html">fenwick_tree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   41</span>{ <span class="keywordflow">return</span> (x &amp; (-x)); }</div>
 </div><!-- fragment -->
 </div>
@@ -343,6 +355,8 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Sum of elements in range from 0 to id. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d2e/fenwick__tree_8cpp_source.html#l00090">90</a> of file <a class="el" href="../../d6/d2e/fenwick__tree_8cpp_source.html">fenwick_tree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   90</span>                  {</div>
 <div class="line"><span class="lineno">   91</span>        <span class="keywordtype">id</span>++;</div>
 <div class="line"><span class="lineno">   92</span>        T res = 0;</div>
@@ -352,13 +366,8 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">   96</span>        }</div>
 <div class="line"><span class="lineno">   97</span>        <span class="keywordflow">return</span> res;</div>
 <div class="line"><span class="lineno">   98</span>    }</div>
-<div class="ttc" id="aclassrange__queries_1_1fenwick__tree_html_ab492ebf07cab0e3c32d277ad986de801"><div class="ttname"><a href="#ab492ebf07cab0e3c32d277ad986de801">range_queries::fenwick_tree::offset</a></div><div class="ttdeci">int offset(int x)</div><div class="ttdoc">Returns the highest power of two which is not more than x.</div><div class="ttdef"><b>Definition</b> fenwick_tree.cpp:41</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d0d/classrange__queries_1_1fenwick__tree_a1fa0559d987fde0044761b17b35f5abd_cgraph.svg" width="370" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassrange__queries_1_1fenwick__tree_html_ab492ebf07cab0e3c32d277ad986de801"><div class="ttname"><a href="#ab492ebf07cab0e3c32d277ad986de801">range_queries::fenwick_tree::offset</a></div><div class="ttdeci">int offset(int x)</div><div class="ttdoc">Returns the highest power of two which is not more than x.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d2e/fenwick__tree_8cpp_source.html#l00041">fenwick_tree.cpp:41</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0914a4b1401a7c427de91c92885724fe" name="a0914a4b1401a7c427de91c92885724fe"></a>
@@ -397,14 +406,11 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Sum of elements in range from L to R. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  106</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#a1fa0559d987fde0044761b17b35f5abd">sum</a>(r) - <a class="code hl_function" href="#a1fa0559d987fde0044761b17b35f5abd">sum</a>(l - 1); }</div>
-<div class="ttc" id="aclassrange__queries_1_1fenwick__tree_html_a1fa0559d987fde0044761b17b35f5abd"><div class="ttname"><a href="#a1fa0559d987fde0044761b17b35f5abd">range_queries::fenwick_tree::sum</a></div><div class="ttdeci">int sum(T id)</div><div class="ttdoc">Returns the sum of elements in range from 0 to ID.</div><div class="ttdef"><b>Definition</b> fenwick_tree.cpp:90</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d0d/classrange__queries_1_1fenwick__tree_a0914a4b1401a7c427de91c92885724fe_cgraph.svg" width="574" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../d6/d2e/fenwick__tree_8cpp_source.html#l00106">106</a> of file <a class="el" href="../../d6/d2e/fenwick__tree_8cpp_source.html">fenwick_tree.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  106</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#a1fa0559d987fde0044761b17b35f5abd">sum</a>(r) - <a class="code hl_function" href="#a1fa0559d987fde0044761b17b35f5abd">sum</a>(l - 1); }</div>
+<div class="ttc" id="aclassrange__queries_1_1fenwick__tree_html_a1fa0559d987fde0044761b17b35f5abd"><div class="ttname"><a href="#a1fa0559d987fde0044761b17b35f5abd">range_queries::fenwick_tree::sum</a></div><div class="ttdeci">int sum(T id)</div><div class="ttdoc">Returns the sum of elements in range from 0 to ID.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d2e/fenwick__tree_8cpp_source.html#l00090">fenwick_tree.cpp:90</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a19dea5e88bbd7683a719030623315de9" name="a19dea5e88bbd7683a719030623315de9"></a>
@@ -451,6 +457,8 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d2e/fenwick__tree_8cpp_source.html#l00075">75</a> of file <a class="el" href="../../d6/d2e/fenwick__tree_8cpp_source.html">fenwick_tree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   75</span>                             {</div>
 <div class="line"><span class="lineno">   76</span>        <span class="keywordtype">id</span>++;</div>
 <div class="line"><span class="lineno">   77</span>        <span class="keywordflow">while</span> (<span class="keywordtype">id</span> &lt;= <a class="code hl_variable" href="#af9f543aa5976b8cc5422490b3d6250c6">n</a>) {</div>
@@ -458,12 +466,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">   79</span>            <span class="keywordtype">id</span> += <a class="code hl_function" href="#ab492ebf07cab0e3c32d277ad986de801">offset</a>(<span class="keywordtype">id</span>);</div>
 <div class="line"><span class="lineno">   80</span>        }</div>
 <div class="line"><span class="lineno">   81</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d0d/classrange__queries_1_1fenwick__tree_a19dea5e88bbd7683a719030623315de9_cgraph.svg" width="370" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -477,7 +480,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;int&gt; range_queries::fenwick_tree::bit {}</td>
+          <td class="memname">std::vector&lt;int&gt; range_queries::fenwick_tree::bit {}</td>
         </tr>
       </table>
   </td>
@@ -488,12 +491,40 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Array that represents Binary Indexed Tree. </p>
-<div class="fragment"><div class="line"><span class="lineno">   34</span>{};  <span class="comment">///&lt; Array that represents Binary Indexed Tree.</span></div>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d2e/fenwick__tree_8cpp_source.html#l00034">34</a> of file <a class="el" href="../../d6/d2e/fenwick__tree_8cpp_source.html">fenwick_tree.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   34</span>{};  </div>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="af9f543aa5976b8cc5422490b3d6250c6" name="af9f543aa5976b8cc5422490b3d6250c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f543aa5976b8cc5422490b3d6250c6">&#9670;&#160;</a></span>n</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t range_queries::fenwick_tree::n = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>No. of elements present in input array. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d2e/fenwick__tree_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../d6/d2e/fenwick__tree_8cpp_source.html">fenwick_tree.cpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>range_queries/<a class="el" href="../../d6/d2e/fenwick__tree_8cpp.html">fenwick_tree.cpp</a></li>
+<li>range_queries/<a class="el" href="../../d6/d2e/fenwick__tree_8cpp_source.html">fenwick_tree.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

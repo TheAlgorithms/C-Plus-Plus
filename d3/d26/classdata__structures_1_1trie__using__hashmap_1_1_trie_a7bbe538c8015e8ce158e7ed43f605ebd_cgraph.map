@@ -1,8 +1,0 @@
-<map id="data_structures::trie_using_hashmap::Trie::get_all_words" name="data_structures::trie_using_hashmap::Trie::get_all_words">
-<area shape="rect" id="Node000001" title="helper function to predict/recommend words that starts with a given prefix from the end of prefix&#39;s n..." alt="" coords="5,29,155,85"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="40,29,41,19,48,10,61,5,80,3,101,5,114,12,112,17,100,10,80,8,63,10,51,15,46,21,46,29"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/pop_back.html#" title=" " alt="" coords="208,19,352,45"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="155,45,193,40,193,45,156,50"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="203,68,357,94"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="156,64,187,67,187,73,155,69"/>
-</map>

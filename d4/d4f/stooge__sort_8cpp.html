@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: sorting/stooge_sort.cpp File Reference</title>
+<title>TheAlgorithms/C++: sorting/stooge_sort.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -121,10 +138,12 @@ Include dependency graph for stooge_sort.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/daf/stooge__sort_8cpp__incl.svg" width="351" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d4/d4f/stooge__sort_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac23852832437dc68327efe9b1da2d91b" id="r_ac23852832437dc68327efe9b1da2d91b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac23852832437dc68327efe9b1da2d91b">stoogeSort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; *L, size_t i, size_t j)</td></tr>
+<tr class="memitem:ac23852832437dc68327efe9b1da2d91b" id="r_ac23852832437dc68327efe9b1da2d91b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac23852832437dc68327efe9b1da2d91b">stoogeSort</a> (std::vector&lt; int &gt; *L, size_t i, size_t j)</td></tr>
 <tr class="memdesc:ac23852832437dc68327efe9b1da2d91b"><td class="mdescLeft">&#160;</td><td class="mdescRight">for IO operations  <br /></td></tr>
 <tr class="separator:ac23852832437dc68327efe9b1da2d91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1440a7779ac56f47a3f355ce4a8c7da0" id="r_a1440a7779ac56f47a3f355ce4a8c7da0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1440a7779ac56f47a3f355ce4a8c7da0">test1</a> ()</td></tr>
@@ -147,6 +166,8 @@ Functions</h2></td></tr>
 <li>sort last two thirds of the array</li>
 <li>sort first two thirds of the array It's time complexity is O(n^(log3/log1.5)), which is about O(n^2.7), which makes it to be not the most efficient sorting algorithm on the street on average. Space complexity is O(1). </li>
 </ul>
+
+<p class="definition">Definition in file <a class="el" href="../../d4/d4f/stooge__sort_8cpp_source.html">stooge_sort.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -172,24 +193,20 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d4f/stooge__sort_8cpp_source.html#l00079">79</a> of file <a class="el" href="../../d4/d4f/stooge__sort_8cpp_source.html">stooge_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   79</span>           {</div>
 <div class="line"><span class="lineno">   80</span>    <a class="code hl_function" href="#a1440a7779ac56f47a3f355ce4a8c7da0">test1</a>();</div>
 <div class="line"><span class="lineno">   81</span>    <a class="code hl_function" href="#a0283886819c7c140a023582b7269e2d0">test2</a>();</div>
 <div class="line"><span class="lineno">   82</span>    <a class="code hl_function" href="#a6d0455dd5c30adda100e95f0423c786e">test3</a>();</div>
 <div class="line"><span class="lineno">   83</span>    </div>
-<div class="line"><span class="lineno">   84</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   84</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   85</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   86</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="astooge__sort_8cpp_html_a0283886819c7c140a023582b7269e2d0"><div class="ttname"><a href="#a0283886819c7c140a023582b7269e2d0">test2</a></div><div class="ttdeci">void test2()</div><div class="ttdoc">Function to test sorting algorithm, one element.</div><div class="ttdef"><b>Definition</b> stooge_sort.cpp:57</div></div>
-<div class="ttc" id="astooge__sort_8cpp_html_a1440a7779ac56f47a3f355ce4a8c7da0"><div class="ttname"><a href="#a1440a7779ac56f47a3f355ce4a8c7da0">test1</a></div><div class="ttdeci">void test1()</div><div class="ttdoc">Function to test sorting algorithm.</div><div class="ttdef"><b>Definition</b> stooge_sort.cpp:47</div></div>
-<div class="ttc" id="astooge__sort_8cpp_html_a6d0455dd5c30adda100e95f0423c786e"><div class="ttname"><a href="#a6d0455dd5c30adda100e95f0423c786e">test3</a></div><div class="ttdeci">void test3()</div><div class="ttdoc">Function to test sorting algorithm, repeating elements.</div><div class="ttdef"><b>Definition</b> stooge_sort.cpp:67</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d4f/stooge__sort_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="448" height="258"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="astooge__sort_8cpp_html_a0283886819c7c140a023582b7269e2d0"><div class="ttname"><a href="#a0283886819c7c140a023582b7269e2d0">test2</a></div><div class="ttdeci">void test2()</div><div class="ttdoc">Function to test sorting algorithm, one element.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d4f/stooge__sort_8cpp_source.html#l00057">stooge_sort.cpp:57</a></div></div>
+<div class="ttc" id="astooge__sort_8cpp_html_a1440a7779ac56f47a3f355ce4a8c7da0"><div class="ttname"><a href="#a1440a7779ac56f47a3f355ce4a8c7da0">test1</a></div><div class="ttdeci">void test1()</div><div class="ttdoc">Function to test sorting algorithm.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d4f/stooge__sort_8cpp_source.html#l00047">stooge_sort.cpp:47</a></div></div>
+<div class="ttc" id="astooge__sort_8cpp_html_a6d0455dd5c30adda100e95f0423c786e"><div class="ttname"><a href="#a6d0455dd5c30adda100e95f0423c786e">test3</a></div><div class="ttdeci">void test3()</div><div class="ttdoc">Function to test sorting algorithm, repeating elements.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d4f/stooge__sort_8cpp_source.html#l00067">stooge_sort.cpp:67</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac23852832437dc68327efe9b1da2d91b" name="ac23852832437dc68327efe9b1da2d91b"></a>
@@ -201,7 +218,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void stoogeSort </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; *</td>          <td class="paramname"><span class="paramname"><em>L</em></span>, </td>
+          <td class="paramtype">std::vector&lt; int &gt; *</td>          <td class="paramname"><span class="paramname"><em>L</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -217,7 +234,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>for IO operations </p>
-<p>for vector for assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></p>
+<p>for vector for assert for std::is_sorted</p>
 <p>The <a class="el" href="#ac23852832437dc68327efe9b1da2d91b" title="for IO operations">stoogeSort()</a> function is used for sorting the array. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">L</td><td>- vector of values (int) to be sorted in in place (ascending order) </td></tr>
@@ -227,12 +244,14 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d4f/stooge__sort_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../d4/d4f/stooge__sort_8cpp_source.html">stooge_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   28</span>                                                       {</div>
 <div class="line"><span class="lineno">   29</span>    <span class="keywordflow">if</span> (i &gt;= j) {</div>
 <div class="line"><span class="lineno">   30</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">   31</span>    }</div>
 <div class="line"><span class="lineno">   32</span>    <span class="keywordflow">if</span> ((*L)[i] &gt; (*L)[j]) {</div>
-<div class="line"><span class="lineno">   33</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>((*L)[i], (*L)[j]);</div>
+<div class="line"><span class="lineno">   33</span>        std::swap((*L)[i], (*L)[j]);</div>
 <div class="line"><span class="lineno">   34</span>    }</div>
 <div class="line"><span class="lineno">   35</span>    <span class="keywordflow">if</span> (j - i &gt; 1) {</div>
 <div class="line"><span class="lineno">   36</span>        <span class="keywordtype">size_t</span> third = (j - i + 1) / 3;</div>
@@ -241,14 +260,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   39</span>        <a class="code hl_function" href="#ac23852832437dc68327efe9b1da2d91b">stoogeSort</a>(L, i, j - third);</div>
 <div class="line"><span class="lineno">   40</span>    }</div>
 <div class="line"><span class="lineno">   41</span>}</div>
-<div class="ttc" id="astooge__sort_8cpp_html_ac23852832437dc68327efe9b1da2d91b"><div class="ttname"><a href="#ac23852832437dc68327efe9b1da2d91b">stoogeSort</a></div><div class="ttdeci">void stoogeSort(std::vector&lt; int &gt; *L, size_t i, size_t j)</div><div class="ttdoc">for IO operations</div><div class="ttdef"><b>Definition</b> stooge_sort.cpp:28</div></div>
-<div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d4f/stooge__sort_8cpp_ac23852832437dc68327efe9b1da2d91b_cgraph.svg" width="222" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="astooge__sort_8cpp_html_ac23852832437dc68327efe9b1da2d91b"><div class="ttname"><a href="#ac23852832437dc68327efe9b1da2d91b">stoogeSort</a></div><div class="ttdeci">void stoogeSort(std::vector&lt; int &gt; *L, size_t i, size_t j)</div><div class="ttdoc">for IO operations</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d4f/stooge__sort_8cpp_source.html#l00028">stooge_sort.cpp:28</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1440a7779ac56f47a3f355ce4a8c7da0" name="a1440a7779ac56f47a3f355ce4a8c7da0"></a>
@@ -268,22 +281,14 @@ Here is the call graph for this function:</div>
 
 <p>Function to test sorting algorithm. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   47</span>             {</div>
-<div class="line"><span class="lineno">   48</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> L = { 8, 9, 10, 4, 3, 5, 1 };</div>
-<div class="line"><span class="lineno">   49</span>    <a class="code hl_function" href="#ac23852832437dc68327efe9b1da2d91b">stoogeSort</a>(&amp;L, 0, L.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() - 1);</div>
-<div class="line"><span class="lineno">   50</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(L), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(L)));</div>
-<div class="line"><span class="lineno">   51</span>}</div>
-<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="ais_sorted_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></div><div class="ttdeci">T is_sorted(T... args)</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d4f/stooge__sort_8cpp_a1440a7779ac56f47a3f355ce4a8c7da0_cgraph.svg" width="351" height="258"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../d4/d4f/stooge__sort_8cpp_source.html#l00047">47</a> of file <a class="el" href="../../d4/d4f/stooge__sort_8cpp_source.html">stooge_sort.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>             {</div>
+<div class="line"><span class="lineno">   48</span>    std::vector&lt;int&gt; L = { 8, 9, 10, 4, 3, 5, 1 };</div>
+<div class="line"><span class="lineno">   49</span>    <a class="code hl_function" href="#ac23852832437dc68327efe9b1da2d91b">stoogeSort</a>(&amp;L, 0, L.size() - 1);</div>
+<div class="line"><span class="lineno">   50</span>    assert(std::is_sorted(std::begin(L), std::end(L)));</div>
+<div class="line"><span class="lineno">   51</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0283886819c7c140a023582b7269e2d0" name="a0283886819c7c140a023582b7269e2d0"></a>
@@ -303,17 +308,14 @@ Here is the call graph for this function:</div>
 
 <p>Function to test sorting algorithm, one element. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   57</span>             {</div>
-<div class="line"><span class="lineno">   58</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> L = { -1 };</div>
-<div class="line"><span class="lineno">   59</span>    <a class="code hl_function" href="#ac23852832437dc68327efe9b1da2d91b">stoogeSort</a>(&amp;L, 0, L.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() - 1);</div>
-<div class="line"><span class="lineno">   60</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(L), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(L)));</div>
-<div class="line"><span class="lineno">   61</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d4f/stooge__sort_8cpp_a0283886819c7c140a023582b7269e2d0_cgraph.svg" width="351" height="258"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../d4/d4f/stooge__sort_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../d4/d4f/stooge__sort_8cpp_source.html">stooge_sort.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>             {</div>
+<div class="line"><span class="lineno">   58</span>    std::vector&lt;int&gt; L = { -1 };</div>
+<div class="line"><span class="lineno">   59</span>    <a class="code hl_function" href="#ac23852832437dc68327efe9b1da2d91b">stoogeSort</a>(&amp;L, 0, L.size() - 1);</div>
+<div class="line"><span class="lineno">   60</span>    assert(std::is_sorted(std::begin(L), std::end(L)));</div>
+<div class="line"><span class="lineno">   61</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6d0455dd5c30adda100e95f0423c786e" name="a6d0455dd5c30adda100e95f0423c786e"></a>
@@ -333,17 +335,14 @@ Here is the call graph for this function:</div>
 
 <p>Function to test sorting algorithm, repeating elements. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   67</span>             {</div>
-<div class="line"><span class="lineno">   68</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> L = { 1, 2, 5, 4, 1, 5 };</div>
-<div class="line"><span class="lineno">   69</span>    <a class="code hl_function" href="#ac23852832437dc68327efe9b1da2d91b">stoogeSort</a>(&amp;L, 0, L.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() - 1);</div>
-<div class="line"><span class="lineno">   70</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(L), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(L)));</div>
-<div class="line"><span class="lineno">   71</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d4f/stooge__sort_8cpp_a6d0455dd5c30adda100e95f0423c786e_cgraph.svg" width="351" height="258"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../d4/d4f/stooge__sort_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../d4/d4f/stooge__sort_8cpp_source.html">stooge_sort.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   67</span>             {</div>
+<div class="line"><span class="lineno">   68</span>    std::vector&lt;int&gt; L = { 1, 2, 5, 4, 1, 5 };</div>
+<div class="line"><span class="lineno">   69</span>    <a class="code hl_function" href="#ac23852832437dc68327efe9b1da2d91b">stoogeSort</a>(&amp;L, 0, L.size() - 1);</div>
+<div class="line"><span class="lineno">   70</span>    assert(std::is_sorted(std::begin(L), std::end(L)));</div>
+<div class="line"><span class="lineno">   71</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

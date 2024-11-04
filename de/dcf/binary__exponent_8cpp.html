@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: math/binary_exponent.cpp File Reference</title>
+<title>TheAlgorithms/C++: math/binary_exponent.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -118,7 +135,9 @@ Include dependency graph for binary_exponent.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d36/binary__exponent_8cpp__incl.svg" width="186" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../de/dcf/binary__exponent_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aeb48dce0725e63d19147944f41843c73" id="r_aeb48dce0725e63d19147944f41843c73"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb48dce0725e63d19147944f41843c73">binExpo</a> (int a, int b)</td></tr>
@@ -142,6 +161,8 @@ Functions</h2></td></tr>
 \end{eqnarray*}
 </p>
 <p> Hence to calculate 2^10 we only need to multiply \(2^8\) and \(2^2\) skipping \(2^1\) and \(2^4\). </p>
+
+<p class="definition">Definition in file <a class="el" href="../../de/dcf/binary__exponent_8cpp_source.html">binary_exponent.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="aeb48dce0725e63d19147944f41843c73" name="aeb48dce0725e63d19147944f41843c73"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeb48dce0725e63d19147944f41843c73">&#9670;&#160;</a></span>binExpo()</h2>
@@ -162,6 +183,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Recursive function to calculate exponent in \(O(\log(n))\) using binary exponent. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dcf/binary__exponent_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../de/dcf/binary__exponent_8cpp_source.html">binary_exponent.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   28</span>                          {</div>
 <div class="line"><span class="lineno">   29</span>    <span class="keywordflow">if</span> (b == 0) {</div>
 <div class="line"><span class="lineno">   30</span>        <span class="keywordflow">return</span> 1;</div>
@@ -173,13 +196,8 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   36</span>        <span class="keywordflow">return</span> res * res;</div>
 <div class="line"><span class="lineno">   37</span>    }</div>
 <div class="line"><span class="lineno">   38</span>}</div>
-<div class="ttc" id="abinary__exponent_8cpp_html_aeb48dce0725e63d19147944f41843c73"><div class="ttname"><a href="#aeb48dce0725e63d19147944f41843c73">binExpo</a></div><div class="ttdeci">int binExpo(int a, int b)</div><div class="ttdef"><b>Definition</b> binary_exponent.cpp:28</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/dcf/binary__exponent_8cpp_aeb48dce0725e63d19147944f41843c73_cgraph.svg" width="79" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="abinary__exponent_8cpp_html_aeb48dce0725e63d19147944f41843c73"><div class="ttname"><a href="#aeb48dce0725e63d19147944f41843c73">binExpo</a></div><div class="ttdeci">int binExpo(int a, int b)</div><div class="ttdef"><b>Definition</b> <a href="../../de/dcf/binary__exponent_8cpp_source.html#l00028">binary_exponent.cpp:28</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a31dbf5f7ceb9c9eec831ef9f7782291f" name="a31dbf5f7ceb9c9eec831ef9f7782291f"></a>
@@ -201,6 +219,8 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Iterative function to calculate exponent in \(O(\log(n))\) using binary exponent. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dcf/binary__exponent_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../de/dcf/binary__exponent_8cpp_source.html">binary_exponent.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   42</span>                              {</div>
 <div class="line"><span class="lineno">   43</span>    <span class="keywordtype">int</span> res = 1;</div>
 <div class="line"><span class="lineno">   44</span>    <span class="keywordflow">while</span> (b &gt; 0) {</div>
@@ -234,33 +254,23 @@ Here is the call graph for this function:</div>
 <p>Give two numbers a, b</p>
 <p>int resIterate = binExpo_alt(a, b);</p>
 <p>Result of a^b (where '^' denotes exponentiation)</p>
-<p><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; resIterate &lt;&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</p>
-<div class="fragment"><div class="line"><span class="lineno">   55</span>           {</div>
-<div class="line"><span class="lineno">   56</span>    <span class="keywordtype">int</span> a, b;<span class="comment"></span></div>
-<div class="line"><span class="lineno">   57</span><span class="comment">    /// Give two numbers a, b</span></div>
-<div class="line"><span class="lineno">   58</span><span class="comment"></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; a &gt;&gt; b;</div>
-<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">if</span> (a == 0 &amp;&amp; b == 0) {</div>
-<div class="line"><span class="lineno">   60</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Math error&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   61</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (b &lt; 0) {</div>
-<div class="line"><span class="lineno">   62</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Exponent must be positive !!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   63</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   64</span>        <span class="keywordtype">int</span> resRecurse = <a class="code hl_function" href="#aeb48dce0725e63d19147944f41843c73">binExpo</a>(a, b);<span class="comment"></span></div>
-<div class="line"><span class="lineno">   65</span><span class="comment">        /// int resIterate = binExpo_alt(a, b);</span></div>
-<div class="line"><span class="lineno">   66</span><span class="comment"></span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   67</span><span class="comment">        /// Result of a^b (where &#39;^&#39; denotes exponentiation)</span></div>
-<div class="line"><span class="lineno">   68</span><span class="comment"></span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; resRecurse &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;<span class="comment"></span></div>
-<div class="line"><span class="lineno">   69</span><span class="comment">        /// std::cout &lt;&lt; resIterate &lt;&lt; std::endl;</span></div>
-<div class="line"><span class="lineno">   70</span><span class="comment"></span>    }</div>
-<div class="line"><span class="lineno">   71</span>}</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/dcf/binary__exponent_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="180" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p>std::cout &lt;&lt; resIterate &lt;&lt; std::endl;</p>
 
+<p class="definition">Definition at line <a class="el" href="../../de/dcf/binary__exponent_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../de/dcf/binary__exponent_8cpp_source.html">binary_exponent.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>           {</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordtype">int</span> a, b;</div>
+<div class="line"><span class="lineno">   58</span>    std::cin &gt;&gt; a &gt;&gt; b;</div>
+<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">if</span> (a == 0 &amp;&amp; b == 0) {</div>
+<div class="line"><span class="lineno">   60</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Math error&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   61</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (b &lt; 0) {</div>
+<div class="line"><span class="lineno">   62</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Exponent must be positive !!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   63</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   64</span>        <span class="keywordtype">int</span> resRecurse = <a class="code hl_function" href="#aeb48dce0725e63d19147944f41843c73">binExpo</a>(a, b);</div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   68</span>        std::cout &lt;&lt; resRecurse &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   70</span>    }</div>
+<div class="line"><span class="lineno">   71</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

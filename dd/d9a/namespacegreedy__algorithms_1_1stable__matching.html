@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: greedy_algorithms::stable_matching Namespace Reference</title>
+<title>TheAlgorithms/C++: greedy_algorithms::stable_matching Namespace Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -115,7 +132,7 @@ $(function(){initNavTree('dd/d9a/namespacegreedy__algorithms_1_1stable__matching
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6d7e84df47dcf19e88f95f8f9040306c" id="r_a6d7e84df47dcf19e88f95f8f9040306c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d7e84df47dcf19e88f95f8f9040306c">gale_shapley</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> &gt; &gt; &amp;secondary_preferences, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> &gt; &gt; &amp;primary_preferences)</td></tr>
+<tr class="memitem:a6d7e84df47dcf19e88f95f8f9040306c" id="r_a6d7e84df47dcf19e88f95f8f9040306c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d7e84df47dcf19e88f95f8f9040306c">gale_shapley</a> (const std::vector&lt; std::vector&lt; std::uint32_t &gt; &gt; &amp;secondary_preferences, const std::vector&lt; std::vector&lt; std::uint32_t &gt; &gt; &amp;primary_preferences)</td></tr>
 <tr class="memdesc:a6d7e84df47dcf19e88f95f8f9040306c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main function that finds the stable matching between two sets of elements using the Gale-Shapley Algorithm.  <br /></td></tr>
 <tr class="separator:a6d7e84df47dcf19e88f95f8f9040306c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -129,14 +146,14 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> &gt; greedy_algorithms::stable_matching::gale_shapley </td>
+          <td class="memname">std::vector&lt; std::uint32_t &gt; greedy_algorithms::stable_matching::gale_shapley </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>secondary_preferences</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; std::uint32_t &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>secondary_preferences</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>primary_preferences</em></span>&#160;)</td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; std::uint32_t &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>primary_preferences</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -151,11 +168,13 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>matches the stable matching between the two sets </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d80/gale__shapley_8cpp_source.html#l00046">46</a> of file <a class="el" href="../../db/d80/gale__shapley_8cpp_source.html">gale_shapley.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   48</span>                                                                  {</div>
-<div class="line"><span class="lineno">   49</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> num_elements = secondary_preferences.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
-<div class="line"><span class="lineno">   50</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint32_t&gt;</a> matches(num_elements, -1);</div>
-<div class="line"><span class="lineno">   51</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> is_free_primary(num_elements, <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">   52</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint32_t&gt;</a> proposal_index(</div>
+<div class="line"><span class="lineno">   49</span>    std::uint32_t num_elements = secondary_preferences.size();</div>
+<div class="line"><span class="lineno">   50</span>    std::vector&lt;std::uint32_t&gt; matches(num_elements, -1);</div>
+<div class="line"><span class="lineno">   51</span>    std::vector&lt;bool&gt; is_free_primary(num_elements, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   52</span>    std::vector&lt;std::uint32_t&gt; proposal_index(</div>
 <div class="line"><span class="lineno">   53</span>        num_elements,</div>
 <div class="line"><span class="lineno">   54</span>        0);  <span class="comment">// Tracks the next secondary to propose for each primary</span></div>
 <div class="line"><span class="lineno">   55</span> </div>
@@ -163,7 +182,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   57</span>        <span class="keywordtype">int</span> free_primary_index = -1;</div>
 <div class="line"><span class="lineno">   58</span> </div>
 <div class="line"><span class="lineno">   59</span>        <span class="comment">// Find the next free primary</span></div>
-<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">for</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> i = 0; i &lt; num_elements; i++) {</div>
+<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">for</span> (std::uint32_t i = 0; i &lt; num_elements; i++) {</div>
 <div class="line"><span class="lineno">   61</span>            <span class="keywordflow">if</span> (is_free_primary[i]) {</div>
 <div class="line"><span class="lineno">   62</span>                free_primary_index = i;</div>
 <div class="line"><span class="lineno">   63</span>                <span class="keywordflow">break</span>;</div>
@@ -175,13 +194,13 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   69</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">   70</span> </div>
 <div class="line"><span class="lineno">   71</span>        <span class="comment">// Get the next secondary to propose</span></div>
-<div class="line"><span class="lineno">   72</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> secondary_to_propose =</div>
+<div class="line"><span class="lineno">   72</span>        std::uint32_t secondary_to_propose =</div>
 <div class="line"><span class="lineno">   73</span>            primary_preferences[free_primary_index]</div>
 <div class="line"><span class="lineno">   74</span>                               [proposal_index[free_primary_index]];</div>
 <div class="line"><span class="lineno">   75</span>        proposal_index[free_primary_index]++;</div>
 <div class="line"><span class="lineno">   76</span> </div>
 <div class="line"><span class="lineno">   77</span>        <span class="comment">// Get the current match of the secondary</span></div>
-<div class="line"><span class="lineno">   78</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> current_match = matches[secondary_to_propose];</div>
+<div class="line"><span class="lineno">   78</span>        std::uint32_t current_match = matches[secondary_to_propose];</div>
 <div class="line"><span class="lineno">   79</span> </div>
 <div class="line"><span class="lineno">   80</span>        <span class="comment">// If the secondary is free, match them</span></div>
 <div class="line"><span class="lineno">   81</span>        <span class="keywordflow">if</span> (current_match == -1) {</div>
@@ -190,12 +209,12 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   84</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">   85</span>            <span class="comment">// Determine if the current match should be replaced</span></div>
 <div class="line"><span class="lineno">   86</span>            <span class="keyword">auto</span> new_proposer_rank =</div>
-<div class="line"><span class="lineno">   87</span>                <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/find.html">std::find</a>(secondary_preferences[secondary_to_propose].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">begin</a>(),</div>
-<div class="line"><span class="lineno">   88</span>                          secondary_preferences[secondary_to_propose].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a>(),</div>
+<div class="line"><span class="lineno">   87</span>                std::find(secondary_preferences[secondary_to_propose].begin(),</div>
+<div class="line"><span class="lineno">   88</span>                          secondary_preferences[secondary_to_propose].end(),</div>
 <div class="line"><span class="lineno">   89</span>                          free_primary_index);</div>
 <div class="line"><span class="lineno">   90</span>            <span class="keyword">auto</span> current_match_rank =</div>
-<div class="line"><span class="lineno">   91</span>                <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/find.html">std::find</a>(secondary_preferences[secondary_to_propose].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">begin</a>(),</div>
-<div class="line"><span class="lineno">   92</span>                          secondary_preferences[secondary_to_propose].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a>(),</div>
+<div class="line"><span class="lineno">   91</span>                std::find(secondary_preferences[secondary_to_propose].begin(),</div>
+<div class="line"><span class="lineno">   92</span>                          secondary_preferences[secondary_to_propose].end(),</div>
 <div class="line"><span class="lineno">   93</span>                          current_match);</div>
 <div class="line"><span class="lineno">   94</span> </div>
 <div class="line"><span class="lineno">   95</span>            <span class="comment">// If the new proposer is preferred over the current match</span></div>
@@ -210,18 +229,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  104</span> </div>
 <div class="line"><span class="lineno">  105</span>    <span class="keywordflow">return</span> matches;</div>
 <div class="line"><span class="lineno">  106</span>}</div>
-<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="afind_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/find.html">std::find</a></div><div class="ttdeci">T find(T... args)</div></div>
-<div class="ttc" id="ainteger_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a></div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d9a/namespacegreedy__algorithms_1_1stable__matching_a6d7e84df47dcf19e88f95f8f9040306c_cgraph.svg" width="276" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

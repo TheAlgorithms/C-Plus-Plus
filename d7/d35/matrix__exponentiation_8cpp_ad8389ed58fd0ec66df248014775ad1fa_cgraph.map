@@ -1,8 +1,0 @@
-<map id="ans" name="ans">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,48,55"/>
-<area shape="rect" id="Node000002" href="$d7/d35/matrix__exponentiation_8cpp.html#a702a9fc90e79b05b863cc4efa26ae2ec" title=" " alt="" coords="96,29,152,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="48,40,80,40,80,45,48,45"/>
-<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="106,30,103,21,105,12,112,5,124,3,136,5,143,12,139,16,134,10,124,8,114,10,110,14,108,20,111,28"/>
-<area shape="rect" id="Node000003" href="$d7/d35/matrix__exponentiation_8cpp.html#a357cfbebfdc47a237a2862fe146af252" title=" " alt="" coords="200,29,266,55"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="153,40,185,40,185,45,153,45"/>
-</map>

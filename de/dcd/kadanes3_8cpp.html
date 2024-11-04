@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: others/kadanes3.cpp File Reference</title>
+<title>TheAlgorithms/C++: others/kadanes3.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -122,11 +139,13 @@ Include dependency graph for kadanes3.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/dbb/kadanes3_8cpp__incl.svg" width="412" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../de/dcd/kadanes3_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a338439a04148ae89f695595acfa5c147" id="r_a338439a04148ae89f695595acfa5c147"><td class="memTemplParams" colspan="2">template&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> SIZE&gt; </td></tr>
-<tr class="memitem:a338439a04148ae89f695595acfa5c147"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a338439a04148ae89f695595acfa5c147">max_subarray_sum</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int64_t, SIZE &gt; arr, uint64_t length)</td></tr>
+<tr class="memitem:a338439a04148ae89f695595acfa5c147" id="r_a338439a04148ae89f695595acfa5c147"><td class="memTemplParams" colspan="2">template&lt;std::size_t SIZE&gt; </td></tr>
+<tr class="memitem:a338439a04148ae89f695595acfa5c147"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a338439a04148ae89f695595acfa5c147">max_subarray_sum</a> (std::array&lt; int64_t, SIZE &gt; arr, uint64_t length)</td></tr>
 <tr class="memdesc:a338439a04148ae89f695595acfa5c147"><td class="mdescLeft">&#160;</td><td class="mdescRight">for IO operations  <br /></td></tr>
 <tr class="separator:a338439a04148ae89f695595acfa5c147"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
@@ -140,6 +159,8 @@ Functions</h2></td></tr>
 <div class="textblock"><p>Efficient implementation for maximum contiguous subarray sum by <a href="https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/" target="_blank">Kadane's algorithm</a>. </p>
 <p>Our task is to take length of array and then the whole array as input from the user and then calculate the maximum contiguos subarray sum for the input array, using the kadane's algorithm.</p>
 <p>There can be a case that all the elements in the input array are negative. In that case, the least value among all elements is the maximum sum with subarray length = 1. </p><dl class="section author"><dt>Author</dt><dd><a href="https://github.com/thisabhijeet" target="_blank">Abhijeet Tiwari</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../de/dcd/kadanes3_8cpp_source.html">kadanes3.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -158,6 +179,8 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dcd/kadanes3_8cpp_source.html#l00060">60</a> of file <a class="el" href="../../de/dcd/kadanes3_8cpp_source.html">kadanes3.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   60</span>           {</div>
 <div class="line"><span class="lineno">   61</span>    <span class="comment">// Below is the code for accepting array from the user and then</span></div>
 <div class="line"><span class="lineno">   62</span>    <span class="comment">// calling the function for the required output.</span></div>
@@ -185,13 +208,8 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   84</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
 <div class="line"><span class="lineno">   85</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   86</span>}</div>
-<div class="ttc" id="akadanes3_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> kadanes3.cpp:48</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/dcd/kadanes3_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="335" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="akadanes3_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../de/dcd/kadanes3_8cpp_source.html#l00048">kadanes3.cpp:48</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a338439a04148ae89f695595acfa5c147" name="a338439a04148ae89f695595acfa5c147"></a>
@@ -200,12 +218,12 @@ Here is the call graph for this function:</div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> SIZE&gt; </div>
+template&lt;std::size_t SIZE&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">int max_subarray_sum </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int64_t, SIZE &gt;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span>, </td>
+          <td class="paramtype">std::array&lt; int64_t, SIZE &gt;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -216,7 +234,7 @@ template&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/
 </div><div class="memdoc">
 
 <p>for IO operations </p>
-<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a> for assert for INT_MIN value</p>
+<p>for std::array for assert for INT_MIN value</p>
 <p>Utility function to check the current maximum number </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">arr</td><td>input array </td></tr>
@@ -225,6 +243,8 @@ template&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>maximum contiguous subarray sum </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dcd/kadanes3_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../de/dcd/kadanes3_8cpp_source.html">kadanes3.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   29</span>                                                                   {</div>
 <div class="line"><span class="lineno">   30</span>    int64_t current_max = INT_MIN, current_sum = 0;</div>
 <div class="line"><span class="lineno">   31</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; length; i++) {</div>
@@ -267,22 +287,17 @@ template&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dcd/kadanes3_8cpp_source.html#l00048">48</a> of file <a class="el" href="../../de/dcd/kadanes3_8cpp_source.html">kadanes3.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   48</span>                   {</div>
-<div class="line"><span class="lineno">   49</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int64_t, 4&gt;</a> arr = {1, 2, 3, 4};</div>
-<div class="line"><span class="lineno">   50</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int64_t, 5&gt;</a> arr1 = {-1, -2, -4, -6, 7};</div>
+<div class="line"><span class="lineno">   49</span>    std::array&lt;int64_t, 4&gt; arr = {1, 2, 3, 4};</div>
+<div class="line"><span class="lineno">   50</span>    std::array&lt;int64_t, 5&gt; arr1 = {-1, -2, -4, -6, 7};</div>
 <div class="line"><span class="lineno">   51</span>    assert(<a class="code hl_function" href="#a338439a04148ae89f695595acfa5c147">max_subarray_sum</a>(arr, 4) == 10);</div>
 <div class="line"><span class="lineno">   52</span>    assert(<a class="code hl_function" href="#a338439a04148ae89f695595acfa5c147">max_subarray_sum</a>(arr1, 5) == 7);</div>
-<div class="line"><span class="lineno">   53</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All test cases have passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   53</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All test cases have passed!\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   54</span>}</div>
-<div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="akadanes3_8cpp_html_a338439a04148ae89f695595acfa5c147"><div class="ttname"><a href="#a338439a04148ae89f695595acfa5c147">max_subarray_sum</a></div><div class="ttdeci">int max_subarray_sum(std::array&lt; int64_t, SIZE &gt; arr, uint64_t length)</div><div class="ttdoc">for IO operations</div><div class="ttdef"><b>Definition</b> kadanes3.cpp:29</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/dcd/kadanes3_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="238" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="akadanes3_8cpp_html_a338439a04148ae89f695595acfa5c147"><div class="ttname"><a href="#a338439a04148ae89f695595acfa5c147">max_subarray_sum</a></div><div class="ttdeci">int max_subarray_sum(std::array&lt; int64_t, SIZE &gt; arr, uint64_t length)</div><div class="ttdoc">for IO operations</div><div class="ttdef"><b>Definition</b> <a href="../../de/dcd/kadanes3_8cpp_source.html#l00029">kadanes3.cpp:29</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

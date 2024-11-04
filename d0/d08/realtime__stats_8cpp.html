@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: math/realtime_stats.cpp File Reference</title>
+<title>TheAlgorithms/C++: math/realtime_stats.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -122,7 +139,9 @@ Include dependency graph for realtime_stats.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d1f/realtime__stats_8cpp__incl.svg" width="252" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d0/d08/realtime__stats_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d7c/classstatistics_1_1stats__computer1.html">statistics::stats_computer1&lt; T &gt;</a></td></tr>
@@ -146,6 +165,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Compute statistics for data entered in rreal-time. </p>
 <p>This algorithm is really beneficial to compute statistics on data read in realtime. For example, devices reading biometrics data. The algorithm is simple enough to be easily implemented in an embedded system. </p><dl class="section author"><dt>Author</dt><dd><a href="https://github.com/kvedala" target="_blank">Krishna Vedala</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d0/d08/realtime__stats_8cpp_source.html">realtime_stats.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a3c04138a5bfe5d72780bb7e82a18e627" name="a3c04138a5bfe5d72780bb7e82a18e627"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&#160;</a></span>main()</h2>
@@ -166,62 +187,56 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Main function </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d08/realtime__stats_8cpp_source.html#l00158">158</a> of file <a class="el" href="../../d0/d08/realtime__stats_8cpp_source.html">realtime_stats.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  158</span>                                {</div>
 <div class="line"><span class="lineno">  159</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> test_data1[] = {3, 4, 5, -1.4, -3.6, 1.9, 1.};</div>
 <div class="line"><span class="lineno">  160</span>    <a class="code hl_function" href="#aa54c915581fcc495489175a4386d59fd">test_function</a>(test_data1, <span class="keyword">sizeof</span>(test_data1) / <span class="keyword">sizeof</span>(test_data1[0]));</div>
 <div class="line"><span class="lineno">  161</span> </div>
-<div class="line"><span class="lineno">  162</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div>
+<div class="line"><span class="lineno">  162</span>    std::cout</div>
 <div class="line"><span class="lineno">  163</span>        &lt;&lt; <span class="stringliteral">&quot;Enter data. Any non-numeric data will terminate the data input.&quot;</span></div>
-<div class="line"><span class="lineno">  164</span>        &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  164</span>        &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  165</span> </div>
 <div class="line"><span class="lineno">  166</span>    <a class="code hl_class" href="../../d7/d7c/classstatistics_1_1stats__computer1.html">stats_computer1&lt;float&gt;</a> stats1;</div>
 <div class="line"><span class="lineno">  167</span>    <a class="code hl_class" href="../../d8/dab/classstatistics_1_1stats__computer2.html">stats_computer2&lt;float&gt;</a> stats2;</div>
 <div class="line"><span class="lineno">  168</span> </div>
 <div class="line"><span class="lineno">  169</span>    <span class="keywordflow">while</span> (1) {</div>
 <div class="line"><span class="lineno">  170</span>        <span class="keywordtype">double</span> val;</div>
-<div class="line"><span class="lineno">  171</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter number: &quot;</span>;</div>
-<div class="line"><span class="lineno">  172</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; val;</div>
+<div class="line"><span class="lineno">  171</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Enter number: &quot;</span>;</div>
+<div class="line"><span class="lineno">  172</span>        std::cin &gt;&gt; val;</div>
 <div class="line"><span class="lineno">  173</span> </div>
 <div class="line"><span class="lineno">  174</span>        <span class="comment">// check for failure to read input. Happens for</span></div>
 <div class="line"><span class="lineno">  175</span>        <span class="comment">// non-numeric data</span></div>
-<div class="line"><span class="lineno">  176</span>        <span class="keywordflow">if</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a>.fail())</div>
+<div class="line"><span class="lineno">  176</span>        <span class="keywordflow">if</span> (std::cin.fail())</div>
 <div class="line"><span class="lineno">  177</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  178</span> </div>
 <div class="line"><span class="lineno">  179</span>        stats1.<a class="code hl_function" href="../../d7/d7c/classstatistics_1_1stats__computer1.html#aa13bf7c38de112f71921a5525d71a2f2">new_val</a>(val);</div>
 <div class="line"><span class="lineno">  180</span>        stats2.<a class="code hl_function" href="../../d8/dab/classstatistics_1_1stats__computer2.html#ade6de704deea24fdc88077b3d9a0d534">new_val</a>(val);</div>
 <div class="line"><span class="lineno">  181</span> </div>
-<div class="line"><span class="lineno">  182</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\tMethod 1:&quot;</span></div>
+<div class="line"><span class="lineno">  182</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\tMethod 1:&quot;</span></div>
 <div class="line"><span class="lineno">  183</span>                  &lt;&lt; <span class="stringliteral">&quot;\tMean: &quot;</span> &lt;&lt; stats1.<a class="code hl_function" href="../../d7/d7c/classstatistics_1_1stats__computer1.html#a390697dcee210b91823ceff04b25081b">mean</a>()</div>
 <div class="line"><span class="lineno">  184</span>                  &lt;&lt; <span class="stringliteral">&quot;\t Variance: &quot;</span> &lt;&lt; stats1.<a class="code hl_function" href="../../d7/d7c/classstatistics_1_1stats__computer1.html#a27f0a03e2fd2254f1c81fe668226bd92">variance</a>()</div>
-<div class="line"><span class="lineno">  185</span>                  &lt;&lt; <span class="stringliteral">&quot;\t Std: &quot;</span> &lt;&lt; stats1.<a class="code hl_function" href="../../d7/d7c/classstatistics_1_1stats__computer1.html#af57e942d49f4fd70f059f224b4ac07e1">std</a>() &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  186</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\tMethod 2:&quot;</span></div>
+<div class="line"><span class="lineno">  185</span>                  &lt;&lt; <span class="stringliteral">&quot;\t Std: &quot;</span> &lt;&lt; stats1.<a class="code hl_function" href="../../d7/d7c/classstatistics_1_1stats__computer1.html#af57e942d49f4fd70f059f224b4ac07e1">std</a>() &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  186</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\tMethod 2:&quot;</span></div>
 <div class="line"><span class="lineno">  187</span>                  &lt;&lt; <span class="stringliteral">&quot;\tMean: &quot;</span> &lt;&lt; stats2.<a class="code hl_function" href="../../d8/dab/classstatistics_1_1stats__computer2.html#a8290966ad468f2a8c266d008bc60720e">mean</a>()</div>
 <div class="line"><span class="lineno">  188</span>                  &lt;&lt; <span class="stringliteral">&quot;\t Variance: &quot;</span> &lt;&lt; stats2.<a class="code hl_function" href="../../d8/dab/classstatistics_1_1stats__computer2.html#af6198817084276113b3c064e87ce0555">variance</a>()</div>
-<div class="line"><span class="lineno">  189</span>                  &lt;&lt; <span class="stringliteral">&quot;\t Std: &quot;</span> &lt;&lt; stats2.<a class="code hl_function" href="../../d8/dab/classstatistics_1_1stats__computer2.html#acf2e84df4fc386bb3295016ef8fd156e">std</a>() &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  189</span>                  &lt;&lt; <span class="stringliteral">&quot;\t Std: &quot;</span> &lt;&lt; stats2.<a class="code hl_function" href="../../d8/dab/classstatistics_1_1stats__computer2.html#acf2e84df4fc386bb3295016ef8fd156e">std</a>() &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  190</span>    }</div>
 <div class="line"><span class="lineno">  191</span> </div>
 <div class="line"><span class="lineno">  192</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  193</span>}</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aclassstatistics_1_1stats__computer1_html"><div class="ttname"><a href="../../d7/d7c/classstatistics_1_1stats__computer1.html">statistics::stats_computer1</a></div><div class="ttdef"><b>Definition</b> realtime_stats.cpp:27</div></div>
-<div class="ttc" id="aclassstatistics_1_1stats__computer1_html_a27f0a03e2fd2254f1c81fe668226bd92"><div class="ttname"><a href="../../d7/d7c/classstatistics_1_1stats__computer1.html#a27f0a03e2fd2254f1c81fe668226bd92">statistics::stats_computer1::variance</a></div><div class="ttdeci">double variance() const</div><div class="ttdef"><b>Definition</b> realtime_stats.cpp:45</div></div>
-<div class="ttc" id="aclassstatistics_1_1stats__computer1_html_a390697dcee210b91823ceff04b25081b"><div class="ttname"><a href="../../d7/d7c/classstatistics_1_1stats__computer1.html#a390697dcee210b91823ceff04b25081b">statistics::stats_computer1::mean</a></div><div class="ttdeci">double mean() const</div><div class="ttdef"><b>Definition</b> realtime_stats.cpp:42</div></div>
-<div class="ttc" id="aclassstatistics_1_1stats__computer1_html_aa13bf7c38de112f71921a5525d71a2f2"><div class="ttname"><a href="../../d7/d7c/classstatistics_1_1stats__computer1.html#aa13bf7c38de112f71921a5525d71a2f2">statistics::stats_computer1::new_val</a></div><div class="ttdeci">void new_val(T x)</div><div class="ttdef"><b>Definition</b> realtime_stats.cpp:32</div></div>
-<div class="ttc" id="aclassstatistics_1_1stats__computer1_html_af57e942d49f4fd70f059f224b4ac07e1"><div class="ttname"><a href="../../d7/d7c/classstatistics_1_1stats__computer1.html#af57e942d49f4fd70f059f224b4ac07e1">statistics::stats_computer1::std</a></div><div class="ttdeci">double std() const</div><div class="ttdef"><b>Definition</b> realtime_stats.cpp:48</div></div>
-<div class="ttc" id="aclassstatistics_1_1stats__computer2_html"><div class="ttname"><a href="../../d8/dab/classstatistics_1_1stats__computer2.html">statistics::stats_computer2</a></div><div class="ttdef"><b>Definition</b> realtime_stats.cpp:72</div></div>
-<div class="ttc" id="aclassstatistics_1_1stats__computer2_html_a8290966ad468f2a8c266d008bc60720e"><div class="ttname"><a href="../../d8/dab/classstatistics_1_1stats__computer2.html#a8290966ad468f2a8c266d008bc60720e">statistics::stats_computer2::mean</a></div><div class="ttdeci">double mean() const</div><div class="ttdef"><b>Definition</b> realtime_stats.cpp:86</div></div>
-<div class="ttc" id="aclassstatistics_1_1stats__computer2_html_acf2e84df4fc386bb3295016ef8fd156e"><div class="ttname"><a href="../../d8/dab/classstatistics_1_1stats__computer2.html#acf2e84df4fc386bb3295016ef8fd156e">statistics::stats_computer2::std</a></div><div class="ttdeci">double std() const</div><div class="ttdef"><b>Definition</b> realtime_stats.cpp:92</div></div>
-<div class="ttc" id="aclassstatistics_1_1stats__computer2_html_ade6de704deea24fdc88077b3d9a0d534"><div class="ttname"><a href="../../d8/dab/classstatistics_1_1stats__computer2.html#ade6de704deea24fdc88077b3d9a0d534">statistics::stats_computer2::new_val</a></div><div class="ttdeci">void new_val(T x)</div><div class="ttdef"><b>Definition</b> realtime_stats.cpp:77</div></div>
-<div class="ttc" id="aclassstatistics_1_1stats__computer2_html_af6198817084276113b3c064e87ce0555"><div class="ttname"><a href="../../d8/dab/classstatistics_1_1stats__computer2.html#af6198817084276113b3c064e87ce0555">statistics::stats_computer2::variance</a></div><div class="ttdeci">double variance() const</div><div class="ttdef"><b>Definition</b> realtime_stats.cpp:89</div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="arealtime__stats_8cpp_html_aa54c915581fcc495489175a4386d59fd"><div class="ttname"><a href="#aa54c915581fcc495489175a4386d59fd">test_function</a></div><div class="ttdeci">void test_function(const float *test_data, const int number_of_samples)</div><div class="ttdef"><b>Definition</b> realtime_stats.cpp:118</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/d08/realtime__stats_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="aclassstatistics_1_1stats__computer1_html"><div class="ttname"><a href="../../d7/d7c/classstatistics_1_1stats__computer1.html">statistics::stats_computer1</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/d08/realtime__stats_8cpp_source.html#l00027">realtime_stats.cpp:27</a></div></div>
+<div class="ttc" id="aclassstatistics_1_1stats__computer1_html_a27f0a03e2fd2254f1c81fe668226bd92"><div class="ttname"><a href="../../d7/d7c/classstatistics_1_1stats__computer1.html#a27f0a03e2fd2254f1c81fe668226bd92">statistics::stats_computer1::variance</a></div><div class="ttdeci">double variance() const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d08/realtime__stats_8cpp_source.html#l00045">realtime_stats.cpp:45</a></div></div>
+<div class="ttc" id="aclassstatistics_1_1stats__computer1_html_a390697dcee210b91823ceff04b25081b"><div class="ttname"><a href="../../d7/d7c/classstatistics_1_1stats__computer1.html#a390697dcee210b91823ceff04b25081b">statistics::stats_computer1::mean</a></div><div class="ttdeci">double mean() const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d08/realtime__stats_8cpp_source.html#l00042">realtime_stats.cpp:42</a></div></div>
+<div class="ttc" id="aclassstatistics_1_1stats__computer1_html_aa13bf7c38de112f71921a5525d71a2f2"><div class="ttname"><a href="../../d7/d7c/classstatistics_1_1stats__computer1.html#aa13bf7c38de112f71921a5525d71a2f2">statistics::stats_computer1::new_val</a></div><div class="ttdeci">void new_val(T x)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d08/realtime__stats_8cpp_source.html#l00032">realtime_stats.cpp:32</a></div></div>
+<div class="ttc" id="aclassstatistics_1_1stats__computer1_html_af57e942d49f4fd70f059f224b4ac07e1"><div class="ttname"><a href="../../d7/d7c/classstatistics_1_1stats__computer1.html#af57e942d49f4fd70f059f224b4ac07e1">statistics::stats_computer1::std</a></div><div class="ttdeci">double std() const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d08/realtime__stats_8cpp_source.html#l00048">realtime_stats.cpp:48</a></div></div>
+<div class="ttc" id="aclassstatistics_1_1stats__computer2_html"><div class="ttname"><a href="../../d8/dab/classstatistics_1_1stats__computer2.html">statistics::stats_computer2</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/d08/realtime__stats_8cpp_source.html#l00072">realtime_stats.cpp:72</a></div></div>
+<div class="ttc" id="aclassstatistics_1_1stats__computer2_html_a8290966ad468f2a8c266d008bc60720e"><div class="ttname"><a href="../../d8/dab/classstatistics_1_1stats__computer2.html#a8290966ad468f2a8c266d008bc60720e">statistics::stats_computer2::mean</a></div><div class="ttdeci">double mean() const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d08/realtime__stats_8cpp_source.html#l00086">realtime_stats.cpp:86</a></div></div>
+<div class="ttc" id="aclassstatistics_1_1stats__computer2_html_acf2e84df4fc386bb3295016ef8fd156e"><div class="ttname"><a href="../../d8/dab/classstatistics_1_1stats__computer2.html#acf2e84df4fc386bb3295016ef8fd156e">statistics::stats_computer2::std</a></div><div class="ttdeci">double std() const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d08/realtime__stats_8cpp_source.html#l00092">realtime_stats.cpp:92</a></div></div>
+<div class="ttc" id="aclassstatistics_1_1stats__computer2_html_ade6de704deea24fdc88077b3d9a0d534"><div class="ttname"><a href="../../d8/dab/classstatistics_1_1stats__computer2.html#ade6de704deea24fdc88077b3d9a0d534">statistics::stats_computer2::new_val</a></div><div class="ttdeci">void new_val(T x)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d08/realtime__stats_8cpp_source.html#l00077">realtime_stats.cpp:77</a></div></div>
+<div class="ttc" id="aclassstatistics_1_1stats__computer2_html_af6198817084276113b3c064e87ce0555"><div class="ttname"><a href="../../d8/dab/classstatistics_1_1stats__computer2.html#af6198817084276113b3c064e87ce0555">statistics::stats_computer2::variance</a></div><div class="ttdeci">double variance() const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d08/realtime__stats_8cpp_source.html#l00089">realtime_stats.cpp:89</a></div></div>
+<div class="ttc" id="arealtime__stats_8cpp_html_aa54c915581fcc495489175a4386d59fd"><div class="ttname"><a href="#aa54c915581fcc495489175a4386d59fd">test_function</a></div><div class="ttdeci">void test_function(const float *test_data, const int number_of_samples)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d08/realtime__stats_8cpp_source.html#l00118">realtime_stats.cpp:118</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa54c915581fcc495489175a4386d59fd" name="aa54c915581fcc495489175a4386d59fd"></a>
@@ -248,6 +263,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d08/realtime__stats_8cpp_source.html#l00118">118</a> of file <a class="el" href="../../d0/d08/realtime__stats_8cpp_source.html">realtime_stats.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  118</span>                                                                        {</div>
 <div class="line"><span class="lineno">  119</span>    <span class="keywordtype">float</span> mean = 0.f, variance = 0.f;</div>
 <div class="line"><span class="lineno">  120</span> </div>
@@ -268,30 +285,25 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  135</span>    }</div>
 <div class="line"><span class="lineno">  136</span>    variance /= number_of_samples;</div>
 <div class="line"><span class="lineno">  137</span> </div>
-<div class="line"><span class="lineno">  138</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; Test Function &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div>
+<div class="line"><span class="lineno">  138</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; Test Function &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&quot;</span> &lt;&lt; std::endl</div>
 <div class="line"><span class="lineno">  139</span>              &lt;&lt; <span class="stringliteral">&quot;Expected: Mean: &quot;</span> &lt;&lt; mean &lt;&lt; <span class="stringliteral">&quot;\t Variance: &quot;</span> &lt;&lt; variance</div>
-<div class="line"><span class="lineno">  140</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  141</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\tMethod 1:&quot;</span></div>
+<div class="line"><span class="lineno">  140</span>              &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  141</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\tMethod 1:&quot;</span></div>
 <div class="line"><span class="lineno">  142</span>              &lt;&lt; <span class="stringliteral">&quot;\tMean: &quot;</span> &lt;&lt; stats01.<a class="code hl_function" href="../../d7/d7c/classstatistics_1_1stats__computer1.html#a390697dcee210b91823ceff04b25081b">mean</a>()</div>
 <div class="line"><span class="lineno">  143</span>              &lt;&lt; <span class="stringliteral">&quot;\t Variance: &quot;</span> &lt;&lt; stats01.<a class="code hl_function" href="../../d7/d7c/classstatistics_1_1stats__computer1.html#a27f0a03e2fd2254f1c81fe668226bd92">variance</a>()</div>
-<div class="line"><span class="lineno">  144</span>              &lt;&lt; <span class="stringliteral">&quot;\t Std: &quot;</span> &lt;&lt; stats01.<a class="code hl_function" href="../../d7/d7c/classstatistics_1_1stats__computer1.html#af57e942d49f4fd70f059f224b4ac07e1">std</a>() &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  145</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\tMethod 2:&quot;</span></div>
+<div class="line"><span class="lineno">  144</span>              &lt;&lt; <span class="stringliteral">&quot;\t Std: &quot;</span> &lt;&lt; stats01.<a class="code hl_function" href="../../d7/d7c/classstatistics_1_1stats__computer1.html#af57e942d49f4fd70f059f224b4ac07e1">std</a>() &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  145</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\tMethod 2:&quot;</span></div>
 <div class="line"><span class="lineno">  146</span>              &lt;&lt; <span class="stringliteral">&quot;\tMean: &quot;</span> &lt;&lt; stats02.<a class="code hl_function" href="../../d8/dab/classstatistics_1_1stats__computer2.html#a8290966ad468f2a8c266d008bc60720e">mean</a>()</div>
 <div class="line"><span class="lineno">  147</span>              &lt;&lt; <span class="stringliteral">&quot;\t Variance: &quot;</span> &lt;&lt; stats02.<a class="code hl_function" href="../../d8/dab/classstatistics_1_1stats__computer2.html#af6198817084276113b3c064e87ce0555">variance</a>()</div>
-<div class="line"><span class="lineno">  148</span>              &lt;&lt; <span class="stringliteral">&quot;\t Std: &quot;</span> &lt;&lt; stats02.<a class="code hl_function" href="../../d8/dab/classstatistics_1_1stats__computer2.html#acf2e84df4fc386bb3295016ef8fd156e">std</a>() &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  148</span>              &lt;&lt; <span class="stringliteral">&quot;\t Std: &quot;</span> &lt;&lt; stats02.<a class="code hl_function" href="../../d8/dab/classstatistics_1_1stats__computer2.html#acf2e84df4fc386bb3295016ef8fd156e">std</a>() &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  149</span> </div>
 <div class="line"><span class="lineno">  150</span>    assert(std::abs(stats01.<a class="code hl_function" href="../../d7/d7c/classstatistics_1_1stats__computer1.html#a390697dcee210b91823ceff04b25081b">mean</a>() - mean) &lt; 0.01);</div>
 <div class="line"><span class="lineno">  151</span>    assert(std::abs(stats02.<a class="code hl_function" href="../../d8/dab/classstatistics_1_1stats__computer2.html#a8290966ad468f2a8c266d008bc60720e">mean</a>() - mean) &lt; 0.01);</div>
 <div class="line"><span class="lineno">  152</span>    assert(std::abs(stats02.<a class="code hl_function" href="../../d8/dab/classstatistics_1_1stats__computer2.html#af6198817084276113b3c064e87ce0555">variance</a>() - variance) &lt; 0.01);</div>
 <div class="line"><span class="lineno">  153</span> </div>
-<div class="line"><span class="lineno">  154</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;(Tests passed)&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  154</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;(Tests passed)&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  155</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d08/realtime__stats_8cpp_aa54c915581fcc495489175a4386d59fd_cgraph.svg" width="588" height="498"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

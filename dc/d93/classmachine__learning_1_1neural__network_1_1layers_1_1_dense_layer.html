@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: machine_learning::neural_network::layers::DenseLayer Class Reference</title>
+<title>TheAlgorithms/C++: machine_learning::neural_network::layers::DenseLayer Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -119,9 +136,9 @@ Collaboration diagram for machine_learning::neural_network::layers::DenseLayer:<
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a11046825be0b6dbb73fbe834aa49200e" id="r_a11046825be0b6dbb73fbe834aa49200e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11046825be0b6dbb73fbe834aa49200e">DenseLayer</a> (const int &amp;neurons, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;activation, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; size_t, size_t &gt; &amp;kernel_shape, const bool &amp;random_kernel)</td></tr>
+<tr class="memitem:a11046825be0b6dbb73fbe834aa49200e" id="r_a11046825be0b6dbb73fbe834aa49200e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11046825be0b6dbb73fbe834aa49200e">DenseLayer</a> (const int &amp;neurons, const std::string &amp;activation, const std::pair&lt; size_t, size_t &gt; &amp;kernel_shape, const bool &amp;random_kernel)</td></tr>
 <tr class="separator:a11046825be0b6dbb73fbe834aa49200e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af136ec31dbd35b1be2eb9a057677c704" id="r_af136ec31dbd35b1be2eb9a057677c704"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af136ec31dbd35b1be2eb9a057677c704">DenseLayer</a> (const int &amp;neurons, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;activation, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; &gt; &amp;kernel)</td></tr>
+<tr class="memitem:af136ec31dbd35b1be2eb9a057677c704" id="r_af136ec31dbd35b1be2eb9a057677c704"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af136ec31dbd35b1be2eb9a057677c704">DenseLayer</a> (const int &amp;neurons, const std::string &amp;activation, const std::vector&lt; std::valarray&lt; double &gt; &gt; &amp;kernel)</td></tr>
 <tr class="separator:af136ec31dbd35b1be2eb9a057677c704"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2871146feaaa453558239df67b21e0d2" id="r_a2871146feaaa453558239df67b21e0d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2871146feaaa453558239df67b21e0d2">DenseLayer</a> (const <a class="el" href="../../dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html">DenseLayer</a> &amp;layer)=default</td></tr>
 <tr class="separator:a2871146feaaa453558239df67b21e0d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,24 +153,21 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a8e4c57922478ccc2b7c6277c05608714" id="r_a8e4c57922478ccc2b7c6277c05608714"><td class="memItemLeft" align="right" valign="top"><a id="a8e4c57922478ccc2b7c6277c05608714" name="a8e4c57922478ccc2b7c6277c05608714"></a>
-double(*&#160;</td><td class="memItemRight" valign="bottom"><b>activation_function</b> )(const double &amp;)</td></tr>
+<tr class="memitem:a8e4c57922478ccc2b7c6277c05608714" id="r_a8e4c57922478ccc2b7c6277c05608714"><td class="memItemLeft" align="right" valign="top">double(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e4c57922478ccc2b7c6277c05608714">activation_function</a> )(const double &amp;)</td></tr>
 <tr class="separator:a8e4c57922478ccc2b7c6277c05608714"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc6cfdcc9d6e5170340abae63234a442" id="r_acc6cfdcc9d6e5170340abae63234a442"><td class="memItemLeft" align="right" valign="top"><a id="acc6cfdcc9d6e5170340abae63234a442" name="acc6cfdcc9d6e5170340abae63234a442"></a>
-double(*&#160;</td><td class="memItemRight" valign="bottom"><b>dactivation_function</b> )(const double &amp;)</td></tr>
+<tr class="memitem:acc6cfdcc9d6e5170340abae63234a442" id="r_acc6cfdcc9d6e5170340abae63234a442"><td class="memItemLeft" align="right" valign="top">double(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc6cfdcc9d6e5170340abae63234a442">dactivation_function</a> )(const double &amp;)</td></tr>
 <tr class="separator:acc6cfdcc9d6e5170340abae63234a442"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace9c37dd1322d3745de9713c90df8003" id="r_ace9c37dd1322d3745de9713c90df8003"><td class="memItemLeft" align="right" valign="top"><a id="ace9c37dd1322d3745de9713c90df8003" name="ace9c37dd1322d3745de9713c90df8003"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>neurons</b></td></tr>
+<tr class="memitem:ace9c37dd1322d3745de9713c90df8003" id="r_ace9c37dd1322d3745de9713c90df8003"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace9c37dd1322d3745de9713c90df8003">neurons</a></td></tr>
 <tr class="separator:ace9c37dd1322d3745de9713c90df8003"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a891264e2eb1357b2b3282e5532250869" id="r_a891264e2eb1357b2b3282e5532250869"><td class="memItemLeft" align="right" valign="top"><a id="a891264e2eb1357b2b3282e5532250869" name="a891264e2eb1357b2b3282e5532250869"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><b>activation</b></td></tr>
+<tr class="memitem:a891264e2eb1357b2b3282e5532250869" id="r_a891264e2eb1357b2b3282e5532250869"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a891264e2eb1357b2b3282e5532250869">activation</a></td></tr>
 <tr class="separator:a891264e2eb1357b2b3282e5532250869"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a494d39f6c367071d1fd31b3c1caf1a7d" id="r_a494d39f6c367071d1fd31b3c1caf1a7d"><td class="memItemLeft" align="right" valign="top"><a id="a494d39f6c367071d1fd31b3c1caf1a7d" name="a494d39f6c367071d1fd31b3c1caf1a7d"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>kernel</b></td></tr>
+<tr class="memitem:a494d39f6c367071d1fd31b3c1caf1a7d" id="r_a494d39f6c367071d1fd31b3c1caf1a7d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::valarray&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a494d39f6c367071d1fd31b3c1caf1a7d">kernel</a></td></tr>
 <tr class="separator:a494d39f6c367071d1fd31b3c1caf1a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html">neural_network::layers::DenseLayer</a> class is used to store all necessary information about the layers (i.e. neurons, activation and kernel). This class is used by <a class="el" href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html">NeuralNetwork</a> class to store layers. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d58/neural__network_8cpp_source.html#l00125">125</a> of file <a class="el" href="../../d2/d58/neural__network_8cpp_source.html">neural_network.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a11046825be0b6dbb73fbe834aa49200e" name="a11046825be0b6dbb73fbe834aa49200e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a11046825be0b6dbb73fbe834aa49200e">&#9670;&#160;</a></span>DenseLayer() <span class="overload">[1/4]</span></h2>
@@ -172,12 +186,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>neurons</b></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>activation</em></span>, </td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>activation</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; size_t, size_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>kernel_shape</em></span>, </td>
+          <td class="paramtype">const std::pair&lt; size_t, size_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>kernel_shape</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -200,6 +214,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>neurons</b></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d58/neural__network_8cpp_source.html#l00141">141</a> of file <a class="el" href="../../d2/d58/neural__network_8cpp_source.html">neural_network.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  143</span>                                          {</div>
 <div class="line"><span class="lineno">  144</span>        <span class="comment">// Choosing activation (and it&#39;s derivative)</span></div>
 <div class="line"><span class="lineno">  145</span>        <span class="keywordflow">if</span> (activation == <span class="stringliteral">&quot;sigmoid&quot;</span>) {</div>
@@ -219,11 +235,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>neurons</b></td></tr>
 <div class="line"><span class="lineno">  159</span>                neural_network::util_functions::identity_function;</div>
 <div class="line"><span class="lineno">  160</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">  161</span>            <span class="comment">// If supplied activation is invalid</span></div>
-<div class="line"><span class="lineno">  162</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;ERROR (&quot;</span> &lt;&lt; __func__ &lt;&lt; <span class="stringliteral">&quot;) : &quot;</span>;</div>
-<div class="line"><span class="lineno">  163</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Invalid argument. Expected {none, sigmoid, relu, &quot;</span></div>
+<div class="line"><span class="lineno">  162</span>            std::cerr &lt;&lt; <span class="stringliteral">&quot;ERROR (&quot;</span> &lt;&lt; __func__ &lt;&lt; <span class="stringliteral">&quot;) : &quot;</span>;</div>
+<div class="line"><span class="lineno">  163</span>            std::cerr &lt;&lt; <span class="stringliteral">&quot;Invalid argument. Expected {none, sigmoid, relu, &quot;</span></div>
 <div class="line"><span class="lineno">  164</span>                         <span class="stringliteral">&quot;tanh} got &quot;</span>;</div>
-<div class="line"><span class="lineno">  165</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; activation &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  166</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/program/exit.html">std::exit</a>(EXIT_FAILURE);</div>
+<div class="line"><span class="lineno">  165</span>            std::cerr &lt;&lt; activation &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  166</span>            std::exit(EXIT_FAILURE);</div>
 <div class="line"><span class="lineno">  167</span>        }</div>
 <div class="line"><span class="lineno">  168</span>        this-&gt;activation = activation;  <span class="comment">// Setting activation name</span></div>
 <div class="line"><span class="lineno">  169</span>        this-&gt;neurons = neurons;        <span class="comment">// Setting number of neurons</span></div>
@@ -234,17 +250,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>neurons</b></td></tr>
 <div class="line"><span class="lineno">  174</span>            <a class="code hl_function" href="../../d8/d77/namespacemachine__learning.html#a8dd3f1ffbc2f26a3c88da1b1f8b7e9c4">unit_matrix_initialization</a>(kernel, kernel_shape);</div>
 <div class="line"><span class="lineno">  175</span>        }</div>
 <div class="line"><span class="lineno">  176</span>    }</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="aexit_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/program/exit.html">std::exit</a></div><div class="ttdeci">T exit(T... args)</div></div>
-<div class="ttc" id="anamespacemachine__learning_html_a8dd3f1ffbc2f26a3c88da1b1f8b7e9c4"><div class="ttname"><a href="../../d8/d77/namespacemachine__learning.html#a8dd3f1ffbc2f26a3c88da1b1f8b7e9c4">machine_learning::unit_matrix_initialization</a></div><div class="ttdeci">void unit_matrix_initialization(std::vector&lt; std::valarray&lt; T &gt; &gt; &amp;A, const std::pair&lt; size_t, size_t &gt; &amp;shape)</div><div class="ttdef"><b>Definition</b> vector_ops.hpp:193</div></div>
-<div class="ttc" id="anamespacemachine__learning_html_abee7b35403af3612222d3b7a53074905"><div class="ttname"><a href="../../d8/d77/namespacemachine__learning.html#abee7b35403af3612222d3b7a53074905">machine_learning::uniform_random_initialization</a></div><div class="ttdeci">void uniform_random_initialization(std::vector&lt; std::valarray&lt; T &gt; &gt; &amp;A, const std::pair&lt; size_t, size_t &gt; &amp;shape, const T &amp;low, const T &amp;high)</div><div class="ttdef"><b>Definition</b> vector_ops.hpp:166</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer_a11046825be0b6dbb73fbe834aa49200e_cgraph.svg" width="614" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="anamespacemachine__learning_html_a8dd3f1ffbc2f26a3c88da1b1f8b7e9c4"><div class="ttname"><a href="../../d8/d77/namespacemachine__learning.html#a8dd3f1ffbc2f26a3c88da1b1f8b7e9c4">machine_learning::unit_matrix_initialization</a></div><div class="ttdeci">void unit_matrix_initialization(std::vector&lt; std::valarray&lt; T &gt; &gt; &amp;A, const std::pair&lt; size_t, size_t &gt; &amp;shape)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d95/vector__ops_8hpp_source.html#l00193">vector_ops.hpp:193</a></div></div>
+<div class="ttc" id="anamespacemachine__learning_html_abee7b35403af3612222d3b7a53074905"><div class="ttname"><a href="../../d8/d77/namespacemachine__learning.html#abee7b35403af3612222d3b7a53074905">machine_learning::uniform_random_initialization</a></div><div class="ttdeci">void uniform_random_initialization(std::vector&lt; std::valarray&lt; T &gt; &gt; &amp;A, const std::pair&lt; size_t, size_t &gt; &amp;shape, const T &amp;low, const T &amp;high)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d95/vector__ops_8hpp_source.html#l00166">vector_ops.hpp:166</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af136ec31dbd35b1be2eb9a057677c704" name="af136ec31dbd35b1be2eb9a057677c704"></a>
@@ -264,12 +272,12 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>activation</em></span>, </td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>activation</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>kernel</em></span>&#160;)</td>
+          <td class="paramtype">const std::vector&lt; std::valarray&lt; double &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>kernel</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -286,6 +294,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d58/neural__network_8cpp_source.html#l00183">183</a> of file <a class="el" href="../../d2/d58/neural__network_8cpp_source.html">neural_network.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  184</span>                                                             {</div>
 <div class="line"><span class="lineno">  185</span>        <span class="comment">// Choosing activation (and it&#39;s derivative)</span></div>
 <div class="line"><span class="lineno">  186</span>        <span class="keywordflow">if</span> (activation == <span class="stringliteral">&quot;sigmoid&quot;</span>) {</div>
@@ -305,22 +315,17 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  200</span>                neural_network::util_functions::identity_function;</div>
 <div class="line"><span class="lineno">  201</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">  202</span>            <span class="comment">// If supplied activation is invalid</span></div>
-<div class="line"><span class="lineno">  203</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;ERROR (&quot;</span> &lt;&lt; __func__ &lt;&lt; <span class="stringliteral">&quot;) : &quot;</span>;</div>
-<div class="line"><span class="lineno">  204</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Invalid argument. Expected {none, sigmoid, relu, &quot;</span></div>
+<div class="line"><span class="lineno">  203</span>            std::cerr &lt;&lt; <span class="stringliteral">&quot;ERROR (&quot;</span> &lt;&lt; __func__ &lt;&lt; <span class="stringliteral">&quot;) : &quot;</span>;</div>
+<div class="line"><span class="lineno">  204</span>            std::cerr &lt;&lt; <span class="stringliteral">&quot;Invalid argument. Expected {none, sigmoid, relu, &quot;</span></div>
 <div class="line"><span class="lineno">  205</span>                         <span class="stringliteral">&quot;tanh} got &quot;</span>;</div>
-<div class="line"><span class="lineno">  206</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; activation &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  207</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/program/exit.html">std::exit</a>(EXIT_FAILURE);</div>
+<div class="line"><span class="lineno">  206</span>            std::cerr &lt;&lt; activation &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  207</span>            std::exit(EXIT_FAILURE);</div>
 <div class="line"><span class="lineno">  208</span>        }</div>
 <div class="line"><span class="lineno">  209</span>        this-&gt;activation = activation;  <span class="comment">// Setting activation name</span></div>
 <div class="line"><span class="lineno">  210</span>        this-&gt;neurons = neurons;        <span class="comment">// Setting number of neurons</span></div>
 <div class="line"><span class="lineno">  211</span>        this-&gt;kernel = kernel;          <span class="comment">// Setting supplied kernel values</span></div>
 <div class="line"><span class="lineno">  212</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer_af136ec31dbd35b1be2eb9a057677c704_cgraph.svg" width="326" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2871146feaaa453558239df67b21e0d2" name="a2871146feaaa453558239df67b21e0d2"></a>
@@ -460,8 +465,89 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a891264e2eb1357b2b3282e5532250869" name="a891264e2eb1357b2b3282e5532250869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a891264e2eb1357b2b3282e5532250869">&#9670;&#160;</a></span>activation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string machine_learning::neural_network::layers::DenseLayer::activation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d58/neural__network_8cpp_source.html#l00131">131</a> of file <a class="el" href="../../d2/d58/neural__network_8cpp_source.html">neural_network.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8e4c57922478ccc2b7c6277c05608714" name="a8e4c57922478ccc2b7c6277c05608714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e4c57922478ccc2b7c6277c05608714">&#9670;&#160;</a></span>activation_function</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double(* machine_learning::neural_network::layers::DenseLayer::activation_function) (const double &amp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d58/neural__network_8cpp_source.html#l00128">128</a> of file <a class="el" href="../../d2/d58/neural__network_8cpp_source.html">neural_network.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acc6cfdcc9d6e5170340abae63234a442" name="acc6cfdcc9d6e5170340abae63234a442"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc6cfdcc9d6e5170340abae63234a442">&#9670;&#160;</a></span>dactivation_function</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double(* machine_learning::neural_network::layers::DenseLayer::dactivation_function) (const double &amp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d58/neural__network_8cpp_source.html#l00129">129</a> of file <a class="el" href="../../d2/d58/neural__network_8cpp_source.html">neural_network.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a494d39f6c367071d1fd31b3c1caf1a7d" name="a494d39f6c367071d1fd31b3c1caf1a7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a494d39f6c367071d1fd31b3c1caf1a7d">&#9670;&#160;</a></span>kernel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::valarray&lt;double&gt; &gt; machine_learning::neural_network::layers::DenseLayer::kernel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d58/neural__network_8cpp_source.html#l00132">132</a> of file <a class="el" href="../../d2/d58/neural__network_8cpp_source.html">neural_network.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ace9c37dd1322d3745de9713c90df8003" name="ace9c37dd1322d3745de9713c90df8003"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace9c37dd1322d3745de9713c90df8003">&#9670;&#160;</a></span>neurons</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int machine_learning::neural_network::layers::DenseLayer::neurons</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d58/neural__network_8cpp_source.html#l00130">130</a> of file <a class="el" href="../../d2/d58/neural__network_8cpp_source.html">neural_network.cpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>machine_learning/<a class="el" href="../../d2/d58/neural__network_8cpp.html">neural_network.cpp</a></li>
+<li>machine_learning/<a class="el" href="../../d2/d58/neural__network_8cpp_source.html">neural_network.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

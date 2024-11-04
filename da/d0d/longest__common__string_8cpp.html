@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: dynamic_programming/longest_common_string.cpp File Reference</title>
+<title>TheAlgorithms/C++: dynamic_programming/longest_common_string.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -123,7 +140,9 @@ Include dependency graph for longest_common_string.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d68/longest__common__string_8cpp__incl.svg" width="407" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../da/d0d/longest__common__string_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d86/struct_test_case.html">TestCase</a></td></tr>
@@ -132,10 +151,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa38b6b17bc5d46ed88acdd8414e18fa5" id="r_aa38b6b17bc5d46ed88acdd8414e18fa5"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa38b6b17bc5d46ed88acdd8414e18fa5">longest_common_string_length</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;string_a, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;string_b)</td></tr>
+<tr class="memitem:aa38b6b17bc5d46ed88acdd8414e18fa5" id="r_aa38b6b17bc5d46ed88acdd8414e18fa5"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa38b6b17bc5d46ed88acdd8414e18fa5">longest_common_string_length</a> (const std::string &amp;string_a, const std::string &amp;string_b)</td></tr>
 <tr class="memdesc:aa38b6b17bc5d46ed88acdd8414e18fa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes the length of the longest common string created from input strings  <br /></td></tr>
 <tr class="separator:aa38b6b17bc5d46ed88acdd8414e18fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a967854a526bc15403d783a033155fc5c" id="r_a967854a526bc15403d783a033155fc5c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../da/d86/struct_test_case.html">TestCase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a967854a526bc15403d783a033155fc5c">get_test_cases</a> ()</td></tr>
+<tr class="memitem:a967854a526bc15403d783a033155fc5c" id="r_a967854a526bc15403d783a033155fc5c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../da/d86/struct_test_case.html">TestCase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a967854a526bc15403d783a033155fc5c">get_test_cases</a> ()</td></tr>
 <tr class="separator:a967854a526bc15403d783a033155fc5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b229daad982a186a4d8d90aa8f38561" id="r_a9b229daad982a186a4d8d90aa8f38561"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="../../d5/d58/class_test_cases.html">TestCases</a> &gt; </td></tr>
 <tr class="memitem:a9b229daad982a186a4d8d90aa8f38561"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a9b229daad982a186a4d8d90aa8f38561">test_longest_common_string_length</a> (const <a class="el" href="../../d5/d58/class_test_cases.html">TestCases</a> &amp;test_cases)</td></tr>
@@ -145,7 +164,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ad1e613c1b85cc04ed931b6c745fec155"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad1e613c1b85cc04ed931b6c745fec155">test_longest_common_string_length_is_symmetric</a> (const <a class="el" href="../../d5/d58/class_test_cases.html">TestCases</a> &amp;test_cases)</td></tr>
 <tr class="memdesc:ad1e613c1b85cc04ed931b6c745fec155"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the function <a class="el" href="#aa38b6b17bc5d46ed88acdd8414e18fa5" title="computes the length of the longest common string created from input strings">longest_common_string_length</a> returns the same result when its argument are flipped  <br /></td></tr>
 <tr class="separator:ad1e613c1b85cc04ed931b6c745fec155"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb03dbbcee6d607db471021168be8541" id="r_acb03dbbcee6d607db471021168be8541"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb03dbbcee6d607db471021168be8541">reverse_str</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;in_str)</td></tr>
+<tr class="memitem:acb03dbbcee6d607db471021168be8541" id="r_acb03dbbcee6d607db471021168be8541"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb03dbbcee6d607db471021168be8541">reverse_str</a> (const std::string &amp;in_str)</td></tr>
 <tr class="memdesc:acb03dbbcee6d607db471021168be8541"><td class="mdescLeft">&#160;</td><td class="mdescRight">reverses a given string  <br /></td></tr>
 <tr class="separator:acb03dbbcee6d607db471021168be8541"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23ab67b0d9600697695fc8679462d8fe" id="r_a23ab67b0d9600697695fc8679462d8fe"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="../../d5/d58/class_test_cases.html">TestCases</a> &gt; </td></tr>
@@ -165,6 +184,8 @@ Functions</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/nikhilarora068" target="_blank">Nikhil Arora</a> </dd>
 <dd>
 <a href="https://github.com/vil02" target="_blank">Piotr Idzik</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../da/d0d/longest__common__string_8cpp_source.html">longest_common_string.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a967854a526bc15403d783a033155fc5c" name="a967854a526bc15403d783a033155fc5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a967854a526bc15403d783a033155fc5c">&#9670;&#160;</a></span>get_test_cases()</h2>
@@ -173,7 +194,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../da/d86/struct_test_case.html">TestCase</a> &gt; get_test_cases </td>
+          <td class="memname">std::vector&lt; <a class="el" href="../../da/d86/struct_test_case.html">TestCase</a> &gt; get_test_cases </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -181,6 +202,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>example data used in the tests of <a class="el" href="#aa38b6b17bc5d46ed88acdd8414e18fa5" title="computes the length of the longest common string created from input strings">longest_common_string_length</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d0d/longest__common__string_8cpp_source.html#l00069">69</a> of file <a class="el" href="../../da/d0d/longest__common__string_8cpp_source.html">longest_common_string.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   69</span>                                     {</div>
 <div class="line"><span class="lineno">   70</span>    <span class="keywordflow">return</span> {<a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(<span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, 0),</div>
 <div class="line"><span class="lineno">   71</span>            <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(<span class="stringliteral">&quot;ab&quot;</span>, <span class="stringliteral">&quot;ab&quot;</span>, 2),</div>
@@ -196,7 +219,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   81</span>            <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(<span class="stringliteral">&quot;x1x2x3x&quot;</span>, <span class="stringliteral">&quot;123&quot;</span>, 3),</div>
 <div class="line"><span class="lineno">   82</span>            <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(<span class="stringliteral">&quot;x12x3x&quot;</span>, <span class="stringliteral">&quot;123&quot;</span>, 3)};</div>
 <div class="line"><span class="lineno">   83</span>}</div>
-<div class="ttc" id="astruct_test_case_html"><div class="ttname"><a href="../../da/d86/struct_test_case.html">TestCase</a></div><div class="ttdoc">represents single example inputs and expected output of the function longest_common_string_length</div><div class="ttdef"><b>Definition</b> longest_common_string.cpp:54</div></div>
+<div class="ttc" id="astruct_test_case_html"><div class="ttname"><a href="../../da/d86/struct_test_case.html">TestCase</a></div><div class="ttdoc">represents single example inputs and expected output of the function longest_common_string_length</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/longest__common__string_8cpp_source.html#l00054">longest_common_string.cpp:54</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -207,20 +230,20 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> longest_common_string_length </td>
+          <td class="memname">std::size_t longest_common_string_length </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>string_a</em></span>, </td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>string_a</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>string_b</em></span>&#160;)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>string_b</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>computes the length of the longest common string created from input strings </p>
-<p>for assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
+<p>for assert for std::cout for std::string for std::move for std::vector</p>
 <p>has O(str_a.size()*str_b.size()) time and memory complexity </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">string_a</td><td>first input string </td></tr>
@@ -229,19 +252,21 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the length of the longest common string which can be strated from str_a and str_b </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d0d/longest__common__string_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../da/d0d/longest__common__string_8cpp_source.html">longest_common_string.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   29</span>                                                                    {</div>
-<div class="line"><span class="lineno">   30</span>    <span class="keyword">const</span> <span class="keyword">auto</span> size_a = string_a.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>();</div>
-<div class="line"><span class="lineno">   31</span>    <span class="keyword">const</span> <span class="keyword">auto</span> size_b = string_b.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>();</div>
-<div class="line"><span class="lineno">   32</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;std::size_t&gt;</a>&gt; sub_sols(</div>
-<div class="line"><span class="lineno">   33</span>        size_a + 1, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::size_t&gt;</a>(size_b + 1, 0));</div>
+<div class="line"><span class="lineno">   30</span>    <span class="keyword">const</span> <span class="keyword">auto</span> size_a = string_a.size();</div>
+<div class="line"><span class="lineno">   31</span>    <span class="keyword">const</span> <span class="keyword">auto</span> size_b = string_b.size();</div>
+<div class="line"><span class="lineno">   32</span>    std::vector&lt;std::vector&lt;std::size_t&gt;&gt; sub_sols(</div>
+<div class="line"><span class="lineno">   33</span>        size_a + 1, std::vector&lt;std::size_t&gt;(size_b + 1, 0));</div>
 <div class="line"><span class="lineno">   34</span> </div>
-<div class="line"><span class="lineno">   35</span>    <span class="keyword">const</span> <span class="keyword">auto</span> limit = <span class="keyword">static_cast&lt;</span><a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a><span class="keyword">&gt;</span>(-1);</div>
-<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">for</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> pos_a = size_a - 1; pos_a != limit; --pos_a) {</div>
-<div class="line"><span class="lineno">   37</span>        <span class="keywordflow">for</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> pos_b = size_b - 1; pos_b != limit; --pos_b) {</div>
+<div class="line"><span class="lineno">   35</span>    <span class="keyword">const</span> <span class="keyword">auto</span> limit = <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(-1);</div>
+<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">for</span> (std::size_t pos_a = size_a - 1; pos_a != limit; --pos_a) {</div>
+<div class="line"><span class="lineno">   37</span>        <span class="keywordflow">for</span> (std::size_t pos_b = size_b - 1; pos_b != limit; --pos_b) {</div>
 <div class="line"><span class="lineno">   38</span>            <span class="keywordflow">if</span> (string_a[pos_a] == string_b[pos_b]) {</div>
 <div class="line"><span class="lineno">   39</span>                sub_sols[pos_a][pos_b] = 1 + sub_sols[pos_a + 1][pos_b + 1];</div>
 <div class="line"><span class="lineno">   40</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   41</span>                sub_sols[pos_a][pos_b] = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(sub_sols[pos_a + 1][pos_b],</div>
+<div class="line"><span class="lineno">   41</span>                sub_sols[pos_a][pos_b] = std::max(sub_sols[pos_a + 1][pos_b],</div>
 <div class="line"><span class="lineno">   42</span>                                                  sub_sols[pos_a][pos_b + 1]);</div>
 <div class="line"><span class="lineno">   43</span>            }</div>
 <div class="line"><span class="lineno">   44</span>        }</div>
@@ -249,16 +274,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   46</span> </div>
 <div class="line"><span class="lineno">   47</span>    <span class="keywordflow">return</span> sub_sols[0][0];</div>
 <div class="line"><span class="lineno">   48</span>}</div>
-<div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">std::string::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-<div class="ttc" id="asize_t_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a></div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d0d/longest__common__string_8cpp_aa38b6b17bc5d46ed88acdd8414e18fa5_cgraph.svg" width="330" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -278,17 +294,14 @@ Here is the call graph for this function:</div>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d0d/longest__common__string_8cpp_source.html#l00156">156</a> of file <a class="el" href="../../da/d0d/longest__common__string_8cpp_source.html">longest_common_string.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  156</span>           {</div>
 <div class="line"><span class="lineno">  157</span>    <a class="code hl_function" href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a>();</div>
 <div class="line"><span class="lineno">  158</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  159</span>}</div>
-<div class="ttc" id="alongest__common__string_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">runs all tests for longest_common_string_length funcion</div><div class="ttdef"><b>Definition</b> longest_common_string.cpp:142</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../da/d0d/longest__common__string_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="100%" height="505"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="alongest__common__string_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">runs all tests for longest_common_string_length funcion</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/longest__common__string_8cpp_source.html#l00142">longest_common_string.cpp:142</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="acb03dbbcee6d607db471021168be8541" name="acb03dbbcee6d607db471021168be8541"></a>
@@ -298,9 +311,9 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> reverse_str </td>
+          <td class="memname">std::string reverse_str </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>in_str</em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>in_str</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -314,17 +327,12 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the string in which the characters appear in the reversed order as in in_str </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  119</span>                                               {</div>
-<div class="line"><span class="lineno">  120</span>    <span class="keywordflow">return</span> {in_str.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/rbegin.html">rbegin</a>(), in_str.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/rend.html">rend</a>()};</div>
-<div class="line"><span class="lineno">  121</span>}</div>
-<div class="ttc" id="arbegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/rbegin.html">std::string::rbegin</a></div><div class="ttdeci">T rbegin(T... args)</div></div>
-<div class="ttc" id="arend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/rend.html">std::string::rend</a></div><div class="ttdeci">T rend(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d0d/longest__common__string_8cpp_acb03dbbcee6d607db471021168be8541_cgraph.svg" width="268" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../da/d0d/longest__common__string_8cpp_source.html#l00119">119</a> of file <a class="el" href="../../da/d0d/longest__common__string_8cpp_source.html">longest_common_string.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  119</span>                                               {</div>
+<div class="line"><span class="lineno">  120</span>    <span class="keywordflow">return</span> {in_str.rbegin(), in_str.rend()};</div>
+<div class="line"><span class="lineno">  121</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9b229daad982a186a4d8d90aa8f38561" name="a9b229daad982a186a4d8d90aa8f38561"></a>
@@ -365,19 +373,16 @@ template&lt;typename <a class="el" href="../../d5/d58/class_test_cases.html">Tes
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d0d/longest__common__string_8cpp_source.html#l00091">91</a> of file <a class="el" href="../../da/d0d/longest__common__string_8cpp_source.html">longest_common_string.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   91</span>                                                                           {</div>
 <div class="line"><span class="lineno">   92</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; cur_tc : test_cases) {</div>
 <div class="line"><span class="lineno">   93</span>        assert(<a class="code hl_function" href="#aa38b6b17bc5d46ed88acdd8414e18fa5">longest_common_string_length</a>(cur_tc.string_a, cur_tc.string_b) ==</div>
 <div class="line"><span class="lineno">   94</span>               cur_tc.common_string_len);</div>
 <div class="line"><span class="lineno">   95</span>    }</div>
 <div class="line"><span class="lineno">   96</span>}</div>
-<div class="ttc" id="alongest__common__string_8cpp_html_aa38b6b17bc5d46ed88acdd8414e18fa5"><div class="ttname"><a href="#aa38b6b17bc5d46ed88acdd8414e18fa5">longest_common_string_length</a></div><div class="ttdeci">std::size_t longest_common_string_length(const std::string &amp;string_a, const std::string &amp;string_b)</div><div class="ttdoc">computes the length of the longest common string created from input strings</div><div class="ttdef"><b>Definition</b> longest_common_string.cpp:28</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d0d/longest__common__string_8cpp_a9b229daad982a186a4d8d90aa8f38561_cgraph.svg" width="527" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="alongest__common__string_8cpp_html_aa38b6b17bc5d46ed88acdd8414e18fa5"><div class="ttname"><a href="#aa38b6b17bc5d46ed88acdd8414e18fa5">longest_common_string_length</a></div><div class="ttdeci">std::size_t longest_common_string_length(const std::string &amp;string_a, const std::string &amp;string_b)</div><div class="ttdoc">computes the length of the longest common string created from input strings</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/longest__common__string_8cpp_source.html#l00028">longest_common_string.cpp:28</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a23ab67b0d9600697695fc8679462d8fe" name="a23ab67b0d9600697695fc8679462d8fe"></a>
@@ -418,6 +423,8 @@ template&lt;typename <a class="el" href="../../d5/d58/class_test_cases.html">Tes
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d0d/longest__common__string_8cpp_source.html#l00130">130</a> of file <a class="el" href="../../da/d0d/longest__common__string_8cpp_source.html">longest_common_string.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  131</span>                                 {</div>
 <div class="line"><span class="lineno">  132</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; cur_tc : test_cases) {</div>
 <div class="line"><span class="lineno">  133</span>        assert(<a class="code hl_function" href="#aa38b6b17bc5d46ed88acdd8414e18fa5">longest_common_string_length</a>(<a class="code hl_function" href="#acb03dbbcee6d607db471021168be8541">reverse_str</a>(cur_tc.string_a),</div>
@@ -425,13 +432,8 @@ template&lt;typename <a class="el" href="../../d5/d58/class_test_cases.html">Tes
 <div class="line"><span class="lineno">  135</span>               cur_tc.common_string_len);</div>
 <div class="line"><span class="lineno">  136</span>    }</div>
 <div class="line"><span class="lineno">  137</span>}</div>
-<div class="ttc" id="alongest__common__string_8cpp_html_acb03dbbcee6d607db471021168be8541"><div class="ttname"><a href="#acb03dbbcee6d607db471021168be8541">reverse_str</a></div><div class="ttdeci">std::string reverse_str(const std::string &amp;in_str)</div><div class="ttdoc">reverses a given string</div><div class="ttdef"><b>Definition</b> longest_common_string.cpp:119</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d0d/longest__common__string_8cpp_a23ab67b0d9600697695fc8679462d8fe_cgraph.svg" width="570" height="188"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="alongest__common__string_8cpp_html_acb03dbbcee6d607db471021168be8541"><div class="ttname"><a href="#acb03dbbcee6d607db471021168be8541">reverse_str</a></div><div class="ttdeci">std::string reverse_str(const std::string &amp;in_str)</div><div class="ttdoc">reverses a given string</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/longest__common__string_8cpp_source.html#l00119">longest_common_string.cpp:119</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad1e613c1b85cc04ed931b6c745fec155" name="ad1e613c1b85cc04ed931b6c745fec155"></a>
@@ -472,18 +474,15 @@ template&lt;typename <a class="el" href="../../d5/d58/class_test_cases.html">Tes
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d0d/longest__common__string_8cpp_source.html#l00105">105</a> of file <a class="el" href="../../da/d0d/longest__common__string_8cpp_source.html">longest_common_string.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  106</span>                                 {</div>
 <div class="line"><span class="lineno">  107</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; cur_tc : test_cases) {</div>
 <div class="line"><span class="lineno">  108</span>        assert(<a class="code hl_function" href="#aa38b6b17bc5d46ed88acdd8414e18fa5">longest_common_string_length</a>(cur_tc.string_b, cur_tc.string_a) ==</div>
 <div class="line"><span class="lineno">  109</span>               cur_tc.common_string_len);</div>
 <div class="line"><span class="lineno">  110</span>    }</div>
 <div class="line"><span class="lineno">  111</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d0d/longest__common__string_8cpp_ad1e613c1b85cc04ed931b6c745fec155_cgraph.svg" width="566" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a483bb8ccf42aaf7375a83e91490eda1e" name="a483bb8ccf42aaf7375a83e91490eda1e"></a>
@@ -510,6 +509,8 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>runs all tests for <a class="el" href="#aa38b6b17bc5d46ed88acdd8414e18fa5" title="computes the length of the longest common string created from input strings">longest_common_string_length</a> funcion </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d0d/longest__common__string_8cpp_source.html#l00142">142</a> of file <a class="el" href="../../da/d0d/longest__common__string_8cpp_source.html">longest_common_string.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  142</span>                    {</div>
 <div class="line"><span class="lineno">  143</span>    <span class="keyword">const</span> <span class="keyword">auto</span> test_cases = <a class="code hl_function" href="#a967854a526bc15403d783a033155fc5c">get_test_cases</a>();</div>
 <div class="line"><span class="lineno">  144</span>    assert(test_cases.size() &gt; 0);</div>
@@ -517,19 +518,13 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  146</span>    <a class="code hl_function" href="#ad1e613c1b85cc04ed931b6c745fec155">test_longest_common_string_length_is_symmetric</a>(test_cases);</div>
 <div class="line"><span class="lineno">  147</span>    <a class="code hl_function" href="#a23ab67b0d9600697695fc8679462d8fe">test_longest_common_string_length_for_reversed_inputs</a>(test_cases);</div>
 <div class="line"><span class="lineno">  148</span> </div>
-<div class="line"><span class="lineno">  149</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  149</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  150</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="alongest__common__string_8cpp_html_a23ab67b0d9600697695fc8679462d8fe"><div class="ttname"><a href="#a23ab67b0d9600697695fc8679462d8fe">test_longest_common_string_length_for_reversed_inputs</a></div><div class="ttdeci">static void test_longest_common_string_length_for_reversed_inputs(const TestCases &amp;test_cases)</div><div class="ttdoc">checks if the function longest_common_string_length returns the same result when its inputs are rever...</div><div class="ttdef"><b>Definition</b> longest_common_string.cpp:130</div></div>
-<div class="ttc" id="alongest__common__string_8cpp_html_a967854a526bc15403d783a033155fc5c"><div class="ttname"><a href="#a967854a526bc15403d783a033155fc5c">get_test_cases</a></div><div class="ttdeci">std::vector&lt; TestCase &gt; get_test_cases()</div><div class="ttdef"><b>Definition</b> longest_common_string.cpp:69</div></div>
-<div class="ttc" id="alongest__common__string_8cpp_html_a9b229daad982a186a4d8d90aa8f38561"><div class="ttname"><a href="#a9b229daad982a186a4d8d90aa8f38561">test_longest_common_string_length</a></div><div class="ttdeci">static void test_longest_common_string_length(const TestCases &amp;test_cases)</div><div class="ttdoc">checks the function longest_common_string_length agains example data</div><div class="ttdef"><b>Definition</b> longest_common_string.cpp:91</div></div>
-<div class="ttc" id="alongest__common__string_8cpp_html_ad1e613c1b85cc04ed931b6c745fec155"><div class="ttname"><a href="#ad1e613c1b85cc04ed931b6c745fec155">test_longest_common_string_length_is_symmetric</a></div><div class="ttdeci">static void test_longest_common_string_length_is_symmetric(const TestCases &amp;test_cases)</div><div class="ttdoc">checks if the function longest_common_string_length returns the same result when its argument are fli...</div><div class="ttdef"><b>Definition</b> longest_common_string.cpp:105</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../da/d0d/longest__common__string_8cpp_a483bb8ccf42aaf7375a83e91490eda1e_cgraph.svg" width="100%" height="505"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="alongest__common__string_8cpp_html_a23ab67b0d9600697695fc8679462d8fe"><div class="ttname"><a href="#a23ab67b0d9600697695fc8679462d8fe">test_longest_common_string_length_for_reversed_inputs</a></div><div class="ttdeci">static void test_longest_common_string_length_for_reversed_inputs(const TestCases &amp;test_cases)</div><div class="ttdoc">checks if the function longest_common_string_length returns the same result when its inputs are rever...</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/longest__common__string_8cpp_source.html#l00130">longest_common_string.cpp:130</a></div></div>
+<div class="ttc" id="alongest__common__string_8cpp_html_a967854a526bc15403d783a033155fc5c"><div class="ttname"><a href="#a967854a526bc15403d783a033155fc5c">get_test_cases</a></div><div class="ttdeci">std::vector&lt; TestCase &gt; get_test_cases()</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/longest__common__string_8cpp_source.html#l00069">longest_common_string.cpp:69</a></div></div>
+<div class="ttc" id="alongest__common__string_8cpp_html_a9b229daad982a186a4d8d90aa8f38561"><div class="ttname"><a href="#a9b229daad982a186a4d8d90aa8f38561">test_longest_common_string_length</a></div><div class="ttdeci">static void test_longest_common_string_length(const TestCases &amp;test_cases)</div><div class="ttdoc">checks the function longest_common_string_length agains example data</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/longest__common__string_8cpp_source.html#l00091">longest_common_string.cpp:91</a></div></div>
+<div class="ttc" id="alongest__common__string_8cpp_html_ad1e613c1b85cc04ed931b6c745fec155"><div class="ttname"><a href="#ad1e613c1b85cc04ed931b6c745fec155">test_longest_common_string_length_is_symmetric</a></div><div class="ttdeci">static void test_longest_common_string_length_is_symmetric(const TestCases &amp;test_cases)</div><div class="ttdoc">checks if the function longest_common_string_length returns the same result when its argument are fli...</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/longest__common__string_8cpp_source.html#l00105">longest_common_string.cpp:105</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

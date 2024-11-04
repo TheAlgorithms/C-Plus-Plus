@@ -31,7 +31,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="123.25,-85.75 15.75,-85.75 15.75,-66.5 123.25,-66.5 123.25,-85.75"/>
 <text text-anchor="middle" x="69.5" y="-72.25" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; T[]&gt;</text>
 </a>

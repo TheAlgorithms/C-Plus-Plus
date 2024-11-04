@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: math/modular_inverse_fermat_little_theorem.cpp File Reference</title>
+<title>TheAlgorithms/C++: math/modular_inverse_fermat_little_theorem.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -121,7 +138,9 @@ Include dependency graph for modular_inverse_fermat_little_theorem.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d1e/modular__inverse__fermat__little__theorem_8cpp__incl.svg" width="255" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d8/d53/modular__inverse__fermat__little__theorem_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html">math</a></td></tr>
@@ -133,13 +152,13 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1c62a87e79f29b98d8fe5b12eacdd928" id="r_a1c62a87e79f29b98d8fe5b12eacdd928"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c62a87e79f29b98d8fe5b12eacdd928">math::modular_inverse_fermat::binExpo</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a> a, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a> b, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a> m)</td></tr>
+<tr class="memitem:a1c62a87e79f29b98d8fe5b12eacdd928" id="r_a1c62a87e79f29b98d8fe5b12eacdd928"><td class="memItemLeft" align="right" valign="top">std::int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c62a87e79f29b98d8fe5b12eacdd928">math::modular_inverse_fermat::binExpo</a> (std::int64_t a, std::int64_t b, std::int64_t m)</td></tr>
 <tr class="memdesc:a1c62a87e79f29b98d8fe5b12eacdd928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate exponent with modulo using binary exponentiation in \(O(\log b)\) time.  <br /></td></tr>
 <tr class="separator:a1c62a87e79f29b98d8fe5b12eacdd928"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba4929409fee35c3cb559e962a544b3e" id="r_aba4929409fee35c3cb559e962a544b3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba4929409fee35c3cb559e962a544b3e">math::modular_inverse_fermat::isPrime</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a> m)</td></tr>
+<tr class="memitem:aba4929409fee35c3cb559e962a544b3e" id="r_aba4929409fee35c3cb559e962a544b3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba4929409fee35c3cb559e962a544b3e">math::modular_inverse_fermat::isPrime</a> (std::int64_t m)</td></tr>
 <tr class="memdesc:aba4929409fee35c3cb559e962a544b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an integer is a prime number in \(O(\sqrt{m})\) time.  <br /></td></tr>
 <tr class="separator:aba4929409fee35c3cb559e962a544b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7e807e02c65c6fffd6162b4c66290c2" id="r_ae7e807e02c65c6fffd6162b4c66290c2"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7e807e02c65c6fffd6162b4c66290c2">math::modular_inverse_fermat::modular_inverse</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a> a, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a> m)</td></tr>
+<tr class="memitem:ae7e807e02c65c6fffd6162b4c66290c2" id="r_ae7e807e02c65c6fffd6162b4c66290c2"><td class="memItemLeft" align="right" valign="top">std::int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7e807e02c65c6fffd6162b4c66290c2">math::modular_inverse_fermat::modular_inverse</a> (std::int64_t a, std::int64_t m)</td></tr>
 <tr class="memdesc:ae7e807e02c65c6fffd6162b4c66290c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculates the modular inverse.  <br /></td></tr>
 <tr class="separator:ae7e807e02c65c6fffd6162b4c66290c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
@@ -180,6 +199,8 @@ Functions</h2></td></tr>
 <li>\(3^5 \;\text{mod}\; 7 = 243 \;\text{mod}\; 7 = 5\) <br  />
 Hence, \(3^{-1} \;\text{mod}\; 7 = 5\) or \(3 \times 5  \;\text{mod}\; 7 = 1 \;\text{mod}\; 7\) (as \(a\times a^{-1} = 1\)) </li>
 </ul>
+
+<p class="definition">Definition in file <a class="el" href="../../d8/d53/modular__inverse__fermat__little__theorem_8cpp_source.html">modular_inverse_fermat_little_theorem.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a1c62a87e79f29b98d8fe5b12eacdd928" name="a1c62a87e79f29b98d8fe5b12eacdd928"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1c62a87e79f29b98d8fe5b12eacdd928">&#9670;&#160;</a></span>binExpo()</h2>
@@ -188,19 +209,19 @@ Hence, \(3^{-1} \;\text{mod}\; 7 = 5\) or \(3 \times 5  \;\text{mod}\; 7 = 1 \;\
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a> math::modular_inverse_fermat::binExpo </td>
+          <td class="memname">std::int64_t math::modular_inverse_fermat::binExpo </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+          <td class="paramtype">std::int64_t</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a></td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+          <td class="paramtype">std::int64_t</td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a></td>          <td class="paramname"><span class="paramname"><em>m</em></span>&#160;)</td>
+          <td class="paramtype">std::int64_t</td>          <td class="paramname"><span class="paramname"><em>m</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -215,9 +236,11 @@ Hence, \(3^{-1} \;\text{mod}\; 7 = 5\) or \(3 \times 5  \;\text{mod}\; 7 = 1 \;\
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The result of \(a^{b} % m\) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d53/modular__inverse__fermat__little__theorem_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../d8/d53/modular__inverse__fermat__little__theorem_8cpp_source.html">modular_inverse_fermat_little_theorem.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   67</span>                                                             {</div>
 <div class="line"><span class="lineno">   68</span>  a %= m;</div>
-<div class="line"><span class="lineno">   69</span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a> res = 1;</div>
+<div class="line"><span class="lineno">   69</span>  std::int64_t res = 1;</div>
 <div class="line"><span class="lineno">   70</span>  <span class="keywordflow">while</span> (b &gt; 0) {</div>
 <div class="line"><span class="lineno">   71</span>    <span class="keywordflow">if</span> (b % 2 != 0) {</div>
 <div class="line"><span class="lineno">   72</span>      res = res * a % m;</div>
@@ -228,13 +251,7 @@ Hence, \(3^{-1} \;\text{mod}\; 7 = 5\) or \(3 \times 5  \;\text{mod}\; 7 = 1 \;\
 <div class="line"><span class="lineno">   77</span>  }</div>
 <div class="line"><span class="lineno">   78</span>  <span class="keywordflow">return</span> res;</div>
 <div class="line"><span class="lineno">   79</span>}</div>
-<div class="ttc" id="ainteger_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d53/modular__inverse__fermat__little__theorem_8cpp_a1c62a87e79f29b98d8fe5b12eacdd928_cgraph.svg" width="280" height="68"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aba4929409fee35c3cb559e962a544b3e" name="aba4929409fee35c3cb559e962a544b3e"></a>
@@ -246,7 +263,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool math::modular_inverse_fermat::isPrime </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a></td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
+          <td class="paramtype">std::int64_t</td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -262,23 +279,20 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>true if the number is prime </dd>
 <dd>
 false if the number is not prime </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d53/modular__inverse__fermat__little__theorem_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../d8/d53/modular__inverse__fermat__little__theorem_8cpp_source.html">modular_inverse_fermat_little_theorem.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   86</span>                           {</div>
 <div class="line"><span class="lineno">   87</span>  <span class="keywordflow">if</span> (m &lt;= 1) {</div>
 <div class="line"><span class="lineno">   88</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   89</span>  } </div>
-<div class="line"><span class="lineno">   90</span>  <span class="keywordflow">for</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a> i = 2; i * i &lt;= m; i++) {</div>
+<div class="line"><span class="lineno">   90</span>  <span class="keywordflow">for</span> (std::int64_t i = 2; i * i &lt;= m; i++) {</div>
 <div class="line"><span class="lineno">   91</span>    <span class="keywordflow">if</span> (m % i == 0) {</div>
 <div class="line"><span class="lineno">   92</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   93</span>    }</div>
 <div class="line"><span class="lineno">   94</span>  }</div>
 <div class="line"><span class="lineno">   95</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">   96</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d53/modular__inverse__fermat__little__theorem_8cpp_aba4929409fee35c3cb559e962a544b3e_cgraph.svg" width="164" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -298,17 +312,14 @@ Here is the call graph for this function:</div>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d53/modular__inverse__fermat__little__theorem_8cpp_source.html#l00137">137</a> of file <a class="el" href="../../d8/d53/modular__inverse__fermat__little__theorem_8cpp_source.html">modular_inverse_fermat_little_theorem.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  137</span>           {</div>
 <div class="line"><span class="lineno">  138</span>  <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementation</span></div>
 <div class="line"><span class="lineno">  139</span>  <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  140</span>}</div>
-<div class="ttc" id="amodular__inverse__fermat__little__theorem_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementation.</div><div class="ttdef"><b>Definition</b> modular_inverse_fermat_little_theorem.cpp:122</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d53/modular__inverse__fermat__little__theorem_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="152" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="amodular__inverse__fermat__little__theorem_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementation.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d53/modular__inverse__fermat__little__theorem_8cpp_source.html#l00122">modular_inverse_fermat_little_theorem.cpp:122</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae7e807e02c65c6fffd6162b4c66290c2" name="ae7e807e02c65c6fffd6162b4c66290c2"></a>
@@ -318,14 +329,14 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a> math::modular_inverse_fermat::modular_inverse </td>
+          <td class="memname">std::int64_t math::modular_inverse_fermat::modular_inverse </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+          <td class="paramtype">std::int64_t</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int64_t</a></td>          <td class="paramname"><span class="paramname"><em>m</em></span>&#160;)</td>
+          <td class="paramtype">std::int64_t</td>          <td class="paramname"><span class="paramname"><em>m</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -339,6 +350,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The result that is the modular inverse of a modulo m </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d53/modular__inverse__fermat__little__theorem_8cpp_source.html#l00103">103</a> of file <a class="el" href="../../d8/d53/modular__inverse__fermat__little__theorem_8cpp_source.html">modular_inverse_fermat_little_theorem.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  103</span>                                                       {</div>
 <div class="line"><span class="lineno">  104</span>  <span class="keywordflow">while</span> (a &lt; 0) {</div>
 <div class="line"><span class="lineno">  105</span>    a += m;</div>
@@ -351,14 +364,9 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  112</span> </div>
 <div class="line"><span class="lineno">  113</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dcf/binary__exponent_8cpp.html#aeb48dce0725e63d19147944f41843c73">binExpo</a>(a, m - 2, m);  <span class="comment">// Fermat&#39;s Little Theorem</span></div>
 <div class="line"><span class="lineno">  114</span>}</div>
-<div class="ttc" id="abinary__exponent_8cpp_html_aeb48dce0725e63d19147944f41843c73"><div class="ttname"><a href="../../de/dcf/binary__exponent_8cpp.html#aeb48dce0725e63d19147944f41843c73">binExpo</a></div><div class="ttdeci">int binExpo(int a, int b)</div><div class="ttdef"><b>Definition</b> binary_exponent.cpp:28</div></div>
-<div class="ttc" id="amodular__inverse__fermat__little__theorem_8cpp_html_aba4929409fee35c3cb559e962a544b3e"><div class="ttname"><a href="#aba4929409fee35c3cb559e962a544b3e">math::modular_inverse_fermat::isPrime</a></div><div class="ttdeci">bool isPrime(std::int64_t m)</div><div class="ttdoc">Check if an integer is a prime number in  time.</div><div class="ttdef"><b>Definition</b> modular_inverse_fermat_little_theorem.cpp:86</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d53/modular__inverse__fermat__little__theorem_8cpp_ae7e807e02c65c6fffd6162b4c66290c2_cgraph.svg" width="380" height="150"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="abinary__exponent_8cpp_html_aeb48dce0725e63d19147944f41843c73"><div class="ttname"><a href="../../de/dcf/binary__exponent_8cpp.html#aeb48dce0725e63d19147944f41843c73">binExpo</a></div><div class="ttdeci">int binExpo(int a, int b)</div><div class="ttdef"><b>Definition</b> <a href="../../de/dcf/binary__exponent_8cpp_source.html#l00028">binary_exponent.cpp:28</a></div></div>
+<div class="ttc" id="amodular__inverse__fermat__little__theorem_8cpp_html_aba4929409fee35c3cb559e962a544b3e"><div class="ttname"><a href="#aba4929409fee35c3cb559e962a544b3e">math::modular_inverse_fermat::isPrime</a></div><div class="ttdeci">bool isPrime(std::int64_t m)</div><div class="ttdoc">Check if an integer is a prime number in  time.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d53/modular__inverse__fermat__little__theorem_8cpp_source.html#l00086">modular_inverse_fermat_little_theorem.cpp:86</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -386,6 +394,8 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementation. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d53/modular__inverse__fermat__little__theorem_8cpp_source.html#l00122">122</a> of file <a class="el" href="../../d8/d53/modular__inverse__fermat__little__theorem_8cpp_source.html">modular_inverse_fermat_little_theorem.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  122</span>                   {</div>
 <div class="line"><span class="lineno">  123</span>  assert(math::modular_inverse_fermat::modular_inverse(0, 97) == -1);</div>
 <div class="line"><span class="lineno">  124</span>  assert(math::modular_inverse_fermat::modular_inverse(15, -2) == -1);</div>

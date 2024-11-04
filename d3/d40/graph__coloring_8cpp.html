@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: backtracking/graph_coloring.cpp File Reference</title>
+<title>TheAlgorithms/C++: backtracking/graph_coloring.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -121,7 +138,9 @@ Include dependency graph for graph_coloring.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/dce/graph__coloring_8cpp__incl.svg" width="238" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d3/d40/graph__coloring_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc0/namespacebacktracking.html">backtracking</a></td></tr>
@@ -134,15 +153,15 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a8c47fa37fb6eeeb781b2ec1b05af6b07" id="r_a8c47fa37fb6eeeb781b2ec1b05af6b07"><td class="memTemplParams" colspan="2">template&lt;size_t V&gt; </td></tr>
-<tr class="memitem:a8c47fa37fb6eeeb781b2ec1b05af6b07"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a8c47fa37fb6eeeb781b2ec1b05af6b07">backtracking::graph_coloring::printSolution</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, V &gt; &amp;color)</td></tr>
+<tr class="memitem:a8c47fa37fb6eeeb781b2ec1b05af6b07"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a8c47fa37fb6eeeb781b2ec1b05af6b07">backtracking::graph_coloring::printSolution</a> (const std::array&lt; int, V &gt; &amp;color)</td></tr>
 <tr class="memdesc:a8c47fa37fb6eeeb781b2ec1b05af6b07"><td class="mdescLeft">&#160;</td><td class="mdescRight">A utility function to print the solution.  <br /></td></tr>
 <tr class="separator:a8c47fa37fb6eeeb781b2ec1b05af6b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a976efe049deb042bf1f02612e181ab1d" id="r_a976efe049deb042bf1f02612e181ab1d"><td class="memTemplParams" colspan="2">template&lt;size_t V&gt; </td></tr>
-<tr class="memitem:a976efe049deb042bf1f02612e181ab1d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a976efe049deb042bf1f02612e181ab1d">backtracking::graph_coloring::isSafe</a> (int v, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, V &gt;, V &gt; &amp;graph, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, V &gt; &amp;color, int c)</td></tr>
+<tr class="memitem:a976efe049deb042bf1f02612e181ab1d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a976efe049deb042bf1f02612e181ab1d">backtracking::graph_coloring::isSafe</a> (int v, const std::array&lt; std::array&lt; int, V &gt;, V &gt; &amp;graph, const std::array&lt; int, V &gt; &amp;color, int c)</td></tr>
 <tr class="memdesc:a976efe049deb042bf1f02612e181ab1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to check if the current color assignment is safe for vertex v.  <br /></td></tr>
 <tr class="separator:a976efe049deb042bf1f02612e181ab1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40337efc5dad761096489bf2c5b1c80c" id="r_a40337efc5dad761096489bf2c5b1c80c"><td class="memTemplParams" colspan="2">template&lt;size_t V&gt; </td></tr>
-<tr class="memitem:a40337efc5dad761096489bf2c5b1c80c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a40337efc5dad761096489bf2c5b1c80c">backtracking::graph_coloring::graphColoring</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, V &gt;, V &gt; &amp;graph, int m, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, V &gt; color, int v)</td></tr>
+<tr class="memitem:a40337efc5dad761096489bf2c5b1c80c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a40337efc5dad761096489bf2c5b1c80c">backtracking::graph_coloring::graphColoring</a> (const std::array&lt; std::array&lt; int, V &gt;, V &gt; &amp;graph, int m, std::array&lt; int, V &gt; color, int v)</td></tr>
 <tr class="memdesc:a40337efc5dad761096489bf2c5b1c80c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursive utility function to solve m coloring problem.  <br /></td></tr>
 <tr class="separator:a40337efc5dad761096489bf2c5b1c80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
@@ -155,6 +174,8 @@ Functions</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/AnupKumarPanwar" target="_blank">Anup Kumar Panwar</a> </dd>
 <dd>
 <a href="https://github.com/Panquesito7" target="_blank">David Leal</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html">graph_coloring.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a40337efc5dad761096489bf2c5b1c80c" name="a40337efc5dad761096489bf2c5b1c80c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a40337efc5dad761096489bf2c5b1c80c">&#9670;&#160;</a></span>graphColoring()</h2>
@@ -167,7 +188,7 @@ template&lt;size_t V&gt; </div>
         <tr>
           <td class="memname">void backtracking::graph_coloring::graphColoring </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, V &gt;, V &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>graph</em></span>, </td>
+          <td class="paramtype">const std::array&lt; std::array&lt; int, V &gt;, V &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>graph</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -177,7 +198,7 @@ template&lt;size_t V&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, V &gt;</td>          <td class="paramname"><span class="paramname"><em>color</em></span>, </td>
+          <td class="paramtype">std::array&lt; int, V &gt;</td>          <td class="paramname"><span class="paramname"><em>color</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -203,6 +224,8 @@ template&lt;size_t V&gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html">graph_coloring.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   83</span>                                                  {</div>
 <div class="line"><span class="lineno">   84</span>    <span class="comment">// base case:</span></div>
 <div class="line"><span class="lineno">   85</span>    <span class="comment">// If all vertices are assigned a color then return true</span></div>
@@ -226,12 +249,7 @@ template&lt;size_t V&gt; </div>
 <div class="line"><span class="lineno">  103</span>    }</div>
 <div class="line"><span class="lineno">  104</span>}</div>
 <div class="ttc" id="anamespacegraph_html"><div class="ttname"><a href="../../df/dce/namespacegraph.html">graph</a></div><div class="ttdoc">Graph Algorithms.</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d40/graph__coloring_8cpp_a40337efc5dad761096489bf2c5b1c80c_cgraph.svg" width="172" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a976efe049deb042bf1f02612e181ab1d" name="a976efe049deb042bf1f02612e181ab1d"></a>
@@ -250,12 +268,12 @@ template&lt;size_t V&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, V &gt;, V &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>graph</em></span>, </td>
+          <td class="paramtype">const std::array&lt; std::array&lt; int, V &gt;, V &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>graph</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, V &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>color</em></span>, </td>
+          <td class="paramtype">const std::array&lt; int, V &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>color</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -284,6 +302,8 @@ template&lt;size_t V&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the color is safe to be assigned to the node </dd>
 <dd>
 <code>false</code> if the color is not safe to be assigned to the node </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html">graph_coloring.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   63</span>                                                  {</div>
 <div class="line"><span class="lineno">   64</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; V; i++) {</div>
 <div class="line"><span class="lineno">   65</span>        <span class="keywordflow">if</span> (<a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>[v][i] &amp;&amp; c == color[i]) {</div>
@@ -292,12 +312,7 @@ template&lt;size_t V&gt; </div>
 <div class="line"><span class="lineno">   68</span>    }</div>
 <div class="line"><span class="lineno">   69</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">   70</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d40/graph__coloring_8cpp_a976efe049deb042bf1f02612e181ab1d_cgraph.svg" width="147" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -317,6 +332,8 @@ Here is the call graph for this function:</div>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html#l00112">112</a> of file <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html">graph_coloring.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  112</span>           {</div>
 <div class="line"><span class="lineno">  113</span>    <span class="comment">// Create following graph and test whether it is 3 colorable</span></div>
 <div class="line"><span class="lineno">  114</span>    <span class="comment">// (3)---(2)</span></div>
@@ -326,17 +343,16 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  118</span>    <span class="comment">// (0)---(1)</span></div>
 <div class="line"><span class="lineno">  119</span> </div>
 <div class="line"><span class="lineno">  120</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> V = 4;  <span class="comment">// number of vertices in the graph</span></div>
-<div class="line"><span class="lineno">  121</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::array&lt;int, V&gt;</a>, V&gt; <a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a> = {</div>
-<div class="line"><span class="lineno">  122</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, V&gt;</a>({0, 1, 1, 1}), <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, V&gt;</a>({1, 0, 1, 0}),</div>
-<div class="line"><span class="lineno">  123</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, V&gt;</a>({1, 1, 0, 1}), <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, V&gt;</a>({1, 0, 1, 0})};</div>
+<div class="line"><span class="lineno">  121</span>    std::array&lt;std::array&lt;int, V&gt;, V&gt; <a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a> = {</div>
+<div class="line"><span class="lineno">  122</span>        std::array&lt;int, V&gt;({0, 1, 1, 1}), std::array&lt;int, V&gt;({1, 0, 1, 0}),</div>
+<div class="line"><span class="lineno">  123</span>        std::array&lt;int, V&gt;({1, 1, 0, 1}), std::array&lt;int, V&gt;({1, 0, 1, 0})};</div>
 <div class="line"><span class="lineno">  124</span> </div>
 <div class="line"><span class="lineno">  125</span>    <span class="keywordtype">int</span> m = 3;  <span class="comment">// Number of colors</span></div>
-<div class="line"><span class="lineno">  126</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, V&gt;</a> color{};</div>
+<div class="line"><span class="lineno">  126</span>    std::array&lt;int, V&gt; color{};</div>
 <div class="line"><span class="lineno">  127</span> </div>
 <div class="line"><span class="lineno">  128</span>    backtracking::graph_coloring::graphColoring&lt;V&gt;(<a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>, m, color, 0);</div>
 <div class="line"><span class="lineno">  129</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  130</span>}</div>
-<div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -351,7 +367,7 @@ template&lt;size_t V&gt; </div>
         <tr>
           <td class="memname">void backtracking::graph_coloring::printSolution </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, V &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>color</em></span></td><td>)</td>
+          <td class="paramtype">const std::array&lt; int, V &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>color</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -370,20 +386,16 @@ template&lt;size_t V&gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>                                                  {</div>
-<div class="line"><span class="lineno">   43</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Following are the assigned colors\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; col : color) {</div>
-<div class="line"><span class="lineno">   45</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; col;</div>
-<div class="line"><span class="lineno">   46</span>    }</div>
-<div class="line"><span class="lineno">   47</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   48</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d40/graph__coloring_8cpp_a8c47fa37fb6eeeb781b2ec1b05af6b07_cgraph.svg" width="164" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html">graph_coloring.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>                                                  {</div>
+<div class="line"><span class="lineno">   43</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Following are the assigned colors\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; col : color) {</div>
+<div class="line"><span class="lineno">   45</span>        std::cout &lt;&lt; col;</div>
+<div class="line"><span class="lineno">   46</span>    }</div>
+<div class="line"><span class="lineno">   47</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   48</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

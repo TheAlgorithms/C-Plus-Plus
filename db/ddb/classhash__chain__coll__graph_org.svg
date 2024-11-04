@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="121.38,-97 1.12,-97 1.12,-66.5 121.38,-66.5 121.38,-97"/>
 <text text-anchor="start" x="9.12" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; std::shared</text>
 <text text-anchor="middle" x="61.25" y="-72.25" font-family="Helvetica,sans-Serif" font-size="10.00">_ptr&lt; Node &gt; &gt;</text>
@@ -40,7 +40,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" xlink:title=" ">
+<g id="a_Node000003"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="122.5,-163.5 0,-163.5 0,-144.25 122.5,-144.25 122.5,-163.5"/>
 <text text-anchor="middle" x="61.25" y="-150" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr&lt; Node &gt;</text>
 </a>
@@ -88,7 +88,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" xlink:title=" ">
+<g id="a_Node000005"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="118,-307.75 4.5,-307.75 4.5,-277.25 118,-277.25 118,-307.75"/>
 <text text-anchor="start" x="12.5" y="-294.25" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr&lt; Node</text>
 <text text-anchor="middle" x="61.25" y="-283" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; ValueType &gt; &gt;</text>

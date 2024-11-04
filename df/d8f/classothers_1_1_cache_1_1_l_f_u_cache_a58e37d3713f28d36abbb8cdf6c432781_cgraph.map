@@ -1,7 +1,0 @@
-<map id="others::Cache::LFUCache::get" name="others::Cache::LFUCache::get">
-<area shape="rect" id="Node000001" title="get the value of the key&#45;value pair if exists" alt="" coords="5,13,206,38"/>
-<area shape="rect" id="Node000002" href="$df/d8f/classothers_1_1_cache_1_1_l_f_u_cache.html#a16a25c102554c5653721a5112ef676c9" title="increase the frequency of node and push it in the respective list." alt="" coords="254,5,428,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,23,238,23,238,28,206,28"/>
-<area shape="rect" id="Node000003" href="$df/d8f/classothers_1_1_cache_1_1_l_f_u_cache.html#adad4ab43141fb8ba43facd3a71e07047" title="push the node at first position in the linked list of given frequency" alt="" coords="476,5,650,46"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="428,23,460,23,460,28,428,28"/>
-</map>

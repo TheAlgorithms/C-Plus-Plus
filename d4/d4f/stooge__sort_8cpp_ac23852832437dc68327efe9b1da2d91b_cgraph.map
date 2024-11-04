@@ -1,6 +1,0 @@
-<map id="stoogeSort" name="stoogeSort">
-<area shape="rect" id="Node000001" title="for IO operations" alt="" coords="5,29,90,55"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="25,30,21,21,23,11,32,5,48,3,64,5,72,12,69,16,61,10,47,8,34,10,28,14,26,20,30,28"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="138,29,216,55"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="90,40,122,40,122,45,90,45"/>
-</map>

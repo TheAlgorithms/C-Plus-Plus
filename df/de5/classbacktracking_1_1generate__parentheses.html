@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: backtracking::generate_parentheses Class Reference</title>
+<title>TheAlgorithms/C++: backtracking::generate_parentheses Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -123,25 +140,26 @@ Collaboration diagram for backtracking::generate_parentheses:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af39c03d80ce0ba9fbf659b420980d160" id="r_af39c03d80ce0ba9fbf659b420980d160"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af39c03d80ce0ba9fbf659b420980d160">generate</a> (int n)</td></tr>
+<tr class="memitem:af39c03d80ce0ba9fbf659b420980d160" id="r_af39c03d80ce0ba9fbf659b420980d160"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af39c03d80ce0ba9fbf659b420980d160">generate</a> (int n)</td></tr>
 <tr class="memdesc:af39c03d80ce0ba9fbf659b420980d160"><td class="mdescLeft">&#160;</td><td class="mdescRight">wrapper interface  <br /></td></tr>
 <tr class="separator:af39c03d80ce0ba9fbf659b420980d160"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ac1489edd65374f22fe04851051f0a2ec" id="r_ac1489edd65374f22fe04851051f0a2ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1489edd65374f22fe04851051f0a2ec">makeStrings</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> str, int n, int closed, int open)</td></tr>
+<tr class="memitem:ac1489edd65374f22fe04851051f0a2ec" id="r_ac1489edd65374f22fe04851051f0a2ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1489edd65374f22fe04851051f0a2ec">makeStrings</a> (std::string str, int n, int closed, int open)</td></tr>
 <tr class="memdesc:ac1489edd65374f22fe04851051f0a2ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">function that adds parenthesis to the string.  <br /></td></tr>
 <tr class="separator:ac1489edd65374f22fe04851051f0a2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ab35b9b6d2886abed3d6fb05c2be1c508" id="r_ab35b9b6d2886abed3d6fb05c2be1c508"><td class="memItemLeft" align="right" valign="top"><a id="ab35b9b6d2886abed3d6fb05c2be1c508" name="ab35b9b6d2886abed3d6fb05c2be1c508"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>res</b></td></tr>
-<tr class="memdesc:ab35b9b6d2886abed3d6fb05c2be1c508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains all possible valid patterns. <br /></td></tr>
+<tr class="memitem:ab35b9b6d2886abed3d6fb05c2be1c508" id="r_ab35b9b6d2886abed3d6fb05c2be1c508"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab35b9b6d2886abed3d6fb05c2be1c508">res</a></td></tr>
+<tr class="memdesc:ab35b9b6d2886abed3d6fb05c2be1c508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains all possible valid patterns.  <br /></td></tr>
 <tr class="separator:ab35b9b6d2886abed3d6fb05c2be1c508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../df/de5/classbacktracking_1_1generate__parentheses.html" title="generate_parentheses class">generate_parentheses</a> class </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d1e/generate__parentheses_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../dd/d1e/generate__parentheses_8cpp_source.html">generate_parentheses.cpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="af39c03d80ce0ba9fbf659b420980d160" name="af39c03d80ce0ba9fbf659b420980d160"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af39c03d80ce0ba9fbf659b420980d160">&#9670;&#160;</a></span>generate()</h2>
@@ -150,7 +168,7 @@ Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &gt; backtracking::generate_parentheses::generate </td>
+          <td class="memname">std::vector&lt; std::string &gt; backtracking::generate_parentheses::generate </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
           <td></td>
@@ -166,22 +184,17 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>all well-formed pattern of parentheses </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d1e/generate__parentheses_8cpp_source.html#l00070">70</a> of file <a class="el" href="../../dd/d1e/generate__parentheses_8cpp_source.html">generate_parentheses.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   70</span>                                                         {</div>
-<div class="line"><span class="lineno">   71</span>    <a class="code hl_variable" href="#ab35b9b6d2886abed3d6fb05c2be1c508">backtracking::generate_parentheses::res</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/clear.html">clear</a>();</div>
-<div class="line"><span class="lineno">   72</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> str = <span class="stringliteral">&quot;(&quot;</span>;</div>
+<div class="line"><span class="lineno">   71</span>    <a class="code hl_variable" href="#ab35b9b6d2886abed3d6fb05c2be1c508">backtracking::generate_parentheses::res</a>.clear();</div>
+<div class="line"><span class="lineno">   72</span>    std::string str = <span class="stringliteral">&quot;(&quot;</span>;</div>
 <div class="line"><span class="lineno">   73</span>    <a class="code hl_function" href="#ac1489edd65374f22fe04851051f0a2ec">generate_parentheses::makeStrings</a>(str, n, 0, 1);</div>
 <div class="line"><span class="lineno">   74</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="#ab35b9b6d2886abed3d6fb05c2be1c508">res</a>;</div>
 <div class="line"><span class="lineno">   75</span>}</div>
-<div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
-<div class="ttc" id="aclassbacktracking_1_1generate__parentheses_html_ab35b9b6d2886abed3d6fb05c2be1c508"><div class="ttname"><a href="#ab35b9b6d2886abed3d6fb05c2be1c508">backtracking::generate_parentheses::res</a></div><div class="ttdeci">std::vector&lt; std::string &gt; res</div><div class="ttdoc">Contains all possible valid patterns.</div><div class="ttdef"><b>Definition</b> generate_parentheses.cpp:28</div></div>
-<div class="ttc" id="aclassbacktracking_1_1generate__parentheses_html_ac1489edd65374f22fe04851051f0a2ec"><div class="ttname"><a href="#ac1489edd65374f22fe04851051f0a2ec">backtracking::generate_parentheses::makeStrings</a></div><div class="ttdeci">void makeStrings(std::string str, int n, int closed, int open)</div><div class="ttdoc">function that adds parenthesis to the string.</div><div class="ttdef"><b>Definition</b> generate_parentheses.cpp:45</div></div>
-<div class="ttc" id="aclear_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/clear.html">std::vector::clear</a></div><div class="ttdeci">T clear(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/de5/classbacktracking_1_1generate__parentheses_af39c03d80ce0ba9fbf659b420980d160_cgraph.svg" width="599" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassbacktracking_1_1generate__parentheses_html_ab35b9b6d2886abed3d6fb05c2be1c508"><div class="ttname"><a href="#ab35b9b6d2886abed3d6fb05c2be1c508">backtracking::generate_parentheses::res</a></div><div class="ttdeci">std::vector&lt; std::string &gt; res</div><div class="ttdoc">Contains all possible valid patterns.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d1e/generate__parentheses_8cpp_source.html#l00028">generate_parentheses.cpp:28</a></div></div>
+<div class="ttc" id="aclassbacktracking_1_1generate__parentheses_html_ac1489edd65374f22fe04851051f0a2ec"><div class="ttname"><a href="#ac1489edd65374f22fe04851051f0a2ec">backtracking::generate_parentheses::makeStrings</a></div><div class="ttdeci">void makeStrings(std::string str, int n, int closed, int open)</div><div class="ttdoc">function that adds parenthesis to the string.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d1e/generate__parentheses_8cpp_source.html#l00045">generate_parentheses.cpp:45</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac1489edd65374f22fe04851051f0a2ec" name="ac1489edd65374f22fe04851051f0a2ec"></a>
@@ -196,7 +209,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void backtracking::generate_parentheses::makeStrings </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -231,35 +244,57 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d1e/generate__parentheses_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../dd/d1e/generate__parentheses_8cpp_source.html">generate_parentheses.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   46</span>                                                                           {</div>
 <div class="line"><span class="lineno">   47</span>    <span class="keywordflow">if</span> (closed &gt; open)  <span class="comment">// We can never have more closed than open</span></div>
 <div class="line"><span class="lineno">   48</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">   49</span> </div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">if</span> ((str.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>() == 2 * n) &amp;&amp;</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">if</span> ((str.length() == 2 * n) &amp;&amp;</div>
 <div class="line"><span class="lineno">   51</span>        (closed != open)) {  <span class="comment">// closed and open must be the same</span></div>
 <div class="line"><span class="lineno">   52</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">   53</span>    }</div>
 <div class="line"><span class="lineno">   54</span> </div>
-<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">if</span> (str.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>() == 2 * n) {</div>
-<div class="line"><span class="lineno">   56</span>        <a class="code hl_variable" href="#ab35b9b6d2886abed3d6fb05c2be1c508">res</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(str);</div>
+<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">if</span> (str.length() == 2 * n) {</div>
+<div class="line"><span class="lineno">   56</span>        <a class="code hl_variable" href="#ab35b9b6d2886abed3d6fb05c2be1c508">res</a>.push_back(str);</div>
 <div class="line"><span class="lineno">   57</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">   58</span>    }</div>
 <div class="line"><span class="lineno">   59</span> </div>
 <div class="line"><span class="lineno">   60</span>    <a class="code hl_function" href="#ac1489edd65374f22fe04851051f0a2ec">makeStrings</a>(str + <span class="charliteral">&#39;)&#39;</span>, n, closed + 1, open);</div>
 <div class="line"><span class="lineno">   61</span>    <a class="code hl_function" href="#ac1489edd65374f22fe04851051f0a2ec">makeStrings</a>(str + <span class="charliteral">&#39;(&#39;</span>, n, closed, open + 1);</div>
 <div class="line"><span class="lineno">   62</span>}</div>
-<div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">std::string::length</a></div><div class="ttdeci">T length(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/de5/classbacktracking_1_1generate__parentheses_ac1489edd65374f22fe04851051f0a2ec_cgraph.svg" width="394" height="92"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div><!-- fragment -->
 </div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab35b9b6d2886abed3d6fb05c2be1c508" name="ab35b9b6d2886abed3d6fb05c2be1c508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab35b9b6d2886abed3d6fb05c2be1c508">&#9670;&#160;</a></span>res</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; backtracking::generate_parentheses::res</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Contains all possible valid patterns. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d1e/generate__parentheses_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../dd/d1e/generate__parentheses_8cpp_source.html">generate_parentheses.cpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>backtracking/<a class="el" href="../../dd/d1e/generate__parentheses_8cpp.html">generate_parentheses.cpp</a></li>
+<li>backtracking/<a class="el" href="../../dd/d1e/generate__parentheses_8cpp_source.html">generate_parentheses.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

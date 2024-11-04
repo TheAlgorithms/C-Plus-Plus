@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: operations_on_datastructures/trie_multiple_search.cpp File Reference</title>
+<title>TheAlgorithms/C++: operations_on_datastructures/trie_multiple_search.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -126,7 +143,9 @@ Include dependency graph for trie_multiple_search.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/df4/trie__multiple__search_8cpp__incl.svg" width="602" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d7/def/trie__multiple__search_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html">operations_on_datastructures::trie_operations::Tnode</a></td></tr>
@@ -136,7 +155,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d6d/namespaceoperations__on__datastructures.html">operations_on_datastructures</a></td></tr>
-<tr class="memdesc:da/d6d/namespaceoperations__on__datastructures"><td class="mdescLeft">&#160;</td><td class="mdescRight">for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> <br /></td></tr>
+<tr class="memdesc:da/d6d/namespaceoperations__on__datastructures"><td class="mdescLeft">&#160;</td><td class="mdescRight">for std::vector <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8e/namespacetrie__operations.html">trie_operations</a></td></tr>
 <tr class="memdesc:df/d8e/namespacetrie__operations"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for <a href="https://iq.opengenus.org/autocomplete-using-trie-data-structure/" target="_blank">Trie datastructure</a> implementation. <br /></td></tr>
@@ -154,6 +173,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a href="https://iq.opengenus.org/autocomplete-using-trie-data-structure/" target="_blank">Trie datastructure</a> with search variants </p>
 <p>This provides multiple variants of search functions on a trie structure utilizing STL. The trie is valid for only English alphabets. </p><dl class="section author"><dt>Author</dt><dd><a href="https://github.com/g-s-k-zoro" target="_blank">Ghanashyam</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html">trie_multiple_search.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="abf9e6b7e6f15df4b525a2e7705ba3089" name="abf9e6b7e6f15df4b525a2e7705ba3089"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abf9e6b7e6f15df4b525a2e7705ba3089">&#9670;&#160;</a></span>main()</h2>
@@ -183,17 +204,14 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html#l00466">466</a> of file <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html">trie_multiple_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  466</span>                                       {</div>
 <div class="line"><span class="lineno">  467</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
 <div class="line"><span class="lineno">  468</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  469</span>}</div>
-<div class="ttc" id="atrie__multiple__search_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Function to test a simple search before and after deleting an entry. And to test out the multiple var...</div><div class="ttdef"><b>Definition</b> trie_multiple_search.cpp:425</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/def/trie__multiple__search_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089_cgraph.svg" width="271" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="atrie__multiple__search_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Function to test a simple search before and after deleting an entry. And to test out the multiple var...</div><div class="ttdef"><b>Definition</b> <a href="../../d7/def/trie__multiple__search_8cpp_source.html#l00425">trie_multiple_search.cpp:425</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -220,9 +238,11 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Function to test a simple search before and after deleting an entry. And to test out the multiple variants of search. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html#l00425">425</a> of file <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html">trie_multiple_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  425</span>                   {</div>
 <div class="line"><span class="lineno">  426</span>    <span class="keyword">auto</span> root = <span class="keyword">new</span> <a class="code hl_class" href="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html">operations_on_datastructures::trie_operations::Tnode</a>();</div>
-<div class="line"><span class="lineno">  427</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::string&gt;</a> inputs = {</div>
+<div class="line"><span class="lineno">  427</span>    std::vector&lt;std::string&gt; inputs = {</div>
 <div class="line"><span class="lineno">  428</span>        <span class="stringliteral">&quot;abcde&quot;</span>, <span class="stringliteral">&quot;sss&quot;</span>,    <span class="stringliteral">&quot;ssss&quot;</span>,  <span class="stringliteral">&quot;ssst&quot;</span>, <span class="stringliteral">&quot;sssu&quot;</span>, <span class="stringliteral">&quot;sssv&quot;</span>,</div>
 <div class="line"><span class="lineno">  429</span>        <span class="stringliteral">&quot;sst&quot;</span>,   <span class="stringliteral">&quot;ssts&quot;</span>,   <span class="stringliteral">&quot;sstt&quot;</span>,  <span class="stringliteral">&quot;sstu&quot;</span>, <span class="stringliteral">&quot;tutu&quot;</span>, <span class="stringliteral">&quot;tutuv&quot;</span>,</div>
 <div class="line"><span class="lineno">  430</span>        <span class="stringliteral">&quot;tutuu&quot;</span>, <span class="stringliteral">&quot;tutuvs&quot;</span>, <span class="stringliteral">&quot;tutus&quot;</span>, <span class="stringliteral">&quot;tvst&quot;</span>, <span class="stringliteral">&quot;tvsu&quot;</span>, <span class="stringliteral">&quot;vvvv&quot;</span>};</div>
@@ -232,19 +252,19 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  434</span>    }</div>
 <div class="line"><span class="lineno">  435</span>    <span class="comment">// Search an existing entry</span></div>
 <div class="line"><span class="lineno">  436</span>    assert(root-&gt;SearchPresence(<span class="stringliteral">&quot;vvvv&quot;</span>));</div>
-<div class="line"><span class="lineno">  437</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; root-&gt;SearchPresence(<span class="stringliteral">&quot;vvvv&quot;</span>) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  437</span>    std::cout &lt;&lt; root-&gt;SearchPresence(<span class="stringliteral">&quot;vvvv&quot;</span>) &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  438</span>    <span class="comment">// Delete it</span></div>
 <div class="line"><span class="lineno">  439</span>    root-&gt;Delete(<span class="stringliteral">&quot;vvvv&quot;</span>);</div>
 <div class="line"><span class="lineno">  440</span>    <span class="comment">// Search for the entry again</span></div>
 <div class="line"><span class="lineno">  441</span>    assert(!root-&gt;SearchPresence(<span class="stringliteral">&quot;vvvv&quot;</span>));</div>
-<div class="line"><span class="lineno">  442</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; root-&gt;SearchPresence(<span class="stringliteral">&quot;vvvv&quot;</span>) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  442</span>    std::cout &lt;&lt; root-&gt;SearchPresence(<span class="stringliteral">&quot;vvvv&quot;</span>) &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  443</span> </div>
-<div class="line"><span class="lineno">  444</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; root-&gt;SearchPresence(<span class="stringliteral">&quot;tutu&quot;</span>) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  444</span>    std::cout &lt;&lt; root-&gt;SearchPresence(<span class="stringliteral">&quot;tutu&quot;</span>) &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  445</span>    root-&gt;SearchSuggestions(<span class="stringliteral">&quot;tutu&quot;</span>);</div>
-<div class="line"><span class="lineno">  446</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; root-&gt;SearchPresence(<span class="stringliteral">&quot;tutu&quot;</span>) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  446</span>    std::cout &lt;&lt; root-&gt;SearchPresence(<span class="stringliteral">&quot;tutu&quot;</span>) &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  447</span> </div>
 <div class="line"><span class="lineno">  448</span>    root-&gt;SearchSuggestions(<span class="stringliteral">&quot;tutuv&quot;</span>);</div>
-<div class="line"><span class="lineno">  449</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; root-&gt;SearchPresence(<span class="stringliteral">&quot;tutuv&quot;</span>) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  449</span>    std::cout &lt;&lt; root-&gt;SearchPresence(<span class="stringliteral">&quot;tutuv&quot;</span>) &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  450</span> </div>
 <div class="line"><span class="lineno">  451</span>    root-&gt;SearchSuggestions(<span class="stringliteral">&quot;tutuvs&quot;</span>);</div>
 <div class="line"><span class="lineno">  452</span> </div>
@@ -254,16 +274,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  456</span>    root-&gt;SearchSuggestions(</div>
 <div class="line"><span class="lineno">  457</span>        <span class="stringliteral">&quot;&quot;</span>);  <span class="comment">// Empty search to list all the entries in the trie</span></div>
 <div class="line"><span class="lineno">  458</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aclassoperations__on__datastructures_1_1trie__operations_1_1_tnode_html"><div class="ttname"><a href="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html">operations_on_datastructures::trie_operations::Tnode</a></div><div class="ttdoc">Class defining the structure of trie node and containing the methods to perform operations on them.</div><div class="ttdef"><b>Definition</b> trie_multiple_search.cpp:37</div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/def/trie__multiple__search_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="174" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassoperations__on__datastructures_1_1trie__operations_1_1_tnode_html"><div class="ttname"><a href="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html">operations_on_datastructures::trie_operations::Tnode</a></div><div class="ttdoc">Class defining the structure of trie node and containing the methods to perform operations on them.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/def/trie__multiple__search_8cpp_source.html#l00037">trie_multiple_search.cpp:37</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

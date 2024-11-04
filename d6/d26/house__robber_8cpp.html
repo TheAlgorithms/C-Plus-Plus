@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: dynamic_programming/house_robber.cpp File Reference</title>
+<title>TheAlgorithms/C++: dynamic_programming/house_robber.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -123,7 +140,9 @@ Include dependency graph for house_robber.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/dd7/house__robber_8cpp__incl.svg" width="419" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d6/d26/house__robber_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d24/namespacedynamic__programming.html">dynamic_programming</a></td></tr>
@@ -135,7 +154,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1e497c3e3f169afe5baaae6a5d40cbc8" id="r_a1e497c3e3f169afe5baaae6a5d40cbc8"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e497c3e3f169afe5baaae6a5d40cbc8">dynamic_programming::house_robber::houseRobber</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint32_t &gt; &amp;money, const uint32_t &amp;n)</td></tr>
+<tr class="memitem:a1e497c3e3f169afe5baaae6a5d40cbc8" id="r_a1e497c3e3f169afe5baaae6a5d40cbc8"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e497c3e3f169afe5baaae6a5d40cbc8">dynamic_programming::house_robber::houseRobber</a> (const std::vector&lt; uint32_t &gt; &amp;money, const uint32_t &amp;n)</td></tr>
 <tr class="memdesc:a1e497c3e3f169afe5baaae6a5d40cbc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main function that implements the House Robber algorithm using dynamic programming.  <br /></td></tr>
 <tr class="separator:a1e497c3e3f169afe5baaae6a5d40cbc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
@@ -148,6 +167,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of <a href="https://labuladong.gitbook.io/algo-en/i.-dynamic-programming/houserobber" target="_blank">House Robber Problem</a> algorithm. </p>
 <p><a class="el" href="../../dd/d4f/class_solution.html">Solution</a> of House robber problem uses a dynamic programming concept that works in \(O(n)\) time and works in \(O(1)\) space. </p><dl class="section author"><dt>Author</dt><dd><a href="https://github.com/Swastyy" target="_blank">Swastika Gupta</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d6/d26/house__robber_8cpp_source.html">house_robber.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a1e497c3e3f169afe5baaae6a5d40cbc8" name="a1e497c3e3f169afe5baaae6a5d40cbc8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1e497c3e3f169afe5baaae6a5d40cbc8">&#9670;&#160;</a></span>houseRobber()</h2>
@@ -156,9 +177,9 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> dynamic_programming::house_robber::houseRobber </td>
+          <td class="memname">std::uint32_t dynamic_programming::house_robber::houseRobber </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint32_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>money</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; uint32_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>money</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -177,6 +198,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>maximum amount of money that can be robbed </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d26/house__robber_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../d6/d26/house__robber_8cpp_source.html">house_robber.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   37</span>                                             {</div>
 <div class="line"><span class="lineno">   38</span>    <span class="keywordflow">if</span> (n == 0) {  <span class="comment">// if there is no house</span></div>
 <div class="line"><span class="lineno">   39</span>        <span class="keywordflow">return</span> 0;</div>
@@ -186,26 +209,20 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   43</span>    }</div>
 <div class="line"><span class="lineno">   44</span>    <span class="keywordflow">if</span> (n == 2) {  <span class="comment">// if there are two houses, one with the maximum amount of</span></div>
 <div class="line"><span class="lineno">   45</span>                   <span class="comment">// money will be robbed</span></div>
-<div class="line"><span class="lineno">   46</span>        <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(money[0], money[1]);</div>
+<div class="line"><span class="lineno">   46</span>        <span class="keywordflow">return</span> std::max(money[0], money[1]);</div>
 <div class="line"><span class="lineno">   47</span>    }</div>
 <div class="line"><span class="lineno">   48</span>    uint32_t max_value = 0;  <span class="comment">// contains maximum stolen value at the end</span></div>
 <div class="line"><span class="lineno">   49</span>    uint32_t value1 = money[0];</div>
-<div class="line"><span class="lineno">   50</span>    uint32_t value2 = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(money[0], money[1]);</div>
+<div class="line"><span class="lineno">   50</span>    uint32_t value2 = std::max(money[0], money[1]);</div>
 <div class="line"><span class="lineno">   51</span>    <span class="keywordflow">for</span> (uint32_t i = 2; i &lt; n; i++) {</div>
-<div class="line"><span class="lineno">   52</span>        max_value = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(money[i] + value1, value2);</div>
+<div class="line"><span class="lineno">   52</span>        max_value = std::max(money[i] + value1, value2);</div>
 <div class="line"><span class="lineno">   53</span>        value1 = value2;</div>
 <div class="line"><span class="lineno">   54</span>        value2 = max_value;</div>
 <div class="line"><span class="lineno">   55</span>    }</div>
 <div class="line"><span class="lineno">   56</span> </div>
 <div class="line"><span class="lineno">   57</span>    <span class="keywordflow">return</span> max_value;</div>
 <div class="line"><span class="lineno">   58</span>}</div>
-<div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d26/house__robber_8cpp_a1e497c3e3f169afe5baaae6a5d40cbc8_cgraph.svg" width="324" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -225,17 +242,14 @@ Here is the call graph for this function:</div>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d26/house__robber_8cpp_source.html#l00111">111</a> of file <a class="el" href="../../d6/d26/house__robber_8cpp_source.html">house_robber.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  111</span>           {</div>
 <div class="line"><span class="lineno">  112</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
 <div class="line"><span class="lineno">  113</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  114</span>}</div>
-<div class="ttc" id="ahouse__robber_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> house_robber.cpp:66</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d26/house__robber_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="315" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="ahouse__robber_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d26/house__robber_8cpp_source.html#l00066">house_robber.cpp:66</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -263,56 +277,49 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d26/house__robber_8cpp_source.html#l00066">66</a> of file <a class="el" href="../../d6/d26/house__robber_8cpp_source.html">house_robber.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   66</span>                   {</div>
 <div class="line"><span class="lineno">   67</span>    <span class="comment">// Test 1</span></div>
 <div class="line"><span class="lineno">   68</span>    <span class="comment">// [1, 2, 3, 1] return 4</span></div>
-<div class="line"><span class="lineno">   69</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a> array1 = {1, 2, 3, 1};</div>
-<div class="line"><span class="lineno">   70</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1... &quot;</span>;</div>
+<div class="line"><span class="lineno">   69</span>    std::vector&lt;uint32_t&gt; array1 = {1, 2, 3, 1};</div>
+<div class="line"><span class="lineno">   70</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 1... &quot;</span>;</div>
 <div class="line"><span class="lineno">   71</span>    assert(</div>
-<div class="line"><span class="lineno">   72</span>        dynamic_programming::house_robber::houseRobber(array1, array1.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()) ==</div>
+<div class="line"><span class="lineno">   72</span>        dynamic_programming::house_robber::houseRobber(array1, array1.size()) ==</div>
 <div class="line"><span class="lineno">   73</span>        4);  <span class="comment">// here the two non-adjacent houses that are robbed are first and</span></div>
 <div class="line"><span class="lineno">   74</span>             <span class="comment">// third with total sum money as 4</span></div>
-<div class="line"><span class="lineno">   75</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   75</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   76</span> </div>
 <div class="line"><span class="lineno">   77</span>    <span class="comment">// Test 2</span></div>
 <div class="line"><span class="lineno">   78</span>    <span class="comment">// [6, 7, 1, 3, 8, 2, 4] return 19</span></div>
-<div class="line"><span class="lineno">   79</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a> array2 = {6, 7, 1, 3, 8, 2, 4};</div>
-<div class="line"><span class="lineno">   80</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2... &quot;</span>;</div>
+<div class="line"><span class="lineno">   79</span>    std::vector&lt;uint32_t&gt; array2 = {6, 7, 1, 3, 8, 2, 4};</div>
+<div class="line"><span class="lineno">   80</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 2... &quot;</span>;</div>
 <div class="line"><span class="lineno">   81</span>    assert(</div>
-<div class="line"><span class="lineno">   82</span>        dynamic_programming::house_robber::houseRobber(array2, array2.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()) ==</div>
+<div class="line"><span class="lineno">   82</span>        dynamic_programming::house_robber::houseRobber(array2, array2.size()) ==</div>
 <div class="line"><span class="lineno">   83</span>        19);  <span class="comment">// here the four non-adjacent houses that are robbed are first,</span></div>
 <div class="line"><span class="lineno">   84</span>              <span class="comment">// third, fifth and seventh with total sum money as 19</span></div>
-<div class="line"><span class="lineno">   85</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   85</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   86</span> </div>
 <div class="line"><span class="lineno">   87</span>    <span class="comment">// Test 3</span></div>
 <div class="line"><span class="lineno">   88</span>    <span class="comment">// [] return 0</span></div>
-<div class="line"><span class="lineno">   89</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a> array3 = {};</div>
-<div class="line"><span class="lineno">   90</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 3... &quot;</span>;</div>
+<div class="line"><span class="lineno">   89</span>    std::vector&lt;uint32_t&gt; array3 = {};</div>
+<div class="line"><span class="lineno">   90</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 3... &quot;</span>;</div>
 <div class="line"><span class="lineno">   91</span>    assert(</div>
-<div class="line"><span class="lineno">   92</span>        dynamic_programming::house_robber::houseRobber(array3, array3.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()) ==</div>
+<div class="line"><span class="lineno">   92</span>        dynamic_programming::house_robber::houseRobber(array3, array3.size()) ==</div>
 <div class="line"><span class="lineno">   93</span>        0);  <span class="comment">// since there is no house no money can be robbed</span></div>
-<div class="line"><span class="lineno">   94</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   94</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   95</span> </div>
 <div class="line"><span class="lineno">   96</span>    <span class="comment">// Test 4</span></div>
 <div class="line"><span class="lineno">   97</span>    <span class="comment">// [2,7,9,3,1] return 12</span></div>
-<div class="line"><span class="lineno">   98</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a> array4 = {2, 7, 9, 3, 1};</div>
-<div class="line"><span class="lineno">   99</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 4... &quot;</span>;</div>
+<div class="line"><span class="lineno">   98</span>    std::vector&lt;uint32_t&gt; array4 = {2, 7, 9, 3, 1};</div>
+<div class="line"><span class="lineno">   99</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 4... &quot;</span>;</div>
 <div class="line"><span class="lineno">  100</span>    assert(</div>
-<div class="line"><span class="lineno">  101</span>        dynamic_programming::house_robber::houseRobber(array4, array4.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()) ==</div>
+<div class="line"><span class="lineno">  101</span>        dynamic_programming::house_robber::houseRobber(array4, array4.size()) ==</div>
 <div class="line"><span class="lineno">  102</span>        12);  <span class="comment">// here the three non-adjacent houses that are robbed are first,</span></div>
 <div class="line"><span class="lineno">  103</span>              <span class="comment">// third and fifth with total sum money as 12</span></div>
-<div class="line"><span class="lineno">  104</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  104</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  105</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d26/house__robber_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="218" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

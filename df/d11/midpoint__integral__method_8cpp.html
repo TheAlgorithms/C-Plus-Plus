@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: numerical_methods/midpoint_integral_method.cpp File Reference</title>
+<title>TheAlgorithms/C++: numerical_methods/midpoint_integral_method.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -125,7 +142,9 @@ Include dependency graph for midpoint_integral_method.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d1c/midpoint__integral__method_8cpp__incl.svg" width="592" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../df/d11/midpoint__integral__method_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/namespacenumerical__methods.html">numerical_methods</a></td></tr>
@@ -137,7 +156,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7072493d1f0f8a91b2a71d4cc456c09c" id="r_a7072493d1f0f8a91b2a71d4cc456c09c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7072493d1f0f8a91b2a71d4cc456c09c">numerical_methods::midpoint_rule::midpoint</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int32_t</a> N, const double <a class="el" href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a>, const double a, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt; double(double)&gt; &amp;func)</td></tr>
+<tr class="memitem:a7072493d1f0f8a91b2a71d4cc456c09c" id="r_a7072493d1f0f8a91b2a71d4cc456c09c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7072493d1f0f8a91b2a71d4cc456c09c">numerical_methods::midpoint_rule::midpoint</a> (const std::int32_t N, const double <a class="el" href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a>, const double a, const std::function&lt; double(double)&gt; &amp;func)</td></tr>
 <tr class="memdesc:a7072493d1f0f8a91b2a71d4cc456c09c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function for implementing the Midpoint Integral Method implementation.  <br /></td></tr>
 <tr class="separator:a7072493d1f0f8a91b2a71d4cc456c09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ee8e824ef3e138a9a21883b26d97226" id="r_a7ee8e824ef3e138a9a21883b26d97226"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ee8e824ef3e138a9a21883b26d97226">numerical_methods::midpoint_rule::f</a> (double x)</td></tr>
@@ -152,7 +171,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ad53616fb4fa6880ae876bcba53365c51" id="r_ad53616fb4fa6880ae876bcba53365c51"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad53616fb4fa6880ae876bcba53365c51">numerical_methods::midpoint_rule::l</a> (double x)</td></tr>
 <tr class="memdesc:ad53616fb4fa6880ae876bcba53365c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function l(x) that will be used to test the method.  <br /></td></tr>
 <tr class="separator:ad53616fb4fa6880ae876bcba53365c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ae48a41e43dc6ab11b962742349646e" id="r_a2ae48a41e43dc6ab11b962742349646e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ae48a41e43dc6ab11b962742349646e">test</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int32_t</a> N, double <a class="el" href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a>, double a, double b, bool used_argv_parameters)</td></tr>
+<tr class="memitem:a2ae48a41e43dc6ab11b962742349646e" id="r_a2ae48a41e43dc6ab11b962742349646e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ae48a41e43dc6ab11b962742349646e">test</a> (std::int32_t N, double <a class="el" href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a>, double a, double b, bool used_argv_parameters)</td></tr>
 <tr class="memdesc:a2ae48a41e43dc6ab11b962742349646e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test implementations.  <br /></td></tr>
 <tr class="separator:a2ae48a41e43dc6ab11b962742349646e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627" id="r_a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
@@ -165,6 +184,8 @@ Functions</h2></td></tr>
 <p>We create a table of the xi and their corresponding f(xi) values and we evaluate the integral by the formula: I = h * {f(x0+h/2) + f(x1+h/2) + ... + f(xN-1+h/2)}</p>
 <p>Arguments can be passed as parameters from the command line argv[1] = N, argv[2] = a, argv[3] = b. In this case if the default values N=16, a=1, b=3 are changed then the tests/assert are disabled.</p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/ggkogkou" target="_blank">ggkogkou</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../df/d11/midpoint__integral__method_8cpp_source.html">midpoint_integral_method.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a7ee8e824ef3e138a9a21883b26d97226" name="a7ee8e824ef3e138a9a21883b26d97226"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ee8e824ef3e138a9a21883b26d97226">&#9670;&#160;</a></span>f()</h2>
@@ -189,15 +210,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the value of the dependent variable yi = f(xi) = sqrt(xi) + ln(xi) </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   90</span>{ <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(x) + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/log.html">std::log</a>(x); }</div>
-<div class="ttc" id="alog_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/log.html">std::log</a></div><div class="ttdeci">T log(T... args)</div></div>
-<div class="ttc" id="asqrt_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a></div><div class="ttdeci">T sqrt(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d11/midpoint__integral__method_8cpp_a7ee8e824ef3e138a9a21883b26d97226_cgraph.svg" width="271" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../df/d11/midpoint__integral__method_8cpp_source.html#l00090">90</a> of file <a class="el" href="../../df/d11/midpoint__integral__method_8cpp_source.html">midpoint_integral_method.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   90</span>{ <span class="keywordflow">return</span> std::sqrt(x) + std::log(x); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae682ee71af44b1e9e884849cc6a6b040" name="ae682ee71af44b1e9e884849cc6a6b040"></a>
@@ -223,15 +239,10 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the value of the dependent variable yi = g(xi) = e^(-xi) * (4 - xi^2) </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   97</span>{ <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/exp.html">std::exp</a>(-x) * (4 - <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(x, 2)); }</div>
-<div class="ttc" id="aexp_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/exp.html">std::exp</a></div><div class="ttdeci">T exp(T... args)</div></div>
-<div class="ttc" id="apow_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a></div><div class="ttdeci">T pow(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d11/midpoint__integral__method_8cpp_ae682ee71af44b1e9e884849cc6a6b040_cgraph.svg" width="272" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../df/d11/midpoint__integral__method_8cpp_source.html#l00097">97</a> of file <a class="el" href="../../df/d11/midpoint__integral__method_8cpp_source.html">midpoint_integral_method.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   97</span>{ <span class="keywordflow">return</span> std::exp(-x) * (4 - std::pow(x, 2)); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae9f66040f8e0ba73c1c741261c22a52a" name="ae9f66040f8e0ba73c1c741261c22a52a"></a>
@@ -257,13 +268,10 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the value of the dependent variable yi = k(xi) = sqrt(2*xi^3 + 3) </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  103</span>{ <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(2 * <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(x, 3) + 3); }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d11/midpoint__integral__method_8cpp_ae9f66040f8e0ba73c1c741261c22a52a_cgraph.svg" width="272" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../df/d11/midpoint__integral__method_8cpp_source.html#l00103">103</a> of file <a class="el" href="../../df/d11/midpoint__integral__method_8cpp_source.html">midpoint_integral_method.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  103</span>{ <span class="keywordflow">return</span> std::sqrt(2 * std::pow(x, 3) + 3); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad53616fb4fa6880ae876bcba53365c51" name="ad53616fb4fa6880ae876bcba53365c51"></a>
@@ -289,13 +297,10 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the value of the dependent variable yi = l(xi) = xi + ln(2*xi + 1) </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  109</span>{ <span class="keywordflow">return</span> x + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/log.html">std::log</a>(2 * x + 1); }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d11/midpoint__integral__method_8cpp_ad53616fb4fa6880ae876bcba53365c51_cgraph.svg" width="266" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../df/d11/midpoint__integral__method_8cpp_source.html#l00109">109</a> of file <a class="el" href="../../df/d11/midpoint__integral__method_8cpp_source.html">midpoint_integral_method.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  109</span>{ <span class="keywordflow">return</span> x + std::log(2 * x + 1); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3c04138a5bfe5d72780bb7e82a18e627" name="a3c04138a5bfe5d72780bb7e82a18e627"></a>
@@ -331,13 +336,13 @@ Here is the call graph for this function:</div>
 <p>Starting and ending point of the integration in</p>
 <p>the real axis</p>
 <p>Step, calculated by a, b and N</p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d11/midpoint__integral__method_8cpp_source.html#l00162">162</a> of file <a class="el" href="../../df/d11/midpoint__integral__method_8cpp_source.html">midpoint_integral_method.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  162</span>                                {</div>
-<div class="line"><span class="lineno">  163</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int32_t</a> <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> =</div>
-<div class="line"><span class="lineno">  164</span>        16;  <span class="comment">/// Number of intervals to divide the integration interval.</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  165</span><span class="comment">    /// MUST BE EVEN</span></div>
-<div class="line"><span class="lineno">  166</span><span class="comment"></span>    <span class="keywordtype">double</span> a = 1, b = 3;  <span class="comment">/// Starting and ending point of the integration in</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  167</span><span class="comment">    /// the real axis</span></div>
-<div class="line"><span class="lineno">  168</span><span class="comment"></span>    <span class="keywordtype">double</span> <a class="code hl_function" href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a> = NAN;  <span class="comment">/// Step, calculated by a, b and N</span></div>
+<div class="line"><span class="lineno">  163</span>    std::int32_t <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> =</div>
+<div class="line"><span class="lineno">  164</span>        16;  </div>
+<div class="line"><span class="lineno">  166</span>    <span class="keywordtype">double</span> a = 1, b = 3;  </div>
+<div class="line"><span class="lineno">  168</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a> = NAN;  </div>
 <div class="line"><span class="lineno">  169</span> </div>
 <div class="line"><span class="lineno">  170</span>    <span class="keywordtype">bool</span> used_argv_parameters =</div>
 <div class="line"><span class="lineno">  171</span>        <span class="keyword">false</span>;  <span class="comment">// If argv parameters are used then the assert must be omitted</span></div>
@@ -346,20 +351,20 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  174</span>    <span class="comment">// Get user input (by the command line parameters or the console after</span></div>
 <div class="line"><span class="lineno">  175</span>    <span class="comment">// displaying messages)</span></div>
 <div class="line"><span class="lineno">  176</span>    <span class="keywordflow">if</span> (argc == 4) {</div>
-<div class="line"><span class="lineno">  177</span>        <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/atoi.html">std::atoi</a>(argv[1]);</div>
-<div class="line"><span class="lineno">  178</span>        a = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/atof.html">std::atof</a>(argv[2]);</div>
-<div class="line"><span class="lineno">  179</span>        b = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/atof.html">std::atof</a>(argv[3]);</div>
+<div class="line"><span class="lineno">  177</span>        <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = std::atoi(argv[1]);</div>
+<div class="line"><span class="lineno">  178</span>        a = std::atof(argv[2]);</div>
+<div class="line"><span class="lineno">  179</span>        b = std::atof(argv[3]);</div>
 <div class="line"><span class="lineno">  180</span>        <span class="comment">// Check if a&lt;b else abort</span></div>
 <div class="line"><span class="lineno">  181</span>        assert(a &lt; b &amp;&amp; <span class="stringliteral">&quot;a has to be less than b&quot;</span>);</div>
 <div class="line"><span class="lineno">  182</span>        assert(N &gt; 0 &amp;&amp; <span class="stringliteral">&quot;N has to be &gt; 0&quot;</span>);</div>
 <div class="line"><span class="lineno">  183</span>        <span class="keywordflow">if</span> (N &lt; 4 || a != 1 || b != 3) {</div>
 <div class="line"><span class="lineno">  184</span>            used_argv_parameters = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  185</span>        }</div>
-<div class="line"><span class="lineno">  186</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;You selected N=&quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> &lt;&lt; <span class="stringliteral">&quot;, a=&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;, b=&quot;</span> &lt;&lt; b</div>
-<div class="line"><span class="lineno">  187</span>                  &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  186</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;You selected N=&quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> &lt;&lt; <span class="stringliteral">&quot;, a=&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;, b=&quot;</span> &lt;&lt; b</div>
+<div class="line"><span class="lineno">  187</span>                  &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  188</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  189</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Default N=&quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> &lt;&lt; <span class="stringliteral">&quot;, a=&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;, b=&quot;</span> &lt;&lt; b</div>
-<div class="line"><span class="lineno">  190</span>                  &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  189</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Default N=&quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> &lt;&lt; <span class="stringliteral">&quot;, a=&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;, b=&quot;</span> &lt;&lt; b</div>
+<div class="line"><span class="lineno">  190</span>                  &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  191</span>    }</div>
 <div class="line"><span class="lineno">  192</span> </div>
 <div class="line"><span class="lineno">  193</span>    <span class="comment">// Find the step</span></div>
@@ -369,20 +374,10 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  197</span> </div>
 <div class="line"><span class="lineno">  198</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  199</span>}</div>
-<div class="ttc" id="aatof_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/byte/atof.html">std::atof</a></div><div class="ttdeci">T atof(T... args)</div></div>
-<div class="ttc" id="aatoi_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/byte/atoi.html">std::atoi</a></div><div class="ttdeci">T atoi(T... args)</div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="agenerate__parentheses_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> generate_parentheses.cpp:82</div></div>
-<div class="ttc" id="ahash__search_8cpp_html_a566eaf0ffafd50bc61e644561fd27001"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a></div><div class="ttdeci">int h(int key)</div><div class="ttdef"><b>Definition</b> hash_search.cpp:45</div></div>
-<div class="ttc" id="ainteger_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/integer.html">std::int32_t</a></div></div>
-<div class="ttc" id="asparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:48</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../df/d11/midpoint__integral__method_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.svg" width="100%" height="523"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="agenerate__parentheses_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d1e/generate__parentheses_8cpp_source.html#l00082">generate_parentheses.cpp:82</a></div></div>
+<div class="ttc" id="ahash__search_8cpp_html_a566eaf0ffafd50bc61e644561fd27001"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a></div><div class="ttdeci">int h(int key)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/df3/hash__search_8cpp_source.html#l00045">hash_search.cpp:45</a></div></div>
+<div class="ttc" id="asparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dab/sparse__table_8cpp_source.html#l00048">sparse_table.cpp:48</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7072493d1f0f8a91b2a71d4cc456c09c" name="a7072493d1f0f8a91b2a71d4cc456c09c"></a>
@@ -394,7 +389,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">double numerical_methods::midpoint_rule::midpoint </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int32_t</a></td>          <td class="paramname"><span class="paramname"><em>N</em></span>, </td>
+          <td class="paramtype">const std::int32_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -409,7 +404,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt; double(double)&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>func</em></span>&#160;)</td>
+          <td class="paramtype">const std::function&lt; double(double)&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>func</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -425,48 +420,40 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the result of the integration </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d11/midpoint__integral__method_8cpp_source.html#l00052">52</a> of file <a class="el" href="../../df/d11/midpoint__integral__method_8cpp_source.html">midpoint_integral_method.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   53</span>                                                         {</div>
-<div class="line"><span class="lineno">   54</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">std::map&lt;int, double&gt;</a></div>
+<div class="line"><span class="lineno">   54</span>    std::map&lt;int, double&gt;</div>
 <div class="line"><span class="lineno">   55</span>        data_table;  <span class="comment">// Contains the data points, key: i, value: f(xi)</span></div>
 <div class="line"><span class="lineno">   56</span>    <span class="keywordtype">double</span> xi = a;   <span class="comment">// Initialize xi to the starting point x0 = a</span></div>
 <div class="line"><span class="lineno">   57</span> </div>
 <div class="line"><span class="lineno">   58</span>    <span class="comment">// Create the data table</span></div>
 <div class="line"><span class="lineno">   59</span>    <span class="comment">// Loop from x0 to xN-1</span></div>
 <div class="line"><span class="lineno">   60</span>    <span class="keywordtype">double</span> temp = NAN;</div>
-<div class="line"><span class="lineno">   61</span>    <span class="keywordflow">for</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int32_t</a> i = 0; i &lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
+<div class="line"><span class="lineno">   61</span>    <span class="keywordflow">for</span> (std::int32_t i = 0; i &lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
 <div class="line"><span class="lineno">   62</span>        temp = func(xi + <a class="code hl_function" href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a> / 2);  <span class="comment">// find f(xi+h/2)</span></div>
-<div class="line"><span class="lineno">   63</span>        data_table.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map/insert.html">insert</a>(</div>
-<div class="line"><span class="lineno">   64</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair&lt;std::int32_t, double&gt;</a>(i, temp));  <span class="comment">// add i and f(xi)</span></div>
+<div class="line"><span class="lineno">   63</span>        data_table.insert(</div>
+<div class="line"><span class="lineno">   64</span>            std::pair&lt;std::int32_t, double&gt;(i, temp));  <span class="comment">// add i and f(xi)</span></div>
 <div class="line"><span class="lineno">   65</span>        xi += <a class="code hl_function" href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a>;  <span class="comment">// Get the next point xi for the next iteration</span></div>
 <div class="line"><span class="lineno">   66</span>    }</div>
 <div class="line"><span class="lineno">   67</span> </div>
 <div class="line"><span class="lineno">   68</span>    <span class="comment">// Evaluate the integral.</span></div>
 <div class="line"><span class="lineno">   69</span>    <span class="comment">// Remember: {f(x0+h/2) + f(x1+h/2) + ... + f(xN-1+h/2)}</span></div>
 <div class="line"><span class="lineno">   70</span>    <span class="keywordtype">double</span> evaluate_integral = 0;</div>
-<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">for</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int32_t</a> i = 0; i &lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) evaluate_integral += data_table.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map/at.html">at</a>(i);</div>
+<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">for</span> (std::int32_t i = 0; i &lt; <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) evaluate_integral += data_table.at(i);</div>
 <div class="line"><span class="lineno">   72</span> </div>
 <div class="line"><span class="lineno">   73</span>    <span class="comment">// Multiply by the coefficient h</span></div>
 <div class="line"><span class="lineno">   74</span>    evaluate_integral *= <a class="code hl_function" href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a>;</div>
 <div class="line"><span class="lineno">   75</span> </div>
 <div class="line"><span class="lineno">   76</span>    <span class="comment">// If the result calculated is nan, then the user has given wrong input</span></div>
 <div class="line"><span class="lineno">   77</span>    <span class="comment">// interval.</span></div>
-<div class="line"><span class="lineno">   78</span>    assert(!<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/isnan.html">std::isnan</a>(evaluate_integral) &amp;&amp;</div>
+<div class="line"><span class="lineno">   78</span>    assert(!std::isnan(evaluate_integral) &amp;&amp;</div>
 <div class="line"><span class="lineno">   79</span>           <span class="stringliteral">&quot;The definite integral can&#39;t be evaluated. Check the validity of &quot;</span></div>
 <div class="line"><span class="lineno">   80</span>           <span class="stringliteral">&quot;your input.\n&quot;</span>);</div>
 <div class="line"><span class="lineno">   81</span>    <span class="comment">// Else return</span></div>
 <div class="line"><span class="lineno">   82</span>    <span class="keywordflow">return</span> evaluate_integral;</div>
 <div class="line"><span class="lineno">   83</span>}</div>
-<div class="ttc" id="aat_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/map/at.html">std::map::at</a></div><div class="ttdeci">T at(T... args)</div></div>
-<div class="ttc" id="ainsert_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/map/insert.html">std::map::insert</a></div><div class="ttdeci">T insert(T... args)</div></div>
-<div class="ttc" id="aisnan_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/isnan.html">std::isnan</a></div><div class="ttdeci">T isnan(T... args)</div></div>
-<div class="ttc" id="amap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/map.html">std::map</a></div></div>
-<div class="ttc" id="apair_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d11/midpoint__integral__method_8cpp_a7072493d1f0f8a91b2a71d4cc456c09c_cgraph.svg" width="327" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2ae48a41e43dc6ab11b962742349646e" name="a2ae48a41e43dc6ab11b962742349646e"></a>
@@ -481,7 +468,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">static void test </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int32_t</a></td>          <td class="paramname"><span class="paramname"><em>N</em></span>, </td>
+          <td class="paramtype">std::int32_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -522,6 +509,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d11/midpoint__integral__method_8cpp_source.html#l00123">123</a> of file <a class="el" href="../../df/d11/midpoint__integral__method_8cpp_source.html">midpoint_integral_method.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  124</span>                                            {</div>
 <div class="line"><span class="lineno">  125</span>    <span class="comment">// Call midpoint() for each of the test functions f, g, k, l</span></div>
 <div class="line"><span class="lineno">  126</span>    <span class="comment">// Assert with two decimal point precision</span></div>
@@ -529,37 +518,32 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  128</span>        N, <a class="code hl_function" href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a>, a, numerical_methods::midpoint_rule::f);</div>
 <div class="line"><span class="lineno">  129</span>    assert((used_argv_parameters || (result_f &gt;= 4.09 &amp;&amp; result_f &lt;= 4.10)) &amp;&amp;</div>
 <div class="line"><span class="lineno">  130</span>           <span class="stringliteral">&quot;The result of f(x) is wrong&quot;</span>);</div>
-<div class="line"><span class="lineno">  131</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;The result of integral f(x) on interval [&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; b</div>
-<div class="line"><span class="lineno">  132</span>              &lt;&lt; <span class="stringliteral">&quot;] is equal to: &quot;</span> &lt;&lt; result_f &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  131</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;The result of integral f(x) on interval [&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; b</div>
+<div class="line"><span class="lineno">  132</span>              &lt;&lt; <span class="stringliteral">&quot;] is equal to: &quot;</span> &lt;&lt; result_f &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  133</span> </div>
 <div class="line"><span class="lineno">  134</span>    <span class="keywordtype">double</span> result_g = <a class="code hl_function" href="#a7072493d1f0f8a91b2a71d4cc456c09c">numerical_methods::midpoint_rule::midpoint</a>(</div>
 <div class="line"><span class="lineno">  135</span>        N, <a class="code hl_function" href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a>, a, numerical_methods::midpoint_rule::g);</div>
 <div class="line"><span class="lineno">  136</span>    assert((used_argv_parameters || (result_g &gt;= 0.27 &amp;&amp; result_g &lt;= 0.28)) &amp;&amp;</div>
 <div class="line"><span class="lineno">  137</span>           <span class="stringliteral">&quot;The result of g(x) is wrong&quot;</span>);</div>
-<div class="line"><span class="lineno">  138</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;The result of integral g(x) on interval [&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; b</div>
-<div class="line"><span class="lineno">  139</span>              &lt;&lt; <span class="stringliteral">&quot;] is equal to: &quot;</span> &lt;&lt; result_g &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  138</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;The result of integral g(x) on interval [&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; b</div>
+<div class="line"><span class="lineno">  139</span>              &lt;&lt; <span class="stringliteral">&quot;] is equal to: &quot;</span> &lt;&lt; result_g &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  140</span> </div>
 <div class="line"><span class="lineno">  141</span>    <span class="keywordtype">double</span> result_k = <a class="code hl_function" href="#a7072493d1f0f8a91b2a71d4cc456c09c">numerical_methods::midpoint_rule::midpoint</a>(</div>
 <div class="line"><span class="lineno">  142</span>        N, <a class="code hl_function" href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a>, a, numerical_methods::midpoint_rule::k);</div>
 <div class="line"><span class="lineno">  143</span>    assert((used_argv_parameters || (result_k &gt;= 9.06 &amp;&amp; result_k &lt;= 9.07)) &amp;&amp;</div>
 <div class="line"><span class="lineno">  144</span>           <span class="stringliteral">&quot;The result of k(x) is wrong&quot;</span>);</div>
-<div class="line"><span class="lineno">  145</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;The result of integral k(x) on interval [&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; b</div>
-<div class="line"><span class="lineno">  146</span>              &lt;&lt; <span class="stringliteral">&quot;] is equal to: &quot;</span> &lt;&lt; result_k &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  145</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;The result of integral k(x) on interval [&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; b</div>
+<div class="line"><span class="lineno">  146</span>              &lt;&lt; <span class="stringliteral">&quot;] is equal to: &quot;</span> &lt;&lt; result_k &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  147</span> </div>
 <div class="line"><span class="lineno">  148</span>    <span class="keywordtype">double</span> result_l = <a class="code hl_function" href="#a7072493d1f0f8a91b2a71d4cc456c09c">numerical_methods::midpoint_rule::midpoint</a>(</div>
 <div class="line"><span class="lineno">  149</span>        N, <a class="code hl_function" href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a>, a, numerical_methods::midpoint_rule::l);</div>
 <div class="line"><span class="lineno">  150</span>    assert((used_argv_parameters || (result_l &gt;= 7.16 &amp;&amp; result_l &lt;= 7.17)) &amp;&amp;</div>
 <div class="line"><span class="lineno">  151</span>           <span class="stringliteral">&quot;The result of l(x) is wrong&quot;</span>);</div>
-<div class="line"><span class="lineno">  152</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;The result of integral l(x) on interval [&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; b</div>
-<div class="line"><span class="lineno">  153</span>              &lt;&lt; <span class="stringliteral">&quot;] is equal to: &quot;</span> &lt;&lt; result_l &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  152</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;The result of integral l(x) on interval [&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; b</div>
+<div class="line"><span class="lineno">  153</span>              &lt;&lt; <span class="stringliteral">&quot;] is equal to: &quot;</span> &lt;&lt; result_l &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  154</span>}</div>
-<div class="ttc" id="amidpoint__integral__method_8cpp_html_a7072493d1f0f8a91b2a71d4cc456c09c"><div class="ttname"><a href="#a7072493d1f0f8a91b2a71d4cc456c09c">numerical_methods::midpoint_rule::midpoint</a></div><div class="ttdeci">double midpoint(const std::int32_t N, const double h, const double a, const std::function&lt; double(double)&gt; &amp;func)</div><div class="ttdoc">Main function for implementing the Midpoint Integral Method implementation.</div><div class="ttdef"><b>Definition</b> midpoint_integral_method.cpp:52</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d11/midpoint__integral__method_8cpp_a2ae48a41e43dc6ab11b962742349646e_cgraph.svg" width="174" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="amidpoint__integral__method_8cpp_html_a7072493d1f0f8a91b2a71d4cc456c09c"><div class="ttname"><a href="#a7072493d1f0f8a91b2a71d4cc456c09c">numerical_methods::midpoint_rule::midpoint</a></div><div class="ttdeci">double midpoint(const std::int32_t N, const double h, const double a, const std::function&lt; double(double)&gt; &amp;func)</div><div class="ttdoc">Main function for implementing the Midpoint Integral Method implementation.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d11/midpoint__integral__method_8cpp_source.html#l00052">midpoint_integral_method.cpp:52</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

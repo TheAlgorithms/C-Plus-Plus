@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: strings/boyer_moore.cpp File Reference</title>
+<title>TheAlgorithms/C++: strings/boyer_moore.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -126,7 +143,9 @@ Include dependency graph for boyer_moore.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/db6/boyer__moore_8cpp__incl.svg" width="498" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d3/db2/boyer__moore_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html">strings::boyer_moore::pattern</a></td></tr>
@@ -150,16 +169,16 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa709cf7fca02b7d3e1888423d5f739a1" id="r_aa709cf7fca02b7d3e1888423d5f739a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#aa709cf7fca02b7d3e1888423d5f739a1">strings::boyer_moore::init_good_suffix</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;str, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; size_t &gt; &amp;arg)</td></tr>
+<tr class="memitem:aa709cf7fca02b7d3e1888423d5f739a1" id="r_aa709cf7fca02b7d3e1888423d5f739a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#aa709cf7fca02b7d3e1888423d5f739a1">strings::boyer_moore::init_good_suffix</a> (const std::string &amp;str, std::vector&lt; size_t &gt; &amp;arg)</td></tr>
 <tr class="memdesc:aa709cf7fca02b7d3e1888423d5f739a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that preprocess the good suffix thable.  <br /></td></tr>
 <tr class="separator:aa709cf7fca02b7d3e1888423d5f739a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f6688c9bb3e692297a3aa09cebc1c00" id="r_a2f6688c9bb3e692297a3aa09cebc1c00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#a2f6688c9bb3e692297a3aa09cebc1c00">strings::boyer_moore::init_bad_char</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;str, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; size_t &gt; &amp;arg)</td></tr>
+<tr class="memitem:a2f6688c9bb3e692297a3aa09cebc1c00" id="r_a2f6688c9bb3e692297a3aa09cebc1c00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#a2f6688c9bb3e692297a3aa09cebc1c00">strings::boyer_moore::init_bad_char</a> (const std::string &amp;str, std::vector&lt; size_t &gt; &amp;arg)</td></tr>
 <tr class="memdesc:a2f6688c9bb3e692297a3aa09cebc1c00"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that preprocess the bad char table.  <br /></td></tr>
 <tr class="separator:a2f6688c9bb3e692297a3aa09cebc1c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b165af1dc341289fd705be4c67728f8" id="r_a0b165af1dc341289fd705be4c67728f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#a0b165af1dc341289fd705be4c67728f8">strings::boyer_moore::init_pattern</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;str, <a class="el" href="../../dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html">pattern</a> &amp;arg)</td></tr>
+<tr class="memitem:a0b165af1dc341289fd705be4c67728f8" id="r_a0b165af1dc341289fd705be4c67728f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#a0b165af1dc341289fd705be4c67728f8">strings::boyer_moore::init_pattern</a> (const std::string &amp;str, <a class="el" href="../../dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html">pattern</a> &amp;arg)</td></tr>
 <tr class="memdesc:a0b165af1dc341289fd705be4c67728f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that initializes pattern.  <br /></td></tr>
 <tr class="separator:a0b165af1dc341289fd705be4c67728f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15703b553faed0d28202c10808cf9738" id="r_a15703b553faed0d28202c10808cf9738"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#a15703b553faed0d28202c10808cf9738">strings::boyer_moore::search</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;str, const <a class="el" href="../../dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html">pattern</a> &amp;arg)</td></tr>
+<tr class="memitem:a15703b553faed0d28202c10808cf9738" id="r_a15703b553faed0d28202c10808cf9738"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#a15703b553faed0d28202c10808cf9738">strings::boyer_moore::search</a> (const std::string &amp;str, const <a class="el" href="../../dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html">pattern</a> &amp;arg)</td></tr>
 <tr class="memdesc:a15703b553faed0d28202c10808cf9738"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that implements Boyer-Moore's algorithm.  <br /></td></tr>
 <tr class="separator:a15703b553faed0d28202c10808cf9738"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a056122c8fe8fb0f5fca6428d3f7b5c3a" id="r_a056122c8fe8fb0f5fca6428d3f7b5c3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#a056122c8fe8fb0f5fca6428d3f7b5c3a">strings::boyer_moore::is_prefix</a> (const char *str, const char *pat, size_t len)</td></tr>
@@ -188,6 +207,8 @@ Functions</h2></td></tr>
 <p>[The bad character rule] (<a href="https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm#The_bad_character_rule">https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm#The_bad_character_rule</a>)</p>
 <p>[The good suffix rule] (<a href="https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm#The_good_suffix_rule">https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm#The_good_suffix_rule</a>)</p>
 <p>The shift rules are implemented as constant-time table lookups, using tables generated during the preprocessing of P. </p><dl class="section author"><dt>Author</dt><dd><a href="https://github.com/stoychoX" target="_blank">Stoycho Kyosev</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d3/db2/boyer__moore_8cpp_source.html">boyer_moore.cpp</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a77c872c08612d7b8861ba13bc9881cbd" name="a77c872c08612d7b8861ba13bc9881cbd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a77c872c08612d7b8861ba13bc9881cbd">&#9670;&#160;</a></span>APLHABET_SIZE</h2>
@@ -202,7 +223,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>number of symbols in the alphabet we use </p>
-<p>for assert for CHAR_MAX macro for strlen for IO operations for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> </p>
+<p>for assert for CHAR_MAX macro for strlen for IO operations for std::string for std::vector </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/db2/boyer__moore_8cpp_source.html#l00052">52</a> of file <a class="el" href="../../d3/db2/boyer__moore_8cpp_source.html">boyer_moore.cpp</a>.</p>
 
 </div>
 </div>
@@ -230,27 +253,22 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/db2/boyer__moore_8cpp_source.html#l00220">220</a> of file <a class="el" href="../../d3/db2/boyer__moore_8cpp_source.html">boyer_moore.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  220</span>                                {</div>
 <div class="line"><span class="lineno">  221</span>    <a class="code hl_struct" href="../../dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html">strings::boyer_moore::pattern</a> ands;</div>
 <div class="line"><span class="lineno">  222</span>    <a class="code hl_function" href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#a0b165af1dc341289fd705be4c67728f8">strings::boyer_moore::init_pattern</a>(<span class="stringliteral">&quot;and&quot;</span>, ands);</div>
-<div class="line"><span class="lineno">  223</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;size_t&gt;</a> indexes = <a class="code hl_function" href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#a15703b553faed0d28202c10808cf9738">strings::boyer_moore::search</a>(text, ands);</div>
+<div class="line"><span class="lineno">  223</span>    std::vector&lt;size_t&gt; indexes = <a class="code hl_function" href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#a15703b553faed0d28202c10808cf9738">strings::boyer_moore::search</a>(text, ands);</div>
 <div class="line"><span class="lineno">  224</span> </div>
-<div class="line"><span class="lineno">  225</span>    assert(indexes.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() == 2);</div>
+<div class="line"><span class="lineno">  225</span>    assert(indexes.size() == 2);</div>
 <div class="line"><span class="lineno">  226</span>    assert(<a class="code hl_function" href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#a056122c8fe8fb0f5fca6428d3f7b5c3a">strings::boyer_moore::is_prefix</a>(text + indexes[0], <span class="stringliteral">&quot;and&quot;</span>, 3));</div>
 <div class="line"><span class="lineno">  227</span>    assert(<a class="code hl_function" href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#a056122c8fe8fb0f5fca6428d3f7b5c3a">strings::boyer_moore::is_prefix</a>(text + indexes[1], <span class="stringliteral">&quot;and&quot;</span>, 3));</div>
 <div class="line"><span class="lineno">  228</span>}</div>
-<div class="ttc" id="anamespacestrings_1_1boyer__moore_html_a056122c8fe8fb0f5fca6428d3f7b5c3a"><div class="ttname"><a href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#a056122c8fe8fb0f5fca6428d3f7b5c3a">strings::boyer_moore::is_prefix</a></div><div class="ttdeci">bool is_prefix(const char *str, const char *pat, size_t len)</div><div class="ttdoc">Check if pat is prefix of str.</div><div class="ttdef"><b>Definition</b> boyer_moore.cpp:200</div></div>
-<div class="ttc" id="anamespacestrings_1_1boyer__moore_html_a0b165af1dc341289fd705be4c67728f8"><div class="ttname"><a href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#a0b165af1dc341289fd705be4c67728f8">strings::boyer_moore::init_pattern</a></div><div class="ttdeci">void init_pattern(const std::string &amp;str, pattern &amp;arg)</div><div class="ttdoc">A function that initializes pattern.</div><div class="ttdef"><b>Definition</b> boyer_moore.cpp:153</div></div>
-<div class="ttc" id="anamespacestrings_1_1boyer__moore_html_a15703b553faed0d28202c10808cf9738"><div class="ttname"><a href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#a15703b553faed0d28202c10808cf9738">strings::boyer_moore::search</a></div><div class="ttdeci">std::vector&lt; size_t &gt; search(const std::string &amp;str, const pattern &amp;arg)</div><div class="ttdoc">A function that implements Boyer-Moore's algorithm.</div><div class="ttdef"><b>Definition</b> boyer_moore.cpp:165</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-<div class="ttc" id="astructstrings_1_1boyer__moore_1_1pattern_html"><div class="ttname"><a href="../../dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html">strings::boyer_moore::pattern</a></div><div class="ttdoc">A structure representing all the data we need to search the preprocessed pattern in text.</div><div class="ttdef"><b>Definition</b> boyer_moore.cpp:70</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/db2/boyer__moore_8cpp_acb8f69e7901ee7459d98bd4b9dda79d9_cgraph.svg" width="667" height="286"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="anamespacestrings_1_1boyer__moore_html_a056122c8fe8fb0f5fca6428d3f7b5c3a"><div class="ttname"><a href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#a056122c8fe8fb0f5fca6428d3f7b5c3a">strings::boyer_moore::is_prefix</a></div><div class="ttdeci">bool is_prefix(const char *str, const char *pat, size_t len)</div><div class="ttdoc">Check if pat is prefix of str.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/db2/boyer__moore_8cpp_source.html#l00200">boyer_moore.cpp:200</a></div></div>
+<div class="ttc" id="anamespacestrings_1_1boyer__moore_html_a0b165af1dc341289fd705be4c67728f8"><div class="ttname"><a href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#a0b165af1dc341289fd705be4c67728f8">strings::boyer_moore::init_pattern</a></div><div class="ttdeci">void init_pattern(const std::string &amp;str, pattern &amp;arg)</div><div class="ttdoc">A function that initializes pattern.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/db2/boyer__moore_8cpp_source.html#l00153">boyer_moore.cpp:153</a></div></div>
+<div class="ttc" id="anamespacestrings_1_1boyer__moore_html_a15703b553faed0d28202c10808cf9738"><div class="ttname"><a href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#a15703b553faed0d28202c10808cf9738">strings::boyer_moore::search</a></div><div class="ttdeci">std::vector&lt; size_t &gt; search(const std::string &amp;str, const pattern &amp;arg)</div><div class="ttdoc">A function that implements Boyer-Moore's algorithm.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/db2/boyer__moore_8cpp_source.html#l00165">boyer_moore.cpp:165</a></div></div>
+<div class="ttc" id="astructstrings_1_1boyer__moore_1_1pattern_html"><div class="ttname"><a href="../../dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html">strings::boyer_moore::pattern</a></div><div class="ttdoc">A structure representing all the data we need to search the preprocessed pattern in text.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/db2/boyer__moore_8cpp_source.html#l00070">boyer_moore.cpp:70</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -270,17 +288,14 @@ Here is the call graph for this function:</div>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/db2/boyer__moore_8cpp_source.html#l00269">269</a> of file <a class="el" href="../../d3/db2/boyer__moore_8cpp_source.html">boyer_moore.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  269</span>           {</div>
 <div class="line"><span class="lineno">  270</span>    <a class="code hl_function" href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a>();  <span class="comment">// run self-test implementations</span></div>
 <div class="line"><span class="lineno">  271</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  272</span>}</div>
-<div class="ttc" id="aboyer__moore_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> boyer_moore.cpp:250</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d3/db2/boyer__moore_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="100%" height="553"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="aboyer__moore_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/db2/boyer__moore_8cpp_source.html#l00250">boyer_moore.cpp:250</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac8fac0dd4b19973da103a434143a16d2" name="ac8fac0dd4b19973da103a434143a16d2"></a>
@@ -306,23 +321,20 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/db2/boyer__moore_8cpp_source.html#l00235">235</a> of file <a class="el" href="../../d3/db2/boyer__moore_8cpp_source.html">boyer_moore.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  235</span>                                {</div>
 <div class="line"><span class="lineno">  236</span>    <a class="code hl_struct" href="../../dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html">strings::boyer_moore::pattern</a> pat;</div>
 <div class="line"><span class="lineno">  237</span>    <a class="code hl_function" href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#a0b165af1dc341289fd705be4c67728f8">strings::boyer_moore::init_pattern</a>(<span class="stringliteral">&quot;pat&quot;</span>, pat);</div>
-<div class="line"><span class="lineno">  238</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;size_t&gt;</a> indexes = <a class="code hl_function" href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#a15703b553faed0d28202c10808cf9738">strings::boyer_moore::search</a>(text, pat);</div>
+<div class="line"><span class="lineno">  238</span>    std::vector&lt;size_t&gt; indexes = <a class="code hl_function" href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#a15703b553faed0d28202c10808cf9738">strings::boyer_moore::search</a>(text, pat);</div>
 <div class="line"><span class="lineno">  239</span> </div>
-<div class="line"><span class="lineno">  240</span>    assert(indexes.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() == 6);</div>
+<div class="line"><span class="lineno">  240</span>    assert(indexes.size() == 6);</div>
 <div class="line"><span class="lineno">  241</span> </div>
 <div class="line"><span class="lineno">  242</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; currentIndex : indexes) {</div>
 <div class="line"><span class="lineno">  243</span>        assert(<a class="code hl_function" href="../../d0/dbc/namespacestrings_1_1boyer__moore.html#a056122c8fe8fb0f5fca6428d3f7b5c3a">strings::boyer_moore::is_prefix</a>(text + currentIndex, <span class="stringliteral">&quot;pat&quot;</span>, 3));</div>
 <div class="line"><span class="lineno">  244</span>    }</div>
 <div class="line"><span class="lineno">  245</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/db2/boyer__moore_8cpp_ac8fac0dd4b19973da103a434143a16d2_cgraph.svg" width="664" height="286"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a483bb8ccf42aaf7375a83e91490eda1e" name="a483bb8ccf42aaf7375a83e91490eda1e"></a>
@@ -350,6 +362,8 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/db2/boyer__moore_8cpp_source.html#l00250">250</a> of file <a class="el" href="../../d3/db2/boyer__moore_8cpp_source.html">boyer_moore.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  250</span>                    {</div>
 <div class="line"><span class="lineno">  251</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* text =</div>
 <div class="line"><span class="lineno">  252</span>        <span class="stringliteral">&quot;When pat Mr. and Mrs. pat Dursley woke up on the dull, gray  \</span></div>
@@ -362,17 +376,11 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  259</span>    <a class="code hl_function" href="#acb8f69e7901ee7459d98bd4b9dda79d9">and_test</a>(text);</div>
 <div class="line"><span class="lineno">  260</span>    <a class="code hl_function" href="#ac8fac0dd4b19973da103a434143a16d2">pat_test</a>(text);</div>
 <div class="line"><span class="lineno">  261</span> </div>
-<div class="line"><span class="lineno">  262</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  262</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  263</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aboyer__moore_8cpp_html_ac8fac0dd4b19973da103a434143a16d2"><div class="ttname"><a href="#ac8fac0dd4b19973da103a434143a16d2">pat_test</a></div><div class="ttdeci">void pat_test(const char *text)</div><div class="ttdoc">A test case in which we search for every appearance of the word 'pat'.</div><div class="ttdef"><b>Definition</b> boyer_moore.cpp:235</div></div>
-<div class="ttc" id="aboyer__moore_8cpp_html_acb8f69e7901ee7459d98bd4b9dda79d9"><div class="ttname"><a href="#acb8f69e7901ee7459d98bd4b9dda79d9">and_test</a></div><div class="ttdeci">void and_test(const char *text)</div><div class="ttdoc">A test case in which we search for every appearance of the word 'and'.</div><div class="ttdef"><b>Definition</b> boyer_moore.cpp:220</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d3/db2/boyer__moore_8cpp_a483bb8ccf42aaf7375a83e91490eda1e_cgraph.svg" width="100%" height="553"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="aboyer__moore_8cpp_html_ac8fac0dd4b19973da103a434143a16d2"><div class="ttname"><a href="#ac8fac0dd4b19973da103a434143a16d2">pat_test</a></div><div class="ttdeci">void pat_test(const char *text)</div><div class="ttdoc">A test case in which we search for every appearance of the word 'pat'.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/db2/boyer__moore_8cpp_source.html#l00235">boyer_moore.cpp:235</a></div></div>
+<div class="ttc" id="aboyer__moore_8cpp_html_acb8f69e7901ee7459d98bd4b9dda79d9"><div class="ttname"><a href="#acb8f69e7901ee7459d98bd4b9dda79d9">and_test</a></div><div class="ttdeci">void and_test(const char *text)</div><div class="ttdoc">A test case in which we search for every appearance of the word 'and'.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/db2/boyer__moore_8cpp_source.html#l00220">boyer_moore.cpp:220</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

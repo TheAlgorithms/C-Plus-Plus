@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: MinHeap Class Reference</title>
+<title>TheAlgorithms/C++: MinHeap Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -137,21 +154,20 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a34a93a87967308eb516328c0aca3c48e" id="r_a34a93a87967308eb516328c0aca3c48e"><td class="memItemLeft" align="right" valign="top"><a id="a34a93a87967308eb516328c0aca3c48e" name="a34a93a87967308eb516328c0aca3c48e"></a>
-int *&#160;</td><td class="memItemRight" valign="bottom"><b>harr</b></td></tr>
-<tr class="memdesc:a34a93a87967308eb516328c0aca3c48e"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to array of elements in heap <br /></td></tr>
+<tr class="memitem:a34a93a87967308eb516328c0aca3c48e" id="r_a34a93a87967308eb516328c0aca3c48e"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34a93a87967308eb516328c0aca3c48e">harr</a></td></tr>
+<tr class="memdesc:a34a93a87967308eb516328c0aca3c48e"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to array of elements in heap  <br /></td></tr>
 <tr class="separator:a34a93a87967308eb516328c0aca3c48e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88b4aa3e66392a3eabbf2517a9a79a02" id="r_a88b4aa3e66392a3eabbf2517a9a79a02"><td class="memItemLeft" align="right" valign="top"><a id="a88b4aa3e66392a3eabbf2517a9a79a02" name="a88b4aa3e66392a3eabbf2517a9a79a02"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>capacity</b></td></tr>
-<tr class="memdesc:a88b4aa3e66392a3eabbf2517a9a79a02"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum possible size of min heap <br /></td></tr>
+<tr class="memitem:a88b4aa3e66392a3eabbf2517a9a79a02" id="r_a88b4aa3e66392a3eabbf2517a9a79a02"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88b4aa3e66392a3eabbf2517a9a79a02">capacity</a></td></tr>
+<tr class="memdesc:a88b4aa3e66392a3eabbf2517a9a79a02"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum possible size of min heap  <br /></td></tr>
 <tr class="separator:a88b4aa3e66392a3eabbf2517a9a79a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4d358bf063bb196a1945b3fb99b4913" id="r_ae4d358bf063bb196a1945b3fb99b4913"><td class="memItemLeft" align="right" valign="top"><a id="ae4d358bf063bb196a1945b3fb99b4913" name="ae4d358bf063bb196a1945b3fb99b4913"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>heap_size</b></td></tr>
-<tr class="memdesc:ae4d358bf063bb196a1945b3fb99b4913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current number of elements in min heap. <br /></td></tr>
+<tr class="memitem:ae4d358bf063bb196a1945b3fb99b4913" id="r_ae4d358bf063bb196a1945b3fb99b4913"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a></td></tr>
+<tr class="memdesc:ae4d358bf063bb196a1945b3fb99b4913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current number of elements in min heap.  <br /></td></tr>
 <tr class="separator:ae4d358bf063bb196a1945b3fb99b4913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for Min Heap </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html#l00010">10</a> of file <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html">binaryheap.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a078cb888e642bb1f95dd0e03f0a35820" name="a078cb888e642bb1f95dd0e03f0a35820"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a078cb888e642bb1f95dd0e03f0a35820">&#9670;&#160;</a></span>MinHeap()</h2>
@@ -181,14 +197,16 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>heap_size</b></td></tr
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html">binaryheap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   19</span>                              {</div>
 <div class="line"><span class="lineno">   20</span>        <a class="code hl_variable" href="#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> = 0;</div>
 <div class="line"><span class="lineno">   21</span>        <a class="code hl_variable" href="#a88b4aa3e66392a3eabbf2517a9a79a02">capacity</a> = cap;</div>
 <div class="line"><span class="lineno">   22</span>        <a class="code hl_variable" href="#a34a93a87967308eb516328c0aca3c48e">harr</a> = <span class="keyword">new</span> <span class="keywordtype">int</span>[cap];</div>
 <div class="line"><span class="lineno">   23</span>    }</div>
-<div class="ttc" id="aclass_min_heap_html_a34a93a87967308eb516328c0aca3c48e"><div class="ttname"><a href="#a34a93a87967308eb516328c0aca3c48e">MinHeap::harr</a></div><div class="ttdeci">int * harr</div><div class="ttdoc">pointer to array of elements in heap</div><div class="ttdef"><b>Definition</b> binaryheap.cpp:11</div></div>
-<div class="ttc" id="aclass_min_heap_html_a88b4aa3e66392a3eabbf2517a9a79a02"><div class="ttname"><a href="#a88b4aa3e66392a3eabbf2517a9a79a02">MinHeap::capacity</a></div><div class="ttdeci">int capacity</div><div class="ttdoc">maximum possible size of min heap</div><div class="ttdef"><b>Definition</b> binaryheap.cpp:12</div></div>
-<div class="ttc" id="aclass_min_heap_html_ae4d358bf063bb196a1945b3fb99b4913"><div class="ttname"><a href="#ae4d358bf063bb196a1945b3fb99b4913">MinHeap::heap_size</a></div><div class="ttdeci">int heap_size</div><div class="ttdoc">Current number of elements in min heap.</div><div class="ttdef"><b>Definition</b> binaryheap.cpp:13</div></div>
+<div class="ttc" id="aclass_min_heap_html_a34a93a87967308eb516328c0aca3c48e"><div class="ttname"><a href="#a34a93a87967308eb516328c0aca3c48e">MinHeap::harr</a></div><div class="ttdeci">int * harr</div><div class="ttdoc">pointer to array of elements in heap</div><div class="ttdef"><b>Definition</b> <a href="../../de/dc3/binaryheap_8cpp_source.html#l00011">binaryheap.cpp:11</a></div></div>
+<div class="ttc" id="aclass_min_heap_html_a88b4aa3e66392a3eabbf2517a9a79a02"><div class="ttname"><a href="#a88b4aa3e66392a3eabbf2517a9a79a02">MinHeap::capacity</a></div><div class="ttdeci">int capacity</div><div class="ttdoc">maximum possible size of min heap</div><div class="ttdef"><b>Definition</b> <a href="../../de/dc3/binaryheap_8cpp_source.html#l00012">binaryheap.cpp:12</a></div></div>
+<div class="ttc" id="aclass_min_heap_html_ae4d358bf063bb196a1945b3fb99b4913"><div class="ttname"><a href="#ae4d358bf063bb196a1945b3fb99b4913">MinHeap::heap_size</a></div><div class="ttdeci">int heap_size</div><div class="ttdoc">Current number of elements in min heap.</div><div class="ttdef"><b>Definition</b> <a href="../../de/dc3/binaryheap_8cpp_source.html#l00013">binaryheap.cpp:13</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -214,6 +232,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>heap_size</b></td></tr
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html">binaryheap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   51</span>{ <span class="keyword">delete</span>[] <a class="code hl_variable" href="#a34a93a87967308eb516328c0aca3c48e">harr</a>; }</div>
 </div><!-- fragment -->
 </div>
@@ -239,20 +259,16 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>heap_size</b></td></tr
 </div><div class="memdoc">
 <p>Decreases key value of key at index i to new_val</p>
 <p>Decreases value of key at index 'i' to new_val. It is assumed that new_val is smaller than harr[i]. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html#l00076">76</a> of file <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html">binaryheap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   76</span>                                            {</div>
 <div class="line"><span class="lineno">   77</span>    <a class="code hl_variable" href="#a34a93a87967308eb516328c0aca3c48e">harr</a>[i] = new_val;</div>
 <div class="line"><span class="lineno">   78</span>    <span class="keywordflow">while</span> (i != 0 &amp;&amp; <a class="code hl_variable" href="#a34a93a87967308eb516328c0aca3c48e">harr</a>[parent(i)] &gt; <a class="code hl_variable" href="#a34a93a87967308eb516328c0aca3c48e">harr</a>[i]) {</div>
-<div class="line"><span class="lineno">   79</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(<a class="code hl_variable" href="#a34a93a87967308eb516328c0aca3c48e">harr</a>[i], <a class="code hl_variable" href="#a34a93a87967308eb516328c0aca3c48e">harr</a>[parent(i)]);</div>
+<div class="line"><span class="lineno">   79</span>        std::swap(<a class="code hl_variable" href="#a34a93a87967308eb516328c0aca3c48e">harr</a>[i], <a class="code hl_variable" href="#a34a93a87967308eb516328c0aca3c48e">harr</a>[parent(i)]);</div>
 <div class="line"><span class="lineno">   80</span>        i = parent(i);</div>
 <div class="line"><span class="lineno">   81</span>    }</div>
 <div class="line"><span class="lineno">   82</span>}</div>
-<div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d05/class_min_heap_aa7f726cc6327955d22871592227432f5_cgraph.svg" width="295" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a37ac126eabb0c3ce04047172abccca29" name="a37ac126eabb0c3ce04047172abccca29"></a>
@@ -271,18 +287,15 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Deletes a key stored at index i</p>
 <p>This function deletes key at index i. It first reduced value to minus infinite, then calls <a class="el" href="#a4014f1edaed0bd7db0c0d2ca53228980">extractMin()</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html#l00105">105</a> of file <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html">binaryheap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  105</span>                             {</div>
 <div class="line"><span class="lineno">  106</span>    <a class="code hl_function" href="#aa7f726cc6327955d22871592227432f5">decreaseKey</a>(i, INT_MIN);</div>
 <div class="line"><span class="lineno">  107</span>    <a class="code hl_function" href="#a4014f1edaed0bd7db0c0d2ca53228980">extractMin</a>();</div>
 <div class="line"><span class="lineno">  108</span>}</div>
-<div class="ttc" id="aclass_min_heap_html_a4014f1edaed0bd7db0c0d2ca53228980"><div class="ttname"><a href="#a4014f1edaed0bd7db0c0d2ca53228980">MinHeap::extractMin</a></div><div class="ttdeci">int extractMin()</div><div class="ttdef"><b>Definition</b> binaryheap.cpp:85</div></div>
-<div class="ttc" id="aclass_min_heap_html_aa7f726cc6327955d22871592227432f5"><div class="ttname"><a href="#aa7f726cc6327955d22871592227432f5">MinHeap::decreaseKey</a></div><div class="ttdeci">void decreaseKey(int i, int new_val)</div><div class="ttdef"><b>Definition</b> binaryheap.cpp:76</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/d05/class_min_heap_a37ac126eabb0c3ce04047172abccca29_cgraph.svg" width="100%" height="414"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="aclass_min_heap_html_a4014f1edaed0bd7db0c0d2ca53228980"><div class="ttname"><a href="#a4014f1edaed0bd7db0c0d2ca53228980">MinHeap::extractMin</a></div><div class="ttdeci">int extractMin()</div><div class="ttdef"><b>Definition</b> <a href="../../de/dc3/binaryheap_8cpp_source.html#l00085">binaryheap.cpp:85</a></div></div>
+<div class="ttc" id="aclass_min_heap_html_aa7f726cc6327955d22871592227432f5"><div class="ttname"><a href="#aa7f726cc6327955d22871592227432f5">MinHeap::decreaseKey</a></div><div class="ttdeci">void decreaseKey(int i, int new_val)</div><div class="ttdef"><b>Definition</b> <a href="../../de/dc3/binaryheap_8cpp_source.html#l00076">binaryheap.cpp:76</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4014f1edaed0bd7db0c0d2ca53228980" name="a4014f1edaed0bd7db0c0d2ca53228980"></a>
@@ -300,6 +313,8 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>to extract the root which is the minimum element </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html#l00085">85</a> of file <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html">binaryheap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   85</span>                        {</div>
 <div class="line"><span class="lineno">   86</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> &lt;= 0)</div>
 <div class="line"><span class="lineno">   87</span>        <span class="keywordflow">return</span> INT_MAX;</div>
@@ -316,13 +331,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   98</span> </div>
 <div class="line"><span class="lineno">   99</span>    <span class="keywordflow">return</span> root;</div>
 <div class="line"><span class="lineno">  100</span>}</div>
-<div class="ttc" id="aclass_min_heap_html_aaef438c1056492cb62c4a4d9035b5cad"><div class="ttname"><a href="#aaef438c1056492cb62c4a4d9035b5cad">MinHeap::MinHeapify</a></div><div class="ttdeci">void MinHeapify(int)</div><div class="ttdef"><b>Definition</b> binaryheap.cpp:113</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d05/class_min_heap_a4014f1edaed0bd7db0c0d2ca53228980_cgraph.svg" width="503" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclass_min_heap_html_aaef438c1056492cb62c4a4d9035b5cad"><div class="ttname"><a href="#aaef438c1056492cb62c4a4d9035b5cad">MinHeap::MinHeapify</a></div><div class="ttdeci">void MinHeapify(int)</div><div class="ttdef"><b>Definition</b> <a href="../../de/dc3/binaryheap_8cpp_source.html#l00113">binaryheap.cpp:113</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a336ac71f0d857269fe9a98058a3cd130" name="a336ac71f0d857269fe9a98058a3cd130"></a>
@@ -348,6 +358,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Returns the minimum key (key at root) from min heap </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html#l00043">43</a> of file <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html">binaryheap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   43</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a34a93a87967308eb516328c0aca3c48e">harr</a>[0]; }</div>
 </div><!-- fragment -->
 </div>
@@ -367,9 +379,11 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Inserts a new key 'k' </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html">binaryheap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   55</span>                             {</div>
 <div class="line"><span class="lineno">   56</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> == <a class="code hl_variable" href="#a88b4aa3e66392a3eabbf2517a9a79a02">capacity</a>) {</div>
-<div class="line"><span class="lineno">   57</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nOverflow: Could not insertKey\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   57</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\nOverflow: Could not insertKey\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   58</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">   59</span>    }</div>
 <div class="line"><span class="lineno">   60</span> </div>
@@ -380,18 +394,12 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   65</span> </div>
 <div class="line"><span class="lineno">   66</span>    <span class="comment">// Fix the min heap property if it is violated</span></div>
 <div class="line"><span class="lineno">   67</span>    <span class="keywordflow">while</span> (i != 0 &amp;&amp; <a class="code hl_variable" href="#a34a93a87967308eb516328c0aca3c48e">harr</a>[parent(i)] &gt; <a class="code hl_variable" href="#a34a93a87967308eb516328c0aca3c48e">harr</a>[i]) {</div>
-<div class="line"><span class="lineno">   68</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(<a class="code hl_variable" href="#a34a93a87967308eb516328c0aca3c48e">harr</a>[i], <a class="code hl_variable" href="#a34a93a87967308eb516328c0aca3c48e">harr</a>[parent(i)]);</div>
+<div class="line"><span class="lineno">   68</span>        std::swap(<a class="code hl_variable" href="#a34a93a87967308eb516328c0aca3c48e">harr</a>[i], <a class="code hl_variable" href="#a34a93a87967308eb516328c0aca3c48e">harr</a>[parent(i)]);</div>
 <div class="line"><span class="lineno">   69</span>        i = parent(i);</div>
 <div class="line"><span class="lineno">   70</span>    }</div>
 <div class="line"><span class="lineno">   71</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a1b74d828b33760094906797042b89442"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">numerical_methods::simpson_method::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:117</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d05/class_min_heap_aef78f3384f5a0ae880ad0883d2d44b82_cgraph.svg" width="274" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a1b74d828b33760094906797042b89442"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">numerical_methods::simpson_method::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d18/composite__simpson__rule_8cpp_source.html#l00117">composite_simpson_rule.cpp:117</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8c6c141e3de664819686aa637e1afca" name="aa8c6c141e3de664819686aa637e1afca"></a>
@@ -417,6 +425,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>to get index of left child of node at index i </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html">binaryheap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   31</span>{ <span class="keywordflow">return</span> (2 * i + 1); }</div>
 </div><!-- fragment -->
 </div>
@@ -437,6 +447,8 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>to heapify a subtree with the root at given index</p>
 <p>A recursive method to heapify a subtree with the root at given index This method assumes that the subtrees are already heapified </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html#l00113">113</a> of file <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html">binaryheap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  113</span>                              {</div>
 <div class="line"><span class="lineno">  114</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a> = <a class="code hl_function" href="#aa8c6c141e3de664819686aa637e1afca">left</a>(i);</div>
 <div class="line"><span class="lineno">  115</span>    <span class="keywordtype">int</span> r = <a class="code hl_function" href="#ac760b85cf90265b8d674b942a43fb70e">right</a>(i);</div>
@@ -446,19 +458,14 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  119</span>    <span class="keywordflow">if</span> (r &lt; <a class="code hl_variable" href="#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> &amp;&amp; <a class="code hl_variable" href="#a34a93a87967308eb516328c0aca3c48e">harr</a>[r] &lt; <a class="code hl_variable" href="#a34a93a87967308eb516328c0aca3c48e">harr</a>[smallest])</div>
 <div class="line"><span class="lineno">  120</span>        smallest = r;</div>
 <div class="line"><span class="lineno">  121</span>    <span class="keywordflow">if</span> (smallest != i) {</div>
-<div class="line"><span class="lineno">  122</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(<a class="code hl_variable" href="#a34a93a87967308eb516328c0aca3c48e">harr</a>[i], <a class="code hl_variable" href="#a34a93a87967308eb516328c0aca3c48e">harr</a>[smallest]);</div>
+<div class="line"><span class="lineno">  122</span>        std::swap(<a class="code hl_variable" href="#a34a93a87967308eb516328c0aca3c48e">harr</a>[i], <a class="code hl_variable" href="#a34a93a87967308eb516328c0aca3c48e">harr</a>[smallest]);</div>
 <div class="line"><span class="lineno">  123</span>        <a class="code hl_function" href="#aaef438c1056492cb62c4a4d9035b5cad">MinHeapify</a>(smallest);</div>
 <div class="line"><span class="lineno">  124</span>    }</div>
 <div class="line"><span class="lineno">  125</span>}</div>
-<div class="ttc" id="aclass_min_heap_html_aa8c6c141e3de664819686aa637e1afca"><div class="ttname"><a href="#aa8c6c141e3de664819686aa637e1afca">MinHeap::left</a></div><div class="ttdeci">int left(int i)</div><div class="ttdef"><b>Definition</b> binaryheap.cpp:31</div></div>
-<div class="ttc" id="aclass_min_heap_html_ac760b85cf90265b8d674b942a43fb70e"><div class="ttname"><a href="#ac760b85cf90265b8d674b942a43fb70e">MinHeap::right</a></div><div class="ttdeci">int right(int i)</div><div class="ttdef"><b>Definition</b> binaryheap.cpp:34</div></div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a6d8df83a6f26ce24a75d3b358b7f5b8a"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">numerical_methods::simpson_method::l</a></div><div class="ttdeci">double l(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:119</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d05/class_min_heap_aaef438c1056492cb62c4a4d9035b5cad_cgraph.svg" width="312" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclass_min_heap_html_aa8c6c141e3de664819686aa637e1afca"><div class="ttname"><a href="#aa8c6c141e3de664819686aa637e1afca">MinHeap::left</a></div><div class="ttdeci">int left(int i)</div><div class="ttdef"><b>Definition</b> <a href="../../de/dc3/binaryheap_8cpp_source.html#l00031">binaryheap.cpp:31</a></div></div>
+<div class="ttc" id="aclass_min_heap_html_ac760b85cf90265b8d674b942a43fb70e"><div class="ttname"><a href="#ac760b85cf90265b8d674b942a43fb70e">MinHeap::right</a></div><div class="ttdeci">int right(int i)</div><div class="ttdef"><b>Definition</b> <a href="../../de/dc3/binaryheap_8cpp_source.html#l00034">binaryheap.cpp:34</a></div></div>
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a6d8df83a6f26ce24a75d3b358b7f5b8a"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">numerical_methods::simpson_method::l</a></div><div class="ttdeci">double l(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d18/composite__simpson__rule_8cpp_source.html#l00119">composite_simpson_rule.cpp:119</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0e893f9deb4be4cf4f9990e736483e81" name="a0e893f9deb4be4cf4f9990e736483e81"></a>
@@ -483,6 +490,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html">binaryheap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   28</span>{ <span class="keywordflow">return</span> (i - 1) / 2; }</div>
 </div><!-- fragment -->
 </div>
@@ -510,12 +519,93 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>to get index of right child of node at index i </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html#l00034">34</a> of file <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html">binaryheap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   34</span>{ <span class="keywordflow">return</span> (2 * i + 2); }</div>
 </div><!-- fragment -->
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a88b4aa3e66392a3eabbf2517a9a79a02" name="a88b4aa3e66392a3eabbf2517a9a79a02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88b4aa3e66392a3eabbf2517a9a79a02">&#9670;&#160;</a></span>capacity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MinHeap::capacity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>maximum possible size of min heap </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html#l00012">12</a> of file <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html">binaryheap.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a34a93a87967308eb516328c0aca3c48e" name="a34a93a87967308eb516328c0aca3c48e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34a93a87967308eb516328c0aca3c48e">&#9670;&#160;</a></span>harr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int* MinHeap::harr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>pointer to array of elements in heap </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html#l00011">11</a> of file <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html">binaryheap.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae4d358bf063bb196a1945b3fb99b4913" name="ae4d358bf063bb196a1945b3fb99b4913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4d358bf063bb196a1945b3fb99b4913">&#9670;&#160;</a></span>heap_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MinHeap::heap_size</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Current number of elements in min heap. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html#l00013">13</a> of file <a class="el" href="../../de/dc3/binaryheap_8cpp_source.html">binaryheap.cpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>data_structures/<a class="el" href="../../de/dc3/binaryheap_8cpp.html">binaryheap.cpp</a></li>
+<li>data_structures/<a class="el" href="../../de/dc3/binaryheap_8cpp_source.html">binaryheap.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,7 +1,0 @@
-<map id="string_search::brute_force" name="string_search::brute_force">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,142,64"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="190,5,312,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,31,174,26,175,32,142,36"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/substr.html#" title=" " alt="" coords="190,55,313,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,50,175,55,174,60,142,55"/>
-</map>

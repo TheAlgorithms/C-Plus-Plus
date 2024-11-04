@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: machine_learning::adaline Class Reference</title>
+<title>TheAlgorithms/C++: machine_learning::adaline Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -123,42 +140,42 @@ Collaboration diagram for machine_learning::adaline:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0acbe32aaab897e7939e5b0454035b8c" id="r_a0acbe32aaab897e7939e5b0454035b8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0acbe32aaab897e7939e5b0454035b8c">adaline</a> (int num_features, const double <a class="el" href="#a28160d17e492597a2f112e0d38551cda">eta</a>=0.01f, const double <a class="el" href="#aa23d60262f917f35836ef4b1c1d9f7d3">accuracy</a>=1e-5)</td></tr>
 <tr class="separator:a0acbe32aaab897e7939e5b0454035b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab11242d9ad5b03a75911e29b04f78fd3" id="r_ab11242d9ad5b03a75911e29b04f78fd3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab11242d9ad5b03a75911e29b04f78fd3">predict</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; double &gt; &amp;x, double *out=nullptr)</td></tr>
+<tr class="memitem:ab11242d9ad5b03a75911e29b04f78fd3" id="r_ab11242d9ad5b03a75911e29b04f78fd3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab11242d9ad5b03a75911e29b04f78fd3">predict</a> (const std::vector&lt; double &gt; &amp;x, double *out=nullptr)</td></tr>
 <tr class="separator:ab11242d9ad5b03a75911e29b04f78fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74e3c6c037b67895014414c5d75465e5" id="r_a74e3c6c037b67895014414c5d75465e5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74e3c6c037b67895014414c5d75465e5">fit</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; double &gt; &amp;x, const int &amp;y)</td></tr>
+<tr class="memitem:a74e3c6c037b67895014414c5d75465e5" id="r_a74e3c6c037b67895014414c5d75465e5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74e3c6c037b67895014414c5d75465e5">fit</a> (const std::vector&lt; double &gt; &amp;x, const int &amp;y)</td></tr>
 <tr class="separator:a74e3c6c037b67895014414c5d75465e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d61f9ed872eef26bca39388cbda6a91" id="r_a8d61f9ed872eef26bca39388cbda6a91"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
-<tr class="memitem:a8d61f9ed872eef26bca39388cbda6a91"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a8d61f9ed872eef26bca39388cbda6a91">fit</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; double &gt;, N &gt; const &amp;X, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, N &gt; const &amp;Y)</td></tr>
+<tr class="memitem:a8d61f9ed872eef26bca39388cbda6a91"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a8d61f9ed872eef26bca39388cbda6a91">fit</a> (std::array&lt; std::vector&lt; double &gt;, N &gt; const &amp;X, std::array&lt; int, N &gt; const &amp;Y)</td></tr>
 <tr class="separator:a8d61f9ed872eef26bca39388cbda6a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a082f758fb55fe19f22b3df66f89b2325" id="r_a082f758fb55fe19f22b3df66f89b2325"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a082f758fb55fe19f22b3df66f89b2325">activation</a> (double x)</td></tr>
 <tr class="separator:a082f758fb55fe19f22b3df66f89b2325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ac8a9c2aaaa63b0f27ea176857e1e7d56" id="r_ac8a9c2aaaa63b0f27ea176857e1e7d56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8a9c2aaaa63b0f27ea176857e1e7d56">check_size_match</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; double &gt; &amp;x)</td></tr>
+<tr class="memitem:ac8a9c2aaaa63b0f27ea176857e1e7d56" id="r_ac8a9c2aaaa63b0f27ea176857e1e7d56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8a9c2aaaa63b0f27ea176857e1e7d56">check_size_match</a> (const std::vector&lt; double &gt; &amp;x)</td></tr>
 <tr class="separator:ac8a9c2aaaa63b0f27ea176857e1e7d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a28160d17e492597a2f112e0d38551cda" id="r_a28160d17e492597a2f112e0d38551cda"><td class="memItemLeft" align="right" valign="top"><a id="a28160d17e492597a2f112e0d38551cda" name="a28160d17e492597a2f112e0d38551cda"></a>
-const double&#160;</td><td class="memItemRight" valign="bottom"><b>eta</b></td></tr>
-<tr class="memdesc:a28160d17e492597a2f112e0d38551cda"><td class="mdescLeft">&#160;</td><td class="mdescRight">learning rate of the algorithm <br /></td></tr>
+<tr class="memitem:a28160d17e492597a2f112e0d38551cda" id="r_a28160d17e492597a2f112e0d38551cda"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28160d17e492597a2f112e0d38551cda">eta</a></td></tr>
+<tr class="memdesc:a28160d17e492597a2f112e0d38551cda"><td class="mdescLeft">&#160;</td><td class="mdescRight">learning rate of the algorithm  <br /></td></tr>
 <tr class="separator:a28160d17e492597a2f112e0d38551cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa23d60262f917f35836ef4b1c1d9f7d3" id="r_aa23d60262f917f35836ef4b1c1d9f7d3"><td class="memItemLeft" align="right" valign="top"><a id="aa23d60262f917f35836ef4b1c1d9f7d3" name="aa23d60262f917f35836ef4b1c1d9f7d3"></a>
-const double&#160;</td><td class="memItemRight" valign="bottom"><b>accuracy</b></td></tr>
-<tr class="memdesc:aa23d60262f917f35836ef4b1c1d9f7d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">model fit convergence accuracy <br /></td></tr>
+<tr class="memitem:aa23d60262f917f35836ef4b1c1d9f7d3" id="r_aa23d60262f917f35836ef4b1c1d9f7d3"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa23d60262f917f35836ef4b1c1d9f7d3">accuracy</a></td></tr>
+<tr class="memdesc:aa23d60262f917f35836ef4b1c1d9f7d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">model fit convergence accuracy  <br /></td></tr>
 <tr class="separator:aa23d60262f917f35836ef4b1c1d9f7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cd8fe438032fedaa66f93bfd66f5492" id="r_a4cd8fe438032fedaa66f93bfd66f5492"><td class="memItemLeft" align="right" valign="top"><a id="a4cd8fe438032fedaa66f93bfd66f5492" name="a4cd8fe438032fedaa66f93bfd66f5492"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>weights</b></td></tr>
-<tr class="memdesc:a4cd8fe438032fedaa66f93bfd66f5492"><td class="mdescLeft">&#160;</td><td class="mdescRight">weights of the neural network <br /></td></tr>
+<tr class="memitem:a4cd8fe438032fedaa66f93bfd66f5492" id="r_a4cd8fe438032fedaa66f93bfd66f5492"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cd8fe438032fedaa66f93bfd66f5492">weights</a></td></tr>
+<tr class="memdesc:a4cd8fe438032fedaa66f93bfd66f5492"><td class="mdescLeft">&#160;</td><td class="mdescRight">weights of the neural network  <br /></td></tr>
 <tr class="separator:a4cd8fe438032fedaa66f93bfd66f5492"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ae347040516e995c8fb8ca2e5c0496daa" id="r_ae347040516e995c8fb8ca2e5c0496daa"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae347040516e995c8fb8ca2e5c0496daa">operator&lt;&lt;</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp;out, const <a class="el" href="../../d6/d30/classmachine__learning_1_1adaline.html">adaline</a> &amp;ada)</td></tr>
+<tr class="memitem:ae347040516e995c8fb8ca2e5c0496daa" id="r_ae347040516e995c8fb8ca2e5c0496daa"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae347040516e995c8fb8ca2e5c0496daa">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="../../d6/d30/classmachine__learning_1_1adaline.html">adaline</a> &amp;ada)</td></tr>
 <tr class="separator:ae347040516e995c8fb8ca2e5c0496daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html#l00046">46</a> of file <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html">adaline_learning.cpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0acbe32aaab897e7939e5b0454035b8c" name="a0acbe32aaab897e7939e5b0454035b8c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0acbe32aaab897e7939e5b0454035b8c">&#9670;&#160;</a></span>adaline()</h2>
 
@@ -198,14 +215,16 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html">adaline_learning.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   57</span>        : <a class="code hl_variable" href="#a28160d17e492597a2f112e0d38551cda">eta</a>(<a class="code hl_variable" href="#a28160d17e492597a2f112e0d38551cda">eta</a>), <a class="code hl_variable" href="#aa23d60262f917f35836ef4b1c1d9f7d3">accuracy</a>(<a class="code hl_variable" href="#aa23d60262f917f35836ef4b1c1d9f7d3">accuracy</a>) {</div>
 <div class="line"><span class="lineno">   58</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a28160d17e492597a2f112e0d38551cda">eta</a> &lt;= 0) {</div>
-<div class="line"><span class="lineno">   59</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;learning rate should be positive and nonzero&quot;</span></div>
-<div class="line"><span class="lineno">   60</span>                      &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   61</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/program/exit.html">std::exit</a>(EXIT_FAILURE);</div>
+<div class="line"><span class="lineno">   59</span>            std::cerr &lt;&lt; <span class="stringliteral">&quot;learning rate should be positive and nonzero&quot;</span></div>
+<div class="line"><span class="lineno">   60</span>                      &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   61</span>            std::exit(EXIT_FAILURE);</div>
 <div class="line"><span class="lineno">   62</span>        }</div>
 <div class="line"><span class="lineno">   63</span> </div>
-<div class="line"><span class="lineno">   64</span>        <a class="code hl_variable" href="#a4cd8fe438032fedaa66f93bfd66f5492">weights</a> = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;double&gt;</a>(</div>
+<div class="line"><span class="lineno">   64</span>        <a class="code hl_variable" href="#a4cd8fe438032fedaa66f93bfd66f5492">weights</a> = std::vector&lt;double&gt;(</div>
 <div class="line"><span class="lineno">   65</span>            num_features +</div>
 <div class="line"><span class="lineno">   66</span>            1);  <span class="comment">// additional weight is for the constant bias term</span></div>
 <div class="line"><span class="lineno">   67</span> </div>
@@ -213,19 +232,10 @@ Friends</h2></td></tr>
 <div class="line"><span class="lineno">   69</span>        <span class="keywordflow">for</span> (<span class="keywordtype">double</span> &amp;weight : <a class="code hl_variable" href="#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>) weight = 1.f;</div>
 <div class="line"><span class="lineno">   70</span>        <span class="comment">// weights[i] = (static_cast&lt;double&gt;(std::rand() % 100) - 50);</span></div>
 <div class="line"><span class="lineno">   71</span>    }</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a></div></div>
-<div class="ttc" id="aclassmachine__learning_1_1adaline_html_a28160d17e492597a2f112e0d38551cda"><div class="ttname"><a href="#a28160d17e492597a2f112e0d38551cda">machine_learning::adaline::eta</a></div><div class="ttdeci">const double eta</div><div class="ttdoc">learning rate of the algorithm</div><div class="ttdef"><b>Definition</b> adaline_learning.cpp:207</div></div>
-<div class="ttc" id="aclassmachine__learning_1_1adaline_html_a4cd8fe438032fedaa66f93bfd66f5492"><div class="ttname"><a href="#a4cd8fe438032fedaa66f93bfd66f5492">machine_learning::adaline::weights</a></div><div class="ttdeci">std::vector&lt; double &gt; weights</div><div class="ttdoc">weights of the neural network</div><div class="ttdef"><b>Definition</b> adaline_learning.cpp:209</div></div>
-<div class="ttc" id="aclassmachine__learning_1_1adaline_html_aa23d60262f917f35836ef4b1c1d9f7d3"><div class="ttname"><a href="#aa23d60262f917f35836ef4b1c1d9f7d3">machine_learning::adaline::accuracy</a></div><div class="ttdeci">const double accuracy</div><div class="ttdoc">model fit convergence accuracy</div><div class="ttdef"><b>Definition</b> adaline_learning.cpp:208</div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="aexit_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/program/exit.html">std::exit</a></div><div class="ttdeci">T exit(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d30/classmachine__learning_1_1adaline_a0acbe32aaab897e7939e5b0454035b8c_cgraph.svg" width="302" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassmachine__learning_1_1adaline_html_a28160d17e492597a2f112e0d38551cda"><div class="ttname"><a href="#a28160d17e492597a2f112e0d38551cda">machine_learning::adaline::eta</a></div><div class="ttdeci">const double eta</div><div class="ttdoc">learning rate of the algorithm</div><div class="ttdef"><b>Definition</b> <a href="../../d5/db0/adaline__learning_8cpp_source.html#l00207">adaline_learning.cpp:207</a></div></div>
+<div class="ttc" id="aclassmachine__learning_1_1adaline_html_a4cd8fe438032fedaa66f93bfd66f5492"><div class="ttname"><a href="#a4cd8fe438032fedaa66f93bfd66f5492">machine_learning::adaline::weights</a></div><div class="ttdeci">std::vector&lt; double &gt; weights</div><div class="ttdoc">weights of the neural network</div><div class="ttdef"><b>Definition</b> <a href="../../d5/db0/adaline__learning_8cpp_source.html#l00209">adaline_learning.cpp:209</a></div></div>
+<div class="ttc" id="aclassmachine__learning_1_1adaline_html_aa23d60262f917f35836ef4b1c1d9f7d3"><div class="ttname"><a href="#aa23d60262f917f35836ef4b1c1d9f7d3">machine_learning::adaline::accuracy</a></div><div class="ttdeci">const double accuracy</div><div class="ttdoc">model fit convergence accuracy</div><div class="ttdef"><b>Definition</b> <a href="../../d5/db0/adaline__learning_8cpp_source.html#l00208">adaline_learning.cpp:208</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -266,6 +276,8 @@ f(x) = \begin{cases}
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>activation output </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html#l00186">186</a> of file <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html">adaline_learning.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  186</span>{ <span class="keywordflow">return</span> x &gt; 0 ? 1 : -1; }</div>
 </div><!-- fragment -->
 </div>
@@ -282,7 +294,7 @@ f(x) = \begin{cases}
         <tr>
           <td class="memname">bool machine_learning::adaline::check_size_match </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -301,23 +313,19 @@ f(x) = \begin{cases}
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> size matches </dd>
 <dd>
 <code>false</code> size does not match </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html#l00196">196</a> of file <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html">adaline_learning.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  196</span>                                                      {</div>
-<div class="line"><span class="lineno">  197</span>        <span class="keywordflow">if</span> (x.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() != (<a class="code hl_variable" href="#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() - 1)) {</div>
-<div class="line"><span class="lineno">  198</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; __func__ &lt;&lt; <span class="stringliteral">&quot;: &quot;</span></div>
+<div class="line"><span class="lineno">  197</span>        <span class="keywordflow">if</span> (x.size() != (<a class="code hl_variable" href="#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>.size() - 1)) {</div>
+<div class="line"><span class="lineno">  198</span>            std::cerr &lt;&lt; __func__ &lt;&lt; <span class="stringliteral">&quot;: &quot;</span></div>
 <div class="line"><span class="lineno">  199</span>                      &lt;&lt; <span class="stringliteral">&quot;Number of features in x does not match the feature &quot;</span></div>
 <div class="line"><span class="lineno">  200</span>                         <span class="stringliteral">&quot;dimension in model!&quot;</span></div>
-<div class="line"><span class="lineno">  201</span>                      &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  201</span>                      &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  202</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  203</span>        }</div>
 <div class="line"><span class="lineno">  204</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  205</span>    }</div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d30/classmachine__learning_1_1adaline_ac8a9c2aaaa63b0f27ea176857e1e7d56_cgraph.svg" width="346" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a74e3c6c037b67895014414c5d75465e5" name="a74e3c6c037b67895014414c5d75465e5"></a>
@@ -332,7 +340,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">double machine_learning::adaline::fit </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -354,6 +362,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>correction factor </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html#l00119">119</a> of file <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html">adaline_learning.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  119</span>                                                         {</div>
 <div class="line"><span class="lineno">  120</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="#ac8a9c2aaaa63b0f27ea176857e1e7d56">check_size_match</a>(x)) {</div>
 <div class="line"><span class="lineno">  121</span>            <span class="keywordflow">return</span> 0;</div>
@@ -365,21 +375,16 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  127</span>        <span class="keywordtype">double</span> correction_factor = <a class="code hl_variable" href="#a28160d17e492597a2f112e0d38551cda">eta</a> * prediction_error;</div>
 <div class="line"><span class="lineno">  128</span> </div>
 <div class="line"><span class="lineno">  129</span>        <span class="comment">/* update each weight, the last weight is the bias term */</span></div>
-<div class="line"><span class="lineno">  130</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; x.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {</div>
+<div class="line"><span class="lineno">  130</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; x.size(); i++) {</div>
 <div class="line"><span class="lineno">  131</span>            <a class="code hl_variable" href="#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>[i] += correction_factor * x[i];</div>
 <div class="line"><span class="lineno">  132</span>        }</div>
-<div class="line"><span class="lineno">  133</span>        <a class="code hl_variable" href="#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>[x.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()] += correction_factor;  <span class="comment">// update bias</span></div>
+<div class="line"><span class="lineno">  133</span>        <a class="code hl_variable" href="#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>[x.size()] += correction_factor;  <span class="comment">// update bias</span></div>
 <div class="line"><span class="lineno">  134</span> </div>
 <div class="line"><span class="lineno">  135</span>        <span class="keywordflow">return</span> correction_factor;</div>
 <div class="line"><span class="lineno">  136</span>    }</div>
-<div class="ttc" id="aclassmachine__learning_1_1adaline_html_ab11242d9ad5b03a75911e29b04f78fd3"><div class="ttname"><a href="#ab11242d9ad5b03a75911e29b04f78fd3">machine_learning::adaline::predict</a></div><div class="ttdeci">int predict(const std::vector&lt; double &gt; &amp;x, double *out=nullptr)</div><div class="ttdef"><b>Definition</b> adaline_learning.cpp:95</div></div>
-<div class="ttc" id="aclassmachine__learning_1_1adaline_html_ac8a9c2aaaa63b0f27ea176857e1e7d56"><div class="ttname"><a href="#ac8a9c2aaaa63b0f27ea176857e1e7d56">machine_learning::adaline::check_size_match</a></div><div class="ttdeci">bool check_size_match(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> adaline_learning.cpp:196</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d6/d30/classmachine__learning_1_1adaline_a74e3c6c037b67895014414c5d75465e5_cgraph.svg" width="100%" height="570"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="aclassmachine__learning_1_1adaline_html_ab11242d9ad5b03a75911e29b04f78fd3"><div class="ttname"><a href="#ab11242d9ad5b03a75911e29b04f78fd3">machine_learning::adaline::predict</a></div><div class="ttdeci">int predict(const std::vector&lt; double &gt; &amp;x, double *out=nullptr)</div><div class="ttdef"><b>Definition</b> <a href="../../d5/db0/adaline__learning_8cpp_source.html#l00095">adaline_learning.cpp:95</a></div></div>
+<div class="ttc" id="aclassmachine__learning_1_1adaline_html_ac8a9c2aaaa63b0f27ea176857e1e7d56"><div class="ttname"><a href="#ac8a9c2aaaa63b0f27ea176857e1e7d56">machine_learning::adaline::check_size_match</a></div><div class="ttdeci">bool check_size_match(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../d5/db0/adaline__learning_8cpp_source.html#l00196">adaline_learning.cpp:196</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8d61f9ed872eef26bca39388cbda6a91" name="a8d61f9ed872eef26bca39388cbda6a91"></a>
@@ -396,12 +401,12 @@ template&lt;size_t N&gt; </div>
         <tr>
           <td class="memname">void machine_learning::adaline::fit </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; double &gt;, N &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>X</em></span>, </td>
+          <td class="paramtype">std::array&lt; std::vector&lt; double &gt;, N &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>X</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, N &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>Y</em></span>&#160;)</td>
+          <td class="paramtype">std::array&lt; int, N &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>Y</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -417,6 +422,8 @@ template&lt;size_t N&gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html#l00145">145</a> of file <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html">adaline_learning.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  146</span>                                        {</div>
 <div class="line"><span class="lineno">  147</span>        <span class="keywordtype">double</span> avg_pred_error = 1.f;</div>
 <div class="line"><span class="lineno">  148</span> </div>
@@ -434,27 +441,22 @@ template&lt;size_t N&gt; </div>
 <div class="line"><span class="lineno">  160</span> </div>
 <div class="line"><span class="lineno">  161</span>            <span class="comment">// Print updates every 200th iteration</span></div>
 <div class="line"><span class="lineno">  162</span>            <span class="comment">// if (iter % 100 == 0)</span></div>
-<div class="line"><span class="lineno">  163</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\tIter &quot;</span> &lt;&lt; iter &lt;&lt; <span class="stringliteral">&quot;: Training weights: &quot;</span> &lt;&lt; *<span class="keyword">this</span></div>
-<div class="line"><span class="lineno">  164</span>                      &lt;&lt; <span class="stringliteral">&quot;\tAvg error: &quot;</span> &lt;&lt; avg_pred_error &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  163</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;\tIter &quot;</span> &lt;&lt; iter &lt;&lt; <span class="stringliteral">&quot;: Training weights: &quot;</span> &lt;&lt; *<span class="keyword">this</span></div>
+<div class="line"><span class="lineno">  164</span>                      &lt;&lt; <span class="stringliteral">&quot;\tAvg error: &quot;</span> &lt;&lt; avg_pred_error &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  165</span>        }</div>
 <div class="line"><span class="lineno">  166</span> </div>
 <div class="line"><span class="lineno">  167</span>        <span class="keywordflow">if</span> (iter &lt; <a class="code hl_variable" href="../../d9/d66/group__machine__learning.html#ga5118e5cbc4f0886e27b3a7a2544dded1">MAX_ITER</a>) {</div>
-<div class="line"><span class="lineno">  168</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Converged after &quot;</span> &lt;&lt; iter &lt;&lt; <span class="stringliteral">&quot; iterations.&quot;</span></div>
-<div class="line"><span class="lineno">  169</span>                      &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  168</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Converged after &quot;</span> &lt;&lt; iter &lt;&lt; <span class="stringliteral">&quot; iterations.&quot;</span></div>
+<div class="line"><span class="lineno">  169</span>                      &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  170</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  171</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Did not converge after &quot;</span> &lt;&lt; iter &lt;&lt; <span class="stringliteral">&quot; iterations.&quot;</span></div>
-<div class="line"><span class="lineno">  172</span>                      &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  171</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Did not converge after &quot;</span> &lt;&lt; iter &lt;&lt; <span class="stringliteral">&quot; iterations.&quot;</span></div>
+<div class="line"><span class="lineno">  172</span>                      &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  173</span>        }</div>
 <div class="line"><span class="lineno">  174</span>    }</div>
-<div class="ttc" id="aclassmachine__learning_1_1adaline_html_a74e3c6c037b67895014414c5d75465e5"><div class="ttname"><a href="#a74e3c6c037b67895014414c5d75465e5">machine_learning::adaline::fit</a></div><div class="ttdeci">double fit(const std::vector&lt; double &gt; &amp;x, const int &amp;y)</div><div class="ttdef"><b>Definition</b> adaline_learning.cpp:119</div></div>
-<div class="ttc" id="agroup__machine__learning_html_ga5118e5cbc4f0886e27b3a7a2544dded1"><div class="ttname"><a href="../../d9/d66/group__machine__learning.html#ga5118e5cbc4f0886e27b3a7a2544dded1">MAX_ITER</a></div><div class="ttdeci">constexpr int MAX_ITER</div><div class="ttdef"><b>Definition</b> adaline_learning.cpp:40</div></div>
-<div class="ttc" id="asparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:48</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d6/d30/classmachine__learning_1_1adaline_a8d61f9ed872eef26bca39388cbda6a91_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="aclassmachine__learning_1_1adaline_html_a74e3c6c037b67895014414c5d75465e5"><div class="ttname"><a href="#a74e3c6c037b67895014414c5d75465e5">machine_learning::adaline::fit</a></div><div class="ttdeci">double fit(const std::vector&lt; double &gt; &amp;x, const int &amp;y)</div><div class="ttdef"><b>Definition</b> <a href="../../d5/db0/adaline__learning_8cpp_source.html#l00119">adaline_learning.cpp:119</a></div></div>
+<div class="ttc" id="agroup__machine__learning_html_ga5118e5cbc4f0886e27b3a7a2544dded1"><div class="ttname"><a href="../../d9/d66/group__machine__learning.html#ga5118e5cbc4f0886e27b3a7a2544dded1">MAX_ITER</a></div><div class="ttdeci">constexpr int MAX_ITER</div><div class="ttdef"><b>Definition</b> <a href="../../d5/db0/adaline__learning_8cpp_source.html#l00040">adaline_learning.cpp:40</a></div></div>
+<div class="ttc" id="asparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dab/sparse__table_8cpp_source.html#l00048">sparse_table.cpp:48</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab11242d9ad5b03a75911e29b04f78fd3" name="ab11242d9ad5b03a75911e29b04f78fd3"></a>
@@ -469,7 +471,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">int machine_learning::adaline::predict </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -491,15 +493,17 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>model prediction output </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html#l00095">95</a> of file <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html">adaline_learning.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   95</span>                                                                   {</div>
 <div class="line"><span class="lineno">   96</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="#ac8a9c2aaaa63b0f27ea176857e1e7d56">check_size_match</a>(x)) {</div>
 <div class="line"><span class="lineno">   97</span>            <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   98</span>        }</div>
 <div class="line"><span class="lineno">   99</span> </div>
-<div class="line"><span class="lineno">  100</span>        <span class="keywordtype">double</span> y = <a class="code hl_variable" href="#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/back.html">back</a>();  <span class="comment">// assign bias value</span></div>
+<div class="line"><span class="lineno">  100</span>        <span class="keywordtype">double</span> y = <a class="code hl_variable" href="#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>.back();  <span class="comment">// assign bias value</span></div>
 <div class="line"><span class="lineno">  101</span> </div>
 <div class="line"><span class="lineno">  102</span>        <span class="comment">// for (int i = 0; i &lt; x.size(); i++) y += x[i] * weights[i];</span></div>
-<div class="line"><span class="lineno">  103</span>        y = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/inner_product.html">std::inner_product</a>(x.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), x.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>(), <a class="code hl_variable" href="#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), y);</div>
+<div class="line"><span class="lineno">  103</span>        y = std::inner_product(x.begin(), x.end(), <a class="code hl_variable" href="#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>.begin(), y);</div>
 <div class="line"><span class="lineno">  104</span> </div>
 <div class="line"><span class="lineno">  105</span>        <span class="keywordflow">if</span> (out != <span class="keyword">nullptr</span>) {  <span class="comment">// if out variable is provided</span></div>
 <div class="line"><span class="lineno">  106</span>            *out = y;</div>
@@ -507,17 +511,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  108</span> </div>
 <div class="line"><span class="lineno">  109</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a082f758fb55fe19f22b3df66f89b2325">activation</a>(y);  <span class="comment">// quantizer: apply ADALINE threshold function</span></div>
 <div class="line"><span class="lineno">  110</span>    }</div>
-<div class="ttc" id="aback_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/back.html">std::vector::back</a></div><div class="ttdeci">T back(T... args)</div></div>
-<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/begin.html">std::vector::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
-<div class="ttc" id="aclassmachine__learning_1_1adaline_html_a082f758fb55fe19f22b3df66f89b2325"><div class="ttname"><a href="#a082f758fb55fe19f22b3df66f89b2325">machine_learning::adaline::activation</a></div><div class="ttdeci">int activation(double x)</div><div class="ttdef"><b>Definition</b> adaline_learning.cpp:186</div></div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/end.html">std::vector::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="ainner_product_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/inner_product.html">std::inner_product</a></div><div class="ttdeci">T inner_product(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d30/classmachine__learning_1_1adaline_ab11242d9ad5b03a75911e29b04f78fd3_cgraph.svg" width="566" height="315"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassmachine__learning_1_1adaline_html_a082f758fb55fe19f22b3df66f89b2325"><div class="ttname"><a href="#a082f758fb55fe19f22b3df66f89b2325">machine_learning::adaline::activation</a></div><div class="ttdeci">int activation(double x)</div><div class="ttdef"><b>Definition</b> <a href="../../d5/db0/adaline__learning_8cpp_source.html#l00186">adaline_learning.cpp:186</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Symbol Documentation</h2>
@@ -531,9 +526,9 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp; operator&lt;&lt; </td>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -548,11 +543,13 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Operator to print the weights of the model </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html#l00076">76</a> of file <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html">adaline_learning.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   76</span>                                                                       {</div>
 <div class="line"><span class="lineno">   77</span>        out &lt;&lt; <span class="stringliteral">&quot;&lt;&quot;</span>;</div>
-<div class="line"><span class="lineno">   78</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; ada.<a class="code hl_variable" href="#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {</div>
+<div class="line"><span class="lineno">   78</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; ada.<a class="code hl_variable" href="#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>.size(); i++) {</div>
 <div class="line"><span class="lineno">   79</span>            out &lt;&lt; ada.<a class="code hl_variable" href="#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>[i];</div>
-<div class="line"><span class="lineno">   80</span>            <span class="keywordflow">if</span> (i &lt; ada.<a class="code hl_variable" href="#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() - 1) {</div>
+<div class="line"><span class="lineno">   80</span>            <span class="keywordflow">if</span> (i &lt; ada.<a class="code hl_variable" href="#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>.size() - 1) {</div>
 <div class="line"><span class="lineno">   81</span>                out &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
 <div class="line"><span class="lineno">   82</span>            }</div>
 <div class="line"><span class="lineno">   83</span>        }</div>
@@ -562,8 +559,87 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa23d60262f917f35836ef4b1c1d9f7d3" name="aa23d60262f917f35836ef4b1c1d9f7d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa23d60262f917f35836ef4b1c1d9f7d3">&#9670;&#160;</a></span>accuracy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double machine_learning::adaline::accuracy</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>model fit convergence accuracy </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html#l00208">208</a> of file <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html">adaline_learning.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a28160d17e492597a2f112e0d38551cda" name="a28160d17e492597a2f112e0d38551cda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28160d17e492597a2f112e0d38551cda">&#9670;&#160;</a></span>eta</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double machine_learning::adaline::eta</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>learning rate of the algorithm </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html#l00207">207</a> of file <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html">adaline_learning.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4cd8fe438032fedaa66f93bfd66f5492" name="a4cd8fe438032fedaa66f93bfd66f5492"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cd8fe438032fedaa66f93bfd66f5492">&#9670;&#160;</a></span>weights</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;double&gt; machine_learning::adaline::weights</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>weights of the neural network </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html#l00209">209</a> of file <a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html">adaline_learning.cpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>machine_learning/<a class="el" href="../../d5/db0/adaline__learning_8cpp.html">adaline_learning.cpp</a></li>
+<li>machine_learning/<a class="el" href="../../d5/db0/adaline__learning_8cpp_source.html">adaline_learning.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

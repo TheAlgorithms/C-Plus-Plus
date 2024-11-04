@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: strings/manacher_algorithm.cpp File Reference</title>
+<title>TheAlgorithms/C++: strings/manacher_algorithm.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -123,7 +140,9 @@ Include dependency graph for manacher_algorithm.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d05/manacher__algorithm_8cpp__incl.svg" width="420" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d3/d39/manacher__algorithm_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcb/namespacestrings.html">strings</a></td></tr>
@@ -135,7 +154,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a95e6a2976bb2f332898f373941d52098" id="r_a95e6a2976bb2f332898f373941d52098"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95e6a2976bb2f332898f373941d52098">strings::manacher::manacher</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;prototype)</td></tr>
+<tr class="memitem:a95e6a2976bb2f332898f373941d52098" id="r_a95e6a2976bb2f332898f373941d52098"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95e6a2976bb2f332898f373941d52098">strings::manacher::manacher</a> (const std::string &amp;prototype)</td></tr>
 <tr class="memdesc:a95e6a2976bb2f332898f373941d52098"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that implements Manacher's algorithm.  <br /></td></tr>
 <tr class="separator:a95e6a2976bb2f332898f373941d52098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
@@ -148,6 +167,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of <a href="https://en.wikipedia.org/wiki/Longest_palindromic_substring" target="_blank">Manacher's Algorithm</a> </p>
 <p>Manacher's Algorithm is used to find the longest palindromic substring within a string in O(n) time. It exploits the property of a palindrome that its first half is symmetric to the last half, and thus if the first half is a palindrome, then last half is also a palindrome. </p><dl class="section author"><dt>Author</dt><dd><a href="https://github.com/riti2409" target="_blank">Riti Kumari</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d3/d39/manacher__algorithm_8cpp_source.html">manacher_algorithm.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -166,17 +187,14 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d39/manacher__algorithm_8cpp_source.html#l00172">172</a> of file <a class="el" href="../../d3/d39/manacher__algorithm_8cpp_source.html">manacher_algorithm.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  172</span>           {</div>
 <div class="line"><span class="lineno">  173</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
 <div class="line"><span class="lineno">  174</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  175</span>}</div>
-<div class="ttc" id="amanacher__algorithm_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> manacher_algorithm.cpp:151</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d39/manacher__algorithm_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="271" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="amanacher__algorithm_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d39/manacher__algorithm_8cpp_source.html#l00151">manacher_algorithm.cpp:151</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a95e6a2976bb2f332898f373941d52098" name="a95e6a2976bb2f332898f373941d52098"></a>
@@ -186,9 +204,9 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> strings::manacher::manacher </td>
+          <td class="memname">std::string strings::manacher::manacher </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>prototype</em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>prototype</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -202,19 +220,21 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the largest palindromic substring </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d39/manacher__algorithm_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../d3/d39/manacher__algorithm_8cpp_source.html">manacher_algorithm.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   41</span>                                               {</div>
-<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">if</span> (prototype.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>() &gt; 0) {</div>
+<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">if</span> (prototype.size() &gt; 0) {</div>
 <div class="line"><span class="lineno">   43</span>        <span class="comment">// stuffing characters between the input string to handle cases with</span></div>
 <div class="line"><span class="lineno">   44</span>        <span class="comment">// even length palindrome</span></div>
-<div class="line"><span class="lineno">   45</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> stuffed_string = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">   45</span>        std::string stuffed_string = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><span class="lineno">   46</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> str : prototype) {</div>
 <div class="line"><span class="lineno">   47</span>            stuffed_string += str;</div>
 <div class="line"><span class="lineno">   48</span>            stuffed_string += <span class="stringliteral">&quot;#&quot;</span>;</div>
 <div class="line"><span class="lineno">   49</span>        }</div>
 <div class="line"><span class="lineno">   50</span>        stuffed_string = <span class="stringliteral">&quot;@#&quot;</span> + stuffed_string + <span class="stringliteral">&quot;&amp;&quot;</span>;</div>
 <div class="line"><span class="lineno">   51</span> </div>
-<div class="line"><span class="lineno">   52</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> palindrome_max_half_length(</div>
-<div class="line"><span class="lineno">   53</span>            stuffed_string.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>(),</div>
+<div class="line"><span class="lineno">   52</span>        std::vector&lt;uint64_t&gt; palindrome_max_half_length(</div>
+<div class="line"><span class="lineno">   53</span>            stuffed_string.size(),</div>
 <div class="line"><span class="lineno">   54</span>            0);  <span class="comment">// this array will consist of largest possible half length of</span></div>
 <div class="line"><span class="lineno">   55</span>                 <span class="comment">// palindrome centered at index (say i with respect to the</span></div>
 <div class="line"><span class="lineno">   56</span>                 <span class="comment">// stuffed string). This value will be lower bound of half</span></div>
@@ -225,12 +245,12 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   61</span>                <span class="comment">// substring which would be considered as the larger</span></div>
 <div class="line"><span class="lineno">   62</span>                <span class="comment">// palindrome, having symmetric halves</span></div>
 <div class="line"><span class="lineno">   63</span> </div>
-<div class="line"><span class="lineno">   64</span>        uint64_t <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a> = 0;  <span class="comment">// this is the maximum length of the palindrome</span></div>
+<div class="line"><span class="lineno">   64</span>        uint64_t right = 0;  <span class="comment">// this is the maximum length of the palindrome</span></div>
 <div class="line"><span class="lineno">   65</span>                             <span class="comment">// from &#39;bigger_center&#39; to the rightmost end</span></div>
 <div class="line"><span class="lineno">   66</span> </div>
 <div class="line"><span class="lineno">   67</span>        <span class="comment">// i is considered as center lying within one half of the palindrone</span></div>
 <div class="line"><span class="lineno">   68</span>        <span class="comment">// which is centered at &#39;bigger_center&#39;</span></div>
-<div class="line"><span class="lineno">   69</span>        <span class="keywordflow">for</span> (uint64_t i = 1; i &lt; stuffed_string.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>() - 1; i++) {</div>
+<div class="line"><span class="lineno">   69</span>        <span class="keywordflow">for</span> (uint64_t i = 1; i &lt; stuffed_string.size() - 1; i++) {</div>
 <div class="line"><span class="lineno">   70</span>            <span class="keywordflow">if</span> (i &lt; right) {  <span class="comment">// when i is before right end, considering</span></div>
 <div class="line"><span class="lineno">   71</span>                              <span class="comment">// &#39;bigger_center&#39; as center of palindrome</span></div>
 <div class="line"><span class="lineno">   72</span>                uint64_t opposite_to_i =</div>
@@ -242,7 +262,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   78</span>                <span class="comment">// the palindrome on having center at opposite end,</span></div>
 <div class="line"><span class="lineno">   79</span>                <span class="comment">// and the string between i and right end,</span></div>
 <div class="line"><span class="lineno">   80</span>                <span class="comment">// considering &#39;bigger_center&#39; as center of palindrome</span></div>
-<div class="line"><span class="lineno">   81</span>                palindrome_max_half_length[i] = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(</div>
+<div class="line"><span class="lineno">   81</span>                palindrome_max_half_length[i] = std::min(</div>
 <div class="line"><span class="lineno">   82</span>                    palindrome_max_half_length[opposite_to_i], right - i);</div>
 <div class="line"><span class="lineno">   83</span>            }</div>
 <div class="line"><span class="lineno">   84</span> </div>
@@ -259,7 +279,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   95</span>            <span class="comment">// to center i</span></div>
 <div class="line"><span class="lineno">   96</span>            <span class="keywordflow">if</span> (i + palindrome_max_half_length[i] &gt; right) {</div>
 <div class="line"><span class="lineno">   97</span>                bigger_center = i;</div>
-<div class="line"><span class="lineno">   98</span>                <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a> = i + palindrome_max_half_length[i];</div>
+<div class="line"><span class="lineno">   98</span>                right = i + palindrome_max_half_length[i];</div>
 <div class="line"><span class="lineno">   99</span>            }</div>
 <div class="line"><span class="lineno">  100</span>        }</div>
 <div class="line"><span class="lineno">  101</span> </div>
@@ -267,14 +287,14 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  103</span>        uint64_t half_length = 0;   <span class="comment">// half length of the largest palindrome</span></div>
 <div class="line"><span class="lineno">  104</span>        uint64_t center_index = 0;  <span class="comment">// index of center of the largest palindrome</span></div>
 <div class="line"><span class="lineno">  105</span> </div>
-<div class="line"><span class="lineno">  106</span>        <span class="keywordflow">for</span> (uint64_t i = 1; i &lt; stuffed_string.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>() - 1; i++) {</div>
+<div class="line"><span class="lineno">  106</span>        <span class="keywordflow">for</span> (uint64_t i = 1; i &lt; stuffed_string.size() - 1; i++) {</div>
 <div class="line"><span class="lineno">  107</span>            <span class="keywordflow">if</span> (palindrome_max_half_length[i] &gt; half_length) {</div>
 <div class="line"><span class="lineno">  108</span>                half_length = palindrome_max_half_length[i];</div>
 <div class="line"><span class="lineno">  109</span>                center_index = i;</div>
 <div class="line"><span class="lineno">  110</span>            }</div>
 <div class="line"><span class="lineno">  111</span>        }</div>
 <div class="line"><span class="lineno">  112</span> </div>
-<div class="line"><span class="lineno">  113</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> palindromic_substring =</div>
+<div class="line"><span class="lineno">  113</span>        std::string palindromic_substring =</div>
 <div class="line"><span class="lineno">  114</span>            <span class="stringliteral">&quot;&quot;</span>;  <span class="comment">// contains the resulting largest palindrome</span></div>
 <div class="line"><span class="lineno">  115</span> </div>
 <div class="line"><span class="lineno">  116</span>        <span class="keywordflow">if</span> (half_length &gt; 0) {</div>
@@ -285,10 +305,10 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  121</span>            uint64_t start =</div>
 <div class="line"><span class="lineno">  122</span>                center_index - half_length +</div>
 <div class="line"><span class="lineno">  123</span>                1;  <span class="comment">// index of first character of palindromic substring</span></div>
-<div class="line"><span class="lineno">  124</span>            uint64_t <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a> =</div>
+<div class="line"><span class="lineno">  124</span>            uint64_t end =</div>
 <div class="line"><span class="lineno">  125</span>                center_index + half_length -</div>
 <div class="line"><span class="lineno">  126</span>                1;  <span class="comment">// index of last character of palindromic substring</span></div>
-<div class="line"><span class="lineno">  127</span>            <span class="keywordflow">for</span> (uint64_t index = start; index &lt;= <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a>; index += 2) {</div>
+<div class="line"><span class="lineno">  127</span>            <span class="keywordflow">for</span> (uint64_t index = start; index &lt;= end; index += 2) {</div>
 <div class="line"><span class="lineno">  128</span>                palindromic_substring += stuffed_string[index];</div>
 <div class="line"><span class="lineno">  129</span>            }</div>
 <div class="line"><span class="lineno">  130</span>        } <span class="keywordflow">else</span> {</div>
@@ -304,18 +324,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  140</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><span class="lineno">  141</span>    }</div>
 <div class="line"><span class="lineno">  142</span>}</div>
-<div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="aleft_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::right</a></div><div class="ttdeci">T right(T... args)</div></div>
-<div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">std::string::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d39/manacher__algorithm_8cpp_a95e6a2976bb2f332898f373941d52098_cgraph.svg" width="304" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -343,6 +352,8 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d39/manacher__algorithm_8cpp_source.html#l00151">151</a> of file <a class="el" href="../../d3/d39/manacher__algorithm_8cpp_source.html">manacher_algorithm.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  151</span>                   {</div>
 <div class="line"><span class="lineno">  152</span>    assert(strings::manacher::manacher(<span class="stringliteral">&quot;&quot;</span>) == <span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><span class="lineno">  153</span>    assert(strings::manacher::manacher(<span class="stringliteral">&quot;abababc&quot;</span>) == <span class="stringliteral">&quot;ababa&quot;</span>);</div>
@@ -357,16 +368,9 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  162</span>    assert(strings::manacher::manacher(<span class="stringliteral">&quot;xy&quot;</span>) == <span class="stringliteral">&quot;x&quot;</span>);</div>
 <div class="line"><span class="lineno">  163</span>    assert(strings::manacher::manacher(<span class="stringliteral">&quot;abced&quot;</span>) == <span class="stringliteral">&quot;a&quot;</span>);</div>
 <div class="line"><span class="lineno">  164</span> </div>
-<div class="line"><span class="lineno">  165</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  165</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All tests have passed!&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  166</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d39/manacher__algorithm_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="174" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: data_structures/avltree.cpp File Reference</title>
+<title>TheAlgorithms/C++: data_structures/avltree.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -121,11 +138,13 @@ Include dependency graph for avltree.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d2e/avltree_8cpp__incl.svg" width="262" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d8/dee/avltree_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a74f0cf18a0e5b832d9994e2f2d022287" id="r_a74f0cf18a0e5b832d9994e2f2d022287"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74f0cf18a0e5b832d9994e2f2d022287">node</a></td></tr>
-<tr class="memdesc:a74f0cf18a0e5b832d9994e2f2d022287"><td class="mdescLeft">&#160;</td><td class="mdescRight">for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue</a>  <br /></td></tr>
+<tr class="memdesc:a74f0cf18a0e5b832d9994e2f2d022287"><td class="mdescLeft">&#160;</td><td class="mdescRight">for std::queue  <br /></td></tr>
 <tr class="separator:a74f0cf18a0e5b832d9994e2f2d022287"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -163,6 +182,8 @@ Functions</h2></td></tr>
 <div class="textblock"><p>A simple tree implementation using nodes. </p>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000002">Todo</a></b></dt><dd>update code to use C++ STL library features and OO structure </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>This program is a poor implementation and does not utilize any of the C++ STL features. </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d8/dee/avltree_8cpp_source.html">avltree.cpp</a>.</p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="a74f0cf18a0e5b832d9994e2f2d022287" name="a74f0cf18a0e5b832d9994e2f2d022287"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74f0cf18a0e5b832d9994e2f2d022287">&#9670;&#160;</a></span>node</h2>
@@ -181,19 +202,20 @@ Functions</h2></td></tr>
 <div class="line">    <span class="keyword">struct </span><a class="code hl_class" href="../../d5/da1/structnode.html">node</a> *left;</div>
 <div class="line">    <span class="keyword">struct </span><a class="code hl_class" href="../../d5/da1/structnode.html">node</a> *right;</div>
 <div class="line">}</div>
-<div class="ttc" id="aavltree_8cpp_html_ae4a66d8b0c2b0d626aea45977e358c83"><div class="ttname"><a href="#ae4a66d8b0c2b0d626aea45977e358c83">height</a></div><div class="ttdeci">int height(node *root)</div><div class="ttdef"><b>Definition</b> avltree.cpp:38</div></div>
-<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition</b> binary_search_tree.cpp:11</div></div>
+<div class="ttc" id="aavltree_8cpp_html_ae4a66d8b0c2b0d626aea45977e358c83"><div class="ttname"><a href="#ae4a66d8b0c2b0d626aea45977e358c83">height</a></div><div class="ttdeci">int height(node *root)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dee/avltree_8cpp_source.html#l00038">avltree.cpp:38</a></div></div>
+<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d26/binary__search__tree_8cpp_source.html#l00011">binary_search_tree.cpp:11</a></div></div>
 </div><!-- fragment -->
-<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue</a> </p>
-<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> </p>
+<p>for std::queue </p>
+<p>for std::max for std::cout </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dee/avltree_8cpp_source.html#l00013">13</a> of file <a class="el" href="../../d8/dee/avltree_8cpp_source.html">avltree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   13</span>                         {</div>
 <div class="line"><span class="lineno">   14</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>;</div>
 <div class="line"><span class="lineno">   15</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="#ae4a66d8b0c2b0d626aea45977e358c83">height</a>;</div>
 <div class="line"><span class="lineno">   16</span>    <span class="keyword">struct </span><a class="code hl_class" href="../../d5/da1/structnode.html">node</a> *left;</div>
-<div class="line"><span class="lineno">   17</span>    <span class="keyword">struct </span><a class="code hl_class" href="../../d5/da1/structnode.html">node</a> *<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>;</div>
+<div class="line"><span class="lineno">   17</span>    <span class="keyword">struct </span><a class="code hl_class" href="../../d5/da1/structnode.html">node</a> *right;</div>
 <div class="line"><span class="lineno">   18</span>};</div>
-<div class="ttc" id="ahash__search_8cpp_html_a6e1a77282bc65ad359d753d25df23243"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a></div><div class="ttdeci">int data[MAX]</div><div class="ttdoc">test data</div><div class="ttdef"><b>Definition</b> hash_search.cpp:24</div></div>
-<div class="ttc" id="aleft_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::right</a></div><div class="ttdeci">T right(T... args)</div></div>
+<div class="ttc" id="ahash__search_8cpp_html_a6e1a77282bc65ad359d753d25df23243"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a></div><div class="ttdeci">int data[MAX]</div><div class="ttdoc">test data</div><div class="ttdef"><b>Definition</b> <a href="../../d1/df3/hash__search_8cpp_source.html#l00024">hash_search.cpp:24</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -221,6 +243,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>newly created node </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dee/avltree_8cpp_source.html#l00025">25</a> of file <a class="el" href="../../d8/dee/avltree_8cpp_source.html">avltree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   25</span>                           {</div>
 <div class="line"><span class="lineno">   26</span>    <a class="code hl_class" href="../../d5/da1/structnode.html">node</a> *nn = <span class="keyword">new</span> <a class="code hl_typedef" href="#a74f0cf18a0e5b832d9994e2f2d022287">node</a>();</div>
 <div class="line"><span class="lineno">   27</span>    nn-&gt;data = <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>;</div>
@@ -229,7 +253,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   30</span>    nn-&gt;right = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">   31</span>    <span class="keywordflow">return</span> nn;</div>
 <div class="line"><span class="lineno">   32</span>}</div>
-<div class="ttc" id="aavltree_8cpp_html_a74f0cf18a0e5b832d9994e2f2d022287"><div class="ttname"><a href="#a74f0cf18a0e5b832d9994e2f2d022287">node</a></div><div class="ttdeci">struct node { int data; int height; struct node *left; struct node *right;} node</div><div class="ttdoc">for std::queue</div><div class="ttdef"><b>Definition</b> avltree.cpp:13</div></div>
+<div class="ttc" id="aavltree_8cpp_html_a74f0cf18a0e5b832d9994e2f2d022287"><div class="ttname"><a href="#a74f0cf18a0e5b832d9994e2f2d022287">node</a></div><div class="ttdeci">struct node { int data; int height; struct node *left; struct node *right;} node</div><div class="ttdoc">for std::queue</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dee/avltree_8cpp_source.html#l00013">avltree.cpp:13</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -255,6 +279,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dee/avltree_8cpp_source.html#l00151">151</a> of file <a class="el" href="../../d8/dee/avltree_8cpp_source.html">avltree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  151</span>                                            {</div>
 <div class="line"><span class="lineno">  152</span>    <span class="keywordflow">if</span> (root) {</div>
 <div class="line"><span class="lineno">  153</span>        <a class="code hl_function" href="#a82659e9e223e520cf91d7e55c4a3f88c">deleteAllNodes</a>(root-&gt;left);</div>
@@ -262,13 +288,8 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  155</span>        <span class="keyword">delete</span> root;</div>
 <div class="line"><span class="lineno">  156</span>    }</div>
 <div class="line"><span class="lineno">  157</span>}</div>
-<div class="ttc" id="aavltree_8cpp_html_a82659e9e223e520cf91d7e55c4a3f88c"><div class="ttname"><a href="#a82659e9e223e520cf91d7e55c4a3f88c">deleteAllNodes</a></div><div class="ttdeci">void deleteAllNodes(const node *const root)</div><div class="ttdoc">calls delete on every node</div><div class="ttdef"><b>Definition</b> avltree.cpp:151</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/dee/avltree_8cpp_a82659e9e223e520cf91d7e55c4a3f88c_cgraph.svg" width="120" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aavltree_8cpp_html_a82659e9e223e520cf91d7e55c4a3f88c"><div class="ttname"><a href="#a82659e9e223e520cf91d7e55c4a3f88c">deleteAllNodes</a></div><div class="ttdeci">void deleteAllNodes(const node *const root)</div><div class="ttdoc">calls delete on every node</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dee/avltree_8cpp_source.html#l00151">avltree.cpp:151</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa29a7fdc2db1784f5a6e25025ff7cbf5" name="aa29a7fdc2db1784f5a6e25025ff7cbf5"></a>
@@ -299,6 +320,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>root of the updated tree </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dee/avltree_8cpp_source.html#l00122">122</a> of file <a class="el" href="../../d8/dee/avltree_8cpp_source.html">avltree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  122</span>                                          {</div>
 <div class="line"><span class="lineno">  123</span>    <span class="keywordflow">if</span> (root == <span class="keyword">nullptr</span>) {</div>
 <div class="line"><span class="lineno">  124</span>        <span class="keywordflow">return</span> root;</div>
@@ -323,14 +346,9 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  143</span>    <span class="comment">// Balancing Tree after deletion</span></div>
 <div class="line"><span class="lineno">  144</span>    <span class="keywordflow">return</span> root;</div>
 <div class="line"><span class="lineno">  145</span>}</div>
-<div class="ttc" id="aavltree_8cpp_html_a5fa160a678a34dd51c0aea1c0c00ed5e"><div class="ttname"><a href="#a5fa160a678a34dd51c0aea1c0c00ed5e">minValue</a></div><div class="ttdeci">node * minValue(node *root)</div><div class="ttdef"><b>Definition</b> avltree.cpp:79</div></div>
-<div class="ttc" id="aavltree_8cpp_html_aa29a7fdc2db1784f5a6e25025ff7cbf5"><div class="ttname"><a href="#aa29a7fdc2db1784f5a6e25025ff7cbf5">deleteNode</a></div><div class="ttdeci">node * deleteNode(node *root, int element)</div><div class="ttdoc">removes a given element from AVL tree</div><div class="ttdef"><b>Definition</b> avltree.cpp:122</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/dee/avltree_8cpp_aa29a7fdc2db1784f5a6e25025ff7cbf5_cgraph.svg" width="220" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aavltree_8cpp_html_a5fa160a678a34dd51c0aea1c0c00ed5e"><div class="ttname"><a href="#a5fa160a678a34dd51c0aea1c0c00ed5e">minValue</a></div><div class="ttdeci">node * minValue(node *root)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dee/avltree_8cpp_source.html#l00079">avltree.cpp:79</a></div></div>
+<div class="ttc" id="aavltree_8cpp_html_aa29a7fdc2db1784f5a6e25025ff7cbf5"><div class="ttname"><a href="#aa29a7fdc2db1784f5a6e25025ff7cbf5">deleteNode</a></div><div class="ttdeci">node * deleteNode(node *root, int element)</div><div class="ttdoc">removes a given element from AVL tree</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dee/avltree_8cpp_source.html#l00122">avltree.cpp:122</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aaa457ffec24c9643f2768e7a65e96546" name="aaa457ffec24c9643f2768e7a65e96546"></a>
@@ -354,13 +372,10 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>difference between height of left and right subtree </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   49</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#ae4a66d8b0c2b0d626aea45977e358c83">height</a>(root-&gt;left) - <a class="code hl_function" href="#ae4a66d8b0c2b0d626aea45977e358c83">height</a>(root-&gt;right); }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/dee/avltree_8cpp_aaa457ffec24c9643f2768e7a65e96546_cgraph.svg" width="322" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../d8/dee/avltree_8cpp_source.html#l00049">49</a> of file <a class="el" href="../../d8/dee/avltree_8cpp_source.html">avltree.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   49</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#ae4a66d8b0c2b0d626aea45977e358c83">height</a>(root-&gt;left) - <a class="code hl_function" href="#ae4a66d8b0c2b0d626aea45977e358c83">height</a>(root-&gt;right); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae4a66d8b0c2b0d626aea45977e358c83" name="ae4a66d8b0c2b0d626aea45977e358c83"></a>
@@ -384,19 +399,15 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>height of tree </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dee/avltree_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../d8/dee/avltree_8cpp_source.html">avltree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   38</span>                       {</div>
 <div class="line"><span class="lineno">   39</span>    <span class="keywordflow">if</span> (root == <span class="keyword">nullptr</span>) {</div>
 <div class="line"><span class="lineno">   40</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   41</span>    }</div>
-<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">return</span> 1 + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(<a class="code hl_function" href="#ae4a66d8b0c2b0d626aea45977e358c83">height</a>(root-&gt;left), <a class="code hl_function" href="#ae4a66d8b0c2b0d626aea45977e358c83">height</a>(root-&gt;right));</div>
+<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">return</span> 1 + std::max(<a class="code hl_function" href="#ae4a66d8b0c2b0d626aea45977e358c83">height</a>(root-&gt;left), <a class="code hl_function" href="#ae4a66d8b0c2b0d626aea45977e358c83">height</a>(root-&gt;right));</div>
 <div class="line"><span class="lineno">   43</span>}</div>
-<div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/dee/avltree_8cpp_ae4a66d8b0c2b0d626aea45977e358c83_cgraph.svg" width="188" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2473fe7416332495b2678ebe89652e4b" name="a2473fe7416332495b2678ebe89652e4b"></a>
@@ -427,6 +438,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>root of the updated tree </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dee/avltree_8cpp_source.html#l00092">92</a> of file <a class="el" href="../../d8/dee/avltree_8cpp_source.html">avltree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   92</span>                                   {</div>
 <div class="line"><span class="lineno">   93</span>    <span class="keywordflow">if</span> (root == <span class="keyword">nullptr</span>) {</div>
 <div class="line"><span class="lineno">   94</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a48d897353aeb6a721dbc6b6c57e035e6">createNode</a>(item);</div>
@@ -450,17 +463,12 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  112</span>    }</div>
 <div class="line"><span class="lineno">  113</span>    <span class="keywordflow">return</span> root;</div>
 <div class="line"><span class="lineno">  114</span>}</div>
-<div class="ttc" id="aavltree_8cpp_html_a2473fe7416332495b2678ebe89652e4b"><div class="ttname"><a href="#a2473fe7416332495b2678ebe89652e4b">insert</a></div><div class="ttdeci">node * insert(node *root, int item)</div><div class="ttdoc">inserts a new element into AVL tree</div><div class="ttdef"><b>Definition</b> avltree.cpp:92</div></div>
-<div class="ttc" id="aavltree_8cpp_html_a473eee1803e4e44a54d685e4b0eef5a6"><div class="ttname"><a href="#a473eee1803e4e44a54d685e4b0eef5a6">leftRotate</a></div><div class="ttdeci">node * leftRotate(node *root)</div><div class="ttdef"><b>Definition</b> avltree.cpp:67</div></div>
-<div class="ttc" id="aavltree_8cpp_html_a48d897353aeb6a721dbc6b6c57e035e6"><div class="ttname"><a href="#a48d897353aeb6a721dbc6b6c57e035e6">createNode</a></div><div class="ttdeci">node * createNode(int data)</div><div class="ttdoc">creates and returns a new node</div><div class="ttdef"><b>Definition</b> avltree.cpp:25</div></div>
-<div class="ttc" id="aavltree_8cpp_html_aaa457ffec24c9643f2768e7a65e96546"><div class="ttname"><a href="#aaa457ffec24c9643f2768e7a65e96546">getBalance</a></div><div class="ttdeci">int getBalance(node *root)</div><div class="ttdef"><b>Definition</b> avltree.cpp:49</div></div>
-<div class="ttc" id="aavltree_8cpp_html_adfc1d482a564c041756719667b955b8c"><div class="ttname"><a href="#adfc1d482a564c041756719667b955b8c">rightRotate</a></div><div class="ttdeci">node * rightRotate(node *root)</div><div class="ttdef"><b>Definition</b> avltree.cpp:55</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/dee/avltree_8cpp_a2473fe7416332495b2678ebe89652e4b_cgraph.svg" width="426" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aavltree_8cpp_html_a2473fe7416332495b2678ebe89652e4b"><div class="ttname"><a href="#a2473fe7416332495b2678ebe89652e4b">insert</a></div><div class="ttdeci">node * insert(node *root, int item)</div><div class="ttdoc">inserts a new element into AVL tree</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dee/avltree_8cpp_source.html#l00092">avltree.cpp:92</a></div></div>
+<div class="ttc" id="aavltree_8cpp_html_a473eee1803e4e44a54d685e4b0eef5a6"><div class="ttname"><a href="#a473eee1803e4e44a54d685e4b0eef5a6">leftRotate</a></div><div class="ttdeci">node * leftRotate(node *root)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dee/avltree_8cpp_source.html#l00067">avltree.cpp:67</a></div></div>
+<div class="ttc" id="aavltree_8cpp_html_a48d897353aeb6a721dbc6b6c57e035e6"><div class="ttname"><a href="#a48d897353aeb6a721dbc6b6c57e035e6">createNode</a></div><div class="ttdeci">node * createNode(int data)</div><div class="ttdoc">creates and returns a new node</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dee/avltree_8cpp_source.html#l00025">avltree.cpp:25</a></div></div>
+<div class="ttc" id="aavltree_8cpp_html_aaa457ffec24c9643f2768e7a65e96546"><div class="ttname"><a href="#aaa457ffec24c9643f2768e7a65e96546">getBalance</a></div><div class="ttdeci">int getBalance(node *root)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dee/avltree_8cpp_source.html#l00049">avltree.cpp:49</a></div></div>
+<div class="ttc" id="aavltree_8cpp_html_adfc1d482a564c041756719667b955b8c"><div class="ttname"><a href="#adfc1d482a564c041756719667b955b8c">rightRotate</a></div><div class="ttdeci">node * rightRotate(node *root)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dee/avltree_8cpp_source.html#l00055">avltree.cpp:55</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a473eee1803e4e44a54d685e4b0eef5a6" name="a473eee1803e4e44a54d685e4b0eef5a6"></a>
@@ -484,6 +492,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>node after left rotation </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dee/avltree_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../d8/dee/avltree_8cpp_source.html">avltree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   67</span>                             {</div>
 <div class="line"><span class="lineno">   68</span>    <a class="code hl_class" href="../../d5/da1/structnode.html">node</a> *t = root-&gt;right;</div>
 <div class="line"><span class="lineno">   69</span>    <a class="code hl_class" href="../../d5/da1/structnode.html">node</a> *u = t-&gt;left;</div>
@@ -516,12 +526,14 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dee/avltree_8cpp_source.html#l00163">163</a> of file <a class="el" href="../../d8/dee/avltree_8cpp_source.html">avltree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  163</span>                            {</div>
-<div class="line"><span class="lineno">  164</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue&lt;node *&gt;</a> q;</div>
+<div class="line"><span class="lineno">  164</span>    std::queue&lt;node *&gt; q;</div>
 <div class="line"><span class="lineno">  165</span>    q.push(root);</div>
 <div class="line"><span class="lineno">  166</span>    <span class="keywordflow">while</span> (!q.empty()) {</div>
 <div class="line"><span class="lineno">  167</span>        root = q.front();</div>
-<div class="line"><span class="lineno">  168</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; root-&gt;data &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">  168</span>        std::cout &lt;&lt; root-&gt;data &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
 <div class="line"><span class="lineno">  169</span>        q.pop();</div>
 <div class="line"><span class="lineno">  170</span>        <span class="keywordflow">if</span> (root-&gt;left) {</div>
 <div class="line"><span class="lineno">  171</span>            q.push(root-&gt;left);</div>
@@ -531,8 +543,6 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  175</span>        }</div>
 <div class="line"><span class="lineno">  176</span>    }</div>
 <div class="line"><span class="lineno">  177</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aqueue_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -553,29 +563,26 @@ Here is the call graph for this function:</div>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dee/avltree_8cpp_source.html#l00183">183</a> of file <a class="el" href="../../d8/dee/avltree_8cpp_source.html">avltree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  183</span>           {</div>
 <div class="line"><span class="lineno">  184</span>    <span class="comment">// Testing AVL Tree</span></div>
 <div class="line"><span class="lineno">  185</span>    <a class="code hl_class" href="../../d5/da1/structnode.html">node</a> *root = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  186</span>    <span class="keywordtype">int</span> i = 0;</div>
 <div class="line"><span class="lineno">  187</span>    <span class="keywordflow">for</span> (i = 1; i &lt;= 7; i++) root = <a class="code hl_function" href="#a2473fe7416332495b2678ebe89652e4b">insert</a>(root, i);</div>
-<div class="line"><span class="lineno">  188</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;LevelOrder: &quot;</span>;</div>
+<div class="line"><span class="lineno">  188</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;LevelOrder: &quot;</span>;</div>
 <div class="line"><span class="lineno">  189</span>    <a class="code hl_function" href="#ae197eb50188fb761346952b9b5f6be59">levelOrder</a>(root);</div>
 <div class="line"><span class="lineno">  190</span>    root = <a class="code hl_function" href="#aa29a7fdc2db1784f5a6e25025ff7cbf5">deleteNode</a>(root, 1);  <span class="comment">// Deleting key with value 1</span></div>
-<div class="line"><span class="lineno">  191</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nLevelOrder: &quot;</span>;</div>
+<div class="line"><span class="lineno">  191</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nLevelOrder: &quot;</span>;</div>
 <div class="line"><span class="lineno">  192</span>    <a class="code hl_function" href="#ae197eb50188fb761346952b9b5f6be59">levelOrder</a>(root);</div>
 <div class="line"><span class="lineno">  193</span>    root = <a class="code hl_function" href="#aa29a7fdc2db1784f5a6e25025ff7cbf5">deleteNode</a>(root, 4);  <span class="comment">// Deletin key with value 4</span></div>
-<div class="line"><span class="lineno">  194</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nLevelOrder: &quot;</span>;</div>
+<div class="line"><span class="lineno">  194</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nLevelOrder: &quot;</span>;</div>
 <div class="line"><span class="lineno">  195</span>    <a class="code hl_function" href="#ae197eb50188fb761346952b9b5f6be59">levelOrder</a>(root);</div>
 <div class="line"><span class="lineno">  196</span>    <a class="code hl_function" href="#a82659e9e223e520cf91d7e55c4a3f88c">deleteAllNodes</a>(root);</div>
 <div class="line"><span class="lineno">  197</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  198</span>}</div>
-<div class="ttc" id="aavltree_8cpp_html_ae197eb50188fb761346952b9b5f6be59"><div class="ttname"><a href="#ae197eb50188fb761346952b9b5f6be59">levelOrder</a></div><div class="ttdeci">void levelOrder(node *root)</div><div class="ttdoc">prints given tree in the LevelOrder</div><div class="ttdef"><b>Definition</b> avltree.cpp:163</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/dee/avltree_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="579" height="306"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aavltree_8cpp_html_ae197eb50188fb761346952b9b5f6be59"><div class="ttname"><a href="#ae197eb50188fb761346952b9b5f6be59">levelOrder</a></div><div class="ttdeci">void levelOrder(node *root)</div><div class="ttdoc">prints given tree in the LevelOrder</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dee/avltree_8cpp_source.html#l00163">avltree.cpp:163</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5fa160a678a34dd51c0aea1c0c00ed5e" name="a5fa160a678a34dd51c0aea1c0c00ed5e"></a>
@@ -599,18 +606,15 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>node with minimum value in the tree </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dee/avltree_8cpp_source.html#l00079">79</a> of file <a class="el" href="../../d8/dee/avltree_8cpp_source.html">avltree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   79</span>                           {</div>
 <div class="line"><span class="lineno">   80</span>    <span class="keywordflow">if</span> (root-&gt;left == <span class="keyword">nullptr</span>) {</div>
 <div class="line"><span class="lineno">   81</span>        <span class="keywordflow">return</span> root;</div>
 <div class="line"><span class="lineno">   82</span>    }</div>
 <div class="line"><span class="lineno">   83</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="#a5fa160a678a34dd51c0aea1c0c00ed5e">minValue</a>(root-&gt;left);</div>
 <div class="line"><span class="lineno">   84</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/dee/avltree_8cpp_a5fa160a678a34dd51c0aea1c0c00ed5e_cgraph.svg" width="86" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adfc1d482a564c041756719667b955b8c" name="adfc1d482a564c041756719667b955b8c"></a>
@@ -634,6 +638,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>node after right rotation </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dee/avltree_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../d8/dee/avltree_8cpp_source.html">avltree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   55</span>                              {</div>
 <div class="line"><span class="lineno">   56</span>    <a class="code hl_class" href="../../d5/da1/structnode.html">node</a> *t = root-&gt;left;</div>
 <div class="line"><span class="lineno">   57</span>    <a class="code hl_class" href="../../d5/da1/structnode.html">node</a> *u = t-&gt;right;</div>

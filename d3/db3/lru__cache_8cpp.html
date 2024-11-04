@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: others/lru_cache.cpp File Reference</title>
+<title>TheAlgorithms/C++: others/lru_cache.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -124,7 +141,9 @@ Include dependency graph for lru_cache.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d6d/lru__cache_8cpp__incl.svg" width="452" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d3/db3/lru__cache_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html">others::lru_cache::LRUCache</a></td></tr>
@@ -194,6 +213,8 @@ Data Structure used</h2>
 <li>If present, we shift that page from its current location to beginning of the cache and update the address in hash map for that page.</li>
 </ul>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/foo290" target="_blank">Nitin Sharma</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d3/db3/lru__cache_8cpp_source.html">lru_cache.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a24d21a345ed06f7fba6919718cf3e058" name="a24d21a345ed06f7fba6919718cf3e058"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a24d21a345ed06f7fba6919718cf3e058">&#9670;&#160;</a></span>log()</h2>
@@ -220,18 +241,13 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/db3/lru__cache_8cpp_source.html#l00149">149</a> of file <a class="el" href="../../d3/db3/lru__cache_8cpp_source.html">lru_cache.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  149</span>                {</div>
 <div class="line"><span class="lineno">  150</span>    <span class="comment">// It&#39;s just to avoid writing cout and endl</span></div>
-<div class="line"><span class="lineno">  151</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;[TESTS] : ---&gt; &quot;</span> &lt;&lt; msg &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  151</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;[TESTS] : ---&gt; &quot;</span> &lt;&lt; msg &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  152</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/db3/lru__cache_8cpp_a24d21a345ed06f7fba6919718cf3e058_cgraph.svg" width="227" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -251,6 +267,8 @@ Here is the call graph for this function:</div>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/db3/lru__cache_8cpp_source.html#l00252">252</a> of file <a class="el" href="../../d3/db3/lru__cache_8cpp_source.html">lru_cache.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  252</span>           {</div>
 <div class="line"><span class="lineno">  253</span>    <a class="code hl_function" href="#a6a3be6d8871b1f5dc03688da8f3ee9e6">lru_tests::run_tests</a>();</div>
 <div class="line"><span class="lineno">  254</span> </div>
@@ -265,18 +283,13 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  263</span> </div>
 <div class="line"><span class="lineno">  264</span>    cache.display();</div>
 <div class="line"><span class="lineno">  265</span> </div>
-<div class="line"><span class="lineno">  266</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Hits: &quot;</span> &lt;&lt; cache.getHits()</div>
-<div class="line"><span class="lineno">  267</span>              &lt;&lt; <span class="stringliteral">&quot; Miss: &quot;</span> &lt;&lt; cache.getPageFault() &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  266</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Hits: &quot;</span> &lt;&lt; cache.getHits()</div>
+<div class="line"><span class="lineno">  267</span>              &lt;&lt; <span class="stringliteral">&quot; Miss: &quot;</span> &lt;&lt; cache.getPageFault() &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  268</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  269</span>}</div>
-<div class="ttc" id="aclassothers_1_1lru__cache_1_1_l_r_u_cache_html"><div class="ttname"><a href="../../d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html">others::lru_cache::LRUCache</a></div><div class="ttdoc">LRU cache class.</div><div class="ttdef"><b>Definition</b> lru_cache.cpp:68</div></div>
-<div class="ttc" id="alru__cache_8cpp_html_a6a3be6d8871b1f5dc03688da8f3ee9e6"><div class="ttname"><a href="#a6a3be6d8871b1f5dc03688da8f3ee9e6">lru_tests::run_tests</a></div><div class="ttdeci">static void run_tests()</div><div class="ttdoc">A function to invoke all test cases.</div><div class="ttdef"><b>Definition</b> lru_cache.cpp:239</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/db3/lru__cache_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="494" height="520"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassothers_1_1lru__cache_1_1_l_r_u_cache_html"><div class="ttname"><a href="../../d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html">others::lru_cache::LRUCache</a></div><div class="ttdoc">LRU cache class.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/db3/lru__cache_8cpp_source.html#l00068">lru_cache.cpp:68</a></div></div>
+<div class="ttc" id="alru__cache_8cpp_html_a6a3be6d8871b1f5dc03688da8f3ee9e6"><div class="ttname"><a href="#a6a3be6d8871b1f5dc03688da8f3ee9e6">lru_tests::run_tests</a></div><div class="ttdeci">static void run_tests()</div><div class="ttdoc">A function to invoke all test cases.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/db3/lru__cache_8cpp_source.html#l00239">lru_cache.cpp:239</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6a3be6d8871b1f5dc03688da8f3ee9e6" name="a6a3be6d8871b1f5dc03688da8f3ee9e6"></a>
@@ -304,23 +317,20 @@ Here is the call graph for this function:</div>
 
 <p>A function to invoke all test cases. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/db3/lru__cache_8cpp_source.html#l00239">239</a> of file <a class="el" href="../../d3/db3/lru__cache_8cpp_source.html">lru_cache.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  239</span>                        {</div>
 <div class="line"><span class="lineno">  240</span>    <a class="code hl_function" href="../../d2/de9/heavy__light__decomposition_8cpp.html#a34b8683a2b429de5cce57e6d733ec817">test_1</a>();</div>
 <div class="line"><span class="lineno">  241</span>    <a class="code hl_function" href="../../d2/de9/heavy__light__decomposition_8cpp.html#a458410412185a5f09199deaff7157a8d">test_2</a>();</div>
 <div class="line"><span class="lineno">  242</span>    <a class="code hl_function" href="../../d2/de9/heavy__light__decomposition_8cpp.html#af31ec5409537703d9c8a47350386b32a">test_3</a>();</div>
-<div class="line"><span class="lineno">  243</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/log.html">log</a>(<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><span class="lineno">  244</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/log.html">log</a>(<span class="stringliteral">&quot;TESTS COMPLETED!&quot;</span>);</div>
+<div class="line"><span class="lineno">  243</span>    <a class="code hl_function" href="#a24d21a345ed06f7fba6919718cf3e058">log</a>(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  244</span>    <a class="code hl_function" href="#a24d21a345ed06f7fba6919718cf3e058">log</a>(<span class="stringliteral">&quot;TESTS COMPLETED!&quot;</span>);</div>
 <div class="line"><span class="lineno">  245</span>}</div>
-<div class="ttc" id="aheavy__light__decomposition_8cpp_html_a34b8683a2b429de5cce57e6d733ec817"><div class="ttname"><a href="../../d2/de9/heavy__light__decomposition_8cpp.html#a34b8683a2b429de5cce57e6d733ec817">test_1</a></div><div class="ttdeci">static void test_1()</div><div class="ttdef"><b>Definition</b> heavy_light_decomposition.cpp:505</div></div>
-<div class="ttc" id="aheavy__light__decomposition_8cpp_html_a458410412185a5f09199deaff7157a8d"><div class="ttname"><a href="../../d2/de9/heavy__light__decomposition_8cpp.html#a458410412185a5f09199deaff7157a8d">test_2</a></div><div class="ttdeci">static void test_2()</div><div class="ttdef"><b>Definition</b> heavy_light_decomposition.cpp:549</div></div>
-<div class="ttc" id="aheavy__light__decomposition_8cpp_html_af31ec5409537703d9c8a47350386b32a"><div class="ttname"><a href="../../d2/de9/heavy__light__decomposition_8cpp.html#af31ec5409537703d9c8a47350386b32a">test_3</a></div><div class="ttdeci">static void test_3()</div><div class="ttdef"><b>Definition</b> heavy_light_decomposition.cpp:592</div></div>
-<div class="ttc" id="alog_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/log.html">std::log</a></div><div class="ttdeci">T log(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d3/db3/lru__cache_8cpp_a6a3be6d8871b1f5dc03688da8f3ee9e6_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="aheavy__light__decomposition_8cpp_html_a34b8683a2b429de5cce57e6d733ec817"><div class="ttname"><a href="../../d2/de9/heavy__light__decomposition_8cpp.html#a34b8683a2b429de5cce57e6d733ec817">test_1</a></div><div class="ttdeci">static void test_1()</div><div class="ttdef"><b>Definition</b> <a href="../../d2/de9/heavy__light__decomposition_8cpp_source.html#l00505">heavy_light_decomposition.cpp:505</a></div></div>
+<div class="ttc" id="aheavy__light__decomposition_8cpp_html_a458410412185a5f09199deaff7157a8d"><div class="ttname"><a href="../../d2/de9/heavy__light__decomposition_8cpp.html#a458410412185a5f09199deaff7157a8d">test_2</a></div><div class="ttdeci">static void test_2()</div><div class="ttdef"><b>Definition</b> <a href="../../d2/de9/heavy__light__decomposition_8cpp_source.html#l00549">heavy_light_decomposition.cpp:549</a></div></div>
+<div class="ttc" id="aheavy__light__decomposition_8cpp_html_af31ec5409537703d9c8a47350386b32a"><div class="ttname"><a href="../../d2/de9/heavy__light__decomposition_8cpp.html#af31ec5409537703d9c8a47350386b32a">test_3</a></div><div class="ttdeci">static void test_3()</div><div class="ttdef"><b>Definition</b> <a href="../../d2/de9/heavy__light__decomposition_8cpp_source.html#l00592">heavy_light_decomposition.cpp:592</a></div></div>
+<div class="ttc" id="alru__cache_8cpp_html_a24d21a345ed06f7fba6919718cf3e058"><div class="ttname"><a href="#a24d21a345ed06f7fba6919718cf3e058">lru_tests::log</a></div><div class="ttdeci">void log(T msg)</div><div class="ttdoc">A function to print given message on console.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/db3/lru__cache_8cpp_source.html#l00149">lru_cache.cpp:149</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6401e8f2d41d8cc9cd0e52ab381608d4" name="a6401e8f2d41d8cc9cd0e52ab381608d4"></a>
@@ -348,11 +358,13 @@ Here is the call graph for this function:</div>
 
 <p>A simple test case The assert statement will check expected hist and miss to resultant hits and miss. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/db3/lru__cache_8cpp_source.html#l00160">160</a> of file <a class="el" href="../../d3/db3/lru__cache_8cpp_source.html">lru_cache.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  160</span>                     {</div>
 <div class="line"><span class="lineno">  161</span>    uint64_t expected_hits = 2;</div>
 <div class="line"><span class="lineno">  162</span>    uint64_t expected_pageFault = 4;</div>
 <div class="line"><span class="lineno">  163</span> </div>
-<div class="line"><span class="lineno">  164</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/log.html">log</a>(<span class="stringliteral">&quot;Running Test-1...&quot;</span>);</div>
+<div class="line"><span class="lineno">  164</span>    <a class="code hl_function" href="#a24d21a345ed06f7fba6919718cf3e058">log</a>(<span class="stringliteral">&quot;Running Test-1...&quot;</span>);</div>
 <div class="line"><span class="lineno">  165</span> </div>
 <div class="line"><span class="lineno">  166</span>    <a class="code hl_class" href="../../d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html">others::lru_cache::LRUCache</a> cache(4);</div>
 <div class="line"><span class="lineno">  167</span>    cache.refer(1);</div>
@@ -362,18 +374,13 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  171</span>    cache.refer(4);</div>
 <div class="line"><span class="lineno">  172</span>    cache.refer(5);</div>
 <div class="line"><span class="lineno">  173</span> </div>
-<div class="line"><span class="lineno">  174</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/log.html">log</a>(<span class="stringliteral">&quot;Checking assert statement...&quot;</span>);</div>
+<div class="line"><span class="lineno">  174</span>    <a class="code hl_function" href="#a24d21a345ed06f7fba6919718cf3e058">log</a>(<span class="stringliteral">&quot;Checking assert statement...&quot;</span>);</div>
 <div class="line"><span class="lineno">  175</span>    assert(cache.getHits() == expected_hits &amp;&amp;</div>
 <div class="line"><span class="lineno">  176</span>           cache.getPageFault() == expected_pageFault);</div>
-<div class="line"><span class="lineno">  177</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/log.html">log</a>(<span class="stringliteral">&quot;Assert successful!&quot;</span>);</div>
-<div class="line"><span class="lineno">  178</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/log.html">log</a>(<span class="stringliteral">&quot;Test-1 complete!&quot;</span>);</div>
+<div class="line"><span class="lineno">  177</span>    <a class="code hl_function" href="#a24d21a345ed06f7fba6919718cf3e058">log</a>(<span class="stringliteral">&quot;Assert successful!&quot;</span>);</div>
+<div class="line"><span class="lineno">  178</span>    <a class="code hl_function" href="#a24d21a345ed06f7fba6919718cf3e058">log</a>(<span class="stringliteral">&quot;Test-1 complete!&quot;</span>);</div>
 <div class="line"><span class="lineno">  179</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/db3/lru__cache_8cpp_a6401e8f2d41d8cc9cd0e52ab381608d4_cgraph.svg" width="559" height="463"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4b02e288a407876a8d6024f98a2a25ec" name="a4b02e288a407876a8d6024f98a2a25ec"></a>
@@ -401,11 +408,13 @@ Here is the call graph for this function:</div>
 
 <p>A test case contains hits more than cache size The assert statement will check expected hist and miss to resultant hits and miss. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/db3/lru__cache_8cpp_source.html#l00187">187</a> of file <a class="el" href="../../d3/db3/lru__cache_8cpp_source.html">lru_cache.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  187</span>                     {</div>
 <div class="line"><span class="lineno">  188</span>    uint64_t expected_hits = 4;</div>
 <div class="line"><span class="lineno">  189</span>    uint64_t expected_pageFault = 2;</div>
 <div class="line"><span class="lineno">  190</span> </div>
-<div class="line"><span class="lineno">  191</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/log.html">log</a>(<span class="stringliteral">&quot;Running Test-2...&quot;</span>);</div>
+<div class="line"><span class="lineno">  191</span>    <a class="code hl_function" href="#a24d21a345ed06f7fba6919718cf3e058">log</a>(<span class="stringliteral">&quot;Running Test-2...&quot;</span>);</div>
 <div class="line"><span class="lineno">  192</span> </div>
 <div class="line"><span class="lineno">  193</span>    <a class="code hl_class" href="../../d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html">others::lru_cache::LRUCache</a> cache(4);</div>
 <div class="line"><span class="lineno">  194</span>    cache.refer(1);</div>
@@ -415,18 +424,13 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  198</span>    cache.refer(1);</div>
 <div class="line"><span class="lineno">  199</span>    cache.refer(5);</div>
 <div class="line"><span class="lineno">  200</span> </div>
-<div class="line"><span class="lineno">  201</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/log.html">log</a>(<span class="stringliteral">&quot;Checking assert statement...&quot;</span>);</div>
+<div class="line"><span class="lineno">  201</span>    <a class="code hl_function" href="#a24d21a345ed06f7fba6919718cf3e058">log</a>(<span class="stringliteral">&quot;Checking assert statement...&quot;</span>);</div>
 <div class="line"><span class="lineno">  202</span>    assert(cache.getHits() == expected_hits &amp;&amp;</div>
 <div class="line"><span class="lineno">  203</span>           cache.getPageFault() == expected_pageFault);</div>
-<div class="line"><span class="lineno">  204</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/log.html">log</a>(<span class="stringliteral">&quot;Assert successful!&quot;</span>);</div>
-<div class="line"><span class="lineno">  205</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/log.html">log</a>(<span class="stringliteral">&quot;Test-2 complete!&quot;</span>);</div>
+<div class="line"><span class="lineno">  204</span>    <a class="code hl_function" href="#a24d21a345ed06f7fba6919718cf3e058">log</a>(<span class="stringliteral">&quot;Assert successful!&quot;</span>);</div>
+<div class="line"><span class="lineno">  205</span>    <a class="code hl_function" href="#a24d21a345ed06f7fba6919718cf3e058">log</a>(<span class="stringliteral">&quot;Test-2 complete!&quot;</span>);</div>
 <div class="line"><span class="lineno">  206</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/db3/lru__cache_8cpp_a4b02e288a407876a8d6024f98a2a25ec_cgraph.svg" width="559" height="463"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a01ec21fc91ddafd964ae2035ba7892c0" name="a01ec21fc91ddafd964ae2035ba7892c0"></a>
@@ -454,11 +458,13 @@ Here is the call graph for this function:</div>
 
 <p>A simple test case The assert statement will check expected hist and miss to resultant hits and miss. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/db3/lru__cache_8cpp_source.html#l00214">214</a> of file <a class="el" href="../../d3/db3/lru__cache_8cpp_source.html">lru_cache.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  214</span>                     {</div>
 <div class="line"><span class="lineno">  215</span>    uint64_t expected_hits = 1;</div>
 <div class="line"><span class="lineno">  216</span>    uint64_t expected_pageFault = 5;</div>
 <div class="line"><span class="lineno">  217</span> </div>
-<div class="line"><span class="lineno">  218</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/log.html">log</a>(<span class="stringliteral">&quot;Running Test-3...&quot;</span>);</div>
+<div class="line"><span class="lineno">  218</span>    <a class="code hl_function" href="#a24d21a345ed06f7fba6919718cf3e058">log</a>(<span class="stringliteral">&quot;Running Test-3...&quot;</span>);</div>
 <div class="line"><span class="lineno">  219</span> </div>
 <div class="line"><span class="lineno">  220</span>    <a class="code hl_class" href="../../d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html">others::lru_cache::LRUCache</a> cache(4);</div>
 <div class="line"><span class="lineno">  221</span>    cache.refer(1);</div>
@@ -468,18 +474,13 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  225</span>    cache.refer(5);</div>
 <div class="line"><span class="lineno">  226</span>    cache.refer(5);</div>
 <div class="line"><span class="lineno">  227</span> </div>
-<div class="line"><span class="lineno">  228</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/log.html">log</a>(<span class="stringliteral">&quot;Checking assert statement...&quot;</span>);</div>
+<div class="line"><span class="lineno">  228</span>    <a class="code hl_function" href="#a24d21a345ed06f7fba6919718cf3e058">log</a>(<span class="stringliteral">&quot;Checking assert statement...&quot;</span>);</div>
 <div class="line"><span class="lineno">  229</span>    assert(cache.getHits() == expected_hits &amp;&amp;</div>
 <div class="line"><span class="lineno">  230</span>           cache.getPageFault() == expected_pageFault);</div>
-<div class="line"><span class="lineno">  231</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/log.html">log</a>(<span class="stringliteral">&quot;Assert successful!&quot;</span>);</div>
-<div class="line"><span class="lineno">  232</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/log.html">log</a>(<span class="stringliteral">&quot;Test-3 complete!&quot;</span>);</div>
+<div class="line"><span class="lineno">  231</span>    <a class="code hl_function" href="#a24d21a345ed06f7fba6919718cf3e058">log</a>(<span class="stringliteral">&quot;Assert successful!&quot;</span>);</div>
+<div class="line"><span class="lineno">  232</span>    <a class="code hl_function" href="#a24d21a345ed06f7fba6919718cf3e058">log</a>(<span class="stringliteral">&quot;Test-3 complete!&quot;</span>);</div>
 <div class="line"><span class="lineno">  233</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/db3/lru__cache_8cpp_a01ec21fc91ddafd964ae2035ba7892c0_cgraph.svg" width="559" height="463"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

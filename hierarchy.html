@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: Class Hierarchy</title>
+<title>TheAlgorithms/C++: Class Hierarchy</title>
+<link rel="icon" href="favicon.svg" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -213,7 +230,7 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 <tr id="row_97_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d2/dc8/classdata__structures_1_1_stack.html" target="_self">data_structures::Stack&lt; T &gt;</a></td><td class="desc">Class representation of a stack </td></tr>
 <tr id="row_98_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html" target="_self">data_structures::stack_using_queue::Stack</a></td><td class="desc"><a class="el" href="db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html" title="Stack Class implementation for basic methods of Stack Data Structure.">Stack</a> Class implementation for basic methods of <a class="el" href="db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html" title="Stack Class implementation for basic methods of Stack Data Structure.">Stack</a> Data Structure </td></tr>
 <tr id="row_99_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d5/d8a/classothers_1_1postfix__expression_1_1_stack.html" target="_self">others::postfix_expression::Stack</a></td><td class="desc">Creates an array to be used as stack for storing values </td></tr>
-<tr id="row_100_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d1/dc2/classstack.html" target="_self">stack&lt; ValueType &gt;</a></td><td class="desc">For <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a> </td></tr>
+<tr id="row_100_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d1/dc2/classstack.html" target="_self">stack&lt; ValueType &gt;</a></td><td class="desc">For std::invalid_argument </td></tr>
 <tr id="row_101_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d2/dc4/classstack__linked_list.html" target="_self">stack_linkedList</a></td><td class="desc"></td></tr>
 <tr id="row_102_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d7/d7c/classstatistics_1_1stats__computer1.html" target="_self">statistics::stats_computer1&lt; T &gt;</a></td><td class="desc"></td></tr>
 <tr id="row_103_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d8/dab/classstatistics_1_1stats__computer2.html" target="_self">statistics::stats_computer2&lt; T &gt;</a></td><td class="desc"></td></tr>
@@ -229,7 +246,7 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 <tr id="row_112_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="dd/d2f/class_trie.html" target="_self">Trie</a></td><td class="desc"></td></tr>
 <tr id="row_113_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d0/d3e/classdata__structures_1_1trie.html" target="_self">data_structures::trie</a></td><td class="desc"><a href="https://en.wikipedia.org/wiki/Trie" target="_blank">Trie</a> implementation for small-case English alphabets <code>a-z</code> </td></tr>
 <tr id="row_114_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="de/d48/struct_trie_1_1_trie_node.html" target="_self">Trie::TrieNode</a></td><td class="desc"></td></tr>
-<tr id="row_115_" class="odd"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_115_" class="arrow" onclick="dynsection.toggleFolder('115_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integral_constant.html">std::true_type</a>&#160;[external]</td><td class="desc"></td></tr>
+<tr id="row_115_" class="odd"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_115_" class="arrow" onclick="dynsection.toggleFolder('115_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><b>std::true_type</b></td><td class="desc"></td></tr>
 <tr id="row_115_0_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d2/dfc/structstd_1_1is__arithmetic_3_01uint128__t_01_4.html" target="_self">std::is_arithmetic&lt; uint128_t &gt;</a></td><td class="desc"></td></tr>
 <tr id="row_115_1_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="dc/d6d/structstd_1_1is__arithmetic_3_01uint256__t_01_4.html" target="_self">std::is_arithmetic&lt; uint256_t &gt;</a></td><td class="desc"></td></tr>
 <tr id="row_115_2_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d2/dd4/structstd_1_1is__integral_3_01uint128__t_01_4.html" target="_self">std::is_integral&lt; uint128_t &gt;</a></td><td class="desc"></td></tr>

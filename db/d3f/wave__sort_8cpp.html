@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: sorting/wave_sort.cpp File Reference</title>
+<title>TheAlgorithms/C++: sorting/wave_sort.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -122,7 +139,9 @@ Include dependency graph for wave_sort.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d79/wave__sort_8cpp__incl.svg" width="350" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../db/d3f/wave__sort_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html">sorting</a></td></tr>
@@ -135,7 +154,7 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a7d4f243b9dc13ace4ef77e30dbc56f12" id="r_a7d4f243b9dc13ace4ef77e30dbc56f12"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a7d4f243b9dc13ace4ef77e30dbc56f12"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7d4f243b9dc13ace4ef77e30dbc56f12">sorting::wave_sort::waveSort</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;in_arr, int64_t n)</td></tr>
+<tr class="memitem:a7d4f243b9dc13ace4ef77e30dbc56f12"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7d4f243b9dc13ace4ef77e30dbc56f12">sorting::wave_sort::waveSort</a> (const std::vector&lt; T &gt; &amp;in_arr, int64_t n)</td></tr>
 <tr class="memdesc:a7d4f243b9dc13ace4ef77e30dbc56f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main function implements that implements the Wave Sort algorithm.  <br /></td></tr>
 <tr class="separator:a7d4f243b9dc13ace4ef77e30dbc56f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
@@ -148,6 +167,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of the <a href="https://www.geeksforgeeks.org/sort-array-wave-form-2/" target="_blank">Wave sort</a> algorithm. </p>
 <p>Wave Sort is a sorting algorithm that works in \(O(nlogn)\) time assuming the sort function used works in \(O(nlogn)\) time. </p><dl class="section author"><dt>Author</dt><dd><a href="https://github.com/Swastyy" target="_blank">Swastika Gupta</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../db/d3f/wave__sort_8cpp_source.html">wave_sort.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -166,17 +187,14 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d3f/wave__sort_8cpp_source.html#l00091">91</a> of file <a class="el" href="../../db/d3f/wave__sort_8cpp_source.html">wave_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   91</span>           {</div>
 <div class="line"><span class="lineno">   92</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
 <div class="line"><span class="lineno">   93</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   94</span>}</div>
-<div class="ttc" id="awave__sort_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> wave_sort.cpp:53</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d3f/wave__sort_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="271" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="awave__sort_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d3f/wave__sort_8cpp_source.html#l00053">wave_sort.cpp:53</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -204,49 +222,43 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d3f/wave__sort_8cpp_source.html#l00053">53</a> of file <a class="el" href="../../db/d3f/wave__sort_8cpp_source.html">wave_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   53</span>                   {</div>
 <div class="line"><span class="lineno">   54</span>    <span class="comment">// [10, 90, 49, 2, 1, 5, 23] return [2, 1, 10, 5, 49, 23, 90]</span></div>
-<div class="line"><span class="lineno">   55</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> array1 = {10, 90, 49, 2, 1, 5, 23};</div>
-<div class="line"><span class="lineno">   56</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1... &quot;</span>;</div>
-<div class="line"><span class="lineno">   57</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> arr1 = <a class="code hl_function" href="#a7d4f243b9dc13ace4ef77e30dbc56f12">sorting::wave_sort::waveSort</a>(array1, 7);</div>
-<div class="line"><span class="lineno">   58</span>    <span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> o1 = {2, 1, 10, 5, 49, 23, 90};</div>
+<div class="line"><span class="lineno">   55</span>    std::vector&lt;int64_t&gt; array1 = {10, 90, 49, 2, 1, 5, 23};</div>
+<div class="line"><span class="lineno">   56</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 1... &quot;</span>;</div>
+<div class="line"><span class="lineno">   57</span>    std::vector&lt;int64_t&gt; arr1 = <a class="code hl_function" href="#a7d4f243b9dc13ace4ef77e30dbc56f12">sorting::wave_sort::waveSort</a>(array1, 7);</div>
+<div class="line"><span class="lineno">   58</span>    <span class="keyword">const</span> std::vector&lt;int64_t&gt; o1 = {2, 1, 10, 5, 49, 23, 90};</div>
 <div class="line"><span class="lineno">   59</span>    assert(arr1 == o1);</div>
-<div class="line"><span class="lineno">   60</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   60</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   61</span> </div>
 <div class="line"><span class="lineno">   62</span>    <span class="comment">// [1, 3, 4, 2, 7, 8] return [2, 1, 4, 3, 8, 7]</span></div>
-<div class="line"><span class="lineno">   63</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> array2 = {1, 3, 4, 2, 7, 8};</div>
-<div class="line"><span class="lineno">   64</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2... &quot;</span>;</div>
-<div class="line"><span class="lineno">   65</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> arr2 = <a class="code hl_function" href="#a7d4f243b9dc13ace4ef77e30dbc56f12">sorting::wave_sort::waveSort</a>(array2, 6);</div>
-<div class="line"><span class="lineno">   66</span>    <span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> o2 = {2, 1, 4, 3, 8, 7};</div>
+<div class="line"><span class="lineno">   63</span>    std::vector&lt;int64_t&gt; array2 = {1, 3, 4, 2, 7, 8};</div>
+<div class="line"><span class="lineno">   64</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 2... &quot;</span>;</div>
+<div class="line"><span class="lineno">   65</span>    std::vector&lt;int64_t&gt; arr2 = <a class="code hl_function" href="#a7d4f243b9dc13ace4ef77e30dbc56f12">sorting::wave_sort::waveSort</a>(array2, 6);</div>
+<div class="line"><span class="lineno">   66</span>    <span class="keyword">const</span> std::vector&lt;int64_t&gt; o2 = {2, 1, 4, 3, 8, 7};</div>
 <div class="line"><span class="lineno">   67</span>    assert(arr2 == o2);</div>
-<div class="line"><span class="lineno">   68</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   68</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   69</span> </div>
 <div class="line"><span class="lineno">   70</span>    <span class="comment">// [3, 3, 3, 3] return [3, 3, 3, 3]</span></div>
-<div class="line"><span class="lineno">   71</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> array3 = {3, 3, 3, 3};</div>
-<div class="line"><span class="lineno">   72</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 3... &quot;</span>;</div>
-<div class="line"><span class="lineno">   73</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> arr3 = <a class="code hl_function" href="#a7d4f243b9dc13ace4ef77e30dbc56f12">sorting::wave_sort::waveSort</a>(array3, 4);</div>
-<div class="line"><span class="lineno">   74</span>    <span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> o3 = {3, 3, 3, 3};</div>
+<div class="line"><span class="lineno">   71</span>    std::vector&lt;int64_t&gt; array3 = {3, 3, 3, 3};</div>
+<div class="line"><span class="lineno">   72</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 3... &quot;</span>;</div>
+<div class="line"><span class="lineno">   73</span>    std::vector&lt;int64_t&gt; arr3 = <a class="code hl_function" href="#a7d4f243b9dc13ace4ef77e30dbc56f12">sorting::wave_sort::waveSort</a>(array3, 4);</div>
+<div class="line"><span class="lineno">   74</span>    <span class="keyword">const</span> std::vector&lt;int64_t&gt; o3 = {3, 3, 3, 3};</div>
 <div class="line"><span class="lineno">   75</span>    assert(arr3 == o3);</div>
-<div class="line"><span class="lineno">   76</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   76</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   77</span> </div>
 <div class="line"><span class="lineno">   78</span>    <span class="comment">// [9, 4, 6, 8, 14, 3] return [4, 3, 8, 6, 14, 9]</span></div>
-<div class="line"><span class="lineno">   79</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> array4 = {9, 4, 6, 8, 14, 3};</div>
-<div class="line"><span class="lineno">   80</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 4... &quot;</span>;</div>
-<div class="line"><span class="lineno">   81</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> arr4 = <a class="code hl_function" href="#a7d4f243b9dc13ace4ef77e30dbc56f12">sorting::wave_sort::waveSort</a>(array4, 6);</div>
-<div class="line"><span class="lineno">   82</span>    <span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> o4 = {4, 3, 8, 6, 14, 9};</div>
+<div class="line"><span class="lineno">   79</span>    std::vector&lt;int64_t&gt; array4 = {9, 4, 6, 8, 14, 3};</div>
+<div class="line"><span class="lineno">   80</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 4... &quot;</span>;</div>
+<div class="line"><span class="lineno">   81</span>    std::vector&lt;int64_t&gt; arr4 = <a class="code hl_function" href="#a7d4f243b9dc13ace4ef77e30dbc56f12">sorting::wave_sort::waveSort</a>(array4, 6);</div>
+<div class="line"><span class="lineno">   82</span>    <span class="keyword">const</span> std::vector&lt;int64_t&gt; o4 = {4, 3, 8, 6, 14, 9};</div>
 <div class="line"><span class="lineno">   83</span>    assert(arr4 == o4);</div>
-<div class="line"><span class="lineno">   84</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   84</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   85</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-<div class="ttc" id="awave__sort_8cpp_html_a7d4f243b9dc13ace4ef77e30dbc56f12"><div class="ttname"><a href="#a7d4f243b9dc13ace4ef77e30dbc56f12">sorting::wave_sort::waveSort</a></div><div class="ttdeci">std::vector&lt; T &gt; waveSort(const std::vector&lt; T &gt; &amp;in_arr, int64_t n)</div><div class="ttdoc">The main function implements that implements the Wave Sort algorithm.</div><div class="ttdef"><b>Definition</b> wave_sort.cpp:34</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d3f/wave__sort_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="174" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="awave__sort_8cpp_html_a7d4f243b9dc13ace4ef77e30dbc56f12"><div class="ttname"><a href="#a7d4f243b9dc13ace4ef77e30dbc56f12">sorting::wave_sort::waveSort</a></div><div class="ttdeci">std::vector&lt; T &gt; waveSort(const std::vector&lt; T &gt; &amp;in_arr, int64_t n)</div><div class="ttdoc">The main function implements that implements the Wave Sort algorithm.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d3f/wave__sort_8cpp_source.html#l00034">wave_sort.cpp:34</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7d4f243b9dc13ace4ef77e30dbc56f12" name="a7d4f243b9dc13ace4ef77e30dbc56f12"></a>
@@ -258,9 +270,9 @@ Here is the call graph for this function:</div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; sorting::wave_sort::waveSort </td>
+          <td class="memname">std::vector&lt; T &gt; sorting::wave_sort::waveSort </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>in_arr</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>in_arr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -284,26 +296,21 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>arr the wave sorted array </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d3f/wave__sort_8cpp_source.html#l00034">34</a> of file <a class="el" href="../../db/d3f/wave__sort_8cpp_source.html">wave_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   34</span>                                                             {</div>
-<div class="line"><span class="lineno">   35</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> arr(in_arr);</div>
+<div class="line"><span class="lineno">   35</span>    std::vector&lt;T&gt; arr(in_arr);</div>
 <div class="line"><span class="lineno">   36</span> </div>
 <div class="line"><span class="lineno">   37</span>    <span class="keywordflow">for</span> (int64_t i = 0; i &lt; n; i++) {</div>
 <div class="line"><span class="lineno">   38</span>        arr[i] = in_arr[i];</div>
 <div class="line"><span class="lineno">   39</span>    }</div>
-<div class="line"><span class="lineno">   40</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/sort.html">std::sort</a>(arr.begin(), arr.end());</div>
+<div class="line"><span class="lineno">   40</span>    std::sort(arr.begin(), arr.end());</div>
 <div class="line"><span class="lineno">   41</span>    <span class="keywordflow">for</span> (int64_t i = 0; i &lt; n - 1; i += 2) {  <span class="comment">// swap all the adjacent elements</span></div>
-<div class="line"><span class="lineno">   42</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(arr[i], arr[i + 1]);</div>
+<div class="line"><span class="lineno">   42</span>        std::swap(arr[i], arr[i + 1]);</div>
 <div class="line"><span class="lineno">   43</span>    }</div>
 <div class="line"><span class="lineno">   44</span>    <span class="keywordflow">return</span> arr;</div>
 <div class="line"><span class="lineno">   45</span>}</div>
-<div class="ttc" id="asort_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/sort.html">std::sort</a></div><div class="ttdeci">T sort(T... args)</div></div>
-<div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d3f/wave__sort_8cpp_a7d4f243b9dc13ace4ef77e30dbc56f12_cgraph.svg" width="310" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

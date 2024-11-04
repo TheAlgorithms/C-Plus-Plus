@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: spirograph Namespace Reference</title>
+<title>TheAlgorithms/C++: spirograph Namespace Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -112,8 +129,8 @@ $(function(){initNavTree('da/dd3/namespacespirograph.html','../../'); initResiza
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aeca22dbe4563358960e907a40cd3e1ac" id="r_aeca22dbe4563358960e907a40cd3e1ac"><td class="memTemplParams" colspan="2">template&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> N&gt; </td></tr>
-<tr class="memitem:aeca22dbe4563358960e907a40cd3e1ac"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aeca22dbe4563358960e907a40cd3e1ac">spirograph</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; double, double &gt;, N &gt; *points, double l, double k, double rot)</td></tr>
+<tr class="memitem:aeca22dbe4563358960e907a40cd3e1ac" id="r_aeca22dbe4563358960e907a40cd3e1ac"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
+<tr class="memitem:aeca22dbe4563358960e907a40cd3e1ac"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aeca22dbe4563358960e907a40cd3e1ac">spirograph</a> (std::array&lt; std::pair&lt; double, double &gt;, N &gt; *points, double l, double k, double rot)</td></tr>
 <tr class="separator:aeca22dbe4563358960e907a40cd3e1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e83a64e8443fff1e5ffdc1c299c1e99" id="r_a8e83a64e8443fff1e5ffdc1c299c1e99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e83a64e8443fff1e5ffdc1c299c1e99">test</a> ()</td></tr>
 <tr class="memdesc:a8e83a64e8443fff1e5ffdc1c299c1e99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test function to save resulting points to a CSV file.  <br /></td></tr>
@@ -128,12 +145,12 @@ Functions</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> N&gt; </div>
+template&lt;std::size_t N&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void spirograph::spirograph </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; double, double &gt;, N &gt; *</td>          <td class="paramname"><span class="paramname"><em>points</em></span>, </td>
+          <td class="paramtype">std::array&lt; std::pair&lt; double, double &gt;, N &gt; *</td>          <td class="paramname"><span class="paramname"><em>points</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -177,13 +194,15 @@ y &amp;=&amp; R\left[ (1-k) \sin (t) - l\cdot k\cdot\sin \left(\frac{1-k}{k}t\ri
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">points</td><td>Array of 2D points represented as <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">points</td><td>Array of 2D points represented as std::pair </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">l</td><td>the relative distance of marker from the centre of inner circle and \(0\le l\le1\) </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">k</td><td>the ratio of radius of inner circle to outer circle and \(0&lt;k&lt;1\) </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">rot</td><td>the number of rotations to perform (can be fractional value) </td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d77/spirograph_8cpp_source.html#l00070">70</a> of file <a class="el" href="../../da/d77/spirograph_8cpp_source.html">spirograph.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   71</span>                                      {</div>
 <div class="line"><span class="lineno">   72</span>    <span class="keywordtype">double</span> dt = rot * 2.f * M_PI / N;</div>
 <div class="line"><span class="lineno">   73</span>    <span class="keywordtype">double</span> R = 1.f;</div>
@@ -195,20 +214,13 @@ y &amp;=&amp; R\left[ (1-k) \sin (t) - l\cdot k\cdot\sin \left(\frac{1-k}{k}t\ri
 <div class="line"><span class="lineno">   79</span><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="lineno">   80</span>    <span class="keywordflow">for</span> (step = 0; step &lt; N; step++) {</div>
 <div class="line"><span class="lineno">   81</span>        <span class="keywordtype">double</span> t = dt * step;</div>
-<div class="line"><span class="lineno">   82</span>        <span class="keywordtype">double</span> first = R * (k1 * <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/cos.html">std::cos</a>(t) + l * k * <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/cos.html">std::cos</a>(k1 * t / k));</div>
-<div class="line"><span class="lineno">   83</span>        <span class="keywordtype">double</span> second = R * (k1 * <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sin.html">std::sin</a>(t) - l * k * <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sin.html">std::sin</a>(k1 * t / k));</div>
+<div class="line"><span class="lineno">   82</span>        <span class="keywordtype">double</span> first = R * (k1 * std::cos(t) + l * k * std::cos(k1 * t / k));</div>
+<div class="line"><span class="lineno">   83</span>        <span class="keywordtype">double</span> second = R * (k1 * std::sin(t) - l * k * std::sin(k1 * t / k));</div>
 <div class="line"><span class="lineno">   84</span>        points[0][step].first = first;</div>
 <div class="line"><span class="lineno">   85</span>        points[0][step].second = second;</div>
 <div class="line"><span class="lineno">   86</span>    }</div>
 <div class="line"><span class="lineno">   87</span>}</div>
-<div class="ttc" id="acos_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/cos.html">std::cos</a></div><div class="ttdeci">T cos(T... args)</div></div>
-<div class="ttc" id="asin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/sin.html">std::sin</a></div><div class="ttdeci">T sin(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/dd3/namespacespirograph_aeca22dbe4563358960e907a40cd3e1ac_cgraph.svg" width="276" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8e83a64e8443fff1e5ffdc1c299c1e99" name="a8e83a64e8443fff1e5ffdc1c299c1e99"></a>
@@ -227,19 +239,21 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Test function to save resulting points to a CSV file. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d77/spirograph_8cpp_source.html#l00093">93</a> of file <a class="el" href="../../da/d77/spirograph_8cpp_source.html">spirograph.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   93</span>            {</div>
 <div class="line"><span class="lineno">   94</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> N = 500;</div>
 <div class="line"><span class="lineno">   95</span>    <span class="keywordtype">double</span> l = 0.3, k = 0.75, rot = 10.;</div>
-<div class="line"><span class="lineno">   96</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_stringstream.html">std::stringstream</a> fname;</div>
-<div class="line"><span class="lineno">   97</span>    fname &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(3) &lt;&lt; <span class="stringliteral">&quot;spirograph_&quot;</span> &lt;&lt; l &lt;&lt; <span class="stringliteral">&quot;_&quot;</span> &lt;&lt; k &lt;&lt; <span class="stringliteral">&quot;_&quot;</span> &lt;&lt; rot</div>
+<div class="line"><span class="lineno">   96</span>    std::stringstream fname;</div>
+<div class="line"><span class="lineno">   97</span>    fname &lt;&lt; std::setw(3) &lt;&lt; <span class="stringliteral">&quot;spirograph_&quot;</span> &lt;&lt; l &lt;&lt; <span class="stringliteral">&quot;_&quot;</span> &lt;&lt; k &lt;&lt; <span class="stringliteral">&quot;_&quot;</span> &lt;&lt; rot</div>
 <div class="line"><span class="lineno">   98</span>          &lt;&lt; <span class="stringliteral">&quot;.csv&quot;</span>;</div>
-<div class="line"><span class="lineno">   99</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a> fp(fname.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_stringstream/str.html">str</a>());</div>
+<div class="line"><span class="lineno">   99</span>    std::ofstream fp(fname.str());</div>
 <div class="line"><span class="lineno">  100</span>    <span class="keywordflow">if</span> (!fp.is_open()) {</div>
-<div class="line"><span class="lineno">  101</span>        perror(fname.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_stringstream/str.html">str</a>().c_str());</div>
+<div class="line"><span class="lineno">  101</span>        perror(fname.str().c_str());</div>
 <div class="line"><span class="lineno">  102</span>        exit(EXIT_FAILURE);</div>
 <div class="line"><span class="lineno">  103</span>    }</div>
 <div class="line"><span class="lineno">  104</span> </div>
-<div class="line"><span class="lineno">  105</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::pair&lt;double, double&gt;</a>, N&gt; points;</div>
+<div class="line"><span class="lineno">  105</span>    std::array&lt;std::pair&lt;double, double&gt;, N&gt; points;</div>
 <div class="line"><span class="lineno">  106</span> </div>
 <div class="line"><span class="lineno">  107</span>    <a class="code hl_namespace" href="../../da/dd3/namespacespirograph.html">spirograph</a>(&amp;points, l, k, rot);</div>
 <div class="line"><span class="lineno">  108</span> </div>
@@ -252,18 +266,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  115</span> </div>
 <div class="line"><span class="lineno">  116</span>    fp.close();</div>
 <div class="line"><span class="lineno">  117</span>}</div>
-<div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
-<div class="ttc" id="abasic_ofstream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a></div></div>
-<div class="ttc" id="abasic_stringstream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_stringstream.html">std::stringstream</a></div></div>
 <div class="ttc" id="anamespacespirograph_html"><div class="ttname"><a href="../../da/dd3/namespacespirograph.html">spirograph</a></div></div>
-<div class="ttc" id="asetw_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a></div><div class="ttdeci">T setw(T... args)</div></div>
-<div class="ttc" id="astr_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_stringstream/str.html">std::stringstream::str</a></div><div class="ttdeci">T str(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/dd3/namespacespirograph_a8e83a64e8443fff1e5ffdc1c299c1e99_cgraph.svg" width="322" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

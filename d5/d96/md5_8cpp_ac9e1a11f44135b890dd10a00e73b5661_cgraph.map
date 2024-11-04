@@ -1,9 +1,0 @@
-<map id="interactive" name="interactive">
-<area shape="rect" id="Node000001" title="Puts user in a loop where inputs can be given and MD5 hash will be computed and printed." alt="" coords="5,55,87,80"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/compare.html#" title=" " alt="" coords="135,5,272,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,52,145,34,147,39,88,57"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="168,55,239,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="87,65,152,65,152,70,87,70"/>
-<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/getline.html#" title=" " alt="" coords="161,104,246,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="88,78,147,96,145,101,86,83"/>
-</map>

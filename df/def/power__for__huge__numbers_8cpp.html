@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: math/power_for_huge_numbers.cpp File Reference</title>
+<title>TheAlgorithms/C++: math/power_for_huge_numbers.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -119,7 +136,9 @@ Include dependency graph for power_for_huge_numbers.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d8e/power__for__huge__numbers_8cpp__incl.svg" width="158" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../df/def/power__for__huge__numbers_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a392fb874e547e582e9c66a08a1f23326" id="r_a392fb874e547e582e9c66a08a1f23326"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a392fb874e547e582e9c66a08a1f23326">MAX</a>&#160;&#160;&#160;100000</td></tr>
@@ -136,6 +155,8 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Compute powers of large numbers. </p>
+
+<p class="definition">Definition in file <a class="el" href="../../df/def/power__for__huge__numbers_8cpp_source.html">power_for_huge_numbers.cpp</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a392fb874e547e582e9c66a08a1f23326" name="a392fb874e547e582e9c66a08a1f23326"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a392fb874e547e582e9c66a08a1f23326">&#9670;&#160;</a></span>MAX</h2>
@@ -149,6 +170,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Maximum number of digits in output \(x^n\) where \(1 &lt;= x,\; n &lt;= 10000\) and overflow may happen </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/def/power__for__huge__numbers_8cpp_source.html#l00010">10</a> of file <a class="el" href="../../df/def/power__for__huge__numbers_8cpp_source.html">power_for_huge_numbers.cpp</a>.</p>
 
 </div>
 </div>
@@ -168,24 +191,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Main function </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/def/power__for__huge__numbers_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../df/def/power__for__huge__numbers_8cpp_source.html">power_for_huge_numbers.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   82</span>           {</div>
 <div class="line"><span class="lineno">   83</span>    <span class="keywordtype">int</span> exponent, base;</div>
-<div class="line"><span class="lineno">   84</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter base &quot;</span>;</div>
-<div class="line"><span class="lineno">   85</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; base;</div>
-<div class="line"><span class="lineno">   86</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter exponent &quot;</span>;</div>
-<div class="line"><span class="lineno">   87</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; exponent;</div>
+<div class="line"><span class="lineno">   84</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter base &quot;</span>;</div>
+<div class="line"><span class="lineno">   85</span>    std::cin &gt;&gt; base;</div>
+<div class="line"><span class="lineno">   86</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter exponent &quot;</span>;</div>
+<div class="line"><span class="lineno">   87</span>    std::cin &gt;&gt; exponent;</div>
 <div class="line"><span class="lineno">   88</span>    <a class="code hl_function" href="#ae249a2af508aa94266023ce8aa81426f">power</a>(base, exponent);</div>
 <div class="line"><span class="lineno">   89</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   90</span>}</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="apower__for__huge__numbers_8cpp_html_ae249a2af508aa94266023ce8aa81426f"><div class="ttname"><a href="#ae249a2af508aa94266023ce8aa81426f">power</a></div><div class="ttdeci">void power(int x, int n)</div><div class="ttdef"><b>Definition</b> power_for_huge_numbers.cpp:56</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/def/power__for__huge__numbers_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="279" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="apower__for__huge__numbers_8cpp_html_ae249a2af508aa94266023ce8aa81426f"><div class="ttname"><a href="#ae249a2af508aa94266023ce8aa81426f">power</a></div><div class="ttdeci">void power(int x, int n)</div><div class="ttdef"><b>Definition</b> <a href="../../df/def/power__for__huge__numbers_8cpp_source.html#l00056">power_for_huge_numbers.cpp:56</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa141a7904f0c4668bac112d652a3acf9" name="aa141a7904f0c4668bac112d652a3acf9"></a>
@@ -219,6 +237,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/def/power__for__huge__numbers_8cpp_source.html#l00025">25</a> of file <a class="el" href="../../df/def/power__for__huge__numbers_8cpp_source.html">power_for_huge_numbers.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   25</span>                                             {</div>
 <div class="line"><span class="lineno">   26</span>    <span class="comment">// Initialize carry</span></div>
 <div class="line"><span class="lineno">   27</span>    <span class="keywordtype">int</span> carry = 0;</div>
@@ -273,10 +293,12 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/def/power__for__huge__numbers_8cpp_source.html#l00056">56</a> of file <a class="el" href="../../df/def/power__for__huge__numbers_8cpp_source.html">power_for_huge_numbers.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   56</span>                         {</div>
 <div class="line"><span class="lineno">   57</span>    <span class="comment">// printing value &quot;1&quot; for power = 0</span></div>
 <div class="line"><span class="lineno">   58</span>    <span class="keywordflow">if</span> (n == 0) {</div>
-<div class="line"><span class="lineno">   59</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;1&quot;</span>;</div>
+<div class="line"><span class="lineno">   59</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;1&quot;</span>;</div>
 <div class="line"><span class="lineno">   60</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">   61</span>    }</div>
 <div class="line"><span class="lineno">   62</span> </div>
@@ -294,17 +316,12 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   74</span>    <span class="comment">// (x^n = x*x*x....n times)</span></div>
 <div class="line"><span class="lineno">   75</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 2; i &lt;= n; i++) res_size = <a class="code hl_function" href="#aa141a7904f0c4668bac112d652a3acf9">multiply</a>(x, res, res_size);</div>
 <div class="line"><span class="lineno">   76</span> </div>
-<div class="line"><span class="lineno">   77</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; x &lt;&lt; <span class="stringliteral">&quot;^&quot;</span> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot; = &quot;</span>;</div>
-<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = res_size - 1; i &gt;= 0; i--) <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; res[i];</div>
+<div class="line"><span class="lineno">   77</span>    std::cout &lt;&lt; x &lt;&lt; <span class="stringliteral">&quot;^&quot;</span> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot; = &quot;</span>;</div>
+<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = res_size - 1; i &gt;= 0; i--) std::cout &lt;&lt; res[i];</div>
 <div class="line"><span class="lineno">   79</span>}</div>
-<div class="ttc" id="apower__for__huge__numbers_8cpp_html_a392fb874e547e582e9c66a08a1f23326"><div class="ttname"><a href="#a392fb874e547e582e9c66a08a1f23326">MAX</a></div><div class="ttdeci">#define MAX</div><div class="ttdef"><b>Definition</b> power_for_huge_numbers.cpp:10</div></div>
-<div class="ttc" id="apower__for__huge__numbers_8cpp_html_aa141a7904f0c4668bac112d652a3acf9"><div class="ttname"><a href="#aa141a7904f0c4668bac112d652a3acf9">multiply</a></div><div class="ttdeci">int multiply(int x, int res[], int res_size)</div><div class="ttdef"><b>Definition</b> power_for_huge_numbers.cpp:25</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/def/power__for__huge__numbers_8cpp_ae249a2af508aa94266023ce8aa81426f_cgraph.svg" width="182" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="apower__for__huge__numbers_8cpp_html_a392fb874e547e582e9c66a08a1f23326"><div class="ttname"><a href="#a392fb874e547e582e9c66a08a1f23326">MAX</a></div><div class="ttdeci">#define MAX</div><div class="ttdef"><b>Definition</b> <a href="../../df/def/power__for__huge__numbers_8cpp_source.html#l00010">power_for_huge_numbers.cpp:10</a></div></div>
+<div class="ttc" id="apower__for__huge__numbers_8cpp_html_aa141a7904f0c4668bac112d652a3acf9"><div class="ttname"><a href="#aa141a7904f0c4668bac112d652a3acf9">multiply</a></div><div class="ttdeci">int multiply(int x, int res[], int res_size)</div><div class="ttdef"><b>Definition</b> <a href="../../df/def/power__for__huge__numbers_8cpp_source.html#l00025">power_for_huge_numbers.cpp:25</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

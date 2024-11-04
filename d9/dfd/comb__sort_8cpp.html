@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: sorting/comb_sort.cpp File Reference</title>
+<title>TheAlgorithms/C++: sorting/comb_sort.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -120,7 +137,9 @@ Include dependency graph for comb_sort.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/dbe/comb__sort_8cpp__incl.svg" width="270" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d9/dfd/comb__sort_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aede08143e63105faba10e9ee8e745fd5" id="r_aede08143e63105faba10e9ee8e745fd5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aede08143e63105faba10e9ee8e745fd5">FindNextGap</a> (int gap)</td></tr>
@@ -140,6 +159,8 @@ Functions</h2></td></tr>
 <li>Bubble sort compares adjacent values whereas comb sort uses gap larger than 1</li>
 <li>Best case Time complexity O(n) Worst case Time complexity O(n^2) </li>
 </ul>
+
+<p class="definition">Definition in file <a class="el" href="../../d9/dfd/comb__sort_8cpp_source.html">comb_sort.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a0f4e7569090083fb53d5cdeaf0e2974f" name="a0f4e7569090083fb53d5cdeaf0e2974f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f4e7569090083fb53d5cdeaf0e2974f">&#9670;&#160;</a></span>CombSort()</h2>
@@ -178,44 +199,28 @@ Functions</h2></td></tr>
 <p>Keep running until gap = 1 or none elements were swapped</p>
 <p>Find next gap</p>
 <p><a class="el" href="../../de/d4a/class_compare.html" title="Comparator class for priority queue.">Compare</a> all elements with current gap</p>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>                                      {<span class="comment"></span></div>
-<div class="line"><span class="lineno">   43</span><span class="comment">    /**</span></div>
-<div class="line"><span class="lineno">   44</span><span class="comment">     *</span></div>
-<div class="line"><span class="lineno">   45</span><span class="comment">     * initial gap will be maximum and the maximum possible value is</span></div>
-<div class="line"><span class="lineno">   46</span><span class="comment">     * the size of the array that is n and which is equal to r in this</span></div>
-<div class="line"><span class="lineno">   47</span><span class="comment">     * case so to avoid passing an extra parameter n that is the size of</span></div>
-<div class="line"><span class="lineno">   48</span><span class="comment">     * the array we are using r to initialize the initial gap.</span></div>
-<div class="line"><span class="lineno">   49</span><span class="comment">     *</span></div>
-<div class="line"><span class="lineno">   50</span><span class="comment">     */</span></div>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/dfd/comb__sort_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../d9/dfd/comb__sort_8cpp_source.html">comb_sort.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>                                      {</div>
 <div class="line"><span class="lineno">   51</span>    <span class="keywordtype">int</span> gap = r;</div>
-<div class="line"><span class="lineno">   52</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   53</span><span class="comment">    /// Initialize swapped as true to make sure that loop runs</span></div>
-<div class="line"><span class="lineno">   54</span><span class="comment"></span>    <span class="keywordtype">bool</span> swapped = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   55</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   56</span><span class="comment">    /// Keep running until gap = 1 or none elements were swapped</span></div>
-<div class="line"><span class="lineno">   57</span><span class="comment"></span>    <span class="keywordflow">while</span> (gap != 1 || swapped) {<span class="comment"></span></div>
-<div class="line"><span class="lineno">   58</span><span class="comment">        /// Find next gap</span></div>
-<div class="line"><span class="lineno">   59</span><span class="comment"></span>        gap = <a class="code hl_function" href="#aede08143e63105faba10e9ee8e745fd5">FindNextGap</a>(gap);</div>
+<div class="line"><span class="lineno">   52</span> </div>
+<div class="line"><span class="lineno">   54</span>    <span class="keywordtype">bool</span> swapped = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   55</span> </div>
+<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">while</span> (gap != 1 || swapped) {</div>
+<div class="line"><span class="lineno">   59</span>        gap = <a class="code hl_function" href="#aede08143e63105faba10e9ee8e745fd5">FindNextGap</a>(gap);</div>
 <div class="line"><span class="lineno">   60</span> </div>
 <div class="line"><span class="lineno">   61</span>        swapped = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   62</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   63</span><span class="comment">        /// Compare all elements with current gap</span></div>
-<div class="line"><span class="lineno">   64</span><span class="comment"></span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = l; i &lt; r - gap; ++i) {</div>
+<div class="line"><span class="lineno">   62</span> </div>
+<div class="line"><span class="lineno">   64</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = l; i &lt; r - gap; ++i) {</div>
 <div class="line"><span class="lineno">   65</span>            <span class="keywordflow">if</span> (arr[i] &gt; arr[i + gap]) {</div>
-<div class="line"><span class="lineno">   66</span>                <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(arr[i], arr[i + gap]);</div>
+<div class="line"><span class="lineno">   66</span>                std::swap(arr[i], arr[i + gap]);</div>
 <div class="line"><span class="lineno">   67</span>                swapped = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">   68</span>            }</div>
 <div class="line"><span class="lineno">   69</span>        }</div>
 <div class="line"><span class="lineno">   70</span>    }</div>
 <div class="line"><span class="lineno">   71</span>}</div>
-<div class="ttc" id="acomb__sort_8cpp_html_aede08143e63105faba10e9ee8e745fd5"><div class="ttname"><a href="#aede08143e63105faba10e9ee8e745fd5">FindNextGap</a></div><div class="ttdeci">int FindNextGap(int gap)</div><div class="ttdef"><b>Definition</b> comb_sort.cpp:29</div></div>
-<div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dfd/comb__sort_8cpp_a0f4e7569090083fb53d5cdeaf0e2974f_cgraph.svg" width="358" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="acomb__sort_8cpp_html_aede08143e63105faba10e9ee8e745fd5"><div class="ttname"><a href="#aede08143e63105faba10e9ee8e745fd5">FindNextGap</a></div><div class="ttdeci">int FindNextGap(int gap)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dfd/comb__sort_8cpp_source.html#l00029">comb_sort.cpp:29</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aede08143e63105faba10e9ee8e745fd5" name="aede08143e63105faba10e9ee8e745fd5"></a>
@@ -239,18 +244,14 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>new gap </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/dfd/comb__sort_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../d9/dfd/comb__sort_8cpp_source.html">comb_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   29</span>                         {</div>
 <div class="line"><span class="lineno">   30</span>    gap = (gap * 10) / 13;</div>
 <div class="line"><span class="lineno">   31</span> </div>
-<div class="line"><span class="lineno">   32</span>    <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(1, gap);</div>
+<div class="line"><span class="lineno">   32</span>    <span class="keywordflow">return</span> std::max(1, gap);</div>
 <div class="line"><span class="lineno">   33</span>}</div>
-<div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dfd/comb__sort_8cpp_aede08143e63105faba10e9ee8e745fd5_cgraph.svg" width="230" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -270,30 +271,23 @@ Here is the call graph for this function:</div>
 <p>Main function </p>
 <p>Running predefined tests</p>
 <p>For user interaction</p>
-<div class="fragment"><div class="line"><span class="lineno">   88</span>           {<span class="comment"></span></div>
-<div class="line"><span class="lineno">   89</span><span class="comment">    /// Running predefined tests</span></div>
-<div class="line"><span class="lineno">   90</span><span class="comment"></span>    <a class="code hl_function" href="#a88ec9ad42717780d6caaff9d3d6977f9">tests</a>();</div>
-<div class="line"><span class="lineno">   91</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   92</span><span class="comment">    /// For user interaction</span></div>
-<div class="line"><span class="lineno">   93</span><span class="comment"></span>    <span class="keywordtype">int</span> n;</div>
-<div class="line"><span class="lineno">   94</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n;</div>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/dfd/comb__sort_8cpp_source.html#l00088">88</a> of file <a class="el" href="../../d9/dfd/comb__sort_8cpp_source.html">comb_sort.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   88</span>           {</div>
+<div class="line"><span class="lineno">   90</span>    <a class="code hl_function" href="#a88ec9ad42717780d6caaff9d3d6977f9">tests</a>();</div>
+<div class="line"><span class="lineno">   91</span> </div>
+<div class="line"><span class="lineno">   93</span>    <span class="keywordtype">int</span> n;</div>
+<div class="line"><span class="lineno">   94</span>    std::cin &gt;&gt; n;</div>
 <div class="line"><span class="lineno">   95</span>    <span class="keywordtype">int</span> *arr = <span class="keyword">new</span> <span class="keywordtype">int</span>[n];</div>
 <div class="line"><span class="lineno">   96</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; ++i) std::cin &gt;&gt; arr[i];</div>
 <div class="line"><span class="lineno">   97</span>    <a class="code hl_function" href="#a0f4e7569090083fb53d5cdeaf0e2974f">CombSort</a>(arr, 0, n);</div>
-<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; ++i) <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; arr[i] &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; ++i) std::cout &lt;&lt; arr[i] &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line"><span class="lineno">   99</span>    <span class="keyword">delete</span>[] arr;</div>
 <div class="line"><span class="lineno">  100</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  101</span>}</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="acomb__sort_8cpp_html_a0f4e7569090083fb53d5cdeaf0e2974f"><div class="ttname"><a href="#a0f4e7569090083fb53d5cdeaf0e2974f">CombSort</a></div><div class="ttdeci">void CombSort(int *arr, int l, int r)</div><div class="ttdef"><b>Definition</b> comb_sort.cpp:42</div></div>
-<div class="ttc" id="acomb__sort_8cpp_html_a88ec9ad42717780d6caaff9d3d6977f9"><div class="ttname"><a href="#a88ec9ad42717780d6caaff9d3d6977f9">tests</a></div><div class="ttdeci">void tests()</div><div class="ttdef"><b>Definition</b> comb_sort.cpp:73</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dfd/comb__sort_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="574" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="acomb__sort_8cpp_html_a0f4e7569090083fb53d5cdeaf0e2974f"><div class="ttname"><a href="#a0f4e7569090083fb53d5cdeaf0e2974f">CombSort</a></div><div class="ttdeci">void CombSort(int *arr, int l, int r)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dfd/comb__sort_8cpp_source.html#l00042">comb_sort.cpp:42</a></div></div>
+<div class="ttc" id="acomb__sort_8cpp_html_a88ec9ad42717780d6caaff9d3d6977f9"><div class="ttname"><a href="#a88ec9ad42717780d6caaff9d3d6977f9">tests</a></div><div class="ttdeci">void tests()</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dfd/comb__sort_8cpp_source.html#l00073">comb_sort.cpp:73</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a88ec9ad42717780d6caaff9d3d6977f9" name="a88ec9ad42717780d6caaff9d3d6977f9"></a>
@@ -312,26 +306,20 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Test 1</p>
 <p>Test 2</p>
-<div class="fragment"><div class="line"><span class="lineno">   73</span>             {<span class="comment"></span></div>
-<div class="line"><span class="lineno">   74</span><span class="comment">    /// Test 1</span></div>
-<div class="line"><span class="lineno">   75</span><span class="comment"></span>    <span class="keywordtype">int</span> arr1[10] = {34, 56, 6, 23, 76, 34, 76, 343, 4, 76};</div>
-<div class="line"><span class="lineno">   76</span>    <a class="code hl_function" href="#a0f4e7569090083fb53d5cdeaf0e2974f">CombSort</a>(arr1, 0, 10);</div>
-<div class="line"><span class="lineno">   77</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(arr1, arr1 + 10));</div>
-<div class="line"><span class="lineno">   78</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1 passed\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   79</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   80</span><span class="comment">    /// Test 2</span></div>
-<div class="line"><span class="lineno">   81</span><span class="comment"></span>    <span class="keywordtype">int</span> arr2[8] = {-6, 56, -45, 56, 0, -1, 8, 8};</div>
-<div class="line"><span class="lineno">   82</span>    <a class="code hl_function" href="#a0f4e7569090083fb53d5cdeaf0e2974f">CombSort</a>(arr2, 0, 8);</div>
-<div class="line"><span class="lineno">   83</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(arr2, arr2 + 8));</div>
-<div class="line"><span class="lineno">   84</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2 Passed\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   85</span>}</div>
-<div class="ttc" id="ais_sorted_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></div><div class="ttdeci">T is_sorted(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dfd/comb__sort_8cpp_a88ec9ad42717780d6caaff9d3d6977f9_cgraph.svg" width="476" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../d9/dfd/comb__sort_8cpp_source.html#l00073">73</a> of file <a class="el" href="../../d9/dfd/comb__sort_8cpp_source.html">comb_sort.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   73</span>             {</div>
+<div class="line"><span class="lineno">   75</span>    <span class="keywordtype">int</span> arr1[10] = {34, 56, 6, 23, 76, 34, 76, 343, 4, 76};</div>
+<div class="line"><span class="lineno">   76</span>    <a class="code hl_function" href="#a0f4e7569090083fb53d5cdeaf0e2974f">CombSort</a>(arr1, 0, 10);</div>
+<div class="line"><span class="lineno">   77</span>    assert(std::is_sorted(arr1, arr1 + 10));</div>
+<div class="line"><span class="lineno">   78</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 1 passed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   79</span> </div>
+<div class="line"><span class="lineno">   81</span>    <span class="keywordtype">int</span> arr2[8] = {-6, 56, -45, 56, 0, -1, 8, 8};</div>
+<div class="line"><span class="lineno">   82</span>    <a class="code hl_function" href="#a0f4e7569090083fb53d5cdeaf0e2974f">CombSort</a>(arr2, 0, 8);</div>
+<div class="line"><span class="lineno">   83</span>    assert(std::is_sorted(arr2, arr2 + 8));</div>
+<div class="line"><span class="lineno">   84</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 2 Passed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   85</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

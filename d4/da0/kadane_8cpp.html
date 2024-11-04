@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: dynamic_programming/kadane.cpp File Reference</title>
+<title>TheAlgorithms/C++: dynamic_programming/kadane.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -121,7 +138,9 @@ Include dependency graph for kadane.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d53/kadane_8cpp__incl.svg" width="240" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d4/da0/kadane_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d24/namespacedynamic__programming.html">dynamic_programming</a></td></tr>
@@ -134,7 +153,7 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:af3029007a422a914a85c0b0122f1c7b4" id="r_af3029007a422a914a85c0b0122f1c7b4"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
-<tr class="memitem:af3029007a422a914a85c0b0122f1c7b4"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af3029007a422a914a85c0b0122f1c7b4">dynamic_programming::kadane::maxSubArray</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, N &gt; &amp;n)</td></tr>
+<tr class="memitem:af3029007a422a914a85c0b0122f1c7b4"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af3029007a422a914a85c0b0122f1c7b4">dynamic_programming::kadane::maxSubArray</a> (const std::array&lt; int, N &gt; &amp;n)</td></tr>
 <tr class="memdesc:af3029007a422a914a85c0b0122f1c7b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">maxSubArray function is used to calculate the maximum sum subarray and returns the value of maximum sum which is stored in the variable max_sum  <br /></td></tr>
 <tr class="separator:af3029007a422a914a85c0b0122f1c7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
@@ -148,6 +167,8 @@ Functions</h2></td></tr>
 Algorithm</h3>
 <p>The simple idea of the algorithm is to search for all positive contiguous segments of the array and keep track of maximum sum contiguous segment among all positive segments(curr_sum is used for this) Each time we get a positive sum we compare it with max_sum and update max_sum if it is greater than curr_sum</p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/ayush523" target="_blank">Ayush Singh</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d4/da0/kadane_8cpp_source.html">kadane.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -166,25 +187,24 @@ Algorithm</h3>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da0/kadane_8cpp_source.html#l00060">60</a> of file <a class="el" href="../../d4/da0/kadane_8cpp_source.html">kadane.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   60</span>           {</div>
 <div class="line"><span class="lineno">   61</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = 5;</div>
-<div class="line"><span class="lineno">   62</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, N&gt;</a> n{};  <span class="comment">// declaring array</span></div>
+<div class="line"><span class="lineno">   62</span>    std::array&lt;int, N&gt; n{};  <span class="comment">// declaring array</span></div>
 <div class="line"><span class="lineno">   63</span>                             <span class="comment">// taking values of elements from user</span></div>
 <div class="line"><span class="lineno">   64</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n.size(); i++) {</div>
-<div class="line"><span class="lineno">   65</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter value of n[&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;]&quot;</span></div>
+<div class="line"><span class="lineno">   65</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Enter value of n[&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;]&quot;</span></div>
 <div class="line"><span class="lineno">   66</span>                  &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   67</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n[i];</div>
+<div class="line"><span class="lineno">   67</span>        std::cin &gt;&gt; n[i];</div>
 <div class="line"><span class="lineno">   68</span>    }</div>
 <div class="line"><span class="lineno">   69</span>    <span class="keywordtype">int</span> max_sum = dynamic_programming::kadane::maxSubArray&lt;N&gt;(</div>
 <div class="line"><span class="lineno">   70</span>        n);  <span class="comment">// calling maxSubArray function</span></div>
-<div class="line"><span class="lineno">   71</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Maximum subarray sum is &quot;</span> &lt;&lt; max_sum;  <span class="comment">// Printing the answer</span></div>
+<div class="line"><span class="lineno">   71</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Maximum subarray sum is &quot;</span> &lt;&lt; max_sum;  <span class="comment">// Printing the answer</span></div>
 <div class="line"><span class="lineno">   72</span> </div>
 <div class="line"><span class="lineno">   73</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   74</span>}</div>
-<div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="asparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:48</div></div>
+<div class="ttc" id="asparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dab/sparse__table_8cpp_source.html#l00048">sparse_table.cpp:48</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -199,7 +219,7 @@ template&lt;size_t N&gt; </div>
         <tr>
           <td class="memname">int dynamic_programming::kadane::maxSubArray </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, N &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
+          <td class="paramtype">const std::array&lt; int, N &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -219,24 +239,20 @@ template&lt;size_t N&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the value of maximum subarray sum </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da0/kadane_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../d4/da0/kadane_8cpp_source.html">kadane.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   42</span>                                           {</div>
 <div class="line"><span class="lineno">   43</span>    <span class="keywordtype">int</span> curr_sum =</div>
 <div class="line"><span class="lineno">   44</span>        0;  <span class="comment">// declaring a variable named as curr_sum and initialized it to 0</span></div>
 <div class="line"><span class="lineno">   45</span>    <span class="keywordtype">int</span> max_sum = INT_MIN;  <span class="comment">// Initialized max_sum to INT_MIN</span></div>
 <div class="line"><span class="lineno">   46</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i : n) {  <span class="comment">// for loop to iterate over the elements of the array</span></div>
 <div class="line"><span class="lineno">   47</span>        curr_sum += n[i];</div>
-<div class="line"><span class="lineno">   48</span>        max_sum = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(max_sum, curr_sum);  <span class="comment">// getting the maximum value</span></div>
-<div class="line"><span class="lineno">   49</span>        curr_sum = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(curr_sum, 0);  <span class="comment">// updating the value of curr_sum</span></div>
+<div class="line"><span class="lineno">   48</span>        max_sum = std::max(max_sum, curr_sum);  <span class="comment">// getting the maximum value</span></div>
+<div class="line"><span class="lineno">   49</span>        curr_sum = std::max(curr_sum, 0);  <span class="comment">// updating the value of curr_sum</span></div>
 <div class="line"><span class="lineno">   50</span>    }</div>
 <div class="line"><span class="lineno">   51</span>    <span class="keywordflow">return</span> max_sum;  <span class="comment">// returning the value of max_sum</span></div>
 <div class="line"><span class="lineno">   52</span>}</div>
-<div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/da0/kadane_8cpp_af3029007a422a914a85c0b0122f1c7b4_cgraph.svg" width="290" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

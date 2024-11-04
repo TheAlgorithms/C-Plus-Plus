@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: data_structures::stack_using_queue::Stack Struct Reference</title>
+<title>TheAlgorithms/C++: data_structures::stack_using_queue::Stack Struct Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -117,7 +134,7 @@ $(function(){initNavTree('db/d5b/structdata__structures_1_1stack__using__queue_1
 <div class="dynheader">
 Collaboration diagram for data_structures::stack_using_queue::Stack:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/dea/structdata__structures_1_1stack__using__queue_1_1_stack__coll__graph.svg" width="163" height="244"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/dea/structdata__structures_1_1stack__using__queue_1_1_stack__coll__graph.svg" width="163" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -136,19 +153,19 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:acf8ca54d5dd6676f255fff3dedacc7c6" id="r_acf8ca54d5dd6676f255fff3dedacc7c6"><td class="memItemLeft" align="right" valign="top"><a id="acf8ca54d5dd6676f255fff3dedacc7c6" name="acf8ca54d5dd6676f255fff3dedacc7c6"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue</a>&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>main_q</b></td></tr>
-<tr class="memdesc:acf8ca54d5dd6676f255fff3dedacc7c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">stores the current state of the stack <br /></td></tr>
+<tr class="memitem:acf8ca54d5dd6676f255fff3dedacc7c6" id="r_acf8ca54d5dd6676f255fff3dedacc7c6"><td class="memItemLeft" align="right" valign="top">std::queue&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a></td></tr>
+<tr class="memdesc:acf8ca54d5dd6676f255fff3dedacc7c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">stores the current state of the stack  <br /></td></tr>
 <tr class="separator:acf8ca54d5dd6676f255fff3dedacc7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f80f87fc6f6ded938426698bba89323" id="r_a2f80f87fc6f6ded938426698bba89323"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue</a>&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f80f87fc6f6ded938426698bba89323">auxiliary_q</a></td></tr>
+<tr class="memitem:a2f80f87fc6f6ded938426698bba89323" id="r_a2f80f87fc6f6ded938426698bba89323"><td class="memItemLeft" align="right" valign="top">std::queue&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f80f87fc6f6ded938426698bba89323">auxiliary_q</a></td></tr>
 <tr class="separator:a2f80f87fc6f6ded938426698bba89323"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdfd2f4418c70b1bda50f2c3e416d80b" id="r_afdfd2f4418c70b1bda50f2c3e416d80b"><td class="memItemLeft" align="right" valign="top"><a id="afdfd2f4418c70b1bda50f2c3e416d80b" name="afdfd2f4418c70b1bda50f2c3e416d80b"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>current_size</b> = 0</td></tr>
-<tr class="memdesc:afdfd2f4418c70b1bda50f2c3e416d80b"><td class="mdescLeft">&#160;</td><td class="mdescRight">stores the current size of the stack <br /></td></tr>
+<tr class="memitem:afdfd2f4418c70b1bda50f2c3e416d80b" id="r_afdfd2f4418c70b1bda50f2c3e416d80b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdfd2f4418c70b1bda50f2c3e416d80b">current_size</a> = 0</td></tr>
+<tr class="memdesc:afdfd2f4418c70b1bda50f2c3e416d80b"><td class="mdescLeft">&#160;</td><td class="mdescRight">stores the current size of the stack  <br /></td></tr>
 <tr class="separator:afdfd2f4418c70b1bda50f2c3e416d80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html" title="Stack Class implementation for basic methods of Stack Data Structure.">Stack</a> Class implementation for basic methods of <a class="el" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html" title="Stack Class implementation for basic methods of Stack Data Structure.">Stack</a> Data Structure. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d43/stack__using__queue_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../d7/d43/stack__using__queue_8cpp_source.html">stack_using_queue.cpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="abdd461689df4983a3ad3b05d853cf5eb" name="abdd461689df4983a3ad3b05d853cf5eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abdd461689df4983a3ad3b05d853cf5eb">&#9670;&#160;</a></span>pop()</h2>
@@ -175,23 +192,18 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>current_size</b> 
 
 <p>Removes the topmost element from the stack. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d43/stack__using__queue_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../d7/d43/stack__using__queue_8cpp_source.html">stack_using_queue.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   62</span>               {</div>
-<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/empty.html">empty</a>()) {</div>
+<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.empty()) {</div>
 <div class="line"><span class="lineno">   64</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">   65</span>        }</div>
-<div class="line"><span class="lineno">   66</span>        <a class="code hl_variable" href="#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/pop.html">pop</a>();</div>
+<div class="line"><span class="lineno">   66</span>        <a class="code hl_variable" href="#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.pop();</div>
 <div class="line"><span class="lineno">   67</span>        <a class="code hl_variable" href="#afdfd2f4418c70b1bda50f2c3e416d80b">current_size</a>--;</div>
 <div class="line"><span class="lineno">   68</span>    }</div>
-<div class="ttc" id="aempty_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue/empty.html">std::queue::empty</a></div><div class="ttdeci">T empty(T... args)</div></div>
-<div class="ttc" id="apop_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue/pop.html">std::queue::pop</a></div><div class="ttdeci">T pop(T... args)</div></div>
-<div class="ttc" id="astructdata__structures_1_1stack__using__queue_1_1_stack_html_acf8ca54d5dd6676f255fff3dedacc7c6"><div class="ttname"><a href="#acf8ca54d5dd6676f255fff3dedacc7c6">data_structures::stack_using_queue::Stack::main_q</a></div><div class="ttdeci">std::queue&lt; int64_t &gt; main_q</div><div class="ttdoc">stores the current state of the stack</div><div class="ttdef"><b>Definition</b> stack_using_queue.cpp:32</div></div>
-<div class="ttc" id="astructdata__structures_1_1stack__using__queue_1_1_stack_html_afdfd2f4418c70b1bda50f2c3e416d80b"><div class="ttname"><a href="#afdfd2f4418c70b1bda50f2c3e416d80b">data_structures::stack_using_queue::Stack::current_size</a></div><div class="ttdeci">uint32_t current_size</div><div class="ttdoc">stores the current size of the stack</div><div class="ttdef"><b>Definition</b> stack_using_queue.cpp:35</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack_abdd461689df4983a3ad3b05d853cf5eb_cgraph.svg" width="358" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="astructdata__structures_1_1stack__using__queue_1_1_stack_html_acf8ca54d5dd6676f255fff3dedacc7c6"><div class="ttname"><a href="#acf8ca54d5dd6676f255fff3dedacc7c6">data_structures::stack_using_queue::Stack::main_q</a></div><div class="ttdeci">std::queue&lt; int64_t &gt; main_q</div><div class="ttdoc">stores the current state of the stack</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d43/stack__using__queue_8cpp_source.html#l00032">stack_using_queue.cpp:32</a></div></div>
+<div class="ttc" id="astructdata__structures_1_1stack__using__queue_1_1_stack_html_afdfd2f4418c70b1bda50f2c3e416d80b"><div class="ttname"><a href="#afdfd2f4418c70b1bda50f2c3e416d80b">data_structures::stack_using_queue::Stack::current_size</a></div><div class="ttdeci">uint32_t current_size</div><div class="ttdoc">stores the current size of the stack</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d43/stack__using__queue_8cpp_source.html#l00035">stack_using_queue.cpp:35</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af04a8f3536a52d8c9916086b656eefc2" name="af04a8f3536a52d8c9916086b656eefc2"></a>
@@ -225,25 +237,19 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d43/stack__using__queue_8cpp_source.html#l00048">48</a> of file <a class="el" href="../../d7/d43/stack__using__queue_8cpp_source.html">stack_using_queue.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   48</span>                       {</div>
-<div class="line"><span class="lineno">   49</span>        <a class="code hl_variable" href="#a2f80f87fc6f6ded938426698bba89323">auxiliary_q</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/push.html">push</a>(val);</div>
-<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">while</span> (!<a class="code hl_variable" href="#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/empty.html">empty</a>()) {</div>
-<div class="line"><span class="lineno">   51</span>            <a class="code hl_variable" href="#a2f80f87fc6f6ded938426698bba89323">auxiliary_q</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/push.html">push</a>(<a class="code hl_variable" href="#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/front.html">front</a>());</div>
-<div class="line"><span class="lineno">   52</span>            <a class="code hl_variable" href="#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/pop.html">pop</a>();</div>
+<div class="line"><span class="lineno">   49</span>        <a class="code hl_variable" href="#a2f80f87fc6f6ded938426698bba89323">auxiliary_q</a>.push(val);</div>
+<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">while</span> (!<a class="code hl_variable" href="#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.empty()) {</div>
+<div class="line"><span class="lineno">   51</span>            <a class="code hl_variable" href="#a2f80f87fc6f6ded938426698bba89323">auxiliary_q</a>.push(<a class="code hl_variable" href="#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.front());</div>
+<div class="line"><span class="lineno">   52</span>            <a class="code hl_variable" href="#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.pop();</div>
 <div class="line"><span class="lineno">   53</span>        }</div>
-<div class="line"><span class="lineno">   54</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">swap</a>(<a class="code hl_variable" href="#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>, <a class="code hl_variable" href="#a2f80f87fc6f6ded938426698bba89323">auxiliary_q</a>);</div>
+<div class="line"><span class="lineno">   54</span>        swap(<a class="code hl_variable" href="#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>, <a class="code hl_variable" href="#a2f80f87fc6f6ded938426698bba89323">auxiliary_q</a>);</div>
 <div class="line"><span class="lineno">   55</span>        <a class="code hl_variable" href="#afdfd2f4418c70b1bda50f2c3e416d80b">current_size</a>++;</div>
 <div class="line"><span class="lineno">   56</span>    }</div>
-<div class="ttc" id="afront_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue/front.html">std::queue::front</a></div><div class="ttdeci">T front(T... args)</div></div>
-<div class="ttc" id="apush_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue/push.html">std::queue::push</a></div><div class="ttdeci">T push(T... args)</div></div>
-<div class="ttc" id="astructdata__structures_1_1stack__using__queue_1_1_stack_html_a2f80f87fc6f6ded938426698bba89323"><div class="ttname"><a href="#a2f80f87fc6f6ded938426698bba89323">data_structures::stack_using_queue::Stack::auxiliary_q</a></div><div class="ttdeci">std::queue&lt; int64_t &gt; auxiliary_q</div><div class="ttdef"><b>Definition</b> stack_using_queue.cpp:33</div></div>
-<div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack_af04a8f3536a52d8c9916086b656eefc2_cgraph.svg" width="364" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="astructdata__structures_1_1stack__using__queue_1_1_stack_html_a2f80f87fc6f6ded938426698bba89323"><div class="ttname"><a href="#a2f80f87fc6f6ded938426698bba89323">data_structures::stack_using_queue::Stack::auxiliary_q</a></div><div class="ttdeci">std::queue&lt; int64_t &gt; auxiliary_q</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d43/stack__using__queue_8cpp_source.html#l00033">stack_using_queue.cpp:33</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac0ddec9ab8f778dad23ec446d7a77b39" name="ac0ddec9ab8f778dad23ec446d7a77b39"></a>
@@ -271,6 +277,8 @@ Here is the call graph for this function:</div>
 
 <p>Utility function to return the current size of the stack. </p>
 <dl class="section return"><dt>Returns</dt><dd>current size of stack </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d43/stack__using__queue_8cpp_source.html#l00074">74</a> of file <a class="el" href="../../d7/d43/stack__using__queue_8cpp_source.html">stack_using_queue.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   74</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#afdfd2f4418c70b1bda50f2c3e416d80b">current_size</a>; }</div>
 </div><!-- fragment -->
 </div>
@@ -298,13 +306,10 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Returns the top most element of the stack </p><dl class="section return"><dt>Returns</dt><dd>top element of the queue </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   41</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/front.html">front</a>(); }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack_a5540434e1b41245205eee86f664906f7_cgraph.svg" width="344" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../d7/d43/stack__using__queue_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../d7/d43/stack__using__queue_8cpp_source.html">stack_using_queue.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   41</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.front(); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -315,16 +320,54 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue</a>&lt;int64_t&gt; data_structures::stack_using_queue::Stack::auxiliary_q</td>
+          <td class="memname">std::queue&lt;int64_t&gt; data_structures::stack_using_queue::Stack::auxiliary_q</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>used to carry out intermediate operations to implement stack </p>
 
+<p class="definition">Definition at line <a class="el" href="../../d7/d43/stack__using__queue_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../d7/d43/stack__using__queue_8cpp_source.html">stack_using_queue.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afdfd2f4418c70b1bda50f2c3e416d80b" name="afdfd2f4418c70b1bda50f2c3e416d80b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdfd2f4418c70b1bda50f2c3e416d80b">&#9670;&#160;</a></span>current_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t data_structures::stack_using_queue::Stack::current_size = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>stores the current size of the stack </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d43/stack__using__queue_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../d7/d43/stack__using__queue_8cpp_source.html">stack_using_queue.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acf8ca54d5dd6676f255fff3dedacc7c6" name="acf8ca54d5dd6676f255fff3dedacc7c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf8ca54d5dd6676f255fff3dedacc7c6">&#9670;&#160;</a></span>main_q</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::queue&lt;int64_t&gt; data_structures::stack_using_queue::Stack::main_q</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>stores the current state of the stack </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d43/stack__using__queue_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../d7/d43/stack__using__queue_8cpp_source.html">stack_using_queue.cpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>data_structures/<b>stack_using_queue.cpp</b></li>
+<li>data_structures/<a class="el" href="../../d7/d43/stack__using__queue_8cpp_source.html">stack_using_queue.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

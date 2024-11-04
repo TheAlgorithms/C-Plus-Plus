@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: backtracking/knight_tour.cpp File Reference</title>
+<title>TheAlgorithms/C++: backtracking/knight_tour.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -120,7 +137,9 @@ Include dependency graph for knight_tour.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d02/knight__tour_8cpp__incl.svg" width="158" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d1/d2a/knight__tour_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc0/namespacebacktracking.html">backtracking</a></td></tr>
@@ -133,10 +152,10 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:af27031fbff093ffd625f64010d98aab2" id="r_af27031fbff093ffd625f64010d98aab2"><td class="memTemplParams" colspan="2">template&lt;size_t V&gt; </td></tr>
-<tr class="memitem:af27031fbff093ffd625f64010d98aab2"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af27031fbff093ffd625f64010d98aab2">backtracking::knight_tour::issafe</a> (int x, int y, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, V &gt;, V &gt; &amp;sol)</td></tr>
+<tr class="memitem:af27031fbff093ffd625f64010d98aab2"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af27031fbff093ffd625f64010d98aab2">backtracking::knight_tour::issafe</a> (int x, int y, const std::array&lt; std::array&lt; int, V &gt;, V &gt; &amp;sol)</td></tr>
 <tr class="separator:af27031fbff093ffd625f64010d98aab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa47356d98676cf5315d978f741e29c9" id="r_aaa47356d98676cf5315d978f741e29c9"><td class="memTemplParams" colspan="2">template&lt;size_t V&gt; </td></tr>
-<tr class="memitem:aaa47356d98676cf5315d978f741e29c9"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aaa47356d98676cf5315d978f741e29c9">backtracking::knight_tour::solve</a> (int x, int y, int <a class="el" href="../../db/d3c/tower__of__hanoi_8cpp.html#af4cfc41e546f1f8d25f01e0804e8b61d">mov</a>, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, V &gt;, V &gt; &amp;sol, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, V &gt; &amp;xmov, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, V &gt; &amp;ymov)</td></tr>
+<tr class="memitem:aaa47356d98676cf5315d978f741e29c9"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aaa47356d98676cf5315d978f741e29c9">backtracking::knight_tour::solve</a> (int x, int y, int <a class="el" href="../../db/d3c/tower__of__hanoi_8cpp.html#af4cfc41e546f1f8d25f01e0804e8b61d">mov</a>, std::array&lt; std::array&lt; int, V &gt;, V &gt; &amp;sol, const std::array&lt; int, V &gt; &amp;xmov, std::array&lt; int, V &gt; &amp;ymov)</td></tr>
 <tr class="separator:aaa47356d98676cf5315d978f741e29c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <br /></td></tr>
@@ -148,6 +167,8 @@ Functions</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/nikhilarora068" target="_blank">Nikhil Arora</a> </dd>
 <dd>
 <a href="https://github.com/Panquesito7" target="_blank">David Leal</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d1/d2a/knight__tour_8cpp_source.html">knight_tour.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="af27031fbff093ffd625f64010d98aab2" name="af27031fbff093ffd625f64010d98aab2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af27031fbff093ffd625f64010d98aab2">&#9670;&#160;</a></span>issafe()</h2>
@@ -170,7 +191,7 @@ template&lt;size_t V&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, V &gt;, V &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sol</em></span>&#160;)</td>
+          <td class="paramtype">const std::array&lt; std::array&lt; int, V &gt;, V &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sol</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -191,15 +212,12 @@ template&lt;size_t V&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if .... </dd>
 <dd>
 <code>false</code> if .... </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d2a/knight__tour_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../d1/d2a/knight__tour_8cpp_source.html">knight_tour.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   40</span>                                                                    {</div>
 <div class="line"><span class="lineno">   41</span>    <span class="keywordflow">return</span> (x &lt; V &amp;&amp; x &gt;= 0 &amp;&amp; y &lt; V &amp;&amp; y &gt;= 0 &amp;&amp; sol[x][y] == -1);</div>
 <div class="line"><span class="lineno">   42</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d2a/knight__tour_8cpp_af27031fbff093ffd625f64010d98aab2_cgraph.svg" width="150" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -219,9 +237,11 @@ Here is the call graph for this function:</div>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d2a/knight__tour_8cpp_source.html#l00088">88</a> of file <a class="el" href="../../d1/d2a/knight__tour_8cpp_source.html">knight_tour.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   88</span>           {</div>
 <div class="line"><span class="lineno">   89</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> n = 8;</div>
-<div class="line"><span class="lineno">   90</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::array&lt;int, n&gt;</a>, n&gt; sol = {0};</div>
+<div class="line"><span class="lineno">   90</span>    std::array&lt;std::array&lt;int, n&gt;, n&gt; sol = {0};</div>
 <div class="line"><span class="lineno">   91</span> </div>
 <div class="line"><span class="lineno">   92</span>    <span class="keywordtype">int</span> i = 0, j = 0;</div>
 <div class="line"><span class="lineno">   93</span>    <span class="keywordflow">for</span> (i = 0; i &lt; n; i++) {</div>
@@ -230,26 +250,24 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   96</span>        }</div>
 <div class="line"><span class="lineno">   97</span>    }</div>
 <div class="line"><span class="lineno">   98</span> </div>
-<div class="line"><span class="lineno">   99</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, n&gt;</a> xmov = {2, 1, -1, -2, -2, -1, 1, 2};</div>
-<div class="line"><span class="lineno">  100</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, n&gt;</a> ymov = {1, 2, 2, 1, -1, -2, -2, -1};</div>
+<div class="line"><span class="lineno">   99</span>    std::array&lt;int, n&gt; xmov = {2, 1, -1, -2, -2, -1, 1, 2};</div>
+<div class="line"><span class="lineno">  100</span>    std::array&lt;int, n&gt; ymov = {1, 2, 2, 1, -1, -2, -2, -1};</div>
 <div class="line"><span class="lineno">  101</span> </div>
 <div class="line"><span class="lineno">  102</span>    sol[0][0] = 0;</div>
 <div class="line"><span class="lineno">  103</span> </div>
 <div class="line"><span class="lineno">  104</span>    <span class="keywordtype">bool</span> flag = backtracking::knight_tour::solve&lt;n&gt;(0, 0, 1, sol, xmov, ymov);</div>
 <div class="line"><span class="lineno">  105</span>    <span class="keywordflow">if</span> (flag == <span class="keyword">false</span>) {</div>
-<div class="line"><span class="lineno">  106</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Error: Solution does not exist\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  106</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Error: Solution does not exist\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  107</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">  108</span>        <span class="keywordflow">for</span> (i = 0; i &lt; n; i++) {</div>
 <div class="line"><span class="lineno">  109</span>            <span class="keywordflow">for</span> (j = 0; j &lt; n; j++) {</div>
-<div class="line"><span class="lineno">  110</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; sol[i][j] &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
+<div class="line"><span class="lineno">  110</span>                std::cout &lt;&lt; sol[i][j] &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
 <div class="line"><span class="lineno">  111</span>            }</div>
-<div class="line"><span class="lineno">  112</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  112</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  113</span>        }</div>
 <div class="line"><span class="lineno">  114</span>    }</div>
 <div class="line"><span class="lineno">  115</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  116</span>}</div>
-<div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -279,17 +297,17 @@ template&lt;size_t V&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, V &gt;, V &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sol</em></span>, </td>
+          <td class="paramtype">std::array&lt; std::array&lt; int, V &gt;, V &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sol</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, V &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>xmov</em></span>, </td>
+          <td class="paramtype">const std::array&lt; int, V &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>xmov</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, V &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>ymov</em></span>&#160;)</td>
+          <td class="paramtype">std::array&lt; int, V &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>ymov</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -313,6 +331,8 @@ template&lt;size_t V&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if solution exists </dd>
 <dd>
 <code>false</code> if solution does not exist </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d2a/knight__tour_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../d1/d2a/knight__tour_8cpp_source.html">knight_tour.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   58</span>                                                                 {</div>
 <div class="line"><span class="lineno">   59</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a> = 0, xnext = 0, ynext = 0;</div>
 <div class="line"><span class="lineno">   60</span> </div>
@@ -336,14 +356,9 @@ template&lt;size_t V&gt; </div>
 <div class="line"><span class="lineno">   78</span>    }</div>
 <div class="line"><span class="lineno">   79</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   80</span>}</div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a1b74d828b33760094906797042b89442"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">numerical_methods::simpson_method::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:117</div></div>
-<div class="ttc" id="atower__of__hanoi_8cpp_html_af4cfc41e546f1f8d25f01e0804e8b61d"><div class="ttname"><a href="../../db/d3c/tower__of__hanoi_8cpp.html#af4cfc41e546f1f8d25f01e0804e8b61d">mov</a></div><div class="ttdeci">void mov(tower *From, tower *To)</div><div class="ttdef"><b>Definition</b> tower_of_hanoi.cpp:39</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d2a/knight__tour_8cpp_aaa47356d98676cf5315d978f741e29c9_cgraph.svg" width="244" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a1b74d828b33760094906797042b89442"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">numerical_methods::simpson_method::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d18/composite__simpson__rule_8cpp_source.html#l00117">composite_simpson_rule.cpp:117</a></div></div>
+<div class="ttc" id="atower__of__hanoi_8cpp_html_af4cfc41e546f1f8d25f01e0804e8b61d"><div class="ttname"><a href="../../db/d3c/tower__of__hanoi_8cpp.html#af4cfc41e546f1f8d25f01e0804e8b61d">mov</a></div><div class="ttdeci">void mov(tower *From, tower *To)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d3c/tower__of__hanoi_8cpp_source.html#l00039">tower_of_hanoi.cpp:39</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

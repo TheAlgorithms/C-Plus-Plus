@@ -1,8 +1,0 @@
-<map id="data_structures::SegmentTree::update" name="data_structures::SegmentTree::update">
-<area shape="rect" id="Node000001" title="Helper method for update method below." alt="" coords="5,39,177,79"/>
-<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="50,39,47,29,54,20,69,14,91,12,115,14,129,21,127,26,113,20,91,17,70,19,57,24,53,30,55,37"/>
-<area shape="rect" id="Node000002" href="$dd/d95/classdata__structures_1_1_segment_tree.html#a8d22286b7be3dcbb701ac5c7d9c79841" title="Any associative function that combines x and y." alt="" coords="225,5,396,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,43,209,38,209,44,177,49"/>
-<area shape="rect" id="Node000003" href="$dd/d95/classdata__structures_1_1_segment_tree.html#a6d3beccc936af2377c8eeb17067fd141" title="Gives the midpoint between two integers." alt="" coords="225,71,396,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,69,209,74,209,79,176,74"/>
-</map>

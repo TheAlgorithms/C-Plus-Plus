@@ -1,7 +1,5 @@
 <map id="data_structures::queue_using_array::Queue_Array" name="data_structures::queue_using_array::Queue_Array">
-<area shape="rect" id="Node000001" title="Queue_Array class containing the main data and also index of head and tail of the array." alt="" coords="5,198,185,238"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array.html" title=" " alt="" coords="29,94,161,135"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,150,98,197,92,197,92,150"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/integer.html" title=" " alt="" coords="52,5,138,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="98,46,98,93,92,93,92,46"/>
+<area shape="rect" id="Node000001" title="Queue_Array class containing the main data and also index of head and tail of the array." alt="" coords="5,109,185,150"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="29,5,161,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,62,98,109,92,109,92,62"/>
 </map>

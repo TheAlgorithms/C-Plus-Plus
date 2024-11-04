@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="124,-97 0,-97 0,-77.75 124,-77.75 124,-97"/>
 <text text-anchor="middle" x="62" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; std::string &gt;</text>
 </a>
@@ -40,7 +40,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string.html" xlink:title=" ">
+<g id="a_Node000003"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="91.75,-163.5 32.25,-163.5 32.25,-144.25 91.75,-144.25 91.75,-163.5"/>
 <text text-anchor="middle" x="62" y="-150" font-family="Helvetica,sans-Serif" font-size="10.00">std::string</text>
 </a>
@@ -59,7 +59,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string.html" xlink:title=" ">
+<g id="a_Node000004"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="109,-231 15,-231 15,-200.5 109,-200.5 109,-231"/>
 <text text-anchor="start" x="23" y="-217.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::basic_string&lt;</text>
 <text text-anchor="middle" x="62" y="-206.25" font-family="Helvetica,sans-Serif" font-size="10.00"> Char &gt;</text>

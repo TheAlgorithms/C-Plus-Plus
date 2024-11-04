@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: sorting/selection_sort_recursive.cpp File Reference</title>
+<title>TheAlgorithms/C++: sorting/selection_sort_recursive.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -123,7 +140,9 @@ Include dependency graph for selection_sort_recursive.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d44/selection__sort__recursive_8cpp__incl.svg" width="434" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d4/d9f/selection__sort__recursive_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html">sorting</a></td></tr>
@@ -136,11 +155,11 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a5454eeb691725ccac0f59df1e133f834" id="r_a5454eeb691725ccac0f59df1e133f834"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a5454eeb691725ccac0f59df1e133f834"><td class="memTemplItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a5454eeb691725ccac0f59df1e133f834">sorting::selection_sort_recursive::findMinIndex</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;in_arr, uint64_t current_position=0)</td></tr>
+<tr class="memitem:a5454eeb691725ccac0f59df1e133f834"><td class="memTemplItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a5454eeb691725ccac0f59df1e133f834">sorting::selection_sort_recursive::findMinIndex</a> (const std::vector&lt; T &gt; &amp;in_arr, uint64_t current_position=0)</td></tr>
 <tr class="memdesc:a5454eeb691725ccac0f59df1e133f834"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main function finds the index of the minimum element.  <br /></td></tr>
 <tr class="separator:a5454eeb691725ccac0f59df1e133f834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6f7b33a070e376e1f4374e534435e89" id="r_ab6f7b33a070e376e1f4374e534435e89"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ab6f7b33a070e376e1f4374e534435e89"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab6f7b33a070e376e1f4374e534435e89">sorting::selection_sort_recursive::selectionSortRecursive</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;in_arr, uint64_t current_position=0)</td></tr>
+<tr class="memitem:ab6f7b33a070e376e1f4374e534435e89"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab6f7b33a070e376e1f4374e534435e89">sorting::selection_sort_recursive::selectionSortRecursive</a> (std::vector&lt; T &gt; &amp;in_arr, uint64_t current_position=0)</td></tr>
 <tr class="memdesc:ab6f7b33a070e376e1f4374e534435e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main function implements Selection sort.  <br /></td></tr>
 <tr class="separator:ab6f7b33a070e376e1f4374e534435e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
@@ -157,6 +176,8 @@ Functions</h2></td></tr>
 Implementation</h3>
 <p>FindMinIndex This function finds the minimum element of the array(list) recursively by simply comparing the minimum element of array reduced size by 1 and compares it to the last element of the array to find the minimum of the whole array.</p>
 <p>SelectionSortRecursive Just like selection sort, it divides the list into two parts (i.e.: sorted and unsorted) and finds the minimum of the unsorted array. By calling the <code>FindMinIndex</code> function, it swaps the minimum element with the first element of the list, and then solves recursively for the remaining unsorted list. </p><dl class="section author"><dt>Author</dt><dd><a href="https://github.com/Tushar-K24" target="_blank">Tushar Khanduri</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d4/d9f/selection__sort__recursive_8cpp_source.html">selection_sort_recursive.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a5454eeb691725ccac0f59df1e133f834" name="a5454eeb691725ccac0f59df1e133f834"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5454eeb691725ccac0f59df1e133f834">&#9670;&#160;</a></span>findMinIndex()</h2>
@@ -169,7 +190,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">uint64_t sorting::selection_sort_recursive::findMinIndex </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>in_arr</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>in_arr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -194,8 +215,10 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>index of the minimum element </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d9f/selection__sort__recursive_8cpp_source.html#l00056">56</a> of file <a class="el" href="../../d4/d9f/selection__sort__recursive_8cpp_source.html">selection_sort_recursive.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   57</span>                                                     {</div>
-<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">if</span> (current_position + 1 == in_arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()) {</div>
+<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">if</span> (current_position + 1 == in_arr.size()) {</div>
 <div class="line"><span class="lineno">   59</span>        <span class="keywordflow">return</span> current_position;</div>
 <div class="line"><span class="lineno">   60</span>    }</div>
 <div class="line"><span class="lineno">   61</span>    uint64_t answer = <a class="code hl_function" href="#a5454eeb691725ccac0f59df1e133f834">findMinIndex</a>(in_arr, current_position + 1);</div>
@@ -204,14 +227,8 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">   64</span>    }</div>
 <div class="line"><span class="lineno">   65</span>    <span class="keywordflow">return</span> answer;</div>
 <div class="line"><span class="lineno">   66</span>}</div>
-<div class="ttc" id="aselection__sort__recursive_8cpp_html_a5454eeb691725ccac0f59df1e133f834"><div class="ttname"><a href="#a5454eeb691725ccac0f59df1e133f834">sorting::selection_sort_recursive::findMinIndex</a></div><div class="ttdeci">uint64_t findMinIndex(const std::vector&lt; T &gt; &amp;in_arr, uint64_t current_position=0)</div><div class="ttdoc">The main function finds the index of the minimum element.</div><div class="ttdef"><b>Definition</b> selection_sort_recursive.cpp:56</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d9f/selection__sort__recursive_8cpp_a5454eeb691725ccac0f59df1e133f834_cgraph.svg" width="367" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aselection__sort__recursive_8cpp_html_a5454eeb691725ccac0f59df1e133f834"><div class="ttname"><a href="#a5454eeb691725ccac0f59df1e133f834">sorting::selection_sort_recursive::findMinIndex</a></div><div class="ttdeci">uint64_t findMinIndex(const std::vector&lt; T &gt; &amp;in_arr, uint64_t current_position=0)</div><div class="ttdoc">The main function finds the index of the minimum element.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d9f/selection__sort__recursive_8cpp_source.html#l00056">selection_sort_recursive.cpp:56</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -231,17 +248,14 @@ Here is the call graph for this function:</div>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d9f/selection__sort__recursive_8cpp_source.html#l00130">130</a> of file <a class="el" href="../../d4/d9f/selection__sort__recursive_8cpp_source.html">selection_sort_recursive.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  130</span>           {</div>
 <div class="line"><span class="lineno">  131</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
 <div class="line"><span class="lineno">  132</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  133</span>}</div>
-<div class="ttc" id="aselection__sort__recursive_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> selection_sort_recursive.cpp:95</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d9f/selection__sort__recursive_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="300" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aselection__sort__recursive_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d9f/selection__sort__recursive_8cpp_source.html#l00095">selection_sort_recursive.cpp:95</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab6f7b33a070e376e1f4374e534435e89" name="ab6f7b33a070e376e1f4374e534435e89"></a>
@@ -255,7 +269,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void sorting::selection_sort_recursive::selectionSortRecursive </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>in_arr</em></span>, </td>
+          <td class="paramtype">std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>in_arr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -280,25 +294,21 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d9f/selection__sort__recursive_8cpp_source.html#l00076">76</a> of file <a class="el" href="../../d4/d9f/selection__sort__recursive_8cpp_source.html">selection_sort_recursive.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   77</span>                                                           {</div>
-<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">if</span> (current_position == in_arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()) {</div>
+<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">if</span> (current_position == in_arr.size()) {</div>
 <div class="line"><span class="lineno">   79</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">   80</span>    }</div>
 <div class="line"><span class="lineno">   81</span>    uint64_t min_element_idx =</div>
 <div class="line"><span class="lineno">   82</span>        selection_sort_recursive::findMinIndex(in_arr, current_position);</div>
 <div class="line"><span class="lineno">   83</span>    <span class="keywordflow">if</span> (min_element_idx != current_position) {</div>
-<div class="line"><span class="lineno">   84</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(in_arr[min_element_idx], in_arr[current_position]);</div>
+<div class="line"><span class="lineno">   84</span>        std::swap(in_arr[min_element_idx], in_arr[current_position]);</div>
 <div class="line"><span class="lineno">   85</span>    }</div>
 <div class="line"><span class="lineno">   86</span>    <a class="code hl_function" href="#ab6f7b33a070e376e1f4374e534435e89">selectionSortRecursive</a>(in_arr, current_position + 1);</div>
 <div class="line"><span class="lineno">   87</span>}</div>
-<div class="ttc" id="aselection__sort__recursive_8cpp_html_ab6f7b33a070e376e1f4374e534435e89"><div class="ttname"><a href="#ab6f7b33a070e376e1f4374e534435e89">sorting::selection_sort_recursive::selectionSortRecursive</a></div><div class="ttdeci">void selectionSortRecursive(std::vector&lt; T &gt; &amp;in_arr, uint64_t current_position=0)</div><div class="ttdoc">The main function implements Selection sort.</div><div class="ttdef"><b>Definition</b> selection_sort_recursive.cpp:76</div></div>
-<div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d9f/selection__sort__recursive_8cpp_ab6f7b33a070e376e1f4374e534435e89_cgraph.svg" width="344" height="100"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aselection__sort__recursive_8cpp_html_ab6f7b33a070e376e1f4374e534435e89"><div class="ttname"><a href="#ab6f7b33a070e376e1f4374e534435e89">sorting::selection_sort_recursive::selectionSortRecursive</a></div><div class="ttdeci">void selectionSortRecursive(std::vector&lt; T &gt; &amp;in_arr, uint64_t current_position=0)</div><div class="ttdoc">The main function implements Selection sort.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d9f/selection__sort__recursive_8cpp_source.html#l00076">selection_sort_recursive.cpp:76</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -326,48 +336,39 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d9f/selection__sort__recursive_8cpp_source.html#l00095">95</a> of file <a class="el" href="../../d4/d9f/selection__sort__recursive_8cpp_source.html">selection_sort_recursive.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   95</span>                   {</div>
 <div class="line"><span class="lineno">   96</span>    <span class="comment">// 1st test</span></div>
 <div class="line"><span class="lineno">   97</span>    <span class="comment">// [1, 0, 2, 1] return [0, 1, 1, 2]</span></div>
-<div class="line"><span class="lineno">   98</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> array1 = {0, 1, 1, 2};</div>
-<div class="line"><span class="lineno">   99</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;1st test... &quot;</span>;</div>
+<div class="line"><span class="lineno">   98</span>    std::vector&lt;uint64_t&gt; array1 = {0, 1, 1, 2};</div>
+<div class="line"><span class="lineno">   99</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;1st test... &quot;</span>;</div>
 <div class="line"><span class="lineno">  100</span>    <a class="code hl_function" href="#ab6f7b33a070e376e1f4374e534435e89">sorting::selection_sort_recursive::selectionSortRecursive</a>(array1);</div>
-<div class="line"><span class="lineno">  101</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(array1), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(array1)));</div>
-<div class="line"><span class="lineno">  102</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  101</span>    assert(std::is_sorted(std::begin(array1), std::end(array1)));</div>
+<div class="line"><span class="lineno">  102</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  103</span>    <span class="comment">// 2nd test</span></div>
 <div class="line"><span class="lineno">  104</span>    <span class="comment">// [1, 0, 0, 1, 1, 0, 2, 1] return [0, 0, 0, 1, 1, 1, 1, 2]</span></div>
-<div class="line"><span class="lineno">  105</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> array2 = {1, 0, 0, 1, 1, 0, 2, 1};</div>
-<div class="line"><span class="lineno">  106</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;2nd test... &quot;</span>;</div>
+<div class="line"><span class="lineno">  105</span>    std::vector&lt;uint64_t&gt; array2 = {1, 0, 0, 1, 1, 0, 2, 1};</div>
+<div class="line"><span class="lineno">  106</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;2nd test... &quot;</span>;</div>
 <div class="line"><span class="lineno">  107</span>    <a class="code hl_function" href="#ab6f7b33a070e376e1f4374e534435e89">sorting::selection_sort_recursive::selectionSortRecursive</a>(array2);</div>
-<div class="line"><span class="lineno">  108</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(array2), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(array2)));</div>
-<div class="line"><span class="lineno">  109</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  108</span>    assert(std::is_sorted(std::begin(array2), std::end(array2)));</div>
+<div class="line"><span class="lineno">  109</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  110</span>    <span class="comment">// 3rd test</span></div>
 <div class="line"><span class="lineno">  111</span>    <span class="comment">// [1, 1, 0, 0, 1, 2, 2, 0, 2, 1] return [0, 0, 0, 1, 1, 1, 1, 2, 2, 2]</span></div>
-<div class="line"><span class="lineno">  112</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> array3 = {1, 1, 0, 0, 1, 2, 2, 0, 2, 1};</div>
-<div class="line"><span class="lineno">  113</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;3rd test... &quot;</span>;</div>
+<div class="line"><span class="lineno">  112</span>    std::vector&lt;uint64_t&gt; array3 = {1, 1, 0, 0, 1, 2, 2, 0, 2, 1};</div>
+<div class="line"><span class="lineno">  113</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;3rd test... &quot;</span>;</div>
 <div class="line"><span class="lineno">  114</span>    <a class="code hl_function" href="#ab6f7b33a070e376e1f4374e534435e89">sorting::selection_sort_recursive::selectionSortRecursive</a>(array3);</div>
-<div class="line"><span class="lineno">  115</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(array3), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(array3)));</div>
-<div class="line"><span class="lineno">  116</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  115</span>    assert(std::is_sorted(std::begin(array3), std::end(array3)));</div>
+<div class="line"><span class="lineno">  116</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  117</span>    <span class="comment">// 4th test</span></div>
 <div class="line"><span class="lineno">  118</span>    <span class="comment">// [2, 2, 2, 0, 0, 1, 1] return [0, 0, 1, 1, 2, 2, 2]</span></div>
-<div class="line"><span class="lineno">  119</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> array4 = {2, 2, 2, 0, 0, 1, 1};</div>
-<div class="line"><span class="lineno">  120</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;4th test... &quot;</span>;</div>
+<div class="line"><span class="lineno">  119</span>    std::vector&lt;uint64_t&gt; array4 = {2, 2, 2, 0, 0, 1, 1};</div>
+<div class="line"><span class="lineno">  120</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;4th test... &quot;</span>;</div>
 <div class="line"><span class="lineno">  121</span>    <a class="code hl_function" href="#ab6f7b33a070e376e1f4374e534435e89">sorting::selection_sort_recursive::selectionSortRecursive</a>(array4);</div>
-<div class="line"><span class="lineno">  122</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(array4), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(array4)));</div>
-<div class="line"><span class="lineno">  123</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  122</span>    assert(std::is_sorted(std::begin(array4), std::end(array4)));</div>
+<div class="line"><span class="lineno">  123</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  124</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="ais_sorted_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></div><div class="ttdeci">T is_sorted(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d9f/selection__sort__recursive_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="203" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

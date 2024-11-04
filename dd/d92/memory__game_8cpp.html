@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: games/memory_game.cpp File Reference</title>
+<title>TheAlgorithms/C++: games/memory_game.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -125,7 +142,9 @@ Include dependency graph for memory_game.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d18/memory__game_8cpp__incl.svg" width="603" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../dd/d92/memory__game_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d9c/namespacegames.html">games</a></td></tr>
@@ -146,27 +165,27 @@ Functions</h2></td></tr>
 <tr class="memdesc:a33167bb9cce6d527b478b4f6ae8c3f59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to verify if the given input is a number or not. This is very useful to prevent the program being stuck in a loop.  <br /></td></tr>
 <tr class="separator:a33167bb9cce6d527b478b4f6ae8c3f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad573c8ae66ab66156d03e5e81bbba214" id="r_ad573c8ae66ab66156d03e5e81bbba214"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad573c8ae66ab66156d03e5e81bbba214"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d41/namespacegames_1_1memory__game.html#ad573c8ae66ab66156d03e5e81bbba214">games::memory_game::init</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *table)</td></tr>
+<tr class="memitem:ad573c8ae66ab66156d03e5e81bbba214"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d41/namespacegames_1_1memory__game.html#ad573c8ae66ab66156d03e5e81bbba214">games::memory_game::init</a> (std::vector&lt; T &gt; *table)</td></tr>
 <tr class="memdesc:ad573c8ae66ab66156d03e5e81bbba214"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the table with the letters.  <br /></td></tr>
 <tr class="separator:ad573c8ae66ab66156d03e5e81bbba214"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac589ef65abb0a6b9a7116ee0f9fd5280" id="r_ac589ef65abb0a6b9a7116ee0f9fd5280"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ac589ef65abb0a6b9a7116ee0f9fd5280"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d41/namespacegames_1_1memory__game.html#ac589ef65abb0a6b9a7116ee0f9fd5280">games::memory_game::print_table</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;table)</td></tr>
+<tr class="memitem:ac589ef65abb0a6b9a7116ee0f9fd5280"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d41/namespacegames_1_1memory__game.html#ac589ef65abb0a6b9a7116ee0f9fd5280">games::memory_game::print_table</a> (const std::vector&lt; T &gt; &amp;table)</td></tr>
 <tr class="memdesc:ac589ef65abb0a6b9a7116ee0f9fd5280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to print the table.  <br /></td></tr>
 <tr class="separator:ac589ef65abb0a6b9a7116ee0f9fd5280"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc62ebb75853446656e24932bdc6dd6b" id="r_adc62ebb75853446656e24932bdc6dd6b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:adc62ebb75853446656e24932bdc6dd6b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d41/namespacegames_1_1memory__game.html#adc62ebb75853446656e24932bdc6dd6b">games::memory_game::reset_data</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;table, int *answer, int *old_answer, int *memory_count)</td></tr>
+<tr class="memitem:adc62ebb75853446656e24932bdc6dd6b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d41/namespacegames_1_1memory__game.html#adc62ebb75853446656e24932bdc6dd6b">games::memory_game::reset_data</a> (const std::vector&lt; T &gt; &amp;table, int *answer, int *old_answer, int *memory_count)</td></tr>
 <tr class="memdesc:adc62ebb75853446656e24932bdc6dd6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function that resets the data if the user enters an invalid value.  <br /></td></tr>
 <tr class="separator:adc62ebb75853446656e24932bdc6dd6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5714d97649c0edd57b4fb449799676a3" id="r_a5714d97649c0edd57b4fb449799676a3"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a5714d97649c0edd57b4fb449799676a3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d41/namespacegames_1_1memory__game.html#a5714d97649c0edd57b4fb449799676a3">games::memory_game::ask_data</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;table, int *answer, int *old_answer, int *memory_count)</td></tr>
+<tr class="memitem:a5714d97649c0edd57b4fb449799676a3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d41/namespacegames_1_1memory__game.html#a5714d97649c0edd57b4fb449799676a3">games::memory_game::ask_data</a> (const std::vector&lt; T &gt; &amp;table, int *answer, int *old_answer, int *memory_count)</td></tr>
 <tr class="memdesc:a5714d97649c0edd57b4fb449799676a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that asks the user for their input in the table they previously chose.  <br /></td></tr>
 <tr class="separator:a5714d97649c0edd57b4fb449799676a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a370760f2b328ad341bcb77d82fa17b01" id="r_a370760f2b328ad341bcb77d82fa17b01"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a370760f2b328ad341bcb77d82fa17b01"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d41/namespacegames_1_1memory__game.html#a370760f2b328ad341bcb77d82fa17b01">games::memory_game::match</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;table, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *table_empty, const int &amp;answer, bool *first_time, int *old_answer, int *memory_count)</td></tr>
+<tr class="memitem:a370760f2b328ad341bcb77d82fa17b01"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d41/namespacegames_1_1memory__game.html#a370760f2b328ad341bcb77d82fa17b01">games::memory_game::match</a> (const std::vector&lt; T &gt; &amp;table, std::vector&lt; T &gt; *table_empty, const int &amp;answer, bool *first_time, int *old_answer, int *memory_count)</td></tr>
 <tr class="memdesc:a370760f2b328ad341bcb77d82fa17b01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the two values given by the user match.  <br /></td></tr>
 <tr class="separator:a370760f2b328ad341bcb77d82fa17b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ceeea62d8fa6c563e2c66359fd73413" id="r_a3ceeea62d8fa6c563e2c66359fd73413"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a3ceeea62d8fa6c563e2c66359fd73413"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d41/namespacegames_1_1memory__game.html#a3ceeea62d8fa6c563e2c66359fd73413">games::memory_game::assign_results</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *table_empty, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *table, int *answer, bool *first_time, int *old_answer, int *memory_count)</td></tr>
+<tr class="memitem:a3ceeea62d8fa6c563e2c66359fd73413"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d41/namespacegames_1_1memory__game.html#a3ceeea62d8fa6c563e2c66359fd73413">games::memory_game::assign_results</a> (std::vector&lt; T &gt; *table_empty, std::vector&lt; T &gt; *table, int *answer, bool *first_time, int *old_answer, int *memory_count)</td></tr>
 <tr class="memdesc:a3ceeea62d8fa6c563e2c66359fd73413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to assign the results to the table.  <br /></td></tr>
 <tr class="separator:a3ceeea62d8fa6c563e2c66359fd73413"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
@@ -178,6 +197,8 @@ Functions</h2></td></tr>
 <p>The game consists on finding <b>the pair</b> of all the given letters depending on the table size. Once all of the instances are all found, the game will end and will ask you if you'd like to play again or not.</p>
 <p>It provides <b>3 different sizes</b> available that the user can choose (4x2, 5x2, 7x2). 7x2 being the biggest table size and hardest mode. The bigger the size, <b>the more letters are available</b>.</p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/Panquesito7" target="_blank">David Leal</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../dd/d92/memory__game_8cpp_source.html">memory_game.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -202,30 +223,31 @@ Functions</h2></td></tr>
 <p>&lt; Previous answer (number index).</p>
 <p>&lt; Counter to check if the user has already answered two values.</p>
 <p>&lt; Whether the user has answered 1 value or not (previous answered values do not count).</p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d92/memory__game_8cpp_source.html#l00360">360</a> of file <a class="el" href="../../dd/d92/memory__game_8cpp_source.html">memory_game.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  360</span>           {</div>
 <div class="line"><span class="lineno">  361</span>    <span class="comment">// Start randomizer. This changes the values every time.</span></div>
-<div class="line"><span class="lineno">  362</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a>(<span class="keyword">nullptr</span>));</div>
+<div class="line"><span class="lineno">  362</span>    std::srand(std::time(<span class="keyword">nullptr</span>));</div>
 <div class="line"><span class="lineno">  363</span> </div>
-<div class="line"><span class="lineno">  364</span>    <span class="keywordtype">int</span> size = 0;       <span class="comment">///&lt; Size of the table.</span></div>
-<div class="line"><span class="lineno">  365</span>    <span class="keywordtype">int</span> selection = 0;  <span class="comment">///&lt; Selection of the size (4x2, 5x2, 7x2).</span></div>
+<div class="line"><span class="lineno">  364</span>    <span class="keywordtype">int</span> size = 0;       </div>
+<div class="line"><span class="lineno">  365</span>    <span class="keywordtype">int</span> selection = 0;  </div>
 <div class="line"><span class="lineno">  366</span> </div>
-<div class="line"><span class="lineno">  367</span>    <span class="keywordtype">int</span> response = 0;    <span class="comment">///&lt; The answer (number index) that the user chose.</span></div>
-<div class="line"><span class="lineno">  368</span>    <span class="keywordtype">int</span> old_answer = 0;  <span class="comment">///&lt; Previous answer (number index).</span></div>
+<div class="line"><span class="lineno">  367</span>    <span class="keywordtype">int</span> response = 0;    </div>
+<div class="line"><span class="lineno">  368</span>    <span class="keywordtype">int</span> old_answer = 0;  </div>
 <div class="line"><span class="lineno">  369</span> </div>
 <div class="line"><span class="lineno">  370</span>    <span class="keywordtype">int</span> memory_count =</div>
-<div class="line"><span class="lineno">  371</span>        0;  <span class="comment">///&lt; Counter to check if the user has already answered two values.</span></div>
-<div class="line"><span class="lineno">  372</span>    <span class="keywordtype">bool</span> first_time = <span class="keyword">true</span>;  <span class="comment">///&lt; Whether the user has answered 1 value or not</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  373</span><span class="comment">                             ///&lt; (previous answered values do not count).</span></div>
-<div class="line"><span class="lineno">  374</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  375</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\tMEMORY GAME\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  371</span>        0;  </div>
+<div class="line"><span class="lineno">  372</span>    <span class="keywordtype">bool</span> first_time = <span class="keyword">true</span>;  </div>
+<div class="line"><span class="lineno">  374</span> </div>
+<div class="line"><span class="lineno">  375</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\tMEMORY GAME\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  376</span> </div>
 <div class="line"><span class="lineno">  377</span>    <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno">  378</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n1. 4x2 (1)&quot;</span>;</div>
-<div class="line"><span class="lineno">  379</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n2. 5x2 (2)&quot;</span>;</div>
-<div class="line"><span class="lineno">  380</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n3. 7x2 (3)\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  378</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\n1. 4x2 (1)&quot;</span>;</div>
+<div class="line"><span class="lineno">  379</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\n2. 5x2 (2)&quot;</span>;</div>
+<div class="line"><span class="lineno">  380</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\n3. 7x2 (3)\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  381</span> </div>
-<div class="line"><span class="lineno">  382</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nChoose table size: &quot;</span>;</div>
-<div class="line"><span class="lineno">  383</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; selection;</div>
+<div class="line"><span class="lineno">  382</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\nChoose table size: &quot;</span>;</div>
+<div class="line"><span class="lineno">  383</span>        std::cin &gt;&gt; selection;</div>
 <div class="line"><span class="lineno">  384</span>    } <span class="keywordflow">while</span> ((selection &lt; 1 || selection &gt; 3) &amp;&amp;</div>
 <div class="line"><span class="lineno">  385</span>             (!<a class="code hl_function" href="../../d8/d41/namespacegames_1_1memory__game.html#a33167bb9cce6d527b478b4f6ae8c3f59">games::memory_game::is_number</a>(selection)));</div>
 <div class="line"><span class="lineno">  386</span> </div>
@@ -244,10 +266,10 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  399</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  400</span>    }</div>
 <div class="line"><span class="lineno">  401</span> </div>
-<div class="line"><span class="lineno">  402</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;char&gt;</a> table(size);</div>
-<div class="line"><span class="lineno">  403</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;char&gt;</a> table_empty(size);</div>
+<div class="line"><span class="lineno">  402</span>    std::vector&lt;char&gt; table(size);</div>
+<div class="line"><span class="lineno">  403</span>    std::vector&lt;char&gt; table_empty(size);</div>
 <div class="line"><span class="lineno">  404</span> </div>
-<div class="line"><span class="lineno">  405</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  405</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  406</span> </div>
 <div class="line"><span class="lineno">  407</span>    <a class="code hl_function" href="../../d8/d41/namespacegames_1_1memory__game.html#ad573c8ae66ab66156d03e5e81bbba214">games::memory_game::init</a>(&amp;table);</div>
 <div class="line"><span class="lineno">  408</span>    <a class="code hl_function" href="../../d8/d41/namespacegames_1_1memory__game.html#a5714d97649c0edd57b4fb449799676a3">games::memory_game::ask_data</a>(table_empty, &amp;response, &amp;old_answer,</div>
@@ -257,21 +279,11 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  412</span> </div>
 <div class="line"><span class="lineno">  413</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  414</span>}</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="anamespacegames_1_1memory__game_html_a33167bb9cce6d527b478b4f6ae8c3f59"><div class="ttname"><a href="../../d8/d41/namespacegames_1_1memory__game.html#a33167bb9cce6d527b478b4f6ae8c3f59">games::memory_game::is_number</a></div><div class="ttdeci">bool is_number(const T &amp;input)</div><div class="ttdoc">Utility function to verify if the given input is a number or not. This is very useful to prevent the ...</div><div class="ttdef"><b>Definition</b> memory_game.cpp:62</div></div>
-<div class="ttc" id="anamespacegames_1_1memory__game_html_a3ceeea62d8fa6c563e2c66359fd73413"><div class="ttname"><a href="../../d8/d41/namespacegames_1_1memory__game.html#a3ceeea62d8fa6c563e2c66359fd73413">games::memory_game::assign_results</a></div><div class="ttdeci">void assign_results(std::vector&lt; T &gt; *table_empty, std::vector&lt; T &gt; *table, int *answer, bool *first_time, int *old_answer, int *memory_count)</div><div class="ttdoc">Function to assign the results to the table.</div><div class="ttdef"><b>Definition</b> memory_game.cpp:289</div></div>
-<div class="ttc" id="anamespacegames_1_1memory__game_html_a5714d97649c0edd57b4fb449799676a3"><div class="ttname"><a href="../../d8/d41/namespacegames_1_1memory__game.html#a5714d97649c0edd57b4fb449799676a3">games::memory_game::ask_data</a></div><div class="ttdeci">void ask_data(const std::vector&lt; T &gt; &amp;table, int *answer, int *old_answer, int *memory_count)</div><div class="ttdoc">Function that asks the user for their input in the table they previously chose.</div><div class="ttdef"><b>Definition</b> memory_game.cpp:161</div></div>
-<div class="ttc" id="anamespacegames_1_1memory__game_html_ad573c8ae66ab66156d03e5e81bbba214"><div class="ttname"><a href="../../d8/d41/namespacegames_1_1memory__game.html#ad573c8ae66ab66156d03e5e81bbba214">games::memory_game::init</a></div><div class="ttdeci">void init(std::vector&lt; T &gt; *table)</div><div class="ttdoc">Initializes the table with the letters.</div><div class="ttdef"><b>Definition</b> memory_game.cpp:80</div></div>
-<div class="ttc" id="asrand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a></div><div class="ttdeci">T srand(T... args)</div></div>
-<div class="ttc" id="atime_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a></div><div class="ttdeci">T time(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d92/memory__game_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="667" height="438"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="anamespacegames_1_1memory__game_html_a33167bb9cce6d527b478b4f6ae8c3f59"><div class="ttname"><a href="../../d8/d41/namespacegames_1_1memory__game.html#a33167bb9cce6d527b478b4f6ae8c3f59">games::memory_game::is_number</a></div><div class="ttdeci">bool is_number(const T &amp;input)</div><div class="ttdoc">Utility function to verify if the given input is a number or not. This is very useful to prevent the ...</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d92/memory__game_8cpp_source.html#l00062">memory_game.cpp:62</a></div></div>
+<div class="ttc" id="anamespacegames_1_1memory__game_html_a3ceeea62d8fa6c563e2c66359fd73413"><div class="ttname"><a href="../../d8/d41/namespacegames_1_1memory__game.html#a3ceeea62d8fa6c563e2c66359fd73413">games::memory_game::assign_results</a></div><div class="ttdeci">void assign_results(std::vector&lt; T &gt; *table_empty, std::vector&lt; T &gt; *table, int *answer, bool *first_time, int *old_answer, int *memory_count)</div><div class="ttdoc">Function to assign the results to the table.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d92/memory__game_8cpp_source.html#l00289">memory_game.cpp:289</a></div></div>
+<div class="ttc" id="anamespacegames_1_1memory__game_html_a5714d97649c0edd57b4fb449799676a3"><div class="ttname"><a href="../../d8/d41/namespacegames_1_1memory__game.html#a5714d97649c0edd57b4fb449799676a3">games::memory_game::ask_data</a></div><div class="ttdeci">void ask_data(const std::vector&lt; T &gt; &amp;table, int *answer, int *old_answer, int *memory_count)</div><div class="ttdoc">Function that asks the user for their input in the table they previously chose.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d92/memory__game_8cpp_source.html#l00161">memory_game.cpp:161</a></div></div>
+<div class="ttc" id="anamespacegames_1_1memory__game_html_ad573c8ae66ab66156d03e5e81bbba214"><div class="ttname"><a href="../../d8/d41/namespacegames_1_1memory__game.html#ad573c8ae66ab66156d03e5e81bbba214">games::memory_game::init</a></div><div class="ttdeci">void init(std::vector&lt; T &gt; *table)</div><div class="ttdoc">Initializes the table with the letters.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d92/memory__game_8cpp_source.html#l00080">memory_game.cpp:80</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5bdc30951221eae9c33413ff9eb574f6" name="a5bdc30951221eae9c33413ff9eb574f6"></a>
@@ -300,7 +312,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>for sleep() </p>
-<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/random_shuffle.html">std::shuffle()</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand()</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time()</a> for IO operations for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/mersenne_twister_engine.html">std::mt19937</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> </p>
+<p>for std::shuffle() for std::srand() for std::time() for IO operations for std::mt19937 for std::vector </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d92/memory__game_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../dd/d92/memory__game_8cpp_source.html">memory_game.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   36</span>                             {</div>
 <div class="line"><span class="lineno">   37</span>    <span class="keywordflow">return</span> sleep(seconds);</div>
 <div class="line"><span class="lineno">   38</span>}</div>

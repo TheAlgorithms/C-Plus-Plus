@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: binary_search_tree&lt; T &gt; Class Template Reference</title>
+<title>TheAlgorithms/C++: binary_search_tree&lt; T &gt; Class Template Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -119,7 +136,7 @@ $(function(){initNavTree('d9/dde/classbinary__search__tree.html','../../'); init
 <div class="dynheader">
 Collaboration diagram for binary_search_tree&lt; T &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/da6/classbinary__search__tree__coll__graph.svg" width="376" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/da6/classbinary__search__tree__coll__graph.svg" width="331" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -148,51 +165,51 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a42b16f26928b5e994925100594a167a0" id="r_a42b16f26928b5e994925100594a167a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42b16f26928b5e994925100594a167a0">find_max</a> (T &amp;ret_value)</td></tr>
 <tr class="memdesc:a42b16f26928b5e994925100594a167a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the largest value in the BST.  <br /></td></tr>
 <tr class="separator:a42b16f26928b5e994925100594a167a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a564fe43e7e8f7ecb6f10667a70fbc6f3" id="r_a564fe43e7e8f7ecb6f10667a70fbc6f3"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a564fe43e7e8f7ecb6f10667a70fbc6f3">size</a> ()</td></tr>
+<tr class="memitem:a564fe43e7e8f7ecb6f10667a70fbc6f3" id="r_a564fe43e7e8f7ecb6f10667a70fbc6f3"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a564fe43e7e8f7ecb6f10667a70fbc6f3">size</a> ()</td></tr>
 <tr class="memdesc:a564fe43e7e8f7ecb6f10667a70fbc6f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of values in the BST.  <br /></td></tr>
 <tr class="separator:a564fe43e7e8f7ecb6f10667a70fbc6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f23830316204664514f396a4eb5275a" id="r_a1f23830316204664514f396a4eb5275a"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f23830316204664514f396a4eb5275a">get_elements_inorder</a> ()</td></tr>
+<tr class="memitem:a1f23830316204664514f396a4eb5275a" id="r_a1f23830316204664514f396a4eb5275a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f23830316204664514f396a4eb5275a">get_elements_inorder</a> ()</td></tr>
 <tr class="memdesc:a1f23830316204664514f396a4eb5275a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all values of the BST in in-order order.  <br /></td></tr>
 <tr class="separator:a1f23830316204664514f396a4eb5275a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5764c1cf848f84a5b77462036a6d8c13" id="r_a5764c1cf848f84a5b77462036a6d8c13"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5764c1cf848f84a5b77462036a6d8c13">get_elements_preorder</a> ()</td></tr>
+<tr class="memitem:a5764c1cf848f84a5b77462036a6d8c13" id="r_a5764c1cf848f84a5b77462036a6d8c13"><td class="memItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5764c1cf848f84a5b77462036a6d8c13">get_elements_preorder</a> ()</td></tr>
 <tr class="memdesc:a5764c1cf848f84a5b77462036a6d8c13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all values of the BST in pre-order order.  <br /></td></tr>
 <tr class="separator:a5764c1cf848f84a5b77462036a6d8c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c011e1b0863d79c3a7c11a0426bdcff" id="r_a5c011e1b0863d79c3a7c11a0426bdcff"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c011e1b0863d79c3a7c11a0426bdcff">get_elements_postorder</a> ()</td></tr>
+<tr class="memitem:a5c011e1b0863d79c3a7c11a0426bdcff" id="r_a5c011e1b0863d79c3a7c11a0426bdcff"><td class="memItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c011e1b0863d79c3a7c11a0426bdcff">get_elements_postorder</a> ()</td></tr>
 <tr class="memdesc:a5c011e1b0863d79c3a7c11a0426bdcff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all values of the BST in post-order order.  <br /></td></tr>
 <tr class="separator:a5c011e1b0863d79c3a7c11a0426bdcff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a75f897af6aa732a9901454401c869bcb" id="r_a75f897af6aa732a9901454401c869bcb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75f897af6aa732a9901454401c869bcb">find_max</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;<a class="el" href="../../d5/da1/structnode.html">node</a>, T &amp;ret_value)</td></tr>
+<tr class="memitem:a75f897af6aa732a9901454401c869bcb" id="r_a75f897af6aa732a9901454401c869bcb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75f897af6aa732a9901454401c869bcb">find_max</a> (std::unique_ptr&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;<a class="el" href="../../d5/da1/structnode.html">node</a>, T &amp;ret_value)</td></tr>
 <tr class="memdesc:a75f897af6aa732a9901454401c869bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursive function to find the maximum value in the BST.  <br /></td></tr>
 <tr class="separator:a75f897af6aa732a9901454401c869bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9a2c7c187a7ca3142c77ce342ef3153" id="r_af9a2c7c187a7ca3142c77ce342ef3153"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9a2c7c187a7ca3142c77ce342ef3153">find_min</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;<a class="el" href="../../d5/da1/structnode.html">node</a>, T &amp;ret_value)</td></tr>
+<tr class="memitem:af9a2c7c187a7ca3142c77ce342ef3153" id="r_af9a2c7c187a7ca3142c77ce342ef3153"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9a2c7c187a7ca3142c77ce342ef3153">find_min</a> (std::unique_ptr&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;<a class="el" href="../../d5/da1/structnode.html">node</a>, T &amp;ret_value)</td></tr>
 <tr class="memdesc:af9a2c7c187a7ca3142c77ce342ef3153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursive function to find the minimum value in the BST.  <br /></td></tr>
 <tr class="separator:af9a2c7c187a7ca3142c77ce342ef3153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d1e7e10efa74d741bf48cf032df3778" id="r_a9d1e7e10efa74d741bf48cf032df3778"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d1e7e10efa74d741bf48cf032df3778">insert</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;<a class="el" href="../../d5/da1/structnode.html">node</a>, T new_value)</td></tr>
+<tr class="memitem:a9d1e7e10efa74d741bf48cf032df3778" id="r_a9d1e7e10efa74d741bf48cf032df3778"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d1e7e10efa74d741bf48cf032df3778">insert</a> (std::unique_ptr&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;<a class="el" href="../../d5/da1/structnode.html">node</a>, T new_value)</td></tr>
 <tr class="memdesc:a9d1e7e10efa74d741bf48cf032df3778"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursive function to insert a value into the BST.  <br /></td></tr>
 <tr class="separator:a9d1e7e10efa74d741bf48cf032df3778"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4a865ce5244608819b169fc78a41153" id="r_af4a865ce5244608819b169fc78a41153"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4a865ce5244608819b169fc78a41153">remove</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;parent, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;<a class="el" href="../../d5/da1/structnode.html">node</a>, T rm_value)</td></tr>
+<tr class="memitem:af4a865ce5244608819b169fc78a41153" id="r_af4a865ce5244608819b169fc78a41153"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4a865ce5244608819b169fc78a41153">remove</a> (std::unique_ptr&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;parent, std::unique_ptr&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;<a class="el" href="../../d5/da1/structnode.html">node</a>, T rm_value)</td></tr>
 <tr class="memdesc:af4a865ce5244608819b169fc78a41153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursive function to remove a value from the BST.  <br /></td></tr>
 <tr class="separator:af4a865ce5244608819b169fc78a41153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4f84b2eec9b9201af1840868ddb5fb2" id="r_aa4f84b2eec9b9201af1840868ddb5fb2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4f84b2eec9b9201af1840868ddb5fb2">contains</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;<a class="el" href="../../d5/da1/structnode.html">node</a>, T value)</td></tr>
+<tr class="memitem:aa4f84b2eec9b9201af1840868ddb5fb2" id="r_aa4f84b2eec9b9201af1840868ddb5fb2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4f84b2eec9b9201af1840868ddb5fb2">contains</a> (std::unique_ptr&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;<a class="el" href="../../d5/da1/structnode.html">node</a>, T value)</td></tr>
 <tr class="memdesc:aa4f84b2eec9b9201af1840868ddb5fb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursive function to check if a value is in the BST.  <br /></td></tr>
 <tr class="separator:aa4f84b2eec9b9201af1840868ddb5fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fcf37549bd002c174a45b0b4203c2bd" id="r_a2fcf37549bd002c174a45b0b4203c2bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fcf37549bd002c174a45b0b4203c2bd">traverse_inorder</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt; void(T)&gt; callback, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;<a class="el" href="../../d5/da1/structnode.html">node</a>)</td></tr>
+<tr class="memitem:a2fcf37549bd002c174a45b0b4203c2bd" id="r_a2fcf37549bd002c174a45b0b4203c2bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fcf37549bd002c174a45b0b4203c2bd">traverse_inorder</a> (std::function&lt; void(T)&gt; callback, std::unique_ptr&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;<a class="el" href="../../d5/da1/structnode.html">node</a>)</td></tr>
 <tr class="memdesc:a2fcf37549bd002c174a45b0b4203c2bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursive function to traverse the tree in in-order order.  <br /></td></tr>
 <tr class="separator:a2fcf37549bd002c174a45b0b4203c2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab81edd415324d372632c42dc7dbcb9e1" id="r_ab81edd415324d372632c42dc7dbcb9e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab81edd415324d372632c42dc7dbcb9e1">traverse_preorder</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt; void(T)&gt; callback, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;<a class="el" href="../../d5/da1/structnode.html">node</a>)</td></tr>
+<tr class="memitem:ab81edd415324d372632c42dc7dbcb9e1" id="r_ab81edd415324d372632c42dc7dbcb9e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab81edd415324d372632c42dc7dbcb9e1">traverse_preorder</a> (std::function&lt; void(T)&gt; callback, std::unique_ptr&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;<a class="el" href="../../d5/da1/structnode.html">node</a>)</td></tr>
 <tr class="memdesc:ab81edd415324d372632c42dc7dbcb9e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursive function to traverse the tree in pre-order order.  <br /></td></tr>
 <tr class="separator:ab81edd415324d372632c42dc7dbcb9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87c0a35845d27e0f6fc1f4eaa0333362" id="r_a87c0a35845d27e0f6fc1f4eaa0333362"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87c0a35845d27e0f6fc1f4eaa0333362">traverse_postorder</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt; void(T)&gt; callback, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;<a class="el" href="../../d5/da1/structnode.html">node</a>)</td></tr>
+<tr class="memitem:a87c0a35845d27e0f6fc1f4eaa0333362" id="r_a87c0a35845d27e0f6fc1f4eaa0333362"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87c0a35845d27e0f6fc1f4eaa0333362">traverse_postorder</a> (std::function&lt; void(T)&gt; callback, std::unique_ptr&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;<a class="el" href="../../d5/da1/structnode.html">node</a>)</td></tr>
 <tr class="memdesc:a87c0a35845d27e0f6fc1f4eaa0333362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursive function to traverse the tree in post-order order.  <br /></td></tr>
 <tr class="separator:a87c0a35845d27e0f6fc1f4eaa0333362"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:aa08f65f6f3bfcb14f8c3d1e65305ae50" id="r_aa08f65f6f3bfcb14f8c3d1e65305ae50"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">root_</a></td></tr>
+<tr class="memitem:aa08f65f6f3bfcb14f8c3d1e65305ae50" id="r_aa08f65f6f3bfcb14f8c3d1e65305ae50"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">root_</a></td></tr>
 <tr class="separator:aa08f65f6f3bfcb14f8c3d1e65305ae50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07ba32ce1a2af6e357600ac8c8e98dbc" id="r_a07ba32ce1a2af6e357600ac8c8e98dbc"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07ba32ce1a2af6e357600ac8c8e98dbc">size_</a> = 0</td></tr>
+<tr class="memitem:a07ba32ce1a2af6e357600ac8c8e98dbc" id="r_a07ba32ce1a2af6e357600ac8c8e98dbc"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07ba32ce1a2af6e357600ac8c8e98dbc">size_</a> = 0</td></tr>
 <tr class="separator:a07ba32ce1a2af6e357600ac8c8e98dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -204,6 +221,8 @@ class binary_search_tree&lt; T &gt;</div><p>The Binary Search Tree class. </p>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html#l00020">20</a> of file <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html">binary_search_tree2.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa67321ed575ca313cd71d833d91234a6" name="aa67321ed575ca313cd71d833d91234a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa67321ed575ca313cd71d833d91234a6">&#9670;&#160;</a></span>binary_search_tree()</h2>
@@ -231,12 +250,14 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Construct a new Binary Search Tree object. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html#l00247">247</a> of file <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html">binary_search_tree2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  247</span>                         {</div>
 <div class="line"><span class="lineno">  248</span>        <a class="code hl_variable" href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">root_</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  249</span>        <a class="code hl_variable" href="#a07ba32ce1a2af6e357600ac8c8e98dbc">size_</a> = 0;</div>
 <div class="line"><span class="lineno">  250</span>    }</div>
-<div class="ttc" id="aclassbinary__search__tree_html_a07ba32ce1a2af6e357600ac8c8e98dbc"><div class="ttname"><a href="#a07ba32ce1a2af6e357600ac8c8e98dbc">binary_search_tree::size_</a></div><div class="ttdeci">std::size_t size_</div><div class="ttdef"><b>Definition</b> binary_search_tree2.cpp:43</div></div>
-<div class="ttc" id="aclassbinary__search__tree_html_aa08f65f6f3bfcb14f8c3d1e65305ae50"><div class="ttname"><a href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">binary_search_tree::root_</a></div><div class="ttdeci">std::unique_ptr&lt; bst_node &gt; root_</div><div class="ttdef"><b>Definition</b> binary_search_tree2.cpp:42</div></div>
+<div class="ttc" id="aclassbinary__search__tree_html_a07ba32ce1a2af6e357600ac8c8e98dbc"><div class="ttname"><a href="#a07ba32ce1a2af6e357600ac8c8e98dbc">binary_search_tree::size_</a></div><div class="ttdeci">std::size_t size_</div><div class="ttdef"><b>Definition</b> <a href="../../df/d42/binary__search__tree2_8cpp_source.html#l00043">binary_search_tree2.cpp:43</a></div></div>
+<div class="ttc" id="aclassbinary__search__tree_html_aa08f65f6f3bfcb14f8c3d1e65305ae50"><div class="ttname"><a href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">binary_search_tree::root_</a></div><div class="ttdeci">std::unique_ptr&lt; bst_node &gt; root_</div><div class="ttdef"><b>Definition</b> <a href="../../df/d42/binary__search__tree2_8cpp_source.html#l00042">binary_search_tree2.cpp:42</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -255,7 +276,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="../../d9/dde/classbinary__search__tree.html">binary_search_tree</a>&lt; T &gt;::contains </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -281,6 +302,8 @@ template&lt;class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>true If the value was found in the BST. </dd>
 <dd>
 false Otherwise. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html#l00177">177</a> of file <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html">binary_search_tree2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  177</span>                                                          {</div>
 <div class="line"><span class="lineno">  178</span>        <span class="keywordflow">if</span> (!<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>) {</div>
 <div class="line"><span class="lineno">  179</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -294,14 +317,9 @@ false Otherwise. </dd></dl>
 <div class="line"><span class="lineno">  187</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  188</span>        }</div>
 <div class="line"><span class="lineno">  189</span>    }</div>
-<div class="ttc" id="aclassbinary__search__tree_html_aa4f84b2eec9b9201af1840868ddb5fb2"><div class="ttname"><a href="#aa4f84b2eec9b9201af1840868ddb5fb2">binary_search_tree::contains</a></div><div class="ttdeci">bool contains(std::unique_ptr&lt; bst_node &gt; &amp;node, T value)</div><div class="ttdoc">Recursive function to check if a value is in the BST.</div><div class="ttdef"><b>Definition</b> binary_search_tree2.cpp:177</div></div>
-<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition</b> binary_search_tree.cpp:11</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dde/classbinary__search__tree_aa4f84b2eec9b9201af1840868ddb5fb2_cgraph.svg" width="143" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassbinary__search__tree_html_aa4f84b2eec9b9201af1840868ddb5fb2"><div class="ttname"><a href="#aa4f84b2eec9b9201af1840868ddb5fb2">binary_search_tree::contains</a></div><div class="ttdeci">bool contains(std::unique_ptr&lt; bst_node &gt; &amp;node, T value)</div><div class="ttdoc">Recursive function to check if a value is in the BST.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d42/binary__search__tree2_8cpp_source.html#l00177">binary_search_tree2.cpp:177</a></div></div>
+<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d26/binary__search__tree_8cpp_source.html#l00011">binary_search_tree.cpp:11</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6bf5b410299df2320ddf2709dda61f63" name="a6bf5b410299df2320ddf2709dda61f63"></a>
@@ -339,13 +357,10 @@ template&lt;class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>true If value is in the BST. </dd>
 <dd>
 false Otherwise. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  289</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#aa4f84b2eec9b9201af1840868ddb5fb2">contains</a>(<a class="code hl_variable" href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">root_</a>, value); }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dde/classbinary__search__tree_a6bf5b410299df2320ddf2709dda61f63_cgraph.svg" width="143" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html#l00289">289</a> of file <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html">binary_search_tree2.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  289</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#aa4f84b2eec9b9201af1840868ddb5fb2">contains</a>(<a class="code hl_variable" href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">root_</a>, value); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a75f897af6aa732a9901454401c869bcb" name="a75f897af6aa732a9901454401c869bcb"></a>
@@ -362,7 +377,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="../../d9/dde/classbinary__search__tree.html">binary_search_tree</a>&lt; T &gt;::find_max </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -388,6 +403,8 @@ template&lt;class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>true If the maximum value was successfully found. </dd>
 <dd>
 false Otherwise. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html#l00053">53</a> of file <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html">binary_search_tree2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   53</span>                                                               {</div>
 <div class="line"><span class="lineno">   54</span>        <span class="keywordflow">if</span> (!<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>) {</div>
 <div class="line"><span class="lineno">   55</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -397,13 +414,8 @@ false Otherwise. </dd></dl>
 <div class="line"><span class="lineno">   59</span>        }</div>
 <div class="line"><span class="lineno">   60</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a75f897af6aa732a9901454401c869bcb">find_max</a>(<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;right, ret_value);</div>
 <div class="line"><span class="lineno">   61</span>    }</div>
-<div class="ttc" id="aclassbinary__search__tree_html_a75f897af6aa732a9901454401c869bcb"><div class="ttname"><a href="#a75f897af6aa732a9901454401c869bcb">binary_search_tree::find_max</a></div><div class="ttdeci">bool find_max(std::unique_ptr&lt; bst_node &gt; &amp;node, T &amp;ret_value)</div><div class="ttdoc">Recursive function to find the maximum value in the BST.</div><div class="ttdef"><b>Definition</b> binary_search_tree2.cpp:53</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dde/classbinary__search__tree_a75f897af6aa732a9901454401c869bcb_cgraph.svg" width="143" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassbinary__search__tree_html_a75f897af6aa732a9901454401c869bcb"><div class="ttname"><a href="#a75f897af6aa732a9901454401c869bcb">binary_search_tree::find_max</a></div><div class="ttdeci">bool find_max(std::unique_ptr&lt; bst_node &gt; &amp;node, T &amp;ret_value)</div><div class="ttdoc">Recursive function to find the maximum value in the BST.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d42/binary__search__tree2_8cpp_source.html#l00053">binary_search_tree2.cpp:53</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a42b16f26928b5e994925100594a167a0" name="a42b16f26928b5e994925100594a167a0"></a>
@@ -441,13 +453,10 @@ template&lt;class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>true If maximum value was successfully found. </dd>
 <dd>
 false Otherwise. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  307</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#a75f897af6aa732a9901454401c869bcb">find_max</a>(<a class="code hl_variable" href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">root_</a>, ret_value); }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dde/classbinary__search__tree_a42b16f26928b5e994925100594a167a0_cgraph.svg" width="143" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html#l00307">307</a> of file <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html">binary_search_tree2.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  307</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#a75f897af6aa732a9901454401c869bcb">find_max</a>(<a class="code hl_variable" href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">root_</a>, ret_value); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af9a2c7c187a7ca3142c77ce342ef3153" name="af9a2c7c187a7ca3142c77ce342ef3153"></a>
@@ -464,7 +473,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="../../d9/dde/classbinary__search__tree.html">binary_search_tree</a>&lt; T &gt;::find_min </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -490,6 +499,8 @@ template&lt;class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>true If the minimum value was successfully found. </dd>
 <dd>
 false Otherwise. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html#l00071">71</a> of file <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html">binary_search_tree2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   71</span>                                                               {</div>
 <div class="line"><span class="lineno">   72</span>        <span class="keywordflow">if</span> (!<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>) {</div>
 <div class="line"><span class="lineno">   73</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -500,13 +511,8 @@ false Otherwise. </dd></dl>
 <div class="line"><span class="lineno">   78</span> </div>
 <div class="line"><span class="lineno">   79</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#af9a2c7c187a7ca3142c77ce342ef3153">find_min</a>(<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;left, ret_value);</div>
 <div class="line"><span class="lineno">   80</span>    }</div>
-<div class="ttc" id="aclassbinary__search__tree_html_af9a2c7c187a7ca3142c77ce342ef3153"><div class="ttname"><a href="#af9a2c7c187a7ca3142c77ce342ef3153">binary_search_tree::find_min</a></div><div class="ttdeci">bool find_min(std::unique_ptr&lt; bst_node &gt; &amp;node, T &amp;ret_value)</div><div class="ttdoc">Recursive function to find the minimum value in the BST.</div><div class="ttdef"><b>Definition</b> binary_search_tree2.cpp:71</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dde/classbinary__search__tree_af9a2c7c187a7ca3142c77ce342ef3153_cgraph.svg" width="143" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassbinary__search__tree_html_af9a2c7c187a7ca3142c77ce342ef3153"><div class="ttname"><a href="#af9a2c7c187a7ca3142c77ce342ef3153">binary_search_tree::find_min</a></div><div class="ttdeci">bool find_min(std::unique_ptr&lt; bst_node &gt; &amp;node, T &amp;ret_value)</div><div class="ttdoc">Recursive function to find the minimum value in the BST.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d42/binary__search__tree2_8cpp_source.html#l00071">binary_search_tree2.cpp:71</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad9912e8574538e86f9bd2c38e7e63d03" name="ad9912e8574538e86f9bd2c38e7e63d03"></a>
@@ -544,13 +550,10 @@ template&lt;class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>true If minimum value was successfully found. </dd>
 <dd>
 false Otherwise. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  298</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#af9a2c7c187a7ca3142c77ce342ef3153">find_min</a>(<a class="code hl_variable" href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">root_</a>, ret_value); }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dde/classbinary__search__tree_ad9912e8574538e86f9bd2c38e7e63d03_cgraph.svg" width="143" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html#l00298">298</a> of file <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html">binary_search_tree2.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  298</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#af9a2c7c187a7ca3142c77ce342ef3153">find_min</a>(<a class="code hl_variable" href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">root_</a>, ret_value); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1f23830316204664514f396a4eb5275a" name="a1f23830316204664514f396a4eb5275a"></a>
@@ -565,7 +568,7 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; <a class="el" href="../../d9/dde/classbinary__search__tree.html">binary_search_tree</a>&lt; T &gt;::get_elements_inorder </td>
+          <td class="memname">std::vector&lt; T &gt; <a class="el" href="../../d9/dde/classbinary__search__tree.html">binary_search_tree</a>&lt; T &gt;::get_elements_inorder </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -580,21 +583,17 @@ template&lt;class T &gt; </div>
 
 <p>Get all values of the BST in in-order order. </p>
 <dl class="section return"><dt>Returns</dt><dd>std::vector&lt;T&gt; List of values, sorted in in-order order. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html#l00321">321</a> of file <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html">binary_search_tree2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  321</span>                                        {</div>
-<div class="line"><span class="lineno">  322</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
+<div class="line"><span class="lineno">  322</span>        std::vector&lt;T&gt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">  323</span>        <a class="code hl_function" href="#a2fcf37549bd002c174a45b0b4203c2bd">traverse_inorder</a>([&amp;](T node_value) { <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.push_back(node_value); },</div>
 <div class="line"><span class="lineno">  324</span>                         <a class="code hl_variable" href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">root_</a>);</div>
 <div class="line"><span class="lineno">  325</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">  326</span>    }</div>
-<div class="ttc" id="aclassbinary__search__tree_html_a2fcf37549bd002c174a45b0b4203c2bd"><div class="ttname"><a href="#a2fcf37549bd002c174a45b0b4203c2bd">binary_search_tree::traverse_inorder</a></div><div class="ttdeci">void traverse_inorder(std::function&lt; void(T)&gt; callback, std::unique_ptr&lt; bst_node &gt; &amp;node)</div><div class="ttdoc">Recursive function to traverse the tree in in-order order.</div><div class="ttdef"><b>Definition</b> binary_search_tree2.cpp:197</div></div>
-<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> fibonacci_sum.cpp:77</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dde/classbinary__search__tree_a1f23830316204664514f396a4eb5275a_cgraph.svg" width="344" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassbinary__search__tree_html_a2fcf37549bd002c174a45b0b4203c2bd"><div class="ttname"><a href="#a2fcf37549bd002c174a45b0b4203c2bd">binary_search_tree::traverse_inorder</a></div><div class="ttdeci">void traverse_inorder(std::function&lt; void(T)&gt; callback, std::unique_ptr&lt; bst_node &gt; &amp;node)</div><div class="ttdoc">Recursive function to traverse the tree in in-order order.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d42/binary__search__tree2_8cpp_source.html#l00197">binary_search_tree2.cpp:197</a></div></div>
+<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> <a href="../../de/dc3/fibonacci__sum_8cpp_source.html#l00077">fibonacci_sum.cpp:77</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5c011e1b0863d79c3a7c11a0426bdcff" name="a5c011e1b0863d79c3a7c11a0426bdcff"></a>
@@ -609,7 +608,7 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; <a class="el" href="../../d9/dde/classbinary__search__tree.html">binary_search_tree</a>&lt; T &gt;::get_elements_postorder </td>
+          <td class="memname">std::vector&lt; T &gt; <a class="el" href="../../d9/dde/classbinary__search__tree.html">binary_search_tree</a>&lt; T &gt;::get_elements_postorder </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -624,19 +623,16 @@ template&lt;class T &gt; </div>
 
 <p>Get all values of the BST in post-order order. </p>
 <dl class="section return"><dt>Returns</dt><dd>std::vector&lt;T&gt; List of values, sorted in post-order order. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html#l00345">345</a> of file <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html">binary_search_tree2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  345</span>                                          {</div>
-<div class="line"><span class="lineno">  346</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
+<div class="line"><span class="lineno">  346</span>        std::vector&lt;T&gt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">  347</span>        <a class="code hl_function" href="#a87c0a35845d27e0f6fc1f4eaa0333362">traverse_postorder</a>([&amp;](T node_value) { <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.push_back(node_value); },</div>
 <div class="line"><span class="lineno">  348</span>                           <a class="code hl_variable" href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">root_</a>);</div>
 <div class="line"><span class="lineno">  349</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">  350</span>    }</div>
-<div class="ttc" id="aclassbinary__search__tree_html_a87c0a35845d27e0f6fc1f4eaa0333362"><div class="ttname"><a href="#a87c0a35845d27e0f6fc1f4eaa0333362">binary_search_tree::traverse_postorder</a></div><div class="ttdeci">void traverse_postorder(std::function&lt; void(T)&gt; callback, std::unique_ptr&lt; bst_node &gt; &amp;node)</div><div class="ttdoc">Recursive function to traverse the tree in post-order order.</div><div class="ttdef"><b>Definition</b> binary_search_tree2.cpp:231</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dde/classbinary__search__tree_a5c011e1b0863d79c3a7c11a0426bdcff_cgraph.svg" width="364" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassbinary__search__tree_html_a87c0a35845d27e0f6fc1f4eaa0333362"><div class="ttname"><a href="#a87c0a35845d27e0f6fc1f4eaa0333362">binary_search_tree::traverse_postorder</a></div><div class="ttdeci">void traverse_postorder(std::function&lt; void(T)&gt; callback, std::unique_ptr&lt; bst_node &gt; &amp;node)</div><div class="ttdoc">Recursive function to traverse the tree in post-order order.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d42/binary__search__tree2_8cpp_source.html#l00231">binary_search_tree2.cpp:231</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5764c1cf848f84a5b77462036a6d8c13" name="a5764c1cf848f84a5b77462036a6d8c13"></a>
@@ -651,7 +647,7 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; <a class="el" href="../../d9/dde/classbinary__search__tree.html">binary_search_tree</a>&lt; T &gt;::get_elements_preorder </td>
+          <td class="memname">std::vector&lt; T &gt; <a class="el" href="../../d9/dde/classbinary__search__tree.html">binary_search_tree</a>&lt; T &gt;::get_elements_preorder </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -666,19 +662,16 @@ template&lt;class T &gt; </div>
 
 <p>Get all values of the BST in pre-order order. </p>
 <dl class="section return"><dt>Returns</dt><dd>std::vector&lt;T&gt; List of values, sorted in pre-order order. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html#l00333">333</a> of file <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html">binary_search_tree2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  333</span>                                         {</div>
-<div class="line"><span class="lineno">  334</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
+<div class="line"><span class="lineno">  334</span>        std::vector&lt;T&gt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">  335</span>        <a class="code hl_function" href="#ab81edd415324d372632c42dc7dbcb9e1">traverse_preorder</a>([&amp;](T node_value) { <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.push_back(node_value); },</div>
 <div class="line"><span class="lineno">  336</span>                          <a class="code hl_variable" href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">root_</a>);</div>
 <div class="line"><span class="lineno">  337</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">  338</span>    }</div>
-<div class="ttc" id="aclassbinary__search__tree_html_ab81edd415324d372632c42dc7dbcb9e1"><div class="ttname"><a href="#ab81edd415324d372632c42dc7dbcb9e1">binary_search_tree::traverse_preorder</a></div><div class="ttdeci">void traverse_preorder(std::function&lt; void(T)&gt; callback, std::unique_ptr&lt; bst_node &gt; &amp;node)</div><div class="ttdoc">Recursive function to traverse the tree in pre-order order.</div><div class="ttdef"><b>Definition</b> binary_search_tree2.cpp:214</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dde/classbinary__search__tree_a5764c1cf848f84a5b77462036a6d8c13_cgraph.svg" width="352" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassbinary__search__tree_html_ab81edd415324d372632c42dc7dbcb9e1"><div class="ttname"><a href="#ab81edd415324d372632c42dc7dbcb9e1">binary_search_tree::traverse_preorder</a></div><div class="ttdeci">void traverse_preorder(std::function&lt; void(T)&gt; callback, std::unique_ptr&lt; bst_node &gt; &amp;node)</div><div class="ttdoc">Recursive function to traverse the tree in pre-order order.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d42/binary__search__tree2_8cpp_source.html#l00214">binary_search_tree2.cpp:214</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9d1e7e10efa74d741bf48cf032df3778" name="a9d1e7e10efa74d741bf48cf032df3778"></a>
@@ -695,7 +688,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="../../d9/dde/classbinary__search__tree.html">binary_search_tree</a>&lt; T &gt;::insert </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -721,15 +714,17 @@ template&lt;class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>true If the insert operation was successful. </dd>
 <dd>
 false Otherwise. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html#l00090">90</a> of file <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html">binary_search_tree2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   90</span>                                                            {</div>
 <div class="line"><span class="lineno">   91</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">root_</a> == <a class="code hl_class" href="../../d5/da1/structnode.html">node</a> &amp;&amp; !<a class="code hl_variable" href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">root_</a>) {</div>
-<div class="line"><span class="lineno">   92</span>            <a class="code hl_variable" href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">root_</a> = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr&lt;bst_node&gt;</a>(<span class="keyword">new</span> bst_node(new_value));</div>
+<div class="line"><span class="lineno">   92</span>            <a class="code hl_variable" href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">root_</a> = std::unique_ptr&lt;bst_node&gt;(<span class="keyword">new</span> bst_node(new_value));</div>
 <div class="line"><span class="lineno">   93</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">   94</span>        }</div>
 <div class="line"><span class="lineno">   95</span> </div>
 <div class="line"><span class="lineno">   96</span>        <span class="keywordflow">if</span> (new_value &lt; node-&gt;value) {</div>
 <div class="line"><span class="lineno">   97</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;left) {</div>
-<div class="line"><span class="lineno">   98</span>                <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;left = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr&lt;bst_node&gt;</a>(<span class="keyword">new</span> bst_node(new_value));</div>
+<div class="line"><span class="lineno">   98</span>                <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;left = std::unique_ptr&lt;bst_node&gt;(<span class="keyword">new</span> bst_node(new_value));</div>
 <div class="line"><span class="lineno">   99</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  100</span>            } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">  101</span>                <span class="keywordflow">return</span> <a class="code hl_function" href="#a9d1e7e10efa74d741bf48cf032df3778">insert</a>(<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;left, new_value);</div>
@@ -737,7 +732,7 @@ false Otherwise. </dd></dl>
 <div class="line"><span class="lineno">  103</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (new_value &gt; <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;value) {</div>
 <div class="line"><span class="lineno">  104</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;right) {</div>
 <div class="line"><span class="lineno">  105</span>                <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;right =</div>
-<div class="line"><span class="lineno">  106</span>                    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr&lt;bst_node&gt;</a>(<span class="keyword">new</span> bst_node(new_value));</div>
+<div class="line"><span class="lineno">  106</span>                    std::unique_ptr&lt;bst_node&gt;(<span class="keyword">new</span> bst_node(new_value));</div>
 <div class="line"><span class="lineno">  107</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  108</span>            } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">  109</span>                <span class="keywordflow">return</span> <a class="code hl_function" href="#a9d1e7e10efa74d741bf48cf032df3778">insert</a>(<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;right, new_value);</div>
@@ -746,14 +741,8 @@ false Otherwise. </dd></dl>
 <div class="line"><span class="lineno">  112</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  113</span>        }</div>
 <div class="line"><span class="lineno">  114</span>    }</div>
-<div class="ttc" id="aclassbinary__search__tree_html_a9d1e7e10efa74d741bf48cf032df3778"><div class="ttname"><a href="#a9d1e7e10efa74d741bf48cf032df3778">binary_search_tree::insert</a></div><div class="ttdeci">bool insert(std::unique_ptr&lt; bst_node &gt; &amp;node, T new_value)</div><div class="ttdoc">Recursive function to insert a value into the BST.</div><div class="ttdef"><b>Definition</b> binary_search_tree2.cpp:90</div></div>
-<div class="ttc" id="aunique_ptr_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dde/classbinary__search__tree_a9d1e7e10efa74d741bf48cf032df3778_cgraph.svg" width="143" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassbinary__search__tree_html_a9d1e7e10efa74d741bf48cf032df3778"><div class="ttname"><a href="#a9d1e7e10efa74d741bf48cf032df3778">binary_search_tree::insert</a></div><div class="ttdeci">bool insert(std::unique_ptr&lt; bst_node &gt; &amp;node, T new_value)</div><div class="ttdoc">Recursive function to insert a value into the BST.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d42/binary__search__tree2_8cpp_source.html#l00090">binary_search_tree2.cpp:90</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8168edf29316f2b436eac1fc416c52e0" name="a8168edf29316f2b436eac1fc416c52e0"></a>
@@ -791,6 +780,8 @@ template&lt;class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>true If the insertion was successful. </dd>
 <dd>
 false Otherwise. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html#l00259">259</a> of file <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html">binary_search_tree2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  259</span>                             {</div>
 <div class="line"><span class="lineno">  260</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = <a class="code hl_function" href="#a9d1e7e10efa74d741bf48cf032df3778">insert</a>(<a class="code hl_variable" href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">root_</a>, new_value);</div>
 <div class="line"><span class="lineno">  261</span>        <span class="keywordflow">if</span> (result) {</div>
@@ -798,12 +789,7 @@ false Otherwise. </dd></dl>
 <div class="line"><span class="lineno">  263</span>        }</div>
 <div class="line"><span class="lineno">  264</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">  265</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dde/classbinary__search__tree_a8168edf29316f2b436eac1fc416c52e0_cgraph.svg" width="322" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af4a865ce5244608819b169fc78a41153" name="af4a865ce5244608819b169fc78a41153"></a>
@@ -820,12 +806,12 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="../../d9/dde/classbinary__search__tree.html">binary_search_tree</a>&lt; T &gt;::remove </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>parent</em></span>, </td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>parent</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -852,6 +838,8 @@ template&lt;class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>true If the removal operation was successful. </dd>
 <dd>
 false Otherwise. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html#l00125">125</a> of file <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html">binary_search_tree2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  126</span>                                                           {</div>
 <div class="line"><span class="lineno">  127</span>        <span class="keywordflow">if</span> (!<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>) {</div>
 <div class="line"><span class="lineno">  128</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -865,15 +853,15 @@ false Otherwise. </dd></dl>
 <div class="line"><span class="lineno">  136</span>                <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;value = successor_node_value;</div>
 <div class="line"><span class="lineno">  137</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  138</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;left || <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;right) {</div>
-<div class="line"><span class="lineno">  139</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr&lt;bst_node&gt;</a>&amp; non_null =</div>
+<div class="line"><span class="lineno">  139</span>                std::unique_ptr&lt;bst_node&gt;&amp; non_null =</div>
 <div class="line"><span class="lineno">  140</span>                    (<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;left ? <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;left : <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;right);</div>
 <div class="line"><span class="lineno">  141</span> </div>
 <div class="line"><span class="lineno">  142</span>                <span class="keywordflow">if</span> (<a class="code hl_class" href="../../d5/da1/structnode.html">node</a> == <a class="code hl_variable" href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">root_</a>) {</div>
-<div class="line"><span class="lineno">  143</span>                    <a class="code hl_variable" href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">root_</a> = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(non_null);</div>
+<div class="line"><span class="lineno">  143</span>                    <a class="code hl_variable" href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">root_</a> = std::move(non_null);</div>
 <div class="line"><span class="lineno">  144</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (rm_value &lt; parent-&gt;value) {</div>
-<div class="line"><span class="lineno">  145</span>                    parent-&gt;left = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(non_null);</div>
+<div class="line"><span class="lineno">  145</span>                    parent-&gt;left = std::move(non_null);</div>
 <div class="line"><span class="lineno">  146</span>                } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  147</span>                    parent-&gt;right = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(non_null);</div>
+<div class="line"><span class="lineno">  147</span>                    parent-&gt;right = std::move(non_null);</div>
 <div class="line"><span class="lineno">  148</span>                }</div>
 <div class="line"><span class="lineno">  149</span> </div>
 <div class="line"><span class="lineno">  150</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -894,14 +882,8 @@ false Otherwise. </dd></dl>
 <div class="line"><span class="lineno">  165</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="#af4a865ce5244608819b169fc78a41153">remove</a>(<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>, <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;right, rm_value);</div>
 <div class="line"><span class="lineno">  166</span>        }</div>
 <div class="line"><span class="lineno">  167</span>    }</div>
-<div class="ttc" id="aclassbinary__search__tree_html_af4a865ce5244608819b169fc78a41153"><div class="ttname"><a href="#af4a865ce5244608819b169fc78a41153">binary_search_tree::remove</a></div><div class="ttdeci">bool remove(std::unique_ptr&lt; bst_node &gt; &amp;parent, std::unique_ptr&lt; bst_node &gt; &amp;node, T rm_value)</div><div class="ttdoc">Recursive function to remove a value from the BST.</div><div class="ttdef"><b>Definition</b> binary_search_tree2.cpp:125</div></div>
-<div class="ttc" id="amove_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a></div><div class="ttdeci">T move(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dde/classbinary__search__tree_af4a865ce5244608819b169fc78a41153_cgraph.svg" width="322" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassbinary__search__tree_html_af4a865ce5244608819b169fc78a41153"><div class="ttname"><a href="#af4a865ce5244608819b169fc78a41153">binary_search_tree::remove</a></div><div class="ttdeci">bool remove(std::unique_ptr&lt; bst_node &gt; &amp;parent, std::unique_ptr&lt; bst_node &gt; &amp;node, T rm_value)</div><div class="ttdoc">Recursive function to remove a value from the BST.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d42/binary__search__tree2_8cpp_source.html#l00125">binary_search_tree2.cpp:125</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a99771c2e1353e8ddfd4bb9d30b7a98fb" name="a99771c2e1353e8ddfd4bb9d30b7a98fb"></a>
@@ -939,6 +921,8 @@ template&lt;class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>true If the removal was successful. </dd>
 <dd>
 false Otherwise. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html#l00274">274</a> of file <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html">binary_search_tree2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  274</span>                            {</div>
 <div class="line"><span class="lineno">  275</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = <a class="code hl_function" href="#af4a865ce5244608819b169fc78a41153">remove</a>(<a class="code hl_variable" href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">root_</a>, <a class="code hl_variable" href="#aa08f65f6f3bfcb14f8c3d1e65305ae50">root_</a>, rm_value);</div>
 <div class="line"><span class="lineno">  276</span>        <span class="keywordflow">if</span> (result) {</div>
@@ -946,12 +930,7 @@ false Otherwise. </dd></dl>
 <div class="line"><span class="lineno">  278</span>        }</div>
 <div class="line"><span class="lineno">  279</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">  280</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dde/classbinary__search__tree_a99771c2e1353e8ddfd4bb9d30b7a98fb_cgraph.svg" width="502" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a564fe43e7e8f7ecb6f10667a70fbc6f3" name="a564fe43e7e8f7ecb6f10667a70fbc6f3"></a>
@@ -966,7 +945,7 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> <a class="el" href="../../d9/dde/classbinary__search__tree.html">binary_search_tree</a>&lt; T &gt;::size </td>
+          <td class="memname">std::size_t <a class="el" href="../../d9/dde/classbinary__search__tree.html">binary_search_tree</a>&lt; T &gt;::size </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -980,7 +959,9 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Get the number of values in the BST. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> Number of values in the BST. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>std::size_t Number of values in the BST. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html#l00314">314</a> of file <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html">binary_search_tree2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  314</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a07ba32ce1a2af6e357600ac8c8e98dbc">size_</a>; }</div>
 </div><!-- fragment -->
 </div>
@@ -999,12 +980,12 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="../../d9/dde/classbinary__search__tree.html">binary_search_tree</a>&lt; T &gt;::traverse_inorder </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt; void(T)&gt;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>, </td>
+          <td class="paramtype">std::function&lt; void(T)&gt;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>&#160;)</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -1022,6 +1003,8 @@ template&lt;class T &gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html#l00197">197</a> of file <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html">binary_search_tree2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  198</span>                                                         {</div>
 <div class="line"><span class="lineno">  199</span>        <span class="keywordflow">if</span> (!<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>) {</div>
 <div class="line"><span class="lineno">  200</span>            <span class="keywordflow">return</span>;</div>
@@ -1031,12 +1014,7 @@ template&lt;class T &gt; </div>
 <div class="line"><span class="lineno">  204</span>        callback(<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;value);</div>
 <div class="line"><span class="lineno">  205</span>        <a class="code hl_function" href="#a2fcf37549bd002c174a45b0b4203c2bd">traverse_inorder</a>(callback, <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;right);</div>
 <div class="line"><span class="lineno">  206</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dde/classbinary__search__tree_a2fcf37549bd002c174a45b0b4203c2bd_cgraph.svg" width="143" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a87c0a35845d27e0f6fc1f4eaa0333362" name="a87c0a35845d27e0f6fc1f4eaa0333362"></a>
@@ -1053,12 +1031,12 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="../../d9/dde/classbinary__search__tree.html">binary_search_tree</a>&lt; T &gt;::traverse_postorder </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt; void(T)&gt;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>, </td>
+          <td class="paramtype">std::function&lt; void(T)&gt;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>&#160;)</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -1076,6 +1054,8 @@ template&lt;class T &gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html#l00231">231</a> of file <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html">binary_search_tree2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  232</span>                                                           {</div>
 <div class="line"><span class="lineno">  233</span>        <span class="keywordflow">if</span> (!<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>) {</div>
 <div class="line"><span class="lineno">  234</span>            <span class="keywordflow">return</span>;</div>
@@ -1085,12 +1065,7 @@ template&lt;class T &gt; </div>
 <div class="line"><span class="lineno">  238</span>        <a class="code hl_function" href="#a87c0a35845d27e0f6fc1f4eaa0333362">traverse_postorder</a>(callback, <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;right);</div>
 <div class="line"><span class="lineno">  239</span>        callback(<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;value);</div>
 <div class="line"><span class="lineno">  240</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dde/classbinary__search__tree_a87c0a35845d27e0f6fc1f4eaa0333362_cgraph.svg" width="148" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab81edd415324d372632c42dc7dbcb9e1" name="ab81edd415324d372632c42dc7dbcb9e1"></a>
@@ -1107,12 +1082,12 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="../../d9/dde/classbinary__search__tree.html">binary_search_tree</a>&lt; T &gt;::traverse_preorder </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt; void(T)&gt;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>, </td>
+          <td class="paramtype">std::function&lt; void(T)&gt;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>&#160;)</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -1130,6 +1105,8 @@ template&lt;class T &gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html#l00214">214</a> of file <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html">binary_search_tree2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  215</span>                                                          {</div>
 <div class="line"><span class="lineno">  216</span>        <span class="keywordflow">if</span> (!<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>) {</div>
 <div class="line"><span class="lineno">  217</span>            <span class="keywordflow">return</span>;</div>
@@ -1139,12 +1116,7 @@ template&lt;class T &gt; </div>
 <div class="line"><span class="lineno">  221</span>        <a class="code hl_function" href="#ab81edd415324d372632c42dc7dbcb9e1">traverse_preorder</a>(callback, <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;left);</div>
 <div class="line"><span class="lineno">  222</span>        <a class="code hl_function" href="#ab81edd415324d372632c42dc7dbcb9e1">traverse_preorder</a>(callback, <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;right);</div>
 <div class="line"><span class="lineno">  223</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dde/classbinary__search__tree_ab81edd415324d372632c42dc7dbcb9e1_cgraph.svg" width="143" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -1160,7 +1132,7 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt;<a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a>&gt; <a class="el" href="../../d9/dde/classbinary__search__tree.html">binary_search_tree</a>&lt; T &gt;::root_</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="../../dd/db6/structbinary__search__tree_1_1bst__node.html">bst_node</a>&gt; <a class="el" href="../../d9/dde/classbinary__search__tree.html">binary_search_tree</a>&lt; T &gt;::root_</td>
         </tr>
       </table>
   </td>
@@ -1170,6 +1142,8 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Pointer to the root of the BST. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html">binary_search_tree2.cpp</a>.</p>
 
 </div>
 </div>
@@ -1185,7 +1159,7 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> <a class="el" href="../../d9/dde/classbinary__search__tree.html">binary_search_tree</a>&lt; T &gt;::size_ = 0</td>
+          <td class="memname">std::size_t <a class="el" href="../../d9/dde/classbinary__search__tree.html">binary_search_tree</a>&lt; T &gt;::size_ = 0</td>
         </tr>
       </table>
   </td>
@@ -1196,10 +1170,12 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 <p>Number of elements/nodes in the BST. </p>
 
+<p class="definition">Definition at line <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html#l00043">43</a> of file <a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html">binary_search_tree2.cpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>data_structures/<a class="el" href="../../df/d42/binary__search__tree2_8cpp.html">binary_search_tree2.cpp</a></li>
+<li>data_structures/<a class="el" href="../../df/d42/binary__search__tree2_8cpp_source.html">binary_search_tree2.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,7 +1,0 @@
-<map id="uint256_t::operator*=" name="uint256_t::operator*=">
-<area shape="rect" id="Node000001" title="operator *= for uint256_t and other integer types." alt="" coords="5,31,148,56"/>
-<area shape="rect" id="Node000002" href="$db/d9a/classuint128__t.html#aa69e1064c0b0b1df1c61acd2ea04fabd" title="returns lower 64&#45;bit integer part" alt="" coords="196,5,310,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,31,180,26,181,31,148,36"/>
-<area shape="rect" id="Node000003" href="$db/d9a/classuint128__t.html#a1ee2f1ffbd9984faad34883eb45e9705" title="returns upper 64&#45;bit integer part" alt="" coords="196,55,310,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,51,181,55,180,60,148,56"/>
-</map>

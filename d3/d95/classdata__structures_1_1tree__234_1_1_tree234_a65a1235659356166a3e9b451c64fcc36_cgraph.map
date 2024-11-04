@@ -1,7 +1,0 @@
-<map id="data_structures::tree_234::Tree234::GetTreeMinItem" name="data_structures::tree_234::Tree234::GetTreeMinItem">
-<area shape="rect" id="Node000001" title="Get the min item of the tree." alt="" coords="5,39,212,79"/>
-<area shape="rect" id="Node000002" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ac6f619a1605cb46196360889fff4529e" title="Get leftmose child of the current node." alt="" coords="260,5,458,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,43,244,38,244,44,212,48"/>
-<area shape="rect" id="Node000003" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a5438d0a47850f520b2262b5a42f75b71" title="get min item (leftmost) in the current node" alt="" coords="277,71,441,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="212,70,261,76,261,81,212,75"/>
-</map>

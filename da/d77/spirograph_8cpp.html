@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: graphics/spirograph.cpp File Reference</title>
+<title>TheAlgorithms/C++: graphics/spirograph.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -127,7 +144,9 @@ Include dependency graph for spirograph.cpp:</div>
 <div class="dyncontent">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/d4b/spirograph_8cpp__incl.svg" width="100%" height="383"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../da/d77/spirograph_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd3/namespacespirograph.html">spirograph</a></td></tr>
@@ -140,8 +159,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aeca22dbe4563358960e907a40cd3e1ac" id="r_aeca22dbe4563358960e907a40cd3e1ac"><td class="memTemplParams" colspan="2">template&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> N&gt; </td></tr>
-<tr class="memitem:aeca22dbe4563358960e907a40cd3e1ac"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/dd3/namespacespirograph.html#aeca22dbe4563358960e907a40cd3e1ac">spirograph::spirograph</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; double, double &gt;, N &gt; *points, double l, double k, double rot)</td></tr>
+<tr class="memitem:aeca22dbe4563358960e907a40cd3e1ac" id="r_aeca22dbe4563358960e907a40cd3e1ac"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
+<tr class="memitem:aeca22dbe4563358960e907a40cd3e1ac"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/dd3/namespacespirograph.html#aeca22dbe4563358960e907a40cd3e1ac">spirograph::spirograph</a> (std::array&lt; std::pair&lt; double, double &gt;, N &gt; *points, double l, double k, double rot)</td></tr>
 <tr class="separator:aeca22dbe4563358960e907a40cd3e1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e83a64e8443fff1e5ffdc1c299c1e99" id="r_a8e83a64e8443fff1e5ffdc1c299c1e99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd3/namespacespirograph.html#a8e83a64e8443fff1e5ffdc1c299c1e99">spirograph::test</a> ()</td></tr>
 <tr class="memdesc:a8e83a64e8443fff1e5ffdc1c299c1e99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test function to save resulting points to a CSV file.  <br /></td></tr>
@@ -154,6 +173,8 @@ Functions</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/kvedala" target="_blank">Krishna Vedala</a> </dd></dl>
 <p>Implementation of the program is based on the geometry shown in the figure below:</p>
 <p><a href="https://commons.wikimedia.org/wiki/File:Resonance_Cascade.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Resonance_Cascade.svg" alt="Spirograph geometry from Wikipedia" style="pointer-events: none; width: 250px" class="inline"/></a> </p>
+
+<p class="definition">Definition in file <a class="el" href="../../da/d77/spirograph_8cpp_source.html">spirograph.cpp</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a525335710b53cb064ca56b936120431e" name="a525335710b53cb064ca56b936120431e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a525335710b53cb064ca56b936120431e">&#9670;&#160;</a></span>_USE_MATH_DEFINES</h2>
@@ -167,6 +188,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>required for MSVC compiler </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d77/spirograph_8cpp_source.html#l00023">23</a> of file <a class="el" href="../../da/d77/spirograph_8cpp_source.html">spirograph.cpp</a>.</p>
 
 </div>
 </div>
@@ -190,6 +213,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Main function </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d77/spirograph_8cpp_source.html#l00268">268</a> of file <a class="el" href="../../da/d77/spirograph_8cpp_source.html">spirograph.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  268</span>                                {</div>
 <div class="line"><span class="lineno">  269</span>    <a class="code hl_function" href="../../da/dd3/namespacespirograph.html#a8e83a64e8443fff1e5ffdc1c299c1e99">spirograph::test</a>();</div>
 <div class="line"><span class="lineno">  270</span> </div>
@@ -207,13 +232,8 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  282</span> </div>
 <div class="line"><span class="lineno">  283</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  284</span>}</div>
-<div class="ttc" id="anamespacespirograph_html_a8e83a64e8443fff1e5ffdc1c299c1e99"><div class="ttname"><a href="../../da/dd3/namespacespirograph.html#a8e83a64e8443fff1e5ffdc1c299c1e99">spirograph::test</a></div><div class="ttdeci">void test()</div><div class="ttdoc">Test function to save resulting points to a CSV file.</div><div class="ttdef"><b>Definition</b> spirograph.cpp:93</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d77/spirograph_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.svg" width="419" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="anamespacespirograph_html_a8e83a64e8443fff1e5ffdc1c299c1e99"><div class="ttname"><a href="../../da/dd3/namespacespirograph.html#a8e83a64e8443fff1e5ffdc1c299c1e99">spirograph::test</a></div><div class="ttdeci">void test()</div><div class="ttdoc">Test function to save resulting points to a CSV file.</div><div class="ttdef"><b>Definition</b> <a href="../../da/d77/spirograph_8cpp_source.html#l00093">spirograph.cpp:93</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

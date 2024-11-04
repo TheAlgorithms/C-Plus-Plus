@@ -1,6 +1,0 @@
-<map id="dsu::get_min" name="dsu::get_min">
-<area shape="rect" id="Node000001" title="A utility function that returns the min element of the set to which i belongs to." alt="" coords="5,29,102,55"/>
-<area shape="rect" id="Node000002" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="150,29,241,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,40,134,40,134,45,102,45"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="171,30,166,21,169,11,179,5,195,3,213,5,222,12,219,16,211,10,195,8,181,10,173,14,171,20,176,28"/>
-</map>

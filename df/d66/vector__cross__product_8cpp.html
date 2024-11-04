@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: math/vector_cross_product.cpp File Reference</title>
+<title>TheAlgorithms/C++: math/vector_cross_product.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -122,7 +139,9 @@ Include dependency graph for vector_cross_product.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../db/dc3/vector__cross__product_8cpp__incl.svg" width="327" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../df/d66/vector__cross__product_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html">math</a></td></tr>
@@ -134,10 +153,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a225732399c5c076976eae5b180a9f8c9" id="r_a225732399c5c076976eae5b180a9f8c9"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; double, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a225732399c5c076976eae5b180a9f8c9">math::vector_cross::cross</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; double, 3 &gt; &amp;A, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; double, 3 &gt; &amp;B)</td></tr>
+<tr class="memitem:a225732399c5c076976eae5b180a9f8c9" id="r_a225732399c5c076976eae5b180a9f8c9"><td class="memItemLeft" align="right" valign="top">std::array&lt; double, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a225732399c5c076976eae5b180a9f8c9">math::vector_cross::cross</a> (const std::array&lt; double, 3 &gt; &amp;A, const std::array&lt; double, 3 &gt; &amp;B)</td></tr>
 <tr class="memdesc:a225732399c5c076976eae5b180a9f8c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate the cross product of the passed arrays containing the direction ratios of the two mathematical vectors.  <br /></td></tr>
 <tr class="separator:a225732399c5c076976eae5b180a9f8c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b2a9757a87c18e1642d72410ecfaba8" id="r_a4b2a9757a87c18e1642d72410ecfaba8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b2a9757a87c18e1642d72410ecfaba8">math::vector_cross::mag</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; double, 3 &gt; &amp;vec)</td></tr>
+<tr class="memitem:a4b2a9757a87c18e1642d72410ecfaba8" id="r_a4b2a9757a87c18e1642d72410ecfaba8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b2a9757a87c18e1642d72410ecfaba8">math::vector_cross::mag</a> (const std::array&lt; double, 3 &gt; &amp;vec)</td></tr>
 <tr class="memdesc:a4b2a9757a87c18e1642d72410ecfaba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the magnitude of the mathematical vector from it's direction ratios.  <br /></td></tr>
 <tr class="separator:a4b2a9757a87c18e1642d72410ecfaba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
@@ -162,6 +181,8 @@ Example:</h3>
 <p>An example of a running instance of the executable program:</p>
 <p>Pass the first Vector: 1 2 3 Pass the second Vector: 4 5 6 The cross product is: -3 6 -3 Magnitude: 7.34847</p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/Shreyas-OwO" target="_blank">Shreyas Sable</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../df/d66/vector__cross__product_8cpp_source.html">vector_cross_product.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a225732399c5c076976eae5b180a9f8c9" name="a225732399c5c076976eae5b180a9f8c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a225732399c5c076976eae5b180a9f8c9">&#9670;&#160;</a></span>cross()</h2>
@@ -170,14 +191,14 @@ Example:</h3>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; double, 3 &gt; math::vector_cross::cross </td>
+          <td class="memname">std::array&lt; double, 3 &gt; math::vector_cross::cross </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; double, 3 &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
+          <td class="paramtype">const std::array&lt; double, 3 &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; double, 3 &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>B</em></span>&#160;)</td>
+          <td class="paramtype">const std::array&lt; double, 3 &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>B</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -192,21 +213,16 @@ Example:</h3>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the direction ratios of the cross product. </dd></dl>
 <p>Performs the cross product as shown in @algorithm.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d66/vector__cross__product_8cpp_source.html#l00069">69</a> of file <a class="el" href="../../df/d66/vector__cross__product_8cpp_source.html">vector_cross_product.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   69</span>                                                                                              {</div>
-<div class="line"><span class="lineno">   70</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;double, 3&gt;</a> product;<span class="comment"></span></div>
-<div class="line"><span class="lineno">   71</span><span class="comment">            /// Performs the cross product as shown in @algorithm.</span></div>
-<div class="line"><span class="lineno">   72</span><span class="comment"></span>            product[0] = (A[1] * B[2]) - (A[2] * B[1]);</div>
+<div class="line"><span class="lineno">   70</span>            std::array&lt;double, 3&gt; product;</div>
+<div class="line"><span class="lineno">   72</span>            product[0] = (A[1] * B[2]) - (A[2] * B[1]);</div>
 <div class="line"><span class="lineno">   73</span>            product[1] = -((A[0] * B[2]) - (A[2] * B[0]));</div>
 <div class="line"><span class="lineno">   74</span>            product[2] = (A[0] * B[1]) - (A[1] * B[0]);</div>
 <div class="line"><span class="lineno">   75</span>            <span class="keywordflow">return</span> product;</div>
 <div class="line"><span class="lineno">   76</span>        }</div>
-<div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d66/vector__cross__product_8cpp_a225732399c5c076976eae5b180a9f8c9_cgraph.svg" width="144" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4b2a9757a87c18e1642d72410ecfaba8" name="a4b2a9757a87c18e1642d72410ecfaba8"></a>
@@ -218,7 +234,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">double math::vector_cross::mag </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; double, 3 &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vec</em></span></td><td>)</td>
+          <td class="paramtype">const std::array&lt; double, 3 &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vec</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -232,17 +248,13 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>type: double description: the magnitude of the mathematical vector from the given direction ratios. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d66/vector__cross__product_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../df/d66/vector__cross__product_8cpp_source.html">vector_cross_product.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   83</span>                                                   {</div>
-<div class="line"><span class="lineno">   84</span>            <span class="keywordtype">double</span> magnitude = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">sqrt</a>((vec[0] * vec[0]) + (vec[1] * vec[1]) + (vec[2] * vec[2]));</div>
+<div class="line"><span class="lineno">   84</span>            <span class="keywordtype">double</span> magnitude = sqrt((vec[0] * vec[0]) + (vec[1] * vec[1]) + (vec[2] * vec[2]));</div>
 <div class="line"><span class="lineno">   85</span>            <span class="keywordflow">return</span> magnitude;</div>
 <div class="line"><span class="lineno">   86</span>        }</div>
-<div class="ttc" id="asqrt_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a></div><div class="ttdeci">T sqrt(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d66/vector__cross__product_8cpp_a4b2a9757a87c18e1642d72410ecfaba8_cgraph.svg" width="178" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -261,49 +273,38 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Main Function. </p>
-<p>Asks the user to enter the direction ratios for each of the two mathematical vectors using <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> </p><dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+<p>Asks the user to enter the direction ratios for each of the two mathematical vectors using std::cin </p><dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
 <p>Tests the functions with sample input before asking for user input.</p>
 <p>Gets the values for the first vector.</p>
 <p>Gets the values for the second vector.</p>
 <p>Displays the output out.</p>
 <p>Displays the magnitude of the cross product.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d66/vector__cross__product_8cpp_source.html#l00109">109</a> of file <a class="el" href="../../df/d66/vector__cross__product_8cpp_source.html">vector_cross_product.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  109</span>           {</div>
-<div class="line"><span class="lineno">  110</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  111</span><span class="comment">    /// Tests the functions with sample input before asking for user input.</span></div>
-<div class="line"><span class="lineno">  112</span><span class="comment"></span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();</div>
+<div class="line"><span class="lineno">  110</span> </div>
+<div class="line"><span class="lineno">  112</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();</div>
 <div class="line"><span class="lineno">  113</span> </div>
-<div class="line"><span class="lineno">  114</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;double, 3&gt;</a> vec1;</div>
-<div class="line"><span class="lineno">  115</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;double, 3&gt;</a> vec2;</div>
-<div class="line"><span class="lineno">  116</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  117</span><span class="comment">    /// Gets the values for the first vector.</span></div>
-<div class="line"><span class="lineno">  118</span><span class="comment"></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nPass the first Vector: &quot;</span>;</div>
-<div class="line"><span class="lineno">  119</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; vec1[0] &gt;&gt; vec1[1] &gt;&gt; vec1[2];</div>
-<div class="line"><span class="lineno">  120</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  121</span><span class="comment">    /// Gets the values for the second vector.</span></div>
-<div class="line"><span class="lineno">  122</span><span class="comment"></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nPass the second Vector: &quot;</span>;</div>
-<div class="line"><span class="lineno">  123</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; vec2[0] &gt;&gt; vec2[1] &gt;&gt; vec2[2];</div>
-<div class="line"><span class="lineno">  124</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  125</span><span class="comment">    /// Displays the output out.</span></div>
-<div class="line"><span class="lineno">  126</span><span class="comment"></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;double, 3&gt;</a> product = <a class="code hl_function" href="#a225732399c5c076976eae5b180a9f8c9">math::vector_cross::cross</a>(vec1, vec2);</div>
-<div class="line"><span class="lineno">  127</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nThe cross product is: &quot;</span> &lt;&lt; product[0] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; product[1] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; product[2] &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  128</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  129</span><span class="comment">    /// Displays the magnitude of the cross product.</span></div>
-<div class="line"><span class="lineno">  130</span><span class="comment"></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Magnitude: &quot;</span> &lt;&lt; <a class="code hl_function" href="#a4b2a9757a87c18e1642d72410ecfaba8">math::vector_cross::mag</a>(product) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  114</span>    std::array&lt;double, 3&gt; vec1;</div>
+<div class="line"><span class="lineno">  115</span>    std::array&lt;double, 3&gt; vec2;</div>
+<div class="line"><span class="lineno">  116</span> </div>
+<div class="line"><span class="lineno">  118</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nPass the first Vector: &quot;</span>;</div>
+<div class="line"><span class="lineno">  119</span>    std::cin &gt;&gt; vec1[0] &gt;&gt; vec1[1] &gt;&gt; vec1[2];</div>
+<div class="line"><span class="lineno">  120</span> </div>
+<div class="line"><span class="lineno">  122</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nPass the second Vector: &quot;</span>;</div>
+<div class="line"><span class="lineno">  123</span>    std::cin &gt;&gt; vec2[0] &gt;&gt; vec2[1] &gt;&gt; vec2[2];</div>
+<div class="line"><span class="lineno">  124</span> </div>
+<div class="line"><span class="lineno">  126</span>    std::array&lt;double, 3&gt; product = <a class="code hl_function" href="#a225732399c5c076976eae5b180a9f8c9">math::vector_cross::cross</a>(vec1, vec2);</div>
+<div class="line"><span class="lineno">  127</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nThe cross product is: &quot;</span> &lt;&lt; product[0] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; product[1] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; product[2] &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  128</span> </div>
+<div class="line"><span class="lineno">  130</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Magnitude: &quot;</span> &lt;&lt; <a class="code hl_function" href="#a4b2a9757a87c18e1642d72410ecfaba8">math::vector_cross::mag</a>(product) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  131</span> </div>
 <div class="line"><span class="lineno">  132</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  133</span>}</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="avector__cross__product_8cpp_html_a225732399c5c076976eae5b180a9f8c9"><div class="ttname"><a href="#a225732399c5c076976eae5b180a9f8c9">math::vector_cross::cross</a></div><div class="ttdeci">std::array&lt; double, 3 &gt; cross(const std::array&lt; double, 3 &gt; &amp;A, const std::array&lt; double, 3 &gt; &amp;B)</div><div class="ttdoc">Function to calculate the cross product of the passed arrays containing the direction ratios of the t...</div><div class="ttdef"><b>Definition</b> vector_cross_product.cpp:69</div></div>
-<div class="ttc" id="avector__cross__product_8cpp_html_a4b2a9757a87c18e1642d72410ecfaba8"><div class="ttname"><a href="#a4b2a9757a87c18e1642d72410ecfaba8">math::vector_cross::mag</a></div><div class="ttdeci">double mag(const std::array&lt; double, 3 &gt; &amp;vec)</div><div class="ttdoc">Calculates the magnitude of the mathematical vector from it's direction ratios.</div><div class="ttdef"><b>Definition</b> vector_cross_product.cpp:83</div></div>
-<div class="ttc" id="avector__cross__product_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">namespace math</div><div class="ttdef"><b>Definition</b> vector_cross_product.cpp:94</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d66/vector__cross__product_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="180" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="avector__cross__product_8cpp_html_a225732399c5c076976eae5b180a9f8c9"><div class="ttname"><a href="#a225732399c5c076976eae5b180a9f8c9">math::vector_cross::cross</a></div><div class="ttdeci">std::array&lt; double, 3 &gt; cross(const std::array&lt; double, 3 &gt; &amp;A, const std::array&lt; double, 3 &gt; &amp;B)</div><div class="ttdoc">Function to calculate the cross product of the passed arrays containing the direction ratios of the t...</div><div class="ttdef"><b>Definition</b> <a href="../../df/d66/vector__cross__product_8cpp_source.html#l00069">vector_cross_product.cpp:69</a></div></div>
+<div class="ttc" id="avector__cross__product_8cpp_html_a4b2a9757a87c18e1642d72410ecfaba8"><div class="ttname"><a href="#a4b2a9757a87c18e1642d72410ecfaba8">math::vector_cross::mag</a></div><div class="ttdeci">double mag(const std::array&lt; double, 3 &gt; &amp;vec)</div><div class="ttdoc">Calculates the magnitude of the mathematical vector from it's direction ratios.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d66/vector__cross__product_8cpp_source.html#l00083">vector_cross_product.cpp:83</a></div></div>
+<div class="ttc" id="avector__cross__product_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">namespace math</div><div class="ttdef"><b>Definition</b> <a href="../../df/d66/vector__cross__product_8cpp_source.html#l00094">vector_cross_product.cpp:94</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -334,13 +335,13 @@ Here is the call graph for this function:</div>
 <p>test the cross() and the mag() functions. </p>
 <p>Tests the cross() function.</p>
 <p>Tests the mag() function.</p>
-<div class="fragment"><div class="line"><span class="lineno">   94</span>                   {<span class="comment"></span></div>
-<div class="line"><span class="lineno">   95</span><span class="comment">    /// Tests the cross() function.</span></div>
-<div class="line"><span class="lineno">   96</span><span class="comment"></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;double, 3&gt;</a> t_vec = <a class="code hl_function" href="#a225732399c5c076976eae5b180a9f8c9">math::vector_cross::cross</a>({1, 2, 3}, {4, 5, 6});</div>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d66/vector__cross__product_8cpp_source.html#l00094">94</a> of file <a class="el" href="../../df/d66/vector__cross__product_8cpp_source.html">vector_cross_product.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   94</span>                   {</div>
+<div class="line"><span class="lineno">   96</span>    std::array&lt;double, 3&gt; t_vec = <a class="code hl_function" href="#a225732399c5c076976eae5b180a9f8c9">math::vector_cross::cross</a>({1, 2, 3}, {4, 5, 6});</div>
 <div class="line"><span class="lineno">   97</span>    assert(t_vec[0] == -3 &amp;&amp; t_vec[1] == 6 &amp;&amp; t_vec[2] == -3);</div>
-<div class="line"><span class="lineno">   98</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   99</span><span class="comment">    /// Tests the mag() function.</span></div>
-<div class="line"><span class="lineno">  100</span><span class="comment"></span>    <span class="keywordtype">double</span> t_mag = <a class="code hl_function" href="#a4b2a9757a87c18e1642d72410ecfaba8">math::vector_cross::mag</a>({6, 8, 0});</div>
+<div class="line"><span class="lineno">   98</span> </div>
+<div class="line"><span class="lineno">  100</span>    <span class="keywordtype">double</span> t_mag = <a class="code hl_function" href="#a4b2a9757a87c18e1642d72410ecfaba8">math::vector_cross::mag</a>({6, 8, 0});</div>
 <div class="line"><span class="lineno">  101</span>    assert(t_mag == 10);</div>
 <div class="line"><span class="lineno">  102</span>}</div>
 </div><!-- fragment -->

@@ -1,7 +1,0 @@
-<map id="main" name="main">
-<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,5,55,31"/>
-<area shape="rect" id="Node000002" href="$de/d99/aliquot__sum_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,5,146,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,16,87,16,87,21,55,21"/>
-<area shape="rect" id="Node000003" href="$dd/d47/namespacemath.html#ab37f3a7302a84179aae682c79d8390bf" title="to return the aliquot sum of a number" alt="" coords="194,5,322,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,16,178,16,178,21,146,21"/>
-</map>

@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: data_structures::tree_234::Tree234 Class Reference</title>
+<title>TheAlgorithms/C++: data_structures::tree_234::Tree234 Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -118,7 +135,7 @@ $(function(){initNavTree('d3/d95/classdata__structures_1_1tree__234_1_1_tree234.
 <div class="dynheader">
 Collaboration diagram for data_structures::tree_234::Tree234:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d85/classdata__structures_1_1tree__234_1_1_tree234__coll__graph.svg" width="355" height="332"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d85/classdata__structures_1_1tree__234_1_1_tree234__coll__graph.svg" width="355" height="244"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -198,7 +215,7 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a936bb546e6a94d8b9d35b30ee1bb291a" id="r_a936bb546e6a94d8b9d35b30ee1bb291a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a936bb546e6a94d8b9d35b30ee1bb291a">Traverse</a> (<a class="el" href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html">Node</a> *tree)</td></tr>
 <tr class="memdesc:a936bb546e6a94d8b9d35b30ee1bb291a"><td class="mdescLeft">&#160;</td><td class="mdescRight">In-order traverse the tree, print items.  <br /></td></tr>
 <tr class="separator:a936bb546e6a94d8b9d35b30ee1bb291a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af260f0760344771bf8fce4fc9b1739be" id="r_af260f0760344771bf8fce4fc9b1739be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af260f0760344771bf8fce4fc9b1739be">PrintNode</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a> &amp;ofs, <a class="el" href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html">Node</a> *<a class="el" href="../../d5/da1/structnode.html">node</a>, int64_t parent_index, int64_t index, int8_t parent_child_index)</td></tr>
+<tr class="memitem:af260f0760344771bf8fce4fc9b1739be" id="r_af260f0760344771bf8fce4fc9b1739be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af260f0760344771bf8fce4fc9b1739be">PrintNode</a> (std::ofstream &amp;ofs, <a class="el" href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html">Node</a> *<a class="el" href="../../d5/da1/structnode.html">node</a>, int64_t parent_index, int64_t index, int8_t parent_child_index)</td></tr>
 <tr class="memdesc:af260f0760344771bf8fce4fc9b1739be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the tree to a dot file. You can convert it to picture with graphviz.  <br /></td></tr>
 <tr class="separator:af260f0760344771bf8fce4fc9b1739be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -210,6 +227,8 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>2-3-4 tree class </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00323">323</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac4e7d1eb145af5e18b11c26f94a01e0e" name="ac4e7d1eb145af5e18b11c26f94a01e0e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac4e7d1eb145af5e18b11c26f94a01e0e">&#9670;&#160;</a></span>~Tree234()</h2>
@@ -225,9 +244,11 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00541">541</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  541</span>{ <a class="code hl_function" href="#a273511e84a5243ffffe81be28bd24855">DeleteNode</a>(<a class="code hl_variable" href="#a348ea76c7629b2dcf740be062f970a36">root_</a>); }</div>
-<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_a273511e84a5243ffffe81be28bd24855"><div class="ttname"><a href="#a273511e84a5243ffffe81be28bd24855">data_structures::tree_234::Tree234::DeleteNode</a></div><div class="ttdeci">void DeleteNode(Node *tree)</div><div class="ttdoc">Recursive release the tree.</div><div class="ttdef"><b>Definition</b> tree_234.cpp:547</div></div>
-<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_a348ea76c7629b2dcf740be062f970a36"><div class="ttname"><a href="#a348ea76c7629b2dcf740be062f970a36">data_structures::tree_234::Tree234::root_</a></div><div class="ttdeci">Node * root_</div><div class="ttdoc">root node of the tree</div><div class="ttdef"><b>Definition</b> tree_234.cpp:538</div></div>
+<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_a273511e84a5243ffffe81be28bd24855"><div class="ttname"><a href="#a273511e84a5243ffffe81be28bd24855">data_structures::tree_234::Tree234::DeleteNode</a></div><div class="ttdeci">void DeleteNode(Node *tree)</div><div class="ttdoc">Recursive release the tree.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/tree__234_8cpp_source.html#l00547">tree_234.cpp:547</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_a348ea76c7629b2dcf740be062f970a36"><div class="ttname"><a href="#a348ea76c7629b2dcf740be062f970a36">data_structures::tree_234::Tree234::root_</a></div><div class="ttdeci">Node * root_</div><div class="ttdoc">root node of the tree</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/tree__234_8cpp_source.html#l00538">tree_234.cpp:538</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -262,6 +283,8 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00547">547</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  547</span>                                   {</div>
 <div class="line"><span class="lineno">  548</span>    <span class="keywordflow">if</span> (!tree) {</div>
 <div class="line"><span class="lineno">  549</span>        <span class="keywordflow">return</span>;</div>
@@ -272,12 +295,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  554</span> </div>
 <div class="line"><span class="lineno">  555</span>    <span class="keyword">delete</span> tree;</div>
 <div class="line"><span class="lineno">  556</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234_a273511e84a5243ffffe81be28bd24855_cgraph.svg" width="392" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac85ba5abfd6d34dcd908b2afe6464657" name="ac85ba5abfd6d34dcd908b2afe6464657"></a>
@@ -311,24 +329,20 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>max item of the tree </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l01098">1098</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1098</span>                                          {</div>
 <div class="line"><span class="lineno"> 1099</span>    assert(tree);</div>
-<div class="line"><span class="lineno"> 1100</span>    int64_t <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">max</a> = 0;</div>
+<div class="line"><span class="lineno"> 1100</span>    int64_t max = 0;</div>
 <div class="line"><span class="lineno"> 1101</span> </div>
 <div class="line"><span class="lineno"> 1102</span>    <span class="keywordflow">while</span> (tree) {</div>
-<div class="line"><span class="lineno"> 1103</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">max</a> = tree-&gt;GetMaxItem();</div>
+<div class="line"><span class="lineno"> 1103</span>        max = tree-&gt;GetMaxItem();</div>
 <div class="line"><span class="lineno"> 1104</span>        tree = tree-&gt;GetRightmostChild();</div>
 <div class="line"><span class="lineno"> 1105</span>    }</div>
 <div class="line"><span class="lineno"> 1106</span> </div>
-<div class="line"><span class="lineno"> 1107</span>    <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">max</a>;</div>
+<div class="line"><span class="lineno"> 1107</span>    <span class="keywordflow">return</span> max;</div>
 <div class="line"><span class="lineno"> 1108</span>}</div>
-<div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234_ac85ba5abfd6d34dcd908b2afe6464657_cgraph.svg" width="476" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a65a1235659356166a3e9b451c64fcc36" name="a65a1235659356166a3e9b451c64fcc36"></a>
@@ -362,24 +376,20 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>min item of the tree </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l01115">1115</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1115</span>                                          {</div>
 <div class="line"><span class="lineno"> 1116</span>    assert(tree);</div>
-<div class="line"><span class="lineno"> 1117</span>    int64_t <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">min</a> = 0;</div>
+<div class="line"><span class="lineno"> 1117</span>    int64_t min = 0;</div>
 <div class="line"><span class="lineno"> 1118</span> </div>
 <div class="line"><span class="lineno"> 1119</span>    <span class="keywordflow">while</span> (tree) {</div>
-<div class="line"><span class="lineno"> 1120</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">min</a> = tree-&gt;GetMinItem();</div>
+<div class="line"><span class="lineno"> 1120</span>        min = tree-&gt;GetMinItem();</div>
 <div class="line"><span class="lineno"> 1121</span>        tree = tree-&gt;GetLeftmostChild();</div>
 <div class="line"><span class="lineno"> 1122</span>    }</div>
 <div class="line"><span class="lineno"> 1123</span> </div>
-<div class="line"><span class="lineno"> 1124</span>    <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">min</a>;</div>
+<div class="line"><span class="lineno"> 1124</span>    <span class="keywordflow">return</span> min;</div>
 <div class="line"><span class="lineno"> 1125</span>}</div>
-<div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234_a65a1235659356166a3e9b451c64fcc36_cgraph.svg" width="464" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6749ebb40710c9752a2771eda03c6b3e" name="a6749ebb40710c9752a2771eda03c6b3e"></a>
@@ -404,14 +414,11 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  655</span>{ <a class="code hl_function" href="#a07811b3c564a3a443b106c9aa717629d">InsertPreSplit</a>(item); }</div>
-<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_a07811b3c564a3a443b106c9aa717629d"><div class="ttname"><a href="#a07811b3c564a3a443b106c9aa717629d">data_structures::tree_234::Tree234::InsertPreSplit</a></div><div class="ttdeci">void InsertPreSplit(int64_t item)</div><div class="ttdoc">A insert implementation of pre-split.</div><div class="ttdef"><b>Definition</b> tree_234.cpp:585</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234_a6749ebb40710c9752a2771eda03c6b3e_cgraph.svg" width="100%" height="484"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00655">655</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  655</span>{ <a class="code hl_function" href="#a07811b3c564a3a443b106c9aa717629d">InsertPreSplit</a>(item); }</div>
+<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_a07811b3c564a3a443b106c9aa717629d"><div class="ttname"><a href="#a07811b3c564a3a443b106c9aa717629d">data_structures::tree_234::Tree234::InsertPreSplit</a></div><div class="ttdeci">void InsertPreSplit(int64_t item)</div><div class="ttdoc">A insert implementation of pre-split.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/tree__234_8cpp_source.html#l00585">tree_234.cpp:585</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a02df91964915ca97609d35f847faff5f" name="a02df91964915ca97609d35f847faff5f"></a>
@@ -450,10 +457,12 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the node that split as the parent when overflow happen </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00663">663</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  663</span>                                              {</div>
 <div class="line"><span class="lineno">  664</span>    assert(tree != <span class="keyword">nullptr</span>);</div>
 <div class="line"><span class="lineno">  665</span> </div>
-<div class="line"><span class="lineno">  666</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr&lt;Node&gt;</a> split_node;</div>
+<div class="line"><span class="lineno">  666</span>    std::unique_ptr&lt;Node&gt; split_node;</div>
 <div class="line"><span class="lineno">  667</span> </div>
 <div class="line"><span class="lineno">  668</span>    <span class="keywordflow">if</span> (tree-&gt;Contains(item)) {</div>
 <div class="line"><span class="lineno">  669</span>        <span class="comment">// return nullptr indicate current node not overflow</span></div>
@@ -462,29 +471,21 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  672</span> </div>
 <div class="line"><span class="lineno">  673</span>    <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *next_node = tree-&gt;GetNextPossibleChild(item);</div>
 <div class="line"><span class="lineno">  674</span>    <span class="keywordflow">if</span> (next_node) {</div>
-<div class="line"><span class="lineno">  675</span>        split_node.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr/reset.html">reset</a>(<a class="code hl_function" href="#a6749ebb40710c9752a2771eda03c6b3e">Insert</a>(next_node, item));</div>
+<div class="line"><span class="lineno">  675</span>        split_node.reset(<a class="code hl_function" href="#a6749ebb40710c9752a2771eda03c6b3e">Insert</a>(next_node, item));</div>
 <div class="line"><span class="lineno">  676</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  677</span>        split_node.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr/reset.html">reset</a>(<span class="keyword">new</span> <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a>(item));</div>
+<div class="line"><span class="lineno">  677</span>        split_node.reset(<span class="keyword">new</span> <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a>(item));</div>
 <div class="line"><span class="lineno">  678</span>    }</div>
 <div class="line"><span class="lineno">  679</span> </div>
 <div class="line"><span class="lineno">  680</span>    <span class="keywordflow">if</span> (split_node) {</div>
-<div class="line"><span class="lineno">  681</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a11f0d016dff7f7e62b3dddb9fdf47805">MergeNode</a>(tree, split_node.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr/get.html">get</a>());</div>
+<div class="line"><span class="lineno">  681</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a11f0d016dff7f7e62b3dddb9fdf47805">MergeNode</a>(tree, split_node.get());</div>
 <div class="line"><span class="lineno">  682</span>    }</div>
 <div class="line"><span class="lineno">  683</span> </div>
 <div class="line"><span class="lineno">  684</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  685</span>}</div>
-<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_a11f0d016dff7f7e62b3dddb9fdf47805"><div class="ttname"><a href="#a11f0d016dff7f7e62b3dddb9fdf47805">data_structures::tree_234::Tree234::MergeNode</a></div><div class="ttdeci">Node * MergeNode(Node *dst_node, Node *node)</div><div class="ttdoc">A helper function used during post-merge insert.</div><div class="ttdef"><b>Definition</b> tree_234.cpp:700</div></div>
-<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_a6749ebb40710c9752a2771eda03c6b3e"><div class="ttname"><a href="#a6749ebb40710c9752a2771eda03c6b3e">data_structures::tree_234::Tree234::Insert</a></div><div class="ttdeci">void Insert(int64_t item)</div><div class="ttdoc">Insert item to tree.</div><div class="ttdef"><b>Definition</b> tree_234.cpp:655</div></div>
-<div class="ttc" id="aget_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/unique_ptr/get.html">std::unique_ptr::get</a></div><div class="ttdeci">T get(T... args)</div></div>
-<div class="ttc" id="areset_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/unique_ptr/reset.html">std::unique_ptr::reset</a></div><div class="ttdeci">T reset(T... args)</div></div>
-<div class="ttc" id="astruct_node_html"><div class="ttname"><a href="../../db/d8b/struct_node.html">Node</a></div><div class="ttdef"><b>Definition</b> linkedlist_implentation_usingarray.cpp:14</div></div>
-<div class="ttc" id="aunique_ptr_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234_a02df91964915ca97609d35f847faff5f_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_a11f0d016dff7f7e62b3dddb9fdf47805"><div class="ttname"><a href="#a11f0d016dff7f7e62b3dddb9fdf47805">data_structures::tree_234::Tree234::MergeNode</a></div><div class="ttdeci">Node * MergeNode(Node *dst_node, Node *node)</div><div class="ttdoc">A helper function used during post-merge insert.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/tree__234_8cpp_source.html#l00700">tree_234.cpp:700</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_a6749ebb40710c9752a2771eda03c6b3e"><div class="ttname"><a href="#a6749ebb40710c9752a2771eda03c6b3e">data_structures::tree_234::Tree234::Insert</a></div><div class="ttdeci">void Insert(int64_t item)</div><div class="ttdoc">Insert item to tree.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/tree__234_8cpp_source.html#l00655">tree_234.cpp:655</a></div></div>
+<div class="ttc" id="astruct_node_html"><div class="ttname"><a href="../../db/d8b/struct_node.html">Node</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/dce/linkedlist__implentation__usingarray_8cpp_source.html#l00014">linkedlist_implentation_usingarray.cpp:14</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa7e5e00033f38006a224f30bdbf3f703" name="aa7e5e00033f38006a224f30bdbf3f703"></a>
@@ -517,6 +518,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00637">637</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  637</span>                                          {</div>
 <div class="line"><span class="lineno">  638</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a348ea76c7629b2dcf740be062f970a36">root_</a>) {</div>
 <div class="line"><span class="lineno">  639</span>        <a class="code hl_variable" href="#a348ea76c7629b2dcf740be062f970a36">root_</a> = <span class="keyword">new</span> <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a>(item);</div>
@@ -530,12 +533,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  647</span>        <a class="code hl_variable" href="#a348ea76c7629b2dcf740be062f970a36">root_</a> = split_node;</div>
 <div class="line"><span class="lineno">  648</span>    }</div>
 <div class="line"><span class="lineno">  649</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234_aa7e5e00033f38006a224f30bdbf3f703_cgraph.svg" width="100%" height="484"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a07811b3c564a3a443b106c9aa717629d" name="a07811b3c564a3a443b106c9aa717629d"></a>
@@ -568,6 +566,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00585">585</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  585</span>                                         {</div>
 <div class="line"><span class="lineno">  586</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a348ea76c7629b2dcf740be062f970a36">root_</a>) {</div>
 <div class="line"><span class="lineno">  587</span>        <a class="code hl_variable" href="#a348ea76c7629b2dcf740be062f970a36">root_</a> = <span class="keyword">new</span> <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a>(item);</div>
@@ -579,7 +579,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  593</span> </div>
 <div class="line"><span class="lineno">  594</span>    <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
 <div class="line"><span class="lineno">  595</span>        <span class="keywordflow">if</span> (!<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>) {</div>
-<div class="line"><span class="lineno">  596</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr&lt;Node&gt;</a> tmp(<span class="keyword">new</span> <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a>(item));</div>
+<div class="line"><span class="lineno">  596</span>            std::unique_ptr&lt;Node&gt; tmp(<span class="keyword">new</span> <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a>(item));</div>
 <div class="line"><span class="lineno">  597</span>            <a class="code hl_function" href="#ad37e29e2a4a6cc0eb65cbd5595e1da95">MergeNodeNotFull</a>(parent, tmp.get());</div>
 <div class="line"><span class="lineno">  598</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  599</span>        }</div>
@@ -615,16 +615,11 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  629</span>        <a class="code hl_class" href="../../d5/da1/structnode.html">node</a> = parent-&gt;GetNextPossibleChild(item);</div>
 <div class="line"><span class="lineno">  630</span>    }</div>
 <div class="line"><span class="lineno">  631</span>}</div>
-<div class="ttc" id="aavltree_8cpp_html_a74f0cf18a0e5b832d9994e2f2d022287"><div class="ttname"><a href="../../d8/dee/avltree_8cpp.html#a74f0cf18a0e5b832d9994e2f2d022287">node</a></div><div class="ttdeci">struct node { int data; int height; struct node *left; struct node *right;} node</div><div class="ttdoc">for std::queue</div><div class="ttdef"><b>Definition</b> avltree.cpp:13</div></div>
-<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_a370b625ca9f16bbef2b65e024ef78ea9"><div class="ttname"><a href="#a370b625ca9f16bbef2b65e024ef78ea9">data_structures::tree_234::Tree234::SplitNode</a></div><div class="ttdeci">Node * SplitNode(Node *node)</div><div class="ttdoc">Split a 4-node to 1 parent and 2 children, and return the parent node.</div><div class="ttdef"><b>Definition</b> tree_234.cpp:745</div></div>
-<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_ad37e29e2a4a6cc0eb65cbd5595e1da95"><div class="ttname"><a href="#ad37e29e2a4a6cc0eb65cbd5595e1da95">data_structures::tree_234::Tree234::MergeNodeNotFull</a></div><div class="ttdeci">void MergeNodeNotFull(Node *dst_node, Node *node)</div><div class="ttdoc">Merge node to a not-full target node.</div><div class="ttdef"><b>Definition</b> tree_234.cpp:730</div></div>
-<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition</b> binary_search_tree.cpp:11</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234_a07811b3c564a3a443b106c9aa717629d_cgraph.svg" width="100%" height="484"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="aavltree_8cpp_html_a74f0cf18a0e5b832d9994e2f2d022287"><div class="ttname"><a href="../../d8/dee/avltree_8cpp.html#a74f0cf18a0e5b832d9994e2f2d022287">node</a></div><div class="ttdeci">struct node { int data; int height; struct node *left; struct node *right;} node</div><div class="ttdoc">for std::queue</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dee/avltree_8cpp_source.html#l00013">avltree.cpp:13</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_a370b625ca9f16bbef2b65e024ef78ea9"><div class="ttname"><a href="#a370b625ca9f16bbef2b65e024ef78ea9">data_structures::tree_234::Tree234::SplitNode</a></div><div class="ttdeci">Node * SplitNode(Node *node)</div><div class="ttdoc">Split a 4-node to 1 parent and 2 children, and return the parent node.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/tree__234_8cpp_source.html#l00745">tree_234.cpp:745</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_ad37e29e2a4a6cc0eb65cbd5595e1da95"><div class="ttname"><a href="#ad37e29e2a4a6cc0eb65cbd5595e1da95">data_structures::tree_234::Tree234::MergeNodeNotFull</a></div><div class="ttdeci">void MergeNodeNotFull(Node *dst_node, Node *node)</div><div class="ttdoc">Merge node to a not-full target node.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/tree__234_8cpp_source.html#l00730">tree_234.cpp:730</a></div></div>
+<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d26/binary__search__tree_8cpp_source.html#l00011">binary_search_tree.cpp:11</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae58dca20f08eaf9313f6e7b0869c2d0e" name="ae58dca20f08eaf9313f6e7b0869c2d0e"></a>
@@ -663,19 +658,20 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00869">869</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  869</span>                                                   {</div>
 <div class="line"><span class="lineno">  870</span>    <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *left = parent-&gt;GetItemLeftChild(index);</div>
-<div class="line"><span class="lineno">  871</span>    <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a> = parent-&gt;GetItemRightChild(index);</div>
+<div class="line"><span class="lineno">  871</span>    <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *right = parent-&gt;GetItemRightChild(index);</div>
 <div class="line"><span class="lineno">  872</span> </div>
-<div class="line"><span class="lineno">  873</span>    assert(right &amp;&amp; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>-&gt;Is34Node());</div>
+<div class="line"><span class="lineno">  873</span>    assert(right &amp;&amp; right-&gt;Is34Node());</div>
 <div class="line"><span class="lineno">  874</span>    assert(left &amp;&amp; left-&gt;Is2Node());</div>
 <div class="line"><span class="lineno">  875</span> </div>
 <div class="line"><span class="lineno">  876</span>    left-&gt;InsertItemByIndex(left-&gt;GetCount(), parent-&gt;GetItem(index),</div>
-<div class="line"><span class="lineno">  877</span>                            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>-&gt;GetLeftmostChild(), <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  878</span>    parent-&gt;SetItem(index, <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>-&gt;GetMinItem());</div>
-<div class="line"><span class="lineno">  879</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>-&gt;RemoveItemByIndex(0, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  877</span>                            right-&gt;GetLeftmostChild(), <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  878</span>    parent-&gt;SetItem(index, right-&gt;GetMinItem());</div>
+<div class="line"><span class="lineno">  879</span>    right-&gt;RemoveItemByIndex(0, <span class="keyword">false</span>);</div>
 <div class="line"><span class="lineno">  880</span>}</div>
-<div class="ttc" id="aleft_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::right</a></div><div class="ttdeci">T right(T... args)</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -716,6 +712,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the merged 4-node </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00895">895</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  895</span>                                               {</div>
 <div class="line"><span class="lineno">  896</span>    assert(parent);</div>
 <div class="line"><span class="lineno">  897</span> </div>
@@ -744,12 +742,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  920</span> </div>
 <div class="line"><span class="lineno">  921</span>    <span class="keywordflow">return</span> left_child;</div>
 <div class="line"><span class="lineno">  922</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234_a36f4d5f603f7edb7db7c73fb53ba14e9_cgraph.svg" width="359" height="379"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a11f0d016dff7f7e62b3dddb9fdf47805" name="a11f0d016dff7f7e62b3dddb9fdf47805"></a>
@@ -789,6 +782,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>overflow node of this level </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00700">700</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  700</span>                                                   {</div>
 <div class="line"><span class="lineno">  701</span>    assert(dst_node != <span class="keyword">nullptr</span> &amp;&amp; <a class="code hl_class" href="../../d5/da1/structnode.html">node</a> != <span class="keyword">nullptr</span>);</div>
 <div class="line"><span class="lineno">  702</span> </div>
@@ -808,12 +803,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  716</span> </div>
 <div class="line"><span class="lineno">  717</span>    <span class="keywordflow">return</span> dst_node;</div>
 <div class="line"><span class="lineno">  718</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234_a11f0d016dff7f7e62b3dddb9fdf47805_cgraph.svg" width="100%" height="561"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad37e29e2a4a6cc0eb65cbd5595e1da95" name="ad37e29e2a4a6cc0eb65cbd5595e1da95"></a>
@@ -852,6 +842,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00730">730</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  730</span>                                                         {</div>
 <div class="line"><span class="lineno">  731</span>    assert(dst_node &amp;&amp; <a class="code hl_class" href="../../d5/da1/structnode.html">node</a> &amp;&amp; !dst_node-&gt;IsFull() &amp;&amp; <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;Is2Node());</div>
 <div class="line"><span class="lineno">  732</span> </div>
@@ -860,12 +852,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  735</span>    dst_node-&gt;SetChild(i, <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;GetChild(0));</div>
 <div class="line"><span class="lineno">  736</span>    dst_node-&gt;SetChild(i + 1, <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;GetChild(1));</div>
 <div class="line"><span class="lineno">  737</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234_ad37e29e2a4a6cc0eb65cbd5595e1da95_cgraph.svg" width="100%" height="478"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2e9a9db7792cf5383f4c4cc418255165" name="a2e9a9db7792cf5383f4c4cc418255165"></a>
@@ -893,16 +880,18 @@ Here is the call graph for this function:</div>
 <p>This is a helper structure to do a level order traversal to print the tree.</p>
 <p>&lt; tree node</p>
 <p>&lt; node index of level order that used when draw the link between child and parent</p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l01131">1131</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1131</span>                                         {</div>
 <div class="line"><span class="lineno"> 1132</span>    <span class="keywordflow">if</span> (!file_name) {</div>
 <div class="line"><span class="lineno"> 1133</span>        file_name = <span class="stringliteral">&quot;out.dot&quot;</span>;</div>
 <div class="line"><span class="lineno"> 1134</span>    }</div>
 <div class="line"><span class="lineno"> 1135</span> </div>
-<div class="line"><span class="lineno"> 1136</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a> ofs;</div>
+<div class="line"><span class="lineno"> 1136</span>    std::ofstream ofs;</div>
 <div class="line"><span class="lineno"> 1137</span> </div>
-<div class="line"><span class="lineno"> 1138</span>    ofs.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html">open</a>(file_name);</div>
+<div class="line"><span class="lineno"> 1138</span>    ofs.open(file_name);</div>
 <div class="line"><span class="lineno"> 1139</span>    <span class="keywordflow">if</span> (!ofs) {</div>
-<div class="line"><span class="lineno"> 1140</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;create tree dot file failed, &quot;</span> &lt;&lt; file_name &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno"> 1140</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;create tree dot file failed, &quot;</span> &lt;&lt; file_name &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno"> 1141</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno"> 1142</span>    }</div>
 <div class="line"><span class="lineno"> 1143</span> </div>
@@ -910,16 +899,13 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno"> 1145</span>    ofs &lt;&lt; <span class="stringliteral">&quot;node [shape=record]\n&quot;</span>;</div>
 <div class="line"><span class="lineno"> 1146</span> </div>
 <div class="line"><span class="lineno"> 1147</span>    int64_t index = 0;</div>
-<div class="line"><span class="lineno"> 1148</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno"> 1149</span><span class="comment">    /** @brief This is a helper structure to do a level order traversal to print</span></div>
-<div class="line"><span class="lineno"> 1150</span><span class="comment">     * the tree. */</span></div>
+<div class="line"><span class="lineno"> 1148</span> </div>
 <div class="line"><span class="lineno"> 1151</span>    <span class="keyword">struct </span>NodeInfo {</div>
-<div class="line"><span class="lineno"> 1152</span>        <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *<a class="code hl_typedef" href="../../d8/dee/avltree_8cpp.html#a74f0cf18a0e5b832d9994e2f2d022287">node</a>;     <span class="comment">///&lt; tree node</span></div>
-<div class="line"><span class="lineno"> 1153</span>        int64_t index;  <span class="comment">///&lt; node index of level order that used when draw the</span><span class="comment"></span></div>
-<div class="line"><span class="lineno"> 1154</span><span class="comment">                        ///&lt; link between child and parent</span></div>
-<div class="line"><span class="lineno"> 1155</span><span class="comment"></span>    };</div>
+<div class="line"><span class="lineno"> 1152</span>        <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *<a class="code hl_typedef" href="../../d8/dee/avltree_8cpp.html#a74f0cf18a0e5b832d9994e2f2d022287">node</a>;     </div>
+<div class="line"><span class="lineno"> 1153</span>        int64_t index;  </div>
+<div class="line"><span class="lineno"> 1155</span>    };</div>
 <div class="line"><span class="lineno"> 1156</span> </div>
-<div class="line"><span class="lineno"> 1157</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue&lt;NodeInfo&gt;</a> q;</div>
+<div class="line"><span class="lineno"> 1157</span>    std::queue&lt;NodeInfo&gt; q;</div>
 <div class="line"><span class="lineno"> 1158</span> </div>
 <div class="line"><span class="lineno"> 1159</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a348ea76c7629b2dcf740be062f970a36">root_</a>) {</div>
 <div class="line"><span class="lineno"> 1160</span>        <span class="comment">// print root node</span></div>
@@ -972,21 +958,10 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno"> 1207</span>    }</div>
 <div class="line"><span class="lineno"> 1208</span> </div>
 <div class="line"><span class="lineno"> 1209</span>    ofs &lt;&lt; <span class="stringliteral">&quot;}\n&quot;</span>;</div>
-<div class="line"><span class="lineno"> 1210</span>    ofs.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html">close</a>();</div>
+<div class="line"><span class="lineno"> 1210</span>    ofs.close();</div>
 <div class="line"><span class="lineno"> 1211</span>}</div>
-<div class="ttc" id="abasic_ofstream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_af260f0760344771bf8fce4fc9b1739be"><div class="ttname"><a href="#af260f0760344771bf8fce4fc9b1739be">data_structures::tree_234::Tree234::PrintNode</a></div><div class="ttdeci">void PrintNode(std::ofstream &amp;ofs, Node *node, int64_t parent_index, int64_t index, int8_t parent_child_index)</div><div class="ttdoc">Print the tree to a dot file. You can convert it to picture with graphviz.</div><div class="ttdef"><b>Definition</b> tree_234.cpp:1226</div></div>
-<div class="ttc" id="aclose_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html">std::ofstream::close</a></div><div class="ttdeci">T close(T... args)</div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="aopen_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html">std::ofstream::open</a></div><div class="ttdeci">T open(T... args)</div></div>
-<div class="ttc" id="aqueue_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234_a2e9a9db7792cf5383f4c4cc418255165_cgraph.svg" width="371" height="200"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_af260f0760344771bf8fce4fc9b1739be"><div class="ttname"><a href="#af260f0760344771bf8fce4fc9b1739be">data_structures::tree_234::Tree234::PrintNode</a></div><div class="ttdeci">void PrintNode(std::ofstream &amp;ofs, Node *node, int64_t parent_index, int64_t index, int8_t parent_child_index)</div><div class="ttdoc">Print the tree to a dot file. You can convert it to picture with graphviz.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/tree__234_8cpp_source.html#l01226">tree_234.cpp:1226</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af260f0760344771bf8fce4fc9b1739be" name="af260f0760344771bf8fce4fc9b1739be"></a>
@@ -1001,7 +976,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void data_structures::tree_234::Tree234::PrintNode </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ofs</em></span>, </td>
+          <td class="paramtype">std::ofstream &amp;</td>          <td class="paramname"><span class="paramname"><em>ofs</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1042,6 +1017,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l01226">1226</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1227</span>                                                                  {</div>
 <div class="line"><span class="lineno"> 1228</span>    assert(<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>);</div>
 <div class="line"><span class="lineno"> 1229</span> </div>
@@ -1098,14 +1075,11 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if item found and removed, false otherwise </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  929</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#a61dd051a74e5f36c8dc03dae8dca6ef4">RemovePreMerge</a>(<a class="code hl_variable" href="#a348ea76c7629b2dcf740be062f970a36">root_</a>, item); }</div>
-<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_a61dd051a74e5f36c8dc03dae8dca6ef4"><div class="ttname"><a href="#a61dd051a74e5f36c8dc03dae8dca6ef4">data_structures::tree_234::Tree234::RemovePreMerge</a></div><div class="ttdeci">bool RemovePreMerge(Node *node, int64_t item)</div><div class="ttdoc">Main function implement the pre-merge remove operation.</div><div class="ttdef"><b>Definition</b> tree_234.cpp:937</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234_a5da1be3f5b5d967ebb36a201f3ebad11_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00929">929</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  929</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#a61dd051a74e5f36c8dc03dae8dca6ef4">RemovePreMerge</a>(<a class="code hl_variable" href="#a348ea76c7629b2dcf740be062f970a36">root_</a>, item); }</div>
+<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_a61dd051a74e5f36c8dc03dae8dca6ef4"><div class="ttname"><a href="#a61dd051a74e5f36c8dc03dae8dca6ef4">data_structures::tree_234::Tree234::RemovePreMerge</a></div><div class="ttdeci">bool RemovePreMerge(Node *node, int64_t item)</div><div class="ttdoc">Main function implement the pre-merge remove operation.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/tree__234_8cpp_source.html#l00937">tree_234.cpp:937</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a61dd051a74e5f36c8dc03dae8dca6ef4" name="a61dd051a74e5f36c8dc03dae8dca6ef4"></a>
@@ -1144,6 +1118,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if remove success, false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00937">937</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  937</span>                                                     {</div>
 <div class="line"><span class="lineno">  938</span>    <span class="keywordflow">while</span> (<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>) {</div>
 <div class="line"><span class="lineno">  939</span>        <span class="keywordflow">if</span> (<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;IsLeaf()) {</div>
@@ -1299,19 +1275,14 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno"> 1089</span> </div>
 <div class="line"><span class="lineno"> 1090</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno"> 1091</span>}</div>
-<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_a36f4d5f603f7edb7db7c73fb53ba14e9"><div class="ttname"><a href="#a36f4d5f603f7edb7db7c73fb53ba14e9">data_structures::tree_234::Tree234::Merge</a></div><div class="ttdeci">Node * Merge(Node *parent, int8_t index)</div><div class="ttdoc">Merge the item at index of the parent node, and its left and right child.</div><div class="ttdef"><b>Definition</b> tree_234.cpp:895</div></div>
-<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_a65a1235659356166a3e9b451c64fcc36"><div class="ttname"><a href="#a65a1235659356166a3e9b451c64fcc36">data_structures::tree_234::Tree234::GetTreeMinItem</a></div><div class="ttdeci">int64_t GetTreeMinItem(Node *tree)</div><div class="ttdoc">Get the min item of the tree.</div><div class="ttdef"><b>Definition</b> tree_234.cpp:1115</div></div>
-<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_ac5361479dd996eb331759f33808657d9"><div class="ttname"><a href="#ac5361479dd996eb331759f33808657d9">data_structures::tree_234::Tree234::TryLeftRotate</a></div><div class="ttdeci">bool TryLeftRotate(Node *parent, Node *to_child)</div><div class="ttdoc">A handy function to try if we can do a left rotate to the target node.</div><div class="ttdef"><b>Definition</b> tree_234.cpp:778</div></div>
-<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_ac85ba5abfd6d34dcd908b2afe6464657"><div class="ttname"><a href="#ac85ba5abfd6d34dcd908b2afe6464657">data_structures::tree_234::Tree234::GetTreeMaxItem</a></div><div class="ttdeci">int64_t GetTreeMaxItem(Node *tree)</div><div class="ttdoc">Get the max item of the tree.</div><div class="ttdef"><b>Definition</b> tree_234.cpp:1098</div></div>
-<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_ae58dca20f08eaf9313f6e7b0869c2d0e"><div class="ttname"><a href="#ae58dca20f08eaf9313f6e7b0869c2d0e">data_structures::tree_234::Tree234::LeftRotate</a></div><div class="ttdeci">void LeftRotate(Node *parent, int8_t index)</div><div class="ttdoc">Do the actual left rotate operation.</div><div class="ttdef"><b>Definition</b> tree_234.cpp:869</div></div>
-<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_ae68f8e62be02657c1287def6b38d7cc9"><div class="ttname"><a href="#ae68f8e62be02657c1287def6b38d7cc9">data_structures::tree_234::Tree234::RightRotate</a></div><div class="ttdeci">void RightRotate(Node *parent, int8_t index)</div><div class="ttdoc">Do the actual right rotate operation.</div><div class="ttdef"><b>Definition</b> tree_234.cpp:845</div></div>
-<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_aec0642d1d151521ca7c70ea85cdb15d3"><div class="ttname"><a href="#aec0642d1d151521ca7c70ea85cdb15d3">data_structures::tree_234::Tree234::TryRightRotate</a></div><div class="ttdeci">bool TryRightRotate(Node *parent, Node *to_child)</div><div class="ttdoc">A handy function to try if we can do a right rotate to the target node.</div><div class="ttdef"><b>Definition</b> tree_234.cpp:813</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234_a61dd051a74e5f36c8dc03dae8dca6ef4_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_a36f4d5f603f7edb7db7c73fb53ba14e9"><div class="ttname"><a href="#a36f4d5f603f7edb7db7c73fb53ba14e9">data_structures::tree_234::Tree234::Merge</a></div><div class="ttdeci">Node * Merge(Node *parent, int8_t index)</div><div class="ttdoc">Merge the item at index of the parent node, and its left and right child.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/tree__234_8cpp_source.html#l00895">tree_234.cpp:895</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_a65a1235659356166a3e9b451c64fcc36"><div class="ttname"><a href="#a65a1235659356166a3e9b451c64fcc36">data_structures::tree_234::Tree234::GetTreeMinItem</a></div><div class="ttdeci">int64_t GetTreeMinItem(Node *tree)</div><div class="ttdoc">Get the min item of the tree.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/tree__234_8cpp_source.html#l01115">tree_234.cpp:1115</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_ac5361479dd996eb331759f33808657d9"><div class="ttname"><a href="#ac5361479dd996eb331759f33808657d9">data_structures::tree_234::Tree234::TryLeftRotate</a></div><div class="ttdeci">bool TryLeftRotate(Node *parent, Node *to_child)</div><div class="ttdoc">A handy function to try if we can do a left rotate to the target node.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/tree__234_8cpp_source.html#l00778">tree_234.cpp:778</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_ac85ba5abfd6d34dcd908b2afe6464657"><div class="ttname"><a href="#ac85ba5abfd6d34dcd908b2afe6464657">data_structures::tree_234::Tree234::GetTreeMaxItem</a></div><div class="ttdeci">int64_t GetTreeMaxItem(Node *tree)</div><div class="ttdoc">Get the max item of the tree.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/tree__234_8cpp_source.html#l01098">tree_234.cpp:1098</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_ae58dca20f08eaf9313f6e7b0869c2d0e"><div class="ttname"><a href="#ae58dca20f08eaf9313f6e7b0869c2d0e">data_structures::tree_234::Tree234::LeftRotate</a></div><div class="ttdeci">void LeftRotate(Node *parent, int8_t index)</div><div class="ttdoc">Do the actual left rotate operation.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/tree__234_8cpp_source.html#l00869">tree_234.cpp:869</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_ae68f8e62be02657c1287def6b38d7cc9"><div class="ttname"><a href="#ae68f8e62be02657c1287def6b38d7cc9">data_structures::tree_234::Tree234::RightRotate</a></div><div class="ttdeci">void RightRotate(Node *parent, int8_t index)</div><div class="ttdoc">Do the actual right rotate operation.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/tree__234_8cpp_source.html#l00845">tree_234.cpp:845</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_aec0642d1d151521ca7c70ea85cdb15d3"><div class="ttname"><a href="#aec0642d1d151521ca7c70ea85cdb15d3">data_structures::tree_234::Tree234::TryRightRotate</a></div><div class="ttdeci">bool TryRightRotate(Node *parent, Node *to_child)</div><div class="ttdoc">A handy function to try if we can do a right rotate to the target node.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/tree__234_8cpp_source.html#l00813">tree_234.cpp:813</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae68f8e62be02657c1287def6b38d7cc9" name="ae68f8e62be02657c1287def6b38d7cc9"></a>
@@ -1350,14 +1321,16 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00845">845</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  845</span>                                                    {</div>
 <div class="line"><span class="lineno">  846</span>    <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *left = parent-&gt;GetItemLeftChild(index);</div>
-<div class="line"><span class="lineno">  847</span>    <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a> = parent-&gt;GetItemRightChild(index);</div>
+<div class="line"><span class="lineno">  847</span>    <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *right = parent-&gt;GetItemRightChild(index);</div>
 <div class="line"><span class="lineno">  848</span> </div>
 <div class="line"><span class="lineno">  849</span>    assert(left &amp;&amp; left-&gt;Is34Node());</div>
-<div class="line"><span class="lineno">  850</span>    assert(right &amp;&amp; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>-&gt;Is2Node());</div>
+<div class="line"><span class="lineno">  850</span>    assert(right &amp;&amp; right-&gt;Is2Node());</div>
 <div class="line"><span class="lineno">  851</span> </div>
-<div class="line"><span class="lineno">  852</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>-&gt;InsertItemByIndex(0, parent-&gt;GetItem(index),</div>
+<div class="line"><span class="lineno">  852</span>    right-&gt;InsertItemByIndex(0, parent-&gt;GetItem(index),</div>
 <div class="line"><span class="lineno">  853</span>                             left-&gt;GetRightmostChild(), <span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">  854</span>    parent-&gt;SetItem(index, left-&gt;GetMaxItem());</div>
 <div class="line"><span class="lineno">  855</span>    left-&gt;RemoveItemByIndex(left-&gt;GetCount() - 1, <span class="keyword">true</span>);</div>
@@ -1396,14 +1369,16 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>split parent node </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00745">745</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  745</span>                                   {</div>
 <div class="line"><span class="lineno">  746</span>    assert(<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;GetCount() == 3);</div>
 <div class="line"><span class="lineno">  747</span> </div>
 <div class="line"><span class="lineno">  748</span>    <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *left = <a class="code hl_typedef" href="../../d8/dee/avltree_8cpp.html#a74f0cf18a0e5b832d9994e2f2d022287">node</a>;</div>
 <div class="line"><span class="lineno">  749</span> </div>
-<div class="line"><span class="lineno">  750</span>    <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a> = <span class="keyword">new</span> <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a>(<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;GetItem(2));</div>
-<div class="line"><span class="lineno">  751</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>-&gt;SetChild(0, <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;GetChild(2));</div>
-<div class="line"><span class="lineno">  752</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>-&gt;SetChild(1, <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;GetChild(3));</div>
+<div class="line"><span class="lineno">  750</span>    <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *right = <span class="keyword">new</span> <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a>(<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;GetItem(2));</div>
+<div class="line"><span class="lineno">  751</span>    right-&gt;SetChild(0, <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;GetChild(2));</div>
+<div class="line"><span class="lineno">  752</span>    right-&gt;SetChild(1, <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;GetChild(3));</div>
 <div class="line"><span class="lineno">  753</span> </div>
 <div class="line"><span class="lineno">  754</span>    <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *parent = <span class="keyword">new</span> <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a>(<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;GetItem(1));</div>
 <div class="line"><span class="lineno">  755</span>    parent-&gt;SetChild(0, left);</div>
@@ -1439,17 +1414,14 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00562">562</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  562</span>                       {</div>
 <div class="line"><span class="lineno">  563</span>    <a class="code hl_function" href="#a84ab7b4fe7442b5e2eeed8c050bb86bd">Traverse</a>(<a class="code hl_variable" href="#a348ea76c7629b2dcf740be062f970a36">root_</a>);</div>
-<div class="line"><span class="lineno">  564</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  564</span>    std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  565</span>}</div>
-<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_a84ab7b4fe7442b5e2eeed8c050bb86bd"><div class="ttname"><a href="#a84ab7b4fe7442b5e2eeed8c050bb86bd">data_structures::tree_234::Tree234::Traverse</a></div><div class="ttdeci">void Traverse()</div><div class="ttdoc">In-order traverse.</div><div class="ttdef"><b>Definition</b> tree_234.cpp:562</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234_a84ab7b4fe7442b5e2eeed8c050bb86bd_cgraph.svg" width="294" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_a84ab7b4fe7442b5e2eeed8c050bb86bd"><div class="ttname"><a href="#a84ab7b4fe7442b5e2eeed8c050bb86bd">data_structures::tree_234::Tree234::Traverse</a></div><div class="ttdeci">void Traverse()</div><div class="ttdoc">In-order traverse.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/tree__234_8cpp_source.html#l00562">tree_234.cpp:562</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a936bb546e6a94d8b9d35b30ee1bb291a" name="a936bb546e6a94d8b9d35b30ee1bb291a"></a>
@@ -1482,6 +1454,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00567">567</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  567</span>                                 {</div>
 <div class="line"><span class="lineno">  568</span>    <span class="keywordflow">if</span> (!<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>) {</div>
 <div class="line"><span class="lineno">  569</span>        <span class="keywordflow">return</span>;</div>
@@ -1490,17 +1464,12 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  572</span>    int8_t i = 0;</div>
 <div class="line"><span class="lineno">  573</span>    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;GetCount(); i++) {</div>
 <div class="line"><span class="lineno">  574</span>        <a class="code hl_function" href="#a84ab7b4fe7442b5e2eeed8c050bb86bd">Traverse</a>(<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;GetChild(i));</div>
-<div class="line"><span class="lineno">  575</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;GetItem(i) &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
+<div class="line"><span class="lineno">  575</span>        std::cout &lt;&lt; <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;GetItem(i) &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
 <div class="line"><span class="lineno">  576</span>    }</div>
 <div class="line"><span class="lineno">  577</span> </div>
 <div class="line"><span class="lineno">  578</span>    <a class="code hl_function" href="#a84ab7b4fe7442b5e2eeed8c050bb86bd">Traverse</a>(<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;GetChild(i));</div>
 <div class="line"><span class="lineno">  579</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234_a936bb546e6a94d8b9d35b30ee1bb291a_cgraph.svg" width="506" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac5361479dd996eb331759f33808657d9" name="ac5361479dd996eb331759f33808657d9"></a>
@@ -1540,6 +1509,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if we successfully do the rotate. false if the requirements are not fulfilled. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00778">778</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  778</span>                                                        {</div>
 <div class="line"><span class="lineno">  779</span>    <span class="keywordtype">int</span> to_child_index = parent-&gt;GetChildIndex(to_child);</div>
 <div class="line"><span class="lineno">  780</span> </div>
@@ -1559,12 +1530,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  794</span> </div>
 <div class="line"><span class="lineno">  795</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  796</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234_ac5361479dd996eb331759f33808657d9_cgraph.svg" width="424" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aec0642d1d151521ca7c70ea85cdb15d3" name="aec0642d1d151521ca7c70ea85cdb15d3"></a>
@@ -1604,6 +1570,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if we successfully do the rotate. false if the requirements are not fulfilled. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00813">813</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  813</span>                                                         {</div>
 <div class="line"><span class="lineno">  814</span>    int8_t to_child_index = parent-&gt;GetChildIndex(to_child);</div>
 <div class="line"><span class="lineno">  815</span> </div>
@@ -1623,12 +1591,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  829</span> </div>
 <div class="line"><span class="lineno">  830</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  831</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234_aec0642d1d151521ca7c70ea85cdb15d3_cgraph.svg" width="443" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -1653,12 +1616,14 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>root node of the tree </p>
-<div class="fragment"><div class="line"><span class="lineno">  538</span>{<span class="keyword">nullptr</span>};  <span class="comment">///&lt; root node of the tree</span></div>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00538">538</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  538</span>{<span class="keyword">nullptr</span>};  </div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>data_structures/<a class="el" href="../../db/dbc/tree__234_8cpp.html">tree_234.cpp</a></li>
+<li>data_structures/<a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

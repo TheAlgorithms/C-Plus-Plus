@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: sorting/shell_sort2.cpp File Reference</title>
+<title>TheAlgorithms/C++: sorting/shell_sort2.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -124,7 +141,9 @@ Include dependency graph for shell_sort2.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d86/shell__sort2_8cpp__incl.svg" width="488" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d4/d7a/shell__sort2_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html">sorting</a></td></tr>
@@ -146,7 +165,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a4d76603c54d3dc56146e92d10a043924"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a4d76603c54d3dc56146e92d10a043924">sorting::shell_sort</a> (T(&amp;arr)[N])</td></tr>
 <tr class="separator:a4d76603c54d3dc56146e92d10a043924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2c5b92cbfe73f63f6074c61b0a45331" id="r_af2c5b92cbfe73f63f6074c61b0a45331"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:af2c5b92cbfe73f63f6074c61b0a45331"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#af2c5b92cbfe73f63f6074c61b0a45331">sorting::shell_sort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *arr)</td></tr>
+<tr class="memitem:af2c5b92cbfe73f63f6074c61b0a45331"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#af2c5b92cbfe73f63f6074c61b0a45331">sorting::shell_sort</a> (std::vector&lt; T &gt; *arr)</td></tr>
 <tr class="separator:af2c5b92cbfe73f63f6074c61b0a45331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7eb77daed2cf1513f6d68c47a1c2db1c" id="r_a7eb77daed2cf1513f6d68c47a1c2db1c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a7eb77daed2cf1513f6d68c47a1c2db1c"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7eb77daed2cf1513f6d68c47a1c2db1c">compare</a> (const void *a, const void *b)</td></tr>
@@ -161,6 +180,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a href="https://en.wikipedia.org/wiki/Shell_sort" target="_blank">Shell sort</a> algorithm </p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/kvedala" target="_blank">Krishna Vedala</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d4/d7a/shell__sort2_8cpp_source.html">shell_sort2.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a7eb77daed2cf1513f6d68c47a1c2db1c" name="a7eb77daed2cf1513f6d68c47a1c2db1c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7eb77daed2cf1513f6d68c47a1c2db1c">&#9670;&#160;</a></span>compare()</h2>
@@ -183,6 +204,8 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>function to compare sorting using cstdlib's qsort </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d7a/shell__sort2_8cpp_source.html#l00087">87</a> of file <a class="el" href="../../d4/d7a/shell__sort2_8cpp_source.html">shell_sort2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   87</span>                                          {</div>
 <div class="line"><span class="lineno">   88</span>    T arg1 = *<span class="keyword">static_cast&lt;</span><span class="keyword">const </span>T *<span class="keyword">&gt;</span>(a);</div>
 <div class="line"><span class="lineno">   89</span>    T arg2 = *<span class="keyword">static_cast&lt;</span><span class="keyword">const </span>T *<span class="keyword">&gt;</span>(b);</div>
@@ -218,28 +241,30 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Main function </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d7a/shell__sort2_8cpp_source.html#l00183">183</a> of file <a class="el" href="../../d4/d7a/shell__sort2_8cpp_source.html">shell_sort2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  183</span>                                 {</div>
 <div class="line"><span class="lineno">  184</span>    <span class="comment">// initialize random number generator - once per program</span></div>
-<div class="line"><span class="lineno">  185</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a>(NULL));</div>
+<div class="line"><span class="lineno">  185</span>    std::srand(std::time(NULL));</div>
 <div class="line"><span class="lineno">  186</span> </div>
 <div class="line"><span class="lineno">  187</span>    <a class="code hl_function" href="../../d3/d4c/quick__sort__3_8cpp.html#a07e5c62de28aeddea986890ce7ac1bda">test_int</a>(100);  <span class="comment">// test with sorting random array of 100 values</span></div>
-<div class="line"><span class="lineno">  188</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1 - 100 int values - passed. \n&quot;</span>;</div>
+<div class="line"><span class="lineno">  188</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 1 - 100 int values - passed. \n&quot;</span>;</div>
 <div class="line"><span class="lineno">  189</span>    <a class="code hl_function" href="../../d3/d4c/quick__sort__3_8cpp.html#a07e5c62de28aeddea986890ce7ac1bda">test_int</a>(1000);  <span class="comment">// test with sorting random array of 1000 values</span></div>
-<div class="line"><span class="lineno">  190</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2 - 1000 int values - passed.\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  190</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 2 - 1000 int values - passed.\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  191</span>    <a class="code hl_function" href="../../d3/d4c/quick__sort__3_8cpp.html#a07e5c62de28aeddea986890ce7ac1bda">test_int</a>(10000);  <span class="comment">// test with sorting random array of 10000 values</span></div>
-<div class="line"><span class="lineno">  192</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 3 - 10000 int values - passed.\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  192</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 3 - 10000 int values - passed.\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  193</span> </div>
 <div class="line"><span class="lineno">  194</span>    <a class="code hl_function" href="#a22ea0d1f7943ebb4371d31e44b465b6d">test_f</a>(100);  <span class="comment">// test with sorting random array of 100 values</span></div>
-<div class="line"><span class="lineno">  195</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1 - 100 float values - passed. \n&quot;</span>;</div>
+<div class="line"><span class="lineno">  195</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 1 - 100 float values - passed. \n&quot;</span>;</div>
 <div class="line"><span class="lineno">  196</span>    <a class="code hl_function" href="#a22ea0d1f7943ebb4371d31e44b465b6d">test_f</a>(1000);  <span class="comment">// test with sorting random array of 1000 values</span></div>
-<div class="line"><span class="lineno">  197</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2 - 1000 float values - passed.\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  197</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 2 - 1000 float values - passed.\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  198</span>    <a class="code hl_function" href="#a22ea0d1f7943ebb4371d31e44b465b6d">test_f</a>(10000);  <span class="comment">// test with sorting random array of 10000 values</span></div>
-<div class="line"><span class="lineno">  199</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 3 - 10000 float values - passed.\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  199</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 3 - 10000 float values - passed.\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  200</span> </div>
 <div class="line"><span class="lineno">  201</span>    <span class="keywordtype">int</span> i, NUM_DATA;</div>
 <div class="line"><span class="lineno">  202</span> </div>
 <div class="line"><span class="lineno">  203</span>    <span class="keywordflow">if</span> (argc == 2)</div>
-<div class="line"><span class="lineno">  204</span>        NUM_DATA = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/atoi.html">atoi</a>(argv[1]);</div>
+<div class="line"><span class="lineno">  204</span>        NUM_DATA = atoi(argv[1]);</div>
 <div class="line"><span class="lineno">  205</span>    <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  206</span>        NUM_DATA = 200;</div>
 <div class="line"><span class="lineno">  207</span> </div>
@@ -248,47 +273,33 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  210</span>    <span class="comment">// int array2 = new int[NUM_DATA];</span></div>
 <div class="line"><span class="lineno">  211</span>    <span class="keywordtype">int</span> range = 1800;</div>
 <div class="line"><span class="lineno">  212</span> </div>
-<div class="line"><span class="lineno">  213</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">time</a>(NULL));</div>
+<div class="line"><span class="lineno">  213</span>    std::srand(time(NULL));</div>
 <div class="line"><span class="lineno">  214</span>    <span class="keywordflow">for</span> (i = 0; i &lt; NUM_DATA; i++) {</div>
 <div class="line"><span class="lineno">  215</span>        <span class="comment">// allocate random numbers in the given range</span></div>
-<div class="line"><span class="lineno">  216</span>        <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>[i] = (<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % range) - (range &gt;&gt; 1);</div>
+<div class="line"><span class="lineno">  216</span>        <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>[i] = (std::rand() % range) - (range &gt;&gt; 1);</div>
 <div class="line"><span class="lineno">  217</span>    }</div>
 <div class="line"><span class="lineno">  218</span> </div>
-<div class="line"><span class="lineno">  219</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Unsorted original data: &quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  219</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Unsorted original data: &quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  220</span>    <a class="code hl_function" href="#a951127aea9d7e1e53ea9ae0868633246">show_data</a>(<a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>, NUM_DATA);</div>
-<div class="line"><span class="lineno">  221</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock_t.html">std::clock_t</a> start = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a>();</div>
+<div class="line"><span class="lineno">  221</span>    std::clock_t start = std::clock();</div>
 <div class="line"><span class="lineno">  222</span>    shell_sort(<a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>, NUM_DATA);  <span class="comment">// perform sorting</span></div>
-<div class="line"><span class="lineno">  223</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock_t.html">std::clock_t</a> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a> = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a>();</div>
+<div class="line"><span class="lineno">  223</span>    std::clock_t end = std::clock();</div>
 <div class="line"><span class="lineno">  224</span> </div>
-<div class="line"><span class="lineno">  225</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div>
-<div class="line"><span class="lineno">  226</span>              &lt;&lt; <span class="stringliteral">&quot;Data Sorted using custom implementation: &quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  225</span>    std::cout &lt;&lt; std::endl</div>
+<div class="line"><span class="lineno">  226</span>              &lt;&lt; <span class="stringliteral">&quot;Data Sorted using custom implementation: &quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  227</span>    <a class="code hl_function" href="#a951127aea9d7e1e53ea9ae0868633246">show_data</a>(<a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>, NUM_DATA);</div>
 <div class="line"><span class="lineno">  228</span> </div>
-<div class="line"><span class="lineno">  229</span>    <span class="keywordtype">double</span> elapsed_time = (<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a> - start) * 1.f / CLOCKS_PER_SEC;</div>
-<div class="line"><span class="lineno">  230</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Time spent sorting: &quot;</span> &lt;&lt; elapsed_time &lt;&lt; <span class="stringliteral">&quot;s\n&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  229</span>    <span class="keywordtype">double</span> elapsed_time = (end - start) * 1.f / CLOCKS_PER_SEC;</div>
+<div class="line"><span class="lineno">  230</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Time spent sorting: &quot;</span> &lt;&lt; elapsed_time &lt;&lt; <span class="stringliteral">&quot;s\n&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  231</span> </div>
 <div class="line"><span class="lineno">  232</span>    <span class="keyword">delete</span>[] <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>;</div>
 <div class="line"><span class="lineno">  233</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  234</span>}</div>
-<div class="ttc" id="aatoi_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/byte/atoi.html">std::atoi</a></div><div class="ttdeci">T atoi(T... args)</div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aclock_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a></div><div class="ttdeci">T clock(T... args)</div></div>
-<div class="ttc" id="aclock_t_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/clock_t.html">std::clock_t</a></div></div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="ahash__search_8cpp_html_a6e1a77282bc65ad359d753d25df23243"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a></div><div class="ttdeci">int data[MAX]</div><div class="ttdoc">test data</div><div class="ttdef"><b>Definition</b> hash_search.cpp:24</div></div>
-<div class="ttc" id="aquick__sort__3_8cpp_html_a07e5c62de28aeddea986890ce7ac1bda"><div class="ttname"><a href="../../d3/d4c/quick__sort__3_8cpp.html#a07e5c62de28aeddea986890ce7ac1bda">test_int</a></div><div class="ttdeci">static void test_int()</div><div class="ttdef"><b>Definition</b> quick_sort_3.cpp:138</div></div>
-<div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
-<div class="ttc" id="ashell__sort2_8cpp_html_a22ea0d1f7943ebb4371d31e44b465b6d"><div class="ttname"><a href="#a22ea0d1f7943ebb4371d31e44b465b6d">test_f</a></div><div class="ttdeci">void test_f(const int NUM_DATA)</div><div class="ttdef"><b>Definition</b> shell_sort2.cpp:145</div></div>
-<div class="ttc" id="ashell__sort2_8cpp_html_a951127aea9d7e1e53ea9ae0868633246"><div class="ttname"><a href="#a951127aea9d7e1e53ea9ae0868633246">show_data</a></div><div class="ttdeci">void show_data(T *arr, size_t LEN)</div><div class="ttdef"><b>Definition</b> shell_sort2.cpp:18</div></div>
-<div class="ttc" id="asrand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a></div><div class="ttdeci">T srand(T... args)</div></div>
-<div class="ttc" id="atime_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a></div><div class="ttdeci">T time(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d7a/shell__sort2_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph.svg" width="362" height="444"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="ahash__search_8cpp_html_a6e1a77282bc65ad359d753d25df23243"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a></div><div class="ttdeci">int data[MAX]</div><div class="ttdoc">test data</div><div class="ttdef"><b>Definition</b> <a href="../../d1/df3/hash__search_8cpp_source.html#l00024">hash_search.cpp:24</a></div></div>
+<div class="ttc" id="aquick__sort__3_8cpp_html_a07e5c62de28aeddea986890ce7ac1bda"><div class="ttname"><a href="../../d3/d4c/quick__sort__3_8cpp.html#a07e5c62de28aeddea986890ce7ac1bda">test_int</a></div><div class="ttdeci">static void test_int()</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d4c/quick__sort__3_8cpp_source.html#l00138">quick_sort_3.cpp:138</a></div></div>
+<div class="ttc" id="ashell__sort2_8cpp_html_a22ea0d1f7943ebb4371d31e44b465b6d"><div class="ttname"><a href="#a22ea0d1f7943ebb4371d31e44b465b6d">test_f</a></div><div class="ttdeci">void test_f(const int NUM_DATA)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d7a/shell__sort2_8cpp_source.html#l00145">shell_sort2.cpp:145</a></div></div>
+<div class="ttc" id="ashell__sort2_8cpp_html_a951127aea9d7e1e53ea9ae0868633246"><div class="ttname"><a href="#a951127aea9d7e1e53ea9ae0868633246">show_data</a></div><div class="ttdeci">void show_data(T *arr, size_t LEN)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d7a/shell__sort2_8cpp_source.html#l00018">shell_sort2.cpp:18</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a951127aea9d7e1e53ea9ae0868633246" name="a951127aea9d7e1e53ea9ae0868633246"></a>
@@ -318,20 +329,17 @@ template&lt;class T &gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d7a/shell__sort2_8cpp_source.html#l00018">18</a> of file <a class="el" href="../../d4/d7a/shell__sort2_8cpp_source.html">shell_sort2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   18</span>                                   {</div>
 <div class="line"><span class="lineno">   19</span>    <span class="keywordtype">size_t</span> i;</div>
 <div class="line"><span class="lineno">   20</span> </div>
 <div class="line"><span class="lineno">   21</span>    <span class="keywordflow">for</span> (i = 0; i &lt; LEN; i++) {</div>
-<div class="line"><span class="lineno">   22</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; arr[i] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
+<div class="line"><span class="lineno">   22</span>        std::cout &lt;&lt; arr[i] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
 <div class="line"><span class="lineno">   23</span>    }</div>
-<div class="line"><span class="lineno">   24</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   24</span>    std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   25</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d7a/shell__sort2_8cpp_a951127aea9d7e1e53ea9ae0868633246_cgraph.svg" width="215" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a63aaff7cabfa3da2da8b9477b5fad9d6" name="a63aaff7cabfa3da2da8b9477b5fad9d6"></a>
@@ -357,15 +365,12 @@ template&lt;typename T , size_t N&gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d7a/shell__sort2_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../d4/d7a/shell__sort2_8cpp_source.html">shell_sort2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   32</span>                            {</div>
 <div class="line"><span class="lineno">   33</span>    <a class="code hl_function" href="#a951127aea9d7e1e53ea9ae0868633246">show_data</a>(arr, N);</div>
 <div class="line"><span class="lineno">   34</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d7a/shell__sort2_8cpp_a63aaff7cabfa3da2da8b9477b5fad9d6_cgraph.svg" width="347" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a22ea0d1f7943ebb4371d31e44b465b6d" name="a22ea0d1f7943ebb4371d31e44b465b6d"></a>
@@ -382,7 +387,9 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Test implementation of shell_sort on float arrays by comparing results against <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/qsort.html">std::qsort</a>. </p>
+<p>Test implementation of shell_sort on float arrays by comparing results against std::qsort. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d7a/shell__sort2_8cpp_source.html#l00145">145</a> of file <a class="el" href="../../d4/d7a/shell__sort2_8cpp_source.html">shell_sort2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  145</span>                                {</div>
 <div class="line"><span class="lineno">  146</span>    <span class="comment">// int array = new int[NUM_DATA];</span></div>
 <div class="line"><span class="lineno">  147</span>    <span class="keywordtype">float</span> *<a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a> = <span class="keyword">new</span> <span class="keywordtype">float</span>[NUM_DATA];</div>
@@ -391,24 +398,24 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  150</span>    <span class="keywordtype">int</span> range = 1000;</div>
 <div class="line"><span class="lineno">  151</span> </div>
 <div class="line"><span class="lineno">  152</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; NUM_DATA; i++) {</div>
-<div class="line"><span class="lineno">  153</span>        <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>[i] = data2[i] = ((<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % range) - (range &gt;&gt; 1)) / 100.;</div>
+<div class="line"><span class="lineno">  153</span>        <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>[i] = data2[i] = ((std::rand() % range) - (range &gt;&gt; 1)) / 100.;</div>
 <div class="line"><span class="lineno">  154</span>    }</div>
 <div class="line"><span class="lineno">  155</span> </div>
 <div class="line"><span class="lineno">  156</span>    <span class="comment">/* sort using our implementation */</span></div>
-<div class="line"><span class="lineno">  157</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock_t.html">std::clock_t</a> start = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a>();</div>
+<div class="line"><span class="lineno">  157</span>    std::clock_t start = std::clock();</div>
 <div class="line"><span class="lineno">  158</span>    shell_sort(<a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>, NUM_DATA);</div>
-<div class="line"><span class="lineno">  159</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock_t.html">std::clock_t</a> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a> = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a>();</div>
-<div class="line"><span class="lineno">  160</span>    <span class="keywordtype">double</span> elapsed_time = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a> - start) / CLOCKS_PER_SEC;</div>
-<div class="line"><span class="lineno">  161</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Time spent sorting using shell_sort2: &quot;</span> &lt;&lt; elapsed_time</div>
+<div class="line"><span class="lineno">  159</span>    std::clock_t end = std::clock();</div>
+<div class="line"><span class="lineno">  160</span>    <span class="keywordtype">double</span> elapsed_time = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(end - start) / CLOCKS_PER_SEC;</div>
+<div class="line"><span class="lineno">  161</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Time spent sorting using shell_sort2: &quot;</span> &lt;&lt; elapsed_time</div>
 <div class="line"><span class="lineno">  162</span>              &lt;&lt; <span class="stringliteral">&quot;s\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  163</span> </div>
 <div class="line"><span class="lineno">  164</span>    <span class="comment">/* sort using std::qsort */</span></div>
-<div class="line"><span class="lineno">  165</span>    start = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a>();</div>
-<div class="line"><span class="lineno">  166</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/qsort.html">std::qsort</a>(data2, NUM_DATA, <span class="keyword">sizeof</span>(data2[0]), <a class="code hl_struct" href="../../d1/db3/structcompare.html">compare&lt;float&gt;</a>);</div>
-<div class="line"><span class="lineno">  167</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a> = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a>();</div>
+<div class="line"><span class="lineno">  165</span>    start = std::clock();</div>
+<div class="line"><span class="lineno">  166</span>    std::qsort(data2, NUM_DATA, <span class="keyword">sizeof</span>(data2[0]), <a class="code hl_struct" href="../../d1/db3/structcompare.html">compare&lt;float&gt;</a>);</div>
+<div class="line"><span class="lineno">  167</span>    end = std::clock();</div>
 <div class="line"><span class="lineno">  168</span> </div>
-<div class="line"><span class="lineno">  169</span>    elapsed_time = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a> - start) / CLOCKS_PER_SEC;</div>
-<div class="line"><span class="lineno">  170</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Time spent sorting using std::qsort: &quot;</span> &lt;&lt; elapsed_time</div>
+<div class="line"><span class="lineno">  169</span>    elapsed_time = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(end - start) / CLOCKS_PER_SEC;</div>
+<div class="line"><span class="lineno">  170</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Time spent sorting using std::qsort: &quot;</span> &lt;&lt; elapsed_time</div>
 <div class="line"><span class="lineno">  171</span>              &lt;&lt; <span class="stringliteral">&quot;s\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  172</span> </div>
 <div class="line"><span class="lineno">  173</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; NUM_DATA; i++) {</div>
@@ -419,14 +426,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  178</span>    <span class="keyword">delete</span>[] <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>;</div>
 <div class="line"><span class="lineno">  179</span>    <span class="keyword">delete</span>[] data2;</div>
 <div class="line"><span class="lineno">  180</span>}</div>
-<div class="ttc" id="aqsort_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/qsort.html">std::qsort</a></div><div class="ttdeci">T qsort(T... args)</div></div>
-<div class="ttc" id="astructcompare_html"><div class="ttname"><a href="../../d1/db3/structcompare.html">compare</a></div><div class="ttdef"><b>Definition</b> huffman.cpp:36</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d7a/shell__sort2_8cpp_a22ea0d1f7943ebb4371d31e44b465b6d_cgraph.svg" width="192" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="astructcompare_html"><div class="ttname"><a href="../../d1/db3/structcompare.html">compare</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d8e/huffman_8cpp_source.html#l00036">huffman.cpp:36</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a895b313cb2671e8f712040460325573e" name="a895b313cb2671e8f712040460325573e"></a>
@@ -443,7 +444,9 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Test implementation of shell_sort on integer arrays by comparing results against <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/qsort.html">std::qsort</a>. </p>
+<p>Test implementation of shell_sort on integer arrays by comparing results against std::qsort. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d7a/shell__sort2_8cpp_source.html#l00105">105</a> of file <a class="el" href="../../d4/d7a/shell__sort2_8cpp_source.html">shell_sort2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  105</span>                                  {</div>
 <div class="line"><span class="lineno">  106</span>    <span class="comment">// int array = new int[NUM_DATA];</span></div>
 <div class="line"><span class="lineno">  107</span>    <span class="keywordtype">int</span> *<a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a> = <span class="keyword">new</span> <span class="keywordtype">int</span>[NUM_DATA];</div>
@@ -452,23 +455,23 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  110</span>    <span class="keywordtype">int</span> range = 1800;</div>
 <div class="line"><span class="lineno">  111</span> </div>
 <div class="line"><span class="lineno">  112</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; NUM_DATA; i++)</div>
-<div class="line"><span class="lineno">  113</span>        <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>[i] = data2[i] = (<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % range) - (range &gt;&gt; 1);</div>
+<div class="line"><span class="lineno">  113</span>        <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>[i] = data2[i] = (std::rand() % range) - (range &gt;&gt; 1);</div>
 <div class="line"><span class="lineno">  114</span> </div>
 <div class="line"><span class="lineno">  115</span>    <span class="comment">/* sort using our implementation */</span></div>
-<div class="line"><span class="lineno">  116</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock_t.html">std::clock_t</a> start = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a>();</div>
+<div class="line"><span class="lineno">  116</span>    std::clock_t start = std::clock();</div>
 <div class="line"><span class="lineno">  117</span>    shell_sort(<a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>, NUM_DATA);</div>
-<div class="line"><span class="lineno">  118</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock_t.html">std::clock_t</a> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a> = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a>();</div>
-<div class="line"><span class="lineno">  119</span>    <span class="keywordtype">double</span> elapsed_time = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a> - start) / CLOCKS_PER_SEC;</div>
-<div class="line"><span class="lineno">  120</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Time spent sorting using shell_sort2: &quot;</span> &lt;&lt; elapsed_time</div>
+<div class="line"><span class="lineno">  118</span>    std::clock_t end = std::clock();</div>
+<div class="line"><span class="lineno">  119</span>    <span class="keywordtype">double</span> elapsed_time = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(end - start) / CLOCKS_PER_SEC;</div>
+<div class="line"><span class="lineno">  120</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Time spent sorting using shell_sort2: &quot;</span> &lt;&lt; elapsed_time</div>
 <div class="line"><span class="lineno">  121</span>              &lt;&lt; <span class="stringliteral">&quot;s\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  122</span> </div>
 <div class="line"><span class="lineno">  123</span>    <span class="comment">/* sort using std::qsort */</span></div>
-<div class="line"><span class="lineno">  124</span>    start = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a>();</div>
-<div class="line"><span class="lineno">  125</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/qsort.html">std::qsort</a>(data2, NUM_DATA, <span class="keyword">sizeof</span>(data2[0]), <a class="code hl_struct" href="../../d1/db3/structcompare.html">compare&lt;int&gt;</a>);</div>
-<div class="line"><span class="lineno">  126</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a> = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a>();</div>
+<div class="line"><span class="lineno">  124</span>    start = std::clock();</div>
+<div class="line"><span class="lineno">  125</span>    std::qsort(data2, NUM_DATA, <span class="keyword">sizeof</span>(data2[0]), <a class="code hl_struct" href="../../d1/db3/structcompare.html">compare&lt;int&gt;</a>);</div>
+<div class="line"><span class="lineno">  126</span>    end = std::clock();</div>
 <div class="line"><span class="lineno">  127</span> </div>
-<div class="line"><span class="lineno">  128</span>    elapsed_time = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a> - start) / CLOCKS_PER_SEC;</div>
-<div class="line"><span class="lineno">  129</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Time spent sorting using std::qsort: &quot;</span> &lt;&lt; elapsed_time</div>
+<div class="line"><span class="lineno">  128</span>    elapsed_time = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(end - start) / CLOCKS_PER_SEC;</div>
+<div class="line"><span class="lineno">  129</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Time spent sorting using std::qsort: &quot;</span> &lt;&lt; elapsed_time</div>
 <div class="line"><span class="lineno">  130</span>              &lt;&lt; <span class="stringliteral">&quot;s\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  131</span> </div>
 <div class="line"><span class="lineno">  132</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; NUM_DATA; i++) {</div>
@@ -479,12 +482,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  137</span>    <span class="keyword">delete</span>[] <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>;</div>
 <div class="line"><span class="lineno">  138</span>    <span class="keyword">delete</span>[] data2;</div>
 <div class="line"><span class="lineno">  139</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d7a/shell__sort2_8cpp_a895b313cb2671e8f712040460325573e_cgraph.svg" width="202" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

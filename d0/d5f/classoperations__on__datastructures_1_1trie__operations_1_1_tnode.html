@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: operations_on_datastructures::trie_operations::Tnode Class Reference</title>
+<title>TheAlgorithms/C++: operations_on_datastructures::trie_operations::Tnode Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -137,54 +154,52 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afca808362c13273ca8c8ae7d58e8eee0" id="r_afca808362c13273ca8c8ae7d58e8eee0"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afca808362c13273ca8c8ae7d58e8eee0">numberOfChildren</a> (<a class="el" href="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html">Tnode</a> *<a class="el" href="../../d5/da1/structnode.html">node</a>)</td></tr>
 <tr class="memdesc:afca808362c13273ca8c8ae7d58e8eee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to count the number of children a node in the trie has.  <br /></td></tr>
 <tr class="separator:afca808362c13273ca8c8ae7d58e8eee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ecb75b985b1ffc575a880274f855b1c" id="r_a7ecb75b985b1ffc575a880274f855b1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ecb75b985b1ffc575a880274f855b1c">Insert</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;entry)</td></tr>
+<tr class="memitem:a7ecb75b985b1ffc575a880274f855b1c" id="r_a7ecb75b985b1ffc575a880274f855b1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ecb75b985b1ffc575a880274f855b1c">Insert</a> (const std::string &amp;entry)</td></tr>
 <tr class="memdesc:a7ecb75b985b1ffc575a880274f855b1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to insert a word in the trie.  <br /></td></tr>
 <tr class="separator:a7ecb75b985b1ffc575a880274f855b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefd24626ac47277431c9b8604e064340" id="r_aefd24626ac47277431c9b8604e064340"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefd24626ac47277431c9b8604e064340">Delete</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> entry)</td></tr>
+<tr class="memitem:aefd24626ac47277431c9b8604e064340" id="r_aefd24626ac47277431c9b8604e064340"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefd24626ac47277431c9b8604e064340">Delete</a> (std::string entry)</td></tr>
 <tr class="memdesc:aefd24626ac47277431c9b8604e064340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to verify presence and hence delete an entry from the trie.  <br /></td></tr>
 <tr class="separator:aefd24626ac47277431c9b8604e064340"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adef6940391f981ab86767775176b7169" id="r_adef6940391f981ab86767775176b7169"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adef6940391f981ab86767775176b7169">DeleteFrom</a> (<a class="el" href="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html">Tnode</a> *delete_from, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> delete_string, int remove_index)</td></tr>
+<tr class="memitem:adef6940391f981ab86767775176b7169" id="r_adef6940391f981ab86767775176b7169"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adef6940391f981ab86767775176b7169">DeleteFrom</a> (<a class="el" href="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html">Tnode</a> *delete_from, std::string delete_string, int remove_index)</td></tr>
 <tr class="memdesc:adef6940391f981ab86767775176b7169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function recursively deletes the substring character by character iterating through the string to be deleted. It traverses till the end of word in a recursive fashion, from there it deletes characters one by one till it reaches back to the initial call.  <br /></td></tr>
 <tr class="separator:adef6940391f981ab86767775176b7169"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a624fcdf3c3beb2025d69f2cfda8023" id="r_a4a624fcdf3c3beb2025d69f2cfda8023"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a624fcdf3c3beb2025d69f2cfda8023">SearchPresence</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;key)</td></tr>
+<tr class="memitem:a4a624fcdf3c3beb2025d69f2cfda8023" id="r_a4a624fcdf3c3beb2025d69f2cfda8023"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a624fcdf3c3beb2025d69f2cfda8023">SearchPresence</a> (const std::string &amp;key)</td></tr>
 <tr class="memdesc:a4a624fcdf3c3beb2025d69f2cfda8023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to check a word's presence in the trie (Basic)  <br /></td></tr>
 <tr class="separator:a4a624fcdf3c3beb2025d69f2cfda8023"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a097913c4badec2b60d50a171ecc299fe" id="r_a097913c4badec2b60d50a171ecc299fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a097913c4badec2b60d50a171ecc299fe">SuggestAutocomplete</a> (<a class="el" href="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html">Tnode</a> *new_root, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;prefix)</td></tr>
+<tr class="memitem:a097913c4badec2b60d50a171ecc299fe" id="r_a097913c4badec2b60d50a171ecc299fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a097913c4badec2b60d50a171ecc299fe">SuggestAutocomplete</a> (<a class="el" href="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html">Tnode</a> *new_root, const std::string &amp;prefix)</td></tr>
 <tr class="memdesc:a097913c4badec2b60d50a171ecc299fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursive function to suggest all the entries of trie which have a given common prefix.  <br /></td></tr>
 <tr class="separator:a097913c4badec2b60d50a171ecc299fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18b70172ca4fb2811dbfb9a86e48b34c" id="r_a18b70172ca4fb2811dbfb9a86e48b34c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18b70172ca4fb2811dbfb9a86e48b34c">SearchSuggestions</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;key)</td></tr>
+<tr class="memitem:a18b70172ca4fb2811dbfb9a86e48b34c" id="r_a18b70172ca4fb2811dbfb9a86e48b34c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18b70172ca4fb2811dbfb9a86e48b34c">SearchSuggestions</a> (const std::string &amp;key)</td></tr>
 <tr class="memdesc:a18b70172ca4fb2811dbfb9a86e48b34c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lists out all the words in trie with the longest prefix of the search key that is present in the trie. For example - if trie contains "abc", "abcde", "abcdefg", "abcddef" and if the search key is "abcdezz", then the longest common prefix is "abcde" and hence search results will be "abcde", "abcdefg".  <br /></td></tr>
 <tr class="separator:a18b70172ca4fb2811dbfb9a86e48b34c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e556f52c837190ecf4265b1f05cfe9c" id="r_a9e556f52c837190ecf4265b1f05cfe9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e556f52c837190ecf4265b1f05cfe9c">SuggestFreqAutocomplete</a> (<a class="el" href="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html">Tnode</a> *new_root, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;prefix, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue.html">std::priority_queue</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; int, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &gt; &gt; *suggestions)</td></tr>
+<tr class="memitem:a9e556f52c837190ecf4265b1f05cfe9c" id="r_a9e556f52c837190ecf4265b1f05cfe9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e556f52c837190ecf4265b1f05cfe9c">SuggestFreqAutocomplete</a> (<a class="el" href="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html">Tnode</a> *new_root, const std::string &amp;prefix, std::priority_queue&lt; std::pair&lt; int, std::string &gt; &gt; *suggestions)</td></tr>
 <tr class="memdesc:a9e556f52c837190ecf4265b1f05cfe9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursive function to suggest most frequently searched entries of trie which have a given common prefix.  <br /></td></tr>
 <tr class="separator:a9e556f52c837190ecf4265b1f05cfe9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c5ab271d8042540f64ef16d259d1503" id="r_a7c5ab271d8042540f64ef16d259d1503"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c5ab271d8042540f64ef16d259d1503">SearchFreqSuggestions</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;key)</td></tr>
+<tr class="memitem:a7c5ab271d8042540f64ef16d259d1503" id="r_a7c5ab271d8042540f64ef16d259d1503"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c5ab271d8042540f64ef16d259d1503">SearchFreqSuggestions</a> (const std::string &amp;key)</td></tr>
 <tr class="memdesc:a7c5ab271d8042540f64ef16d259d1503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lists out the most frequent words in trie with the longest prefix of the search key that is present in the trie. For example - if trie contains "abc", "abcde", "abcdefg", "abcddef" and they have been previously searched for 3, 1, 2, 4 times respectively, if the search key is "ab", then the longest common prefix is "ab" and only the top 3 frequencies among the matches would be displayed viz. "abcddef", "abc", "abcdefg".  <br /></td></tr>
 <tr class="separator:a7c5ab271d8042540f64ef16d259d1503"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacafb8c9f3ebac7ac6c01d9645bb67b6" id="r_aacafb8c9f3ebac7ac6c01d9645bb67b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacafb8c9f3ebac7ac6c01d9645bb67b6">SelectionTop_3</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue.html">std::priority_queue</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; int, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &gt; &gt; *suggestions)</td></tr>
+<tr class="memitem:aacafb8c9f3ebac7ac6c01d9645bb67b6" id="r_aacafb8c9f3ebac7ac6c01d9645bb67b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacafb8c9f3ebac7ac6c01d9645bb67b6">SelectionTop_3</a> (std::priority_queue&lt; std::pair&lt; int, std::string &gt; &gt; *suggestions)</td></tr>
 <tr class="memdesc:aacafb8c9f3ebac7ac6c01d9645bb67b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to display the 3 suggestions with highest frequency of search hits.  <br /></td></tr>
 <tr class="separator:aacafb8c9f3ebac7ac6c01d9645bb67b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:aa4aac1c6bed58a84472906b63f20da83" id="r_aa4aac1c6bed58a84472906b63f20da83"><td class="memItemLeft" align="right" valign="top"><a id="aa4aac1c6bed58a84472906b63f20da83" name="aa4aac1c6bed58a84472906b63f20da83"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html">Tnode</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>english</b></td></tr>
+<tr class="memitem:aa4aac1c6bed58a84472906b63f20da83" id="r_aa4aac1c6bed58a84472906b63f20da83"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html">Tnode</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4aac1c6bed58a84472906b63f20da83">english</a></td></tr>
 <tr class="separator:aa4aac1c6bed58a84472906b63f20da83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa9dab736046a4140e94bb9104074cd6" id="r_afa9dab736046a4140e94bb9104074cd6"><td class="memItemLeft" align="right" valign="top"><a id="afa9dab736046a4140e94bb9104074cd6" name="afa9dab736046a4140e94bb9104074cd6"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>endOfWord</b></td></tr>
+<tr class="memitem:afa9dab736046a4140e94bb9104074cd6" id="r_afa9dab736046a4140e94bb9104074cd6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa9dab736046a4140e94bb9104074cd6">endOfWord</a></td></tr>
 <tr class="separator:afa9dab736046a4140e94bb9104074cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bab9bb47215cd674471c94b0b448014" id="r_a7bab9bb47215cd674471c94b0b448014"><td class="memItemLeft" align="right" valign="top"><a id="a7bab9bb47215cd674471c94b0b448014" name="a7bab9bb47215cd674471c94b0b448014"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>frequency</b></td></tr>
+<tr class="memitem:a7bab9bb47215cd674471c94b0b448014" id="r_a7bab9bb47215cd674471c94b0b448014"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bab9bb47215cd674471c94b0b448014">frequency</a></td></tr>
 <tr class="separator:a7bab9bb47215cd674471c94b0b448014"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:a0f310c3d4d7b82e5ee1036771cade702" id="r_a0f310c3d4d7b82e5ee1036771cade702"><td class="memItemLeft" align="right" valign="top"><a id="a0f310c3d4d7b82e5ee1036771cade702" name="a0f310c3d4d7b82e5ee1036771cade702"></a>
-static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>ENGLISH_ALPHABET_SIZE</b> = 26</td></tr>
+<tr class="memitem:a0f310c3d4d7b82e5ee1036771cade702" id="r_a0f310c3d4d7b82e5ee1036771cade702"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f310c3d4d7b82e5ee1036771cade702">ENGLISH_ALPHABET_SIZE</a> = 26</td></tr>
 <tr class="separator:a0f310c3d4d7b82e5ee1036771cade702"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class defining the structure of trie node and containing the methods to perform operations on them. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html#l00037">37</a> of file <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html">trie_multiple_search.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aef1ef6608e5876312d9ae7f36f469ba7" name="aef1ef6608e5876312d9ae7f36f469ba7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aef1ef6608e5876312d9ae7f36f469ba7">&#9670;&#160;</a></span>Tnode() <span class="overload">[1/2]</span></h2>
@@ -208,6 +223,8 @@ static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>E
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html">trie_multiple_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   50</span>            {</div>
 <div class="line"><span class="lineno">   51</span>        english.resize(ENGLISH_ALPHABET_SIZE, <span class="keyword">nullptr</span>);</div>
 <div class="line"><span class="lineno">   52</span>        endOfWord = <span class="keyword">false</span>;</div>
@@ -238,12 +255,14 @@ static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>E
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html#l00056">56</a> of file <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html">trie_multiple_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   56</span>                             {</div>
 <div class="line"><span class="lineno">   57</span>        english = <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>.english;</div>
 <div class="line"><span class="lineno">   58</span>        endOfWord = <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>.endOfWord;</div>
 <div class="line"><span class="lineno">   59</span>        frequency = <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>.frequency;</div>
 <div class="line"><span class="lineno">   60</span>    }</div>
-<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition</b> binary_search_tree.cpp:11</div></div>
+<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d26/binary__search__tree_8cpp_source.html#l00011">binary_search_tree.cpp:11</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -269,6 +288,8 @@ static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>E
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html#l00093">93</a> of file <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html">trie_multiple_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   93</span>             {</div>
 <div class="line"><span class="lineno">   94</span>        <span class="keywordtype">int</span> i = 0;</div>
 <div class="line"><span class="lineno">   95</span>        <span class="keywordflow">for</span> (i = 0; i &lt; ENGLISH_ALPHABET_SIZE; i++) {</div>
@@ -290,7 +311,7 @@ static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>E
         <tr>
           <td class="memname">void operations_on_datastructures::trie_operations::Tnode::Delete </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></td>          <td class="paramname"><span class="paramname"><em>entry</em></span></td><td>)</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>entry</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -303,18 +324,20 @@ static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>E
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html#l00153">153</a> of file <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html">trie_multiple_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  153</span>                                  {</div>
 <div class="line"><span class="lineno">  154</span>    Tnode *cur_pos = <span class="keyword">this</span>,</div>
 <div class="line"><span class="lineno">  155</span>          *delete_from = <span class="keyword">this</span>;  <span class="comment">// Current pointer pointing to root</span></div>
-<div class="line"><span class="lineno">  156</span>    <span class="keywordtype">int</span> letter_index = 0, delete_from_index = 0, i = 0, n = entry.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>();</div>
+<div class="line"><span class="lineno">  156</span>    <span class="keywordtype">int</span> letter_index = 0, delete_from_index = 0, i = 0, n = entry.size();</div>
 <div class="line"><span class="lineno">  157</span> </div>
 <div class="line"><span class="lineno">  158</span>    <span class="keywordflow">for</span> (i = 0; i &lt; n; i++) {</div>
 <div class="line"><span class="lineno">  159</span>        <span class="comment">// To ignore case</span></div>
-<div class="line"><span class="lineno">  160</span>        letter_index = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/tolower.html">tolower</a>(entry[i]) - 97;</div>
+<div class="line"><span class="lineno">  160</span>        letter_index = tolower(entry[i]) - 97;</div>
 <div class="line"><span class="lineno">  161</span> </div>
 <div class="line"><span class="lineno">  162</span>        <span class="comment">// Display error message when given entry is not present in the tree</span></div>
 <div class="line"><span class="lineno">  163</span>        <span class="keywordflow">if</span> (cur_pos-&gt;english[letter_index] == <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">  164</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Entry not Found&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  164</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Entry not Found&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  165</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  166</span>        }</div>
 <div class="line"><span class="lineno">  167</span>        <span class="comment">// If the current node is end of word for the current prefix or if it</span></div>
@@ -334,7 +357,7 @@ static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>E
 <div class="line"><span class="lineno">  181</span>    <span class="comment">// cur_pos now points to the last char of entry. Display message if that</span></div>
 <div class="line"><span class="lineno">  182</span>    <span class="comment">// entry does not exist</span></div>
 <div class="line"><span class="lineno">  183</span>    <span class="keywordflow">if</span> (!cur_pos-&gt;endOfWord) {</div>
-<div class="line"><span class="lineno">  184</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Entry not Found&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  184</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Entry not Found&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  185</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  186</span>    }</div>
 <div class="line"><span class="lineno">  187</span> </div>
@@ -347,7 +370,7 @@ static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>E
 <div class="line"><span class="lineno">  194</span>    }</div>
 <div class="line"><span class="lineno">  195</span> </div>
 <div class="line"><span class="lineno">  196</span>    <span class="comment">// The first character of the suffix to be deleted</span></div>
-<div class="line"><span class="lineno">  197</span>    letter_index = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/tolower.html">tolower</a>(entry[delete_from_index + 1]) - 97;</div>
+<div class="line"><span class="lineno">  197</span>    letter_index = tolower(entry[delete_from_index + 1]) - 97;</div>
 <div class="line"><span class="lineno">  198</span>    <span class="comment">// Point cur_pos to the next node</span></div>
 <div class="line"><span class="lineno">  199</span>    cur_pos = delete_from-&gt;english[letter_index];</div>
 <div class="line"><span class="lineno">  200</span>    <span class="comment">// Sever the connection from the main trie</span></div>
@@ -363,18 +386,9 @@ static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>E
 <div class="line"><span class="lineno">  210</span>        <span class="keyword">delete</span> cur_pos;</div>
 <div class="line"><span class="lineno">  211</span>    }</div>
 <div class="line"><span class="lineno">  212</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aclassoperations__on__datastructures_1_1trie__operations_1_1_tnode_html_adef6940391f981ab86767775176b7169"><div class="ttname"><a href="#adef6940391f981ab86767775176b7169">operations_on_datastructures::trie_operations::Tnode::DeleteFrom</a></div><div class="ttdeci">void DeleteFrom(Tnode *delete_from, std::string delete_string, int remove_index)</div><div class="ttdoc">Function recursively deletes the substring character by character iterating through the string to be ...</div><div class="ttdef"><b>Definition</b> trie_multiple_search.cpp:137</div></div>
-<div class="ttc" id="aclassoperations__on__datastructures_1_1trie__operations_1_1_tnode_html_afca808362c13273ca8c8ae7d58e8eee0"><div class="ttname"><a href="#afca808362c13273ca8c8ae7d58e8eee0">operations_on_datastructures::trie_operations::Tnode::numberOfChildren</a></div><div class="ttdeci">uint8_t numberOfChildren(Tnode *node)</div><div class="ttdoc">Function to count the number of children a node in the trie has.</div><div class="ttdef"><b>Definition</b> trie_multiple_search.cpp:72</div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">std::string::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-<div class="ttc" id="atolower_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/byte/tolower.html">std::tolower</a></div><div class="ttdeci">T tolower(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode_aefd24626ac47277431c9b8604e064340_cgraph.svg" width="603" height="272"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassoperations__on__datastructures_1_1trie__operations_1_1_tnode_html_adef6940391f981ab86767775176b7169"><div class="ttname"><a href="#adef6940391f981ab86767775176b7169">operations_on_datastructures::trie_operations::Tnode::DeleteFrom</a></div><div class="ttdeci">void DeleteFrom(Tnode *delete_from, std::string delete_string, int remove_index)</div><div class="ttdoc">Function recursively deletes the substring character by character iterating through the string to be ...</div><div class="ttdef"><b>Definition</b> <a href="../../d7/def/trie__multiple__search_8cpp_source.html#l00137">trie_multiple_search.cpp:137</a></div></div>
+<div class="ttc" id="aclassoperations__on__datastructures_1_1trie__operations_1_1_tnode_html_afca808362c13273ca8c8ae7d58e8eee0"><div class="ttname"><a href="#afca808362c13273ca8c8ae7d58e8eee0">operations_on_datastructures::trie_operations::Tnode::numberOfChildren</a></div><div class="ttdeci">uint8_t numberOfChildren(Tnode *node)</div><div class="ttdoc">Function to count the number of children a node in the trie has.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/def/trie__multiple__search_8cpp_source.html#l00072">trie_multiple_search.cpp:72</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adef6940391f981ab86767775176b7169" name="adef6940391f981ab86767775176b7169"></a>
@@ -391,7 +405,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></td>          <td class="paramname"><span class="paramname"><em>delete_string</em></span>, </td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>delete_string</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -410,9 +424,11 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html#l00137">137</a> of file <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html">trie_multiple_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  138</span>                                         {</div>
-<div class="line"><span class="lineno">  139</span>    <span class="keywordflow">if</span> (delete_string.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>() == remove_index) {</div>
-<div class="line"><span class="lineno">  140</span>        <span class="keywordtype">int</span> letter_index = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/tolower.html">tolower</a>(delete_string[remove_index]) - 97;</div>
+<div class="line"><span class="lineno">  139</span>    <span class="keywordflow">if</span> (delete_string.size() == remove_index) {</div>
+<div class="line"><span class="lineno">  140</span>        <span class="keywordtype">int</span> letter_index = tolower(delete_string[remove_index]) - 97;</div>
 <div class="line"><span class="lineno">  141</span> </div>
 <div class="line"><span class="lineno">  142</span>        <a class="code hl_function" href="#adef6940391f981ab86767775176b7169">DeleteFrom</a>(delete_from-&gt;english[letter_index], delete_string,</div>
 <div class="line"><span class="lineno">  143</span>                   remove_index + 1);</div>
@@ -420,12 +436,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  145</span>        <span class="keyword">delete</span> delete_from;</div>
 <div class="line"><span class="lineno">  146</span>    }</div>
 <div class="line"><span class="lineno">  147</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode_adef6940391f981ab86767775176b7169_cgraph.svg" width="363" height="91"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7ecb75b985b1ffc575a880274f855b1c" name="a7ecb75b985b1ffc575a880274f855b1c"></a>
@@ -437,7 +448,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void operations_on_datastructures::trie_operations::Tnode::Insert </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>entry</em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>entry</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -450,13 +461,15 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html#l00107">107</a> of file <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html">trie_multiple_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  107</span>                                         {</div>
 <div class="line"><span class="lineno">  108</span>    Tnode *cur_pos = <span class="keyword">this</span>;</div>
 <div class="line"><span class="lineno">  109</span>    <span class="keywordtype">int</span> letter_index = 0;</div>
 <div class="line"><span class="lineno">  110</span> </div>
 <div class="line"><span class="lineno">  111</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;i : entry) {</div>
 <div class="line"><span class="lineno">  112</span>        <span class="comment">// To ignore case</span></div>
-<div class="line"><span class="lineno">  113</span>        letter_index = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/tolower.html">tolower</a>(i) - 97;</div>
+<div class="line"><span class="lineno">  113</span>        letter_index = tolower(i) - 97;</div>
 <div class="line"><span class="lineno">  114</span> </div>
 <div class="line"><span class="lineno">  115</span>        <span class="comment">// Allocate a node for each character of entry if not present in the</span></div>
 <div class="line"><span class="lineno">  116</span>        <span class="comment">// trie</span></div>
@@ -503,17 +516,13 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>count of the number of children of the given node (max 26) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html#l00072">72</a> of file <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html">trie_multiple_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   72</span>                                                 {</div>
 <div class="line"><span class="lineno">   73</span>        <span class="keywordflow">return</span> ENGLISH_ALPHABET_SIZE -</div>
-<div class="line"><span class="lineno">   74</span>               <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/count.html">std::count</a>(<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;english.begin(), <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;english.end(), <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">   74</span>               std::count(<a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;english.begin(), <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;english.end(), <span class="keyword">nullptr</span>);</div>
 <div class="line"><span class="lineno">   75</span>    }</div>
-<div class="ttc" id="acount_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/count.html">std::count</a></div><div class="ttdeci">T count(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode_afca808362c13273ca8c8ae7d58e8eee0_cgraph.svg" width="331" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7c5ab271d8042540f64ef16d259d1503" name="a7c5ab271d8042540f64ef16d259d1503"></a>
@@ -525,7 +534,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void operations_on_datastructures::trie_operations::Tnode::SearchFreqSuggestions </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -538,21 +547,23 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html#l00368">368</a> of file <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html">trie_multiple_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  368</span>                                                      {</div>
 <div class="line"><span class="lineno">  369</span>    Tnode *cur_pos = <span class="keyword">nullptr</span>, *prev_pos = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  370</span>    cur_pos = prev_pos = <span class="keyword">this</span>;  <span class="comment">// maintaining 2 pointers, initialized to root</span></div>
 <div class="line"><span class="lineno">  371</span>    <span class="keywordtype">int</span> letter_index = 0;</div>
-<div class="line"><span class="lineno">  372</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> prefix =</div>
+<div class="line"><span class="lineno">  372</span>    std::string prefix =</div>
 <div class="line"><span class="lineno">  373</span>        <span class="stringliteral">&quot;&quot;</span>;  <span class="comment">// variable storing the updated value of longest common prefix</span></div>
-<div class="line"><span class="lineno">  374</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue.html">std::priority_queue&lt;std::pair&lt;int, std::string&gt;</a> &gt;</div>
+<div class="line"><span class="lineno">  374</span>    std::priority_queue&lt;std::pair&lt;int, std::string&gt; &gt;</div>
 <div class="line"><span class="lineno">  375</span>        suggestions;  <span class="comment">// max heap to store (frequency, word) in descending order</span></div>
 <div class="line"><span class="lineno">  376</span>                      <span class="comment">// of freq</span></div>
 <div class="line"><span class="lineno">  377</span> </div>
-<div class="line"><span class="lineno">  378</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue.html">std::priority_queue&lt;std::pair&lt;int, std::string&gt;</a> &gt; *Suggestions =</div>
+<div class="line"><span class="lineno">  378</span>    std::priority_queue&lt;std::pair&lt;int, std::string&gt; &gt; *Suggestions =</div>
 <div class="line"><span class="lineno">  379</span>        &amp;suggestions;</div>
 <div class="line"><span class="lineno">  380</span> </div>
 <div class="line"><span class="lineno">  381</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;i : key) {</div>
-<div class="line"><span class="lineno">  382</span>        letter_index = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/tolower.html">tolower</a>(i) - 97;</div>
+<div class="line"><span class="lineno">  382</span>        letter_index = tolower(i) - 97;</div>
 <div class="line"><span class="lineno">  383</span>        prev_pos = cur_pos;  <span class="comment">// Previous pointer updated to point to the last</span></div>
 <div class="line"><span class="lineno">  384</span>                             <span class="comment">// char of the longest common prefix</span></div>
 <div class="line"><span class="lineno">  385</span> </div>
@@ -562,18 +573,18 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  389</span>            <a class="code hl_function" href="#a9e556f52c837190ecf4265b1f05cfe9c">SuggestFreqAutocomplete</a>(prev_pos, prefix, Suggestions);</div>
 <div class="line"><span class="lineno">  390</span>            <span class="comment">// To display the top 3 results</span></div>
 <div class="line"><span class="lineno">  391</span>            <a class="code hl_function" href="#aacafb8c9f3ebac7ac6c01d9645bb67b6">SelectionTop_3</a>(Suggestions);</div>
-<div class="line"><span class="lineno">  392</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;- - - - - - - - - - - - - - - - - - - - - - - - - - &quot;</span></div>
-<div class="line"><span class="lineno">  393</span>                      &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  392</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;- - - - - - - - - - - - - - - - - - - - - - - - - - &quot;</span></div>
+<div class="line"><span class="lineno">  393</span>                      &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  394</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  395</span>        }</div>
 <div class="line"><span class="lineno">  396</span>        <span class="comment">// Updating the longest common prefix</span></div>
-<div class="line"><span class="lineno">  397</span>        prefix += char(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/tolower.html">tolower</a>(i));</div>
+<div class="line"><span class="lineno">  397</span>        prefix += char(tolower(i));</div>
 <div class="line"><span class="lineno">  398</span>        cur_pos = cur_pos-&gt;english[letter_index];</div>
 <div class="line"><span class="lineno">  399</span>    }</div>
 <div class="line"><span class="lineno">  400</span>    <span class="comment">// If the key is a valid entry of trie, display it @ top of the suggestions</span></div>
 <div class="line"><span class="lineno">  401</span>    <span class="keywordflow">if</span> (cur_pos-&gt;endOfWord) {</div>
 <div class="line"><span class="lineno">  402</span>        (cur_pos-&gt;frequency)++;</div>
-<div class="line"><span class="lineno">  403</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; key &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  403</span>        std::cout &lt;&lt; key &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  404</span>    }</div>
 <div class="line"><span class="lineno">  405</span> </div>
 <div class="line"><span class="lineno">  406</span>    (void)prev_pos;  <span class="comment">// Idiom to ignore previous pointer</span></div>
@@ -584,20 +595,13 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  411</span>    <span class="comment">// Display the top 3 results</span></div>
 <div class="line"><span class="lineno">  412</span>    <a class="code hl_function" href="#aacafb8c9f3ebac7ac6c01d9645bb67b6">SelectionTop_3</a>(Suggestions);</div>
 <div class="line"><span class="lineno">  413</span> </div>
-<div class="line"><span class="lineno">  414</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;- - - - - - - - - - - - - - - - - - - - - - - - - - &quot;</span></div>
-<div class="line"><span class="lineno">  415</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  414</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;- - - - - - - - - - - - - - - - - - - - - - - - - - &quot;</span></div>
+<div class="line"><span class="lineno">  415</span>              &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  416</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  417</span>}</div>
-<div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
-<div class="ttc" id="aclassoperations__on__datastructures_1_1trie__operations_1_1_tnode_html_a9e556f52c837190ecf4265b1f05cfe9c"><div class="ttname"><a href="#a9e556f52c837190ecf4265b1f05cfe9c">operations_on_datastructures::trie_operations::Tnode::SuggestFreqAutocomplete</a></div><div class="ttdeci">void SuggestFreqAutocomplete(Tnode *new_root, const std::string &amp;prefix, std::priority_queue&lt; std::pair&lt; int, std::string &gt; &gt; *suggestions)</div><div class="ttdoc">Recursive function to suggest most frequently searched entries of trie which have a given common pref...</div><div class="ttdef"><b>Definition</b> trie_multiple_search.cpp:340</div></div>
-<div class="ttc" id="aclassoperations__on__datastructures_1_1trie__operations_1_1_tnode_html_aacafb8c9f3ebac7ac6c01d9645bb67b6"><div class="ttname"><a href="#aacafb8c9f3ebac7ac6c01d9645bb67b6">operations_on_datastructures::trie_operations::Tnode::SelectionTop_3</a></div><div class="ttdeci">void SelectionTop_3(std::priority_queue&lt; std::pair&lt; int, std::string &gt; &gt; *suggestions)</div><div class="ttdoc">Function to display the 3 suggestions with highest frequency of search hits.</div><div class="ttdef"><b>Definition</b> trie_multiple_search.cpp:320</div></div>
-<div class="ttc" id="apriority_queue_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/priority_queue.html">std::priority_queue</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode_a7c5ab271d8042540f64ef16d259d1503_cgraph.svg" width="599" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassoperations__on__datastructures_1_1trie__operations_1_1_tnode_html_a9e556f52c837190ecf4265b1f05cfe9c"><div class="ttname"><a href="#a9e556f52c837190ecf4265b1f05cfe9c">operations_on_datastructures::trie_operations::Tnode::SuggestFreqAutocomplete</a></div><div class="ttdeci">void SuggestFreqAutocomplete(Tnode *new_root, const std::string &amp;prefix, std::priority_queue&lt; std::pair&lt; int, std::string &gt; &gt; *suggestions)</div><div class="ttdoc">Recursive function to suggest most frequently searched entries of trie which have a given common pref...</div><div class="ttdef"><b>Definition</b> <a href="../../d7/def/trie__multiple__search_8cpp_source.html#l00340">trie_multiple_search.cpp:340</a></div></div>
+<div class="ttc" id="aclassoperations__on__datastructures_1_1trie__operations_1_1_tnode_html_aacafb8c9f3ebac7ac6c01d9645bb67b6"><div class="ttname"><a href="#aacafb8c9f3ebac7ac6c01d9645bb67b6">operations_on_datastructures::trie_operations::Tnode::SelectionTop_3</a></div><div class="ttdeci">void SelectionTop_3(std::priority_queue&lt; std::pair&lt; int, std::string &gt; &gt; *suggestions)</div><div class="ttdoc">Function to display the 3 suggestions with highest frequency of search hits.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/def/trie__multiple__search_8cpp_source.html#l00320">trie_multiple_search.cpp:320</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4a624fcdf3c3beb2025d69f2cfda8023" name="a4a624fcdf3c3beb2025d69f2cfda8023"></a>
@@ -609,7 +613,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool operations_on_datastructures::trie_operations::Tnode::SearchPresence </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -625,12 +629,14 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>true if the key is found </dd>
 <dd>
 false if the key is not found </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html#l00220">220</a> of file <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html">trie_multiple_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  220</span>                                               {</div>
 <div class="line"><span class="lineno">  221</span>    Tnode *cur_pos = <span class="keyword">this</span>;</div>
 <div class="line"><span class="lineno">  222</span>    <span class="keywordtype">int</span> letter_index = 0;</div>
 <div class="line"><span class="lineno">  223</span> </div>
 <div class="line"><span class="lineno">  224</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;i : key) {</div>
-<div class="line"><span class="lineno">  225</span>        letter_index = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/tolower.html">tolower</a>(i) - 97;</div>
+<div class="line"><span class="lineno">  225</span>        letter_index = tolower(i) - 97;</div>
 <div class="line"><span class="lineno">  226</span>        <span class="comment">// If any character in the order of the key is absent, word not found!</span></div>
 <div class="line"><span class="lineno">  227</span>        <span class="keywordflow">if</span> (cur_pos-&gt;english[letter_index] == <span class="keyword">nullptr</span>) {</div>
 <div class="line"><span class="lineno">  228</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -658,7 +664,7 @@ false if the key is not found </dd></dl>
         <tr>
           <td class="memname">void operations_on_datastructures::trie_operations::Tnode::SearchSuggestions </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -671,15 +677,17 @@ false if the key is not found </dd></dl>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html#l00274">274</a> of file <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html">trie_multiple_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  274</span>                                                  {</div>
 <div class="line"><span class="lineno">  275</span>    Tnode *cur_pos = <span class="keyword">nullptr</span>, *prev_pos = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  276</span>    cur_pos = prev_pos = <span class="keyword">this</span>;  <span class="comment">// maintaining 2 pointers, initialized to root</span></div>
 <div class="line"><span class="lineno">  277</span>    <span class="keywordtype">int</span> letter_index = 0;</div>
-<div class="line"><span class="lineno">  278</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> prefix =</div>
+<div class="line"><span class="lineno">  278</span>    std::string prefix =</div>
 <div class="line"><span class="lineno">  279</span>        <span class="stringliteral">&quot;&quot;</span>;  <span class="comment">// variable storing the updated value of longest common prefix</span></div>
 <div class="line"><span class="lineno">  280</span> </div>
 <div class="line"><span class="lineno">  281</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;i : key) {</div>
-<div class="line"><span class="lineno">  282</span>        letter_index = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/tolower.html">tolower</a>(i) - 97;</div>
+<div class="line"><span class="lineno">  282</span>        letter_index = tolower(i) - 97;</div>
 <div class="line"><span class="lineno">  283</span>        prev_pos = cur_pos;  <span class="comment">// Previous pointer updated to point to the last</span></div>
 <div class="line"><span class="lineno">  284</span>                             <span class="comment">// char of the longest common prefix</span></div>
 <div class="line"><span class="lineno">  285</span> </div>
@@ -687,17 +695,17 @@ false if the key is not found </dd></dl>
 <div class="line"><span class="lineno">  287</span>        <span class="comment">// been determined and SuggestAutocomplete is called</span></div>
 <div class="line"><span class="lineno">  288</span>        <span class="keywordflow">if</span> (cur_pos-&gt;english[letter_index] == <span class="keyword">nullptr</span>) {</div>
 <div class="line"><span class="lineno">  289</span>            <a class="code hl_function" href="#a097913c4badec2b60d50a171ecc299fe">SuggestAutocomplete</a>(prev_pos, prefix);</div>
-<div class="line"><span class="lineno">  290</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;- - - - - - - - - - - - - - - - - - - - - - - - - - &quot;</span></div>
-<div class="line"><span class="lineno">  291</span>                      &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  290</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;- - - - - - - - - - - - - - - - - - - - - - - - - - &quot;</span></div>
+<div class="line"><span class="lineno">  291</span>                      &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  292</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  293</span>        }</div>
 <div class="line"><span class="lineno">  294</span>        <span class="comment">// Updating the longest common prefix</span></div>
-<div class="line"><span class="lineno">  295</span>        prefix += char(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/tolower.html">tolower</a>(i));</div>
+<div class="line"><span class="lineno">  295</span>        prefix += char(tolower(i));</div>
 <div class="line"><span class="lineno">  296</span>        cur_pos = cur_pos-&gt;english[letter_index];</div>
 <div class="line"><span class="lineno">  297</span>    }</div>
 <div class="line"><span class="lineno">  298</span>    <span class="comment">// If the key is a valid entry of trie, display it @ top of the suggestions</span></div>
 <div class="line"><span class="lineno">  299</span>    <span class="keywordflow">if</span> (cur_pos-&gt;endOfWord) {</div>
-<div class="line"><span class="lineno">  300</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; key &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  300</span>        std::cout &lt;&lt; key &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  301</span>        (cur_pos-&gt;frequency)++;</div>
 <div class="line"><span class="lineno">  302</span>    }</div>
 <div class="line"><span class="lineno">  303</span> </div>
@@ -706,17 +714,12 @@ false if the key is not found </dd></dl>
 <div class="line"><span class="lineno">  306</span>    <span class="comment">// Call for suggestions when the search key is present as an entry/a prefix</span></div>
 <div class="line"><span class="lineno">  307</span>    <span class="comment">// in the trie</span></div>
 <div class="line"><span class="lineno">  308</span>    <a class="code hl_function" href="#a097913c4badec2b60d50a171ecc299fe">SuggestAutocomplete</a>(cur_pos, prefix);</div>
-<div class="line"><span class="lineno">  309</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;- - - - - - - - - - - - - - - - - - - - - - - - - - &quot;</span></div>
-<div class="line"><span class="lineno">  310</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  309</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;- - - - - - - - - - - - - - - - - - - - - - - - - - &quot;</span></div>
+<div class="line"><span class="lineno">  310</span>              &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  311</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  312</span>}</div>
-<div class="ttc" id="aclassoperations__on__datastructures_1_1trie__operations_1_1_tnode_html_a097913c4badec2b60d50a171ecc299fe"><div class="ttname"><a href="#a097913c4badec2b60d50a171ecc299fe">operations_on_datastructures::trie_operations::Tnode::SuggestAutocomplete</a></div><div class="ttdeci">void SuggestAutocomplete(Tnode *new_root, const std::string &amp;prefix)</div><div class="ttdoc">Recursive function to suggest all the entries of trie which have a given common prefix.</div><div class="ttdef"><b>Definition</b> trie_multiple_search.cpp:249</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode_a18b70172ca4fb2811dbfb9a86e48b34c_cgraph.svg" width="563" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassoperations__on__datastructures_1_1trie__operations_1_1_tnode_html_a097913c4badec2b60d50a171ecc299fe"><div class="ttname"><a href="#a097913c4badec2b60d50a171ecc299fe">operations_on_datastructures::trie_operations::Tnode::SuggestAutocomplete</a></div><div class="ttdeci">void SuggestAutocomplete(Tnode *new_root, const std::string &amp;prefix)</div><div class="ttdoc">Recursive function to suggest all the entries of trie which have a given common prefix.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/def/trie__multiple__search_8cpp_source.html#l00249">trie_multiple_search.cpp:249</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aacafb8c9f3ebac7ac6c01d9645bb67b6" name="aacafb8c9f3ebac7ac6c01d9645bb67b6"></a>
@@ -728,7 +731,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void operations_on_datastructures::trie_operations::Tnode::SelectionTop_3 </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue.html">std::priority_queue</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; int, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>suggestions</em></span></td><td>)</td>
+          <td class="paramtype">std::priority_queue&lt; std::pair&lt; int, std::string &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>suggestions</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -741,23 +744,18 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html#l00320">320</a> of file <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html">trie_multiple_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  321</span>                                                              {</div>
 <div class="line"><span class="lineno">  322</span>    <span class="comment">// Display Either top 3 or total number of suggestions, whichever is smaller</span></div>
-<div class="line"><span class="lineno">  323</span>    <span class="keywordtype">int</span> n = suggestions-&gt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/size.html">size</a>(), Top = 0;</div>
+<div class="line"><span class="lineno">  323</span>    <span class="keywordtype">int</span> n = suggestions-&gt;size(), Top = 0;</div>
 <div class="line"><span class="lineno">  324</span>    Top = n &lt; 3 ? n : 3;</div>
 <div class="line"><span class="lineno">  325</span>    <span class="keywordflow">while</span> (Top--) {</div>
-<div class="line"><span class="lineno">  326</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; suggestions-&gt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/top.html">top</a>().second &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  327</span>        suggestions-&gt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/pop.html">pop</a>();</div>
+<div class="line"><span class="lineno">  326</span>        std::cout &lt;&lt; suggestions-&gt;top().second &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  327</span>        suggestions-&gt;pop();</div>
 <div class="line"><span class="lineno">  328</span>    }</div>
 <div class="line"><span class="lineno">  329</span>}</div>
-<div class="ttc" id="apop_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/priority_queue/pop.html">std::priority_queue::pop</a></div><div class="ttdeci">T pop(T... args)</div></div>
-<div class="ttc" id="atop_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/priority_queue/top.html">std::priority_queue::top</a></div><div class="ttdeci">T top(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode_aacafb8c9f3ebac7ac6c01d9645bb67b6_cgraph.svg" width="323" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a097913c4badec2b60d50a171ecc299fe" name="a097913c4badec2b60d50a171ecc299fe"></a>
@@ -774,7 +772,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>prefix</em></span>&#160;)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>prefix</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -787,6 +785,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html#l00249">249</a> of file <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html">trie_multiple_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  249</span>                                                                        {</div>
 <div class="line"><span class="lineno">  250</span>    <span class="comment">// Iterate through all 26 nodes as we have to print all strings with the</span></div>
 <div class="line"><span class="lineno">  251</span>    <span class="comment">// given prefix</span></div>
@@ -796,19 +796,14 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  255</span>            <span class="comment">// Print the sugestion only if it&#39;s a valid complete entry and not</span></div>
 <div class="line"><span class="lineno">  256</span>            <span class="comment">// just a prefix</span></div>
 <div class="line"><span class="lineno">  257</span>            <span class="keywordflow">if</span> (new_root-&gt;english[i]-&gt;endOfWord) {</div>
-<div class="line"><span class="lineno">  258</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; prefix + char(i + 97) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  258</span>                std::cout &lt;&lt; prefix + char(i + 97) &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  259</span>            }</div>
 <div class="line"><span class="lineno">  260</span> </div>
 <div class="line"><span class="lineno">  261</span>            <a class="code hl_function" href="#a097913c4badec2b60d50a171ecc299fe">SuggestAutocomplete</a>(new_root-&gt;english[i], prefix + <span class="keywordtype">char</span>(i + 97));</div>
 <div class="line"><span class="lineno">  262</span>        }</div>
 <div class="line"><span class="lineno">  263</span>    }</div>
 <div class="line"><span class="lineno">  264</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode_a097913c4badec2b60d50a171ecc299fe_cgraph.svg" width="323" height="91"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9e556f52c837190ecf4265b1f05cfe9c" name="a9e556f52c837190ecf4265b1f05cfe9c"></a>
@@ -825,12 +820,12 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>prefix</em></span>, </td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>prefix</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue.html">std::priority_queue</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; int, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>suggestions</em></span>&#160;)</td>
+          <td class="paramtype">std::priority_queue&lt; std::pair&lt; int, std::string &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>suggestions</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -844,6 +839,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html#l00340">340</a> of file <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html">trie_multiple_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  342</span>                                                              {</div>
 <div class="line"><span class="lineno">  343</span>    <span class="keywordtype">int</span> i = 0;</div>
 <div class="line"><span class="lineno">  344</span>    <span class="keywordflow">for</span> (i = 0; i &lt; ENGLISH_ALPHABET_SIZE; i++) {</div>
@@ -851,7 +848,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  346</span>            <span class="comment">// Add to sugestions only if it&#39;s a valid complete entry and not</span></div>
 <div class="line"><span class="lineno">  347</span>            <span class="comment">// just a prefix</span></div>
 <div class="line"><span class="lineno">  348</span>            <span class="keywordflow">if</span> (new_root-&gt;english[i]-&gt;endOfWord) {</div>
-<div class="line"><span class="lineno">  349</span>                suggestions-&gt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/push.html">push</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(</div>
+<div class="line"><span class="lineno">  349</span>                suggestions-&gt;push(std::make_pair(</div>
 <div class="line"><span class="lineno">  350</span>                    new_root-&gt;english[i]-&gt;frequency, prefix + <span class="keywordtype">char</span>(i + 97)));</div>
 <div class="line"><span class="lineno">  351</span>            }</div>
 <div class="line"><span class="lineno">  352</span> </div>
@@ -860,18 +857,108 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  355</span>        }</div>
 <div class="line"><span class="lineno">  356</span>    }</div>
 <div class="line"><span class="lineno">  357</span>}</div>
-<div class="ttc" id="amake_pair_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a></div><div class="ttdeci">T make_pair(T... args)</div></div>
-<div class="ttc" id="apush_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/priority_queue/push.html">std::priority_queue::push</a></div><div class="ttdeci">T push(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode_a9e556f52c837190ecf4265b1f05cfe9c_cgraph.svg" width="359" height="91"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div><!-- fragment -->
 </div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="afa9dab736046a4140e94bb9104074cd6" name="afa9dab736046a4140e94bb9104074cd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa9dab736046a4140e94bb9104074cd6">&#9670;&#160;</a></span>endOfWord</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operations_on_datastructures::trie_operations::Tnode::endOfWord</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html#l00044">44</a> of file <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html">trie_multiple_search.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa4aac1c6bed58a84472906b63f20da83" name="aa4aac1c6bed58a84472906b63f20da83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4aac1c6bed58a84472906b63f20da83">&#9670;&#160;</a></span>english</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html">Tnode</a> *&gt; operations_on_datastructures::trie_operations::Tnode::english</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html">trie_multiple_search.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0f310c3d4d7b82e5ee1036771cade702" name="a0f310c3d4d7b82e5ee1036771cade702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f310c3d4d7b82e5ee1036771cade702">&#9670;&#160;</a></span>ENGLISH_ALPHABET_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t operations_on_datastructures::trie_operations::Tnode::ENGLISH_ALPHABET_SIZE = 26</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html#l00039">39</a> of file <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html">trie_multiple_search.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7bab9bb47215cd674471c94b0b448014" name="a7bab9bb47215cd674471c94b0b448014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bab9bb47215cd674471c94b0b448014">&#9670;&#160;</a></span>frequency</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t operations_on_datastructures::trie_operations::Tnode::frequency</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html#l00047">47</a> of file <a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html">trie_multiple_search.cpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>operations_on_datastructures/<a class="el" href="../../d7/def/trie__multiple__search_8cpp.html">trie_multiple_search.cpp</a></li>
+<li>operations_on_datastructures/<a class="el" href="../../d7/def/trie__multiple__search_8cpp_source.html">trie_multiple_search.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: /Users/runner/work/C-Plus-Plus/C-Plus-Plus/math/quadratic_equations_complex_numbers.cpp</title>
+<title>TheAlgorithms/C++: /Users/runner/work/C-Plus-Plus/C-Plus-Plus/math/quadratic_equations_complex_numbers.cpp</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -107,71 +124,30 @@ $(function(){initNavTree('df/dcd/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plu
   <div class="headertitle"><div class="title">/Users/runner/work/C-Plus-Plus/C-Plus-Plus/math/quadratic_equations_complex_numbers.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<p>int <a class="el" href="../../da/d18/quadratic__equations__complex__numbers_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function.">main()</a> { using <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>; using <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex</a>; using <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>;</p>
+<p>int <a class="el" href="../../da/d18/quadratic__equations__complex__numbers_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function.">main()</a> { using std::array; using std::complex; using std::cout;</p>
 <p>array&lt;complex&lt;long double, 2&gt; solutions = quadraticEquation(1, 2, 1); cout &lt;&lt; solutions[0] &lt;&lt; " " &lt;&lt; solutions[1] &lt;&lt; "\n";</p>
 <p>solutions = quadraticEquation(1, 1, 1); // Reusing solutions. cout &lt;&lt; solutions[0] &lt;&lt; " " &lt;&lt; solutions[1] &lt;&lt; "\n"; return 0; }</p>
 <p>Output: (-1, 0) (-1, 0) (-0.5,0.866025) (-0.5,0.866025)</p>
-<div class="fragment"><div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * @file</span></div>
-<div class="line"><span class="comment"> * @brief Calculate quadratic equation with complex roots, i.e. b^2 - 4ac &lt; 0.</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> * @author [Renjian-buchai](https://github.com/Renjian-buchai)</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> * @description Calculates any quadratic equation in form ax^2 + bx + c.</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> * Quadratic equation:</span></div>
-<div class="line"><span class="comment"> * x = (-b +/- sqrt(b^2 - 4ac)) / 2a</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> * @example</span></div>
-<div class="line"><span class="comment"> * int main() {</span></div>
-<div class="line"><span class="comment"> *   using std::array;</span></div>
-<div class="line"><span class="comment"> *   using std::complex;</span></div>
-<div class="line"><span class="comment"> *   using std::cout;</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> *   array&lt;complex&lt;long double, 2&gt; solutions = quadraticEquation(1, 2, 1);</span></div>
-<div class="line"><span class="comment"> *   cout &lt;&lt; solutions[0] &lt;&lt; &quot; &quot; &lt;&lt; solutions[1] &lt;&lt; &quot;\n&quot;;</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> *   solutions = quadraticEquation(1, 1, 1);  // Reusing solutions.</span></div>
-<div class="line"><span class="comment"> *   cout &lt;&lt; solutions[0] &lt;&lt; &quot; &quot; &lt;&lt; solutions[1] &lt;&lt; &quot;\n&quot;;</span></div>
-<div class="line"><span class="comment"> *   return 0;</span></div>
-<div class="line"><span class="comment"> * }</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> * Output:</span></div>
-<div class="line"><span class="comment"> * (-1, 0) (-1, 0)</span></div>
-<div class="line"><span class="comment"> * (-0.5,0.866025) (-0.5,0.866025)</span></div>
-<div class="line"><span class="comment"> */</span></div>
+<div class="fragment"><div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;array&gt;</span>      </div>
+<div class="line"><span class="preprocessor">#include &lt;cassert&gt;</span>    </div>
+<div class="line"><span class="preprocessor">#include &lt;cmath&gt;</span>      </div>
+<div class="line"><span class="preprocessor">#include &lt;complex&gt;</span>    </div>
+<div class="line"><span class="preprocessor">#include &lt;exception&gt;</span>  </div>
+<div class="line"><span class="preprocessor">#include &lt;iomanip&gt;</span>    </div>
+<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span>   </div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;array&gt;</span>      <span class="comment">/// std::array</span></div>
-<div class="line"><span class="preprocessor">#include &lt;cassert&gt;</span>    <span class="comment">/// assert</span></div>
-<div class="line"><span class="preprocessor">#include &lt;cmath&gt;</span>      <span class="comment">/// std::sqrt, std::trunc, std::pow</span></div>
-<div class="line"><span class="preprocessor">#include &lt;complex&gt;</span>    <span class="comment">/// std::complex</span></div>
-<div class="line"><span class="preprocessor">#include &lt;exception&gt;</span>  <span class="comment">/// std::invalid_argument</span></div>
-<div class="line"><span class="preprocessor">#include &lt;iomanip&gt;</span>    <span class="comment">/// std::setprecision</span></div>
-<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span>   <span class="comment">/// std::cout</span></div>
-<div class="line"><span class="comment"></span> </div>
-<div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * @namespace</span></div>
-<div class="line"><span class="comment"> * @brief Mathematical algorithms</span></div>
-<div class="line"><span class="comment"> */</span></div>
 <div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="../../dd/d47/namespacemath.html">math</a> {</div>
-<div class="line"><span class="comment"></span> </div>
-<div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * @brief Quadratic equation calculator.</span></div>
-<div class="line"><span class="comment"> * @param a quadratic coefficient.</span></div>
-<div class="line"><span class="comment"> * @param b linear coefficient.</span></div>
-<div class="line"><span class="comment"> * @param c constant</span></div>
-<div class="line"><span class="comment"> * @return Array containing the roots of quadratic equation, incl. complex</span></div>
-<div class="line"><span class="comment"> * root.</span></div>
-<div class="line"><span class="comment"> */</span></div>
-<div class="line"><a id="_a0" name="_a0"></a><a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::complex&lt;long double&gt;</a>, 2&gt; <a id="a1" name="a1"></a><a class="code hl_function" href="../../dd/d47/namespacemath.html#aacb1411ef2029e81f249c21e17c96fdb">quadraticEquation</a>(<span class="keywordtype">long</span> <span class="keywordtype">double</span> a,</div>
+<div class="line"> </div>
+<div class="line">std::array&lt;std::complex&lt;long double&gt;, 2&gt; <a id="a0" name="a0"></a><a class="code hl_function" href="../../dd/d47/namespacemath.html#aacb1411ef2029e81f249c21e17c96fdb">quadraticEquation</a>(<span class="keywordtype">long</span> <span class="keywordtype">double</span> a,</div>
 <div class="line">                                                           <span class="keywordtype">long</span> <span class="keywordtype">double</span> b,</div>
 <div class="line">                                                           <span class="keywordtype">long</span> <span class="keywordtype">double</span> c) {</div>
 <div class="line">    <span class="keywordflow">if</span> (a == 0) {</div>
-<div class="line">        <span class="keywordflow">throw</span> <a id="_a2" name="_a2"></a><a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a>(<span class="stringliteral">&quot;quadratic coefficient cannot be 0&quot;</span>);</div>
+<div class="line">        <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;quadratic coefficient cannot be 0&quot;</span>);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">long</span> <span class="keywordtype">double</span> discriminant = b * b - 4 * a * c;</div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::complex&lt;long double&gt;</a>, 2&gt; solutions{0, 0};</div>
+<div class="line">    std::array&lt;std::complex&lt;long double&gt;, 2&gt; solutions{0, 0};</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">if</span> (discriminant == 0) {</div>
 <div class="line">        solutions[0] = -b * 0.5 / a;</div>
@@ -186,100 +162,89 @@ $(function(){initNavTree('df/dcd/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plu
 <div class="line">    <span class="keywordflow">if</span> (discriminant &gt; 0) {</div>
 <div class="line">        <span class="comment">// Since discriminant &gt; 0, there are only real roots. Therefore,</span></div>
 <div class="line">        <span class="comment">// imaginary component = 0.</span></div>
-<div class="line">        solutions[0] = <a id="_a3" name="_a3"></a><a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;long double&gt;</a>{</div>
-<div class="line">            (-b - <a id="a4" name="a4"></a><a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(discriminant)) * 0.5 / a, 0};</div>
-<div class="line">        solutions[1] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;long double&gt;</a>{</div>
-<div class="line">            (-b + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(discriminant)) * 0.5 / a, 0};</div>
+<div class="line">        solutions[0] = std::complex&lt;long double&gt;{</div>
+<div class="line">            (-b - std::sqrt(discriminant)) * 0.5 / a, 0};</div>
+<div class="line">        solutions[1] = std::complex&lt;long double&gt;{</div>
+<div class="line">            (-b + std::sqrt(discriminant)) * 0.5 / a, 0};</div>
 <div class="line">        <span class="keywordflow">return</span> solutions;</div>
 <div class="line">    }</div>
 <div class="line">    <span class="comment">// Since b^2 - 4ac is &lt; 0, for faster computation, -discriminant is</span></div>
 <div class="line">    <span class="comment">// enough to make it positive.</span></div>
-<div class="line">    solutions[0] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;long double&gt;</a>{</div>
-<div class="line">        -b * 0.5 / a, -<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(-discriminant) * 0.5 / a};</div>
-<div class="line">    solutions[1] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;long double&gt;</a>{</div>
-<div class="line">        -b * 0.5 / a, <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(-discriminant) * 0.5 / a};</div>
+<div class="line">    solutions[0] = std::complex&lt;long double&gt;{</div>
+<div class="line">        -b * 0.5 / a, -std::sqrt(-discriminant) * 0.5 / a};</div>
+<div class="line">    solutions[1] = std::complex&lt;long double&gt;{</div>
+<div class="line">        -b * 0.5 / a, std::sqrt(-discriminant) * 0.5 / a};</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> solutions;</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">}  <span class="comment">// namespace math</span></div>
-<div class="line"><span class="comment"></span> </div>
-<div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * @brief Asserts an array of complex numbers.</span></div>
-<div class="line"><span class="comment"> * @param input Input array of complex numbers. .</span></div>
-<div class="line"><span class="comment"> * @param expected Expected array of complex numbers.</span></div>
-<div class="line"><span class="comment"> * @param precision Precision to be asserted. Default=10</span></div>
-<div class="line"><span class="comment"> */</span></div>
-<div class="line"><span class="keywordtype">void</span> <a id="a5" name="a5"></a><a class="code hl_function" href="../../da/d18/quadratic__equations__complex__numbers_8cpp.html#af7a6d4e3dc85a6288c8f1f7094830c5a">assertArray</a>(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt;<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;long double&gt;</a>, 2&gt; input,</div>
-<div class="line">                 <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt;<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;long double&gt;</a>, 2&gt; expected,</div>
-<div class="line">                 <span class="keywordtype">size_t</span> precision = 10) {</div>
-<div class="line">    <span class="keywordtype">long</span> <span class="keywordtype">double</span> exponent = <a id="a6" name="a6"></a><a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(10, precision);</div>
-<div class="line">    input[0].real(<a id="a7" name="a7"></a><a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/round.html">std::round</a>(input[0].real() * exponent));</div>
-<div class="line">    input[1].real(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/round.html">std::round</a>(input[1].real() * exponent));</div>
-<div class="line">    input[0].imag(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/round.html">std::round</a>(input[0].imag() * exponent));</div>
-<div class="line">    input[1].imag(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/round.html">std::round</a>(input[1].imag() * exponent));</div>
 <div class="line"> </div>
-<div class="line">    expected[0].real(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/round.html">std::round</a>(expected[0].real() * exponent));</div>
-<div class="line">    expected[1].real(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/round.html">std::round</a>(expected[1].real() * exponent));</div>
-<div class="line">    expected[0].imag(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/round.html">std::round</a>(expected[0].imag() * exponent));</div>
-<div class="line">    expected[1].imag(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/round.html">std::round</a>(expected[1].imag() * exponent));</div>
+<div class="line"><span class="keywordtype">void</span> <a id="a1" name="a1"></a><a class="code hl_function" href="../../da/d18/quadratic__equations__complex__numbers_8cpp.html#af7a6d4e3dc85a6288c8f1f7094830c5a">assertArray</a>(std::array&lt;std::complex&lt;long double&gt;, 2&gt; input,</div>
+<div class="line">                 std::array&lt;std::complex&lt;long double&gt;, 2&gt; expected,</div>
+<div class="line">                 <span class="keywordtype">size_t</span> precision = 10) {</div>
+<div class="line">    <span class="keywordtype">long</span> <span class="keywordtype">double</span> exponent = std::pow(10, precision);</div>
+<div class="line">    input[0].real(std::round(input[0].real() * exponent));</div>
+<div class="line">    input[1].real(std::round(input[1].real() * exponent));</div>
+<div class="line">    input[0].imag(std::round(input[0].imag() * exponent));</div>
+<div class="line">    input[1].imag(std::round(input[1].imag() * exponent));</div>
+<div class="line"> </div>
+<div class="line">    expected[0].real(std::round(expected[0].real() * exponent));</div>
+<div class="line">    expected[1].real(std::round(expected[1].real() * exponent));</div>
+<div class="line">    expected[0].imag(std::round(expected[0].imag() * exponent));</div>
+<div class="line">    expected[1].imag(std::round(expected[1].imag() * exponent));</div>
 <div class="line"> </div>
 <div class="line">    assert(input == expected);</div>
 <div class="line">}</div>
-<div class="line"><span class="comment"></span> </div>
-<div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * @brief Self-test implementations to test quadraticEquation function.</span></div>
-<div class="line"><span class="comment"> * @note There are 4 different types of solutions: Real and equal, real,</span></div>
-<div class="line"><span class="comment"> * complex, complex and equal.</span></div>
-<div class="line"><span class="comment"> */</span></div>
-<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> <a id="a8" name="a8"></a><a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>() {</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> <a id="a2" name="a2"></a><a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>() {</div>
 <div class="line">    <span class="comment">// Values are equal and real.</span></div>
-<div class="line">    <a id="_a9" name="_a9"></a><a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Input: \n&quot;</span></div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Input: \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;a=1 \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;b=-2 \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;c=1 \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;Expected output: \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;(1, 0), (1, 0)\n\n&quot;</span>;</div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::complex&lt;long double&gt;</a>, 2&gt; equalCase{</div>
-<div class="line">        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;long double&gt;</a>{1, 0}, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;long double&gt;</a>{1, 0}};</div>
+<div class="line">    std::array&lt;std::complex&lt;long double&gt;, 2&gt; equalCase{</div>
+<div class="line">        std::complex&lt;long double&gt;{1, 0}, std::complex&lt;long double&gt;{1, 0}};</div>
 <div class="line">    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#aacb1411ef2029e81f249c21e17c96fdb">math::quadraticEquation</a>(1, -2, 1) == equalCase);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Values are equal and complex.</span></div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Input: \n&quot;</span></div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Input: \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;a=1 \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;b=4 \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;c=5 \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;Expected output: \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;(-2, -1), (-2, 1)\n\n&quot;</span>;</div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::complex&lt;long double&gt;</a>, 2&gt; complexCase{</div>
-<div class="line">        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;long double&gt;</a>{-2, -1}, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;long double&gt;</a>{-2, 1}};</div>
+<div class="line">    std::array&lt;std::complex&lt;long double&gt;, 2&gt; complexCase{</div>
+<div class="line">        std::complex&lt;long double&gt;{-2, -1}, std::complex&lt;long double&gt;{-2, 1}};</div>
 <div class="line">    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#aacb1411ef2029e81f249c21e17c96fdb">math::quadraticEquation</a>(1, 4, 5) == complexCase);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Values are real.</span></div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Input: \n&quot;</span></div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Input: \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;a=1 \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;b=5 \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;c=1 \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;Expected output: \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;(-4.7912878475, 0), (-0.2087121525, 0)\n\n&quot;</span>;</div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::complex&lt;long double&gt;</a>, 2&gt; floatCase{</div>
-<div class="line">        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;long double&gt;</a>{-4.7912878475, 0},</div>
-<div class="line">        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;long double&gt;</a>{-0.2087121525, 0}};</div>
+<div class="line">    std::array&lt;std::complex&lt;long double&gt;, 2&gt; floatCase{</div>
+<div class="line">        std::complex&lt;long double&gt;{-4.7912878475, 0},</div>
+<div class="line">        std::complex&lt;long double&gt;{-0.2087121525, 0}};</div>
 <div class="line">    <a class="code hl_function" href="../../da/d18/quadratic__equations__complex__numbers_8cpp.html#af7a6d4e3dc85a6288c8f1f7094830c5a">assertArray</a>(<a class="code hl_function" href="../../dd/d47/namespacemath.html#aacb1411ef2029e81f249c21e17c96fdb">math::quadraticEquation</a>(1, 5, 1), floatCase);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Values are complex.</span></div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Input: \n&quot;</span></div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Input: \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;a=1 \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;b=1 \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;c=1 \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;Expected output: \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;(-0.5, -0.8660254038), (-0.5, 0.8660254038)\n\n&quot;</span>;</div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::complex&lt;long double&gt;</a>, 2&gt; ifloatCase{</div>
-<div class="line">        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;long double&gt;</a>{-0.5, -0.8660254038},</div>
-<div class="line">        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;long double&gt;</a>{-0.5, 0.8660254038}};</div>
+<div class="line">    std::array&lt;std::complex&lt;long double&gt;, 2&gt; ifloatCase{</div>
+<div class="line">        std::complex&lt;long double&gt;{-0.5, -0.8660254038},</div>
+<div class="line">        std::complex&lt;long double&gt;{-0.5, 0.8660254038}};</div>
 <div class="line">    <a class="code hl_function" href="../../da/d18/quadratic__equations__complex__numbers_8cpp.html#af7a6d4e3dc85a6288c8f1f7094830c5a">assertArray</a>(<a class="code hl_function" href="../../dd/d47/namespacemath.html#aacb1411ef2029e81f249c21e17c96fdb">math::quadraticEquation</a>(1, 1, 1), ifloatCase);</div>
 <div class="line"> </div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Exception test: \n&quot;</span></div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Exception test: \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;Input: \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;a=0 \n&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;b=0 \n&quot;</span></div>
@@ -287,31 +252,20 @@ $(function(){initNavTree('df/dcd/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plu
 <div class="line">                 <span class="stringliteral">&quot;Expected output: Exception thrown \n&quot;</span>;</div>
 <div class="line">    <span class="keywordflow">try</span> {</div>
 <div class="line">        <a class="code hl_function" href="../../dd/d47/namespacemath.html#aacb1411ef2029e81f249c21e17c96fdb">math::quadraticEquation</a>(0, 0, 0);</div>
-<div class="line">    } <span class="keywordflow">catch</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a>&amp; e) {</div>
-<div class="line">        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Exception thrown successfully \n&quot;</span>;</div>
+<div class="line">    } <span class="keywordflow">catch</span> (std::invalid_argument&amp; e) {</div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;Exception thrown successfully \n&quot;</span>;</div>
 <div class="line">    }</div>
 <div class="line">}</div>
-<div class="line"><span class="comment"></span> </div>
-<div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * @brief Main function</span></div>
-<div class="line"><span class="comment"> * @returns 0 on exit</span></div>
-<div class="line"><span class="comment"> */</span></div>
-<div class="line"><span class="keywordtype">int</span> <a id="a10" name="a10"></a><a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> <a id="a3" name="a3"></a><a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
 <div class="line">    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// Run self-test implementation.</span></div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="acomplex_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex</a></div></div>
-<div class="ttc" id="agenerate__parentheses_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> generate_parentheses.cpp:82</div></div>
-<div class="ttc" id="agenerate__parentheses_8cpp_html_gae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="../../dd/d1e/generate__parentheses_8cpp.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Main function.</div><div class="ttdef"><b>Definition</b> generate_parentheses.cpp:110</div></div>
-<div class="ttc" id="ainvalid_argument_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a></div></div>
+<div class="ttc" id="agenerate__parentheses_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d1e/generate__parentheses_8cpp_source.html#l00082">generate_parentheses.cpp:82</a></div></div>
+<div class="ttc" id="agenerate__parentheses_8cpp_html_gae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="../../dd/d1e/generate__parentheses_8cpp.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Main function.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d1e/generate__parentheses_8cpp_source.html#l00110">generate_parentheses.cpp:110</a></div></div>
 <div class="ttc" id="anamespacemath_html"><div class="ttname"><a href="../../dd/d47/namespacemath.html">math</a></div><div class="ttdoc">for assert</div></div>
-<div class="ttc" id="anamespacemath_html_aacb1411ef2029e81f249c21e17c96fdb"><div class="ttname"><a href="../../dd/d47/namespacemath.html#aacb1411ef2029e81f249c21e17c96fdb">math::quadraticEquation</a></div><div class="ttdeci">std::array&lt; std::complex&lt; long double &gt;, 2 &gt; quadraticEquation(long double a, long double b, long double c)</div><div class="ttdoc">Quadratic equation calculator.</div><div class="ttdef"><b>Definition</b> quadratic_equations_complex_numbers.cpp:53</div></div>
-<div class="ttc" id="apow_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a></div><div class="ttdeci">T pow(T... args)</div></div>
-<div class="ttc" id="aquadratic__equations__complex__numbers_8cpp_html_af7a6d4e3dc85a6288c8f1f7094830c5a"><div class="ttname"><a href="../../da/d18/quadratic__equations__complex__numbers_8cpp.html#af7a6d4e3dc85a6288c8f1f7094830c5a">assertArray</a></div><div class="ttdeci">void assertArray(std::array&lt; std::complex&lt; long double &gt;, 2 &gt; input, std::array&lt; std::complex&lt; long double &gt;, 2 &gt; expected, size_t precision=10)</div><div class="ttdoc">Asserts an array of complex numbers.</div><div class="ttdef"><b>Definition</b> quadratic_equations_complex_numbers.cpp:100</div></div>
-<div class="ttc" id="around_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/round.html">std::round</a></div><div class="ttdeci">T round(T... args)</div></div>
-<div class="ttc" id="asqrt_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a></div><div class="ttdeci">T sqrt(T... args)</div></div>
+<div class="ttc" id="anamespacemath_html_aacb1411ef2029e81f249c21e17c96fdb"><div class="ttname"><a href="../../dd/d47/namespacemath.html#aacb1411ef2029e81f249c21e17c96fdb">math::quadraticEquation</a></div><div class="ttdeci">std::array&lt; std::complex&lt; long double &gt;, 2 &gt; quadraticEquation(long double a, long double b, long double c)</div><div class="ttdoc">Quadratic equation calculator.</div><div class="ttdef"><b>Definition</b> <a href="../../da/d18/quadratic__equations__complex__numbers_8cpp_source.html#l00053">quadratic_equations_complex_numbers.cpp:53</a></div></div>
+<div class="ttc" id="aquadratic__equations__complex__numbers_8cpp_html_af7a6d4e3dc85a6288c8f1f7094830c5a"><div class="ttname"><a href="../../da/d18/quadratic__equations__complex__numbers_8cpp.html#af7a6d4e3dc85a6288c8f1f7094830c5a">assertArray</a></div><div class="ttdeci">void assertArray(std::array&lt; std::complex&lt; long double &gt;, 2 &gt; input, std::array&lt; std::complex&lt; long double &gt;, 2 &gt; expected, size_t precision=10)</div><div class="ttdoc">Asserts an array of complex numbers.</div><div class="ttdef"><b>Definition</b> <a href="../../da/d18/quadratic__equations__complex__numbers_8cpp_source.html#l00100">quadratic_equations_complex_numbers.cpp:100</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

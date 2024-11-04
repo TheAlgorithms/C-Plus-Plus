@@ -1,6 +1,0 @@
-<map id="dynamic_programming::unbounded_knapsack::KnapSackFilling" name="dynamic_programming::unbounded_knapsack::KnapSackFilling">
-<area shape="rect" id="Node000001" title="Recursive function to calculate the maximum value obtainable using an unbounded knapsack approach." alt="" coords="5,29,161,85"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="50,29,51,19,57,10,68,5,83,3,100,5,111,12,108,16,98,10,83,8,69,10,60,14,56,21,56,29"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="209,44,281,70"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="161,54,193,54,193,60,161,60"/>
-</map>

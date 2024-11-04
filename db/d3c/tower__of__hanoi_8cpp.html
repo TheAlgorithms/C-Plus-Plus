@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: others/tower_of_hanoi.cpp File Reference</title>
+<title>TheAlgorithms/C++: others/tower_of_hanoi.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -119,7 +136,9 @@ Include dependency graph for tower_of_hanoi.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/ddb/tower__of__hanoi_8cpp__incl.svg" width="186" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../db/d3c/tower__of__hanoi_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d2c/structtower.html">tower</a></td></tr>
@@ -138,6 +157,8 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Solve the <a href="https://en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank">Tower of Hanoi</a> problem. </p>
+
+<p class="definition">Definition in file <a class="el" href="../../db/d3c/tower__of__hanoi_8cpp_source.html">tower_of_hanoi.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -154,6 +175,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Main function </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d3c/tower__of__hanoi_8cpp_source.html#l00065">65</a> of file <a class="el" href="../../db/d3c/tower__of__hanoi_8cpp_source.html">tower_of_hanoi.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   65</span>           {</div>
 <div class="line"><span class="lineno">   66</span>    <span class="keyword">struct </span><a class="code hl_struct" href="../../d2/d2c/structtower.html">tower</a> F, U, T;</div>
 <div class="line"><span class="lineno">   67</span> </div>
@@ -163,8 +186,8 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   71</span> </div>
 <div class="line"><span class="lineno">   72</span>    <span class="keywordtype">int</span> no;</div>
 <div class="line"><span class="lineno">   73</span> </div>
-<div class="line"><span class="lineno">   74</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter number of discs : &quot;</span>;</div>
-<div class="line"><span class="lineno">   75</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; no;</div>
+<div class="line"><span class="lineno">   74</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nEnter number of discs : &quot;</span>;</div>
+<div class="line"><span class="lineno">   75</span>    std::cin &gt;&gt; no;</div>
 <div class="line"><span class="lineno">   76</span> </div>
 <div class="line"><span class="lineno">   77</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = no; i &gt; 0; i--) {</div>
 <div class="line"><span class="lineno">   78</span>        F.values[F.top++] = i;</div>
@@ -175,17 +198,10 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   83</span> </div>
 <div class="line"><span class="lineno">   84</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   85</span>}</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="astructtower_html"><div class="ttname"><a href="../../d2/d2c/structtower.html">tower</a></div><div class="ttdef"><b>Definition</b> tower_of_hanoi.cpp:11</div></div>
-<div class="ttc" id="astructtower_html_acb535964abd34c47678a4ade0628223d"><div class="ttname"><a href="../../d2/d2c/structtower.html#acb535964abd34c47678a4ade0628223d">tower::top</a></div><div class="ttdeci">int top</div><div class="ttdoc">top tower ID</div><div class="ttdef"><b>Definition</b> tower_of_hanoi.cpp:15</div></div>
-<div class="ttc" id="atower__of__hanoi_8cpp_html_ab037f72a5eac476535a6cfbbcb965417"><div class="ttname"><a href="#ab037f72a5eac476535a6cfbbcb965417">TH</a></div><div class="ttdeci">void TH(int n, tower *From, tower *Using, tower *To)</div><div class="ttdef"><b>Definition</b> tower_of_hanoi.cpp:52</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d3c/tower__of__hanoi_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="242" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="astructtower_html"><div class="ttname"><a href="../../d2/d2c/structtower.html">tower</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d3c/tower__of__hanoi_8cpp_source.html#l00011">tower_of_hanoi.cpp:11</a></div></div>
+<div class="ttc" id="astructtower_html_acb535964abd34c47678a4ade0628223d"><div class="ttname"><a href="../../d2/d2c/structtower.html#acb535964abd34c47678a4ade0628223d">tower::top</a></div><div class="ttdeci">int top</div><div class="ttdoc">top tower ID</div><div class="ttdef"><b>Definition</b> <a href="../../db/d3c/tower__of__hanoi_8cpp_source.html#l00015">tower_of_hanoi.cpp:15</a></div></div>
+<div class="ttc" id="atower__of__hanoi_8cpp_html_ab037f72a5eac476535a6cfbbcb965417"><div class="ttname"><a href="#ab037f72a5eac476535a6cfbbcb965417">TH</a></div><div class="ttdeci">void TH(int n, tower *From, tower *Using, tower *To)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d3c/tower__of__hanoi_8cpp_source.html#l00052">tower_of_hanoi.cpp:52</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af4cfc41e546f1f8d25f01e0804e8b61d" name="af4cfc41e546f1f8d25f01e0804e8b61d"></a>
@@ -213,12 +229,14 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d3c/tower__of__hanoi_8cpp_source.html#l00039">39</a> of file <a class="el" href="../../db/d3c/tower__of__hanoi_8cpp_source.html">tower_of_hanoi.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   39</span>                                 {</div>
 <div class="line"><span class="lineno">   40</span>    --From-&gt;<a class="code hl_variable" href="../../d2/d2c/structtower.html#acb535964abd34c47678a4ade0628223d">top</a>;</div>
 <div class="line"><span class="lineno">   41</span>    To-&gt;<a class="code hl_variable" href="../../d2/d2c/structtower.html#a3ebb75c13c57d51a8a1ba1ea54a515e9">values</a>[To-&gt;<a class="code hl_variable" href="../../d2/d2c/structtower.html#acb535964abd34c47678a4ade0628223d">top</a>] = From-&gt;<a class="code hl_variable" href="../../d2/d2c/structtower.html#a3ebb75c13c57d51a8a1ba1ea54a515e9">values</a>[From-&gt;<a class="code hl_variable" href="../../d2/d2c/structtower.html#acb535964abd34c47678a4ade0628223d">top</a>];</div>
 <div class="line"><span class="lineno">   42</span>    ++To-&gt;<a class="code hl_variable" href="../../d2/d2c/structtower.html#acb535964abd34c47678a4ade0628223d">top</a>;</div>
 <div class="line"><span class="lineno">   43</span>}</div>
-<div class="ttc" id="astructtower_html_a3ebb75c13c57d51a8a1ba1ea54a515e9"><div class="ttname"><a href="../../d2/d2c/structtower.html#a3ebb75c13c57d51a8a1ba1ea54a515e9">tower::values</a></div><div class="ttdeci">int values[10]</div><div class="ttdoc">Values in the tower.</div><div class="ttdef"><b>Definition</b> tower_of_hanoi.cpp:13</div></div>
+<div class="ttc" id="astructtower_html_a3ebb75c13c57d51a8a1ba1ea54a515e9"><div class="ttname"><a href="../../d2/d2c/structtower.html#a3ebb75c13c57d51a8a1ba1ea54a515e9">tower::values</a></div><div class="ttdeci">int values[10]</div><div class="ttdoc">Values in the tower.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d3c/tower__of__hanoi_8cpp_source.html#l00013">tower_of_hanoi.cpp:13</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -246,18 +264,20 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Display the towers </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d3c/tower__of__hanoi_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../db/d3c/tower__of__hanoi_8cpp_source.html">tower_of_hanoi.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   20</span>                                       {</div>
-<div class="line"><span class="lineno">   21</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n\n\tF : &quot;</span>;</div>
+<div class="line"><span class="lineno">   21</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\n\n\tF : &quot;</span>;</div>
 <div class="line"><span class="lineno">   22</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; F-&gt;<a class="code hl_variable" href="../../d2/d2c/structtower.html#acb535964abd34c47678a4ade0628223d">top</a>; i++) {</div>
-<div class="line"><span class="lineno">   23</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; F-&gt;<a class="code hl_variable" href="../../d2/d2c/structtower.html#a3ebb75c13c57d51a8a1ba1ea54a515e9">values</a>[i] &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span>;</div>
+<div class="line"><span class="lineno">   23</span>        std::cout &lt;&lt; F-&gt;<a class="code hl_variable" href="../../d2/d2c/structtower.html#a3ebb75c13c57d51a8a1ba1ea54a515e9">values</a>[i] &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span>;</div>
 <div class="line"><span class="lineno">   24</span>    }</div>
-<div class="line"><span class="lineno">   25</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n\tU : &quot;</span>;</div>
+<div class="line"><span class="lineno">   25</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\n\tU : &quot;</span>;</div>
 <div class="line"><span class="lineno">   26</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; U-&gt;<a class="code hl_variable" href="../../d2/d2c/structtower.html#acb535964abd34c47678a4ade0628223d">top</a>; i++) {</div>
-<div class="line"><span class="lineno">   27</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; U-&gt;<a class="code hl_variable" href="../../d2/d2c/structtower.html#a3ebb75c13c57d51a8a1ba1ea54a515e9">values</a>[i] &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span>;</div>
+<div class="line"><span class="lineno">   27</span>        std::cout &lt;&lt; U-&gt;<a class="code hl_variable" href="../../d2/d2c/structtower.html#a3ebb75c13c57d51a8a1ba1ea54a515e9">values</a>[i] &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span>;</div>
 <div class="line"><span class="lineno">   28</span>    }</div>
-<div class="line"><span class="lineno">   29</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n\tT : &quot;</span>;</div>
+<div class="line"><span class="lineno">   29</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\n\tT : &quot;</span>;</div>
 <div class="line"><span class="lineno">   30</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; T-&gt;<a class="code hl_variable" href="../../d2/d2c/structtower.html#acb535964abd34c47678a4ade0628223d">top</a>; i++) {</div>
-<div class="line"><span class="lineno">   31</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; T-&gt;<a class="code hl_variable" href="../../d2/d2c/structtower.html#a3ebb75c13c57d51a8a1ba1ea54a515e9">values</a>[i] &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span>;</div>
+<div class="line"><span class="lineno">   31</span>        std::cout &lt;&lt; T-&gt;<a class="code hl_variable" href="../../d2/d2c/structtower.html#a3ebb75c13c57d51a8a1ba1ea54a515e9">values</a>[i] &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span>;</div>
 <div class="line"><span class="lineno">   32</span>    }</div>
 <div class="line"><span class="lineno">   33</span>}</div>
 </div><!-- fragment -->
@@ -300,6 +320,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d3c/tower__of__hanoi_8cpp_source.html#l00052">52</a> of file <a class="el" href="../../db/d3c/tower__of__hanoi_8cpp_source.html">tower_of_hanoi.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   52</span>                                                     {</div>
 <div class="line"><span class="lineno">   53</span>    <span class="keywordflow">if</span> (n == 1) {</div>
 <div class="line"><span class="lineno">   54</span>        <a class="code hl_function" href="#af4cfc41e546f1f8d25f01e0804e8b61d">mov</a>(From, To);</div>
@@ -311,13 +333,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   60</span>        <a class="code hl_function" href="#ab037f72a5eac476535a6cfbbcb965417">TH</a>(n - 1, Using, From, To);</div>
 <div class="line"><span class="lineno">   61</span>    }</div>
 <div class="line"><span class="lineno">   62</span>}</div>
-<div class="ttc" id="atower__of__hanoi_8cpp_html_af4cfc41e546f1f8d25f01e0804e8b61d"><div class="ttname"><a href="#af4cfc41e546f1f8d25f01e0804e8b61d">mov</a></div><div class="ttdeci">void mov(tower *From, tower *To)</div><div class="ttdef"><b>Definition</b> tower_of_hanoi.cpp:39</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d3c/tower__of__hanoi_8cpp_ab037f72a5eac476535a6cfbbcb965417_cgraph.svg" width="144" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="atower__of__hanoi_8cpp_html_af4cfc41e546f1f8d25f01e0804e8b61d"><div class="ttname"><a href="#af4cfc41e546f1f8d25f01e0804e8b61d">mov</a></div><div class="ttdeci">void mov(tower *From, tower *To)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d3c/tower__of__hanoi_8cpp_source.html#l00039">tower_of_hanoi.cpp:39</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

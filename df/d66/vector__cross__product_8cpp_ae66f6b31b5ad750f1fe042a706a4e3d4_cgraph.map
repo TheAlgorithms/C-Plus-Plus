@@ -1,7 +1,0 @@
-<map id="main" name="main">
-<area shape="rect" id="Node000001" title="Main Function." alt="" coords="5,31,55,56"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="103,5,174,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,35,87,27,88,33,56,40"/>
-<area shape="rect" id="Node000003" href="$df/d66/vector__cross__product_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="namespace math" alt="" coords="117,55,160,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,46,102,57,101,62,55,52"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="operations_on_datastructures::trie_operations::Tnode::SearchSuggestions" name="operations_on_datastructures::trie_operations::Tnode::SearchSuggestions">
-<area shape="rect" id="Node000001" title="Lists out all the words in trie with the longest prefix of the search key that is present in the trie..." alt="" coords="5,5,198,61"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="486,20,557,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,15,245,11,342,4,438,11,471,16,470,22,438,16,342,10,246,16,199,21"/>
-<area shape="rect" id="Node000003" href="$d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html#a097913c4badec2b60d50a171ecc299fe" title="Recursive function to suggest all the entries of trie which have a given common prefix." alt="" coords="246,49,438,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,48,231,54,230,59,198,53"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="438,51,470,43,472,48,439,56"/>
-<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="306,49,306,39,313,30,325,25,342,23,361,25,373,32,370,37,359,30,342,28,326,30,316,34,311,41,311,49"/>
-</map>

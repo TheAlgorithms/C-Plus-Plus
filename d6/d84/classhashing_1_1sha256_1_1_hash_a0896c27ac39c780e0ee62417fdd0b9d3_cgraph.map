@@ -1,8 +1,0 @@
-<map id="hashing::sha256::Hash::update" name="hashing::sha256::Hash::update">
-<area shape="rect" id="Node000001" title="Updates the hash array." alt="" coords="5,39,161,80"/>
-<area shape="rect" id="Node000002" href="$d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001" title=" " alt="" coords="264,5,303,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,41,248,23,249,28,162,46"/>
-<area shape="rect" id="Node000003" href="$d4/d08/sha256_8cpp.html#adbcd504103c342a4da718f8fce6ff06c" title="Rotates the bits of a 32&#45;bit unsigned integer." alt="" coords="209,79,358,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,72,194,79,193,84,161,78"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="245,79,243,69,250,60,263,55,283,53,305,55,318,61,316,66,304,60,283,58,264,60,253,64,249,70,250,78"/>
-</map>

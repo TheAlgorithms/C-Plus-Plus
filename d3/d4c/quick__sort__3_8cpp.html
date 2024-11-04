@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: sorting/quick_sort_3.cpp File Reference</title>
+<title>TheAlgorithms/C++: sorting/quick_sort_3.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -123,7 +140,9 @@ Include dependency graph for quick_sort_3.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/df7/quick__sort__3_8cpp__incl.svg" width="427" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d3/d4c/quick__sort__3_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html">sorting</a></td></tr>
@@ -133,10 +152,10 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a9f59fe72dacc1f1218ef3c303d843168" id="r_a9f59fe72dacc1f1218ef3c303d843168"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a9f59fe72dacc1f1218ef3c303d843168"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a9f59fe72dacc1f1218ef3c303d843168">sorting::quicksort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *arr, int32_t low, int32_t high)</td></tr>
+<tr class="memitem:a9f59fe72dacc1f1218ef3c303d843168"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a9f59fe72dacc1f1218ef3c303d843168">sorting::quicksort</a> (std::vector&lt; T &gt; *arr, int32_t low, int32_t high)</td></tr>
 <tr class="separator:a9f59fe72dacc1f1218ef3c303d843168"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6eb67c2f91c98cf4464f75b5882022de" id="r_a6eb67c2f91c98cf4464f75b5882022de"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a6eb67c2f91c98cf4464f75b5882022de"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a6eb67c2f91c98cf4464f75b5882022de">sorting::quicksort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; arr, int32_t low, int32_t high)</td></tr>
+<tr class="memitem:a6eb67c2f91c98cf4464f75b5882022de"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a6eb67c2f91c98cf4464f75b5882022de">sorting::quicksort</a> (std::vector&lt; T &gt; arr, int32_t low, int32_t high)</td></tr>
 <tr class="separator:a6eb67c2f91c98cf4464f75b5882022de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07e5c62de28aeddea986890ce7ac1bda" id="r_a07e5c62de28aeddea986890ce7ac1bda"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07e5c62de28aeddea986890ce7ac1bda">test_int</a> ()</td></tr>
 <tr class="separator:a07e5c62de28aeddea986890ce7ac1bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,6 +169,8 @@ Functions</h2></td></tr>
 <p>Quick sort 3 works on Dutch National Flag Algorithm The major difference between simple quicksort and quick sort 3 comes in the function partition3 In quick_sort_partition3 we divide the vector/array into 3 parts. quick sort 3 works faster in some cases as compared to simple quicksort. </p><dl class="section author"><dt>Author</dt><dd>immortal-j </dd>
 <dd>
 <a href="https://github/kvedala" target="_blank">Krishna Vedala</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d3/d4c/quick__sort__3_8cpp_source.html">quick_sort_3.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -166,22 +187,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Driver program for above functions </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4c/quick__sort__3_8cpp_source.html#l00184">184</a> of file <a class="el" href="../../d3/d4c/quick__sort__3_8cpp_source.html">quick_sort_3.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  184</span>           {</div>
-<div class="line"><span class="lineno">  185</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a>(<span class="keyword">nullptr</span>));</div>
+<div class="line"><span class="lineno">  185</span>    std::srand(std::time(<span class="keyword">nullptr</span>));</div>
 <div class="line"><span class="lineno">  186</span>    <a class="code hl_function" href="#a07e5c62de28aeddea986890ce7ac1bda">test_int</a>();</div>
 <div class="line"><span class="lineno">  187</span>    <a class="code hl_function" href="#a2635b04ad943fa28b7bbf8d1e6479792">test_double</a>();</div>
 <div class="line"><span class="lineno">  188</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  189</span>}</div>
-<div class="ttc" id="aquick__sort__3_8cpp_html_a07e5c62de28aeddea986890ce7ac1bda"><div class="ttname"><a href="#a07e5c62de28aeddea986890ce7ac1bda">test_int</a></div><div class="ttdeci">static void test_int()</div><div class="ttdef"><b>Definition</b> quick_sort_3.cpp:138</div></div>
-<div class="ttc" id="aquick__sort__3_8cpp_html_a2635b04ad943fa28b7bbf8d1e6479792"><div class="ttname"><a href="#a2635b04ad943fa28b7bbf8d1e6479792">test_double</a></div><div class="ttdeci">static void test_double()</div><div class="ttdef"><b>Definition</b> quick_sort_3.cpp:160</div></div>
-<div class="ttc" id="asrand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a></div><div class="ttdeci">T srand(T... args)</div></div>
-<div class="ttc" id="atime_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a></div><div class="ttdeci">T time(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d4c/quick__sort__3_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="366" height="258"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aquick__sort__3_8cpp_html_a07e5c62de28aeddea986890ce7ac1bda"><div class="ttname"><a href="#a07e5c62de28aeddea986890ce7ac1bda">test_int</a></div><div class="ttdeci">static void test_int()</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d4c/quick__sort__3_8cpp_source.html#l00138">quick_sort_3.cpp:138</a></div></div>
+<div class="ttc" id="aquick__sort__3_8cpp_html_a2635b04ad943fa28b7bbf8d1e6479792"><div class="ttname"><a href="#a2635b04ad943fa28b7bbf8d1e6479792">test_double</a></div><div class="ttdeci">static void test_double()</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d4c/quick__sort__3_8cpp_source.html#l00160">quick_sort_3.cpp:160</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2635b04ad943fa28b7bbf8d1e6479792" name="a2635b04ad943fa28b7bbf8d1e6479792"></a>
@@ -207,41 +223,32 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Test function for double type arrays </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4c/quick__sort__3_8cpp_source.html#l00160">160</a> of file <a class="el" href="../../d3/d4c/quick__sort__3_8cpp_source.html">quick_sort_3.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  160</span>                          {</div>
-<div class="line"><span class="lineno">  161</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nTesting Double type arrays\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  161</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nTesting Double type arrays\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  162</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> num_tests = 1; num_tests &lt; 21; num_tests++) {</div>
-<div class="line"><span class="lineno">  163</span>        <span class="keywordtype">size_t</span> size = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 500;</div>
-<div class="line"><span class="lineno">  164</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;double&gt;</a> arr(size);</div>
+<div class="line"><span class="lineno">  163</span>        <span class="keywordtype">size_t</span> size = std::rand() % 500;</div>
+<div class="line"><span class="lineno">  164</span>        std::vector&lt;double&gt; arr(size);</div>
 <div class="line"><span class="lineno">  165</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;a : arr) {</div>
-<div class="line"><span class="lineno">  166</span>            a = double(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 500) -</div>
+<div class="line"><span class="lineno">  166</span>            a = double(std::rand() % 500) -</div>
 <div class="line"><span class="lineno">  167</span>                250.f;   <span class="comment">// random numbers between -250, 249</span></div>
 <div class="line"><span class="lineno">  168</span>            a /= 100.f;  <span class="comment">// convert to -2.5 to 2.49</span></div>
 <div class="line"><span class="lineno">  169</span>        }</div>
 <div class="line"><span class="lineno">  170</span> </div>
-<div class="line"><span class="lineno">  171</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test &quot;</span> &lt;&lt; num_tests &lt;&lt; <span class="stringliteral">&quot;\t Array size:&quot;</span> &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot;\t &quot;</span>;</div>
-<div class="line"><span class="lineno">  172</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;double&gt;</a> sorted =</div>
+<div class="line"><span class="lineno">  171</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Test &quot;</span> &lt;&lt; num_tests &lt;&lt; <span class="stringliteral">&quot;\t Array size:&quot;</span> &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot;\t &quot;</span>;</div>
+<div class="line"><span class="lineno">  172</span>        std::vector&lt;double&gt; sorted =</div>
 <div class="line"><span class="lineno">  173</span>            <a class="code hl_function" href="../../d5/d91/namespacesorting.html#a9f59fe72dacc1f1218ef3c303d843168">sorting::quicksort</a>(arr, 0, int32_t(size) - 1);</div>
 <div class="line"><span class="lineno">  174</span>        <span class="keywordflow">if</span> (size &lt; 20) {</div>
-<div class="line"><span class="lineno">  175</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\t Sorted Array is:\n\t&quot;</span>;</div>
-<div class="line"><span class="lineno">  176</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; sorted &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  175</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;\t Sorted Array is:\n\t&quot;</span>;</div>
+<div class="line"><span class="lineno">  176</span>            std::cout &lt;&lt; sorted &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  177</span>        }</div>
-<div class="line"><span class="lineno">  178</span>        assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(sorted), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(sorted)));</div>
-<div class="line"><span class="lineno">  179</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\t Passed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  178</span>        assert(std::is_sorted(std::begin(sorted), std::end(sorted)));</div>
+<div class="line"><span class="lineno">  179</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\t Passed\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  180</span>    }</div>
 <div class="line"><span class="lineno">  181</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="ais_sorted_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></div><div class="ttdeci">T is_sorted(T... args)</div></div>
-<div class="ttc" id="anamespacesorting_html_a9f59fe72dacc1f1218ef3c303d843168"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#a9f59fe72dacc1f1218ef3c303d843168">sorting::quicksort</a></div><div class="ttdeci">void quicksort(std::vector&lt; T &gt; *arr, int32_t low, int32_t high)</div><div class="ttdef"><b>Definition</b> quick_sort_3.cpp:94</div></div>
-<div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d4c/quick__sort__3_8cpp_a2635b04ad943fa28b7bbf8d1e6479792_cgraph.svg" width="268" height="258"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="anamespacesorting_html_a9f59fe72dacc1f1218ef3c303d843168"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#a9f59fe72dacc1f1218ef3c303d843168">sorting::quicksort</a></div><div class="ttdeci">void quicksort(std::vector&lt; T &gt; *arr, int32_t low, int32_t high)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d4c/quick__sort__3_8cpp_source.html#l00094">quick_sort_3.cpp:94</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a07e5c62de28aeddea986890ce7ac1bda" name="a07e5c62de28aeddea986890ce7ac1bda"></a>
@@ -267,32 +274,29 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Test function for integer type arrays </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4c/quick__sort__3_8cpp_source.html#l00138">138</a> of file <a class="el" href="../../d3/d4c/quick__sort__3_8cpp_source.html">quick_sort_3.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  138</span>                       {</div>
-<div class="line"><span class="lineno">  139</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nTesting integer type arrays\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  139</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nTesting integer type arrays\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  140</span> </div>
 <div class="line"><span class="lineno">  141</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> num_tests = 1; num_tests &lt; 21; num_tests++) {</div>
-<div class="line"><span class="lineno">  142</span>        <span class="keywordtype">size_t</span> size = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 500;</div>
-<div class="line"><span class="lineno">  143</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> arr(size);</div>
+<div class="line"><span class="lineno">  142</span>        <span class="keywordtype">size_t</span> size = std::rand() % 500;</div>
+<div class="line"><span class="lineno">  143</span>        std::vector&lt;int&gt; arr(size);</div>
 <div class="line"><span class="lineno">  144</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;a : arr) {</div>
-<div class="line"><span class="lineno">  145</span>            a = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 500 - 250;  <span class="comment">// random numbers between -250, 249</span></div>
+<div class="line"><span class="lineno">  145</span>            a = std::rand() % 500 - 250;  <span class="comment">// random numbers between -250, 249</span></div>
 <div class="line"><span class="lineno">  146</span>        }</div>
 <div class="line"><span class="lineno">  147</span> </div>
-<div class="line"><span class="lineno">  148</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test &quot;</span> &lt;&lt; num_tests &lt;&lt; <span class="stringliteral">&quot;\t Array size:&quot;</span> &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot;\t &quot;</span>;</div>
-<div class="line"><span class="lineno">  149</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> sorted = <a class="code hl_function" href="../../d5/d91/namespacesorting.html#a9f59fe72dacc1f1218ef3c303d843168">sorting::quicksort</a>(arr, 0, int32_t(size) - 1);</div>
+<div class="line"><span class="lineno">  148</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Test &quot;</span> &lt;&lt; num_tests &lt;&lt; <span class="stringliteral">&quot;\t Array size:&quot;</span> &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot;\t &quot;</span>;</div>
+<div class="line"><span class="lineno">  149</span>        std::vector&lt;int&gt; sorted = <a class="code hl_function" href="../../d5/d91/namespacesorting.html#a9f59fe72dacc1f1218ef3c303d843168">sorting::quicksort</a>(arr, 0, int32_t(size) - 1);</div>
 <div class="line"><span class="lineno">  150</span>        <span class="keywordflow">if</span> (size &lt; 20) {</div>
-<div class="line"><span class="lineno">  151</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\t Sorted Array is:\n\t&quot;</span>;</div>
-<div class="line"><span class="lineno">  152</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; sorted &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  151</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;\t Sorted Array is:\n\t&quot;</span>;</div>
+<div class="line"><span class="lineno">  152</span>            std::cout &lt;&lt; sorted &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  153</span>        }</div>
-<div class="line"><span class="lineno">  154</span>        assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(sorted), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(sorted)));</div>
-<div class="line"><span class="lineno">  155</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\t Passed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  154</span>        assert(std::is_sorted(std::begin(sorted), std::end(sorted)));</div>
+<div class="line"><span class="lineno">  155</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\t Passed\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  156</span>    }</div>
 <div class="line"><span class="lineno">  157</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d4c/quick__sort__3_8cpp_a07e5c62de28aeddea986890ce7ac1bda_cgraph.svg" width="244" height="258"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

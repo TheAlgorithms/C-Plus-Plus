@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: numerical_methods/babylonian_method.cpp File Reference</title>
+<title>TheAlgorithms/C++: numerical_methods/babylonian_method.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -121,7 +138,9 @@ Include dependency graph for babylonian_method.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d08/babylonian__method_8cpp__incl.svg" width="252" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../dc/d9c/babylonian__method_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/namespacenumerical__methods.html">numerical_methods</a></td></tr>
@@ -143,6 +162,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a href="https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method" target="_blank">A babylonian method (BM)</a> is an algorithm that computes the square root. </p>
 <p>This algorithm has an application in use case scenario where a user wants find accurate square roots of large numbers </p><dl class="section author"><dt>Author</dt><dd><a href="https://github.com/ameyachawlaggsipu" target="_blank">Ameya Chawla</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../dc/d9c/babylonian__method_8cpp_source.html">babylonian_method.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="abf9e6b7e6f15df4b525a2e7705ba3089" name="abf9e6b7e6f15df4b525a2e7705ba3089"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abf9e6b7e6f15df4b525a2e7705ba3089">&#9670;&#160;</a></span>main()</h2>
@@ -172,18 +193,15 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d9c/babylonian__method_8cpp_source.html#l00096">96</a> of file <a class="el" href="../../dc/d9c/babylonian__method_8cpp_source.html">babylonian_method.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   96</span>                                       {</div>
 <div class="line"><span class="lineno">   97</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">//  run self-test implementations</span></div>
 <div class="line"><span class="lineno">   98</span>             <span class="comment">//  with 2 defined test cases</span></div>
 <div class="line"><span class="lineno">   99</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  100</span>}</div>
-<div class="ttc" id="ababylonian__method_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> babylonian_method.cpp:62</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d9c/babylonian__method_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089_cgraph.svg" width="463" height="92"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="ababylonian__method_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d9c/babylonian__method_8cpp_source.html#l00062">babylonian_method.cpp:62</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -219,41 +237,31 @@ Here is the call graph for this function:</div>
 <p>Test result for testcase 2</p>
 <p>Testing for test Case 1</p>
 <p>Testing for test Case 2</p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d9c/babylonian__method_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../dc/d9c/babylonian__method_8cpp_source.html">babylonian_method.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   62</span>                   {</div>
 <div class="line"><span class="lineno">   63</span>    <span class="comment">/* descriptions of the following test */</span></div>
 <div class="line"><span class="lineno">   64</span> </div>
-<div class="line"><span class="lineno">   65</span>    <span class="keyword">auto</span> testcase1 = 125348;  <span class="comment">/// Testcase 1</span></div>
-<div class="line"><span class="lineno">   66</span>    <span class="keyword">auto</span> testcase2 = 752080;  <span class="comment">/// Testcase 2</span></div>
+<div class="line"><span class="lineno">   65</span>    <span class="keyword">auto</span> testcase1 = 125348;  </div>
+<div class="line"><span class="lineno">   66</span>    <span class="keyword">auto</span> testcase2 = 752080;  </div>
 <div class="line"><span class="lineno">   67</span> </div>
-<div class="line"><span class="lineno">   68</span>    <span class="keyword">auto</span> real_output1 = 354.045194855;  <span class="comment">/// Real Output 1</span></div>
-<div class="line"><span class="lineno">   69</span>    <span class="keyword">auto</span> real_output2 = 867.225460881;  <span class="comment">/// Real Output 2</span></div>
+<div class="line"><span class="lineno">   68</span>    <span class="keyword">auto</span> real_output1 = 354.045194855;  </div>
+<div class="line"><span class="lineno">   69</span>    <span class="keyword">auto</span> real_output2 = 867.225460881;  </div>
 <div class="line"><span class="lineno">   70</span> </div>
-<div class="line"><span class="lineno">   71</span>    <span class="keyword">auto</span> test_result1 = <a class="code hl_function" href="../../d1/de0/namespacenumerical__methods.html#a28e67885f8606564cc8335f483f63309">numerical_methods::babylonian_method</a>(testcase1);<span class="comment"></span></div>
-<div class="line"><span class="lineno">   72</span><span class="comment">    /// Test result for testcase 1</span></div>
-<div class="line"><span class="lineno">   73</span><span class="comment"></span>    <span class="keyword">auto</span> test_result2 = <a class="code hl_function" href="../../d1/de0/namespacenumerical__methods.html#a28e67885f8606564cc8335f483f63309">numerical_methods::babylonian_method</a>(testcase2);<span class="comment"></span></div>
-<div class="line"><span class="lineno">   74</span><span class="comment">    /// Test result for testcase 2</span></div>
-<div class="line"><span class="lineno">   75</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   76</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(test_result1, real_output1) -</div>
-<div class="line"><span class="lineno">   77</span>               <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(test_result1, real_output1) &lt;</div>
-<div class="line"><span class="lineno">   78</span>           0.0001);<span class="comment"></span></div>
-<div class="line"><span class="lineno">   79</span><span class="comment">    /// Testing for test Case 1</span></div>
-<div class="line"><span class="lineno">   80</span><span class="comment"></span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(test_result2, real_output2) -</div>
-<div class="line"><span class="lineno">   81</span>               <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(test_result2, real_output2) &lt;</div>
-<div class="line"><span class="lineno">   82</span>           0.0001);<span class="comment"></span></div>
-<div class="line"><span class="lineno">   83</span><span class="comment">    /// Testing for test Case 2</span></div>
-<div class="line"><span class="lineno">   84</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   85</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   71</span>    <span class="keyword">auto</span> test_result1 = <a class="code hl_function" href="../../d1/de0/namespacenumerical__methods.html#a28e67885f8606564cc8335f483f63309">numerical_methods::babylonian_method</a>(testcase1);</div>
+<div class="line"><span class="lineno">   73</span>    <span class="keyword">auto</span> test_result2 = <a class="code hl_function" href="../../d1/de0/namespacenumerical__methods.html#a28e67885f8606564cc8335f483f63309">numerical_methods::babylonian_method</a>(testcase2);</div>
+<div class="line"><span class="lineno">   75</span> </div>
+<div class="line"><span class="lineno">   76</span>    assert(std::max(test_result1, real_output1) -</div>
+<div class="line"><span class="lineno">   77</span>               std::min(test_result1, real_output1) &lt;</div>
+<div class="line"><span class="lineno">   78</span>           0.0001);</div>
+<div class="line"><span class="lineno">   80</span>    assert(std::max(test_result2, real_output2) -</div>
+<div class="line"><span class="lineno">   81</span>               std::min(test_result2, real_output2) &lt;</div>
+<div class="line"><span class="lineno">   82</span>           0.0001);</div>
+<div class="line"><span class="lineno">   84</span> </div>
+<div class="line"><span class="lineno">   85</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   86</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
-<div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
-<div class="ttc" id="anamespacenumerical__methods_html_a28e67885f8606564cc8335f483f63309"><div class="ttname"><a href="../../d1/de0/namespacenumerical__methods.html#a28e67885f8606564cc8335f483f63309">numerical_methods::babylonian_method</a></div><div class="ttdeci">double babylonian_method(double radicand)</div><div class="ttdoc">Babylonian methods is an iterative function which returns square root of radicand.</div><div class="ttdef"><b>Definition</b> babylonian_method.cpp:30</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d9c/babylonian__method_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="366" height="92"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="anamespacenumerical__methods_html_a28e67885f8606564cc8335f483f63309"><div class="ttname"><a href="../../d1/de0/namespacenumerical__methods.html#a28e67885f8606564cc8335f483f63309">numerical_methods::babylonian_method</a></div><div class="ttdeci">double babylonian_method(double radicand)</div><div class="ttdoc">Babylonian methods is an iterative function which returns square root of radicand.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d9c/babylonian__method_8cpp_source.html#l00030">babylonian_method.cpp:30</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

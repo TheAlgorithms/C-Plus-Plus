@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: math/sum_of_digits.cpp File Reference</title>
+<title>TheAlgorithms/C++: math/sum_of_digits.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -119,7 +136,9 @@ Include dependency graph for sum_of_digits.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/dcd/sum__of__digits_8cpp__incl.svg" width="174" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d4/d83/sum__of__digits_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a4619c78b6ad985713024f930f31c4395" id="r_a4619c78b6ad985713024f930f31c4395"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4619c78b6ad985713024f930f31c4395">sum_of_digits</a> (int num)</td></tr>
@@ -136,6 +155,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A C++ Program to find the Sum of Digits of input integer. </p>
 <p>Copyright 2020 </p><dl class="section author"><dt>Author</dt><dd>iamnambiar </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d4/d83/sum__of__digits_8cpp_source.html">sum_of_digits.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -152,20 +173,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Main Function </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d83/sum__of__digits_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../d4/d83/sum__of__digits_8cpp_source.html">sum_of_digits.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   68</span>           {</div>
 <div class="line"><span class="lineno">   69</span>    <a class="code hl_function" href="#ae1a3968e7947464bee7714f6d43b7002">test</a>();</div>
-<div class="line"><span class="lineno">   70</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Success.&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   70</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Success.&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   71</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   72</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="asum__of__digits_8cpp_html_ae1a3968e7947464bee7714f6d43b7002"><div class="ttname"><a href="#ae1a3968e7947464bee7714f6d43b7002">test</a></div><div class="ttdeci">void test()</div><div class="ttdef"><b>Definition</b> sum_of_digits.cpp:58</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d83/sum__of__digits_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="428" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="asum__of__digits_8cpp_html_ae1a3968e7947464bee7714f6d43b7002"><div class="ttname"><a href="#ae1a3968e7947464bee7714f6d43b7002">test</a></div><div class="ttdeci">void test()</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d83/sum__of__digits_8cpp_source.html#l00058">sum_of_digits.cpp:58</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4619c78b6ad985713024f930f31c4395" name="a4619c78b6ad985713024f930f31c4395"></a>
@@ -190,6 +206,8 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Sum of the digits of the integer.</dd></dl>
 <p>\detail First the algorithm check whether the num is negative or positive, if it is negative, then we neglect the negative sign. Next, the algorithm extract the last digit of num by dividing by 10 and extracting the remainder and this is added to the sum. The number is then divided by 10 to remove the last digit. This loop continues until num becomes 0. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d83/sum__of__digits_8cpp_source.html#l00023">23</a> of file <a class="el" href="../../d4/d83/sum__of__digits_8cpp_source.html">sum_of_digits.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   23</span>                           {</div>
 <div class="line"><span class="lineno">   24</span>    <span class="comment">// If num is negative then negative sign is neglected.</span></div>
 <div class="line"><span class="lineno">   25</span>    <span class="keywordflow">if</span> (num &lt; 0) {</div>
@@ -202,7 +220,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   32</span>    }</div>
 <div class="line"><span class="lineno">   33</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">sum</a>;</div>
 <div class="line"><span class="lineno">   34</span>}</div>
-<div class="ttc" id="anamespacemachine__learning_html_a6f1c98c016ad34ff3d9f39372161bd35"><div class="ttname"><a href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">machine_learning::sum</a></div><div class="ttdeci">T sum(const std::vector&lt; std::valarray&lt; T &gt; &gt; &amp;A)</div><div class="ttdef"><b>Definition</b> vector_ops.hpp:232</div></div>
+<div class="ttc" id="anamespacemachine__learning_html_a6f1c98c016ad34ff3d9f39372161bd35"><div class="ttname"><a href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">machine_learning::sum</a></div><div class="ttdeci">T sum(const std::vector&lt; std::valarray&lt; T &gt; &gt; &amp;A)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d95/vector__ops_8hpp_source.html#l00232">vector_ops.hpp:232</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -221,20 +239,17 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Function for testing the <a class="el" href="#a4619c78b6ad985713024f930f31c4395">sum_of_digits()</a> with all the test cases. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d83/sum__of__digits_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../d4/d83/sum__of__digits_8cpp_source.html">sum_of_digits.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   58</span>            {</div>
 <div class="line"><span class="lineno">   59</span>    <span class="comment">// First test.</span></div>
 <div class="line"><span class="lineno">   60</span>    <a class="code hl_function" href="#a1440a7779ac56f47a3f355ce4a8c7da0">test1</a>();</div>
 <div class="line"><span class="lineno">   61</span>    <span class="comment">// Second test.</span></div>
 <div class="line"><span class="lineno">   62</span>    <a class="code hl_function" href="#a0283886819c7c140a023582b7269e2d0">test2</a>();</div>
 <div class="line"><span class="lineno">   63</span>}</div>
-<div class="ttc" id="asum__of__digits_8cpp_html_a0283886819c7c140a023582b7269e2d0"><div class="ttname"><a href="#a0283886819c7c140a023582b7269e2d0">test2</a></div><div class="ttdeci">void test2()</div><div class="ttdef"><b>Definition</b> sum_of_digits.cpp:49</div></div>
-<div class="ttc" id="asum__of__digits_8cpp_html_a1440a7779ac56f47a3f355ce4a8c7da0"><div class="ttname"><a href="#a1440a7779ac56f47a3f355ce4a8c7da0">test1</a></div><div class="ttdeci">void test1()</div><div class="ttdef"><b>Definition</b> sum_of_digits.cpp:40</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d83/sum__of__digits_8cpp_ae1a3968e7947464bee7714f6d43b7002_cgraph.svg" width="303" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="asum__of__digits_8cpp_html_a0283886819c7c140a023582b7269e2d0"><div class="ttname"><a href="#a0283886819c7c140a023582b7269e2d0">test2</a></div><div class="ttdeci">void test2()</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d83/sum__of__digits_8cpp_source.html#l00049">sum_of_digits.cpp:49</a></div></div>
+<div class="ttc" id="asum__of__digits_8cpp_html_a1440a7779ac56f47a3f355ce4a8c7da0"><div class="ttname"><a href="#a1440a7779ac56f47a3f355ce4a8c7da0">test1</a></div><div class="ttdeci">void test1()</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d83/sum__of__digits_8cpp_source.html#l00040">sum_of_digits.cpp:40</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1440a7779ac56f47a3f355ce4a8c7da0" name="a1440a7779ac56f47a3f355ce4a8c7da0"></a>
@@ -252,17 +267,14 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Function for testing the <a class="el" href="#a4619c78b6ad985713024f930f31c4395">sum_of_digits()</a> function with a first test case of 119765 and assert statement. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d83/sum__of__digits_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../d4/d83/sum__of__digits_8cpp_source.html">sum_of_digits.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   40</span>             {</div>
 <div class="line"><span class="lineno">   41</span>    <span class="keywordtype">int</span> test_case_1 = <a class="code hl_function" href="#a4619c78b6ad985713024f930f31c4395">sum_of_digits</a>(119765);</div>
 <div class="line"><span class="lineno">   42</span>    assert(test_case_1 == 29);</div>
 <div class="line"><span class="lineno">   43</span>}</div>
-<div class="ttc" id="asum__of__digits_8cpp_html_a4619c78b6ad985713024f930f31c4395"><div class="ttname"><a href="#a4619c78b6ad985713024f930f31c4395">sum_of_digits</a></div><div class="ttdeci">int sum_of_digits(int num)</div><div class="ttdef"><b>Definition</b> sum_of_digits.cpp:23</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d83/sum__of__digits_8cpp_a1440a7779ac56f47a3f355ce4a8c7da0_cgraph.svg" width="212" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="asum__of__digits_8cpp_html_a4619c78b6ad985713024f930f31c4395"><div class="ttname"><a href="#a4619c78b6ad985713024f930f31c4395">sum_of_digits</a></div><div class="ttdeci">int sum_of_digits(int num)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d83/sum__of__digits_8cpp_source.html#l00023">sum_of_digits.cpp:23</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0283886819c7c140a023582b7269e2d0" name="a0283886819c7c140a023582b7269e2d0"></a>
@@ -280,16 +292,13 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Function for testing the <a class="el" href="#a4619c78b6ad985713024f930f31c4395">sum_of_digits()</a> function with a second test case of -12256 and assert statement. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d83/sum__of__digits_8cpp_source.html#l00049">49</a> of file <a class="el" href="../../d4/d83/sum__of__digits_8cpp_source.html">sum_of_digits.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   49</span>             {</div>
 <div class="line"><span class="lineno">   50</span>    <span class="keywordtype">int</span> test_case_2 = <a class="code hl_function" href="#a4619c78b6ad985713024f930f31c4395">sum_of_digits</a>(-12256);</div>
 <div class="line"><span class="lineno">   51</span>    assert(test_case_2 == 16);</div>
 <div class="line"><span class="lineno">   52</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d83/sum__of__digits_8cpp_a0283886819c7c140a023582b7269e2d0_cgraph.svg" width="212" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

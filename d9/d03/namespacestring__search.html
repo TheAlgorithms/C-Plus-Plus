@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: string_search Namespace Reference</title>
+<title>TheAlgorithms/C++: string_search Namespace Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -115,26 +132,26 @@ $(function(){initNavTree('d9/d03/namespacestring__search.html','../../'); initRe
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aeb2cd81064717aedd62bfb096b1a73d8" id="r_aeb2cd81064717aedd62bfb096b1a73d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb2cd81064717aedd62bfb096b1a73d8">brute_force</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;text, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;pattern)</td></tr>
+<tr class="memitem:aeb2cd81064717aedd62bfb096b1a73d8" id="r_aeb2cd81064717aedd62bfb096b1a73d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb2cd81064717aedd62bfb096b1a73d8">brute_force</a> (const std::string &amp;text, const std::string &amp;pattern)</td></tr>
 <tr class="separator:aeb2cd81064717aedd62bfb096b1a73d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83c72ff237cdf623e42d4295e0029bf9" id="r_a83c72ff237cdf623e42d4295e0029bf9"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83c72ff237cdf623e42d4295e0029bf9">getFailureArray</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;pattern)</td></tr>
+<tr class="memitem:a83c72ff237cdf623e42d4295e0029bf9" id="r_a83c72ff237cdf623e42d4295e0029bf9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83c72ff237cdf623e42d4295e0029bf9">getFailureArray</a> (const std::string &amp;pattern)</td></tr>
 <tr class="memdesc:a83c72ff237cdf623e42d4295e0029bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the partial match table aka failure function for a pattern to search.  <br /></td></tr>
 <tr class="separator:a83c72ff237cdf623e42d4295e0029bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e37af2f023495129cb57338c801209e" id="r_a1e37af2f023495129cb57338c801209e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e37af2f023495129cb57338c801209e">kmp</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;pattern, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;text)</td></tr>
+<tr class="memitem:a1e37af2f023495129cb57338c801209e" id="r_a1e37af2f023495129cb57338c801209e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e37af2f023495129cb57338c801209e">kmp</a> (const std::string &amp;pattern, const std::string &amp;text)</td></tr>
 <tr class="memdesc:a1e37af2f023495129cb57338c801209e"><td class="mdescLeft">&#160;</td><td class="mdescRight">KMP algorithm to find a pattern in a text.  <br /></td></tr>
 <tr class="separator:a1e37af2f023495129cb57338c801209e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fb0bc932ba8b582c9f4c71338d050f8" id="r_a8fb0bc932ba8b582c9f4c71338d050f8"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fb0bc932ba8b582c9f4c71338d050f8">create_hash</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;s, int n)</td></tr>
+<tr class="memitem:a8fb0bc932ba8b582c9f4c71338d050f8" id="r_a8fb0bc932ba8b582c9f4c71338d050f8"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fb0bc932ba8b582c9f4c71338d050f8">create_hash</a> (const std::string &amp;s, int n)</td></tr>
 <tr class="separator:a8fb0bc932ba8b582c9f4c71338d050f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed769d565b705a9b3e0eb1ec74088893" id="r_aed769d565b705a9b3e0eb1ec74088893"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed769d565b705a9b3e0eb1ec74088893">recalculate_hash</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;s, int old_index, int new_index, int64_t old_hash, int patLength)</td></tr>
+<tr class="memitem:aed769d565b705a9b3e0eb1ec74088893" id="r_aed769d565b705a9b3e0eb1ec74088893"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed769d565b705a9b3e0eb1ec74088893">recalculate_hash</a> (const std::string &amp;s, int old_index, int new_index, int64_t old_hash, int patLength)</td></tr>
 <tr class="separator:aed769d565b705a9b3e0eb1ec74088893"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebe07cea289a13142503d98be7df11fd" id="r_aebe07cea289a13142503d98be7df11fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebe07cea289a13142503d98be7df11fd">check_if_equal</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;str1, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;str2, int start1, int end1, int start2, int end2)</td></tr>
+<tr class="memitem:aebe07cea289a13142503d98be7df11fd" id="r_aebe07cea289a13142503d98be7df11fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebe07cea289a13142503d98be7df11fd">check_if_equal</a> (const std::string &amp;str1, const std::string &amp;str2, int start1, int end1, int start2, int end2)</td></tr>
 <tr class="separator:aebe07cea289a13142503d98be7df11fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21c673d56cbf67b1d2ee4d869185b7d9" id="r_a21c673d56cbf67b1d2ee4d869185b7d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21c673d56cbf67b1d2ee4d869185b7d9">rabin_karp</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;str, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;pat)</td></tr>
+<tr class="memitem:a21c673d56cbf67b1d2ee4d869185b7d9" id="r_a21c673d56cbf67b1d2ee4d869185b7d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21c673d56cbf67b1d2ee4d869185b7d9">rabin_karp</a> (const std::string &amp;str, const std::string &amp;pat)</td></tr>
 <tr class="separator:a21c673d56cbf67b1d2ee4d869185b7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>String search algorithms. </p>
-<p>for assert for IO operations for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> </p>
+<p>for assert for IO operations for std::string for std::vector </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="aeb2cd81064717aedd62bfb096b1a73d8" name="aeb2cd81064717aedd62bfb096b1a73d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeb2cd81064717aedd62bfb096b1a73d8">&#9670;&#160;</a></span>brute_force()</h2>
@@ -145,12 +162,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int string_search::brute_force </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pattern</em></span>&#160;)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>pattern</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -164,13 +181,15 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Index where the pattern starts in the text </dd>
 <dd>
 -1 if the pattern was not found. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d7d/brute__force__string__searching_8cpp_source.html#l00021">21</a> of file <a class="el" href="../../d3/d7d/brute__force__string__searching_8cpp_source.html">brute_force_string_searching.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   21</span>                                                                 {</div>
-<div class="line"><span class="lineno">   22</span>    <span class="keywordtype">size_t</span> pat_l = pattern.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>();</div>
-<div class="line"><span class="lineno">   23</span>    <span class="keywordtype">size_t</span> txt_l = text.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>();</div>
+<div class="line"><span class="lineno">   22</span>    <span class="keywordtype">size_t</span> pat_l = pattern.length();</div>
+<div class="line"><span class="lineno">   23</span>    <span class="keywordtype">size_t</span> txt_l = text.length();</div>
 <div class="line"><span class="lineno">   24</span>    <span class="keywordtype">int</span> index = -1;</div>
 <div class="line"><span class="lineno">   25</span>    <span class="keywordflow">if</span> (pat_l &lt;= txt_l) {</div>
 <div class="line"><span class="lineno">   26</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; txt_l - pat_l + 1; i++) {</div>
-<div class="line"><span class="lineno">   27</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> s = text.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/substr.html">substr</a>(i, pat_l);</div>
+<div class="line"><span class="lineno">   27</span>            std::string s = text.substr(i, pat_l);</div>
 <div class="line"><span class="lineno">   28</span>            <span class="keywordflow">if</span> (s == pattern) {</div>
 <div class="line"><span class="lineno">   29</span>                index = i;</div>
 <div class="line"><span class="lineno">   30</span>                <span class="keywordflow">break</span>;</div>
@@ -179,15 +198,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   33</span>    }</div>
 <div class="line"><span class="lineno">   34</span>    <span class="keywordflow">return</span> index;</div>
 <div class="line"><span class="lineno">   35</span>}</div>
-<div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">std::string::length</a></div><div class="ttdeci">T length(T... args)</div></div>
-<div class="ttc" id="asubstr_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/substr.html">std::string::substr</a></div><div class="ttdeci">T substr(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d03/namespacestring__search_aeb2cd81064717aedd62bfb096b1a73d8_cgraph.svg" width="319" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aebe07cea289a13142503d98be7df11fd" name="aebe07cea289a13142503d98be7df11fd"></a>
@@ -199,12 +210,12 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool string_search::check_if_equal </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>str1</em></span>, </td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>str1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>str2</em></span>, </td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>str2</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -240,7 +251,9 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if pattern was found </dd>
 <dd>
 <code>false</code> if pattern was not found </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>can this be replaced by <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/compare.html">std::string::compare</a>? </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>can this be replaced by std::string::compare? </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dce/rabin__karp_8cpp_source.html#l00060">60</a> of file <a class="el" href="../../d6/dce/rabin__karp_8cpp_source.html">rabin_karp.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   61</span>                                                                {</div>
 <div class="line"><span class="lineno">   62</span>    <span class="keywordflow">if</span> (end1 - start1 != end2 - start2) {</div>
 <div class="line"><span class="lineno">   63</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -266,7 +279,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">int64_t string_search::create_hash </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -283,6 +296,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>hash integer </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dce/rabin__karp_8cpp_source.html#l00025">25</a> of file <a class="el" href="../../d6/dce/rabin__karp_8cpp_source.html">rabin_karp.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   25</span>                                               {</div>
 <div class="line"><span class="lineno">   26</span>    int64_t result = 0;</div>
 <div class="line"><span class="lineno">   27</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; ++i) {</div>
@@ -290,7 +305,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   29</span>    }</div>
 <div class="line"><span class="lineno">   30</span>    <span class="keywordflow">return</span> result;</div>
 <div class="line"><span class="lineno">   31</span>}</div>
-<div class="ttc" id="arabin__karp_8cpp_html_ac4add2a227a10511e0128d63952030e8"><div class="ttname"><a href="../../d6/dce/rabin__karp_8cpp.html#ac4add2a227a10511e0128d63952030e8">PRIME</a></div><div class="ttdeci">#define PRIME</div><div class="ttdoc">Prime modulus for hash functions.</div><div class="ttdef"><b>Definition</b> rabin_karp.cpp:16</div></div>
+<div class="ttc" id="arabin__karp_8cpp_html_ac4add2a227a10511e0128d63952030e8"><div class="ttname"><a href="../../d6/dce/rabin__karp_8cpp.html#ac4add2a227a10511e0128d63952030e8">PRIME</a></div><div class="ttdeci">#define PRIME</div><div class="ttdoc">Prime modulus for hash functions.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dce/rabin__karp_8cpp_source.html#l00016">rabin_karp.cpp:16</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -301,9 +316,9 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; size_t &gt; string_search::getFailureArray </td>
+          <td class="memname">std::vector&lt; size_t &gt; string_search::getFailureArray </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pattern</em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>pattern</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -317,9 +332,11 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the partial match table as a vector array </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d6a/knuth__morris__pratt_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../de/d6a/knuth__morris__pratt_8cpp_source.html">knuth_morris_pratt.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   32</span>                                                            {</div>
-<div class="line"><span class="lineno">   33</span>    <span class="keywordtype">size_t</span> pattern_length = pattern.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>();</div>
-<div class="line"><span class="lineno">   34</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;size_t&gt;</a> failure(pattern_length + 1);</div>
+<div class="line"><span class="lineno">   33</span>    <span class="keywordtype">size_t</span> pattern_length = pattern.size();</div>
+<div class="line"><span class="lineno">   34</span>    std::vector&lt;size_t&gt; failure(pattern_length + 1);</div>
 <div class="line"><span class="lineno">   35</span>    failure[0] = std::string::npos;</div>
 <div class="line"><span class="lineno">   36</span>    <span class="keywordtype">size_t</span> j = std::string::npos;</div>
 <div class="line"><span class="lineno">   37</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; pattern_length; i++) {</div>
@@ -330,13 +347,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   42</span>    }</div>
 <div class="line"><span class="lineno">   43</span>    <span class="keywordflow">return</span> failure;</div>
 <div class="line"><span class="lineno">   44</span>}</div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d03/namespacestring__search_a83c72ff237cdf623e42d4295e0029bf9_cgraph.svg" width="335" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1e37af2f023495129cb57338c801209e" name="a1e37af2f023495129cb57338c801209e"></a>
@@ -348,12 +359,12 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">size_t string_search::kmp </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pattern</em></span>, </td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>pattern</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>&#160;)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -369,13 +380,15 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>the starting index of the pattern if found </dd>
 <dd>
 <code>std::string::npos</code> if not found </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d6a/knuth__morris__pratt_8cpp_source.html#l00053">53</a> of file <a class="el" href="../../de/d6a/knuth__morris__pratt_8cpp_source.html">knuth_morris_pratt.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   53</span>                                                            {</div>
-<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">if</span> (pattern.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/empty.html">empty</a>()) {</div>
+<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">if</span> (pattern.empty()) {</div>
 <div class="line"><span class="lineno">   55</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   56</span>    }</div>
-<div class="line"><span class="lineno">   57</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;size_t&gt;</a> failure = getFailureArray(pattern);</div>
-<div class="line"><span class="lineno">   58</span>    <span class="keywordtype">size_t</span> text_length = text.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>();</div>
-<div class="line"><span class="lineno">   59</span>    <span class="keywordtype">size_t</span> pattern_length = pattern.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>();</div>
+<div class="line"><span class="lineno">   57</span>    std::vector&lt;size_t&gt; failure = getFailureArray(pattern);</div>
+<div class="line"><span class="lineno">   58</span>    <span class="keywordtype">size_t</span> text_length = text.size();</div>
+<div class="line"><span class="lineno">   59</span>    <span class="keywordtype">size_t</span> pattern_length = pattern.size();</div>
 <div class="line"><span class="lineno">   60</span>    <span class="keywordtype">size_t</span> k = 0;</div>
 <div class="line"><span class="lineno">   61</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; text_length; j++) {</div>
 <div class="line"><span class="lineno">   62</span>        <span class="keywordflow">while</span> (k != std::string::npos &amp;&amp; pattern[k] != text[j]) {</div>
@@ -387,14 +400,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   68</span>    }</div>
 <div class="line"><span class="lineno">   69</span>    <span class="keywordflow">return</span> std::string::npos;</div>
 <div class="line"><span class="lineno">   70</span>}</div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a1b74d828b33760094906797042b89442"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">numerical_methods::simpson_method::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:117</div></div>
-<div class="ttc" id="aempty_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/empty.html">std::string::empty</a></div><div class="ttdeci">T empty(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d03/namespacestring__search_a1e37af2f023495129cb57338c801209e_cgraph.svg" width="515" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a1b74d828b33760094906797042b89442"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">numerical_methods::simpson_method::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d18/composite__simpson__rule_8cpp_source.html#l00117">composite_simpson_rule.cpp:117</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a21c673d56cbf67b1d2ee4d869185b7d9" name="a21c673d56cbf67b1d2ee4d869185b7d9"></a>
@@ -406,12 +413,12 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">int string_search::rabin_karp </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pat</em></span>&#160;)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>pat</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -425,30 +432,27 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>index of first occurrence of pattern </dd>
 <dd>
 -1 if pattern not found </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dce/rabin__karp_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../d6/dce/rabin__karp_8cpp_source.html">rabin_karp.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   83</span>                                                           {</div>
-<div class="line"><span class="lineno">   84</span>    int64_t pat_hash = <a class="code hl_function" href="#a8fb0bc932ba8b582c9f4c71338d050f8">create_hash</a>(pat, pat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>());</div>
-<div class="line"><span class="lineno">   85</span>    int64_t str_hash = <a class="code hl_function" href="#a8fb0bc932ba8b582c9f4c71338d050f8">create_hash</a>(str, pat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>());</div>
-<div class="line"><span class="lineno">   86</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= str.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>() - pat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>(); ++i) {</div>
+<div class="line"><span class="lineno">   84</span>    int64_t pat_hash = <a class="code hl_function" href="#a8fb0bc932ba8b582c9f4c71338d050f8">create_hash</a>(pat, pat.size());</div>
+<div class="line"><span class="lineno">   85</span>    int64_t str_hash = <a class="code hl_function" href="#a8fb0bc932ba8b582c9f4c71338d050f8">create_hash</a>(str, pat.size());</div>
+<div class="line"><span class="lineno">   86</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= str.size() - pat.size(); ++i) {</div>
 <div class="line"><span class="lineno">   87</span>        <span class="keywordflow">if</span> (pat_hash == str_hash &amp;&amp;</div>
-<div class="line"><span class="lineno">   88</span>            <a class="code hl_function" href="#aebe07cea289a13142503d98be7df11fd">check_if_equal</a>(str, pat, i, i + pat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>() - 1, 0,</div>
-<div class="line"><span class="lineno">   89</span>                           pat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>() - 1)) {</div>
+<div class="line"><span class="lineno">   88</span>            <a class="code hl_function" href="#aebe07cea289a13142503d98be7df11fd">check_if_equal</a>(str, pat, i, i + pat.size() - 1, 0,</div>
+<div class="line"><span class="lineno">   89</span>                           pat.size() - 1)) {</div>
 <div class="line"><span class="lineno">   90</span>            <span class="keywordflow">return</span> i;</div>
 <div class="line"><span class="lineno">   91</span>        }</div>
-<div class="line"><span class="lineno">   92</span>        <span class="keywordflow">if</span> (i &lt; str.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>() - pat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>()) {</div>
+<div class="line"><span class="lineno">   92</span>        <span class="keywordflow">if</span> (i &lt; str.size() - pat.size()) {</div>
 <div class="line"><span class="lineno">   93</span>            str_hash =</div>
-<div class="line"><span class="lineno">   94</span>                recalculate_hash(str, i, i + pat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>(), str_hash, pat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>());</div>
+<div class="line"><span class="lineno">   94</span>                recalculate_hash(str, i, i + pat.size(), str_hash, pat.size());</div>
 <div class="line"><span class="lineno">   95</span>        }</div>
 <div class="line"><span class="lineno">   96</span>    }</div>
 <div class="line"><span class="lineno">   97</span>    <span class="keywordflow">return</span> -1;  <span class="comment">// return -1 if given pattern not found</span></div>
 <div class="line"><span class="lineno">   98</span>}</div>
-<div class="ttc" id="anamespacestring__search_html_a8fb0bc932ba8b582c9f4c71338d050f8"><div class="ttname"><a href="#a8fb0bc932ba8b582c9f4c71338d050f8">string_search::create_hash</a></div><div class="ttdeci">int64_t create_hash(const std::string &amp;s, int n)</div><div class="ttdef"><b>Definition</b> rabin_karp.cpp:25</div></div>
-<div class="ttc" id="anamespacestring__search_html_aebe07cea289a13142503d98be7df11fd"><div class="ttname"><a href="#aebe07cea289a13142503d98be7df11fd">string_search::check_if_equal</a></div><div class="ttdeci">bool check_if_equal(const std::string &amp;str1, const std::string &amp;str2, int start1, int end1, int start2, int end2)</div><div class="ttdef"><b>Definition</b> rabin_karp.cpp:60</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d03/namespacestring__search_a21c673d56cbf67b1d2ee4d869185b7d9_cgraph.svg" width="432" height="200"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="anamespacestring__search_html_a8fb0bc932ba8b582c9f4c71338d050f8"><div class="ttname"><a href="#a8fb0bc932ba8b582c9f4c71338d050f8">string_search::create_hash</a></div><div class="ttdeci">int64_t create_hash(const std::string &amp;s, int n)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dce/rabin__karp_8cpp_source.html#l00025">rabin_karp.cpp:25</a></div></div>
+<div class="ttc" id="anamespacestring__search_html_aebe07cea289a13142503d98be7df11fd"><div class="ttname"><a href="#aebe07cea289a13142503d98be7df11fd">string_search::check_if_equal</a></div><div class="ttdeci">bool check_if_equal(const std::string &amp;str1, const std::string &amp;str2, int start1, int end1, int start2, int end2)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dce/rabin__karp_8cpp_source.html#l00060">rabin_karp.cpp:60</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aed769d565b705a9b3e0eb1ec74088893" name="aed769d565b705a9b3e0eb1ec74088893"></a>
@@ -460,7 +464,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">int64_t string_search::recalculate_hash </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -495,6 +499,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>new hash integer </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dce/rabin__karp_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../d6/dce/rabin__karp_8cpp_source.html">rabin_karp.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   43</span>                                                          {</div>
 <div class="line"><span class="lineno">   44</span>    int64_t new_hash = old_hash - s[old_index];</div>
 <div class="line"><span class="lineno">   45</span>    new_hash /= <a class="code hl_define" href="../../d6/dce/rabin__karp_8cpp.html#ac4add2a227a10511e0128d63952030e8">PRIME</a>;</div>

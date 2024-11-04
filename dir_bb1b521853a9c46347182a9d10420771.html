@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: sorting Directory Reference</title>
+<title>TheAlgorithms/C++: sorting Directory Reference</title>
+<link rel="icon" href="favicon.svg" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -110,87 +127,117 @@ $(function(){initNavTree('dir_bb1b521853a9c46347182a9d10420771.html',''); initRe
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="files" name="files"></a>
 Files</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d8/dcc/binary__insertion__sort_8cpp.html">binary_insertion_sort.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d5/d25/bead__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>bead_sort.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d8/dcc/binary__insertion__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d8/dcc/binary__insertion__sort_8cpp.html">binary_insertion_sort.cpp</a></td></tr>
 <tr class="memdesc:d8/dcc/binary__insertion__sort_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.wikipedia.org/wiki/Insertion_sort" target="_blank">Binary Insertion Sort Algorithm (Insertion Sort)</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d5/ddb/bogo__sort_8cpp.html">bogo_sort.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d8/d8f/bitonic__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>bitonic_sort.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d5/ddb/bogo__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d5/ddb/bogo__sort_8cpp.html">bogo_sort.cpp</a></td></tr>
 <tr class="memdesc:d5/ddb/bogo__sort_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a href="https://en.wikipedia.org/wiki/Bogosort" target="_blank">Bogosort algorithm</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d8/d13/bubble__sort_8cpp.html">bubble_sort.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d8/d13/bubble__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d8/d13/bubble__sort_8cpp.html">bubble_sort.cpp</a></td></tr>
 <tr class="memdesc:d8/d13/bubble__sort_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bubble sort algorithm. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d9/dfd/comb__sort_8cpp.html">comb_sort.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d3/dc1/bucket__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>bucket_sort.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d9/dd2/cocktail__selection__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>cocktail_selection_sort.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d9/dfd/comb__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d9/dfd/comb__sort_8cpp.html">comb_sort.cpp</a></td></tr>
 <tr class="memdesc:d9/dfd/comb__sort_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.wikipedia.org/wiki/Comb_sort" target="_blank">Comb Sort Algorithm (Comb Sort)</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d2/d26/count__inversions_8cpp.html">count_inversions.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d2/d26/count__inversions_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d2/d26/count__inversions_8cpp.html">count_inversions.cpp</a></td></tr>
 <tr class="memdesc:d2/d26/count__inversions_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counting Inversions using <a href="https://en.wikipedia.org/wiki/Merge_sort" target="_blank">Merge Sort</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="de/d07/cycle__sort_8cpp.html">cycle_sort.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d1/d40/counting__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>counting_sort.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="db/db2/counting__sort__string_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>counting_sort_string.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="de/d07/cycle__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="de/d07/cycle__sort_8cpp.html">cycle_sort.cpp</a></td></tr>
 <tr class="memdesc:de/d07/cycle__sort_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a href="https://en.wikipedia.org/wiki/Cycle_sort" target="_blank">Cycle sort</a> algorithm. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d6/d1a/dnf__sort_8cpp.html">dnf_sort.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d6/d1a/dnf__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d6/d1a/dnf__sort_8cpp.html">dnf_sort.cpp</a></td></tr>
 <tr class="memdesc:d6/d1a/dnf__sort_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the <a href="https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/" target="_blank">DNF sort</a> implementation. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d2/d21/gnome__sort_8cpp.html">gnome_sort.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d2/d21/gnome__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d2/d21/gnome__sort_8cpp.html">gnome_sort.cpp</a></td></tr>
 <tr class="memdesc:d2/d21/gnome__sort_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a href="https://en.wikipedia.org/wiki/Gnome_sort" target="_blank">gnome sort</a> algorithm. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d2/d52/heap__sort_8cpp.html">heap_sort.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d2/d52/heap__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d2/d52/heap__sort_8cpp.html">heap_sort.cpp</a></td></tr>
 <tr class="memdesc:d2/d52/heap__sort_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.wikipedia.org/wiki/Heapsort" target="_blank">Heap Sort Algorithm (heap sort)</a> implementation <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dd/d0d/insertion__sort_8cpp.html">insertion_sort.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="dd/d0d/insertion__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dd/d0d/insertion__sort_8cpp.html">insertion_sort.cpp</a></td></tr>
 <tr class="memdesc:dd/d0d/insertion__sort_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.wikipedia.org/wiki/Insertion_sort" target="_blank">Insertion Sort Algorithm (Insertion Sort)</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dd/d89/insertion__sort__recursive_8cpp.html">insertion_sort_recursive.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="dd/d89/insertion__sort__recursive_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dd/d89/insertion__sort__recursive_8cpp.html">insertion_sort_recursive.cpp</a></td></tr>
 <tr class="memdesc:dd/d89/insertion__sort__recursive_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insertion Sort Algorithm. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="de/d7b/merge__insertion__sort_8cpp.html">merge_insertion_sort.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d6/d74/library__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>library_sort.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="de/d7b/merge__insertion__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="de/d7b/merge__insertion__sort_8cpp.html">merge_insertion_sort.cpp</a></td></tr>
 <tr class="memdesc:de/d7b/merge__insertion__sort_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Algorithm that combines insertion sort and merge sort. <a href="https://en.wikipedia.org/wiki/Merge-insertion_sort" target="_blank">Wiki link</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d5/df4/merge__sort_8cpp.html">merge_sort.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d5/df4/merge__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d5/df4/merge__sort_8cpp.html">merge_sort.cpp</a></td></tr>
 <tr class="memdesc:d5/df4/merge__sort_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.wikipedia.org/wiki/Merge_sort" target="_blank">Merege Sort Algorithm (MEREGE SORT)</a> implementation <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d0/db6/non__recursive__merge__sort_8cpp.html">non_recursive_merge_sort.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d0/db6/non__recursive__merge__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d0/db6/non__recursive__merge__sort_8cpp.html">non_recursive_merge_sort.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d3/d92/pancake__sort_8cpp.html">pancake_sort.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="db/de3/numeric__string__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>numeric_string_sort.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d6/da9/odd__even__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>odd_even_sort.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d3/d92/pancake__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d3/d92/pancake__sort_8cpp.html">pancake_sort.cpp</a></td></tr>
 <tr class="memdesc:d3/d92/pancake__sort_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">pancake sort sorts a disordered stack of pancakes by flipping any number of pancakes using a spatula using minimum number of flips. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dd/da8/pigeonhole__sort_8cpp.html">pigeonhole_sort.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="dd/da8/pigeonhole__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dd/da8/pigeonhole__sort_8cpp.html">pigeonhole_sort.cpp</a></td></tr>
 <tr class="memdesc:dd/da8/pigeonhole__sort_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of [Pigeonhole Sort algorithm] (<a href="https://en.wikipedia.org/wiki/Pigeonhole_sort">https://en.wikipedia.org/wiki/Pigeonhole_sort</a>) <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d1/d21/quick__sort_8cpp.html">quick_sort.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d1/d21/quick__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d1/d21/quick__sort_8cpp.html">quick_sort.cpp</a></td></tr>
 <tr class="memdesc:d1/d21/quick__sort_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.wikipedia.org/wiki/Quicksort" target="_blank">Quick sort implementation</a> in C++ <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d3/d4c/quick__sort__3_8cpp.html">quick_sort_3.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d3/d4c/quick__sort__3_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d3/d4c/quick__sort__3_8cpp.html">quick_sort_3.cpp</a></td></tr>
 <tr class="memdesc:d3/d4c/quick__sort__3_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation Details. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d3/d22/quick__sort__iterative_8cpp.html">quick_sort_iterative.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d3/d22/quick__sort__iterative_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d3/d22/quick__sort__iterative_8cpp.html">quick_sort_iterative.cpp</a></td></tr>
 <tr class="memdesc:d3/d22/quick__sort__iterative_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quick Sort without recursion. This method uses the stack instead. Both recursive and iterative implementations have O(n log n) best case and O(n^2) worst case. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d8/d61/radix__sort2_8cpp.html">radix_sort2.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d8/d7c/radix__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>radix_sort.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d8/d61/radix__sort2_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d8/d61/radix__sort2_8cpp.html">radix_sort2.cpp</a></td></tr>
 <tr class="memdesc:d8/d61/radix__sort2_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Algorithm of <a href="https://en.wikipedia.org/wiki/Radix_sort" target="_blank">Radix sort</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d1/daa/random__pivot__quick__sort_8cpp.html">random_pivot_quick_sort.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d1/daa/random__pivot__quick__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d1/daa/random__pivot__quick__sort_8cpp.html">random_pivot_quick_sort.cpp</a></td></tr>
 <tr class="memdesc:d1/daa/random__pivot__quick__sort_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the <a href="https://www.sanfoundry.com/cpp-program-implement-quick-sort-using-randomisation" target="_blank">Random Pivot Quick Sort</a> algorithm. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d3/df9/recursive__bubble__sort_8cpp.html">recursive_bubble_sort.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d3/df9/recursive__bubble__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d3/df9/recursive__bubble__sort_8cpp.html">recursive_bubble_sort.cpp</a></td></tr>
 <tr class="memdesc:d3/df9/recursive__bubble__sort_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an implementation of a recursive version of the <a href="https://www.geeksforgeeks.org/recursive-bubble-sort/" target="_blank">Bubble sort algorithm</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d4/d9f/selection__sort__recursive_8cpp.html">selection_sort_recursive.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d9/d85/selection__sort__iterative_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>selection_sort_iterative.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d4/d9f/selection__sort__recursive_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d4/d9f/selection__sort__recursive_8cpp.html">selection_sort_recursive.cpp</a></td></tr>
 <tr class="memdesc:d4/d9f/selection__sort__recursive_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the <a href="https://en.wikipedia.org/wiki/Selection_sort" target="_blank">Selection sort</a> implementation using recursion. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d4/d7a/shell__sort2_8cpp.html">shell_sort2.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="de/d40/shell__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>shell_sort.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d4/d7a/shell__sort2_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d4/d7a/shell__sort2_8cpp.html">shell_sort2.cpp</a></td></tr>
 <tr class="memdesc:d4/d7a/shell__sort2_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.wikipedia.org/wiki/Shell_sort" target="_blank">Shell sort</a> algorithm <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d4/d4f/stooge__sort_8cpp.html">stooge_sort.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="db/db5/slow__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>slow_sort.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d4/d4f/stooge__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d4/d4f/stooge__sort_8cpp.html">stooge_sort.cpp</a></td></tr>
 <tr class="memdesc:d4/d4f/stooge__sort_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.wikipedia.org/wiki/Stooge_sort" target="_blank">Stooge sort implementation</a> in C++ <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dc/dd9/strand__sort_8cpp.html">strand_sort.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="dc/dd9/strand__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dc/dd9/strand__sort_8cpp.html">strand_sort.cpp</a></td></tr>
 <tr class="memdesc:dc/dd9/strand__sort_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a href="https://en.wikipedia.org/wiki/Strand_sort" target="_blank">Strand Sort</a> algorithm. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="db/d3f/wave__sort_8cpp.html">wave_sort.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="dd/dd5/swap__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>swap_sort.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d5/d1e/tim__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>tim_sort.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="db/d3f/wave__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="db/d3f/wave__sort_8cpp.html">wave_sort.cpp</a></td></tr>
 <tr class="memdesc:db/d3f/wave__sort_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the <a href="https://www.geeksforgeeks.org/sort-array-wave-form-2/" target="_blank">Wave sort</a> algorithm. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d1/dcc/wiggle__sort_8cpp.html">wiggle_sort.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d1/dcc/wiggle__sort_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d1/dcc/wiggle__sort_8cpp.html">wiggle_sort.cpp</a></td></tr>
 <tr class="memdesc:d1/dcc/wiggle__sort_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Wiggle Sort Algorithm] (<a href="https://leetcode.com/problems/wiggle-sort-ii/">https://leetcode.com/problems/wiggle-sort-ii/</a>) Implementation <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

@@ -3,6 +3,7 @@ var dir_c11585dfcef32a26e29098facab6c144 =
     [ "generate_parentheses.cpp", "dd/d1e/generate__parentheses_8cpp.html", "dd/d1e/generate__parentheses_8cpp" ],
     [ "graph_coloring.cpp", "d3/d40/graph__coloring_8cpp.html", "d3/d40/graph__coloring_8cpp" ],
     [ "knight_tour.cpp", "d1/d2a/knight__tour_8cpp.html", "d1/d2a/knight__tour_8cpp" ],
+    [ "magic_sequence.cpp", "d7/d37/magic__sequence_8cpp_source.html", null ],
     [ "minimax.cpp", "df/dfb/minimax_8cpp.html", "df/dfb/minimax_8cpp" ],
     [ "n_queens.cpp", "d4/d3e/n__queens_8cpp.html", "d4/d3e/n__queens_8cpp" ],
     [ "n_queens_all_solution_optimised.cpp", "da/dac/n__queens__all__solution__optimised_8cpp.html", "da/dac/n__queens__all__solution__optimised_8cpp" ],

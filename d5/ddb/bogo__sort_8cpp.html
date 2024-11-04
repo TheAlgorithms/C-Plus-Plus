@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: sorting/bogo_sort.cpp File Reference</title>
+<title>TheAlgorithms/C++: sorting/bogo_sort.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -123,7 +140,9 @@ Include dependency graph for bogo_sort.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../de/df7/bogo__sort_8cpp__incl.svg" width="432" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d5/ddb/bogo__sort_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html">sorting</a></td></tr>
@@ -133,13 +152,13 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a7bfe11bd4703eacd1dab93f25ec639c5" id="r_a7bfe11bd4703eacd1dab93f25ec639c5"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
-<tr class="memitem:a7bfe11bd4703eacd1dab93f25ec639c5"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a7bfe11bd4703eacd1dab93f25ec639c5">sorting::shuffle</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt; arr)</td></tr>
+<tr class="memitem:a7bfe11bd4703eacd1dab93f25ec639c5"><td class="memTemplItemLeft" align="right" valign="top">std::array&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a7bfe11bd4703eacd1dab93f25ec639c5">sorting::shuffle</a> (std::array&lt; T, N &gt; arr)</td></tr>
 <tr class="separator:a7bfe11bd4703eacd1dab93f25ec639c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affc6ee160142cd017f8c4b213437d0fd" id="r_affc6ee160142cd017f8c4b213437d0fd"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
-<tr class="memitem:affc6ee160142cd017f8c4b213437d0fd"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#affc6ee160142cd017f8c4b213437d0fd">sorting::randomized_bogosort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt; arr)</td></tr>
+<tr class="memitem:affc6ee160142cd017f8c4b213437d0fd"><td class="memTemplItemLeft" align="right" valign="top">std::array&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#affc6ee160142cd017f8c4b213437d0fd">sorting::randomized_bogosort</a> (std::array&lt; T, N &gt; arr)</td></tr>
 <tr class="separator:affc6ee160142cd017f8c4b213437d0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8adaeff66471f9ed84f2e673b38a859" id="r_ae8adaeff66471f9ed84f2e673b38a859"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
-<tr class="memitem:ae8adaeff66471f9ed84f2e673b38a859"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae8adaeff66471f9ed84f2e673b38a859">show_array</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt; &amp;arr)</td></tr>
+<tr class="memitem:ae8adaeff66471f9ed84f2e673b38a859"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae8adaeff66471f9ed84f2e673b38a859">show_array</a> (const std::array&lt; T, N &gt; &amp;arr)</td></tr>
 <tr class="separator:ae8adaeff66471f9ed84f2e673b38a859"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1a3968e7947464bee7714f6d43b7002" id="r_ae1a3968e7947464bee7714f6d43b7002"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1a3968e7947464bee7714f6d43b7002">test</a> ()</td></tr>
 <tr class="separator:ae1a3968e7947464bee7714f6d43b7002"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,6 +172,8 @@ Functions</h2></td></tr>
 Algorithm</h3>
 <p>Shuffle the array untill array is sorted.</p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/imdeep2905" target="_blank">Deep Raval</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d5/ddb/bogo__sort_8cpp_source.html">bogo_sort.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -169,28 +190,24 @@ Algorithm</h3>
       </table>
 </div><div class="memdoc">
 <p>Driver Code </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/ddb/bogo__sort_8cpp_source.html#l00107">107</a> of file <a class="el" href="../../d5/ddb/bogo__sort_8cpp_source.html">bogo_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  107</span>           {</div>
 <div class="line"><span class="lineno">  108</span>    <span class="comment">// Testing</span></div>
 <div class="line"><span class="lineno">  109</span>    <a class="code hl_function" href="#ae1a3968e7947464bee7714f6d43b7002">test</a>();</div>
 <div class="line"><span class="lineno">  110</span>    <span class="comment">// Example Usage</span></div>
 <div class="line"><span class="lineno">  111</span>    std::array &lt;int, 5&gt; arr = {3, 7, 10, 4, 1}; <span class="comment">// Defining array which we want to sort</span></div>
-<div class="line"><span class="lineno">  112</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Original Array : &quot;</span>;</div>
+<div class="line"><span class="lineno">  112</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Original Array : &quot;</span>;</div>
 <div class="line"><span class="lineno">  113</span>    <a class="code hl_function" href="#ae8adaeff66471f9ed84f2e673b38a859">show_array</a>(arr);</div>
 <div class="line"><span class="lineno">  114</span>    arr = <a class="code hl_function" href="../../d5/d91/namespacesorting.html#affc6ee160142cd017f8c4b213437d0fd">sorting::randomized_bogosort</a>(arr); <span class="comment">// Callling bogo sort on it</span></div>
-<div class="line"><span class="lineno">  115</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sorted Array : &quot;</span>;</div>
+<div class="line"><span class="lineno">  115</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Sorted Array : &quot;</span>;</div>
 <div class="line"><span class="lineno">  116</span>    <a class="code hl_function" href="#ae8adaeff66471f9ed84f2e673b38a859">show_array</a>(arr); <span class="comment">// Printing sorted array</span></div>
 <div class="line"><span class="lineno">  117</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  118</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="abogo__sort_8cpp_html_ae1a3968e7947464bee7714f6d43b7002"><div class="ttname"><a href="#ae1a3968e7947464bee7714f6d43b7002">test</a></div><div class="ttdeci">void test()</div><div class="ttdef"><b>Definition</b> bogo_sort.cpp:81</div></div>
-<div class="ttc" id="abogo__sort_8cpp_html_ae8adaeff66471f9ed84f2e673b38a859"><div class="ttname"><a href="#ae8adaeff66471f9ed84f2e673b38a859">show_array</a></div><div class="ttdeci">void show_array(const std::array&lt; T, N &gt; &amp;arr)</div><div class="ttdef"><b>Definition</b> bogo_sort.cpp:71</div></div>
-<div class="ttc" id="anamespacesorting_html_affc6ee160142cd017f8c4b213437d0fd"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#affc6ee160142cd017f8c4b213437d0fd">sorting::randomized_bogosort</a></div><div class="ttdeci">std::array&lt; T, N &gt; randomized_bogosort(std::array&lt; T, N &gt; arr)</div><div class="ttdef"><b>Definition</b> bogo_sort.cpp:52</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/ddb/bogo__sort_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="499" height="298"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="abogo__sort_8cpp_html_ae1a3968e7947464bee7714f6d43b7002"><div class="ttname"><a href="#ae1a3968e7947464bee7714f6d43b7002">test</a></div><div class="ttdeci">void test()</div><div class="ttdef"><b>Definition</b> <a href="../../d5/ddb/bogo__sort_8cpp_source.html#l00081">bogo_sort.cpp:81</a></div></div>
+<div class="ttc" id="abogo__sort_8cpp_html_ae8adaeff66471f9ed84f2e673b38a859"><div class="ttname"><a href="#ae8adaeff66471f9ed84f2e673b38a859">show_array</a></div><div class="ttdeci">void show_array(const std::array&lt; T, N &gt; &amp;arr)</div><div class="ttdef"><b>Definition</b> <a href="../../d5/ddb/bogo__sort_8cpp_source.html#l00071">bogo_sort.cpp:71</a></div></div>
+<div class="ttc" id="anamespacesorting_html_affc6ee160142cd017f8c4b213437d0fd"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#affc6ee160142cd017f8c4b213437d0fd">sorting::randomized_bogosort</a></div><div class="ttdeci">std::array&lt; T, N &gt; randomized_bogosort(std::array&lt; T, N &gt; arr)</div><div class="ttdef"><b>Definition</b> <a href="../../d5/ddb/bogo__sort_8cpp_source.html#l00052">bogo_sort.cpp:52</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae8adaeff66471f9ed84f2e673b38a859" name="ae8adaeff66471f9ed84f2e673b38a859"></a>
@@ -204,7 +221,7 @@ template&lt;typename T , size_t N&gt; </div>
         <tr>
           <td class="memname">void show_array </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span></td><td>)</td>
+          <td class="paramtype">const std::array&lt; T, N &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -222,11 +239,13 @@ template&lt;typename T , size_t N&gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/ddb/bogo__sort_8cpp_source.html#l00071">71</a> of file <a class="el" href="../../d5/ddb/bogo__sort_8cpp_source.html">bogo_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   71</span>                                             {</div>
 <div class="line"><span class="lineno">   72</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x : arr) {</div>
-<div class="line"><span class="lineno">   73</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; x &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><span class="lineno">   73</span>        std::cout &lt;&lt; x &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line"><span class="lineno">   74</span>    }</div>
-<div class="line"><span class="lineno">   75</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">   75</span>    std::cout &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"><span class="lineno">   76</span>}</div>
 </div><!-- fragment -->
 </div>
@@ -246,38 +265,33 @@ template&lt;typename T , size_t N&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Function to test above algorithm </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/ddb/bogo__sort_8cpp_source.html#l00081">81</a> of file <a class="el" href="../../d5/ddb/bogo__sort_8cpp_source.html">bogo_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   81</span>            {</div>
 <div class="line"><span class="lineno">   82</span>    <span class="comment">// Test 1</span></div>
 <div class="line"><span class="lineno">   83</span>    std::array &lt;int, 5&gt; arr1;</div>
 <div class="line"><span class="lineno">   84</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> &amp;x : arr1) {</div>
-<div class="line"><span class="lineno">   85</span>        x = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100;</div>
+<div class="line"><span class="lineno">   85</span>        x = std::rand() % 100;</div>
 <div class="line"><span class="lineno">   86</span>    }</div>
-<div class="line"><span class="lineno">   87</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Original Array : &quot;</span>;</div>
+<div class="line"><span class="lineno">   87</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Original Array : &quot;</span>;</div>
 <div class="line"><span class="lineno">   88</span>    <a class="code hl_function" href="#ae8adaeff66471f9ed84f2e673b38a859">show_array</a>(arr1);</div>
 <div class="line"><span class="lineno">   89</span>    arr1 = <a class="code hl_function" href="../../d5/d91/namespacesorting.html#affc6ee160142cd017f8c4b213437d0fd">sorting::randomized_bogosort</a>(arr1);</div>
-<div class="line"><span class="lineno">   90</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sorted Array : &quot;</span>;</div>
+<div class="line"><span class="lineno">   90</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Sorted Array : &quot;</span>;</div>
 <div class="line"><span class="lineno">   91</span>    <a class="code hl_function" href="#ae8adaeff66471f9ed84f2e673b38a859">show_array</a>(arr1);</div>
-<div class="line"><span class="lineno">   92</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(arr1.begin(), arr1.end()));</div>
+<div class="line"><span class="lineno">   92</span>    assert(std::is_sorted(arr1.begin(), arr1.end()));</div>
 <div class="line"><span class="lineno">   93</span>    <span class="comment">// Test 2</span></div>
 <div class="line"><span class="lineno">   94</span>    std::array &lt;int, 5&gt; arr2;</div>
 <div class="line"><span class="lineno">   95</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> &amp;x : arr2) {</div>
-<div class="line"><span class="lineno">   96</span>        x = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100;</div>
+<div class="line"><span class="lineno">   96</span>        x = std::rand() % 100;</div>
 <div class="line"><span class="lineno">   97</span>    }</div>
-<div class="line"><span class="lineno">   98</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Original Array : &quot;</span>;</div>
+<div class="line"><span class="lineno">   98</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Original Array : &quot;</span>;</div>
 <div class="line"><span class="lineno">   99</span>    <a class="code hl_function" href="#ae8adaeff66471f9ed84f2e673b38a859">show_array</a>(arr2);</div>
 <div class="line"><span class="lineno">  100</span>    arr2 = <a class="code hl_function" href="../../d5/d91/namespacesorting.html#affc6ee160142cd017f8c4b213437d0fd">sorting::randomized_bogosort</a>(arr2);</div>
-<div class="line"><span class="lineno">  101</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sorted Array : &quot;</span>;</div>
+<div class="line"><span class="lineno">  101</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Sorted Array : &quot;</span>;</div>
 <div class="line"><span class="lineno">  102</span>    <a class="code hl_function" href="#ae8adaeff66471f9ed84f2e673b38a859">show_array</a>(arr2);</div>
-<div class="line"><span class="lineno">  103</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(arr2.begin(), arr2.end()));</div>
+<div class="line"><span class="lineno">  103</span>    assert(std::is_sorted(arr2.begin(), arr2.end()));</div>
 <div class="line"><span class="lineno">  104</span>}</div>
-<div class="ttc" id="ais_sorted_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></div><div class="ttdeci">T is_sorted(T... args)</div></div>
-<div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/ddb/bogo__sort_8cpp_ae1a3968e7947464bee7714f6d43b7002_cgraph.svg" width="402" height="299"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

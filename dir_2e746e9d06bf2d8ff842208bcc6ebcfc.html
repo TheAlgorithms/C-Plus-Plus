@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: data_structures Directory Reference</title>
+<title>TheAlgorithms/C++: data_structures Directory Reference</title>
+<link rel="icon" href="favicon.svg" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -115,77 +132,105 @@ Directories</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="files" name="files"></a>
 Files</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d8/dee/avltree_8cpp.html">avltree.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d8/dee/avltree_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d8/dee/avltree_8cpp.html">avltree.cpp</a></td></tr>
 <tr class="memdesc:d8/dee/avltree_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple tree implementation using nodes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d3/d26/binary__search__tree_8cpp.html">binary_search_tree.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d3/d26/binary__search__tree_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d3/d26/binary__search__tree_8cpp.html">binary_search_tree.cpp</a></td></tr>
 <tr class="memdesc:d3/d26/binary__search__tree_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple tree implementation using structured nodes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="df/d42/binary__search__tree2_8cpp.html">binary_search_tree2.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="df/d42/binary__search__tree2_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="df/d42/binary__search__tree2_8cpp.html">binary_search_tree2.cpp</a></td></tr>
 <tr class="memdesc:df/d42/binary__search__tree2_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">A generic <a href="https://en.wikipedia.org/wiki/Binary_search_tree" target="_blank">binary search tree</a> implementation. Here you can find more information about the algorithm: <a href="https://www.scaler.com/topics/data-structures/binary-search-tree/" target="_blank">Scaler - Binary Search tree</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="de/dc3/binaryheap_8cpp.html">binaryheap.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="de/dc3/binaryheap_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="de/dc3/binaryheap_8cpp.html">binaryheap.cpp</a></td></tr>
 <tr class="memdesc:de/dc3/binaryheap_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">A C++ program to demonstrate common Binary Heap Operations. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d9/dab/bloom__filter_8cpp.html">bloom_filter.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d9/dab/bloom__filter_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d9/dab/bloom__filter_8cpp.html">bloom_filter.cpp</a></td></tr>
 <tr class="memdesc:d9/dab/bloom__filter_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.wikipedia.org/wiki/Bloom_filter" target="_blank">Bloom Filter</a> generic implementation in C++ <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="de/d23/disjoint__set_8cpp.html">disjoint_set.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d9/dfd/circular__queue__using__linked__list_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>circular_queue_using_linked_list.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="de/d23/disjoint__set_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="de/d23/disjoint__set_8cpp.html">disjoint_set.cpp</a></td></tr>
 <tr class="memdesc:de/d23/disjoint__set_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.wikipedia.org/wiki/Disjoint-set_data_structure" target="_blank">Disjoint Sets Data Structure (Disjoint Sets)</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d3/dae/dsu__path__compression_8cpp.html">dsu_path_compression.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d7/d85/doubly__linked__list_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>doubly_linked_list.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d3/dae/dsu__path__compression_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d3/dae/dsu__path__compression_8cpp.html">dsu_path_compression.cpp</a></td></tr>
 <tr class="memdesc:d3/dae/dsu__path__compression_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.wikipedia.org/wiki/Disjoint-set-data_structure" target="_blank">DSU (Disjoint sets)</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="df/d28/dsu__union__rank_8cpp.html">dsu_union_rank.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="df/d28/dsu__union__rank_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="df/d28/dsu__union__rank_8cpp.html">dsu_union_rank.cpp</a></td></tr>
 <tr class="memdesc:df/d28/dsu__union__rank_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.wikipedia.org/wiki/Disjoint-set-data_structure" target="_blank">DSU (Disjoint sets)</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="da/dc3/linked__list_8cpp.html">linked_list.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="da/dc3/linked__list_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="da/dc3/linked__list_8cpp.html">linked_list.cpp</a></td></tr>
 <tr class="memdesc:da/dc3/linked__list_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of singly linked list algorithm. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d3/dce/linkedlist__implentation__usingarray_8cpp.html">linkedlist_implentation_usingarray.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d3/dce/linkedlist__implentation__usingarray_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d3/dce/linkedlist__implentation__usingarray_8cpp.html">linkedlist_implentation_usingarray.cpp</a></td></tr>
 <tr class="memdesc:d3/dce/linkedlist__implentation__usingarray_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linked list implementation using Arrays. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d7/d00/list__array_8cpp.html">list_array.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d7/d00/list__array_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d7/d00/list__array_8cpp.html">list_array.cpp</a></td></tr>
 <tr class="memdesc:d7/d00/list__array_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.wikipedia.org/wiki/Dynamic_array" target="_blank">Dynamic Array</a> <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d5/dc5/morrisinorder_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>morrisinorder.cpp</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d3/d09/node_8hpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d3/d09/node_8hpp.html">node.hpp</a></td></tr>
 <tr class="memdesc:d3/d09/node_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="db/d8b/struct_node.html">Node</a> class and related utilities. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d7/ded/queue_8hpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>queue.hpp</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d8/df0/queue__using__array_8cpp.html">queue_using_array.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d8/df0/queue__using__array_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d8/df0/queue__using__array_8cpp.html">queue_using_array.cpp</a></td></tr>
 <tr class="memdesc:d8/df0/queue__using__array_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of Linear [<a class="el" href="dc/db5/struct_queue.html">Queue</a> using array] (<a href="https://www.geeksforgeeks.org/array-implementation-of-queue-simple/">https://www.geeksforgeeks.org/array-implementation-of-queue-simple/</a>). <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="df/dd0/queue__using__two__stacks_8cpp.html">queue_using_two_stacks.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="df/da7/queue__using__array2_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>queue_using_array2.cpp</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d6/d05/reverse__a__linked__list_8cpp.html">reverse_a_linked_list.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d8/db7/queue__using__linked__list_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>queue_using_linked_list.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="de/d5b/queue__using__linkedlist_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>queue_using_linkedlist.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="df/dd0/queue__using__two__stacks_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="df/dd0/queue__using__two__stacks_8cpp.html">queue_using_two_stacks.cpp</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d9/dad/rb__tree_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>rb_tree.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d6/d05/reverse__a__linked__list_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d6/d05/reverse__a__linked__list_8cpp.html">reverse_a_linked_list.cpp</a></td></tr>
 <tr class="memdesc:d6/d05/reverse__a__linked__list_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a href="https://simple.wikipedia.org/wiki/Linked_list" target="_blank">Reversing a single linked list</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="de/dd1/segment__tree_8cpp.html">segment_tree.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="de/dd1/segment__tree_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="de/dd1/segment__tree_8cpp.html">segment_tree.cpp</a></td></tr>
 <tr class="memdesc:de/dd1/segment__tree_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">A data structure to quickly do operations on ranges: the <a href="https://en.wikipedia.org/wiki/Segment_tree" target="_blank">Segment Tree</a> algorithm implementation. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d0/d5a/skip__list_8cpp.html">skip_list.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d0/d5a/skip__list_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d0/d5a/skip__list_8cpp.html">skip_list.cpp</a></td></tr>
 <tr class="memdesc:d0/d5a/skip__list_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data structure for fast searching and insertion in \(O(\log n)\) time. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d8/dab/sparse__table_8cpp.html">sparse_table.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d8/dab/sparse__table_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d8/dab/sparse__table_8cpp.html">sparse_table.cpp</a></td></tr>
 <tr class="memdesc:d8/dab/sparse__table_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a href="https://brilliant.org/wiki/sparse-table/" target="_blank">Sparse Table</a> for <code>min()</code> function. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="df/d47/stack_8hpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="df/d47/stack_8hpp.html">stack.hpp</a></td></tr>
 <tr class="memdesc:df/d47/stack_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class specifies the basic operation on a stack as a linked list. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d0/dd2/treap_8cpp.html">treap.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d8/d96/stack__using__array_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>stack_using_array.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d3/dea/stack__using__linked__list_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>stack_using_linked_list.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d7/d43/stack__using__queue_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>stack_using_queue.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d8/dce/test__queue_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>test_queue.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d9/dbf/test__stack_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>test_stack.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="db/dbd/test__stack__students_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>test_stack_students.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d0/dd2/treap_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d0/dd2/treap_8cpp.html">treap.cpp</a></td></tr>
 <tr class="memdesc:d0/dd2/treap_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">A balanced binary search tree (BST) on the basis of binary search tree and heap: the <a href="https://en.wikipedia.org/wiki/Treap" target="_blank">Treap</a> algorithm implementation. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="db/dbc/tree__234_8cpp.html">tree_234.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d1/d12/tree_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>tree.cpp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="db/dbc/tree__234_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="db/dbc/tree__234_8cpp.html">tree_234.cpp</a></td></tr>
 <tr class="memdesc:db/dbc/tree__234_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">A demo 2-3-4 tree implementation. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dc/d93/trie__modern_8cpp.html">trie_modern.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="dc/d93/trie__modern_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dc/d93/trie__modern_8cpp.html">trie_modern.cpp</a></td></tr>
 <tr class="memdesc:dc/d93/trie__modern_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">A basic implementation of trie class to store only lower-case strings. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d7/d83/trie__tree_8cpp.html">trie_tree.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d7/d83/trie__tree_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d7/d83/trie__tree_8cpp.html">trie_tree.cpp</a></td></tr>
 <tr class="memdesc:d7/d83/trie__tree_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a href="https://en.wikipedia.org/wiki/Trie" target="_blank">Trie</a> data structure for English alphabets in small characters. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d5/d8a/trie__using__hashmap_8cpp.html">trie_using_hashmap.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d5/d8a/trie__using__hashmap_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d5/d8a/trie__using__hashmap_8cpp.html">trie_using_hashmap.cpp</a></td></tr>
 <tr class="memdesc:d5/d8a/trie__using__hashmap_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a href="https://en.wikipedia.org/wiki/Trie" target="_blank">Trie</a> data structure using HashMap for different characters and method for predicting words based on prefix. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

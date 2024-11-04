@@ -1,6 +1,0 @@
-<map id="binary_search_tree::get_elements_postorder" name="binary_search_tree::get_elements_postorder">
-<area shape="rect" id="Node000001" title="Get all values of the BST in post&#45;order order." alt="" coords="5,29,174,70"/>
-<area shape="rect" id="Node000002" href="$d9/dde/classbinary__search__tree.html#a87c0a35845d27e0f6fc1f4eaa0333362" title="Recursive function to traverse the tree in post&#45;order order." alt="" coords="222,29,359,70"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,47,206,47,206,52,174,52"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="252,29,250,19,257,10,270,5,290,3,312,5,325,11,323,16,311,10,290,8,271,10,260,15,255,20,257,28"/>
-</map>

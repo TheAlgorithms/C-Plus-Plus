@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: backtracking/n_queens_all_solution_optimised.cpp File Reference</title>
+<title>TheAlgorithms/C++: backtracking/n_queens_all_solution_optimised.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -120,7 +137,9 @@ Include dependency graph for n_queens_all_solution_optimised.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d0f/n__queens__all__solution__optimised_8cpp__incl.svg" width="192" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../da/dac/n__queens__all__solution__optimised_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc0/namespacebacktracking.html">backtracking</a></td></tr>
@@ -133,13 +152,13 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a04090463be4942a69ea91fe7386da905" id="r_a04090463be4942a69ea91fe7386da905"><td class="memTemplParams" colspan="2">template&lt;size_t n&gt; </td></tr>
-<tr class="memitem:a04090463be4942a69ea91fe7386da905"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a04090463be4942a69ea91fe7386da905">backtracking::n_queens_optimized::PrintSol</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, n &gt;, n &gt; &amp;board)</td></tr>
+<tr class="memitem:a04090463be4942a69ea91fe7386da905"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a04090463be4942a69ea91fe7386da905">backtracking::n_queens_optimized::PrintSol</a> (const std::array&lt; std::array&lt; int, n &gt;, n &gt; &amp;board)</td></tr>
 <tr class="separator:a04090463be4942a69ea91fe7386da905"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e48455584a4faa33e83dd1891efd9b9" id="r_a9e48455584a4faa33e83dd1891efd9b9"><td class="memTemplParams" colspan="2">template&lt;size_t n&gt; </td></tr>
-<tr class="memitem:a9e48455584a4faa33e83dd1891efd9b9"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a9e48455584a4faa33e83dd1891efd9b9">backtracking::n_queens_optimized::CanIMove</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, n &gt;, n &gt; &amp;board, int row, int col)</td></tr>
+<tr class="memitem:a9e48455584a4faa33e83dd1891efd9b9"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a9e48455584a4faa33e83dd1891efd9b9">backtracking::n_queens_optimized::CanIMove</a> (const std::array&lt; std::array&lt; int, n &gt;, n &gt; &amp;board, int row, int col)</td></tr>
 <tr class="separator:a9e48455584a4faa33e83dd1891efd9b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23c0547e4fd1708e6fb643b08327a60f" id="r_a23c0547e4fd1708e6fb643b08327a60f"><td class="memTemplParams" colspan="2">template&lt;size_t n&gt; </td></tr>
-<tr class="memitem:a23c0547e4fd1708e6fb643b08327a60f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a23c0547e4fd1708e6fb643b08327a60f">backtracking::n_queens_optimized::NQueenSol</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, n &gt;, n &gt; board, int col)</td></tr>
+<tr class="memitem:a23c0547e4fd1708e6fb643b08327a60f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a23c0547e4fd1708e6fb643b08327a60f">backtracking::n_queens_optimized::NQueenSol</a> (std::array&lt; std::array&lt; int, n &gt;, n &gt; board, int col)</td></tr>
 <tr class="separator:a23c0547e4fd1708e6fb643b08327a60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <br /></td></tr>
@@ -150,6 +169,8 @@ Functions</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/deadshotsb" target="_blank">Sombit Bose</a> </dd>
 <dd>
 <a href="https://github.com/Panquesito7" target="_blank">David Leal</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../da/dac/n__queens__all__solution__optimised_8cpp_source.html">n_queens_all_solution_optimised.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a9e48455584a4faa33e83dd1891efd9b9" name="a9e48455584a4faa33e83dd1891efd9b9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e48455584a4faa33e83dd1891efd9b9">&#9670;&#160;</a></span>CanIMove()</h2>
@@ -162,7 +183,7 @@ template&lt;size_t n&gt; </div>
         <tr>
           <td class="memname">bool backtracking::n_queens_optimized::CanIMove </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, n &gt;, n &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>board</em></span>, </td>
+          <td class="paramtype">const std::array&lt; std::array&lt; int, n &gt;, n &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>board</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -196,33 +217,27 @@ template&lt;size_t n&gt; </div>
 <p>check in the row</p>
 <p>check the first diagonal</p>
 <p>check the second diagonal</p>
-<div class="fragment"><div class="line"><span class="lineno">   60</span>                       {<span class="comment"></span></div>
-<div class="line"><span class="lineno">   61</span><span class="comment">    /// check in the row</span></div>
-<div class="line"><span class="lineno">   62</span><span class="comment"></span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= col; i++) {</div>
+
+<p class="definition">Definition at line <a class="el" href="../../da/dac/n__queens__all__solution__optimised_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../da/dac/n__queens__all__solution__optimised_8cpp_source.html">n_queens_all_solution_optimised.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   60</span>                       {</div>
+<div class="line"><span class="lineno">   62</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= col; i++) {</div>
 <div class="line"><span class="lineno">   63</span>        <span class="keywordflow">if</span> (board[row][i] == 1) {</div>
 <div class="line"><span class="lineno">   64</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   65</span>        }</div>
-<div class="line"><span class="lineno">   66</span>    }<span class="comment"></span></div>
-<div class="line"><span class="lineno">   67</span><span class="comment">    /// check the first diagonal</span></div>
-<div class="line"><span class="lineno">   68</span><span class="comment"></span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = row, j = col; i &gt;= 0 &amp;&amp; j &gt;= 0; i--, j--) {</div>
+<div class="line"><span class="lineno">   66</span>    }</div>
+<div class="line"><span class="lineno">   68</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = row, j = col; i &gt;= 0 &amp;&amp; j &gt;= 0; i--, j--) {</div>
 <div class="line"><span class="lineno">   69</span>        <span class="keywordflow">if</span> (board[i][j] == 1) {</div>
 <div class="line"><span class="lineno">   70</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   71</span>        }</div>
-<div class="line"><span class="lineno">   72</span>    }<span class="comment"></span></div>
-<div class="line"><span class="lineno">   73</span><span class="comment">    /// check the second diagonal</span></div>
-<div class="line"><span class="lineno">   74</span><span class="comment"></span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = row, j = col; i &lt;= n - 1 &amp;&amp; j &gt;= 0; i++, j--) {</div>
+<div class="line"><span class="lineno">   72</span>    }</div>
+<div class="line"><span class="lineno">   74</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = row, j = col; i &lt;= n - 1 &amp;&amp; j &gt;= 0; i++, j--) {</div>
 <div class="line"><span class="lineno">   75</span>        <span class="keywordflow">if</span> (board[i][j] == 1) {</div>
 <div class="line"><span class="lineno">   76</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   77</span>        }</div>
 <div class="line"><span class="lineno">   78</span>    }</div>
 <div class="line"><span class="lineno">   79</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">   80</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/dac/n__queens__all__solution__optimised_8cpp_a9e48455584a4faa33e83dd1891efd9b9_cgraph.svg" width="171" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -242,9 +257,11 @@ Here is the call graph for this function:</div>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/dac/n__queens__all__solution__optimised_8cpp_source.html#l00109">109</a> of file <a class="el" href="../../da/dac/n__queens__all__solution__optimised_8cpp_source.html">n_queens_all_solution_optimised.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  109</span>           {</div>
 <div class="line"><span class="lineno">  110</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> n = 4;</div>
-<div class="line"><span class="lineno">  111</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::array&lt;int, n&gt;</a>, n&gt; board{};</div>
+<div class="line"><span class="lineno">  111</span>    std::array&lt;std::array&lt;int, n&gt;, n&gt; board{};</div>
 <div class="line"><span class="lineno">  112</span> </div>
 <div class="line"><span class="lineno">  113</span>    <span class="keywordflow">if</span> (n % 2 == 0) {</div>
 <div class="line"><span class="lineno">  114</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= n / 2 - 1; i++) {</div>
@@ -265,8 +282,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  129</span>    }</div>
 <div class="line"><span class="lineno">  130</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  131</span>}</div>
-<div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
-<div class="ttc" id="an__queens__all__solution__optimised_8cpp_html_a23c0547e4fd1708e6fb643b08327a60f"><div class="ttname"><a href="#a23c0547e4fd1708e6fb643b08327a60f">backtracking::n_queens_optimized::NQueenSol</a></div><div class="ttdeci">void NQueenSol(std::array&lt; std::array&lt; int, n &gt;, n &gt; board, int col)</div><div class="ttdef"><b>Definition</b> n_queens_all_solution_optimised.cpp:89</div></div>
+<div class="ttc" id="an__queens__all__solution__optimised_8cpp_html_a23c0547e4fd1708e6fb643b08327a60f"><div class="ttname"><a href="#a23c0547e4fd1708e6fb643b08327a60f">backtracking::n_queens_optimized::NQueenSol</a></div><div class="ttdeci">void NQueenSol(std::array&lt; std::array&lt; int, n &gt;, n &gt; board, int col)</div><div class="ttdef"><b>Definition</b> <a href="../../da/dac/n__queens__all__solution__optimised_8cpp_source.html#l00089">n_queens_all_solution_optimised.cpp:89</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -281,7 +297,7 @@ template&lt;size_t n&gt; </div>
         <tr>
           <td class="memname">void backtracking::n_queens_optimized::NQueenSol </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, n &gt;, n &gt;</td>          <td class="paramname"><span class="paramname"><em>board</em></span>, </td>
+          <td class="paramtype">std::array&lt; std::array&lt; int, n &gt;, n &gt;</td>          <td class="paramname"><span class="paramname"><em>board</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -303,6 +319,8 @@ template&lt;size_t n&gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/dac/n__queens__all__solution__optimised_8cpp_source.html#l00089">89</a> of file <a class="el" href="../../da/dac/n__queens__all__solution__optimised_8cpp_source.html">n_queens_all_solution_optimised.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   89</span>                                                             {</div>
 <div class="line"><span class="lineno">   90</span>    <span class="keywordflow">if</span> (col &gt;= n) {</div>
 <div class="line"><span class="lineno">   91</span>        PrintSol&lt;n&gt;(board);</div>
@@ -316,12 +334,7 @@ template&lt;size_t n&gt; </div>
 <div class="line"><span class="lineno">   99</span>        }</div>
 <div class="line"><span class="lineno">  100</span>    }</div>
 <div class="line"><span class="lineno">  101</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/dac/n__queens__all__solution__optimised_8cpp_a23c0547e4fd1708e6fb643b08327a60f_cgraph.svg" width="171" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a04090463be4942a69ea91fe7386da905" name="a04090463be4942a69ea91fe7386da905"></a>
@@ -335,7 +348,7 @@ template&lt;size_t n&gt; </div>
         <tr>
           <td class="memname">void backtracking::n_queens_optimized::PrintSol </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, n &gt;, n &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>board</em></span></td><td>)</td>
+          <td class="paramtype">const std::array&lt; std::array&lt; int, n &gt;, n &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>board</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -352,32 +365,27 @@ template&lt;size_t n&gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/dac/n__queens__all__solution__optimised_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../da/dac/n__queens__all__solution__optimised_8cpp_source.html">n_queens_all_solution_optimised.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   30</span>                                                          {</div>
 <div class="line"><span class="lineno">   31</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++) {</div>
 <div class="line"><span class="lineno">   32</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; n; j++) {</div>
-<div class="line"><span class="lineno">   33</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; board[i][j] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">   33</span>            std::cout &lt;&lt; board[i][j] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
 <div class="line"><span class="lineno">   34</span>        }</div>
-<div class="line"><span class="lineno">   35</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   35</span>        std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   36</span>    }</div>
-<div class="line"><span class="lineno">   37</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   37</span>    std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   38</span>    <span class="keywordflow">if</span> (n % 2 == 0 || (n % 2 == 1 &amp;&amp; board[n / 2 + 1][0] != 1)) {</div>
 <div class="line"><span class="lineno">   39</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++) {</div>
 <div class="line"><span class="lineno">   40</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; n; j++) {</div>
-<div class="line"><span class="lineno">   41</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; board[j][i] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">   41</span>                std::cout &lt;&lt; board[j][i] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
 <div class="line"><span class="lineno">   42</span>            }</div>
-<div class="line"><span class="lineno">   43</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   43</span>            std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   44</span>        }</div>
-<div class="line"><span class="lineno">   45</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   45</span>        std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   46</span>    }</div>
 <div class="line"><span class="lineno">   47</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/dac/n__queens__all__solution__optimised_8cpp_a04090463be4942a69ea91fe7386da905_cgraph.svg" width="290" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

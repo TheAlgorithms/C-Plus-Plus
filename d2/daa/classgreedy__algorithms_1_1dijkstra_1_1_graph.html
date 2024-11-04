@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: greedy_algorithms::dijkstra::Graph Class Reference</title>
+<title>TheAlgorithms/C++: greedy_algorithms::dijkstra::Graph Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -131,14 +148,15 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a2b0f8f5d257613bb0c0cb470413964b1" id="r_a2b0f8f5d257613bb0c0cb470413964b1"><td class="memItemLeft" align="right" valign="top"><a id="a2b0f8f5d257613bb0c0cb470413964b1" name="a2b0f8f5d257613bb0c0cb470413964b1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>vertexNum</b> = 0</td></tr>
+<tr class="memitem:a2b0f8f5d257613bb0c0cb470413964b1" id="r_a2b0f8f5d257613bb0c0cb470413964b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b0f8f5d257613bb0c0cb470413964b1">vertexNum</a> = 0</td></tr>
 <tr class="separator:a2b0f8f5d257613bb0c0cb470413964b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42a583424fb3b90346f1564d737a0fff" id="r_a42a583424fb3b90346f1564d737a0fff"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42a583424fb3b90346f1564d737a0fff">edges</a> {}</td></tr>
+<tr class="memitem:a42a583424fb3b90346f1564d737a0fff" id="r_a42a583424fb3b90346f1564d737a0fff"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42a583424fb3b90346f1564d737a0fff">edges</a> {}</td></tr>
 <tr class="separator:a42a583424fb3b90346f1564d737a0fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Wrapper class for storing a graph. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/de8/dijkstra__greedy_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../da/de8/dijkstra__greedy_8cpp_source.html">dijkstra_greedy.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afefaeb247734a7c64bd04e68e3c1c4bc" name="afefaeb247734a7c64bd04e68e3c1c4bc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afefaeb247734a7c64bd04e68e3c1c4bc">&#9670;&#160;</a></span>Graph()</h2>
@@ -170,11 +188,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>vertexNum</b> = 0</td>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/de8/dijkstra__greedy_8cpp_source.html#l00044">44</a> of file <a class="el" href="../../da/de8/dijkstra__greedy_8cpp_source.html">dijkstra_greedy.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   44</span>                                {</div>
 <div class="line"><span class="lineno">   45</span>        <span class="comment">// Initialize the array edges</span></div>
-<div class="line"><span class="lineno">   46</span>        this-&gt;edges = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;int&gt;</a>&gt;(V, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a>(V, 0));</div>
+<div class="line"><span class="lineno">   46</span>        this-&gt;edges = std::vector&lt;std::vector&lt;int&gt;&gt;(V, std::vector&lt;int&gt;(V, 0));</div>
 <div class="line"><span class="lineno">   47</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; V; i++) {</div>
-<div class="line"><span class="lineno">   48</span>            edges[i] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a>(V, 0);</div>
+<div class="line"><span class="lineno">   48</span>            edges[i] = std::vector&lt;int&gt;(V, 0);</div>
 <div class="line"><span class="lineno">   49</span>        }</div>
 <div class="line"><span class="lineno">   50</span> </div>
 <div class="line"><span class="lineno">   51</span>        <span class="comment">// Fills the array with zeros</span></div>
@@ -186,7 +206,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>vertexNum</b> = 0</td>
 <div class="line"><span class="lineno">   57</span> </div>
 <div class="line"><span class="lineno">   58</span>        this-&gt;vertexNum = V;</div>
 <div class="line"><span class="lineno">   59</span>    }</div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -233,6 +252,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>vertexNum</b> = 0</td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/de8/dijkstra__greedy_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../da/de8/dijkstra__greedy_8cpp_source.html">dijkstra_greedy.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   68</span>                                                {</div>
 <div class="line"><span class="lineno">   69</span>        this-&gt;edges[src][dst] = weight;</div>
 <div class="line"><span class="lineno">   70</span>    }</div>
@@ -247,16 +268,34 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>vertexNum</b> = 0</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;int&gt; &gt; greedy_algorithms::dijkstra::Graph::edges {}</td>
+          <td class="memname">std::vector&lt;std::vector&lt;int&gt; &gt; greedy_algorithms::dijkstra::Graph::edges {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/de8/dijkstra__greedy_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../da/de8/dijkstra__greedy_8cpp_source.html">dijkstra_greedy.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   38</span>{};</div>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a2b0f8f5d257613bb0c0cb470413964b1" name="a2b0f8f5d257613bb0c0cb470413964b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b0f8f5d257613bb0c0cb470413964b1">&#9670;&#160;</a></span>vertexNum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int greedy_algorithms::dijkstra::Graph::vertexNum = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/de8/dijkstra__greedy_8cpp_source.html#l00037">37</a> of file <a class="el" href="../../da/de8/dijkstra__greedy_8cpp_source.html">dijkstra_greedy.cpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>greedy_algorithms/<a class="el" href="../../da/de8/dijkstra__greedy_8cpp.html">dijkstra_greedy.cpp</a></li>
+<li>greedy_algorithms/<a class="el" href="../../da/de8/dijkstra__greedy_8cpp_source.html">dijkstra_greedy.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

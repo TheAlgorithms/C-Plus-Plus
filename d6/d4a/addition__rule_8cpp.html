@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: probability/addition_rule.cpp File Reference</title>
+<title>TheAlgorithms/C++: probability/addition_rule.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -118,7 +135,9 @@ Include dependency graph for addition_rule.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d26/addition__rule_8cpp__incl.svg" width="140" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d6/d4a/addition__rule_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a4adfd055c758546456d440ee9133555d" id="r_a4adfd055c758546456d440ee9133555d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4adfd055c758546456d440ee9133555d">addition_rule_independent</a> (double A, double B)</td></tr>
@@ -130,6 +149,8 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Addition rule of probabilities. </p>
+
+<p class="definition">Definition in file <a class="el" href="../../d6/d4a/addition__rule_8cpp_source.html">addition_rule.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a565ffcbbdbe496ced37250bc8dc36bc0" name="a565ffcbbdbe496ced37250bc8dc36bc0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a565ffcbbdbe496ced37250bc8dc36bc0">&#9670;&#160;</a></span>addition_rule_dependent()</h2>
@@ -155,6 +176,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Calculates the probability of the events A or B for dependent events note that if value of B_given_A is unknown, use chainrule to find it \parama [in] A probability of event A \parama [in] B probability of event B \parama [in] B_given_A probability of event B condition A </p><dl class="section return"><dt>Returns</dt><dd>probability of A and B </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d4a/addition__rule_8cpp_source.html#l00025">25</a> of file <a class="el" href="../../d6/d4a/addition__rule_8cpp_source.html">addition_rule.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   25</span>                                                                     {</div>
 <div class="line"><span class="lineno">   26</span>    <span class="keywordflow">return</span> (A + B) - (A * B_given_A);</div>
 <div class="line"><span class="lineno">   27</span>}</div>
@@ -180,6 +203,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>calculates the probability of the independent events A or B for independent events \parama [in] A probability of event A \parama [in] B probability of event B </p><dl class="section return"><dt>Returns</dt><dd>probability of A and B </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d4a/addition__rule_8cpp_source.html#l00014">14</a> of file <a class="el" href="../../d6/d4a/addition__rule_8cpp_source.html">addition_rule.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   14</span>                                                     {</div>
 <div class="line"><span class="lineno">   15</span>    <span class="keywordflow">return</span> (A + B) - (A * B);</div>
 <div class="line"><span class="lineno">   16</span>}</div>
@@ -201,29 +226,24 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Main function </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d4a/addition__rule_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../d6/d4a/addition__rule_8cpp_source.html">addition_rule.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   30</span>           {</div>
 <div class="line"><span class="lineno">   31</span>    <span class="keywordtype">double</span> A = 0.5;</div>
 <div class="line"><span class="lineno">   32</span>    <span class="keywordtype">double</span> B = 0.25;</div>
 <div class="line"><span class="lineno">   33</span>    <span class="keywordtype">double</span> B_given_A = 0.05;</div>
 <div class="line"><span class="lineno">   34</span> </div>
-<div class="line"><span class="lineno">   35</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;independent P(A or B) = &quot;</span> &lt;&lt; <a class="code hl_function" href="#a4adfd055c758546456d440ee9133555d">addition_rule_independent</a>(A, B)</div>
-<div class="line"><span class="lineno">   36</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   35</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;independent P(A or B) = &quot;</span> &lt;&lt; <a class="code hl_function" href="#a4adfd055c758546456d440ee9133555d">addition_rule_independent</a>(A, B)</div>
+<div class="line"><span class="lineno">   36</span>              &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   37</span> </div>
-<div class="line"><span class="lineno">   38</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;dependent P(A or B) = &quot;</span></div>
-<div class="line"><span class="lineno">   39</span>              &lt;&lt; <a class="code hl_function" href="#a565ffcbbdbe496ced37250bc8dc36bc0">addition_rule_dependent</a>(A, B, B_given_A) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   38</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;dependent P(A or B) = &quot;</span></div>
+<div class="line"><span class="lineno">   39</span>              &lt;&lt; <a class="code hl_function" href="#a565ffcbbdbe496ced37250bc8dc36bc0">addition_rule_dependent</a>(A, B, B_given_A) &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   40</span> </div>
 <div class="line"><span class="lineno">   41</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   42</span>}</div>
-<div class="ttc" id="aaddition__rule_8cpp_html_a4adfd055c758546456d440ee9133555d"><div class="ttname"><a href="#a4adfd055c758546456d440ee9133555d">addition_rule_independent</a></div><div class="ttdeci">double addition_rule_independent(double A, double B)</div><div class="ttdef"><b>Definition</b> addition_rule.cpp:14</div></div>
-<div class="ttc" id="aaddition__rule_8cpp_html_a565ffcbbdbe496ced37250bc8dc36bc0"><div class="ttname"><a href="#a565ffcbbdbe496ced37250bc8dc36bc0">addition_rule_dependent</a></div><div class="ttdeci">double addition_rule_dependent(double A, double B, double B_given_A)</div><div class="ttdef"><b>Definition</b> addition_rule.cpp:25</div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d4a/addition__rule_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="280" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aaddition__rule_8cpp_html_a4adfd055c758546456d440ee9133555d"><div class="ttname"><a href="#a4adfd055c758546456d440ee9133555d">addition_rule_independent</a></div><div class="ttdeci">double addition_rule_independent(double A, double B)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d4a/addition__rule_8cpp_source.html#l00014">addition_rule.cpp:14</a></div></div>
+<div class="ttc" id="aaddition__rule_8cpp_html_a565ffcbbdbe496ced37250bc8dc36bc0"><div class="ttname"><a href="#a565ffcbbdbe496ced37250bc8dc36bc0">addition_rule_dependent</a></div><div class="ttdeci">double addition_rule_dependent(double A, double B, double B_given_A)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d4a/addition__rule_8cpp_source.html#l00025">addition_rule.cpp:25</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

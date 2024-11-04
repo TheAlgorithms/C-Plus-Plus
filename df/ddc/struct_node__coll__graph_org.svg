@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="113.5,-163.5 0,-163.5 0,-133 113.5,-133 113.5,-163.5"/>
 <text text-anchor="start" x="8" y="-150" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr&lt; Node</text>
 <text text-anchor="middle" x="56.75" y="-138.75" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; ValueType &gt; &gt;</text>

@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: geometry/line_segment_intersection.cpp File Reference</title>
+<title>TheAlgorithms/C++: geometry/line_segment_intersection.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -120,7 +137,9 @@ Include dependency graph for line_segment_intersection.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/df3/line__segment__intersection_8cpp__incl.svg" width="182" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d8/d6c/line__segment__intersection_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc8/struct_point.html">Point</a></td></tr>
@@ -135,6 +154,8 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>check whether two line segments intersect each other or not. </p>
+
+<p class="definition">Definition in file <a class="el" href="../../d8/d6c/line__segment__intersection_8cpp_source.html">line_segment_intersection.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -151,32 +172,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>This is the main function to test whether the algorithm is working well. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d6c/line__segment__intersection_8cpp_source.html#l00092">92</a> of file <a class="el" href="../../d8/d6c/line__segment__intersection_8cpp_source.html">line_segment_intersection.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   92</span>           {</div>
 <div class="line"><span class="lineno">   93</span>    <a class="code hl_struct" href="../../d4/db4/struct_segment_intersection.html">SegmentIntersection</a> segment;</div>
 <div class="line"><span class="lineno">   94</span>    <a class="code hl_struct" href="../../d8/dc8/struct_point.html">Point</a> first_point, second_point, third_point, forth_point;</div>
 <div class="line"><span class="lineno">   95</span> </div>
-<div class="line"><span class="lineno">   96</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; first_point.x &gt;&gt; first_point.<a class="code hl_variable" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>;</div>
-<div class="line"><span class="lineno">   97</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; second_point.x &gt;&gt; second_point.<a class="code hl_variable" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>;</div>
-<div class="line"><span class="lineno">   98</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; third_point.x &gt;&gt; third_point.<a class="code hl_variable" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>;</div>
-<div class="line"><span class="lineno">   99</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; forth_point.x &gt;&gt; forth_point.<a class="code hl_variable" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>;</div>
+<div class="line"><span class="lineno">   96</span>    std::cin &gt;&gt; first_point.x &gt;&gt; first_point.<a class="code hl_variable" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>;</div>
+<div class="line"><span class="lineno">   97</span>    std::cin &gt;&gt; second_point.x &gt;&gt; second_point.<a class="code hl_variable" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>;</div>
+<div class="line"><span class="lineno">   98</span>    std::cin &gt;&gt; third_point.x &gt;&gt; third_point.<a class="code hl_variable" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>;</div>
+<div class="line"><span class="lineno">   99</span>    std::cin &gt;&gt; forth_point.x &gt;&gt; forth_point.<a class="code hl_variable" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>;</div>
 <div class="line"><span class="lineno">  100</span> </div>
-<div class="line"><span class="lineno">  101</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;%d&quot;</span>, segment.intersect(first_point, second_point, third_point,</div>
+<div class="line"><span class="lineno">  101</span>    printf(<span class="stringliteral">&quot;%d&quot;</span>, segment.intersect(first_point, second_point, third_point,</div>
 <div class="line"><span class="lineno">  102</span>                                   forth_point));</div>
-<div class="line"><span class="lineno">  103</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  103</span>    std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  104</span>}</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="afprintf_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/c/fprintf.html">std::printf</a></div><div class="ttdeci">T printf(T... args)</div></div>
-<div class="ttc" id="astruct_point_html"><div class="ttname"><a href="../../d8/dc8/struct_point.html">Point</a></div><div class="ttdef"><b>Definition</b> line_segment_intersection.cpp:12</div></div>
-<div class="ttc" id="astruct_point_html_a2e1b5fb2b2a83571f5c0bc0f66a73cf7"><div class="ttname"><a href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">Point::y</a></div><div class="ttdeci">int y</div><div class="ttdoc">Point respect to x coordinate.</div><div class="ttdef"><b>Definition</b> line_segment_intersection.cpp:14</div></div>
-<div class="ttc" id="astruct_segment_intersection_html"><div class="ttname"><a href="../../d4/db4/struct_segment_intersection.html">SegmentIntersection</a></div><div class="ttdef"><b>Definition</b> line_segment_intersection.cpp:22</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d6c/line__segment__intersection_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="180" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="astruct_point_html"><div class="ttname"><a href="../../d8/dc8/struct_point.html">Point</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/d6c/line__segment__intersection_8cpp_source.html#l00012">line_segment_intersection.cpp:12</a></div></div>
+<div class="ttc" id="astruct_point_html_a2e1b5fb2b2a83571f5c0bc0f66a73cf7"><div class="ttname"><a href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">Point::y</a></div><div class="ttdeci">int y</div><div class="ttdoc">Point respect to x coordinate.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d6c/line__segment__intersection_8cpp_source.html#l00014">line_segment_intersection.cpp:14</a></div></div>
+<div class="ttc" id="astruct_segment_intersection_html"><div class="ttname"><a href="../../d4/db4/struct_segment_intersection.html">SegmentIntersection</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/d6c/line__segment__intersection_8cpp_source.html#l00022">line_segment_intersection.cpp:22</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

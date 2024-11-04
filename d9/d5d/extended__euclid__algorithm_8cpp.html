@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: math/extended_euclid_algorithm.cpp File Reference</title>
+<title>TheAlgorithms/C++: math/extended_euclid_algorithm.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -120,7 +137,9 @@ Include dependency graph for extended_euclid_algorithm.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/dc7/extended__euclid__algorithm_8cpp__incl.svg" width="266" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d9/d5d/extended__euclid__algorithm_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:abe92d63a0ff9bda7e304df510d5dd217" id="r_abe92d63a0ff9bda7e304df510d5dd217"><td class="memTemplParams" colspan="2">template&lt;typename T , typename T2 &gt; </td></tr>
@@ -142,6 +161,8 @@ Functions</h2></td></tr>
 \[\text{gcd}(a, b) = a \times x + b \times y \]
 </p>
 <p> This is also used in finding Modular multiplicative inverse of a number. (A * B)M == 1 Here B is the MMI of A for given M, so extendedEuclid (A, M) gives B. </p>
+
+<p class="definition">Definition in file <a class="el" href="../../d9/d5d/extended__euclid__algorithm_8cpp_source.html">extended_euclid_algorithm.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="acba15ca55b3e7dcb91f3c65d72ba052d" name="acba15ca55b3e7dcb91f3c65d72ba052d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acba15ca55b3e7dcb91f3c65d72ba052d">&#9670;&#160;</a></span>extendedEuclid()</h2>
@@ -189,9 +210,11 @@ template&lt;typename T , typename T2 &gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d5d/extended__euclid__algorithm_8cpp_source.html#l00071">71</a> of file <a class="el" href="../../d9/d5d/extended__euclid__algorithm_8cpp_source.html">extended_euclid_algorithm.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   71</span>                                                    {</div>
 <div class="line"><span class="lineno">   72</span>    <span class="keywordflow">if</span> (B &gt; A)</div>
-<div class="line"><span class="lineno">   73</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(A, B);  <span class="comment">// Ensure that A &gt;= B</span></div>
+<div class="line"><span class="lineno">   73</span>        std::swap(A, B);  <span class="comment">// Ensure that A &gt;= B</span></div>
 <div class="line"><span class="lineno">   74</span> </div>
 <div class="line"><span class="lineno">   75</span>    <span class="keywordflow">if</span> (B == 0) {</div>
 <div class="line"><span class="lineno">   76</span>        *GCD = A;</div>
@@ -204,14 +227,8 @@ template&lt;typename T , typename T2 &gt; </div>
 <div class="line"><span class="lineno">   83</span>        *y = temp - (A / B) * (*y);</div>
 <div class="line"><span class="lineno">   84</span>    }</div>
 <div class="line"><span class="lineno">   85</span>}</div>
-<div class="ttc" id="aextended__euclid__algorithm_8cpp_html_acba15ca55b3e7dcb91f3c65d72ba052d"><div class="ttname"><a href="#acba15ca55b3e7dcb91f3c65d72ba052d">extendedEuclid</a></div><div class="ttdeci">void extendedEuclid(T A, T B, T *GCD, T2 *x, T2 *y)</div><div class="ttdef"><b>Definition</b> extended_euclid_algorithm.cpp:71</div></div>
-<div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d5d/extended__euclid__algorithm_8cpp_acba15ca55b3e7dcb91f3c65d72ba052d_cgraph.svg" width="248" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aextended__euclid__algorithm_8cpp_html_acba15ca55b3e7dcb91f3c65d72ba052d"><div class="ttname"><a href="#acba15ca55b3e7dcb91f3c65d72ba052d">extendedEuclid</a></div><div class="ttdeci">void extendedEuclid(T A, T B, T *GCD, T2 *x, T2 *y)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d5d/extended__euclid__algorithm_8cpp_source.html#l00071">extended_euclid_algorithm.cpp:71</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1792ac7c33aaf26b860ab55f5652ab25" name="a1792ac7c33aaf26b860ab55f5652ab25"></a>
@@ -260,9 +277,11 @@ template&lt;typename T1 , typename T2 &gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d5d/extended__euclid__algorithm_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../d9/d5d/extended__euclid__algorithm_8cpp_source.html">extended_euclid_algorithm.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   42</span>                                                         {</div>
 <div class="line"><span class="lineno">   43</span>    <span class="keywordflow">if</span> (B &gt; A)</div>
-<div class="line"><span class="lineno">   44</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(A, B);  <span class="comment">// Ensure that A &gt;= B</span></div>
+<div class="line"><span class="lineno">   44</span>        std::swap(A, B);  <span class="comment">// Ensure that A &gt;= B</span></div>
 <div class="line"><span class="lineno">   45</span> </div>
 <div class="line"><span class="lineno">   46</span>    T2 s = 0, s0 = 1;</div>
 <div class="line"><span class="lineno">   47</span>    T2 t = 1, t0 = 0;</div>
@@ -278,13 +297,8 @@ template&lt;typename T1 , typename T2 &gt; </div>
 <div class="line"><span class="lineno">   57</span>    *x = s0;</div>
 <div class="line"><span class="lineno">   58</span>    *y = t0;</div>
 <div class="line"><span class="lineno">   59</span>}</div>
-<div class="ttc" id="aextended__euclid__algorithm_8cpp_html_abe92d63a0ff9bda7e304df510d5dd217"><div class="ttname"><a href="#abe92d63a0ff9bda7e304df510d5dd217">update_step</a></div><div class="ttdeci">void update_step(T *r, T *r0, const T2 quotient)</div><div class="ttdef"><b>Definition</b> extended_euclid_algorithm.cpp:25</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d5d/extended__euclid__algorithm_8cpp_a1792ac7c33aaf26b860ab55f5652ab25_cgraph.svg" width="276" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aextended__euclid__algorithm_8cpp_html_abe92d63a0ff9bda7e304df510d5dd217"><div class="ttname"><a href="#abe92d63a0ff9bda7e304df510d5dd217">update_step</a></div><div class="ttdeci">void update_step(T *r, T *r0, const T2 quotient)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d5d/extended__euclid__algorithm_8cpp_source.html#l00025">extended_euclid_algorithm.cpp:25</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -303,27 +317,21 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Main function. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d5d/extended__euclid__algorithm_8cpp_source.html#l00088">88</a> of file <a class="el" href="../../d9/d5d/extended__euclid__algorithm_8cpp_source.html">extended_euclid_algorithm.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   88</span>           {</div>
 <div class="line"><span class="lineno">   89</span>    uint32_t a, b, <a class="code hl_function" href="../../d4/da0/gcd__iterative__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e">gcd</a>;</div>
 <div class="line"><span class="lineno">   90</span>    int32_t x, y;</div>
-<div class="line"><span class="lineno">   91</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; a &gt;&gt; b;</div>
+<div class="line"><span class="lineno">   91</span>    std::cin &gt;&gt; a &gt;&gt; b;</div>
 <div class="line"><span class="lineno">   92</span>    <a class="code hl_function" href="#acba15ca55b3e7dcb91f3c65d72ba052d">extendedEuclid</a>(a, b, &amp;<a class="code hl_function" href="../../d4/da0/gcd__iterative__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e">gcd</a>, &amp;x, &amp;y);</div>
-<div class="line"><span class="lineno">   93</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_function" href="../../d4/da0/gcd__iterative__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e">gcd</a> &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; x &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; y &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   93</span>    std::cout &lt;&lt; <a class="code hl_function" href="../../d4/da0/gcd__iterative__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e">gcd</a> &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; x &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; y &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   94</span>    <a class="code hl_function" href="#a1792ac7c33aaf26b860ab55f5652ab25">extendedEuclid_1</a>(a, b, &amp;<a class="code hl_function" href="../../d4/da0/gcd__iterative__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e">gcd</a>, &amp;x, &amp;y);</div>
-<div class="line"><span class="lineno">   95</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_function" href="../../d4/da0/gcd__iterative__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e">gcd</a> &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; x &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; y &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   95</span>    std::cout &lt;&lt; <a class="code hl_function" href="../../d4/da0/gcd__iterative__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e">gcd</a> &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; x &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; y &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   96</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   97</span>}</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="aextended__euclid__algorithm_8cpp_html_a1792ac7c33aaf26b860ab55f5652ab25"><div class="ttname"><a href="#a1792ac7c33aaf26b860ab55f5652ab25">extendedEuclid_1</a></div><div class="ttdeci">void extendedEuclid_1(T1 A, T1 B, T1 *GCD, T2 *x, T2 *y)</div><div class="ttdef"><b>Definition</b> extended_euclid_algorithm.cpp:42</div></div>
-<div class="ttc" id="agcd__iterative__euclidean_8cpp_html_ae48807fa2b7000afae599e67f327545e"><div class="ttname"><a href="../../d4/da0/gcd__iterative__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e">gcd</a></div><div class="ttdeci">int gcd(int num1, int num2)</div><div class="ttdef"><b>Definition</b> gcd_iterative_euclidean.cpp:15</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d5d/extended__euclid__algorithm_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="374" height="208"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aextended__euclid__algorithm_8cpp_html_a1792ac7c33aaf26b860ab55f5652ab25"><div class="ttname"><a href="#a1792ac7c33aaf26b860ab55f5652ab25">extendedEuclid_1</a></div><div class="ttdeci">void extendedEuclid_1(T1 A, T1 B, T1 *GCD, T2 *x, T2 *y)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d5d/extended__euclid__algorithm_8cpp_source.html#l00042">extended_euclid_algorithm.cpp:42</a></div></div>
+<div class="ttc" id="agcd__iterative__euclidean_8cpp_html_ae48807fa2b7000afae599e67f327545e"><div class="ttname"><a href="../../d4/da0/gcd__iterative__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e">gcd</a></div><div class="ttdeci">int gcd(int num1, int num2)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/da0/gcd__iterative__euclidean_8cpp_source.html#l00015">gcd_iterative_euclidean.cpp:15</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abe92d63a0ff9bda7e304df510d5dd217" name="abe92d63a0ff9bda7e304df510d5dd217"></a>
@@ -370,6 +378,8 @@ template&lt;typename T , typename T2 &gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d5d/extended__euclid__algorithm_8cpp_source.html#l00025">25</a> of file <a class="el" href="../../d9/d5d/extended__euclid__algorithm_8cpp_source.html">extended_euclid_algorithm.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   25</span>                                                        {</div>
 <div class="line"><span class="lineno">   26</span>    T temp = *r;</div>
 <div class="line"><span class="lineno">   27</span>    *r = *r0 - (quotient * temp);</div>

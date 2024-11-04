@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: ciphers/uint256_t.hpp File Reference</title>
+<title>TheAlgorithms/C++: ciphers/uint256_t.hpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -142,7 +159,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a1d8c5ec5b5e419c5c8a740251485102c" id="r_a1d8c5ec5b5e419c5c8a740251485102c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d8c5ec5b5e419c5c8a740251485102c">CIPHERS_UINT256_T_HPP_</a></td></tr>
-<tr class="memdesc:a1d8c5ec5b5e419c5c8a740251485102c"><td class="mdescLeft">&#160;</td><td class="mdescRight">for <code><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a></code> library  <br /></td></tr>
+<tr class="memdesc:a1d8c5ec5b5e419c5c8a740251485102c"><td class="mdescLeft">&#160;</td><td class="mdescRight">for <code>std::pair</code> library  <br /></td></tr>
 <tr class="separator:a1d8c5ec5b5e419c5c8a740251485102c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -199,6 +216,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of 256-bit unsigned integers. </p><dl class="section note"><dt>Note</dt><dd>The implementation can be flagged as not completed. This header is used with enough operations to demonstrate the usage of ECDH (Elliptic Curve Diffie-Hellman) Key exchange. </dd></dl>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/AshishYUO" target="_blank">Ashish Daulatabad</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../da/da3/uint256__t_8hpp_source.html">uint256_t.hpp</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a1d8c5ec5b5e419c5c8a740251485102c" name="a1d8c5ec5b5e419c5c8a740251485102c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1d8c5ec5b5e419c5c8a740251485102c">&#9670;&#160;</a></span>CIPHERS_UINT256_T_HPP_</h2>
@@ -212,8 +231,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>for <code><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a></code> library </p>
-<p>for <code><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></code> for <a class="el" href="../../db/d9a/classuint128__t.html" title="class for 128-bit unsigned integer">uint128_t</a> integer </p>
+<p>for <code>std::pair</code> library </p>
+<p>for <code>std::string</code> for <a class="el" href="../../db/d9a/classuint128__t.html" title="class for 128-bit unsigned integer">uint128_t</a> integer </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/da3/uint256__t_8hpp_source.html#l00016">16</a> of file <a class="el" href="../../da/da3/uint256__t_8hpp_source.html">uint256_t.hpp</a>.</p>
 
 </div>
 </div>
@@ -246,10 +267,12 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/da3/uint256__t_8hpp_source.html#l01046">1046</a> of file <a class="el" href="../../da/da3/uint256__t_8hpp_source.html">uint256_t.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1046</span>                                                      {</div>
 <div class="line"><span class="lineno"> 1047</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d1/d83/classuint256__t.html">uint256_t</a>(p) != q;</div>
 <div class="line"><span class="lineno"> 1048</span>}</div>
-<div class="ttc" id="aclassuint256__t_html"><div class="ttname"><a href="../../d1/d83/classuint256__t.html">uint256_t</a></div><div class="ttdoc">class for 256-bit unsigned integer</div><div class="ttdef"><b>Definition</b> uint256_t.hpp:33</div></div>
+<div class="ttc" id="aclassuint256__t_html"><div class="ttname"><a href="../../d1/d83/classuint256__t.html">uint256_t</a></div><div class="ttdoc">class for 256-bit unsigned integer</div><div class="ttdef"><b>Definition</b> <a href="../../da/da3/uint256__t_8hpp_source.html#l00033">uint256_t.hpp:33</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -281,6 +304,8 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/da3/uint256__t_8hpp_source.html#l01001">1001</a> of file <a class="el" href="../../da/da3/uint256__t_8hpp_source.html">uint256_t.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1001</span>                                                          {</div>
 <div class="line"><span class="lineno"> 1002</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d1/d83/classuint256__t.html">uint256_t</a>(p) % q;</div>
 <div class="line"><span class="lineno"> 1003</span>}</div>
@@ -315,6 +340,8 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/da3/uint256__t_8hpp_source.html#l01008">1008</a> of file <a class="el" href="../../da/da3/uint256__t_8hpp_source.html">uint256_t.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1008</span>                                                           {</div>
 <div class="line"><span class="lineno"> 1009</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d1/d83/classuint256__t.html">uint256_t</a>(p) &amp; q;</div>
 <div class="line"><span class="lineno"> 1010</span>}</div>
@@ -349,6 +376,8 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/da3/uint256__t_8hpp_source.html#l01027">1027</a> of file <a class="el" href="../../da/da3/uint256__t_8hpp_source.html">uint256_t.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1027</span>                                                      {</div>
 <div class="line"><span class="lineno"> 1028</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d1/d83/classuint256__t.html">uint256_t</a>(p) &amp;&amp; q;</div>
 <div class="line"><span class="lineno"> 1029</span>}</div>
@@ -383,6 +412,8 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/da3/uint256__t_8hpp_source.html#l00989">989</a> of file <a class="el" href="../../da/da3/uint256__t_8hpp_source.html">uint256_t.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  989</span>                                                          {</div>
 <div class="line"><span class="lineno">  990</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d1/d83/classuint256__t.html">uint256_t</a>(p) * q;</div>
 <div class="line"><span class="lineno">  991</span>}</div>
@@ -417,6 +448,8 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/da3/uint256__t_8hpp_source.html#l00977">977</a> of file <a class="el" href="../../da/da3/uint256__t_8hpp_source.html">uint256_t.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  977</span>                                                          {</div>
 <div class="line"><span class="lineno">  978</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d1/d83/classuint256__t.html">uint256_t</a>(p) + q;</div>
 <div class="line"><span class="lineno">  979</span>}</div>
@@ -451,6 +484,8 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/da3/uint256__t_8hpp_source.html#l00983">983</a> of file <a class="el" href="../../da/da3/uint256__t_8hpp_source.html">uint256_t.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  983</span>                                                          {</div>
 <div class="line"><span class="lineno">  984</span>    <span class="keywordflow">return</span> (<a class="code hl_class" href="../../d1/d83/classuint256__t.html">uint256_t</a>(p) - q);</div>
 <div class="line"><span class="lineno">  985</span>}</div>
@@ -485,6 +520,8 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/da3/uint256__t_8hpp_source.html#l00995">995</a> of file <a class="el" href="../../da/da3/uint256__t_8hpp_source.html">uint256_t.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  995</span>                                                          {</div>
 <div class="line"><span class="lineno">  996</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d1/d83/classuint256__t.html">uint256_t</a>(p) / q;</div>
 <div class="line"><span class="lineno">  997</span>}</div>
@@ -519,6 +556,8 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/da3/uint256__t_8hpp_source.html#l01052">1052</a> of file <a class="el" href="../../da/da3/uint256__t_8hpp_source.html">uint256_t.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1052</span>                                                     {</div>
 <div class="line"><span class="lineno"> 1053</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d1/d83/classuint256__t.html">uint256_t</a>(p) &lt; q;</div>
 <div class="line"><span class="lineno"> 1054</span>}</div>
@@ -553,6 +592,8 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/da3/uint256__t_8hpp_source.html#l01058">1058</a> of file <a class="el" href="../../da/da3/uint256__t_8hpp_source.html">uint256_t.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1058</span>                                                      {</div>
 <div class="line"><span class="lineno"> 1059</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d1/d83/classuint256__t.html">uint256_t</a>(p) &lt;= q;</div>
 <div class="line"><span class="lineno"> 1060</span>}</div>
@@ -587,6 +628,8 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/da3/uint256__t_8hpp_source.html#l01040">1040</a> of file <a class="el" href="../../da/da3/uint256__t_8hpp_source.html">uint256_t.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1040</span>                                                      {</div>
 <div class="line"><span class="lineno"> 1041</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d1/d83/classuint256__t.html">uint256_t</a>(p) == q;</div>
 <div class="line"><span class="lineno"> 1042</span>}</div>
@@ -621,6 +664,8 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/da3/uint256__t_8hpp_source.html#l01064">1064</a> of file <a class="el" href="../../da/da3/uint256__t_8hpp_source.html">uint256_t.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1064</span>                                                     {</div>
 <div class="line"><span class="lineno"> 1065</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d1/d83/classuint256__t.html">uint256_t</a>(p) &gt; q;</div>
 <div class="line"><span class="lineno"> 1066</span>}</div>
@@ -655,6 +700,8 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/da3/uint256__t_8hpp_source.html#l01070">1070</a> of file <a class="el" href="../../da/da3/uint256__t_8hpp_source.html">uint256_t.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1070</span>                                                      {</div>
 <div class="line"><span class="lineno"> 1071</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d1/d83/classuint256__t.html">uint256_t</a>(p) &gt;= q;</div>
 <div class="line"><span class="lineno"> 1072</span>}</div>
@@ -689,6 +736,8 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/da3/uint256__t_8hpp_source.html#l01020">1020</a> of file <a class="el" href="../../da/da3/uint256__t_8hpp_source.html">uint256_t.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1020</span>                                                          {</div>
 <div class="line"><span class="lineno"> 1021</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d1/d83/classuint256__t.html">uint256_t</a>(p) ^ q;</div>
 <div class="line"><span class="lineno"> 1022</span>}</div>
@@ -723,6 +772,8 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/da3/uint256__t_8hpp_source.html#l01014">1014</a> of file <a class="el" href="../../da/da3/uint256__t_8hpp_source.html">uint256_t.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1014</span>                                                          {</div>
 <div class="line"><span class="lineno"> 1015</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d1/d83/classuint256__t.html">uint256_t</a>(p) | q;</div>
 <div class="line"><span class="lineno"> 1016</span>}</div>
@@ -757,6 +808,8 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/da3/uint256__t_8hpp_source.html#l01033">1033</a> of file <a class="el" href="../../da/da3/uint256__t_8hpp_source.html">uint256_t.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1033</span>                                                      {</div>
 <div class="line"><span class="lineno"> 1034</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d1/d83/classuint256__t.html">uint256_t</a>(p) || q;</div>
 <div class="line"><span class="lineno"> 1035</span>}</div>

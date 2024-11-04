@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: machine_learning::k_nearest_neighbors::Knn Class Reference</title>
+<title>TheAlgorithms/C++: machine_learning::k_nearest_neighbors::Knn Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -122,7 +139,7 @@ Collaboration diagram for machine_learning::k_nearest_neighbors::Knn:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a188d29ffcefdb5900a8cd41eccd89200" id="r_a188d29ffcefdb5900a8cd41eccd89200"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a188d29ffcefdb5900a8cd41eccd89200">Knn</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; double &gt; &gt; &amp;X, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &amp;Y)</td></tr>
+<tr class="memitem:a188d29ffcefdb5900a8cd41eccd89200" id="r_a188d29ffcefdb5900a8cd41eccd89200"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a188d29ffcefdb5900a8cd41eccd89200">Knn</a> (std::vector&lt; std::vector&lt; double &gt; &gt; &amp;X, std::vector&lt; int &gt; &amp;Y)</td></tr>
 <tr class="memdesc:a188d29ffcefdb5900a8cd41eccd89200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="../../da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn.html" title="K-Nearest Neighbors (Knn) class using Euclidean distance as distance metric.">Knn</a> object.  <br /></td></tr>
 <tr class="separator:a188d29ffcefdb5900a8cd41eccd89200"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f5885c40112481ae5b588fe81d7910b" id="r_a9f5885c40112481ae5b588fe81d7910b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f5885c40112481ae5b588fe81d7910b">Knn</a> (const <a class="el" href="../../da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn.html">Knn</a> &amp;model)=default</td></tr>
@@ -137,21 +154,23 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>~Knn</b> ()=default</td></tr>
 <tr class="memdesc:afe732a33112b457b738f403622d226e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the <a class="el" href="../../da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn.html" title="K-Nearest Neighbors (Knn) class using Euclidean distance as distance metric.">Knn</a> object. <br /></td></tr>
 <tr class="separator:afe732a33112b457b738f403622d226e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62e152db014cd4de675fa906e5ef2861" id="r_a62e152db014cd4de675fa906e5ef2861"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62e152db014cd4de675fa906e5ef2861">predict</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; double &gt; &amp;sample, int k)</td></tr>
+<tr class="memitem:a62e152db014cd4de675fa906e5ef2861" id="r_a62e152db014cd4de675fa906e5ef2861"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62e152db014cd4de675fa906e5ef2861">predict</a> (std::vector&lt; double &gt; &amp;sample, int k)</td></tr>
 <tr class="memdesc:a62e152db014cd4de675fa906e5ef2861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classify sample.  <br /></td></tr>
 <tr class="separator:a62e152db014cd4de675fa906e5ef2861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a16ddc13621eec6ac5f83658b3401a581" id="r_a16ddc13621eec6ac5f83658b3401a581"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16ddc13621eec6ac5f83658b3401a581">X_</a> {}</td></tr>
+<tr class="memitem:a16ddc13621eec6ac5f83658b3401a581" id="r_a16ddc13621eec6ac5f83658b3401a581"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16ddc13621eec6ac5f83658b3401a581">X_</a> {}</td></tr>
 <tr class="memdesc:a16ddc13621eec6ac5f83658b3401a581"><td class="mdescLeft">&#160;</td><td class="mdescRight">attributes vector  <br /></td></tr>
 <tr class="separator:a16ddc13621eec6ac5f83658b3401a581"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a209383503fb6c03afac405a80bace964" id="r_a209383503fb6c03afac405a80bace964"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a209383503fb6c03afac405a80bace964">Y_</a> {}</td></tr>
+<tr class="memitem:a209383503fb6c03afac405a80bace964" id="r_a209383503fb6c03afac405a80bace964"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a209383503fb6c03afac405a80bace964">Y_</a> {}</td></tr>
 <tr class="memdesc:a209383503fb6c03afac405a80bace964"><td class="mdescLeft">&#160;</td><td class="mdescRight">labels vector  <br /></td></tr>
 <tr class="separator:a209383503fb6c03afac405a80bace964"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>K-Nearest Neighbors (<a class="el" href="../../da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn.html" title="K-Nearest Neighbors (Knn) class using Euclidean distance as distance metric.">Knn</a>) class using Euclidean distance as distance metric. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d3e/k__nearest__neighbors_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../d4/d3e/k__nearest__neighbors_8cpp_source.html">k_nearest_neighbors.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a188d29ffcefdb5900a8cd41eccd89200" name="a188d29ffcefdb5900a8cd41eccd89200"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a188d29ffcefdb5900a8cd41eccd89200">&#9670;&#160;</a></span>Knn() <span class="overload">[1/3]</span></h2>
@@ -165,12 +184,12 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">machine_learning::k_nearest_neighbors::Knn::Knn </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; double &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>X</em></span>, </td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; double &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>X</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>Y</em></span>&#160;)</td>
+          <td class="paramtype">std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>Y</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -188,9 +207,11 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d3e/k__nearest__neighbors_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../d4/d3e/k__nearest__neighbors_8cpp_source.html">k_nearest_neighbors.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   68</span>        : <a class="code hl_variable" href="#a16ddc13621eec6ac5f83658b3401a581">X_</a>(X), <a class="code hl_variable" href="#a209383503fb6c03afac405a80bace964">Y_</a>(Y){};</div>
-<div class="ttc" id="aclassmachine__learning_1_1k__nearest__neighbors_1_1_knn_html_a16ddc13621eec6ac5f83658b3401a581"><div class="ttname"><a href="#a16ddc13621eec6ac5f83658b3401a581">machine_learning::k_nearest_neighbors::Knn::X_</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; double &gt; &gt; X_</div><div class="ttdoc">attributes vector</div><div class="ttdef"><b>Definition</b> k_nearest_neighbors.cpp:57</div></div>
-<div class="ttc" id="aclassmachine__learning_1_1k__nearest__neighbors_1_1_knn_html_a209383503fb6c03afac405a80bace964"><div class="ttname"><a href="#a209383503fb6c03afac405a80bace964">machine_learning::k_nearest_neighbors::Knn::Y_</a></div><div class="ttdeci">std::vector&lt; int &gt; Y_</div><div class="ttdoc">labels vector</div><div class="ttdef"><b>Definition</b> k_nearest_neighbors.cpp:58</div></div>
+<div class="ttc" id="aclassmachine__learning_1_1k__nearest__neighbors_1_1_knn_html_a16ddc13621eec6ac5f83658b3401a581"><div class="ttname"><a href="#a16ddc13621eec6ac5f83658b3401a581">machine_learning::k_nearest_neighbors::Knn::X_</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; double &gt; &gt; X_</div><div class="ttdoc">attributes vector</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d3e/k__nearest__neighbors_8cpp_source.html#l00057">k_nearest_neighbors.cpp:57</a></div></div>
+<div class="ttc" id="aclassmachine__learning_1_1k__nearest__neighbors_1_1_knn_html_a209383503fb6c03afac405a80bace964"><div class="ttname"><a href="#a209383503fb6c03afac405a80bace964">machine_learning::k_nearest_neighbors::Knn::Y_</a></div><div class="ttdeci">std::vector&lt; int &gt; Y_</div><div class="ttdoc">labels vector</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d3e/k__nearest__neighbors_8cpp_source.html#l00058">k_nearest_neighbors.cpp:58</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -317,7 +338,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">int machine_learning::k_nearest_neighbors::Knn::predict </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sample</em></span>, </td>
+          <td class="paramtype">std::vector&lt; double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sample</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -341,25 +362,27 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int label of most frequent neighbors </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d3e/k__nearest__neighbors_8cpp_source.html#l00103">103</a> of file <a class="el" href="../../d4/d3e/k__nearest__neighbors_8cpp_source.html">k_nearest_neighbors.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  103</span>                                                  {</div>
-<div class="line"><span class="lineno">  104</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> neighbors;</div>
-<div class="line"><span class="lineno">  105</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::pair&lt;double, int&gt;</a>&gt; distances;</div>
-<div class="line"><span class="lineno">  106</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; this-&gt;<a class="code hl_variable" href="#a16ddc13621eec6ac5f83658b3401a581">X_</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); ++i) {</div>
-<div class="line"><span class="lineno">  107</span>            <span class="keyword">auto</span> current = this-&gt;<a class="code hl_variable" href="#a16ddc13621eec6ac5f83658b3401a581">X_</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/at.html">at</a>(i);</div>
-<div class="line"><span class="lineno">  108</span>            <span class="keyword">auto</span> label = this-&gt;<a class="code hl_variable" href="#a209383503fb6c03afac405a80bace964">Y_</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/at.html">at</a>(i);</div>
-<div class="line"><span class="lineno">  109</span>            <span class="keyword">auto</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/distance.html">distance</a> = <a class="code hl_function" href="../../d4/d3e/k__nearest__neighbors_8cpp.html#ad6ae16e50bb153ebaa7251d0aaa97b69">euclidean_distance</a>(current, sample);</div>
-<div class="line"><span class="lineno">  110</span>            distances.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/emplace_back.html">emplace_back</a>(distance, label);</div>
+<div class="line"><span class="lineno">  104</span>        std::vector&lt;int&gt; neighbors;</div>
+<div class="line"><span class="lineno">  105</span>        std::vector&lt;std::pair&lt;double, int&gt;&gt; distances;</div>
+<div class="line"><span class="lineno">  106</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; this-&gt;<a class="code hl_variable" href="#a16ddc13621eec6ac5f83658b3401a581">X_</a>.size(); ++i) {</div>
+<div class="line"><span class="lineno">  107</span>            <span class="keyword">auto</span> current = this-&gt;<a class="code hl_variable" href="#a16ddc13621eec6ac5f83658b3401a581">X_</a>.at(i);</div>
+<div class="line"><span class="lineno">  108</span>            <span class="keyword">auto</span> label = this-&gt;<a class="code hl_variable" href="#a209383503fb6c03afac405a80bace964">Y_</a>.at(i);</div>
+<div class="line"><span class="lineno">  109</span>            <span class="keyword">auto</span> distance = <a class="code hl_function" href="../../d4/d3e/k__nearest__neighbors_8cpp.html#ad6ae16e50bb153ebaa7251d0aaa97b69">euclidean_distance</a>(current, sample);</div>
+<div class="line"><span class="lineno">  110</span>            distances.emplace_back(distance, label);</div>
 <div class="line"><span class="lineno">  111</span>        }</div>
-<div class="line"><span class="lineno">  112</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/sort.html">std::sort</a>(distances.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), distances.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>());</div>
+<div class="line"><span class="lineno">  112</span>        std::sort(distances.begin(), distances.end());</div>
 <div class="line"><span class="lineno">  113</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>; i++) {</div>
-<div class="line"><span class="lineno">  114</span>            <span class="keyword">auto</span> label = distances.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/at.html">at</a>(i).second;</div>
-<div class="line"><span class="lineno">  115</span>            neighbors.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(label);</div>
+<div class="line"><span class="lineno">  114</span>            <span class="keyword">auto</span> label = distances.at(i).second;</div>
+<div class="line"><span class="lineno">  115</span>            neighbors.push_back(label);</div>
 <div class="line"><span class="lineno">  116</span>        }</div>
-<div class="line"><span class="lineno">  117</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_map.html">std::unordered_map&lt;int, int&gt;</a> frequency;</div>
+<div class="line"><span class="lineno">  117</span>        std::unordered_map&lt;int, int&gt; frequency;</div>
 <div class="line"><span class="lineno">  118</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> neighbor : neighbors) {</div>
 <div class="line"><span class="lineno">  119</span>            ++frequency[neighbor];</div>
 <div class="line"><span class="lineno">  120</span>        }</div>
-<div class="line"><span class="lineno">  121</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair&lt;int, int&gt;</a> predicted;</div>
+<div class="line"><span class="lineno">  121</span>        std::pair&lt;int, int&gt; predicted;</div>
 <div class="line"><span class="lineno">  122</span>        predicted.first = -1;</div>
 <div class="line"><span class="lineno">  123</span>        predicted.second = -1;</div>
 <div class="line"><span class="lineno">  124</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; kv : frequency) {</div>
@@ -370,25 +393,9 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  129</span>        }</div>
 <div class="line"><span class="lineno">  130</span>        <span class="keywordflow">return</span> predicted.first;</div>
 <div class="line"><span class="lineno">  131</span>    }</div>
-<div class="ttc" id="aat_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/at.html">std::vector::at</a></div><div class="ttdeci">T at(T... args)</div></div>
-<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/begin.html">std::vector::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a1b74d828b33760094906797042b89442"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">numerical_methods::simpson_method::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:117</div></div>
-<div class="ttc" id="adistance_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/distance.html">std::distance</a></div><div class="ttdeci">T distance(T... args)</div></div>
-<div class="ttc" id="aemplace_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/emplace_back.html">std::vector::emplace_back</a></div><div class="ttdeci">T emplace_back(T... args)</div></div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/end.html">std::vector::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="ak__nearest__neighbors_8cpp_html_ad6ae16e50bb153ebaa7251d0aaa97b69"><div class="ttname"><a href="../../d4/d3e/k__nearest__neighbors_8cpp.html#ad6ae16e50bb153ebaa7251d0aaa97b69">machine_learning::k_nearest_neighbors::euclidean_distance</a></div><div class="ttdeci">double euclidean_distance(const std::vector&lt; T &gt; &amp;a, const std::vector&lt; T &gt; &amp;b)</div><div class="ttdoc">Compute the Euclidean distance between two vectors.</div><div class="ttdef"><b>Definition</b> k_nearest_neighbors.cpp:43</div></div>
-<div class="ttc" id="apair_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a></div></div>
-<div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-<div class="ttc" id="asort_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/sort.html">std::sort</a></div><div class="ttdeci">T sort(T... args)</div></div>
-<div class="ttc" id="aunordered_map_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/unordered_map.html">std::unordered_map</a></div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn_a62e152db014cd4de675fa906e5ef2861_cgraph.svg" width="551" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a1b74d828b33760094906797042b89442"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">numerical_methods::simpson_method::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d18/composite__simpson__rule_8cpp_source.html#l00117">composite_simpson_rule.cpp:117</a></div></div>
+<div class="ttc" id="ak__nearest__neighbors_8cpp_html_ad6ae16e50bb153ebaa7251d0aaa97b69"><div class="ttname"><a href="../../d4/d3e/k__nearest__neighbors_8cpp.html#ad6ae16e50bb153ebaa7251d0aaa97b69">machine_learning::k_nearest_neighbors::euclidean_distance</a></div><div class="ttdeci">double euclidean_distance(const std::vector&lt; T &gt; &amp;a, const std::vector&lt; T &gt; &amp;b)</div><div class="ttdoc">Compute the Euclidean distance between two vectors.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d3e/k__nearest__neighbors_8cpp_source.html#l00043">k_nearest_neighbors.cpp:43</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -402,7 +409,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;double&gt; &gt; machine_learning::k_nearest_neighbors::Knn::X_ {}</td>
+          <td class="memname">std::vector&lt;std::vector&lt;double&gt; &gt; machine_learning::k_nearest_neighbors::Knn::X_ {}</td>
         </tr>
       </table>
   </td>
@@ -413,7 +420,9 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>attributes vector </p>
-<div class="fragment"><div class="line"><span class="lineno">   57</span>{};  <span class="comment">///&lt; attributes vector</span></div>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d3e/k__nearest__neighbors_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../d4/d3e/k__nearest__neighbors_8cpp_source.html">k_nearest_neighbors.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>{};  </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -427,7 +436,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;int&gt; machine_learning::k_nearest_neighbors::Knn::Y_ {}</td>
+          <td class="memname">std::vector&lt;int&gt; machine_learning::k_nearest_neighbors::Knn::Y_ {}</td>
         </tr>
       </table>
   </td>
@@ -438,12 +447,14 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>labels vector </p>
-<div class="fragment"><div class="line"><span class="lineno">   58</span>{};                  <span class="comment">///&lt; labels vector</span></div>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d3e/k__nearest__neighbors_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../d4/d3e/k__nearest__neighbors_8cpp_source.html">k_nearest_neighbors.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>{};                  </div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>machine_learning/<a class="el" href="../../d4/d3e/k__nearest__neighbors_8cpp.html">k_nearest_neighbors.cpp</a></li>
+<li>machine_learning/<a class="el" href="../../d4/d3e/k__nearest__neighbors_8cpp_source.html">k_nearest_neighbors.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

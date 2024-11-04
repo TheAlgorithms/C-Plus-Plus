@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: math/prime_factorization.cpp File Reference</title>
+<title>TheAlgorithms/C++: math/prime_factorization.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -122,7 +139,9 @@ Include dependency graph for prime_factorization.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/def/prime__factorization_8cpp__incl.svg" width="346" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../db/d0d/prime__factorization_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:affe577b9bce8f604f5e2f861c63c7099" id="r_affe577b9bce8f604f5e2f861c63c7099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affe577b9bce8f604f5e2f861c63c7099">SieveOfEratosthenes</a> (int N)</td></tr>
@@ -136,13 +155,15 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a7fe38b570a51e448430d6a0f072c2f23" id="r_a7fe38b570a51e448430d6a0f072c2f23"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fe38b570a51e448430d6a0f072c2f23">isprime</a> [1000006]</td></tr>
 <tr class="separator:a7fe38b570a51e448430d6a0f072c2f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af097796783684712b8326e5b82bfd4fe" id="r_af097796783684712b8326e5b82bfd4fe"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af097796783684712b8326e5b82bfd4fe">prime_numbers</a></td></tr>
+<tr class="memitem:af097796783684712b8326e5b82bfd4fe" id="r_af097796783684712b8326e5b82bfd4fe"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af097796783684712b8326e5b82bfd4fe">prime_numbers</a></td></tr>
 <tr class="separator:af097796783684712b8326e5b82bfd4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfb0df439a4beae5a34ef131ce737c1b" id="r_acfb0df439a4beae5a34ef131ce737c1b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; int, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfb0df439a4beae5a34ef131ce737c1b">factors</a></td></tr>
+<tr class="memitem:acfb0df439a4beae5a34ef131ce737c1b" id="r_acfb0df439a4beae5a34ef131ce737c1b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; int, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfb0df439a4beae5a34ef131ce737c1b">factors</a></td></tr>
 <tr class="separator:acfb0df439a4beae5a34ef131ce737c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Prime factorization of positive integers. </p>
+
+<p class="definition">Definition in file <a class="el" href="../../db/d0d/prime__factorization_8cpp_source.html">prime_factorization.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -159,11 +180,13 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Main program </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d0d/prime__factorization_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../db/d0d/prime__factorization_8cpp_source.html">prime_factorization.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   62</span>           {</div>
 <div class="line"><span class="lineno">   63</span>    <span class="keywordtype">int</span> num;</div>
-<div class="line"><span class="lineno">   64</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\t\tComputes the prime factorization\n\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   65</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Type in a number: &quot;</span>;</div>
-<div class="line"><span class="lineno">   66</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; num;</div>
+<div class="line"><span class="lineno">   64</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\t\tComputes the prime factorization\n\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   65</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Type in a number: &quot;</span>;</div>
+<div class="line"><span class="lineno">   66</span>    std::cin &gt;&gt; num;</div>
 <div class="line"><span class="lineno">   67</span> </div>
 <div class="line"><span class="lineno">   68</span>    <a class="code hl_function" href="#affe577b9bce8f604f5e2f861c63c7099">SieveOfEratosthenes</a>(num);</div>
 <div class="line"><span class="lineno">   69</span> </div>
@@ -171,23 +194,15 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   71</span> </div>
 <div class="line"><span class="lineno">   72</span>    <span class="comment">// Prime factors with their powers in the given number in new line</span></div>
 <div class="line"><span class="lineno">   73</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it : <a class="code hl_variable" href="#acfb0df439a4beae5a34ef131ce737c1b">factors</a>) {</div>
-<div class="line"><span class="lineno">   74</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; it.first &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; it.second &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   74</span>        std::cout &lt;&lt; it.first &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; it.second &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   75</span>    }</div>
 <div class="line"><span class="lineno">   76</span> </div>
 <div class="line"><span class="lineno">   77</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   78</span>}</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="aprime__factorization_8cpp_html_a0ece0145fb29a5cf48378c23dde2da46"><div class="ttname"><a href="#a0ece0145fb29a5cf48378c23dde2da46">prime_factorization</a></div><div class="ttdeci">void prime_factorization(int num)</div><div class="ttdef"><b>Definition</b> prime_factorization.cpp:40</div></div>
-<div class="ttc" id="aprime__factorization_8cpp_html_acfb0df439a4beae5a34ef131ce737c1b"><div class="ttname"><a href="#acfb0df439a4beae5a34ef131ce737c1b">factors</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; int, int &gt; &gt; factors</div><div class="ttdef"><b>Definition</b> prime_factorization.cpp:19</div></div>
-<div class="ttc" id="aprime__factorization_8cpp_html_affe577b9bce8f604f5e2f861c63c7099"><div class="ttname"><a href="#affe577b9bce8f604f5e2f861c63c7099">SieveOfEratosthenes</a></div><div class="ttdeci">void SieveOfEratosthenes(int N)</div><div class="ttdef"><b>Definition</b> prime_factorization.cpp:23</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d0d/prime__factorization_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="456" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aprime__factorization_8cpp_html_a0ece0145fb29a5cf48378c23dde2da46"><div class="ttname"><a href="#a0ece0145fb29a5cf48378c23dde2da46">prime_factorization</a></div><div class="ttdeci">void prime_factorization(int num)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0d/prime__factorization_8cpp_source.html#l00040">prime_factorization.cpp:40</a></div></div>
+<div class="ttc" id="aprime__factorization_8cpp_html_acfb0df439a4beae5a34ef131ce737c1b"><div class="ttname"><a href="#acfb0df439a4beae5a34ef131ce737c1b">factors</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; int, int &gt; &gt; factors</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0d/prime__factorization_8cpp_source.html#l00019">prime_factorization.cpp:19</a></div></div>
+<div class="ttc" id="aprime__factorization_8cpp_html_affe577b9bce8f604f5e2f861c63c7099"><div class="ttname"><a href="#affe577b9bce8f604f5e2f861c63c7099">SieveOfEratosthenes</a></div><div class="ttdeci">void SieveOfEratosthenes(int N)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0d/prime__factorization_8cpp_source.html#l00023">prime_factorization.cpp:23</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0ece0145fb29a5cf48378c23dde2da46" name="a0ece0145fb29a5cf48378c23dde2da46"></a>
@@ -205,6 +220,8 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Prime factorization of a number </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d0d/prime__factorization_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../db/d0d/prime__factorization_8cpp_source.html">prime_factorization.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   40</span>                                  {</div>
 <div class="line"><span class="lineno">   41</span>    <span class="keywordtype">int</span> number = num;</div>
 <div class="line"><span class="lineno">   42</span> </div>
@@ -222,17 +239,11 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   54</span>        }</div>
 <div class="line"><span class="lineno">   55</span> </div>
 <div class="line"><span class="lineno">   56</span>        <span class="keywordflow">if</span> (count)</div>
-<div class="line"><span class="lineno">   57</span>            <a class="code hl_variable" href="#acfb0df439a4beae5a34ef131ce737c1b">factors</a>.push_back(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(<a class="code hl_variable" href="#af097796783684712b8326e5b82bfd4fe">prime_numbers</a>[i], count));</div>
+<div class="line"><span class="lineno">   57</span>            <a class="code hl_variable" href="#acfb0df439a4beae5a34ef131ce737c1b">factors</a>.push_back(std::make_pair(<a class="code hl_variable" href="#af097796783684712b8326e5b82bfd4fe">prime_numbers</a>[i], count));</div>
 <div class="line"><span class="lineno">   58</span>    }</div>
 <div class="line"><span class="lineno">   59</span>}</div>
-<div class="ttc" id="amake_pair_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a></div><div class="ttdeci">T make_pair(T... args)</div></div>
-<div class="ttc" id="aprime__factorization_8cpp_html_af097796783684712b8326e5b82bfd4fe"><div class="ttname"><a href="#af097796783684712b8326e5b82bfd4fe">prime_numbers</a></div><div class="ttdeci">std::vector&lt; int &gt; prime_numbers</div><div class="ttdef"><b>Definition</b> prime_factorization.cpp:16</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d0d/prime__factorization_8cpp_a0ece0145fb29a5cf48378c23dde2da46_cgraph.svg" width="298" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aprime__factorization_8cpp_html_af097796783684712b8326e5b82bfd4fe"><div class="ttname"><a href="#af097796783684712b8326e5b82bfd4fe">prime_numbers</a></div><div class="ttdeci">std::vector&lt; int &gt; prime_numbers</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0d/prime__factorization_8cpp_source.html#l00016">prime_factorization.cpp:16</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="affe577b9bce8f604f5e2f861c63c7099" name="affe577b9bce8f604f5e2f861c63c7099"></a>
@@ -250,9 +261,11 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Calculating prime number upto a given range </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d0d/prime__factorization_8cpp_source.html#l00023">23</a> of file <a class="el" href="../../db/d0d/prime__factorization_8cpp_source.html">prime_factorization.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   23</span>                                {</div>
 <div class="line"><span class="lineno">   24</span>    <span class="comment">// initializes the array isprime</span></div>
-<div class="line"><span class="lineno">   25</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/memset.html">memset</a>(<a class="code hl_variable" href="#a7fe38b570a51e448430d6a0f072c2f23">isprime</a>, <span class="keyword">true</span>, <span class="keyword">sizeof</span> <a class="code hl_variable" href="#a7fe38b570a51e448430d6a0f072c2f23">isprime</a>);</div>
+<div class="line"><span class="lineno">   25</span>    memset(<a class="code hl_variable" href="#a7fe38b570a51e448430d6a0f072c2f23">isprime</a>, <span class="keyword">true</span>, <span class="keyword">sizeof</span> <a class="code hl_variable" href="#a7fe38b570a51e448430d6a0f072c2f23">isprime</a>);</div>
 <div class="line"><span class="lineno">   26</span> </div>
 <div class="line"><span class="lineno">   27</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 2; i &lt;= <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
 <div class="line"><span class="lineno">   28</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a7fe38b570a51e448430d6a0f072c2f23">isprime</a>[i]) {</div>
@@ -262,19 +275,12 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   32</span> </div>
 <div class="line"><span class="lineno">   33</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 2; i &lt;= <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
 <div class="line"><span class="lineno">   34</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a7fe38b570a51e448430d6a0f072c2f23">isprime</a>[i])</div>
-<div class="line"><span class="lineno">   35</span>            <a class="code hl_variable" href="#af097796783684712b8326e5b82bfd4fe">prime_numbers</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(i);</div>
+<div class="line"><span class="lineno">   35</span>            <a class="code hl_variable" href="#af097796783684712b8326e5b82bfd4fe">prime_numbers</a>.push_back(i);</div>
 <div class="line"><span class="lineno">   36</span>    }</div>
 <div class="line"><span class="lineno">   37</span>}</div>
-<div class="ttc" id="amemset_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/byte/memset.html">std::memset</a></div><div class="ttdeci">T memset(T... args)</div></div>
-<div class="ttc" id="aprime__factorization_8cpp_html_a7fe38b570a51e448430d6a0f072c2f23"><div class="ttname"><a href="#a7fe38b570a51e448430d6a0f072c2f23">isprime</a></div><div class="ttdeci">bool isprime[1000006]</div><div class="ttdef"><b>Definition</b> prime_factorization.cpp:13</div></div>
-<div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
-<div class="ttc" id="asparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:48</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d0d/prime__factorization_8cpp_affe577b9bce8f604f5e2f861c63c7099_cgraph.svg" width="359" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aprime__factorization_8cpp_html_a7fe38b570a51e448430d6a0f072c2f23"><div class="ttname"><a href="#a7fe38b570a51e448430d6a0f072c2f23">isprime</a></div><div class="ttdeci">bool isprime[1000006]</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0d/prime__factorization_8cpp_source.html#l00013">prime_factorization.cpp:13</a></div></div>
+<div class="ttc" id="asparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dab/sparse__table_8cpp_source.html#l00048">sparse_table.cpp:48</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -285,11 +291,13 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt;int, int&gt; &gt; factors</td>
+          <td class="memname">std::vector&lt;std::pair&lt;int, int&gt; &gt; factors</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>list of prime factor-pairs </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d0d/prime__factorization_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../db/d0d/prime__factorization_8cpp_source.html">prime_factorization.cpp</a>.</p>
 
 </div>
 </div>
@@ -306,6 +314,8 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Declaring variables for maintaing prime numbers and to check whether a number is prime or not </p>
 
+<p class="definition">Definition at line <a class="el" href="../../db/d0d/prime__factorization_8cpp_source.html#l00013">13</a> of file <a class="el" href="../../db/d0d/prime__factorization_8cpp_source.html">prime_factorization.cpp</a>.</p>
+
 </div>
 </div>
 <a id="af097796783684712b8326e5b82bfd4fe" name="af097796783684712b8326e5b82bfd4fe"></a>
@@ -315,11 +325,13 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;int&gt; prime_numbers</td>
+          <td class="memname">std::vector&lt;int&gt; prime_numbers</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>list of prime numbers </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d0d/prime__factorization_8cpp_source.html#l00016">16</a> of file <a class="el" href="../../db/d0d/prime__factorization_8cpp_source.html">prime_factorization.cpp</a>.</p>
 
 </div>
 </div>

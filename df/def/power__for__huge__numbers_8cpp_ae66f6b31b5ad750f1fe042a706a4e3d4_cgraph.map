@@ -1,7 +1,0 @@
-<map id="main" name="main">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,55,31"/>
-<area shape="rect" id="Node000002" href="$df/def/power__for__huge__numbers_8cpp.html#ae249a2af508aa94266023ce8aa81426f" title=" " alt="" coords="103,5,159,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,16,87,16,87,21,55,21"/>
-<area shape="rect" id="Node000003" href="$df/def/power__for__huge__numbers_8cpp.html#aa141a7904f0c4668bac112d652a3acf9" title=" " alt="" coords="207,5,273,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="160,16,192,16,192,21,160,21"/>
-</map>

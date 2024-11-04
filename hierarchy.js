@@ -121,7 +121,7 @@ var hierarchy =
     [ "Trie", "dd/d2f/class_trie.html", null ],
     [ "data_structures::trie", "d0/d3e/classdata__structures_1_1trie.html", null ],
     [ "Trie::TrieNode", "de/d48/struct_trie_1_1_trie_node.html", null ],
-    [ "std::true_type", "http://en.cppreference.com/w/cpp/types/integral_constant.html", [
+    [ "std::true_type", null, [
       [ "std::is_arithmetic< uint128_t >", "d2/dfc/structstd_1_1is__arithmetic_3_01uint128__t_01_4.html", null ],
       [ "std::is_arithmetic< uint256_t >", "dc/d6d/structstd_1_1is__arithmetic_3_01uint256__t_01_4.html", null ],
       [ "std::is_integral< uint128_t >", "d2/dd4/structstd_1_1is__integral_3_01uint128__t_01_4.html", null ],

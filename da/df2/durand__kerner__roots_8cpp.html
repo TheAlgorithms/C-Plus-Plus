@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: numerical_methods/durand_kerner_roots.cpp File Reference</title>
+<title>TheAlgorithms/C++: numerical_methods/durand_kerner_roots.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -128,7 +145,9 @@ Include dependency graph for durand_kerner_roots.cpp:</div>
 <div class="dyncontent">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d4/d26/durand__kerner__roots_8cpp__incl.svg" width="100%" height="394"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../da/df2/durand__kerner__roots_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:af270a96662132d0385cb6b4637c5a689" id="r_af270a96662132d0385cb6b4637c5a689"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af270a96662132d0385cb6b4637c5a689">ACCURACY</a>&#160;&#160;&#160;1e-10</td></tr>
@@ -139,13 +158,13 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae2ab49ba1969d7a5988f9bc2c8924569" id="r_ae2ab49ba1969d7a5988f9bc2c8924569"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2ab49ba1969d7a5988f9bc2c8924569">poly_function</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; &amp;coeffs, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex</a>&lt; double &gt; x)</td></tr>
+<tr class="memitem:ae2ab49ba1969d7a5988f9bc2c8924569" id="r_ae2ab49ba1969d7a5988f9bc2c8924569"><td class="memItemLeft" align="right" valign="top">std::complex&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2ab49ba1969d7a5988f9bc2c8924569">poly_function</a> (const std::valarray&lt; double &gt; &amp;coeffs, std::complex&lt; double &gt; x)</td></tr>
 <tr class="separator:ae2ab49ba1969d7a5988f9bc2c8924569"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90219e35062007d1f1b68e9af071ab5c" id="r_a90219e35062007d1f1b68e9af071ab5c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90219e35062007d1f1b68e9af071ab5c">complex_str</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex</a>&lt; double &gt; &amp;x)</td></tr>
+<tr class="memitem:a90219e35062007d1f1b68e9af071ab5c" id="r_a90219e35062007d1f1b68e9af071ab5c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90219e35062007d1f1b68e9af071ab5c">complex_str</a> (const std::complex&lt; double &gt; &amp;x)</td></tr>
 <tr class="separator:a90219e35062007d1f1b68e9af071ab5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a024b8bc4755863315456d573a6732377" id="r_a024b8bc4755863315456d573a6732377"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a024b8bc4755863315456d573a6732377">check_termination</a> (long double delta)</td></tr>
 <tr class="separator:a024b8bc4755863315456d573a6732377"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c35b320ace8677f9b331faf94f8b2fd" id="r_a2c35b320ace8677f9b331faf94f8b2fd"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; uint32_t, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c35b320ace8677f9b331faf94f8b2fd">durand_kerner_algo</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; &amp;coeffs, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex</a>&lt; double &gt; &gt; *roots, bool write_log=false)</td></tr>
+<tr class="memitem:a2c35b320ace8677f9b331faf94f8b2fd" id="r_a2c35b320ace8677f9b331faf94f8b2fd"><td class="memItemLeft" align="right" valign="top">std::pair&lt; uint32_t, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c35b320ace8677f9b331faf94f8b2fd">durand_kerner_algo</a> (const std::valarray&lt; double &gt; &amp;coeffs, std::valarray&lt; std::complex&lt; double &gt; &gt; *roots, bool write_log=false)</td></tr>
 <tr class="separator:a2c35b320ace8677f9b331faf94f8b2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1440a7779ac56f47a3f355ce4a8c7da0" id="r_a1440a7779ac56f47a3f355ce4a8c7da0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1440a7779ac56f47a3f355ce4a8c7da0">test1</a> ()</td></tr>
 <tr class="separator:a1440a7779ac56f47a3f355ce4a8c7da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,6 +189,8 @@ Functions</h2></td></tr>
    iteration." style="pointer-events: none;" width="400" class="inline"/> <img src="https://raw.githubusercontent.com/TheAlgorithms/C-Plus-Plus/docs/images/numerical_methods/durand_kerner_roots.svg" alt="Roots evolution - shows the initial approximation of the
    roots and their convergence to a final approximation along with the iterative
    approximations" style="pointer-events: none;" width="400" class="inline"/> </p>
+
+<p class="definition">Definition in file <a class="el" href="../../da/df2/durand__kerner__roots_8cpp_source.html">durand_kerner_roots.cpp</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="af270a96662132d0385cb6b4637c5a689" name="af270a96662132d0385cb6b4637c5a689"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af270a96662132d0385cb6b4637c5a689">&#9670;&#160;</a></span>ACCURACY</h2>
@@ -183,6 +204,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>maximum accuracy limit </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/df2/durand__kerner__roots_8cpp_source.html#l00046">46</a> of file <a class="el" href="../../da/df2/durand__kerner__roots_8cpp_source.html">durand_kerner_roots.cpp</a>.</p>
 
 </div>
 </div>
@@ -210,6 +233,8 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><code>false</code> if termination not reached </dd>
 <dd>
 <code>true</code> if termination reached </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/df2/durand__kerner__roots_8cpp_source.html#l00092">92</a> of file <a class="el" href="../../da/df2/durand__kerner__roots_8cpp_source.html">durand_kerner_roots.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   92</span>                                          {</div>
 <div class="line"><span class="lineno">   93</span>    <span class="keyword">static</span> <span class="keywordtype">long</span> <span class="keywordtype">double</span> past_delta = INFINITY;</div>
 <div class="line"><span class="lineno">   94</span>    <span class="keywordflow">if</span> (std::abs(past_delta - delta) &lt;= <a class="code hl_define" href="#af270a96662132d0385cb6b4637c5a689">ACCURACY</a> || delta &lt; <a class="code hl_define" href="#af270a96662132d0385cb6b4637c5a689">ACCURACY</a>)</div>
@@ -217,7 +242,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   96</span>    past_delta = delta;</div>
 <div class="line"><span class="lineno">   97</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   98</span>}</div>
-<div class="ttc" id="adurand__kerner__roots_8cpp_html_af270a96662132d0385cb6b4637c5a689"><div class="ttname"><a href="#af270a96662132d0385cb6b4637c5a689">ACCURACY</a></div><div class="ttdeci">#define ACCURACY</div><div class="ttdef"><b>Definition</b> durand_kerner_roots.cpp:46</div></div>
+<div class="ttc" id="adurand__kerner__roots_8cpp_html_af270a96662132d0385cb6b4637c5a689"><div class="ttname"><a href="#af270a96662132d0385cb6b4637c5a689">ACCURACY</a></div><div class="ttdeci">#define ACCURACY</div><div class="ttdef"><b>Definition</b> <a href="../../da/df2/durand__kerner__roots_8cpp_source.html#l00046">durand_kerner_roots.cpp:46</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -230,7 +255,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">const char * complex_str </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex</a>&lt; double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td class="paramtype">const std::complex&lt; double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -242,23 +267,17 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer to converted string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/df2/durand__kerner__roots_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../da/df2/durand__kerner__roots_8cpp_source.html">durand_kerner_roots.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   77</span>                                                     {</div>
 <div class="line"><span class="lineno">   78</span><span class="preprocessor">#define MAX_BUFF_SIZE 50</span></div>
 <div class="line"><span class="lineno">   79</span>    <span class="keyword">static</span> <span class="keywordtype">char</span> msg[MAX_BUFF_SIZE];</div>
 <div class="line"><span class="lineno">   80</span> </div>
-<div class="line"><span class="lineno">   81</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/c/fprintf.html">std::snprintf</a>(msg, MAX_BUFF_SIZE, <span class="stringliteral">&quot;% 7.04g%+7.04gj&quot;</span>, x.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex/real.html">real</a>(), x.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex/imag.html">imag</a>());</div>
+<div class="line"><span class="lineno">   81</span>    std::snprintf(msg, MAX_BUFF_SIZE, <span class="stringliteral">&quot;% 7.04g%+7.04gj&quot;</span>, x.real(), x.imag());</div>
 <div class="line"><span class="lineno">   82</span> </div>
 <div class="line"><span class="lineno">   83</span>    <span class="keywordflow">return</span> msg;</div>
 <div class="line"><span class="lineno">   84</span>}</div>
-<div class="ttc" id="afprintf_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/c/fprintf.html">std::snprintf</a></div><div class="ttdeci">T snprintf(T... args)</div></div>
-<div class="ttc" id="aimag_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/complex/imag.html">std::complex::imag</a></div><div class="ttdeci">T imag(T... args)</div></div>
-<div class="ttc" id="areal_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/complex/real.html">std::complex::real</a></div><div class="ttdeci">T real(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/df2/durand__kerner__roots_8cpp_a90219e35062007d1f1b68e9af071ab5c_cgraph.svg" width="284" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2c35b320ace8677f9b331faf94f8b2fd" name="a2c35b320ace8677f9b331faf94f8b2fd"></a>
@@ -268,14 +287,14 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; uint32_t, double &gt; durand_kerner_algo </td>
+          <td class="memname">std::pair&lt; uint32_t, double &gt; durand_kerner_algo </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>coeffs</em></span>, </td>
+          <td class="paramtype">const std::valarray&lt; double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>coeffs</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex</a>&lt; double &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>roots</em></span>, </td>
+          <td class="paramtype">std::valarray&lt; std::complex&lt; double &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>roots</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -294,20 +313,22 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pair of values - number of iterations taken and final accuracy achieved </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/df2/durand__kerner__roots_8cpp_source.html#l00110">110</a> of file <a class="el" href="../../da/df2/durand__kerner__roots_8cpp_source.html">durand_kerner_roots.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  112</span>                                                                    {</div>
 <div class="line"><span class="lineno">  113</span>    <span class="keywordtype">long</span> <span class="keywordtype">double</span> tol_condition = 1;</div>
 <div class="line"><span class="lineno">  114</span>    uint32_t iter = 0;</div>
 <div class="line"><span class="lineno">  115</span>    <span class="keywordtype">int</span> n;</div>
-<div class="line"><span class="lineno">  116</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a> log_file;</div>
+<div class="line"><span class="lineno">  116</span>    std::ofstream log_file;</div>
 <div class="line"><span class="lineno">  117</span> </div>
 <div class="line"><span class="lineno">  118</span>    <span class="keywordflow">if</span> (write_log) {</div>
 <div class="line"><span class="lineno">  119</span>        <span class="comment">/*</span></div>
 <div class="line"><span class="lineno">  120</span><span class="comment">         * store intermediate values to a CSV file</span></div>
 <div class="line"><span class="lineno">  121</span><span class="comment">         */</span></div>
-<div class="line"><span class="lineno">  122</span>        log_file.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html">open</a>(<span class="stringliteral">&quot;durand_kerner.log.csv&quot;</span>);</div>
-<div class="line"><span class="lineno">  123</span>        <span class="keywordflow">if</span> (!log_file.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">is_open</a>()) {</div>
-<div class="line"><span class="lineno">  124</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/c/perror.html">perror</a>(<span class="stringliteral">&quot;Unable to create a storage log file!&quot;</span>);</div>
-<div class="line"><span class="lineno">  125</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/program/exit.html">std::exit</a>(EXIT_FAILURE);</div>
+<div class="line"><span class="lineno">  122</span>        log_file.open(<span class="stringliteral">&quot;durand_kerner.log.csv&quot;</span>);</div>
+<div class="line"><span class="lineno">  123</span>        <span class="keywordflow">if</span> (!log_file.is_open()) {</div>
+<div class="line"><span class="lineno">  124</span>            perror(<span class="stringliteral">&quot;Unable to create a storage log file!&quot;</span>);</div>
+<div class="line"><span class="lineno">  125</span>            std::exit(EXIT_FAILURE);</div>
 <div class="line"><span class="lineno">  126</span>        }</div>
 <div class="line"><span class="lineno">  127</span>        log_file &lt;&lt; <span class="stringliteral">&quot;iter#,&quot;</span>;</div>
 <div class="line"><span class="lineno">  128</span> </div>
@@ -326,7 +347,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  141</span>        iter++;</div>
 <div class="line"><span class="lineno">  142</span>        break_loop = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  143</span> </div>
-<div class="line"><span class="lineno">  144</span>        <span class="keywordflow">if</span> (log_file.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">is_open</a>())</div>
+<div class="line"><span class="lineno">  144</span>        <span class="keywordflow">if</span> (log_file.is_open())</div>
 <div class="line"><span class="lineno">  145</span>            log_file &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; iter &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
 <div class="line"><span class="lineno">  146</span> </div>
 <div class="line"><span class="lineno">  147</span><span class="preprocessor">#ifdef _OPENMP</span></div>
@@ -336,17 +357,17 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  151</span>            <span class="keywordflow">if</span> (break_loop)</div>
 <div class="line"><span class="lineno">  152</span>                <span class="keywordflow">continue</span>;</div>
 <div class="line"><span class="lineno">  153</span> </div>
-<div class="line"><span class="lineno">  154</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a> numerator, denominator;</div>
+<div class="line"><span class="lineno">  154</span>            std::complex&lt;double&gt; numerator, denominator;</div>
 <div class="line"><span class="lineno">  155</span>            numerator = <a class="code hl_function" href="#ae2ab49ba1969d7a5988f9bc2c8924569">poly_function</a>(coeffs, (*roots)[n]);</div>
 <div class="line"><span class="lineno">  156</span>            denominator = 1.0;</div>
 <div class="line"><span class="lineno">  157</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; roots-&gt;size(); i++)</div>
 <div class="line"><span class="lineno">  158</span>                <span class="keywordflow">if</span> (i != n)</div>
 <div class="line"><span class="lineno">  159</span>                    denominator *= (*roots)[n] - (*roots)[i];</div>
 <div class="line"><span class="lineno">  160</span> </div>
-<div class="line"><span class="lineno">  161</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;long double&gt;</a> delta = numerator / denominator;</div>
+<div class="line"><span class="lineno">  161</span>            std::complex&lt;long double&gt; delta = numerator / denominator;</div>
 <div class="line"><span class="lineno">  162</span> </div>
-<div class="line"><span class="lineno">  163</span>            <span class="keywordflow">if</span> (<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/isnan.html">std::isnan</a>(std::abs(delta)) || <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/isinf.html">std::isinf</a>(std::abs(delta))) {</div>
-<div class="line"><span class="lineno">  164</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;\n\nOverflow/underrun error - got value = &quot;</span></div>
+<div class="line"><span class="lineno">  163</span>            <span class="keywordflow">if</span> (std::isnan(std::abs(delta)) || std::isinf(std::abs(delta))) {</div>
+<div class="line"><span class="lineno">  164</span>                std::cerr &lt;&lt; <span class="stringliteral">&quot;\n\nOverflow/underrun error - got value = &quot;</span></div>
 <div class="line"><span class="lineno">  165</span>                          &lt;&lt; std::abs(delta) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  166</span>                <span class="comment">// return std::pair&lt;uint32_t, double&gt;(iter, tol_condition);</span></div>
 <div class="line"><span class="lineno">  167</span>                break_loop = <span class="keyword">true</span>;</div>
@@ -357,54 +378,38 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  172</span><span class="preprocessor">#ifdef _OPENMP</span></div>
 <div class="line"><span class="lineno">  173</span><span class="preprocessor">#pragma omp critical</span></div>
 <div class="line"><span class="lineno">  174</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">  175</span>            tol_condition = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(tol_condition, std::abs(std::abs(delta)));</div>
+<div class="line"><span class="lineno">  175</span>            tol_condition = std::max(tol_condition, std::abs(std::abs(delta)));</div>
 <div class="line"><span class="lineno">  176</span>        }</div>
 <div class="line"><span class="lineno">  177</span>        <span class="comment">// tol_condition /= (degree - 1);</span></div>
 <div class="line"><span class="lineno">  178</span> </div>
 <div class="line"><span class="lineno">  179</span>        <span class="keywordflow">if</span> (break_loop)</div>
 <div class="line"><span class="lineno">  180</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  181</span> </div>
-<div class="line"><span class="lineno">  182</span>        <span class="keywordflow">if</span> (log_file.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">is_open</a>()) {</div>
+<div class="line"><span class="lineno">  182</span>        <span class="keywordflow">if</span> (log_file.is_open()) {</div>
 <div class="line"><span class="lineno">  183</span>            <span class="keywordflow">for</span> (n = 0; n &lt; roots-&gt;size(); n++)</div>
 <div class="line"><span class="lineno">  184</span>                log_file &lt;&lt; <a class="code hl_function" href="#a90219e35062007d1f1b68e9af071ab5c">complex_str</a>((*roots)[n]) &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
 <div class="line"><span class="lineno">  185</span>        }</div>
 <div class="line"><span class="lineno">  186</span> </div>
 <div class="line"><span class="lineno">  187</span><span class="preprocessor">#if defined(DEBUG) || !defined(NDEBUG)</span></div>
 <div class="line"><span class="lineno">  188</span>        <span class="keywordflow">if</span> (iter % 500 == 0) {</div>
-<div class="line"><span class="lineno">  189</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Iter: &quot;</span> &lt;&lt; iter &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span>;</div>
+<div class="line"><span class="lineno">  189</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Iter: &quot;</span> &lt;&lt; iter &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span>;</div>
 <div class="line"><span class="lineno">  190</span>            <span class="keywordflow">for</span> (n = 0; n &lt; roots-&gt;size(); n++)</div>
-<div class="line"><span class="lineno">  191</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; <a class="code hl_function" href="#a90219e35062007d1f1b68e9af071ab5c">complex_str</a>((*roots)[n]);</div>
-<div class="line"><span class="lineno">  192</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\t\tabsolute average change: &quot;</span> &lt;&lt; tol_condition</div>
+<div class="line"><span class="lineno">  191</span>                std::cout &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; <a class="code hl_function" href="#a90219e35062007d1f1b68e9af071ab5c">complex_str</a>((*roots)[n]);</div>
+<div class="line"><span class="lineno">  192</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;\t\tabsolute average change: &quot;</span> &lt;&lt; tol_condition</div>
 <div class="line"><span class="lineno">  193</span>                      &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  194</span>        }</div>
 <div class="line"><span class="lineno">  195</span><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="lineno">  196</span> </div>
-<div class="line"><span class="lineno">  197</span>        <span class="keywordflow">if</span> (log_file.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">is_open</a>())</div>
+<div class="line"><span class="lineno">  197</span>        <span class="keywordflow">if</span> (log_file.is_open())</div>
 <div class="line"><span class="lineno">  198</span>            log_file &lt;&lt; tol_condition;</div>
 <div class="line"><span class="lineno">  199</span>    }</div>
 <div class="line"><span class="lineno">  200</span> </div>
-<div class="line"><span class="lineno">  201</span>    <span class="keywordflow">return</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair&lt;uint32_t, long double&gt;</a>(iter, tol_condition);</div>
+<div class="line"><span class="lineno">  201</span>    <span class="keywordflow">return</span> std::pair&lt;uint32_t, long double&gt;(iter, tol_condition);</div>
 <div class="line"><span class="lineno">  202</span>}</div>
-<div class="ttc" id="abasic_ofstream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a></div></div>
-<div class="ttc" id="acomplex_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex</a></div></div>
-<div class="ttc" id="adurand__kerner__roots_8cpp_html_a024b8bc4755863315456d573a6732377"><div class="ttname"><a href="#a024b8bc4755863315456d573a6732377">check_termination</a></div><div class="ttdeci">bool check_termination(long double delta)</div><div class="ttdef"><b>Definition</b> durand_kerner_roots.cpp:92</div></div>
-<div class="ttc" id="adurand__kerner__roots_8cpp_html_a90219e35062007d1f1b68e9af071ab5c"><div class="ttname"><a href="#a90219e35062007d1f1b68e9af071ab5c">complex_str</a></div><div class="ttdeci">const char * complex_str(const std::complex&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> durand_kerner_roots.cpp:77</div></div>
-<div class="ttc" id="adurand__kerner__roots_8cpp_html_ae2ab49ba1969d7a5988f9bc2c8924569"><div class="ttname"><a href="#ae2ab49ba1969d7a5988f9bc2c8924569">poly_function</a></div><div class="ttdeci">std::complex&lt; double &gt; poly_function(const std::valarray&lt; double &gt; &amp;coeffs, std::complex&lt; double &gt; x)</div><div class="ttdef"><b>Definition</b> durand_kerner_roots.cpp:54</div></div>
-<div class="ttc" id="aexit_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/program/exit.html">std::exit</a></div><div class="ttdeci">T exit(T... args)</div></div>
-<div class="ttc" id="ais_open_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">std::ofstream::is_open</a></div><div class="ttdeci">T is_open(T... args)</div></div>
-<div class="ttc" id="aisinf_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/isinf.html">std::isinf</a></div><div class="ttdeci">T isinf(T... args)</div></div>
-<div class="ttc" id="aisnan_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/isnan.html">std::isnan</a></div><div class="ttdeci">T isnan(T... args)</div></div>
-<div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
-<div class="ttc" id="aopen_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html">std::ofstream::open</a></div><div class="ttdeci">T open(T... args)</div></div>
-<div class="ttc" id="apair_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a></div></div>
-<div class="ttc" id="aperror_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/c/perror.html">std::perror</a></div><div class="ttdeci">T perror(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/df2/durand__kerner__roots_8cpp_a2c35b320ace8677f9b331faf94f8b2fd_cgraph.svg" width="526" height="431"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="adurand__kerner__roots_8cpp_html_a024b8bc4755863315456d573a6732377"><div class="ttname"><a href="#a024b8bc4755863315456d573a6732377">check_termination</a></div><div class="ttdeci">bool check_termination(long double delta)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df2/durand__kerner__roots_8cpp_source.html#l00092">durand_kerner_roots.cpp:92</a></div></div>
+<div class="ttc" id="adurand__kerner__roots_8cpp_html_a90219e35062007d1f1b68e9af071ab5c"><div class="ttname"><a href="#a90219e35062007d1f1b68e9af071ab5c">complex_str</a></div><div class="ttdeci">const char * complex_str(const std::complex&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df2/durand__kerner__roots_8cpp_source.html#l00077">durand_kerner_roots.cpp:77</a></div></div>
+<div class="ttc" id="adurand__kerner__roots_8cpp_html_ae2ab49ba1969d7a5988f9bc2c8924569"><div class="ttname"><a href="#ae2ab49ba1969d7a5988f9bc2c8924569">poly_function</a></div><div class="ttdeci">std::complex&lt; double &gt; poly_function(const std::valarray&lt; double &gt; &amp;coeffs, std::complex&lt; double &gt; x)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df2/durand__kerner__roots_8cpp_source.html#l00054">durand_kerner_roots.cpp:54</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3c04138a5bfe5d72780bb7e82a18e627" name="a3c04138a5bfe5d72780bb7e82a18e627"></a>
@@ -425,37 +430,39 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/df2/durand__kerner__roots_8cpp_source.html#l00284">284</a> of file <a class="el" href="../../da/df2/durand__kerner__roots_8cpp_source.html">durand_kerner_roots.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  284</span>                                {</div>
 <div class="line"><span class="lineno">  285</span>    <span class="comment">/* initialize random seed: */</span></div>
-<div class="line"><span class="lineno">  286</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a>(<span class="keyword">nullptr</span>));</div>
+<div class="line"><span class="lineno">  286</span>    std::srand(std::time(<span class="keyword">nullptr</span>));</div>
 <div class="line"><span class="lineno">  287</span> </div>
 <div class="line"><span class="lineno">  288</span>    <span class="keywordflow">if</span> (argc &lt; 2) {</div>
 <div class="line"><span class="lineno">  289</span>        <a class="code hl_function" href="#a1440a7779ac56f47a3f355ce4a8c7da0">test1</a>();  <span class="comment">// run tests when no input is provided</span></div>
 <div class="line"><span class="lineno">  290</span>        <a class="code hl_function" href="#a0283886819c7c140a023582b7269e2d0">test2</a>();  <span class="comment">// and skip tests when input polynomial is provided</span></div>
-<div class="line"><span class="lineno">  291</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Please pass the coefficients of the polynomial as &quot;</span></div>
+<div class="line"><span class="lineno">  291</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Please pass the coefficients of the polynomial as &quot;</span></div>
 <div class="line"><span class="lineno">  292</span>                     <span class="stringliteral">&quot;commandline &quot;</span></div>
 <div class="line"><span class="lineno">  293</span>                     <span class="stringliteral">&quot;arguments.\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  294</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  295</span>    }</div>
 <div class="line"><span class="lineno">  296</span> </div>
 <div class="line"><span class="lineno">  297</span>    <span class="keywordtype">int</span> n, degree = argc - 1;              <span class="comment">// detected polynomial degree</span></div>
-<div class="line"><span class="lineno">  298</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a> coeffs(degree);  <span class="comment">// create coefficiencts array</span></div>
+<div class="line"><span class="lineno">  298</span>    std::valarray&lt;double&gt; coeffs(degree);  <span class="comment">// create coefficiencts array</span></div>
 <div class="line"><span class="lineno">  299</span> </div>
 <div class="line"><span class="lineno">  300</span>    <span class="comment">// number of roots = degree - 1</span></div>
-<div class="line"><span class="lineno">  301</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;std::complex&lt;double&gt;</a>&gt; s0(degree - 1);</div>
+<div class="line"><span class="lineno">  301</span>    std::valarray&lt;std::complex&lt;double&gt;&gt; s0(degree - 1);</div>
 <div class="line"><span class="lineno">  302</span> </div>
-<div class="line"><span class="lineno">  303</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Computing the roots for:\n\t&quot;</span>;</div>
+<div class="line"><span class="lineno">  303</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Computing the roots for:\n\t&quot;</span>;</div>
 <div class="line"><span class="lineno">  304</span>    <span class="keywordflow">for</span> (n = 0; n &lt; degree; n++) {</div>
-<div class="line"><span class="lineno">  305</span>        coeffs[n] = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/strtof.html">strtod</a>(argv[n + 1], <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  305</span>        coeffs[n] = strtod(argv[n + 1], <span class="keyword">nullptr</span>);</div>
 <div class="line"><span class="lineno">  306</span>        <span class="keywordflow">if</span> (n &lt; degree - 1 &amp;&amp; coeffs[n] != 0)</div>
-<div class="line"><span class="lineno">  307</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;(&quot;</span> &lt;&lt; coeffs[n] &lt;&lt; <span class="stringliteral">&quot;) x^&quot;</span> &lt;&lt; degree - n - 1 &lt;&lt; <span class="stringliteral">&quot; + &quot;</span>;</div>
+<div class="line"><span class="lineno">  307</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;(&quot;</span> &lt;&lt; coeffs[n] &lt;&lt; <span class="stringliteral">&quot;) x^&quot;</span> &lt;&lt; degree - n - 1 &lt;&lt; <span class="stringliteral">&quot; + &quot;</span>;</div>
 <div class="line"><span class="lineno">  308</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (coeffs[n] != 0)</div>
-<div class="line"><span class="lineno">  309</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;(&quot;</span> &lt;&lt; coeffs[n] &lt;&lt; <span class="stringliteral">&quot;) x^&quot;</span> &lt;&lt; degree - n - 1</div>
+<div class="line"><span class="lineno">  309</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;(&quot;</span> &lt;&lt; coeffs[n] &lt;&lt; <span class="stringliteral">&quot;) x^&quot;</span> &lt;&lt; degree - n - 1</div>
 <div class="line"><span class="lineno">  310</span>                      &lt;&lt; <span class="stringliteral">&quot; = 0\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  311</span> </div>
 <div class="line"><span class="lineno">  312</span>        <span class="comment">/* initialize root approximations with random values */</span></div>
 <div class="line"><span class="lineno">  313</span>        <span class="keywordflow">if</span> (n &lt; degree - 1) {</div>
-<div class="line"><span class="lineno">  314</span>            s0[n] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100, <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100);</div>
+<div class="line"><span class="lineno">  314</span>            s0[n] = std::complex&lt;double&gt;(std::rand() % 100, std::rand() % 100);</div>
 <div class="line"><span class="lineno">  315</span>            s0[n] -= 50.f;</div>
 <div class="line"><span class="lineno">  316</span>            s0[n] /= 50.f;</div>
 <div class="line"><span class="lineno">  317</span>        }</div>
@@ -468,30 +475,24 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  324</span>        coeffs /= tmp;</div>
 <div class="line"><span class="lineno">  325</span>    }</div>
 <div class="line"><span class="lineno">  326</span> </div>
-<div class="line"><span class="lineno">  327</span>    clock_t end_time, start_time = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">clock</a>();</div>
+<div class="line"><span class="lineno">  327</span>    clock_t end_time, start_time = clock();</div>
 <div class="line"><span class="lineno">  328</span>    <span class="keyword">auto</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = <a class="code hl_function" href="#a2c35b320ace8677f9b331faf94f8b2fd">durand_kerner_algo</a>(coeffs, &amp;s0, <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  329</span>    end_time = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">clock</a>();</div>
+<div class="line"><span class="lineno">  329</span>    end_time = clock();</div>
 <div class="line"><span class="lineno">  330</span> </div>
-<div class="line"><span class="lineno">  331</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nIterations: &quot;</span> &lt;&lt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.first &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  331</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nIterations: &quot;</span> &lt;&lt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.first &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  332</span>    <span class="keywordflow">for</span> (n = 0; n &lt; degree - 1; n++)</div>
-<div class="line"><span class="lineno">  333</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; <a class="code hl_function" href="#a90219e35062007d1f1b68e9af071ab5c">complex_str</a>(s0[n]) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  334</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;absolute average change: &quot;</span> &lt;&lt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.second &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  335</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Time taken: &quot;</span></div>
+<div class="line"><span class="lineno">  333</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; <a class="code hl_function" href="#a90219e35062007d1f1b68e9af071ab5c">complex_str</a>(s0[n]) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  334</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;absolute average change: &quot;</span> &lt;&lt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.second &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  335</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Time taken: &quot;</span></div>
 <div class="line"><span class="lineno">  336</span>              &lt;&lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(end_time - start_time) / CLOCKS_PER_SEC</div>
 <div class="line"><span class="lineno">  337</span>              &lt;&lt; <span class="stringliteral">&quot; sec\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  338</span> </div>
 <div class="line"><span class="lineno">  339</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  340</span>}</div>
-<div class="ttc" id="aclock_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a></div><div class="ttdeci">T clock(T... args)</div></div>
-<div class="ttc" id="adurand__kerner__roots_8cpp_html_a0283886819c7c140a023582b7269e2d0"><div class="ttname"><a href="#a0283886819c7c140a023582b7269e2d0">test2</a></div><div class="ttdeci">void test2()</div><div class="ttdef"><b>Definition</b> durand_kerner_roots.cpp:243</div></div>
-<div class="ttc" id="adurand__kerner__roots_8cpp_html_a1440a7779ac56f47a3f355ce4a8c7da0"><div class="ttname"><a href="#a1440a7779ac56f47a3f355ce4a8c7da0">test1</a></div><div class="ttdeci">void test1()</div><div class="ttdef"><b>Definition</b> durand_kerner_roots.cpp:208</div></div>
-<div class="ttc" id="adurand__kerner__roots_8cpp_html_a2c35b320ace8677f9b331faf94f8b2fd"><div class="ttname"><a href="#a2c35b320ace8677f9b331faf94f8b2fd">durand_kerner_algo</a></div><div class="ttdeci">std::pair&lt; uint32_t, double &gt; durand_kerner_algo(const std::valarray&lt; double &gt; &amp;coeffs, std::valarray&lt; std::complex&lt; double &gt; &gt; *roots, bool write_log=false)</div><div class="ttdef"><b>Definition</b> durand_kerner_roots.cpp:110</div></div>
-<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> fibonacci_sum.cpp:77</div></div>
-<div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
-<div class="ttc" id="asrand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a></div><div class="ttdeci">T srand(T... args)</div></div>
-<div class="ttc" id="astrtof_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/byte/strtof.html">std::strtod</a></div><div class="ttdeci">T strtod(T... args)</div></div>
-<div class="ttc" id="atime_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a></div><div class="ttdeci">T time(T... args)</div></div>
-<div class="ttc" id="avalarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a></div></div>
+<div class="ttc" id="adurand__kerner__roots_8cpp_html_a0283886819c7c140a023582b7269e2d0"><div class="ttname"><a href="#a0283886819c7c140a023582b7269e2d0">test2</a></div><div class="ttdeci">void test2()</div><div class="ttdef"><b>Definition</b> <a href="../../da/df2/durand__kerner__roots_8cpp_source.html#l00243">durand_kerner_roots.cpp:243</a></div></div>
+<div class="ttc" id="adurand__kerner__roots_8cpp_html_a1440a7779ac56f47a3f355ce4a8c7da0"><div class="ttname"><a href="#a1440a7779ac56f47a3f355ce4a8c7da0">test1</a></div><div class="ttdeci">void test1()</div><div class="ttdef"><b>Definition</b> <a href="../../da/df2/durand__kerner__roots_8cpp_source.html#l00208">durand_kerner_roots.cpp:208</a></div></div>
+<div class="ttc" id="adurand__kerner__roots_8cpp_html_a2c35b320ace8677f9b331faf94f8b2fd"><div class="ttname"><a href="#a2c35b320ace8677f9b331faf94f8b2fd">durand_kerner_algo</a></div><div class="ttdeci">std::pair&lt; uint32_t, double &gt; durand_kerner_algo(const std::valarray&lt; double &gt; &amp;coeffs, std::valarray&lt; std::complex&lt; double &gt; &gt; *roots, bool write_log=false)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df2/durand__kerner__roots_8cpp_source.html#l00110">durand_kerner_roots.cpp:110</a></div></div>
+<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> <a href="../../de/dc3/fibonacci__sum_8cpp_source.html#l00077">fibonacci_sum.cpp:77</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -502,14 +503,14 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex</a>&lt; double &gt; poly_function </td>
+          <td class="memname">std::complex&lt; double &gt; poly_function </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>coeffs</em></span>, </td>
+          <td class="paramtype">const std::valarray&lt; double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>coeffs</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex</a>&lt; double &gt;</td>          <td class="paramname"><span class="paramname"><em>x</em></span>&#160;)</td>
+          <td class="paramtype">std::complex&lt; double &gt;</td>          <td class="paramname"><span class="paramname"><em>x</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -521,6 +522,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>\(f(x)\) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/df2/durand__kerner__roots_8cpp_source.html#l00054">54</a> of file <a class="el" href="../../da/df2/durand__kerner__roots_8cpp_source.html">durand_kerner_roots.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   55</span>                                                         {</div>
 <div class="line"><span class="lineno">   56</span>    <span class="keywordtype">double</span> real = 0.f, imag = 0.f;</div>
 <div class="line"><span class="lineno">   57</span>    <span class="keywordtype">int</span> n;</div>
@@ -529,21 +532,15 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   60</span>    <span class="comment">// #pragma omp target teams distribute reduction(+ : real, imag)</span></div>
 <div class="line"><span class="lineno">   61</span>    <span class="comment">// #endif</span></div>
 <div class="line"><span class="lineno">   62</span>    <span class="keywordflow">for</span> (n = 0; n &lt; coeffs.size(); n++) {</div>
-<div class="line"><span class="lineno">   63</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a> tmp =</div>
-<div class="line"><span class="lineno">   64</span>            coeffs[n] * <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(x, coeffs.size() - n - 1);</div>
-<div class="line"><span class="lineno">   65</span>        real += tmp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex/real.html">real</a>();</div>
-<div class="line"><span class="lineno">   66</span>        imag += tmp.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex/imag.html">imag</a>();</div>
+<div class="line"><span class="lineno">   63</span>        std::complex&lt;double&gt; tmp =</div>
+<div class="line"><span class="lineno">   64</span>            coeffs[n] * std::pow(x, coeffs.size() - n - 1);</div>
+<div class="line"><span class="lineno">   65</span>        real += tmp.real();</div>
+<div class="line"><span class="lineno">   66</span>        imag += tmp.imag();</div>
 <div class="line"><span class="lineno">   67</span>    }</div>
 <div class="line"><span class="lineno">   68</span> </div>
-<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">return</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>(real, imag);</div>
+<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">return</span> std::complex&lt;double&gt;(real, imag);</div>
 <div class="line"><span class="lineno">   70</span>}</div>
-<div class="ttc" id="apow_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a></div><div class="ttdeci">T pow(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/df2/durand__kerner__roots_8cpp_ae2ab49ba1969d7a5988f9bc2c8924569_cgraph.svg" width="290" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1440a7779ac56f47a3f355ce4a8c7da0" name="a1440a7779ac56f47a3f355ce4a8c7da0"></a>
@@ -561,17 +558,19 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Self test the algorithm by checking the roots for \(x^2+4=0\) to which the roots are \(0 \pm 2i\) </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/df2/durand__kerner__roots_8cpp_source.html#l00208">208</a> of file <a class="el" href="../../da/df2/durand__kerner__roots_8cpp_source.html">durand_kerner_roots.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  208</span>             {</div>
-<div class="line"><span class="lineno">  209</span>    <span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a> coeffs = {1, 0, 4};  <span class="comment">// x^2 - 2 = 0</span></div>
-<div class="line"><span class="lineno">  210</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;std::complex&lt;double&gt;</a>&gt; roots(2);</div>
-<div class="line"><span class="lineno">  211</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;std::complex&lt;double&gt;</a>&gt; expected = {</div>
-<div class="line"><span class="lineno">  212</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>(0., 2.),</div>
-<div class="line"><span class="lineno">  213</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>(0., -2.)  <span class="comment">// known expected roots</span></div>
+<div class="line"><span class="lineno">  209</span>    <span class="keyword">const</span> std::valarray&lt;double&gt; coeffs = {1, 0, 4};  <span class="comment">// x^2 - 2 = 0</span></div>
+<div class="line"><span class="lineno">  210</span>    std::valarray&lt;std::complex&lt;double&gt;&gt; roots(2);</div>
+<div class="line"><span class="lineno">  211</span>    std::valarray&lt;std::complex&lt;double&gt;&gt; expected = {</div>
+<div class="line"><span class="lineno">  212</span>        std::complex&lt;double&gt;(0., 2.),</div>
+<div class="line"><span class="lineno">  213</span>        std::complex&lt;double&gt;(0., -2.)  <span class="comment">// known expected roots</span></div>
 <div class="line"><span class="lineno">  214</span>    };</div>
 <div class="line"><span class="lineno">  215</span> </div>
 <div class="line"><span class="lineno">  216</span>    <span class="comment">/* initialize root approximations with random values */</span></div>
 <div class="line"><span class="lineno">  217</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n = 0; n &lt; roots.size(); n++) {</div>
-<div class="line"><span class="lineno">  218</span>        roots[n] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100, <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100);</div>
+<div class="line"><span class="lineno">  218</span>        roots[n] = std::complex&lt;double&gt;(std::rand() % 100, std::rand() % 100);</div>
 <div class="line"><span class="lineno">  219</span>        roots[n] -= 50.f;</div>
 <div class="line"><span class="lineno">  220</span>        roots[n] /= 25.f;</div>
 <div class="line"><span class="lineno">  221</span>    }</div>
@@ -587,16 +586,11 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  231</span>        assert(err1);</div>
 <div class="line"><span class="lineno">  232</span>    }</div>
 <div class="line"><span class="lineno">  233</span> </div>
-<div class="line"><span class="lineno">  234</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1 passed! - &quot;</span> &lt;&lt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.first &lt;&lt; <span class="stringliteral">&quot; iterations, &quot;</span></div>
+<div class="line"><span class="lineno">  234</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 1 passed! - &quot;</span> &lt;&lt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.first &lt;&lt; <span class="stringliteral">&quot; iterations, &quot;</span></div>
 <div class="line"><span class="lineno">  235</span>              &lt;&lt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.second &lt;&lt; <span class="stringliteral">&quot; accuracy&quot;</span></div>
 <div class="line"><span class="lineno">  236</span>              &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  237</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/df2/durand__kerner__roots_8cpp_a1440a7779ac56f47a3f355ce4a8c7da0_cgraph.svg" width="623" height="431"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0283886819c7c140a023582b7269e2d0" name="a0283886819c7c140a023582b7269e2d0"></a>
@@ -614,18 +608,20 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Self test the algorithm by checking the roots for \(0.015625x^3-1=0\) to which the roots are \((4+0i),\,(-2\pm3.464i)\) </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/df2/durand__kerner__roots_8cpp_source.html#l00243">243</a> of file <a class="el" href="../../da/df2/durand__kerner__roots_8cpp_source.html">durand_kerner_roots.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  243</span>             {</div>
-<div class="line"><span class="lineno">  244</span>    <span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a> coeffs = {<span class="comment">// 0.015625 x^3 - 1 = 0</span></div>
+<div class="line"><span class="lineno">  244</span>    <span class="keyword">const</span> std::valarray&lt;double&gt; coeffs = {<span class="comment">// 0.015625 x^3 - 1 = 0</span></div>
 <div class="line"><span class="lineno">  245</span>                                          1. / 64., 0., 0., -1.};</div>
-<div class="line"><span class="lineno">  246</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;std::complex&lt;double&gt;</a>&gt; roots(3);</div>
-<div class="line"><span class="lineno">  247</span>    <span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;std::complex&lt;double&gt;</a>&gt; expected = {</div>
-<div class="line"><span class="lineno">  248</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>(4., 0.), <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>(-2., 3.46410162),</div>
-<div class="line"><span class="lineno">  249</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>(-2., -3.46410162)  <span class="comment">// known expected roots</span></div>
+<div class="line"><span class="lineno">  246</span>    std::valarray&lt;std::complex&lt;double&gt;&gt; roots(3);</div>
+<div class="line"><span class="lineno">  247</span>    <span class="keyword">const</span> std::valarray&lt;std::complex&lt;double&gt;&gt; expected = {</div>
+<div class="line"><span class="lineno">  248</span>        std::complex&lt;double&gt;(4., 0.), std::complex&lt;double&gt;(-2., 3.46410162),</div>
+<div class="line"><span class="lineno">  249</span>        std::complex&lt;double&gt;(-2., -3.46410162)  <span class="comment">// known expected roots</span></div>
 <div class="line"><span class="lineno">  250</span>    };</div>
 <div class="line"><span class="lineno">  251</span> </div>
 <div class="line"><span class="lineno">  252</span>    <span class="comment">/* initialize root approximations with random values */</span></div>
 <div class="line"><span class="lineno">  253</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n = 0; n &lt; roots.size(); n++) {</div>
-<div class="line"><span class="lineno">  254</span>        roots[n] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100, <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100);</div>
+<div class="line"><span class="lineno">  254</span>        roots[n] = std::complex&lt;double&gt;(std::rand() % 100, std::rand() % 100);</div>
 <div class="line"><span class="lineno">  255</span>        roots[n] -= 50.f;</div>
 <div class="line"><span class="lineno">  256</span>        roots[n] /= 25.f;</div>
 <div class="line"><span class="lineno">  257</span>    }</div>
@@ -641,16 +637,11 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  267</span>        assert(err1);</div>
 <div class="line"><span class="lineno">  268</span>    }</div>
 <div class="line"><span class="lineno">  269</span> </div>
-<div class="line"><span class="lineno">  270</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2 passed! - &quot;</span> &lt;&lt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.first &lt;&lt; <span class="stringliteral">&quot; iterations, &quot;</span></div>
+<div class="line"><span class="lineno">  270</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 2 passed! - &quot;</span> &lt;&lt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.first &lt;&lt; <span class="stringliteral">&quot; iterations, &quot;</span></div>
 <div class="line"><span class="lineno">  271</span>              &lt;&lt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.second &lt;&lt; <span class="stringliteral">&quot; accuracy&quot;</span></div>
 <div class="line"><span class="lineno">  272</span>              &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  273</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/df2/durand__kerner__roots_8cpp_a0283886819c7c140a023582b7269e2d0_cgraph.svg" width="623" height="431"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

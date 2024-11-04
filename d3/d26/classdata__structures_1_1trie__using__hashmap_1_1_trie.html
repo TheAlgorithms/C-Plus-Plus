@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: data_structures::trie_using_hashmap::Trie Class Reference</title>
+<title>TheAlgorithms/C++: data_structures::trie_using_hashmap::Trie Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -133,33 +150,35 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Trie</b> ()=default</td></tr>
 <tr class="memdesc:a092d0805a9e647c2048777dbe67b35ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Constructor <br /></td></tr>
 <tr class="separator:a092d0805a9e647c2048777dbe67b35ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcae0a4456e7f583ce716e3ef466dfd2" id="r_abcae0a4456e7f583ce716e3ef466dfd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcae0a4456e7f583ce716e3ef466dfd2">insert</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;word)</td></tr>
+<tr class="memitem:abcae0a4456e7f583ce716e3ef466dfd2" id="r_abcae0a4456e7f583ce716e3ef466dfd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcae0a4456e7f583ce716e3ef466dfd2">insert</a> (const std::string &amp;word)</td></tr>
 <tr class="memdesc:abcae0a4456e7f583ce716e3ef466dfd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">insert the string into the trie  <br /></td></tr>
 <tr class="separator:abcae0a4456e7f583ce716e3ef466dfd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad71eb24207c28b546631802dba97310f" id="r_ad71eb24207c28b546631802dba97310f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad71eb24207c28b546631802dba97310f">search</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;word)</td></tr>
+<tr class="memitem:ad71eb24207c28b546631802dba97310f" id="r_ad71eb24207c28b546631802dba97310f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad71eb24207c28b546631802dba97310f">search</a> (const std::string &amp;word)</td></tr>
 <tr class="memdesc:ad71eb24207c28b546631802dba97310f"><td class="mdescLeft">&#160;</td><td class="mdescRight">search a word/string inside the trie  <br /></td></tr>
 <tr class="separator:ad71eb24207c28b546631802dba97310f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3aee573fbabd2c1510c0f74f842dd17" id="r_af3aee573fbabd2c1510c0f74f842dd17"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3aee573fbabd2c1510c0f74f842dd17">startwith</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;prefix)</td></tr>
+<tr class="memitem:af3aee573fbabd2c1510c0f74f842dd17" id="r_af3aee573fbabd2c1510c0f74f842dd17"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3aee573fbabd2c1510c0f74f842dd17">startwith</a> (const std::string &amp;prefix)</td></tr>
 <tr class="memdesc:af3aee573fbabd2c1510c0f74f842dd17"><td class="mdescLeft">&#160;</td><td class="mdescRight">search a word/string that starts with a given prefix  <br /></td></tr>
 <tr class="separator:af3aee573fbabd2c1510c0f74f842dd17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0bf3d6791cba144b3f539835d835e75" id="r_ac0bf3d6791cba144b3f539835d835e75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0bf3d6791cba144b3f539835d835e75">delete_word</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> word)</td></tr>
+<tr class="memitem:ac0bf3d6791cba144b3f539835d835e75" id="r_ac0bf3d6791cba144b3f539835d835e75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0bf3d6791cba144b3f539835d835e75">delete_word</a> (std::string word)</td></tr>
 <tr class="memdesc:ac0bf3d6791cba144b3f539835d835e75"><td class="mdescLeft">&#160;</td><td class="mdescRight">delete a word/string from a trie  <br /></td></tr>
 <tr class="separator:ac0bf3d6791cba144b3f539835d835e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bbe538c8015e8ce158e7ed43f605ebd" id="r_a7bbe538c8015e8ce158e7ed43f605ebd"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bbe538c8015e8ce158e7ed43f605ebd">get_all_words</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &gt; results, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="../../d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html">Node</a> &gt; &amp;element, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> prefix)</td></tr>
+<tr class="memitem:a7bbe538c8015e8ce158e7ed43f605ebd" id="r_a7bbe538c8015e8ce158e7ed43f605ebd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bbe538c8015e8ce158e7ed43f605ebd">get_all_words</a> (std::vector&lt; std::string &gt; results, const std::shared_ptr&lt; <a class="el" href="../../d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html">Node</a> &gt; &amp;element, std::string prefix)</td></tr>
 <tr class="memdesc:a7bbe538c8015e8ce158e7ed43f605ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to predict/recommend words that starts with a given prefix from the end of prefix's node iterate through all the child nodes by recursively appending all the possible words below the trie  <br /></td></tr>
 <tr class="separator:a7bbe538c8015e8ce158e7ed43f605ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae15fdc7f2b5023992d87a711d78566c4" id="r_ae15fdc7f2b5023992d87a711d78566c4"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae15fdc7f2b5023992d87a711d78566c4">predict_words</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;prefix)</td></tr>
+<tr class="memitem:ae15fdc7f2b5023992d87a711d78566c4" id="r_ae15fdc7f2b5023992d87a711d78566c4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae15fdc7f2b5023992d87a711d78566c4">predict_words</a> (const std::string &amp;prefix)</td></tr>
 <tr class="memdesc:ae15fdc7f2b5023992d87a711d78566c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">predict/recommend a word that starts with a given prefix  <br /></td></tr>
 <tr class="separator:ae15fdc7f2b5023992d87a711d78566c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a832072498abeaa52ad43c4fc99cba248" id="r_a832072498abeaa52ad43c4fc99cba248"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="../../d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a832072498abeaa52ad43c4fc99cba248">root_node</a></td></tr>
+<tr class="memitem:a832072498abeaa52ad43c4fc99cba248" id="r_a832072498abeaa52ad43c4fc99cba248"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a832072498abeaa52ad43c4fc99cba248">root_node</a></td></tr>
 <tr class="memdesc:a832072498abeaa52ad43c4fc99cba248"><td class="mdescLeft">&#160;</td><td class="mdescRight">declaring root node of trie  <br /></td></tr>
 <tr class="separator:a832072498abeaa52ad43c4fc99cba248"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html" title="Trie class, implementation of trie using hashmap in each trie node for all the characters of char16_t...">Trie</a> class, implementation of trie using hashmap in each trie node for all the characters of char16_t(UTF-16)type with methods to insert, delete, search, start with and to recommend words based on a given prefix. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d8a/trie__using__hashmap_8cpp_source.html#l00039">39</a> of file <a class="el" href="../../d5/d8a/trie__using__hashmap_8cpp_source.html">trie_using_hashmap.cpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac0bf3d6791cba144b3f539835d835e75" name="ac0bf3d6791cba144b3f539835d835e75"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac0bf3d6791cba144b3f539835d835e75">&#9670;&#160;</a></span>delete_word()</h2>
@@ -173,7 +192,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void data_structures::trie_using_hashmap::Trie::delete_word </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></td>          <td class="paramname"><span class="paramname"><em>word</em></span></td><td>)</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>word</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -191,9 +210,11 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d8a/trie__using__hashmap_8cpp_source.html#l00122">122</a> of file <a class="el" href="../../d5/d8a/trie__using__hashmap_8cpp_source.html">trie_using_hashmap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  122</span>                                     {</div>
-<div class="line"><span class="lineno">  123</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;Node&gt;</a> curr = <a class="code hl_variable" href="#a832072498abeaa52ad43c4fc99cba248">root_node</a>;</div>
-<div class="line"><span class="lineno">  124</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/stack.html">std::stack&lt;std::shared_ptr&lt;Node&gt;</a>&gt; nodes;</div>
+<div class="line"><span class="lineno">  123</span>        std::shared_ptr&lt;Node&gt; curr = <a class="code hl_variable" href="#a832072498abeaa52ad43c4fc99cba248">root_node</a>;</div>
+<div class="line"><span class="lineno">  124</span>        std::stack&lt;std::shared_ptr&lt;Node&gt;&gt; nodes;</div>
 <div class="line"><span class="lineno">  125</span>        <span class="keywordtype">int</span> cnt = 0;</div>
 <div class="line"><span class="lineno">  126</span>        <span class="keywordflow">for</span> (<span class="keywordtype">char</span> ch : word) {</div>
 <div class="line"><span class="lineno">  127</span>            <span class="keywordflow">if</span> (curr-&gt;children.find(ch) == curr-&gt;children.end()) {</div>
@@ -203,34 +224,24 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  131</span>                cnt++;</div>
 <div class="line"><span class="lineno">  132</span>            }</div>
 <div class="line"><span class="lineno">  133</span> </div>
-<div class="line"><span class="lineno">  134</span>            nodes.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/stack/push.html">push</a>(curr-&gt;children[ch]);</div>
+<div class="line"><span class="lineno">  134</span>            nodes.push(curr-&gt;children[ch]);</div>
 <div class="line"><span class="lineno">  135</span>            curr = curr-&gt;children[ch];</div>
 <div class="line"><span class="lineno">  136</span>        }</div>
 <div class="line"><span class="lineno">  137</span>        <span class="comment">// Delete only when it&#39;s a word, and it has children after</span></div>
 <div class="line"><span class="lineno">  138</span>        <span class="comment">// or prefix in the line</span></div>
-<div class="line"><span class="lineno">  139</span>        <span class="keywordflow">if</span> (nodes.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/stack/top.html">top</a>()-&gt;word_end) {</div>
-<div class="line"><span class="lineno">  140</span>            nodes.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/stack/top.html">top</a>()-&gt;word_end = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  139</span>        <span class="keywordflow">if</span> (nodes.top()-&gt;word_end) {</div>
+<div class="line"><span class="lineno">  140</span>            nodes.top()-&gt;word_end = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  141</span>        }</div>
 <div class="line"><span class="lineno">  142</span>        <span class="comment">// Delete only when it has no children after</span></div>
 <div class="line"><span class="lineno">  143</span>        <span class="comment">// and also no prefix in the line</span></div>
-<div class="line"><span class="lineno">  144</span>        <span class="keywordflow">while</span> (!(nodes.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/stack/top.html">top</a>()-&gt;word_end) &amp;&amp; nodes.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/stack/top.html">top</a>()-&gt;children.empty()) {</div>
-<div class="line"><span class="lineno">  145</span>            nodes.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/stack/pop.html">pop</a>();</div>
-<div class="line"><span class="lineno">  146</span>            nodes.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/stack/top.html">top</a>()-&gt;children.erase(word.back());</div>
+<div class="line"><span class="lineno">  144</span>        <span class="keywordflow">while</span> (!(nodes.top()-&gt;word_end) &amp;&amp; nodes.top()-&gt;children.empty()) {</div>
+<div class="line"><span class="lineno">  145</span>            nodes.pop();</div>
+<div class="line"><span class="lineno">  146</span>            nodes.top()-&gt;children.erase(word.back());</div>
 <div class="line"><span class="lineno">  147</span>            word.pop_back();</div>
 <div class="line"><span class="lineno">  148</span>        }</div>
 <div class="line"><span class="lineno">  149</span>    }</div>
-<div class="ttc" id="aclassdata__structures_1_1trie__using__hashmap_1_1_trie_html_a832072498abeaa52ad43c4fc99cba248"><div class="ttname"><a href="#a832072498abeaa52ad43c4fc99cba248">data_structures::trie_using_hashmap::Trie::root_node</a></div><div class="ttdeci">std::shared_ptr&lt; Node &gt; root_node</div><div class="ttdoc">declaring root node of trie</div><div class="ttdef"><b>Definition</b> trie_using_hashmap.cpp:51</div></div>
-<div class="ttc" id="apop_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/stack/pop.html">std::stack::pop</a></div><div class="ttdeci">T pop(T... args)</div></div>
-<div class="ttc" id="apush_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/stack/push.html">std::stack::push</a></div><div class="ttdeci">T push(T... args)</div></div>
-<div class="ttc" id="ashared_ptr_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a></div></div>
-<div class="ttc" id="astack_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/stack.html">std::stack</a></div></div>
-<div class="ttc" id="atop_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/stack/top.html">std::stack::top</a></div><div class="ttdeci">T top(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie_ac0bf3d6791cba144b3f539835d835e75_cgraph.svg" width="352" height="234"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassdata__structures_1_1trie__using__hashmap_1_1_trie_html_a832072498abeaa52ad43c4fc99cba248"><div class="ttname"><a href="#a832072498abeaa52ad43c4fc99cba248">data_structures::trie_using_hashmap::Trie::root_node</a></div><div class="ttdeci">std::shared_ptr&lt; Node &gt; root_node</div><div class="ttdoc">declaring root node of trie</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d8a/trie__using__hashmap_8cpp_source.html#l00051">trie_using_hashmap.cpp:51</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7bbe538c8015e8ce158e7ed43f605ebd" name="a7bbe538c8015e8ce158e7ed43f605ebd"></a>
@@ -243,19 +254,19 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &gt; data_structures::trie_using_hashmap::Trie::get_all_words </td>
+          <td class="memname">std::vector&lt; std::string &gt; data_structures::trie_using_hashmap::Trie::get_all_words </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>results</em></span>, </td>
+          <td class="paramtype">std::vector&lt; std::string &gt;</td>          <td class="paramname"><span class="paramname"><em>results</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="../../d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html">Node</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>element</em></span>, </td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="../../d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html">Node</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>element</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></td>          <td class="paramname"><span class="paramname"><em>prefix</em></span>&#160;)</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>prefix</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -275,38 +286,32 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>list of recommended words </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d8a/trie__using__hashmap_8cpp_source.html#l00160">160</a> of file <a class="el" href="../../d5/d8a/trie__using__hashmap_8cpp_source.html">trie_using_hashmap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  162</span>                                                             {</div>
 <div class="line"><span class="lineno">  163</span>        <span class="keywordflow">if</span> (element-&gt;<a class="code hl_variable" href="../../d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html#a3cdb077745d3dc97212d693132371219">word_end</a>) {</div>
-<div class="line"><span class="lineno">  164</span>            results.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(prefix);</div>
+<div class="line"><span class="lineno">  164</span>            results.push_back(prefix);</div>
 <div class="line"><span class="lineno">  165</span>        }</div>
 <div class="line"><span class="lineno">  166</span>        <span class="keywordflow">if</span> (element-&gt;<a class="code hl_variable" href="../../d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html#a08212cdc99164b59da91b81f45e2f88e">children</a>.empty()) {</div>
 <div class="line"><span class="lineno">  167</span>            <span class="keywordflow">return</span> results;</div>
 <div class="line"><span class="lineno">  168</span>        }</div>
 <div class="line"><span class="lineno">  169</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; x : element-&gt;<a class="code hl_variable" href="../../d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html#a08212cdc99164b59da91b81f45e2f88e">children</a>) {</div>
-<div class="line"><span class="lineno">  170</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> key = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">  170</span>            std::string key = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><span class="lineno">  171</span>            key = x.first;</div>
 <div class="line"><span class="lineno">  172</span>            prefix += key;</div>
 <div class="line"><span class="lineno">  173</span> </div>
 <div class="line"><span class="lineno">  174</span>            results =</div>
 <div class="line"><span class="lineno">  175</span>                <a class="code hl_function" href="#a7bbe538c8015e8ce158e7ed43f605ebd">get_all_words</a>(results, element-&gt;<a class="code hl_variable" href="../../d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html#a08212cdc99164b59da91b81f45e2f88e">children</a>[x.first], prefix);</div>
 <div class="line"><span class="lineno">  176</span> </div>
-<div class="line"><span class="lineno">  177</span>            prefix.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/pop_back.html">pop_back</a>();</div>
+<div class="line"><span class="lineno">  177</span>            prefix.pop_back();</div>
 <div class="line"><span class="lineno">  178</span>        }</div>
 <div class="line"><span class="lineno">  179</span> </div>
 <div class="line"><span class="lineno">  180</span>        <span class="keywordflow">return</span> results;</div>
 <div class="line"><span class="lineno">  181</span>    }</div>
-<div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
-<div class="ttc" id="aclassdata__structures_1_1trie__using__hashmap_1_1_trie_html_a7bbe538c8015e8ce158e7ed43f605ebd"><div class="ttname"><a href="#a7bbe538c8015e8ce158e7ed43f605ebd">data_structures::trie_using_hashmap::Trie::get_all_words</a></div><div class="ttdeci">std::vector&lt; std::string &gt; get_all_words(std::vector&lt; std::string &gt; results, const std::shared_ptr&lt; Node &gt; &amp;element, std::string prefix)</div><div class="ttdoc">helper function to predict/recommend words that starts with a given prefix from the end of prefix's n...</div><div class="ttdef"><b>Definition</b> trie_using_hashmap.cpp:160</div></div>
-<div class="ttc" id="apop_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/pop_back.html">std::string::pop_back</a></div><div class="ttdeci">T pop_back(T... args)</div></div>
-<div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
-<div class="ttc" id="astructdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node_html_a08212cdc99164b59da91b81f45e2f88e"><div class="ttname"><a href="../../d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html#a08212cdc99164b59da91b81f45e2f88e">data_structures::trie_using_hashmap::Trie::Node::children</a></div><div class="ttdeci">std::unordered_map&lt; char16_t, std::shared_ptr&lt; Node &gt; &gt; children</div><div class="ttdef"><b>Definition</b> trie_using_hashmap.cpp:46</div></div>
-<div class="ttc" id="astructdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node_html_a3cdb077745d3dc97212d693132371219"><div class="ttname"><a href="../../d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html#a3cdb077745d3dc97212d693132371219">data_structures::trie_using_hashmap::Trie::Node::word_end</a></div><div class="ttdeci">bool word_end</div><div class="ttdoc">boolean variable to represent the node end</div><div class="ttdef"><b>Definition</b> trie_using_hashmap.cpp:48</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie_a7bbe538c8015e8ce158e7ed43f605ebd_cgraph.svg" width="363" height="100"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassdata__structures_1_1trie__using__hashmap_1_1_trie_html_a7bbe538c8015e8ce158e7ed43f605ebd"><div class="ttname"><a href="#a7bbe538c8015e8ce158e7ed43f605ebd">data_structures::trie_using_hashmap::Trie::get_all_words</a></div><div class="ttdeci">std::vector&lt; std::string &gt; get_all_words(std::vector&lt; std::string &gt; results, const std::shared_ptr&lt; Node &gt; &amp;element, std::string prefix)</div><div class="ttdoc">helper function to predict/recommend words that starts with a given prefix from the end of prefix's n...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d8a/trie__using__hashmap_8cpp_source.html#l00160">trie_using_hashmap.cpp:160</a></div></div>
+<div class="ttc" id="astructdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node_html_a08212cdc99164b59da91b81f45e2f88e"><div class="ttname"><a href="../../d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html#a08212cdc99164b59da91b81f45e2f88e">data_structures::trie_using_hashmap::Trie::Node::children</a></div><div class="ttdeci">std::unordered_map&lt; char16_t, std::shared_ptr&lt; Node &gt; &gt; children</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d8a/trie__using__hashmap_8cpp_source.html#l00046">trie_using_hashmap.cpp:46</a></div></div>
+<div class="ttc" id="astructdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node_html_a3cdb077745d3dc97212d693132371219"><div class="ttname"><a href="../../d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html#a3cdb077745d3dc97212d693132371219">data_structures::trie_using_hashmap::Trie::Node::word_end</a></div><div class="ttdeci">bool word_end</div><div class="ttdoc">boolean variable to represent the node end</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d8a/trie__using__hashmap_8cpp_source.html#l00048">trie_using_hashmap.cpp:48</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abcae0a4456e7f583ce716e3ef466dfd2" name="abcae0a4456e7f583ce716e3ef466dfd2"></a>
@@ -321,7 +326,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void data_structures::trie_using_hashmap::Trie::insert </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>word</em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>word</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -339,11 +344,13 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d8a/trie__using__hashmap_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../d5/d8a/trie__using__hashmap_8cpp_source.html">trie_using_hashmap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   62</span>                                       {</div>
-<div class="line"><span class="lineno">   63</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;Node&gt;</a> curr = <a class="code hl_variable" href="#a832072498abeaa52ad43c4fc99cba248">root_node</a>;</div>
+<div class="line"><span class="lineno">   63</span>        std::shared_ptr&lt;Node&gt; curr = <a class="code hl_variable" href="#a832072498abeaa52ad43c4fc99cba248">root_node</a>;</div>
 <div class="line"><span class="lineno">   64</span>        <span class="keywordflow">for</span> (<span class="keywordtype">char</span> ch : word) {</div>
 <div class="line"><span class="lineno">   65</span>            <span class="keywordflow">if</span> (curr-&gt;children.find(ch) == curr-&gt;children.end()) {</div>
-<div class="line"><span class="lineno">   66</span>                curr-&gt;children[ch] = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html">std::make_shared&lt;Node&gt;</a>();</div>
+<div class="line"><span class="lineno">   66</span>                curr-&gt;children[ch] = std::make_shared&lt;Node&gt;();</div>
 <div class="line"><span class="lineno">   67</span>            }</div>
 <div class="line"><span class="lineno">   68</span>            curr = curr-&gt;children[ch];</div>
 <div class="line"><span class="lineno">   69</span>        }</div>
@@ -352,13 +359,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   72</span>            curr-&gt;word_end = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">   73</span>        }</div>
 <div class="line"><span class="lineno">   74</span>    }</div>
-<div class="ttc" id="amake_shared_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html">std::make_shared</a></div><div class="ttdeci">T make_shared(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie_abcae0a4456e7f583ce716e3ef466dfd2_cgraph.svg" width="334" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae15fdc7f2b5023992d87a711d78566c4" name="ae15fdc7f2b5023992d87a711d78566c4"></a>
@@ -371,9 +372,9 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &gt; data_structures::trie_using_hashmap::Trie::predict_words </td>
+          <td class="memname">std::vector&lt; std::string &gt; data_structures::trie_using_hashmap::Trie::predict_words </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>prefix</em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>prefix</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -393,9 +394,11 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>list of recommended words </dd></dl>
 <p>&lt; iteratively and recursively get the recommended words</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d8a/trie__using__hashmap_8cpp_source.html#l00188">188</a> of file <a class="el" href="../../d5/d8a/trie__using__hashmap_8cpp_source.html">trie_using_hashmap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  188</span>                                                                {</div>
-<div class="line"><span class="lineno">  189</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::string&gt;</a> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
-<div class="line"><span class="lineno">  190</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;Node&gt;</a> curr = <a class="code hl_variable" href="#a832072498abeaa52ad43c4fc99cba248">root_node</a>;</div>
+<div class="line"><span class="lineno">  189</span>        std::vector&lt;std::string&gt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
+<div class="line"><span class="lineno">  190</span>        std::shared_ptr&lt;Node&gt; curr = <a class="code hl_variable" href="#a832072498abeaa52ad43c4fc99cba248">root_node</a>;</div>
 <div class="line"><span class="lineno">  191</span>        <span class="comment">// traversing until the end of the given prefix in trie</span></div>
 <div class="line"><span class="lineno">  192</span> </div>
 <div class="line"><span class="lineno">  193</span>        <span class="keywordflow">for</span> (<span class="keywordtype">char</span> ch : prefix) {</div>
@@ -414,18 +417,12 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  206</span> </div>
 <div class="line"><span class="lineno">  207</span>        <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = <a class="code hl_function" href="#a7bbe538c8015e8ce158e7ed43f605ebd">get_all_words</a>(</div>
 <div class="line"><span class="lineno">  208</span>            result, curr,</div>
-<div class="line"><span class="lineno">  209</span>            prefix);  <span class="comment">///&lt; iteratively and recursively get the recommended words</span></div>
+<div class="line"><span class="lineno">  209</span>            prefix);  </div>
 <div class="line"><span class="lineno">  210</span> </div>
 <div class="line"><span class="lineno">  211</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">  212</span>    }</div>
-<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> fibonacci_sum.cpp:77</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie_ae15fdc7f2b5023992d87a711d78566c4_cgraph.svg" width="560" height="100"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> <a href="../../de/dc3/fibonacci__sum_8cpp_source.html#l00077">fibonacci_sum.cpp:77</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad71eb24207c28b546631802dba97310f" name="ad71eb24207c28b546631802dba97310f"></a>
@@ -440,7 +437,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool data_structures::trie_using_hashmap::Trie::search </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>word</em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>word</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -461,8 +458,10 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if found </dd>
 <dd>
 <code>false</code> if not found </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d8a/trie__using__hashmap_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../d5/d8a/trie__using__hashmap_8cpp_source.html">trie_using_hashmap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   82</span>                                       {</div>
-<div class="line"><span class="lineno">   83</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;Node&gt;</a> curr = <a class="code hl_variable" href="#a832072498abeaa52ad43c4fc99cba248">root_node</a>;</div>
+<div class="line"><span class="lineno">   83</span>        std::shared_ptr&lt;Node&gt; curr = <a class="code hl_variable" href="#a832072498abeaa52ad43c4fc99cba248">root_node</a>;</div>
 <div class="line"><span class="lineno">   84</span>        <span class="keywordflow">for</span> (<span class="keywordtype">char</span> ch : word) {</div>
 <div class="line"><span class="lineno">   85</span>            <span class="keywordflow">if</span> (curr-&gt;children.find(ch) == curr-&gt;children.end()) {</div>
 <div class="line"><span class="lineno">   86</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -494,7 +493,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool data_structures::trie_using_hashmap::Trie::startwith </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>prefix</em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>prefix</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -515,8 +514,10 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if found </dd>
 <dd>
 <code>false</code> if not found </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d8a/trie__using__hashmap_8cpp_source.html#l00107">107</a> of file <a class="el" href="../../d5/d8a/trie__using__hashmap_8cpp_source.html">trie_using_hashmap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  107</span>                                            {</div>
-<div class="line"><span class="lineno">  108</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;Node&gt;</a> curr = <a class="code hl_variable" href="#a832072498abeaa52ad43c4fc99cba248">root_node</a>;</div>
+<div class="line"><span class="lineno">  108</span>        std::shared_ptr&lt;Node&gt; curr = <a class="code hl_variable" href="#a832072498abeaa52ad43c4fc99cba248">root_node</a>;</div>
 <div class="line"><span class="lineno">  109</span>        <span class="keywordflow">for</span> (<span class="keywordtype">char</span> ch : prefix) {</div>
 <div class="line"><span class="lineno">  110</span>            <span class="keywordflow">if</span> (curr-&gt;children.find(ch) == curr-&gt;children.end()) {</div>
 <div class="line"><span class="lineno">  111</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -539,7 +540,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt;<a class="el" href="../../d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html">Node</a>&gt; data_structures::trie_using_hashmap::Trie::root_node</td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="../../d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html">Node</a>&gt; data_structures::trie_using_hashmap::Trie::root_node</td>
         </tr>
       </table>
   </td>
@@ -549,14 +550,16 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html">std::make_shared&lt;Node&gt;</a>()</div>
+<div class="line">        std::make_shared&lt;Node&gt;()</div>
 </div><!-- fragment -->
 <p>declaring root node of trie </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d8a/trie__using__hashmap_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../d5/d8a/trie__using__hashmap_8cpp_source.html">trie_using_hashmap.cpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>data_structures/<a class="el" href="../../d5/d8a/trie__using__hashmap_8cpp.html">trie_using_hashmap.cpp</a></li>
+<li>data_structures/<a class="el" href="../../d5/d8a/trie__using__hashmap_8cpp_source.html">trie_using_hashmap.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

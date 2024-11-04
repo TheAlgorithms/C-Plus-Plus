@@ -33,7 +33,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="129.25,-108.25 0,-108.25 0,-89 129.25,-89 129.25,-108.25"/>
 <text text-anchor="middle" x="64.62" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr&lt; Puzzle &gt;</text>
 </a>

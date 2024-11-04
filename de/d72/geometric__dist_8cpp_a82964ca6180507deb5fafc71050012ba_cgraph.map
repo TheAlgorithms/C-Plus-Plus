@@ -1,4 +1,0 @@
-<map id="probability::geometric_dist::generate_uniform" name="probability::geometric_dist::generate_uniform">
-<area shape="rect" id="Node000001" title="Returns a random number between [0,1]." alt="" coords="5,29,163,70"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="53,29,52,19,57,11,68,5,84,3,101,5,112,11,109,16,100,10,84,8,69,10,61,14,57,20,59,28"/>
-</map>

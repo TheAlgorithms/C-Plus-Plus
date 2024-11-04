@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: data_structures::treap::Treap Struct Reference</title>
+<title>TheAlgorithms/C++: data_structures::treap::Treap Struct Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -164,31 +181,31 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a3081969b2714a8101f7df28b1ce5ed2c" id="r_a3081969b2714a8101f7df28b1ce5ed2c"><td class="memItemLeft" align="right" valign="top"><a id="a3081969b2714a8101f7df28b1ce5ed2c" name="a3081969b2714a8101f7df28b1ce5ed2c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>root</b> = 0</td></tr>
-<tr class="memdesc:a3081969b2714a8101f7df28b1ce5ed2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">root of the treap <br /></td></tr>
+<tr class="memitem:a3081969b2714a8101f7df28b1ce5ed2c" id="r_a3081969b2714a8101f7df28b1ce5ed2c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3081969b2714a8101f7df28b1ce5ed2c">root</a> = 0</td></tr>
+<tr class="memdesc:a3081969b2714a8101f7df28b1ce5ed2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">root of the treap  <br /></td></tr>
 <tr class="separator:a3081969b2714a8101f7df28b1ce5ed2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ab082fe0aa95a238bbbc68ab6a72425" id="r_a1ab082fe0aa95a238bbbc68ab6a72425"><td class="memItemLeft" align="right" valign="top"><a id="a1ab082fe0aa95a238bbbc68ab6a72425" name="a1ab082fe0aa95a238bbbc68ab6a72425"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>treapCnt</b> = 0</td></tr>
-<tr class="memdesc:a1ab082fe0aa95a238bbbc68ab6a72425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of current nodes in the treap. <br /></td></tr>
+<tr class="memitem:a1ab082fe0aa95a238bbbc68ab6a72425" id="r_a1ab082fe0aa95a238bbbc68ab6a72425"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ab082fe0aa95a238bbbc68ab6a72425">treapCnt</a> = 0</td></tr>
+<tr class="memdesc:a1ab082fe0aa95a238bbbc68ab6a72425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of current nodes in the treap.  <br /></td></tr>
 <tr class="separator:a1ab082fe0aa95a238bbbc68ab6a72425"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32db3ba3b2630943faacd27b2ecd1b04" id="r_a32db3ba3b2630943faacd27b2ecd1b04"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, <a class="el" href="../../dd/d2e/namespacedata__structures_1_1treap.html#ad939ec178d0069aeea14b7d6d7d12099">maxNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32db3ba3b2630943faacd27b2ecd1b04">key</a> = {}</td></tr>
+<tr class="memitem:a32db3ba3b2630943faacd27b2ecd1b04" id="r_a32db3ba3b2630943faacd27b2ecd1b04"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, <a class="el" href="../../dd/d2e/namespacedata__structures_1_1treap.html#ad939ec178d0069aeea14b7d6d7d12099">maxNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32db3ba3b2630943faacd27b2ecd1b04">key</a> = {}</td></tr>
 <tr class="memdesc:a32db3ba3b2630943faacd27b2ecd1b04"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d9/d49/structdata__structures_1_1_node.html">Node</a> identifier.  <br /></td></tr>
 <tr class="separator:a32db3ba3b2630943faacd27b2ecd1b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8be70f0a25e53e870e97d8d23968d723" id="r_a8be70f0a25e53e870e97d8d23968d723"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, <a class="el" href="../../dd/d2e/namespacedata__structures_1_1treap.html#ad939ec178d0069aeea14b7d6d7d12099">maxNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8be70f0a25e53e870e97d8d23968d723">priority</a> = {}</td></tr>
+<tr class="memitem:a8be70f0a25e53e870e97d8d23968d723" id="r_a8be70f0a25e53e870e97d8d23968d723"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, <a class="el" href="../../dd/d2e/namespacedata__structures_1_1treap.html#ad939ec178d0069aeea14b7d6d7d12099">maxNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8be70f0a25e53e870e97d8d23968d723">priority</a> = {}</td></tr>
 <tr class="memdesc:a8be70f0a25e53e870e97d8d23968d723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random priority.  <br /></td></tr>
 <tr class="separator:a8be70f0a25e53e870e97d8d23968d723"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab99f68b79e1c4ff0f1cd6f2f0b6a545f" id="r_ab99f68b79e1c4ff0f1cd6f2f0b6a545f"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, 2 &gt;, <a class="el" href="../../dd/d2e/namespacedata__structures_1_1treap.html#ad939ec178d0069aeea14b7d6d7d12099">maxNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab99f68b79e1c4ff0f1cd6f2f0b6a545f">childs</a></td></tr>
+<tr class="memitem:ab99f68b79e1c4ff0f1cd6f2f0b6a545f" id="r_ab99f68b79e1c4ff0f1cd6f2f0b6a545f"><td class="memItemLeft" align="right" valign="top">std::array&lt; std::array&lt; int, 2 &gt;, <a class="el" href="../../dd/d2e/namespacedata__structures_1_1treap.html#ad939ec178d0069aeea14b7d6d7d12099">maxNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab99f68b79e1c4ff0f1cd6f2f0b6a545f">childs</a></td></tr>
 <tr class="separator:ab99f68b79e1c4ff0f1cd6f2f0b6a545f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7e6c6620ab32bc96633d101245fa919" id="r_af7e6c6620ab32bc96633d101245fa919"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, <a class="el" href="../../dd/d2e/namespacedata__structures_1_1treap.html#ad939ec178d0069aeea14b7d6d7d12099">maxNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7e6c6620ab32bc96633d101245fa919">cnt</a></td></tr>
+<tr class="memitem:af7e6c6620ab32bc96633d101245fa919" id="r_af7e6c6620ab32bc96633d101245fa919"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, <a class="el" href="../../dd/d2e/namespacedata__structures_1_1treap.html#ad939ec178d0069aeea14b7d6d7d12099">maxNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7e6c6620ab32bc96633d101245fa919">cnt</a></td></tr>
 <tr class="memdesc:af7e6c6620ab32bc96633d101245fa919"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maintains the subtree size for ranking query.  <br /></td></tr>
 <tr class="separator:af7e6c6620ab32bc96633d101245fa919"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5f0b8263339485989f8a02ae026114c" id="r_af5f0b8263339485989f8a02ae026114c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, <a class="el" href="../../dd/d2e/namespacedata__structures_1_1treap.html#ad939ec178d0069aeea14b7d6d7d12099">maxNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5f0b8263339485989f8a02ae026114c">size</a> = {}</td></tr>
+<tr class="memitem:af5f0b8263339485989f8a02ae026114c" id="r_af5f0b8263339485989f8a02ae026114c"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, <a class="el" href="../../dd/d2e/namespacedata__structures_1_1treap.html#ad939ec178d0069aeea14b7d6d7d12099">maxNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5f0b8263339485989f8a02ae026114c">size</a> = {}</td></tr>
 <tr class="memdesc:af5f0b8263339485989f8a02ae026114c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of copies per node.  <br /></td></tr>
 <tr class="separator:af5f0b8263339485989f8a02ae026114c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Struct representation of the treap. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dd2/treap_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5d200493aeaa02a269f6b6deda39a683" name="a5d200493aeaa02a269f6b6deda39a683"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5d200493aeaa02a269f6b6deda39a683">&#9670;&#160;</a></span>Treap()</h2>
@@ -214,13 +231,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>treapCnt</b> = 0</td><
 </div><div class="memdoc">
 
 <p>Initialization. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dd2/treap_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   55</span>            : <a class="code hl_variable" href="#a1ab082fe0aa95a238bbbc68ab6a72425">treapCnt</a>(1) {</div>
 <div class="line"><span class="lineno">   56</span>        <a class="code hl_variable" href="#a8be70f0a25e53e870e97d8d23968d723">priority</a>[0] = INT32_MAX;</div>
 <div class="line"><span class="lineno">   57</span>        <a class="code hl_variable" href="#af5f0b8263339485989f8a02ae026114c">size</a>[0] = 0;</div>
 <div class="line"><span class="lineno">   58</span>    }</div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a1ab082fe0aa95a238bbbc68ab6a72425"><div class="ttname"><a href="#a1ab082fe0aa95a238bbbc68ab6a72425">data_structures::treap::Treap::treapCnt</a></div><div class="ttdeci">int treapCnt</div><div class="ttdoc">Total number of current nodes in the treap.</div><div class="ttdef"><b>Definition</b> treap.cpp:42</div></div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a8be70f0a25e53e870e97d8d23968d723"><div class="ttname"><a href="#a8be70f0a25e53e870e97d8d23968d723">data_structures::treap::Treap::priority</a></div><div class="ttdeci">std::array&lt; int, maxNode &gt; priority</div><div class="ttdoc">Random priority.</div><div class="ttdef"><b>Definition</b> treap.cpp:44</div></div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_af5f0b8263339485989f8a02ae026114c"><div class="ttname"><a href="#af5f0b8263339485989f8a02ae026114c">data_structures::treap::Treap::size</a></div><div class="ttdeci">std::array&lt; int, maxNode &gt; size</div><div class="ttdoc">The number of copies per node.</div><div class="ttdef"><b>Definition</b> treap.cpp:51</div></div>
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a1ab082fe0aa95a238bbbc68ab6a72425"><div class="ttname"><a href="#a1ab082fe0aa95a238bbbc68ab6a72425">data_structures::treap::Treap::treapCnt</a></div><div class="ttdeci">int treapCnt</div><div class="ttdoc">Total number of current nodes in the treap.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd2/treap_8cpp_source.html#l00042">treap.cpp:42</a></div></div>
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a8be70f0a25e53e870e97d8d23968d723"><div class="ttname"><a href="#a8be70f0a25e53e870e97d8d23968d723">data_structures::treap::Treap::priority</a></div><div class="ttdeci">std::array&lt; int, maxNode &gt; priority</div><div class="ttdoc">Random priority.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd2/treap_8cpp_source.html#l00044">treap.cpp:44</a></div></div>
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_af5f0b8263339485989f8a02ae026114c"><div class="ttname"><a href="#af5f0b8263339485989f8a02ae026114c">data_structures::treap::Treap::size</a></div><div class="ttdeci">std::array&lt; int, maxNode &gt; size</div><div class="ttdoc">The number of copies per node.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd2/treap_8cpp_source.html#l00051">treap.cpp:51</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -260,6 +279,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>treapCnt</b> = 0</td><
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dd2/treap_8cpp_source.html#l00112">112</a> of file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  112</span>                               {</div>
 <div class="line"><span class="lineno">  113</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a32db3ba3b2630943faacd27b2ecd1b04">key</a>[x] == k) {</div>
 <div class="line"><span class="lineno">  114</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#af7e6c6620ab32bc96633d101245fa919">cnt</a>[x] &gt; 1) {</div>
@@ -281,18 +302,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>treapCnt</b> = 0</td><
 <div class="line"><span class="lineno">  130</span>        }</div>
 <div class="line"><span class="lineno">  131</span>        <a class="code hl_function" href="#aae9facaede462ad924856c4d707646d7">update</a>(x);</div>
 <div class="line"><span class="lineno">  132</span>    }</div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a32db3ba3b2630943faacd27b2ecd1b04"><div class="ttname"><a href="#a32db3ba3b2630943faacd27b2ecd1b04">data_structures::treap::Treap::key</a></div><div class="ttdeci">std::array&lt; int, maxNode &gt; key</div><div class="ttdoc">Node identifier.</div><div class="ttdef"><b>Definition</b> treap.cpp:43</div></div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a75a48584a6560de20484fbba6229fd29"><div class="ttname"><a href="#a75a48584a6560de20484fbba6229fd29">data_structures::treap::Treap::rotate</a></div><div class="ttdeci">void rotate(int &amp;x, int t)</div><div class="ttdoc">Rotate without breaking the property of BST.</div><div class="ttdef"><b>Definition</b> treap.cpp:71</div></div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_aae9facaede462ad924856c4d707646d7"><div class="ttname"><a href="#aae9facaede462ad924856c4d707646d7">data_structures::treap::Treap::update</a></div><div class="ttdeci">void update(int x)</div><div class="ttdoc">Update the subtree size of the node.</div><div class="ttdef"><b>Definition</b> treap.cpp:63</div></div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_ab99f68b79e1c4ff0f1cd6f2f0b6a545f"><div class="ttname"><a href="#ab99f68b79e1c4ff0f1cd6f2f0b6a545f">data_structures::treap::Treap::childs</a></div><div class="ttdeci">std::array&lt; std::array&lt; int, 2 &gt;, maxNode &gt; childs</div><div class="ttdef"><b>Definition</b> treap.cpp:45</div></div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_aeb4bb0db68c7c04ef9498c88c3777887"><div class="ttname"><a href="#aeb4bb0db68c7c04ef9498c88c3777887">data_structures::treap::Treap::_erase</a></div><div class="ttdeci">void _erase(int &amp;x, int k)</div><div class="ttdoc">Erase a value from the specified subtree (internal method)</div><div class="ttdef"><b>Definition</b> treap.cpp:112</div></div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_af7e6c6620ab32bc96633d101245fa919"><div class="ttname"><a href="#af7e6c6620ab32bc96633d101245fa919">data_structures::treap::Treap::cnt</a></div><div class="ttdeci">std::array&lt; int, maxNode &gt; cnt</div><div class="ttdoc">Maintains the subtree size for ranking query.</div><div class="ttdef"><b>Definition</b> treap.cpp:49</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d95/structdata__structures_1_1treap_1_1_treap_aeb4bb0db68c7c04ef9498c88c3777887_cgraph.svg" width="552" height="82"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a32db3ba3b2630943faacd27b2ecd1b04"><div class="ttname"><a href="#a32db3ba3b2630943faacd27b2ecd1b04">data_structures::treap::Treap::key</a></div><div class="ttdeci">std::array&lt; int, maxNode &gt; key</div><div class="ttdoc">Node identifier.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd2/treap_8cpp_source.html#l00043">treap.cpp:43</a></div></div>
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a75a48584a6560de20484fbba6229fd29"><div class="ttname"><a href="#a75a48584a6560de20484fbba6229fd29">data_structures::treap::Treap::rotate</a></div><div class="ttdeci">void rotate(int &amp;x, int t)</div><div class="ttdoc">Rotate without breaking the property of BST.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd2/treap_8cpp_source.html#l00071">treap.cpp:71</a></div></div>
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_aae9facaede462ad924856c4d707646d7"><div class="ttname"><a href="#aae9facaede462ad924856c4d707646d7">data_structures::treap::Treap::update</a></div><div class="ttdeci">void update(int x)</div><div class="ttdoc">Update the subtree size of the node.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd2/treap_8cpp_source.html#l00063">treap.cpp:63</a></div></div>
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_ab99f68b79e1c4ff0f1cd6f2f0b6a545f"><div class="ttname"><a href="#ab99f68b79e1c4ff0f1cd6f2f0b6a545f">data_structures::treap::Treap::childs</a></div><div class="ttdeci">std::array&lt; std::array&lt; int, 2 &gt;, maxNode &gt; childs</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd2/treap_8cpp_source.html#l00045">treap.cpp:45</a></div></div>
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_aeb4bb0db68c7c04ef9498c88c3777887"><div class="ttname"><a href="#aeb4bb0db68c7c04ef9498c88c3777887">data_structures::treap::Treap::_erase</a></div><div class="ttdeci">void _erase(int &amp;x, int k)</div><div class="ttdoc">Erase a value from the specified subtree (internal method)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd2/treap_8cpp_source.html#l00112">treap.cpp:112</a></div></div>
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_af7e6c6620ab32bc96633d101245fa919"><div class="ttname"><a href="#af7e6c6620ab32bc96633d101245fa919">data_structures::treap::Treap::cnt</a></div><div class="ttdeci">std::array&lt; int, maxNode &gt; cnt</div><div class="ttdoc">Maintains the subtree size for ranking query.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd2/treap_8cpp_source.html#l00049">treap.cpp:49</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad08520c0617eb8dcfcbfa90d258aa6b2" name="ad08520c0617eb8dcfcbfa90d258aa6b2"></a>
@@ -331,6 +347,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The element ranked number k </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dd2/treap_8cpp_source.html#l00139">139</a> of file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  139</span>                                 {</div>
 <div class="line"><span class="lineno">  140</span>        <span class="keywordflow">if</span> (k &lt;= <a class="code hl_variable" href="#af5f0b8263339485989f8a02ae026114c">size</a>[<a class="code hl_variable" href="#ab99f68b79e1c4ff0f1cd6f2f0b6a545f">childs</a>[x][0]]) {</div>
 <div class="line"><span class="lineno">  141</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="#ad08520c0617eb8dcfcbfa90d258aa6b2">_get_k_th</a>(<a class="code hl_variable" href="#ab99f68b79e1c4ff0f1cd6f2f0b6a545f">childs</a>[x][0], k);</div>
@@ -341,14 +359,9 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  146</span>        }</div>
 <div class="line"><span class="lineno">  147</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#ad08520c0617eb8dcfcbfa90d258aa6b2">_get_k_th</a>(<a class="code hl_variable" href="#ab99f68b79e1c4ff0f1cd6f2f0b6a545f">childs</a>[x][1], k);</div>
 <div class="line"><span class="lineno">  148</span>    }</div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a1b74d828b33760094906797042b89442"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">numerical_methods::simpson_method::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:117</div></div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_ad08520c0617eb8dcfcbfa90d258aa6b2"><div class="ttname"><a href="#ad08520c0617eb8dcfcbfa90d258aa6b2">data_structures::treap::Treap::_get_k_th</a></div><div class="ttdeci">int _get_k_th(int &amp;x, int k)</div><div class="ttdoc">Find the KTH largest value (internal method)</div><div class="ttdef"><b>Definition</b> treap.cpp:139</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d95/structdata__structures_1_1treap_1_1_treap_ad08520c0617eb8dcfcbfa90d258aa6b2_cgraph.svg" width="159" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a1b74d828b33760094906797042b89442"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">numerical_methods::simpson_method::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d18/composite__simpson__rule_8cpp_source.html#l00117">composite_simpson_rule.cpp:117</a></div></div>
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_ad08520c0617eb8dcfcbfa90d258aa6b2"><div class="ttname"><a href="#ad08520c0617eb8dcfcbfa90d258aa6b2">data_structures::treap::Treap::_get_k_th</a></div><div class="ttdeci">int _get_k_th(int &amp;x, int k)</div><div class="ttdoc">Find the KTH largest value (internal method)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd2/treap_8cpp_source.html#l00139">treap.cpp:139</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9a77d22f97add119123108211c6655ec" name="a9a77d22f97add119123108211c6655ec"></a>
@@ -387,6 +400,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The rank of element k </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dd2/treap_8cpp_source.html#l00155">155</a> of file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  155</span>                                {</div>
 <div class="line"><span class="lineno">  156</span>        <span class="keywordflow">if</span> (!x) {</div>
 <div class="line"><span class="lineno">  157</span>            <span class="keywordflow">return</span> 0;</div>
@@ -399,13 +414,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  164</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="#af5f0b8263339485989f8a02ae026114c">size</a>[<a class="code hl_variable" href="#ab99f68b79e1c4ff0f1cd6f2f0b6a545f">childs</a>[x][0]] + <a class="code hl_variable" href="#af7e6c6620ab32bc96633d101245fa919">cnt</a>[x] + <a class="code hl_function" href="#a9a77d22f97add119123108211c6655ec">_get_rank</a>(<a class="code hl_variable" href="#ab99f68b79e1c4ff0f1cd6f2f0b6a545f">childs</a>[x][1], k);</div>
 <div class="line"><span class="lineno">  165</span>        }</div>
 <div class="line"><span class="lineno">  166</span>    }</div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a9a77d22f97add119123108211c6655ec"><div class="ttname"><a href="#a9a77d22f97add119123108211c6655ec">data_structures::treap::Treap::_get_rank</a></div><div class="ttdeci">int _get_rank(int x, int k)</div><div class="ttdoc">Query the rank of specified element (internal method)</div><div class="ttdef"><b>Definition</b> treap.cpp:155</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d95/structdata__structures_1_1treap_1_1_treap_a9a77d22f97add119123108211c6655ec_cgraph.svg" width="159" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a9a77d22f97add119123108211c6655ec"><div class="ttname"><a href="#a9a77d22f97add119123108211c6655ec">data_structures::treap::Treap::_get_rank</a></div><div class="ttdeci">int _get_rank(int x, int k)</div><div class="ttdoc">Query the rank of specified element (internal method)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd2/treap_8cpp_source.html#l00155">treap.cpp:155</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6a023a4f0c42fb8ed5b3368fba1a5f2c" name="a6a023a4f0c42fb8ed5b3368fba1a5f2c"></a>
@@ -443,6 +453,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dd2/treap_8cpp_source.html#l00085">85</a> of file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   85</span>                                {</div>
 <div class="line"><span class="lineno">   86</span>        <span class="keywordflow">if</span> (x) {</div>
 <div class="line"><span class="lineno">   87</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a32db3ba3b2630943faacd27b2ecd1b04">key</a>[x] == k) {</div>
@@ -465,13 +477,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  104</span>        }</div>
 <div class="line"><span class="lineno">  105</span>        <a class="code hl_function" href="#aae9facaede462ad924856c4d707646d7">update</a>(x);</div>
 <div class="line"><span class="lineno">  106</span>    }</div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a6a023a4f0c42fb8ed5b3368fba1a5f2c"><div class="ttname"><a href="#a6a023a4f0c42fb8ed5b3368fba1a5f2c">data_structures::treap::Treap::_insert</a></div><div class="ttdeci">void _insert(int &amp;x, int k)</div><div class="ttdoc">Insert a value into the specified subtree (internal method)</div><div class="ttdef"><b>Definition</b> treap.cpp:85</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d95/structdata__structures_1_1treap_1_1_treap_a6a023a4f0c42fb8ed5b3368fba1a5f2c_cgraph.svg" width="552" height="82"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a6a023a4f0c42fb8ed5b3368fba1a5f2c"><div class="ttname"><a href="#a6a023a4f0c42fb8ed5b3368fba1a5f2c">data_structures::treap::Treap::_insert</a></div><div class="ttdeci">void _insert(int &amp;x, int k)</div><div class="ttdoc">Insert a value into the specified subtree (internal method)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd2/treap_8cpp_source.html#l00085">treap.cpp:85</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9ea2becd904e2e7d22f23a001b444469" name="a9ea2becd904e2e7d22f23a001b444469"></a>
@@ -504,14 +511,11 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  208</span>{ <a class="code hl_function" href="#aeb4bb0db68c7c04ef9498c88c3777887">_erase</a>(<a class="code hl_variable" href="#a3081969b2714a8101f7df28b1ce5ed2c">root</a>, k); }</div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a3081969b2714a8101f7df28b1ce5ed2c"><div class="ttname"><a href="#a3081969b2714a8101f7df28b1ce5ed2c">data_structures::treap::Treap::root</a></div><div class="ttdeci">int root</div><div class="ttdoc">root of the treap</div><div class="ttdef"><b>Definition</b> treap.cpp:41</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/d95/structdata__structures_1_1treap_1_1_treap_a9ea2becd904e2e7d22f23a001b444469_cgraph.svg" width="100%" height="361"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../d0/dd2/treap_8cpp_source.html#l00208">208</a> of file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  208</span>{ <a class="code hl_function" href="#aeb4bb0db68c7c04ef9498c88c3777887">_erase</a>(<a class="code hl_variable" href="#a3081969b2714a8101f7df28b1ce5ed2c">root</a>, k); }</div>
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a3081969b2714a8101f7df28b1ce5ed2c"><div class="ttname"><a href="#a3081969b2714a8101f7df28b1ce5ed2c">data_structures::treap::Treap::root</a></div><div class="ttdeci">int root</div><div class="ttdoc">root of the treap</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd2/treap_8cpp_source.html#l00041">treap.cpp:41</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab2db3ad3aecc240011e0c8b8604d2c69" name="ab2db3ad3aecc240011e0c8b8604d2c69"></a>
@@ -545,13 +549,10 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The element ranked number x </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  214</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#ad08520c0617eb8dcfcbfa90d258aa6b2">_get_k_th</a>(<a class="code hl_variable" href="#a3081969b2714a8101f7df28b1ce5ed2c">root</a>, k); }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d95/structdata__structures_1_1treap_1_1_treap_ab2db3ad3aecc240011e0c8b8604d2c69_cgraph.svg" width="356" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../d0/dd2/treap_8cpp_source.html#l00214">214</a> of file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  214</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#ad08520c0617eb8dcfcbfa90d258aa6b2">_get_k_th</a>(<a class="code hl_variable" href="#a3081969b2714a8101f7df28b1ce5ed2c">root</a>, k); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a767b28f9911fc32b8462862be058a4a4" name="a767b28f9911fc32b8462862be058a4a4"></a>
@@ -585,18 +586,19 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The successor </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dd2/treap_8cpp_source.html#l00188">188</a> of file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  188</span>                        {</div>
-<div class="line"><span class="lineno">  189</span>        <span class="keywordtype">int</span> x = <a class="code hl_variable" href="#a3081969b2714a8101f7df28b1ce5ed2c">root</a>, <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/next.html">next</a> = -1;</div>
+<div class="line"><span class="lineno">  189</span>        <span class="keywordtype">int</span> x = <a class="code hl_variable" href="#a3081969b2714a8101f7df28b1ce5ed2c">root</a>, next = -1;</div>
 <div class="line"><span class="lineno">  190</span>        <span class="keywordflow">while</span> (x) {</div>
 <div class="line"><span class="lineno">  191</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a32db3ba3b2630943faacd27b2ecd1b04">key</a>[x] &gt; k) {</div>
-<div class="line"><span class="lineno">  192</span>                <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/next.html">next</a> = <a class="code hl_variable" href="#a32db3ba3b2630943faacd27b2ecd1b04">key</a>[x], x = <a class="code hl_variable" href="#ab99f68b79e1c4ff0f1cd6f2f0b6a545f">childs</a>[x][0];</div>
+<div class="line"><span class="lineno">  192</span>                next = <a class="code hl_variable" href="#a32db3ba3b2630943faacd27b2ecd1b04">key</a>[x], x = <a class="code hl_variable" href="#ab99f68b79e1c4ff0f1cd6f2f0b6a545f">childs</a>[x][0];</div>
 <div class="line"><span class="lineno">  193</span>            } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">  194</span>                x = <a class="code hl_variable" href="#ab99f68b79e1c4ff0f1cd6f2f0b6a545f">childs</a>[x][1];</div>
 <div class="line"><span class="lineno">  195</span>            }</div>
 <div class="line"><span class="lineno">  196</span>        }</div>
-<div class="line"><span class="lineno">  197</span>        <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/next.html">next</a>;</div>
+<div class="line"><span class="lineno">  197</span>        <span class="keywordflow">return</span> next;</div>
 <div class="line"><span class="lineno">  198</span>    }</div>
-<div class="ttc" id="anext_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/next.html">std::next</a></div><div class="ttdeci">T next(T... args)</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -631,6 +633,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The predecessor </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dd2/treap_8cpp_source.html#l00172">172</a> of file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  172</span>                               {</div>
 <div class="line"><span class="lineno">  173</span>        <span class="keywordtype">int</span> x = <a class="code hl_variable" href="#a3081969b2714a8101f7df28b1ce5ed2c">root</a>, pre = -1;</div>
 <div class="line"><span class="lineno">  174</span>        <span class="keywordflow">while</span> (x) {</div>
@@ -676,13 +680,10 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The rank of element k </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  220</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#a9a77d22f97add119123108211c6655ec">_get_rank</a>(<a class="code hl_variable" href="#a3081969b2714a8101f7df28b1ce5ed2c">root</a>, k); }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d95/structdata__structures_1_1treap_1_1_treap_ac94e9d69305940f6d8804031455af039_cgraph.svg" width="356" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../d0/dd2/treap_8cpp_source.html#l00220">220</a> of file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  220</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#a9a77d22f97add119123108211c6655ec">_get_rank</a>(<a class="code hl_variable" href="#a3081969b2714a8101f7df28b1ce5ed2c">root</a>, k); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5e884d2686aff501ef589b0d1185492f" name="a5e884d2686aff501ef589b0d1185492f"></a>
@@ -715,13 +716,10 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  203</span>{ <a class="code hl_function" href="#a6a023a4f0c42fb8ed5b3368fba1a5f2c">_insert</a>(<a class="code hl_variable" href="#a3081969b2714a8101f7df28b1ce5ed2c">root</a>, k); }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/d95/structdata__structures_1_1treap_1_1_treap_a5e884d2686aff501ef589b0d1185492f_cgraph.svg" width="100%" height="361"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../d0/dd2/treap_8cpp_source.html#l00203">203</a> of file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  203</span>{ <a class="code hl_function" href="#a6a023a4f0c42fb8ed5b3368fba1a5f2c">_insert</a>(<a class="code hl_variable" href="#a3081969b2714a8101f7df28b1ce5ed2c">root</a>, k); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a75a48584a6560de20484fbba6229fd29" name="a75a48584a6560de20484fbba6229fd29"></a>
@@ -759,6 +757,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dd2/treap_8cpp_source.html#l00071">71</a> of file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   71</span>                               {</div>
 <div class="line"><span class="lineno">   72</span>        <span class="keywordtype">int</span> y = <a class="code hl_variable" href="#ab99f68b79e1c4ff0f1cd6f2f0b6a545f">childs</a>[x][t];</div>
 <div class="line"><span class="lineno">   73</span>        <a class="code hl_variable" href="#ab99f68b79e1c4ff0f1cd6f2f0b6a545f">childs</a>[x][t] = <a class="code hl_variable" href="#ab99f68b79e1c4ff0f1cd6f2f0b6a545f">childs</a>[y][1 - t];</div>
@@ -768,12 +768,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   77</span>        <a class="code hl_function" href="#aae9facaede462ad924856c4d707646d7">update</a>(y);</div>
 <div class="line"><span class="lineno">   78</span>        x = y;</div>
 <div class="line"><span class="lineno">   79</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d95/structdata__structures_1_1treap_1_1_treap_a75a48584a6560de20484fbba6229fd29_cgraph.svg" width="356" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aae9facaede462ad924856c4d707646d7" name="aae9facaede462ad924856c4d707646d7"></a>
@@ -806,6 +801,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dd2/treap_8cpp_source.html#l00063">63</a> of file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   63</span>                       {</div>
 <div class="line"><span class="lineno">   64</span>        <a class="code hl_variable" href="#af5f0b8263339485989f8a02ae026114c">size</a>[x] = <a class="code hl_variable" href="#af5f0b8263339485989f8a02ae026114c">size</a>[<a class="code hl_variable" href="#ab99f68b79e1c4ff0f1cd6f2f0b6a545f">childs</a>[x][0]] + <a class="code hl_variable" href="#af7e6c6620ab32bc96633d101245fa919">cnt</a>[x] + <a class="code hl_variable" href="#af5f0b8263339485989f8a02ae026114c">size</a>[<a class="code hl_variable" href="#ab99f68b79e1c4ff0f1cd6f2f0b6a545f">childs</a>[x][1]];</div>
 <div class="line"><span class="lineno">   65</span>    }</div>
@@ -820,15 +817,17 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt;int, 2&gt;, <a class="el" href="../../dd/d2e/namespacedata__structures_1_1treap.html#ad939ec178d0069aeea14b7d6d7d12099">maxNode</a>&gt; data_structures::treap::Treap::childs</td>
+          <td class="memname">std::array&lt;std::array&lt;int, 2&gt;, <a class="el" href="../../dd/d2e/namespacedata__structures_1_1treap.html#ad939ec178d0069aeea14b7d6d7d12099">maxNode</a>&gt; data_structures::treap::Treap::childs</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">        {}}</div>
 </div><!-- fragment --><p>[i][0] represents the left child of node i, and [i][1] represents the right </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dd2/treap_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   45</span>                                                 {</div>
-<div class="line"><span class="lineno">   46</span>        {}};  <span class="comment">///&lt; [i][0] represents the</span></div>
+<div class="line"><span class="lineno">   46</span>        {}};  </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -839,7 +838,7 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt;int, <a class="el" href="../../dd/d2e/namespacedata__structures_1_1treap.html#ad939ec178d0069aeea14b7d6d7d12099">maxNode</a>&gt; data_structures::treap::Treap::cnt</td>
+          <td class="memname">std::array&lt;int, <a class="el" href="../../dd/d2e/namespacedata__structures_1_1treap.html#ad939ec178d0069aeea14b7d6d7d12099">maxNode</a>&gt; data_structures::treap::Treap::cnt</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -847,7 +846,9 @@ Here is the call graph for this function:</div>
 <div class="line">        {}</div>
 </div><!-- fragment -->
 <p>Maintains the subtree size for ranking query. </p>
-<div class="fragment"><div class="line"><span class="lineno">   50</span>        {};  <span class="comment">///&lt; Maintains the subtree size for ranking query</span></div>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dd2/treap_8cpp_source.html#l00049">49</a> of file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   50</span>        {};  </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -858,13 +859,15 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt;int, <a class="el" href="../../dd/d2e/namespacedata__structures_1_1treap.html#ad939ec178d0069aeea14b7d6d7d12099">maxNode</a>&gt; data_structures::treap::Treap::key = {}</td>
+          <td class="memname">std::array&lt;int, <a class="el" href="../../dd/d2e/namespacedata__structures_1_1treap.html#ad939ec178d0069aeea14b7d6d7d12099">maxNode</a>&gt; data_structures::treap::Treap::key = {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p><a class="el" href="../../d9/d49/structdata__structures_1_1_node.html">Node</a> identifier. </p>
-<div class="fragment"><div class="line"><span class="lineno">   43</span>{};       <span class="comment">///&lt; Node identifier</span></div>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dd2/treap_8cpp_source.html#l00043">43</a> of file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>{};       </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -875,14 +878,34 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt;int, <a class="el" href="../../dd/d2e/namespacedata__structures_1_1treap.html#ad939ec178d0069aeea14b7d6d7d12099">maxNode</a>&gt; data_structures::treap::Treap::priority = {}</td>
+          <td class="memname">std::array&lt;int, <a class="el" href="../../dd/d2e/namespacedata__structures_1_1treap.html#ad939ec178d0069aeea14b7d6d7d12099">maxNode</a>&gt; data_structures::treap::Treap::priority = {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Random priority. </p>
-<div class="fragment"><div class="line"><span class="lineno">   44</span>{};  <span class="comment">///&lt; Random priority</span></div>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dd2/treap_8cpp_source.html#l00044">44</a> of file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>{};  </div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a3081969b2714a8101f7df28b1ce5ed2c" name="a3081969b2714a8101f7df28b1ce5ed2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3081969b2714a8101f7df28b1ce5ed2c">&#9670;&#160;</a></span>root</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int data_structures::treap::Treap::root = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>root of the treap </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dd2/treap_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
+
 </div>
 </div>
 <a id="af5f0b8263339485989f8a02ae026114c" name="af5f0b8263339485989f8a02ae026114c"></a>
@@ -892,18 +915,38 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt;int, <a class="el" href="../../dd/d2e/namespacedata__structures_1_1treap.html#ad939ec178d0069aeea14b7d6d7d12099">maxNode</a>&gt; data_structures::treap::Treap::size = {}</td>
+          <td class="memname">std::array&lt;int, <a class="el" href="../../dd/d2e/namespacedata__structures_1_1treap.html#ad939ec178d0069aeea14b7d6d7d12099">maxNode</a>&gt; data_structures::treap::Treap::size = {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>The number of copies per node. </p>
-<div class="fragment"><div class="line"><span class="lineno">   51</span>{};  <span class="comment">///&lt; The number of copies per node</span></div>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dd2/treap_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   51</span>{};  </div>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a1ab082fe0aa95a238bbbc68ab6a72425" name="a1ab082fe0aa95a238bbbc68ab6a72425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ab082fe0aa95a238bbbc68ab6a72425">&#9670;&#160;</a></span>treapCnt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int data_structures::treap::Treap::treapCnt = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Total number of current nodes in the treap. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dd2/treap_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>data_structures/<a class="el" href="../../d0/dd2/treap_8cpp.html">treap.cpp</a></li>
+<li>data_structures/<a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

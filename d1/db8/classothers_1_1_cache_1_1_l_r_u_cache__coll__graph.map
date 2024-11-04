@@ -1,13 +1,11 @@
 <map id="others::Cache::LRUCache&lt; K, V &gt;" name="others::Cache::LRUCache&lt; K, V &gt;">
-<area shape="rect" id="Node000001" title="LRUCache." alt="" coords="637,68,814,109"/>
+<area shape="rect" id="Node000001" title="LRUCache." alt="" coords="637,30,814,71"/>
 <area shape="rect" id="Node000002" href="$de/d21/classothers_1_1_cache_1_1_d___node.html" title=" " alt="" coords="121,11,280,52"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="295,29,361,31,444,36,526,46,637,66,637,72,525,51,443,42,361,37,295,34"/>
-<area shape="rect" id="Node000005" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_map.html" title=" " alt="" coords="385,61,525,117"/>
-<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="296,50,385,70,384,76,295,55"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,57,44,83"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="58,60,120,46,121,52,59,65"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="60,71,121,76,385,85,385,90,121,81,59,76"/>
-<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/integer.html" title=" " alt="" coords="409,141,502,167"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="516,137,638,107,639,112,517,142"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="541,86,637,86,637,91,541,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="295,30,361,32,637,43,637,49,361,37,295,36"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="385,61,525,117"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="296,50,385,71,384,76,295,56"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,58,44,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="58,61,120,47,121,52,59,66"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="60,71,121,76,385,85,385,91,121,81,59,77"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="541,74,637,60,637,66,541,80"/>
 </map>

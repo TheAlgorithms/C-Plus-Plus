@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: machine_learning::aystar_search::AyStarSearch&lt; Puzzle &gt;::Info Struct Reference</title>
+<title>TheAlgorithms/C++: machine_learning::aystar_search::AyStarSearch&lt; Puzzle &gt;::Info Struct Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -150,21 +167,20 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a94862762ad167506dcb0cdebf007d04c" id="r_a94862762ad167506dcb0cdebf007d04c"><td class="memItemLeft" align="right" valign="top"><a id="a94862762ad167506dcb0cdebf007d04c" name="a94862762ad167506dcb0cdebf007d04c"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; Puzzle &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
+<tr class="memitem:a94862762ad167506dcb0cdebf007d04c" id="r_a94862762ad167506dcb0cdebf007d04c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; Puzzle &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94862762ad167506dcb0cdebf007d04c">state</a></td></tr>
 <tr class="separator:a94862762ad167506dcb0cdebf007d04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a331d1070d008a4f9d55775a51013baa3" id="r_a331d1070d008a4f9d55775a51013baa3"><td class="memItemLeft" align="right" valign="top"><a id="a331d1070d008a4f9d55775a51013baa3" name="a331d1070d008a4f9d55775a51013baa3"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>heuristic_value</b> = 0</td></tr>
-<tr class="memdesc:a331d1070d008a4f9d55775a51013baa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the current state. <br /></td></tr>
+<tr class="memitem:a331d1070d008a4f9d55775a51013baa3" id="r_a331d1070d008a4f9d55775a51013baa3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a331d1070d008a4f9d55775a51013baa3">heuristic_value</a> = 0</td></tr>
+<tr class="memdesc:a331d1070d008a4f9d55775a51013baa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the current state.  <br /></td></tr>
 <tr class="separator:a331d1070d008a4f9d55775a51013baa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a003a30bb165be50ce503c17df90c128d" id="r_a003a30bb165be50ce503c17df90c128d"><td class="memItemLeft" align="right" valign="top"><a id="a003a30bb165be50ce503c17df90c128d" name="a003a30bb165be50ce503c17df90c128d"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>depth</b> = 0</td></tr>
-<tr class="memdesc:a003a30bb165be50ce503c17df90c128d"><td class="mdescLeft">&#160;</td><td class="mdescRight">stores h score <br /></td></tr>
+<tr class="memitem:a003a30bb165be50ce503c17df90c128d" id="r_a003a30bb165be50ce503c17df90c128d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a003a30bb165be50ce503c17df90c128d">depth</a> = 0</td></tr>
+<tr class="memdesc:a003a30bb165be50ce503c17df90c128d"><td class="mdescLeft">&#160;</td><td class="mdescRight">stores h score  <br /></td></tr>
 <tr class="separator:a003a30bb165be50ce503c17df90c128d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename Puzzle&gt;<br />
 struct machine_learning::aystar_search::AyStarSearch&lt; Puzzle &gt;::Info</div><p>Struct that handles all the information related to the current state. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00293">293</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aaa7ea27346659f0abe2df82ca57fc5a7" name="aaa7ea27346659f0abe2df82ca57fc5a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa7ea27346659f0abe2df82ca57fc5a7">&#9670;&#160;</a></span>Info() <span class="overload">[1/5]</span></h2>
@@ -228,8 +244,9 @@ template&lt;typename Puzzle &gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  307</span>: state(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html">std::make_shared&lt;Puzzle&gt;</a>(A)) {}</div>
-<div class="ttc" id="amake_shared_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html">std::make_shared</a></div><div class="ttdeci">T make_shared(T... args)</div></div>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00307">307</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  307</span>: state(std::make_shared&lt;Puzzle&gt;(A)) {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -276,11 +293,13 @@ template&lt;typename Puzzle &gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  316</span>            : state(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html">std::make_shared&lt;Puzzle&gt;</a>(A)),</div>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00315">315</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  316</span>            : state(std::make_shared&lt;Puzzle&gt;(A)),</div>
 <div class="line"><span class="lineno">  317</span>              <a class="code hl_variable" href="#a331d1070d008a4f9d55775a51013baa3">heuristic_value</a>(h_value),</div>
 <div class="line"><span class="lineno">  318</span>              <a class="code hl_variable" href="#a003a30bb165be50ce503c17df90c128d">depth</a>(d) {}</div>
-<div class="ttc" id="astructmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info_html_a003a30bb165be50ce503c17df90c128d"><div class="ttname"><a href="#a003a30bb165be50ce503c17df90c128d">machine_learning::aystar_search::AyStarSearch::Info::depth</a></div><div class="ttdeci">size_t depth</div><div class="ttdoc">stores h score</div><div class="ttdef"><b>Definition</b> a_star_search.cpp:296</div></div>
-<div class="ttc" id="astructmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info_html_a331d1070d008a4f9d55775a51013baa3"><div class="ttname"><a href="#a331d1070d008a4f9d55775a51013baa3">machine_learning::aystar_search::AyStarSearch::Info::heuristic_value</a></div><div class="ttdeci">size_t heuristic_value</div><div class="ttdoc">Holds the current state.</div><div class="ttdef"><b>Definition</b> a_star_search.cpp:295</div></div>
+<div class="ttc" id="astructmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info_html_a003a30bb165be50ce503c17df90c128d"><div class="ttname"><a href="#a003a30bb165be50ce503c17df90c128d">machine_learning::aystar_search::AyStarSearch::Info::depth</a></div><div class="ttdeci">size_t depth</div><div class="ttdoc">stores h score</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dec/a__star__search_8cpp_source.html#l00296">a_star_search.cpp:296</a></div></div>
+<div class="ttc" id="astructmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info_html_a331d1070d008a4f9d55775a51013baa3"><div class="ttname"><a href="#a331d1070d008a4f9d55775a51013baa3">machine_learning::aystar_search::AyStarSearch::Info::heuristic_value</a></div><div class="ttdeci">size_t heuristic_value</div><div class="ttdoc">Holds the current state.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dec/a__star__search_8cpp_source.html#l00295">a_star_search.cpp:295</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -316,7 +335,9 @@ template&lt;typename Puzzle &gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  325</span>            : state(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html">std::make_shared&lt;Puzzle&gt;</a>(A.state)),</div>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00324">324</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  325</span>            : state(std::make_shared&lt;Puzzle&gt;(A.state)),</div>
 <div class="line"><span class="lineno">  326</span>              <a class="code hl_variable" href="#a331d1070d008a4f9d55775a51013baa3">heuristic_value</a>(A.heuristic_value),</div>
 <div class="line"><span class="lineno">  327</span>              <a class="code hl_variable" href="#a003a30bb165be50ce503c17df90c128d">depth</a>(A.depth) {}</div>
 </div><!-- fragment -->
@@ -354,10 +375,11 @@ template&lt;typename Puzzle &gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  334</span>            : state(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html">std::make_shared&lt;Puzzle&gt;</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.state))),</div>
-<div class="line"><span class="lineno">  335</span>              <a class="code hl_variable" href="#a331d1070d008a4f9d55775a51013baa3">heuristic_value</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.heuristic_value)),</div>
-<div class="line"><span class="lineno">  336</span>              <a class="code hl_variable" href="#a003a30bb165be50ce503c17df90c128d">depth</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.depth)) {}</div>
-<div class="ttc" id="amove_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a></div><div class="ttdeci">T move(T... args)</div></div>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00333">333</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  334</span>            : state(std::make_shared&lt;Puzzle&gt;(std::move(A.state))),</div>
+<div class="line"><span class="lineno">  335</span>              <a class="code hl_variable" href="#a331d1070d008a4f9d55775a51013baa3">heuristic_value</a>(std::move(A.heuristic_value)),</div>
+<div class="line"><span class="lineno">  336</span>              <a class="code hl_variable" href="#a003a30bb165be50ce503c17df90c128d">depth</a>(std::move(A.depth)) {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -394,6 +416,8 @@ template&lt;typename Puzzle &gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00342">342</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  342</span>                                       {</div>
 <div class="line"><span class="lineno">  343</span>            state = A.state;</div>
 <div class="line"><span class="lineno">  344</span>            <a class="code hl_variable" href="#a331d1070d008a4f9d55775a51013baa3">heuristic_value</a> = A.heuristic_value;</div>
@@ -435,22 +459,78 @@ template&lt;typename Puzzle &gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00353">353</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  353</span>                                           {</div>
-<div class="line"><span class="lineno">  354</span>            state = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.state);</div>
-<div class="line"><span class="lineno">  355</span>            <a class="code hl_variable" href="#a331d1070d008a4f9d55775a51013baa3">heuristic_value</a> = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.heuristic_value);</div>
-<div class="line"><span class="lineno">  356</span>            <a class="code hl_variable" href="#a003a30bb165be50ce503c17df90c128d">depth</a> = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.depth);</div>
+<div class="line"><span class="lineno">  354</span>            state = std::move(A.state);</div>
+<div class="line"><span class="lineno">  355</span>            <a class="code hl_variable" href="#a331d1070d008a4f9d55775a51013baa3">heuristic_value</a> = std::move(A.heuristic_value);</div>
+<div class="line"><span class="lineno">  356</span>            <a class="code hl_variable" href="#a003a30bb165be50ce503c17df90c128d">depth</a> = std::move(A.depth);</div>
 <div class="line"><span class="lineno">  357</span>            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><span class="lineno">  358</span>        }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info_ad3993dbca9c5b3ef9ac361dc7f62ce57_cgraph.svg" width="304" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div><!-- fragment -->
 </div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a003a30bb165be50ce503c17df90c128d" name="a003a30bb165be50ce503c17df90c128d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a003a30bb165be50ce503c17df90c128d">&#9670;&#160;</a></span>depth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Puzzle &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="../../da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html">machine_learning::aystar_search::AyStarSearch</a>&lt; Puzzle &gt;::Info::depth = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>stores h score </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00296">296</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a331d1070d008a4f9d55775a51013baa3" name="a331d1070d008a4f9d55775a51013baa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a331d1070d008a4f9d55775a51013baa3">&#9670;&#160;</a></span>heuristic_value</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Puzzle &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="../../da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html">machine_learning::aystar_search::AyStarSearch</a>&lt; Puzzle &gt;::Info::heuristic_value = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Holds the current state. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00295">295</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a94862762ad167506dcb0cdebf007d04c" name="a94862762ad167506dcb0cdebf007d04c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94862762ad167506dcb0cdebf007d04c">&#9670;&#160;</a></span>state</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Puzzle &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;Puzzle&gt; <a class="el" href="../../da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html">machine_learning::aystar_search::AyStarSearch</a>&lt; Puzzle &gt;::Info::state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html#l00294">294</a> of file <a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>machine_learning/<b>a_star_search.cpp</b></li>
+<li>machine_learning/<a class="el" href="../../dd/dec/a__star__search_8cpp_source.html">a_star_search.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

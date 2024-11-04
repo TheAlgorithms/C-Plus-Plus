@@ -1,8 +1,0 @@
-<map id="dynamic_programming::palindrome_partitioning::pal_part" name="dynamic_programming::palindrome_partitioning::pal_part">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,168,85"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="50,29,50,19,57,10,69,5,87,3,106,5,118,12,116,17,105,10,86,8,70,10,60,14,55,21,55,29"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="237,19,306,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,43,221,36,222,41,169,49"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="216,68,327,94"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="169,65,201,69,200,75,168,70"/>
-</map>

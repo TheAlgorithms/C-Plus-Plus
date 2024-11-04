@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: backtracking/subarray_sum.cpp File Reference</title>
+<title>TheAlgorithms/C++: backtracking/subarray_sum.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -123,7 +140,9 @@ Include dependency graph for subarray_sum.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d90/subarray__sum_8cpp__incl.svg" width="471" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../df/d94/subarray__sum_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc0/namespacebacktracking.html">backtracking</a></td></tr>
@@ -135,7 +154,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af5687bbd9faf927fbd363c71e0baba5e" id="r_af5687bbd9faf927fbd363c71e0baba5e"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5687bbd9faf927fbd363c71e0baba5e">backtracking::subarray_sum::subarray_sum</a> (int64_t sum, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt; &amp;in_arr)</td></tr>
+<tr class="memitem:af5687bbd9faf927fbd363c71e0baba5e" id="r_af5687bbd9faf927fbd363c71e0baba5e"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5687bbd9faf927fbd363c71e0baba5e">backtracking::subarray_sum::subarray_sum</a> (int64_t sum, const std::vector&lt; int64_t &gt; &amp;in_arr)</td></tr>
 <tr class="memdesc:af5687bbd9faf927fbd363c71e0baba5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main function that implements the count of the subarrays.  <br /></td></tr>
 <tr class="separator:af5687bbd9faf927fbd363c71e0baba5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
@@ -149,6 +168,8 @@ Functions</h2></td></tr>
 <div class="textblock"><p><a href="https://en.wikipedia.org/wiki/Subset_sum_problem" target="_blank">Subset-sum</a> (only continuous subsets) problem </p>
 <p>We are given an array and a sum value. The algorithms find all the subarrays of that array with sum equal to the given sum and return such subarrays count. This approach will have \(O(n)\) time complexity and \(O(n)\) space complexity. NOTE: In this problem, we are only referring to the continuous subsets as subarrays everywhere. Subarrays can be created using deletion operation at the end of the front of an array only. The parent array is also counted in subarrays having 0 number of deletion operations.</p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/Swastyy" target="_blank">Swastika Gupta</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../df/d94/subarray__sum_8cpp_source.html">subarray_sum.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -167,17 +188,14 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d94/subarray__sum_8cpp_source.html#l00115">115</a> of file <a class="el" href="../../df/d94/subarray__sum_8cpp_source.html">subarray_sum.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  115</span>           {</div>
 <div class="line"><span class="lineno">  116</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
 <div class="line"><span class="lineno">  117</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  118</span>}</div>
-<div class="ttc" id="asubarray__sum_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> subarray_sum.cpp:68</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d94/subarray__sum_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="271" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="asubarray__sum_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d94/subarray__sum_8cpp_source.html#l00068">subarray_sum.cpp:68</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af5687bbd9faf927fbd363c71e0baba5e" name="af5687bbd9faf927fbd363c71e0baba5e"></a>
@@ -194,7 +212,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>in_arr</em></span>&#160;)</td>
+          <td class="paramtype">const std::vector&lt; int64_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>in_arr</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -208,11 +226,13 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>count of the number of subsets with required sum </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d94/subarray__sum_8cpp_source.html#l00039">39</a> of file <a class="el" href="../../df/d94/subarray__sum_8cpp_source.html">subarray_sum.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   39</span>                                                                     {</div>
-<div class="line"><span class="lineno">   40</span>    int64_t nelement = in_arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">   40</span>    int64_t nelement = in_arr.size();</div>
 <div class="line"><span class="lineno">   41</span>    int64_t count_of_subset = 0;</div>
 <div class="line"><span class="lineno">   42</span>    int64_t current_sum = 0;</div>
-<div class="line"><span class="lineno">   43</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_map.html">std::unordered_map&lt;int64_t, int64_t&gt;</a></div>
+<div class="line"><span class="lineno">   43</span>    std::unordered_map&lt;int64_t, int64_t&gt;</div>
 <div class="line"><span class="lineno">   44</span>        sumarray;  <span class="comment">// to store the subarrays count</span></div>
 <div class="line"><span class="lineno">   45</span>                   <span class="comment">// frequency having some sum value</span></div>
 <div class="line"><span class="lineno">   46</span> </div>
@@ -223,24 +243,15 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   51</span>            count_of_subset++;</div>
 <div class="line"><span class="lineno">   52</span>        }</div>
 <div class="line"><span class="lineno">   53</span>        <span class="comment">// If in case current_sum is greater than the required sum</span></div>
-<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">if</span> (sumarray.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_map/find.html">find</a>(current_sum - sum) != sumarray.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_map/end.html">end</a>()) {</div>
+<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">if</span> (sumarray.find(current_sum - sum) != sumarray.end()) {</div>
 <div class="line"><span class="lineno">   55</span>            count_of_subset += (sumarray[current_sum - <a class="code hl_function" href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">sum</a>]);</div>
 <div class="line"><span class="lineno">   56</span>        }</div>
 <div class="line"><span class="lineno">   57</span>        sumarray[current_sum]++;</div>
 <div class="line"><span class="lineno">   58</span>    }</div>
 <div class="line"><span class="lineno">   59</span>    <span class="keywordflow">return</span> count_of_subset;</div>
 <div class="line"><span class="lineno">   60</span>}</div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/unordered_map/end.html">std::unordered_map::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="afind_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/unordered_map/find.html">std::unordered_map::find</a></div><div class="ttdeci">T find(T... args)</div></div>
-<div class="ttc" id="anamespacemachine__learning_html_a6f1c98c016ad34ff3d9f39372161bd35"><div class="ttname"><a href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">machine_learning::sum</a></div><div class="ttdeci">T sum(const std::vector&lt; std::valarray&lt; T &gt; &gt; &amp;A)</div><div class="ttdef"><b>Definition</b> vector_ops.hpp:232</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-<div class="ttc" id="aunordered_map_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/unordered_map.html">std::unordered_map</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d94/subarray__sum_8cpp_af5687bbd9faf927fbd363c71e0baba5e_cgraph.svg" width="378" height="151"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="anamespacemachine__learning_html_a6f1c98c016ad34ff3d9f39372161bd35"><div class="ttname"><a href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">machine_learning::sum</a></div><div class="ttdeci">T sum(const std::vector&lt; std::valarray&lt; T &gt; &gt; &amp;A)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d95/vector__ops_8hpp_source.html#l00232">vector_ops.hpp:232</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -268,57 +279,51 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d94/subarray__sum_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../df/d94/subarray__sum_8cpp_source.html">subarray_sum.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   68</span>                   {</div>
 <div class="line"><span class="lineno">   69</span>    <span class="comment">// 1st test</span></div>
-<div class="line"><span class="lineno">   70</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;1st test &quot;</span>;</div>
-<div class="line"><span class="lineno">   71</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> array1 = {-7, -3, -2, 5, 8};  <span class="comment">// input array</span></div>
+<div class="line"><span class="lineno">   70</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;1st test &quot;</span>;</div>
+<div class="line"><span class="lineno">   71</span>    std::vector&lt;int64_t&gt; array1 = {-7, -3, -2, 5, 8};  <span class="comment">// input array</span></div>
 <div class="line"><span class="lineno">   72</span>    assert(</div>
 <div class="line"><span class="lineno">   73</span>        backtracking::subarray_sum::subarray_sum(0, array1) ==</div>
 <div class="line"><span class="lineno">   74</span>        1);  <span class="comment">// first argument in subarray_sum function is the required sum and</span></div>
 <div class="line"><span class="lineno">   75</span>             <span class="comment">// second is the input array, answer is the subarray {(-3,-2,5)}</span></div>
-<div class="line"><span class="lineno">   76</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   76</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   77</span> </div>
 <div class="line"><span class="lineno">   78</span>    <span class="comment">// 2nd test</span></div>
-<div class="line"><span class="lineno">   79</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;2nd test &quot;</span>;</div>
-<div class="line"><span class="lineno">   80</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> array2 = {1, 2, 3, 3};</div>
+<div class="line"><span class="lineno">   79</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;2nd test &quot;</span>;</div>
+<div class="line"><span class="lineno">   80</span>    std::vector&lt;int64_t&gt; array2 = {1, 2, 3, 3};</div>
 <div class="line"><span class="lineno">   81</span>    assert(backtracking::subarray_sum::subarray_sum(6, array2) ==</div>
 <div class="line"><span class="lineno">   82</span>           2);  <span class="comment">// here we are expecting 2 subsets which sum up to 6 i.e.</span></div>
 <div class="line"><span class="lineno">   83</span>                <span class="comment">// {(1,2,3),(3,3)}</span></div>
-<div class="line"><span class="lineno">   84</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   84</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   85</span> </div>
 <div class="line"><span class="lineno">   86</span>    <span class="comment">// 3rd test</span></div>
-<div class="line"><span class="lineno">   87</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;3rd test &quot;</span>;</div>
-<div class="line"><span class="lineno">   88</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> array3 = {1, 1, 1, 1};</div>
+<div class="line"><span class="lineno">   87</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;3rd test &quot;</span>;</div>
+<div class="line"><span class="lineno">   88</span>    std::vector&lt;int64_t&gt; array3 = {1, 1, 1, 1};</div>
 <div class="line"><span class="lineno">   89</span>    assert(backtracking::subarray_sum::subarray_sum(1, array3) ==</div>
 <div class="line"><span class="lineno">   90</span>           4);  <span class="comment">// here we are expecting 4 subsets which sum up to 1 i.e.</span></div>
 <div class="line"><span class="lineno">   91</span>                <span class="comment">// {(1),(1),(1),(1)}</span></div>
-<div class="line"><span class="lineno">   92</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   92</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   93</span> </div>
 <div class="line"><span class="lineno">   94</span>    <span class="comment">// 4rd test</span></div>
-<div class="line"><span class="lineno">   95</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;4th test &quot;</span>;</div>
-<div class="line"><span class="lineno">   96</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> array4 = {3, 3, 3, 3};</div>
+<div class="line"><span class="lineno">   95</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;4th test &quot;</span>;</div>
+<div class="line"><span class="lineno">   96</span>    std::vector&lt;int64_t&gt; array4 = {3, 3, 3, 3};</div>
 <div class="line"><span class="lineno">   97</span>    assert(backtracking::subarray_sum::subarray_sum(6, array4) ==</div>
 <div class="line"><span class="lineno">   98</span>           3);  <span class="comment">// here we are expecting 3 subsets which sum up to 6 i.e.</span></div>
 <div class="line"><span class="lineno">   99</span>                <span class="comment">// {(3,3),(3,3),(3,3)}</span></div>
-<div class="line"><span class="lineno">  100</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  100</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  101</span> </div>
 <div class="line"><span class="lineno">  102</span>    <span class="comment">// 5th test</span></div>
-<div class="line"><span class="lineno">  103</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;5th test &quot;</span>;</div>
-<div class="line"><span class="lineno">  104</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> array5 = {};</div>
+<div class="line"><span class="lineno">  103</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;5th test &quot;</span>;</div>
+<div class="line"><span class="lineno">  104</span>    std::vector&lt;int64_t&gt; array5 = {};</div>
 <div class="line"><span class="lineno">  105</span>    assert(backtracking::subarray_sum::subarray_sum(6, array5) ==</div>
 <div class="line"><span class="lineno">  106</span>           0);  <span class="comment">// here we are expecting 0 subsets which sum up to 6 i.e. we</span></div>
 <div class="line"><span class="lineno">  107</span>                <span class="comment">// cannot select anything from an empty array</span></div>
-<div class="line"><span class="lineno">  108</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  108</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  109</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d94/subarray__sum_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="174" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

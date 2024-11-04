@@ -164,7 +164,6 @@ var namespaces_dup =
     ] ],
     [ "stack_using_queue", "df/d1c/namespacestack__using__queue.html", null ],
     [ "statistics", "d2/dcf/namespacestatistics.html", "d2/dcf/namespacestatistics" ],
-    [ "std", "d8/dcc/namespacestd.html", "d8/dcc/namespacestd" ],
     [ "strand", "d8/d1d/namespacestrand.html", null ],
     [ "strassens_multiplication", "d3/d91/namespacestrassens__multiplication.html", null ],
     [ "string", "d6/dd6/namespacestring.html", [

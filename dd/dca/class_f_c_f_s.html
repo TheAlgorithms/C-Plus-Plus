@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: FCFS&lt; S, T, E &gt; Class Template Reference</title>
+<title>TheAlgorithms/C++: FCFS&lt; S, T, E &gt; Class Template Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -114,18 +131,13 @@ $(function(){initNavTree('dd/dca/class_f_c_f_s.html','../../'); initResizable(tr
 
 <p>Class which implements the <a class="el" href="../../dd/dca/class_f_c_f_s.html" title="Class which implements the FCFS scheduling algorithm.">FCFS</a> scheduling algorithm.  
  <a href="#details">More...</a></p>
-<div class="dynheader">
-Collaboration diagram for FCFS&lt; S, T, E &gt;:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dbb/class_f_c_f_s__coll__graph.svg" width="603" height="242"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8fbfe4d85f7576b4a7aade07d29fbd69" id="r_a8fbfe4d85f7576b4a7aade07d29fbd69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fbfe4d85f7576b4a7aade07d29fbd69">addProcess</a> (S id, T arrival, E burst)</td></tr>
 <tr class="memdesc:a8fbfe4d85f7576b4a7aade07d29fbd69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the process to the ready queue if it isn't already there.  <br /></td></tr>
 <tr class="separator:a8fbfe4d85f7576b4a7aade07d29fbd69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa25dbe30ba9930b5a7c1a6d11758bd91" id="r_aa25dbe30ba9930b5a7c1a6d11758bd91"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/tuple.html">tuple</a>&lt; S, T, E, double, double, double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa25dbe30ba9930b5a7c1a6d11758bd91">scheduleForFcfs</a> ()</td></tr>
+<tr class="memitem:aa25dbe30ba9930b5a7c1a6d11758bd91" id="r_aa25dbe30ba9930b5a7c1a6d11758bd91"><td class="memItemLeft" align="right" valign="top">vector&lt; tuple&lt; S, T, E, double, double, double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa25dbe30ba9930b5a7c1a6d11758bd91">scheduleForFcfs</a> ()</td></tr>
 <tr class="memdesc:aa25dbe30ba9930b5a7c1a6d11758bd91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Algorithm for scheduling CPU processes according to the First Come First Serve(FCFS) scheduling algorithm.  <br /></td></tr>
 <tr class="separator:aa25dbe30ba9930b5a7c1a6d11758bd91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb361a612b18bb189aa6d3c49288b793" id="r_abb361a612b18bb189aa6d3c49288b793"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb361a612b18bb189aa6d3c49288b793">printResult</a> ()</td></tr>
@@ -134,13 +146,11 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:af2594e22a867b308e027623940193d46" id="r_af2594e22a867b308e027623940193d46"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue.html">priority_queue</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/tuple.html">tuple</a>&lt; S, T, E, double, double, double &gt;, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/tuple.html">tuple</a>&lt; S, T, E, double, double, double &gt; &gt;, <a class="el" href="../../de/d4a/class_compare.html">Compare</a>&lt; S, T, E &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2594e22a867b308e027623940193d46">schedule</a></td></tr>
+<tr class="memitem:af2594e22a867b308e027623940193d46" id="r_af2594e22a867b308e027623940193d46"><td class="memItemLeft" align="right" valign="top">priority_queue&lt; tuple&lt; S, T, E, double, double, double &gt;, vector&lt; tuple&lt; S, T, E, double, double, double &gt; &gt;, <a class="el" href="../../de/d4a/class_compare.html">Compare</a>&lt; S, T, E &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2594e22a867b308e027623940193d46">schedule</a></td></tr>
 <tr class="separator:af2594e22a867b308e027623940193d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3abd3d9f23437599ff9a2131c8b631f" id="r_ac3abd3d9f23437599ff9a2131c8b631f"><td class="memItemLeft" align="right" valign="top"><a id="ac3abd3d9f23437599ff9a2131c8b631f" name="ac3abd3d9f23437599ff9a2131c8b631f"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/tuple.html">tuple</a>&lt; S, T, E, double, double, double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>result</b></td></tr>
+<tr class="memitem:ac3abd3d9f23437599ff9a2131c8b631f" id="r_ac3abd3d9f23437599ff9a2131c8b631f"><td class="memItemLeft" align="right" valign="top">vector&lt; tuple&lt; S, T, E, double, double, double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3abd3d9f23437599ff9a2131c8b631f">result</a></td></tr>
 <tr class="separator:ac3abd3d9f23437599ff9a2131c8b631f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86e9908699e2ff89557c01f1a4b47d83" id="r_a86e9908699e2ff89557c01f1a4b47d83"><td class="memItemLeft" align="right" valign="top"><a id="a86e9908699e2ff89557c01f1a4b47d83" name="a86e9908699e2ff89557c01f1a4b47d83"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_set.html">unordered_set</a>&lt; S &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>idList</b></td></tr>
+<tr class="memitem:a86e9908699e2ff89557c01f1a4b47d83" id="r_a86e9908699e2ff89557c01f1a4b47d83"><td class="memItemLeft" align="right" valign="top">unordered_set&lt; S &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86e9908699e2ff89557c01f1a4b47d83">idList</a></td></tr>
 <tr class="separator:a86e9908699e2ff89557c01f1a4b47d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -154,6 +164,8 @@ class FCFS&lt; S, T, E &gt;</div><p>Class which implements the <a class="el" hre
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d47/fcfs__scheduling_8cpp_source.html#l00098">98</a> of file <a class="el" href="../../df/d47/fcfs__scheduling_8cpp_source.html">fcfs_scheduling.cpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a8fbfe4d85f7576b4a7aade07d29fbd69" name="a8fbfe4d85f7576b4a7aade07d29fbd69"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8fbfe4d85f7576b4a7aade07d29fbd69">&#9670;&#160;</a></span>addProcess()</h2>
@@ -199,23 +211,19 @@ template&lt;typename S , typename T , typename E &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d47/fcfs__scheduling_8cpp_source.html#l00130">130</a> of file <a class="el" href="../../df/d47/fcfs__scheduling_8cpp_source.html">fcfs_scheduling.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  130</span>                                              {</div>
 <div class="line"><span class="lineno">  131</span>        <span class="comment">// Add if a process with process ID as id is not found in idList.</span></div>
 <div class="line"><span class="lineno">  132</span>        <span class="keywordflow">if</span> (idList.find(<span class="keywordtype">id</span>) == idList.end()) {</div>
-<div class="line"><span class="lineno">  133</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/tuple.html">tuple&lt;S, T, E, double, double, double&gt;</a> t =</div>
+<div class="line"><span class="lineno">  133</span>            tuple&lt;S, T, E, double, double, double&gt; t =</div>
 <div class="line"><span class="lineno">  134</span>                make_tuple(<span class="keywordtype">id</span>, arrival, burst, 0, 0, 0);</div>
 <div class="line"><span class="lineno">  135</span>            <a class="code hl_variable" href="#af2594e22a867b308e027623940193d46">schedule</a>.push(t);</div>
 <div class="line"><span class="lineno">  136</span>            idList.insert(<span class="keywordtype">id</span>);</div>
 <div class="line"><span class="lineno">  137</span>        }</div>
 <div class="line"><span class="lineno">  138</span>    }</div>
-<div class="ttc" id="aclass_f_c_f_s_html_af2594e22a867b308e027623940193d46"><div class="ttname"><a href="#af2594e22a867b308e027623940193d46">FCFS::schedule</a></div><div class="ttdeci">priority_queue&lt; tuple&lt; S, T, E, double, double, double &gt;, vector&lt; tuple&lt; S, T, E, double, double, double &gt; &gt;, Compare&lt; S, T, E &gt; &gt; schedule</div><div class="ttdef"><b>Definition</b> fcfs_scheduling.cpp:112</div></div>
-<div class="ttc" id="atuple_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/tuple.html">std::tuple</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/dca/class_f_c_f_s_a8fbfe4d85f7576b4a7aade07d29fbd69_cgraph.svg" width="351" height="167"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclass_f_c_f_s_html_af2594e22a867b308e027623940193d46"><div class="ttname"><a href="#af2594e22a867b308e027623940193d46">FCFS::schedule</a></div><div class="ttdeci">priority_queue&lt; tuple&lt; S, T, E, double, double, double &gt;, vector&lt; tuple&lt; S, T, E, double, double, double &gt; &gt;, Compare&lt; S, T, E &gt; &gt; schedule</div><div class="ttdef"><b>Definition</b> <a href="../../df/d47/fcfs__scheduling_8cpp_source.html#l00112">fcfs_scheduling.cpp:112</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abb361a612b18bb189aa6d3c49288b793" name="abb361a612b18bb189aa6d3c49288b793"></a>
@@ -245,37 +253,30 @@ template&lt;typename S , typename T , typename E &gt; </div>
 
 <p>Utility function for printing the status of each process after execution. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d47/fcfs__scheduling_8cpp_source.html#l00192">192</a> of file <a class="el" href="../../df/d47/fcfs__scheduling_8cpp_source.html">fcfs_scheduling.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  192</span>                       {</div>
-<div class="line"><span class="lineno">  193</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">cout</a> &lt;&lt; <span class="stringliteral">&quot;Status of all the proceses post completion is as follows:&quot;</span></div>
+<div class="line"><span class="lineno">  193</span>        cout &lt;&lt; <span class="stringliteral">&quot;Status of all the proceses post completion is as follows:&quot;</span></div>
 <div class="line"><span class="lineno">  194</span>             &lt;&lt; <a class="code hl_define" href="../../d7/d35/matrix__exponentiation_8cpp.html#a600eaf353befc174637855795f12d258">endl</a>;</div>
 <div class="line"><span class="lineno">  195</span> </div>
-<div class="line"><span class="lineno">  196</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(17) &lt;&lt; left &lt;&lt; <span class="stringliteral">&quot;Process ID&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(17) &lt;&lt; left</div>
-<div class="line"><span class="lineno">  197</span>             &lt;&lt; <span class="stringliteral">&quot;Arrival Time&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(17) &lt;&lt; left &lt;&lt; <span class="stringliteral">&quot;Burst Time&quot;</span></div>
-<div class="line"><span class="lineno">  198</span>             &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(17) &lt;&lt; left &lt;&lt; <span class="stringliteral">&quot;Completion Time&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(17)</div>
-<div class="line"><span class="lineno">  199</span>             &lt;&lt; left &lt;&lt; <span class="stringliteral">&quot;Turnaround Time&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(17) &lt;&lt; left</div>
+<div class="line"><span class="lineno">  196</span>        cout &lt;&lt; std::setw(17) &lt;&lt; left &lt;&lt; <span class="stringliteral">&quot;Process ID&quot;</span> &lt;&lt; std::setw(17) &lt;&lt; left</div>
+<div class="line"><span class="lineno">  197</span>             &lt;&lt; <span class="stringliteral">&quot;Arrival Time&quot;</span> &lt;&lt; std::setw(17) &lt;&lt; left &lt;&lt; <span class="stringliteral">&quot;Burst Time&quot;</span></div>
+<div class="line"><span class="lineno">  198</span>             &lt;&lt; std::setw(17) &lt;&lt; left &lt;&lt; <span class="stringliteral">&quot;Completion Time&quot;</span> &lt;&lt; std::setw(17)</div>
+<div class="line"><span class="lineno">  199</span>             &lt;&lt; left &lt;&lt; <span class="stringliteral">&quot;Turnaround Time&quot;</span> &lt;&lt; std::setw(17) &lt;&lt; left</div>
 <div class="line"><span class="lineno">  200</span>             &lt;&lt; <span class="stringliteral">&quot;Waiting Time&quot;</span> &lt;&lt; <a class="code hl_define" href="../../d7/d35/matrix__exponentiation_8cpp.html#a600eaf353befc174637855795f12d258">endl</a>;</div>
 <div class="line"><span class="lineno">  201</span> </div>
 <div class="line"><span class="lineno">  202</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i{}; i &lt; result.size(); i++) {</div>
-<div class="line"><span class="lineno">  203</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setprecision.html">std::setprecision</a>(2) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/fixed.html">std::fixed</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(17) &lt;&lt; left</div>
-<div class="line"><span class="lineno">  204</span>                 &lt;&lt; get&lt;0&gt;(result[i]) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(17) &lt;&lt; left</div>
-<div class="line"><span class="lineno">  205</span>                 &lt;&lt; get&lt;1&gt;(result[i]) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(17) &lt;&lt; left</div>
-<div class="line"><span class="lineno">  206</span>                 &lt;&lt; get&lt;2&gt;(result[i]) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(17) &lt;&lt; left</div>
-<div class="line"><span class="lineno">  207</span>                 &lt;&lt; get&lt;3&gt;(result[i]) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(17) &lt;&lt; left</div>
-<div class="line"><span class="lineno">  208</span>                 &lt;&lt; get&lt;4&gt;(result[i]) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(17) &lt;&lt; left</div>
+<div class="line"><span class="lineno">  203</span>            cout &lt;&lt; std::setprecision(2) &lt;&lt; std::fixed &lt;&lt; std::setw(17) &lt;&lt; left</div>
+<div class="line"><span class="lineno">  204</span>                 &lt;&lt; get&lt;0&gt;(result[i]) &lt;&lt; std::setw(17) &lt;&lt; left</div>
+<div class="line"><span class="lineno">  205</span>                 &lt;&lt; get&lt;1&gt;(result[i]) &lt;&lt; std::setw(17) &lt;&lt; left</div>
+<div class="line"><span class="lineno">  206</span>                 &lt;&lt; get&lt;2&gt;(result[i]) &lt;&lt; std::setw(17) &lt;&lt; left</div>
+<div class="line"><span class="lineno">  207</span>                 &lt;&lt; get&lt;3&gt;(result[i]) &lt;&lt; std::setw(17) &lt;&lt; left</div>
+<div class="line"><span class="lineno">  208</span>                 &lt;&lt; get&lt;4&gt;(result[i]) &lt;&lt; std::setw(17) &lt;&lt; left</div>
 <div class="line"><span class="lineno">  209</span>                 &lt;&lt; get&lt;5&gt;(result[i]) &lt;&lt; <a class="code hl_define" href="../../d7/d35/matrix__exponentiation_8cpp.html#a600eaf353befc174637855795f12d258">endl</a>;</div>
 <div class="line"><span class="lineno">  210</span>        }</div>
 <div class="line"><span class="lineno">  211</span>    }</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="afixed_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/fixed.html">std::fixed</a></div><div class="ttdeci">T fixed(T... args)</div></div>
-<div class="ttc" id="amatrix__exponentiation_8cpp_html_a600eaf353befc174637855795f12d258"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#a600eaf353befc174637855795f12d258">endl</a></div><div class="ttdeci">#define endl</div><div class="ttdef"><b>Definition</b> matrix_exponentiation.cpp:36</div></div>
-<div class="ttc" id="asetprecision_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/setprecision.html">std::setprecision</a></div><div class="ttdeci">T setprecision(T... args)</div></div>
-<div class="ttc" id="asetw_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a></div><div class="ttdeci">T setw(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/dca/class_f_c_f_s_abb361a612b18bb189aa6d3c49288b793_cgraph.svg" width="304" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="amatrix__exponentiation_8cpp_html_a600eaf353befc174637855795f12d258"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#a600eaf353befc174637855795f12d258">endl</a></div><div class="ttdeci">#define endl</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d35/matrix__exponentiation_8cpp_source.html#l00036">matrix_exponentiation.cpp:36</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa25dbe30ba9930b5a7c1a6d11758bd91" name="aa25dbe30ba9930b5a7c1a6d11758bd91"></a>
@@ -290,7 +291,7 @@ template&lt;typename S , typename T , typename E &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/tuple.html">tuple</a>&lt; S, T, E, double, double, double &gt; &gt; <a class="el" href="../../dd/dca/class_f_c_f_s.html">FCFS</a>&lt; S, T, E &gt;::scheduleForFcfs </td>
+          <td class="memname">vector&lt; tuple&lt; S, T, E, double, double, double &gt; &gt; <a class="el" href="../../dd/dca/class_f_c_f_s.html">FCFS</a>&lt; S, T, E &gt;::scheduleForFcfs </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -307,12 +308,14 @@ template&lt;typename S , typename T , typename E &gt; </div>
 <p><a class="el" href="../../dd/dca/class_f_c_f_s.html" title="Class which implements the FCFS scheduling algorithm.">FCFS</a> is a non-preemptive algorithm in which the process which arrives first gets executed first. If two or more processes arrive together then the process with smaller process ID runs first (each process has a unique proces ID).</p>
 <p>I used a min priority queue of tuples to accomplish this task. The processes are ordered by their arrival times. If arrival times of some processes are equal, then they are ordered by their process ID.</p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d47/fcfs__scheduling_8cpp_source.html#l00155">155</a> of file <a class="el" href="../../df/d47/fcfs__scheduling_8cpp_source.html">fcfs_scheduling.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  155</span>                                                                     {</div>
 <div class="line"><span class="lineno">  156</span>        <span class="comment">// Variable to keep track of time elapsed so far</span></div>
 <div class="line"><span class="lineno">  157</span>        <span class="keywordtype">double</span> timeElapsed = 0;</div>
 <div class="line"><span class="lineno">  158</span> </div>
 <div class="line"><span class="lineno">  159</span>        <span class="keywordflow">while</span> (!<a class="code hl_variable" href="#af2594e22a867b308e027623940193d46">schedule</a>.empty()) {</div>
-<div class="line"><span class="lineno">  160</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/tuple.html">tuple&lt;S, T, E, double, double, double&gt;</a> cur = <a class="code hl_variable" href="#af2594e22a867b308e027623940193d46">schedule</a>.top();</div>
+<div class="line"><span class="lineno">  160</span>            tuple&lt;S, T, E, double, double, double&gt; cur = <a class="code hl_variable" href="#af2594e22a867b308e027623940193d46">schedule</a>.top();</div>
 <div class="line"><span class="lineno">  161</span> </div>
 <div class="line"><span class="lineno">  162</span>            <span class="comment">// If the current process arrived at time t2, the last process</span></div>
 <div class="line"><span class="lineno">  163</span>            <span class="comment">// completed its execution at time t1, and t2 &gt; t1.</span></div>
@@ -342,6 +345,58 @@ template&lt;typename S , typename T , typename E &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a86e9908699e2ff89557c01f1a4b47d83" name="a86e9908699e2ff89557c01f1a4b47d83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86e9908699e2ff89557c01f1a4b47d83">&#9670;&#160;</a></span>idList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename S , typename T , typename E &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unordered_set&lt;S&gt; <a class="el" href="../../dd/dca/class_f_c_f_s.html">FCFS</a>&lt; S, T, E &gt;::idList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d47/fcfs__scheduling_8cpp_source.html#l00119">119</a> of file <a class="el" href="../../df/d47/fcfs__scheduling_8cpp_source.html">fcfs_scheduling.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac3abd3d9f23437599ff9a2131c8b631f" name="ac3abd3d9f23437599ff9a2131c8b631f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3abd3d9f23437599ff9a2131c8b631f">&#9670;&#160;</a></span>result</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename S , typename T , typename E &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;tuple&lt;S, T, E, double, double, double&gt; &gt; <a class="el" href="../../dd/dca/class_f_c_f_s.html">FCFS</a>&lt; S, T, E &gt;::result</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d47/fcfs__scheduling_8cpp_source.html#l00115">115</a> of file <a class="el" href="../../df/d47/fcfs__scheduling_8cpp_source.html">fcfs_scheduling.cpp</a>.</p>
+
+</div>
+</div>
 <a id="af2594e22a867b308e027623940193d46" name="af2594e22a867b308e027623940193d46"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af2594e22a867b308e027623940193d46">&#9670;&#160;</a></span>schedule</h2>
 
@@ -354,7 +409,7 @@ template&lt;typename S , typename T , typename E &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue.html">priority_queue</a>&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/tuple.html">tuple</a>&lt;S, T, E, double, double, double&gt;, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/tuple.html">tuple</a>&lt;S, T, E, double, double, double&gt; &gt;, <a class="el" href="../../de/d4a/class_compare.html">Compare</a>&lt;S, T, E&gt; &gt; <a class="el" href="../../dd/dca/class_f_c_f_s.html">FCFS</a>&lt; S, T, E &gt;::schedule</td>
+          <td class="memname">priority_queue&lt;tuple&lt;S, T, E, double, double, double&gt;, vector&lt;tuple&lt;S, T, E, double, double, double&gt; &gt;, <a class="el" href="../../de/d4a/class_compare.html">Compare</a>&lt;S, T, E&gt; &gt; <a class="el" href="../../dd/dca/class_f_c_f_s.html">FCFS</a>&lt; S, T, E &gt;::schedule</td>
         </tr>
       </table>
   </td>
@@ -365,10 +420,12 @@ template&lt;typename S , typename T , typename E &gt; </div>
 </div><div class="memdoc">
 <p>Priority queue of schedules(stored as tuples) of processes. In each tuple 1st element: Process ID 2nd element: Arrival Time 3rd element: Burst time 4th element: Completion time 5th element: Turnaround time 6th element: Waiting time </p>
 
+<p class="definition">Definition at line <a class="el" href="../../df/d47/fcfs__scheduling_8cpp_source.html#l00112">112</a> of file <a class="el" href="../../df/d47/fcfs__scheduling_8cpp_source.html">fcfs_scheduling.cpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>cpu_scheduling_algorithms/<a class="el" href="../../df/d47/fcfs__scheduling_8cpp.html">fcfs_scheduling.cpp</a></li>
+<li>cpu_scheduling_algorithms/<a class="el" href="../../df/d47/fcfs__scheduling_8cpp_source.html">fcfs_scheduling.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

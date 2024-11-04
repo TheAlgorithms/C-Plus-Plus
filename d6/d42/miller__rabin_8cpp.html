@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: math/miller_rabin.cpp File Reference</title>
+<title>TheAlgorithms/C++: math/miller_rabin.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -118,14 +135,16 @@ Include dependency graph for miller_rabin.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dcc/miller__rabin_8cpp__incl.svg" width="342" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d6/d42/miller__rabin_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a091662a787d5ad4866713021f580fddb" id="r_a091662a787d5ad4866713021f580fddb"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a091662a787d5ad4866713021f580fddb"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a091662a787d5ad4866713021f580fddb">reverse_binary</a> (T num)</td></tr>
+<tr class="memitem:a091662a787d5ad4866713021f580fddb"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a091662a787d5ad4866713021f580fddb">reverse_binary</a> (T num)</td></tr>
 <tr class="separator:a091662a787d5ad4866713021f580fddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6c2c67ea416d0e80003a88623f98b29" id="r_ad6c2c67ea416d0e80003a88623f98b29"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad6c2c67ea416d0e80003a88623f98b29"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad6c2c67ea416d0e80003a88623f98b29">modular_exponentiation</a> (T base, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;rev_binary_exponent, T mod)</td></tr>
+<tr class="memitem:ad6c2c67ea416d0e80003a88623f98b29"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad6c2c67ea416d0e80003a88623f98b29">modular_exponentiation</a> (T base, const std::vector&lt; T &gt; &amp;rev_binary_exponent, T mod)</td></tr>
 <tr class="separator:ad6c2c67ea416d0e80003a88623f98b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f9c31c1047aa3191676d64571d4c506" id="r_a6f9c31c1047aa3191676d64571d4c506"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a6f9c31c1047aa3191676d64571d4c506"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6f9c31c1047aa3191676d64571d4c506">miller_test</a> (T d, T num)</td></tr>
@@ -141,6 +160,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright 2020 </p><dl class="section author"><dt>Author</dt><dd>tjgurwara99</dd></dl>
 <p>A basic implementation of Miller-Rabin primality test. </p>
+
+<p class="definition">Definition in file <a class="el" href="../../d6/d42/miller__rabin_8cpp_source.html">miller_rabin.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -157,17 +178,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Main function </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d42/miller__rabin_8cpp_source.html#l00183">183</a> of file <a class="el" href="../../d6/d42/miller__rabin_8cpp_source.html">miller_rabin.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  183</span>           {</div>
 <div class="line"><span class="lineno">  184</span>    <a class="code hl_function" href="#a88ec9ad42717780d6caaff9d3d6977f9">tests</a>();</div>
 <div class="line"><span class="lineno">  185</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  186</span>}</div>
-<div class="ttc" id="amiller__rabin_8cpp_html_a88ec9ad42717780d6caaff9d3d6977f9"><div class="ttname"><a href="#a88ec9ad42717780d6caaff9d3d6977f9">tests</a></div><div class="ttdeci">void tests()</div><div class="ttdef"><b>Definition</b> miller_rabin.cpp:157</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d6/d42/miller__rabin_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="100%" height="465"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="amiller__rabin_8cpp_html_a88ec9ad42717780d6caaff9d3d6977f9"><div class="ttname"><a href="#a88ec9ad42717780d6caaff9d3d6977f9">tests</a></div><div class="ttdeci">void tests()</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d42/miller__rabin_8cpp_source.html#l00157">miller_rabin.cpp:157</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a901288288ef5ebe8e97414cc30797cce" name="a901288288ef5ebe8e97414cc30797cce"></a>
@@ -201,6 +219,8 @@ template&lt;typename T &gt; </div>
 <dd>
 'true' if num is (probably) prime</dd></dl>
 <p>\detail First we check whether the num input is less than 4, if so we can determine whether this is a prime or composite by checking for 2 and 3. Next we check whether this num is odd (as all primes greater than 2 are odd). Next we write our num in the following format \(num = 2^r \cdot d + 1\). After finding r and d for our input num, we use for loop repeat number of times inside which we check the miller conditions using the function miller_test. If miller_test returns false then the number is composite After the loop finishes completely without issuing a false return call, we can conclude that this number is probably prime. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d42/miller__rabin_8cpp_source.html#l00125">125</a> of file <a class="el" href="../../d6/d42/miller__rabin_8cpp_source.html">miller_rabin.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  125</span>                                                   {</div>
 <div class="line"><span class="lineno">  126</span>    <span class="keywordflow">if</span> (num &lt;= 4) {</div>
 <div class="line"><span class="lineno">  127</span>        <span class="comment">// If num == 2 or num == 3 then prime</span></div>
@@ -228,13 +248,8 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  149</span>    }</div>
 <div class="line"><span class="lineno">  150</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  151</span>}</div>
-<div class="ttc" id="amiller__rabin_8cpp_html_a6f9c31c1047aa3191676d64571d4c506"><div class="ttname"><a href="#a6f9c31c1047aa3191676d64571d4c506">miller_test</a></div><div class="ttdeci">bool miller_test(T d, T num)</div><div class="ttdef"><b>Definition</b> miller_rabin.cpp:73</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d6/d42/miller__rabin_8cpp_a901288288ef5ebe8e97414cc30797cce_cgraph.svg" width="100%" height="465"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="amiller__rabin_8cpp_html_a6f9c31c1047aa3191676d64571d4c506"><div class="ttname"><a href="#a6f9c31c1047aa3191676d64571d4c506">miller_test</a></div><div class="ttdeci">bool miller_test(T d, T num)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d42/miller__rabin_8cpp_source.html#l00073">miller_rabin.cpp:73</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6f9c31c1047aa3191676d64571d4c506" name="a6f9c31c1047aa3191676d64571d4c506"></a>
@@ -267,17 +282,19 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>'false' if n is composite </dd>
 <dd>
 'true' if n is (probably) prime. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d42/miller__rabin_8cpp_source.html#l00073">73</a> of file <a class="el" href="../../d6/d42/miller__rabin_8cpp_source.html">miller_rabin.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   73</span>                             {</div>
 <div class="line"><span class="lineno">   74</span>    <span class="comment">// random number seed</span></div>
-<div class="line"><span class="lineno">   75</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/random_device.html">std::random_device</a> rd_seed;</div>
+<div class="line"><span class="lineno">   75</span>    std::random_device rd_seed;</div>
 <div class="line"><span class="lineno">   76</span>    <span class="comment">// random number generator</span></div>
-<div class="line"><span class="lineno">   77</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/mersenne_twister_engine.html">std::mt19937</a> gen(rd_seed());</div>
+<div class="line"><span class="lineno">   77</span>    std::mt19937 gen(rd_seed());</div>
 <div class="line"><span class="lineno">   78</span>    <span class="comment">// Uniformly distributed range [2, num - 2] for random numbers</span></div>
-<div class="line"><span class="lineno">   79</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/uniform_int_distribution.html">std::uniform_int_distribution&lt;&gt;</a> distribution(2, num - 2);</div>
+<div class="line"><span class="lineno">   79</span>    std::uniform_int_distribution&lt;&gt; distribution(2, num - 2);</div>
 <div class="line"><span class="lineno">   80</span>    <span class="comment">// Random number generated in the range [2, num -2].</span></div>
 <div class="line"><span class="lineno">   81</span>    T random = distribution(gen);</div>
 <div class="line"><span class="lineno">   82</span>    <span class="comment">// vector for reverse binary of the power</span></div>
-<div class="line"><span class="lineno">   83</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> <a class="code hl_function" href="../../df/def/power__for__huge__numbers_8cpp.html#ae249a2af508aa94266023ce8aa81426f">power</a> = <a class="code hl_function" href="#a091662a787d5ad4866713021f580fddb">reverse_binary</a>(d);</div>
+<div class="line"><span class="lineno">   83</span>    std::vector&lt;T&gt; <a class="code hl_function" href="../../df/def/power__for__huge__numbers_8cpp.html#ae249a2af508aa94266023ce8aa81426f">power</a> = <a class="code hl_function" href="#a091662a787d5ad4866713021f580fddb">reverse_binary</a>(d);</div>
 <div class="line"><span class="lineno">   84</span>    <span class="comment">// x = random ^ d % num</span></div>
 <div class="line"><span class="lineno">   85</span>    T x = <a class="code hl_function" href="#ad6c2c67ea416d0e80003a88623f98b29">modular_exponentiation</a>(random, <a class="code hl_function" href="../../df/def/power__for__huge__numbers_8cpp.html#ae249a2af508aa94266023ce8aa81426f">power</a>, num);</div>
 <div class="line"><span class="lineno">   86</span>    <span class="comment">// miller conditions</span></div>
@@ -297,19 +314,10 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  100</span>    }</div>
 <div class="line"><span class="lineno">  101</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  102</span>}</div>
-<div class="ttc" id="amersenne_twister_engine_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/mersenne_twister_engine.html">std::mt19937</a></div></div>
-<div class="ttc" id="amiller__rabin_8cpp_html_a091662a787d5ad4866713021f580fddb"><div class="ttname"><a href="#a091662a787d5ad4866713021f580fddb">reverse_binary</a></div><div class="ttdeci">std::vector&lt; T &gt; reverse_binary(T num)</div><div class="ttdef"><b>Definition</b> miller_rabin.cpp:19</div></div>
-<div class="ttc" id="amiller__rabin_8cpp_html_ad6c2c67ea416d0e80003a88623f98b29"><div class="ttname"><a href="#ad6c2c67ea416d0e80003a88623f98b29">modular_exponentiation</a></div><div class="ttdeci">T modular_exponentiation(T base, const std::vector&lt; T &gt; &amp;rev_binary_exponent, T mod)</div><div class="ttdef"><b>Definition</b> miller_rabin.cpp:43</div></div>
-<div class="ttc" id="apower__for__huge__numbers_8cpp_html_ae249a2af508aa94266023ce8aa81426f"><div class="ttname"><a href="../../df/def/power__for__huge__numbers_8cpp.html#ae249a2af508aa94266023ce8aa81426f">power</a></div><div class="ttdeci">void power(int x, int n)</div><div class="ttdef"><b>Definition</b> power_for_huge_numbers.cpp:56</div></div>
-<div class="ttc" id="arandom_device_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/random_device.html">std::random_device</a></div></div>
-<div class="ttc" id="auniform_int_distribution_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/uniform_int_distribution.html">std::uniform_int_distribution</a></div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d42/miller__rabin_8cpp_a6f9c31c1047aa3191676d64571d4c506_cgraph.svg" width="476" height="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="amiller__rabin_8cpp_html_a091662a787d5ad4866713021f580fddb"><div class="ttname"><a href="#a091662a787d5ad4866713021f580fddb">reverse_binary</a></div><div class="ttdeci">std::vector&lt; T &gt; reverse_binary(T num)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d42/miller__rabin_8cpp_source.html#l00019">miller_rabin.cpp:19</a></div></div>
+<div class="ttc" id="amiller__rabin_8cpp_html_ad6c2c67ea416d0e80003a88623f98b29"><div class="ttname"><a href="#ad6c2c67ea416d0e80003a88623f98b29">modular_exponentiation</a></div><div class="ttdeci">T modular_exponentiation(T base, const std::vector&lt; T &gt; &amp;rev_binary_exponent, T mod)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d42/miller__rabin_8cpp_source.html#l00043">miller_rabin.cpp:43</a></div></div>
+<div class="ttc" id="apower__for__huge__numbers_8cpp_html_ae249a2af508aa94266023ce8aa81426f"><div class="ttname"><a href="../../df/def/power__for__huge__numbers_8cpp.html#ae249a2af508aa94266023ce8aa81426f">power</a></div><div class="ttdeci">void power(int x, int n)</div><div class="ttdef"><b>Definition</b> <a href="../../df/def/power__for__huge__numbers_8cpp_source.html#l00056">power_for_huge_numbers.cpp:56</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad6c2c67ea416d0e80003a88623f98b29" name="ad6c2c67ea416d0e80003a88623f98b29"></a>
@@ -328,7 +336,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>rev_binary_exponent</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>rev_binary_exponent</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -347,34 +355,28 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>r the modular exponentiation of \(a^{n} \equiv r \mod{m}\) where \(n\) is the base 10 representation of rev_binary_exponent and  \(m = mod
 \) parameter. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d42/miller__rabin_8cpp_source.html#l00043">43</a> of file <a class="el" href="../../d6/d42/miller__rabin_8cpp_source.html">miller_rabin.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   44</span>                                {</div>
 <div class="line"><span class="lineno">   45</span>    <span class="keywordflow">if</span> (mod == 1)</div>
 <div class="line"><span class="lineno">   46</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   47</span>    T b = 1;</div>
-<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">if</span> (rev_binary_exponent.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() == 0)</div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">if</span> (rev_binary_exponent.size() == 0)</div>
 <div class="line"><span class="lineno">   49</span>        <span class="keywordflow">return</span> b;</div>
 <div class="line"><span class="lineno">   50</span>    T A = base;</div>
 <div class="line"><span class="lineno">   51</span>    <span class="keywordflow">if</span> (rev_binary_exponent[0] == 1)</div>
 <div class="line"><span class="lineno">   52</span>        b = base;</div>
 <div class="line"><span class="lineno">   53</span> </div>
 <div class="line"><span class="lineno">   54</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::vector&lt;T&gt;::const_iterator it =</div>
-<div class="line"><span class="lineno">   55</span>             rev_binary_exponent.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">cbegin</a>() + 1;</div>
-<div class="line"><span class="lineno">   56</span>         it != rev_binary_exponent.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">cend</a>(); ++it) {</div>
+<div class="line"><span class="lineno">   55</span>             rev_binary_exponent.cbegin() + 1;</div>
+<div class="line"><span class="lineno">   56</span>         it != rev_binary_exponent.cend(); ++it) {</div>
 <div class="line"><span class="lineno">   57</span>        A = A * A % mod;</div>
 <div class="line"><span class="lineno">   58</span>        <span class="keywordflow">if</span> (*it == 1)</div>
 <div class="line"><span class="lineno">   59</span>            b = A * b % mod;</div>
 <div class="line"><span class="lineno">   60</span>    }</div>
 <div class="line"><span class="lineno">   61</span>    <span class="keywordflow">return</span> b;</div>
 <div class="line"><span class="lineno">   62</span>}</div>
-<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/begin.html">std::vector::cbegin</a></div><div class="ttdeci">T cbegin(T... args)</div></div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/end.html">std::vector::cend</a></div><div class="ttdeci">T cend(T... args)</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d42/miller__rabin_8cpp_ad6c2c67ea416d0e80003a88623f98b29_cgraph.svg" width="347" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a091662a787d5ad4866713021f580fddb" name="a091662a787d5ad4866713021f580fddb"></a>
@@ -386,7 +388,7 @@ Here is the call graph for this function:</div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; reverse_binary </td>
+          <td class="memname">std::vector&lt; T &gt; reverse_binary </td>
           <td>(</td>
           <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>num</em></span></td><td>)</td>
           <td></td>
@@ -400,8 +402,10 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>result vector of the number input in reverse binary </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d42/miller__rabin_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../d6/d42/miller__rabin_8cpp_source.html">miller_rabin.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   19</span>                                   {</div>
-<div class="line"><span class="lineno">   20</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
+<div class="line"><span class="lineno">   20</span>    std::vector&lt;T&gt; <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">   21</span>    T temp = num;</div>
 <div class="line"><span class="lineno">   22</span>    <span class="keywordflow">while</span> (temp &gt; 0) {</div>
 <div class="line"><span class="lineno">   23</span>        <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.push_back(temp % 2);</div>
@@ -409,7 +413,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">   25</span>    }</div>
 <div class="line"><span class="lineno">   26</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">   27</span>}</div>
-<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> fibonacci_sum.cpp:77</div></div>
+<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> <a href="../../de/dc3/fibonacci__sum_8cpp_source.html#l00077">fibonacci_sum.cpp:77</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -428,37 +432,32 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Functions for testing the <a class="el" href="#a901288288ef5ebe8e97414cc30797cce">miller_rabin_primality_test()</a> function with some assert statements. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d42/miller__rabin_8cpp_source.html#l00157">157</a> of file <a class="el" href="../../d6/d42/miller__rabin_8cpp_source.html">miller_rabin.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  157</span>             {</div>
 <div class="line"><span class="lineno">  158</span>    <span class="comment">// First test on 2</span></div>
 <div class="line"><span class="lineno">  159</span>    assert(((<span class="keywordtype">void</span>)<span class="stringliteral">&quot;2 is prime but function says otherwise.\n&quot;</span>,</div>
 <div class="line"><span class="lineno">  160</span>            <a class="code hl_function" href="#a901288288ef5ebe8e97414cc30797cce">miller_rabin_primality_test</a>(2, 1) == <span class="keyword">true</span>));</div>
-<div class="line"><span class="lineno">  161</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;First test passes.&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  161</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;First test passes.&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  162</span>    <span class="comment">// Second test on 5</span></div>
 <div class="line"><span class="lineno">  163</span>    assert(((<span class="keywordtype">void</span>)<span class="stringliteral">&quot;5 should be prime but the function says otherwise.\n&quot;</span>,</div>
 <div class="line"><span class="lineno">  164</span>            <a class="code hl_function" href="#a901288288ef5ebe8e97414cc30797cce">miller_rabin_primality_test</a>(5, 3) == <span class="keyword">true</span>));</div>
-<div class="line"><span class="lineno">  165</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Second test passes.&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  165</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Second test passes.&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  166</span>    <span class="comment">// Third test on 23</span></div>
 <div class="line"><span class="lineno">  167</span>    assert(((<span class="keywordtype">void</span>)<span class="stringliteral">&quot;23 should be prime but the function says otherwise.\n&quot;</span>,</div>
 <div class="line"><span class="lineno">  168</span>            <a class="code hl_function" href="#a901288288ef5ebe8e97414cc30797cce">miller_rabin_primality_test</a>(23, 3) == <span class="keyword">true</span>));</div>
-<div class="line"><span class="lineno">  169</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Third test passes.&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  169</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Third test passes.&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  170</span>    <span class="comment">// Fourth test on 16</span></div>
 <div class="line"><span class="lineno">  171</span>    assert(((<span class="keywordtype">void</span>)<span class="stringliteral">&quot;16 is not a prime but the function says otherwise.\n&quot;</span>,</div>
 <div class="line"><span class="lineno">  172</span>            <a class="code hl_function" href="#a901288288ef5ebe8e97414cc30797cce">miller_rabin_primality_test</a>(16, 3) == <span class="keyword">false</span>));</div>
-<div class="line"><span class="lineno">  173</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Fourth test passes.&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  173</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Fourth test passes.&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  174</span>    <span class="comment">// Fifth test on 27</span></div>
 <div class="line"><span class="lineno">  175</span>    assert(((<span class="keywordtype">void</span>)<span class="stringliteral">&quot;27 is not a prime but the function says otherwise.\n&quot;</span>,</div>
 <div class="line"><span class="lineno">  176</span>            <a class="code hl_function" href="#a901288288ef5ebe8e97414cc30797cce">miller_rabin_primality_test</a>(27, 3) == <span class="keyword">false</span>));</div>
-<div class="line"><span class="lineno">  177</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Fifth test passes.&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  177</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Fifth test passes.&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  178</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="amiller__rabin_8cpp_html_a901288288ef5ebe8e97414cc30797cce"><div class="ttname"><a href="#a901288288ef5ebe8e97414cc30797cce">miller_rabin_primality_test</a></div><div class="ttdeci">bool miller_rabin_primality_test(T num, T repeats)</div><div class="ttdef"><b>Definition</b> miller_rabin.cpp:125</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d6/d42/miller__rabin_8cpp_a88ec9ad42717780d6caaff9d3d6977f9_cgraph.svg" width="100%" height="465"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="amiller__rabin_8cpp_html_a901288288ef5ebe8e97414cc30797cce"><div class="ttname"><a href="#a901288288ef5ebe8e97414cc30797cce">miller_rabin_primality_test</a></div><div class="ttdeci">bool miller_rabin_primality_test(T num, T repeats)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d42/miller__rabin_8cpp_source.html#l00125">miller_rabin.cpp:125</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

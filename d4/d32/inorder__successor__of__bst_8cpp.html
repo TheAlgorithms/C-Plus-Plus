@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: operations_on_datastructures/inorder_successor_of_bst.cpp File Reference</title>
+<title>TheAlgorithms/C++: operations_on_datastructures/inorder_successor_of_bst.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -122,7 +139,9 @@ Include dependency graph for inorder_successor_of_bst.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d66/inorder__successor__of__bst_8cpp__incl.svg" width="252" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html">operations_on_datastructures::inorder_traversal_of_bst::Node</a></td></tr>
@@ -135,7 +154,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d6d/namespaceoperations__on__datastructures.html">operations_on_datastructures</a></td></tr>
-<tr class="memdesc:da/d6d/namespaceoperations__on__datastructures"><td class="mdescLeft">&#160;</td><td class="mdescRight">for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> <br /></td></tr>
+<tr class="memdesc:da/d6d/namespaceoperations__on__datastructures"><td class="mdescLeft">&#160;</td><td class="mdescRight">for std::vector <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d74/namespaceinorder__successor__of__bst.html">inorder_successor_of_bst</a></td></tr>
 <tr class="memdesc:dd/d74/namespaceinorder__successor__of__bst"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for the <a href="https://www.youtube.com/watch?v=5cPbNCrdotA" target="_blank">Inorder successor of a binary search tree</a> implementation. <br /></td></tr>
@@ -158,7 +177,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a5d7266b934ca50c4f53e4f1e725d89a4" id="r_a5d7266b934ca50c4f53e4f1e725d89a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d7266b934ca50c4f53e4f1e725d89a4">operations_on_datastructures::inorder_traversal_of_bst::printInorder</a> (<a class="el" href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html">Node</a> *root)</td></tr>
 <tr class="memdesc:a5d7266b934ca50c4f53e4f1e725d89a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the BST in inorder traversal using recursion.  <br /></td></tr>
 <tr class="separator:a5d7266b934ca50c4f53e4f1e725d89a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05fe8a029e155c43e4efa598d4d089d9" id="r_a05fe8a029e155c43e4efa598d4d089d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05fe8a029e155c43e4efa598d4d089d9">operations_on_datastructures::inorder_traversal_of_bst::makeBST</a> (<a class="el" href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html">Node</a> *root, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt; &amp;<a class="el" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>)</td></tr>
+<tr class="memitem:a05fe8a029e155c43e4efa598d4d089d9" id="r_a05fe8a029e155c43e4efa598d4d089d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05fe8a029e155c43e4efa598d4d089d9">operations_on_datastructures::inorder_traversal_of_bst::makeBST</a> (<a class="el" href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html">Node</a> *root, const std::vector&lt; int64_t &gt; &amp;<a class="el" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>)</td></tr>
 <tr class="memdesc:a05fe8a029e155c43e4efa598d4d089d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is used in test cases to quickly create BST containing large data instead of hard coding it in code. For a given root, this will add all the nodes containing data passes in data vector.  <br /></td></tr>
 <tr class="separator:a05fe8a029e155c43e4efa598d4d089d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3923fb22b46e085376703cae0b44d690" id="r_a3923fb22b46e085376703cae0b44d690"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3923fb22b46e085376703cae0b44d690">operations_on_datastructures::inorder_traversal_of_bst::getInorderSuccessor</a> (<a class="el" href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html">Node</a> *root, int64_t <a class="el" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>)</td></tr>
@@ -197,6 +216,8 @@ Method 2: Search from the root node</h4>
 <li>In order successor would be the deepest node in this path for which given node is in left subtree.</li>
 </ul>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/foo290" target="_blank">Nitin Sharma</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html">inorder_successor_of_bst.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a7b20eb99272665c1777949e26ab59589" name="a7b20eb99272665c1777949e26ab59589"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7b20eb99272665c1777949e26ab59589">&#9670;&#160;</a></span>deallocate()</h2>
@@ -221,6 +242,8 @@ Method 2: Search from the root node</h4>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00210">210</a> of file <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html">inorder_successor_of_bst.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  210</span>                                {</div>
 <div class="line"><span class="lineno">  211</span>    <span class="keywordflow">if</span> (rootNode == <span class="keyword">nullptr</span>) {</div>
 <div class="line"><span class="lineno">  212</span>        <span class="keywordflow">return</span>;</div>
@@ -229,13 +252,8 @@ Method 2: Search from the root node</h4>
 <div class="line"><span class="lineno">  215</span>    <a class="code hl_function" href="#a7b20eb99272665c1777949e26ab59589">deallocate</a>(rootNode-&gt;right);</div>
 <div class="line"><span class="lineno">  216</span>    <span class="keyword">delete</span> (rootNode);</div>
 <div class="line"><span class="lineno">  217</span>}</div>
-<div class="ttc" id="ainorder__successor__of__bst_8cpp_html_a7b20eb99272665c1777949e26ab59589"><div class="ttname"><a href="#a7b20eb99272665c1777949e26ab59589">operations_on_datastructures::inorder_traversal_of_bst::deallocate</a></div><div class="ttdeci">void deallocate(Node *rootNode)</div><div class="ttdoc">This function clears the memory allocated to entire tree recursively. Its just for clean up the memor...</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:210</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d32/inorder__successor__of__bst_8cpp_a7b20eb99272665c1777949e26ab59589_cgraph.svg" width="203" height="91"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="ainorder__successor__of__bst_8cpp_html_a7b20eb99272665c1777949e26ab59589"><div class="ttname"><a href="#a7b20eb99272665c1777949e26ab59589">operations_on_datastructures::inorder_traversal_of_bst::deallocate</a></div><div class="ttdeci">void deallocate(Node *rootNode)</div><div class="ttdoc">This function clears the memory allocated to entire tree recursively. Its just for clean up the memor...</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00210">inorder_successor_of_bst.cpp:210</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a72483e3f6933e004a8d86371e8a990db" name="a72483e3f6933e004a8d86371e8a990db"></a>
@@ -261,6 +279,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Node* Pointer to the found node </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00121">121</a> of file <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html">inorder_successor_of_bst.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  121</span>                              {</div>
 <div class="line"><span class="lineno">  122</span>    <span class="keywordflow">if</span> (root == <span class="keyword">nullptr</span>) {</div>
 <div class="line"><span class="lineno">  123</span>        <span class="keywordflow">return</span> root;</div>
@@ -270,12 +290,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  127</span>    }</div>
 <div class="line"><span class="lineno">  128</span>    <span class="keywordflow">return</span> root;</div>
 <div class="line"><span class="lineno">  129</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d32/inorder__successor__of__bst_8cpp_a72483e3f6933e004a8d86371e8a990db_cgraph.svg" width="203" height="91"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3923fb22b46e085376703cae0b44d690" name="a3923fb22b46e085376703cae0b44d690"></a>
@@ -306,6 +321,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../db/d8b/struct_node.html">Node</a> pointer to the inorder successor node. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00176">176</a> of file <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html">inorder_successor_of_bst.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  176</span>                                                    {</div>
 <div class="line"><span class="lineno">  177</span>    <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *current = <a class="code hl_function" href="#a824cbf1814854824cf05f062eea07b95">getNode</a>(root, <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>);</div>
 <div class="line"><span class="lineno">  178</span>    <span class="keywordflow">if</span> (current == <span class="keyword">nullptr</span>) {</div>
@@ -333,16 +350,11 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  200</span>        <span class="keywordflow">return</span> successor;  <span class="comment">// Nodes with maximum vales will not have a successor</span></div>
 <div class="line"><span class="lineno">  201</span>    }</div>
 <div class="line"><span class="lineno">  202</span>}</div>
-<div class="ttc" id="ahash__search_8cpp_html_a6e1a77282bc65ad359d753d25df23243"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a></div><div class="ttdeci">int data[MAX]</div><div class="ttdoc">test data</div><div class="ttdef"><b>Definition</b> hash_search.cpp:24</div></div>
-<div class="ttc" id="ainorder__successor__of__bst_8cpp_html_a72483e3f6933e004a8d86371e8a990db"><div class="ttname"><a href="#a72483e3f6933e004a8d86371e8a990db">operations_on_datastructures::inorder_traversal_of_bst::findMinNode</a></div><div class="ttdeci">Node * findMinNode(Node *root)</div><div class="ttdoc">Finds and return the minimum node in BST.</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:121</div></div>
-<div class="ttc" id="ainorder__successor__of__bst_8cpp_html_a824cbf1814854824cf05f062eea07b95"><div class="ttname"><a href="#a824cbf1814854824cf05f062eea07b95">operations_on_datastructures::inorder_traversal_of_bst::getNode</a></div><div class="ttdeci">Node * getNode(Node *root, int64_t data)</div><div class="ttdoc">Searches the given data in BST and returns the pointer to the node containing that data.</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:100</div></div>
-<div class="ttc" id="astruct_node_html"><div class="ttname"><a href="../../db/d8b/struct_node.html">Node</a></div><div class="ttdef"><b>Definition</b> linkedlist_implentation_usingarray.cpp:14</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d32/inorder__successor__of__bst_8cpp_a3923fb22b46e085376703cae0b44d690_cgraph.svg" width="444" height="195"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="ahash__search_8cpp_html_a6e1a77282bc65ad359d753d25df23243"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a></div><div class="ttdeci">int data[MAX]</div><div class="ttdoc">test data</div><div class="ttdef"><b>Definition</b> <a href="../../d1/df3/hash__search_8cpp_source.html#l00024">hash_search.cpp:24</a></div></div>
+<div class="ttc" id="ainorder__successor__of__bst_8cpp_html_a72483e3f6933e004a8d86371e8a990db"><div class="ttname"><a href="#a72483e3f6933e004a8d86371e8a990db">operations_on_datastructures::inorder_traversal_of_bst::findMinNode</a></div><div class="ttdeci">Node * findMinNode(Node *root)</div><div class="ttdoc">Finds and return the minimum node in BST.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00121">inorder_successor_of_bst.cpp:121</a></div></div>
+<div class="ttc" id="ainorder__successor__of__bst_8cpp_html_a824cbf1814854824cf05f062eea07b95"><div class="ttname"><a href="#a824cbf1814854824cf05f062eea07b95">operations_on_datastructures::inorder_traversal_of_bst::getNode</a></div><div class="ttdeci">Node * getNode(Node *root, int64_t data)</div><div class="ttdoc">Searches the given data in BST and returns the pointer to the node containing that data.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00100">inorder_successor_of_bst.cpp:100</a></div></div>
+<div class="ttc" id="astruct_node_html"><div class="ttname"><a href="../../db/d8b/struct_node.html">Node</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/dce/linkedlist__implentation__usingarray_8cpp_source.html#l00014">linkedlist_implentation_usingarray.cpp:14</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a824cbf1814854824cf05f062eea07b95" name="a824cbf1814854824cf05f062eea07b95"></a>
@@ -376,27 +388,20 @@ Here is the call graph for this function:</div>
 <p><a class="el" href="../../db/d8b/struct_node.html">Node</a> found!</p>
 <p>Traverse right subtree recursively as the given data is greater than the data in root node, data must be present in right subtree.</p>
 <p>Traverse left subtree recursively as the given data is less than the data in root node, data must be present in left subtree.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00100">100</a> of file <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html">inorder_successor_of_bst.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  100</span>                                        {</div>
 <div class="line"><span class="lineno">  101</span>    <span class="keywordflow">if</span> (root == <span class="keyword">nullptr</span>) {</div>
 <div class="line"><span class="lineno">  102</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  103</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (root-&gt;data == <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>) {</div>
-<div class="line"><span class="lineno">  104</span>        <span class="keywordflow">return</span> root;  <span class="comment">/// Node found!</span></div>
-<div class="line"><span class="lineno">  105</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a> &gt; root-&gt;data) {<span class="comment"></span></div>
-<div class="line"><span class="lineno">  106</span><span class="comment">        /// Traverse right subtree recursively as the given data is greater than</span></div>
-<div class="line"><span class="lineno">  107</span><span class="comment">        /// the data in root node, data must be present in right subtree.</span></div>
-<div class="line"><span class="lineno">  108</span><span class="comment"></span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a824cbf1814854824cf05f062eea07b95">getNode</a>(root-&gt;right, <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>);</div>
-<div class="line"><span class="lineno">  109</span>    } <span class="keywordflow">else</span> {<span class="comment"></span></div>
-<div class="line"><span class="lineno">  110</span><span class="comment">        /// Traverse left subtree recursively as the given data is less than the</span></div>
-<div class="line"><span class="lineno">  111</span><span class="comment">        /// data in root node, data must be present in left subtree.</span></div>
-<div class="line"><span class="lineno">  112</span><span class="comment"></span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a824cbf1814854824cf05f062eea07b95">getNode</a>(root-&gt;left, <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>);</div>
+<div class="line"><span class="lineno">  104</span>        <span class="keywordflow">return</span> root;  </div>
+<div class="line"><span class="lineno">  105</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a> &gt; root-&gt;data) {</div>
+<div class="line"><span class="lineno">  108</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a824cbf1814854824cf05f062eea07b95">getNode</a>(root-&gt;right, <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>);</div>
+<div class="line"><span class="lineno">  109</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  112</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a824cbf1814854824cf05f062eea07b95">getNode</a>(root-&gt;left, <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>);</div>
 <div class="line"><span class="lineno">  113</span>    }</div>
 <div class="line"><span class="lineno">  114</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d32/inorder__successor__of__bst_8cpp_a824cbf1814854824cf05f062eea07b95_cgraph.svg" width="203" height="91"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3ae0bea4123fd2ce155108e88f2ef78c" name="a3ae0bea4123fd2ce155108e88f2ef78c"></a>
@@ -427,6 +432,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Node* Pointer to the root node. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html">inorder_successor_of_bst.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   82</span>                                       {</div>
 <div class="line"><span class="lineno">   83</span>    <span class="keywordflow">if</span> (root == <span class="keyword">nullptr</span>) {</div>
 <div class="line"><span class="lineno">   84</span>        root = <a class="code hl_function" href="#a7f6f73a33beec448c27cc1d70b220702">makeNode</a>(<a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>);</div>
@@ -437,13 +444,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   89</span>    }</div>
 <div class="line"><span class="lineno">   90</span>    <span class="keywordflow">return</span> root;</div>
 <div class="line"><span class="lineno">   91</span>}</div>
-<div class="ttc" id="ainorder__successor__of__bst_8cpp_html_a7f6f73a33beec448c27cc1d70b220702"><div class="ttname"><a href="#a7f6f73a33beec448c27cc1d70b220702">operations_on_datastructures::inorder_traversal_of_bst::makeNode</a></div><div class="ttdeci">Node * makeNode(int64_t data)</div><div class="ttdoc">Allocates a new node in heap for given data and returns it's pointer.</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:68</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d32/inorder__successor__of__bst_8cpp_a3ae0bea4123fd2ce155108e88f2ef78c_cgraph.svg" width="444" height="91"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="ainorder__successor__of__bst_8cpp_html_a7f6f73a33beec448c27cc1d70b220702"><div class="ttname"><a href="#a7f6f73a33beec448c27cc1d70b220702">operations_on_datastructures::inorder_traversal_of_bst::makeNode</a></div><div class="ttdeci">Node * makeNode(int64_t data)</div><div class="ttdoc">Allocates a new node in heap for given data and returns it's pointer.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00068">inorder_successor_of_bst.cpp:68</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0ddf1224851353fc92bfbff6f499fa97" name="a0ddf1224851353fc92bfbff6f499fa97"></a>
@@ -479,52 +481,46 @@ Here is the call graph for this function:</div>
 <p>&lt; An element to find inorder successor for.</p>
 <p>&lt; Making BST</p>
 <p>memory cleanup!</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00398">398</a> of file <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html">inorder_successor_of_bst.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  398</span>                                 {</div>
 <div class="line"><span class="lineno">  399</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
 <div class="line"><span class="lineno">  400</span> </div>
 <div class="line"><span class="lineno">  401</span>    <a class="code hl_class" href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html">operations_on_datastructures::inorder_traversal_of_bst::Node</a> *root =</div>
-<div class="line"><span class="lineno">  402</span>        <span class="keyword">nullptr</span>;  <span class="comment">///&lt; root node of the bst</span></div>
-<div class="line"><span class="lineno">  403</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> node_data{3,  4, 5,</div>
-<div class="line"><span class="lineno">  404</span>                                   89, 1, 2};  <span class="comment">///&lt; Data to add nodes in BST</span></div>
+<div class="line"><span class="lineno">  402</span>        <span class="keyword">nullptr</span>;  </div>
+<div class="line"><span class="lineno">  403</span>    std::vector&lt;int64_t&gt; node_data{3,  4, 5,</div>
+<div class="line"><span class="lineno">  404</span>                                   89, 1, 2};  </div>
 <div class="line"><span class="lineno">  405</span> </div>
-<div class="line"><span class="lineno">  406</span>    int64_t targetElement = 4;  <span class="comment">///&lt; An element to find inorder successor for.</span></div>
+<div class="line"><span class="lineno">  406</span>    int64_t targetElement = 4;  </div>
 <div class="line"><span class="lineno">  407</span>    root = <a class="code hl_function" href="#a05fe8a029e155c43e4efa598d4d089d9">operations_on_datastructures::inorder_traversal_of_bst::makeBST</a>(</div>
-<div class="line"><span class="lineno">  408</span>        root, node_data);  <span class="comment">///&lt; Making BST</span></div>
+<div class="line"><span class="lineno">  408</span>        root, node_data);  </div>
 <div class="line"><span class="lineno">  409</span> </div>
 <div class="line"><span class="lineno">  410</span>    <a class="code hl_class" href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html">operations_on_datastructures::inorder_traversal_of_bst::Node</a></div>
 <div class="line"><span class="lineno">  411</span>        *inorderSuccessor = operations_on_datastructures::</div>
 <div class="line"><span class="lineno">  412</span>            inorder_traversal_of_bst::getInorderSuccessor(root, targetElement);</div>
 <div class="line"><span class="lineno">  413</span> </div>
-<div class="line"><span class="lineno">  414</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;In-order sequence is : &quot;</span>;</div>
+<div class="line"><span class="lineno">  414</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;In-order sequence is : &quot;</span>;</div>
 <div class="line"><span class="lineno">  415</span>    <a class="code hl_function" href="#a5d7266b934ca50c4f53e4f1e725d89a4">operations_on_datastructures::inorder_traversal_of_bst::printInorder</a>(root);</div>
-<div class="line"><span class="lineno">  416</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  416</span>    std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  417</span> </div>
 <div class="line"><span class="lineno">  418</span>    <span class="keywordflow">if</span> (inorderSuccessor == <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">  419</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Inorder successor for last node is NULL&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  419</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Inorder successor for last node is NULL&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  420</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  421</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Target element is : &quot;</span> &lt;&lt; targetElement &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  422</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Inorder successor for target element is : &quot;</span></div>
-<div class="line"><span class="lineno">  423</span>                  &lt;&lt; inorderSuccessor-&gt;<a class="code hl_variable" href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html#ae161f3e5ef33ade73429cab9291612e2">data</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  421</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Target element is : &quot;</span> &lt;&lt; targetElement &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  422</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Inorder successor for target element is : &quot;</span></div>
+<div class="line"><span class="lineno">  423</span>                  &lt;&lt; inorderSuccessor-&gt;<a class="code hl_variable" href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html#ae161f3e5ef33ade73429cab9291612e2">data</a> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  424</span>    }</div>
 <div class="line"><span class="lineno">  425</span> </div>
-<div class="line"><span class="lineno">  426</span>    <a class="code hl_function" href="#a7b20eb99272665c1777949e26ab59589">deallocate</a>(root);  <span class="comment">/// memory cleanup!</span></div>
+<div class="line"><span class="lineno">  426</span>    <a class="code hl_function" href="#a7b20eb99272665c1777949e26ab59589">deallocate</a>(root);  </div>
 <div class="line"><span class="lineno">  427</span> </div>
 <div class="line"><span class="lineno">  428</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  429</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aclassoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node_html"><div class="ttname"><a href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html">operations_on_datastructures::inorder_traversal_of_bst::Node</a></div><div class="ttdoc">A Node structure representing a single node in BST.</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:56</div></div>
-<div class="ttc" id="aclassoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node_html_ae161f3e5ef33ade73429cab9291612e2"><div class="ttname"><a href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html#ae161f3e5ef33ade73429cab9291612e2">operations_on_datastructures::inorder_traversal_of_bst::Node::data</a></div><div class="ttdeci">int64_t data</div><div class="ttdoc">The key/value of the node.</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:58</div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="ainorder__successor__of__bst_8cpp_html_a05fe8a029e155c43e4efa598d4d089d9"><div class="ttname"><a href="#a05fe8a029e155c43e4efa598d4d089d9">operations_on_datastructures::inorder_traversal_of_bst::makeBST</a></div><div class="ttdeci">Node * makeBST(Node *root, const std::vector&lt; int64_t &gt; &amp;data)</div><div class="ttdoc">This function is used in test cases to quickly create BST containing large data instead of hard codin...</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:155</div></div>
-<div class="ttc" id="ainorder__successor__of__bst_8cpp_html_a5d7266b934ca50c4f53e4f1e725d89a4"><div class="ttname"><a href="#a5d7266b934ca50c4f53e4f1e725d89a4">operations_on_datastructures::inorder_traversal_of_bst::printInorder</a></div><div class="ttdeci">void printInorder(Node *root)</div><div class="ttdoc">Prints the BST in inorder traversal using recursion.</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:136</div></div>
-<div class="ttc" id="ainorder__successor__of__bst_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:387</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d4/d32/inorder__successor__of__bst_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph.svg" width="100%" height="508"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="aclassoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node_html"><div class="ttname"><a href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html">operations_on_datastructures::inorder_traversal_of_bst::Node</a></div><div class="ttdoc">A Node structure representing a single node in BST.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00056">inorder_successor_of_bst.cpp:56</a></div></div>
+<div class="ttc" id="aclassoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node_html_ae161f3e5ef33ade73429cab9291612e2"><div class="ttname"><a href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html#ae161f3e5ef33ade73429cab9291612e2">operations_on_datastructures::inorder_traversal_of_bst::Node::data</a></div><div class="ttdeci">int64_t data</div><div class="ttdoc">The key/value of the node.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00058">inorder_successor_of_bst.cpp:58</a></div></div>
+<div class="ttc" id="ainorder__successor__of__bst_8cpp_html_a05fe8a029e155c43e4efa598d4d089d9"><div class="ttname"><a href="#a05fe8a029e155c43e4efa598d4d089d9">operations_on_datastructures::inorder_traversal_of_bst::makeBST</a></div><div class="ttdeci">Node * makeBST(Node *root, const std::vector&lt; int64_t &gt; &amp;data)</div><div class="ttdoc">This function is used in test cases to quickly create BST containing large data instead of hard codin...</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00155">inorder_successor_of_bst.cpp:155</a></div></div>
+<div class="ttc" id="ainorder__successor__of__bst_8cpp_html_a5d7266b934ca50c4f53e4f1e725d89a4"><div class="ttname"><a href="#a5d7266b934ca50c4f53e4f1e725d89a4">operations_on_datastructures::inorder_traversal_of_bst::printInorder</a></div><div class="ttdeci">void printInorder(Node *root)</div><div class="ttdoc">Prints the BST in inorder traversal using recursion.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00136">inorder_successor_of_bst.cpp:136</a></div></div>
+<div class="ttc" id="ainorder__successor__of__bst_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00387">inorder_successor_of_bst.cpp:387</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a05fe8a029e155c43e4efa598d4d089d9" name="a05fe8a029e155c43e4efa598d4d089d9"></a>
@@ -541,7 +537,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+          <td class="paramtype">const std::vector&lt; int64_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -555,18 +551,15 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../db/d8b/struct_node.html">Node</a> pointer to the root node. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00155">155</a> of file <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html">inorder_successor_of_bst.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  155</span>                                                          {</div>
 <div class="line"><span class="lineno">  156</span>    <span class="keywordflow">for</span> (int64_t values : <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>) {</div>
 <div class="line"><span class="lineno">  157</span>        root = Insert(root, values);</div>
 <div class="line"><span class="lineno">  158</span>    }</div>
 <div class="line"><span class="lineno">  159</span>    <span class="keywordflow">return</span> root;</div>
 <div class="line"><span class="lineno">  160</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d32/inorder__successor__of__bst_8cpp_a05fe8a029e155c43e4efa598d4d089d9_cgraph.svg" width="203" height="91"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7f6f73a33beec448c27cc1d70b220702" name="a7f6f73a33beec448c27cc1d70b220702"></a>
@@ -595,21 +588,18 @@ Here is the call graph for this function:</div>
 <p>&lt; setting data for node</p>
 <p>&lt; setting left child as null</p>
 <p>&lt; setting right child as null</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html">inorder_successor_of_bst.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   68</span>                             {</div>
 <div class="line"><span class="lineno">   69</span>    <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *<a class="code hl_class" href="../../d5/da1/structnode.html">node</a> = <span class="keyword">new</span> <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a>();</div>
-<div class="line"><span class="lineno">   70</span>    <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;data = <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>;      <span class="comment">///&lt; setting data for node</span></div>
-<div class="line"><span class="lineno">   71</span>    <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;left = <span class="keyword">nullptr</span>;   <span class="comment">///&lt; setting left child as null</span></div>
-<div class="line"><span class="lineno">   72</span>    <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;right = <span class="keyword">nullptr</span>;  <span class="comment">///&lt; setting right child as null</span></div>
+<div class="line"><span class="lineno">   70</span>    <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;data = <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>;      </div>
+<div class="line"><span class="lineno">   71</span>    <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;left = <span class="keyword">nullptr</span>;   </div>
+<div class="line"><span class="lineno">   72</span>    <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;right = <span class="keyword">nullptr</span>;  </div>
 <div class="line"><span class="lineno">   73</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="../../d8/dee/avltree_8cpp.html#a74f0cf18a0e5b832d9994e2f2d022287">node</a>;</div>
 <div class="line"><span class="lineno">   74</span>}</div>
-<div class="ttc" id="aavltree_8cpp_html_a74f0cf18a0e5b832d9994e2f2d022287"><div class="ttname"><a href="../../d8/dee/avltree_8cpp.html#a74f0cf18a0e5b832d9994e2f2d022287">node</a></div><div class="ttdeci">struct node { int data; int height; struct node *left; struct node *right;} node</div><div class="ttdoc">for std::queue</div><div class="ttdef"><b>Definition</b> avltree.cpp:13</div></div>
-<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition</b> binary_search_tree.cpp:11</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d32/inorder__successor__of__bst_8cpp_a7f6f73a33beec448c27cc1d70b220702_cgraph.svg" width="203" height="91"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aavltree_8cpp_html_a74f0cf18a0e5b832d9994e2f2d022287"><div class="ttname"><a href="../../d8/dee/avltree_8cpp.html#a74f0cf18a0e5b832d9994e2f2d022287">node</a></div><div class="ttdeci">struct node { int data; int height; struct node *left; struct node *right;} node</div><div class="ttdoc">for std::queue</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dee/avltree_8cpp_source.html#l00013">avltree.cpp:13</a></div></div>
+<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d26/binary__search__tree_8cpp_source.html#l00011">binary_search_tree.cpp:11</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5d7266b934ca50c4f53e4f1e725d89a4" name="a5d7266b934ca50c4f53e4f1e725d89a4"></a>
@@ -637,21 +627,18 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <p>recursive call to left subtree</p>
 <p>recursive call to right subtree</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00136">136</a> of file <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html">inorder_successor_of_bst.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  136</span>                              {</div>
 <div class="line"><span class="lineno">  137</span>    <span class="keywordflow">if</span> (root == <span class="keyword">nullptr</span>) {</div>
 <div class="line"><span class="lineno">  138</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  139</span>    }</div>
 <div class="line"><span class="lineno">  140</span> </div>
-<div class="line"><span class="lineno">  141</span>    <a class="code hl_function" href="#a5d7266b934ca50c4f53e4f1e725d89a4">printInorder</a>(root-&gt;left);  <span class="comment">/// recursive call to left subtree</span></div>
-<div class="line"><span class="lineno">  142</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; root-&gt;data &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><span class="lineno">  143</span>    <a class="code hl_function" href="#a5d7266b934ca50c4f53e4f1e725d89a4">printInorder</a>(root-&gt;right);  <span class="comment">/// recursive call to right subtree</span></div>
+<div class="line"><span class="lineno">  141</span>    <a class="code hl_function" href="#a5d7266b934ca50c4f53e4f1e725d89a4">printInorder</a>(root-&gt;left);  </div>
+<div class="line"><span class="lineno">  142</span>    std::cout &lt;&lt; root-&gt;data &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">  143</span>    <a class="code hl_function" href="#a5d7266b934ca50c4f53e4f1e725d89a4">printInorder</a>(root-&gt;right);  </div>
 <div class="line"><span class="lineno">  144</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d32/inorder__successor__of__bst_8cpp_a5d7266b934ca50c4f53e4f1e725d89a4_cgraph.svg" width="203" height="91"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -679,18 +666,15 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00387">387</a> of file <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html">inorder_successor_of_bst.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  387</span>                   {</div>
 <div class="line"><span class="lineno">  388</span>    <a class="code hl_class" href="../../d5/d58/class_test_cases.html">TestCases</a> tc;</div>
 <div class="line"><span class="lineno">  389</span>    tc.<a class="code hl_function" href="../../d5/d58/class_test_cases.html#aeabea90c02f9159e4a784bbf736e1e23">runTests</a>();</div>
 <div class="line"><span class="lineno">  390</span>}</div>
-<div class="ttc" id="aclass_test_cases_html"><div class="ttname"><a href="../../d5/d58/class_test_cases.html">TestCases</a></div><div class="ttdoc">class encapsulating the necessary test cases</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:225</div></div>
-<div class="ttc" id="aclass_test_cases_html_aeabea90c02f9159e4a784bbf736e1e23"><div class="ttname"><a href="../../d5/d58/class_test_cases.html#aeabea90c02f9159e4a784bbf736e1e23">TestCases::runTests</a></div><div class="ttdeci">void runTests()</div><div class="ttdoc">Executes test cases.</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:243</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d4/d32/inorder__successor__of__bst_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="100%" height="467"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="aclass_test_cases_html"><div class="ttname"><a href="../../d5/d58/class_test_cases.html">TestCases</a></div><div class="ttdoc">class encapsulating the necessary test cases</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00225">inorder_successor_of_bst.cpp:225</a></div></div>
+<div class="ttc" id="aclass_test_cases_html_aeabea90c02f9159e4a784bbf736e1e23"><div class="ttname"><a href="../../d5/d58/class_test_cases.html#aeabea90c02f9159e4a784bbf736e1e23">TestCases::runTests</a></div><div class="ttdeci">void runTests()</div><div class="ttdoc">Executes test cases.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00243">inorder_successor_of_bst.cpp:243</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

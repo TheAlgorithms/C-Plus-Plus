@@ -1,6 +1,0 @@
-<map id="data_structures::treap::Treap::get_k_th" name="data_structures::treap::Treap::get_k_th">
-<area shape="rect" id="Node000001" title="Get the KTH largest value (External method)" alt="" coords="5,29,154,70"/>
-<area shape="rect" id="Node000002" href="$d5/d95/structdata__structures_1_1treap_1_1_treap.html#ad08520c0617eb8dcfcbfa90d258aa6b2" title="Find the KTH largest value (internal method)" alt="" coords="202,29,350,70"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,47,186,47,186,52,154,52"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="238,29,237,19,243,10,256,5,276,3,297,5,310,11,308,16,296,10,276,8,257,10,246,15,242,20,244,28"/>
-</map>

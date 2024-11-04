@@ -1,9 +1,0 @@
-<map id="dynamic_programming::unbounded_knapsack::unboundedKnapsack" name="dynamic_programming::unbounded_knapsack::unboundedKnapsack">
-<area shape="rect" id="Node000001" title="Wrapper function to initiate the unbounded knapsack calculation." alt="" coords="5,29,161,85"/>
-<area shape="poly" id="edge4_Node000001_Node000001" title=" " alt="" coords="43,29,43,19,51,10,64,5,83,3,105,5,118,12,115,17,103,10,83,8,65,10,54,15,48,21,48,29"/>
-<area shape="rect" id="Node000002" href="$d9/dec/unbounded__0__1__knapsack_8cpp.html#afe447a5979582174908695952c8a079c" title="Recursive function to calculate the maximum value obtainable using an unbounded knapsack approach." alt="" coords="209,29,364,85"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,54,193,54,193,60,161,60"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="254,29,254,19,260,10,271,5,286,3,303,5,314,12,311,16,302,10,286,8,272,10,264,14,259,21,259,29"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="412,44,484,70"/>
-<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="364,54,396,54,396,60,364,60"/>
-</map>

@@ -31,7 +31,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="305.75,-251.25 202.75,-251.25 202.75,-232 305.75,-232 305.75,-251.25"/>
 <text text-anchor="middle" x="254.25" y="-237.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; Edge &gt;</text>
 </a>
@@ -69,7 +69,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/map.html" xlink:title=" ">
+<g id="a_Node000004"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="319.25,-213.5 189.25,-213.5 189.25,-171.75 319.25,-171.75 319.25,-213.5"/>
 <text text-anchor="start" x="197.25" y="-200" font-family="Helvetica,sans-Serif" font-size="10.00">std::map&lt; unsigned</text>
 <text text-anchor="start" x="197.25" y="-188.75" font-family="Helvetica,sans-Serif" font-size="10.00"> int, std::vector&lt; unsigned</text>
@@ -90,7 +90,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_Node000005"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="110.5,-207.88 0,-207.88 0,-177.38 110.5,-177.38 110.5,-207.88"/>
 <text text-anchor="start" x="8" y="-194.38" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; unsigned</text>
 <text text-anchor="middle" x="55.25" y="-183.12" font-family="Helvetica,sans-Serif" font-size="10.00"> int &gt;</text>
@@ -110,7 +110,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_Node000006"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="313.25,-153.88 195.25,-153.88 195.25,-123.38 313.25,-123.38 313.25,-153.88"/>
 <text text-anchor="start" x="203.25" y="-140.38" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; std::vector</text>
 <text text-anchor="middle" x="254.25" y="-129.12" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; int &gt; &gt;</text>
@@ -131,7 +131,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_Node000007"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="299.75,-105.25 208.75,-105.25 208.75,-86 299.75,-86 299.75,-105.25"/>
 <text text-anchor="middle" x="254.25" y="-91.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; int &gt;</text>
 </a>
@@ -150,7 +150,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_Node000008"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="310.25,-67.88 198.25,-67.88 198.25,-37.38 310.25,-37.38 310.25,-67.88"/>
 <text text-anchor="start" x="206.25" y="-54.38" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; std::tuple</text>
 <text text-anchor="middle" x="254.25" y="-43.12" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; int, int, int &gt; &gt;</text>
@@ -170,36 +170,16 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/tuple.html" xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="103,-67.88 7.5,-67.88 7.5,-37.38 103,-37.38 103,-67.88"/>
-<text text-anchor="start" x="15.5" y="-54.38" font-family="Helvetica,sans-Serif" font-size="10.00">std::tuple&lt; int, int,</text>
-<text text-anchor="middle" x="55.25" y="-43.12" font-family="Helvetica,sans-Serif" font-size="10.00"> int &gt;</text>
-</a>
-</g>
-</g>
-<!-- Node9&#45;&gt;Node8 -->
-<g id="edge8_Node000008_Node000009" class="edge">
-<title>Node9&#45;&gt;Node8</title>
-<g id="a_edge8_Node000008_Node000009"><a xlink:title=" ">
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M114.81,-52.62C141.16,-52.62 172.12,-52.62 198.07,-52.62"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="114.95,-49.13 104.95,-52.63 114.95,-56.13 114.95,-49.13"/>
-</a>
-</g>
-<text text-anchor="middle" x="149.88" y="-54.38" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> elements</text>
-</g>
-<!-- Node10 -->
-<g id="Node000010" class="node">
-<title>Node10</title>
-<g id="a_Node000010"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/bitset.html" xlink:title=" ">
+<g id="a_Node000009"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="307.62,-19.25 200.88,-19.25 200.88,0 307.62,0 307.62,-19.25"/>
 <text text-anchor="middle" x="254.25" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::bitset&lt; MAXN &gt;</text>
 </a>
 </g>
 </g>
-<!-- Node10&#45;&gt;Node1 -->
-<g id="edge9_Node000001_Node000010" class="edge">
-<title>Node10&#45;&gt;Node1</title>
-<g id="a_edge9_Node000001_Node000010"><a xlink:title=" ">
+<!-- Node9&#45;&gt;Node1 -->
+<g id="edge8_Node000001_Node000009" class="edge">
+<title>Node9&#45;&gt;Node1</title>
+<g id="a_edge8_Node000001_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M319.05,-10.37C351.13,-13.66 388.98,-22.33 416.75,-43.38 437.89,-59.39 448.39,-90.51 452.58,-106.54"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="319.74,-6.91 309.48,-9.54 319.14,-13.89 319.74,-6.91"/>
 </a>

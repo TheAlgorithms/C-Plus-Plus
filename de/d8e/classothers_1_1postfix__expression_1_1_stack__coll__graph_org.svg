@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/array.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="120.62,-97 10.12,-97 10.12,-77.75 120.62,-77.75 120.62,-97"/>
 <text text-anchor="middle" x="65.38" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::array&lt; float, 20 &gt;</text>
 </a>

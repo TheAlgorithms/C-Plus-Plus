@@ -1,6 +1,0 @@
-<map id="dsu::isSame" name="dsu::isSame">
-<area shape="rect" id="Node000001" title="A utility function which check whether i and j belongs to same set or not." alt="" coords="5,29,100,55"/>
-<area shape="rect" id="Node000002" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="148,29,239,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,40,132,40,132,45,100,45"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="169,30,164,21,167,11,177,5,193,3,211,5,220,12,217,16,209,10,193,8,179,10,171,14,170,20,174,28"/>
-</map>

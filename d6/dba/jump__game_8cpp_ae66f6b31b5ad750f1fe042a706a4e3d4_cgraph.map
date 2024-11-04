@@ -1,9 +1,0 @@
-<map id="main" name="main">
-<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,13,55,38"/>
-<area shape="rect" id="Node000002" href="$d6/dba/jump__game_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Function to test the above algorithm." alt="" coords="103,13,146,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,23,87,23,87,28,55,28"/>
-<area shape="rect" id="Node000003" href="$d2/d90/namespacegreedy__algorithms.html#a33e3819aa9ffec0e380383c52603b502" title="Checks whether the given element (default is 1) can jump to the last index." alt="" coords="194,5,329,46"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,23,178,23,178,28,146,28"/>
-<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="377,13,493,38"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="330,23,362,23,362,28,330,28"/>
-</map>

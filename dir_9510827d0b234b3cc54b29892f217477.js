@@ -4,6 +4,7 @@ var dir_9510827d0b234b3cc54b29892f217477 =
     [ "decimal_to_binary.cpp", "df/d06/decimal__to__binary_8cpp.html", "df/d06/decimal__to__binary_8cpp" ],
     [ "decimal_to_hexadecimal.cpp", "da/de7/decimal__to__hexadecimal_8cpp.html", "da/de7/decimal__to__hexadecimal_8cpp" ],
     [ "decimal_to_roman_numeral.cpp", "de/d85/decimal__to__roman__numeral_8cpp.html", "de/d85/decimal__to__roman__numeral_8cpp" ],
+    [ "easter.cpp", "d6/d4e/easter_8cpp_source.html", null ],
     [ "fast_integer_input.cpp", "d9/df0/fast__integer__input_8cpp.html", "d9/df0/fast__integer__input_8cpp" ],
     [ "happy_number.cpp", "db/df3/happy__number_8cpp.html", "db/df3/happy__number_8cpp" ],
     [ "iterative_tree_traversals.cpp", "d8/d90/iterative__tree__traversals_8cpp.html", "d8/d90/iterative__tree__traversals_8cpp" ],

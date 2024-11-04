@@ -1,9 +1,0 @@
-<map id="machine_learning::get_shape" name="machine_learning::get_shape">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,154,88"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="220,5,291,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,44,204,30,205,35,155,49"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/program/exit.html#" title=" " alt="" coords="221,55,290,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="154,65,206,65,206,70,154,70"/>
-<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair/make_pair.html#" title=" " alt="" coords="202,104,309,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="155,86,193,97,192,102,154,91"/>
-</map>

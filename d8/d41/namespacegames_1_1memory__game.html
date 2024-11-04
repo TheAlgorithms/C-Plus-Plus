@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: games::memory_game Namespace Reference</title>
+<title>TheAlgorithms/C++: games::memory_game Namespace Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -120,27 +137,27 @@ Functions</h2></td></tr>
 <tr class="memdesc:a33167bb9cce6d527b478b4f6ae8c3f59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to verify if the given input is a number or not. This is very useful to prevent the program being stuck in a loop.  <br /></td></tr>
 <tr class="separator:a33167bb9cce6d527b478b4f6ae8c3f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad573c8ae66ab66156d03e5e81bbba214" id="r_ad573c8ae66ab66156d03e5e81bbba214"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad573c8ae66ab66156d03e5e81bbba214"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad573c8ae66ab66156d03e5e81bbba214">init</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *table)</td></tr>
+<tr class="memitem:ad573c8ae66ab66156d03e5e81bbba214"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad573c8ae66ab66156d03e5e81bbba214">init</a> (std::vector&lt; T &gt; *table)</td></tr>
 <tr class="memdesc:ad573c8ae66ab66156d03e5e81bbba214"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the table with the letters.  <br /></td></tr>
 <tr class="separator:ad573c8ae66ab66156d03e5e81bbba214"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac589ef65abb0a6b9a7116ee0f9fd5280" id="r_ac589ef65abb0a6b9a7116ee0f9fd5280"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ac589ef65abb0a6b9a7116ee0f9fd5280"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac589ef65abb0a6b9a7116ee0f9fd5280">print_table</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;table)</td></tr>
+<tr class="memitem:ac589ef65abb0a6b9a7116ee0f9fd5280"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac589ef65abb0a6b9a7116ee0f9fd5280">print_table</a> (const std::vector&lt; T &gt; &amp;table)</td></tr>
 <tr class="memdesc:ac589ef65abb0a6b9a7116ee0f9fd5280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to print the table.  <br /></td></tr>
 <tr class="separator:ac589ef65abb0a6b9a7116ee0f9fd5280"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc62ebb75853446656e24932bdc6dd6b" id="r_adc62ebb75853446656e24932bdc6dd6b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:adc62ebb75853446656e24932bdc6dd6b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#adc62ebb75853446656e24932bdc6dd6b">reset_data</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;table, int *answer, int *old_answer, int *memory_count)</td></tr>
+<tr class="memitem:adc62ebb75853446656e24932bdc6dd6b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#adc62ebb75853446656e24932bdc6dd6b">reset_data</a> (const std::vector&lt; T &gt; &amp;table, int *answer, int *old_answer, int *memory_count)</td></tr>
 <tr class="memdesc:adc62ebb75853446656e24932bdc6dd6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function that resets the data if the user enters an invalid value.  <br /></td></tr>
 <tr class="separator:adc62ebb75853446656e24932bdc6dd6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5714d97649c0edd57b4fb449799676a3" id="r_a5714d97649c0edd57b4fb449799676a3"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a5714d97649c0edd57b4fb449799676a3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a5714d97649c0edd57b4fb449799676a3">ask_data</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;table, int *answer, int *old_answer, int *memory_count)</td></tr>
+<tr class="memitem:a5714d97649c0edd57b4fb449799676a3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a5714d97649c0edd57b4fb449799676a3">ask_data</a> (const std::vector&lt; T &gt; &amp;table, int *answer, int *old_answer, int *memory_count)</td></tr>
 <tr class="memdesc:a5714d97649c0edd57b4fb449799676a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that asks the user for their input in the table they previously chose.  <br /></td></tr>
 <tr class="separator:a5714d97649c0edd57b4fb449799676a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a370760f2b328ad341bcb77d82fa17b01" id="r_a370760f2b328ad341bcb77d82fa17b01"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a370760f2b328ad341bcb77d82fa17b01"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a370760f2b328ad341bcb77d82fa17b01">match</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;table, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *table_empty, const int &amp;answer, bool *first_time, int *old_answer, int *memory_count)</td></tr>
+<tr class="memitem:a370760f2b328ad341bcb77d82fa17b01"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a370760f2b328ad341bcb77d82fa17b01">match</a> (const std::vector&lt; T &gt; &amp;table, std::vector&lt; T &gt; *table_empty, const int &amp;answer, bool *first_time, int *old_answer, int *memory_count)</td></tr>
 <tr class="memdesc:a370760f2b328ad341bcb77d82fa17b01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the two values given by the user match.  <br /></td></tr>
 <tr class="separator:a370760f2b328ad341bcb77d82fa17b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ceeea62d8fa6c563e2c66359fd73413" id="r_a3ceeea62d8fa6c563e2c66359fd73413"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a3ceeea62d8fa6c563e2c66359fd73413"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3ceeea62d8fa6c563e2c66359fd73413">assign_results</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *table_empty, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *table, int *answer, bool *first_time, int *old_answer, int *memory_count)</td></tr>
+<tr class="memitem:a3ceeea62d8fa6c563e2c66359fd73413"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3ceeea62d8fa6c563e2c66359fd73413">assign_results</a> (std::vector&lt; T &gt; *table_empty, std::vector&lt; T &gt; *table, int *answer, bool *first_time, int *old_answer, int *memory_count)</td></tr>
 <tr class="memdesc:a3ceeea62d8fa6c563e2c66359fd73413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to assign the results to the table.  <br /></td></tr>
 <tr class="separator:a3ceeea62d8fa6c563e2c66359fd73413"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -158,7 +175,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void games::memory_game::ask_data </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>table</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>table</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -195,15 +212,17 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d92/memory__game_8cpp_source.html#l00161">161</a> of file <a class="el" href="../../dd/d92/memory__game_8cpp_source.html">memory_game.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  162</span>                                 {</div>
 <div class="line"><span class="lineno">  163</span>    (*old_answer) = (*answer);</div>
 <div class="line"><span class="lineno">  164</span>    <a class="code hl_function" href="#ac589ef65abb0a6b9a7116ee0f9fd5280">print_table</a>(table);</div>
 <div class="line"><span class="lineno">  165</span> </div>
-<div class="line"><span class="lineno">  166</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n\nType your response here (number index):\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  167</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; (*answer);</div>
+<div class="line"><span class="lineno">  166</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\n\nType your response here (number index):\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  167</span>    std::cin &gt;&gt; (*answer);</div>
 <div class="line"><span class="lineno">  168</span> </div>
 <div class="line"><span class="lineno">  169</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="#a33167bb9cce6d527b478b4f6ae8c3f59">is_number</a>((*answer))) {</div>
-<div class="line"><span class="lineno">  170</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nYou must enter a valid number.\n\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  170</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\nYou must enter a valid number.\n\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  171</span>        <a class="code hl_function" href="#adc62ebb75853446656e24932bdc6dd6b">reset_data</a>(table, answer, old_answer, memory_count);</div>
 <div class="line"><span class="lineno">  172</span>    }</div>
 <div class="line"><span class="lineno">  173</span> </div>
@@ -212,13 +231,13 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  176</span>    (*memory_count)++;</div>
 <div class="line"><span class="lineno">  177</span> </div>
 <div class="line"><span class="lineno">  178</span>    <span class="keywordflow">if</span> (((*answer) &gt; table.size()) || ((*answer) &lt; 1)) {</div>
-<div class="line"><span class="lineno">  179</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nYou can&#39;t check a value that doesn&#39;t exist (or an &quot;</span></div>
+<div class="line"><span class="lineno">  179</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\nYou can&#39;t check a value that doesn&#39;t exist (or an &quot;</span></div>
 <div class="line"><span class="lineno">  180</span>                     <span class="stringliteral">&quot;invalid number).\n\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  181</span>        reset_data(table, answer, old_answer, memory_count);</div>
 <div class="line"><span class="lineno">  182</span>    }</div>
 <div class="line"><span class="lineno">  183</span> </div>
 <div class="line"><span class="lineno">  184</span>    <span class="keywordflow">if</span> ((*old_answer) == (*answer)) {</div>
-<div class="line"><span class="lineno">  185</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nYou can&#39;t check the same value twice.\n\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  185</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\nYou can&#39;t check the same value twice.\n\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  186</span>        reset_data(table, answer, old_answer, memory_count);</div>
 <div class="line"><span class="lineno">  187</span>    }</div>
 <div class="line"><span class="lineno">  188</span> </div>
@@ -227,21 +246,14 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  191</span>    <span class="comment">// must not allow the user to check the same value twice.</span></div>
 <div class="line"><span class="lineno">  192</span>    <span class="keywordflow">if</span> ((table[(*answer) - 1] != 0) &amp;&amp;</div>
 <div class="line"><span class="lineno">  193</span>        ((table[(*old_answer)] == 0) || (table[(*old_answer)] != 0))) {</div>
-<div class="line"><span class="lineno">  194</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nYou can&#39;t check the same value twice.\n\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  194</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\nYou can&#39;t check the same value twice.\n\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  195</span>        <a class="code hl_function" href="#adc62ebb75853446656e24932bdc6dd6b">reset_data</a>(table, answer, old_answer, memory_count);</div>
 <div class="line"><span class="lineno">  196</span>    }</div>
 <div class="line"><span class="lineno">  197</span>}</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="anamespacegames_1_1memory__game_html_a33167bb9cce6d527b478b4f6ae8c3f59"><div class="ttname"><a href="#a33167bb9cce6d527b478b4f6ae8c3f59">games::memory_game::is_number</a></div><div class="ttdeci">bool is_number(const T &amp;input)</div><div class="ttdoc">Utility function to verify if the given input is a number or not. This is very useful to prevent the ...</div><div class="ttdef"><b>Definition</b> memory_game.cpp:62</div></div>
-<div class="ttc" id="anamespacegames_1_1memory__game_html_ac589ef65abb0a6b9a7116ee0f9fd5280"><div class="ttname"><a href="#ac589ef65abb0a6b9a7116ee0f9fd5280">games::memory_game::print_table</a></div><div class="ttdeci">void print_table(const std::vector&lt; T &gt; &amp;table)</div><div class="ttdoc">Utility function to print the table.</div><div class="ttdef"><b>Definition</b> memory_game.cpp:123</div></div>
-<div class="ttc" id="anamespacegames_1_1memory__game_html_adc62ebb75853446656e24932bdc6dd6b"><div class="ttname"><a href="#adc62ebb75853446656e24932bdc6dd6b">games::memory_game::reset_data</a></div><div class="ttdeci">void reset_data(const std::vector&lt; T &gt; &amp;, int *, int *, int *)</div><div class="ttdoc">Utility function that resets the data if the user enters an invalid value.</div><div class="ttdef"><b>Definition</b> memory_game.cpp:211</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d41/namespacegames_1_1memory__game_a5714d97649c0edd57b4fb449799676a3_cgraph.svg" width="368" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="anamespacegames_1_1memory__game_html_a33167bb9cce6d527b478b4f6ae8c3f59"><div class="ttname"><a href="#a33167bb9cce6d527b478b4f6ae8c3f59">games::memory_game::is_number</a></div><div class="ttdeci">bool is_number(const T &amp;input)</div><div class="ttdoc">Utility function to verify if the given input is a number or not. This is very useful to prevent the ...</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d92/memory__game_8cpp_source.html#l00062">memory_game.cpp:62</a></div></div>
+<div class="ttc" id="anamespacegames_1_1memory__game_html_ac589ef65abb0a6b9a7116ee0f9fd5280"><div class="ttname"><a href="#ac589ef65abb0a6b9a7116ee0f9fd5280">games::memory_game::print_table</a></div><div class="ttdeci">void print_table(const std::vector&lt; T &gt; &amp;table)</div><div class="ttdoc">Utility function to print the table.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d92/memory__game_8cpp_source.html#l00123">memory_game.cpp:123</a></div></div>
+<div class="ttc" id="anamespacegames_1_1memory__game_html_adc62ebb75853446656e24932bdc6dd6b"><div class="ttname"><a href="#adc62ebb75853446656e24932bdc6dd6b">games::memory_game::reset_data</a></div><div class="ttdeci">void reset_data(const std::vector&lt; T &gt; &amp;, int *, int *, int *)</div><div class="ttdoc">Utility function that resets the data if the user enters an invalid value.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d92/memory__game_8cpp_source.html#l00211">memory_game.cpp:211</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3ceeea62d8fa6c563e2c66359fd73413" name="a3ceeea62d8fa6c563e2c66359fd73413"></a>
@@ -255,12 +267,12 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void games::memory_game::assign_results </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *</td>          <td class="paramname"><span class="paramname"><em>table_empty</em></span>, </td>
+          <td class="paramtype">std::vector&lt; T &gt; *</td>          <td class="paramname"><span class="paramname"><em>table_empty</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *</td>          <td class="paramname"><span class="paramname"><em>table</em></span>, </td>
+          <td class="paramtype">std::vector&lt; T &gt; *</td>          <td class="paramname"><span class="paramname"><em>table</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -304,6 +316,8 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d92/memory__game_8cpp_source.html#l00289">289</a> of file <a class="el" href="../../dd/d92/memory__game_8cpp_source.html">memory_game.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  291</span>                                       {</div>
 <div class="line"><span class="lineno">  292</span>    <span class="comment">// Search through the entire table and if the answer matches the index, show</span></div>
 <div class="line"><span class="lineno">  293</span>    <span class="comment">// the value. If it doesn&#39;t match, hide both the values. Don&#39;t forget to</span></div>
@@ -333,12 +347,12 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  317</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (i == (*table).size() - 1) {</div>
 <div class="line"><span class="lineno">  318</span>            <a class="code hl_function" href="#ac589ef65abb0a6b9a7116ee0f9fd5280">print_table</a>((*table));</div>
 <div class="line"><span class="lineno">  319</span> </div>
-<div class="line"><span class="lineno">  320</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n\nYou won. Congratulations! Do you want to play &quot;</span></div>
+<div class="line"><span class="lineno">  320</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;\n\nYou won. Congratulations! Do you want to play &quot;</span></div>
 <div class="line"><span class="lineno">  321</span>                         <span class="stringliteral">&quot;again? (y/n)\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  322</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div>
+<div class="line"><span class="lineno">  322</span>            std::cout</div>
 <div class="line"><span class="lineno">  323</span>                &lt;&lt; <span class="stringliteral">&quot;Size &quot;</span> &lt;&lt; (*table).size()</div>
 <div class="line"><span class="lineno">  324</span>                &lt;&lt; <span class="stringliteral">&quot; will be used. This can be changed by re-running the game.&quot;</span>;</div>
-<div class="line"><span class="lineno">  325</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; try_again;</div>
+<div class="line"><span class="lineno">  325</span>            std::cin &gt;&gt; try_again;</div>
 <div class="line"><span class="lineno">  326</span>            <span class="keywordflow">if</span> (try_again == <span class="charliteral">&#39;y&#39;</span>) {</div>
 <div class="line"><span class="lineno">  327</span>                <span class="comment">// This is needed when checking if the user has two matches</span></div>
 <div class="line"><span class="lineno">  328</span>                <span class="comment">// already.</span></div>
@@ -348,15 +362,15 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  332</span> </div>
 <div class="line"><span class="lineno">  333</span>                <a class="code hl_function" href="#ad573c8ae66ab66156d03e5e81bbba214">init</a>(table);</div>
 <div class="line"><span class="lineno">  334</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (try_again == <span class="charliteral">&#39;n&#39;</span>) {</div>
-<div class="line"><span class="lineno">  335</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nThanks for playing the game!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  335</span>                std::cout &lt;&lt; <span class="stringliteral">&quot;\nThanks for playing the game!\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  336</span>                <a class="code hl_function" href="../../dd/d92/memory__game_8cpp.html#a5bdc30951221eae9c33413ff9eb574f6">SLEEP</a>(3);</div>
 <div class="line"><span class="lineno">  337</span> </div>
-<div class="line"><span class="lineno">  338</span>                <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/program/exit.html">exit</a>(0);</div>
+<div class="line"><span class="lineno">  338</span>                exit(0);</div>
 <div class="line"><span class="lineno">  339</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  340</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nInvalid input (exitting...).\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  340</span>                std::cout &lt;&lt; <span class="stringliteral">&quot;\nInvalid input (exitting...).\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  341</span>                <a class="code hl_function" href="../../dd/d92/memory__game_8cpp.html#a5bdc30951221eae9c33413ff9eb574f6">SLEEP</a>(3);</div>
 <div class="line"><span class="lineno">  342</span> </div>
-<div class="line"><span class="lineno">  343</span>                <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/program/exit.html">exit</a>(0);</div>
+<div class="line"><span class="lineno">  343</span>                exit(0);</div>
 <div class="line"><span class="lineno">  344</span>            }</div>
 <div class="line"><span class="lineno">  345</span>        }</div>
 <div class="line"><span class="lineno">  346</span>    }</div>
@@ -366,18 +380,12 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  350</span>    <a class="code hl_function" href="#a3ceeea62d8fa6c563e2c66359fd73413">assign_results</a>(table_empty, table, answer, first_time, old_answer,</div>
 <div class="line"><span class="lineno">  351</span>                   memory_count);</div>
 <div class="line"><span class="lineno">  352</span>}</div>
-<div class="ttc" id="aexit_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/program/exit.html">std::exit</a></div><div class="ttdeci">T exit(T... args)</div></div>
-<div class="ttc" id="amemory__game_8cpp_html_a5bdc30951221eae9c33413ff9eb574f6"><div class="ttname"><a href="../../dd/d92/memory__game_8cpp.html#a5bdc30951221eae9c33413ff9eb574f6">SLEEP</a></div><div class="ttdeci">constexpr T SLEEP(T seconds)</div><div class="ttdoc">for sleep()</div><div class="ttdef"><b>Definition</b> memory_game.cpp:36</div></div>
-<div class="ttc" id="anamespacegames_1_1memory__game_html_a370760f2b328ad341bcb77d82fa17b01"><div class="ttname"><a href="#a370760f2b328ad341bcb77d82fa17b01">games::memory_game::match</a></div><div class="ttdeci">bool match(const std::vector&lt; T &gt; &amp;table, std::vector&lt; T &gt; *table_empty, const int &amp;answer, bool *first_time, int *old_answer, int *memory_count)</div><div class="ttdoc">Checks if the two values given by the user match.</div><div class="ttdef"><b>Definition</b> memory_game.cpp:235</div></div>
-<div class="ttc" id="anamespacegames_1_1memory__game_html_a3ceeea62d8fa6c563e2c66359fd73413"><div class="ttname"><a href="#a3ceeea62d8fa6c563e2c66359fd73413">games::memory_game::assign_results</a></div><div class="ttdeci">void assign_results(std::vector&lt; T &gt; *table_empty, std::vector&lt; T &gt; *table, int *answer, bool *first_time, int *old_answer, int *memory_count)</div><div class="ttdoc">Function to assign the results to the table.</div><div class="ttdef"><b>Definition</b> memory_game.cpp:289</div></div>
-<div class="ttc" id="anamespacegames_1_1memory__game_html_a5714d97649c0edd57b4fb449799676a3"><div class="ttname"><a href="#a5714d97649c0edd57b4fb449799676a3">games::memory_game::ask_data</a></div><div class="ttdeci">void ask_data(const std::vector&lt; T &gt; &amp;table, int *answer, int *old_answer, int *memory_count)</div><div class="ttdoc">Function that asks the user for their input in the table they previously chose.</div><div class="ttdef"><b>Definition</b> memory_game.cpp:161</div></div>
-<div class="ttc" id="anamespacegames_1_1memory__game_html_ad573c8ae66ab66156d03e5e81bbba214"><div class="ttname"><a href="#ad573c8ae66ab66156d03e5e81bbba214">games::memory_game::init</a></div><div class="ttdeci">void init(std::vector&lt; T &gt; *table)</div><div class="ttdoc">Initializes the table with the letters.</div><div class="ttdef"><b>Definition</b> memory_game.cpp:80</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d41/namespacegames_1_1memory__game_a3ceeea62d8fa6c563e2c66359fd73413_cgraph.svg" width="570" height="430"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="amemory__game_8cpp_html_a5bdc30951221eae9c33413ff9eb574f6"><div class="ttname"><a href="../../dd/d92/memory__game_8cpp.html#a5bdc30951221eae9c33413ff9eb574f6">SLEEP</a></div><div class="ttdeci">constexpr T SLEEP(T seconds)</div><div class="ttdoc">for sleep()</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d92/memory__game_8cpp_source.html#l00036">memory_game.cpp:36</a></div></div>
+<div class="ttc" id="anamespacegames_1_1memory__game_html_a370760f2b328ad341bcb77d82fa17b01"><div class="ttname"><a href="#a370760f2b328ad341bcb77d82fa17b01">games::memory_game::match</a></div><div class="ttdeci">bool match(const std::vector&lt; T &gt; &amp;table, std::vector&lt; T &gt; *table_empty, const int &amp;answer, bool *first_time, int *old_answer, int *memory_count)</div><div class="ttdoc">Checks if the two values given by the user match.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d92/memory__game_8cpp_source.html#l00235">memory_game.cpp:235</a></div></div>
+<div class="ttc" id="anamespacegames_1_1memory__game_html_a3ceeea62d8fa6c563e2c66359fd73413"><div class="ttname"><a href="#a3ceeea62d8fa6c563e2c66359fd73413">games::memory_game::assign_results</a></div><div class="ttdeci">void assign_results(std::vector&lt; T &gt; *table_empty, std::vector&lt; T &gt; *table, int *answer, bool *first_time, int *old_answer, int *memory_count)</div><div class="ttdoc">Function to assign the results to the table.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d92/memory__game_8cpp_source.html#l00289">memory_game.cpp:289</a></div></div>
+<div class="ttc" id="anamespacegames_1_1memory__game_html_a5714d97649c0edd57b4fb449799676a3"><div class="ttname"><a href="#a5714d97649c0edd57b4fb449799676a3">games::memory_game::ask_data</a></div><div class="ttdeci">void ask_data(const std::vector&lt; T &gt; &amp;table, int *answer, int *old_answer, int *memory_count)</div><div class="ttdoc">Function that asks the user for their input in the table they previously chose.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d92/memory__game_8cpp_source.html#l00161">memory_game.cpp:161</a></div></div>
+<div class="ttc" id="anamespacegames_1_1memory__game_html_ad573c8ae66ab66156d03e5e81bbba214"><div class="ttname"><a href="#ad573c8ae66ab66156d03e5e81bbba214">games::memory_game::init</a></div><div class="ttdeci">void init(std::vector&lt; T &gt; *table)</div><div class="ttdoc">Initializes the table with the letters.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d92/memory__game_8cpp_source.html#l00080">memory_game.cpp:80</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad573c8ae66ab66156d03e5e81bbba214" name="ad573c8ae66ab66156d03e5e81bbba214"></a>
@@ -391,7 +399,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void games::memory_game::init </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *</td>          <td class="paramname"><span class="paramname"><em>table</em></span></td><td>)</td>
+          <td class="paramtype">std::vector&lt; T &gt; *</td>          <td class="paramname"><span class="paramname"><em>table</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -411,8 +419,10 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d92/memory__game_8cpp_source.html#l00080">80</a> of file <a class="el" href="../../dd/d92/memory__game_8cpp_source.html">memory_game.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   80</span>                               {</div>
-<div class="line"><span class="lineno">   81</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;char&gt;</a> letters(7);</div>
+<div class="line"><span class="lineno">   81</span>    std::vector&lt;char&gt; letters(7);</div>
 <div class="line"><span class="lineno">   82</span> </div>
 <div class="line"><span class="lineno">   83</span>    <span class="comment">// Decrease / increase the number of letters depending on the size.</span></div>
 <div class="line"><span class="lineno">   84</span>    <span class="keywordflow">if</span> ((*table).size() == 10) {  <span class="comment">// 5x2</span></div>
@@ -423,42 +433,30 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">   89</span>        letters = {<span class="charliteral">&#39;A&#39;</span>, <span class="charliteral">&#39;E&#39;</span>, <span class="charliteral">&#39;Z&#39;</span>, <span class="charliteral">&#39;P&#39;</span>, <span class="charliteral">&#39;D&#39;</span>, <span class="charliteral">&#39;B&#39;</span>, <span class="charliteral">&#39;M&#39;</span>};</div>
 <div class="line"><span class="lineno">   90</span>    }</div>
 <div class="line"><span class="lineno">   91</span> </div>
-<div class="line"><span class="lineno">   92</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;char&gt;</a> pairs;</div>
+<div class="line"><span class="lineno">   92</span>    std::vector&lt;char&gt; pairs;</div>
 <div class="line"><span class="lineno">   93</span>    <span class="keywordflow">for</span> (<span class="keywordtype">char</span> letter : letters) {</div>
-<div class="line"><span class="lineno">   94</span>        pairs.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(letter);</div>
-<div class="line"><span class="lineno">   95</span>        pairs.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(letter);</div>
+<div class="line"><span class="lineno">   94</span>        pairs.push_back(letter);</div>
+<div class="line"><span class="lineno">   95</span>        pairs.push_back(letter);</div>
 <div class="line"><span class="lineno">   96</span>    }</div>
 <div class="line"><span class="lineno">   97</span> </div>
-<div class="line"><span class="lineno">   98</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/random_shuffle.html">std::shuffle</a>(pairs.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), pairs.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>(),</div>
-<div class="line"><span class="lineno">   99</span>                 <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/mersenne_twister_engine.html">std::mt19937</a>(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/random_device.html">std::random_device</a>()()));</div>
+<div class="line"><span class="lineno">   98</span>    std::shuffle(pairs.begin(), pairs.end(),</div>
+<div class="line"><span class="lineno">   99</span>                 std::mt19937(std::random_device()()));</div>
 <div class="line"><span class="lineno">  100</span> </div>
 <div class="line"><span class="lineno">  101</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; (*table).size(); i++) {</div>
 <div class="line"><span class="lineno">  102</span>        (*table)[i] = pairs[i];</div>
 <div class="line"><span class="lineno">  103</span>    }</div>
 <div class="line"><span class="lineno">  104</span> </div>
-<div class="line"><span class="lineno">  105</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All available types are: &quot;</span>;</div>
+<div class="line"><span class="lineno">  105</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All available types are: &quot;</span>;</div>
 <div class="line"><span class="lineno">  106</span> </div>
 <div class="line"><span class="lineno">  107</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; letters.size(); i++) {</div>
 <div class="line"><span class="lineno">  108</span>        <span class="keywordflow">if</span> (i == letters.size() - 1) {</div>
-<div class="line"><span class="lineno">  109</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;and &quot;</span> &lt;&lt; letters[i] &lt;&lt; <span class="stringliteral">&quot;.\n\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  109</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;and &quot;</span> &lt;&lt; letters[i] &lt;&lt; <span class="stringliteral">&quot;.\n\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  110</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  111</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; letters[i] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
+<div class="line"><span class="lineno">  111</span>            std::cout &lt;&lt; letters[i] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
 <div class="line"><span class="lineno">  112</span>        }</div>
 <div class="line"><span class="lineno">  113</span>    }</div>
 <div class="line"><span class="lineno">  114</span>}</div>
-<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/begin.html">std::vector::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/end.html">std::vector::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="amersenne_twister_engine_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/mersenne_twister_engine.html">std::mt19937</a></div></div>
-<div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
-<div class="ttc" id="arandom_device_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/random_device.html">std::random_device</a></div></div>
-<div class="ttc" id="arandom_shuffle_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/random_shuffle.html">std::shuffle</a></div><div class="ttdeci">T shuffle(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d41/namespacegames_1_1memory__game_ad573c8ae66ab66156d03e5e81bbba214_cgraph.svg" width="368" height="234"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a33167bb9cce6d527b478b4f6ae8c3f59" name="a33167bb9cce6d527b478b4f6ae8c3f59"></a>
@@ -494,10 +492,12 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>false if the input IS empty or if it contains a non-digit character </dd>
 <dd>
 true if the input is NOT empty and if it contains only digit characters </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d92/memory__game_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../dd/d92/memory__game_8cpp_source.html">memory_game.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   62</span>                               {</div>
-<div class="line"><span class="lineno">   63</span>    <span class="keywordflow">if</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a>.fail()) {</div>
-<div class="line"><span class="lineno">   64</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a>.clear();</div>
-<div class="line"><span class="lineno">   65</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a>.ignore(256, <span class="charliteral">&#39;\n&#39;</span>);</div>
+<div class="line"><span class="lineno">   63</span>    <span class="keywordflow">if</span> (std::cin.fail()) {</div>
+<div class="line"><span class="lineno">   64</span>        std::cin.clear();</div>
+<div class="line"><span class="lineno">   65</span>        std::cin.ignore(256, <span class="charliteral">&#39;\n&#39;</span>);</div>
 <div class="line"><span class="lineno">   66</span> </div>
 <div class="line"><span class="lineno">   67</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   68</span>    }</div>
@@ -518,12 +518,12 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">bool games::memory_game::match </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>table</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>table</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *</td>          <td class="paramname"><span class="paramname"><em>table_empty</em></span>, </td>
+          <td class="paramtype">std::vector&lt; T &gt; *</td>          <td class="paramname"><span class="paramname"><em>table_empty</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -569,6 +569,8 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>true IF the values given by the user match </dd>
 <dd>
 false if the values given by the user do NOT match </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d92/memory__game_8cpp_source.html#l00235">235</a> of file <a class="el" href="../../dd/d92/memory__game_8cpp_source.html">memory_game.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  237</span>                              {</div>
 <div class="line"><span class="lineno">  238</span>    <span class="keywordflow">if</span> ((*first_time) == <span class="keyword">true</span>) {</div>
 <div class="line"><span class="lineno">  239</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -585,7 +587,7 @@ false if the values given by the user do NOT match </dd></dl>
 <div class="line"><span class="lineno">  250</span>                (*old_answer) = 0;</div>
 <div class="line"><span class="lineno">  251</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  252</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  253</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nNo match (value was &quot;</span> &lt;&lt; table[i - 1]</div>
+<div class="line"><span class="lineno">  253</span>                std::cout &lt;&lt; <span class="stringliteral">&quot;\nNo match (value was &quot;</span> &lt;&lt; table[i - 1]</div>
 <div class="line"><span class="lineno">  254</span>                          &lt;&lt; <span class="stringliteral">&quot;, index is &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;).\n\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  255</span> </div>
 <div class="line"><span class="lineno">  256</span>                (*table_empty)[(*old_answer) - 1] = 0;</div>
@@ -616,7 +618,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void games::memory_game::print_table </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>table</em></span></td><td>)</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>table</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -636,9 +638,11 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d92/memory__game_8cpp_source.html#l00123">123</a> of file <a class="el" href="../../dd/d92/memory__game_8cpp_source.html">memory_game.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  123</span>                                            {</div>
-<div class="line"><span class="lineno">  124</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;| &quot;</span>;</div>
-<div class="line"><span class="lineno">  125</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> table_print(table.size());</div>
+<div class="line"><span class="lineno">  124</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;| &quot;</span>;</div>
+<div class="line"><span class="lineno">  125</span>    std::vector&lt;T&gt; table_print(table.size());</div>
 <div class="line"><span class="lineno">  126</span> </div>
 <div class="line"><span class="lineno">  127</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; table.size(); i++) {</div>
 <div class="line"><span class="lineno">  128</span>        table_print[i] = <span class="charliteral">&#39; &#39;</span>;</div>
@@ -650,10 +654,10 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  134</span> </div>
 <div class="line"><span class="lineno">  135</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; table.size(); i++) {</div>
 <div class="line"><span class="lineno">  136</span>        <span class="keywordflow">if</span> (i % 5 == 0 &amp;&amp; i != 0) {</div>
-<div class="line"><span class="lineno">  137</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n| &quot;</span>;</div>
+<div class="line"><span class="lineno">  137</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;\n| &quot;</span>;</div>
 <div class="line"><span class="lineno">  138</span>        }</div>
 <div class="line"><span class="lineno">  139</span> </div>
-<div class="line"><span class="lineno">  140</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; table_print[i] &lt;&lt; <span class="stringliteral">&quot; | &quot;</span>;</div>
+<div class="line"><span class="lineno">  140</span>        std::cout &lt;&lt; table_print[i] &lt;&lt; <span class="stringliteral">&quot; | &quot;</span>;</div>
 <div class="line"><span class="lineno">  141</span>    }</div>
 <div class="line"><span class="lineno">  142</span>}</div>
 </div><!-- fragment -->
@@ -670,7 +674,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void games::memory_game::reset_data </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>table</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>table</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -707,18 +711,15 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d92/memory__game_8cpp_source.html#l00211">211</a> of file <a class="el" href="../../dd/d92/memory__game_8cpp_source.html">memory_game.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  212</span>                                   {</div>
 <div class="line"><span class="lineno">  213</span>    (*answer) = (*old_answer);</div>
 <div class="line"><span class="lineno">  214</span>    (*memory_count)--;</div>
 <div class="line"><span class="lineno">  215</span> </div>
 <div class="line"><span class="lineno">  216</span>    <a class="code hl_function" href="#a5714d97649c0edd57b4fb449799676a3">ask_data</a>(table, answer, old_answer, memory_count);</div>
 <div class="line"><span class="lineno">  217</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d41/namespacegames_1_1memory__game_adc62ebb75853446656e24932bdc6dd6b_cgraph.svg" width="570" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: Graph Class Reference</title>
+<title>TheAlgorithms/C++: Graph Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -141,13 +158,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab08a73091aea1a70c34cd15200401596" id="r_ab08a73091aea1a70c34cd15200401596"><td class="memItemLeft" align="right" valign="top"><a id="ab08a73091aea1a70c34cd15200401596" name="ab08a73091aea1a70c34cd15200401596"></a>
 <a class="el" href="../../da/d9a/class_graph.html">Graph</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="../../da/d9a/class_graph.html">Graph</a> const &amp;)=default</td></tr>
 <tr class="separator:ab08a73091aea1a70c34cd15200401596"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcbd1b60cab30b97c54d700eee8e456d" id="r_adcbd1b60cab30b97c54d700eee8e456d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcbd1b60cab30b97c54d700eee8e456d">Graph</a> (unsigned int vertices, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">AdjList</a> adjList)</td></tr>
+<tr class="memitem:adcbd1b60cab30b97c54d700eee8e456d" id="r_adcbd1b60cab30b97c54d700eee8e456d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcbd1b60cab30b97c54d700eee8e456d">Graph</a> (unsigned int vertices, AdjList adjList)</td></tr>
 <tr class="separator:adcbd1b60cab30b97c54d700eee8e456d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c95e00effaea0cd9404dd74cd802ae3" id="r_a8c95e00effaea0cd9404dd74cd802ae3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c95e00effaea0cd9404dd74cd802ae3">Graph</a> (unsigned int vertices, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">AdjList</a> &amp;&amp;adjList)</td></tr>
+<tr class="memitem:a8c95e00effaea0cd9404dd74cd802ae3" id="r_a8c95e00effaea0cd9404dd74cd802ae3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c95e00effaea0cd9404dd74cd802ae3">Graph</a> (unsigned int vertices, AdjList &amp;&amp;adjList)</td></tr>
 <tr class="separator:a8c95e00effaea0cd9404dd74cd802ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa99d44d3179d5bbbfa84a5031cf80cb1" id="r_aa99d44d3179d5bbbfa84a5031cf80cb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa99d44d3179d5bbbfa84a5031cf80cb1">Graph</a> (unsigned int vertices, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../d7/d77/class_edge.html">Edge</a> &gt; const &amp;edges)</td></tr>
+<tr class="memitem:aa99d44d3179d5bbbfa84a5031cf80cb1" id="r_aa99d44d3179d5bbbfa84a5031cf80cb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa99d44d3179d5bbbfa84a5031cf80cb1">Graph</a> (unsigned int vertices, std::vector&lt; <a class="el" href="../../d7/d77/class_edge.html">Edge</a> &gt; const &amp;edges)</td></tr>
 <tr class="separator:aa99d44d3179d5bbbfa84a5031cf80cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a090e1a63a5c47bdd1a539b21f7fd1d" id="r_a5a090e1a63a5c47bdd1a539b21f7fd1d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/remove_reference.html">std::remove_reference</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">AdjList</a> &gt;::type const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a090e1a63a5c47bdd1a539b21f7fd1d">getAdjList</a> () const</td></tr>
+<tr class="memitem:a5a090e1a63a5c47bdd1a539b21f7fd1d" id="r_a5a090e1a63a5c47bdd1a539b21f7fd1d"><td class="memItemLeft" align="right" valign="top">std::remove_reference&lt; AdjList &gt;::type const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a090e1a63a5c47bdd1a539b21f7fd1d">getAdjList</a> () const</td></tr>
 <tr class="separator:a5a090e1a63a5c47bdd1a539b21f7fd1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dcb5ce0b4a6f65827f5055d9d53a3f1" id="r_a8dcb5ce0b4a6f65827f5055d9d53a3f1"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8dcb5ce0b4a6f65827f5055d9d53a3f1">getVertices</a> () const</td></tr>
 <tr class="separator:a8dcb5ce0b4a6f65827f5055d9d53a3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,17 +183,13 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a6afcd41564ea00294a4c089414979ca1" id="r_a6afcd41564ea00294a4c089414979ca1"><td class="memItemLeft" align="right" valign="top"><a id="a6afcd41564ea00294a4c089414979ca1" name="a6afcd41564ea00294a4c089414979ca1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>vertexNum</b></td></tr>
+<tr class="memitem:a6afcd41564ea00294a4c089414979ca1" id="r_a6afcd41564ea00294a4c089414979ca1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6afcd41564ea00294a4c089414979ca1">vertexNum</a></td></tr>
 <tr class="separator:a6afcd41564ea00294a4c089414979ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10ff9c6c323cf435f18e424dbb62235e" id="r_a10ff9c6c323cf435f18e424dbb62235e"><td class="memItemLeft" align="right" valign="top"><a id="a10ff9c6c323cf435f18e424dbb62235e" name="a10ff9c6c323cf435f18e424dbb62235e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>edgeNum</b></td></tr>
+<tr class="memitem:a10ff9c6c323cf435f18e424dbb62235e" id="r_a10ff9c6c323cf435f18e424dbb62235e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10ff9c6c323cf435f18e424dbb62235e">edgeNum</a></td></tr>
 <tr class="separator:a10ff9c6c323cf435f18e424dbb62235e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28d19ea9c7d111f55fee78331abe88bd" id="r_a28d19ea9c7d111f55fee78331abe88bd"><td class="memItemLeft" align="right" valign="top"><a id="a28d19ea9c7d111f55fee78331abe88bd" name="a28d19ea9c7d111f55fee78331abe88bd"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../d7/d77/class_edge.html">Edge</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>edges</b></td></tr>
+<tr class="memitem:a28d19ea9c7d111f55fee78331abe88bd" id="r_a28d19ea9c7d111f55fee78331abe88bd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d7/d77/class_edge.html">Edge</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28d19ea9c7d111f55fee78331abe88bd">edges</a></td></tr>
 <tr class="separator:a28d19ea9c7d111f55fee78331abe88bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a268ba18d421817ad8713c2e92f19d82a" id="r_a268ba18d421817ad8713c2e92f19d82a"><td class="memItemLeft" align="right" valign="top"><a id="a268ba18d421817ad8713c2e92f19d82a" name="a268ba18d421817ad8713c2e92f19d82a"></a>
-int **&#160;</td><td class="memItemRight" valign="bottom"><b>edges</b></td></tr>
+<tr class="memitem:a268ba18d421817ad8713c2e92f19d82a" id="r_a268ba18d421817ad8713c2e92f19d82a"><td class="memItemLeft" align="right" valign="top">int **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a268ba18d421817ad8713c2e92f19d82a">edges</a></td></tr>
 <tr class="separator:a268ba18d421817ad8713c2e92f19d82a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -186,46 +199,36 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a61943646676002a5e75f7b6493c25713" id="r_a61943646676002a5e75f7b6493c25713"><td class="memItemLeft" align="right" valign="top"><a id="a61943646676002a5e75f7b6493c25713" name="a61943646676002a5e75f7b6493c25713"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>m_vertices</b> = 0</td></tr>
+<tr class="memitem:a61943646676002a5e75f7b6493c25713" id="r_a61943646676002a5e75f7b6493c25713"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61943646676002a5e75f7b6493c25713">m_vertices</a> = 0</td></tr>
 <tr class="separator:a61943646676002a5e75f7b6493c25713"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13697caf8be6275ebb7b9497c9a9d6e5" id="r_a13697caf8be6275ebb7b9497c9a9d6e5"><td class="memItemLeft" align="right" valign="top"><a id="a13697caf8be6275ebb7b9497c9a9d6e5" name="a13697caf8be6275ebb7b9497c9a9d6e5"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">AdjList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_adjList</b></td></tr>
+<tr class="memitem:a13697caf8be6275ebb7b9497c9a9d6e5" id="r_a13697caf8be6275ebb7b9497c9a9d6e5"><td class="memItemLeft" align="right" valign="top">AdjList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13697caf8be6275ebb7b9497c9a9d6e5">m_adjList</a></td></tr>
 <tr class="separator:a13697caf8be6275ebb7b9497c9a9d6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92a601c0ada840011e2719cb753b490b" id="r_a92a601c0ada840011e2719cb753b490b"><td class="memItemLeft" align="right" valign="top"><a id="a92a601c0ada840011e2719cb753b490b" name="a92a601c0ada840011e2719cb753b490b"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>residual_capacity</b></td></tr>
+<tr class="memitem:a92a601c0ada840011e2719cb753b490b" id="r_a92a601c0ada840011e2719cb753b490b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92a601c0ada840011e2719cb753b490b">residual_capacity</a></td></tr>
 <tr class="separator:a92a601c0ada840011e2719cb753b490b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a34b80e2f3749992e0e9b83de742fba" id="r_a8a34b80e2f3749992e0e9b83de742fba"><td class="memItemLeft" align="right" valign="top"><a id="a8a34b80e2f3749992e0e9b83de742fba" name="a8a34b80e2f3749992e0e9b83de742fba"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>capacity</b></td></tr>
+<tr class="memitem:a8a34b80e2f3749992e0e9b83de742fba" id="r_a8a34b80e2f3749992e0e9b83de742fba"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a34b80e2f3749992e0e9b83de742fba">capacity</a></td></tr>
 <tr class="separator:a8a34b80e2f3749992e0e9b83de742fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae93ae98711b868af601d424954fe94ac" id="r_ae93ae98711b868af601d424954fe94ac"><td class="memItemLeft" align="right" valign="top"><a id="ae93ae98711b868af601d424954fe94ac" name="ae93ae98711b868af601d424954fe94ac"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>total_nodes</b> = 0</td></tr>
+<tr class="memitem:ae93ae98711b868af601d424954fe94ac" id="r_ae93ae98711b868af601d424954fe94ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae93ae98711b868af601d424954fe94ac">total_nodes</a> = 0</td></tr>
 <tr class="separator:ae93ae98711b868af601d424954fe94ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad621c5393837c21780ff3477431707ac" id="r_ad621c5393837c21780ff3477431707ac"><td class="memItemLeft" align="right" valign="top"><a id="ad621c5393837c21780ff3477431707ac" name="ad621c5393837c21780ff3477431707ac"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>total_edges</b> = 0</td></tr>
+<tr class="memitem:ad621c5393837c21780ff3477431707ac" id="r_ad621c5393837c21780ff3477431707ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad621c5393837c21780ff3477431707ac">total_edges</a> = 0</td></tr>
 <tr class="separator:ad621c5393837c21780ff3477431707ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9912e31b32405d21a4c22a9ab8dece30" id="r_a9912e31b32405d21a4c22a9ab8dece30"><td class="memItemLeft" align="right" valign="top"><a id="a9912e31b32405d21a4c22a9ab8dece30" name="a9912e31b32405d21a4c22a9ab8dece30"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>source</b> = 0</td></tr>
+<tr class="memitem:a9912e31b32405d21a4c22a9ab8dece30" id="r_a9912e31b32405d21a4c22a9ab8dece30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9912e31b32405d21a4c22a9ab8dece30">source</a> = 0</td></tr>
 <tr class="separator:a9912e31b32405d21a4c22a9ab8dece30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47336f7cfe4698ef887a34e03f1a3856" id="r_a47336f7cfe4698ef887a34e03f1a3856"><td class="memItemLeft" align="right" valign="top"><a id="a47336f7cfe4698ef887a34e03f1a3856" name="a47336f7cfe4698ef887a34e03f1a3856"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sink</b> = 0</td></tr>
+<tr class="memitem:a47336f7cfe4698ef887a34e03f1a3856" id="r_a47336f7cfe4698ef887a34e03f1a3856"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47336f7cfe4698ef887a34e03f1a3856">sink</a> = 0</td></tr>
 <tr class="separator:a47336f7cfe4698ef887a34e03f1a3856"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9474bfdf769cc0d23f5b16c181a29431" id="r_a9474bfdf769cc0d23f5b16c181a29431"><td class="memItemLeft" align="right" valign="top"><a id="a9474bfdf769cc0d23f5b16c181a29431" name="a9474bfdf769cc0d23f5b16c181a29431"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>parent</b></td></tr>
+<tr class="memitem:a9474bfdf769cc0d23f5b16c181a29431" id="r_a9474bfdf769cc0d23f5b16c181a29431"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9474bfdf769cc0d23f5b16c181a29431">parent</a></td></tr>
 <tr class="separator:a9474bfdf769cc0d23f5b16c181a29431"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73268574e2528b8e760191113ef6d1eb" id="r_a73268574e2528b8e760191113ef6d1eb"><td class="memItemLeft" align="right" valign="top"><a id="a73268574e2528b8e760191113ef6d1eb" name="a73268574e2528b8e760191113ef6d1eb"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/tuple.html">std::tuple</a>&lt; int, int, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>edge_participated</b></td></tr>
+<tr class="memitem:a73268574e2528b8e760191113ef6d1eb" id="r_a73268574e2528b8e760191113ef6d1eb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::tuple&lt; int, int, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73268574e2528b8e760191113ef6d1eb">edge_participated</a></td></tr>
 <tr class="separator:a73268574e2528b8e760191113ef6d1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1abf6ea5346e12dea4df46262ff35aa" id="r_af1abf6ea5346e12dea4df46262ff35aa"><td class="memItemLeft" align="right" valign="top"><a id="af1abf6ea5346e12dea4df46262ff35aa" name="af1abf6ea5346e12dea4df46262ff35aa"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/bitset.html">std::bitset</a>&lt; MAXN &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>visited</b></td></tr>
+<tr class="memitem:af1abf6ea5346e12dea4df46262ff35aa" id="r_af1abf6ea5346e12dea4df46262ff35aa"><td class="memItemLeft" align="right" valign="top">std::bitset&lt; MAXN &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1abf6ea5346e12dea4df46262ff35aa">visited</a></td></tr>
 <tr class="separator:af1abf6ea5346e12dea4df46262ff35aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0aaff1a0c13bdf209ea40b83ac01ae6" id="r_aa0aaff1a0c13bdf209ea40b83ac01ae6"><td class="memItemLeft" align="right" valign="top"><a id="aa0aaff1a0c13bdf209ea40b83ac01ae6" name="aa0aaff1a0c13bdf209ea40b83ac01ae6"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td></tr>
+<tr class="memitem:aa0aaff1a0c13bdf209ea40b83ac01ae6" id="r_aa0aaff1a0c13bdf209ea40b83ac01ae6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0aaff1a0c13bdf209ea40b83ac01ae6">max_flow</a> = 0</td></tr>
 <tr class="separator:aa0aaff1a0c13bdf209ea40b83ac01ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of graph class.</p>
 <p>The graph will be represented using Adjacency List representation. This class contains 2 data members "m_vertices" &amp; "m_adjList" used to represent the number of vertices and adjacency list of the graph respectively. The vertices are labelled 0 - (m_vertices - 1). </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d14/bellman__ford_8cpp_source.html#l00014">14</a> of file <a class="el" href="../../df/d14/bellman__ford_8cpp_source.html">bellman_ford.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad3b98f95ee53f91afad11b8eaddc35e0" name="ad3b98f95ee53f91afad11b8eaddc35e0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad3b98f95ee53f91afad11b8eaddc35e0">&#9670;&#160;</a></span>Graph() <span class="overload">[1/6]</span></h2>
@@ -253,12 +256,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d14/bellman__ford_8cpp_source.html#l00020">20</a> of file <a class="el" href="../../df/d14/bellman__ford_8cpp_source.html">bellman_ford.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   20</span>                        {</div>
 <div class="line"><span class="lineno">   21</span>        this-&gt;vertexNum = V;</div>
 <div class="line"><span class="lineno">   22</span>        this-&gt;edgeNum = E;</div>
-<div class="line"><span class="lineno">   23</span>        this-&gt;edges.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/reserve.html">reserve</a>(E);</div>
+<div class="line"><span class="lineno">   23</span>        this-&gt;edges.reserve(E);</div>
 <div class="line"><span class="lineno">   24</span>    }</div>
-<div class="ttc" id="areserve_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/reserve.html">std::vector::reserve</a></div><div class="ttdeci">T reserve(T... args)</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -284,6 +288,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d31/floyd__warshall_8cpp_source.html#l00017">17</a> of file <a class="el" href="../../df/d31/floyd__warshall_8cpp_source.html">floyd_warshall.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   17</span>                 {</div>
 <div class="line"><span class="lineno">   18</span>        this-&gt;vertexNum = V;</div>
 <div class="line"><span class="lineno">   19</span>        this-&gt;edges = <span class="keyword">new</span> <span class="keywordtype">int</span> *[V];</div>
@@ -318,6 +324,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d31/floyd__warshall_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../df/d31/floyd__warshall_8cpp_source.html">floyd_warshall.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   27</span>             {</div>
 <div class="line"><span class="lineno">   28</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; vertexNum; i++) {</div>
 <div class="line"><span class="lineno">   29</span>            <span class="keyword">delete</span>[] edges[i];</div>
@@ -349,6 +357,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dec/cycle__check__directed__graph_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../d3/dec/cycle__check__directed__graph_8cpp_source.html">cycle_check_directed_graph.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   57</span>: m_adjList({}) {}</div>
 </div><!-- fragment -->
 </div>
@@ -370,7 +380,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">AdjList</a></td>          <td class="paramname"><span class="paramname"><em>adjList</em></span>&#160;)</td>
+          <td class="paramtype">AdjList</td>          <td class="paramname"><span class="paramname"><em>adjList</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -387,8 +397,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   70</span>        : m_vertices(vertices), m_adjList(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(adjList)) {}</div>
-<div class="ttc" id="amove_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a></div><div class="ttdeci">T move(T... args)</div></div>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dec/cycle__check__directed__graph_8cpp_source.html#l00069">69</a> of file <a class="el" href="../../d3/dec/cycle__check__directed__graph_8cpp_source.html">cycle_check_directed_graph.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>        : m_vertices(vertices), m_adjList(std::move(adjList)) {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -409,7 +420,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">AdjList</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>adjList</em></span>&#160;)</td>
+          <td class="paramtype">AdjList &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>adjList</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -426,7 +437,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   78</span>        : m_vertices(vertices), m_adjList(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(adjList)) {}</div>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dec/cycle__check__directed__graph_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../d3/dec/cycle__check__directed__graph_8cpp_source.html">cycle_check_directed_graph.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   78</span>        : m_vertices(vertices), m_adjList(std::move(adjList)) {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -447,7 +460,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../d7/d77/class_edge.html">Edge</a> &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>edges</em></span>&#160;)</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="../../d7/d77/class_edge.html">Edge</a> &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>edges</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -465,16 +478,17 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dec/cycle__check__directed__graph_8cpp_source.html#l00089">89</a> of file <a class="el" href="../../d3/dec/cycle__check__directed__graph_8cpp_source.html">cycle_check_directed_graph.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   90</span>        : m_vertices(vertices) {</div>
 <div class="line"><span class="lineno">   91</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; edge : edges) {</div>
 <div class="line"><span class="lineno">   92</span>            <span class="keywordflow">if</span> (edge.src &gt;= vertices || edge.dest &gt;= vertices) {</div>
-<div class="line"><span class="lineno">   93</span>                <span class="keywordflow">throw</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/range_error.html">std::range_error</a>(</div>
+<div class="line"><span class="lineno">   93</span>                <span class="keywordflow">throw</span> std::range_error(</div>
 <div class="line"><span class="lineno">   94</span>                    <span class="stringliteral">&quot;Either src or dest of edge out of range&quot;</span>);</div>
 <div class="line"><span class="lineno">   95</span>            }</div>
 <div class="line"><span class="lineno">   96</span>            m_adjList[edge.src].emplace_back(edge.dest);</div>
 <div class="line"><span class="lineno">   97</span>        }</div>
 <div class="line"><span class="lineno">   98</span>    }</div>
-<div class="ttc" id="arange_error_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/error/range_error.html">std::range_error</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -508,9 +522,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dec/cycle__check__directed__graph_8cpp_source.html#l00125">125</a> of file <a class="el" href="../../d3/dec/cycle__check__directed__graph_8cpp_source.html">cycle_check_directed_graph.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  125</span>                                   {</div>
 <div class="line"><span class="lineno">  126</span>        <span class="keywordflow">if</span> (edge.src &gt;= m_vertices || edge.dest &gt;= m_vertices) {</div>
-<div class="line"><span class="lineno">  127</span>            <span class="keywordflow">throw</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/range_error.html">std::range_error</a>(<span class="stringliteral">&quot;Either src or dest of edge out of range&quot;</span>);</div>
+<div class="line"><span class="lineno">  127</span>            <span class="keywordflow">throw</span> std::range_error(<span class="stringliteral">&quot;Either src or dest of edge out of range&quot;</span>);</div>
 <div class="line"><span class="lineno">  128</span>        }</div>
 <div class="line"><span class="lineno">  129</span>        m_adjList[edge.src].emplace_back(edge.dest);</div>
 <div class="line"><span class="lineno">  130</span>    }</div>
@@ -548,6 +564,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d14/bellman__ford_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../df/d14/bellman__ford_8cpp_source.html">bellman_ford.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   27</span>                                               {</div>
 <div class="line"><span class="lineno">   28</span>        <span class="keyword">static</span> <span class="keywordtype">int</span> edgeInd = 0;</div>
 <div class="line"><span class="lineno">   29</span>        <span class="keywordflow">if</span> (edgeInd &lt; this-&gt;edgeNum) {</div>
@@ -558,7 +576,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
 <div class="line"><span class="lineno">   34</span>            this-&gt;edges[edgeInd++] = newEdge;</div>
 <div class="line"><span class="lineno">   35</span>        }</div>
 <div class="line"><span class="lineno">   36</span>    }</div>
-<div class="ttc" id="aclass_edge_html"><div class="ttname"><a href="../../d7/d77/class_edge.html">Edge</a></div><div class="ttdef"><b>Definition</b> bellman_ford.cpp:8</div></div>
+<div class="ttc" id="aclass_edge_html"><div class="ttname"><a href="../../d7/d77/class_edge.html">Edge</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d14/bellman__ford_8cpp_source.html#l00008">bellman_ford.cpp:8</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -593,6 +611,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d31/floyd__warshall_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../df/d31/floyd__warshall_8cpp_source.html">floyd_warshall.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   35</span>                                               {</div>
 <div class="line"><span class="lineno">   36</span>        this-&gt;edges[src][dst] = weight;</div>
 <div class="line"><span class="lineno">   37</span>    }</div>
@@ -633,9 +653,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dec/cycle__check__directed__graph_8cpp_source.html#l00137">137</a> of file <a class="el" href="../../d3/dec/cycle__check__directed__graph_8cpp_source.html">cycle_check_directed_graph.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  137</span>                                                                {</div>
 <div class="line"><span class="lineno">  138</span>        <span class="keywordflow">if</span> (source &gt;= m_vertices || destination &gt;= m_vertices) {</div>
-<div class="line"><span class="lineno">  139</span>            <span class="keywordflow">throw</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/range_error.html">std::range_error</a>(</div>
+<div class="line"><span class="lineno">  139</span>            <span class="keywordflow">throw</span> std::range_error(</div>
 <div class="line"><span class="lineno">  140</span>                <span class="stringliteral">&quot;Either source or destination of edge out of range&quot;</span>);</div>
 <div class="line"><span class="lineno">  141</span>        }</div>
 <div class="line"><span class="lineno">  142</span>        m_adjList[source].emplace_back(destination);</div>
@@ -672,6 +694,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dec/cycle__check__directed__graph_8cpp_source.html#l00119">119</a> of file <a class="el" href="../../d3/dec/cycle__check__directed__graph_8cpp_source.html">cycle_check_directed_graph.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  119</span>{ m_vertices += num; }</div>
 </div><!-- fragment -->
 </div>
@@ -702,18 +726,20 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html">max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   26</span>                                   {  <span class="comment">//  to find the augmented - path</span></div>
-<div class="line"><span class="lineno">   27</span>        visited.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/bitset/reset.html">reset</a>();</div>
-<div class="line"><span class="lineno">   28</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue&lt;int&gt;</a> q;</div>
+<div class="line"><span class="lineno">   27</span>        visited.reset();</div>
+<div class="line"><span class="lineno">   28</span>        std::queue&lt;int&gt; q;</div>
 <div class="line"><span class="lineno">   29</span>        q.push(source);</div>
 <div class="line"><span class="lineno">   30</span>        <span class="keywordtype">bool</span> is_path_found = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   31</span>        <span class="keywordflow">while</span> (q.empty() == <span class="keyword">false</span> &amp;&amp; is_path_found == <span class="keyword">false</span>) {</div>
 <div class="line"><span class="lineno">   32</span>            <span class="keywordtype">int</span> current_node = q.front();</div>
-<div class="line"><span class="lineno">   33</span>            visited.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/bitset/set.html">set</a>(current_node);</div>
+<div class="line"><span class="lineno">   33</span>            visited.set(current_node);</div>
 <div class="line"><span class="lineno">   34</span>            q.pop();</div>
 <div class="line"><span class="lineno">   35</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; total_nodes; ++i) {</div>
 <div class="line"><span class="lineno">   36</span>                <span class="keywordflow">if</span> (residual_capacity[current_node][i] &gt; 0 &amp;&amp; !visited[i]) {</div>
-<div class="line"><span class="lineno">   37</span>                    visited.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/bitset/set.html">set</a>(i);</div>
+<div class="line"><span class="lineno">   37</span>                    visited.set(i);</div>
 <div class="line"><span class="lineno">   38</span>                    parent[i] = current_node;</div>
 <div class="line"><span class="lineno">   39</span>                    <span class="keywordflow">if</span> (i == sink) {</div>
 <div class="line"><span class="lineno">   40</span>                        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -724,9 +750,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
 <div class="line"><span class="lineno">   45</span>        }</div>
 <div class="line"><span class="lineno">   46</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   47</span>    }</div>
-<div class="ttc" id="aqueue_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue</a></div></div>
-<div class="ttc" id="areset_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/bitset/reset.html">std::bitset::reset</a></div><div class="ttdeci">T reset(T... args)</div></div>
-<div class="ttc" id="aset_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/bitset/set.html">std::bitset::set</a></div><div class="ttdeci">T set(T... args)</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -752,13 +775,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html">max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   62</span>                          {</div>
 <div class="line"><span class="lineno">   63</span>        <span class="keywordflow">while</span> (bfs(source, sink)) {</div>
 <div class="line"><span class="lineno">   64</span>            <span class="keywordtype">int</span> current_node = sink;</div>
-<div class="line"><span class="lineno">   65</span>            <span class="keywordtype">int</span> flow = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/numeric_limits/max.html">std::numeric_limits&lt;int&gt;::max</a>();</div>
+<div class="line"><span class="lineno">   65</span>            <span class="keywordtype">int</span> flow = std::numeric_limits&lt;int&gt;::max();</div>
 <div class="line"><span class="lineno">   66</span>            <span class="keywordflow">while</span> (current_node != source) {</div>
 <div class="line"><span class="lineno">   67</span>                <span class="keywordtype">int</span> parent_ = parent[current_node];</div>
-<div class="line"><span class="lineno">   68</span>                flow = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(flow, residual_capacity[parent_][current_node]);</div>
+<div class="line"><span class="lineno">   68</span>                flow = std::min(flow, residual_capacity[parent_][current_node]);</div>
 <div class="line"><span class="lineno">   69</span>                current_node = parent_;</div>
 <div class="line"><span class="lineno">   70</span>            }</div>
 <div class="line"><span class="lineno">   71</span>            current_node = sink;</div>
@@ -771,8 +796,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
 <div class="line"><span class="lineno">   78</span>            }</div>
 <div class="line"><span class="lineno">   79</span>        }</div>
 <div class="line"><span class="lineno">   80</span>    }</div>
-<div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/numeric_limits/max.html">std::numeric_limits::max</a></div><div class="ttdeci">T max(T... args)</div></div>
-<div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -786,7 +809,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/remove_reference.html">std::remove_reference</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">AdjList</a> &gt;::type const  &amp; Graph::getAdjList </td>
+          <td class="memname">std::remove_reference&lt; AdjList &gt;::type const  &amp; Graph::getAdjList </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -800,6 +823,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
 </div><div class="memdoc">
 <p>Return a const reference of the adjacency list.</p>
 <dl class="section return"><dt>Returns</dt><dd>const reference to the adjacency list </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dec/cycle__check__directed__graph_8cpp_source.html#l00104">104</a> of file <a class="el" href="../../d3/dec/cycle__check__directed__graph_8cpp_source.html">cycle_check_directed_graph.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  104</span>                                                               {</div>
 <div class="line"><span class="lineno">  105</span>        <span class="keywordflow">return</span> m_adjList;</div>
 <div class="line"><span class="lineno">  106</span>    }</div>
@@ -829,6 +854,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>number of vertices in the graph. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dec/cycle__check__directed__graph_8cpp_source.html#l00111">111</a> of file <a class="el" href="../../d3/dec/cycle__check__directed__graph_8cpp_source.html">cycle_check_directed_graph.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  111</span>{ <span class="keywordflow">return</span> m_vertices; }</div>
 </div><!-- fragment -->
 </div>
@@ -855,32 +882,29 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html#l00081">81</a> of file <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html">max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   81</span>                           {</div>
 <div class="line"><span class="lineno">   82</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; total_nodes; ++i) {</div>
 <div class="line"><span class="lineno">   83</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; total_nodes; ++j) {</div>
 <div class="line"><span class="lineno">   84</span>                <span class="keywordflow">if</span> (capacity[i][j] &amp;&amp;</div>
 <div class="line"><span class="lineno">   85</span>                    residual_capacity[i][j] &lt; capacity[i][j]) {</div>
-<div class="line"><span class="lineno">   86</span>                    edge_participated.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/emplace_back.html">emplace_back</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/tuple/make_tuple.html">std::make_tuple</a>(</div>
+<div class="line"><span class="lineno">   86</span>                    edge_participated.emplace_back(std::make_tuple(</div>
 <div class="line"><span class="lineno">   87</span>                        i, j, capacity[i][j] - residual_capacity[i][j]));</div>
 <div class="line"><span class="lineno">   88</span>                }</div>
 <div class="line"><span class="lineno">   89</span>            }</div>
 <div class="line"><span class="lineno">   90</span>        }</div>
-<div class="line"><span class="lineno">   91</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nNodes : &quot;</span> &lt;&lt; total_nodes &lt;&lt; <span class="stringliteral">&quot;\nMax flow: &quot;</span> &lt;&lt; max_flow</div>
-<div class="line"><span class="lineno">   92</span>                  &lt;&lt; <span class="stringliteral">&quot;\nEdge present in flow: &quot;</span> &lt;&lt; edge_participated.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()</div>
+<div class="line"><span class="lineno">   91</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\nNodes : &quot;</span> &lt;&lt; total_nodes &lt;&lt; <span class="stringliteral">&quot;\nMax flow: &quot;</span> &lt;&lt; max_flow</div>
+<div class="line"><span class="lineno">   92</span>                  &lt;&lt; <span class="stringliteral">&quot;\nEdge present in flow: &quot;</span> &lt;&lt; edge_participated.size()</div>
 <div class="line"><span class="lineno">   93</span>                  &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><span class="lineno">   94</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nSource\tDestination\tCapacity\total_nodes&quot;</span>;</div>
+<div class="line"><span class="lineno">   94</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\nSource\tDestination\tCapacity\total_nodes&quot;</span>;</div>
 <div class="line"><span class="lineno">   95</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; edge_data : edge_participated) {</div>
 <div class="line"><span class="lineno">   96</span>            <span class="keywordtype">int</span> source = 0, destination = 0, capacity_ = 0;</div>
-<div class="line"><span class="lineno">   97</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/tuple/tie.html">std::tie</a>(source, destination, capacity_) = edge_data;</div>
-<div class="line"><span class="lineno">   98</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; source &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; destination &lt;&lt; <span class="stringliteral">&quot;\t\t&quot;</span> &lt;&lt; capacity_</div>
+<div class="line"><span class="lineno">   97</span>            std::tie(source, destination, capacity_) = edge_data;</div>
+<div class="line"><span class="lineno">   98</span>            std::cout &lt;&lt; source &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; destination &lt;&lt; <span class="stringliteral">&quot;\t\t&quot;</span> &lt;&lt; capacity_</div>
 <div class="line"><span class="lineno">   99</span>                      &lt;&lt; <span class="charliteral">&#39;\t&#39;</span>;</div>
 <div class="line"><span class="lineno">  100</span>        }</div>
 <div class="line"><span class="lineno">  101</span>    }</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aemplace_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/emplace_back.html">std::vector::emplace_back</a></div><div class="ttdeci">T emplace_back(T... args)</div></div>
-<div class="ttc" id="amake_tuple_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/tuple/make_tuple.html">std::make_tuple</a></div><div class="ttdeci">T make_tuple(T... args)</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-<div class="ttc" id="atie_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/tuple/tie.html">std::tie</a></div><div class="ttdeci">T tie(T... args)</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -906,28 +930,381 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html">max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   50</span>                     {</div>
-<div class="line"><span class="lineno">   51</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; total_nodes &gt;&gt; total_edges &gt;&gt; source &gt;&gt; sink;</div>
-<div class="line"><span class="lineno">   52</span>        parent = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a>(total_nodes, -1);</div>
-<div class="line"><span class="lineno">   53</span>        capacity = residual_capacity = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;int&gt;</a> &gt;(</div>
-<div class="line"><span class="lineno">   54</span>            total_nodes, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a>(total_nodes));</div>
+<div class="line"><span class="lineno">   51</span>        std::cin &gt;&gt; total_nodes &gt;&gt; total_edges &gt;&gt; source &gt;&gt; sink;</div>
+<div class="line"><span class="lineno">   52</span>        parent = std::vector&lt;int&gt;(total_nodes, -1);</div>
+<div class="line"><span class="lineno">   53</span>        capacity = residual_capacity = std::vector&lt;std::vector&lt;int&gt; &gt;(</div>
+<div class="line"><span class="lineno">   54</span>            total_nodes, std::vector&lt;int&gt;(total_nodes));</div>
 <div class="line"><span class="lineno">   55</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> start = 0, destination = 0, capacity_ = 0, i = 0;</div>
 <div class="line"><span class="lineno">   56</span>             i &lt; total_edges; ++i) {</div>
-<div class="line"><span class="lineno">   57</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; start &gt;&gt; destination &gt;&gt; capacity_;</div>
+<div class="line"><span class="lineno">   57</span>            std::cin &gt;&gt; start &gt;&gt; destination &gt;&gt; capacity_;</div>
 <div class="line"><span class="lineno">   58</span>            residual_capacity[start][destination] = capacity_;</div>
 <div class="line"><span class="lineno">   59</span>            capacity[start][destination] = capacity_;</div>
 <div class="line"><span class="lineno">   60</span>        }</div>
 <div class="line"><span class="lineno">   61</span>    }</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8a34b80e2f3749992e0e9b83de742fba" name="a8a34b80e2f3749992e0e9b83de742fba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a34b80e2f3749992e0e9b83de742fba">&#9670;&#160;</a></span>capacity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::vector&lt;int&gt; &gt; Graph::capacity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html">max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a73268574e2528b8e760191113ef6d1eb" name="a73268574e2528b8e760191113ef6d1eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73268574e2528b8e760191113ef6d1eb">&#9670;&#160;</a></span>edge_participated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::tuple&lt;int, int, int&gt; &gt; Graph::edge_participated</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html#l00023">23</a> of file <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html">max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a10ff9c6c323cf435f18e424dbb62235e" name="a10ff9c6c323cf435f18e424dbb62235e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10ff9c6c323cf435f18e424dbb62235e">&#9670;&#160;</a></span>edgeNum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Graph::edgeNum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d14/bellman__ford_8cpp_source.html#l00016">16</a> of file <a class="el" href="../../df/d14/bellman__ford_8cpp_source.html">bellman_ford.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a28d19ea9c7d111f55fee78331abe88bd" name="a28d19ea9c7d111f55fee78331abe88bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28d19ea9c7d111f55fee78331abe88bd">&#9670;&#160;</a></span>edges <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d7/d77/class_edge.html">Edge</a>&gt; Graph::edges</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d14/bellman__ford_8cpp_source.html#l00017">17</a> of file <a class="el" href="../../df/d14/bellman__ford_8cpp_source.html">bellman_ford.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a268ba18d421817ad8713c2e92f19d82a" name="a268ba18d421817ad8713c2e92f19d82a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a268ba18d421817ad8713c2e92f19d82a">&#9670;&#160;</a></span>edges <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int** Graph::edges</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d31/floyd__warshall_8cpp_source.html#l00014">14</a> of file <a class="el" href="../../df/d31/floyd__warshall_8cpp_source.html">floyd_warshall.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a13697caf8be6275ebb7b9497c9a9d6e5" name="a13697caf8be6275ebb7b9497c9a9d6e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13697caf8be6275ebb7b9497c9a9d6e5">&#9670;&#160;</a></span>m_adjList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AdjList Graph::m_adjList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dec/cycle__check__directed__graph_8cpp_source.html#l00147">147</a> of file <a class="el" href="../../d3/dec/cycle__check__directed__graph_8cpp_source.html">cycle_check_directed_graph.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a61943646676002a5e75f7b6493c25713" name="a61943646676002a5e75f7b6493c25713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61943646676002a5e75f7b6493c25713">&#9670;&#160;</a></span>m_vertices</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Graph::m_vertices = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dec/cycle__check__directed__graph_8cpp_source.html#l00146">146</a> of file <a class="el" href="../../d3/dec/cycle__check__directed__graph_8cpp_source.html">cycle_check_directed_graph.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa0aaff1a0c13bdf209ea40b83ac01ae6" name="aa0aaff1a0c13bdf209ea40b83ac01ae6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0aaff1a0c13bdf209ea40b83ac01ae6">&#9670;&#160;</a></span>max_flow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Graph::max_flow = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html#l00025">25</a> of file <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html">max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9474bfdf769cc0d23f5b16c181a29431" name="a9474bfdf769cc0d23f5b16c181a29431"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9474bfdf769cc0d23f5b16c181a29431">&#9670;&#160;</a></span>parent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int&gt; Graph::parent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html#l00022">22</a> of file <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html">max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a92a601c0ada840011e2719cb753b490b" name="a92a601c0ada840011e2719cb753b490b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92a601c0ada840011e2719cb753b490b">&#9670;&#160;</a></span>residual_capacity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::vector&lt;int&gt; &gt; Graph::residual_capacity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html">max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a47336f7cfe4698ef887a34e03f1a3856" name="a47336f7cfe4698ef887a34e03f1a3856"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47336f7cfe4698ef887a34e03f1a3856">&#9670;&#160;</a></span>sink</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Graph::sink = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html#l00021">21</a> of file <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html">max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9912e31b32405d21a4c22a9ab8dece30" name="a9912e31b32405d21a4c22a9ab8dece30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9912e31b32405d21a4c22a9ab8dece30">&#9670;&#160;</a></span>source</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Graph::source = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html#l00021">21</a> of file <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html">max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad621c5393837c21780ff3477431707ac" name="ad621c5393837c21780ff3477431707ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad621c5393837c21780ff3477431707ac">&#9670;&#160;</a></span>total_edges</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Graph::total_edges = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html#l00021">21</a> of file <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html">max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae93ae98711b868af601d424954fe94ac" name="ae93ae98711b868af601d424954fe94ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae93ae98711b868af601d424954fe94ac">&#9670;&#160;</a></span>total_nodes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Graph::total_nodes = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html#l00020">20</a> of file <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html">max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6afcd41564ea00294a4c089414979ca1" name="a6afcd41564ea00294a4c089414979ca1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6afcd41564ea00294a4c089414979ca1">&#9670;&#160;</a></span>vertexNum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Graph::vertexNum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d14/bellman__ford_8cpp_source.html#l00016">16</a> of file <a class="el" href="../../df/d14/bellman__ford_8cpp_source.html">bellman_ford.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af1abf6ea5346e12dea4df46262ff35aa" name="af1abf6ea5346e12dea4df46262ff35aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1abf6ea5346e12dea4df46262ff35aa">&#9670;&#160;</a></span>visited</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::bitset&lt;MAXN&gt; Graph::visited</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html">max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>dynamic_programming/<b>bellman_ford.cpp</b></li>
-<li>dynamic_programming/<b>floyd_warshall.cpp</b></li>
-<li>graph/<b>cycle_check_directed_graph.cpp</b></li>
-<li>graph/<b>max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp</b></li>
+<li>dynamic_programming/<a class="el" href="../../df/d14/bellman__ford_8cpp_source.html">bellman_ford.cpp</a></li>
+<li>dynamic_programming/<a class="el" href="../../df/d31/floyd__warshall_8cpp_source.html">floyd_warshall.cpp</a></li>
+<li>graph/<a class="el" href="../../d3/dec/cycle__check__directed__graph_8cpp_source.html">cycle_check_directed_graph.cpp</a></li>
+<li>graph/<a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html">max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

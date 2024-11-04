@@ -1,9 +1,0 @@
-<map id="hashing::sha256::get_char" name="hashing::sha256::get_char">
-<area shape="rect" id="Node000001" title="Returns the character at pos after the input is padded." alt="" coords="5,66,180,92"/>
-<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="56,67,48,58,53,48,68,42,93,40,120,42,134,49,131,54,118,47,92,45,69,47,56,52,54,57,60,64"/>
-<area shape="rect" id="Node000002" href="$d4/d08/sha256_8cpp.html#a28c1c6724dc6bcf91a39818699bbec27" title="Computes size of the padded input." alt="" coords="228,29,402,70"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,65,212,61,212,66,180,70"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="254,94,376,120"/>
-<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="180,87,239,95,238,100,180,93"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="273,29,271,19,278,10,292,5,315,3,339,5,353,11,351,16,338,10,315,8,294,10,281,15,276,21,278,28"/>
-</map>

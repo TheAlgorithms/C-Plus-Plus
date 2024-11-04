@@ -1,5 +1,0 @@
-<map id="range_queries::fenwick_tree::update" name="range_queries::fenwick_tree::update">
-<area shape="rect" id="Node000001" title="Updates the value of an element in original array and accordingly updates the values in BIT array." alt="" coords="5,5,161,46"/>
-<area shape="rect" id="Node000002" href="$de/d0d/classrange__queries_1_1fenwick__tree.html#ab492ebf07cab0e3c32d277ad986de801" title="Returns the highest power of two which is not more than x." alt="" coords="209,5,364,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,23,193,23,193,28,161,28"/>
-</map>

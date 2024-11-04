@@ -1,6 +1,0 @@
-<map id="dsu::size" name="dsu::size">
-<area shape="rect" id="Node000001" title="A utility function that returns the size of the set to which i belongs to." alt="" coords="5,29,80,55"/>
-<area shape="rect" id="Node000002" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="128,29,219,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,40,112,40,112,45,80,45"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="150,30,146,21,149,11,158,5,173,3,190,5,198,12,195,16,187,10,173,8,160,10,153,14,152,20,155,28"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="binary_search_tree::get_elements_inorder" name="binary_search_tree::get_elements_inorder">
-<area shape="rect" id="Node000001" title="Get all values of the BST in in&#45;order order." alt="" coords="5,29,159,70"/>
-<area shape="rect" id="Node000002" href="$d9/dde/classbinary__search__tree.html#a2fcf37549bd002c174a45b0b4203c2bd" title="Recursive function to traverse the tree in in&#45;order order." alt="" coords="207,29,338,70"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,47,191,47,191,52,159,52"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="236,29,234,19,240,10,253,5,272,3,293,5,305,11,303,16,292,10,272,8,254,10,244,15,239,20,241,28"/>
-</map>

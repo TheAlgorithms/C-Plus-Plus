@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: others::Cache::LRUCache&lt; K, V &gt; Class Template Reference</title>
+<title>TheAlgorithms/C++: others::Cache::LRUCache&lt; K, V &gt; Class Template Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -118,7 +135,7 @@ $(function(){initNavTree('d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache.html','..
 <div class="dynheader">
 Collaboration diagram for others::Cache::LRUCache&lt; K, V &gt;:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/db8/classothers_1_1_cache_1_1_l_r_u_cache__coll__graph.svg" width="100%" height="429"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/db8/classothers_1_1_cache_1_1_l_r_u_cache__coll__graph.svg" width="100%" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -159,21 +176,17 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a042bb403f4452ad8c669fbf87ef82821" id="r_a042bb403f4452ad8c669fbf87ef82821"><td class="memItemLeft" align="right" valign="top"><a id="a042bb403f4452ad8c669fbf87ef82821" name="a042bb403f4452ad8c669fbf87ef82821"></a>
-<a class="el" href="../../de/d21/classothers_1_1_cache_1_1_d___node.html">CacheNode</a>&lt; K, V &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>head</b></td></tr>
-<tr class="memdesc:a042bb403f4452ad8c669fbf87ef82821"><td class="mdescLeft">&#160;</td><td class="mdescRight">head of the doubly linked list <br /></td></tr>
+<tr class="memitem:a042bb403f4452ad8c669fbf87ef82821" id="r_a042bb403f4452ad8c669fbf87ef82821"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d21/classothers_1_1_cache_1_1_d___node.html">CacheNode</a>&lt; K, V &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a042bb403f4452ad8c669fbf87ef82821">head</a></td></tr>
+<tr class="memdesc:a042bb403f4452ad8c669fbf87ef82821"><td class="mdescLeft">&#160;</td><td class="mdescRight">head of the doubly linked list  <br /></td></tr>
 <tr class="separator:a042bb403f4452ad8c669fbf87ef82821"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a448121f391a71f4cf88c3cb6c4cf3100" id="r_a448121f391a71f4cf88c3cb6c4cf3100"><td class="memItemLeft" align="right" valign="top"><a id="a448121f391a71f4cf88c3cb6c4cf3100" name="a448121f391a71f4cf88c3cb6c4cf3100"></a>
-<a class="el" href="../../de/d21/classothers_1_1_cache_1_1_d___node.html">CacheNode</a>&lt; K, V &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>tail</b></td></tr>
-<tr class="memdesc:a448121f391a71f4cf88c3cb6c4cf3100"><td class="mdescLeft">&#160;</td><td class="mdescRight">tail of the doubly linked list <br /></td></tr>
+<tr class="memitem:a448121f391a71f4cf88c3cb6c4cf3100" id="r_a448121f391a71f4cf88c3cb6c4cf3100"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d21/classothers_1_1_cache_1_1_d___node.html">CacheNode</a>&lt; K, V &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a448121f391a71f4cf88c3cb6c4cf3100">tail</a></td></tr>
+<tr class="memdesc:a448121f391a71f4cf88c3cb6c4cf3100"><td class="mdescLeft">&#160;</td><td class="mdescRight">tail of the doubly linked list  <br /></td></tr>
 <tr class="separator:a448121f391a71f4cf88c3cb6c4cf3100"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af34bb8b8eaa34cc499b4fed30b9d05fc" id="r_af34bb8b8eaa34cc499b4fed30b9d05fc"><td class="memItemLeft" align="right" valign="top"><a id="af34bb8b8eaa34cc499b4fed30b9d05fc" name="af34bb8b8eaa34cc499b4fed30b9d05fc"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_capacity</b></td></tr>
-<tr class="memdesc:af34bb8b8eaa34cc499b4fed30b9d05fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum capacity of the cache <br /></td></tr>
+<tr class="memitem:af34bb8b8eaa34cc499b4fed30b9d05fc" id="r_af34bb8b8eaa34cc499b4fed30b9d05fc"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af34bb8b8eaa34cc499b4fed30b9d05fc">_capacity</a></td></tr>
+<tr class="memdesc:af34bb8b8eaa34cc499b4fed30b9d05fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum capacity of the cache  <br /></td></tr>
 <tr class="separator:af34bb8b8eaa34cc499b4fed30b9d05fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dab0f69410484f772946befd24cc3c5" id="r_a8dab0f69410484f772946befd24cc3c5"><td class="memItemLeft" align="right" valign="top"><a id="a8dab0f69410484f772946befd24cc3c5" name="a8dab0f69410484f772946befd24cc3c5"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_map.html">std::unordered_map</a>&lt; K, <a class="el" href="../../de/d21/classothers_1_1_cache_1_1_d___node.html">CacheNode</a>&lt; K, V &gt; * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>node_map</b></td></tr>
-<tr class="memdesc:a8dab0f69410484f772946befd24cc3c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps the key to the node address <br /></td></tr>
+<tr class="memitem:a8dab0f69410484f772946befd24cc3c5" id="r_a8dab0f69410484f772946befd24cc3c5"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; K, <a class="el" href="../../de/d21/classothers_1_1_cache_1_1_d___node.html">CacheNode</a>&lt; K, V &gt; * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8dab0f69410484f772946befd24cc3c5">node_map</a></td></tr>
+<tr class="memdesc:a8dab0f69410484f772946befd24cc3c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps the key to the node address  <br /></td></tr>
 <tr class="separator:a8dab0f69410484f772946befd24cc3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -186,6 +199,8 @@ class others::Cache::LRUCache&lt; K, V &gt;</div><p><a class="el" href="../../d8
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html">lru_cache2.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8980cbbc9cf0a98a9592b40c4d6ec28f" name="a8980cbbc9cf0a98a9592b40c4d6ec28f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8980cbbc9cf0a98a9592b40c4d6ec28f">&#9670;&#160;</a></span>LRUCache()</h2>
@@ -219,10 +234,12 @@ template&lt;typename K , typename V &gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html#l00075">75</a> of file <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html">lru_cache2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   76</span>        : <a class="code hl_variable" href="#a042bb403f4452ad8c669fbf87ef82821">head</a>(<span class="keyword">nullptr</span>), <a class="code hl_variable" href="#a448121f391a71f4cf88c3cb6c4cf3100">tail</a>(<span class="keyword">nullptr</span>), <a class="code hl_variable" href="#af34bb8b8eaa34cc499b4fed30b9d05fc">_capacity</a>(<a class="code hl_variable" href="#af34bb8b8eaa34cc499b4fed30b9d05fc">_capacity</a>) {}</div>
-<div class="ttc" id="aclassothers_1_1_cache_1_1_l_r_u_cache_html_a042bb403f4452ad8c669fbf87ef82821"><div class="ttname"><a href="#a042bb403f4452ad8c669fbf87ef82821">others::Cache::LRUCache::head</a></div><div class="ttdeci">CacheNode&lt; K, V &gt; * head</div><div class="ttdoc">head of the doubly linked list</div><div class="ttdef"><b>Definition</b> lru_cache2.cpp:62</div></div>
-<div class="ttc" id="aclassothers_1_1_cache_1_1_l_r_u_cache_html_a448121f391a71f4cf88c3cb6c4cf3100"><div class="ttname"><a href="#a448121f391a71f4cf88c3cb6c4cf3100">others::Cache::LRUCache::tail</a></div><div class="ttdeci">CacheNode&lt; K, V &gt; * tail</div><div class="ttdoc">tail of the doubly linked list</div><div class="ttdef"><b>Definition</b> lru_cache2.cpp:63</div></div>
-<div class="ttc" id="aclassothers_1_1_cache_1_1_l_r_u_cache_html_af34bb8b8eaa34cc499b4fed30b9d05fc"><div class="ttname"><a href="#af34bb8b8eaa34cc499b4fed30b9d05fc">others::Cache::LRUCache::_capacity</a></div><div class="ttdeci">std::uint32_t _capacity</div><div class="ttdoc">maximum capacity of the cache</div><div class="ttdef"><b>Definition</b> lru_cache2.cpp:64</div></div>
+<div class="ttc" id="aclassothers_1_1_cache_1_1_l_r_u_cache_html_a042bb403f4452ad8c669fbf87ef82821"><div class="ttname"><a href="#a042bb403f4452ad8c669fbf87ef82821">others::Cache::LRUCache::head</a></div><div class="ttdeci">CacheNode&lt; K, V &gt; * head</div><div class="ttdoc">head of the doubly linked list</div><div class="ttdef"><b>Definition</b> <a href="../../dc/daa/lru__cache2_8cpp_source.html#l00062">lru_cache2.cpp:62</a></div></div>
+<div class="ttc" id="aclassothers_1_1_cache_1_1_l_r_u_cache_html_a448121f391a71f4cf88c3cb6c4cf3100"><div class="ttname"><a href="#a448121f391a71f4cf88c3cb6c4cf3100">others::Cache::LRUCache::tail</a></div><div class="ttdeci">CacheNode&lt; K, V &gt; * tail</div><div class="ttdoc">tail of the doubly linked list</div><div class="ttdef"><b>Definition</b> <a href="../../dc/daa/lru__cache2_8cpp_source.html#l00063">lru_cache2.cpp:63</a></div></div>
+<div class="ttc" id="aclassothers_1_1_cache_1_1_l_r_u_cache_html_af34bb8b8eaa34cc499b4fed30b9d05fc"><div class="ttname"><a href="#af34bb8b8eaa34cc499b4fed30b9d05fc">others::Cache::LRUCache::_capacity</a></div><div class="ttdeci">std::uint32_t _capacity</div><div class="ttdoc">maximum capacity of the cache</div><div class="ttdef"><b>Definition</b> <a href="../../dc/daa/lru__cache2_8cpp_source.html#l00064">lru_cache2.cpp:64</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -252,6 +269,8 @@ template&lt;typename K , typename V &gt; </div>
 </div><div class="memdoc">
 
 <p>destructs the cache, iterates on the map and deletes every node present in the cache. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html#l00205">205</a> of file <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html">lru_cache2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  205</span>                {</div>
 <div class="line"><span class="lineno">  206</span>        <span class="keyword">auto</span> it = <a class="code hl_variable" href="#a8dab0f69410484f772946befd24cc3c5">node_map</a>.begin();</div>
 <div class="line"><span class="lineno">  207</span>        <span class="keywordflow">while</span> (it != <a class="code hl_variable" href="#a8dab0f69410484f772946befd24cc3c5">node_map</a>.end()) {</div>
@@ -259,7 +278,7 @@ template&lt;typename K , typename V &gt; </div>
 <div class="line"><span class="lineno">  209</span>            ++it;</div>
 <div class="line"><span class="lineno">  210</span>        }</div>
 <div class="line"><span class="lineno">  211</span>    }</div>
-<div class="ttc" id="aclassothers_1_1_cache_1_1_l_r_u_cache_html_a8dab0f69410484f772946befd24cc3c5"><div class="ttname"><a href="#a8dab0f69410484f772946befd24cc3c5">others::Cache::LRUCache::node_map</a></div><div class="ttdeci">std::unordered_map&lt; K, CacheNode&lt; K, V &gt; * &gt; node_map</div><div class="ttdoc">maps the key to the node address</div><div class="ttdef"><b>Definition</b> lru_cache2.cpp:67</div></div>
+<div class="ttc" id="aclassothers_1_1_cache_1_1_l_r_u_cache_html_a8dab0f69410484f772946befd24cc3c5"><div class="ttname"><a href="#a8dab0f69410484f772946befd24cc3c5">others::Cache::LRUCache::node_map</a></div><div class="ttdeci">std::unordered_map&lt; K, CacheNode&lt; K, V &gt; * &gt; node_map</div><div class="ttdoc">maps the key to the node address</div><div class="ttdef"><b>Definition</b> <a href="../../dc/daa/lru__cache2_8cpp_source.html#l00067">lru_cache2.cpp:67</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -291,6 +310,8 @@ template&lt;typename K , typename V &gt; </div>
 
 <p>Returns the total capacity of the cache. </p>
 <dl class="section return"><dt>Returns</dt><dd>Total capacity of the cache </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html#l00193">193</a> of file <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html">lru_cache2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  193</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#af34bb8b8eaa34cc499b4fed30b9d05fc">_capacity</a>; }</div>
 </div><!-- fragment -->
 </div>
@@ -322,6 +343,8 @@ template&lt;typename K , typename V &gt; </div>
 
 <p>returns whether the cache is empty or not </p>
 <dl class="section return"><dt>Returns</dt><dd>true if the cache is empty, false otherwise. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html#l00199">199</a> of file <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html">lru_cache2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  199</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a8dab0f69410484f772946befd24cc3c5">node_map</a>.empty(); }</div>
 </div><!-- fragment -->
 </div>
@@ -365,9 +388,11 @@ template&lt;typename K , typename V &gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html#l00172">172</a> of file <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html">lru_cache2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  172</span>                 {</div>
 <div class="line"><span class="lineno">  173</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a8dab0f69410484f772946befd24cc3c5">node_map</a>.count(key)) {</div>
-<div class="line"><span class="lineno">  174</span>            <span class="keywordflow">throw</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/runtime_error.html">std::runtime_error</a>(<span class="stringliteral">&quot;key is not present in the cache&quot;</span>);</div>
+<div class="line"><span class="lineno">  174</span>            <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;key is not present in the cache&quot;</span>);</div>
 <div class="line"><span class="lineno">  175</span>        }</div>
 <div class="line"><span class="lineno">  176</span> </div>
 <div class="line"><span class="lineno">  177</span>        <span class="comment">// move node to the beginning of the list</span></div>
@@ -375,14 +400,8 @@ template&lt;typename K , typename V &gt; </div>
 <div class="line"><span class="lineno">  179</span>        <a class="code hl_function" href="#ad022d494b40f82417340b113445e79a4">make_recent</a>(<a class="code hl_variable" href="#a8dab0f69410484f772946befd24cc3c5">node_map</a>[key]);</div>
 <div class="line"><span class="lineno">  180</span>        <span class="keywordflow">return</span> value;</div>
 <div class="line"><span class="lineno">  181</span>    }</div>
-<div class="ttc" id="aclassothers_1_1_cache_1_1_l_r_u_cache_html_ad022d494b40f82417340b113445e79a4"><div class="ttname"><a href="#ad022d494b40f82417340b113445e79a4">others::Cache::LRUCache::make_recent</a></div><div class="ttdeci">void make_recent(CacheNode&lt; K, V &gt; *node_ptr)</div><div class="ttdoc">move the existing node in the list to the beginning of the list.</div><div class="ttdef"><b>Definition</b> lru_cache2.cpp:99</div></div>
-<div class="ttc" id="aruntime_error_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/error/runtime_error.html">std::runtime_error</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache_ac1be0357ecc7c34144f3d9a63c6cb3ea_cgraph.svg" width="662" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassothers_1_1_cache_1_1_l_r_u_cache_html_ad022d494b40f82417340b113445e79a4"><div class="ttname"><a href="#ad022d494b40f82417340b113445e79a4">others::Cache::LRUCache::make_recent</a></div><div class="ttdeci">void make_recent(CacheNode&lt; K, V &gt; *node_ptr)</div><div class="ttdoc">move the existing node in the list to the beginning of the list.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/daa/lru__cache2_8cpp_source.html#l00099">lru_cache2.cpp:99</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad022d494b40f82417340b113445e79a4" name="ad022d494b40f82417340b113445e79a4"></a>
@@ -417,34 +436,29 @@ template&lt;typename K , typename V &gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html#l00099">99</a> of file <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html">lru_cache2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   99</span>                                                {</div>
 <div class="line"><span class="lineno">  100</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a042bb403f4452ad8c669fbf87ef82821">head</a> == node_ptr) {</div>
 <div class="line"><span class="lineno">  101</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  102</span>        }</div>
 <div class="line"><span class="lineno">  103</span> </div>
-<div class="line"><span class="lineno">  104</span>        CacheNode&lt;K, V&gt; *<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/prev.html">prev</a> = node_ptr-&gt;prev;</div>
-<div class="line"><span class="lineno">  105</span>        CacheNode&lt;K, V&gt; *<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/next.html">next</a> = node_ptr-&gt;next;</div>
+<div class="line"><span class="lineno">  104</span>        CacheNode&lt;K, V&gt; *prev = node_ptr-&gt;prev;</div>
+<div class="line"><span class="lineno">  105</span>        CacheNode&lt;K, V&gt; *next = node_ptr-&gt;next;</div>
 <div class="line"><span class="lineno">  106</span> </div>
-<div class="line"><span class="lineno">  107</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/prev.html">prev</a>-&gt;next = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/next.html">next</a>;</div>
+<div class="line"><span class="lineno">  107</span>        prev-&gt;next = next;</div>
 <div class="line"><span class="lineno">  108</span>        <span class="keywordflow">if</span> (next) {</div>
-<div class="line"><span class="lineno">  109</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/next.html">next</a>-&gt;prev = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/prev.html">prev</a>;</div>
+<div class="line"><span class="lineno">  109</span>            next-&gt;prev = prev;</div>
 <div class="line"><span class="lineno">  110</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  111</span>            <a class="code hl_variable" href="#a448121f391a71f4cf88c3cb6c4cf3100">tail</a> = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/prev.html">prev</a>;</div>
+<div class="line"><span class="lineno">  111</span>            <a class="code hl_variable" href="#a448121f391a71f4cf88c3cb6c4cf3100">tail</a> = prev;</div>
 <div class="line"><span class="lineno">  112</span>        }</div>
 <div class="line"><span class="lineno">  113</span> </div>
 <div class="line"><span class="lineno">  114</span>        node_ptr-&gt;prev = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  115</span>        node_ptr-&gt;next = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  116</span>        <a class="code hl_function" href="#a2e53b5ad1368d87da501f61473eb9ea2">push_front</a>(node_ptr);</div>
 <div class="line"><span class="lineno">  117</span>    }</div>
-<div class="ttc" id="aclassothers_1_1_cache_1_1_l_r_u_cache_html_a2e53b5ad1368d87da501f61473eb9ea2"><div class="ttname"><a href="#a2e53b5ad1368d87da501f61473eb9ea2">others::Cache::LRUCache::push_front</a></div><div class="ttdeci">void push_front(CacheNode&lt; K, V &gt; *node_ptr)</div><div class="ttdoc">push the node to the front of the linked list.</div><div class="ttdef"><b>Definition</b> lru_cache2.cpp:83</div></div>
-<div class="ttc" id="anext_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/next.html">std::next</a></div><div class="ttdeci">T next(T... args)</div></div>
-<div class="ttc" id="aprev_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/prev.html">std::prev</a></div><div class="ttdeci">T prev(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache_ad022d494b40f82417340b113445e79a4_cgraph.svg" width="412" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassothers_1_1_cache_1_1_l_r_u_cache_html_a2e53b5ad1368d87da501f61473eb9ea2"><div class="ttname"><a href="#a2e53b5ad1368d87da501f61473eb9ea2">others::Cache::LRUCache::push_front</a></div><div class="ttdeci">void push_front(CacheNode&lt; K, V &gt; *node_ptr)</div><div class="ttdoc">push the node to the front of the linked list.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/daa/lru__cache2_8cpp_source.html#l00083">lru_cache2.cpp:83</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab211a4be58491bf11834cae88a0c44f7" name="ab211a4be58491bf11834cae88a0c44f7"></a>
@@ -473,6 +487,8 @@ template&lt;typename K , typename V &gt; </div>
 </div><div class="memdoc">
 
 <p>pop the last node in the linked list. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html#l00122">122</a> of file <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html">lru_cache2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  122</span>                    {</div>
 <div class="line"><span class="lineno">  123</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a042bb403f4452ad8c669fbf87ef82821">head</a>) {</div>
 <div class="line"><span class="lineno">  124</span>            <span class="keywordflow">return</span>;</div>
@@ -524,6 +540,8 @@ template&lt;typename K , typename V &gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html">lru_cache2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   83</span>                                               {</div>
 <div class="line"><span class="lineno">   84</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a042bb403f4452ad8c669fbf87ef82821">head</a>) {</div>
 <div class="line"><span class="lineno">   85</span>            <a class="code hl_variable" href="#a042bb403f4452ad8c669fbf87ef82821">head</a> = node_ptr;</div>
@@ -575,6 +593,8 @@ template&lt;typename K , typename V &gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html#l00145">145</a> of file <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html">lru_cache2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  145</span>                             {</div>
 <div class="line"><span class="lineno">  146</span>        <span class="comment">// update the value if key already exists</span></div>
 <div class="line"><span class="lineno">  147</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a8dab0f69410484f772946befd24cc3c5">node_map</a>.count(key)) {</div>
@@ -595,13 +615,8 @@ template&lt;typename K , typename V &gt; </div>
 <div class="line"><span class="lineno">  162</span>        <a class="code hl_variable" href="#a8dab0f69410484f772946befd24cc3c5">node_map</a>[key] = newNode;</div>
 <div class="line"><span class="lineno">  163</span>        <a class="code hl_function" href="#a2e53b5ad1368d87da501f61473eb9ea2">push_front</a>(newNode);</div>
 <div class="line"><span class="lineno">  164</span>    }</div>
-<div class="ttc" id="aclassothers_1_1_cache_1_1_l_r_u_cache_html_ab211a4be58491bf11834cae88a0c44f7"><div class="ttname"><a href="#ab211a4be58491bf11834cae88a0c44f7">others::Cache::LRUCache::pop_back</a></div><div class="ttdeci">void pop_back()</div><div class="ttdoc">pop the last node in the linked list.</div><div class="ttdef"><b>Definition</b> lru_cache2.cpp:122</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache_a5ee34fcee480f21bb6f68a34f0f69b45_cgraph.svg" width="662" height="167"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassothers_1_1_cache_1_1_l_r_u_cache_html_ab211a4be58491bf11834cae88a0c44f7"><div class="ttname"><a href="#ab211a4be58491bf11834cae88a0c44f7">others::Cache::LRUCache::pop_back</a></div><div class="ttdeci">void pop_back()</div><div class="ttdoc">pop the last node in the linked list.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/daa/lru__cache2_8cpp_source.html#l00122">lru_cache2.cpp:122</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1b709333874b4633ee02a3661cd042e1" name="a1b709333874b4633ee02a3661cd042e1"></a>
@@ -631,12 +646,127 @@ template&lt;typename K , typename V &gt; </div>
 
 <p>Returns the number of items present in the cache. </p>
 <dl class="section return"><dt>Returns</dt><dd>number of items in the cache </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html#l00187">187</a> of file <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html">lru_cache2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  187</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a8dab0f69410484f772946befd24cc3c5">node_map</a>.size(); }</div>
 </div><!-- fragment -->
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af34bb8b8eaa34cc499b4fed30b9d05fc" name="af34bb8b8eaa34cc499b4fed30b9d05fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af34bb8b8eaa34cc499b4fed30b9d05fc">&#9670;&#160;</a></span>_capacity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint32_t <a class="el" href="../../d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache.html">others::Cache::LRUCache</a>&lt; K, V &gt;::_capacity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>maximum capacity of the cache </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html#l00064">64</a> of file <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html">lru_cache2.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a042bb403f4452ad8c669fbf87ef82821" name="a042bb403f4452ad8c669fbf87ef82821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a042bb403f4452ad8c669fbf87ef82821">&#9670;&#160;</a></span>head</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d21/classothers_1_1_cache_1_1_d___node.html">CacheNode</a>&lt;K, V&gt;* <a class="el" href="../../d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache.html">others::Cache::LRUCache</a>&lt; K, V &gt;::head</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>head of the doubly linked list </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html">lru_cache2.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8dab0f69410484f772946befd24cc3c5" name="a8dab0f69410484f772946befd24cc3c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dab0f69410484f772946befd24cc3c5">&#9670;&#160;</a></span>node_map</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;K, <a class="el" href="../../de/d21/classothers_1_1_cache_1_1_d___node.html">CacheNode</a>&lt;K, V&gt; *&gt; <a class="el" href="../../d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache.html">others::Cache::LRUCache</a>&lt; K, V &gt;::node_map</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>maps the key to the node address </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html">lru_cache2.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a448121f391a71f4cf88c3cb6c4cf3100" name="a448121f391a71f4cf88c3cb6c4cf3100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a448121f391a71f4cf88c3cb6c4cf3100">&#9670;&#160;</a></span>tail</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d21/classothers_1_1_cache_1_1_d___node.html">CacheNode</a>&lt;K, V&gt;* <a class="el" href="../../d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache.html">others::Cache::LRUCache</a>&lt; K, V &gt;::tail</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>tail of the doubly linked list </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html#l00063">63</a> of file <a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html">lru_cache2.cpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>others/<a class="el" href="../../dc/daa/lru__cache2_8cpp.html">lru_cache2.cpp</a></li>
+<li>others/<a class="el" href="../../dc/daa/lru__cache2_8cpp_source.html">lru_cache2.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: math/integral_approximation2.cpp File Reference</title>
+<title>TheAlgorithms/C++: math/integral_approximation2.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -127,7 +144,9 @@ Include dependency graph for integral_approximation2.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d5c/integral__approximation2_8cpp__incl.svg" width="598" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../db/d40/integral__approximation2_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html">math</a></td></tr>
@@ -144,10 +163,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a71249ee535f16f8ed2e9cc8f0199a2cf" id="r_a71249ee535f16f8ed2e9cc8f0199a2cf"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71249ee535f16f8ed2e9cc8f0199a2cf">math::monte_carlo::generate_samples</a> (const double &amp;start_point, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">Function</a> &amp;pdf, const uint32_t &amp;num_samples, const uint32_t &amp;discard=100000)</td></tr>
+<tr class="memitem:a71249ee535f16f8ed2e9cc8f0199a2cf" id="r_a71249ee535f16f8ed2e9cc8f0199a2cf"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71249ee535f16f8ed2e9cc8f0199a2cf">math::monte_carlo::generate_samples</a> (const double &amp;start_point, const Function &amp;pdf, const uint32_t &amp;num_samples, const uint32_t &amp;discard=100000)</td></tr>
 <tr class="memdesc:a71249ee535f16f8ed2e9cc8f0199a2cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">short-hand for std::functions used in this implementation  <br /></td></tr>
 <tr class="separator:a71249ee535f16f8ed2e9cc8f0199a2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7da9ba8932f1f48b9bbc2d80471af51" id="r_af7da9ba8932f1f48b9bbc2d80471af51"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7da9ba8932f1f48b9bbc2d80471af51">math::monte_carlo::integral_monte_carlo</a> (const double &amp;start_point, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">Function</a> &amp;function, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">Function</a> &amp;pdf, const uint32_t &amp;num_samples=1000000)</td></tr>
+<tr class="memitem:af7da9ba8932f1f48b9bbc2d80471af51" id="r_af7da9ba8932f1f48b9bbc2d80471af51"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7da9ba8932f1f48b9bbc2d80471af51">math::monte_carlo::integral_monte_carlo</a> (const double &amp;start_point, const Function &amp;function, const Function &amp;pdf, const uint32_t &amp;num_samples=1000000)</td></tr>
 <tr class="memdesc:af7da9ba8932f1f48b9bbc2d80471af51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute an approximation of an integral using Monte Carlo integration.  <br /></td></tr>
 <tr class="separator:af7da9ba8932f1f48b9bbc2d80471af51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
@@ -162,7 +181,26 @@ Functions</h2></td></tr>
 <p>In mathematics, Monte Carlo integration is a technique for numerical integration using random numbers. It is a particular Monte Carlo method that numerically computes a definite integral. While other algorithms usually evaluate the integrand at a regular grid, Monte Carlo randomly chooses points at which the integrand is evaluated. This method is particularly useful for higher-dimensional integrals.</p>
 <p>This implementation supports arbitrary pdfs. These pdfs are sampled using the <a href="https://en.wikipedia.org/wiki/Metropolis–Hastings_algorithm" target="_blank">Metropolis-Hastings algorithm</a>. This can be swapped out by every other sampling techniques for example the inverse method. Metropolis-Hastings was chosen because it is the most general and can also be extended for a higher dimensional sampling space.</p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/DerAndereDomenic" target="_blank">Domenic Zingsheim</a> </dd></dl>
-</div><h2 class="groupheader">Typedef Documentation</h2>
+
+<p class="definition">Definition in file <a class="el" href="../../db/d40/integral__approximation2_8cpp_source.html">integral_approximation2.cpp</a>.</p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a525335710b53cb064ca56b936120431e" name="a525335710b53cb064ca56b936120431e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a525335710b53cb064ca56b936120431e">&#9670;&#160;</a></span>_USE_MATH_DEFINES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _USE_MATH_DEFINES</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d40/integral__approximation2_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../db/d40/integral__approximation2_8cpp_source.html">integral_approximation2.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
 <a id="aa546b0e9315b7d9e9a8f6b71dd643de7" name="aa546b0e9315b7d9e9a8f6b71dd643de7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa546b0e9315b7d9e9a8f6b71dd643de7">&#9670;&#160;</a></span>Function</h2>
 
@@ -170,14 +208,15 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">math::monte_carlo::Function</a></td>
+          <td class="memname">using math::monte_carlo::Function</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line"> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt;double(</div>
+<b>Initial value:</b><div class="fragment"><div class="line"> std::function&lt;double(</div>
 <div class="line">    <span class="keywordtype">double</span>&amp;)&gt;</div>
-<div class="ttc" id="afunction_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a></div></div>
 </div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../db/d40/integral__approximation2_8cpp_source.html#l00046">46</a> of file <a class="el" href="../../db/d40/integral__approximation2_8cpp_source.html">integral_approximation2.cpp</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
@@ -188,14 +227,14 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; double &gt; math::monte_carlo::generate_samples </td>
+          <td class="memname">std::vector&lt; double &gt; math::monte_carlo::generate_samples </td>
           <td>(</td>
           <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>start_point</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">Function</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pdf</em></span>, </td>
+          <td class="paramtype">const Function &amp;</td>          <td class="paramname"><span class="paramname"><em>pdf</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -222,22 +261,24 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A vector of size num_samples with samples distributed according to the pdf </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d40/integral__approximation2_8cpp_source.html#l00064">64</a> of file <a class="el" href="../../db/d40/integral__approximation2_8cpp_source.html">integral_approximation2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   67</span>                                                                       {</div>
-<div class="line"><span class="lineno">   68</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;double&gt;</a> samples;</div>
-<div class="line"><span class="lineno">   69</span>    samples.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/reserve.html">reserve</a>(num_samples);</div>
+<div class="line"><span class="lineno">   68</span>    std::vector&lt;double&gt; samples;</div>
+<div class="line"><span class="lineno">   69</span>    samples.reserve(num_samples);</div>
 <div class="line"><span class="lineno">   70</span> </div>
 <div class="line"><span class="lineno">   71</span>    <span class="keywordtype">double</span> x_t = start_point;</div>
 <div class="line"><span class="lineno">   72</span> </div>
-<div class="line"><span class="lineno">   73</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random.html">std::default_random_engine</a> generator;</div>
-<div class="line"><span class="lineno">   74</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/uniform_real_distribution.html">std::uniform_real_distribution&lt;double&gt;</a> uniform(0.0, 1.0);</div>
-<div class="line"><span class="lineno">   75</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/normal_distribution.html">std::normal_distribution&lt;double&gt;</a> normal(0.0, 1.0);</div>
-<div class="line"><span class="lineno">   76</span>    generator.seed(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">time</a>(<span class="keyword">nullptr</span>));</div>
+<div class="line"><span class="lineno">   73</span>    std::default_random_engine generator;</div>
+<div class="line"><span class="lineno">   74</span>    std::uniform_real_distribution&lt;double&gt; uniform(0.0, 1.0);</div>
+<div class="line"><span class="lineno">   75</span>    std::normal_distribution&lt;double&gt; normal(0.0, 1.0);</div>
+<div class="line"><span class="lineno">   76</span>    generator.seed(time(<span class="keyword">nullptr</span>));</div>
 <div class="line"><span class="lineno">   77</span> </div>
 <div class="line"><span class="lineno">   78</span>    <span class="keywordflow">for</span> (uint32_t t = 0; t &lt; num_samples + discard; ++t) {</div>
 <div class="line"><span class="lineno">   79</span>        <span class="comment">// Generate a new proposal according to some mutation strategy.</span></div>
 <div class="line"><span class="lineno">   80</span>        <span class="comment">// This is arbitrary and can be swapped.</span></div>
 <div class="line"><span class="lineno">   81</span>        <span class="keywordtype">double</span> x_dash = normal(generator) + x_t;</div>
-<div class="line"><span class="lineno">   82</span>        <span class="keywordtype">double</span> acceptance_probability = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(pdf(x_dash) / pdf(x_t), 1.0);</div>
+<div class="line"><span class="lineno">   82</span>        <span class="keywordtype">double</span> acceptance_probability = std::min(pdf(x_dash) / pdf(x_t), 1.0);</div>
 <div class="line"><span class="lineno">   83</span>        <span class="keywordtype">double</span> u = uniform(generator);</div>
 <div class="line"><span class="lineno">   84</span> </div>
 <div class="line"><span class="lineno">   85</span>        <span class="comment">// Accept &quot;new state&quot; according to the acceptance_probability</span></div>
@@ -246,26 +287,13 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   88</span>        }</div>
 <div class="line"><span class="lineno">   89</span> </div>
 <div class="line"><span class="lineno">   90</span>        <span class="keywordflow">if</span> (t &gt;= discard) {</div>
-<div class="line"><span class="lineno">   91</span>            samples.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(x_t);</div>
+<div class="line"><span class="lineno">   91</span>            samples.push_back(x_t);</div>
 <div class="line"><span class="lineno">   92</span>        }</div>
 <div class="line"><span class="lineno">   93</span>    }</div>
 <div class="line"><span class="lineno">   94</span> </div>
 <div class="line"><span class="lineno">   95</span>    <span class="keywordflow">return</span> samples;</div>
 <div class="line"><span class="lineno">   96</span>}</div>
-<div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
-<div class="ttc" id="anormal_distribution_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/normal_distribution.html">std::normal_distribution</a></div></div>
-<div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
-<div class="ttc" id="arandom_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random.html">std::default_random_engine</a></div></div>
-<div class="ttc" id="areserve_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/reserve.html">std::vector::reserve</a></div><div class="ttdeci">T reserve(T... args)</div></div>
-<div class="ttc" id="atime_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a></div><div class="ttdeci">T time(T... args)</div></div>
-<div class="ttc" id="auniform_real_distribution_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/uniform_real_distribution.html">std::uniform_real_distribution</a></div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d40/integral__approximation2_8cpp_a71249ee535f16f8ed2e9cc8f0199a2cf_cgraph.svg" width="351" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af7da9ba8932f1f48b9bbc2d80471af51" name="af7da9ba8932f1f48b9bbc2d80471af51"></a>
@@ -282,12 +310,12 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">Function</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>function</em></span>, </td>
+          <td class="paramtype">const Function &amp;</td>          <td class="paramname"><span class="paramname"><em>function</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">Function</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pdf</em></span>, </td>
+          <td class="paramtype">const Function &amp;</td>          <td class="paramname"><span class="paramname"><em>pdf</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -308,9 +336,11 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The approximation of the integral according to 1/N \sum_{i}^N f(x_i) / p(x_i) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d40/integral__approximation2_8cpp_source.html#l00112">112</a> of file <a class="el" href="../../db/d40/integral__approximation2_8cpp_source.html">integral_approximation2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  114</span>                                                                   {</div>
 <div class="line"><span class="lineno">  115</span>    <span class="keywordtype">double</span> integral = 0.0;</div>
-<div class="line"><span class="lineno">  116</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;double&gt;</a> samples =</div>
+<div class="line"><span class="lineno">  116</span>    std::vector&lt;double&gt; samples =</div>
 <div class="line"><span class="lineno">  117</span>        <a class="code hl_function" href="#a71249ee535f16f8ed2e9cc8f0199a2cf">generate_samples</a>(start_point, pdf, num_samples);</div>
 <div class="line"><span class="lineno">  118</span> </div>
 <div class="line"><span class="lineno">  119</span>    <span class="keywordflow">for</span> (<span class="keywordtype">double</span> sample : samples) {</div>
@@ -319,13 +349,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  122</span> </div>
 <div class="line"><span class="lineno">  123</span>    <span class="keywordflow">return</span> integral / <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(samples.size());</div>
 <div class="line"><span class="lineno">  124</span>}</div>
-<div class="ttc" id="aintegral__approximation2_8cpp_html_a71249ee535f16f8ed2e9cc8f0199a2cf"><div class="ttname"><a href="#a71249ee535f16f8ed2e9cc8f0199a2cf">math::monte_carlo::generate_samples</a></div><div class="ttdeci">std::vector&lt; double &gt; generate_samples(const double &amp;start_point, const Function &amp;pdf, const uint32_t &amp;num_samples, const uint32_t &amp;discard=100000)</div><div class="ttdoc">short-hand for std::functions used in this implementation</div><div class="ttdef"><b>Definition</b> integral_approximation2.cpp:64</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d40/integral__approximation2_8cpp_af7da9ba8932f1f48b9bbc2d80471af51_cgraph.svg" width="540" height="143"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aintegral__approximation2_8cpp_html_a71249ee535f16f8ed2e9cc8f0199a2cf"><div class="ttname"><a href="#a71249ee535f16f8ed2e9cc8f0199a2cf">math::monte_carlo::generate_samples</a></div><div class="ttdeci">std::vector&lt; double &gt; generate_samples(const double &amp;start_point, const Function &amp;pdf, const uint32_t &amp;num_samples, const uint32_t &amp;discard=100000)</div><div class="ttdoc">short-hand for std::functions used in this implementation</div><div class="ttdef"><b>Definition</b> <a href="../../db/d40/integral__approximation2_8cpp_source.html#l00064">integral_approximation2.cpp:64</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -345,17 +370,14 @@ Here is the call graph for this function:</div>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d40/integral__approximation2_8cpp_source.html#l00215">215</a> of file <a class="el" href="../../db/d40/integral__approximation2_8cpp_source.html">integral_approximation2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  215</span>           {</div>
 <div class="line"><span class="lineno">  216</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
 <div class="line"><span class="lineno">  217</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  218</span>}</div>
-<div class="ttc" id="aintegral__approximation2_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> integral_approximation2.cpp:133</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d40/integral__approximation2_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="271" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aintegral__approximation2_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d40/integral__approximation2_8cpp_source.html#l00133">integral_approximation2.cpp:133</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -383,25 +405,27 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d40/integral__approximation2_8cpp_source.html#l00133">133</a> of file <a class="el" href="../../db/d40/integral__approximation2_8cpp_source.html">integral_approximation2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  133</span>                   {</div>
-<div class="line"><span class="lineno">  134</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Disclaimer: Because this is a randomized algorithm,&quot;</span></div>
-<div class="line"><span class="lineno">  135</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  136</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div>
+<div class="line"><span class="lineno">  134</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Disclaimer: Because this is a randomized algorithm,&quot;</span></div>
+<div class="line"><span class="lineno">  135</span>              &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  136</span>    std::cout</div>
 <div class="line"><span class="lineno">  137</span>        &lt;&lt; <span class="stringliteral">&quot;it may happen that singular samples deviate from the true result.&quot;</span></div>
-<div class="line"><span class="lineno">  138</span>        &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div>
-<div class="line"><span class="lineno">  139</span>        &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  138</span>        &lt;&lt; std::endl</div>
+<div class="line"><span class="lineno">  139</span>        &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  140</span>    ;</div>
 <div class="line"><span class="lineno">  141</span> </div>
-<div class="line"><span class="lineno">  142</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">math::monte_carlo::Function</a> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a4251b4df4748a0b9c43a48f61bdd2397">f</a>;</div>
-<div class="line"><span class="lineno">  143</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">math::monte_carlo::Function</a> pdf;</div>
+<div class="line"><span class="lineno">  142</span>    math::monte_carlo::Function <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a4251b4df4748a0b9c43a48f61bdd2397">f</a>;</div>
+<div class="line"><span class="lineno">  143</span>    math::monte_carlo::Function pdf;</div>
 <div class="line"><span class="lineno">  144</span>    <span class="keywordtype">double</span> integral = 0;</div>
-<div class="line"><span class="lineno">  145</span>    <span class="keywordtype">double</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/lower_bound.html">lower_bound</a> = 0, <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/upper_bound.html">upper_bound</a> = 0;</div>
+<div class="line"><span class="lineno">  145</span>    <span class="keywordtype">double</span> lower_bound = 0, upper_bound = 0;</div>
 <div class="line"><span class="lineno">  146</span> </div>
 <div class="line"><span class="lineno">  147</span>    <span class="comment">/* \int_{-2}^{2} -x^2 + 4 dx */</span></div>
 <div class="line"><span class="lineno">  148</span>    <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a4251b4df4748a0b9c43a48f61bdd2397">f</a> = [&amp;](<span class="keywordtype">double</span>&amp; x) { <span class="keywordflow">return</span> -x * x + 4.0; };</div>
 <div class="line"><span class="lineno">  149</span> </div>
-<div class="line"><span class="lineno">  150</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/lower_bound.html">lower_bound</a> = -2.0;</div>
-<div class="line"><span class="lineno">  151</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/upper_bound.html">upper_bound</a> = 2.0;</div>
+<div class="line"><span class="lineno">  150</span>    lower_bound = -2.0;</div>
+<div class="line"><span class="lineno">  151</span>    upper_bound = 2.0;</div>
 <div class="line"><span class="lineno">  152</span>    pdf = [&amp;](<span class="keywordtype">double</span>&amp; x) {</div>
 <div class="line"><span class="lineno">  153</span>        <span class="keywordflow">if</span> (x &gt;= lower_bound &amp;&amp; x &lt;= -1.0) {</div>
 <div class="line"><span class="lineno">  154</span>            <span class="keywordflow">return</span> 0.1;</div>
@@ -418,14 +442,14 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  165</span>    integral = <a class="code hl_function" href="#af7da9ba8932f1f48b9bbc2d80471af51">math::monte_carlo::integral_monte_carlo</a>(</div>
 <div class="line"><span class="lineno">  166</span>        (upper_bound - lower_bound) / 2.0, f, pdf);</div>
 <div class="line"><span class="lineno">  167</span> </div>
-<div class="line"><span class="lineno">  168</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;This number should be close to 10.666666: &quot;</span> &lt;&lt; integral</div>
-<div class="line"><span class="lineno">  169</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  168</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;This number should be close to 10.666666: &quot;</span> &lt;&lt; integral</div>
+<div class="line"><span class="lineno">  169</span>              &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  170</span> </div>
 <div class="line"><span class="lineno">  171</span>    <span class="comment">/* \int_{0}^{1} e^x dx */</span></div>
-<div class="line"><span class="lineno">  172</span>    <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a4251b4df4748a0b9c43a48f61bdd2397">f</a> = [&amp;](<span class="keywordtype">double</span>&amp; x) { <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/exp.html">std::exp</a>(x); };</div>
+<div class="line"><span class="lineno">  172</span>    <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a4251b4df4748a0b9c43a48f61bdd2397">f</a> = [&amp;](<span class="keywordtype">double</span>&amp; x) { <span class="keywordflow">return</span> std::exp(x); };</div>
 <div class="line"><span class="lineno">  173</span> </div>
-<div class="line"><span class="lineno">  174</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/lower_bound.html">lower_bound</a> = 0.0;</div>
-<div class="line"><span class="lineno">  175</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/upper_bound.html">upper_bound</a> = 1.0;</div>
+<div class="line"><span class="lineno">  174</span>    lower_bound = 0.0;</div>
+<div class="line"><span class="lineno">  175</span>    upper_bound = 1.0;</div>
 <div class="line"><span class="lineno">  176</span>    pdf = [&amp;](<span class="keywordtype">double</span>&amp; x) {</div>
 <div class="line"><span class="lineno">  177</span>        <span class="keywordflow">if</span> (x &gt;= lower_bound &amp;&amp; x &lt;= 0.2) {</div>
 <div class="line"><span class="lineno">  178</span>            <span class="keywordflow">return</span> 0.1;</div>
@@ -442,39 +466,27 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  189</span>    integral = <a class="code hl_function" href="#af7da9ba8932f1f48b9bbc2d80471af51">math::monte_carlo::integral_monte_carlo</a>(</div>
 <div class="line"><span class="lineno">  190</span>        (upper_bound - lower_bound) / 2.0, f, pdf);</div>
 <div class="line"><span class="lineno">  191</span> </div>
-<div class="line"><span class="lineno">  192</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;This number should be close to 1.7182818: &quot;</span> &lt;&lt; integral</div>
-<div class="line"><span class="lineno">  193</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  192</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;This number should be close to 1.7182818: &quot;</span> &lt;&lt; integral</div>
+<div class="line"><span class="lineno">  193</span>              &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  194</span> </div>
 <div class="line"><span class="lineno">  195</span>    <span class="comment">/* \int_{-\infty}^{\infty} sinc(x) dx, sinc(x) = sin(pi * x) / (pi * x)</span></div>
 <div class="line"><span class="lineno">  196</span><span class="comment">       This is a difficult integral because of its infinite domain.</span></div>
 <div class="line"><span class="lineno">  197</span><span class="comment">       Therefore, it may deviate largely from the expected result.</span></div>
 <div class="line"><span class="lineno">  198</span><span class="comment">    */</span></div>
-<div class="line"><span class="lineno">  199</span>    <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a4251b4df4748a0b9c43a48f61bdd2397">f</a> = [&amp;](<span class="keywordtype">double</span>&amp; x) { <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sin.html">std::sin</a>(M_PI * x) / (M_PI * x); };</div>
+<div class="line"><span class="lineno">  199</span>    <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a4251b4df4748a0b9c43a48f61bdd2397">f</a> = [&amp;](<span class="keywordtype">double</span>&amp; x) { <span class="keywordflow">return</span> std::sin(M_PI * x) / (M_PI * x); };</div>
 <div class="line"><span class="lineno">  200</span> </div>
 <div class="line"><span class="lineno">  201</span>    pdf = [&amp;](<span class="keywordtype">double</span>&amp; x) {</div>
-<div class="line"><span class="lineno">  202</span>        <span class="keywordflow">return</span> 1.0 / <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(2.0 * M_PI) * <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/exp.html">std::exp</a>(-x * x / 2.0);</div>
+<div class="line"><span class="lineno">  202</span>        <span class="keywordflow">return</span> 1.0 / std::sqrt(2.0 * M_PI) * std::exp(-x * x / 2.0);</div>
 <div class="line"><span class="lineno">  203</span>    };</div>
 <div class="line"><span class="lineno">  204</span> </div>
 <div class="line"><span class="lineno">  205</span>    integral = <a class="code hl_function" href="#af7da9ba8932f1f48b9bbc2d80471af51">math::monte_carlo::integral_monte_carlo</a>(0.0, f, pdf, 10000000);</div>
 <div class="line"><span class="lineno">  206</span> </div>
-<div class="line"><span class="lineno">  207</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;This number should be close to 1.0: &quot;</span> &lt;&lt; integral</div>
-<div class="line"><span class="lineno">  208</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  207</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;This number should be close to 1.0: &quot;</span> &lt;&lt; integral</div>
+<div class="line"><span class="lineno">  208</span>              &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  209</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a4251b4df4748a0b9c43a48f61bdd2397"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a4251b4df4748a0b9c43a48f61bdd2397">numerical_methods::simpson_method::f</a></div><div class="ttdeci">double f(double x)</div><div class="ttdoc">A function f(x) that will be used to test the method.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:113</div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="aexp_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/exp.html">std::exp</a></div><div class="ttdeci">T exp(T... args)</div></div>
-<div class="ttc" id="aintegral__approximation2_8cpp_html_af7da9ba8932f1f48b9bbc2d80471af51"><div class="ttname"><a href="#af7da9ba8932f1f48b9bbc2d80471af51">math::monte_carlo::integral_monte_carlo</a></div><div class="ttdeci">double integral_monte_carlo(const double &amp;start_point, const Function &amp;function, const Function &amp;pdf, const uint32_t &amp;num_samples=1000000)</div><div class="ttdoc">Compute an approximation of an integral using Monte Carlo integration.</div><div class="ttdef"><b>Definition</b> integral_approximation2.cpp:112</div></div>
-<div class="ttc" id="alower_bound_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/lower_bound.html">std::lower_bound</a></div><div class="ttdeci">T lower_bound(T... args)</div></div>
-<div class="ttc" id="asin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/sin.html">std::sin</a></div><div class="ttdeci">T sin(T... args)</div></div>
-<div class="ttc" id="asqrt_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a></div><div class="ttdeci">T sqrt(T... args)</div></div>
-<div class="ttc" id="aupper_bound_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/upper_bound.html">std::upper_bound</a></div><div class="ttdeci">T upper_bound(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d40/integral__approximation2_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="174" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a4251b4df4748a0b9c43a48f61bdd2397"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a4251b4df4748a0b9c43a48f61bdd2397">numerical_methods::simpson_method::f</a></div><div class="ttdeci">double f(double x)</div><div class="ttdoc">A function f(x) that will be used to test the method.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d18/composite__simpson__rule_8cpp_source.html#l00113">composite_simpson_rule.cpp:113</a></div></div>
+<div class="ttc" id="aintegral__approximation2_8cpp_html_af7da9ba8932f1f48b9bbc2d80471af51"><div class="ttname"><a href="#af7da9ba8932f1f48b9bbc2d80471af51">math::monte_carlo::integral_monte_carlo</a></div><div class="ttdeci">double integral_monte_carlo(const double &amp;start_point, const Function &amp;function, const Function &amp;pdf, const uint32_t &amp;num_samples=1000000)</div><div class="ttdoc">Compute an approximation of an integral using Monte Carlo integration.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d40/integral__approximation2_8cpp_source.html#l00112">integral_approximation2.cpp:112</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

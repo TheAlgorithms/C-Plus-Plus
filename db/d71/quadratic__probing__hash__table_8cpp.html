@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: hashing/quadratic_probing_hash_table.cpp File Reference</title>
+<title>TheAlgorithms/C++: hashing/quadratic_probing_hash_table.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -123,7 +140,9 @@ Include dependency graph for quadratic_probing_hash_table.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d61/quadratic__probing__hash__table_8cpp__incl.svg" width="244" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../db/d71/quadratic__probing__hash__table_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd1/structquadratic__probing_1_1_entry.html">quadratic_probing::Entry</a></td></tr>
@@ -164,23 +183,17 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a90f9d8a71e3f148b65bcc0c1c8a49c70" id="r_a90f9d8a71e3f148b65bcc0c1c8a49c70"><td class="memItemLeft" align="right" valign="top"><a id="a90f9d8a71e3f148b65bcc0c1c8a49c70" name="a90f9d8a71e3f148b65bcc0c1c8a49c70"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>quadratic_probing::notPresent</b></td></tr>
+<tr class="memitem:a90f9d8a71e3f148b65bcc0c1c8a49c70" id="r_a90f9d8a71e3f148b65bcc0c1c8a49c70"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd2/namespacequadratic__probing.html#a90f9d8a71e3f148b65bcc0c1c8a49c70">quadratic_probing::notPresent</a></td></tr>
 <tr class="separator:a90f9d8a71e3f148b65bcc0c1c8a49c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a149e32e186c3fac390ffa81dd6c73147" id="r_a149e32e186c3fac390ffa81dd6c73147"><td class="memItemLeft" align="right" valign="top"><a id="a149e32e186c3fac390ffa81dd6c73147" name="a149e32e186c3fac390ffa81dd6c73147"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../da/dd1/structquadratic__probing_1_1_entry.html">Entry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>quadratic_probing::table</b></td></tr>
+<tr class="memitem:a149e32e186c3fac390ffa81dd6c73147" id="r_a149e32e186c3fac390ffa81dd6c73147"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../da/dd1/structquadratic__probing_1_1_entry.html">Entry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd2/namespacequadratic__probing.html#a149e32e186c3fac390ffa81dd6c73147">quadratic_probing::table</a></td></tr>
 <tr class="separator:a149e32e186c3fac390ffa81dd6c73147"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d5722a3b692eeb1b96615fba6a248f3" id="r_a2d5722a3b692eeb1b96615fba6a248f3"><td class="memItemLeft" align="right" valign="top"><a id="a2d5722a3b692eeb1b96615fba6a248f3" name="a2d5722a3b692eeb1b96615fba6a248f3"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>quadratic_probing::totalSize</b></td></tr>
+<tr class="memitem:a2d5722a3b692eeb1b96615fba6a248f3" id="r_a2d5722a3b692eeb1b96615fba6a248f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd2/namespacequadratic__probing.html#a2d5722a3b692eeb1b96615fba6a248f3">quadratic_probing::totalSize</a></td></tr>
 <tr class="separator:a2d5722a3b692eeb1b96615fba6a248f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa4b6c021ba71ecdac8b23b45d55c774" id="r_aaa4b6c021ba71ecdac8b23b45d55c774"><td class="memItemLeft" align="right" valign="top"><a id="aaa4b6c021ba71ecdac8b23b45d55c774" name="aaa4b6c021ba71ecdac8b23b45d55c774"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>quadratic_probing::tomb</b> = -1</td></tr>
+<tr class="memitem:aaa4b6c021ba71ecdac8b23b45d55c774" id="r_aaa4b6c021ba71ecdac8b23b45d55c774"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd2/namespacequadratic__probing.html#aaa4b6c021ba71ecdac8b23b45d55c774">quadratic_probing::tomb</a> = -1</td></tr>
 <tr class="separator:aaa4b6c021ba71ecdac8b23b45d55c774"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c60d84648b0f7bf78789da196bcd2b3" id="r_a6c60d84648b0f7bf78789da196bcd2b3"><td class="memItemLeft" align="right" valign="top"><a id="a6c60d84648b0f7bf78789da196bcd2b3" name="a6c60d84648b0f7bf78789da196bcd2b3"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>quadratic_probing::size</b></td></tr>
+<tr class="memitem:a6c60d84648b0f7bf78789da196bcd2b3" id="r_a6c60d84648b0f7bf78789da196bcd2b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd2/namespacequadratic__probing.html#a6c60d84648b0f7bf78789da196bcd2b3">quadratic_probing::size</a></td></tr>
 <tr class="separator:a6c60d84648b0f7bf78789da196bcd2b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad20bb8020424def88917e26979051fae" id="r_ad20bb8020424def88917e26979051fae"><td class="memItemLeft" align="right" valign="top"><a id="ad20bb8020424def88917e26979051fae" name="ad20bb8020424def88917e26979051fae"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>quadratic_probing::rehashing</b></td></tr>
+<tr class="memitem:ad20bb8020424def88917e26979051fae" id="r_ad20bb8020424def88917e26979051fae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd2/namespacequadratic__probing.html#ad20bb8020424def88917e26979051fae">quadratic_probing::rehashing</a></td></tr>
 <tr class="separator:ad20bb8020424def88917e26979051fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -189,6 +202,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>quadratic_probing::re
 <dd>
 <a href="https://github.com/kvedala" target="_blank">Krishna Vedala</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The implementation can be optimized by using OOP style. </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../db/d71/quadratic__probing__hash__table_8cpp_source.html">quadratic_probing_hash_table.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -205,48 +220,50 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>quadratic_probing::re
       </table>
 </div><div class="memdoc">
 <p>Main function </p><dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d71/quadratic__probing__hash__table_8cpp_source.html#l00246">246</a> of file <a class="el" href="../../db/d71/quadratic__probing__hash__table_8cpp_source.html">quadratic_probing_hash_table.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  246</span>           {</div>
 <div class="line"><span class="lineno">  247</span>    <span class="keywordtype">int</span> cmd = 0, <a class="code hl_function" href="../../d5/d96/md5_8cpp.html#a88705fab5f92adf3427b4cf76ff33edb">hash</a> = 0, key = 0;</div>
-<div class="line"><span class="lineno">  248</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter the initial size of Hash Table. = &quot;</span>;</div>
-<div class="line"><span class="lineno">  249</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; totalSize;</div>
-<div class="line"><span class="lineno">  250</span>    table = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;Entry&gt;</a>(totalSize);</div>
+<div class="line"><span class="lineno">  248</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter the initial size of Hash Table. = &quot;</span>;</div>
+<div class="line"><span class="lineno">  249</span>    std::cin &gt;&gt; totalSize;</div>
+<div class="line"><span class="lineno">  250</span>    table = std::vector&lt;Entry&gt;(totalSize);</div>
 <div class="line"><span class="lineno">  251</span>    <span class="keywordtype">bool</span> loop = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  252</span>    <span class="keywordflow">while</span> (loop) {</div>
-<div class="line"><span class="lineno">  253</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  254</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;PLEASE CHOOSE -&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  255</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;1. Add key. (Numeric only)&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  256</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;2. Remove key.&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  257</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;3. Find key.&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  258</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;4. Generate Hash. (Numeric only)&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  259</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;5. Display Hash table.&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  260</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;6. Exit.&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  261</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; cmd;</div>
+<div class="line"><span class="lineno">  253</span>        std::cout &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  254</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;PLEASE CHOOSE -&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  255</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;1. Add key. (Numeric only)&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  256</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;2. Remove key.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  257</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;3. Find key.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  258</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;4. Generate Hash. (Numeric only)&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  259</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;5. Display Hash table.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  260</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;6. Exit.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  261</span>        std::cin &gt;&gt; cmd;</div>
 <div class="line"><span class="lineno">  262</span>        <span class="keywordflow">switch</span> (cmd) {</div>
 <div class="line"><span class="lineno">  263</span>            <span class="keywordflow">case</span> 1:</div>
-<div class="line"><span class="lineno">  264</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter key to add = &quot;</span>;</div>
-<div class="line"><span class="lineno">  265</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; key;</div>
+<div class="line"><span class="lineno">  264</span>                std::cout &lt;&lt; <span class="stringliteral">&quot;Enter key to add = &quot;</span>;</div>
+<div class="line"><span class="lineno">  265</span>                std::cin &gt;&gt; key;</div>
 <div class="line"><span class="lineno">  266</span>                <a class="code hl_function" href="../../d4/dd2/namespacequadratic__probing.html#a312143ed316d48978084c025ff8d9768">quadratic_probing::addInfo</a>(key);</div>
 <div class="line"><span class="lineno">  267</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  268</span>            <span class="keywordflow">case</span> 2:</div>
-<div class="line"><span class="lineno">  269</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter key to remove = &quot;</span>;</div>
-<div class="line"><span class="lineno">  270</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; key;</div>
+<div class="line"><span class="lineno">  269</span>                std::cout &lt;&lt; <span class="stringliteral">&quot;Enter key to remove = &quot;</span>;</div>
+<div class="line"><span class="lineno">  270</span>                std::cin &gt;&gt; key;</div>
 <div class="line"><span class="lineno">  271</span>                <a class="code hl_function" href="../../d4/dd2/namespacequadratic__probing.html#a69fe1f7c36fe004ba83eef2ca82e7e30">quadratic_probing::removalInfo</a>(key);</div>
 <div class="line"><span class="lineno">  272</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  273</span>            <span class="keywordflow">case</span> 3: {</div>
-<div class="line"><span class="lineno">  274</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter key to search = &quot;</span>;</div>
-<div class="line"><span class="lineno">  275</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; key;</div>
+<div class="line"><span class="lineno">  274</span>                std::cout &lt;&lt; <span class="stringliteral">&quot;Enter key to search = &quot;</span>;</div>
+<div class="line"><span class="lineno">  275</span>                std::cin &gt;&gt; key;</div>
 <div class="line"><span class="lineno">  276</span>                <a class="code hl_struct" href="../../da/dd1/structquadratic__probing_1_1_entry.html">quadratic_probing::Entry</a> entry =</div>
 <div class="line"><span class="lineno">  277</span>                    quadratic_probing::table[<a class="code hl_function" href="../../d4/dd2/namespacequadratic__probing.html#ab431981b54c0bae1b2956f716aee1dcf">quadratic_probing::quadraticProbe</a>(</div>
 <div class="line"><span class="lineno">  278</span>                        key, <span class="keyword">true</span>)];</div>
 <div class="line"><span class="lineno">  279</span>                <span class="keywordflow">if</span> (entry.<a class="code hl_variable" href="../../da/dd1/structquadratic__probing_1_1_entry.html#a75f72858f08a2fc8b94402de98db12d8">key</a> == quadratic_probing::notPresent) {</div>
-<div class="line"><span class="lineno">  280</span>                    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Key not present&quot;</span>;</div>
+<div class="line"><span class="lineno">  280</span>                    std::cout &lt;&lt; <span class="stringliteral">&quot;Key not present&quot;</span>;</div>
 <div class="line"><span class="lineno">  281</span>                }</div>
 <div class="line"><span class="lineno">  282</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  283</span>            }</div>
 <div class="line"><span class="lineno">  284</span>            <span class="keywordflow">case</span> 4:</div>
-<div class="line"><span class="lineno">  285</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter element to generate hash = &quot;</span>;</div>
-<div class="line"><span class="lineno">  286</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; key;</div>
-<div class="line"><span class="lineno">  287</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Hash of &quot;</span> &lt;&lt; key</div>
+<div class="line"><span class="lineno">  285</span>                std::cout &lt;&lt; <span class="stringliteral">&quot;Enter element to generate hash = &quot;</span>;</div>
+<div class="line"><span class="lineno">  286</span>                std::cin &gt;&gt; key;</div>
+<div class="line"><span class="lineno">  287</span>                std::cout &lt;&lt; <span class="stringliteral">&quot;Hash of &quot;</span> &lt;&lt; key</div>
 <div class="line"><span class="lineno">  288</span>                          &lt;&lt; <span class="stringliteral">&quot; is = &quot;</span> &lt;&lt; <a class="code hl_function" href="../../d4/dd2/namespacequadratic__probing.html#a2093d91dd3d377cf0a5c939e45dcefc7">quadratic_probing::hashFxn</a>(key);</div>
 <div class="line"><span class="lineno">  289</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  290</span>            <span class="keywordflow">case</span> 5:</div>
@@ -257,28 +274,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>quadratic_probing::re
 <div class="line"><span class="lineno">  295</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  296</span>                <span class="comment">// delete[] table;</span></div>
 <div class="line"><span class="lineno">  297</span>        }</div>
-<div class="line"><span class="lineno">  298</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  298</span>        std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  299</span>    }</div>
 <div class="line"><span class="lineno">  300</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  301</span>}</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="amd5_8cpp_html_a88705fab5f92adf3427b4cf76ff33edb"><div class="ttname"><a href="../../d5/d96/md5_8cpp.html#a88705fab5f92adf3427b4cf76ff33edb">hashing::md5::hash</a></div><div class="ttdeci">void * hash(const std::string &amp;message)</div><div class="ttdoc">Converts the string to bytestring and calls the main algorithm.</div><div class="ttdef"><b>Definition</b> md5.cpp:288</div></div>
-<div class="ttc" id="anamespacequadratic__probing_html_a2093d91dd3d377cf0a5c939e45dcefc7"><div class="ttname"><a href="../../d4/dd2/namespacequadratic__probing.html#a2093d91dd3d377cf0a5c939e45dcefc7">quadratic_probing::hashFxn</a></div><div class="ttdeci">size_t hashFxn(int key)</div><div class="ttdef"><b>Definition</b> quadratic_probing_hash_table.cpp:46</div></div>
-<div class="ttc" id="anamespacequadratic__probing_html_a312143ed316d48978084c025ff8d9768"><div class="ttname"><a href="../../d4/dd2/namespacequadratic__probing.html#a312143ed316d48978084c025ff8d9768">quadratic_probing::addInfo</a></div><div class="ttdeci">void addInfo(int key)</div><div class="ttdef"><b>Definition</b> quadratic_probing_hash_table.cpp:207</div></div>
-<div class="ttc" id="anamespacequadratic__probing_html_a40d617ebf4d6ba21bcda8d8d1faa2357"><div class="ttname"><a href="../../d4/dd2/namespacequadratic__probing.html#a40d617ebf4d6ba21bcda8d8d1faa2357">quadratic_probing::display</a></div><div class="ttdeci">void display()</div><div class="ttdef"><b>Definition</b> quadratic_probing_hash_table.cpp:142</div></div>
-<div class="ttc" id="anamespacequadratic__probing_html_a69fe1f7c36fe004ba83eef2ca82e7e30"><div class="ttname"><a href="../../d4/dd2/namespacequadratic__probing.html#a69fe1f7c36fe004ba83eef2ca82e7e30">quadratic_probing::removalInfo</a></div><div class="ttdeci">void removalInfo(int key)</div><div class="ttdef"><b>Definition</b> quadratic_probing_hash_table.cpp:222</div></div>
-<div class="ttc" id="anamespacequadratic__probing_html_ab431981b54c0bae1b2956f716aee1dcf"><div class="ttname"><a href="../../d4/dd2/namespacequadratic__probing.html#ab431981b54c0bae1b2956f716aee1dcf">quadratic_probing::quadraticProbe</a></div><div class="ttdeci">int quadraticProbe(int key, bool searching)</div><div class="ttdef"><b>Definition</b> quadratic_probing_hash_table.cpp:56</div></div>
-<div class="ttc" id="astructquadratic__probing_1_1_entry_html"><div class="ttname"><a href="../../da/dd1/structquadratic__probing_1_1_entry.html">quadratic_probing::Entry</a></div><div class="ttdef"><b>Definition</b> quadratic_probing_hash_table.cpp:37</div></div>
-<div class="ttc" id="astructquadratic__probing_1_1_entry_html_a75f72858f08a2fc8b94402de98db12d8"><div class="ttname"><a href="../../da/dd1/structquadratic__probing_1_1_entry.html#a75f72858f08a2fc8b94402de98db12d8">quadratic_probing::Entry::key</a></div><div class="ttdeci">int key</div><div class="ttdoc">key value</div><div class="ttdef"><b>Definition</b> quadratic_probing_hash_table.cpp:39</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../db/d71/quadratic__probing__hash__table_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="amd5_8cpp_html_a88705fab5f92adf3427b4cf76ff33edb"><div class="ttname"><a href="../../d5/d96/md5_8cpp.html#a88705fab5f92adf3427b4cf76ff33edb">hashing::md5::hash</a></div><div class="ttdeci">void * hash(const std::string &amp;message)</div><div class="ttdoc">Converts the string to bytestring and calls the main algorithm.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d96/md5_8cpp_source.html#l00288">md5.cpp:288</a></div></div>
+<div class="ttc" id="anamespacequadratic__probing_html_a2093d91dd3d377cf0a5c939e45dcefc7"><div class="ttname"><a href="../../d4/dd2/namespacequadratic__probing.html#a2093d91dd3d377cf0a5c939e45dcefc7">quadratic_probing::hashFxn</a></div><div class="ttdeci">size_t hashFxn(int key)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d71/quadratic__probing__hash__table_8cpp_source.html#l00046">quadratic_probing_hash_table.cpp:46</a></div></div>
+<div class="ttc" id="anamespacequadratic__probing_html_a312143ed316d48978084c025ff8d9768"><div class="ttname"><a href="../../d4/dd2/namespacequadratic__probing.html#a312143ed316d48978084c025ff8d9768">quadratic_probing::addInfo</a></div><div class="ttdeci">void addInfo(int key)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d71/quadratic__probing__hash__table_8cpp_source.html#l00207">quadratic_probing_hash_table.cpp:207</a></div></div>
+<div class="ttc" id="anamespacequadratic__probing_html_a40d617ebf4d6ba21bcda8d8d1faa2357"><div class="ttname"><a href="../../d4/dd2/namespacequadratic__probing.html#a40d617ebf4d6ba21bcda8d8d1faa2357">quadratic_probing::display</a></div><div class="ttdeci">void display()</div><div class="ttdef"><b>Definition</b> <a href="../../db/d71/quadratic__probing__hash__table_8cpp_source.html#l00142">quadratic_probing_hash_table.cpp:142</a></div></div>
+<div class="ttc" id="anamespacequadratic__probing_html_a69fe1f7c36fe004ba83eef2ca82e7e30"><div class="ttname"><a href="../../d4/dd2/namespacequadratic__probing.html#a69fe1f7c36fe004ba83eef2ca82e7e30">quadratic_probing::removalInfo</a></div><div class="ttdeci">void removalInfo(int key)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d71/quadratic__probing__hash__table_8cpp_source.html#l00222">quadratic_probing_hash_table.cpp:222</a></div></div>
+<div class="ttc" id="anamespacequadratic__probing_html_ab431981b54c0bae1b2956f716aee1dcf"><div class="ttname"><a href="../../d4/dd2/namespacequadratic__probing.html#ab431981b54c0bae1b2956f716aee1dcf">quadratic_probing::quadraticProbe</a></div><div class="ttdeci">int quadraticProbe(int key, bool searching)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d71/quadratic__probing__hash__table_8cpp_source.html#l00056">quadratic_probing_hash_table.cpp:56</a></div></div>
+<div class="ttc" id="astructquadratic__probing_1_1_entry_html"><div class="ttname"><a href="../../da/dd1/structquadratic__probing_1_1_entry.html">quadratic_probing::Entry</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d71/quadratic__probing__hash__table_8cpp_source.html#l00037">quadratic_probing_hash_table.cpp:37</a></div></div>
+<div class="ttc" id="astructquadratic__probing_1_1_entry_html_a75f72858f08a2fc8b94402de98db12d8"><div class="ttname"><a href="../../da/dd1/structquadratic__probing_1_1_entry.html#a75f72858f08a2fc8b94402de98db12d8">quadratic_probing::Entry::key</a></div><div class="ttdeci">int key</div><div class="ttdoc">key value</div><div class="ttdef"><b>Definition</b> <a href="../../db/d71/quadratic__probing__hash__table_8cpp_source.html#l00039">quadratic_probing_hash_table.cpp:39</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

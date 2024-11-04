@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: math/n_bonacci.cpp File Reference</title>
+<title>TheAlgorithms/C++: math/n_bonacci.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -122,7 +139,9 @@ Include dependency graph for n_bonacci.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d95/n__bonacci_8cpp__incl.svg" width="336" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../db/d27/n__bonacci_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html">math</a></td></tr>
@@ -134,7 +153,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6849b68f760be628d5975ab3eddec63d" id="r_a6849b68f760be628d5975ab3eddec63d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6849b68f760be628d5975ab3eddec63d">math::n_bonacci::N_bonacci</a> (const uint64_t &amp;n, const uint64_t &amp;m)</td></tr>
+<tr class="memitem:a6849b68f760be628d5975ab3eddec63d" id="r_a6849b68f760be628d5975ab3eddec63d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6849b68f760be628d5975ab3eddec63d">math::n_bonacci::N_bonacci</a> (const uint64_t &amp;n, const uint64_t &amp;m)</td></tr>
 <tr class="memdesc:a6849b68f760be628d5975ab3eddec63d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the N-Bonacci series for the <code>n</code> parameter value and <code>m</code> parameter terms.  <br /></td></tr>
 <tr class="separator:a6849b68f760be628d5975ab3eddec63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
@@ -149,6 +168,8 @@ Functions</h2></td></tr>
 <p>In general, in N-bonacci sequence, we generate sum of preceding N numbers from the next term.</p>
 <p>For example, a 3-bonacci sequence is the following: 0, 0, 1, 1, 2, 4, 7, 13, 24, 44, 81 In this code we take N and M as input where M is the number of terms to be printed of the N-bonacci series</p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/Swastyy" target="_blank">Swastika Gupta</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../db/d27/n__bonacci_8cpp_source.html">n_bonacci.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -167,17 +188,14 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d27/n__bonacci_8cpp_source.html#l00104">104</a> of file <a class="el" href="../../db/d27/n__bonacci_8cpp_source.html">n_bonacci.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  104</span>           {</div>
 <div class="line"><span class="lineno">  105</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
 <div class="line"><span class="lineno">  106</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  107</span>}</div>
-<div class="ttc" id="an__bonacci_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> n_bonacci.cpp:69</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d27/n__bonacci_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="271" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="an__bonacci_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d27/n__bonacci_8cpp_source.html#l00069">n_bonacci.cpp:69</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6849b68f760be628d5975ab3eddec63d" name="a6849b68f760be628d5975ab3eddec63d"></a>
@@ -187,7 +205,7 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint64_t &gt; math::n_bonacci::N_bonacci </td>
+          <td class="memname">std::vector&lt; uint64_t &gt; math::n_bonacci::N_bonacci </td>
           <td>(</td>
           <td class="paramtype">const uint64_t &amp;</td>          <td class="paramname"><span class="paramname"><em>n</em></span>, </td>
         </tr>
@@ -210,21 +228,21 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>the n-bonacci sequence as vector array </dd></dl>
 <p>we initialise the (n-1)th term as 1 which is the sum of preceding N zeros</p>
 <p>similarily the sum of preceding N zeros and the (N+1)th 1 is also 1</p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d27/n__bonacci_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../db/d27/n__bonacci_8cpp_source.html">n_bonacci.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   40</span>                                                                    {</div>
-<div class="line"><span class="lineno">   41</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> a(</div>
+<div class="line"><span class="lineno">   41</span>    std::vector&lt;uint64_t&gt; a(</div>
 <div class="line"><span class="lineno">   42</span>        m, 0);  <span class="comment">// we create an array of size m filled with zeros</span></div>
 <div class="line"><span class="lineno">   43</span>    <span class="keywordflow">if</span> (m &lt; n || n == 0) {</div>
 <div class="line"><span class="lineno">   44</span>        <span class="keywordflow">return</span> a;</div>
 <div class="line"><span class="lineno">   45</span>    }</div>
 <div class="line"><span class="lineno">   46</span> </div>
-<div class="line"><span class="lineno">   47</span>    a[n - 1] = 1;  <span class="comment">/// we initialise the (n-1)th term as 1 which is the sum of</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">   48</span><span class="comment">                   /// preceding N zeros</span></div>
-<div class="line"><span class="lineno">   49</span><span class="comment"></span>    <span class="keywordflow">if</span> (n == m) {</div>
+<div class="line"><span class="lineno">   47</span>    a[n - 1] = 1;  </div>
+<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">if</span> (n == m) {</div>
 <div class="line"><span class="lineno">   50</span>        <span class="keywordflow">return</span> a;</div>
 <div class="line"><span class="lineno">   51</span>    }</div>
-<div class="line"><span class="lineno">   52</span>    a[n] = 1;  <span class="comment">/// similarily the sum of preceding N zeros and the (N+1)th 1 is</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">   53</span><span class="comment">               /// also 1</span></div>
-<div class="line"><span class="lineno">   54</span><span class="comment"></span>    <span class="keywordflow">for</span> (uint64_t i = n + 1; i &lt; m; i++) {</div>
+<div class="line"><span class="lineno">   52</span>    a[n] = 1;  </div>
+<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">for</span> (uint64_t i = n + 1; i &lt; m; i++) {</div>
 <div class="line"><span class="lineno">   55</span>        <span class="comment">// this is an optimized solution that works in O(M) time and takes O(M)</span></div>
 <div class="line"><span class="lineno">   56</span>        <span class="comment">// extra space here we use the concept of the sliding window the current</span></div>
 <div class="line"><span class="lineno">   57</span>        <span class="comment">// term can be computed using the given formula</span></div>
@@ -232,13 +250,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   59</span>    }</div>
 <div class="line"><span class="lineno">   60</span>    <span class="keywordflow">return</span> a;</div>
 <div class="line"><span class="lineno">   61</span>}</div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d27/n__bonacci_8cpp_a6849b68f760be628d5975ab3eddec63d_cgraph.svg" width="147" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -266,18 +278,20 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d27/n__bonacci_8cpp_source.html#l00069">69</a> of file <a class="el" href="../../db/d27/n__bonacci_8cpp_source.html">n_bonacci.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   69</span>                   {</div>
 <div class="line"><span class="lineno">   70</span>    <span class="keyword">struct </span><a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a> {</div>
 <div class="line"><span class="lineno">   71</span>        <span class="keyword">const</span> uint64_t n;</div>
 <div class="line"><span class="lineno">   72</span>        <span class="keyword">const</span> uint64_t m;</div>
-<div class="line"><span class="lineno">   73</span>        <span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> expected;</div>
+<div class="line"><span class="lineno">   73</span>        <span class="keyword">const</span> std::vector&lt;uint64_t&gt; expected;</div>
 <div class="line"><span class="lineno">   74</span>        <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(<span class="keyword">const</span> uint64_t in_n, <span class="keyword">const</span> uint64_t in_m,</div>
-<div class="line"><span class="lineno">   75</span>                 <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/initializer_list.html">std::initializer_list&lt;uint64_t&gt;</a> <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>)</div>
+<div class="line"><span class="lineno">   75</span>                 std::initializer_list&lt;uint64_t&gt; <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>)</div>
 <div class="line"><span class="lineno">   76</span>            : n(in_n), m(in_m), expected(<a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>) {</div>
 <div class="line"><span class="lineno">   77</span>            assert(<a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>.size() == m);</div>
 <div class="line"><span class="lineno">   78</span>        }</div>
 <div class="line"><span class="lineno">   79</span>    };</div>
-<div class="line"><span class="lineno">   80</span>    <span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;TestCase&gt;</a> test_cases = {</div>
+<div class="line"><span class="lineno">   80</span>    <span class="keyword">const</span> std::vector&lt;TestCase&gt; test_cases = {</div>
 <div class="line"><span class="lineno">   81</span>        <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(0, 0, {}),</div>
 <div class="line"><span class="lineno">   82</span>        <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(0, 1, {0}),</div>
 <div class="line"><span class="lineno">   83</span>        <a class="code hl_struct" href="../../da/d86/struct_test_case.html">TestCase</a>(0, 2, {0, 0}),</div>
@@ -294,19 +308,11 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   94</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;tc : test_cases) {</div>
 <div class="line"><span class="lineno">   95</span>        assert(math::n_bonacci::N_bonacci(tc.n, tc.m) == tc.expected);</div>
 <div class="line"><span class="lineno">   96</span>    }</div>
-<div class="line"><span class="lineno">   97</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   97</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   98</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="ahash__search_8cpp_html_a6e1a77282bc65ad359d753d25df23243"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a></div><div class="ttdeci">int data[MAX]</div><div class="ttdoc">test data</div><div class="ttdef"><b>Definition</b> hash_search.cpp:24</div></div>
-<div class="ttc" id="ainitializer_list_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/initializer_list.html">std::initializer_list</a></div></div>
-<div class="ttc" id="astruct_test_case_html"><div class="ttname"><a href="../../da/d86/struct_test_case.html">TestCase</a></div><div class="ttdoc">represents single example inputs and expected output of the function longest_common_string_length</div><div class="ttdef"><b>Definition</b> longest_common_string.cpp:54</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d27/n__bonacci_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="174" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="ahash__search_8cpp_html_a6e1a77282bc65ad359d753d25df23243"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a></div><div class="ttdeci">int data[MAX]</div><div class="ttdoc">test data</div><div class="ttdef"><b>Definition</b> <a href="../../d1/df3/hash__search_8cpp_source.html#l00024">hash_search.cpp:24</a></div></div>
+<div class="ttc" id="astruct_test_case_html"><div class="ttname"><a href="../../da/d86/struct_test_case.html">TestCase</a></div><div class="ttdoc">represents single example inputs and expected output of the function longest_common_string_length</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/longest__common__string_8cpp_source.html#l00054">longest_common_string.cpp:54</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

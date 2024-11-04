@@ -1,7 +1,0 @@
-<map id="data_structures::tree_234::Tree234::TryLeftRotate" name="data_structures::tree_234::Tree234::TryLeftRotate">
-<area shape="rect" id="Node000001" title="A handy function to try if we can do a left rotate to the target node." alt="" coords="5,39,198,79"/>
-<area shape="rect" id="Node000002" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#afd9f83e2d5d7f22f79c1348e98914631" title="Check if node is a 2&#45;node." alt="" coords="260,5,405,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,42,244,36,245,41,199,48"/>
-<area shape="rect" id="Node000003" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae58dca20f08eaf9313f6e7b0869c2d0e" title="Do the actual left rotate operation." alt="" coords="246,71,419,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,70,231,74,230,80,198,75"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="dynamic_programming::abbreviation::abbreviation_recursion" name="dynamic_programming::abbreviation::abbreviation_recursion">
-<area shape="rect" id="Node000001" title="Recursive Dynamic Programming function." alt="" coords="5,29,183,85"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="56,29,56,19,63,10,76,5,94,3,114,5,127,12,124,17,113,10,94,8,77,10,66,14,61,21,61,29"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/at.html#" title=" " alt="" coords="235,19,338,45"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="183,43,219,38,220,43,183,48"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="231,68,342,94"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="183,66,216,70,215,75,183,71"/>
-</map>

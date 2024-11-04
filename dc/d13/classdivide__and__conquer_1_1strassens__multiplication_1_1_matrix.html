@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: divide_and_conquer::strassens_multiplication::Matrix&lt; T, typename &gt; Class Template Reference</title>
+<title>TheAlgorithms/C++: divide_and_conquer::strassens_multiplication::Matrix&lt; T, typename &gt; Class Template Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -131,11 +148,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4aa49765cce39ce48b9241e993e0cfb9"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4aa49765cce39ce48b9241e993e0cfb9">Matrix</a> (const Integer rows, const Integer cols)</td></tr>
 <tr class="memdesc:a4aa49765cce39ce48b9241e993e0cfb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:a4aa49765cce39ce48b9241e993e0cfb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4e183ec8eab778cb243e4ae0b22a0f1" id="r_ae4e183ec8eab778cb243e4ae0b22a0f1"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; size_t, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4e183ec8eab778cb243e4ae0b22a0f1">size</a> () const</td></tr>
+<tr class="memitem:ae4e183ec8eab778cb243e4ae0b22a0f1" id="r_ae4e183ec8eab778cb243e4ae0b22a0f1"><td class="memItemLeft" align="right" valign="top">std::pair&lt; size_t, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4e183ec8eab778cb243e4ae0b22a0f1">size</a> () const</td></tr>
 <tr class="memdesc:ae4e183ec8eab778cb243e4ae0b22a0f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the matrix shape.  <br /></td></tr>
 <tr class="separator:ae4e183ec8eab778cb243e4ae0b22a0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4c64e5723fa12a043fd0a7f5ed5bb37" id="r_ac4c64e5723fa12a043fd0a7f5ed5bb37"><td class="memTemplParams" colspan="2">template&lt;typename Integer , typename  = typename std::enable_if&lt;                  std::is_integral&lt;Integer&gt;::value, Integer&gt;::type&gt; </td></tr>
-<tr class="memitem:ac4c64e5723fa12a043fd0a7f5ed5bb37"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac4c64e5723fa12a043fd0a7f5ed5bb37">operator[]</a> (const Integer index)</td></tr>
+<tr class="memitem:ac4c64e5723fa12a043fd0a7f5ed5bb37"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac4c64e5723fa12a043fd0a7f5ed5bb37">operator[]</a> (const Integer index)</td></tr>
 <tr class="memdesc:ac4c64e5723fa12a043fd0a7f5ed5bb37"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the address of the element at ith place (here ith row of the matrix)  <br /></td></tr>
 <tr class="separator:ac4c64e5723fa12a043fd0a7f5ed5bb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fcb7db9bdeabd874712ec4f00483d17" id="r_a1fcb7db9bdeabd874712ec4f00483d17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fcb7db9bdeabd874712ec4f00483d17">slice</a> (const size_t row_start, const size_t row_end=MAX_SIZE, const size_t col_start=MAX_SIZE, const size_t col_end=MAX_SIZE) const</td></tr>
@@ -191,18 +208,19 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a048f49ac4b28af539a9669e696c8a843" id="r_a048f49ac4b28af539a9669e696c8a843"><td class="memItemLeft" align="right" valign="top"><a id="a048f49ac4b28af539a9669e696c8a843" name="a048f49ac4b28af539a9669e696c8a843"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_mat</b></td></tr>
+<tr class="memitem:a048f49ac4b28af539a9669e696c8a843" id="r_a048f49ac4b28af539a9669e696c8a843"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a048f49ac4b28af539a9669e696c8a843">_mat</a></td></tr>
 <tr class="separator:a048f49ac4b28af539a9669e696c8a843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a6e6290aa94e1b8fc00732531b4842f6e" id="r_a6e6290aa94e1b8fc00732531b4842f6e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e6290aa94e1b8fc00732531b4842f6e">operator&lt;&lt;</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp;out, const <a class="el" href="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html">Matrix</a>&lt; T &gt; &amp;mat)</td></tr>
+<tr class="memitem:a6e6290aa94e1b8fc00732531b4842f6e" id="r_a6e6290aa94e1b8fc00732531b4842f6e"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e6290aa94e1b8fc00732531b4842f6e">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html">Matrix</a>&lt; T &gt; &amp;mat)</td></tr>
 <tr class="separator:a6e6290aa94e1b8fc00732531b4842f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T, typename = typename std::enable_if&lt;              std::is_integral&lt;T&gt;::value || std::is_floating_point&lt;T&gt;::value,              bool&gt;::type&gt;<br />
 class divide_and_conquer::strassens_multiplication::Matrix&lt; T, typename &gt;</div><p><a class="el" href="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html" title="Matrix class.">Matrix</a> class. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html">strassen_matrix_multiplication.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a01f3a05cf5abdc5d63999ef1bf9f9256" name="a01f3a05cf5abdc5d63999ef1bf9f9256"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a01f3a05cf5abdc5d63999ef1bf9f9256">&#9670;&#160;</a></span>Matrix() <span class="overload">[1/2]</span></h2>
@@ -244,20 +262,15 @@ template&lt;typename Integer , typename  = typename std::enable_if&lt;          
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00053">53</a> of file <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html">strassen_matrix_multiplication.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   53</span>                                        {</div>
 <div class="line"><span class="lineno">   54</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_function" href="#ae4e183ec8eab778cb243e4ae0b22a0f1">size</a>; ++i) {</div>
-<div class="line"><span class="lineno">   55</span>            _mat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/emplace_back.html">emplace_back</a>(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a>(<a class="code hl_function" href="#ae4e183ec8eab778cb243e4ae0b22a0f1">size</a>, 0));</div>
+<div class="line"><span class="lineno">   55</span>            _mat.emplace_back(std::vector&lt;T&gt;(<a class="code hl_function" href="#ae4e183ec8eab778cb243e4ae0b22a0f1">size</a>, 0));</div>
 <div class="line"><span class="lineno">   56</span>        }</div>
 <div class="line"><span class="lineno">   57</span>    }</div>
-<div class="ttc" id="aclassdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_html_ae4e183ec8eab778cb243e4ae0b22a0f1"><div class="ttname"><a href="#ae4e183ec8eab778cb243e4ae0b22a0f1">divide_and_conquer::strassens_multiplication::Matrix::size</a></div><div class="ttdeci">std::pair&lt; size_t, size_t &gt; size() const</div><div class="ttdoc">Get the matrix shape.</div><div class="ttdef"><b>Definition</b> strassen_matrix_multiplication.cpp:79</div></div>
-<div class="ttc" id="aemplace_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/emplace_back.html">std::vector::emplace_back</a></div><div class="ttdeci">T emplace_back(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_a01f3a05cf5abdc5d63999ef1bf9f9256_cgraph.svg" width="567" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_html_ae4e183ec8eab778cb243e4ae0b22a0f1"><div class="ttname"><a href="#ae4e183ec8eab778cb243e4ae0b22a0f1">divide_and_conquer::strassens_multiplication::Matrix::size</a></div><div class="ttdeci">std::pair&lt; size_t, size_t &gt; size() const</div><div class="ttdoc">Get the matrix shape.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00079">strassen_matrix_multiplication.cpp:79</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4aa49765cce39ce48b9241e993e0cfb9" name="a4aa49765cce39ce48b9241e993e0cfb9"></a>
@@ -305,17 +318,14 @@ template&lt;typename Integer , typename  = typename std::enable_if&lt;          
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00069">69</a> of file <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html">strassen_matrix_multiplication.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   69</span>                                                   {</div>
 <div class="line"><span class="lineno">   70</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; rows; ++i) {</div>
-<div class="line"><span class="lineno">   71</span>            _mat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/emplace_back.html">emplace_back</a>(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a>(cols, 0));</div>
+<div class="line"><span class="lineno">   71</span>            _mat.emplace_back(std::vector&lt;T&gt;(cols, 0));</div>
 <div class="line"><span class="lineno">   72</span>        }</div>
 <div class="line"><span class="lineno">   73</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_a4aa49765cce39ce48b9241e993e0cfb9_cgraph.svg" width="404" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -360,22 +370,17 @@ template&lt;typename Number , typename  = typename std::enable_if&lt;           
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void, but modifies the current array </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00134">134</a> of file <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html">strassen_matrix_multiplication.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  134</span>                                              {</div>
-<div class="line"><span class="lineno">  135</span>        assert(_mat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() == other._mat.size());</div>
+<div class="line"><span class="lineno">  135</span>        assert(_mat.size() == other._mat.size());</div>
 <div class="line"><span class="lineno">  136</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; other._mat.size(); ++i) {</div>
 <div class="line"><span class="lineno">  137</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; other._mat[i].size(); ++j) {</div>
-<div class="line"><span class="lineno">  138</span>                _mat[i].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(other._mat[i][j]);</div>
+<div class="line"><span class="lineno">  138</span>                _mat[i].push_back(other._mat[i][j]);</div>
 <div class="line"><span class="lineno">  139</span>            }</div>
 <div class="line"><span class="lineno">  140</span>        }</div>
 <div class="line"><span class="lineno">  141</span>    }</div>
-<div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_ab6534125643a02c114bd4cddba9bc17f_cgraph.svg" width="383" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5d8eb669b37a27224376b08515b4ee50" name="a5d8eb669b37a27224376b08515b4ee50"></a>
@@ -419,11 +424,13 @@ template&lt;typename Number , typename  = typename std::enable_if&lt;           
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>new matrix </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00316">316</a> of file <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html">strassen_matrix_multiplication.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  316</span>                                                                   {</div>
-<div class="line"><span class="lineno">  317</span>        <a class="code hl_function" href="#a01f3a05cf5abdc5d63999ef1bf9f9256">Matrix</a> C = <a class="code hl_function" href="#a01f3a05cf5abdc5d63999ef1bf9f9256">Matrix&lt;Number&gt;</a>(_mat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(), other._mat[0].size());</div>
+<div class="line"><span class="lineno">  317</span>        <a class="code hl_function" href="#a01f3a05cf5abdc5d63999ef1bf9f9256">Matrix</a> C = <a class="code hl_function" href="#a01f3a05cf5abdc5d63999ef1bf9f9256">Matrix&lt;Number&gt;</a>(_mat.size(), other._mat[0].size());</div>
 <div class="line"><span class="lineno">  318</span> </div>
-<div class="line"><span class="lineno">  319</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; _mat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); ++i) {</div>
-<div class="line"><span class="lineno">  320</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> k = 0; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a> &lt; _mat[0].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); ++<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>) {</div>
+<div class="line"><span class="lineno">  319</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; _mat.size(); ++i) {</div>
+<div class="line"><span class="lineno">  320</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> k = 0; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a> &lt; _mat[0].size(); ++<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>) {</div>
 <div class="line"><span class="lineno">  321</span>                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; other._mat[0].size(); ++j) {</div>
 <div class="line"><span class="lineno">  322</span>                    C._mat[i][j] += _mat[i][<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>] * other._mat[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>][j];</div>
 <div class="line"><span class="lineno">  323</span>                }</div>
@@ -431,14 +438,9 @@ template&lt;typename Number , typename  = typename std::enable_if&lt;           
 <div class="line"><span class="lineno">  325</span>        }</div>
 <div class="line"><span class="lineno">  326</span>        <span class="keywordflow">return</span> C;</div>
 <div class="line"><span class="lineno">  327</span>    }</div>
-<div class="ttc" id="aclassdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_html_a01f3a05cf5abdc5d63999ef1bf9f9256"><div class="ttname"><a href="#a01f3a05cf5abdc5d63999ef1bf9f9256">divide_and_conquer::strassens_multiplication::Matrix::Matrix</a></div><div class="ttdeci">Matrix(const Integer size)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition</b> strassen_matrix_multiplication.cpp:53</div></div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a1b74d828b33760094906797042b89442"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">numerical_methods::simpson_method::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:117</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_a5d8eb669b37a27224376b08515b4ee50_cgraph.svg" width="100%" height="413"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="aclassdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_html_a01f3a05cf5abdc5d63999ef1bf9f9256"><div class="ttname"><a href="#a01f3a05cf5abdc5d63999ef1bf9f9256">divide_and_conquer::strassens_multiplication::Matrix::Matrix</a></div><div class="ttdeci">Matrix(const Integer size)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00053">strassen_matrix_multiplication.cpp:53</a></div></div>
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a1b74d828b33760094906797042b89442"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">numerical_methods::simpson_method::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d18/composite__simpson__rule_8cpp_source.html#l00117">composite_simpson_rule.cpp:117</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a60599668b56001cef4bb59d4cb5c6c6c" name="a60599668b56001cef4bb59d4cb5c6c6c"></a>
@@ -482,6 +484,8 @@ template&lt;typename Number , typename  = typename std::enable_if&lt;           
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>new matrix </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00255">255</a> of file <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html">strassen_matrix_multiplication.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  255</span>                                                               {</div>
 <div class="line"><span class="lineno">  256</span>        assert(_mat[0].<a class="code hl_function" href="#ae4e183ec8eab778cb243e4ae0b22a0f1">size</a>() == other._mat.size());</div>
 <div class="line"><span class="lineno">  257</span>        <span class="keyword">auto</span> <a class="code hl_function" href="#ae4e183ec8eab778cb243e4ae0b22a0f1">size</a> = this-&gt;<a class="code hl_function" href="#ae4e183ec8eab778cb243e4ae0b22a0f1">size</a>();</div>
@@ -493,14 +497,9 @@ template&lt;typename Number , typename  = typename std::enable_if&lt;           
 <div class="line"><span class="lineno">  263</span>                   ? this-&gt;<a class="code hl_namespace" href="../../d3/d91/namespacestrassens__multiplication.html">strassens_multiplication</a>(other)</div>
 <div class="line"><span class="lineno">  264</span>                   : this-&gt;<a class="code hl_function" href="#a5d8eb669b37a27224376b08515b4ee50">naive_multiplication</a>(other);</div>
 <div class="line"><span class="lineno">  265</span>    }</div>
-<div class="ttc" id="aclassdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_html_a5d8eb669b37a27224376b08515b4ee50"><div class="ttname"><a href="#a5d8eb669b37a27224376b08515b4ee50">divide_and_conquer::strassens_multiplication::Matrix::naive_multiplication</a></div><div class="ttdeci">Matrix naive_multiplication(const Matrix&lt; Number &gt; &amp;other) const</div><div class="ttdoc">Naive multiplication performed on this.</div><div class="ttdef"><b>Definition</b> strassen_matrix_multiplication.cpp:316</div></div>
+<div class="ttc" id="aclassdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_html_a5d8eb669b37a27224376b08515b4ee50"><div class="ttname"><a href="#a5d8eb669b37a27224376b08515b4ee50">divide_and_conquer::strassens_multiplication::Matrix::naive_multiplication</a></div><div class="ttdeci">Matrix naive_multiplication(const Matrix&lt; Number &gt; &amp;other) const</div><div class="ttdoc">Naive multiplication performed on this.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00316">strassen_matrix_multiplication.cpp:316</a></div></div>
 <div class="ttc" id="anamespacestrassens__multiplication_html"><div class="ttname"><a href="../../d3/d91/namespacestrassens__multiplication.html">strassens_multiplication</a></div><div class="ttdoc">Namespace for performing strassen's multiplication.</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_a60599668b56001cef4bb59d4cb5c6c6c_cgraph.svg" width="100%" height="445"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aedbe01e48a96fefa0b393ec577b0f19e" name="aedbe01e48a96fefa0b393ec577b0f19e"></a>
@@ -544,21 +543,18 @@ template&lt;typename Number , typename  = typename std::enable_if&lt;           
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>new matrix </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00277">277</a> of file <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html">strassen_matrix_multiplication.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  277</span>                                                      {</div>
-<div class="line"><span class="lineno">  278</span>        <a class="code hl_function" href="#a01f3a05cf5abdc5d63999ef1bf9f9256">Matrix</a> C = <a class="code hl_function" href="#a01f3a05cf5abdc5d63999ef1bf9f9256">Matrix&lt;Number&gt;</a>(_mat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(), _mat[0].size());</div>
-<div class="line"><span class="lineno">  279</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; _mat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); ++i) {</div>
-<div class="line"><span class="lineno">  280</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; _mat[i].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); ++j) {</div>
+<div class="line"><span class="lineno">  278</span>        <a class="code hl_function" href="#a01f3a05cf5abdc5d63999ef1bf9f9256">Matrix</a> C = <a class="code hl_function" href="#a01f3a05cf5abdc5d63999ef1bf9f9256">Matrix&lt;Number&gt;</a>(_mat.size(), _mat[0].size());</div>
+<div class="line"><span class="lineno">  279</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; _mat.size(); ++i) {</div>
+<div class="line"><span class="lineno">  280</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; _mat[i].size(); ++j) {</div>
 <div class="line"><span class="lineno">  281</span>                C._mat[i][j] = _mat[i][j] * other;</div>
 <div class="line"><span class="lineno">  282</span>            }</div>
 <div class="line"><span class="lineno">  283</span>        }</div>
 <div class="line"><span class="lineno">  284</span>        <span class="keywordflow">return</span> C;</div>
 <div class="line"><span class="lineno">  285</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_aedbe01e48a96fefa0b393ec577b0f19e_cgraph.svg" width="100%" height="413"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af09566a6a59d30875434c140e18e0a12" name="af09566a6a59d30875434c140e18e0a12"></a>
@@ -602,20 +598,17 @@ template&lt;typename Number , typename  = typename std::enable_if&lt;           
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>reference of current matrix </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00297">297</a> of file <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html">strassen_matrix_multiplication.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  297</span>                                                 {</div>
-<div class="line"><span class="lineno">  298</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; _mat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); ++i) {</div>
-<div class="line"><span class="lineno">  299</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; _mat[i].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); ++j) {</div>
+<div class="line"><span class="lineno">  298</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; _mat.size(); ++i) {</div>
+<div class="line"><span class="lineno">  299</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; _mat[i].size(); ++j) {</div>
 <div class="line"><span class="lineno">  300</span>                _mat[i][j] *= other;</div>
 <div class="line"><span class="lineno">  301</span>            }</div>
 <div class="line"><span class="lineno">  302</span>        }</div>
 <div class="line"><span class="lineno">  303</span>        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
 <div class="line"><span class="lineno">  304</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_af09566a6a59d30875434c140e18e0a12_cgraph.svg" width="344" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad36ec1f1a97298e49de605384e5f8211" name="ad36ec1f1a97298e49de605384e5f8211"></a>
@@ -659,22 +652,19 @@ template&lt;typename Number , typename  = typename std::enable_if&lt;           
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>new matrix </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00173">173</a> of file <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html">strassen_matrix_multiplication.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  173</span>                                                        {</div>
 <div class="line"><span class="lineno">  174</span>        assert(this-&gt;<a class="code hl_function" href="#ae4e183ec8eab778cb243e4ae0b22a0f1">size</a>() == other.size());</div>
-<div class="line"><span class="lineno">  175</span>        <a class="code hl_function" href="#a01f3a05cf5abdc5d63999ef1bf9f9256">Matrix</a> C = <a class="code hl_function" href="#a01f3a05cf5abdc5d63999ef1bf9f9256">Matrix&lt;Number&gt;</a>(_mat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(), _mat[0].size());</div>
-<div class="line"><span class="lineno">  176</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; _mat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); ++i) {</div>
-<div class="line"><span class="lineno">  177</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; _mat[i].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); ++j) {</div>
+<div class="line"><span class="lineno">  175</span>        <a class="code hl_function" href="#a01f3a05cf5abdc5d63999ef1bf9f9256">Matrix</a> C = <a class="code hl_function" href="#a01f3a05cf5abdc5d63999ef1bf9f9256">Matrix&lt;Number&gt;</a>(_mat.size(), _mat[0].size());</div>
+<div class="line"><span class="lineno">  176</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; _mat.size(); ++i) {</div>
+<div class="line"><span class="lineno">  177</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; _mat[i].size(); ++j) {</div>
 <div class="line"><span class="lineno">  178</span>                C._mat[i][j] = _mat[i][j] + other._mat[i][j];</div>
 <div class="line"><span class="lineno">  179</span>            }</div>
 <div class="line"><span class="lineno">  180</span>        }</div>
 <div class="line"><span class="lineno">  181</span>        <span class="keywordflow">return</span> C;</div>
 <div class="line"><span class="lineno">  182</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_ad36ec1f1a97298e49de605384e5f8211_cgraph.svg" width="100%" height="407"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae190115f8d4d31e47d7290e0b6871391" name="ae190115f8d4d31e47d7290e0b6871391"></a>
@@ -718,21 +708,18 @@ template&lt;typename Number , typename  = typename std::enable_if&lt;           
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>reference of current matrix </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00194">194</a> of file <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html">strassen_matrix_multiplication.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  194</span>                                                          {</div>
 <div class="line"><span class="lineno">  195</span>        assert(this-&gt;<a class="code hl_function" href="#ae4e183ec8eab778cb243e4ae0b22a0f1">size</a>() == other.size());</div>
-<div class="line"><span class="lineno">  196</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; _mat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); ++i) {</div>
-<div class="line"><span class="lineno">  197</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; _mat[i].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); ++j) {</div>
+<div class="line"><span class="lineno">  196</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; _mat.size(); ++i) {</div>
+<div class="line"><span class="lineno">  197</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; _mat[i].size(); ++j) {</div>
 <div class="line"><span class="lineno">  198</span>                _mat[i][j] += other._mat[i][j];</div>
 <div class="line"><span class="lineno">  199</span>            }</div>
 <div class="line"><span class="lineno">  200</span>        }</div>
 <div class="line"><span class="lineno">  201</span>        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
 <div class="line"><span class="lineno">  202</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_ae190115f8d4d31e47d7290e0b6871391_cgraph.svg" width="562" height="100"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a678681c9f6266a8219bd6bee6972d70e" name="a678681c9f6266a8219bd6bee6972d70e"></a>
@@ -776,22 +763,19 @@ template&lt;typename Number , typename  = typename std::enable_if&lt;           
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>new matrix </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00214">214</a> of file <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html">strassen_matrix_multiplication.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  214</span>                                                        {</div>
 <div class="line"><span class="lineno">  215</span>        assert(this-&gt;<a class="code hl_function" href="#ae4e183ec8eab778cb243e4ae0b22a0f1">size</a>() == other.size());</div>
-<div class="line"><span class="lineno">  216</span>        <a class="code hl_function" href="#a01f3a05cf5abdc5d63999ef1bf9f9256">Matrix</a> C = <a class="code hl_function" href="#a01f3a05cf5abdc5d63999ef1bf9f9256">Matrix&lt;Number&gt;</a>(_mat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(), _mat[0].size());</div>
-<div class="line"><span class="lineno">  217</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; _mat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); ++i) {</div>
-<div class="line"><span class="lineno">  218</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; _mat[i].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); ++j) {</div>
+<div class="line"><span class="lineno">  216</span>        <a class="code hl_function" href="#a01f3a05cf5abdc5d63999ef1bf9f9256">Matrix</a> C = <a class="code hl_function" href="#a01f3a05cf5abdc5d63999ef1bf9f9256">Matrix&lt;Number&gt;</a>(_mat.size(), _mat[0].size());</div>
+<div class="line"><span class="lineno">  217</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; _mat.size(); ++i) {</div>
+<div class="line"><span class="lineno">  218</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; _mat[i].size(); ++j) {</div>
 <div class="line"><span class="lineno">  219</span>                C._mat[i][j] = _mat[i][j] - other._mat[i][j];</div>
 <div class="line"><span class="lineno">  220</span>            }</div>
 <div class="line"><span class="lineno">  221</span>        }</div>
 <div class="line"><span class="lineno">  222</span>        <span class="keywordflow">return</span> C;</div>
 <div class="line"><span class="lineno">  223</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_a678681c9f6266a8219bd6bee6972d70e_cgraph.svg" width="100%" height="407"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a42c986fb57b74fe1b7c5953cb1922c3d" name="a42c986fb57b74fe1b7c5953cb1922c3d"></a>
@@ -835,21 +819,18 @@ template&lt;typename Number , typename  = typename std::enable_if&lt;           
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>reference of current matrix </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00235">235</a> of file <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html">strassen_matrix_multiplication.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  235</span>                                                          {</div>
 <div class="line"><span class="lineno">  236</span>        assert(this-&gt;<a class="code hl_function" href="#ae4e183ec8eab778cb243e4ae0b22a0f1">size</a>() == other.size());</div>
-<div class="line"><span class="lineno">  237</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; _mat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); ++i) {</div>
-<div class="line"><span class="lineno">  238</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; _mat[i].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); ++j) {</div>
+<div class="line"><span class="lineno">  237</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; _mat.size(); ++i) {</div>
+<div class="line"><span class="lineno">  238</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; _mat[i].size(); ++j) {</div>
 <div class="line"><span class="lineno">  239</span>                _mat[i][j] -= other._mat[i][j];</div>
 <div class="line"><span class="lineno">  240</span>            }</div>
 <div class="line"><span class="lineno">  241</span>        }</div>
 <div class="line"><span class="lineno">  242</span>        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
 <div class="line"><span class="lineno">  243</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_a42c986fb57b74fe1b7c5953cb1922c3d_cgraph.svg" width="562" height="100"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a562faa16a4b4ed5d4804823c56f99c9c" name="a562faa16a4b4ed5d4804823c56f99c9c"></a>
@@ -885,13 +866,15 @@ template&lt;typename T , typename  = typename std::enable_if&lt;              st
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>whether they are equal or not </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00393">393</a> of file <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html">strassen_matrix_multiplication.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  393</span>                                                  {</div>
-<div class="line"><span class="lineno">  394</span>        <span class="keywordflow">if</span> (_mat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() != other._mat.size() ||</div>
+<div class="line"><span class="lineno">  394</span>        <span class="keywordflow">if</span> (_mat.size() != other._mat.size() ||</div>
 <div class="line"><span class="lineno">  395</span>            _mat[0].size() != other._mat[0].size()) {</div>
 <div class="line"><span class="lineno">  396</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  397</span>        }</div>
-<div class="line"><span class="lineno">  398</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; _mat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); ++i) {</div>
-<div class="line"><span class="lineno">  399</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; _mat[i].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); ++j) {</div>
+<div class="line"><span class="lineno">  398</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; _mat.size(); ++i) {</div>
+<div class="line"><span class="lineno">  399</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; _mat[i].size(); ++j) {</div>
 <div class="line"><span class="lineno">  400</span>                <span class="keywordflow">if</span> (_mat[i][j] != other._mat[i][j]) {</div>
 <div class="line"><span class="lineno">  401</span>                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  402</span>                }</div>
@@ -899,12 +882,7 @@ template&lt;typename T , typename  = typename std::enable_if&lt;              st
 <div class="line"><span class="lineno">  404</span>        }</div>
 <div class="line"><span class="lineno">  405</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  406</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_a562faa16a4b4ed5d4804823c56f99c9c_cgraph.svg" width="344" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac4c64e5723fa12a043fd0a7f5ed5bb37" name="ac4c64e5723fa12a043fd0a7f5ed5bb37"></a>
@@ -921,7 +899,7 @@ template&lt;typename Integer , typename  = typename std::enable_if&lt;          
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp; <a class="el" href="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html">divide_and_conquer::strassens_multiplication::Matrix</a>&lt; T, typename &gt;::operator[] </td>
+          <td class="memname">std::vector&lt; T &gt; &amp; <a class="el" href="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html">divide_and_conquer::strassens_multiplication::Matrix</a>&lt; T, typename &gt;::operator[] </td>
           <td>(</td>
           <td class="paramtype">const Integer</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
           <td></td>
@@ -948,6 +926,8 @@ template&lt;typename Integer , typename  = typename std::enable_if&lt;          
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the address of the element (here ith row or array) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00093">93</a> of file <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html">strassen_matrix_multiplication.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   93</span>                                                         {</div>
 <div class="line"><span class="lineno">   94</span>        <span class="keywordflow">return</span> _mat[index];</div>
 <div class="line"><span class="lineno">   95</span>    }</div>
@@ -966,7 +946,7 @@ template&lt;typename T , typename  = typename std::enable_if&lt;              st
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; size_t, size_t &gt; <a class="el" href="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html">divide_and_conquer::strassens_multiplication::Matrix</a>&lt; T, typename &gt;::size </td>
+          <td class="memname">std::pair&lt; size_t, size_t &gt; <a class="el" href="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html">divide_and_conquer::strassens_multiplication::Matrix</a>&lt; T, typename &gt;::size </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -981,15 +961,12 @@ template&lt;typename T , typename  = typename std::enable_if&lt;              st
 
 <p>Get the matrix shape. </p>
 <dl class="section return"><dt>Returns</dt><dd>pair of integer denoting total rows and columns </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   79</span>                                                {</div>
-<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">return</span> {_mat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(), _mat[0].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()};</div>
-<div class="line"><span class="lineno">   81</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_ae4e183ec8eab778cb243e4ae0b22a0f1_cgraph.svg" width="344" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00079">79</a> of file <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html">strassen_matrix_multiplication.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   79</span>                                                {</div>
+<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">return</span> {_mat.size(), _mat[0].size()};</div>
+<div class="line"><span class="lineno">   81</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1fcb7db9bdeabd874712ec4f00483d17" name="a1fcb7db9bdeabd874712ec4f00483d17"></a>
@@ -1042,10 +1019,12 @@ template&lt;typename T , typename  = typename std::enable_if&lt;              st
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A slice of (row_end - row_start) x (col_end - col_start) size of array starting from row_start row and col_start column </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00106">106</a> of file <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html">strassen_matrix_multiplication.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  108</span>                                                        {</div>
 <div class="line"><span class="lineno">  109</span>        <span class="keyword">const</span> <span class="keywordtype">size_t</span> h_size =</div>
-<div class="line"><span class="lineno">  110</span>            (row_end != MAX_SIZE ? row_end : _mat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()) - row_start;</div>
-<div class="line"><span class="lineno">  111</span>        <span class="keyword">const</span> <span class="keywordtype">size_t</span> v_size = (col_end != MAX_SIZE ? col_end : _mat[0].<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()) -</div>
+<div class="line"><span class="lineno">  110</span>            (row_end != MAX_SIZE ? row_end : _mat.size()) - row_start;</div>
+<div class="line"><span class="lineno">  111</span>        <span class="keyword">const</span> <span class="keywordtype">size_t</span> v_size = (col_end != MAX_SIZE ? col_end : _mat[0].size()) -</div>
 <div class="line"><span class="lineno">  112</span>                              (col_start != MAX_SIZE ? col_start : 0);</div>
 <div class="line"><span class="lineno">  113</span>        <a class="code hl_function" href="#a01f3a05cf5abdc5d63999ef1bf9f9256">Matrix</a> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = <a class="code hl_function" href="#a01f3a05cf5abdc5d63999ef1bf9f9256">Matrix&lt;T&gt;</a>(h_size, v_size);</div>
 <div class="line"><span class="lineno">  114</span> </div>
@@ -1057,13 +1036,8 @@ template&lt;typename T , typename  = typename std::enable_if&lt;              st
 <div class="line"><span class="lineno">  120</span>        }</div>
 <div class="line"><span class="lineno">  121</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">  122</span>    }</div>
-<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> fibonacci_sum.cpp:77</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_a1fcb7db9bdeabd874712ec4f00483d17_cgraph.svg" width="100%" height="413"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> <a href="../../de/dc3/fibonacci__sum_8cpp_source.html#l00077">fibonacci_sum.cpp:77</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a87c2ed8f19bda2ad21ee4cbed32c394a" name="a87c2ed8f19bda2ad21ee4cbed32c394a"></a>
@@ -1107,8 +1081,10 @@ template&lt;typename Number , typename  = typename std::enable_if&lt;           
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>new matrix </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00340">340</a> of file <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html">strassen_matrix_multiplication.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  340</span>                                                                       {</div>
-<div class="line"><span class="lineno">  341</span>        <span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="#ae4e183ec8eab778cb243e4ae0b22a0f1">size</a> = _mat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">  341</span>        <span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="#ae4e183ec8eab778cb243e4ae0b22a0f1">size</a> = _mat.size();</div>
 <div class="line"><span class="lineno">  342</span>        <span class="comment">// Base case: when a matrix is small enough for faster naive</span></div>
 <div class="line"><span class="lineno">  343</span>        <span class="comment">// multiplication, or the matrix is of odd size, then go with the naive</span></div>
 <div class="line"><span class="lineno">  344</span>        <span class="comment">// multiplication route;</span></div>
@@ -1154,14 +1130,9 @@ template&lt;typename Number , typename  = typename std::enable_if&lt;           
 <div class="line"><span class="lineno">  384</span>            <span class="keywordflow">return</span> C11;</div>
 <div class="line"><span class="lineno">  385</span>        }</div>
 <div class="line"><span class="lineno">  386</span>    }</div>
-<div class="ttc" id="aclassdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_html_a1fcb7db9bdeabd874712ec4f00483d17"><div class="ttname"><a href="#a1fcb7db9bdeabd874712ec4f00483d17">divide_and_conquer::strassens_multiplication::Matrix::slice</a></div><div class="ttdeci">Matrix slice(const size_t row_start, const size_t row_end=MAX_SIZE, const size_t col_start=MAX_SIZE, const size_t col_end=MAX_SIZE) const</div><div class="ttdoc">Creates a new matrix and returns a part of it.</div><div class="ttdef"><b>Definition</b> strassen_matrix_multiplication.cpp:106</div></div>
-<div class="ttc" id="aclassdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_html_a87c2ed8f19bda2ad21ee4cbed32c394a"><div class="ttname"><a href="#a87c2ed8f19bda2ad21ee4cbed32c394a">divide_and_conquer::strassens_multiplication::Matrix::strassens_multiplication</a></div><div class="ttdeci">Matrix strassens_multiplication(const Matrix&lt; Number &gt; &amp;other) const</div><div class="ttdoc">Strassens method of multiplying two matrices References: https://en.wikipedia.org/wiki/Strassen_algor...</div><div class="ttdef"><b>Definition</b> strassen_matrix_multiplication.cpp:340</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_a87c2ed8f19bda2ad21ee4cbed32c394a_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="aclassdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_html_a1fcb7db9bdeabd874712ec4f00483d17"><div class="ttname"><a href="#a1fcb7db9bdeabd874712ec4f00483d17">divide_and_conquer::strassens_multiplication::Matrix::slice</a></div><div class="ttdeci">Matrix slice(const size_t row_start, const size_t row_end=MAX_SIZE, const size_t col_start=MAX_SIZE, const size_t col_end=MAX_SIZE) const</div><div class="ttdoc">Creates a new matrix and returns a part of it.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00106">strassen_matrix_multiplication.cpp:106</a></div></div>
+<div class="ttc" id="aclassdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_html_a87c2ed8f19bda2ad21ee4cbed32c394a"><div class="ttname"><a href="#a87c2ed8f19bda2ad21ee4cbed32c394a">divide_and_conquer::strassens_multiplication::Matrix::strassens_multiplication</a></div><div class="ttdeci">Matrix strassens_multiplication(const Matrix&lt; Number &gt; &amp;other) const</div><div class="ttdoc">Strassens method of multiplying two matrices References: https://en.wikipedia.org/wiki/Strassen_algor...</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00340">strassen_matrix_multiplication.cpp:340</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af12ceffdc07cc87eca8a4a8ac87d60fe" name="af12ceffdc07cc87eca8a4a8ac87d60fe"></a>
@@ -1205,22 +1176,18 @@ template&lt;typename Number , typename  = typename std::enable_if&lt;           
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void, but modifies the current array </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00153">153</a> of file <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html">strassen_matrix_multiplication.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  153</span>                                              {</div>
 <div class="line"><span class="lineno">  154</span>        assert(_mat[0].<a class="code hl_function" href="#ae4e183ec8eab778cb243e4ae0b22a0f1">size</a>() == other._mat[0].size());</div>
 <div class="line"><span class="lineno">  155</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; other._mat.size(); ++i) {</div>
-<div class="line"><span class="lineno">  156</span>            _mat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/emplace_back.html">emplace_back</a>(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a>(other._mat[i].size()));</div>
+<div class="line"><span class="lineno">  156</span>            _mat.emplace_back(std::vector&lt;T&gt;(other._mat[i].size()));</div>
 <div class="line"><span class="lineno">  157</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; other._mat[i].size(); ++j) {</div>
-<div class="line"><span class="lineno">  158</span>                _mat.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/back.html">back</a>()[j] = other._mat[i][j];</div>
+<div class="line"><span class="lineno">  158</span>                _mat.back()[j] = other._mat[i][j];</div>
 <div class="line"><span class="lineno">  159</span>            }</div>
 <div class="line"><span class="lineno">  160</span>        }</div>
 <div class="line"><span class="lineno">  161</span>    }</div>
-<div class="ttc" id="aback_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/back.html">std::vector::back</a></div><div class="ttdeci">T back(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix_af12ceffdc07cc87eca8a4a8ac87d60fe_cgraph.svg" width="567" height="191"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Symbol Documentation</h2>
@@ -1236,9 +1203,9 @@ template&lt;typename T , typename  = typename std::enable_if&lt;              st
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp; operator&lt;&lt; </td>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1252,6 +1219,8 @@ template&lt;typename T , typename  = typename std::enable_if&lt;              st
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00408">408</a> of file <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html">strassen_matrix_multiplication.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  408</span>                                                                         {</div>
 <div class="line"><span class="lineno">  409</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;row : mat._mat) {</div>
 <div class="line"><span class="lineno">  410</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;elem : row) {</div>
@@ -1264,8 +1233,35 @@ template&lt;typename T , typename  = typename std::enable_if&lt;              st
 </div><!-- fragment -->
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a048f49ac4b28af539a9669e696c8a843" name="a048f49ac4b28af539a9669e696c8a843"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a048f49ac4b28af539a9669e696c8a843">&#9670;&#160;</a></span>_mat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename  = typename std::enable_if&lt;              std::is_integral&lt;T&gt;::value || std::is_floating_point&lt;T&gt;::value,              bool&gt;::type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::vector&lt;T&gt; &gt; <a class="el" href="../../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html">divide_and_conquer::strassens_multiplication::Matrix</a>&lt; T, typename &gt;::_mat</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html">strassen_matrix_multiplication.cpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>divide_and_conquer/<b>strassen_matrix_multiplication.cpp</b></li>
+<li>divide_and_conquer/<a class="el" href="../../d0/dea/strassen__matrix__multiplication_8cpp_source.html">strassen_matrix_multiplication.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

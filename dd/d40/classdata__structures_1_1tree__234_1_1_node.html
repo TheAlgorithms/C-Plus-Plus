@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: data_structures::tree_234::Node Class Reference</title>
+<title>TheAlgorithms/C++: data_structures::tree_234::Node Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -117,7 +134,7 @@ $(function(){initNavTree('dd/d40/classdata__structures_1_1tree__234_1_1_node.htm
 <div class="dynheader">
 Collaboration diagram for data_structures::tree_234::Node:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/db5/classdata__structures_1_1tree__234_1_1_node__coll__graph.svg" width="190" height="332"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/db5/classdata__structures_1_1tree__234_1_1_node__coll__graph.svg" width="190" height="244"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -197,21 +214,20 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a8417d01c88b99ca56289843509fb71f9" id="r_a8417d01c88b99ca56289843509fb71f9"><td class="memItemLeft" align="right" valign="top"><a id="a8417d01c88b99ca56289843509fb71f9" name="a8417d01c88b99ca56289843509fb71f9"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int64_t, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>items</b></td></tr>
-<tr class="memdesc:a8417d01c88b99ca56289843509fb71f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">store items <br /></td></tr>
+<tr class="memitem:a8417d01c88b99ca56289843509fb71f9" id="r_a8417d01c88b99ca56289843509fb71f9"><td class="memItemLeft" align="right" valign="top">std::array&lt; int64_t, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8417d01c88b99ca56289843509fb71f9">items</a></td></tr>
+<tr class="memdesc:a8417d01c88b99ca56289843509fb71f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">store items  <br /></td></tr>
 <tr class="separator:a8417d01c88b99ca56289843509fb71f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5d6b6ce5fab21ccc88c6bf3153eee5d" id="r_ad5d6b6ce5fab21ccc88c6bf3153eee5d"><td class="memItemLeft" align="right" valign="top"><a id="ad5d6b6ce5fab21ccc88c6bf3153eee5d" name="ad5d6b6ce5fab21ccc88c6bf3153eee5d"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="el" href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html">Node</a> *, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>children</b></td></tr>
-<tr class="memdesc:ad5d6b6ce5fab21ccc88c6bf3153eee5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">store the children pointers <br /></td></tr>
+<tr class="memitem:ad5d6b6ce5fab21ccc88c6bf3153eee5d" id="r_ad5d6b6ce5fab21ccc88c6bf3153eee5d"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html">Node</a> *, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5d6b6ce5fab21ccc88c6bf3153eee5d">children</a></td></tr>
+<tr class="memdesc:ad5d6b6ce5fab21ccc88c6bf3153eee5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">store the children pointers  <br /></td></tr>
 <tr class="separator:ad5d6b6ce5fab21ccc88c6bf3153eee5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a934e6d53cfefae2b971e1241a8a4c921" id="r_a934e6d53cfefae2b971e1241a8a4c921"><td class="memItemLeft" align="right" valign="top"><a id="a934e6d53cfefae2b971e1241a8a4c921" name="a934e6d53cfefae2b971e1241a8a4c921"></a>
-int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>count</b> = 0</td></tr>
-<tr class="memdesc:a934e6d53cfefae2b971e1241a8a4c921"><td class="mdescLeft">&#160;</td><td class="mdescRight">track the current item count <br /></td></tr>
+<tr class="memitem:a934e6d53cfefae2b971e1241a8a4c921" id="r_a934e6d53cfefae2b971e1241a8a4c921"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a934e6d53cfefae2b971e1241a8a4c921">count</a> = 0</td></tr>
+<tr class="memdesc:a934e6d53cfefae2b971e1241a8a4c921"><td class="mdescLeft">&#160;</td><td class="mdescRight">track the current item count  <br /></td></tr>
 <tr class="separator:a934e6d53cfefae2b971e1241a8a4c921"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>2-3-4 tree node class </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad5219979ea9a8baa3a273a9ec0f0c670" name="ad5219979ea9a8baa3a273a9ec0f0c670"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad5219979ea9a8baa3a273a9ec0f0c670">&#9670;&#160;</a></span>Node()</h2>
@@ -243,12 +259,14 @@ int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>count</b> = 0</td><
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   42</span>        : <a class="code hl_variable" href="#a934e6d53cfefae2b971e1241a8a4c921">count</a>(1),</div>
 <div class="line"><span class="lineno">   43</span>          <a class="code hl_variable" href="#a8417d01c88b99ca56289843509fb71f9">items</a>({{item, 0, 0}}),</div>
 <div class="line"><span class="lineno">   44</span>          <a class="code hl_variable" href="#ad5d6b6ce5fab21ccc88c6bf3153eee5d">children</a>({{<span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>}}) {}</div>
-<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_node_html_a8417d01c88b99ca56289843509fb71f9"><div class="ttname"><a href="#a8417d01c88b99ca56289843509fb71f9">data_structures::tree_234::Node::items</a></div><div class="ttdeci">std::array&lt; int64_t, 3 &gt; items</div><div class="ttdoc">store items</div><div class="ttdef"><b>Definition</b> tree_234.cpp:315</div></div>
-<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_node_html_a934e6d53cfefae2b971e1241a8a4c921"><div class="ttname"><a href="#a934e6d53cfefae2b971e1241a8a4c921">data_structures::tree_234::Node::count</a></div><div class="ttdeci">int8_t count</div><div class="ttdoc">track the current item count</div><div class="ttdef"><b>Definition</b> tree_234.cpp:319</div></div>
-<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_node_html_ad5d6b6ce5fab21ccc88c6bf3153eee5d"><div class="ttname"><a href="#ad5d6b6ce5fab21ccc88c6bf3153eee5d">data_structures::tree_234::Node::children</a></div><div class="ttdeci">std::array&lt; Node *, 4 &gt; children</div><div class="ttdoc">store the children pointers</div><div class="ttdef"><b>Definition</b> tree_234.cpp:317</div></div>
+<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_node_html_a8417d01c88b99ca56289843509fb71f9"><div class="ttname"><a href="#a8417d01c88b99ca56289843509fb71f9">data_structures::tree_234::Node::items</a></div><div class="ttdeci">std::array&lt; int64_t, 3 &gt; items</div><div class="ttdoc">store items</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/tree__234_8cpp_source.html#l00315">tree_234.cpp:315</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_node_html_a934e6d53cfefae2b971e1241a8a4c921"><div class="ttname"><a href="#a934e6d53cfefae2b971e1241a8a4c921">data_structures::tree_234::Node::count</a></div><div class="ttdeci">int8_t count</div><div class="ttdoc">track the current item count</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/tree__234_8cpp_source.html#l00319">tree_234.cpp:319</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_node_html_ad5d6b6ce5fab21ccc88c6bf3153eee5d"><div class="ttname"><a href="#ad5d6b6ce5fab21ccc88c6bf3153eee5d">data_structures::tree_234::Node::children</a></div><div class="ttdeci">std::array&lt; Node *, 4 &gt; children</div><div class="ttdoc">store the children pointers</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/tree__234_8cpp_source.html#l00317">tree_234.cpp:317</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -284,6 +302,8 @@ int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>count</b> = 0</td><
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if item in the node, otherwise false </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00092">92</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   92</span>                                {</div>
 <div class="line"><span class="lineno">   93</span>        <span class="keywordflow">for</span> (int8_t i = 0; i &lt; <a class="code hl_variable" href="#a934e6d53cfefae2b971e1241a8a4c921">count</a>; i++) {</div>
 <div class="line"><span class="lineno">   94</span>            <span class="keywordflow">if</span> (item == <a class="code hl_variable" href="#a8417d01c88b99ca56289843509fb71f9">items</a>[i]) {</div>
@@ -326,6 +346,8 @@ int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>count</b> = 0</td><
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the child pointer </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00252">252</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  252</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ad5d6b6ce5fab21ccc88c6bf3153eee5d">children</a>[index]; }</div>
 </div><!-- fragment -->
 </div>
@@ -361,6 +383,8 @@ int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>count</b> = 0</td><
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the index of child </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00237">237</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  237</span>                                      {</div>
 <div class="line"><span class="lineno">  238</span>        <span class="keywordflow">for</span> (int8_t i = 0; i &lt; <a class="code hl_variable" href="#a934e6d53cfefae2b971e1241a8a4c921">count</a> + 1; i++) {</div>
 <div class="line"><span class="lineno">  239</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#ad5d6b6ce5fab21ccc88c6bf3153eee5d">children</a>[i] == child) {</div>
@@ -398,6 +422,8 @@ int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>count</b> = 0</td><
 
 <p>Get the item count that current saved in the node. </p>
 <dl class="section return"><dt>Returns</dt><dd>item count </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   50</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a934e6d53cfefae2b971e1241a8a4c921">count</a>; }</div>
 </div><!-- fragment -->
 </div>
@@ -433,6 +459,8 @@ int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>count</b> = 0</td><
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the item </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00133">133</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  133</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a8417d01c88b99ca56289843509fb71f9">items</a>[index]; }</div>
 </div><!-- fragment -->
 </div>
@@ -468,6 +496,8 @@ int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>count</b> = 0</td><
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0-based index of the item in the node, if not in the node, -1 is returned </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00107">107</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  107</span>                                      {</div>
 <div class="line"><span class="lineno">  108</span>        <span class="keywordflow">for</span> (int8_t i = 0; i &lt; <a class="code hl_variable" href="#a934e6d53cfefae2b971e1241a8a4c921">count</a>; i++) {</div>
 <div class="line"><span class="lineno">  109</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a8417d01c88b99ca56289843509fb71f9">items</a>[i] == item) {</div>
@@ -510,6 +540,8 @@ int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>count</b> = 0</td><
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>left child of items[index]'s </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00278">278</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  278</span>                                              {</div>
 <div class="line"><span class="lineno">  279</span>        <span class="keywordflow">if</span> (item_index &lt; 0 || item_index &gt; <a class="code hl_variable" href="#a934e6d53cfefae2b971e1241a8a4c921">count</a> - 1) {</div>
 <div class="line"><span class="lineno">  280</span>            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
@@ -551,6 +583,8 @@ int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>count</b> = 0</td><
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>right child of items[index]'s </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00291">291</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  291</span>                                               {</div>
 <div class="line"><span class="lineno">  292</span>        <span class="keywordflow">if</span> (item_index &lt; 0 || item_index &gt; <a class="code hl_variable" href="#a934e6d53cfefae2b971e1241a8a4c921">count</a> - 1) {</div>
 <div class="line"><span class="lineno">  293</span>            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
@@ -586,6 +620,8 @@ int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>count</b> = 0</td><
 
 <p>Get leftmose child of the current node. </p>
 <dl class="section return"><dt>Returns</dt><dd>the leftmost child </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00271">271</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  271</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ad5d6b6ce5fab21ccc88c6bf3153eee5d">children</a>[0]; }</div>
 </div><!-- fragment -->
 </div>
@@ -615,6 +651,8 @@ int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>count</b> = 0</td><
 
 <p>Get max item (rightmost) in the current node. </p>
 <dl class="section return"><dt>Returns</dt><dd>max item </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00120">120</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  120</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a8417d01c88b99ca56289843509fb71f9">items</a>[<a class="code hl_variable" href="#a934e6d53cfefae2b971e1241a8a4c921">count</a> - 1]; }</div>
 </div><!-- fragment -->
 </div>
@@ -644,6 +682,8 @@ int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>count</b> = 0</td><
 
 <p>get min item (leftmost) in the current node </p>
 <dl class="section return"><dt>Returns</dt><dd>min item </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00126">126</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  126</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a8417d01c88b99ca56289843509fb71f9">items</a>[0]; }</div>
 </div><!-- fragment -->
 </div>
@@ -679,6 +719,8 @@ int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>count</b> = 0</td><
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the next node that possibly contains item </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00304">304</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  304</span>                                             {</div>
 <div class="line"><span class="lineno">  305</span>        <span class="keywordtype">int</span> i = 0;</div>
 <div class="line"><span class="lineno">  306</span>        <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code hl_variable" href="#a934e6d53cfefae2b971e1241a8a4c921">count</a>; i++) {</div>
@@ -716,6 +758,8 @@ int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>count</b> = 0</td><
 
 <p>Get rightmose child of the current node. </p>
 <dl class="section return"><dt>Returns</dt><dd>the rightmost child </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00265">265</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  265</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ad5d6b6ce5fab21ccc88c6bf3153eee5d">children</a>[<a class="code hl_variable" href="#a934e6d53cfefae2b971e1241a8a4c921">count</a>]; }</div>
 </div><!-- fragment -->
 </div>
@@ -752,6 +796,8 @@ int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>count</b> = 0</td><
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>index where item is inserted, caller can use this index to update its left and right child </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00163">163</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  163</span>                             {</div>
 <div class="line"><span class="lineno">  164</span>        assert(!<a class="code hl_function" href="#a4a37381c0ef93d5ae2118b2e554974dd">IsFull</a>());</div>
 <div class="line"><span class="lineno">  165</span> </div>
@@ -769,15 +815,10 @@ int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>count</b> = 0</td><
 <div class="line"><span class="lineno">  177</span>        <a class="code hl_function" href="#a306a30931f54c84098b38d6bc8f4a956">InsertItemByIndex</a>(i, item, <span class="keyword">nullptr</span>, <span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">  178</span>        <span class="keywordflow">return</span> i;</div>
 <div class="line"><span class="lineno">  179</span>    }</div>
-<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_node_html_a22fd25c6c811c64b6b27b0850d8c532f"><div class="ttname"><a href="#a22fd25c6c811c64b6b27b0850d8c532f">data_structures::tree_234::Node::Contains</a></div><div class="ttdeci">bool Contains(int64_t item)</div><div class="ttdoc">Check if item is in the node.</div><div class="ttdef"><b>Definition</b> tree_234.cpp:92</div></div>
-<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_node_html_a306a30931f54c84098b38d6bc8f4a956"><div class="ttname"><a href="#a306a30931f54c84098b38d6bc8f4a956">data_structures::tree_234::Node::InsertItemByIndex</a></div><div class="ttdeci">void InsertItemByIndex(int8_t index, int64_t item, Node *with_child, bool to_left=true)</div><div class="ttdoc">Insert a value to the index position.</div><div class="ttdef"><b>Definition</b> tree_234.cpp:189</div></div>
-<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_node_html_a4a37381c0ef93d5ae2118b2e554974dd"><div class="ttname"><a href="#a4a37381c0ef93d5ae2118b2e554974dd">data_structures::tree_234::Node::IsFull</a></div><div class="ttdeci">bool IsFull()</div><div class="ttdoc">Check if node is a full (4-node)</div><div class="ttdef"><b>Definition</b> tree_234.cpp:73</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d40/classdata__structures_1_1tree__234_1_1_node_a8e809ae85ae00e937f67ddb76951b6bb_cgraph.svg" width="418" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_node_html_a22fd25c6c811c64b6b27b0850d8c532f"><div class="ttname"><a href="#a22fd25c6c811c64b6b27b0850d8c532f">data_structures::tree_234::Node::Contains</a></div><div class="ttdeci">bool Contains(int64_t item)</div><div class="ttdoc">Check if item is in the node.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/tree__234_8cpp_source.html#l00092">tree_234.cpp:92</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_node_html_a306a30931f54c84098b38d6bc8f4a956"><div class="ttname"><a href="#a306a30931f54c84098b38d6bc8f4a956">data_structures::tree_234::Node::InsertItemByIndex</a></div><div class="ttdeci">void InsertItemByIndex(int8_t index, int64_t item, Node *with_child, bool to_left=true)</div><div class="ttdoc">Insert a value to the index position.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/tree__234_8cpp_source.html#l00189">tree_234.cpp:189</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_node_html_a4a37381c0ef93d5ae2118b2e554974dd"><div class="ttname"><a href="#a4a37381c0ef93d5ae2118b2e554974dd">data_structures::tree_234::Node::IsFull</a></div><div class="ttdeci">bool IsFull()</div><div class="ttdoc">Check if node is a full (4-node)</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/tree__234_8cpp_source.html#l00073">tree_234.cpp:73</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a306a30931f54c84098b38d6bc8f4a956" name="a306a30931f54c84098b38d6bc8f4a956"></a>
@@ -827,6 +868,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00189">189</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  190</span>                                                {</div>
 <div class="line"><span class="lineno">  191</span>        assert(<a class="code hl_variable" href="#a934e6d53cfefae2b971e1241a8a4c921">count &lt; 3 &amp;&amp; index &gt;</a>= 0 &amp;&amp; index &lt; 3);</div>
 <div class="line"><span class="lineno">  192</span> </div>
@@ -874,6 +917,8 @@ Here is the call graph for this function:</div>
 
 <p>Check if node is a 2-node. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if node is 2-node, otherwise false </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00079">79</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   79</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a934e6d53cfefae2b971e1241a8a4c921">count</a> == 1; }</div>
 </div><!-- fragment -->
 </div>
@@ -903,6 +948,8 @@ Here is the call graph for this function:</div>
 
 <p>Check if node is a 3-node or 4-node, this is useful when we delete item from 2-3-4 tree. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if node is 3-node or 4-node, false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00085">85</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   85</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a934e6d53cfefae2b971e1241a8a4c921">count</a> == 2 || <a class="code hl_variable" href="#a934e6d53cfefae2b971e1241a8a4c921">count</a> == 3; }</div>
 </div><!-- fragment -->
 </div>
@@ -932,6 +979,8 @@ Here is the call graph for this function:</div>
 
 <p>Check if node is a full (4-node) </p>
 <dl class="section return"><dt>Returns</dt><dd>true if node is full (4-node), false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00073">73</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   73</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a934e6d53cfefae2b971e1241a8a4c921">count</a> == 3; }</div>
 </div><!-- fragment -->
 </div>
@@ -961,6 +1010,8 @@ Here is the call graph for this function:</div>
 
 <p>Check if node is a leaf. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if node is leaf, false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   67</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ad5d6b6ce5fab21ccc88c6bf3153eee5d">children</a>[0] == <span class="keyword">nullptr</span>; }</div>
 </div><!-- fragment -->
 </div>
@@ -1001,6 +1052,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the removed child pointer </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00217">217</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  217</span>                                                          {</div>
 <div class="line"><span class="lineno">  218</span>        assert(index &gt;= 0 &amp;&amp; index &lt; <a class="code hl_variable" href="#a934e6d53cfefae2b971e1241a8a4c921">count</a>);</div>
 <div class="line"><span class="lineno">  219</span>        <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *removed_child = keep_left ? <a class="code hl_variable" href="#ad5d6b6ce5fab21ccc88c6bf3153eee5d">children</a>[index + 1] : <a class="code hl_variable" href="#ad5d6b6ce5fab21ccc88c6bf3153eee5d">children</a>[index];</div>
@@ -1015,7 +1068,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  228</span>        <a class="code hl_variable" href="#a934e6d53cfefae2b971e1241a8a4c921">count</a>--;</div>
 <div class="line"><span class="lineno">  229</span>        <span class="keywordflow">return</span> removed_child;</div>
 <div class="line"><span class="lineno">  230</span>    }</div>
-<div class="ttc" id="astruct_node_html"><div class="ttname"><a href="../../db/d8b/struct_node.html">Node</a></div><div class="ttdef"><b>Definition</b> linkedlist_implentation_usingarray.cpp:14</div></div>
+<div class="ttc" id="astruct_node_html"><div class="ttname"><a href="../../db/d8b/struct_node.html">Node</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/dce/linkedlist__implentation__usingarray_8cpp_source.html#l00014">linkedlist_implentation_usingarray.cpp:14</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1054,6 +1107,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00259">259</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  259</span>{ <a class="code hl_variable" href="#ad5d6b6ce5fab21ccc88c6bf3153eee5d">children</a>[index] = child; }</div>
 </div><!-- fragment -->
 </div>
@@ -1089,6 +1144,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   61</span>{ <a class="code hl_variable" href="#a934e6d53cfefae2b971e1241a8a4c921">count</a> = c; }</div>
 </div><!-- fragment -->
 </div>
@@ -1128,6 +1185,8 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00140">140</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  140</span>                                                 {</div>
 <div class="line"><span class="lineno">  141</span>        assert(index &gt;= 0 &amp;&amp; index &lt;= 2);</div>
 <div class="line"><span class="lineno">  142</span> </div>
@@ -1136,8 +1195,87 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad5d6b6ce5fab21ccc88c6bf3153eee5d" name="ad5d6b6ce5fab21ccc88c6bf3153eee5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5d6b6ce5fab21ccc88c6bf3153eee5d">&#9670;&#160;</a></span>children</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="../../dd/d40/classdata__structures_1_1tree__234_1_1_node.html">Node</a> *, 4&gt; data_structures::tree_234::Node::children</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>store the children pointers </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00317">317</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a934e6d53cfefae2b971e1241a8a4c921" name="a934e6d53cfefae2b971e1241a8a4c921"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a934e6d53cfefae2b971e1241a8a4c921">&#9670;&#160;</a></span>count</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t data_structures::tree_234::Node::count = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>track the current item count </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00319">319</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8417d01c88b99ca56289843509fb71f9" name="a8417d01c88b99ca56289843509fb71f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8417d01c88b99ca56289843509fb71f9">&#9670;&#160;</a></span>items</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;int64_t, 3&gt; data_structures::tree_234::Node::items</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>store items </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dbc/tree__234_8cpp_source.html#l00315">315</a> of file <a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>data_structures/<a class="el" href="../../db/dbc/tree__234_8cpp.html">tree_234.cpp</a></li>
+<li>data_structures/<a class="el" href="../../db/dbc/tree__234_8cpp_source.html">tree_234.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,4 +1,0 @@
-<map id="hashing::sha256::compute_padded_size" name="hashing::sha256::compute_padded_size">
-<area shape="rect" id="Node000001" title="Computes size of the padded input." alt="" coords="5,29,180,70"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="59,29,57,19,63,10,75,5,93,3,112,5,123,11,120,16,110,10,92,8,76,10,66,14,63,20,64,28"/>
-</map>

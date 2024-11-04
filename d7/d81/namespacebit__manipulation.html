@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: bit_manipulation Namespace Reference</title>
+<title>TheAlgorithms/C++: bit_manipulation Namespace Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -134,7 +151,7 @@ Functions</h2></td></tr>
 <p>Bit manipulation algorithms</p>
 <p>for io operations</p>
 <p>Bit Manipulation algorithms</p>
-<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a> for IO operations for limits of integral types for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
+<p>for std::min for IO operations for limits of integral types for std::vector</p>
 <p>Bit manipulation algorithms </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a5032470c9974bbd6ec254bf296530a5f" name="a5032470c9974bbd6ec254bf296530a5f"></a>
@@ -160,6 +177,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>either true or false </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d6d/power__of__2_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../dc/d6d/power__of__2_8cpp_source.html">power_of_2.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   32</span>                                 {  <span class="comment">// int64_t is preferred over int so that</span></div>
 <div class="line"><span class="lineno">   33</span>                                      <span class="comment">// no Overflow can be there.</span></div>
 <div class="line"><span class="lineno">   34</span> </div>
@@ -197,6 +216,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a number </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d1e/next__higher__number__with__same__number__of__set__bits_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../d5/d1e/next__higher__number__with__same__number__of__set__bits_8cpp_source.html">next_higher_number_with_same_number_of_set_bits.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   33</span>                                        {</div>
 <div class="line"><span class="lineno">   34</span>    uint64_t rightOne = 0;</div>
 <div class="line"><span class="lineno">   35</span>    uint64_t nextHigherOneBit = 0;</div>

@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: catalan_numbers Class Reference</title>
+<title>TheAlgorithms/C++: catalan_numbers Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -119,37 +136,63 @@ $(function(){initNavTree('dc/d1f/classcatalan__numbers.html','../../'); initResi
 <div class="dynheader">
 Collaboration diagram for catalan_numbers:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d6e/classcatalan__numbers__coll__graph.svg" width="191" height="214"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d6e/classcatalan__numbers__coll__graph.svg" width="138" height="140"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a54655c66cf89186d3d1fa90829b28ab8" id="r_a54655c66cf89186d3d1fa90829b28ab8"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54655c66cf89186d3d1fa90829b28ab8">get</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> n)</td></tr>
+<tr class="memitem:a54655c66cf89186d3d1fa90829b28ab8" id="r_a54655c66cf89186d3d1fa90829b28ab8"><td class="memItemLeft" align="right" valign="top">value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54655c66cf89186d3d1fa90829b28ab8">get</a> (std::size_t n)</td></tr>
 <tr class="memdesc:a54655c66cf89186d3d1fa90829b28ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes the n-th Catalan number and updates the cache.  <br /></td></tr>
 <tr class="separator:a54655c66cf89186d3d1fa90829b28ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a0bfc8c78494c93dbb4c7d67b7300cf1a" id="r_a0bfc8c78494c93dbb4c7d67b7300cf1a"><td class="memItemLeft" align="right" valign="top"><a id="a0bfc8c78494c93dbb4c7d67b7300cf1a" name="a0bfc8c78494c93dbb4c7d67b7300cf1a"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a></td></tr>
+<tr class="memitem:a0bfc8c78494c93dbb4c7d67b7300cf1a" id="r_a0bfc8c78494c93dbb4c7d67b7300cf1a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bfc8c78494c93dbb4c7d67b7300cf1a">value_type</a> = std::uint64_t</td></tr>
 <tr class="separator:a0bfc8c78494c93dbb4c7d67b7300cf1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a141beca0f50fbb4cd5ca8d53819bc43d" id="r_a141beca0f50fbb4cd5ca8d53819bc43d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a141beca0f50fbb4cd5ca8d53819bc43d">compute_next</a> ()</td></tr>
+<tr class="memitem:a141beca0f50fbb4cd5ca8d53819bc43d" id="r_a141beca0f50fbb4cd5ca8d53819bc43d"><td class="memItemLeft" align="right" valign="top">value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a141beca0f50fbb4cd5ca8d53819bc43d">compute_next</a> ()</td></tr>
 <tr class="separator:a141beca0f50fbb4cd5ca8d53819bc43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf882dee674593be3df61a36443b5632" id="r_abf882dee674593be3df61a36443b5632"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf882dee674593be3df61a36443b5632">add</a> ()</td></tr>
 <tr class="separator:abf882dee674593be3df61a36443b5632"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ad37c6891d102bb758d3d3d85fb7f1798" id="r_ad37c6891d102bb758d3d3d85fb7f1798"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad37c6891d102bb758d3d3d85fb7f1798">known</a> {1, 1}</td></tr>
+<tr class="memitem:ad37c6891d102bb758d3d3d85fb7f1798" id="r_ad37c6891d102bb758d3d3d85fb7f1798"><td class="memItemLeft" align="right" valign="top">std::vector&lt; value_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad37c6891d102bb758d3d3d85fb7f1798">known</a> {1, 1}</td></tr>
 <tr class="separator:ad37c6891d102bb758d3d3d85fb7f1798"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>computes and caches Catalan numbers </p>
-<p>for assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/plus.html">std::plus</a> &amp; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/multiplies.html">std::multiplies</a> for std::transform_reduce for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<p>for assert for std::uint64_t for std::size_t for std::plus &amp; std::multiplies for std::transform_reduce for std::vector </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dd9/catalan__numbers_8cpp_source.html#l00022">22</a> of file <a class="el" href="../../de/dd9/catalan__numbers_8cpp_source.html">catalan_numbers.cpp</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a0bfc8c78494c93dbb4c7d67b7300cf1a" name="a0bfc8c78494c93dbb4c7d67b7300cf1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bfc8c78494c93dbb4c7d67b7300cf1a">&#9670;&#160;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using catalan_numbers::value_type = std::uint64_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/dd9/catalan__numbers_8cpp_source.html#l00023">23</a> of file <a class="el" href="../../de/dd9/catalan__numbers_8cpp_source.html">catalan_numbers.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="abf882dee674593be3df61a36443b5632" name="abf882dee674593be3df61a36443b5632"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abf882dee674593be3df61a36443b5632">&#9670;&#160;</a></span>add()</h2>
 
@@ -172,6 +215,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/dd9/catalan__numbers_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../de/dd9/catalan__numbers_8cpp_source.html">catalan_numbers.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   32</span>{ known.push_back(this-&gt;compute_next()); }</div>
 </div><!-- fragment -->
 </div>
@@ -186,7 +231,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">value_type</a> catalan_numbers::compute_next </td>
+          <td class="memname">value_type catalan_numbers::compute_next </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -198,13 +243,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/dd9/catalan__numbers_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../de/dd9/catalan__numbers_8cpp_source.html">catalan_numbers.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   26</span>                              {</div>
 <div class="line"><span class="lineno">   27</span>        <span class="keywordflow">return</span> std::transform_reduce(known.begin(), known.end(), known.rbegin(),</div>
-<div class="line"><span class="lineno">   28</span>                                     <span class="keyword">static_cast&lt;</span>value_type<span class="keyword">&gt;</span>(0), <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/plus.html">std::plus&lt;&gt;</a>(),</div>
-<div class="line"><span class="lineno">   29</span>                                     <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/multiplies.html">std::multiplies&lt;&gt;</a>());</div>
+<div class="line"><span class="lineno">   28</span>                                     <span class="keyword">static_cast&lt;</span>value_type<span class="keyword">&gt;</span>(0), std::plus&lt;&gt;(),</div>
+<div class="line"><span class="lineno">   29</span>                                     std::multiplies&lt;&gt;());</div>
 <div class="line"><span class="lineno">   30</span>    }</div>
-<div class="ttc" id="amultiplies_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/functional/multiplies.html">std::multiplies</a></div></div>
-<div class="ttc" id="aplus_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/functional/plus.html">std::plus</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -218,9 +263,9 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">value_type</a> catalan_numbers::get </td>
+          <td class="memname">value_type catalan_numbers::get </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a></td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -233,6 +278,8 @@ Private Attributes</h2></td></tr>
 
 <p>computes the n-th Catalan number and updates the cache. </p>
 <dl class="section return"><dt>Returns</dt><dd>the n-th Catalan number </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dd9/catalan__numbers_8cpp_source.html#l00039">39</a> of file <a class="el" href="../../de/dd9/catalan__numbers_8cpp_source.html">catalan_numbers.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   39</span>                                {</div>
 <div class="line"><span class="lineno">   40</span>        <span class="keywordflow">while</span> (known.size() &lt;= n) {</div>
 <div class="line"><span class="lineno">   41</span>            this-&gt;add();</div>
@@ -253,7 +300,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">value_type</a>&gt; catalan_numbers::known {1, 1}</td>
+          <td class="memname">std::vector&lt;value_type&gt; catalan_numbers::known {1, 1}</td>
         </tr>
       </table>
   </td>
@@ -262,12 +309,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/dd9/catalan__numbers_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../de/dd9/catalan__numbers_8cpp_source.html">catalan_numbers.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   24</span>{1, 1};</div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>dynamic_programming/<a class="el" href="../../de/dd9/catalan__numbers_8cpp.html">catalan_numbers.cpp</a></li>
+<li>dynamic_programming/<a class="el" href="../../de/dd9/catalan__numbers_8cpp_source.html">catalan_numbers.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: data_structures/skip_list.cpp File Reference</title>
+<title>TheAlgorithms/C++: data_structures/skip_list.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -126,7 +143,9 @@ Include dependency graph for skip_list.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d75/skip__list_8cpp__incl.svg" width="492" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d0/d5a/skip__list_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d49/structdata__structures_1_1_node.html">data_structures::Node</a></td></tr>
@@ -147,13 +166,11 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ac0d7e0be24da9f41bcb19745873c436a" id="r_ac0d7e0be24da9f41bcb19745873c436a"><td class="memItemLeft" align="right" valign="top"><a id="ac0d7e0be24da9f41bcb19745873c436a" name="ac0d7e0be24da9f41bcb19745873c436a"></a>
-constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>data_structures::MAX_LEVEL</b> = 2</td></tr>
-<tr class="memdesc:ac0d7e0be24da9f41bcb19745873c436a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum level of skip list. <br /></td></tr>
+<tr class="memitem:ac0d7e0be24da9f41bcb19745873c436a" id="r_ac0d7e0be24da9f41bcb19745873c436a"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3c/namespacedata__structures.html#ac0d7e0be24da9f41bcb19745873c436a">data_structures::MAX_LEVEL</a> = 2</td></tr>
+<tr class="memdesc:ac0d7e0be24da9f41bcb19745873c436a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum level of skip list.  <br /></td></tr>
 <tr class="separator:ac0d7e0be24da9f41bcb19745873c436a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a903639d8e6f955dd8d5c263781455d61" id="r_a903639d8e6f955dd8d5c263781455d61"><td class="memItemLeft" align="right" valign="top"><a id="a903639d8e6f955dd8d5c263781455d61" name="a903639d8e6f955dd8d5c263781455d61"></a>
-constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>data_structures::PROBABILITY</b> = 0.5</td></tr>
-<tr class="memdesc:a903639d8e6f955dd8d5c263781455d61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current probability for "coin toss". <br /></td></tr>
+<tr class="memitem:a903639d8e6f955dd8d5c263781455d61" id="r_a903639d8e6f955dd8d5c263781455d61"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3c/namespacedata__structures.html#a903639d8e6f955dd8d5c263781455d61">data_structures::PROBABILITY</a> = 0.5</td></tr>
+<tr class="memdesc:a903639d8e6f955dd8d5c263781455d61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current probability for "coin toss".  <br /></td></tr>
 <tr class="separator:a903639d8e6f955dd8d5c263781455d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -162,6 +179,8 @@ constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>data_struc
 <p>References used: <a href="https://www.geeksforgeeks.org/skip-list/" target="_blank">GeeksForGeek</a>, <a href="https://iq.opengenus.org/skip-list" target="_blank">OpenGenus</a> for PseudoCode and Code </p><dl class="section author"><dt>Author</dt><dd><a href="https://github.com/enqidu" target="_blank">enqidu</a> </dd>
 <dd>
 <a href="https://github.com/kvedala" target="_blank">Krishna Vedala</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d0/d5a/skip__list_8cpp_source.html">skip_list.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -178,13 +197,15 @@ constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>data_struc
       </table>
 </div><div class="memdoc">
 <p>Main function: Creates and inserts random 2^[number of levels] elements into the skip lists and than displays it </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d5a/skip__list_8cpp_source.html#l00212">212</a> of file <a class="el" href="../../d0/d5a/skip__list_8cpp_source.html">skip_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  212</span>           {</div>
-<div class="line"><span class="lineno">  213</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a>(<span class="keyword">nullptr</span>));</div>
+<div class="line"><span class="lineno">  213</span>    std::srand(std::time(<span class="keyword">nullptr</span>));</div>
 <div class="line"><span class="lineno">  214</span> </div>
 <div class="line"><span class="lineno">  215</span>    <a class="code hl_class" href="../../d4/d90/classdata__structures_1_1_skip_list.html">data_structures::SkipList</a> lst;</div>
 <div class="line"><span class="lineno">  216</span> </div>
 <div class="line"><span class="lineno">  217</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; (1 &lt;&lt; (<a class="code hl_variable" href="../../d5/d3c/namespacedata__structures.html#ac0d7e0be24da9f41bcb19745873c436a">data_structures::MAX_LEVEL</a> + 1)); j++) {</div>
-<div class="line"><span class="lineno">  218</span>        <span class="keywordtype">int</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a> = (<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % (1 &lt;&lt; (<a class="code hl_variable" href="../../d5/d3c/namespacedata__structures.html#ac0d7e0be24da9f41bcb19745873c436a">data_structures::MAX_LEVEL</a> + 2)) + 1);</div>
+<div class="line"><span class="lineno">  218</span>        <span class="keywordtype">int</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a> = (std::rand() % (1 &lt;&lt; (<a class="code hl_variable" href="../../d5/d3c/namespacedata__structures.html#ac0d7e0be24da9f41bcb19745873c436a">data_structures::MAX_LEVEL</a> + 2)) + 1);</div>
 <div class="line"><span class="lineno">  219</span>        lst.<a class="code hl_function" href="../../d4/d90/classdata__structures_1_1_skip_list.html#a40a4042bdf0b6683b5f21ae7854de8a9">insertElement</a>(k, &amp;j);</div>
 <div class="line"><span class="lineno">  220</span>    }</div>
 <div class="line"><span class="lineno">  221</span> </div>
@@ -192,20 +213,12 @@ constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>data_struc
 <div class="line"><span class="lineno">  223</span> </div>
 <div class="line"><span class="lineno">  224</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  225</span>}</div>
-<div class="ttc" id="aclassdata__structures_1_1_skip_list_html"><div class="ttname"><a href="../../d4/d90/classdata__structures_1_1_skip_list.html">data_structures::SkipList</a></div><div class="ttdef"><b>Definition</b> skip_list.cpp:55</div></div>
-<div class="ttc" id="aclassdata__structures_1_1_skip_list_html_a40a4042bdf0b6683b5f21ae7854de8a9"><div class="ttname"><a href="../../d4/d90/classdata__structures_1_1_skip_list.html#a40a4042bdf0b6683b5f21ae7854de8a9">data_structures::SkipList::insertElement</a></div><div class="ttdeci">void insertElement(int key, void *value)</div><div class="ttdef"><b>Definition</b> skip_list.cpp:90</div></div>
-<div class="ttc" id="aclassdata__structures_1_1_skip_list_html_a812611f80b8079268dbb19cc4e9bee5c"><div class="ttname"><a href="../../d4/d90/classdata__structures_1_1_skip_list.html#a812611f80b8079268dbb19cc4e9bee5c">data_structures::SkipList::displayList</a></div><div class="ttdeci">void displayList()</div><div class="ttdef"><b>Definition</b> skip_list.cpp:191</div></div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a1b74d828b33760094906797042b89442"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">numerical_methods::simpson_method::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:117</div></div>
-<div class="ttc" id="anamespacedata__structures_html_ac0d7e0be24da9f41bcb19745873c436a"><div class="ttname"><a href="../../d5/d3c/namespacedata__structures.html#ac0d7e0be24da9f41bcb19745873c436a">data_structures::MAX_LEVEL</a></div><div class="ttdeci">constexpr int MAX_LEVEL</div><div class="ttdoc">Maximum level of skip list.</div><div class="ttdef"><b>Definition</b> skip_list.cpp:27</div></div>
-<div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
-<div class="ttc" id="asrand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a></div><div class="ttdeci">T srand(T... args)</div></div>
-<div class="ttc" id="atime_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a></div><div class="ttdeci">T time(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d5a/skip__list_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="610" height="424"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassdata__structures_1_1_skip_list_html"><div class="ttname"><a href="../../d4/d90/classdata__structures_1_1_skip_list.html">data_structures::SkipList</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/d5a/skip__list_8cpp_source.html#l00055">skip_list.cpp:55</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1_skip_list_html_a40a4042bdf0b6683b5f21ae7854de8a9"><div class="ttname"><a href="../../d4/d90/classdata__structures_1_1_skip_list.html#a40a4042bdf0b6683b5f21ae7854de8a9">data_structures::SkipList::insertElement</a></div><div class="ttdeci">void insertElement(int key, void *value)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d5a/skip__list_8cpp_source.html#l00090">skip_list.cpp:90</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1_skip_list_html_a812611f80b8079268dbb19cc4e9bee5c"><div class="ttname"><a href="../../d4/d90/classdata__structures_1_1_skip_list.html#a812611f80b8079268dbb19cc4e9bee5c">data_structures::SkipList::displayList</a></div><div class="ttdeci">void displayList()</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d5a/skip__list_8cpp_source.html#l00191">skip_list.cpp:191</a></div></div>
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a1b74d828b33760094906797042b89442"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">numerical_methods::simpson_method::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d18/composite__simpson__rule_8cpp_source.html#l00117">composite_simpson_rule.cpp:117</a></div></div>
+<div class="ttc" id="anamespacedata__structures_html_ac0d7e0be24da9f41bcb19745873c436a"><div class="ttname"><a href="../../d5/d3c/namespacedata__structures.html#ac0d7e0be24da9f41bcb19745873c436a">data_structures::MAX_LEVEL</a></div><div class="ttdeci">constexpr int MAX_LEVEL</div><div class="ttdoc">Maximum level of skip list.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d5a/skip__list_8cpp_source.html#l00027">skip_list.cpp:27</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: numerical_methods/lu_decomposition.h Source File</title>
+<title>TheAlgorithms/C++: numerical_methods/lu_decomposition.h Source File</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -107,13 +124,7 @@ $(function(){initNavTree('d1/dbe/lu__decomposition_8h_source.html','../../'); in
   <div class="headertitle"><div class="title">lu_decomposition.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d1/dbe/lu__decomposition_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @file lu_decomposition.h</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @author [Krishna Vedala](https://github.com/kvedala)</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * @brief Functions associated with [LU</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * Decomposition](https://en.wikipedia.org/wiki/LU_decomposition)</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * of a square matrix.</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> */</span></div>
+<a href="../../d1/dbe/lu__decomposition_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
@@ -122,27 +133,19 @@ $(function(){initNavTree('d1/dbe/lu__decomposition_8h_source.html','../../'); in
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifdef _OPENMP</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;omp.h&gt;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"></span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">/** Define matrix type as a `std::vector` of `std::valarray` */</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../d1/dbe/lu__decomposition_8h.html#ac029b636b353cefbb18b2fcc71e427e4">   19</a></span><span class="keyword">using </span><a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix</a> = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::valarray&lt;T&gt;</a>&gt;;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"></span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">/** Perform LU decomposition on matrix</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * \param[in] A matrix to decompose</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * \param[out] L output L matrix</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * \param[out] U output U matrix</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * \returns 0 if no errors</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * \returns negative if error occurred</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../d1/dbe/lu__decomposition_8h.html#ac029b636b353cefbb18b2fcc71e427e4">   19</a></span><span class="keyword">using </span><a class="code hl_typedef" href="../../d1/dbe/lu__decomposition_8h.html#ac029b636b353cefbb18b2fcc71e427e4">matrix</a> = std::vector&lt;std::valarray&lt;T&gt;&gt;;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d1/dbe/lu__decomposition_8h.html#a75b8a228c6419ecda6077255d6d60509">   29</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/dbe/lu__decomposition_8h.html#a75b8a228c6419ecda6077255d6d60509">lu_decomposition</a>(<span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;T&gt;</a> &amp;A, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;double&gt;</a> *L, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;double&gt;</a> *U) {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d1/dbe/lu__decomposition_8h.html#a75b8a228c6419ecda6077255d6d60509">   29</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/dbe/lu__decomposition_8h.html#a75b8a228c6419ecda6077255d6d60509">lu_decomposition</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d1/dbe/lu__decomposition_8h.html#ac029b636b353cefbb18b2fcc71e427e4">matrix&lt;T&gt;</a> &amp;A, <a class="code hl_typedef" href="../../d1/dbe/lu__decomposition_8h.html#ac029b636b353cefbb18b2fcc71e427e4">matrix&lt;double&gt;</a> *L, <a class="code hl_typedef" href="../../d1/dbe/lu__decomposition_8h.html#ac029b636b353cefbb18b2fcc71e427e4">matrix&lt;double&gt;</a> *U) {</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">int</span> row, col, j;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a> = A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a> = A.size();</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a> != A[0].size()) {</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="comment">// check matrix is a square matrix</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Not a square matrix!\n&quot;</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Not a square matrix!\n&quot;</span>;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
@@ -187,39 +190,27 @@ $(function(){initNavTree('d1/dbe/lu__decomposition_8h_source.html','../../'); in
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
 </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"></span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment"> * Compute determinant of an NxN square matrix using LU decomposition.</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment"> * Using LU decomposition, the determinant is given by the product of diagonal</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"> * elements of matrices L and U.</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment"> * @tparam T datatype of input matrix - int, unsigned int, double, etc</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment"> * @param A input square matrix</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment"> * @return determinant of matrix A</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00090" data-start="{" data-end="}">
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f">   90</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f">determinant_lu</a>(<span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;T&gt;</a> &amp;A) {</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;double&gt;</a> L(A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(), <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a>(A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()));</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;double&gt;</a> U(A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(), <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a>(A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()));</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f">   90</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f">determinant_lu</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d1/dbe/lu__decomposition_8h.html#ac029b636b353cefbb18b2fcc71e427e4">matrix&lt;T&gt;</a> &amp;A) {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <a class="code hl_typedef" href="../../d1/dbe/lu__decomposition_8h.html#ac029b636b353cefbb18b2fcc71e427e4">matrix&lt;double&gt;</a> L(A.size(), std::valarray&lt;double&gt;(A.size()));</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <a class="code hl_typedef" href="../../d1/dbe/lu__decomposition_8h.html#ac029b636b353cefbb18b2fcc71e427e4">matrix&lt;double&gt;</a> U(A.size(), std::valarray&lt;double&gt;(A.size()));</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d1/dbe/lu__decomposition_8h.html#a75b8a228c6419ecda6077255d6d60509">lu_decomposition</a>(A, &amp;L, &amp;U) &lt; 0)</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordtype">double</span> result = 1.f;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; A.size(); i++) {</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        result *= L[i][i] * U[i][i];</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordflow">return</span> result;</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
 </div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a></div></div>
-<div class="ttc" id="alu__decomposition_8h_html_a3108d43bd32c6fb3b3c158476c51ba7f"><div class="ttname"><a href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f">determinant_lu</a></div><div class="ttdeci">double determinant_lu(const matrix&lt; T &gt; &amp;A)</div><div class="ttdef"><b>Definition</b> lu_decomposition.h:90</div></div>
-<div class="ttc" id="alu__decomposition_8h_html_a75b8a228c6419ecda6077255d6d60509"><div class="ttname"><a href="../../d1/dbe/lu__decomposition_8h.html#a75b8a228c6419ecda6077255d6d60509">lu_decomposition</a></div><div class="ttdeci">int lu_decomposition(const matrix&lt; T &gt; &amp;A, matrix&lt; double &gt; *L, matrix&lt; double &gt; *U)</div><div class="ttdef"><b>Definition</b> lu_decomposition.h:29</div></div>
-<div class="ttc" id="amatrix__exponentiation_8cpp_html_a9977ad12548c4a49dee9dc3f0685aa54"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a></div><div class="ttdeci">ll mat_size</div><div class="ttdef"><b>Definition</b> matrix_exponentiation.cpp:45</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-<div class="ttc" id="avalarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a></div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
+<div class="ttc" id="alu__decomposition_8h_html_a3108d43bd32c6fb3b3c158476c51ba7f"><div class="ttname"><a href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f">determinant_lu</a></div><div class="ttdeci">double determinant_lu(const matrix&lt; T &gt; &amp;A)</div><div class="ttdef"><b>Definition</b> <a href="#l00090">lu_decomposition.h:90</a></div></div>
+<div class="ttc" id="alu__decomposition_8h_html_a75b8a228c6419ecda6077255d6d60509"><div class="ttname"><a href="../../d1/dbe/lu__decomposition_8h.html#a75b8a228c6419ecda6077255d6d60509">lu_decomposition</a></div><div class="ttdeci">int lu_decomposition(const matrix&lt; T &gt; &amp;A, matrix&lt; double &gt; *L, matrix&lt; double &gt; *U)</div><div class="ttdef"><b>Definition</b> <a href="#l00029">lu_decomposition.h:29</a></div></div>
+<div class="ttc" id="alu__decomposition_8h_html_ac029b636b353cefbb18b2fcc71e427e4"><div class="ttname"><a href="../../d1/dbe/lu__decomposition_8h.html#ac029b636b353cefbb18b2fcc71e427e4">matrix</a></div><div class="ttdeci">std::vector&lt; std::valarray&lt; T &gt; &gt; matrix</div><div class="ttdef"><b>Definition</b> <a href="#l00019">lu_decomposition.h:19</a></div></div>
+<div class="ttc" id="amatrix__exponentiation_8cpp_html_a9977ad12548c4a49dee9dc3f0685aa54"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a></div><div class="ttdeci">ll mat_size</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d35/matrix__exponentiation_8cpp_source.html#l00045">matrix_exponentiation.cpp:45</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

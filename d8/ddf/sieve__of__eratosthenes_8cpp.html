@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: math/sieve_of_eratosthenes.cpp File Reference</title>
+<title>TheAlgorithms/C++: math/sieve_of_eratosthenes.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -122,7 +139,9 @@ Include dependency graph for sieve_of_eratosthenes.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d35/sieve__of__eratosthenes_8cpp__incl.svg" width="336" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d8/ddf/sieve__of__eratosthenes_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html">math</a></td></tr>
@@ -134,10 +153,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a22be949d160b26361f7e323310f7fa0c" id="r_a22be949d160b26361f7e323310f7fa0c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22be949d160b26361f7e323310f7fa0c">math::sieve_of_eratosthenes::sieve</a> (uint32_t N)</td></tr>
+<tr class="memitem:a22be949d160b26361f7e323310f7fa0c" id="r_a22be949d160b26361f7e323310f7fa0c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22be949d160b26361f7e323310f7fa0c">math::sieve_of_eratosthenes::sieve</a> (uint32_t N)</td></tr>
 <tr class="memdesc:a22be949d160b26361f7e323310f7fa0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to sieve out the primes.  <br /></td></tr>
 <tr class="separator:a22be949d160b26361f7e323310f7fa0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55bc4a221e584d33b79b322432ecc0f3" id="r_a55bc4a221e584d33b79b322432ecc0f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55bc4a221e584d33b79b322432ecc0f3">math::sieve_of_eratosthenes::print</a> (uint32_t N, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; bool &gt; &amp;<a class="el" href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">is_prime</a>)</td></tr>
+<tr class="memitem:a55bc4a221e584d33b79b322432ecc0f3" id="r_a55bc4a221e584d33b79b322432ecc0f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55bc4a221e584d33b79b322432ecc0f3">math::sieve_of_eratosthenes::print</a> (uint32_t N, const std::vector&lt; bool &gt; &amp;<a class="el" href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">is_prime</a>)</td></tr>
 <tr class="memdesc:a55bc4a221e584d33b79b322432ecc0f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to print the prime numbers.  <br /></td></tr>
 <tr class="separator:a55bc4a221e584d33b79b322432ecc0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a483bb8ccf42aaf7375a83e91490eda1e" id="r_a483bb8ccf42aaf7375a83e91490eda1e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a> ()</td></tr>
@@ -153,6 +172,8 @@ Functions</h2></td></tr>
 <p>Time Complexity : \(O(N \cdot\log \log N)\) <br  />
 Space Complexity : \(O(N)\)</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d4/d9c/primes__up__to__billion_8cpp.html" title="Compute prime numbers upto 1 billion.">primes_up_to_billion.cpp</a> <a class="el" href="../../de/d9b/prime__numbers_8cpp.html" title="Get list of prime numbers.">prime_numbers.cpp</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d8/ddf/sieve__of__eratosthenes_8cpp_source.html">sieve_of_eratosthenes.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -171,17 +192,14 @@ Space Complexity : \(O(N)\)</p>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/ddf/sieve__of__eratosthenes_8cpp_source.html#l00119">119</a> of file <a class="el" href="../../d8/ddf/sieve__of__eratosthenes_8cpp_source.html">sieve_of_eratosthenes.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  119</span>           {</div>
 <div class="line"><span class="lineno">  120</span>    <a class="code hl_function" href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a>();</div>
 <div class="line"><span class="lineno">  121</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  122</span>}</div>
-<div class="ttc" id="asieve__of__eratosthenes_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> sieve_of_eratosthenes.cpp:81</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/ddf/sieve__of__eratosthenes_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="159" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="asieve__of__eratosthenes_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/ddf/sieve__of__eratosthenes_8cpp_source.html#l00081">sieve_of_eratosthenes.cpp:81</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a55bc4a221e584d33b79b322432ecc0f3" name="a55bc4a221e584d33b79b322432ecc0f3"></a>
@@ -198,7 +216,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>is_prime</em></span>&#160;)</td>
+          <td class="paramtype">const std::vector&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>is_prime</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -211,23 +229,18 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/ddf/sieve__of__eratosthenes_8cpp_source.html#l00065">65</a> of file <a class="el" href="../../d8/ddf/sieve__of__eratosthenes_8cpp_source.html">sieve_of_eratosthenes.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   65</span>                                                        {</div>
 <div class="line"><span class="lineno">   66</span>    <span class="keywordflow">for</span> (uint32_t i = 2; i &lt;= <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
 <div class="line"><span class="lineno">   67</span>        <span class="keywordflow">if</span> (is_prime[i]) {</div>
-<div class="line"><span class="lineno">   68</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; i &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><span class="lineno">   68</span>            std::cout &lt;&lt; i &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line"><span class="lineno">   69</span>        }</div>
 <div class="line"><span class="lineno">   70</span>    }</div>
-<div class="line"><span class="lineno">   71</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   71</span>    std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   72</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="asparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> sparse_table.cpp:48</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/ddf/sieve__of__eratosthenes_8cpp_a55bc4a221e584d33b79b322432ecc0f3_cgraph.svg" width="356" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="asparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dab/sparse__table_8cpp_source.html#l00048">sparse_table.cpp:48</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a22be949d160b26361f7e323310f7fa0c" name="a22be949d160b26361f7e323310f7fa0c"></a>
@@ -237,7 +250,7 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; bool &gt; math::sieve_of_eratosthenes::sieve </td>
+          <td class="memname">std::vector&lt; bool &gt; math::sieve_of_eratosthenes::sieve </td>
           <td>(</td>
           <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span></td><td>)</td>
           <td></td>
@@ -254,8 +267,10 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>is_prime a vector of <code>N + 1</code> booleans identifying if <code>i</code>^th number is a prime or not </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/ddf/sieve__of__eratosthenes_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../d8/ddf/sieve__of__eratosthenes_8cpp_source.html">sieve_of_eratosthenes.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   45</span>                                  {</div>
-<div class="line"><span class="lineno">   46</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> <a class="code hl_function" href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">is_prime</a>(N + 1, <span class="keyword">true</span>);  <span class="comment">// Initialize all as prime numbers</span></div>
+<div class="line"><span class="lineno">   46</span>    std::vector&lt;bool&gt; <a class="code hl_function" href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">is_prime</a>(N + 1, <span class="keyword">true</span>);  <span class="comment">// Initialize all as prime numbers</span></div>
 <div class="line"><span class="lineno">   47</span>    <a class="code hl_function" href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">is_prime</a>[0] = <a class="code hl_function" href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">is_prime</a>[1] = <span class="keyword">false</span>;        <span class="comment">// 0 and 1 are not prime numbers</span></div>
 <div class="line"><span class="lineno">   48</span> </div>
 <div class="line"><span class="lineno">   49</span>    <span class="keywordflow">for</span> (uint32_t i = 2; i * i &lt;= <a class="code hl_variable" href="../../d8/dab/sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
@@ -267,14 +282,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   55</span>    }</div>
 <div class="line"><span class="lineno">   56</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">is_prime</a>;</div>
 <div class="line"><span class="lineno">   57</span>}</div>
-<div class="ttc" id="anamespacemath_html_abd8f794b2229b42876169ff841b6e444"><div class="ttname"><a href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">math::is_prime</a></div><div class="ttdeci">bool is_prime(int64_t num)</div><div class="ttdoc">Function to check if the given number is prime or not.</div><div class="ttdef"><b>Definition</b> check_prime.cpp:31</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/ddf/sieve__of__eratosthenes_8cpp_a22be949d160b26361f7e323310f7fa0c_cgraph.svg" width="519" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="anamespacemath_html_abd8f794b2229b42876169ff841b6e444"><div class="ttname"><a href="../../dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444">math::is_prime</a></div><div class="ttdeci">bool is_prime(int64_t num)</div><div class="ttdoc">Function to check if the given number is prime or not.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d93/check__prime_8cpp_source.html#l00031">check_prime.cpp:31</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a483bb8ccf42aaf7375a83e91490eda1e" name="a483bb8ccf42aaf7375a83e91490eda1e"></a>
@@ -302,25 +311,27 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/ddf/sieve__of__eratosthenes_8cpp_source.html#l00081">81</a> of file <a class="el" href="../../d8/ddf/sieve__of__eratosthenes_8cpp_source.html">sieve_of_eratosthenes.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   81</span>                    {</div>
-<div class="line"><span class="lineno">   82</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> is_prime_1 =</div>
+<div class="line"><span class="lineno">   82</span>    std::vector&lt;bool&gt; is_prime_1 =</div>
 <div class="line"><span class="lineno">   83</span>        <a class="code hl_function" href="#a22be949d160b26361f7e323310f7fa0c">math::sieve_of_eratosthenes::sieve</a>(<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(10));</div>
-<div class="line"><span class="lineno">   84</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> is_prime_2 =</div>
+<div class="line"><span class="lineno">   84</span>    std::vector&lt;bool&gt; is_prime_2 =</div>
 <div class="line"><span class="lineno">   85</span>        <a class="code hl_function" href="#a22be949d160b26361f7e323310f7fa0c">math::sieve_of_eratosthenes::sieve</a>(<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(20));</div>
-<div class="line"><span class="lineno">   86</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> is_prime_3 =</div>
+<div class="line"><span class="lineno">   86</span>    std::vector&lt;bool&gt; is_prime_3 =</div>
 <div class="line"><span class="lineno">   87</span>        <a class="code hl_function" href="#a22be949d160b26361f7e323310f7fa0c">math::sieve_of_eratosthenes::sieve</a>(<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(100));</div>
 <div class="line"><span class="lineno">   88</span> </div>
-<div class="line"><span class="lineno">   89</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> expected_1{<span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
+<div class="line"><span class="lineno">   89</span>    std::vector&lt;bool&gt; expected_1{<span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
 <div class="line"><span class="lineno">   90</span>                                 <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>};</div>
 <div class="line"><span class="lineno">   91</span>    assert(is_prime_1 == expected_1);</div>
 <div class="line"><span class="lineno">   92</span> </div>
-<div class="line"><span class="lineno">   93</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> expected_2{<span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
+<div class="line"><span class="lineno">   93</span>    std::vector&lt;bool&gt; expected_2{<span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
 <div class="line"><span class="lineno">   94</span>                                 <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
 <div class="line"><span class="lineno">   95</span>                                 <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
 <div class="line"><span class="lineno">   96</span>                                 <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>};</div>
 <div class="line"><span class="lineno">   97</span>    assert(is_prime_2 == expected_2);</div>
 <div class="line"><span class="lineno">   98</span> </div>
-<div class="line"><span class="lineno">   99</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> expected_3{</div>
+<div class="line"><span class="lineno">   99</span>    std::vector&lt;bool&gt; expected_3{</div>
 <div class="line"><span class="lineno">  100</span>        <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>,</div>
 <div class="line"><span class="lineno">  101</span>        <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
 <div class="line"><span class="lineno">  102</span>        <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,  <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
@@ -335,7 +346,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  111</span>    assert(is_prime_3 == expected_3);</div>
 <div class="line"><span class="lineno">  112</span> </div>
 <div class="line"><span class="lineno">  113</span>}</div>
-<div class="ttc" id="asieve__of__eratosthenes_8cpp_html_a22be949d160b26361f7e323310f7fa0c"><div class="ttname"><a href="#a22be949d160b26361f7e323310f7fa0c">math::sieve_of_eratosthenes::sieve</a></div><div class="ttdeci">std::vector&lt; bool &gt; sieve(uint32_t N)</div><div class="ttdoc">Function to sieve out the primes.</div><div class="ttdef"><b>Definition</b> sieve_of_eratosthenes.cpp:45</div></div>
+<div class="ttc" id="asieve__of__eratosthenes_8cpp_html_a22be949d160b26361f7e323310f7fa0c"><div class="ttname"><a href="#a22be949d160b26361f7e323310f7fa0c">math::sieve_of_eratosthenes::sieve</a></div><div class="ttdeci">std::vector&lt; bool &gt; sieve(uint32_t N)</div><div class="ttdoc">Function to sieve out the primes.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/ddf/sieve__of__eratosthenes_8cpp_source.html#l00045">sieve_of_eratosthenes.cpp:45</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

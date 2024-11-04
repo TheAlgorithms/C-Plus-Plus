@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: graph/depth_first_search.cpp File Reference</title>
+<title>TheAlgorithms/C++: graph/depth_first_search.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -121,7 +138,9 @@ Include dependency graph for depth_first_search.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d4e/depth__first__search_8cpp__incl.svg" width="262" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../da/d8d/depth__first__search_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dce/namespacegraph.html">graph</a></td></tr>
@@ -130,13 +149,13 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad4016cfc80485a43748895a2c26c7d08" id="r_ad4016cfc80485a43748895a2c26c7d08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dce/namespacegraph.html#ad4016cfc80485a43748895a2c26c7d08">graph::addEdge</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; size_t &gt; &gt; *adj, size_t u, size_t v)</td></tr>
+<tr class="memitem:ad4016cfc80485a43748895a2c26c7d08" id="r_ad4016cfc80485a43748895a2c26c7d08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dce/namespacegraph.html#ad4016cfc80485a43748895a2c26c7d08">graph::addEdge</a> (std::vector&lt; std::vector&lt; size_t &gt; &gt; *adj, size_t u, size_t v)</td></tr>
 <tr class="memdesc:ad4016cfc80485a43748895a2c26c7d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds and edge between two vertices of graph say u and v in this case.  <br /></td></tr>
 <tr class="separator:ad4016cfc80485a43748895a2c26c7d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64c1db5aad7502c6f08e4652f6edd463" id="r_a64c1db5aad7502c6f08e4652f6edd463"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dce/namespacegraph.html#a64c1db5aad7502c6f08e4652f6edd463">graph::explore</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; size_t &gt; &gt; &amp;adj, size_t v, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; bool &gt; *visited)</td></tr>
+<tr class="memitem:a64c1db5aad7502c6f08e4652f6edd463" id="r_a64c1db5aad7502c6f08e4652f6edd463"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dce/namespacegraph.html#a64c1db5aad7502c6f08e4652f6edd463">graph::explore</a> (const std::vector&lt; std::vector&lt; size_t &gt; &gt; &amp;adj, size_t v, std::vector&lt; bool &gt; *visited)</td></tr>
 <tr class="memdesc:a64c1db5aad7502c6f08e4652f6edd463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explores the given vertex, exploring a vertex means traversing over all the vertices which are connected to the vertex that is currently being explored.  <br /></td></tr>
 <tr class="separator:a64c1db5aad7502c6f08e4652f6edd463"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5428a3519267a28bba4b4310cfbb6ae" id="r_ab5428a3519267a28bba4b4310cfbb6ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dce/namespacegraph.html#ab5428a3519267a28bba4b4310cfbb6ae">graph::depth_first_search</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; size_t &gt; &gt; &amp;adj, size_t start)</td></tr>
+<tr class="memitem:ab5428a3519267a28bba4b4310cfbb6ae" id="r_ab5428a3519267a28bba4b4310cfbb6ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dce/namespacegraph.html#ab5428a3519267a28bba4b4310cfbb6ae">graph::depth_first_search</a> (const std::vector&lt; std::vector&lt; size_t &gt; &gt; &amp;adj, size_t start)</td></tr>
 <tr class="memdesc:ab5428a3519267a28bba4b4310cfbb6ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">initiates depth first search algorithm.  <br /></td></tr>
 <tr class="separator:ab5428a3519267a28bba4b4310cfbb6ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
@@ -163,6 +182,8 @@ Functions</h2></td></tr>
 <p class="startli">While exploring vertex we mark the vertex as visited and start exploring the vertices connected to this vertex in recursive way. </p>
 </li>
 </ol>
+
+<p class="definition">Definition in file <a class="el" href="../../da/d8d/depth__first__search_8cpp_source.html">depth_first_search.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -182,43 +203,33 @@ Functions</h2></td></tr>
 <p>creating graph</p>
 <p>taking input for edges</p>
 <p>running depth first search over graph</p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d8d/depth__first__search_8cpp_source.html#l00109">109</a> of file <a class="el" href="../../da/d8d/depth__first__search_8cpp_source.html">depth_first_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  109</span>           {</div>
 <div class="line"><span class="lineno">  110</span>    <span class="keywordtype">size_t</span> vertices = 0, edges = 0;</div>
-<div class="line"><span class="lineno">  111</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter the Vertices : &quot;</span>;</div>
-<div class="line"><span class="lineno">  112</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; vertices;</div>
-<div class="line"><span class="lineno">  113</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter the Edges : &quot;</span>;</div>
-<div class="line"><span class="lineno">  114</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; edges;</div>
-<div class="line"><span class="lineno">  115</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  116</span><span class="comment">    /// creating graph</span></div>
-<div class="line"><span class="lineno">  117</span><span class="comment"></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;size_t&gt;</a>&gt; adj(vertices, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;size_t&gt;</a>());</div>
-<div class="line"><span class="lineno">  118</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  119</span><span class="comment">    /// taking input for edges</span></div>
-<div class="line"><span class="lineno">  120</span><span class="comment"></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter the vertices which have edges between them : &quot;</span></div>
-<div class="line"><span class="lineno">  121</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  111</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter the Vertices : &quot;</span>;</div>
+<div class="line"><span class="lineno">  112</span>    std::cin &gt;&gt; vertices;</div>
+<div class="line"><span class="lineno">  113</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter the Edges : &quot;</span>;</div>
+<div class="line"><span class="lineno">  114</span>    std::cin &gt;&gt; edges;</div>
+<div class="line"><span class="lineno">  115</span> </div>
+<div class="line"><span class="lineno">  117</span>    std::vector&lt;std::vector&lt;size_t&gt;&gt; adj(vertices, std::vector&lt;size_t&gt;());</div>
+<div class="line"><span class="lineno">  118</span> </div>
+<div class="line"><span class="lineno">  120</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter the vertices which have edges between them : &quot;</span></div>
+<div class="line"><span class="lineno">  121</span>              &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  122</span>    <span class="keywordflow">while</span> (edges--) {</div>
 <div class="line"><span class="lineno">  123</span>        <span class="keywordtype">size_t</span> u = 0, v = 0;</div>
-<div class="line"><span class="lineno">  124</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; u &gt;&gt; v;</div>
+<div class="line"><span class="lineno">  124</span>        std::cin &gt;&gt; u &gt;&gt; v;</div>
 <div class="line"><span class="lineno">  125</span>        <a class="code hl_function" href="../../df/dce/namespacegraph.html#a9125ceb66bfbec3093bba64c2c1e99e2">graph::addEdge</a>(&amp;adj, u, v);</div>
 <div class="line"><span class="lineno">  126</span>    }</div>
-<div class="line"><span class="lineno">  127</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  128</span><span class="comment">    /// running depth first search over graph</span></div>
-<div class="line"><span class="lineno">  129</span><span class="comment"></span>    <a class="code hl_function" href="../../df/dce/namespacegraph.html#ab5428a3519267a28bba4b4310cfbb6ae">graph::depth_first_search</a>(adj, 2);</div>
+<div class="line"><span class="lineno">  127</span> </div>
+<div class="line"><span class="lineno">  129</span>    <a class="code hl_function" href="../../df/dce/namespacegraph.html#ab5428a3519267a28bba4b4310cfbb6ae">graph::depth_first_search</a>(adj, 2);</div>
 <div class="line"><span class="lineno">  130</span> </div>
-<div class="line"><span class="lineno">  131</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  131</span>    std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  132</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  133</span>}</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="anamespacegraph_html_a9125ceb66bfbec3093bba64c2c1e99e2"><div class="ttname"><a href="../../df/dce/namespacegraph.html#a9125ceb66bfbec3093bba64c2c1e99e2">graph::addEdge</a></div><div class="ttdeci">void addEdge(std::vector&lt; std::vector&lt; int &gt; &gt; *adj, int u, int v)</div><div class="ttdoc">Function that add edge between two nodes or vertices of graph.</div><div class="ttdef"><b>Definition</b> connected_components.cpp:46</div></div>
-<div class="ttc" id="anamespacegraph_html_ab5428a3519267a28bba4b4310cfbb6ae"><div class="ttname"><a href="../../df/dce/namespacegraph.html#ab5428a3519267a28bba4b4310cfbb6ae">graph::depth_first_search</a></div><div class="ttdeci">void depth_first_search(const std::vector&lt; std::vector&lt; size_t &gt; &gt; &amp;adj, size_t start)</div><div class="ttdoc">initiates depth first search algorithm.</div><div class="ttdef"><b>Definition</b> depth_first_search.cpp:99</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d8d/depth__first__search_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="220" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="anamespacegraph_html_a9125ceb66bfbec3093bba64c2c1e99e2"><div class="ttname"><a href="../../df/dce/namespacegraph.html#a9125ceb66bfbec3093bba64c2c1e99e2">graph::addEdge</a></div><div class="ttdeci">void addEdge(std::vector&lt; std::vector&lt; int &gt; &gt; *adj, int u, int v)</div><div class="ttdoc">Function that add edge between two nodes or vertices of graph.</div><div class="ttdef"><b>Definition</b> <a href="../../df/ddd/connected__components_8cpp_source.html#l00046">connected_components.cpp:46</a></div></div>
+<div class="ttc" id="anamespacegraph_html_ab5428a3519267a28bba4b4310cfbb6ae"><div class="ttname"><a href="../../df/dce/namespacegraph.html#ab5428a3519267a28bba4b4310cfbb6ae">graph::depth_first_search</a></div><div class="ttdeci">void depth_first_search(const std::vector&lt; std::vector&lt; size_t &gt; &gt; &amp;adj, size_t start)</div><div class="ttdoc">initiates depth first search algorithm.</div><div class="ttdef"><b>Definition</b> <a href="../../da/d8d/depth__first__search_8cpp_source.html#l00099">depth_first_search.cpp:99</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

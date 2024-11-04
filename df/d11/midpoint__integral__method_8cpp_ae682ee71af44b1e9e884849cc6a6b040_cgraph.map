@@ -1,7 +1,0 @@
-<map id="numerical_methods::midpoint_rule::g" name="numerical_methods::midpoint_rule::g">
-<area shape="rect" id="Node000001" title="A function g(x) that will be used to test the method." alt="" coords="5,23,148,64"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/exp.html#" title=" " alt="" coords="197,5,266,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,29,181,24,182,29,149,34"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="196,55,267,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,52,181,57,180,62,148,57"/>
-</map>

@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: data_structures/treap.cpp File Reference</title>
+<title>TheAlgorithms/C++: data_structures/treap.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -124,7 +141,9 @@ Include dependency graph for treap.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../da/de6/treap_8cpp__incl.svg" width="330" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d0/dd2/treap_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html">data_structures::treap::Treap</a></td></tr>
@@ -151,9 +170,8 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ad939ec178d0069aeea14b7d6d7d12099" id="r_ad939ec178d0069aeea14b7d6d7d12099"><td class="memItemLeft" align="right" valign="top"><a id="ad939ec178d0069aeea14b7d6d7d12099" name="ad939ec178d0069aeea14b7d6d7d12099"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>data_structures::treap::maxNode</b> = 1e5 + 5</td></tr>
-<tr class="memdesc:ad939ec178d0069aeea14b7d6d7d12099"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum number of nodes <br /></td></tr>
+<tr class="memitem:ad939ec178d0069aeea14b7d6d7d12099" id="r_ad939ec178d0069aeea14b7d6d7d12099"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2e/namespacedata__structures_1_1treap.html#ad939ec178d0069aeea14b7d6d7d12099">data_structures::treap::maxNode</a> = 1e5 + 5</td></tr>
+<tr class="memdesc:ad939ec178d0069aeea14b7d6d7d12099"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum number of nodes  <br /></td></tr>
 <tr class="separator:ad939ec178d0069aeea14b7d6d7d12099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -162,6 +180,8 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>data_structures:
 <p>Support operations including insert, erase, and query (the rank of specified element or the element ranked x) as the same as BST</p>
 <p>But these operations take O(log N) time, since treap keeps property of heap using rotate operation, and the desired depth of the tree is O(log N). There's very little chance that it will degenerate into a chain like BST</p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/fgmn" target="_blank">Kairao ZHENG</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -180,17 +200,14 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>data_structures:
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dd2/treap_8cpp_source.html#l00255">255</a> of file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  255</span>           {</div>
 <div class="line"><span class="lineno">  256</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
 <div class="line"><span class="lineno">  257</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  258</span>}</div>
-<div class="ttc" id="atreap_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> treap.cpp:229</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/dd2/treap_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="100%" height="591"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="atreap_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd2/treap_8cpp_source.html#l00229">treap.cpp:229</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -219,8 +236,10 @@ Here is the call graph for this function:</div>
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <p>&lt; Treap object instance</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dd2/treap_8cpp_source.html#l00229">229</a> of file <a class="el" href="../../d0/dd2/treap_8cpp_source.html">treap.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  229</span>                   {</div>
-<div class="line"><span class="lineno">  230</span>    <a class="code hl_struct" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html">data_structures::treap::Treap</a> mTreap;  <span class="comment">///&lt; Treap object instance</span></div>
+<div class="line"><span class="lineno">  230</span>    <a class="code hl_struct" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html">data_structures::treap::Treap</a> mTreap;  </div>
 <div class="line"><span class="lineno">  231</span> </div>
 <div class="line"><span class="lineno">  232</span>    mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a5e884d2686aff501ef589b0d1185492f">insert</a>(1);</div>
 <div class="line"><span class="lineno">  233</span>    mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a5e884d2686aff501ef589b0d1185492f">insert</a>(2);</div>
@@ -239,22 +258,16 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  246</span>    assert(mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ac94e9d69305940f6d8804031455af039">get_rank</a>(10) == 7);</div>
 <div class="line"><span class="lineno">  247</span>    assert(mTreap.<a class="code hl_function" href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ab8b9899f22070cfa01db5bf874296126">get_predecessor</a>(10) == 7);</div>
 <div class="line"><span class="lineno">  248</span> </div>
-<div class="line"><span class="lineno">  249</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  249</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  250</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html">data_structures::treap::Treap</a></div><div class="ttdoc">Struct representation of the treap.</div><div class="ttdef"><b>Definition</b> treap.cpp:40</div></div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a5e884d2686aff501ef589b0d1185492f"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a5e884d2686aff501ef589b0d1185492f">data_structures::treap::Treap::insert</a></div><div class="ttdeci">void insert(int k)</div><div class="ttdoc">Insert element (External method)</div><div class="ttdef"><b>Definition</b> treap.cpp:203</div></div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a767b28f9911fc32b8462862be058a4a4"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a767b28f9911fc32b8462862be058a4a4">data_structures::treap::Treap::get_next</a></div><div class="ttdeci">int get_next(int k)</div><div class="ttdoc">Get the successor node of element k.</div><div class="ttdef"><b>Definition</b> treap.cpp:188</div></div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a9ea2becd904e2e7d22f23a001b444469"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a9ea2becd904e2e7d22f23a001b444469">data_structures::treap::Treap::erase</a></div><div class="ttdeci">void erase(int k)</div><div class="ttdoc">Erase element (External method)</div><div class="ttdef"><b>Definition</b> treap.cpp:208</div></div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_ab2db3ad3aecc240011e0c8b8604d2c69"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ab2db3ad3aecc240011e0c8b8604d2c69">data_structures::treap::Treap::get_k_th</a></div><div class="ttdeci">int get_k_th(int k)</div><div class="ttdoc">Get the KTH largest value (External method)</div><div class="ttdef"><b>Definition</b> treap.cpp:214</div></div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_ab8b9899f22070cfa01db5bf874296126"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ab8b9899f22070cfa01db5bf874296126">data_structures::treap::Treap::get_predecessor</a></div><div class="ttdeci">int get_predecessor(int k)</div><div class="ttdoc">Get the predecessor node of element k.</div><div class="ttdef"><b>Definition</b> treap.cpp:172</div></div>
-<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_ac94e9d69305940f6d8804031455af039"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ac94e9d69305940f6d8804031455af039">data_structures::treap::Treap::get_rank</a></div><div class="ttdeci">int get_rank(int k)</div><div class="ttdoc">Get the rank of specified element (External method)</div><div class="ttdef"><b>Definition</b> treap.cpp:220</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/dd2/treap_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="100%" height="591"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html">data_structures::treap::Treap</a></div><div class="ttdoc">Struct representation of the treap.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd2/treap_8cpp_source.html#l00040">treap.cpp:40</a></div></div>
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a5e884d2686aff501ef589b0d1185492f"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a5e884d2686aff501ef589b0d1185492f">data_structures::treap::Treap::insert</a></div><div class="ttdeci">void insert(int k)</div><div class="ttdoc">Insert element (External method)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd2/treap_8cpp_source.html#l00203">treap.cpp:203</a></div></div>
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a767b28f9911fc32b8462862be058a4a4"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a767b28f9911fc32b8462862be058a4a4">data_structures::treap::Treap::get_next</a></div><div class="ttdeci">int get_next(int k)</div><div class="ttdoc">Get the successor node of element k.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd2/treap_8cpp_source.html#l00188">treap.cpp:188</a></div></div>
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_a9ea2becd904e2e7d22f23a001b444469"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#a9ea2becd904e2e7d22f23a001b444469">data_structures::treap::Treap::erase</a></div><div class="ttdeci">void erase(int k)</div><div class="ttdoc">Erase element (External method)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd2/treap_8cpp_source.html#l00208">treap.cpp:208</a></div></div>
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_ab2db3ad3aecc240011e0c8b8604d2c69"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ab2db3ad3aecc240011e0c8b8604d2c69">data_structures::treap::Treap::get_k_th</a></div><div class="ttdeci">int get_k_th(int k)</div><div class="ttdoc">Get the KTH largest value (External method)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd2/treap_8cpp_source.html#l00214">treap.cpp:214</a></div></div>
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_ab8b9899f22070cfa01db5bf874296126"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ab8b9899f22070cfa01db5bf874296126">data_structures::treap::Treap::get_predecessor</a></div><div class="ttdeci">int get_predecessor(int k)</div><div class="ttdoc">Get the predecessor node of element k.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd2/treap_8cpp_source.html#l00172">treap.cpp:172</a></div></div>
+<div class="ttc" id="astructdata__structures_1_1treap_1_1_treap_html_ac94e9d69305940f6d8804031455af039"><div class="ttname"><a href="../../d5/d95/structdata__structures_1_1treap_1_1_treap.html#ac94e9d69305940f6d8804031455af039">data_structures::treap::Treap::get_rank</a></div><div class="ttdeci">int get_rank(int k)</div><div class="ttdoc">Get the rank of specified element (External method)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd2/treap_8cpp_source.html#l00220">treap.cpp:220</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

@@ -1,7 +1,0 @@
-<map id="queue::front" name="queue::front">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,96,31"/>
-<area shape="rect" id="Node000002" href="$db/da9/classqueue.html#ac08ebdd38cb4ad74fc0a3f51888da604" title="throws an exception if queue is empty" alt="" coords="144,5,306,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,16,128,16,128,21,96,21"/>
-<area shape="rect" id="Node000003" href="$db/da9/classqueue.html#a4bc52ad6ed6b0cc33ad05f87f05f8bec" title="checks if the queue has no elements" alt="" coords="354,5,504,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="306,16,339,16,339,21,306,21"/>
-</map>

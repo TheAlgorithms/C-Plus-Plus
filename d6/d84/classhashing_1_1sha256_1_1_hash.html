@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: hashing::sha256::Hash Class Reference</title>
+<title>TheAlgorithms/C++: hashing::sha256::Hash Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -117,25 +134,27 @@ $(function(){initNavTree('d6/d84/classhashing_1_1sha256_1_1_hash.html','../../')
 <div class="dynheader">
 Collaboration diagram for hashing::sha256::Hash:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/ded/classhashing_1_1sha256_1_1_hash__coll__graph.svg" width="167" height="230"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/ded/classhashing_1_1sha256_1_1_hash__coll__graph.svg" width="167" height="140"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0896c27ac39c780e0ee62417fdd0b9d3" id="r_a0896c27ac39c780e0ee62417fdd0b9d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0896c27ac39c780e0ee62417fdd0b9d3">update</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; uint32_t, 64 &gt; &amp;blocks)</td></tr>
+<tr class="memitem:a0896c27ac39c780e0ee62417fdd0b9d3" id="r_a0896c27ac39c780e0ee62417fdd0b9d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0896c27ac39c780e0ee62417fdd0b9d3">update</a> (const std::array&lt; uint32_t, 64 &gt; &amp;blocks)</td></tr>
 <tr class="memdesc:a0896c27ac39c780e0ee62417fdd0b9d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the hash array.  <br /></td></tr>
 <tr class="separator:a0896c27ac39c780e0ee62417fdd0b9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4581f503a263d8e928e5716d54477e08" id="r_a4581f503a263d8e928e5716d54477e08"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4581f503a263d8e928e5716d54477e08">to_string</a> () const</td></tr>
+<tr class="memitem:a4581f503a263d8e928e5716d54477e08" id="r_a4581f503a263d8e928e5716d54477e08"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4581f503a263d8e928e5716d54477e08">to_string</a> () const</td></tr>
 <tr class="memdesc:a4581f503a263d8e928e5716d54477e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the hash to a hexadecimal string.  <br /></td></tr>
 <tr class="separator:a4581f503a263d8e928e5716d54477e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ae6bacea3aec06351f4dfa5fa7b9fb13d" id="r_ae6bacea3aec06351f4dfa5fa7b9fb13d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; uint32_t, 8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6bacea3aec06351f4dfa5fa7b9fb13d">hash</a></td></tr>
+<tr class="memitem:ae6bacea3aec06351f4dfa5fa7b9fb13d" id="r_ae6bacea3aec06351f4dfa5fa7b9fb13d"><td class="memItemLeft" align="right" valign="top">std::array&lt; uint32_t, 8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6bacea3aec06351f4dfa5fa7b9fb13d">hash</a></td></tr>
 <tr class="separator:ae6bacea3aec06351f4dfa5fa7b9fb13d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains hash array and functions to update it and convert it to a hexadecimal string. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d08/sha256_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../d4/d08/sha256_8cpp_source.html">sha256.cpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4581f503a263d8e928e5716d54477e08" name="a4581f503a263d8e928e5716d54477e08"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4581f503a263d8e928e5716d54477e08">&#9670;&#160;</a></span>to_string()</h2>
@@ -144,7 +163,7 @@ Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> hashing::sha256::Hash::to_string </td>
+          <td class="memname">std::string hashing::sha256::Hash::to_string </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -153,25 +172,17 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Convert the hash to a hexadecimal string. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> Final hash value </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  130</span>                                {</div>
-<div class="line"><span class="lineno">  131</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_stringstream.html">std::stringstream</a> ss;</div>
-<div class="line"><span class="lineno">  132</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; 8; ++i) {</div>
-<div class="line"><span class="lineno">  133</span>        ss &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/hex.html">std::hex</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setfill.html">std::setfill</a>(<span class="charliteral">&#39;0&#39;</span>) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(8) &lt;&lt; hash[i];</div>
-<div class="line"><span class="lineno">  134</span>    }</div>
-<div class="line"><span class="lineno">  135</span>    <span class="keywordflow">return</span> ss.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_stringstream/str.html">str</a>();</div>
-<div class="line"><span class="lineno">  136</span>}</div>
-<div class="ttc" id="abasic_stringstream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_stringstream.html">std::stringstream</a></div></div>
-<div class="ttc" id="ahex_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/hex.html">std::hex</a></div><div class="ttdeci">T hex(T... args)</div></div>
-<div class="ttc" id="asetfill_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/setfill.html">std::setfill</a></div><div class="ttdeci">T setfill(T... args)</div></div>
-<div class="ttc" id="asetw_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a></div><div class="ttdeci">T setw(T... args)</div></div>
-<div class="ttc" id="astr_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_stringstream/str.html">std::stringstream::str</a></div><div class="ttdeci">T str(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d84/classhashing_1_1sha256_1_1_hash_a4581f503a263d8e928e5716d54477e08_cgraph.svg" width="356" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<dl class="section return"><dt>Returns</dt><dd>std::string Final hash value </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../d4/d08/sha256_8cpp_source.html#l00130">130</a> of file <a class="el" href="../../d4/d08/sha256_8cpp_source.html">sha256.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  130</span>                                {</div>
+<div class="line"><span class="lineno">  131</span>    std::stringstream ss;</div>
+<div class="line"><span class="lineno">  132</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; 8; ++i) {</div>
+<div class="line"><span class="lineno">  133</span>        ss &lt;&lt; std::hex &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>) &lt;&lt; std::setw(8) &lt;&lt; hash[i];</div>
+<div class="line"><span class="lineno">  134</span>    }</div>
+<div class="line"><span class="lineno">  135</span>    <span class="keywordflow">return</span> ss.str();</div>
+<div class="line"><span class="lineno">  136</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0896c27ac39c780e0ee62417fdd0b9d3" name="a0896c27ac39c780e0ee62417fdd0b9d3"></a>
@@ -183,7 +194,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void hashing::sha256::Hash::update </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; uint32_t, 64 &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>blocks</em></span></td><td>)</td>
+          <td class="paramtype">const std::array&lt; uint32_t, 64 &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>blocks</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -197,10 +208,12 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d08/sha256_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../d4/d08/sha256_8cpp_source.html">sha256.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   67</span>                                                      {</div>
 <div class="line"><span class="lineno">   68</span>    <span class="comment">// Initialize array of round constants with first 32 bits of the fractional</span></div>
 <div class="line"><span class="lineno">   69</span>    <span class="comment">// parts of the cube roots of the first 64 primes 2..311</span></div>
-<div class="line"><span class="lineno">   70</span>    <span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;uint32_t, 64&gt;</a> round_constants = {</div>
+<div class="line"><span class="lineno">   70</span>    <span class="keyword">const</span> std::array&lt;uint32_t, 64&gt; round_constants = {</div>
 <div class="line"><span class="lineno">   71</span>        0x428A2F98, 0x71374491, 0xB5C0FBCF, 0xE9B5DBA5, 0x3956C25B, 0x59F111F1,</div>
 <div class="line"><span class="lineno">   72</span>        0x923F82A4, 0xAB1C5ED5, 0xD807AA98, 0x12835B01, 0x243185BE, 0x550C7DC3,</div>
 <div class="line"><span class="lineno">   73</span>        0x72BE5D74, 0x80DEB1FE, 0x9BDC06A7, 0xC19BF174, 0xE49B69C1, 0xEFBE4786,</div>
@@ -255,17 +268,11 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  122</span>    hash[6] += <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a>;</div>
 <div class="line"><span class="lineno">  123</span>    hash[7] += <a class="code hl_function" href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a>;</div>
 <div class="line"><span class="lineno">  124</span>}</div>
-<div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a2f67508d5f392b0321772169342c98ad"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">numerical_methods::simpson_method::g</a></div><div class="ttdeci">double g(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:115</div></div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a4251b4df4748a0b9c43a48f61bdd2397"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a4251b4df4748a0b9c43a48f61bdd2397">numerical_methods::simpson_method::f</a></div><div class="ttdeci">double f(double x)</div><div class="ttdoc">A function f(x) that will be used to test the method.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:113</div></div>
-<div class="ttc" id="ahash__search_8cpp_html_a566eaf0ffafd50bc61e644561fd27001"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a></div><div class="ttdeci">int h(int key)</div><div class="ttdef"><b>Definition</b> hash_search.cpp:45</div></div>
-<div class="ttc" id="asha256_8cpp_html_adbcd504103c342a4da718f8fce6ff06c"><div class="ttname"><a href="../../d4/d08/sha256_8cpp.html#adbcd504103c342a4da718f8fce6ff06c">hashing::sha256::right_rotate</a></div><div class="ttdeci">uint32_t right_rotate(uint32_t n, size_t rotate)</div><div class="ttdoc">Rotates the bits of a 32-bit unsigned integer.</div><div class="ttdef"><b>Definition</b> sha256.cpp:58</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d84/classhashing_1_1sha256_1_1_hash_a0896c27ac39c780e0ee62417fdd0b9d3_cgraph.svg" width="364" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a2f67508d5f392b0321772169342c98ad"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">numerical_methods::simpson_method::g</a></div><div class="ttdeci">double g(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d18/composite__simpson__rule_8cpp_source.html#l00115">composite_simpson_rule.cpp:115</a></div></div>
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a4251b4df4748a0b9c43a48f61bdd2397"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a4251b4df4748a0b9c43a48f61bdd2397">numerical_methods::simpson_method::f</a></div><div class="ttdeci">double f(double x)</div><div class="ttdoc">A function f(x) that will be used to test the method.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d18/composite__simpson__rule_8cpp_source.html#l00113">composite_simpson_rule.cpp:113</a></div></div>
+<div class="ttc" id="ahash__search_8cpp_html_a566eaf0ffafd50bc61e644561fd27001"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a></div><div class="ttdeci">int h(int key)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/df3/hash__search_8cpp_source.html#l00045">hash_search.cpp:45</a></div></div>
+<div class="ttc" id="asha256_8cpp_html_adbcd504103c342a4da718f8fce6ff06c"><div class="ttname"><a href="../../d4/d08/sha256_8cpp.html#adbcd504103c342a4da718f8fce6ff06c">hashing::sha256::right_rotate</a></div><div class="ttdeci">uint32_t right_rotate(uint32_t n, size_t rotate)</div><div class="ttdoc">Rotates the bits of a 32-bit unsigned integer.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d08/sha256_8cpp_source.html#l00058">sha256.cpp:58</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -279,7 +286,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt;uint32_t, 8&gt; hashing::sha256::Hash::hash</td>
+          <td class="memname">std::array&lt;uint32_t, 8&gt; hashing::sha256::Hash::hash</td>
         </tr>
       </table>
   </td>
@@ -291,14 +298,16 @@ Here is the call graph for this function:</div>
 <b>Initial value:</b><div class="fragment"><div class="line">= {0x6A09E667, 0xBB67AE85, 0x3C6EF372,</div>
 <div class="line">                                    0xA54FF53A, 0x510E527F, 0x9B05688C,</div>
 <div class="line">                                    0x1F83D9AB, 0x5BE0CD19}</div>
-</div><!-- fragment --><div class="fragment"><div class="line"><span class="lineno">   43</span>                                 {0x6A09E667, 0xBB67AE85, 0x3C6EF372,</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d4/d08/sha256_8cpp_source.html#l00043">43</a> of file <a class="el" href="../../d4/d08/sha256_8cpp_source.html">sha256.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>                                 {0x6A09E667, 0xBB67AE85, 0x3C6EF372,</div>
 <div class="line"><span class="lineno">   44</span>                                    0xA54FF53A, 0x510E527F, 0x9B05688C,</div>
 <div class="line"><span class="lineno">   45</span>                                    0x1F83D9AB, 0x5BE0CD19};</div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>hashing/<a class="el" href="../../d4/d08/sha256_8cpp.html">sha256.cpp</a></li>
+<li>hashing/<a class="el" href="../../d4/d08/sha256_8cpp_source.html">sha256.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

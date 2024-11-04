@@ -1,25 +1,5 @@
 var searchData=
 [
-  ['packaged_5ftask_0',['packaged_task',['http://en.cppreference.com/w/cpp/thread/packaged_task.html',0,'std']]],
-  ['pair_1',['pair',['http://en.cppreference.com/w/cpp/utility/pair.html',0,'std']]],
-  ['pair_3c_20int8_5ft_2c_20int8_5ft_20_3e_2',['pair&lt; int8_t, int8_t &gt;',['http://en.cppreference.com/w/cpp/utility/pair.html',0,'std']]],
-  ['pair_3c_20others_3a_3acache_3a_3ad_5fnode_3c_20k_2c_20v_20_3e_20_2a_2c_20int_20_3e_3',['pair&lt; others::Cache::D_Node&lt; K, V &gt; *, int &gt;',['http://en.cppreference.com/w/cpp/utility/pair.html',0,'std']]],
-  ['pair_3c_20others_3a_3acache_3a_3ad_5fnode_3c_20k_2c_20v_20_3e_20_2a_2c_20others_3a_3acache_3a_3ad_5fnode_3c_20k_2c_20v_20_3e_20_2a_20_3e_4',['pair&lt; others::Cache::D_Node&lt; K, V &gt; *, others::Cache::D_Node&lt; K, V &gt; * &gt;',['http://en.cppreference.com/w/cpp/utility/pair.html',0,'std']]],
-  ['pattern_5',['pattern',['http://en.cppreference.com/w/cpp/locale/money_base.html',0,'std::money_base::pattern'],['http://en.cppreference.com/w/cpp/locale/money_base.html',0,'std::money_get::pattern'],['http://en.cppreference.com/w/cpp/locale/money_base.html',0,'std::money_put::pattern'],['http://en.cppreference.com/w/cpp/locale/money_base.html',0,'std::moneypunct::pattern'],['http://en.cppreference.com/w/cpp/locale/money_base.html',0,'std::moneypunct_byname::pattern'],['../dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html',1,'strings::boyer_moore::pattern']]],
-  ['persegtree_6',['perSegTree',['../d8/d28/classrange__queries_1_1per_seg_tree.html',1,'range_queries']]],
-  ['peta_7',['peta',['http://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',0,'std']]],
-  ['pico_8',['pico',['http://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',0,'std']]],
-  ['piecewise_5fconstant_5fdistribution_9',['piecewise_constant_distribution',['http://en.cppreference.com/w/cpp/numeric/random/piecewise_constant_distribution.html',0,'std']]],
-  ['piecewise_5fconstruct_5ft_10',['piecewise_construct_t',['http://en.cppreference.com/w/cpp/utility/piecewise_construct_t.html',0,'std']]],
-  ['piecewise_5flinear_5fdistribution_11',['piecewise_linear_distribution',['http://en.cppreference.com/w/cpp/numeric/random/piecewise_linear_distribution.html',0,'std']]],
-  ['placeholders_12',['placeholders',['http://en.cppreference.com/w/cpp/utility/functional/placeholders.html',0,'std']]],
-  ['plus_13',['plus',['http://en.cppreference.com/w/cpp/utility/functional/plus.html',0,'std']]],
-  ['point_14',['Point',['../d6/d45/structciphers_1_1elliptic__curve__key__exchange_1_1_point.html',1,'ciphers::elliptic_curve_key_exchange::Point'],['../d7/d48/structgeometry_1_1grahamscan_1_1_point.html',1,'geometry::grahamscan::Point'],['../d9/d5a/structgeometry_1_1jarvis_1_1_point.html',1,'geometry::jarvis::Point'],['../d8/dc8/struct_point.html',1,'Point']]],
-  ['pointer_5fsafety_15',['pointer_safety',['http://en.cppreference.com/w/cpp/memory/gc/pointer_safety.html',0,'std']]],
-  ['pointer_5ftraits_16',['pointer_traits',['http://en.cppreference.com/w/cpp/memory/pointer_traits.html',0,'std']]],
-  ['poisson_5fdistribution_17',['poisson_distribution',['http://en.cppreference.com/w/cpp/numeric/random/poisson_distribution.html',0,'std']]],
-  ['priority_5fqueue_18',['priority_queue',['http://en.cppreference.com/w/cpp/container/priority_queue.html',0,'std']]],
-  ['priority_5fqueue_3c_20std_3a_3atuple_3c_20s_2c_20t_2c_20e_2c_20double_2c_20double_2c_20double_20_3e_2c_20std_3a_3avector_3c_20std_3a_3atuple_3c_20s_2c_20t_2c_20e_2c_20double_2c_20double_2c_20double_20_3e_20_3e_2c_20compare_3c_20s_2c_20t_2c_20e_20_3e_20_3e_19',['priority_queue&lt; std::tuple&lt; S, T, E, double, double, double &gt;, std::vector&lt; std::tuple&lt; S, T, E, double, double, double &gt; &gt;, Compare&lt; S, T, E &gt; &gt;',['http://en.cppreference.com/w/cpp/container/priority_queue.html',0,'std']]],
-  ['promise_20',['promise',['http://en.cppreference.com/w/cpp/thread/promise.html',0,'std']]],
-  ['ptrdiff_5ft_21',['ptrdiff_t',['http://en.cppreference.com/w/cpp/types/ptrdiff_t.html',0,'std']]]
+  ['rbtree_0',['RBtree',['../d8/d72/class_r_btree.html',1,'']]],
+  ['rootedtree_1',['RootedTree',['../d0/d58/classgraph_1_1_rooted_tree.html',1,'graph']]]
 ];

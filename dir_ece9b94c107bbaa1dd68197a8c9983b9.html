@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: hashing Directory Reference</title>
+<title>TheAlgorithms/C++: hashing Directory Reference</title>
+<link rel="icon" href="favicon.svg" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -110,25 +127,25 @@ $(function(){initNavTree('dir_ece9b94c107bbaa1dd68197a8c9983b9.html',''); initRe
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="files" name="files"></a>
 Files</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d9/d92/chaining_8cpp.html">chaining.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d9/d92/chaining_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d9/d92/chaining_8cpp.html">chaining.cpp</a></td></tr>
 <tr class="memdesc:d9/d92/chaining_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a href="https://en.wikipedia.org/wiki/Hash_chain" target="_blank">hash chains</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d6/d80/double__hash__hash__table_8cpp.html">double_hash_hash_table.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d6/d80/double__hash__hash__table_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d6/d80/double__hash__hash__table_8cpp.html">double_hash_hash_table.cpp</a></td></tr>
 <tr class="memdesc:d6/d80/double__hash__hash__table_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage mechanism using <a href="https://en.wikipedia.org/wiki/Double_hashing" target="_blank">double-hashed keys</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d1/dc7/linear__probing__hash__table_8cpp.html">linear_probing_hash_table.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d1/dc7/linear__probing__hash__table_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d1/dc7/linear__probing__hash__table_8cpp.html">linear_probing_hash_table.cpp</a></td></tr>
 <tr class="memdesc:d1/dc7/linear__probing__hash__table_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage mechanism using <a href="https://en.wikipedia.org/wiki/Linear_probing" target="_blank">linear probing hash</a> keys. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d5/d96/md5_8cpp.html">md5.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d5/d96/md5_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d5/d96/md5_8cpp.html">md5.cpp</a></td></tr>
 <tr class="memdesc:d5/d96/md5_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple C++ implementation of the <a href="https://en.wikipedia.org/wiki/MD5" target="_blank">MD5 Hashing Algorithm</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="db/d71/quadratic__probing__hash__table_8cpp.html">quadratic_probing_hash_table.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="db/d71/quadratic__probing__hash__table_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="db/d71/quadratic__probing__hash__table_8cpp.html">quadratic_probing_hash_table.cpp</a></td></tr>
 <tr class="memdesc:db/d71/quadratic__probing__hash__table_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage mechanism using <a href="https://en.wikipedia.org/wiki/Quadratic_probing" target="_blank">quadratic probing hash</a> keys. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d8/d7a/sha1_8cpp.html">sha1.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d8/d7a/sha1_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d8/d7a/sha1_8cpp.html">sha1.cpp</a></td></tr>
 <tr class="memdesc:d8/d7a/sha1_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple C++ implementation of the <a href="https://en.wikipedia.org/wiki/SHA-1" target="_blank">SHA-1 Hashing Algorithm</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d4/d08/sha256_8cpp.html">sha256.cpp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="d4/d08/sha256_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d4/d08/sha256_8cpp.html">sha256.cpp</a></td></tr>
 <tr class="memdesc:d4/d08/sha256_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple C++ implementation of the [SHA-256 Hashing Algorithm] (<a href="https://en.wikipedia.org/wiki/SHA-2">https://en.wikipedia.org/wiki/SHA-2</a>) <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: data_structures::Bitset Class Reference</title>
+<title>TheAlgorithms/C++: data_structures::Bitset Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -118,38 +135,39 @@ $(function(){initNavTree('d9/dae/classdata__structures_1_1_bitset.html','../../'
 <div class="dynheader">
 Collaboration diagram for data_structures::Bitset:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d9a/classdata__structures_1_1_bitset__coll__graph.svg" width="288" height="214"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d9a/classdata__structures_1_1_bitset__coll__graph.svg" width="179" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a15b05aabb28f9b1896b0a61e8ef60130" id="r_a15b05aabb28f9b1896b0a61e8ef60130"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15b05aabb28f9b1896b0a61e8ef60130">Bitset</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a>)</td></tr>
+<tr class="memitem:a15b05aabb28f9b1896b0a61e8ef60130" id="r_a15b05aabb28f9b1896b0a61e8ef60130"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15b05aabb28f9b1896b0a61e8ef60130">Bitset</a> (std::size_t)</td></tr>
 <tr class="memdesc:a15b05aabb28f9b1896b0a61e8ef60130"><td class="mdescLeft">&#160;</td><td class="mdescRight">BitSet class constructor.  <br /></td></tr>
 <tr class="separator:a15b05aabb28f9b1896b0a61e8ef60130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f1f44d6a12b0de4aaf242872b1c7b54" id="r_a2f1f44d6a12b0de4aaf242872b1c7b54"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f1f44d6a12b0de4aaf242872b1c7b54">size</a> ()</td></tr>
+<tr class="memitem:a2f1f44d6a12b0de4aaf242872b1c7b54" id="r_a2f1f44d6a12b0de4aaf242872b1c7b54"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f1f44d6a12b0de4aaf242872b1c7b54">size</a> ()</td></tr>
 <tr class="memdesc:a2f1f44d6a12b0de4aaf242872b1c7b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to return the size of the inner array.  <br /></td></tr>
 <tr class="separator:a2f1f44d6a12b0de4aaf242872b1c7b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17dbe1b1d559302312e8091f82f7499c" id="r_a17dbe1b1d559302312e8091f82f7499c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17dbe1b1d559302312e8091f82f7499c">add</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a>)</td></tr>
+<tr class="memitem:a17dbe1b1d559302312e8091f82f7499c" id="r_a17dbe1b1d559302312e8091f82f7499c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17dbe1b1d559302312e8091f82f7499c">add</a> (std::size_t)</td></tr>
 <tr class="memdesc:a17dbe1b1d559302312e8091f82f7499c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn bit on position x to 1s.  <br /></td></tr>
 <tr class="separator:a17dbe1b1d559302312e8091f82f7499c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ef54c7c3f6494b36ead3ae2e5cf43ac" id="r_a9ef54c7c3f6494b36ead3ae2e5cf43ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ef54c7c3f6494b36ead3ae2e5cf43ac">contains</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a>)</td></tr>
+<tr class="memitem:a9ef54c7c3f6494b36ead3ae2e5cf43ac" id="r_a9ef54c7c3f6494b36ead3ae2e5cf43ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ef54c7c3f6494b36ead3ae2e5cf43ac">contains</a> (std::size_t)</td></tr>
 <tr class="memdesc:a9ef54c7c3f6494b36ead3ae2e5cf43ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Doest bitset contains element x.  <br /></td></tr>
 <tr class="separator:a9ef54c7c3f6494b36ead3ae2e5cf43ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ae86688cf99b77342deedb75149573e73" id="r_ae86688cf99b77342deedb75149573e73"><td class="memItemLeft" align="right" valign="top"><a id="ae86688cf99b77342deedb75149573e73" name="ae86688cf99b77342deedb75149573e73"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
-<tr class="memdesc:ae86688cf99b77342deedb75149573e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">short info of this variable <br /></td></tr>
+<tr class="memitem:ae86688cf99b77342deedb75149573e73" id="r_ae86688cf99b77342deedb75149573e73"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae86688cf99b77342deedb75149573e73">data</a></td></tr>
+<tr class="memdesc:ae86688cf99b77342deedb75149573e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">short info of this variable  <br /></td></tr>
 <tr class="separator:ae86688cf99b77342deedb75149573e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:ad7f7d479079a95bcc9175465395fa23f" id="r_ad7f7d479079a95bcc9175465395fa23f"><td class="memItemLeft" align="right" valign="top">static const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7f7d479079a95bcc9175465395fa23f">blockSize</a></td></tr>
+<tr class="memitem:ad7f7d479079a95bcc9175465395fa23f" id="r_ad7f7d479079a95bcc9175465395fa23f"><td class="memItemLeft" align="right" valign="top">static const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7f7d479079a95bcc9175465395fa23f">blockSize</a></td></tr>
 <tr class="separator:ad7f7d479079a95bcc9175465395fa23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Simple bitset implementation for bloom filter. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/dab/bloom__filter_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../d9/dab/bloom__filter_8cpp_source.html">bloom_filter.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a15b05aabb28f9b1896b0a61e8ef60130" name="a15b05aabb28f9b1896b0a61e8ef60130"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a15b05aabb28f9b1896b0a61e8ef60130">&#9670;&#160;</a></span>Bitset()</h2>
@@ -163,7 +181,7 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">data_structures::Bitset::Bitset </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a></td>          <td class="paramname"><span class="paramname"><em>initSize</em></span></td><td>)</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>initSize</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -181,8 +199,10 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/dab/bloom__filter_8cpp_source.html#l00063">63</a> of file <a class="el" href="../../d9/dab/bloom__filter_8cpp_source.html">bloom_filter.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   63</span>: <a class="code hl_variable" href="#ae86688cf99b77342deedb75149573e73">data</a>(initSize) {}</div>
-<div class="ttc" id="aclassdata__structures_1_1_bitset_html_ae86688cf99b77342deedb75149573e73"><div class="ttname"><a href="#ae86688cf99b77342deedb75149573e73">data_structures::Bitset::data</a></div><div class="ttdeci">std::vector&lt; std::size_t &gt; data</div><div class="ttdoc">short info of this variable</div><div class="ttdef"><b>Definition</b> bloom_filter.cpp:42</div></div>
+<div class="ttc" id="aclassdata__structures_1_1_bitset_html_ae86688cf99b77342deedb75149573e73"><div class="ttname"><a href="#ae86688cf99b77342deedb75149573e73">data_structures::Bitset::data</a></div><div class="ttdeci">std::vector&lt; std::size_t &gt; data</div><div class="ttdoc">short info of this variable</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dab/bloom__filter_8cpp_source.html#l00042">bloom_filter.cpp:42</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -196,7 +216,7 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void data_structures::Bitset::add </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a></td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -210,23 +230,17 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/dab/bloom__filter_8cpp_source.html#l00071">71</a> of file <a class="el" href="../../d9/dab/bloom__filter_8cpp_source.html">bloom_filter.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   71</span>                            {</div>
-<div class="line"><span class="lineno">   72</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> blockIndex = x / <a class="code hl_variable" href="#ad7f7d479079a95bcc9175465395fa23f">blockSize</a>;</div>
-<div class="line"><span class="lineno">   73</span>    <span class="keywordflow">if</span> (blockIndex &gt;= <a class="code hl_variable" href="#ae86688cf99b77342deedb75149573e73">data</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()) {</div>
-<div class="line"><span class="lineno">   74</span>        <a class="code hl_variable" href="#ae86688cf99b77342deedb75149573e73">data</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/resize.html">resize</a>(blockIndex + 1);</div>
+<div class="line"><span class="lineno">   72</span>    std::size_t blockIndex = x / <a class="code hl_variable" href="#ad7f7d479079a95bcc9175465395fa23f">blockSize</a>;</div>
+<div class="line"><span class="lineno">   73</span>    <span class="keywordflow">if</span> (blockIndex &gt;= <a class="code hl_variable" href="#ae86688cf99b77342deedb75149573e73">data</a>.size()) {</div>
+<div class="line"><span class="lineno">   74</span>        <a class="code hl_variable" href="#ae86688cf99b77342deedb75149573e73">data</a>.resize(blockIndex + 1);</div>
 <div class="line"><span class="lineno">   75</span>    }</div>
 <div class="line"><span class="lineno">   76</span>    <a class="code hl_variable" href="#ae86688cf99b77342deedb75149573e73">data</a>[blockIndex] |= 1 &lt;&lt; (x % <a class="code hl_variable" href="#ad7f7d479079a95bcc9175465395fa23f">blockSize</a>);</div>
 <div class="line"><span class="lineno">   77</span>}</div>
-<div class="ttc" id="aclassdata__structures_1_1_bitset_html_ad7f7d479079a95bcc9175465395fa23f"><div class="ttname"><a href="#ad7f7d479079a95bcc9175465395fa23f">data_structures::Bitset::blockSize</a></div><div class="ttdeci">static const std::size_t blockSize</div><div class="ttdef"><b>Definition</b> bloom_filter.cpp:43</div></div>
-<div class="ttc" id="aresize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/resize.html">std::vector::resize</a></div><div class="ttdeci">T resize(T... args)</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-<div class="ttc" id="asize_t_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dae/classdata__structures_1_1_bitset_a17dbe1b1d559302312e8091f82f7499c_cgraph.svg" width="368" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassdata__structures_1_1_bitset_html_ad7f7d479079a95bcc9175465395fa23f"><div class="ttname"><a href="#ad7f7d479079a95bcc9175465395fa23f">data_structures::Bitset::blockSize</a></div><div class="ttdeci">static const std::size_t blockSize</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dab/bloom__filter_8cpp_source.html#l00043">bloom_filter.cpp:43</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9ef54c7c3f6494b36ead3ae2e5cf43ac" name="a9ef54c7c3f6494b36ead3ae2e5cf43ac"></a>
@@ -238,7 +252,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool data_structures::Bitset::contains </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a></td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -254,19 +268,16 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>true if bit position x is 1 </dd>
 <dd>
 false if bit position x is 0 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/dab/bloom__filter_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../d9/dab/bloom__filter_8cpp_source.html">bloom_filter.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   86</span>                                 {</div>
-<div class="line"><span class="lineno">   87</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> blockIndex = x / <a class="code hl_variable" href="#ad7f7d479079a95bcc9175465395fa23f">blockSize</a>;</div>
-<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">if</span> (blockIndex &gt;= <a class="code hl_variable" href="#ae86688cf99b77342deedb75149573e73">data</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()) {</div>
+<div class="line"><span class="lineno">   87</span>    std::size_t blockIndex = x / <a class="code hl_variable" href="#ad7f7d479079a95bcc9175465395fa23f">blockSize</a>;</div>
+<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">if</span> (blockIndex &gt;= <a class="code hl_variable" href="#ae86688cf99b77342deedb75149573e73">data</a>.size()) {</div>
 <div class="line"><span class="lineno">   89</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   90</span>    }</div>
 <div class="line"><span class="lineno">   91</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="#ae86688cf99b77342deedb75149573e73">data</a>[blockIndex] &amp; (1 &lt;&lt; (x % <a class="code hl_variable" href="#ad7f7d479079a95bcc9175465395fa23f">blockSize</a>));</div>
 <div class="line"><span class="lineno">   92</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dae/classdata__structures_1_1_bitset_a9ef54c7c3f6494b36ead3ae2e5cf43ac_cgraph.svg" width="328" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2f1f44d6a12b0de4aaf242872b1c7b54" name="a2f1f44d6a12b0de4aaf242872b1c7b54"></a>
@@ -276,7 +287,7 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> data_structures::Bitset::size </td>
+          <td class="memname">std::size_t data_structures::Bitset::size </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -286,13 +297,10 @@ Here is the call graph for this function:</div>
 
 <p>Utility function to return the size of the inner array. </p>
 <dl class="section return"><dt>Returns</dt><dd>the size of inner array </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   57</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ae86688cf99b77342deedb75149573e73">data</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/dae/classdata__structures_1_1_bitset_a2f1f44d6a12b0de4aaf242872b1c7b54_cgraph.svg" width="328" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../d9/dab/bloom__filter_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../d9/dab/bloom__filter_8cpp_source.html">bloom_filter.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ae86688cf99b77342deedb75149573e73">data</a>.size(); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -306,7 +314,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> data_structures::Bitset::blockSize</td>
+          <td class="memname">const std::size_t data_structures::Bitset::blockSize</td>
         </tr>
       </table>
   </td>
@@ -316,13 +324,41 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">        <span class="keyword">sizeof</span>(<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a>)</div>
+<div class="line">        <span class="keyword">sizeof</span>(std::size_t)</div>
 </div><!-- fragment --><p>size of integer type, that we are using in our bitset </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/dab/bloom__filter_8cpp_source.html#l00043">43</a> of file <a class="el" href="../../d9/dab/bloom__filter_8cpp_source.html">bloom_filter.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae86688cf99b77342deedb75149573e73" name="ae86688cf99b77342deedb75149573e73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae86688cf99b77342deedb75149573e73">&#9670;&#160;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::size_t&gt; data_structures::Bitset::data</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>short info of this variable </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/dab/bloom__filter_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../d9/dab/bloom__filter_8cpp_source.html">bloom_filter.cpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>data_structures/<a class="el" href="../../d9/dab/bloom__filter_8cpp.html">bloom_filter.cpp</a></li>
+<li>data_structures/<a class="el" href="../../d9/dab/bloom__filter_8cpp_source.html">bloom_filter.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

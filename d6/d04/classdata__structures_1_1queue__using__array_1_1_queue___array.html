@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: data_structures::queue_using_array::Queue_Array Class Reference</title>
+<title>TheAlgorithms/C++: data_structures::queue_using_array::Queue_Array Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -117,7 +134,7 @@ $(function(){initNavTree('d6/d04/classdata__structures_1_1queue__using__array_1_
 <div class="dynheader">
 Collaboration diagram for data_structures::queue_using_array::Queue_Array:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d0f/classdata__structures_1_1queue__using__array_1_1_queue___array__coll__graph.svg" width="191" height="244"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d0f/classdata__structures_1_1queue__using__array_1_1_queue___array__coll__graph.svg" width="191" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -140,12 +157,14 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a9883dfcceede9a42227d2d313ae86f85" id="r_a9883dfcceede9a42227d2d313ae86f85"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9883dfcceede9a42227d2d313ae86f85">rear</a> {-1}</td></tr>
 <tr class="memdesc:a9883dfcceede9a42227d2d313ae86f85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of tail of the array.  <br /></td></tr>
 <tr class="separator:a9883dfcceede9a42227d2d313ae86f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae69a0bf6c9921b37c516c8a4d2fb904d" id="r_ae69a0bf6c9921b37c516c8a4d2fb904d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int16_t, <a class="el" href="../../d8/df0/queue__using__array_8cpp.html#a2d49e79bd164c298912db252970520d8">max_size</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae69a0bf6c9921b37c516c8a4d2fb904d">arr</a> {}</td></tr>
+<tr class="memitem:ae69a0bf6c9921b37c516c8a4d2fb904d" id="r_ae69a0bf6c9921b37c516c8a4d2fb904d"><td class="memItemLeft" align="right" valign="top">std::array&lt; int16_t, <a class="el" href="../../d8/df0/queue__using__array_8cpp.html#a2d49e79bd164c298912db252970520d8">max_size</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae69a0bf6c9921b37c516c8a4d2fb904d">arr</a> {}</td></tr>
 <tr class="memdesc:ae69a0bf6c9921b37c516c8a4d2fb904d"><td class="mdescLeft">&#160;</td><td class="mdescRight">All stored data.  <br /></td></tr>
 <tr class="separator:ae69a0bf6c9921b37c516c8a4d2fb904d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html" title="Queue_Array class containing the main data and also index of head and tail of the array.">Queue_Array</a> class containing the main data and also index of head and tail of the array. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/df0/queue__using__array_8cpp_source.html#l00044">44</a> of file <a class="el" href="../../d8/df0/queue__using__array_8cpp_source.html">queue_using_array.cpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2aaf88c9954ef3ab686f8e4bfbd87622" name="a2aaf88c9954ef3ab686f8e4bfbd87622"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2aaf88c9954ef3ab686f8e4bfbd87622">&#9670;&#160;</a></span>dequeue()</h2>
@@ -165,31 +184,26 @@ Private Attributes</h2></td></tr>
 <p>Delete element from back of the queue. </p>
 <p>Remove element that is located at the first of the queue.</p>
 <dl class="section return"><dt>Returns</dt><dd>data that is deleted if queue is not empty </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/df0/queue__using__array_8cpp_source.html#l00076">76</a> of file <a class="el" href="../../d8/df0/queue__using__array_8cpp_source.html">queue_using_array.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   76</span>                         {</div>
 <div class="line"><span class="lineno">   77</span>    int8_t d{0};</div>
 <div class="line"><span class="lineno">   78</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a2f676f2f249eb36dfd49711a03e9e67e">front</a> == -1) {</div>
-<div class="line"><span class="lineno">   79</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nstack is empty &quot;</span>;</div>
+<div class="line"><span class="lineno">   79</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\nstack is empty &quot;</span>;</div>
 <div class="line"><span class="lineno">   80</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   81</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a2f676f2f249eb36dfd49711a03e9e67e">front</a> == <a class="code hl_variable" href="#a9883dfcceede9a42227d2d313ae86f85">rear</a>) {</div>
-<div class="line"><span class="lineno">   82</span>        d = <a class="code hl_variable" href="#ae69a0bf6c9921b37c516c8a4d2fb904d">arr</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/at.html">at</a>(<a class="code hl_variable" href="#a2f676f2f249eb36dfd49711a03e9e67e">front</a>);</div>
+<div class="line"><span class="lineno">   82</span>        d = <a class="code hl_variable" href="#ae69a0bf6c9921b37c516c8a4d2fb904d">arr</a>.at(<a class="code hl_variable" href="#a2f676f2f249eb36dfd49711a03e9e67e">front</a>);</div>
 <div class="line"><span class="lineno">   83</span>        <a class="code hl_variable" href="#a2f676f2f249eb36dfd49711a03e9e67e">front</a> = <a class="code hl_variable" href="#a9883dfcceede9a42227d2d313ae86f85">rear</a> = -1;</div>
 <div class="line"><span class="lineno">   84</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   85</span>        d = <a class="code hl_variable" href="#ae69a0bf6c9921b37c516c8a4d2fb904d">arr</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/at.html">at</a>(<a class="code hl_variable" href="#a2f676f2f249eb36dfd49711a03e9e67e">front</a>++);</div>
+<div class="line"><span class="lineno">   85</span>        d = <a class="code hl_variable" href="#ae69a0bf6c9921b37c516c8a4d2fb904d">arr</a>.at(<a class="code hl_variable" href="#a2f676f2f249eb36dfd49711a03e9e67e">front</a>++);</div>
 <div class="line"><span class="lineno">   86</span>    }</div>
 <div class="line"><span class="lineno">   87</span> </div>
 <div class="line"><span class="lineno">   88</span>    <span class="keywordflow">return</span> d;</div>
 <div class="line"><span class="lineno">   89</span>}</div>
-<div class="ttc" id="aat_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array/at.html">std::array::at</a></div><div class="ttdeci">T at(T... args)</div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aclassdata__structures_1_1queue__using__array_1_1_queue___array_html_a2f676f2f249eb36dfd49711a03e9e67e"><div class="ttname"><a href="#a2f676f2f249eb36dfd49711a03e9e67e">data_structures::queue_using_array::Queue_Array::front</a></div><div class="ttdeci">int8_t front</div><div class="ttdoc">Index of head of the array.</div><div class="ttdef"><b>Definition</b> queue_using_array.cpp:50</div></div>
-<div class="ttc" id="aclassdata__structures_1_1queue__using__array_1_1_queue___array_html_a9883dfcceede9a42227d2d313ae86f85"><div class="ttname"><a href="#a9883dfcceede9a42227d2d313ae86f85">data_structures::queue_using_array::Queue_Array::rear</a></div><div class="ttdeci">int8_t rear</div><div class="ttdoc">Index of tail of the array.</div><div class="ttdef"><b>Definition</b> queue_using_array.cpp:51</div></div>
-<div class="ttc" id="aclassdata__structures_1_1queue__using__array_1_1_queue___array_html_ae69a0bf6c9921b37c516c8a4d2fb904d"><div class="ttname"><a href="#ae69a0bf6c9921b37c516c8a4d2fb904d">data_structures::queue_using_array::Queue_Array::arr</a></div><div class="ttdeci">std::array&lt; int16_t, max_size &gt; arr</div><div class="ttdoc">All stored data.</div><div class="ttdef"><b>Definition</b> queue_using_array.cpp:52</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array_a2aaf88c9954ef3ab686f8e4bfbd87622_cgraph.svg" width="334" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassdata__structures_1_1queue__using__array_1_1_queue___array_html_a2f676f2f249eb36dfd49711a03e9e67e"><div class="ttname"><a href="#a2f676f2f249eb36dfd49711a03e9e67e">data_structures::queue_using_array::Queue_Array::front</a></div><div class="ttdeci">int8_t front</div><div class="ttdoc">Index of head of the array.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df0/queue__using__array_8cpp_source.html#l00050">queue_using_array.cpp:50</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1queue__using__array_1_1_queue___array_html_a9883dfcceede9a42227d2d313ae86f85"><div class="ttname"><a href="#a9883dfcceede9a42227d2d313ae86f85">data_structures::queue_using_array::Queue_Array::rear</a></div><div class="ttdeci">int8_t rear</div><div class="ttdoc">Index of tail of the array.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df0/queue__using__array_8cpp_source.html#l00051">queue_using_array.cpp:51</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1queue__using__array_1_1_queue___array_html_ae69a0bf6c9921b37c516c8a4d2fb904d"><div class="ttname"><a href="#ae69a0bf6c9921b37c516c8a4d2fb904d">data_structures::queue_using_array::Queue_Array::arr</a></div><div class="ttdeci">std::array&lt; int16_t, max_size &gt; arr</div><div class="ttdoc">All stored data.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df0/queue__using__array_8cpp_source.html#l00052">queue_using_array.cpp:52</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a688b7ea064739ea9fa66bf64bf4ae631" name="a688b7ea064739ea9fa66bf64bf4ae631"></a>
@@ -209,19 +223,16 @@ Here is the call graph for this function:</div>
 
 <p>Show all saved data. </p>
 <p>Utility function to show all elements in the queue. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/df0/queue__using__array_8cpp_source.html#l00094">94</a> of file <a class="el" href="../../d8/df0/queue__using__array_8cpp_source.html">queue_using_array.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   94</span>                                {</div>
 <div class="line"><span class="lineno">   95</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a2f676f2f249eb36dfd49711a03e9e67e">front</a> == -1) {</div>
-<div class="line"><span class="lineno">   96</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nStack is empty&quot;</span>;</div>
+<div class="line"><span class="lineno">   96</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\nStack is empty&quot;</span>;</div>
 <div class="line"><span class="lineno">   97</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   98</span>        <span class="keywordflow">for</span> (int16_t i{<a class="code hl_variable" href="#a2f676f2f249eb36dfd49711a03e9e67e">front</a>}; i &lt;= <a class="code hl_variable" href="#a9883dfcceede9a42227d2d313ae86f85">rear</a>; ++i) <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_variable" href="#ae69a0bf6c9921b37c516c8a4d2fb904d">arr</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/at.html">at</a>(i) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">   98</span>        <span class="keywordflow">for</span> (int16_t i{<a class="code hl_variable" href="#a2f676f2f249eb36dfd49711a03e9e67e">front</a>}; i &lt;= <a class="code hl_variable" href="#a9883dfcceede9a42227d2d313ae86f85">rear</a>; ++i) std::cout &lt;&lt; <a class="code hl_variable" href="#ae69a0bf6c9921b37c516c8a4d2fb904d">arr</a>.at(i) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
 <div class="line"><span class="lineno">   99</span>    }</div>
 <div class="line"><span class="lineno">  100</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array_a688b7ea064739ea9fa66bf64bf4ae631_cgraph.svg" width="334" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4dc64488c36f84d927365fa8d1933663" name="a4dc64488c36f84d927365fa8d1933663"></a>
@@ -247,25 +258,21 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/df0/queue__using__array_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../d8/df0/queue__using__array_8cpp_source.html">queue_using_array.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   59</span>                                            {</div>
-<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a9883dfcceede9a42227d2d313ae86f85">rear</a> == <a class="code hl_variable" href="#ae69a0bf6c9921b37c516c8a4d2fb904d">arr</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/size.html">size</a>() - 1) {</div>
-<div class="line"><span class="lineno">   61</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nStack is full&quot;</span>;</div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a9883dfcceede9a42227d2d313ae86f85">rear</a> == <a class="code hl_variable" href="#ae69a0bf6c9921b37c516c8a4d2fb904d">arr</a>.size() - 1) {</div>
+<div class="line"><span class="lineno">   61</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\nStack is full&quot;</span>;</div>
 <div class="line"><span class="lineno">   62</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a2f676f2f249eb36dfd49711a03e9e67e">front</a> == -1 &amp;&amp; <a class="code hl_variable" href="#a9883dfcceede9a42227d2d313ae86f85">rear</a> == -1) {</div>
 <div class="line"><span class="lineno">   63</span>        <a class="code hl_variable" href="#a2f676f2f249eb36dfd49711a03e9e67e">front</a> = 0;</div>
 <div class="line"><span class="lineno">   64</span>        <a class="code hl_variable" href="#a9883dfcceede9a42227d2d313ae86f85">rear</a> = 0;</div>
 <div class="line"><span class="lineno">   65</span>        <a class="code hl_variable" href="#ae69a0bf6c9921b37c516c8a4d2fb904d">arr</a>[<a class="code hl_variable" href="#a9883dfcceede9a42227d2d313ae86f85">rear</a>] = ele;</div>
-<div class="line"><span class="lineno">   66</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a9883dfcceede9a42227d2d313ae86f85">rear</a> &lt; <a class="code hl_variable" href="#ae69a0bf6c9921b37c516c8a4d2fb904d">arr</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/size.html">size</a>()) {</div>
+<div class="line"><span class="lineno">   66</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a9883dfcceede9a42227d2d313ae86f85">rear</a> &lt; <a class="code hl_variable" href="#ae69a0bf6c9921b37c516c8a4d2fb904d">arr</a>.size()) {</div>
 <div class="line"><span class="lineno">   67</span>        ++<a class="code hl_variable" href="#a9883dfcceede9a42227d2d313ae86f85">rear</a>;</div>
 <div class="line"><span class="lineno">   68</span>        <a class="code hl_variable" href="#ae69a0bf6c9921b37c516c8a4d2fb904d">arr</a>[<a class="code hl_variable" href="#a9883dfcceede9a42227d2d313ae86f85">rear</a>] = ele;</div>
 <div class="line"><span class="lineno">   69</span>    }</div>
 <div class="line"><span class="lineno">   70</span>}</div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array/size.html">std::array::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array_a4dc64488c36f84d927365fa8d1933663_cgraph.svg" width="347" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -279,7 +286,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt;int16_t, <a class="el" href="../../d8/df0/queue__using__array_8cpp.html#a2d49e79bd164c298912db252970520d8">max_size</a>&gt; data_structures::queue_using_array::Queue_Array::arr {}</td>
+          <td class="memname">std::array&lt;int16_t, <a class="el" href="../../d8/df0/queue__using__array_8cpp.html#a2d49e79bd164c298912db252970520d8">max_size</a>&gt; data_structures::queue_using_array::Queue_Array::arr {}</td>
         </tr>
       </table>
   </td>
@@ -290,7 +297,9 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>All stored data. </p>
-<div class="fragment"><div class="line"><span class="lineno">   52</span>{};  <span class="comment">///&lt; All stored data</span></div>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/df0/queue__using__array_8cpp_source.html#l00052">52</a> of file <a class="el" href="../../d8/df0/queue__using__array_8cpp_source.html">queue_using_array.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   52</span>{};  </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -315,7 +324,9 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Index of head of the array. </p>
-<div class="fragment"><div class="line"><span class="lineno">   50</span>{-1};                     <span class="comment">///&lt; Index of head of the array</span></div>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/df0/queue__using__array_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../d8/df0/queue__using__array_8cpp_source.html">queue_using_array.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   50</span>{-1};                     </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -340,12 +351,14 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Index of tail of the array. </p>
-<div class="fragment"><div class="line"><span class="lineno">   51</span>{-1};                      <span class="comment">///&lt; Index of tail of the array</span></div>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/df0/queue__using__array_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../d8/df0/queue__using__array_8cpp_source.html">queue_using_array.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   51</span>{-1};                      </div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>data_structures/<a class="el" href="../../d8/df0/queue__using__array_8cpp.html">queue_using_array.cpp</a></li>
+<li>data_structures/<a class="el" href="../../d8/df0/queue__using__array_8cpp_source.html">queue_using_array.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,9 +1,0 @@
-<map id="math::ncr_modulo_p::utils::modInverse" name="math::ncr_modulo_p::utils::modInverse">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,145,70"/>
-<area shape="poly" id="edge4_Node000001_Node000001" title=" " alt="" coords="39,29,37,19,43,10,56,5,75,3,95,5,108,11,105,16,94,10,75,8,57,10,47,15,43,20,44,28"/>
-<area shape="rect" id="Node000002" href="$de/dab/ncr__modulo__p_8cpp.html#a9010ad5669d31449c3bf3271ab5ebc86" title="finds the values x and y such that a*x + b*y = gcd(a,b)" alt="" coords="193,29,332,70"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,47,177,47,177,52,145,52"/>
-<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="235,29,234,20,238,11,248,5,262,3,278,5,287,12,284,16,276,10,262,8,250,10,242,14,239,20,240,28"/>
-<area shape="rect" id="Node000003" href="$d4/da0/gcd__iterative__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e" title=" " alt="" coords="380,37,422,62"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="333,47,364,47,364,52,333,52"/>
-</map>

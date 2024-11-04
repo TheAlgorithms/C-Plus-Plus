@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: data_structures/dsu_union_rank.cpp File Reference</title>
+<title>TheAlgorithms/C++: data_structures/dsu_union_rank.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -122,7 +139,9 @@ Include dependency graph for dsu_union_rank.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/dda/dsu__union__rank_8cpp__incl.svg" width="336" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../df/d28/dsu__union__rank_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1f/classdsu.html">dsu</a></td></tr>
@@ -146,6 +165,8 @@ Functions</h2></td></tr>
 <p>dsu : It is a very powerful data structure which keeps track of different clusters(sets) of elements, these sets are disjoint(doesnot have a common
 element). Disjoint sets uses cases : for finding connected components in a graph, used in Kruskal's algorithm for finding <a class="el" href="../../d4/d12/namespace_minimum.html" title="Implementation of Minimum Edit Distance algorithm.">Minimum</a> Spanning tree. Operations that can be performed: 1) UnionSet(i,j): add(element i and j to the set) 2) findSet(i): returns the representative of the set to which i belogngs to. 3) getParents(i): prints the parent of i and so on and so forth. Below is the class-based approach which uses the heuristic of union-ranks. Using union-rank in findSet(i),we are able to get to the representative of i in slightly delayed O(logN) time but it allows us to keep tracks of the parent of i. </p><dl class="section author"><dt>Author</dt><dd><a href="https://github.com/AayushVyasKIIT" target="_blank">AayushVyasKIIT</a> </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d3/dae/dsu__path__compression_8cpp.html" title="DSU (Disjoint sets)">dsu_path_compression.cpp</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../df/d28/dsu__union__rank_8cpp_source.html">dsu_union_rank.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -164,20 +185,17 @@ element). Disjoint sets uses cases : for finding connected components in a graph
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d28/dsu__union__rank_8cpp_source.html#l00183">183</a> of file <a class="el" href="../../df/d28/dsu__union__rank_8cpp_source.html">dsu_union_rank.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  183</span>           {</div>
 <div class="line"><span class="lineno">  184</span>    <a class="code hl_function" href="#ae7880ce913f3058a35ff106d5be9e243">test1</a>();  <span class="comment">// run 1st test case</span></div>
 <div class="line"><span class="lineno">  185</span>    <a class="code hl_function" href="#a45d94ead4cf4e1ff9f87c38bc99f59ae">test2</a>();  <span class="comment">// run 2nd test case</span></div>
 <div class="line"><span class="lineno">  186</span> </div>
 <div class="line"><span class="lineno">  187</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  188</span>}</div>
-<div class="ttc" id="adsu__union__rank_8cpp_html_a45d94ead4cf4e1ff9f87c38bc99f59ae"><div class="ttname"><a href="#a45d94ead4cf4e1ff9f87c38bc99f59ae">test2</a></div><div class="ttdeci">static void test2()</div><div class="ttdoc">Self-implementations, 2nd test.</div><div class="ttdef"><b>Definition</b> dsu_union_rank.cpp:158</div></div>
-<div class="ttc" id="adsu__union__rank_8cpp_html_ae7880ce913f3058a35ff106d5be9e243"><div class="ttname"><a href="#ae7880ce913f3058a35ff106d5be9e243">test1</a></div><div class="ttdeci">static void test1()</div><div class="ttdoc">Self-implementations, 1st test.</div><div class="ttdef"><b>Definition</b> dsu_union_rank.cpp:134</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d28/dsu__union__rank_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="602" height="138"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="adsu__union__rank_8cpp_html_a45d94ead4cf4e1ff9f87c38bc99f59ae"><div class="ttname"><a href="#a45d94ead4cf4e1ff9f87c38bc99f59ae">test2</a></div><div class="ttdeci">static void test2()</div><div class="ttdoc">Self-implementations, 2nd test.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d28/dsu__union__rank_8cpp_source.html#l00158">dsu_union_rank.cpp:158</a></div></div>
+<div class="ttc" id="adsu__union__rank_8cpp_html_ae7880ce913f3058a35ff106d5be9e243"><div class="ttname"><a href="#ae7880ce913f3058a35ff106d5be9e243">test1</a></div><div class="ttdeci">static void test1()</div><div class="ttdoc">Self-implementations, 1st test.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d28/dsu__union__rank_8cpp_source.html#l00134">dsu_union_rank.cpp:134</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae7880ce913f3058a35ff106d5be9e243" name="ae7880ce913f3058a35ff106d5be9e243"></a>
@@ -208,11 +226,13 @@ Here is the call graph for this function:</div>
 <p>&lt; number of elements</p>
 <p>&lt; object of class disjoint sets</p>
 <p>&lt; performs union operation on 1 and 2</p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d28/dsu__union__rank_8cpp_source.html#l00134">134</a> of file <a class="el" href="../../df/d28/dsu__union__rank_8cpp_source.html">dsu_union_rank.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  134</span>                    {</div>
 <div class="line"><span class="lineno">  135</span>    <span class="comment">/* checks the parents in the resultant structures */</span></div>
-<div class="line"><span class="lineno">  136</span>    uint64_t n = 10;   <span class="comment">///&lt; number of elements</span></div>
-<div class="line"><span class="lineno">  137</span>    <a class="code hl_class" href="../../dd/d1f/classdsu.html">dsu</a> d(n + 1);      <span class="comment">///&lt; object of class disjoint sets</span></div>
-<div class="line"><span class="lineno">  138</span>    d.unionSet(2, 1);  <span class="comment">///&lt; performs union operation on 1 and 2</span></div>
+<div class="line"><span class="lineno">  136</span>    uint64_t n = 10;   </div>
+<div class="line"><span class="lineno">  137</span>    <a class="code hl_class" href="../../dd/d1f/classdsu.html">dsu</a> d(n + 1);      </div>
+<div class="line"><span class="lineno">  138</span>    d.unionSet(2, 1);  </div>
 <div class="line"><span class="lineno">  139</span>    d.unionSet(1, 4);</div>
 <div class="line"><span class="lineno">  140</span>    d.unionSet(8, 1);</div>
 <div class="line"><span class="lineno">  141</span>    d.unionSet(3, 5);</div>
@@ -221,23 +241,16 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  144</span>    d.unionSet(9, 10);</div>
 <div class="line"><span class="lineno">  145</span>    d.unionSet(2, 10);</div>
 <div class="line"><span class="lineno">  146</span>    <span class="comment">// keeping track of the changes using parent pointers</span></div>
-<div class="line"><span class="lineno">  147</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;uint64_t&gt;</a> ans = {7, 5};</div>
+<div class="line"><span class="lineno">  147</span>    vector&lt;uint64_t&gt; ans = {7, 5};</div>
 <div class="line"><span class="lineno">  148</span>    <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; ans.size(); i++) {</div>
 <div class="line"><span class="lineno">  149</span>        assert(d.getParents(7).at(i) ==</div>
 <div class="line"><span class="lineno">  150</span>               ans[i]);  <span class="comment">// makes sure algorithm works fine</span></div>
 <div class="line"><span class="lineno">  151</span>    }</div>
-<div class="line"><span class="lineno">  152</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">cout</a> &lt;&lt; <span class="stringliteral">&quot;1st test passed!&quot;</span> &lt;&lt; <a class="code hl_define" href="../../d7/d35/matrix__exponentiation_8cpp.html#a600eaf353befc174637855795f12d258">endl</a>;</div>
+<div class="line"><span class="lineno">  152</span>    cout &lt;&lt; <span class="stringliteral">&quot;1st test passed!&quot;</span> &lt;&lt; <a class="code hl_define" href="../../d7/d35/matrix__exponentiation_8cpp.html#a600eaf353befc174637855795f12d258">endl</a>;</div>
 <div class="line"><span class="lineno">  153</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aclassdsu_html"><div class="ttname"><a href="../../dd/d1f/classdsu.html">dsu</a></div><div class="ttdoc">Disjoint sets union data structure, class based representation.</div><div class="ttdef"><b>Definition</b> dsu_path_compression.cpp:34</div></div>
-<div class="ttc" id="amatrix__exponentiation_8cpp_html_a600eaf353befc174637855795f12d258"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#a600eaf353befc174637855795f12d258">endl</a></div><div class="ttdeci">#define endl</div><div class="ttdef"><b>Definition</b> matrix_exponentiation.cpp:36</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d28/dsu__union__rank_8cpp_ae7880ce913f3058a35ff106d5be9e243_cgraph.svg" width="504" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassdsu_html"><div class="ttname"><a href="../../dd/d1f/classdsu.html">dsu</a></div><div class="ttdoc">Disjoint sets union data structure, class based representation.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dae/dsu__path__compression_8cpp_source.html#l00034">dsu_path_compression.cpp:34</a></div></div>
+<div class="ttc" id="amatrix__exponentiation_8cpp_html_a600eaf353befc174637855795f12d258"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#a600eaf353befc174637855795f12d258">endl</a></div><div class="ttdeci">#define endl</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d35/matrix__exponentiation_8cpp_source.html#l00036">matrix_exponentiation.cpp:36</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a45d94ead4cf4e1ff9f87c38bc99f59ae" name="a45d94ead4cf4e1ff9f87c38bc99f59ae"></a>
@@ -270,11 +283,13 @@ Here is the call graph for this function:</div>
 <p>performs union operation on 1 and 2</p>
 <p>keeping track of the changes using parent pointers</p>
 <p>makes sure algorithm works fine</p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d28/dsu__union__rank_8cpp_source.html#l00158">158</a> of file <a class="el" href="../../df/d28/dsu__union__rank_8cpp_source.html">dsu_union_rank.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  158</span>                    {</div>
 <div class="line"><span class="lineno">  159</span>    <span class="comment">// checks the parents in the resultant structures</span></div>
-<div class="line"><span class="lineno">  160</span>    uint64_t n = 10;   <span class="comment">///&lt; number of elements</span></div>
-<div class="line"><span class="lineno">  161</span>    <a class="code hl_class" href="../../dd/d1f/classdsu.html">dsu</a> d(n + 1);      <span class="comment">///&lt; object of class disjoint sets</span></div>
-<div class="line"><span class="lineno">  162</span>    d.unionSet(2, 1);  <span class="comment">/// performs union operation on 1 and 2</span></div>
+<div class="line"><span class="lineno">  160</span>    uint64_t n = 10;   </div>
+<div class="line"><span class="lineno">  161</span>    <a class="code hl_class" href="../../dd/d1f/classdsu.html">dsu</a> d(n + 1);      </div>
+<div class="line"><span class="lineno">  162</span>    d.unionSet(2, 1);  </div>
 <div class="line"><span class="lineno">  163</span>    d.unionSet(1, 4);</div>
 <div class="line"><span class="lineno">  164</span>    d.unionSet(8, 1);</div>
 <div class="line"><span class="lineno">  165</span>    d.unionSet(3, 5);</div>
@@ -282,21 +297,15 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  167</span>    d.unionSet(5, 7);</div>
 <div class="line"><span class="lineno">  168</span>    d.unionSet(9, 10);</div>
 <div class="line"><span class="lineno">  169</span>    d.unionSet(2, 10);</div>
-<div class="line"><span class="lineno">  170</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  171</span><span class="comment">    /// keeping track of the changes using parent pointers</span></div>
-<div class="line"><span class="lineno">  172</span><span class="comment"></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;uint64_t&gt;</a> ans = {2, 1, 10};</div>
+<div class="line"><span class="lineno">  170</span> </div>
+<div class="line"><span class="lineno">  172</span>    vector&lt;uint64_t&gt; ans = {2, 1, 10};</div>
 <div class="line"><span class="lineno">  173</span>    <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; ans.size(); i++) {</div>
 <div class="line"><span class="lineno">  174</span>        assert(d.getParents(2).at(i) ==</div>
-<div class="line"><span class="lineno">  175</span>               ans[i]);  <span class="comment">/// makes sure algorithm works fine</span></div>
+<div class="line"><span class="lineno">  175</span>               ans[i]);  </div>
 <div class="line"><span class="lineno">  176</span>    }</div>
-<div class="line"><span class="lineno">  177</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">cout</a> &lt;&lt; <span class="stringliteral">&quot;2nd test passed!&quot;</span> &lt;&lt; <a class="code hl_define" href="../../d7/d35/matrix__exponentiation_8cpp.html#a600eaf353befc174637855795f12d258">endl</a>;</div>
+<div class="line"><span class="lineno">  177</span>    cout &lt;&lt; <span class="stringliteral">&quot;2nd test passed!&quot;</span> &lt;&lt; <a class="code hl_define" href="../../d7/d35/matrix__exponentiation_8cpp.html#a600eaf353befc174637855795f12d258">endl</a>;</div>
 <div class="line"><span class="lineno">  178</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d28/dsu__union__rank_8cpp_a45d94ead4cf4e1ff9f87c38bc99f59ae_cgraph.svg" width="504" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

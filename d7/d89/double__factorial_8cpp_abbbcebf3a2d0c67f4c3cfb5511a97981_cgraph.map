@@ -1,8 +1,0 @@
-<map id="test" name="test">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,43,49,68"/>
-<area shape="rect" id="Node000002" href="$d7/d89/double__factorial_8cpp.html#a0a3c417360400093891a9ccddaa4be26" title=" " alt="" coords="100,5,266,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="48,48,111,33,112,38,50,53"/>
-<area shape="rect" id="Node000003" href="$d7/d89/double__factorial_8cpp.html#a68ba20fed2ce427f6469c7689437829d" title=" " alt="" coords="97,79,269,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="50,58,110,72,109,77,48,63"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="156,80,151,70,154,60,165,54,183,52,202,55,212,61,209,66,200,60,183,57,167,59,158,64,156,69,161,77"/>
-</map>

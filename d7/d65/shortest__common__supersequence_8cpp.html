@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: dynamic_programming/shortest_common_supersequence.cpp File Reference</title>
+<title>TheAlgorithms/C++: dynamic_programming/shortest_common_supersequence.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -123,7 +140,9 @@ Include dependency graph for shortest_common_supersequence.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d48/shortest__common__supersequence_8cpp__incl.svg" width="428" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d7/d65/shortest__common__supersequence_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d24/namespacedynamic__programming.html">dynamic_programming</a></td></tr>
@@ -135,7 +154,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad2ee8d7e67da9f6eb85146b08dad95e6" id="r_ad2ee8d7e67da9f6eb85146b08dad95e6"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2ee8d7e67da9f6eb85146b08dad95e6">dynamic_programming::shortest_common_supersequence::scs</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;str1, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;str2)</td></tr>
+<tr class="memitem:ad2ee8d7e67da9f6eb85146b08dad95e6" id="r_ad2ee8d7e67da9f6eb85146b08dad95e6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2ee8d7e67da9f6eb85146b08dad95e6">dynamic_programming::shortest_common_supersequence::scs</a> (const std::string &amp;str1, const std::string &amp;str2)</td></tr>
 <tr class="separator:ad2ee8d7e67da9f6eb85146b08dad95e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
 <tr class="separator:aa8dca7b867074164d5f45b0f3851269d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,6 +168,8 @@ Functions</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd>more on <a href="https://en.wikipedia.org/wiki/Shortest_common_supersequence_problem" target="_blank">SCS</a> </dd>
 <dd>
 related <a class="el" href="../../db/dd3/ode__forward__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe" title="Problem statement for a system with first-order differential equations. Updates the system differenti...">problem</a> <a href="https://leetcode.com/problems/shortest-common-supersequence/" target="_blank">Leetcode</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d7/d65/shortest__common__supersequence_8cpp_source.html">shortest_common_supersequence.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -165,33 +186,27 @@ related <a class="el" href="../../db/dd3/ode__forward__euler_8cpp.html#abaeae8f6
       </table>
 </div><div class="memdoc">
 <p>Main function (driver code) </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d65/shortest__common__supersequence_8cpp_source.html#l00164">164</a> of file <a class="el" href="../../d7/d65/shortest__common__supersequence_8cpp_source.html">shortest_common_supersequence.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  164</span>           {</div>
 <div class="line"><span class="lineno">  165</span>    <span class="comment">// test for implementation</span></div>
 <div class="line"><span class="lineno">  166</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();</div>
 <div class="line"><span class="lineno">  167</span> </div>
 <div class="line"><span class="lineno">  168</span>    <span class="comment">// user input</span></div>
-<div class="line"><span class="lineno">  169</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> s1, s2;</div>
-<div class="line"><span class="lineno">  170</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; s1;</div>
-<div class="line"><span class="lineno">  171</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; s2;</div>
+<div class="line"><span class="lineno">  169</span>    std::string s1, s2;</div>
+<div class="line"><span class="lineno">  170</span>    std::cin &gt;&gt; s1;</div>
+<div class="line"><span class="lineno">  171</span>    std::cin &gt;&gt; s2;</div>
 <div class="line"><span class="lineno">  172</span> </div>
-<div class="line"><span class="lineno">  173</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> ans;</div>
+<div class="line"><span class="lineno">  173</span>    std::string ans;</div>
 <div class="line"><span class="lineno">  174</span> </div>
 <div class="line"><span class="lineno">  175</span>    <span class="comment">// user output</span></div>
 <div class="line"><span class="lineno">  176</span>    ans = <a class="code hl_function" href="#ad2ee8d7e67da9f6eb85146b08dad95e6">dynamic_programming::shortest_common_supersequence::scs</a>(s1, s2);</div>
-<div class="line"><span class="lineno">  177</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; ans;</div>
+<div class="line"><span class="lineno">  177</span>    std::cout &lt;&lt; ans;</div>
 <div class="line"><span class="lineno">  178</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  179</span>}</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
-<div class="ttc" id="ashortest__common__supersequence_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdef"><b>Definition</b> shortest_common_supersequence.cpp:124</div></div>
-<div class="ttc" id="ashortest__common__supersequence_8cpp_html_ad2ee8d7e67da9f6eb85146b08dad95e6"><div class="ttname"><a href="#ad2ee8d7e67da9f6eb85146b08dad95e6">dynamic_programming::shortest_common_supersequence::scs</a></div><div class="ttdeci">std::string scs(const std::string &amp;str1, const std::string &amp;str2)</div><div class="ttdef"><b>Definition</b> shortest_common_supersequence.cpp:42</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d65/shortest__common__supersequence_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="152" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="ashortest__common__supersequence_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d65/shortest__common__supersequence_8cpp_source.html#l00124">shortest_common_supersequence.cpp:124</a></div></div>
+<div class="ttc" id="ashortest__common__supersequence_8cpp_html_ad2ee8d7e67da9f6eb85146b08dad95e6"><div class="ttname"><a href="#ad2ee8d7e67da9f6eb85146b08dad95e6">dynamic_programming::shortest_common_supersequence::scs</a></div><div class="ttdeci">std::string scs(const std::string &amp;str1, const std::string &amp;str2)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d65/shortest__common__supersequence_8cpp_source.html#l00042">shortest_common_supersequence.cpp:42</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad2ee8d7e67da9f6eb85146b08dad95e6" name="ad2ee8d7e67da9f6eb85146b08dad95e6"></a>
@@ -201,14 +216,14 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> dynamic_programming::shortest_common_supersequence::scs </td>
+          <td class="memname">std::string dynamic_programming::shortest_common_supersequence::scs </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>str1</em></span>, </td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>str1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>str2</em></span>&#160;)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>str2</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -220,30 +235,32 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string 'Z', superSequence of X and Y </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d65/shortest__common__supersequence_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../d7/d65/shortest__common__supersequence_8cpp_source.html">shortest_common_supersequence.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   42</span>                                                                    {</div>
 <div class="line"><span class="lineno">   43</span> </div>
 <div class="line"><span class="lineno">   44</span>            <span class="comment">// Edge cases</span></div>
 <div class="line"><span class="lineno">   45</span>            <span class="comment">// If either str1 or str2 or both are empty</span></div>
-<div class="line"><span class="lineno">   46</span>            <span class="keywordflow">if</span>(str1.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/empty.html">empty</a>() &amp;&amp; str2.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/empty.html">empty</a>()) {</div>
+<div class="line"><span class="lineno">   46</span>            <span class="keywordflow">if</span>(str1.empty() &amp;&amp; str2.empty()) {</div>
 <div class="line"><span class="lineno">   47</span>                <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><span class="lineno">   48</span>            }</div>
-<div class="line"><span class="lineno">   49</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(str1.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/empty.html">empty</a>()) {</div>
+<div class="line"><span class="lineno">   49</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(str1.empty()) {</div>
 <div class="line"><span class="lineno">   50</span>                <span class="keywordflow">return</span> str2;</div>
 <div class="line"><span class="lineno">   51</span>            }</div>
-<div class="line"><span class="lineno">   52</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(str2.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/empty.html">empty</a>()) {</div>
+<div class="line"><span class="lineno">   52</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(str2.empty()) {</div>
 <div class="line"><span class="lineno">   53</span>                <span class="keywordflow">return</span> str1;</div>
 <div class="line"><span class="lineno">   54</span>            }</div>
 <div class="line"><span class="lineno">   55</span> </div>
 <div class="line"><span class="lineno">   56</span>            <span class="comment">// creating lookup table</span></div>
-<div class="line"><span class="lineno">   57</span>            std::vector &lt;std::vector &lt;int&gt;&gt; lookup(str1.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>() + 1, std::vector &lt;int&gt; (str2.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>() + 1, 0));</div>
+<div class="line"><span class="lineno">   57</span>            std::vector &lt;std::vector &lt;int&gt;&gt; lookup(str1.length() + 1, std::vector &lt;int&gt; (str2.length() + 1, 0));</div>
 <div class="line"><span class="lineno">   58</span>      </div>
-<div class="line"><span class="lineno">   59</span>            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=1; i &lt;= str1.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>(); i++) {</div>
-<div class="line"><span class="lineno">   60</span>                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=1; j &lt;= str2.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>(); j++) {</div>
+<div class="line"><span class="lineno">   59</span>            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=1; i &lt;= str1.length(); i++) {</div>
+<div class="line"><span class="lineno">   60</span>                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=1; j &lt;= str2.length(); j++) {</div>
 <div class="line"><span class="lineno">   61</span>                    <span class="keywordflow">if</span>(str1[i-1] == str2[j-1]) {</div>
 <div class="line"><span class="lineno">   62</span>                        lookup[i][j] = lookup[i-1][j-1] + 1;</div>
 <div class="line"><span class="lineno">   63</span>                    }</div>
 <div class="line"><span class="lineno">   64</span>                    <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   65</span>                        lookup[i][j] = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(lookup[i-1][j], lookup[i][j-1]);</div>
+<div class="line"><span class="lineno">   65</span>                        lookup[i][j] = std::max(lookup[i-1][j], lookup[i][j-1]);</div>
 <div class="line"><span class="lineno">   66</span>                    }</div>
 <div class="line"><span class="lineno">   67</span>                }</div>
 <div class="line"><span class="lineno">   68</span>            }</div>
@@ -251,27 +268,27 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   70</span>            <span class="comment">// making supersequence</span></div>
 <div class="line"><span class="lineno">   71</span>            <span class="comment">// i and j are initially pointed towards end of strings</span></div>
 <div class="line"><span class="lineno">   72</span>            <span class="comment">// Super-sequence will be constructed backwards</span></div>
-<div class="line"><span class="lineno">   73</span>            <span class="keywordtype">int</span> i=str1.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>();</div>
-<div class="line"><span class="lineno">   74</span>            <span class="keywordtype">int</span> j=str2.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>();</div>
-<div class="line"><span class="lineno">   75</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> s;</div>
+<div class="line"><span class="lineno">   73</span>            <span class="keywordtype">int</span> i=str1.length();</div>
+<div class="line"><span class="lineno">   74</span>            <span class="keywordtype">int</span> j=str2.length();</div>
+<div class="line"><span class="lineno">   75</span>            std::string s;</div>
 <div class="line"><span class="lineno">   76</span>      </div>
 <div class="line"><span class="lineno">   77</span>            <span class="keywordflow">while</span>(i&gt;0 &amp;&amp; j&gt;0) {</div>
 <div class="line"><span class="lineno">   78</span> </div>
 <div class="line"><span class="lineno">   79</span>                <span class="comment">// If the characters at i and j of both strings are same</span></div>
 <div class="line"><span class="lineno">   80</span>                <span class="comment">// We only need to add them once in s</span></div>
 <div class="line"><span class="lineno">   81</span>                <span class="keywordflow">if</span>(str1[i-1] == str2[j-1]) {</div>
-<div class="line"><span class="lineno">   82</span>                    s.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/push_back.html">push_back</a>(str1[i-1]);</div>
+<div class="line"><span class="lineno">   82</span>                    s.push_back(str1[i-1]);</div>
 <div class="line"><span class="lineno">   83</span>                    i--;</div>
 <div class="line"><span class="lineno">   84</span>                    j--;</div>
 <div class="line"><span class="lineno">   85</span>                }</div>
 <div class="line"><span class="lineno">   86</span>                <span class="comment">// otherwise we check lookup table for recurrences of characters</span></div>
 <div class="line"><span class="lineno">   87</span>                <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">   88</span>                    <span class="keywordflow">if</span>(lookup[i-1][j] &gt; lookup[i][j-1]) {</div>
-<div class="line"><span class="lineno">   89</span>                        s.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/push_back.html">push_back</a>(str1[i-1]);</div>
+<div class="line"><span class="lineno">   89</span>                        s.push_back(str1[i-1]);</div>
 <div class="line"><span class="lineno">   90</span>                        i--;</div>
 <div class="line"><span class="lineno">   91</span>                    }</div>
 <div class="line"><span class="lineno">   92</span>                    <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   93</span>                        s.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/push_back.html">push_back</a>(str2[j-1]);</div>
+<div class="line"><span class="lineno">   93</span>                        s.push_back(str2[j-1]);</div>
 <div class="line"><span class="lineno">   94</span>                        j--;</div>
 <div class="line"><span class="lineno">   95</span>                    }</div>
 <div class="line"><span class="lineno">   96</span>                }</div>
@@ -280,34 +297,22 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   99</span>            <span class="comment">// copying remaining elements</span></div>
 <div class="line"><span class="lineno">  100</span>            <span class="comment">// if j becomes 0 before i</span></div>
 <div class="line"><span class="lineno">  101</span>            <span class="keywordflow">while</span>(i &gt; 0) {</div>
-<div class="line"><span class="lineno">  102</span>                s.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/push_back.html">push_back</a>(str1[i-1]);</div>
+<div class="line"><span class="lineno">  102</span>                s.push_back(str1[i-1]);</div>
 <div class="line"><span class="lineno">  103</span>                i--;</div>
 <div class="line"><span class="lineno">  104</span>            }</div>
 <div class="line"><span class="lineno">  105</span> </div>
 <div class="line"><span class="lineno">  106</span>            <span class="comment">// if i becomes 0 before j</span></div>
 <div class="line"><span class="lineno">  107</span>            <span class="keywordflow">while</span>(j &gt; 0) {</div>
-<div class="line"><span class="lineno">  108</span>                s.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/push_back.html">push_back</a>(str2[j-1]);</div>
+<div class="line"><span class="lineno">  108</span>                s.push_back(str2[j-1]);</div>
 <div class="line"><span class="lineno">  109</span>                j--;</div>
 <div class="line"><span class="lineno">  110</span>            }</div>
 <div class="line"><span class="lineno">  111</span> </div>
 <div class="line"><span class="lineno">  112</span>            <span class="comment">// As the super sequence is constructd backwards</span></div>
 <div class="line"><span class="lineno">  113</span>            <span class="comment">// reversing the string before returning gives us the correct output  </span></div>
-<div class="line"><span class="lineno">  114</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/reverse.html">reverse</a>(s.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/begin.html">begin</a>(), s.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/end.html">end</a>());</div>
+<div class="line"><span class="lineno">  114</span>            reverse(s.begin(), s.end());</div>
 <div class="line"><span class="lineno">  115</span>            <span class="keywordflow">return</span> s;</div>
 <div class="line"><span class="lineno">  116</span>        }</div>
-<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/begin.html">std::string::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
-<div class="ttc" id="aempty_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/empty.html">std::string::empty</a></div><div class="ttdeci">T empty(T... args)</div></div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/end.html">std::string::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
-<div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/push_back.html">std::string::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
-<div class="ttc" id="areverse_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/reverse.html">std::reverse</a></div><div class="ttdeci">T reverse(T... args)</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">std::string::length</a></div><div class="ttdeci">T length(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d65/shortest__common__supersequence_8cpp_ad2ee8d7e67da9f6eb85146b08dad95e6_cgraph.svg" width="467" height="283"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -333,6 +338,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Test Function </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d65/shortest__common__supersequence_8cpp_source.html#l00124">124</a> of file <a class="el" href="../../d7/d65/shortest__common__supersequence_8cpp_source.html">shortest_common_supersequence.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  124</span>                   {</div>
 <div class="line"><span class="lineno">  125</span>    <span class="comment">// custom input vector</span></div>
 <div class="line"><span class="lineno">  126</span>    std::vector &lt;std::vector &lt;std::string&gt;&gt; scsStrings {</div>
@@ -368,7 +375,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  156</span>        assert(expectedOutput[i] == calculatedOutput[i]);</div>
 <div class="line"><span class="lineno">  157</span>    }</div>
 <div class="line"><span class="lineno">  158</span> </div>
-<div class="line"><span class="lineno">  159</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests passed successfully!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  159</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All tests passed successfully!\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  160</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  161</span>}</div>
 </div><!-- fragment -->

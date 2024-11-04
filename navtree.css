@@ -22,12 +22,12 @@
 #nav-tree .selected {
   background-image: url('tab_a.png');
   background-repeat:repeat-x;
-  color: var(--nav-text-active-color);
-  text-shadow: var(--nav-text-active-shadow);
+  color: white;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 1.0);
 }
 
 #nav-tree .selected .arrow {
-  color: var(--nav-arrow-selected-color);
+  color: #9CAFD4;
   text-shadow: none;
 }
 
@@ -47,7 +47,7 @@
 #nav-tree .label {
   margin:0px;
   padding:0px;
-  font: 12px var(--font-family-nav);
+  font: 12px 'Lucida Grande',Geneva,Helvetica,Arial,sans-serif;
 }
 
 #nav-tree .label a {
@@ -56,7 +56,7 @@
 
 #nav-tree .selected a {
   text-decoration:none;
-  color:var(--nav-text-active-color);
+  color:white;
 }
 
 #nav-tree .children_ul {
@@ -98,7 +98,7 @@
 }
 
 .ui-resizable-e {
-  background-image:var(--nav-splitbar-image);
+  background-image:url('splitbar.png');
   background-size:100%;
   background-repeat:repeat-y;
   background-attachment: scroll;
@@ -122,7 +122,7 @@
 
 #nav-tree {
   background-repeat:repeat-x;
-  background-color: var(--nav-background-color);
+  background-color: #F9FAFC;
   -webkit-overflow-scrolling : touch; /* iOS 5+ */
 }
 

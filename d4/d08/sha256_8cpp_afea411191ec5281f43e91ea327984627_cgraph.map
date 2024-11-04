@@ -1,4 +1,0 @@
-<map id="hashing::sha256::extract_byte" name="hashing::sha256::extract_byte">
-<area shape="rect" id="Node000001" title="Returns the byte at position byte_num in in_value." alt="" coords="5,29,202,55"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="71,30,64,21,68,11,81,5,104,3,128,5,140,12,137,17,126,10,103,8,83,10,72,15,69,20,75,27"/>
-</map>

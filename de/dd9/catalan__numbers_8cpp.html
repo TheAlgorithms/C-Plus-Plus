@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: dynamic_programming/catalan_numbers.cpp File Reference</title>
+<title>TheAlgorithms/C++: dynamic_programming/catalan_numbers.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -124,7 +141,9 @@ Include dependency graph for catalan_numbers.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d75/catalan__numbers_8cpp__incl.svg" width="518" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../de/dd9/catalan__numbers_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d1f/classcatalan__numbers.html">catalan_numbers</a></td></tr>
@@ -142,6 +161,8 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides utilities to compute Catalan numbers using dynamic programming. A Catalan numbers satisfy these recurrence relations: C(0) = C(1) = 1; C(n) = sum(C(i).C(n-i-1)), for i = 0 to n-1 Read more about Catalan numbers here: <a href="https://en.wikipedia.org/wiki/Catalan_number">https://en.wikipedia.org/wiki/Catalan_number</a> <a href="https://oeis.org/A000108/">https://oeis.org/A000108/</a>. </p>
+
+<p class="definition">Definition in file <a class="el" href="../../de/dd9/catalan__numbers_8cpp_source.html">catalan_numbers.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -157,6 +178,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/dd9/catalan__numbers_8cpp_source.html#l00079">79</a> of file <a class="el" href="../../de/dd9/catalan__numbers_8cpp_source.html">catalan_numbers.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   79</span>           {</div>
 <div class="line"><span class="lineno">   80</span>    test_catalan_numbers_up_to_20();</div>
 <div class="line"><span class="lineno">   81</span>    test_catalan_numbers_25();</div>
@@ -178,13 +201,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/dd9/catalan__numbers_8cpp_source.html#l00073">73</a> of file <a class="el" href="../../de/dd9/catalan__numbers_8cpp_source.html">catalan_numbers.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   73</span>                               {</div>
 <div class="line"><span class="lineno">   74</span>    <span class="comment">// data verified with https://oeis.org/A000108/</span></div>
 <div class="line"><span class="lineno">   75</span>    <a class="code hl_class" href="../../dc/d1f/classcatalan__numbers.html">catalan_numbers</a> cn;</div>
 <div class="line"><span class="lineno">   76</span>    assert(cn.<a class="code hl_function" href="../../dc/d1f/classcatalan__numbers.html#a54655c66cf89186d3d1fa90829b28ab8">get</a>(25) == 4861946401452ULL);</div>
 <div class="line"><span class="lineno">   77</span>}</div>
-<div class="ttc" id="aclasscatalan__numbers_html"><div class="ttname"><a href="../../dc/d1f/classcatalan__numbers.html">catalan_numbers</a></div><div class="ttdoc">computes and caches Catalan numbers</div><div class="ttdef"><b>Definition</b> catalan_numbers.cpp:22</div></div>
-<div class="ttc" id="aclasscatalan__numbers_html_a54655c66cf89186d3d1fa90829b28ab8"><div class="ttname"><a href="../../dc/d1f/classcatalan__numbers.html#a54655c66cf89186d3d1fa90829b28ab8">catalan_numbers::get</a></div><div class="ttdeci">value_type get(std::size_t n)</div><div class="ttdoc">computes the n-th Catalan number and updates the cache.</div><div class="ttdef"><b>Definition</b> catalan_numbers.cpp:39</div></div>
+<div class="ttc" id="aclasscatalan__numbers_html"><div class="ttname"><a href="../../dc/d1f/classcatalan__numbers.html">catalan_numbers</a></div><div class="ttdoc">computes and caches Catalan numbers</div><div class="ttdef"><b>Definition</b> <a href="../../de/dd9/catalan__numbers_8cpp_source.html#l00022">catalan_numbers.cpp:22</a></div></div>
+<div class="ttc" id="aclasscatalan__numbers_html_a54655c66cf89186d3d1fa90829b28ab8"><div class="ttname"><a href="../../dc/d1f/classcatalan__numbers.html#a54655c66cf89186d3d1fa90829b28ab8">catalan_numbers::get</a></div><div class="ttdeci">value_type get(std::size_t n)</div><div class="ttdoc">computes the n-th Catalan number and updates the cache.</div><div class="ttdef"><b>Definition</b> <a href="../../de/dd9/catalan__numbers_8cpp_source.html#l00039">catalan_numbers.cpp:39</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -202,6 +227,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/dd9/catalan__numbers_8cpp_source.html#l00047">47</a> of file <a class="el" href="../../de/dd9/catalan__numbers_8cpp_source.html">catalan_numbers.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   47</span>                                     {</div>
 <div class="line"><span class="lineno">   48</span>    <span class="comment">// data verified with https://oeis.org/A000108/</span></div>
 <div class="line"><span class="lineno">   49</span>    <a class="code hl_class" href="../../dc/d1f/classcatalan__numbers.html">catalan_numbers</a> cn;</div>

@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: Complex Class Reference</title>
+<title>TheAlgorithms/C++: Complex Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -156,15 +173,15 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a843ce2f85af4c57db9063c86f3cd9607" id="r_a843ce2f85af4c57db9063c86f3cd9607"><td class="memItemLeft" align="right" valign="top"><a id="a843ce2f85af4c57db9063c86f3cd9607" name="a843ce2f85af4c57db9063c86f3cd9607"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>re</b></td></tr>
+<tr class="memitem:a843ce2f85af4c57db9063c86f3cd9607" id="r_a843ce2f85af4c57db9063c86f3cd9607"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a843ce2f85af4c57db9063c86f3cd9607">re</a></td></tr>
 <tr class="separator:a843ce2f85af4c57db9063c86f3cd9607"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a776d595d5a1b576e9136cbc6bac0589c" id="r_a776d595d5a1b576e9136cbc6bac0589c"><td class="memItemLeft" align="right" valign="top"><a id="a776d595d5a1b576e9136cbc6bac0589c" name="a776d595d5a1b576e9136cbc6bac0589c"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>im</b></td></tr>
+<tr class="memitem:a776d595d5a1b576e9136cbc6bac0589c" id="r_a776d595d5a1b576e9136cbc6bac0589c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a776d595d5a1b576e9136cbc6bac0589c">im</a></td></tr>
 <tr class="separator:a776d595d5a1b576e9136cbc6bac0589c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class <a class="el" href="../../da/d5a/class_complex.html" title="Class Complex to represent complex numbers as a field.">Complex</a> to represent complex numbers as a field. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html#l00020">20</a> of file <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html">complex_numbers.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3cfc522c782726f49ee20af17b77f867" name="a3cfc522c782726f49ee20af17b77f867"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3cfc522c782726f49ee20af17b77f867">&#9670;&#160;</a></span>Complex() <span class="overload">[1/2]</span></h2>
@@ -207,6 +224,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>im</b></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html#l00043">43</a> of file <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html">complex_numbers.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   43</span>                                                                            {</div>
 <div class="line"><span class="lineno">   44</span>        <span class="keywordflow">if</span> (!is_polar) {</div>
 <div class="line"><span class="lineno">   45</span>            re = x;</div>
@@ -214,17 +233,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>im</b></td></tr>
 <div class="line"><span class="lineno">   47</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">   48</span>        }</div>
 <div class="line"><span class="lineno">   49</span> </div>
-<div class="line"><span class="lineno">   50</span>        re = x * <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/cos.html">std::cos</a>(y);</div>
-<div class="line"><span class="lineno">   51</span>        im = x * <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sin.html">std::sin</a>(y);</div>
+<div class="line"><span class="lineno">   50</span>        re = x * std::cos(y);</div>
+<div class="line"><span class="lineno">   51</span>        im = x * std::sin(y);</div>
 <div class="line"><span class="lineno">   52</span>    }</div>
-<div class="ttc" id="acos_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/cos.html">std::cos</a></div><div class="ttdeci">T cos(T... args)</div></div>
-<div class="ttc" id="asin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/sin.html">std::sin</a></div><div class="ttdeci">T sin(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d5a/class_complex_a3cfc522c782726f49ee20af17b77f867_cgraph.svg" width="260" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a466cd7b664cc6a864937ceb3dead1323" name="a466cd7b664cc6a864937ceb3dead1323"></a>
@@ -257,9 +269,11 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html">complex_numbers.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   58</span>: re(other.<a class="code hl_function" href="#a312e4b19146128408fb06e0150b0faf6">real</a>()), im(other.<a class="code hl_function" href="#af8aacf982e2e6c142921bc850f6dc974">imag</a>()) {}</div>
-<div class="ttc" id="aclass_complex_html_a312e4b19146128408fb06e0150b0faf6"><div class="ttname"><a href="#a312e4b19146128408fb06e0150b0faf6">Complex::real</a></div><div class="ttdeci">double real() const</div><div class="ttdoc">Member function to get real value of our complex number. Member function (getter) to access the class...</div><div class="ttdef"><b>Definition</b> complex_numbers.cpp:64</div></div>
-<div class="ttc" id="aclass_complex_html_af8aacf982e2e6c142921bc850f6dc974"><div class="ttname"><a href="#af8aacf982e2e6c142921bc850f6dc974">Complex::imag</a></div><div class="ttdeci">double imag() const</div><div class="ttdoc">Member function to get imaginary value of our complex number. Member function (getter) to access the ...</div><div class="ttdef"><b>Definition</b> complex_numbers.cpp:70</div></div>
+<div class="ttc" id="aclass_complex_html_a312e4b19146128408fb06e0150b0faf6"><div class="ttname"><a href="#a312e4b19146128408fb06e0150b0faf6">Complex::real</a></div><div class="ttdeci">double real() const</div><div class="ttdoc">Member function to get real value of our complex number. Member function (getter) to access the class...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d67/complex__numbers_8cpp_source.html#l00064">complex_numbers.cpp:64</a></div></div>
+<div class="ttc" id="aclass_complex_html_af8aacf982e2e6c142921bc850f6dc974"><div class="ttname"><a href="#af8aacf982e2e6c142921bc850f6dc974">Complex::imag</a></div><div class="ttdeci">double imag() const</div><div class="ttdoc">Member function to get imaginary value of our complex number. Member function (getter) to access the ...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d67/complex__numbers_8cpp_source.html#l00070">complex_numbers.cpp:70</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -289,16 +303,12 @@ Here is the call graph for this function:</div>
 
 <p>Member function to give the modulus of our complex number. Member function to which gives the absolute value (modulus) of our complex number. </p>
 <dl class="section return"><dt>Returns</dt><dd>\( \sqrt{z \bar{z}} \) where \( z \) is our complex number. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   79</span>                       {</div>
-<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(this-&gt;re * this-&gt;re + this-&gt;im * this-&gt;im);</div>
-<div class="line"><span class="lineno">   81</span>    }</div>
-<div class="ttc" id="asqrt_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a></div><div class="ttdeci">T sqrt(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d5a/class_complex_ae5b51b749ea4964104b9527af9d8f556_cgraph.svg" width="231" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html#l00079">79</a> of file <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html">complex_numbers.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   79</span>                       {</div>
+<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">return</span> std::sqrt(this-&gt;re * this-&gt;re + this-&gt;im * this-&gt;im);</div>
+<div class="line"><span class="lineno">   81</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae1e03712837450549e0c9b4017533a41" name="ae1e03712837450549e0c9b4017533a41"></a>
@@ -326,14 +336,10 @@ Here is the call graph for this function:</div>
 
 <p>Member function to give the argument of our complex number. </p>
 <dl class="section return"><dt>Returns</dt><dd>Argument of our <a class="el" href="../../da/d5a/class_complex.html" title="Class Complex to represent complex numbers as a field.">Complex</a> number in radians. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   87</span>{ <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/atan2.html">std::atan2</a>(this-&gt;im, this-&gt;re); }</div>
-<div class="ttc" id="aatan2_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/atan2.html">std::atan2</a></div><div class="ttdeci">T atan2(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d5a/class_complex_ae1e03712837450549e0c9b4017533a41_cgraph.svg" width="238" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html#l00087">87</a> of file <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html">complex_numbers.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   87</span>{ <span class="keywordflow">return</span> std::atan2(this-&gt;im, this-&gt;re); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af8aacf982e2e6c142921bc850f6dc974" name="af8aacf982e2e6c142921bc850f6dc974"></a>
@@ -360,6 +366,8 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Member function to get imaginary value of our complex number. Member function (getter) to access the class' im value. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html#l00070">70</a> of file <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html">complex_numbers.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   70</span>{ <span class="keywordflow">return</span> this-&gt;im; }</div>
 </div><!-- fragment -->
 </div>
@@ -395,13 +403,15 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>result current number times other number. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html#l00117">117</a> of file <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html">complex_numbers.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  117</span>                                            {</div>
 <div class="line"><span class="lineno">  118</span>        <a class="code hl_class" href="../../da/d5a/class_complex.html">Complex</a> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(this-&gt;re * other.re - this-&gt;im * other.im,</div>
 <div class="line"><span class="lineno">  119</span>                       this-&gt;re * other.im + this-&gt;im * other.re);</div>
 <div class="line"><span class="lineno">  120</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">  121</span>    }</div>
-<div class="ttc" id="aclass_complex_html"><div class="ttname"><a href="../../da/d5a/class_complex.html">Complex</a></div><div class="ttdoc">Class Complex to represent complex numbers as a field.</div><div class="ttdef"><b>Definition</b> complex_numbers.cpp:20</div></div>
-<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> fibonacci_sum.cpp:77</div></div>
+<div class="ttc" id="aclass_complex_html"><div class="ttname"><a href="../../da/d5a/class_complex.html">Complex</a></div><div class="ttdoc">Class Complex to represent complex numbers as a field.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d67/complex__numbers_8cpp_source.html#l00020">complex_numbers.cpp:20</a></div></div>
+<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> <a href="../../de/dc3/fibonacci__sum_8cpp_source.html#l00077">fibonacci_sum.cpp:77</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -436,6 +446,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>result current number plus other number </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html#l00095">95</a> of file <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html">complex_numbers.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   95</span>                                            {</div>
 <div class="line"><span class="lineno">   96</span>        <a class="code hl_class" href="../../da/d5a/class_complex.html">Complex</a> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(this-&gt;re + other.re, this-&gt;im + other.im);</div>
 <div class="line"><span class="lineno">   97</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
@@ -474,6 +486,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>result current number subtract other number </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html#l00106">106</a> of file <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html">complex_numbers.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  106</span>                                            {</div>
 <div class="line"><span class="lineno">  107</span>        <a class="code hl_class" href="../../da/d5a/class_complex.html">Complex</a> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(this-&gt;re - other.re, this-&gt;im - other.im);</div>
 <div class="line"><span class="lineno">  108</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
@@ -512,6 +526,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>result Current number divided by other number. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html#l00142">142</a> of file <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html">complex_numbers.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  142</span>                                            {</div>
 <div class="line"><span class="lineno">  143</span>        <a class="code hl_class" href="../../da/d5a/class_complex.html">Complex</a> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = *<span class="keyword">this</span> * ~other;</div>
 <div class="line"><span class="lineno">  144</span>        <span class="keywordtype">double</span> denominator =</div>
@@ -521,17 +537,11 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  148</span>                             <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.imag() / denominator);</div>
 <div class="line"><span class="lineno">  149</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">  150</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  151</span>            <span class="keywordflow">throw</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a>(<span class="stringliteral">&quot;Undefined Value&quot;</span>);</div>
+<div class="line"><span class="lineno">  151</span>            <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Undefined Value&quot;</span>);</div>
 <div class="line"><span class="lineno">  152</span>        }</div>
 <div class="line"><span class="lineno">  153</span>    }</div>
-<div class="ttc" id="aclass_complex_html_a3cfc522c782726f49ee20af17b77f867"><div class="ttname"><a href="#a3cfc522c782726f49ee20af17b77f867">Complex::Complex</a></div><div class="ttdeci">Complex(double x=0.f, double y=0.f, bool is_polar=false)</div><div class="ttdoc">Complex Constructor which initialises our complex number.</div><div class="ttdef"><b>Definition</b> complex_numbers.cpp:43</div></div>
-<div class="ttc" id="ainvalid_argument_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d5a/class_complex_ac38437c10eb798f176c384a695171b90_cgraph.svg" width="442" height="159"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclass_complex_html_a3cfc522c782726f49ee20af17b77f867"><div class="ttname"><a href="#a3cfc522c782726f49ee20af17b77f867">Complex::Complex</a></div><div class="ttdeci">Complex(double x=0.f, double y=0.f, bool is_polar=false)</div><div class="ttdoc">Complex Constructor which initialises our complex number.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d67/complex__numbers_8cpp_source.html#l00043">complex_numbers.cpp:43</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4ac9f529d54cacf2969f2c7179b4c4ac" name="a4ac9f529d54cacf2969f2c7179b4c4ac"></a>
@@ -558,17 +568,14 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Operator overload of '=' on <a class="el" href="../../da/d5a/class_complex.html" title="Class Complex to represent complex numbers as a field.">Complex</a> class. Operator overload to be able to copy RHS instance of <a class="el" href="../../da/d5a/class_complex.html" title="Class Complex to represent complex numbers as a field.">Complex</a> to LHS instance of <a class="el" href="../../da/d5a/class_complex.html" title="Class Complex to represent complex numbers as a field.">Complex</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html#l00160">160</a> of file <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html">complex_numbers.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  160</span>                                                   {</div>
 <div class="line"><span class="lineno">  161</span>        this-&gt;re = other.<a class="code hl_function" href="#a312e4b19146128408fb06e0150b0faf6">real</a>();</div>
 <div class="line"><span class="lineno">  162</span>        this-&gt;im = other.<a class="code hl_function" href="#af8aacf982e2e6c142921bc850f6dc974">imag</a>();</div>
 <div class="line"><span class="lineno">  163</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><span class="lineno">  164</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d5a/class_complex_a4ac9f529d54cacf2969f2c7179b4c4ac_cgraph.svg" width="304" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8d5427f6c42c15283031d73e1418c59d" name="a8d5427f6c42c15283031d73e1418c59d"></a>
@@ -596,6 +603,8 @@ Here is the call graph for this function:</div>
 
 <p>Operator overload of '~' on <a class="el" href="../../da/d5a/class_complex.html" title="Class Complex to represent complex numbers as a field.">Complex</a> class. Operator overload of the BITWISE NOT which gives us the conjugate of our complex number. NOTE: This is overloading the BITWISE operator but its not a BITWISE operation in this definition. </p>
 <dl class="section return"><dt>Returns</dt><dd>result The conjugate of our complex number. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html#l00130">130</a> of file <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html">complex_numbers.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  130</span>                              {</div>
 <div class="line"><span class="lineno">  131</span>        <a class="code hl_class" href="../../da/d5a/class_complex.html">Complex</a> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(this-&gt;re, -(this-&gt;im));</div>
 <div class="line"><span class="lineno">  132</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
@@ -627,12 +636,63 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Member function to get real value of our complex number. Member function (getter) to access the class' re value. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html#l00064">64</a> of file <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html">complex_numbers.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   64</span>{ <span class="keywordflow">return</span> this-&gt;re; }</div>
 </div><!-- fragment -->
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a776d595d5a1b576e9136cbc6bac0589c" name="a776d595d5a1b576e9136cbc6bac0589c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a776d595d5a1b576e9136cbc6bac0589c">&#9670;&#160;</a></span>im</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Complex::im</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html">complex_numbers.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a843ce2f85af4c57db9063c86f3cd9607" name="a843ce2f85af4c57db9063c86f3cd9607"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a843ce2f85af4c57db9063c86f3cd9607">&#9670;&#160;</a></span>re</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Complex::re</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html#l00022">22</a> of file <a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html">complex_numbers.cpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>math/<a class="el" href="../../d5/d67/complex__numbers_8cpp.html">complex_numbers.cpp</a></li>
+<li>math/<a class="el" href="../../d5/d67/complex__numbers_8cpp_source.html">complex_numbers.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

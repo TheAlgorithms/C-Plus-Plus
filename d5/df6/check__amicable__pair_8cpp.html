@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: math/check_amicable_pair.cpp File Reference</title>
+<title>TheAlgorithms/C++: math/check_amicable_pair.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -120,7 +137,9 @@ Include dependency graph for check_amicable_pair.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d0c/check__amicable__pair_8cpp__incl.svg" width="171" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d5/df6/check__amicable__pair_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html">math</a></td></tr>
@@ -147,6 +166,8 @@ Functions</h2></td></tr>
 <p>An Amicable Pair is two positive integers such that the sum of the proper divisor for each number is equal to the other number.</p>
 <dl class="section note"><dt>Note</dt><dd>Remember that a proper divisor is any positive whole number that divides into a selected number, apart from the selected number itself, and returns a positive integer. for example 1, 2 and 5 are all proper divisors of 10.</dd></dl>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/iamnambiar" target="_blank">iamnambiar</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d5/df6/check__amicable__pair_8cpp_source.html">check_amicable_pair.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -165,17 +186,14 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/df6/check__amicable__pair_8cpp_source.html#l00081">81</a> of file <a class="el" href="../../d5/df6/check__amicable__pair_8cpp_source.html">check_amicable_pair.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   81</span>           {</div>
 <div class="line"><span class="lineno">   82</span>    <a class="code hl_function" href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a>();  <span class="comment">// perform self-tests implementations</span></div>
 <div class="line"><span class="lineno">   83</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   84</span>}</div>
-<div class="ttc" id="acheck__amicable__pair_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> check_amicable_pair.cpp:67</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/df6/check__amicable__pair_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="536" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="acheck__amicable__pair_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/df6/check__amicable__pair_8cpp_source.html#l00067">check_amicable_pair.cpp:67</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a483bb8ccf42aaf7375a83e91490eda1e" name="a483bb8ccf42aaf7375a83e91490eda1e"></a>
@@ -203,6 +221,8 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/df6/check__amicable__pair_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../d5/df6/check__amicable__pair_8cpp_source.html">check_amicable_pair.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   67</span>                    {</div>
 <div class="line"><span class="lineno">   68</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a8e6eede206201db0d1dbb618fa969bec">math::are_amicable</a>(220, 284) == <span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">   69</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a8e6eede206201db0d1dbb618fa969bec">math::are_amicable</a>(6368, 6232) == <span class="keyword">true</span>);</div>
@@ -210,17 +230,10 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   71</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a8e6eede206201db0d1dbb618fa969bec">math::are_amicable</a>(17296, 18416) == <span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">   72</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a8e6eede206201db0d1dbb618fa969bec">math::are_amicable</a>(18416, 17296) == <span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">   73</span> </div>
-<div class="line"><span class="lineno">   74</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   74</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   75</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="anamespacemath_html_a8e6eede206201db0d1dbb618fa969bec"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a8e6eede206201db0d1dbb618fa969bec">math::are_amicable</a></div><div class="ttdeci">bool are_amicable(int x, int y)</div><div class="ttdoc">Function to check whether the pair is amicable or not.</div><div class="ttdef"><b>Definition</b> check_amicable_pair.cpp:58</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/df6/check__amicable__pair_8cpp_a483bb8ccf42aaf7375a83e91490eda1e_cgraph.svg" width="439" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="anamespacemath_html_a8e6eede206201db0d1dbb618fa969bec"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a8e6eede206201db0d1dbb618fa969bec">math::are_amicable</a></div><div class="ttdeci">bool are_amicable(int x, int y)</div><div class="ttdoc">Function to check whether the pair is amicable or not.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/df6/check__amicable__pair_8cpp_source.html#l00058">check_amicable_pair.cpp:58</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

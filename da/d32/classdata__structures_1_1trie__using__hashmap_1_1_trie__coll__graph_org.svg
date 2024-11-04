@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="121.75,-81.12 0,-81.12 0,-39.38 121.75,-39.38 121.75,-81.12"/>
 <text text-anchor="start" x="8" y="-67.62" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr&lt; data</text>
 <text text-anchor="start" x="8" y="-56.38" font-family="Helvetica,sans-Serif" font-size="10.00">_structures::trie_using</text>
@@ -42,7 +42,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/unordered_map.html" xlink:title=" ">
+<g id="a_Node000004"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="329,-92.38 203.5,-92.38 203.5,-28.12 329,-28.12 329,-92.38"/>
 <text text-anchor="start" x="211.5" y="-78.88" font-family="Helvetica,sans-Serif" font-size="10.00">std::unordered_map</text>
 <text text-anchor="start" x="211.5" y="-67.62" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; char16_t, std::shared</text>

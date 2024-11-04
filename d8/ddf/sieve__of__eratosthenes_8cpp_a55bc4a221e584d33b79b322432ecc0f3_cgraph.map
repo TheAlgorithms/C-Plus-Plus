@@ -1,7 +1,0 @@
-<map id="math::sieve_of_eratosthenes::print" name="math::sieve_of_eratosthenes::print">
-<area shape="rect" id="Node000001" title="Function to print the prime numbers." alt="" coords="5,23,195,64"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="261,5,332,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,29,245,22,245,27,196,34"/>
-<area shape="rect" id="Node000003" href="$dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444" title="Function to check if the given number is prime or not." alt="" coords="243,55,350,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,53,228,56,227,62,195,58"/>
-</map>

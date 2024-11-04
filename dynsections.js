@@ -128,8 +128,8 @@ let codefold = {
   opened : true,
 
   // in case HTML_COLORSTYLE is LIGHT or DARK the vars will be replaced, so we write them out explicitly and use double quotes
-  plusImg:  [ "var(--fold-plus-image)",  "var(--fold-plus-image-relpath)" ],
-  minusImg: [ "var(--fold-minus-image)", "var(--fold-minus-image-relpath)" ],
+  plusImg:  [ "url('plus.svg')",  "url('../../plus.svg')" ],
+  minusImg: [ "url('minus.svg')", "url('../../minus.svg')" ],
 
   // toggle all folding blocks
   toggle_all : function(relPath) {
@@ -157,7 +157,7 @@ let codefold = {
       'margin-right':'2px',
       'display':'inline-block',
       'width':'54px',
-      'background':'linear-gradient(var(--fold-line-color),var(--fold-line-color)) no-repeat 46px/2px 100%'
+      'background':'linear-gradient(#808080,#808080) no-repeat 46px/2px 100%'
     });
     // add global toggle to first line
     $('span[class=lineno]:first').append('<span class="fold" id="fold_all" '+
@@ -196,3 +196,10 @@ let codefold = {
   },
 };
 /* @license-end */
+$(function() {
+  $('.code,.codeRef').each(function() {
+    $(this).data('powertip',$('#a'+$(this).attr('href').replace(/.*\//,'').replace(/[^a-z_A-Z0-9]/g,'_')).html());
+    $.fn.powerTip.smartPlacementLists.s = [ 's', 'n', 'ne', 'se' ];
+    $(this).powerTip({ placement: 's', smartPlacement: true, mouseOnToPopup: true });
+  });
+});

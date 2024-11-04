@@ -1,9 +1,0 @@
-<map id="main" name="main">
-<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,31,55,56"/>
-<area shape="rect" id="Node000002" href="$d4/d9d/sum__of__binomial__coefficient_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title=" " alt="" coords="103,31,146,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,41,87,41,87,46,55,46"/>
-<area shape="rect" id="Node000003" href="$dd/d47/namespacemath.html#ae1ca505751f5a6d3977b86372cfe75ea" title=" " alt="" coords="194,5,359,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,37,180,32,181,37,147,43"/>
-<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="241,55,312,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="147,44,227,57,226,62,146,49"/>
-</map>

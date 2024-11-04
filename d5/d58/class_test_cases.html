@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: TestCases Class Reference</title>
+<title>TheAlgorithms/C++: TestCases Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -172,6 +189,8 @@ Private Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>class encapsulating the necessary test cases </p>
 <p>a class containing the necessary test cases </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00225">225</a> of file <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html">inorder_successor_of_bst.cpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa3aa3d5bf666f327ee8e2d11d397b06e" name="aa3aa3d5bf666f327ee8e2d11d397b06e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3aa3d5bf666f327ee8e2d11d397b06e">&#9670;&#160;</a></span>log() <span class="overload">[1/3]</span></h2>
@@ -206,18 +225,13 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00233">233</a> of file <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html">inorder_successor_of_bst.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  233</span>                    {</div>
 <div class="line"><span class="lineno">  234</span>        <span class="comment">// It&#39;s just to avoid writing cout and endl</span></div>
-<div class="line"><span class="lineno">  235</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;[TESTS] : ---&gt; &quot;</span> &lt;&lt; msg &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  235</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;[TESTS] : ---&gt; &quot;</span> &lt;&lt; msg &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  236</span>    }</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d58/class_test_cases_aa3aa3d5bf666f327ee8e2d11d397b06e_cgraph.svg" width="240" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa3aa3d5bf666f327ee8e2d11d397b06e" name="aa3aa3d5bf666f327ee8e2d11d397b06e"></a>
@@ -253,16 +267,13 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d45/sublist__search_8cpp_source.html#l00176">176</a> of file <a class="el" href="../../d5/d45/sublist__search_8cpp_source.html">sublist_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  176</span>                    {</div>
 <div class="line"><span class="lineno">  177</span>        <span class="comment">// It&#39;s just to avoid writing cout and endl</span></div>
-<div class="line"><span class="lineno">  178</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;[TESTS] : ---&gt; &quot;</span> &lt;&lt; msg &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  178</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;[TESTS] : ---&gt; &quot;</span> &lt;&lt; msg &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  179</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d58/class_test_cases_aa3aa3d5bf666f327ee8e2d11d397b06e_cgraph.svg" width="240" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa3aa3d5bf666f327ee8e2d11d397b06e" name="aa3aa3d5bf666f327ee8e2d11d397b06e"></a>
@@ -298,16 +309,13 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html#l00189">189</a> of file <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html">random_pivot_quick_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  189</span>                    {</div>
 <div class="line"><span class="lineno">  190</span>        <span class="comment">// It&#39;s just to avoid writing cout and endl</span></div>
-<div class="line"><span class="lineno">  191</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;[TESTS] : ---&gt; &quot;</span> &lt;&lt; msg &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  191</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;[TESTS] : ---&gt; &quot;</span> &lt;&lt; msg &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  192</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d58/class_test_cases_aa3aa3d5bf666f327ee8e2d11d397b06e_cgraph.svg" width="240" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aeabea90c02f9159e4a784bbf736e1e23" name="aeabea90c02f9159e4a784bbf736e1e23"></a>
@@ -335,6 +343,8 @@ Here is the call graph for this function:</div>
 
 <p>Executes test cases. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00243">243</a> of file <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html">inorder_successor_of_bst.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  243</span>                    {</div>
 <div class="line"><span class="lineno">  244</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Running Tests...&quot;</span>);</div>
 <div class="line"><span class="lineno">  245</span> </div>
@@ -343,18 +353,13 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  248</span>        <a class="code hl_function" href="#ad9f95c09931625b41e3be1f88d1e28c5">testCase_3</a>();</div>
 <div class="line"><span class="lineno">  249</span> </div>
 <div class="line"><span class="lineno">  250</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Test Cases over!&quot;</span>);</div>
-<div class="line"><span class="lineno">  251</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  251</span>        std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  252</span>    }</div>
-<div class="ttc" id="aclass_test_cases_html_aa3aa3d5bf666f327ee8e2d11d397b06e"><div class="ttname"><a href="#aa3aa3d5bf666f327ee8e2d11d397b06e">TestCases::log</a></div><div class="ttdeci">void log(T msg)</div><div class="ttdoc">A function to print given message on console.</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:233</div></div>
-<div class="ttc" id="aclass_test_cases_html_abae0148985f159b582a385cf399254e3"><div class="ttname"><a href="#abae0148985f159b582a385cf399254e3">TestCases::testCase_2</a></div><div class="ttdeci">void testCase_2()</div><div class="ttdoc">A test case which contains main list of 100 elements and sublist of 20.</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:304</div></div>
-<div class="ttc" id="aclass_test_cases_html_ac2636e8b5b9e053374c45bfcf0603008"><div class="ttname"><a href="#ac2636e8b5b9e053374c45bfcf0603008">TestCases::testCase_1</a></div><div class="ttdeci">void testCase_1()</div><div class="ttdoc">A test case contains edge case, printing inorder successor of last node.</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:259</div></div>
-<div class="ttc" id="aclass_test_cases_html_ad9f95c09931625b41e3be1f88d1e28c5"><div class="ttname"><a href="#ad9f95c09931625b41e3be1f88d1e28c5">TestCases::testCase_3</a></div><div class="ttdeci">void testCase_3()</div><div class="ttdoc">A test case which contains main list of 50 elements and sublist of 20.</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:345</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d58/class_test_cases_aeabea90c02f9159e4a784bbf736e1e23_cgraph.svg" width="638" height="223"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclass_test_cases_html_aa3aa3d5bf666f327ee8e2d11d397b06e"><div class="ttname"><a href="#aa3aa3d5bf666f327ee8e2d11d397b06e">TestCases::log</a></div><div class="ttdeci">void log(T msg)</div><div class="ttdoc">A function to print given message on console.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00233">inorder_successor_of_bst.cpp:233</a></div></div>
+<div class="ttc" id="aclass_test_cases_html_abae0148985f159b582a385cf399254e3"><div class="ttname"><a href="#abae0148985f159b582a385cf399254e3">TestCases::testCase_2</a></div><div class="ttdeci">void testCase_2()</div><div class="ttdoc">A test case which contains main list of 100 elements and sublist of 20.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00304">inorder_successor_of_bst.cpp:304</a></div></div>
+<div class="ttc" id="aclass_test_cases_html_ac2636e8b5b9e053374c45bfcf0603008"><div class="ttname"><a href="#ac2636e8b5b9e053374c45bfcf0603008">TestCases::testCase_1</a></div><div class="ttdeci">void testCase_1()</div><div class="ttdoc">A test case contains edge case, printing inorder successor of last node.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00259">inorder_successor_of_bst.cpp:259</a></div></div>
+<div class="ttc" id="aclass_test_cases_html_ad9f95c09931625b41e3be1f88d1e28c5"><div class="ttname"><a href="#ad9f95c09931625b41e3be1f88d1e28c5">TestCases::testCase_3</a></div><div class="ttdeci">void testCase_3()</div><div class="ttdoc">A test case which contains main list of 50 elements and sublist of 20.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00345">inorder_successor_of_bst.cpp:345</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aeabea90c02f9159e4a784bbf736e1e23" name="aeabea90c02f9159e4a784bbf736e1e23"></a>
@@ -382,6 +387,8 @@ Here is the call graph for this function:</div>
 
 <p>Executes test cases. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d45/sublist__search_8cpp_source.html#l00186">186</a> of file <a class="el" href="../../d5/d45/sublist__search_8cpp_source.html">sublist_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  186</span>                    {</div>
 <div class="line"><span class="lineno">  187</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Running Tests...&quot;</span>);</div>
 <div class="line"><span class="lineno">  188</span> </div>
@@ -390,14 +397,9 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  191</span>        <a class="code hl_function" href="#ad9f95c09931625b41e3be1f88d1e28c5">testCase_3</a>();</div>
 <div class="line"><span class="lineno">  192</span> </div>
 <div class="line"><span class="lineno">  193</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Test Cases over!&quot;</span>);</div>
-<div class="line"><span class="lineno">  194</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  194</span>        std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  195</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d58/class_test_cases_aeabea90c02f9159e4a784bbf736e1e23_cgraph.svg" width="638" height="223"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aeabea90c02f9159e4a784bbf736e1e23" name="aeabea90c02f9159e4a784bbf736e1e23"></a>
@@ -425,6 +427,8 @@ Here is the call graph for this function:</div>
 
 <p>Executes test cases. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html#l00199">199</a> of file <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html">random_pivot_quick_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  199</span>                    {</div>
 <div class="line"><span class="lineno">  200</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Running Tests...&quot;</span>);</div>
 <div class="line"><span class="lineno">  201</span> </div>
@@ -433,14 +437,9 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  204</span>        <a class="code hl_function" href="#ad9f95c09931625b41e3be1f88d1e28c5">testCase_3</a>();</div>
 <div class="line"><span class="lineno">  205</span> </div>
 <div class="line"><span class="lineno">  206</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Test Cases over!&quot;</span>);</div>
-<div class="line"><span class="lineno">  207</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  207</span>        std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  208</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d58/class_test_cases_aeabea90c02f9159e4a784bbf736e1e23_cgraph.svg" width="638" height="223"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac2636e8b5b9e053374c45bfcf0603008" name="ac2636e8b5b9e053374c45bfcf0603008"></a>
@@ -474,9 +473,11 @@ Here is the call graph for this function:</div>
 <p>&lt; Printing inorder to cross-verify.</p>
 <p>&lt; The inorder successor node for given data</p>
 <p>memory cleanup!</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00259">259</a> of file <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html">inorder_successor_of_bst.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  259</span>                      {</div>
 <div class="line"><span class="lineno">  260</span>        <span class="keyword">const</span> <a class="code hl_class" href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html">operations_on_datastructures::inorder_traversal_of_bst::Node</a></div>
-<div class="line"><span class="lineno">  261</span>            *expectedOutput = <span class="keyword">nullptr</span>;  <span class="comment">///&lt; Expected output of this test</span></div>
+<div class="line"><span class="lineno">  261</span>            *expectedOutput = <span class="keyword">nullptr</span>;  </div>
 <div class="line"><span class="lineno">  262</span> </div>
 <div class="line"><span class="lineno">  263</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span>);</div>
 <div class="line"><span class="lineno">  264</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;This is test case 1 : &quot;</span>);</div>
@@ -486,44 +487,38 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  268</span> </div>
 <div class="line"><span class="lineno">  269</span>        <a class="code hl_class" href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html">operations_on_datastructures::inorder_traversal_of_bst::Node</a> *root =</div>
 <div class="line"><span class="lineno">  270</span>            <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  271</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> node_data{</div>
-<div class="line"><span class="lineno">  272</span>            20, 3, 5, 6, 2, 23, 45, 78, 21};  <span class="comment">///&lt; Data to make nodes in BST</span></div>
+<div class="line"><span class="lineno">  271</span>        std::vector&lt;int64_t&gt; node_data{</div>
+<div class="line"><span class="lineno">  272</span>            20, 3, 5, 6, 2, 23, 45, 78, 21};  </div>
 <div class="line"><span class="lineno">  273</span> </div>
 <div class="line"><span class="lineno">  274</span>        root = <a class="code hl_function" href="../../d4/d32/inorder__successor__of__bst_8cpp.html#a05fe8a029e155c43e4efa598d4d089d9">operations_on_datastructures::inorder_traversal_of_bst::makeBST</a>(</div>
 <div class="line"><span class="lineno">  275</span>            root,</div>
-<div class="line"><span class="lineno">  276</span>            node_data);  <span class="comment">///&lt; Adding nodes to BST</span></div>
+<div class="line"><span class="lineno">  276</span>            node_data);  </div>
 <div class="line"><span class="lineno">  277</span> </div>
-<div class="line"><span class="lineno">  278</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Inorder sequence is : &quot;</span>;</div>
+<div class="line"><span class="lineno">  278</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Inorder sequence is : &quot;</span>;</div>
 <div class="line"><span class="lineno">  279</span>        <a class="code hl_function" href="../../d4/d32/inorder__successor__of__bst_8cpp.html#a5d7266b934ca50c4f53e4f1e725d89a4">operations_on_datastructures::inorder_traversal_of_bst::printInorder</a>(</div>
-<div class="line"><span class="lineno">  280</span>            root);  <span class="comment">///&lt; Printing inorder to cross-verify.</span></div>
-<div class="line"><span class="lineno">  281</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  280</span>            root);  </div>
+<div class="line"><span class="lineno">  281</span>        std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  282</span> </div>
 <div class="line"><span class="lineno">  283</span>        <a class="code hl_class" href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html">operations_on_datastructures::inorder_traversal_of_bst::Node</a></div>
 <div class="line"><span class="lineno">  284</span>            *inorderSuccessor = operations_on_datastructures::</div>
 <div class="line"><span class="lineno">  285</span>                inorder_traversal_of_bst::getInorderSuccessor(</div>
-<div class="line"><span class="lineno">  286</span>                    root, 78);  <span class="comment">///&lt; The inorder successor node for given data</span></div>
+<div class="line"><span class="lineno">  286</span>                    root, 78);  </div>
 <div class="line"><span class="lineno">  287</span> </div>
 <div class="line"><span class="lineno">  288</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Checking assert expression...&quot;</span>);</div>
 <div class="line"><span class="lineno">  289</span>        assert(inorderSuccessor == expectedOutput);</div>
 <div class="line"><span class="lineno">  290</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Assertion check passed!&quot;</span>);</div>
 <div class="line"><span class="lineno">  291</span> </div>
 <div class="line"><span class="lineno">  292</span>        <a class="code hl_function" href="../../d4/d32/inorder__successor__of__bst_8cpp.html#a7b20eb99272665c1777949e26ab59589">operations_on_datastructures::inorder_traversal_of_bst::deallocate</a>(</div>
-<div class="line"><span class="lineno">  293</span>            root);  <span class="comment">/// memory cleanup!</span></div>
+<div class="line"><span class="lineno">  293</span>            root);  </div>
 <div class="line"><span class="lineno">  294</span> </div>
 <div class="line"><span class="lineno">  295</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;[PASS] : TEST CASE 1 PASS!&quot;</span>);</div>
 <div class="line"><span class="lineno">  296</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span>);</div>
 <div class="line"><span class="lineno">  297</span>    }</div>
-<div class="ttc" id="aclassoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node_html"><div class="ttname"><a href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html">operations_on_datastructures::inorder_traversal_of_bst::Node</a></div><div class="ttdoc">A Node structure representing a single node in BST.</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:56</div></div>
-<div class="ttc" id="ainorder__successor__of__bst_8cpp_html_a05fe8a029e155c43e4efa598d4d089d9"><div class="ttname"><a href="../../d4/d32/inorder__successor__of__bst_8cpp.html#a05fe8a029e155c43e4efa598d4d089d9">operations_on_datastructures::inorder_traversal_of_bst::makeBST</a></div><div class="ttdeci">Node * makeBST(Node *root, const std::vector&lt; int64_t &gt; &amp;data)</div><div class="ttdoc">This function is used in test cases to quickly create BST containing large data instead of hard codin...</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:155</div></div>
-<div class="ttc" id="ainorder__successor__of__bst_8cpp_html_a5d7266b934ca50c4f53e4f1e725d89a4"><div class="ttname"><a href="../../d4/d32/inorder__successor__of__bst_8cpp.html#a5d7266b934ca50c4f53e4f1e725d89a4">operations_on_datastructures::inorder_traversal_of_bst::printInorder</a></div><div class="ttdeci">void printInorder(Node *root)</div><div class="ttdoc">Prints the BST in inorder traversal using recursion.</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:136</div></div>
-<div class="ttc" id="ainorder__successor__of__bst_8cpp_html_a7b20eb99272665c1777949e26ab59589"><div class="ttname"><a href="../../d4/d32/inorder__successor__of__bst_8cpp.html#a7b20eb99272665c1777949e26ab59589">operations_on_datastructures::inorder_traversal_of_bst::deallocate</a></div><div class="ttdeci">void deallocate(Node *rootNode)</div><div class="ttdoc">This function clears the memory allocated to entire tree recursively. Its just for clean up the memor...</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:210</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d58/class_test_cases_ac2636e8b5b9e053374c45bfcf0603008_cgraph.svg" width="447" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node_html"><div class="ttname"><a href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html">operations_on_datastructures::inorder_traversal_of_bst::Node</a></div><div class="ttdoc">A Node structure representing a single node in BST.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00056">inorder_successor_of_bst.cpp:56</a></div></div>
+<div class="ttc" id="ainorder__successor__of__bst_8cpp_html_a05fe8a029e155c43e4efa598d4d089d9"><div class="ttname"><a href="../../d4/d32/inorder__successor__of__bst_8cpp.html#a05fe8a029e155c43e4efa598d4d089d9">operations_on_datastructures::inorder_traversal_of_bst::makeBST</a></div><div class="ttdeci">Node * makeBST(Node *root, const std::vector&lt; int64_t &gt; &amp;data)</div><div class="ttdoc">This function is used in test cases to quickly create BST containing large data instead of hard codin...</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00155">inorder_successor_of_bst.cpp:155</a></div></div>
+<div class="ttc" id="ainorder__successor__of__bst_8cpp_html_a5d7266b934ca50c4f53e4f1e725d89a4"><div class="ttname"><a href="../../d4/d32/inorder__successor__of__bst_8cpp.html#a5d7266b934ca50c4f53e4f1e725d89a4">operations_on_datastructures::inorder_traversal_of_bst::printInorder</a></div><div class="ttdeci">void printInorder(Node *root)</div><div class="ttdoc">Prints the BST in inorder traversal using recursion.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00136">inorder_successor_of_bst.cpp:136</a></div></div>
+<div class="ttc" id="ainorder__successor__of__bst_8cpp_html_a7b20eb99272665c1777949e26ab59589"><div class="ttname"><a href="../../d4/d32/inorder__successor__of__bst_8cpp.html#a7b20eb99272665c1777949e26ab59589">operations_on_datastructures::inorder_traversal_of_bst::deallocate</a></div><div class="ttdeci">void deallocate(Node *rootNode)</div><div class="ttdoc">This function clears the memory allocated to entire tree recursively. Its just for clean up the memor...</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00210">inorder_successor_of_bst.cpp:210</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac2636e8b5b9e053374c45bfcf0603008" name="ac2636e8b5b9e053374c45bfcf0603008"></a>
@@ -557,8 +552,10 @@ Here is the call graph for this function:</div>
 <p>&lt; Sublist to be searched</p>
 <p>&lt; Main list in which sublist is to be searched</p>
 <p>&lt; boolean, if sublist exist or not</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d45/sublist__search_8cpp_source.html#l00201">201</a> of file <a class="el" href="../../d5/d45/sublist__search_8cpp_source.html">sublist_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  201</span>                      {</div>
-<div class="line"><span class="lineno">  202</span>        <span class="keyword">const</span> <span class="keywordtype">bool</span> expectedOutput = <span class="keyword">true</span>;  <span class="comment">///&lt; Expected output of this test</span></div>
+<div class="line"><span class="lineno">  202</span>        <span class="keyword">const</span> <span class="keywordtype">bool</span> expectedOutput = <span class="keyword">true</span>;  </div>
 <div class="line"><span class="lineno">  203</span> </div>
 <div class="line"><span class="lineno">  204</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span></div>
 <div class="line"><span class="lineno">  205</span>            <span class="stringliteral">&quot;~&quot;</span>);</div>
@@ -566,22 +563,21 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  207</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Description:&quot;</span>);</div>
 <div class="line"><span class="lineno">  208</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;   EDGE CASE : Only contains one element&quot;</span>);</div>
 <div class="line"><span class="lineno">  209</span> </div>
-<div class="line"><span class="lineno">  210</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> sublistData = {</div>
-<div class="line"><span class="lineno">  211</span>            6};  <span class="comment">///&lt; Data to make linked list which will be the sublist</span></div>
-<div class="line"><span class="lineno">  212</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> mainlistData = {</div>
+<div class="line"><span class="lineno">  210</span>        std::vector&lt;uint64_t&gt; sublistData = {</div>
+<div class="line"><span class="lineno">  211</span>            6};  </div>
+<div class="line"><span class="lineno">  212</span>        std::vector&lt;uint64_t&gt; mainlistData = {</div>
 <div class="line"><span class="lineno">  213</span>            2, 5, 6, 7,</div>
-<div class="line"><span class="lineno">  214</span>            8};  <span class="comment">///&lt; Data to make linked list which will be the main list</span></div>
+<div class="line"><span class="lineno">  214</span>            8};  </div>
 <div class="line"><span class="lineno">  215</span> </div>
 <div class="line"><span class="lineno">  216</span>        <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *sublistLL =</div>
 <div class="line"><span class="lineno">  217</span>            <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(</div>
-<div class="line"><span class="lineno">  218</span>                sublistData);  <span class="comment">///&lt; Sublist to be searched</span></div>
+<div class="line"><span class="lineno">  218</span>                sublistData);  </div>
 <div class="line"><span class="lineno">  219</span>        <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *mainlistLL =</div>
 <div class="line"><span class="lineno">  220</span>            <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(</div>
-<div class="line"><span class="lineno">  221</span>                mainlistData);  <span class="comment">///&lt; Main list in which sublist is to be</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  222</span><span class="comment">                                ///&lt; searched</span></div>
-<div class="line"><span class="lineno">  223</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">  221</span>                mainlistData);  </div>
+<div class="line"><span class="lineno">  223</span> </div>
 <div class="line"><span class="lineno">  224</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/d84/word__break_8cpp.html#a1cc9dd6e6190d10a010fdcdfe7a21a81">exists</a> = <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a4faee403e2758aaab682ed6622ae218c">search::sublist_search::sublistSearch</a>(</div>
-<div class="line"><span class="lineno">  225</span>            sublistLL, mainlistLL);  <span class="comment">///&lt; boolean, if sublist exist or not</span></div>
+<div class="line"><span class="lineno">  225</span>            sublistLL, mainlistLL);  </div>
 <div class="line"><span class="lineno">  226</span> </div>
 <div class="line"><span class="lineno">  227</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Checking assert expression...&quot;</span>);</div>
 <div class="line"><span class="lineno">  228</span>        assert(exists == expectedOutput);</div>
@@ -594,16 +590,11 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  235</span>        deleteList(mainlistLL);</div>
 <div class="line"><span class="lineno">  236</span>        deleteList(sublistLL);</div>
 <div class="line"><span class="lineno">  237</span>    }</div>
-<div class="ttc" id="astructsearch_1_1sublist__search_1_1_node_html"><div class="ttname"><a href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a></div><div class="ttdoc">A Node structure representing a single link Node in a linked list.</div><div class="ttdef"><b>Definition</b> sublist_search.cpp:48</div></div>
-<div class="ttc" id="asublist__search_8cpp_html_a4faee403e2758aaab682ed6622ae218c"><div class="ttname"><a href="../../d5/d45/sublist__search_8cpp.html#a4faee403e2758aaab682ed6622ae218c">search::sublist_search::sublistSearch</a></div><div class="ttdeci">bool sublistSearch(Node *sublist, Node *mainList)</div><div class="ttdoc">Main searching function.</div><div class="ttdef"><b>Definition</b> sublist_search.cpp:115</div></div>
-<div class="ttc" id="asublist__search_8cpp_html_a70ca8d0267008e09cfa50b4e2ddfbe53"><div class="ttname"><a href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a></div><div class="ttdeci">Node * makeLinkedList(const std::vector&lt; uint64_t &gt; &amp;data)</div><div class="ttdoc">Give a vector of data, it adds each element of vector in the linked list and return the address of he...</div><div class="ttdef"><b>Definition</b> sublist_search.cpp:74</div></div>
-<div class="ttc" id="aword__break_8cpp_html_a1cc9dd6e6190d10a010fdcdfe7a21a81"><div class="ttname"><a href="../../d3/d84/word__break_8cpp.html#a1cc9dd6e6190d10a010fdcdfe7a21a81">dynamic_programming::word_break::exists</a></div><div class="ttdeci">bool exists(const std::string &amp;str, const std::unordered_set&lt; std::string &gt; &amp;strSet)</div><div class="ttdoc">Function that checks if the string passed in param is present in the the unordered_set passed.</div><div class="ttdef"><b>Definition</b> word_break.cpp:60</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d58/class_test_cases_ac2636e8b5b9e053374c45bfcf0603008_cgraph.svg" width="447" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="astructsearch_1_1sublist__search_1_1_node_html"><div class="ttname"><a href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a></div><div class="ttdoc">A Node structure representing a single link Node in a linked list.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d45/sublist__search_8cpp_source.html#l00048">sublist_search.cpp:48</a></div></div>
+<div class="ttc" id="asublist__search_8cpp_html_a4faee403e2758aaab682ed6622ae218c"><div class="ttname"><a href="../../d5/d45/sublist__search_8cpp.html#a4faee403e2758aaab682ed6622ae218c">search::sublist_search::sublistSearch</a></div><div class="ttdeci">bool sublistSearch(Node *sublist, Node *mainList)</div><div class="ttdoc">Main searching function.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d45/sublist__search_8cpp_source.html#l00115">sublist_search.cpp:115</a></div></div>
+<div class="ttc" id="asublist__search_8cpp_html_a70ca8d0267008e09cfa50b4e2ddfbe53"><div class="ttname"><a href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a></div><div class="ttdeci">Node * makeLinkedList(const std::vector&lt; uint64_t &gt; &amp;data)</div><div class="ttdoc">Give a vector of data, it adds each element of vector in the linked list and return the address of he...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d45/sublist__search_8cpp_source.html#l00074">sublist_search.cpp:74</a></div></div>
+<div class="ttc" id="aword__break_8cpp_html_a1cc9dd6e6190d10a010fdcdfe7a21a81"><div class="ttname"><a href="../../d3/d84/word__break_8cpp.html#a1cc9dd6e6190d10a010fdcdfe7a21a81">dynamic_programming::word_break::exists</a></div><div class="ttdeci">bool exists(const std::string &amp;str, const std::unordered_set&lt; std::string &gt; &amp;strSet)</div><div class="ttdoc">Function that checks if the string passed in param is present in the the unordered_set passed.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d84/word__break_8cpp_source.html#l00060">word_break.cpp:60</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac2636e8b5b9e053374c45bfcf0603008" name="ac2636e8b5b9e053374c45bfcf0603008"></a>
@@ -631,6 +622,8 @@ Here is the call graph for this function:</div>
 
 <p>A test case with single input. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html#l00214">214</a> of file <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html">random_pivot_quick_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  214</span>                      {</div>
 <div class="line"><span class="lineno">  215</span>        <span class="keyword">const</span> int64_t inputSize = 1;</div>
 <div class="line"><span class="lineno">  216</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span></div>
@@ -638,36 +631,27 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  218</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;This is test case 1 for Random Pivot Quick Sort Algorithm : &quot;</span>);</div>
 <div class="line"><span class="lineno">  219</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Description:&quot;</span>);</div>
 <div class="line"><span class="lineno">  220</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;   EDGE CASE : Only contains one element&quot;</span>);</div>
-<div class="line"><span class="lineno">  221</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int64_t, inputSize&gt;</a> unsorted_arr{2};</div>
+<div class="line"><span class="lineno">  221</span>        std::array&lt;int64_t, inputSize&gt; unsorted_arr{2};</div>
 <div class="line"><span class="lineno">  222</span> </div>
 <div class="line"><span class="lineno">  223</span>        int64_t start = 0;</div>
-<div class="line"><span class="lineno">  224</span>        int64_t <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a> = unsorted_arr.size() - 1;  <span class="comment">// length - 1</span></div>
+<div class="line"><span class="lineno">  224</span>        int64_t end = unsorted_arr.size() - 1;  <span class="comment">// length - 1</span></div>
 <div class="line"><span class="lineno">  225</span> </div>
 <div class="line"><span class="lineno">  226</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Running algorithm of data of length 50 ...&quot;</span>);</div>
-<div class="line"><span class="lineno">  227</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt;int64_t, unsorted_arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/size.html">size</a>()&gt; sorted_arr =</div>
+<div class="line"><span class="lineno">  227</span>        std::array&lt;int64_t, unsorted_arr.size()&gt; sorted_arr =</div>
 <div class="line"><span class="lineno">  228</span>            <a class="code hl_function" href="../../d1/daa/random__pivot__quick__sort_8cpp.html#a7d2e7465e7b5d54c2de6d5e9db1ea6a5">sorting::random_pivot_quick_sort::quickSortRP</a>(unsorted_arr, start,</div>
 <div class="line"><span class="lineno">  229</span>                                                          end);</div>
 <div class="line"><span class="lineno">  230</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Algorithm finished!&quot;</span>);</div>
 <div class="line"><span class="lineno">  231</span> </div>
 <div class="line"><span class="lineno">  232</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Checking assert expression...&quot;</span>);</div>
-<div class="line"><span class="lineno">  233</span>        assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(sorted_arr.begin(), sorted_arr.end()));</div>
+<div class="line"><span class="lineno">  233</span>        assert(std::is_sorted(sorted_arr.begin(), sorted_arr.end()));</div>
 <div class="line"><span class="lineno">  234</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Assertion check passed!&quot;</span>);</div>
 <div class="line"><span class="lineno">  235</span> </div>
 <div class="line"><span class="lineno">  236</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;[PASS] : TEST CASE 1 PASS!&quot;</span>);</div>
 <div class="line"><span class="lineno">  237</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span></div>
 <div class="line"><span class="lineno">  238</span>            <span class="stringliteral">&quot;~&quot;</span>);</div>
 <div class="line"><span class="lineno">  239</span>    }</div>
-<div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="ais_sorted_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></div><div class="ttdeci">T is_sorted(T... args)</div></div>
-<div class="ttc" id="arandom__pivot__quick__sort_8cpp_html_a7d2e7465e7b5d54c2de6d5e9db1ea6a5"><div class="ttname"><a href="../../d1/daa/random__pivot__quick__sort_8cpp.html#a7d2e7465e7b5d54c2de6d5e9db1ea6a5">sorting::random_pivot_quick_sort::quickSortRP</a></div><div class="ttdeci">std::array&lt; int64_t, size &gt; quickSortRP(std::array&lt; int64_t, size &gt; arr, int64_t start, int64_t end)</div><div class="ttdoc">Random pivot quick sort function. This function is the starting point of the algorithm.</div><div class="ttdef"><b>Definition</b> random_pivot_quick_sort.cpp:130</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array/size.html">std::array::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d58/class_test_cases_ac2636e8b5b9e053374c45bfcf0603008_cgraph.svg" width="447" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="arandom__pivot__quick__sort_8cpp_html_a7d2e7465e7b5d54c2de6d5e9db1ea6a5"><div class="ttname"><a href="../../d1/daa/random__pivot__quick__sort_8cpp.html#a7d2e7465e7b5d54c2de6d5e9db1ea6a5">sorting::random_pivot_quick_sort::quickSortRP</a></div><div class="ttdeci">std::array&lt; int64_t, size &gt; quickSortRP(std::array&lt; int64_t, size &gt; arr, int64_t start, int64_t end)</div><div class="ttdoc">Random pivot quick sort function. This function is the starting point of the algorithm.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html#l00130">random_pivot_quick_sort.cpp:130</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abae0148985f159b582a385cf399254e3" name="abae0148985f159b582a385cf399254e3"></a>
@@ -701,48 +685,45 @@ Here is the call graph for this function:</div>
 <p>&lt; Printing inorder to cross-verify.</p>
 <p>&lt; The inorder successor node for given data</p>
 <p>memory cleanup!</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00304">304</a> of file <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html">inorder_successor_of_bst.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  304</span>                      {</div>
-<div class="line"><span class="lineno">  305</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> expectedOutput = 21;  <span class="comment">///&lt; Expected output of this test</span></div>
+<div class="line"><span class="lineno">  305</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> expectedOutput = 21;  </div>
 <div class="line"><span class="lineno">  306</span> </div>
 <div class="line"><span class="lineno">  307</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span>);</div>
 <div class="line"><span class="lineno">  308</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;This is test case 2 : &quot;</span>);</div>
 <div class="line"><span class="lineno">  309</span> </div>
 <div class="line"><span class="lineno">  310</span>        <a class="code hl_class" href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html">operations_on_datastructures::inorder_traversal_of_bst::Node</a> *root =</div>
 <div class="line"><span class="lineno">  311</span>            <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  312</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> node_data{</div>
-<div class="line"><span class="lineno">  313</span>            20, 3, 5, 6, 2, 23, 45, 78, 21};  <span class="comment">///&lt; Data to make nodes in BST</span></div>
+<div class="line"><span class="lineno">  312</span>        std::vector&lt;int64_t&gt; node_data{</div>
+<div class="line"><span class="lineno">  313</span>            20, 3, 5, 6, 2, 23, 45, 78, 21};  </div>
 <div class="line"><span class="lineno">  314</span> </div>
 <div class="line"><span class="lineno">  315</span>        root = <a class="code hl_function" href="../../d4/d32/inorder__successor__of__bst_8cpp.html#a05fe8a029e155c43e4efa598d4d089d9">operations_on_datastructures::inorder_traversal_of_bst::makeBST</a>(</div>
 <div class="line"><span class="lineno">  316</span>            root,</div>
-<div class="line"><span class="lineno">  317</span>            node_data);  <span class="comment">///&lt; Adding nodes to BST</span></div>
+<div class="line"><span class="lineno">  317</span>            node_data);  </div>
 <div class="line"><span class="lineno">  318</span> </div>
-<div class="line"><span class="lineno">  319</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Inorder sequence is : &quot;</span>;</div>
+<div class="line"><span class="lineno">  319</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Inorder sequence is : &quot;</span>;</div>
 <div class="line"><span class="lineno">  320</span>        <a class="code hl_function" href="../../d4/d32/inorder__successor__of__bst_8cpp.html#a5d7266b934ca50c4f53e4f1e725d89a4">operations_on_datastructures::inorder_traversal_of_bst::printInorder</a>(</div>
-<div class="line"><span class="lineno">  321</span>            root);  <span class="comment">///&lt; Printing inorder to cross-verify.</span></div>
-<div class="line"><span class="lineno">  322</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  321</span>            root);  </div>
+<div class="line"><span class="lineno">  322</span>        std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  323</span> </div>
 <div class="line"><span class="lineno">  324</span>        <a class="code hl_class" href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html">operations_on_datastructures::inorder_traversal_of_bst::Node</a></div>
 <div class="line"><span class="lineno">  325</span>            *inorderSuccessor = operations_on_datastructures::</div>
 <div class="line"><span class="lineno">  326</span>                inorder_traversal_of_bst::getInorderSuccessor(</div>
-<div class="line"><span class="lineno">  327</span>                    root, 20);  <span class="comment">///&lt; The inorder successor node for given data</span></div>
+<div class="line"><span class="lineno">  327</span>                    root, 20);  </div>
 <div class="line"><span class="lineno">  328</span> </div>
 <div class="line"><span class="lineno">  329</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Checking assert expression...&quot;</span>);</div>
 <div class="line"><span class="lineno">  330</span>        assert(inorderSuccessor-&gt;<a class="code hl_variable" href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html#ae161f3e5ef33ade73429cab9291612e2">data</a> == expectedOutput);</div>
 <div class="line"><span class="lineno">  331</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Assertion check passed!&quot;</span>);</div>
 <div class="line"><span class="lineno">  332</span> </div>
 <div class="line"><span class="lineno">  333</span>        <a class="code hl_function" href="../../d4/d32/inorder__successor__of__bst_8cpp.html#a7b20eb99272665c1777949e26ab59589">operations_on_datastructures::inorder_traversal_of_bst::deallocate</a>(</div>
-<div class="line"><span class="lineno">  334</span>            root);  <span class="comment">/// memory cleanup!</span></div>
+<div class="line"><span class="lineno">  334</span>            root);  </div>
 <div class="line"><span class="lineno">  335</span> </div>
 <div class="line"><span class="lineno">  336</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;[PASS] : TEST CASE 2 PASS!&quot;</span>);</div>
 <div class="line"><span class="lineno">  337</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span>);</div>
 <div class="line"><span class="lineno">  338</span>    }</div>
-<div class="ttc" id="aclassoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node_html_ae161f3e5ef33ade73429cab9291612e2"><div class="ttname"><a href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html#ae161f3e5ef33ade73429cab9291612e2">operations_on_datastructures::inorder_traversal_of_bst::Node::data</a></div><div class="ttdeci">int64_t data</div><div class="ttdoc">The key/value of the node.</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:58</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d58/class_test_cases_abae0148985f159b582a385cf399254e3_cgraph.svg" width="447" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node_html_ae161f3e5ef33ade73429cab9291612e2"><div class="ttname"><a href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html#ae161f3e5ef33ade73429cab9291612e2">operations_on_datastructures::inorder_traversal_of_bst::Node::data</a></div><div class="ttdeci">int64_t data</div><div class="ttdoc">The key/value of the node.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00058">inorder_successor_of_bst.cpp:58</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abae0148985f159b582a385cf399254e3" name="abae0148985f159b582a385cf399254e3"></a>
@@ -778,8 +759,10 @@ Here is the call graph for this function:</div>
 <p>&lt; Sublist to be searched</p>
 <p>&lt; Main list in which sublist is to be searched</p>
 <p>&lt; boolean, if sublist exist or not</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d45/sublist__search_8cpp_source.html#l00244">244</a> of file <a class="el" href="../../d5/d45/sublist__search_8cpp_source.html">sublist_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  244</span>                      {</div>
-<div class="line"><span class="lineno">  245</span>        <span class="keyword">const</span> <span class="keywordtype">bool</span> expectedOutput = <span class="keyword">true</span>;  <span class="comment">/// Expected output of this test</span></div>
+<div class="line"><span class="lineno">  245</span>        <span class="keyword">const</span> <span class="keywordtype">bool</span> expectedOutput = <span class="keyword">true</span>;  </div>
 <div class="line"><span class="lineno">  246</span> </div>
 <div class="line"><span class="lineno">  247</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span></div>
 <div class="line"><span class="lineno">  248</span>            <span class="stringliteral">&quot;~&quot;</span>);</div>
@@ -787,33 +770,30 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  250</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Description:&quot;</span>);</div>
 <div class="line"><span class="lineno">  251</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;   contains main list of 100 elements and sublist of 20&quot;</span>);</div>
 <div class="line"><span class="lineno">  252</span> </div>
-<div class="line"><span class="lineno">  253</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> sublistData(</div>
-<div class="line"><span class="lineno">  254</span>            20);  <span class="comment">///&lt; Data to make linked list which will be the sublist</span></div>
-<div class="line"><span class="lineno">  255</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> mainlistData(</div>
-<div class="line"><span class="lineno">  256</span>            100);  <span class="comment">///&lt; Main list in which sublist is to be searched</span></div>
+<div class="line"><span class="lineno">  253</span>        std::vector&lt;uint64_t&gt; sublistData(</div>
+<div class="line"><span class="lineno">  254</span>            20);  </div>
+<div class="line"><span class="lineno">  255</span>        std::vector&lt;uint64_t&gt; mainlistData(</div>
+<div class="line"><span class="lineno">  256</span>            100);  </div>
 <div class="line"><span class="lineno">  257</span> </div>
-<div class="line"><span class="lineno">  258</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 100; i++) {<span class="comment"></span></div>
-<div class="line"><span class="lineno">  259</span><span class="comment">            /// Inserts 100 elements in main list</span></div>
-<div class="line"><span class="lineno">  260</span><span class="comment"></span>            mainlistData[i] = i + 1;</div>
+<div class="line"><span class="lineno">  258</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 100; i++) {</div>
+<div class="line"><span class="lineno">  260</span>            mainlistData[i] = i + 1;</div>
 <div class="line"><span class="lineno">  261</span>        }</div>
 <div class="line"><span class="lineno">  262</span> </div>
 <div class="line"><span class="lineno">  263</span>        <span class="keywordtype">int</span> temp = 0;</div>
-<div class="line"><span class="lineno">  264</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 45; i &lt; 65; i++) {<span class="comment"></span></div>
-<div class="line"><span class="lineno">  265</span><span class="comment">            /// Inserts 20 elements in sublist</span></div>
-<div class="line"><span class="lineno">  266</span><span class="comment"></span>            sublistData[temp] = i + 1;</div>
+<div class="line"><span class="lineno">  264</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 45; i &lt; 65; i++) {</div>
+<div class="line"><span class="lineno">  266</span>            sublistData[temp] = i + 1;</div>
 <div class="line"><span class="lineno">  267</span>            temp++;</div>
 <div class="line"><span class="lineno">  268</span>        }</div>
 <div class="line"><span class="lineno">  269</span> </div>
 <div class="line"><span class="lineno">  270</span>        <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *sublistLL =</div>
 <div class="line"><span class="lineno">  271</span>            <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(</div>
-<div class="line"><span class="lineno">  272</span>                sublistData);  <span class="comment">///&lt; Sublist to be searched</span></div>
+<div class="line"><span class="lineno">  272</span>                sublistData);  </div>
 <div class="line"><span class="lineno">  273</span>        <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *mainlistLL =</div>
 <div class="line"><span class="lineno">  274</span>            <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(</div>
-<div class="line"><span class="lineno">  275</span>                mainlistData);  <span class="comment">///&lt; Main list in which sublist is to be</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  276</span><span class="comment">                                ///&lt; searched</span></div>
-<div class="line"><span class="lineno">  277</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">  275</span>                mainlistData);  </div>
+<div class="line"><span class="lineno">  277</span> </div>
 <div class="line"><span class="lineno">  278</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/d84/word__break_8cpp.html#a1cc9dd6e6190d10a010fdcdfe7a21a81">exists</a> = <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a4faee403e2758aaab682ed6622ae218c">search::sublist_search::sublistSearch</a>(</div>
-<div class="line"><span class="lineno">  279</span>            sublistLL, mainlistLL);  <span class="comment">///&lt; boolean, if sublist exist or not</span></div>
+<div class="line"><span class="lineno">  279</span>            sublistLL, mainlistLL);  </div>
 <div class="line"><span class="lineno">  280</span> </div>
 <div class="line"><span class="lineno">  281</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Checking assert expression...&quot;</span>);</div>
 <div class="line"><span class="lineno">  282</span>        assert(exists == expectedOutput);</div>
@@ -826,12 +806,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  289</span>        deleteList(mainlistLL);</div>
 <div class="line"><span class="lineno">  290</span>        deleteList(sublistLL);</div>
 <div class="line"><span class="lineno">  291</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d58/class_test_cases_abae0148985f159b582a385cf399254e3_cgraph.svg" width="447" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abae0148985f159b582a385cf399254e3" name="abae0148985f159b582a385cf399254e3"></a>
@@ -859,6 +834,8 @@ Here is the call graph for this function:</div>
 
 <p>A test case with input array of length 500. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html#l00245">245</a> of file <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html">random_pivot_quick_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  245</span>                      {</div>
 <div class="line"><span class="lineno">  246</span>        <span class="keyword">const</span> int64_t inputSize = 500;</div>
 <div class="line"><span class="lineno">  247</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span></div>
@@ -866,33 +843,28 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  249</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Description:&quot;</span>);</div>
 <div class="line"><span class="lineno">  250</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;   BIG INPUT : Contains 500 elements and repeated elements&quot;</span>);</div>
 <div class="line"><span class="lineno">  251</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;This is test case 2 for Random Pivot Quick Sort Algorithm : &quot;</span>);</div>
-<div class="line"><span class="lineno">  252</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int64_t, inputSize&gt;</a> unsorted_arr =</div>
+<div class="line"><span class="lineno">  252</span>        std::array&lt;int64_t, inputSize&gt; unsorted_arr =</div>
 <div class="line"><span class="lineno">  253</span>            sorting::random_pivot_quick_sort::generateUnsortedArray&lt;inputSize&gt;(</div>
 <div class="line"><span class="lineno">  254</span>                1, 10000);</div>
 <div class="line"><span class="lineno">  255</span> </div>
 <div class="line"><span class="lineno">  256</span>        int64_t start = 0;</div>
-<div class="line"><span class="lineno">  257</span>        int64_t <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a> = unsorted_arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/size.html">size</a>() - 1;  <span class="comment">// length - 1</span></div>
+<div class="line"><span class="lineno">  257</span>        int64_t end = unsorted_arr.size() - 1;  <span class="comment">// length - 1</span></div>
 <div class="line"><span class="lineno">  258</span> </div>
 <div class="line"><span class="lineno">  259</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Running algorithm of data of length 500 ...&quot;</span>);</div>
-<div class="line"><span class="lineno">  260</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt;int64_t, unsorted_arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/size.html">size</a>()&gt; sorted_arr =</div>
+<div class="line"><span class="lineno">  260</span>        std::array&lt;int64_t, unsorted_arr.size()&gt; sorted_arr =</div>
 <div class="line"><span class="lineno">  261</span>            <a class="code hl_function" href="../../d1/daa/random__pivot__quick__sort_8cpp.html#a7d2e7465e7b5d54c2de6d5e9db1ea6a5">sorting::random_pivot_quick_sort::quickSortRP</a>(unsorted_arr, start,</div>
 <div class="line"><span class="lineno">  262</span>                                                          end);</div>
 <div class="line"><span class="lineno">  263</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Algorithm finished!&quot;</span>);</div>
 <div class="line"><span class="lineno">  264</span> </div>
 <div class="line"><span class="lineno">  265</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Checking assert expression...&quot;</span>);</div>
-<div class="line"><span class="lineno">  266</span>        assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(sorted_arr.begin(), sorted_arr.end()));</div>
+<div class="line"><span class="lineno">  266</span>        assert(std::is_sorted(sorted_arr.begin(), sorted_arr.end()));</div>
 <div class="line"><span class="lineno">  267</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Assertion check passed!&quot;</span>);</div>
 <div class="line"><span class="lineno">  268</span> </div>
 <div class="line"><span class="lineno">  269</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;[PASS] : TEST CASE 2 PASS!&quot;</span>);</div>
 <div class="line"><span class="lineno">  270</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span></div>
 <div class="line"><span class="lineno">  271</span>            <span class="stringliteral">&quot;~&quot;</span>);</div>
 <div class="line"><span class="lineno">  272</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d58/class_test_cases_abae0148985f159b582a385cf399254e3_cgraph.svg" width="447" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad9f95c09931625b41e3be1f88d1e28c5" name="ad9f95c09931625b41e3be1f88d1e28c5"></a>
@@ -926,48 +898,45 @@ Here is the call graph for this function:</div>
 <p>&lt; Printing inorder to cross-verify.</p>
 <p>&lt; The inorder successor node for given data</p>
 <p>memory cleanup!</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00345">345</a> of file <a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html">inorder_successor_of_bst.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  345</span>                      {</div>
-<div class="line"><span class="lineno">  346</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> expectedOutput = 110;  <span class="comment">///&lt; Expected output of this test</span></div>
+<div class="line"><span class="lineno">  346</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> expectedOutput = 110;  </div>
 <div class="line"><span class="lineno">  347</span> </div>
 <div class="line"><span class="lineno">  348</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span>);</div>
 <div class="line"><span class="lineno">  349</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;This is test case 3 : &quot;</span>);</div>
 <div class="line"><span class="lineno">  350</span> </div>
 <div class="line"><span class="lineno">  351</span>        <a class="code hl_class" href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html">operations_on_datastructures::inorder_traversal_of_bst::Node</a> *root =</div>
 <div class="line"><span class="lineno">  352</span>            <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  353</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> node_data{</div>
+<div class="line"><span class="lineno">  353</span>        std::vector&lt;int64_t&gt; node_data{</div>
 <div class="line"><span class="lineno">  354</span>            89,  67,  32, 56, 90, 123, 120,</div>
-<div class="line"><span class="lineno">  355</span>            110, 115, 6,  78, 7,  10};  <span class="comment">///&lt; Data to make nodes in BST</span></div>
+<div class="line"><span class="lineno">  355</span>            110, 115, 6,  78, 7,  10};  </div>
 <div class="line"><span class="lineno">  356</span> </div>
 <div class="line"><span class="lineno">  357</span>        root = <a class="code hl_function" href="../../d4/d32/inorder__successor__of__bst_8cpp.html#a05fe8a029e155c43e4efa598d4d089d9">operations_on_datastructures::inorder_traversal_of_bst::makeBST</a>(</div>
 <div class="line"><span class="lineno">  358</span>            root,</div>
-<div class="line"><span class="lineno">  359</span>            node_data);  <span class="comment">///&lt; Adding nodes to BST</span></div>
+<div class="line"><span class="lineno">  359</span>            node_data);  </div>
 <div class="line"><span class="lineno">  360</span> </div>
-<div class="line"><span class="lineno">  361</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Inorder sequence is : &quot;</span>;</div>
+<div class="line"><span class="lineno">  361</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Inorder sequence is : &quot;</span>;</div>
 <div class="line"><span class="lineno">  362</span>        <a class="code hl_function" href="../../d4/d32/inorder__successor__of__bst_8cpp.html#a5d7266b934ca50c4f53e4f1e725d89a4">operations_on_datastructures::inorder_traversal_of_bst::printInorder</a>(</div>
-<div class="line"><span class="lineno">  363</span>            root);  <span class="comment">///&lt; Printing inorder to cross-verify.</span></div>
-<div class="line"><span class="lineno">  364</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  363</span>            root);  </div>
+<div class="line"><span class="lineno">  364</span>        std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  365</span> </div>
 <div class="line"><span class="lineno">  366</span>        <a class="code hl_class" href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html">operations_on_datastructures::inorder_traversal_of_bst::Node</a></div>
 <div class="line"><span class="lineno">  367</span>            *inorderSuccessor = operations_on_datastructures::</div>
 <div class="line"><span class="lineno">  368</span>                inorder_traversal_of_bst::getInorderSuccessor(</div>
-<div class="line"><span class="lineno">  369</span>                    root, 90);  <span class="comment">///&lt; The inorder successor node for given data</span></div>
+<div class="line"><span class="lineno">  369</span>                    root, 90);  </div>
 <div class="line"><span class="lineno">  370</span> </div>
 <div class="line"><span class="lineno">  371</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Checking assert expression...&quot;</span>);</div>
 <div class="line"><span class="lineno">  372</span>        assert(inorderSuccessor-&gt;<a class="code hl_variable" href="../../d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html#ae161f3e5ef33ade73429cab9291612e2">data</a> == expectedOutput);</div>
 <div class="line"><span class="lineno">  373</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Assertion check passed!&quot;</span>);</div>
 <div class="line"><span class="lineno">  374</span> </div>
 <div class="line"><span class="lineno">  375</span>        <a class="code hl_function" href="../../d4/d32/inorder__successor__of__bst_8cpp.html#a7b20eb99272665c1777949e26ab59589">operations_on_datastructures::inorder_traversal_of_bst::deallocate</a>(</div>
-<div class="line"><span class="lineno">  376</span>            root);  <span class="comment">/// memory cleanup!</span></div>
+<div class="line"><span class="lineno">  376</span>            root);  </div>
 <div class="line"><span class="lineno">  377</span> </div>
 <div class="line"><span class="lineno">  378</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;[PASS] : TEST CASE 3 PASS!&quot;</span>);</div>
 <div class="line"><span class="lineno">  379</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span>);</div>
 <div class="line"><span class="lineno">  380</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d58/class_test_cases_ad9f95c09931625b41e3be1f88d1e28c5_cgraph.svg" width="447" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad9f95c09931625b41e3be1f88d1e28c5" name="ad9f95c09931625b41e3be1f88d1e28c5"></a>
@@ -1003,8 +972,10 @@ Here is the call graph for this function:</div>
 <p>&lt; Sublist to be searched</p>
 <p>&lt; Main list in which sublist is to be searched</p>
 <p>&lt; boolean, if sublist exist or not</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d45/sublist__search_8cpp_source.html#l00298">298</a> of file <a class="el" href="../../d5/d45/sublist__search_8cpp_source.html">sublist_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  298</span>                      {</div>
-<div class="line"><span class="lineno">  299</span>        <span class="keyword">const</span> <span class="keywordtype">bool</span> expectedOutput = <span class="keyword">false</span>;  <span class="comment">///&lt; Expected output of this test</span></div>
+<div class="line"><span class="lineno">  299</span>        <span class="keyword">const</span> <span class="keywordtype">bool</span> expectedOutput = <span class="keyword">false</span>;  </div>
 <div class="line"><span class="lineno">  300</span> </div>
 <div class="line"><span class="lineno">  301</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span></div>
 <div class="line"><span class="lineno">  302</span>            <span class="stringliteral">&quot;~&quot;</span>);</div>
@@ -1012,30 +983,27 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  304</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Description:&quot;</span>);</div>
 <div class="line"><span class="lineno">  305</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;   contains main list of 50 elements and sublist of 20&quot;</span>);</div>
 <div class="line"><span class="lineno">  306</span> </div>
-<div class="line"><span class="lineno">  307</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> sublistData(20);  <span class="comment">///&lt; Sublist to be searched</span></div>
-<div class="line"><span class="lineno">  308</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> mainlistData(</div>
-<div class="line"><span class="lineno">  309</span>            50);  <span class="comment">///&lt; Main list in which sublist is to be searched</span></div>
+<div class="line"><span class="lineno">  307</span>        std::vector&lt;uint64_t&gt; sublistData(20);  </div>
+<div class="line"><span class="lineno">  308</span>        std::vector&lt;uint64_t&gt; mainlistData(</div>
+<div class="line"><span class="lineno">  309</span>            50);  </div>
 <div class="line"><span class="lineno">  310</span> </div>
-<div class="line"><span class="lineno">  311</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 50; i++) {<span class="comment"></span></div>
-<div class="line"><span class="lineno">  312</span><span class="comment">            /// Inserts 100 elements in main list</span></div>
-<div class="line"><span class="lineno">  313</span><span class="comment"></span>            mainlistData.push_back(i + 1);</div>
+<div class="line"><span class="lineno">  311</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 50; i++) {</div>
+<div class="line"><span class="lineno">  313</span>            mainlistData.push_back(i + 1);</div>
 <div class="line"><span class="lineno">  314</span>        }</div>
 <div class="line"><span class="lineno">  315</span> </div>
-<div class="line"><span class="lineno">  316</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 45; i &lt; 65; i++) {<span class="comment"></span></div>
-<div class="line"><span class="lineno">  317</span><span class="comment">            /// Inserts 20 elements in sublist</span></div>
-<div class="line"><span class="lineno">  318</span><span class="comment"></span>            sublistData.push_back(i + 1);</div>
+<div class="line"><span class="lineno">  316</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 45; i &lt; 65; i++) {</div>
+<div class="line"><span class="lineno">  318</span>            sublistData.push_back(i + 1);</div>
 <div class="line"><span class="lineno">  319</span>        }</div>
 <div class="line"><span class="lineno">  320</span> </div>
 <div class="line"><span class="lineno">  321</span>        <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *sublistLL =</div>
 <div class="line"><span class="lineno">  322</span>            <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(</div>
-<div class="line"><span class="lineno">  323</span>                sublistData);  <span class="comment">///&lt; Sublist to be searched</span></div>
+<div class="line"><span class="lineno">  323</span>                sublistData);  </div>
 <div class="line"><span class="lineno">  324</span>        <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *mainlistLL =</div>
 <div class="line"><span class="lineno">  325</span>            <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(</div>
-<div class="line"><span class="lineno">  326</span>                mainlistData);  <span class="comment">///&lt; Main list in which sublist is to be</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  327</span><span class="comment">                                ///&lt; searched</span></div>
-<div class="line"><span class="lineno">  328</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">  326</span>                mainlistData);  </div>
+<div class="line"><span class="lineno">  328</span> </div>
 <div class="line"><span class="lineno">  329</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/d84/word__break_8cpp.html#a1cc9dd6e6190d10a010fdcdfe7a21a81">exists</a> = <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a4faee403e2758aaab682ed6622ae218c">search::sublist_search::sublistSearch</a>(</div>
-<div class="line"><span class="lineno">  330</span>            sublistLL, mainlistLL);  <span class="comment">///&lt; boolean, if sublist exist or not</span></div>
+<div class="line"><span class="lineno">  330</span>            sublistLL, mainlistLL);  </div>
 <div class="line"><span class="lineno">  331</span> </div>
 <div class="line"><span class="lineno">  332</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Checking assert expression...&quot;</span>);</div>
 <div class="line"><span class="lineno">  333</span>        assert(exists == expectedOutput);</div>
@@ -1048,12 +1016,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  340</span>        deleteList(mainlistLL);</div>
 <div class="line"><span class="lineno">  341</span>        deleteList(sublistLL);</div>
 <div class="line"><span class="lineno">  342</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d58/class_test_cases_ad9f95c09931625b41e3be1f88d1e28c5_cgraph.svg" width="447" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad9f95c09931625b41e3be1f88d1e28c5" name="ad9f95c09931625b41e3be1f88d1e28c5"></a>
@@ -1081,6 +1044,8 @@ Here is the call graph for this function:</div>
 
 <p>A test case with array of length 1000. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html#l00278">278</a> of file <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html">random_pivot_quick_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  278</span>                      {</div>
 <div class="line"><span class="lineno">  279</span>        <span class="keyword">const</span> int64_t inputSize = 1000;</div>
 <div class="line"><span class="lineno">  280</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span></div>
@@ -1088,39 +1053,34 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  282</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;This is test case 3 for Random Pivot Quick Sort Algorithm : &quot;</span>);</div>
 <div class="line"><span class="lineno">  283</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Description:&quot;</span>);</div>
 <div class="line"><span class="lineno">  284</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;   LARGE INPUT : Contains 1000 elements and repeated elements&quot;</span>);</div>
-<div class="line"><span class="lineno">  285</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int64_t, inputSize&gt;</a> unsorted_arr =</div>
+<div class="line"><span class="lineno">  285</span>        std::array&lt;int64_t, inputSize&gt; unsorted_arr =</div>
 <div class="line"><span class="lineno">  286</span>            sorting::random_pivot_quick_sort::generateUnsortedArray&lt;inputSize&gt;(</div>
 <div class="line"><span class="lineno">  287</span>                1, 10000);</div>
 <div class="line"><span class="lineno">  288</span> </div>
 <div class="line"><span class="lineno">  289</span>        int64_t start = 0;</div>
-<div class="line"><span class="lineno">  290</span>        int64_t <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a> = unsorted_arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/size.html">size</a>() - 1;  <span class="comment">// length - 1</span></div>
+<div class="line"><span class="lineno">  290</span>        int64_t end = unsorted_arr.size() - 1;  <span class="comment">// length - 1</span></div>
 <div class="line"><span class="lineno">  291</span> </div>
 <div class="line"><span class="lineno">  292</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Running algorithm...&quot;</span>);</div>
-<div class="line"><span class="lineno">  293</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt;int64_t, unsorted_arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/size.html">size</a>()&gt; sorted_arr =</div>
+<div class="line"><span class="lineno">  293</span>        std::array&lt;int64_t, unsorted_arr.size()&gt; sorted_arr =</div>
 <div class="line"><span class="lineno">  294</span>            <a class="code hl_function" href="../../d1/daa/random__pivot__quick__sort_8cpp.html#a7d2e7465e7b5d54c2de6d5e9db1ea6a5">sorting::random_pivot_quick_sort::quickSortRP</a>(unsorted_arr, start,</div>
 <div class="line"><span class="lineno">  295</span>                                                          end);</div>
 <div class="line"><span class="lineno">  296</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Algorithm finished!&quot;</span>);</div>
 <div class="line"><span class="lineno">  297</span> </div>
 <div class="line"><span class="lineno">  298</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Checking assert expression...&quot;</span>);</div>
-<div class="line"><span class="lineno">  299</span>        assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(sorted_arr.begin(), sorted_arr.end()));</div>
+<div class="line"><span class="lineno">  299</span>        assert(std::is_sorted(sorted_arr.begin(), sorted_arr.end()));</div>
 <div class="line"><span class="lineno">  300</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;Assertion check passed!&quot;</span>);</div>
 <div class="line"><span class="lineno">  301</span> </div>
 <div class="line"><span class="lineno">  302</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;[PASS] : TEST CASE 3 PASS!&quot;</span>);</div>
 <div class="line"><span class="lineno">  303</span>        <a class="code hl_function" href="#aa3aa3d5bf666f327ee8e2d11d397b06e">log</a>(<span class="stringliteral">&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span></div>
 <div class="line"><span class="lineno">  304</span>            <span class="stringliteral">&quot;~&quot;</span>);</div>
 <div class="line"><span class="lineno">  305</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d58/class_test_cases_ad9f95c09931625b41e3be1f88d1e28c5_cgraph.svg" width="447" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>operations_on_datastructures/<a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp.html">inorder_successor_of_bst.cpp</a></li>
-<li>search/<a class="el" href="../../d5/d45/sublist__search_8cpp.html">sublist_search.cpp</a></li>
-<li>sorting/<a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp.html">random_pivot_quick_sort.cpp</a></li>
+<li>operations_on_datastructures/<a class="el" href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html">inorder_successor_of_bst.cpp</a></li>
+<li>search/<a class="el" href="../../d5/d45/sublist__search_8cpp_source.html">sublist_search.cpp</a></li>
+<li>sorting/<a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html">random_pivot_quick_sort.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

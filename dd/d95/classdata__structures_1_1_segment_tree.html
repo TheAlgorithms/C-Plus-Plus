@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: data_structures::SegmentTree&lt; T &gt; Class Template Reference</title>
+<title>TheAlgorithms/C++: data_structures::SegmentTree&lt; T &gt; Class Template Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -144,17 +161,14 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a10ffa5fc03c66170f0bc2592b843baa3" id="r_a10ffa5fc03c66170f0bc2592b843baa3"><td class="memItemLeft" align="right" valign="top"><a id="a10ffa5fc03c66170f0bc2592b843baa3" name="a10ffa5fc03c66170f0bc2592b843baa3"></a>
-const T&#160;</td><td class="memItemRight" valign="bottom"><b>ID</b> = 0</td></tr>
-<tr class="memdesc:a10ffa5fc03c66170f0bc2592b843baa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comb(ID, x) = x. <br /></td></tr>
+<tr class="memitem:a10ffa5fc03c66170f0bc2592b843baa3" id="r_a10ffa5fc03c66170f0bc2592b843baa3"><td class="memItemLeft" align="right" valign="top">const T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10ffa5fc03c66170f0bc2592b843baa3">ID</a> = 0</td></tr>
+<tr class="memdesc:a10ffa5fc03c66170f0bc2592b843baa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comb(ID, x) = x.  <br /></td></tr>
 <tr class="separator:a10ffa5fc03c66170f0bc2592b843baa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a735d072a603f3abb7c03818440575258" id="r_a735d072a603f3abb7c03818440575258"><td class="memItemLeft" align="right" valign="top"><a id="a735d072a603f3abb7c03818440575258" name="a735d072a603f3abb7c03818440575258"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>t</b></td></tr>
-<tr class="memdesc:a735d072a603f3abb7c03818440575258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector to represent the tree. <br /></td></tr>
+<tr class="memitem:a735d072a603f3abb7c03818440575258" id="r_a735d072a603f3abb7c03818440575258"><td class="memItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a735d072a603f3abb7c03818440575258">t</a></td></tr>
+<tr class="memdesc:a735d072a603f3abb7c03818440575258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector to represent the tree.  <br /></td></tr>
 <tr class="separator:a735d072a603f3abb7c03818440575258"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a167fd91b68048e49e97859a8947690f3" id="r_a167fd91b68048e49e97859a8947690f3"><td class="memItemLeft" align="right" valign="top"><a id="a167fd91b68048e49e97859a8947690f3" name="a167fd91b68048e49e97859a8947690f3"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> = 0</td></tr>
-<tr class="memdesc:a167fd91b68048e49e97859a8947690f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of elements available for querying in the tree. <br /></td></tr>
+<tr class="memitem:a167fd91b68048e49e97859a8947690f3" id="r_a167fd91b68048e49e97859a8947690f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a167fd91b68048e49e97859a8947690f3">size</a> = 0</td></tr>
+<tr class="memdesc:a167fd91b68048e49e97859a8947690f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of elements available for querying in the tree.  <br /></td></tr>
 <tr class="separator:a167fd91b68048e49e97859a8947690f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -166,6 +180,8 @@ class data_structures::SegmentTree&lt; T &gt;</div><p>class representation of th
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dd1/segment__tree_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../de/dd1/segment__tree_8cpp_source.html">segment_tree.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a330724f79c5d1bdb745c29474ff3eac2" name="a330724f79c5d1bdb745c29474ff3eac2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a330724f79c5d1bdb745c29474ff3eac2">&#9670;&#160;</a></span>SegmentTree()</h2>
@@ -191,10 +207,12 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/dd1/segment__tree_8cpp_source.html#l00087">87</a> of file <a class="el" href="../../de/dd1/segment__tree_8cpp_source.html">segment_tree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   87</span>: <a class="code hl_variable" href="#a735d072a603f3abb7c03818440575258">t</a>(n * 4, <a class="code hl_variable" href="#a10ffa5fc03c66170f0bc2592b843baa3">ID</a>), <a class="code hl_variable" href="#a167fd91b68048e49e97859a8947690f3">size</a>(n) {}</div>
-<div class="ttc" id="aclassdata__structures_1_1_segment_tree_html_a10ffa5fc03c66170f0bc2592b843baa3"><div class="ttname"><a href="#a10ffa5fc03c66170f0bc2592b843baa3">data_structures::SegmentTree::ID</a></div><div class="ttdeci">const T ID</div><div class="ttdoc">Comb(ID, x) = x.</div><div class="ttdef"><b>Definition</b> segment_tree.cpp:32</div></div>
-<div class="ttc" id="aclassdata__structures_1_1_segment_tree_html_a167fd91b68048e49e97859a8947690f3"><div class="ttname"><a href="#a167fd91b68048e49e97859a8947690f3">data_structures::SegmentTree::size</a></div><div class="ttdeci">int size</div><div class="ttdoc">Number of elements available for querying in the tree.</div><div class="ttdef"><b>Definition</b> segment_tree.cpp:34</div></div>
-<div class="ttc" id="aclassdata__structures_1_1_segment_tree_html_a735d072a603f3abb7c03818440575258"><div class="ttname"><a href="#a735d072a603f3abb7c03818440575258">data_structures::SegmentTree::t</a></div><div class="ttdeci">std::vector&lt; T &gt; t</div><div class="ttdoc">Vector to represent the tree.</div><div class="ttdef"><b>Definition</b> segment_tree.cpp:33</div></div>
+<div class="ttc" id="aclassdata__structures_1_1_segment_tree_html_a10ffa5fc03c66170f0bc2592b843baa3"><div class="ttname"><a href="#a10ffa5fc03c66170f0bc2592b843baa3">data_structures::SegmentTree::ID</a></div><div class="ttdeci">const T ID</div><div class="ttdoc">Comb(ID, x) = x.</div><div class="ttdef"><b>Definition</b> <a href="../../de/dd1/segment__tree_8cpp_source.html#l00032">segment_tree.cpp:32</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1_segment_tree_html_a167fd91b68048e49e97859a8947690f3"><div class="ttname"><a href="#a167fd91b68048e49e97859a8947690f3">data_structures::SegmentTree::size</a></div><div class="ttdeci">int size</div><div class="ttdoc">Number of elements available for querying in the tree.</div><div class="ttdef"><b>Definition</b> <a href="../../de/dd1/segment__tree_8cpp_source.html#l00034">segment_tree.cpp:34</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1_segment_tree_html_a735d072a603f3abb7c03818440575258"><div class="ttname"><a href="#a735d072a603f3abb7c03818440575258">data_structures::SegmentTree::t</a></div><div class="ttdeci">std::vector&lt; T &gt; t</div><div class="ttdoc">Vector to represent the tree.</div><div class="ttdef"><b>Definition</b> <a href="../../de/dd1/segment__tree_8cpp_source.html#l00033">segment_tree.cpp:33</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -237,6 +255,8 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Some associative operation applied to these two values. In this case, I used addition </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dd1/segment__tree_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../de/dd1/segment__tree_8cpp_source.html">segment_tree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   42</span>                     {</div>
 <div class="line"><span class="lineno">   43</span>        <span class="keywordflow">return</span> x + y;</div>
 <div class="line"><span class="lineno">   44</span>    }</div>
@@ -281,10 +301,12 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the middle point between them </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dd1/segment__tree_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../de/dd1/segment__tree_8cpp_source.html">segment_tree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   51</span>                          {</div>
 <div class="line"><span class="lineno">   52</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a> + (r - <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a>) / 2;</div>
 <div class="line"><span class="lineno">   53</span>    }</div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a6d8df83a6f26ce24a75d3b358b7f5b8a"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">numerical_methods::simpson_method::l</a></div><div class="ttdeci">double l(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> composite_simpson_rule.cpp:119</div></div>
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a6d8df83a6f26ce24a75d3b358b7f5b8a"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">numerical_methods::simpson_method::l</a></div><div class="ttdeci">double l(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d18/composite__simpson__rule_8cpp_source.html#l00119">composite_simpson_rule.cpp:119</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -344,23 +366,18 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The comb operation applied to all values between tl and tr </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dd1/segment__tree_8cpp_source.html#l00080">80</a> of file <a class="el" href="../../de/dd1/segment__tree_8cpp_source.html">segment_tree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   80</span>                                                      {</div>
 <div class="line"><span class="lineno">   81</span>        <span class="keywordflow">if</span>(l == tl &amp;&amp; r == tr) <span class="keywordflow">return</span> <a class="code hl_variable" href="#a735d072a603f3abb7c03818440575258">t</a>[i];</div>
 <div class="line"><span class="lineno">   82</span>        <span class="keywordflow">if</span>(tl &gt; tr) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   83</span>        <span class="keywordtype">int</span> m = <a class="code hl_function" href="#a6d3beccc936af2377c8eeb17067fd141">mid</a>(l, r);</div>
-<div class="line"><span class="lineno">   84</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a8d22286b7be3dcbb701ac5c7d9c79841">comb</a>(<a class="code hl_function" href="#a8fecc48e8e3f6f5f6e728495a4282e52">range_comb</a>(i * 2, l, m, tl, <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(tr, m)), <a class="code hl_function" href="#a8fecc48e8e3f6f5f6e728495a4282e52">range_comb</a>(i * 2 + 1, m + 1, r, <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(tl, m + 1), tr));</div>
+<div class="line"><span class="lineno">   84</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a8d22286b7be3dcbb701ac5c7d9c79841">comb</a>(<a class="code hl_function" href="#a8fecc48e8e3f6f5f6e728495a4282e52">range_comb</a>(i * 2, l, m, tl, std::min(tr, m)), <a class="code hl_function" href="#a8fecc48e8e3f6f5f6e728495a4282e52">range_comb</a>(i * 2 + 1, m + 1, r, std::max(tl, m + 1), tr));</div>
 <div class="line"><span class="lineno">   85</span>    }</div>
-<div class="ttc" id="aclassdata__structures_1_1_segment_tree_html_a6d3beccc936af2377c8eeb17067fd141"><div class="ttname"><a href="#a6d3beccc936af2377c8eeb17067fd141">data_structures::SegmentTree::mid</a></div><div class="ttdeci">int mid(int l, int r)</div><div class="ttdoc">Gives the midpoint between two integers.</div><div class="ttdef"><b>Definition</b> segment_tree.cpp:51</div></div>
-<div class="ttc" id="aclassdata__structures_1_1_segment_tree_html_a8d22286b7be3dcbb701ac5c7d9c79841"><div class="ttname"><a href="#a8d22286b7be3dcbb701ac5c7d9c79841">data_structures::SegmentTree::comb</a></div><div class="ttdeci">T comb(T x, T y)</div><div class="ttdoc">Any associative function that combines x and y.</div><div class="ttdef"><b>Definition</b> segment_tree.cpp:42</div></div>
-<div class="ttc" id="aclassdata__structures_1_1_segment_tree_html_a8fecc48e8e3f6f5f6e728495a4282e52"><div class="ttname"><a href="#a8fecc48e8e3f6f5f6e728495a4282e52">data_structures::SegmentTree::range_comb</a></div><div class="ttdeci">T range_comb(int i, int l, int r, int tl, int tr)</div><div class="ttdoc">Helper method for range_comb method below.</div><div class="ttdef"><b>Definition</b> segment_tree.cpp:80</div></div>
-<div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
-<div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d95/classdata__structures_1_1_segment_tree_a8fecc48e8e3f6f5f6e728495a4282e52_cgraph.svg" width="402" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassdata__structures_1_1_segment_tree_html_a6d3beccc936af2377c8eeb17067fd141"><div class="ttname"><a href="#a6d3beccc936af2377c8eeb17067fd141">data_structures::SegmentTree::mid</a></div><div class="ttdeci">int mid(int l, int r)</div><div class="ttdoc">Gives the midpoint between two integers.</div><div class="ttdef"><b>Definition</b> <a href="../../de/dd1/segment__tree_8cpp_source.html#l00051">segment_tree.cpp:51</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1_segment_tree_html_a8d22286b7be3dcbb701ac5c7d9c79841"><div class="ttname"><a href="#a8d22286b7be3dcbb701ac5c7d9c79841">data_structures::SegmentTree::comb</a></div><div class="ttdeci">T comb(T x, T y)</div><div class="ttdoc">Any associative function that combines x and y.</div><div class="ttdef"><b>Definition</b> <a href="../../de/dd1/segment__tree_8cpp_source.html#l00042">segment_tree.cpp:42</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1_segment_tree_html_a8fecc48e8e3f6f5f6e728495a4282e52"><div class="ttname"><a href="#a8fecc48e8e3f6f5f6e728495a4282e52">data_structures::SegmentTree::range_comb</a></div><div class="ttdeci">T range_comb(int i, int l, int r, int tl, int tr)</div><div class="ttdoc">Helper method for range_comb method below.</div><div class="ttdef"><b>Definition</b> <a href="../../de/dd1/segment__tree_8cpp_source.html#l00080">segment_tree.cpp:80</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1c5331b509d9b55bedfadf979b30dd5b" name="a1c5331b509d9b55bedfadf979b30dd5b"></a>
@@ -401,15 +418,12 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The value of the comb operations </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dd1/segment__tree_8cpp_source.html#l00102">102</a> of file <a class="el" href="../../de/dd1/segment__tree_8cpp_source.html">segment_tree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  102</span>                               {</div>
 <div class="line"><span class="lineno">  103</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a8fecc48e8e3f6f5f6e728495a4282e52">range_comb</a>(1, 1, <a class="code hl_variable" href="#a167fd91b68048e49e97859a8947690f3">size</a>, l, r);</div>
 <div class="line"><span class="lineno">  104</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d95/classdata__structures_1_1_segment_tree_a1c5331b509d9b55bedfadf979b30dd5b_cgraph.svg" width="622" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2a04f1832c5ce86def50c3021b2ab6b1" name="a2a04f1832c5ce86def50c3021b2ab6b1"></a>
@@ -467,6 +481,8 @@ template&lt;class T &gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dd1/segment__tree_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../de/dd1/segment__tree_8cpp_source.html">segment_tree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   62</span>                                                     {</div>
 <div class="line"><span class="lineno">   63</span>        <span class="keywordflow">if</span>(l == r) <a class="code hl_variable" href="#a735d072a603f3abb7c03818440575258">t</a>[i] = val;</div>
 <div class="line"><span class="lineno">   64</span>        <span class="keywordflow">else</span> {</div>
@@ -476,13 +492,8 @@ template&lt;class T &gt; </div>
 <div class="line"><span class="lineno">   68</span>            <a class="code hl_variable" href="#a735d072a603f3abb7c03818440575258">t</a>[i] = <a class="code hl_function" href="#a8d22286b7be3dcbb701ac5c7d9c79841">comb</a>(<a class="code hl_variable" href="#a735d072a603f3abb7c03818440575258">t</a>[i * 2], <a class="code hl_variable" href="#a735d072a603f3abb7c03818440575258">t</a>[i * 2 + 1]);</div>
 <div class="line"><span class="lineno">   69</span>        }</div>
 <div class="line"><span class="lineno">   70</span>    }</div>
-<div class="ttc" id="aclassdata__structures_1_1_segment_tree_html_a2a04f1832c5ce86def50c3021b2ab6b1"><div class="ttname"><a href="#a2a04f1832c5ce86def50c3021b2ab6b1">data_structures::SegmentTree::update</a></div><div class="ttdeci">void update(int i, int l, int r, int pos, T val)</div><div class="ttdoc">Helper method for update method below.</div><div class="ttdef"><b>Definition</b> segment_tree.cpp:62</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d95/classdata__structures_1_1_segment_tree_a2a04f1832c5ce86def50c3021b2ab6b1_cgraph.svg" width="402" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassdata__structures_1_1_segment_tree_html_a2a04f1832c5ce86def50c3021b2ab6b1"><div class="ttname"><a href="#a2a04f1832c5ce86def50c3021b2ab6b1">data_structures::SegmentTree::update</a></div><div class="ttdeci">void update(int i, int l, int r, int pos, T val)</div><div class="ttdoc">Helper method for update method below.</div><div class="ttdef"><b>Definition</b> <a href="../../de/dd1/segment__tree_8cpp_source.html#l00062">segment_tree.cpp:62</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad0e78179ab979ae2bc4304bdc181db17" name="ad0e78179ab979ae2bc4304bdc181db17"></a>
@@ -522,19 +533,101 @@ template&lt;class T &gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dd1/segment__tree_8cpp_source.html#l00093">93</a> of file <a class="el" href="../../de/dd1/segment__tree_8cpp_source.html">segment_tree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   93</span>                                {</div>
 <div class="line"><span class="lineno">   94</span>        <a class="code hl_function" href="#a2a04f1832c5ce86def50c3021b2ab6b1">update</a>(1, 1, <a class="code hl_variable" href="#a167fd91b68048e49e97859a8947690f3">size</a>, pos, val);</div>
 <div class="line"><span class="lineno">   95</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d95/classdata__structures_1_1_segment_tree_ad0e78179ab979ae2bc4304bdc181db17_cgraph.svg" width="622" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div><!-- fragment -->
 </div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a10ffa5fc03c66170f0bc2592b843baa3" name="a10ffa5fc03c66170f0bc2592b843baa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10ffa5fc03c66170f0bc2592b843baa3">&#9670;&#160;</a></span>ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T <a class="el" href="../../dd/d95/classdata__structures_1_1_segment_tree.html">data_structures::SegmentTree</a>&lt; T &gt;::ID = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Comb(ID, x) = x. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dd1/segment__tree_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../de/dd1/segment__tree_8cpp_source.html">segment_tree.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a167fd91b68048e49e97859a8947690f3" name="a167fd91b68048e49e97859a8947690f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a167fd91b68048e49e97859a8947690f3">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../dd/d95/classdata__structures_1_1_segment_tree.html">data_structures::SegmentTree</a>&lt; T &gt;::size = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Number of elements available for querying in the tree. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dd1/segment__tree_8cpp_source.html#l00034">34</a> of file <a class="el" href="../../de/dd1/segment__tree_8cpp_source.html">segment_tree.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a735d072a603f3abb7c03818440575258" name="a735d072a603f3abb7c03818440575258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a735d072a603f3abb7c03818440575258">&#9670;&#160;</a></span>t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;T&gt; <a class="el" href="../../dd/d95/classdata__structures_1_1_segment_tree.html">data_structures::SegmentTree</a>&lt; T &gt;::t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vector to represent the tree. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dd1/segment__tree_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../de/dd1/segment__tree_8cpp_source.html">segment_tree.cpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>data_structures/<a class="el" href="../../de/dd1/segment__tree_8cpp.html">segment_tree.cpp</a></li>
+<li>data_structures/<a class="el" href="../../de/dd1/segment__tree_8cpp_source.html">segment_tree.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

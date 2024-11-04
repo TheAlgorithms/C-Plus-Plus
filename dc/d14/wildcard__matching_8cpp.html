@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: backtracking/wildcard_matching.cpp File Reference</title>
+<title>TheAlgorithms/C++: backtracking/wildcard_matching.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -106,8 +123,7 @@ $(function(){initNavTree('dc/d14/wildcard__matching_8cpp.html','../../'); initRe
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">wildcard_matching.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -123,7 +139,9 @@ Include dependency graph for wildcard_matching.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d92/wildcard__matching_8cpp__incl.svg" width="336" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../dc/d14/wildcard__matching_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc0/namespacebacktracking.html">backtracking</a></td></tr>
@@ -135,7 +153,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a182d0f016b34e40f86be8d6df05dc9ac" id="r_a182d0f016b34e40f86be8d6df05dc9ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a182d0f016b34e40f86be8d6df05dc9ac">backtracking::wildcard_matching::wildcard_matching</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> s, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> p, uint32_t pos1, uint32_t pos2)</td></tr>
+<tr class="memitem:a1f8c260cf0d7e22c666b85f1f71ee4a7" id="r_a1f8c260cf0d7e22c666b85f1f71ee4a7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; int64_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f8c260cf0d7e22c666b85f1f71ee4a7">backtracking::wildcard_matching::dpTable</a> (1000, std::vector&lt; int64_t &gt;(1000, -1))</td></tr>
+<tr class="memdesc:a1f8c260cf0d7e22c666b85f1f71ee4a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main function implements if pattern can be matched with given string.  <br /></td></tr>
+<tr class="separator:a1f8c260cf0d7e22c666b85f1f71ee4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a182d0f016b34e40f86be8d6df05dc9ac" id="r_a182d0f016b34e40f86be8d6df05dc9ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a182d0f016b34e40f86be8d6df05dc9ac">backtracking::wildcard_matching::wildcard_matching</a> (std::string s, std::string p, uint32_t pos1, uint32_t pos2)</td></tr>
 <tr class="separator:a182d0f016b34e40f86be8d6df05dc9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
 <tr class="memdesc:aa8dca7b867074164d5f45b0f3851269d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test implementations.  <br /></td></tr>
@@ -143,17 +164,46 @@ Functions</h2></td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <br /></td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a4a5b107f93db24e424b12899fa692c5a" id="r_a4a5b107f93db24e424b12899fa692c5a"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a5b107f93db24e424b12899fa692c5a">backtracking::wildcard_matching::dpTable</a> (1000, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt;(1000, -1))</td></tr>
-<tr class="memdesc:a4a5b107f93db24e424b12899fa692c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main function implements if pattern can be matched with given string.  <br /></td></tr>
-<tr class="separator:a4a5b107f93db24e424b12899fa692c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of the <a href="https://www.geeksforgeeks.org/wildcard-pattern-matching/" target="_blank">Wildcard Matching</a> problem. </p>
 <p>Given a matching string and a pattern, implement wildcard pattern matching with support for <code>?</code> and <code>*</code>. <code>?</code> matches any single character. <code>*</code> matches any sequence of characters (including the empty sequence). The matching should cover the entire matching string (not partial). The task is to determine if the pattern matches with the matching string </p><dl class="section author"><dt>Author</dt><dd><a href="https://github.com/Swastyy" target="_blank">Swastika Gupta</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../dc/d14/wildcard__matching_8cpp_source.html">wildcard_matching.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a1f8c260cf0d7e22c666b85f1f71ee4a7" name="a1f8c260cf0d7e22c666b85f1f71ee4a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f8c260cf0d7e22c666b85f1f71ee4a7">&#9670;&#160;</a></span>dpTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::vector&lt; int64_t &gt; &gt; backtracking::wildcard_matching::dpTable </td>
+          <td>(</td>
+          <td class="paramtype">1000</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; int64_t &gt;</td>          <td class="paramname"><span class="paramname"><em></em></span>1000, -1&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The main function implements if pattern can be matched with given string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>is the given matching string </td></tr>
+    <tr><td class="paramname">p</td><td>is the given pattern </td></tr>
+    <tr><td class="paramname">pos1</td><td>is the starting index </td></tr>
+    <tr><td class="paramname">pos2</td><td>is the last index </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if pattern matches with matching string otherwise 0 </dd></dl>
+
+</div>
+</div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
 
@@ -171,17 +221,14 @@ Variables</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d14/wildcard__matching_8cpp_source.html#l00153">153</a> of file <a class="el" href="../../dc/d14/wildcard__matching_8cpp_source.html">wildcard_matching.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  153</span>           {</div>
 <div class="line"><span class="lineno">  154</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
 <div class="line"><span class="lineno">  155</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  156</span>}</div>
-<div class="ttc" id="awildcard__matching_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> wildcard_matching.cpp:102</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d14/wildcard__matching_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="271" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="awildcard__matching_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d14/wildcard__matching_8cpp_source.html#l00102">wildcard_matching.cpp:102</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -209,61 +256,55 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d14/wildcard__matching_8cpp_source.html#l00102">102</a> of file <a class="el" href="../../dc/d14/wildcard__matching_8cpp_source.html">wildcard_matching.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  102</span>                   {</div>
 <div class="line"><span class="lineno">  103</span>    <span class="comment">// 1st test</span></div>
-<div class="line"><span class="lineno">  104</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;1st test &quot;</span>;</div>
-<div class="line"><span class="lineno">  105</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> matching1 = <span class="stringliteral">&quot;baaabab&quot;</span>;</div>
-<div class="line"><span class="lineno">  106</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> pattern1 = <span class="stringliteral">&quot;*****ba*****ab&quot;</span>;</div>
+<div class="line"><span class="lineno">  104</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;1st test &quot;</span>;</div>
+<div class="line"><span class="lineno">  105</span>    std::string matching1 = <span class="stringliteral">&quot;baaabab&quot;</span>;</div>
+<div class="line"><span class="lineno">  106</span>    std::string pattern1 = <span class="stringliteral">&quot;*****ba*****ab&quot;</span>;</div>
 <div class="line"><span class="lineno">  107</span>    assert(backtracking::wildcard_matching::wildcard_matching(matching1,</div>
 <div class="line"><span class="lineno">  108</span>                                                              pattern1, 0, 0) ==</div>
 <div class="line"><span class="lineno">  109</span>           1);  <span class="comment">// here the pattern matches with given string</span></div>
-<div class="line"><span class="lineno">  110</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  110</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  111</span> </div>
 <div class="line"><span class="lineno">  112</span>    <span class="comment">// 2nd test</span></div>
-<div class="line"><span class="lineno">  113</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;2nd test &quot;</span>;</div>
-<div class="line"><span class="lineno">  114</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> matching2 = <span class="stringliteral">&quot;baaabab&quot;</span>;</div>
-<div class="line"><span class="lineno">  115</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> pattern2 = <span class="stringliteral">&quot;ba*****ab&quot;</span>;</div>
+<div class="line"><span class="lineno">  113</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;2nd test &quot;</span>;</div>
+<div class="line"><span class="lineno">  114</span>    std::string matching2 = <span class="stringliteral">&quot;baaabab&quot;</span>;</div>
+<div class="line"><span class="lineno">  115</span>    std::string pattern2 = <span class="stringliteral">&quot;ba*****ab&quot;</span>;</div>
 <div class="line"><span class="lineno">  116</span>    assert(backtracking::wildcard_matching::wildcard_matching(matching2,</div>
 <div class="line"><span class="lineno">  117</span>                                                              pattern2, 0, 0) ==</div>
 <div class="line"><span class="lineno">  118</span>           1);  <span class="comment">// here the pattern matches with given string</span></div>
-<div class="line"><span class="lineno">  119</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  119</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  120</span> </div>
 <div class="line"><span class="lineno">  121</span>    <span class="comment">// 3rd test</span></div>
-<div class="line"><span class="lineno">  122</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;3rd test &quot;</span>;</div>
-<div class="line"><span class="lineno">  123</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> matching3 = <span class="stringliteral">&quot;baaabab&quot;</span>;</div>
-<div class="line"><span class="lineno">  124</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> pattern3 = <span class="stringliteral">&quot;ba*ab&quot;</span>;</div>
+<div class="line"><span class="lineno">  122</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;3rd test &quot;</span>;</div>
+<div class="line"><span class="lineno">  123</span>    std::string matching3 = <span class="stringliteral">&quot;baaabab&quot;</span>;</div>
+<div class="line"><span class="lineno">  124</span>    std::string pattern3 = <span class="stringliteral">&quot;ba*ab&quot;</span>;</div>
 <div class="line"><span class="lineno">  125</span>    assert(backtracking::wildcard_matching::wildcard_matching(matching3,</div>
 <div class="line"><span class="lineno">  126</span>                                                              pattern3, 0, 0) ==</div>
 <div class="line"><span class="lineno">  127</span>           1);  <span class="comment">// here the pattern matches with given string</span></div>
-<div class="line"><span class="lineno">  128</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  128</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  129</span> </div>
 <div class="line"><span class="lineno">  130</span>    <span class="comment">// 4th test</span></div>
-<div class="line"><span class="lineno">  131</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;4th test &quot;</span>;</div>
-<div class="line"><span class="lineno">  132</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> matching4 = <span class="stringliteral">&quot;baaabab&quot;</span>;</div>
-<div class="line"><span class="lineno">  133</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> pattern4 = <span class="stringliteral">&quot;a*ab&quot;</span>;</div>
+<div class="line"><span class="lineno">  131</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;4th test &quot;</span>;</div>
+<div class="line"><span class="lineno">  132</span>    std::string matching4 = <span class="stringliteral">&quot;baaabab&quot;</span>;</div>
+<div class="line"><span class="lineno">  133</span>    std::string pattern4 = <span class="stringliteral">&quot;a*ab&quot;</span>;</div>
 <div class="line"><span class="lineno">  134</span>    assert(backtracking::wildcard_matching::wildcard_matching(matching4,</div>
 <div class="line"><span class="lineno">  135</span>                                                              pattern4, 0, 0) ==</div>
 <div class="line"><span class="lineno">  136</span>           1);  <span class="comment">// here the pattern matches with given string</span></div>
-<div class="line"><span class="lineno">  137</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  137</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  138</span> </div>
 <div class="line"><span class="lineno">  139</span>    <span class="comment">// 5th test</span></div>
-<div class="line"><span class="lineno">  140</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;5th test &quot;</span>;</div>
-<div class="line"><span class="lineno">  141</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> matching5 = <span class="stringliteral">&quot;baaabab&quot;</span>;</div>
-<div class="line"><span class="lineno">  142</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> pattern5 = <span class="stringliteral">&quot;aa?ab&quot;</span>;</div>
+<div class="line"><span class="lineno">  140</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;5th test &quot;</span>;</div>
+<div class="line"><span class="lineno">  141</span>    std::string matching5 = <span class="stringliteral">&quot;baaabab&quot;</span>;</div>
+<div class="line"><span class="lineno">  142</span>    std::string pattern5 = <span class="stringliteral">&quot;aa?ab&quot;</span>;</div>
 <div class="line"><span class="lineno">  143</span>    assert(backtracking::wildcard_matching::wildcard_matching(matching5,</div>
 <div class="line"><span class="lineno">  144</span>                                                              pattern5, 0, 0) ==</div>
 <div class="line"><span class="lineno">  145</span>           1);  <span class="comment">// here the pattern matches with given string</span></div>
-<div class="line"><span class="lineno">  146</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  146</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  147</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d14/wildcard__matching_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="174" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a182d0f016b34e40f86be8d6df05dc9ac" name="a182d0f016b34e40f86be8d6df05dc9ac"></a>
@@ -275,12 +316,12 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool backtracking::wildcard_matching::wildcard_matching </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -294,9 +335,11 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d14/wildcard__matching_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../dc/d14/wildcard__matching_8cpp_source.html">wildcard_matching.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   41</span>                                      {</div>
-<div class="line"><span class="lineno">   42</span>    uint32_t n = s.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>();</div>
-<div class="line"><span class="lineno">   43</span>    uint32_t m = p.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>();</div>
+<div class="line"><span class="lineno">   42</span>    uint32_t n = s.length();</div>
+<div class="line"><span class="lineno">   43</span>    uint32_t m = p.length();</div>
 <div class="line"><span class="lineno">   44</span>    <span class="comment">// matching is successfull if both strings are done</span></div>
 <div class="line"><span class="lineno">   45</span>    <span class="keywordflow">if</span> (pos1 == n &amp;&amp; pos2 == m) {</div>
 <div class="line"><span class="lineno">   46</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -320,71 +363,36 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   64</span> </div>
 <div class="line"><span class="lineno">   65</span>    <span class="comment">// if already calculted for these positions</span></div>
 <div class="line"><span class="lineno">   66</span>    <span class="keywordflow">if</span> (dpTable[pos1][pos2] != -1) {</div>
-<div class="line"><span class="lineno">   67</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a4a5b107f93db24e424b12899fa692c5a">dpTable</a>[pos1][pos2];</div>
+<div class="line"><span class="lineno">   67</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a1f8c260cf0d7e22c666b85f1f71ee4a7">dpTable</a>[pos1][pos2];</div>
 <div class="line"><span class="lineno">   68</span>    }</div>
 <div class="line"><span class="lineno">   69</span> </div>
 <div class="line"><span class="lineno">   70</span>    <span class="comment">// if the characters are same just go ahead in both the string</span></div>
 <div class="line"><span class="lineno">   71</span>    <span class="keywordflow">if</span> (s[pos1] == p[pos2]) {</div>
-<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a4a5b107f93db24e424b12899fa692c5a">dpTable</a>[pos1][pos2] =</div>
+<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a1f8c260cf0d7e22c666b85f1f71ee4a7">dpTable</a>[pos1][pos2] =</div>
 <div class="line"><span class="lineno">   73</span>                   <a class="code hl_namespace" href="../../db/d03/namespacewildcard__matching.html">wildcard_matching</a>(s, p, pos1 + 1, pos2 + 1);</div>
 <div class="line"><span class="lineno">   74</span>    }</div>
 <div class="line"><span class="lineno">   75</span> </div>
 <div class="line"><span class="lineno">   76</span>    <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">   77</span>        <span class="comment">// can only single character</span></div>
 <div class="line"><span class="lineno">   78</span>        <span class="keywordflow">if</span> (p[pos2] == <span class="charliteral">&#39;?&#39;</span>) {</div>
-<div class="line"><span class="lineno">   79</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="#a4a5b107f93db24e424b12899fa692c5a">dpTable</a>[pos1][pos2] =</div>
+<div class="line"><span class="lineno">   79</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="#a1f8c260cf0d7e22c666b85f1f71ee4a7">dpTable</a>[pos1][pos2] =</div>
 <div class="line"><span class="lineno">   80</span>                       <a class="code hl_namespace" href="../../db/d03/namespacewildcard__matching.html">wildcard_matching</a>(s, p, pos1 + 1, pos2 + 1);</div>
 <div class="line"><span class="lineno">   81</span>        }</div>
 <div class="line"><span class="lineno">   82</span>        <span class="comment">// have choice either to match one or more charcters</span></div>
 <div class="line"><span class="lineno">   83</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (p[pos2] == <span class="charliteral">&#39;*&#39;</span>) {</div>
-<div class="line"><span class="lineno">   84</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="#a4a5b107f93db24e424b12899fa692c5a">dpTable</a>[pos1][pos2] =</div>
+<div class="line"><span class="lineno">   84</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="#a1f8c260cf0d7e22c666b85f1f71ee4a7">dpTable</a>[pos1][pos2] =</div>
 <div class="line"><span class="lineno">   85</span>                       <a class="code hl_namespace" href="../../db/d03/namespacewildcard__matching.html">wildcard_matching</a>(s, p, pos1, pos2 + 1) ||</div>
 <div class="line"><span class="lineno">   86</span>                       <a class="code hl_namespace" href="../../db/d03/namespacewildcard__matching.html">wildcard_matching</a>(s, p, pos1 + 1, pos2);</div>
 <div class="line"><span class="lineno">   87</span>        }</div>
 <div class="line"><span class="lineno">   88</span>        <span class="comment">// not possible to match</span></div>
 <div class="line"><span class="lineno">   89</span>        <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   90</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="#a4a5b107f93db24e424b12899fa692c5a">dpTable</a>[pos1][pos2] = 0;</div>
+<div class="line"><span class="lineno">   90</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="#a1f8c260cf0d7e22c666b85f1f71ee4a7">dpTable</a>[pos1][pos2] = 0;</div>
 <div class="line"><span class="lineno">   91</span>        }</div>
 <div class="line"><span class="lineno">   92</span>    }</div>
 <div class="line"><span class="lineno">   93</span>}</div>
 <div class="ttc" id="anamespacewildcard__matching_html"><div class="ttname"><a href="../../db/d03/namespacewildcard__matching.html">wildcard_matching</a></div><div class="ttdoc">Functions for the Wildcard Matching problem.</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">std::string::length</a></div><div class="ttdeci">T length(T... args)</div></div>
-<div class="ttc" id="awildcard__matching_8cpp_html_a4a5b107f93db24e424b12899fa692c5a"><div class="ttname"><a href="#a4a5b107f93db24e424b12899fa692c5a">backtracking::wildcard_matching::dpTable</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; int64_t &gt; &gt; dpTable(1000, std::vector&lt; int64_t &gt;(1000, -1))</div><div class="ttdoc">The main function implements if pattern can be matched with given string.</div></div>
+<div class="ttc" id="awildcard__matching_8cpp_html_a1f8c260cf0d7e22c666b85f1f71ee4a7"><div class="ttname"><a href="#a1f8c260cf0d7e22c666b85f1f71ee4a7">backtracking::wildcard_matching::dpTable</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; int64_t &gt; &gt; dpTable(1000, std::vector&lt; int64_t &gt;(1000, -1))</div><div class="ttdoc">The main function implements if pattern can be matched with given string.</div></div>
 </div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a4a5b107f93db24e424b12899fa692c5a" name="a4a5b107f93db24e424b12899fa692c5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a5b107f93db24e424b12899fa692c5a">&#9670;&#160;</a></span>dpTable</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt; &gt; backtracking::wildcard_matching::dpTable(1000, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt;(1000, -1)) </td>
-          <td>(</td>
-          <td class="paramtype">1000</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt;</td>          <td class="paramname"><span class="paramname"><em></em></span>1000, -1&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The main function implements if pattern can be matched with given string. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">s</td><td>is the given matching string </td></tr>
-    <tr><td class="paramname">p</td><td>is the given pattern </td></tr>
-    <tr><td class="paramname">pos1</td><td>is the starting index </td></tr>
-    <tr><td class="paramname">pos2</td><td>is the last index </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>1 if pattern matches with matching string otherwise 0 </dd></dl>
-
 </div>
 </div>
 </div><!-- contents -->

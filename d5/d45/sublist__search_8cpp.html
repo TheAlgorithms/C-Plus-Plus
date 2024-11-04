@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: search/sublist_search.cpp File Reference</title>
+<title>TheAlgorithms/C++: search/sublist_search.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -123,7 +140,9 @@ Include dependency graph for sublist_search.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d92/sublist__search_8cpp__incl.svg" width="336" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d5/d45/sublist__search_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a></td></tr>
@@ -147,7 +166,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ad1028bc215281d62e344af99da57fab2" id="r_ad1028bc215281d62e344af99da57fab2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1028bc215281d62e344af99da57fab2">search::sublist_search::printLinkedList</a> (<a class="el" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">Node</a> *start)</td></tr>
 <tr class="memdesc:ad1028bc215281d62e344af99da57fab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple function to print the linked list.  <br /></td></tr>
 <tr class="separator:ad1028bc215281d62e344af99da57fab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70ca8d0267008e09cfa50b4e2ddfbe53" id="r_a70ca8d0267008e09cfa50b4e2ddfbe53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint64_t &gt; &amp;<a class="el" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>)</td></tr>
+<tr class="memitem:a70ca8d0267008e09cfa50b4e2ddfbe53" id="r_a70ca8d0267008e09cfa50b4e2ddfbe53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a> (const std::vector&lt; uint64_t &gt; &amp;<a class="el" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>)</td></tr>
 <tr class="memdesc:a70ca8d0267008e09cfa50b4e2ddfbe53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Give a vector of data, it adds each element of vector in the linked list and return the address of head pointer.  <br /></td></tr>
 <tr class="separator:a70ca8d0267008e09cfa50b4e2ddfbe53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac16d28231a07fadec189f80937ac10d" id="r_aac16d28231a07fadec189f80937ac10d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac16d28231a07fadec189f80937ac10d">search::sublist_search::deleteList</a> (<a class="el" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">Node</a> *const root)</td></tr>
@@ -178,6 +197,8 @@ Working</h3>
 <li>If the two values don't match, it goes to the next element of the second list. It does this until the two values match.</li>
 </ul>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/foo290" target="_blank">Nitin Sharma</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d5/d45/sublist__search_8cpp_source.html">sublist_search.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="aac16d28231a07fadec189f80937ac10d" name="aac16d28231a07fadec189f80937ac10d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aac16d28231a07fadec189f80937ac10d">&#9670;&#160;</a></span>deleteList()</h2>
@@ -193,6 +214,8 @@ Working</h3>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d45/sublist__search_8cpp_source.html#l00101">101</a> of file <a class="el" href="../../d5/d45/sublist__search_8cpp_source.html">sublist_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  101</span>                                  {</div>
 <div class="line"><span class="lineno">  102</span>    <span class="keywordflow">if</span> (root != NULL) {</div>
 <div class="line"><span class="lineno">  103</span>        deleteList(root-&gt;next);</div>
@@ -234,56 +257,49 @@ Working</h3>
 <p>&lt; Sublist to be searched</p>
 <p>&lt; Main list in which sublist is to be searched</p>
 <p>&lt; boolean to check if the sublist exists or not</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d45/sublist__search_8cpp_source.html#l00360">360</a> of file <a class="el" href="../../d5/d45/sublist__search_8cpp_source.html">sublist_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  360</span>                                 {</div>
 <div class="line"><span class="lineno">  361</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
 <div class="line"><span class="lineno">  362</span> </div>
-<div class="line"><span class="lineno">  363</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> mainlistData = {</div>
-<div class="line"><span class="lineno">  364</span>        2, 5, 6, 7, 8};  <span class="comment">///&lt; Main list in which sublist is to be searched</span></div>
-<div class="line"><span class="lineno">  365</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> sublistData = {6, 8};  <span class="comment">///&lt; Sublist to be searched</span></div>
+<div class="line"><span class="lineno">  363</span>    std::vector&lt;uint64_t&gt; mainlistData = {</div>
+<div class="line"><span class="lineno">  364</span>        2, 5, 6, 7, 8};  </div>
+<div class="line"><span class="lineno">  365</span>    std::vector&lt;uint64_t&gt; sublistData = {6, 8};  </div>
 <div class="line"><span class="lineno">  366</span> </div>
 <div class="line"><span class="lineno">  367</span>    <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *mainlistLL =</div>
 <div class="line"><span class="lineno">  368</span>        <a class="code hl_function" href="#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(mainlistData);</div>
 <div class="line"><span class="lineno">  369</span>    <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *sublistLL =</div>
 <div class="line"><span class="lineno">  370</span>        <a class="code hl_function" href="#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(</div>
-<div class="line"><span class="lineno">  371</span>            sublistData);  <span class="comment">///&lt; Main list in which sublist is to be</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  372</span><span class="comment">                           ///&lt; searched</span></div>
-<div class="line"><span class="lineno">  373</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">  371</span>            sublistData);  </div>
+<div class="line"><span class="lineno">  373</span> </div>
 <div class="line"><span class="lineno">  374</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/d84/word__break_8cpp.html#a1cc9dd6e6190d10a010fdcdfe7a21a81">exists</a> = <a class="code hl_function" href="#a4faee403e2758aaab682ed6622ae218c">search::sublist_search::sublistSearch</a>(</div>
 <div class="line"><span class="lineno">  375</span>        sublistLL,</div>
-<div class="line"><span class="lineno">  376</span>        mainlistLL);  <span class="comment">///&lt; boolean to check if the sublist exists or not</span></div>
+<div class="line"><span class="lineno">  376</span>        mainlistLL);  </div>
 <div class="line"><span class="lineno">  377</span> </div>
-<div class="line"><span class="lineno">  378</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sublist: &quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  378</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Sublist: &quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  379</span>    <a class="code hl_function" href="#ad1028bc215281d62e344af99da57fab2">search::sublist_search::printLinkedList</a>(sublistLL);</div>
 <div class="line"><span class="lineno">  380</span> </div>
-<div class="line"><span class="lineno">  381</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Main list: &quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  381</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Main list: &quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  382</span>    <a class="code hl_function" href="#ad1028bc215281d62e344af99da57fab2">search::sublist_search::printLinkedList</a>(mainlistLL);</div>
-<div class="line"><span class="lineno">  383</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  383</span>    std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  384</span> </div>
 <div class="line"><span class="lineno">  385</span>    <span class="keywordflow">if</span> (exists) {</div>
-<div class="line"><span class="lineno">  386</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;[TRUE] - sublist found in main list\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  386</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;[TRUE] - sublist found in main list\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  387</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  388</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;[FALSE] - sublist NOT found in main list\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  388</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;[FALSE] - sublist NOT found in main list\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  389</span>    }</div>
 <div class="line"><span class="lineno">  390</span> </div>
 <div class="line"><span class="lineno">  391</span>    deleteList(mainlistLL);</div>
 <div class="line"><span class="lineno">  392</span>    deleteList(sublistLL);</div>
 <div class="line"><span class="lineno">  393</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  394</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="astructsearch_1_1sublist__search_1_1_node_html"><div class="ttname"><a href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a></div><div class="ttdoc">A Node structure representing a single link Node in a linked list.</div><div class="ttdef"><b>Definition</b> sublist_search.cpp:48</div></div>
-<div class="ttc" id="asublist__search_8cpp_html_a4faee403e2758aaab682ed6622ae218c"><div class="ttname"><a href="#a4faee403e2758aaab682ed6622ae218c">search::sublist_search::sublistSearch</a></div><div class="ttdeci">bool sublistSearch(Node *sublist, Node *mainList)</div><div class="ttdoc">Main searching function.</div><div class="ttdef"><b>Definition</b> sublist_search.cpp:115</div></div>
-<div class="ttc" id="asublist__search_8cpp_html_a70ca8d0267008e09cfa50b4e2ddfbe53"><div class="ttname"><a href="#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a></div><div class="ttdeci">Node * makeLinkedList(const std::vector&lt; uint64_t &gt; &amp;data)</div><div class="ttdoc">Give a vector of data, it adds each element of vector in the linked list and return the address of he...</div><div class="ttdef"><b>Definition</b> sublist_search.cpp:74</div></div>
-<div class="ttc" id="asublist__search_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> sublist_search.cpp:349</div></div>
-<div class="ttc" id="asublist__search_8cpp_html_ad1028bc215281d62e344af99da57fab2"><div class="ttname"><a href="#ad1028bc215281d62e344af99da57fab2">search::sublist_search::printLinkedList</a></div><div class="ttdeci">void printLinkedList(Node *start)</div><div class="ttdoc">A simple function to print the linked list.</div><div class="ttdef"><b>Definition</b> sublist_search.cpp:58</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-<div class="ttc" id="aword__break_8cpp_html_a1cc9dd6e6190d10a010fdcdfe7a21a81"><div class="ttname"><a href="../../d3/d84/word__break_8cpp.html#a1cc9dd6e6190d10a010fdcdfe7a21a81">dynamic_programming::word_break::exists</a></div><div class="ttdeci">bool exists(const std::string &amp;str, const std::unordered_set&lt; std::string &gt; &amp;strSet)</div><div class="ttdoc">Function that checks if the string passed in param is present in the the unordered_set passed.</div><div class="ttdef"><b>Definition</b> word_break.cpp:60</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/d45/sublist__search_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph.svg" width="100%" height="508"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="astructsearch_1_1sublist__search_1_1_node_html"><div class="ttname"><a href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a></div><div class="ttdoc">A Node structure representing a single link Node in a linked list.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d45/sublist__search_8cpp_source.html#l00048">sublist_search.cpp:48</a></div></div>
+<div class="ttc" id="asublist__search_8cpp_html_a4faee403e2758aaab682ed6622ae218c"><div class="ttname"><a href="#a4faee403e2758aaab682ed6622ae218c">search::sublist_search::sublistSearch</a></div><div class="ttdeci">bool sublistSearch(Node *sublist, Node *mainList)</div><div class="ttdoc">Main searching function.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d45/sublist__search_8cpp_source.html#l00115">sublist_search.cpp:115</a></div></div>
+<div class="ttc" id="asublist__search_8cpp_html_a70ca8d0267008e09cfa50b4e2ddfbe53"><div class="ttname"><a href="#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a></div><div class="ttdeci">Node * makeLinkedList(const std::vector&lt; uint64_t &gt; &amp;data)</div><div class="ttdoc">Give a vector of data, it adds each element of vector in the linked list and return the address of he...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d45/sublist__search_8cpp_source.html#l00074">sublist_search.cpp:74</a></div></div>
+<div class="ttc" id="asublist__search_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d45/sublist__search_8cpp_source.html#l00349">sublist_search.cpp:349</a></div></div>
+<div class="ttc" id="asublist__search_8cpp_html_ad1028bc215281d62e344af99da57fab2"><div class="ttname"><a href="#ad1028bc215281d62e344af99da57fab2">search::sublist_search::printLinkedList</a></div><div class="ttdeci">void printLinkedList(Node *start)</div><div class="ttdoc">A simple function to print the linked list.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d45/sublist__search_8cpp_source.html#l00058">sublist_search.cpp:58</a></div></div>
+<div class="ttc" id="aword__break_8cpp_html_a1cc9dd6e6190d10a010fdcdfe7a21a81"><div class="ttname"><a href="../../d3/d84/word__break_8cpp.html#a1cc9dd6e6190d10a010fdcdfe7a21a81">dynamic_programming::word_break::exists</a></div><div class="ttdeci">bool exists(const std::string &amp;str, const std::unordered_set&lt; std::string &gt; &amp;strSet)</div><div class="ttdoc">Function that checks if the string passed in param is present in the the unordered_set passed.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d84/word__break_8cpp_source.html#l00060">word_break.cpp:60</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a70ca8d0267008e09cfa50b4e2ddfbe53" name="a70ca8d0267008e09cfa50b4e2ddfbe53"></a>
@@ -295,7 +311,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname"><a class="el" href="../../db/d8b/struct_node.html">Node</a> * search::sublist_search::makeLinkedList </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint64_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td class="paramtype">const std::vector&lt; uint64_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -310,10 +326,10 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Node* A head pointer to the linked list. </dd></dl>
 <p>This is used in test cases for rapidly creating linked list with 100+ elements, instead of hard-coding 100 elements in test cases.</p>
-<div class="fragment"><div class="line"><span class="lineno">   74</span>                                                      {<span class="comment"></span></div>
-<div class="line"><span class="lineno">   75</span><span class="comment">    /// This is used in test cases for rapidly creating linked list with 100+</span></div>
-<div class="line"><span class="lineno">   76</span><span class="comment">    /// elements, instead of hard-coding 100 elements in test cases.</span></div>
-<div class="line"><span class="lineno">   77</span><span class="comment"></span>    <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *head = <span class="keyword">nullptr</span>;</div>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d45/sublist__search_8cpp_source.html#l00074">74</a> of file <a class="el" href="../../d5/d45/sublist__search_8cpp_source.html">sublist_search.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   74</span>                                                      {</div>
+<div class="line"><span class="lineno">   77</span>    <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *head = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">   78</span>    <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *tail = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">   79</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i : <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>) {</div>
 <div class="line"><span class="lineno">   80</span>        <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *<a class="code hl_class" href="../../d5/da1/structnode.html">node</a> = <span class="keyword">new</span> <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a>;</div>
@@ -329,16 +345,11 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   90</span>    }</div>
 <div class="line"><span class="lineno">   91</span>    <span class="keywordflow">return</span> head;</div>
 <div class="line"><span class="lineno">   92</span>}</div>
-<div class="ttc" id="aavltree_8cpp_html_a74f0cf18a0e5b832d9994e2f2d022287"><div class="ttname"><a href="../../d8/dee/avltree_8cpp.html#a74f0cf18a0e5b832d9994e2f2d022287">node</a></div><div class="ttdeci">struct node { int data; int height; struct node *left; struct node *right;} node</div><div class="ttdoc">for std::queue</div><div class="ttdef"><b>Definition</b> avltree.cpp:13</div></div>
-<div class="ttc" id="ahash__search_8cpp_html_a6e1a77282bc65ad359d753d25df23243"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a></div><div class="ttdeci">int data[MAX]</div><div class="ttdoc">test data</div><div class="ttdef"><b>Definition</b> hash_search.cpp:24</div></div>
-<div class="ttc" id="astruct_node_html"><div class="ttname"><a href="../../db/d8b/struct_node.html">Node</a></div><div class="ttdef"><b>Definition</b> linkedlist_implentation_usingarray.cpp:14</div></div>
-<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition</b> binary_search_tree.cpp:11</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d45/sublist__search_8cpp_a70ca8d0267008e09cfa50b4e2ddfbe53_cgraph.svg" width="163" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aavltree_8cpp_html_a74f0cf18a0e5b832d9994e2f2d022287"><div class="ttname"><a href="../../d8/dee/avltree_8cpp.html#a74f0cf18a0e5b832d9994e2f2d022287">node</a></div><div class="ttdeci">struct node { int data; int height; struct node *left; struct node *right;} node</div><div class="ttdoc">for std::queue</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dee/avltree_8cpp_source.html#l00013">avltree.cpp:13</a></div></div>
+<div class="ttc" id="ahash__search_8cpp_html_a6e1a77282bc65ad359d753d25df23243"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a></div><div class="ttdeci">int data[MAX]</div><div class="ttdoc">test data</div><div class="ttdef"><b>Definition</b> <a href="../../d1/df3/hash__search_8cpp_source.html#l00024">hash_search.cpp:24</a></div></div>
+<div class="ttc" id="astruct_node_html"><div class="ttname"><a href="../../db/d8b/struct_node.html">Node</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/dce/linkedlist__implentation__usingarray_8cpp_source.html#l00014">linkedlist_implentation_usingarray.cpp:14</a></div></div>
+<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d26/binary__search__tree_8cpp_source.html#l00011">binary_search_tree.cpp:11</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad1028bc215281d62e344af99da57fab2" name="ad1028bc215281d62e344af99da57fab2"></a>
@@ -364,19 +375,16 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d45/sublist__search_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../d5/d45/sublist__search_8cpp_source.html">sublist_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   58</span>                                  {</div>
 <div class="line"><span class="lineno">   59</span>    <span class="keywordflow">while</span> (start != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">   60</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;-&gt;&quot;</span> &lt;&lt; start-&gt;data;</div>
+<div class="line"><span class="lineno">   60</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;-&gt;&quot;</span> &lt;&lt; start-&gt;data;</div>
 <div class="line"><span class="lineno">   61</span>        start = start-&gt;next;</div>
 <div class="line"><span class="lineno">   62</span>    }</div>
-<div class="line"><span class="lineno">   63</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   63</span>    std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   64</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d45/sublist__search_8cpp_ad1028bc215281d62e344af99da57fab2_cgraph.svg" width="283" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4faee403e2758aaab682ed6622ae218c" name="a4faee403e2758aaab682ed6622ae218c"></a>
@@ -416,26 +424,24 @@ false if the sublist is NOT found </dd></dl>
 <p>set the target pointer again to stating point of target list.</p>
 <p>set the main pointer to the next element of the main list and repeat the algo.</p>
 <p>If the main list is exhausted, means sublist does not found, return false</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d45/sublist__search_8cpp_source.html#l00115">115</a> of file <a class="el" href="../../d5/d45/sublist__search_8cpp_source.html">sublist_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  115</span>                                                  {</div>
 <div class="line"><span class="lineno">  116</span>    <span class="keywordflow">if</span> (sublist == <span class="keyword">nullptr</span> || mainList == <span class="keyword">nullptr</span>) {</div>
 <div class="line"><span class="lineno">  117</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  118</span>    }</div>
-<div class="line"><span class="lineno">  119</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  120</span><span class="comment">    /// Initialize target pointer to the head node of sublist.</span></div>
-<div class="line"><span class="lineno">  121</span><span class="comment"></span>    <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *target_ptr = sublist;</div>
+<div class="line"><span class="lineno">  119</span> </div>
+<div class="line"><span class="lineno">  121</span>    <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *target_ptr = sublist;</div>
 <div class="line"><span class="lineno">  122</span> </div>
-<div class="line"><span class="lineno">  123</span>    <span class="keywordflow">while</span> (mainList != <span class="keyword">nullptr</span>) {<span class="comment"></span></div>
-<div class="line"><span class="lineno">  124</span><span class="comment">        /// Initialize main pointer to the current node of main list.</span></div>
-<div class="line"><span class="lineno">  125</span><span class="comment"></span>        <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *main_ptr = mainList;</div>
+<div class="line"><span class="lineno">  123</span>    <span class="keywordflow">while</span> (mainList != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  125</span>        <a class="code hl_class" href="../../db/d8b/struct_node.html">Node</a> *main_ptr = mainList;</div>
 <div class="line"><span class="lineno">  126</span> </div>
 <div class="line"><span class="lineno">  127</span>        <span class="keywordflow">while</span> (target_ptr != <span class="keyword">nullptr</span>) {</div>
 <div class="line"><span class="lineno">  128</span>            <span class="keywordflow">if</span> (main_ptr == <span class="keyword">nullptr</span>) {</div>
 <div class="line"><span class="lineno">  129</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  130</span> </div>
-<div class="line"><span class="lineno">  131</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (main_ptr-&gt;data == target_ptr-&gt;data) {<span class="comment"></span></div>
-<div class="line"><span class="lineno">  132</span><span class="comment">                /// If the data of target node and main node is equal then move</span></div>
-<div class="line"><span class="lineno">  133</span><span class="comment">                /// to the next node of both lists.</span></div>
-<div class="line"><span class="lineno">  134</span><span class="comment"></span>                target_ptr = target_ptr-&gt;next;</div>
+<div class="line"><span class="lineno">  131</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (main_ptr-&gt;data == target_ptr-&gt;data) {</div>
+<div class="line"><span class="lineno">  134</span>                target_ptr = target_ptr-&gt;next;</div>
 <div class="line"><span class="lineno">  135</span>                main_ptr = main_ptr-&gt;next;</div>
 <div class="line"><span class="lineno">  136</span> </div>
 <div class="line"><span class="lineno">  137</span>            } <span class="keywordflow">else</span> {</div>
@@ -443,31 +449,18 @@ false if the sublist is NOT found </dd></dl>
 <div class="line"><span class="lineno">  139</span>            }</div>
 <div class="line"><span class="lineno">  140</span>        }</div>
 <div class="line"><span class="lineno">  141</span> </div>
-<div class="line"><span class="lineno">  142</span>        <span class="keywordflow">if</span> (target_ptr == <span class="keyword">nullptr</span>) {<span class="comment"></span></div>
-<div class="line"><span class="lineno">  143</span><span class="comment">            /// Is target pointer becomes null that means the target list is</span></div>
-<div class="line"><span class="lineno">  144</span><span class="comment">            /// been traversed without returning false. Which means the sublist</span></div>
-<div class="line"><span class="lineno">  145</span><span class="comment">            /// has been found and return ture.</span></div>
-<div class="line"><span class="lineno">  146</span><span class="comment"></span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  142</span>        <span class="keywordflow">if</span> (target_ptr == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  146</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  147</span>        }</div>
-<div class="line"><span class="lineno">  148</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  149</span><span class="comment">        /// set the target pointer again to stating point of target list.</span></div>
-<div class="line"><span class="lineno">  150</span><span class="comment"></span>        target_ptr = sublist;</div>
-<div class="line"><span class="lineno">  151</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  152</span><span class="comment">        /// set the main pointer to the next element of the main list and repeat</span></div>
-<div class="line"><span class="lineno">  153</span><span class="comment">        /// the algo.</span></div>
-<div class="line"><span class="lineno">  154</span><span class="comment"></span>        mainList = mainList-&gt;next;</div>
+<div class="line"><span class="lineno">  148</span> </div>
+<div class="line"><span class="lineno">  150</span>        target_ptr = sublist;</div>
+<div class="line"><span class="lineno">  151</span> </div>
+<div class="line"><span class="lineno">  154</span>        mainList = mainList-&gt;next;</div>
 <div class="line"><span class="lineno">  155</span>    }</div>
-<div class="line"><span class="lineno">  156</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  157</span><span class="comment">    /// If the main list is exhausted, means sublist does not found, return</span></div>
-<div class="line"><span class="lineno">  158</span><span class="comment">    /// false</span></div>
-<div class="line"><span class="lineno">  159</span><span class="comment"></span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  156</span> </div>
+<div class="line"><span class="lineno">  159</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  160</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d45/sublist__search_8cpp_a4faee403e2758aaab682ed6622ae218c_cgraph.svg" width="163" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -495,18 +488,15 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d45/sublist__search_8cpp_source.html#l00349">349</a> of file <a class="el" href="../../d5/d45/sublist__search_8cpp_source.html">sublist_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  349</span>                   {</div>
 <div class="line"><span class="lineno">  350</span>    <a class="code hl_class" href="../../d5/d58/class_test_cases.html">TestCases</a> tc;</div>
 <div class="line"><span class="lineno">  351</span>    tc.<a class="code hl_function" href="../../d5/d58/class_test_cases.html#aeabea90c02f9159e4a784bbf736e1e23">runTests</a>();</div>
 <div class="line"><span class="lineno">  352</span>}</div>
-<div class="ttc" id="aclass_test_cases_html"><div class="ttname"><a href="../../d5/d58/class_test_cases.html">TestCases</a></div><div class="ttdoc">class encapsulating the necessary test cases</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:225</div></div>
-<div class="ttc" id="aclass_test_cases_html_aeabea90c02f9159e4a784bbf736e1e23"><div class="ttname"><a href="../../d5/d58/class_test_cases.html#aeabea90c02f9159e4a784bbf736e1e23">TestCases::runTests</a></div><div class="ttdeci">void runTests()</div><div class="ttdoc">Executes test cases.</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:243</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/d45/sublist__search_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="100%" height="467"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="aclass_test_cases_html"><div class="ttname"><a href="../../d5/d58/class_test_cases.html">TestCases</a></div><div class="ttdoc">class encapsulating the necessary test cases</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00225">inorder_successor_of_bst.cpp:225</a></div></div>
+<div class="ttc" id="aclass_test_cases_html_aeabea90c02f9159e4a784bbf736e1e23"><div class="ttname"><a href="../../d5/d58/class_test_cases.html#aeabea90c02f9159e4a784bbf736e1e23">TestCases::runTests</a></div><div class="ttdeci">void runTests()</div><div class="ttdoc">Executes test cases.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00243">inorder_successor_of_bst.cpp:243</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: others/recursive_tree_traversal.cpp File Reference</title>
+<title>TheAlgorithms/C++: others/recursive_tree_traversal.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -123,7 +140,9 @@ Include dependency graph for recursive_tree_traversal.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/dae/recursive__tree__traversal_8cpp__incl.svg" width="336" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../dc/de1/recursive__tree__traversal_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/df7/structothers_1_1recursive__tree__traversals_1_1_node.html">others::recursive_tree_traversals::Node</a></td></tr>
@@ -180,6 +199,8 @@ Iterative Postorder Traversal of a tree</h3>
 <p>(L) Recursively traverse its left subtree. When this step is finished, we are back at n again. (R) Recursively traverse its right subtree. When this step is finished, we are back at n again. (N) Process n itself.</p>
 <p>In normal postorder traversal, visit the left subtree before the right subtree. If we visit the right subtree before visiting the left subtree, it is referred to as reverse postorder traversal.</p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/Lazeeez" target="_blank">Lajat Manekar</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../dc/de1/recursive__tree__traversal_8cpp_source.html">recursive_tree_traversal.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a951f01040f518d611228c1d182b8242c" name="a951f01040f518d611228c1d182b8242c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a951f01040f518d611228c1d182b8242c">&#9670;&#160;</a></span>deleteAll()</h2>
@@ -195,6 +216,8 @@ Iterative Postorder Traversal of a tree</h3>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/de1/recursive__tree__traversal_8cpp_source.html#l00185">185</a> of file <a class="el" href="../../dc/de1/recursive__tree__traversal_8cpp_source.html">recursive_tree_traversal.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  185</span>                                       {</div>
 <div class="line"><span class="lineno">  186</span>    <span class="keywordflow">if</span> (root) {</div>
 <div class="line"><span class="lineno">  187</span>        deleteAll(root-&gt;left);</div>
@@ -222,17 +245,14 @@ Iterative Postorder Traversal of a tree</h3>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/de1/recursive__tree__traversal_8cpp_source.html#l00398">398</a> of file <a class="el" href="../../dc/de1/recursive__tree__traversal_8cpp_source.html">recursive_tree_traversal.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  398</span>           {</div>
 <div class="line"><span class="lineno">  399</span>    <a class="code hl_function" href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a>();  <span class="comment">// run self-test implementations</span></div>
 <div class="line"><span class="lineno">  400</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  401</span>}</div>
-<div class="ttc" id="arecursive__tree__traversal_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> recursive_tree_traversal.cpp:386</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../dc/de1/recursive__tree__traversal_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="100%" height="510"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="arecursive__tree__traversal_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/de1/recursive__tree__traversal_8cpp_source.html#l00386">recursive_tree_traversal.cpp:386</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1440a7779ac56f47a3f355ce4a8c7da0" name="a1440a7779ac56f47a3f355ce4a8c7da0"></a>
@@ -255,6 +275,8 @@ Here is the call graph for this function:</div>
 <p>&lt; result stores the inorder traversal of the binary tree</p>
 <p>&lt; result stores the preorder traversal of the binary tree</p>
 <p>&lt; result stores the postorder traversal of the binary tree</p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/de1/recursive__tree__traversal_8cpp_source.html#l00201">201</a> of file <a class="el" href="../../dc/de1/recursive__tree__traversal_8cpp_source.html">recursive_tree_traversal.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  201</span>             {</div>
 <div class="line"><span class="lineno">  202</span>    <a class="code hl_class" href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html">others::recursive_tree_traversals::BT</a> obj1;</div>
 <div class="line"><span class="lineno">  203</span>    <a class="code hl_struct" href="../../d9/df7/structothers_1_1recursive__tree__traversals_1_1_node.html">others::recursive_tree_traversals::Node</a> *root = obj1.<a class="code hl_function" href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#af16da5fe0f5c54d31778d71d5a042114">createNewNode</a>(2);</div>
@@ -267,69 +289,57 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  210</span>    root-&gt;left-&gt;right-&gt;right = obj1.<a class="code hl_function" href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#af16da5fe0f5c54d31778d71d5a042114">createNewNode</a>(11);</div>
 <div class="line"><span class="lineno">  211</span>    root-&gt;right-&gt;right-&gt;left = obj1.<a class="code hl_function" href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#af16da5fe0f5c54d31778d71d5a042114">createNewNode</a>(4);</div>
 <div class="line"><span class="lineno">  212</span> </div>
-<div class="line"><span class="lineno">  213</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint64_t&gt;</a> actual_result_inorder{2, 7, 5, 6, 11,</div>
+<div class="line"><span class="lineno">  213</span>    std::vector&lt;std::uint64_t&gt; actual_result_inorder{2, 7, 5, 6, 11,</div>
 <div class="line"><span class="lineno">  214</span>                                                     2, 5, 4, 9};</div>
-<div class="line"><span class="lineno">  215</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint64_t&gt;</a> actual_result_preorder{2,  7, 2, 6, 5,</div>
+<div class="line"><span class="lineno">  215</span>    std::vector&lt;std::uint64_t&gt; actual_result_preorder{2,  7, 2, 6, 5,</div>
 <div class="line"><span class="lineno">  216</span>                                                      11, 5, 9, 4};</div>
-<div class="line"><span class="lineno">  217</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint64_t&gt;</a> actual_result_postorder{2, 5, 11, 6, 7,</div>
+<div class="line"><span class="lineno">  217</span>    std::vector&lt;std::uint64_t&gt; actual_result_postorder{2, 5, 11, 6, 7,</div>
 <div class="line"><span class="lineno">  218</span>                                                       4, 9, 5,  2};</div>
-<div class="line"><span class="lineno">  219</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint64_t&gt;</a></div>
-<div class="line"><span class="lineno">  220</span>        result_inorder;  <span class="comment">///&lt; result stores the inorder</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  221</span><span class="comment">                         ///&lt; traversal of the binary tree</span></div>
-<div class="line"><span class="lineno">  222</span><span class="comment"></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint64_t&gt;</a></div>
-<div class="line"><span class="lineno">  223</span>        result_preorder;  <span class="comment">///&lt; result stores the preorder</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  224</span><span class="comment">                          ///&lt; traversal of the binary tree</span></div>
-<div class="line"><span class="lineno">  225</span><span class="comment"></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint64_t&gt;</a></div>
-<div class="line"><span class="lineno">  226</span>        result_postorder;  <span class="comment">///&lt; result stores the postorder</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  227</span><span class="comment">                           ///&lt; traversal of the binary tree</span></div>
-<div class="line"><span class="lineno">  228</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  229</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a> size = actual_result_inorder.size();</div>
+<div class="line"><span class="lineno">  219</span>    std::vector&lt;std::uint64_t&gt;</div>
+<div class="line"><span class="lineno">  220</span>        result_inorder;  </div>
+<div class="line"><span class="lineno">  222</span>    std::vector&lt;std::uint64_t&gt;</div>
+<div class="line"><span class="lineno">  223</span>        result_preorder;  </div>
+<div class="line"><span class="lineno">  225</span>    std::vector&lt;std::uint64_t&gt;</div>
+<div class="line"><span class="lineno">  226</span>        result_postorder;  </div>
+<div class="line"><span class="lineno">  228</span> </div>
+<div class="line"><span class="lineno">  229</span>    std::uint64_t size = actual_result_inorder.size();</div>
 <div class="line"><span class="lineno">  230</span> </div>
 <div class="line"><span class="lineno">  231</span>    <span class="comment">// Calling inorder() function by passing a root node,</span></div>
 <div class="line"><span class="lineno">  232</span>    <span class="comment">// and storing the inorder traversal in result_inorder.</span></div>
 <div class="line"><span class="lineno">  233</span>    result_inorder = obj1.inorder(root);</div>
-<div class="line"><span class="lineno">  234</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Testcase #1: Inorder Traversal...&quot;</span>;</div>
+<div class="line"><span class="lineno">  234</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Testcase #1: Inorder Traversal...&quot;</span>;</div>
 <div class="line"><span class="lineno">  235</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i &lt; size; ++i) {</div>
 <div class="line"><span class="lineno">  236</span>        assert(actual_result_inorder[i] == result_inorder[i]);</div>
 <div class="line"><span class="lineno">  237</span>    }</div>
-<div class="line"><span class="lineno">  238</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  238</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Passed!&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  239</span> </div>
 <div class="line"><span class="lineno">  240</span>    <span class="comment">// Calling preorder() function by passing a root node,</span></div>
 <div class="line"><span class="lineno">  241</span>    <span class="comment">// and storing the preorder traversal in result_preorder.</span></div>
 <div class="line"><span class="lineno">  242</span>    result_preorder = obj1.<a class="code hl_function" href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#a6397b78ceec18cb1959a1d159e134da5">preorder</a>(root);</div>
-<div class="line"><span class="lineno">  243</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Testcase #1: Preorder Traversal...&quot;</span>;</div>
+<div class="line"><span class="lineno">  243</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Testcase #1: Preorder Traversal...&quot;</span>;</div>
 <div class="line"><span class="lineno">  244</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i &lt; size; ++i) {</div>
 <div class="line"><span class="lineno">  245</span>        assert(actual_result_preorder[i] == result_preorder[i]);</div>
 <div class="line"><span class="lineno">  246</span>    }</div>
-<div class="line"><span class="lineno">  247</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  247</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Passed!&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  248</span> </div>
 <div class="line"><span class="lineno">  249</span>    <span class="comment">// Calling postorder() function by passing a root node,</span></div>
 <div class="line"><span class="lineno">  250</span>    <span class="comment">// and storing the postorder traversal in result_postorder.</span></div>
 <div class="line"><span class="lineno">  251</span>    result_postorder = obj1.<a class="code hl_function" href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#ac9404b65f407f631915515fa2e08a40c">postorder</a>(root);</div>
-<div class="line"><span class="lineno">  252</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Testcase #1: Postorder Traversal...&quot;</span>;</div>
+<div class="line"><span class="lineno">  252</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Testcase #1: Postorder Traversal...&quot;</span>;</div>
 <div class="line"><span class="lineno">  253</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i &lt; size; ++i) {</div>
 <div class="line"><span class="lineno">  254</span>        assert(actual_result_postorder[i] == result_postorder[i]);</div>
 <div class="line"><span class="lineno">  255</span>    }</div>
-<div class="line"><span class="lineno">  256</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  256</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Passed!&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  257</span> </div>
-<div class="line"><span class="lineno">  258</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  258</span>    std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  259</span>    deleteAll(root);</div>
 <div class="line"><span class="lineno">  260</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aclassothers_1_1recursive__tree__traversals_1_1_b_t_html"><div class="ttname"><a href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html">others::recursive_tree_traversals::BT</a></div><div class="ttdoc">BT used to make the entire structure of the binary tree and the functions associated with the binary ...</div><div class="ttdef"><b>Definition</b> recursive_tree_traversal.cpp:88</div></div>
-<div class="ttc" id="aclassothers_1_1recursive__tree__traversals_1_1_b_t_html_a6397b78ceec18cb1959a1d159e134da5"><div class="ttname"><a href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#a6397b78ceec18cb1959a1d159e134da5">others::recursive_tree_traversals::BT::preorder</a></div><div class="ttdeci">std::vector&lt; std::uint64_t &gt; preorder(Node *)</div><div class="ttdoc">preorder function that will perform the preorder traversal recursively, and return the resultant vect...</div><div class="ttdef"><b>Definition</b> recursive_tree_traversal.cpp:152</div></div>
-<div class="ttc" id="aclassothers_1_1recursive__tree__traversals_1_1_b_t_html_ac9404b65f407f631915515fa2e08a40c"><div class="ttname"><a href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#ac9404b65f407f631915515fa2e08a40c">others::recursive_tree_traversals::BT::postorder</a></div><div class="ttdeci">std::vector&lt; std::uint64_t &gt; postorder(Node *)</div><div class="ttdoc">postorder function that will perform the postorder traversal recursively, and return the result vecto...</div><div class="ttdef"><b>Definition</b> recursive_tree_traversal.cpp:172</div></div>
-<div class="ttc" id="aclassothers_1_1recursive__tree__traversals_1_1_b_t_html_af16da5fe0f5c54d31778d71d5a042114"><div class="ttname"><a href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#af16da5fe0f5c54d31778d71d5a042114">others::recursive_tree_traversals::BT::createNewNode</a></div><div class="ttdeci">Node * createNewNode(std::uint64_t)</div><div class="ttdoc">will allocate the memory for a node and, along the data and return the node.</div><div class="ttdef"><b>Definition</b> recursive_tree_traversal.cpp:118</div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="ainteger_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a></div></div>
-<div class="ttc" id="astructothers_1_1recursive__tree__traversals_1_1_node_html"><div class="ttname"><a href="../../d9/df7/structothers_1_1recursive__tree__traversals_1_1_node.html">others::recursive_tree_traversals::Node</a></div><div class="ttdoc">The structure to hold Nodes of the tree.</div><div class="ttdef"><b>Definition</b> recursive_tree_traversal.cpp:79</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/de1/recursive__tree__traversal_8cpp_a1440a7779ac56f47a3f355ce4a8c7da0_cgraph.svg" width="522" height="280"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassothers_1_1recursive__tree__traversals_1_1_b_t_html"><div class="ttname"><a href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html">others::recursive_tree_traversals::BT</a></div><div class="ttdoc">BT used to make the entire structure of the binary tree and the functions associated with the binary ...</div><div class="ttdef"><b>Definition</b> <a href="../../dc/de1/recursive__tree__traversal_8cpp_source.html#l00088">recursive_tree_traversal.cpp:88</a></div></div>
+<div class="ttc" id="aclassothers_1_1recursive__tree__traversals_1_1_b_t_html_a6397b78ceec18cb1959a1d159e134da5"><div class="ttname"><a href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#a6397b78ceec18cb1959a1d159e134da5">others::recursive_tree_traversals::BT::preorder</a></div><div class="ttdeci">std::vector&lt; std::uint64_t &gt; preorder(Node *)</div><div class="ttdoc">preorder function that will perform the preorder traversal recursively, and return the resultant vect...</div><div class="ttdef"><b>Definition</b> <a href="../../dc/de1/recursive__tree__traversal_8cpp_source.html#l00152">recursive_tree_traversal.cpp:152</a></div></div>
+<div class="ttc" id="aclassothers_1_1recursive__tree__traversals_1_1_b_t_html_ac9404b65f407f631915515fa2e08a40c"><div class="ttname"><a href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#ac9404b65f407f631915515fa2e08a40c">others::recursive_tree_traversals::BT::postorder</a></div><div class="ttdeci">std::vector&lt; std::uint64_t &gt; postorder(Node *)</div><div class="ttdoc">postorder function that will perform the postorder traversal recursively, and return the result vecto...</div><div class="ttdef"><b>Definition</b> <a href="../../dc/de1/recursive__tree__traversal_8cpp_source.html#l00172">recursive_tree_traversal.cpp:172</a></div></div>
+<div class="ttc" id="aclassothers_1_1recursive__tree__traversals_1_1_b_t_html_af16da5fe0f5c54d31778d71d5a042114"><div class="ttname"><a href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#af16da5fe0f5c54d31778d71d5a042114">others::recursive_tree_traversals::BT::createNewNode</a></div><div class="ttdeci">Node * createNewNode(std::uint64_t)</div><div class="ttdoc">will allocate the memory for a node and, along the data and return the node.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/de1/recursive__tree__traversal_8cpp_source.html#l00118">recursive_tree_traversal.cpp:118</a></div></div>
+<div class="ttc" id="astructothers_1_1recursive__tree__traversals_1_1_node_html"><div class="ttname"><a href="../../d9/df7/structothers_1_1recursive__tree__traversals_1_1_node.html">others::recursive_tree_traversals::Node</a></div><div class="ttdoc">The structure to hold Nodes of the tree.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/de1/recursive__tree__traversal_8cpp_source.html#l00079">recursive_tree_traversal.cpp:79</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0283886819c7c140a023582b7269e2d0" name="a0283886819c7c140a023582b7269e2d0"></a>
@@ -352,6 +362,8 @@ Here is the call graph for this function:</div>
 <p>&lt; result stores the inorder traversal of the binary tree</p>
 <p>&lt; result stores the preorder traversal of the binary tree</p>
 <p>&lt; result stores the postorder traversal of the binary tree</p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/de1/recursive__tree__traversal_8cpp_source.html#l00266">266</a> of file <a class="el" href="../../dc/de1/recursive__tree__traversal_8cpp_source.html">recursive_tree_traversal.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  266</span>             {</div>
 <div class="line"><span class="lineno">  267</span>    <a class="code hl_class" href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html">others::recursive_tree_traversals::BT</a> obj2;</div>
 <div class="line"><span class="lineno">  268</span>    <a class="code hl_struct" href="../../d9/df7/structothers_1_1recursive__tree__traversals_1_1_node.html">others::recursive_tree_traversals::Node</a> *root = obj2.<a class="code hl_function" href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#af16da5fe0f5c54d31778d71d5a042114">createNewNode</a>(1);</div>
@@ -363,57 +375,49 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  274</span>    root-&gt;right-&gt;left-&gt;left = obj2.<a class="code hl_function" href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#af16da5fe0f5c54d31778d71d5a042114">createNewNode</a>(7);</div>
 <div class="line"><span class="lineno">  275</span>    root-&gt;right-&gt;left-&gt;right = obj2.<a class="code hl_function" href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#af16da5fe0f5c54d31778d71d5a042114">createNewNode</a>(8);</div>
 <div class="line"><span class="lineno">  276</span> </div>
-<div class="line"><span class="lineno">  277</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint64_t&gt;</a> actual_result_inorder{4, 2, 1, 7, 5, 8, 3, 6};</div>
-<div class="line"><span class="lineno">  278</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint64_t&gt;</a> actual_result_preorder{1, 2, 4, 3, 5, 7, 8, 6};</div>
-<div class="line"><span class="lineno">  279</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint64_t&gt;</a> actual_result_postorder{4, 2, 7, 8, 5, 6, 3, 1};</div>
-<div class="line"><span class="lineno">  280</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint64_t&gt;</a></div>
-<div class="line"><span class="lineno">  281</span>        result_inorder;  <span class="comment">///&lt; result stores the inorder</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  282</span><span class="comment">                         ///&lt; traversal of the binary tree</span></div>
-<div class="line"><span class="lineno">  283</span><span class="comment"></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint64_t&gt;</a></div>
-<div class="line"><span class="lineno">  284</span>        result_preorder;  <span class="comment">///&lt; result stores the preorder</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  285</span><span class="comment">                          ///&lt; traversal of the binary tree</span></div>
-<div class="line"><span class="lineno">  286</span><span class="comment"></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint64_t&gt;</a></div>
-<div class="line"><span class="lineno">  287</span>        result_postorder;  <span class="comment">///&lt; result stores the postorder</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  288</span><span class="comment">                           ///&lt; traversal of the binary tree</span></div>
-<div class="line"><span class="lineno">  289</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  290</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a> size = actual_result_inorder.size();</div>
+<div class="line"><span class="lineno">  277</span>    std::vector&lt;std::uint64_t&gt; actual_result_inorder{4, 2, 1, 7, 5, 8, 3, 6};</div>
+<div class="line"><span class="lineno">  278</span>    std::vector&lt;std::uint64_t&gt; actual_result_preorder{1, 2, 4, 3, 5, 7, 8, 6};</div>
+<div class="line"><span class="lineno">  279</span>    std::vector&lt;std::uint64_t&gt; actual_result_postorder{4, 2, 7, 8, 5, 6, 3, 1};</div>
+<div class="line"><span class="lineno">  280</span>    std::vector&lt;std::uint64_t&gt;</div>
+<div class="line"><span class="lineno">  281</span>        result_inorder;  </div>
+<div class="line"><span class="lineno">  283</span>    std::vector&lt;std::uint64_t&gt;</div>
+<div class="line"><span class="lineno">  284</span>        result_preorder;  </div>
+<div class="line"><span class="lineno">  286</span>    std::vector&lt;std::uint64_t&gt;</div>
+<div class="line"><span class="lineno">  287</span>        result_postorder;  </div>
+<div class="line"><span class="lineno">  289</span> </div>
+<div class="line"><span class="lineno">  290</span>    std::uint64_t size = actual_result_inorder.size();</div>
 <div class="line"><span class="lineno">  291</span> </div>
 <div class="line"><span class="lineno">  292</span>    <span class="comment">// Calling inorder() function by passing a root node,</span></div>
 <div class="line"><span class="lineno">  293</span>    <span class="comment">// and storing the inorder traversal in result_inorder.</span></div>
 <div class="line"><span class="lineno">  294</span>    result_inorder = obj2.inorder(root);</div>
-<div class="line"><span class="lineno">  295</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Testcase #2: Inorder Traversal...&quot;</span>;</div>
+<div class="line"><span class="lineno">  295</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Testcase #2: Inorder Traversal...&quot;</span>;</div>
 <div class="line"><span class="lineno">  296</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i &lt; size; ++i) {</div>
 <div class="line"><span class="lineno">  297</span>        assert(actual_result_inorder[i] == result_inorder[i]);</div>
 <div class="line"><span class="lineno">  298</span>    }</div>
-<div class="line"><span class="lineno">  299</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  299</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Passed!&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  300</span> </div>
 <div class="line"><span class="lineno">  301</span>    <span class="comment">// Calling preorder() function by passing a root node,</span></div>
 <div class="line"><span class="lineno">  302</span>    <span class="comment">// and storing the preorder traversal in result_preorder.</span></div>
 <div class="line"><span class="lineno">  303</span>    result_preorder = obj2.<a class="code hl_function" href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#a6397b78ceec18cb1959a1d159e134da5">preorder</a>(root);</div>
-<div class="line"><span class="lineno">  304</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Testcase #2: Preorder Traversal...&quot;</span>;</div>
+<div class="line"><span class="lineno">  304</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Testcase #2: Preorder Traversal...&quot;</span>;</div>
 <div class="line"><span class="lineno">  305</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i &lt; size; ++i) {</div>
 <div class="line"><span class="lineno">  306</span>        assert(actual_result_preorder[i] == result_preorder[i]);</div>
 <div class="line"><span class="lineno">  307</span>    }</div>
-<div class="line"><span class="lineno">  308</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  308</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Passed!&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  309</span> </div>
 <div class="line"><span class="lineno">  310</span>    <span class="comment">// Calling postorder() function by passing a root node,</span></div>
 <div class="line"><span class="lineno">  311</span>    <span class="comment">// and storing the postorder traversal in result_postorder.</span></div>
 <div class="line"><span class="lineno">  312</span>    result_postorder = obj2.<a class="code hl_function" href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#ac9404b65f407f631915515fa2e08a40c">postorder</a>(root);</div>
-<div class="line"><span class="lineno">  313</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Testcase #2: Postorder Traversal...&quot;</span>;</div>
+<div class="line"><span class="lineno">  313</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Testcase #2: Postorder Traversal...&quot;</span>;</div>
 <div class="line"><span class="lineno">  314</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i &lt; size; ++i) {</div>
 <div class="line"><span class="lineno">  315</span>        assert(actual_result_postorder[i] == result_postorder[i]);</div>
 <div class="line"><span class="lineno">  316</span>    }</div>
-<div class="line"><span class="lineno">  317</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  317</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Passed!&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  318</span> </div>
-<div class="line"><span class="lineno">  319</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  319</span>    std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  320</span>    deleteAll(root);</div>
 <div class="line"><span class="lineno">  321</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/de1/recursive__tree__traversal_8cpp_a0283886819c7c140a023582b7269e2d0_cgraph.svg" width="522" height="280"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6d0455dd5c30adda100e95f0423c786e" name="a6d0455dd5c30adda100e95f0423c786e"></a>
@@ -436,6 +440,8 @@ Here is the call graph for this function:</div>
 <p>&lt; result stores the inorder traversal of the binary tree</p>
 <p>&lt; result stores the preorder traversal of the binary tree</p>
 <p>&lt; result stores the postorder traversal of the binary tree</p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/de1/recursive__tree__traversal_8cpp_source.html#l00327">327</a> of file <a class="el" href="../../dc/de1/recursive__tree__traversal_8cpp_source.html">recursive_tree_traversal.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  327</span>             {</div>
 <div class="line"><span class="lineno">  328</span>    <a class="code hl_class" href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html">others::recursive_tree_traversals::BT</a> obj3;</div>
 <div class="line"><span class="lineno">  329</span>    <a class="code hl_struct" href="../../d9/df7/structothers_1_1recursive__tree__traversals_1_1_node.html">others::recursive_tree_traversals::Node</a> *root = obj3.<a class="code hl_function" href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#af16da5fe0f5c54d31778d71d5a042114">createNewNode</a>(1);</div>
@@ -444,58 +450,50 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  332</span>    root-&gt;left-&gt;left = obj3.<a class="code hl_function" href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#af16da5fe0f5c54d31778d71d5a042114">createNewNode</a>(4);</div>
 <div class="line"><span class="lineno">  333</span>    root-&gt;left-&gt;right = obj3.<a class="code hl_function" href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#af16da5fe0f5c54d31778d71d5a042114">createNewNode</a>(5);</div>
 <div class="line"><span class="lineno">  334</span> </div>
-<div class="line"><span class="lineno">  335</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint64_t&gt;</a> actual_result_inorder{4, 2, 5, 1, 3};</div>
-<div class="line"><span class="lineno">  336</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint64_t&gt;</a> actual_result_preorder{1, 2, 4, 5, 3};</div>
-<div class="line"><span class="lineno">  337</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint64_t&gt;</a> actual_result_postorder{4, 5, 2, 3, 1};</div>
-<div class="line"><span class="lineno">  338</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint64_t&gt;</a></div>
-<div class="line"><span class="lineno">  339</span>        result_inorder;  <span class="comment">///&lt; result stores the inorder</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  340</span><span class="comment">                         ///&lt; traversal of the binary tree</span></div>
-<div class="line"><span class="lineno">  341</span><span class="comment"></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint64_t&gt;</a></div>
-<div class="line"><span class="lineno">  342</span>        result_preorder;  <span class="comment">///&lt; result stores the preorder</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  343</span><span class="comment">                          ///&lt; traversal of the binary tree</span></div>
-<div class="line"><span class="lineno">  344</span><span class="comment"></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::uint64_t&gt;</a></div>
-<div class="line"><span class="lineno">  345</span>        result_postorder;  <span class="comment">///&lt; result stores the postorder</span><span class="comment"></span></div>
-<div class="line"><span class="lineno">  346</span><span class="comment">                           ///&lt; traversal of the binary tree</span></div>
-<div class="line"><span class="lineno">  347</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  348</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a> size = actual_result_inorder.size();</div>
+<div class="line"><span class="lineno">  335</span>    std::vector&lt;std::uint64_t&gt; actual_result_inorder{4, 2, 5, 1, 3};</div>
+<div class="line"><span class="lineno">  336</span>    std::vector&lt;std::uint64_t&gt; actual_result_preorder{1, 2, 4, 5, 3};</div>
+<div class="line"><span class="lineno">  337</span>    std::vector&lt;std::uint64_t&gt; actual_result_postorder{4, 5, 2, 3, 1};</div>
+<div class="line"><span class="lineno">  338</span>    std::vector&lt;std::uint64_t&gt;</div>
+<div class="line"><span class="lineno">  339</span>        result_inorder;  </div>
+<div class="line"><span class="lineno">  341</span>    std::vector&lt;std::uint64_t&gt;</div>
+<div class="line"><span class="lineno">  342</span>        result_preorder;  </div>
+<div class="line"><span class="lineno">  344</span>    std::vector&lt;std::uint64_t&gt;</div>
+<div class="line"><span class="lineno">  345</span>        result_postorder;  </div>
+<div class="line"><span class="lineno">  347</span> </div>
+<div class="line"><span class="lineno">  348</span>    std::uint64_t size = actual_result_inorder.size();</div>
 <div class="line"><span class="lineno">  349</span> </div>
 <div class="line"><span class="lineno">  350</span>    <span class="comment">// Calling inorder() function by passing a root node,</span></div>
 <div class="line"><span class="lineno">  351</span>    <span class="comment">// and storing the inorder traversal in result_inorder.</span></div>
 <div class="line"><span class="lineno">  352</span> </div>
 <div class="line"><span class="lineno">  353</span>    result_inorder = obj3.inorder(root);</div>
-<div class="line"><span class="lineno">  354</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Testcase #3: Inorder Traversal...&quot;</span>;</div>
+<div class="line"><span class="lineno">  354</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Testcase #3: Inorder Traversal...&quot;</span>;</div>
 <div class="line"><span class="lineno">  355</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i &lt; size; ++i) {</div>
 <div class="line"><span class="lineno">  356</span>        assert(actual_result_inorder[i] == result_inorder[i]);</div>
 <div class="line"><span class="lineno">  357</span>    }</div>
-<div class="line"><span class="lineno">  358</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  358</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Passed!&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  359</span> </div>
 <div class="line"><span class="lineno">  360</span>    <span class="comment">// Calling preorder() function by passing a root node,</span></div>
 <div class="line"><span class="lineno">  361</span>    <span class="comment">// and storing the preorder traversal in result_preorder.</span></div>
 <div class="line"><span class="lineno">  362</span>    result_preorder = obj3.<a class="code hl_function" href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#a6397b78ceec18cb1959a1d159e134da5">preorder</a>(root);</div>
-<div class="line"><span class="lineno">  363</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Testcase #3: Preorder Traversal...&quot;</span>;</div>
+<div class="line"><span class="lineno">  363</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Testcase #3: Preorder Traversal...&quot;</span>;</div>
 <div class="line"><span class="lineno">  364</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i &lt; size; ++i) {</div>
 <div class="line"><span class="lineno">  365</span>        assert(actual_result_preorder[i] == result_preorder[i]);</div>
 <div class="line"><span class="lineno">  366</span>    }</div>
-<div class="line"><span class="lineno">  367</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  367</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Passed!&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  368</span> </div>
 <div class="line"><span class="lineno">  369</span>    <span class="comment">// Calling postorder() function by passing a root node,</span></div>
 <div class="line"><span class="lineno">  370</span>    <span class="comment">// and storing the postorder traversal in result_postorder.</span></div>
 <div class="line"><span class="lineno">  371</span>    result_postorder = obj3.<a class="code hl_function" href="../../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#ac9404b65f407f631915515fa2e08a40c">postorder</a>(root);</div>
-<div class="line"><span class="lineno">  372</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Testcase #3: Postorder Traversal...&quot;</span>;</div>
+<div class="line"><span class="lineno">  372</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Testcase #3: Postorder Traversal...&quot;</span>;</div>
 <div class="line"><span class="lineno">  373</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i &lt; size; ++i) {</div>
 <div class="line"><span class="lineno">  374</span>        assert(actual_result_postorder[i] == result_postorder[i]);</div>
 <div class="line"><span class="lineno">  375</span>    }</div>
-<div class="line"><span class="lineno">  376</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  376</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Passed!&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  377</span> </div>
-<div class="line"><span class="lineno">  378</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  378</span>    std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  379</span>    deleteAll(root);</div>
 <div class="line"><span class="lineno">  380</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/de1/recursive__tree__traversal_8cpp_a6d0455dd5c30adda100e95f0423c786e_cgraph.svg" width="522" height="280"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a483bb8ccf42aaf7375a83e91490eda1e" name="a483bb8ccf42aaf7375a83e91490eda1e"></a>
@@ -523,23 +521,20 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/de1/recursive__tree__traversal_8cpp_source.html#l00386">386</a> of file <a class="el" href="../../dc/de1/recursive__tree__traversal_8cpp_source.html">recursive_tree_traversal.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  386</span>                    {</div>
-<div class="line"><span class="lineno">  387</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;1st test-case&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  387</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;1st test-case&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  388</span>    <a class="code hl_function" href="#a1440a7779ac56f47a3f355ce4a8c7da0">test1</a>();  <span class="comment">// run 1st test-case</span></div>
-<div class="line"><span class="lineno">  389</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;2nd test-case&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  389</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;2nd test-case&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  390</span>    <a class="code hl_function" href="#a0283886819c7c140a023582b7269e2d0">test2</a>();  <span class="comment">// run 2nd test-case</span></div>
-<div class="line"><span class="lineno">  391</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;3rd test-case&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  391</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;3rd test-case&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  392</span>    <a class="code hl_function" href="#a6d0455dd5c30adda100e95f0423c786e">test3</a>();  <span class="comment">// run 3rd test-case</span></div>
 <div class="line"><span class="lineno">  393</span>}</div>
-<div class="ttc" id="arecursive__tree__traversal_8cpp_html_a0283886819c7c140a023582b7269e2d0"><div class="ttname"><a href="#a0283886819c7c140a023582b7269e2d0">test2</a></div><div class="ttdeci">void test2()</div><div class="ttdoc">2nd test-case</div><div class="ttdef"><b>Definition</b> recursive_tree_traversal.cpp:266</div></div>
-<div class="ttc" id="arecursive__tree__traversal_8cpp_html_a1440a7779ac56f47a3f355ce4a8c7da0"><div class="ttname"><a href="#a1440a7779ac56f47a3f355ce4a8c7da0">test1</a></div><div class="ttdeci">void test1()</div><div class="ttdoc">1st test-case</div><div class="ttdef"><b>Definition</b> recursive_tree_traversal.cpp:201</div></div>
-<div class="ttc" id="arecursive__tree__traversal_8cpp_html_a6d0455dd5c30adda100e95f0423c786e"><div class="ttname"><a href="#a6d0455dd5c30adda100e95f0423c786e">test3</a></div><div class="ttdeci">void test3()</div><div class="ttdoc">3rd test-case</div><div class="ttdef"><b>Definition</b> recursive_tree_traversal.cpp:327</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/de1/recursive__tree__traversal_8cpp_a483bb8ccf42aaf7375a83e91490eda1e_cgraph.svg" width="620" height="280"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="arecursive__tree__traversal_8cpp_html_a0283886819c7c140a023582b7269e2d0"><div class="ttname"><a href="#a0283886819c7c140a023582b7269e2d0">test2</a></div><div class="ttdeci">void test2()</div><div class="ttdoc">2nd test-case</div><div class="ttdef"><b>Definition</b> <a href="../../dc/de1/recursive__tree__traversal_8cpp_source.html#l00266">recursive_tree_traversal.cpp:266</a></div></div>
+<div class="ttc" id="arecursive__tree__traversal_8cpp_html_a1440a7779ac56f47a3f355ce4a8c7da0"><div class="ttname"><a href="#a1440a7779ac56f47a3f355ce4a8c7da0">test1</a></div><div class="ttdeci">void test1()</div><div class="ttdoc">1st test-case</div><div class="ttdef"><b>Definition</b> <a href="../../dc/de1/recursive__tree__traversal_8cpp_source.html#l00201">recursive_tree_traversal.cpp:201</a></div></div>
+<div class="ttc" id="arecursive__tree__traversal_8cpp_html_a6d0455dd5c30adda100e95f0423c786e"><div class="ttname"><a href="#a6d0455dd5c30adda100e95f0423c786e">test3</a></div><div class="ttdeci">void test3()</div><div class="ttdoc">3rd test-case</div><div class="ttdef"><b>Definition</b> <a href="../../dc/de1/recursive__tree__traversal_8cpp_source.html#l00327">recursive_tree_traversal.cpp:327</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

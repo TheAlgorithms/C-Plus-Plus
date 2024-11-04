@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: greedy_algorithms Namespace Reference</title>
+<title>TheAlgorithms/C++: greedy_algorithms Namespace Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -135,11 +152,11 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a33e3819aa9ffec0e380383c52603b502" id="r_a33e3819aa9ffec0e380383c52603b502"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33e3819aa9ffec0e380383c52603b502">can_jump</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &amp;nums)</td></tr>
+<tr class="memitem:a33e3819aa9ffec0e380383c52603b502" id="r_a33e3819aa9ffec0e380383c52603b502"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33e3819aa9ffec0e380383c52603b502">can_jump</a> (const std::vector&lt; int &gt; &amp;nums)</td></tr>
 <tr class="memdesc:a33e3819aa9ffec0e380383c52603b502"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the given element (default is <code>1</code>) can jump to the last index.  <br /></td></tr>
 <tr class="separator:a33e3819aa9ffec0e380383c52603b502"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a349e4ab9a97532c3931a2bd2a19c0098" id="r_a349e4ab9a97532c3931a2bd2a19c0098"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> N, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> M&gt; </td></tr>
-<tr class="memitem:a349e4ab9a97532c3931a2bd2a19c0098"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a349e4ab9a97532c3931a2bd2a19c0098">findMinimumEdge</a> (const T &amp;infinity, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt;, M &gt; &amp;graph)</td></tr>
+<tr class="memitem:a349e4ab9a97532c3931a2bd2a19c0098" id="r_a349e4ab9a97532c3931a2bd2a19c0098"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N, std::size_t M&gt; </td></tr>
+<tr class="memitem:a349e4ab9a97532c3931a2bd2a19c0098"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a349e4ab9a97532c3931a2bd2a19c0098">findMinimumEdge</a> (const T &amp;infinity, const std::array&lt; std::array&lt; T, N &gt;, M &gt; &amp;graph)</td></tr>
 <tr class="memdesc:a349e4ab9a97532c3931a2bd2a19c0098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the minimum edge of the given graph.  <br /></td></tr>
 <tr class="separator:a349e4ab9a97532c3931a2bd2a19c0098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -147,16 +164,16 @@ Functions</h2></td></tr>
 <div class="textblock"><p>for string class </p>
 <p>for uint32_t</p>
 <p>Greedy Algorithms.</p>
-<p>For <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> to store separated digits.</p>
-<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
+<p>For std::vector to store separated digits.</p>
+<p>for std::vector</p>
 <p>for reverse function for tests for input and outputs</p>
 <p>Greedy Algorithms</p>
 <p>for assert for INT_MAX for IO operations</p>
 <p>Greedy Algorithms</p>
 <p>For reveresing the vector For assert() function to check for errors For abs() function For int64_t data type to handle large numbers For input/output operations</p>
 <p>Greedy Algorithms</p>
-<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/find.html">std::find</a> for assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
-<p>for assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></p>
+<p>for std::find for assert for std::uint32_t for std::vector</p>
+<p>for assert for std::cout</p>
 <p>Greedy Algorithms</p>
 <p>for array for IO operations for numeric limits</p>
 <p>Greedy Algorithms </p>
@@ -170,7 +187,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool greedy_algorithms::can_jump </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nums</em></span></td><td>)</td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nums</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -186,8 +203,10 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if the index can be reached </dd>
 <dd>
 false if the index can NOT be reached </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dba/jump__game_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../d6/dba/jump__game_8cpp_source.html">jump_game.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   42</span>                                          {</div>
-<div class="line"><span class="lineno">   43</span>    <span class="keywordtype">size_t</span> lastPos = nums.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() - 1;</div>
+<div class="line"><span class="lineno">   43</span>    <span class="keywordtype">size_t</span> lastPos = nums.size() - 1;</div>
 <div class="line"><span class="lineno">   44</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = lastPos; i != <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(-1); i--) {</div>
 <div class="line"><span class="lineno">   45</span>        <span class="keywordflow">if</span> (i + nums[i] &gt;= lastPos) {</div>
 <div class="line"><span class="lineno">   46</span>            lastPos = i;</div>
@@ -195,13 +214,7 @@ false if the index can NOT be reached </dd></dl>
 <div class="line"><span class="lineno">   48</span>    }</div>
 <div class="line"><span class="lineno">   49</span>    <span class="keywordflow">return</span> lastPos == 0;</div>
 <div class="line"><span class="lineno">   50</span>}</div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d90/namespacegreedy__algorithms_a33e3819aa9ffec0e380383c52603b502_cgraph.svg" width="310" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a349e4ab9a97532c3931a2bd2a19c0098" name="a349e4ab9a97532c3931a2bd2a19c0098"></a>
@@ -210,7 +223,7 @@ Here is the call graph for this function:</div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> N, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> M&gt; </div>
+template&lt;typename T , std::size_t N, std::size_t M&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void greedy_algorithms::findMinimumEdge </td>
@@ -220,7 +233,7 @@ template&lt;typename T , <a class="elRef" target="_blank" href="http://en.cppref
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt;, M &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>graph</em></span>&#160;)</td>
+          <td class="paramtype">const std::array&lt; std::array&lt; T, N &gt;, M &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>graph</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -234,9 +247,11 @@ template&lt;typename T , <a class="elRef" target="_blank" href="http://en.cppref
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d7d/kruskals__minimum__spanning__tree_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../d8/d7d/kruskals__minimum__spanning__tree_8cpp_source.html">kruskals_minimum_spanning_tree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   39</span>                                                               {</div>
 <div class="line"><span class="lineno">   40</span>    <span class="keywordflow">if</span> (N != M) {</div>
-<div class="line"><span class="lineno">   41</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nWrong input passed. Provided array has dimensions &quot;</span> &lt;&lt; N</div>
+<div class="line"><span class="lineno">   41</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\nWrong input passed. Provided array has dimensions &quot;</span> &lt;&lt; N</div>
 <div class="line"><span class="lineno">   42</span>                  &lt;&lt; <span class="stringliteral">&quot;x&quot;</span> &lt;&lt; M &lt;&lt; <span class="stringliteral">&quot;. Please provide a square matrix.\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   43</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">   44</span>    }</div>
@@ -249,11 +264,10 @@ template&lt;typename T , <a class="elRef" target="_blank" href="http://en.cppref
 <div class="line"><span class="lineno">   51</span>                minIndex = j;</div>
 <div class="line"><span class="lineno">   52</span>            }</div>
 <div class="line"><span class="lineno">   53</span>        }</div>
-<div class="line"><span class="lineno">   54</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;  -  &quot;</span> &lt;&lt; minIndex &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; <a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>[i][minIndex]</div>
+<div class="line"><span class="lineno">   54</span>        std::cout &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;  -  &quot;</span> &lt;&lt; minIndex &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; <a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>[i][minIndex]</div>
 <div class="line"><span class="lineno">   55</span>                  &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   56</span>    }</div>
 <div class="line"><span class="lineno">   57</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="anamespacegraph_html"><div class="ttname"><a href="../../df/dce/namespacegraph.html">graph</a></div><div class="ttdoc">Graph Algorithms.</div></div>
 </div><!-- fragment -->
 </div>

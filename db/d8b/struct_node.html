@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: Node&lt; ValueType &gt; Class Template Reference</title>
+<title>TheAlgorithms/C++: Node&lt; ValueType &gt; Class Template Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -122,8 +139,7 @@ Collaboration diagram for Node&lt; ValueType &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a13e548a3b57083015d76fd729e8f0356" id="r_a13e548a3b57083015d76fd729e8f0356"><td class="memItemLeft" align="right" valign="top"><a id="a13e548a3b57083015d76fd729e8f0356" name="a13e548a3b57083015d76fd729e8f0356"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = ValueType</td></tr>
+<tr class="memitem:a13e548a3b57083015d76fd729e8f0356" id="r_a13e548a3b57083015d76fd729e8f0356"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13e548a3b57083015d76fd729e8f0356">value_type</a> = ValueType</td></tr>
 <tr class="separator:a13e548a3b57083015d76fd729e8f0356"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -133,32 +149,49 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a9c1071551669a075fdd58d00065b468f" id="r_a9c1071551669a075fdd58d00065b468f"><td class="memItemLeft" align="right" valign="top"><a id="a9c1071551669a075fdd58d00065b468f" name="a9c1071551669a075fdd58d00065b468f"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
+<tr class="memitem:a9c1071551669a075fdd58d00065b468f" id="r_a9c1071551669a075fdd58d00065b468f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c1071551669a075fdd58d00065b468f">data</a></td></tr>
 <tr class="separator:a9c1071551669a075fdd58d00065b468f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15176b99cc8a5e244196ef9507064e43" id="r_a15176b99cc8a5e244196ef9507064e43"><td class="memItemLeft" align="right" valign="top"><a id="a15176b99cc8a5e244196ef9507064e43" name="a15176b99cc8a5e244196ef9507064e43"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>next</b></td></tr>
+<tr class="memitem:a15176b99cc8a5e244196ef9507064e43" id="r_a15176b99cc8a5e244196ef9507064e43"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15176b99cc8a5e244196ef9507064e43">next</a></td></tr>
 <tr class="separator:a15176b99cc8a5e244196ef9507064e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafcab960019c0424042fc29b9417d429" id="r_aafcab960019c0424042fc29b9417d429"><td class="memItemLeft" align="right" valign="top">ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aafcab960019c0424042fc29b9417d429">data</a> = {}</td></tr>
 <tr class="separator:aafcab960019c0424042fc29b9417d429"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada4dcc40c3b713e2c6211691913fd9d7" id="r_ada4dcc40c3b713e2c6211691913fd9d7"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="../../db/d8b/struct_node.html">Node</a>&lt; ValueType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada4dcc40c3b713e2c6211691913fd9d7">next</a> = {}</td></tr>
+<tr class="memitem:ada4dcc40c3b713e2c6211691913fd9d7" id="r_ada4dcc40c3b713e2c6211691913fd9d7"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../db/d8b/struct_node.html">Node</a>&lt; ValueType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada4dcc40c3b713e2c6211691913fd9d7">next</a> = {}</td></tr>
 <tr class="separator:ada4dcc40c3b713e2c6211691913fd9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c74895070ba94c7f278f84da71e0626" id="r_a6c74895070ba94c7f278f84da71e0626"><td class="memItemLeft" align="right" valign="top"><a id="a6c74895070ba94c7f278f84da71e0626" name="a6c74895070ba94c7f278f84da71e0626"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>val</b></td></tr>
+<tr class="memitem:a6c74895070ba94c7f278f84da71e0626" id="r_a6c74895070ba94c7f278f84da71e0626"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c74895070ba94c7f278f84da71e0626">val</a></td></tr>
 <tr class="separator:a6c74895070ba94c7f278f84da71e0626"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8333c97a790aca4fa59c36690d94f142" id="r_a8333c97a790aca4fa59c36690d94f142"><td class="memItemLeft" align="right" valign="top"><a id="a8333c97a790aca4fa59c36690d94f142" name="a8333c97a790aca4fa59c36690d94f142"></a>
-<a class="el" href="../../db/d8b/struct_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>next</b></td></tr>
+<tr class="memitem:a8333c97a790aca4fa59c36690d94f142" id="r_a8333c97a790aca4fa59c36690d94f142"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d8b/struct_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8333c97a790aca4fa59c36690d94f142">next</a></td></tr>
 <tr class="separator:a8333c97a790aca4fa59c36690d94f142"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class ValueType&gt;<br />
-class Node&lt; ValueType &gt;</div><p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> Definition of the node as a linked-list </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+class Node&lt; ValueType &gt;</div><p>for std::cout for std::shared_ptr for std::vector Definition of the node as a linked-list </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">ValueType</td><td>type of data nodes of the linked list should contain </td></tr>
   </table>
   </dd>
 </dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dce/linkedlist__implentation__usingarray_8cpp_source.html#l00014">14</a> of file <a class="el" href="../../d3/dce/linkedlist__implentation__usingarray_8cpp_source.html">linkedlist_implentation_usingarray.cpp</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a13e548a3b57083015d76fd729e8f0356" name="a13e548a3b57083015d76fd729e8f0356"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13e548a3b57083015d76fd729e8f0356">&#9670;&#160;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../db/d8b/struct_node.html">Node</a>&lt; ValueType &gt;::value_type = ValueType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d09/node_8hpp_source.html#l00017">17</a> of file <a class="el" href="../../d3/d09/node_8hpp_source.html">node.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8e229c3df1ce64226a1d2b51347dce0f" name="a8e229c3df1ce64226a1d2b51347dce0f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8e229c3df1ce64226a1d2b51347dce0f">&#9670;&#160;</a></span>Node()</h2>
 
@@ -187,13 +220,33 @@ template&lt;class ValueType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dab/get__size__of__linked__list_8cpp_source.html#l00008">8</a> of file <a class="el" href="../../d7/dab/get__size__of__linked__list_8cpp_source.html">get_size_of_linked_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">    8</span>: val(v), next(n) {}  <span class="comment">// Default constructor for Node</span></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a9c1071551669a075fdd58d00065b468f" name="a9c1071551669a075fdd58d00065b468f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c1071551669a075fdd58d00065b468f">&#9670;&#160;</a></span>data <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../db/d8b/struct_node.html">Node</a>&lt; ValueType &gt;::data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dce/linkedlist__implentation__usingarray_8cpp_source.html#l00015">15</a> of file <a class="el" href="../../d3/dce/linkedlist__implentation__usingarray_8cpp_source.html">linkedlist_implentation_usingarray.cpp</a>.</p>
+
+</div>
+</div>
 <a id="aafcab960019c0424042fc29b9417d429" name="aafcab960019c0424042fc29b9417d429"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafcab960019c0424042fc29b9417d429">&#9670;&#160;</a></span>data</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aafcab960019c0424042fc29b9417d429">&#9670;&#160;</a></span>data <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,12 +258,14 @@ template&lt;class ValueType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d09/node_8hpp_source.html#l00018">18</a> of file <a class="el" href="../../d3/d09/node_8hpp_source.html">node.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   18</span>{};</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ada4dcc40c3b713e2c6211691913fd9d7" name="ada4dcc40c3b713e2c6211691913fd9d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada4dcc40c3b713e2c6211691913fd9d7">&#9670;&#160;</a></span>next</h2>
+<a id="a15176b99cc8a5e244196ef9507064e43" name="a15176b99cc8a5e244196ef9507064e43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15176b99cc8a5e244196ef9507064e43">&#9670;&#160;</a></span>next <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,18 +273,74 @@ template&lt;class ValueType &gt; </div>
 template&lt;class ValueType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt;<a class="el" href="../../db/d8b/struct_node.html">Node</a>&lt;ValueType&gt; &gt; <a class="el" href="../../db/d8b/struct_node.html">Node</a>&lt; ValueType &gt;::next = {}</td>
+          <td class="memname">int <a class="el" href="../../db/d8b/struct_node.html">Node</a>&lt; ValueType &gt;::next</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dce/linkedlist__implentation__usingarray_8cpp_source.html#l00016">16</a> of file <a class="el" href="../../d3/dce/linkedlist__implentation__usingarray_8cpp_source.html">linkedlist_implentation_usingarray.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ada4dcc40c3b713e2c6211691913fd9d7" name="ada4dcc40c3b713e2c6211691913fd9d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada4dcc40c3b713e2c6211691913fd9d7">&#9670;&#160;</a></span>next <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="../../db/d8b/struct_node.html">Node</a>&lt;ValueType&gt; &gt; <a class="el" href="../../db/d8b/struct_node.html">Node</a>&lt; ValueType &gt;::next = {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d09/node_8hpp_source.html#l00019">19</a> of file <a class="el" href="../../d3/d09/node_8hpp_source.html">node.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   19</span>{};</div>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a8333c97a790aca4fa59c36690d94f142" name="a8333c97a790aca4fa59c36690d94f142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8333c97a790aca4fa59c36690d94f142">&#9670;&#160;</a></span>next <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d8b/struct_node.html">Node</a>* <a class="el" href="../../db/d8b/struct_node.html">Node</a>&lt; ValueType &gt;::next</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dab/get__size__of__linked__list_8cpp_source.html#l00006">6</a> of file <a class="el" href="../../d7/dab/get__size__of__linked__list_8cpp_source.html">get_size_of_linked_list.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6c74895070ba94c7f278f84da71e0626" name="a6c74895070ba94c7f278f84da71e0626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c74895070ba94c7f278f84da71e0626">&#9670;&#160;</a></span>val</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../db/d8b/struct_node.html">Node</a>&lt; ValueType &gt;::val</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dab/get__size__of__linked__list_8cpp_source.html#l00005">5</a> of file <a class="el" href="../../d7/dab/get__size__of__linked__list_8cpp_source.html">get_size_of_linked_list.cpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>data_structures/<a class="el" href="../../d3/dce/linkedlist__implentation__usingarray_8cpp.html">linkedlist_implentation_usingarray.cpp</a></li>
+<li>data_structures/<a class="el" href="../../d3/dce/linkedlist__implentation__usingarray_8cpp_source.html">linkedlist_implentation_usingarray.cpp</a></li>
 <li>data_structures/<a class="el" href="../../d3/d09/node_8hpp_source.html">node.hpp</a></li>
-<li>operations_on_datastructures/<b>get_size_of_linked_list.cpp</b></li>
+<li>operations_on_datastructures/<a class="el" href="../../d7/dab/get__size__of__linked__list_8cpp_source.html">get_size_of_linked_list.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

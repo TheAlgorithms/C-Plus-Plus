@@ -1,9 +1,0 @@
-<map id="longest_increasing_subsequence_using_binary_search" name="longest_increasing_subsequence_using_binary_search">
-<area shape="rect" id="Node000001" title="for std::uint32_t" alt="" coords="5,40,191,95"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/empty.html#" title=" " alt="" coords="239,5,366,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,42,231,33,232,38,192,48"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/lower_bound.html#" title=" " alt="" coords="242,55,362,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,65,227,65,227,70,191,70"/>
-<area shape="rect" id="Node000004" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="245,104,360,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="192,87,232,97,231,102,191,93"/>
-</map>

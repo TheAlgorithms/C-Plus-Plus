@@ -68,7 +68,7 @@ var sectionId = 'dynsection-0';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" xlink:title=" ">
+<g id="a_Node000003"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="313.25,-87 191.5,-87 191.5,-45.25 313.25,-45.25 313.25,-87"/>
 <text text-anchor="start" x="199.5" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr&lt; data</text>
 <text text-anchor="start" x="199.5" y="-62.25" font-family="Helvetica,sans-Serif" font-size="10.00">_structures::trie_using</text>
@@ -89,7 +89,7 @@ var sectionId = 'dynsection-0';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/unordered_map.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="517.5,-64.25 392,-64.25 392,0 517.5,0 517.5,-64.25"/>
 <text text-anchor="start" x="400" y="-50.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::unordered_map</text>
 <text text-anchor="start" x="400" y="-39.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; char16_t, std::shared</text>

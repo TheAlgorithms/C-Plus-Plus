@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: search/longest_increasing_subsequence_using_binary_search.cpp File Reference</title>
+<title>TheAlgorithms/C++: search/longest_increasing_subsequence_using_binary_search.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -122,12 +139,14 @@ Include dependency graph for longest_increasing_subsequence_using_binary_search.
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d04/longest__increasing__subsequence__using__binary__search_8cpp__incl.svg" width="435" height="140"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d9/d5f/longest__increasing__subsequence__using__binary__search_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a313539d9a97fc6e121ce496873ba892e" id="r_a313539d9a97fc6e121ce496873ba892e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a313539d9a97fc6e121ce496873ba892e"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a313539d9a97fc6e121ce496873ba892e">longest_increasing_subsequence_using_binary_search</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;nums)</td></tr>
-<tr class="memdesc:a313539d9a97fc6e121ce496873ba892e"><td class="mdescLeft">&#160;</td><td class="mdescRight">for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a>  <br /></td></tr>
+<tr class="memitem:a313539d9a97fc6e121ce496873ba892e"><td class="memTemplItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a313539d9a97fc6e121ce496873ba892e">longest_increasing_subsequence_using_binary_search</a> (std::vector&lt; T &gt; &amp;nums)</td></tr>
+<tr class="memdesc:a313539d9a97fc6e121ce496873ba892e"><td class="mdescLeft">&#160;</td><td class="mdescRight">for std::uint32_t  <br /></td></tr>
 <tr class="separator:a313539d9a97fc6e121ce496873ba892e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a483bb8ccf42aaf7375a83e91490eda1e" id="r_a483bb8ccf42aaf7375a83e91490eda1e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a> ()</td></tr>
 <tr class="memdesc:a483bb8ccf42aaf7375a83e91490eda1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test cases for Longest Increasing Subsequence function.  <br /></td></tr>
@@ -151,6 +170,8 @@ Functions</h2></td></tr>
 <p>Time complexity: O(n∗log(n)) Space complexity: O(1)</p>
 <p>This approach consider Most optimal Approach for solving this problem</p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/namanmodi65" target="_blank">Naman Jain</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d9/d5f/longest__increasing__subsequence__using__binary__search_8cpp_source.html">longest_increasing_subsequence_using_binary_search.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a313539d9a97fc6e121ce496873ba892e" name="a313539d9a97fc6e121ce496873ba892e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a313539d9a97fc6e121ce496873ba892e">&#9670;&#160;</a></span>longest_increasing_subsequence_using_binary_search()</h2>
@@ -161,16 +182,16 @@ Functions</h2></td></tr>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> longest_increasing_subsequence_using_binary_search </td>
+          <td class="memname">std::uint32_t longest_increasing_subsequence_using_binary_search </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nums</em></span></td><td>)</td>
+          <td class="paramtype">std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nums</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> </p>
-<p>for std::assert for IO operations for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/lower_bound.html">std::lower_bound</a></p>
+<p>for std::uint32_t </p>
+<p>for std::assert for IO operations for std::vector for std::lower_bound</p>
 <p>Function to find the length of the Longest Increasing Subsequence (LIS) using Binary Search </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The type of the elements in the input vector </td></tr>
@@ -184,33 +205,24 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The length of the longest increasing subsequence </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/longest__increasing__subsequence__using__binary__search_8cpp_source.html#l00065">65</a> of file <a class="el" href="../../d9/d5f/longest__increasing__subsequence__using__binary__search_8cpp_source.html">longest_increasing_subsequence_using_binary_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   65</span>                                                                                   {</div>
-<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">if</span> (nums.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/empty.html">empty</a>()) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">if</span> (nums.empty()) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   67</span> </div>
-<div class="line"><span class="lineno">   68</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> ans;</div>
+<div class="line"><span class="lineno">   68</span>    std::vector&lt;T&gt; ans;</div>
 <div class="line"><span class="lineno">   69</span>    ans.push_back(nums[0]);</div>
-<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">for</span> (<a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> i = 1; i &lt; nums.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {</div>
+<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">for</span> (std::size_t i = 1; i &lt; nums.size(); i++) {</div>
 <div class="line"><span class="lineno">   71</span>        <span class="keywordflow">if</span> (nums[i] &gt; ans.back()) {</div>
 <div class="line"><span class="lineno">   72</span>            ans.push_back(nums[i]);</div>
 <div class="line"><span class="lineno">   73</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   74</span>            <span class="keyword">auto</span> idx = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/lower_bound.html">std::lower_bound</a>(ans.begin(), ans.end(), nums[i]) - ans.begin();</div>
+<div class="line"><span class="lineno">   74</span>            <span class="keyword">auto</span> idx = std::lower_bound(ans.begin(), ans.end(), nums[i]) - ans.begin();</div>
 <div class="line"><span class="lineno">   75</span>            ans[idx] = nums[i];</div>
 <div class="line"><span class="lineno">   76</span>        }</div>
 <div class="line"><span class="lineno">   77</span>    }</div>
-<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a><span class="keyword">&gt;</span>(ans.size());</div>
+<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::uint32_t<span class="keyword">&gt;</span>(ans.size());</div>
 <div class="line"><span class="lineno">   79</span>}</div>
-<div class="ttc" id="aempty_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/empty.html">std::vector::empty</a></div><div class="ttdeci">T empty(T... args)</div></div>
-<div class="ttc" id="ainteger_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a></div></div>
-<div class="ttc" id="alower_bound_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/lower_bound.html">std::lower_bound</a></div><div class="ttdeci">T lower_bound(T... args)</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-<div class="ttc" id="asize_t_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a></div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d5f/longest__increasing__subsequence__using__binary__search_8cpp_a313539d9a97fc6e121ce496873ba892e_cgraph.svg" width="372" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -230,17 +242,14 @@ Here is the call graph for this function:</div>
 
 <p>Main function to run tests. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/longest__increasing__subsequence__using__binary__search_8cpp_source.html#l00114">114</a> of file <a class="el" href="../../d9/d5f/longest__increasing__subsequence__using__binary__search_8cpp_source.html">longest_increasing_subsequence_using_binary_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  114</span>           {</div>
 <div class="line"><span class="lineno">  115</span>    <a class="code hl_function" href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a>();  <span class="comment">// run self test implementation</span></div>
 <div class="line"><span class="lineno">  116</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  117</span>}</div>
-<div class="ttc" id="alongest__increasing__subsequence__using__binary__search_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">Test cases for Longest Increasing Subsequence function.</div><div class="ttdef"><b>Definition</b> longest_increasing_subsequence_using_binary_search.cpp:85</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d5f/longest__increasing__subsequence__using__binary__search_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="567" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="alongest__increasing__subsequence__using__binary__search_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">Test cases for Longest Increasing Subsequence function.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d5f/longest__increasing__subsequence__using__binary__search_8cpp_source.html#l00085">longest_increasing_subsequence_using_binary_search.cpp:85</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a483bb8ccf42aaf7375a83e91490eda1e" name="a483bb8ccf42aaf7375a83e91490eda1e"></a>
@@ -268,38 +277,34 @@ Here is the call graph for this function:</div>
 
 <p>Test cases for Longest Increasing Subsequence function. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/longest__increasing__subsequence__using__binary__search_8cpp_source.html#l00085">85</a> of file <a class="el" href="../../d9/d5f/longest__increasing__subsequence__using__binary__search_8cpp_source.html">longest_increasing_subsequence_using_binary_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   85</span>                    {</div>
-<div class="line"><span class="lineno">   86</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> arr = {10, 9, 2, 5, 3, 7, 101, 18};</div>
+<div class="line"><span class="lineno">   86</span>    std::vector&lt;int&gt; arr = {10, 9, 2, 5, 3, 7, 101, 18};</div>
 <div class="line"><span class="lineno">   87</span>    assert(<a class="code hl_function" href="#a313539d9a97fc6e121ce496873ba892e">longest_increasing_subsequence_using_binary_search</a>(arr) == 4);</div>
 <div class="line"><span class="lineno">   88</span> </div>
-<div class="line"><span class="lineno">   89</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> arr2 = {0, 1, 0, 3, 2, 3};</div>
+<div class="line"><span class="lineno">   89</span>    std::vector&lt;int&gt; arr2 = {0, 1, 0, 3, 2, 3};</div>
 <div class="line"><span class="lineno">   90</span>    assert(<a class="code hl_function" href="#a313539d9a97fc6e121ce496873ba892e">longest_increasing_subsequence_using_binary_search</a>(arr2) == 4);</div>
 <div class="line"><span class="lineno">   91</span> </div>
-<div class="line"><span class="lineno">   92</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> arr3 = {7, 7, 7, 7, 7, 7, 7};</div>
+<div class="line"><span class="lineno">   92</span>    std::vector&lt;int&gt; arr3 = {7, 7, 7, 7, 7, 7, 7};</div>
 <div class="line"><span class="lineno">   93</span>    assert(<a class="code hl_function" href="#a313539d9a97fc6e121ce496873ba892e">longest_increasing_subsequence_using_binary_search</a>(arr3) == 1);</div>
 <div class="line"><span class="lineno">   94</span> </div>
-<div class="line"><span class="lineno">   95</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> arr4 = {-10, -1, -5, 0, 5, 1, 2};</div>
+<div class="line"><span class="lineno">   95</span>    std::vector&lt;int&gt; arr4 = {-10, -1, -5, 0, 5, 1, 2};</div>
 <div class="line"><span class="lineno">   96</span>    assert(<a class="code hl_function" href="#a313539d9a97fc6e121ce496873ba892e">longest_increasing_subsequence_using_binary_search</a>(arr4) == 5);</div>
 <div class="line"><span class="lineno">   97</span> </div>
-<div class="line"><span class="lineno">   98</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;double&gt;</a> arr5 = {3.5, 1.2, 2.8, 3.1, 4.0};</div>
+<div class="line"><span class="lineno">   98</span>    std::vector&lt;double&gt; arr5 = {3.5, 1.2, 2.8, 3.1, 4.0};</div>
 <div class="line"><span class="lineno">   99</span>    assert(<a class="code hl_function" href="#a313539d9a97fc6e121ce496873ba892e">longest_increasing_subsequence_using_binary_search</a>(arr5) == 4);</div>
 <div class="line"><span class="lineno">  100</span> </div>
-<div class="line"><span class="lineno">  101</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;char&gt;</a> arr6 = {<span class="charliteral">&#39;a&#39;</span>, <span class="charliteral">&#39;b&#39;</span>, <span class="charliteral">&#39;c&#39;</span>, <span class="charliteral">&#39;a&#39;</span>, <span class="charliteral">&#39;d&#39;</span>};</div>
+<div class="line"><span class="lineno">  101</span>    std::vector&lt;char&gt; arr6 = {<span class="charliteral">&#39;a&#39;</span>, <span class="charliteral">&#39;b&#39;</span>, <span class="charliteral">&#39;c&#39;</span>, <span class="charliteral">&#39;a&#39;</span>, <span class="charliteral">&#39;d&#39;</span>};</div>
 <div class="line"><span class="lineno">  102</span>    assert(<a class="code hl_function" href="#a313539d9a97fc6e121ce496873ba892e">longest_increasing_subsequence_using_binary_search</a>(arr6) == 4);</div>
 <div class="line"><span class="lineno">  103</span> </div>
-<div class="line"><span class="lineno">  104</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> arr7 = {};</div>
+<div class="line"><span class="lineno">  104</span>    std::vector&lt;int&gt; arr7 = {};</div>
 <div class="line"><span class="lineno">  105</span>    assert(<a class="code hl_function" href="#a313539d9a97fc6e121ce496873ba892e">longest_increasing_subsequence_using_binary_search</a>(arr7) == 0);</div>
 <div class="line"><span class="lineno">  106</span> </div>
-<div class="line"><span class="lineno">  107</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  107</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  108</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="alongest__increasing__subsequence__using__binary__search_8cpp_html_a313539d9a97fc6e121ce496873ba892e"><div class="ttname"><a href="#a313539d9a97fc6e121ce496873ba892e">longest_increasing_subsequence_using_binary_search</a></div><div class="ttdeci">std::uint32_t longest_increasing_subsequence_using_binary_search(std::vector&lt; T &gt; &amp;nums)</div><div class="ttdoc">for std::uint32_t</div><div class="ttdef"><b>Definition</b> longest_increasing_subsequence_using_binary_search.cpp:65</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d5f/longest__increasing__subsequence__using__binary__search_8cpp_a483bb8ccf42aaf7375a83e91490eda1e_cgraph.svg" width="470" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="alongest__increasing__subsequence__using__binary__search_8cpp_html_a313539d9a97fc6e121ce496873ba892e"><div class="ttname"><a href="#a313539d9a97fc6e121ce496873ba892e">longest_increasing_subsequence_using_binary_search</a></div><div class="ttdeci">std::uint32_t longest_increasing_subsequence_using_binary_search(std::vector&lt; T &gt; &amp;nums)</div><div class="ttdoc">for std::uint32_t</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d5f/longest__increasing__subsequence__using__binary__search_8cpp_source.html#l00065">longest_increasing_subsequence_using_binary_search.cpp:65</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

@@ -1,7 +1,0 @@
-<map id="tests" name="tests">
-<area shape="rect" id="Node000001" title="Self&#45;test implementations." alt="" coords="5,42,56,68"/>
-<area shape="rect" id="Node000002" href="$d0/d6f/namespaceothers.html#aa17dc6d061dff34f6b9a610bc5e26703" title="Compare two floating point numbers with a certain tolerance. This is needed as with some values,..." alt="" coords="122,5,251,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="56,48,106,38,107,43,57,53"/>
-<area shape="rect" id="Node000003" href="$d0/d6f/namespaceothers.html#a48677fae5d683070432b1a905722d9ec" title="Conversion from Kelvin to Celsius algorithm." alt="" coords="104,70,269,96"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="57,57,97,64,96,69,56,62"/>
-</map>

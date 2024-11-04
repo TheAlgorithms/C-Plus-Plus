@@ -1,8 +1,0 @@
-<map id="main" name="main">
-<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,29,55,55"/>
-<area shape="rect" id="Node000002" href="$d9/d00/factorial_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e" title="Self&#45;test implementations." alt="" coords="103,29,153,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,40,88,40,88,45,55,45"/>
-<area shape="rect" id="Node000003" href="$dd/d47/namespacemath.html#a7e78996673df791014cfe540b183456a" title="function to find factorial of given number" alt="" coords="201,29,305,55"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="153,40,186,40,186,45,153,45"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="231,30,227,21,230,11,239,5,253,3,269,5,277,12,274,16,267,10,253,8,241,10,234,14,232,20,236,28"/>
-</map>

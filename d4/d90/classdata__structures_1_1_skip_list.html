@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: data_structures::SkipList Class Reference</title>
+<title>TheAlgorithms/C++: data_structures::SkipList Class Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -134,17 +151,17 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a3e249c2c35a8b7f5ffd2d77fee60d650" id="r_a3e249c2c35a8b7f5ffd2d77fee60d650"><td class="memItemLeft" align="right" valign="top"><a id="a3e249c2c35a8b7f5ffd2d77fee60d650" name="a3e249c2c35a8b7f5ffd2d77fee60d650"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>level</b></td></tr>
-<tr class="memdesc:a3e249c2c35a8b7f5ffd2d77fee60d650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum level of the skiplist. <br /></td></tr>
+<tr class="memitem:a3e249c2c35a8b7f5ffd2d77fee60d650" id="r_a3e249c2c35a8b7f5ffd2d77fee60d650"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e249c2c35a8b7f5ffd2d77fee60d650">level</a></td></tr>
+<tr class="memdesc:a3e249c2c35a8b7f5ffd2d77fee60d650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum level of the skiplist.  <br /></td></tr>
 <tr class="separator:a3e249c2c35a8b7f5ffd2d77fee60d650"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7e392386d7db622185d6f7c718e4f16" id="r_ad7e392386d7db622185d6f7c718e4f16"><td class="memItemLeft" align="right" valign="top"><a id="ad7e392386d7db622185d6f7c718e4f16" name="ad7e392386d7db622185d6f7c718e4f16"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="../../d9/d49/structdata__structures_1_1_node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>header</b></td></tr>
-<tr class="memdesc:ad7e392386d7db622185d6f7c718e4f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the header node. <br /></td></tr>
+<tr class="memitem:ad7e392386d7db622185d6f7c718e4f16" id="r_ad7e392386d7db622185d6f7c718e4f16"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../d9/d49/structdata__structures_1_1_node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7e392386d7db622185d6f7c718e4f16">header</a></td></tr>
+<tr class="memdesc:ad7e392386d7db622185d6f7c718e4f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the header node.  <br /></td></tr>
 <tr class="separator:ad7e392386d7db622185d6f7c718e4f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../d4/d90/classdata__structures_1_1_skip_list.html">SkipList</a> class implementation with basic methods </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d5a/skip__list_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../d0/d5a/skip__list_8cpp_source.html">skip_list.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7ffc3688725b9d1ec6e5bb881a6e2ae4" name="a7ffc3688725b9d1ec6e5bb881a6e2ae4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ffc3688725b9d1ec6e5bb881a6e2ae4">&#9670;&#160;</a></span>SkipList()</h2>
@@ -169,21 +186,17 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>level</b></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Skip List constructor. Initializes header, start <a class="el" href="../../d9/d49/structdata__structures_1_1_node.html">Node</a> for searching in the list </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d5a/skip__list_8cpp_source.html#l00064">64</a> of file <a class="el" href="../../d0/d5a/skip__list_8cpp_source.html">skip_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   64</span>               {</div>
 <div class="line"><span class="lineno">   65</span>        <a class="code hl_variable" href="#a3e249c2c35a8b7f5ffd2d77fee60d650">level</a> = 0;</div>
 <div class="line"><span class="lineno">   66</span>        <span class="comment">// Header initialization</span></div>
-<div class="line"><span class="lineno">   67</span>        <a class="code hl_variable" href="#ad7e392386d7db622185d6f7c718e4f16">header</a> = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html">std::make_shared&lt;Node&gt;</a>(-1, <a class="code hl_variable" href="../../d5/d3c/namespacedata__structures.html#ac0d7e0be24da9f41bcb19745873c436a">MAX_LEVEL</a>);</div>
+<div class="line"><span class="lineno">   67</span>        <a class="code hl_variable" href="#ad7e392386d7db622185d6f7c718e4f16">header</a> = std::make_shared&lt;Node&gt;(-1, <a class="code hl_variable" href="../../d5/d3c/namespacedata__structures.html#ac0d7e0be24da9f41bcb19745873c436a">MAX_LEVEL</a>);</div>
 <div class="line"><span class="lineno">   68</span>    }</div>
-<div class="ttc" id="aclassdata__structures_1_1_skip_list_html_a3e249c2c35a8b7f5ffd2d77fee60d650"><div class="ttname"><a href="#a3e249c2c35a8b7f5ffd2d77fee60d650">data_structures::SkipList::level</a></div><div class="ttdeci">int level</div><div class="ttdoc">Maximum level of the skiplist.</div><div class="ttdef"><b>Definition</b> skip_list.cpp:56</div></div>
-<div class="ttc" id="aclassdata__structures_1_1_skip_list_html_ad7e392386d7db622185d6f7c718e4f16"><div class="ttname"><a href="#ad7e392386d7db622185d6f7c718e4f16">data_structures::SkipList::header</a></div><div class="ttdeci">std::shared_ptr&lt; Node &gt; header</div><div class="ttdoc">Pointer to the header node.</div><div class="ttdef"><b>Definition</b> skip_list.cpp:57</div></div>
-<div class="ttc" id="amake_shared_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html">std::make_shared</a></div><div class="ttdeci">T make_shared(T... args)</div></div>
-<div class="ttc" id="anamespacedata__structures_html_ac0d7e0be24da9f41bcb19745873c436a"><div class="ttname"><a href="../../d5/d3c/namespacedata__structures.html#ac0d7e0be24da9f41bcb19745873c436a">data_structures::MAX_LEVEL</a></div><div class="ttdeci">constexpr int MAX_LEVEL</div><div class="ttdoc">Maximum level of skip list.</div><div class="ttdef"><b>Definition</b> skip_list.cpp:27</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d90/classdata__structures_1_1_skip_list_a7ffc3688725b9d1ec6e5bb881a6e2ae4_cgraph.svg" width="351" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassdata__structures_1_1_skip_list_html_a3e249c2c35a8b7f5ffd2d77fee60d650"><div class="ttname"><a href="#a3e249c2c35a8b7f5ffd2d77fee60d650">data_structures::SkipList::level</a></div><div class="ttdeci">int level</div><div class="ttdoc">Maximum level of the skiplist.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d5a/skip__list_8cpp_source.html#l00056">skip_list.cpp:56</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1_skip_list_html_ad7e392386d7db622185d6f7c718e4f16"><div class="ttname"><a href="#ad7e392386d7db622185d6f7c718e4f16">data_structures::SkipList::header</a></div><div class="ttdeci">std::shared_ptr&lt; Node &gt; header</div><div class="ttdoc">Pointer to the header node.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d5a/skip__list_8cpp_source.html#l00057">skip_list.cpp:57</a></div></div>
+<div class="ttc" id="anamespacedata__structures_html_ac0d7e0be24da9f41bcb19745873c436a"><div class="ttname"><a href="../../d5/d3c/namespacedata__structures.html#ac0d7e0be24da9f41bcb19745873c436a">data_structures::MAX_LEVEL</a></div><div class="ttdeci">constexpr int MAX_LEVEL</div><div class="ttdoc">Maximum level of skip list.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d5a/skip__list_8cpp_source.html#l00027">skip_list.cpp:27</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -215,11 +228,13 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d5a/skip__list_8cpp_source.html#l00133">133</a> of file <a class="el" href="../../d0/d5a/skip__list_8cpp_source.html">skip_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  133</span>                                {</div>
-<div class="line"><span class="lineno">  134</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;Node&gt;</a> x = <a class="code hl_variable" href="#ad7e392386d7db622185d6f7c718e4f16">header</a>;</div>
+<div class="line"><span class="lineno">  134</span>        std::shared_ptr&lt;Node&gt; x = <a class="code hl_variable" href="#ad7e392386d7db622185d6f7c718e4f16">header</a>;</div>
 <div class="line"><span class="lineno">  135</span> </div>
-<div class="line"><span class="lineno">  136</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::shared_ptr&lt;Node&gt;</a>, <a class="code hl_variable" href="../../d5/d3c/namespacedata__structures.html#ac0d7e0be24da9f41bcb19745873c436a">MAX_LEVEL</a> + 1&gt; <a class="code hl_function" href="../../d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0">update</a>;</div>
-<div class="line"><span class="lineno">  137</span>        <a class="code hl_function" href="../../d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0">update</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/fill.html">fill</a>(<span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  136</span>        std::array&lt;std::shared_ptr&lt;Node&gt;, <a class="code hl_variable" href="../../d5/d3c/namespacedata__structures.html#ac0d7e0be24da9f41bcb19745873c436a">MAX_LEVEL</a> + 1&gt; <a class="code hl_function" href="../../d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0">update</a>;</div>
+<div class="line"><span class="lineno">  137</span>        <a class="code hl_function" href="../../d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0">update</a>.fill(<span class="keyword">nullptr</span>);</div>
 <div class="line"><span class="lineno">  138</span> </div>
 <div class="line"><span class="lineno">  139</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = <a class="code hl_variable" href="#a3e249c2c35a8b7f5ffd2d77fee60d650">level</a>; i &gt;= 0; i--) {</div>
 <div class="line"><span class="lineno">  140</span>            <span class="keywordflow">while</span> (x-&gt;forward[i] != <span class="keyword">nullptr</span> &amp;&amp; x-&gt;forward[i]-&gt;key &lt; key) {</div>
@@ -241,23 +256,13 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  156</span>            }</div>
 <div class="line"><span class="lineno">  157</span>            <span class="comment">/* Remove empty levels*/</span></div>
 <div class="line"><span class="lineno">  158</span>            <span class="keywordflow">while</span> (<a class="code hl_variable" href="#a3e249c2c35a8b7f5ffd2d77fee60d650">level</a> &gt; 0 &amp;&amp; <a class="code hl_variable" href="#ad7e392386d7db622185d6f7c718e4f16">header</a>-&gt;forward[<a class="code hl_variable" href="#a3e249c2c35a8b7f5ffd2d77fee60d650">level</a>] == <span class="keyword">nullptr</span>) <a class="code hl_variable" href="#a3e249c2c35a8b7f5ffd2d77fee60d650">level</a>--;</div>
-<div class="line"><span class="lineno">  159</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Deleted&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  159</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Deleted&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  160</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  161</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Doesn&#39;t exist&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  161</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Doesn&#39;t exist&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  162</span>        }</div>
 <div class="line"><span class="lineno">  163</span>    }</div>
-<div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="afill_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array/fill.html">std::array::fill</a></div><div class="ttdeci">T fill(T... args)</div></div>
-<div class="ttc" id="asegtree_8cpp_html_abd3e818681fb2e29cf08f4f60f82c8e0"><div class="ttname"><a href="../../d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0">update</a></div><div class="ttdeci">void update(std::vector&lt; int64_t &gt; *segtree, std::vector&lt; int64_t &gt; *lazy, int64_t start, int64_t end, int64_t delta, uint64_t low, uint64_t high, uint64_t pos)</div><div class="ttdoc">Updates a range of the segment tree.</div><div class="ttdef"><b>Definition</b> segtree.cpp:103</div></div>
-<div class="ttc" id="ashared_ptr_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d90/classdata__structures_1_1_skip_list_a86925c53e139cc6c3f7df1e9003bb0b0_cgraph.svg" width="323" height="159"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="asegtree_8cpp_html_abd3e818681fb2e29cf08f4f60f82c8e0"><div class="ttname"><a href="../../d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0">update</a></div><div class="ttdeci">void update(std::vector&lt; int64_t &gt; *segtree, std::vector&lt; int64_t &gt; *lazy, int64_t start, int64_t end, int64_t delta, uint64_t low, uint64_t high, uint64_t pos)</div><div class="ttdoc">Updates a range of the segment tree.</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d45/segtree_8cpp_source.html#l00103">segtree.cpp:103</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a812611f80b8079268dbb19cc4e9bee5c" name="a812611f80b8079268dbb19cc4e9bee5c"></a>
@@ -283,25 +288,22 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Display skip list level </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d5a/skip__list_8cpp_source.html#l00191">191</a> of file <a class="el" href="../../d0/d5a/skip__list_8cpp_source.html">skip_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  191</span>                       {</div>
-<div class="line"><span class="lineno">  192</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Displaying list:\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  192</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Displaying list:\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  193</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= <a class="code hl_variable" href="#a3e249c2c35a8b7f5ffd2d77fee60d650">level</a>; i++) {</div>
-<div class="line"><span class="lineno">  194</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;Node&gt;</a> <a class="code hl_class" href="../../d5/da1/structnode.html">node</a> = <a class="code hl_variable" href="#ad7e392386d7db622185d6f7c718e4f16">header</a>-&gt;forward[i];</div>
-<div class="line"><span class="lineno">  195</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Level &quot;</span> &lt;&lt; (i) &lt;&lt; <span class="stringliteral">&quot;: &quot;</span>;</div>
+<div class="line"><span class="lineno">  194</span>            std::shared_ptr&lt;Node&gt; <a class="code hl_class" href="../../d5/da1/structnode.html">node</a> = <a class="code hl_variable" href="#ad7e392386d7db622185d6f7c718e4f16">header</a>-&gt;forward[i];</div>
+<div class="line"><span class="lineno">  195</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Level &quot;</span> &lt;&lt; (i) &lt;&lt; <span class="stringliteral">&quot;: &quot;</span>;</div>
 <div class="line"><span class="lineno">  196</span>            <span class="keywordflow">while</span> (<a class="code hl_class" href="../../d5/da1/structnode.html">node</a> != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">  197</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;key &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">  197</span>                std::cout &lt;&lt; <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;key &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
 <div class="line"><span class="lineno">  198</span>                <a class="code hl_class" href="../../d5/da1/structnode.html">node</a> = <a class="code hl_class" href="../../d5/da1/structnode.html">node</a>-&gt;forward[i];</div>
 <div class="line"><span class="lineno">  199</span>            }</div>
-<div class="line"><span class="lineno">  200</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  200</span>            std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  201</span>        }</div>
 <div class="line"><span class="lineno">  202</span>    }</div>
-<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition</b> binary_search_tree.cpp:11</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d90/classdata__structures_1_1_skip_list_a812611f80b8079268dbb19cc4e9bee5c_cgraph.svg" width="296" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d26/binary__search__tree_8cpp_source.html#l00011">binary_search_tree.cpp:11</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a40a4042bdf0b6683b5f21ae7854de8a9" name="a40a4042bdf0b6683b5f21ae7854de8a9"></a>
@@ -337,11 +339,13 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d5a/skip__list_8cpp_source.html#l00090">90</a> of file <a class="el" href="../../d0/d5a/skip__list_8cpp_source.html">skip_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   90</span>                                             {</div>
-<div class="line"><span class="lineno">   91</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Inserting&quot;</span> &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot;...&quot;</span>;</div>
-<div class="line"><span class="lineno">   92</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;Node&gt;</a> x = <a class="code hl_variable" href="#ad7e392386d7db622185d6f7c718e4f16">header</a>;</div>
-<div class="line"><span class="lineno">   93</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::shared_ptr&lt;Node&gt;</a>, <a class="code hl_variable" href="../../d5/d3c/namespacedata__structures.html#ac0d7e0be24da9f41bcb19745873c436a">MAX_LEVEL</a> + 1&gt; <a class="code hl_function" href="../../d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0">update</a>;</div>
-<div class="line"><span class="lineno">   94</span>        <a class="code hl_function" href="../../d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0">update</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/fill.html">fill</a>(<span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">   91</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Inserting&quot;</span> &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot;...&quot;</span>;</div>
+<div class="line"><span class="lineno">   92</span>        std::shared_ptr&lt;Node&gt; x = <a class="code hl_variable" href="#ad7e392386d7db622185d6f7c718e4f16">header</a>;</div>
+<div class="line"><span class="lineno">   93</span>        std::array&lt;std::shared_ptr&lt;Node&gt;, <a class="code hl_variable" href="../../d5/d3c/namespacedata__structures.html#ac0d7e0be24da9f41bcb19745873c436a">MAX_LEVEL</a> + 1&gt; <a class="code hl_function" href="../../d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0">update</a>;</div>
+<div class="line"><span class="lineno">   94</span>        <a class="code hl_function" href="../../d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0">update</a>.fill(<span class="keyword">nullptr</span>);</div>
 <div class="line"><span class="lineno">   95</span> </div>
 <div class="line"><span class="lineno">   96</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = <a class="code hl_variable" href="#a3e249c2c35a8b7f5ffd2d77fee60d650">level</a>; i &gt;= 0; i--) {</div>
 <div class="line"><span class="lineno">   97</span>            <span class="keywordflow">while</span> (x-&gt;forward[i] != <span class="keyword">nullptr</span> &amp;&amp; x-&gt;forward[i]-&gt;key &lt; key) {</div>
@@ -363,25 +367,20 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  113</span>                <a class="code hl_variable" href="#a3e249c2c35a8b7f5ffd2d77fee60d650">level</a> = rlevel;</div>
 <div class="line"><span class="lineno">  114</span>            }</div>
 <div class="line"><span class="lineno">  115</span> </div>
-<div class="line"><span class="lineno">  116</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;Node&gt;</a> n =</div>
-<div class="line"><span class="lineno">  117</span>                <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html">std::make_shared&lt;Node&gt;</a>(key, rlevel, value);</div>
+<div class="line"><span class="lineno">  116</span>            std::shared_ptr&lt;Node&gt; n =</div>
+<div class="line"><span class="lineno">  117</span>                std::make_shared&lt;Node&gt;(key, rlevel, value);</div>
 <div class="line"><span class="lineno">  118</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= rlevel; i++) {</div>
 <div class="line"><span class="lineno">  119</span>                n-&gt;forward[i] = <a class="code hl_function" href="../../d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0">update</a>[i]-&gt;forward[i];</div>
 <div class="line"><span class="lineno">  120</span>                <a class="code hl_function" href="../../d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0">update</a>[i]-&gt;forward[i] = n;</div>
 <div class="line"><span class="lineno">  121</span>            }</div>
-<div class="line"><span class="lineno">  122</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Inserted&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  122</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Inserted&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  123</span> </div>
 <div class="line"><span class="lineno">  124</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  125</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Exists&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  125</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Exists&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  126</span>        }</div>
 <div class="line"><span class="lineno">  127</span>    }</div>
-<div class="ttc" id="aclassdata__structures_1_1_skip_list_html_aa3f3813e9896792fc86b296547689ba4"><div class="ttname"><a href="#aa3f3813e9896792fc86b296547689ba4">data_structures::SkipList::randomLevel</a></div><div class="ttdeci">int randomLevel()</div><div class="ttdef"><b>Definition</b> skip_list.cpp:75</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d90/classdata__structures_1_1_skip_list_a40a4042bdf0b6683b5f21ae7854de8a9_cgraph.svg" width="512" height="274"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aclassdata__structures_1_1_skip_list_html_aa3f3813e9896792fc86b296547689ba4"><div class="ttname"><a href="#aa3f3813e9896792fc86b296547689ba4">data_structures::SkipList::randomLevel</a></div><div class="ttdeci">int randomLevel()</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d5a/skip__list_8cpp_source.html#l00075">skip_list.cpp:75</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa3f3813e9896792fc86b296547689ba4" name="aa3f3813e9896792fc86b296547689ba4"></a>
@@ -407,22 +406,18 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Returns random level of the skip list. Every higher level is 2 times less likely. </p><dl class="section return"><dt>Returns</dt><dd>random level for skip list </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d5a/skip__list_8cpp_source.html#l00075">75</a> of file <a class="el" href="../../d0/d5a/skip__list_8cpp_source.html">skip_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   75</span>                      {</div>
 <div class="line"><span class="lineno">   76</span>        <span class="keywordtype">int</span> lvl = 0;</div>
-<div class="line"><span class="lineno">   77</span>        <span class="keywordflow">while</span> (<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>()) / RAND_MAX &lt; <a class="code hl_variable" href="../../d5/d3c/namespacedata__structures.html#a903639d8e6f955dd8d5c263781455d61">PROBABILITY</a> &amp;&amp;</div>
+<div class="line"><span class="lineno">   77</span>        <span class="keywordflow">while</span> (<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(std::rand()) / RAND_MAX &lt; <a class="code hl_variable" href="../../d5/d3c/namespacedata__structures.html#a903639d8e6f955dd8d5c263781455d61">PROBABILITY</a> &amp;&amp;</div>
 <div class="line"><span class="lineno">   78</span>               lvl &lt; <a class="code hl_variable" href="../../d5/d3c/namespacedata__structures.html#ac0d7e0be24da9f41bcb19745873c436a">MAX_LEVEL</a>) {</div>
 <div class="line"><span class="lineno">   79</span>            lvl++;</div>
 <div class="line"><span class="lineno">   80</span>        }</div>
 <div class="line"><span class="lineno">   81</span>        <span class="keywordflow">return</span> lvl;</div>
 <div class="line"><span class="lineno">   82</span>    }</div>
-<div class="ttc" id="anamespacedata__structures_html_a903639d8e6f955dd8d5c263781455d61"><div class="ttname"><a href="../../d5/d3c/namespacedata__structures.html#a903639d8e6f955dd8d5c263781455d61">data_structures::PROBABILITY</a></div><div class="ttdeci">constexpr float PROBABILITY</div><div class="ttdoc">Current probability for &quot;coin toss&quot;.</div><div class="ttdef"><b>Definition</b> skip_list.cpp:28</div></div>
-<div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d90/classdata__structures_1_1_skip_list_aa3f3813e9896792fc86b296547689ba4_cgraph.svg" width="298" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="anamespacedata__structures_html_a903639d8e6f955dd8d5c263781455d61"><div class="ttname"><a href="../../d5/d3c/namespacedata__structures.html#a903639d8e6f955dd8d5c263781455d61">data_structures::PROBABILITY</a></div><div class="ttdeci">constexpr float PROBABILITY</div><div class="ttdoc">Current probability for &quot;coin toss&quot;.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d5a/skip__list_8cpp_source.html#l00028">skip_list.cpp:28</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af2f3d4e15b1f47afac849c2e08a730f4" name="af2f3d4e15b1f47afac849c2e08a730f4"></a>
@@ -454,9 +449,11 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer to the value of the node </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d5a/skip__list_8cpp_source.html#l00170">170</a> of file <a class="el" href="../../d0/d5a/skip__list_8cpp_source.html">skip_list.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  170</span>                                 {</div>
-<div class="line"><span class="lineno">  171</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;Node&gt;</a> x = <a class="code hl_variable" href="#ad7e392386d7db622185d6f7c718e4f16">header</a>;</div>
-<div class="line"><span class="lineno">  172</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Searching for &quot;</span> &lt;&lt; key &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  171</span>        std::shared_ptr&lt;Node&gt; x = <a class="code hl_variable" href="#ad7e392386d7db622185d6f7c718e4f16">header</a>;</div>
+<div class="line"><span class="lineno">  172</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Searching for &quot;</span> &lt;&lt; key &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  173</span> </div>
 <div class="line"><span class="lineno">  174</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = <a class="code hl_variable" href="#a3e249c2c35a8b7f5ffd2d77fee60d650">level</a>; i &gt;= 0; i--) {</div>
 <div class="line"><span class="lineno">  175</span>            <span class="keywordflow">while</span> (x-&gt;forward[i] &amp;&amp; x-&gt;forward[i]-&gt;key &lt; key) x = x-&gt;forward[i];</div>
@@ -464,23 +461,71 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  177</span> </div>
 <div class="line"><span class="lineno">  178</span>        x = x-&gt;forward[0];</div>
 <div class="line"><span class="lineno">  179</span>        <span class="keywordflow">if</span> (x &amp;&amp; x-&gt;key == key) {</div>
-<div class="line"><span class="lineno">  180</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Found&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  180</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Found&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  181</span>            <span class="keywordflow">return</span> x-&gt;value;</div>
 <div class="line"><span class="lineno">  182</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  183</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Not Found&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  183</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Not Found&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  184</span>            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  185</span>        }</div>
 <div class="line"><span class="lineno">  186</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d90/classdata__structures_1_1_skip_list_af2f3d4e15b1f47afac849c2e08a730f4_cgraph.svg" width="296" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div><!-- fragment -->
 </div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad7e392386d7db622185d6f7c718e4f16" name="ad7e392386d7db622185d6f7c718e4f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7e392386d7db622185d6f7c718e4f16">&#9670;&#160;</a></span>header</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="../../d9/d49/structdata__structures_1_1_node.html">Node</a>&gt; data_structures::SkipList::header</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pointer to the header node. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d5a/skip__list_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../d0/d5a/skip__list_8cpp_source.html">skip_list.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3e249c2c35a8b7f5ffd2d77fee60d650" name="a3e249c2c35a8b7f5ffd2d77fee60d650"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e249c2c35a8b7f5ffd2d77fee60d650">&#9670;&#160;</a></span>level</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int data_structures::SkipList::level</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maximum level of the skiplist. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d5a/skip__list_8cpp_source.html#l00056">56</a> of file <a class="el" href="../../d0/d5a/skip__list_8cpp_source.html">skip_list.cpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>data_structures/<a class="el" href="../../d0/d5a/skip__list_8cpp.html">skip_list.cpp</a></li>
+<li>data_structures/<a class="el" href="../../d0/d5a/skip__list_8cpp_source.html">skip_list.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: numerical_methods/lu_decomposition.h File Reference</title>
+<title>TheAlgorithms/C++: numerical_methods/lu_decomposition.h File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -132,7 +149,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ac029b636b353cefbb18b2fcc71e427e4" id="r_ac029b636b353cefbb18b2fcc71e427e4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ac029b636b353cefbb18b2fcc71e427e4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac029b636b353cefbb18b2fcc71e427e4">matrix</a> = <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt;T&gt;&gt;</td></tr>
+<tr class="memitem:ac029b636b353cefbb18b2fcc71e427e4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac029b636b353cefbb18b2fcc71e427e4">matrix</a> = std::vector&lt;std::valarray&lt;T&gt;&gt;</td></tr>
 <tr class="separator:ac029b636b353cefbb18b2fcc71e427e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -147,6 +164,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Functions associated with <a href="https://en.wikipedia.org/wiki/LU_decomposition" target="_blank">LU Decomposition</a> of a square matrix. </p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/kvedala" target="_blank">Krishna Vedala</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d1/dbe/lu__decomposition_8h_source.html">lu_decomposition.h</a>.</p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="ac029b636b353cefbb18b2fcc71e427e4" name="ac029b636b353cefbb18b2fcc71e427e4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac029b636b353cefbb18b2fcc71e427e4">&#9670;&#160;</a></span>matrix</h2>
@@ -157,11 +176,13 @@ Functions</h2></td></tr>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#ac029b636b353cefbb18b2fcc71e427e4">matrix</a> = <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt;T&gt;&gt;</td>
+          <td class="memname">using <a class="el" href="#ac029b636b353cefbb18b2fcc71e427e4">matrix</a> = std::vector&lt;std::valarray&lt;T&gt;&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Define matrix type as a <code><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></code> of <code><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a></code> </p>
+<p>Define matrix type as a <code>std::vector</code> of <code>std::valarray</code> </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dbe/lu__decomposition_8h_source.html#l00019">19</a> of file <a class="el" href="../../d1/dbe/lu__decomposition_8h_source.html">lu_decomposition.h</a>.</p>
 
 </div>
 </div>
@@ -196,30 +217,25 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>determinant of matrix A </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dbe/lu__decomposition_8h_source.html#l00090">90</a> of file <a class="el" href="../../d1/dbe/lu__decomposition_8h_source.html">lu_decomposition.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   90</span>                                          {</div>
-<div class="line"><span class="lineno">   91</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;double&gt;</a> L(A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(), <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a>(A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()));</div>
-<div class="line"><span class="lineno">   92</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">matrix&lt;double&gt;</a> U(A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(), <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a>(A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()));</div>
+<div class="line"><span class="lineno">   91</span>    <a class="code hl_typedef" href="#ac029b636b353cefbb18b2fcc71e427e4">matrix&lt;double&gt;</a> L(A.size(), std::valarray&lt;double&gt;(A.size()));</div>
+<div class="line"><span class="lineno">   92</span>    <a class="code hl_typedef" href="#ac029b636b353cefbb18b2fcc71e427e4">matrix&lt;double&gt;</a> U(A.size(), std::valarray&lt;double&gt;(A.size()));</div>
 <div class="line"><span class="lineno">   93</span> </div>
 <div class="line"><span class="lineno">   94</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="#a75b8a228c6419ecda6077255d6d60509">lu_decomposition</a>(A, &amp;L, &amp;U) &lt; 0)</div>
 <div class="line"><span class="lineno">   95</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   96</span> </div>
 <div class="line"><span class="lineno">   97</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = 1.f;</div>
-<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {</div>
+<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; A.size(); i++) {</div>
 <div class="line"><span class="lineno">   99</span>        <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> *= L[i][i] * U[i][i];</div>
 <div class="line"><span class="lineno">  100</span>    }</div>
 <div class="line"><span class="lineno">  101</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">  102</span>}</div>
-<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> fibonacci_sum.cpp:77</div></div>
-<div class="ttc" id="alu__decomposition_8h_html_a75b8a228c6419ecda6077255d6d60509"><div class="ttname"><a href="#a75b8a228c6419ecda6077255d6d60509">lu_decomposition</a></div><div class="ttdeci">int lu_decomposition(const matrix&lt; T &gt; &amp;A, matrix&lt; double &gt; *L, matrix&lt; double &gt; *U)</div><div class="ttdef"><b>Definition</b> lu_decomposition.h:29</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-<div class="ttc" id="avalarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a></div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/dbe/lu__decomposition_8h_a3108d43bd32c6fb3b3c158476c51ba7f_cgraph.svg" width="451" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> <a href="../../de/dc3/fibonacci__sum_8cpp_source.html#l00077">fibonacci_sum.cpp:77</a></div></div>
+<div class="ttc" id="alu__decomposition_8h_html_a75b8a228c6419ecda6077255d6d60509"><div class="ttname"><a href="#a75b8a228c6419ecda6077255d6d60509">lu_decomposition</a></div><div class="ttdeci">int lu_decomposition(const matrix&lt; T &gt; &amp;A, matrix&lt; double &gt; *L, matrix&lt; double &gt; *U)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dbe/lu__decomposition_8h_source.html#l00029">lu_decomposition.h:29</a></div></div>
+<div class="ttc" id="alu__decomposition_8h_html_ac029b636b353cefbb18b2fcc71e427e4"><div class="ttname"><a href="#ac029b636b353cefbb18b2fcc71e427e4">matrix</a></div><div class="ttdeci">std::vector&lt; std::valarray&lt; T &gt; &gt; matrix</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dbe/lu__decomposition_8h_source.html#l00019">lu_decomposition.h:19</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a75b8a228c6419ecda6077255d6d60509" name="a75b8a228c6419ecda6077255d6d60509"></a>
@@ -258,13 +274,15 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>0 if no errors </dd>
 <dd>
 negative if error occurred </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dbe/lu__decomposition_8h_source.html#l00029">29</a> of file <a class="el" href="../../d1/dbe/lu__decomposition_8h_source.html">lu_decomposition.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   29</span>                                                                               {</div>
 <div class="line"><span class="lineno">   30</span>    <span class="keywordtype">int</span> row, col, j;</div>
-<div class="line"><span class="lineno">   31</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a> = A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">   31</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a> = A.size();</div>
 <div class="line"><span class="lineno">   32</span> </div>
 <div class="line"><span class="lineno">   33</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a> != A[0].size()) {</div>
 <div class="line"><span class="lineno">   34</span>        <span class="comment">// check matrix is a square matrix</span></div>
-<div class="line"><span class="lineno">   35</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Not a square matrix!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   35</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Not a square matrix!\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   36</span>        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><span class="lineno">   37</span>    }</div>
 <div class="line"><span class="lineno">   38</span> </div>
@@ -308,14 +326,8 @@ negative if error occurred </dd></dl>
 <div class="line"><span class="lineno">   76</span> </div>
 <div class="line"><span class="lineno">   77</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   78</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a></div></div>
-<div class="ttc" id="amatrix__exponentiation_8cpp_html_a9977ad12548c4a49dee9dc3f0685aa54"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a></div><div class="ttdeci">ll mat_size</div><div class="ttdef"><b>Definition</b> matrix_exponentiation.cpp:45</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/dbe/lu__decomposition_8h_a75b8a228c6419ecda6077255d6d60509_cgraph.svg" width="296" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="amatrix__exponentiation_8cpp_html_a9977ad12548c4a49dee9dc3f0685aa54"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a></div><div class="ttdeci">ll mat_size</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d35/matrix__exponentiation_8cpp_source.html#l00045">matrix_exponentiation.cpp:45</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

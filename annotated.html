@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: Class List</title>
+<title>TheAlgorithms/C++: Class List</title>
+<link rel="icon" href="favicon.svg" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -143,12 +160,12 @@ $(function(){initNavTree('annotated.html',''); initResizable(true); });
 <tr id="row_2_12_" class="odd" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d4/d90/classdata__structures_1_1_skip_list.html" target="_self">SkipList</a></td><td class="desc"></td></tr>
 <tr id="row_2_13_" class="odd" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d2/dc8/classdata__structures_1_1_stack.html" target="_self">Stack</a></td><td class="desc">Class representation of a stack </td></tr>
 <tr id="row_2_14_" class="odd" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d0/d3e/classdata__structures_1_1trie.html" target="_self">trie</a></td><td class="desc"><a href="https://en.wikipedia.org/wiki/Trie" target="_blank">Trie</a> implementation for small-case English alphabets <code>a-z</code> </td></tr>
-<tr id="row_3_" class="odd"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_3_" class="arrow" onclick="dynsection.toggleFolder('3_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="dd/dba/namespacedivide__and__conquer.html" target="_self">divide_and_conquer</a></td><td class="desc">For <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> </td></tr>
+<tr id="row_3_" class="odd"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_3_" class="arrow" onclick="dynsection.toggleFolder('3_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="dd/dba/namespacedivide__and__conquer.html" target="_self">divide_and_conquer</a></td><td class="desc">For std::vector </td></tr>
 <tr id="row_3_0_" class="even" style="display:none;"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_3_0_" class="arrow" onclick="dynsection.toggleFolder('3_0_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><b>strassens_multiplication</b></td><td class="desc"></td></tr>
 <tr id="row_3_0_0_" class="even" style="display:none;"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html" target="_self">Matrix</a></td><td class="desc"><a class="el" href="dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html" title="Matrix class.">Matrix</a> class </td></tr>
 <tr id="row_4_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_4_" class="arrow" onclick="dynsection.toggleFolder('4_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d0/d65/namespacedouble__hashing.html" target="_self">double_hashing</a></td><td class="desc">An implementation of hash table using <a href="https://en.wikipedia.org/wiki/Double_hashing" target="_blank">double hashing</a> algorithm </td></tr>
 <tr id="row_4_0_" class="odd" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d9/dde/structdouble__hashing_1_1_entry.html" target="_self">Entry</a></td><td class="desc"></td></tr>
-<tr id="row_5_" class="odd"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_5_" class="arrow" onclick="dynsection.toggleFolder('5_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d5/d5f/namespacegeometry.html" target="_self">geometry</a></td><td class="desc">For <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a> </td></tr>
+<tr id="row_5_" class="odd"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_5_" class="arrow" onclick="dynsection.toggleFolder('5_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d5/d5f/namespacegeometry.html" target="_self">geometry</a></td><td class="desc">For std::swap </td></tr>
 <tr id="row_5_0_" class="even" style="display:none;"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_5_0_" class="arrow" onclick="dynsection.toggleFolder('5_0_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><b>grahamscan</b></td><td class="desc"></td></tr>
 <tr id="row_5_0_0_" class="even" style="display:none;"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d7/d48/structgeometry_1_1grahamscan_1_1_point.html" target="_self">Point</a></td><td class="desc"></td></tr>
 <tr id="row_5_1_" class="even" style="display:none;"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_5_1_" class="arrow" onclick="dynsection.toggleFolder('5_1_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><b>jarvis</b></td><td class="desc"></td></tr>
@@ -189,7 +206,7 @@ $(function(){initNavTree('annotated.html',''); initResizable(true); });
 <tr id="row_11_" class="odd"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_11_" class="arrow" onclick="dynsection.toggleFolder('11_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="dd/d47/namespacemath.html" target="_self">math</a></td><td class="desc">For assert </td></tr>
 <tr id="row_11_0_" class="even" style="display:none;"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_11_0_" class="arrow" onclick="dynsection.toggleFolder('11_0_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><b>ncr_modulo_p</b></td><td class="desc"></td></tr>
 <tr id="row_11_0_0_" class="even" style="display:none;"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html" target="_self">NCRModuloP</a></td><td class="desc">Class which contains all methods required for calculating nCr mod p </td></tr>
-<tr id="row_12_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_12_" class="arrow" onclick="dynsection.toggleFolder('12_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="da/d6d/namespaceoperations__on__datastructures.html" target="_self">operations_on_datastructures</a></td><td class="desc">For <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> </td></tr>
+<tr id="row_12_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_12_" class="arrow" onclick="dynsection.toggleFolder('12_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="da/d6d/namespaceoperations__on__datastructures.html" target="_self">operations_on_datastructures</a></td><td class="desc">For std::vector </td></tr>
 <tr id="row_12_0_" class="odd" style="display:none;"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_12_0_" class="arrow" onclick="dynsection.toggleFolder('12_0_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><b>circular_linked_list</b></td><td class="desc"></td></tr>
 <tr id="row_12_0_0_" class="odd" style="display:none;"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html" target="_self">CircularLinkedList</a></td><td class="desc">A class that implements a Circular Linked List </td></tr>
 <tr id="row_12_0_1_" class="odd" style="display:none;"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html" target="_self">Node</a></td><td class="desc">A <a class="el" href="da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html" title="A Node struct that represents a single Node in a Binary Tree.">Node</a> struct that represents a single <a class="el" href="da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html" title="A Node struct that represents a single Node in a Binary Tree.">Node</a> in a Binary Tree </td></tr>
@@ -222,7 +239,7 @@ $(function(){initNavTree('annotated.html',''); initResizable(true); });
 <tr id="row_14_1_0_" class="odd" style="display:none;"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html" target="_self">WindowedMedian</a></td><td class="desc">A class to calculate the median of a leading sliding window at the back of a stream of integer values </td></tr>
 <tr id="row_15_" class="odd"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_15_" class="arrow" onclick="dynsection.toggleFolder('15_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d4/dd2/namespacequadratic__probing.html" target="_self">quadratic_probing</a></td><td class="desc">An implementation of hash table using <a href="https://en.wikipedia.org/wiki/Quadratic_probing" target="_blank">quadratic probing</a> algorithm </td></tr>
 <tr id="row_15_0_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="da/dd1/structquadratic__probing_1_1_entry.html" target="_self">Entry</a></td><td class="desc"></td></tr>
-<tr id="row_16_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_16_" class="arrow" onclick="dynsection.toggleFolder('16_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="dd/d69/namespacerange__queries.html" target="_self">range_queries</a></td><td class="desc">For <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> </td></tr>
+<tr id="row_16_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_16_" class="arrow" onclick="dynsection.toggleFolder('16_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="dd/d69/namespacerange__queries.html" target="_self">range_queries</a></td><td class="desc">For std::vector </td></tr>
 <tr id="row_16_0_" class="odd" style="display:none;"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_16_0_" class="arrow" onclick="dynsection.toggleFolder('16_0_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><b>heavy_light_decomposition</b></td><td class="desc"></td></tr>
 <tr id="row_16_0_0_" class="odd" style="display:none;"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html" target="_self">HLD</a></td><td class="desc">The Heavy-Light Decomposition class </td></tr>
 <tr id="row_16_0_1_" class="odd" style="display:none;"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html" target="_self">SG</a></td><td class="desc">Segment <a class="el" href="d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html" title="A Basic Tree, which supports binary lifting.">Tree</a>, to store heavy chains </td></tr>
@@ -236,7 +253,7 @@ $(function(){initNavTree('annotated.html',''); initResizable(true); });
 <tr id="row_18_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_18_" class="arrow" onclick="dynsection.toggleFolder('18_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d2/dcf/namespacestatistics.html" target="_self">statistics</a></td><td class="desc">Statistical algorithms </td></tr>
 <tr id="row_18_0_" class="odd" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d7/d7c/classstatistics_1_1stats__computer1.html" target="_self">stats_computer1</a></td><td class="desc"></td></tr>
 <tr id="row_18_1_" class="odd" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d8/dab/classstatistics_1_1stats__computer2.html" target="_self">stats_computer2</a></td><td class="desc"></td></tr>
-<tr id="row_19_" class="odd"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_19_" class="arrow" onclick="dynsection.toggleFolder('19_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d8/dcc/namespacestd.html" target="_self">std</a></td><td class="desc">STL namespace </td></tr>
+<tr id="row_19_" class="odd"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_19_" class="arrow" onclick="dynsection.toggleFolder('19_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><b>std</b></td><td class="desc">STL namespace </td></tr>
 <tr id="row_19_0_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d2/dfc/structstd_1_1is__arithmetic_3_01uint128__t_01_4.html" target="_self">is_arithmetic&lt; uint128_t &gt;</a></td><td class="desc"></td></tr>
 <tr id="row_19_1_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="dc/d6d/structstd_1_1is__arithmetic_3_01uint256__t_01_4.html" target="_self">is_arithmetic&lt; uint256_t &gt;</a></td><td class="desc"></td></tr>
 <tr id="row_19_2_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d2/dd4/structstd_1_1is__integral_3_01uint128__t_01_4.html" target="_self">is_integral&lt; uint128_t &gt;</a></td><td class="desc"></td></tr>
@@ -280,7 +297,7 @@ $(function(){initNavTree('annotated.html',''); initResizable(true); });
 <tr id="row_51_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d8/d72/class_r_btree.html" target="_self">RBtree</a></td><td class="desc"></td></tr>
 <tr id="row_52_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d4/db4/struct_segment_intersection.html" target="_self">SegmentIntersection</a></td><td class="desc"></td></tr>
 <tr id="row_53_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="dd/d4f/class_solution.html" target="_self">Solution</a></td><td class="desc"></td></tr>
-<tr id="row_54_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d1/dc2/classstack.html" target="_self">stack</a></td><td class="desc">For <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a> </td></tr>
+<tr id="row_54_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d1/dc2/classstack.html" target="_self">stack</a></td><td class="desc">For std::invalid_argument </td></tr>
 <tr id="row_55_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d2/dc4/classstack__linked_list.html" target="_self">stack_linkedList</a></td><td class="desc"></td></tr>
 <tr id="row_56_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="da/d86/struct_test_case.html" target="_self">TestCase</a></td><td class="desc">Single example inputs and expected output of the function <a class="el" href="da/d0d/longest__common__string_8cpp.html#aa38b6b17bc5d46ed88acdd8414e18fa5" title="computes the length of the longest common string created from input strings">longest_common_string_length</a> </td></tr>
 <tr id="row_57_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d5/d58/class_test_cases.html" target="_self">TestCases</a></td><td class="desc">Class encapsulating the necessary test cases </td></tr>

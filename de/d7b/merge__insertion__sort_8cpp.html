@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: sorting/merge_insertion_sort.cpp File Reference</title>
+<title>TheAlgorithms/C++: sorting/merge_insertion_sort.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -124,7 +141,9 @@ Include dependency graph for merge_insertion_sort.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d1f/merge__insertion__sort_8cpp__incl.svg" width="514" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../de/d7b/merge__insertion__sort_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html">sorting</a></td></tr>
@@ -137,15 +156,15 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a0cba4fbf287ab8cb978ed7f8fef886b1" id="r_a0cba4fbf287ab8cb978ed7f8fef886b1"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
-<tr class="memitem:a0cba4fbf287ab8cb978ed7f8fef886b1"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0cba4fbf287ab8cb978ed7f8fef886b1">sorting::merge_insertion::InsertionSort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt; *A, size_t start, size_t end)</td></tr>
+<tr class="memitem:a0cba4fbf287ab8cb978ed7f8fef886b1"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0cba4fbf287ab8cb978ed7f8fef886b1">sorting::merge_insertion::InsertionSort</a> (std::array&lt; T, N &gt; *A, size_t start, size_t end)</td></tr>
 <tr class="memdesc:a0cba4fbf287ab8cb978ed7f8fef886b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insertion merge algorithm.  <br /></td></tr>
 <tr class="separator:a0cba4fbf287ab8cb978ed7f8fef886b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4de4067a9a866ffd985c5b5055ccedf" id="r_af4de4067a9a866ffd985c5b5055ccedf"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
-<tr class="memitem:af4de4067a9a866ffd985c5b5055ccedf"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af4de4067a9a866ffd985c5b5055ccedf">sorting::merge_insertion::merge</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt; *array, size_t min, size_t max, size_t mid)</td></tr>
+<tr class="memitem:af4de4067a9a866ffd985c5b5055ccedf"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af4de4067a9a866ffd985c5b5055ccedf">sorting::merge_insertion::merge</a> (std::array&lt; T, N &gt; *array, size_t min, size_t max, size_t mid)</td></tr>
 <tr class="memdesc:af4de4067a9a866ffd985c5b5055ccedf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform merge of data in a window.  <br /></td></tr>
 <tr class="separator:af4de4067a9a866ffd985c5b5055ccedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7161278f18e83b671c6454b139cc5674" id="r_a7161278f18e83b671c6454b139cc5674"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
-<tr class="memitem:a7161278f18e83b671c6454b139cc5674"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7161278f18e83b671c6454b139cc5674">sorting::merge_insertion::mergeSort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt; *array, size_t min, size_t max, size_t threshold)</td></tr>
+<tr class="memitem:a7161278f18e83b671c6454b139cc5674"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7161278f18e83b671c6454b139cc5674">sorting::merge_insertion::mergeSort</a> (std::array&lt; T, N &gt; *array, size_t min, size_t max, size_t threshold)</td></tr>
 <tr class="memdesc:a7161278f18e83b671c6454b139cc5674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Final combined algorithm. Algorithm utilizes <a class="el" href="#a0cba4fbf287ab8cb978ed7f8fef886b1" title="Insertion merge algorithm.">sorting::merge_insertion::InsertionSort</a> if window length is less than threshold, else performs merge sort recursively using <a class="el" href="#a7161278f18e83b671c6454b139cc5674" title="Final combined algorithm. Algorithm utilizes sorting::merge_insertion::InsertionSort if window length...">sorting::merge_insertion::mergeSort</a>.  <br /></td></tr>
 <tr class="separator:a7161278f18e83b671c6454b139cc5674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
@@ -161,6 +180,8 @@ Functions</h2></td></tr>
 <dd>
 <a href="https://github.com/kvedala" target="_blank">Krishna Vedala</a> </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Individual algorithms: <a class="el" href="../../dd/d0d/insertion__sort_8cpp.html" title="Insertion Sort Algorithm (Insertion Sort)">insertion_sort.cpp</a> and <a class="el" href="../../d5/df4/merge__sort_8cpp.html" title="Merege Sort Algorithm (MEREGE SORT) implementation">merge_sort.cpp</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../de/d7b/merge__insertion__sort_8cpp_source.html">merge_insertion_sort.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a0cba4fbf287ab8cb978ed7f8fef886b1" name="a0cba4fbf287ab8cb978ed7f8fef886b1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0cba4fbf287ab8cb978ed7f8fef886b1">&#9670;&#160;</a></span>InsertionSort()</h2>
@@ -176,7 +197,7 @@ template&lt;typename T , size_t N&gt; </div>
         <tr>
           <td class="memname">static void sorting::merge_insertion::InsertionSort </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt; *</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
+          <td class="paramtype">std::array&lt; T, N &gt; *</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -213,11 +234,13 @@ template&lt;typename T , size_t N&gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d7b/merge__insertion__sort_8cpp_source.html#l00037">37</a> of file <a class="el" href="../../de/d7b/merge__insertion__sort_8cpp_source.html">merge_insertion_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   37</span>                                                                       {</div>
 <div class="line"><span class="lineno">   38</span>    <span class="keywordtype">size_t</span> i = 0, j = 0;</div>
-<div class="line"><span class="lineno">   39</span>    T *ptr = A-&gt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/data.html">data</a>();</div>
+<div class="line"><span class="lineno">   39</span>    T *ptr = A-&gt;data();</div>
 <div class="line"><span class="lineno">   40</span> </div>
-<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">for</span> (i = start; i &lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a>; i++) {</div>
+<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">for</span> (i = start; i &lt; end; i++) {</div>
 <div class="line"><span class="lineno">   42</span>        T temp = ptr[i];</div>
 <div class="line"><span class="lineno">   43</span>        j = i;</div>
 <div class="line"><span class="lineno">   44</span>        <span class="keywordflow">while</span> (j &gt; start &amp;&amp; temp &lt; ptr[j - 1]) {</div>
@@ -231,14 +254,7 @@ template&lt;typename T , size_t N&gt; </div>
 <div class="line"><span class="lineno">   52</span>        ptr[j] = temp;</div>
 <div class="line"><span class="lineno">   53</span>    }</div>
 <div class="line"><span class="lineno">   54</span>}</div>
-<div class="ttc" id="adata_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array/data.html">std::array::data</a></div><div class="ttdeci">T data(T... args)</div></div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d7b/merge__insertion__sort_8cpp_a0cba4fbf287ab8cb978ed7f8fef886b1_cgraph.svg" width="328" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -258,20 +274,15 @@ Here is the call graph for this function:</div>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d7b/merge__insertion__sort_8cpp_source.html#l00159">159</a> of file <a class="el" href="../../de/d7b/merge__insertion__sort_8cpp_source.html">merge_insertion_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  159</span>           {</div>
-<div class="line"><span class="lineno">  160</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a>(<span class="keyword">nullptr</span>));</div>
+<div class="line"><span class="lineno">  160</span>    std::srand(std::time(<span class="keyword">nullptr</span>));</div>
 <div class="line"><span class="lineno">  161</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();</div>
 <div class="line"><span class="lineno">  162</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  163</span>}</div>
-<div class="ttc" id="amerge__insertion__sort_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Function to test code using random arrays.</div><div class="ttdef"><b>Definition</b> merge_insertion_sort.cpp:132</div></div>
-<div class="ttc" id="asrand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a></div><div class="ttdeci">T srand(T... args)</div></div>
-<div class="ttc" id="atime_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a></div><div class="ttdeci">T time(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d7b/merge__insertion__sort_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="336" height="234"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="amerge__insertion__sort_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Function to test code using random arrays.</div><div class="ttdef"><b>Definition</b> <a href="../../de/d7b/merge__insertion__sort_8cpp_source.html#l00132">merge_insertion_sort.cpp:132</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af4de4067a9a866ffd985c5b5055ccedf" name="af4de4067a9a866ffd985c5b5055ccedf"></a>
@@ -288,7 +299,7 @@ template&lt;typename T , size_t N&gt; </div>
         <tr>
           <td class="memname">static void sorting::merge_insertion::merge </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt; *</td>          <td class="paramname"><span class="paramname"><em>array</em></span>, </td>
+          <td class="paramtype">std::array&lt; T, N &gt; *</td>          <td class="paramname"><span class="paramname"><em>array</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -330,15 +341,17 @@ template&lt;typename T , size_t N&gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d7b/merge__insertion__sort_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../de/d7b/merge__insertion__sort_8cpp_source.html">merge_insertion_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   67</span>                                                                             {</div>
-<div class="line"><span class="lineno">   68</span>    <span class="keywordtype">size_t</span> firstIndex = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">min</a>;</div>
+<div class="line"><span class="lineno">   68</span>    <span class="keywordtype">size_t</span> firstIndex = min;</div>
 <div class="line"><span class="lineno">   69</span>    <span class="keywordtype">size_t</span> secondIndex = mid + 1;</div>
 <div class="line"><span class="lineno">   70</span> </div>
-<div class="line"><span class="lineno">   71</span>    <span class="keyword">auto</span> ptr = array-&gt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/data.html">data</a>();</div>
-<div class="line"><span class="lineno">   72</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;T, N + 1&gt;</a> tempArray{0};</div>
+<div class="line"><span class="lineno">   71</span>    <span class="keyword">auto</span> ptr = array-&gt;data();</div>
+<div class="line"><span class="lineno">   72</span>    std::array&lt;T, N + 1&gt; tempArray{0};</div>
 <div class="line"><span class="lineno">   73</span> </div>
 <div class="line"><span class="lineno">   74</span>    <span class="comment">// While there are elements in the left or right runs</span></div>
-<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> index = min; index &lt;= <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">max</a>; index++) {</div>
+<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> index = min; index &lt;= max; index++) {</div>
 <div class="line"><span class="lineno">   76</span>        <span class="comment">// If left run head exists and is &lt;= existing right run head.</span></div>
 <div class="line"><span class="lineno">   77</span>        <span class="keywordflow">if</span> (firstIndex &lt;= mid &amp;&amp;</div>
 <div class="line"><span class="lineno">   78</span>            (secondIndex &gt; max || ptr[firstIndex] &lt;= ptr[secondIndex])) {</div>
@@ -351,20 +364,11 @@ template&lt;typename T , size_t N&gt; </div>
 <div class="line"><span class="lineno">   85</span>    }</div>
 <div class="line"><span class="lineno">   86</span> </div>
 <div class="line"><span class="lineno">   87</span>    <span class="comment">// transfer to the initial array</span></div>
-<div class="line"><span class="lineno">   88</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/memcpy.html">memcpy</a>(ptr + min, tempArray.data() + min, (max - min) * <span class="keyword">sizeof</span>(T));</div>
+<div class="line"><span class="lineno">   88</span>    memcpy(ptr + min, tempArray.data() + min, (max - min) * <span class="keyword">sizeof</span>(T));</div>
 <div class="line"><span class="lineno">   89</span>    <span class="comment">//  for (int index = min; index &lt;= max; index++) ptr[index] =</span></div>
 <div class="line"><span class="lineno">   90</span>    <span class="comment">//  tempArray[index];</span></div>
 <div class="line"><span class="lineno">   91</span>}</div>
-<div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
-<div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
-<div class="ttc" id="amemcpy_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/byte/memcpy.html">std::memcpy</a></div><div class="ttdeci">T memcpy(T... args)</div></div>
-<div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d7b/merge__insertion__sort_8cpp_af4de4067a9a866ffd985c5b5055ccedf_cgraph.svg" width="328" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7161278f18e83b671c6454b139cc5674" name="a7161278f18e83b671c6454b139cc5674"></a>
@@ -378,7 +382,7 @@ template&lt;typename T , size_t N&gt; </div>
         <tr>
           <td class="memname">void sorting::merge_insertion::mergeSort </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt; *</td>          <td class="paramname"><span class="paramname"><em>array</em></span>, </td>
+          <td class="paramtype">std::array&lt; T, N &gt; *</td>          <td class="paramname"><span class="paramname"><em>array</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -415,13 +419,15 @@ template&lt;typename T , size_t N&gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d7b/merge__insertion__sort_8cpp_source.html#l00107">107</a> of file <a class="el" href="../../de/d7b/merge__insertion__sort_8cpp_source.html">merge_insertion_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  108</span>                                 {</div>
 <div class="line"><span class="lineno">  109</span>    <span class="comment">// prerequisite</span></div>
 <div class="line"><span class="lineno">  110</span>    <span class="keywordflow">if</span> ((max - min) &lt;= threshold) {</div>
 <div class="line"><span class="lineno">  111</span>        <a class="code hl_function" href="#a0cba4fbf287ab8cb978ed7f8fef886b1">InsertionSort</a>(array, min, max);</div>
 <div class="line"><span class="lineno">  112</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">  113</span>        <span class="comment">// get the middle point</span></div>
-<div class="line"><span class="lineno">  114</span>        <span class="keywordtype">size_t</span> mid = (<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">max</a> + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">min</a>) &gt;&gt; 1;</div>
+<div class="line"><span class="lineno">  114</span>        <span class="keywordtype">size_t</span> mid = (max + min) &gt;&gt; 1;</div>
 <div class="line"><span class="lineno">  115</span> </div>
 <div class="line"><span class="lineno">  116</span>        <span class="comment">// apply merge sort to both parts of this</span></div>
 <div class="line"><span class="lineno">  117</span>        <a class="code hl_function" href="../../d5/d4c/group__sorting.html#gab6b14fea48d9841e29b9fc26be6e05d7">mergeSort</a>(array, min, mid, threshold);</div>
@@ -431,15 +437,10 @@ template&lt;typename T , size_t N&gt; </div>
 <div class="line"><span class="lineno">  121</span>        <a class="code hl_function" href="../../d5/d4c/group__sorting.html#ga460c61cd948203b4816bef2accb3fc73">merge</a>(array, min, max, mid);</div>
 <div class="line"><span class="lineno">  122</span>    }</div>
 <div class="line"><span class="lineno">  123</span>}</div>
-<div class="ttc" id="agroup__sorting_html_ga460c61cd948203b4816bef2accb3fc73"><div class="ttname"><a href="../../d5/d4c/group__sorting.html#ga460c61cd948203b4816bef2accb3fc73">merge</a></div><div class="ttdeci">void merge(int *arr, int l, int m, int r)</div><div class="ttdef"><b>Definition</b> merge_sort.cpp:33</div></div>
-<div class="ttc" id="agroup__sorting_html_gab6b14fea48d9841e29b9fc26be6e05d7"><div class="ttname"><a href="../../d5/d4c/group__sorting.html#gab6b14fea48d9841e29b9fc26be6e05d7">mergeSort</a></div><div class="ttdeci">void mergeSort(int *arr, int l, int r)</div><div class="ttdef"><b>Definition</b> merge_sort.cpp:71</div></div>
-<div class="ttc" id="amerge__insertion__sort_8cpp_html_a0cba4fbf287ab8cb978ed7f8fef886b1"><div class="ttname"><a href="#a0cba4fbf287ab8cb978ed7f8fef886b1">sorting::merge_insertion::InsertionSort</a></div><div class="ttdeci">static void InsertionSort(std::array&lt; T, N &gt; *A, size_t start, size_t end)</div><div class="ttdoc">Insertion merge algorithm.</div><div class="ttdef"><b>Definition</b> merge_insertion_sort.cpp:37</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d7b/merge__insertion__sort_8cpp_a7161278f18e83b671c6454b139cc5674_cgraph.svg" width="538" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="agroup__sorting_html_ga460c61cd948203b4816bef2accb3fc73"><div class="ttname"><a href="../../d5/d4c/group__sorting.html#ga460c61cd948203b4816bef2accb3fc73">merge</a></div><div class="ttdeci">void merge(int *arr, int l, int m, int r)</div><div class="ttdef"><b>Definition</b> <a href="../../d5/df4/merge__sort_8cpp_source.html#l00033">merge_sort.cpp:33</a></div></div>
+<div class="ttc" id="agroup__sorting_html_gab6b14fea48d9841e29b9fc26be6e05d7"><div class="ttname"><a href="../../d5/d4c/group__sorting.html#gab6b14fea48d9841e29b9fc26be6e05d7">mergeSort</a></div><div class="ttdeci">void mergeSort(int *arr, int l, int r)</div><div class="ttdef"><b>Definition</b> <a href="../../d5/df4/merge__sort_8cpp_source.html#l00071">merge_sort.cpp:71</a></div></div>
+<div class="ttc" id="amerge__insertion__sort_8cpp_html_a0cba4fbf287ab8cb978ed7f8fef886b1"><div class="ttname"><a href="#a0cba4fbf287ab8cb978ed7f8fef886b1">sorting::merge_insertion::InsertionSort</a></div><div class="ttdeci">static void InsertionSort(std::array&lt; T, N &gt; *A, size_t start, size_t end)</div><div class="ttdoc">Insertion merge algorithm.</div><div class="ttdef"><b>Definition</b> <a href="../../de/d7b/merge__insertion__sort_8cpp_source.html#l00037">merge_insertion_sort.cpp:37</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -467,39 +468,31 @@ Here is the call graph for this function:</div>
 
 <p>Function to test code using random arrays. </p>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d7b/merge__insertion__sort_8cpp_source.html#l00132">132</a> of file <a class="el" href="../../de/d7b/merge__insertion__sort_8cpp_source.html">merge_insertion_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  132</span>                   {</div>
 <div class="line"><span class="lineno">  133</span>    <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> size = 30;</div>
-<div class="line"><span class="lineno">  134</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, size&gt;</a> array{0};</div>
+<div class="line"><span class="lineno">  134</span>    std::array&lt;int, size&gt; array{0};</div>
 <div class="line"><span class="lineno">  135</span>    <span class="comment">// input</span></div>
 <div class="line"><span class="lineno">  136</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; i++) {</div>
-<div class="line"><span class="lineno">  137</span>        array[i] = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100 - 50;</div>
-<div class="line"><span class="lineno">  138</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; array[i] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">  137</span>        array[i] = std::rand() % 100 - 50;</div>
+<div class="line"><span class="lineno">  138</span>        std::cout &lt;&lt; array[i] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
 <div class="line"><span class="lineno">  139</span>    }</div>
-<div class="line"><span class="lineno">  140</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  140</span>    std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  141</span> </div>
 <div class="line"><span class="lineno">  142</span>    <a class="code hl_function" href="#a0cba4fbf287ab8cb978ed7f8fef886b1">sorting::merge_insertion::InsertionSort</a>(&amp;array, 0, size);</div>
 <div class="line"><span class="lineno">  143</span>    <span class="comment">//  sorting::merge_insertion::mergeSort(&amp;array, 0, size, 10);</span></div>
 <div class="line"><span class="lineno">  144</span> </div>
 <div class="line"><span class="lineno">  145</span>    <span class="comment">// output</span></div>
 <div class="line"><span class="lineno">  146</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; ++i) {</div>
-<div class="line"><span class="lineno">  147</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; array[i] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">  147</span>        std::cout &lt;&lt; array[i] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
 <div class="line"><span class="lineno">  148</span>    }</div>
-<div class="line"><span class="lineno">  149</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  149</span>    std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  150</span> </div>
-<div class="line"><span class="lineno">  151</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(array), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(array)));</div>
-<div class="line"><span class="lineno">  152</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test passed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  151</span>    assert(std::is_sorted(std::begin(array), std::end(array)));</div>
+<div class="line"><span class="lineno">  152</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test passed\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  153</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="ais_sorted_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></div><div class="ttdeci">T is_sorted(T... args)</div></div>
-<div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d7b/merge__insertion__sort_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="203" height="234"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

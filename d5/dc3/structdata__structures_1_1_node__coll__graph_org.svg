@@ -20,7 +20,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" xlink:title=" ">
+<g id="a_Node000003"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="109,-119.5 0,-119.5 0,-89 109,-89 109,-119.5"/>
 <text text-anchor="start" x="8" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr&lt; data</text>
 <text text-anchor="middle" x="54.5" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00">_structures::Node &gt;</text>
@@ -40,7 +40,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="160.62,-41.75 40.38,-41.75 40.38,0 160.62,0 160.62,-41.75"/>
 <text text-anchor="start" x="48.38" y="-28.25" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; std::shared</text>
 <text text-anchor="start" x="48.38" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">_ptr&lt; data_structures::</text>

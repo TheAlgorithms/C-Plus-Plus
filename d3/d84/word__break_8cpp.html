@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: dynamic_programming/word_break.cpp File Reference</title>
+<title>TheAlgorithms/C++: dynamic_programming/word_break.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -124,7 +141,9 @@ Include dependency graph for word_break.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d73/word__break_8cpp__incl.svg" width="540" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d3/d84/word__break_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d24/namespacedynamic__programming.html">dynamic_programming</a></td></tr>
@@ -136,13 +155,13 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1cc9dd6e6190d10a010fdcdfe7a21a81" id="r_a1cc9dd6e6190d10a010fdcdfe7a21a81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cc9dd6e6190d10a010fdcdfe7a21a81">dynamic_programming::word_break::exists</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;str, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_set.html">std::unordered_set</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &gt; &amp;strSet)</td></tr>
+<tr class="memitem:a1cc9dd6e6190d10a010fdcdfe7a21a81" id="r_a1cc9dd6e6190d10a010fdcdfe7a21a81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cc9dd6e6190d10a010fdcdfe7a21a81">dynamic_programming::word_break::exists</a> (const std::string &amp;str, const std::unordered_set&lt; std::string &gt; &amp;strSet)</td></tr>
 <tr class="memdesc:a1cc9dd6e6190d10a010fdcdfe7a21a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that checks if the string passed in param is present in the the unordered_set passed.  <br /></td></tr>
 <tr class="separator:a1cc9dd6e6190d10a010fdcdfe7a21a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a272b0f5cdb4e41fd6dee4538b808c06a" id="r_a272b0f5cdb4e41fd6dee4538b808c06a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a272b0f5cdb4e41fd6dee4538b808c06a">dynamic_programming::word_break::check</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;s, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_set.html">std::unordered_set</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &gt; &amp;strSet, int pos, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; *dp)</td></tr>
+<tr class="memitem:a272b0f5cdb4e41fd6dee4538b808c06a" id="r_a272b0f5cdb4e41fd6dee4538b808c06a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a272b0f5cdb4e41fd6dee4538b808c06a">dynamic_programming::word_break::check</a> (const std::string &amp;s, const std::unordered_set&lt; std::string &gt; &amp;strSet, int pos, std::vector&lt; int &gt; *dp)</td></tr>
 <tr class="memdesc:a272b0f5cdb4e41fd6dee4538b808c06a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that checks if the string passed in param can be segmented from position 'pos', and then correctly go on to segment the rest of the string correctly as well to reach a solution.  <br /></td></tr>
 <tr class="separator:a272b0f5cdb4e41fd6dee4538b808c06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe4dcd6fd5282e535685361cba645d7c" id="r_afe4dcd6fd5282e535685361cba645d7c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe4dcd6fd5282e535685361cba645d7c">dynamic_programming::word_break::wordBreak</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;s, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &gt; &amp;wordDict)</td></tr>
+<tr class="memitem:afe4dcd6fd5282e535685361cba645d7c" id="r_afe4dcd6fd5282e535685361cba645d7c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe4dcd6fd5282e535685361cba645d7c">dynamic_programming::word_break::wordBreak</a> (const std::string &amp;s, const std::vector&lt; std::string &gt; &amp;wordDict)</td></tr>
 <tr class="memdesc:afe4dcd6fd5282e535685361cba645d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that checks if the string passed in param can be segmented into the strings present in the vector. In others words, it checks if any permutation of strings in the vector can be concatenated to form the final string.  <br /></td></tr>
 <tr class="separator:afe4dcd6fd5282e535685361cba645d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
@@ -161,6 +180,8 @@ Functions</h2></td></tr>
 pen apple". Note that you are allowed to reuse a dictionary word.</p>
 <p>Example 3: Input: s = "catsandog", wordDict = ["cats", "dog", "sand", "and", "cat"] Output: false</p>
 <dl class="section author"><dt>Author</dt><dd>[Akshay Anand] (<a href="https://github.com/axayjha">https://github.com/axayjha</a>) </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d3/d84/word__break_8cpp_source.html">word_break.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a272b0f5cdb4e41fd6dee4538b808c06a" name="a272b0f5cdb4e41fd6dee4538b808c06a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a272b0f5cdb4e41fd6dee4538b808c06a">&#9670;&#160;</a></span>check()</h2>
@@ -171,12 +192,12 @@ pen apple". Note that you are allowed to reuse a dictionary word.</p>
         <tr>
           <td class="memname">bool dynamic_programming::word_break::check </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_set.html">std::unordered_set</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>strSet</em></span>, </td>
+          <td class="paramtype">const std::unordered_set&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>strSet</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -186,7 +207,7 @@ pen apple". Note that you are allowed to reuse a dictionary word.</p>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; *</td>          <td class="paramname"><span class="paramname"><em>dp</em></span>&#160;)</td>
+          <td class="paramtype">std::vector&lt; int &gt; *</td>          <td class="paramname"><span class="paramname"><em>dp</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -204,8 +225,10 @@ pen apple". Note that you are allowed to reuse a dictionary word.</p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if a valid solution/segmentation is possible by segmenting at index pos </dd>
 <dd>
 <code>false</code> otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d84/word__break_8cpp_source.html#l00080">80</a> of file <a class="el" href="../../d3/d84/word__break_8cpp_source.html">word_break.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   81</span>                                        {</div>
-<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">if</span> (pos == s.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>()) {</div>
+<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">if</span> (pos == s.length()) {</div>
 <div class="line"><span class="lineno">   83</span>        <span class="comment">// if we have reached till the end of the string, means we have</span></div>
 <div class="line"><span class="lineno">   84</span>        <span class="comment">// segmented throughout correctly hence we have a solution, thus</span></div>
 <div class="line"><span class="lineno">   85</span>        <span class="comment">// returning true</span></div>
@@ -219,19 +242,19 @@ pen apple". Note that you are allowed to reuse a dictionary word.</p>
 <div class="line"><span class="lineno">   93</span>        <span class="keywordflow">return</span> <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>-&gt;at(pos) == 1;</div>
 <div class="line"><span class="lineno">   94</span>    }</div>
 <div class="line"><span class="lineno">   95</span> </div>
-<div class="line"><span class="lineno">   96</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> wordTillNow =</div>
+<div class="line"><span class="lineno">   96</span>    std::string wordTillNow =</div>
 <div class="line"><span class="lineno">   97</span>        <span class="stringliteral">&quot;&quot;</span>;  <span class="comment">// string to save the prefixes of word till different positons</span></div>
 <div class="line"><span class="lineno">   98</span> </div>
-<div class="line"><span class="lineno">   99</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = pos; i &lt; s.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>(); i++) {</div>
+<div class="line"><span class="lineno">   99</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = pos; i &lt; s.length(); i++) {</div>
 <div class="line"><span class="lineno">  100</span>        <span class="comment">// Loop starting from pos to end, to check valid set of</span></div>
 <div class="line"><span class="lineno">  101</span>        <span class="comment">// segmentations if any</span></div>
 <div class="line"><span class="lineno">  102</span>        wordTillNow +=</div>
-<div class="line"><span class="lineno">  103</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>(1, s[i]);  <span class="comment">// storing the prefix till the position i</span></div>
+<div class="line"><span class="lineno">  103</span>            std::string(1, s[i]);  <span class="comment">// storing the prefix till the position i</span></div>
 <div class="line"><span class="lineno">  104</span> </div>
 <div class="line"><span class="lineno">  105</span>        <span class="comment">// if the prefix till current position is present in the dictionary</span></div>
 <div class="line"><span class="lineno">  106</span>        <span class="comment">// and the remaining substring can also be segmented legally, then</span></div>
 <div class="line"><span class="lineno">  107</span>        <span class="comment">// set solution at position pos in the memo, and return true</span></div>
-<div class="line"><span class="lineno">  108</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="#a1cc9dd6e6190d10a010fdcdfe7a21a81">exists</a>(wordTillNow, strSet) &amp;&amp; <a class="code hl_function" href="#a272b0f5cdb4e41fd6dee4538b808c06a">check</a>(s, strSet, i + 1, <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>)) {</div>
+<div class="line"><span class="lineno">  108</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="#a1cc9dd6e6190d10a010fdcdfe7a21a81">exists</a>(wordTillNow, strSet) &amp;&amp; check(s, strSet, i + 1, <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>)) {</div>
 <div class="line"><span class="lineno">  109</span>            <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>-&gt;at(pos) = 1;</div>
 <div class="line"><span class="lineno">  110</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  111</span>        }</div>
@@ -241,17 +264,9 @@ pen apple". Note that you are allowed to reuse a dictionary word.</p>
 <div class="line"><span class="lineno">  115</span>    <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>-&gt;at(pos) = 0;  <span class="comment">// so set solution at pos as false</span></div>
 <div class="line"><span class="lineno">  116</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;     <span class="comment">// and return no solution at position pos</span></div>
 <div class="line"><span class="lineno">  117</span>}</div>
-<div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
-<div class="ttc" id="anamespacedp_html"><div class="ttname"><a href="../../df/d88/namespacedp.html">dp</a></div><div class="ttdoc">for std::vector</div><div class="ttdef"><b>Definition</b> partition_problem.cpp:39</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">std::string::length</a></div><div class="ttdeci">T length(T... args)</div></div>
-<div class="ttc" id="aword__break_8cpp_html_a1cc9dd6e6190d10a010fdcdfe7a21a81"><div class="ttname"><a href="#a1cc9dd6e6190d10a010fdcdfe7a21a81">dynamic_programming::word_break::exists</a></div><div class="ttdeci">bool exists(const std::string &amp;str, const std::unordered_set&lt; std::string &gt; &amp;strSet)</div><div class="ttdoc">Function that checks if the string passed in param is present in the the unordered_set passed.</div><div class="ttdef"><b>Definition</b> word_break.cpp:60</div></div>
-<div class="ttc" id="aword__break_8cpp_html_a272b0f5cdb4e41fd6dee4538b808c06a"><div class="ttname"><a href="#a272b0f5cdb4e41fd6dee4538b808c06a">dynamic_programming::word_break::check</a></div><div class="ttdeci">bool check(const std::string &amp;s, const std::unordered_set&lt; std::string &gt; &amp;strSet, int pos, std::vector&lt; int &gt; *dp)</div><div class="ttdoc">Function that checks if the string passed in param can be segmented from position 'pos',...</div><div class="ttdef"><b>Definition</b> word_break.cpp:80</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d84/word__break_8cpp_a272b0f5cdb4e41fd6dee4538b808c06a_cgraph.svg" width="570" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="anamespacedp_html"><div class="ttname"><a href="../../df/d88/namespacedp.html">dp</a></div><div class="ttdoc">for std::vector</div><div class="ttdef"><b>Definition</b> <a href="../../de/d8c/partition__problem_8cpp_source.html#l00039">partition_problem.cpp:39</a></div></div>
+<div class="ttc" id="aword__break_8cpp_html_a1cc9dd6e6190d10a010fdcdfe7a21a81"><div class="ttname"><a href="#a1cc9dd6e6190d10a010fdcdfe7a21a81">dynamic_programming::word_break::exists</a></div><div class="ttdeci">bool exists(const std::string &amp;str, const std::unordered_set&lt; std::string &gt; &amp;strSet)</div><div class="ttdoc">Function that checks if the string passed in param is present in the the unordered_set passed.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d84/word__break_8cpp_source.html#l00060">word_break.cpp:60</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1cc9dd6e6190d10a010fdcdfe7a21a81" name="a1cc9dd6e6190d10a010fdcdfe7a21a81"></a>
@@ -263,12 +278,12 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool dynamic_programming::word_break::exists </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_set.html">std::unordered_set</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>strSet</em></span>&#160;)</td>
+          <td class="paramtype">const std::unordered_set&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>strSet</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -284,17 +299,12 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if str is present in strSet </dd>
 <dd>
 <code>false</code> if str is not present in strSet </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   61</span>                                                       {</div>
-<div class="line"><span class="lineno">   62</span>    <span class="keywordflow">return</span> strSet.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_set/find.html">find</a>(str) != strSet.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_set/end.html">end</a>();</div>
-<div class="line"><span class="lineno">   63</span>}</div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/unordered_set/end.html">std::unordered_set::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="afind_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/unordered_set/find.html">std::unordered_set::find</a></div><div class="ttdeci">T find(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d84/word__break_8cpp_a1cc9dd6e6190d10a010fdcdfe7a21a81_cgraph.svg" width="370" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../d3/d84/word__break_8cpp_source.html#l00060">60</a> of file <a class="el" href="../../d3/d84/word__break_8cpp_source.html">word_break.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   61</span>                                                       {</div>
+<div class="line"><span class="lineno">   62</span>    <span class="keywordflow">return</span> strSet.find(str) != strSet.end();</div>
+<div class="line"><span class="lineno">   63</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -314,30 +324,24 @@ Here is the call graph for this function:</div>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d84/word__break_8cpp_source.html#l00174">174</a> of file <a class="el" href="../../d3/d84/word__break_8cpp_source.html">word_break.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  174</span>           {</div>
 <div class="line"><span class="lineno">  175</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// call the test function :)</span></div>
 <div class="line"><span class="lineno">  176</span> </div>
 <div class="line"><span class="lineno">  177</span>    <span class="comment">// the complete string</span></div>
-<div class="line"><span class="lineno">  178</span>    <span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> s = <span class="stringliteral">&quot;applepenapple&quot;</span>;</div>
+<div class="line"><span class="lineno">  178</span>    <span class="keyword">const</span> std::string s = <span class="stringliteral">&quot;applepenapple&quot;</span>;</div>
 <div class="line"><span class="lineno">  179</span>    <span class="comment">// the dictionary to be used</span></div>
-<div class="line"><span class="lineno">  180</span>    <span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::string&gt;</a> wordDict = {<span class="stringliteral">&quot;apple&quot;</span>, <span class="stringliteral">&quot;pen&quot;</span>};</div>
+<div class="line"><span class="lineno">  180</span>    <span class="keyword">const</span> std::vector&lt;std::string&gt; wordDict = {<span class="stringliteral">&quot;apple&quot;</span>, <span class="stringliteral">&quot;pen&quot;</span>};</div>
 <div class="line"><span class="lineno">  181</span> </div>
 <div class="line"><span class="lineno">  182</span>    <span class="comment">// should return true, as applepenapple can be segmented as apple + pen +</span></div>
 <div class="line"><span class="lineno">  183</span>    <span class="comment">// apple</span></div>
-<div class="line"><span class="lineno">  184</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_function" href="#afe4dcd6fd5282e535685361cba645d7c">dynamic_programming::word_break::wordBreak</a>(s, wordDict)</div>
-<div class="line"><span class="lineno">  185</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  184</span>    std::cout &lt;&lt; <a class="code hl_function" href="#afe4dcd6fd5282e535685361cba645d7c">dynamic_programming::word_break::wordBreak</a>(s, wordDict)</div>
+<div class="line"><span class="lineno">  185</span>              &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  186</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-<div class="ttc" id="aword__break_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Test implementations.</div><div class="ttdef"><b>Definition</b> word_break.cpp:156</div></div>
-<div class="ttc" id="aword__break_8cpp_html_afe4dcd6fd5282e535685361cba645d7c"><div class="ttname"><a href="#afe4dcd6fd5282e535685361cba645d7c">dynamic_programming::word_break::wordBreak</a></div><div class="ttdeci">bool wordBreak(const std::string &amp;s, const std::vector&lt; std::string &gt; &amp;wordDict)</div><div class="ttdoc">Function that checks if the string passed in param can be segmented into the strings present in the v...</div><div class="ttdef"><b>Definition</b> word_break.cpp:131</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d84/word__break_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="271" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aword__break_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d84/word__break_8cpp_source.html#l00156">word_break.cpp:156</a></div></div>
+<div class="ttc" id="aword__break_8cpp_html_afe4dcd6fd5282e535685361cba645d7c"><div class="ttname"><a href="#afe4dcd6fd5282e535685361cba645d7c">dynamic_programming::word_break::wordBreak</a></div><div class="ttdeci">bool wordBreak(const std::string &amp;s, const std::vector&lt; std::string &gt; &amp;wordDict)</div><div class="ttdoc">Function that checks if the string passed in param can be segmented into the strings present in the v...</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d84/word__break_8cpp_source.html#l00131">word_break.cpp:131</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -365,26 +369,23 @@ Here is the call graph for this function:</div>
 
 <p>Test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d84/word__break_8cpp_source.html#l00156">156</a> of file <a class="el" href="../../d3/d84/word__break_8cpp_source.html">word_break.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  156</span>                   {</div>
 <div class="line"><span class="lineno">  157</span>    <span class="comment">// the complete string</span></div>
-<div class="line"><span class="lineno">  158</span>    <span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> s = <span class="stringliteral">&quot;applepenapple&quot;</span>;</div>
+<div class="line"><span class="lineno">  158</span>    <span class="keyword">const</span> std::string s = <span class="stringliteral">&quot;applepenapple&quot;</span>;</div>
 <div class="line"><span class="lineno">  159</span>    <span class="comment">// the dictionary to be used</span></div>
-<div class="line"><span class="lineno">  160</span>    <span class="keyword">const</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::string&gt;</a> wordDict = {<span class="stringliteral">&quot;apple&quot;</span>, <span class="stringliteral">&quot;pen&quot;</span>};</div>
+<div class="line"><span class="lineno">  160</span>    <span class="keyword">const</span> std::vector&lt;std::string&gt; wordDict = {<span class="stringliteral">&quot;apple&quot;</span>, <span class="stringliteral">&quot;pen&quot;</span>};</div>
 <div class="line"><span class="lineno">  161</span> </div>
 <div class="line"><span class="lineno">  162</span>    assert(dynamic_programming::word_break::wordBreak(s, wordDict));</div>
 <div class="line"><span class="lineno">  163</span> </div>
 <div class="line"><span class="lineno">  164</span>    <span class="comment">// should return true, as applepenapple can be segmented as apple + pen +</span></div>
 <div class="line"><span class="lineno">  165</span>    <span class="comment">// apple</span></div>
-<div class="line"><span class="lineno">  166</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_function" href="#afe4dcd6fd5282e535685361cba645d7c">dynamic_programming::word_break::wordBreak</a>(s, wordDict)</div>
-<div class="line"><span class="lineno">  167</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">  168</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test implementation passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  166</span>    std::cout &lt;&lt; <a class="code hl_function" href="#afe4dcd6fd5282e535685361cba645d7c">dynamic_programming::word_break::wordBreak</a>(s, wordDict)</div>
+<div class="line"><span class="lineno">  167</span>              &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  168</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test implementation passed!\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  169</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d84/word__break_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="174" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afe4dcd6fd5282e535685361cba645d7c" name="afe4dcd6fd5282e535685361cba645d7c"></a>
@@ -396,12 +397,12 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool dynamic_programming::word_break::wordBreak </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>wordDict</em></span>&#160;)</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>wordDict</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -417,31 +418,26 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if s can be formed by a combination of strings present in wordDict </dd>
 <dd>
 <code>false</code> otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d84/word__break_8cpp_source.html#l00131">131</a> of file <a class="el" href="../../d3/d84/word__break_8cpp_source.html">word_break.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  131</span>                                                                         {</div>
 <div class="line"><span class="lineno">  132</span>    <span class="comment">// unordered set to store words in the dictionary for constant time</span></div>
 <div class="line"><span class="lineno">  133</span>    <span class="comment">// search</span></div>
-<div class="line"><span class="lineno">  134</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_set.html">std::unordered_set&lt;std::string&gt;</a> strSet;</div>
+<div class="line"><span class="lineno">  134</span>    std::unordered_set&lt;std::string&gt; strSet;</div>
 <div class="line"><span class="lineno">  135</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;s : wordDict) {</div>
-<div class="line"><span class="lineno">  136</span>        strSet.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_set/insert.html">insert</a>(s);</div>
+<div class="line"><span class="lineno">  136</span>        strSet.insert(s);</div>
 <div class="line"><span class="lineno">  137</span>    }</div>
 <div class="line"><span class="lineno">  138</span>    <span class="comment">// a vector to be used for memoization, whose value at index i will</span></div>
 <div class="line"><span class="lineno">  139</span>    <span class="comment">// tell if the string s can be segmented (correctly) at position i.</span></div>
 <div class="line"><span class="lineno">  140</span>    <span class="comment">// initializing it with INT_MAX (which will denote no solution)</span></div>
-<div class="line"><span class="lineno">  141</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>(s.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>(), INT_MAX);</div>
+<div class="line"><span class="lineno">  141</span>    std::vector&lt;int&gt; <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>(s.length(), INT_MAX);</div>
 <div class="line"><span class="lineno">  142</span> </div>
 <div class="line"><span class="lineno">  143</span>    <span class="comment">// calling check method with position = 0, to check from left</span></div>
 <div class="line"><span class="lineno">  144</span>    <span class="comment">// from where can be start segmenting the complete string in correct</span></div>
 <div class="line"><span class="lineno">  145</span>    <span class="comment">// manner</span></div>
-<div class="line"><span class="lineno">  146</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="#a272b0f5cdb4e41fd6dee4538b808c06a">check</a>(s, strSet, 0, &amp;<a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>);</div>
+<div class="line"><span class="lineno">  146</span>    <span class="keywordflow">return</span> check(s, strSet, 0, &amp;<a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>);</div>
 <div class="line"><span class="lineno">  147</span>}</div>
-<div class="ttc" id="ainsert_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/unordered_set/insert.html">std::unordered_set::insert</a></div><div class="ttdeci">T insert(T... args)</div></div>
-<div class="ttc" id="aunordered_set_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/unordered_set.html">std::unordered_set</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d3/d84/word__break_8cpp_afe4dcd6fd5282e535685361cba645d7c_cgraph.svg" width="100%" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

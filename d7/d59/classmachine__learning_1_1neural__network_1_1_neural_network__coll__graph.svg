@@ -32,7 +32,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="168.5,-119.5 41.5,-119.5 41.5,-77.75 168.5,-77.75 168.5,-119.5"/>
 <text text-anchor="start" x="49.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; machine</text>
 <text text-anchor="start" x="49.5" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00">_learning::neural_network</text>
@@ -73,7 +73,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string.html" xlink:title=" ">
+<g id="a_Node000004"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="79.75,-269.38 20.25,-269.38 20.25,-250.12 79.75,-250.12 79.75,-269.38"/>
 <text text-anchor="middle" x="50" y="-255.88" font-family="Helvetica,sans-Serif" font-size="10.00">std::string</text>
 </a>
@@ -92,7 +92,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string.html" xlink:title=" ">
+<g id="a_Node000005"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="94,-352.75 0,-352.75 0,-322.25 94,-322.25 94,-352.75"/>
 <text text-anchor="start" x="8" y="-339.25" font-family="Helvetica,sans-Serif" font-size="10.00">std::basic_string&lt;</text>
 <text text-anchor="middle" x="47" y="-328" font-family="Helvetica,sans-Serif" font-size="10.00"> Char &gt;</text>
@@ -111,7 +111,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_Node000006"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="229.75,-275 104.25,-275 104.25,-244.5 229.75,-244.5 229.75,-275"/>
 <text text-anchor="start" x="112.25" y="-261.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; std::valarray</text>
 <text text-anchor="middle" x="167" y="-250.25" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; double &gt; &gt;</text>
@@ -131,7 +131,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/valarray.html" xlink:title=" ">
+<g id="a_Node000007"><a xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="228.25,-347.12 111.75,-347.12 111.75,-327.88 228.25,-327.88 228.25,-347.12"/>
 <text text-anchor="middle" x="170" y="-333.62" font-family="Helvetica,sans-Serif" font-size="10.00">std::valarray&lt; double &gt;</text>
 </a>

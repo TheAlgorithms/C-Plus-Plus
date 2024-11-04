@@ -1,9 +1,0 @@
-<map id="range_queries::fenwick_tree::fenwick_tree" name="range_queries::fenwick_tree::fenwick_tree">
-<area shape="rect" id="Node000001" title="Class Constructor." alt="" coords="5,27,161,68"/>
-<area shape="rect" id="Node000002" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/assign.html#" title=" " alt="" coords="222,5,351,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,34,206,27,207,32,161,39"/>
-<area shape="rect" id="Node000003" href="$de/d0d/classrange__queries_1_1fenwick__tree.html#a19dea5e88bbd7683a719030623315de9" title="Updates the value of an element in original array and accordingly updates the values in BIT array." alt="" coords="209,55,364,96"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,56,193,60,193,65,160,61"/>
-<area shape="rect" id="Node000004" href="$de/d0d/classrange__queries_1_1fenwick__tree.html#ab492ebf07cab0e3c32d277ad986de801" title="Returns the highest power of two which is not more than x." alt="" coords="412,55,567,96"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="364,73,396,73,396,78,364,78"/>
-</map>

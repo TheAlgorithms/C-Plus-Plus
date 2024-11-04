@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: /Users/runner/work/C-Plus-Plus/C-Plus-Plus/numerical_methods/rungekutta.cpp</title>
+<title>TheAlgorithms/C++: /Users/runner/work/C-Plus-Plus/C-Plus-Plus/numerical_methods/rungekutta.cpp</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -108,62 +125,15 @@ $(function(){initNavTree('dc/dc4/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plu
 </div><!--header-->
 <div class="contents">
 <p>it solves \frac{\mathrm{d} y}{\mathrm{d} x}= \frac{\left ( x-y \right )}{2} given x for given initial conditions There can be many such equations</p>
-<div class="fragment"><div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * @{</span></div>
-<div class="line"><span class="comment"> * \file</span></div>
-<div class="line"><span class="comment"> * \brief [Runge Kutta fourth</span></div>
-<div class="line"><span class="comment"> * order](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) method</span></div>
-<div class="line"><span class="comment"> * implementation</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> * \author [Rudra Prasad Das](http://github.com/rudra697)</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> * \details</span></div>
-<div class="line"><span class="comment"> * It solves the unknown value of y</span></div>
-<div class="line"><span class="comment"> * for a given value of x</span></div>
-<div class="line"><span class="comment"> * only first order differential equations</span></div>
-<div class="line"><span class="comment"> * can be solved</span></div>
-<div class="line"><span class="comment"> * \example</span></div>
-<div class="line"><span class="comment"> * it solves \frac{\mathrm{d} y}{\mathrm{d} x}= \frac{\left ( x-y \right )}{2}</span></div>
-<div class="line"><span class="comment"> * given x for given initial</span></div>
-<div class="line"><span class="comment"> * conditions</span></div>
-<div class="line"><span class="comment"> * There can be many such equations</span></div>
-<div class="line"><span class="comment"> */</span></div>
-<div class="line"><span class="preprocessor">#include &lt;cassert&gt;</span>   <span class="comment">/// asserting the test functions</span></div>
+<div class="fragment"><div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;cassert&gt;</span>   </div>
 <div class="line"><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span>  <span class="comment">/// for io operations</span></div>
-<div class="line"><span class="preprocessor">#include &lt;vector&gt;</span>    <span class="comment">/// for using the vector container</span><span class="comment"></span></div>
-<div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * @brief The change() function is used</span></div>
-<div class="line"><span class="comment"> * to return the updated iterative value corresponding</span></div>
-<div class="line"><span class="comment"> * to the given function</span></div>
-<div class="line"><span class="comment"> * @param x is the value corresponding to the x coordinate</span></div>
-<div class="line"><span class="comment"> * @param y is the value corresponding to the y coordinate</span></div>
-<div class="line"><span class="comment"> * @returns the computed function value at that call</span></div>
-<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span>  </div>
+<div class="line"><span class="preprocessor">#include &lt;vector&gt;</span>    </div>
 <div class="line"><span class="keyword">static</span> <span class="keywordtype">double</span> <a id="a0" name="a0"></a><a class="code hl_function" href="../../d1/da6/rungekutta_8cpp.html#a450497475f5607333f9aca8f88901579">change</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y) { <span class="keywordflow">return</span> ((x - y) / 2.0); }</div>
-<div class="line"><span class="comment"></span> </div>
-<div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * @namespace numerical_methods</span></div>
-<div class="line"><span class="comment"> * @brief Numerical Methods</span></div>
-<div class="line"><span class="comment"> */</span></div>
-<div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d1/de0/namespacenumerical__methods.html">numerical_methods</a> {<span class="comment"></span></div>
-<div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * @namespace runge_kutta</span></div>
-<div class="line"><span class="comment"> * @brief Functions for [Runge Kutta fourth</span></div>
-<div class="line"><span class="comment"> * order](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) method</span></div>
-<div class="line"><span class="comment"> */</span></div>
-<div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d2/de7/namespacerunge__kutta.html">runge_kutta</a> {<span class="comment"></span></div>
-<div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * @brief the Runge Kutta method finds the value of integration of a function in</span></div>
-<div class="line"><span class="comment"> * the given limits. the lower limit of integration as the initial value and the</span></div>
-<div class="line"><span class="comment"> * upper limit is the given x</span></div>
-<div class="line"><span class="comment"> * @param init_x is the value of initial x and is updated after each call</span></div>
-<div class="line"><span class="comment"> * @param init_y is the value of initial x and is updated after each call</span></div>
-<div class="line"><span class="comment"> * @param x is current iteration at which the function needs to be evaluated</span></div>
-<div class="line"><span class="comment"> * @param h is the step value</span></div>
-<div class="line"><span class="comment"> * @returns the value of y at thr required value of x from the initial</span></div>
-<div class="line"><span class="comment"> * conditions</span></div>
-<div class="line"><span class="comment"> */</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d1/de0/namespacenumerical__methods.html">numerical_methods</a> {</div>
+<div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d2/de7/namespacerunge__kutta.html">runge_kutta</a> {</div>
 <div class="line"><span class="keywordtype">double</span> <a id="a1" name="a1"></a>rungeKutta(<span class="keywordtype">double</span> init_x, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;init_y, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;x,</div>
 <div class="line">                  <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;<a id="a2" name="a2"></a><a class="code hl_function" href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a>) {</div>
 <div class="line">    <span class="comment">// Count number of iterations</span></div>
@@ -176,7 +146,7 @@ $(function(){initNavTree('dc/dc4/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plu
 <div class="line"> </div>
 <div class="line">    <span class="keyword">auto</span> n = <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>((x - init_x) / <a class="code hl_function" href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a>);</div>
 <div class="line">    <span class="comment">// used a vector container for the variables</span></div>
-<div class="line">    <a id="_a3" name="_a3"></a><a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;double&gt;</a> k(4, 0.0);</div>
+<div class="line">    std::vector&lt;double&gt; k(4, 0.0);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Iterate for number of iterations</span></div>
 <div class="line"> </div>
@@ -202,54 +172,44 @@ $(function(){initNavTree('dc/dc4/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plu
 <div class="line">}</div>
 <div class="line">}  <span class="comment">// namespace runge_kutta</span></div>
 <div class="line">}  <span class="comment">// namespace numerical_methods</span></div>
-<div class="line"><span class="comment"></span> </div>
-<div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * @brief Tests to check algorithm implementation.</span></div>
-<div class="line"><span class="comment"> * @returns void</span></div>
-<div class="line"><span class="comment"> */</span></div>
-<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> <a id="a4" name="a4"></a><a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>() {</div>
-<div class="line">    <a id="_a5" name="_a5"></a><a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;The Runge Kutta function will be tested on the basis of &quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> <a id="a3" name="a3"></a><a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>() {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;The Runge Kutta function will be tested on the basis of &quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;precomputed values\n&quot;</span>;</div>
 <div class="line"> </div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1....&quot;</span></div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 1....&quot;</span></div>
 <div class="line">              &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line">    <span class="keywordtype">double</span> valfirst = <a class="code hl_function" href="../../d1/da6/rungekutta_8cpp.html#a7b9f40c7b5e9749cc550f19be3dc8856">numerical_methods::runge_kutta::rungeKutta</a>(</div>
 <div class="line">        2, 3, 4, 0.2);  <span class="comment">// Tests the function with pre calculated values</span></div>
 <div class="line">    assert(valfirst == 3.10363932323749570);</div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Passed Test 1\n&quot;</span>;</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Passed Test 1\n&quot;</span>;</div>
 <div class="line"> </div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2....&quot;</span></div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 2....&quot;</span></div>
 <div class="line">              &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line">    <span class="keywordtype">double</span> valsec = <a class="code hl_function" href="../../d1/da6/rungekutta_8cpp.html#a7b9f40c7b5e9749cc550f19be3dc8856">numerical_methods::runge_kutta::rungeKutta</a>(</div>
 <div class="line">        1, 2, 5, 0.1);  <span class="comment">// The value of step changed</span></div>
 <div class="line">    assert(valsec == 3.40600589380261409);</div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Passed Test 2\n&quot;</span>;</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Passed Test 2\n&quot;</span>;</div>
 <div class="line"> </div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 3....&quot;</span></div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 3....&quot;</span></div>
 <div class="line">              &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line">    <span class="keywordtype">double</span> valthird = <a class="code hl_function" href="../../d1/da6/rungekutta_8cpp.html#a7b9f40c7b5e9749cc550f19be3dc8856">numerical_methods::runge_kutta::rungeKutta</a>(</div>
 <div class="line">        -1, 3, 4, 0.1);  <span class="comment">// Tested with negative value</span></div>
 <div class="line">    assert(valthird == 2.49251005860244268);</div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Passed Test 3\n&quot;</span>;</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Passed Test 3\n&quot;</span>;</div>
 <div class="line">}</div>
-<div class="line"><span class="comment"></span> </div>
-<div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * @brief Main function</span></div>
-<div class="line"><span class="comment"> * @returns 0 on exit</span></div>
-<div class="line"><span class="comment"> */</span></div>
-<div class="line"><span class="keywordtype">int</span> <a id="a6" name="a6"></a><a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> <a id="a4" name="a4"></a><a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
 <div class="line">    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// Execute the tests</span></div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="agenerate__parentheses_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> generate_parentheses.cpp:82</div></div>
-<div class="ttc" id="agenerate__parentheses_8cpp_html_gae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="../../dd/d1e/generate__parentheses_8cpp.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Main function.</div><div class="ttdef"><b>Definition</b> generate_parentheses.cpp:110</div></div>
-<div class="ttc" id="ahash__search_8cpp_html_a566eaf0ffafd50bc61e644561fd27001"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a></div><div class="ttdeci">int h(int key)</div><div class="ttdef"><b>Definition</b> hash_search.cpp:45</div></div>
+<div class="ttc" id="agenerate__parentheses_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d1e/generate__parentheses_8cpp_source.html#l00082">generate_parentheses.cpp:82</a></div></div>
+<div class="ttc" id="agenerate__parentheses_8cpp_html_gae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="../../dd/d1e/generate__parentheses_8cpp.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Main function.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d1e/generate__parentheses_8cpp_source.html#l00110">generate_parentheses.cpp:110</a></div></div>
+<div class="ttc" id="ahash__search_8cpp_html_a566eaf0ffafd50bc61e644561fd27001"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a></div><div class="ttdeci">int h(int key)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/df3/hash__search_8cpp_source.html#l00045">hash_search.cpp:45</a></div></div>
 <div class="ttc" id="anamespacenumerical__methods_html"><div class="ttname"><a href="../../d1/de0/namespacenumerical__methods.html">numerical_methods</a></div><div class="ttdoc">for assert</div></div>
 <div class="ttc" id="anamespacerunge__kutta_html"><div class="ttname"><a href="../../d2/de7/namespacerunge__kutta.html">runge_kutta</a></div><div class="ttdoc">Functions for Runge Kutta fourth order method.</div></div>
-<div class="ttc" id="arungekutta_8cpp_html_a450497475f5607333f9aca8f88901579"><div class="ttname"><a href="../../d1/da6/rungekutta_8cpp.html#a450497475f5607333f9aca8f88901579">change</a></div><div class="ttdeci">static double change(double x, double y)</div><div class="ttdoc">asserting the test functions</div><div class="ttdef"><b>Definition</b> rungekutta.cpp:33</div></div>
-<div class="ttc" id="arungekutta_8cpp_html_a7b9f40c7b5e9749cc550f19be3dc8856"><div class="ttname"><a href="../../d1/da6/rungekutta_8cpp.html#a7b9f40c7b5e9749cc550f19be3dc8856">numerical_methods::runge_kutta::rungeKutta</a></div><div class="ttdeci">double rungeKutta(double init_x, const double &amp;init_y, const double &amp;x, const double &amp;h)</div><div class="ttdoc">the Runge Kutta method finds the value of integration of a function in the given limits....</div><div class="ttdef"><b>Definition</b> rungekutta.cpp:57</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
+<div class="ttc" id="arungekutta_8cpp_html_a450497475f5607333f9aca8f88901579"><div class="ttname"><a href="../../d1/da6/rungekutta_8cpp.html#a450497475f5607333f9aca8f88901579">change</a></div><div class="ttdeci">static double change(double x, double y)</div><div class="ttdoc">asserting the test functions</div><div class="ttdef"><b>Definition</b> <a href="../../d1/da6/rungekutta_8cpp_source.html#l00033">rungekutta.cpp:33</a></div></div>
+<div class="ttc" id="arungekutta_8cpp_html_a7b9f40c7b5e9749cc550f19be3dc8856"><div class="ttname"><a href="../../d1/da6/rungekutta_8cpp.html#a7b9f40c7b5e9749cc550f19be3dc8856">numerical_methods::runge_kutta::rungeKutta</a></div><div class="ttdeci">double rungeKutta(double init_x, const double &amp;init_y, const double &amp;x, const double &amp;h)</div><div class="ttdoc">the Runge Kutta method finds the value of integration of a function in the given limits....</div><div class="ttdef"><b>Definition</b> <a href="../../d1/da6/rungekutta_8cpp_source.html#l00057">rungekutta.cpp:57</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -1,9 +1,0 @@
-<map id="main" name="main">
-<area shape="rect" id="Node000001" title="Main function." alt="" coords="5,31,55,56"/>
-<area shape="rect" id="Node000002" href="$db/d93/check__prime_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e" title="Self&#45;test implementations." alt="" coords="103,31,153,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,41,88,41,88,46,55,46"/>
-<area shape="rect" id="Node000003" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="219,5,290,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="153,36,203,26,204,31,154,41"/>
-<area shape="rect" id="Node000004" href="$dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444" title="Function to check if the given number is prime or not." alt="" coords="201,55,308,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="154,46,186,52,185,57,153,51"/>
-</map>

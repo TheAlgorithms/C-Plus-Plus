@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: search/jump_search.cpp File Reference</title>
+<title>TheAlgorithms/C++: search/jump_search.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -120,7 +137,9 @@ Include dependency graph for jump_search.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/dbd/jump__search_8cpp__incl.svg" width="262" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d2/d22/jump__search_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab49fd8f401bfc71f63b74711390cccf0" id="r_ab49fd8f401bfc71f63b74711390cccf0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab49fd8f401bfc71f63b74711390cccf0">jumpSearch</a> (int arr[], int x, int n)</td></tr>
@@ -130,6 +149,8 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>C++ program to implement <a href="https://en.wikipedia.org/wiki/Jump_search" target="_blank">Jump Search</a> </p>
+
+<p class="definition">Definition in file <a class="el" href="../../d2/d22/jump__search_8cpp_source.html">jump_search.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ab49fd8f401bfc71f63b74711390cccf0" name="ab49fd8f401bfc71f63b74711390cccf0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab49fd8f401bfc71f63b74711390cccf0">&#9670;&#160;</a></span>jumpSearch()</h2>
@@ -155,16 +176,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>jump search implementation </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d22/jump__search_8cpp_source.html#l00012">12</a> of file <a class="el" href="../../d2/d22/jump__search_8cpp_source.html">jump_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   12</span>                                        {</div>
 <div class="line"><span class="lineno">   13</span>    <span class="comment">// Finding block size to be jumped</span></div>
-<div class="line"><span class="lineno">   14</span>    <span class="keywordtype">int</span> step = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(n);</div>
+<div class="line"><span class="lineno">   14</span>    <span class="keywordtype">int</span> step = std::sqrt(n);</div>
 <div class="line"><span class="lineno">   15</span> </div>
 <div class="line"><span class="lineno">   16</span>    <span class="comment">// Finding the block where element is</span></div>
 <div class="line"><span class="lineno">   17</span>    <span class="comment">// present (if it is present)</span></div>
-<div class="line"><span class="lineno">   18</span>    <span class="keywordtype">int</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/prev.html">prev</a> = 0;</div>
-<div class="line"><span class="lineno">   19</span>    <span class="keywordflow">while</span> (arr[<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(step, n) - 1] &lt; x) {</div>
-<div class="line"><span class="lineno">   20</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/prev.html">prev</a> = step;</div>
-<div class="line"><span class="lineno">   21</span>        step += <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(n);</div>
+<div class="line"><span class="lineno">   18</span>    <span class="keywordtype">int</span> prev = 0;</div>
+<div class="line"><span class="lineno">   19</span>    <span class="keywordflow">while</span> (arr[std::min(step, n) - 1] &lt; x) {</div>
+<div class="line"><span class="lineno">   20</span>        prev = step;</div>
+<div class="line"><span class="lineno">   21</span>        step += std::sqrt(n);</div>
 <div class="line"><span class="lineno">   22</span>        <span class="keywordflow">if</span> (prev &gt;= n)</div>
 <div class="line"><span class="lineno">   23</span>            <span class="keywordflow">return</span> -1;</div>
 <div class="line"><span class="lineno">   24</span>    }</div>
@@ -172,28 +195,20 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   26</span>    <span class="comment">// Doing a linear search for x in block</span></div>
 <div class="line"><span class="lineno">   27</span>    <span class="comment">// beginning with prev.</span></div>
 <div class="line"><span class="lineno">   28</span>    <span class="keywordflow">while</span> (arr[prev] &lt; x) {</div>
-<div class="line"><span class="lineno">   29</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/prev.html">prev</a>++;</div>
+<div class="line"><span class="lineno">   29</span>        prev++;</div>
 <div class="line"><span class="lineno">   30</span> </div>
 <div class="line"><span class="lineno">   31</span>        <span class="comment">// If we reached next block or end of</span></div>
 <div class="line"><span class="lineno">   32</span>        <span class="comment">// array, element is not present.</span></div>
-<div class="line"><span class="lineno">   33</span>        <span class="keywordflow">if</span> (prev == <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(step, n))</div>
+<div class="line"><span class="lineno">   33</span>        <span class="keywordflow">if</span> (prev == std::min(step, n))</div>
 <div class="line"><span class="lineno">   34</span>            <span class="keywordflow">return</span> -1;</div>
 <div class="line"><span class="lineno">   35</span>    }</div>
 <div class="line"><span class="lineno">   36</span>    <span class="comment">// If element is found</span></div>
 <div class="line"><span class="lineno">   37</span>    <span class="keywordflow">if</span> (arr[prev] == x)</div>
-<div class="line"><span class="lineno">   38</span>        <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/prev.html">prev</a>;</div>
+<div class="line"><span class="lineno">   38</span>        <span class="keywordflow">return</span> prev;</div>
 <div class="line"><span class="lineno">   39</span> </div>
 <div class="line"><span class="lineno">   40</span>    <span class="keywordflow">return</span> -1;</div>
 <div class="line"><span class="lineno">   41</span>}</div>
-<div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
-<div class="ttc" id="aprev_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/prev.html">std::prev</a></div><div class="ttdeci">T prev(T... args)</div></div>
-<div class="ttc" id="asqrt_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a></div><div class="ttdeci">T sqrt(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d22/jump__search_8cpp_ab49fd8f401bfc71f63b74711390cccf0_cgraph.svg" width="219" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -210,6 +225,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d22/jump__search_8cpp_source.html#l00044">44</a> of file <a class="el" href="../../d2/d22/jump__search_8cpp_source.html">jump_search.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   44</span>           {</div>
 <div class="line"><span class="lineno">   45</span>    <span class="keywordtype">int</span> arr[] = {0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610};</div>
 <div class="line"><span class="lineno">   46</span>    <span class="keywordtype">int</span> x = 55;</div>
@@ -219,11 +236,10 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   50</span>    <span class="keywordtype">int</span> index = <a class="code hl_function" href="#ab49fd8f401bfc71f63b74711390cccf0">jumpSearch</a>(arr, x, n);</div>
 <div class="line"><span class="lineno">   51</span> </div>
 <div class="line"><span class="lineno">   52</span>    <span class="comment">// Print the index where &#39;x&#39; is located</span></div>
-<div class="line"><span class="lineno">   53</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nNumber &quot;</span> &lt;&lt; x &lt;&lt; <span class="stringliteral">&quot; is at index &quot;</span> &lt;&lt; index;</div>
+<div class="line"><span class="lineno">   53</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nNumber &quot;</span> &lt;&lt; x &lt;&lt; <span class="stringliteral">&quot; is at index &quot;</span> &lt;&lt; index;</div>
 <div class="line"><span class="lineno">   54</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   55</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="ajump__search_8cpp_html_ab49fd8f401bfc71f63b74711390cccf0"><div class="ttname"><a href="#ab49fd8f401bfc71f63b74711390cccf0">jumpSearch</a></div><div class="ttdeci">int jumpSearch(int arr[], int x, int n)</div><div class="ttdef"><b>Definition</b> jump_search.cpp:12</div></div>
+<div class="ttc" id="ajump__search_8cpp_html_ab49fd8f401bfc71f63b74711390cccf0"><div class="ttname"><a href="#ab49fd8f401bfc71f63b74711390cccf0">jumpSearch</a></div><div class="ttdeci">int jumpSearch(int arr[], int x, int n)</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d22/jump__search_8cpp_source.html#l00012">jump_search.cpp:12</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

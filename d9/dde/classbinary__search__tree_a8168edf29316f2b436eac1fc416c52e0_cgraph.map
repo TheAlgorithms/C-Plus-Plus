@@ -1,6 +1,0 @@
-<map id="binary_search_tree::insert" name="binary_search_tree::insert">
-<area shape="rect" id="Node000001" title="Insert a new value into the BST." alt="" coords="5,29,137,70"/>
-<area shape="rect" id="Node000002" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="185,29,316,70"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,47,169,47,169,52,137,52"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="216,29,214,19,220,10,232,5,250,3,270,5,282,11,279,16,268,10,250,8,234,10,223,14,220,20,221,28"/>
-</map>

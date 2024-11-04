@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: operations_on_datastructures/reverse_binary_tree.cpp File Reference</title>
+<title>TheAlgorithms/C++: operations_on_datastructures/reverse_binary_tree.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -123,7 +140,9 @@ Include dependency graph for reverse_binary_tree.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../db/de3/reverse__binary__tree_8cpp__incl.svg" width="334" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d4/db6/reverse__binary__tree_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfd/structoperations__on__datastructures_1_1reverse__binary__tree_1_1_node.html">operations_on_datastructures::reverse_binary_tree::Node</a></td></tr>
@@ -136,7 +155,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d6d/namespaceoperations__on__datastructures.html">operations_on_datastructures</a></td></tr>
-<tr class="memdesc:da/d6d/namespaceoperations__on__datastructures"><td class="mdescLeft">&#160;</td><td class="mdescRight">for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> <br /></td></tr>
+<tr class="memdesc:da/d6d/namespaceoperations__on__datastructures"><td class="mdescLeft">&#160;</td><td class="mdescRight">for std::vector <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dc5/namespacereverse__binary__tree.html">reverse_binary_tree</a></td></tr>
 <tr class="memdesc:dc/dc5/namespacereverse__binary__tree"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for the <a href="https://www.geeksforgeeks.org/reverse-tree-path/" target="_blank">Reverse a Binary Tree</a> implementation. <br /></td></tr>
@@ -166,6 +185,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation for the <a href="https://www.geeksforgeeks.org/reverse-tree-path/" target="_blank">Reversing a Binary Tree</a> recursively algorithm. </p>
 <p>A binary tree can be reversed by swapping the left and right child of a node at each node, starting from the root, and cascading below. This solution aims to provide an implementation of a recursive reversal of a binary tree. </p><dl class="section author"><dt>Author</dt><dd><a href="https://github.com/polarvoid" target="_blank">Alvin</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d4/db6/reverse__binary__tree_8cpp_source.html">reverse_binary_tree.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -184,17 +205,14 @@ Functions</h2></td></tr>
 
 <p>main function </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db6/reverse__binary__tree_8cpp_source.html#l00270">270</a> of file <a class="el" href="../../d4/db6/reverse__binary__tree_8cpp_source.html">reverse_binary_tree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  270</span>           {</div>
 <div class="line"><span class="lineno">  271</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
 <div class="line"><span class="lineno">  272</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  273</span>}</div>
-<div class="ttc" id="areverse__binary__tree_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Function to test the correctness of the Tree Reversal.</div><div class="ttdef"><b>Definition</b> reverse_binary_tree.cpp:260</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/db6/reverse__binary__tree_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="287" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="areverse__binary__tree_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Function to test the correctness of the Tree Reversal.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/db6/reverse__binary__tree_8cpp_source.html#l00260">reverse_binary_tree.cpp:260</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -224,20 +242,17 @@ Here is the call graph for this function:</div>
 <p>&lt; Single element test</p>
 <p>&lt; No element test</p>
 <p>&lt; Correct reversal test</p>
-<div class="fragment"><div class="line"><span class="lineno">  260</span>                   {</div>
-<div class="line"><span class="lineno">  261</span>    <a class="code hl_function" href="../../d9/df4/namespacetests.html#a167c24bd817469ae47358d12e034f2d5">tests::test1</a>();  <span class="comment">///&lt; Single element test</span></div>
-<div class="line"><span class="lineno">  262</span>    <a class="code hl_function" href="../../d9/df4/namespacetests.html#abdd77344d4af8fd56d14a5cabbf2f669">tests::test2</a>();  <span class="comment">///&lt; No element test</span></div>
-<div class="line"><span class="lineno">  263</span>    <a class="code hl_function" href="../../d9/df4/namespacetests.html#aa515639572647508b94986489aab6d76">tests::test3</a>();  <span class="comment">///&lt; Correct reversal test</span></div>
-<div class="line"><span class="lineno">  264</span>}</div>
-<div class="ttc" id="anamespacetests_html_a167c24bd817469ae47358d12e034f2d5"><div class="ttname"><a href="../../d9/df4/namespacetests.html#a167c24bd817469ae47358d12e034f2d5">tests::test1</a></div><div class="ttdeci">void test1()</div><div class="ttdoc">A Test to check an simple case.</div><div class="ttdef"><b>Definition</b> array_left_rotation.cpp:75</div></div>
-<div class="ttc" id="anamespacetests_html_aa515639572647508b94986489aab6d76"><div class="ttname"><a href="../../d9/df4/namespacetests.html#aa515639572647508b94986489aab6d76">tests::test3</a></div><div class="ttdeci">void test3()</div><div class="ttdoc">A Test to check an invalid shift value.</div><div class="ttdef"><b>Definition</b> array_left_rotation.cpp:105</div></div>
-<div class="ttc" id="anamespacetests_html_abdd77344d4af8fd56d14a5cabbf2f669"><div class="ttname"><a href="../../d9/df4/namespacetests.html#abdd77344d4af8fd56d14a5cabbf2f669">tests::test2</a></div><div class="ttdeci">void test2()</div><div class="ttdoc">A Test to check an empty vector.</div><div class="ttdef"><b>Definition</b> array_left_rotation.cpp:90</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/db6/reverse__binary__tree_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="190" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../d4/db6/reverse__binary__tree_8cpp_source.html#l00260">260</a> of file <a class="el" href="../../d4/db6/reverse__binary__tree_8cpp_source.html">reverse_binary_tree.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  260</span>                   {</div>
+<div class="line"><span class="lineno">  261</span>    <a class="code hl_function" href="../../d9/df4/namespacetests.html#a167c24bd817469ae47358d12e034f2d5">tests::test1</a>();  </div>
+<div class="line"><span class="lineno">  262</span>    <a class="code hl_function" href="../../d9/df4/namespacetests.html#abdd77344d4af8fd56d14a5cabbf2f669">tests::test2</a>();  </div>
+<div class="line"><span class="lineno">  263</span>    <a class="code hl_function" href="../../d9/df4/namespacetests.html#aa515639572647508b94986489aab6d76">tests::test3</a>();  </div>
+<div class="line"><span class="lineno">  264</span>}</div>
+<div class="ttc" id="anamespacetests_html_a167c24bd817469ae47358d12e034f2d5"><div class="ttname"><a href="../../d9/df4/namespacetests.html#a167c24bd817469ae47358d12e034f2d5">tests::test1</a></div><div class="ttdeci">void test1()</div><div class="ttdoc">A Test to check an simple case.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d14/array__left__rotation_8cpp_source.html#l00075">array_left_rotation.cpp:75</a></div></div>
+<div class="ttc" id="anamespacetests_html_aa515639572647508b94986489aab6d76"><div class="ttname"><a href="../../d9/df4/namespacetests.html#aa515639572647508b94986489aab6d76">tests::test3</a></div><div class="ttdeci">void test3()</div><div class="ttdoc">A Test to check an invalid shift value.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d14/array__left__rotation_8cpp_source.html#l00105">array_left_rotation.cpp:105</a></div></div>
+<div class="ttc" id="anamespacetests_html_abdd77344d4af8fd56d14a5cabbf2f669"><div class="ttname"><a href="../../d9/df4/namespacetests.html#abdd77344d4af8fd56d14a5cabbf2f669">tests::test2</a></div><div class="ttdeci">void test2()</div><div class="ttdoc">A Test to check an empty vector.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d14/array__left__rotation_8cpp_source.html#l00090">array_left_rotation.cpp:90</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

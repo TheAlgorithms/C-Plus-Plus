@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: sorting/pancake_sort.cpp File Reference</title>
+<title>TheAlgorithms/C++: sorting/pancake_sort.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -122,7 +139,9 @@ Include dependency graph for pancake_sort.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d38/pancake__sort_8cpp__incl.svg" width="350" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d3/d92/pancake__sort_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html">sorting</a></td></tr>
@@ -135,11 +154,11 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a99e27ad84ad43df9977776b1a8d5416e" id="r_a99e27ad84ad43df9977776b1a8d5416e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a99e27ad84ad43df9977776b1a8d5416e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a99e27ad84ad43df9977776b1a8d5416e">sorting::pancake_sort::reverse</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;arr, int start, int end)</td></tr>
+<tr class="memitem:a99e27ad84ad43df9977776b1a8d5416e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a99e27ad84ad43df9977776b1a8d5416e">sorting::pancake_sort::reverse</a> (std::vector&lt; T &gt; &amp;arr, int start, int end)</td></tr>
 <tr class="memdesc:a99e27ad84ad43df9977776b1a8d5416e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This implementation is for reversing elements in a a C-style array .  <br /></td></tr>
 <tr class="separator:a99e27ad84ad43df9977776b1a8d5416e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abff90bc0f54e4f8ea5f0330471781bd5" id="r_abff90bc0f54e4f8ea5f0330471781bd5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:abff90bc0f54e4f8ea5f0330471781bd5"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#abff90bc0f54e4f8ea5f0330471781bd5">sorting::pancake_sort::pancakeSort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;arr, int size)</td></tr>
+<tr class="memitem:abff90bc0f54e4f8ea5f0330471781bd5"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#abff90bc0f54e4f8ea5f0330471781bd5">sorting::pancake_sort::pancakeSort</a> (std::vector&lt; T &gt; &amp;arr, int size)</td></tr>
 <tr class="memdesc:abff90bc0f54e4f8ea5f0330471781bd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This implementation is for a C-style array input that gets modified in place.  <br /></td></tr>
 <tr class="separator:abff90bc0f54e4f8ea5f0330471781bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
@@ -155,6 +174,8 @@ Functions</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd>more on <a href="https://en.wikipedia.org/wiki/Pancake_sorting" target="_blank">Pancake sort</a> </dd>
 <dd>
 related <a class="el" href="../../db/dd3/ode__forward__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe" title="Problem statement for a system with first-order differential equations. Updates the system differenti...">problem</a> at <a href="https://leetcode.com/problems/pancake-sorting/" target="_blank">Leetcode</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d3/d92/pancake__sort_8cpp_source.html">pancake_sort.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -173,17 +194,14 @@ related <a class="el" href="../../db/dd3/ode__forward__euler_8cpp.html#abaeae8f6
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d92/pancake__sort_8cpp_source.html#l00128">128</a> of file <a class="el" href="../../d3/d92/pancake__sort_8cpp_source.html">pancake_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  128</span>           {</div>
 <div class="line"><span class="lineno">  129</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();</div>
 <div class="line"><span class="lineno">  130</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  131</span>}</div>
-<div class="ttc" id="apancake__sort_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Test implementations.</div><div class="ttdef"><b>Definition</b> pancake_sort.cpp:86</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d92/pancake__sort_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="322" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="apancake__sort_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d92/pancake__sort_8cpp_source.html#l00086">pancake_sort.cpp:86</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abff90bc0f54e4f8ea5f0330471781bd5" name="abff90bc0f54e4f8ea5f0330471781bd5"></a>
@@ -197,7 +215,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">int sorting::pancake_sort::pancakeSort </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span>, </td>
+          <td class="paramtype">std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -216,6 +234,8 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d92/pancake__sort_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../d3/d92/pancake__sort_8cpp_source.html">pancake_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   61</span>                                             {</div>
 <div class="line"><span class="lineno">   62</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = size; i &gt; 1; --i) {</div>
 <div class="line"><span class="lineno">   63</span>        <span class="keywordtype">int</span> max_index = 0, j = 0;  <span class="comment">// intialize some variables.</span></div>
@@ -228,19 +248,13 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">   70</span>        }</div>
 <div class="line"><span class="lineno">   71</span>        <span class="keywordflow">if</span> (max_index != i - 1)  <span class="comment">// check for reversing</span></div>
 <div class="line"><span class="lineno">   72</span>        {</div>
-<div class="line"><span class="lineno">   73</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/reverse.html">reverse</a>(arr, 0, max_index);</div>
-<div class="line"><span class="lineno">   74</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/reverse.html">reverse</a>(arr, 0, i - 1);</div>
+<div class="line"><span class="lineno">   73</span>            reverse(arr, 0, max_index);</div>
+<div class="line"><span class="lineno">   74</span>            reverse(arr, 0, i - 1);</div>
 <div class="line"><span class="lineno">   75</span>        }</div>
 <div class="line"><span class="lineno">   76</span>    }</div>
 <div class="line"><span class="lineno">   77</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   78</span>}</div>
-<div class="ttc" id="areverse_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/reverse.html">std::reverse</a></div><div class="ttdeci">T reverse(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d92/pancake__sort_8cpp_abff90bc0f54e4f8ea5f0330471781bd5_cgraph.svg" width="158" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a99e27ad84ad43df9977776b1a8d5416e" name="a99e27ad84ad43df9977776b1a8d5416e"></a>
@@ -254,7 +268,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void sorting::pancake_sort::reverse </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span>, </td>
+          <td class="paramtype">std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -279,17 +293,18 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d92/pancake__sort_8cpp_source.html#l00043">43</a> of file <a class="el" href="../../d3/d92/pancake__sort_8cpp_source.html">pancake_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   43</span>                                                    {</div>
 <div class="line"><span class="lineno">   44</span>    T temp;  <span class="comment">// Temporary variable</span></div>
 <div class="line"><span class="lineno">   45</span>    <span class="keywordflow">while</span> (start &lt;= end) {</div>
 <div class="line"><span class="lineno">   46</span>        temp = arr[start];</div>
-<div class="line"><span class="lineno">   47</span>        arr[start] = arr[<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a>];</div>
-<div class="line"><span class="lineno">   48</span>        arr[<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a>] = temp;</div>
+<div class="line"><span class="lineno">   47</span>        arr[start] = arr[end];</div>
+<div class="line"><span class="lineno">   48</span>        arr[end] = temp;</div>
 <div class="line"><span class="lineno">   49</span>        start++;</div>
-<div class="line"><span class="lineno">   50</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a>--;</div>
+<div class="line"><span class="lineno">   50</span>        end--;</div>
 <div class="line"><span class="lineno">   51</span>    }</div>
 <div class="line"><span class="lineno">   52</span>}</div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -318,56 +333,48 @@ template&lt;typename T &gt; </div>
 
 <p>Test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d92/pancake__sort_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../d3/d92/pancake__sort_8cpp_source.html">pancake_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   86</span>                   {</div>
 <div class="line"><span class="lineno">   87</span>    <span class="comment">// example 1: vector of int</span></div>
 <div class="line"><span class="lineno">   88</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> size1 = 7;</div>
-<div class="line"><span class="lineno">   89</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nTest 1- as std::vector&lt;int&gt;...&quot;</span>;</div>
-<div class="line"><span class="lineno">   90</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> arr1 = {23, 10, 20, 11, 12, 6, 7};</div>
+<div class="line"><span class="lineno">   89</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nTest 1- as std::vector&lt;int&gt;...&quot;</span>;</div>
+<div class="line"><span class="lineno">   90</span>    std::vector&lt;int&gt; arr1 = {23, 10, 20, 11, 12, 6, 7};</div>
 <div class="line"><span class="lineno">   91</span>    <a class="code hl_function" href="#abff90bc0f54e4f8ea5f0330471781bd5">sorting::pancake_sort::pancakeSort</a>(arr1, size1);</div>
-<div class="line"><span class="lineno">   92</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(arr1.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), arr1.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>()));</div>
-<div class="line"><span class="lineno">   93</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Passed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   92</span>    assert(std::is_sorted(arr1.begin(), arr1.end()));</div>
+<div class="line"><span class="lineno">   93</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Passed\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   94</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size1; i++) {</div>
-<div class="line"><span class="lineno">   95</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; arr1[i] &lt;&lt; <span class="stringliteral">&quot; ,&quot;</span>;</div>
+<div class="line"><span class="lineno">   95</span>        std::cout &lt;&lt; arr1[i] &lt;&lt; <span class="stringliteral">&quot; ,&quot;</span>;</div>
 <div class="line"><span class="lineno">   96</span>    }</div>
-<div class="line"><span class="lineno">   97</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   97</span>    std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   98</span> </div>
 <div class="line"><span class="lineno">   99</span>    <span class="comment">// example 2: vector of double</span></div>
 <div class="line"><span class="lineno">  100</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> size2 = 8;</div>
-<div class="line"><span class="lineno">  101</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nTest 2- as std::vector&lt;double&gt;...&quot;</span>;</div>
-<div class="line"><span class="lineno">  102</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;double&gt;</a> arr2 = {23.56, 10.62, 200.78, 111.484,</div>
+<div class="line"><span class="lineno">  101</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nTest 2- as std::vector&lt;double&gt;...&quot;</span>;</div>
+<div class="line"><span class="lineno">  102</span>    std::vector&lt;double&gt; arr2 = {23.56, 10.62, 200.78, 111.484,</div>
 <div class="line"><span class="lineno">  103</span>                                3.9,   1.2,   61.77,  79.6};</div>
 <div class="line"><span class="lineno">  104</span>    <a class="code hl_function" href="#abff90bc0f54e4f8ea5f0330471781bd5">sorting::pancake_sort::pancakeSort</a>(arr2, size2);</div>
-<div class="line"><span class="lineno">  105</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(arr2.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), arr2.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>()));</div>
-<div class="line"><span class="lineno">  106</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Passed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  105</span>    assert(std::is_sorted(arr2.begin(), arr2.end()));</div>
+<div class="line"><span class="lineno">  106</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Passed\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  107</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size2; i++) {</div>
-<div class="line"><span class="lineno">  108</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; arr2[i] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
+<div class="line"><span class="lineno">  108</span>        std::cout &lt;&lt; arr2[i] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
 <div class="line"><span class="lineno">  109</span>    }</div>
-<div class="line"><span class="lineno">  110</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  110</span>    std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  111</span> </div>
 <div class="line"><span class="lineno">  112</span>    <span class="comment">// example 3:vector of float</span></div>
 <div class="line"><span class="lineno">  113</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> size3 = 7;</div>
-<div class="line"><span class="lineno">  114</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nTest 3- as std::vector&lt;float&gt;...&quot;</span>;</div>
-<div class="line"><span class="lineno">  115</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> arr3 = {6.56, 12.62, 200.78, 768.484, 19.27, 68.87, 9.6};</div>
+<div class="line"><span class="lineno">  114</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nTest 3- as std::vector&lt;float&gt;...&quot;</span>;</div>
+<div class="line"><span class="lineno">  115</span>    std::vector&lt;float&gt; arr3 = {6.56, 12.62, 200.78, 768.484, 19.27, 68.87, 9.6};</div>
 <div class="line"><span class="lineno">  116</span>    <a class="code hl_function" href="#abff90bc0f54e4f8ea5f0330471781bd5">sorting::pancake_sort::pancakeSort</a>(arr3, size3);</div>
-<div class="line"><span class="lineno">  117</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(arr3.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), arr3.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>()));</div>
-<div class="line"><span class="lineno">  118</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Passed\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  117</span>    assert(std::is_sorted(arr3.begin(), arr3.end()));</div>
+<div class="line"><span class="lineno">  118</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Passed\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  119</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size3; i++) {</div>
-<div class="line"><span class="lineno">  120</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; arr3[i] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
+<div class="line"><span class="lineno">  120</span>        std::cout &lt;&lt; arr3[i] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
 <div class="line"><span class="lineno">  121</span>    }</div>
-<div class="line"><span class="lineno">  122</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  122</span>    std::cout &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  123</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/begin.html">std::vector::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="ais_sorted_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></div><div class="ttdeci">T is_sorted(T... args)</div></div>
-<div class="ttc" id="apancake__sort_8cpp_html_abff90bc0f54e4f8ea5f0330471781bd5"><div class="ttname"><a href="#abff90bc0f54e4f8ea5f0330471781bd5">sorting::pancake_sort::pancakeSort</a></div><div class="ttdeci">int pancakeSort(std::vector&lt; T &gt; &amp;arr, int size)</div><div class="ttdoc">This implementation is for a C-style array input that gets modified in place.</div><div class="ttdef"><b>Definition</b> pancake_sort.cpp:61</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d92/pancake__sort_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="224" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="apancake__sort_8cpp_html_abff90bc0f54e4f8ea5f0330471781bd5"><div class="ttname"><a href="#abff90bc0f54e4f8ea5f0330471781bd5">sorting::pancake_sort::pancakeSort</a></div><div class="ttdeci">int pancakeSort(std::vector&lt; T &gt; &amp;arr, int size)</div><div class="ttdoc">This implementation is for a C-style array input that gets modified in place.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d92/pancake__sort_8cpp_source.html#l00061">pancake_sort.cpp:61</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: sorting/random_pivot_quick_sort.cpp File Reference</title>
+<title>TheAlgorithms/C++: sorting/random_pivot_quick_sort.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -125,7 +142,9 @@ Include dependency graph for random_pivot_quick_sort.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d58/random__pivot__quick__sort_8cpp__incl.svg" width="494" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d58/class_test_cases.html">TestCases</a></td></tr>
@@ -144,22 +163,22 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ac3281dc34a9cfd7beb332419b8a0aa10" id="r_ac3281dc34a9cfd7beb332419b8a0aa10"><td class="memTemplParams" colspan="2">template&lt;size_t T&gt; </td></tr>
-<tr class="memitem:ac3281dc34a9cfd7beb332419b8a0aa10"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac3281dc34a9cfd7beb332419b8a0aa10">sorting::random_pivot_quick_sort::showArray</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int64_t, T &gt; arr)</td></tr>
+<tr class="memitem:ac3281dc34a9cfd7beb332419b8a0aa10"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac3281dc34a9cfd7beb332419b8a0aa10">sorting::random_pivot_quick_sort::showArray</a> (std::array&lt; int64_t, T &gt; arr)</td></tr>
 <tr class="memdesc:ac3281dc34a9cfd7beb332419b8a0aa10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to print the array.  <br /></td></tr>
 <tr class="separator:ac3281dc34a9cfd7beb332419b8a0aa10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac5657b4fe2251cd21073f44233f6ea5" id="r_aac5657b4fe2251cd21073f44233f6ea5"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac5657b4fe2251cd21073f44233f6ea5">sorting::random_pivot_quick_sort::getRandomIndex</a> (int64_t start, int64_t end)</td></tr>
 <tr class="memdesc:aac5657b4fe2251cd21073f44233f6ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes the start and end indices of an array and returns a random int64_teger between the range of those two for selecting pivot element.  <br /></td></tr>
 <tr class="separator:aac5657b4fe2251cd21073f44233f6ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d1c39e1ff42c04fb8ec0c0b9411cd3e" id="r_a3d1c39e1ff42c04fb8ec0c0b9411cd3e"><td class="memTemplParams" colspan="2">template&lt;size_t size&gt; </td></tr>
-<tr class="memitem:a3d1c39e1ff42c04fb8ec0c0b9411cd3e"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/tuple.html">std::tuple</a>&lt; int64_t, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int64_t, size &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3d1c39e1ff42c04fb8ec0c0b9411cd3e">sorting::random_pivot_quick_sort::partition</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int64_t, size &gt; arr, int64_t start, int64_t end)</td></tr>
+<tr class="memitem:a3d1c39e1ff42c04fb8ec0c0b9411cd3e"><td class="memTemplItemLeft" align="right" valign="top">std::tuple&lt; int64_t, std::array&lt; int64_t, size &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3d1c39e1ff42c04fb8ec0c0b9411cd3e">sorting::random_pivot_quick_sort::partition</a> (std::array&lt; int64_t, size &gt; arr, int64_t start, int64_t end)</td></tr>
 <tr class="memdesc:a3d1c39e1ff42c04fb8ec0c0b9411cd3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A partition function which handles the partition logic of quick sort.  <br /></td></tr>
 <tr class="separator:a3d1c39e1ff42c04fb8ec0c0b9411cd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d2e7465e7b5d54c2de6d5e9db1ea6a5" id="r_a7d2e7465e7b5d54c2de6d5e9db1ea6a5"><td class="memTemplParams" colspan="2">template&lt;size_t size&gt; </td></tr>
-<tr class="memitem:a7d2e7465e7b5d54c2de6d5e9db1ea6a5"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int64_t, size &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7d2e7465e7b5d54c2de6d5e9db1ea6a5">sorting::random_pivot_quick_sort::quickSortRP</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int64_t, size &gt; arr, int64_t start, int64_t end)</td></tr>
+<tr class="memitem:a7d2e7465e7b5d54c2de6d5e9db1ea6a5"><td class="memTemplItemLeft" align="right" valign="top">std::array&lt; int64_t, size &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7d2e7465e7b5d54c2de6d5e9db1ea6a5">sorting::random_pivot_quick_sort::quickSortRP</a> (std::array&lt; int64_t, size &gt; arr, int64_t start, int64_t end)</td></tr>
 <tr class="memdesc:a7d2e7465e7b5d54c2de6d5e9db1ea6a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random pivot quick sort function. This function is the starting point of the algorithm.  <br /></td></tr>
 <tr class="separator:a7d2e7465e7b5d54c2de6d5e9db1ea6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40675d2eb960c71ca31ec475ba90120d" id="r_a40675d2eb960c71ca31ec475ba90120d"><td class="memTemplParams" colspan="2">template&lt;size_t size&gt; </td></tr>
-<tr class="memitem:a40675d2eb960c71ca31ec475ba90120d"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int64_t, size &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a40675d2eb960c71ca31ec475ba90120d">sorting::random_pivot_quick_sort::generateUnsortedArray</a> (int64_t from, int64_t to)</td></tr>
+<tr class="memitem:a40675d2eb960c71ca31ec475ba90120d"><td class="memTemplItemLeft" align="right" valign="top">std::array&lt; int64_t, size &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a40675d2eb960c71ca31ec475ba90120d">sorting::random_pivot_quick_sort::generateUnsortedArray</a> (int64_t from, int64_t to)</td></tr>
 <tr class="memdesc:a40675d2eb960c71ca31ec475ba90120d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function utility to generate unsorted array of given size and range.  <br /></td></tr>
 <tr class="separator:a40675d2eb960c71ca31ec475ba90120d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
@@ -196,6 +215,8 @@ Functions</h2></td></tr>
 <li>Return the partition index from the function.</li>
 </ul>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/foo290" target="_blank">Nitin Sharma</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html">random_pivot_quick_sort.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a40675d2eb960c71ca31ec475ba90120d" name="a40675d2eb960c71ca31ec475ba90120d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a40675d2eb960c71ca31ec475ba90120d">&#9670;&#160;</a></span>generateUnsortedArray()</h2>
@@ -206,7 +227,7 @@ Functions</h2></td></tr>
 template&lt;size_t size&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int64_t, size &gt; sorting::random_pivot_quick_sort::generateUnsortedArray </td>
+          <td class="memname">std::array&lt; int64_t, size &gt; sorting::random_pivot_quick_sort::generateUnsortedArray </td>
           <td>(</td>
           <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>from</em></span>, </td>
         </tr>
@@ -233,9 +254,11 @@ template&lt;size_t size&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::array&lt;int64_t , size&gt; Unsorted array of specified size. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html#l00160">160</a> of file <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html">random_pivot_quick_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  160</span>                                                                        {</div>
-<div class="line"><span class="lineno">  161</span>    srand(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">time</a>(<span class="keyword">nullptr</span>));</div>
-<div class="line"><span class="lineno">  162</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int64_t, size&gt;</a> unsortedArray{};</div>
+<div class="line"><span class="lineno">  161</span>    srand(time(<span class="keyword">nullptr</span>));</div>
+<div class="line"><span class="lineno">  162</span>    std::array&lt;int64_t, size&gt; unsortedArray{};</div>
 <div class="line"><span class="lineno">  163</span>    assert(from &lt; to);</div>
 <div class="line"><span class="lineno">  164</span>    int64_t i = 0;</div>
 <div class="line"><span class="lineno">  165</span>    <span class="keywordflow">while</span> (i &lt; size) {</div>
@@ -247,14 +270,7 @@ template&lt;size_t size&gt; </div>
 <div class="line"><span class="lineno">  171</span>    }</div>
 <div class="line"><span class="lineno">  172</span>    <span class="keywordflow">return</span> unsortedArray;</div>
 <div class="line"><span class="lineno">  173</span>}</div>
-<div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
-<div class="ttc" id="atime_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a></div><div class="ttdeci">T time(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/daa/random__pivot__quick__sort_8cpp_a40675d2eb960c71ca31ec475ba90120d_cgraph.svg" width="211" height="91"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aac5657b4fe2251cd21073f44233f6ea5" name="aac5657b4fe2251cd21073f44233f6ea5"></a>
@@ -285,18 +301,14 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int64_t A random number between start and end index. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html#l00088">88</a> of file <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html">random_pivot_quick_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   88</span>                                                   {</div>
-<div class="line"><span class="lineno">   89</span>    srand(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">time</a>(<span class="keyword">nullptr</span>));  <span class="comment">// Initialize random number generator.</span></div>
-<div class="line"><span class="lineno">   90</span>    int64_t randomPivotIndex = start + rand() % (<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a> - start + 1);</div>
+<div class="line"><span class="lineno">   89</span>    srand(time(<span class="keyword">nullptr</span>));  <span class="comment">// Initialize random number generator.</span></div>
+<div class="line"><span class="lineno">   90</span>    int64_t randomPivotIndex = start + rand() % (end - start + 1);</div>
 <div class="line"><span class="lineno">   91</span>    <span class="keywordflow">return</span> randomPivotIndex;</div>
 <div class="line"><span class="lineno">   92</span>}</div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/daa/random__pivot__quick__sort_8cpp_aac5657b4fe2251cd21073f44233f6ea5_cgraph.svg" width="207" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0ddf1224851353fc92bfbff6f499fa97" name="a0ddf1224851353fc92bfbff6f499fa97"></a>
@@ -327,35 +339,29 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html#l00323">323</a> of file <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html">random_pivot_quick_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  323</span>                                 {</div>
 <div class="line"><span class="lineno">  324</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// Executes various test cases.</span></div>
 <div class="line"><span class="lineno">  325</span> </div>
 <div class="line"><span class="lineno">  326</span>    <span class="keyword">const</span> int64_t inputSize = 10;</div>
-<div class="line"><span class="lineno">  327</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int64_t, inputSize&gt;</a> unsorted_array =</div>
+<div class="line"><span class="lineno">  327</span>    std::array&lt;int64_t, inputSize&gt; unsorted_array =</div>
 <div class="line"><span class="lineno">  328</span>        sorting::random_pivot_quick_sort::generateUnsortedArray&lt;inputSize&gt;(</div>
 <div class="line"><span class="lineno">  329</span>            50, 1000);</div>
-<div class="line"><span class="lineno">  330</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Unsorted array is : &quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  330</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Unsorted array is : &quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  331</span>    <a class="code hl_function" href="#ac3281dc34a9cfd7beb332419b8a0aa10">sorting::random_pivot_quick_sort::showArray</a>(unsorted_array);</div>
 <div class="line"><span class="lineno">  332</span> </div>
-<div class="line"><span class="lineno">  333</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int64_t, inputSize&gt;</a> sorted_array =</div>
+<div class="line"><span class="lineno">  333</span>    std::array&lt;int64_t, inputSize&gt; sorted_array =</div>
 <div class="line"><span class="lineno">  334</span>        <a class="code hl_function" href="#a7d2e7465e7b5d54c2de6d5e9db1ea6a5">sorting::random_pivot_quick_sort::quickSortRP</a>(</div>
-<div class="line"><span class="lineno">  335</span>            unsorted_array, 0, unsorted_array.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/size.html">size</a>() - 1);</div>
-<div class="line"><span class="lineno">  336</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sorted array is : &quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  335</span>            unsorted_array, 0, unsorted_array.size() - 1);</div>
+<div class="line"><span class="lineno">  336</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Sorted array is : &quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  337</span>    <a class="code hl_function" href="#ac3281dc34a9cfd7beb332419b8a0aa10">sorting::random_pivot_quick_sort::showArray</a>(sorted_array);</div>
 <div class="line"><span class="lineno">  338</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  339</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="arandom__pivot__quick__sort_8cpp_html_a7d2e7465e7b5d54c2de6d5e9db1ea6a5"><div class="ttname"><a href="#a7d2e7465e7b5d54c2de6d5e9db1ea6a5">sorting::random_pivot_quick_sort::quickSortRP</a></div><div class="ttdeci">std::array&lt; int64_t, size &gt; quickSortRP(std::array&lt; int64_t, size &gt; arr, int64_t start, int64_t end)</div><div class="ttdoc">Random pivot quick sort function. This function is the starting point of the algorithm.</div><div class="ttdef"><b>Definition</b> random_pivot_quick_sort.cpp:130</div></div>
-<div class="ttc" id="arandom__pivot__quick__sort_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> random_pivot_quick_sort.cpp:312</div></div>
-<div class="ttc" id="arandom__pivot__quick__sort_8cpp_html_ac3281dc34a9cfd7beb332419b8a0aa10"><div class="ttname"><a href="#ac3281dc34a9cfd7beb332419b8a0aa10">sorting::random_pivot_quick_sort::showArray</a></div><div class="ttdeci">void showArray(std::array&lt; int64_t, T &gt; arr)</div><div class="ttdoc">Utility function to print the array.</div><div class="ttdef"><b>Definition</b> random_pivot_quick_sort.cpp:73</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array/size.html">std::array::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/daa/random__pivot__quick__sort_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph.svg" width="100%" height="508"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="arandom__pivot__quick__sort_8cpp_html_a7d2e7465e7b5d54c2de6d5e9db1ea6a5"><div class="ttname"><a href="#a7d2e7465e7b5d54c2de6d5e9db1ea6a5">sorting::random_pivot_quick_sort::quickSortRP</a></div><div class="ttdeci">std::array&lt; int64_t, size &gt; quickSortRP(std::array&lt; int64_t, size &gt; arr, int64_t start, int64_t end)</div><div class="ttdoc">Random pivot quick sort function. This function is the starting point of the algorithm.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html#l00130">random_pivot_quick_sort.cpp:130</a></div></div>
+<div class="ttc" id="arandom__pivot__quick__sort_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html#l00312">random_pivot_quick_sort.cpp:312</a></div></div>
+<div class="ttc" id="arandom__pivot__quick__sort_8cpp_html_ac3281dc34a9cfd7beb332419b8a0aa10"><div class="ttname"><a href="#ac3281dc34a9cfd7beb332419b8a0aa10">sorting::random_pivot_quick_sort::showArray</a></div><div class="ttdeci">void showArray(std::array&lt; int64_t, T &gt; arr)</div><div class="ttdoc">Utility function to print the array.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html#l00073">random_pivot_quick_sort.cpp:73</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3d1c39e1ff42c04fb8ec0c0b9411cd3e" name="a3d1c39e1ff42c04fb8ec0c0b9411cd3e"></a>
@@ -367,9 +373,9 @@ Here is the call graph for this function:</div>
 template&lt;size_t size&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/tuple.html">std::tuple</a>&lt; int64_t, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int64_t, size &gt; &gt; sorting::random_pivot_quick_sort::partition </td>
+          <td class="memname">std::tuple&lt; int64_t, std::array&lt; int64_t, size &gt; &gt; sorting::random_pivot_quick_sort::partition </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int64_t, size &gt;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span>, </td>
+          <td class="paramtype">std::array&lt; int64_t, size &gt;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -399,30 +405,25 @@ template&lt;size_t size&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::tuple&lt;int64_t , std::array&lt;int64_t , size&gt;&gt; A tuple of pivot index and pivot sorted array. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html#l00103">103</a> of file <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html">random_pivot_quick_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  104</span>                                                             {</div>
-<div class="line"><span class="lineno">  105</span>    int64_t pivot = arr[<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a>];  <span class="comment">// Randomly selected element will be here from</span></div>
+<div class="line"><span class="lineno">  105</span>    int64_t pivot = arr[end];  <span class="comment">// Randomly selected element will be here from</span></div>
 <div class="line"><span class="lineno">  106</span>                               <span class="comment">// caller function (quickSortRP()).</span></div>
 <div class="line"><span class="lineno">  107</span>    int64_t pInd = start;</div>
 <div class="line"><span class="lineno">  108</span> </div>
-<div class="line"><span class="lineno">  109</span>    <span class="keywordflow">for</span> (int64_t i = start; i &lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a>; i++) {</div>
+<div class="line"><span class="lineno">  109</span>    <span class="keywordflow">for</span> (int64_t i = start; i &lt; end; i++) {</div>
 <div class="line"><span class="lineno">  110</span>        <span class="keywordflow">if</span> (arr[i] &lt;= pivot) {</div>
-<div class="line"><span class="lineno">  111</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(arr[i], arr[pInd]);  <span class="comment">// swapping the elements from current</span></div>
+<div class="line"><span class="lineno">  111</span>            std::swap(arr[i], arr[pInd]);  <span class="comment">// swapping the elements from current</span></div>
 <div class="line"><span class="lineno">  112</span>                                           <span class="comment">// index to pInd.</span></div>
 <div class="line"><span class="lineno">  113</span>            pInd++;</div>
 <div class="line"><span class="lineno">  114</span>        }</div>
 <div class="line"><span class="lineno">  115</span>    }</div>
-<div class="line"><span class="lineno">  116</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(arr[pInd],</div>
+<div class="line"><span class="lineno">  116</span>    std::swap(arr[pInd],</div>
 <div class="line"><span class="lineno">  117</span>              arr[end]);  <span class="comment">// swapping the pivot element to its sorted position</span></div>
-<div class="line"><span class="lineno">  118</span>    <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/tuple/make_tuple.html">std::make_tuple</a>(pInd, arr);</div>
+<div class="line"><span class="lineno">  118</span>    <span class="keywordflow">return</span> std::make_tuple(pInd, arr);</div>
 <div class="line"><span class="lineno">  119</span>}</div>
-<div class="ttc" id="amake_tuple_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/tuple/make_tuple.html">std::make_tuple</a></div><div class="ttdeci">T make_tuple(T... args)</div></div>
-<div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/daa/random__pivot__quick__sort_8cpp_a3d1c39e1ff42c04fb8ec0c0b9411cd3e_cgraph.svg" width="320" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7d2e7465e7b5d54c2de6d5e9db1ea6a5" name="a7d2e7465e7b5d54c2de6d5e9db1ea6a5"></a>
@@ -434,9 +435,9 @@ Here is the call graph for this function:</div>
 template&lt;size_t size&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int64_t, size &gt; sorting::random_pivot_quick_sort::quickSortRP </td>
+          <td class="memname">std::array&lt; int64_t, size &gt; sorting::random_pivot_quick_sort::quickSortRP </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int64_t, size &gt;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span>, </td>
+          <td class="paramtype">std::array&lt; int64_t, size &gt;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -466,35 +467,30 @@ template&lt;size_t size&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::array&lt;int64_t , size&gt; A fully sorted array in ascending order. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html#l00130">130</a> of file <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html">random_pivot_quick_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  131</span>                                                                  {</div>
 <div class="line"><span class="lineno">  132</span>    <span class="keywordflow">if</span> (start &lt; end) {</div>
 <div class="line"><span class="lineno">  133</span>        int64_t randomIndex = <a class="code hl_function" href="#aac5657b4fe2251cd21073f44233f6ea5">getRandomIndex</a>(start, end);</div>
 <div class="line"><span class="lineno">  134</span> </div>
 <div class="line"><span class="lineno">  135</span>        <span class="comment">// switching the pivot with right most bound.</span></div>
-<div class="line"><span class="lineno">  136</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(arr[end], arr[randomIndex]);</div>
+<div class="line"><span class="lineno">  136</span>        std::swap(arr[end], arr[randomIndex]);</div>
 <div class="line"><span class="lineno">  137</span> </div>
 <div class="line"><span class="lineno">  138</span>        int64_t pivotIndex = 0;</div>
 <div class="line"><span class="lineno">  139</span>        <span class="comment">// getting pivot index and pivot sorted array.</span></div>
-<div class="line"><span class="lineno">  140</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/tuple/tie.html">std::tie</a>(pivotIndex, arr) = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/partition.html">partition</a>(arr, start, end);</div>
+<div class="line"><span class="lineno">  140</span>        std::tie(pivotIndex, arr) = partition(arr, start, end);</div>
 <div class="line"><span class="lineno">  141</span> </div>
 <div class="line"><span class="lineno">  142</span>        <span class="comment">// Recursively calling</span></div>
-<div class="line"><span class="lineno">  143</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt;int64_t, arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/size.html">size</a>()&gt; rightSortingLeft =</div>
+<div class="line"><span class="lineno">  143</span>        std::array&lt;int64_t, arr.size()&gt; rightSortingLeft =</div>
 <div class="line"><span class="lineno">  144</span>            <a class="code hl_function" href="#a7d2e7465e7b5d54c2de6d5e9db1ea6a5">quickSortRP</a>(arr, start, pivotIndex - 1);</div>
-<div class="line"><span class="lineno">  145</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt;int64_t, arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/size.html">size</a>()&gt; full_sorted =</div>
+<div class="line"><span class="lineno">  145</span>        std::array&lt;int64_t, arr.size()&gt; full_sorted =</div>
 <div class="line"><span class="lineno">  146</span>            <a class="code hl_function" href="#a7d2e7465e7b5d54c2de6d5e9db1ea6a5">quickSortRP</a>(rightSortingLeft, pivotIndex + 1, end);</div>
 <div class="line"><span class="lineno">  147</span>        arr = full_sorted;</div>
 <div class="line"><span class="lineno">  148</span>    }</div>
 <div class="line"><span class="lineno">  149</span>    <span class="keywordflow">return</span> arr;</div>
 <div class="line"><span class="lineno">  150</span>}</div>
-<div class="ttc" id="apartition_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/partition.html">std::partition</a></div><div class="ttdeci">T partition(T... args)</div></div>
-<div class="ttc" id="arandom__pivot__quick__sort_8cpp_html_aac5657b4fe2251cd21073f44233f6ea5"><div class="ttname"><a href="#aac5657b4fe2251cd21073f44233f6ea5">sorting::random_pivot_quick_sort::getRandomIndex</a></div><div class="ttdeci">int64_t getRandomIndex(int64_t start, int64_t end)</div><div class="ttdoc">Takes the start and end indices of an array and returns a random int64_teger between the range of tho...</div><div class="ttdef"><b>Definition</b> random_pivot_quick_sort.cpp:88</div></div>
-<div class="ttc" id="atie_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/tuple/tie.html">std::tie</a></div><div class="ttdeci">T tie(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/daa/random__pivot__quick__sort_8cpp_a7d2e7465e7b5d54c2de6d5e9db1ea6a5_cgraph.svg" width="424" height="224"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="arandom__pivot__quick__sort_8cpp_html_aac5657b4fe2251cd21073f44233f6ea5"><div class="ttname"><a href="#aac5657b4fe2251cd21073f44233f6ea5">sorting::random_pivot_quick_sort::getRandomIndex</a></div><div class="ttdeci">int64_t getRandomIndex(int64_t start, int64_t end)</div><div class="ttdoc">Takes the start and end indices of an array and returns a random int64_teger between the range of tho...</div><div class="ttdef"><b>Definition</b> <a href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html#l00088">random_pivot_quick_sort.cpp:88</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac3281dc34a9cfd7beb332419b8a0aa10" name="ac3281dc34a9cfd7beb332419b8a0aa10"></a>
@@ -508,7 +504,7 @@ template&lt;size_t T&gt; </div>
         <tr>
           <td class="memname">void sorting::random_pivot_quick_sort::showArray </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int64_t, T &gt;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span></td><td>)</td>
+          <td class="paramtype">std::array&lt; int64_t, T &gt;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -528,18 +524,15 @@ template&lt;size_t T&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   73</span>                                         {</div>
-<div class="line"><span class="lineno">   74</span>    <span class="keywordflow">for</span> (int64_t i = 0; i &lt; arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/size.html">size</a>(); i++) {</div>
-<div class="line"><span class="lineno">   75</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; arr[i] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><span class="lineno">   76</span>    }</div>
-<div class="line"><span class="lineno">   77</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   78</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/daa/random__pivot__quick__sort_8cpp_ac3281dc34a9cfd7beb332419b8a0aa10_cgraph.svg" width="326" height="92"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
+<p class="definition">Definition at line <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html#l00073">73</a> of file <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html">random_pivot_quick_sort.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   73</span>                                         {</div>
+<div class="line"><span class="lineno">   74</span>    <span class="keywordflow">for</span> (int64_t i = 0; i &lt; arr.size(); i++) {</div>
+<div class="line"><span class="lineno">   75</span>        std::cout &lt;&lt; arr[i] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">   76</span>    }</div>
+<div class="line"><span class="lineno">   77</span>    std::cout &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   78</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -567,18 +560,15 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html#l00312">312</a> of file <a class="el" href="../../d1/daa/random__pivot__quick__sort_8cpp_source.html">random_pivot_quick_sort.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  312</span>                   {</div>
 <div class="line"><span class="lineno">  313</span>    <a class="code hl_class" href="../../d5/d58/class_test_cases.html">TestCases</a> tc = <a class="code hl_class" href="../../d5/d58/class_test_cases.html">TestCases</a>();</div>
 <div class="line"><span class="lineno">  314</span>    tc.<a class="code hl_function" href="../../d5/d58/class_test_cases.html#aeabea90c02f9159e4a784bbf736e1e23">runTests</a>();</div>
 <div class="line"><span class="lineno">  315</span>}</div>
-<div class="ttc" id="aclass_test_cases_html"><div class="ttname"><a href="../../d5/d58/class_test_cases.html">TestCases</a></div><div class="ttdoc">class encapsulating the necessary test cases</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:225</div></div>
-<div class="ttc" id="aclass_test_cases_html_aeabea90c02f9159e4a784bbf736e1e23"><div class="ttname"><a href="../../d5/d58/class_test_cases.html#aeabea90c02f9159e4a784bbf736e1e23">TestCases::runTests</a></div><div class="ttdeci">void runTests()</div><div class="ttdoc">Executes test cases.</div><div class="ttdef"><b>Definition</b> inorder_successor_of_bst.cpp:243</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/daa/random__pivot__quick__sort_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="100%" height="467"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="ttc" id="aclass_test_cases_html"><div class="ttname"><a href="../../d5/d58/class_test_cases.html">TestCases</a></div><div class="ttdoc">class encapsulating the necessary test cases</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00225">inorder_successor_of_bst.cpp:225</a></div></div>
+<div class="ttc" id="aclass_test_cases_html_aeabea90c02f9159e4a784bbf736e1e23"><div class="ttname"><a href="../../d5/d58/class_test_cases.html#aeabea90c02f9159e4a784bbf736e1e23">TestCases::runTests</a></div><div class="ttdeci">void runTests()</div><div class="ttdoc">Executes test cases.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00243">inorder_successor_of_bst.cpp:243</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

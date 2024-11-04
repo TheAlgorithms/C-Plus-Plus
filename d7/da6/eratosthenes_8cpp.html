@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.12.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -5,10 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: math/eratosthenes.cpp File Reference</title>
+<title>TheAlgorithms/C++: math/eratosthenes.cpp File Reference</title>
+<link rel="icon" href="../../favicon.svg" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@xpack-3rd-party/doxygen-awesome-css@2.2.0-1/doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -18,14 +24,24 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/ams']
+  },
+  tex: {
+    macros: {},
+    packages: ['base','configmacros','ams']
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,10 +49,11 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../project_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Algorithms_in_C++<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">TheAlgorithms/C++<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">Set of algorithms implemented in C++.</div>
+   <div id="projectbrief">All the algorithms implemented in C++</div>
   </td>
  </tr>
  </tbody>
@@ -123,7 +140,9 @@ Include dependency graph for eratosthenes.cpp:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/dd9/eratosthenes_8cpp__incl.svg" width="415" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="../../d7/da6/eratosthenes_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html">math</a></td></tr>
@@ -132,11 +151,11 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a91366864111e1fac29722ca45e02ea8f" id="r_a91366864111e1fac29722ca45e02ea8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#a91366864111e1fac29722ca45e02ea8f">math::sieve</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; bool &gt; *vec)</td></tr>
+<tr class="memitem:a91366864111e1fac29722ca45e02ea8f" id="r_a91366864111e1fac29722ca45e02ea8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#a91366864111e1fac29722ca45e02ea8f">math::sieve</a> (std::vector&lt; bool &gt; *vec)</td></tr>
 <tr class="memdesc:a91366864111e1fac29722ca45e02ea8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs the sieve.  <br /></td></tr>
 <tr class="separator:a91366864111e1fac29722ca45e02ea8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad09d59850865012a6fd95d89954c82e4" id="r_ad09d59850865012a6fd95d89954c82e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#ad09d59850865012a6fd95d89954c82e4">math::print_primes</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; bool &gt; const &amp;<a class="el" href="../../de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a">primes</a>)</td></tr>
-<tr class="memdesc:ad09d59850865012a6fd95d89954c82e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints all the indexes of true values in the passed <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>.  <br /></td></tr>
+<tr class="memitem:ad09d59850865012a6fd95d89954c82e4" id="r_ad09d59850865012a6fd95d89954c82e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#ad09d59850865012a6fd95d89954c82e4">math::print_primes</a> (std::vector&lt; bool &gt; const &amp;<a class="el" href="../../de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a">primes</a>)</td></tr>
+<tr class="memdesc:ad09d59850865012a6fd95d89954c82e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints all the indexes of true values in the passed std::vector.  <br /></td></tr>
 <tr class="separator:ad09d59850865012a6fd95d89954c82e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
 <tr class="memdesc:aa8dca7b867074164d5f45b0f3851269d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-tests the sieve function for major inconsistencies.  <br /></td></tr>
@@ -149,6 +168,8 @@ Functions</h2></td></tr>
 <div class="textblock"><p><a href="https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes" target="_blank">The Sieve of Eratosthenes</a> </p>
 <p>Store an array of booleans where a true value indicates that it's index is prime. For all the values in the array starting from 2 which we know is prime, we walk the array in multiples of the current outer value setting them to not prime. If we remove all multiples of a value as we see it, we'll be left with just primes.</p>
 <p>Pass "print" as a command line arg to see the generated list of primes </p><dl class="section author"><dt>Author</dt><dd><a href="https://github.com/thechubbypanda" target="_blank">Keval Kapdee</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d7/da6/eratosthenes_8cpp_source.html">eratosthenes.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a0ddf1224851353fc92bfbff6f499fa97" name="a0ddf1224851353fc92bfbff6f499fa97"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ddf1224851353fc92bfbff6f499fa97">&#9670;&#160;</a></span>main()</h2>
@@ -178,57 +199,45 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/da6/eratosthenes_8cpp_source.html#l00087">87</a> of file <a class="el" href="../../d7/da6/eratosthenes_8cpp_source.html">eratosthenes.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   87</span>                                 {</div>
 <div class="line"><span class="lineno">   88</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
 <div class="line"><span class="lineno">   89</span> </div>
 <div class="line"><span class="lineno">   90</span>    <span class="comment">// The largest prime we will check for</span></div>
-<div class="line"><span class="lineno">   91</span>    <span class="keyword">auto</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">max</a> = 10000;</div>
+<div class="line"><span class="lineno">   91</span>    <span class="keyword">auto</span> max = 10000;</div>
 <div class="line"><span class="lineno">   92</span> </div>
 <div class="line"><span class="lineno">   93</span>    <span class="comment">// Store a boolean for every number which states if that index is prime or</span></div>
 <div class="line"><span class="lineno">   94</span>    <span class="comment">// not</span></div>
-<div class="line"><span class="lineno">   95</span>    <span class="keyword">auto</span> <a class="code hl_function" href="../../de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a">primes</a> = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a>(max, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   95</span>    <span class="keyword">auto</span> <a class="code hl_function" href="../../de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a">primes</a> = std::vector&lt;bool&gt;(max, <span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">   96</span> </div>
 <div class="line"><span class="lineno">   97</span>    <span class="comment">// Store the algorithm start time</span></div>
-<div class="line"><span class="lineno">   98</span>    <span class="keyword">auto</span> start = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/high_resolution_clock/now.html">std::chrono::high_resolution_clock::now</a>();</div>
+<div class="line"><span class="lineno">   98</span>    <span class="keyword">auto</span> start = std::chrono::high_resolution_clock::now();</div>
 <div class="line"><span class="lineno">   99</span> </div>
 <div class="line"><span class="lineno">  100</span>    <span class="comment">// Run the sieve</span></div>
 <div class="line"><span class="lineno">  101</span>    <a class="code hl_function" href="../../dd/d47/namespacemath.html#a91366864111e1fac29722ca45e02ea8f">math::sieve</a>(&amp;<a class="code hl_function" href="../../de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a">primes</a>);</div>
 <div class="line"><span class="lineno">  102</span> </div>
 <div class="line"><span class="lineno">  103</span>    <span class="comment">// Time difference calculation</span></div>
-<div class="line"><span class="lineno">  104</span>    <span class="keyword">auto</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">time</a> = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/duration/duration_cast.html">std::chrono::duration_cast</a>&lt;</div>
-<div class="line"><span class="lineno">  105</span>                    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/duration.html">std::chrono::duration&lt;double, std::ratio&lt;1&gt;</a>&gt;&gt;(</div>
-<div class="line"><span class="lineno">  106</span>                    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/high_resolution_clock/now.html">std::chrono::high_resolution_clock::now</a>() - start)</div>
+<div class="line"><span class="lineno">  104</span>    <span class="keyword">auto</span> time = std::chrono::duration_cast&lt;</div>
+<div class="line"><span class="lineno">  105</span>                    std::chrono::duration&lt;double, std::ratio&lt;1&gt;&gt;&gt;(</div>
+<div class="line"><span class="lineno">  106</span>                    std::chrono::high_resolution_clock::now() - start)</div>
 <div class="line"><span class="lineno">  107</span>                    .count();</div>
 <div class="line"><span class="lineno">  108</span> </div>
 <div class="line"><span class="lineno">  109</span>    <span class="comment">// Print the primes if we see that &quot;print&quot; was passed as an arg</span></div>
-<div class="line"><span class="lineno">  110</span>    <span class="keywordflow">if</span> (argc &gt; 1 &amp;&amp; argv[1] == <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>(<span class="stringliteral">&quot;print&quot;</span>)) {</div>
+<div class="line"><span class="lineno">  110</span>    <span class="keywordflow">if</span> (argc &gt; 1 &amp;&amp; argv[1] == std::string(<span class="stringliteral">&quot;print&quot;</span>)) {</div>
 <div class="line"><span class="lineno">  111</span>        <a class="code hl_function" href="../../dd/d47/namespacemath.html#ad09d59850865012a6fd95d89954c82e4">math::print_primes</a>(<a class="code hl_function" href="../../de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a">primes</a>);</div>
 <div class="line"><span class="lineno">  112</span>    }</div>
 <div class="line"><span class="lineno">  113</span> </div>
 <div class="line"><span class="lineno">  114</span>    <span class="comment">// Print the time taken we found earlier</span></div>
-<div class="line"><span class="lineno">  115</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Time taken: &quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">time</a> &lt;&lt; <span class="stringliteral">&quot; seconds&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  115</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Time taken: &quot;</span> &lt;&lt; time &lt;&lt; <span class="stringliteral">&quot; seconds&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  116</span> </div>
 <div class="line"><span class="lineno">  117</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  118</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
-<div class="ttc" id="aduration_cast_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/duration/duration_cast.html">std::chrono::duration_cast</a></div><div class="ttdeci">T duration_cast(T... args)</div></div>
-<div class="ttc" id="aduration_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/duration.html">std::chrono::duration</a></div></div>
-<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="aeratosthenes_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-tests the sieve function for major inconsistencies.</div><div class="ttdef"><b>Definition</b> eratosthenes.cpp:64</div></div>
-<div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
-<div class="ttc" id="anamespacemath_html_a91366864111e1fac29722ca45e02ea8f"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a91366864111e1fac29722ca45e02ea8f">math::sieve</a></div><div class="ttdeci">void sieve(std::vector&lt; bool &gt; *vec)</div><div class="ttdoc">Performs the sieve.</div><div class="ttdef"><b>Definition</b> eratosthenes.cpp:33</div></div>
-<div class="ttc" id="anamespacemath_html_ad09d59850865012a6fd95d89954c82e4"><div class="ttname"><a href="../../dd/d47/namespacemath.html#ad09d59850865012a6fd95d89954c82e4">math::print_primes</a></div><div class="ttdeci">void print_primes(std::vector&lt; bool &gt; const &amp;primes)</div><div class="ttdoc">Prints all the indexes of true values in the passed std::vector.</div><div class="ttdef"><b>Definition</b> eratosthenes.cpp:51</div></div>
-<div class="ttc" id="anow_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/high_resolution_clock/now.html">std::chrono::high_resolution_clock::now</a></div><div class="ttdeci">T now(T... args)</div></div>
-<div class="ttc" id="aprime__numbers_8cpp_html_a9575f3a51eeb8a57d657b3db6a4b441a"><div class="ttname"><a href="../../de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a">primes</a></div><div class="ttdeci">std::vector&lt; int &gt; primes(size_t max)</div><div class="ttdef"><b>Definition</b> prime_numbers.cpp:12</div></div>
-<div class="ttc" id="atime_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a></div><div class="ttdeci">T time(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/da6/eratosthenes_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph.svg" width="651" height="355"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="ttc" id="aeratosthenes_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-tests the sieve function for major inconsistencies.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/da6/eratosthenes_8cpp_source.html#l00064">eratosthenes.cpp:64</a></div></div>
+<div class="ttc" id="anamespacemath_html_a91366864111e1fac29722ca45e02ea8f"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a91366864111e1fac29722ca45e02ea8f">math::sieve</a></div><div class="ttdeci">void sieve(std::vector&lt; bool &gt; *vec)</div><div class="ttdoc">Performs the sieve.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/da6/eratosthenes_8cpp_source.html#l00033">eratosthenes.cpp:33</a></div></div>
+<div class="ttc" id="anamespacemath_html_ad09d59850865012a6fd95d89954c82e4"><div class="ttname"><a href="../../dd/d47/namespacemath.html#ad09d59850865012a6fd95d89954c82e4">math::print_primes</a></div><div class="ttdeci">void print_primes(std::vector&lt; bool &gt; const &amp;primes)</div><div class="ttdoc">Prints all the indexes of true values in the passed std::vector.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/da6/eratosthenes_8cpp_source.html#l00051">eratosthenes.cpp:51</a></div></div>
+<div class="ttc" id="aprime__numbers_8cpp_html_a9575f3a51eeb8a57d657b3db6a4b441a"><div class="ttname"><a href="../../de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a">primes</a></div><div class="ttdeci">std::vector&lt; int &gt; primes(size_t max)</div><div class="ttdef"><b>Definition</b> <a href="../../de/d9b/prime__numbers_8cpp_source.html#l00012">prime_numbers.cpp:12</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
@@ -256,8 +265,10 @@ Here is the call graph for this function:</div>
 
 <p>Self-tests the sieve function for major inconsistencies. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/da6/eratosthenes_8cpp_source.html#l00064">64</a> of file <a class="el" href="../../d7/da6/eratosthenes_8cpp_source.html">eratosthenes.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   64</span>                   {</div>
-<div class="line"><span class="lineno">   65</span>    <span class="keyword">auto</span> <a class="code hl_function" href="../../de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a">primes</a> = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a>(10, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   65</span>    <span class="keyword">auto</span> <a class="code hl_function" href="../../de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a">primes</a> = std::vector&lt;bool&gt;(10, <span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">   66</span>    <a class="code hl_function" href="../../dd/d47/namespacemath.html#a91366864111e1fac29722ca45e02ea8f">math::sieve</a>(&amp;<a class="code hl_function" href="../../de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a">primes</a>);</div>
 <div class="line"><span class="lineno">   67</span>    assert(<a class="code hl_function" href="../../de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a">primes</a>[0] == <span class="keyword">false</span>);</div>
 <div class="line"><span class="lineno">   68</span>    assert(<a class="code hl_function" href="../../de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a">primes</a>[1] == <span class="keyword">false</span>);</div>
@@ -270,14 +281,9 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   75</span>    assert(<a class="code hl_function" href="../../de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a">primes</a>[8] == <span class="keyword">false</span>);</div>
 <div class="line"><span class="lineno">   76</span>    assert(<a class="code hl_function" href="../../de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a">primes</a>[9] == <span class="keyword">false</span>);</div>
 <div class="line"><span class="lineno">   77</span> </div>
-<div class="line"><span class="lineno">   78</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   78</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   79</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/da6/eratosthenes_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="415" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
