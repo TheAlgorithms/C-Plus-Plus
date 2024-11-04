@@ -28,10 +28,10 @@
  *
  *******************************************************************************/
 #include <cassert>   /// for assert
+#include <cstdint>   /// for std::uint64_t
 #include <iostream>  /// for IO Operations
 #include <numeric>   /// for std::accumulate
 #include <vector>    /// for std::vector
-
 /******************************************************************************
  * @namespace dp
  * @brief Dynamic programming algorithms
