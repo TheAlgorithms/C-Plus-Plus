@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
-project(Algorithms_in_C++
+project(TheAlgorithms/C++
     LANGUAGES CXX
     VERSION 1.0.0
     DESCRIPTION "Set of algorithms implemented in C++."
@@ -54,47 +54,30 @@ add_subdirectory(physics)
 
 cmake_policy(SET CMP0054 NEW)
 cmake_policy(SET CMP0057 NEW)
+
 find_package(Doxygen OPTIONAL_COMPONENTS dot dia)
-if(DOXYGEN_FOUND)
-    set(DOXYGEN_GENERATE_MAN NO)
-    set(DOXYGEN_USE_MATHJAX YES)
-    set(DOXYGEN_GENERATE_HTML YES)
-    # set(DOXYGEN_HTML_TIMESTAMP YES)
-    set(DOXYGEN_EXTRACT_STATIC YES)
-    set(DOXYGEN_INLINE_SOURCES YES)
-    set(DOXYGEN_CREATE_SUBDIRS YES)
-    set(DOXYGEN_EXTRACT_PRIVATE YES)
-    set(DOXYGEN_GENERATE_TREEVIEW YES)
-    set(DOXYGEN_STRIP_CODE_COMMENTS NO)
-    set(DOXYGEN_EXT_LINKS_IN_WINDOW YES)
-    set(DOXYGEN_BUILTIN_STL_SUPPORT YES)
-    set(DOXYGEN_EXCLUDE_PATTERNS */build/*)
-    set(DOXYGEN_ENABLE_PREPROCESSING YES)
-    set(DOXYGEN_CLANG_ASSISTED_PARSING YES)
-    set(DOXYGEN_FILE_PATTERNS *.cpp *.h *.hpp *.md)
-    set(DOXYGEN_MATHJAX_EXTENSIONS  TeX/AMSmath TeX/AMSsymbols)
-    set(DOXYGEN_TAGFILES "doc/cppreference-doxygen-web.tag.xml=http://en.cppreference.com/w/")
+if(DOXYGEN_FOUND)  
     if(MSVC)
         set(DOXYGEN_CPP_CLI_SUPPORT YES)
     endif()
-    set(DOXYGEN_MATHJAX_RELPATH "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML")
+
     if(Doxygen_dot_FOUND)
         set(DOXYGEN_HAVE_DOT YES)
-        set(DOXYGEN_CALL_GRAPH YES)
-        set(DOXYGEN_INTERACTIVE_SVG YES)
-        set(DOXYGEN_DOT_IMAGE_FORMAT "svg")
     endif()
+    
     if(OPENMP_FOUND)
         set(DOXYGEN_PREDEFINED "_OPENMP=1")
     endif()
+    
     if(GLUT_FOUND)
         set(DOXYGEN_PREDEFINED ${DOXYGEN_PREDEFINED} "GLUT_FOUND=1")
     endif()
 
     doxygen_add_docs(
         doc
-        ${PROJECT_SOURCE_DIR}
+        WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
         COMMENT "Generate documentation"
+        CONFIG_FILE ${CMAKE_CURRENT_SOURCE_DIR}/doc/Doxyfile
     )
 endif()
 
