@@ -8,6 +8,7 @@
  */
 
 #include <cassert>   /// for assert
+#include <cstdint>
 #include <iostream>  /// for IO operations
 
 /**

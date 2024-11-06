@@ -94,7 +94,7 @@
 ## Dynamic Programming
   * [0 1 Knapsack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/0_1_knapsack.cpp)
   * [Abbreviation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/abbreviation.cpp)
-  * [Armstrong Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/armstrong_number.cpp)
+  * [Armstrong Number Templated](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/armstrong_number_templated.cpp)
   * [Bellman Ford](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/bellman_ford.cpp)
   * [Catalan Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/catalan_numbers.cpp)
   * [Coin Change](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/coin_change.cpp)
@@ -106,11 +106,10 @@
   * [Floyd Warshall](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/floyd_warshall.cpp)
   * [House Robber](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/house_robber.cpp)
   * [Kadane](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/kadane.cpp)
-  * [Kadane2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/kadane2.cpp)
   * [Longest Common String](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/longest_common_string.cpp)
   * [Longest Common Subsequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/longest_common_subsequence.cpp)
   * [Longest Increasing Subsequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/longest_increasing_subsequence.cpp)
-  * [Longest Increasing Subsequence (Nlogn)](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/longest_increasing_subsequence_(nlogn).cpp)
+  * [Longest Increasing Subsequence Nlogn](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/longest_increasing_subsequence_nlogn.cpp)
   * [Longest Palindromic Subsequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/longest_palindromic_subsequence.cpp)
   * [Matrix Chain Multiplication](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/matrix_chain_multiplication.cpp)
   * [Maximum Circular Subarray](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/maximum_circular_subarray.cpp)
@@ -119,9 +118,10 @@
   * [Partition Problem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/partition_problem.cpp)
   * [Searching Of Element In Dynamic Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/searching_of_element_in_dynamic_array.cpp)
   * [Shortest Common Supersequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/shortest_common_supersequence.cpp)
-  * [Subset Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/subset_sum.cpp)
+  * [Subset Sum Dynamic](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/subset_sum_dynamic.cpp)
   * [Trapped Rainwater](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/trapped_rainwater.cpp)
   * [Tree Height](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/tree_height.cpp)
+  * [Unbounded 0 1 Knapsack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/unbounded_0_1_knapsack.cpp)
   * [Word Break](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/word_break.cpp)
 
 ## Games
@@ -160,9 +160,10 @@
   * [Spirograph](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/graphics/spirograph.cpp)
 
 ## Greedy Algorithms
+  * [Binary Addition](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/binary_addition.cpp)
   * [Boruvkas Minimum Spanning Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/boruvkas_minimum_spanning_tree.cpp)
   * [Digit Separation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/digit_separation.cpp)
-  * [Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/dijkstra.cpp)
+  * [Dijkstra Greedy](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/dijkstra_greedy.cpp)
   * [Gale Shapley](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/gale_shapley.cpp)
   * [Huffman](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/huffman.cpp)
   * [Jump Game](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/jump_game.cpp)
@@ -304,6 +305,7 @@
   * [Lfu Cache](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/lfu_cache.cpp)
   * [Longest Substring Without Repeating Characters](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/longest_substring_without_repeating_characters.cpp)
   * [Lru Cache](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/lru_cache.cpp)
+  * [Lru Cache2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/lru_cache2.cpp)
   * [Matrix Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/matrix_exponentiation.cpp)
   * [Palindrome Of Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/palindrome_of_number.cpp)
   * [Paranthesis Matching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/paranthesis_matching.cpp)
@@ -337,10 +339,9 @@
   * [Persistent Seg Tree Lazy Prop](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/range_queries/persistent_seg_tree_lazy_prop.cpp)
   * [Prefix Sum Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/range_queries/prefix_sum_array.cpp)
   * [Segtree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/range_queries/segtree.cpp)
-  * [Sparse Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/range_queries/sparse_table.cpp)
+  * [Sparse Table Range Queries](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/range_queries/sparse_table_range_queries.cpp)
 
 ## Search
-  * [Longest Increasing Subsequence Using Binary Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/Longest_Increasing_Subsequence_using_binary_search.cpp)
   * [Binary Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/binary_search.cpp)
   * [Exponential Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/exponential_search.cpp)
   * [Fibonacci Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/fibonacci_search.cpp)
@@ -350,6 +351,7 @@
   * [Interpolation Search2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/interpolation_search2.cpp)
   * [Jump Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/jump_search.cpp)
   * [Linear Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/linear_search.cpp)
+  * [Longest Increasing Subsequence Using Binary Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/longest_increasing_subsequence_using_binary_search.cpp)
   * [Median Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/median_search.cpp)
   * [Median Search2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/median_search2.cpp)
   * [Saddleback Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/saddleback_search.cpp)

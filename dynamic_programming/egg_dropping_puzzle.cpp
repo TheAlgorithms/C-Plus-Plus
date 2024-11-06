@@ -4,10 +4,13 @@
 
 #include <climits>
 #include <iostream>
+#include <vector>
+
 using namespace std;
 
 int eggDrop(int n, int k) {
-    int eggFloor[n + 1][k + 1];
+    std::vector<std::vector<int> > eggFloor(n + 1, std::vector<int>(k + 1));
+
     int result;
 
     for (int i = 1; i <= n; i++) {

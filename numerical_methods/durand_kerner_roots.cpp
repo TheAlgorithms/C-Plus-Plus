@@ -33,6 +33,7 @@
 #include <cassert>
 #include <cmath>
 #include <complex>
+#include <cstdint>
 #include <cstdlib>
 #include <ctime>
 #include <fstream>
