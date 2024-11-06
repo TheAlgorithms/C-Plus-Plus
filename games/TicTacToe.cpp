@@ -1,6 +1,5 @@
 // C++ program to implement tic tac toe game 
 #include <iostream> 
-using namespace std; 
 
 // Function to draw the Tic-Tac-Toe board 
 void drawBoard(char board[3][3]) 
