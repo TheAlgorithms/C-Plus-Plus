@@ -142,15 +142,15 @@ var NAVTREEINDEX =
 "d4/d13/namespacebidirectional__dijkstra.html",
 "d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53",
 "d6/d26/classciphers_1_1_hill_cipher.html#a405b0a28d66a61239d3565d5256f9cb5",
-"d7/d35/matrix__exponentiation_8cpp.html#a702a9fc90e79b05b863cc4efa26ae2ec",
-"d8/d77/namespacemachine__learning.html#a496302e3371aa7b478cb7d5917904bdd",
-"d9/d14/array__left__rotation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aaf762e88c66918d7afda4234f28a7ddf",
-"db/d3c/tower__of__hanoi_8cpp.html#af4cfc41e546f1f8d25f01e0804e8b61d",
-"dc/d38/ordinary__least__squares__regressor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"dd/d47/namespacemath.html#a8a48be4d7f14e34c5c92925bc1cbf3bb",
-"de/d95/namespace_subsets.html",
-"df/dd0/queue__using__two__stacks_8cpp.html#a831ded10ecad88c14a8e22b96f4c1863"
+"d7/d24/nqueen__print__all__solutions_8cpp_source.html",
+"d8/d76/morse__code_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
+"d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a3078a5ccf45d6a7031dcf46e43de65b6",
+"da/d18/quadratic__equations__complex__numbers_8cpp.html#aacb1411ef2029e81f249c21e17c96fdb",
+"db/d19/structlinear__probing_1_1_entry.html#a4d84e90b73022083761f85f8586c4c2a",
+"dc/d38/ordinary__least__squares__regressor_8cpp.html#a42535e20e97d85aa61271e0894cc0359",
+"dd/d47/namespacemath.html#a3d1e4db743b189f309327572663415f3",
+"de/d85/decimal__to__roman__numeral_8cpp.html#a003fb4e1b08279fe4cd50fbbc2782c2d",
+"df/dce/namespacegraph.html#a0e30e0dca68cb6e4f671440819b35b6a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

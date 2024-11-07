@@ -1,5 +1,11 @@
 var NAVTREEINDEX6 =
 {
+"d7/d24/nqueen__print__all__solutions_8cpp_source.html":[11,0,0,7],
+"d7/d35/matrix__exponentiation_8cpp.html":[11,0,17,14],
+"d7/d35/matrix__exponentiation_8cpp.html#a276c5a0e984cf60015b27252fe04fe6b":[11,0,17,14,2],
+"d7/d35/matrix__exponentiation_8cpp.html#a357cfbebfdc47a237a2862fe146af252":[11,0,17,14,5],
+"d7/d35/matrix__exponentiation_8cpp.html#a35b7c98af53ad2ec18658679ad7d43de":[11,0,17,14,7],
+"d7/d35/matrix__exponentiation_8cpp.html#a600eaf353befc174637855795f12d258":[11,0,17,14,0],
 "d7/d35/matrix__exponentiation_8cpp.html#a702a9fc90e79b05b863cc4efa26ae2ec":[11,0,17,14,6],
 "d7/d35/matrix__exponentiation_8cpp.html#a9977ad12548c4a49dee9dc3f0685aa54":[11,0,17,14,8],
 "d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa":[11,0,17,14,3],
@@ -84,6 +90,11 @@ var NAVTREEINDEX6 =
 "d7/d89/double__factorial_8cpp.html#abbbcebf3a2d0c67f4c3cfb5511a97981":[11,0,14,10,3],
 "d7/d89/double__factorial_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,10,2],
 "d7/d89/double__factorial_8cpp_source.html":[11,0,14,10],
+"d7/d9f/class_s_j_f.html":[10,0,53],
+"d7/d9f/class_s_j_f.html#a42d7016523e3adfe5b946fab18ce7905":[10,0,53,1],
+"d7/d9f/class_s_j_f.html#a61b76afcc94e573d7232ab51c351fd30":[10,0,53,2],
+"d7/d9f/class_s_j_f.html#ac86d31ea081e671adeb82b3f92376fea":[10,0,53,3],
+"d7/d9f/class_s_j_f.html#af73fe815835075184724a13c12f613ed":[10,0,53,0],
 "d7/da4/struct_list_node.html":[10,0,40],
 "d7/da4/struct_list_node.html#a3cfee2eb667c332dc32595208164ef0a":[10,0,40,0],
 "d7/da4/struct_list_node.html#a58389d1d1fc5430c2f4ce7c5d5dc48b3":[10,0,40,4],
@@ -238,16 +249,5 @@ var NAVTREEINDEX6 =
 "d8/d72/class_r_btree.html":[10,0,51],
 "d8/d76/morse__code_8cpp.html":[11,0,2,6],
 "d8/d76/morse__code_8cpp.html#a0242e458904de8a242fcdaffe9e3ba1a":[11,0,2,6,2],
-"d8/d76/morse__code_8cpp.html#a15c66ec8cf4cef0a35c50cbab86965dc":[11,0,2,6,1],
-"d8/d76/morse__code_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,2,6,5],
-"d8/d76/morse__code_8cpp.html#ab31773fd11555d21f70d6914138d9535":[11,0,2,6,0],
-"d8/d76/morse__code_8cpp.html#ac9f294b0dec08a4a11d477a32f9bd829":[11,0,2,6,4],
-"d8/d76/morse__code_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,2,6,3],
-"d8/d76/morse__code_8cpp_source.html":[11,0,2,6],
-"d8/d76/namespacetopological__sort.html":[9,0,129],
-"d8/d77/namespacemachine__learning.html":[8,1,3],
-"d8/d77/namespacemachine__learning.html#a042f435bca0839e721fc1574a61e8da3":[9,0,66,8],
-"d8/d77/namespacemachine__learning.html#a0cc29566568e0383dd7d374068cbe6b3":[9,0,66,13],
-"d8/d77/namespacemachine__learning.html#a16f34574b7e0dd51bc3b3fda37446695":[9,0,66,11],
-"d8/d77/namespacemachine__learning.html#a2466857dab977a49f117029835b3b6d2":[9,0,66,12]
+"d8/d76/morse__code_8cpp.html#a15c66ec8cf4cef0a35c50cbab86965dc":[11,0,2,6,1]
 };

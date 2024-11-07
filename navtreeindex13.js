@@ -1,5 +1,17 @@
 var NAVTREEINDEX13 =
 {
+"de/d85/decimal__to__roman__numeral_8cpp.html#a003fb4e1b08279fe4cd50fbbc2782c2d":[11,0,17,3,2],
+"de/d85/decimal__to__roman__numeral_8cpp.html#a214743638eff1336f835310049aef979":[11,0,17,3,3],
+"de/d85/decimal__to__roman__numeral_8cpp.html#a88203bd297e8405160c132faa1187780":[11,0,17,3,0],
+"de/d85/decimal__to__roman__numeral_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,17,3,1],
+"de/d85/decimal__to__roman__numeral_8cpp_source.html":[11,0,17,3],
+"de/d88/travelling__salesman__problem_8cpp.html":[11,0,9,20],
+"de/d88/travelling__salesman__problem_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[11,0,9,20,1],
+"de/d88/travelling__salesman__problem_8cpp.html#ab7706341d006e20d1ae58274187a3346":[11,0,9,20,2],
+"de/d88/travelling__salesman__problem_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,9,20,0],
+"de/d88/travelling__salesman__problem_8cpp_source.html":[11,0,9,20],
+"de/d89/graham__scan__functions_8hpp_source.html":[11,0,8,1],
+"de/d8c/partition__problem_8cpp_source.html":[11,0,6,23],
 "de/d95/namespace_subsets.html":[9,0,126],
 "de/d99/aliquot__sum_8cpp.html":[11,0,14,0],
 "de/d99/aliquot__sum_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,14,0,2],
@@ -237,17 +249,5 @@ var NAVTREEINDEX13 =
 "df/dc8/successive__approximation_8cpp_source.html":[11,0,15,22],
 "df/dcb/namespacestrings.html":[9,0,122],
 "df/dcd/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plus-_plus_2math_2quadratic_equations_complex_numbers_8cpp-example.html":[12,2],
-"df/dce/namespacegraph.html":[9,0,39],
-"df/dce/namespacegraph.html#a0e30e0dca68cb6e4f671440819b35b6a":[9,0,39,6],
-"df/dce/namespacegraph.html#a3ae80bc4c6a79d041b4f3a6589eb7fb8":[9,0,39,10],
-"df/dce/namespacegraph.html#a64c1db5aad7502c6f08e4652f6edd463":[9,0,39,11],
-"df/dce/namespacegraph.html#a83ab16e96cec644109a58dfc9329bc2b":[9,0,39,12],
-"df/dce/namespacegraph.html#a84b0551489c613a681cc83b34450da4b":[9,0,39,13],
-"df/dce/namespacegraph.html#a8e1b547cd407c0774e63f0dc95cda9e7":[9,0,39,7],
-"df/dce/namespacegraph.html#a9125ceb66bfbec3093bba64c2c1e99e2":[9,0,39,4],
-"df/dce/namespacegraph.html#ab5428a3519267a28bba4b4310cfbb6ae":[9,0,39,8],
-"df/dce/namespacegraph.html#ab7706341d006e20d1ae58274187a3346":[9,0,39,14],
-"df/dce/namespacegraph.html#ad4016cfc80485a43748895a2c26c7d08":[9,0,39,5],
-"df/dce/namespacegraph.html#adc68cbc8ba09eb1142265935c0d45b84":[9,0,39,9],
-"df/dd0/queue__using__two__stacks_8cpp.html":[11,0,4,21]
+"df/dce/namespacegraph.html":[9,0,39]
 };

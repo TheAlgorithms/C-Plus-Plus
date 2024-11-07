@@ -31,7 +31,7 @@ var searchData=
   ['addition_5frule_2ecpp_28',['addition_rule.cpp',['../d6/d4a/addition__rule_8cpp.html',1,'']]],
   ['addition_5frule_5fdependent_29',['addition_rule_dependent',['../d6/d4a/addition__rule_8cpp.html#a565ffcbbdbe496ced37250bc8dc36bc0',1,'addition_rule.cpp']]],
   ['addition_5frule_5findependent_30',['addition_rule_independent',['../d6/d4a/addition__rule_8cpp.html#a4adfd055c758546456d440ee9133555d',1,'addition_rule.cpp']]],
-  ['addprocess_31',['addProcess',['../dd/dca/class_f_c_f_s.html#a8fbfe4d85f7576b4a7aade07d29fbd69',1,'FCFS']]],
+  ['addprocess_31',['addProcess',['../dd/dca/class_f_c_f_s.html#a8fbfe4d85f7576b4a7aade07d29fbd69',1,'FCFS::addProcess()'],['../d7/d9f/class_s_j_f.html#af73fe815835075184724a13c12f613ed',1,'SJF::addProcess()']]],
   ['address_20of_20parent_20nodes_32',['Method 1: Use parent pointer (store the address of parent nodes)',['../d4/d32/inorder__successor__of__bst_8cpp.html#autotoc_md91',1,'']]],
   ['addressing_33',['Open Addressing',['../d4/d39/group__open__addressing.html',1,'']]],
   ['addvertices_34',['addVertices',['../da/d9a/class_graph.html#ac5a4d9a4f894a179198936042c778413',1,'Graph']]],

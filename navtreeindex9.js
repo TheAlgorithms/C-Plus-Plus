@@ -1,5 +1,16 @@
 var NAVTREEINDEX9 =
 {
+"da/d18/quadratic__equations__complex__numbers_8cpp.html#aacb1411ef2029e81f249c21e17c96fdb":[11,0,14,51,2],
+"da/d18/quadratic__equations__complex__numbers_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,51,1],
+"da/d18/quadratic__equations__complex__numbers_8cpp.html#af7a6d4e3dc85a6288c8f1f7094830c5a":[11,0,14,51,0],
+"da/d18/quadratic__equations__complex__numbers_8cpp_source.html":[11,0,14,51],
+"da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html":[10,0,14,0,0],
+"da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a08328dc7d62188427111f176b56a105a":[10,0,14,0,0,1],
+"da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a0a10c512e13dd3a052e1c6d7f4d6f0f2":[10,0,14,0,0,7],
+"da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a41051365f8ac7700f2ed5880a6760413":[10,0,14,0,0,3],
+"da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a4620163a196709484225774d87de6d69":[10,0,14,0,0,6],
+"da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a8aae1cebcf42ed2332f1c7217c401aa3":[10,0,14,0,0,2],
+"da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aa12088ba133dd0910103db0eb0ef2797":[10,0,14,0,0,0],
 "da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aaf762e88c66918d7afda4234f28a7ddf":[10,0,14,0,0,4],
 "da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#ad5ed23a251dbe55ad1ed06bf1a465ad3":[10,0,14,0,0,9],
 "da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aea8b0d649f0dc9a6f8baf3341a0b4960":[10,0,14,0,0,8],
@@ -112,7 +123,7 @@ var NAVTREEINDEX9 =
 "da/d7b/primality__test_8cpp_source.html":[11,0,17,19],
 "da/d82/namespacecycle__detection.html":[9,0,19],
 "da/d83/kosaraju_8cpp_source.html":[11,0,9,13],
-"da/d86/struct_test_case.html":[10,0,56],
+"da/d86/struct_test_case.html":[10,0,57],
 "da/d8d/depth__first__search_8cpp.html":[11,0,9,6],
 "da/d8d/depth__first__search_8cpp.html#a64c1db5aad7502c6f08e4652f6edd463":[11,0,9,6,2],
 "da/d8d/depth__first__search_8cpp.html#ab5428a3519267a28bba4b4310cfbb6ae":[11,0,9,6,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX9 =
 "db/d19/structlinear__probing_1_1_entry.html":[9,0,61,0],
 "db/d19/structlinear__probing_1_1_entry.html":[10,0,9,0],
 "db/d19/structlinear__probing_1_1_entry.html#a2139f643a3caf074da1db8a9fa16fa77":[9,0,61,0,0],
-"db/d19/structlinear__probing_1_1_entry.html#a2139f643a3caf074da1db8a9fa16fa77":[10,0,9,0,0],
-"db/d19/structlinear__probing_1_1_entry.html#a4d84e90b73022083761f85f8586c4c2a":[9,0,61,0,1],
-"db/d19/structlinear__probing_1_1_entry.html#a4d84e90b73022083761f85f8586c4c2a":[10,0,9,0,1],
-"db/d27/n__bonacci_8cpp.html":[11,0,14,41],
-"db/d27/n__bonacci_8cpp.html#a6849b68f760be628d5975ab3eddec63d":[11,0,14,41,1],
-"db/d27/n__bonacci_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,14,41,2],
-"db/d27/n__bonacci_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,41,0],
-"db/d27/n__bonacci_8cpp_source.html":[11,0,14,41],
-"db/d3c/tower__of__hanoi_8cpp.html":[11,0,17,25],
-"db/d3c/tower__of__hanoi_8cpp.html#a746d9a3984bba88fd6dd91978f6931ed":[11,0,17,25,3],
-"db/d3c/tower__of__hanoi_8cpp.html#ab037f72a5eac476535a6cfbbcb965417":[11,0,17,25,4],
-"db/d3c/tower__of__hanoi_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,17,25,1]
+"db/d19/structlinear__probing_1_1_entry.html#a2139f643a3caf074da1db8a9fa16fa77":[10,0,9,0,0]
 };

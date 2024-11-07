@@ -98,6 +98,7 @@ var hierarchy =
     [ "range_queries::heavy_light_decomposition::SG< X >", "d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html", [
       [ "range_queries::heavy_light_decomposition::HLD< X >", "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html", null ]
     ] ],
+    [ "SJF< S, T, E >", "d7/d9f/class_s_j_f.html", null ],
     [ "data_structures::SkipList", "d4/d90/classdata__structures_1_1_skip_list.html", null ],
     [ "Solution", "dd/d4f/class_solution.html", null ],
     [ "data_structures::sparse_table::Sparse_table", "da/d37/structdata__structures_1_1sparse__table_1_1_sparse__table.html", null ],

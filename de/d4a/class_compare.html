@@ -136,6 +136,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afbdf9a44adb49728dc704155d7d1570c" id="r_afbdf9a44adb49728dc704155d7d1570c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbdf9a44adb49728dc704155d7d1570c">operator()</a> (tuple&lt; S, T, E, double, double, double &gt; &amp;t1, tuple&lt; S, T, E, double, double, double &gt; &amp;t2)</td></tr>
 <tr class="memdesc:afbdf9a44adb49728dc704155d7d1570c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A comparator function that checks whether to swap the two tuples or not. <a class="el" href="">to <a href="https://www.geeksforgeeks.org/comparator-class-in-c-with-examples/">https://www.geeksforgeeks.org/comparator-class-in-c-with-examples/</a> for detailed description of comparator. </a> <br /></td></tr>
 <tr class="separator:afbdf9a44adb49728dc704155d7d1570c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbdf9a44adb49728dc704155d7d1570c" id="r_afbdf9a44adb49728dc704155d7d1570c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbdf9a44adb49728dc704155d7d1570c">operator()</a> (tuple&lt; S, T, E, double, double, double &gt; &amp;t1, tuple&lt; S, T, E, double, double, double &gt; &amp;t2)</td></tr>
+<tr class="memdesc:afbdf9a44adb49728dc704155d7d1570c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A comparator function that checks whether to swap the two tuples or not. <a href="https://www.geeksforgeeks.org/comparator-class-in-c-with-examples/">detailed description of comparator </a>  <br /></td></tr>
+<tr class="separator:afbdf9a44adb49728dc704155d7d1570c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename S, typename T, typename E&gt;<br />
@@ -152,7 +155,7 @@ class Compare&lt; S, T, E &gt;</div><p>Comparator class for priority queue. </p>
 <p class="definition">Definition at line <a class="el" href="../../df/d47/fcfs__scheduling_8cpp_source.html#l00063">63</a> of file <a class="el" href="../../df/d47/fcfs__scheduling_8cpp_source.html">fcfs_scheduling.cpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="afbdf9a44adb49728dc704155d7d1570c" name="afbdf9a44adb49728dc704155d7d1570c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbdf9a44adb49728dc704155d7d1570c">&#9670;&#160;</a></span>operator()()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afbdf9a44adb49728dc704155d7d1570c">&#9670;&#160;</a></span>operator()() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -207,8 +210,65 @@ false if the tuples SHOULDN'T be swapped </dd></dl>
 </div><!-- fragment -->
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a id="afbdf9a44adb49728dc704155d7d1570c" name="afbdf9a44adb49728dc704155d7d1570c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbdf9a44adb49728dc704155d7d1570c">&#9670;&#160;</a></span>operator()() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename S , typename T , typename E &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../de/d4a/class_compare.html">Compare</a>&lt; S, T, E &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">tuple&lt; S, T, E, double, double, double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>t1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">tuple&lt; S, T, E, double, double, double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>t2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A comparator function that checks whether to swap the two tuples or not. <a href="https://www.geeksforgeeks.org/comparator-class-in-c-with-examples/">detailed description of comparator </a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t1</td><td>First tuple </td></tr>
+    <tr><td class="paramname">t2</td><td>Second tuple </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the tuples SHOULD be swapped </dd>
+<dd>
+false if the tuples SHOULDN'T be swapped </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d1a/non__preemptive__sjf__scheduling_8cpp_source.html#l00074">74</a> of file <a class="el" href="../../d7/d1a/non__preemptive__sjf__scheduling_8cpp_source.html">non_preemptive_sjf_scheduling.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   75</span>                                                                {</div>
+<div class="line"><span class="lineno">   76</span>        <span class="comment">// Compare burst times for SJF</span></div>
+<div class="line"><span class="lineno">   77</span>        <span class="keywordflow">if</span> (get&lt;2&gt;(t2) &lt; get&lt;2&gt;(t1)) {</div>
+<div class="line"><span class="lineno">   78</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   79</span>        }</div>
+<div class="line"><span class="lineno">   80</span>        <span class="comment">// If burst times are the same, compare arrival times</span></div>
+<div class="line"><span class="lineno">   81</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (get&lt;2&gt;(t2) == get&lt;2&gt;(t1)) {</div>
+<div class="line"><span class="lineno">   82</span>            <span class="keywordflow">return</span> get&lt;1&gt;(t2) &lt; get&lt;1&gt;(t1);</div>
+<div class="line"><span class="lineno">   83</span>        }</div>
+<div class="line"><span class="lineno">   84</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   85</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>cpu_scheduling_algorithms/<a class="el" href="../../df/d47/fcfs__scheduling_8cpp_source.html">fcfs_scheduling.cpp</a></li>
+<li>cpu_scheduling_algorithms/<a class="el" href="../../d7/d1a/non__preemptive__sjf__scheduling_8cpp_source.html">non_preemptive_sjf_scheduling.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

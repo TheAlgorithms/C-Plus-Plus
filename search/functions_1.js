@@ -16,7 +16,7 @@ var searchData=
   ['addition_13',['addition',['../df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#acc5fe9c2032fb7582c38a20d1fa69bcf',1,'ciphers::elliptic_curve_key_exchange']]],
   ['addition_5frule_5fdependent_14',['addition_rule_dependent',['../d6/d4a/addition__rule_8cpp.html#a565ffcbbdbe496ced37250bc8dc36bc0',1,'addition_rule.cpp']]],
   ['addition_5frule_5findependent_15',['addition_rule_independent',['../d6/d4a/addition__rule_8cpp.html#a4adfd055c758546456d440ee9133555d',1,'addition_rule.cpp']]],
-  ['addprocess_16',['addProcess',['../dd/dca/class_f_c_f_s.html#a8fbfe4d85f7576b4a7aade07d29fbd69',1,'FCFS']]],
+  ['addprocess_16',['addProcess',['../dd/dca/class_f_c_f_s.html#a8fbfe4d85f7576b4a7aade07d29fbd69',1,'FCFS::addProcess()'],['../d7/d9f/class_s_j_f.html#af73fe815835075184724a13c12f613ed',1,'SJF::addProcess()']]],
   ['addvertices_17',['addVertices',['../da/d9a/class_graph.html#ac5a4d9a4f894a179198936042c778413',1,'Graph']]],
   ['aliquot_5fsum_18',['aliquot_sum',['../dd/d47/namespacemath.html#ab37f3a7302a84179aae682c79d8390bf',1,'math']]],
   ['and_5ftest_19',['and_test',['../d3/db2/boyer__moore_8cpp.html#acb8f69e7901ee7459d98bd4b9dda79d9',1,'boyer_moore.cpp']]],
