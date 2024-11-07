@@ -24,7 +24,6 @@
  * @see dynamic_programming/0_1_knapsack.cpp
  */
 
-
 #include <cassert>   // For using assert function to validate test cases
 #include <cstdint>   // For fixed-width integer types like std::uint16_t
 #include <iostream>  // Standard input-output stream
