@@ -30,7 +30,6 @@
 #include <iostream>  // Standard input-output stream
 #include <vector>    // Standard library for using dynamic arrays (vectors)
 
-
 /**
  * @namespace dynamic_programming
  * @brief Namespace for dynamic programming algorithms
