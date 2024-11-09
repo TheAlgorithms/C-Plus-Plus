@@ -22,6 +22,7 @@
  */
 #include <algorithm>  /// for std::min
 #include <cassert>    /// for assert
+#include <cstdint>
 #include <iostream>   /// for IO operations
 #include <limits>     /// for limits of integral types
 #include <vector>     /// for std::vector
