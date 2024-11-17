@@ -105,47 +105,6 @@ int partition5(std::vector<T> *arr, const int &low, const int &high) {
 }
 
 /**
- * @brief the main function that implements Quick Sort.
- *
- * Void function used in T (array type) function, which then
- * can be used as self-tests or other functionalities.
- * @tparam T array type
- * @param arr array to be sorted
- * @param low starting index
- * @param high ending index
- */
-template <typename T>
-void quick_sort(std::vector<T> *arr, const int &low, const int &high) {
-    if (low < high) {
-        int p = partition(arr, low, high, high);
-
-        quick_sort(arr, low, p - 1);
-        quick_sort(arr, p + 1, high);
-    }
-}
-
-/**
- * @brief the main function that implements Quick Sort.
- *
- * T (array type) function which calls the void function. Can
- * be used for self-tests and other functionalities.
- * @tparam T array type
- * @param arr array to be sorted
- * @param low starting index
- * @param high ending index
- */
-template <typename T>
-std::vector<T> quick_sort(std::vector<T> arr, const int &low, const int &high) {
-    if (low < high) {
-        int p = partition(&arr, low, high, high);
-
-        quick_sort(&arr, low, p - 1);
-        quick_sort(&arr, p + 1, high);
-    }
-    return arr;
-}
-
-/**
  * @brief finds the median of medians
  *
  * T (array type) Can be used for self-tests and other functionalities.
@@ -229,19 +188,7 @@ T quick_select(std::vector<T> *arr, const int &k) {
     return (*arr)[index];
 }
 
-/**
- * @brief Utility function to print the array contents
- * @param arr the array to be printed
- * @param size size of the given array
- * @returns void
- */
-template <typename T>
-void show(const std::vector<T> &arr, const int &size) {
-    for (int i = 0; i < size; i++) std::cout << arr[i] << " ";
-    std::cout << "\n";
-}
-
-}  // namespace quick_sort
+}  // namespace quick_select
 }  // namespace sorting
 
 /**
@@ -337,9 +284,11 @@ int main() {
             std::cout << "\n";
             std::cin >> arr[i];
         }
-        sorting::quick_select::quick_sort(&arr, 0, size - 1);
-        std::cout << "\nSorted array: \n";
-        sorting::quick_select::show(arr, size);
+
+        int k = 1;
+        std::cout << "\nEnter k for the kth-smallest element: ";
+        std::cin >> k;
+        std::cout << "kth-smallest: " << sorting::quick_select::quick_select(&arr, k) << "\n";
     }
     return 0;
 }
