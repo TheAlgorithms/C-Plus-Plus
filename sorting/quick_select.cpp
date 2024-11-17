@@ -40,11 +40,11 @@ template <typename T>
 void insertionSort(std::vector<T> *arr, const int &low, const int &high) {
     /* std::cout << "arr size: " << arr[0].size() << std::endl;
     std::cout << "low: " << low << std::endl; */
-    for (size_t i = low + 1; i < high; i++) {
-        // std::cout << arr[0][i] << std::endl;
+    for (size_t i = low + 1; i <= high; i++) {
+        // std::cout << "insertionSort " << arr[0][i] << std::endl;
         T temp = arr[0][i];
         int32_t j = i - 1;
-        while (j >= 0 && temp < arr[0][j]) {
+        while (j >= low && temp < arr[0][j]) {
             arr[0][j + 1] = arr[0][j];
             j--;
         }
@@ -68,19 +68,22 @@ void insertionSort(std::vector<T> *arr, const int &low, const int &high) {
  */
 template <typename T>
 int partition(std::vector<T> *arr, const int &low, const int &high, const int &pivotIndex) {
-    T pivot = (*arr)[pivotIndex];
+    T pivot = arr[0][pivotIndex];
+    std::swap(arr[0][pivotIndex], arr[0][high]);
     int i = (low - 1);       // Index of smaller element
 
     for (int j = low; j < high; j++) {
         // If current element is smaller than or
         // equal to pivot
-        if ((*arr)[j] <= pivot) {
+        if (arr[0][j] <= pivot) {
             i++;  // increment index of smaller element
-            std::swap((*arr)[i], (*arr)[j]);
+            // std::cout << "swapping " << arr[0][i] << " and " << arr[0][j] << std::endl;
+            std::swap(arr[0][i], arr[0][j]);
         }
     }
 
-    std::swap((*arr)[i + 1], (*arr)[high]);
+    // std::cout << "swapping " << arr[0][i + 1] << " and " << arr[0][high] << std::endl;
+    std::swap(arr[0][i + 1], arr[0][high]);
     return (i + 1);
 }
 
@@ -97,6 +100,7 @@ int partition(std::vector<T> *arr, const int &low, const int &high, const int &p
 template <typename T>
 int partition5(std::vector<T> *arr, const int &low, const int &high) {
     insertionSort(arr, low, high);
+    std::cout << "average: " << (high - low) / 2 << std::endl;
     return low + (high - low) / 2;
 }
 
@@ -157,14 +161,19 @@ int pivot(std::vector<T> *arr, const int &low, const int &high) {
     }
 
     for (int i = low; i <= high; i += 5) {
-        // std::cout << "i: " << i << std::endl;
         int subHigh = std::min(i + 4, high);
+        std::cout << "(i, subHigh): " << i << " " << subHigh << std::endl;
         int median5 = partition5(arr, i, subHigh);
-        // std::cout << "median5: " << median5 << std::endl;
+        for (int i = 0; i < arr[0].size(); i++) std::cout << arr[0][i] << " ";
+        std::cout << "\n";
+        std::cout << "median5: " << median5 << std::endl;
         std::swap(arr[0][median5], arr[0][low + (i - low) / 5]);
+        for (int i = 0; i < arr[0].size(); i++) std::cout << arr[0][i] << " ";
+        std::cout << "\n";
     }
 
     int mid = (high - low) / 10 + low + 1;
+    std::cout << "pivot->select(" << low << ", " << (low + (high - low) / 5) << ", " << mid << ")" << std::endl;
     return select(arr, low, low + (high - low) / 5, mid);
 }
 
@@ -182,14 +191,19 @@ template <typename T>
 int select(std::vector<T> *arr, int low, int high, const int &k) {
     while (true) {
         if (low == high) {
+            std::cout << "low == high" << std::endl;
             return low;
         }
 
         int pivotIndex = pivot(arr, low, high);
-        std::cout << "pivotIndex: " << pivotIndex << std::endl;
+        std::cout << "(low, high, pivot): " << low << ", " << high << ", " << arr[0][pivotIndex] << std::endl;
         pivotIndex = partition(arr, low, high, pivotIndex);
+        for (int i = 0; i < arr[0].size(); i++) std::cout << arr[0][i] << " ";
+        std::cout << "\n";
+        std::cout << "pivotIndex: " << pivotIndex << std::endl;
 
         if (k == pivotIndex) {
+            std::cout << "select returns " << k << std::endl;
             return k;
         }
 
@@ -211,7 +225,7 @@ int select(std::vector<T> *arr, int low, int high, const int &k) {
  */
 template <typename T>
 T quick_select(std::vector<T> *arr, const int &k) {
-    int index = select(arr, 0, arr->size() - 1, k);
+    int index = select(arr, 0, arr->size() - 1, k - 1);
     return (*arr)[index];
 }
 
@@ -252,10 +266,15 @@ static void tests() {
     // 2nd test (normal and negative numbers)
     std::vector<int64_t> arr2 = {9,    15,   28,   96,  500, -4, -58,
                                  -977, -238, -800, -21, -53, -55};
-    std::vector<int64_t> arr_sorted2 = sorting::quick_select::quick_sort(
-        arr2, 0, std::end(arr2) - std::begin(arr2));
+    kthSmallest = sorting::quick_select::quick_select(
+        &arr2, k);
+    std::cout << "kthSmallest: " << kthSmallest << std::endl;
+    /* std::vector<int64_t> arr_sorted2 = sorting::quick_select::quick_sort(
+        arr2, 0, std::end(arr2) - std::begin(arr2)); */
 
-    assert(std::is_sorted(std::begin(arr_sorted2), std::end(arr_sorted2)));
+    std::sort(arr2.begin(), arr2.end());
+    std::cout << arr2[k - 1] << std::endl;
+    assert(kthSmallest == arr2[k - 1]);
     std::cout << "2nd test: passed!\n";
 
     // 3rd test (decimal and normal numbers)
@@ -288,10 +307,10 @@ static void tests() {
 
     /* std::cout << "1st array:\n";
     sorting::quick_select::show(arr_sorted, std::end(arr) - std::begin(arr));
-    std::cout << std::endl; */
+    std::cout << std::endl;
     std::cout << "2nd array:\n";
     sorting::quick_select::show(arr_sorted2, std::end(arr2) - std::begin(arr2));
-    std::cout << std::endl;
+    std::cout << std::endl; */
     std::cout << "3rd array:\n";
     sorting::quick_select::show(arr_sorted3,
                               int(std::end(arr3) - std::begin(arr3)) - 1);
