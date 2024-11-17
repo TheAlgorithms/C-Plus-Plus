@@ -231,11 +231,11 @@ Functions</h2></td></tr>
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d80/z__function_8cpp_source.html#l00094">94</a> of file <a class="el" href="../../d3/d80/z__function_8cpp_source.html">z_function.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   94</span>           {</div>
-<div class="line"><span class="lineno">   95</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   97</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d80/z__function_8cpp_source.html#l00110">110</a> of file <a class="el" href="../../d3/d80/z__function_8cpp_source.html">z_function.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  110</span>           {</div>
+<div class="line"><span class="lineno">  111</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">  112</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  113</span>}</div>
 <div class="ttc" id="az__function_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d80/z__function_8cpp_source.html#l00072">z_function.cpp:72</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -283,7 +283,23 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   85</span>    <span class="comment">// matching_indexes2 gets the indexes where pattern2 exists in text2</span></div>
 <div class="line"><span class="lineno">   86</span>    std::vector&lt;uint64_t&gt; matching_indexes2 = <a class="code hl_function" href="#ac186ca3ac3a69b5e52543bb13fe46db8">find_pat_in_text</a>(pattern2, text2);</div>
 <div class="line"><span class="lineno">   87</span>    assert((matching_indexes2 == std::vector&lt;uint64_t&gt;{}));</div>
-<div class="line"><span class="lineno">   88</span>}</div>
+<div class="line"><span class="lineno">   88</span> </div>
+<div class="line"><span class="lineno">   89</span>    <span class="comment">// corner case - empty text</span></div>
+<div class="line"><span class="lineno">   90</span>    std::string text3 = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">   91</span>    std::string pattern3 = <span class="stringliteral">&quot;abc&quot;</span>;</div>
+<div class="line"><span class="lineno">   92</span> </div>
+<div class="line"><span class="lineno">   93</span>    <span class="comment">// matching_indexes3 gets the indexes where pattern3 exists in text3</span></div>
+<div class="line"><span class="lineno">   94</span>    std::vector&lt;uint64_t&gt; matching_indexes3 = <a class="code hl_function" href="#ac186ca3ac3a69b5e52543bb13fe46db8">find_pat_in_text</a>(pattern3, text3);</div>
+<div class="line"><span class="lineno">   95</span>    assert((matching_indexes3 == std::vector&lt;uint64_t&gt;{}));</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>    <span class="comment">// corner case - empty pattern</span></div>
+<div class="line"><span class="lineno">   98</span>    std::string text4 = <span class="stringliteral">&quot;redsand&quot;</span>;</div>
+<div class="line"><span class="lineno">   99</span>    std::string pattern4 = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">  100</span> </div>
+<div class="line"><span class="lineno">  101</span>    <span class="comment">// matching_indexes4 gets the indexes where pattern4 exists in text4</span></div>
+<div class="line"><span class="lineno">  102</span>    std::vector&lt;uint64_t&gt; matching_indexes4 = <a class="code hl_function" href="#ac186ca3ac3a69b5e52543bb13fe46db8">find_pat_in_text</a>(pattern4, text4);</div>
+<div class="line"><span class="lineno">  103</span>    assert((matching_indexes4 == std::vector&lt;uint64_t&gt;{0, 1, 2, 3, 4, 5, 6}));</div>
+<div class="line"><span class="lineno">  104</span>}</div>
 <div class="ttc" id="az__function_8cpp_html_ac186ca3ac3a69b5e52543bb13fe46db8"><div class="ttname"><a href="#ac186ca3ac3a69b5e52543bb13fe46db8">find_pat_in_text</a></div><div class="ttdeci">std::vector&lt; uint64_t &gt; find_pat_in_text(const std::string &amp;pattern, const std::string &amp;text)</div><div class="ttdoc">Using Z_function to find a pattern in a text.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d80/z__function_8cpp_source.html#l00054">z_function.cpp:54</a></div></div>
 </div><!-- fragment -->
 </div>
