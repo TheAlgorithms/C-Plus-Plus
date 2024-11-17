@@ -21,6 +21,7 @@
 
 #include <cassert>   /// for assert
 #include <climits>   /// for std::max
+#include <cstdint>   /// for std::uint64_t
 #include <iostream>  /// for IO operations
 #include <vector>    /// for std::vector
 

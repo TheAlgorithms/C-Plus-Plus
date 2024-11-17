@@ -14,6 +14,7 @@
  */
 
 #include <cassert>        /// for assert
+#include <cstdint>
 #include <iostream>       /// for IO operations
 #include <unordered_map>  /// for unordered_map
 #include <vector>         /// for std::vector
