@@ -100,7 +100,7 @@ int partition(std::vector<T> *arr, const int &low, const int &high, const int &p
 template <typename T>
 int partition5(std::vector<T> *arr, const int &low, const int &high) {
     insertionSort(arr, low, high);
-    std::cout << "average: " << (high - low) / 2 << std::endl;
+    // std::cout << "average: " << (high - low) / 2 << std::endl;
     return low + (high - low) / 2;
 }
 
@@ -162,18 +162,18 @@ int pivot(std::vector<T> *arr, const int &low, const int &high) {
 
     for (int i = low; i <= high; i += 5) {
         int subHigh = std::min(i + 4, high);
-        std::cout << "(i, subHigh): " << i << " " << subHigh << std::endl;
+        // std::cout << "(i, subHigh): " << i << " " << subHigh << std::endl;
         int median5 = partition5(arr, i, subHigh);
-        for (int i = 0; i < arr[0].size(); i++) std::cout << arr[0][i] << " ";
+        /* for (int i = 0; i < arr[0].size(); i++) std::cout << arr[0][i] << " ";
         std::cout << "\n";
-        std::cout << "median5: " << median5 << std::endl;
+        std::cout << "median5: " << median5 << std::endl; */
         std::swap(arr[0][median5], arr[0][low + (i - low) / 5]);
-        for (int i = 0; i < arr[0].size(); i++) std::cout << arr[0][i] << " ";
-        std::cout << "\n";
+        /* for (int i = 0; i < arr[0].size(); i++) std::cout << arr[0][i] << " ";
+        std::cout << "\n"; */
     }
 
     int mid = (high - low) / 10 + low + 1;
-    std::cout << "pivot->select(" << low << ", " << (low + (high - low) / 5) << ", " << mid << ")" << std::endl;
+    // std::cout << "pivot->select(" << low << ", " << (low + (high - low) / 5) << ", " << mid << ")" << std::endl;
     return select(arr, low, low + (high - low) / 5, mid);
 }
 
@@ -191,19 +191,19 @@ template <typename T>
 int select(std::vector<T> *arr, int low, int high, const int &k) {
     while (true) {
         if (low == high) {
-            std::cout << "low == high" << std::endl;
+            // std::cout << "low == high" << std::endl;
             return low;
         }
 
         int pivotIndex = pivot(arr, low, high);
-        std::cout << "(low, high, pivot): " << low << ", " << high << ", " << arr[0][pivotIndex] << std::endl;
+        // std::cout << "(low, high, pivot): " << low << ", " << high << ", " << arr[0][pivotIndex] << std::endl;
         pivotIndex = partition(arr, low, high, pivotIndex);
-        for (int i = 0; i < arr[0].size(); i++) std::cout << arr[0][i] << " ";
+        /* for (int i = 0; i < arr[0].size(); i++) std::cout << arr[0][i] << " ";
         std::cout << "\n";
-        std::cout << "pivotIndex: " << pivotIndex << std::endl;
+        std::cout << "pivotIndex: " << pivotIndex << std::endl; */
 
         if (k == pivotIndex) {
-            std::cout << "select returns " << k << std::endl;
+            // std::cout << "select returns " << k << std::endl;
             return k;
         }
 
@@ -253,38 +253,35 @@ static void tests() {
 
     // 1st test (normal numbers)
     std::vector<uint64_t> arr = {5, 3, 8, 12, 14, 16, 28, 96, 2, 5977};
-    int kthSmallest = sorting::quick_select::quick_select(
-        &arr, k);
-    /* std::cout << "kthSmallest: " << kthSmallest << std::endl;
-    std::vector<uint64_t> arr_sorted = sorting::quick_select::quick_sort(
-        arr, 0, int(std::end(arr) - std::begin(arr)) - 1); */
-
-    std::sort(arr.begin(), arr.end());
-    assert(kthSmallest == arr[k - 1]);
-    std::cout << "\n1st test: passed!\n";
+    {
+        uint64_t kthSmallest = sorting::quick_select::quick_select(
+            &arr, k);
+        std::sort(arr.begin(), arr.end());
+        assert(kthSmallest == arr[k - 1]);
+        std::cout << "\n1st test: passed!\n";
+    }
 
     // 2nd test (normal and negative numbers)
     std::vector<int64_t> arr2 = {9,    15,   28,   96,  500, -4, -58,
                                  -977, -238, -800, -21, -53, -55};
-    kthSmallest = sorting::quick_select::quick_select(
-        &arr2, k);
-    std::cout << "kthSmallest: " << kthSmallest << std::endl;
-    /* std::vector<int64_t> arr_sorted2 = sorting::quick_select::quick_sort(
-        arr2, 0, std::end(arr2) - std::begin(arr2)); */
-
-    std::sort(arr2.begin(), arr2.end());
-    std::cout << arr2[k - 1] << std::endl;
-    assert(kthSmallest == arr2[k - 1]);
-    std::cout << "2nd test: passed!\n";
+    {
+        int64_t kthSmallest = sorting::quick_select::quick_select(
+            &arr2, k);
+        std::sort(arr2.begin(), arr2.end());
+        assert(kthSmallest == arr2[k - 1]);
+        std::cout << "2nd test: passed!\n";
+    }
 
     // 3rd test (decimal and normal numbers)
     std::vector<double> arr3 = {29,  36,   1100, 0,      77,     1,
                                 6.7, 8.97, 1.74, 950.10, -329.65};
-    std::vector<double> arr_sorted3 = sorting::quick_select::quick_sort(
-        arr3, 0, int(std::end(arr3) - std::begin(arr3)) - 1);
-
-    assert(std::is_sorted(std::begin(arr_sorted3), std::end(arr_sorted3)));
-    std::cout << "3rd test: passed!\n";
+    {
+        double kthSmallest = sorting::quick_select::quick_select(
+            &arr3, k);
+        std::sort(arr3.begin(), arr3.end());
+        assert(kthSmallest == arr3[k - 1]);
+        std::cout << "3rd test: passed!\n";
+    }
 
     // 4th test (random decimal and negative numbers)
     size_t size = std::rand() % 750 + 100;
@@ -295,30 +292,13 @@ static void tests() {
                       static_cast<float>(RAND_MAX / 999.99 - 0.99) -
                   250;
     }
-
-    std::vector<float> arr4_sorted = sorting::quick_select::quick_sort(
-        arr4, 0, int(std::end(arr4) - std::begin(arr4)) - 1);
-    assert(std::is_sorted(std::begin(arr4_sorted), std::end(arr4_sorted)));
-
-    std::cout << "4th test: passed!\n";
-
-    // Printing all sorted arrays
-    std::cout << "\n\tPrinting all sorted arrays:\t\n";
-
-    /* std::cout << "1st array:\n";
-    sorting::quick_select::show(arr_sorted, std::end(arr) - std::begin(arr));
-    std::cout << std::endl;
-    std::cout << "2nd array:\n";
-    sorting::quick_select::show(arr_sorted2, std::end(arr2) - std::begin(arr2));
-    std::cout << std::endl; */
-    std::cout << "3rd array:\n";
-    sorting::quick_select::show(arr_sorted3,
-                              int(std::end(arr3) - std::begin(arr3)) - 1);
-    std::cout << std::endl;
-    std::cout << "Start: 4th array:\n\n";
-    sorting::quick_select::show(
-        arr4_sorted, int(std::end(arr4_sorted) - std::begin(arr4_sorted)) - 1);
-    std::cout << "\nEnd: 4th array.\n";
+    {
+        double kthSmallest = sorting::quick_select::quick_select(
+            &arr4, k);
+        std::sort(arr4.begin(), arr4.end());
+        assert(kthSmallest == arr4[k - 1]);
+        std::cout << "4th test: passed!\n";
+    }
 }
 
 /**
