@@ -13,6 +13,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 int min(int x, int y, int z) { return min(min(x, y), z); }
@@ -46,7 +47,7 @@ int editDist(string str1, string str2, int m, int n) {
  */
 int editDistDP(string str1, string str2, int m, int n) {
     // Create Table for SubProblems
-    int dp[m + 1][n + 1];
+    std::vector<std::vector<int> > dp(m + 1, std::vector<int>(n + 1));
 
     // Fill d[][] in bottom up manner
     for (int i = 0; i <= m; i++) {
