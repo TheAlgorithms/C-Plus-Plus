@@ -20,6 +20,7 @@
  */
 
 #include <array>     /// for std::array
+#include <cassert>   /// for assert
 #include <iostream>  /// for IO operations
 
 /**
@@ -52,9 +53,10 @@ void printSolution(const std::array<int, V>& color) {
  * @tparam V number of vertices in the graph
  * @param graph matrix of graph connectivity
  * @param color description
+ * @return number of colors used
  */
 template <size_t V>
-void graphColoring(const std::array<std::array<int, V>, V>& graph,
+int graphColoring(const std::array<std::array<int, V>, V>& graph,
                    std::array<int, V> color) {
     // colorIsUsedByNeighbors[v][c] = 1 means at least one of v's neighbors is assigned c
     std::array<std::array<int, V + 1>, V> colorIsUsedByNeighbors{};
@@ -82,6 +84,7 @@ void graphColoring(const std::array<std::array<int, V>, V>& graph,
         color[v] = 0;
     }
 
+    int number_colors = 0;
     for (int i = 0; i < V; i++) {
         // Determine the vertex that is uncolored and has the largest saturation
         // If there is a tie, take the vertex with largest currentDegree
@@ -115,6 +118,8 @@ void graphColoring(const std::array<std::array<int, V>, V>& graph,
             color[v]++;
         }
 
+        number_colors = std::max(number_colors, color[v]);
+
         // Update the degrees of v's neighbors in the subgraph induced by the uncolored vertices 
         // Update the saturation of v's uncolored neighbors
         for (int w = 0; w < V; w++) {
@@ -134,15 +139,16 @@ void graphColoring(const std::array<std::array<int, V>, V>& graph,
     }
 
     printSolution<V>(color);
+    return number_colors;
 }
 }  // namespace graph_coloring
 }  // namespace backtracking
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * @brief Self-test implementations
+ * @returns void
  */
-int main() {
+static void test() {
     // Create following graph and test whether it is 3 colorable
     // (3)---(2)
     // |   / |
@@ -155,9 +161,18 @@ int main() {
         std::array<int, V>({0, 1, 1, 1}), std::array<int, V>({1, 0, 1, 0}),
         std::array<int, V>({1, 1, 0, 1}), std::array<int, V>({1, 0, 1, 0})};
 
-    int m = 3;  // Number of colors
     std::array<int, V> color{};
+    int number_colors = backtracking::graph_coloring::graphColoring<V>(graph, color);
+    assert(number_colors == 3);
 
-    backtracking::graph_coloring::graphColoring<V>(graph, color);
+    std::cout << "All tests passed\n";
+}
+
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
+int main() {
+    test();  // run self-test implementations
     return 0;
 }
