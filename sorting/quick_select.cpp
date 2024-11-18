@@ -38,10 +38,7 @@ template <typename T> int select(std::vector<T> *arr, int low, int high, const i
  */
 template <typename T>
 void insertionSort(std::vector<T> *arr, const int &low, const int &high) {
-    /* std::cout << "arr size: " << arr[0].size() << std::endl;
-    std::cout << "low: " << low << std::endl; */
     for (size_t i = low + 1; i <= high; i++) {
-        // std::cout << "insertionSort " << arr[0][i] << std::endl;
         T temp = arr[0][i];
         int32_t j = i - 1;
         while (j >= low && temp < arr[0][j]) {
@@ -77,12 +74,10 @@ int partition(std::vector<T> *arr, const int &low, const int &high, const int &p
         // equal to pivot
         if (arr[0][j] <= pivot) {
             i++;  // increment index of smaller element
-            // std::cout << "swapping " << arr[0][i] << " and " << arr[0][j] << std::endl;
             std::swap(arr[0][i], arr[0][j]);
         }
     }
 
-    // std::cout << "swapping " << arr[0][i + 1] << " and " << arr[0][high] << std::endl;
     std::swap(arr[0][i + 1], arr[0][high]);
     return (i + 1);
 }
@@ -100,7 +95,6 @@ int partition(std::vector<T> *arr, const int &low, const int &high, const int &p
 template <typename T>
 int partition5(std::vector<T> *arr, const int &low, const int &high) {
     insertionSort(arr, low, high);
-    // std::cout << "average: " << (high - low) / 2 << std::endl;
     return low + (high - low) / 2;
 }
 
@@ -112,6 +106,7 @@ int partition5(std::vector<T> *arr, const int &low, const int &high) {
  * @param arr array of elements
  * @param low starting index
  * @param high ending index
+ * @returns index of the median of medians
  */
 template <typename T>
 int pivot(std::vector<T> *arr, const int &low, const int &high) {
@@ -121,18 +116,11 @@ int pivot(std::vector<T> *arr, const int &low, const int &high) {
 
     for (int i = low; i <= high; i += 5) {
         int subHigh = std::min(i + 4, high);
-        // std::cout << "(i, subHigh): " << i << " " << subHigh << std::endl;
         int median5 = partition5(arr, i, subHigh);
-        /* for (int i = 0; i < arr[0].size(); i++) std::cout << arr[0][i] << " ";
-        std::cout << "\n";
-        std::cout << "median5: " << median5 << std::endl; */
         std::swap(arr[0][median5], arr[0][low + (i - low) / 5]);
-        /* for (int i = 0; i < arr[0].size(); i++) std::cout << arr[0][i] << " ";
-        std::cout << "\n"; */
     }
 
     int mid = (high - low) / 10 + low + 1;
-    // std::cout << "pivot->select(" << low << ", " << (low + (high - low) / 5) << ", " << mid << ")" << std::endl;
     return select(arr, low, low + (high - low) / 5, mid);
 }
 
@@ -150,19 +138,13 @@ template <typename T>
 int select(std::vector<T> *arr, int low, int high, const int &k) {
     while (true) {
         if (low == high) {
-            // std::cout << "low == high" << std::endl;
             return low;
         }
 
         int pivotIndex = pivot(arr, low, high);
-        // std::cout << "(low, high, pivot): " << low << ", " << high << ", " << arr[0][pivotIndex] << std::endl;
         pivotIndex = partition(arr, low, high, pivotIndex);
-        /* for (int i = 0; i < arr[0].size(); i++) std::cout << arr[0][i] << " ";
-        std::cout << "\n";
-        std::cout << "pivotIndex: " << pivotIndex << std::endl; */
 
         if (k == pivotIndex) {
-            // std::cout << "select returns " << k << std::endl;
             return k;
         }
 
@@ -240,7 +222,7 @@ static void tests() {
                   250;
     }
     {
-        double kthSmallest = sorting::quick_select::quick_select(
+        float kthSmallest = sorting::quick_select::quick_select(
             &arr4, k);
         std::sort(arr4.begin(), arr4.end());
         assert(kthSmallest == arr4[k - 1]);
