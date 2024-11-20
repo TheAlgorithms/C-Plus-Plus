@@ -18,6 +18,7 @@
 #include <cinttypes>  /// for uint64_t
 #include <cstdio>     /// for standard IO
 #include <iostream>   /// for IO operations
+#include <cassert>    /// for assert
 
 /**
  * @brief Maximum Fibonacci number that can be computed
@@ -25,7 +26,7 @@
  * @details
  * The result after 93 cannot be stored in a `uint64_t` data type.
  */
-#define MAX 93
+constexpr uint64_t MAX = 93;
 
 /**
  * @brief Function to compute the nth Fibonacci number
@@ -39,9 +40,9 @@ uint64_t fib(uint64_t n) {
 
     if (n <= 2)
         return f2;
-    if (n >= 93) {
-        std::cerr
-            << "Cannot compute for n>93 due to limit of 64-bit integers\n";
+    if (n >= MAX) {
+        throw std::invalid_argument("Cannot compute for n>=" + std::to_string(MAX) +
+                                    " due to limit of 64-bit integers");
         return 0;
     }
     
@@ -58,6 +59,7 @@ uint64_t fib(uint64_t n) {
  * @returns void
  */
 static void test() {
+    // Test for valid Fibonacci numbers
     assert(fib(1) == 1);
     assert(fib(2) == 1);
     assert(fib(3) == 2);
@@ -150,6 +152,17 @@ static void test() {
     assert(fib(90) == 2880067194370816120);
     assert(fib(91) == 4660046610375530309);
     assert(fib(92) == 7540113804746346429);
+
+    // Test for invalid Fibonacci numbers
+    try {
+        fib(MAX + 1);
+        assert(false && "Expected an invalid_argument exception to be thrown");
+    } catch (const std::invalid_argument& e) {
+        const std::string expected_message = "Cannot compute for n>=" + std::to_string(MAX) +
+                                             " due to limit of 64-bit integers";
+        assert(e.what() == expected_message);
+    }
+
     std::cout << "All Fibonacci tests have successfully passed!\n";
 }
 
