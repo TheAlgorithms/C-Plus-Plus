@@ -18,6 +18,7 @@
  * @author [Farbod Ahmadian](https://github.com/farbodahm)
  */
 #include <array>     /// for std::array
+#include <cstdint>
 #include <iostream>  /// for io operations
 
 constexpr uint16_t max_size{10};  ///< Maximum size of the queue
