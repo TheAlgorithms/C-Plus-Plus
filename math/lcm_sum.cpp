@@ -13,6 +13,7 @@
  */
 
 #include <cassert>   /// for assert
+#include <cstdint>
 #include <iostream>  /// for std::cin and std::cout
 #include <vector>    /// for std::vector
 
