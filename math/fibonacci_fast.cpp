@@ -19,6 +19,7 @@
 #include <cstdio>     /// for standard IO
 #include <iostream>   /// for IO operations
 #include <cassert>    /// for assert
+#include <string>     /// for function about string
 
 /**
  * @brief Maximum Fibonacci number that can be computed
