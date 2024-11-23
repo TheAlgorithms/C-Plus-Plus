@@ -13,6 +13,7 @@
  * \see bisection_method.cpp, false_position.cpp
  */
 #include <cmath>
+#include <cstdint>
 #include <ctime>
 #include <iostream>
 #include <limits>
