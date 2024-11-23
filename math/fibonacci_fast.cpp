@@ -19,7 +19,8 @@
 #include <cstdio>     /// for standard IO
 #include <iostream>   /// for IO operations
 #include <cassert>    /// for assert
-#include <string>     /// for function about string
+#include <string>     /// for std::to_string
+#include <stdexcept>  /// for std::invalid_argument
 
 /**
  * @brief Maximum Fibonacci number that can be computed
