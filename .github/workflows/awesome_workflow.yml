@@ -3,6 +3,7 @@ on: [push, pull_request]
 permissions:
   pull-requests: write
   contents: write
+  issues: write
 
 jobs:
   MainSequence:
