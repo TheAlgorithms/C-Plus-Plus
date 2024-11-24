@@ -1,6 +1,7 @@
 name: Awesome CI Workflow
 on: [push, pull_request]
 permissions:
+  pull-requests: write
   contents: write
 
 jobs:
