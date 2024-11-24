@@ -9,6 +9,10 @@ jobs:
   MainSequence:
     name: Code Formatter
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: write
+      issues: write
     steps:
       - uses: actions/checkout@v4
       - uses: cpp-linter/cpp-linter-action@v2
