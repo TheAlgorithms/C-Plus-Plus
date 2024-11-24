@@ -40,9 +40,9 @@ uint64_t fib(uint64_t n) {
     // f1 and f2 for the next function call.
     static uint64_t f1 = 1, f2 = 1;
 
-    if (n <= 2)
+    if (n <= 2) {
         return f2;
-    if (n >= MAX) {
+    } if (n >= MAX) {
         throw std::invalid_argument("Cannot compute for n>=" + std::to_string(MAX) +
                                     " due to limit of 64-bit integers");
         return 0;
