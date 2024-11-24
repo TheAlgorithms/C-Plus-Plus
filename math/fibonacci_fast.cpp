@@ -30,7 +30,6 @@
  */
 constexpr uint64_t MAX = 93;
 
-
 /**
  * @brief Function to compute the nth Fibonacci number
  * @param n The index of the Fibonacci number to compute
