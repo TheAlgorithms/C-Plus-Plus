@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"dd/d47/namespacemath.html#a34d66a77c19ce9b8b3a3d14352b34551":[9,0,69,38],
 "dd/d47/namespacemath.html#a3d1e4db743b189f309327572663415f3":[9,0,69,44],
 "dd/d47/namespacemath.html#a3fdc74c24697ec5bb5c3698c96117c12":[9,0,69,35],
 "dd/d47/namespacemath.html#a3fe35440c27758ecc2287e08217d63a7":[9,0,69,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "de/d7b/merge__insertion__sort_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,23,18,1],
 "de/d7b/merge__insertion__sort_8cpp.html#af4de4067a9a866ffd985c5b5055ccedf":[11,0,23,18,2],
 "de/d7b/merge__insertion__sort_8cpp_source.html":[11,0,23,18],
-"de/d83/namespaceis__graph__bipartite.html":[9,0,52],
-"de/d85/decimal__to__roman__numeral_8cpp.html":[11,0,17,3]
+"de/d83/namespaceis__graph__bipartite.html":[9,0,52]
 };

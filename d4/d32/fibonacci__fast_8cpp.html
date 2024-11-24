@@ -122,8 +122,8 @@ $(function(){initNavTree('d4/d32/fibonacci__fast_8cpp.html','../../'); initResiz
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">fibonacci_fast.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -133,52 +133,43 @@ $(function(){initNavTree('d4/d32/fibonacci__fast_8cpp.html','../../'); initResiz
 <div class="textblock"><code>#include &lt;cinttypes&gt;</code><br />
 <code>#include &lt;cstdio&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;stdexcept&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for fibonacci_fast.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d51/fibonacci__fast_8cpp__incl.svg" width="262" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d51/fibonacci__fast_8cpp__incl.svg" width="528" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="../../d4/d32/fibonacci__fast_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a392fb874e547e582e9c66a08a1f23326" id="r_a392fb874e547e582e9c66a08a1f23326"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a392fb874e547e582e9c66a08a1f23326">MAX</a>&#160;&#160;&#160;93</td></tr>
-<tr class="separator:a392fb874e547e582e9c66a08a1f23326"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a5712edca101204eca8accdb1e096707f" id="r_a5712edca101204eca8accdb1e096707f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5712edca101204eca8accdb1e096707f">fib</a> (uint64_t n)</td></tr>
+<tr class="memdesc:a5712edca101204eca8accdb1e096707f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to compute the nth Fibonacci number.  <br /></td></tr>
 <tr class="separator:a5712edca101204eca8accdb1e096707f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
+<tr class="memdesc:aa8dca7b867074164d5f45b0f3851269d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to test the Fibonacci computation.  <br /></td></tr>
+<tr class="separator:aa8dca7b867074164d5f45b0f3851269d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main Function.  <br /></td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:abebd72fcda852381644b55f9316719a0" id="r_abebd72fcda852381644b55f9316719a0"><td class="memItemLeft" align="right" valign="top">constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abebd72fcda852381644b55f9316719a0">MAX</a> = 93</td></tr>
+<tr class="memdesc:abebd72fcda852381644b55f9316719a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">for std::invalid_argument  <br /></td></tr>
+<tr class="separator:abebd72fcda852381644b55f9316719a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Faster computation of Fibonacci series. </p>
-<p>An efficient way to calculate nth fibonacci number faster and simpler than \(O(n\log n)\) method of matrix exponentiation This works by using both recursion and dynamic programming. as 93rd fibonacci exceeds 19 digits, which cannot be stored in a single long long variable, we can only use it till 92nd fibonacci we can use it for 10000th fibonacci etc, if we implement bigintegers. This algorithm works with the fact that nth fibonacci can easily found if we have already found n/2th or (n+1)/2th fibonacci It is a property of fibonacci similar to matrix exponentiation.</p>
+<p>An efficient way to calculate nth fibonacci number faster and simpler than \(O(n\log n)\) method of matrix exponentiation. This works by using both recursion and dynamic programming. As 93rd fibonacci exceeds 19 digits, which cannot be stored in a single long long variable, we can only use it till 92nd fibonacci we can use it for 10000th fibonacci etc, if we implement bigintegers. This algorithm works with the fact that nth fibonacci can easily found if we have already found \(n/2\)th or \((n+1)/2\)th fibonacci. It is a property of fibonacci similar to matrix exponentiation.</p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/kvedala" target="_blank">Krishna Vedala</a> </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../de/de4/fibonacci__large_8cpp.html" title="Computes N^th Fibonacci number given as input argument. Uses custom build arbitrary integers library ...">fibonacci_large.cpp</a>, <a class="el" href="../../d9/d89/fibonacci_8cpp.html" title="n-th Fibonacci number.">fibonacci.cpp</a>, <a class="el" href="../../de/d47/string__fibonacci_8cpp.html" title="This Programme returns the Nth fibonacci as a string.">string_fibonacci.cpp</a> </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="../../d4/d32/fibonacci__fast_8cpp_source.html">fibonacci_fast.cpp</a>.</p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a392fb874e547e582e9c66a08a1f23326" name="a392fb874e547e582e9c66a08a1f23326"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a392fb874e547e582e9c66a08a1f23326">&#9670;&#160;</a></span>MAX</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX&#160;&#160;&#160;93</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>maximum number that can be computed - The result after 93 cannot be stored in a <code>uint64_t</code> data type. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d4/d32/fibonacci__fast_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../d4/d32/fibonacci__fast_8cpp_source.html">fibonacci_fast.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a5712edca101204eca8accdb1e096707f" name="a5712edca101204eca8accdb1e096707f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5712edca101204eca8accdb1e096707f">&#9670;&#160;</a></span>fib()</h2>
 
@@ -193,28 +184,38 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Algorithm </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d32/fibonacci__fast_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../d4/d32/fibonacci__fast_8cpp_source.html">fibonacci_fast.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   30</span>                         {</div>
-<div class="line"><span class="lineno">   31</span>    <span class="keyword">static</span> uint64_t f1 = 1,</div>
-<div class="line"><span class="lineno">   32</span>                    f2 = 1;  <span class="comment">// using static keyword will retain the values of</span></div>
-<div class="line"><span class="lineno">   33</span>                             <span class="comment">// f1 and f2 for the next function call.</span></div>
-<div class="line"><span class="lineno">   34</span> </div>
-<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">if</span> (n &lt;= 2)</div>
-<div class="line"><span class="lineno">   36</span>        <span class="keywordflow">return</span> f2;</div>
-<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">if</span> (n &gt;= 93) {</div>
-<div class="line"><span class="lineno">   38</span>        std::cerr</div>
-<div class="line"><span class="lineno">   39</span>            &lt;&lt; <span class="stringliteral">&quot;Cannot compute for n&gt;93 due to limit of 64-bit integers\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   41</span>    }</div>
+<p>Function to compute the nth Fibonacci number. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>The index of the Fibonacci number to compute </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>uint64_t The nth Fibonacci number </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d32/fibonacci__fast_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../d4/d32/fibonacci__fast_8cpp_source.html">fibonacci_fast.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>                         {</div>
+<div class="line"><span class="lineno">   39</span>    <span class="comment">// Using static keyword will retain the values of</span></div>
+<div class="line"><span class="lineno">   40</span>    <span class="comment">// f1 and f2 for the next function call.</span></div>
+<div class="line"><span class="lineno">   41</span>    <span class="keyword">static</span> uint64_t f1 = 1, f2 = 1;</div>
 <div class="line"><span class="lineno">   42</span> </div>
-<div class="line"><span class="lineno">   43</span>    uint64_t temp = f2;  <span class="comment">// we do not need temp to be static</span></div>
-<div class="line"><span class="lineno">   44</span>    f2 += f1;</div>
-<div class="line"><span class="lineno">   45</span>    f1 = temp;</div>
-<div class="line"><span class="lineno">   46</span> </div>
-<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">return</span> f2;</div>
-<div class="line"><span class="lineno">   48</span>}</div>
+<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">if</span> (n &lt;= 2) {</div>
+<div class="line"><span class="lineno">   44</span>        <span class="keywordflow">return</span> f2;</div>
+<div class="line"><span class="lineno">   45</span>    } <span class="keywordflow">if</span> (n &gt;= <a class="code hl_variable" href="#abebd72fcda852381644b55f9316719a0">MAX</a>) {</div>
+<div class="line"><span class="lineno">   46</span>        <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Cannot compute for n&gt;=&quot;</span> + std::to_string(<a class="code hl_variable" href="#abebd72fcda852381644b55f9316719a0">MAX</a>) +</div>
+<div class="line"><span class="lineno">   47</span>                                    <span class="stringliteral">&quot; due to limit of 64-bit integers&quot;</span>);</div>
+<div class="line"><span class="lineno">   48</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   49</span>    }</div>
+<div class="line"><span class="lineno">   50</span>    </div>
+<div class="line"><span class="lineno">   51</span>    <span class="comment">// We do not need temp to be static.</span></div>
+<div class="line"><span class="lineno">   52</span>    uint64_t temp = f2;  </div>
+<div class="line"><span class="lineno">   53</span>    f2 += f1;</div>
+<div class="line"><span class="lineno">   54</span>    f1 = temp;</div>
+<div class="line"><span class="lineno">   55</span> </div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">return</span> f2;</div>
+<div class="line"><span class="lineno">   57</span>}</div>
+<div class="ttc" id="afibonacci__fast_8cpp_html_abebd72fcda852381644b55f9316719a0"><div class="ttname"><a href="#abebd72fcda852381644b55f9316719a0">MAX</a></div><div class="ttdeci">constexpr uint64_t MAX</div><div class="ttdoc">for std::invalid_argument</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/fibonacci__fast_8cpp_source.html#l00031">fibonacci_fast.cpp:31</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -232,18 +233,185 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Main function </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d32/fibonacci__fast_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../d4/d32/fibonacci__fast_8cpp_source.html">fibonacci_fast.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   51</span>           {</div>
-<div class="line"><span class="lineno">   52</span>    <span class="comment">// Main Function</span></div>
-<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">for</span> (uint64_t i = 1; i &lt; 93; i++) {</div>
-<div class="line"><span class="lineno">   54</span>        std::cout &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; th fibonacci number is &quot;</span> &lt;&lt; <a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(i) &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   55</span>    }</div>
-<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   57</span>}</div>
-<div class="ttc" id="afibonacci__fast_8cpp_html_a5712edca101204eca8accdb1e096707f"><div class="ttname"><a href="#a5712edca101204eca8accdb1e096707f">fib</a></div><div class="ttdeci">uint64_t fib(uint64_t n)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/fibonacci__fast_8cpp_source.html#l00030">fibonacci_fast.cpp:30</a></div></div>
+<p>Main Function. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d32/fibonacci__fast_8cpp_source.html#l00175">175</a> of file <a class="el" href="../../d4/d32/fibonacci__fast_8cpp_source.html">fibonacci_fast.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  175</span>           {</div>
+<div class="line"><span class="lineno">  176</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">  177</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  178</span>}</div>
+<div class="ttc" id="afibonacci__fast_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Function to test the Fibonacci computation.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/fibonacci__fast_8cpp_source.html#l00063">fibonacci_fast.cpp:63</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8dca7b867074164d5f45b0f3851269d">&#9670;&#160;</a></span>test()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void test </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function to test the Fibonacci computation. </p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d32/fibonacci__fast_8cpp_source.html#l00063">63</a> of file <a class="el" href="../../d4/d32/fibonacci__fast_8cpp_source.html">fibonacci_fast.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   63</span>                   {</div>
+<div class="line"><span class="lineno">   64</span>    <span class="comment">// Test for valid Fibonacci numbers</span></div>
+<div class="line"><span class="lineno">   65</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(1) == 1);</div>
+<div class="line"><span class="lineno">   66</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(2) == 1);</div>
+<div class="line"><span class="lineno">   67</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(3) == 2);</div>
+<div class="line"><span class="lineno">   68</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(4) == 3);</div>
+<div class="line"><span class="lineno">   69</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(5) == 5);</div>
+<div class="line"><span class="lineno">   70</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(6) == 8);</div>
+<div class="line"><span class="lineno">   71</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(7) == 13);</div>
+<div class="line"><span class="lineno">   72</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(8) == 21);</div>
+<div class="line"><span class="lineno">   73</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(9) == 34);</div>
+<div class="line"><span class="lineno">   74</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(10) == 55);</div>
+<div class="line"><span class="lineno">   75</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(11) == 89);</div>
+<div class="line"><span class="lineno">   76</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(12) == 144);</div>
+<div class="line"><span class="lineno">   77</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(13) == 233);</div>
+<div class="line"><span class="lineno">   78</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(14) == 377);</div>
+<div class="line"><span class="lineno">   79</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(15) == 610);</div>
+<div class="line"><span class="lineno">   80</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(16) == 987);</div>
+<div class="line"><span class="lineno">   81</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(17) == 1597);</div>
+<div class="line"><span class="lineno">   82</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(18) == 2584);</div>
+<div class="line"><span class="lineno">   83</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(19) == 4181);</div>
+<div class="line"><span class="lineno">   84</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(20) == 6765);</div>
+<div class="line"><span class="lineno">   85</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(21) == 10946);</div>
+<div class="line"><span class="lineno">   86</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(22) == 17711);</div>
+<div class="line"><span class="lineno">   87</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(23) == 28657);</div>
+<div class="line"><span class="lineno">   88</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(24) == 46368);</div>
+<div class="line"><span class="lineno">   89</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(25) == 75025);</div>
+<div class="line"><span class="lineno">   90</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(26) == 121393);</div>
+<div class="line"><span class="lineno">   91</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(27) == 196418);</div>
+<div class="line"><span class="lineno">   92</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(28) == 317811);</div>
+<div class="line"><span class="lineno">   93</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(29) == 514229);</div>
+<div class="line"><span class="lineno">   94</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(30) == 832040);</div>
+<div class="line"><span class="lineno">   95</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(31) == 1346269);</div>
+<div class="line"><span class="lineno">   96</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(32) == 2178309);</div>
+<div class="line"><span class="lineno">   97</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(33) == 3524578);</div>
+<div class="line"><span class="lineno">   98</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(34) == 5702887);</div>
+<div class="line"><span class="lineno">   99</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(35) == 9227465);</div>
+<div class="line"><span class="lineno">  100</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(36) == 14930352);</div>
+<div class="line"><span class="lineno">  101</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(37) == 24157817);</div>
+<div class="line"><span class="lineno">  102</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(38) == 39088169);</div>
+<div class="line"><span class="lineno">  103</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(39) == 63245986);</div>
+<div class="line"><span class="lineno">  104</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(40) == 102334155);</div>
+<div class="line"><span class="lineno">  105</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(41) == 165580141);</div>
+<div class="line"><span class="lineno">  106</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(42) == 267914296);</div>
+<div class="line"><span class="lineno">  107</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(43) == 433494437);</div>
+<div class="line"><span class="lineno">  108</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(44) == 701408733);</div>
+<div class="line"><span class="lineno">  109</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(45) == 1134903170);</div>
+<div class="line"><span class="lineno">  110</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(46) == 1836311903);</div>
+<div class="line"><span class="lineno">  111</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(47) == 2971215073);</div>
+<div class="line"><span class="lineno">  112</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(48) == 4807526976);</div>
+<div class="line"><span class="lineno">  113</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(49) == 7778742049);</div>
+<div class="line"><span class="lineno">  114</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(50) == 12586269025);</div>
+<div class="line"><span class="lineno">  115</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(51) == 20365011074);</div>
+<div class="line"><span class="lineno">  116</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(52) == 32951280099);</div>
+<div class="line"><span class="lineno">  117</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(53) == 53316291173);</div>
+<div class="line"><span class="lineno">  118</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(54) == 86267571272);</div>
+<div class="line"><span class="lineno">  119</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(55) == 139583862445);</div>
+<div class="line"><span class="lineno">  120</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(56) == 225851433717);</div>
+<div class="line"><span class="lineno">  121</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(57) == 365435296162);</div>
+<div class="line"><span class="lineno">  122</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(58) == 591286729879);</div>
+<div class="line"><span class="lineno">  123</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(59) == 956722026041);</div>
+<div class="line"><span class="lineno">  124</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(60) == 1548008755920);</div>
+<div class="line"><span class="lineno">  125</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(61) == 2504730781961);</div>
+<div class="line"><span class="lineno">  126</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(62) == 4052739537881);</div>
+<div class="line"><span class="lineno">  127</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(63) == 6557470319842);</div>
+<div class="line"><span class="lineno">  128</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(64) == 10610209857723);</div>
+<div class="line"><span class="lineno">  129</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(65) == 17167680177565);</div>
+<div class="line"><span class="lineno">  130</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(66) == 27777890035288);</div>
+<div class="line"><span class="lineno">  131</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(67) == 44945570212853);</div>
+<div class="line"><span class="lineno">  132</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(68) == 72723460248141);</div>
+<div class="line"><span class="lineno">  133</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(69) == 117669030460994);</div>
+<div class="line"><span class="lineno">  134</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(70) == 190392490709135);</div>
+<div class="line"><span class="lineno">  135</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(71) == 308061521170129);</div>
+<div class="line"><span class="lineno">  136</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(72) == 498454011879264);</div>
+<div class="line"><span class="lineno">  137</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(73) == 806515533049393);</div>
+<div class="line"><span class="lineno">  138</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(74) == 1304969544928657);</div>
+<div class="line"><span class="lineno">  139</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(75) == 2111485077978050);</div>
+<div class="line"><span class="lineno">  140</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(76) == 3416454622906707);</div>
+<div class="line"><span class="lineno">  141</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(77) == 5527939700884757);</div>
+<div class="line"><span class="lineno">  142</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(78) == 8944394323791464);</div>
+<div class="line"><span class="lineno">  143</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(79) == 14472334024676221);</div>
+<div class="line"><span class="lineno">  144</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(80) == 23416728348467685);</div>
+<div class="line"><span class="lineno">  145</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(81) == 37889062373143906);</div>
+<div class="line"><span class="lineno">  146</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(82) == 61305790721611591);</div>
+<div class="line"><span class="lineno">  147</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(83) == 99194853094755497);</div>
+<div class="line"><span class="lineno">  148</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(84) == 160500643816367088);</div>
+<div class="line"><span class="lineno">  149</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(85) == 259695496911122585);</div>
+<div class="line"><span class="lineno">  150</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(86) == 420196140727489673);</div>
+<div class="line"><span class="lineno">  151</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(87) == 679891637638612258);</div>
+<div class="line"><span class="lineno">  152</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(88) == 1100087778366101931);</div>
+<div class="line"><span class="lineno">  153</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(89) == 1779979416004714189);</div>
+<div class="line"><span class="lineno">  154</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(90) == 2880067194370816120);</div>
+<div class="line"><span class="lineno">  155</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(91) == 4660046610375530309);</div>
+<div class="line"><span class="lineno">  156</span>    assert(<a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(92) == 7540113804746346429);</div>
+<div class="line"><span class="lineno">  157</span> </div>
+<div class="line"><span class="lineno">  158</span>    <span class="comment">// Test for invalid Fibonacci numbers</span></div>
+<div class="line"><span class="lineno">  159</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  160</span>        <a class="code hl_function" href="#a5712edca101204eca8accdb1e096707f">fib</a>(<a class="code hl_variable" href="#abebd72fcda852381644b55f9316719a0">MAX</a> + 1);</div>
+<div class="line"><span class="lineno">  161</span>        assert(<span class="keyword">false</span> &amp;&amp; <span class="stringliteral">&quot;Expected an invalid_argument exception to be thrown&quot;</span>);</div>
+<div class="line"><span class="lineno">  162</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::invalid_argument&amp; e) {</div>
+<div class="line"><span class="lineno">  163</span>        <span class="keyword">const</span> std::string expected_message = <span class="stringliteral">&quot;Cannot compute for n&gt;=&quot;</span> + std::to_string(<a class="code hl_variable" href="#abebd72fcda852381644b55f9316719a0">MAX</a>) +</div>
+<div class="line"><span class="lineno">  164</span>                                             <span class="stringliteral">&quot; due to limit of 64-bit integers&quot;</span>;</div>
+<div class="line"><span class="lineno">  165</span>        assert(e.what() == expected_message);</div>
+<div class="line"><span class="lineno">  166</span>    }</div>
+<div class="line"><span class="lineno">  167</span> </div>
+<div class="line"><span class="lineno">  168</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All Fibonacci tests have successfully passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  169</span>}</div>
+<div class="ttc" id="afibonacci__fast_8cpp_html_a5712edca101204eca8accdb1e096707f"><div class="ttname"><a href="#a5712edca101204eca8accdb1e096707f">fib</a></div><div class="ttdeci">uint64_t fib(uint64_t n)</div><div class="ttdoc">Function to compute the nth Fibonacci number.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/fibonacci__fast_8cpp_source.html#l00038">fibonacci_fast.cpp:38</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="abebd72fcda852381644b55f9316719a0" name="abebd72fcda852381644b55f9316719a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abebd72fcda852381644b55f9316719a0">&#9670;&#160;</a></span>MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t MAX = 93</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>for std::invalid_argument </p>
+<p>for uint64_t for standard IO for IO operations for assert for std::to_string</p>
+<p>Maximum Fibonacci number that can be computed</p>
+<p>The result after 93 cannot be stored in a <code>uint64_t</code> data type. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d32/fibonacci__fast_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../d4/d32/fibonacci__fast_8cpp_source.html">fibonacci_fast.cpp</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->

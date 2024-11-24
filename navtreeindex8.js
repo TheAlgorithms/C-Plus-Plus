@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a0c33f2c1a3a3deb486a1c33ee5239499":[10,0,13,1,0,1],
 "d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a3078a5ccf45d6a7031dcf46e43de65b6":[10,0,13,1,0,0],
 "d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a636a07c90b7f312bb86d2ec104efca25":[10,0,13,1,0,2],
 "d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#ad4c6a8e67fb8267a65439b035666b5ae":[10,0,13,1,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html#a12a06eef5ccaf667f319506eee655d95":[10,0,12,0,1,1],
 "da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html#a7461292b8b91aed86404d0ab019dfdd1":[10,0,12,0,1,2],
 "da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html#a7c867b8e1034a6f5da490c8b8c09cb77":[10,0,12,0,1,3],
-"da/d18/quadratic__equations__complex__numbers_8cpp.html":[11,0,14,51],
-"da/d18/quadratic__equations__complex__numbers_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,14,51,3]
+"da/d18/quadratic__equations__complex__numbers_8cpp.html":[11,0,14,51]
 };

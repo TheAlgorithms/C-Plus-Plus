@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"d8/d76/morse__code_8cpp.html#a15c66ec8cf4cef0a35c50cbab86965dc":[11,0,2,6,1],
 "d8/d76/morse__code_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,2,6,5],
 "d8/d76/morse__code_8cpp.html#ab31773fd11555d21f70d6914138d9535":[11,0,2,6,0],
 "d8/d76/morse__code_8cpp.html#ac9f294b0dec08a4a11d477a32f9bd829":[11,0,2,6,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "d9/d03/namespacestring__search.html#aeb2cd81064717aedd62bfb096b1a73d8":[9,0,121,0],
 "d9/d03/namespacestring__search.html#aebe07cea289a13142503d98be7df11fd":[9,0,121,1],
 "d9/d03/namespacestring__search.html#aed769d565b705a9b3e0eb1ec74088893":[9,0,121,6],
-"d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html":[10,0,13,1,0],
-"d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a0c33f2c1a3a3deb486a1c33ee5239499":[10,0,13,1,0,1]
+"d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html":[10,0,13,1,0]
 };

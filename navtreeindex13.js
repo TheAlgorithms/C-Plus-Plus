@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"de/d85/decimal__to__roman__numeral_8cpp.html":[11,0,17,3],
 "de/d85/decimal__to__roman__numeral_8cpp.html#a003fb4e1b08279fe4cd50fbbc2782c2d":[11,0,17,3,2],
 "de/d85/decimal__to__roman__numeral_8cpp.html#a214743638eff1336f835310049aef979":[11,0,17,3,3],
 "de/d85/decimal__to__roman__numeral_8cpp.html#a88203bd297e8405160c132faa1187780":[11,0,17,3,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "df/dc8/successive__approximation_8cpp.html#ae89c36add7c55298c5195d0a83de1456":[11,0,15,22,1],
 "df/dc8/successive__approximation_8cpp_source.html":[11,0,15,22],
 "df/dcb/namespacestrings.html":[9,0,122],
-"df/dcd/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plus-_plus_2math_2quadratic_equations_complex_numbers_8cpp-example.html":[12,2],
-"df/dce/namespacegraph.html":[9,0,39]
+"df/dcd/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plus-_plus_2math_2quadratic_equations_complex_numbers_8cpp-example.html":[12,2]
 };

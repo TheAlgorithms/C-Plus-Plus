@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"d7/d24/nqueen__print__all__solutions_8cpp.html#aebd5e11fab6dab282efccfb61beb0bd9":[11,0,0,7,3],
 "d7/d24/nqueen__print__all__solutions_8cpp_source.html":[11,0,0,7],
 "d7/d35/matrix__exponentiation_8cpp.html":[11,0,17,14],
 "d7/d35/matrix__exponentiation_8cpp.html#a276c5a0e984cf60015b27252fe04fe6b":[11,0,17,14,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "d8/d6c/line__segment__intersection_8cpp_source.html":[11,0,8,3],
 "d8/d72/class_r_btree.html":[10,0,51],
 "d8/d76/morse__code_8cpp.html":[11,0,2,6],
-"d8/d76/morse__code_8cpp.html#a0242e458904de8a242fcdaffe9e3ba1a":[11,0,2,6,2],
-"d8/d76/morse__code_8cpp.html#a15c66ec8cf4cef0a35c50cbab86965dc":[11,0,2,6,1]
+"d8/d76/morse__code_8cpp.html#a0242e458904de8a242fcdaffe9e3ba1a":[11,0,2,6,2]
 };

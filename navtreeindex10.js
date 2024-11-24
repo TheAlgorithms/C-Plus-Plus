@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"db/d19/structlinear__probing_1_1_entry.html#a2139f643a3caf074da1db8a9fa16fa77":[10,0,9,0,0],
 "db/d19/structlinear__probing_1_1_entry.html#a4d84e90b73022083761f85f8586c4c2a":[9,0,61,0,1],
 "db/d19/structlinear__probing_1_1_entry.html#a4d84e90b73022083761f85f8586c4c2a":[10,0,9,0,1],
 "db/d27/n__bonacci_8cpp.html":[11,0,14,41],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "dc/d2f/namespacecount__of__trailing__ciphers__in__factorial__n.html":[9,0,17],
 "dc/d38/ordinary__least__squares__regressor_8cpp.html":[11,0,13,6],
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#a01e6c7bf2b09272578b9c5819ce0f36f":[11,0,13,6,10],
-"dc/d38/ordinary__least__squares__regressor_8cpp.html#a207b3a99fd5974d3117e0b0ac0aad234":[11,0,13,6,6],
-"dc/d38/ordinary__least__squares__regressor_8cpp.html#a21c80569aaffb7bf1657e54fa4b97deb":[11,0,13,6,2]
+"dc/d38/ordinary__least__squares__regressor_8cpp.html#a207b3a99fd5974d3117e0b0ac0aad234":[11,0,13,6,6]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"d6/d26/classciphers_1_1_hill_cipher.html#a2eb58750b978a93ac5e6eb29e3e570b7":[10,0,1,1,9],
 "d6/d26/classciphers_1_1_hill_cipher.html#a405b0a28d66a61239d3565d5256f9cb5":[9,0,13,1,6],
 "d6/d26/classciphers_1_1_hill_cipher.html#a405b0a28d66a61239d3565d5256f9cb5":[10,0,1,1,6],
 "d6/d26/classciphers_1_1_hill_cipher.html#a427acfac1dbff3f48a2b071d449d965b":[9,0,13,1,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "d7/d24/nqueen__print__all__solutions_8cpp.html":[11,0,0,7],
 "d7/d24/nqueen__print__all__solutions_8cpp.html#acc809c055f335011de0d9030034c7108":[11,0,0,7,2],
 "d7/d24/nqueen__print__all__solutions_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,0,7,1],
-"d7/d24/nqueen__print__all__solutions_8cpp.html#aea343d8a72a39c9a4c0fbcbc362f2648":[11,0,0,7,0],
-"d7/d24/nqueen__print__all__solutions_8cpp.html#aebd5e11fab6dab282efccfb61beb0bd9":[11,0,0,7,3]
+"d7/d24/nqueen__print__all__solutions_8cpp.html#aea343d8a72a39c9a4c0fbcbc362f2648":[11,0,0,7,0]
 };
