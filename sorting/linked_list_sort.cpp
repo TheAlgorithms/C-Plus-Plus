@@ -1,3 +1,4 @@
+//C++ program for sorting a linked list
 #include <iostream>
 using namespace std;
 // Definition of the ListNode structure
@@ -49,21 +50,21 @@ ListNode* sortList(ListNode* h) {
 }
 
 // Function to push a new node with a given value to the front of the list
-void push(ListNode** head, int new_val) {
+void push(ListNode** h, int new_val) {
     ListNode* new_node = new ListNode(new_val);
-    new_node->next = *head;
-    *head = new_node;
+    new_node->next = *h;
+    *h = new_node;
 }
 
 int main() {
     ListNode* head = nullptr;
 
     // Push elements into the list
-    push(&head, 5);
     push(&head, 1);
-    push(&head, 8);
+    push(&head, 10);
+    push(&head, -8);
     push(&head, 3);
-    push(&head, 2);
+    push(&head, 7);
 
     // Sort the list using merge sort
     head = sortList(head);
@@ -71,10 +72,10 @@ int main() {
     // Print the sorted list
     ListNode* temp = head;
     while (temp) {
-        std::cout << temp->val << " ";  // Print the value of each node
-        temp = temp->next;              // Move to the next node
+        cout << temp->val << " ";  // Print the value of each node
+        temp = temp->next;         // Move to the next node
     }
-    std::cout << std::endl;  // Print a newline at the end
+    cout << endl;
 
     return 0;
 }
