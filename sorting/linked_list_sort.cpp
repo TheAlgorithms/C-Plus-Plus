@@ -14,7 +14,7 @@ struct ListNode {
 // Function to find the middle node of the linked list using slow and fast
 // pointers
 ListNode* mid(ListNode* h) {
-    ListNode *s = h, *f = h->next;
+    ListNode *s = h, *f = h->next; //Here 's' is the slow pointer and 'f' is the fast pointer
     while (f && f->next) {
         s = s->next;
         f = f->next->next;
