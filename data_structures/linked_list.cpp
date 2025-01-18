@@ -64,7 +64,7 @@ class link {
      * Creates link with provided value and pointer to next link
      * @param value is the integer stored in the link
      */
-    explicit link(T value = 0) : pvalue(value), psucc(nullptr) {}
+    explicit link(T value = T()) : pvalue(value), psucc(nullptr) {}
 };
 
 /**
@@ -135,9 +135,9 @@ void list<T>::push_front(T new_elem) {
         first->succ() = std::make_shared<link<T>>(new_elem);
         last = first->succ();
     } else {
-        std::shared_ptr<link<T>> t = std::make_shared<link<T>>(new_elem);
-        t->succ() = first->succ();
-        first->succ() = t;
+        std::shared_ptr<link<T>> temp = std::make_shared<link<T>>(new_elem);
+        temp->succ() = first->succ();
+        first->succ() = temp;
     }
 }
 
@@ -151,20 +151,20 @@ void list<T>::erase(T old_elem) {
         std::cout << "List is Empty!";
         return;
     }
-    std::shared_ptr<link<T>> t = first;
+    std::shared_ptr<link<T>> temp = first;
     std::shared_ptr<link<T>> to_be_removed = nullptr;
-    while (t != last && t->succ()->val() != old_elem) {
-        t = t->succ();
+    while (temp != last && temp->succ()->val() != old_elem) {
+        temp = temp->succ();
     }
-    if (t == last) {
+    if (temp == last) {
         std::cout << "Element not found\n";
         return;
     }
-    to_be_removed = t->succ();
-    t->succ() = t->succ()->succ();
+    to_be_removed = temp->succ();
+    temp->succ() = temp->succ()->succ();
     to_be_removed.reset();
-    if (t->succ() == nullptr) {
-        last = t;
+    if (temp->succ() == nullptr) {
+        last = temp;
     }
     if (first == last){
         last = nullptr;
@@ -181,10 +181,10 @@ void list<T>::display() {
         std::cout << "List is Empty!";
         return;
     }
-    std::shared_ptr<link<T>> t = first;
-    while (t->succ() != nullptr) {
-        std::cout << t->succ()->val() << "\t";
-        t = t->succ();
+    std::shared_ptr<link<T>> temp = first;
+    while (temp->succ() != nullptr) {
+        std::cout << temp->succ()->val() << "\t";
+        temp = temp->succ();
     }
 }
 
@@ -198,16 +198,16 @@ std::shared_ptr<link<T>> list<T>::search(T find_elem) {
         std::cout << "List is Empty!";
         return nullptr;
     }
-    std::shared_ptr<link<T>> t = first;
-    while (t != last && t->succ()->val() != find_elem) {
-        t = t->succ();
+    std::shared_ptr<link<T>> temp = first;
+    while (temp != last && temp->succ()->val() != find_elem) {
+        temp = temp->succ();
     }
-    if (t == last) {
+    if (temp == last) {
         std::cout << "Element not found\n";
         return nullptr;
     }
     std::cout << "Element was found\n";
-    return t->succ();
+    return temp->succ();
 }
 }  // namespace linked_list
 }  // namespace data_structures
@@ -219,10 +219,9 @@ std::shared_ptr<link<T>> list<T>::search(T find_elem) {
  * @returns 0 on exit
  */
 int main() {
-    data_structures::linked_list::list<int> l;
+    data_structures::linked_list::list<std::string> l;
     int choice = 0;
-    int x = 0;
-    std::string s;
+    std::string value;
     do {
         std::cout << "\n1. Insert";
         std::cout << "\n2. Delete";
@@ -232,32 +231,37 @@ int main() {
         std::cout << "\n\nEnter you choice : ";
         std::cin >> choice;
         switch (choice) {
-            case 0:
+            case 0: {
                 std::cout << "\nQuitting the program...\n";
                 break;
-            case 1:
+            }
+            case 1: {
                 std::cout << "\nEnter the element to be inserted : ";
-                std::cin >> s;
-                l.push_back(x);
+                std::cin >> value;
+                l.push_back(value);
                 break;
-            case 2:
+            }
+            case 2: {
                 std::cout << "\nEnter the element to be removed : ";
-                std::cin >> s;
-                l.erase(x);
+                std::cin >> value;
+                l.erase(value);
                 break;
-            // case 3:
-            //     std::cout << "\nEnter the element to be searched : ";
-            //     std::cin >> s;
-            //     std::shared_ptr<data_structures::linked_list::link<T>> found =
-            //         l.search(x);
-            //     break;
-            case 4:
+            }
+            case 3: {
+                std::cout << "\nEnter the element to be searched : ";
+                std::cin >> value;
+                std::shared_ptr<data_structures::linked_list::link<std::string>> found{l.search(value)};
+                break;
+            }
+            case 4: {
                 l.display();
                 std::cout << "\n";
                 break;
-            default:
+            }
+            default: {
                 std::cout << "Invalid Input\n" << std::endl;
                 break;
+            }
         }
     } while (choice != 0);
     return 0;
