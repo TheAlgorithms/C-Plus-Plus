@@ -72,7 +72,7 @@ static void test() {
     constexpr float INFINITY_FLOAT = std::numeric_limits<float>::max();
     constexpr double INFINITY_DOUBLE = std::numeric_limits<double>::max();
     constexpr uint32_t INFINITY_UINT32 = UINT32_MAX;
-  
+
     // Test case with integer values
     std::cout << "\nTest Case 1 :\n";
     std::array<std::array<int, 6>, 6> graph1{
@@ -150,7 +150,7 @@ static void test() {
     std::cout << "\nTest Case 9:\n";
    std::array<std::array<int, 4>, 3> graph9{
         0,        5,        5,        5,
-        5,        0,        5,        5,        
+        5,        0,        5,        5,
         5,        5,        5,        5};
     greedy_algorithms::findMinimumEdge(INFINITY_INT, graph9);
 
@@ -185,4 +185,3 @@ int main() {
     test();  // run Self-test implementation
     return 0;
 }
-
