@@ -44,13 +44,21 @@ void zigzagTraversal(Node* root) {
 
             // If traversing from left to right, push left child first, then right child
             if (leftToRight) {
-                if (node->left) nextLevel.push(node->left); // Push left child if exists
-                if (node->right) nextLevel.push(node->right); // Push right child if exists
+                if (node->left) {
+                    nextLevel.push(node->left); // Push left child if exists
+                }
+                if (node->right){ 
+                    nextLevel.push(node->right); // Push right child if exists
+                }
             }
             // If traversing from right to left, push right child first, then left child
             else {
-                if (node->right) nextLevel.push(node->right); // Push right child if exists
-                if (node->left) nextLevel.push(node->left); // Push left child if exists
+                if (node->right) {
+                    nextLevel.push(node->right);
+                }
+                if (node->left) {
+                    nextLevel.push(node->left); 
+                }
             }
         }
 
@@ -70,13 +78,13 @@ Node* createSampleTree() {
     //      2   3
     //     / \ / \
     //    4  5 6  7
-    Node* root = new Node(1); // Root node with value 1
-    root->left = new Node(2); // Left child of root
-    root->right = new Node(3); // Right child of root
-    root->left->left = new Node(4); // Left child of node 2
-    root->left->right = new Node(5); // Right child of node 2
-    root->right->left = new Node(6); // Left child of node 3
-    root->right->right = new Node(7); // Right child of node 3
+    Node* root = new Node(1); 
+    root->left = new Node(2); 
+    root->right = new Node(3); 
+    root->left->left = new Node(4); 
+    root->left->right = new Node(5); 
+    root->right->left = new Node(6); 
+    root->right->right = new Node(7); 
     return root; // Return the root of the tree
 }
 
