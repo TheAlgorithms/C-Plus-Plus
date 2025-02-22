@@ -26,7 +26,7 @@ if(USE_OPENMP)
         message(STATUS "No OpenMP found, no multithreading.")
     endif()
 endif()
-    
+
 add_subdirectory(math)
 add_subdirectory(others)
 add_subdirectory(search)
@@ -56,7 +56,7 @@ cmake_policy(SET CMP0054 NEW)
 cmake_policy(SET CMP0057 NEW)
 
 find_package(Doxygen OPTIONAL_COMPONENTS dot dia)
-if(DOXYGEN_FOUND)  
+if(DOXYGEN_FOUND)
     if(MSVC)
         set(DOXYGEN_CPP_CLI_SUPPORT YES)
     endif()
@@ -64,11 +64,11 @@ if(DOXYGEN_FOUND)
     if(Doxygen_dot_FOUND)
         set(DOXYGEN_HAVE_DOT YES)
     endif()
-    
+
     if(OPENMP_FOUND)
         set(DOXYGEN_PREDEFINED "_OPENMP=1")
     endif()
-    
+
     if(GLUT_FOUND)
         set(DOXYGEN_PREDEFINED ${DOXYGEN_PREDEFINED} "GLUT_FOUND=1")
     endif()

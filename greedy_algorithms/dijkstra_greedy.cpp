@@ -1,10 +1,10 @@
 /**
  * @file
- * @brief [Dijkstra](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) algorithm
- * implementation
+ * @brief [Dijkstra](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
+ * algorithm implementation
  * @details
  * _Quote from Wikipedia._
- * 
+ *
  * **Dijkstra's algorithm** is an algorithm for finding the
  * shortest paths between nodes in a weighted graph, which may represent, for
  * example, road networks. It was conceived by computer scientist Edsger W.
@@ -26,7 +26,9 @@
 namespace greedy_algorithms {
 /**
  * @namespace
- * @brief Functions for the [Dijkstra](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) algorithm implementation
+ * @brief Functions for the
+ * [Dijkstra](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) algorithm
+ * implementation
  */
 namespace dijkstra {
 /**
@@ -106,8 +108,7 @@ void print(std::vector<int> dist, int V) {
     for (int i = 0; i < V; i++) {
         if (dist[i] < INT_MAX) {
             std::cout << i << "\t" << dist[i] << "\n";
-        }
-        else {
+        } else {
             std::cout << i << "\tINF" << "\n";
         }
     }
@@ -124,7 +125,8 @@ void print(std::vector<int> dist, int V) {
 void dijkstra(Graph graph, int src) {
     int V = graph.vertexNum;
     std::vector<int> mdist{};  // Stores updated distances to the vertex
-    std::vector<bool> vset{};  // `vset[i]` is true if the vertex `i` is included in the shortest path tree
+    std::vector<bool> vset{};  // `vset[i]` is true if the vertex `i` is
+                               // included in the shortest path tree
 
     // Initialize `mdist and `vset`. Set the distance of the source as zero
     for (int i = 0; i < V; i++) {

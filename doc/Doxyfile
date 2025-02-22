@@ -1071,7 +1071,7 @@ RECURSIVE              = YES
 # run.
 
 EXCLUDE                =
-                         
+
 
 # The EXCLUDE_SYMLINKS tag can be used to select whether or not files or
 # directories that are symbolic links (a Unix file system feature) are excluded
@@ -1405,7 +1405,7 @@ HTML_FOOTER            =
 # obsolete.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_STYLESHEET        =  
+HTML_STYLESHEET        =
 
 # The HTML_EXTRA_STYLESHEET tag can be used to specify additional user-defined
 # cascading style sheets that are included after the standard style sheets
@@ -1433,7 +1433,7 @@ HTML_EXTRA_STYLESHEET  = doc/styles/doxygen-awesome.css
 # files will be copied as-is; there are no commands or markers available.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_EXTRA_FILES       = 
+HTML_EXTRA_FILES       =
 
 # The HTML_COLORSTYLE tag can be used to specify if the generated HTML output
 # should be rendered with a dark or light theme.
@@ -1868,7 +1868,7 @@ USE_MATHJAX            = YES
 # settings have to be changed when switching between the different MathJax
 # versions.
 # Possible values are: MathJax_2 and MathJax_3.
-# The default value is: MathJax_2. 
+# The default value is: MathJax_2.
 # This tag requires that the tag USE_MATHJAX is set to YES.
 
 MATHJAX_VERSION        = MathJax_3

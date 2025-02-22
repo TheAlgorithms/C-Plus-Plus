@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-#define V 4
+#define V        4
 #define INFINITY 99999
 
 int graph[V][V] = {{0, 5, 1, 2}, {5, 0, 3, 3}, {1, 3, 0, 4}, {2, 3, 4, 0}};

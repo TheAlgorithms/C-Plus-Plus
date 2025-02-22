@@ -9,7 +9,7 @@
  * @author [Focusucof](https://github.com/Focusucof)
  */
 
-#include <cassert>   /// for assert()
+#include <cassert>  /// for assert()
 #define _USE_MATH_DEFINES
 #include <cmath>     /// for std::pow(), std::sin(), and std::cos()
 #include <iostream>  /// for IO operations
@@ -31,7 +31,7 @@ namespace ground_to_ground_projectile_motion {
  * @returns Angle in degrees
  */
 
-double degrees_to_radians(double degrees){
+double degrees_to_radians(double degrees) {
     double radians = degrees * (M_PI / 180);
     return radians;
 }
@@ -45,7 +45,9 @@ double degrees_to_radians(double degrees){
  */
 template <typename T>
 T time_of_flight(T initial_velocity, T angle, double gravity = 9.81) {
-    double Viy = initial_velocity * (std::sin(degrees_to_radians(angle))); // calculate y component of the initial velocity
+    double Viy = initial_velocity *
+                 (std::sin(degrees_to_radians(
+                     angle)));  // calculate y component of the initial velocity
     return 2.0 * Viy / gravity;
 }
 
@@ -57,7 +59,9 @@ T time_of_flight(T initial_velocity, T angle, double gravity = 9.81) {
  */
 template <typename T>
 T horizontal_range(T initial_velocity, T angle, T time) {
-    double Vix = initial_velocity * (std::cos(degrees_to_radians(angle))); // calculate x component of the initial velocity
+    double Vix = initial_velocity *
+                 (std::cos(degrees_to_radians(
+                     angle)));  // calculate x component of the initial velocity
     return Vix * time;
 }
 
@@ -70,7 +74,9 @@ T horizontal_range(T initial_velocity, T angle, T time) {
  */
 template <typename T>
 T max_height(T initial_velocity, T angle, double gravity = 9.81) {
-    double Viy = initial_velocity * (std::sin(degrees_to_radians(angle))); // calculate y component of the initial velocity
+    double Viy = initial_velocity *
+                 (std::sin(degrees_to_radians(
+                     angle)));  // calculate y component of the initial velocity
     return (std::pow(Viy, 2) / (2.0 * gravity));
 }
 }  // namespace ground_to_ground_projectile_motion
@@ -88,7 +94,9 @@ static void test() {
     // 1st test
     double expected_time_of_flight = 0.655;  // expected time output
     double flight_time_output =
-        std::round(physics::ground_to_ground_projectile_motion::time_of_flight(initial_velocity, angle) * 1000.0) /
+        std::round(physics::ground_to_ground_projectile_motion::time_of_flight(
+                       initial_velocity, angle) *
+                   1000.0) /
         1000.0;  // round output to 3 decimal places
 
     std::cout << "Projectile Flight Time (double)" << std::endl;
@@ -100,11 +108,13 @@ static void test() {
     std::cout << "TEST PASSED" << std::endl << std::endl;
 
     // 2nd test
-    double expected_horizontal_range = 2.51; // expected range output
+    double expected_horizontal_range = 2.51;  // expected range output
     double horizontal_range_output =
-        std::round(physics::ground_to_ground_projectile_motion::horizontal_range(initial_velocity, angle,
-                                             flight_time_output) *
-                   100.0) /
+        std::round(
+            physics::ground_to_ground_projectile_motion::horizontal_range(
+                initial_velocity, angle,
+                flight_time_output) *
+            100.0) /
         100.0;  // round output to 2 decimal places
 
     std::cout << "Projectile Horizontal Range (double)" << std::endl;
@@ -117,9 +127,11 @@ static void test() {
     std::cout << "TEST PASSED" << std::endl << std::endl;
 
     // 3rd test
-    double expected_max_height = 0.526; // expected height output
+    double expected_max_height = 0.526;  // expected height output
     double max_height_output =
-        std::round(physics::ground_to_ground_projectile_motion::max_height(initial_velocity, angle) * 1000.0) /
+        std::round(physics::ground_to_ground_projectile_motion::max_height(
+                       initial_velocity, angle) *
+                   1000.0) /
         1000.0;  // round output to 3 decimal places
 
     std::cout << "Projectile Max Height (double)" << std::endl;

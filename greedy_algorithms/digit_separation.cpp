@@ -1,7 +1,8 @@
 /**
  * @file digit_separation.cpp
  * @brief Separates digits from numbers in forward and reverse order
- * @see https://www.log2base2.com/c-examples/loop/split-a-number-into-digits-in-c.html
+ * @see
+ * https://www.log2base2.com/c-examples/loop/split-a-number-into-digits-in-c.html
  * @details The DigitSeparation class provides two methods to separate the
  * digits of large integers: digitSeparationReverseOrder and
  * digitSeparationForwardOrder. The digitSeparationReverseOrder method extracts

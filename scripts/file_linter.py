@@ -6,17 +6,17 @@ print("Python {}.{}.{}".format(*sys.version_info))  # Python 3.8
 with open("git_diff.txt") as in_file:
     modified_files = sorted(in_file.read().splitlines())
     print("{} files were modified.".format(len(modified_files)))
-    
+
     cpp_exts = tuple(".c .c++ .cc .cpp .cu .cuh .cxx .h .h++ .hh .hpp .hxx".split())
     cpp_files = [file for file in modified_files if file.lower().endswith(cpp_exts)]
     print(f"{len(cpp_files)} C++ files were modified.")
     if not cpp_files:
         sys.exit(0)
 
-        subprocess.run(["clang-tidy", "--fix", "-p=build", "--extra-arg=-std=c++11", *cpp_files, "--"], 
+        subprocess.run(["clang-tidy", "--fix", "-p=build", "--extra-arg=-std=c++11", *cpp_files, "--"],
             check=True, text=True, stderr=subprocess.STDOUT)
 
-        subprocess.run(["clang-format", "-i", "-style=file", *cpp_files], 
+        subprocess.run(["clang-format", "-i", "-style=file", *cpp_files],
             check=True, text=True, stderr=subprocess.STDOUT)
 
         upper_files = [file for file in cpp_files if file != file.lower()]

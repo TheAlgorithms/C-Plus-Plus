@@ -19,7 +19,7 @@
  * @author [SpiderMath](https://github.com/SpiderMath)
  */
 
-#include <cassert>   /// for assert
+#include <cassert>  /// for assert
 #include <cstdint>
 #include <iostream>  /// for IO operations
 

@@ -68,7 +68,8 @@ class BinaryAddition {
 
  private:
     /**
-     * @brief Validates whether a string contains only binary characters (0 or 1).
+     * @brief Validates whether a string contains only binary characters (0 or
+     * 1).
      * @param str The string to validate.
      * @return true if the string is binary, false otherwise.
      */
@@ -114,6 +115,6 @@ static void tests() {
  * @returns 0 on successful exit
  */
 int main() {
-    tests(); /// To execute tests
+    tests();  /// To execute tests
     return 0;
 }

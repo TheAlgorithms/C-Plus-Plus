@@ -56,7 +56,7 @@ foreach( testsourcefile ${APP_SOURCES} )
     if(OpenMP_CXX_FOUND)
         target_link_libraries(${testname} PRIVATE OpenMP::OpenMP_CXX)
     endif()
-    
+
     if(OpenGL_FOUND)
         if(NOT GLUT_FOUND)
             add_dependencies(${testname} FREEGLUT-PRJ)
@@ -73,11 +73,11 @@ foreach( testsourcefile ${APP_SOURCES} )
         endif()
         target_compile_definitions(${testname} PRIVATE USE_GLUT)
     endif(OpenGL_FOUND)
-    
+
     if(APPLE)
         target_compile_options(${testname} PRIVATE -Wno-deprecated)
     endif(APPLE)
-    
+
     install(TARGETS ${testname} DESTINATION "bin/graphics")
 
 endforeach( testsourcefile ${APP_SOURCES} )
