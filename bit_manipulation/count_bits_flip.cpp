@@ -22,39 +22,69 @@
 #include <cassert>   /// for assert
 #include <cstdint>
 #include <iostream>  /// for IO operations
-#include <iostream>
+/**
+ * @namespace bit_manipulation
+ * @brief Bit manipulation algorithms
+ */
+namespace bit_manipulation {
+/**
+ * @namespace count_bits_flip
+ * @brief Functions for the [count bits
+ * flip](https://www.geeksforgeeks.org/count-set-bits-in-an-integer/)
+ * implementation
+ */
+namespace count_bits_flip {
+/**
+ * @brief The main function implements count of bits flip required
+ * @param A is the given number whose bits will be flipped to get number B
+ * @param B is the given target number
+ * @returns total number of bits needed to be flipped to convert A to B
+ */
+std::uint64_t countBitsFlip(
+    std::int64_t A,
+    std::int64_t B) {  // int64_t is preferred over int so that
+                       // no Overflow can be there.
 
-class Solution {
-public:
-    int minBitFlips(int start, int goal) {
-        int xor_value = start ^ goal; // Step 1: Find XOR of start and goal
-        int res = 0;
-        
-        // Step 2: Count number of 1s in XOR result
-        while (xor_value > 0) {
-            res += xor_value & 1; // Increment count if last bit is 1
-            xor_value >>= 1;      // Right shift to check next bit
-        }
-        
-        return res; // Return total bit flips required
-    }
-};
+                       int xor_value = A ^ B; // Step 1: Find XOR of start and goal
+                       int res = 0;
+                       
+                       // Step 2: Count number of 1s in XOR result
+                       while (xor_value > 0) {
+                           res += xor_value & 1; // Increment count if last bit is 1
+                           xor_value >>= 1;      // Right shift to check next bit
+                       }
+                       
+                       return res;
+}
+}  // namespace count_bits_flip
+}  // namespace bit_manipulation
 
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void test() {
+    // A = 10, B = 20 return 4
+    assert(bit_manipulation::count_bits_flip::countBitsFlip(10, 20) == 4);
+    // A = 20, B = 25 return 3
+    assert(bit_manipulation::count_bits_flip::countBitsFlip(20, 25) == 3);
+    // A = 7, B = 10 return 3
+    assert(bit_manipulation::count_bits_flip::countBitsFlip(7, 10) == 3);
+    // A = 17, B = 25 return 1
+    assert(bit_manipulation::count_bits_flip::countBitsFlip(17, 25) == 1);
+    // A = 11, B = 8 return 2
+    assert(bit_manipulation::count_bits_flip::countBitsFlip(11, 8) == 2);
+    // A = 21, B = 22 return 2
+    assert(bit_manipulation::count_bits_flip::countBitsFlip(21, 22) == 2);
+    // A = 7, B = 786 return 5
+    assert(bit_manipulation::count_bits_flip::countBitsFlip(7, 786) == 5);
+    std::cout << "All test cases successfully passed!" << std::endl;
+}
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
-    Solution solution;
-    int start, goal;
-    
-    // Taking user input
-    std::cout << "Enter start value: ";
-    std::cin >> start;
-    std::cout << "Enter goal value: ";
-    std::cin >> goal;
-    
-    // Calculating minimum bit flips
-    int result = solution.minBitFlips(start, goal);
-    
-    // Displaying the result
-    std::cout << "Minimum bit flips required: " << result << std::endl;
-
+    test();  // run self-test implementations
     return 0;
 }
