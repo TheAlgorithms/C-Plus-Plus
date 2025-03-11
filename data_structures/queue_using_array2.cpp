@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
-int queue[10];
-int front = 0;
-int rear = 0;
+#define SIZE 10
+int queue[SIZE];
+int front = 0, rear = 0;
 
 void Enque(int x) {
-    if (rear == 10) {
+    if (rear == SIZE) {
         cout << "\nOverflow";
     } else {
         queue[rear++] = x;
@@ -16,19 +16,23 @@ void Enque(int x) {
 void Deque() {
     if (front == rear) {
         cout << "\nUnderflow";
-    }
+    } else {
+        cout << "\n" << queue[front] << " deleted";
+        front++;  // Just move the front pointer
 
-    else {
-        cout << "\n" << queue[front++] << " deleted";
-        for (int i = front; i < rear; i++) {
-            queue[i - front] = queue[i];
+        // Reset when queue becomes empty
+        if (front == rear) {
+            front = 0;
+            rear = 0;
         }
-        rear = rear - front;
-        front = 0;
     }
 }
 
 void show() {
+    if (front == rear) {
+        cout << "\nQueue is empty!";
+        return;
+    }
     for (int i = front; i < rear; i++) {
         cout << queue[i] << "\t";
     }
@@ -37,19 +41,30 @@ void show() {
 int main() {
     int ch, x;
     do {
-        cout << "\n1. Enque";
-        cout << "\n2. Deque";
+        cout << "\n\n1. Enqueue";
+        cout << "\n2. Dequeue";
         cout << "\n3. Print";
-        cout << "\nEnter Your Choice : ";
+        cout << "\n0. Exit";
+        cout << "\nEnter Your Choice: ";
         cin >> ch;
-        if (ch == 1) {
-            cout << "\nInsert : ";
-            cin >> x;
-            Enque(x);
-        } else if (ch == 2) {
-            Deque();
-        } else if (ch == 3) {
-            show();
+
+        switch (ch) {
+            case 1:
+                cout << "\nInsert: ";
+                cin >> x;
+                Enque(x);
+                break;
+            case 2:
+                Deque();
+                break;
+            case 3:
+                show();
+                break;
+            case 0:
+                cout << "\nExiting...";
+                break;
+            default:
+                cout << "\nInvalid choice!";
         }
     } while (ch != 0);
 
