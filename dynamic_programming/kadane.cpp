@@ -44,7 +44,7 @@ int maxSubArray(const std::array<int, N> &n) {
         0;  // declaring a variable named as curr_sum and initialized it to 0
     int max_sum = INT_MIN;  // Initialized max_sum to INT_MIN
     for (int i : n) {  // for loop to iterate over the elements of the array
-        curr_sum += n[i];
+        curr_sum += i;
         max_sum = std::max(max_sum, curr_sum);  // getting the maximum value
         curr_sum = std::max(curr_sum, 0);  // updating the value of curr_sum
     }
