@@ -17,6 +17,18 @@
  * @author [Tirth Patel](https://github.com/Tirth9978)
  */
 
+
+/*
+
+Explanation  : 
+--> LL << k shifts 1 left by k positions, giving us 2 ^ k
+--> Subtracting 1 from it gives a binary number with the last k bits set.
+--> Bitwise AND with n checks if the last k bits of n are zero.
+
+*/
+
+
+
 #include <cassert>  /// for assert
 #include <cstdint>  /// for int64_t
 #include <iostream> /// for IO operations
@@ -68,7 +80,7 @@ static void test()
     assert(bit_manipulation::isDivisibleBy2PowerK((1LL << 60) - 1, 59) == false); // Not divisible by 2^59
     assert(bit_manipulation::isDivisibleBy2PowerK(1LL << 40, 35) == true);        // 2^40 % 2^35 = 0
     assert(bit_manipulation::isDivisibleBy2PowerK(1LL << 62, 62) == true);        // 2^62 % 2^62 = 0
-    // assert(bit_manipulation::isDivisibleBy2PowerK((1LL << 63) - 1, 63) == false); // Largest 64-bit integer - 1, not divisible by 2^63
+   
 
     // Edge Cases for Small Numbers
     assert(bit_manipulation::isDivisibleBy2PowerK(0, 5) == true);  // 0 is divisible by any power of 2
