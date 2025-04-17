@@ -124,7 +124,7 @@ double std_error(const std::vector<T> &input) {
  * @returns true if absolute difference of `f1` and `f2` is less than `epsilon`,
  * otherwise false
  */
-bool double_eq(double f1, double f2, double epsilon = 1e6) {
+bool double_eq(double f1, double f2, double epsilon = 1e-6) {
     return std::abs(f2 - f1) <= epsilon;
 }
 
@@ -136,7 +136,7 @@ static void test() {
     std::vector<int> distribution = {1, 2, 3, 4, 5, 9, 8, 7, 6, 3};
     assert(double_eq(math::mean(distribution), 4.8));
     assert(double_eq(math::geometric_mean(distribution), 4.015026617435));
-    assert(double_eq(math::harmonic_mean(distribution), 3.1623));
+    assert(double_eq(math::harmonic_mean(distribution), 3.16225));
     assert(double_eq(math::variance(distribution), 7.0666667));
     assert(double_eq(math::std_dev(distribution), 2.6583203));
     assert(double_eq(math::std_error(distribution), 0.797496));
