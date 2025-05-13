@@ -6,9 +6,9 @@
  * \warning This program is a poor implementation and does not utilize any of
  * the C++ STL features.
  */
-#include <algorithm>  /// for std::max
-#include <iostream>   /// for std::cout
-#include <queue>      /// for std::queue
+#include <algorithm>  // for std::max
+#include <iostream>   // for std::cout
+#include <queue>      // for std::queue
 
 using node = struct node {
     int data;
