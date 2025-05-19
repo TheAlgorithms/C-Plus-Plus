@@ -18,6 +18,7 @@
 
 #include <cassert>   /// for assert
 #include <cmath>     /// for log calculation
+#include <cstdint>
 #include <iostream>  /// for IO operations
 
 /**
