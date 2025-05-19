@@ -4,7 +4,7 @@ var searchData=
   ['batch_5fpredict_1',['batch_predict',['../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#a88bf9023ab3d4cdb61cf707c7cdfc86b',1,'machine_learning::neural_network::NeuralNetwork']]],
   ['bayes_5fagivenb_2',['bayes_AgivenB',['../d5/d67/bayes__theorem_8cpp.html#a655bfe51252468d232dc639a340656ba',1,'bayes_theorem.cpp']]],
   ['bayes_5fbgivena_3',['bayes_BgivenA',['../d5/d67/bayes__theorem_8cpp.html#abb4f22dc05887c2259fdfc55c687598f',1,'bayes_theorem.cpp']]],
-  ['bfs_4',['bfs',['../d8/d69/classgraph_1_1_h_k_graph.html#a7491add14d9fc04f679114ca6d6f0f93',1,'graph::HKGraph']]],
+  ['bfs_4',['bfs',['../d8/d69/classgraph_1_1_h_k_graph.html#a7491add14d9fc04f679114ca6d6f0f93',1,'graph::HKGraph::bfs()'],['../df/dee/class_h_k_graph.html#a7491add14d9fc04f679114ca6d6f0f93',1,'HKGraph::bfs()']]],
   ['bidijkstra_5',['Bidijkstra',['../d7/d07/bidirectional__dijkstra_8cpp.html#a1b2df3d52a403ad46523ab90d3a723c1',1,'graph::bidirectional_dijkstra']]],
   ['binary_5fs_6',['binary_s',['../d8/d8a/exponential__search_8cpp.html#ab06cedad209456eae95d37b7cd66acae',1,'exponential_search.cpp']]],
   ['binary_5fsearch_7',['binary_search',['../d5/d91/namespacesorting.html#a034d8b276518a902962e87d3158b64fd',1,'sorting']]],
@@ -25,7 +25,7 @@ var searchData=
   ['boruvkas_22',['boruvkas',['../d4/d6c/boruvkas__minimum__spanning__tree_8cpp.html#a94c615fc66b72e0adbcbcb99aabb1a59',1,'greedy_algorithms::boruvkas_minimum_spanning_tree']]],
   ['bottom_23',['bottom',['../d2/dc8/classdata__structures_1_1_stack.html#a2ac469fcc2229d273450e429139d90e6',1,'data_structures::Stack']]],
   ['breadth_5ffirst_5fsearch_24',['breadth_first_search',['../dc/d61/classgraph_1_1_graph.html#a3755ec9e6a842238c7f4aac10b661981',1,'graph::Graph']]],
-  ['brute_5fforce_25',['brute_force',['../d9/d03/namespacestring__search.html#aeb2cd81064717aedd62bfb096b1a73d8',1,'string_search']]],
+  ['brute_5fforce_25',['brute_force',['../d9/d03/namespacestring__search.html#aeb2cd81064717aedd62bfb096b1a73d8',1,'string_search::brute_force()'],['../d3/d7d/brute__force__string__searching_8cpp.html#aeb2cd81064717aedd62bfb096b1a73d8',1,'brute_force():&#160;brute_force_string_searching.cpp']]],
   ['bst_5fnode_26',['bst_node',['../dd/db6/structbinary__search__tree_1_1bst__node.html#a51dd9bd6dd32bce3b74dd64557306778',1,'binary_search_tree::bst_node']]],
   ['bubble_5fsort_27',['bubble_sort',['../d8/d13/bubble__sort_8cpp.html#af3b12930a83915712461d53fe9659686',1,'sorting::bubble_sort']]],
   ['build_28',['build',['../d1/d9e/prefix__sum__array_8cpp.html#ab36151479ad37d53ef9fcb60a274b1d9',1,'range_queries::prefix_sum_array']]]

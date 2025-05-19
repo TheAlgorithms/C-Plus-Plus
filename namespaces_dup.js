@@ -184,14 +184,7 @@ var namespaces_dup =
     [ "subset_sum", "dc/d3a/namespacesubset__sum.html", null ],
     [ "Subsets", "de/d95/namespace_subsets.html", null ],
     [ "sudoku_solver", "d8/d9f/namespacesudoku__solver.html", null ],
-    [ "tests", "d9/df4/namespacetests.html", [
-      [ "test1", "d9/df4/namespacetests.html#a167c24bd817469ae47358d12e034f2d5", null ],
-      [ "test2", "d9/df4/namespacetests.html#abdd77344d4af8fd56d14a5cabbf2f669", null ],
-      [ "test3", "d9/df4/namespacetests.html#aa515639572647508b94986489aab6d76", null ],
-      [ "test4", "d9/df4/namespacetests.html#a2b9769e44683dcb67fe1083ad91e134d", null ],
-      [ "test5", "d9/df4/namespacetests.html#af7b81d7a1534216af6a36a80135beb86", null ],
-      [ "test6", "d9/df4/namespacetests.html#aacafde185abd8670abee51157f273dc2", null ]
-    ] ],
+    [ "tests", "d9/df4/namespacetests.html", "d9/df4/namespacetests" ],
     [ "topological_sort", "d8/d76/namespacetopological__sort.html", null ],
     [ "travellingSalesman_bitmanipulation", "d7/d3f/namespacetravelling_salesman__bitmanipulation.html", null ],
     [ "tree_234", "d6/dab/namespacetree__234.html", null ],

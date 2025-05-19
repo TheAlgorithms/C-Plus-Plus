@@ -1,17 +1,16 @@
 <map id="others::Cache::LFUCache&lt; K, V &gt;" name="others::Cache::LFUCache&lt; K, V &gt;">
-<area shape="rect" id="Node000001" title="LFUCache." alt="" coords="949,77,1123,118"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="668,17,829,87"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="845,64,949,81,948,86,844,70"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,22,44,47"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="59,21,67,20,97,20,326,18,427,19,556,25,668,37,667,43,555,31,427,24,326,23,97,25,68,25,60,27"/>
-<area shape="rect" id="Node000005" href="$de/d21/classothers_1_1_cache_1_1_d___node.html" title=" " alt="" coords="121,48,280,88"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="59,38,121,50,120,55,58,43"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="402,40,555,96"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="571,60,667,54,668,59,571,65"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="296,65,402,65,402,71,296,71"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="402,119,555,190"/>
-<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="276,91,305,101,402,130,401,135,303,106,274,96"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="660,112,837,197"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="851,131,948,112,949,117,853,137"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="571,152,660,152,660,157,571,157"/>
+<area shape="rect" id="Node000001" title="LFUCache." alt="" coords="850,112,1025,153"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="562,39,724,125"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="740,96,850,115,849,120,739,101"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="346,5,384,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="400,23,563,61,562,66,399,29"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="288,55,442,126"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="457,85,562,82,562,87,457,90"/>
+<area shape="rect" id="Node000005" href="$de/d21/classothers_1_1_cache_1_1_d___node.html" title=" " alt="" coords="5,124,165,165"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="179,124,287,102,288,108,180,129"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="287,149,443,250"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="181,161,287,182,286,187,180,166"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="548,149,738,250"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="753,172,850,150,851,155,754,177"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="458,197,548,197,548,202,458,202"/>
 </map>

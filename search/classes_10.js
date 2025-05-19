@@ -10,6 +10,6 @@ var searchData=
   ['stack_7',['Stack',['../d2/dc8/classdata__structures_1_1_stack.html',1,'data_structures::Stack&lt; T &gt;'],['../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html',1,'data_structures::stack_using_queue::Stack'],['../d5/d8a/classothers_1_1postfix__expression_1_1_stack.html',1,'others::postfix_expression::Stack']]],
   ['stack_8',['stack',['../d1/dc2/classstack.html',1,'']]],
   ['stack_5flinkedlist_9',['stack_linkedList',['../d2/dc4/classstack__linked_list.html',1,'']]],
-  ['stats_5fcomputer1_10',['stats_computer1',['../d7/d7c/classstatistics_1_1stats__computer1.html',1,'statistics']]],
-  ['stats_5fcomputer2_11',['stats_computer2',['../d8/dab/classstatistics_1_1stats__computer2.html',1,'statistics']]]
+  ['stats_5fcomputer1_10',['stats_computer1',['../d7/d7c/classstatistics_1_1stats__computer1.html',1,'statistics::stats_computer1&lt; T &gt;'],['../d2/d0f/classstats__computer1.html',1,'stats_computer1&lt; T &gt;']]],
+  ['stats_5fcomputer2_11',['stats_computer2',['../d8/dab/classstatistics_1_1stats__computer2.html',1,'statistics::stats_computer2&lt; T &gt;'],['../dc/d02/classstats__computer2.html',1,'stats_computer2&lt; T &gt;']]]
 ];

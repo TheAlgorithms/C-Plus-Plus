@@ -189,6 +189,11 @@ var annotated_dup =
         [ "pattern", "dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html", "dd/d5a/structstrings_1_1boyer__moore_1_1pattern" ]
       ] ]
     ] ],
+    [ "tests", "d9/df4/namespacetests.html", [
+      [ "CircularLinkedList", "dc/d53/classtests_1_1_circular_linked_list.html", "dc/d53/classtests_1_1_circular_linked_list" ],
+      [ "Node", "d6/d7c/structtests_1_1_node.html", "d6/d7c/structtests_1_1_node" ]
+    ] ],
+    [ "adaline", "d8/df2/classadaline.html", "d8/df2/classadaline" ],
     [ "binary_search_tree", "d9/dde/classbinary__search__tree.html", "d9/dde/classbinary__search__tree" ],
     [ "Btree", "d9/d90/struct_btree.html", null ],
     [ "catalan_numbers", "dc/d1f/classcatalan__numbers.html", "dc/d1f/classcatalan__numbers" ],
@@ -201,9 +206,11 @@ var annotated_dup =
     [ "dsu", "dd/d1f/classdsu.html", "dd/d1f/classdsu" ],
     [ "EasterYearMonthDay", "d1/df6/class_easter_year_month_day.html", "d1/df6/class_easter_year_month_day" ],
     [ "Edge", "d7/d77/class_edge.html", "d7/d77/class_edge" ],
+    [ "Entry", "dd/d3b/struct_entry.html", "dd/d3b/struct_entry" ],
     [ "FCFS", "dd/dca/class_f_c_f_s.html", "dd/dca/class_f_c_f_s" ],
     [ "Graph", "da/d9a/class_graph.html", "da/d9a/class_graph" ],
     [ "hash_chain", "dd/d1c/classhash__chain.html", "dd/d1c/classhash__chain" ],
+    [ "HKGraph", "df/dee/class_h_k_graph.html", "df/dee/class_h_k_graph" ],
     [ "Item", "db/d66/struct_item.html", null ],
     [ "large_number", "db/d82/classlarge__number.html", "db/d82/classlarge__number" ],
     [ "linkedlist", "d0/dff/structlinkedlist.html", null ],
@@ -216,6 +223,7 @@ var annotated_dup =
     [ "Node", "db/d8b/struct_node.html", null ],
     [ "node", "d5/da1/structnode.html", null ],
     [ "Point", "d8/dc8/struct_point.html", "d8/dc8/struct_point" ],
+    [ "priority_queue", "d1/d1b/classpriority__queue.html", "d1/d1b/classpriority__queue" ],
     [ "query", "dd/d1b/structquery.html", null ],
     [ "Queue", "dc/db5/struct_queue.html", null ],
     [ "queue", "db/da9/classqueue.html", "db/da9/classqueue" ],
@@ -225,10 +233,14 @@ var annotated_dup =
     [ "Solution", "dd/d4f/class_solution.html", null ],
     [ "stack", "d1/dc2/classstack.html", "d1/dc2/classstack" ],
     [ "stack_linkedList", "d2/dc4/classstack__linked_list.html", null ],
+    [ "stats_computer1", "d2/d0f/classstats__computer1.html", "d2/d0f/classstats__computer1" ],
+    [ "stats_computer2", "dc/d02/classstats__computer2.html", "dc/d02/classstats__computer2" ],
     [ "TestCase", "da/d86/struct_test_case.html", null ],
     [ "TestCases", "d5/d58/class_test_cases.html", "d5/d58/class_test_cases" ],
     [ "tower", "d2/d2c/structtower.html", "d2/d2c/structtower" ],
     [ "Trie", "dd/d2f/class_trie.html", "dd/d2f/class_trie" ],
     [ "uint128_t", "db/d9a/classuint128__t.html", "db/d9a/classuint128__t" ],
-    [ "uint256_t", "d1/d83/classuint256__t.html", "d1/d83/classuint256__t" ]
+    [ "uint256_t", "d1/d83/classuint256__t.html", "d1/d83/classuint256__t" ],
+    [ "unordered_set", "d3/d6d/classunordered__set.html", "d3/d6d/classunordered__set" ],
+    [ "vector", "d7/dfc/classvector.html", "d7/dfc/classvector" ]
 ];

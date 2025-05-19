@@ -1,11 +1,11 @@
 <map id="others::Cache::LRUCache&lt; K, V &gt;" name="others::Cache::LRUCache&lt; K, V &gt;">
-<area shape="rect" id="Node000001" title="LRUCache." alt="" coords="637,30,814,71"/>
-<area shape="rect" id="Node000002" href="$de/d21/classothers_1_1_cache_1_1_d___node.html" title=" " alt="" coords="121,11,280,52"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="295,30,361,32,637,43,637,49,361,37,295,36"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="385,61,525,117"/>
-<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="296,50,385,71,384,76,295,56"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,58,44,83"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="58,61,120,47,121,52,59,66"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="60,71,121,76,385,85,385,91,121,81,59,77"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="541,74,637,60,637,66,541,80"/>
+<area shape="rect" id="Node000001" title="LRUCache." alt="" coords="541,56,717,96"/>
+<area shape="rect" id="Node000002" href="$de/d21/classothers_1_1_cache_1_1_d___node.html" title=" " alt="" coords="270,5,429,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="445,45,541,60,540,65,444,50"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="273,84,426,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="441,103,540,87,541,92,442,108"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="66,78,104,103"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="120,92,273,109,272,114,120,97"/>
+<area shape="rect" id="Node000005" href="$de/d21/classothers_1_1_cache_1_1_d___node.html" title=" " alt="" coords="5,128,165,168"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="180,139,245,132,272,129,272,134,246,137,180,144"/>
 </map>

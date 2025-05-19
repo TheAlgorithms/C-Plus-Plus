@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['_7ecircularlinkedlist_0',['~CircularLinkedList',['../d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html#a46195fcf11b636064c7172cb74b55dd0',1,'operations_on_datastructures::circular_linked_list::CircularLinkedList']]],
+  ['_7ecircularlinkedlist_0',['~CircularLinkedList',['../d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html#a46195fcf11b636064c7172cb74b55dd0',1,'operations_on_datastructures::circular_linked_list::CircularLinkedList::~CircularLinkedList()'],['../dc/d53/classtests_1_1_circular_linked_list.html#a46195fcf11b636064c7172cb74b55dd0',1,'tests::CircularLinkedList::~CircularLinkedList()']]],
   ['_7edenselayer_1',['~DenseLayer',['../dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#ac9cda9453c4a0caf5bae7f9213b019a0',1,'machine_learning::neural_network::layers::DenseLayer']]],
   ['_7eeightpuzzle_2',['~EightPuzzle',['../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a194c2973b51a5467fc17064a4ea4e6f9',1,'machine_learning::aystar_search::EightPuzzle']]],
   ['_7einfo_3',['~Info',['../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#aa816af5a64b37c86be8acda89fdefba2',1,'machine_learning::aystar_search::AyStarSearch::Info']]],

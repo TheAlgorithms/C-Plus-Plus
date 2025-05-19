@@ -18,9 +18,9 @@ var searchData=
   ['heapsort_15',['heapSort',['../d5/d4c/group__sorting.html#ga29d28b140174dbdde7c9f5157758435f',1,'heap_sort.cpp']]],
   ['height_16',['height',['../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83',1,'avltree.cpp']]],
   ['hemi_5fsphere_5fsurface_5farea_17',['hemi_sphere_surface_area',['../dd/d47/namespacemath.html#a3277e65a8f380e7632791975bfba0efb',1,'math']]],
-  ['hkgraph_18',['HKGraph',['../d8/d69/classgraph_1_1_h_k_graph.html#af02b0c83911070ac6d95fc9905e58aa9',1,'graph::HKGraph::HKGraph()'],['../d8/d69/classgraph_1_1_h_k_graph.html#a0da5aa674d3b3e54a38251ee60d7cd64',1,'graph::HKGraph::HKGraph(int m, int n)']]],
+  ['hkgraph_18',['HKGraph',['../d8/d69/classgraph_1_1_h_k_graph.html#af02b0c83911070ac6d95fc9905e58aa9',1,'graph::HKGraph::HKGraph()'],['../d8/d69/classgraph_1_1_h_k_graph.html#a0da5aa674d3b3e54a38251ee60d7cd64',1,'graph::HKGraph::HKGraph(int m, int n)'],['../df/dee/class_h_k_graph.html#af02b0c83911070ac6d95fc9905e58aa9',1,'HKGraph::HKGraph()'],['../df/dee/class_h_k_graph.html#a0da5aa674d3b3e54a38251ee60d7cd64',1,'HKGraph::HKGraph(int m, int n)']]],
   ['hld_19',['HLD',['../d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a6e486767434e44076c1ac374a22da726',1,'range_queries::heavy_light_decomposition::HLD']]],
-  ['hopcroftkarpalgorithm_20',['hopcroftKarpAlgorithm',['../d8/d69/classgraph_1_1_h_k_graph.html#a9dbda80d02bdc26c3e8ff7330c9be75d',1,'graph::HKGraph']]],
+  ['hopcroftkarpalgorithm_20',['hopcroftKarpAlgorithm',['../d8/d69/classgraph_1_1_h_k_graph.html#a9dbda80d02bdc26c3e8ff7330c9be75d',1,'graph::HKGraph::hopcroftKarpAlgorithm()'],['../df/dee/class_h_k_graph.html#a9dbda80d02bdc26c3e8ff7330c9be75d',1,'HKGraph::hopcroftKarpAlgorithm()']]],
   ['horizontal_5frange_21',['horizontal_range',['../d9/d29/ground__to__ground__projectile__motion_8cpp.html#a10362eb607d7882bac3a0688504b00ff',1,'physics::ground_to_ground_projectile_motion']]],
   ['horspool_22',['horspool',['../d3/dfe/horspool_8cpp.html#a9884bca75ce39c116697ea2574adb37d',1,'strings::horspool']]],
   ['houserobber_23',['houseRobber',['../d6/d26/house__robber_8cpp.html#a1e497c3e3f169afe5baaae6a5d40cbc8',1,'dynamic_programming::house_robber']]]

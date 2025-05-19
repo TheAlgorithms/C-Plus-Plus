@@ -4,7 +4,7 @@ var searchData=
   ['wave_5fsort_1',['wave_sort',['../d9/d21/namespacewave__sort.html',1,'']]],
   ['wave_5fsort_2ecpp_2',['wave_sort.cpp',['../db/d3f/wave__sort_8cpp.html',1,'']]],
   ['wavesort_3',['waveSort',['../db/d3f/wave__sort_8cpp.html#a7d4f243b9dc13ace4ef77e30dbc56f12',1,'sorting::wave_sort']]],
-  ['weights_4',['weights',['../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492',1,'machine_learning::adaline']]],
+  ['weights_4',['weights',['../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492',1,'machine_learning::adaline::weights'],['../d8/df2/classadaline.html#a4cd8fe438032fedaa66f93bfd66f5492',1,'adaline::weights']]],
   ['white_5',['WHITE',['../da/d4b/depth__first__search__with__stack_8cpp.html#afb80b42b42381658a12a57a975ecd0c7',1,'depth_first_search_with_stack.cpp']]],
   ['wiggle_5fsort_6',['wiggle_sort',['../d0/d52/namespacewiggle__sort.html',1,'']]],
   ['wiggle_5fsort_2ecpp_7',['wiggle_sort.cpp',['../d1/dcc/wiggle__sort_8cpp.html',1,'']]],

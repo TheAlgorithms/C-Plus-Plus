@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['rabin_5fkarp_0',['rabin_karp',['../d9/d03/namespacestring__search.html#a21c673d56cbf67b1d2ee4d869185b7d9',1,'string_search']]],
+  ['rabin_5fkarp_0',['rabin_karp',['../d9/d03/namespacestring__search.html#a21c673d56cbf67b1d2ee4d869185b7d9',1,'string_search::rabin_karp()'],['../d6/dce/rabin__karp_8cpp.html#a21c673d56cbf67b1d2ee4d869185b7d9',1,'rabin_karp():&#160;rabin_karp.cpp']]],
   ['radix_1',['radix',['../d8/d61/radix__sort2_8cpp.html#ae0cfd94fa3765b53d4ec7893ffaee5f8',1,'sorting::radix_sort']]],
   ['rand_5frange_2',['rand_range',['../d6/d26/classciphers_1_1_hill_cipher.html#a629be41c1ab78850963e4ce14e1d11d9',1,'ciphers::HillCipher::rand_range(T1 a, T1 b)'],['../d6/d26/classciphers_1_1_hill_cipher.html#a716d0313141499d16f57c0c107f04395',1,'ciphers::HillCipher::rand_range(matrix&lt; T2 &gt; *M, T1 a, T1 b)']]],
   ['random_5ftests_3',['random_tests',['../de/d0d/fibonacci__search_8cpp.html#a2aa09bef74ee063c1331de0883af4f4f',1,'fibonacci_search.cpp']]],
@@ -31,7 +31,7 @@ var searchData=
   ['reverse_5fbinary_28',['reverse_binary',['../d6/d42/miller__rabin_8cpp.html#a091662a787d5ad4866713021f580fddb',1,'miller_rabin.cpp']]],
   ['reverse_5fstr_29',['reverse_str',['../da/d0d/longest__common__string_8cpp.html#acb03dbbcee6d607db471021168be8541',1,'longest_common_string.cpp']]],
   ['reversebinarytree_30',['reverseBinaryTree',['../de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#af6f974381f523fdb981fc2d843bbf4a1',1,'operations_on_datastructures::reverse_binary_tree::BinaryTree']]],
-  ['reverselist_31',['reverseList',['../d1/def/classdata__structures_1_1linked__list_1_1list.html#ac466ec086c0835822467bd3d8f3ab90e',1,'data_structures::linked_list::list']]],
+  ['reverselist_31',['reverseList',['../d1/def/classdata__structures_1_1linked__list_1_1list.html#a8b20ca89a0346c8d4193936481528c70',1,'data_structures::linked_list::list']]],
   ['right_32',['right',['../d2/d05/class_min_heap.html#ac760b85cf90265b8d674b942a43fb70e',1,'MinHeap']]],
   ['right_5frotate_33',['right_rotate',['../d4/d08/sha256_8cpp.html#adbcd504103c342a4da718f8fce6ff06c',1,'hashing::sha256']]],
   ['rightrotate_34',['RightRotate',['../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae68f8e62be02657c1287def6b38d7cc9',1,'data_structures::tree_234::Tree234']]],

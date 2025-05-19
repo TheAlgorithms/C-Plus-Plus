@@ -1,7 +1,7 @@
 var searchData=
 [
   ['qr_5falgorithm_0',['qr_algorithm',['../d2/d3b/namespaceqr__algorithm.html',1,'']]],
-  ['qr_5fdecompose_1',['qr_decompose',['../d2/d3b/namespaceqr__algorithm.html#a73ce637634fc49e1d10d190eb388ebf1',1,'qr_algorithm']]],
+  ['qr_5fdecompose_1',['qr_decompose',['../d2/d3b/namespaceqr__algorithm.html#a73ce637634fc49e1d10d190eb388ebf1',1,'qr_algorithm::qr_decompose()'],['../d3/d24/qr__decomposition_8cpp.html#a73ce637634fc49e1d10d190eb388ebf1',1,'qr_decompose(const std::valarray&lt; std::valarray&lt; T &gt; &gt; &amp;A, std::valarray&lt; std::valarray&lt; T &gt; &gt; *Q, std::valarray&lt; std::valarray&lt; T &gt; &gt; *R):&#160;qr_decompose.h']]],
   ['qr_5fdecompose_2eh_2',['qr_decompose.h',['../d4/d68/qr__decompose_8h.html',1,'']]],
   ['qr_5fdecomposition_2ecpp_3',['qr_decomposition.cpp',['../d3/d24/qr__decomposition_8cpp.html',1,'']]],
   ['qr_5feigen_5fvalues_2ecpp_4',['qr_eigen_values.cpp',['../de/d75/qr__eigen__values_8cpp.html',1,'']]],

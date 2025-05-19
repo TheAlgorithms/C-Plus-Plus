@@ -2,6 +2,9 @@ var fcfs__scheduling_8cpp =
 [
     [ "Compare< S, T, E >", "de/d4a/class_compare.html", "de/d4a/class_compare" ],
     [ "FCFS< S, T, E >", "dd/dca/class_f_c_f_s.html", "dd/dca/class_f_c_f_s" ],
+    [ "priority_queue< T >", "d1/d1b/classpriority__queue.html", "d1/d1b/classpriority__queue" ],
+    [ "unordered_set< K >", "d3/d6d/classunordered__set.html", "d3/d6d/classunordered__set" ],
+    [ "vector< T >", "d7/dfc/classvector.html", "d7/dfc/classvector" ],
     [ "get_final_status", "df/d47/fcfs__scheduling_8cpp.html#a8f2b90cb64d63a7080965e66a05ccf86", null ],
     [ "main", "df/d47/fcfs__scheduling_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ],
     [ "sortcol", "df/d47/fcfs__scheduling_8cpp.html#a18920aa331faf4476b251c8cdb2c2bec", null ],
