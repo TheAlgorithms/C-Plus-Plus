@@ -85,6 +85,22 @@ static void test() {
     // matching_indexes2 gets the indexes where pattern2 exists in text2
     std::vector<uint64_t> matching_indexes2 = find_pat_in_text(pattern2, text2);
     assert((matching_indexes2 == std::vector<uint64_t>{}));
+
+    // corner case - empty text
+    std::string text3 = "";
+    std::string pattern3 = "abc";
+
+    // matching_indexes3 gets the indexes where pattern3 exists in text3
+    std::vector<uint64_t> matching_indexes3 = find_pat_in_text(pattern3, text3);
+    assert((matching_indexes3 == std::vector<uint64_t>{}));
+
+    // corner case - empty pattern
+    std::string text4 = "redsand";
+    std::string pattern4 = "";
+
+    // matching_indexes4 gets the indexes where pattern4 exists in text4
+    std::vector<uint64_t> matching_indexes4 = find_pat_in_text(pattern4, text4);
+    assert((matching_indexes4 == std::vector<uint64_t>{0, 1, 2, 3, 4, 5, 6}));
 }
 
 /**
