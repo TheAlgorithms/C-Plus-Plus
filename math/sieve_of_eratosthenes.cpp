@@ -12,6 +12,7 @@
  * @see primes_up_to_billion.cpp prime_numbers.cpp
  */
 
+#include <cstdint>
 #include <cassert>   /// for assert
 #include <iostream>  /// for IO operations
 #include <vector>    /// for std::vector
@@ -109,7 +110,6 @@ static void tests() {
         false};
     assert(is_prime_3 == expected_3);
 
-    std::cout << "All tests have passed successfully!\n";
 }
 
 /**
