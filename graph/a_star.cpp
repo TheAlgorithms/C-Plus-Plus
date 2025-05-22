@@ -22,10 +22,14 @@
  * @namespace graph
  * @brief Graph Algorithms
  */
-
 namespace graph {
 
 class Node {
+ private:
+    size_t _idx;               // A unique identifier for a given graph
+    std::pair<int, int> _pos;  // Coordinates denoting the location of the node
+    std::vector<size_t> _connections;  // A list of indexes of connected nodes
+
  public:
     Node(size_t idx, std::pair<int, int> pos, std::vector<size_t> conn = {}) {
         this->_idx = idx;
@@ -41,25 +45,43 @@ class Node {
     size_t get_idx() { return this->_idx; }
     std::vector<size_t> get_connections() { return this->_connections; }
     std::pair<int, int> get_pos() { return this->_pos; }
-
- private:
-    size_t _idx;
-    std::pair<int, int> _pos;
-    std::vector<size_t> _connections;
 };
 
+/**
+ * @brief Calculates the euclidean distance between the current node and the
+ * goal
+ * @param curr_pos a pair containing the coordinates (x,y) of the current node
+ * @param end_pos a pair containing the coordinates (x,y) of the goal node
+ * @returns the euclidean distance between the current node and the goal
+ */
 double heuristic_cost(std::pair<int, int> curr_pos,
                       std::pair<int, int> end_pos) {
     return std::hypot(curr_pos.first - end_pos.first,
                       curr_pos.second - end_pos.second);
 }
 
+/**
+ * @brief Calculates the euclidean distance between the current node and the
+ * next node
+ * @param curr_pos a pair containing the coordinates (x,y) of the current node
+ * @param end_pos a pair containing the coordinates (x,y) of the next node
+ * @returns the euclidean distance between the current node and the next node
+ */
 double traverse_cost(std::pair<int, int> curr_pos,
                      std::pair<int, int> next_pos) {
     return std::hypot(curr_pos.first - next_pos.first,
                       curr_pos.second - next_pos.second);
 }
 
+/**
+ * @brief Calculates the best route from a given start and end point through a
+ * weighted graph.
+ * @param graph a graph of nodes with weighted connections
+ * @param start_idx the index of the node to start the search from
+ * @param end_idx the index of the goal node
+ * @returns the distance, traversing through the graph, between the start and
+ * end nodes. If the end node is not reachable, will return -1.
+ */
 double a_star(std::vector<Node> graph, size_t start_idx, size_t finish_idx) {
     if (start_idx == finish_idx) {
         return 0.0;
@@ -111,8 +133,11 @@ double a_star(std::vector<Node> graph, size_t start_idx, size_t finish_idx) {
 
 }  // namespace graph
 
-bool double_eq(double a, double b) { return std::abs(a - b) < 1e-4; }
-
+/**
+ * @brief Constructs an 8-node graph and tests different start and end points to
+ * verify the algorithm works as expected
+ * @returns void
+ */
 void test() {
     std::vector<graph::Node> graph;
     graph::Node n0(0, {0, 0}, {1, 6}), n1(1, {5, 0}, {2}), n2(2, {5, 5}, {3}),
@@ -129,18 +154,23 @@ void test() {
     graph.push_back(n7);
 
     double shortest_dist = graph::a_star(graph, 0, 5);
+    constexpr double EPS = 1e-4;  // Accepable difference when compaing doubles
     std::cout << "Test 1:\n"
               << "  Shortest distance: " << shortest_dist << std::endl;
-    assert(double_eq(shortest_dist, 21.4142));
+    assert(std::abs(shortest_dist - 21.4142) < EPS);
 
     shortest_dist = graph::a_star(graph, 1, 1);
     std::cout << "Test 2:\n"
               << "  Shortest distance: " << shortest_dist << std::endl;
-    assert(double_eq(shortest_dist, 0.0));
+    assert(shortest_dist == 0.0);
     std::cout << "\nTest is working correctly\n";
 }
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
-    test();
+    test();  // run self-test implementations
     return 0;
 }
