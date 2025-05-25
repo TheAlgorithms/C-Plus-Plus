@@ -70,14 +70,19 @@ int median_of_medians(const std::vector<int>& A,  const int& idx) {
 		m.push_back(a[mid]);
 	}
 	int sz = int(m.size());
+
 	if(sz <= 5){
 		std::sort(m.begin(), m.end());
+		if (m.empty()) {
+			std::cerr << "Error: Median vector is empty.\n";
+			exit(1);
+		}
 		pivot = m[(sz- 1) / 2];
 	}
 	else{
-		pivot = median_of_medians(m, idx);
-	}
-	std::vector<int> low;
+        pivot = median_of_medians(m, m.size() / 2);
+    }
+    std::vector<int> low;
 	std::vector<int> high;
 	for(int i = 0; i < r; i++){
 		if(a[i] < pivot){
@@ -131,7 +136,11 @@ int main()
 	int n = 0;
 	std::cout << "Enter Size of Array: ";
 	std::cin >> n;
-	std::vector<int> a(n);
+    if (n <= 0) {
+        std::cerr << "Error: Array size must be a positive integer.\n";
+        return 1;
+    }
+    std::vector<int> a(n);
 	std::cout << "Enter Array: ";
 	for(int i = 0; i < n; i++){
 		std::cin >> a[i];
