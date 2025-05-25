@@ -367,8 +367,6 @@ std::vector<float> predict_OLS_regressor(std::vector<std::vector<T>> const &X,
 
 /** Self test checks */
 void ols_test() {
-    int F = 3, N = 5;
-
     /* test function = x^2 -5 */
     std::cout << "Test 1 (quadratic function)....";
     // create training data set with features = x, x^2, x^3

@@ -29,7 +29,7 @@ bool mycmp(query x, query y) {
 }
 
 int main() {
-    int n, t, i, j, k = 0;
+    int n, t, i;
     scanf("%d", &n);
     for (i = 0; i < n; i++) scanf("%d", &a[i]);
     bucket_size = ceil(sqrt(n));

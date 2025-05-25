@@ -379,7 +379,6 @@ class HillCipher {
         int mat_determinant = det_encrypt < 0 ? det_encrypt % L : det_encrypt;
 
         matrix<double> tmp_inverse = get_inverse(encrypt_key);
-        double d2 = determinant_lu(decrypt_key);
 
         // find co-prime factor for inversion
         int det_inv = -1;
