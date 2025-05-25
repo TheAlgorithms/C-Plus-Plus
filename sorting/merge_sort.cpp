@@ -2,8 +2,8 @@
  *  \addtogroup sorting Sorting Algorithms
  *  @{
  *  \file
- *  \brief [Merege Sort Algorithm
- *  (MEREGE SORT)](https://en.wikipedia.org/wiki/Merge_sort) implementation
+ *  \brief [Merge Sort Algorithm
+ *  (MERGE SORT)](https://en.wikipedia.org/wiki/Merge_sort) implementation
  *
  *  \author [Ayaan Khan](http://github.com/ayaankhan98)
  *
@@ -17,6 +17,7 @@
  *  In built-in sort function merge sort along with quick sort is used. 
  */
 #include <iostream>
+#include <vector>
 
 /**
  *
@@ -34,20 +35,18 @@
  * @param r - end index or right index of second half array
  */
 void merge(int *arr, int l, int m, int r) {
-    int i, j, k;
     int n1 = m - l + 1;
     int n2 = r - m;
 
-    int *L = new int[n1], *R = new int[n2];
+    std::vector<int> L(n1), R(n2);
 
-    for (i = 0; i < n1; i++) L[i] = arr[l + i];
-    for (j = 0; j < n2; j++) R[j] = arr[m + 1 + j];
+    for (int i = 0; i < n1; i++) L[i] = arr[l + i];
+    for (int j = 0; j < n2; j++) R[j] = arr[m + 1 + j];
 
-    i = 0;
-    j = 0;
-    k = l;
-    while (i < n1 || j < n2) {
-        if (j >= n2 || (i < n1 && L[i] <= R[j])) {
+    int i = 0, j = 0, k = l;
+
+    while (i < n1 && j < n2) {
+        if (L[i] <= R[j]) {
             arr[k] = L[i];
             i++;
         } else {
@@ -57,8 +56,17 @@ void merge(int *arr, int l, int m, int r) {
         k++;
     }
 
-    delete[] L;
-    delete[] R;
+    while (i < n1) {
+        arr[k] = L[i];
+        i++;
+        k++;
+    }
+
+    while (j < n2) {
+        arr[k] = R[j];
+        j++;
+        k++;
+    }
 }
 
 /**
@@ -92,15 +100,22 @@ void show(int *arr, int size) {
 /** Main function */
 int main() {
     int size;
-    std::cout << "Enter the number of elements : ";
+    std::cout << "Enter the number of elements: ";
     std::cin >> size;
+
+    if (size <= 0) {
+        std::cout << "Invalid size.\n";
+        return 1;
+    }
+
     int *arr = new int[size];
-    std::cout << "Enter the unsorted elements : ";
+    std::cout << "Enter the unsorted elements: ";
     for (int i = 0; i < size; ++i) {
         std::cin >> arr[i];
     }
+
     mergeSort(arr, 0, size - 1);
-    std::cout << "Sorted array : ";
+    std::cout << "Sorted array: ";
     show(arr, size);
     delete[] arr;
     return 0;
