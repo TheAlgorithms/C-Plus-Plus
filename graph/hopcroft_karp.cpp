@@ -254,7 +254,7 @@ using graph::HKGraph;
  */
 void tests(){
      // Sample test case 1
-	     int v1a = 3, v1b = 5, e1 = 2;  // vertices of left side, right side and edges
+	     int v1a = 3, v1b = 5;  // vertices of left side, right side and edges
 	     HKGraph g1(v1a, v1b); // execute the algorithm 
 
 	     g1.addEdge(0,1);
@@ -266,7 +266,7 @@ void tests(){
 	     assert(res1 == expected_res1); // assert check to ensure that the algorithm executed correctly for test 1
 	
      // Sample test case 2
-     	     int v2a = 4, v2b = 4, e2 = 6;  // vertices of left side, right side and edges
+     	     int v2a = 4, v2b = 4;  // vertices of left side, right side and edges
 	     HKGraph g2(v2a, v2b); // execute the algorithm 
 
              g2.addEdge(1,1);
@@ -282,7 +282,7 @@ void tests(){
 	     assert(res2 == expected_res2); // assert check to ensure that the algorithm executed correctly for test 2
 	
       // Sample test case 3
-     	     int v3a = 6, v3b = 6, e3 = 4;  // vertices of left side, right side and edges
+     	     int v3a = 6, v3b = 6;  // vertices of left side, right side and edges
 	     HKGraph g3(v3a, v3b); // execute the algorithm 
 
              g3.addEdge(0,1);
