@@ -12,7 +12,6 @@
 #include <iostream>
 #include <memory>
 #include <string>
-#include <vector>
 
 /** \namespace data_structures
  * \brief Data-structure algorithms
