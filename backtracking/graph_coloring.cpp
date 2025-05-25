@@ -20,7 +20,6 @@
 
 #include <array>     /// for std::array
 #include <iostream>  /// for IO operations
-#include <vector>    /// for std::vector
 
 /**
  * @namespace backtracking

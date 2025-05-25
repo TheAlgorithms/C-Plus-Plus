@@ -15,7 +15,6 @@
 #include <cassert>   /// for assert
 #include <cstring>   /// for string
 #include <iostream>  /// for IO operations
-#include <vector>    /// for std::vector
 
 /**
  * @namespace divide_and_conquer
