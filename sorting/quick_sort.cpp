@@ -54,7 +54,18 @@ namespace quick_sort {
  * @param low first point of the array (starting index)
  * @param high last point of the array (ending index)
  * @returns index of the smaller element
- */
+ *  
+ *  ### Time Complexity
+ *  best case, average Case: O(nlog(n))
+ *  Worst Case: O(n^2)  (Worst case occur when the partition 
+ *  is consistently unbalanced.)
+ 
+ *  ### Space Complexity
+ *  average Case: O(log(n))
+ *  Worst Case: O(n)  
+ *  It's space complexity is due to the recursive function calls and partitioning process. 
+ */ 
+
 template <typename T>
 int partition(std::vector<T> *arr, const int &low, const int &high) {
     T pivot = (*arr)[high];  // taking the last element as pivot

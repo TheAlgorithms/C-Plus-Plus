@@ -11,7 +11,10 @@
  *  Merge Sort is an efficient, general purpose, comparison
  *  based sorting algorithm.
  *  Merge Sort is a divide and conquer algorithm
- *
+ *  Time  Complexity: O(n log n) 
+ *  It is  same for all best case, worst case or average case 
+ *  Merge Sort is very efficient when for the small data. 
+ *  In built-in sort function merge sort along with quick sort is used. 
  */
 #include <iostream>
 #include <vector>
