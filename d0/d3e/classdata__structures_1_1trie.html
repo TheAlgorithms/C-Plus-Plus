@@ -173,7 +173,7 @@ Static Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a href="https://en.wikipedia.org/wiki/Trie" target="_blank">Trie</a> implementation for small-case English alphabets <code>a-z</code> </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html#l00025">25</a> of file <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html">trie_tree.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html">trie_tree.cpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aab373beb3f618b90922528c68797d988" name="aab373beb3f618b90922528c68797d988"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab373beb3f618b90922528c68797d988">&#9670;&#160;</a></span>char_to_int()</h2>
@@ -207,19 +207,19 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>unsigned integer index </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html">trie_tree.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   38</span>                                              {</div>
-<div class="line"><span class="lineno">   39</span>        <span class="keywordflow">if</span> (ch &gt;= <span class="charliteral">&#39;A&#39;</span> &amp;&amp; ch &lt;= <span class="charliteral">&#39;Z&#39;</span>) {</div>
-<div class="line"><span class="lineno">   40</span>            <span class="keywordflow">return</span> ch - <span class="charliteral">&#39;A&#39;</span>;</div>
-<div class="line"><span class="lineno">   41</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ch &gt;= <span class="charliteral">&#39;a&#39;</span> &amp;&amp; ch &lt;= <span class="charliteral">&#39;z&#39;</span>) {</div>
-<div class="line"><span class="lineno">   42</span>            <span class="keywordflow">return</span> ch - <span class="charliteral">&#39;a&#39;</span> + <a class="code hl_variable" href="#a4bfac4be6ed1a34c7159eddb42469191">NUM_CHARS</a>;</div>
-<div class="line"><span class="lineno">   43</span>        }</div>
-<div class="line"><span class="lineno">   44</span> </div>
-<div class="line"><span class="lineno">   45</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Invalid character present. Exiting...&quot;</span>;</div>
-<div class="line"><span class="lineno">   46</span>        std::exit(EXIT_FAILURE);</div>
-<div class="line"><span class="lineno">   47</span>        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   48</span>    }</div>
-<div class="ttc" id="aclassdata__structures_1_1trie_html_a4bfac4be6ed1a34c7159eddb42469191"><div class="ttname"><a href="#a4bfac4be6ed1a34c7159eddb42469191">data_structures::trie::NUM_CHARS</a></div><div class="ttdeci">static constexpr uint8_t NUM_CHARS</div><div class="ttdoc">Number of alphabets.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d83/trie__tree_8cpp_source.html#l00027">trie_tree.cpp:27</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html#l00037">37</a> of file <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html">trie_tree.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>                                              {</div>
+<div class="line"><span class="lineno">   38</span>        <span class="keywordflow">if</span> (ch &gt;= <span class="charliteral">&#39;A&#39;</span> &amp;&amp; ch &lt;= <span class="charliteral">&#39;Z&#39;</span>) {</div>
+<div class="line"><span class="lineno">   39</span>            <span class="keywordflow">return</span> ch - <span class="charliteral">&#39;A&#39;</span>;</div>
+<div class="line"><span class="lineno">   40</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ch &gt;= <span class="charliteral">&#39;a&#39;</span> &amp;&amp; ch &lt;= <span class="charliteral">&#39;z&#39;</span>) {</div>
+<div class="line"><span class="lineno">   41</span>            <span class="keywordflow">return</span> ch - <span class="charliteral">&#39;a&#39;</span> + <a class="code hl_variable" href="#a4bfac4be6ed1a34c7159eddb42469191">NUM_CHARS</a>;</div>
+<div class="line"><span class="lineno">   42</span>        }</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Invalid character present. Exiting...&quot;</span>;</div>
+<div class="line"><span class="lineno">   45</span>        std::exit(EXIT_FAILURE);</div>
+<div class="line"><span class="lineno">   46</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   47</span>    }</div>
+<div class="ttc" id="aclassdata__structures_1_1trie_html_a4bfac4be6ed1a34c7159eddb42469191"><div class="ttname"><a href="#a4bfac4be6ed1a34c7159eddb42469191">data_structures::trie::NUM_CHARS</a></div><div class="ttdeci">static constexpr uint8_t NUM_CHARS</div><div class="ttdoc">Number of alphabets.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d83/trie__tree_8cpp_source.html#l00026">trie_tree.cpp:26</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -262,48 +262,48 @@ Static Private Attributes</h2></td></tr>
 <dd>
 <code>false</code> if unsuccessful </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html#l00134">134</a> of file <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html">trie_tree.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  134</span>                                                       {</div>
-<div class="line"><span class="lineno">  135</span>        <span class="keywordflow">if</span> (index == str.length()) {</div>
-<div class="line"><span class="lineno">  136</span>            <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a4cb0f775b5a4bc14a6d39b5c93883eb6">isEndofWord</a>) {</div>
-<div class="line"><span class="lineno">  137</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  138</span>            }</div>
-<div class="line"><span class="lineno">  139</span>            <a class="code hl_variable" href="#a4cb0f775b5a4bc14a6d39b5c93883eb6">isEndofWord</a> = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  140</span>            <span class="comment">// following lines - possible source of error?</span></div>
-<div class="line"><span class="lineno">  141</span>            <span class="comment">// for (int i = 0; i &lt; NUM_CHARS; i++)</span></div>
-<div class="line"><span class="lineno">  142</span>            <span class="comment">//     if (!arr[i])</span></div>
-<div class="line"><span class="lineno">  143</span>            <span class="comment">//         return false;</span></div>
-<div class="line"><span class="lineno">  144</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  145</span>        }</div>
-<div class="line"><span class="lineno">  146</span>        <span class="keywordtype">int</span> j = <a class="code hl_function" href="#aab373beb3f618b90922528c68797d988">char_to_int</a>(str[index]);</div>
-<div class="line"><span class="lineno">  147</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a362dd78748a1f01ab019e55fd6098a8b">arr</a>[j]) {</div>
-<div class="line"><span class="lineno">  148</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  149</span>        }</div>
-<div class="line"><span class="lineno">  150</span>        <span class="keywordtype">bool</span> var = <a class="code hl_function" href="#aeac27cfd397d2dd3f2f519efffafeeab">deleteString</a>(str, index + 1);</div>
-<div class="line"><span class="lineno">  151</span>        <span class="keywordflow">if</span> (var) {</div>
-<div class="line"><span class="lineno">  152</span>            <a class="code hl_variable" href="#a362dd78748a1f01ab019e55fd6098a8b">arr</a>[j].reset();</div>
-<div class="line"><span class="lineno">  153</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a4cb0f775b5a4bc14a6d39b5c93883eb6">isEndofWord</a>) {</div>
-<div class="line"><span class="lineno">  154</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  155</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  156</span>                <span class="keywordtype">int</span> i = 0;</div>
-<div class="line"><span class="lineno">  157</span>                <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code hl_variable" href="#a4bfac4be6ed1a34c7159eddb42469191">NUM_CHARS</a>; i++) {</div>
-<div class="line"><span class="lineno">  158</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a362dd78748a1f01ab019e55fd6098a8b">arr</a>[i]) {</div>
-<div class="line"><span class="lineno">  159</span>                        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  160</span>                    }</div>
-<div class="line"><span class="lineno">  161</span>                }</div>
-<div class="line"><span class="lineno">  162</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  163</span>            }</div>
-<div class="line"><span class="lineno">  164</span>        }</div>
-<div class="line"><span class="lineno">  165</span> </div>
-<div class="line"><span class="lineno">  166</span>        <span class="comment">/* should not return here */</span></div>
-<div class="line"><span class="lineno">  167</span>        std::cout &lt;&lt; __func__ &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; __LINE__</div>
-<div class="line"><span class="lineno">  168</span>                  &lt;&lt; <span class="stringliteral">&quot;Should not reach this line\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  169</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  170</span>    }</div>
-<div class="ttc" id="aclassdata__structures_1_1trie_html_a362dd78748a1f01ab019e55fd6098a8b"><div class="ttname"><a href="#a362dd78748a1f01ab019e55fd6098a8b">data_structures::trie::arr</a></div><div class="ttdeci">std::array&lt; std::shared_ptr&lt; trie &gt;, NUM_CHARS&lt;&lt; 1 &gt; arr</div><div class="ttdoc">Recursive tree nodes as an array of shared-pointers.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d83/trie__tree_8cpp_source.html#l00029">trie_tree.cpp:29</a></div></div>
-<div class="ttc" id="aclassdata__structures_1_1trie_html_a4cb0f775b5a4bc14a6d39b5c93883eb6"><div class="ttname"><a href="#a4cb0f775b5a4bc14a6d39b5c93883eb6">data_structures::trie::isEndofWord</a></div><div class="ttdeci">bool isEndofWord</div><div class="ttdoc">identifier if a node is terminal node</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d83/trie__tree_8cpp_source.html#l00030">trie_tree.cpp:30</a></div></div>
-<div class="ttc" id="aclassdata__structures_1_1trie_html_aab373beb3f618b90922528c68797d988"><div class="ttname"><a href="#aab373beb3f618b90922528c68797d988">data_structures::trie::char_to_int</a></div><div class="ttdeci">uint8_t char_to_int(const char &amp;ch) const</div><div class="ttdoc">Convert a character to integer for indexing.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d83/trie__tree_8cpp_source.html#l00038">trie_tree.cpp:38</a></div></div>
-<div class="ttc" id="aclassdata__structures_1_1trie_html_aeac27cfd397d2dd3f2f519efffafeeab"><div class="ttname"><a href="#aeac27cfd397d2dd3f2f519efffafeeab">data_structures::trie::deleteString</a></div><div class="ttdeci">bool deleteString(const std::string &amp;str, int index)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d83/trie__tree_8cpp_source.html#l00134">trie_tree.cpp:134</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html#l00133">133</a> of file <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html">trie_tree.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  133</span>                                                       {</div>
+<div class="line"><span class="lineno">  134</span>        <span class="keywordflow">if</span> (index == str.length()) {</div>
+<div class="line"><span class="lineno">  135</span>            <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a4cb0f775b5a4bc14a6d39b5c93883eb6">isEndofWord</a>) {</div>
+<div class="line"><span class="lineno">  136</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  137</span>            }</div>
+<div class="line"><span class="lineno">  138</span>            <a class="code hl_variable" href="#a4cb0f775b5a4bc14a6d39b5c93883eb6">isEndofWord</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  139</span>            <span class="comment">// following lines - possible source of error?</span></div>
+<div class="line"><span class="lineno">  140</span>            <span class="comment">// for (int i = 0; i &lt; NUM_CHARS; i++)</span></div>
+<div class="line"><span class="lineno">  141</span>            <span class="comment">//     if (!arr[i])</span></div>
+<div class="line"><span class="lineno">  142</span>            <span class="comment">//         return false;</span></div>
+<div class="line"><span class="lineno">  143</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  144</span>        }</div>
+<div class="line"><span class="lineno">  145</span>        <span class="keywordtype">int</span> j = <a class="code hl_function" href="#aab373beb3f618b90922528c68797d988">char_to_int</a>(str[index]);</div>
+<div class="line"><span class="lineno">  146</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a362dd78748a1f01ab019e55fd6098a8b">arr</a>[j]) {</div>
+<div class="line"><span class="lineno">  147</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  148</span>        }</div>
+<div class="line"><span class="lineno">  149</span>        <span class="keywordtype">bool</span> var = <a class="code hl_function" href="#aeac27cfd397d2dd3f2f519efffafeeab">deleteString</a>(str, index + 1);</div>
+<div class="line"><span class="lineno">  150</span>        <span class="keywordflow">if</span> (var) {</div>
+<div class="line"><span class="lineno">  151</span>            <a class="code hl_variable" href="#a362dd78748a1f01ab019e55fd6098a8b">arr</a>[j].reset();</div>
+<div class="line"><span class="lineno">  152</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a4cb0f775b5a4bc14a6d39b5c93883eb6">isEndofWord</a>) {</div>
+<div class="line"><span class="lineno">  153</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  154</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  155</span>                <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><span class="lineno">  156</span>                <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code hl_variable" href="#a4bfac4be6ed1a34c7159eddb42469191">NUM_CHARS</a>; i++) {</div>
+<div class="line"><span class="lineno">  157</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a362dd78748a1f01ab019e55fd6098a8b">arr</a>[i]) {</div>
+<div class="line"><span class="lineno">  158</span>                        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  159</span>                    }</div>
+<div class="line"><span class="lineno">  160</span>                }</div>
+<div class="line"><span class="lineno">  161</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  162</span>            }</div>
+<div class="line"><span class="lineno">  163</span>        }</div>
+<div class="line"><span class="lineno">  164</span> </div>
+<div class="line"><span class="lineno">  165</span>        <span class="comment">/* should not return here */</span></div>
+<div class="line"><span class="lineno">  166</span>        std::cout &lt;&lt; __func__ &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; __LINE__</div>
+<div class="line"><span class="lineno">  167</span>                  &lt;&lt; <span class="stringliteral">&quot;Should not reach this line\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  168</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  169</span>    }</div>
+<div class="ttc" id="aclassdata__structures_1_1trie_html_a362dd78748a1f01ab019e55fd6098a8b"><div class="ttname"><a href="#a362dd78748a1f01ab019e55fd6098a8b">data_structures::trie::arr</a></div><div class="ttdeci">std::array&lt; std::shared_ptr&lt; trie &gt;, NUM_CHARS&lt;&lt; 1 &gt; arr</div><div class="ttdoc">Recursive tree nodes as an array of shared-pointers.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d83/trie__tree_8cpp_source.html#l00028">trie_tree.cpp:28</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1trie_html_a4cb0f775b5a4bc14a6d39b5c93883eb6"><div class="ttname"><a href="#a4cb0f775b5a4bc14a6d39b5c93883eb6">data_structures::trie::isEndofWord</a></div><div class="ttdeci">bool isEndofWord</div><div class="ttdoc">identifier if a node is terminal node</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d83/trie__tree_8cpp_source.html#l00029">trie_tree.cpp:29</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1trie_html_aab373beb3f618b90922528c68797d988"><div class="ttname"><a href="#aab373beb3f618b90922528c68797d988">data_structures::trie::char_to_int</a></div><div class="ttdeci">uint8_t char_to_int(const char &amp;ch) const</div><div class="ttdoc">Convert a character to integer for indexing.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d83/trie__tree_8cpp_source.html#l00037">trie_tree.cpp:37</a></div></div>
+<div class="ttc" id="aclassdata__structures_1_1trie_html_aeac27cfd397d2dd3f2f519efffafeeab"><div class="ttname"><a href="#aeac27cfd397d2dd3f2f519efffafeeab">data_structures::trie::deleteString</a></div><div class="ttdeci">bool deleteString(const std::string &amp;str, int index)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d83/trie__tree_8cpp_source.html#l00133">trie_tree.cpp:133</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -336,30 +336,30 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html">trie_tree.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   77</span>                                      {</div>
-<div class="line"><span class="lineno">   78</span>        std::shared_ptr&lt;trie&gt; root(<span class="keyword">nullptr</span>);</div>
-<div class="line"><span class="lineno">   79</span> </div>
-<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keywordtype">char</span>&amp; ch : str) {</div>
-<div class="line"><span class="lineno">   81</span>            <span class="keywordtype">int</span> j = <a class="code hl_function" href="#aab373beb3f618b90922528c68797d988">char_to_int</a>(ch);</div>
-<div class="line"><span class="lineno">   82</span>            <span class="keywordflow">if</span> (root) {</div>
-<div class="line"><span class="lineno">   83</span>                <span class="keywordflow">if</span> (root-&gt;arr[j]) {</div>
-<div class="line"><span class="lineno">   84</span>                    root = root-&gt;arr[j];</div>
-<div class="line"><span class="lineno">   85</span>                } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   86</span>                    std::shared_ptr&lt;trie&gt; temp(<span class="keyword">new</span> <a class="code hl_function" href="#a87d8bf99aea936f9381141753f1e90a8">trie</a>());</div>
-<div class="line"><span class="lineno">   87</span>                    root-&gt;arr[j] = temp;</div>
-<div class="line"><span class="lineno">   88</span>                    root = temp;</div>
-<div class="line"><span class="lineno">   89</span>                }</div>
-<div class="line"><span class="lineno">   90</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a362dd78748a1f01ab019e55fd6098a8b">arr</a>[j]) {</div>
-<div class="line"><span class="lineno">   91</span>                root = <a class="code hl_variable" href="#a362dd78748a1f01ab019e55fd6098a8b">arr</a>[j];</div>
-<div class="line"><span class="lineno">   92</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   93</span>                std::shared_ptr&lt;trie&gt; temp(<span class="keyword">new</span> <a class="code hl_function" href="#a87d8bf99aea936f9381141753f1e90a8">trie</a>());</div>
-<div class="line"><span class="lineno">   94</span>                <a class="code hl_variable" href="#a362dd78748a1f01ab019e55fd6098a8b">arr</a>[j] = temp;</div>
-<div class="line"><span class="lineno">   95</span>                root = temp;</div>
-<div class="line"><span class="lineno">   96</span>            }</div>
-<div class="line"><span class="lineno">   97</span>        }</div>
-<div class="line"><span class="lineno">   98</span>        root-&gt;isEndofWord = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   99</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html#l00076">76</a> of file <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html">trie_tree.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   76</span>                                      {</div>
+<div class="line"><span class="lineno">   77</span>        std::shared_ptr&lt;trie&gt; root(<span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">   78</span> </div>
+<div class="line"><span class="lineno">   79</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keywordtype">char</span>&amp; ch : str) {</div>
+<div class="line"><span class="lineno">   80</span>            <span class="keywordtype">int</span> j = <a class="code hl_function" href="#aab373beb3f618b90922528c68797d988">char_to_int</a>(ch);</div>
+<div class="line"><span class="lineno">   81</span>            <span class="keywordflow">if</span> (root) {</div>
+<div class="line"><span class="lineno">   82</span>                <span class="keywordflow">if</span> (root-&gt;arr[j]) {</div>
+<div class="line"><span class="lineno">   83</span>                    root = root-&gt;arr[j];</div>
+<div class="line"><span class="lineno">   84</span>                } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   85</span>                    std::shared_ptr&lt;trie&gt; temp(<span class="keyword">new</span> <a class="code hl_function" href="#a87d8bf99aea936f9381141753f1e90a8">trie</a>());</div>
+<div class="line"><span class="lineno">   86</span>                    root-&gt;arr[j] = temp;</div>
+<div class="line"><span class="lineno">   87</span>                    root = temp;</div>
+<div class="line"><span class="lineno">   88</span>                }</div>
+<div class="line"><span class="lineno">   89</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a362dd78748a1f01ab019e55fd6098a8b">arr</a>[j]) {</div>
+<div class="line"><span class="lineno">   90</span>                root = <a class="code hl_variable" href="#a362dd78748a1f01ab019e55fd6098a8b">arr</a>[j];</div>
+<div class="line"><span class="lineno">   91</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   92</span>                std::shared_ptr&lt;trie&gt; temp(<span class="keyword">new</span> <a class="code hl_function" href="#a87d8bf99aea936f9381141753f1e90a8">trie</a>());</div>
+<div class="line"><span class="lineno">   93</span>                <a class="code hl_variable" href="#a362dd78748a1f01ab019e55fd6098a8b">arr</a>[j] = temp;</div>
+<div class="line"><span class="lineno">   94</span>                root = temp;</div>
+<div class="line"><span class="lineno">   95</span>            }</div>
+<div class="line"><span class="lineno">   96</span>        }</div>
+<div class="line"><span class="lineno">   97</span>        root-&gt;isEndofWord = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   98</span>    }</div>
 <div class="ttc" id="aclassdata__structures_1_1trie_html_a87d8bf99aea936f9381141753f1e90a8"><div class="ttname"><a href="#a87d8bf99aea936f9381141753f1e90a8">data_structures::trie::trie</a></div><div class="ttdeci">trie()=default</div><div class="ttdoc">Class default constructor.</div></div>
 </div><!-- fragment -->
 </div>
@@ -406,21 +406,21 @@ Static Private Attributes</h2></td></tr>
 <dd>
 <code>false</code> if not found </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html#l00056">56</a> of file <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html">trie_tree.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   57</span>                           {</div>
-<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">if</span> (index == str.length()) {</div>
-<div class="line"><span class="lineno">   59</span>            <span class="keywordflow">if</span> (!root-&gt;isEndofWord) {</div>
-<div class="line"><span class="lineno">   60</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   61</span>            }</div>
-<div class="line"><span class="lineno">   62</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   63</span>        }</div>
-<div class="line"><span class="lineno">   64</span>        <span class="keywordtype">int</span> j = <a class="code hl_function" href="#aab373beb3f618b90922528c68797d988">char_to_int</a>(str[index]);</div>
-<div class="line"><span class="lineno">   65</span>        <span class="keywordflow">if</span> (!root-&gt;arr[j]) {</div>
-<div class="line"><span class="lineno">   66</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   67</span>        }</div>
-<div class="line"><span class="lineno">   68</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a961eb5d576d2420f2036009154397c63">search</a>(root-&gt;arr[j], str, index + 1);</div>
-<div class="line"><span class="lineno">   69</span>    }</div>
-<div class="ttc" id="aclassdata__structures_1_1trie_html_a961eb5d576d2420f2036009154397c63"><div class="ttname"><a href="#a961eb5d576d2420f2036009154397c63">data_structures::trie::search</a></div><div class="ttdeci">bool search(const std::shared_ptr&lt; trie &gt; &amp;root, const std::string &amp;str, int index)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d83/trie__tree_8cpp_source.html#l00056">trie_tree.cpp:56</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html">trie_tree.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   56</span>                           {</div>
+<div class="line"><span class="lineno">   57</span>        <span class="keywordflow">if</span> (index == str.length()) {</div>
+<div class="line"><span class="lineno">   58</span>            <span class="keywordflow">if</span> (!root-&gt;isEndofWord) {</div>
+<div class="line"><span class="lineno">   59</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   60</span>            }</div>
+<div class="line"><span class="lineno">   61</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   62</span>        }</div>
+<div class="line"><span class="lineno">   63</span>        <span class="keywordtype">int</span> j = <a class="code hl_function" href="#aab373beb3f618b90922528c68797d988">char_to_int</a>(str[index]);</div>
+<div class="line"><span class="lineno">   64</span>        <span class="keywordflow">if</span> (!root-&gt;arr[j]) {</div>
+<div class="line"><span class="lineno">   65</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   66</span>        }</div>
+<div class="line"><span class="lineno">   67</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a961eb5d576d2420f2036009154397c63">search</a>(root-&gt;arr[j], str, index + 1);</div>
+<div class="line"><span class="lineno">   68</span>    }</div>
+<div class="ttc" id="aclassdata__structures_1_1trie_html_a961eb5d576d2420f2036009154397c63"><div class="ttname"><a href="#a961eb5d576d2420f2036009154397c63">data_structures::trie::search</a></div><div class="ttdeci">bool search(const std::shared_ptr&lt; trie &gt; &amp;root, const std::string &amp;str, int index)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d83/trie__tree_8cpp_source.html#l00055">trie_tree.cpp:55</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -461,20 +461,20 @@ Static Private Attributes</h2></td></tr>
 <dd>
 <code>false</code> if not found </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html#l00107">107</a> of file <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html">trie_tree.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  107</span>                                                 {</div>
-<div class="line"><span class="lineno">  108</span>        <span class="keywordflow">if</span> (index == str.length()) {</div>
-<div class="line"><span class="lineno">  109</span>            <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a4cb0f775b5a4bc14a6d39b5c93883eb6">isEndofWord</a>) {</div>
-<div class="line"><span class="lineno">  110</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  111</span>            }</div>
-<div class="line"><span class="lineno">  112</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  113</span>        }</div>
-<div class="line"><span class="lineno">  114</span>        <span class="keywordtype">int</span> j = <a class="code hl_function" href="#aab373beb3f618b90922528c68797d988">char_to_int</a>(str[index]);</div>
-<div class="line"><span class="lineno">  115</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a362dd78748a1f01ab019e55fd6098a8b">arr</a>[j]) {</div>
-<div class="line"><span class="lineno">  116</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  117</span>        }</div>
-<div class="line"><span class="lineno">  118</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a961eb5d576d2420f2036009154397c63">search</a>(<a class="code hl_variable" href="#a362dd78748a1f01ab019e55fd6098a8b">arr</a>[j], str, index + 1);</div>
-<div class="line"><span class="lineno">  119</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html#l00106">106</a> of file <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html">trie_tree.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  106</span>                                                 {</div>
+<div class="line"><span class="lineno">  107</span>        <span class="keywordflow">if</span> (index == str.length()) {</div>
+<div class="line"><span class="lineno">  108</span>            <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a4cb0f775b5a4bc14a6d39b5c93883eb6">isEndofWord</a>) {</div>
+<div class="line"><span class="lineno">  109</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  110</span>            }</div>
+<div class="line"><span class="lineno">  111</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  112</span>        }</div>
+<div class="line"><span class="lineno">  113</span>        <span class="keywordtype">int</span> j = <a class="code hl_function" href="#aab373beb3f618b90922528c68797d988">char_to_int</a>(str[index]);</div>
+<div class="line"><span class="lineno">  114</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a362dd78748a1f01ab019e55fd6098a8b">arr</a>[j]) {</div>
+<div class="line"><span class="lineno">  115</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  116</span>        }</div>
+<div class="line"><span class="lineno">  117</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a961eb5d576d2420f2036009154397c63">search</a>(<a class="code hl_variable" href="#a362dd78748a1f01ab019e55fd6098a8b">arr</a>[j], str, index + 1);</div>
+<div class="line"><span class="lineno">  118</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -501,7 +501,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Recursive tree nodes as an array of shared-pointers. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html">trie_tree.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html">trie_tree.cpp</a>.</p>
 
 </div>
 </div>
@@ -527,7 +527,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>identifier if a node is terminal node </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html">trie_tree.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html">trie_tree.cpp</a>.</p>
 
 </div>
 </div>
@@ -553,7 +553,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Number of alphabets. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html">trie_tree.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../d7/d83/trie__tree_8cpp_source.html">trie_tree.cpp</a>.</p>
 
 </div>
 </div>

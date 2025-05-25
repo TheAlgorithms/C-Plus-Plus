@@ -133,11 +133,10 @@ $(function(){initNavTree('da/dd3/karatsuba__algorithm__for__fast__multiplication
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for karatsuba_algorithm_for_fast_multiplication.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d2c/karatsuba__algorithm__for__fast__multiplication_8cpp__incl.svg" width="336" height="140"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d2c/karatsuba__algorithm__for__fast__multiplication_8cpp__incl.svg" width="255" height="140"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -145,7 +144,7 @@ Include dependency graph for karatsuba_algorithm_for_fast_multiplication.cpp:</d
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dba/namespacedivide__and__conquer.html">divide_and_conquer</a></td></tr>
-<tr class="memdesc:dd/dba/namespacedivide__and__conquer"><td class="mdescLeft">&#160;</td><td class="mdescRight">for std::vector <br /></td></tr>
+<tr class="memdesc:dd/dba/namespacedivide__and__conquer"><td class="mdescLeft">&#160;</td><td class="mdescRight">for IO operations <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d41/namespacekaratsuba__algorithm.html">karatsuba_algorithm</a></td></tr>
 <tr class="memdesc:de/d41/namespacekaratsuba__algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for the <a href="https://en.wikipedia.org/wiki/Karatsuba_algorithm" target="_blank">Karatsuba algorithm for fast multiplication</a> implementation. <br /></td></tr>
@@ -206,46 +205,46 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the sum binary string </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html#l00037">37</a> of file <a class="el" href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html">karatsuba_algorithm_for_fast_multiplication.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   37</span>                                                         {</div>
-<div class="line"><span class="lineno">   38</span>    std::string result;  <span class="comment">// to store the resulting sum bits</span></div>
-<div class="line"><span class="lineno">   39</span> </div>
-<div class="line"><span class="lineno">   40</span>    <span class="comment">// make the string lengths equal</span></div>
-<div class="line"><span class="lineno">   41</span>    int64_t len1 = first.size();</div>
-<div class="line"><span class="lineno">   42</span>    int64_t len2 = second.size();</div>
-<div class="line"><span class="lineno">   43</span>    std::string zero = <span class="stringliteral">&quot;0&quot;</span>;</div>
-<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">if</span> (len1 &lt; len2) {</div>
-<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">for</span> (int64_t i = 0; i &lt; len2 - len1; i++) {</div>
-<div class="line"><span class="lineno">   46</span>            zero += first;</div>
-<div class="line"><span class="lineno">   47</span>            first = zero;</div>
-<div class="line"><span class="lineno">   48</span>            zero = <span class="stringliteral">&quot;0&quot;</span>; <span class="comment">// Prevents CI from failing</span></div>
-<div class="line"><span class="lineno">   49</span>        }</div>
-<div class="line"><span class="lineno">   50</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (len1 &gt; len2) {</div>
-<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">for</span> (int64_t i = 0; i &lt; len1 - len2; i++) {</div>
-<div class="line"><span class="lineno">   52</span>            zero += second;</div>
-<div class="line"><span class="lineno">   53</span>            second = zero;</div>
-<div class="line"><span class="lineno">   54</span>            zero = <span class="stringliteral">&quot;0&quot;</span>; <span class="comment">// Prevents CI from failing</span></div>
-<div class="line"><span class="lineno">   55</span>        }</div>
-<div class="line"><span class="lineno">   56</span>    }</div>
-<div class="line"><span class="lineno">   57</span> </div>
-<div class="line"><span class="lineno">   58</span>    int64_t length = std::max(len1, len2);</div>
-<div class="line"><span class="lineno">   59</span>    int64_t carry = 0;</div>
-<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">for</span> (int64_t i = length - 1; i &gt;= 0; i--) {</div>
-<div class="line"><span class="lineno">   61</span>        int64_t firstBit = first.at(i) - <span class="charliteral">&#39;0&#39;</span>;</div>
-<div class="line"><span class="lineno">   62</span>        int64_t secondBit = second.at(i) - <span class="charliteral">&#39;0&#39;</span>;</div>
-<div class="line"><span class="lineno">   63</span> </div>
-<div class="line"><span class="lineno">   64</span>        int64_t <a class="code hl_function" href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">sum</a> = (char(firstBit ^ secondBit ^ carry)) + <span class="charliteral">&#39;0&#39;</span>;  <span class="comment">// sum of 3 bits</span></div>
-<div class="line"><span class="lineno">   65</span>        <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.insert(<a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.begin(), sum);</div>
-<div class="line"><span class="lineno">   66</span> </div>
-<div class="line"><span class="lineno">   67</span>        carry = char((firstBit &amp; secondBit) | (secondBit &amp; carry) |</div>
-<div class="line"><span class="lineno">   68</span>                (firstBit &amp; carry));  <span class="comment">// sum of 3 bits</span></div>
-<div class="line"><span class="lineno">   69</span>    }</div>
-<div class="line"><span class="lineno">   70</span> </div>
-<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">if</span> (carry) {</div>
-<div class="line"><span class="lineno">   72</span>        <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.insert(<a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.begin(), <span class="charliteral">&#39;1&#39;</span>);  <span class="comment">// adding 1 incase of overflow</span></div>
-<div class="line"><span class="lineno">   73</span>    }</div>
-<div class="line"><span class="lineno">   74</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
-<div class="line"><span class="lineno">   75</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html">karatsuba_algorithm_for_fast_multiplication.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>                                                         {</div>
+<div class="line"><span class="lineno">   37</span>    std::string result;  <span class="comment">// to store the resulting sum bits</span></div>
+<div class="line"><span class="lineno">   38</span> </div>
+<div class="line"><span class="lineno">   39</span>    <span class="comment">// make the string lengths equal</span></div>
+<div class="line"><span class="lineno">   40</span>    int64_t len1 = first.size();</div>
+<div class="line"><span class="lineno">   41</span>    int64_t len2 = second.size();</div>
+<div class="line"><span class="lineno">   42</span>    std::string zero = <span class="stringliteral">&quot;0&quot;</span>;</div>
+<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">if</span> (len1 &lt; len2) {</div>
+<div class="line"><span class="lineno">   44</span>        <span class="keywordflow">for</span> (int64_t i = 0; i &lt; len2 - len1; i++) {</div>
+<div class="line"><span class="lineno">   45</span>            zero += first;</div>
+<div class="line"><span class="lineno">   46</span>            first = zero;</div>
+<div class="line"><span class="lineno">   47</span>            zero = <span class="stringliteral">&quot;0&quot;</span>; <span class="comment">// Prevents CI from failing</span></div>
+<div class="line"><span class="lineno">   48</span>        }</div>
+<div class="line"><span class="lineno">   49</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (len1 &gt; len2) {</div>
+<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">for</span> (int64_t i = 0; i &lt; len1 - len2; i++) {</div>
+<div class="line"><span class="lineno">   51</span>            zero += second;</div>
+<div class="line"><span class="lineno">   52</span>            second = zero;</div>
+<div class="line"><span class="lineno">   53</span>            zero = <span class="stringliteral">&quot;0&quot;</span>; <span class="comment">// Prevents CI from failing</span></div>
+<div class="line"><span class="lineno">   54</span>        }</div>
+<div class="line"><span class="lineno">   55</span>    }</div>
+<div class="line"><span class="lineno">   56</span> </div>
+<div class="line"><span class="lineno">   57</span>    int64_t length = std::max(len1, len2);</div>
+<div class="line"><span class="lineno">   58</span>    int64_t carry = 0;</div>
+<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">for</span> (int64_t i = length - 1; i &gt;= 0; i--) {</div>
+<div class="line"><span class="lineno">   60</span>        int64_t firstBit = first.at(i) - <span class="charliteral">&#39;0&#39;</span>;</div>
+<div class="line"><span class="lineno">   61</span>        int64_t secondBit = second.at(i) - <span class="charliteral">&#39;0&#39;</span>;</div>
+<div class="line"><span class="lineno">   62</span> </div>
+<div class="line"><span class="lineno">   63</span>        int64_t <a class="code hl_function" href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">sum</a> = (char(firstBit ^ secondBit ^ carry)) + <span class="charliteral">&#39;0&#39;</span>;  <span class="comment">// sum of 3 bits</span></div>
+<div class="line"><span class="lineno">   64</span>        <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.insert(<a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.begin(), sum);</div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>        carry = char((firstBit &amp; secondBit) | (secondBit &amp; carry) |</div>
+<div class="line"><span class="lineno">   67</span>                (firstBit &amp; carry));  <span class="comment">// sum of 3 bits</span></div>
+<div class="line"><span class="lineno">   68</span>    }</div>
+<div class="line"><span class="lineno">   69</span> </div>
+<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">if</span> (carry) {</div>
+<div class="line"><span class="lineno">   71</span>        <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.insert(<a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.begin(), <span class="charliteral">&#39;1&#39;</span>);  <span class="comment">// adding 1 incase of overflow</span></div>
+<div class="line"><span class="lineno">   72</span>    }</div>
+<div class="line"><span class="lineno">   73</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
+<div class="line"><span class="lineno">   74</span>}</div>
 <div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition</b> <a href="../../de/dc3/fibonacci__sum_8cpp_source.html#l00077">fibonacci_sum.cpp:77</a></div></div>
 <div class="ttc" id="anamespacemachine__learning_html_a6f1c98c016ad34ff3d9f39372161bd35"><div class="ttname"><a href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">machine_learning::sum</a></div><div class="ttdeci">T sum(const std::vector&lt; std::valarray&lt; T &gt; &gt; &amp;A)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d95/vector__ops_8hpp_source.html#l00232">vector_ops.hpp:232</a></div></div>
 </div><!-- fragment -->
@@ -280,41 +279,41 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the product number value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html#l00112">112</a> of file <a class="el" href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html">karatsuba_algorithm_for_fast_multiplication.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  112</span>                                                            {</div>
-<div class="line"><span class="lineno">  113</span>    int64_t len1 = str1.size();</div>
-<div class="line"><span class="lineno">  114</span>    int64_t len2 = str2.size();</div>
-<div class="line"><span class="lineno">  115</span>    int64_t n = std::max(len1, len2);</div>
-<div class="line"><span class="lineno">  116</span> </div>
-<div class="line"><span class="lineno">  117</span>    <span class="keywordflow">if</span> (n == 0) {</div>
-<div class="line"><span class="lineno">  118</span>        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  119</span>    }</div>
-<div class="line"><span class="lineno">  120</span>    <span class="keywordflow">if</span> (n == 1) {</div>
-<div class="line"><span class="lineno">  121</span>        <span class="keywordflow">return</span> (str1[0] - <span class="charliteral">&#39;0&#39;</span>) * (str2[0] - <span class="charliteral">&#39;0&#39;</span>);</div>
-<div class="line"><span class="lineno">  122</span>    }</div>
-<div class="line"><span class="lineno">  123</span> </div>
-<div class="line"><span class="lineno">  124</span>    int64_t fh = n / 2;     <span class="comment">// first half of string</span></div>
-<div class="line"><span class="lineno">  125</span>    int64_t sh = n - fh;  <span class="comment">// second half of string</span></div>
-<div class="line"><span class="lineno">  126</span> </div>
-<div class="line"><span class="lineno">  127</span>    std::string Xl = <a class="code hl_function" href="#aad9e3edfe156b59fc06a5585403fe0d6">divide_and_conquer::karatsuba_algorithm::safe_substr</a>(str1, 0, fh, n);   <span class="comment">// first half of first string</span></div>
-<div class="line"><span class="lineno">  128</span>    std::string Xr = <a class="code hl_function" href="#aad9e3edfe156b59fc06a5585403fe0d6">divide_and_conquer::karatsuba_algorithm::safe_substr</a>(str1, fh, sh, n);  <span class="comment">// second half of first string</span></div>
-<div class="line"><span class="lineno">  129</span> </div>
-<div class="line"><span class="lineno">  130</span>    std::string Yl = <a class="code hl_function" href="#aad9e3edfe156b59fc06a5585403fe0d6">divide_and_conquer::karatsuba_algorithm::safe_substr</a>(str2, 0, fh, n);   <span class="comment">// first half of second string</span></div>
-<div class="line"><span class="lineno">  131</span>    std::string Yr = <a class="code hl_function" href="#aad9e3edfe156b59fc06a5585403fe0d6">divide_and_conquer::karatsuba_algorithm::safe_substr</a>(str2, fh, sh, n);  <span class="comment">// second half of second string</span></div>
-<div class="line"><span class="lineno">  132</span> </div>
-<div class="line"><span class="lineno">  133</span>    <span class="comment">// calculating the three products of inputs of size n/2 recursively</span></div>
-<div class="line"><span class="lineno">  134</span>    int64_t product1 = <a class="code hl_namespace" href="../../de/d41/namespacekaratsuba__algorithm.html">karatsuba_algorithm</a>(Xl, Yl);</div>
-<div class="line"><span class="lineno">  135</span>    int64_t product2 = <a class="code hl_namespace" href="../../de/d41/namespacekaratsuba__algorithm.html">karatsuba_algorithm</a>(Xr, Yr);</div>
-<div class="line"><span class="lineno">  136</span>    int64_t product3 = <a class="code hl_namespace" href="../../de/d41/namespacekaratsuba__algorithm.html">karatsuba_algorithm</a>(</div>
-<div class="line"><span class="lineno">  137</span>        <a class="code hl_function" href="#ad76f5cac3ef8dc034f6abb99b64c2b20">divide_and_conquer::karatsuba_algorithm::add_strings</a>(Xl, Xr),</div>
-<div class="line"><span class="lineno">  138</span>        <a class="code hl_function" href="#ad76f5cac3ef8dc034f6abb99b64c2b20">divide_and_conquer::karatsuba_algorithm::add_strings</a>(Yl, Yr));</div>
-<div class="line"><span class="lineno">  139</span> </div>
-<div class="line"><span class="lineno">  140</span>    <span class="keywordflow">return</span> product1 * (1 &lt;&lt; (2 * sh)) +</div>
-<div class="line"><span class="lineno">  141</span>           (product3 - product1 - product2) * (1 &lt;&lt; sh) +</div>
-<div class="line"><span class="lineno">  142</span>           product2;  <span class="comment">// combining the three products to get the final result.</span></div>
-<div class="line"><span class="lineno">  143</span>}</div>
-<div class="ttc" id="akaratsuba__algorithm__for__fast__multiplication_8cpp_html_aad9e3edfe156b59fc06a5585403fe0d6"><div class="ttname"><a href="#aad9e3edfe156b59fc06a5585403fe0d6">divide_and_conquer::karatsuba_algorithm::safe_substr</a></div><div class="ttdeci">std::string safe_substr(const std::string &amp;str, int64_t x1, int64_t x2, int64_t n)</div><div class="ttdoc">Wrapper function for substr that considers leading zeros.</div><div class="ttdef"><b>Definition</b> <a href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html#l00086">karatsuba_algorithm_for_fast_multiplication.cpp:86</a></div></div>
-<div class="ttc" id="akaratsuba__algorithm__for__fast__multiplication_8cpp_html_ad76f5cac3ef8dc034f6abb99b64c2b20"><div class="ttname"><a href="#ad76f5cac3ef8dc034f6abb99b64c2b20">divide_and_conquer::karatsuba_algorithm::add_strings</a></div><div class="ttdeci">std::string add_strings(std::string first, std::string second)</div><div class="ttdoc">Binary addition.</div><div class="ttdef"><b>Definition</b> <a href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html#l00037">karatsuba_algorithm_for_fast_multiplication.cpp:37</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html#l00111">111</a> of file <a class="el" href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html">karatsuba_algorithm_for_fast_multiplication.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  111</span>                                                            {</div>
+<div class="line"><span class="lineno">  112</span>    int64_t len1 = str1.size();</div>
+<div class="line"><span class="lineno">  113</span>    int64_t len2 = str2.size();</div>
+<div class="line"><span class="lineno">  114</span>    int64_t n = std::max(len1, len2);</div>
+<div class="line"><span class="lineno">  115</span> </div>
+<div class="line"><span class="lineno">  116</span>    <span class="keywordflow">if</span> (n == 0) {</div>
+<div class="line"><span class="lineno">  117</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  118</span>    }</div>
+<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">if</span> (n == 1) {</div>
+<div class="line"><span class="lineno">  120</span>        <span class="keywordflow">return</span> (str1[0] - <span class="charliteral">&#39;0&#39;</span>) * (str2[0] - <span class="charliteral">&#39;0&#39;</span>);</div>
+<div class="line"><span class="lineno">  121</span>    }</div>
+<div class="line"><span class="lineno">  122</span> </div>
+<div class="line"><span class="lineno">  123</span>    int64_t fh = n / 2;     <span class="comment">// first half of string</span></div>
+<div class="line"><span class="lineno">  124</span>    int64_t sh = n - fh;  <span class="comment">// second half of string</span></div>
+<div class="line"><span class="lineno">  125</span> </div>
+<div class="line"><span class="lineno">  126</span>    std::string Xl = <a class="code hl_function" href="#aad9e3edfe156b59fc06a5585403fe0d6">divide_and_conquer::karatsuba_algorithm::safe_substr</a>(str1, 0, fh, n);   <span class="comment">// first half of first string</span></div>
+<div class="line"><span class="lineno">  127</span>    std::string Xr = <a class="code hl_function" href="#aad9e3edfe156b59fc06a5585403fe0d6">divide_and_conquer::karatsuba_algorithm::safe_substr</a>(str1, fh, sh, n);  <span class="comment">// second half of first string</span></div>
+<div class="line"><span class="lineno">  128</span> </div>
+<div class="line"><span class="lineno">  129</span>    std::string Yl = <a class="code hl_function" href="#aad9e3edfe156b59fc06a5585403fe0d6">divide_and_conquer::karatsuba_algorithm::safe_substr</a>(str2, 0, fh, n);   <span class="comment">// first half of second string</span></div>
+<div class="line"><span class="lineno">  130</span>    std::string Yr = <a class="code hl_function" href="#aad9e3edfe156b59fc06a5585403fe0d6">divide_and_conquer::karatsuba_algorithm::safe_substr</a>(str2, fh, sh, n);  <span class="comment">// second half of second string</span></div>
+<div class="line"><span class="lineno">  131</span> </div>
+<div class="line"><span class="lineno">  132</span>    <span class="comment">// calculating the three products of inputs of size n/2 recursively</span></div>
+<div class="line"><span class="lineno">  133</span>    int64_t product1 = <a class="code hl_namespace" href="../../de/d41/namespacekaratsuba__algorithm.html">karatsuba_algorithm</a>(Xl, Yl);</div>
+<div class="line"><span class="lineno">  134</span>    int64_t product2 = <a class="code hl_namespace" href="../../de/d41/namespacekaratsuba__algorithm.html">karatsuba_algorithm</a>(Xr, Yr);</div>
+<div class="line"><span class="lineno">  135</span>    int64_t product3 = <a class="code hl_namespace" href="../../de/d41/namespacekaratsuba__algorithm.html">karatsuba_algorithm</a>(</div>
+<div class="line"><span class="lineno">  136</span>        <a class="code hl_function" href="#ad76f5cac3ef8dc034f6abb99b64c2b20">divide_and_conquer::karatsuba_algorithm::add_strings</a>(Xl, Xr),</div>
+<div class="line"><span class="lineno">  137</span>        <a class="code hl_function" href="#ad76f5cac3ef8dc034f6abb99b64c2b20">divide_and_conquer::karatsuba_algorithm::add_strings</a>(Yl, Yr));</div>
+<div class="line"><span class="lineno">  138</span> </div>
+<div class="line"><span class="lineno">  139</span>    <span class="keywordflow">return</span> product1 * (1 &lt;&lt; (2 * sh)) +</div>
+<div class="line"><span class="lineno">  140</span>           (product3 - product1 - product2) * (1 &lt;&lt; sh) +</div>
+<div class="line"><span class="lineno">  141</span>           product2;  <span class="comment">// combining the three products to get the final result.</span></div>
+<div class="line"><span class="lineno">  142</span>}</div>
+<div class="ttc" id="akaratsuba__algorithm__for__fast__multiplication_8cpp_html_aad9e3edfe156b59fc06a5585403fe0d6"><div class="ttname"><a href="#aad9e3edfe156b59fc06a5585403fe0d6">divide_and_conquer::karatsuba_algorithm::safe_substr</a></div><div class="ttdeci">std::string safe_substr(const std::string &amp;str, int64_t x1, int64_t x2, int64_t n)</div><div class="ttdoc">Wrapper function for substr that considers leading zeros.</div><div class="ttdef"><b>Definition</b> <a href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html#l00085">karatsuba_algorithm_for_fast_multiplication.cpp:85</a></div></div>
+<div class="ttc" id="akaratsuba__algorithm__for__fast__multiplication_8cpp_html_ad76f5cac3ef8dc034f6abb99b64c2b20"><div class="ttname"><a href="#ad76f5cac3ef8dc034f6abb99b64c2b20">divide_and_conquer::karatsuba_algorithm::add_strings</a></div><div class="ttdeci">std::string add_strings(std::string first, std::string second)</div><div class="ttdoc">Binary addition.</div><div class="ttdef"><b>Definition</b> <a href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html#l00036">karatsuba_algorithm_for_fast_multiplication.cpp:36</a></div></div>
 <div class="ttc" id="anamespacekaratsuba__algorithm_html"><div class="ttname"><a href="../../de/d41/namespacekaratsuba__algorithm.html">karatsuba_algorithm</a></div><div class="ttdoc">Functions for the Karatsuba algorithm for fast multiplication implementation.</div></div>
 </div><!-- fragment -->
 </div>
@@ -337,12 +336,12 @@ Functions</h2></td></tr>
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html#l00181">181</a> of file <a class="el" href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html">karatsuba_algorithm_for_fast_multiplication.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  181</span>           {</div>
-<div class="line"><span class="lineno">  182</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">  183</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  184</span>}</div>
-<div class="ttc" id="akaratsuba__algorithm__for__fast__multiplication_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html#l00151">karatsuba_algorithm_for_fast_multiplication.cpp:151</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html#l00180">180</a> of file <a class="el" href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html">karatsuba_algorithm_for_fast_multiplication.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  180</span>           {</div>
+<div class="line"><span class="lineno">  181</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">  182</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  183</span>}</div>
+<div class="ttc" id="akaratsuba__algorithm__for__fast__multiplication_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html#l00150">karatsuba_algorithm_for_fast_multiplication.cpp:150</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -389,25 +388,25 @@ Functions</h2></td></tr>
 <dd>
 "0" if substring spans to leading zeros only </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html">karatsuba_algorithm_for_fast_multiplication.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   86</span>                                                                               {</div>
-<div class="line"><span class="lineno">   87</span>    int64_t len = str.size();</div>
-<div class="line"><span class="lineno">   88</span> </div>
-<div class="line"><span class="lineno">   89</span>    <span class="keywordflow">if</span> (len &gt;= n) {</div>
-<div class="line"><span class="lineno">   90</span>        <span class="keywordflow">return</span> str.substr(x1, x2);</div>
-<div class="line"><span class="lineno">   91</span>    }</div>
-<div class="line"><span class="lineno">   92</span> </div>
-<div class="line"><span class="lineno">   93</span>    int64_t y1 = x1 - (n - len);  <span class="comment">// index in str of first char of substring of &quot;whole&quot; string</span></div>
-<div class="line"><span class="lineno">   94</span>    int64_t y2 = (x1 + x2 - 1) - (n - len);  <span class="comment">// index in str of last char of substring of &quot;whole&quot; string</span></div>
-<div class="line"><span class="lineno">   95</span> </div>
-<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">if</span> (y2 &lt; 0) {</div>
-<div class="line"><span class="lineno">   97</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;0&quot;</span>;</div>
-<div class="line"><span class="lineno">   98</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (y1 &lt; 0) {</div>
-<div class="line"><span class="lineno">   99</span>        <span class="keywordflow">return</span> str.substr(0, y2 + 1);</div>
-<div class="line"><span class="lineno">  100</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  101</span>        <span class="keywordflow">return</span> str.substr(y1, x2);</div>
-<div class="line"><span class="lineno">  102</span>    }</div>
-<div class="line"><span class="lineno">  103</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html#l00085">85</a> of file <a class="el" href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html">karatsuba_algorithm_for_fast_multiplication.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   85</span>                                                                               {</div>
+<div class="line"><span class="lineno">   86</span>    int64_t len = str.size();</div>
+<div class="line"><span class="lineno">   87</span> </div>
+<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">if</span> (len &gt;= n) {</div>
+<div class="line"><span class="lineno">   89</span>        <span class="keywordflow">return</span> str.substr(x1, x2);</div>
+<div class="line"><span class="lineno">   90</span>    }</div>
+<div class="line"><span class="lineno">   91</span> </div>
+<div class="line"><span class="lineno">   92</span>    int64_t y1 = x1 - (n - len);  <span class="comment">// index in str of first char of substring of &quot;whole&quot; string</span></div>
+<div class="line"><span class="lineno">   93</span>    int64_t y2 = (x1 + x2 - 1) - (n - len);  <span class="comment">// index in str of last char of substring of &quot;whole&quot; string</span></div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">if</span> (y2 &lt; 0) {</div>
+<div class="line"><span class="lineno">   96</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;0&quot;</span>;</div>
+<div class="line"><span class="lineno">   97</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (y1 &lt; 0) {</div>
+<div class="line"><span class="lineno">   98</span>        <span class="keywordflow">return</span> str.substr(0, y2 + 1);</div>
+<div class="line"><span class="lineno">   99</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  100</span>        <span class="keywordflow">return</span> str.substr(y1, x2);</div>
+<div class="line"><span class="lineno">  101</span>    }</div>
+<div class="line"><span class="lineno">  102</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -437,33 +436,33 @@ Functions</h2></td></tr>
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html#l00151">151</a> of file <a class="el" href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html">karatsuba_algorithm_for_fast_multiplication.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  151</span>                   {</div>
-<div class="line"><span class="lineno">  152</span>    <span class="comment">// 1st test</span></div>
-<div class="line"><span class="lineno">  153</span>    std::string s11 = <span class="stringliteral">&quot;1&quot;</span>;     <span class="comment">// 1</span></div>
-<div class="line"><span class="lineno">  154</span>    std::string s12 = <span class="stringliteral">&quot;1010&quot;</span>;  <span class="comment">// 10</span></div>
-<div class="line"><span class="lineno">  155</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;1st test... &quot;</span>;</div>
-<div class="line"><span class="lineno">  156</span>    assert(<a class="code hl_function" href="#a7a890d2f26855ada3b9f1d43aec70a86">divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm</a>(</div>
-<div class="line"><span class="lineno">  157</span>               s11, s12) == 10);</div>
-<div class="line"><span class="lineno">  158</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  159</span> </div>
-<div class="line"><span class="lineno">  160</span>    <span class="comment">// 2nd test</span></div>
-<div class="line"><span class="lineno">  161</span>    std::string s21 = <span class="stringliteral">&quot;11&quot;</span>;    <span class="comment">// 3</span></div>
-<div class="line"><span class="lineno">  162</span>    std::string s22 = <span class="stringliteral">&quot;1010&quot;</span>;  <span class="comment">// 10</span></div>
-<div class="line"><span class="lineno">  163</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;2nd test... &quot;</span>;</div>
-<div class="line"><span class="lineno">  164</span>    assert(<a class="code hl_function" href="#a7a890d2f26855ada3b9f1d43aec70a86">divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm</a>(</div>
-<div class="line"><span class="lineno">  165</span>               s21, s22) == 30);</div>
-<div class="line"><span class="lineno">  166</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  167</span> </div>
-<div class="line"><span class="lineno">  168</span>    <span class="comment">// 3rd test</span></div>
-<div class="line"><span class="lineno">  169</span>    std::string s31 = <span class="stringliteral">&quot;110&quot;</span>;   <span class="comment">// 6</span></div>
-<div class="line"><span class="lineno">  170</span>    std::string s32 = <span class="stringliteral">&quot;1010&quot;</span>;  <span class="comment">// 10</span></div>
-<div class="line"><span class="lineno">  171</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;3rd test... &quot;</span>;</div>
-<div class="line"><span class="lineno">  172</span>    assert(<a class="code hl_function" href="#a7a890d2f26855ada3b9f1d43aec70a86">divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm</a>(</div>
-<div class="line"><span class="lineno">  173</span>               s31, s32) == 60);</div>
-<div class="line"><span class="lineno">  174</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  175</span>}</div>
-<div class="ttc" id="akaratsuba__algorithm__for__fast__multiplication_8cpp_html_a7a890d2f26855ada3b9f1d43aec70a86"><div class="ttname"><a href="#a7a890d2f26855ada3b9f1d43aec70a86">divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm</a></div><div class="ttdeci">int64_t karatsuba_algorithm(std::string str1, std::string str2)</div><div class="ttdoc">The main function implements Karatsuba&#39;s algorithm for fast multiplication.</div><div class="ttdef"><b>Definition</b> <a href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html#l00112">karatsuba_algorithm_for_fast_multiplication.cpp:112</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html#l00150">150</a> of file <a class="el" href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html">karatsuba_algorithm_for_fast_multiplication.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  150</span>                   {</div>
+<div class="line"><span class="lineno">  151</span>    <span class="comment">// 1st test</span></div>
+<div class="line"><span class="lineno">  152</span>    std::string s11 = <span class="stringliteral">&quot;1&quot;</span>;     <span class="comment">// 1</span></div>
+<div class="line"><span class="lineno">  153</span>    std::string s12 = <span class="stringliteral">&quot;1010&quot;</span>;  <span class="comment">// 10</span></div>
+<div class="line"><span class="lineno">  154</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;1st test... &quot;</span>;</div>
+<div class="line"><span class="lineno">  155</span>    assert(<a class="code hl_function" href="#a7a890d2f26855ada3b9f1d43aec70a86">divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm</a>(</div>
+<div class="line"><span class="lineno">  156</span>               s11, s12) == 10);</div>
+<div class="line"><span class="lineno">  157</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  158</span> </div>
+<div class="line"><span class="lineno">  159</span>    <span class="comment">// 2nd test</span></div>
+<div class="line"><span class="lineno">  160</span>    std::string s21 = <span class="stringliteral">&quot;11&quot;</span>;    <span class="comment">// 3</span></div>
+<div class="line"><span class="lineno">  161</span>    std::string s22 = <span class="stringliteral">&quot;1010&quot;</span>;  <span class="comment">// 10</span></div>
+<div class="line"><span class="lineno">  162</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;2nd test... &quot;</span>;</div>
+<div class="line"><span class="lineno">  163</span>    assert(<a class="code hl_function" href="#a7a890d2f26855ada3b9f1d43aec70a86">divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm</a>(</div>
+<div class="line"><span class="lineno">  164</span>               s21, s22) == 30);</div>
+<div class="line"><span class="lineno">  165</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  166</span> </div>
+<div class="line"><span class="lineno">  167</span>    <span class="comment">// 3rd test</span></div>
+<div class="line"><span class="lineno">  168</span>    std::string s31 = <span class="stringliteral">&quot;110&quot;</span>;   <span class="comment">// 6</span></div>
+<div class="line"><span class="lineno">  169</span>    std::string s32 = <span class="stringliteral">&quot;1010&quot;</span>;  <span class="comment">// 10</span></div>
+<div class="line"><span class="lineno">  170</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;3rd test... &quot;</span>;</div>
+<div class="line"><span class="lineno">  171</span>    assert(<a class="code hl_function" href="#a7a890d2f26855ada3b9f1d43aec70a86">divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm</a>(</div>
+<div class="line"><span class="lineno">  172</span>               s31, s32) == 60);</div>
+<div class="line"><span class="lineno">  173</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  174</span>}</div>
+<div class="ttc" id="akaratsuba__algorithm__for__fast__multiplication_8cpp_html_a7a890d2f26855ada3b9f1d43aec70a86"><div class="ttname"><a href="#a7a890d2f26855ada3b9f1d43aec70a86">divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm</a></div><div class="ttdeci">int64_t karatsuba_algorithm(std::string str1, std::string str2)</div><div class="ttdoc">The main function implements Karatsuba&#39;s algorithm for fast multiplication.</div><div class="ttdef"><b>Definition</b> <a href="../../da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp_source.html#l00111">karatsuba_algorithm_for_fast_multiplication.cpp:111</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -132,11 +132,10 @@ $(function(){initNavTree('d3/d40/graph__coloring_8cpp.html','../../'); initResiz
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;array&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for graph_coloring.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/dce/graph__coloring_8cpp__incl.svg" width="238" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/dce/graph__coloring_8cpp__incl.svg" width="158" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="../../d3/d40/graph__coloring_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -225,30 +224,30 @@ template&lt;size_t V&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html">graph_coloring.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   83</span>                                                  {</div>
-<div class="line"><span class="lineno">   84</span>    <span class="comment">// base case:</span></div>
-<div class="line"><span class="lineno">   85</span>    <span class="comment">// If all vertices are assigned a color then return true</span></div>
-<div class="line"><span class="lineno">   86</span>    <span class="keywordflow">if</span> (v == V) {</div>
-<div class="line"><span class="lineno">   87</span>        <a class="code hl_function" href="#a8c47fa37fb6eeeb781b2ec1b05af6b07">printSolution&lt;V&gt;</a>(color);</div>
-<div class="line"><span class="lineno">   88</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   89</span>    }</div>
-<div class="line"><span class="lineno">   90</span> </div>
-<div class="line"><span class="lineno">   91</span>    <span class="comment">// Consider this vertex v and try different colors</span></div>
-<div class="line"><span class="lineno">   92</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> c = 1; c &lt;= m; c++) {</div>
-<div class="line"><span class="lineno">   93</span>        <span class="comment">// Check if assignment of color c to v is fine</span></div>
-<div class="line"><span class="lineno">   94</span>        <span class="keywordflow">if</span> (isSafe&lt;V&gt;(v, <a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>, color, c)) {</div>
-<div class="line"><span class="lineno">   95</span>            color[v] = c;</div>
-<div class="line"><span class="lineno">   96</span> </div>
-<div class="line"><span class="lineno">   97</span>            <span class="comment">// recur to assign colors to rest of the vertices</span></div>
-<div class="line"><span class="lineno">   98</span>            graphColoring&lt;V&gt;(<a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>, m, color, v + 1);</div>
-<div class="line"><span class="lineno">   99</span> </div>
-<div class="line"><span class="lineno">  100</span>            <span class="comment">// If assigning color c doesn&#39;t lead to a solution then remove it</span></div>
-<div class="line"><span class="lineno">  101</span>            color[v] = 0;</div>
-<div class="line"><span class="lineno">  102</span>        }</div>
-<div class="line"><span class="lineno">  103</span>    }</div>
-<div class="line"><span class="lineno">  104</span>}</div>
-<div class="ttc" id="agraph__coloring_8cpp_html_a8c47fa37fb6eeeb781b2ec1b05af6b07"><div class="ttname"><a href="#a8c47fa37fb6eeeb781b2ec1b05af6b07">backtracking::graph_coloring::printSolution</a></div><div class="ttdeci">void printSolution(const std::array&lt; int, V &gt; &amp;color)</div><div class="ttdoc">A utility function to print the solution.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d40/graph__coloring_8cpp_source.html#l00042">graph_coloring.cpp:42</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html#l00081">81</a> of file <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html">graph_coloring.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   82</span>                                                  {</div>
+<div class="line"><span class="lineno">   83</span>    <span class="comment">// base case:</span></div>
+<div class="line"><span class="lineno">   84</span>    <span class="comment">// If all vertices are assigned a color then return true</span></div>
+<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">if</span> (v == V) {</div>
+<div class="line"><span class="lineno">   86</span>        <a class="code hl_function" href="#a8c47fa37fb6eeeb781b2ec1b05af6b07">printSolution&lt;V&gt;</a>(color);</div>
+<div class="line"><span class="lineno">   87</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   88</span>    }</div>
+<div class="line"><span class="lineno">   89</span> </div>
+<div class="line"><span class="lineno">   90</span>    <span class="comment">// Consider this vertex v and try different colors</span></div>
+<div class="line"><span class="lineno">   91</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> c = 1; c &lt;= m; c++) {</div>
+<div class="line"><span class="lineno">   92</span>        <span class="comment">// Check if assignment of color c to v is fine</span></div>
+<div class="line"><span class="lineno">   93</span>        <span class="keywordflow">if</span> (isSafe&lt;V&gt;(v, <a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>, color, c)) {</div>
+<div class="line"><span class="lineno">   94</span>            color[v] = c;</div>
+<div class="line"><span class="lineno">   95</span> </div>
+<div class="line"><span class="lineno">   96</span>            <span class="comment">// recur to assign colors to rest of the vertices</span></div>
+<div class="line"><span class="lineno">   97</span>            graphColoring&lt;V&gt;(<a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>, m, color, v + 1);</div>
+<div class="line"><span class="lineno">   98</span> </div>
+<div class="line"><span class="lineno">   99</span>            <span class="comment">// If assigning color c doesn&#39;t lead to a solution then remove it</span></div>
+<div class="line"><span class="lineno">  100</span>            color[v] = 0;</div>
+<div class="line"><span class="lineno">  101</span>        }</div>
+<div class="line"><span class="lineno">  102</span>    }</div>
+<div class="line"><span class="lineno">  103</span>}</div>
+<div class="ttc" id="agraph__coloring_8cpp_html_a8c47fa37fb6eeeb781b2ec1b05af6b07"><div class="ttname"><a href="#a8c47fa37fb6eeeb781b2ec1b05af6b07">backtracking::graph_coloring::printSolution</a></div><div class="ttdeci">void printSolution(const std::array&lt; int, V &gt; &amp;color)</div><div class="ttdoc">A utility function to print the solution.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d40/graph__coloring_8cpp_source.html#l00041">graph_coloring.cpp:41</a></div></div>
 <div class="ttc" id="anamespacegraph_html"><div class="ttname"><a href="../../df/dce/namespacegraph.html">graph</a></div><div class="ttdoc">Graph Algorithms.</div></div>
 </div><!-- fragment -->
 </div>
@@ -304,15 +303,15 @@ template&lt;size_t V&gt; </div>
 <dd>
 <code>false</code> if the color is not safe to be assigned to the node </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html">graph_coloring.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   63</span>                                                  {</div>
-<div class="line"><span class="lineno">   64</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; V; i++) {</div>
-<div class="line"><span class="lineno">   65</span>        <span class="keywordflow">if</span> (<a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>[v][i] &amp;&amp; c == color[i]) {</div>
-<div class="line"><span class="lineno">   66</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   67</span>        }</div>
-<div class="line"><span class="lineno">   68</span>    }</div>
-<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   70</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html">graph_coloring.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>                                                  {</div>
+<div class="line"><span class="lineno">   63</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; V; i++) {</div>
+<div class="line"><span class="lineno">   64</span>        <span class="keywordflow">if</span> (<a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>[v][i] &amp;&amp; c == color[i]) {</div>
+<div class="line"><span class="lineno">   65</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   66</span>        }</div>
+<div class="line"><span class="lineno">   67</span>    }</div>
+<div class="line"><span class="lineno">   68</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   69</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -334,27 +333,27 @@ template&lt;size_t V&gt; </div>
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html#l00112">112</a> of file <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html">graph_coloring.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  112</span>           {</div>
-<div class="line"><span class="lineno">  113</span>    <span class="comment">// Create following graph and test whether it is 3 colorable</span></div>
-<div class="line"><span class="lineno">  114</span>    <span class="comment">// (3)---(2)</span></div>
-<div class="line"><span class="lineno">  115</span>    <span class="comment">// |   / |</span></div>
-<div class="line"><span class="lineno">  116</span>    <span class="comment">// |  /  |</span></div>
-<div class="line"><span class="lineno">  117</span>    <span class="comment">// | /   |</span></div>
-<div class="line"><span class="lineno">  118</span>    <span class="comment">// (0)---(1)</span></div>
-<div class="line"><span class="lineno">  119</span> </div>
-<div class="line"><span class="lineno">  120</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> V = 4;  <span class="comment">// number of vertices in the graph</span></div>
-<div class="line"><span class="lineno">  121</span>    std::array&lt;std::array&lt;int, V&gt;, V&gt; <a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a> = {</div>
-<div class="line"><span class="lineno">  122</span>        std::array&lt;int, V&gt;({0, 1, 1, 1}), std::array&lt;int, V&gt;({1, 0, 1, 0}),</div>
-<div class="line"><span class="lineno">  123</span>        std::array&lt;int, V&gt;({1, 1, 0, 1}), std::array&lt;int, V&gt;({1, 0, 1, 0})};</div>
-<div class="line"><span class="lineno">  124</span> </div>
-<div class="line"><span class="lineno">  125</span>    <span class="keywordtype">int</span> m = 3;  <span class="comment">// Number of colors</span></div>
-<div class="line"><span class="lineno">  126</span>    std::array&lt;int, V&gt; color{};</div>
-<div class="line"><span class="lineno">  127</span> </div>
-<div class="line"><span class="lineno">  128</span>    <a class="code hl_function" href="#a40337efc5dad761096489bf2c5b1c80c">backtracking::graph_coloring::graphColoring&lt;V&gt;</a>(<a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>, m, color, 0);</div>
-<div class="line"><span class="lineno">  129</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  130</span>}</div>
-<div class="ttc" id="agraph__coloring_8cpp_html_a40337efc5dad761096489bf2c5b1c80c"><div class="ttname"><a href="#a40337efc5dad761096489bf2c5b1c80c">backtracking::graph_coloring::graphColoring</a></div><div class="ttdeci">void graphColoring(const std::array&lt; std::array&lt; int, V &gt;, V &gt; &amp;graph, int m, std::array&lt; int, V &gt; color, int v)</div><div class="ttdoc">Recursive utility function to solve m coloring problem.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d40/graph__coloring_8cpp_source.html#l00082">graph_coloring.cpp:82</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html#l00111">111</a> of file <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html">graph_coloring.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  111</span>           {</div>
+<div class="line"><span class="lineno">  112</span>    <span class="comment">// Create following graph and test whether it is 3 colorable</span></div>
+<div class="line"><span class="lineno">  113</span>    <span class="comment">// (3)---(2)</span></div>
+<div class="line"><span class="lineno">  114</span>    <span class="comment">// |   / |</span></div>
+<div class="line"><span class="lineno">  115</span>    <span class="comment">// |  /  |</span></div>
+<div class="line"><span class="lineno">  116</span>    <span class="comment">// | /   |</span></div>
+<div class="line"><span class="lineno">  117</span>    <span class="comment">// (0)---(1)</span></div>
+<div class="line"><span class="lineno">  118</span> </div>
+<div class="line"><span class="lineno">  119</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> V = 4;  <span class="comment">// number of vertices in the graph</span></div>
+<div class="line"><span class="lineno">  120</span>    std::array&lt;std::array&lt;int, V&gt;, V&gt; <a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a> = {</div>
+<div class="line"><span class="lineno">  121</span>        std::array&lt;int, V&gt;({0, 1, 1, 1}), std::array&lt;int, V&gt;({1, 0, 1, 0}),</div>
+<div class="line"><span class="lineno">  122</span>        std::array&lt;int, V&gt;({1, 1, 0, 1}), std::array&lt;int, V&gt;({1, 0, 1, 0})};</div>
+<div class="line"><span class="lineno">  123</span> </div>
+<div class="line"><span class="lineno">  124</span>    <span class="keywordtype">int</span> m = 3;  <span class="comment">// Number of colors</span></div>
+<div class="line"><span class="lineno">  125</span>    std::array&lt;int, V&gt; color{};</div>
+<div class="line"><span class="lineno">  126</span> </div>
+<div class="line"><span class="lineno">  127</span>    <a class="code hl_function" href="#a40337efc5dad761096489bf2c5b1c80c">backtracking::graph_coloring::graphColoring&lt;V&gt;</a>(<a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>, m, color, 0);</div>
+<div class="line"><span class="lineno">  128</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  129</span>}</div>
+<div class="ttc" id="agraph__coloring_8cpp_html_a40337efc5dad761096489bf2c5b1c80c"><div class="ttname"><a href="#a40337efc5dad761096489bf2c5b1c80c">backtracking::graph_coloring::graphColoring</a></div><div class="ttdeci">void graphColoring(const std::array&lt; std::array&lt; int, V &gt;, V &gt; &amp;graph, int m, std::array&lt; int, V &gt; color, int v)</div><div class="ttdoc">Recursive utility function to solve m coloring problem.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d40/graph__coloring_8cpp_source.html#l00081">graph_coloring.cpp:81</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -389,14 +388,14 @@ template&lt;size_t V&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html">graph_coloring.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>                                                  {</div>
-<div class="line"><span class="lineno">   43</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Following are the assigned colors\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; col : color) {</div>
-<div class="line"><span class="lineno">   45</span>        std::cout &lt;&lt; col;</div>
-<div class="line"><span class="lineno">   46</span>    }</div>
-<div class="line"><span class="lineno">   47</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   48</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../d3/d40/graph__coloring_8cpp_source.html">graph_coloring.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   41</span>                                                  {</div>
+<div class="line"><span class="lineno">   42</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Following are the assigned colors\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; col : color) {</div>
+<div class="line"><span class="lineno">   44</span>        std::cout &lt;&lt; col;</div>
+<div class="line"><span class="lineno">   45</span>    }</div>
+<div class="line"><span class="lineno">   46</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   47</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
