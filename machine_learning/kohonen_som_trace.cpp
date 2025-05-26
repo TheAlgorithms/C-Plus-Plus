@@ -454,7 +454,7 @@ double get_clock_diff(clock_t start_t, clock_t end_t) {
 }
 
 /** Main function */
-int main(int argc, char **argv) {
+int main() {
 #ifdef _OPENMP
     std::cout << "Using OpenMP based parallelization\n";
 #else
