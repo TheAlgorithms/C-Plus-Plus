@@ -24,11 +24,15 @@
  */
 namespace graph {
 
+/**
+ * @brief A fundamental unit of a graph. Contains the location (x, y) of the node, a
+ * unique index identifying the node, and a list of all connected nodes.
+ */
 class Node {
  private:
-    size_t _idx;               // A unique identifier for a given graph
-    std::pair<int, int> _pos;  // Coordinates denoting the location of the node
-    std::vector<size_t> _connections;  // A list of indexes of connected nodes
+    size_t _idx;                       //< A unique identifier for a given graph
+    std::pair<int, int> _pos;          //< Coordinates denoting the location of the node
+    std::vector<size_t> _connections;  //< A list of indexes of connected nodes
 
  public:
     Node(size_t idx, std::pair<int, int> pos, std::vector<size_t> conn = {}) {
@@ -41,9 +45,30 @@ class Node {
         }
     }
 
+    /**
+     * @brief Appends the index of another node to this node's list of
+     * connections
+     * @param conn the unique index of a node connected to this node
+     * @returns void
+     */
     void add_connection(size_t conn) { this->_connections.push_back(conn); }
+
+    /**
+     * @brief Retrives the unique identifing number (index) of this node
+     * @returns the index of the node
+     */
     size_t get_idx() { return this->_idx; }
+
+    /**
+     * @brief Retrives the list of unique indexes for nodes connected to this one
+     * @returns the list of the connected nodes
+     */
     std::vector<size_t> get_connections() { return this->_connections; }
+
+    /**
+     * @brief Retrives the co-ordinates of the node
+     * @returns a pair (x,y) of co-ordinates for the node
+     */
     std::pair<int, int> get_pos() { return this->_pos; }
 };
 
