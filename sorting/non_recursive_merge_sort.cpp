@@ -91,7 +91,7 @@ void non_recursive_merge_sort(const Iterator first, const Iterator last) {
 
 using sorting::non_recursive_merge_sort;
 
-int main(int argc, char** argv) {
+int main() {
     int size;
     std::cout << "Enter the number of elements : ";
     std::cin >> size;

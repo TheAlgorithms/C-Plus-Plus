@@ -29,7 +29,7 @@ int LIS(const std::vector<int>& arr, int n) {
     }
     return active.size();  // size of the LIS.
 }
-int main(int argc, char const* argv[]) {
+int main() {
     int n;
     cout << "Enter size of array: ";
     cin >> n;

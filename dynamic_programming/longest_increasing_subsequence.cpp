@@ -74,11 +74,9 @@ static void test() {
 
 /**
  * @brief Main function
- * @param argc commandline argument count (ignored)
- * @param argv commandline array of arguments (ignored)
  * @returns 0 on exit
  */
-int main(int argc, char const *argv[]) {
+int main() {
     uint32_t n = 0;
 
     std::cout << "Enter size of array: ";
