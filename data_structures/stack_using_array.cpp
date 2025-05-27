@@ -25,7 +25,7 @@ class Stack {
      *
      * @param size Maximum size of the stack
      */
-    Stack(int size) : stackSize(size), stackIndex(-1), stack(new T[size]) {}
+    Stack(int size) : stack(new T[size]), stackSize(size), stackIndex(-1) {}
 
     /**
      * @brief Checks if the stack is full
