@@ -13,7 +13,7 @@
  * redundant computation. It builds up the solution for increasing subtree
  * sizes. Time complexity is O(n^3) due to three nested loops.
  *
- * @author Satya
+ * @author [Satya Pradhan](https://github.com/butterpaneermasala)
  */
 
 #include <cassert>
