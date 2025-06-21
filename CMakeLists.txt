@@ -9,6 +9,9 @@ project(TheAlgorithms/C++
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+
+include(CTest) # for testing algorithms
+
 # Additional warnings and errors
 if(MSVC)
     add_compile_definitions(_CRT_SECURE_NO_WARNINGS)
