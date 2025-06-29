@@ -156,9 +156,24 @@ int main() {
     int vertices = int(), edges = int();
     std::cout << "Enter the number of vertices : ";
     std::cin >> vertices;
+
+    if (vertices == 0) {
+    std::cout << "Graph has no vertices. Nothing to compute." << std::endl; // case if there is no vertices there will be no hence we have nothing to compute
+    return 0;  
+    }
+    
     std::cout << "Enter the number of edges : ";
     std::cin >> edges;
 
+    if(edges==0){
+        std::cout<<"No edges in the graph. All nodes are isolated.\n"; // case if there is no edge hence the graph is disconnected hence we can't find the shortest path between two nodes
+        return 0;
+    }
+    if(edges<0 || vertices<0){
+        std::cout<<"Input is invalid ";
+        return 0;
+    }
+    
     std::vector<std::vector<std::pair<int, int>>> adj(
         vertices, std::vector<std::pair<int, int>>());
 
