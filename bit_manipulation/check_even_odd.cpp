@@ -39,12 +39,12 @@ namespace even_odd {
  * @brief Checks if a number is even or odd using bitwise AND.
  * @param N The number to check.
  * @returns "Even" if N is even, "Odd" if N is odd.
- */
-std::string checkEvenOdd(std::int64_t N) {
-    return (N & 1) == 0 ? "Even" : "Odd";
-}
+     */
+        std::string checkEvenOdd(std::int64_t N) {
+            return (N & 1) == 0 ? "Even" : "Odd";
+        }
 
-}  // namespace even_odd
+    }  // namespace even_odd
 }  // namespace bit_manipulation
 
 /**
