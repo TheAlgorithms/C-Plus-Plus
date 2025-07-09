@@ -1,10 +1,10 @@
 <map id="queue&lt; ValueType &gt;" name="queue&lt; ValueType &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="17,301,157,327"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,198,169,223"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,239,90,301,84,301,84,239"/>
-<area shape="rect" id="Node000003" href="$db/d8b/struct_node.html" title=" " alt="" coords="19,109,155,135"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,150,90,197,84,197,84,150"/>
-<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="172,114,182,122,174,130,156,132,155,127,171,125,177,122,169,118"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="17,331,157,356"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,214,169,239"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,255,90,330,84,330,84,255"/>
+<area shape="rect" id="Node000003" href="$db/d8b/struct_node.html" title=" " alt="" coords="19,117,155,143"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,158,90,213,84,213,84,158"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="172,121,182,130,174,138,156,141,155,136,171,133,177,130,169,126"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="11,5,163,46"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="90,61,90,109,84,109,84,61"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="90,62,90,117,84,117,84,62"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="Trie::TrieNode" name="Trie::TrieNode">
 <area shape="rect" id="Node000001" title=" " alt="" coords="24,5,129,31"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,148,135"/>
-<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="59,45,55,56,55,74,63,92,58,95,50,76,50,54,55,43"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,79,74,31,79,31,79,79"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,102,148,143"/>
+<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="56,45,51,56,48,66,51,77,63,100,58,103,46,79,43,66,46,54,52,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,87,74,32,79,32,79,87"/>
 </map>

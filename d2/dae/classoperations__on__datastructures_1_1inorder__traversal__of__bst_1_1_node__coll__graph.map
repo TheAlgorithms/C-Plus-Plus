@@ -1,4 +1,4 @@
 <map id="operations_on_datastructures::inorder_traversal_of_bst::Node" name="operations_on_datastructures::inorder_traversal_of_bst::Node">
-<area shape="rect" id="Node000001" title="A Node structure representing a single node in BST." alt="" coords="5,5,213,46"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="229,19,239,26,231,32,214,35,213,30,229,27,234,26,227,23"/>
+<area shape="rect" id="Node000001" title="A Node structure representing a single node in BST." alt="" coords="5,7,213,47"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="229,20,239,27,231,34,214,36,213,31,229,29,234,27,227,25"/>
 </map>

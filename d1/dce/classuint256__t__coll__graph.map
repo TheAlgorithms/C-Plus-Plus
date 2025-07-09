@@ -1,5 +1,5 @@
 <map id="uint256_t" name="uint256_t">
-<area shape="rect" id="Node000001" title="class for 256&#45;bit unsigned integer" alt="" coords="5,109,80,135"/>
+<area shape="rect" id="Node000001" title="class for 256&#45;bit unsigned integer" alt="" coords="5,122,80,148"/>
 <area shape="rect" id="Node000002" href="$db/d9a/classuint128__t.html" title="class for 128&#45;bit unsigned integer" alt="" coords="5,5,80,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="45,47,45,109,40,109,40,47"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="45,47,45,122,40,122,40,47"/>
 </map>

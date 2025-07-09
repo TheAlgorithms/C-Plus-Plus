@@ -1,8 +1,8 @@
 <map id="others::lru_cache::LRUCache" name="others::lru_cache::LRUCache">
-<area shape="rect" id="Node000001" title="LRU cache class." alt="" coords="501,5,630,46"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,22,140,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,27,164,27,320,21,477,20,500,21,500,26,477,26,320,26,164,32,155,33"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="245,46,396,102"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="156,45,245,59,244,65,155,50"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="411,53,500,36,501,41,412,59"/>
+<area shape="rect" id="Node000001" title="LRU cache class." alt="" coords="509,24,638,65"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,39,140,65"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,37,163,36,324,26,485,31,509,33,508,38,485,36,324,31,164,42,155,42"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="249,63,400,119"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="155,62,249,77,248,82,154,68"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="415,71,508,54,509,59,416,77"/>
 </map>

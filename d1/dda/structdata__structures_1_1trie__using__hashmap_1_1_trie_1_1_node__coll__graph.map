@@ -1,8 +1,8 @@
 <map id="data_structures::trie_using_hashmap::Trie::Node" name="data_structures::trie_using_hashmap::Trie::Node">
-<area shape="rect" id="Node000001" title="struct representing a trie node." alt="" coords="5,58,194,99"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="261,5,423,61"/>
-<area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="209,55,260,46,261,51,210,61"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="528,36,695,121"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="512,87,423,91,261,91,194,88,194,82,261,86,423,86,512,82"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="439,47,528,62,527,67,438,52"/>
+<area shape="rect" id="Node000001" title="struct representing a trie node." alt="" coords="5,66,194,107"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="265,5,427,61"/>
+<area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="208,60,264,48,265,53,209,65"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="536,44,703,129"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="520,95,427,99,265,99,194,96,194,90,265,94,427,94,520,90"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="443,49,536,68,535,73,442,54"/>
 </map>

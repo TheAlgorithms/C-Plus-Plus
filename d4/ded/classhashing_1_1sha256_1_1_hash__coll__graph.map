@@ -1,5 +1,5 @@
 <map id="hashing::sha256::Hash" name="hashing::sha256::Hash">
-<area shape="rect" id="Node000001" title="Contains hash array and functions to update it and convert it to a hexadecimal string." alt="" coords="5,109,161,135"/>
+<area shape="rect" id="Node000001" title="Contains hash array and functions to update it and convert it to a hexadecimal string." alt="" coords="5,117,161,143"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="21,5,145,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,61,86,109,80,109,80,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,62,86,117,80,117,80,62"/>
 </map>

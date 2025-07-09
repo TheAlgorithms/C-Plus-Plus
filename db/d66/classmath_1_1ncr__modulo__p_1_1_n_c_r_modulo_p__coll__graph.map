@@ -1,5 +1,5 @@
 <map id="math::ncr_modulo_p::NCRModuloP" name="math::ncr_modulo_p::NCRModuloP">
-<area shape="rect" id="Node000001" title="Class which contains all methods required for calculating nCr mod p." alt="" coords="9,94,148,135"/>
+<area shape="rect" id="Node000001" title="Class which contains all methods required for calculating nCr mod p." alt="" coords="9,102,148,143"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,5,152,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,46,81,93,76,93,76,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,46,81,102,76,102,76,46"/>
 </map>

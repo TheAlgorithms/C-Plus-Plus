@@ -1,9 +1,9 @@
 <map id="Node&lt; ValueType &gt;" name="Node&lt; ValueType &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="13,198,149,223"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="13,214,149,239"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,5,157,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,61,75,97,75,135,82,197,76,197,69,135,70,96,73,61"/>
-<area shape="rect" id="Node000003" href="$db/d8b/struct_node.html" title=" " alt="" coords="113,109,249,135"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="115,55,170,107,167,111,111,59"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,147,97,199,93,195,154,143"/>
-<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="266,114,276,122,268,130,250,132,249,127,265,125,271,122,263,118"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,62,75,101,75,143,82,213,77,214,69,143,70,101,73,62"/>
+<area shape="rect" id="Node000003" href="$db/d8b/struct_node.html" title=" " alt="" coords="117,117,253,143"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="114,55,175,115,171,119,110,59"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,155,96,215,93,211,159,151"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="270,121,280,130,272,138,254,141,253,136,269,133,275,130,267,126"/>
 </map>

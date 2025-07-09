@@ -1,5 +1,5 @@
 <map id="range_queries::fenwick_tree" name="range_queries::fenwick_tree">
-<area shape="rect" id="Node000001" title="The class that initializes the Fenwick Tree." alt="" coords="5,94,190,120"/>
+<area shape="rect" id="Node000001" title="The class that initializes the Fenwick Tree." alt="" coords="5,102,190,128"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="37,5,158,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,47,100,94,95,94,95,47"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,46,100,101,95,101,95,46"/>
 </map>

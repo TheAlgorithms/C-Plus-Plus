@@ -1,5 +1,5 @@
 <map id="others::Cache::D_Node&lt; T &gt;" name="others::Cache::D_Node&lt; T &gt;">
-<area shape="rect" id="Node000001" title="Node for a doubly linked list with data, prev and next pointers." alt="" coords="5,94,197,120"/>
+<area shape="rect" id="Node000001" title="Node for a doubly linked list with data, prev and next pointers." alt="" coords="5,102,197,128"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="82,5,120,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,47,104,94,98,94,98,47"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,46,104,101,98,101,98,46"/>
 </map>

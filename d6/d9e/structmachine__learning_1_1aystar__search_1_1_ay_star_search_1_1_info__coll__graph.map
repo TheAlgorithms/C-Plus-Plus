@@ -1,5 +1,5 @@
 <map id="machine_learning::aystar_search::AyStarSearch&lt; Puzzle &gt;::Info" name="machine_learning::aystar_search::AyStarSearch&lt; Puzzle &gt;::Info">
-<area shape="rect" id="Node000001" title="Struct that handles all the information related to the current state." alt="" coords="8,94,175,150"/>
+<area shape="rect" id="Node000001" title="Struct that handles all the information related to the current state." alt="" coords="8,102,175,158"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,5,178,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,47,94,93,89,93,89,47"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,47,94,101,89,101,89,47"/>
 </map>

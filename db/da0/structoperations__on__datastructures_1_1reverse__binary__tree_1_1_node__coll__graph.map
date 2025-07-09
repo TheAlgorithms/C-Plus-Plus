@@ -1,4 +1,4 @@
 <map id="operations_on_datastructures::reverse_binary_tree::Node" name="operations_on_datastructures::reverse_binary_tree::Node">
-<area shape="rect" id="Node000001" title="A Node struct that represents a single node in a Binary Tree." alt="" coords="5,5,198,46"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="214,18,224,26,216,32,199,35,198,30,214,28,219,26,212,23"/>
+<area shape="rect" id="Node000001" title="A Node struct that represents a single node in a Binary Tree." alt="" coords="5,7,198,47"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="214,20,224,27,216,34,199,37,198,31,214,29,219,27,212,24"/>
 </map>

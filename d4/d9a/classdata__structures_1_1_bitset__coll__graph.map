@@ -1,5 +1,5 @@
 <map id="data_structures::Bitset" name="data_structures::Bitset">
-<area shape="rect" id="Node000001" title="Simple bitset implementation for bloom filter." alt="" coords="13,94,166,120"/>
+<area shape="rect" id="Node000001" title="Simple bitset implementation for bloom filter." alt="" coords="13,102,166,128"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,5,174,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,47,92,94,87,94,87,47"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,46,92,101,87,101,87,46"/>
 </map>

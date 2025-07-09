@@ -1,10 +1,10 @@
 <map id="data_structures::trie_using_hashmap::Trie" name="data_structures::trie_using_hashmap::Trie">
-<area shape="rect" id="Node000001" title="Trie class, implementation of trie using hashmap in each trie node for all the characters of char16_t..." alt="" coords="286,5,435,46"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,84,168,140"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,80,293,44,294,49,183,85"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="277,70,444,155"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="183,110,276,110,276,115,183,115"/>
-<area shape="rect" id="Node000003" href="$d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html" title="struct representing a trie node." alt="" coords="541,152,729,193"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="526,189,405,195,340,193,276,185,208,167,147,143,149,138,210,162,277,179,341,187,405,190,526,184"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="460,131,541,149,540,154,459,136"/>
+<area shape="rect" id="Node000001" title="Trie class, implementation of trie using hashmap in each trie node for all the characters of char16_t..." alt="" coords="290,5,439,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,85,168,140"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,80,296,44,297,49,184,85"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="281,70,448,155"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="183,110,280,110,280,115,183,115"/>
+<area shape="rect" id="Node000003" href="$d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html" title="struct representing a trie node." alt="" coords="549,160,737,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="534,198,411,204,345,201,280,193,206,171,141,143,143,138,208,166,281,187,346,196,411,199,533,193"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="464,134,557,157,556,162,463,139"/>
 </map>

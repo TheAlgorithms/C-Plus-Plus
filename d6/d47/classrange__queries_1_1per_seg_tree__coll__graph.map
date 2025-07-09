@@ -1,12 +1,12 @@
 <map id="range_queries::perSegTree" name="range_queries::perSegTree">
-<area shape="rect" id="Node000001" title="Range query here is range sum, but the code can be modified to make different queries like range max ..." alt="" coords="549,127,726,153"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="264,5,475,61"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="460,65,476,71,606,124,604,129,474,76,458,69"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,67,159,122"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="173,62,182,60,263,44,264,49,183,65,174,67"/>
-<area shape="rect" id="Node000004" href="$d5/d66/classrange__queries_1_1per_seg_tree_1_1_node.html" title=" " alt="" coords="281,85,458,126"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="175,95,280,99,280,105,174,101"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="287,132,240,141,211,145,182,141,135,125,137,120,183,136,211,139,239,136,286,127"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="296,150,442,175"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="458,152,548,145,549,150,458,158"/>
+<area shape="rect" id="Node000001" title="Range query here is range sum, but the code can be modified to make different queries like range max ..." alt="" coords="557,124,734,150"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="268,5,479,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="463,64,610,121,608,126,461,69"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,79,159,134"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="151,70,182,59,267,41,268,46,183,64,153,75"/>
+<area shape="rect" id="Node000004" href="$d5/d66/classrange__queries_1_1per_seg_tree_1_1_node.html" title=" " alt="" coords="285,86,462,127"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="174,104,284,104,284,109,174,109"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="279,136,269,141,258,151,245,161,213,167,182,161,152,151,125,137,127,132,154,146,183,156,213,162,243,156,254,147,266,136,277,131"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="300,151,446,177"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="462,153,556,143,557,149,462,158"/>
 </map>

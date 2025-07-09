@@ -1,10 +1,10 @@
 <map id="binary_search_tree&lt; T &gt;" name="binary_search_tree&lt; T &gt;">
-<area shape="rect" id="Node000001" title="The Binary Search Tree class." alt="" coords="5,132,169,157"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="70,5,240,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,59,116,71,101,103,92,132,87,130,96,101,112,69,121,56"/>
-<area shape="rect" id="Node000003" href="$dd/db6/structbinary__search__tree_1_1bst__node.html" title="A struct to represent a node in the Binary Search Tree." alt="" coords="193,124,325,165"/>
-<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="160,61,166,81,176,98,189,111,205,121,202,126,186,115,172,102,161,83,155,62"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="235,113,202,72,178,49,181,45,206,68,239,109"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="264,13,302,38"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="280,54,266,124,260,123,275,53"/>
+<area shape="rect" id="Node000001" title="The Binary Search Tree class." alt="" coords="5,145,169,170"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="88,5,257,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,57,111,72,101,90,95,110,90,145,85,144,90,109,96,88,106,68,120,54"/>
+<area shape="rect" id="Node000003" href="$dd/db6/structbinary__search__tree_1_1bst__node.html" title="A struct to represent a node in the Binary Search Tree." alt="" coords="193,137,325,178"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="168,61,169,88,178,112,188,125,202,135,199,139,185,128,173,115,164,89,163,62"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="242,125,211,72,191,48,195,45,216,68,247,122"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="281,13,320,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="294,54,268,138,263,136,289,52"/>
 </map>

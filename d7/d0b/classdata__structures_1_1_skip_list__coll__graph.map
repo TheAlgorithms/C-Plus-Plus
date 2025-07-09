@@ -1,10 +1,10 @@
 <map id="data_structures::SkipList" name="data_structures::SkipList">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,124,172,150"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,132,172,158"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="204,5,349,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,56,111,126,108,121,228,52"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="196,109,357,165"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="279,62,279,109,274,109,274,62"/>
-<area shape="rect" id="Node000003" href="$d9/d49/structdata__structures_1_1_node.html" title=" " alt="" coords="265,228,416,253"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="361,215,367,203,375,177,377,156,374,136,366,110,357,91,343,75,311,49,315,45,347,71,361,88,371,108,379,134,382,156,380,178,372,205,366,217"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="304,177,335,226,331,228,300,180"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,57,109,134,107,129,231,52"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="196,117,357,173"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="279,61,279,116,274,116,274,61"/>
+<area shape="rect" id="Node000003" href="$d9/d49/structdata__structures_1_1_node.html" title=" " alt="" coords="265,244,416,269"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="364,231,371,219,379,191,380,169,366,118,357,93,341,72,312,49,316,44,345,68,362,90,371,116,385,169,385,192,376,221,369,233"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="302,185,336,242,331,245,298,187"/>
 </map>

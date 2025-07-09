@@ -1,9 +1,9 @@
 <map id="graph::Graph&lt; T &gt;" name="graph::Graph&lt; T &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="126,213,255,238"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,109,147,150"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,161,123,187,161,210,159,214,119,191,95,164"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="124,234,252,260"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,122,147,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,176,115,208,133,221,152,231,150,236,130,226,111,212,87,179"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="57,5,95,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,47,79,109,73,109,73,47"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="171,109,328,150"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="231,164,200,214,196,211,227,162"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,47,79,122,73,122,73,47"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="171,122,328,163"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="232,178,197,235,193,232,228,175"/>
 </map>

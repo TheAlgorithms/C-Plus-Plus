@@ -1,9 +1,9 @@
 <map id="machine_learning::aystar_search::EightPuzzle&lt; N &gt;" name="machine_learning::aystar_search::EightPuzzle&lt; N &gt;">
-<area shape="rect" id="Node000001" title="A class defining EightPuzzle/15&#45;Puzzle game." alt="" coords="461,37,640,78"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="227,5,370,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="386,34,461,44,460,49,385,39"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="227,71,370,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="384,77,460,67,461,72,385,82"/>
+<area shape="rect" id="Node000001" title="A class defining EightPuzzle/15&#45;Puzzle game." alt="" coords="469,37,648,78"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="231,5,374,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="390,34,469,44,468,49,389,39"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="231,71,374,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="389,77,468,67,469,72,390,82"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="5,71,122,111"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="138,88,227,88,227,94,138,94"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="137,88,231,88,231,94,137,94"/>
 </map>

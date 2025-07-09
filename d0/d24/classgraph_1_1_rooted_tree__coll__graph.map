@@ -1,13 +1,13 @@
 <map id="graph::RootedTree" name="graph::RootedTree">
-<area shape="rect" id="Node000001" title=" " alt="" coords="173,316,302,342"/>
-<area shape="rect" id="Node000002" href="$dc/d61/classgraph_1_1_graph.html" title=" " alt="" coords="98,213,227,238"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,249,231,314,226,317,178,252"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,109,147,150"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,159,154,211,150,214,102,163"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="173,351,302,377"/>
+<area shape="rect" id="Node000002" href="$dc/d61/classgraph_1_1_graph.html" title=" " alt="" coords="98,234,227,260"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,271,232,349,227,352,176,274"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,122,147,163"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,174,131,208,153,232,149,236,127,212,98,177"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="57,5,95,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="79,47,79,109,73,109,73,47"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="171,109,328,150"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="239,165,222,191,190,214,187,210,218,187,234,163"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="251,213,373,238"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="296,252,248,317,244,314,292,249"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="79,47,79,122,73,122,73,47"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="171,122,328,163"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="241,179,222,212,191,236,187,231,218,208,236,177"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="251,234,373,260"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="298,274,247,352,243,349,294,271"/>
 </map>

@@ -1,9 +1,9 @@
 <map id="strings::boyer_moore::pattern" name="strings::boyer_moore::pattern">
-<area shape="rect" id="Node000001" title="A structure representing all the data we need to search the preprocessed pattern in text." alt="" coords="64,199,208,240"/>
+<area shape="rect" id="Node000001" title="A structure representing all the data we need to search the preprocessed pattern in text." alt="" coords="63,212,206,253"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="28,95,108,121"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,133,126,197,122,200,81,136"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,134,126,211,122,213,80,136"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,5,131,46"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="71,61,71,95,65,95,65,61"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="132,95,274,121"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="190,136,150,200,146,197,185,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="191,136,148,213,143,211,186,134"/>
 </map>

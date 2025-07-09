@@ -1,8 +1,8 @@
 <map id="data_structures::tree_234::Node" name="data_structures::tree_234::Node">
-<area shape="rect" id="Node000001" title="2&#45;3&#45;4 tree node class" alt="" coords="24,94,165,135"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,198,184,238"/>
-<area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="57,147,49,160,48,169,50,178,65,195,61,199,46,181,42,169,44,158,53,144"/>
+<area shape="rect" id="Node000001" title="2&#45;3&#45;4 tree node class" alt="" coords="24,102,165,143"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,214,184,254"/>
+<area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="56,155,48,168,45,178,48,188,66,211,62,215,43,191,40,178,43,166,51,153"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="17,5,172,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,46,97,93,92,93,92,46"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="105,183,107,159,100,136,105,134,112,158,110,183"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,46,97,102,92,102,92,46"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="107,198,109,189,109,167,102,144,107,142,114,166,114,190,112,199"/>
 </map>

@@ -1,13 +1,13 @@
 <map id="stack&lt; ValueType &gt;" name="stack&lt; ValueType &gt;">
-<area shape="rect" id="Node000001" title="for std::invalid_argument" alt="" coords="5,213,143,238"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="78,109,230,150"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,161,85,175,77,194,76,213,71,212,72,193,80,172,94,158"/>
-<area shape="rect" id="Node000003" href="$db/d8b/struct_node.html" title=" " alt="" coords="167,213,306,238"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="160,164,171,187,185,200,202,210,199,214,182,204,167,190,155,166"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="220,201,201,175,177,152,181,148,205,172,224,198"/>
-<area shape="rect" id="Node000004" href="$db/d8b/struct_node.html" title=" " alt="" coords="254,116,390,142"/>
-<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="303,155,250,214,246,210,299,152"/>
-<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="407,120,417,129,409,138,391,141,390,136,406,133,412,129,404,125"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="246,5,398,46"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="325,61,325,116,319,116,319,61"/>
+<area shape="rect" id="Node000001" title="for std::invalid_argument" alt="" coords="5,229,143,254"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="80,117,231,158"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,169,81,183,74,206,74,228,69,228,68,205,76,180,89,165"/>
+<area shape="rect" id="Node000003" href="$db/d8b/struct_node.html" title=" " alt="" coords="167,229,306,254"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="158,172,161,189,168,203,182,216,199,226,196,230,179,220,164,206,156,190,152,174"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="223,216,203,183,179,160,183,156,207,180,227,213"/>
+<area shape="rect" id="Node000004" href="$db/d8b/struct_node.html" title=" " alt="" coords="255,124,392,150"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="305,164,249,230,245,226,301,161"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="409,128,418,137,410,146,393,150,392,145,408,142,413,137,405,132"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="248,5,399,46"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="326,62,326,124,321,124,321,62"/>
 </map>

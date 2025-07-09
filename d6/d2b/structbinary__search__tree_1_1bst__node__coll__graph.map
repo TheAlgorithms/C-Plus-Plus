@@ -1,11 +1,11 @@
 <map id="binary_search_tree&lt; T &gt;::bst_node" name="binary_search_tree&lt; T &gt;::bst_node">
-<area shape="rect" id="Node000001" title="A struct to represent a node in the Binary Search Tree." alt="" coords="5,331,137,372"/>
+<area shape="rect" id="Node000001" title="A struct to represent a node in the Binary Search Tree." alt="" coords="5,366,137,407"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="52,5,90,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,46,74,331,68,331,68,46"/>
-<area shape="rect" id="Node000004" href="$dd/db6/structbinary__search__tree_1_1bst__node.html" title="A struct to represent a node in the Binary Search Tree." alt="" coords="87,94,218,135"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="93,41,137,92,133,95,89,44"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="88,213,257,253"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,267,90,333,86,329,144,263"/>
-<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="164,197,153,135,158,134,169,197"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="141,150,139,169,141,188,155,211,151,214,136,190,133,169,136,150"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,47,74,366,68,366,68,47"/>
+<area shape="rect" id="Node000004" href="$dd/db6/structbinary__search__tree_1_1bst__node.html" title="A struct to represent a node in the Binary Search Tree." alt="" coords="87,102,218,143"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="92,42,139,100,135,103,88,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="88,234,257,275"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="150,289,88,367,84,364,146,286"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="164,219,156,167,153,143,158,143,162,166,170,218"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="140,158,135,184,139,209,153,232,149,235,133,211,130,183,135,157"/>
 </map>

@@ -1,7 +1,7 @@
 <map id="data_structures::treap::Treap" name="data_structures::treap::Treap">
-<area shape="rect" id="Node000001" title="Struct representation of the treap." alt="" coords="114,154,262,195"/>
+<area shape="rect" id="Node000001" title="Struct representation of the treap." alt="" coords="114,178,262,219"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,13,184,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,50,178,152,173,155,108,53"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,51,180,176,175,179,106,53"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="207,5,358,46"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="264,60,203,155,198,152,260,57"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="268,61,217,155,203,179,198,176,212,153,263,59"/>
 </map>

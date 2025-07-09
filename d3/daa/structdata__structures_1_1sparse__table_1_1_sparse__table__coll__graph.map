@@ -1,8 +1,8 @@
 <map id="data_structures::sparse_table::Sparse_table" name="data_structures::sparse_table::Sparse_table">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,198,164,238"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,216,164,257"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="6,5,163,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,47,77,94,78,150,84,197,79,197,73,150,72,94,77,46"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="114,94,258,135"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="110,40,166,91,163,95,107,44"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,147,106,199,102,195,154,144"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,46,77,102,79,164,84,216,79,216,73,165,72,102,78,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="122,103,266,144"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="110,40,175,101,171,105,106,44"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,157,106,218,102,214,162,153"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="data_structures::queue_using_array::Queue_Array" name="data_structures::queue_using_array::Queue_Array">
-<area shape="rect" id="Node000001" title="Queue_Array class containing the main data and also index of head and tail of the array." alt="" coords="5,109,185,150"/>
+<area shape="rect" id="Node000001" title="Queue_Array class containing the main data and also index of head and tail of the array." alt="" coords="5,117,185,158"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="29,5,161,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,62,98,109,92,109,92,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,61,98,117,92,117,92,61"/>
 </map>

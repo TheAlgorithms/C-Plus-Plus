@@ -1,7 +1,7 @@
 <map id="data_structures::Stack&lt; T &gt;" name="data_structures::Stack&lt; T &gt;">
-<area shape="rect" id="Node000001" title="Class representation of a stack." alt="" coords="5,183,191,208"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="26,94,170,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,135,101,182,95,182,95,135"/>
+<area shape="rect" id="Node000001" title="Class representation of a stack." alt="" coords="5,199,191,224"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="26,102,170,128"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,143,101,198,95,198,95,143"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="79,5,117,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="101,47,101,94,95,94,95,47"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="101,46,101,101,95,101,95,46"/>
 </map>

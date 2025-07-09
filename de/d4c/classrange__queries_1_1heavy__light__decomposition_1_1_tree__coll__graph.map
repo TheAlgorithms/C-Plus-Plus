@@ -1,13 +1,13 @@
 <map id="range_queries::heavy_light_decomposition::Tree&lt; X &gt;" name="range_queries::heavy_light_decomposition::Tree&lt; X &gt;">
-<area shape="rect" id="Node000001" title="A Basic Tree, which supports binary lifting." alt="" coords="465,94,610,150"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="222,5,360,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="361,50,466,91,464,96,359,54"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,13,108,38"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,23,222,23,222,28,123,28"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="213,71,370,111"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="386,100,465,110,464,115,385,105"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="231,140,352,165"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="367,149,441,142,464,138,465,143,441,148,368,154"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="233,189,350,214"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="364,188,440,167,485,148,488,152,442,173,366,193"/>
+<area shape="rect" id="Node000001" title="A Basic Tree, which supports binary lifting." alt="" coords="473,103,618,159"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="226,8,364,49"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="380,51,450,78,496,100,493,105,448,83,378,56"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,16,108,41"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,26,226,26,226,31,123,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="217,73,374,114"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="390,105,473,118,472,123,389,110"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="235,156,356,181"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="371,169,449,162,472,157,473,162,449,168,372,174"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="237,209,354,234"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="369,215,409,209,448,197,482,179,512,157,515,161,485,183,450,202,410,214,370,221"/>
 </map>

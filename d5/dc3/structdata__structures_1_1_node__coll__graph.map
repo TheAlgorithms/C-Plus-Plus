@@ -1,8 +1,8 @@
 <map id="data_structures::Node" name="data_structures::Node">
-<area shape="rect" id="Node000001" title=" " alt="" coords="63,5,213,31"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,94,151,135"/>
-<area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="124,45,93,95,88,92,120,43"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="59,198,220,253"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,183,170,173,174,133,167,94,155,59,143,33,147,30,160,57,173,92,180,133,175,174,171,185"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,147,126,196,122,199,94,150"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="64,5,214,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,102,151,143"/>
+<area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="127,46,92,103,87,100,122,43"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="58,214,218,269"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,200,175,189,180,167,181,145,173,100,159,61,144,33,149,30,163,59,178,99,186,144,186,168,181,191,175,202"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="97,155,126,212,122,214,92,157"/>
 </map>

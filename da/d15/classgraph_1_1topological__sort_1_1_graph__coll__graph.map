@@ -1,5 +1,5 @@
 <map id="graph::topological_sort::Graph" name="graph::topological_sort::Graph">
-<area shape="rect" id="Node000001" title="Class that represents a directed graph and provides methods for manipulating the graph." alt="" coords="22,109,146,150"/>
+<area shape="rect" id="Node000001" title="Class that represents a directed graph and provides methods for manipulating the graph." alt="" coords="22,117,146,158"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,5,163,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,62,87,109,81,109,81,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,61,87,117,81,117,81,61"/>
 </map>
