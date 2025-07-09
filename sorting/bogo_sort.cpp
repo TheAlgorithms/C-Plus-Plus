@@ -34,10 +34,11 @@ namespace sorting {
  * @returns new array with elements shuffled from a given array
  */
 template <typename T, size_t N>
+//Fisher-Yates shuffle
 std::array <T, N> shuffle (std::array <T, N> arr) {
-    for (int i = 0; i < N; i++) {
-        // Swaps i'th  index with random index (less than array size)
-        std::swap(arr[i], arr[std::rand() % N]);
+    for (int i = N-1; i >=0; i--) {
+        // Swaps i'th  index with random index (less or equal than i)
+        std::swap(arr[i], arr[std::rand() % (i+1)]);
     }
     return arr;
 }
