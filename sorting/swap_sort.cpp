@@ -1,68 +1,62 @@
-// C++ program to find minimum number of swaps required to sort an array
-#include <algorithm>
+#include <algorithm>  // for sort()
 #include <iostream>
-#include <utility>
 #include <vector>
 
-// Function returns the minimum number of swaps
-// required to sort the array
-int minSwaps(int arr[], int n) {
-    // Create an array of pairs where first
-    // element is array element and second element
-    // is position of first element
-    std::pair<int, int> *arrPos = new std::pair<int, int>[n];
+/**
+ * @brief Function to find the minimum number of swaps required to sort an array
+ * @param arr reference to the vector of integers
+ * @return minimum number of swaps needed
+ */
+int minSwaps(std::vector<int> &arr) {
+    int n = arr.size();
+
+    // Step 1: Create a vector of pairs.
+    // Each pair contains the value and its original index.
+    std::vector<std::pair<int, int>> pos(n);
     for (int i = 0; i < n; i++) {
-        arrPos[i].first = arr[i];
-        arrPos[i].second = i;
+        pos[i] = {arr[i], i};
     }
 
-    // Sort the array by array element values to
-    // get right position of every element as second
-    // element of pair.
-    std::sort(arrPos, arrPos + n);
+    // Step 2: Sort the vector based on the values.
+    // This gives us the target position of each element.
+    std::sort(pos.begin(), pos.end());
 
-    // To keep track of visited elements. Initialize
-    // all elements as not visited or false.
-    std::vector<bool> vis(n, false);
+    // Step 3: Track which elements have been visited.
+    std::vector<bool> visited(n, false);
+    int swaps = 0;
 
-    // Initialize result
-    int ans = 0;
-
-    // Traverse array elements
+    // Step 4: Traverse elements and count swaps using cycle detection.
     for (int i = 0; i < n; i++) {
-        // already swapped and corrected or
-        // already present at correct pos
-        if (vis[i] || arrPos[i].second == i)
+        // If already visited or already in correct place, skip it.
+        if (visited[i] || pos[i].second == i) {
             continue;
+        }
 
-        // find out the number of node in
-        // this cycle and add in ans
+        // Compute the size of the cycle.
         int cycle_size = 0;
         int j = i;
-        while (!vis[j]) {
-            vis[j] = 1;
-
-            // move to next node
-            j = arrPos[j].second;
+        while (!visited[j]) {
+            visited[j] = true;
+            j = pos[j].second;  // Move to the next index in the cycle.
             cycle_size++;
         }
 
-        // Update answer by adding current cycle.
-        if (cycle_size > 0) {
-            ans += (cycle_size - 1);
+        // If there is a cycle of size > 1, we need (cycle_size - 1) swaps.
+        if (cycle_size > 1) {
+            swaps += (cycle_size - 1);
         }
     }
 
-    delete[] arrPos;
-
-    // Return result
-    return ans;
+    return swaps;
 }
 
-// program to test
 int main() {
-    int arr[] = {6, 7, 8, 1, 2, 3, 9, 12};
-    int n = (sizeof(arr) / sizeof(int));
-    std::cout << minSwaps(arr, n);
+    // Example input array
+    std::vector<int> arr = {6, 7, 8, 1, 2, 3, 9, 12};
+
+    // Print the result
+    std::cout << "Minimum number of swaps required to sort the array: "
+              << minSwaps(arr) << std::endl;
+
     return 0;
 }
