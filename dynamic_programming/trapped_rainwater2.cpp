@@ -14,8 +14,8 @@
 #include <algorithm>  /// For std::min and std::max
 #include <cassert>    /// For assert
 #include <cstddef>    /// For std::size_t
-#include <cstdint>
-#include <vector>  /// For std::vector
+#include <cstdint>    /// For std::uint32_t
+#include <vector>     /// For std::vector
 
 /*
  * @namespace
