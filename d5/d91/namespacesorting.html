@@ -205,7 +205,7 @@ Functions</h2></td></tr>
 <p>Sorting algorithms</p>
 <p>for std::is_sorted(), std::swap() for std::array for assert for initializing random number generator for IO operations</p>
 <p>Sorting algorithms</p>
-<p>for std::is_sorted for std::array for IO operations for std::vector</p>
+<p>for std::is_sorted for IO operations for std::vector</p>
 <p>Sorting algorithms</p>
 <p>for std::is_sorted for IO operations for std::vector</p>
 <p>for std::is_sorted for assert for std::swap and io operations</p>
@@ -1127,21 +1127,21 @@ template&lt;typename T&gt; </div>
 <p>&lt; iterating over the entire array</p>
 <p>&lt; if a larger number appears before the smaller one, swap them.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/df9/recursive__bubble__sort_8cpp_source.html#l00084">84</a> of file <a class="el" href="../../d3/df9/recursive__bubble__sort_8cpp_source.html">recursive_bubble_sort.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   84</span>                                                           {</div>
-<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">if</span> (n == 1) {  </div>
-<div class="line"><span class="lineno">   86</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   87</span>    }</div>
-<div class="line"><span class="lineno">   88</span> </div>
-<div class="line"><span class="lineno">   89</span>    <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; n - 1; i++) {  </div>
-<div class="line"><span class="lineno">   91</span>        <span class="keywordflow">if</span> ((*nums)[i] &gt; (*nums)[i + 1]) {</div>
-<div class="line"><span class="lineno">   92</span>            std::swap((*nums)[i], (*nums)[i + 1]);</div>
-<div class="line"><span class="lineno">   93</span>        }</div>
-<div class="line"><span class="lineno">   94</span>    }</div>
-<div class="line"><span class="lineno">   95</span></div>
-<div class="line"><span class="lineno">   97</span>    <a class="code hl_function" href="#ae3a775d99dbbb94c130a973df0cfddcf">recursive_bubble_sort</a>(nums, n - 1);</div>
-<div class="line"><span class="lineno">   98</span>}</div>
-<div class="ttc" id="anamespacesorting_html_ae3a775d99dbbb94c130a973df0cfddcf"><div class="ttname"><a href="#ae3a775d99dbbb94c130a973df0cfddcf">sorting::recursive_bubble_sort</a></div><div class="ttdeci">void recursive_bubble_sort(std::vector&lt; T &gt; *nums, uint64_t n)</div><div class="ttdoc">This is an implementation of the recursive_bubble_sort. A vector is passed to the function which is t...</div><div class="ttdef"><b>Definition</b> <a href="../../d3/df9/recursive__bubble__sort_8cpp_source.html#l00084">recursive_bubble_sort.cpp:84</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d3/df9/recursive__bubble__sort_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../d3/df9/recursive__bubble__sort_8cpp_source.html">recursive_bubble_sort.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   83</span>                                                           {</div>
+<div class="line"><span class="lineno">   84</span>    <span class="keywordflow">if</span> (n == 1) {  </div>
+<div class="line"><span class="lineno">   85</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   86</span>    }</div>
+<div class="line"><span class="lineno">   87</span> </div>
+<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; n - 1; i++) {  </div>
+<div class="line"><span class="lineno">   90</span>        <span class="keywordflow">if</span> ((*nums)[i] &gt; (*nums)[i + 1]) {</div>
+<div class="line"><span class="lineno">   91</span>            std::swap((*nums)[i], (*nums)[i + 1]);</div>
+<div class="line"><span class="lineno">   92</span>        }</div>
+<div class="line"><span class="lineno">   93</span>    }</div>
+<div class="line"><span class="lineno">   94</span></div>
+<div class="line"><span class="lineno">   96</span>    <a class="code hl_function" href="#ae3a775d99dbbb94c130a973df0cfddcf">recursive_bubble_sort</a>(nums, n - 1);</div>
+<div class="line"><span class="lineno">   97</span>}</div>
+<div class="ttc" id="anamespacesorting_html_ae3a775d99dbbb94c130a973df0cfddcf"><div class="ttname"><a href="#ae3a775d99dbbb94c130a973df0cfddcf">sorting::recursive_bubble_sort</a></div><div class="ttdeci">void recursive_bubble_sort(std::vector&lt; T &gt; *nums, uint64_t n)</div><div class="ttdoc">This is an implementation of the recursive_bubble_sort. A vector is passed to the function which is t...</div><div class="ttdef"><b>Definition</b> <a href="../../d3/df9/recursive__bubble__sort_8cpp_source.html#l00083">recursive_bubble_sort.cpp:83</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
