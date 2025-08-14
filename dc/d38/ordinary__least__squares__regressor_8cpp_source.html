@@ -437,111 +437,109 @@ $(function(){initNavTree('dc/d38/ordinary__least__squares__regressor_8cpp_source
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span></div>
 <div class="foldopen" id="foldopen00369" data-start="{" data-end="}">
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno"><a class="line" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a4261f3c3c3dfdb86f3004eb8aaffea8d">  369</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a4261f3c3c3dfdb86f3004eb8aaffea8d">ols_test</a>() {</div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>    <span class="keywordtype">int</span> F = 3, N = 5;</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span> </div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>    <span class="comment">/* test function = x^2 -5 */</span></div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 1 (quadratic function)....&quot;</span>;</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>    <span class="comment">// create training data set with features = x, x^2, x^3</span></div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    std::vector&lt;std::vector&lt;float&gt;&gt; data1(</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>        {{-5, 25, -125}, {-1, 1, -1}, {0, 0, 0}, {1, 1, 1}, {6, 36, 216}});</div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    <span class="comment">// create corresponding outputs</span></div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    std::vector&lt;float&gt; Y1({20, -4, -5, -4, 31});</div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    <span class="comment">// perform regression modelling</span></div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>    std::vector&lt;float&gt; beta1 = <a class="code hl_function" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#aaddc683af581b51351e1023d2a01ef3b">fit_OLS_regressor</a>(data1, Y1);</div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    <span class="comment">// create test data set with same features = x, x^2, x^3</span></div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    std::vector&lt;std::vector&lt;float&gt;&gt; test_data1(</div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>        {{-2, 4, -8}, {2, 4, 8}, {-10, 100, -1000}, {10, 100, 1000}});</div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>    <span class="comment">// expected regression outputs</span></div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    std::vector&lt;float&gt; expected1({-1, -1, 95, 95});</div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>    <span class="comment">// predicted regression outputs</span></div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    std::vector&lt;float&gt; out1 = <a class="code hl_function" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#ade6e463f37878fe2a219f927c65b5493">predict_OLS_regressor</a>(test_data1, beta1);</div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    <span class="comment">// compare predicted results are within +-0.01 limit of expected</span></div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; out1.size(); rows++) {</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>        assert(std::abs(out1[rows] - expected1[rows]) &lt; 0.01);</div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    }</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span> </div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>    <span class="comment">/* test function = x^3 + x^2 - 100 */</span></div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 2 (cubic function)....&quot;</span>;</div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    <span class="comment">// create training data set with features = x, x^2, x^3</span></div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>    std::vector&lt;std::vector&lt;float&gt;&gt; data2(</div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>        {{-5, 25, -125}, {-1, 1, -1}, {0, 0, 0}, {1, 1, 1}, {6, 36, 216}});</div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    <span class="comment">// create corresponding outputs</span></div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>    std::vector&lt;float&gt; Y2({-200, -100, -100, 98, 152});</div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>    <span class="comment">// perform regression modelling</span></div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>    std::vector&lt;float&gt; beta2 = <a class="code hl_function" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#aaddc683af581b51351e1023d2a01ef3b">fit_OLS_regressor</a>(data2, Y2);</div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    <span class="comment">// create test data set with same features = x, x^2, x^3</span></div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    std::vector&lt;std::vector&lt;float&gt;&gt; test_data2(</div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>        {{-2, 4, -8}, {2, 4, 8}, {-10, 100, -1000}, {10, 100, 1000}});</div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>    <span class="comment">// expected regression outputs</span></div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>    std::vector&lt;float&gt; expected2({-104, -88, -1000, 1000});</div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>    <span class="comment">// predicted regression outputs</span></div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    std::vector&lt;float&gt; out2 = <a class="code hl_function" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#ade6e463f37878fe2a219f927c65b5493">predict_OLS_regressor</a>(test_data2, beta2);</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>    <span class="comment">// compare predicted results are within +-0.01 limit of expected</span></div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; out2.size(); rows++) {</div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>        assert(std::abs(out2[rows] - expected2[rows]) &lt; 0.01);</div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>    }</div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span> </div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>    std::cout &lt;&lt; std::endl;  <span class="comment">// ensure test results are displayed on screen</span></div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>                             <span class="comment">// (flush stdout)</span></div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>}</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>    <span class="comment">/* test function = x^2 -5 */</span></div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 1 (quadratic function)....&quot;</span>;</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>    <span class="comment">// create training data set with features = x, x^2, x^3</span></div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>    std::vector&lt;std::vector&lt;float&gt;&gt; data1(</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>        {{-5, 25, -125}, {-1, 1, -1}, {0, 0, 0}, {1, 1, 1}, {6, 36, 216}});</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    <span class="comment">// create corresponding outputs</span></div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    std::vector&lt;float&gt; Y1({20, -4, -5, -4, 31});</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    <span class="comment">// perform regression modelling</span></div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    std::vector&lt;float&gt; beta1 = <a class="code hl_function" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#aaddc683af581b51351e1023d2a01ef3b">fit_OLS_regressor</a>(data1, Y1);</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    <span class="comment">// create test data set with same features = x, x^2, x^3</span></div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>    std::vector&lt;std::vector&lt;float&gt;&gt; test_data1(</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>        {{-2, 4, -8}, {2, 4, 8}, {-10, 100, -1000}, {10, 100, 1000}});</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    <span class="comment">// expected regression outputs</span></div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    std::vector&lt;float&gt; expected1({-1, -1, 95, 95});</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>    <span class="comment">// predicted regression outputs</span></div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    std::vector&lt;float&gt; out1 = <a class="code hl_function" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#ade6e463f37878fe2a219f927c65b5493">predict_OLS_regressor</a>(test_data1, beta1);</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>    <span class="comment">// compare predicted results are within +-0.01 limit of expected</span></div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; out1.size(); rows++) {</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>        assert(std::abs(out1[rows] - expected1[rows]) &lt; 0.01);</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    }</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span> </div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    <span class="comment">/* test function = x^3 + x^2 - 100 */</span></div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Test 2 (cubic function)....&quot;</span>;</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>    <span class="comment">// create training data set with features = x, x^2, x^3</span></div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>    std::vector&lt;std::vector&lt;float&gt;&gt; data2(</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>        {{-5, 25, -125}, {-1, 1, -1}, {0, 0, 0}, {1, 1, 1}, {6, 36, 216}});</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>    <span class="comment">// create corresponding outputs</span></div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>    std::vector&lt;float&gt; Y2({-200, -100, -100, 98, 152});</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    <span class="comment">// perform regression modelling</span></div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>    std::vector&lt;float&gt; beta2 = <a class="code hl_function" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#aaddc683af581b51351e1023d2a01ef3b">fit_OLS_regressor</a>(data2, Y2);</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>    <span class="comment">// create test data set with same features = x, x^2, x^3</span></div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>    std::vector&lt;std::vector&lt;float&gt;&gt; test_data2(</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>        {{-2, 4, -8}, {2, 4, 8}, {-10, 100, -1000}, {10, 100, 1000}});</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    <span class="comment">// expected regression outputs</span></div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>    std::vector&lt;float&gt; expected2({-104, -88, -1000, 1000});</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>    <span class="comment">// predicted regression outputs</span></div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>    std::vector&lt;float&gt; out2 = <a class="code hl_function" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#ade6e463f37878fe2a219f927c65b5493">predict_OLS_regressor</a>(test_data2, beta2);</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>    <span class="comment">// compare predicted results are within +-0.01 limit of expected</span></div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; out2.size(); rows++) {</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>        assert(std::abs(out2[rows] - expected2[rows]) &lt; 0.01);</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    }</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span> </div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>    std::cout &lt;&lt; std::endl;  <span class="comment">// ensure test results are displayed on screen</span></div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>                             <span class="comment">// (flush stdout)</span></div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>}</div>
 </div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span></div>
-<div class="foldopen" id="foldopen00423" data-start="{" data-end="}">
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno"><a class="line" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">  423</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
-<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>    <a class="code hl_function" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a4261f3c3c3dfdb86f3004eb8aaffea8d">ols_test</a>();</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span></div>
+<div class="foldopen" id="foldopen00421" data-start="{" data-end="}">
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno"><a class="line" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">  421</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>    <a class="code hl_function" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a4261f3c3c3dfdb86f3004eb8aaffea8d">ols_test</a>();</div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span> </div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>    <span class="keywordtype">size_t</span> N = 0, F = 0;</div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span> </div>
-<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>    <span class="keywordtype">size_t</span> N = 0, F = 0;</div>
-<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span> </div>
-<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter number of features: &quot;</span>;</div>
-<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>    <span class="comment">// number of features = columns</span></div>
-<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>    std::cin &gt;&gt; F;</div>
-<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter number of samples: &quot;</span>;</div>
-<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>    <span class="comment">// number of samples = rows</span></div>
-<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>    std::cin &gt;&gt; N;</div>
-<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span> </div>
-<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>    std::vector&lt;std::vector&lt;float&gt;&gt; <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>(N);</div>
-<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>    std::vector&lt;float&gt; Y(N);</div>
-<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span> </div>
-<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>    std::cout</div>
-<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>        &lt;&lt; <span class="stringliteral">&quot;Enter training data. Per sample, provide features and one output.&quot;</span></div>
-<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>        &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span> </div>
-<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; N; rows++) {</div>
-<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>        std::vector&lt;float&gt; v(F);</div>
-<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Sample# &quot;</span> &lt;&lt; rows + 1 &lt;&lt; <span class="stringliteral">&quot;: &quot;</span>;</div>
-<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> cols = 0; cols &lt; F; cols++) {</div>
-<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>            <span class="comment">// get the F features</span></div>
-<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>            std::cin &gt;&gt; v[cols];</div>
-<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>        }</div>
-<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>        <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>[rows] = v;</div>
-<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>        <span class="comment">// get the corresponding output</span></div>
-<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>        std::cin &gt;&gt; Y[rows];</div>
-<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>    }</div>
-<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span> </div>
-<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>    std::vector&lt;float&gt; beta = <a class="code hl_function" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#aaddc683af581b51351e1023d2a01ef3b">fit_OLS_regressor</a>(<a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>, Y);</div>
-<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>    std::cout &lt;&lt; std::endl &lt;&lt; std::endl &lt;&lt; <span class="stringliteral">&quot;beta:&quot;</span> &lt;&lt; beta &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span> </div>
-<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>    <span class="keywordtype">size_t</span> T = 0;</div>
-<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter number of test samples: &quot;</span>;</div>
-<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>    <span class="comment">// number of test sample inputs</span></div>
-<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span>    std::cin &gt;&gt; T;</div>
-<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>    std::vector&lt;std::vector&lt;float&gt;&gt; data2(T);</div>
-<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>    <span class="comment">// vector&lt;float&gt; Y2(T);</span></div>
-<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span> </div>
-<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; T; rows++) {</div>
-<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Sample# &quot;</span> &lt;&lt; rows + 1 &lt;&lt; <span class="stringliteral">&quot;: &quot;</span>;</div>
-<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>        std::vector&lt;float&gt; v(F);</div>
-<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> cols = 0; cols &lt; F; cols++) std::cin &gt;&gt; v[cols];</div>
-<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>        data2[rows] = v;</div>
-<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>    }</div>
-<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span> </div>
-<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>    std::vector&lt;float&gt; out = <a class="code hl_function" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#ade6e463f37878fe2a219f927c65b5493">predict_OLS_regressor</a>(data2, beta);</div>
-<div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; T; rows++) std::cout &lt;&lt; out[rows] &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span> </div>
-<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>}</div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter number of features: &quot;</span>;</div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>    <span class="comment">// number of features = columns</span></div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>    std::cin &gt;&gt; F;</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter number of samples: &quot;</span>;</div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>    <span class="comment">// number of samples = rows</span></div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>    std::cin &gt;&gt; N;</div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span> </div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>    std::vector&lt;std::vector&lt;float&gt;&gt; <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>(N);</div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>    std::vector&lt;float&gt; Y(N);</div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span> </div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>    std::cout</div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>        &lt;&lt; <span class="stringliteral">&quot;Enter training data. Per sample, provide features and one output.&quot;</span></div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>        &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span> </div>
+<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; N; rows++) {</div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>        std::vector&lt;float&gt; v(F);</div>
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Sample# &quot;</span> &lt;&lt; rows + 1 &lt;&lt; <span class="stringliteral">&quot;: &quot;</span>;</div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> cols = 0; cols &lt; F; cols++) {</div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>            <span class="comment">// get the F features</span></div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>            std::cin &gt;&gt; v[cols];</div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>        }</div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>        <a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>[rows] = v;</div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>        <span class="comment">// get the corresponding output</span></div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>        std::cin &gt;&gt; Y[rows];</div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>    }</div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span> </div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>    std::vector&lt;float&gt; beta = <a class="code hl_function" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#aaddc683af581b51351e1023d2a01ef3b">fit_OLS_regressor</a>(<a class="code hl_variable" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>, Y);</div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>    std::cout &lt;&lt; std::endl &lt;&lt; std::endl &lt;&lt; <span class="stringliteral">&quot;beta:&quot;</span> &lt;&lt; beta &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span> </div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>    <span class="keywordtype">size_t</span> T = 0;</div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter number of test samples: &quot;</span>;</div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>    <span class="comment">// number of test sample inputs</span></div>
+<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>    std::cin &gt;&gt; T;</div>
+<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>    std::vector&lt;std::vector&lt;float&gt;&gt; data2(T);</div>
+<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span>    <span class="comment">// vector&lt;float&gt; Y2(T);</span></div>
+<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span> </div>
+<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; T; rows++) {</div>
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Sample# &quot;</span> &lt;&lt; rows + 1 &lt;&lt; <span class="stringliteral">&quot;: &quot;</span>;</div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>        std::vector&lt;float&gt; v(F);</div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> cols = 0; cols &lt; F; cols++) std::cin &gt;&gt; v[cols];</div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>        data2[rows] = v;</div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>    }</div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span> </div>
+<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>    std::vector&lt;float&gt; out = <a class="code hl_function" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#ade6e463f37878fe2a219f927c65b5493">predict_OLS_regressor</a>(data2, beta);</div>
+<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; T; rows++) std::cout &lt;&lt; out[rows] &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span> </div>
+<div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>}</div>
 </div>
 <div class="ttc" id="ahash__search_8cpp_html_a6e1a77282bc65ad359d753d25df23243"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a></div><div class="ttdeci">int data[MAX]</div><div class="ttdoc">test data</div><div class="ttdef"><b>Definition</b> <a href="../../d1/df3/hash__search_8cpp_source.html#l00024">hash_search.cpp:24</a></div></div>
 <div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_a01e6c7bf2b09272578b9c5819ce0f36f"><div class="ttname"><a href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a01e6c7bf2b09272578b9c5819ce0f36f">operator+</a></div><div class="ttdeci">std::vector&lt; T &gt; operator+(std::vector&lt; T &gt; const &amp;A, std::vector&lt; T &gt; const &amp;B)</div><div class="ttdef"><b>Definition</b> <a href="#l00204">ordinary_least_squares_regressor.cpp:204</a></div></div>
@@ -554,7 +552,7 @@ $(function(){initNavTree('dc/d38/ordinary__least__squares__regressor_8cpp_source
 <div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_aaddc683af581b51351e1023d2a01ef3b"><div class="ttname"><a href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#aaddc683af581b51351e1023d2a01ef3b">fit_OLS_regressor</a></div><div class="ttdeci">std::vector&lt; float &gt; fit_OLS_regressor(std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;X, std::vector&lt; T &gt; const &amp;Y)</div><div class="ttdef"><b>Definition</b> <a href="#l00321">ordinary_least_squares_regressor.cpp:321</a></div></div>
 <div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_ade6e463f37878fe2a219f927c65b5493"><div class="ttname"><a href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#ade6e463f37878fe2a219f927c65b5493">predict_OLS_regressor</a></div><div class="ttdeci">std::vector&lt; float &gt; predict_OLS_regressor(std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;X, std::vector&lt; float &gt; const &amp;beta)</div><div class="ttdef"><b>Definition</b> <a href="#l00352">ordinary_least_squares_regressor.cpp:352</a></div></div>
 <div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_ae2edd40354a1ca7aeaee3d1e3589e713"><div class="ttname"><a href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#ae2edd40354a1ca7aeaee3d1e3589e713">operator*</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; T &gt; &gt; operator*(std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;A, std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;B)</div><div class="ttdef"><b>Definition</b> <a href="#l00078">ordinary_least_squares_regressor.cpp:78</a></div></div>
-<div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition</b> <a href="#l00423">ordinary_least_squares_regressor.cpp:423</a></div></div>
+<div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition</b> <a href="#l00421">ordinary_least_squares_regressor.cpp:421</a></div></div>
 <div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_af7243bdc6ae3c7169f01b85bb226e66a"><div class="ttname"><a href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#af7243bdc6ae3c7169f01b85bb226e66a">get_inverse</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; float &gt; &gt; get_inverse(std::vector&lt; std::vector&lt; T &gt; &gt; const &amp;A)</div><div class="ttdef"><b>Definition</b> <a href="#l00226">ordinary_least_squares_regressor.cpp:226</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

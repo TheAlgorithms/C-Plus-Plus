@@ -274,10 +274,10 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>decrypted text </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db9/hill__cipher_8cpp_source.html#l00458">458</a> of file <a class="el" href="../../d7/db9/hill__cipher_8cpp_source.html">hill_cipher.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  459</span>                                                                          {</div>
-<div class="line"><span class="lineno">  460</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#ad667fa0860977f6d6d443fa1dbcd80aa">codec</a>(text, decrypt_key);</div>
-<div class="line"><span class="lineno">  461</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d7/db9/hill__cipher_8cpp_source.html#l00457">457</a> of file <a class="el" href="../../d7/db9/hill__cipher_8cpp_source.html">hill_cipher.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  458</span>                                                                          {</div>
+<div class="line"><span class="lineno">  459</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#ad667fa0860977f6d6d443fa1dbcd80aa">codec</a>(text, decrypt_key);</div>
+<div class="line"><span class="lineno">  460</span>    }</div>
 <div class="ttc" id="aclassciphers_1_1_hill_cipher_html_ad667fa0860977f6d6d443fa1dbcd80aa"><div class="ttname"><a href="#ad667fa0860977f6d6d443fa1dbcd80aa">ciphers::HillCipher::codec</a></div><div class="ttdeci">static const std::string codec(const std::string &amp;text, const matrix&lt; int &gt; &amp;key)</div><div class="ttdoc">Convenience function to perform block cipher operations. The operations are identical for both encryp...</div><div class="ttdef"><b>Definition</b> <a href="../../d7/db9/hill__cipher_8cpp_source.html#l00211">hill_cipher.cpp:211</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -319,10 +319,10 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>encrypted text </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db9/hill__cipher_8cpp_source.html#l00446">446</a> of file <a class="el" href="../../d7/db9/hill__cipher_8cpp_source.html">hill_cipher.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  447</span>                                                                          {</div>
-<div class="line"><span class="lineno">  448</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#ad667fa0860977f6d6d443fa1dbcd80aa">codec</a>(text, encrypt_key);</div>
-<div class="line"><span class="lineno">  449</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d7/db9/hill__cipher_8cpp_source.html#l00445">445</a> of file <a class="el" href="../../d7/db9/hill__cipher_8cpp_source.html">hill_cipher.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  446</span>                                                                          {</div>
+<div class="line"><span class="lineno">  447</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#ad667fa0860977f6d6d443fa1dbcd80aa">codec</a>(text, encrypt_key);</div>
+<div class="line"><span class="lineno">  448</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -424,37 +424,36 @@ template&lt;typename T&gt; </div>
 <div class="line"><span class="lineno">  379</span>        <span class="keywordtype">int</span> mat_determinant = det_encrypt &lt; 0 ? det_encrypt % L : det_encrypt;</div>
 <div class="line"><span class="lineno">  380</span> </div>
 <div class="line"><span class="lineno">  381</span>        <a class="code hl_typedef" href="../../d1/dbe/lu__decomposition_8h.html#ac029b636b353cefbb18b2fcc71e427e4">matrix&lt;double&gt;</a> tmp_inverse = <a class="code hl_function" href="#a2eb58750b978a93ac5e6eb29e3e570b7">get_inverse</a>(encrypt_key);</div>
-<div class="line"><span class="lineno">  382</span>        <span class="keywordtype">double</span> d2 = <a class="code hl_function" href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f">determinant_lu</a>(decrypt_key);</div>
-<div class="line"><span class="lineno">  383</span> </div>
-<div class="line"><span class="lineno">  384</span>        <span class="comment">// find co-prime factor for inversion</span></div>
-<div class="line"><span class="lineno">  385</span>        <span class="keywordtype">int</span> det_inv = -1;</div>
-<div class="line"><span class="lineno">  386</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; L; i++) {</div>
-<div class="line"><span class="lineno">  387</span>            <span class="keywordflow">if</span> (modulo(mat_determinant * i, L) == 1) {</div>
-<div class="line"><span class="lineno">  388</span>                det_inv = i;</div>
-<div class="line"><span class="lineno">  389</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  390</span>            }</div>
-<div class="line"><span class="lineno">  391</span>        }</div>
-<div class="line"><span class="lineno">  392</span> </div>
-<div class="line"><span class="lineno">  393</span>        <span class="keywordflow">if</span> (det_inv == -1) {</div>
-<div class="line"><span class="lineno">  394</span>            std::cerr &lt;&lt; <span class="stringliteral">&quot;Could not find a co-prime for inversion\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  395</span>            std::exit(EXIT_FAILURE);</div>
-<div class="line"><span class="lineno">  396</span>        }</div>
-<div class="line"><span class="lineno">  397</span> </div>
-<div class="line"><span class="lineno">  398</span>        mat_determinant = det_inv * det_encrypt;</div>
-<div class="line"><span class="lineno">  399</span> </div>
-<div class="line"><span class="lineno">  400</span>        <span class="comment">// perform modular inverse of encryption matrix</span></div>
-<div class="line"><span class="lineno">  401</span>        <span class="keywordtype">int</span> i;</div>
-<div class="line"><span class="lineno">  402</span><span class="preprocessor">#ifdef _OPENMP</span></div>
-<div class="line"><span class="lineno">  403</span><span class="preprocessor">#pragma parallel omp for private(i)</span></div>
-<div class="line"><span class="lineno">  404</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">  405</span>        <span class="keywordflow">for</span> (i = 0; i &lt; size; i++) {</div>
-<div class="line"><span class="lineno">  406</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; size; j++) {</div>
-<div class="line"><span class="lineno">  407</span>                <span class="keywordtype">int</span> temp = std::round(tmp_inverse[i][j] * mat_determinant);</div>
-<div class="line"><span class="lineno">  408</span>                decrypt_key[i][j] = modulo(temp, L);</div>
-<div class="line"><span class="lineno">  409</span>            }</div>
-<div class="line"><span class="lineno">  410</span>        }</div>
-<div class="line"><span class="lineno">  411</span>        <span class="keywordflow">return</span> decrypt_key;</div>
-<div class="line"><span class="lineno">  412</span>    }</div>
+<div class="line"><span class="lineno">  382</span> </div>
+<div class="line"><span class="lineno">  383</span>        <span class="comment">// find co-prime factor for inversion</span></div>
+<div class="line"><span class="lineno">  384</span>        <span class="keywordtype">int</span> det_inv = -1;</div>
+<div class="line"><span class="lineno">  385</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; L; i++) {</div>
+<div class="line"><span class="lineno">  386</span>            <span class="keywordflow">if</span> (modulo(mat_determinant * i, L) == 1) {</div>
+<div class="line"><span class="lineno">  387</span>                det_inv = i;</div>
+<div class="line"><span class="lineno">  388</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  389</span>            }</div>
+<div class="line"><span class="lineno">  390</span>        }</div>
+<div class="line"><span class="lineno">  391</span> </div>
+<div class="line"><span class="lineno">  392</span>        <span class="keywordflow">if</span> (det_inv == -1) {</div>
+<div class="line"><span class="lineno">  393</span>            std::cerr &lt;&lt; <span class="stringliteral">&quot;Could not find a co-prime for inversion\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  394</span>            std::exit(EXIT_FAILURE);</div>
+<div class="line"><span class="lineno">  395</span>        }</div>
+<div class="line"><span class="lineno">  396</span> </div>
+<div class="line"><span class="lineno">  397</span>        mat_determinant = det_inv * det_encrypt;</div>
+<div class="line"><span class="lineno">  398</span> </div>
+<div class="line"><span class="lineno">  399</span>        <span class="comment">// perform modular inverse of encryption matrix</span></div>
+<div class="line"><span class="lineno">  400</span>        <span class="keywordtype">int</span> i;</div>
+<div class="line"><span class="lineno">  401</span><span class="preprocessor">#ifdef _OPENMP</span></div>
+<div class="line"><span class="lineno">  402</span><span class="preprocessor">#pragma parallel omp for private(i)</span></div>
+<div class="line"><span class="lineno">  403</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  404</span>        <span class="keywordflow">for</span> (i = 0; i &lt; size; i++) {</div>
+<div class="line"><span class="lineno">  405</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; size; j++) {</div>
+<div class="line"><span class="lineno">  406</span>                <span class="keywordtype">int</span> temp = std::round(tmp_inverse[i][j] * mat_determinant);</div>
+<div class="line"><span class="lineno">  407</span>                decrypt_key[i][j] = modulo(temp, L);</div>
+<div class="line"><span class="lineno">  408</span>            }</div>
+<div class="line"><span class="lineno">  409</span>        }</div>
+<div class="line"><span class="lineno">  410</span>        <span class="keywordflow">return</span> decrypt_key;</div>
+<div class="line"><span class="lineno">  411</span>    }</div>
 <div class="ttc" id="aclassciphers_1_1_hill_cipher_html_a2eb58750b978a93ac5e6eb29e3e570b7"><div class="ttname"><a href="#a2eb58750b978a93ac5e6eb29e3e570b7">ciphers::HillCipher::get_inverse</a></div><div class="ttdeci">static matrix&lt; double &gt; get_inverse(matrix&lt; T &gt; const &amp;A)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/db9/hill__cipher_8cpp_source.html#l00251">hill_cipher.cpp:251</a></div></div>
 <div class="ttc" id="alu__decomposition_8h_html_a3108d43bd32c6fb3b3c158476c51ba7f"><div class="ttname"><a href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f">determinant_lu</a></div><div class="ttdeci">double determinant_lu(const matrix&lt; T &gt; &amp;A)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dbe/lu__decomposition_8h_source.html#l00090">lu_decomposition.h:90</a></div></div>
 <div class="ttc" id="alu__decomposition_8h_html_ac029b636b353cefbb18b2fcc71e427e4"><div class="ttname"><a href="../../d1/dbe/lu__decomposition_8h.html#ac029b636b353cefbb18b2fcc71e427e4">matrix</a></div><div class="ttdeci">std::vector&lt; std::valarray&lt; T &gt; &gt; matrix</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dbe/lu__decomposition_8h_source.html#l00019">lu_decomposition.h:19</a></div></div>
@@ -582,18 +581,18 @@ template&lt;typename T&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>std::pair&lt;<a class="el" href="../../d1/dbe/lu__decomposition_8h.html#ac029b636b353cefbb18b2fcc71e427e4">matrix&lt;int&gt;</a>, <a class="el" href="../../d1/dbe/lu__decomposition_8h.html#ac029b636b353cefbb18b2fcc71e427e4">matrix&lt;int&gt;</a>&gt; encryption and decryption keys as a pair</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="#a642f70fb54cb50b00fb6df7c3f2b120e" title="Generate encryption matrix of a given size. Larger size matrices are difficult to generate but provid...">generate_encryption_key</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db9/hill__cipher_8cpp_source.html#l00425">425</a> of file <a class="el" href="../../d7/db9/hill__cipher_8cpp_source.html">hill_cipher.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  427</span>                                                                              {</div>
-<div class="line"><span class="lineno">  428</span>        <a class="code hl_typedef" href="../../d1/dbe/lu__decomposition_8h.html#ac029b636b353cefbb18b2fcc71e427e4">matrix&lt;int&gt;</a> encrypt_key = <a class="code hl_function" href="#a642f70fb54cb50b00fb6df7c3f2b120e">generate_encryption_key</a>(size);</div>
-<div class="line"><span class="lineno">  429</span>        <a class="code hl_typedef" href="../../d1/dbe/lu__decomposition_8h.html#ac029b636b353cefbb18b2fcc71e427e4">matrix&lt;int&gt;</a> decrypt_key = <a class="code hl_function" href="#ab02c7563889bf1e363deb8e21967b706">generate_decryption_key</a>(encrypt_key);</div>
-<div class="line"><span class="lineno">  430</span>        <span class="keywordtype">double</span> det2 = <a class="code hl_function" href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f">determinant_lu</a>(decrypt_key);</div>
-<div class="line"><span class="lineno">  431</span>        <span class="keywordflow">while</span> (std::abs(det2) &lt; 0.1 || std::abs(det2) &gt; 1e3) {</div>
-<div class="line"><span class="lineno">  432</span>            encrypt_key = <a class="code hl_function" href="#a642f70fb54cb50b00fb6df7c3f2b120e">generate_encryption_key</a>(size, limit1, limit2);</div>
-<div class="line"><span class="lineno">  433</span>            decrypt_key = <a class="code hl_function" href="#ab02c7563889bf1e363deb8e21967b706">generate_decryption_key</a>(encrypt_key);</div>
-<div class="line"><span class="lineno">  434</span>            det2 = <a class="code hl_function" href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f">determinant_lu</a>(decrypt_key);</div>
-<div class="line"><span class="lineno">  435</span>        }</div>
-<div class="line"><span class="lineno">  436</span>        <span class="keywordflow">return</span> std::make_pair(encrypt_key, decrypt_key);</div>
-<div class="line"><span class="lineno">  437</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d7/db9/hill__cipher_8cpp_source.html#l00424">424</a> of file <a class="el" href="../../d7/db9/hill__cipher_8cpp_source.html">hill_cipher.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  426</span>                                                                              {</div>
+<div class="line"><span class="lineno">  427</span>        <a class="code hl_typedef" href="../../d1/dbe/lu__decomposition_8h.html#ac029b636b353cefbb18b2fcc71e427e4">matrix&lt;int&gt;</a> encrypt_key = <a class="code hl_function" href="#a642f70fb54cb50b00fb6df7c3f2b120e">generate_encryption_key</a>(size);</div>
+<div class="line"><span class="lineno">  428</span>        <a class="code hl_typedef" href="../../d1/dbe/lu__decomposition_8h.html#ac029b636b353cefbb18b2fcc71e427e4">matrix&lt;int&gt;</a> decrypt_key = <a class="code hl_function" href="#ab02c7563889bf1e363deb8e21967b706">generate_decryption_key</a>(encrypt_key);</div>
+<div class="line"><span class="lineno">  429</span>        <span class="keywordtype">double</span> det2 = <a class="code hl_function" href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f">determinant_lu</a>(decrypt_key);</div>
+<div class="line"><span class="lineno">  430</span>        <span class="keywordflow">while</span> (std::abs(det2) &lt; 0.1 || std::abs(det2) &gt; 1e3) {</div>
+<div class="line"><span class="lineno">  431</span>            encrypt_key = <a class="code hl_function" href="#a642f70fb54cb50b00fb6df7c3f2b120e">generate_encryption_key</a>(size, limit1, limit2);</div>
+<div class="line"><span class="lineno">  432</span>            decrypt_key = <a class="code hl_function" href="#ab02c7563889bf1e363deb8e21967b706">generate_decryption_key</a>(encrypt_key);</div>
+<div class="line"><span class="lineno">  433</span>            det2 = <a class="code hl_function" href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f">determinant_lu</a>(decrypt_key);</div>
+<div class="line"><span class="lineno">  434</span>        }</div>
+<div class="line"><span class="lineno">  435</span>        <span class="keywordflow">return</span> std::make_pair(encrypt_key, decrypt_key);</div>
+<div class="line"><span class="lineno">  436</span>    }</div>
 <div class="ttc" id="aclassciphers_1_1_hill_cipher_html_a642f70fb54cb50b00fb6df7c3f2b120e"><div class="ttname"><a href="#a642f70fb54cb50b00fb6df7c3f2b120e">ciphers::HillCipher::generate_encryption_key</a></div><div class="ttdeci">static matrix&lt; int &gt; generate_encryption_key(size_t size, int limit1=0, int limit2=10)</div><div class="ttdoc">Generate encryption matrix of a given size. Larger size matrices are difficult to generate but provid...</div><div class="ttdef"><b>Definition</b> <a href="../../d7/db9/hill__cipher_8cpp_source.html#l00340">hill_cipher.cpp:340</a></div></div>
 <div class="ttc" id="aclassciphers_1_1_hill_cipher_html_ab02c7563889bf1e363deb8e21967b706"><div class="ttname"><a href="#ab02c7563889bf1e363deb8e21967b706">ciphers::HillCipher::generate_decryption_key</a></div><div class="ttdeci">static matrix&lt; int &gt; generate_decryption_key(matrix&lt; int &gt; const &amp;encrypt_key)</div><div class="ttdoc">Generate decryption matrix from an encryption matrix key.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/db9/hill__cipher_8cpp_source.html#l00372">hill_cipher.cpp:372</a></div></div>
 </div><!-- fragment -->
