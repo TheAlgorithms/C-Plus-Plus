@@ -1291,8 +1291,8 @@ static void test2(int64_t n) {
 
 /**
  * @brief Main function
- * @param argc commandline argument count (ignored)
- * @param argv commandline array of arguments (ignored)
+ * @param argc commandline argument count
+ * @param argv commandline array of arguments
  * @returns 0 on exit
  */
 int main(int argc, char *argv[]) {
