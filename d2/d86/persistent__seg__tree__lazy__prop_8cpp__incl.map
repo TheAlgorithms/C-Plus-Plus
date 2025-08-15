@@ -1,9 +1,11 @@
 <map id="range_queries/persistent_seg_tree_lazy_prop.cpp" name="range_queries/persistent_seg_tree_lazy_prop.cpp">
-<area shape="rect" id="Node000001" title="Persistent segment tree with range updates (lazy propagation)" alt="" coords="51,5,218,46"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,77,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,48,69,86,65,82,110,44"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="100,94,168,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="137,46,137,78,132,78,132,46"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="192,94,250,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="158,44,198,81,195,85,154,48"/>
+<area shape="rect" id="Node000001" title="Persistent segment tree with range updates (lazy propagation)" alt="" coords="88,5,255,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,66,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,49,70,88,68,84,136,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="89,94,160,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,48,142,82,138,79,158,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="184,94,252,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="185,45,205,79,201,82,181,48"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="276,94,334,120"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="206,44,273,83,270,88,203,49"/>
 </map>

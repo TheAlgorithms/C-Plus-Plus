@@ -119,13 +119,14 @@ $(function(){initNavTree('d5/d58/persistent__seg__tree__lazy__prop_8cpp.html','.
 
 <p><a href="https://en.wikipedia.org/wiki/Persistent_data_structure" target="_blank">Persistent segment tree with range updates (lazy propagation)</a>  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for persistent_seg_tree_lazy_prop.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="../../d2/d86/persistent__seg__tree__lazy__prop_8cpp__incl.svg" width="255" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="../../d2/d86/persistent__seg__tree__lazy__prop_8cpp__incl.svg" width="339" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -173,12 +174,12 @@ Functions</h2></td></tr>
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00318">318</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  318</span>           {</div>
-<div class="line"><span class="lineno">  319</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">  320</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  321</span>}</div>
-<div class="ttc" id="apersistent__seg__tree__lazy__prop_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00268">persistent_seg_tree_lazy_prop.cpp:268</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00319">319</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  319</span>           {</div>
+<div class="line"><span class="lineno">  320</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">  321</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  322</span>}</div>
+<div class="ttc" id="apersistent__seg__tree__lazy__prop_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00269">persistent_seg_tree_lazy_prop.cpp:269</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -208,57 +209,57 @@ Functions</h2></td></tr>
 <p>Test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00268">268</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  268</span>                   {</div>
-<div class="line"><span class="lineno">  269</span>    std::vector&lt;int64_t&gt; arr = {-5, 2, 3, 11, -2, 7, 0, 1};</div>
-<div class="line"><span class="lineno">  270</span>    <a class="code hl_class" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html">range_queries::perSegTree</a> tree;</div>
-<div class="line"><span class="lineno">  271</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Elements before any updates are {&quot;</span>;</div>
-<div class="line"><span class="lineno">  272</span>    <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; arr.size(); ++i) {</div>
-<div class="line"><span class="lineno">  273</span>        std::cout &lt;&lt; arr[i];</div>
-<div class="line"><span class="lineno">  274</span>        <span class="keywordflow">if</span> (i != arr.size() - 1) {</div>
-<div class="line"><span class="lineno">  275</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
-<div class="line"><span class="lineno">  276</span>        }</div>
-<div class="line"><span class="lineno">  277</span>    }</div>
-<div class="line"><span class="lineno">  278</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;}\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  279</span>    tree.<a class="code hl_function" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a6d3f2465a7c5803a1ff16c5378bcc5e4">construct</a>(</div>
-<div class="line"><span class="lineno">  280</span>        arr);  <span class="comment">// constructing the original segment tree (version = 0)</span></div>
-<div class="line"><span class="lineno">  281</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Querying range sum on version 0 from index 2 to 4 = 3+11-2 = &quot;</span></div>
-<div class="line"><span class="lineno">  282</span>              &lt;&lt; tree.<a class="code hl_function" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#ae8ae4b1835e5e8aec32f68c5059ed4d4">query</a>(2, 4, 0) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><span class="lineno">  283</span>    std::cout</div>
-<div class="line"><span class="lineno">  284</span>        &lt;&lt; <span class="stringliteral">&quot;Subtract 7 from all elements from index 1 to index 5 inclusive\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  285</span>    tree.<a class="code hl_function" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a24487eda25123bc4d112e8430821a6c6">update</a>(1, 5, -7);  <span class="comment">// subtracting 7 from index 1 to index 5</span></div>
-<div class="line"><span class="lineno">  286</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Elements of the segment tree whose version = 1 (after 1 &quot;</span></div>
-<div class="line"><span class="lineno">  287</span>                 <span class="stringliteral">&quot;update) are {&quot;</span>;</div>
-<div class="line"><span class="lineno">  288</span>    <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; arr.size(); ++i) {</div>
-<div class="line"><span class="lineno">  289</span>        std::cout &lt;&lt; tree.<a class="code hl_function" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#ae8ae4b1835e5e8aec32f68c5059ed4d4">query</a>(i, i, 1);</div>
-<div class="line"><span class="lineno">  290</span>        <span class="keywordflow">if</span> (i != arr.size() - 1) {</div>
-<div class="line"><span class="lineno">  291</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
-<div class="line"><span class="lineno">  292</span>        }</div>
-<div class="line"><span class="lineno">  293</span>    }</div>
-<div class="line"><span class="lineno">  294</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;}\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  295</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Add 10 to all elements from index 0 to index 7 inclusive\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  296</span>    tree.<a class="code hl_function" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a24487eda25123bc4d112e8430821a6c6">update</a>(0, 7, 10);  <span class="comment">// adding 10 to all elements</span></div>
-<div class="line"><span class="lineno">  297</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Elements of the segment tree whose version = 2 (after 2 &quot;</span></div>
-<div class="line"><span class="lineno">  298</span>                 <span class="stringliteral">&quot;updates) are {&quot;</span>;</div>
-<div class="line"><span class="lineno">  299</span>    <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; arr.size(); ++i) {</div>
-<div class="line"><span class="lineno">  300</span>        std::cout &lt;&lt; tree.<a class="code hl_function" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#ae8ae4b1835e5e8aec32f68c5059ed4d4">query</a>(i, i, 2);</div>
-<div class="line"><span class="lineno">  301</span>        <span class="keywordflow">if</span> (i != arr.size() - 1) {</div>
-<div class="line"><span class="lineno">  302</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
-<div class="line"><span class="lineno">  303</span>        }</div>
-<div class="line"><span class="lineno">  304</span>    }</div>
-<div class="line"><span class="lineno">  305</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;}\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  306</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Number of segment trees (versions) now = &quot;</span> &lt;&lt; tree.<a class="code hl_function" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a0fe4e431f3e09c274ecd7d2d58dcb865">size</a>()</div>
-<div class="line"><span class="lineno">  307</span>              &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><span class="lineno">  308</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Querying range sum on version 0 from index 3 to 5 = 11-2+7 = &quot;</span></div>
-<div class="line"><span class="lineno">  309</span>              &lt;&lt; tree.<a class="code hl_function" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#ae8ae4b1835e5e8aec32f68c5059ed4d4">query</a>(3, 5, 0) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><span class="lineno">  310</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Querying range sum on version 1 from index 3 to 5 = 4-9+0 = &quot;</span></div>
-<div class="line"><span class="lineno">  311</span>              &lt;&lt; tree.<a class="code hl_function" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#ae8ae4b1835e5e8aec32f68c5059ed4d4">query</a>(3, 5, 1) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><span class="lineno">  312</span>}</div>
-<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html"><div class="ttname"><a href="../../d8/d28/classrange__queries_1_1per_seg_tree.html">range_queries::perSegTree</a></div><div class="ttdoc">Range query here is range sum, but the code can be modified to make different queries like range max ...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00039">persistent_seg_tree_lazy_prop.cpp:39</a></div></div>
-<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html_a0fe4e431f3e09c274ecd7d2d58dcb865"><div class="ttname"><a href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a0fe4e431f3e09c274ecd7d2d58dcb865">range_queries::perSegTree::size</a></div><div class="ttdeci">uint32_t size()</div><div class="ttdoc">Getting the number of versions after updates so far which is equal to the size of the pointers vector...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00255">persistent_seg_tree_lazy_prop.cpp:255</a></div></div>
-<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html_a24487eda25123bc4d112e8430821a6c6"><div class="ttname"><a href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a24487eda25123bc4d112e8430821a6c6">range_queries::perSegTree::update</a></div><div class="ttdeci">std::shared_ptr&lt; Node &gt; update(const uint32_t &amp;i, const uint32_t &amp;j, const uint32_t &amp;l, const uint32_t &amp;r, const int64_t &amp;value, std::shared_ptr&lt; Node &gt; const &amp;curr)</div><div class="ttdoc">Doing range update, checking at every node if it has some value to be propagated. All nodes affected ...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00135">persistent_seg_tree_lazy_prop.cpp:135</a></div></div>
-<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html_a6d3f2465a7c5803a1ff16c5378bcc5e4"><div class="ttname"><a href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a6d3f2465a7c5803a1ff16c5378bcc5e4">range_queries::perSegTree::construct</a></div><div class="ttdeci">std::shared_ptr&lt; Node &gt; construct(const uint32_t &amp;i, const uint32_t &amp;j)</div><div class="ttdoc">Constructing the segment tree with the early passed vector. Every call creates a node to hold the sum...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00106">persistent_seg_tree_lazy_prop.cpp:106</a></div></div>
-<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html_ae8ae4b1835e5e8aec32f68c5059ed4d4"><div class="ttname"><a href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#ae8ae4b1835e5e8aec32f68c5059ed4d4">range_queries::perSegTree::query</a></div><div class="ttdeci">int64_t query(const uint32_t &amp;i, const uint32_t &amp;j, const uint32_t &amp;l, const uint32_t &amp;r, std::shared_ptr&lt; Node &gt; const &amp;curr)</div><div class="ttdoc">Querying the range from index l to index r, checking at every node if it has some value to be propaga...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00171">persistent_seg_tree_lazy_prop.cpp:171</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00269">269</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  269</span>                   {</div>
+<div class="line"><span class="lineno">  270</span>    std::vector&lt;int64_t&gt; arr = {-5, 2, 3, 11, -2, 7, 0, 1};</div>
+<div class="line"><span class="lineno">  271</span>    <a class="code hl_class" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html">range_queries::perSegTree</a> tree;</div>
+<div class="line"><span class="lineno">  272</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Elements before any updates are {&quot;</span>;</div>
+<div class="line"><span class="lineno">  273</span>    <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; arr.size(); ++i) {</div>
+<div class="line"><span class="lineno">  274</span>        std::cout &lt;&lt; arr[i];</div>
+<div class="line"><span class="lineno">  275</span>        <span class="keywordflow">if</span> (i != arr.size() - 1) {</div>
+<div class="line"><span class="lineno">  276</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
+<div class="line"><span class="lineno">  277</span>        }</div>
+<div class="line"><span class="lineno">  278</span>    }</div>
+<div class="line"><span class="lineno">  279</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;}\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  280</span>    tree.<a class="code hl_function" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a6d3f2465a7c5803a1ff16c5378bcc5e4">construct</a>(</div>
+<div class="line"><span class="lineno">  281</span>        arr);  <span class="comment">// constructing the original segment tree (version = 0)</span></div>
+<div class="line"><span class="lineno">  282</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Querying range sum on version 0 from index 2 to 4 = 3+11-2 = &quot;</span></div>
+<div class="line"><span class="lineno">  283</span>              &lt;&lt; tree.<a class="code hl_function" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#ae8ae4b1835e5e8aec32f68c5059ed4d4">query</a>(2, 4, 0) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">  284</span>    std::cout</div>
+<div class="line"><span class="lineno">  285</span>        &lt;&lt; <span class="stringliteral">&quot;Subtract 7 from all elements from index 1 to index 5 inclusive\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  286</span>    tree.<a class="code hl_function" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a24487eda25123bc4d112e8430821a6c6">update</a>(1, 5, -7);  <span class="comment">// subtracting 7 from index 1 to index 5</span></div>
+<div class="line"><span class="lineno">  287</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Elements of the segment tree whose version = 1 (after 1 &quot;</span></div>
+<div class="line"><span class="lineno">  288</span>                 <span class="stringliteral">&quot;update) are {&quot;</span>;</div>
+<div class="line"><span class="lineno">  289</span>    <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; arr.size(); ++i) {</div>
+<div class="line"><span class="lineno">  290</span>        std::cout &lt;&lt; tree.<a class="code hl_function" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#ae8ae4b1835e5e8aec32f68c5059ed4d4">query</a>(i, i, 1);</div>
+<div class="line"><span class="lineno">  291</span>        <span class="keywordflow">if</span> (i != arr.size() - 1) {</div>
+<div class="line"><span class="lineno">  292</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
+<div class="line"><span class="lineno">  293</span>        }</div>
+<div class="line"><span class="lineno">  294</span>    }</div>
+<div class="line"><span class="lineno">  295</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;}\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  296</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Add 10 to all elements from index 0 to index 7 inclusive\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  297</span>    tree.<a class="code hl_function" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a24487eda25123bc4d112e8430821a6c6">update</a>(0, 7, 10);  <span class="comment">// adding 10 to all elements</span></div>
+<div class="line"><span class="lineno">  298</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Elements of the segment tree whose version = 2 (after 2 &quot;</span></div>
+<div class="line"><span class="lineno">  299</span>                 <span class="stringliteral">&quot;updates) are {&quot;</span>;</div>
+<div class="line"><span class="lineno">  300</span>    <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; arr.size(); ++i) {</div>
+<div class="line"><span class="lineno">  301</span>        std::cout &lt;&lt; tree.<a class="code hl_function" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#ae8ae4b1835e5e8aec32f68c5059ed4d4">query</a>(i, i, 2);</div>
+<div class="line"><span class="lineno">  302</span>        <span class="keywordflow">if</span> (i != arr.size() - 1) {</div>
+<div class="line"><span class="lineno">  303</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
+<div class="line"><span class="lineno">  304</span>        }</div>
+<div class="line"><span class="lineno">  305</span>    }</div>
+<div class="line"><span class="lineno">  306</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;}\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  307</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Number of segment trees (versions) now = &quot;</span> &lt;&lt; tree.<a class="code hl_function" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a0fe4e431f3e09c274ecd7d2d58dcb865">size</a>()</div>
+<div class="line"><span class="lineno">  308</span>              &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">  309</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Querying range sum on version 0 from index 3 to 5 = 11-2+7 = &quot;</span></div>
+<div class="line"><span class="lineno">  310</span>              &lt;&lt; tree.<a class="code hl_function" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#ae8ae4b1835e5e8aec32f68c5059ed4d4">query</a>(3, 5, 0) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">  311</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Querying range sum on version 1 from index 3 to 5 = 4-9+0 = &quot;</span></div>
+<div class="line"><span class="lineno">  312</span>              &lt;&lt; tree.<a class="code hl_function" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#ae8ae4b1835e5e8aec32f68c5059ed4d4">query</a>(3, 5, 1) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">  313</span>}</div>
+<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html"><div class="ttname"><a href="../../d8/d28/classrange__queries_1_1per_seg_tree.html">range_queries::perSegTree</a></div><div class="ttdoc">Range query here is range sum, but the code can be modified to make different queries like range max ...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00040">persistent_seg_tree_lazy_prop.cpp:40</a></div></div>
+<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html_a0fe4e431f3e09c274ecd7d2d58dcb865"><div class="ttname"><a href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a0fe4e431f3e09c274ecd7d2d58dcb865">range_queries::perSegTree::size</a></div><div class="ttdeci">uint32_t size()</div><div class="ttdoc">Getting the number of versions after updates so far which is equal to the size of the pointers vector...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00256">persistent_seg_tree_lazy_prop.cpp:256</a></div></div>
+<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html_a24487eda25123bc4d112e8430821a6c6"><div class="ttname"><a href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a24487eda25123bc4d112e8430821a6c6">range_queries::perSegTree::update</a></div><div class="ttdeci">std::shared_ptr&lt; Node &gt; update(const uint32_t &amp;i, const uint32_t &amp;j, const uint32_t &amp;l, const uint32_t &amp;r, const int64_t &amp;value, std::shared_ptr&lt; Node &gt; const &amp;curr)</div><div class="ttdoc">Doing range update, checking at every node if it has some value to be propagated. All nodes affected ...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00136">persistent_seg_tree_lazy_prop.cpp:136</a></div></div>
+<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html_a6d3f2465a7c5803a1ff16c5378bcc5e4"><div class="ttname"><a href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a6d3f2465a7c5803a1ff16c5378bcc5e4">range_queries::perSegTree::construct</a></div><div class="ttdeci">std::shared_ptr&lt; Node &gt; construct(const uint32_t &amp;i, const uint32_t &amp;j)</div><div class="ttdoc">Constructing the segment tree with the early passed vector. Every call creates a node to hold the sum...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00107">persistent_seg_tree_lazy_prop.cpp:107</a></div></div>
+<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html_ae8ae4b1835e5e8aec32f68c5059ed4d4"><div class="ttname"><a href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#ae8ae4b1835e5e8aec32f68c5059ed4d4">range_queries::perSegTree::query</a></div><div class="ttdeci">int64_t query(const uint32_t &amp;i, const uint32_t &amp;j, const uint32_t &amp;l, const uint32_t &amp;r, std::shared_ptr&lt; Node &gt; const &amp;curr)</div><div class="ttdoc">Querying the range from index l to index r, checking at every node if it has some value to be propaga...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00172">persistent_seg_tree_lazy_prop.cpp:172</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

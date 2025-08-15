@@ -163,7 +163,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Range query here is range sum, but the code can be modified to make different queries like range max or min. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00039">39</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="ac83bcabf5a8db8b0d8d156a4c1bcd4c3" name="ac83bcabf5a8db8b0d8d156a4c1bcd4c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac83bcabf5a8db8b0d8d156a4c1bcd4c3">&#9670;&#160;</a></span>construct() <span class="overload">[1/2]</span></h2>
@@ -197,19 +197,19 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00197">197</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  200</span>    {</div>
-<div class="line"><span class="lineno">  201</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a8ff495d2f389b4aaa54449c26c6078f3">vec</a>.empty()) {</div>
-<div class="line"><span class="lineno">  202</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  203</span>        }</div>
-<div class="line"><span class="lineno">  204</span>        n = <a class="code hl_variable" href="#a8ff495d2f389b4aaa54449c26c6078f3">vec</a>.size();</div>
-<div class="line"><span class="lineno">  205</span>        this-&gt;<a class="code hl_variable" href="#a8ff495d2f389b4aaa54449c26c6078f3">vec</a> = <a class="code hl_variable" href="#a8ff495d2f389b4aaa54449c26c6078f3">vec</a>;</div>
-<div class="line"><span class="lineno">  206</span>        <span class="keyword">auto</span> root = <a class="code hl_function" href="#a6d3f2465a7c5803a1ff16c5378bcc5e4">construct</a>(0, n - 1);</div>
-<div class="line"><span class="lineno">  207</span>        <a class="code hl_variable" href="#a1eac9cf0613dfc8e2b0195009dd5c9d5">ptrs</a>.push_back(root);</div>
-<div class="line"><span class="lineno">  208</span>    }</div>
-<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html_a1eac9cf0613dfc8e2b0195009dd5c9d5"><div class="ttname"><a href="#a1eac9cf0613dfc8e2b0195009dd5c9d5">range_queries::perSegTree::ptrs</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; Node &gt; &gt; ptrs</div><div class="ttdoc">number of elements/leaf nodes in the segment tree</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00054">persistent_seg_tree_lazy_prop.cpp:54</a></div></div>
-<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html_a6d3f2465a7c5803a1ff16c5378bcc5e4"><div class="ttname"><a href="#a6d3f2465a7c5803a1ff16c5378bcc5e4">range_queries::perSegTree::construct</a></div><div class="ttdeci">std::shared_ptr&lt; Node &gt; construct(const uint32_t &amp;i, const uint32_t &amp;j)</div><div class="ttdoc">Constructing the segment tree with the early passed vector. Every call creates a node to hold the sum...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00106">persistent_seg_tree_lazy_prop.cpp:106</a></div></div>
-<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html_a8ff495d2f389b4aaa54449c26c6078f3"><div class="ttname"><a href="#a8ff495d2f389b4aaa54449c26c6078f3">range_queries::perSegTree::vec</a></div><div class="ttdeci">std::vector&lt; int64_t &gt; vec</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00057">persistent_seg_tree_lazy_prop.cpp:57</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00198">198</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  201</span>    {</div>
+<div class="line"><span class="lineno">  202</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a8ff495d2f389b4aaa54449c26c6078f3">vec</a>.empty()) {</div>
+<div class="line"><span class="lineno">  203</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  204</span>        }</div>
+<div class="line"><span class="lineno">  205</span>        n = <a class="code hl_variable" href="#a8ff495d2f389b4aaa54449c26c6078f3">vec</a>.size();</div>
+<div class="line"><span class="lineno">  206</span>        this-&gt;<a class="code hl_variable" href="#a8ff495d2f389b4aaa54449c26c6078f3">vec</a> = <a class="code hl_variable" href="#a8ff495d2f389b4aaa54449c26c6078f3">vec</a>;</div>
+<div class="line"><span class="lineno">  207</span>        <span class="keyword">auto</span> root = <a class="code hl_function" href="#a6d3f2465a7c5803a1ff16c5378bcc5e4">construct</a>(0, n - 1);</div>
+<div class="line"><span class="lineno">  208</span>        <a class="code hl_variable" href="#a1eac9cf0613dfc8e2b0195009dd5c9d5">ptrs</a>.push_back(root);</div>
+<div class="line"><span class="lineno">  209</span>    }</div>
+<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html_a1eac9cf0613dfc8e2b0195009dd5c9d5"><div class="ttname"><a href="#a1eac9cf0613dfc8e2b0195009dd5c9d5">range_queries::perSegTree::ptrs</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; Node &gt; &gt; ptrs</div><div class="ttdoc">number of elements/leaf nodes in the segment tree</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00055">persistent_seg_tree_lazy_prop.cpp:55</a></div></div>
+<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html_a6d3f2465a7c5803a1ff16c5378bcc5e4"><div class="ttname"><a href="#a6d3f2465a7c5803a1ff16c5378bcc5e4">range_queries::perSegTree::construct</a></div><div class="ttdeci">std::shared_ptr&lt; Node &gt; construct(const uint32_t &amp;i, const uint32_t &amp;j)</div><div class="ttdoc">Constructing the segment tree with the early passed vector. Every call creates a node to hold the sum...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00107">persistent_seg_tree_lazy_prop.cpp:107</a></div></div>
+<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html_a8ff495d2f389b4aaa54449c26c6078f3"><div class="ttname"><a href="#a8ff495d2f389b4aaa54449c26c6078f3">range_queries::perSegTree::vec</a></div><div class="ttdeci">std::vector&lt; int64_t &gt; vec</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00058">persistent_seg_tree_lazy_prop.cpp:58</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -250,22 +250,22 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer to the newly created node </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00106">106</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  106</span>                                                                        {</div>
-<div class="line"><span class="lineno">  107</span>        <span class="keyword">auto</span> newNode = std::make_shared&lt;Node&gt;(<a class="code hl_class" href="../../d5/d66/classrange__queries_1_1per_seg_tree_1_1_node.html">Node</a>());</div>
-<div class="line"><span class="lineno">  108</span>        <span class="keywordflow">if</span> (i == j) {</div>
-<div class="line"><span class="lineno">  109</span>            newNode-&gt;val = <a class="code hl_variable" href="#a8ff495d2f389b4aaa54449c26c6078f3">vec</a>[i];</div>
-<div class="line"><span class="lineno">  110</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  111</span>            uint32_t mid = i + (j - i) / 2;</div>
-<div class="line"><span class="lineno">  112</span>            <span class="keyword">auto</span> leftt = <a class="code hl_function" href="#a6d3f2465a7c5803a1ff16c5378bcc5e4">construct</a>(i, mid);</div>
-<div class="line"><span class="lineno">  113</span>            <span class="keyword">auto</span> right = <a class="code hl_function" href="#a6d3f2465a7c5803a1ff16c5378bcc5e4">construct</a>(mid + 1, j);</div>
-<div class="line"><span class="lineno">  114</span>            newNode-&gt;val = leftt-&gt;val + right-&gt;val;</div>
-<div class="line"><span class="lineno">  115</span>            newNode-&gt;left = leftt;</div>
-<div class="line"><span class="lineno">  116</span>            newNode-&gt;right = right;</div>
-<div class="line"><span class="lineno">  117</span>        }</div>
-<div class="line"><span class="lineno">  118</span>        <span class="keywordflow">return</span> newNode;</div>
-<div class="line"><span class="lineno">  119</span>    }</div>
-<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_1_1_node_html"><div class="ttname"><a href="../../d5/d66/classrange__queries_1_1per_seg_tree_1_1_node.html">range_queries::perSegTree::Node</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00041">persistent_seg_tree_lazy_prop.cpp:41</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00107">107</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  107</span>                                                                        {</div>
+<div class="line"><span class="lineno">  108</span>        <span class="keyword">auto</span> newNode = std::make_shared&lt;Node&gt;(<a class="code hl_class" href="../../d5/d66/classrange__queries_1_1per_seg_tree_1_1_node.html">Node</a>());</div>
+<div class="line"><span class="lineno">  109</span>        <span class="keywordflow">if</span> (i == j) {</div>
+<div class="line"><span class="lineno">  110</span>            newNode-&gt;val = <a class="code hl_variable" href="#a8ff495d2f389b4aaa54449c26c6078f3">vec</a>[i];</div>
+<div class="line"><span class="lineno">  111</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  112</span>            uint32_t mid = i + (j - i) / 2;</div>
+<div class="line"><span class="lineno">  113</span>            <span class="keyword">auto</span> leftt = <a class="code hl_function" href="#a6d3f2465a7c5803a1ff16c5378bcc5e4">construct</a>(i, mid);</div>
+<div class="line"><span class="lineno">  114</span>            <span class="keyword">auto</span> right = <a class="code hl_function" href="#a6d3f2465a7c5803a1ff16c5378bcc5e4">construct</a>(mid + 1, j);</div>
+<div class="line"><span class="lineno">  115</span>            newNode-&gt;val = leftt-&gt;val + right-&gt;val;</div>
+<div class="line"><span class="lineno">  116</span>            newNode-&gt;left = leftt;</div>
+<div class="line"><span class="lineno">  117</span>            newNode-&gt;right = right;</div>
+<div class="line"><span class="lineno">  118</span>        }</div>
+<div class="line"><span class="lineno">  119</span>        <span class="keywordflow">return</span> newNode;</div>
+<div class="line"><span class="lineno">  120</span>    }</div>
+<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_1_1_node_html"><div class="ttname"><a href="../../d5/d66/classrange__queries_1_1per_seg_tree_1_1_node.html">range_queries::perSegTree::Node</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00042">persistent_seg_tree_lazy_prop.cpp:42</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -312,21 +312,21 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   84</span>                                               {</div>
-<div class="line"><span class="lineno">   85</span>        <span class="keywordflow">if</span> (!curr-&gt;prop) {</div>
-<div class="line"><span class="lineno">   86</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   87</span>        }</div>
-<div class="line"><span class="lineno">   88</span>        curr-&gt;val += (j - i + 1) * curr-&gt;prop;</div>
-<div class="line"><span class="lineno">   89</span>        <span class="keywordflow">if</span> (i != j) {</div>
-<div class="line"><span class="lineno">   90</span>            curr-&gt;left = <a class="code hl_function" href="#a0cec4b77d264521717cf9b0482c45817">newKid</a>(curr-&gt;left);</div>
-<div class="line"><span class="lineno">   91</span>            curr-&gt;right = <a class="code hl_function" href="#a0cec4b77d264521717cf9b0482c45817">newKid</a>(curr-&gt;right);</div>
-<div class="line"><span class="lineno">   92</span>            curr-&gt;left-&gt;prop += curr-&gt;prop;</div>
-<div class="line"><span class="lineno">   93</span>            curr-&gt;right-&gt;prop += curr-&gt;prop;</div>
-<div class="line"><span class="lineno">   94</span>        }</div>
-<div class="line"><span class="lineno">   95</span>        curr-&gt;prop = 0;</div>
-<div class="line"><span class="lineno">   96</span>    }</div>
-<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html_a0cec4b77d264521717cf9b0482c45817"><div class="ttname"><a href="#a0cec4b77d264521717cf9b0482c45817">range_queries::perSegTree::newKid</a></div><div class="ttdeci">std::shared_ptr&lt; Node &gt; newKid(std::shared_ptr&lt; Node &gt; const &amp;curr)</div><div class="ttdoc">Creating a new node with the same values of curr node.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00065">persistent_seg_tree_lazy_prop.cpp:65</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00084">84</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   85</span>                                               {</div>
+<div class="line"><span class="lineno">   86</span>        <span class="keywordflow">if</span> (!curr-&gt;prop) {</div>
+<div class="line"><span class="lineno">   87</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   88</span>        }</div>
+<div class="line"><span class="lineno">   89</span>        curr-&gt;val += (j - i + 1) * curr-&gt;prop;</div>
+<div class="line"><span class="lineno">   90</span>        <span class="keywordflow">if</span> (i != j) {</div>
+<div class="line"><span class="lineno">   91</span>            curr-&gt;left = <a class="code hl_function" href="#a0cec4b77d264521717cf9b0482c45817">newKid</a>(curr-&gt;left);</div>
+<div class="line"><span class="lineno">   92</span>            curr-&gt;right = <a class="code hl_function" href="#a0cec4b77d264521717cf9b0482c45817">newKid</a>(curr-&gt;right);</div>
+<div class="line"><span class="lineno">   93</span>            curr-&gt;left-&gt;prop += curr-&gt;prop;</div>
+<div class="line"><span class="lineno">   94</span>            curr-&gt;right-&gt;prop += curr-&gt;prop;</div>
+<div class="line"><span class="lineno">   95</span>        }</div>
+<div class="line"><span class="lineno">   96</span>        curr-&gt;prop = 0;</div>
+<div class="line"><span class="lineno">   97</span>    }</div>
+<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html_a0cec4b77d264521717cf9b0482c45817"><div class="ttname"><a href="#a0cec4b77d264521717cf9b0482c45817">range_queries::perSegTree::newKid</a></div><div class="ttdeci">std::shared_ptr&lt; Node &gt; newKid(std::shared_ptr&lt; Node &gt; const &amp;curr)</div><div class="ttdoc">Creating a new node with the same values of curr node.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00066">persistent_seg_tree_lazy_prop.cpp:66</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -362,15 +362,15 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the new node </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00065">65</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   65</span>                                                                {</div>
-<div class="line"><span class="lineno">   66</span>        <span class="keyword">auto</span> newNode = std::make_shared&lt;Node&gt;(<a class="code hl_class" href="../../d5/d66/classrange__queries_1_1per_seg_tree_1_1_node.html">Node</a>());</div>
-<div class="line"><span class="lineno">   67</span>        newNode-&gt;left = curr-&gt;left;</div>
-<div class="line"><span class="lineno">   68</span>        newNode-&gt;right = curr-&gt;right;</div>
-<div class="line"><span class="lineno">   69</span>        newNode-&gt;prop = curr-&gt;prop;</div>
-<div class="line"><span class="lineno">   70</span>        newNode-&gt;val = curr-&gt;val;</div>
-<div class="line"><span class="lineno">   71</span>        <span class="keywordflow">return</span> newNode;</div>
-<div class="line"><span class="lineno">   72</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00066">66</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   66</span>                                                                {</div>
+<div class="line"><span class="lineno">   67</span>        <span class="keyword">auto</span> newNode = std::make_shared&lt;Node&gt;(<a class="code hl_class" href="../../d5/d66/classrange__queries_1_1per_seg_tree_1_1_node.html">Node</a>());</div>
+<div class="line"><span class="lineno">   68</span>        newNode-&gt;left = curr-&gt;left;</div>
+<div class="line"><span class="lineno">   69</span>        newNode-&gt;right = curr-&gt;right;</div>
+<div class="line"><span class="lineno">   70</span>        newNode-&gt;prop = curr-&gt;prop;</div>
+<div class="line"><span class="lineno">   71</span>        newNode-&gt;val = curr-&gt;val;</div>
+<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">return</span> newNode;</div>
+<div class="line"><span class="lineno">   73</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -429,21 +429,21 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>sum of elements whose index x satisfies l&lt;=x&lt;=r </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00171">171</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  172</span>                                                                      {</div>
-<div class="line"><span class="lineno">  173</span>        <a class="code hl_function" href="#ace7f57935b3bb9446f11c239fd89ae79">lazy</a>(i, j, curr);</div>
-<div class="line"><span class="lineno">  174</span>        <span class="keywordflow">if</span> (j &lt; l || r &lt; i) {</div>
-<div class="line"><span class="lineno">  175</span>            <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  176</span>        }</div>
-<div class="line"><span class="lineno">  177</span>        <span class="keywordflow">if</span> (i &gt;= l &amp;&amp; j &lt;= r) {</div>
-<div class="line"><span class="lineno">  178</span>            <span class="keywordflow">return</span> curr-&gt;val;</div>
-<div class="line"><span class="lineno">  179</span>        }</div>
-<div class="line"><span class="lineno">  180</span>        uint32_t mid = i + (j - i) / 2;</div>
-<div class="line"><span class="lineno">  181</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#ae8ae4b1835e5e8aec32f68c5059ed4d4">query</a>(i, mid, l, r, curr-&gt;left) +</div>
-<div class="line"><span class="lineno">  182</span>               <a class="code hl_function" href="#ae8ae4b1835e5e8aec32f68c5059ed4d4">query</a>(mid + 1, j, l, r, curr-&gt;right);</div>
-<div class="line"><span class="lineno">  183</span>    }</div>
-<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html_ace7f57935b3bb9446f11c239fd89ae79"><div class="ttname"><a href="#ace7f57935b3bb9446f11c239fd89ae79">range_queries::perSegTree::lazy</a></div><div class="ttdeci">void lazy(const uint32_t &amp;i, const uint32_t &amp;j, std::shared_ptr&lt; Node &gt; const &amp;curr)</div><div class="ttdoc">If there is some value to be propagated to the passed node, value is added to the node and the childr...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00083">persistent_seg_tree_lazy_prop.cpp:83</a></div></div>
-<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html_ae8ae4b1835e5e8aec32f68c5059ed4d4"><div class="ttname"><a href="#ae8ae4b1835e5e8aec32f68c5059ed4d4">range_queries::perSegTree::query</a></div><div class="ttdeci">int64_t query(const uint32_t &amp;i, const uint32_t &amp;j, const uint32_t &amp;l, const uint32_t &amp;r, std::shared_ptr&lt; Node &gt; const &amp;curr)</div><div class="ttdoc">Querying the range from index l to index r, checking at every node if it has some value to be propaga...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00171">persistent_seg_tree_lazy_prop.cpp:171</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00172">172</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  173</span>                                                                      {</div>
+<div class="line"><span class="lineno">  174</span>        <a class="code hl_function" href="#ace7f57935b3bb9446f11c239fd89ae79">lazy</a>(i, j, curr);</div>
+<div class="line"><span class="lineno">  175</span>        <span class="keywordflow">if</span> (j &lt; l || r &lt; i) {</div>
+<div class="line"><span class="lineno">  176</span>            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  177</span>        }</div>
+<div class="line"><span class="lineno">  178</span>        <span class="keywordflow">if</span> (i &gt;= l &amp;&amp; j &lt;= r) {</div>
+<div class="line"><span class="lineno">  179</span>            <span class="keywordflow">return</span> curr-&gt;val;</div>
+<div class="line"><span class="lineno">  180</span>        }</div>
+<div class="line"><span class="lineno">  181</span>        uint32_t mid = i + (j - i) / 2;</div>
+<div class="line"><span class="lineno">  182</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#ae8ae4b1835e5e8aec32f68c5059ed4d4">query</a>(i, mid, l, r, curr-&gt;left) +</div>
+<div class="line"><span class="lineno">  183</span>               <a class="code hl_function" href="#ae8ae4b1835e5e8aec32f68c5059ed4d4">query</a>(mid + 1, j, l, r, curr-&gt;right);</div>
+<div class="line"><span class="lineno">  184</span>    }</div>
+<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html_ace7f57935b3bb9446f11c239fd89ae79"><div class="ttname"><a href="#ace7f57935b3bb9446f11c239fd89ae79">range_queries::perSegTree::lazy</a></div><div class="ttdeci">void lazy(const uint32_t &amp;i, const uint32_t &amp;j, std::shared_ptr&lt; Node &gt; const &amp;curr)</div><div class="ttdoc">If there is some value to be propagated to the passed node, value is added to the node and the childr...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00084">persistent_seg_tree_lazy_prop.cpp:84</a></div></div>
+<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html_ae8ae4b1835e5e8aec32f68c5059ed4d4"><div class="ttname"><a href="#ae8ae4b1835e5e8aec32f68c5059ed4d4">range_queries::perSegTree::query</a></div><div class="ttdeci">int64_t query(const uint32_t &amp;i, const uint32_t &amp;j, const uint32_t &amp;l, const uint32_t &amp;r, std::shared_ptr&lt; Node &gt; const &amp;curr)</div><div class="ttdoc">Querying the range from index l to index r, checking at every node if it has some value to be propaga...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00172">persistent_seg_tree_lazy_prop.cpp:172</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -490,10 +490,10 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>sum of elements whose index x satisfies l&lt;=x&lt;=r </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00241">241</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  246</span>    {</div>
-<div class="line"><span class="lineno">  247</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#ae8ae4b1835e5e8aec32f68c5059ed4d4">query</a>(0, n - 1, l, r, <a class="code hl_variable" href="#a1eac9cf0613dfc8e2b0195009dd5c9d5">ptrs</a>[version]);</div>
-<div class="line"><span class="lineno">  248</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00242">242</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  247</span>    {</div>
+<div class="line"><span class="lineno">  248</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#ae8ae4b1835e5e8aec32f68c5059ed4d4">query</a>(0, n - 1, l, r, <a class="code hl_variable" href="#a1eac9cf0613dfc8e2b0195009dd5c9d5">ptrs</a>[version]);</div>
+<div class="line"><span class="lineno">  249</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -523,10 +523,10 @@ Private Attributes</h2></td></tr>
 <p>Getting the number of versions after updates so far which is equal to the size of the pointers vector. </p>
 <dl class="section return"><dt>Returns</dt><dd>the number of versions </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00255">255</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  258</span>    {</div>
-<div class="line"><span class="lineno">  259</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a1eac9cf0613dfc8e2b0195009dd5c9d5">ptrs</a>.size();</div>
-<div class="line"><span class="lineno">  260</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00256">256</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  259</span>    {</div>
+<div class="line"><span class="lineno">  260</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a1eac9cf0613dfc8e2b0195009dd5c9d5">ptrs</a>.size();</div>
+<div class="line"><span class="lineno">  261</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -591,26 +591,26 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer to the current newly created node </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00135">135</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  138</span>                                                                  {</div>
-<div class="line"><span class="lineno">  139</span>        <a class="code hl_function" href="#ace7f57935b3bb9446f11c239fd89ae79">lazy</a>(i, j, curr);</div>
-<div class="line"><span class="lineno">  140</span>        <span class="keywordflow">if</span> (i &gt;= l &amp;&amp; j &lt;= r) {</div>
-<div class="line"><span class="lineno">  141</span>            std::shared_ptr&lt;Node&gt; newNode = <a class="code hl_function" href="#a0cec4b77d264521717cf9b0482c45817">newKid</a>(curr);</div>
-<div class="line"><span class="lineno">  142</span>            newNode-&gt;prop += value;</div>
-<div class="line"><span class="lineno">  143</span>            <a class="code hl_function" href="#ace7f57935b3bb9446f11c239fd89ae79">lazy</a>(i, j, newNode);</div>
-<div class="line"><span class="lineno">  144</span>            <span class="keywordflow">return</span> newNode;</div>
-<div class="line"><span class="lineno">  145</span>        }</div>
-<div class="line"><span class="lineno">  146</span>        <span class="keywordflow">if</span> (i &gt; r || j &lt; l) {</div>
-<div class="line"><span class="lineno">  147</span>            <span class="keywordflow">return</span> curr;</div>
-<div class="line"><span class="lineno">  148</span>        }</div>
-<div class="line"><span class="lineno">  149</span>        <span class="keyword">auto</span> newNode = std::make_shared&lt;Node&gt;(<a class="code hl_class" href="../../d5/d66/classrange__queries_1_1per_seg_tree_1_1_node.html">Node</a>());</div>
-<div class="line"><span class="lineno">  150</span>        uint32_t mid = i + (j - i) / 2;</div>
-<div class="line"><span class="lineno">  151</span>        newNode-&gt;left = <a class="code hl_function" href="#a24487eda25123bc4d112e8430821a6c6">update</a>(i, mid, l, r, value, curr-&gt;left);</div>
-<div class="line"><span class="lineno">  152</span>        newNode-&gt;right = <a class="code hl_function" href="#a24487eda25123bc4d112e8430821a6c6">update</a>(mid + 1, j, l, r, value, curr-&gt;right);</div>
-<div class="line"><span class="lineno">  153</span>        newNode-&gt;val = newNode-&gt;left-&gt;val + newNode-&gt;right-&gt;val;</div>
-<div class="line"><span class="lineno">  154</span>        <span class="keywordflow">return</span> newNode;</div>
-<div class="line"><span class="lineno">  155</span>    }</div>
-<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html_a24487eda25123bc4d112e8430821a6c6"><div class="ttname"><a href="#a24487eda25123bc4d112e8430821a6c6">range_queries::perSegTree::update</a></div><div class="ttdeci">std::shared_ptr&lt; Node &gt; update(const uint32_t &amp;i, const uint32_t &amp;j, const uint32_t &amp;l, const uint32_t &amp;r, const int64_t &amp;value, std::shared_ptr&lt; Node &gt; const &amp;curr)</div><div class="ttdoc">Doing range update, checking at every node if it has some value to be propagated. All nodes affected ...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00135">persistent_seg_tree_lazy_prop.cpp:135</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00136">136</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  139</span>                                                                  {</div>
+<div class="line"><span class="lineno">  140</span>        <a class="code hl_function" href="#ace7f57935b3bb9446f11c239fd89ae79">lazy</a>(i, j, curr);</div>
+<div class="line"><span class="lineno">  141</span>        <span class="keywordflow">if</span> (i &gt;= l &amp;&amp; j &lt;= r) {</div>
+<div class="line"><span class="lineno">  142</span>            std::shared_ptr&lt;Node&gt; newNode = <a class="code hl_function" href="#a0cec4b77d264521717cf9b0482c45817">newKid</a>(curr);</div>
+<div class="line"><span class="lineno">  143</span>            newNode-&gt;prop += value;</div>
+<div class="line"><span class="lineno">  144</span>            <a class="code hl_function" href="#ace7f57935b3bb9446f11c239fd89ae79">lazy</a>(i, j, newNode);</div>
+<div class="line"><span class="lineno">  145</span>            <span class="keywordflow">return</span> newNode;</div>
+<div class="line"><span class="lineno">  146</span>        }</div>
+<div class="line"><span class="lineno">  147</span>        <span class="keywordflow">if</span> (i &gt; r || j &lt; l) {</div>
+<div class="line"><span class="lineno">  148</span>            <span class="keywordflow">return</span> curr;</div>
+<div class="line"><span class="lineno">  149</span>        }</div>
+<div class="line"><span class="lineno">  150</span>        <span class="keyword">auto</span> newNode = std::make_shared&lt;Node&gt;(<a class="code hl_class" href="../../d5/d66/classrange__queries_1_1per_seg_tree_1_1_node.html">Node</a>());</div>
+<div class="line"><span class="lineno">  151</span>        uint32_t mid = i + (j - i) / 2;</div>
+<div class="line"><span class="lineno">  152</span>        newNode-&gt;left = <a class="code hl_function" href="#a24487eda25123bc4d112e8430821a6c6">update</a>(i, mid, l, r, value, curr-&gt;left);</div>
+<div class="line"><span class="lineno">  153</span>        newNode-&gt;right = <a class="code hl_function" href="#a24487eda25123bc4d112e8430821a6c6">update</a>(mid + 1, j, l, r, value, curr-&gt;right);</div>
+<div class="line"><span class="lineno">  154</span>        newNode-&gt;val = newNode-&gt;left-&gt;val + newNode-&gt;right-&gt;val;</div>
+<div class="line"><span class="lineno">  155</span>        <span class="keywordflow">return</span> newNode;</div>
+<div class="line"><span class="lineno">  156</span>    }</div>
+<div class="ttc" id="aclassrange__queries_1_1per_seg_tree_html_a24487eda25123bc4d112e8430821a6c6"><div class="ttname"><a href="#a24487eda25123bc4d112e8430821a6c6">range_queries::perSegTree::update</a></div><div class="ttdeci">std::shared_ptr&lt; Node &gt; update(const uint32_t &amp;i, const uint32_t &amp;j, const uint32_t &amp;l, const uint32_t &amp;r, const int64_t &amp;value, std::shared_ptr&lt; Node &gt; const &amp;curr)</div><div class="ttdoc">Doing range update, checking at every node if it has some value to be propagated. All nodes affected ...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00136">persistent_seg_tree_lazy_prop.cpp:136</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -657,13 +657,13 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00219">219</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  223</span>    {</div>
-<div class="line"><span class="lineno">  224</span>        <a class="code hl_variable" href="#a1eac9cf0613dfc8e2b0195009dd5c9d5">ptrs</a>.push_back(<a class="code hl_function" href="#a24487eda25123bc4d112e8430821a6c6">update</a>(</div>
-<div class="line"><span class="lineno">  225</span>            0, n - 1, l, r, value,</div>
-<div class="line"><span class="lineno">  226</span>            <a class="code hl_variable" href="#a1eac9cf0613dfc8e2b0195009dd5c9d5">ptrs</a>[<a class="code hl_variable" href="#a1eac9cf0613dfc8e2b0195009dd5c9d5">ptrs</a>.size() -</div>
-<div class="line"><span class="lineno">  227</span>                 1]));  <span class="comment">// saving the root pointer to the new segment tree</span></div>
-<div class="line"><span class="lineno">  228</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00220">220</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  224</span>    {</div>
+<div class="line"><span class="lineno">  225</span>        <a class="code hl_variable" href="#a1eac9cf0613dfc8e2b0195009dd5c9d5">ptrs</a>.push_back(<a class="code hl_function" href="#a24487eda25123bc4d112e8430821a6c6">update</a>(</div>
+<div class="line"><span class="lineno">  226</span>            0, n - 1, l, r, value,</div>
+<div class="line"><span class="lineno">  227</span>            <a class="code hl_variable" href="#a1eac9cf0613dfc8e2b0195009dd5c9d5">ptrs</a>[<a class="code hl_variable" href="#a1eac9cf0613dfc8e2b0195009dd5c9d5">ptrs</a>.size() -</div>
+<div class="line"><span class="lineno">  228</span>                 1]));  <span class="comment">// saving the root pointer to the new segment tree</span></div>
+<div class="line"><span class="lineno">  229</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -688,7 +688,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00052">52</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00053">53</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
 
 </div>
 </div>
@@ -714,8 +714,8 @@ Private Attributes</h2></td></tr>
 
 <p>number of elements/leaf nodes in the segment tree </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00054">54</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   54</span>{};  </div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>{};  </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -740,8 +740,8 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>ptrs[i] holds a root pointer to the segment tree after the ith update. ptrs[0] holds a root pointer to the segment tree before any updates </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   57</span>{};  </div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../d5/d58/persistent__seg__tree__lazy__prop_8cpp_source.html">persistent_seg_tree_lazy_prop.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>{};  </div>
 </div><!-- fragment -->
 </div>
 </div>

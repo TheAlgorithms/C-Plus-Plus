@@ -1,13 +1,15 @@
 <map id="data_structures/trie_tree.cpp" name="data_structures/trie_tree.cpp">
-<area shape="rect" id="Node000001" title="Implementation of Trie data structure for English alphabets in small characters." alt="" coords="137,5,270,46"/>
+<area shape="rect" id="Node000001" title="Implementation of Trie data structure for English alphabets in small characters." alt="" coords="176,5,309,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,56,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,49,71,90,69,85,159,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,49,71,93,69,88,189,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="80,94,144,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="183,48,139,86,136,82,179,44"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="168,94,240,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="206,46,206,78,201,78,201,46"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="263,94,331,120"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="229,44,273,82,269,86,225,48"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="356,94,409,120"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="250,44,343,85,341,90,247,49"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="211,49,146,88,143,83,208,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="168,94,229,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="234,48,215,82,210,79,229,45"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="252,94,324,120"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="256,45,276,79,271,82,251,48"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="347,94,415,120"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="278,44,348,84,346,88,276,49"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="440,94,493,120"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="299,44,426,89,425,94,298,49"/>
 </map>
