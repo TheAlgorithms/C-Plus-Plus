@@ -1,5 +1,9 @@
 var NAVTREEINDEX11 =
 {
+"dd/d47/namespacemath.html#aec65db4e5c7317323227f026fe50ef11":[8,0,69,16],
+"dd/d47/namespacemath.html#af05567415a9ea36c254b54e3d5a2152a":[8,0,69,41],
+"dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f":[8,0,69,20],
+"dd/d47/namespacemath.html#afcd07701d73ed65cd616bcba02737f3d":[8,0,69,28],
 "dd/d4f/class_solution.html":[9,0,59],
 "dd/d51/classvector_1_1const__reverse__iterator.html":[9,0,71,1],
 "dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html":[8,0,122,0,0],
@@ -185,7 +189,7 @@ var NAVTREEINDEX11 =
 "de/d75/qr__eigen__values_8cpp.html#adfbdf47277c8cfee229b05b72f1f7834":[10,0,15,20,5],
 "de/d75/qr__eigen__values_8cpp.html#aee57a411f07599034f5ceb8cc7d65b40":[10,0,15,20,0],
 "de/d75/qr__eigen__values_8cpp_source.html":[10,0,15,20],
-"de/d77/tree__height_8cpp_source.html":[10,0,6,28],
+"de/d77/tree__height_8cpp_source.html":[10,0,6,29],
 "de/d79/graham__scan__algorithm_8cpp_source.html":[10,0,8,0],
 "de/d7b/merge__insertion__sort_8cpp.html":[10,0,23,18],
 "de/d7b/merge__insertion__sort_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,23,18,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX11 =
 "de/dcd/kadanes3_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,17,8,2],
 "de/dcd/kadanes3_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,17,8,0],
 "de/dcd/kadanes3_8cpp_source.html":[10,0,17,8],
-"de/dcf/binary__exponent_8cpp.html":[10,0,14,4],
-"de/dcf/binary__exponent_8cpp.html#a31dbf5f7ceb9c9eec831ef9f7782291f":[10,0,14,4,1],
-"de/dcf/binary__exponent_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,14,4,2],
-"de/dcf/binary__exponent_8cpp.html#aeb48dce0725e63d19147944f41843c73":[10,0,14,4,0],
-"de/dcf/binary__exponent_8cpp_source.html":[10,0,14,4]
+"de/dcf/binary__exponent_8cpp.html":[10,0,14,4]
 };
