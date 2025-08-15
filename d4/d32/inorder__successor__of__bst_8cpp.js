@@ -7,7 +7,7 @@ var inorder__successor__of__bst_8cpp =
     [ "operations_on_datastructures::inorder_traversal_of_bst::getInorderSuccessor", "d4/d32/inorder__successor__of__bst_8cpp.html#a3923fb22b46e085376703cae0b44d690", null ],
     [ "operations_on_datastructures::inorder_traversal_of_bst::getNode", "d4/d32/inorder__successor__of__bst_8cpp.html#a824cbf1814854824cf05f062eea07b95", null ],
     [ "operations_on_datastructures::inorder_traversal_of_bst::Insert", "d4/d32/inorder__successor__of__bst_8cpp.html#a3ae0bea4123fd2ce155108e88f2ef78c", null ],
-    [ "main", "d4/d32/inorder__successor__of__bst_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97", null ],
+    [ "main", "d4/d32/inorder__successor__of__bst_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ],
     [ "operations_on_datastructures::inorder_traversal_of_bst::makeBST", "d4/d32/inorder__successor__of__bst_8cpp.html#a05fe8a029e155c43e4efa598d4d089d9", null ],
     [ "operations_on_datastructures::inorder_traversal_of_bst::makeNode", "d4/d32/inorder__successor__of__bst_8cpp.html#a7f6f73a33beec448c27cc1d70b220702", null ],
     [ "operations_on_datastructures::inorder_traversal_of_bst::printInorder", "d4/d32/inorder__successor__of__bst_8cpp.html#a5d7266b934ca50c4f53e4f1e725d89a4", null ],

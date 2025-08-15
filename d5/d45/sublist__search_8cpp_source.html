@@ -380,41 +380,41 @@ $(function(){initNavTree('d5/d45/sublist__search_8cpp_source.html','../../','');
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>}</div>
 </div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span></div>
-<div class="foldopen" id="foldopen00360" data-start="{" data-end="}">
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno"><a class="line" href="../../d5/d45/sublist__search_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">  360</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[]) {</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>    <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>    std::vector&lt;uint64_t&gt; mainlistData = {</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>        2, 5, 6, 7, 8};  </div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    std::vector&lt;uint64_t&gt; sublistData = {6, 8};  </div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *mainlistLL =</div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>        <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(mainlistData);</div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>    <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *sublistLL =</div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>        <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>            sublistData);  </div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span> </div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>    <span class="keywordtype">bool</span> exists = <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a4faee403e2758aaab682ed6622ae218c">search::sublist_search::sublistSearch</a>(</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>        sublistLL,</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>        mainlistLL);  </div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span> </div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Sublist: &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#ad1028bc215281d62e344af99da57fab2">search::sublist_search::printLinkedList</a>(sublistLL);</div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span> </div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Main list: &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#ad1028bc215281d62e344af99da57fab2">search::sublist_search::printLinkedList</a>(mainlistLL);</div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    std::cout &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span> </div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    <span class="keywordflow">if</span> (exists) {</div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;[TRUE] - sublist found in main list\n&quot;</span>;</div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;[FALSE] - sublist NOT found in main list\n&quot;</span>;</div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    }</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span> </div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    deleteList(mainlistLL);</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    deleteList(sublistLL);</div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>}</div>
+<div class="foldopen" id="foldopen00358" data-start="{" data-end="}">
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno"><a class="line" href="../../d5/d45/sublist__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">  358</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span> </div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>    std::vector&lt;uint64_t&gt; mainlistData = {</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>        2, 5, 6, 7, 8};  </div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>    std::vector&lt;uint64_t&gt; sublistData = {6, 8};  </div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span> </div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *mainlistLL =</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>        <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(mainlistData);</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    <a class="code hl_struct" href="../../da/d61/structsearch_1_1sublist__search_1_1_node.html">search::sublist_search::Node</a> *sublistLL =</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>        <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a>(</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>            sublistData);  </div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span> </div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>    <span class="keywordtype">bool</span> exists = <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#a4faee403e2758aaab682ed6622ae218c">search::sublist_search::sublistSearch</a>(</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>        sublistLL,</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>        mainlistLL);  </div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span> </div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Sublist: &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#ad1028bc215281d62e344af99da57fab2">search::sublist_search::printLinkedList</a>(sublistLL);</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span> </div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Main list: &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>    <a class="code hl_function" href="../../d5/d45/sublist__search_8cpp.html#ad1028bc215281d62e344af99da57fab2">search::sublist_search::printLinkedList</a>(mainlistLL);</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    std::cout &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    <span class="keywordflow">if</span> (exists) {</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;[TRUE] - sublist found in main list\n&quot;</span>;</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;[FALSE] - sublist NOT found in main list\n&quot;</span>;</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    }</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span> </div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    deleteList(mainlistLL);</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    deleteList(sublistLL);</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>}</div>
 </div>
 <div class="ttc" id="aclass_test_cases_html"><div class="ttname"><a href="../../d5/d58/class_test_cases.html">TestCases</a></div><div class="ttdoc">class encapsulating the necessary test cases</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00225">inorder_successor_of_bst.cpp:225</a></div></div>
 <div class="ttc" id="aclass_test_cases_html_aa3aa3d5bf666f327ee8e2d11d397b06e"><div class="ttname"><a href="../../d5/d58/class_test_cases.html#aa3aa3d5bf666f327ee8e2d11d397b06e">TestCases::log</a></div><div class="ttdeci">void log(T msg)</div><div class="ttdoc">A function to print given message on console.</div><div class="ttdef"><b>Definition</b> <a href="#l00176">sublist_search.cpp:176</a></div></div>
@@ -422,7 +422,6 @@ $(function(){initNavTree('d5/d45/sublist__search_8cpp_source.html','../../','');
 <div class="ttc" id="aclass_test_cases_html_ac2636e8b5b9e053374c45bfcf0603008"><div class="ttname"><a href="../../d5/d58/class_test_cases.html#ac2636e8b5b9e053374c45bfcf0603008">TestCases::testCase_1</a></div><div class="ttdeci">void testCase_1()</div><div class="ttdoc">A test case contains edge case, printing inorder successor of last node.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00259">inorder_successor_of_bst.cpp:259</a></div></div>
 <div class="ttc" id="aclass_test_cases_html_ad9f95c09931625b41e3be1f88d1e28c5"><div class="ttname"><a href="../../d5/d58/class_test_cases.html#ad9f95c09931625b41e3be1f88d1e28c5">TestCases::testCase_3</a></div><div class="ttdeci">void testCase_3()</div><div class="ttdoc">A test case which contains main list of 50 elements and sublist of 20.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/inorder__successor__of__bst_8cpp_source.html#l00345">inorder_successor_of_bst.cpp:345</a></div></div>
 <div class="ttc" id="aclass_test_cases_html_aeabea90c02f9159e4a784bbf736e1e23"><div class="ttname"><a href="../../d5/d58/class_test_cases.html#aeabea90c02f9159e4a784bbf736e1e23">TestCases::runTests</a></div><div class="ttdeci">void runTests()</div><div class="ttdoc">Executes test cases.</div><div class="ttdef"><b>Definition</b> <a href="#l00186">sublist_search.cpp:186</a></div></div>
-<div class="ttc" id="agenerate__parentheses_8cpp_html_gae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="../../dd/d1e/generate__parentheses_8cpp.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Main function.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d1e/generate__parentheses_8cpp_source.html#l00110">generate_parentheses.cpp:110</a></div></div>
 <div class="ttc" id="ahash__search_8cpp_html_a6e1a77282bc65ad359d753d25df23243"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a></div><div class="ttdeci">int data[MAX]</div><div class="ttdoc">test data</div><div class="ttdef"><b>Definition</b> <a href="../../d1/df3/hash__search_8cpp_source.html#l00024">hash_search.cpp:24</a></div></div>
 <div class="ttc" id="anamespacesearch_html"><div class="ttname"><a href="../../d9/dca/namespacesearch.html">search</a></div><div class="ttdoc">for std::assert</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd5/binary__search_8cpp_source.html#l00047">binary_search.cpp:47</a></div></div>
 <div class="ttc" id="anamespacesublist__search_html"><div class="ttname"><a href="../../d9/def/namespacesublist__search.html">sublist_search</a></div><div class="ttdoc">Functions for the Sublist Search implementation.</div></div>
@@ -435,6 +434,7 @@ $(function(){initNavTree('d5/d45/sublist__search_8cpp_source.html','../../','');
 <div class="ttc" id="asublist__search_8cpp_html_a70ca8d0267008e09cfa50b4e2ddfbe53"><div class="ttname"><a href="../../d5/d45/sublist__search_8cpp.html#a70ca8d0267008e09cfa50b4e2ddfbe53">search::sublist_search::makeLinkedList</a></div><div class="ttdeci">Node * makeLinkedList(const std::vector&lt; uint64_t &gt; &amp;data)</div><div class="ttdoc">Give a vector of data, it adds each element of vector in the linked list and return the address of he...</div><div class="ttdef"><b>Definition</b> <a href="#l00074">sublist_search.cpp:74</a></div></div>
 <div class="ttc" id="asublist__search_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../d5/d45/sublist__search_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="#l00349">sublist_search.cpp:349</a></div></div>
 <div class="ttc" id="asublist__search_8cpp_html_ad1028bc215281d62e344af99da57fab2"><div class="ttname"><a href="../../d5/d45/sublist__search_8cpp.html#ad1028bc215281d62e344af99da57fab2">search::sublist_search::printLinkedList</a></div><div class="ttdeci">void printLinkedList(Node *start)</div><div class="ttdoc">A simple function to print the linked list.</div><div class="ttdef"><b>Definition</b> <a href="#l00058">sublist_search.cpp:58</a></div></div>
+<div class="ttc" id="asublist__search_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="../../d5/d45/sublist__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Main function.</div><div class="ttdef"><b>Definition</b> <a href="#l00358">sublist_search.cpp:358</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

@@ -158,7 +158,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a4b7ab643f6a5002f991837de46f70653" id="r_a4b7ab643f6a5002f991837de46f70653"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b7ab643f6a5002f991837de46f70653">test_3d_classes2</a> (std::vector&lt; std::valarray&lt; double &gt; &gt; *<a class="el" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>)</td></tr>
 <tr class="memitem:a6d0455dd5c30adda100e95f0423c786e" id="r_a6d0455dd5c30adda100e95f0423c786e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d0455dd5c30adda100e95f0423c786e">test3</a> ()</td></tr>
 <tr class="memitem:a2256c10b16edba377b64a44b6c656908" id="r_a2256c10b16edba377b64a44b6c656908"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2256c10b16edba377b64a44b6c656908">get_clock_diff</a> (clock_t start_t, clock_t end_t)</td></tr>
-<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627" id="r_a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="memitem:ac43d294e21a0c4fa33c53757df054576" id="r_ac43d294e21a0c4fa33c53757df054576"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac43d294e21a0c4fa33c53757df054576">kohonen_som</a> (const std::vector&lt; std::valarray&lt; double &gt; &gt; &amp;X, std::vector&lt; std::vector&lt; std::valarray&lt; double &gt; &gt; &gt; *W, double alpha_min)</td></tr>
 <tr class="memitem:aa72a53c88203fde278f1fe6c3afe5b07" id="r_aa72a53c88203fde278f1fe6c3afe5b07"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa72a53c88203fde278f1fe6c3afe5b07">save_u_matrix</a> (const char *fname, const std::vector&lt; std::vector&lt; std::valarray&lt; double &gt; &gt; &gt; &amp;W)</td></tr>
 </table><table class="memberdecls">
@@ -291,8 +291,8 @@ The compiled code is much slower when compiled with MS Visual C++ 2019 than with
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a3c04138a5bfe5d72780bb7e82a18e627" name="a3c04138a5bfe5d72780bb7e82a18e627"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&#160;</a></span>main()</h2>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -300,19 +300,15 @@ The compiled code is much slower when compiled with MS Visual C++ 2019 than with
         <tr>
           <td class="memname">int main </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>argc</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">char **</td>          <td class="paramname"><span class="paramname"><em>argv</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Main function </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/def/kohonen__som__topology_8cpp_source.html#l00582">582</a> of file <a class="el" href="../../d4/def/kohonen__som__topology_8cpp_source.html">kohonen_som_topology.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  582</span>                                {</div>
+<div class="fragment"><div class="line"><span class="lineno">  582</span>           {</div>
 <div class="line"><span class="lineno">  583</span><span class="preprocessor">#ifdef _OPENMP</span></div>
 <div class="line"><span class="lineno">  584</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Using OpenMP based parallelization\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  585</span><span class="preprocessor">#else</span></div>

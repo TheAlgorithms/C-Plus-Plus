@@ -146,8 +146,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:ade2fcfe0359f3c7691bfaa04b14943e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates and stores the result of all the sub-problems, so that we don't have to recur to compute the minimum cost of a particular operation if it is already computed and stored in the <span class="tt">dp</span> vector.  <br /></td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
 <tr class="memdesc:aa8dca7b867074164d5f45b0f3851269d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test implementations.  <br /></td></tr>
-<tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97" id="r_a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
-<tr class="memdesc:a0ddf1224851353fc92bfbff6f499fa97"><td class="mdescLeft">&#160;</td><td class="mdescRight">main function  <br /></td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">main function  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of <a href="https://en.wikipedia.org/wiki/Edit_distance" target="_blank">Minimum Edit Distance</a> using Dynamic Programing. </p>
@@ -251,8 +251,8 @@ Algorithm</h3>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a0ddf1224851353fc92bfbff6f499fa97" name="a0ddf1224851353fc92bfbff6f499fa97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ddf1224851353fc92bfbff6f499fa97">&#9670;&#160;</a></span>main()</h2>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,31 +260,20 @@ Algorithm</h3>
         <tr>
           <td class="memname">int main </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>argc</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>argv</em></span>[]&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>main function </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">argc</td><td>commandline argument count (ignored) </td></tr>
-    <tr><td class="paramname">argv</td><td>commandline array of arguments (ignored) </td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d52/minimum__edit__distance_8cpp_source.html#l00173">173</a> of file <a class="el" href="../../da/d52/minimum__edit__distance_8cpp_source.html">minimum_edit_distance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  173</span>                                 {</div>
-<div class="line"><span class="lineno">  174</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">  175</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  176</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d52/minimum__edit__distance_8cpp_source.html#l00171">171</a> of file <a class="el" href="../../da/d52/minimum__edit__distance_8cpp_source.html">minimum_edit_distance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  171</span>           {</div>
+<div class="line"><span class="lineno">  172</span>    <a class="code hl_function" href="#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">  173</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  174</span>}</div>
 <div class="ttc" id="aminimum__edit__distance_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../da/d52/minimum__edit__distance_8cpp_source.html#l00142">minimum_edit_distance.cpp:142</a></div></div>
 </div><!-- fragment -->
 </div>

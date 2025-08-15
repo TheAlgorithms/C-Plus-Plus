@@ -154,8 +154,8 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a6dc652a36ea42ba262c4e4236e3e6601" id="r_a6dc652a36ea42ba262c4e4236e3e6601"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6dc652a36ea42ba262c4e4236e3e6601">test</a> (const std::vector&lt; int &gt; &amp;vals, int windowSize)</td></tr>
 <tr class="memdesc:a6dc652a36ea42ba262c4e4236e3e6601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test implementations.  <br /></td></tr>
-<tr class="memitem:ac0f2228420376f4db7e1274f2b41667c" id="r_ac0f2228420376f4db7e1274f2b41667c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0f2228420376f4db7e1274f2b41667c">main</a> (int argc, const char *argv[])</td></tr>
-<tr class="memdesc:ac0f2228420376f4db7e1274f2b41667c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <br /></td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An implementation of a median calculation of a sliding window along a data stream. </p>
@@ -200,8 +200,8 @@ Algorithm</h3>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="ac0f2228420376f4db7e1274f2b41667c" name="ac0f2228420376f4db7e1274f2b41667c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0f2228420376f4db7e1274f2b41667c">&#9670;&#160;</a></span>main()</h2>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,24 +209,13 @@ Algorithm</h3>
         <tr>
           <td class="memname">int main </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>argc</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>argv</em></span>[]&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Main function. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">argc</td><td>command line argument count (ignored) </td></tr>
-    <tr><td class="paramname">argv</td><td>command line array of arguments (ignored) </td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
 <p>A few fixed test cases</p>
 <p>Array of sorted values; odd window size</p>
@@ -242,41 +231,41 @@ Algorithm</h3>
 <p>Random array values (positive/negative)</p>
 <p>Testing randomized test</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/ded/windowed__median_8cpp_source.html#l00198">198</a> of file <a class="el" href="../../d1/ded/windowed__median_8cpp_source.html">windowed_median.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  198</span>                                       {</div>
-<div class="line"><span class="lineno">  200</span>    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>({1, 2, 3, 4, 5, 6, 7, 8, 9},</div>
+<p class="definition">Definition at line <a class="el" href="../../d1/ded/windowed__median_8cpp_source.html#l00196">196</a> of file <a class="el" href="../../d1/ded/windowed__median_8cpp_source.html">windowed_median.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  196</span>           {</div>
+<div class="line"><span class="lineno">  198</span>    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>({1, 2, 3, 4, 5, 6, 7, 8, 9},</div>
+<div class="line"><span class="lineno">  199</span>         3);  </div>
+<div class="line"><span class="lineno">  200</span>    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>({9, 8, 7, 6, 5, 4, 3, 2, 1},</div>
 <div class="line"><span class="lineno">  201</span>         3);  </div>
-<div class="line"><span class="lineno">  202</span>    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>({9, 8, 7, 6, 5, 4, 3, 2, 1},</div>
-<div class="line"><span class="lineno">  203</span>         3);  </div>
-<div class="line"><span class="lineno">  204</span>    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>({9, 8, 7, 6, 5, 4, 5, 6}, 4);     </div>
-<div class="line"><span class="lineno">  205</span>    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>({3, 3, 3, 3, 3, 3, 3, 3, 3}, 3);  </div>
-<div class="line"><span class="lineno">  206</span>    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>({3, 3, 3, 3, 7, 3, 3, 3, 3}, 3);  </div>
-<div class="line"><span class="lineno">  207</span>    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>({4, 3, 3, -5, -5, 1, 3, 4, 5},</div>
-<div class="line"><span class="lineno">  208</span>         5);  </div>
-<div class="line"><span class="lineno">  209</span></div>
-<div class="line"><span class="lineno">  213</span>    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>({470211272, 101027544, 1457850878, 1458777923, 2007237709, 823564440,</div>
-<div class="line"><span class="lineno">  214</span>          1115438165, 1784484492, 74243042, 114807987},</div>
-<div class="line"><span class="lineno">  215</span>         6);</div>
-<div class="line"><span class="lineno">  216</span></div>
-<div class="line"><span class="lineno">  218</span>    std::srand(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::time(<span class="keyword">nullptr</span>)));</div>
-<div class="line"><span class="lineno">  219</span>    std::vector&lt;int&gt; vals;</div>
-<div class="line"><span class="lineno">  220</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 8; i &lt; 100; i++) {</div>
-<div class="line"><span class="lineno">  221</span>        <span class="keyword">const</span> <span class="keyword">auto</span> n =</div>
-<div class="line"><span class="lineno">  222</span>            1 + std::rand() /</div>
-<div class="line"><span class="lineno">  223</span>                    ((RAND_MAX + 5u) / 20);  </div>
-<div class="line"><span class="lineno">  224</span>        <span class="keyword">auto</span> windowSize =</div>
-<div class="line"><span class="lineno">  225</span>            1 + std::rand() / ((RAND_MAX + 3u) /</div>
-<div class="line"><span class="lineno">  226</span>                               10);  </div>
-<div class="line"><span class="lineno">  227</span>        vals.clear();</div>
-<div class="line"><span class="lineno">  228</span>        vals.reserve(n);</div>
-<div class="line"><span class="lineno">  229</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++) {</div>
-<div class="line"><span class="lineno">  230</span>            vals.push_back(</div>
-<div class="line"><span class="lineno">  231</span>                rand() - RAND_MAX);  </div>
-<div class="line"><span class="lineno">  232</span>        }</div>
-<div class="line"><span class="lineno">  233</span>        <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>(vals, windowSize);  </div>
-<div class="line"><span class="lineno">  234</span>    }</div>
-<div class="line"><span class="lineno">  235</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  236</span>}</div>
+<div class="line"><span class="lineno">  202</span>    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>({9, 8, 7, 6, 5, 4, 5, 6}, 4);     </div>
+<div class="line"><span class="lineno">  203</span>    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>({3, 3, 3, 3, 3, 3, 3, 3, 3}, 3);  </div>
+<div class="line"><span class="lineno">  204</span>    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>({3, 3, 3, 3, 7, 3, 3, 3, 3}, 3);  </div>
+<div class="line"><span class="lineno">  205</span>    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>({4, 3, 3, -5, -5, 1, 3, 4, 5},</div>
+<div class="line"><span class="lineno">  206</span>         5);  </div>
+<div class="line"><span class="lineno">  207</span></div>
+<div class="line"><span class="lineno">  211</span>    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>({470211272, 101027544, 1457850878, 1458777923, 2007237709, 823564440,</div>
+<div class="line"><span class="lineno">  212</span>          1115438165, 1784484492, 74243042, 114807987},</div>
+<div class="line"><span class="lineno">  213</span>         6);</div>
+<div class="line"><span class="lineno">  214</span></div>
+<div class="line"><span class="lineno">  216</span>    std::srand(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::time(<span class="keyword">nullptr</span>)));</div>
+<div class="line"><span class="lineno">  217</span>    std::vector&lt;int&gt; vals;</div>
+<div class="line"><span class="lineno">  218</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 8; i &lt; 100; i++) {</div>
+<div class="line"><span class="lineno">  219</span>        <span class="keyword">const</span> <span class="keyword">auto</span> n =</div>
+<div class="line"><span class="lineno">  220</span>            1 + std::rand() /</div>
+<div class="line"><span class="lineno">  221</span>                    ((RAND_MAX + 5u) / 20);  </div>
+<div class="line"><span class="lineno">  222</span>        <span class="keyword">auto</span> windowSize =</div>
+<div class="line"><span class="lineno">  223</span>            1 + std::rand() / ((RAND_MAX + 3u) /</div>
+<div class="line"><span class="lineno">  224</span>                               10);  </div>
+<div class="line"><span class="lineno">  225</span>        vals.clear();</div>
+<div class="line"><span class="lineno">  226</span>        vals.reserve(n);</div>
+<div class="line"><span class="lineno">  227</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++) {</div>
+<div class="line"><span class="lineno">  228</span>            vals.push_back(</div>
+<div class="line"><span class="lineno">  229</span>                rand() - RAND_MAX);  </div>
+<div class="line"><span class="lineno">  230</span>        }</div>
+<div class="line"><span class="lineno">  231</span>        <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>(vals, windowSize);  </div>
+<div class="line"><span class="lineno">  232</span>    }</div>
+<div class="line"><span class="lineno">  233</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  234</span>}</div>
 <div class="ttc" id="agenerate__parentheses_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d1e/generate__parentheses_8cpp_source.html#l00082">generate_parentheses.cpp:82</a></div></div>
 </div><!-- fragment -->
 </div>
