@@ -12,6 +12,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include(CTest) # for testing algorithms
 
+option(ENABLE_TESTING "flag to test the repo" OFF)
+if(ENABLE_TESTING)
+    message(STATUS "Testing enabled")
+    enable_testing()
+endif()
+
 # Additional warnings and errors
 if(MSVC)
     add_compile_definitions(_CRT_SECURE_NO_WARNINGS)
@@ -23,13 +29,13 @@ endif()
 option(USE_OPENMP "flag to use OpenMP for multithreading" ON)
 if(USE_OPENMP)
     find_package(OpenMP 3.0 COMPONENTS CXX)
-    if (OpenMP_CXX_FOUND)
+    if(OpenMP_CXX_FOUND)
         message(STATUS "Building with OpenMP Multithreading.")
     else()
         message(STATUS "No OpenMP found, no multithreading.")
     endif()
 endif()
-    
+
 add_subdirectory(backtracking)
 add_subdirectory(bit_manipulation)
 add_subdirectory(ciphers)
@@ -59,7 +65,7 @@ cmake_policy(SET CMP0054 NEW)
 cmake_policy(SET CMP0057 NEW)
 
 find_package(Doxygen OPTIONAL_COMPONENTS dot dia)
-if(DOXYGEN_FOUND)  
+if(DOXYGEN_FOUND)
     if(MSVC)
         set(DOXYGEN_CPP_CLI_SUPPORT YES)
     endif()
@@ -67,11 +73,11 @@ if(DOXYGEN_FOUND)
     if(Doxygen_dot_FOUND)
         set(DOXYGEN_HAVE_DOT YES)
     endif()
-    
+
     if(OPENMP_FOUND)
         set(DOXYGEN_PREDEFINED "_OPENMP=1")
     endif()
-    
+
     if(GLUT_FOUND)
         set(DOXYGEN_PREDEFINED ${DOXYGEN_PREDEFINED} "GLUT_FOUND=1")
     endif()
