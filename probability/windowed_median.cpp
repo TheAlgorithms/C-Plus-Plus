@@ -191,11 +191,9 @@ static void test(const std::vector<int> &vals, int windowSize) {
 
 /**
  * @brief Main function
- * @param argc command line argument count (ignored)
- * @param argv command line array of arguments (ignored)
  * @returns 0 on exit
  */
-int main(int argc, const char *argv[]) {
+int main() {
     /// A few fixed test cases
     test({1, 2, 3, 4, 5, 6, 7, 8, 9},
          3);  /// Array of sorted values; odd window size
