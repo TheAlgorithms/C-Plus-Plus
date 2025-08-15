@@ -136,10 +136,8 @@ static void test3() {
 /**
  * Main function
  *
- * @param argc commandline argument count (ignored)
- * @param argv commandline array of arguments (ignored)
  */
-int main(int argc, char **argv) {
+int main() {
     test1();
     test2();
     test3();
