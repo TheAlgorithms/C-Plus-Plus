@@ -217,49 +217,49 @@ Functions</h2></td></tr>
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d02/linear__search_8cpp_source.html#l00065">65</a> of file <a class="el" href="../../d9/d02/linear__search_8cpp_source.html">linear_search.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   65</span>           {</div>
-<div class="line"><span class="lineno">   66</span>    <span class="keywordtype">int</span> mode = 0;</div>
-<div class="line"><span class="lineno">   67</span> </div>
-<div class="line"><span class="lineno">   68</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Choose mode\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   69</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Self-test mode (1), interactive mode (2): &quot;</span>;</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d02/linear__search_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../d9/d02/linear__search_8cpp_source.html">linear_search.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>           {</div>
+<div class="line"><span class="lineno">   69</span>    <span class="keywordtype">int</span> mode = 0;</div>
 <div class="line"><span class="lineno">   70</span> </div>
-<div class="line"><span class="lineno">   71</span>    std::cin &gt;&gt; mode;</div>
-<div class="line"><span class="lineno">   72</span> </div>
-<div class="line"><span class="lineno">   73</span>    <span class="keywordflow">if</span> (mode == 2) {</div>
-<div class="line"><span class="lineno">   74</span>        <span class="keywordtype">int</span> size = 0;</div>
-<div class="line"><span class="lineno">   75</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\nEnter the size of the array [in range 1-30 ]: &quot;</span>;</div>
-<div class="line"><span class="lineno">   76</span>        std::cin &gt;&gt; size;</div>
-<div class="line"><span class="lineno">   77</span> </div>
-<div class="line"><span class="lineno">   78</span>        <span class="keywordflow">while</span> (size &lt;= 0 || size &gt; 30) {</div>
-<div class="line"><span class="lineno">   79</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Size can only be 1-30. Please choose another value: &quot;</span>;</div>
-<div class="line"><span class="lineno">   80</span>            std::cin &gt;&gt; size;</div>
-<div class="line"><span class="lineno">   81</span>        }</div>
-<div class="line"><span class="lineno">   82</span> </div>
-<div class="line"><span class="lineno">   83</span>        <span class="keywordtype">int</span> *array = <span class="keyword">new</span> <span class="keywordtype">int</span>[size];</div>
-<div class="line"><span class="lineno">   84</span>        <span class="keywordtype">int</span> key = 0;</div>
+<div class="line"><span class="lineno">   71</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Choose mode\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   72</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Self-test mode (1), interactive mode (2): &quot;</span>;</div>
+<div class="line"><span class="lineno">   73</span> </div>
+<div class="line"><span class="lineno">   74</span>    std::cin &gt;&gt; mode;</div>
+<div class="line"><span class="lineno">   75</span> </div>
+<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">if</span> (mode == 2) {</div>
+<div class="line"><span class="lineno">   77</span>        <span class="keywordtype">int</span> size = 0;</div>
+<div class="line"><span class="lineno">   78</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\nEnter the size of the array [in range 1-30 ]: &quot;</span>;</div>
+<div class="line"><span class="lineno">   79</span>        std::cin &gt;&gt; size;</div>
+<div class="line"><span class="lineno">   80</span> </div>
+<div class="line"><span class="lineno">   81</span>        <span class="keywordflow">while</span> (size &lt;= 0 || size &gt; 30) {</div>
+<div class="line"><span class="lineno">   82</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Size can only be 1-30. Please choose another value: &quot;</span>;</div>
+<div class="line"><span class="lineno">   83</span>            std::cin &gt;&gt; size;</div>
+<div class="line"><span class="lineno">   84</span>        }</div>
 <div class="line"><span class="lineno">   85</span> </div>
-<div class="line"><span class="lineno">   86</span>        <span class="comment">// Input for the array elements</span></div>
-<div class="line"><span class="lineno">   87</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Enter the array of &quot;</span> &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot; numbers: &quot;</span>;</div>
-<div class="line"><span class="lineno">   88</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; i++) {</div>
-<div class="line"><span class="lineno">   89</span>            std::cin &gt;&gt; array[i];</div>
-<div class="line"><span class="lineno">   90</span>        }</div>
-<div class="line"><span class="lineno">   91</span> </div>
-<div class="line"><span class="lineno">   92</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\nEnter the number to be searched: &quot;</span>;</div>
-<div class="line"><span class="lineno">   93</span>        std::cin &gt;&gt; key;</div>
+<div class="line"><span class="lineno">   86</span>        <span class="keywordtype">int</span> *array = <span class="keyword">new</span> <span class="keywordtype">int</span>[size];</div>
+<div class="line"><span class="lineno">   87</span>        <span class="keywordtype">int</span> key = 0;</div>
+<div class="line"><span class="lineno">   88</span> </div>
+<div class="line"><span class="lineno">   89</span>        <span class="comment">// Input for the array elements</span></div>
+<div class="line"><span class="lineno">   90</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Enter the array of &quot;</span> &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot; numbers: &quot;</span>;</div>
+<div class="line"><span class="lineno">   91</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; i++) {</div>
+<div class="line"><span class="lineno">   92</span>            std::cin &gt;&gt; array[i];</div>
+<div class="line"><span class="lineno">   93</span>        }</div>
 <div class="line"><span class="lineno">   94</span> </div>
-<div class="line"><span class="lineno">   95</span>        <span class="keywordtype">int</span> index = <a class="code hl_function" href="#a84ac3988a534eb60ca351ed6caf56d84">LinearSearch</a>(array, size, key);</div>
-<div class="line"><span class="lineno">   96</span>        <span class="keywordflow">if</span> (index != -1) {</div>
-<div class="line"><span class="lineno">   97</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Number found at index: &quot;</span> &lt;&lt; index &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   98</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   99</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Array element not found&quot;</span>;</div>
-<div class="line"><span class="lineno">  100</span>        }</div>
-<div class="line"><span class="lineno">  101</span>        <span class="keyword">delete</span>[] array;</div>
-<div class="line"><span class="lineno">  102</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  103</span>        <a class="code hl_function" href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">  104</span>    }</div>
-<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  106</span>}</div>
+<div class="line"><span class="lineno">   95</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\nEnter the number to be searched: &quot;</span>;</div>
+<div class="line"><span class="lineno">   96</span>        std::cin &gt;&gt; key;</div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span>        <span class="keywordtype">int</span> index = <a class="code hl_function" href="#a84ac3988a534eb60ca351ed6caf56d84">LinearSearch</a>(array, size, key);</div>
+<div class="line"><span class="lineno">   99</span>        <span class="keywordflow">if</span> (index != -1) {</div>
+<div class="line"><span class="lineno">  100</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Number found at index: &quot;</span> &lt;&lt; index &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  101</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  102</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Array element not found&quot;</span>;</div>
+<div class="line"><span class="lineno">  103</span>        }</div>
+<div class="line"><span class="lineno">  104</span>        <span class="keyword">delete</span>[] array;</div>
+<div class="line"><span class="lineno">  105</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  106</span>        <a class="code hl_function" href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">  107</span>    }</div>
+<div class="line"><span class="lineno">  108</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  109</span>}</div>
 <div class="ttc" id="alinear__search_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d02/linear__search_8cpp_source.html#l00037">linear_search.cpp:37</a></div></div>
 <div class="ttc" id="alinear__search_8cpp_html_a84ac3988a534eb60ca351ed6caf56d84"><div class="ttname"><a href="#a84ac3988a534eb60ca351ed6caf56d84">LinearSearch</a></div><div class="ttdeci">int LinearSearch(int *array, int size, int key)</div><div class="ttdoc">for IO operations</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d02/linear__search_8cpp_source.html#l00021">linear_search.cpp:21</a></div></div>
 </div><!-- fragment -->
@@ -303,18 +303,21 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   45</span>    assert(<a class="code hl_function" href="#a84ac3988a534eb60ca351ed6caf56d84">LinearSearch</a>(array, size, 1) == 1);</div>
 <div class="line"><span class="lineno">   46</span>    assert(<a class="code hl_function" href="#a84ac3988a534eb60ca351ed6caf56d84">LinearSearch</a>(array, size, 2) == 2);</div>
 <div class="line"><span class="lineno">   47</span> </div>
-<div class="line"><span class="lineno">   48</span>    size = 6;</div>
-<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; i++) {</div>
-<div class="line"><span class="lineno">   50</span>        array[i] = i;</div>
-<div class="line"><span class="lineno">   51</span>    }</div>
-<div class="line"><span class="lineno">   52</span> </div>
-<div class="line"><span class="lineno">   53</span>    assert(<a class="code hl_function" href="#a84ac3988a534eb60ca351ed6caf56d84">LinearSearch</a>(array, size, 3) == 3);</div>
-<div class="line"><span class="lineno">   54</span>    assert(<a class="code hl_function" href="#a84ac3988a534eb60ca351ed6caf56d84">LinearSearch</a>(array, size, 1) == 1);</div>
-<div class="line"><span class="lineno">   55</span>    assert(<a class="code hl_function" href="#a84ac3988a534eb60ca351ed6caf56d84">LinearSearch</a>(array, size, 5) == 5);</div>
-<div class="line"><span class="lineno">   56</span> </div>
-<div class="line"><span class="lineno">   57</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   58</span>    <span class="keyword">delete</span>[] array;  <span class="comment">// free memory up</span></div>
-<div class="line"><span class="lineno">   59</span>}</div>
+<div class="line"><span class="lineno">   48</span>    <span class="keyword">delete</span>[] array;</div>
+<div class="line"><span class="lineno">   49</span> </div>
+<div class="line"><span class="lineno">   50</span>    size = 6;</div>
+<div class="line"><span class="lineno">   51</span>    array = <span class="keyword">new</span> <span class="keywordtype">int</span>[size];</div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; i++) {</div>
+<div class="line"><span class="lineno">   53</span>        array[i] = i;</div>
+<div class="line"><span class="lineno">   54</span>    }</div>
+<div class="line"><span class="lineno">   55</span> </div>
+<div class="line"><span class="lineno">   56</span>    assert(<a class="code hl_function" href="#a84ac3988a534eb60ca351ed6caf56d84">LinearSearch</a>(array, size, 3) == 3);</div>
+<div class="line"><span class="lineno">   57</span>    assert(<a class="code hl_function" href="#a84ac3988a534eb60ca351ed6caf56d84">LinearSearch</a>(array, size, 1) == 1);</div>
+<div class="line"><span class="lineno">   58</span>    assert(<a class="code hl_function" href="#a84ac3988a534eb60ca351ed6caf56d84">LinearSearch</a>(array, size, 5) == 5);</div>
+<div class="line"><span class="lineno">   59</span> </div>
+<div class="line"><span class="lineno">   60</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   61</span>    <span class="keyword">delete</span>[] array;  <span class="comment">// free memory up</span></div>
+<div class="line"><span class="lineno">   62</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
