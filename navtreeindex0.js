@@ -135,7 +135,7 @@ var NAVTREEINDEX0 =
 "d1/d12/tree_8cpp_source.html":[10,0,4,35],
 "d1/d1b/classpriority__queue.html":[9,0,52],
 "d1/d1b/classpriority__queue.html#a4df2ae826d2b2caf4a6755adbd34a836":[9,0,52,0],
-"d1/d1b/topological__sort__by__kahns__algo_8cpp_source.html":[10,0,9,19],
+"d1/d1b/topological__sort__by__kahns__algo_8cpp_source.html":[10,0,9,20],
 "d1/d1c/base64__encoding_8cpp_source.html":[10,0,2,2],
 "d1/d21/quick__sort_8cpp.html":[10,0,23,25],
 "d1/d21/quick__sort_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[10,0,23,25,5],

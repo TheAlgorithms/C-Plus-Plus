@@ -8,6 +8,8 @@ var namespacegraph =
     [ "addEdge", "df/dce/namespacegraph.html#ad4016cfc80485a43748895a2c26c7d08", null ],
     [ "addEdge", "df/dce/namespacegraph.html#a0e30e0dca68cb6e4f671440819b35b6a", null ],
     [ "checkBipartite", "df/dce/namespacegraph.html#a8e1b547cd407c0774e63f0dc95cda9e7", null ],
+    [ "count_paths", "df/dce/namespacegraph.html#a7c3adb1551bc527a7aa93f331b1c0987", null ],
+    [ "count_paths_dfs", "df/dce/namespacegraph.html#af99fccdd19e8f223e8749561589a762b", null ],
     [ "depth_first_search", "df/dce/namespacegraph.html#ab5428a3519267a28bba4b4310cfbb6ae", null ],
     [ "dijkstra", "df/dce/namespacegraph.html#adc68cbc8ba09eb1142265935c0d45b84", null ],
     [ "explore", "df/dce/namespacegraph.html#a3ae80bc4c6a79d041b4f3a6589eb7fb8", null ],

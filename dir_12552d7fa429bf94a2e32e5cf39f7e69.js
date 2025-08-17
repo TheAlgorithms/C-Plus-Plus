@@ -17,6 +17,7 @@ var dir_12552d7fa429bf94a2e32e5cf39f7e69 =
     [ "kruskal.cpp", "d9/d1c/kruskal_8cpp_source.html", null ],
     [ "lowest_common_ancestor.cpp", "de/dde/lowest__common__ancestor_8cpp.html", "de/dde/lowest__common__ancestor_8cpp" ],
     [ "max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp", "d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html", null ],
+    [ "number_of_paths.cpp", "d2/d32/number__of__paths_8cpp.html", "d2/d32/number__of__paths_8cpp" ],
     [ "prim.cpp", "da/d27/prim_8cpp_source.html", null ],
     [ "topological_sort.cpp", "d8/db9/topological__sort_8cpp.html", "d8/db9/topological__sort_8cpp" ],
     [ "topological_sort_by_kahns_algo.cpp", "d1/d1b/topological__sort__by__kahns__algo_8cpp_source.html", null ],

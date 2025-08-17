@@ -150,6 +150,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:a8e1b547cd407c0774e63f0dc95cda9e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">function to check whether the passed graph is bipartite or not  <br /></td></tr>
 <tr class="memitem:a84b0551489c613a681cc83b34450da4b" id="r_a84b0551489c613a681cc83b34450da4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84b0551489c613a681cc83b34450da4b">isBipartite</a> (const std::vector&lt; std::vector&lt; int64_t &gt; &gt; &amp;graph)</td></tr>
 <tr class="memdesc:a84b0551489c613a681cc83b34450da4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the given graph is bipartite else returns false  <br /></td></tr>
+<tr class="memitem:af99fccdd19e8f223e8749561589a762b" id="r_af99fccdd19e8f223e8749561589a762b"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af99fccdd19e8f223e8749561589a762b">count_paths_dfs</a> (const std::vector&lt; std::vector&lt; std::uint32_t &gt; &gt; &amp;A, std::uint32_t u, std::uint32_t v, std::uint32_t n, std::vector&lt; bool &gt; &amp;visited)</td></tr>
+<tr class="memdesc:af99fccdd19e8f223e8749561589a762b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to perform DFS and count the number of paths from node <span class="tt">u</span> to node <span class="tt">v</span>  <br /></td></tr>
+<tr class="memitem:a7c3adb1551bc527a7aa93f331b1c0987" id="r_a7c3adb1551bc527a7aa93f331b1c0987"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c3adb1551bc527a7aa93f331b1c0987">count_paths</a> (const std::vector&lt; std::vector&lt; std::uint32_t &gt; &gt; &amp;A, std::uint32_t u, std::uint32_t v, std::uint32_t n)</td></tr>
+<tr class="memdesc:a7c3adb1551bc527a7aa93f331b1c0987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts the number of paths from node <span class="tt">u</span> to node <span class="tt">v</span> in a directed graph using Depth First Search (DFS)  <br /></td></tr>
 <tr class="memitem:ab7706341d006e20d1ae58274187a3346" id="r_ab7706341d006e20d1ae58274187a3346"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7706341d006e20d1ae58274187a3346">TravellingSalesmanProblem</a> (std::vector&lt; std::vector&lt; uint32_t &gt; &gt; *cities, int32_t src, uint32_t V)</td></tr>
 <tr class="memdesc:ab7706341d006e20d1ae58274187a3346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function calculates the minimum path distance that will cover all the cities starting from the source.  <br /></td></tr>
 </table>
@@ -164,6 +168,7 @@ Functions</h2></td></tr>
 <p>A bipartite graph is the one whose nodes can be divided into two disjoint sets in such a way that the nodes in a set are not connected to each other at all, i.e. no intra-set connections. The only connections that exist are that of inter-set, i.e. the nodes from one set are connected to a subset of nodes in the other set. In this implementation, using a graph in the form of adjacency list, check whether the given graph is a bipartite or not.</p>
 <p>References used: <a href="https://www.geeksforgeeks.org/bipartite-graph/" target="_blank">GeeksForGeeks</a> </p><dl class="section author"><dt>Author</dt><dd><a href="https://github.com/tushar2407" target="_blank">tushar2407</a> for assert for IO operations for queue data structure for vector data structure</dd></dl>
 <p>Graphical algorithms</p>
+<p>for std::vector for IO operations for assert for fixed-size integer types (e.g., std::uint32_t)</p>
 <p>for std::min for IO operations for limits of integral types for std::vector</p>
 <p><a class="el" href="../../dc/d61/classgraph_1_1_graph.html">Graph</a> Algorithms </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
@@ -376,6 +381,129 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   67</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;  </div>
 <div class="line"><span class="lineno">   69</span>}</div>
 <div class="ttc" id="anamespacegraph_html"><div class="ttname"><a href="../../df/dce/namespacegraph.html">graph</a></div><div class="ttdoc">Graph Algorithms.</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7c3adb1551bc527a7aa93f331b1c0987" name="a7c3adb1551bc527a7aa93f331b1c0987"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c3adb1551bc527a7aa93f331b1c0987">&#9670;&#160;</a></span>count_paths()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint32_t graph::count_paths </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; std::uint32_t &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::uint32_t</td>          <td class="paramname"><span class="paramname"><em>u</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::uint32_t</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::uint32_t</td>          <td class="paramname"><span class="paramname"><em>n</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counts the number of paths from node <span class="tt">u</span> to node <span class="tt">v</span> in a directed graph using Depth First Search (DFS) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">A</td><td>adjacency matrix representing the graph (1: edge exists, 0: no edge) </td></tr>
+    <tr><td class="paramname">u</td><td>the starting node </td></tr>
+    <tr><td class="paramname">v</td><td>the destination node </td></tr>
+    <tr><td class="paramname">n</td><td>the number of nodes in the graph </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of paths from node <span class="tt">u</span> to node <span class="tt">v</span> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d32/number__of__paths_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../d2/d32/number__of__paths_8cpp_source.html">number_of_paths.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>                                         {</div>
+<div class="line"><span class="lineno">   71</span>        <span class="comment">// Check for invalid nodes or empty graph</span></div>
+<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">if</span> (u &gt;= n || v &gt;= n || A.empty() || A[0].empty()) {</div>
+<div class="line"><span class="lineno">   73</span>            <span class="keywordflow">return</span> 0;  <span class="comment">// No valid paths if graph is empty or nodes are out of bounds</span></div>
+<div class="line"><span class="lineno">   74</span>        }</div>
+<div class="line"><span class="lineno">   75</span> </div>
+<div class="line"><span class="lineno">   76</span>        std::vector&lt;bool&gt; visited(n, <span class="keyword">false</span>);  <span class="comment">// Initialize a visited vector for tracking nodes</span></div>
+<div class="line"><span class="lineno">   77</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#af99fccdd19e8f223e8749561589a762b">count_paths_dfs</a>(A, u, v, n, visited);  <span class="comment">// Start DFS</span></div>
+<div class="line"><span class="lineno">   78</span>    }</div>
+<div class="ttc" id="anamespacegraph_html_af99fccdd19e8f223e8749561589a762b"><div class="ttname"><a href="#af99fccdd19e8f223e8749561589a762b">graph::count_paths_dfs</a></div><div class="ttdeci">std::uint32_t count_paths_dfs(const std::vector&lt; std::vector&lt; std::uint32_t &gt; &gt; &amp;A, std::uint32_t u, std::uint32_t v, std::uint32_t n, std::vector&lt; bool &gt; &amp;visited)</div><div class="ttdoc">Helper function to perform DFS and count the number of paths from node u to node v</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d32/number__of__paths_8cpp_source.html#l00034">number_of_paths.cpp:34</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af99fccdd19e8f223e8749561589a762b" name="af99fccdd19e8f223e8749561589a762b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af99fccdd19e8f223e8749561589a762b">&#9670;&#160;</a></span>count_paths_dfs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint32_t graph::count_paths_dfs </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; std::uint32_t &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::uint32_t</td>          <td class="paramname"><span class="paramname"><em>u</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::uint32_t</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::uint32_t</td>          <td class="paramname"><span class="paramname"><em>n</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>visited</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helper function to perform DFS and count the number of paths from node <span class="tt">u</span> to node <span class="tt">v</span> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">A</td><td>adjacency matrix representing the graph (1: edge exists, 0: no edge) </td></tr>
+    <tr><td class="paramname">u</td><td>the starting node </td></tr>
+    <tr><td class="paramname">v</td><td>the destination node </td></tr>
+    <tr><td class="paramname">n</td><td>the number of nodes in the graph </td></tr>
+    <tr><td class="paramname">visited</td><td>a vector to keep track of visited nodes in the current DFS path </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of paths from node <span class="tt">u</span> to node <span class="tt">v</span> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d32/number__of__paths_8cpp_source.html#l00034">34</a> of file <a class="el" href="../../d2/d32/number__of__paths_8cpp_source.html">number_of_paths.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>                                                        {</div>
+<div class="line"><span class="lineno">   39</span>        <span class="keywordflow">if</span> (u == v) {</div>
+<div class="line"><span class="lineno">   40</span>            <span class="keywordflow">return</span> 1;  <span class="comment">// Base case: Reached the destination node</span></div>
+<div class="line"><span class="lineno">   41</span>        }</div>
+<div class="line"><span class="lineno">   42</span> </div>
+<div class="line"><span class="lineno">   43</span>        visited[u] = <span class="keyword">true</span>;  <span class="comment">// Mark the current node as visited</span></div>
+<div class="line"><span class="lineno">   44</span>        std::uint32_t path_count = 0;  <span class="comment">// Count of all paths from `u` to `v`</span></div>
+<div class="line"><span class="lineno">   45</span> </div>
+<div class="line"><span class="lineno">   46</span>        <span class="keywordflow">for</span> (std::uint32_t i = 0; i &lt; n; i++) {</div>
+<div class="line"><span class="lineno">   47</span>            <span class="keywordflow">if</span> (A[u][i] == 1 &amp;&amp; !visited[i]) {  <span class="comment">// Check if there is an edge and the node is not visited</span></div>
+<div class="line"><span class="lineno">   48</span>                path_count += <a class="code hl_function" href="#af99fccdd19e8f223e8749561589a762b">count_paths_dfs</a>(A, i, v, n, visited);  <span class="comment">// Recursively explore paths from `i` to `v`</span></div>
+<div class="line"><span class="lineno">   49</span>            }</div>
+<div class="line"><span class="lineno">   50</span>        }</div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>        visited[u] = <span class="keyword">false</span>;  <span class="comment">// Unmark the current node as visited (backtracking)</span></div>
+<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">return</span> path_count;</div>
+<div class="line"><span class="lineno">   54</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>

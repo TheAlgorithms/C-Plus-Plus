@@ -137,6 +137,10 @@ var NAVTREEINDEX1 =
 "d2/d2f/namespacegreedy__algorithms_1_1dijkstra.html#a7341d7c76a6145e991cdd231f689fca8":[8,0,42,0,3],
 "d2/d2f/namespacegreedy__algorithms_1_1dijkstra.html#af6cb29ca6dc5771439f6ea7262058a71":[8,0,42,0,2],
 "d2/d2f/namespacegreedy__algorithms_1_1dijkstra.html#af915876d0ca33cc71a6a6191a8cd3ccd":[8,0,42,0,1],
+"d2/d32/number__of__paths_8cpp.html":[10,0,9,17],
+"d2/d32/number__of__paths_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,9,17,3],
+"d2/d32/number__of__paths_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,9,17,2],
+"d2/d32/number__of__paths_8cpp_source.html":[10,0,9,17],
 "d2/d3b/namespaceqr__algorithm.html":[8,0,95],
 "d2/d3b/namespaceqr__algorithm.html#a257425cb2365359da51c6fe6741834d8":[8,0,95,2],
 "d2/d3b/namespaceqr__algorithm.html#a28e2fa3e803abaea6c568dc45d69d8cc":[8,0,95,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX1 =
 "d3/d06/ode__semi__implicit__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b":[10,0,15,17,0],
 "d3/d06/ode__semi__implicit__euler_8cpp_source.html":[10,0,15,17],
 "d3/d09/node_8hpp.html":[10,0,4,15],
-"d3/d09/node_8hpp_source.html":[10,0,4,15],
-"d3/d17/namespaceutil__functions.html":[8,0,134],
-"d3/d19/sparse__matrix_8cpp.html":[10,0,17,22],
-"d3/d19/sparse__matrix_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,17,22,0],
-"d3/d19/sparse__matrix_8cpp_source.html":[10,0,17,22]
+"d3/d09/node_8hpp_source.html":[10,0,4,15]
 };

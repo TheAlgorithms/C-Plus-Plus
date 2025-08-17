@@ -1,5 +1,9 @@
 var NAVTREEINDEX7 =
 {
+"d8/dfd/structoperations__on__datastructures_1_1reverse__binary__tree_1_1_node.html#aeb01a65e51df1e3bc5296cde8477c352":[9,0,12,2,1,2],
+"d9/d00/factorial_8cpp.html":[10,0,14,14],
+"d9/d00/factorial_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[10,0,14,14,2],
+"d9/d00/factorial_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,14,14,1],
 "d9/d00/factorial_8cpp_source.html":[10,0,14,14],
 "d9/d02/linear__search_8cpp.html":[10,0,22,8],
 "d9/d02/linear__search_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[10,0,22,8,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX7 =
 "da/d0d/longest__common__string_8cpp_source.html":[10,0,6,14],
 "da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html":[9,0,12,0,1],
 "da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html#a005dc56b0c58350a13f4796b9b30b6c5":[9,0,12,0,1,0],
-"da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html#a12a06eef5ccaf667f319506eee655d95":[9,0,12,0,1,1],
-"da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html#a7461292b8b91aed86404d0ab019dfdd1":[9,0,12,0,1,2],
-"da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html#a7c867b8e1034a6f5da490c8b8c09cb77":[9,0,12,0,1,3],
-"da/d18/quadratic__equations__complex__numbers_8cpp.html":[10,0,14,51],
-"da/d18/quadratic__equations__complex__numbers_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,14,51,3]
+"da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html#a12a06eef5ccaf667f319506eee655d95":[9,0,12,0,1,1]
 };

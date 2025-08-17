@@ -1,5 +1,9 @@
 var NAVTREEINDEX11 =
 {
+"dd/d47/namespacemath.html#ad09d59850865012a6fd95d89954c82e4":[8,0,69,30],
+"dd/d47/namespacemath.html#ad0acf82b7bc920182bf8322d1e103953":[8,0,69,6],
+"dd/d47/namespacemath.html#ae1ca505751f5a6d3977b86372cfe75ea":[8,0,69,4],
+"dd/d47/namespacemath.html#ae413098478fa38acaac887b7654f0725":[8,0,69,10],
 "dd/d47/namespacemath.html#aec65db4e5c7317323227f026fe50ef11":[8,0,69,16],
 "dd/d47/namespacemath.html#af05567415a9ea36c254b54e3d5a2152a":[8,0,69,41],
 "dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f":[8,0,69,20],
@@ -202,10 +206,10 @@ var NAVTREEINDEX11 =
 "de/d85/decimal__to__roman__numeral_8cpp.html#a88203bd297e8405160c132faa1187780":[10,0,17,3,0],
 "de/d85/decimal__to__roman__numeral_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,17,3,1],
 "de/d85/decimal__to__roman__numeral_8cpp_source.html":[10,0,17,3],
-"de/d88/travelling__salesman__problem_8cpp.html":[10,0,9,20],
-"de/d88/travelling__salesman__problem_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[10,0,9,20,1],
-"de/d88/travelling__salesman__problem_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,9,20,0],
-"de/d88/travelling__salesman__problem_8cpp_source.html":[10,0,9,20],
+"de/d88/travelling__salesman__problem_8cpp.html":[10,0,9,21],
+"de/d88/travelling__salesman__problem_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[10,0,9,21,1],
+"de/d88/travelling__salesman__problem_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,9,21,0],
+"de/d88/travelling__salesman__problem_8cpp_source.html":[10,0,9,21],
 "de/d89/graham__scan__functions_8hpp_source.html":[10,0,8,1],
 "de/d8c/partition__problem_8cpp_source.html":[10,0,6,23],
 "de/d95/namespace_subsets.html":[8,0,126],
@@ -245,9 +249,5 @@ var NAVTREEINDEX11 =
 "de/dc5/intersection__of__two__arrays_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,16,6,2],
 "de/dc5/intersection__of__two__arrays_8cpp_source.html":[10,0,16,6],
 "de/dcd/kadanes3_8cpp.html":[10,0,17,8],
-"de/dcd/kadanes3_8cpp.html#a338439a04148ae89f695595acfa5c147":[10,0,17,8,1],
-"de/dcd/kadanes3_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,17,8,2],
-"de/dcd/kadanes3_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,17,8,0],
-"de/dcd/kadanes3_8cpp_source.html":[10,0,17,8],
-"de/dcf/binary__exponent_8cpp.html":[10,0,14,4]
+"de/dcd/kadanes3_8cpp.html#a338439a04148ae89f695595acfa5c147":[10,0,17,8,1]
 };

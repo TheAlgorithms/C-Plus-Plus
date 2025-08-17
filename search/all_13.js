@@ -51,12 +51,13 @@ var searchData=
   ['nqueensol_48',['NQueenSol',['../da/dac/n__queens__all__solution__optimised_8cpp.html#a23c0547e4fd1708e6fb643b08327a60f',1,'backtracking::n_queens_optimized::NQueenSol()'],['../d7/d24/nqueen__print__all__solutions_8cpp.html#acc809c055f335011de0d9030034c7108',1,'backtracking::n_queens_all_solutions::NQueenSol()']]],
   ['num_5fchars_49',['NUM_CHARS',['../d0/d3e/classdata__structures_1_1trie.html#a4bfac4be6ed1a34c7159eddb42469191',1,'data_structures::trie']]],
   ['num_5fdigits_50',['num_digits',['../db/d82/classlarge__number.html#ac09a05ec4aafb4d9e0b4440d6f0e2a93',1,'large_number']]],
-  ['number_5fof_5fpositive_5fdivisors_51',['number_of_positive_divisors',['../d0/da2/number__of__positive__divisors_8cpp.html#ad89ccced8504b5116046cfa03066ffeb',1,'number_of_positive_divisors.cpp']]],
-  ['number_5fof_5fpositive_5fdivisors_2ecpp_52',['number_of_positive_divisors.cpp',['../d0/da2/number__of__positive__divisors_8cpp.html',1,'']]],
-  ['number_5fof_5fsubsets_53',['number_of_subsets',['../d2/d5a/subset__sum_8cpp.html#a7cb50d36a59427a33f64a266dac83d99',1,'backtracking::subset_sum']]],
-  ['number_5fof_5fvertices_54',['number_of_vertices',['../dc/d61/classgraph_1_1_graph.html#a8930d1470d132b19e430d1c71f94c904',1,'graph::Graph']]],
-  ['numberofchildren_55',['numberOfChildren',['../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html#afca808362c13273ca8c8ae7d58e8eee0',1,'operations_on_datastructures::trie_operations::Tnode']]],
-  ['numberofciphersinfactorialn_56',['numberOfCiphersInFactorialN',['../da/d50/count__of__trailing__ciphers__in__factorial__n_8cpp.html#a0d5e1d651d0d30bd682f176d8f2b83d0',1,'bit_manipulation::count_of_trailing_ciphers_in_factorial_n']]],
-  ['numerical_20methods_57',['Numerical Methods',['../d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md60',1,'']]],
-  ['numerical_5fmethods_58',['numerical_methods',['../d1/de0/namespacenumerical__methods.html',1,'']]]
+  ['number_5fof_5fpaths_2ecpp_51',['number_of_paths.cpp',['../d2/d32/number__of__paths_8cpp.html',1,'']]],
+  ['number_5fof_5fpositive_5fdivisors_52',['number_of_positive_divisors',['../d0/da2/number__of__positive__divisors_8cpp.html#ad89ccced8504b5116046cfa03066ffeb',1,'number_of_positive_divisors.cpp']]],
+  ['number_5fof_5fpositive_5fdivisors_2ecpp_53',['number_of_positive_divisors.cpp',['../d0/da2/number__of__positive__divisors_8cpp.html',1,'']]],
+  ['number_5fof_5fsubsets_54',['number_of_subsets',['../d2/d5a/subset__sum_8cpp.html#a7cb50d36a59427a33f64a266dac83d99',1,'backtracking::subset_sum']]],
+  ['number_5fof_5fvertices_55',['number_of_vertices',['../dc/d61/classgraph_1_1_graph.html#a8930d1470d132b19e430d1c71f94c904',1,'graph::Graph']]],
+  ['numberofchildren_56',['numberOfChildren',['../d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html#afca808362c13273ca8c8ae7d58e8eee0',1,'operations_on_datastructures::trie_operations::Tnode']]],
+  ['numberofciphersinfactorialn_57',['numberOfCiphersInFactorialN',['../da/d50/count__of__trailing__ciphers__in__factorial__n_8cpp.html#a0d5e1d651d0d30bd682f176d8f2b83d0',1,'bit_manipulation::count_of_trailing_ciphers_in_factorial_n']]],
+  ['numerical_20methods_58',['Numerical Methods',['../d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md60',1,'']]],
+  ['numerical_5fmethods_59',['numerical_methods',['../d1/de0/namespacenumerical__methods.html',1,'']]]
 ];
