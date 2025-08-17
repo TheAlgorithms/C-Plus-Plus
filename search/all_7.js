@@ -69,7 +69,7 @@ var searchData=
   ['bubble_20sort_20algorithm_20analysis_20best_20case_20worst_20case_20average_20case_66',['Bubble Sort Algorithm Analysis (Best Case - Worst Case - Average Case)',['../d8/d13/bubble__sort_8cpp.html#autotoc_md111',1,'']]],
   ['bubble_5fsort_67',['bubble_sort',['../d0/dd5/namespacebubble__sort.html',1,'bubble_sort'],['../d8/d13/bubble__sort_8cpp.html#af3b12930a83915712461d53fe9659686',1,'sorting::bubble_sort::bubble_sort()']]],
   ['bubble_5fsort_2ecpp_68',['bubble_sort.cpp',['../d8/d13/bubble__sort_8cpp.html',1,'']]],
-  ['build_69',['build',['../d1/d9e/prefix__sum__array_8cpp.html#ab36151479ad37d53ef9fcb60a274b1d9',1,'range_queries::prefix_sum_array']]],
+  ['build_69',['build',['../d1/d9e/prefix__sum__array_8cpp.html#a98e118ed64ba95a8198e1a915459c177',1,'range_queries::prefix_sum_array']]],
   ['building_20locally_70',['Building Locally',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md37',1,'']]],
   ['buzz_5fnumber_2ecpp_71',['buzz_number.cpp',['../d1/d76/buzz__number_8cpp.html',1,'']]]
 ];

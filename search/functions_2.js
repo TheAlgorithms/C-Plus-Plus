@@ -28,5 +28,5 @@ var searchData=
   ['brute_5fforce_25',['brute_force',['../d9/d03/namespacestring__search.html#aeb2cd81064717aedd62bfb096b1a73d8',1,'string_search::brute_force()'],['../d3/d7d/brute__force__string__searching_8cpp.html#aeb2cd81064717aedd62bfb096b1a73d8',1,'brute_force():&#160;brute_force_string_searching.cpp']]],
   ['bst_5fnode_26',['bst_node',['../dd/db6/structbinary__search__tree_1_1bst__node.html#a51dd9bd6dd32bce3b74dd64557306778',1,'binary_search_tree::bst_node']]],
   ['bubble_5fsort_27',['bubble_sort',['../d8/d13/bubble__sort_8cpp.html#af3b12930a83915712461d53fe9659686',1,'sorting::bubble_sort']]],
-  ['build_28',['build',['../d1/d9e/prefix__sum__array_8cpp.html#ab36151479ad37d53ef9fcb60a274b1d9',1,'range_queries::prefix_sum_array']]]
+  ['build_28',['build',['../d1/d9e/prefix__sum__array_8cpp.html#a98e118ed64ba95a8198e1a915459c177',1,'range_queries::prefix_sum_array']]]
 ];

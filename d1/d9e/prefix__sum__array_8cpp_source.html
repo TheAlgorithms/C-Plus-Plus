@@ -125,50 +125,52 @@ $(function(){initNavTree('d1/d9e/prefix__sum__array_8cpp_source.html','../../','
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../dd/d69/namespacerange__queries.html">range_queries</a> {</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d7/d88/namespaceprefix__sum__array.html">prefix_sum_array</a> {</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>std::vector&lt;int64_t&gt; PSA(1, 0);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>std::vector&lt;int64_t&gt; PSA{};</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span></div>
 <div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d1/d9e/prefix__sum__array_8cpp.html#ab36151479ad37d53ef9fcb60a274b1d9">   41</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d9e/prefix__sum__array_8cpp.html#ab36151479ad37d53ef9fcb60a274b1d9">build</a>(std::vector&lt;int64_t&gt; original_array) {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= static_cast&lt;int&gt;(original_array.size()); i++) {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        PSA.push_back(PSA[i - 1] + original_array[i]);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d1/d9e/prefix__sum__array_8cpp.html#a98e118ed64ba95a8198e1a915459c177">   41</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d9e/prefix__sum__array_8cpp.html#a98e118ed64ba95a8198e1a915459c177">build</a>(<span class="keyword">const</span> std::vector&lt;int64_t&gt;&amp; original_array) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    PSA.clear();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    PSA.push_back(0);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">for</span> (std::size_t i = 1; i &lt; original_array.size(); ++i) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        PSA.push_back(PSA.back() + original_array[i]);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
 </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../d1/d9e/prefix__sum__array_8cpp.html#a7c8fd967c36dbba5fdf9c71faed604cf">   52</a></span>int64_t <a class="code hl_function" href="../../d1/d9e/prefix__sum__array_8cpp.html#a7c8fd967c36dbba5fdf9c71faed604cf">query</a>(int64_t beg, int64_t end) { <span class="keywordflow">return</span> PSA[end] - PSA[beg - 1]; }</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}  <span class="comment">// namespace prefix_sum_array</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}  <span class="comment">// namespace range_queries</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
-<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="../../d1/d9e/prefix__sum__array_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">   61</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d9e/prefix__sum__array_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>() {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    std::vector&lt;int64_t&gt; values{0,  123, 0,  2,  -2, 5,</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                                24, 0,   23, -1, -1};  <span class="comment">// original array</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_function" href="../../d1/d9e/prefix__sum__array_8cpp.html#ab36151479ad37d53ef9fcb60a274b1d9">range_queries::prefix_sum_array::build</a>(values);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="comment">// queries are of the type: sum of the range [a, b] = psa[b] - psa[a-1]</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    assert(<a class="code hl_function" href="../../d1/d9e/prefix__sum__array_8cpp.html#a7c8fd967c36dbba5fdf9c71faed604cf">range_queries::prefix_sum_array::query</a>(1, 10) ==</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>           173);  <span class="comment">// sum of the entire array</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    assert(<a class="code hl_function" href="../../d1/d9e/prefix__sum__array_8cpp.html#a7c8fd967c36dbba5fdf9c71faed604cf">range_queries::prefix_sum_array::query</a>(4, 6) ==</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>           27);  <span class="comment">// the sum of the interval [4, 6]</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    assert(<a class="code hl_function" href="../../d1/d9e/prefix__sum__array_8cpp.html#a7c8fd967c36dbba5fdf9c71faed604cf">range_queries::prefix_sum_array::query</a>(5, 9) ==</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>           51);  <span class="comment">// the sum of the interval [5, 9]</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="../../d1/d9e/prefix__sum__array_8cpp.html#a7c8fd967c36dbba5fdf9c71faed604cf">   54</a></span>int64_t <a class="code hl_function" href="../../d1/d9e/prefix__sum__array_8cpp.html#a7c8fd967c36dbba5fdf9c71faed604cf">query</a>(int64_t beg, int64_t end) { <span class="keywordflow">return</span> PSA[end] - PSA[beg - 1]; }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}  <span class="comment">// namespace prefix_sum_array</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}  <span class="comment">// namespace range_queries</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span></div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d1/d9e/prefix__sum__array_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">   63</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d9e/prefix__sum__array_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>() {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    std::vector&lt;int64_t&gt; values{0,  123, 0,  2,  -2, 5,</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                                24, 0,   23, -1, -1};  <span class="comment">// original array</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_function" href="../../d1/d9e/prefix__sum__array_8cpp.html#a98e118ed64ba95a8198e1a915459c177">range_queries::prefix_sum_array::build</a>(values);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// queries are of the type: sum of the range [a, b] = psa[b] - psa[a-1]</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    assert(<a class="code hl_function" href="../../d1/d9e/prefix__sum__array_8cpp.html#a7c8fd967c36dbba5fdf9c71faed604cf">range_queries::prefix_sum_array::query</a>(1, 10) ==</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>           173);  <span class="comment">// sum of the entire array</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    assert(<a class="code hl_function" href="../../d1/d9e/prefix__sum__array_8cpp.html#a7c8fd967c36dbba5fdf9c71faed604cf">range_queries::prefix_sum_array::query</a>(4, 6) ==</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>           27);  <span class="comment">// the sum of the interval [4, 6]</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    assert(<a class="code hl_function" href="../../d1/d9e/prefix__sum__array_8cpp.html#a7c8fd967c36dbba5fdf9c71faed604cf">range_queries::prefix_sum_array::query</a>(5, 9) ==</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>           51);  <span class="comment">// the sum of the interval [5, 9]</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}</div>
 </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span></div>
-<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="../../d1/d9e/prefix__sum__array_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   80</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/d9e/prefix__sum__array_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_function" href="../../d1/d9e/prefix__sum__array_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span></div>
+<div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="../../d1/d9e/prefix__sum__array_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   82</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/d9e/prefix__sum__array_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <a class="code hl_function" href="../../d1/d9e/prefix__sum__array_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}</div>
 </div>
 <div class="ttc" id="anamespaceprefix__sum__array_html"><div class="ttname"><a href="../../d7/d88/namespaceprefix__sum__array.html">prefix_sum_array</a></div><div class="ttdoc">Range sum queries using prefix-sum-array.</div></div>
 <div class="ttc" id="anamespacerange__queries_html"><div class="ttname"><a href="../../dd/d69/namespacerange__queries.html">range_queries</a></div><div class="ttdoc">for std::vector</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d2e/fenwick__tree_8cpp_source.html#l00028">fenwick_tree.cpp:28</a></div></div>
-<div class="ttc" id="aprefix__sum__array_8cpp_html_a7c8fd967c36dbba5fdf9c71faed604cf"><div class="ttname"><a href="../../d1/d9e/prefix__sum__array_8cpp.html#a7c8fd967c36dbba5fdf9c71faed604cf">range_queries::prefix_sum_array::query</a></div><div class="ttdeci">int64_t query(int64_t beg, int64_t end)</div><div class="ttdoc">query function</div><div class="ttdef"><b>Definition</b> <a href="#l00052">prefix_sum_array.cpp:52</a></div></div>
-<div class="ttc" id="aprefix__sum__array_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../d1/d9e/prefix__sum__array_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="#l00061">prefix_sum_array.cpp:61</a></div></div>
-<div class="ttc" id="aprefix__sum__array_8cpp_html_ab36151479ad37d53ef9fcb60a274b1d9"><div class="ttname"><a href="../../d1/d9e/prefix__sum__array_8cpp.html#ab36151479ad37d53ef9fcb60a274b1d9">range_queries::prefix_sum_array::build</a></div><div class="ttdeci">void build(std::vector&lt; int64_t &gt; original_array)</div><div class="ttdoc">function that builds the PSA</div><div class="ttdef"><b>Definition</b> <a href="#l00041">prefix_sum_array.cpp:41</a></div></div>
-<div class="ttc" id="aprefix__sum__array_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="../../d1/d9e/prefix__sum__array_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Main function.</div><div class="ttdef"><b>Definition</b> <a href="#l00080">prefix_sum_array.cpp:80</a></div></div>
+<div class="ttc" id="aprefix__sum__array_8cpp_html_a7c8fd967c36dbba5fdf9c71faed604cf"><div class="ttname"><a href="../../d1/d9e/prefix__sum__array_8cpp.html#a7c8fd967c36dbba5fdf9c71faed604cf">range_queries::prefix_sum_array::query</a></div><div class="ttdeci">int64_t query(int64_t beg, int64_t end)</div><div class="ttdoc">query function</div><div class="ttdef"><b>Definition</b> <a href="#l00054">prefix_sum_array.cpp:54</a></div></div>
+<div class="ttc" id="aprefix__sum__array_8cpp_html_a98e118ed64ba95a8198e1a915459c177"><div class="ttname"><a href="../../d1/d9e/prefix__sum__array_8cpp.html#a98e118ed64ba95a8198e1a915459c177">range_queries::prefix_sum_array::build</a></div><div class="ttdeci">void build(const std::vector&lt; int64_t &gt; &amp;original_array)</div><div class="ttdoc">function that builds the PSA</div><div class="ttdef"><b>Definition</b> <a href="#l00041">prefix_sum_array.cpp:41</a></div></div>
+<div class="ttc" id="aprefix__sum__array_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../d1/d9e/prefix__sum__array_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="#l00063">prefix_sum_array.cpp:63</a></div></div>
+<div class="ttc" id="aprefix__sum__array_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="../../d1/d9e/prefix__sum__array_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Main function.</div><div class="ttdef"><b>Definition</b> <a href="#l00082">prefix_sum_array.cpp:82</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
