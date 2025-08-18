@@ -20,7 +20,7 @@
  */
 
 // Define gravity as a constant within guidelines
-constexpr double GRAVITY = 9.80665; // Standard gravity (m/s^2)
+constexpr double GRAVITY = 9.80665; ///< Standard gravity (m/s^2)
 
 
 namespace physics {
