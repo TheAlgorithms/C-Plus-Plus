@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"dd/d47/namespacemath.html#ac5803413618fcfb922cb32c6db0fc864":[8,0,69,11],
 "dd/d47/namespacemath.html#ad09d59850865012a6fd95d89954c82e4":[8,0,69,30],
 "dd/d47/namespacemath.html#ad0acf82b7bc920182bf8322d1e103953":[8,0,69,6],
 "dd/d47/namespacemath.html#ae1ca505751f5a6d3977b86372cfe75ea":[8,0,69,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "de/dc5/intersection__of__two__arrays_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,16,6,5],
 "de/dc5/intersection__of__two__arrays_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,16,6,2],
 "de/dc5/intersection__of__two__arrays_8cpp_source.html":[10,0,16,6],
-"de/dcd/kadanes3_8cpp.html":[10,0,17,8],
-"de/dcd/kadanes3_8cpp.html#a338439a04148ae89f695595acfa5c147":[10,0,17,8,1]
+"de/dcd/kadanes3_8cpp.html":[10,0,17,8]
 };

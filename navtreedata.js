@@ -143,12 +143,12 @@ var NAVTREEINDEX =
 "d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html#aa24a141455b9fbcbec22392c28d04933",
 "d8/d2e/classothers_1_1_cache_1_1_l_r_u_cache.html#ab8b6a6aa95db678596bc2a49e864683e",
 "d8/dfd/structoperations__on__datastructures_1_1reverse__binary__tree_1_1_node.html#aeb01a65e51df1e3bc5296cde8477c352",
-"da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html#a7461292b8b91aed86404d0ab019dfdd1",
-"db/d66/struct_item.html",
+"da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html#a12a06eef5ccaf667f319506eee655d95",
+"db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#afdfd2f4418c70b1bda50f2c3e416d80b",
 "dc/d53/classtests_1_1_circular_linked_list.html#abde75f6ee432b0378d264da8c7c64db2",
-"dd/d47/namespacemath.html#ad09d59850865012a6fd95d89954c82e4",
-"de/dcd/kadanes3_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
-"functions.html"
+"dd/d47/namespacemath.html#ac5803413618fcfb922cb32c6db0fc864",
+"de/dcd/kadanes3_8cpp.html#a338439a04148ae89f695595acfa5c147",
+"files.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

@@ -13,7 +13,7 @@ var searchData=
   ['mat_5fmul_10',['mat_mul',['../d6/d26/classciphers_1_1_hill_cipher.html#ad36cbcc7a458b3f3a2af0c4aa1126590',1,'ciphers::HillCipher::mat_mul()'],['../de/d75/qr__eigen__values_8cpp.html#abb8bf4c55e10685a5eb2ad3797fde1ae',1,'mat_mul():&#160;qr_eigen_values.cpp']]],
   ['match_11',['match',['../d8/d41/namespacegames_1_1memory__game.html#a370760f2b328ad341bcb77d82fa17b01',1,'games::memory_game']]],
   ['matrix_12',['Matrix',['../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#a01f3a05cf5abdc5d63999ef1bf9f9256',1,'divide_and_conquer::strassens_multiplication::Matrix::Matrix(const Integer size)'],['../dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#a4aa49765cce39ce48b9241e993e0cfb9',1,'divide_and_conquer::strassens_multiplication::Matrix::Matrix(const Integer rows, const Integer cols)']]],
-  ['max_5fheight_13',['max_height',['../d9/d29/ground__to__ground__projectile__motion_8cpp.html#aa554429def63077ab7a550c0affbfefa',1,'physics::ground_to_ground_projectile_motion']]],
+  ['max_5fheight_13',['max_height',['../d9/d29/ground__to__ground__projectile__motion_8cpp.html#a3e96cd0b24e64df01776d556ea569133',1,'physics::ground_to_ground_projectile_motion']]],
   ['max_5fsubarray_5fsum_14',['max_subarray_sum',['../de/dcd/kadanes3_8cpp.html#a338439a04148ae89f695595acfa5c147',1,'kadanes3.cpp']]],
   ['maxcircularsum_15',['maxCircularSum',['../dd/d24/namespacedynamic__programming.html#a5239174fa0d987f2c67edc1f2af82beb',1,'dynamic_programming']]],
   ['maxknapsackvalue_16',['maxKnapsackValue',['../db/d16/0__1__knapsack_8cpp.html#a15edf30f336885e5b851f6b7199c6cd1',1,'dynamic_programming::knapsack']]],

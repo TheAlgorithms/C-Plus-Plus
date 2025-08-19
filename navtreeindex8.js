@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html#a12a06eef5ccaf667f319506eee655d95":[9,0,12,0,1,1],
 "da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html#a7461292b8b91aed86404d0ab019dfdd1":[9,0,12,0,1,2],
 "da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html#a7c867b8e1034a6f5da490c8b8c09cb77":[9,0,12,0,1,3],
 "da/d18/quadratic__equations__complex__numbers_8cpp.html":[10,0,14,51],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#abdd461689df4983a3ad3b05d853cf5eb":[9,0,2,4,0,0],
 "db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#ac0ddec9ab8f778dad23ec446d7a77b39":[9,0,2,4,0,2],
 "db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#acf8ca54d5dd6676f255fff3dedacc7c6":[9,0,2,4,0,6],
-"db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#af04a8f3536a52d8c9916086b656eefc2":[9,0,2,4,0,1],
-"db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#afdfd2f4418c70b1bda50f2c3e416d80b":[9,0,2,4,0,5]
+"db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#af04a8f3536a52d8c9916086b656eefc2":[9,0,2,4,0,1]
 };

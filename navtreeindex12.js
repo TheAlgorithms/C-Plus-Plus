@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"de/dcd/kadanes3_8cpp.html#a338439a04148ae89f695595acfa5c147":[10,0,17,8,1],
 "de/dcd/kadanes3_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,17,8,2],
 "de/dcd/kadanes3_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,17,8,0],
 "de/dcd/kadanes3_8cpp_source.html":[10,0,17,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "dir_ece9b94c107bbaa1dd68197a8c9983b9.html":[10,0,12],
 "dir_f1797d0c2a0a12033e7d74efffeb14e1.html":[10,0,4,0],
 "dir_f3c4fbc4e901afa0a54d0623c5574aa7.html":[10,0,1],
-"examples.html":[11],
-"files.html":[10,0]
+"examples.html":[11]
 };
