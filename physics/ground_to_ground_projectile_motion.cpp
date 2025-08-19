@@ -18,6 +18,11 @@
  * @namespace physics
  * @brief Physics algorithms
  */
+
+// Define gravity as a constant within guidelines
+constexpr double GRAVITY = 9.80665; ///< Standard gravity (m/s^2)
+
+
 namespace physics {
 /**
  * @namespace ground_to_ground_projectile_motion
@@ -44,7 +49,7 @@ double degrees_to_radians(double degrees){
  * @returns The time that the projectile is in the air for
  */
 template <typename T>
-T time_of_flight(T initial_velocity, T angle, double gravity = 9.81) {
+T time_of_flight(T initial_velocity, T angle, double gravity = GRAVITY) {
     double Viy = initial_velocity * (std::sin(degrees_to_radians(angle))); // calculate y component of the initial velocity
     return 2.0 * Viy / gravity;
 }
@@ -69,7 +74,7 @@ T horizontal_range(T initial_velocity, T angle, T time) {
  * @returns The max height that the projectile reaches
  */
 template <typename T>
-T max_height(T initial_velocity, T angle, double gravity = 9.81) {
+T max_height(T initial_velocity, T angle, double gravity = GRAVITY) {
     double Viy = initial_velocity * (std::sin(degrees_to_radians(angle))); // calculate y component of the initial velocity
     return (std::pow(Viy, 2) / (2.0 * gravity));
 }
