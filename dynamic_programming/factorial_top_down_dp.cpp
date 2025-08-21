@@ -13,17 +13,16 @@
 
 #include <iostream>
 #include <cassert>  // For test cases
-#include <cstdint>  // For uint64_t 
 #include <array> 
 /// Array to store computed factorials for memoization
-std::array<uint64_t, 1000> memo{0};
+std::array<__uint128_t, 1000> memo{0};
 
 /**
  * @brief Computes the factorial of a non-negative integer using recursion and memoization.
  * @param n The integer whose factorial is to be computed
  * @returns The factorial of n
  */
-long long fact_rec(int n) {
+__uint128_t fact_rec(__uint128_t  n) {
     if (n == 0) return 1;        // Base case: 0! = 1
     if (memo[n] != 0) return memo[n]; // Return already computed value
     memo[n] = n * fact_rec(n - 1);    // Store and return the computed value
