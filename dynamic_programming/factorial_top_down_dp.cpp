@@ -8,7 +8,7 @@
  * 
  * Time Complexity: O(n)
  * Space Complexity: O(n)
- @author [Vedant Mukhedkar](https://github.com/git5v)
+ * @author [Vedant Mukhedkar](https://github.com/git5v)
  */
 
 #include <iostream>
