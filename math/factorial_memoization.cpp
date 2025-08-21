@@ -6,6 +6,14 @@
  * with memoization (top-down dynamic programming). It stores intermediate results
  * to avoid redundant calculations for improved efficiency.
  * 
+ * Example:
+ *  - Input: n = 5
+ *  - Output: 120
+ * 
+ *  Explanation: 5! = 5 × 4 × 3 × 2 × 1 = 120
+ * 
+ *  - The program uses a recursive function fact_rec which caches computed 
+ *
  * Time Complexity: O(n)
  * Space Complexity: O(n)
  * @author [Vedant Mukhedkar](https://github.com/git5v)
@@ -22,10 +30,10 @@ std::array<__uint128_t, 1000> memo{0};
  * @param n The integer whose factorial is to be computed
  * @returns The factorial of n
  */
-__uint128_t fact_rec(__uint128_t  n) {
+__uint128_t fact_recursion(__uint128_t  n) {
     if (n == 0) return 1;        // Base case: 0! = 1
     if (memo[n] != 0) return memo[n]; // Return already computed value
-    memo[n] = n * fact_rec(n - 1);    // Store and return the computed value
+    memo[n] = n * fact_recursion(n - 1);    // Store and return the computed value
     return memo[n];
 }
 
@@ -33,12 +41,12 @@ __uint128_t fact_rec(__uint128_t  n) {
  * @brief Self-test implementations for the fact_rec function.
  * @returns void
  */
-void test_fact_rec() {
+void test_fact_recursion() {
     // Test cases for factorial computation
-    assert(fact_rec(0) == 1);
-    assert(fact_rec(1) == 1);
-    assert(fact_rec(5) == 120);
-    assert(fact_rec(10) == 3628800);
+    assert(fact_recursion(0) == 1);
+    assert(fact_recursion(1) == 1);
+    assert(fact_recursion(5) == 120);
+    assert(fact_recursion(10) == 3628800);
     std::cout << "All test cases passed!\n";
 }
 
@@ -48,6 +56,6 @@ void test_fact_rec() {
  */
 int main() {
     // Run test cases
-    test_fact_rec();
+    test_fact_recursion();
     return 0;
 }
