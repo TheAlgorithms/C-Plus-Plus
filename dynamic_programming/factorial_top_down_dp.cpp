@@ -49,16 +49,5 @@ void test_fact_rec() {
 int main() {
     // Run test cases
     test_fact_rec();
-
-    // User interaction loop
-    // int n;
-    // std::cout << "Enter a non-negative integer to compute factorial (0 to exit): ";
-    // std::cin >> n;
-    // if (n < 0) {
-    //     std::cout << "Please enter a non-negative integer only.\n";
-    //     return 0;
-    // }
-    // std::cout << "Factorial of " << n << " = " << fact_rec(n) << std::endl;
-
     return 0;
 }
