@@ -13,6 +13,18 @@
  * - If (N & 1) == 0, N is even.
  * - If (N & 1) == 1, N is odd.
  *
+ * Example:
+ * Consider 8-bit binary representations of two numbers:
+ *     Number: 10 (decimal) -> 00001010 (binary)
+ *       LSB = 0 -> Even number
+ * 
+ *     Number: 13 (decimal) -> 00001101 (binary)
+ *       LSB = 1 -> Odd number
+ *
+ * In both cases, evaluating (N & 1) isolates the LSB:
+ * - For 10: 00001010 & 00000001 = 0  (Even)
+ * - For 13: 00001101 & 00000001 = 1  (Odd)
+ *
  * Worst Case Time Complexity: O(1)
  * Space Complexity: O(1)
  *
@@ -41,7 +53,7 @@ namespace even_odd {
  * @returns "Even" if N is even, "Odd" if N is odd.
      */
         std::string is_even(std::int64_t N) {
-            return (N & 1) == 0;
+            return (N & 1) == 0 ? "Even" : "Odd";
         }
 
     }  // namespace even_odd
@@ -52,21 +64,21 @@ namespace even_odd {
  * @returns void
  */
 static void test() {
-    using bit_manipulation::even_odd::checkEvenOdd;
+    using bit_manipulation::even_odd::is_even;
 
     // Test Even numbers
-    assert(checkEvenOdd(0) == "Even");
-    assert(checkEvenOdd(2) == "Even");
-    assert(checkEvenOdd(100) == "Even");
-    assert(checkEvenOdd(-4) == "Even");
-    assert(checkEvenOdd(-1000) == "Even");
+    assert(is_even(0) == "Even");
+    assert(is_even(2) == "Even");
+    assert(is_even(100) == "Even");
+    assert(is_even(-4) == "Even");
+    assert(is_even(-1000) == "Even");
 
     // Test Odd numbers
-    assert(checkEvenOdd(1) == "Odd");
-    assert(checkEvenOdd(3) == "Odd");
-    assert(checkEvenOdd(101) == "Odd");
-    assert(checkEvenOdd(-5) == "Odd");
-    assert(checkEvenOdd(-999) == "Odd");
+    assert(is_even(1) == "Odd");
+    assert(is_even(3) == "Odd");
+    assert(is_even(101) == "Odd");
+    assert(is_even(-5) == "Odd");
+    assert(is_even(-999) == "Odd");
 
     std::cout << "All test cases successfully passed!" << std::endl;
 }
