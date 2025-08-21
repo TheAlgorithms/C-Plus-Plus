@@ -15,7 +15,7 @@
 #include <cassert>  // For test cases
 
 /// Array to store computed factorials for memoization
-long long memo[1000] = {0};
+std::array<uint64_t, 1000> memo{0};
 
 /**
  * @brief Computes the factorial of a non-negative integer using recursion and memoization.
