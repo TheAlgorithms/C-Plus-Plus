@@ -77,12 +77,5 @@ static void test() {
  */
 int main() {
     test();  // run self-test implementations
-
-    // Example usage:
-    // std::int64_t num;
-    // std::cout << "Enter a number: ";
-    // std::cin >> num;
-    // std::cout << num << " is " << bit_manipulation::even_odd::checkEvenOdd(num) << std::endl;
-
     return 0;
 }
