@@ -20,9 +20,9 @@
  */
 
 #include <cassert>   /// for assert
-#include <cstdint>
+#include <cstdint>   /// for uint32_t
 #include <iostream>  /// for IO operations
-#include <string>
+#include <string>    /// for std::string
 
 /**
  * @namespace bit_manipulation
