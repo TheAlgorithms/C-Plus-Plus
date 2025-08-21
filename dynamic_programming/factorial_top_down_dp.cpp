@@ -13,7 +13,8 @@
 
 #include <iostream>
 #include <cassert>  // For test cases
-
+#include <cstdint>  // For uint64_t 
+#include <array> 
 /// Array to store computed factorials for memoization
 std::array<uint64_t, 1000> memo{0};
 
