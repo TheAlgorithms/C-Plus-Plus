@@ -40,7 +40,7 @@ namespace even_odd {
  * @param N The number to check.
  * @returns "Even" if N is even, "Odd" if N is odd.
      */
-        std::string checkEvenOdd(std::int64_t N) {
+        std::string is_even(std::int64_t N) {
             return (N & 1) == 0 ? "Even" : "Odd";
         }
 
