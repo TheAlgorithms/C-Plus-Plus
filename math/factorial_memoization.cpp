@@ -1,11 +1,13 @@
 /**
  * @file
- * @brief [Factorial calculation using recursion and memoization (dynamic programming)](https://en.wikipedia.org/wiki/Factorial)
+ * @brief [Factorial](https://en.wikipedia.org/wiki/Factorial) calculation using recursion and [memoization](https://en.wikipedia.org/wiki/Memoization) 
  * @details
  * This program computes the factorial of a non-negative integer using recursion
  * with memoization (top-down dynamic programming). It stores intermediate results
  * to avoid redundant calculations for improved efficiency.
  * 
+ * Memoization is a form of caching where the result to an expensive function call
+ * is stored and returned.
  * Example:
  * Input: n = 5
  * Output: 120
