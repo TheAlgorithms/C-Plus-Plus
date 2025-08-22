@@ -21,6 +21,7 @@
 
 #include <iostream>
 #include <cassert>  // For test cases
+#include <cstdint> 
 #include <array> 
 /// Array to store computed factorials for memoization
 std::array<__uint128_t, 1000> memo{0};
