@@ -54,10 +54,10 @@ uint64_t fact_recursion(uint64_t n) {
  */
 void test_fact_recursion() {
     // Test cases for factorial computation
-    assert(fact_recursion(0) == 1);
-    assert(fact_recursion(1) == 1);
-    assert(fact_recursion(5) == 120);
-    assert(fact_recursion(10) == 3628800);
+    assert(math::fact_recursion(0) == 1);
+    assert(math::fact_recursion(1) == 1);
+    assert(math::fact_recursion(5) == 120);
+    assert(math::fact_recursion(10) == 3628800);
     std::cout << "All test cases passed!\n";
 }
 
