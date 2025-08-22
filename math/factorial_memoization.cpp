@@ -20,14 +20,13 @@
  * @author [Vedant Mukhedkar](https://github.com/git5v)
  */
 
-#include <iostream>
+#include <iostream> // for std::cout
 #include <cassert>  // For test cases
-#include <array>
+#include <array>    // For std::array
 #include <cstdint>  // For uint64_t
 
 /// Array to store computed factorials for memoization
 std::array<uint64_t, 1000> memo{0};
-#include <iostream>  /// for IO operations
 
 /**
  * @namespace math
