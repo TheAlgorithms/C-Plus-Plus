@@ -7,12 +7,13 @@
  * to avoid redundant calculations for improved efficiency.
  * 
  * Example:
- *  - Input: n = 5
- *  - Output: 120
+ * Input: n = 5
+ * Output: 120
  * 
- *  Explanation: 5! = 5 × 4 × 3 × 2 × 1 = 120
+ * Explanation: 5! = 5 × 4 × 3 × 2 × 1 = 120
  * 
- *  - The program uses a recursive function fact_rec which caches computed 
+ * The program uses a recursive function fact_recursion which caches computed 
+ * results in a memo array to avoid recalculating factorials for the same numbers.
  *
  * Time Complexity: O(n)
  * Space Complexity: O(n)
@@ -21,17 +22,18 @@
 
 #include <iostream>
 #include <cassert>  // For test cases
-#include <cstdint> 
-#include <array> 
+#include <array>
+#include <cstdint>  // For uint64_t
+
 /// Array to store computed factorials for memoization
-std::array<__uint128_t, 1000> memo{0};
+std::array<uint64_t, 1000> memo{0};
 
 /**
  * @brief Computes the factorial of a non-negative integer using recursion and memoization.
  * @param n The integer whose factorial is to be computed
  * @returns The factorial of n
  */
-__uint128_t fact_recursion(__uint128_t  n) {
+uint64_t fact_recursion(uint64_t n) {
     if (n == 0) return 1;        // Base case: 0! = 1
     if (memo[n] != 0) return memo[n]; // Return already computed value
     memo[n] = n * fact_recursion(n - 1);    // Store and return the computed value
@@ -39,7 +41,7 @@ __uint128_t fact_recursion(__uint128_t  n) {
 }
 
 /**
- * @brief Self-test implementations for the fact_rec function.
+ * @brief Self-test implementations for the fact_recursion function.
  * @returns void
  */
 void test_fact_recursion() {
