@@ -27,6 +27,13 @@
 
 /// Array to store computed factorials for memoization
 std::array<uint64_t, 1000> memo{0};
+#include <iostream>  /// for IO operations
+
+/**
+ * @namespace math
+ * @brief Math algorithms
+ */
+namespace math {
 
 /**
  * @brief Computes the factorial of a non-negative integer using recursion and memoization.
@@ -40,6 +47,7 @@ uint64_t fact_recursion(uint64_t n) {
     return memo[n];
 }
 
+} // namespace math
 /**
  * @brief Self-test implementations for the fact_recursion function.
  * @returns void
