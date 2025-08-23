@@ -11,9 +11,10 @@ var searchData=
   ['max_5fsize_8',['max_size',['../d8/df0/queue__using__array_8cpp.html#a2d49e79bd164c298912db252970520d8',1,'queue_using_array.cpp']]],
   ['maxelement_9',['maxElement',['../dd/d1f/classdsu.html#a4ade6f16c418fc98b54452f7b0252a53',1,'dsu']]],
   ['maxnode_10',['maxNode',['../dd/d2e/namespacedata__structures_1_1treap.html#ad939ec178d0069aeea14b7d6d7d12099',1,'data_structures::treap']]],
-  ['min_5fdistance_11',['MIN_DISTANCE',['../d8/d77/namespacemachine__learning.html#a7220dbb7fa896d83bfb7a50e4fce1786',1,'machine_learning']]],
-  ['minelement_12',['minElement',['../dd/d1f/classdsu.html#a1d77aad7fc39fe7140d834cd347e5c63',1,'dsu']]],
-  ['minfreq_13',['minFreq',['../df/d8f/classothers_1_1_cache_1_1_l_f_u_cache.html#a6de844d1589a809239cc07752f311285',1,'others::Cache::LFUCache']]],
-  ['month_14',['month',['../d1/df6/class_easter_year_month_day.html#a01a068eae0b6fa8f86f5f60c2840bbde',1,'EasterYearMonthDay']]],
-  ['moves_15',['moves',['../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa73857052e69b86347859d9148933f71',1,'machine_learning::aystar_search::EightPuzzle']]]
+  ['memo_11',['memo',['../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217',1,'factorial_memoization.cpp']]],
+  ['min_5fdistance_12',['MIN_DISTANCE',['../d8/d77/namespacemachine__learning.html#a7220dbb7fa896d83bfb7a50e4fce1786',1,'machine_learning']]],
+  ['minelement_13',['minElement',['../dd/d1f/classdsu.html#a1d77aad7fc39fe7140d834cd347e5c63',1,'dsu']]],
+  ['minfreq_14',['minFreq',['../df/d8f/classothers_1_1_cache_1_1_l_f_u_cache.html#a6de844d1589a809239cc07752f311285',1,'others::Cache::LFUCache']]],
+  ['month_15',['month',['../d1/df6/class_easter_year_month_day.html#a01a068eae0b6fa8f86f5f60c2840bbde',1,'EasterYearMonthDay']]],
+  ['moves_16',['moves',['../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa73857052e69b86347859d9148933f71',1,'machine_learning::aystar_search::EightPuzzle']]]
 ];

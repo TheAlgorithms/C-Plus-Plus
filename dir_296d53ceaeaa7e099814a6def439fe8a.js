@@ -15,6 +15,7 @@ var dir_296d53ceaeaa7e099814a6def439fe8a =
     [ "eulers_totient_function.cpp", "da/d23/eulers__totient__function_8cpp.html", "da/d23/eulers__totient__function_8cpp" ],
     [ "extended_euclid_algorithm.cpp", "d9/d5d/extended__euclid__algorithm_8cpp.html", "d9/d5d/extended__euclid__algorithm_8cpp" ],
     [ "factorial.cpp", "d9/d00/factorial_8cpp.html", "d9/d00/factorial_8cpp" ],
+    [ "factorial_memoization.cpp", "d2/d96/factorial__memoization_8cpp.html", "d2/d96/factorial__memoization_8cpp" ],
     [ "fast_power.cpp", "d2/d0b/fast__power_8cpp.html", "d2/d0b/fast__power_8cpp" ],
     [ "fibonacci.cpp", "d9/d89/fibonacci_8cpp.html", "d9/d89/fibonacci_8cpp" ],
     [ "fibonacci_fast.cpp", "d4/d32/fibonacci__fast_8cpp.html", "d4/d32/fibonacci__fast_8cpp" ],

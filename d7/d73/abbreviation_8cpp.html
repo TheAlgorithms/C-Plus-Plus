@@ -141,7 +141,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:add60b8858720bf217df22d992d0fefaa" id="r_add60b8858720bf217df22d992d0fefaa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add60b8858720bf217df22d992d0fefaa">dynamic_programming::abbreviation::abbreviation_recursion</a> (std::vector&lt; std::vector&lt; bool &gt; &gt; *memo, std::vector&lt; std::vector&lt; bool &gt; &gt; *visited, const std::string &amp;str, const std::string &amp;result, uint32_t str_idx=0, uint32_t result_idx=0)</td></tr>
+<tr class="memitem:add60b8858720bf217df22d992d0fefaa" id="r_add60b8858720bf217df22d992d0fefaa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add60b8858720bf217df22d992d0fefaa">dynamic_programming::abbreviation::abbreviation_recursion</a> (std::vector&lt; std::vector&lt; bool &gt; &gt; *<a class="el" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>, std::vector&lt; std::vector&lt; bool &gt; &gt; *visited, const std::string &amp;str, const std::string &amp;result, uint32_t str_idx=0, uint32_t result_idx=0)</td></tr>
 <tr class="memdesc:add60b8858720bf217df22d992d0fefaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursive Dynamic Programming function.  <br /></td></tr>
 <tr class="memitem:af53b2f647bee9c5b75ef8dd9ef685dc8" id="r_af53b2f647bee9c5b75ef8dd9ef685dc8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af53b2f647bee9c5b75ef8dd9ef685dc8">dynamic_programming::abbreviation::abbreviation</a> (const std::string &amp;str, const std::string &amp;result)</td></tr>
 <tr class="memdesc:af53b2f647bee9c5b75ef8dd9ef685dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterative Dynamic Programming function.  <br /></td></tr>
@@ -200,32 +200,33 @@ Algorithm</h3>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d73/abbreviation_8cpp_source.html#l00119">119</a> of file <a class="el" href="../../d7/d73/abbreviation_8cpp_source.html">abbreviation.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  119</span>                                                                 {</div>
-<div class="line"><span class="lineno">  120</span>    std::vector&lt;std::vector&lt;bool&gt;&gt; memo(</div>
+<div class="line"><span class="lineno">  120</span>    std::vector&lt;std::vector&lt;bool&gt;&gt; <a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>(</div>
 <div class="line"><span class="lineno">  121</span>        str.size() + 1, std::vector&lt;bool&gt;(result.size() + 1, <span class="keyword">false</span>));</div>
 <div class="line"><span class="lineno">  122</span> </div>
 <div class="line"><span class="lineno">  123</span>    <span class="keywordflow">for</span> (uint32_t i = 0; i &lt;= str.size(); ++i) {</div>
-<div class="line"><span class="lineno">  124</span>        memo[i][0] = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  124</span>        <a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>[i][0] = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  125</span>    }</div>
 <div class="line"><span class="lineno">  126</span>    <span class="keywordflow">for</span> (uint32_t i = 1; i &lt;= result.size(); ++i) {</div>
-<div class="line"><span class="lineno">  127</span>        memo[0][i] = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  127</span>        <a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>[0][i] = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  128</span>    }</div>
 <div class="line"><span class="lineno">  129</span>    <span class="keywordflow">for</span> (uint32_t i = 1; i &lt;= str.size(); ++i) {</div>
 <div class="line"><span class="lineno">  130</span>        <span class="keywordflow">for</span> (uint32_t j = 1; j &lt;= result.size(); ++j) {</div>
 <div class="line"><span class="lineno">  131</span>            <span class="keywordflow">if</span> (str[i - 1] == result[j - 1]) {</div>
-<div class="line"><span class="lineno">  132</span>                memo[i][j] = memo[i - 1][j - 1];</div>
+<div class="line"><span class="lineno">  132</span>                <a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>[i][j] = <a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>[i - 1][j - 1];</div>
 <div class="line"><span class="lineno">  133</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (str[i - 1] - 32 == result[j - 1]) {</div>
-<div class="line"><span class="lineno">  134</span>                memo[i][j] = (memo[i - 1][j - 1] || memo[i - 1][j]);</div>
+<div class="line"><span class="lineno">  134</span>                <a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>[i][j] = (<a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>[i - 1][j - 1] || <a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>[i - 1][j]);</div>
 <div class="line"><span class="lineno">  135</span>            } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">  136</span>                <span class="keywordflow">if</span> (str[i - 1] &gt;= <span class="charliteral">&#39;A&#39;</span> &amp;&amp; str[i - 1] &lt;= <span class="charliteral">&#39;Z&#39;</span>) {</div>
-<div class="line"><span class="lineno">  137</span>                    memo[i][j] = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  137</span>                    <a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>[i][j] = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  138</span>                } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  139</span>                    memo[i][j] = memo[i - 1][j];</div>
+<div class="line"><span class="lineno">  139</span>                    <a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>[i][j] = <a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>[i - 1][j];</div>
 <div class="line"><span class="lineno">  140</span>                }</div>
 <div class="line"><span class="lineno">  141</span>            }</div>
 <div class="line"><span class="lineno">  142</span>        }</div>
 <div class="line"><span class="lineno">  143</span>    }</div>
-<div class="line"><span class="lineno">  144</span>    <span class="keywordflow">return</span> memo.back().back();</div>
+<div class="line"><span class="lineno">  144</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>.back().back();</div>
 <div class="line"><span class="lineno">  145</span>}</div>
+<div class="ttc" id="afactorial__memoization_8cpp_html_a0f9b4d5fae79e1029daf9bd1b93ec217"><div class="ttname"><a href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a></div><div class="ttdeci">std::array&lt; uint64_t, 1000 &gt; memo</div><div class="ttdoc">Array to store computed factorials for memoization.</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d96/factorial__memoization_8cpp_source.html#l00031">factorial_memoization.cpp:31</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -291,7 +292,7 @@ j)</span></li>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d73/abbreviation_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../d7/d73/abbreviation_8cpp_source.html">abbreviation.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   62</span>                                                                           {</div>
-<div class="line"><span class="lineno">   63</span>    <span class="keywordtype">bool</span> ans = memo-&gt;at(str_idx).at(result_idx);</div>
+<div class="line"><span class="lineno">   63</span>    <span class="keywordtype">bool</span> ans = <a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>-&gt;at(str_idx).at(result_idx);</div>
 <div class="line"><span class="lineno">   64</span>    <span class="keywordflow">if</span> (str_idx == str.size() &amp;&amp; result_idx == result.size()) {</div>
 <div class="line"><span class="lineno">   65</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">   66</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (str_idx == str.size() &amp;&amp; result_idx != result.size()) {</div>
@@ -299,12 +300,12 @@ j)</span></li>
 <div class="line"><span class="lineno">   68</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   69</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!visited-&gt;at(str_idx).at(result_idx)) {</div>
 <div class="line"><span class="lineno">   81</span>        <span class="keywordflow">if</span> (str[str_idx] == result[result_idx]) {</div>
-<div class="line"><span class="lineno">   82</span>            ans = abbreviation_recursion(memo, visited, str, result,</div>
+<div class="line"><span class="lineno">   82</span>            ans = abbreviation_recursion(<a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>, visited, str, result,</div>
 <div class="line"><span class="lineno">   83</span>                                         str_idx + 1, result_idx + 1);</div>
 <div class="line"><span class="lineno">   84</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (str[str_idx] - 32 == result[result_idx]) {</div>
-<div class="line"><span class="lineno">   85</span>            ans = <a class="code hl_function" href="#add60b8858720bf217df22d992d0fefaa">abbreviation_recursion</a>(memo, visited, str, result,</div>
+<div class="line"><span class="lineno">   85</span>            ans = <a class="code hl_function" href="#add60b8858720bf217df22d992d0fefaa">abbreviation_recursion</a>(<a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>, visited, str, result,</div>
 <div class="line"><span class="lineno">   86</span>                                         str_idx + 1, result_idx + 1) ||</div>
-<div class="line"><span class="lineno">   87</span>                  <a class="code hl_function" href="#add60b8858720bf217df22d992d0fefaa">abbreviation_recursion</a>(memo, visited, str, result,</div>
+<div class="line"><span class="lineno">   87</span>                  <a class="code hl_function" href="#add60b8858720bf217df22d992d0fefaa">abbreviation_recursion</a>(<a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>, visited, str, result,</div>
 <div class="line"><span class="lineno">   88</span>                                         str_idx + 1, result_idx);</div>
 <div class="line"><span class="lineno">   89</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">   90</span>            <span class="comment">// if `str[i]` is uppercase, then cannot be converted, return</span></div>
@@ -314,14 +315,14 @@ j)</span></li>
 <div class="line"><span class="lineno">   94</span>            <span class="keywordflow">if</span> (str[str_idx] &gt;= <span class="charliteral">&#39;A&#39;</span> &amp;&amp; str[str_idx] &lt;= <span class="charliteral">&#39;Z&#39;</span>) {</div>
 <div class="line"><span class="lineno">   95</span>                ans = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   96</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   97</span>                ans = <a class="code hl_function" href="#add60b8858720bf217df22d992d0fefaa">abbreviation_recursion</a>(memo, visited, str, result,</div>
+<div class="line"><span class="lineno">   97</span>                ans = <a class="code hl_function" href="#add60b8858720bf217df22d992d0fefaa">abbreviation_recursion</a>(<a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>, visited, str, result,</div>
 <div class="line"><span class="lineno">   98</span>                                             str_idx + 1, result_idx);</div>
 <div class="line"><span class="lineno">   99</span>            }</div>
 <div class="line"><span class="lineno">  100</span>        }</div>
 <div class="line"><span class="lineno">  101</span>    }</div>
 <div class="line"><span class="lineno">  102</span>    (*memo)[str_idx][result_idx] = ans;</div>
 <div class="line"><span class="lineno">  103</span>    (*visited)[str_idx][result_idx] = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  104</span>    <span class="keywordflow">return</span> (*memo)[str_idx][result_idx];</div>
+<div class="line"><span class="lineno">  104</span>    <span class="keywordflow">return</span> (*<a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>)[str_idx][result_idx];</div>
 <div class="line"><span class="lineno">  105</span>}</div>
 <div class="ttc" id="aabbreviation_8cpp_html_add60b8858720bf217df22d992d0fefaa"><div class="ttname"><a href="#add60b8858720bf217df22d992d0fefaa">dynamic_programming::abbreviation::abbreviation_recursion</a></div><div class="ttdeci">bool abbreviation_recursion(std::vector&lt; std::vector&lt; bool &gt; &gt; *memo, std::vector&lt; std::vector&lt; bool &gt; &gt; *visited, const std::string &amp;str, const std::string &amp;result, uint32_t str_idx=0, uint32_t result_idx=0)</div><div class="ttdoc">Recursive Dynamic Programming function.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d73/abbreviation_8cpp_source.html#l00059">abbreviation.cpp:59</a></div></div>
 </div><!-- fragment -->
@@ -383,36 +384,36 @@ j)</span></li>
 <p class="definition">Definition at line <a class="el" href="../../d7/d73/abbreviation_8cpp_source.html#l00153">153</a> of file <a class="el" href="../../d7/d73/abbreviation_8cpp_source.html">abbreviation.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  153</span>                   {</div>
 <div class="line"><span class="lineno">  154</span>    std::string s = <span class="stringliteral">&quot;daBcd&quot;</span>, t = <span class="stringliteral">&quot;ABC&quot;</span>;</div>
-<div class="line"><span class="lineno">  155</span>    std::vector&lt;std::vector&lt;bool&gt;&gt; memo(s.size() + 1,</div>
+<div class="line"><span class="lineno">  155</span>    std::vector&lt;std::vector&lt;bool&gt;&gt; <a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>(s.size() + 1,</div>
 <div class="line"><span class="lineno">  156</span>                                        std::vector&lt;bool&gt;(t.size() + 1, <span class="keyword">false</span>)),</div>
 <div class="line"><span class="lineno">  157</span>        visited(s.size() + 1, std::vector&lt;bool&gt;(t.size() + 1, <span class="keyword">false</span>));</div>
 <div class="line"><span class="lineno">  158</span> </div>
 <div class="line"><span class="lineno">  159</span>    assert(<a class="code hl_function" href="#add60b8858720bf217df22d992d0fefaa">dynamic_programming::abbreviation::abbreviation_recursion</a>(</div>
-<div class="line"><span class="lineno">  160</span>               &amp;memo, &amp;visited, s, t) == <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  160</span>               &amp;<a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>, &amp;visited, s, t) == <span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">  161</span>    assert(<a class="code hl_function" href="#af53b2f647bee9c5b75ef8dd9ef685dc8">dynamic_programming::abbreviation::abbreviation</a>(s, t) == <span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">  162</span>    s = <span class="stringliteral">&quot;XXVVnDEFYgYeMXzWINQYHAQKKOZEYgSRCzLZAmUYGUGILjMDET&quot;</span>;</div>
 <div class="line"><span class="lineno">  163</span>    t = <span class="stringliteral">&quot;XXVVDEFYYMXWINQYHAQKKOZEYSRCLZAUYGUGILMDETQVWU&quot;</span>;</div>
-<div class="line"><span class="lineno">  164</span>    memo = std::vector&lt;std::vector&lt;bool&gt;&gt;(</div>
+<div class="line"><span class="lineno">  164</span>    <a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a> = std::vector&lt;std::vector&lt;bool&gt;&gt;(</div>
 <div class="line"><span class="lineno">  165</span>        s.size() + 1, std::vector&lt;bool&gt;(t.size() + 1, <span class="keyword">false</span>));</div>
 <div class="line"><span class="lineno">  166</span> </div>
 <div class="line"><span class="lineno">  167</span>    visited = std::vector&lt;std::vector&lt;bool&gt;&gt;(</div>
 <div class="line"><span class="lineno">  168</span>        s.size() + 1, std::vector&lt;bool&gt;(t.size() + 1, <span class="keyword">false</span>));</div>
 <div class="line"><span class="lineno">  169</span> </div>
 <div class="line"><span class="lineno">  170</span>    assert(<a class="code hl_function" href="#add60b8858720bf217df22d992d0fefaa">dynamic_programming::abbreviation::abbreviation_recursion</a>(</div>
-<div class="line"><span class="lineno">  171</span>               &amp;memo, &amp;visited, s, t) == <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  171</span>               &amp;<a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>, &amp;visited, s, t) == <span class="keyword">false</span>);</div>
 <div class="line"><span class="lineno">  172</span>    assert(<a class="code hl_function" href="#af53b2f647bee9c5b75ef8dd9ef685dc8">dynamic_programming::abbreviation::abbreviation</a>(s, t) == <span class="keyword">false</span>);</div>
 <div class="line"><span class="lineno">  173</span> </div>
 <div class="line"><span class="lineno">  174</span>    s = <span class="stringliteral">&quot;DRFNLZZVHLPZWIupjwdmqafmgkg&quot;</span>;</div>
 <div class="line"><span class="lineno">  175</span>    t = <span class="stringliteral">&quot;DRFNLZZVHLPZWI&quot;</span>;</div>
 <div class="line"><span class="lineno">  176</span> </div>
-<div class="line"><span class="lineno">  177</span>    memo = std::vector&lt;std::vector&lt;bool&gt;&gt;(</div>
+<div class="line"><span class="lineno">  177</span>    <a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a> = std::vector&lt;std::vector&lt;bool&gt;&gt;(</div>
 <div class="line"><span class="lineno">  178</span>        s.size() + 1, std::vector&lt;bool&gt;(t.size() + 1, <span class="keyword">false</span>));</div>
 <div class="line"><span class="lineno">  179</span> </div>
 <div class="line"><span class="lineno">  180</span>    visited = std::vector&lt;std::vector&lt;bool&gt;&gt;(</div>
 <div class="line"><span class="lineno">  181</span>        s.size() + 1, std::vector&lt;bool&gt;(t.size() + 1, <span class="keyword">false</span>));</div>
 <div class="line"><span class="lineno">  182</span> </div>
 <div class="line"><span class="lineno">  183</span>    assert(<a class="code hl_function" href="#add60b8858720bf217df22d992d0fefaa">dynamic_programming::abbreviation::abbreviation_recursion</a>(</div>
-<div class="line"><span class="lineno">  184</span>               &amp;memo, &amp;visited, s, t) == <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  184</span>               &amp;<a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>, &amp;visited, s, t) == <span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">  185</span>    assert(<a class="code hl_function" href="#af53b2f647bee9c5b75ef8dd9ef685dc8">dynamic_programming::abbreviation::abbreviation</a>(s, t) == <span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">  186</span>}</div>
 <div class="ttc" id="aabbreviation_8cpp_html_af53b2f647bee9c5b75ef8dd9ef685dc8"><div class="ttname"><a href="#af53b2f647bee9c5b75ef8dd9ef685dc8">dynamic_programming::abbreviation::abbreviation</a></div><div class="ttdeci">bool abbreviation(const std::string &amp;str, const std::string &amp;result)</div><div class="ttdoc">Iterative Dynamic Programming function.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d73/abbreviation_8cpp_source.html#l00119">abbreviation.cpp:119</a></div></div>

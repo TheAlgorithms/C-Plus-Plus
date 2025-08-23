@@ -174,6 +174,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:ac37d3ba52eb296597d7a024ba8c4a5a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate Euler's Totient.  <br /></td></tr>
 <tr class="memitem:a7e78996673df791014cfe540b183456a" id="r_a7e78996673df791014cfe540b183456a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e78996673df791014cfe540b183456a">factorial</a> (uint8_t n)</td></tr>
 <tr class="memdesc:a7e78996673df791014cfe540b183456a"><td class="mdescLeft">&#160;</td><td class="mdescRight">function to find factorial of given number  <br /></td></tr>
+<tr class="memitem:a73b07abea036f1ce2e3ac5dc169bdb4b" id="r_a73b07abea036f1ce2e3ac5dc169bdb4b"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73b07abea036f1ce2e3ac5dc169bdb4b">fact_recursion</a> (uint64_t n)</td></tr>
+<tr class="memdesc:a73b07abea036f1ce2e3ac5dc169bdb4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the factorial of a non-negative integer using recursion and memoization.  <br /></td></tr>
 <tr class="memitem:aec65db4e5c7317323227f026fe50ef11" id="r_aec65db4e5c7317323227f026fe50ef11"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec65db4e5c7317323227f026fe50ef11">integral_approx</a> (double lb, double ub, const std::function&lt; double(double)&gt; &amp;func, double delta=.0001)</td></tr>
 <tr class="memdesc:aec65db4e5c7317323227f026fe50ef11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes integral approximation.  <br /></td></tr>
 <tr class="memitem:a50936ee98f4d40f17823befc65a32aec" id="r_a50936ee98f4d40f17823befc65a32aec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50936ee98f4d40f17823befc65a32aec">test_eval</a> (double approx, double expected, double threshold)</td></tr>
@@ -245,8 +247,8 @@ Functions</h2></td></tr>
 <p>std::cout</p>
 <p>for IO implementations</p>
 <p>Evaluate recurrence relation using <a href="https://www.hackerearth.com/practice/notes/matrix-exponentiation-1/" target="_blank">matrix exponentiation</a>.</p>
-<p>Math algorithms.</p>
 <p>for mathematical functions</p>
+<p>Math algorithms.</p>
 <p>Mathematical algorithms.</p>
 <p>for IO operations</p>
 <p>for M_PI definition and pow()</p>
@@ -816,6 +818,42 @@ template&lt;typename T&gt; </div>
 <div class="fragment"><div class="line"><span class="lineno">  103</span>                                                        {</div>
 <div class="line"><span class="lineno">  104</span>    <span class="keywordflow">return</span> PI * std::pow(radius, 2) * <a class="code hl_function" href="../../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83">height</a>;</div>
 <div class="line"><span class="lineno">  105</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a73b07abea036f1ce2e3ac5dc169bdb4b" name="a73b07abea036f1ce2e3ac5dc169bdb4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73b07abea036f1ce2e3ac5dc169bdb4b">&#9670;&#160;</a></span>fact_recursion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t math::fact_recursion </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes the factorial of a non-negative integer using recursion and memoization. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>The integer whose factorial is to be computed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The factorial of n </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d96/factorial__memoization_8cpp_source.html#l00044">44</a> of file <a class="el" href="../../d2/d96/factorial__memoization_8cpp_source.html">factorial_memoization.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>                                    {</div>
+<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">if</span> (n == 0) <span class="keywordflow">return</span> 1;        <span class="comment">// Base case: 0! = 1</span></div>
+<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>[n] != 0) <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>[n]; <span class="comment">// Return already computed value</span></div>
+<div class="line"><span class="lineno">   47</span>    <a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>[n] = n * <a class="code hl_function" href="#a73b07abea036f1ce2e3ac5dc169bdb4b">fact_recursion</a>(n - 1);    <span class="comment">// Store and return the computed value</span></div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>[n];</div>
+<div class="line"><span class="lineno">   49</span>}</div>
+<div class="ttc" id="afactorial__memoization_8cpp_html_a0f9b4d5fae79e1029daf9bd1b93ec217"><div class="ttname"><a href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a></div><div class="ttdeci">std::array&lt; uint64_t, 1000 &gt; memo</div><div class="ttdoc">Array to store computed factorials for memoization.</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d96/factorial__memoization_8cpp_source.html#l00031">factorial_memoization.cpp:31</a></div></div>
+<div class="ttc" id="anamespacemath_html_a73b07abea036f1ce2e3ac5dc169bdb4b"><div class="ttname"><a href="#a73b07abea036f1ce2e3ac5dc169bdb4b">math::fact_recursion</a></div><div class="ttdeci">uint64_t fact_recursion(uint64_t n)</div><div class="ttdoc">Computes the factorial of a non-negative integer using recursion and memoization.</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d96/factorial__memoization_8cpp_source.html#l00044">factorial_memoization.cpp:44</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
