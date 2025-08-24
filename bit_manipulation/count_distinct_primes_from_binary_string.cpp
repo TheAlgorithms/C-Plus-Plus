@@ -16,27 +16,31 @@
  * Tags: Bit Manipulation, Prime Numbers, Combinatorics, Greedy, Bitmask
  */
 
-#include <bit>
-#include <iostream>
-#include <vector>
-#include <unordered_set>
-#include <algorithm>
+#include <bit>          ///< For std::popcount (bit manipulation utilities)
+#include <iostream>     ///< For input/output stream handling (std::cin, std::cout)
+#include <vector>       ///< For dynamic array storage (std::vector)
+#include <unordered_set>///< For storing distinct primes without duplicates (std::unordered_set)
+#include <algorithm>    ///< For algorithms like std::count
+#include <cassert>      ///< For assert-based testing
 
-const int MAX = 1e6;
+const uint32_t MAX = 1e6;  ///< Upper bound for prime sieve
 static std::vector<bool> is_prime;
 
 /**
  * @namespace bit_manipulation
- * @brief Bit manipulation algorithms
+ * @brief Bit manipulation algorithms and prime preprocessing
  */
 namespace bit_manipulation {
 
+    /**
+     * @brief Precomputes all prime numbers up to MAX using Sieve of Eratosthenes.
+     */
     void precomputePrimes() {
         is_prime.assign(MAX + 1, true);
         is_prime[0] = is_prime[1] = false;
-        for (int i = 2; i * i <= MAX; i++) {
+        for (uint32_t i = 2; i * i <= MAX; i++) {
             if (is_prime[i]) {
-                for (int j = i * i; j <= MAX; j += i) {
+                for (uint32_t j = i * i; j <= MAX; j += i) {
                     is_prime[j] = false;
                 }
             }
@@ -67,17 +71,26 @@ namespace bit_manipulation {
     
         return cnt;
     }
-    
-    void tests(){
-        precomputePrimes();
-        std::string s;
-        std::cin >> s;
-        std::cout << countPrimeBinaryStrings(s) << std::endl;
-    }
-    
-} //bit manipulation
+
+} // namespace bit_manipulation
+
 /**
- * @brief Main function to test the algorithm.
+ * @brief Static test function using assertions instead of I/O.
+ */
+static void tests() {
+    using namespace bit_manipulation;
+
+    precomputePrimes();
+
+    // Example test cases
+    assert(countPrimeBinaryStrings("1") == 0);     // Only "1" -> not prime
+    assert(countPrimeBinaryStrings("11") > 0);     // Should form primes like 3
+    assert(countPrimeBinaryStrings("101") > 0);    // Can form primes like 5
+    assert(countPrimeBinaryStrings("000") == 0);   // No 1s -> no primes possible
+}
+
+/**
+ * @brief Main function to run tests.
  */
 int main() {
     tests();
