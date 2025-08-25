@@ -1,6 +1,7 @@
 name: Awesome CI Workflow
 on: [push, pull_request]
 permissions:
+  pull-requests: write
   contents: write
 
 jobs:
@@ -13,10 +14,10 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-python@v4
       - name: requirements
-        run: | 
+        run: |
           sudo apt-get -qq update
           sudo apt-get -qq install clang-tidy clang-format
-        # checks are passing with less errors when used with this version. 
+        # checks are passing with less errors when used with this version.
         # The default installs v6.0 which did not work out well in my tests
       - name: Setup Git Specs
         run: |
@@ -33,8 +34,8 @@ jobs:
           git diff --diff-filter=dr --name-only origin/master > git_diff.txt
           echo "Files changed-- `cat git_diff.txt`"
       - name: Configure for static lint checks
-        # compiling first gives clang-tidy access to all the header files and settings used to compile the programs. 
-        # This will check for macros, if any, on linux and not for Windows. But the use of portability checks should 
+        # compiling first gives clang-tidy access to all the header files and settings used to compile the programs.
+        # This will check for macros, if any, on linux and not for Windows. But the use of portability checks should
         # be able to catch any errors for other platforms.
         run: cmake -B build -S . -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
       - name: Lint modified files
