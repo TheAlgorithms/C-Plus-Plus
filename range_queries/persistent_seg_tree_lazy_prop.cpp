@@ -22,6 +22,7 @@
  *
  * @author [Magdy Sedra](https://github.com/MSedra)
  */
+#include <cstdint>   /// for std::uint32_t
 #include <iostream>  /// for IO operations
 #include <memory>    /// to manage dynamic memory
 #include <vector>    /// for std::vector
