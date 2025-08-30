@@ -16,7 +16,7 @@
  * Tags: Bit Manipulation, Prime Numbers, Combinatorics, Greedy, Bitmask
  */
 
-#include <bit>          ///< For std::popcount (bit manipulation utilities)
+#include <cstdint>      ///< For uint32_t 
 #include <iostream>     ///< For input/output stream handling (std::cin, std::cout)
 #include <vector>       ///< For dynamic array storage (std::vector)
 #include <unordered_set>///< For storing distinct primes without duplicates (std::unordered_set)
@@ -47,6 +47,14 @@ namespace bit_manipulation {
         }
     }
     
+    int popcount(uint32_t x) {
+        int count = 0;
+        while (x) {
+            count += x & 1;
+            x >>= 1;
+        }
+        return count;
+    }
     /**
      * @brief Counts distinct prime numbers that can be formed from the given binary string.
      * @param s Binary string input
@@ -60,8 +68,8 @@ namespace bit_manipulation {
     
         std::unordered_set<int> seen;
     
-        for (int i = 2; i < limit; i++) {
-            if (std::popcount(i) <= k && is_prime[i]) {
+        for (uint32_t i = 2; i < limit; i++) {
+            if (popcount(i) <= k && is_prime[i]) {
                 if (!seen.count(i)) {
                     cnt++;
                     seen.insert(i);
@@ -84,13 +92,14 @@ static void tests() {
 
     // Example test cases
     assert(countPrimeBinaryStrings("1") == 0);     // Only "1" -> not prime
-    assert(countPrimeBinaryStrings("11") > 0);     // Should form primes like 3
-    assert(countPrimeBinaryStrings("101") > 0);    // Can form primes like 5
+    assert(countPrimeBinaryStrings("11") == 2);     // Should form primes like 3
+    assert(countPrimeBinaryStrings("101") == 3);    // Can form primes like 5
     assert(countPrimeBinaryStrings("000") == 0);   // No 1s -> no primes possible
 }
 
 /**
  * @brief Main function to run tests.
+ * @returns 0 on successful exit
  */
 int main() {
     tests();
