@@ -28,7 +28,7 @@ static std::vector<bool> is_prime;
 
 /**
  * @namespace bit_manipulation
- * @brief Bit manipulation algorithms and prime preprocessing
+ * @brief Bit manipulation algorithms
  */
 namespace bit_manipulation {
 
