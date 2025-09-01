@@ -43,7 +43,7 @@ var classuint256__t =
     [ "operator-", "d1/d83/classuint256__t.html#a88978d00fa6a624c50c2737dc2c294b4", null ],
     [ "operator-", "d1/d83/classuint256__t.html#ab909ef62a0c85121e7d743c016fb723d", null ],
     [ "operator--", "d1/d83/classuint256__t.html#a9f6f3e39783c893473315bada864a183", null ],
-    [ "operator--", "d1/d83/classuint256__t.html#a28d26847f9b19a4f86c187791cb0db13", null ],
+    [ "operator--", "d1/d83/classuint256__t.html#a63f1095009e27a797986c835651cd14a", null ],
     [ "operator-=", "d1/d83/classuint256__t.html#acd3970c633eb2c597874e2712392f0c7", null ],
     [ "operator-=", "d1/d83/classuint256__t.html#a5e84ed2a2f99cee81ede4a0107702a45", null ],
     [ "operator/", "d1/d83/classuint256__t.html#acac9901ab133caa57d058a377d873bf6", null ],

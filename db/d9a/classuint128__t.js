@@ -41,7 +41,7 @@ var classuint128__t =
     [ "operator-", "db/d9a/classuint128__t.html#a6824700c9c732a4200e7493fe7ed0eec", null ],
     [ "operator-", "db/d9a/classuint128__t.html#a81a568510e6d0b0950133dd9fc37fc0c", null ],
     [ "operator--", "db/d9a/classuint128__t.html#a1d390c6ea5450680dcaff341235f0fed", null ],
-    [ "operator--", "db/d9a/classuint128__t.html#a2ecb71686e1c9ed0267124580c91c414", null ],
+    [ "operator--", "db/d9a/classuint128__t.html#a6f2499a97b351adf66a14778ccbb13d1", null ],
     [ "operator-=", "db/d9a/classuint128__t.html#a0a4623fae71566dfcf2e742c8c156798", null ],
     [ "operator-=", "db/d9a/classuint128__t.html#abea727c69c2acd74ffe21464199d27c8", null ],
     [ "operator/", "db/d9a/classuint128__t.html#aed49b24b99293ae6b14ac9850f5deb94", null ],
