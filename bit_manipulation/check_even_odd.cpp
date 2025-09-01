@@ -52,8 +52,8 @@ namespace even_odd {
  * @param N The number to check.
  * @returns "Even" if N is even, "Odd" if N is odd.
      */
-        std::string is_even(std::int64_t N) {
-            return (N & 1) == 0 ? "Even" : "Odd";
+        bool is_even(std::int64_t N) {
+            return (N & 1) == 0 ? true : false;
         }
 
     }  // namespace even_odd
@@ -67,18 +67,18 @@ static void test() {
     using bit_manipulation::even_odd::is_even;
 
     // Test Even numbers
-    assert(is_even(0) == "Even");
-    assert(is_even(2) == "Even");
-    assert(is_even(100) == "Even");
-    assert(is_even(-4) == "Even");
-    assert(is_even(-1000) == "Even");
+    assert(is_even(0) == true);
+    assert(is_even(2) == true);
+    assert(is_even(100) == true);
+    assert(is_even(-4) == true);
+    assert(is_even(-1000) == true);
 
     // Test Odd numbers
-    assert(is_even(1) == "Odd");
-    assert(is_even(3) == "Odd");
-    assert(is_even(101) == "Odd");
-    assert(is_even(-5) == "Odd");
-    assert(is_even(-999) == "Odd");
+    assert(is_even(1) == false);
+    assert(is_even(3) == false);
+    assert(is_even(101) == false);
+    assert(is_even(-5) == false);
+    assert(is_even(-999) == false);
 
     std::cout << "All test cases successfully passed!" << std::endl;
 }
