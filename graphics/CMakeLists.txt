@@ -4,17 +4,17 @@ if(OpenGL_FOUND)
     if(NOT GLUT_FOUND)
         message("FreeGLUT library will be downloaded and built.")
         include(ExternalProject)
-        ExternalProject_Add (
+        ExternalProject_Add(
             FREEGLUT-PRJ
             URL https://github.com/FreeGLUTProject/freeglut/releases/download/v3.4.0/freeglut-3.4.0.tar.gz
             URL_MD5 f1621464e6525d0368976870cab8f418
             CMAKE_GENERATOR ${CMAKE_GENERATOR}
             CMAKE_GENERATOR_TOOLSET ${CMAKE_GENERATOR_TOOLSET}
             CMAKE_GENERATOR_PLATFORM ${CMAKE_GENERATOR_PLATFORM}
-            CMAKE_ARGS  -DCMAKE_BUILD_TYPE=Release
-                        -DFREEGLUT_BUILD_SHARED_LIBS=OFF
-                        -DFREEGLUT_BUILD_STATIC_LIBS=ON
-                        -DFREEGLUT_BUILD_DEMOS=OFF
+            CMAKE_ARGS -DCMAKE_BUILD_TYPE=Release
+            -DFREEGLUT_BUILD_SHARED_LIBS=OFF
+            -DFREEGLUT_BUILD_STATIC_LIBS=ON
+            -DFREEGLUT_BUILD_DEMOS=OFF
             PREFIX ${CMAKE_CURRENT_BINARY_DIR}/freeglut
             # BINARY_DIR ${CMAKE_CURRENT_BINARY_DIR}/freeglut-build
             # BUILD_IN_SOURCE ON
@@ -44,19 +44,19 @@ endif(OpenGL_FOUND)
 # If necessary, use the RELATIVE flag, otherwise each source file may be listed
 # with full pathname. RELATIVE may makes it easier to extract an executable name
 # automatically.
-file( GLOB APP_SOURCES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.cpp )
+file(GLOB APP_SOURCES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.cpp)
 # file( GLOB APP_SOURCES ${CMAKE_SOURCE_DIR}/*.c )
 # AUX_SOURCE_DIRECTORY(${CMAKE_CURRENT_SOURCE_DIR} APP_SOURCES)
-foreach( testsourcefile ${APP_SOURCES} )
+foreach(testsourcefile ${APP_SOURCES})
     # I used a simple string replace, to cut off .cpp.
-    string( REPLACE ".cpp" "" testname ${testsourcefile} )
-    add_executable( ${testname} ${testsourcefile} )
+    string(REPLACE ".cpp" "" testname ${testsourcefile})
+    add_executable(${testname} ${testsourcefile})
 
     set_target_properties(${testname} PROPERTIES LINKER_LANGUAGE CXX)
     if(OpenMP_CXX_FOUND)
         target_link_libraries(${testname} PRIVATE OpenMP::OpenMP_CXX)
     endif()
-    
+
     if(OpenGL_FOUND)
         if(NOT GLUT_FOUND)
             add_dependencies(${testname} FREEGLUT-PRJ)
@@ -73,11 +73,11 @@ foreach( testsourcefile ${APP_SOURCES} )
         endif()
         target_compile_definitions(${testname} PRIVATE USE_GLUT)
     endif(OpenGL_FOUND)
-    
+
     if(APPLE)
         target_compile_options(${testname} PRIVATE -Wno-deprecated)
     endif(APPLE)
-    
+
     install(TARGETS ${testname} DESTINATION "bin/graphics")
 
-endforeach( testsourcefile ${APP_SOURCES} )
+endforeach(testsourcefile ${APP_SOURCES})
