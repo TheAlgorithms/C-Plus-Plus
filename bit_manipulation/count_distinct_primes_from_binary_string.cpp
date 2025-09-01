@@ -21,10 +21,10 @@
 #include <vector>       ///< For dynamic array storage (std::vector)
 #include <unordered_set>///< For storing distinct primes without duplicates (std::unordered_set)
 #include <algorithm>    ///< For algorithms like std::count
-#include <cassert>      ///< For assert-based testing
+#include <cassert>      ///< For assert-based testing>
+#include <array>        ///< For constexpr fixed-size array
 
-const uint32_t MAX = 1e6;  ///< Upper bound for prime sieve
-static std::vector<bool> is_prime;
+constexpr uint32_t MAX = 1'000'000;  ///< Upper bound for prime sieve
 
 /**
  * @namespace bit_manipulation
@@ -33,21 +33,27 @@ static std::vector<bool> is_prime;
 namespace bit_manipulation {
 
     /**
-     * @brief Precomputes all prime numbers up to MAX using Sieve of Eratosthenes.
+     * @brief Precomputes all prime numbers up to MAX at compile time using Sieve of Eratosthenes.
      */
-    void precomputePrimes() {
-        is_prime.assign(MAX + 1, true);
-        is_prime[0] = is_prime[1] = false;
+    constexpr auto precomputePrimes() {
+        std::array<bool, MAX + 1> prime{};
+        prime.fill(true);
+        prime[0] = prime[1] = false;
+
         for (uint32_t i = 2; i * i <= MAX; i++) {
-            if (is_prime[i]) {
+            if (prime[i]) {
                 for (uint32_t j = i * i; j <= MAX; j += i) {
-                    is_prime[j] = false;
+                    prime[j] = false;
                 }
             }
         }
+        return prime;
     }
-    
-    int popcount(uint32_t x) {
+
+    /// Global constexpr prime table
+    static constexpr auto is_prime = precomputePrimes();
+
+    constexpr int popcount(uint32_t x) {
         int count = 0;
         while (x) {
             count += x & 1;
@@ -55,6 +61,7 @@ namespace bit_manipulation {
         }
         return count;
     }
+
     /**
      * @brief Counts distinct prime numbers that can be formed from the given binary string.
      * @param s Binary string input
@@ -88,12 +95,10 @@ namespace bit_manipulation {
 static void tests() {
     using namespace bit_manipulation;
 
-    precomputePrimes();
-
     // Example test cases
     assert(countPrimeBinaryStrings("1") == 0);     // Only "1" -> not prime
-    assert(countPrimeBinaryStrings("11") == 2);     // Should form primes like 3
-    assert(countPrimeBinaryStrings("101") == 3);    // Can form primes like 5
+    assert(countPrimeBinaryStrings("11") == 2);    // Should form primes like 3
+    assert(countPrimeBinaryStrings("101") == 3);   // Can form primes like 5
     assert(countPrimeBinaryStrings("000") == 0);   // No 1s -> no primes possible
 }
 
