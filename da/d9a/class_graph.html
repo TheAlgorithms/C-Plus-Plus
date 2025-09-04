@@ -681,24 +681,23 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   27</span>        visited.reset();</div>
 <div class="line"><span class="lineno">   28</span>        std::queue&lt;int&gt; q;</div>
 <div class="line"><span class="lineno">   29</span>        q.push(source);</div>
-<div class="line"><span class="lineno">   30</span>        <span class="keywordtype">bool</span> is_path_found = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   31</span>        <span class="keywordflow">while</span> (q.empty() == <span class="keyword">false</span> &amp;&amp; is_path_found == <span class="keyword">false</span>) {</div>
-<div class="line"><span class="lineno">   32</span>            <span class="keywordtype">int</span> current_node = q.front();</div>
-<div class="line"><span class="lineno">   33</span>            visited.set(current_node);</div>
-<div class="line"><span class="lineno">   34</span>            q.pop();</div>
-<div class="line"><span class="lineno">   35</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; total_nodes; ++i) {</div>
-<div class="line"><span class="lineno">   36</span>                <span class="keywordflow">if</span> (residual_capacity[current_node][i] &gt; 0 &amp;&amp; !visited[i]) {</div>
-<div class="line"><span class="lineno">   37</span>                    visited.set(i);</div>
-<div class="line"><span class="lineno">   38</span>                    parent[i] = current_node;</div>
-<div class="line"><span class="lineno">   39</span>                    <span class="keywordflow">if</span> (i == sink) {</div>
-<div class="line"><span class="lineno">   40</span>                        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   41</span>                    }</div>
-<div class="line"><span class="lineno">   42</span>                    q.push(i);</div>
-<div class="line"><span class="lineno">   43</span>                }</div>
-<div class="line"><span class="lineno">   44</span>            }</div>
-<div class="line"><span class="lineno">   45</span>        }</div>
-<div class="line"><span class="lineno">   46</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   47</span>    }</div>
+<div class="line"><span class="lineno">   30</span>        <span class="keywordflow">while</span> (q.empty() == <span class="keyword">false</span>) {</div>
+<div class="line"><span class="lineno">   31</span>            <span class="keywordtype">int</span> current_node = q.front();</div>
+<div class="line"><span class="lineno">   32</span>            visited.set(current_node);</div>
+<div class="line"><span class="lineno">   33</span>            q.pop();</div>
+<div class="line"><span class="lineno">   34</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; total_nodes; ++i) {</div>
+<div class="line"><span class="lineno">   35</span>                <span class="keywordflow">if</span> (residual_capacity[current_node][i] &gt; 0 &amp;&amp; !visited[i]) {</div>
+<div class="line"><span class="lineno">   36</span>                    visited.set(i);</div>
+<div class="line"><span class="lineno">   37</span>                    parent[i] = current_node;</div>
+<div class="line"><span class="lineno">   38</span>                    <span class="keywordflow">if</span> (i == sink) {</div>
+<div class="line"><span class="lineno">   39</span>                        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   40</span>                    }</div>
+<div class="line"><span class="lineno">   41</span>                    q.push(i);</div>
+<div class="line"><span class="lineno">   42</span>                }</div>
+<div class="line"><span class="lineno">   43</span>            }</div>
+<div class="line"><span class="lineno">   44</span>        }</div>
+<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   46</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -725,26 +724,26 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html">max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   62</span>                          {</div>
-<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">while</span> (bfs(source, sink)) {</div>
-<div class="line"><span class="lineno">   64</span>            <span class="keywordtype">int</span> current_node = sink;</div>
-<div class="line"><span class="lineno">   65</span>            <span class="keywordtype">int</span> flow = std::numeric_limits&lt;int&gt;::max();</div>
-<div class="line"><span class="lineno">   66</span>            <span class="keywordflow">while</span> (current_node != source) {</div>
-<div class="line"><span class="lineno">   67</span>                <span class="keywordtype">int</span> parent_ = parent[current_node];</div>
-<div class="line"><span class="lineno">   68</span>                flow = std::min(flow, residual_capacity[parent_][current_node]);</div>
-<div class="line"><span class="lineno">   69</span>                current_node = parent_;</div>
-<div class="line"><span class="lineno">   70</span>            }</div>
-<div class="line"><span class="lineno">   71</span>            current_node = sink;</div>
-<div class="line"><span class="lineno">   72</span>            max_flow += flow;</div>
-<div class="line"><span class="lineno">   73</span>            <span class="keywordflow">while</span> (current_node != source) {</div>
-<div class="line"><span class="lineno">   74</span>                <span class="keywordtype">int</span> parent_ = parent[current_node];</div>
-<div class="line"><span class="lineno">   75</span>                residual_capacity[parent_][current_node] -= flow;</div>
-<div class="line"><span class="lineno">   76</span>                residual_capacity[current_node][parent_] += flow;</div>
-<div class="line"><span class="lineno">   77</span>                current_node = parent_;</div>
-<div class="line"><span class="lineno">   78</span>            }</div>
-<div class="line"><span class="lineno">   79</span>        }</div>
-<div class="line"><span class="lineno">   80</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html">max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   61</span>                          {</div>
+<div class="line"><span class="lineno">   62</span>        <span class="keywordflow">while</span> (bfs(source, sink)) {</div>
+<div class="line"><span class="lineno">   63</span>            <span class="keywordtype">int</span> current_node = sink;</div>
+<div class="line"><span class="lineno">   64</span>            <span class="keywordtype">int</span> flow = std::numeric_limits&lt;int&gt;::max();</div>
+<div class="line"><span class="lineno">   65</span>            <span class="keywordflow">while</span> (current_node != source) {</div>
+<div class="line"><span class="lineno">   66</span>                <span class="keywordtype">int</span> parent_ = parent[current_node];</div>
+<div class="line"><span class="lineno">   67</span>                flow = std::min(flow, residual_capacity[parent_][current_node]);</div>
+<div class="line"><span class="lineno">   68</span>                current_node = parent_;</div>
+<div class="line"><span class="lineno">   69</span>            }</div>
+<div class="line"><span class="lineno">   70</span>            current_node = sink;</div>
+<div class="line"><span class="lineno">   71</span>            max_flow += flow;</div>
+<div class="line"><span class="lineno">   72</span>            <span class="keywordflow">while</span> (current_node != source) {</div>
+<div class="line"><span class="lineno">   73</span>                <span class="keywordtype">int</span> parent_ = parent[current_node];</div>
+<div class="line"><span class="lineno">   74</span>                residual_capacity[parent_][current_node] -= flow;</div>
+<div class="line"><span class="lineno">   75</span>                residual_capacity[current_node][parent_] += flow;</div>
+<div class="line"><span class="lineno">   76</span>                current_node = parent_;</div>
+<div class="line"><span class="lineno">   77</span>            }</div>
+<div class="line"><span class="lineno">   78</span>        }</div>
+<div class="line"><span class="lineno">   79</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -832,28 +831,28 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html#l00081">81</a> of file <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html">max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   81</span>                           {</div>
-<div class="line"><span class="lineno">   82</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; total_nodes; ++i) {</div>
-<div class="line"><span class="lineno">   83</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; total_nodes; ++j) {</div>
-<div class="line"><span class="lineno">   84</span>                <span class="keywordflow">if</span> (capacity[i][j] &amp;&amp;</div>
-<div class="line"><span class="lineno">   85</span>                    residual_capacity[i][j] &lt; capacity[i][j]) {</div>
-<div class="line"><span class="lineno">   86</span>                    edge_participated.emplace_back(std::make_tuple(</div>
-<div class="line"><span class="lineno">   87</span>                        i, j, capacity[i][j] - residual_capacity[i][j]));</div>
-<div class="line"><span class="lineno">   88</span>                }</div>
-<div class="line"><span class="lineno">   89</span>            }</div>
-<div class="line"><span class="lineno">   90</span>        }</div>
-<div class="line"><span class="lineno">   91</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\nNodes : &quot;</span> &lt;&lt; total_nodes &lt;&lt; <span class="stringliteral">&quot;\nMax flow: &quot;</span> &lt;&lt; max_flow</div>
-<div class="line"><span class="lineno">   92</span>                  &lt;&lt; <span class="stringliteral">&quot;\nEdge present in flow: &quot;</span> &lt;&lt; edge_participated.size()</div>
-<div class="line"><span class="lineno">   93</span>                  &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><span class="lineno">   94</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\nSource\tDestination\tCapacity\total_nodes&quot;</span>;</div>
-<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; edge_data : edge_participated) {</div>
-<div class="line"><span class="lineno">   96</span>            <span class="keywordtype">int</span> source = 0, destination = 0, capacity_ = 0;</div>
-<div class="line"><span class="lineno">   97</span>            std::tie(source, destination, capacity_) = edge_data;</div>
-<div class="line"><span class="lineno">   98</span>            std::cout &lt;&lt; source &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; destination &lt;&lt; <span class="stringliteral">&quot;\t\t&quot;</span> &lt;&lt; capacity_</div>
-<div class="line"><span class="lineno">   99</span>                      &lt;&lt; <span class="charliteral">&#39;\t&#39;</span>;</div>
-<div class="line"><span class="lineno">  100</span>        }</div>
-<div class="line"><span class="lineno">  101</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html#l00080">80</a> of file <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html">max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   80</span>                           {</div>
+<div class="line"><span class="lineno">   81</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; total_nodes; ++i) {</div>
+<div class="line"><span class="lineno">   82</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; total_nodes; ++j) {</div>
+<div class="line"><span class="lineno">   83</span>                <span class="keywordflow">if</span> (capacity[i][j] &amp;&amp;</div>
+<div class="line"><span class="lineno">   84</span>                    residual_capacity[i][j] &lt; capacity[i][j]) {</div>
+<div class="line"><span class="lineno">   85</span>                    edge_participated.emplace_back(std::make_tuple(</div>
+<div class="line"><span class="lineno">   86</span>                        i, j, capacity[i][j] - residual_capacity[i][j]));</div>
+<div class="line"><span class="lineno">   87</span>                }</div>
+<div class="line"><span class="lineno">   88</span>            }</div>
+<div class="line"><span class="lineno">   89</span>        }</div>
+<div class="line"><span class="lineno">   90</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\nNodes : &quot;</span> &lt;&lt; total_nodes &lt;&lt; <span class="stringliteral">&quot;\nMax flow: &quot;</span> &lt;&lt; max_flow</div>
+<div class="line"><span class="lineno">   91</span>                  &lt;&lt; <span class="stringliteral">&quot;\nEdge present in flow: &quot;</span> &lt;&lt; edge_participated.size()</div>
+<div class="line"><span class="lineno">   92</span>                  &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">   93</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\nSource\tDestination\tCapacity\total_nodes&quot;</span>;</div>
+<div class="line"><span class="lineno">   94</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; edge_data : edge_participated) {</div>
+<div class="line"><span class="lineno">   95</span>            <span class="keywordtype">int</span> source = 0, destination = 0, capacity_ = 0;</div>
+<div class="line"><span class="lineno">   96</span>            std::tie(source, destination, capacity_) = edge_data;</div>
+<div class="line"><span class="lineno">   97</span>            std::cout &lt;&lt; source &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; destination &lt;&lt; <span class="stringliteral">&quot;\t\t&quot;</span> &lt;&lt; capacity_</div>
+<div class="line"><span class="lineno">   98</span>                      &lt;&lt; <span class="charliteral">&#39;\t&#39;</span>;</div>
+<div class="line"><span class="lineno">   99</span>        }</div>
+<div class="line"><span class="lineno">  100</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -880,19 +879,19 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html">max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   50</span>                     {</div>
-<div class="line"><span class="lineno">   51</span>        std::cin &gt;&gt; total_nodes &gt;&gt; total_edges &gt;&gt; source &gt;&gt; sink;</div>
-<div class="line"><span class="lineno">   52</span>        parent = std::vector&lt;int&gt;(total_nodes, -1);</div>
-<div class="line"><span class="lineno">   53</span>        capacity = residual_capacity = std::vector&lt;std::vector&lt;int&gt; &gt;(</div>
-<div class="line"><span class="lineno">   54</span>            total_nodes, std::vector&lt;int&gt;(total_nodes));</div>
-<div class="line"><span class="lineno">   55</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> start = 0, destination = 0, capacity_ = 0, i = 0;</div>
-<div class="line"><span class="lineno">   56</span>             i &lt; total_edges; ++i) {</div>
-<div class="line"><span class="lineno">   57</span>            std::cin &gt;&gt; start &gt;&gt; destination &gt;&gt; capacity_;</div>
-<div class="line"><span class="lineno">   58</span>            residual_capacity[start][destination] = capacity_;</div>
-<div class="line"><span class="lineno">   59</span>            capacity[start][destination] = capacity_;</div>
-<div class="line"><span class="lineno">   60</span>        }</div>
-<div class="line"><span class="lineno">   61</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html#l00049">49</a> of file <a class="el" href="../../d2/d48/max__flow__with__ford__fulkerson__and__edmond__karp__algo_8cpp_source.html">max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   49</span>                     {</div>
+<div class="line"><span class="lineno">   50</span>        std::cin &gt;&gt; total_nodes &gt;&gt; total_edges &gt;&gt; source &gt;&gt; sink;</div>
+<div class="line"><span class="lineno">   51</span>        parent = std::vector&lt;int&gt;(total_nodes, -1);</div>
+<div class="line"><span class="lineno">   52</span>        capacity = residual_capacity = std::vector&lt;std::vector&lt;int&gt; &gt;(</div>
+<div class="line"><span class="lineno">   53</span>            total_nodes, std::vector&lt;int&gt;(total_nodes));</div>
+<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> start = 0, destination = 0, capacity_ = 0, i = 0;</div>
+<div class="line"><span class="lineno">   55</span>             i &lt; total_edges; ++i) {</div>
+<div class="line"><span class="lineno">   56</span>            std::cin &gt;&gt; start &gt;&gt; destination &gt;&gt; capacity_;</div>
+<div class="line"><span class="lineno">   57</span>            residual_capacity[start][destination] = capacity_;</div>
+<div class="line"><span class="lineno">   58</span>            capacity[start][destination] = capacity_;</div>
+<div class="line"><span class="lineno">   59</span>        }</div>
+<div class="line"><span class="lineno">   60</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
