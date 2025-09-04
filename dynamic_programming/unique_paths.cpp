@@ -1,12 +1,22 @@
 /**
  * @file
- * @brief Implementation of Unique Paths problem using
- * Dynamic Programming (Memoization + Tabulation).
+ * @brief Implementation of Unique Paths problem using Dynamic Programming.
  * @details
- * A robot is located at the top-left corner of an m x n grid.
+ * A robot is located at the top-left corner of an m × n grid.
  * The robot can move either down or right at any point in time.
- * The robot is trying to reach the bottom-right corner.
- * This program computes the total number of unique paths.
+ * This program computes the total number of unique paths to reach
+ * the bottom-right corner.
+ *
+ * Approaches:
+ * - **Memoization (Top-Down)**: Recursively explores solutions while
+ *   storing intermediate results in a cache (`dp`) to avoid redundant
+ *   computation. Typically more intuitive and easy to write, but
+ *   relies on recursion and has associated call-stack overhead.
+ *
+ * - **Tabulation (Bottom-Up)**: Iteratively builds the solution using
+ *   a DP table, starting from the base cases and filling up the table.
+ *   Offers consistent performance without recursion overhead and
+ *   is generally more space-efficient when optimized.
  *
  * @see https://leetcode.com/problems/unique-paths/
  */
@@ -29,21 +39,6 @@ class UniquePathsSolver {
    private:
     std::vector<std::vector<int>> dp;  ///< Memoization table
     int m, n;
-
-    /**
-     * @brief Recursive + Memoization solution.
-     * @param i Current row index
-     * @param j Current column index
-     * @return int Number of unique paths from (i, j) to (m-1, n-1)
-     */
-    int solveMem(int i, int j) {
-        if (i >= m || j >= n) return 0;
-        if (i == m - 1 && j == n - 1) return 1;
-        if (dp.at(i).at(j) != -1) return dp.at(i).at(j);
-
-        dp.at(i).at(j) = solveMem(i + 1, j) + solveMem(i, j + 1);
-        return dp.at(i).at(j);
-    }
 
     /**
      * @brief Bottom-up Tabulation solution.
@@ -72,12 +67,19 @@ class UniquePathsSolver {
     }
 
     /**
-     * @brief Get number of unique paths using Memoization
+     * @brief Get number of unique paths using Memoization (Top-Down)
      */
-    int uniquePathsMemo() { return solveMem(0, 0); }
+    int uniquePathsMemo(int i = 0, int j = 0) {
+        if (i >= m || j >= n) return 0;
+        if (i == m - 1 && j == n - 1) return 1;
+        if (dp.at(i).at(j) != -1) return dp.at(i).at(j);
+
+        dp.at(i).at(j) = uniquePathsMemo(i + 1, j) + uniquePathsMemo(i, j + 1);
+        return dp.at(i).at(j);
+    }
 
     /**
-     * @brief Get number of unique paths using Tabulation
+     * @brief Get number of unique paths using Tabulation (Bottom-Up)
      */
     int uniquePathsTab() { return solveTab(); }
 };
