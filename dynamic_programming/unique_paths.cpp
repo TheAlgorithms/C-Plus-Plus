@@ -88,7 +88,7 @@ class UniquePathsSolver {
  * @brief Self-test implementations
  */
 static void test() {
-    using namespace dynamic_programming;
+    using namespace dp::dynamic_programming;
 
     UniquePathsSolver solver1(3, 7);
     assert(solver1.uniquePathsMemo() == 28);
