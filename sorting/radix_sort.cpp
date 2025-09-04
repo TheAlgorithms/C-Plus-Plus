@@ -49,7 +49,7 @@ void print(int a[], int n) {
     std::cout << std::endl;
 }
 
-int main(int argc, char const* argv[]) {
+int main() {
     int a[] = {170, 45, 75, 90, 802, 24, 2, 66};
     int n = sizeof(a) / sizeof(a[0]);
     radixsort(a, n);

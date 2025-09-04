@@ -72,7 +72,7 @@ class uint256_t {
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
-    explicit uint256_t(T low) : s(low), f(0) {}
+    explicit uint256_t(T low) : f(0), s(low) {}
 
     /**
      * @brief Parameterized constructor
@@ -319,7 +319,7 @@ class uint256_t {
      * @brief operator -- (post-decrement)
      * @returns decremented value of this
      */
-    inline uint256_t operator--(int p) {
+    inline uint256_t operator--(int) {
         --*this;
         return *this;
     }
