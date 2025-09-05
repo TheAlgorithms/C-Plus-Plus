@@ -9,7 +9,7 @@
  *
  * Approaches:
  * - **Memoization (Top-Down)**: Recursively explores solutions while
- *   storing intermediate results in a cache (`dp`) to avoid redundant
+ *   storing intermediate results in a cache (`memoization_table`) to avoid redundant
  *   computation. Typically more intuitive and easy to write, but
  *   relies on recursion and has associated call-stack overhead.
  *
@@ -37,14 +37,14 @@ namespace dynamic_programming {
  */
 class UniquePathsSolver {
    private:
-    std::vector<std::vector<int>> dp;  ///< Memoization table
+    std::vector<std::vector<int>> memoization_table;  ///< Memoization table
     int m, n;
 
     /**
      * @brief Bottom-up Tabulation solution.
      * @return int Number of unique paths from (0, 0) to (m-1, n-1)
      */
-    int solveTab() {
+    int solveTabulation() {
         std::vector<std::vector<int>> table(m, std::vector<int>(n, 0));
 
         for (int i = 0; i < m; i++) table[i][n - 1] = 1;  ///< last column
@@ -60,10 +60,10 @@ class UniquePathsSolver {
 
    public:
     /**
-     * @brief Constructor initializes dimensions and memo table
+     * @brief Constructor initializes dimensions and memoization table
      */
     UniquePathsSolver(int rows, int cols) : m(rows), n(cols) {
-        dp.assign(m, std::vector<int>(n, -1));
+        memoization_table.assign(m, std::vector<int>(n, -1));
     }
 
     /**
@@ -72,16 +72,17 @@ class UniquePathsSolver {
     int uniquePathsMemo(int i = 0, int j = 0) {
         if (i >= m || j >= n) return 0;
         if (i == m - 1 && j == n - 1) return 1;
-        if (dp.at(i).at(j) != -1) return dp.at(i).at(j);
+        if (memoization_table.at(i).at(j) != -1) return memoization_table.at(i).at(j);
 
-        dp.at(i).at(j) = uniquePathsMemo(i + 1, j) + uniquePathsMemo(i, j + 1);
-        return dp.at(i).at(j);
+        memoization_table.at(i).at(j) =
+            uniquePathsMemo(i + 1, j) + uniquePathsMemo(i, j + 1);
+        return memoization_table.at(i).at(j);
     }
 
     /**
      * @brief Get number of unique paths using Tabulation (Bottom-Up)
      */
-    int uniquePathsTab() { return solveTab(); }
+    int uniquePathsTabulation() { return solveTabulation(); }
 };
 
 }  // namespace dynamic_programming
@@ -94,19 +95,19 @@ static void test() {
 
     UniquePathsSolver solver1(3, 7);
     assert(solver1.uniquePathsMemo() == 28);
-    assert(solver1.uniquePathsTab() == 28);
+    assert(solver1.uniquePathsTabulation() == 28);
 
     UniquePathsSolver solver2(3, 2);
     assert(solver2.uniquePathsMemo() == 3);
-    assert(solver2.uniquePathsTab() == 3);
+    assert(solver2.uniquePathsTabulation() == 3);
 
     UniquePathsSolver solver3(1, 1);
     assert(solver3.uniquePathsMemo() == 1);
-    assert(solver3.uniquePathsTab() == 1);
+    assert(solver3.uniquePathsTabulation() == 1);
 
     UniquePathsSolver solver4(2, 2);
     assert(solver4.uniquePathsMemo() == 2);
-    assert(solver4.uniquePathsTab() == 2);
+    assert(solver4.uniquePathsTabulation() == 2);
 
     std::cout << "All tests have successfully passed!\n";
 }
