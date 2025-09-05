@@ -14,7 +14,6 @@ var namespacemath =
     [ "cylinder_surface_area", "dd/d47/namespacemath.html#ac5803413618fcfb922cb32c6db0fc864", null ],
     [ "cylinder_surface_perimeter", "dd/d47/namespacemath.html#a1d4df7a4e43a2eac1acc0ac610487c73", null ],
     [ "cylinder_volume", "dd/d47/namespacemath.html#abde24398be43538c62e4a496968e60ca", null ],
-    [ "fact_recursion", "dd/d47/namespacemath.html#a73b07abea036f1ce2e3ac5dc169bdb4b", null ],
     [ "factorial", "dd/d47/namespacemath.html#a7e78996673df791014cfe540b183456a", null ],
     [ "hemi_sphere_surface_area", "dd/d47/namespacemath.html#a3277e65a8f380e7632791975bfba0efb", null ],
     [ "integral_approx", "dd/d47/namespacemath.html#aec65db4e5c7317323227f026fe50ef11", null ],

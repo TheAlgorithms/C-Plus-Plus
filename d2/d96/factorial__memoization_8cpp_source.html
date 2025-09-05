@@ -117,49 +117,51 @@ $(function(){initNavTree('d2/d96/factorial__memoization_8cpp_source.html','../..
 </div><!--header-->
 <div class="contents">
 <a href="../../d2/d96/factorial__memoization_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;iostream&gt;</span> <span class="comment">// for std::cout</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;cassert&gt;</span>  <span class="comment">// For test cases</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;array&gt;</span>    <span class="comment">// For std::array</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;cstdint&gt;</span>  <span class="comment">// For uint64_t</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">   31</a></span>std::array&lt;uint64_t, 1000&gt; <a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>{0};</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../dd/d47/namespacemath.html">math</a> {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
-<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../dd/d47/namespacemath.html#a73b07abea036f1ce2e3ac5dc169bdb4b">   44</a></span>uint64_t <a class="code hl_function" href="../../dd/d47/namespacemath.html#a73b07abea036f1ce2e3ac5dc169bdb4b">fact_recursion</a>(uint64_t n) {</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">if</span> (n == 0) <span class="keywordflow">return</span> 1;        <span class="comment">// Base case: 0! = 1</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>[n] != 0) <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>[n]; <span class="comment">// Return already computed value</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>[n] = n * <a class="code hl_function" href="../../dd/d47/namespacemath.html#a73b07abea036f1ce2e3ac5dc169bdb4b">fact_recursion</a>(n - 1);    <span class="comment">// Store and return the computed value</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a>[n];</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;cassert&gt;</span>  <span class="comment">// For test cases</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;cstdint&gt;</span>  <span class="comment">// For uint64_t</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;vector&gt;</span>   <span class="comment">// For std::vector</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../da/d15/class_memorised_factorial.html">   27</a></span><span class="keyword">class </span><a class="code hl_class" href="../../da/d15/class_memorised_factorial.html">MemorisedFactorial</a> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    std::vector&lt;std::uint64_t&gt; known_values = {1};</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> <span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../da/d15/class_memorised_factorial.html#a35506357960575f150b44ae32fcbad29">   36</a></span>    std::uint64_t <a class="code hl_function" href="../../da/d15/class_memorised_factorial.html#a35506357960575f150b44ae32fcbad29">operator()</a>(std::uint64_t n) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">if</span> (n &gt;= this-&gt;known_values.size()) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            this-&gt;known_values.push_back(n * this-&gt;<span class="keyword">operator</span>()(n - 1));</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">return</span> this-&gt;known_values.at(n);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
 </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>} <span class="comment">// namespace math</span></div>
-<div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../d2/d96/factorial__memoization_8cpp.html#a4243a60d73b9e1296de20196d5b155ba">   56</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d2/d96/factorial__memoization_8cpp.html#a4243a60d73b9e1296de20196d5b155ba">test_fact_recursion</a>() {</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// Test cases for factorial computation</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a73b07abea036f1ce2e3ac5dc169bdb4b">math::fact_recursion</a>(0) == 1);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a73b07abea036f1ce2e3ac5dc169bdb4b">math::fact_recursion</a>(1) == 1);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a73b07abea036f1ce2e3ac5dc169bdb4b">math::fact_recursion</a>(5) == 120);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a73b07abea036f1ce2e3ac5dc169bdb4b">math::fact_recursion</a>(10) == 3628800);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All test cases passed!\n&quot;</span>;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>};</div>
 </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span></div>
-<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../d2/d96/factorial__memoization_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   69</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d2/d96/factorial__memoization_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// Run test cases</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_function" href="../../d2/d96/factorial__memoization_8cpp.html#a4243a60d73b9e1296de20196d5b155ba">test_fact_recursion</a>();</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keywordtype">void</span> test_MemorisedFactorial_in_order() {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">auto</span> <a class="code hl_function" href="../../dd/d47/namespacemath.html#a7e78996673df791014cfe540b183456a">factorial</a> = <a class="code hl_class" href="../../da/d15/class_memorised_factorial.html">MemorisedFactorial</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a7e78996673df791014cfe540b183456a">factorial</a>(0) == 1);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a7e78996673df791014cfe540b183456a">factorial</a>(1) == 1);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a7e78996673df791014cfe540b183456a">factorial</a>(5) == 120);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a7e78996673df791014cfe540b183456a">factorial</a>(10) == 3628800);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keywordtype">void</span> test_MemorisedFactorial_no_order() {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">auto</span> <a class="code hl_function" href="../../dd/d47/namespacemath.html#a7e78996673df791014cfe540b183456a">factorial</a> = <a class="code hl_class" href="../../da/d15/class_memorised_factorial.html">MemorisedFactorial</a>();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a7e78996673df791014cfe540b183456a">factorial</a>(10) == 3628800);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="../../d2/d96/factorial__memoization_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   61</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d2/d96/factorial__memoization_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    test_MemorisedFactorial_in_order();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    test_MemorisedFactorial_no_order();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
 </div>
-<div class="ttc" id="afactorial__memoization_8cpp_html_a0f9b4d5fae79e1029daf9bd1b93ec217"><div class="ttname"><a href="../../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217">memo</a></div><div class="ttdeci">std::array&lt; uint64_t, 1000 &gt; memo</div><div class="ttdoc">Array to store computed factorials for memoization.</div><div class="ttdef"><b>Definition</b> <a href="#l00031">factorial_memoization.cpp:31</a></div></div>
-<div class="ttc" id="afactorial__memoization_8cpp_html_a4243a60d73b9e1296de20196d5b155ba"><div class="ttname"><a href="../../d2/d96/factorial__memoization_8cpp.html#a4243a60d73b9e1296de20196d5b155ba">test_fact_recursion</a></div><div class="ttdeci">void test_fact_recursion()</div><div class="ttdoc">Self-test implementations for the fact_recursion function.</div><div class="ttdef"><b>Definition</b> <a href="#l00056">factorial_memoization.cpp:56</a></div></div>
-<div class="ttc" id="afactorial__memoization_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="../../d2/d96/factorial__memoization_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Main function to run test cases and interact with the user.</div><div class="ttdef"><b>Definition</b> <a href="#l00069">factorial_memoization.cpp:69</a></div></div>
-<div class="ttc" id="anamespacemath_html"><div class="ttname"><a href="../../dd/d47/namespacemath.html">math</a></div><div class="ttdoc">for assert</div></div>
-<div class="ttc" id="anamespacemath_html_a73b07abea036f1ce2e3ac5dc169bdb4b"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a73b07abea036f1ce2e3ac5dc169bdb4b">math::fact_recursion</a></div><div class="ttdeci">uint64_t fact_recursion(uint64_t n)</div><div class="ttdoc">Computes the factorial of a non-negative integer using recursion and memoization.</div><div class="ttdef"><b>Definition</b> <a href="#l00044">factorial_memoization.cpp:44</a></div></div>
+<div class="ttc" id="aclass_memorised_factorial_html"><div class="ttname"><a href="../../da/d15/class_memorised_factorial.html">MemorisedFactorial</a></div><div class="ttdef"><b>Definition</b> <a href="#l00027">factorial_memoization.cpp:27</a></div></div>
+<div class="ttc" id="aclass_memorised_factorial_html_a35506357960575f150b44ae32fcbad29"><div class="ttname"><a href="../../da/d15/class_memorised_factorial.html#a35506357960575f150b44ae32fcbad29">MemorisedFactorial::operator()</a></div><div class="ttdeci">std::uint64_t operator()(std::uint64_t n)</div><div class="ttdef"><b>Definition</b> <a href="#l00036">factorial_memoization.cpp:36</a></div></div>
+<div class="ttc" id="afactorial__memoization_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="../../d2/d96/factorial__memoization_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Main function to run tests.</div><div class="ttdef"><b>Definition</b> <a href="#l00061">factorial_memoization.cpp:61</a></div></div>
+<div class="ttc" id="anamespacemath_html_a7e78996673df791014cfe540b183456a"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a7e78996673df791014cfe540b183456a">math::factorial</a></div><div class="ttdeci">uint64_t factorial(uint8_t n)</div><div class="ttdoc">function to find factorial of given number</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d00/factorial_8cpp_source.html#l00029">factorial.cpp:29</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

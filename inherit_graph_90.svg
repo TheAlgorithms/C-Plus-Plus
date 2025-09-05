@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="d9/df7/structothers_1_1recursive__tree__traversals_1_1_node.html" target="_top" xlink:title="The structure to hold Nodes of the tree.">
+<g id="a_Node000000"><a xlink:href="dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html" target="_top" xlink:title="BT used to make the entire structure of the binary tree and the functions associated with the binary ...">
 <polygon fill="white" stroke="#666666" points="110.5,-30.5 0,-30.5 0,0 110.5,0 110.5,-30.5"/>
 <text xml:space="preserve" text-anchor="start" x="8" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">others::recursive_tree</text>
-<text xml:space="preserve" text-anchor="middle" x="55.25" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">_traversals::Node</text>
+<text xml:space="preserve" text-anchor="middle" x="55.25" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">_traversals::BT</text>
 </a>
 </g>
 </g>

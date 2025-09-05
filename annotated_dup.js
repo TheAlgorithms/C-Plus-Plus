@@ -217,6 +217,7 @@ var annotated_dup =
     [ "list", "d8/d10/structlist.html", "d8/d10/structlist" ],
     [ "ListNode", "d7/da4/struct_list_node.html", "d7/da4/struct_list_node" ],
     [ "Longest_Substring", "da/d21/class_longest___substring.html", "da/d21/class_longest___substring" ],
+    [ "MemorisedFactorial", "da/d15/class_memorised_factorial.html", "da/d15/class_memorised_factorial" ],
     [ "MinHeap", "d2/d05/class_min_heap.html", "d2/d05/class_min_heap" ],
     [ "MinHeapNode", "d5/d29/struct_min_heap_node.html", null ],
     [ "mst", "d1/d77/structmst.html", null ],

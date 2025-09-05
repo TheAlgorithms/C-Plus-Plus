@@ -11,9 +11,9 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="d8/dab/classstatistics_1_1stats__computer2.html" target="_top" xlink:title=" ">
+<g id="a_Node000000"><a xlink:href="d7/d7c/classstatistics_1_1stats__computer1.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="158.5,-19.25 0,-19.25 0,0 158.5,0 158.5,-19.25"/>
-<text xml:space="preserve" text-anchor="middle" x="79.25" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">statistics::stats_computer2&lt; T &gt;</text>
+<text xml:space="preserve" text-anchor="middle" x="79.25" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">statistics::stats_computer1&lt; T &gt;</text>
 </a>
 </g>
 </g>

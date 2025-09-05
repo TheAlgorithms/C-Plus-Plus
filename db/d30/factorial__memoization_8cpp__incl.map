@@ -1,11 +1,9 @@
 <map id="math/factorial_memoization.cpp" name="math/factorial_memoization.cpp">
-<area shape="rect" id="Node000001" title="Factorial calculation using recursion and memoization" alt="" coords="70,5,276,31"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,77,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,34,78,74,75,69,149,29"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="101,79,165,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="169,33,149,67,145,64,164,30"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="189,79,240,105"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,30,202,64,197,67,178,33"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="264,79,324,105"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="195,29,262,68,259,73,192,34"/>
+<area shape="rect" id="Node000001" title="Factorial calculation using recursion and memoization" alt="" coords="21,5,227,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,70,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,34,65,71,62,67,108,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="94,79,154,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,31,127,63,122,63,122,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="178,79,236,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="140,30,183,67,180,71,136,34"/>
 </map>

@@ -56,7 +56,7 @@ var searchData=
   ['median_5fsearch_53',['median_search',['../da/dd4/namespacemedian__search.html',1,'']]],
   ['median_5fsearch_2ecpp_54',['median_search.cpp',['../d9/d69/median__search_8cpp.html',1,'']]],
   ['median_5fsearch2_2ecpp_55',['median_search2.cpp',['../d8/dfa/median__search2_8cpp.html',1,'']]],
-  ['memo_56',['memo',['../d2/d96/factorial__memoization_8cpp.html#a0f9b4d5fae79e1029daf9bd1b93ec217',1,'factorial_memoization.cpp']]],
+  ['memorisedfactorial_56',['MemorisedFactorial',['../da/d15/class_memorised_factorial.html',1,'']]],
   ['memory_5fgame_2ecpp_57',['memory_game.cpp',['../dd/d92/memory__game_8cpp.html',1,'']]],
   ['merge_58',['Merge',['../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a36f4d5f603f7edb7db7c73fb53ba14e9',1,'data_structures::tree_234::Tree234']]],
   ['merge_59',['merge',['../d2/d26/count__inversions_8cpp.html#aad643c14734394e784a75169cb58132f',1,'sorting::inversion::merge()'],['../de/d7b/merge__insertion__sort_8cpp.html#af4de4067a9a866ffd985c5b5055ccedf',1,'sorting::merge_insertion::merge()'],['../d5/d4c/group__sorting.html#ga460c61cd948203b4816bef2accb3fc73',1,'merge():&#160;merge_sort.cpp'],['../d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079',1,'sorting::merge()']]],
