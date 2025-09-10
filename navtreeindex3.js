@@ -212,9 +212,6 @@ var NAVTREEINDEX3 =
 "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md67":[4,21],
 "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md68":[4,22],
 "d5/d89/namespacepalindrome__partitioning.html":[8,0,89],
-"d5/d8a/classothers_1_1postfix__expression_1_1_stack.html":[9,0,13,3,0],
-"d5/d8a/classothers_1_1postfix__expression_1_1_stack.html#a6ae98710503b894b843d01cb69d5490c":[9,0,13,3,0,1],
-"d5/d8a/classothers_1_1postfix__expression_1_1_stack.html#af06360122e20ce2ba32c574a27a20ba1":[9,0,13,3,0,0],
 "d5/d8a/trie__using__hashmap_8cpp.html":[10,0,4,39],
 "d5/d8a/trie__using__hashmap_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,4,39,3],
 "d5/d8a/trie__using__hashmap_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,4,39,2],
@@ -249,5 +246,8 @@ var NAVTREEINDEX3 =
 "d5/d95/structdata__structures_1_1treap_1_1_treap.html":[8,0,21,0,0],
 "d5/d95/structdata__structures_1_1treap_1_1_treap.html":[9,0,2,5,0],
 "d5/d95/structdata__structures_1_1treap_1_1_treap.html#a1ab082fe0aa95a238bbbc68ab6a72425":[8,0,21,0,0,19],
-"d5/d95/structdata__structures_1_1treap_1_1_treap.html#a1ab082fe0aa95a238bbbc68ab6a72425":[9,0,2,5,0,19]
+"d5/d95/structdata__structures_1_1treap_1_1_treap.html#a1ab082fe0aa95a238bbbc68ab6a72425":[9,0,2,5,0,19],
+"d5/d95/structdata__structures_1_1treap_1_1_treap.html#a3081969b2714a8101f7df28b1ce5ed2c":[8,0,21,0,0,17],
+"d5/d95/structdata__structures_1_1treap_1_1_treap.html#a3081969b2714a8101f7df28b1ce5ed2c":[9,0,2,5,0,17],
+"d5/d95/structdata__structures_1_1treap_1_1_treap.html#a32db3ba3b2630943faacd27b2ecd1b04":[8,0,21,0,0,15]
 };

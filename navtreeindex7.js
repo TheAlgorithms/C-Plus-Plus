@@ -1,8 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"d8/dfd/structoperations__on__datastructures_1_1reverse__binary__tree_1_1_node.html#a15dd7a0a7d9b1e8b2012c5161aecd6e3":[9,0,12,2,1,0],
-"d8/dfd/structoperations__on__datastructures_1_1reverse__binary__tree_1_1_node.html#ab13a4dd92d54c11eca86edde3ef32256":[9,0,12,2,1,3],
-"d8/dfd/structoperations__on__datastructures_1_1reverse__binary__tree_1_1_node.html#ae54953a75091532303bb08d55087077f":[9,0,12,2,1,1],
 "d8/dfd/structoperations__on__datastructures_1_1reverse__binary__tree_1_1_node.html#aeb01a65e51df1e3bc5296cde8477c352":[9,0,12,2,1,2],
 "d9/d00/factorial_8cpp.html":[10,0,14,14],
 "d9/d00/factorial_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[10,0,14,14,2],
@@ -224,10 +221,10 @@ var NAVTREEINDEX7 =
 "d9/df4/namespacetests.html#adaf9a06f0c236c2d95c97e441ea2d12e":[8,0,128,2],
 "d9/df4/namespacetests.html#af7b81d7a1534216af6a36a80135beb86":[8,0,128,14],
 "d9/df4/namespacetests.html#afce39cf843989a39811a49ebe29dd6d8":[8,0,128,8],
-"d9/df7/structothers_1_1recursive__tree__traversals_1_1_node.html":[9,0,13,4,1],
-"d9/df7/structothers_1_1recursive__tree__traversals_1_1_node.html#a59cc94ba784aeaefec2e915ddfdb1ade":[9,0,13,4,1,0],
-"d9/df7/structothers_1_1recursive__tree__traversals_1_1_node.html#a5a8a7bc2d2f847994220ae9e0b60fff3":[9,0,13,4,1,1],
-"d9/df7/structothers_1_1recursive__tree__traversals_1_1_node.html#ab875304781a4eb9661c0931a6f1fae83":[9,0,13,4,1,2],
+"d9/df7/structothers_1_1recursive__tree__traversals_1_1_node.html":[9,0,13,3,1],
+"d9/df7/structothers_1_1recursive__tree__traversals_1_1_node.html#a59cc94ba784aeaefec2e915ddfdb1ade":[9,0,13,3,1,0],
+"d9/df7/structothers_1_1recursive__tree__traversals_1_1_node.html#a5a8a7bc2d2f847994220ae9e0b60fff3":[9,0,13,3,1,1],
+"d9/df7/structothers_1_1recursive__tree__traversals_1_1_node.html#ab875304781a4eb9661c0931a6f1fae83":[9,0,13,3,1,2],
 "d9/dfd/circular__queue__using__linked__list_8cpp_source.html":[10,0,4,6],
 "d9/dfd/comb__sort_8cpp.html":[10,0,23,7],
 "d9/dfd/comb__sort_8cpp.html#a0f4e7569090083fb53d5cdeaf0e2974f":[10,0,23,7,0],
@@ -249,5 +246,8 @@ var NAVTREEINDEX7 =
 "da/d0d/longest__common__string_8cpp.html#aa38b6b17bc5d46ed88acdd8414e18fa5":[10,0,6,14,2],
 "da/d0d/longest__common__string_8cpp.html#acb03dbbcee6d607db471021168be8541":[10,0,6,14,4],
 "da/d0d/longest__common__string_8cpp.html#ad1e613c1b85cc04ed931b6c745fec155":[10,0,6,14,7],
-"da/d0d/longest__common__string_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,6,14,3]
+"da/d0d/longest__common__string_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,6,14,3],
+"da/d0d/longest__common__string_8cpp_source.html":[10,0,6,14],
+"da/d15/class_memorised_factorial.html":[9,0,46],
+"da/d15/class_memorised_factorial.html#a35506357960575f150b44ae32fcbad29":[9,0,46,0]
 };

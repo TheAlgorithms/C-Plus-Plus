@@ -1,8 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"da/d0d/longest__common__string_8cpp_source.html":[10,0,6,14],
-"da/d15/class_memorised_factorial.html":[9,0,46],
-"da/d15/class_memorised_factorial.html#a35506357960575f150b44ae32fcbad29":[9,0,46,0],
 "da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html":[9,0,12,0,1],
 "da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html#a005dc56b0c58350a13f4796b9b30b6c5":[9,0,12,0,1,0],
 "da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html#a12a06eef5ccaf667f319506eee655d95":[9,0,12,0,1,1],
@@ -249,5 +246,8 @@ var NAVTREEINDEX8 =
 "db/d40/integral__approximation2_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,14,27,2],
 "db/d40/integral__approximation2_8cpp_source.html":[10,0,14,27],
 "db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html":[9,0,2,4,0],
-"db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#a2f80f87fc6f6ded938426698bba89323":[9,0,2,4,0,4]
+"db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#a2f80f87fc6f6ded938426698bba89323":[9,0,2,4,0,4],
+"db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#a5540434e1b41245205eee86f664906f7":[9,0,2,4,0,3],
+"db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#abdd461689df4983a3ad3b05d853cf5eb":[9,0,2,4,0,0],
+"db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#ac0ddec9ab8f778dad23ec446d7a77b39":[9,0,2,4,0,2]
 };

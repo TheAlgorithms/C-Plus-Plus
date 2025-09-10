@@ -1,8 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"dd/d47/namespacemath.html#abc46c784a297fc1d2eb8b33a327fba4c":[8,0,69,8],
-"dd/d47/namespacemath.html#abd8f794b2229b42876169ff841b6e444":[8,0,69,18],
-"dd/d47/namespacemath.html#abde24398be43538c62e4a496968e60ca":[8,0,69,13],
 "dd/d47/namespacemath.html#abf7f2a6d91f1ca6c89698792aea3f188":[8,0,69,2],
 "dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5":[8,0,69,27],
 "dd/d47/namespacemath.html#ac5803413618fcfb922cb32c6db0fc864":[8,0,69,11],
@@ -106,10 +103,10 @@ var NAVTREEINDEX11 =
 "dd/dca/class_f_c_f_s.html#abb361a612b18bb189aa6d3c49288b793":[9,0,36,1],
 "dd/dca/class_f_c_f_s.html#af2594e22a867b308e027623940193d46":[9,0,36,3],
 "dd/dd5/swap__sort_8cpp_source.html":[10,0,23,39],
-"dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html":[9,0,13,4,0],
-"dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#a6397b78ceec18cb1959a1d159e134da5":[9,0,13,4,0,2],
-"dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#ac9404b65f407f631915515fa2e08a40c":[9,0,13,4,0,1],
-"dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#af16da5fe0f5c54d31778d71d5a042114":[9,0,13,4,0,0],
+"dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html":[9,0,13,3,0],
+"dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#a6397b78ceec18cb1959a1d159e134da5":[9,0,13,3,0,2],
+"dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#ac9404b65f407f631915515fa2e08a40c":[9,0,13,3,0,1],
+"dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#af16da5fe0f5c54d31778d71d5a042114":[9,0,13,3,0,0],
 "dd/dec/a__star__search_8cpp_source.html":[10,0,13,0],
 "de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html":[9,0,6,0,0],
 "de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#a6aef65b40347c4606662cad4dd2e14d3":[9,0,6,0,0,0],
@@ -249,5 +246,8 @@ var NAVTREEINDEX11 =
 "de/dc3/fibonacci__sum_8cpp.html":[10,0,14,21],
 "de/dc3/fibonacci__sum_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,14,21,5],
 "de/dc3/fibonacci__sum_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,14,21,1],
-"de/dc3/fibonacci__sum_8cpp_source.html":[10,0,14,21]
+"de/dc3/fibonacci__sum_8cpp_source.html":[10,0,14,21],
+"de/dc5/intersection__of__two__arrays_8cpp.html":[10,0,16,6],
+"de/dc5/intersection__of__two__arrays_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,16,6,5],
+"de/dc5/intersection__of__two__arrays_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,16,6,2]
 };

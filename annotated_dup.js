@@ -139,9 +139,6 @@ var annotated_dup =
       [ "lru_cache", null, [
         [ "LRUCache", "d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html", "d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache" ]
       ] ],
-      [ "postfix_expression", null, [
-        [ "Stack", "d5/d8a/classothers_1_1postfix__expression_1_1_stack.html", "d5/d8a/classothers_1_1postfix__expression_1_1_stack" ]
-      ] ],
       [ "recursive_tree_traversals", null, [
         [ "BT", "dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html", "dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t" ],
         [ "Node", "d9/df7/structothers_1_1recursive__tree__traversals_1_1_node.html", "d9/df7/structothers_1_1recursive__tree__traversals_1_1_node" ]
