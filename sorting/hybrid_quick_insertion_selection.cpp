@@ -202,16 +202,6 @@ static void test() {
  */
 int main() {
     test();  // run self-test implementations
-
-    // An example
-    std::vector<int> array = {8, 5, 9, 20, 2, 13, 3, 1};
-    print_array(array);
-    std::cout << '\n';
-    sorting::hybrid_quick_insert_select::hybrid_quick_insertion_selection(array,
-                                                                          0,
-                                                                          static_cast<int>(array.size()));
-    print_array(array);
-    std::cout << '\n';
     return 0;
 }
 
