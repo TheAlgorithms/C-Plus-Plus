@@ -163,8 +163,8 @@ static void test(std::int32_t N, double h, double a, double b,
 
 /**
  * @brief Main function
- * @param argc commandline argument count (ignored)
- * @param argv commandline array of arguments (ignored)
+ * @param argc commandline argument count
+ * @param argv commandline array of arguments
  * @returns 0 on exit
  */
 int main(int argc, char** argv) {
