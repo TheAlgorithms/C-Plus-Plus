@@ -38,6 +38,7 @@ var namespaces_dup =
       [ "maxCircularSum", "dd/d24/namespacedynamic__programming.html#a5239174fa0d987f2c67edc1f2af82beb", null ],
       [ "trappedRainwater", "dd/d24/namespacedynamic__programming.html#a066e0e739e7c276eee6e61d5b4d37ce8", null ]
     ] ],
+    [ "even_odd", "dc/dff/namespaceeven__odd.html", null ],
     [ "exponential_dist", "d1/d35/namespaceexponential__dist.html", null ],
     [ "false_position", "df/dea/namespacefalse__position.html", null ],
     [ "fibonacci", "df/d76/namespacefibonacci.html", null ],
