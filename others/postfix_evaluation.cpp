@@ -12,11 +12,11 @@
  * When the expression is ended, the number in the stack is the final answer
  */
 #include <algorithm>  // for all_of
-#include <array>      // for array
 #include <cassert>    // for assert
 #include <iostream>   // for io operations
 #include <stack>      // for std::stack
 #include <string>     // for stof
+#include <vector>     // for std::vector
 
 /**
  * @namespace others
@@ -80,17 +80,13 @@ void evaluate(float a, float b, const std::string &operation,
 /**
  * @brief Postfix Evaluation algorithm to compute the value from given input
  * array
- * @tparam N number of array size
- * @param input Array of characters consisting of numbers and operations
+ * @param input vector of strings consisting of numbers and operations
  * @returns stack[stackTop] returns the top value from the stack
  */
-template <std::size_t N>
-float postfix_evaluation(std::array<std::string, N> input) {
+float postfix_evaluation(const std::vector<std::string> &input) {
     std::stack<float> stack;
-    int j = 0;
 
-    while (j < N) {
-        std::string scan = input[j];
+    for (const auto &scan : input) {
         if (is_number(scan)) {
             stack.push(std::stof(scan));
 
@@ -102,7 +98,6 @@ float postfix_evaluation(std::array<std::string, N> input) {
 
             evaluate(op1, op2, scan, stack);
         }
-        j++;
     }
 
     std::cout << stack.top() << "\n";
@@ -118,7 +113,7 @@ float postfix_evaluation(std::array<std::string, N> input) {
  * @returns none
  */
 static void test_function_1() {
-    std::array<std::string, 7> input = {"2", "3", "1", "*", "+", "9", "-"};
+    std::vector<std::string> input = {"2", "3", "1", "*", "+", "9", "-"};
 
     float answer = others::postfix_expression::postfix_evaluation(input);
 
@@ -131,15 +126,15 @@ static void test_function_1() {
  * @returns none
  */
 static void test_function_2() {
-    std::array<std::string, 9> input = {"100", "200", "+", "2", "/",
-                                        "5",   "*",   "7", "+"};
+    std::vector<std::string> input = {"100", "200", "+", "2", "/",
+                                      "5",   "*",   "7", "+"};
     float answer = others::postfix_expression::postfix_evaluation(input);
 
     assert(answer == 757);
 }
 
 static void test_function_3() {
-    std::array<std::string, 43> input = {
+    std::vector<std::string> input = {
         "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1",
         "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1",
         "+", "+", "+", "+", "+", "+", "+", "+", "+", "+", "+",
