@@ -17,7 +17,7 @@
  * // nums becomes {1, 2, 3, 4, 5}
  * @endcode
  *
- * @author Rohith A K[https://github.com/rohleet]
+ * @author Rohith A K
  * @date 2025-09-25
  */
 
@@ -53,6 +53,8 @@ std::vector<int>& bubble_sort(std::vector<int>& nums) {
   return nums;
 }
 
+}  // namespace sorting
+
 /**
  * @brief Self-test implementations of the bubble_sort function.
  *
@@ -64,20 +66,18 @@ std::vector<int>& bubble_sort(std::vector<int>& nums) {
 static void tests() {
   std::vector<int> v1 = {2, 8, 1, 6, 2, 0, 3, 6};
   const std::vector<int> expected1 = {0, 1, 2, 2, 3, 6, 6, 8};
-  assert(bubble_sort(v1) == expected1);
+  assert(sorting::bubble_sort(v1) == expected1);
 
   std::vector<int> v2 = {5, 4, 3, 2, 1};
   const std::vector<int> expected2 = {1, 2, 3, 4, 5};
-  assert(bubble_sort(v2) == expected2);
+  assert(sorting::bubble_sort(v2) == expected2);
 
   std::vector<int> v3 = {1, 2, 3, 4, 5};
   const std::vector<int> expected3 = {1, 2, 3, 4, 5};
-  assert(bubble_sort(v3) == expected3);
+  assert(sorting::bubble_sort(v3) == expected3);
 
   std::cout << "All tests have successfully passed!\n";
 }
-
-}  // namespace sorting
 
 /**
  * @brief Main function
@@ -87,6 +87,6 @@ static void tests() {
  * @returns 0 on successful execution
  */
 int main() {
-  sorting::tests();  // run self-test implementations
+  tests();  // run self-test implementations
   return 0;
 }
